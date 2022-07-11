@@ -66,6 +66,36 @@ BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C:
   FullSize: '0x708'
   InheritedSize: '0x6e8'
   Super: BuoyantStorageContainer
+BP_TaleBook_LegendaryStoryteller_AdditionalPuzzles_C:
+  Attributes:
+  - Name: Portal VFX
+    Offset: '0x418'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: WwiseEmitter
+    Offset: '0x420'
+    Size: '0x8'
+    Type: Class WwiseEmitterComponent*
+  - Name: Portal
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: shroud
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: SharedRoot
+    Offset: '0x438'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: DynamicMaterials
+    Offset: '0x440'
+    Size: '0x10'
+    Type: TArray<class DynamicMaterials*>
+  ClassSize: '0x30'
+  FullSize: '0x7b0'
+  InheritedSize: '0x780'
+  Super: VoyageProposalContainer
 BP_fod_EarthwormsFresh_00_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

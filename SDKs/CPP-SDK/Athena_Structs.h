@@ -21038,14 +21038,6 @@ public:
 
 
 // Size 0x1
-struct EntitlementLoadoutViewUpdatedEvent
-{
-public:
-	bool                                                         HasEntitlementLoadoutView;                         // 0x0(0x1)
-};
-
-
-// Size 0x1
 struct PlayerEntitlementUpdatedEvent
 {
 public:

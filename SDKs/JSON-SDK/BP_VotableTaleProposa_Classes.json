@@ -1,39 +1,69 @@
 {
   "BP_VotableTaleProposal_Vertical_C": {
-    "Super": "SignalMesh",
-    "FullSize": "-0x1",
-    "InheritedSize": "0x0",
-    "ClassSize": "-0x1",
+    "Super": "VotableObjectView",
+    "FullSize": "0x530",
+    "InheritedSize": "0x4e0",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "SignalMesh",
-        "Type": "Class MeshComponent*",
+        "Name": "None",
+        "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x4e0"
       },
       {
-        "Name": "Root",
-        "Type": "Class SceneComponent*",
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x4e8"
       },
       {
-        "Name": "SignalMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x4f0"
       },
       {
-        "Name": "EventType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x420"
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f8"
       },
       {
-        "Name": "OwningNetworkRegion",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x488"
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<class None*>",
+        "Size": "0x10",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "None",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x524"
+      },
+      {
+        "Name": "None",
+        "Type": "Class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x528"
       }
     ]
   },

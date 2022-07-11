@@ -556,13 +556,6 @@ public:
 
 
 // Size 0x0
-class BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C: public BP_Clothing_C
-{
-public:
-};
-
-
-// Size 0x0
 class BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C: public BootyItemDesc
 {
 public:

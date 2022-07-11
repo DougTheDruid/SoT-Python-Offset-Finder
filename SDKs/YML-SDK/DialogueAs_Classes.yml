@@ -6,6 +6,12 @@ ShroudedDeepSG_Killedpermanently_C:
   FullSize: '0xd8'
   InheritedSize: '0xd8'
   Super: EntitlementDesc
+ShroudedDeepSG_Killedtemporarily_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc
 ShroudedDeep_BellePostSGBattleDialogTempEntitlement_C:
   Attributes: []
   ClassSize: '0x0'

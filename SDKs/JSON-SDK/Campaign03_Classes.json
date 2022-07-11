@@ -475,6 +475,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "SDLetter_ExclusionEntitlement_Campaign031_C": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "RitualSkull_ExclusionEntitlement_Campaign033_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
@@ -490,13 +497,6 @@
     "Attributes": []
   },
   "RitualSkull_ExclusionEntitlement_Campaign031_C": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SDLetter_ExclusionEntitlement_Campaign031_C": {
     "Super": "EntitlementDesc",
     "FullSize": "0xd8",
     "InheritedSize": "0xd8",

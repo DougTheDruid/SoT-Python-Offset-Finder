@@ -132,6 +132,181 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "sailslivery_zeus_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_tenmillion_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_sotthunderpack_02_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_sotthunderpack_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_skelly_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_shine_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_seasontwo_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_seasonthree_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_seasonsix_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_seasonone_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_seasonfour_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_seasonfive_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_seadog_01_CutomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_sakurasolo_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_sakura_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_sailor_01_CutomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_sabrewulf_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_RegalHound_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_reapermys_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_reaperglint_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_phoenix_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_party_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_orderofsoulsdre_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_omen_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "sailslivery_oldbettsy_01_CustomizationDesc_C": {
+    "Super": "ShipCustomizationDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "sailslivery_mayhem_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
@@ -231,174 +406,6 @@
     "Attributes": []
   },
   "sailslivery_admiral_01_CutomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_zeus_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_tenmillion_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_sotthunderpack_02_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_sotthunderpack_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_skelly_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_shine_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_seasontwo_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_seasonthree_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_seasonsix_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_seasonone_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_seasonfour_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_seasonfive_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_seadog_01_CutomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_sakura_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_sailor_01_CutomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_sabrewulf_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_RegalHound_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_reapermys_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_reaperglint_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_phoenix_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_party_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_orderofsoulsdre_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_omen_01_CustomizationDesc_C": {
-    "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "sailslivery_oldbettsy_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0x108",
     "InheritedSize": "0x108",

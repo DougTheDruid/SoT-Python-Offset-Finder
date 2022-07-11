@@ -1,11 +1,4 @@
 {
-  "BP_gmp_fishing_rod_pio_01_b_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_gmp_fishing_rod_bdg_01_a_ItemInfo_C": {
     "Super": "ItemInfo",
     "FullSize": "0x500",
@@ -24,6 +17,13 @@
     "Super": "BP_FishingRod_C",
     "FullSize": "0xb90",
     "InheritedSize": "0xb90",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_gmp_fishing_rod_pio_01_b_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },

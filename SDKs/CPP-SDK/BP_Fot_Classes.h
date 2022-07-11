@@ -6,13 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_FotF_Belle_Active_C: public BP_SoleTrader_C
+// Size 0x10
+class BP_FotF_Larinna_NotActive_C: public BP_SoleTrader_C
 {
 public:
-	Class CompanyRegionComponent*                                None;                                              // 0x6a0(0x8)
-	Class ObjectMessagingDispatcherComponent*                    None;                                              // 0x6a8(0x8)
-	Class ActorPhasingComponent*                                 None;                                              // 0x6b0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x6a0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x6a8(0x8)
 };
 
 

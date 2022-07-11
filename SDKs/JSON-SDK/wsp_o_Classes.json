@@ -6,35 +6,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "wsp_outpost_2_terrain_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "wsp_outpost_2_design_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "wsp_outpost_2_design_adventure_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "wsp_outpost_2_design_talltales_C": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "wsp_outpost_2_audio_C": {
+  "wsp_outpost_2_vfx_C": {
     "Super": "LevelScriptActor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3d0",
@@ -48,7 +20,35 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "wsp_outpost_2_vfx_C": {
+  "wsp_outpost_2_audio_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "wsp_outpost_2_design_talltales_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "wsp_outpost_2_design_adventure_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "wsp_outpost_2_design_C": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "wsp_outpost_2_terrain_C": {
     "Super": "LevelScriptActor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3d0",

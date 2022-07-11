@@ -300,6 +300,12 @@ sailslivery_sakura_01_CustomizationDesc_C:
   FullSize: '0x108'
   InheritedSize: '0x108'
   Super: ShipCustomizationDesc
+sailslivery_sakurasolo_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x108'
+  InheritedSize: '0x108'
+  Super: ShipCustomizationDesc
 sailslivery_seadog_01_CutomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'

@@ -34,6 +34,181 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "Title_RB_Rank3_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank3_003_ServantOfSplinteredShips_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank3_002_ServantOfSplinteredShips_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank2_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank2_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank2_003_KeeperOfSplinteredShips_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank2_002_KeeperOfSplinteredShips_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank1_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank1_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank1_003_MasterOfSplinteredShips_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank1_002_MasterOfSplinteredShips_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank3_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank3_003_MercenaryOfGhostlyGalleons_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank3_002_MercenaryOfSunderedSkulls_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank2_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank2_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank2_003_ChiefOfGhostlyGalleons_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank2_002_ChiefOfSunderedSkulls_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank1_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank1_003_GrandeeOfGhostlyGalleons_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank1_002_GrandeeOfSunderedSkulls_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_Rank3_003_CadetOfSalvagedShipments_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "Title_MA_Rank3_002_CadetOfCuriousCargo_C": {
     "Super": "TitleDesc",
     "FullSize": "0xe0",
@@ -132,6 +307,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "Title_AF_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "Title_AF_Rank3_003_VoyagerOfSwornSecrets_C": {
     "Super": "TitleDesc",
     "FullSize": "0xe0",
@@ -146,161 +328,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Title_RB_Rank3_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank3_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank3_003_ServantOfSplinteredShips_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank3_002_ServantOfSplinteredShips_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank2_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank2_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank2_003_KeeperOfSplinteredShips_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank2_002_KeeperOfSplinteredShips_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank1_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank1_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank1_003_MasterOfSplinteredShips_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank1_002_MasterOfSplinteredShips_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank3_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank3_003_MercenaryOfGhostlyGalleons_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank3_002_MercenaryOfSunderedSkulls_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank2_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank2_003_ChiefOfGhostlyGalleons_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank2_002_ChiefOfSunderedSkulls_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank1_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank1_003_GrandeeOfGhostlyGalleons_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank1_002_GrandeeOfSunderedSkulls_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_MA_Rank3_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_MA_Rank3_003_CadetOfSalvagedShipments_C": {
+  "Title_AF_Rank2_002_GuardianOfPirateProwess_C": {
     "Super": "TitleDesc",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",

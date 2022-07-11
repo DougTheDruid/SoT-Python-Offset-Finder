@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_WaterVolume_Large_C: public BP_WaterVolume_C
+class BP_WaterVolume_WSP_Ext1_C: public BP_WaterVolume_Optimized_C
 {
 public:
 };
@@ -28,7 +28,7 @@ public:
 
 
 // Size 0x0
-class BP_WaterVolume_WSP_Ext1_C: public BP_WaterVolume_Optimized_C
+class BP_WaterVolume_Large_C: public BP_WaterVolume_C
 {
 public:
 };

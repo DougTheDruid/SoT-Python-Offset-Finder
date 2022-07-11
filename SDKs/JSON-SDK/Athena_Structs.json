@@ -44215,17 +44215,6 @@
       }
     ]
   },
-  "EntitlementLoadoutViewUpdatedEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "HasEntitlementLoadoutView",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PlayerEntitlementUpdatedEvent": {
     "ClassSize": "0x1",
     "Attributes": []

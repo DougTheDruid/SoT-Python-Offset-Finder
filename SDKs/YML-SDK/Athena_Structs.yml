@@ -15371,13 +15371,6 @@ EntitlementItem:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0xa8'
-EntitlementLoadoutViewUpdatedEvent:
-  Attributes:
-  - Name: HasEntitlementLoadoutView
-    Offset: '0x0'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x1'
 EntitlementMapEntry:
   Attributes:
   - Name: Identifier

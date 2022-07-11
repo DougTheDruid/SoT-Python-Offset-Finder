@@ -69,6 +69,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_Emote_TantrumStamp_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x110",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_Emote_Tantrum_Desc_C": {
     "Super": "EmoteDesc",
     "FullSize": "0x110",

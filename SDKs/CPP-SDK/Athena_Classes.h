@@ -969,94 +969,94 @@ public:
 };
 
 
-// Size 0xf30
+// Size 0xf10
 class AthenaPlayerCharacter: public AthenaCharacter
 {
 public:
-	Class SceneComponent*                                        FirstPersonMeshOffsetComponent;                    // 0xcb0(0x8)
-	Class SkeletalMeshComponent*                                 FirstPersonMesh;                                   // 0xcb8(0x8)
-	Class AthenaCameraComponent*                                 FirstPersonCamera;                                 // 0xcc0(0x8)
-	Class AthenaCameraComponent*                                 ThirdPersonCamera;                                 // 0xcc8(0x8)
-	Class AthenaCameraComponent*                                 SpringArmCamera;                                   // 0xcd0(0x8)
-	Class LookAtEmoteCameraComponent*                            LookAtEmoteCameraComponent;                        // 0xcd8(0x8)
-	Class AthenaSpringArmComponent*                              SpringArm;                                         // 0xce0(0x8)
-	Class ChildActorComponent*                                   LocalCloudDome;                                    // 0xce8(0x8)
-	Class CharacterInteractionComponent*                         InteractionComponent;                              // 0xcf0(0x8)
-	Class ClimbingComponent*                                     ClimbingComponent;                                 // 0xcf8(0x8)
-	Class DrunkennessComponent*                                  DrunkennessComponent;                              // 0xd00(0x8)
-	Class StaggerComponent*                                      StaggerComponent;                                  // 0xd08(0x8)
-	Class DrowningComponent*                                     DrowningComponent;                                 // 0xd10(0x8)
-	Class RumbleHandlerComponent*                                RumbleHandlerComponent;                            // 0xd18(0x8)
-	Class ScreenSpaceVfxComponent*                               ScreenSpaceVfxComponent;                           // 0xd20(0x8)
-	Class TreasureMapCollectionComponent*                        TreasureMapCollectionComponent;                    // 0xd28(0x8)
-	Class PhrasesRadialComponent*                                PhrasesRadialComponent;                            // 0xd30(0x8)
-	Class QuickInventoryComponent*                               QuickInventoryComponent;                           // 0xd38(0x8)
-	Class PointOfInterestTrackerComponent*                       PointOfInterestTrackerComponent;                   // 0xd40(0x8)
-	Class LimpingComponent*                                      LimpingComponent;                                  // 0xd48(0x8)
-	Class PacingComponent*                                       PacingComponent;                                   // 0xd50(0x8)
-	Class BurpComponent*                                         BurpComponent;                                     // 0xd58(0x8)
-	Class MeleeAttackLockOnComponent*                            MeleeLockOnComponent;                              // 0xd60(0x8)
-	Class DeathSelfInteractionComponent*                         DeathSelfInteractionComponent;                     // 0xd68(0x8)
-	Class WaterSlidePlayerComponent*                             WaterSlidePlayerComponent;                         // 0xd70(0x8)
-	Class ReviveDebugComponent*                                  ReviveDebugComponent;                              // 0xd78(0x8)
-	Class FlashbangEffectComponent*                              FlashbangEffectComponent;                          // 0xd80(0x8)
-	Class WorldLocationVisitorComponent*                         WorldLocationVisitorComponent;                     // 0xd88(0x8)
-	Class MeleeAttackLockOnComponentSettings*                    MeleeAttackLockOnSettings;                         // 0xd90(0x8)
-	Class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0xd98(0x8)
-	Class StatusEffectPersistenceComponent*                      StatusEffectPersistenceComponent;                  // 0xda0(0x8)
-	Class PlayerCurseComponent*                                  PlayerCurseComponent;                              // 0xda8(0x8)
-	Class MaterialStatusSusceptibilityComponent*                 MaterialStatusSusceptibilityComponent;             // 0xdb0(0x8)
-	Class HealthRegenerationPoolComponent*                       HealthRegenerationPoolComponent;                   // 0xdb8(0x8)
-	Class SicknessComponent*                                     SicknessComponent;                                 // 0xdc0(0x8)
-	Class RewindComponent*                                       PlayerViewRewindComponent;                         // 0xdc8(0x8)
-	Class CapsuleComponent*                                      ProjectileTraceHitVolume;                          // 0xdd0(0x8)
-	Class PlayerMerchantContractsComponent*                      PlayerMerchantContractsComponent;                  // 0xdd8(0x8)
-	Class PlayerShroudBreakerTrackerComponent*                   PlayerShroudBreakerTrackerComponent;               // 0xde0(0x8)
-	Class PetOwnerComponent*                                     PetOwnerComponent;                                 // 0xde8(0x8)
-	Class AISpawnContextContainerComponent*                      SpawnContextContainerComponent;                    // 0xdf0(0x8)
-	Class RadialManagerComponent*                                RadialManager;                                     // 0xdf8(0x8)
-	float                                                        CameraFOVWhenSprinting;                            // 0xe00(0x4)
-	Class CurveVector*                                           ApproximateCamPitchToLocalCamOffsetCurve;          // 0xe08(0x8)
-	Struct WalkConditionsParams                                  WalkConditionParams;                               // 0xe10(0x8)
-	Struct SprintConditionsParams                                ServerSprintConditionParams;                       // 0xe18(0xc)
-	Struct SprintConditionsParams                                ClientSprintConditionParams;                       // 0xe24(0xc)
-	float                                                        SprintingServerTimeTolerance;                      // 0xe30(0x4)
-	float                                                        PostSprintResetTime;                               // 0xe34(0x4)
-	Class AthenaSpringArmComponentParams*                        EmoteSpringArmParameters;                          // 0xe38(0x8)
-	Class AthenaSpringArmComponentParams*                        DeathSpringArmParameters;                          // 0xe40(0x8)
-	Class EmotesRadialDataAsset*                                 EmotesRadialDataAsset;                             // 0xe48(0x8)
-	bool                                                         AllowAnimationTickAggregation;                     // 0xe50(0x1)
-	Struct AchievementKillOpponentFromBehindWithBlunderbuss      AchievementKillOpponentFromBehindWithBlunderbuss;  // 0xe54(0x4)
-	Struct AchievementHeavyAttackRivalOffTheirShip               AchievementHeavyAttackRivalOffTheirShip;           // 0xe58(0x10)
-	Struct AchievementBlockThenHitAndGetBlockedThenTakeHit       AchievementBlockThenHitAndGetBlockedThenTakeHit;   // 0xe68(0x10)
-	Struct AchievementHaveADrinkWithAnotherCrewAtAnOutpost       AchievementHaveADrinkWithAnotherCrewAtAnOutpost;   // 0xe78(0x20)
-	Struct AchievementKillOpponentInContest                      AchievementKillOpponentInContest;                  // 0xe98(0x8)
-	class                                                        ConditionalStatsTriggerForKillingAnotherPlayer;    // 0xea0(0x8)
-	Class AICreatureMovementModifierParamsDataAsset*             PirateLegendHideoutPetMovementData;                // 0xea8(0x8)
-	Class AICreatureMovementModifierParamsDataAsset*             OnShipPetMovementData;                             // 0xeb0(0x8)
-	Class AsyncLoadoutRepairComponent*                           RepairComponent;                                   // 0xeb8(0x8)
-	Class SeasonProgressionUIComponent*                          SeasonUIComponent;                                 // 0xec0(0x8)
-	Class AimAssistComponent*                                    AimAssistComponent;                                // 0xec8(0x8)
-	Class SequencerCameraDockingComponent*                       SequencerCameraDockingComponent;                   // 0xed0(0x8)
-	Class EmotePropData*                                         EmotePropData;                                     // 0xed8(0x8)
-	struct FName                                                 ReplicatedOverrideAnimationEntry;                  // 0xf90(0x8)
-	class                                                        FirstPersonAnimSetDataId;                          // 0xf98(0x8)
-	Class AnimationDataStoreWeakReferenceAsset*                  FirstPersonAnimationDataStoreWeakReferencesAsset;  // 0xfa0(0x8)
-	byte                                                         CharacterType;                                     // 0xfa8(0x1)
-	Class ClothingLoadoutComponent*                              ClothingLoadoutComponent;                          // 0x1958(0x8)
-	Class PetLoadoutComponent*                                   PetLoadoutComponent;                               // 0x1960(0x8)
-	Class VoyageParticipantComponent*                            PrimaryVoyageParticipantComponent;                 // 0x1968(0x8)
-	Class VoyageParticipantComponent*                            TaleVoyageParticipantComponent;                    // 0x1970(0x8)
-	Class VoyageParticipantComponent*                            EmergentVoyageParticipantComponent;                // 0x1978(0x8)
-	Class PlayerWorldLocationComponent*                          PlayerWorldLocationComponent;                      // 0x1980(0x8)
-	Class ChainLightningReceiverComponent*                       ChainLightningReceiverComponent;                   // 0x1988(0x8)
-	Struct AthenaPlayerCharacterModelSwap                        PendingModelSwap;                                  // 0x1990(0x28)
-	bool                                                         ReplicatedEmoteExitAllowed;                        // 0x19f0(0x1)
-	bool                                                         FinishedWaitingForSpawn;                           // 0x1a70(0x1)
-	bool                                                         AutoFloatInWater;                                  // 0x1aa2(0x1)
-	bool                                                         ReplicatedIsSprinting;                             // 0x1aa4(0x1)
-	float                                                        AutoMoveCancelThreshold;                           // 0x1ac0(0x4)
-	int                                                          ReplicatedOverridePirateDescSeed;                  // 0x1ac4(0x4)
+	Class SceneComponent*                                        FirstPersonMeshOffsetComponent;                    // 0xca8(0x8)
+	Class SkeletalMeshComponent*                                 FirstPersonMesh;                                   // 0xcb0(0x8)
+	Class AthenaCameraComponent*                                 FirstPersonCamera;                                 // 0xcb8(0x8)
+	Class AthenaCameraComponent*                                 ThirdPersonCamera;                                 // 0xcc0(0x8)
+	Class AthenaCameraComponent*                                 SpringArmCamera;                                   // 0xcc8(0x8)
+	Class LookAtEmoteCameraComponent*                            LookAtEmoteCameraComponent;                        // 0xcd0(0x8)
+	Class AthenaSpringArmComponent*                              SpringArm;                                         // 0xcd8(0x8)
+	Class ChildActorComponent*                                   LocalCloudDome;                                    // 0xce0(0x8)
+	Class CharacterInteractionComponent*                         InteractionComponent;                              // 0xce8(0x8)
+	Class ClimbingComponent*                                     ClimbingComponent;                                 // 0xcf0(0x8)
+	Class DrunkennessComponent*                                  DrunkennessComponent;                              // 0xcf8(0x8)
+	Class StaggerComponent*                                      StaggerComponent;                                  // 0xd00(0x8)
+	Class DrowningComponent*                                     DrowningComponent;                                 // 0xd08(0x8)
+	Class RumbleHandlerComponent*                                RumbleHandlerComponent;                            // 0xd10(0x8)
+	Class ScreenSpaceVfxComponent*                               ScreenSpaceVfxComponent;                           // 0xd18(0x8)
+	Class TreasureMapCollectionComponent*                        TreasureMapCollectionComponent;                    // 0xd20(0x8)
+	Class PhrasesRadialComponent*                                PhrasesRadialComponent;                            // 0xd28(0x8)
+	Class QuickInventoryComponent*                               QuickInventoryComponent;                           // 0xd30(0x8)
+	Class PointOfInterestTrackerComponent*                       PointOfInterestTrackerComponent;                   // 0xd38(0x8)
+	Class LimpingComponent*                                      LimpingComponent;                                  // 0xd40(0x8)
+	Class PacingComponent*                                       PacingComponent;                                   // 0xd48(0x8)
+	Class BurpComponent*                                         BurpComponent;                                     // 0xd50(0x8)
+	Class MeleeAttackLockOnComponent*                            MeleeLockOnComponent;                              // 0xd58(0x8)
+	Class DeathSelfInteractionComponent*                         DeathSelfInteractionComponent;                     // 0xd60(0x8)
+	Class WaterSlidePlayerComponent*                             WaterSlidePlayerComponent;                         // 0xd68(0x8)
+	Class ReviveDebugComponent*                                  ReviveDebugComponent;                              // 0xd70(0x8)
+	Class FlashbangEffectComponent*                              FlashbangEffectComponent;                          // 0xd78(0x8)
+	Class WorldLocationVisitorComponent*                         WorldLocationVisitorComponent;                     // 0xd80(0x8)
+	Class MeleeAttackLockOnComponentSettings*                    MeleeAttackLockOnSettings;                         // 0xd88(0x8)
+	Class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0xd90(0x8)
+	Class StatusEffectPersistenceComponent*                      StatusEffectPersistenceComponent;                  // 0xd98(0x8)
+	Class PlayerCurseComponent*                                  PlayerCurseComponent;                              // 0xda0(0x8)
+	Class MaterialStatusSusceptibilityComponent*                 MaterialStatusSusceptibilityComponent;             // 0xda8(0x8)
+	Class HealthRegenerationPoolComponent*                       HealthRegenerationPoolComponent;                   // 0xdb0(0x8)
+	Class SicknessComponent*                                     SicknessComponent;                                 // 0xdb8(0x8)
+	Class RewindComponent*                                       PlayerViewRewindComponent;                         // 0xdc0(0x8)
+	Class CapsuleComponent*                                      ProjectileTraceHitVolume;                          // 0xdc8(0x8)
+	Class PlayerMerchantContractsComponent*                      PlayerMerchantContractsComponent;                  // 0xdd0(0x8)
+	Class PlayerShroudBreakerTrackerComponent*                   PlayerShroudBreakerTrackerComponent;               // 0xdd8(0x8)
+	Class PetOwnerComponent*                                     PetOwnerComponent;                                 // 0xde0(0x8)
+	Class AISpawnContextContainerComponent*                      SpawnContextContainerComponent;                    // 0xde8(0x8)
+	Class RadialManagerComponent*                                RadialManager;                                     // 0xdf0(0x8)
+	float                                                        CameraFOVWhenSprinting;                            // 0xdf8(0x4)
+	Class CurveVector*                                           ApproximateCamPitchToLocalCamOffsetCurve;          // 0xe00(0x8)
+	Struct WalkConditionsParams                                  WalkConditionParams;                               // 0xe08(0x8)
+	Struct SprintConditionsParams                                ServerSprintConditionParams;                       // 0xe10(0xc)
+	Struct SprintConditionsParams                                ClientSprintConditionParams;                       // 0xe1c(0xc)
+	float                                                        SprintingServerTimeTolerance;                      // 0xe28(0x4)
+	float                                                        PostSprintResetTime;                               // 0xe2c(0x4)
+	Class AthenaSpringArmComponentParams*                        EmoteSpringArmParameters;                          // 0xe30(0x8)
+	Class AthenaSpringArmComponentParams*                        DeathSpringArmParameters;                          // 0xe38(0x8)
+	Class EmotesRadialDataAsset*                                 EmotesRadialDataAsset;                             // 0xe40(0x8)
+	bool                                                         AllowAnimationTickAggregation;                     // 0xe48(0x1)
+	Struct AchievementKillOpponentFromBehindWithBlunderbuss      AchievementKillOpponentFromBehindWithBlunderbuss;  // 0xe4c(0x4)
+	Struct AchievementHeavyAttackRivalOffTheirShip               AchievementHeavyAttackRivalOffTheirShip;           // 0xe50(0x10)
+	Struct AchievementBlockThenHitAndGetBlockedThenTakeHit       AchievementBlockThenHitAndGetBlockedThenTakeHit;   // 0xe60(0x10)
+	Struct AchievementHaveADrinkWithAnotherCrewAtAnOutpost       AchievementHaveADrinkWithAnotherCrewAtAnOutpost;   // 0xe70(0x20)
+	Struct AchievementKillOpponentInContest                      AchievementKillOpponentInContest;                  // 0xe90(0x8)
+	class                                                        ConditionalStatsTriggerForKillingAnotherPlayer;    // 0xe98(0x8)
+	Class AICreatureMovementModifierParamsDataAsset*             PirateLegendHideoutPetMovementData;                // 0xea0(0x8)
+	Class AICreatureMovementModifierParamsDataAsset*             OnShipPetMovementData;                             // 0xea8(0x8)
+	Class AsyncLoadoutRepairComponent*                           RepairComponent;                                   // 0xeb0(0x8)
+	Class SeasonProgressionUIComponent*                          SeasonUIComponent;                                 // 0xeb8(0x8)
+	Class AimAssistComponent*                                    AimAssistComponent;                                // 0xec0(0x8)
+	Class SequencerCameraDockingComponent*                       SequencerCameraDockingComponent;                   // 0xec8(0x8)
+	Class EmotePropData*                                         EmotePropData;                                     // 0xed0(0x8)
+	struct FName                                                 ReplicatedOverrideAnimationEntry;                  // 0xf88(0x8)
+	class                                                        FirstPersonAnimSetDataId;                          // 0xf90(0x8)
+	Class AnimationDataStoreWeakReferenceAsset*                  FirstPersonAnimationDataStoreWeakReferencesAsset;  // 0xf98(0x8)
+	byte                                                         CharacterType;                                     // 0xfa0(0x1)
+	Class ClothingLoadoutComponent*                              ClothingLoadoutComponent;                          // 0x1950(0x8)
+	Class PetLoadoutComponent*                                   PetLoadoutComponent;                               // 0x1958(0x8)
+	Class VoyageParticipantComponent*                            PrimaryVoyageParticipantComponent;                 // 0x1960(0x8)
+	Class VoyageParticipantComponent*                            TaleVoyageParticipantComponent;                    // 0x1968(0x8)
+	Class VoyageParticipantComponent*                            EmergentVoyageParticipantComponent;                // 0x1970(0x8)
+	Class PlayerWorldLocationComponent*                          PlayerWorldLocationComponent;                      // 0x1978(0x8)
+	Class ChainLightningReceiverComponent*                       ChainLightningReceiverComponent;                   // 0x1980(0x8)
+	Struct AthenaPlayerCharacterModelSwap                        PendingModelSwap;                                  // 0x1988(0x28)
+	bool                                                         ReplicatedEmoteExitAllowed;                        // 0x19d8(0x1)
+	bool                                                         FinishedWaitingForSpawn;                           // 0x1a58(0x1)
+	bool                                                         AutoFloatInWater;                                  // 0x1a8a(0x1)
+	bool                                                         ReplicatedIsSprinting;                             // 0x1a8c(0x1)
+	float                                                        AutoMoveCancelThreshold;                           // 0x1aa8(0x4)
+	int                                                          ReplicatedOverridePirateDescSeed;                  // 0x1aac(0x4)
 };
 
 
@@ -1979,8 +1979,8 @@ public:
 class AthenaGhostPlayerCharacter: public AthenaPlayerCharacter
 {
 public:
-	Class StreamingLocationComponent*                            StreamingLocationComponent;                        // 0x1ac8(0x8)
-	Class GhostShipTickManager*                                  GhostShipTickManager;                              // 0x1b60(0x8)
+	Class StreamingLocationComponent*                            StreamingLocationComponent;                        // 0x1ab0(0x8)
+	Class GhostShipTickManager*                                  GhostShipTickManager;                              // 0x1b48(0x8)
 };
 
 
@@ -2005,8 +2005,8 @@ public:
 class AthenaPlayerCharacterMock: public AthenaPlayerCharacter
 {
 public:
-	Class AICreatureMovementModifierParamsDataAsset*             PetMovementParamsDataAsset;                        // 0x1ac8(0x8)
-	bool                                                         AllowedToSwim;                                     // 0x1ad0(0x1)
+	Class AICreatureMovementModifierParamsDataAsset*             PetMovementParamsDataAsset;                        // 0x1ab0(0x8)
+	bool                                                         AllowedToSwim;                                     // 0x1ab8(0x1)
 };
 
 
@@ -2014,7 +2014,7 @@ public:
 class AthenaPlayerCharacterUnitTestMock: public AthenaPlayerCharacterMock
 {
 public:
-	class                                                        ExpectedActionStateId;                             // 0x1c38(0x8)
+	class                                                        ExpectedActionStateId;                             // 0x1c20(0x8)
 };
 
 
@@ -2142,10 +2142,10 @@ public:
 class AthenaTavernPlayerCharacter: public AthenaPlayerCharacter
 {
 public:
-	Class StreamingLocationComponent*                            StreamingLocationComponent;                        // 0x1ac8(0x8)
-	Class AICreatureMovementModifierParamsDataAsset*             ArenaTavernPetMovementData;                        // 0x1ad0(0x8)
-	Class AthenaPlayerController*                                PlayerController;                                  // 0x1b08(0x8)
-	bool                                                         VoteForRivalsHasPassed;                            // 0x1b30(0x1)
+	Class StreamingLocationComponent*                            StreamingLocationComponent;                        // 0x1ab0(0x8)
+	Class AICreatureMovementModifierParamsDataAsset*             ArenaTavernPetMovementData;                        // 0x1ab8(0x8)
+	Class AthenaPlayerController*                                PlayerController;                                  // 0x1af0(0x8)
+	bool                                                         VoteForRivalsHasPassed;                            // 0x1b18(0x1)
 };
 
 
@@ -22493,13 +22493,6 @@ public:
 
 // Size 0x0
 class PlayerEntitlementViewInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0
-class PlayerEntitlementViewReadinessInterface: public Interface
 {
 public:
 };

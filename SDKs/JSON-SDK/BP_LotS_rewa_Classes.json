@@ -1,5 +1,5 @@
 {
-  "BP_LotS_reward003_C": {
+  "BP_LotS_reward024_C": {
     "Super": "ModalInteractionProxy",
     "FullSize": "0x518",
     "InheritedSize": "0x500",
@@ -25,7 +25,33 @@
       }
     ]
   },
-  "BP_LotS_reward001_C": {
+  "BP_LotS_reward022_C": {
+    "Super": "ModalInteractionProxy",
+    "FullSize": "0x518",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "InspectDialog",
+        "Type": "Class NPCDialogComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x510"
+      }
+    ]
+  },
+  "BP_LotS_reward008_C": {
     "Super": "ModalInteractionProxy",
     "FullSize": "0x518",
     "InheritedSize": "0x500",

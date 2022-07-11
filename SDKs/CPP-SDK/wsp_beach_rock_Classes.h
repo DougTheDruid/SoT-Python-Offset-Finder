@@ -6,6 +6,73 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x30
+class wsp_beach_rocks_12_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x428(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x430(0x8)
+};
+
+
+// Size 0x98
+class wsp_beach_rocks_11_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMeshComponent017;                            // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent016;                            // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent015;                            // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent014;                            // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent013;                            // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent012;                            // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent011;                            // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent010;                            // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x450(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x458(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x460(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x468(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x470(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x478(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x480(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x488(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x490(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x498(0x8)
+};
+
+
+// Size 0xa8
+class wsp_beach_rocks_10_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMeshComponent019;                            // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent018;                            // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent017;                            // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent016;                            // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent015;                            // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent014;                            // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent013;                            // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent012;                            // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent011;                            // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent010;                            // 0x450(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x458(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x460(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x468(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x470(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x478(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x480(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x488(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x490(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x498(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x4a0(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x4a8(0x8)
+};
+
+
 // Size 0x70
 class wsp_beach_rocks_09_C: public BP_Placement_HeightDrop_C
 {
@@ -27,6 +94,66 @@ public:
 };
 
 
+// Size 0x60
+class wsp_beach_rocks_08_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMeshComponent010;                            // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x450(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x458(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x460(0x8)
+};
+
+
+// Size 0x58
+class wsp_beach_rocks_07_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x450(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x458(0x8)
+};
+
+
+// Size 0x80
+class wsp_beach_rocks_06_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__b4;                              // 0x408(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__c13;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__a14;                          // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__g;                               // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__b17;                          // 0x428(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__b14;                          // 0x430(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__h;                               // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x440(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__e12;                          // 0x448(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__a17;                          // 0x450(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__e11;                          // 0x458(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__d23;                          // 0x460(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__d10;                             // 0x468(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__e12;                             // 0x470(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__d13;                             // 0x478(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x480(0x8)
+};
+
+
 // Size 0x50
 class wsp_beach_rocks_05_b_C: public BP_Placement_HeightDrop_C
 {
@@ -41,6 +168,82 @@ public:
 	Class StaticMeshComponent*                                   StaticMesh7;                                       // 0x440(0x8)
 	Class StaticMeshComponent*                                   StaticMesh6;                                       // 0x448(0x8)
 	Class SceneComponent*                                        Scene;                                             // 0x450(0x8)
+};
+
+
+// Size 0x60
+class wsp_beach_rocks_05_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMesh16;                                      // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMesh14;                                      // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMesh13;                                      // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMesh12;                                      // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMesh11;                                      // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMesh10;                                      // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMesh9;                                       // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMesh8;                                       // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMesh7;                                       // 0x450(0x8)
+	Class StaticMeshComponent*                                   StaticMesh6;                                       // 0x458(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x460(0x8)
+};
+
+
+// Size 0xa8
+class wsp_beach_rocks_04_c_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMesh22;                                      // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMesh20;                                      // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMesh19;                                      // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMesh18;                                      // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMesh17;                                      // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMesh16;                                      // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMesh15;                                      // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMesh14;                                      // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMesh13;                                      // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMesh12;                                      // 0x450(0x8)
+	Class StaticMeshComponent*                                   StaticMesh11;                                      // 0x458(0x8)
+	Class StaticMeshComponent*                                   StaticMesh10;                                      // 0x460(0x8)
+	Class StaticMeshComponent*                                   StaticMesh9;                                       // 0x468(0x8)
+	Class StaticMeshComponent*                                   StaticMesh8;                                       // 0x470(0x8)
+	Class StaticMeshComponent*                                   StaticMesh6;                                       // 0x478(0x8)
+	Class StaticMeshComponent*                                   StaticMesh5;                                       // 0x480(0x8)
+	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x488(0x8)
+	Class StaticMeshComponent*                                   StaticMesh3;                                       // 0x490(0x8)
+	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x498(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x4a0(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x4a8(0x8)
+};
+
+
+// Size 0xb0
+class wsp_beach_rocks_04_b_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMesh22;                                      // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMesh20;                                      // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMesh19;                                      // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMesh18;                                      // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMesh17;                                      // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMesh16;                                      // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMesh15;                                      // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMesh14;                                      // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMesh13;                                      // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMesh12;                                      // 0x450(0x8)
+	Class StaticMeshComponent*                                   StaticMesh11;                                      // 0x458(0x8)
+	Class StaticMeshComponent*                                   StaticMesh10;                                      // 0x460(0x8)
+	Class StaticMeshComponent*                                   StaticMesh9;                                       // 0x468(0x8)
+	Class StaticMeshComponent*                                   StaticMesh8;                                       // 0x470(0x8)
+	Class StaticMeshComponent*                                   StaticMesh7;                                       // 0x478(0x8)
+	Class StaticMeshComponent*                                   StaticMesh6;                                       // 0x480(0x8)
+	Class StaticMeshComponent*                                   StaticMesh5;                                       // 0x488(0x8)
+	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x490(0x8)
+	Class StaticMeshComponent*                                   StaticMesh3;                                       // 0x498(0x8)
+	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x4a0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x4a8(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x4b0(0x8)
 };
 
 
@@ -71,6 +274,30 @@ public:
 	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x4a8(0x8)
 	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x4b0(0x8)
 	Class SceneComponent*                                        Scene;                                             // 0x4b8(0x8)
+};
+
+
+// Size 0x88
+class wsp_beach_rocks_03_C: public BP_Placement_HeightDrop_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMesh16;                                      // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMesh15;                                      // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMesh14;                                      // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMesh13;                                      // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMesh12;                                      // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMesh11;                                      // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMesh10;                                      // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMesh9;                                       // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMesh8;                                       // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMesh7;                                       // 0x450(0x8)
+	Class StaticMeshComponent*                                   StaticMesh6;                                       // 0x458(0x8)
+	Class StaticMeshComponent*                                   StaticMesh5;                                       // 0x460(0x8)
+	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x468(0x8)
+	Class StaticMeshComponent*                                   StaticMesh3;                                       // 0x470(0x8)
+	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x478(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x480(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x488(0x8)
 };
 
 

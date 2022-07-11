@@ -424,12 +424,6 @@ BP_fod_ChickenMeatRaw_00_a_Wieldable_C:
   FullSize: '0x848'
   InheritedSize: '0x848'
   Super: BP_StaticWieldableIngestible_C
-BP_fod_PineappleFresh_00_a_ItemDesc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: ItemDesc
 BP_hair_col_black_01_under_Desc_C:
   Attributes: []
   ClassSize: '0x0'

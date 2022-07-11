@@ -1,18 +1,4 @@
 {
-  "wsp_bp_tall_bush_01_a_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x410",
-    "InheritedSize": "0x408",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "wsp_bush_palm_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      }
-    ]
-  },
   "wsp_devils_bsh_clstr_01_a_C": {
     "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x430",
@@ -48,6 +34,20 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
+      }
+    ]
+  },
+  "wsp_bp_tall_bush_01_a_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x410",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "wsp_bush_palm_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
       }
     ]
   },

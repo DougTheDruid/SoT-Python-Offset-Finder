@@ -1,4 +1,30 @@
 {
+  "BP_OutpostCrate_cmn_wooden_crate_01_a_C": {
+    "Super": "StorageContainer",
+    "FullSize": "0x4d0",
+    "InheritedSize": "0x4b8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Replenishable",
+        "Type": "Class ReplenishableComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "IslandTelemetrySubject",
+        "Type": "Class IslandTelemetrySubjectComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "StorageContainer",
+        "Type": "Class StorageContainerComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      }
+    ]
+  },
   "BP_OutpostCrate_bld_shop_wood_box_03_a_C": {
     "Super": "StorageContainer",
     "FullSize": "0x4d0",

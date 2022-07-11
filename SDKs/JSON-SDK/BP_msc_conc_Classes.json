@@ -1,18 +1,4 @@
 {
-  "BP_msc_concertina_smp_01_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_msc_concertina_smp_01_a_v01_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_msc_concertina_smp_01_a_v01_ItemInfo_C": {
     "Super": "ItemInfo",
     "FullSize": "0x500",
@@ -52,6 +38,20 @@
         "Offset": "0x8c0"
       }
     ]
+  },
+  "BP_msc_concertina_smp_01_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_msc_concertina_smp_01_a_v01_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "BP_msc_concertina_wth_01_a_v01_ItemDesc_C": {
     "Super": "ItemDesc",

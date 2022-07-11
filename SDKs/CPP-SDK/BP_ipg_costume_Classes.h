@@ -42,6 +42,13 @@ public:
 
 
 // Size 0x0
+class BP_ipg_costume_sak_u_03_Desc_C: public CostumeWithEmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_ipg_costume_sak_u_02_Desc_C: public CostumeWithEmoteDesc
 {
 public:

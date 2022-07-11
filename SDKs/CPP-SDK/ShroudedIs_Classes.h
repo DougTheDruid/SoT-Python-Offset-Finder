@@ -45,15 +45,4 @@ public:
 };
 
 
-// Size 0x20
-class ShroudedIslands_ReaperScout_C: public Actor
-{
-public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
-	Class SkeletalMeshComponent*                                 None;                                              // 0x3d8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
-};
-
-
 }

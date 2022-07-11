@@ -710,13 +710,6 @@
       }
     ]
   },
-  "BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C": {
-    "Super": "BP_Clothing_C",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x6a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C": {
     "Super": "BootyItemDesc",
     "FullSize": "0x130",

@@ -2,13 +2,13 @@
 # https://github.com/DougTheDruid
 BP_ShroudedDeep_Larinna_Active_C:
   Attributes: []
-  ClassSize: '-0x49800000'
-  FullSize: '-0x49800000'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x18'
+  FullSize: '0x6b8'
+  InheritedSize: '0x6a0'
+  Super: BP_SoleTrader_C
 ShroudedDeep_LarinnaDialogTempEntitlement_C:
   Attributes: []
-  ClassSize: '0x4681400f'
-  FullSize: '0x4681400f'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc

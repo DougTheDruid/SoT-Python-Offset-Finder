@@ -6175,22 +6175,22 @@ AthenaGameplayDebuggingHUDComponent:
 AthenaGhostPlayerCharacter:
   Attributes:
   - Name: StreamingLocationComponent
-    Offset: '0x1ac8'
+    Offset: '0x1ab0'
     Size: '0x8'
     Type: Class StreamingLocationComponent*
   - Name: GhostShipTickManager
-    Offset: '0x1b60'
+    Offset: '0x1b48'
     Size: '0x8'
     Type: Class GhostShipTickManager*
   ClassSize: '0x100'
-  FullSize: '0x1bd0'
-  InheritedSize: '0x1ad0'
+  FullSize: '0x1bb0'
+  InheritedSize: '0x1ab0'
   Super: AthenaPlayerCharacter
 AthenaGhostPlayerCharacterMock:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x1bd0'
-  InheritedSize: '0x1bd0'
+  FullSize: '0x1bb0'
+  InheritedSize: '0x1bb0'
   Super: AthenaGhostPlayerCharacter
 AthenaHUD:
   Attributes:
@@ -6549,364 +6549,364 @@ AthenaPlayerCameraManager:
 AthenaPlayerCharacter:
   Attributes:
   - Name: FirstPersonMeshOffsetComponent
-    Offset: '0xcb0'
+    Offset: '0xca8'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: FirstPersonMesh
-    Offset: '0xcb8'
+    Offset: '0xcb0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
   - Name: FirstPersonCamera
-    Offset: '0xcc0'
+    Offset: '0xcb8'
     Size: '0x8'
     Type: Class AthenaCameraComponent*
   - Name: ThirdPersonCamera
-    Offset: '0xcc8'
+    Offset: '0xcc0'
     Size: '0x8'
     Type: Class AthenaCameraComponent*
   - Name: SpringArmCamera
-    Offset: '0xcd0'
+    Offset: '0xcc8'
     Size: '0x8'
     Type: Class AthenaCameraComponent*
   - Name: LookAtEmoteCameraComponent
-    Offset: '0xcd8'
+    Offset: '0xcd0'
     Size: '0x8'
     Type: Class LookAtEmoteCameraComponent*
   - Name: SpringArm
-    Offset: '0xce0'
+    Offset: '0xcd8'
     Size: '0x8'
     Type: Class AthenaSpringArmComponent*
   - Name: LocalCloudDome
-    Offset: '0xce8'
+    Offset: '0xce0'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: InteractionComponent
-    Offset: '0xcf0'
+    Offset: '0xce8'
     Size: '0x8'
     Type: Class CharacterInteractionComponent*
   - Name: ClimbingComponent
-    Offset: '0xcf8'
+    Offset: '0xcf0'
     Size: '0x8'
     Type: Class ClimbingComponent*
   - Name: DrunkennessComponent
-    Offset: '0xd00'
+    Offset: '0xcf8'
     Size: '0x8'
     Type: Class DrunkennessComponent*
   - Name: StaggerComponent
-    Offset: '0xd08'
+    Offset: '0xd00'
     Size: '0x8'
     Type: Class StaggerComponent*
   - Name: DrowningComponent
-    Offset: '0xd10'
+    Offset: '0xd08'
     Size: '0x8'
     Type: Class DrowningComponent*
   - Name: RumbleHandlerComponent
-    Offset: '0xd18'
+    Offset: '0xd10'
     Size: '0x8'
     Type: Class RumbleHandlerComponent*
   - Name: ScreenSpaceVfxComponent
-    Offset: '0xd20'
+    Offset: '0xd18'
     Size: '0x8'
     Type: Class ScreenSpaceVfxComponent*
   - Name: TreasureMapCollectionComponent
-    Offset: '0xd28'
+    Offset: '0xd20'
     Size: '0x8'
     Type: Class TreasureMapCollectionComponent*
   - Name: PhrasesRadialComponent
-    Offset: '0xd30'
+    Offset: '0xd28'
     Size: '0x8'
     Type: Class PhrasesRadialComponent*
   - Name: QuickInventoryComponent
-    Offset: '0xd38'
+    Offset: '0xd30'
     Size: '0x8'
     Type: Class QuickInventoryComponent*
   - Name: PointOfInterestTrackerComponent
-    Offset: '0xd40'
+    Offset: '0xd38'
     Size: '0x8'
     Type: Class PointOfInterestTrackerComponent*
   - Name: LimpingComponent
-    Offset: '0xd48'
+    Offset: '0xd40'
     Size: '0x8'
     Type: Class LimpingComponent*
   - Name: PacingComponent
-    Offset: '0xd50'
+    Offset: '0xd48'
     Size: '0x8'
     Type: Class PacingComponent*
   - Name: BurpComponent
-    Offset: '0xd58'
+    Offset: '0xd50'
     Size: '0x8'
     Type: Class BurpComponent*
   - Name: MeleeLockOnComponent
-    Offset: '0xd60'
+    Offset: '0xd58'
     Size: '0x8'
     Type: Class MeleeAttackLockOnComponent*
   - Name: DeathSelfInteractionComponent
-    Offset: '0xd68'
+    Offset: '0xd60'
     Size: '0x8'
     Type: Class DeathSelfInteractionComponent*
   - Name: WaterSlidePlayerComponent
-    Offset: '0xd70'
+    Offset: '0xd68'
     Size: '0x8'
     Type: Class WaterSlidePlayerComponent*
   - Name: ReviveDebugComponent
-    Offset: '0xd78'
+    Offset: '0xd70'
     Size: '0x8'
     Type: Class ReviveDebugComponent*
   - Name: FlashbangEffectComponent
-    Offset: '0xd80'
+    Offset: '0xd78'
     Size: '0x8'
     Type: Class FlashbangEffectComponent*
   - Name: WorldLocationVisitorComponent
-    Offset: '0xd88'
+    Offset: '0xd80'
     Size: '0x8'
     Type: Class WorldLocationVisitorComponent*
   - Name: MeleeAttackLockOnSettings
-    Offset: '0xd90'
+    Offset: '0xd88'
     Size: '0x8'
     Type: Class MeleeAttackLockOnComponentSettings*
   - Name: StatusEffectManagerComponent
-    Offset: '0xd98'
+    Offset: '0xd90'
     Size: '0x8'
     Type: Class StatusEffectManagerComponent*
   - Name: StatusEffectPersistenceComponent
-    Offset: '0xda0'
+    Offset: '0xd98'
     Size: '0x8'
     Type: Class StatusEffectPersistenceComponent*
   - Name: PlayerCurseComponent
-    Offset: '0xda8'
+    Offset: '0xda0'
     Size: '0x8'
     Type: Class PlayerCurseComponent*
   - Name: MaterialStatusSusceptibilityComponent
-    Offset: '0xdb0'
+    Offset: '0xda8'
     Size: '0x8'
     Type: Class MaterialStatusSusceptibilityComponent*
   - Name: HealthRegenerationPoolComponent
-    Offset: '0xdb8'
+    Offset: '0xdb0'
     Size: '0x8'
     Type: Class HealthRegenerationPoolComponent*
   - Name: SicknessComponent
-    Offset: '0xdc0'
+    Offset: '0xdb8'
     Size: '0x8'
     Type: Class SicknessComponent*
   - Name: PlayerViewRewindComponent
-    Offset: '0xdc8'
+    Offset: '0xdc0'
     Size: '0x8'
     Type: Class RewindComponent*
   - Name: ProjectileTraceHitVolume
-    Offset: '0xdd0'
+    Offset: '0xdc8'
     Size: '0x8'
     Type: Class CapsuleComponent*
   - Name: PlayerMerchantContractsComponent
-    Offset: '0xdd8'
+    Offset: '0xdd0'
     Size: '0x8'
     Type: Class PlayerMerchantContractsComponent*
   - Name: PlayerShroudBreakerTrackerComponent
-    Offset: '0xde0'
+    Offset: '0xdd8'
     Size: '0x8'
     Type: Class PlayerShroudBreakerTrackerComponent*
   - Name: PetOwnerComponent
-    Offset: '0xde8'
+    Offset: '0xde0'
     Size: '0x8'
     Type: Class PetOwnerComponent*
   - Name: SpawnContextContainerComponent
-    Offset: '0xdf0'
+    Offset: '0xde8'
     Size: '0x8'
     Type: Class AISpawnContextContainerComponent*
   - Name: RadialManager
-    Offset: '0xdf8'
+    Offset: '0xdf0'
     Size: '0x8'
     Type: Class RadialManagerComponent*
   - Name: CameraFOVWhenSprinting
-    Offset: '0xe00'
+    Offset: '0xdf8'
     Size: '0x4'
     Type: float
   - Name: ApproximateCamPitchToLocalCamOffsetCurve
-    Offset: '0xe08'
+    Offset: '0xe00'
     Size: '0x8'
     Type: Class CurveVector*
   - Name: WalkConditionParams
-    Offset: '0xe10'
+    Offset: '0xe08'
     Size: '0x8'
     Type: Struct WalkConditionsParams
   - Name: ServerSprintConditionParams
-    Offset: '0xe18'
+    Offset: '0xe10'
     Size: '0xc'
     Type: Struct SprintConditionsParams
   - Name: ClientSprintConditionParams
-    Offset: '0xe24'
+    Offset: '0xe1c'
     Size: '0xc'
     Type: Struct SprintConditionsParams
   - Name: SprintingServerTimeTolerance
-    Offset: '0xe30'
+    Offset: '0xe28'
     Size: '0x4'
     Type: float
   - Name: PostSprintResetTime
-    Offset: '0xe34'
+    Offset: '0xe2c'
     Size: '0x4'
     Type: float
   - Name: EmoteSpringArmParameters
-    Offset: '0xe38'
+    Offset: '0xe30'
     Size: '0x8'
     Type: Class AthenaSpringArmComponentParams*
   - Name: DeathSpringArmParameters
-    Offset: '0xe40'
+    Offset: '0xe38'
     Size: '0x8'
     Type: Class AthenaSpringArmComponentParams*
   - Name: EmotesRadialDataAsset
-    Offset: '0xe48'
+    Offset: '0xe40'
     Size: '0x8'
     Type: Class EmotesRadialDataAsset*
   - Name: AllowAnimationTickAggregation
-    Offset: '0xe50'
+    Offset: '0xe48'
     Size: '0x1'
     Type: bool
   - Name: AchievementKillOpponentFromBehindWithBlunderbuss
-    Offset: '0xe54'
+    Offset: '0xe4c'
     Size: '0x4'
     Type: Struct AchievementKillOpponentFromBehindWithBlunderbuss
   - Name: AchievementHeavyAttackRivalOffTheirShip
-    Offset: '0xe58'
+    Offset: '0xe50'
     Size: '0x10'
     Type: Struct AchievementHeavyAttackRivalOffTheirShip
   - Name: AchievementBlockThenHitAndGetBlockedThenTakeHit
-    Offset: '0xe68'
+    Offset: '0xe60'
     Size: '0x10'
     Type: Struct AchievementBlockThenHitAndGetBlockedThenTakeHit
   - Name: AchievementHaveADrinkWithAnotherCrewAtAnOutpost
-    Offset: '0xe78'
+    Offset: '0xe70'
     Size: '0x20'
     Type: Struct AchievementHaveADrinkWithAnotherCrewAtAnOutpost
   - Name: AchievementKillOpponentInContest
-    Offset: '0xe98'
+    Offset: '0xe90'
     Size: '0x8'
     Type: Struct AchievementKillOpponentInContest
   - Name: ConditionalStatsTriggerForKillingAnotherPlayer
-    Offset: '0xea0'
+    Offset: '0xe98'
     Size: '0x8'
     Type: class
   - Name: PirateLegendHideoutPetMovementData
-    Offset: '0xea8'
+    Offset: '0xea0'
     Size: '0x8'
     Type: Class AICreatureMovementModifierParamsDataAsset*
   - Name: OnShipPetMovementData
-    Offset: '0xeb0'
+    Offset: '0xea8'
     Size: '0x8'
     Type: Class AICreatureMovementModifierParamsDataAsset*
   - Name: RepairComponent
-    Offset: '0xeb8'
+    Offset: '0xeb0'
     Size: '0x8'
     Type: Class AsyncLoadoutRepairComponent*
   - Name: SeasonUIComponent
-    Offset: '0xec0'
+    Offset: '0xeb8'
     Size: '0x8'
     Type: Class SeasonProgressionUIComponent*
   - Name: AimAssistComponent
-    Offset: '0xec8'
+    Offset: '0xec0'
     Size: '0x8'
     Type: Class AimAssistComponent*
   - Name: SequencerCameraDockingComponent
-    Offset: '0xed0'
+    Offset: '0xec8'
     Size: '0x8'
     Type: Class SequencerCameraDockingComponent*
   - Name: EmotePropData
-    Offset: '0xed8'
+    Offset: '0xed0'
     Size: '0x8'
     Type: Class EmotePropData*
   - Name: ReplicatedOverrideAnimationEntry
-    Offset: '0xf90'
+    Offset: '0xf88'
     Size: '0x8'
     Type: struct FName
   - Name: FirstPersonAnimSetDataId
-    Offset: '0xf98'
+    Offset: '0xf90'
     Size: '0x8'
     Type: class
   - Name: FirstPersonAnimationDataStoreWeakReferencesAsset
-    Offset: '0xfa0'
+    Offset: '0xf98'
     Size: '0x8'
     Type: Class AnimationDataStoreWeakReferenceAsset*
   - Name: CharacterType
-    Offset: '0xfa8'
+    Offset: '0xfa0'
     Size: '0x1'
     Type: byte
   - Name: ClothingLoadoutComponent
-    Offset: '0x1958'
+    Offset: '0x1950'
     Size: '0x8'
     Type: Class ClothingLoadoutComponent*
   - Name: PetLoadoutComponent
-    Offset: '0x1960'
+    Offset: '0x1958'
     Size: '0x8'
     Type: Class PetLoadoutComponent*
   - Name: PrimaryVoyageParticipantComponent
-    Offset: '0x1968'
+    Offset: '0x1960'
     Size: '0x8'
     Type: Class VoyageParticipantComponent*
   - Name: TaleVoyageParticipantComponent
-    Offset: '0x1970'
+    Offset: '0x1968'
     Size: '0x8'
     Type: Class VoyageParticipantComponent*
   - Name: EmergentVoyageParticipantComponent
-    Offset: '0x1978'
+    Offset: '0x1970'
     Size: '0x8'
     Type: Class VoyageParticipantComponent*
   - Name: PlayerWorldLocationComponent
-    Offset: '0x1980'
+    Offset: '0x1978'
     Size: '0x8'
     Type: Class PlayerWorldLocationComponent*
   - Name: ChainLightningReceiverComponent
-    Offset: '0x1988'
+    Offset: '0x1980'
     Size: '0x8'
     Type: Class ChainLightningReceiverComponent*
   - Name: PendingModelSwap
-    Offset: '0x1990'
+    Offset: '0x1988'
     Size: '0x28'
     Type: Struct AthenaPlayerCharacterModelSwap
   - Name: ReplicatedEmoteExitAllowed
-    Offset: '0x19f0'
+    Offset: '0x19d8'
     Size: '0x1'
     Type: bool
   - Name: FinishedWaitingForSpawn
-    Offset: '0x1a70'
+    Offset: '0x1a58'
     Size: '0x1'
     Type: bool
   - Name: AutoFloatInWater
-    Offset: '0x1aa2'
+    Offset: '0x1a8a'
     Size: '0x1'
     Type: bool
   - Name: ReplicatedIsSprinting
-    Offset: '0x1aa4'
+    Offset: '0x1a8c'
     Size: '0x1'
     Type: bool
   - Name: AutoMoveCancelThreshold
-    Offset: '0x1ac0'
+    Offset: '0x1aa8'
     Size: '0x4'
     Type: float
   - Name: ReplicatedOverridePirateDescSeed
-    Offset: '0x1ac4'
+    Offset: '0x1aac'
     Size: '0x4'
     Type: int
-  ClassSize: '0xf30'
-  FullSize: '0x1ad0'
+  ClassSize: '0xf10'
+  FullSize: '0x1ab0'
   InheritedSize: '0xba0'
   Super: AthenaCharacter
 AthenaPlayerCharacterMock:
   Attributes:
   - Name: PetMovementParamsDataAsset
-    Offset: '0x1ac8'
+    Offset: '0x1ab0'
     Size: '0x8'
     Type: Class AICreatureMovementModifierParamsDataAsset*
   - Name: AllowedToSwim
-    Offset: '0x1ad0'
+    Offset: '0x1ab8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x30'
-  FullSize: '0x1b00'
-  InheritedSize: '0x1ad0'
+  FullSize: '0x1ae0'
+  InheritedSize: '0x1ab0'
   Super: AthenaPlayerCharacter
 AthenaPlayerCharacterMockWithAnimSeq:
   Attributes: []
   ClassSize: '0x50'
-  FullSize: '0x1b50'
-  InheritedSize: '0x1b00'
+  FullSize: '0x1b30'
+  InheritedSize: '0x1ae0'
   Super: AthenaPlayerCharacterMock
 AthenaPlayerCharacterMovementComponent:
   Attributes:
@@ -6955,12 +6955,12 @@ AthenaPlayerCharacterTestFunctions:
 AthenaPlayerCharacterUnitTestMock:
   Attributes:
   - Name: ExpectedActionStateId
-    Offset: '0x1c38'
+    Offset: '0x1c20'
     Size: '0x8'
     Type: class
   ClassSize: '0x160'
-  FullSize: '0x1c60'
-  InheritedSize: '0x1b00'
+  FullSize: '0x1c40'
+  InheritedSize: '0x1ae0'
   Super: AthenaPlayerCharacterMock
 AthenaPlayerController:
   Attributes:
@@ -7379,30 +7379,30 @@ AthenaStreamedLevelServiceInterface:
 AthenaTavernPlayerCharacter:
   Attributes:
   - Name: StreamingLocationComponent
-    Offset: '0x1ac8'
+    Offset: '0x1ab0'
     Size: '0x8'
     Type: Class StreamingLocationComponent*
   - Name: ArenaTavernPetMovementData
-    Offset: '0x1ad0'
+    Offset: '0x1ab8'
     Size: '0x8'
     Type: Class AICreatureMovementModifierParamsDataAsset*
   - Name: PlayerController
-    Offset: '0x1b08'
+    Offset: '0x1af0'
     Size: '0x8'
     Type: Class AthenaPlayerController*
   - Name: VoteForRivalsHasPassed
-    Offset: '0x1b30'
+    Offset: '0x1b18'
     Size: '0x1'
     Type: bool
   ClassSize: '0x70'
-  FullSize: '0x1b40'
-  InheritedSize: '0x1ad0'
+  FullSize: '0x1b20'
+  InheritedSize: '0x1ab0'
   Super: AthenaPlayerCharacter
 AthenaTavernPlayerCharacterMock:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x1b40'
-  InheritedSize: '0x1b40'
+  FullSize: '0x1b20'
+  InheritedSize: '0x1b20'
   Super: AthenaTavernPlayerCharacter
 AthenaTextRender:
   Attributes:
@@ -37121,8 +37121,8 @@ MockAthenaPlayerCharacterMovementComponent:
 MockAthenaPlayerCharacterWithAthenaPlayerCharacterMovementCompo:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x1b00'
-  InheritedSize: '0x1b00'
+  FullSize: '0x1ae0'
+  InheritedSize: '0x1ae0'
   Super: AthenaPlayerCharacterMock
 MockCharacterWithAthenaPlayerCharacterMovementComponent:
   Attributes: []
@@ -42237,12 +42237,6 @@ PlayerEntitlementControlInterface:
   InheritedSize: '0x28'
   Super: Interface
 PlayerEntitlementViewInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-PlayerEntitlementViewReadinessInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'

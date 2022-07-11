@@ -6,15 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x4653f441
-class LostSands_LarinnaDialogTempEntitlement_C: public None
+// Size 0x18
+class BP_LostSands_Larinna_C: public BP_SoleTrader_C
 {
 public:
+	Class StaticMeshComponent*                                   None;                                              // 0x6a0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x6a8(0x8)
+	Class ActorPhasingComponent*                                 None;                                              // 0x6b0(0x8)
 };
 
 
-// Size -0x65ceef80
-class BP_LostSands_Larinna_C: public None
+// Size 0x0
+class LostSands_LarinnaDialogTempEntitlement_C: public EntitlementDesc
 {
 public:
 };

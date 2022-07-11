@@ -77,6 +77,13 @@ public:
 
 
 // Size 0x0
+class BP_Emote_TantrumStamp_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_Emote_Tantrum_Desc_C: public EmoteDesc
 {
 public:

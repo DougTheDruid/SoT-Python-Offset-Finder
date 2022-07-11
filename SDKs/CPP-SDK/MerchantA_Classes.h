@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class BP_GlitterbeardLoreBook_ItNeverRains_C: public ModalInteractionProxy
+class BP_GlitterbeardLoreBook_FeatheredFriends_C: public ModalInteractionProxy
 {
 public:
 	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x500(0x8)

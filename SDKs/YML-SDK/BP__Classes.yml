@@ -24,12 +24,6 @@ BP_BriggsyCollectorsChest_Desc_C:
   FullSize: '0x130'
   InheritedSize: '0x130'
   Super: BootyItemDesc
-BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x6a0'
-  InheritedSize: '0x6a0'
-  Super: BP_Clothing_C
 BP_CollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'

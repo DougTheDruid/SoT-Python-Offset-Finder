@@ -1,27 +1,45 @@
 {
-  "BP_TaleBook_Shroudbreaker_DaggerToothOutpost_AdditionalPuzzles_": {
-    "Super": "ShipNetProxy",
-    "FullSize": "0x4d0",
-    "InheritedSize": "0x4b0",
-    "ClassSize": "0x20",
+  "BP_TaleBook_Shroudbreaker_AncientSpireOutpost_AdditionalPuzzles": {
+    "Super": "VoyageProposalContainer",
+    "FullSize": "0x7b0",
+    "InheritedSize": "0x780",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x4b0"
+        "Offset": "0x780"
       },
       {
-        "Name": "EmissaryFlags",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x788"
       },
       {
-        "Name": "Dynamic Materials",
-        "Type": "TArray<class Dynamic Materials*>",
-        "Size": "0x10",
-        "Offset": "0x4c0"
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "TaleSelectionSlot",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a8"
       }
     ]
   },

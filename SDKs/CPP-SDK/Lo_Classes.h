@@ -6,13 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class LostSands_BothTalesComplete_Entitlement_C: public EntitlementDesc
-{
-public:
-};
-
-
 // Size 0x8
 class BP_SkullRitual_Skull_C: public Actor
 {
@@ -26,6 +19,13 @@ class BP_SkullRitual_Pipe_C: public Actor
 {
 public:
 	Class StaticMeshComponent*                                   gmp_sm_pipe_oos_01_a;                              // 0x3c8(0x8)
+};
+
+
+// Size 0x0
+class LostSands_BothTalesComplete_Entitlement_C: public EntitlementDesc
+{
+public:
 };
 
 

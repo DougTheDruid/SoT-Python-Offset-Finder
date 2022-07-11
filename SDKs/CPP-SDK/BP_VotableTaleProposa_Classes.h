@@ -6,15 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x1
-class BP_VotableTaleProposal_Vertical_C: public SignalMesh
+// Size 0x50
+class BP_VotableTaleProposal_Vertical_C: public VotableObjectView
 {
 public:
-	Class MeshComponent*                                         SignalMesh;                                        // 0x408(0x8)
-	Class SceneComponent*                                        Root;                                              // 0x410(0x8)
-	Class MaterialInstanceDynamic*                               SignalMaterial;                                    // 0x418(0x8)
-	byte                                                         EventType;                                         // 0x420(0x1)
-	byte                                                         OwningNetworkRegion;                               // 0x488(0x1)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x4e0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x4e8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x4f0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x4f8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x500(0x8)
+	TArray<class None*>                                          None;                                              // 0x508(0x10)
+	Class StaticMesh*                                            None;                                              // 0x518(0x8)
+	int                                                          None;                                              // 0x520(0x4)
+	float                                                        None;                                              // 0x524(0x4)
+	Class MaterialInterface*                                     None;                                              // 0x528(0x8)
 };
 
 

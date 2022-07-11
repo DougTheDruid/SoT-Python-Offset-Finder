@@ -7,6 +7,16 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
+class BP_OutpostCrate_cmn_wooden_crate_01_a_C: public StorageContainer
+{
+public:
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x4b8(0x8)
+	Class IslandTelemetrySubjectComponent*                       IslandTelemetrySubject;                            // 0x4c0(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4c8(0x8)
+};
+
+
+// Size 0x18
 class BP_OutpostCrate_bld_shop_wood_box_03_a_C: public StorageContainer
 {
 public:

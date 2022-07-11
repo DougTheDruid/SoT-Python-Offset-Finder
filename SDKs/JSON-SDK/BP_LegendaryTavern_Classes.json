@@ -6,31 +6,31 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "EmissaryMaxRankQuestProvider",
+        "Name": "None",
         "Type": "Class EmissaryMaxRankQuestProvider*",
         "Size": "0x8",
         "Offset": "0x738"
       },
       {
-        "Name": "SolidHits",
+        "Name": "None",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x740"
       },
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x748"
       },
       {
-        "Name": "NPCDialog",
+        "Name": "None",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x750"
       },
       {
-        "Name": "AnimNotifyWwiseEmitter",
+        "Name": "None",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x758"

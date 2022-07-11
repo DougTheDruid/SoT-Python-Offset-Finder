@@ -2,10 +2,10 @@
 # https://github.com/DougTheDruid
 AHuntersCry_LarinnaDialogTempEntitlement_C:
   Attributes: []
-  ClassSize: '-0x66d53701'
-  FullSize: '-0x66d53700'
-  InheritedSize: '0x1'
-  Super: None
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc
 AHuntersCry_MerrickSavedEntitlement_C:
   Attributes: []
   ClassSize: '0x0'
@@ -14,7 +14,7 @@ AHuntersCry_MerrickSavedEntitlement_C:
   Super: EntitlementDesc
 AHuntersCry_SerikDialogTempEntitlement_C:
   Attributes: []
-  ClassSize: '0x3f7797f6'
-  FullSize: '0x3f7797f6'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x0'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
+  Super: EntitlementDesc

@@ -1,4 +1,11 @@
 {
+  "BP_TreasureMap_ItemDesc_PlayerBuriedXMarksTheSpot_C": {
+    "Super": "TreasureMapItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_TreasureMap_ItemDesc_Bounty_C": {
     "Super": "TreasureMapItemDesc",
     "FullSize": "0x130",
@@ -35,13 +42,6 @@
     "Attributes": []
   },
   "BP_TreasureMap_ItemDesc_XMarksTheSpot_C": {
-    "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_TreasureMap_ItemDesc_PlayerBuriedXMarksTheSpot_C": {
     "Super": "TreasureMapItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",

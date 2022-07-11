@@ -1,4 +1,11 @@
 {
+  "BP_tattoo_set_umb_02_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_tattoo_set_que_shark_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
@@ -77,13 +84,6 @@
     "Attributes": []
   },
   "BP_tattoo_s4_01_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_tattoo_set_umb_02_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xe0",
     "InheritedSize": "0xe0",

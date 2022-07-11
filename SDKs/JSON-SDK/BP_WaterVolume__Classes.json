@@ -1,8 +1,8 @@
 {
-  "BP_WaterVolume_Large_C": {
-    "Super": "BP_WaterVolume_C",
-    "FullSize": "0x484",
-    "InheritedSize": "0x484",
+  "BP_WaterVolume_WSP_Ext1_C": {
+    "Super": "BP_WaterVolume_Optimized_C",
+    "FullSize": "0x47c",
+    "InheritedSize": "0x47c",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -56,10 +56,10 @@
       }
     ]
   },
-  "BP_WaterVolume_WSP_Ext1_C": {
-    "Super": "BP_WaterVolume_Optimized_C",
-    "FullSize": "0x47c",
-    "InheritedSize": "0x47c",
+  "BP_WaterVolume_Large_C": {
+    "Super": "BP_WaterVolume_C",
+    "FullSize": "0x484",
+    "InheritedSize": "0x484",
     "ClassSize": "0x0",
     "Attributes": []
   },

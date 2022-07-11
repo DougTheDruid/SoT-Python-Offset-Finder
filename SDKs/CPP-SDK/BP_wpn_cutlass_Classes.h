@@ -55,21 +55,6 @@ public:
 };
 
 
-// Size 0x8
-class BP_wpn_cutlass_par_01_a_ItemInfo_C: public ItemInfo
-{
-public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
-};
-
-
-// Size 0x0
-class BP_wpn_cutlass_par_01_a_Wieldable_C: public BP_Cutlass_Item_C
-{
-public:
-};
-
-
 // Size 0x0
 class BP_wpn_cutlass_yr1_01_a_ItemDesc_C: public ItemDesc
 {
@@ -86,6 +71,13 @@ public:
 
 // Size 0x0
 class BP_wpn_cutlass_win_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_cutlass_s6_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

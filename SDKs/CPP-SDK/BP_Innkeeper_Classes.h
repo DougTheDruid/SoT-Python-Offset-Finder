@@ -10,15 +10,15 @@ namespace DougsSDKDumper
 class BP_Innkeeper_C: public NPC
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x680(0x8)
-	Class CargoRunParticipantComponent*                          CargoRunParticipant;                               // 0x688(0x8)
-	Class CapsuleComponent*                                      SolidHits;                                         // 0x690(0x8)
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x698(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6a0(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6a8(0x8)
-	Class WwiseEvent*                                            SFX_IdleLoopPlay;                                  // 0x6b0(0x8)
-	Class WwiseEvent*                                            SFX_IdleLoopStop;                                  // 0x6b8(0x8)
-	Struct WwiseEmitter                                          InnkeeperEmitter;                                  // 0x6c0(0x20)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x680(0x8)
+	Class CargoRunParticipantComponent*                          None;                                              // 0x688(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0x690(0x8)
+	Class NPCDialogComponent*                                    None;                                              // 0x698(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x6a0(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x6a8(0x8)
+	Class WwiseEvent*                                            None;                                              // 0x6b0(0x8)
+	Class WwiseEvent*                                            None;                                              // 0x6b8(0x8)
+	Struct WwiseEmitter                                          None;                                              // 0x6c0(0x20)
 };
 
 

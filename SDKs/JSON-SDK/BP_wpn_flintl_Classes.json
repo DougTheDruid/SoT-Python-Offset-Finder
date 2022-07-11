@@ -41,6 +41,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_wpn_flintlock_pistol_rpr_01_a_V01_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_wpn_flintlock_pistol_rea_mys_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
@@ -56,6 +63,13 @@
     "Attributes": []
   },
   "BP_wpn_flintlock_pistol_par_01_a_v03_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_wpn_flintlock_pistol_oos_dre_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x130",
     "InheritedSize": "0x130",

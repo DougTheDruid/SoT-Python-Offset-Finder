@@ -49,6 +49,13 @@ public:
 
 
 // Size 0x0
+class BP_wpn_flintlock_pistol_rpr_01_a_V01_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_wpn_flintlock_pistol_rea_mys_01_a_ItemDesc_C: public ItemDesc
 {
 public:
@@ -64,6 +71,13 @@ public:
 
 // Size 0x0
 class BP_wpn_flintlock_pistol_par_01_a_v03_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_flintlock_pistol_oos_dre_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

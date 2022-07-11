@@ -1,4 +1,32 @@
 {
+  "MeshMemoryConstraintCategory_Scroll_C": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_Pouch_C": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_Crate_GoodsOneHanded_C": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_Bottle_C": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MeshMemoryConstraintCategory_AI_Skeleton_Bone_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
@@ -76,28 +104,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MeshMemoryConstraintCategory_Scroll_C": {
-    "Super": "MeshMemoryConstraintCategory",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintCategory_Pouch_C": {
-    "Super": "MeshMemoryConstraintCategory",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintCategory_Crate_GoodsOneHanded_C": {
-    "Super": "MeshMemoryConstraintCategory",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintCategory_Bottle_C": {
+  "MeshMemoryConstraintCategory_ShipPartCustomization_Wheel_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -118,14 +125,28 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MeshMemoryConstraintCategory_ShipPartCustomization_Wheel_C": {
+  "MeshMemoryConstraintCategory_ShipPartCustomization_VoyageTable_": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MeshMemoryConstraintCategory_ShipPartCustomization_CapstanRelea": {
+  "MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsCurt": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_ShipPartCustomization_ChandelierFl": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_ShipPartCustomization_Chandelier_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -133,6 +154,13 @@
     "Attributes": []
   },
   "MeshMemoryConstraintCategory_ShipPartCustomization_CapstanBody_": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_ShipPartCustomization_CapstanRelea": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -154,34 +182,6 @@
     "Attributes": []
   },
   "MeshMemoryConstraintCategory_ShipPartCustomization_CannonBarrel": {
-    "Super": "MeshMemoryConstraintCategory",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintCategory_ShipPartCustomization_VoyageTable_": {
-    "Super": "MeshMemoryConstraintCategory",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintCategory_ShipPartCustomization_ChandelierFl": {
-    "Super": "MeshMemoryConstraintCategory",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintCategory_ShipPartCustomization_Chandelier_C": {
-    "Super": "MeshMemoryConstraintCategory",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsCurt": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

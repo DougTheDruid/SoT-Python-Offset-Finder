@@ -13,15 +13,15 @@ public:
 };
 
 
-// Size -0x66d53701
-class AHuntersCry_LarinnaDialogTempEntitlement_C: public None
+// Size 0x0
+class AHuntersCry_SerikDialogTempEntitlement_C: public EntitlementDesc
 {
 public:
 };
 
 
-// Size 0x3f7797f6
-class AHuntersCry_SerikDialogTempEntitlement_C: public None
+// Size 0x0
+class AHuntersCry_LarinnaDialogTempEntitlement_C: public EntitlementDesc
 {
 public:
 };
