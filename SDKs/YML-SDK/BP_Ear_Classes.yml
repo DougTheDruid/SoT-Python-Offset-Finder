@@ -3,12 +3,12 @@
 BP_Earthquake_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x598'
-  InheritedSize: '0x598'
+  FullSize: '0x5b8'
+  InheritedSize: '0x5b8'
   Super: Earthquake
 BP_Earthquake_Feature_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x598'
-  InheritedSize: '0x598'
+  FullSize: '0x5b8'
+  InheritedSize: '0x5b8'
   Super: BP_Earthquake_C

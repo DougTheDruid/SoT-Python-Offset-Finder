@@ -17,7 +17,7 @@ MountableType_Trinket_Hanging_SinglePoint_Tall_C:
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
-  Super: MountableType
+  Super: MountableType_Trinket_Hanging_SinglePoints_C
 MountableType_Trinket_Hanging_SinglePoints_C:
   Attributes: []
   ClassSize: '0x0'

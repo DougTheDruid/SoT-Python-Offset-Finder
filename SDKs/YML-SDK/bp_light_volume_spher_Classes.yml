@@ -28,3 +28,17 @@ bp_light_volume_sphere_orange_a_C:
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
   Super: Actor
+bp_light_volume_sphere_orb_blue_C:
+  Attributes:
+  - Name: Billboard
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: Class BillboardComponent*
+  - Name: StaticMeshComponent0
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x10'
+  FullSize: '0x3d8'
+  InheritedSize: '0x3c8'
+  Super: Actor

@@ -49,13 +49,6 @@ public:
 
 
 // Size 0x0
-class BP_makeup_set_cold_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
 class BP_makeup_s6_01_Desc_C: public ClothingDesc
 {
 public:
@@ -77,6 +70,13 @@ public:
 
 
 // Size 0x0
+class BP_makeup_hzn_01_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_makeup_mer_01_Desc_C: public ClothingDesc
 {
 public:
@@ -84,7 +84,7 @@ public:
 
 
 // Size 0x0
-class BP_makeup_hzn_01_Desc_C: public ClothingDesc
+class BP_makeup_set_cold_01_Desc_C: public ClothingDesc
 {
 public:
 };

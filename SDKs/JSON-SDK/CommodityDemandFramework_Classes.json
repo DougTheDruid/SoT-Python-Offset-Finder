@@ -1,21 +1,21 @@
 {
   "CommodityTokenEntitlementDesc": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "NPCToRedeemAt",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xd8"
+        "Offset": "0xc8"
       },
       {
         "Name": "ItemToRedeemFor",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xe0"
+        "Offset": "0xd0"
       }
     ]
   },
@@ -128,21 +128,21 @@
   },
   "CommodityItemDesc": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x130",
+    "FullSize": "0x130",
+    "InheritedSize": "0x120",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CommodityType",
         "Type": "Struct CommoditySelectionType",
         "Size": "0x8",
-        "Offset": "0x130"
+        "Offset": "0x120"
       },
       {
         "Name": "CommodityDemand",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x138"
+        "Offset": "0x128"
       }
     ]
   },
@@ -189,15 +189,21 @@
   },
   "CommoditySourceComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xd8",
+    "FullSize": "0xe0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "NPCIdentifier",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd8"
       }
     ]
   },

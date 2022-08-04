@@ -28,14 +28,36 @@ CaptaincyStarter:
     Offset: '0x70'
     Size: '0x8'
     Type: class
-  - Name: FeatureToggle
+  - Name: CheckIfCaptainingANewShip
     Offset: '0x78'
+    Size: '0x1'
+    Type: bool
+  - Name: FeatureToggle
+    Offset: '0x7c'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x68'
-  FullSize: '0xc8'
+  - Name: CheckIfPlayerHasMadeAttempts
+    Offset: '0x84'
+    Size: '0x1'
+    Type: bool
+  - Name: PromptCounterKey
+    Offset: '0x88'
+    Size: '0x8'
+    Type: class
+  - Name: MaxAttemptCount
+    Offset: '0x90'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x98'
+  FullSize: '0xf8'
   InheritedSize: '0x60'
   Super: TutorialStarter
+CaptaincyTutorialDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xc8'
+  InheritedSize: '0xc8'
+  Super: EntitlementDesc
 CompanyOnboardingStarter:
   Attributes: []
   ClassSize: '0x0'
@@ -146,36 +168,48 @@ TutorialManager:
     Offset: '0xe8'
     Size: '0x8'
     Type: class
-  - Name: SelectedTutorialClass
+  - Name: CaptaincyNewShipStarterClass
     Offset: '0xf0'
     Size: '0x8'
     Type: class
-  - Name: SelectedTutorial
+  - Name: SelectedTutorialClass
     Offset: '0xf8'
+    Size: '0x8'
+    Type: class
+  - Name: SelectedTutorial
+    Offset: '0x100'
     Size: '0x8'
     Type: Class TutorialStarter*
   - Name: TutorialType
-    Offset: '0x100'
+    Offset: '0x108'
     Size: '0x1'
     Type: byte
   - Name: HasEverPlayedFirstPersonAnimation
-    Offset: '0x101'
+    Offset: '0x109'
     Size: '0x1'
     Type: bool
   - Name: HasStartedTutorial
-    Offset: '0x102'
+    Offset: '0x10a'
     Size: '0x1'
     Type: bool
   - Name: HasReceivedEntitlements
-    Offset: '0x103'
+    Offset: '0x10b'
     Size: '0x1'
     Type: bool
   - Name: HasPosessedPawn
-    Offset: '0x104'
+    Offset: '0x10c'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x70'
-  FullSize: '0x138'
+  - Name: HasPlayerFinshedSpawning
+    Offset: '0x10d'
+    Size: '0x1'
+    Type: bool
+  - Name: IsPlayerWaitingForCaptaincySessionResponse
+    Offset: '0x10e'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x60'
+  FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
 TutorialManagerInterface:

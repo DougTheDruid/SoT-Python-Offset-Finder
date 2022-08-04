@@ -24,19 +24,6 @@ public:
 };
 
 
-// Size 0x30
-class BP_TaleBook_LegendaryStoryteller_AdditionalPuzzles_C: public VoyageProposalContainer
-{
-public:
-	Class ParticleSystemComponent*                               Portal VFX;                                        // 0x418(0x8)
-	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x420(0x8)
-	Class StaticMeshComponent*                                   Portal;                                            // 0x428(0x8)
-	Class StaticMeshComponent*                                   shroud;                                            // 0x430(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x438(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x440(0x10)
-};
-
-
 // Size 0x20
 class BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C: public BuoyantStorageContainer
 {

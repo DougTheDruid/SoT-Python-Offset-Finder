@@ -6,19 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x90
+// Size 0xa0
 struct ContestMatchmakingServerRequestModel
 {
 public:
 	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	Struct FString                                               VmId;                                              // 0x10(0x10)
-	Struct FString                                               PrivateServerId;                                   // 0x20(0x10)
-	Struct FString                                               ServerLocation;                                    // 0x30(0x10)
-	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x48(0x10)
-	TArray<Str PlayModeStates>                                   PlayModeStates;                                    // 0x58(0x10)
-	TArray<Struct ServerCrewModel>                               Crews;                                             // 0x68(0x10)
-	byte                                                         MatchmakingRequestReason;                          // 0x78(0x1)
-	Struct Guid                                                  RequestCorrelationId;                              // 0x7c(0x10)
+	Struct FString                                               ServerAddress;                                     // 0x10(0x10)
+	Struct FString                                               VmId;                                              // 0x20(0x10)
+	Struct FString                                               PrivateServerId;                                   // 0x30(0x10)
+	Struct FString                                               ServerLocation;                                    // 0x40(0x10)
+	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x58(0x10)
+	TArray<Str PlayModeStates>                                   PlayModeStates;                                    // 0x68(0x10)
+	TArray<Struct ServerCrewModel>                               Crews;                                             // 0x78(0x10)
+	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
+	Struct Guid                                                  RequestCorrelationId;                              // 0x8c(0x10)
 };
 
 

@@ -13,26 +13,6 @@
       }
     ]
   },
-  "BP_Trinket_Target_02_a_C": {
-    "Super": "BP_Trinket_HangingSinglePoint_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "wpn_boarding_axe_smp_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "bld_wpn_shop_hanging_target_broken_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      }
-    ]
-  },
   "BP_Trinket_PinBoard_01_a_C": {
     "Super": "BP_Trinket_HangingSinglePoint_C",
     "FullSize": "0x400",
@@ -75,6 +55,32 @@
     "Attributes": [
       {
         "Name": "cmn_shovel_02_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "shp_pistol_rack_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "cmn_hat_22_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "BP_Trinket_HatRack_01_a_C": {
+    "Super": "BP_Trinket_HangingSinglePoint_C",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3f8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "cmn_hat_18_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
@@ -174,32 +180,6 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
-      }
-    ]
-  },
-  "BP_Trinket_Anchor_01_a_C": {
-    "Super": "BP_Trinket_HangingSinglePoint_C",
-    "FullSize": "0x410",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "shp_int_hook_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "shp_anchor_02_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "shp_int_hook_01_a1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
       }
     ]
   },

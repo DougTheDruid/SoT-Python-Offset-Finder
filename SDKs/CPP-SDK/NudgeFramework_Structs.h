@@ -18,12 +18,12 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x30
 struct TrinketNudgeProgress
 {
 public:
-	Class SceneComponent*                                        Pivot;                                             // 0x0(0x8)
-	Class CurveFloat*                                            Curve;                                             // 0x18(0x8)
+	Class SceneComponent*                                        TrinketRoot;                                       // 0x8(0x8)
+	Class CurveFloat*                                            Curve;                                             // 0x20(0x8)
 };
 
 

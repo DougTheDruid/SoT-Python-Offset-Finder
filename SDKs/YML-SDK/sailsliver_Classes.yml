@@ -3,396 +3,402 @@
 sailslivery_AzureScout_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_FlamingJackal_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_GoldenChaser_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_LuckyRover_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_MaidenVoyage_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_RegalHound_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_admiral_01_CutomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_admiral_01_v01_CutomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_ashen_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_autumn_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_blackbeard_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_boreal_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_borealbundle_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_briggsy_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_captainchest_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_creator_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_edgelord_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_ghost_01_CutomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_glitterbeard_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_goldensands_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_goldensands_solo_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_goldhoarders_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_goldhoarders_01_v01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_goldhoarders_01_v02_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_halloweensolo_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_legendary_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_legendary_01_v01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_legendary_01_v02_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_mayhem_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_merchant_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_merchant_01_v01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_merchant_01_v02_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_morningstar_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_oldbettsy_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_omen_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_orderofsouls_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_orderofsouls_01_v01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_orderofsouls_01_v02_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_orderofsoulsdre_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_party_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_phoenix_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_pioneer_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_reaper_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_reaper_01_v01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_reaper_01_v02_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_reaperglint_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_reapermys_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_sabrewulf_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_sailor_01_CutomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_sakura_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_sakurasolo_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seadog_01_CutomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seasonfive_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seasonfour_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seasonone_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seasonsix_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seasonthree_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seasontwo_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_shine_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_shroudedghost_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+sailslivery_sirensprize_01_customisationdesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_skelly_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_sotthunderpack_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_sotthunderpack_02_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_tenmillion_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_yr1_legendary_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_zeus_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc

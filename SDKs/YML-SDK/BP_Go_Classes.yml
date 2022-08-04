@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_GoldHoarderShopkeeper_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x478'
     Size: '0x8'
     Type: Class SceneComponent*

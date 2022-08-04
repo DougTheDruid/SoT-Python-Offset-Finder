@@ -133,69 +133,73 @@ PirateGeneratorMaterials:
 PirateGeneratorSettings:
   Attributes:
   - Name: ConfigJson
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: PiratesFolder
     Offset: '0x38'
     Size: '0x10'
     Type: Struct FString
-  - Name: WardrobeFolder
+  - Name: PiratesFolder
     Offset: '0x48'
     Size: '0x10'
     Type: Struct FString
-  - Name: WardrobeDataAsset
+  - Name: WardrobeFolder
     Offset: '0x58'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: WardrobeDataAsset
+    Offset: '0x68'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: DefaultWardrobeItems
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: MaterialReferencesDataAsset
-    Offset: '0x78'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: SkeletonsDataAsset
     Offset: '0x88'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: BaseSkeletonMeshes
+  - Name: SkeletonsDataAsset
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
-  - Name: Characterization
+    Type: Struct StringAssetReference
+  - Name: BaseSkeletonMeshes
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<Struct StringAssetReference>
-  - Name: SkeletonMeshFormats
+  - Name: Characterization
     Offset: '0xb8'
+    Size: '0x10'
+    Type: TArray<Struct StringAssetReference>
+  - Name: SkeletonMeshFormats
+    Offset: '0xc8'
     Size: '0x10'
     Type: TArray<Str SkeletonMeshFormats>
   - Name: FirstPersonAnimations
-    Offset: '0xc8'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: ThirdPersonAnimations
     Offset: '0xd8'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: LODScreenSizes
+  - Name: ThirdPersonAnimations
     Offset: '0xe8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: LODScreenSizes
+    Offset: '0xf8'
     Size: '0x10'
     Type: TArray<Float LODScreenSizes>
   - Name: LODHysteresis
-    Offset: '0xf8'
+    Offset: '0x108'
     Size: '0x10'
     Type: TArray<Float LODHysteresis>
+  - Name: ExcludeDataAssets
+    Offset: '0x118'
+    Size: '0x10'
+    Type: TArray<Struct StringAssetReference>
   - Name: DefaultPirateGenerationSeed
-    Offset: '0x108'
+    Offset: '0x128'
     Size: '0x4'
     Type: int
-  ClassSize: '0xe8'
-  FullSize: '0x110'
-  InheritedSize: '0x28'
-  Super: Object
+  ClassSize: '0xf8'
+  FullSize: '0x130'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings
 PreparePirateMeshBakeTestFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
@@ -294,16 +298,12 @@ TextureSwitchBySeed:
   Super: TextureSwitch
 WardrobeDataAsset:
   Attributes:
-  - Name: ExcludeDataAssets
+  - Name: AssetMap
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class ExcludeDataAssets*>
-  - Name: AssetMap
-    Offset: '0xd8'
-    Size: '0x10'
     Type: TArray<Struct MeshPatchEntry>
-  ClassSize: '0xc0'
-  FullSize: '0xe8'
+  ClassSize: '0xb0'
+  FullSize: '0xd8'
   InheritedSize: '0x28'
   Super: DataAsset
 WardrobeExcludeDataAsset:

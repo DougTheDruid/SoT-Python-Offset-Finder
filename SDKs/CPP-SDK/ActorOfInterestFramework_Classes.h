@@ -6,6 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0
+class ActorOfInterestBlueprintFunctionLibrary: public Object
+{
+public:
+};
+
+
 // Size 0x20
 class ActorOfInterestComponent: public ActorComponent
 {

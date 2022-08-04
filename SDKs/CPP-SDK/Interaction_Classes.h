@@ -95,6 +95,21 @@ public:
 
 
 // Size 0x0
+class InteractionPreventionInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x18
+class InteractionPreventionComponent: public ActorComponent
+{
+public:
+	TArray<class ActorsToPreventInteractingWith*>                ActorsToPreventInteractingWith;                    // 0xd0(0x10)
+};
+
+
+// Size 0x0
 class InteractionValidatorOwnerInterface: public Interface
 {
 public:

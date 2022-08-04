@@ -1,12 +1,75 @@
 {
-  "StoryInfo": {
-    "ClassSize": "0x18",
+  "StoryFlag": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Name",
+        "Name": "StoryName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "StoryClaimedResourcesChangedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StoryResourceStateChanges",
+        "Type": "TArray<Struct StoryResourceStateChanged>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StoryResourceStateChanged": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumResourcesClaimed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NumResourcesReleased",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "NumClaimsPending",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "StoryClaimableResourcesList": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "Struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AreResourcesClaimed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ClaimableResources",
+        "Type": "TArray<Weakclass ClaimableResources>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -14,8 +77,8 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Story",
-        "Type": "struct FName",
+        "Name": "StoryFlag",
+        "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -33,23 +96,6 @@
       }
     ]
   },
-  "StoryNameInfo": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StoryDesc",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "NamedPointsGroupActorLocation": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -61,22 +107,11 @@
       }
     ]
   },
-  "StoryFlag": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "StorySpawnedNamedPointsList": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Story",
+        "Name": "StoryFlag",
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
@@ -93,8 +128,8 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "StoryName",
-        "Type": "struct FName",
+        "Name": "StoryFlag",
+        "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -192,45 +227,30 @@
       }
     ]
   },
-  "SpawnedActorsComponentList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ComponentsList",
-        "Type": "TArray<class ComponentsList*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "StoriesToSpawnedActorsListContainer": {
-    "ClassSize": "0x50",
-    "Attributes": []
-  },
-  "SpawnedActorsList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ActorsList",
-        "Type": "TArray<Struct PhasedActorInfo>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PhasedActorInfo": {
+  "StoryInfo": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "MapActor",
-        "Type": "Class Actor*",
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StoryNameInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "PhasedActor",
-        "Type": "Class Actor*",
-        "Size": "0x8",
+        "Name": "StoryDesc",
+        "Type": "Struct FString",
+        "Size": "0x10",
         "Offset": "0x8"
       }
     ]

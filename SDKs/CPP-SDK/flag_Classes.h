@@ -7,21 +7,21 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class flag_yellow_01_CustomizationDesc_C: public ShipCustomizationDesc
+class flag_Alliance_Leave_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class flag_white_01_CustomizationDesc_C: public ShipCustomizationDesc
+class flag_Alliance_Join_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class flag_red_01_CustomizationDesc_C: public ShipCustomizationDesc
+class flag_Alliance_Offer_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
@@ -42,7 +42,14 @@ public:
 
 
 // Size 0x0
-class flag_checkered_01_CustomizationDesc_C: public ShipCustomizationDesc
+class flag_red_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class flag_yellow_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
@@ -63,21 +70,14 @@ public:
 
 
 // Size 0x0
-class flag_Alliance_Offer_01_CustomizationDesc_C: public ShipCustomizationDesc
+class flag_checkered_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class flag_Alliance_Leave_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class flag_Alliance_Join_01_CustomizationDesc_C: public ShipCustomizationDesc
+class flag_white_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

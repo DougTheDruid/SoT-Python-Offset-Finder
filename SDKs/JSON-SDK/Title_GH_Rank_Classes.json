@@ -1,22 +1,22 @@
 {
-  "Title_GH_Rank3_001_EmissaryOfGoldSeafarers_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "Title_GH_Rank2_001_EmissaryOfGoldMarauders_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Title_GH_Rank1_001_CaptainOfGoldenEmissaries_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_GH_Rank3_001_EmissaryOfGoldSeafarers_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },

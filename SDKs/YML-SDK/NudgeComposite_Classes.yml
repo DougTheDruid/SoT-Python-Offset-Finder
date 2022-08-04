@@ -3,52 +3,52 @@
 NudgeFromExplosionsPolicy:
   Attributes:
   - Name: AcceptedDamagerTypes
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x10'
     Type: TArray<Struct NudgeChancePerDamagerType>
   ClassSize: '0x10'
-  FullSize: '0xd0'
-  InheritedSize: '0xc0'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
   Super: NudgePolicy
 NudgeFromShipCollisionPolicy:
   Attributes:
   - Name: DamageAmountRequiredToNudge
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x4'
     Type: int
   - Name: ChanceOfNudge
-    Offset: '0xc4'
+    Offset: '0xcc'
     Size: '0x4'
     Type: float
   ClassSize: '0x8'
-  FullSize: '0xc8'
-  InheritedSize: '0xc0'
+  FullSize: '0xd0'
+  InheritedSize: '0xc8'
   Super: NudgePolicy
 NudgeFromStormPolicy:
   Attributes:
   - Name: ChanceOfNudge
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x4'
     Type: float
   - Name: WeightedTimers
-    Offset: '0xc8'
+    Offset: '0xd0'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x98'
-  FullSize: '0x158'
-  InheritedSize: '0xc0'
+  FullSize: '0x160'
+  InheritedSize: '0xc8'
   Super: NudgePolicy
 NudgeFromWaterLevelPolicy:
   Attributes:
   - Name: WaterLevelDifferenceBetweenUpdates
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x4'
     Type: float
   - Name: ZOffsetFromWaterToMountpoint
-    Offset: '0xc4'
+    Offset: '0xcc'
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
-  FullSize: '0xd0'
-  InheritedSize: '0xc0'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
   Super: NudgePolicy

@@ -25,12 +25,12 @@ NudgeInterpolationParams:
   ClassSize: '0x20'
 TrinketNudgeProgress:
   Attributes:
-  - Name: Pivot
-    Offset: '0x0'
+  - Name: TrinketRoot
+    Offset: '0x8'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: Curve
-    Offset: '0x18'
+    Offset: '0x20'
     Size: '0x8'
     Type: Class CurveFloat*
-  ClassSize: '0x28'
+  ClassSize: '0x30'

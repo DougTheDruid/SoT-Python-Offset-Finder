@@ -12,3 +12,9 @@ Mystery1_WKD_Phase2_1_OverrideType_C:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: NPCDialogOverrideType
+Mystery1_WKD_Phase3_OverrideType_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: NPCDialogOverrideType

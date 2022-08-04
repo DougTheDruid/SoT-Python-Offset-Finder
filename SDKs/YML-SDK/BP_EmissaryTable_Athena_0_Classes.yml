@@ -2,55 +2,67 @@
 # https://github.com/DougTheDruid
 BP_EmissaryTable_Athena_01_C:
   Attributes:
-  - Name: PointLight
+  - Name: UberGraphFrame
     Offset: '0x638'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: PointLight
+    Offset: '0x640'
     Size: '0x8'
     Type: Class PointLightComponent*
   - Name: EmissaryShipAffiliationTracker
-    Offset: '0x640'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class EmissaryShipAffiliationTrackerComponent*
   - Name: vfx_candle_01_magic2
-    Offset: '0x648'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: vfx_candle_01_magic1
     Offset: '0x650'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: vfx_candle_01_magic
+  - Name: vfx_candle_01_magic1
     Offset: '0x658'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: wpn_cutlass_leg_01_a
+  - Name: vfx_candle_01_magic
     Offset: '0x660'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_d
+    Type: Class ParticleSystemComponent*
+  - Name: wpn_cutlass_leg_01_a
     Offset: '0x668'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: con_cover_page_leg_01_a
+  - Name: cmn_candle_01_d
     Offset: '0x670'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_c
+  - Name: con_cover_page_leg_01_a
     Offset: '0x678'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_a
+  - Name: cmn_candle_01_c
     Offset: '0x680'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_e
+  - Name: cmn_candle_01_a
     Offset: '0x688'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_desk_model_leg_01_a
+  - Name: cmn_candle_01_e
     Offset: '0x690'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x60'
-  FullSize: '0x698'
+  - Name: cap_desk_model_leg_01_a
+    Offset: '0x698'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: NewTableMesh
+    Offset: '0x6a0'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: ToggleName
+    Offset: '0x6a8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x78'
+  FullSize: '0x6b0'
   InheritedSize: '0x638'
   Super: BP_EmissaryTable_01_C

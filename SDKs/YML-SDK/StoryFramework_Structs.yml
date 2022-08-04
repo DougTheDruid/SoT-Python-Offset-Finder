@@ -13,10 +13,10 @@ ActorLocationPair:
   ClassSize: '0x40'
 LightingZoneStoryRelatedSettings:
   Attributes:
-  - Name: Story
+  - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct FName
+    Type: Struct StoryFlag
   - Name: TargetPointOnCurve
     Offset: '0x8'
     Size: '0x4'
@@ -48,31 +48,6 @@ NamedPointsGroupActorLocation:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x28'
-PhasedActorInfo:
-  Attributes:
-  - Name: MapActor
-    Offset: '0x0'
-    Size: '0x8'
-    Type: Class Actor*
-  - Name: PhasedActor
-    Offset: '0x8'
-    Size: '0x8'
-    Type: Class Actor*
-  ClassSize: '0x18'
-SpawnedActorsComponentList:
-  Attributes:
-  - Name: ComponentsList
-    Offset: '0x0'
-    Size: '0x10'
-    Type: TArray<class ComponentsList*>
-  ClassSize: '0x10'
-SpawnedActorsList:
-  Attributes:
-  - Name: ActorsList
-    Offset: '0x0'
-    Size: '0x10'
-    Type: TArray<Struct PhasedActorInfo>
-  ClassSize: '0x10'
 StoriesChangedTelemetryEvent:
   Attributes:
   - Name: AllStories
@@ -92,9 +67,28 @@ StoriesChangedTelemetryEvent:
     Size: '0x1'
     Type: bool
   ClassSize: '0x28'
-StoriesToSpawnedActorsListContainer:
-  Attributes: []
-  ClassSize: '0x50'
+StoryClaimableResourcesList:
+  Attributes:
+  - Name: StoryFlag
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  - Name: AreResourcesClaimed
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: ClaimableResources
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Weakclass ClaimableResources>
+  ClassSize: '0x20'
+StoryClaimedResourcesChangedTelemetryEvent:
+  Attributes:
+  - Name: StoryResourceStateChanges
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct StoryResourceStateChanged>
+  ClassSize: '0x10'
 StoryFlag:
   Attributes:
   - Name: StoryName
@@ -120,6 +114,25 @@ StoryNameInfo:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x18'
+StoryResourceStateChanged:
+  Attributes:
+  - Name: StoryName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: NumResourcesClaimed
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: NumResourcesReleased
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  - Name: NumClaimsPending
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x14'
 StorySpawnedActorsChangeTelemetryEvent:
   Attributes:
   - Name: StorySpawnedActors
@@ -148,10 +161,10 @@ StorySpawnedActorsIndividualStoryInfo:
   ClassSize: '0x18'
 StorySpawnedActorsList:
   Attributes:
-  - Name: StoryName
+  - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct FName
+    Type: Struct StoryFlag
   - Name: ActorLocations
     Offset: '0x8'
     Size: '0x10'
@@ -163,7 +176,7 @@ StorySpawnedActorsList:
   ClassSize: '0x28'
 StorySpawnedNamedPointsList:
   Attributes:
-  - Name: Story
+  - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
     Type: Struct StoryFlag

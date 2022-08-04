@@ -64,21 +64,7 @@ public:
 };
 
 
-// Size 0x0
-class ContendedResourceServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0
-class WorldResourceRegistryInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x38
+// Size 0x40
 class ContendedResourceComponent: public ActorComponent
 {
 public:
@@ -268,6 +254,15 @@ public:
 };
 
 
+// Size 0x18
+class TaleQuestInteractionPreventionService: public TaleQuestService
+{
+public:
+	TArray<class TrackedInteractionActors*>                      TrackedInteractionActors;                          // 0x60(0x10)
+	Class TaleQuestInteractionPreventionServiceDesc*             Desc;                                              // 0x70(0x8)
+};
+
+
 // Size 0x28
 class TaleQuestSelectorService: public TaleQuestService
 {
@@ -331,6 +326,13 @@ public:
 
 // Size 0x0
 class TaleQuestEQSServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestInteractionPreventionServiceDesc: public TaleQuestServiceDesc
 {
 public:
 };
@@ -413,6 +415,13 @@ class DoEQSQueryStep: public TaleQuestStep
 public:
 	Class DoEQSQueryStepDesc*                                    Desc;                                              // 0x98(0x8)
 	Class TaleQuestEQSService*                                   CachedTaleEQSService;                              // 0xa0(0x8)
+};
+
+
+// Size 0x0
+class EnableInteractionWithActorStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -528,6 +537,13 @@ class PlaySequencerAnimationStep: public TaleQuestStep
 public:
 	Class PlaySequencerAnimationStepDesc*                        StepDesc;                                          // 0x98(0x8)
 	Class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
+};
+
+
+// Size 0x0
+class PreventInteractionWithActorStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -827,6 +843,13 @@ public:
 };
 
 
+// Size 0x0
+class VisualiseLoggerEQSResultsTaleStep: public TaleQuestStep
+{
+public:
+};
+
+
 // Size 0x78
 class WaitForActorOfInterestToUnregisterStep: public TaleQuestStep
 {
@@ -893,6 +916,14 @@ class DoEQSQueryStepDesc: public TaleQuestStepDesc
 public:
 	Class EnvQuery*                                              EQSQuery;                                          // 0x80(0x8)
 	Struct QuestVariableArray                                    OutPoints;                                         // 0x88(0x20)
+};
+
+
+// Size 0x20
+class EnableInteractionWithActorStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x20)
 };
 
 
@@ -1084,6 +1115,14 @@ public:
 	bool                                                         IsLooping;                                         // 0x128(0x1)
 	float                                                        SubtitleSphereRadiusInCm;                          // 0x12c(0x4)
 	Class LevelSequence*                                         FemaleLevelSequenceToPlay;                         // 0x130(0x8)
+};
+
+
+// Size 0x20
+class PreventInteractionWithActorStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x20)
 };
 
 
@@ -1354,7 +1393,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x50
 class TaleQuestGrantRewardStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1362,7 +1401,8 @@ public:
 	class                                                        Company;                                           // 0x88(0x8)
 	Struct Guid                                                  Id;                                                // 0x90(0x10)
 	bool                                                         ShouldGrantToAlliedCrews;                          // 0xa0(0x1)
-	struct FName                                                 Feature;                                           // 0xa4(0x8)
+	Struct QuestVariablePlayerActor                              SpecificPlayerToAward;                             // 0xa8(0x20)
+	struct FName                                                 Feature;                                           // 0xc8(0x8)
 };
 
 
@@ -1478,10 +1518,11 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x8
 class TaleQuestShipSurfaceStepDesc: public TaleQuestStepDesc
 {
 public:
+	float                                                        TimeToSurface;                                     // 0x80(0x4)
 };
 
 
@@ -1576,6 +1617,15 @@ class TrackResponseCoordinatorStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct QuestVariableUObject                                  CutsceneResponseCoordinator;                       // 0x80(0x20)
+};
+
+
+// Size 0x40
+class VisualiseLoggerEQSResultsTaleStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableArray                                    ResultsArray;                                      // 0x80(0x20)
+	Struct QuestVariableVector                                   SelectedResult;                                    // 0xa0(0x20)
 };
 
 
@@ -1723,7 +1773,7 @@ public:
 };
 
 
-// Size 0xa0
+// Size 0xb0
 class TaleQuestMapService: public TaleQuestService
 {
 public:

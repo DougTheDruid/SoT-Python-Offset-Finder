@@ -32,6 +32,25 @@ CrewSessionJoinedTelemetryEvent:
     Size: '0x10'
     Type: TArray<Struct CrewSessionQoSMeasurementTelemetry>
   ClassSize: '0x70'
+CrewSessionKeepAliveFailedTelemetryEvent:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: UserStatus
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ErrorCode
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: KeepAliveCounter
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
 CrewSessionLeaveTelemetryEvent:
   Attributes: []
   ClassSize: '0x10'

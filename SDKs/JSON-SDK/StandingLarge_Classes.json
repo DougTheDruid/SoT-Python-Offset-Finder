@@ -33,32 +33,6 @@
       }
     ]
   },
-  "BP_Trinket_SwordBucket_01_a_C": {
-    "Super": "BP_Trinket_StandingLarge_C",
-    "FullSize": "0x410",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "gmp_wood_sword_emote_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "cmn_bucket_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "gmp_wood_sword_emote_01_a1",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      }
-    ]
-  },
   "BP_Trinket_SkullStand_01_a_C": {
     "Super": "BP_Trinket_StandingLarge_C",
     "FullSize": "0x400",
@@ -70,26 +44,6 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
-      }
-    ]
-  },
-  "BP_Trinket_ScrollBucket_01_a_C": {
-    "Super": "BP_Trinket_StandingLarge_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "gmp_map_bundle_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "cmn_bucket_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
       }
     ]
   },
@@ -235,34 +189,6 @@
       }
     ]
   },
-  "BP_Trinket_DVRRock_01_a_C": {
-    "Super": "BP_Trinket_StandingLarge_C",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "dvr_lv_projectile_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      }
-    ]
-  },
-  "BP_Trinket_DVRCrystal_02_a_C": {
-    "Super": "BP_Trinket_StandingLarge_C",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "dvr_lv_rock_large_01_c",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      }
-    ]
-  },
   "BP_Trinket_BrokenPot_02_a_C": {
     "Super": "BP_Trinket_StandingLarge_C",
     "FullSize": "0x400",
@@ -274,26 +200,6 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
-      }
-    ]
-  },
-  "BP_Trinket_Boots_01_a_C": {
-    "Super": "BP_Trinket_StandingLarge_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "cmn_boots_02_a_L",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "cmn_boots_02_a_R",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
       }
     ]
   },

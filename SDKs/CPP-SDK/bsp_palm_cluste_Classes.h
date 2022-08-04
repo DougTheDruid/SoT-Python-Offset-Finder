@@ -69,31 +69,25 @@ public:
 };
 
 
-// Size 0xa8
-class bsp_palm_cluster_01_C: public BP_Placement_HeightDrop_C
+// Size 0x78
+class bsp_palm_cluster_01_b_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent028;                            // 0x408(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent024;                            // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent022;                            // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent020;                            // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent018;                            // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent017;                            // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent029;                            // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent013;                            // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x450(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x458(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x460(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x468(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x470(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x478(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x480(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x488(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x490(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent015;                            // 0x498(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent014;                            // 0x4a0(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x4a8(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_03_a_03;                                  // 0x408(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_h;                                // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_g;                                // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_d;                                // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_e;                                // 0x428(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles_a_01;                             // 0x430(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_02_b;                                // 0x438(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small_e;                             // 0x440(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a_02;                                  // 0x448(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small_a_01;                          // 0x450(0x8)
+	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x458(0x8)
+	Class StaticMeshComponent*                                   wsp_tree_palm_02_a_02;                             // 0x460(0x8)
+	Class StaticMeshComponent*                                   wsp_tre_palm_02_a_01;                              // 0x468(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a_01;                                  // 0x470(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x478(0x8)
 };
 
 

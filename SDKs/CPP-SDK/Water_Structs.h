@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x128
-struct SplashProbe
+// Size 0x10
+struct WaterInformation
 {
 public:
-	Struct WaterSplashProbe                                      Probe;                                             // 0x8(0xd8)
-	float                                                        ProbeSamplingTime;                                 // 0xe0(0x4)
-	float                                                        TimeBetweenProbeVfx;                               // 0xe4(0x4)
-	Class Object*                                                ParticleSystem;                                    // 0xe8(0x8)
-	byte                                                         UnderwaterUsage;                                   // 0xf0(0x1)
-	bool                                                         SpawnAttached;                                     // 0xf1(0x1)
-	bool                                                         AttachToWaterSurface;                              // 0xf2(0x1)
-	byte                                                         SplashAttachType;                                  // 0xf3(0x1)
-	Struct Vector                                                VfxSpawnOffset;                                    // 0xf4(0xc)
-	bool                                                         Enabled;                                           // 0x100(0x1)
-	Class ParticleSystemComponent*                               CurrentlyPlayingVFX;                               // 0x108(0x8)
+	class                                                        WaterType;                                         // 0x0(0x8)
+	bool                                                         CanSwim;                                           // 0x8(0x1)
+};
+
+
+// Size 0x18
+struct WaterSplashProbesContainer
+{
+public:
+	TArray<Struct WaterSplashProbe>                              Probes;                                            // 0x0(0x10)
+	float                                                        ProbeSamplingTime;                                 // 0x10(0x4)
 };
 
 
@@ -43,21 +43,21 @@ public:
 };
 
 
-// Size 0x10
-struct WaterInformation
+// Size 0x128
+struct SplashProbe
 {
 public:
-	class                                                        WaterType;                                         // 0x0(0x8)
-	bool                                                         CanSwim;                                           // 0x8(0x1)
-};
-
-
-// Size 0x18
-struct WaterSplashProbesContainer
-{
-public:
-	TArray<Struct WaterSplashProbe>                              Probes;                                            // 0x0(0x10)
-	float                                                        ProbeSamplingTime;                                 // 0x10(0x4)
+	Struct WaterSplashProbe                                      Probe;                                             // 0x8(0xd8)
+	float                                                        ProbeSamplingTime;                                 // 0xe0(0x4)
+	float                                                        TimeBetweenProbeVfx;                               // 0xe4(0x4)
+	Class Object*                                                ParticleSystem;                                    // 0xe8(0x8)
+	byte                                                         UnderwaterUsage;                                   // 0xf0(0x1)
+	bool                                                         SpawnAttached;                                     // 0xf1(0x1)
+	bool                                                         AttachToWaterSurface;                              // 0xf2(0x1)
+	byte                                                         SplashAttachType;                                  // 0xf3(0x1)
+	Struct Vector                                                VfxSpawnOffset;                                    // 0xf4(0xc)
+	bool                                                         Enabled;                                           // 0x100(0x1)
+	Class ParticleSystemComponent*                               CurrentlyPlayingVFX;                               // 0x108(0x8)
 };
 
 

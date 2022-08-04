@@ -29,15 +29,21 @@
   },
   "NudgePolicy": {
     "Super": "Object",
-    "FullSize": "0xc0",
+    "FullSize": "0xc8",
     "InheritedSize": "0x28",
-    "ClassSize": "0x98",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "OwningActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0xb8"
+      },
+      {
+        "Name": "OwnerComponent",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0xc0"
       }
     ]
   },

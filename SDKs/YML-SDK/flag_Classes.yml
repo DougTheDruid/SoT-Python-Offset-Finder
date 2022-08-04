@@ -3,66 +3,66 @@
 flag_Alliance_Join_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_Alliance_Leave_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_Alliance_Offer_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_JollyRoger_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_black_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_blue_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_checkered_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_pride_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_red_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_white_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 flag_yellow_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: ShipCustomizationDesc

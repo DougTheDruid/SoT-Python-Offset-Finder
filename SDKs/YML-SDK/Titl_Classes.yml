@@ -3,78 +3,78 @@
 Title_EmissaryOfExcellence_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_GoldenSkeletonCaptain_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_HoarderOfMermaidTreasure_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_HunterOfTheAncientTerror_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_HunterOfTheCrestedQueen_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_HunterOfTheHungeringOne_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_HunterOfTheShadowmaw_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_HunterOfTheShroudedGhost_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_LegendaryKrakenHunter_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_MasterKrakenHunter_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_MysticalSkeletonCaptain_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_ReaperOfFallenFlags_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_StrongholdSpoils_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc

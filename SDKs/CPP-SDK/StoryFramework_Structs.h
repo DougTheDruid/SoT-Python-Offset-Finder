@@ -6,11 +6,40 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-struct StoryInfo
+// Size 0x8
+struct StoryFlag
 {
 public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
+	struct FName                                                 StoryName;                                         // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct StoryClaimedResourcesChangedTelemetryEvent
+{
+public:
+	TArray<Struct StoryResourceStateChanged>                     StoryResourceStateChanges;                         // 0x0(0x10)
+};
+
+
+// Size 0x14
+struct StoryResourceStateChanged
+{
+public:
+	struct FName                                                 StoryName;                                         // 0x0(0x8)
+	int                                                          NumResourcesClaimed;                               // 0x8(0x4)
+	int                                                          NumResourcesReleased;                              // 0xc(0x4)
+	int                                                          NumClaimsPending;                                  // 0x10(0x4)
+};
+
+
+// Size 0x20
+struct StoryClaimableResourcesList
+{
+public:
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
+	TArray<Weakclass ClaimableResources>                         ClaimableResources;                                // 0x10(0x10)
 };
 
 
@@ -18,18 +47,9 @@ public:
 struct LightingZoneStoryRelatedSettings
 {
 public:
-	struct FName                                                 Story;                                             // 0x0(0x8)
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	float                                                        TargetPointOnCurve;                                // 0x8(0x4)
 	float                                                        FadeDuration;                                      // 0xc(0x4)
-};
-
-
-// Size 0x18
-struct StoryNameInfo
-{
-public:
-	struct FName                                                 StoryName;                                         // 0x0(0x8)
-	Struct FString                                               StoryDesc;                                         // 0x8(0x10)
 };
 
 
@@ -41,19 +61,11 @@ public:
 };
 
 
-// Size 0x8
-struct StoryFlag
-{
-public:
-	struct FName                                                 StoryName;                                         // 0x0(0x8)
-};
-
-
 // Size 0x18
 struct StorySpawnedNamedPointsList
 {
 public:
-	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
 };
 
@@ -62,7 +74,7 @@ public:
 struct StorySpawnedActorsList
 {
 public:
-	struct FName                                                 StoryName;                                         // 0x0(0x8)
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	TArray<Struct ActorLocationPair>                             ActorLocations;                                    // 0x8(0x10)
 	TArray<Struct NamedPointsActorLocation>                      NamedPointsActorLocations;                         // 0x18(0x10)
 };
@@ -106,35 +118,20 @@ public:
 };
 
 
-// Size 0x10
-struct SpawnedActorsComponentList
+// Size 0x18
+struct StoryInfo
 {
 public:
-	TArray<class ComponentsList*>                                ComponentsList;                                    // 0x0(0x10)
-};
-
-
-// Size 0x50
-struct StoriesToSpawnedActorsListContainer
-{
-public:
-};
-
-
-// Size 0x10
-struct SpawnedActorsList
-{
-public:
-	TArray<Struct PhasedActorInfo>                               ActorsList;                                        // 0x0(0x10)
+	struct FName                                                 Name;                                              // 0x0(0x8)
 };
 
 
 // Size 0x18
-struct PhasedActorInfo
+struct StoryNameInfo
 {
 public:
-	Class Actor*                                                 MapActor;                                          // 0x0(0x8)
-	Class Actor*                                                 PhasedActor;                                       // 0x8(0x8)
+	struct FName                                                 StoryName;                                         // 0x0(0x8)
+	Struct FString                                               StoryDesc;                                         // 0x8(0x10)
 };
 
 

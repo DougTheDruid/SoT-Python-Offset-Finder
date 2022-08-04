@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_ForsakenHunter_Larinna_C:
   Attributes:
-  - Name: StaticMesh1
+  - Name: None
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

@@ -1,29 +1,29 @@
 {
   "BP_Emote_WatchingYou1_Desc_C": {
     "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Emote_Shhh1_Desc_C": {
     "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Emote_GoAway1_Desc_C": {
     "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Emote_Chicken1_Desc_C": {
     "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
     "ClassSize": "0x0",
     "Attributes": []
   },

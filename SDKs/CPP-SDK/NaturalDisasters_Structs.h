@@ -107,6 +107,15 @@ public:
 };
 
 
+// Size 0x10
+struct EarthquakeStoryCustomisationData
+{
+public:
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x8(0x8)
+};
+
+
 // Size 0xc
 struct GeyserSpawnAngleOption
 {

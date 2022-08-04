@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Chair_C:
   Attributes:
-  - Name: Chair
-    Offset: '0x3e8'
+  - Name: ChairMesh
+    Offset: '0x460'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: Class StaticMeshMemoryConstraintComponent*
   ClassSize: '0x8'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3e8'
-  Super: GenericPart
+  FullSize: '0x468'
+  InheritedSize: '0x460'
+  Super: GenericPartWithMMC

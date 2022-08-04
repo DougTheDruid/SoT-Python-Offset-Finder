@@ -166,100 +166,106 @@
     "Attributes": []
   },
   "PirateGeneratorSettings": {
-    "Super": "Object",
-    "FullSize": "0x110",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xe8",
+    "Super": "DeveloperSettings",
+    "FullSize": "0x130",
+    "InheritedSize": "0x38",
+    "ClassSize": "0xf8",
     "Attributes": [
       {
         "Name": "ConfigJson",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x38"
       },
       {
         "Name": "PiratesFolder",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x48"
       },
       {
         "Name": "WardrobeFolder",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x48"
+        "Offset": "0x58"
       },
       {
         "Name": "WardrobeDataAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x68"
       },
       {
         "Name": "DefaultWardrobeItems",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
-        "Offset": "0x68"
+        "Offset": "0x78"
       },
       {
         "Name": "MaterialReferencesDataAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x78"
+        "Offset": "0x88"
       },
       {
         "Name": "SkeletonsDataAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x88"
+        "Offset": "0x98"
       },
       {
         "Name": "BaseSkeletonMeshes",
         "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
-        "Offset": "0x98"
+        "Offset": "0xa8"
       },
       {
         "Name": "Characterization",
         "Type": "TArray<Struct StringAssetReference>",
         "Size": "0x10",
-        "Offset": "0xa8"
+        "Offset": "0xb8"
       },
       {
         "Name": "SkeletonMeshFormats",
         "Type": "TArray<Str SkeletonMeshFormats>",
         "Size": "0x10",
-        "Offset": "0xb8"
+        "Offset": "0xc8"
       },
       {
         "Name": "FirstPersonAnimations",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0xc8"
+        "Offset": "0xd8"
       },
       {
         "Name": "ThirdPersonAnimations",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xe8"
       },
       {
         "Name": "LODScreenSizes",
         "Type": "TArray<Float LODScreenSizes>",
         "Size": "0x10",
-        "Offset": "0xe8"
+        "Offset": "0xf8"
       },
       {
         "Name": "LODHysteresis",
         "Type": "TArray<Float LODHysteresis>",
         "Size": "0x10",
-        "Offset": "0xf8"
+        "Offset": "0x108"
+      },
+      {
+        "Name": "ExcludeDataAssets",
+        "Type": "TArray<Struct StringAssetReference>",
+        "Size": "0x10",
+        "Offset": "0x118"
       },
       {
         "Name": "DefaultPirateGenerationSeed",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x108"
+        "Offset": "0x128"
       }
     ]
   },
@@ -426,21 +432,15 @@
   },
   "WardrobeDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0xe8",
+    "FullSize": "0xd8",
     "InheritedSize": "0x28",
-    "ClassSize": "0xc0",
+    "ClassSize": "0xb0",
     "Attributes": [
-      {
-        "Name": "ExcludeDataAssets",
-        "Type": "TArray<class ExcludeDataAssets*>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
       {
         "Name": "AssetMap",
         "Type": "TArray<Struct MeshPatchEntry>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xc8"
       }
     ]
   },

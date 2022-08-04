@@ -67,6 +67,15 @@ public:
 };
 
 
+// Size 0x20
+class MultiEmitterRootComponent: public SceneComponent
+{
+public:
+	TArray<Struct MultiEmitterData>                              MultiEmitterDataArray;                             // 0x2e0(0x10)
+	TArray<Struct WwiseEmitter>                                  PlayingEmitters;                                   // 0x2f0(0x10)
+};
+
+
 // Size 0x3e0
 class WwiseAudioSettings: public Object
 {
@@ -129,6 +138,15 @@ public:
 class WwiseEmitterInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x10
+class MergedMultiEmitterComponent: public WwiseEmitterComponent
+{
+public:
+	Class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x310(0x8)
+	Class WwiseEvent*                                            PlayEvent;                                         // 0x318(0x8)
 };
 
 

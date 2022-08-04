@@ -6,29 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x80
-class bsp_plm_cluster_03_e_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   wsp_bush_03_a2;                                    // 0x408(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_03_a1;                                    // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_01_a;                                     // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent022;                            // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent017;                            // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent029;                            // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent014;                            // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x450(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x458(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x460(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x468(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x470(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent015;                            // 0x478(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent013;                            // 0x480(0x8)
-};
-
-
 // Size 0x68
 class bsp_plm_cluster_03_d_C: public BP_Placement_HeightDrop_C
 {
@@ -68,29 +45,6 @@ public:
 	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x468(0x8)
 	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x470(0x8)
 	Class SceneComponent*                                        SharedRoot;                                        // 0x478(0x8)
-};
-
-
-// Size 0x80
-class bsp_plm_cluster_03_a_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   StaticMeshComponent022;                            // 0x408(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent017;                            // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent029;                            // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent013;                            // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x448(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x450(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x458(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x460(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x468(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent015;                            // 0x470(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent014;                            // 0x478(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x480(0x8)
 };
 
 

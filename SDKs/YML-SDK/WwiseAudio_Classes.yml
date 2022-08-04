@@ -6,6 +6,20 @@ AnimNotifyWwiseEmitterComponentRetrievalInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+MergedMultiEmitterComponent:
+  Attributes:
+  - Name: EmitterPool
+    Offset: '0x310'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: PlayEvent
+    Offset: '0x318'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x10'
+  FullSize: '0x320'
+  InheritedSize: '0x310'
+  Super: WwiseEmitterComponent
 MovieSceneAkAudioEventSection:
   Attributes:
   - Name: Event
@@ -56,6 +70,20 @@ MovieSceneAkTrack:
   FullSize: '0xa0'
   InheritedSize: '0x88'
   Super: MovieSceneTrack
+MultiEmitterRootComponent:
+  Attributes:
+  - Name: MultiEmitterDataArray
+    Offset: '0x2e0'
+    Size: '0x10'
+    Type: TArray<Struct MultiEmitterData>
+  - Name: PlayingEmitters
+    Offset: '0x2f0'
+    Size: '0x10'
+    Type: TArray<Struct WwiseEmitter>
+  ClassSize: '0x20'
+  FullSize: '0x300'
+  InheritedSize: '0x2e0'
+  Super: SceneComponent
 WwiseAudioSettings:
   Attributes:
   - Name: ReverbPresetSettings

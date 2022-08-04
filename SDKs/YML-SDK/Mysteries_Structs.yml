@@ -24,8 +24,12 @@ SirenPuzzleLockState:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct Guid
-  - Name: UnlockingCrews
+  - Name: UnlockReactions
     Offset: '0x10'
     Size: '0x10'
+    Type: TArray<Struct LandmarkReactionKeyFrame>
+  - Name: UnlockingCrews
+    Offset: '0x20'
+    Size: '0x10'
     Type: TArray<Struct Guid>
-  ClassSize: '0x20'
+  ClassSize: '0x30'

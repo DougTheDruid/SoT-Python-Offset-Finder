@@ -20,8 +20,12 @@ DebugStoryServiceCheat:
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<Struct StoryInfo>
-  ClassSize: '0x38'
-  FullSize: '0x400'
+  - Name: AllFilters
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<Str AllFilters>
+  ClassSize: '0x48'
+  FullSize: '0x410'
   InheritedSize: '0x3c8'
   Super: Actor
 DebugStoryServiceCheatInterface:
@@ -36,6 +40,32 @@ IsStoryActiveNPCDialogConditional:
   FullSize: '0x40'
   InheritedSize: '0x30'
   Super: NPCDialogConditional
+StoryClaimableResourceComponent:
+  Attributes:
+  - Name: ClaimedStoryFlag
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  ClassSize: '0x28'
+  FullSize: '0xf0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+StoryClaimedResourcesService:
+  Attributes:
+  - Name: PendingClaims
+    Offset: '0x428'
+    Size: '0x10'
+    Type: TArray<Weakclass PendingClaims>
+  ClassSize: '0xd0'
+  FullSize: '0x498'
+  InheritedSize: '0x3c8'
+  Super: Actor
+StoryClaimedResourcesServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 StoryDrivenBlendedLightingZoneComponent:
   Attributes:
   - Name: StoryDrivenLightingAssetsCollection
@@ -74,18 +104,24 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: DataAsset
+StoryDrivenSalvageItemSpawnComponent:
+  Attributes:
+  - Name: Story
+    Offset: '0x560'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  ClassSize: '0x30'
+  FullSize: '0x590'
+  InheritedSize: '0x560'
+  Super: SalvageItemSpawnComponent
 StoryNPCDialogConditionalContext:
   Attributes:
-  - Name: StoryNames
+  - Name: StoryFlag
     Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<Struct FName>
-  - Name: NeedsAllStories
-    Offset: '0x38'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x18'
-  FullSize: '0x40'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  ClassSize: '0x8'
+  FullSize: '0x30'
   InheritedSize: '0x28'
   Super: NPCDialogConditionalContext
 StoryNPCDialogOverrideType:
@@ -144,8 +180,12 @@ StorySpawnedActorsCollectionDataAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class StorySpawnedActorsAssetList*>
-  ClassSize: '0x10'
-  FullSize: '0x38'
+  - Name: StorySpawnedActorsCollectionList
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class StorySpawnedActorsCollectionList*>
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsComponent:
@@ -164,8 +204,12 @@ StorySpawnedActorsComponentCollectionDataAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class StorySpawnedActorsAssetList*>
-  ClassSize: '0x10'
-  FullSize: '0x38'
+  - Name: StorySpawnedActorsCollectionList
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class StorySpawnedActorsCollectionList*>
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsComponentDataAsset:
@@ -198,16 +242,16 @@ StorySpawnedActorsDataAsset:
   Super: DataAsset
 StorySpawnedActorsService:
   Attributes:
-  - Name: GlobalSpawnedActors
-    Offset: '0x3d0'
-    Size: '0x50'
-    Type: Struct StoriesToSpawnedActorsListContainer
+  - Name: EarlyRegisteredComponents
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<class EarlyRegisteredComponents*>
   - Name: Asset
-    Offset: '0x4c0'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: Class StorySpawnedActorsCollectionDataAsset*
-  ClassSize: '0x208'
-  FullSize: '0x5d0'
+  ClassSize: '0x138'
+  FullSize: '0x500'
   InheritedSize: '0x3c8'
   Super: Actor
 StorySpawnedActorsServiceInterface:

@@ -497,61 +497,12 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "CameraModifier": {
+  "DeveloperSettings": {
     "Super": "Object",
-    "FullSize": "0x48",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "bDebug",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "bExclusive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Priority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "CameraOwner",
-        "Type": "Class PlayerCameraManager*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AlphaInTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AlphaOutTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "Alpha",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "bAutoDestroyOnCompletion",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x44"
-      }
-    ]
+    "ClassSize": "0x10",
+    "Attributes": []
   },
   "SceneComponent": {
     "Super": "ActorComponent",
@@ -2124,13 +2075,6 @@
         "Offset": "0x550"
       }
     ]
-  },
-  "DeveloperSettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": []
   },
   "Engine": {
     "Super": "Object",
@@ -6564,6 +6508,62 @@
         "Type": "TArray<class ExpressionTextureReferences*>",
         "Size": "0x10",
         "Offset": "0xa00"
+      }
+    ]
+  },
+  "CameraModifier": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "bDebug",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "bExclusive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Priority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "CameraOwner",
+        "Type": "Class PlayerCameraManager*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AlphaInTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AlphaOutTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "Alpha",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "bAutoDestroyOnCompletion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x44"
       }
     ]
   },

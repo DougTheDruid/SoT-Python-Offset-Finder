@@ -121,20 +121,20 @@ FireworkFeedbackDataAsset:
 FireworkItemInfo:
   Attributes:
   - Name: LoadableProjectileComponent
-    Offset: '0x4f8'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class LoadableFireworkComponent*
   - Name: FireworkDataAsset
-    Offset: '0x500'
+    Offset: '0x518'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: GeneratedDataRNGSeed
-    Offset: '0x510'
+    Offset: '0x528'
     Size: '0x4'
     Type: int
   ClassSize: '0x20'
-  FullSize: '0x518'
-  InheritedSize: '0x4f8'
+  FullSize: '0x530'
+  InheritedSize: '0x510'
   Super: ItemInfo
 FireworkProjectile:
   Attributes:

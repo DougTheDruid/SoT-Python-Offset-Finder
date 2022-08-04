@@ -1,4 +1,11 @@
 {
+  "InvasionServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "InvasionBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
@@ -50,18 +57,11 @@
       }
     ]
   },
-  "InvasionServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x4a0",
+    "FullSize": "0x4c8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0xd8",
+    "ClassSize": "0x100",
     "Attributes": [
       {
         "Name": "InvasionServiceDataAsset",
@@ -73,29 +73,83 @@
         "Name": "MatchmakingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x480"
+        "Offset": "0x4a8"
       },
       {
         "Name": "InvadingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x490"
+        "Offset": "0x4b8"
+      }
+    ]
+  },
+  "TaleQuestInvasionMatchmakingService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x110",
+    "InheritedSize": "0x60",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "ServiceDesc",
+        "Type": "Class TaleQuestInvasionMatchmakingServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "TaleQuestInvasionMatchmakingServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "OnCrewLeftServerMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnCrewLeftFightMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x60"
       }
     ]
   },
   "TaleQuestInvasionService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x98",
+    "FullSize": "0x130",
     "InheritedSize": "0x60",
-    "ClassSize": "0x38",
-    "Attributes": []
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "ServiceDesc",
+        "Type": "Class TaleQuestInvasionServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
   },
   "TaleQuestInvasionServiceDesc": {
     "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
+    "FullSize": "0x98",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "OnCrewLeftServerMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnCrewLeftFightMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x60"
+      }
+    ]
   },
   "WaitForShipToBeDefeatedStep": {
     "Super": "TaleQuestStep",

@@ -132,6 +132,18 @@ MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsCurt:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsLog_:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
+MeshMemoryConstraintCategory_ShipPartCustomization_Chair_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: MeshMemoryConstraintCategory
 MeshMemoryConstraintCategory_ShipPartCustomization_ChandelierFl:
   Attributes: []
   ClassSize: '0x0'

@@ -156,7 +156,7 @@ public:
 struct MovieSceneEvaluationFieldTrackPtr
 {
 public:
-	Struct MovieSceneSequenceID                                  SequenceId;                                        // 0x0(0x4)
+	Struct MovieSceneSequenceID                                  SequenceID;                                        // 0x0(0x4)
 	Struct MovieSceneTrackIdentifier                             TrackIdentifier;                                   // 0x4(0x4)
 };
 

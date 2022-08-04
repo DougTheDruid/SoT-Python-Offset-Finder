@@ -125,8 +125,8 @@
   },
   "ShroudedIslands_LarinnaDialogTempEntitlement_C": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },

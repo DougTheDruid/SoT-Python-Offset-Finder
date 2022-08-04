@@ -81,16 +81,16 @@ CommodityEntitlementRedemptionAsset:
 CommodityItemDesc:
   Attributes:
   - Name: CommodityType
-    Offset: '0x130'
+    Offset: '0x120'
     Size: '0x8'
     Type: Struct CommoditySelectionType
   - Name: CommodityDemand
-    Offset: '0x138'
+    Offset: '0x128'
     Size: '0x1'
     Type: byte
   ClassSize: '0x10'
-  FullSize: '0x140'
-  InheritedSize: '0x130'
+  FullSize: '0x130'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 CommodityPurchaseTrackingComponent:
   Attributes: []
@@ -124,8 +124,12 @@ CommoditySourceComponent:
     Offset: '0xd0'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x10'
-  FullSize: '0xd8'
+  - Name: IslandIdentifier
+    Offset: '0xd8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
+  FullSize: '0xe0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 CommoditySourceInterface:
@@ -137,16 +141,16 @@ CommoditySourceInterface:
 CommodityTokenEntitlementDesc:
   Attributes:
   - Name: NPCToRedeemAt
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x8'
     Type: struct FName
   - Name: ItemToRedeemFor
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x8'
     Type: class
   ClassSize: '0x10'
-  FullSize: '0xe8'
-  InheritedSize: '0xd8'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
   Super: EntitlementDesc
 CommodityTypeDataAsset:
   Attributes:

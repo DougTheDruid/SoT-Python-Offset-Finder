@@ -18,7 +18,7 @@ public:
 class BP_ShipFlagCustomizationChestInteraction_C: public ShipFlagCustomizationChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x520(0x8)
 };
 
 

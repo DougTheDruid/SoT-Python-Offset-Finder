@@ -26,24 +26,6 @@ public:
 };
 
 
-// Size 0x58
-class bsp_bch_rocks_08_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   StaticMeshComponent010;                            // 0x408(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x448(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x450(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x458(0x8)
-};
-
-
 // Size 0x50
 class bsp_bch_rocks_07_C: public BP_Placement_HeightDrop_C
 {
@@ -58,28 +40,6 @@ public:
 	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x440(0x8)
 	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x448(0x8)
 	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x450(0x8)
-};
-
-
-// Size 0x78
-class bsp_bch_rocks_06_C: public BP_Placement_HeightDrop_C
-{
-public:
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__b4;                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__c13;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__a14;                          // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__g;                               // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__b17;                          // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__b14;                          // 0x430(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__h;                               // 0x438(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__d13;                             // 0x440(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__e12;                          // 0x448(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__a17;                          // 0x450(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__e11;                          // 0x458(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__d23;                          // 0x460(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__d10;                             // 0x468(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_pebbles__e12;                             // 0x470(0x8)
-	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x478(0x8)
 };
 
 

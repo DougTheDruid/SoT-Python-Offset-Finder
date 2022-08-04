@@ -23,4 +23,12 @@ public:
 };
 
 
+// Size 0x10
+class MultiEmitter: public Actor
+{
+public:
+	Class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
+};
+
+
 }

@@ -47,22 +47,35 @@
   },
   "EmissaryEntitlementDesc": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryFlotsamDuplicationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "EmissaryFlotsamItemInfo": {
     "Super": "BootyItemInfo",
-    "FullSize": "0x720",
-    "InheritedSize": "0x708",
-    "ClassSize": "0x18",
+    "FullSize": "0x748",
+    "InheritedSize": "0x720",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "HandInOwnFlotsamReward",
         "Type": "Struct CompanySpecificBootyReward",
         "Size": "0x18",
-        "Offset": "0x708"
+        "Offset": "0x728"
+      },
+      {
+        "Name": "FlotsamCanBeDuplicated",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x740"
       }
     ]
   },

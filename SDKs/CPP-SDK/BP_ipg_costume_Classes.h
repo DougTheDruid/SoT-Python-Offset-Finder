@@ -7,35 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_ipg_costume_win_02_Desc_C: public CostumeWithEmoteDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_ipg_costume_win_01_Desc_C: public CostumeWithEmoteDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_ipg_costume_splashtail_01_Desc_C: public CostumeWithEmoteDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_ipg_costume_shr_gho_02_Desc_C: public CostumeWithEmoteDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_ipg_costume_shr_gho_01_Desc_C: public CostumeWithEmoteDesc
+class BP_ipg_costume_u_ild_01_Desc_C: public CostumeWithEmoteDesc
 {
 public:
 };
@@ -63,13 +35,6 @@ public:
 
 
 // Size 0x0
-class BP_ipg_costume_pum_01_Desc_C: public CostumeWithEmoteDesc
-{
-public:
-};
-
-
-// Size 0x0
 class BP_ipg_costume_bor_u_03_Desc_C: public CostumeWithEmoteDesc
 {
 public:
@@ -85,6 +50,48 @@ public:
 
 // Size 0x0
 class BP_ipg_costume_bor_u_01_Desc_C: public CostumeWithEmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ipg_costume_pum_01_Desc_C: public CostumeWithEmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ipg_costume_win_02_Desc_C: public CostumeWithEmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ipg_costume_win_01_Desc_C: public CostumeWithEmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ipg_costume_shr_gho_02_Desc_C: public CostumeWithEmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ipg_costume_shr_gho_01_Desc_C: public CostumeWithEmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_ipg_costume_splashtail_01_Desc_C: public CostumeWithEmoteDesc
 {
 public:
 };

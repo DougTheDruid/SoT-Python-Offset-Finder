@@ -2,22 +2,54 @@
 # https://github.com/DougTheDruid
 BP_CustomisableSovereignLadder_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x5b0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: InteractableComponent
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
+  - Name: Ladder Cap
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: LadderCustomisationDefinition
     Offset: '0x5c8'
     Size: '0x20'
     Type: Struct CustomisableLadderDefinitionStruct
+  - Name: OffTopSplineComponentPositions
+    Offset: '0x5e8'
+    Size: '0x10'
+    Type: TArray<Struct InteractOffset>
+  - Name: OnTopSplineComponentPositions
+    Offset: '0x5f8'
+    Size: '0x10'
+    Type: TArray<Struct Vector>
+  - Name: Steps
+    Offset: '0x608'
+    Size: '0x4'
+    Type: int
+  - Name: Material Override
+    Offset: '0x610'
+    Size: '0x8'
+    Type: Class MaterialInterface*
+  - Name: StepHeight
+    Offset: '0x618'
+    Size: '0x4'
+    Type: float
+  - Name: Interactable Position
+    Offset: '0x61c'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Interactable Scale
+    Offset: '0x628'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Minimum Steps
+    Offset: '0x634'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x88'
   FullSize: '0x638'
   InheritedSize: '0x5b0'

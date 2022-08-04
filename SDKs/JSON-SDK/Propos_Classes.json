@@ -1,71 +1,71 @@
 {
   "Proposal_Shroudbreaker_Chapter2_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_Shroudbreaker_Chapter3_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_Shroudbreaker_Chapter4_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_StarsOfAThief_Chapter2_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_StarsOfAThief_Chapter3_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_StarsOfAThief_Chapter4_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_StarsOfAThief_Chapter5_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_SL_LOTS_Chapter2_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_SL_LOTS_Chapter3_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_CompanyTales_GH_Rank0_C": {
     "Super": "VoyageProposalDesc",
-    "FullSize": "0x138",
-    "InheritedSize": "0x138",
+    "FullSize": "0x128",
+    "InheritedSize": "0x128",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -7,62 +7,6 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_female_makeup_white_08_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_female_makeup_white_07_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_female_makeup_white_06_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_female_makeup_white_05_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_female_makeup_white_04_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_female_makeup_white_03_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_female_makeup_white_02_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_female_makeup_white_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
 class BP_female_makeup_black_08_Desc_C: public ClothingDesc
 {
 public:
@@ -113,6 +57,62 @@ public:
 
 // Size 0x0
 class BP_female_makeup_black_01_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_08_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_07_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_06_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_05_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_04_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_03_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_02_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_female_makeup_white_01_Desc_C: public ClothingDesc
 {
 public:
 };

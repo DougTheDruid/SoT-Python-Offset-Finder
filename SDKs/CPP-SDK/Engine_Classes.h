@@ -112,18 +112,10 @@ public:
 };
 
 
-// Size 0x20
-class CameraModifier: public Object
+// Size 0x10
+class DeveloperSettings: public Object
 {
 public:
-	bool                                                         bDebug;                                            // 0x28(0x1)
-	bool                                                         bExclusive;                                        // 0x28(0x1)
-	byte                                                         Priority;                                          // 0x2c(0x1)
-	Class PlayerCameraManager*                                   CameraOwner;                                       // 0x30(0x8)
-	float                                                        AlphaInTime;                                       // 0x38(0x4)
-	float                                                        AlphaOutTime;                                      // 0x3c(0x4)
-	float                                                        Alpha;                                             // 0x40(0x4)
-	bool                                                         bAutoDestroyOnCompletion;                          // 0x44(0x1)
 };
 
 
@@ -460,13 +452,6 @@ public:
 	float                                                        MinTimeBetweenTimeStampResets;                     // 0x50c(0x4)
 	Struct RootMotionMovementParams                              RootMotionParams;                                  // 0x510(0x40)
 	bool                                                         bWasSimulatingRootMotion;                          // 0x550(0x1)
-};
-
-
-// Size 0x10
-class DeveloperSettings: public Object
-{
-public:
 };
 
 
@@ -1394,6 +1379,21 @@ public:
 	Struct Guid                                                  StateId;                                           // 0x960(0x10)
 	int                                                          UnwrappedUVSet;                                    // 0x970(0x4)
 	TArray<class ExpressionTextureReferences*>                   ExpressionTextureReferences;                       // 0xa00(0x10)
+};
+
+
+// Size 0x20
+class CameraModifier: public Object
+{
+public:
+	bool                                                         bDebug;                                            // 0x28(0x1)
+	bool                                                         bExclusive;                                        // 0x28(0x1)
+	byte                                                         Priority;                                          // 0x2c(0x1)
+	Class PlayerCameraManager*                                   CameraOwner;                                       // 0x30(0x8)
+	float                                                        AlphaInTime;                                       // 0x38(0x4)
+	float                                                        AlphaOutTime;                                      // 0x3c(0x4)
+	float                                                        Alpha;                                             // 0x40(0x4)
+	bool                                                         bAutoDestroyOnCompletion;                          // 0x44(0x1)
 };
 
 

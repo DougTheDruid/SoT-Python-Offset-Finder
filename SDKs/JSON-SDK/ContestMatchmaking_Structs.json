@@ -1,6 +1,6 @@
 {
   "ContestMatchmakingServerRequestModel": {
-    "ClassSize": "0x90",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "ServerId",
@@ -9,52 +9,58 @@
         "Offset": "0x0"
       },
       {
-        "Name": "VmId",
+        "Name": "ServerAddress",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "PrivateServerId",
+        "Name": "VmId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
-        "Name": "ServerLocation",
+        "Name": "PrivateServerId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
+        "Name": "ServerLocation",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
         "Name": "PlayModeTags",
         "Type": "TArray<Str PlayModeTags>",
         "Size": "0x10",
-        "Offset": "0x48"
+        "Offset": "0x58"
       },
       {
         "Name": "PlayModeStates",
         "Type": "TArray<Str PlayModeStates>",
         "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x68"
       },
       {
         "Name": "Crews",
         "Type": "TArray<Struct ServerCrewModel>",
         "Size": "0x10",
-        "Offset": "0x68"
+        "Offset": "0x78"
       },
       {
         "Name": "MatchmakingRequestReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x78"
+        "Offset": "0x88"
       },
       {
         "Name": "RequestCorrelationId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x7c"
+        "Offset": "0x8c"
       }
     ]
   },

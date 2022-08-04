@@ -1,15 +1,15 @@
 {
   "BP_ShipTrinketMountpointManagerComponent_Large_C": {
     "Super": "BP_ShipTrinketMountpointManagerComponent_C",
-    "FullSize": "0x4f0",
-    "InheritedSize": "0x4f0",
+    "FullSize": "0x580",
+    "InheritedSize": "0x580",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_ShipTrinketMountpointManagerComponent_C": {
     "Super": "ShipTrinketMountpointManagerComponent",
-    "FullSize": "0x4f0",
-    "InheritedSize": "0x4f0",
+    "FullSize": "0x580",
+    "InheritedSize": "0x580",
     "ClassSize": "0x0",
     "Attributes": []
   },

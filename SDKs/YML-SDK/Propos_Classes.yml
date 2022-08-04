@@ -3,60 +3,60 @@
 Proposal_CompanyTales_GH_Rank0_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x138'
-  InheritedSize: '0x138'
+  FullSize: '0x128'
+  InheritedSize: '0x128'
   Super: VoyageProposalDesc
 Proposal_SL_LOTS_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_SL_LOTS_Chapter3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_Shroudbreaker_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_Shroudbreaker_Chapter3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_Shroudbreaker_Chapter4_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_StarsOfAThief_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_StarsOfAThief_Chapter3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_StarsOfAThief_Chapter4_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_StarsOfAThief_Chapter5_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc

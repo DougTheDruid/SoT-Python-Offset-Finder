@@ -21,7 +21,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "OwnerXUID",
+        "Name": "OwnerGamerTag",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x18"

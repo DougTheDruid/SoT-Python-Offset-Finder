@@ -3,12 +3,12 @@
 BP_Emote_ForsakenHunter_MaskedAssailant_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x110'
-  InheritedSize: '0x110'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
   Super: EmoteDesc
 Title_ForsakenHunter_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc

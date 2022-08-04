@@ -3,42 +3,42 @@
 BP_tattoo_10_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_tattoo_11_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_tattoo_13_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_tattoo_14_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_tattoo_15_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_tattoo_16_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_tattoo_18_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc

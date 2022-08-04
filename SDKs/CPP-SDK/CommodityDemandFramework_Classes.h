@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class CommodityTokenEntitlementDesc: public EntitlementDesc
 {
 public:
-	struct FName                                                 NPCToRedeemAt;                                     // 0xd8(0x8)
-	class                                                        ItemToRedeemFor;                                   // 0xe0(0x8)
+	struct FName                                                 NPCToRedeemAt;                                     // 0xc8(0x8)
+	class                                                        ItemToRedeemFor;                                   // 0xd0(0x8)
 };
 
 
@@ -77,8 +77,8 @@ public:
 class CommodityItemDesc: public BootyItemDesc
 {
 public:
-	Struct CommoditySelectionType                                CommodityType;                                     // 0x130(0x8)
-	byte                                                         CommodityDemand;                                   // 0x138(0x1)
+	Struct CommoditySelectionType                                CommodityType;                                     // 0x120(0x8)
+	byte                                                         CommodityDemand;                                   // 0x128(0x1)
 };
 
 
@@ -112,11 +112,12 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 class CommoditySourceComponent: public ActorComponent
 {
 public:
 	struct FName                                                 NPCIdentifier;                                     // 0xd0(0x8)
+	struct FName                                                 IslandIdentifier;                                  // 0xd8(0x8)
 };
 
 

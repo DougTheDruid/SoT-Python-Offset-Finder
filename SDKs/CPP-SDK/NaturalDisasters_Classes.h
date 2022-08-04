@@ -143,57 +143,61 @@ public:
 };
 
 
-// Size 0x2f8
+// Size 0x300
 class EarthquakeSetupDataAsset: public DataAsset
 {
 public:
-	Struct WeightedProbabilityRangeOfRanges                      WarmUpDuration;                                    // 0x28(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      EarthquakeDuration;                                // 0x58(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      CoolDownDuration;                                  // 0x88(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0xb8(0x30)
-	float                                                        ChanceOfTriggeringAVolcano;                        // 0xe8(0x4)
-	Struct FloatRange                                            PercentageThroughEarthquakeToStartVolcano;         // 0xec(0x10)
-	Struct PlayerFeedback                                        WarmupPlayerFeedback;                              // 0x100(0x80)
-	Struct PlayerFeedback                                        ActivePlayerFeedback;                              // 0x180(0x80)
-	Struct WeightedProbabilityRangeOfRanges                      StaggerStrengthDuration;                           // 0x200(0x30)
-	float                                                        StaggerStrengthModifierWhenOnAShip;                // 0x230(0x4)
-	Struct FloatRange                                            PercentageThroughCameraShakeToStartNextOne;        // 0x234(0x10)
-	Struct FloatRange                                            TimeToShipPush;                                    // 0x244(0x10)
-	Struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0x258(0x30)
-	float                                                        MaximumShipSpeedToBePushed;                        // 0x288(0x4)
-	float                                                        ChanceEarthquakeTriggersGeysers;                   // 0x28c(0x4)
-	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenLocalEffects;                           // 0x290(0x30)
-	Struct WeightedProbabilityRange                              NumberOfLocalEffectsToTrigger;                     // 0x2c0(0x20)
-	float                                                        EffectConeAngle;                                   // 0x2e0(0x4)
-	float                                                        EffectRaycastDistanceInMetres;                     // 0x2e4(0x4)
-	Struct DistanceThrottledRandomParticleSystemPicker           EarthquakeEffects;                                 // 0x2e8(0x10)
-	float                                                        WarmupWindTurbulence;                              // 0x2f8(0x4)
-	Struct FloatRange                                            WarmupGustPower;                                   // 0x2fc(0x10)
-	float                                                        ActiveWindTurbulence;                              // 0x30c(0x4)
-	Struct FloatRange                                            ActiveGustPower;                                   // 0x310(0x10)
+	bool                                                         IsEnabled;                                         // 0x28(0x1)
+	Struct WeightedProbabilityRangeOfRanges                      WarmUpDuration;                                    // 0x30(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      EarthquakeDuration;                                // 0x60(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      CoolDownDuration;                                  // 0x90(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0xc0(0x30)
+	float                                                        ChanceOfTriggeringAVolcano;                        // 0xf0(0x4)
+	Struct FloatRange                                            PercentageThroughEarthquakeToStartVolcano;         // 0xf4(0x10)
+	Struct PlayerFeedback                                        WarmupPlayerFeedback;                              // 0x108(0x80)
+	Struct PlayerFeedback                                        ActivePlayerFeedback;                              // 0x188(0x80)
+	Struct WeightedProbabilityRangeOfRanges                      StaggerStrengthDuration;                           // 0x208(0x30)
+	float                                                        StaggerStrengthModifierWhenOnAShip;                // 0x238(0x4)
+	Struct FloatRange                                            PercentageThroughCameraShakeToStartNextOne;        // 0x23c(0x10)
+	Struct FloatRange                                            TimeToShipPush;                                    // 0x24c(0x10)
+	Struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0x260(0x30)
+	float                                                        MaximumShipSpeedToBePushed;                        // 0x290(0x4)
+	float                                                        ChanceEarthquakeTriggersGeysers;                   // 0x294(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenLocalEffects;                           // 0x298(0x30)
+	Struct WeightedProbabilityRange                              NumberOfLocalEffectsToTrigger;                     // 0x2c8(0x20)
+	float                                                        EffectConeAngle;                                   // 0x2e8(0x4)
+	float                                                        EffectRaycastDistanceInMetres;                     // 0x2ec(0x4)
+	Struct DistanceThrottledRandomParticleSystemPicker           EarthquakeEffects;                                 // 0x2f0(0x10)
+	float                                                        WarmupWindTurbulence;                              // 0x300(0x4)
+	Struct FloatRange                                            WarmupGustPower;                                   // 0x304(0x10)
+	float                                                        ActiveWindTurbulence;                              // 0x314(0x4)
+	Struct FloatRange                                            ActiveGustPower;                                   // 0x318(0x10)
 };
 
 
-// Size 0x1d0
+// Size 0x1f0
 class Earthquake: public Actor
 {
 public:
 	Class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x3d8(0x8)
-	Class Volcano*                                               AssociatedVolcano;                                 // 0x3e0(0x8)
-	Class GeyserManager*                                         AssociatedGeyserManager;                           // 0x3e8(0x8)
-	float                                                        EarthquakeEffectInnerRadiusOffsetInMetres;         // 0x3f0(0x4)
-	Class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x3f8(0x8)
-	Class WwiseEvent*                                            PlayEarthquakeLarge;                               // 0x400(0x8)
-	Class WwiseEvent*                                            StopEarthquakeLarge;                               // 0x408(0x8)
-	Class WwiseEvent*                                            PlayEarthquakeSmall;                               // 0x410(0x8)
-	Class WwiseEvent*                                            StopEarthquakeSmall;                               // 0x418(0x8)
-	struct FName                                                 EarthquakeRtpcName;                                // 0x420(0x8)
-	float                                                        EarthquakeRtpcMin;                                 // 0x428(0x4)
-	float                                                        EarthquakeRtpcMax;                                 // 0x42c(0x4)
-	float                                                        EarthquakeSizeToUseLargeAttenuation;               // 0x430(0x4)
-	Class CapsuleComponent*                                      HitDetectionVolume;                                // 0x438(0x8)
-	Class WindZoneComponent*                                     WindZone;                                          // 0x440(0x8)
-	byte                                                         EarthquakeState;                                   // 0x448(0x1)
+	Class EarthquakeSetupDataAsset*                              EarthquakeSetupDataOverride;                       // 0x3e0(0x8)
+	Class EarthquakeSetupDataAsset*                              SelectedEarthquakeDataForNextQuake;                // 0x3e8(0x8)
+	TArray<Struct EarthquakeStoryCustomisationData>              StoryCustomisationData;                            // 0x3f0(0x10)
+	Class Volcano*                                               AssociatedVolcano;                                 // 0x400(0x8)
+	Class GeyserManager*                                         AssociatedGeyserManager;                           // 0x408(0x8)
+	float                                                        EarthquakeEffectInnerRadiusOffsetInMetres;         // 0x410(0x4)
+	Class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x418(0x8)
+	Class WwiseEvent*                                            PlayEarthquakeLarge;                               // 0x420(0x8)
+	Class WwiseEvent*                                            StopEarthquakeLarge;                               // 0x428(0x8)
+	Class WwiseEvent*                                            PlayEarthquakeSmall;                               // 0x430(0x8)
+	Class WwiseEvent*                                            StopEarthquakeSmall;                               // 0x438(0x8)
+	struct FName                                                 EarthquakeRtpcName;                                // 0x440(0x8)
+	float                                                        EarthquakeRtpcMin;                                 // 0x448(0x4)
+	float                                                        EarthquakeRtpcMax;                                 // 0x44c(0x4)
+	float                                                        EarthquakeSizeToUseLargeAttenuation;               // 0x450(0x4)
+	Class CapsuleComponent*                                      HitDetectionVolume;                                // 0x458(0x8)
+	Class WindZoneComponent*                                     WindZone;                                          // 0x460(0x8)
+	byte                                                         EarthquakeState;                                   // 0x468(0x1)
 };
 
 
@@ -237,13 +241,14 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x68
 class GeyserManager: public Actor
 {
 public:
-	Class GeyserManagerSetupDataAsset*                           GeyserManagerSetupData;                            // 0x3c8(0x8)
-	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
-	byte                                                         State;                                             // 0x3d8(0x1)
+	Struct StoryFlag                                             StoryFlag;                                         // 0x3c8(0x8)
+	Class GeyserManagerSetupDataAsset*                           GeyserManagerSetupData;                            // 0x3d0(0x8)
+	Class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
+	byte                                                         State;                                             // 0x3e0(0x1)
 };
 
 
@@ -341,34 +346,35 @@ public:
 };
 
 
-// Size 0x1f0
+// Size 0x218
 class Volcano: public Actor
 {
 public:
-	Class CapsuleComponent*                                      HitDetectionVolume;                                // 0x3e0(0x8)
-	bool                                                         UseDormantDuration;                                // 0x3e8(0x1)
-	Class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x3f0(0x8)
-	Class Murk*                                                  AssociatedSuperheatedWater;                        // 0x3f8(0x8)
-	Class LavaZone*                                              AssociatedLavaZone;                                // 0x400(0x8)
-	float                                                        InnerTargetRadiusInMetres;                         // 0x408(0x4)
-	float                                                        OuterTargetRadiusInMetres;                         // 0x40c(0x4)
-	float                                                        NearbyPlayerRangeToFireProjectilesInMetres;        // 0x410(0x4)
-	float                                                        RandomShipPositionScale;                           // 0x414(0x4)
-	Class ParticleSystemComponent*                               WarmingUpEmitter;                                  // 0x418(0x8)
-	Class ParticleSystemComponent*                               EruptingEmitter;                                   // 0x420(0x8)
-	Class BlendedLightingZoneComponent*                          BlendedLightingZoneComponent;                      // 0x428(0x8)
-	Class BlendedAtmosphericPressureZoneComponent*               BlendedAtmosphericPressureZoneComponent;           // 0x430(0x8)
-	Class BlendedPostProcessingRainZoneComponent*                BlendedPostProcessingRainZoneComponent;            // 0x438(0x8)
-	Struct Vector                                                ProjectileLaunchOffset;                            // 0x440(0xc)
-	Class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x450(0x8)
-	Class WwiseEvent*                                            WarmupAudioPlayEvent;                              // 0x458(0x8)
-	Class WwiseEvent*                                            WarmupAudioStopEvent;                              // 0x460(0x8)
-	Class WwiseEvent*                                            EruptingAudioPlayEvent;                            // 0x468(0x8)
-	Class WwiseEvent*                                            EruptingAudioStopEvent;                            // 0x470(0x8)
-	Class CapsuleComponent*                                      InstantKillZone;                                   // 0x478(0x8)
-	float                                                        InstantKillZoneTestInterval;                       // 0x480(0x4)
-	Struct VolcanoStateData                                      StateData;                                         // 0x484(0xc)
-	struct FName                                                 AssociatedIslandName;                              // 0x490(0x8)
+	Struct StoryFlag                                             StoryFlag;                                         // 0x3e0(0x8)
+	Class CapsuleComponent*                                      HitDetectionVolume;                                // 0x3e8(0x8)
+	bool                                                         UseDormantDuration;                                // 0x3f0(0x1)
+	Class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x3f8(0x8)
+	Class Murk*                                                  AssociatedSuperheatedWater;                        // 0x400(0x8)
+	Class LavaZone*                                              AssociatedLavaZone;                                // 0x408(0x8)
+	float                                                        InnerTargetRadiusInMetres;                         // 0x410(0x4)
+	float                                                        OuterTargetRadiusInMetres;                         // 0x414(0x4)
+	float                                                        NearbyPlayerRangeToFireProjectilesInMetres;        // 0x418(0x4)
+	float                                                        RandomShipPositionScale;                           // 0x41c(0x4)
+	Class ParticleSystemComponent*                               WarmingUpEmitter;                                  // 0x420(0x8)
+	Class ParticleSystemComponent*                               EruptingEmitter;                                   // 0x428(0x8)
+	Class BlendedLightingZoneComponent*                          BlendedLightingZoneComponent;                      // 0x430(0x8)
+	Class BlendedAtmosphericPressureZoneComponent*               BlendedAtmosphericPressureZoneComponent;           // 0x438(0x8)
+	Class BlendedPostProcessingRainZoneComponent*                BlendedPostProcessingRainZoneComponent;            // 0x440(0x8)
+	Struct Vector                                                ProjectileLaunchOffset;                            // 0x448(0xc)
+	Class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x458(0x8)
+	Class WwiseEvent*                                            WarmupAudioPlayEvent;                              // 0x460(0x8)
+	Class WwiseEvent*                                            WarmupAudioStopEvent;                              // 0x468(0x8)
+	Class WwiseEvent*                                            EruptingAudioPlayEvent;                            // 0x470(0x8)
+	Class WwiseEvent*                                            EruptingAudioStopEvent;                            // 0x478(0x8)
+	Class CapsuleComponent*                                      InstantKillZone;                                   // 0x480(0x8)
+	float                                                        InstantKillZoneTestInterval;                       // 0x488(0x4)
+	Struct VolcanoStateData                                      StateData;                                         // 0x48c(0xc)
+	struct FName                                                 AssociatedIslandName;                              // 0x498(0x8)
 };
 
 

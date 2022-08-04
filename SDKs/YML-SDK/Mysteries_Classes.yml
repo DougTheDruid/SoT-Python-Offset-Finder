@@ -12,20 +12,16 @@ AbandonedNoteWeightedTextDataAsset:
   Super: DataAsset
 AbandonedNoteWeightedTextSourceComponent:
   Attributes:
-  - Name: WeightedText
-    Offset: '0xe8'
-    Size: '0x8'
-    Type: Class AbandonedNoteWeightedTextDataAsset*
   - Name: ClueText
-    Offset: '0xf0'
+    Offset: '0x108'
     Size: '0x38'
     Type: Struct FText
   - Name: TitleText
-    Offset: '0x128'
+    Offset: '0x140'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0xb0'
-  FullSize: '0x178'
+  ClassSize: '0xe0'
+  FullSize: '0x1a8'
   InheritedSize: '0xc8'
   Super: ActorComponent
 OneShotRewardableObjectBase:
@@ -74,11 +70,27 @@ PopUpNotificationOnItemWieldedComponent:
   Super: OnItemWieldedComponent
 SirenPuzzleContext:
   Attributes:
-  - Name: PuzzleLocks
+  - Name: Root
     Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: PuzzleLocks
+    Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<Struct SirenPuzzleLockState>
-  ClassSize: '0x170'
-  FullSize: '0x538'
+  - Name: UnlockCompleteReactions
+    Offset: '0x3e8'
+    Size: '0x10'
+    Type: TArray<Struct LandmarkReactionKeyFrame>
+  - Name: ResetLocksReactions
+    Offset: '0x3f8'
+    Size: '0x10'
+    Type: TArray<Struct LandmarkReactionKeyFrame>
+  - Name: LockStates
+    Offset: '0x408'
+    Size: '0x10'
+    Type: TArray<Byte LockStates>
+  ClassSize: '0xf0'
+  FullSize: '0x4b8'
   InheritedSize: '0x3c8'
   Super: Actor

@@ -24,6 +24,17 @@ public:
 };
 
 
+// Size 0x28
+struct MultiEmitterData
+{
+public:
+	Class WwiseObjectPoolWrapper*                                PoolWrapper;                                       // 0x0(0x8)
+	Class WwiseEvent*                                            PlayEvent;                                         // 0x8(0x8)
+	struct FName                                                 Name;                                              // 0x10(0x8)
+	Struct Vector                                                Offset;                                            // 0x18(0xc)
+};
+
+
 // Size 0x64
 struct WwiseAudioReverbPresets
 {

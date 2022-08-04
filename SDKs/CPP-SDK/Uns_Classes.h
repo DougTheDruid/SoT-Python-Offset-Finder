@@ -55,18 +55,4 @@ public:
 };
 
 
-// Size 0x0
-class ResourceCrate_Cannonballs_WSP2_TokenEntitlementDesc_C: public CommodityTokenEntitlementDesc
-{
-public:
-};
-
-
-// Size 0x0
-class ResourceCrate_Cannonballs_BSP2_TokenEntitlementDesc_C: public CommodityTokenEntitlementDesc
-{
-public:
-};
-
-
 }

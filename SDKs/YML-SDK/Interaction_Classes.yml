@@ -126,6 +126,22 @@ InteractableServiceInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+InteractionPreventionComponent:
+  Attributes:
+  - Name: ActorsToPreventInteractingWith
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<class ActorsToPreventInteractingWith*>
+  ClassSize: '0x18'
+  FullSize: '0xe0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+InteractionPreventionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 InteractionValidatorOwnerInterface:
   Attributes: []
   ClassSize: '0x0'

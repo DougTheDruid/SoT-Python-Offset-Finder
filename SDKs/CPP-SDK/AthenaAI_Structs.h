@@ -1103,7 +1103,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x28
 struct AIEncounterAndWaveSettingsOverride
 {
 public:
@@ -1111,6 +1111,8 @@ public:
 	Class AISpawnWaveSequenceRankProgression*                    SpawnWaveProgression;                              // 0x8(0x8)
 	float                                                        Chance;                                            // 0x10(0x4)
 	struct FName                                                 FeatureToggle;                                     // 0x14(0x8)
+	Struct StoryFlag                                             RequiredStory;                                     // 0x1c(0x8)
+	bool                                                         UseStoryAndNotFeatureToggle;                       // 0x24(0x1)
 };
 
 
@@ -1162,6 +1164,17 @@ public:
 };
 
 
+// Size 0x10
+struct AICountTelemetryEvent
+{
+public:
+	int                                                          NumTotalSpawns;                                    // 0x0(0x4)
+	int                                                          CurrentTotalWorldAICostUnits;                      // 0x4(0x4)
+	int                                                          NumActiveRegions;                                  // 0x8(0x4)
+	int                                                          NumPlayers;                                        // 0xc(0x4)
+};
+
+
 // Size 0xc
 struct AIPartIdNumVariantInfo
 {
@@ -1186,6 +1199,25 @@ public:
 	Struct AIPartId                                              AIPartId;                                          // 0x8(0x8)
 	int                                                          MeshIndex;                                         // 0x10(0x4)
 	int                                                          TeamColorIndex;                                    // 0x14(0x4)
+};
+
+
+// Size 0x14
+struct AIPerCrewSpawnerStoryBasedRespawnSettings
+{
+public:
+	Struct AIPerCrewSpawnerRespawnSettings                       RespawnSettings;                                   // 0x0(0xc)
+	Struct StoryFlag                                             StoryFlag;                                         // 0xc(0x8)
+};
+
+
+// Size 0xc
+struct AIPerCrewSpawnerRespawnSettings
+{
+public:
+	float                                                        MinRespawnTimeInterval;                            // 0x0(0x4)
+	float                                                        MaxRespawnTimeInterval;                            // 0x4(0x4)
+	float                                                        RespawnChance;                                     // 0x8(0x4)
 };
 
 

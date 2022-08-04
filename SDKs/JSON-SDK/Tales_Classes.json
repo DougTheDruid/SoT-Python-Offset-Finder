@@ -106,25 +106,11 @@
       }
     ]
   },
-  "ContendedResourceServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WorldResourceRegistryInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ContendedResourceComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x100",
+    "FullSize": "0x108",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x38",
+    "ClassSize": "0x40",
     "Attributes": []
   },
   "EnvQueryContext_TaleContextBase": {
@@ -466,6 +452,26 @@
     "ClassSize": "0xc8",
     "Attributes": []
   },
+  "TaleQuestInteractionPreventionService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x78",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TrackedInteractionActors",
+        "Type": "TArray<class TrackedInteractionActors*>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "Desc",
+        "Type": "Class TaleQuestInteractionPreventionServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
   "TaleQuestSelectorService": {
     "Super": "TaleQuestService",
     "FullSize": "0x88",
@@ -558,6 +564,13 @@
     "Attributes": []
   },
   "TaleQuestEQSServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestInteractionPreventionServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -699,6 +712,13 @@
         "Offset": "0xa0"
       }
     ]
+  },
+  "EnableInteractionWithActorStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "FindItemInCollectorsChestStep": {
     "Super": "TaleQuestStep",
@@ -869,6 +889,13 @@
         "Offset": "0xa0"
       }
     ]
+  },
+  "PreventInteractionWithActorStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ProvokeHitReactionStep": {
     "Super": "TaleQuestStep",
@@ -1220,6 +1247,13 @@
       }
     ]
   },
+  "VisualiseLoggerEQSResultsTaleStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "WaitForActorOfInterestToUnregisterStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x110",
@@ -1357,6 +1391,20 @@
         "Type": "Struct QuestVariableArray",
         "Size": "0x20",
         "Offset": "0x88"
+      }
+    ]
+  },
+  "EnableInteractionWithActorStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TargetActor",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x20",
+        "Offset": "0x80"
       }
     ]
   },
@@ -1888,6 +1936,20 @@
         "Type": "Class LevelSequence*",
         "Size": "0x8",
         "Offset": "0x130"
+      }
+    ]
+  },
+  "PreventInteractionWithActorStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TargetActor",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x20",
+        "Offset": "0x80"
       }
     ]
   },
@@ -2430,9 +2492,9 @@
   },
   "TaleQuestGrantRewardStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
+    "FullSize": "0xd0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x30",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "RewardId",
@@ -2459,10 +2521,16 @@
         "Offset": "0xa0"
       },
       {
+        "Name": "SpecificPlayerToAward",
+        "Type": "Struct QuestVariablePlayerActor",
+        "Size": "0x20",
+        "Offset": "0xa8"
+      },
+      {
         "Name": "Feature",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xa4"
+        "Offset": "0xc8"
       }
     ]
   },
@@ -2618,10 +2686,17 @@
   },
   "TaleQuestShipSurfaceStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x80",
+    "FullSize": "0x88",
     "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TimeToSurface",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      }
+    ]
   },
   "TaleQuestStartCameraFadeStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -2807,6 +2882,26 @@
         "Type": "Struct QuestVariableUObject",
         "Size": "0x20",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "VisualiseLoggerEQSResultsTaleStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "ResultsArray",
+        "Type": "Struct QuestVariableArray",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "SelectedResult",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x20",
+        "Offset": "0xa0"
       }
     ]
   },
@@ -3090,9 +3185,9 @@
   },
   "TaleQuestMapService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x100",
+    "FullSize": "0x110",
     "InheritedSize": "0x60",
-    "ClassSize": "0xa0",
+    "ClassSize": "0xb0",
     "Attributes": []
   },
   "TaleQuestMapServiceDesc": {

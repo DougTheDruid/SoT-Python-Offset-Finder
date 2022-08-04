@@ -36,10 +36,6 @@
     "ClassSize": "0x20",
     "Attributes": []
   },
-  "ServerMigrationConfigChangedEvent": {
-    "ClassSize": "0x8",
-    "Attributes": []
-  },
   "ServerMigrationAbortEvent": {
     "ClassSize": "0x10",
     "Attributes": []
@@ -47,71 +43,6 @@
   "ServerMigrationCompleteEvent": {
     "ClassSize": "0x1",
     "Attributes": []
-  },
-  "ServerMigrationHeartbeatEvent": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "ServerId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ServerLocation",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "GameEndpoint",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "MigrationEndpoint",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "CrewsMigrationStatus",
-        "Type": "TArray<Struct ServerMigrationCrewMigrationStatus>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SequenceId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "ServerUptime",
-        "Type": "Struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "ExpectedServerLifetime",
-        "Type": "Struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "MessageInterval",
-        "Type": "Struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "ContestMatchmaking",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x70"
-      }
-    ]
   },
   "ServerMigrationRefusedEvent": {
     "ClassSize": "0x20",
@@ -123,8 +54,8 @@
         "Offset": "0x0"
       },
       {
-        "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Name": "CrewIds",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -159,19 +90,8 @@
     "ClassSize": "0x20",
     "Attributes": []
   },
-  "ServerMigrationSetServerConfigMessage": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ExpectedServerLifetime",
-        "Type": "Struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ServerMigrationRequestEvent": {
-    "ClassSize": "0x40",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "MigrationId",
@@ -186,8 +106,8 @@
         "Offset": "0x10"
       },
       {
-        "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Name": "CrewIds",
+        "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -196,6 +116,12 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x30"
+      },
+      {
+        "Name": "MatchmakingReasons",
+        "Type": "TArray<Byte MatchmakingReasons>",
+        "Size": "0x10",
+        "Offset": "0x40"
       }
     ]
   },

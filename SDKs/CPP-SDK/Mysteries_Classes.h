@@ -14,13 +14,12 @@ public:
 };
 
 
-// Size 0xb0
+// Size 0xe0
 class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
 {
 public:
-	Class AbandonedNoteWeightedTextDataAsset*                    WeightedText;                                      // 0xe8(0x8)
-	Struct FText                                                 ClueText;                                          // 0xf0(0x38)
-	Struct FText                                                 TitleText;                                         // 0x128(0x38)
+	Struct FText                                                 ClueText;                                          // 0x108(0x38)
+	Struct FText                                                 TitleText;                                         // 0x140(0x38)
 };
 
 
@@ -46,11 +45,15 @@ public:
 };
 
 
-// Size 0x170
+// Size 0xf0
 class SirenPuzzleContext: public Actor
 {
 public:
-	TArray<Struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d0(0x10)
+	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
+	TArray<Struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
+	TArray<Struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
+	TArray<Struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
+	TArray<Byte LockStates>                                      LockStates;                                        // 0x408(0x10)
 };
 
 

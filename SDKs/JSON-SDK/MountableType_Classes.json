@@ -13,14 +13,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MountableType_Trinket_Hanging_SinglePoints_C": {
-    "Super": "MountableType",
+  "MountableType_Trinket_Hanging_SinglePoint_Tall_C": {
+    "Super": "MountableType_Trinket_Hanging_SinglePoints_C",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MountableType_Trinket_Hanging_SinglePoint_Tall_C": {
+  "MountableType_Trinket_Hanging_SinglePoints_C": {
     "Super": "MountableType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

@@ -123,6 +123,13 @@ public:
 };
 
 
+// Size 0x18
+class TaleQuestCustomMapFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
 // Size 0x8
 class TaleQuestLocationMapChestFoundStep: public TaleQuestStep
 {

@@ -16,8 +16,12 @@ NudgePolicy:
     Offset: '0xb8'
     Size: '0x8'
     Type: Class Actor*
-  ClassSize: '0x98'
-  FullSize: '0xc0'
+  - Name: OwnerComponent
+    Offset: '0xc0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0xa0'
+  FullSize: '0xc8'
   InheritedSize: '0x28'
   Super: Object
 NudgePolicyInterface:

@@ -1,5 +1,5 @@
 {
-  "WarMapInteractionComponentInterface": {
+  "WarMapStateInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -7,40 +7,28 @@
     "Attributes": []
   },
   "WarMapInteractionComponent": {
-    "Super": "ActionRulesInteractableComponent",
-    "FullSize": "0x350",
-    "InheritedSize": "0x120",
-    "ClassSize": "0x230",
+    "Super": "InteractableComponent",
+    "FullSize": "0x1b8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "OpenMapInteractionText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x130"
+        "Offset": "0x120"
       },
       {
         "Name": "CannotOpenMapInteractionText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x168"
+        "Offset": "0x158"
       },
       {
         "Name": "OpenMapInputId",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "CrewShipManifest",
-        "Type": "Class CrewShipManifest*",
-        "Size": "0x8",
-        "Offset": "0x1a8"
-      },
-      {
-        "Name": "ShipCrewHasJoinedFaction",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1b0"
+        "Offset": "0x190"
       }
     ]
   },

@@ -1,22 +1,22 @@
 {
   "BP_Volcano_SeaBased_C": {
     "Super": "BP_Volcano_C",
-    "FullSize": "0x5b8",
-    "InheritedSize": "0x5b8",
+    "FullSize": "0x5e0",
+    "InheritedSize": "0x5e0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Volcano_IslandBased_C": {
     "Super": "BP_Volcano_C",
-    "FullSize": "0x5b8",
-    "InheritedSize": "0x5b8",
+    "FullSize": "0x5e0",
+    "InheritedSize": "0x5e0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Volcano_C": {
     "Super": "Volcano",
-    "FullSize": "0x5b8",
-    "InheritedSize": "0x5b8",
+    "FullSize": "0x5e0",
+    "InheritedSize": "0x5e0",
     "ClassSize": "0x0",
     "Attributes": []
   },

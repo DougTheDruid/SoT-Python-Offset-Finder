@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_CaptainsLog_Wieldable_C: public CaptainsLogbookWieldable
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xc20(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0xc28(0x8)
-	Class SkeletalStashedMeshMemoryConstraintComponent*          SkeletalStashedMeshMemoryConstraint;               // 0xc30(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xcb0(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0xcb8(0x8)
+	Class SkeletalStashedMeshMemoryConstraintComponent*          SkeletalStashedMeshMemoryConstraint;               // 0xcc0(0x8)
 };
 
 

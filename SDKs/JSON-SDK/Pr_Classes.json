@@ -1,29 +1,29 @@
 {
   "Proposal_TheArtOfTheTrickster_Chapter2_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_TheArtOfTheTrickster_Chapter3_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_TheArtOfTheTrickster_Chapter4_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Proposal_TheArtOfTheTrickster_Chapter5_C": {
     "Super": "VoyageCheckpointProposalDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x140",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },

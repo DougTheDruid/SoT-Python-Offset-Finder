@@ -6,23 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0
+class BP_tls_speaking_trumpet_smp_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 // Size 0x8
 class BP_tls_speaking_trumpet_wth_01_a_v02_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 
 // Size 0x0
 class BP_tls_speaking_trumpet_wth_01_a_v02_Wieldable_C: public BP_Speaking_Trumpet_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_tls_speaking_trumpet_smp_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

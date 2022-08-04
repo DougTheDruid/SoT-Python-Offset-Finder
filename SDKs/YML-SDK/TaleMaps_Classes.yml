@@ -230,6 +230,12 @@ TaleQuestAddTradeRouteMapStepDesc:
   FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
+TaleQuestCustomMapFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0x188'
+  InheritedSize: '0x170'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestLocationMapChestFoundStep:
   Attributes: []
   ClassSize: '0x8'

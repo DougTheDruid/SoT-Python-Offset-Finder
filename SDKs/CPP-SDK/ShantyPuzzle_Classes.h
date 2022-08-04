@@ -6,6 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x48
+class ShantyPuzzleCompletionComponent: public ActorComponent
+{
+public:
+	float                                                        CompletionTime;                                    // 0xc8(0x4)
+	TArray<Struct LandmarkReactionKeyFrame>                      StartCompletionReaction;                           // 0xd0(0x10)
+	TArray<Struct LandmarkReactionKeyFrame>                      AbortCompletionReaction;                           // 0xe0(0x10)
+	TArray<Struct LandmarkReactionKeyFrame>                      PuzzleCompletedReaction;                           // 0xf0(0x10)
+	Class LandmarkReactionPlayer*                                ReactionPlayer;                                    // 0x100(0x8)
+	byte                                                         ReactionState;                                     // 0x108(0x1)
+};
+
+
 // Size 0x0
 class ShantyPuzzleInterface: public Interface
 {

@@ -3,188 +3,194 @@
 BP_AncientCollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_AshenChestCollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_BoxOfSecrets_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_BriggsyCollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
+BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C:
+  Attributes: []
+  ClassSize: '-0x43c5eb7d'
+  FullSize: '0x6a0'
+  InheritedSize: '0x43c5f21d'
+  Super: ''
+BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x6a8'
+  InheritedSize: '0x6a8'
+  Super: None
 BP_CollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_CollectorsChest_MaidenVoyage_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_CollectorsChest_RevengeOfTheMorningstar_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_GoldHoarder_SkeletonKey_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_LockedCollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BP_CollectorsChest_Desc_C
 BP_LockedEquipmentChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_LockedFateofTheMorningstarChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BP_CollectorsChest_Desc_C
 BP_LoversChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_BananaCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_BigGunpowderBarrel_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_CannonballCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
-  Super: BootyItemDesc
-BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_ChickenCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_Fort_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_Gemstones_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_Minerals_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_Ore_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_SilkCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_SpiceCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_SugarCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_TeaCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_Commodity_VolcanicStone_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_GhostCannonballCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_GunpowderBarrel_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_PigCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_SnakeBasket_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_WoodCrate_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_PromptActor_EmissarySunk_AF_C:
   Attributes:
@@ -319,212 +325,212 @@ BP_PromptActor_EmissarySunk_RB_C:
 BP_ReapersBountyChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_ReapersChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_ShipwreckTreasureChest_Common_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_ShipwreckTreasureChest_Legendary_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_ShipwreckTreasureChest_Mythical_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_ShipwreckTreasureChest_Rare_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_Shroudbreaker_AncientCollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_SkeletonCollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_SkeletonsOrders_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemWithoutIconsDesc
 BP_TreasureChest_AIShip_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_ChestOfRage_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Common_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Common_Desc_DVR_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Common_Desc_Rome_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Common_Tutorial_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Drunken_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Fort_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Ghost_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Legendary_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Legendary_Desc_DVR_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Legendary_Desc_Rome_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Mythical_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Mythical_Desc_DVR_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Mythical_Desc_Rome_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_PirateLegend_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_PirateLegend_Desc_DVR_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Rare_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Rare_Desc_DVR_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Rare_Desc_Rome_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_TreasureChest_Weeping_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_UnLockedEquipmentChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_fod_KrakenMeatRawBite1_00_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 BP_fod_KrakenMeatRawBite1_00_a_ItemInfo_C:
   Attributes:
   - Name: MaterialManipulationSettings
-    Offset: '0x560'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class MaterialManipulationSettingsComponent*
   - Name: LightweightStatusEffectManager
-    Offset: '0x568'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: Cookable
-    Offset: '0x570'
+    Offset: '0x588'
     Size: '0x8'
     Type: Class CookableComponent*
   ClassSize: '0x18'
-  FullSize: '0x578'
-  InheritedSize: '0x560'
+  FullSize: '0x590'
+  InheritedSize: '0x578'
   Super: BP_MeatItemInfo_C
 BP_fod_KrakenMeatRawBite1_00_a_ItemProxy_C:
   Attributes: []
@@ -541,20 +547,20 @@ BP_fod_KrakenMeatRawBite1_00_a_Wieldable_C:
 BP_fod_KrakenMeatRaw_00_a_ItemInfo_C:
   Attributes:
   - Name: MaterialManipulationSettings
-    Offset: '0x560'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class MaterialManipulationSettingsComponent*
   - Name: LightweightStatusEffectManager
-    Offset: '0x568'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: Cookable
-    Offset: '0x570'
+    Offset: '0x588'
     Size: '0x8'
     Type: Class CookableComponent*
   ClassSize: '0x18'
-  FullSize: '0x578'
-  InheritedSize: '0x560'
+  FullSize: '0x590'
+  InheritedSize: '0x578'
   Super: BP_MeatItemInfo_C
 BP_fod_KrakenMeatRaw_00_a_ItemProxy_C:
   Attributes: []
@@ -571,84 +577,84 @@ BP_fod_KrakenMeatRaw_00_a_Wieldable_C:
 BP_hair_col_black_01_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_black_02_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_black_03_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_blond_01_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_blond_04_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_blond_05_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_brown_03_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_brown_05_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_brown_07_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_red_01_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_red_04_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_red_05_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_hair_col_white_01_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: ClothingDesc
 BP_wpn_flintlock_pistol_skd_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc

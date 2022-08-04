@@ -3,18 +3,18 @@
 BP_Cannon_C:
   Attributes:
   - Name: GroupedInteractableArea
-    Offset: '0xc90'
+    Offset: '0xca8'
     Size: '0x8'
     Type: Class GroupedInteractableAreaComponent*
   - Name: Interactable
-    Offset: '0xc98'
+    Offset: '0xcb0'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: Collision
-    Offset: '0xca0'
+    Offset: '0xcb8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x18'
-  FullSize: '0xca8'
-  InheritedSize: '0xc90'
+  FullSize: '0xcc0'
+  InheritedSize: '0xca8'
   Super: Cannon

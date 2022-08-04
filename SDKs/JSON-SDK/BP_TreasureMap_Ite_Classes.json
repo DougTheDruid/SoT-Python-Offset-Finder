@@ -1,50 +1,50 @@
 {
-  "BP_TreasureMap_ItemDesc_PlayerBuriedXMarksTheSpot_C": {
-    "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_TreasureMap_ItemDesc_Bounty_C": {
     "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_TreasureMap_ItemDesc_CargoRun_C": {
     "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_TreasureMap_ItemDesc_Merchant_C": {
     "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_TreasureMap_ItemDesc_Riddle_C": {
     "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_TreasureMap_ItemDesc_Tutorial_C": {
     "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_TreasureMap_ItemDesc_XMarksTheSpot_C": {
     "Super": "TreasureMapItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_TreasureMap_ItemDesc_PlayerBuriedXMarksTheSpot_C": {
+    "Super": "TreasureMapItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },

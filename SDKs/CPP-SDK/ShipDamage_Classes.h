@@ -41,17 +41,19 @@ public:
 };
 
 
-// Size 0x160
+// Size 0x8
+class ShipPartsDamageTrackerComponent: public ActorComponent
+{
+public:
+	int                                                          IsAnyShipPartDamaged;                              // 0xc8(0x4)
+};
+
+
+// Size 0x10
 class ShipRestorationSettings: public DeveloperSettings
 {
 public:
 	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
-	Struct FText                                                 RestorationAllowedText;                            // 0x48(0x38)
-	Struct FText                                                 ShipTooFarAwayText;                                // 0x80(0x38)
-	Struct FText                                                 ShipRestoredTooRecentlyText;                       // 0xb8(0x38)
-	Struct FText                                                 ShipHasSunkText;                                   // 0xf0(0x38)
-	Struct FText                                                 CannotRestoreShipText;                             // 0x128(0x38)
-	Struct FText                                                 ShipInPristineConditionText;                       // 0x160(0x38)
 };
 
 

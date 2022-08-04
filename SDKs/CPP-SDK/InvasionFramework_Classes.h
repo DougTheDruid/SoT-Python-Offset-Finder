@@ -7,6 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
+class InvasionServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class InvasionBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
@@ -26,34 +33,47 @@ public:
 };
 
 
-// Size 0x0
-class InvasionServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xd8
+// Size 0x100
 class InvasionService: public Actor
 {
 public:
 	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x408(0x8)
-	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x480(0x10)
-	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x490(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x4a8(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x4b8(0x10)
 };
 
 
-// Size 0x38
+// Size 0xb0
+class TaleQuestInvasionMatchmakingService: public TaleQuestService
+{
+public:
+	Class TaleQuestInvasionMatchmakingServiceDesc*               ServiceDesc;                                       // 0x60(0x8)
+};
+
+
+// Size 0x70
+class TaleQuestInvasionMatchmakingServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	Struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
+	Struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
+};
+
+
+// Size 0xd0
 class TaleQuestInvasionService: public TaleQuestService
 {
 public:
+	Class TaleQuestInvasionServiceDesc*                          ServiceDesc;                                       // 0x60(0x8)
 };
 
 
-// Size 0x0
+// Size 0x70
 class TaleQuestInvasionServiceDesc: public TaleQuestServiceDesc
 {
 public:
+	Struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
+	Struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
 };
 
 

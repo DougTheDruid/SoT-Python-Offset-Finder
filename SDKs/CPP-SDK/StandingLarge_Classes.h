@@ -23,30 +23,11 @@ public:
 };
 
 
-// Size 0x18
-class BP_Trinket_SwordBucket_01_a_C: public BP_Trinket_StandingLarge_C
-{
-public:
-	Class StaticMeshComponent*                                   gmp_wood_sword_emote_01_a;                         // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cmn_bucket_01_a;                                   // 0x400(0x8)
-	Class StaticMeshComponent*                                   gmp_wood_sword_emote_01_a1;                        // 0x408(0x8)
-};
-
-
 // Size 0x8
 class BP_Trinket_SkullStand_01_a_C: public BP_Trinket_StandingLarge_C
 {
 public:
 	Class StaticMeshComponent*                                   bld_skull_stand_oos_01_a;                          // 0x3f8(0x8)
-};
-
-
-// Size 0x10
-class BP_Trinket_ScrollBucket_01_a_C: public BP_Trinket_StandingLarge_C
-{
-public:
-	Class StaticMeshComponent*                                   gmp_map_bundle_01_a;                               // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cmn_bucket_01_a;                                   // 0x400(0x8)
 };
 
 
@@ -120,35 +101,10 @@ public:
 
 
 // Size 0x8
-class BP_Trinket_DVRRock_01_a_C: public BP_Trinket_StandingLarge_C
-{
-public:
-	Class StaticMeshComponent*                                   dvr_lv_projectile_01_a;                            // 0x3f8(0x8)
-};
-
-
-// Size 0x8
-class BP_Trinket_DVRCrystal_02_a_C: public BP_Trinket_StandingLarge_C
-{
-public:
-	Class StaticMeshComponent*                                   dvr_lv_rock_large_01_c;                            // 0x3f8(0x8)
-};
-
-
-// Size 0x8
 class BP_Trinket_BrokenPot_02_a_C: public BP_Trinket_StandingLarge_C
 {
 public:
 	Class StaticMeshComponent*                                   cmn_clay_pot_01_b;                                 // 0x3f8(0x8)
-};
-
-
-// Size 0x10
-class BP_Trinket_Boots_01_a_C: public BP_Trinket_StandingLarge_C
-{
-public:
-	Class StaticMeshComponent*                                   cmn_boots_02_a_L;                                  // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cmn_boots_02_a_R;                                  // 0x400(0x8)
 };
 
 

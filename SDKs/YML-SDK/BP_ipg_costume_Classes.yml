@@ -3,102 +3,108 @@
 BP_ipg_costume_bor_u_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_bor_u_02_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_bor_u_03_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_cgh_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
   Super: CostumeDesc
 BP_ipg_costume_cme_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
   Super: CostumeDesc
 BP_ipg_costume_coo_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
   Super: CostumeDesc
 BP_ipg_costume_leggho_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
   Super: CostumeDesc
 BP_ipg_costume_pum_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_reapers_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe8'
-  InheritedSize: '0xe8'
+  FullSize: '0xd8'
+  InheritedSize: '0xd8'
   Super: CostumeDesc
 BP_ipg_costume_sak_u_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_sak_u_02_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_sak_u_03_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_shr_gho_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_shr_gho_02_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_splashtail_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
+  Super: CostumeWithEmoteDesc
+BP_ipg_costume_u_ild_01_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_win_01_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc
 BP_ipg_costume_win_02_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xf8'
-  InheritedSize: '0xf8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: CostumeWithEmoteDesc

@@ -54,21 +54,3 @@ BP_OutpostCrate_bld_shop_wood_box_03_a_C:
   FullSize: '0x4d0'
   InheritedSize: '0x4b8'
   Super: StorageContainer
-BP_OutpostCrate_cmn_wooden_crate_01_a_C:
-  Attributes:
-  - Name: Replenishable
-    Offset: '0x4b8'
-    Size: '0x8'
-    Type: Class ReplenishableComponent*
-  - Name: IslandTelemetrySubject
-    Offset: '0x4c0'
-    Size: '0x8'
-    Type: Class IslandTelemetrySubjectComponent*
-  - Name: StorageContainer
-    Offset: '0x4c8'
-    Size: '0x8'
-    Type: Class StorageContainerComponent*
-  ClassSize: '0x18'
-  FullSize: '0x4d0'
-  InheritedSize: '0x4b8'
-  Super: StorageContainer

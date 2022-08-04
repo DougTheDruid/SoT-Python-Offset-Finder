@@ -145,18 +145,18 @@ BP_LargeShip_StandardHull_Damage_C:
 BP_LargeShip_StandardHull_InternalShipWater_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x618'
+    Offset: '0x620'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: DynamicFlow
-    Offset: '0x620'
+    Offset: '0x628'
     Size: '0x8'
     Type: Class DynamicFlowComponent*
   - Name: Foaminess
-    Offset: '0x628'
+    Offset: '0x630'
     Size: '0x8'
     Type: Class CurveFloat*
   ClassSize: '0x18'
-  FullSize: '0x630'
-  InheritedSize: '0x618'
+  FullSize: '0x638'
+  InheritedSize: '0x620'
   Super: ShipInternalWater

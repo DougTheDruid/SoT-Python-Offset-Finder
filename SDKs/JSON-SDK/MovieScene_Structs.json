@@ -285,7 +285,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "SequenceId",
+        "Name": "SequenceID",
         "Type": "Struct MovieSceneSequenceID",
         "Size": "0x4",
         "Offset": "0x0"

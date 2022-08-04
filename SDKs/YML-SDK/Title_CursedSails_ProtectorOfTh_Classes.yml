@@ -3,18 +3,18 @@
 Title_CursedSails_ProtectorOfTheAncientIsles_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_CursedSails_ProtectorOfTheShoresOfPlenty_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_CursedSails_ProtectorOfTheWilds_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc

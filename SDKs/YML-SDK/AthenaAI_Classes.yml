@@ -53,90 +53,90 @@ AIAnimationStateInterface:
 AIBoobyTrapSpawner:
   Attributes:
   - Name: NumberOfWavesToSpawn
-    Offset: '0x618'
+    Offset: '0x620'
     Size: '0x4'
     Type: int
   - Name: NewWaveSpawnSfx
-    Offset: '0x620'
+    Offset: '0x628'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: NewWaveSpawnSfxTriggerRadius
-    Offset: '0x628'
+    Offset: '0x630'
     Size: '0x4'
     Type: float
   - Name: ShowNameplatesFor
-    Offset: '0x630'
+    Offset: '0x638'
     Size: '0x10'
     Type: TArray<Class ShowNameplatesFor>
   - Name: NamedAIDataAsset
-    Offset: '0x640'
+    Offset: '0x648'
     Size: '0x8'
     Type: Class NamedAIDataAsset*
   - Name: ActorToTrack
-    Offset: '0x648'
+    Offset: '0x650'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0xd0'
-  FullSize: '0x6e8'
-  InheritedSize: '0x618'
+  FullSize: '0x6f0'
+  InheritedSize: '0x620'
   Super: AIPerPlayerSpawner
 AIBountySpawner:
   Attributes:
   - Name: MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x4'
     Type: float
   - Name: WaveGroups
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x10'
     Type: TArray<Struct AIBountySpawnerWaveGroup>
   - Name: TeamColor
-    Offset: '0x448'
+    Offset: '0x450'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: WavesPerRelocate
-    Offset: '0x458'
+    Offset: '0x460'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: WaveSplitChance
-    Offset: '0x478'
+    Offset: '0x480'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: WaveSuicideTime
-    Offset: '0x498'
+    Offset: '0x4a0'
     Size: '0x10'
     Type: TArray<Float WaveSuicideTime>
   - Name: WaveSuicideMinDist
-    Offset: '0x4a8'
+    Offset: '0x4b0'
     Size: '0x4'
     Type: float
   - Name: ImmediatelyPerceiveTargets
-    Offset: '0x4ac'
+    Offset: '0x4b4'
     Size: '0x1'
     Type: bool
   - Name: ActiveCombatDialogue
-    Offset: '0x4b0'
+    Offset: '0x4b8'
     Size: '0x8'
     Type: Class AICombatDialogue*
   - Name: CrewMembers
-    Offset: '0x4e0'
+    Offset: '0x4e8'
     Size: '0x10'
     Type: TArray<class CrewMembers*>
   - Name: NonCrewMembersInRegion
-    Offset: '0x4f0'
+    Offset: '0x4f8'
     Size: '0x10'
     Type: TArray<class NonCrewMembersInRegion*>
   - Name: AllParticipatingPlayers
-    Offset: '0x500'
+    Offset: '0x508'
     Size: '0x10'
     Type: TArray<class AllParticipatingPlayers*>
   - Name: AudioZoneTriggerComponent
-    Offset: '0x510'
+    Offset: '0x518'
     Size: '0x8'
     Type: Class OverlapTriggerComponent*
   ClassSize: '0x198'
-  FullSize: '0x5c8'
-  InheritedSize: '0x430'
+  FullSize: '0x5d0'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIChargeUpInterruptedStatus:
   Attributes: []
@@ -235,7 +235,7 @@ AICreatureCharacter:
     Size: '0x8'
     Type: Class AICreatureCharacterMovementComponent*
   - Name: CurrentAIStrategy
-    Offset: '0x7a0'
+    Offset: '0x808'
     Size: '0x8'
     Type: class
   ClassSize: '0x230'
@@ -366,12 +366,16 @@ AIDebugSpawnActor:
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<Struct AIDebugSpawnConfiguration>
-  - Name: SpawnedAIList
+  - Name: Seed
     Offset: '0x3e0'
+    Size: '0x4'
+    Type: int
+  - Name: SpawnedAIList
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<class SpawnedAIList*>
-  ClassSize: '0x28'
-  FullSize: '0x3f0'
+  ClassSize: '0x30'
+  FullSize: '0x3f8'
   InheritedSize: '0x3c8'
   Super: Actor
 AIDebugVisualisationComponent:
@@ -775,44 +779,44 @@ AIEncounterSettingsRankProgression:
 AIEscalatingWaveSpawner:
   Attributes:
   - Name: EscalatingWaves
-    Offset: '0x568'
+    Offset: '0x570'
     Size: '0x10'
     Type: TArray<Struct EscalatingWave>
   ClassSize: '0x20'
-  FullSize: '0x588'
-  InheritedSize: '0x568'
+  FullSize: '0x590'
+  InheritedSize: '0x570'
   Super: AIWaveSpawner
 AIFaunaSpawner:
   Attributes:
   - Name: FaunaWave
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x110'
     Type: Struct AIFaunaSpawnerWave
   - Name: FaunaLeader
-    Offset: '0x550'
+    Offset: '0x558'
     Size: '0x8'
     Type: Class Actor*
   - Name: PlayersInSpawnArea
-    Offset: '0x568'
+    Offset: '0x570'
     Size: '0x10'
     Type: TArray<class PlayersInSpawnArea*>
   ClassSize: '0x148'
-  FullSize: '0x578'
-  InheritedSize: '0x430'
+  FullSize: '0x580'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIFixedWavesSpawner:
   Attributes:
   - Name: SpawnedWaves
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x10'
     Type: TArray<Struct AIPersistentSpawnerWave>
   - Name: NumWavesToSpawnOnSpottedNewTarget
-    Offset: '0x440'
+    Offset: '0x448'
     Size: '0x4'
     Type: int
   ClassSize: '0x40'
-  FullSize: '0x470'
-  InheritedSize: '0x430'
+  FullSize: '0x478'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIFormItemSpawnRequirement:
   Attributes:
@@ -871,12 +875,12 @@ AIIdentifierOwnerInterface:
 AIIncrementalWaveSpawner:
   Attributes:
   - Name: SpawnedWave
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x100'
     Type: Struct AISpawnerWave
   ClassSize: '0x118'
-  FullSize: '0x548'
-  InheritedSize: '0x430'
+  FullSize: '0x550'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIInteractableComponent:
   Attributes:
@@ -911,52 +915,52 @@ AIInteractableOperatorInterface:
 AIInteractableSpawner:
   Attributes:
   - Name: AIInteractableType
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x8'
     Type: class
   - Name: InhabitedChance
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x4'
     Type: float
   - Name: DelayAfterSuccessfulInhabitedCheck
-    Offset: '0x440'
+    Offset: '0x448'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: DelayAfterFailedInhabitedCheck
-    Offset: '0x470'
+    Offset: '0x478'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: SpawnForInteractableChance
-    Offset: '0x4a0'
+    Offset: '0x4a8'
     Size: '0x4'
     Type: float
   - Name: DelayAfterSuccessfulSpawnOnInteractableCheck
-    Offset: '0x4a8'
+    Offset: '0x4b0'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: DelayAfterFailedSpawnOnInteractableCheck
-    Offset: '0x4d8'
+    Offset: '0x4e0'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: RunInhabitedSimulation
-    Offset: '0x508'
+    Offset: '0x510'
     Size: '0x1'
     Type: bool
   - Name: RunSpawnForInteractableSimulation
-    Offset: '0x509'
+    Offset: '0x511'
     Size: '0x1'
     Type: bool
   - Name: NumIterations
-    Offset: '0x50c'
+    Offset: '0x514'
     Size: '0x4'
     Type: int
   - Name: CachedPlaymode
-    Offset: '0x528'
+    Offset: '0x530'
     Size: '0x1'
     Type: byte
   ClassSize: '0x100'
-  FullSize: '0x530'
-  InheritedSize: '0x430'
+  FullSize: '0x538'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIInteractableType:
   Attributes: []
@@ -1173,8 +1177,8 @@ AINoiseFireInstigator:
 AIOnDemandSpawner:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x430'
-  InheritedSize: '0x430'
+  FullSize: '0x438'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIPartCustomizationInterface:
   Attributes: []
@@ -1293,86 +1297,114 @@ AIPawnTurnActiveInterface:
 AIPerCrewSpawner:
   Attributes:
   - Name: DefaultRespawnTimerRanges
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x8'
     Type: Class AIWeightedProbabilityRangeOfRangesRankProgression*
   - Name: MaxNumOfCrewsToSpawnFor
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x4'
     Type: int
   - Name: ActivateBySettingFootOnIsland
-    Offset: '0x43c'
-    Size: '0x1'
-    Type: bool
-  - Name: UseRespawnTimerForFirstSpawn
-    Offset: '0x43d'
-    Size: '0x1'
-    Type: bool
-  - Name: AssociateSpawnsWithSpecificCrews
-    Offset: '0x43e'
-    Size: '0x1'
-    Type: bool
-  - Name: PerceiveTriggerActorOnSpawn
-    Offset: '0x43f'
-    Size: '0x1'
-    Type: bool
-  - Name: EnforceRespawnTimeAfterCrewLeaves
-    Offset: '0x440'
-    Size: '0x1'
-    Type: bool
-  - Name: IgnoreSpawningGracePeriodForNewCrew
-    Offset: '0x441'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x138'
-  FullSize: '0x568'
-  InheritedSize: '0x430'
-  Super: AISpawner
-AIPerPlayerSpawner:
-  Attributes:
-  - Name: CheckSpawnedActorsInRadiusBeforeSpawning
-    Offset: '0x430'
-    Size: '0x1'
-    Type: bool
-  - Name: RadiusToCheckForExistingPopulation
-    Offset: '0x434'
-    Size: '0x4'
-    Type: float
-  - Name: MaxExistingPopulationInRadius
-    Offset: '0x438'
-    Size: '0x4'
-    Type: int
-  - Name: DespawnAllPawnsWhenAllPlayersLeave
-    Offset: '0x43c'
-    Size: '0x1'
-    Type: bool
-  - Name: MaxActorsTotalPerPlayer
-    Offset: '0x440'
-    Size: '0x4'
-    Type: int
-  - Name: RunSimulation
     Offset: '0x444'
     Size: '0x1'
     Type: bool
-  - Name: RankForSimulation
+  - Name: UseRespawnTimerForFirstSpawn
+    Offset: '0x445'
+    Size: '0x1'
+    Type: bool
+  - Name: AssociateSpawnsWithSpecificCrews
+    Offset: '0x446'
+    Size: '0x1'
+    Type: bool
+  - Name: PerceiveTriggerActorOnSpawn
+    Offset: '0x447'
+    Size: '0x1'
+    Type: bool
+  - Name: EnforceRespawnTimeAfterCrewLeaves
+    Offset: '0x448'
+    Size: '0x1'
+    Type: bool
+  - Name: IgnoreSpawningGracePeriodForNewCrew
+    Offset: '0x449'
+    Size: '0x1'
+    Type: bool
+  - Name: StoryOverrideRespawnSettingsAsset
+    Offset: '0x450'
+    Size: '0x8'
+    Type: Class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*
+  ClassSize: '0x140'
+  FullSize: '0x578'
+  InheritedSize: '0x438'
+  Super: AISpawner
+AIPerCrewSpawnerSettingsStoryOverrideAsset:
+  Attributes:
+  - Name: StoryOverrides
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct AIPerCrewSpawnerStoryBasedRespawnSettings>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset:
+  Attributes:
+  - Name: StoryOverrideAssetList
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class StoryOverrideAssetList*>
+  - Name: StoryoverrideAssetCollectionList
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class StoryoverrideAssetCollectionList*>
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: DataAsset
+AIPerPlayerSpawner:
+  Attributes:
+  - Name: CheckSpawnedActorsInRadiusBeforeSpawning
+    Offset: '0x438'
+    Size: '0x1'
+    Type: bool
+  - Name: RadiusToCheckForExistingPopulation
+    Offset: '0x43c'
+    Size: '0x4'
+    Type: float
+  - Name: MaxExistingPopulationInRadius
+    Offset: '0x440'
+    Size: '0x4'
+    Type: int
+  - Name: DespawnAllPawnsWhenAllPlayersLeave
+    Offset: '0x444'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxActorsTotalPerPlayer
     Offset: '0x448'
     Size: '0x4'
     Type: int
-  - Name: NumIterations
+  - Name: RunSimulation
     Offset: '0x44c'
+    Size: '0x1'
+    Type: bool
+  - Name: RankForSimulation
+    Offset: '0x450'
+    Size: '0x4'
+    Type: int
+  - Name: NumIterations
+    Offset: '0x454'
     Size: '0x4'
     Type: int
   - Name: WantsToTemporarilyRememberPlayers
-    Offset: '0x450'
+    Offset: '0x458'
     Size: '0x1'
     Type: bool
   - Name: TemporaryPlayerMemoryTimeRange
-    Offset: '0x458'
+    Offset: '0x460'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x1e8'
-  FullSize: '0x618'
-  InheritedSize: '0x430'
+  FullSize: '0x620'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIPlayerTracker:
   Attributes: []
@@ -1395,20 +1427,20 @@ AIPlayerTrackerObserverInterface:
 AIProgressiveWavesSpawner:
   Attributes:
   - Name: ApplyLocalisableNamesToNameplates
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x1'
     Type: bool
   - Name: Waves
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x10'
     Type: TArray<Struct AIPersistentSpawnerWave>
   - Name: TriggerActor
-    Offset: '0x460'
+    Offset: '0x468'
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x38'
-  FullSize: '0x468'
-  InheritedSize: '0x430'
+  FullSize: '0x470'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIProjectileInterface:
   Attributes: []
@@ -1620,16 +1652,12 @@ AISpawnRequestResultLoggerInterface:
   Super: Interface
 AISpawnStoryCondition:
   Attributes:
-  - Name: StoryNames
+  - Name: StoryFlag
     Offset: '0x30'
-    Size: '0x10'
-    Type: TArray<Struct FName>
-  - Name: RequiresAllStories
-    Offset: '0x40'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x30'
-  FullSize: '0x60'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  ClassSize: '0x20'
+  FullSize: '0x50'
   InheritedSize: '0x30'
   Super: AISpawnOverrideCondition
 AISpawnWaveSequence:
@@ -1723,11 +1751,11 @@ AISpawner:
     Size: '0x1'
     Type: bool
   - Name: AthenaAISettings
-    Offset: '0x368'
+    Offset: '0x370'
     Size: '0x8'
     Type: Class AthenaAISettings*
-  ClassSize: '0x408'
-  FullSize: '0x430'
+  ClassSize: '0x410'
+  FullSize: '0x438'
   InheritedSize: '0x28'
   Super: DataAsset
 AISpawnerList:
@@ -1799,20 +1827,20 @@ AITargetWeaponInterface:
 AIWaveSpawner:
   Attributes:
   - Name: SpawnedWave
-    Offset: '0x438'
+    Offset: '0x440'
     Size: '0x100'
     Type: Struct AISpawnerWave
   - Name: MinRespawnTime
-    Offset: '0x538'
+    Offset: '0x540'
     Size: '0x4'
     Type: float
   - Name: MaxRespawnTime
-    Offset: '0x53c'
+    Offset: '0x544'
     Size: '0x4'
     Type: float
   ClassSize: '0x138'
-  FullSize: '0x568'
-  InheritedSize: '0x430'
+  FullSize: '0x570'
+  InheritedSize: '0x438'
   Super: AISpawner
 AIWeightedProbabilityRangeOfRangesAsset:
   Attributes:
@@ -2880,8 +2908,12 @@ AthenaAISettings:
     Offset: '0xd0'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0xa0'
-  FullSize: '0xd8'
+  - Name: AICountTelemetryEventFrequency
+    Offset: '0xd8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xa8'
+  FullSize: '0xe0'
   InheritedSize: '0x38'
   Super: DeveloperSettings
 AthenaAISightTargetInterface:
@@ -5919,259 +5951,259 @@ PeriodicAINoiseEventComponent:
 Pet:
   Attributes:
   - Name: WieldableReactMappingsAsset
-    Offset: '0x8a8'
+    Offset: '0x8b0'
     Size: '0x8'
     Type: Class PetWieldableReactMappingsDataAsset*
   - Name: MaxVelocityForLocomotionAnimation
-    Offset: '0x8b0'
+    Offset: '0x8b8'
     Size: '0x4'
     Type: float
   - Name: CanFly
-    Offset: '0x8b4'
+    Offset: '0x8bc'
     Size: '0x1'
     Type: bool
   - Name: FlyingStrategyProperties
-    Offset: '0x8b8'
+    Offset: '0x8c0'
     Size: '0x10'
     Type: TArray<Struct PetFlyingStrategyProperties>
   - Name: FlyingLandTime
-    Offset: '0x8c8'
+    Offset: '0x8d0'
     Size: '0x4'
     Type: float
   - Name: FlyingLandCurve
-    Offset: '0x8d0'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: FlyingTakeOffTime
-    Offset: '0x8d8'
+    Offset: '0x8e0'
     Size: '0x4'
     Type: float
   - Name: FlyingTakeOffCurve
-    Offset: '0x8e0'
+    Offset: '0x8e8'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: MidFlightAdjustmentTimerRange
-    Offset: '0x8e8'
+    Offset: '0x8f0'
     Size: '0x10'
     Type: Struct FloatRange
   - Name: MidFlightAdjustmentCurve
-    Offset: '0x8f8'
-    Size: '0x8'
-    Type: Class CurveFloat*
-  - Name: MidFlightTimeToDistanceAdjustmentCurve
     Offset: '0x900'
     Size: '0x8'
     Type: Class CurveFloat*
-  - Name: FiredFromActorCollision
+  - Name: MidFlightTimeToDistanceAdjustmentCurve
     Offset: '0x908'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: FiredFromActorCollision
+    Offset: '0x910'
     Size: '0x8'
     Type: struct FName
   - Name: FiredFromActorSFX
-    Offset: '0x910'
+    Offset: '0x918'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: DitherComponent
-    Offset: '0x918'
+    Offset: '0x920'
     Size: '0x8'
     Type: Class PetDitherComponent*
   - Name: MinimumDamageForHealthReact
-    Offset: '0x920'
-    Size: '0x4'
-    Type: float
-  - Name: MaxDistForWaterBucketToClean
-    Offset: '0x924'
-    Size: '0x4'
-    Type: float
-  - Name: MinimumDurationUntilPetCanDespawnConcealed
     Offset: '0x928'
     Size: '0x4'
     Type: float
-  - Name: DefaultNamePlateHeight
+  - Name: MaxDistForWaterBucketToClean
     Offset: '0x92c'
     Size: '0x4'
     Type: float
-  - Name: AlternateNamePlateHeight
+  - Name: MinimumDurationUntilPetCanDespawnConcealed
     Offset: '0x930'
     Size: '0x4'
     Type: float
-  - Name: StatesToUseAlternateNamePlatePos
+  - Name: DefaultNamePlateHeight
+    Offset: '0x934'
+    Size: '0x4'
+    Type: float
+  - Name: AlternateNamePlateHeight
     Offset: '0x938'
+    Size: '0x4'
+    Type: float
+  - Name: StatesToUseAlternateNamePlatePos
+    Offset: '0x940'
     Size: '0x10'
     Type: TArray<Byte StatesToUseAlternateNamePlatePos>
   - Name: PetTimeSpentSad
-    Offset: '0x948'
+    Offset: '0x950'
     Size: '0x10'
     Type: Struct FloatRange
   - Name: DebugStateDescriptor
-    Offset: '0x958'
+    Offset: '0x960'
     Size: '0x1'
     Type: byte
   - Name: AINameplateComponent
-    Offset: '0x960'
+    Offset: '0x968'
     Size: '0x8'
     Type: Class AINameplateComponent*
   - Name: FeedingComponent
-    Offset: '0x968'
+    Offset: '0x970'
     Size: '0x8'
     Type: Class FeedingComponent*
   - Name: StarvingComponent
-    Offset: '0x970'
+    Offset: '0x978'
     Size: '0x8'
     Type: Class StarvingComponent*
   - Name: CleanlinessComponent
-    Offset: '0x978'
+    Offset: '0x980'
     Size: '0x8'
     Type: Class CleanlinessComponent*
   - Name: CannonSquashComponent
-    Offset: '0x980'
+    Offset: '0x988'
     Size: '0x8'
     Type: Class CannonSquashComponent*
   - Name: ReplicatedMovementRequest
-    Offset: '0x988'
+    Offset: '0x990'
     Size: '0xc'
     Type: Struct PetMovementRequest
   - Name: TargetMeshRoll
-    Offset: '0x994'
+    Offset: '0x99c'
     Size: '0x4'
     Type: float
   - Name: DefaultShipTurnRateModifier
-    Offset: '0x9a8'
+    Offset: '0x9b0'
     Size: '0x4'
     Type: float
   - Name: TurnRateModifierList
-    Offset: '0x9b0'
+    Offset: '0x9b8'
     Size: '0x10'
     Type: TArray<Struct PetTurnRateModifier>
   - Name: LocomotingMovementStates
-    Offset: '0x9c0'
+    Offset: '0x9c8'
     Size: '0x10'
     Type: TArray<Byte LocomotingMovementStates>
   - Name: RequestIdleOrMovementValidMovementStates
-    Offset: '0x9d0'
+    Offset: '0x9d8'
     Size: '0x10'
     Type: TArray<Byte RequestIdleOrMovementValidMovementStates>
   - Name: MaxRollAngle
-    Offset: '0x9e0'
-    Size: '0x4'
-    Type: float
-  - Name: DelayForDisablingMovementOnIdle
-    Offset: '0x9e4'
-    Size: '0x4'
-    Type: float
-  - Name: IslandDustRatePerSecond
     Offset: '0x9e8'
     Size: '0x4'
     Type: float
-  - Name: CrewId
+  - Name: DelayForDisablingMovementOnIdle
     Offset: '0x9ec'
+    Size: '0x4'
+    Type: float
+  - Name: IslandDustRatePerSecond
+    Offset: '0x9f0'
+    Size: '0x4'
+    Type: float
+  - Name: CrewId
+    Offset: '0x9f4'
     Size: '0x10'
     Type: Struct Guid
   - Name: InHangout
-    Offset: '0x9fc'
+    Offset: '0xa04'
     Size: '0x1'
     Type: bool
   - Name: PerchedInHangout
-    Offset: '0x9fd'
+    Offset: '0xa05'
     Size: '0x1'
     Type: bool
   - Name: ResetRollAndZOffset
-    Offset: '0x9fe'
+    Offset: '0xa06'
     Size: '0x1'
     Type: bool
   - Name: ShouldIgnoreTooltipDisplayOffset
-    Offset: '0x9ff'
+    Offset: '0xa07'
     Size: '0x1'
     Type: bool
   - Name: PetTurnToFaceData
-    Offset: '0xa00'
+    Offset: '0xa10'
     Size: '0x20'
     Type: Struct PetTurnToFaceData
   - Name: MaximumSubmergedWaterDepthBeforeDespawn
-    Offset: '0xa20'
+    Offset: '0xa30'
     Size: '0x4'
     Type: float
   - Name: AIPartsRetrievalComponent
-    Offset: '0xa48'
+    Offset: '0xa58'
     Size: '0x8'
     Type: Class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
-    Offset: '0xa50'
+    Offset: '0xa60'
     Size: '0x8'
     Type: Class PetPartCustomisationComponent*
   - Name: LightWeightStatusEffectManagerComponent
-    Offset: '0xa58'
+    Offset: '0xa68'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: TelemetryComponent
-    Offset: '0xa60'
+    Offset: '0xa70'
     Size: '0x8'
     Type: Class PetTelemetryComponent*
   - Name: SicknessComponent
-    Offset: '0xa68'
+    Offset: '0xa78'
     Size: '0x8'
     Type: Class PetSicknessComponent*
   - Name: WaterExposureComponent
-    Offset: '0xa70'
+    Offset: '0xa80'
     Size: '0x8'
     Type: Class WaterExposureComponent*
   - Name: AnimationDataStoreComponent
-    Offset: '0xa78'
+    Offset: '0xa88'
     Size: '0x8'
     Type: Class AnimationDataStoreComponent*
   - Name: SpawnedForShip
-    Offset: '0xa80'
+    Offset: '0xa90'
     Size: '0x8'
     Type: Class Actor*
   - Name: PetOwner
-    Offset: '0xa88'
+    Offset: '0xa98'
     Size: '0x8'
     Type: Class Actor*
   - Name: PetInfo
-    Offset: '0xa90'
+    Offset: '0xaa0'
     Size: '0x8'
     Type: Class ItemInfo*
   - Name: Docker
-    Offset: '0xaa0'
+    Offset: '0xab0'
     Size: '0x50'
     Type: Struct Docker
   - Name: StartPickupObjectActionRuleParams
-    Offset: '0xaf0'
+    Offset: '0xb00'
     Size: '0x10'
     Type: Struct StartPickupObjectActionRuleParams
   - Name: CurrentlyPlayingParticleSystem
-    Offset: '0xb10'
+    Offset: '0xb20'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: LandingStrategy
-    Offset: '0xb18'
+    Offset: '0xb28'
     Size: '0x8'
     Type: class
   - Name: PursuitStrategy
-    Offset: '0xb20'
+    Offset: '0xb30'
     Size: '0x8'
     Type: class
   - Name: DefaultRollLerpTime
-    Offset: '0xb28'
+    Offset: '0xb38'
     Size: '0x4'
     Type: float
   - Name: LandingRollLerpTime
-    Offset: '0xb2c'
+    Offset: '0xb3c'
     Size: '0x4'
     Type: float
   - Name: IsBeingDismissed
-    Offset: '0xb30'
+    Offset: '0xb40'
     Size: '0x1'
     Type: bool
   - Name: IsInDisabledPetPerchHangout
-    Offset: '0xc1c'
+    Offset: '0xc2c'
     Size: '0x1'
     Type: bool
   - Name: PetIsSad
-    Offset: '0xc1d'
+    Offset: '0xc2d'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x450'
-  FullSize: '0xc60'
+  ClassSize: '0x460'
+  FullSize: '0xc70'
   InheritedSize: '0x810'
   Super: AICreatureCharacter
 PetDitherComponent:

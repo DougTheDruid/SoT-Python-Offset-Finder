@@ -58,7 +58,11 @@ TaleNote:
     Offset: '0x8d0'
     Size: '0x8'
     Type: Class InventoryItemComponent*
-  ClassSize: '0x220'
-  FullSize: '0x9a0'
+  - Name: ZoomInOnWieldableComponent
+    Offset: '0x8d8'
+    Size: '0x8'
+    Type: Class ZoomInOnWieldableItemComponent*
+  ClassSize: '0x230'
+  FullSize: '0x9b0'
   InheritedSize: '0x780'
   Super: SkeletalMeshWieldableItem

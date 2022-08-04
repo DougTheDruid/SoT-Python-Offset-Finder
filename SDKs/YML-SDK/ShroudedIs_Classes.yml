@@ -87,6 +87,6 @@ ShroudedIslands_BellesBuoy_C:
 ShroudedIslands_LarinnaDialogTempEntitlement_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
+  FullSize: '0xc8'
+  InheritedSize: '0xc8'
   Super: EntitlementDesc

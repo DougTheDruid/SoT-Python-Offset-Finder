@@ -16,3 +16,9 @@ SeasonProgressionExclusionInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+SeasonSettings:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings

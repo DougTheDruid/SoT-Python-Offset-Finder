@@ -6,20 +6,10 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50
-class BP_VotableTaleProposal_Vertical_C: public VotableObjectView
+// Size -0x7ccccccd
+class BP_VotableTaleProposal_Vertical_C: public /Game/Animation/NPC/shipwright/npc_shipwright_idleinactive2_to_
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x4e0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4e8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4f0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4f8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x500(0x8)
-	TArray<class None*>                                          None;                                              // 0x508(0x10)
-	Class StaticMesh*                                            None;                                              // 0x518(0x8)
-	int                                                          None;                                              // 0x520(0x4)
-	float                                                        None;                                              // 0x524(0x4)
-	Class MaterialInterface*                                     None;                                              // 0x528(0x8)
 };
 
 

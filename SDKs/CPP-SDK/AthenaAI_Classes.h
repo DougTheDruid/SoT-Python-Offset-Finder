@@ -30,7 +30,7 @@ public:
 };
 
 
-// Size 0x408
+// Size 0x410
 class AISpawner: public DataAsset
 {
 public:
@@ -49,22 +49,23 @@ public:
 	TArray<Struct ConditionalAISpawnOverride>                    SpawnOverrides;                                    // 0xd0(0x10)
 	TArray<Struct AdditionalSpawnerBehaviour>                    AdditionalBehaviours;                              // 0xe0(0x10)
 	bool                                                         EnforceHomePosition;                               // 0xf0(0x1)
-	Class AthenaAISettings*                                      AthenaAISettings;                                  // 0x368(0x8)
+	Class AthenaAISettings*                                      AthenaAISettings;                                  // 0x370(0x8)
 };
 
 
-// Size 0x138
+// Size 0x140
 class AIPerCrewSpawner: public AISpawner
 {
 public:
-	Class AIWeightedProbabilityRangeOfRangesRankProgression*     DefaultRespawnTimerRanges;                         // 0x430(0x8)
-	int                                                          MaxNumOfCrewsToSpawnFor;                           // 0x438(0x4)
-	bool                                                         ActivateBySettingFootOnIsland;                     // 0x43c(0x1)
-	bool                                                         UseRespawnTimerForFirstSpawn;                      // 0x43d(0x1)
-	bool                                                         AssociateSpawnsWithSpecificCrews;                  // 0x43e(0x1)
-	bool                                                         PerceiveTriggerActorOnSpawn;                       // 0x43f(0x1)
-	bool                                                         EnforceRespawnTimeAfterCrewLeaves;                 // 0x440(0x1)
-	bool                                                         IgnoreSpawningGracePeriodForNewCrew;               // 0x441(0x1)
+	Class AIWeightedProbabilityRangeOfRangesRankProgression*     DefaultRespawnTimerRanges;                         // 0x438(0x8)
+	int                                                          MaxNumOfCrewsToSpawnFor;                           // 0x440(0x4)
+	bool                                                         ActivateBySettingFootOnIsland;                     // 0x444(0x1)
+	bool                                                         UseRespawnTimerForFirstSpawn;                      // 0x445(0x1)
+	bool                                                         AssociateSpawnsWithSpecificCrews;                  // 0x446(0x1)
+	bool                                                         PerceiveTriggerActorOnSpawn;                       // 0x447(0x1)
+	bool                                                         EnforceRespawnTimeAfterCrewLeaves;                 // 0x448(0x1)
+	bool                                                         IgnoreSpawningGracePeriodForNewCrew;               // 0x449(0x1)
+	Class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*  StoryOverrideRespawnSettingsAsset;                 // 0x450(0x8)
 };
 
 
@@ -112,9 +113,9 @@ public:
 class AIWaveSpawner: public AISpawner
 {
 public:
-	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x438(0x100)
-	float                                                        MinRespawnTime;                                    // 0x538(0x4)
-	float                                                        MaxRespawnTime;                                    // 0x53c(0x4)
+	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x440(0x100)
+	float                                                        MinRespawnTime;                                    // 0x540(0x4)
+	float                                                        MaxRespawnTime;                                    // 0x544(0x4)
 };
 
 
@@ -303,7 +304,7 @@ public:
 	Class RewindComponent*                                       RewindComponent;                                   // 0x688(0x8)
 	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x690(0x8)
 	Class AICreatureCharacterMovementComponent*                  AICreatureCharacterMovementComponent;              // 0x798(0x8)
-	class                                                        CurrentAIStrategy;                                 // 0x7a0(0x8)
+	class                                                        CurrentAIStrategy;                                 // 0x808(0x8)
 };
 
 
@@ -389,19 +390,19 @@ public:
 class AIBountySpawner: public AISpawner
 {
 public:
-	float                                                        MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup;  // 0x430(0x4)
-	TArray<Struct AIBountySpawnerWaveGroup>                      WaveGroups;                                        // 0x438(0x10)
-	Struct StringAssetReference                                  TeamColor;                                         // 0x448(0x10)
-	Struct WeightedProbabilityRange                              WavesPerRelocate;                                  // 0x458(0x20)
-	Struct WeightedProbabilityRange                              WaveSplitChance;                                   // 0x478(0x20)
-	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0x498(0x10)
-	float                                                        WaveSuicideMinDist;                                // 0x4a8(0x4)
-	bool                                                         ImmediatelyPerceiveTargets;                        // 0x4ac(0x1)
-	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4b0(0x8)
-	TArray<class CrewMembers*>                                   CrewMembers;                                       // 0x4e0(0x10)
-	TArray<class NonCrewMembersInRegion*>                        NonCrewMembersInRegion;                            // 0x4f0(0x10)
-	TArray<class AllParticipatingPlayers*>                       AllParticipatingPlayers;                           // 0x500(0x10)
-	Class OverlapTriggerComponent*                               AudioZoneTriggerComponent;                         // 0x510(0x8)
+	float                                                        MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup;  // 0x438(0x4)
+	TArray<Struct AIBountySpawnerWaveGroup>                      WaveGroups;                                        // 0x440(0x10)
+	Struct StringAssetReference                                  TeamColor;                                         // 0x450(0x10)
+	Struct WeightedProbabilityRange                              WavesPerRelocate;                                  // 0x460(0x20)
+	Struct WeightedProbabilityRange                              WaveSplitChance;                                   // 0x480(0x20)
+	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0x4a0(0x10)
+	float                                                        WaveSuicideMinDist;                                // 0x4b0(0x4)
+	bool                                                         ImmediatelyPerceiveTargets;                        // 0x4b4(0x1)
+	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4b8(0x8)
+	TArray<class CrewMembers*>                                   CrewMembers;                                       // 0x4e8(0x10)
+	TArray<class NonCrewMembersInRegion*>                        NonCrewMembersInRegion;                            // 0x4f8(0x10)
+	TArray<class AllParticipatingPlayers*>                       AllParticipatingPlayers;                           // 0x508(0x10)
+	Class OverlapTriggerComponent*                               AudioZoneTriggerComponent;                         // 0x518(0x8)
 };
 
 
@@ -424,9 +425,9 @@ public:
 class AIFaunaSpawner: public AISpawner
 {
 public:
-	Struct AIFaunaSpawnerWave                                    FaunaWave;                                         // 0x430(0x110)
-	Class Actor*                                                 FaunaLeader;                                       // 0x550(0x8)
-	TArray<class PlayersInSpawnArea*>                            PlayersInSpawnArea;                                // 0x568(0x10)
+	Struct AIFaunaSpawnerWave                                    FaunaWave;                                         // 0x438(0x110)
+	Class Actor*                                                 FaunaLeader;                                       // 0x558(0x8)
+	TArray<class PlayersInSpawnArea*>                            PlayersInSpawnArea;                                // 0x570(0x10)
 };
 
 
@@ -589,13 +590,14 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x30
 class AIDebugSpawnActor: public Actor
 {
 public:
 	Struct AthenaAIDebugCostDisplay                              DebugCostDisplay;                                  // 0x3c8(0x1)
 	TArray<Struct AIDebugSpawnConfiguration>                     SpawnConfigList;                                   // 0x3d0(0x10)
-	TArray<class SpawnedAIList*>                                 SpawnedAIList;                                     // 0x3e0(0x10)
+	int                                                          Seed;                                              // 0x3e0(0x4)
+	TArray<class SpawnedAIList*>                                 SpawnedAIList;                                     // 0x3e8(0x10)
 };
 
 
@@ -714,73 +716,73 @@ public:
 };
 
 
-// Size 0x450
+// Size 0x460
 class Pet: public AICreatureCharacter
 {
 public:
-	Class PetWieldableReactMappingsDataAsset*                    WieldableReactMappingsAsset;                       // 0x8a8(0x8)
-	float                                                        MaxVelocityForLocomotionAnimation;                 // 0x8b0(0x4)
-	bool                                                         CanFly;                                            // 0x8b4(0x1)
-	TArray<Struct PetFlyingStrategyProperties>                   FlyingStrategyProperties;                          // 0x8b8(0x10)
-	float                                                        FlyingLandTime;                                    // 0x8c8(0x4)
-	Class CurveFloat*                                            FlyingLandCurve;                                   // 0x8d0(0x8)
-	float                                                        FlyingTakeOffTime;                                 // 0x8d8(0x4)
-	Class CurveFloat*                                            FlyingTakeOffCurve;                                // 0x8e0(0x8)
-	Struct FloatRange                                            MidFlightAdjustmentTimerRange;                     // 0x8e8(0x10)
-	Class CurveFloat*                                            MidFlightAdjustmentCurve;                          // 0x8f8(0x8)
-	Class CurveFloat*                                            MidFlightTimeToDistanceAdjustmentCurve;            // 0x900(0x8)
-	struct FName                                                 FiredFromActorCollision;                           // 0x908(0x8)
-	Class WwiseEvent*                                            FiredFromActorSFX;                                 // 0x910(0x8)
-	Class PetDitherComponent*                                    DitherComponent;                                   // 0x918(0x8)
-	float                                                        MinimumDamageForHealthReact;                       // 0x920(0x4)
-	float                                                        MaxDistForWaterBucketToClean;                      // 0x924(0x4)
-	float                                                        MinimumDurationUntilPetCanDespawnConcealed;        // 0x928(0x4)
-	float                                                        DefaultNamePlateHeight;                            // 0x92c(0x4)
-	float                                                        AlternateNamePlateHeight;                          // 0x930(0x4)
-	TArray<Byte StatesToUseAlternateNamePlatePos>                StatesToUseAlternateNamePlatePos;                  // 0x938(0x10)
-	Struct FloatRange                                            PetTimeSpentSad;                                   // 0x948(0x10)
-	byte                                                         DebugStateDescriptor;                              // 0x958(0x1)
-	Class AINameplateComponent*                                  AINameplateComponent;                              // 0x960(0x8)
-	Class FeedingComponent*                                      FeedingComponent;                                  // 0x968(0x8)
-	Class StarvingComponent*                                     StarvingComponent;                                 // 0x970(0x8)
-	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x978(0x8)
-	Class CannonSquashComponent*                                 CannonSquashComponent;                             // 0x980(0x8)
-	Struct PetMovementRequest                                    ReplicatedMovementRequest;                         // 0x988(0xc)
-	float                                                        TargetMeshRoll;                                    // 0x994(0x4)
-	float                                                        DefaultShipTurnRateModifier;                       // 0x9a8(0x4)
-	TArray<Struct PetTurnRateModifier>                           TurnRateModifierList;                              // 0x9b0(0x10)
-	TArray<Byte LocomotingMovementStates>                        LocomotingMovementStates;                          // 0x9c0(0x10)
-	TArray<Byte RequestIdleOrMovementValidMovementStates>        RequestIdleOrMovementValidMovementStates;          // 0x9d0(0x10)
-	float                                                        MaxRollAngle;                                      // 0x9e0(0x4)
-	float                                                        DelayForDisablingMovementOnIdle;                   // 0x9e4(0x4)
-	float                                                        IslandDustRatePerSecond;                           // 0x9e8(0x4)
-	Struct Guid                                                  CrewId;                                            // 0x9ec(0x10)
-	bool                                                         InHangout;                                         // 0x9fc(0x1)
-	bool                                                         PerchedInHangout;                                  // 0x9fd(0x1)
-	bool                                                         ResetRollAndZOffset;                               // 0x9fe(0x1)
-	bool                                                         ShouldIgnoreTooltipDisplayOffset;                  // 0x9ff(0x1)
-	Struct PetTurnToFaceData                                     PetTurnToFaceData;                                 // 0xa00(0x20)
-	float                                                        MaximumSubmergedWaterDepthBeforeDespawn;           // 0xa20(0x4)
-	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0xa48(0x8)
-	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0xa50(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0xa58(0x8)
-	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0xa60(0x8)
-	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0xa68(0x8)
-	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0xa70(0x8)
-	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0xa78(0x8)
-	Class Actor*                                                 SpawnedForShip;                                    // 0xa80(0x8)
-	Class Actor*                                                 PetOwner;                                          // 0xa88(0x8)
-	Class ItemInfo*                                              PetInfo;                                           // 0xa90(0x8)
-	Struct Docker                                                Docker;                                            // 0xaa0(0x50)
-	Struct StartPickupObjectActionRuleParams                     StartPickupObjectActionRuleParams;                 // 0xaf0(0x10)
-	Class ParticleSystemComponent*                               CurrentlyPlayingParticleSystem;                    // 0xb10(0x8)
-	class                                                        LandingStrategy;                                   // 0xb18(0x8)
-	class                                                        PursuitStrategy;                                   // 0xb20(0x8)
-	float                                                        DefaultRollLerpTime;                               // 0xb28(0x4)
-	float                                                        LandingRollLerpTime;                               // 0xb2c(0x4)
-	bool                                                         IsBeingDismissed;                                  // 0xb30(0x1)
-	bool                                                         IsInDisabledPetPerchHangout;                       // 0xc1c(0x1)
-	bool                                                         PetIsSad;                                          // 0xc1d(0x1)
+	Class PetWieldableReactMappingsDataAsset*                    WieldableReactMappingsAsset;                       // 0x8b0(0x8)
+	float                                                        MaxVelocityForLocomotionAnimation;                 // 0x8b8(0x4)
+	bool                                                         CanFly;                                            // 0x8bc(0x1)
+	TArray<Struct PetFlyingStrategyProperties>                   FlyingStrategyProperties;                          // 0x8c0(0x10)
+	float                                                        FlyingLandTime;                                    // 0x8d0(0x4)
+	Class CurveFloat*                                            FlyingLandCurve;                                   // 0x8d8(0x8)
+	float                                                        FlyingTakeOffTime;                                 // 0x8e0(0x4)
+	Class CurveFloat*                                            FlyingTakeOffCurve;                                // 0x8e8(0x8)
+	Struct FloatRange                                            MidFlightAdjustmentTimerRange;                     // 0x8f0(0x10)
+	Class CurveFloat*                                            MidFlightAdjustmentCurve;                          // 0x900(0x8)
+	Class CurveFloat*                                            MidFlightTimeToDistanceAdjustmentCurve;            // 0x908(0x8)
+	struct FName                                                 FiredFromActorCollision;                           // 0x910(0x8)
+	Class WwiseEvent*                                            FiredFromActorSFX;                                 // 0x918(0x8)
+	Class PetDitherComponent*                                    DitherComponent;                                   // 0x920(0x8)
+	float                                                        MinimumDamageForHealthReact;                       // 0x928(0x4)
+	float                                                        MaxDistForWaterBucketToClean;                      // 0x92c(0x4)
+	float                                                        MinimumDurationUntilPetCanDespawnConcealed;        // 0x930(0x4)
+	float                                                        DefaultNamePlateHeight;                            // 0x934(0x4)
+	float                                                        AlternateNamePlateHeight;                          // 0x938(0x4)
+	TArray<Byte StatesToUseAlternateNamePlatePos>                StatesToUseAlternateNamePlatePos;                  // 0x940(0x10)
+	Struct FloatRange                                            PetTimeSpentSad;                                   // 0x950(0x10)
+	byte                                                         DebugStateDescriptor;                              // 0x960(0x1)
+	Class AINameplateComponent*                                  AINameplateComponent;                              // 0x968(0x8)
+	Class FeedingComponent*                                      FeedingComponent;                                  // 0x970(0x8)
+	Class StarvingComponent*                                     StarvingComponent;                                 // 0x978(0x8)
+	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x980(0x8)
+	Class CannonSquashComponent*                                 CannonSquashComponent;                             // 0x988(0x8)
+	Struct PetMovementRequest                                    ReplicatedMovementRequest;                         // 0x990(0xc)
+	float                                                        TargetMeshRoll;                                    // 0x99c(0x4)
+	float                                                        DefaultShipTurnRateModifier;                       // 0x9b0(0x4)
+	TArray<Struct PetTurnRateModifier>                           TurnRateModifierList;                              // 0x9b8(0x10)
+	TArray<Byte LocomotingMovementStates>                        LocomotingMovementStates;                          // 0x9c8(0x10)
+	TArray<Byte RequestIdleOrMovementValidMovementStates>        RequestIdleOrMovementValidMovementStates;          // 0x9d8(0x10)
+	float                                                        MaxRollAngle;                                      // 0x9e8(0x4)
+	float                                                        DelayForDisablingMovementOnIdle;                   // 0x9ec(0x4)
+	float                                                        IslandDustRatePerSecond;                           // 0x9f0(0x4)
+	Struct Guid                                                  CrewId;                                            // 0x9f4(0x10)
+	bool                                                         InHangout;                                         // 0xa04(0x1)
+	bool                                                         PerchedInHangout;                                  // 0xa05(0x1)
+	bool                                                         ResetRollAndZOffset;                               // 0xa06(0x1)
+	bool                                                         ShouldIgnoreTooltipDisplayOffset;                  // 0xa07(0x1)
+	Struct PetTurnToFaceData                                     PetTurnToFaceData;                                 // 0xa10(0x20)
+	float                                                        MaximumSubmergedWaterDepthBeforeDespawn;           // 0xa30(0x4)
+	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0xa58(0x8)
+	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0xa60(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0xa68(0x8)
+	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0xa70(0x8)
+	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0xa78(0x8)
+	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0xa80(0x8)
+	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0xa88(0x8)
+	Class Actor*                                                 SpawnedForShip;                                    // 0xa90(0x8)
+	Class Actor*                                                 PetOwner;                                          // 0xa98(0x8)
+	Class ItemInfo*                                              PetInfo;                                           // 0xaa0(0x8)
+	Struct Docker                                                Docker;                                            // 0xab0(0x50)
+	Struct StartPickupObjectActionRuleParams                     StartPickupObjectActionRuleParams;                 // 0xb00(0x10)
+	Class ParticleSystemComponent*                               CurrentlyPlayingParticleSystem;                    // 0xb20(0x8)
+	class                                                        LandingStrategy;                                   // 0xb28(0x8)
+	class                                                        PursuitStrategy;                                   // 0xb30(0x8)
+	float                                                        DefaultRollLerpTime;                               // 0xb38(0x4)
+	float                                                        LandingRollLerpTime;                               // 0xb3c(0x4)
+	bool                                                         IsBeingDismissed;                                  // 0xb40(0x1)
+	bool                                                         IsInDisabledPetPerchHangout;                       // 0xc2c(0x1)
+	bool                                                         PetIsSad;                                          // 0xc2d(0x1)
 };
 
 
@@ -1788,7 +1790,7 @@ public:
 };
 
 
-// Size 0xa0
+// Size 0xa8
 class AthenaAISettings: public DeveloperSettings
 {
 public:
@@ -1819,6 +1821,7 @@ public:
 	Struct StringAssetReference                                  AIEncounterServiceAssetClassFileLocation;          // 0xb0(0x10)
 	Struct StringAssetReference                                  AIEncounterGenerationServiceAssetClassFileLocation; // 0xc0(0x10)
 	struct FName                                                 AICharacterWaterInteractionCollisionProfileName;   // 0xd0(0x8)
+	float                                                        AICountTelemetryEventFrequency;                    // 0xd8(0x4)
 };
 
 
@@ -1928,6 +1931,23 @@ public:
 };
 
 
+// Size 0x10
+class AIPerCrewSpawnerSettingsStoryOverrideAsset: public DataAsset
+{
+public:
+	TArray<Struct AIPerCrewSpawnerStoryBasedRespawnSettings>     StoryOverrides;                                    // 0x28(0x10)
+};
+
+
+// Size 0x20
+class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset: public DataAsset
+{
+public:
+	TArray<class StoryOverrideAssetList*>                        StoryOverrideAssetList;                            // 0x28(0x10)
+	TArray<class StoryoverrideAssetCollectionList*>              StoryoverrideAssetCollectionList;                  // 0x38(0x10)
+};
+
+
 // Size 0x1e0
 class AIProximityPlayerTracker: public AISpawnerPlayerTracker
 {
@@ -2015,8 +2035,8 @@ public:
 class AIFixedWavesSpawner: public AISpawner
 {
 public:
-	TArray<Struct AIPersistentSpawnerWave>                       SpawnedWaves;                                      // 0x430(0x10)
-	int                                                          NumWavesToSpawnOnSpottedNewTarget;                 // 0x440(0x4)
+	TArray<Struct AIPersistentSpawnerWave>                       SpawnedWaves;                                      // 0x438(0x10)
+	int                                                          NumWavesToSpawnOnSpottedNewTarget;                 // 0x448(0x4)
 };
 
 
@@ -2024,7 +2044,7 @@ public:
 class AIIncrementalWaveSpawner: public AISpawner
 {
 public:
-	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x430(0x100)
+	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x438(0x100)
 };
 
 
@@ -2032,17 +2052,17 @@ public:
 class AIInteractableSpawner: public AISpawner
 {
 public:
-	class                                                        AIInteractableType;                                // 0x430(0x8)
-	float                                                        InhabitedChance;                                   // 0x438(0x4)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulInhabitedCheck;                // 0x440(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedInhabitedCheck;                    // 0x470(0x30)
-	float                                                        SpawnForInteractableChance;                        // 0x4a0(0x4)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulSpawnOnInteractableCheck;      // 0x4a8(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedSpawnOnInteractableCheck;          // 0x4d8(0x30)
-	bool                                                         RunInhabitedSimulation;                            // 0x508(0x1)
-	bool                                                         RunSpawnForInteractableSimulation;                 // 0x509(0x1)
-	int                                                          NumIterations;                                     // 0x50c(0x4)
-	byte                                                         CachedPlaymode;                                    // 0x528(0x1)
+	class                                                        AIInteractableType;                                // 0x438(0x8)
+	float                                                        InhabitedChance;                                   // 0x440(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulInhabitedCheck;                // 0x448(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedInhabitedCheck;                    // 0x478(0x30)
+	float                                                        SpawnForInteractableChance;                        // 0x4a8(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulSpawnOnInteractableCheck;      // 0x4b0(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedSpawnOnInteractableCheck;          // 0x4e0(0x30)
+	bool                                                         RunInhabitedSimulation;                            // 0x510(0x1)
+	bool                                                         RunSpawnForInteractableSimulation;                 // 0x511(0x1)
+	int                                                          NumIterations;                                     // 0x514(0x4)
+	byte                                                         CachedPlaymode;                                    // 0x530(0x1)
 };
 
 
@@ -2057,16 +2077,16 @@ public:
 class AIPerPlayerSpawner: public AISpawner
 {
 public:
-	bool                                                         CheckSpawnedActorsInRadiusBeforeSpawning;          // 0x430(0x1)
-	float                                                        RadiusToCheckForExistingPopulation;                // 0x434(0x4)
-	int                                                          MaxExistingPopulationInRadius;                     // 0x438(0x4)
-	bool                                                         DespawnAllPawnsWhenAllPlayersLeave;                // 0x43c(0x1)
-	int                                                          MaxActorsTotalPerPlayer;                           // 0x440(0x4)
-	bool                                                         RunSimulation;                                     // 0x444(0x1)
-	int                                                          RankForSimulation;                                 // 0x448(0x4)
-	int                                                          NumIterations;                                     // 0x44c(0x4)
-	bool                                                         WantsToTemporarilyRememberPlayers;                 // 0x450(0x1)
-	Struct WeightedProbabilityRangeOfRanges                      TemporaryPlayerMemoryTimeRange;                    // 0x458(0x30)
+	bool                                                         CheckSpawnedActorsInRadiusBeforeSpawning;          // 0x438(0x1)
+	float                                                        RadiusToCheckForExistingPopulation;                // 0x43c(0x4)
+	int                                                          MaxExistingPopulationInRadius;                     // 0x440(0x4)
+	bool                                                         DespawnAllPawnsWhenAllPlayersLeave;                // 0x444(0x1)
+	int                                                          MaxActorsTotalPerPlayer;                           // 0x448(0x4)
+	bool                                                         RunSimulation;                                     // 0x44c(0x1)
+	int                                                          RankForSimulation;                                 // 0x450(0x4)
+	int                                                          NumIterations;                                     // 0x454(0x4)
+	bool                                                         WantsToTemporarilyRememberPlayers;                 // 0x458(0x1)
+	Struct WeightedProbabilityRangeOfRanges                      TemporaryPlayerMemoryTimeRange;                    // 0x460(0x30)
 };
 
 
@@ -2092,12 +2112,12 @@ public:
 class AIBoobyTrapSpawner: public AIPerPlayerSpawner
 {
 public:
-	int                                                          NumberOfWavesToSpawn;                              // 0x618(0x4)
-	Class WwiseEvent*                                            NewWaveSpawnSfx;                                   // 0x620(0x8)
-	float                                                        NewWaveSpawnSfxTriggerRadius;                      // 0x628(0x4)
-	TArray<Class ShowNameplatesFor>                              ShowNameplatesFor;                                 // 0x630(0x10)
-	Class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x640(0x8)
-	Class Actor*                                                 ActorToTrack;                                      // 0x648(0x8)
+	int                                                          NumberOfWavesToSpawn;                              // 0x620(0x4)
+	Class WwiseEvent*                                            NewWaveSpawnSfx;                                   // 0x628(0x8)
+	float                                                        NewWaveSpawnSfxTriggerRadius;                      // 0x630(0x4)
+	TArray<Class ShowNameplatesFor>                              ShowNameplatesFor;                                 // 0x638(0x10)
+	Class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x648(0x8)
+	Class Actor*                                                 ActorToTrack;                                      // 0x650(0x8)
 };
 
 
@@ -2105,9 +2125,9 @@ public:
 class AIProgressiveWavesSpawner: public AISpawner
 {
 public:
-	bool                                                         ApplyLocalisableNamesToNameplates;                 // 0x430(0x1)
-	TArray<Struct AIPersistentSpawnerWave>                       Waves;                                             // 0x438(0x10)
-	Class Actor*                                                 TriggerActor;                                      // 0x460(0x8)
+	bool                                                         ApplyLocalisableNamesToNameplates;                 // 0x438(0x1)
+	TArray<Struct AIPersistentSpawnerWave>                       Waves;                                             // 0x440(0x10)
+	Class Actor*                                                 TriggerActor;                                      // 0x468(0x8)
 };
 
 
@@ -2122,7 +2142,7 @@ public:
 class AIEscalatingWaveSpawner: public AIWaveSpawner
 {
 public:
-	TArray<Struct EscalatingWave>                                EscalatingWaves;                                   // 0x568(0x10)
+	TArray<Struct EscalatingWave>                                EscalatingWaves;                                   // 0x570(0x10)
 };
 
 
@@ -2188,12 +2208,11 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x20
 class AISpawnStoryCondition: public AISpawnOverrideCondition
 {
 public:
-	TArray<Struct FName>                                         StoryNames;                                        // 0x30(0x10)
-	bool                                                         RequiresAllStories;                                // 0x40(0x1)
+	Struct StoryFlag                                             StoryFlag;                                         // 0x30(0x8)
 };
 
 

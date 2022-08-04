@@ -2,45 +2,53 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_QuestTable_C:
   Attributes:
+  - Name: WarMap
+    Offset: '0x868'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: FactionHourglass
+    Offset: '0x870'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   - Name: CancelAdventure
-    Offset: '0x7f8'
+    Offset: '0x878'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: PlayerBuiredItemsMapBundleInteractionPoint
-    Offset: '0x800'
+    Offset: '0x880'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CancelTale
-    Offset: '0x808'
+    Offset: '0x888'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CancelVoyage
-    Offset: '0x810'
+    Offset: '0x890'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot4
-    Offset: '0x818'
+    Offset: '0x898'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot3
-    Offset: '0x820'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot2
-    Offset: '0x828'
+    Offset: '0x8a8'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoyageSelectionSlot1
-    Offset: '0x830'
+    Offset: '0x8b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  ClassSize: '0x40'
-  FullSize: '0x838'
-  InheritedSize: '0x7f8'
+  ClassSize: '0x50'
+  FullSize: '0x8b8'
+  InheritedSize: '0x868'
   Super: VoyageTable
 BP_SmallShip_QuestTable_ShipPartMMC_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x838'
-  InheritedSize: '0x838'
+  FullSize: '0x8b8'
+  InheritedSize: '0x8b8'
   Super: BP_SmallShip_QuestTable_C

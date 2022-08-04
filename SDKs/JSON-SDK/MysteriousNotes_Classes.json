@@ -15,8 +15,8 @@
   },
   "MysteriousNoteDesc": {
     "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -35,19 +35,19 @@
     ]
   },
   "TrinketNudgeProgress": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "Pivot",
+        "Name": "TrinketRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x0"
+        "Offset": "0x8"
       },
       {
         "Name": "Curve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x18"
+        "Offset": "0x20"
       }
     ]
   },

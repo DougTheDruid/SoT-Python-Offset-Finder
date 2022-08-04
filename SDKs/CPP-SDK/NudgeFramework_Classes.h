@@ -28,11 +28,12 @@ public:
 };
 
 
-// Size 0x98
+// Size 0xa0
 class NudgePolicy: public Object
 {
 public:
 	Class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
+	Class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
 };
 
 

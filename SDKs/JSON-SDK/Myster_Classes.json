@@ -1,4 +1,11 @@
 {
+  "Mystery1_WKD_Phase3_OverrideType_C": {
+    "Super": "NPCDialogOverrideType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "Mystery1_WKD_Phase2_1_OverrideType_C": {
     "Super": "NPCDialogOverrideType",
     "FullSize": "0x28",

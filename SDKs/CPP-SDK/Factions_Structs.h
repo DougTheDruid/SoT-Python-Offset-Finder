@@ -6,41 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
+// Size 0x18
 struct CrewFactionEntry
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	class                                                        Faction;                                           // 0x10(0x8)
-	int                                                          Streak;                                            // 0x18(0x4)
-	int                                                          SandsOfFate;                                       // 0x1c(0x4)
-};
-
-
-// Size 0x20
-struct CrewsSunkShipEvent
-{
-public:
-	TArray<Struct Guid>                                          AttackingCrewIds;                                  // 0x0(0x10)
-	Struct Guid                                                  SunkShipCrewId;                                    // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct CrewLeftFaction
-{
-public:
-	Struct Guid                                                  LeavingCrewId;                                     // 0x0(0x10)
-	class                                                        FactionLeft;                                       // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct CrewJoinedFaction
-{
-public:
-	Struct Guid                                                  JoiningCrewId;                                     // 0x0(0x10)
-	class                                                        FactionJoined;                                     // 0x10(0x8)
 };
 
 
@@ -51,6 +22,15 @@ public:
 	int                                                          SinkingCrewStreak;                                 // 0x0(0x4)
 	int                                                          SunkCrewStreak;                                    // 0x4(0x4)
 	int                                                          SandsOfFateReward;                                 // 0x8(0x4)
+};
+
+
+// Size 0x8
+struct FactionStreakLevelData
+{
+public:
+	int                                                          StreakLevel;                                       // 0x0(0x4)
+	int                                                          StreakCountThreshold;                              // 0x4(0x4)
 };
 
 
@@ -70,6 +50,36 @@ public:
 };
 
 
+// Size 0x88
+struct CinematicFactionEvent
+{
+public:
+	class                                                        Company;                                           // 0x0(0x8)
+	Struct CinematicQuestEvent                                   CinematicData;                                     // 0x8(0x80)
+};
+
+
+// Size 0x20
+struct FactionRequest
+{
+public:
+	class                                                        Faction;                                           // 0x0(0x8)
+};
+
+
+// Size 0xa0
+struct FactionDisplayInfo
+{
+public:
+	class                                                        Faction;                                           // 0x0(0x8)
+	Struct FText                                                 Title;                                             // 0x8(0x38)
+	Struct FText                                                 Description;                                       // 0x40(0x38)
+	Struct Vector2D                                              CardOffset;                                        // 0x78(0x8)
+	Struct StringAssetReference                                  KeyArt;                                            // 0x80(0x10)
+	Struct StringAssetReference                                  Icon;                                              // 0x90(0x10)
+};
+
+
 // Size 0x30
 struct FigureheadFactionVFXParams
 {
@@ -81,6 +91,25 @@ public:
 	bool                                                         AutoDestroy;                                       // 0x28(0x1)
 	bool                                                         OwnerOnlySee;                                      // 0x29(0x1)
 	bool                                                         OwnerNoSee;                                        // 0x2a(0x1)
+};
+
+
+// Size 0x1c
+struct FactionLeftTelemetryEvent
+{
+public:
+	Struct Guid                                                  FactionSessionId;                                  // 0x0(0x10)
+	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
+	byte                                                         LeftReason;                                        // 0x18(0x1)
+};
+
+
+// Size 0x18
+struct FactionJoinedTelemetryEvent
+{
+public:
+	Struct Guid                                                  FactionSessionId;                                  // 0x0(0x10)
+	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
 };
 
 

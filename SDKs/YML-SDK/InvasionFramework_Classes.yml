@@ -13,15 +13,15 @@ InvasionService:
     Size: '0x8'
     Type: Class InvasionServiceDataAsset*
   - Name: MatchmakingCrews
-    Offset: '0x480'
+    Offset: '0x4a8'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: InvadingCrews
-    Offset: '0x490'
+    Offset: '0x4b8'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
-  ClassSize: '0xd8'
-  FullSize: '0x4a0'
+  ClassSize: '0x100'
+  FullSize: '0x4c8'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionServiceDataAsset:
@@ -60,16 +60,52 @@ InvasionServiceInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
-TaleQuestInvasionService:
-  Attributes: []
-  ClassSize: '0x38'
+TaleQuestInvasionMatchmakingService:
+  Attributes:
+  - Name: ServiceDesc
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class TaleQuestInvasionMatchmakingServiceDesc*
+  ClassSize: '0xb0'
+  FullSize: '0x110'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+TaleQuestInvasionMatchmakingServiceDesc:
+  Attributes:
+  - Name: OnCrewLeftServerMessage
+    Offset: '0x28'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnCrewLeftFightMessage
+    Offset: '0x60'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x70'
   FullSize: '0x98'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
+TaleQuestInvasionService:
+  Attributes:
+  - Name: ServiceDesc
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class TaleQuestInvasionServiceDesc*
+  ClassSize: '0xd0'
+  FullSize: '0x130'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestInvasionServiceDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
+  Attributes:
+  - Name: OnCrewLeftServerMessage
+    Offset: '0x28'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnCrewLeftFightMessage
+    Offset: '0x60'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x70'
+  FullSize: '0x98'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
 WaitForShipToBeDefeatedStep:

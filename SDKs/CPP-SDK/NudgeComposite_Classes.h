@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class NudgeFromExplosionsPolicy: public NudgePolicy
 {
 public:
-	TArray<Struct NudgeChancePerDamagerType>                     AcceptedDamagerTypes;                              // 0xc0(0x10)
+	TArray<Struct NudgeChancePerDamagerType>                     AcceptedDamagerTypes;                              // 0xc8(0x10)
 };
 
 
@@ -18,8 +18,8 @@ public:
 class NudgeFromShipCollisionPolicy: public NudgePolicy
 {
 public:
-	int                                                          DamageAmountRequiredToNudge;                       // 0xc0(0x4)
-	float                                                        ChanceOfNudge;                                     // 0xc4(0x4)
+	int                                                          DamageAmountRequiredToNudge;                       // 0xc8(0x4)
+	float                                                        ChanceOfNudge;                                     // 0xcc(0x4)
 };
 
 
@@ -27,8 +27,8 @@ public:
 class NudgeFromStormPolicy: public NudgePolicy
 {
 public:
-	float                                                        ChanceOfNudge;                                     // 0xc0(0x4)
-	Struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xc8(0x30)
+	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xd0(0x30)
 };
 
 
@@ -36,8 +36,8 @@ public:
 class NudgeFromWaterLevelPolicy: public NudgePolicy
 {
 public:
-	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xc0(0x4)
-	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xc4(0x4)
+	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xc8(0x4)
+	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xcc(0x4)
 };
 
 

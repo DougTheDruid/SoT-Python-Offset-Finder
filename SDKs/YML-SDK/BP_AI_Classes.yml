@@ -3,12 +3,12 @@
 BP_AI_Graymarrow_wpn_blunderbuss_skl_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 BP_AI_firerock_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemWithoutIconsDesc

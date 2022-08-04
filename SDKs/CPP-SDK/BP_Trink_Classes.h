@@ -7,6 +7,24 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
+class BP_Trinket_Anvil_01_d_C: public BP_Trinket_StandingSmall_C
+{
+public:
+	Class StaticMeshComponent*                                   cap_plinth_01_d;                                   // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   cap_desk_model_blk_01_a;                           // 0x400(0x8)
+};
+
+
+// Size 0x10
+class BP_Trinket_RubySplashtailPlaque_01_d_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x400(0x8)
+};
+
+
+// Size 0x10
 class BP_Trinket_Orb_01_b_C: public BP_Trinket_StandingSmall_C
 {
 public:
@@ -48,6 +66,15 @@ class BP_Trinket_AncientTerror_01_a_C: public BP_Trinket_StandingSmall_C
 public:
 	Class StaticMeshComponent*                                   cap_desk_model_wth_01_a;                           // 0x3f8(0x8)
 	Class StaticMeshComponent*                                   cap_plinth_01_a;                                   // 0x400(0x8)
+};
+
+
+// Size 0x10
+class BP_Trinket_CloudyPlentifinPlaque_01_d_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x400(0x8)
 };
 
 

@@ -14,12 +14,6 @@ public:
 	Class WwiseEmitterComponent*                                 None;                                              // 0x3d0(0x8)
 	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
 	TArray<class None*>                                          None;                                              // 0x3e0(0x10)
-	struct FName                                                 None;                                              // 0x3f0(0x8)
-	TArray<class None*>                                          None;                                              // 0x3f8(0x10)
-	bool                                                         None;                                              // 0x408(0x1)
-	TArray<class None*>                                          None;                                              // 0x410(0x10)
-	float                                                        None;                                              // 0x420(0x4)
-	float                                                        None;                                              // 0x424(0x4)
 };
 
 

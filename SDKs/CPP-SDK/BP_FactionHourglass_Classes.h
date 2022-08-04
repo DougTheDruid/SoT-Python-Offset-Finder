@@ -7,25 +7,25 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x80
-class BP_FactionHourglass_C: public EmissaryVoteInteractionActor
+class BP_FactionHourglass_C: public FactionVoteInteractionActor
 {
 public:
-	Class StaticMeshComponent*                                   VoteIndicator8;                                    // 0x5e0(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator7;                                    // 0x5e8(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator6;                                    // 0x5f0(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator5;                                    // 0x5f8(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator4;                                    // 0x600(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator3;                                    // 0x608(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator2;                                    // 0x610(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator1;                                    // 0x618(0x8)
-	Class StaticMeshComponent*                                   hourglass;                                         // 0x620(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x628(0x8)
-	Class FactionInteractionVoteComponent*                       FactionInteractionVote;                            // 0x630(0x8)
-	Class EmissaryActiveTableVisualiserComponent*                EmissaryActiveTableVisualiser;                     // 0x638(0x8)
-	Class VoteAudioComponent*                                    VoteAudio;                                         // 0x640(0x8)
-	Class StaticMeshVoteVisualiserComponent*                     StaticMeshVoteVisualiser;                          // 0x648(0x8)
-	Class InlineVotingInteractionComponent*                      InlineVotingInteraction;                           // 0x650(0x8)
-	Class ActionRulesComponent*                                  ActionRules;                                       // 0x658(0x8)
+	Class FactionInteractionVoteComponent*                       FactionInteractionVote;                            // 0x4c0(0x8)
+	Class StaticMeshComponent*                                   HourglassStand;                                    // 0x4c8(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator8;                                    // 0x4d0(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator7;                                    // 0x4d8(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator6;                                    // 0x4e0(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator5;                                    // 0x4e8(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator4;                                    // 0x4f0(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator3;                                    // 0x4f8(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator2;                                    // 0x500(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator1;                                    // 0x508(0x8)
+	Class StaticMeshComponent*                                   hourglass;                                         // 0x510(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x518(0x8)
+	Class EmissaryActiveTableVisualiserComponent*                EmissaryActiveTableVisualiser;                     // 0x520(0x8)
+	Class VoteAudioComponent*                                    VoteAudio;                                         // 0x528(0x8)
+	Class StaticMeshVoteVisualiserComponent*                     StaticMeshVoteVisualiser;                          // 0x530(0x8)
+	Class ActionRulesComponent*                                  ActionRules;                                       // 0x538(0x8)
 };
 
 

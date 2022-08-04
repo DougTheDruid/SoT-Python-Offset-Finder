@@ -1,45 +1,21 @@
 {
-  "BP_TaleBook_Shroudbreaker_AncientSpireOutpost_AdditionalPuzzles": {
+  "BP_TaleBook_Shroudbreaker_PlunderOutpost_AdditionalPuzzles_C": {
     "Super": "VoyageProposalContainer",
     "FullSize": "0x7b0",
     "InheritedSize": "0x780",
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "TaleSelectionSlot",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
-        "Name": "TaleSelectionSlot",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x788"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x790"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x798"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7a0"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7a8"
       }
     ]
   },

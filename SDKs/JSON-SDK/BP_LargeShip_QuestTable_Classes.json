@@ -1,64 +1,76 @@
 {
   "BP_LargeShip_QuestTable_ShipPartMMC_C": {
     "Super": "BP_LargeShip_QuestTable_C",
-    "FullSize": "0x838",
-    "InheritedSize": "0x838",
+    "FullSize": "0x8b8",
+    "InheritedSize": "0x8b8",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_LargeShip_QuestTable_C": {
     "Super": "VoyageTable",
-    "FullSize": "0x838",
-    "InheritedSize": "0x7f8",
-    "ClassSize": "0x40",
+    "FullSize": "0x8b8",
+    "InheritedSize": "0x868",
+    "ClassSize": "0x50",
     "Attributes": [
+      {
+        "Name": "WarMap",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x868"
+      },
+      {
+        "Name": "FactionHourglass",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
       {
         "Name": "CancelAdventure",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x878"
       },
       {
         "Name": "PlayerBuiredItemsMapBundleInteractionPoint",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x800"
+        "Offset": "0x880"
       },
       {
         "Name": "CancelTale",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x808"
+        "Offset": "0x888"
       },
       {
         "Name": "CancelVoyage",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x810"
+        "Offset": "0x890"
       },
       {
         "Name": "VoyageSelectionSlot4",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x818"
+        "Offset": "0x898"
       },
       {
         "Name": "VoyageSelectionSlot3",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x820"
+        "Offset": "0x8a0"
       },
       {
         "Name": "VoyageSelectionSlot2",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x828"
+        "Offset": "0x8a8"
       },
       {
         "Name": "VoyageSelectionSlot1",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x830"
+        "Offset": "0x8b0"
       }
     ]
   },

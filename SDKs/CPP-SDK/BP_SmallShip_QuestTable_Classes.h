@@ -13,18 +13,20 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x50
 class BP_SmallShip_QuestTable_C: public VoyageTable
 {
 public:
-	Class ChildActorComponent*                                   CancelAdventure;                                   // 0x7f8(0x8)
-	Class ChildActorComponent*                                   PlayerBuiredItemsMapBundleInteractionPoint;        // 0x800(0x8)
-	Class ChildActorComponent*                                   CancelTale;                                        // 0x808(0x8)
-	Class ChildActorComponent*                                   CancelVoyage;                                      // 0x810(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot4;                              // 0x818(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot3;                              // 0x820(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot2;                              // 0x828(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot1;                              // 0x830(0x8)
+	Class ChildActorComponent*                                   WarMap;                                            // 0x868(0x8)
+	Class ChildActorComponent*                                   FactionHourglass;                                  // 0x870(0x8)
+	Class ChildActorComponent*                                   CancelAdventure;                                   // 0x878(0x8)
+	Class ChildActorComponent*                                   PlayerBuiredItemsMapBundleInteractionPoint;        // 0x880(0x8)
+	Class ChildActorComponent*                                   CancelTale;                                        // 0x888(0x8)
+	Class ChildActorComponent*                                   CancelVoyage;                                      // 0x890(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot4;                              // 0x898(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot3;                              // 0x8a0(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot2;                              // 0x8a8(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot1;                              // 0x8b0(0x8)
 };
 
 

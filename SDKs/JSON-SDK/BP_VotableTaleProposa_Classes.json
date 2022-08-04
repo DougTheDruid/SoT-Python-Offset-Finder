@@ -1,71 +1,10 @@
 {
   "BP_VotableTaleProposal_Vertical_C": {
-    "Super": "VotableObjectView",
-    "FullSize": "0x530",
-    "InheritedSize": "0x4e0",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4e8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4f0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x4f8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      },
-      {
-        "Name": "None",
-        "Type": "TArray<class None*>",
-        "Size": "0x10",
-        "Offset": "0x508"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x518"
-      },
-      {
-        "Name": "None",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x520"
-      },
-      {
-        "Name": "None",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x524"
-      },
-      {
-        "Name": "None",
-        "Type": "Class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x528"
-      }
-    ]
+    "Super": "/Game/Animation/NPC/shipwright/npc_shipwright_idleinactive2_to_",
+    "FullSize": "-0x7ccccccd",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x7ccccccd",
+    "Attributes": []
   },
   "BP_VotableTaleProposal_C": {
     "Super": "VotableObjectView",

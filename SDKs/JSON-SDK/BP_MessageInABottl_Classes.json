@@ -1,22 +1,22 @@
 {
   "BP_MessageInABottle_Coral_Desc_C": {
     "Super": "ItemWithoutIconsDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_MessageInABottle_Desc_C": {
     "Super": "ItemWithoutIconsDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_MessageInABottle_Desc_DVR_C": {
     "Super": "ItemWithoutIconsDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },

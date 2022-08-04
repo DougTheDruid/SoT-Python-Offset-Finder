@@ -140,3 +140,6 @@ ShipPartLevelsOfDamage:
     Size: '0x8'
     Type: Struct FeatureFlag
   ClassSize: '0x38'
+ShipRestoredNetworkEvent:
+  Attributes: []
+  ClassSize: '0x10'

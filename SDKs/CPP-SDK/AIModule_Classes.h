@@ -1376,14 +1376,15 @@ class EQSTestingPawn: public Character
 public:
 	Class EnvQuery*                                              QueryTemplate;                                     // 0x5e0(0x8)
 	TArray<Struct EnvNamedValue>                                 QueryParams;                                       // 0x5e8(0x10)
-	float                                                        TimeLimitPerStep;                                  // 0x5f8(0x4)
-	int                                                          StepToDebugDraw;                                   // 0x5fc(0x4)
-	byte                                                         HighlightMode;                                     // 0x600(0x1)
-	bool                                                         bDrawLabels;                                       // 0x604(0x1)
-	bool                                                         bDrawFailedItems;                                  // 0x604(0x1)
-	bool                                                         bReRunQueryOnlyOnFinishedMove;                     // 0x604(0x1)
-	bool                                                         bShouldBeVisibleInGame;                            // 0x604(0x1)
-	byte                                                         QueryingMode;                                      // 0x608(0x1)
+	class                                                        ContextToLinkWithThis;                             // 0x5f8(0x8)
+	float                                                        TimeLimitPerStep;                                  // 0x600(0x4)
+	int                                                          StepToDebugDraw;                                   // 0x604(0x4)
+	byte                                                         HighlightMode;                                     // 0x608(0x1)
+	bool                                                         bDrawLabels;                                       // 0x60c(0x1)
+	bool                                                         bDrawFailedItems;                                  // 0x60c(0x1)
+	bool                                                         bReRunQueryOnlyOnFinishedMove;                     // 0x60c(0x1)
+	bool                                                         bShouldBeVisibleInGame;                            // 0x60c(0x1)
+	byte                                                         QueryingMode;                                      // 0x610(0x1)
 };
 
 

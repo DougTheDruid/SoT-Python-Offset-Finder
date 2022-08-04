@@ -1,8 +1,8 @@
 {
   "BP_fod_BananaFresh_00_a_ItemDesc_C": {
     "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -15,8 +15,8 @@
   },
   "BP_fod_PorkMeatRawBite1_00_a_ItemDesc_C": {
     "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -29,27 +29,27 @@
   },
   "BP_fod_PorkMeatRaw_00_a_ItemInfo_C": {
     "Super": "BP_MeatItemInfo_C",
-    "FullSize": "0x578",
-    "InheritedSize": "0x560",
+    "FullSize": "0x590",
+    "InheritedSize": "0x578",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "MaterialManipulationSettings",
         "Type": "Class MaterialManipulationSettingsComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x578"
       },
       {
         "Name": "LightweightStatusEffectManager",
         "Type": "Class LightWeightStatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x580"
       },
       {
         "Name": "Cookable",
         "Type": "Class CookableComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x588"
       }
     ]
   },

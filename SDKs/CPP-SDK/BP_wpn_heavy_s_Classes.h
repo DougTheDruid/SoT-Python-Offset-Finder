@@ -6,10 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class BP_wpn_heavy_sword_frb_01_a_ItemDesc_C: public ItemDesc
+// Size 0x8
+class BP_wpn_heavy_sword_frb_01_a_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 
@@ -20,11 +21,10 @@ public:
 };
 
 
-// Size 0x8
-class BP_wpn_heavy_sword_frb_01_a_ItemInfo_C: public ItemInfo
+// Size 0x0
+class BP_wpn_heavy_sword_frb_01_a_ItemDesc_C: public ItemDesc
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
 };
 
 

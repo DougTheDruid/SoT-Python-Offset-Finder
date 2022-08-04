@@ -272,6 +272,23 @@
       }
     ]
   },
+  "EarthquakeStoryCustomisationData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "Struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EarthquakeSetupData",
+        "Type": "Class EarthquakeSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "GeyserSpawnAngleOption": {
     "ClassSize": "0xc",
     "Attributes": [

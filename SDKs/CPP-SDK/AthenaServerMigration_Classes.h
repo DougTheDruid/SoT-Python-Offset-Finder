@@ -14,6 +14,13 @@ public:
 
 
 // Size 0x0
+class MigrationProgressInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class MigrationServiceInterface: public Interface
 {
 public:

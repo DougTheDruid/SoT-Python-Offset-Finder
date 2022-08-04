@@ -458,7 +458,11 @@ HullCharringPersistenceModel:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<Float TimeSpentCharring>
-  ClassSize: '0x10'
+  - Name: TotalCellsOnFire
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
 OnFireChangedEvent:
   Attributes:
   - Name: OnFire

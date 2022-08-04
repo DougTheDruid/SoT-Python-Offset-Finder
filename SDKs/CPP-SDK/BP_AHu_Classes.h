@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_AHuntersCry_Larinna_C: public BP_SoleTrader_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x6a0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x6a8(0x8)
-	Class ActorPhasingComponent*                                 None;                                              // 0x6b0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x6a0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6a8(0x8)
+	Class ActorPhasingComponent*                                 ActorPhasing;                                      // 0x6b0(0x8)
 };
 
 

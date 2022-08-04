@@ -3,72 +3,72 @@
 BP_Lantern_LargeShip_BrigDeck_InsideBrig_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_BrigDeck_OutsideBrig_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_BrigDeck_StairsLeft_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_BrigDeck_StairsRight_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_Cabin_Entrance_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_Cabin_Lantern_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_MapDeck_BowLeft_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_MapDeck_BowRight_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_MapDeck_Galley_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_MapDeck_MainStairs_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_MapDeck_MapTable_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_LargeShip_MapDeck_RearStairs_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x74d'
-  InheritedSize: '0x74d'
+  FullSize: '0x73d'
+  InheritedSize: '0x73d'
   Super: BP_InteractableShipLantern_C

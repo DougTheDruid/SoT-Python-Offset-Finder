@@ -69,6 +69,23 @@ public:
 };
 
 
+// Size 0x10
+class EmotePropRandomObjectData: public EmotePropData
+{
+public:
+	TArray<Struct EmotePropRandomObjectInfo>                     PossibleObjects;                                   // 0x28(0x10)
+};
+
+
+// Size 0x130
+class EmoteRandomObject: public Actor
+{
+public:
+	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d0(0x8)
+	Class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3d8(0x8)
+};
+
+
 // Size 0x8
 class EmoteSettings: public DeveloperSettings
 {

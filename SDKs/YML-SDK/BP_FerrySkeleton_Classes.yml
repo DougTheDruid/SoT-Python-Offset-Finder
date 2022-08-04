@@ -3,12 +3,12 @@
 BP_FerrySkeleton_01_b_TrinketDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: TrinketDesc
 BP_FerrySkeleton_01_d_TrinketDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
   Super: TrinketDesc

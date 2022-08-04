@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_Goldhoarder_C:
   Attributes:
-  - Name: EmissaryMaxRankQuestProvider
+  - Name: None
     Offset: '0x688'
     Size: '0x8'
     Type: Class EmissaryMaxRankQuestProvider*
-  - Name: SolidHits
+  - Name: None
     Offset: '0x690'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: NPCDialog
+  - Name: None
     Offset: '0x698'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: AnimNotifyWwiseEmitter
+  - Name: None
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*

@@ -21,20 +21,20 @@ TrinketCategory:
 TrinketDesc:
   Attributes:
   - Name: TrinketClass
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x10'
     Type: Struct StringClassReference
   - Name: PreviousItem
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x10'
     Type: Struct StringClassReference
   - Name: NextItem
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x10'
     Type: Struct StringClassReference
   ClassSize: '0x30'
-  FullSize: '0x108'
-  InheritedSize: '0xd8'
+  FullSize: '0xf8'
+  InheritedSize: '0xc8'
   Super: EntitlementDesc
 TrinketLoadoutControlInterface:
   Attributes: []

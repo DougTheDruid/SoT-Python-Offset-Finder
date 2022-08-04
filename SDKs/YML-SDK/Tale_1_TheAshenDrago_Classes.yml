@@ -18,30 +18,6 @@ BP_ghost_ship_scene_C:
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class None*>
-  - Name: None
-    Offset: '0x3f0'
-    Size: '0x8'
-    Type: struct FName
-  - Name: None
-    Offset: '0x3f8'
-    Size: '0x10'
-    Type: TArray<class None*>
-  - Name: None
-    Offset: '0x408'
-    Size: '0x1'
-    Type: bool
-  - Name: None
-    Offset: '0x410'
-    Size: '0x10'
-    Type: TArray<class None*>
-  - Name: None
-    Offset: '0x420'
-    Size: '0x4'
-    Type: float
-  - Name: None
-    Offset: '0x424'
-    Size: '0x4'
-    Type: float
   ClassSize: '0x60'
   FullSize: '0x428'
   InheritedSize: '0x3c8'

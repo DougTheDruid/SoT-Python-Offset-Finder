@@ -65,4 +65,12 @@ public:
 };
 
 
+// Size 0x10
+struct ShantyPuzzleCompleteEvent
+{
+public:
+	TArray<Struct Guid>                                          ParticipatingCrews;                                // 0x0(0x10)
+};
+
+
 }

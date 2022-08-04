@@ -96,6 +96,20 @@ AnimNotifyState_SpawnCosmeticItem:
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: AnimNotifyState
+AnimNotifyState_ToggleIK:
+  Attributes:
+  - Name: IKLimbsToAdjust
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Byte IKLimbsToAdjust>
+  - Name: Enabled
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x68'
+  FullSize: '0x90'
+  InheritedSize: '0x28'
+  Super: AnimNotifyState
 AnimNotify_DestroyAllCosmeticItems:
   Attributes: []
   ClassSize: '0x0'

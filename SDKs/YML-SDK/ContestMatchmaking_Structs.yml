@@ -17,39 +17,43 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct Guid
-  - Name: VmId
+  - Name: ServerAddress
     Offset: '0x10'
     Size: '0x10'
     Type: Struct FString
-  - Name: PrivateServerId
+  - Name: VmId
     Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
-  - Name: ServerLocation
+  - Name: PrivateServerId
     Offset: '0x30'
     Size: '0x10'
     Type: Struct FString
+  - Name: ServerLocation
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
   - Name: PlayModeTags
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x10'
     Type: TArray<Str PlayModeTags>
   - Name: PlayModeStates
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x10'
     Type: TArray<Str PlayModeStates>
   - Name: Crews
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x10'
     Type: TArray<Struct ServerCrewModel>
   - Name: MatchmakingRequestReason
-    Offset: '0x78'
+    Offset: '0x88'
     Size: '0x1'
     Type: byte
   - Name: RequestCorrelationId
-    Offset: '0x7c'
+    Offset: '0x8c'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0x90'
+  ClassSize: '0xa0'
 ExistingServerCrewModel:
   Attributes:
   - Name: CrewId

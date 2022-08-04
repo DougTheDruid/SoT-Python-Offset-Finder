@@ -55,6 +55,17 @@ public:
 };
 
 
+// Size 0x28
+struct CrewSessionKeepAliveFailedTelemetryEvent
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	Struct FString                                               UserStatus;                                        // 0x10(0x10)
+	int                                                          ErrorCode;                                         // 0x20(0x4)
+	int                                                          KeepAliveCounter;                                  // 0x24(0x4)
+};
+
+
 // Size 0x18
 struct CrewSessionOperationFailedTelemetryEvent
 {

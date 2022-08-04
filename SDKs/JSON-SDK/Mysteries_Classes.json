@@ -15,27 +15,21 @@
   },
   "AbandonedNoteWeightedTextSourceComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x178",
+    "FullSize": "0x1a8",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xb0",
+    "ClassSize": "0xe0",
     "Attributes": [
-      {
-        "Name": "WeightedText",
-        "Type": "Class AbandonedNoteWeightedTextDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
       {
         "Name": "ClueText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0xf0"
+        "Offset": "0x108"
       },
       {
         "Name": "TitleText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x128"
+        "Offset": "0x140"
       }
     ]
   },
@@ -105,15 +99,39 @@
   },
   "SirenPuzzleContext": {
     "Super": "Actor",
-    "FullSize": "0x538",
+    "FullSize": "0x4b8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x170",
+    "ClassSize": "0xf0",
     "Attributes": [
+      {
+        "Name": "Root",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
       {
         "Name": "PuzzleLocks",
         "Type": "TArray<Struct SirenPuzzleLockState>",
         "Size": "0x10",
-        "Offset": "0x3d0"
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "UnlockCompleteReactions",
+        "Type": "TArray<Struct LandmarkReactionKeyFrame>",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "ResetLocksReactions",
+        "Type": "TArray<Struct LandmarkReactionKeyFrame>",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "LockStates",
+        "Type": "TArray<Byte LockStates>",
+        "Size": "0x10",
+        "Offset": "0x408"
       }
     ]
   },

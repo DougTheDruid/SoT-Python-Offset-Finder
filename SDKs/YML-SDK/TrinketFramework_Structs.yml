@@ -14,7 +14,7 @@ ChestEntitlementTrinketItem:
     Offset: '0x14'
     Size: '0x4'
     Type: int
-  - Name: OwnerXUID
+  - Name: OwnerGamerTag
     Offset: '0x18'
     Size: '0x10'
     Type: Struct FString

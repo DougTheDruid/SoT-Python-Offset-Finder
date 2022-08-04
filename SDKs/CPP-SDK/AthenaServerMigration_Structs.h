@@ -50,13 +50,6 @@ public:
 };
 
 
-// Size 0x8
-struct ServerMigrationConfigChangedEvent
-{
-public:
-};
-
-
 // Size 0x10
 struct ServerMigrationAbortEvent
 {
@@ -71,29 +64,12 @@ public:
 };
 
 
-// Size 0x78
-struct ServerMigrationHeartbeatEvent
-{
-public:
-	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	Struct FString                                               ServerLocation;                                    // 0x10(0x10)
-	Struct FString                                               GameEndpoint;                                      // 0x20(0x10)
-	Struct FString                                               MigrationEndpoint;                                 // 0x30(0x10)
-	TArray<Struct ServerMigrationCrewMigrationStatus>            CrewsMigrationStatus;                              // 0x40(0x10)
-	int                                                          SequenceId;                                        // 0x50(0x4)
-	Struct Timespan                                              ServerUptime;                                      // 0x58(0x8)
-	Struct Timespan                                              ExpectedServerLifetime;                            // 0x60(0x8)
-	Struct Timespan                                              MessageInterval;                                   // 0x68(0x8)
-	bool                                                         ContestMatchmaking;                                // 0x70(0x1)
-};
-
-
 // Size 0x20
 struct ServerMigrationRefusedEvent
 {
 public:
 	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)
-	Struct Guid                                                  CrewId;                                            // 0x10(0x10)
+	TArray<Struct Guid>                                          CrewIds;                                           // 0x10(0x10)
 };
 
 
@@ -127,22 +103,15 @@ public:
 };
 
 
-// Size 0x8
-struct ServerMigrationSetServerConfigMessage
-{
-public:
-	Struct Timespan                                              ExpectedServerLifetime;                            // 0x0(0x8)
-};
-
-
-// Size 0x40
+// Size 0x50
 struct ServerMigrationRequestEvent
 {
 public:
 	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)
 	Struct FString                                               DestinationAddress;                                // 0x10(0x10)
-	Struct Guid                                                  CrewId;                                            // 0x20(0x10)
+	TArray<Struct Guid>                                          CrewIds;                                           // 0x20(0x10)
 	Struct FString                                               SubMode;                                           // 0x30(0x10)
+	TArray<Byte MatchmakingReasons>                              MatchmakingReasons;                                // 0x40(0x10)
 };
 
 

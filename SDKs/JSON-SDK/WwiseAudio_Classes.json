@@ -124,6 +124,26 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "MultiEmitterRootComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x300",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MultiEmitterDataArray",
+        "Type": "TArray<Struct MultiEmitterData>",
+        "Size": "0x10",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "PlayingEmitters",
+        "Type": "TArray<Struct WwiseEmitter>",
+        "Size": "0x10",
+        "Offset": "0x2f0"
+      }
+    ]
+  },
   "WwiseAudioSettings": {
     "Super": "Object",
     "FullSize": "0x408",
@@ -340,6 +360,26 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "MergedMultiEmitterComponent": {
+    "Super": "WwiseEmitterComponent",
+    "FullSize": "0x320",
+    "InheritedSize": "0x310",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "EmitterPool",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x310"
+      },
+      {
+        "Name": "PlayEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x318"
+      }
+    ]
   },
   "WwiseEmitterManager": {
     "Super": "Object",

@@ -15,15 +15,15 @@
   },
   "BP_ShipFlagCustomizationChestInteraction_C": {
     "Super": "ShipFlagCustomizationChestInteraction",
-    "FullSize": "0x518",
-    "InheritedSize": "0x510",
+    "FullSize": "0x528",
+    "InheritedSize": "0x520",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x510"
+        "Offset": "0x520"
       }
     ]
   },

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x98
+// Size 0xa0
 struct EmoteData
 {
 public:
@@ -19,6 +19,7 @@ public:
 	Class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
 	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
 	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
+	Class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
 };
 
 
@@ -27,6 +28,29 @@ struct EmoteId
 {
 public:
 	struct FName                                                 EmoteId;                                           // 0x0(0x8)
+};
+
+
+// Size 0x50
+struct EmotePropRandomObjectResult
+{
+public:
+	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	bool                                                         HasTransformValue;                                 // 0x8(0x1)
+	Struct Transform                                             Transform;                                         // 0x10(0x30)
+	struct FName                                                 TextureParameterName;                              // 0x40(0x8)
+	int                                                          TextureParameterValue;                             // 0x48(0x4)
+};
+
+
+// Size 0x30
+struct EmotePropRandomObjectInfo
+{
+public:
+	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	TArray<Struct Transform>                                     PossibleTransforms;                                // 0x8(0x10)
+	struct FName                                                 RandomParameterName;                               // 0x18(0x8)
+	Struct Int32Range                                            RandomParameterRange;                              // 0x20(0x10)
 };
 
 
@@ -46,11 +70,11 @@ public:
 };
 
 
-// Size 0x98
+// Size 0xa0
 struct EventEmoteSwapped
 {
 public:
-	Struct EmoteData                                             EmoteData;                                         // 0x0(0x98)
+	Struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
 };
 
 
@@ -62,21 +86,21 @@ public:
 };
 
 
-// Size 0x98
+// Size 0xa0
 struct EventEmoteStarted
 {
 public:
-	Struct EmoteData                                             EmoteData;                                         // 0x0(0x98)
+	Struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
 };
 
 
-// Size 0xa8
+// Size 0xb0
 struct EventEmoteRequested
 {
 public:
-	Struct EmoteData                                             EmoteData;                                         // 0x0(0x98)
-	struct FName                                                 ForcedEmoteIdentifier;                             // 0x98(0x8)
-	bool                                                         ForcedEmote;                                       // 0xa0(0x1)
+	Struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	struct FName                                                 ForcedEmoteIdentifier;                             // 0xa0(0x8)
+	bool                                                         ForcedEmote;                                       // 0xa8(0x1)
 };
 
 
@@ -101,6 +125,17 @@ public:
 	int                                                          MaxLimit;                                          // 0x0(0x4)
 	int                                                          RollNumber;                                        // 0x4(0x4)
 	Struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
+};
+
+
+// Size 0x60
+struct EmoteRandomObjectOutcomeTelemetryEvent
+{
+public:
+	Struct FString                                               MeshName;                                          // 0x0(0x10)
+	Struct Transform                                             Transform;                                         // 0x10(0x30)
+	Struct FString                                               TextureParameterName;                              // 0x40(0x10)
+	int                                                          TextureParameterValue;                             // 0x50(0x4)
 };
 
 

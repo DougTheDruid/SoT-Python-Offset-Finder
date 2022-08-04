@@ -7,6 +7,15 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
+class bp_light_volume_sphere_large_a_C: public Actor
+{
+public:
+	Class BillboardComponent*                                    Billboard;                                         // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d0(0x8)
+};
+
+
+// Size 0x10
 class bp_light_volume_sphere_orange_a_C: public Actor
 {
 public:
@@ -16,7 +25,7 @@ public:
 
 
 // Size 0x10
-class bp_light_volume_sphere_large_a_C: public Actor
+class bp_light_volume_sphere_orb_blue_C: public Actor
 {
 public:
 	Class BillboardComponent*                                    Billboard;                                         // 0x3c8(0x8)

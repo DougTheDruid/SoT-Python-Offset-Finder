@@ -6,21 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
-class BP_wpn_blunderbuss_gld_01_a_ItemInfo_C: public ItemInfo
-{
-public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4f8(0x8)
-};
-
-
-// Size 0x0
-class BP_wpn_blunderbuss_gld_01_a_Wieldable_C: public BP_Blunderbuss_C
-{
-public:
-};
-
-
 // Size 0x0
 class BP_wpn_blunderbuss_hal_01_a_ItemDesc_C: public ItemDesc
 {
@@ -56,29 +41,16 @@ public:
 };
 
 
-// Size 0x0
-class BP_wpn_blunderbuss_yr1_leg_01_a_ItemDesc_C: public ItemDesc
+// Size 0x8
+class BP_wpn_blunderbuss_win_01_a_ItemInfo_C: public ItemInfo
 {
 public:
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 
 // Size 0x0
-class BP_wpn_blunderbuss_win_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_wpn_blunderbuss_smp_01_a_ItemDesc_C: public ItemDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_wpn_blunderbuss_shr_01_a_ItemDesc_C: public ItemDesc
+class BP_wpn_blunderbuss_win_01_a_Wieldable_C: public BP_Blunderbuss_C
 {
 public:
 };
@@ -99,14 +71,21 @@ public:
 
 
 // Size 0x0
-class BP_wpn_blunderbuss_oos_01_a_ItemDesc_C: public ItemDesc
+class BP_wpn_blunderbuss_rea_mys_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_wpn_blunderbuss_elb_01_a_v02_ItemDesc_C: public ItemDesc
+class BP_wpn_blunderbuss_win_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_rpr_01_a_v01_ItemDesc_C: public ItemDesc
 {
 public:
 };
@@ -120,7 +99,42 @@ public:
 
 
 // Size 0x0
+class BP_wpn_blunderbuss_oos_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_wpn_blunderbuss_blb_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_shr_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_yr1_leg_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_elb_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_wpn_blunderbuss_smp_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

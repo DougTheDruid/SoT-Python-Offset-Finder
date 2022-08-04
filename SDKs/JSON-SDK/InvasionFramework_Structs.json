@@ -7,6 +7,12 @@
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "InvasionStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
       }
     ]
   },
@@ -24,6 +30,41 @@
         "Type": "TArray<class Participants*>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "InvasionEndedTelemetryEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Participants",
+        "Type": "TArray<Struct InvasionCrewData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Winner",
+        "Type": "Struct InvasionCrewData",
+        "Size": "0x14",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "InvasionDurationInSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "ParticipantFactionData",
+        "Type": "TArray<Struct CrewFactionTelemetryData>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InvasionEndedReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x38"
       }
     ]
   },

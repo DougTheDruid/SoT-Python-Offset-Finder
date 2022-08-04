@@ -202,4 +202,39 @@ public:
 };
 
 
+// Size 0x0
+class OOSLetter_ExclusionEntitlement_Adventure06_AHuntersCry_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class GHLetter_ExclusionEntitlement_Campaign046_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class HCLetter_ExclusionEntitlement_Campaign046_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class MALetter_ExclusionEntitlement_Campaign046_C: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0
+class OOSLetter_ExclusionEntitlement_Campaign046_C: public EntitlementDesc
+{
+public:
+};
+
+
 }

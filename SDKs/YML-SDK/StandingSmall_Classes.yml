@@ -42,16 +42,6 @@ BP_Trinket_ColoredBottles_01_a_C:
   FullSize: '0x408'
   InheritedSize: '0x3f8'
   Super: BP_Trinket_StandingSmall_C
-BP_Trinket_DishStack_01_a_C:
-  Attributes:
-  - Name: cmn_clay_dish_stack_01_a
-    Offset: '0x3f8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x8'
-  FullSize: '0x400'
-  InheritedSize: '0x3f8'
-  Super: BP_Trinket_StandingSmall_C
 BP_Trinket_Dish_01_a_C:
   Attributes:
   - Name: cmn_clay_dish_01_b
@@ -134,23 +124,23 @@ BP_Trinket_PaintSet_02_a_C:
   Super: BP_Trinket_StandingSmall_C
 BP_Trinket_PanStack_01_a_C:
   Attributes:
-  - Name: cmn_cooking__pot_011
+  - Name: shp_fry_pan_01_a1
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_cooking__pot_01
+  - Name: shp_fry_pan_01_a
     Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_fishing_cooker_lid_01_a
+  - Name: cmn_cooking__pot_011
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_fry_pan_01_a1
+  - Name: cmn_cooking__pot_01
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_fry_pan_01_a
+  - Name: cmn_fishing_cooker_lid_01_a
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -166,24 +156,6 @@ BP_Trinket_Pot_01_a_C:
     Type: Class StaticMeshComponent*
   ClassSize: '0x8'
   FullSize: '0x400'
-  InheritedSize: '0x3f8'
-  Super: BP_Trinket_StandingSmall_C
-BP_Trinket_PotionBottles_01_a_C:
-  Attributes:
-  - Name: ptn_pois_01_b
-    Offset: '0x3f8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: ptn_pois_01_c
-    Offset: '0x400'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: ptn_pois_01_d
-    Offset: '0x408'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x18'
-  FullSize: '0x410'
   InheritedSize: '0x3f8'
   Super: BP_Trinket_StandingSmall_C
 BP_Trinket_Tankards_01_a_C:

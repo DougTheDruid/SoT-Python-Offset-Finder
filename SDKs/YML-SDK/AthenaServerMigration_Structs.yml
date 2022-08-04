@@ -39,52 +39,6 @@ ServerMigrationAboutToStartEvent:
 ServerMigrationCompleteEvent:
   Attributes: []
   ClassSize: '0x1'
-ServerMigrationConfigChangedEvent:
-  Attributes: []
-  ClassSize: '0x8'
-ServerMigrationHeartbeatEvent:
-  Attributes:
-  - Name: ServerId
-    Offset: '0x0'
-    Size: '0x10'
-    Type: Struct Guid
-  - Name: ServerLocation
-    Offset: '0x10'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: GameEndpoint
-    Offset: '0x20'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: MigrationEndpoint
-    Offset: '0x30'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: CrewsMigrationStatus
-    Offset: '0x40'
-    Size: '0x10'
-    Type: TArray<Struct ServerMigrationCrewMigrationStatus>
-  - Name: SequenceId
-    Offset: '0x50'
-    Size: '0x4'
-    Type: int
-  - Name: ServerUptime
-    Offset: '0x58'
-    Size: '0x8'
-    Type: Struct Timespan
-  - Name: ExpectedServerLifetime
-    Offset: '0x60'
-    Size: '0x8'
-    Type: Struct Timespan
-  - Name: MessageInterval
-    Offset: '0x68'
-    Size: '0x8'
-    Type: Struct Timespan
-  - Name: ContestMatchmaking
-    Offset: '0x70'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x78'
 ServerMigrationInstanceEventBase:
   Attributes:
   - Name: ServerId
@@ -105,10 +59,10 @@ ServerMigrationRefusedEvent:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct Guid
-  - Name: CrewId
+  - Name: CrewIds
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Guid
+    Type: TArray<Struct Guid>
   ClassSize: '0x20'
 ServerMigrationRequestEvent:
   Attributes:
@@ -120,22 +74,19 @@ ServerMigrationRequestEvent:
     Offset: '0x10'
     Size: '0x10'
     Type: Struct FString
-  - Name: CrewId
+  - Name: CrewIds
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Guid
+    Type: TArray<Struct Guid>
   - Name: SubMode
     Offset: '0x30'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x40'
-ServerMigrationSetServerConfigMessage:
-  Attributes:
-  - Name: ExpectedServerLifetime
-    Offset: '0x0'
-    Size: '0x8'
-    Type: Struct Timespan
-  ClassSize: '0x8'
+  - Name: MatchmakingReasons
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Byte MatchmakingReasons>
+  ClassSize: '0x50'
 ServerMigrationSetupCompleteEvent:
   Attributes: []
   ClassSize: '0x1'

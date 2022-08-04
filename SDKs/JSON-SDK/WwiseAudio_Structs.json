@@ -33,6 +33,35 @@
       }
     ]
   },
+  "MultiEmitterData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "PoolWrapper",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Offset",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "WwiseAudioReverbPresets": {
     "ClassSize": "0x64",
     "Attributes": [

@@ -7,6 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
+class CrewFactionOwnershipInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class FactionInterationInterface: public Interface
 {
 public:
@@ -14,10 +21,10 @@ public:
 
 
 // Size 0x20
-class FactionInteractionVoteComponent: public SceneComponent
+class FactionInteractionVoteComponent: public InlineVotingInteractionComponent
 {
 public:
-	class                                                        TargetCompany;                                     // 0x2e8(0x8)
+	float                                                        TurnHourglassInteractionHoldTime;                  // 0x148(0x4)
 };
 
 
@@ -26,50 +33,54 @@ class FactionServiceDebugRepActor: public Actor
 {
 public:
 	bool                                                         bDebugEnabled;                                     // 0x3c8(0x1)
-	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x3d0(0x10)
+	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x3d0(0x10)
 	Class FactionService*                                        FactionService;                                    // 0x3e0(0x8)
 };
 
 
-// Size 0x30
+// Size 0x40
 class FactionSettingsAsset: public DataAsset
 {
 public:
 	TArray<Class PossibleFactions>                               PossibleFactions;                                  // 0x28(0x10)
 	TArray<Class FactionsRewardingFriendlyFire>                  FactionsRewardingFriendlyFire;                     // 0x38(0x10)
 	TArray<Struct SandsOfFateData>                               SandsOfFateRewards;                                // 0x48(0x10)
+	TArray<Struct FactionStreakLevelData>                        FactionStreakLevelData;                            // 0x58(0x10)
 };
 
 
-// Size 0x78
+// Size 0xe0
 class FactionService: public Actor
 {
 public:
-	Class FactionSettingsAsset*                                  Settings;                                          // 0x3d0(0x8)
-	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x418(0x10)
-	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x430(0x8)
+	Class FactionSettingsAsset*                                  Settings;                                          // 0x3d8(0x8)
+	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x448(0x10)
+	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x458(0x10)
+	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x498(0x8)
 };
 
 
-// Size 0x80
+// Size 0x90
 class FactionVoteConsumerBase: public VoteConsumerInlineBase
 {
 public:
 	Class FactionVoteValidatorBase*                              Validator;                                         // 0x40(0x8)
 	Class Actor*                                                 OwningActor;                                       // 0x90(0x8)
-	TArray<Struct CrewMemberVotes>                               Votes;                                             // 0x98(0x10)
+	TArray<Struct CinematicFactionEvent>                         FactionBannerData;                                 // 0x98(0x10)
+	TArray<Struct CrewMemberVotes>                               Votes;                                             // 0xa8(0x10)
 };
 
 
-// Size 0x118
+// Size 0x150
 class StartFactionVoyageVoteConsumer: public FactionVoteConsumerBase
 {
 public:
-	Struct FText                                                 FactionVotingCastVote;                             // 0xb0(0x38)
-	Struct FText                                                 FactionVotingCantVote;                             // 0xe8(0x38)
-	Struct FText                                                 FactionVotingRemoveVote;                           // 0x120(0x38)
-	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x158(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonVoterNotOnOwnShip;      // 0x190(0x38)
+	Struct FText                                                 FactionVotingCastVote;                             // 0xc0(0x38)
+	Struct FText                                                 FactionVotingCantVote;                             // 0xf8(0x38)
+	Struct FText                                                 FactionVotingRemoveVote;                           // 0x130(0x38)
+	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x168(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonVoterNotOnOwnShip;      // 0x1a0(0x38)
+	Struct FText                                                 FactionVotingSwitchVote;                           // 0x1d8(0x38)
 };
 
 
@@ -77,21 +88,35 @@ public:
 class StopFactionVoyageVoteConsumer: public FactionVoteConsumerBase
 {
 public:
-	Struct FText                                                 FactionVotingCastVote;                             // 0xb0(0x38)
-	Struct FText                                                 FactionVotingCantVote;                             // 0xe8(0x38)
-	Struct FText                                                 FactionVotingRemoveVote;                           // 0x120(0x38)
-	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x158(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonGoToOutpost;            // 0x190(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonActiveForDifferentCompany; // 0x1c8(0x38)
+	Struct FText                                                 FactionVotingCastVote;                             // 0xc0(0x38)
+	Struct FText                                                 FactionVotingCantVote;                             // 0xf8(0x38)
+	Struct FText                                                 FactionVotingRemoveVote;                           // 0x130(0x38)
+	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x168(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonGoToOutpost;            // 0x1a0(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonActiveForDifferentCompany; // 0x1d8(0x38)
 };
 
 
-// Size 0x30
+// Size 0xf8
+class FactionVoteInteractionActor: public Actor
+{
+public:
+	float                                                        FadeDuration;                                      // 0x3d8(0x4)
+	TArray<Struct FactionDisplayInfo>                            NoFactionInfos;                                    // 0x3e0(0x10)
+	TArray<Struct FactionDisplayInfo>                            FactionInfos;                                      // 0x3f0(0x10)
+	TArray<Struct FactionRequest>                                NoFactionInfoPtrs;                                 // 0x400(0x10)
+	TArray<Struct FactionRequest>                                FactionInfoPtrs;                                   // 0x410(0x10)
+};
+
+
+// Size 0x60
 class FactionVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
-	class                                                        TargetCompany;                                     // 0x30(0x8)
-	Class FactionVoteConsumerBase*                               Consumer;                                          // 0x58(0x8)
+	TArray<Class TargetCompanies>                                TargetCompanies;                                   // 0x30(0x10)
+	Class FactionVoteConsumerBase*                               Consumer;                                          // 0x70(0x8)
+	int                                                          CurrentCompany;                                    // 0x78(0x4)
+	Class Actor*                                                 OwningActor;                                       // 0x88(0x8)
 };
 
 
@@ -103,7 +128,7 @@ public:
 
 
 // Size 0x0
-class StopFactionVoyageInlineVoteValidator: public FactionVoteValidatorBase
+class StopFactionVoyageVoteValidator: public FactionVoteValidatorBase
 {
 public:
 };

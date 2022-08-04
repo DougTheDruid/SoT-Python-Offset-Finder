@@ -7,21 +7,19 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class WarMapInteractionComponentInterface: public Interface
+class WarMapStateInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x230
-class WarMapInteractionComponent: public ActionRulesInteractableComponent
+// Size 0xa0
+class WarMapInteractionComponent: public InteractableComponent
 {
 public:
-	Struct FText                                                 OpenMapInteractionText;                            // 0x130(0x38)
-	Struct FText                                                 CannotOpenMapInteractionText;                      // 0x168(0x38)
-	class                                                        OpenMapInputId;                                    // 0x1a0(0x8)
-	Class CrewShipManifest*                                      CrewShipManifest;                                  // 0x1a8(0x8)
-	bool                                                         ShipCrewHasJoinedFaction;                          // 0x1b0(0x1)
+	Struct FText                                                 OpenMapInteractionText;                            // 0x120(0x38)
+	Struct FText                                                 CannotOpenMapInteractionText;                      // 0x158(0x38)
+	class                                                        OpenMapInputId;                                    // 0x190(0x8)
 };
 
 

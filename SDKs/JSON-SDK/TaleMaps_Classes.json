@@ -219,6 +219,13 @@
     "ClassSize": "0x60",
     "Attributes": []
   },
+  "TaleQuestCustomMapFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x188",
+    "InheritedSize": "0x170",
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
   "TaleQuestLocationMapChestFoundStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xa0",

@@ -66,6 +66,16 @@ EmotePropDiceData:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: EmotePropData
+EmotePropRandomObjectData:
+  Attributes:
+  - Name: PossibleObjects
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct EmotePropRandomObjectInfo>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: EmotePropData
 EmoteRandomFromListAsset:
   Attributes:
   - Name: EmoteDataList
@@ -76,6 +86,20 @@ EmoteRandomFromListAsset:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+EmoteRandomObject:
+  Attributes:
+  - Name: MeshComponent
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: DynamicMaterialInstance
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  ClassSize: '0x130'
+  FullSize: '0x4f8'
+  InheritedSize: '0x3c8'
+  Super: Actor
 EmoteSettings:
   Attributes:
   - Name: NumPages

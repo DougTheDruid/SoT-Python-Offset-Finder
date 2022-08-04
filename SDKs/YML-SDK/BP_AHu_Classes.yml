@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_AHuntersCry_Larinna_C:
   Attributes:
-  - Name: None
+  - Name: StaticMesh1
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: ActorPhasing
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class ActorPhasingComponent*

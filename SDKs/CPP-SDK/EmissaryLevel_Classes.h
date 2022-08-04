@@ -38,11 +38,19 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x0
+class EmissaryFlotsamDuplicationInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x28
 class EmissaryFlotsamItemInfo: public BootyItemInfo
 {
 public:
-	Struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x708(0x18)
+	Struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x728(0x18)
+	bool                                                         FlotsamCanBeDuplicated;                            // 0x740(0x1)
 };
 
 

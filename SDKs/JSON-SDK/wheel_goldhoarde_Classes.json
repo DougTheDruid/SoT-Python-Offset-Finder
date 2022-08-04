@@ -1,15 +1,15 @@
 {
-  "wheel_goldhoarderghw_01_CustomizationDesc_C": {
+  "wheel_goldhoarder_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xf8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "wheel_goldhoarder_01_CustomizationDesc_C": {
+  "wheel_goldhoarderghw_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xf8",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -7,6 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
+class Mystery1_WKD_Phase3_OverrideType_C: public NPCDialogOverrideType
+{
+public:
+};
+
+
+// Size 0x0
 class Mystery1_WKD_Phase2_1_OverrideType_C: public NPCDialogOverrideType
 {
 public:

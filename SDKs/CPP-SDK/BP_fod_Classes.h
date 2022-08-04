@@ -38,9 +38,9 @@ public:
 class BP_fod_MegMeatRaw_00_a_ItemInfo_C: public BP_MeatItemInfo_C
 {
 public:
-	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x560(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x568(0x8)
-	Class CookableComponent*                                     Cookable;                                          // 0x570(0x8)
+	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x578(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x580(0x8)
+	Class CookableComponent*                                     Cookable;                                          // 0x588(0x8)
 };
 
 

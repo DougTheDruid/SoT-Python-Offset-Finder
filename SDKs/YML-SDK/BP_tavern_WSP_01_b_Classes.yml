@@ -14,14 +14,14 @@ BP_tavern_WSP_01_b_C:
     Offset: '0x3d8'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_SeatComponent_C*
-  - Name: SpotLight13
+  - Name: TavernTrinketMountpoints
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class SpotLightComponent*
-  - Name: Stool_IntroTable
+    Type: Class ChildActorComponent*
+  - Name: SpotLight13
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: Class SpotLightComponent*
   - Name: Stool_IntroTable
     Offset: '0x3f0'
     Size: '0x8'
@@ -30,95 +30,95 @@ BP_tavern_WSP_01_b_C:
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh3
+  - Name: Stool_IntroTable
     Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh1
+  - Name: StaticMesh3
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh
+  - Name: StaticMesh1
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_painting_vinyl_01a
+  - Name: StaticMesh
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: SpotLight12
+  - Name: cmn_painting_vinyl_01a
     Offset: '0x420'
     Size: '0x8'
-    Type: Class SpotLightComponent*
-  - Name: SpotLight11
+    Type: Class StaticMeshComponent*
+  - Name: SpotLight12
     Offset: '0x428'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: SpotLight10
+  - Name: SpotLight11
     Offset: '0x430'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: PetHangoutSpot
+  - Name: SpotLight10
     Offset: '0x438'
+    Size: '0x8'
+    Type: Class SpotLightComponent*
+  - Name: PetHangoutSpot
+    Offset: '0x440'
     Size: '0x8'
     Type: Class PetHangoutSpotComponent*
   - Name: RainBlockerUnderground
-    Offset: '0x440'
+    Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: NavBlocker5
-    Offset: '0x448'
-    Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: NavBlocker4
     Offset: '0x450'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: NavBlocker3
+  - Name: NavBlocker4
     Offset: '0x458'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: NavBlocker2
+  - Name: NavBlocker3
     Offset: '0x460'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: NavBlocker
+  - Name: NavBlocker2
     Offset: '0x468'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: gmp_bar_stor_01_a
+  - Name: NavBlocker
     Offset: '0x470'
+    Size: '0x8'
+    Type: Class BoxComponent*
+  - Name: gmp_bar_stor_01_a
+    Offset: '0x478'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Roof_collision
-    Offset: '0x478'
+    Offset: '0x480'
     Size: '0x8'
     Type: Class BoxComponent*
   - Name: Onboarding Intro Table
-    Offset: '0x480'
+    Offset: '0x488'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: SpotLight9
-    Offset: '0x488'
-    Size: '0x8'
-    Type: Class SpotLightComponent*
-  - Name: SpotLight8
     Offset: '0x490'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: bld_tvn_entrance_01_a
+  - Name: SpotLight8
     Offset: '0x498'
+    Size: '0x8'
+    Type: Class SpotLightComponent*
+  - Name: bld_tvn_entrance_01_a
+    Offset: '0x4a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: BP_MusicBox
-    Offset: '0x4a0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: BP_Island_Bell
     Offset: '0x4a8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: BP_IslandStorageBarrel_Outpost
+  - Name: BP_Island_Bell
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
@@ -134,39 +134,39 @@ BP_tavern_WSP_01_b_C:
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: SpotLight7
+  - Name: BP_IslandStorageBarrel_Outpost
     Offset: '0x4d0'
     Size: '0x8'
-    Type: Class SpotLightComponent*
-  - Name: SpotLight6
+    Type: Class ChildActorComponent*
+  - Name: SpotLight7
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: SpotLight5
+  - Name: SpotLight6
     Offset: '0x4e0'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: wsp_light_plate_b
+  - Name: SpotLight5
     Offset: '0x4e8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: ChildActor10
+    Type: Class SpotLightComponent*
+  - Name: wsp_light_plate_b
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ChildActor9
+  - Name: ChildActor10
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ChildActor6
+  - Name: ChildActor9
     Offset: '0x500'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Rain_Blocker
+  - Name: ChildActor6
     Offset: '0x508'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: StaticMesh57
+    Type: Class ChildActorComponent*
+  - Name: Rain_Blocker
     Offset: '0x510'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -594,7 +594,7 @@ BP_tavern_WSP_01_b_C:
     Offset: '0x860'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x868'
     Size: '0x8'
     Type: Class PointLightComponent*
@@ -606,15 +606,15 @@ BP_tavern_WSP_01_b_C:
     Offset: '0x878'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x880'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x888'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x890'
     Size: '0x8'
     Type: Class PointLightComponent*

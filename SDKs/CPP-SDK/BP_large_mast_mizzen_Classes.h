@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_large_mast_mizzen_C: public BP_Mast_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa28(0x8)
-	Class StaticMeshComponent*                                   shp_flag_pennant_01_b;                             // 0xa30(0x8)
-	Class StaticMeshComponent*                                   shp_flag_pennant_pole_01_a;                        // 0xa38(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa38(0x8)
+	Class StaticMeshComponent*                                   shp_flag_pennant_01_b;                             // 0xa40(0x8)
+	Class StaticMeshComponent*                                   shp_flag_pennant_pole_01_a;                        // 0xa48(0x8)
 };
 
 

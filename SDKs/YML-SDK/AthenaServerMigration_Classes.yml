@@ -6,6 +6,12 @@ AthenaServerMigrationGameAuthorityProviderInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+MigrationProgressInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 MigrationServiceInterface:
   Attributes: []
   ClassSize: '0x0'

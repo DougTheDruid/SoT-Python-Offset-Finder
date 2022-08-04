@@ -80,7 +80,7 @@ MovieSceneEvaluationFieldSegmentPtr:
   ClassSize: '0xc'
 MovieSceneEvaluationFieldTrackPtr:
   Attributes:
-  - Name: SequenceId
+  - Name: SequenceID
     Offset: '0x0'
     Size: '0x4'
     Type: Struct MovieSceneSequenceID

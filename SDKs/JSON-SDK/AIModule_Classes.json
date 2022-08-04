@@ -3085,52 +3085,58 @@
         "Offset": "0x5e8"
       },
       {
+        "Name": "ContextToLinkWithThis",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
         "Name": "TimeLimitPerStep",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5f8"
+        "Offset": "0x600"
       },
       {
         "Name": "StepToDebugDraw",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x5fc"
+        "Offset": "0x604"
       },
       {
         "Name": "HighlightMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x600"
+        "Offset": "0x608"
       },
       {
         "Name": "bDrawLabels",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x604"
+        "Offset": "0x60c"
       },
       {
         "Name": "bDrawFailedItems",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x604"
+        "Offset": "0x60c"
       },
       {
         "Name": "bReRunQueryOnlyOnFinishedMove",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x604"
+        "Offset": "0x60c"
       },
       {
         "Name": "bShouldBeVisibleInGame",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x604"
+        "Offset": "0x60c"
       },
       {
         "Name": "QueryingMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x608"
+        "Offset": "0x610"
       }
     ]
   },

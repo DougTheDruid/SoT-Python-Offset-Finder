@@ -1,15 +1,22 @@
 {
-  "BP_gmp_fireworks_rocket_01_a_CursedBones_ItemDesc_C": {
+  "BP_gmp_fireworks_rocket_01_a_WondersOfTheSea_ItemDesc_C": {
     "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_gmp_fireworks_rocket_01_a_SunsetSailing_ItemDesc_C": {
+  "BP_gmp_fireworks_rocket_01_a_ScarletMacaw_ItemDesc_C": {
     "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_gmp_fireworks_rocket_01_a_SolarFlare_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },

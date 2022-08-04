@@ -245,6 +245,74 @@
       }
     ]
   },
+  "bsp_beach_rocks_06_a_C": {
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x458",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "wsp_rock_pebbles_a_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "wsp_rock_pebbles_c_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "wsp_rock_xtra_small_e_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "wsp_rock_pebbles_f_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "wsp_rock_xtra_small_a_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "wsp_rock_pebbles_e_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "wsp_rock_pebbles_b_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "wsp_rock_pebbles_e_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "wsp_rock_xtra_small_d_01",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "wsp_rock_pebbles_d_02",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      }
+    ]
+  },
   "bsp_beach_rocks_05_C": {
     "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x488",
@@ -652,104 +720,6 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x488"
-      }
-    ]
-  },
-  "bsp_beach_rocks_01_b_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x480",
-    "InheritedSize": "0x408",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "wsp_rock_cliff_o_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "wsp_rock_pebbles_e_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "wsp_rock_pebbles_d_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "wsp_rock_xtra_small_b_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "wsp_rock_pebbles_h_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "wsp_rock_xtra_small_a_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "wsp_rock_xtra_small_d_02",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "wsp_rock_cliff_m_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "wsp_rock_xtra_small_d_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "wsp_rock_xtra_small_e_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "wsp_rock_pebbles_b_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "wsp_rock_pebbles_c_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "wsp_rock_pebbles_a_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "wsp_rock_pebbles_f_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "wsp_rock_pebbles_g_01",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x478"
       }
     ]
   },

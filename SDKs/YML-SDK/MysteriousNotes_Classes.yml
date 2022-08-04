@@ -15,8 +15,8 @@ LookingAtMysteriousNoteInputComponent:
 MysteriousNoteDesc:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 MysteriousNoteSettings:
   Attributes:

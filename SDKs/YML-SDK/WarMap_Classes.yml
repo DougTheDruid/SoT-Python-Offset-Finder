@@ -3,30 +3,22 @@
 WarMapInteractionComponent:
   Attributes:
   - Name: OpenMapInteractionText
-    Offset: '0x130'
+    Offset: '0x120'
     Size: '0x38'
     Type: Struct FText
   - Name: CannotOpenMapInteractionText
-    Offset: '0x168'
+    Offset: '0x158'
     Size: '0x38'
     Type: Struct FText
   - Name: OpenMapInputId
-    Offset: '0x1a0'
+    Offset: '0x190'
     Size: '0x8'
     Type: class
-  - Name: CrewShipManifest
-    Offset: '0x1a8'
-    Size: '0x8'
-    Type: Class CrewShipManifest*
-  - Name: ShipCrewHasJoinedFaction
-    Offset: '0x1b0'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x230'
-  FullSize: '0x350'
-  InheritedSize: '0x120'
-  Super: ActionRulesInteractableComponent
-WarMapInteractionComponentInterface:
+  ClassSize: '0xa0'
+  FullSize: '0x1b8'
+  InheritedSize: '0x118'
+  Super: InteractableComponent
+WarMapStateInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'

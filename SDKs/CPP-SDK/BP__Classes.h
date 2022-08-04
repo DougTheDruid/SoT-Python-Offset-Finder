@@ -7,6 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
+class BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C: public None
+{
+public:
+};
+
+
+// Size 0x0
 class BP_wpn_flintlock_pistol_skd_01_a_ItemDesc_C: public ItemDesc
 {
 public:
@@ -465,9 +472,9 @@ public:
 class BP_fod_KrakenMeatRaw_00_a_ItemInfo_C: public BP_MeatItemInfo_C
 {
 public:
-	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x560(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x568(0x8)
-	Class CookableComponent*                                     Cookable;                                          // 0x570(0x8)
+	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x578(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x580(0x8)
+	Class CookableComponent*                                     Cookable;                                          // 0x588(0x8)
 };
 
 
@@ -489,9 +496,9 @@ public:
 class BP_fod_KrakenMeatRawBite1_00_a_ItemInfo_C: public BP_MeatItemInfo_C
 {
 public:
-	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x560(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x568(0x8)
-	Class CookableComponent*                                     Cookable;                                          // 0x570(0x8)
+	Class MaterialManipulationSettingsComponent*                 MaterialManipulationSettings;                      // 0x578(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightweightStatusEffectManager;                    // 0x580(0x8)
+	Class CookableComponent*                                     Cookable;                                          // 0x588(0x8)
 };
 
 
@@ -555,8 +562,8 @@ public:
 };
 
 
-// Size 0x0
-class BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C: public BootyItemDesc
+// Size -0x43c5eb7d
+class BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C
 {
 public:
 };

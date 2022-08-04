@@ -232,6 +232,25 @@ AIBountySpawnerWaveLocation:
     Size: '0x1'
     Type: bool
   ClassSize: '0x14'
+AICountTelemetryEvent:
+  Attributes:
+  - Name: NumTotalSpawns
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: CurrentTotalWorldAICostUnits
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: NumActiveRegions
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: NumPlayers
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
 AICustomClassIdNameOverrides:
   Attributes:
   - Name: ClassIds
@@ -457,7 +476,15 @@ AIEncounterAndWaveSettingsOverride:
     Offset: '0x14'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x20'
+  - Name: RequiredStory
+    Offset: '0x1c'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  - Name: UseStoryAndNotFeatureToggle
+    Offset: '0x24'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'
 AIEncounterGenerationRecipeFeatureBasedRankOrderList:
   Attributes:
   - Name: FeatureName
@@ -709,9 +736,35 @@ AIPerCrewSpawnerCrewUnit:
     Size: '0x10'
     Type: TArray<Struct AISpawnerWave>
   ClassSize: '0x30'
+AIPerCrewSpawnerRespawnSettings:
+  Attributes:
+  - Name: MinRespawnTimeInterval
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MaxRespawnTimeInterval
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: RespawnChance
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
 AIPerCrewSpawnerRespawnUnit:
   Attributes: []
   ClassSize: '0x18'
+AIPerCrewSpawnerStoryBasedRespawnSettings:
+  Attributes:
+  - Name: RespawnSettings
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct AIPerCrewSpawnerRespawnSettings
+  - Name: StoryFlag
+    Offset: '0xc'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  ClassSize: '0x14'
 AIPerPlayerSpawnerPlayerDetailsUnit:
   Attributes: []
   ClassSize: '0x30'

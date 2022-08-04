@@ -3,8 +3,8 @@
 AIPetsOnDemandSpawner:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x430'
-  InheritedSize: '0x430'
+  FullSize: '0x438'
+  InheritedSize: '0x438'
   Super: AISpawner
 BTDecorator_IsForcingHangout:
   Attributes: []
@@ -322,12 +322,16 @@ PetCustomisationOverrideDataAsset:
     Offset: '0x28'
     Size: '0x8'
     Type: class
-  - Name: DebugMenuName
+  - Name: FiredFromActorSFX
     Offset: '0x30'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: DebugMenuName
+    Offset: '0x38'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 PetCustomisationOverrideMappingsDataAsset:
@@ -375,16 +379,16 @@ PetDangerDataAsset:
 PetDesc:
   Attributes:
   - Name: PetSpawnParams
-    Offset: '0x130'
+    Offset: '0x120'
     Size: '0x8'
     Type: Class PetSpawnParamsDataAsset*
   - Name: PreviewPetClass
-    Offset: '0x138'
+    Offset: '0x128'
     Size: '0x8'
     Type: class
   ClassSize: '0x10'
-  FullSize: '0x140'
-  InheritedSize: '0x130'
+  FullSize: '0x130'
+  InheritedSize: '0x120'
   Super: ItemDesc
 PetFeedingDataAsset:
   Attributes:
@@ -489,32 +493,32 @@ PetIdleMovementInterface:
 PetItemInfo:
   Attributes:
   - Name: PetCustomisation
-    Offset: '0x510'
+    Offset: '0x528'
     Size: '0x18'
     Type: Struct PetCustomisation
   - Name: PetOwner
-    Offset: '0x528'
+    Offset: '0x540'
     Size: '0x8'
     Type: Class Actor*
   - Name: SpawnedForShip
-    Offset: '0x530'
+    Offset: '0x548'
     Size: '0x8'
     Type: Class Actor*
   - Name: DropTraceDistance
-    Offset: '0x538'
+    Offset: '0x550'
     Size: '0x4'
     Type: float
   - Name: PointSearchRadius
-    Offset: '0x53c'
+    Offset: '0x554'
     Size: '0x4'
     Type: float
   - Name: DropChannel
-    Offset: '0x540'
+    Offset: '0x558'
     Size: '0x1'
     Type: byte
   ClassSize: '0x60'
-  FullSize: '0x558'
-  InheritedSize: '0x4f8'
+  FullSize: '0x570'
+  InheritedSize: '0x510'
   Super: NonStorableItemInfo
 PetLifetimeInterface:
   Attributes: []

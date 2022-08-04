@@ -67,9 +67,9 @@ public:
 class FireworkItemInfo: public ItemInfo
 {
 public:
-	Class LoadableFireworkComponent*                             LoadableProjectileComponent;                       // 0x4f8(0x8)
-	Struct StringAssetReference                                  FireworkDataAsset;                                 // 0x500(0x10)
-	int                                                          GeneratedDataRNGSeed;                              // 0x510(0x4)
+	Class LoadableFireworkComponent*                             LoadableProjectileComponent;                       // 0x510(0x8)
+	Struct StringAssetReference                                  FireworkDataAsset;                                 // 0x518(0x10)
+	int                                                          GeneratedDataRNGSeed;                              // 0x528(0x4)
 };
 
 

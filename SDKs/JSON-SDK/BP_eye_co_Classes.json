@@ -1,85 +1,85 @@
 {
   "BP_eye_col_green_03_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_green_02_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_green_01_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_brown_03_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_brown_02_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_brown_01_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_blue_03_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_blue_02_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_blue_01_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_black_03_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_black_02_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_eye_col_black_01_Desc_C": {
     "Super": "ClothingDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },

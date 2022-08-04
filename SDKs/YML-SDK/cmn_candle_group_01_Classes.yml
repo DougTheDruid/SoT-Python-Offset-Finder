@@ -2,27 +2,27 @@
 # https://github.com/DougTheDruid
 cmn_candle_group_01_C:
   Attributes:
-  - Name: StaticMeshComponent02
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent01
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent0
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: ParticleSystemComponent01
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystemComponent0
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: SharedRoot
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class SceneComponent*

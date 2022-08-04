@@ -6,87 +6,95 @@ BP_PiratePreview_C:
     Offset: '0x7b0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: Camera_SideView
+  - Name: Camera_Behind
     Offset: '0x7b8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_ProfileImage
+  - Name: Camera_SideViewLeft
     Offset: '0x7c0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Head_old
+  - Name: Camera_SideView
     Offset: '0x7c8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Hat
+  - Name: Camera_ProfileImage
     Offset: '0x7d0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Gloves
+  - Name: Head_old
     Offset: '0x7d8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Boots
+  - Name: Camera_Hat
     Offset: '0x7e0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_PegLeg
+  - Name: Camera_Gloves
     Offset: '0x7e8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Hook
+  - Name: Camera_Boots
     Offset: '0x7f0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Glove
+  - Name: Camera_PegLeg
     Offset: '0x7f8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Torso
+  - Name: Camera_Hook
     Offset: '0x800'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Mid
+  - Name: Camera_Glove
     Offset: '0x808'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Legs
+  - Name: Camera_Torso
     Offset: '0x810'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Feet
+  - Name: Camera_Mid
     Offset: '0x818'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Head
+  - Name: Camera_Legs
     Offset: '0x820'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Default
+  - Name: Camera_Feet
     Offset: '0x828'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: ChildActor
+  - Name: Camera_Head
     Offset: '0x830'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: Camera_Default
+    Offset: '0x838'
+    Size: '0x8'
+    Type: Class ArrowComponent*
+  - Name: ChildActor
+    Offset: '0x840'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: HiddenDftMesh
-    Offset: '0x838'
+    Offset: '0x848'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
   - Name: PirateMesh
-    Offset: '0x840'
+    Offset: '0x850'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
   - Name: Camera
-    Offset: '0x848'
+    Offset: '0x858'
     Size: '0x8'
     Type: Class CameraComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x850'
+    Offset: '0x860'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0xd8'
-  FullSize: '0x888'
+  ClassSize: '0xe8'
+  FullSize: '0x898'
   InheritedSize: '0x7b0'
   Super: PiratePreviewActor

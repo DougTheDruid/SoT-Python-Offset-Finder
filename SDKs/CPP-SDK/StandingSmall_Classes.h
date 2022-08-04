@@ -33,16 +33,6 @@ public:
 };
 
 
-// Size 0x18
-class BP_Trinket_PotionBottles_01_a_C: public BP_Trinket_StandingSmall_C
-{
-public:
-	Class StaticMeshComponent*                                   ptn_pois_01_b;                                     // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   ptn_pois_01_c;                                     // 0x400(0x8)
-	Class StaticMeshComponent*                                   ptn_pois_01_d;                                     // 0x408(0x8)
-};
-
-
 // Size 0x8
 class BP_Trinket_Pot_01_a_C: public BP_Trinket_StandingSmall_C
 {
@@ -55,11 +45,11 @@ public:
 class BP_Trinket_PanStack_01_a_C: public BP_Trinket_StandingSmall_C
 {
 public:
-	Class StaticMeshComponent*                                   cmn_cooking__pot_011;                              // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cmn_cooking__pot_01;                               // 0x400(0x8)
-	Class StaticMeshComponent*                                   cmn_fishing_cooker_lid_01_a;                       // 0x408(0x8)
-	Class StaticMeshComponent*                                   shp_fry_pan_01_a1;                                 // 0x410(0x8)
-	Class StaticMeshComponent*                                   shp_fry_pan_01_a;                                  // 0x418(0x8)
+	Class StaticMeshComponent*                                   shp_fry_pan_01_a1;                                 // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   shp_fry_pan_01_a;                                  // 0x400(0x8)
+	Class StaticMeshComponent*                                   cmn_cooking__pot_011;                              // 0x408(0x8)
+	Class StaticMeshComponent*                                   cmn_cooking__pot_01;                               // 0x410(0x8)
+	Class StaticMeshComponent*                                   cmn_fishing_cooker_lid_01_a;                       // 0x418(0x8)
 };
 
 
@@ -105,14 +95,6 @@ class BP_Trinket_FishBones_02_a_C: public BP_Trinket_StandingSmall_C
 {
 public:
 	Class StaticMeshComponent*                                   gmp_fishing_bones_01_a;                            // 0x3f8(0x8)
-};
-
-
-// Size 0x8
-class BP_Trinket_DishStack_01_a_C: public BP_Trinket_StandingSmall_C
-{
-public:
-	Class StaticMeshComponent*                                   cmn_clay_dish_stack_01_a;                          // 0x3f8(0x8)
 };
 
 

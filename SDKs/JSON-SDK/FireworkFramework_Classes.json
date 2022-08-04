@@ -171,27 +171,27 @@
   },
   "FireworkItemInfo": {
     "Super": "ItemInfo",
-    "FullSize": "0x518",
-    "InheritedSize": "0x4f8",
+    "FullSize": "0x530",
+    "InheritedSize": "0x510",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "LoadableProjectileComponent",
         "Type": "Class LoadableFireworkComponent*",
         "Size": "0x8",
-        "Offset": "0x4f8"
+        "Offset": "0x510"
       },
       {
         "Name": "FireworkDataAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x500"
+        "Offset": "0x518"
       },
       {
         "Name": "GeneratedDataRNGSeed",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x510"
+        "Offset": "0x528"
       }
     ]
   },

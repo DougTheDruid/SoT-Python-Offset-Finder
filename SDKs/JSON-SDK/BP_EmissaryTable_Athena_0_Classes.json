@@ -1,81 +1,99 @@
 {
   "BP_EmissaryTable_Athena_01_C": {
     "Super": "BP_EmissaryTable_01_C",
-    "FullSize": "0x698",
+    "FullSize": "0x6b0",
     "InheritedSize": "0x638",
-    "ClassSize": "0x60",
+    "ClassSize": "0x78",
     "Attributes": [
+      {
+        "Name": "UberGraphFrame",
+        "Type": "Struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
       {
         "Name": "PointLight",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x640"
       },
       {
         "Name": "EmissaryShipAffiliationTracker",
         "Type": "Class EmissaryShipAffiliationTrackerComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x648"
       },
       {
         "Name": "vfx_candle_01_magic2",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x648"
+        "Offset": "0x650"
       },
       {
         "Name": "vfx_candle_01_magic1",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x658"
       },
       {
         "Name": "vfx_candle_01_magic",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x660"
       },
       {
         "Name": "wpn_cutlass_leg_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x668"
       },
       {
         "Name": "cmn_candle_01_d",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x670"
       },
       {
         "Name": "con_cover_page_leg_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x670"
+        "Offset": "0x678"
       },
       {
         "Name": "cmn_candle_01_c",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x678"
+        "Offset": "0x680"
       },
       {
         "Name": "cmn_candle_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x680"
+        "Offset": "0x688"
       },
       {
         "Name": "cmn_candle_01_e",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x688"
+        "Offset": "0x690"
       },
       {
         "Name": "cap_desk_model_leg_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x690"
+        "Offset": "0x698"
+      },
+      {
+        "Name": "NewTableMesh",
+        "Type": "Class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "ToggleName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x6a8"
       }
     ]
   },

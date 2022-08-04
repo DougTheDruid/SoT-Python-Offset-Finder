@@ -7,34 +7,6 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class MeshMemoryConstraintCategory_Scroll_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_Pouch_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_Crate_GoodsOneHanded_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_Bottle_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
 class MeshMemoryConstraintCategory_AI_Skeleton_Bone_C: public MeshMemoryConstraintCategory
 {
 public:
@@ -112,7 +84,28 @@ public:
 
 
 // Size 0x0
-class MeshMemoryConstraintCategory_ShipPartCustomization_Wheel_C: public MeshMemoryConstraintCategory
+class MeshMemoryConstraintCategory_Scroll_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_Pouch_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_Crate_GoodsOneHanded_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_Bottle_C: public MeshMemoryConstraintCategory
 {
 public:
 };
@@ -133,35 +126,7 @@ public:
 
 
 // Size 0x0
-class MeshMemoryConstraintCategory_ShipPartCustomization_VoyageTable_: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsCurt: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_ShipPartCustomization_ChandelierFl: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_ShipPartCustomization_Chandelier_C: public MeshMemoryConstraintCategory
-{
-public:
-};
-
-
-// Size 0x0
-class MeshMemoryConstraintCategory_ShipPartCustomization_CapstanBody_: public MeshMemoryConstraintCategory
+class MeshMemoryConstraintCategory_ShipPartCustomization_Wheel_C: public MeshMemoryConstraintCategory
 {
 public:
 };
@@ -169,6 +134,13 @@ public:
 
 // Size 0x0
 class MeshMemoryConstraintCategory_ShipPartCustomization_CapstanRelea: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_CapstanBody_: public MeshMemoryConstraintCategory
 {
 public:
 };
@@ -190,6 +162,48 @@ public:
 
 // Size 0x0
 class MeshMemoryConstraintCategory_ShipPartCustomization_CannonBarrel: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsLog_: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_VoyageTable_: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_ChandelierFl: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_Chandelier_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_Chair_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_ShipPartCustomization_CaptainsCurt: public MeshMemoryConstraintCategory
 {
 public:
 };

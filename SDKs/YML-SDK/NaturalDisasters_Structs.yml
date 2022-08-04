@@ -29,6 +29,17 @@ EarthquakeForceFeedbackOption:
     Size: '0x10'
     Type: TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>
   ClassSize: '0x10'
+EarthquakeStoryCustomisationData:
+  Attributes:
+  - Name: StoryFlag
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  - Name: EarthquakeSetupData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class EarthquakeSetupDataAsset*
+  ClassSize: '0x10'
 EventVolcanoStateChanged:
   Attributes:
   - Name: State

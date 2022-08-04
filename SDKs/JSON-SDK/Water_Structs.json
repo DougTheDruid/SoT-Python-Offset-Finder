@@ -1,72 +1,35 @@
 {
-  "SplashProbe": {
-    "ClassSize": "0x128",
+  "WaterInformation": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Probe",
-        "Type": "Struct WaterSplashProbe",
-        "Size": "0xd8",
+        "Name": "WaterType",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CanSwim",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "WaterSplashProbesContainer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Probes",
+        "Type": "TArray<Struct WaterSplashProbe>",
+        "Size": "0x10",
+        "Offset": "0x0"
       },
       {
         "Name": "ProbeSamplingTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "TimeBetweenProbeVfx",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      },
-      {
-        "Name": "ParticleSystem",
-        "Type": "Class Object*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "UnderwaterUsage",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "SpawnAttached",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf1"
-      },
-      {
-        "Name": "AttachToWaterSurface",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf2"
-      },
-      {
-        "Name": "SplashAttachType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xf3"
-      },
-      {
-        "Name": "VfxSpawnOffset",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0xf4"
-      },
-      {
-        "Name": "Enabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "CurrentlyPlayingVFX",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x108"
+        "Offset": "0x10"
       }
     ]
   },
@@ -147,37 +110,74 @@
       }
     ]
   },
-  "WaterInformation": {
-    "ClassSize": "0x10",
+  "SplashProbe": {
+    "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "WaterType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CanSwim",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "Probe",
+        "Type": "Struct WaterSplashProbe",
+        "Size": "0xd8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "WaterSplashProbesContainer": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Probes",
-        "Type": "TArray<Struct WaterSplashProbe>",
-        "Size": "0x10",
-        "Offset": "0x0"
       },
       {
         "Name": "ProbeSamplingTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x10"
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "TimeBetweenProbeVfx",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "ParticleSystem",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "UnderwaterUsage",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "SpawnAttached",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf1"
+      },
+      {
+        "Name": "AttachToWaterSurface",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf2"
+      },
+      {
+        "Name": "SplashAttachType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xf3"
+      },
+      {
+        "Name": "VfxSpawnOffset",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0xf4"
+      },
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "CurrentlyPlayingVFX",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x108"
       }
     ]
   },

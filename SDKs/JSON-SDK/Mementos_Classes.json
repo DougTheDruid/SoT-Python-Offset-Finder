@@ -1,15 +1,15 @@
 {
   "BP_Emote_ForsakenHunter_MaskedAssailant_Desc_C": {
     "Super": "EmoteDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x110",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Title_ForsakenHunter_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },

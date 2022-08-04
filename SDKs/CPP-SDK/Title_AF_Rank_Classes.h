@@ -7,14 +7,21 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class Title_AF_Rank3_001_EmissaryOfFortuneVoyagers_C: public TitleDesc
+class Title_AF_Rank2_001_EmissaryOfFortuneGuardians_C: public TitleDesc
 {
 public:
 };
 
 
 // Size 0x0
-class Title_AF_Rank2_001_EmissaryOfFortuneGuardians_C: public TitleDesc
+class Title_AF_Rank1_001_LegendaryEmissaryOfFortune_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_AF_Rank3_001_EmissaryOfFortuneVoyagers_C: public TitleDesc
 {
 public:
 };

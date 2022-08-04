@@ -86,16 +86,10 @@ CallObjectFunctionStepDesc:
   Super: TaleQuestStepDesc
 ContendedResourceComponent:
   Attributes: []
-  ClassSize: '0x38'
-  FullSize: '0x100'
+  ClassSize: '0x40'
+  FullSize: '0x108'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ContendedResourceServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 CutsceneResponsesTaleService:
   Attributes:
   - Name: TrackedResponseCoordinators
@@ -186,6 +180,22 @@ DoEQSQueryStepDesc:
     Type: Struct QuestVariableArray
   ClassSize: '0x28'
   FullSize: '0xa8'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+EnableInteractionWithActorStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+EnableInteractionWithActorStepDesc:
+  Attributes:
+  - Name: TargetActor
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x20'
+  FullSize: '0xa0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 EnvQueryContext_TaleContextBase:
@@ -704,6 +714,22 @@ PlaySequencerAnimationStepDesc:
     Type: Class LevelSequence*
   ClassSize: '0xb8'
   FullSize: '0x138'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+PreventInteractionWithActorStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+PreventInteractionWithActorStepDesc:
+  Attributes:
+  - Name: TargetActor
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x20'
+  FullSize: '0xa0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 ProvokeHitReactionDesc:
@@ -1882,12 +1908,16 @@ TaleQuestGrantRewardStepDesc:
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
+  - Name: SpecificPlayerToAward
+    Offset: '0xa8'
+    Size: '0x20'
+    Type: Struct QuestVariablePlayerActor
   - Name: Feature
-    Offset: '0xa4'
+    Offset: '0xc8'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x30'
-  FullSize: '0xb0'
+  ClassSize: '0x50'
+  FullSize: '0xd0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestImportFrame:
@@ -1916,6 +1946,26 @@ TaleQuestIntMathsFunctionLibrary:
   FullSize: '0x170'
   InheritedSize: '0x170'
   Super: TaleQuestFunctionStepLibrary
+TaleQuestInteractionPreventionService:
+  Attributes:
+  - Name: TrackedInteractionActors
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<class TrackedInteractionActors*>
+  - Name: Desc
+    Offset: '0x70'
+    Size: '0x8'
+    Type: Class TaleQuestInteractionPreventionServiceDesc*
+  ClassSize: '0x18'
+  FullSize: '0x78'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+TaleQuestInteractionPreventionServiceDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
 TaleQuestMakeStructStep:
   Attributes: []
   ClassSize: '0x0'
@@ -1930,8 +1980,8 @@ TaleQuestMakeStructStepDesc:
   Super: TaleQuestStructStepDescBase
 TaleQuestMapService:
   Attributes: []
-  ClassSize: '0xa0'
-  FullSize: '0x100'
+  ClassSize: '0xb0'
+  FullSize: '0x110'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestMapServiceDesc:
@@ -2149,9 +2199,13 @@ TaleQuestShipSurfaceStep:
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestShipSurfaceStepDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
+  Attributes:
+  - Name: TimeToSurface
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+  FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestStartCameraFadeStep:
@@ -2438,6 +2492,26 @@ ValueProviderStepInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+VisualiseLoggerEQSResultsTaleStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+VisualiseLoggerEQSResultsTaleStepDesc:
+  Attributes:
+  - Name: ResultsArray
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableArray
+  - Name: SelectedResult
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableVector
+  ClassSize: '0x40'
+  FullSize: '0xc0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 WaitForActorOfInterestToUnregisterStep:
   Attributes:
   - Name: Desc
@@ -2520,9 +2594,3 @@ WaitUntilAnyParticipantEntersRadiusStep:
   FullSize: '0xc8'
   InheritedSize: '0xc8'
   Super: ParticipantRadiusTrackerStepDesc
-WorldResourceRegistryInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

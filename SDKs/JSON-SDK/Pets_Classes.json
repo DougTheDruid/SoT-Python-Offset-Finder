@@ -1,8 +1,8 @@
 {
   "AIPetsOnDemandSpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x430",
-    "InheritedSize": "0x430",
+    "FullSize": "0x438",
+    "InheritedSize": "0x438",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -383,21 +383,21 @@
   },
   "PetDesc": {
     "Super": "ItemDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x130",
+    "FullSize": "0x130",
+    "InheritedSize": "0x120",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "PetSpawnParams",
         "Type": "Class PetSpawnParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x130"
+        "Offset": "0x120"
       },
       {
         "Name": "PreviewPetClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x138"
+        "Offset": "0x128"
       }
     ]
   },
@@ -543,9 +543,9 @@
   },
   "PetCustomisationOverrideDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x40",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "AnimationOverrideId",
@@ -554,10 +554,16 @@
         "Offset": "0x28"
       },
       {
+        "Name": "FiredFromActorSFX",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
         "Name": "DebugMenuName",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x38"
       }
     ]
   },
@@ -697,45 +703,45 @@
   },
   "PetItemInfo": {
     "Super": "NonStorableItemInfo",
-    "FullSize": "0x558",
-    "InheritedSize": "0x4f8",
+    "FullSize": "0x570",
+    "InheritedSize": "0x510",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "PetCustomisation",
         "Type": "Struct PetCustomisation",
         "Size": "0x18",
-        "Offset": "0x510"
+        "Offset": "0x528"
       },
       {
         "Name": "PetOwner",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x528"
+        "Offset": "0x540"
       },
       {
         "Name": "SpawnedForShip",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x530"
+        "Offset": "0x548"
       },
       {
         "Name": "DropTraceDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x538"
+        "Offset": "0x550"
       },
       {
         "Name": "PointSearchRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x53c"
+        "Offset": "0x554"
       },
       {
         "Name": "DropChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x540"
+        "Offset": "0x558"
       }
     ]
   },

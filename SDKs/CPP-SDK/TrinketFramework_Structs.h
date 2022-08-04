@@ -13,7 +13,7 @@ public:
 	Struct FString                                               ItemDesc;                                          // 0x0(0x10)
 	int                                                          PlacedValue;                                       // 0x10(0x4)
 	int                                                          PlacedThreshold;                                   // 0x14(0x4)
-	Struct FString                                               OwnerXUID;                                         // 0x18(0x10)
+	Struct FString                                               OwnerGamerTag;                                     // 0x18(0x10)
 };
 
 

@@ -1,22 +1,22 @@
 {
   "AHuntersCry_MerrickSavedEntitlement_C": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AHuntersCry_SerikDialogTempEntitlement_C": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AHuntersCry_LarinnaDialogTempEntitlement_C": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },

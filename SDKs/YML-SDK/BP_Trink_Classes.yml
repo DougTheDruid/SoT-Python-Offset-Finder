@@ -14,6 +14,34 @@ BP_Trinket_AncientTerror_01_a_C:
   FullSize: '0x408'
   InheritedSize: '0x3f8'
   Super: BP_Trinket_StandingSmall_C
+BP_Trinket_Anvil_01_d_C:
+  Attributes:
+  - Name: cap_plinth_01_d
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: cap_desk_model_blk_01_a
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x10'
+  FullSize: '0x408'
+  InheritedSize: '0x3f8'
+  Super: BP_Trinket_StandingSmall_C
+BP_Trinket_CloudyPlentifinPlaque_01_d_C:
+  Attributes:
+  - Name: StaticMesh1
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMesh
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x10'
+  FullSize: '0x408'
+  InheritedSize: '0x3f8'
+  Super: BP_Trinket_HangingSinglePoint_C
 BP_Trinket_FerrySkeleton_01_b_C:
   Attributes:
   - Name: cap_desk_model_fod_01_a
@@ -70,3 +98,17 @@ BP_Trinket_Orb_01_b_C:
   FullSize: '0x408'
   InheritedSize: '0x3f8'
   Super: BP_Trinket_StandingSmall_C
+BP_Trinket_RubySplashtailPlaque_01_d_C:
+  Attributes:
+  - Name: StaticMesh1
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMesh
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x10'
+  FullSize: '0x408'
+  InheritedSize: '0x3f8'
+  Super: BP_Trinket_HangingSinglePoint_C

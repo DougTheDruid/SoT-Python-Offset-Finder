@@ -6,6 +6,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "MeshMemoryConstraintBudget_AI_C": {
+    "Super": "MeshMemoryConstraintBudget",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MeshMemoryConstraintBudget_WieldableItems_C": {
     "Super": "MeshMemoryConstraintBudget",
     "FullSize": "0x28",
@@ -21,13 +28,6 @@
     "Attributes": []
   },
   "MeshMemoryConstraintBudget_ShipCabinCustomization_C": {
-    "Super": "MeshMemoryConstraintBudget",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MeshMemoryConstraintBudget_AI_C": {
     "Super": "MeshMemoryConstraintBudget",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

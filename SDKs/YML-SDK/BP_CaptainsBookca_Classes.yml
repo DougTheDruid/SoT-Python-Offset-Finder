@@ -3,158 +3,118 @@
 BP_CaptainsBookcase_01_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x670'
+    Offset: '0x658'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: gmp_key_pirateLegends_03
+  - Name: OrderOfSouls_ScrollStack
+    Offset: '0x660'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: MerchantsAliance_ScrollStack
+    Offset: '0x668'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Mercenary_ScrollStack
+    Offset: '0x670'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Legendary_ScrollStack
     Offset: '0x678'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: gmp_key_pirateLegends_02
+  - Name: GoldHoarder_ScrollStack
     Offset: '0x680'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: gmp_key_pirateLegends_01
+  - Name: gmp_key_pirateLegends_03
     Offset: '0x688'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_leg
+  - Name: gmp_key_pirateLegends_02
     Offset: '0x690'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_leg
+  - Name: gmp_key_pirateLegends_01
     Offset: '0x698'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_leg
+  - Name: Plant
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_mcn
+  - Name: coin_02
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_mcn
+  - Name: coin_03
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_mcn
+  - Name: coin_04
     Offset: '0x6b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_oos
+  - Name: bottle
     Offset: '0x6c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_oos
+  - Name: coin_05
     Offset: '0x6c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_oos
+  - Name: coin_06
     Offset: '0x6d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_mrh
+  - Name: skull
     Offset: '0x6d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_mrh
+  - Name: dagger
     Offset: '0x6e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_mrh
+  - Name: coin_01
     Offset: '0x6e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_gld
+  - Name: Bookcase
     Offset: '0x6f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Indicator_gld
-    Offset: '0x6f8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Indicator_gld
-    Offset: '0x700'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Plant
-    Offset: '0x708'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: coin_02
-    Offset: '0x710'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: coin_03
-    Offset: '0x718'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: coin_04
-    Offset: '0x720'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: bottle
-    Offset: '0x728'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: coin_05
-    Offset: '0x730'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: coin_06
-    Offset: '0x738'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: skull
-    Offset: '0x740'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: dagger
-    Offset: '0x748'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: coin_01
-    Offset: '0x750'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Bookcase
-    Offset: '0x758'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
   - Name: Company_GH
-    Offset: '0x760'
+    Offset: '0x6f8'
     Size: '0x8'
     Type: class
   - Name: Company_MA
-    Offset: '0x768'
+    Offset: '0x700'
     Size: '0x8'
     Type: class
   - Name: Company_OoS
-    Offset: '0x770'
+    Offset: '0x708'
     Size: '0x8'
     Type: class
   - Name: Company_Leg
-    Offset: '0x778'
+    Offset: '0x710'
     Size: '0x8'
     Type: class
   - Name: Company_Merc
-    Offset: '0x780'
+    Offset: '0x718'
     Size: '0x8'
     Type: class
   - Name: ThresholdOneScroll
-    Offset: '0x788'
+    Offset: '0x720'
     Size: '0x4'
     Type: float
   - Name: ThresholdTwoScrolls
-    Offset: '0x78c'
+    Offset: '0x724'
     Size: '0x4'
     Type: float
   - Name: ThresholdThreeScrolls
-    Offset: '0x790'
+    Offset: '0x728'
     Size: '0x4'
     Type: float
-  ClassSize: '0x124'
-  FullSize: '0x794'
-  InheritedSize: '0x670'
+  ClassSize: '0xd4'
+  FullSize: '0x72c'
+  InheritedSize: '0x658'
   Super: CaptainsBookcase

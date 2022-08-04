@@ -3,30 +3,30 @@
 Proposal_CursedRogue_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_CursedRogue_Chapter3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_TheAshenDragon_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_TheAshenDragon_Chapter3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_TheAshenDragon_Chapter4_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc

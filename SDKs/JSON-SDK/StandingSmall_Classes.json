@@ -59,32 +59,6 @@
       }
     ]
   },
-  "BP_Trinket_PotionBottles_01_a_C": {
-    "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x410",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ptn_pois_01_b",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "ptn_pois_01_c",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "ptn_pois_01_d",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      }
-    ]
-  },
   "BP_Trinket_Pot_01_a_C": {
     "Super": "BP_Trinket_StandingSmall_C",
     "FullSize": "0x400",
@@ -106,31 +80,31 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "cmn_cooking__pot_011",
+        "Name": "shp_fry_pan_01_a1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "cmn_cooking__pot_01",
+        "Name": "shp_fry_pan_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "cmn_fishing_cooker_lid_01_a",
+        "Name": "cmn_cooking__pot_011",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "shp_fry_pan_01_a1",
+        "Name": "cmn_cooking__pot_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "shp_fry_pan_01_a",
+        "Name": "cmn_fishing_cooker_lid_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
@@ -231,20 +205,6 @@
     "Attributes": [
       {
         "Name": "gmp_fishing_bones_01_a",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      }
-    ]
-  },
-  "BP_Trinket_DishStack_01_a_C": {
-    "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "cmn_clay_dish_stack_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"

@@ -14,15 +14,6 @@ public:
 };
 
 
-// Size 0x10
-class BP_Trinket_Target_02_a_C: public BP_Trinket_HangingSinglePoint_C
-{
-public:
-	Class StaticMeshComponent*                                   wpn_boarding_axe_smp_01_a;                         // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   bld_wpn_shop_hanging_target_broken_01_a;           // 0x400(0x8)
-};
-
-
 // Size 0x8
 class BP_Trinket_PinBoard_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
@@ -45,6 +36,16 @@ class BP_Trinket_HatRack_02_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
 	Class StaticMeshComponent*                                   cmn_shovel_02_a;                                   // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   shp_pistol_rack_01_a;                              // 0x400(0x8)
+	Class StaticMeshComponent*                                   cmn_hat_22_a;                                      // 0x408(0x8)
+};
+
+
+// Size 0x18
+class BP_Trinket_HatRack_01_a_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+	Class StaticMeshComponent*                                   cmn_hat_18_a;                                      // 0x3f8(0x8)
 	Class StaticMeshComponent*                                   shp_pistol_rack_01_a;                              // 0x400(0x8)
 	Class StaticMeshComponent*                                   cmn_hat_22_a;                                      // 0x408(0x8)
 };
@@ -78,16 +79,6 @@ public:
 	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i2;                        // 0x410(0x8)
 	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j1;                        // 0x418(0x8)
 	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i1;                        // 0x420(0x8)
-};
-
-
-// Size 0x18
-class BP_Trinket_Anchor_01_a_C: public BP_Trinket_HangingSinglePoint_C
-{
-public:
-	Class StaticMeshComponent*                                   shp_int_hook_01_a;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   shp_anchor_02_a;                                   // 0x400(0x8)
-	Class StaticMeshComponent*                                   shp_int_hook_01_a1;                                // 0x408(0x8)
 };
 
 

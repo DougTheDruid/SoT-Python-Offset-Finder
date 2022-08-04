@@ -1,162 +1,162 @@
 {
   "BP_BountyRewardSkull_AIShip_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Common+_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Common-_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Common_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Common_Desc_DVR_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Fort_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Legendary+_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Legendary-_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Legendary_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Legendary_Desc_DVR_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Mythical+_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Mythical-_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Mythical_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Mythical_Desc_DVR_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Rare+_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Rare-_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Rare_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BountyRewardSkull_Rare_Desc_DVR_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_BriggsysSkull_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Crystal_Skull_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_GoldHoarderSkull_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_GraymarrowSkull_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_Ritual_Skull_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -583,6 +583,26 @@
       }
     ]
   },
+  "AnimNotifyState_ToggleIK": {
+    "Super": "AnimNotifyState",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "IKLimbsToAdjust",
+        "Type": "TArray<Byte IKLimbsToAdjust>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "AthenaAnimationControllableSocketsInterface": {
     "Super": "Interface",
     "FullSize": "0x28",

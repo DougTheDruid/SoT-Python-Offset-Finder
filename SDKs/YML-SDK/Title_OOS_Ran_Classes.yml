@@ -3,18 +3,18 @@
 Title_OOS_Rank1_001_GrandeeOfMysticEmissaries_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_OOS_Rank2_001_EmissaryOfMysticChiefs_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc
 Title_OOS_Rank3_001_EmissaryOfMysticMercenaries_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xe0'
-  InheritedSize: '0xe0'
+  FullSize: '0xd0'
+  InheritedSize: '0xd0'
   Super: TitleDesc

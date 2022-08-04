@@ -1,105 +1,105 @@
 {
   "BP_FactionHourglass_C": {
-    "Super": "EmissaryVoteInteractionActor",
-    "FullSize": "0x660",
-    "InheritedSize": "0x5e0",
+    "Super": "FactionVoteInteractionActor",
+    "FullSize": "0x540",
+    "InheritedSize": "0x4c0",
     "ClassSize": "0x80",
     "Attributes": [
+      {
+        "Name": "FactionInteractionVote",
+        "Type": "Class FactionInteractionVoteComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "HourglassStand",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
       {
         "Name": "VoteIndicator8",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5e0"
+        "Offset": "0x4d0"
       },
       {
         "Name": "VoteIndicator7",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5e8"
+        "Offset": "0x4d8"
       },
       {
         "Name": "VoteIndicator6",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5f0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "VoteIndicator5",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5f8"
+        "Offset": "0x4e8"
       },
       {
         "Name": "VoteIndicator4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x600"
+        "Offset": "0x4f0"
       },
       {
         "Name": "VoteIndicator3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x608"
+        "Offset": "0x4f8"
       },
       {
         "Name": "VoteIndicator2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x610"
+        "Offset": "0x500"
       },
       {
         "Name": "VoteIndicator1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x618"
+        "Offset": "0x508"
       },
       {
         "Name": "hourglass",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x620"
+        "Offset": "0x510"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x628"
-      },
-      {
-        "Name": "FactionInteractionVote",
-        "Type": "Class FactionInteractionVoteComponent*",
-        "Size": "0x8",
-        "Offset": "0x630"
+        "Offset": "0x518"
       },
       {
         "Name": "EmissaryActiveTableVisualiser",
         "Type": "Class EmissaryActiveTableVisualiserComponent*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x520"
       },
       {
         "Name": "VoteAudio",
         "Type": "Class VoteAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x528"
       },
       {
         "Name": "StaticMeshVoteVisualiser",
         "Type": "Class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
-        "Offset": "0x648"
-      },
-      {
-        "Name": "InlineVotingInteraction",
-        "Type": "Class InlineVotingInteractionComponent*",
-        "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x530"
       },
       {
         "Name": "ActionRules",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x538"
       }
     ]
   },

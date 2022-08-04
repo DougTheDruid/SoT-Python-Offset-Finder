@@ -21,4 +21,11 @@ public:
 };
 
 
+// Size 0x0
+class SeasonSettings: public DeveloperSettings
+{
+public:
+};
+
+
 }

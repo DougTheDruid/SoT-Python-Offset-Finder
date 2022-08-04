@@ -3,42 +3,42 @@
 Proposal_SL_APL_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_SL_APL_Chapter3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_SL_DB_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_SL_DB_Chapter3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_SL_DB_Chapter4_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_SL_DB_Chapter5_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc
 Proposal_ShoresOfGold_Chapter2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x140'
-  InheritedSize: '0x140'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageCheckpointProposalDesc

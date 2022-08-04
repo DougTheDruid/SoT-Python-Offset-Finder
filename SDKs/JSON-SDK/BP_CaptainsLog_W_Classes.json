@@ -1,27 +1,27 @@
 {
   "BP_CaptainsLog_Wieldable_C": {
     "Super": "CaptainsLogbookWieldable",
-    "FullSize": "0xc38",
-    "InheritedSize": "0xc20",
+    "FullSize": "0xcc8",
+    "InheritedSize": "0xcb0",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0xc20"
+        "Offset": "0xcb0"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0xc28"
+        "Offset": "0xcb8"
       },
       {
         "Name": "SkeletalStashedMeshMemoryConstraint",
         "Type": "Class SkeletalStashedMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0xc30"
+        "Offset": "0xcc0"
       }
     ]
   },

@@ -37,18 +37,28 @@ EmissaryEntitlementCategory:
 EmissaryEntitlementDesc:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
+  FullSize: '0xc8'
+  InheritedSize: '0xc8'
   Super: EntitlementDesc
+EmissaryFlotsamDuplicationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 EmissaryFlotsamItemInfo:
   Attributes:
   - Name: HandInOwnFlotsamReward
-    Offset: '0x708'
+    Offset: '0x728'
     Size: '0x18'
     Type: Struct CompanySpecificBootyReward
-  ClassSize: '0x18'
-  FullSize: '0x720'
-  InheritedSize: '0x708'
+  - Name: FlotsamCanBeDuplicated
+    Offset: '0x740'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x28'
+  FullSize: '0x748'
+  InheritedSize: '0x720'
   Super: BootyItemInfo
 EmissaryFlotsamItemSpawnComponent:
   Attributes: []

@@ -310,6 +310,15 @@ public:
 };
 
 
+// Size 0x68
+class AnimNotifyState_ToggleIK: public AnimNotifyState
+{
+public:
+	TArray<Byte IKLimbsToAdjust>                                 IKLimbsToAdjust;                                   // 0x28(0x10)
+	bool                                                         Enabled;                                           // 0x38(0x1)
+};
+
+
 // Size 0x0
 class AthenaAnimationControllableSocketsInterface: public Interface
 {

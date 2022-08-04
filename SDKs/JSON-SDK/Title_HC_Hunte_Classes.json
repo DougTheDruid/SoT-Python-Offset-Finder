@@ -1,22 +1,22 @@
 {
   "Title_HC_HunterOfTheSeaOfThieves_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Title_HC_HunterOfTreacherousPlunder_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "Title_HC_HunterOfTrophyFish_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },

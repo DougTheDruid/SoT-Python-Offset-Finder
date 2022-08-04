@@ -3,12 +3,12 @@
 BP_ShipTrinketMountpointManagerComponent_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x4f0'
-  InheritedSize: '0x4f0'
+  FullSize: '0x580'
+  InheritedSize: '0x580'
   Super: ShipTrinketMountpointManagerComponent
 BP_ShipTrinketMountpointManagerComponent_Large_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x4f0'
-  InheritedSize: '0x4f0'
+  FullSize: '0x580'
+  InheritedSize: '0x580'
   Super: BP_ShipTrinketMountpointManagerComponent_C

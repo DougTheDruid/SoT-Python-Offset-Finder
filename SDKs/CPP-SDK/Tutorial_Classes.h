@@ -6,6 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0
+class CaptaincyTutorialDesc: public EntitlementDesc
+{
+public:
+};
+
+
 // Size 0xb8
 class CompanyTutorialVoyageProgress: public Object
 {
@@ -77,7 +84,7 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x60
 class TutorialManager: public ActorComponent
 {
 public:
@@ -85,13 +92,16 @@ public:
 	class                                                        MaidenVoyageStarterClass;                          // 0xd8(0x8)
 	class                                                        BeachNPCSpawnFlowStarterClass;                     // 0xe0(0x8)
 	class                                                        CaptaincyStarterClass;                             // 0xe8(0x8)
-	class                                                        SelectedTutorialClass;                             // 0xf0(0x8)
-	Class TutorialStarter*                                       SelectedTutorial;                                  // 0xf8(0x8)
-	byte                                                         TutorialType;                                      // 0x100(0x1)
-	bool                                                         HasEverPlayedFirstPersonAnimation;                 // 0x101(0x1)
-	bool                                                         HasStartedTutorial;                                // 0x102(0x1)
-	bool                                                         HasReceivedEntitlements;                           // 0x103(0x1)
-	bool                                                         HasPosessedPawn;                                   // 0x104(0x1)
+	class                                                        CaptaincyNewShipStarterClass;                      // 0xf0(0x8)
+	class                                                        SelectedTutorialClass;                             // 0xf8(0x8)
+	Class TutorialStarter*                                       SelectedTutorial;                                  // 0x100(0x8)
+	byte                                                         TutorialType;                                      // 0x108(0x1)
+	bool                                                         HasEverPlayedFirstPersonAnimation;                 // 0x109(0x1)
+	bool                                                         HasStartedTutorial;                                // 0x10a(0x1)
+	bool                                                         HasReceivedEntitlements;                           // 0x10b(0x1)
+	bool                                                         HasPosessedPawn;                                   // 0x10c(0x1)
+	bool                                                         HasPlayerFinshedSpawning;                          // 0x10d(0x1)
+	bool                                                         IsPlayerWaitingForCaptaincySessionResponse;        // 0x10e(0x1)
 };
 
 
@@ -113,7 +123,7 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x98
 class CaptaincyStarter: public TutorialStarter
 {
 public:
@@ -122,7 +132,11 @@ public:
 	bool                                                         CheckIfPlayerInOutpost;                            // 0x69(0x1)
 	bool                                                         CheckIfPlayerIsInCaptain;                          // 0x6a(0x1)
 	class                                                        CheckIfEntitlementIsOwned;                         // 0x70(0x8)
-	struct FName                                                 FeatureToggle;                                     // 0x78(0x8)
+	bool                                                         CheckIfCaptainingANewShip;                         // 0x78(0x1)
+	struct FName                                                 FeatureToggle;                                     // 0x7c(0x8)
+	bool                                                         CheckIfPlayerHasMadeAttempts;                      // 0x84(0x1)
+	class                                                        PromptCounterKey;                                  // 0x88(0x8)
+	int                                                          MaxAttemptCount;                                   // 0x90(0x4)
 };
 
 

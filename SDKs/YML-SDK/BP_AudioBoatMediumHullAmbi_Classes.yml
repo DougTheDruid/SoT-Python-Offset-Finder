@@ -3,118 +3,118 @@
 BP_AudioBoatMediumHullAmbi_C:
   Attributes:
   - Name: Triton
-    Offset: '0x558'
+    Offset: '0x568'
     Size: '0x8'
     Type: Class TritonComponent*
   - Name: audio_water_laps_FL
-    Offset: '0x560'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: audio_water_laps_FR
-    Offset: '0x568'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_metal2
     Offset: '0x570'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_metal
+  - Name: audio_water_laps_FR
     Offset: '0x578'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_window
+  - Name: audio_creak_metal2
     Offset: '0x580'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_cabin_04
+  - Name: audio_creak_metal
     Offset: '0x588'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_cabin_03
+  - Name: audio_creak_window
     Offset: '0x590'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_cabin_02
+  - Name: audio_creak_cabin_04
     Offset: '0x598'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_cabin_01
+  - Name: audio_creak_cabin_03
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_map_01
+  - Name: audio_creak_cabin_02
     Offset: '0x5a8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_map_continuous
+  - Name: audio_creak_cabin_01
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_map_02
+  - Name: audio_creak_map_01
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_deck_back
+  - Name: audio_creak_map_continuous
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: DeckGrille
+  - Name: audio_creak_map_02
     Offset: '0x5c8'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: audio_creak_deck_back
+    Offset: '0x5d0'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: DeckGrille
+    Offset: '0x5d8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   - Name: DeckGrille2
-    Offset: '0x5d0'
+    Offset: '0x5e0'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   - Name: audio_creak_mast_rear
-    Offset: '0x5d8'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: audio_wake_stern
-    Offset: '0x5e0'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: audio_wake_bow
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_wake_side_L
+  - Name: audio_wake_stern
     Offset: '0x5f0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_wake_side_R
+  - Name: audio_wake_bow
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_mast_front_nest
+  - Name: audio_wake_side_L
     Offset: '0x600'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_mast_front
+  - Name: audio_wake_side_R
     Offset: '0x608'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_FL
+  - Name: audio_creak_mast_front_nest
     Offset: '0x610'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_FR
+  - Name: audio_creak_mast_front
     Offset: '0x618'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_rope_front
+  - Name: audio_creak_FL
     Offset: '0x620'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: audio_creak_smallship_global
+  - Name: audio_creak_FR
     Offset: '0x628'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: Deckgrille3
+  - Name: audio_creak_rope_front
     Offset: '0x630'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: audio_creak_smallship_global
+    Offset: '0x638'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: Deckgrille3
+    Offset: '0x640'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   ClassSize: '0xe0'
-  FullSize: '0x638'
-  InheritedSize: '0x558'
+  FullSize: '0x648'
+  InheritedSize: '0x568'
   Super: ShipHullAudio

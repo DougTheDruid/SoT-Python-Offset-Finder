@@ -7,13 +7,6 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_male_makeup_white_08_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
 class BP_male_makeup_white_07_Desc_C: public ClothingDesc
 {
 public:
@@ -57,6 +50,62 @@ public:
 
 // Size 0x0
 class BP_male_makeup_white_01_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_08_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_07_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_06_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_05_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_04_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_03_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_02_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_asian_01_Desc_C: public ClothingDesc
 {
 public:
 };
@@ -119,56 +168,7 @@ public:
 
 
 // Size 0x0
-class BP_male_makeup_asian_08_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_asian_07_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_asian_06_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_asian_05_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_asian_04_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_asian_03_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_asian_02_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_asian_01_Desc_C: public ClothingDesc
+class BP_male_makeup_white_08_Desc_C: public ClothingDesc
 {
 public:
 };

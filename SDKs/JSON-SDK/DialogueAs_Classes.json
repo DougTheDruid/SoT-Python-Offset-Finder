@@ -1,22 +1,22 @@
 {
   "ShroudedDeep_BellePostSGBattleDialogTempEntitlement_C": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "ShroudedDeepSG_Killedpermanently_C": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "ShroudedDeepSG_Killedtemporarily_C": {
     "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },

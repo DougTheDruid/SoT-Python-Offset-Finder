@@ -3,36 +3,36 @@
 BP_msc_hurdygurdy_01_f_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 BP_msc_hurdygurdy_pio_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 BP_msc_hurdygurdy_smp_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 BP_msc_hurdygurdy_smp_01_a_v01_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 BP_msc_hurdygurdy_smp_01_a_v01_ItemInfo_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x4f8'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x500'
-  InheritedSize: '0x4f8'
+  FullSize: '0x518'
+  InheritedSize: '0x510'
   Super: ItemInfo
 BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C:
   Attributes:
@@ -55,12 +55,12 @@ BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C:
 BP_msc_hurdygurdy_wth_01_a_v01_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc
 BP_msc_hurdygurdy_yr1_leg_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
   Super: ItemDesc

@@ -270,8 +270,8 @@ public:
 class PetDesc: public ItemDesc
 {
 public:
-	Class PetSpawnParamsDataAsset*                               PetSpawnParams;                                    // 0x130(0x8)
-	class                                                        PreviewPetClass;                                   // 0x138(0x8)
+	Class PetSpawnParamsDataAsset*                               PetSpawnParams;                                    // 0x120(0x8)
+	class                                                        PreviewPetClass;                                   // 0x128(0x8)
 };
 
 
@@ -327,12 +327,13 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x20
 class PetCustomisationOverrideDataAsset: public DataAsset
 {
 public:
 	class                                                        AnimationOverrideId;                               // 0x28(0x8)
-	Struct FString                                               DebugMenuName;                                     // 0x30(0x10)
+	Class WwiseEvent*                                            FiredFromActorSFX;                                 // 0x30(0x8)
+	Struct FString                                               DebugMenuName;                                     // 0x38(0x10)
 };
 
 
@@ -385,12 +386,12 @@ public:
 class PetItemInfo: public NonStorableItemInfo
 {
 public:
-	Struct PetCustomisation                                      PetCustomisation;                                  // 0x510(0x18)
-	Class Actor*                                                 PetOwner;                                          // 0x528(0x8)
-	Class Actor*                                                 SpawnedForShip;                                    // 0x530(0x8)
-	float                                                        DropTraceDistance;                                 // 0x538(0x4)
-	float                                                        PointSearchRadius;                                 // 0x53c(0x4)
-	byte                                                         DropChannel;                                       // 0x540(0x1)
+	Struct PetCustomisation                                      PetCustomisation;                                  // 0x528(0x18)
+	Class Actor*                                                 PetOwner;                                          // 0x540(0x8)
+	Class Actor*                                                 SpawnedForShip;                                    // 0x548(0x8)
+	float                                                        DropTraceDistance;                                 // 0x550(0x4)
+	float                                                        PointSearchRadius;                                 // 0x554(0x4)
+	byte                                                         DropChannel;                                       // 0x558(0x1)
 };
 
 

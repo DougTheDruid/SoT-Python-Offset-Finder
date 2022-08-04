@@ -1,15 +1,22 @@
 {
-  "Title_AF_Rank3_001_EmissaryOfFortuneVoyagers_C": {
+  "Title_AF_Rank2_001_EmissaryOfFortuneGuardians_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Title_AF_Rank2_001_EmissaryOfFortuneGuardians_C": {
+  "Title_AF_Rank1_001_LegendaryEmissaryOfFortune_C": {
     "Super": "TitleDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xe0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_AF_Rank3_001_EmissaryOfFortuneVoyagers_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },

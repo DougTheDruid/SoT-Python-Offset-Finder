@@ -1,43 +1,43 @@
 {
   "BP_CargoRunCrate_Cloth_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CargoRunCrate_Cloth_Desc_DVR_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CargoRunCrate_Plants_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CargoRunCrate_Plants_Desc_DVR_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CargoRunCrate_Rum_Desc_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_CargoRunCrate_Rum_Desc_DVR_C": {
     "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
     "ClassSize": "0x0",
     "Attributes": []
   },

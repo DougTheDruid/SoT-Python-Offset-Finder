@@ -97,25 +97,26 @@ public:
 };
 
 
-// Size 0xe8
-class PirateGeneratorSettings: public Object
+// Size 0xf8
+class PirateGeneratorSettings: public DeveloperSettings
 {
 public:
-	Struct FString                                               ConfigJson;                                        // 0x28(0x10)
-	Struct FString                                               PiratesFolder;                                     // 0x38(0x10)
-	Struct FString                                               WardrobeFolder;                                    // 0x48(0x10)
-	Struct StringAssetReference                                  WardrobeDataAsset;                                 // 0x58(0x10)
-	TArray<Struct FName>                                         DefaultWardrobeItems;                              // 0x68(0x10)
-	Struct StringAssetReference                                  MaterialReferencesDataAsset;                       // 0x78(0x10)
-	Struct StringAssetReference                                  SkeletonsDataAsset;                                // 0x88(0x10)
-	TArray<Struct StringAssetReference>                          BaseSkeletonMeshes;                                // 0x98(0x10)
-	TArray<Struct StringAssetReference>                          Characterization;                                  // 0xa8(0x10)
-	TArray<Str SkeletonMeshFormats>                              SkeletonMeshFormats;                               // 0xb8(0x10)
-	Struct StringAssetReference                                  FirstPersonAnimations;                             // 0xc8(0x10)
-	Struct StringAssetReference                                  ThirdPersonAnimations;                             // 0xd8(0x10)
-	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0xe8(0x10)
-	TArray<Float LODHysteresis>                                  LODHysteresis;                                     // 0xf8(0x10)
-	int                                                          DefaultPirateGenerationSeed;                       // 0x108(0x4)
+	Struct FString                                               ConfigJson;                                        // 0x38(0x10)
+	Struct FString                                               PiratesFolder;                                     // 0x48(0x10)
+	Struct FString                                               WardrobeFolder;                                    // 0x58(0x10)
+	Struct StringAssetReference                                  WardrobeDataAsset;                                 // 0x68(0x10)
+	TArray<Struct FName>                                         DefaultWardrobeItems;                              // 0x78(0x10)
+	Struct StringAssetReference                                  MaterialReferencesDataAsset;                       // 0x88(0x10)
+	Struct StringAssetReference                                  SkeletonsDataAsset;                                // 0x98(0x10)
+	TArray<Struct StringAssetReference>                          BaseSkeletonMeshes;                                // 0xa8(0x10)
+	TArray<Struct StringAssetReference>                          Characterization;                                  // 0xb8(0x10)
+	TArray<Str SkeletonMeshFormats>                              SkeletonMeshFormats;                               // 0xc8(0x10)
+	Struct StringAssetReference                                  FirstPersonAnimations;                             // 0xd8(0x10)
+	Struct StringAssetReference                                  ThirdPersonAnimations;                             // 0xe8(0x10)
+	TArray<Float LODScreenSizes>                                 LODScreenSizes;                                    // 0xf8(0x10)
+	TArray<Float LODHysteresis>                                  LODHysteresis;                                     // 0x108(0x10)
+	TArray<Struct StringAssetReference>                          ExcludeDataAssets;                                 // 0x118(0x10)
+	int                                                          DefaultPirateGenerationSeed;                       // 0x128(0x4)
 };
 
 
@@ -197,12 +198,11 @@ public:
 };
 
 
-// Size 0xc0
+// Size 0xb0
 class WardrobeDataAsset: public DataAsset
 {
 public:
-	TArray<class ExcludeDataAssets*>                             ExcludeDataAssets;                                 // 0xc8(0x10)
-	TArray<Struct MeshPatchEntry>                                AssetMap;                                          // 0xd8(0x10)
+	TArray<Struct MeshPatchEntry>                                AssetMap;                                          // 0xc8(0x10)
 };
 
 

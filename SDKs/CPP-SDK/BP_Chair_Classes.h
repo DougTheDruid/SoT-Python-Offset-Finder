@@ -7,10 +7,10 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-class BP_Chair_C: public GenericPart
+class BP_Chair_C: public GenericPartWithMMC
 {
 public:
-	Class StaticMeshComponent*                                   Chair;                                             // 0x3e8(0x8)
+	Class StaticMeshMemoryConstraintComponent*                   ChairMesh;                                         // 0x460(0x8)
 };
 
 

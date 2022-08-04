@@ -30,38 +30,24 @@ ShipDamagerType:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: DamagerType
+ShipPartsDamageTrackerComponent:
+  Attributes:
+  - Name: IsAnyShipPartDamaged
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0xd0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 ShipRestorationSettings:
   Attributes:
   - Name: MaxDistanceSquared
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: RestorationAllowedText
-    Offset: '0x48'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: ShipTooFarAwayText
-    Offset: '0x80'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: ShipRestoredTooRecentlyText
-    Offset: '0xb8'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: ShipHasSunkText
-    Offset: '0xf0'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: CannotRestoreShipText
-    Offset: '0x128'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: ShipInPristineConditionText
-    Offset: '0x160'
-    Size: '0x38'
-    Type: Struct FText
-  ClassSize: '0x160'
-  FullSize: '0x198'
+  ClassSize: '0x10'
+  FullSize: '0x48'
   InheritedSize: '0x38'
   Super: DeveloperSettings
 StrainDamagerType:

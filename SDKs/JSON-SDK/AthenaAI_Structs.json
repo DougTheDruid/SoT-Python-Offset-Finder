@@ -2463,7 +2463,7 @@
     ]
   },
   "AIEncounterAndWaveSettingsOverride": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "EncounterSettings",
@@ -2488,6 +2488,18 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x14"
+      },
+      {
+        "Name": "RequiredStory",
+        "Type": "Struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "UseStoryAndNotFeatureToggle",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x24"
       }
     ]
   },
@@ -2594,6 +2606,35 @@
       }
     ]
   },
+  "AICountTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NumTotalSpawns",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CurrentTotalWorldAICostUnits",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "NumActiveRegions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NumPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "AIPartIdNumVariantInfo": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -2641,6 +2682,46 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x14"
+      }
+    ]
+  },
+  "AIPerCrewSpawnerStoryBasedRespawnSettings": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "RespawnSettings",
+        "Type": "Struct AIPerCrewSpawnerRespawnSettings",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StoryFlag",
+        "Type": "Struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "AIPerCrewSpawnerRespawnSettings": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "MinRespawnTimeInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxRespawnTimeInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "RespawnChance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },

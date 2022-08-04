@@ -358,11 +358,12 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 struct HullCharringPersistenceModel
 {
 public:
 	TArray<Float TimeSpentCharring>                              TimeSpentCharring;                                 // 0x0(0x10)
+	int                                                          TotalCellsOnFire;                                  // 0x10(0x4)
 };
 
 

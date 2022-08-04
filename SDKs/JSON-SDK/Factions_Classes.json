@@ -1,4 +1,11 @@
 {
+  "CrewFactionOwnershipInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "FactionInterationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -7,16 +14,16 @@
     "Attributes": []
   },
   "FactionInteractionVoteComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x2e0",
+    "Super": "InlineVotingInteractionComponent",
+    "FullSize": "0x160",
+    "InheritedSize": "0x140",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "TargetCompany",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x2e8"
+        "Name": "TurnHourglassInteractionHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x148"
       }
     ]
   },
@@ -33,8 +40,8 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "FactionAlignedCrews",
-        "Type": "TArray<Struct CrewFactionEntry>",
+        "Name": "FactionAlignedCrewData",
+        "Type": "TArray<Struct CrewFactionEntryData>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
@@ -48,9 +55,9 @@
   },
   "FactionSettingsAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x58",
+    "FullSize": "0x68",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "PossibleFactions",
@@ -69,40 +76,52 @@
         "Type": "TArray<Struct SandsOfFateData>",
         "Size": "0x10",
         "Offset": "0x48"
+      },
+      {
+        "Name": "FactionStreakLevelData",
+        "Type": "TArray<Struct FactionStreakLevelData>",
+        "Size": "0x10",
+        "Offset": "0x58"
       }
     ]
   },
   "FactionService": {
     "Super": "Actor",
-    "FullSize": "0x440",
+    "FullSize": "0x4a8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x78",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "Settings",
         "Type": "Class FactionSettingsAsset*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "FactionAlignedCrewData",
+        "Type": "TArray<Struct CrewFactionEntryData>",
+        "Size": "0x10",
+        "Offset": "0x448"
       },
       {
         "Name": "FactionAlignedCrews",
         "Type": "TArray<Struct CrewFactionEntry>",
         "Size": "0x10",
-        "Offset": "0x418"
+        "Offset": "0x458"
       },
       {
         "Name": "DebugRepActor",
         "Type": "Class FactionServiceDebugRepActor*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x498"
       }
     ]
   },
   "FactionVoteConsumerBase": {
     "Super": "VoteConsumerInlineBase",
-    "FullSize": "0xb0",
+    "FullSize": "0xc0",
     "InheritedSize": "0x30",
-    "ClassSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "Validator",
@@ -117,126 +136,188 @@
         "Offset": "0x90"
       },
       {
+        "Name": "FactionBannerData",
+        "Type": "TArray<Struct CinematicFactionEvent>",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
         "Name": "Votes",
         "Type": "TArray<Struct CrewMemberVotes>",
         "Size": "0x10",
-        "Offset": "0x98"
+        "Offset": "0xa8"
       }
     ]
   },
   "StartFactionVoyageVoteConsumer": {
     "Super": "FactionVoteConsumerBase",
-    "FullSize": "0x1c8",
-    "InheritedSize": "0xb0",
-    "ClassSize": "0x118",
-    "Attributes": [
-      {
-        "Name": "FactionVotingCastVote",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "FactionVotingCantVote",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "FactionVotingRemoveVote",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "FactionVotingCantRemoveVote",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "FactionVotingCantVoteReasonVoterNotOnOwnShip",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x190"
-      }
-    ]
-  },
-  "StopFactionVoyageVoteConsumer": {
-    "Super": "FactionVoteConsumerBase",
-    "FullSize": "0x200",
-    "InheritedSize": "0xb0",
+    "FullSize": "0x210",
+    "InheritedSize": "0xc0",
     "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "FactionVotingCastVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0xb0"
+        "Offset": "0xc0"
       },
       {
         "Name": "FactionVotingCantVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0xe8"
+        "Offset": "0xf8"
       },
       {
         "Name": "FactionVotingRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x120"
+        "Offset": "0x130"
       },
       {
         "Name": "FactionVotingCantRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x158"
+        "Offset": "0x168"
+      },
+      {
+        "Name": "FactionVotingCantVoteReasonVoterNotOnOwnShip",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "FactionVotingSwitchVote",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x1d8"
+      }
+    ]
+  },
+  "StopFactionVoyageVoteConsumer": {
+    "Super": "FactionVoteConsumerBase",
+    "FullSize": "0x210",
+    "InheritedSize": "0xc0",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "FactionVotingCastVote",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "FactionVotingCantVote",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "FactionVotingRemoveVote",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "FactionVotingCantRemoveVote",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x168"
       },
       {
         "Name": "FactionVotingCantVoteReasonGoToOutpost",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x190"
+        "Offset": "0x1a0"
       },
       {
         "Name": "FactionVotingCantVoteReasonActiveForDifferentCompany",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x1c8"
+        "Offset": "0x1d8"
+      }
+    ]
+  },
+  "FactionVoteInteractionActor": {
+    "Super": "Actor",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xf8",
+    "Attributes": [
+      {
+        "Name": "FadeDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "NoFactionInfos",
+        "Type": "TArray<Struct FactionDisplayInfo>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "FactionInfos",
+        "Type": "TArray<Struct FactionDisplayInfo>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "NoFactionInfoPtrs",
+        "Type": "TArray<Struct FactionRequest>",
+        "Size": "0x10",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "FactionInfoPtrs",
+        "Type": "TArray<Struct FactionRequest>",
+        "Size": "0x10",
+        "Offset": "0x410"
       }
     ]
   },
   "FactionVoteValidatorBase": {
     "Super": "VoteValidatorInlineBase",
-    "FullSize": "0x60",
+    "FullSize": "0x90",
     "InheritedSize": "0x30",
-    "ClassSize": "0x30",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "TargetCompany",
-        "Type": "class",
-        "Size": "0x8",
+        "Name": "TargetCompanies",
+        "Type": "TArray<Class TargetCompanies>",
+        "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "Consumer",
         "Type": "Class FactionVoteConsumerBase*",
         "Size": "0x8",
-        "Offset": "0x58"
+        "Offset": "0x70"
+      },
+      {
+        "Name": "CurrentCompany",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x88"
       }
     ]
   },
   "StartFactionVoyageVoteValidator": {
     "Super": "FactionVoteValidatorBase",
-    "FullSize": "0x60",
-    "InheritedSize": "0x60",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "StopFactionVoyageInlineVoteValidator": {
+  "StopFactionVoyageVoteValidator": {
     "Super": "FactionVoteValidatorBase",
-    "FullSize": "0x60",
-    "InheritedSize": "0x60",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
     "ClassSize": "0x0",
     "Attributes": []
   },

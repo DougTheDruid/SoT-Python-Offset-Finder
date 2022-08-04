@@ -31,9 +31,9 @@ public:
 class TrinketDesc: public EntitlementDesc
 {
 public:
-	Struct StringClassReference                                  TrinketClass;                                      // 0xd8(0x10)
-	Struct StringClassReference                                  PreviousItem;                                      // 0xe8(0x10)
-	Struct StringClassReference                                  NextItem;                                          // 0xf8(0x10)
+	Struct StringClassReference                                  TrinketClass;                                      // 0xc8(0x10)
+	Struct StringClassReference                                  PreviousItem;                                      // 0xd8(0x10)
+	Struct StringClassReference                                  NextItem;                                          // 0xe8(0x10)
 };
 
 

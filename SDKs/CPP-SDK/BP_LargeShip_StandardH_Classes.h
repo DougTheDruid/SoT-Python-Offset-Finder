@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_LargeShip_StandardHull_InternalShipWater_C: public ShipInternalWater
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x618(0x8)
-	Class DynamicFlowComponent*                                  DynamicFlow;                                       // 0x620(0x8)
-	Class CurveFloat*                                            Foaminess;                                         // 0x628(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x620(0x8)
+	Class DynamicFlowComponent*                                  DynamicFlow;                                       // 0x628(0x8)
+	Class CurveFloat*                                            Foaminess;                                         // 0x630(0x8)
 };
 
 

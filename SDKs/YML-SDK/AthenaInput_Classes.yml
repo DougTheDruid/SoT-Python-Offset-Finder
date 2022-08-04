@@ -12,6 +12,12 @@ NotificationInputId:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
+OpenEscapeMenuNotificationInputId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: NotificationInputId
 ReceivesInputInterface:
   Attributes: []
   ClassSize: '0x0'

@@ -3,12 +3,12 @@
 Emote_MainHandWeaponPose4_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x128'
-  InheritedSize: '0x128'
+  FullSize: '0x118'
+  InheritedSize: '0x118'
   Super: EmoteFlourishDesc
 Emote_OffHandWeaponPose4_Desc_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x128'
-  InheritedSize: '0x128'
+  FullSize: '0x118'
+  InheritedSize: '0x118'
   Super: EmoteFlourishDesc

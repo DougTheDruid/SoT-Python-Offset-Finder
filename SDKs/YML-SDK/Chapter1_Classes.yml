@@ -3,12 +3,12 @@
 ForsakenHunter_Chapter1Complete_Entitlement_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
+  FullSize: '0xc8'
+  InheritedSize: '0xc8'
   Super: EntitlementDesc
 ForsakenHunter_LarinnaTaleActive_TempEntitlement_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
+  FullSize: '0xc8'
+  InheritedSize: '0xc8'
   Super: EntitlementDesc

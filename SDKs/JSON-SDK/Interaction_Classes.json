@@ -181,6 +181,27 @@
       }
     ]
   },
+  "InteractionPreventionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "InteractionPreventionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ActorsToPreventInteractingWith",
+        "Type": "TArray<class ActorsToPreventInteractingWith*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
   "InteractionValidatorOwnerInterface": {
     "Super": "Interface",
     "FullSize": "0x28",

@@ -1,6 +1,6 @@
 {
   "CrewFactionEntry": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -10,69 +10,6 @@
       },
       {
         "Name": "Faction",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Streak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "SandsOfFate",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "CrewsSunkShipEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AttackingCrewIds",
-        "Type": "TArray<Struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SunkShipCrewId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewLeftFaction": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "LeavingCrewId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FactionLeft",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewJoinedFaction": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "JoiningCrewId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FactionJoined",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x10"
@@ -102,6 +39,23 @@
       }
     ]
   },
+  "FactionStreakLevelData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "StreakLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StreakCountThreshold",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "FactionVoteRemovedEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -121,6 +75,75 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "CinematicFactionEvent": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CinematicData",
+        "Type": "Struct CinematicQuestEvent",
+        "Size": "0x80",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FactionRequest": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FactionDisplayInfo": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Title",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Description",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CardOffset",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "KeyArt",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Icon",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x90"
       }
     ]
   },
@@ -168,6 +191,46 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2a"
+      }
+    ]
+  },
+  "FactionLeftTelemetryEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "FactionSessionId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AlignedFactionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "LeftReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "FactionJoinedTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FactionSessionId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AlignedFactionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

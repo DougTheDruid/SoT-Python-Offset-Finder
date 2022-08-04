@@ -21,6 +21,13 @@ public:
 
 
 // Size 0x0
+class OpenEscapeMenuNotificationInputId: public NotificationInputId
+{
+public:
+};
+
+
+// Size 0x0
 class ReceivesInputInterface: public Interface
 {
 public:

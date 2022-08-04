@@ -100,6 +100,13 @@ public:
 };
 
 
+// Size 0x10
+struct ShipRestoredNetworkEvent
+{
+public:
+};
+
+
 // Size 0x20
 struct SendShipRestoredRpc
 {
