@@ -6,42 +6,30 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x88
-class ShroudedIslands_BellesBuoy_C: public Actor
+// Size 0x43816ef4
+class ShroudedIslands_BellesBuoy_C: public None
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	Class PointLightComponent*                                   None;                                              // 0x3d0(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3e8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3f0(0x8)
-	Struct WwiseEmitter                                          None;                                              // 0x3f8(0x20)
-	Struct WwiseEmitterCreationParams                            None;                                              // 0x418(0x28)
-	Class WwiseEvent*                                            None;                                              // 0x440(0x8)
-	Class WwiseObjectPoolWrapper*                                None;                                              // 0x448(0x8)
 };
 
 
-// Size 0x39
+// Size 0x42ea7f72
 class ShroudedIslands_AnchoredGhostShip_C: public None
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x428(0x8)
-	Class SphereComponent*                                       None;                                              // 0x430(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x448(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x450(0x8)
-	Class SkeletalMeshComponent*                                 None;                                              // 0x458(0x8)
-	bool                                                         None;                                              // 0x460(0x1)
 };
 
 
-// Size 0x0
-class ShroudedIslands_LarinnaDialogTempEntitlement_C: public EntitlementDesc
+// Size 0x30
+class ShroudedIslands_LarinnaDialogTempEntitlement_C: public VoyageProposalContainer
 {
 public:
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x790(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x798(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7a0(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7a8(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7b0(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7b8(0x8)
 };
 
 

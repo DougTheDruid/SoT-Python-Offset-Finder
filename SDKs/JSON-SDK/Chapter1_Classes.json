@@ -7,9 +7,9 @@
     "Attributes": []
   },
   "ForsakenHunter_LarinnaTaleActive_TempEntitlement_C": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
+    "Super": "None",
+    "FullSize": "0x0",
+    "InheritedSize": "0x0",
     "ClassSize": "0x0",
     "Attributes": []
   },

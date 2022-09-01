@@ -3,10 +3,10 @@
 BP_Bell_C:
   Attributes:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x560'
+    Offset: '0x570'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
   ClassSize: '0x8'
-  FullSize: '0x568'
-  InheritedSize: '0x560'
+  FullSize: '0x578'
+  InheritedSize: '0x570'
   Super: Bell

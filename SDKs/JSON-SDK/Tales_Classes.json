@@ -261,6 +261,13 @@
       }
     ]
   },
+  "TaleQuestCompoundStepInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestIndexedFrame": {
     "Super": "Object",
     "FullSize": "0x88",
@@ -2563,9 +2570,9 @@
   },
   "TaleQuestFunctionStepLibrary": {
     "Super": "TaleQuestRunnableStepDesc",
-    "FullSize": "0x170",
+    "FullSize": "0x178",
     "InheritedSize": "0xe8",
-    "ClassSize": "0x88",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "Function",
@@ -2577,77 +2584,104 @@
         "Name": "FunctionStepFlags",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x168"
+        "Offset": "0x170"
       }
     ]
   },
   "TaleQuestActorFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestAnimationStepFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestIntMathsFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestNamedPointsFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestNPCHideFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestStoryFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestStoryBranchFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x1c0",
+    "InheritedSize": "0x178",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "Active",
+        "Type": "Class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "Inactive",
+        "Type": "Class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x188"
+      }
+    ]
+  },
   "TaleQuestTransformMathsFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestTransfromConversionFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestUObjectFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestUtilityFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestWaterVolumeFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -3085,7 +3119,7 @@
     "ClassSize": "0xb8",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3204,7 +3238,7 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3242,7 +3276,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3298,7 +3332,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3336,7 +3370,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3380,7 +3414,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3423,12 +3457,12 @@
   },
   "TaleQuestAddXMarksMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0xc8",
+    "FullSize": "0x108",
     "InheritedSize": "0x80",
-    "ClassSize": "0x48",
+    "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3444,6 +3478,18 @@
         "Type": "Struct QuestVariableVector",
         "Size": "0x20",
         "Offset": "0xa8"
+      },
+      {
+        "Name": "IsUnderground",
+        "Type": "Struct QuestVariableBool",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "TreasureMapOverride",
+        "Type": "Struct TaleQuestVariableTreasureMapItemDescType",
+        "Size": "0x20",
+        "Offset": "0xe8"
       }
     ]
   },
@@ -3454,7 +3500,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3482,7 +3528,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3516,7 +3562,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3542,7 +3588,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"

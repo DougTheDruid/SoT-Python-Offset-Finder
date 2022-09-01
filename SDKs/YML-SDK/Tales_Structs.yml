@@ -10,6 +10,17 @@ BodyFramePair:
     Size: '0x8'
     Type: Class TaleQuestIndexedFrame*
   ClassSize: '0x28'
+CompondNodePinDesc:
+  Attributes:
+  - Name: DisplayName
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: PinId
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x48'
 CriticalActorDelegateData:
   Attributes:
   - Name: CriticalActor
@@ -104,6 +115,9 @@ PhasedItem:
 PlaySequencerAutomationEvent:
   Attributes: []
   ClassSize: '0x18'
+QuestVariableAISpawner:
+  Attributes: []
+  ClassSize: '0x20'
 QuestVariableActorArray:
   Attributes: []
   ClassSize: '0x20'

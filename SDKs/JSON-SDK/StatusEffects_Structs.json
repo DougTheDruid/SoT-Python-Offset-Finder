@@ -44,23 +44,6 @@
       }
     ]
   },
-  "DelayedStatusEffect": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatusEffect",
-        "Type": "Struct Status",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InEffectTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "ActiveStatusEffect": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -133,6 +116,23 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "DelayedStatusEffect": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusEffect",
+        "Type": "Struct Status",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InEffectTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
       }
     ]
   },

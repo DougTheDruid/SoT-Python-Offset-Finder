@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class MeshMemoryConstraintCategory_AI_Skeleton_Bone_C: public MeshMemoryConstraintCategory
+class MeshMemoryConstraintCategory_AI_Ancient_C: public MeshMemoryConstraintCategory
 {
 public:
 };
@@ -43,6 +43,13 @@ public:
 
 // Size 0x0
 class MeshMemoryConstraintCategory_AI_Siren_C: public MeshMemoryConstraintCategory
+{
+public:
+};
+
+
+// Size 0x0
+class MeshMemoryConstraintCategory_AI_Skeleton_Bone_C: public MeshMemoryConstraintCategory
 {
 public:
 };

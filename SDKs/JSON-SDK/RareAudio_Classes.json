@@ -191,64 +191,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AudioPortalComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "AudioInsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "AudioOutsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "PortalTriggerDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2f0"
-      },
-      {
-        "Name": "InsideRtpcUpdateDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2f4"
-      },
-      {
-        "Name": "OutsideRtpcUpdateDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2f8"
-      },
-      {
-        "Name": "TrackAttachmentToActor",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2fc"
-      }
-    ]
-  },
-  "AudioPortalInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AudioPortalService": {
-    "Super": "Object",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": []
-  },
   "AudioSpaceComponent": {
     "Super": "StaticMeshComponent",
     "FullSize": "0x630",

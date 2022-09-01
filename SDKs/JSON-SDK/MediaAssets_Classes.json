@@ -1,49 +1,257 @@
 {
-  "MediaPlayer": {
-    "Super": "Object",
-    "FullSize": "0xb8",
+  "MediaBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "Looping",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "URL",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
-  "MediaSoundWave": {
-    "Super": "SoundWave",
-    "FullSize": "0x278",
-    "InheritedSize": "0x218",
-    "ClassSize": "0x60",
+  "MediaComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "AudioTrackIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x218"
+        "Name": "MediaTexture",
+        "Type": "Class MediaTexture*",
+        "Size": "0x8",
+        "Offset": "0xc8"
       },
       {
         "Name": "MediaPlayer",
         "Type": "Class MediaPlayer*",
         "Size": "0x8",
-        "Offset": "0x220"
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "MediaTimeStampInfo": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Time",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MediaPlayer": {
+    "Super": "Object",
+    "FullSize": "0x178",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "CacheAhead",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "CacheBehind",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "CacheBehindGame",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "NativeAudioOut",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "PlayOnOpen",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc1"
+      },
+      {
+        "Name": "Shuffle",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "Loop",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "Playlist",
+        "Type": "Class MediaPlaylist*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "PlaylistIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "TimeDelay",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "CachedMediaSource",
+        "Type": "Class MediaSource*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "HorizontalFieldOfView",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "VerticalFieldOfView",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xec"
+      },
+      {
+        "Name": "ViewRotation",
+        "Type": "Struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "PlayerGuid",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x160"
+      }
+    ]
+  },
+  "MediaPlaylist": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Items",
+        "Type": "TArray<class Items*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MediaSource": {
+    "Super": "Object",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": []
+  },
+  "BaseMediaSource": {
+    "Super": "MediaSource",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PlayerName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "FileMediaSource": {
+    "Super": "BaseMediaSource",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "FilePath",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "PrecacheFile",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "StreamMediaSource": {
+    "Super": "BaseMediaSource",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StreamUrl",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "TimeSynchronizableMediaSource": {
+    "Super": "BaseMediaSource",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "bUseTimeSynchronization",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "FrameDelay",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "TimeDelay",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "PlatformMediaSource": {
+    "Super": "MediaSource",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MediaSource",
+        "Type": "Class MediaSource*",
+        "Size": "0x8",
+        "Offset": "0x80"
       }
     ]
   },
   "MediaTexture": {
     "Super": "Texture",
-    "FullSize": "0x1a8",
+    "FullSize": "0x228",
     "InheritedSize": "0x138",
-    "ClassSize": "0x70",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
         "Name": "AddressX",
@@ -58,22 +266,58 @@
         "Offset": "0x139"
       },
       {
+        "Name": "AutoClear",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x13a"
+      },
+      {
         "Name": "ClearColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x13c"
       },
       {
-        "Name": "VideoTrackIndex",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "EnableGenMips",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x14c"
+      },
+      {
+        "Name": "NumMips",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x14d"
+      },
+      {
+        "Name": "NewStyleOutput",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x14e"
+      },
+      {
+        "Name": "OutputFormat",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x14f"
+      },
+      {
+        "Name": "CurrentAspectRatio",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "CurrentOrientation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x154"
       },
       {
         "Name": "MediaPlayer",
         "Type": "Class MediaPlayer*",
         "Size": "0x8",
-        "Offset": "0x150"
+        "Offset": "0x158"
       }
     ]
   },

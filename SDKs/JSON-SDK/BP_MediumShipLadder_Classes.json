@@ -1,27 +1,27 @@
 {
   "BP_MediumShipLadder_C": {
     "Super": "Ladder",
-    "FullSize": "0x5d8",
-    "InheritedSize": "0x5b0",
+    "FullSize": "0x5e8",
+    "InheritedSize": "0x5c0",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x5b0"
+        "Offset": "0x5c0"
       },
       {
         "Name": "OffTopSplineComponentPositions",
         "Type": "TArray<Struct InteractOffset>",
         "Size": "0x10",
-        "Offset": "0x5b8"
+        "Offset": "0x5c8"
       },
       {
         "Name": "OnTopSplineComponentPositions",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
-        "Offset": "0x5c8"
+        "Offset": "0x5d8"
       }
     ]
   },

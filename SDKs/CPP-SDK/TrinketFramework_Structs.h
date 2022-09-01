@@ -34,31 +34,12 @@ public:
 };
 
 
-// Size 0x38
-struct EquipTrinketOnServerLoadoutRpc
-{
-public:
-	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
-	class                                                        TrinketToEquip;                                    // 0x28(0x8)
-	int                                                          LocationIndex;                                     // 0x30(0x4)
-};
-
-
 // Size 0x28
 struct RemoveInteractingPlayerFromTrinketMountpointRpc
 {
 public:
 	Struct NetSubObjectPtr                                       TrinketMountpointManager;                          // 0x10(0x14)
 	int                                                          MountpointIndex;                                   // 0x24(0x4)
-};
-
-
-// Size 0x30
-struct UnequipAllTrinketsOfClassOnServerLoadoutRpc
-{
-public:
-	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
-	class                                                        TrinketToUnequip;                                  // 0x28(0x8)
 };
 
 

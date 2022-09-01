@@ -47,6 +47,17 @@ EventVolcanoStateChanged:
     Size: '0x1'
     Type: byte
   ClassSize: '0x1'
+GeyserManagerStoryCustomisationData:
+  Attributes:
+  - Name: StoryFlag
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  - Name: GeyserManagerSetupData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class GeyserManagerSetupDataAsset*
+  ClassSize: '0x10'
 GeyserSpawnAngleOption:
   Attributes:
   - Name: Weight
@@ -118,6 +129,17 @@ VolcanoStateData:
     Size: '0x4'
     Type: float
   ClassSize: '0xc'
+VolcanoStoryCustomisationData:
+  Attributes:
+  - Name: StoryFlag
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  - Name: VolcanoSetupData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class VolcanoSetupDataAsset*
+  ClassSize: '0x10'
 VolcanoTarget:
   Attributes:
   - Name: Type

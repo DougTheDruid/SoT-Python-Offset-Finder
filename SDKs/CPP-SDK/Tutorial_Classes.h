@@ -84,7 +84,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x68
 class TutorialManager: public ActorComponent
 {
 public:
@@ -93,15 +93,16 @@ public:
 	class                                                        BeachNPCSpawnFlowStarterClass;                     // 0xe0(0x8)
 	class                                                        CaptaincyStarterClass;                             // 0xe8(0x8)
 	class                                                        CaptaincyNewShipStarterClass;                      // 0xf0(0x8)
-	class                                                        SelectedTutorialClass;                             // 0xf8(0x8)
-	Class TutorialStarter*                                       SelectedTutorial;                                  // 0x100(0x8)
-	byte                                                         TutorialType;                                      // 0x108(0x1)
-	bool                                                         HasEverPlayedFirstPersonAnimation;                 // 0x109(0x1)
-	bool                                                         HasStartedTutorial;                                // 0x10a(0x1)
-	bool                                                         HasReceivedEntitlements;                           // 0x10b(0x1)
-	bool                                                         HasPosessedPawn;                                   // 0x10c(0x1)
-	bool                                                         HasPlayerFinshedSpawning;                          // 0x10d(0x1)
-	bool                                                         IsPlayerWaitingForCaptaincySessionResponse;        // 0x10e(0x1)
+	class                                                        CaptaincyWithBeachNPCSpawnStarterClass;            // 0xf8(0x8)
+	class                                                        SelectedTutorialClass;                             // 0x100(0x8)
+	Class TutorialStarter*                                       SelectedTutorial;                                  // 0x108(0x8)
+	byte                                                         TutorialType;                                      // 0x110(0x1)
+	bool                                                         HasEverPlayedFirstPersonAnimation;                 // 0x111(0x1)
+	bool                                                         HasStartedTutorial;                                // 0x112(0x1)
+	bool                                                         HasReceivedEntitlements;                           // 0x113(0x1)
+	bool                                                         HasPosessedPawn;                                   // 0x114(0x1)
+	bool                                                         HasPlayerFinshedSpawning;                          // 0x115(0x1)
+	bool                                                         IsPlayerWaitingForCaptaincySessionResponse;        // 0x116(0x1)
 };
 
 

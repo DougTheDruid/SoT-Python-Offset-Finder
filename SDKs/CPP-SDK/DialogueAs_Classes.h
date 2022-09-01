@@ -20,11 +20,4 @@ public:
 };
 
 
-// Size 0x0
-class ShroudedDeepSG_Killedtemporarily_C: public EntitlementDesc
-{
-public:
-};
-
-
 }

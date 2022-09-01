@@ -196,9 +196,9 @@
   },
   "AthenaLoadingScreenParams": {
     "Super": "DeveloperSettings",
-    "FullSize": "0x78",
+    "FullSize": "0x68",
     "InheritedSize": "0x38",
-    "ClassSize": "0x40",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "BootLoadingScreen",
@@ -217,12 +217,6 @@
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x58"
-      },
-      {
-        "Name": "ArenaLoadingScreens",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x68"
       }
     ]
   },

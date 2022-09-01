@@ -6,13 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_MediumShipStorageBarrel_Grog_C: public InteractableBase
+// Size 0x8
+class BP_MerchantCrate_AnyItemCrate_ItemInfo_C: public BootyItemInfo
 {
 public:
-	Class TankardRefillerComponent*                              TankardRefiller;                                   // 0x3f0(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x400(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x720(0x8)
 };
 
 

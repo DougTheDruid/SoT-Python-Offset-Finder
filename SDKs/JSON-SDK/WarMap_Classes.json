@@ -8,27 +8,27 @@
   },
   "WarMapInteractionComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x1b8",
-    "InheritedSize": "0x118",
+    "FullSize": "0x1c8",
+    "InheritedSize": "0x128",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "OpenMapInteractionText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x120"
+        "Offset": "0x130"
       },
       {
         "Name": "CannotOpenMapInteractionText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x158"
+        "Offset": "0x168"
       },
       {
         "Name": "OpenMapInputId",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x190"
+        "Offset": "0x1a0"
       }
     ]
   },

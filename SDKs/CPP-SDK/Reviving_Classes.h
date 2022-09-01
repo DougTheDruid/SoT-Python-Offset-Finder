@@ -30,7 +30,7 @@ public:
 class DeathSelfInteractionComponent: public InteractableComponent
 {
 public:
-	bool                                                         HasGivenUp;                                        // 0x120(0x1)
+	bool                                                         HasGivenUp;                                        // 0x130(0x1)
 };
 
 
@@ -88,13 +88,13 @@ public:
 class ReviveComponent: public InteractableComponent
 {
 public:
-	Class Character*                                             OwningCharacter;                                   // 0x128(0x8)
-	Class Actor*                                                 ReviveableRepresentationActor;                     // 0x130(0x8)
-	byte                                                         ReviveState;                                       // 0x138(0x1)
-	byte                                                         InteractionState;                                  // 0x139(0x1)
-	class                                                        ReviveableRepresentationClass;                     // 0x140(0x8)
-	bool                                                         ReviveWindowIsOpen;                                // 0x15a(0x1)
-	Struct Status                                                RevivableStatus;                                   // 0x230(0x18)
+	Class Character*                                             OwningCharacter;                                   // 0x138(0x8)
+	Class Actor*                                                 ReviveableRepresentationActor;                     // 0x140(0x8)
+	byte                                                         ReviveState;                                       // 0x148(0x1)
+	byte                                                         InteractionState;                                  // 0x149(0x1)
+	class                                                        ReviveableRepresentationClass;                     // 0x150(0x8)
+	bool                                                         ReviveWindowIsOpen;                                // 0x16a(0x1)
+	Struct Status                                                RevivableStatus;                                   // 0x240(0x18)
 };
 
 

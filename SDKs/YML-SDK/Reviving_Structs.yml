@@ -135,17 +135,17 @@ ReviveableActionStateConstructionInfo:
     Type: class
   - Name: DamageInstance
     Offset: '0x38'
-    Size: '0x28'
+    Size: '0x30'
     Type: Struct DamageInstance
   - Name: CharacterDeathType
-    Offset: '0x60'
+    Offset: '0x68'
     Size: '0x1'
     Type: byte
   - Name: CharacterType
-    Offset: '0x61'
+    Offset: '0x69'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x68'
+  ClassSize: '0x70'
 ReviveableActionStateStarted:
   Attributes: []
   ClassSize: '0x1'
@@ -174,17 +174,17 @@ RevivingWindowStart:
   Attributes:
   - Name: DamageInstance
     Offset: '0x0'
-    Size: '0x28'
+    Size: '0x30'
     Type: Struct DamageInstance
   - Name: CharacterDeathType
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x1'
     Type: byte
   - Name: RevivableCharacter
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x8'
     Type: Class Character*
-  ClassSize: '0x38'
+  ClassSize: '0x40'
 SuccessfulReviveEvent:
   Attributes: []
   ClassSize: '0x1'

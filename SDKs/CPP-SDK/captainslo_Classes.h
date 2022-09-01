@@ -147,6 +147,34 @@ public:
 
 
 // Size 0x0
+class captainslog_protector_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class captainslog_protector_01_v01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class captainslog_protector_01_v02_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class captainslog_protector_01_v03_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
 class captainslog_rogue_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
@@ -169,6 +197,34 @@ public:
 
 // Size 0x0
 class captainslog_rogue_01_v03_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class captainslog_servant_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class captainslog_servant_01_v01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class captainslog_servant_01_v02_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class captainslog_servant_01_v03_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

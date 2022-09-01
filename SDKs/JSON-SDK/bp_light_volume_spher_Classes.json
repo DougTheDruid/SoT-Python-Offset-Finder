@@ -1,24 +1,4 @@
 {
-  "bp_light_volume_sphere_large_a_C": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Billboard",
-        "Type": "Class BillboardComponent*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      }
-    ]
-  },
   "bp_light_volume_sphere_orange_a_C": {
     "Super": "Actor",
     "FullSize": "0x3d8",
@@ -40,6 +20,26 @@
     ]
   },
   "bp_light_volume_sphere_orb_blue_C": {
+    "Super": "Actor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Billboard",
+        "Type": "Class BillboardComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "StaticMeshComponent0",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      }
+    ]
+  },
+  "bp_light_volume_sphere_large_a_C": {
     "Super": "Actor",
     "FullSize": "0x3d8",
     "InheritedSize": "0x3c8",

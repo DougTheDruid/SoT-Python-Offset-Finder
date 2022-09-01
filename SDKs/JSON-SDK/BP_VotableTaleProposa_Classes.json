@@ -1,76 +1,69 @@
 {
-  "BP_VotableTaleProposal_Vertical_C": {
-    "Super": "/Game/Animation/NPC/shipwright/npc_shipwright_idleinactive2_to_",
-    "FullSize": "-0x7ccccccd",
-    "InheritedSize": "0x0",
-    "ClassSize": "-0x7ccccccd",
-    "Attributes": []
-  },
   "BP_VotableTaleProposal_C": {
     "Super": "VotableObjectView",
-    "FullSize": "0x530",
-    "InheritedSize": "0x4e0",
+    "FullSize": "0x540",
+    "InheritedSize": "0x4f0",
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x4e0"
+        "Offset": "0x4f0"
       },
       {
         "Name": "Token 1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x4f8"
       },
       {
         "Name": "Token 4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4f0"
+        "Offset": "0x500"
       },
       {
         "Name": "Token 3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x4f8"
+        "Offset": "0x508"
       },
       {
         "Name": "Token 2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x500"
+        "Offset": "0x510"
       },
       {
         "Name": "Tokens",
         "Type": "TArray<class Tokens*>",
         "Size": "0x10",
-        "Offset": "0x508"
+        "Offset": "0x518"
       },
       {
         "Name": "Token Asset",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x528"
       },
       {
         "Name": "VoteCount",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x520"
+        "Offset": "0x530"
       },
       {
         "Name": "Show Token Animation Time",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x524"
+        "Offset": "0x534"
       },
       {
         "Name": "Token Material",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
-        "Offset": "0x528"
+        "Offset": "0x538"
       }
     ]
   },

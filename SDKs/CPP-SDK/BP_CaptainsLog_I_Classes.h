@@ -6,14 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
-class BP_CaptainsLog_ItemInfo_C: public CaptainsLogItemInfo
-{
-public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x7d0(0x8)
-};
-
-
 // Size 0x0
 class BP_CaptainsLog_ItemDesc_C: public CaptainsLogItemDesc
 {
@@ -29,10 +21,18 @@ public:
 
 
 // Size 0x8
+class BP_CaptainsLog_ItemInfo_C: public CaptainsLogItemInfo
+{
+public:
+	Class SceneComponent*                                        None;                                              // 0x7d0(0x8)
+};
+
+
+// Size 0x8
 class BP_CaptainsLog_Interactable_Proxy_C: public CaptainsLogbookInteractableProxy
 {
 public:
-	Class SceneComponent*                                        PlayerPosition;                                    // 0x690(0x8)
+	Class SceneComponent*                                        PlayerPosition;                                    // 0x6a0(0x8)
 };
 
 

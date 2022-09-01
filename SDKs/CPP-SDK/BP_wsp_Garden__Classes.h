@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_wsp_Garden_small_rocks_C: public BP_Placement_Garden_C
+class BP_wsp_Garden_pebbles_C: public BP_Placement_Garden_C
 {
 public:
 };
@@ -15,13 +15,6 @@ public:
 
 // Size 0x0
 class BP_wsp_Garden_shells_C: public BP_Placement_Garden_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_wsp_Garden_pebbles_C: public BP_Placement_Garden_C
 {
 public:
 };

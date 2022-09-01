@@ -382,16 +382,16 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x70
 class PetItemInfo: public NonStorableItemInfo
 {
 public:
-	Struct PetCustomisation                                      PetCustomisation;                                  // 0x528(0x18)
-	Class Actor*                                                 PetOwner;                                          // 0x540(0x8)
-	Class Actor*                                                 SpawnedForShip;                                    // 0x548(0x8)
-	float                                                        DropTraceDistance;                                 // 0x550(0x4)
-	float                                                        PointSearchRadius;                                 // 0x554(0x4)
-	byte                                                         DropChannel;                                       // 0x558(0x1)
+	Struct PetCustomisation                                      PetCustomisation;                                  // 0x528(0x28)
+	Class Actor*                                                 PetOwner;                                          // 0x550(0x8)
+	Class Actor*                                                 SpawnedForShip;                                    // 0x558(0x8)
+	float                                                        DropTraceDistance;                                 // 0x560(0x4)
+	float                                                        PointSearchRadius;                                 // 0x564(0x4)
+	byte                                                         DropChannel;                                       // 0x568(0x1)
 };
 
 
@@ -436,13 +436,13 @@ public:
 class PetPerchComponent: public InteractableComponent
 {
 public:
-	TArray<Class AllowedPetTypes>                                AllowedPetTypes;                                   // 0x130(0x10)
-	int                                                          HangoutSpotIndex;                                  // 0x140(0x4)
-	struct FName                                                 HangoutSpotName;                                   // 0x144(0x8)
-	Struct Vector                                                InteractionPointLocation;                          // 0x14c(0xc)
-	bool                                                         Enabled;                                           // 0x158(0x1)
-	bool                                                         BlocksPetEmoteReactions;                           // 0x159(0x1)
-	bool                                                         IgnorePickupFromHangoutTooltipDisplayOffset;       // 0x15a(0x1)
+	TArray<Class AllowedPetTypes>                                AllowedPetTypes;                                   // 0x140(0x10)
+	int                                                          HangoutSpotIndex;                                  // 0x150(0x4)
+	struct FName                                                 HangoutSpotName;                                   // 0x154(0x8)
+	Struct Vector                                                InteractionPointLocation;                          // 0x15c(0xc)
+	bool                                                         Enabled;                                           // 0x168(0x1)
+	bool                                                         BlocksPetEmoteReactions;                           // 0x169(0x1)
+	bool                                                         IgnorePickupFromHangoutTooltipDisplayOffset;       // 0x16a(0x1)
 };
 
 

@@ -96,8 +96,12 @@ SplashProbeVFXComponent:
     Offset: '0x110'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x50'
-  FullSize: '0x118'
+  - Name: ProbeEnabled
+    Offset: '0x118'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x58'
+  FullSize: '0x120'
   InheritedSize: '0xc8'
   Super: ActorComponent
 UndergroundSeaWaterId:

@@ -13,17 +13,21 @@ public:
 };
 
 
-// Size 0x0
-class AHuntersCry_SerikDialogTempEntitlement_C: public EntitlementDesc
+// Size 0xf
+class AHuntersCry_SerikDialogTempEntitlement_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class AHuntersCry_LarinnaDialogTempEntitlement_C: public EntitlementDesc
+// Size 0x20
+class AHuntersCry_LarinnaDialogTempEntitlement_C: public CompanyShopkeeper
 {
 public:
+	Class EmissaryMaxRankQuestProvider*                          EmissaryMaxRankQuestProvider;                      // 0x698(0x8)
+	Class CapsuleComponent*                                      SolidHits;                                         // 0x6a0(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x6a8(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6b0(0x8)
 };
 
 

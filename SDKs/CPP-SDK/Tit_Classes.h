@@ -42,147 +42,14 @@ public:
 
 
 // Size 0x0
-class Title_RB_Rank3_S06_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank2_S06_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank1_S06_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank3_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank2_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank1_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_OOS_Rank3_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_OOS_Rank2_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_GH_Rank3_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_GH_Rank2_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_AF_Rank3_S05_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank3_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank2_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_RB_Rank1_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_OOS_Rank3_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_OOS_Rank2_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_OOS_Rank1_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_MA_Rank3_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_GH_Rank3_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
-class Title_GH_Rank2_S04_C: public TitleDesc
-{
-public:
-};
-
-
-// Size 0x0
 class Title_AF_Rank3_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_AF_Rank2_S04_C: public TitleDesc
 {
 public:
 };
@@ -372,6 +239,153 @@ public:
 
 // Size 0x0
 class Title_AF_Rank3_002_VoyagerOfPirateProwess_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank3_S06_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank2_S06_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank1_S06_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_AF_Rank3_S06_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank3_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank2_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank1_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_OOS_Rank3_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_OOS_Rank2_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_GH_Rank3_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_GH_Rank2_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_AF_Rank3_S05_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank3_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank2_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_RB_Rank1_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_OOS_Rank3_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_OOS_Rank2_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_OOS_Rank1_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_MA_Rank3_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_GH_Rank3_S04_C: public TitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class Title_GH_Rank2_S04_C: public TitleDesc
 {
 public:
 };

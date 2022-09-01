@@ -9,12 +9,12 @@ BP_CaptainsLog_Interactable_ItemDesc_C:
 BP_CaptainsLog_Interactable_Proxy_C:
   Attributes:
   - Name: PlayerPosition
-    Offset: '0x690'
+    Offset: '0x6a0'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x698'
-  InheritedSize: '0x690'
+  FullSize: '0x6a8'
+  InheritedSize: '0x6a0'
   Super: CaptainsLogbookInteractableProxy
 BP_CaptainsLog_ItemDesc_C:
   Attributes: []
@@ -24,7 +24,7 @@ BP_CaptainsLog_ItemDesc_C:
   Super: CaptainsLogItemDesc
 BP_CaptainsLog_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x7d0'
     Size: '0x8'
     Type: Class SceneComponent*

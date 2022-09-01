@@ -7,7 +7,56 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C: public None
+class BP_Emote_SkeletonCurse_Cheer_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_SkeletonCurse_Clap_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_SkeletonCurse_Dance_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_SkeletonCurse_MakeFriends_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_SkeletonCurse_Point_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_SkeletonCurse_Sit_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_SkeletonCurse_Sleep_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_Emote_SkeletonCurse_Wave_Desc_C: public EmoteDesc
 {
 public:
 };
@@ -562,8 +611,43 @@ public:
 };
 
 
-// Size -0x43c5eb7d
-class BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C
+// Size 0x0
+class BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C: public BootyItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_MerchantCrate_BananaCrate_FullyStocked_Desc_C: public BootyItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_MerchantCrate_AnyItemCrate_ItemDesc_C: public ItemWithoutIconsDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_MegMeatCooked_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_MegMeatBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_KrakenMeatRaw_00_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

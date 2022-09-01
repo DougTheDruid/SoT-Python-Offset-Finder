@@ -24,6 +24,60 @@ AthenaAudioModuleSettings:
   FullSize: '0x48'
   InheritedSize: '0x38'
   Super: DeveloperSettings
+AudioPortalComponent:
+  Attributes:
+  - Name: PortalTriggerDistance
+    Offset: '0x2e0'
+    Size: '0x4'
+    Type: float
+  - Name: InsideRtpcUpdateDistance
+    Offset: '0x2e4'
+    Size: '0x4'
+    Type: float
+  - Name: OutsideRtpcUpdateDistance
+    Offset: '0x2e8'
+    Size: '0x4'
+    Type: float
+  - Name: TrackAttachmentToActor
+    Offset: '0x2ec'
+    Size: '0x1'
+    Type: bool
+  - Name: AudioInsideSpace
+    Offset: '0x2f0'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: AudioOutsideSpace
+    Offset: '0x2f8'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: ActiveAudioInsideSpace
+    Offset: '0x300'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: ActiveAudioOutsideSpace
+    Offset: '0x308'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: CollectionAsset
+    Offset: '0x310'
+    Size: '0x8'
+    Type: Class StoryDrivenAudioPortalCollectionDataAsset*
+  ClassSize: '0x60'
+  FullSize: '0x340'
+  InheritedSize: '0x2e0'
+  Super: SceneComponent
+AudioPortalInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AudioPortalService:
+  Attributes: []
+  ClassSize: '0xb0'
+  FullSize: '0xd8'
+  InheritedSize: '0x28'
+  Super: Object
 MultiEmitter:
   Attributes:
   - Name: MultiEmitterRootComponent
@@ -34,3 +88,27 @@ MultiEmitter:
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
   Super: Actor
+StoryDrivenAudioPortalCollectionDataAsset:
+  Attributes:
+  - Name: AssetsList
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class AssetsList*>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+StoryDrivenAudioPortalDataAsset:
+  Attributes:
+  - Name: Feature
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Struct FeatureFlag
+  - Name: Stories
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Struct StoryDrivenAudioPortalSetting>
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: DataAsset

@@ -1,15 +1,15 @@
 {
   "BP_Bell_C": {
     "Super": "Bell",
-    "FullSize": "0x568",
-    "InheritedSize": "0x560",
+    "FullSize": "0x578",
+    "InheritedSize": "0x570",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x570"
       }
     ]
   },

@@ -63,6 +63,7 @@ public:
 	byte                                                         CookingState;                                      // 0x124(0x1)
 	byte                                                         InitialCookingState;                               // 0x125(0x1)
 	byte                                                         RemovedCookingState;                               // 0x126(0x1)
+	bool                                                         IgnoreCookedFromRawStats;                          // 0x127(0x1)
 };
 
 
@@ -121,15 +122,15 @@ public:
 class CookingPot: public InteractableBase
 {
 public:
-	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3f8(0x8)
-	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x400(0x8)
-	Class CookerComponent*                                       CookerComponent;                                   // 0x408(0x8)
-	float                                                        HoldToInteractTime;                                // 0x410(0x4)
-	Struct FText                                                 NotWieldingCookableItemTooltip;                    // 0x418(0x38)
-	Struct FText                                                 WieldingCookableItemTooltip;                       // 0x450(0x38)
-	Struct FText                                                 TakeItemTooltip;                                   // 0x488(0x38)
-	Struct FText                                                 CannotTakeItemTooltip;                             // 0x4c0(0x38)
-	Struct FText                                                 MixInItemTooltip;                                  // 0x4f8(0x38)
+	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x408(0x8)
+	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x410(0x8)
+	Class CookerComponent*                                       CookerComponent;                                   // 0x418(0x8)
+	float                                                        HoldToInteractTime;                                // 0x420(0x4)
+	Struct FText                                                 NotWieldingCookableItemTooltip;                    // 0x428(0x38)
+	Struct FText                                                 WieldingCookableItemTooltip;                       // 0x460(0x38)
+	Struct FText                                                 TakeItemTooltip;                                   // 0x498(0x38)
+	Struct FText                                                 CannotTakeItemTooltip;                             // 0x4d0(0x38)
+	Struct FText                                                 MixInItemTooltip;                                  // 0x508(0x38)
 };
 
 

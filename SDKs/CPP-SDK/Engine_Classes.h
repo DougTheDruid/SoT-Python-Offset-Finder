@@ -455,7 +455,7 @@ public:
 };
 
 
-// Size 0x950
+// Size 0x9a8
 class Engine: public Object
 {
 public:
@@ -603,64 +603,68 @@ public:
 	bool                                                         bUseFixedFrameRate;                                // 0x658(0x1)
 	float                                                        FixedFrameRate;                                    // 0x65c(0x4)
 	Struct FloatRange                                            SmoothedFrameRateRange;                            // 0x660(0x10)
-	bool                                                         bCheckForMultiplePawnsSpawnedInAFrame;             // 0x670(0x1)
-	int                                                          NumPawnsAllowedToBeSpawnedInAFrame;                // 0x674(0x4)
-	bool                                                         bShouldGenerateLowQualityLightmaps;                // 0x678(0x1)
-	Struct Color                                                 C_WorldBox;                                        // 0x67c(0x4)
-	Struct Color                                                 C_BrushWire;                                       // 0x680(0x4)
-	Struct Color                                                 C_AddWire;                                         // 0x684(0x4)
-	Struct Color                                                 C_SubtractWire;                                    // 0x688(0x4)
-	Struct Color                                                 C_SemiSolidWire;                                   // 0x68c(0x4)
-	Struct Color                                                 C_NonSolidWire;                                    // 0x690(0x4)
-	Struct Color                                                 C_WireBackground;                                  // 0x694(0x4)
-	Struct Color                                                 C_ScaleBoxHi;                                      // 0x698(0x4)
-	Struct Color                                                 C_VolumeCollision;                                 // 0x69c(0x4)
-	Struct Color                                                 C_BSPCollision;                                    // 0x6a0(0x4)
-	Struct Color                                                 C_OrthoBackground;                                 // 0x6a4(0x4)
-	Struct Color                                                 C_Volume;                                          // 0x6a8(0x4)
-	Struct Color                                                 C_BrushShape;                                      // 0x6ac(0x4)
-	float                                                        StreamingDistanceFactor;                           // 0x6b0(0x4)
-	byte                                                         TransitionType;                                    // 0x6b4(0x1)
-	Struct FString                                               TransitionDescription;                             // 0x6b8(0x10)
-	Struct FString                                               TransitionGameMode;                                // 0x6c8(0x10)
-	float                                                        MeshLODRange;                                      // 0x6d8(0x4)
-	bool                                                         bAllowMatureLanguage;                              // 0x6dc(0x1)
-	float                                                        CameraRotationThreshold;                           // 0x6e0(0x4)
-	float                                                        CameraTranslationThreshold;                        // 0x6e4(0x4)
-	float                                                        PrimitiveProbablyVisibleTime;                      // 0x6e8(0x4)
-	float                                                        MaxOcclusionPixelsFraction;                        // 0x6ec(0x4)
-	bool                                                         bPauseOnLossOfFocus;                               // 0x6f0(0x1)
-	int                                                          MaxParticleResize;                                 // 0x6f4(0x4)
-	int                                                          MaxParticleResizeWarn;                             // 0x6f8(0x4)
-	TArray<Struct DropNoteInfo>                                  PendingDroppedNotes;                               // 0x700(0x10)
-	Struct RigidBodyErrorCorrection                              PhysicErrorCorrection;                             // 0x710(0x1c)
-	float                                                        NetClientTicksPerSecond;                           // 0x72c(0x4)
-	bool                                                         bHasPendingGlobalReregister;                       // 0x730(0x1)
-	float                                                        DisplayGamma;                                      // 0x734(0x4)
-	float                                                        MinDesiredFrameRate;                               // 0x738(0x4)
-	Struct LinearColor                                           DefaultSelectedMaterialColor;                      // 0x73c(0x10)
-	Struct LinearColor                                           SelectedMaterialColor;                             // 0x74c(0x10)
-	Struct LinearColor                                           SelectionOutlineColor;                             // 0x75c(0x10)
-	Struct LinearColor                                           SubduedSelectionOutlineColor;                      // 0x76c(0x10)
-	Struct LinearColor                                           SelectedMaterialColorOverride;                     // 0x77c(0x10)
-	bool                                                         bIsOverridingSelectedColor;                        // 0x78c(0x1)
-	bool                                                         bEnableOnScreenDebugMessages;                      // 0x790(0x1)
-	bool                                                         bEnableOnScreenDebugMessagesDisplay;               // 0x790(0x1)
-	bool                                                         bSuppressMapWarnings;                              // 0x790(0x1)
-	bool                                                         bCookSeparateSharedMPGameContent;                  // 0x790(0x1)
-	bool                                                         bDisableAILogging;                                 // 0x790(0x1)
-	int                                                          ScreenSaverInhibitorSemaphore;                     // 0x79c(0x4)
-	bool                                                         bLockReadOnlyLevels;                               // 0x7a0(0x1)
-	Struct FString                                               ParticleEventManagerClassPath;                     // 0x7a8(0x10)
-	float                                                        SelectionHighlightIntensity;                       // 0x7c8(0x4)
-	float                                                        BSPSelectionHighlightIntensity;                    // 0x7cc(0x4)
-	float                                                        HoverHighlightIntensity;                           // 0x7d0(0x4)
-	float                                                        SelectionHighlightIntensityBillboards;             // 0x7d4(0x4)
-	TArray<Struct NetDriverDefinition>                           NetDriverDefinitions;                              // 0x908(0x10)
-	TArray<Str ServerActors>                                     ServerActors;                                      // 0x918(0x10)
-	TArray<Str RuntimeServerActors>                              RuntimeServerActors;                               // 0x928(0x10)
-	bool                                                         bStartedLoadMapMovie;                              // 0x938(0x1)
-	int                                                          NextWorldContextHandle;                            // 0x950(0x4)
+	Class EngineCustomTimeStep*                                  CustomTimeStep;                                    // 0x670(0x8)
+	Class TimecodeProvider*                                      TimecodeProvider;                                  // 0x698(0x8)
+	bool                                                         bGenerateDefaultTimecode;                          // 0x6b9(0x1)
+	float                                                        GenerateDefaultTimecodeFrameDelay;                 // 0x6c4(0x4)
+	bool                                                         bCheckForMultiplePawnsSpawnedInAFrame;             // 0x6c8(0x1)
+	int                                                          NumPawnsAllowedToBeSpawnedInAFrame;                // 0x6cc(0x4)
+	bool                                                         bShouldGenerateLowQualityLightmaps;                // 0x6d0(0x1)
+	Struct Color                                                 C_WorldBox;                                        // 0x6d4(0x4)
+	Struct Color                                                 C_BrushWire;                                       // 0x6d8(0x4)
+	Struct Color                                                 C_AddWire;                                         // 0x6dc(0x4)
+	Struct Color                                                 C_SubtractWire;                                    // 0x6e0(0x4)
+	Struct Color                                                 C_SemiSolidWire;                                   // 0x6e4(0x4)
+	Struct Color                                                 C_NonSolidWire;                                    // 0x6e8(0x4)
+	Struct Color                                                 C_WireBackground;                                  // 0x6ec(0x4)
+	Struct Color                                                 C_ScaleBoxHi;                                      // 0x6f0(0x4)
+	Struct Color                                                 C_VolumeCollision;                                 // 0x6f4(0x4)
+	Struct Color                                                 C_BSPCollision;                                    // 0x6f8(0x4)
+	Struct Color                                                 C_OrthoBackground;                                 // 0x6fc(0x4)
+	Struct Color                                                 C_Volume;                                          // 0x700(0x4)
+	Struct Color                                                 C_BrushShape;                                      // 0x704(0x4)
+	float                                                        StreamingDistanceFactor;                           // 0x708(0x4)
+	byte                                                         TransitionType;                                    // 0x70c(0x1)
+	Struct FString                                               TransitionDescription;                             // 0x710(0x10)
+	Struct FString                                               TransitionGameMode;                                // 0x720(0x10)
+	float                                                        MeshLODRange;                                      // 0x730(0x4)
+	bool                                                         bAllowMatureLanguage;                              // 0x734(0x1)
+	float                                                        CameraRotationThreshold;                           // 0x738(0x4)
+	float                                                        CameraTranslationThreshold;                        // 0x73c(0x4)
+	float                                                        PrimitiveProbablyVisibleTime;                      // 0x740(0x4)
+	float                                                        MaxOcclusionPixelsFraction;                        // 0x744(0x4)
+	bool                                                         bPauseOnLossOfFocus;                               // 0x748(0x1)
+	int                                                          MaxParticleResize;                                 // 0x74c(0x4)
+	int                                                          MaxParticleResizeWarn;                             // 0x750(0x4)
+	TArray<Struct DropNoteInfo>                                  PendingDroppedNotes;                               // 0x758(0x10)
+	Struct RigidBodyErrorCorrection                              PhysicErrorCorrection;                             // 0x768(0x1c)
+	float                                                        NetClientTicksPerSecond;                           // 0x784(0x4)
+	bool                                                         bHasPendingGlobalReregister;                       // 0x788(0x1)
+	float                                                        DisplayGamma;                                      // 0x78c(0x4)
+	float                                                        MinDesiredFrameRate;                               // 0x790(0x4)
+	Struct LinearColor                                           DefaultSelectedMaterialColor;                      // 0x794(0x10)
+	Struct LinearColor                                           SelectedMaterialColor;                             // 0x7a4(0x10)
+	Struct LinearColor                                           SelectionOutlineColor;                             // 0x7b4(0x10)
+	Struct LinearColor                                           SubduedSelectionOutlineColor;                      // 0x7c4(0x10)
+	Struct LinearColor                                           SelectedMaterialColorOverride;                     // 0x7d4(0x10)
+	bool                                                         bIsOverridingSelectedColor;                        // 0x7e4(0x1)
+	bool                                                         bEnableOnScreenDebugMessages;                      // 0x7e8(0x1)
+	bool                                                         bEnableOnScreenDebugMessagesDisplay;               // 0x7e8(0x1)
+	bool                                                         bSuppressMapWarnings;                              // 0x7e8(0x1)
+	bool                                                         bCookSeparateSharedMPGameContent;                  // 0x7e8(0x1)
+	bool                                                         bDisableAILogging;                                 // 0x7e8(0x1)
+	int                                                          ScreenSaverInhibitorSemaphore;                     // 0x7f4(0x4)
+	bool                                                         bLockReadOnlyLevels;                               // 0x7f8(0x1)
+	Struct FString                                               ParticleEventManagerClassPath;                     // 0x800(0x10)
+	float                                                        SelectionHighlightIntensity;                       // 0x820(0x4)
+	float                                                        BSPSelectionHighlightIntensity;                    // 0x824(0x4)
+	float                                                        HoverHighlightIntensity;                           // 0x828(0x4)
+	float                                                        SelectionHighlightIntensityBillboards;             // 0x82c(0x4)
+	TArray<Struct NetDriverDefinition>                           NetDriverDefinitions;                              // 0x960(0x10)
+	TArray<Str ServerActors>                                     ServerActors;                                      // 0x970(0x10)
+	TArray<Str RuntimeServerActors>                              RuntimeServerActors;                               // 0x980(0x10)
+	bool                                                         bStartedLoadMapMovie;                              // 0x990(0x1)
+	int                                                          NextWorldContextHandle;                            // 0x9a8(0x4)
 };
 
 
@@ -668,8 +672,8 @@ public:
 class GameEngine: public Engine
 {
 public:
-	float                                                        MaxDeltaTime;                                      // 0x978(0x4)
-	float                                                        ServerFlushLogInterval;                            // 0x97c(0x4)
+	float                                                        MaxDeltaTime;                                      // 0x9d0(0x4)
+	float                                                        ServerFlushLogInterval;                            // 0x9d4(0x4)
 };
 
 
@@ -5714,6 +5718,13 @@ public:
 
 
 // Size 0x0
+class EngineCustomTimeStep: public Object
+{
+public:
+};
+
+
+// Size 0x0
 class ExecutableAnimMetaDataInterface: public Interface
 {
 public:
@@ -10469,6 +10480,14 @@ public:
 class ThumbnailInfo: public Object
 {
 public:
+};
+
+
+// Size 0x8
+class TimecodeProvider: public Object
+{
+public:
+	float                                                        FrameDelay;                                        // 0x28(0x4)
 };
 
 

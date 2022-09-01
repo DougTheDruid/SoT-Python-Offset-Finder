@@ -16,6 +16,15 @@ public:
 };
 
 
+// Size 0x20
+struct PirateGeneratorAdditionalBakeInfo
+{
+public:
+	TArray<class VFXParticles*>                                  VFXParticles;                                      // 0x0(0x10)
+	TArray<Struct FName>                                         VFXSockets;                                        // 0x10(0x10)
+};
+
+
 // Size 0x80
 struct PirateDescription
 {
@@ -71,13 +80,15 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x50
 struct WardrobeOutfitResult
 {
 public:
 	TArray<class Meshes*>                                        Meshes;                                            // 0x0(0x10)
 	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x10(0x10)
 	TArray<Struct FName>                                         MaterialReferences;                                // 0x20(0x10)
+	TArray<class VFXParticles*>                                  VFXParticles;                                      // 0x30(0x10)
+	TArray<Struct FName>                                         VFXSockets;                                        // 0x40(0x10)
 };
 
 
@@ -264,7 +275,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x50
 struct Outfit
 {
 public:
@@ -272,10 +283,21 @@ public:
 	TArray<Struct FName>                                         FreeSlots;                                         // 0x10(0x10)
 	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x20(0x10)
 	TArray<Struct FName>                                         MaterialReferences;                                // 0x30(0x10)
+	TArray<Struct ClothingVFX>                                   VFXs;                                              // 0x40(0x10)
 };
 
 
-// Size 0x78
+// Size 0x28
+struct ClothingVFX
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	TArray<Struct FName>                                         Sockets;                                           // 0x8(0x10)
+	TArray<Struct FName>                                         Slots;                                             // 0x18(0x10)
+};
+
+
+// Size 0x88
 struct ClothingItem
 {
 public:
@@ -286,8 +308,9 @@ public:
 	TArray<Struct FName>                                         NewSlots;                                          // 0x30(0x10)
 	struct FName                                                 Parent;                                            // 0x40(0x8)
 	TArray<Struct ClothingPart>                                  Parts;                                             // 0x48(0x10)
-	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x58(0x10)
-	TArray<Struct FName>                                         MaterialReferences;                                // 0x68(0x10)
+	TArray<Struct ClothingVFX>                                   VFXs;                                              // 0x58(0x10)
+	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x68(0x10)
+	TArray<Struct FName>                                         MaterialReferences;                                // 0x78(0x10)
 };
 
 
@@ -348,6 +371,15 @@ struct PirateGeneratorTextureReference
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	TArray<Struct FName>                                         References;                                        // 0x8(0x10)
+};
+
+
+// Size 0x18
+struct MeshPatchEntry
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	Struct StringAssetReference                                  Reference;                                         // 0x8(0x10)
 };
 
 
@@ -417,15 +449,6 @@ public:
 	struct FName                                                 SelectedBodyShape;                                 // 0x14(0x8)
 	TArray<Struct FName>                                         SelectedItems;                                     // 0x20(0x10)
 	TArray<Struct FName>                                         SelectedReferences;                                // 0x30(0x10)
-};
-
-
-// Size 0x18
-struct MeshPatchEntry
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	Struct StringAssetReference                                  Reference;                                         // 0x8(0x10)
 };
 
 

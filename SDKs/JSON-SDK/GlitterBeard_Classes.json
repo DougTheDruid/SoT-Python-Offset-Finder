@@ -67,15 +67,15 @@
   },
   "GlitterbeardSlidingDoor": {
     "Super": "SlidingDoor",
-    "FullSize": "0x538",
-    "InheritedSize": "0x530",
+    "FullSize": "0x548",
+    "InheritedSize": "0x540",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DecalBlendComponent",
         "Type": "Class EffectBlendControllerComponent*",
         "Size": "0x8",
-        "Offset": "0x530"
+        "Offset": "0x540"
       }
     ]
   },

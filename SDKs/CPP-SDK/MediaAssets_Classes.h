@@ -6,33 +6,125 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x90
+// Size 0x0
+class MediaBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x10
+class MediaComponent: public ActorComponent
+{
+public:
+	Class MediaTexture*                                          MediaTexture;                                      // 0xc8(0x8)
+	Class MediaPlayer*                                           MediaPlayer;                                       // 0xd0(0x8)
+};
+
+
+// Size 0x10
+class MediaTimeStampInfo: public Object
+{
+public:
+	Struct Timespan                                              Time;                                              // 0x28(0x8)
+};
+
+
+// Size 0x150
 class MediaPlayer: public Object
 {
 public:
-	bool                                                         Looping;                                           // 0x48(0x1)
-	Struct FString                                               URL;                                               // 0x50(0x10)
+	Struct Timespan                                              CacheAhead;                                        // 0xa8(0x8)
+	Struct Timespan                                              CacheBehind;                                       // 0xb0(0x8)
+	Struct Timespan                                              CacheBehindGame;                                   // 0xb8(0x8)
+	bool                                                         NativeAudioOut;                                    // 0xc0(0x1)
+	bool                                                         PlayOnOpen;                                        // 0xc1(0x1)
+	bool                                                         Shuffle;                                           // 0xc4(0x1)
+	bool                                                         Loop;                                              // 0xc4(0x1)
+	Class MediaPlaylist*                                         Playlist;                                          // 0xc8(0x8)
+	int                                                          PlaylistIndex;                                     // 0xd0(0x4)
+	Struct Timespan                                              TimeDelay;                                         // 0xd8(0x8)
+	Class MediaSource*                                           CachedMediaSource;                                 // 0xe0(0x8)
+	float                                                        HorizontalFieldOfView;                             // 0xe8(0x4)
+	float                                                        VerticalFieldOfView;                               // 0xec(0x4)
+	Struct Rotator                                               ViewRotation;                                      // 0xf0(0xc)
+	Struct Guid                                                  PlayerGuid;                                        // 0x160(0x10)
 };
 
 
-// Size 0x60
-class MediaSoundWave: public SoundWave
+// Size 0x10
+class MediaPlaylist: public Object
 {
 public:
-	int                                                          AudioTrackIndex;                                   // 0x218(0x4)
-	Class MediaPlayer*                                           MediaPlayer;                                       // 0x220(0x8)
+	TArray<class Items*>                                         Items;                                             // 0x28(0x10)
 };
 
 
-// Size 0x70
+// Size 0x58
+class MediaSource: public Object
+{
+public:
+};
+
+
+// Size 0x8
+class BaseMediaSource: public MediaSource
+{
+public:
+	struct FName                                                 PlayerName;                                        // 0x80(0x8)
+};
+
+
+// Size 0x28
+class FileMediaSource: public BaseMediaSource
+{
+public:
+	Struct FString                                               FilePath;                                          // 0x88(0x10)
+	bool                                                         PrecacheFile;                                      // 0x98(0x1)
+};
+
+
+// Size 0x10
+class StreamMediaSource: public BaseMediaSource
+{
+public:
+	Struct FString                                               StreamUrl;                                         // 0x88(0x10)
+};
+
+
+// Size 0x10
+class TimeSynchronizableMediaSource: public BaseMediaSource
+{
+public:
+	bool                                                         bUseTimeSynchronization;                           // 0x88(0x1)
+	int                                                          FrameDelay;                                        // 0x8c(0x4)
+	double                                                       TimeDelay;                                         // 0x90(0x8)
+};
+
+
+// Size 0x8
+class PlatformMediaSource: public MediaSource
+{
+public:
+	Class MediaSource*                                           MediaSource;                                       // 0x80(0x8)
+};
+
+
+// Size 0xf0
 class MediaTexture: public Texture
 {
 public:
 	byte                                                         AddressX;                                          // 0x138(0x1)
 	byte                                                         AddressY;                                          // 0x139(0x1)
+	bool                                                         AutoClear;                                         // 0x13a(0x1)
 	Struct LinearColor                                           ClearColor;                                        // 0x13c(0x10)
-	int                                                          VideoTrackIndex;                                   // 0x14c(0x4)
-	Class MediaPlayer*                                           MediaPlayer;                                       // 0x150(0x8)
+	bool                                                         EnableGenMips;                                     // 0x14c(0x1)
+	byte                                                         NumMips;                                           // 0x14d(0x1)
+	bool                                                         NewStyleOutput;                                    // 0x14e(0x1)
+	byte                                                         OutputFormat;                                      // 0x14f(0x1)
+	float                                                        CurrentAspectRatio;                                // 0x150(0x4)
+	byte                                                         CurrentOrientation;                                // 0x154(0x1)
+	Class MediaPlayer*                                           MediaPlayer;                                       // 0x158(0x8)
 };
 
 

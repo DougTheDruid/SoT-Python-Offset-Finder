@@ -1,8 +1,8 @@
 {
   "BP_fod_ChickenMeatRaw_00_a_ItemProxy_C": {
     "Super": "BP_ProxyIngestible_Retractable_C",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x7b0",
+    "FullSize": "0x7c0",
+    "InheritedSize": "0x7c0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -516,13 +516,6 @@
       }
     ]
   },
-  "BP_fod_PineappleFresh_00_a_ItemDesc_C": {
-    "Super": "ItemDesc",
-    "FullSize": "0x120",
-    "InheritedSize": "0x120",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BP_Emote_Dice_D20_Desc_C": {
     "Super": "EmoteDesc",
     "FullSize": "0x100",
@@ -564,6 +557,80 @@
     "InheritedSize": "0x100",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "BP_fod_PorkMeatCooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_PorkMeatBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_ChickenMeatRaw_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_PineappleFresh_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_CommodityManifestBook_MerchantAlliance_C": {
+    "Super": "ModalInteractionProxy",
+    "FullSize": "0x520",
+    "InheritedSize": "0x510",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCDialog",
+        "Type": "Class NPCDialogComponent*",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x518"
+      }
+    ]
+  },
+  "BP_IslandStorageBarrel_Outpost_C": {
+    "Super": "StorageContainer",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x4c8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Replenishable",
+        "Type": "Class ReplenishableComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "IslandTelemetrySubject",
+        "Type": "Class IslandTelemetrySubjectComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "StorageContainer",
+        "Type": "Class StorageContainerComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      }
+    ]
   },
   "BP_hair_col_white_01_under_Desc_C": {
     "Super": "ClothingDesc",
@@ -655,52 +722,6 @@
     "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "BP_IslandStorageBarrel_Outpost_C": {
-    "Super": "StorageContainer",
-    "FullSize": "0x4d0",
-    "InheritedSize": "0x4b8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Replenishable",
-        "Type": "Class ReplenishableComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b8"
-      },
-      {
-        "Name": "IslandTelemetrySubject",
-        "Type": "Class IslandTelemetrySubjectComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c0"
-      },
-      {
-        "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
-        "Size": "0x8",
-        "Offset": "0x4c8"
-      }
-    ]
-  },
-  "BP_CommodityManifestBook_MerchantAlliance_C": {
-    "Super": "ModalInteractionProxy",
-    "FullSize": "0x510",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NPCDialog",
-        "Type": "Class NPCDialogComponent*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      },
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x508"
-      }
-    ]
   },
   "BP_underwear_yellow_Desc_C": {
     "Super": "ClothingDesc",

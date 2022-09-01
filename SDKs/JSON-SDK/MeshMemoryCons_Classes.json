@@ -1,5 +1,5 @@
 {
-  "MeshMemoryConstraintCategory_AI_Skeleton_Bone_C": {
+  "MeshMemoryConstraintCategory_AI_Ancient_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -35,6 +35,13 @@
     "Attributes": []
   },
   "MeshMemoryConstraintCategory_AI_Siren_C": {
+    "Super": "MeshMemoryConstraintCategory",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMemoryConstraintCategory_AI_Skeleton_Bone_C": {
     "Super": "MeshMemoryConstraintCategory",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

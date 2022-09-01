@@ -17,9 +17,9 @@ public:
 class WarMapInteractionComponent: public InteractableComponent
 {
 public:
-	Struct FText                                                 OpenMapInteractionText;                            // 0x120(0x38)
-	Struct FText                                                 CannotOpenMapInteractionText;                      // 0x158(0x38)
-	class                                                        OpenMapInputId;                                    // 0x190(0x8)
+	Struct FText                                                 OpenMapInteractionText;                            // 0x130(0x38)
+	Struct FText                                                 CannotOpenMapInteractionText;                      // 0x168(0x38)
+	class                                                        OpenMapInputId;                                    // 0x1a0(0x8)
 };
 
 

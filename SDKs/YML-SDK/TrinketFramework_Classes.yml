@@ -12,6 +12,12 @@ SameActorTrinketLoadoutFinderPolicy:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: TrinketLoadoutFinderPolicyBase
+TrinketAudioInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 TrinketCategory:
   Attributes: []
   ClassSize: '0x0'
@@ -66,3 +72,25 @@ TrinketSetControlInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+TrinketSfxDataAsset:
+  Attributes:
+  - Name: MountSfx
+    Offset: '0x28'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: RemoveSfx
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: NudgeSfx
+    Offset: '0x38'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StraightenSfx
+    Offset: '0x40'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: DataAsset

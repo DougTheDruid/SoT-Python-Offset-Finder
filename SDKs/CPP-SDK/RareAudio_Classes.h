@@ -101,33 +101,6 @@ public:
 };
 
 
-// Size 0x30
-class AudioPortalComponent: public SceneComponent
-{
-public:
-	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2e0(0x8)
-	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2e8(0x8)
-	float                                                        PortalTriggerDistance;                             // 0x2f0(0x4)
-	float                                                        InsideRtpcUpdateDistance;                          // 0x2f4(0x4)
-	float                                                        OutsideRtpcUpdateDistance;                         // 0x2f8(0x4)
-	bool                                                         TrackAttachmentToActor;                            // 0x2fc(0x1)
-};
-
-
-// Size 0x0
-class AudioPortalInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xb0
-class AudioPortalService: public Object
-{
-public:
-};
-
-
 // Size 0x10
 class AudioSpaceComponent: public StaticMeshComponent
 {

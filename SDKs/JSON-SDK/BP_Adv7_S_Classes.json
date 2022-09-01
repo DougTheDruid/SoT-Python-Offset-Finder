@@ -1,27 +1,27 @@
 {
   "BP_Adv7_SirensPrize_Larinna_C": {
     "Super": "BP_SoleTrader_C",
-    "FullSize": "0x6b8",
-    "InheritedSize": "0x6a0",
+    "FullSize": "0x6c8",
+    "InheritedSize": "0x6b0",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "StaticMesh1",
         "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6a0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6a8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ActorPhasingComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Name": "ActorPhasing",
+        "Type": "Class ActorPhasingComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c0"
       }
     ]
   },

@@ -1,27 +1,15 @@
 {
-  "BP_MediumShipStorageBarrel_Grog_C": {
-    "Super": "InteractableBase",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f0",
-    "ClassSize": "0x18",
+  "BP_MerchantCrate_AnyItemCrate_ItemInfo_C": {
+    "Super": "BootyItemInfo",
+    "FullSize": "0x728",
+    "InheritedSize": "0x720",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "TankardRefiller",
-        "Type": "Class TankardRefillerComponent*",
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "Interactable",
-        "Type": "Class InteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x720"
       }
     ]
   },

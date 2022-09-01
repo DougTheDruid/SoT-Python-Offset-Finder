@@ -60,6 +60,13 @@ public:
 
 
 // Size 0x0
+class BP_msc_hurdygurdy_hwm_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_msc_hurdygurdy_wth_01_a_v01_ItemDesc_C: public ItemDesc
 {
 public:

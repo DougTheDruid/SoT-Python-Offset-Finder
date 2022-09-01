@@ -6,12 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x28
 struct PetCustomisation
 {
 public:
-	Struct FString                                               PetName;                                           // 0x0(0x10)
-	Struct AIPartId                                              PetPartId;                                         // 0x10(0x8)
+	Struct FString                                               DefaultPetName;                                    // 0x0(0x10)
+	Struct FString                                               PetName;                                           // 0x10(0x10)
+	Struct AIPartId                                              PetPartId;                                         // 0x20(0x8)
 };
 
 

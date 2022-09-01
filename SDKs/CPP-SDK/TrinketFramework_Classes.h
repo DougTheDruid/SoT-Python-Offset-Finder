@@ -14,6 +14,13 @@ public:
 
 
 // Size 0x0
+class TrinketAudioInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class TrinketCategory: public CategoryBase
 {
 public:
@@ -69,6 +76,17 @@ public:
 class TrinketSetControlInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x20
+class TrinketSfxDataAsset: public DataAsset
+{
+public:
+	Class WwiseEvent*                                            MountSfx;                                          // 0x28(0x8)
+	Class WwiseEvent*                                            RemoveSfx;                                         // 0x30(0x8)
+	Class WwiseEvent*                                            NudgeSfx;                                          // 0x38(0x8)
+	Class WwiseEvent*                                            StraightenSfx;                                     // 0x40(0x8)
 };
 
 

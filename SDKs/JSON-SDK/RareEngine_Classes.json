@@ -1,8 +1,8 @@
 {
   "RareGameEngine": {
     "Super": "GameEngine",
-    "FullSize": "0xa40",
-    "InheritedSize": "0x9e8",
+    "FullSize": "0xa98",
+    "InheritedSize": "0xa40",
     "ClassSize": "0x58",
     "Attributes": []
   },

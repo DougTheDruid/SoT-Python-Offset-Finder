@@ -62,11 +62,15 @@ BP_RitualBottleTop_C:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: '2'
+  - Name: "2\u66A4\u7D36\u7F6F\u0D08\t\u7FA4\u70AF\uE098\u82DB\u018A\0\u5F32\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u7F00\u0D0A\t\u7FFF\u7FFF\u9218\u732D\u018A\0\
+      \u5042\u525F\u7469u"
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: '1'
+  - Name: "1\u7FD4\u7499\u7ACB\u0D04\t\u7ACB\u7F3C\u1A58\u762D\u018A\0\u5F31\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u7E00\u0D06\t\u7F05\u6456\uCB38\u2077\u018A\0\
+      2\u66A4\u7D36o"
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -84,11 +88,15 @@ BP_RitualBottle_C:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: '2'
+  - Name: "2\u66A4\u7D36\u7F6F\u0D08\t\u7FA4\u70AF\uE098\u82DB\u018A\0\u5F32\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u7F00\u0D0A\t\u7FFF\u7FFF\u9218\u732D\u018A\0\
+      \u5042\u525F\u7469u"
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: '1'
+  - Name: "1\u7FD4\u7499\u7ACB\u0D04\t\u7ACB\u7F3C\u1A58\u762D\u018A\0\u5F31\u4547\
+      \u5F4E\u4156\u4952\u4241\u454C\u7E00\u0D06\t\u7F05\u6456\uCB38\u2077\u018A\0\
+      2\u66A4\u7D36o"
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

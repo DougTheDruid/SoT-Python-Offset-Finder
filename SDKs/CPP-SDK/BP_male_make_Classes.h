@@ -7,6 +7,69 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
+class BP_male_makeup_black_08_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_black_07_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_black_06_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_black_05_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_black_04_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_black_03_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_black_02_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_black_01_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_male_makeup_white_08_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_male_makeup_white_07_Desc_C: public ClothingDesc
 {
 public:
@@ -106,69 +169,6 @@ public:
 
 // Size 0x0
 class BP_male_makeup_asian_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_08_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_07_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_06_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_05_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_04_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_03_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_02_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_black_01_Desc_C: public ClothingDesc
-{
-public:
-};
-
-
-// Size 0x0
-class BP_male_makeup_white_08_Desc_C: public ClothingDesc
 {
 public:
 };

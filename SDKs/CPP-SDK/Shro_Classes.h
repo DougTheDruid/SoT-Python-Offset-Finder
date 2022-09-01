@@ -14,7 +14,7 @@ public:
 
 
 // Size 0x0
-class ShroudedDeep_MegTaleTempEntitlement_C: public EntitlementDesc
+class ShroudedDeep_MegTaleTempEntitlement_C: public None
 {
 public:
 };

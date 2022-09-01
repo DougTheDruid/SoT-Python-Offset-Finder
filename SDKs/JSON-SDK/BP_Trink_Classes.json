@@ -1,161 +1,161 @@
 {
   "BP_Trinket_Anvil_01_d_C": {
     "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "cap_plinth_01_d",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "cap_desk_model_blk_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },
   "BP_Trinket_RubySplashtailPlaque_01_d_C": {
     "Super": "BP_Trinket_HangingSinglePoint_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StaticMesh1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },
   "BP_Trinket_Orb_01_b_C": {
     "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "cap_desk_model_oos_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "cap_plinth_01_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },
   "BP_Trinket_Mask_01_d_C": {
     "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "cap_desk_model_msk_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "cap_plinth_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },
   "BP_Trinket_KrakenEye_01_c_C": {
     "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "cap_desk_model_kra_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "cap_plinth_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },
   "BP_Trinket_FerrySkeleton_01_b_C": {
     "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "cap_desk_model_fod_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "cap_plinth_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },
   "BP_Trinket_AncientTerror_01_a_C": {
     "Super": "BP_Trinket_StandingSmall_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "cap_desk_model_wth_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "cap_plinth_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },
   "BP_Trinket_CloudyPlentifinPlaque_01_d_C": {
     "Super": "BP_Trinket_HangingSinglePoint_C",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f8",
+    "FullSize": "0x418",
+    "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StaticMesh1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },

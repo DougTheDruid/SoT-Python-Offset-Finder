@@ -50,6 +50,13 @@ public:
 
 
 // Size 0x0
+class BP_tls_hand_lantern_hwm_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_tls_hand_lantern_skl_01_a_ItemDesc_C: public ItemDesc
 {
 public:

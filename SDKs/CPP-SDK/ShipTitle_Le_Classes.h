@@ -42,7 +42,21 @@ public:
 
 
 // Size 0x0
+class ShipTitle_LegendaryProtectorOfAthenasFortune_C: public ShipTitleDesc
+{
+public:
+};
+
+
+// Size 0x0
 class ShipTitle_LegendaryRogue_C: public ShipTitleDesc
+{
+public:
+};
+
+
+// Size 0x0
+class ShipTitle_LegendaryServantOfTheFlame_C: public ShipTitleDesc
 {
 public:
 };

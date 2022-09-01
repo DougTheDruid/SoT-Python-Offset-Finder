@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_CaptainsLog_Wieldable_C:
   Attributes:
-  - Name: UberGraphFrame
-    Offset: '0xcb0'
+  - Name: None
+    Offset: '0xc70'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: AnimNotifyWwiseEmitter
-    Offset: '0xcb8'
+  - Name: None
+    Offset: '0xc78'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: SkeletalStashedMeshMemoryConstraint
-    Offset: '0xcc0'
+  - Name: None
+    Offset: '0xc80'
     Size: '0x8'
     Type: Class SkeletalStashedMeshMemoryConstraintComponent*
   ClassSize: '0x18'
-  FullSize: '0xcc8'
-  InheritedSize: '0xcb0'
+  FullSize: '0xc88'
+  InheritedSize: '0xc70'
   Super: CaptainsLogbookWieldable

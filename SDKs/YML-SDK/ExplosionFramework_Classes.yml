@@ -55,6 +55,6 @@ StatusResponseExplodeAfterTime:
 TaleQuestFuseFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary

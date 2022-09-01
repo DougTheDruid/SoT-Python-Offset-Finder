@@ -63,6 +63,13 @@ public:
 
 
 // Size 0x0
+class BP_Emote_Flirt_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_Emote_Drama_Desc_C: public EmoteDesc
 {
 public:
@@ -119,6 +126,13 @@ public:
 
 
 // Size 0x0
+class BP_Emote_Confused1_Desc_C: public EmoteDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_Emote_Backflip_Desc_C: public EmoteDesc
 {
 public:
@@ -147,7 +161,7 @@ public:
 
 
 // Size 0x0
-class BP_Emote_CastawayFire_Desc_C: public EmoteDesc
+class BP_Emote_Castaway_Desc_C: public EmoteDesc
 {
 public:
 };

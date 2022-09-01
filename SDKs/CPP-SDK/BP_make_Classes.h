@@ -49,6 +49,13 @@ public:
 
 
 // Size 0x0
+class BP_makeup_s7_01_Desc_C: public ClothingDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_makeup_s6_01_Desc_C: public ClothingDesc
 {
 public:

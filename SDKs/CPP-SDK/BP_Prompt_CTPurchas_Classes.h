@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x728
+// Size 0x730
 class BP_Prompt_CTPurchaseVoyageSequence_C: public BP_PromptCoordinator_Base_C
 {
 public:
@@ -45,6 +45,7 @@ public:
 	bool                                                         State_SeenSignpostPrompt;                          // 0x7ef(0x1)
 	BlueprintGeneratedClass BP_CT_TutorialProgress_C*            CompanyTutorialProgress;                           // 0x7f0(0x8)
 	Struct ObjectMessagingHandle                                 Handle_CompanyRankPurchased;                       // 0x7f8(0x48)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x840(0x8)
 };
 
 

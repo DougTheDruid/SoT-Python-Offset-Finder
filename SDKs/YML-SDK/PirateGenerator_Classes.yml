@@ -132,22 +132,22 @@ PirateGeneratorMaterials:
   Super: Object
 PirateGeneratorSettings:
   Attributes:
-  - Name: ConfigJson
+  - Name: WardrobeDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
-  - Name: PiratesFolder
+    Type: Struct StringAssetReference
+  - Name: ConfigJson
     Offset: '0x48'
     Size: '0x10'
     Type: Struct FString
-  - Name: WardrobeFolder
+  - Name: PiratesFolder
     Offset: '0x58'
     Size: '0x10'
     Type: Struct FString
-  - Name: WardrobeDataAsset
+  - Name: WardrobeFolder
     Offset: '0x68'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: Struct FString
   - Name: DefaultWardrobeItems
     Offset: '0x78'
     Size: '0x10'

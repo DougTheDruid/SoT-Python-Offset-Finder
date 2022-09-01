@@ -2078,9 +2078,9 @@
   },
   "Engine": {
     "Super": "Object",
-    "FullSize": "0x978",
+    "FullSize": "0x9d0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x950",
+    "ClassSize": "0x9a8",
     "Attributes": [
       {
         "Name": "TinyFont",
@@ -2947,372 +2947,396 @@
         "Offset": "0x660"
       },
       {
+        "Name": "CustomTimeStep",
+        "Type": "Class EngineCustomTimeStep*",
+        "Size": "0x8",
+        "Offset": "0x670"
+      },
+      {
+        "Name": "TimecodeProvider",
+        "Type": "Class TimecodeProvider*",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Name": "bGenerateDefaultTimecode",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x6b9"
+      },
+      {
+        "Name": "GenerateDefaultTimecodeFrameDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6c4"
+      },
+      {
         "Name": "bCheckForMultiplePawnsSpawnedInAFrame",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x670"
+        "Offset": "0x6c8"
       },
       {
         "Name": "NumPawnsAllowedToBeSpawnedInAFrame",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x674"
+        "Offset": "0x6cc"
       },
       {
         "Name": "bShouldGenerateLowQualityLightmaps",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x678"
+        "Offset": "0x6d0"
       },
       {
         "Name": "C_WorldBox",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x67c"
+        "Offset": "0x6d4"
       },
       {
         "Name": "C_BrushWire",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x680"
+        "Offset": "0x6d8"
       },
       {
         "Name": "C_AddWire",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x684"
+        "Offset": "0x6dc"
       },
       {
         "Name": "C_SubtractWire",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x688"
+        "Offset": "0x6e0"
       },
       {
         "Name": "C_SemiSolidWire",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x68c"
+        "Offset": "0x6e4"
       },
       {
         "Name": "C_NonSolidWire",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x690"
+        "Offset": "0x6e8"
       },
       {
         "Name": "C_WireBackground",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x694"
+        "Offset": "0x6ec"
       },
       {
         "Name": "C_ScaleBoxHi",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x698"
+        "Offset": "0x6f0"
       },
       {
         "Name": "C_VolumeCollision",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x69c"
+        "Offset": "0x6f4"
       },
       {
         "Name": "C_BSPCollision",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x6a0"
+        "Offset": "0x6f8"
       },
       {
         "Name": "C_OrthoBackground",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x6a4"
+        "Offset": "0x6fc"
       },
       {
         "Name": "C_Volume",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x6a8"
+        "Offset": "0x700"
       },
       {
         "Name": "C_BrushShape",
         "Type": "Struct Color",
         "Size": "0x4",
-        "Offset": "0x6ac"
+        "Offset": "0x704"
       },
       {
         "Name": "StreamingDistanceFactor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6b0"
+        "Offset": "0x708"
       },
       {
         "Name": "TransitionType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x6b4"
+        "Offset": "0x70c"
       },
       {
         "Name": "TransitionDescription",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x6b8"
+        "Offset": "0x710"
       },
       {
         "Name": "TransitionGameMode",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x6c8"
+        "Offset": "0x720"
       },
       {
         "Name": "MeshLODRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6d8"
+        "Offset": "0x730"
       },
       {
         "Name": "bAllowMatureLanguage",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6dc"
+        "Offset": "0x734"
       },
       {
         "Name": "CameraRotationThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6e0"
+        "Offset": "0x738"
       },
       {
         "Name": "CameraTranslationThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6e4"
+        "Offset": "0x73c"
       },
       {
         "Name": "PrimitiveProbablyVisibleTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6e8"
+        "Offset": "0x740"
       },
       {
         "Name": "MaxOcclusionPixelsFraction",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6ec"
+        "Offset": "0x744"
       },
       {
         "Name": "bPauseOnLossOfFocus",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6f0"
+        "Offset": "0x748"
       },
       {
         "Name": "MaxParticleResize",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x6f4"
+        "Offset": "0x74c"
       },
       {
         "Name": "MaxParticleResizeWarn",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x6f8"
+        "Offset": "0x750"
       },
       {
         "Name": "PendingDroppedNotes",
         "Type": "TArray<Struct DropNoteInfo>",
         "Size": "0x10",
-        "Offset": "0x700"
+        "Offset": "0x758"
       },
       {
         "Name": "PhysicErrorCorrection",
         "Type": "Struct RigidBodyErrorCorrection",
         "Size": "0x1c",
-        "Offset": "0x710"
+        "Offset": "0x768"
       },
       {
         "Name": "NetClientTicksPerSecond",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x72c"
+        "Offset": "0x784"
       },
       {
         "Name": "bHasPendingGlobalReregister",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x730"
+        "Offset": "0x788"
       },
       {
         "Name": "DisplayGamma",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x734"
+        "Offset": "0x78c"
       },
       {
         "Name": "MinDesiredFrameRate",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x738"
+        "Offset": "0x790"
       },
       {
         "Name": "DefaultSelectedMaterialColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x73c"
+        "Offset": "0x794"
       },
       {
         "Name": "SelectedMaterialColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x74c"
+        "Offset": "0x7a4"
       },
       {
         "Name": "SelectionOutlineColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x75c"
+        "Offset": "0x7b4"
       },
       {
         "Name": "SubduedSelectionOutlineColor",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x76c"
+        "Offset": "0x7c4"
       },
       {
         "Name": "SelectedMaterialColorOverride",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x77c"
+        "Offset": "0x7d4"
       },
       {
         "Name": "bIsOverridingSelectedColor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x78c"
+        "Offset": "0x7e4"
       },
       {
         "Name": "bEnableOnScreenDebugMessages",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x790"
+        "Offset": "0x7e8"
       },
       {
         "Name": "bEnableOnScreenDebugMessagesDisplay",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x790"
+        "Offset": "0x7e8"
       },
       {
         "Name": "bSuppressMapWarnings",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x790"
+        "Offset": "0x7e8"
       },
       {
         "Name": "bCookSeparateSharedMPGameContent",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x790"
+        "Offset": "0x7e8"
       },
       {
         "Name": "bDisableAILogging",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x790"
+        "Offset": "0x7e8"
       },
       {
         "Name": "ScreenSaverInhibitorSemaphore",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x79c"
+        "Offset": "0x7f4"
       },
       {
         "Name": "bLockReadOnlyLevels",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x7a0"
+        "Offset": "0x7f8"
       },
       {
         "Name": "ParticleEventManagerClassPath",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x7a8"
+        "Offset": "0x800"
       },
       {
         "Name": "SelectionHighlightIntensity",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7c8"
+        "Offset": "0x820"
       },
       {
         "Name": "BSPSelectionHighlightIntensity",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7cc"
+        "Offset": "0x824"
       },
       {
         "Name": "HoverHighlightIntensity",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7d0"
+        "Offset": "0x828"
       },
       {
         "Name": "SelectionHighlightIntensityBillboards",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7d4"
+        "Offset": "0x82c"
       },
       {
         "Name": "NetDriverDefinitions",
         "Type": "TArray<Struct NetDriverDefinition>",
         "Size": "0x10",
-        "Offset": "0x908"
+        "Offset": "0x960"
       },
       {
         "Name": "ServerActors",
         "Type": "TArray<Str ServerActors>",
         "Size": "0x10",
-        "Offset": "0x918"
+        "Offset": "0x970"
       },
       {
         "Name": "RuntimeServerActors",
         "Type": "TArray<Str RuntimeServerActors>",
         "Size": "0x10",
-        "Offset": "0x928"
+        "Offset": "0x980"
       },
       {
         "Name": "bStartedLoadMapMovie",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x938"
+        "Offset": "0x990"
       },
       {
         "Name": "NextWorldContextHandle",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x950"
+        "Offset": "0x9a8"
       }
     ]
   },
   "GameEngine": {
     "Super": "Engine",
-    "FullSize": "0x9e8",
-    "InheritedSize": "0x978",
+    "FullSize": "0xa40",
+    "InheritedSize": "0x9d0",
     "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "MaxDeltaTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x978"
+        "Offset": "0x9d0"
       },
       {
         "Name": "ServerFlushLogInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x97c"
+        "Offset": "0x9d4"
       }
     ]
   },
@@ -19619,6 +19643,13 @@
       }
     ]
   },
+  "EngineCustomTimeStep": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ExecutableAnimMetaDataInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -32315,6 +32346,20 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "TimecodeProvider": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "FrameDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
   },
   "TimelineTemplate": {
     "Super": "Object",

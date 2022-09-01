@@ -13,10 +13,10 @@ BP_EquipmentChestInteraction_C:
 BP_EquipmentChest_C:
   Attributes:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x580'
+    Offset: '0x590'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
   ClassSize: '0x8'
-  FullSize: '0x588'
-  InheritedSize: '0x580'
+  FullSize: '0x598'
+  InheritedSize: '0x590'
   Super: PossessionsChest

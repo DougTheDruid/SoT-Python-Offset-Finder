@@ -3,20 +3,20 @@
 WarMapInteractionComponent:
   Attributes:
   - Name: OpenMapInteractionText
-    Offset: '0x120'
+    Offset: '0x130'
     Size: '0x38'
     Type: Struct FText
   - Name: CannotOpenMapInteractionText
-    Offset: '0x158'
+    Offset: '0x168'
     Size: '0x38'
     Type: Struct FText
   - Name: OpenMapInputId
-    Offset: '0x190'
+    Offset: '0x1a0'
     Size: '0x8'
     Type: class
   ClassSize: '0xa0'
-  FullSize: '0x1b8'
-  InheritedSize: '0x118'
+  FullSize: '0x1c8'
+  InheritedSize: '0x128'
   Super: InteractableComponent
 WarMapStateInterface:
   Attributes: []

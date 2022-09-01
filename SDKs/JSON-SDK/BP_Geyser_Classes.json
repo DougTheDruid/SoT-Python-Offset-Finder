@@ -1,8 +1,8 @@
 {
   "BP_GeyserManager_C": {
     "Super": "GeyserManager",
-    "FullSize": "0x430",
-    "InheritedSize": "0x430",
+    "FullSize": "0x448",
+    "InheritedSize": "0x448",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -97,14 +97,30 @@ public:
 };
 
 
+// Size 0x10
+class WardrobeExcludeDataAsset: public DataAsset
+{
+public:
+	TArray<Struct FName>                                         ExcludeItems;                                      // 0x28(0x10)
+};
+
+
+// Size 0xb0
+class WardrobeDataAsset: public DataAsset
+{
+public:
+	TArray<Struct MeshPatchEntry>                                AssetMap;                                          // 0xc8(0x10)
+};
+
+
 // Size 0xf8
 class PirateGeneratorSettings: public DeveloperSettings
 {
 public:
-	Struct FString                                               ConfigJson;                                        // 0x38(0x10)
-	Struct FString                                               PiratesFolder;                                     // 0x48(0x10)
-	Struct FString                                               WardrobeFolder;                                    // 0x58(0x10)
-	Struct StringAssetReference                                  WardrobeDataAsset;                                 // 0x68(0x10)
+	Struct StringAssetReference                                  WardrobeDataAsset;                                 // 0x38(0x10)
+	Struct FString                                               ConfigJson;                                        // 0x48(0x10)
+	Struct FString                                               PiratesFolder;                                     // 0x58(0x10)
+	Struct FString                                               WardrobeFolder;                                    // 0x68(0x10)
 	TArray<Struct FName>                                         DefaultWardrobeItems;                              // 0x78(0x10)
 	Struct StringAssetReference                                  MaterialReferencesDataAsset;                       // 0x88(0x10)
 	Struct StringAssetReference                                  SkeletonsDataAsset;                                // 0x98(0x10)
@@ -187,22 +203,6 @@ class ColorTextureSwitchBySeed: public TextureSwitch
 public:
 	struct FName                                                 HashSource;                                        // 0x220(0x8)
 	TArray<Struct ColorTextureSwitchSeedEntry>                   Entries;                                           // 0x228(0x10)
-};
-
-
-// Size 0x10
-class WardrobeExcludeDataAsset: public DataAsset
-{
-public:
-	TArray<Struct FName>                                         ExcludeItems;                                      // 0x28(0x10)
-};
-
-
-// Size 0xb0
-class WardrobeDataAsset: public DataAsset
-{
-public:
-	TArray<Struct MeshPatchEntry>                                AssetMap;                                          // 0xc8(0x10)
 };
 
 

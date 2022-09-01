@@ -6,20 +6,16 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x54
-class BP_WarMapVotableCancel_C: public WarMapVotableObjectView
+// Size 0x40
+class BP_WarMapVotableCancel_C: public WarMapCancelVotableObjectView
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4e0(0x8)
-	Class StaticMeshComponent*                                   Token 1;                                           // 0x4e8(0x8)
-	Class StaticMeshComponent*                                   Token 4;                                           // 0x4f0(0x8)
-	Class StaticMeshComponent*                                   Token 2;                                           // 0x4f8(0x8)
-	Class StaticMeshComponent*                                   Token 3;                                           // 0x500(0x8)
-	Class StaticMesh*                                            Token Asset;                                       // 0x508(0x8)
-	float                                                        Show Token Animation Time;                         // 0x510(0x4)
-	Class MaterialInterface*                                     Token Material;                                    // 0x518(0x8)
-	TArray<class Tokens*>                                        Tokens;                                            // 0x520(0x10)
-	int                                                          VoteCount;                                         // 0x530(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4f0(0x8)
+	Class StaticMesh*                                            Token Asset;                                       // 0x4f8(0x8)
+	float                                                        Show Token Animation Time;                         // 0x500(0x4)
+	Class MaterialInterface*                                     Token Material;                                    // 0x508(0x8)
+	TArray<class Tokens*>                                        Tokens;                                            // 0x510(0x10)
+	TArray<Struct Tokens>                                        DaggerPositions;                                   // 0x520(0x10)
 };
 
 

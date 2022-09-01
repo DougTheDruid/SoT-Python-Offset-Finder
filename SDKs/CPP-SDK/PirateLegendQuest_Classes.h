@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class VeilOfTheAncients: public InteractableBase
 {
 public:
-	float                                                        NumberOfGems;                                      // 0x3f0(0x4)
-	Class LockComponent*                                         LockComponent;                                     // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x400(0x8)
+	float                                                        NumberOfGems;                                      // 0x400(0x4)
+	Class LockComponent*                                         LockComponent;                                     // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x410(0x8)
 };
 
 

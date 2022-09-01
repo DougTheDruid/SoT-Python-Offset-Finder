@@ -3,18 +3,18 @@
 BP_RailingLight_LargeShip_BowLeftBack_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x739'
-  InheritedSize: '0x739'
+  FullSize: '0x749'
+  InheritedSize: '0x749'
   Super: BP_InteractableShipRailingLight_C
 BP_RailingLight_LargeShip_BowRightBack_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x739'
-  InheritedSize: '0x739'
+  FullSize: '0x749'
+  InheritedSize: '0x749'
   Super: BP_InteractableShipRailingLight_C
 BP_RailingLight_LargeShip_Stern_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x739'
-  InheritedSize: '0x739'
+  FullSize: '0x749'
+  InheritedSize: '0x749'
   Super: BP_InteractableShipRailingLight_C

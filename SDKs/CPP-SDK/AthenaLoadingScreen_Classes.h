@@ -50,14 +50,13 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x30
 class AthenaLoadingScreenParams: public DeveloperSettings
 {
 public:
 	Struct StringAssetReference                                  BootLoadingScreen;                                 // 0x38(0x10)
 	Struct StringAssetReference                                  TeleportLoadingScreen;                             // 0x48(0x10)
 	Struct StringAssetReference                                  AdventureLoadingScreens;                           // 0x58(0x10)
-	Struct StringAssetReference                                  ArenaLoadingScreens;                               // 0x68(0x10)
 };
 
 

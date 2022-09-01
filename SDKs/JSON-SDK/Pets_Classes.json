@@ -703,45 +703,45 @@
   },
   "PetItemInfo": {
     "Super": "NonStorableItemInfo",
-    "FullSize": "0x570",
+    "FullSize": "0x580",
     "InheritedSize": "0x510",
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "PetCustomisation",
         "Type": "Struct PetCustomisation",
-        "Size": "0x18",
+        "Size": "0x28",
         "Offset": "0x528"
       },
       {
         "Name": "PetOwner",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x540"
+        "Offset": "0x550"
       },
       {
         "Name": "SpawnedForShip",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x548"
+        "Offset": "0x558"
       },
       {
         "Name": "DropTraceDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x550"
+        "Offset": "0x560"
       },
       {
         "Name": "PointSearchRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x554"
+        "Offset": "0x564"
       },
       {
         "Name": "DropChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x558"
+        "Offset": "0x568"
       }
     ]
   },
@@ -796,51 +796,51 @@
   },
   "PetPerchComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0x118",
+    "FullSize": "0x170",
+    "InheritedSize": "0x128",
     "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "AllowedPetTypes",
         "Type": "TArray<Class AllowedPetTypes>",
         "Size": "0x10",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
         "Name": "HangoutSpotIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x140"
+        "Offset": "0x150"
       },
       {
         "Name": "HangoutSpotName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x144"
+        "Offset": "0x154"
       },
       {
         "Name": "InteractionPointLocation",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x14c"
+        "Offset": "0x15c"
       },
       {
         "Name": "Enabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x158"
+        "Offset": "0x168"
       },
       {
         "Name": "BlocksPetEmoteReactions",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x159"
+        "Offset": "0x169"
       },
       {
         "Name": "IgnorePickupFromHangoutTooltipDisplayOffset",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x15a"
+        "Offset": "0x16a"
       }
     ]
   },

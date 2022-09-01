@@ -124,9 +124,9 @@
   },
   "TutorialManager": {
     "Super": "ActorComponent",
-    "FullSize": "0x128",
+    "FullSize": "0x130",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
+    "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "CompanyOnboardingStarterClass",
@@ -159,58 +159,64 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "SelectedTutorialClass",
+        "Name": "CaptaincyWithBeachNPCSpawnStarterClass",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0xf8"
       },
       {
+        "Name": "SelectedTutorialClass",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
         "Name": "SelectedTutorial",
         "Type": "Class TutorialStarter*",
         "Size": "0x8",
-        "Offset": "0x100"
+        "Offset": "0x108"
       },
       {
         "Name": "TutorialType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x108"
+        "Offset": "0x110"
       },
       {
         "Name": "HasEverPlayedFirstPersonAnimation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x109"
+        "Offset": "0x111"
       },
       {
         "Name": "HasStartedTutorial",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10a"
+        "Offset": "0x112"
       },
       {
         "Name": "HasReceivedEntitlements",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10b"
+        "Offset": "0x113"
       },
       {
         "Name": "HasPosessedPawn",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10c"
+        "Offset": "0x114"
       },
       {
         "Name": "HasPlayerFinshedSpawning",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10d"
+        "Offset": "0x115"
       },
       {
         "Name": "IsPlayerWaitingForCaptaincySessionResponse",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10e"
+        "Offset": "0x116"
       }
     ]
   },

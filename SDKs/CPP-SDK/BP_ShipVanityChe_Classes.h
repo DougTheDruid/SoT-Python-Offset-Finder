@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ShipVanityChest_C: public PossessionsChest
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x580(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x590(0x8)
 };
 
 

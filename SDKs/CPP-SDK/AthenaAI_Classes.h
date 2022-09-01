@@ -716,6 +716,29 @@ public:
 };
 
 
+// Size 0x170
+class AINameplateComponent: public NameplateComponent
+{
+public:
+	float                                                        VisibleFromWorldDistance;                          // 0x318(0x4)
+	float                                                        VisibleUntilWorldDistance;                         // 0x31c(0x4)
+	float                                                        VisibleAfterDeathDuration;                         // 0x320(0x4)
+	Struct FText                                                 Title;                                             // 0x328(0x38)
+	Struct FText                                                 DisplayName;                                       // 0x360(0x38)
+	Struct FString                                               DisplayNameAsString;                               // 0x398(0x10)
+	Struct FString                                               DebugDisplayText;                                  // 0x3a8(0x10)
+	bool                                                         VisibilityDisabled;                                // 0x3b8(0x1)
+};
+
+
+// Size 0x20
+class PetNameplateComponent: public AINameplateComponent
+{
+public:
+	Struct FString                                               DefaultPetName;                                    // 0x478(0x10)
+};
+
+
 // Size 0x460
 class Pet: public AICreatureCharacter
 {
@@ -742,7 +765,7 @@ public:
 	TArray<Byte StatesToUseAlternateNamePlatePos>                StatesToUseAlternateNamePlatePos;                  // 0x940(0x10)
 	Struct FloatRange                                            PetTimeSpentSad;                                   // 0x950(0x10)
 	byte                                                         DebugStateDescriptor;                              // 0x960(0x1)
-	Class AINameplateComponent*                                  AINameplateComponent;                              // 0x968(0x8)
+	Class PetNameplateComponent*                                 AINameplateComponent;                              // 0x968(0x8)
 	Class FeedingComponent*                                      FeedingComponent;                                  // 0x970(0x8)
 	Class StarvingComponent*                                     StarvingComponent;                                 // 0x978(0x8)
 	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x980(0x8)
@@ -808,29 +831,6 @@ public:
 };
 
 
-// Size 0x170
-class AINameplateComponent: public NameplateComponent
-{
-public:
-	float                                                        VisibleFromWorldDistance;                          // 0x318(0x4)
-	float                                                        VisibleUntilWorldDistance;                         // 0x31c(0x4)
-	float                                                        VisibleAfterDeathDuration;                         // 0x320(0x4)
-	Struct FText                                                 Title;                                             // 0x328(0x38)
-	Struct FText                                                 DisplayName;                                       // 0x360(0x38)
-	Struct FString                                               DisplayNameAsString;                               // 0x398(0x10)
-	Struct FString                                               DebugDisplayText;                                  // 0x3a8(0x10)
-	bool                                                         VisibilityDisabled;                                // 0x3b8(0x1)
-};
-
-
-// Size 0x20
-class PetNameplateComponent: public AINameplateComponent
-{
-public:
-	Struct FString                                               DefaultPetName;                                    // 0x478(0x10)
-};
-
-
 // Size 0xb8
 class PetPartCustomisationComponent: public ActorComponent
 {
@@ -882,7 +882,7 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x38
 class PetTelemetryComponent: public ActorComponent
 {
 public:
@@ -2851,7 +2851,7 @@ public:
 class BTDecorator_FeatureToggle: public BTDecorator
 {
 public:
-	struct FName                                                 FeatureName;                                       // 0x68(0x8)
+	Struct FeatureFlag                                           Feature;                                           // 0x68(0x8)
 };
 
 
@@ -3834,6 +3834,14 @@ class IsAIOfSkillsetStatCondition: public TargetedStatCondition
 {
 public:
 	TArray<class AISkillsets*>                                   AISkillsets;                                       // 0x30(0x10)
+};
+
+
+// Size 0x10
+class IsAIUsingFormDataAssetStatCondition: public TargetedStatCondition
+{
+public:
+	TArray<class AllowedAIDataAssetForms*>                       AllowedAIDataAssetForms;                           // 0x30(0x10)
 };
 
 

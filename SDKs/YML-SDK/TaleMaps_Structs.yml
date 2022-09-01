@@ -17,3 +17,6 @@ TaleQuestChecklistItem:
 TaleQuestVariableMapMarkType:
   Attributes: []
   ClassSize: '0x20'
+TaleQuestVariableTreasureMapItemDescType:
+  Attributes: []
+  ClassSize: '0x20'

@@ -1,18 +1,24 @@
 {
   "PetCustomisation": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "PetName",
+        "Name": "DefaultPetName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
+        "Name": "PetName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
         "Name": "PetPartId",
         "Type": "Struct AIPartId",
         "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x20"
       }
     ]
   },

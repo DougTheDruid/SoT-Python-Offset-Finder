@@ -1,39 +1,39 @@
 {
   "BP_Shopkeeper_C": {
     "Super": "Shopkeeper",
-    "FullSize": "0x6a8",
-    "InheritedSize": "0x680",
+    "FullSize": "0x6b8",
+    "InheritedSize": "0x690",
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "CargoRunParticipant",
         "Type": "Class CargoRunParticipantComponent*",
-        "Size": "0x8",
-        "Offset": "0x680"
-      },
-      {
-        "Name": "None",
-        "Type": "Class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x688"
-      },
-      {
-        "Name": "None",
-        "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
-        "Name": "None",
-        "Type": "Class SkeletalMeshComponent*",
+        "Name": "SolidHits",
+        "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "None",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Name": "NPCDialog",
+        "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
+      },
+      {
+        "Name": "SkeletalMesh",
+        "Type": "Class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
       }
     ]
   },

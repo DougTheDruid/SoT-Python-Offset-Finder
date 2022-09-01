@@ -3,54 +3,54 @@
 BP_Beacon_C:
   Attributes:
   - Name: PointLight3
-    Offset: '0x7c8'
-    Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: PointLight2
-    Offset: '0x7d0'
-    Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: PointLight1
     Offset: '0x7d8'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ParticleSystem6
+  - Name: PointLight2
     Offset: '0x7e0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: vfx_candle_01_smoke_tavern
+    Type: Class PointLightComponent*
+  - Name: PointLight1
     Offset: '0x7e8'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem5
+    Type: Class PointLightComponent*
+  - Name: ParticleSystem6
     Offset: '0x7f0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem4
+  - Name: vfx_candle_01_smoke_tavern
     Offset: '0x7f8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem3
+  - Name: ParticleSystem5
     Offset: '0x800'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem2
+  - Name: ParticleSystem4
     Offset: '0x808'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem1
+  - Name: ParticleSystem3
     Offset: '0x810'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem
+  - Name: ParticleSystem2
     Offset: '0x818'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: vfx_candle_01_tavern
+  - Name: ParticleSystem1
     Offset: '0x820'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
+  - Name: ParticleSystem
+    Offset: '0x828'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: vfx_candle_01_tavern
+    Offset: '0x830'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
   ClassSize: '0x60'
-  FullSize: '0x828'
-  InheritedSize: '0x7c8'
+  FullSize: '0x838'
+  InheritedSize: '0x7d8'
   Super: Beacon

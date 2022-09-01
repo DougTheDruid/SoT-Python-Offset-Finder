@@ -1,21 +1,4 @@
 {
-  "WaterInformation": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WaterType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CanSwim",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "WaterSplashProbesContainer": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -178,6 +161,46 @@
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x108"
+      }
+    ]
+  },
+  "WaterSpout": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "SpoutLocatorTransform",
+        "Type": "Struct Transform",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpoutParticleSystem",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "SplashParticleSystem",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "WaterInformation": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WaterType",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CanSwim",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
       }
     ]
   },
@@ -430,29 +453,6 @@
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "WaterSpout": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "SpoutLocatorTransform",
-        "Type": "Struct Transform",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpoutParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "SplashParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x38"
       }
     ]
   },

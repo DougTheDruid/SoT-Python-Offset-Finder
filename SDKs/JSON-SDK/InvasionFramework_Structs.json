@@ -13,11 +13,17 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "ReadyForInvasion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x11"
       }
     ]
   },
   "InvasionParticipatingCrewData": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "CrewIds",

@@ -61,22 +61,34 @@ public:
 };
 
 
-// Size 0x18
-struct StorySpawnedNamedPointsList
+// Size 0x20
+struct StorySpawnedActorsComponentList
 {
 public:
 	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
+	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x18(0x8)
 };
 
 
-// Size 0x28
+// Size 0x38
 struct StorySpawnedActorsList
 {
 public:
 	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	TArray<Struct ActorLocationPair>                             ActorLocations;                                    // 0x8(0x10)
 	TArray<Struct NamedPointsActorLocation>                      NamedPointsActorLocations;                         // 0x18(0x10)
+	TArray<Struct InstancedLayerLocation>                        InstancedLayerLocations;                           // 0x28(0x10)
+};
+
+
+// Size 0x28
+struct InstancedLayerLocation
+{
+public:
+	Struct StringAssetReference                                  ActorWithInstancedLayerComponent;                  // 0x0(0x10)
+	Struct StringAssetReference                                  DevActorWithInstancedLayerComponent;               // 0x10(0x10)
+	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x20(0x8)
 };
 
 

@@ -6,10 +6,38 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x90
+class FactionSettingsAsset: public DataAsset
+{
+public:
+	TArray<Class PossibleFactions>                               PossibleFactions;                                  // 0x28(0x10)
+	TArray<Class FactionsRewardingFriendlyFire>                  FactionsRewardingFriendlyFire;                     // 0x38(0x10)
+	TArray<Struct SandsOfFateData>                               SandsOfFateRewards;                                // 0x48(0x10)
+	TArray<Struct FactionStreakLevelData>                        FactionStreakLevelData;                            // 0x58(0x10)
+	TArray<Struct DefenderLootLevelThreshold>                    DefenderLootLevelThresholds;                       // 0x68(0x10)
+	float                                                        EnemyFactionShipEmergentRange;                     // 0x78(0x4)
+	float                                                        EnemyFactionShipInvasionRange;                     // 0x7c(0x4)
+	float                                                        CrewShipRangeStatesUpdateInterval;                 // 0x80(0x4)
+	TArray<Struct CompanyFactionAlignment>                       AlignedFactionsAndCompanies;                       // 0x88(0x10)
+	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x98(0x10)
+	TArray<Struct FactionServicePopUpData>                       JoiningFactionPopUp;                               // 0xa8(0x10)
+};
+
+
 // Size 0x0
 class CrewFactionOwnershipInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x50
+class FactionFlipMeshComponent: public StaticMeshComponent
+{
+public:
+	Class CurveFloat*                                            FlipCurve;                                         // 0x620(0x8)
+	bool                                                         IsFlipping;                                        // 0x668(0x1)
+	bool                                                         Flipped;                                           // 0x669(0x1)
 };
 
 
@@ -24,7 +52,7 @@ public:
 class FactionInteractionVoteComponent: public InlineVotingInteractionComponent
 {
 public:
-	float                                                        TurnHourglassInteractionHoldTime;                  // 0x148(0x4)
+	float                                                        TurnHourglassInteractionHoldTime;                  // 0x158(0x4)
 };
 
 
@@ -38,25 +66,27 @@ public:
 };
 
 
-// Size 0x40
-class FactionSettingsAsset: public DataAsset
-{
-public:
-	TArray<Class PossibleFactions>                               PossibleFactions;                                  // 0x28(0x10)
-	TArray<Class FactionsRewardingFriendlyFire>                  FactionsRewardingFriendlyFire;                     // 0x38(0x10)
-	TArray<Struct SandsOfFateData>                               SandsOfFateRewards;                                // 0x48(0x10)
-	TArray<Struct FactionStreakLevelData>                        FactionStreakLevelData;                            // 0x58(0x10)
-};
-
-
-// Size 0xe0
+// Size 0x130
 class FactionService: public Actor
 {
 public:
 	Class FactionSettingsAsset*                                  Settings;                                          // 0x3d8(0x8)
-	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x448(0x10)
-	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x458(0x10)
-	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x498(0x8)
+	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x450(0x10)
+	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x460(0x10)
+	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x470(0x10)
+	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x4d8(0x8)
+};
+
+
+// Size 0x110
+class FactionVoteAudioComponent: public VoteAudioComponent
+{
+public:
+	Class WwiseEvent*                                            FactionStart;                                      // 0xe8(0x8)
+	Class WwiseEvent*                                            Flip;                                              // 0xf0(0x8)
+	Class WwiseEvent*                                            Levelup;                                           // 0xf8(0x8)
+	struct FName                                                 LevelupSwitchGroup;                                // 0x100(0x8)
+	TArray<Struct FName>                                         LevelupSwitchValues;                               // 0x108(0x10)
 };
 
 
@@ -71,7 +101,7 @@ public:
 };
 
 
-// Size 0x150
+// Size 0x188
 class StartFactionVoyageVoteConsumer: public FactionVoteConsumerBase
 {
 public:
@@ -80,7 +110,8 @@ public:
 	Struct FText                                                 FactionVotingRemoveVote;                           // 0x130(0x38)
 	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x168(0x38)
 	Struct FText                                                 FactionVotingCantVoteReasonVoterNotOnOwnShip;      // 0x1a0(0x38)
-	Struct FText                                                 FactionVotingSwitchVote;                           // 0x1d8(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonIsOpposingEmissary;     // 0x1d8(0x38)
+	Struct FText                                                 FactionVotingSwitchVote;                           // 0x210(0x38)
 };
 
 
@@ -116,6 +147,7 @@ public:
 	TArray<Class TargetCompanies>                                TargetCompanies;                                   // 0x30(0x10)
 	Class FactionVoteConsumerBase*                               Consumer;                                          // 0x70(0x8)
 	int                                                          CurrentCompany;                                    // 0x78(0x4)
+	float                                                        FlipTime;                                          // 0x7c(0x4)
 	Class Actor*                                                 OwningActor;                                       // 0x88(0x8)
 };
 
@@ -131,6 +163,19 @@ public:
 class StopFactionVoyageVoteValidator: public FactionVoteValidatorBase
 {
 public:
+};
+
+
+// Size 0x20
+class IsInFactionStatCondition: public TargetedStatCondition
+{
+public:
+	bool                                                         CheckOwnerFaction;                                 // 0x30(0x1)
+	bool                                                         RequiresOwnerMaxStreakLevel;                       // 0x31(0x1)
+	class                                                        RequiredOwnerFaction;                              // 0x38(0x8)
+	bool                                                         CheckTargetFaction;                                // 0x40(0x1)
+	bool                                                         RequiresTargetMaxStreakLevel;                      // 0x41(0x1)
+	class                                                        RequiredTargetFaction;                             // 0x48(0x8)
 };
 
 

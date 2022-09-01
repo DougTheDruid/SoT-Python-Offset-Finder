@@ -24,7 +24,7 @@ public:
 	Class StaticMeshComponent*                                   cmn_candle_01_e;                                   // 0x690(0x8)
 	Class StaticMeshComponent*                                   cap_desk_model_leg_01_a;                           // 0x698(0x8)
 	Class StaticMesh*                                            NewTableMesh;                                      // 0x6a0(0x8)
-	struct FName                                                 ToggleName;                                        // 0x6a8(0x8)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x6a8(0x8)
 };
 
 

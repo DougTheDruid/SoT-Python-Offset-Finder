@@ -8,7 +8,7 @@ Adv7_LarinnaChapter1PermEntitlement_C:
   Super: EntitlementDesc
 Adv7_LarinnaDialogTempEntitlement_C:
   Attributes: []
-  ClassSize: '0x3ebe7cfe'
-  FullSize: '0x3ebe7cfe'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x0'
+  FullSize: '0xc8'
+  InheritedSize: '0xc8'
+  Super: EntitlementDesc

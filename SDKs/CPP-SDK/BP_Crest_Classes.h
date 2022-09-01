@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xf4
+// Size 0xfc
 class BP_Crest_C: public Crest
 {
 public:
@@ -30,6 +30,7 @@ public:
 	Struct SlateFontInfo                                         FontInfo;                                          // 0x500(0x40)
 	TArray<class VFXSizeVariants*>                               VFXSizeVariants;                                   // 0x540(0x10)
 	int                                                          NameSizeIndex;                                     // 0x550(0x4)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x554(0x8)
 };
 
 

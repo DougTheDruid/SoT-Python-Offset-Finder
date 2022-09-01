@@ -3,18 +3,18 @@
 DescribableComponent:
   Attributes:
   - Name: TooltipActiveOnBeginPlay
-    Offset: '0x120'
+    Offset: '0x130'
     Size: '0x1'
     Type: bool
   - Name: DescribableTooltipText
-    Offset: '0x128'
+    Offset: '0x138'
     Size: '0x38'
     Type: Struct FText
   - Name: TooltipActive
-    Offset: '0x160'
+    Offset: '0x170'
     Size: '0x1'
     Type: bool
   ClassSize: '0x60'
-  FullSize: '0x178'
-  InheritedSize: '0x118'
+  FullSize: '0x188'
+  InheritedSize: '0x128'
   Super: InteractableComponent

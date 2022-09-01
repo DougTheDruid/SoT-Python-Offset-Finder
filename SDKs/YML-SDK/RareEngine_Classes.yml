@@ -35,8 +35,8 @@ MemoryUsageVisualiserSettings:
 RareGameEngine:
   Attributes: []
   ClassSize: '0x58'
-  FullSize: '0xa40'
-  InheritedSize: '0x9e8'
+  FullSize: '0xa98'
+  InheritedSize: '0xa40'
   Super: GameEngine
 RareHUD:
   Attributes: []

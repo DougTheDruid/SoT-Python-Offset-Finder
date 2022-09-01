@@ -9,6 +9,6 @@ ShroudedDeep_AdventureCompleteEntitlement_C:
 ShroudedDeep_MegTaleTempEntitlement_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xc8'
-  InheritedSize: '0xc8'
-  Super: EntitlementDesc
+  FullSize: '0x0'
+  InheritedSize: '0x0'
+  Super: None

@@ -3317,6 +3317,17 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
+  "EventAIAbilityStarted": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AbilityTypeCategory",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventAIVulnerabilityAbilityEnded": {
     "ClassSize": "0x1",
     "Attributes": []

@@ -11,3 +11,18 @@ AnimNotify_SoundSwitch:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x18'
+StoryDrivenAudioPortalSetting:
+  Attributes:
+  - Name: StoryFlag
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  - Name: AudioInsideSpace
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: AudioOutsideSpace
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  ClassSize: '0x18'

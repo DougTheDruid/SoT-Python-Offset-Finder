@@ -3,14 +3,14 @@
 BP_ShipWeaponsChest_C:
   Attributes:
   - Name: AddCrewLockableActionRule
-    Offset: '0x580'
+    Offset: '0x590'
     Size: '0x8'
     Type: Class AddCrewLockableActionRuleComponent*
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x588'
+    Offset: '0x598'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
   ClassSize: '0x10'
-  FullSize: '0x590'
-  InheritedSize: '0x580'
+  FullSize: '0x5a0'
+  InheritedSize: '0x590'
   Super: PossessionsChest

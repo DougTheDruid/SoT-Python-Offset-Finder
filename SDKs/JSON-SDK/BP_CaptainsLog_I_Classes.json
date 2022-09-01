@@ -1,18 +1,4 @@
 {
-  "BP_CaptainsLog_ItemInfo_C": {
-    "Super": "CaptainsLogItemInfo",
-    "FullSize": "0x7d8",
-    "InheritedSize": "0x7d0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x7d0"
-      }
-    ]
-  },
   "BP_CaptainsLog_ItemDesc_C": {
     "Super": "CaptainsLogItemDesc",
     "FullSize": "0x138",
@@ -27,17 +13,31 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_CaptainsLog_ItemInfo_C": {
+    "Super": "CaptainsLogItemInfo",
+    "FullSize": "0x7d8",
+    "InheritedSize": "0x7d0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      }
+    ]
+  },
   "BP_CaptainsLog_Interactable_Proxy_C": {
     "Super": "CaptainsLogbookInteractableProxy",
-    "FullSize": "0x698",
-    "InheritedSize": "0x690",
+    "FullSize": "0x6a8",
+    "InheritedSize": "0x6a0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "PlayerPosition",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x690"
+        "Offset": "0x6a0"
       }
     ]
   },

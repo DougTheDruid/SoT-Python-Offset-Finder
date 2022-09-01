@@ -58,10 +58,10 @@ BP_EmissaryTable_Athena_01_C:
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMesh*
-  - Name: ToggleName
+  - Name: FeatureName
     Offset: '0x6a8'
     Size: '0x8'
-    Type: struct FName
+    Type: Struct FeatureFlag
   ClassSize: '0x78'
   FullSize: '0x6b0'
   InheritedSize: '0x638'

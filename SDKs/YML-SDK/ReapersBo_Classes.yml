@@ -3,18 +3,18 @@
 BP_GlitterbeardLoreBook_ANewFlagtoFly_C:
   Attributes:
   - Name: NPCDialog
-    Offset: '0x500'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class NPCDialogComponent*
   - Name: Books
-    Offset: '0x508'
+    Offset: '0x518'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x510'
+    Offset: '0x520'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x18'
-  FullSize: '0x518'
-  InheritedSize: '0x500'
+  FullSize: '0x528'
+  InheritedSize: '0x510'
   Super: ModalInteractionProxy

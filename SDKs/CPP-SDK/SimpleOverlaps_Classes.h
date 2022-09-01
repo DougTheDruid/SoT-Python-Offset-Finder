@@ -6,6 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0xd8
+class SimpleOverlapZone: public Actor
+{
+public:
+	Class BoxComponent*                                          CollisionMesh;                                     // 0x490(0x8)
+	bool                                                         StartActive;                                       // 0x498(0x1)
+};
+
+
+// Size 0x20
+class DebugSimpleOverlapZoneVisualizerComponent: public ActorComponent
+{
+public:
+	Struct Vector                                                BoxCollisionDimensions;                            // 0xd0(0xc)
+	Struct Color                                                 DebugColour;                                       // 0xdc(0x4)
+	bool                                                         VisibleState;                                      // 0xe0(0x1)
+};
+
+
 // Size 0x0
 class SimpleOverlapCollectionKey: public Object
 {

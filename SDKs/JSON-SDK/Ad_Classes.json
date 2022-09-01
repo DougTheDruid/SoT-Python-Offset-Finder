@@ -7,10 +7,10 @@
     "Attributes": []
   },
   "Adv7_LarinnaDialogTempEntitlement_C": {
-    "Super": "None",
-    "FullSize": "0x3ebe7cfe",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x3ebe7cfe",
+    "Super": "EntitlementDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
     "Attributes": []
   },
   "DougTheDruid": {

@@ -1,43 +1,25 @@
 {
   "MapTable_C": {
     "Super": "MapTable",
-    "FullSize": "0x7ed",
-    "InheritedSize": "0x788",
+    "FullSize": "0x805",
+    "InheritedSize": "0x7a0",
     "ClassSize": "0x65",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x788"
+        "Offset": "0x7a0"
       },
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
-        "Offset": "0x790"
+        "Offset": "0x7a8"
       },
       {
         "Name": "NavBlocker",
         "Type": "Class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x798"
-      },
-      {
-        "Name": "ControlPoint",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7a0"
-      },
-      {
-        "Name": "ControlPoint",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7a8"
-      },
-      {
-        "Name": "ControlPoint",
-        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7b0"
       },
@@ -60,34 +42,52 @@
         "Offset": "0x7c8"
       },
       {
+        "Name": "ControlPoint",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Name": "ControlPoint",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Name": "ControlPoint",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
         "Name": "TextureFeedback",
         "Type": "Class TextureFeedbackComponent*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7e8"
       },
       {
         "Name": "Cube",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x7d8"
+        "Offset": "0x7f0"
       },
       {
         "Name": "Map",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7f8"
       },
       {
         "Name": "ActiveRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7e8"
+        "Offset": "0x800"
       },
       {
         "Name": "IsActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x7ec"
+        "Offset": "0x804"
       }
     ]
   },

@@ -6,15 +6,40 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
-class BP_LegendaryTavern_C: public TavernStrangerNPC
+// Size -0x1
+class BP_LegendaryTavern_C: public ActionRules
 {
 public:
-	Class EmissaryMaxRankQuestProvider*                          None;                                              // 0x738(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0x740(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x748(0x8)
-	Class NPCDialogComponent*                                    None;                                              // 0x750(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x758(0x8)
+	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x430(0x8)
+	class                                                        AnimationKey;                                      // 0x438(0x8)
+	Struct ObjectMessagingDispatcher                             MessagingDispatcher;                               // 0x440(0xa0)
+	Struct Transform                                             AnimationOffset;                                   // 0x4e0(0x30)
+	Class WwiseEvent*                                            EquipSfx;                                          // 0x510(0x8)
+	Class WwiseEvent*                                            UnequipSfx;                                        // 0x518(0x8)
+	Class WwiseEvent*                                            WielderLandedJumpSfx;                              // 0x520(0x8)
+	Class WwiseEvent*                                            WielderFootstepLayerOneshot;                       // 0x528(0x8)
+	struct FName                                                 PlayerWalkSpeedRtpc;                               // 0x530(0x8)
+	Class WwiseEvent*                                            FirstTimeEquipSfx;                                 // 0x538(0x8)
+	bool                                                         ForceUnequipSfx;                                   // 0x540(0x1)
+	byte                                                         ItemSize;                                          // 0x541(0x1)
+	Struct DetailAppearenceDesc                                  DetailAppearence;                                  // 0x548(0x30)
+	bool                                                         PropagateVisibilityToChildren;                     // 0x578(0x1)
+	struct FName                                                 AINoiseTag;                                        // 0x57c(0x8)
+	TArray<Struct FName>                                         ThirdPersonExtraMeshNames;                         // 0x588(0x10)
+	TArray<Struct FName>                                         StashedExtraMeshNames;                             // 0x598(0x10)
+	Class MeshComponent*                                         StashedMeshComponent;                              // 0x5a8(0x8)
+	struct FName                                                 StashedMeshAttachSocket;                           // 0x5b0(0x8)
+	struct FName                                                 ServerWieldAttachSocket;                           // 0x5b8(0x8)
+	Class PhrasesRadialDataAsset*                                Phrases;                                           // 0x5c0(0x8)
+	Class Object*                                                CachedFirstPersonProxyMesh;                        // 0x5c8(0x8)
+	Class Object*                                                CachedThirdPersonProxyMesh;                        // 0x5d0(0x8)
+	class                                                        ItemCategory;                                      // 0x700(0x8)
+	Class ItemInfo*                                              ItemInfo;                                          // 0x708(0x8)
+	Class InterpolatingItem*                                     InterpolatingItem;                                 // 0x710(0x8)
+	Class WieldableItemVfxComponent*                             WieldableItemVfxComponent;                         // 0x738(0x8)
+	TArray<class ThirdPersonExtraMeshes*>                        ThirdPersonExtraMeshes;                            // 0x740(0x10)
+	TArray<class StashedExtraMeshes*>                            StashedExtraMeshes;                                // 0x750(0x10)
+	bool                                                         OfferingEnabled;                                   // 0x779(0x1)
 };
 
 

@@ -6,15 +6,33 @@ CrewFactionOwnershipInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+FactionFlipMeshComponent:
+  Attributes:
+  - Name: FlipCurve
+    Offset: '0x620'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: IsFlipping
+    Offset: '0x668'
+    Size: '0x1'
+    Type: bool
+  - Name: Flipped
+    Offset: '0x669'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x50'
+  FullSize: '0x670'
+  InheritedSize: '0x620'
+  Super: StaticMeshComponent
 FactionInteractionVoteComponent:
   Attributes:
   - Name: TurnHourglassInteractionHoldTime
-    Offset: '0x148'
+    Offset: '0x158'
     Size: '0x4'
     Type: float
   ClassSize: '0x20'
-  FullSize: '0x160'
-  InheritedSize: '0x140'
+  FullSize: '0x170'
+  InheritedSize: '0x150'
   Super: InlineVotingInteractionComponent
 FactionInterationInterface:
   Attributes: []
@@ -28,20 +46,24 @@ FactionService:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class FactionSettingsAsset*
+  - Name: OpposingFactionsAndCompanies
+    Offset: '0x450'
+    Size: '0x10'
+    Type: TArray<Struct CompanyFactionAlignment>
   - Name: FactionAlignedCrewData
-    Offset: '0x448'
+    Offset: '0x460'
     Size: '0x10'
     Type: TArray<Struct CrewFactionEntryData>
   - Name: FactionAlignedCrews
-    Offset: '0x458'
+    Offset: '0x470'
     Size: '0x10'
     Type: TArray<Struct CrewFactionEntry>
   - Name: DebugRepActor
-    Offset: '0x498'
+    Offset: '0x4d8'
     Size: '0x8'
     Type: Class FactionServiceDebugRepActor*
-  ClassSize: '0xe0'
-  FullSize: '0x4a8'
+  ClassSize: '0x130'
+  FullSize: '0x4f8'
   InheritedSize: '0x3c8'
   Super: Actor
 FactionServiceDebugRepActor:
@@ -80,10 +102,64 @@ FactionSettingsAsset:
     Offset: '0x58'
     Size: '0x10'
     Type: TArray<Struct FactionStreakLevelData>
-  ClassSize: '0x40'
-  FullSize: '0x68'
+  - Name: DefenderLootLevelThresholds
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<Struct DefenderLootLevelThreshold>
+  - Name: EnemyFactionShipEmergentRange
+    Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: EnemyFactionShipInvasionRange
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
+  - Name: CrewShipRangeStatesUpdateInterval
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: AlignedFactionsAndCompanies
+    Offset: '0x88'
+    Size: '0x10'
+    Type: TArray<Struct CompanyFactionAlignment>
+  - Name: OpposingFactionsAndCompanies
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<Struct CompanyFactionAlignment>
+  - Name: JoiningFactionPopUp
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<Struct FactionServicePopUpData>
+  ClassSize: '0x90'
+  FullSize: '0xb8'
   InheritedSize: '0x28'
   Super: DataAsset
+FactionVoteAudioComponent:
+  Attributes:
+  - Name: FactionStart
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: Flip
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: Levelup
+    Offset: '0xf8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: LevelupSwitchGroup
+    Offset: '0x100'
+    Size: '0x8'
+    Type: struct FName
+  - Name: LevelupSwitchValues
+    Offset: '0x108'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x110'
+  FullSize: '0x1f8'
+  InheritedSize: '0xe8'
+  Super: VoteAudioComponent
 FactionVoteConsumerBase:
   Attributes:
   - Name: Validator
@@ -146,6 +222,10 @@ FactionVoteValidatorBase:
     Offset: '0x78'
     Size: '0x4'
     Type: int
+  - Name: FlipTime
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
   - Name: OwningActor
     Offset: '0x88'
     Size: '0x8'
@@ -154,6 +234,36 @@ FactionVoteValidatorBase:
   FullSize: '0x90'
   InheritedSize: '0x30'
   Super: VoteValidatorInlineBase
+IsInFactionStatCondition:
+  Attributes:
+  - Name: CheckOwnerFaction
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiresOwnerMaxStreakLevel
+    Offset: '0x31'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiredOwnerFaction
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class
+  - Name: CheckTargetFaction
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiresTargetMaxStreakLevel
+    Offset: '0x41'
+    Size: '0x1'
+    Type: bool
+  - Name: RequiredTargetFaction
+    Offset: '0x48'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x20'
+  FullSize: '0x50'
+  InheritedSize: '0x30'
+  Super: TargetedStatCondition
 ShipFactionCustomisation:
   Attributes:
   - Name: FigureheadFactionVFX
@@ -204,12 +314,16 @@ StartFactionVoyageVoteConsumer:
     Offset: '0x1a0'
     Size: '0x38'
     Type: Struct FText
-  - Name: FactionVotingSwitchVote
+  - Name: FactionVotingCantVoteReasonIsOpposingEmissary
     Offset: '0x1d8'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x150'
-  FullSize: '0x210'
+  - Name: FactionVotingSwitchVote
+    Offset: '0x210'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x188'
+  FullSize: '0x248'
   InheritedSize: '0xc0'
   Super: FactionVoteConsumerBase
 StartFactionVoyageVoteValidator:

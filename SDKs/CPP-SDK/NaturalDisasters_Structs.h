@@ -127,6 +127,15 @@ public:
 
 
 // Size 0x10
+struct GeyserManagerStoryCustomisationData
+{
+public:
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Class GeyserManagerSetupDataAsset*                           GeyserManagerSetupData;                            // 0x8(0x8)
+};
+
+
+// Size 0x10
 struct VolcanoTargetCoolDown
 {
 public:
@@ -151,6 +160,15 @@ public:
 	byte                                                         State;                                             // 0x0(0x1)
 	float                                                        StateDuration;                                     // 0x4(0x4)
 	float                                                        PercentageOfMaxTargetingRange;                     // 0x8(0x4)
+};
+
+
+// Size 0x10
+struct VolcanoStoryCustomisationData
+{
+public:
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x8(0x8)
 };
 
 

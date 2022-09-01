@@ -1,5 +1,5 @@
 {
-  "BP_wsp_Garden_small_rocks_C": {
+  "BP_wsp_Garden_pebbles_C": {
     "Super": "BP_Placement_Garden_C",
     "FullSize": "0x46d",
     "InheritedSize": "0x46d",
@@ -7,13 +7,6 @@
     "Attributes": []
   },
   "BP_wsp_Garden_shells_C": {
-    "Super": "BP_Placement_Garden_C",
-    "FullSize": "0x46d",
-    "InheritedSize": "0x46d",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_wsp_Garden_pebbles_C": {
     "Super": "BP_Placement_Garden_C",
     "FullSize": "0x46d",
     "InheritedSize": "0x46d",

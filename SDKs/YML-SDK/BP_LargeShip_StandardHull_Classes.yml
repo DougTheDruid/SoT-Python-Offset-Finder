@@ -396,8 +396,12 @@ BP_LargeShip_StandardHull_Art_Doors_C:
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x20'
-  FullSize: '0x3e8'
+  - Name: FeatureName
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Struct FeatureFlag
+  ClassSize: '0x28'
+  FullSize: '0x3f0'
   InheritedSize: '0x3c8'
   Super: Actor
 BP_LargeShip_StandardHull_Art_Interior_Brig_Deck_C:

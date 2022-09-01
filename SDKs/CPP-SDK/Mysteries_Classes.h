@@ -27,13 +27,13 @@ public:
 class OneShotRewardableObjectBase: public InteractableObject
 {
 public:
-	Class InteractableComponent*                                 InteractableComponent;                             // 0x458(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x460(0x8)
-	Struct RewardId                                              Reward;                                            // 0x468(0x8)
-	class                                                        RewardEntitlement;                                 // 0x470(0x8)
-	float                                                        InteractionHoldTime;                               // 0x478(0x4)
-	float                                                        InteractionRadius;                                 // 0x47c(0x4)
-	Struct FText                                                 DisplayName;                                       // 0x480(0x38)
+	Class InteractableComponent*                                 InteractableComponent;                             // 0x468(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x470(0x8)
+	Struct RewardId                                              Reward;                                            // 0x478(0x8)
+	class                                                        RewardEntitlement;                                 // 0x480(0x8)
+	float                                                        InteractionHoldTime;                               // 0x488(0x4)
+	float                                                        InteractionRadius;                                 // 0x48c(0x4)
+	Struct FText                                                 DisplayName;                                       // 0x490(0x38)
 };
 
 

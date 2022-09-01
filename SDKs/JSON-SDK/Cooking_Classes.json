@@ -112,6 +112,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x126"
+      },
+      {
+        "Name": "IgnoreCookedFromRawStats",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x127"
       }
     ]
   },
@@ -320,63 +326,63 @@
   },
   "CookingPot": {
     "Super": "InteractableBase",
-    "FullSize": "0x5d0",
-    "InheritedSize": "0x3f0",
+    "FullSize": "0x5e0",
+    "InheritedSize": "0x400",
     "ClassSize": "0x1e0",
     "Attributes": [
       {
         "Name": "MeshComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "InteractableComponent",
         "Type": "Class ActionRulesInteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       },
       {
         "Name": "CookerComponent",
         "Type": "Class CookerComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x418"
       },
       {
         "Name": "HoldToInteractTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x410"
+        "Offset": "0x420"
       },
       {
         "Name": "NotWieldingCookableItemTooltip",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x418"
+        "Offset": "0x428"
       },
       {
         "Name": "WieldingCookableItemTooltip",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x450"
+        "Offset": "0x460"
       },
       {
         "Name": "TakeItemTooltip",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x488"
+        "Offset": "0x498"
       },
       {
         "Name": "CannotTakeItemTooltip",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x4c0"
+        "Offset": "0x4d0"
       },
       {
         "Name": "MixInItemTooltip",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x4f8"
+        "Offset": "0x508"
       }
     ]
   },

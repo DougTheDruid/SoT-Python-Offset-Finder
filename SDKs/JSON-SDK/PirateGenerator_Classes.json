@@ -165,6 +165,34 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "WardrobeExcludeDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ExcludeItems",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WardrobeDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "AssetMap",
+        "Type": "TArray<Struct MeshPatchEntry>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
   "PirateGeneratorSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x130",
@@ -172,26 +200,26 @@
     "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "ConfigJson",
-        "Type": "Struct FString",
+        "Name": "WardrobeDataAsset",
+        "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
-        "Name": "PiratesFolder",
+        "Name": "ConfigJson",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
-        "Name": "WardrobeFolder",
+        "Name": "PiratesFolder",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
-        "Name": "WardrobeDataAsset",
-        "Type": "Struct StringAssetReference",
+        "Name": "WardrobeFolder",
+        "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -413,34 +441,6 @@
         "Type": "TArray<Struct ColorTextureSwitchSeedEntry>",
         "Size": "0x10",
         "Offset": "0x228"
-      }
-    ]
-  },
-  "WardrobeExcludeDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ExcludeItems",
-        "Type": "TArray<Struct FName>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WardrobeDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "AssetMap",
-        "Type": "TArray<Struct MeshPatchEntry>",
-        "Size": "0x10",
-        "Offset": "0xc8"
       }
     ]
   },

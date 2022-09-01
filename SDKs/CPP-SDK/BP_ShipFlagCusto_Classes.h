@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ShipFlagCustomizationChest_C: public ShipFlagCustomizationChest
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x600(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x610(0x8)
 };
 
 

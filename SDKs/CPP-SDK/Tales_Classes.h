@@ -159,6 +159,13 @@ public:
 };
 
 
+// Size 0x0
+class TaleQuestCompoundStepInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x60
 class TaleQuestIndexedFrame: public Object
 {
@@ -1422,12 +1429,12 @@ public:
 };
 
 
-// Size 0x88
+// Size 0x90
 class TaleQuestFunctionStepLibrary: public TaleQuestRunnableStepDesc
 {
 public:
 	Class Function*                                              Function;                                          // 0xe8(0x8)
-	byte                                                         FunctionStepFlags;                                 // 0x168(0x1)
+	byte                                                         FunctionStepFlags;                                 // 0x170(0x1)
 };
 
 
@@ -1463,6 +1470,22 @@ public:
 class TaleQuestNPCHideFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
+};
+
+
+// Size 0x0
+class TaleQuestStoryFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x48
+class TaleQuestStoryBranchFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+	Class TaleQuestStepDesc*                                     Active;                                            // 0x180(0x8)
+	Class TaleQuestStepDesc*                                     Inactive;                                          // 0x188(0x8)
 };
 
 
@@ -1713,7 +1736,7 @@ public:
 class TaleQuestAddBountyMapStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
 	Struct QuestVariableText                                     Location;                                          // 0xa8(0x20)
 	Struct QuestVariableTextArray                                Description;                                       // 0xc8(0x20)
@@ -1791,7 +1814,7 @@ public:
 class TaleQuestAddCargoRunMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
 	Struct QuestVariableInt                                      NumItems;                                          // 0xa8(0x20)
 	Struct QuestVariableGuid                                     NPCId;                                             // 0xc8(0x20)
@@ -1803,7 +1826,7 @@ public:
 class TaleQuestAddChecklistMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct StringAssetReference                                  OverrideTreasureMapItemDesc;                       // 0x88(0x10)
 	Struct QuestVariableText                                     Title;                                             // 0x98(0x20)
 	Struct QuestVariableText                                     Description;                                       // 0xb8(0x20)
@@ -1818,7 +1841,7 @@ public:
 class TaleQuestAddCircleMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
 	Struct QuestVariableVector                                   Location;                                          // 0xa8(0x20)
 	float                                                        CircleScale;                                       // 0xc8(0x4)
@@ -1830,7 +1853,7 @@ public:
 class TaleQuestAddMerchantMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
 	Struct QuestVariableText                                     DeliveryLocation;                                  // 0xa8(0x20)
 	Struct QuestVariableText                                     DeliverByTime;                                     // 0xc8(0x20)
@@ -1843,7 +1866,7 @@ public:
 class TaleQuestAddRiddleMapBaseStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
 };
 
@@ -1864,13 +1887,15 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x88
 class TaleQuestAddXMarksMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
 	Struct QuestVariableVector                                   Location;                                          // 0xa8(0x20)
+	Struct QuestVariableBool                                     IsUnderground;                                     // 0xc8(0x20)
+	Struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0xe8(0x20)
 };
 
 
@@ -1878,7 +1903,7 @@ public:
 class TaleQuestAdvanceRiddleMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 };
 
 
@@ -1894,7 +1919,7 @@ public:
 class TaleQuestRemoveMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableVector                                   Location;                                          // 0x88(0x20)
 };
 
@@ -1911,7 +1936,7 @@ public:
 class TaleQuestUpdateMerchantMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 	Struct QuestVariableMerchantItem                             Item;                                              // 0x88(0x20)
 	Struct QuestVariableInt                                      Index;                                             // 0xa8(0x20)
 };
@@ -1921,7 +1946,7 @@ public:
 class TaleQuestWaitForChecklistMapCompletionStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapId;                                             // 0x80(0x8)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 };
 
 

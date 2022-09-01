@@ -1,21 +1,21 @@
 {
   "BP_NPC_ReapersBones_Skeleton_InCage_C": {
     "Super": "NPC",
-    "FullSize": "0x690",
-    "InheritedSize": "0x680",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x690",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x680"
+        "Offset": "0x690"
       },
       {
         "Name": "SolidHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x688"
+        "Offset": "0x698"
       }
     ]
   },

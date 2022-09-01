@@ -1099,11 +1099,15 @@ KrakenSpawnTelemetryEvent:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct FString
-  - Name: ConfigSpawnId
+  - Name: SpawnLocation
     Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: ConfigSpawnId
+    Offset: '0x1c'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 KrakenTentacleBehaviourActionChances:
   Attributes:
   - Name: ActionToTransitionTo

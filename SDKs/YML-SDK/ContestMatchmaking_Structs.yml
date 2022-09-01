@@ -109,35 +109,39 @@ ServerCrewModel:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct Guid
-  - Name: SessionType
+  - Name: ServerAddress
     Offset: '0x38'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SessionType
+    Offset: '0x48'
     Size: '0x4'
     Type: int
   - Name: Positions
-    Offset: '0x40'
+    Offset: '0x50'
     Size: '0x10'
     Type: TArray<Struct Vector2D>
   - Name: Resources
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x10'
     Type: TArray<UInt32 Resources>
   - Name: PvPFaction
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x1'
     Type: byte
   - Name: PvPSkillLevel
-    Offset: '0x64'
+    Offset: '0x74'
     Size: '0x4'
     Type: int
   - Name: RivalCrewId
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x10'
     Type: Struct Guid
   - Name: MatchmakingRequestReason
-    Offset: '0x78'
+    Offset: '0x88'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x80'
+  ClassSize: '0x90'
 ServerCrewRequestModel:
   Attributes:
   - Name: ServerId
@@ -216,6 +220,47 @@ ServerCrewResponseModel:
     Size: '0x8'
     Type: Struct Timespan
   ClassSize: '0x78'
+ServerQueueWaitTimeModel:
+  Attributes:
+  - Name: QueueScopeId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: AvgWaitTime
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: MaxWaitTime
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Struct Timespan
+  ClassSize: '0x20'
+ServerQueueWaitTimesRequestModel:
+  Attributes:
+  - Name: ServerLocation
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PrivateServerId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PlayModeTags
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Str PlayModeTags>
+  - Name: PlayModeState
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x48'
+ServerQueueWaitTimesResponseModel:
+  Attributes:
+  - Name: QueueWaitTimes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct ServerQueueWaitTimeModel>
+  ClassSize: '0x10'
 ServerRegionModel:
   Attributes:
   - Name: Position

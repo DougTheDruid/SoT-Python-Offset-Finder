@@ -19,21 +19,6 @@ ChestEntitlementTrinketItem:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x28'
-EquipTrinketOnServerLoadoutRpc:
-  Attributes:
-  - Name: TrinketLoadoutComponent
-    Offset: '0x10'
-    Size: '0x14'
-    Type: Struct NetSubObjectPtr
-  - Name: TrinketToEquip
-    Offset: '0x28'
-    Size: '0x8'
-    Type: class
-  - Name: LocationIndex
-    Offset: '0x30'
-    Size: '0x4'
-    Type: int
-  ClassSize: '0x38'
 EventTrinketSetReady:
   Attributes: []
   ClassSize: '0x10'
@@ -115,14 +100,3 @@ TrinketLoadoutModelEntry:
 TrinketLoadoutUpdatedEvent:
   Attributes: []
   ClassSize: '0x10'
-UnequipAllTrinketsOfClassOnServerLoadoutRpc:
-  Attributes:
-  - Name: TrinketLoadoutComponent
-    Offset: '0x10'
-    Size: '0x14'
-    Type: Struct NetSubObjectPtr
-  - Name: TrinketToUnequip
-    Offset: '0x28'
-    Size: '0x8'
-    Type: class
-  ClassSize: '0x30'

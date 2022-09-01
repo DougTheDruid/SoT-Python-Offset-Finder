@@ -1057,8 +1057,8 @@ TaleMigrationAction:
 TaleQuestActorFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestActorService:
   Attributes:
@@ -1116,7 +1116,7 @@ TaleQuestAddBountyMapStep:
   Super: TaleQuestStep
 TaleQuestAddBountyMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1160,7 +1160,7 @@ TaleQuestAddCargoRunMapStep:
   Super: TaleQuestStep
 TaleQuestAddCargoRunMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1192,7 +1192,7 @@ TaleQuestAddChecklistMapStep:
   Super: TaleQuestStep
 TaleQuestAddChecklistMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1236,7 +1236,7 @@ TaleQuestAddCircleMapStep:
   Super: TaleQuestStep
 TaleQuestAddCircleMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1268,7 +1268,7 @@ TaleQuestAddMerchantMapStep:
   Super: TaleQuestStep
 TaleQuestAddMerchantMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1298,7 +1298,7 @@ TaleQuestAddMerchantMapStepDesc:
   Super: TaleQuestMapStepDescBase
 TaleQuestAddRiddleMapBaseStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1356,7 +1356,7 @@ TaleQuestAddXMarksMapStep:
   Super: TaleQuestStep
 TaleQuestAddXMarksMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1368,8 +1368,16 @@ TaleQuestAddXMarksMapStepDesc:
     Offset: '0xa8'
     Size: '0x20'
     Type: Struct QuestVariableVector
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  - Name: IsUnderground
+    Offset: '0xc8'
+    Size: '0x20'
+    Type: Struct QuestVariableBool
+  - Name: TreasureMapOverride
+    Offset: '0xe8'
+    Size: '0x20'
+    Type: Struct TaleQuestVariableTreasureMapItemDescType
+  ClassSize: '0x88'
+  FullSize: '0x108'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAdvanceRiddleMapStep:
@@ -1380,7 +1388,7 @@ TaleQuestAdvanceRiddleMapStep:
   Super: TaleQuestStep
 TaleQuestAdvanceRiddleMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1391,8 +1399,8 @@ TaleQuestAdvanceRiddleMapStepDesc:
 TaleQuestAnimationStepFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestArrayAppendStep:
   Attributes: []
@@ -1588,6 +1596,12 @@ TaleQuestClearTaleProposalsStepDesc:
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestCompoundStepInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 TaleQuestCrewTaskStep:
   Attributes: []
   ClassSize: '0x38'
@@ -1841,11 +1855,11 @@ TaleQuestFunctionStepLibrary:
     Size: '0x8'
     Type: Class Function*
   - Name: FunctionStepFlags
-    Offset: '0x168'
+    Offset: '0x170'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x88'
-  FullSize: '0x170'
+  ClassSize: '0x90'
+  FullSize: '0x178'
   InheritedSize: '0xe8'
   Super: TaleQuestRunnableStepDesc
 TaleQuestGetCollectionItemCountStep:
@@ -1943,8 +1957,8 @@ TaleQuestIndexedFrame:
 TaleQuestIntMathsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestInteractionPreventionService:
   Attributes:
@@ -2015,14 +2029,14 @@ TaleQuestMerchantContractsServiceDesc:
 TaleQuestNPCHideFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestNamedPointsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestPermanentPromptStep:
   Attributes: []
@@ -2072,7 +2086,7 @@ TaleQuestRemoveMapStep:
   Super: TaleQuestStep
 TaleQuestRemoveMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -2270,6 +2284,26 @@ TaleQuestStepInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+TaleQuestStoryBranchFunctionLibrary:
+  Attributes:
+  - Name: Active
+    Offset: '0x180'
+    Size: '0x8'
+    Type: Class TaleQuestStepDesc*
+  - Name: Inactive
+    Offset: '0x188'
+    Size: '0x8'
+    Type: Class TaleQuestStepDesc*
+  ClassSize: '0x48'
+  FullSize: '0x1c0'
+  InheritedSize: '0x178'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestStoryFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestStructStepBase:
   Attributes: []
   ClassSize: '0x0'
@@ -2339,20 +2373,20 @@ TaleQuestToggleInteractionDescriptionServiceDesc:
 TaleQuestTransformMathsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestTransfromConversionFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestUObjectFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestUpdateCheckpointStep:
   Attributes: []
@@ -2390,7 +2424,7 @@ TaleQuestUpdateMerchantMapStep:
   Super: TaleQuestStep
 TaleQuestUpdateMerchantMapStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -2409,12 +2443,12 @@ TaleQuestUpdateMerchantMapStepDesc:
 TaleQuestUtilityFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestWaitForChecklistMapCompletionStepDesc:
   Attributes:
-  - Name: MapId
+  - Name: MapID
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -2453,8 +2487,8 @@ TaleQuestWaitForHandInStepDesc:
 TaleQuestWaterVolumeFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x170'
-  InheritedSize: '0x170'
+  FullSize: '0x178'
+  InheritedSize: '0x178'
   Super: TaleQuestFunctionStepLibrary
 TaleResourceBrokerService:
   Attributes:

@@ -14,7 +14,7 @@ public:
 
 
 // Size 0x0
-class ForsakenHunter_LarinnaTaleActive_TempEntitlement_C: public EntitlementDesc
+class ForsakenHunter_LarinnaTaleActive_TempEntitlement_C: public None
 {
 public:
 };

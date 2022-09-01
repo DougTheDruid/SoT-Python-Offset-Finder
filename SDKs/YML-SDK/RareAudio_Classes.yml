@@ -86,48 +86,6 @@ AudioIslandStaticMeshAssociatorBase:
   FullSize: '0x3c8'
   InheritedSize: '0x3c8'
   Super: Actor
-AudioPortalComponent:
-  Attributes:
-  - Name: AudioInsideSpace
-    Offset: '0x2e0'
-    Size: '0x8'
-    Type: Class AudioSpaceDataAsset*
-  - Name: AudioOutsideSpace
-    Offset: '0x2e8'
-    Size: '0x8'
-    Type: Class AudioSpaceDataAsset*
-  - Name: PortalTriggerDistance
-    Offset: '0x2f0'
-    Size: '0x4'
-    Type: float
-  - Name: InsideRtpcUpdateDistance
-    Offset: '0x2f4'
-    Size: '0x4'
-    Type: float
-  - Name: OutsideRtpcUpdateDistance
-    Offset: '0x2f8'
-    Size: '0x4'
-    Type: float
-  - Name: TrackAttachmentToActor
-    Offset: '0x2fc'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x30'
-  FullSize: '0x310'
-  InheritedSize: '0x2e0'
-  Super: SceneComponent
-AudioPortalInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-AudioPortalService:
-  Attributes: []
-  ClassSize: '0xb0'
-  FullSize: '0xd8'
-  InheritedSize: '0x28'
-  Super: Object
 AudioSpaceComponent:
   Attributes:
   - Name: AudioSpace

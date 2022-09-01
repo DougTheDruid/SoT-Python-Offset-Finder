@@ -1,61 +1,4 @@
 {
-  "CrewFactionEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Faction",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "SandsOfFateData": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "SinkingCrewStreak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SunkCrewStreak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "SandsOfFateReward",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "FactionStreakLevelData": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StreakLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StreakCountThreshold",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "FactionVoteRemovedEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -194,41 +137,12 @@
       }
     ]
   },
-  "FactionLeftTelemetryEvent": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "FactionSessionId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AlignedFactionName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "LeftReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "FactionJoinedTelemetryEvent": {
+  "CrewJoinedFactionPopupEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "FactionSessionId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AlignedFactionName",
-        "Type": "struct FName",
+        "Name": "PopUpDesc",
+        "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       }

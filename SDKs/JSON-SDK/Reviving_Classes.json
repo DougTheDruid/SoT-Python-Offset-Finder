@@ -87,15 +87,15 @@
   },
   "DeathSelfInteractionComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x178",
-    "InheritedSize": "0x118",
+    "FullSize": "0x188",
+    "InheritedSize": "0x128",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "HasGivenUp",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x130"
       }
     ]
   },
@@ -157,51 +157,51 @@
   },
   "ReviveComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x260",
-    "InheritedSize": "0x118",
+    "FullSize": "0x270",
+    "InheritedSize": "0x128",
     "ClassSize": "0x148",
     "Attributes": [
       {
         "Name": "OwningCharacter",
         "Type": "Class Character*",
         "Size": "0x8",
-        "Offset": "0x128"
+        "Offset": "0x138"
       },
       {
         "Name": "ReviveableRepresentationActor",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
         "Name": "ReviveState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x138"
+        "Offset": "0x148"
       },
       {
         "Name": "InteractionState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x139"
+        "Offset": "0x149"
       },
       {
         "Name": "ReviveableRepresentationClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x140"
+        "Offset": "0x150"
       },
       {
         "Name": "ReviveWindowIsOpen",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x15a"
+        "Offset": "0x16a"
       },
       {
         "Name": "RevivableStatus",
         "Type": "Struct Status",
         "Size": "0x18",
-        "Offset": "0x230"
+        "Offset": "0x240"
       }
     ]
   },

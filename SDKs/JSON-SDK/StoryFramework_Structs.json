@@ -107,8 +107,8 @@
       }
     ]
   },
-  "StorySpawnedNamedPointsList": {
-    "ClassSize": "0x18",
+  "StorySpawnedActorsComponentList": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "StoryFlag",
@@ -121,11 +121,17 @@
         "Type": "TArray<Struct NamedPointsGroupActorLocation>",
         "Size": "0x10",
         "Offset": "0x8"
+      },
+      {
+        "Name": "LayerToSpawn",
+        "Type": "Class LayerActorsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
   "StorySpawnedActorsList": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "StoryFlag",
@@ -144,6 +150,35 @@
         "Type": "TArray<Struct NamedPointsActorLocation>",
         "Size": "0x10",
         "Offset": "0x18"
+      },
+      {
+        "Name": "InstancedLayerLocations",
+        "Type": "TArray<Struct InstancedLayerLocation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "InstancedLayerLocation": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ActorWithInstancedLayerComponent",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DevActorWithInstancedLayerComponent",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "LayerToSpawn",
+        "Type": "Class LayerActorsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },

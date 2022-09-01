@@ -1,33 +1,33 @@
 {
   "BP_BaseInternalDamageZone_C": {
     "Super": "BP_DamageZone_C",
-    "FullSize": "0x860",
-    "InheritedSize": "0x821",
+    "FullSize": "0x870",
+    "InheritedSize": "0x831",
     "ClassSize": "0x3f",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x828"
+        "Offset": "0x838"
       },
       {
         "Name": "RepairWood",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x830"
+        "Offset": "0x840"
       },
       {
         "Name": "Start Repair Cue",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x838"
+        "Offset": "0x848"
       },
       {
         "Name": "RepairEmitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
-        "Offset": "0x840"
+        "Offset": "0x850"
       }
     ]
   },

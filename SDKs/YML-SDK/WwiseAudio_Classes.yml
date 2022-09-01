@@ -154,56 +154,64 @@ WwiseAudioSettings:
     Offset: '0x270'
     Size: '0xa0'
     Type: Struct WwiseAudioGameStateSettings
-  - Name: PauseEventStartInstance
+  - Name: WwiseMediaSoundComponentEventName
     Offset: '0x318'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: PauseEventReleaseInstance
-    Offset: '0x320'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: StopAllEventInstance
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: PauseEventStartInstance
     Offset: '0x328'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: AnimNotifyPoolInstance
+  - Name: PauseEventReleaseInstance
     Offset: '0x330'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopAllEventInstance
+    Offset: '0x338'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: WwiseMediaSoundComponentEventNameInstance
+    Offset: '0x340'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: AnimNotifyPoolInstance
+    Offset: '0x348'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
   - Name: EventsToPlayOnFrontendStartInstance
-    Offset: '0x388'
+    Offset: '0x3a0'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontendStartInstance*>
   - Name: EventsToPlayOnFrontendEndInstance
-    Offset: '0x398'
+    Offset: '0x3b0'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontendEndInstance*>
   - Name: EventsToPlayOnStartEngagementInstance
-    Offset: '0x3a8'
+    Offset: '0x3c0'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnStartEngagementInstance*>
   - Name: EventsToPlayOnEndEngagementInstance
-    Offset: '0x3b8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnEndEngagementInstance*>
   - Name: EventsToPlayOnLoadingStartInstance
-    Offset: '0x3c8'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnLoadingStartInstance*>
   - Name: EventsToPlayOnLoadingEndInstance
-    Offset: '0x3d8'
+    Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnLoadingEndInstance*>
   - Name: EventsToPlayOnFrontEndOrLoadingStartInstance
-    Offset: '0x3e8'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>
   - Name: EventsToPlayOnFrontEndOrLoadingEndInstance
-    Offset: '0x3f8'
+    Offset: '0x410'
     Size: '0x10'
     Type: TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>
-  ClassSize: '0x3e0'
-  FullSize: '0x408'
+  ClassSize: '0x3f8'
+  FullSize: '0x420'
   InheritedSize: '0x28'
   Super: Object
 WwiseBank:

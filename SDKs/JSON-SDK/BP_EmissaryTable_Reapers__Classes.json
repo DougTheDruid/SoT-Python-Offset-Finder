@@ -156,8 +156,8 @@
         "Offset": "0x6f8"
       },
       {
-        "Name": "ToggleName",
-        "Type": "struct FName",
+        "Name": "FeatureName",
+        "Type": "Struct FeatureFlag",
         "Size": "0x8",
         "Offset": "0x700"
       }

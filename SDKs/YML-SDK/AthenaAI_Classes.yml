@@ -3186,10 +3186,10 @@ BTDecorator_DockedToInteractable:
   Super: BTDecorator_BlackboardBase
 BTDecorator_FeatureToggle:
   Attributes:
-  - Name: FeatureName
+  - Name: Feature
     Offset: '0x68'
     Size: '0x8'
-    Type: struct FName
+    Type: Struct FeatureFlag
   ClassSize: '0x8'
   FullSize: '0x70'
   InheritedSize: '0x68'
@@ -5840,6 +5840,16 @@ IsAIOfSkillsetStatCondition:
   FullSize: '0x40'
   InheritedSize: '0x30'
   Super: TargetedStatCondition
+IsAIUsingFormDataAssetStatCondition:
+  Attributes:
+  - Name: AllowedAIDataAssetForms
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<class AllowedAIDataAssetForms*>
+  ClassSize: '0x10'
+  FullSize: '0x40'
+  InheritedSize: '0x30'
+  Super: TargetedStatCondition
 MerchantCrateMetaGenerator:
   Attributes: []
   ClassSize: '0x0'
@@ -6041,7 +6051,7 @@ Pet:
   - Name: AINameplateComponent
     Offset: '0x968'
     Size: '0x8'
-    Type: Class AINameplateComponent*
+    Type: Class PetNameplateComponent*
   - Name: FeedingComponent
     Offset: '0x970'
     Size: '0x8'
@@ -6282,8 +6292,8 @@ PetSicknessComponent:
   Super: ActorComponent
 PetTelemetryComponent:
   Attributes: []
-  ClassSize: '0x48'
-  FullSize: '0x110'
+  ClassSize: '0x38'
+  FullSize: '0x100'
   InheritedSize: '0xc8'
   Super: ActorComponent
 PetWieldableReactMappingsDataAsset:

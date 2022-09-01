@@ -6,6 +6,128 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "EnvQueryGenerator_AggressiveAggressiveSpawnLocations": {
+    "Super": "EnvQueryGenerator",
+    "FullSize": "0x50",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GetInvasionShipsStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestInvasionService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x128",
+    "InheritedSize": "0x60",
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Name": "ServiceDesc",
+        "Type": "Class TaleQuestInvasionServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "TaleQuestInvasionServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "OnCrewLeftServerMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnCrewLeftFightMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "FactionGBannerTag",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "FactionBBannerTag",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "GetInvasionShipsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x120",
+    "Attributes": [
+      {
+        "Name": "AggressiveShip",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "AggressiveShip",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x20",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "PassiveShip",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x20",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "AggressiveCrewId",
+        "Type": "Struct QuestVariableGuid",
+        "Size": "0x20",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "AggressiveCrewId",
+        "Type": "Struct QuestVariableGuid",
+        "Size": "0x20",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "PassiveCrewId",
+        "Type": "Struct QuestVariableGuid",
+        "Size": "0x20",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "AggressiveFaction",
+        "Type": "Struct QuestVariableName",
+        "Size": "0x20",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "AggressiveFaction",
+        "Type": "Struct QuestVariableName",
+        "Size": "0x20",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "PassiveFaction",
+        "Type": "Struct QuestVariableName",
+        "Size": "0x20",
+        "Offset": "0x180"
+      }
+    ]
+  },
   "InvasionBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
@@ -13,11 +135,32 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "InvasionLocationsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AggressiveAggressiveLocations",
+        "Type": "TArray<Struct Vector2D>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "InvasionLocationsDataAssetGetterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "InvasionServiceDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x58",
+    "FullSize": "0x80",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "Matchmaking_VoyageDescDataAsset",
@@ -38,30 +181,60 @@
         "Offset": "0x38"
       },
       {
-        "Name": "AggressivePassive_EnvQueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Name": "Invasion_Emergent_VoyageDescDataAsset",
+        "Type": "Class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
-        "Name": "AggressiveAggressive_EnvQueryTemplate",
+        "Name": "AggressivePassive_EnvQueryTemplate",
         "Type": "Class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
-        "Name": "Invasion_Debug_VoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Name": "AggressiveAggressive_InvasionLocation_EnvQueryTemplate",
+        "Type": "Class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x50"
+      },
+      {
+        "Name": "AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate",
+        "Type": "Class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate",
+        "Type": "Class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "Invasion_Debug_AggressivePassive_VoyageDescDataAsset",
+        "Type": "Class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset",
+        "Type": "Class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "Emergent_DistanceBetweenShipsInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
       }
     ]
   },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x4c8",
+    "FullSize": "0x5a8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x100",
+    "ClassSize": "0x1e0",
     "Attributes": [
       {
         "Name": "InvasionServiceDataAsset",
@@ -70,16 +243,34 @@
         "Offset": "0x408"
       },
       {
+        "Name": "InvasionLocationsDataAsset",
+        "Type": "Class InvasionLocationsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
         "Name": "MatchmakingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x4a8"
+        "Offset": "0x518"
       },
       {
         "Name": "InvadingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x4b8"
+        "Offset": "0x528"
+      },
+      {
+        "Name": "MatchmakingCrewsReplicated",
+        "Type": "TArray<Struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "InvadingCrewsReplicated",
+        "Type": "TArray<Struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x548"
       }
     ]
   },
@@ -117,40 +308,6 @@
       }
     ]
   },
-  "TaleQuestInvasionService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x130",
-    "InheritedSize": "0x60",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "ServiceDesc",
-        "Type": "Class TaleQuestInvasionServiceDesc*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "TaleQuestInvasionServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "OnCrewLeftServerMessage",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnCrewLeftFightMessage",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x60"
-      }
-    ]
-  },
   "WaitForShipToBeDefeatedStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xc8",
@@ -160,9 +317,9 @@
   },
   "WaitForShipToBeDefeatedStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x148",
+    "FullSize": "0x188",
     "InheritedSize": "0x80",
-    "ClassSize": "0xc8",
+    "ClassSize": "0x108",
     "Attributes": [
       {
         "Name": "WinningShip",
@@ -189,28 +346,40 @@
         "Offset": "0xe0"
       },
       {
+        "Name": "WinningFaction",
+        "Type": "Struct QuestVariableName",
+        "Size": "0x20",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "DefeatedFaction",
+        "Type": "Struct QuestVariableName",
+        "Size": "0x20",
+        "Offset": "0x120"
+      },
+      {
         "Name": "CheckProximityTimerInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x100"
+        "Offset": "0x140"
       },
       {
         "Name": "CheckProximityDistanceInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x104"
+        "Offset": "0x144"
       },
       {
         "Name": "TimeoutTimerIntervalInMinutes",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x108"
+        "Offset": "0x148"
       },
       {
         "Name": "FailMessage",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x110"
+        "Offset": "0x150"
       }
     ]
   },

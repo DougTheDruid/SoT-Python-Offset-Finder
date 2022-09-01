@@ -1,4 +1,67 @@
 {
+  "ServerQueueWaitTimesResponseModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "QueueWaitTimes",
+        "Type": "TArray<Struct ServerQueueWaitTimeModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ServerQueueWaitTimeModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "QueueScopeId",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AvgWaitTime",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxWaitTime",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ServerQueueWaitTimesRequestModel": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "ServerLocation",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PrivateServerId",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PlayModeTags",
+        "Type": "TArray<Str PlayModeTags>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PlayModeState",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "ContestMatchmakingServerRequestModel": {
     "ClassSize": "0xa0",
     "Attributes": [
@@ -65,7 +128,7 @@
     ]
   },
   "ServerCrewModel": {
-    "ClassSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -86,46 +149,52 @@
         "Offset": "0x28"
       },
       {
+        "Name": "ServerAddress",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
         "Name": "SessionType",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x38"
+        "Offset": "0x48"
       },
       {
         "Name": "Positions",
         "Type": "TArray<Struct Vector2D>",
         "Size": "0x10",
-        "Offset": "0x40"
+        "Offset": "0x50"
       },
       {
         "Name": "Resources",
         "Type": "TArray<UInt32 Resources>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x60"
       },
       {
         "Name": "PvPFaction",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x60"
+        "Offset": "0x70"
       },
       {
         "Name": "PvPSkillLevel",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x64"
+        "Offset": "0x74"
       },
       {
         "Name": "RivalCrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x68"
+        "Offset": "0x78"
       },
       {
         "Name": "MatchmakingRequestReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x78"
+        "Offset": "0x88"
       }
     ]
   },

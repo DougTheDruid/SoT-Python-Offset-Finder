@@ -290,15 +290,19 @@ PetCustomiationOverrideMappingEntry:
   ClassSize: '0x18'
 PetCustomisation:
   Attributes:
-  - Name: PetName
+  - Name: DefaultPetName
     Offset: '0x0'
     Size: '0x10'
     Type: Struct FString
-  - Name: PetPartId
+  - Name: PetName
     Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: PetPartId
+    Offset: '0x20'
     Size: '0x8'
     Type: Struct AIPartId
-  ClassSize: '0x18'
+  ClassSize: '0x28'
 PetDangerHearingThreat:
   Attributes:
   - Name: SoundTag

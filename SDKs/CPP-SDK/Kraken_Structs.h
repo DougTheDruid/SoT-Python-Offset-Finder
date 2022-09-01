@@ -852,12 +852,13 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct KrakenSpawnTelemetryEvent
 {
 public:
 	Struct FString                                               KrakenId;                                          // 0x0(0x10)
-	Struct Guid                                                  ConfigSpawnId;                                     // 0x10(0x10)
+	Struct Vector                                                SpawnLocation;                                     // 0x10(0xc)
+	Struct Guid                                                  ConfigSpawnId;                                     // 0x1c(0x10)
 };
 
 

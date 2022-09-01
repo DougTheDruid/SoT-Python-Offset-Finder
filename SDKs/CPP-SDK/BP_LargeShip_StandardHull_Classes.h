@@ -283,7 +283,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x28
 class BP_LargeShip_StandardHull_Art_Doors_C: public Actor
 {
 public:
@@ -291,6 +291,7 @@ public:
 	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3d0(0x8)
 	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d8(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x3e8(0x8)
 };
 
 

@@ -746,21 +746,21 @@
   },
   "StorageSeat": {
     "Super": "Seat",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x670",
+    "FullSize": "0x6b0",
+    "InheritedSize": "0x680",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "StorageInteractionInput",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x670"
+        "Offset": "0x680"
       },
       {
         "Name": "StorageContainerComponent",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x678"
+        "Offset": "0x688"
       }
     ]
   },
@@ -828,8 +828,8 @@
   },
   "TaleQuestWatercraftFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
+    "FullSize": "0x178",
+    "InheritedSize": "0x178",
     "ClassSize": "0x0",
     "Attributes": []
   },

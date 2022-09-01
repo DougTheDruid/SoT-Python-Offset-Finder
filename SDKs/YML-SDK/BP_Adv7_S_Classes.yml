@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_Adv7_SirensPrize_Larinna_C:
   Attributes:
-  - Name: None
-    Offset: '0x6a0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6a8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMesh1
     Offset: '0x6b0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: StaticMesh
+    Offset: '0x6b8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: ActorPhasing
+    Offset: '0x6c0'
     Size: '0x8'
     Type: Class ActorPhasingComponent*
   ClassSize: '0x18'
-  FullSize: '0x6b8'
-  InheritedSize: '0x6a0'
+  FullSize: '0x6c8'
+  InheritedSize: '0x6b0'
   Super: BP_SoleTrader_C

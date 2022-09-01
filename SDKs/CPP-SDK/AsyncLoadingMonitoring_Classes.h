@@ -13,7 +13,7 @@ public:
 };
 
 
-// Size 0x80
+// Size 0xd0
 class AsyncLoadingMonitoringService: public Object
 {
 public:

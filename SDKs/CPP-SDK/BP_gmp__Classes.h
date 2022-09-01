@@ -27,4 +27,11 @@ public:
 };
 
 
+// Size 0x0
+class BP_gmp_pocket_watch_hwm_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 }

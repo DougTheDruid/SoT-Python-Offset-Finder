@@ -147,49 +147,203 @@ public:
 
 
 // Size 0x0
-class sailslivery_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_zeus_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_reaper_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_seasontwo_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_blackbeard_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_captainchest_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_legendary_01_v02_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_phoenix_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_shine_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_goldhoarders_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_seasonone_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_halloweensolo_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_sabrewulf_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_edgelord_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_reaperglint_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_edna_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_tenmillion_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_mayhem_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_party_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_omen_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_sotthunderpack_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_blackdog_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_oldbettsy_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_creator_01_v01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_skelly_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_admiral_01_v01_CutomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_seadog_01_CutomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_ghost_01_CutomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_sailor_01_CutomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_admiral_01_CutomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_islander_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_seasonseven_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class sailslivery_highwayman_01_v02_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
@@ -315,161 +469,49 @@ public:
 
 
 // Size 0x0
-class sailslivery_zeus_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_seasontwo_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_reaper_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_blackbeard_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_captainchest_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_phoenix_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_legendary_01_v02_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_shine_01_CustomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
 
 
 // Size 0x0
-class sailslivery_seasonone_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_halloweensolo_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_sabrewulf_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_edgelord_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_reaperglint_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_tenmillion_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_mayhem_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_party_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_omen_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_sotthunderpack_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_oldbettsy_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_skelly_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_admiral_01_v01_CutomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_seadog_01_CutomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_ghost_01_CutomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_sailor_01_CutomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class sailslivery_admiral_01_CutomizationDesc_C: public ShipCustomizationDesc
+class sailslivery_goldhoarders_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_CaptainsLog_Proxy_C: public CaptainsLogbookProxy
 {
 public:
-	Class ConfigurableBuryableItemComponent*                     ConfigurableBuryableItem;                          // 0x8c8(0x8)
-	Class GlintComponent*                                        Glint;                                             // 0x8d0(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x8d8(0x8)
+	Class ConfigurableBuryableItemComponent*                     ConfigurableBuryableItem;                          // 0x8c0(0x8)
+	Class GlintComponent*                                        Glint;                                             // 0x8c8(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x8d0(0x8)
 };
 
 

@@ -1,15 +1,15 @@
 {
   "BP_LowerDeckDamageZone_01_C": {
     "Super": "BP_BaseInternalDamageZone_C",
-    "FullSize": "0x860",
-    "InheritedSize": "0x860",
+    "FullSize": "0x870",
+    "InheritedSize": "0x870",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_LowerDeckDamageZone_00_C": {
     "Super": "BP_BaseInternalDamageZone_C",
-    "FullSize": "0x860",
-    "InheritedSize": "0x860",
+    "FullSize": "0x870",
+    "InheritedSize": "0x870",
     "ClassSize": "0x0",
     "Attributes": []
   },

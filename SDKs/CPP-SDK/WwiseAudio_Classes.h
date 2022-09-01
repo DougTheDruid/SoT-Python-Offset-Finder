@@ -76,7 +76,7 @@ public:
 };
 
 
-// Size 0x3e0
+// Size 0x3f8
 class WwiseAudioSettings: public Object
 {
 public:
@@ -97,18 +97,20 @@ public:
 	Struct StringAssetReference                                  StopAllEvent;                                      // 0x248(0x10)
 	Struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x258(0x18)
 	Struct WwiseAudioGameStateSettings                           AudioStateSettings;                                // 0x270(0xa0)
-	Class WwiseEvent*                                            PauseEventStartInstance;                           // 0x318(0x8)
-	Class WwiseEvent*                                            PauseEventReleaseInstance;                         // 0x320(0x8)
-	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x328(0x8)
-	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x330(0x8)
-	TArray<class EventsToPlayOnFrontendStartInstance*>           EventsToPlayOnFrontendStartInstance;               // 0x388(0x10)
-	TArray<class EventsToPlayOnFrontendEndInstance*>             EventsToPlayOnFrontendEndInstance;                 // 0x398(0x10)
-	TArray<class EventsToPlayOnStartEngagementInstance*>         EventsToPlayOnStartEngagementInstance;             // 0x3a8(0x10)
-	TArray<class EventsToPlayOnEndEngagementInstance*>           EventsToPlayOnEndEngagementInstance;               // 0x3b8(0x10)
-	TArray<class EventsToPlayOnLoadingStartInstance*>            EventsToPlayOnLoadingStartInstance;                // 0x3c8(0x10)
-	TArray<class EventsToPlayOnLoadingEndInstance*>              EventsToPlayOnLoadingEndInstance;                  // 0x3d8(0x10)
-	TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>  EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x3e8(0x10)
-	TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x3f8(0x10)
+	Struct StringAssetReference                                  WwiseMediaSoundComponentEventName;                 // 0x318(0x10)
+	Class WwiseEvent*                                            PauseEventStartInstance;                           // 0x328(0x8)
+	Class WwiseEvent*                                            PauseEventReleaseInstance;                         // 0x330(0x8)
+	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x338(0x8)
+	Class WwiseEvent*                                            WwiseMediaSoundComponentEventNameInstance;         // 0x340(0x8)
+	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x348(0x8)
+	TArray<class EventsToPlayOnFrontendStartInstance*>           EventsToPlayOnFrontendStartInstance;               // 0x3a0(0x10)
+	TArray<class EventsToPlayOnFrontendEndInstance*>             EventsToPlayOnFrontendEndInstance;                 // 0x3b0(0x10)
+	TArray<class EventsToPlayOnStartEngagementInstance*>         EventsToPlayOnStartEngagementInstance;             // 0x3c0(0x10)
+	TArray<class EventsToPlayOnEndEngagementInstance*>           EventsToPlayOnEndEngagementInstance;               // 0x3d0(0x10)
+	TArray<class EventsToPlayOnLoadingStartInstance*>            EventsToPlayOnLoadingStartInstance;                // 0x3e0(0x10)
+	TArray<class EventsToPlayOnLoadingEndInstance*>              EventsToPlayOnLoadingEndInstance;                  // 0x3f0(0x10)
+	TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>  EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x400(0x10)
+	TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x410(0x10)
 };
 
 

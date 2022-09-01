@@ -3,38 +3,38 @@
 BP_Wheel_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x9f8'
+    Offset: '0xa08'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: ProjectileCollision
-    Offset: '0xa00'
+    Offset: '0xa10'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: Interactable
-    Offset: '0xa08'
+    Offset: '0xa18'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: Wheel Centered
-    Offset: '0xa10'
+    Offset: '0xa20'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
   - Name: Wheel Movement Started
-    Offset: '0xa58'
+    Offset: '0xa68'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
   - Name: Wheel Movement Stopped
-    Offset: '0xaa0'
+    Offset: '0xab0'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
   - Name: AudioEmitter
-    Offset: '0xae8'
+    Offset: '0xaf8'
     Size: '0x20'
     Type: Struct WwiseEmitter
   - Name: ShipWheelTurning
-    Offset: '0xb08'
+    Offset: '0xb18'
     Size: '0x1'
     Type: bool
   ClassSize: '0x111'
-  FullSize: '0xb09'
-  InheritedSize: '0x9f8'
+  FullSize: '0xb19'
+  InheritedSize: '0xa08'
   Super: Wheel

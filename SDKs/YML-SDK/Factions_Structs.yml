@@ -11,16 +11,12 @@ CinematicFactionEvent:
     Size: '0x80'
     Type: Struct CinematicQuestEvent
   ClassSize: '0x88'
-CrewFactionEntry:
+CrewJoinedFactionPopupEvent:
   Attributes:
-  - Name: CrewId
-    Offset: '0x0'
-    Size: '0x10'
-    Type: Struct Guid
-  - Name: Faction
+  - Name: PopUpDesc
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: Class DataAsset*
   ClassSize: '0x18'
 FactionDisplayInfo:
   Attributes:
@@ -49,32 +45,6 @@ FactionDisplayInfo:
     Size: '0x10'
     Type: Struct StringAssetReference
   ClassSize: '0xa0'
-FactionJoinedTelemetryEvent:
-  Attributes:
-  - Name: FactionSessionId
-    Offset: '0x0'
-    Size: '0x10'
-    Type: Struct Guid
-  - Name: AlignedFactionName
-    Offset: '0x10'
-    Size: '0x8'
-    Type: struct FName
-  ClassSize: '0x18'
-FactionLeftTelemetryEvent:
-  Attributes:
-  - Name: FactionSessionId
-    Offset: '0x0'
-    Size: '0x10'
-    Type: Struct Guid
-  - Name: AlignedFactionName
-    Offset: '0x10'
-    Size: '0x8'
-    Type: struct FName
-  - Name: LeftReason
-    Offset: '0x18'
-    Size: '0x1'
-    Type: byte
-  ClassSize: '0x1c'
 FactionRequest:
   Attributes:
   - Name: Faction
@@ -82,17 +52,6 @@ FactionRequest:
     Size: '0x8'
     Type: class
   ClassSize: '0x20'
-FactionStreakLevelData:
-  Attributes:
-  - Name: StreakLevel
-    Offset: '0x0'
-    Size: '0x4'
-    Type: int
-  - Name: StreakCountThreshold
-    Offset: '0x4'
-    Size: '0x4'
-    Type: int
-  ClassSize: '0x8'
 FactionVoteAddedEvent:
   Attributes:
   - Name: Company
@@ -138,18 +97,3 @@ FigureheadFactionVFXParams:
     Size: '0x1'
     Type: bool
   ClassSize: '0x30'
-SandsOfFateData:
-  Attributes:
-  - Name: SinkingCrewStreak
-    Offset: '0x0'
-    Size: '0x4'
-    Type: int
-  - Name: SunkCrewStreak
-    Offset: '0x4'
-    Size: '0x4'
-    Type: int
-  - Name: SandsOfFateReward
-    Offset: '0x8'
-    Size: '0x4'
-    Type: int
-  ClassSize: '0xc'

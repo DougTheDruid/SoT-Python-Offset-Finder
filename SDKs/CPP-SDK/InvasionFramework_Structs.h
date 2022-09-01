@@ -12,10 +12,11 @@ struct InvasionCrewData
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	byte                                                         InvasionStatus;                                    // 0x10(0x1)
+	bool                                                         ReadyForInvasion;                                  // 0x11(0x1)
 };
 
 
-// Size 0x38
+// Size 0x70
 struct InvasionParticipatingCrewData
 {
 public:

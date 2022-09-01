@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_WoodenHead_01_a_TrinketDesc_C: public TrinketDesc
+class BP_WoodenHead_03_a_TrinketDesc_C: public TrinketDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_WoodenHead_03_a_TrinketDesc_C: public TrinketDesc
+class BP_WoodenHead_01_a_TrinketDesc_C: public TrinketDesc
 {
 public:
 };

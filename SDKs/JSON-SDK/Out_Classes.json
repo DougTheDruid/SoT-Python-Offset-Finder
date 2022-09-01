@@ -1,79 +1,79 @@
 {
   "BP_OutpostCrate_bld_shop_wood_box_03_a_C": {
     "Super": "StorageContainer",
-    "FullSize": "0x4d0",
-    "InheritedSize": "0x4b8",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x4c8",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x4c8"
       },
       {
         "Name": "IslandTelemetrySubject",
         "Type": "Class IslandTelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x4c0"
+        "Offset": "0x4d0"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x4d8"
       }
     ]
   },
   "BP_OutpostCrate_bld_shop_wood_box_02_a_C": {
     "Super": "StorageContainer",
-    "FullSize": "0x4d0",
-    "InheritedSize": "0x4b8",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x4c8",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x4c8"
       },
       {
         "Name": "IslandTelemetrySubject",
         "Type": "Class IslandTelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x4c0"
+        "Offset": "0x4d0"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x4d8"
       }
     ]
   },
   "BP_OutpostCrate_bld_shop_wood_box_01_a_C": {
     "Super": "StorageContainer",
-    "FullSize": "0x4d0",
-    "InheritedSize": "0x4b8",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x4c8",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x4c8"
       },
       {
         "Name": "IslandTelemetrySubject",
         "Type": "Class IslandTelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x4c0"
+        "Offset": "0x4d0"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x4d8"
       }
     ]
   },

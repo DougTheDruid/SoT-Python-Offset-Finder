@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_Emote_TuckChest_Desc_C: public EmoteDesc
+class BP_Emote_Tuck_Desc_C: public EmoteDesc
 {
 public:
 };
 
 
 // Size 0x0
-class BP_Emote_Tuck_Desc_C: public EmoteDesc
+class BP_Emote_TuckChest_Desc_C: public EmoteDesc
 {
 public:
 };

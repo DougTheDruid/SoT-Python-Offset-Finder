@@ -13,8 +13,8 @@ public:
 };
 
 
-// Size 0x3ebe7cfe
-class Adv7_LarinnaDialogTempEntitlement_C: public None
+// Size 0x0
+class Adv7_LarinnaDialogTempEntitlement_C: public EntitlementDesc
 {
 public:
 };

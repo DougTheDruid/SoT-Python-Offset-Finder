@@ -3,10 +3,10 @@
 BP_IslandCosmeticChest_C:
   Attributes:
   - Name: Harbour
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x8'
     Type: Class HarbourComponent*
   ClassSize: '0x8'
-  FullSize: '0x5f0'
-  InheritedSize: '0x5e8'
+  FullSize: '0x600'
+  InheritedSize: '0x5f8'
   Super: ShipCustomizationChest

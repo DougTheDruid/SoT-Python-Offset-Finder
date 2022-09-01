@@ -36,13 +36,6 @@ public:
 };
 
 
-// Size 0x10
-struct PrepareForWorldSwitchRpc
-{
-public:
-};
-
-
 // Size 0x20
 struct ServerMigrationAboutToStartEvent
 {
@@ -112,6 +105,22 @@ public:
 	TArray<Struct Guid>                                          CrewIds;                                           // 0x20(0x10)
 	Struct FString                                               SubMode;                                           // 0x30(0x10)
 	TArray<Byte MatchmakingReasons>                              MatchmakingReasons;                                // 0x40(0x10)
+};
+
+
+// Size 0x20
+struct ServerMigrationRequestBroadcastEvent
+{
+public:
+	Struct FString                                               DestinationAddress;                                // 0x0(0x10)
+	Struct Guid                                                  CrewId;                                            // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct PrepareForWorldSwitchRpc
+{
+public:
 };
 
 

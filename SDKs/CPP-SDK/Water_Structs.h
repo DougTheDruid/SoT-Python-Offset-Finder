@@ -6,15 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
-struct WaterInformation
-{
-public:
-	class                                                        WaterType;                                         // 0x0(0x8)
-	bool                                                         CanSwim;                                           // 0x8(0x1)
-};
-
-
 // Size 0x18
 struct WaterSplashProbesContainer
 {
@@ -58,6 +49,25 @@ public:
 	Struct Vector                                                VfxSpawnOffset;                                    // 0xf4(0xc)
 	bool                                                         Enabled;                                           // 0x100(0x1)
 	Class ParticleSystemComponent*                               CurrentlyPlayingVFX;                               // 0x108(0x8)
+};
+
+
+// Size 0x70
+struct WaterSpout
+{
+public:
+	Struct Transform                                             SpoutLocatorTransform;                             // 0x0(0x30)
+	Class ParticleSystemComponent*                               SpoutParticleSystem;                               // 0x30(0x8)
+	Class ParticleSystemComponent*                               SplashParticleSystem;                              // 0x38(0x8)
+};
+
+
+// Size 0x10
+struct WaterInformation
+{
+public:
+	class                                                        WaterType;                                         // 0x0(0x8)
+	bool                                                         CanSwim;                                           // 0x8(0x1)
 };
 
 
@@ -137,16 +147,6 @@ struct BuoyancySampleMovementConfigurationEntry
 public:
 	Struct Vector                                                SampleOffset;                                      // 0x0(0xc)
 	Class CurveFloat*                                            BuoyancyScaleCurve;                                // 0x10(0x8)
-};
-
-
-// Size 0x70
-struct WaterSpout
-{
-public:
-	Struct Transform                                             SpoutLocatorTransform;                             // 0x0(0x30)
-	Class ParticleSystemComponent*                               SpoutParticleSystem;                               // 0x30(0x8)
-	Class ParticleSystemComponent*                               SplashParticleSystem;                              // 0x38(0x8)
 };
 
 

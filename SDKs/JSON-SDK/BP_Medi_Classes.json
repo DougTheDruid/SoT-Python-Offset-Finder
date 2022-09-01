@@ -1,53 +1,53 @@
 {
   "BP_MediumShip_ServingHatch_Right_C": {
     "Super": "SwitchMechanismTrigger",
-    "FullSize": "0x570",
-    "InheritedSize": "0x558",
+    "FullSize": "0x580",
+    "InheritedSize": "0x568",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x568"
       },
       {
         "Name": "shp_mid_serving_hatch_R_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x570"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x578"
       }
     ]
   },
   "BP_MediumShip_ServingHatch_Left_C": {
     "Super": "SwitchMechanismTrigger",
-    "FullSize": "0x570",
-    "InheritedSize": "0x558",
+    "FullSize": "0x580",
+    "InheritedSize": "0x568",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x568"
       },
       {
         "Name": "shp_mid_serving_hatch_L_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x570"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x578"
       }
     ]
   },

@@ -312,6 +312,23 @@
       }
     ]
   },
+  "GeyserManagerStoryCustomisationData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "Struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GeyserManagerSetupData",
+        "Type": "Class GeyserManagerSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "VolcanoTargetCoolDown": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -365,6 +382,23 @@
         "Name": "PercentageOfMaxTargetingRange",
         "Type": "float",
         "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "VolcanoStoryCustomisationData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "Struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VolcanoSetupData",
+        "Type": "Class VolcanoSetupDataAsset*",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]

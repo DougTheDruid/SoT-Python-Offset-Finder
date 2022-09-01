@@ -44,4 +44,11 @@ public:
 };
 
 
+// Size 0x0
+class BP_fod_PorkMeatRaw_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 }

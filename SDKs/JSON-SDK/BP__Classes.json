@@ -1,8 +1,57 @@
 {
-  "BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C": {
-    "Super": "None",
-    "FullSize": "0x6a8",
-    "InheritedSize": "0x6a8",
+  "BP_Emote_SkeletonCurse_Cheer_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_SkeletonCurse_Clap_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_SkeletonCurse_Dance_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_SkeletonCurse_MakeFriends_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_SkeletonCurse_Point_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_SkeletonCurse_Sit_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_SkeletonCurse_Sleep_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_Emote_SkeletonCurse_Wave_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -442,8 +491,8 @@
   },
   "BP_fod_KrakenMeatRaw_00_a_ItemProxy_C": {
     "Super": "BP_ProxyIngestible_Retractable_C",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x7b0",
+    "FullSize": "0x7c0",
+    "InheritedSize": "0x7c0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -489,8 +538,8 @@
   },
   "BP_fod_KrakenMeatRawBite1_00_a_ItemProxy_C": {
     "Super": "BP_ProxyIngestible_Retractable_C",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x7b0",
+    "FullSize": "0x7c0",
+    "InheritedSize": "0x7c0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -717,11 +766,46 @@
       }
     ]
   },
-  "BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C": {
-    "Super": "",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x43c5f21d",
-    "ClassSize": "-0x43c5eb7d",
+  "BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_MerchantCrate_BananaCrate_FullyStocked_Desc_C": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_MerchantCrate_AnyItemCrate_ItemDesc_C": {
+    "Super": "ItemWithoutIconsDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_MegMeatCooked_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_MegMeatBurned_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_fod_KrakenMeatRaw_00_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
     "Attributes": []
   },
   "BP_hair_col_white_01_over_Desc_C": {

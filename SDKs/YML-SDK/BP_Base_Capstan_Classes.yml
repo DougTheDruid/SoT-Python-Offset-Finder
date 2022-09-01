@@ -3,18 +3,18 @@
 BP_Base_Capstan_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x820'
+    Offset: '0x828'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: ProjectileCollision
-    Offset: '0x828'
+    Offset: '0x830'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: NewVar
-    Offset: '0x830'
+    Offset: '0x838'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*
   ClassSize: '0x18'
-  FullSize: '0x838'
-  InheritedSize: '0x820'
+  FullSize: '0x840'
+  InheritedSize: '0x828'
   Super: Capstan

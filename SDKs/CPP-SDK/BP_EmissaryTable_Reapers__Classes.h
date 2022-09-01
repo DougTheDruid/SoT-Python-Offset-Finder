@@ -35,7 +35,7 @@ public:
 	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x6e8(0x8)
 	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x6f0(0x8)
 	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6f8(0x8)
-	struct FName                                                 ToggleName;                                        // 0x700(0x8)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x700(0x8)
 };
 
 

@@ -34,147 +34,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Title_RB_Rank3_S06_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank2_S06_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank1_S06_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank3_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank2_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank1_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank3_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank2_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_GH_Rank3_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_GH_Rank2_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_AF_Rank3_S05_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank3_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank2_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_RB_Rank1_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank3_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank2_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_OOS_Rank1_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_MA_Rank3_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_GH_Rank3_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Title_GH_Rank2_S04_C": {
-    "Super": "TitleDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "Title_AF_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_AF_Rank2_S04_C": {
     "Super": "TitleDesc",
     "FullSize": "0xd0",
     "InheritedSize": "0xd0",
@@ -364,6 +231,153 @@
     "Attributes": []
   },
   "Title_AF_Rank3_002_VoyagerOfPirateProwess_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank3_S06_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank2_S06_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank1_S06_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_AF_Rank3_S06_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank3_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank2_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank1_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank3_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank2_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_GH_Rank3_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_GH_Rank2_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_AF_Rank3_S05_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank2_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_RB_Rank1_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank2_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_OOS_Rank1_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_MA_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_GH_Rank3_S04_C": {
+    "Super": "TitleDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Title_GH_Rank2_S04_C": {
     "Super": "TitleDesc",
     "FullSize": "0xd0",
     "InheritedSize": "0xd0",

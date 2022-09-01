@@ -1874,7 +1874,7 @@
     ]
   },
   "KrakenSpawnTelemetryEvent": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "KrakenId",
@@ -1883,10 +1883,16 @@
         "Offset": "0x0"
       },
       {
+        "Name": "SpawnLocation",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
         "Name": "ConfigSpawnId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x1c"
       }
     ]
   },

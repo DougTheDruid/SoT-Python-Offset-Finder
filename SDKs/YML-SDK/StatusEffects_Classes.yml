@@ -50,24 +50,6 @@ DebugMenuStatusDataAsset:
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
-DebugStatusEffectOverlapZoneVisualizerComponent:
-  Attributes:
-  - Name: BoxCollisionDimensions
-    Offset: '0xd0'
-    Size: '0xc'
-    Type: Struct Vector
-  - Name: DebugColour
-    Offset: '0xdc'
-    Size: '0x4'
-    Type: Struct Color
-  - Name: VisibleState
-    Offset: '0xe0'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x20'
-  FullSize: '0xe8'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
 DebugStatusTicketHolder:
   Attributes:
   - Name: StatusRecipient
@@ -194,22 +176,14 @@ StatusEffectManagerComponent:
   Super: ActorComponent
 StatusEffectOverlapZone:
   Attributes:
-  - Name: CollisionMesh
-    Offset: '0x470'
-    Size: '0x8'
-    Type: Class BoxComponent*
   - Name: StatusesToApplyOnOverlap
-    Offset: '0x478'
+    Offset: '0x4a0'
     Size: '0x10'
     Type: TArray<Struct DelayedStatusEffect>
-  - Name: StartActive
-    Offset: '0x488'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0xc8'
-  FullSize: '0x490'
-  InheritedSize: '0x3c8'
-  Super: Actor
+  ClassSize: '0x20'
+  FullSize: '0x4c0'
+  InheritedSize: '0x4a0'
+  Super: SimpleOverlapZone
 StatusEffectPersistenceComponent:
   Attributes: []
   ClassSize: '0x8'

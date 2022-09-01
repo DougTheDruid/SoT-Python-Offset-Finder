@@ -42,6 +42,12 @@ BP_wpn_blunderbuss_hal_01_a_ItemDesc_C:
   FullSize: '0x120'
   InheritedSize: '0x120'
   Super: ItemDesc
+BP_wpn_blunderbuss_hwm_01_a_v02_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemDesc
 BP_wpn_blunderbuss_oos_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -84,6 +90,22 @@ BP_wpn_blunderbuss_shr_01_a_ItemDesc_C:
   FullSize: '0x120'
   InheritedSize: '0x120'
   Super: ItemDesc
+BP_wpn_blunderbuss_shr_01_a_ItemInfo_C:
+  Attributes:
+  - Name: DefaultSceneRoot
+    Offset: '0x510'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x518'
+  InheritedSize: '0x510'
+  Super: ItemInfo
+BP_wpn_blunderbuss_shr_01_a_Wieldable_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xa80'
+  InheritedSize: '0xa80'
+  Super: BP_Blunderbuss_C
 BP_wpn_blunderbuss_smp_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -96,22 +118,6 @@ BP_wpn_blunderbuss_win_01_a_ItemDesc_C:
   FullSize: '0x120'
   InheritedSize: '0x120'
   Super: ItemDesc
-BP_wpn_blunderbuss_win_01_a_ItemInfo_C:
-  Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x510'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x8'
-  FullSize: '0x518'
-  InheritedSize: '0x510'
-  Super: ItemInfo
-BP_wpn_blunderbuss_win_01_a_Wieldable_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xa80'
-  InheritedSize: '0xa80'
-  Super: BP_Blunderbuss_C
 BP_wpn_blunderbuss_yr1_leg_01_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'

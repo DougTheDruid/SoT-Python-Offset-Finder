@@ -5246,243 +5246,265 @@ Engine:
     Offset: '0x660'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: bCheckForMultiplePawnsSpawnedInAFrame
+  - Name: CustomTimeStep
     Offset: '0x670'
+    Size: '0x8'
+    Type: Class EngineCustomTimeStep*
+  - Name: TimecodeProvider
+    Offset: '0x698'
+    Size: '0x8'
+    Type: Class TimecodeProvider*
+  - Name: bGenerateDefaultTimecode
+    Offset: '0x6b9'
+    Size: '0x1'
+    Type: bool
+  - Name: GenerateDefaultTimecodeFrameDelay
+    Offset: '0x6c4'
+    Size: '0x4'
+    Type: float
+  - Name: bCheckForMultiplePawnsSpawnedInAFrame
+    Offset: '0x6c8'
     Size: '0x1'
     Type: bool
   - Name: NumPawnsAllowedToBeSpawnedInAFrame
-    Offset: '0x674'
+    Offset: '0x6cc'
     Size: '0x4'
     Type: int
   - Name: bShouldGenerateLowQualityLightmaps
-    Offset: '0x678'
+    Offset: '0x6d0'
     Size: '0x1'
     Type: bool
   - Name: C_WorldBox
-    Offset: '0x67c'
+    Offset: '0x6d4'
     Size: '0x4'
     Type: Struct Color
   - Name: C_BrushWire
-    Offset: '0x680'
+    Offset: '0x6d8'
     Size: '0x4'
     Type: Struct Color
   - Name: C_AddWire
-    Offset: '0x684'
+    Offset: '0x6dc'
     Size: '0x4'
     Type: Struct Color
   - Name: C_SubtractWire
-    Offset: '0x688'
+    Offset: '0x6e0'
     Size: '0x4'
     Type: Struct Color
   - Name: C_SemiSolidWire
-    Offset: '0x68c'
+    Offset: '0x6e4'
     Size: '0x4'
     Type: Struct Color
   - Name: C_NonSolidWire
-    Offset: '0x690'
+    Offset: '0x6e8'
     Size: '0x4'
     Type: Struct Color
   - Name: C_WireBackground
-    Offset: '0x694'
+    Offset: '0x6ec'
     Size: '0x4'
     Type: Struct Color
   - Name: C_ScaleBoxHi
-    Offset: '0x698'
+    Offset: '0x6f0'
     Size: '0x4'
     Type: Struct Color
   - Name: C_VolumeCollision
-    Offset: '0x69c'
+    Offset: '0x6f4'
     Size: '0x4'
     Type: Struct Color
   - Name: C_BSPCollision
-    Offset: '0x6a0'
+    Offset: '0x6f8'
     Size: '0x4'
     Type: Struct Color
   - Name: C_OrthoBackground
-    Offset: '0x6a4'
+    Offset: '0x6fc'
     Size: '0x4'
     Type: Struct Color
   - Name: C_Volume
-    Offset: '0x6a8'
+    Offset: '0x700'
     Size: '0x4'
     Type: Struct Color
   - Name: C_BrushShape
-    Offset: '0x6ac'
+    Offset: '0x704'
     Size: '0x4'
     Type: Struct Color
   - Name: StreamingDistanceFactor
-    Offset: '0x6b0'
+    Offset: '0x708'
     Size: '0x4'
     Type: float
   - Name: TransitionType
-    Offset: '0x6b4'
+    Offset: '0x70c'
     Size: '0x1'
     Type: byte
   - Name: TransitionDescription
-    Offset: '0x6b8'
+    Offset: '0x710'
     Size: '0x10'
     Type: Struct FString
   - Name: TransitionGameMode
-    Offset: '0x6c8'
+    Offset: '0x720'
     Size: '0x10'
     Type: Struct FString
   - Name: MeshLODRange
-    Offset: '0x6d8'
+    Offset: '0x730'
     Size: '0x4'
     Type: float
   - Name: bAllowMatureLanguage
-    Offset: '0x6dc'
+    Offset: '0x734'
     Size: '0x1'
     Type: bool
   - Name: CameraRotationThreshold
-    Offset: '0x6e0'
-    Size: '0x4'
-    Type: float
-  - Name: CameraTranslationThreshold
-    Offset: '0x6e4'
-    Size: '0x4'
-    Type: float
-  - Name: PrimitiveProbablyVisibleTime
-    Offset: '0x6e8'
-    Size: '0x4'
-    Type: float
-  - Name: MaxOcclusionPixelsFraction
-    Offset: '0x6ec'
-    Size: '0x4'
-    Type: float
-  - Name: bPauseOnLossOfFocus
-    Offset: '0x6f0'
-    Size: '0x1'
-    Type: bool
-  - Name: MaxParticleResize
-    Offset: '0x6f4'
-    Size: '0x4'
-    Type: int
-  - Name: MaxParticleResizeWarn
-    Offset: '0x6f8'
-    Size: '0x4'
-    Type: int
-  - Name: PendingDroppedNotes
-    Offset: '0x700'
-    Size: '0x10'
-    Type: TArray<Struct DropNoteInfo>
-  - Name: PhysicErrorCorrection
-    Offset: '0x710'
-    Size: '0x1c'
-    Type: Struct RigidBodyErrorCorrection
-  - Name: NetClientTicksPerSecond
-    Offset: '0x72c'
-    Size: '0x4'
-    Type: float
-  - Name: bHasPendingGlobalReregister
-    Offset: '0x730'
-    Size: '0x1'
-    Type: bool
-  - Name: DisplayGamma
-    Offset: '0x734'
-    Size: '0x4'
-    Type: float
-  - Name: MinDesiredFrameRate
     Offset: '0x738'
     Size: '0x4'
     Type: float
-  - Name: DefaultSelectedMaterialColor
+  - Name: CameraTranslationThreshold
     Offset: '0x73c'
+    Size: '0x4'
+    Type: float
+  - Name: PrimitiveProbablyVisibleTime
+    Offset: '0x740'
+    Size: '0x4'
+    Type: float
+  - Name: MaxOcclusionPixelsFraction
+    Offset: '0x744'
+    Size: '0x4'
+    Type: float
+  - Name: bPauseOnLossOfFocus
+    Offset: '0x748'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxParticleResize
+    Offset: '0x74c'
+    Size: '0x4'
+    Type: int
+  - Name: MaxParticleResizeWarn
+    Offset: '0x750'
+    Size: '0x4'
+    Type: int
+  - Name: PendingDroppedNotes
+    Offset: '0x758'
+    Size: '0x10'
+    Type: TArray<Struct DropNoteInfo>
+  - Name: PhysicErrorCorrection
+    Offset: '0x768'
+    Size: '0x1c'
+    Type: Struct RigidBodyErrorCorrection
+  - Name: NetClientTicksPerSecond
+    Offset: '0x784'
+    Size: '0x4'
+    Type: float
+  - Name: bHasPendingGlobalReregister
+    Offset: '0x788'
+    Size: '0x1'
+    Type: bool
+  - Name: DisplayGamma
+    Offset: '0x78c'
+    Size: '0x4'
+    Type: float
+  - Name: MinDesiredFrameRate
+    Offset: '0x790'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultSelectedMaterialColor
+    Offset: '0x794'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: SelectedMaterialColor
-    Offset: '0x74c'
+    Offset: '0x7a4'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: SelectionOutlineColor
-    Offset: '0x75c'
+    Offset: '0x7b4'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: SubduedSelectionOutlineColor
-    Offset: '0x76c'
+    Offset: '0x7c4'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: SelectedMaterialColorOverride
-    Offset: '0x77c'
+    Offset: '0x7d4'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: bIsOverridingSelectedColor
-    Offset: '0x78c'
+    Offset: '0x7e4'
     Size: '0x1'
     Type: bool
   - Name: bEnableOnScreenDebugMessages
-    Offset: '0x790'
+    Offset: '0x7e8'
     Size: '0x1'
     Type: bool
   - Name: bEnableOnScreenDebugMessagesDisplay
-    Offset: '0x790'
+    Offset: '0x7e8'
     Size: '0x1'
     Type: bool
   - Name: bSuppressMapWarnings
-    Offset: '0x790'
+    Offset: '0x7e8'
     Size: '0x1'
     Type: bool
   - Name: bCookSeparateSharedMPGameContent
-    Offset: '0x790'
+    Offset: '0x7e8'
     Size: '0x1'
     Type: bool
   - Name: bDisableAILogging
-    Offset: '0x790'
+    Offset: '0x7e8'
     Size: '0x1'
     Type: bool
   - Name: ScreenSaverInhibitorSemaphore
-    Offset: '0x79c'
+    Offset: '0x7f4'
     Size: '0x4'
     Type: int
   - Name: bLockReadOnlyLevels
-    Offset: '0x7a0'
+    Offset: '0x7f8'
     Size: '0x1'
     Type: bool
   - Name: ParticleEventManagerClassPath
-    Offset: '0x7a8'
+    Offset: '0x800'
     Size: '0x10'
     Type: Struct FString
   - Name: SelectionHighlightIntensity
-    Offset: '0x7c8'
+    Offset: '0x820'
     Size: '0x4'
     Type: float
   - Name: BSPSelectionHighlightIntensity
-    Offset: '0x7cc'
+    Offset: '0x824'
     Size: '0x4'
     Type: float
   - Name: HoverHighlightIntensity
-    Offset: '0x7d0'
+    Offset: '0x828'
     Size: '0x4'
     Type: float
   - Name: SelectionHighlightIntensityBillboards
-    Offset: '0x7d4'
+    Offset: '0x82c'
     Size: '0x4'
     Type: float
   - Name: NetDriverDefinitions
-    Offset: '0x908'
+    Offset: '0x960'
     Size: '0x10'
     Type: TArray<Struct NetDriverDefinition>
   - Name: ServerActors
-    Offset: '0x918'
+    Offset: '0x970'
     Size: '0x10'
     Type: TArray<Str ServerActors>
   - Name: RuntimeServerActors
-    Offset: '0x928'
+    Offset: '0x980'
     Size: '0x10'
     Type: TArray<Str RuntimeServerActors>
   - Name: bStartedLoadMapMovie
-    Offset: '0x938'
+    Offset: '0x990'
     Size: '0x1'
     Type: bool
   - Name: NextWorldContextHandle
-    Offset: '0x950'
+    Offset: '0x9a8'
     Size: '0x4'
     Type: int
-  ClassSize: '0x950'
-  FullSize: '0x978'
+  ClassSize: '0x9a8'
+  FullSize: '0x9d0'
   InheritedSize: '0x28'
   Super: Object
 EngineBaseTypes:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+EngineCustomTimeStep:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
@@ -6145,16 +6167,16 @@ GPUSortTestLibrary:
 GameEngine:
   Attributes:
   - Name: MaxDeltaTime
-    Offset: '0x978'
+    Offset: '0x9d0'
     Size: '0x4'
     Type: float
   - Name: ServerFlushLogInterval
-    Offset: '0x97c'
+    Offset: '0x9d4'
     Size: '0x4'
     Type: float
   ClassSize: '0x70'
-  FullSize: '0x9e8'
-  InheritedSize: '0x978'
+  FullSize: '0xa40'
+  InheritedSize: '0x9d0'
   Super: Engine
 GameInstance:
   Attributes:
@@ -21754,6 +21776,16 @@ ThumbnailInfo:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+TimecodeProvider:
+  Attributes:
+  - Name: FrameDelay
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+  FullSize: '0x30'
   InheritedSize: '0x28'
   Super: Object
 TimelineComponent:

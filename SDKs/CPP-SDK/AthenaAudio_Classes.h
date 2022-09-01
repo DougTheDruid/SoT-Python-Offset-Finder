@@ -23,11 +23,58 @@ public:
 };
 
 
+// Size 0x60
+class AudioPortalComponent: public SceneComponent
+{
+public:
+	float                                                        PortalTriggerDistance;                             // 0x2e0(0x4)
+	float                                                        InsideRtpcUpdateDistance;                          // 0x2e4(0x4)
+	float                                                        OutsideRtpcUpdateDistance;                         // 0x2e8(0x4)
+	bool                                                         TrackAttachmentToActor;                            // 0x2ec(0x1)
+	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2f0(0x8)
+	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2f8(0x8)
+	Class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x300(0x8)
+	Class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x308(0x8)
+	Class StoryDrivenAudioPortalCollectionDataAsset*             CollectionAsset;                                   // 0x310(0x8)
+};
+
+
+// Size 0x0
+class AudioPortalInterface: public Interface
+{
+public:
+};
+
+
+// Size 0xb0
+class AudioPortalService: public Object
+{
+public:
+};
+
+
 // Size 0x10
 class MultiEmitter: public Actor
 {
 public:
 	Class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
+};
+
+
+// Size 0x18
+class StoryDrivenAudioPortalDataAsset: public DataAsset
+{
+public:
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0x8)
+	TArray<Struct StoryDrivenAudioPortalSetting>                 Stories;                                           // 0x30(0x10)
+};
+
+
+// Size 0x10
+class StoryDrivenAudioPortalCollectionDataAsset: public DataAsset
+{
+public:
+	TArray<class AssetsList*>                                    AssetsList;                                        // 0x28(0x10)
 };
 
 

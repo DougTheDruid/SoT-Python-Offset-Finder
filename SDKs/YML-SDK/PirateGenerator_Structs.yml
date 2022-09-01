@@ -90,15 +90,19 @@ ClothingItem:
     Offset: '0x48'
     Size: '0x10'
     Type: TArray<Struct ClothingPart>
-  - Name: ScalarParameters
+  - Name: VFXs
     Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Struct ClothingVFX>
+  - Name: ScalarParameters
+    Offset: '0x68'
     Size: '0x10'
     Type: TArray<Struct IPGScalarParameter>
   - Name: MaterialReferences
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x10'
     Type: TArray<Struct FName>
-  ClassSize: '0x78'
+  ClassSize: '0x88'
 ClothingPart:
   Attributes:
   - Name: Name
@@ -133,6 +137,21 @@ ClothingSlot:
     Size: '0x1'
     Type: byte
   ClassSize: '0x20'
+ClothingVFX:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Sockets
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  - Name: Slots
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x28'
 ColorTextureSwitchSeedEntry:
   Attributes:
   - Name: ReferenceName
@@ -466,7 +485,11 @@ Outfit:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<Struct FName>
-  ClassSize: '0x40'
+  - Name: VFXs
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct ClothingVFX>
+  ClassSize: '0x50'
 PirateDescription:
   Attributes:
   - Name: Type
@@ -518,6 +541,17 @@ PirateDescription:
     Size: '0x10'
     Type: TArray<Struct IPGScalarParameter>
   ClassSize: '0x80'
+PirateGeneratorAdditionalBakeInfo:
+  Attributes:
+  - Name: VFXParticles
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class VFXParticles*>
+  - Name: VFXSockets
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x20'
 PirateGeneratorTextureReference:
   Attributes:
   - Name: Name
@@ -666,4 +700,12 @@ WardrobeOutfitResult:
     Offset: '0x20'
     Size: '0x10'
     Type: TArray<Struct FName>
-  ClassSize: '0x30'
+  - Name: VFXParticles
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<class VFXParticles*>
+  - Name: VFXSockets
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Struct FName>
+  ClassSize: '0x50'

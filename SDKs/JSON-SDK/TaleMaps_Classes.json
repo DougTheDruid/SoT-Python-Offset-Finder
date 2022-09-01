@@ -20,7 +20,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "Struct QuestVariableGuid",
         "Size": "0x20",
         "Offset": "0x80"
@@ -75,7 +75,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "Struct QuestVariableGuid",
         "Size": "0x20",
         "Offset": "0x80"
@@ -221,8 +221,8 @@
   },
   "TaleQuestCustomMapFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x188",
-    "InheritedSize": "0x170",
+    "FullSize": "0x190",
+    "InheritedSize": "0x178",
     "ClassSize": "0x18",
     "Attributes": []
   },
@@ -247,7 +247,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -303,7 +303,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "Struct QuestVariableGuid",
         "Size": "0x20",
         "Offset": "0xe0"
@@ -329,7 +329,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "Struct QuestVariableGuid",
         "Size": "0x20",
         "Offset": "0xc0"
@@ -349,7 +349,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"

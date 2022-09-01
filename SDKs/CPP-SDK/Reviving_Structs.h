@@ -70,14 +70,14 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x70
 struct ReviveableActionStateConstructionInfo
 {
 public:
 	class                                                        ActionStateId;                                     // 0x30(0x8)
-	Struct DamageInstance                                        DamageInstance;                                    // 0x38(0x28)
-	byte                                                         CharacterDeathType;                                // 0x60(0x1)
-	byte                                                         CharacterType;                                     // 0x61(0x1)
+	Struct DamageInstance                                        DamageInstance;                                    // 0x38(0x30)
+	byte                                                         CharacterDeathType;                                // 0x68(0x1)
+	byte                                                         CharacterType;                                     // 0x69(0x1)
 };
 
 
@@ -183,13 +183,13 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x40
 struct RevivingWindowStart
 {
 public:
-	Struct DamageInstance                                        DamageInstance;                                    // 0x0(0x28)
-	byte                                                         CharacterDeathType;                                // 0x28(0x1)
-	Class Character*                                             RevivableCharacter;                                // 0x30(0x8)
+	Struct DamageInstance                                        DamageInstance;                                    // 0x0(0x30)
+	byte                                                         CharacterDeathType;                                // 0x30(0x1)
+	Class Character*                                             RevivableCharacter;                                // 0x38(0x8)
 };
 
 

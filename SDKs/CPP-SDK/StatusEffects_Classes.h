@@ -60,26 +60,6 @@ public:
 };
 
 
-// Size 0xc8
-class StatusEffectOverlapZone: public Actor
-{
-public:
-	Class BoxComponent*                                          CollisionMesh;                                     // 0x470(0x8)
-	TArray<Struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x478(0x10)
-	bool                                                         StartActive;                                       // 0x488(0x1)
-};
-
-
-// Size 0x20
-class DebugStatusEffectOverlapZoneVisualizerComponent: public ActorComponent
-{
-public:
-	Struct Vector                                                BoxCollisionDimensions;                            // 0xd0(0xc)
-	Struct Color                                                 DebugColour;                                       // 0xdc(0x4)
-	bool                                                         VisibleState;                                      // 0xe0(0x1)
-};
-
-
 // Size 0x8
 class DebugStatusTicketHolder: public Actor
 {
@@ -213,6 +193,14 @@ class StatusEffectManagerComponent: public ActorComponent
 public:
 	Class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xf0(0x8)
 	TArray<Struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf8(0x10)
+};
+
+
+// Size 0x20
+class StatusEffectOverlapZone: public SimpleOverlapZone
+{
+public:
+	TArray<Struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x4a0(0x10)
 };
 
 

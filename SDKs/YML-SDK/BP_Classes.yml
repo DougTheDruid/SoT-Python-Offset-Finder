@@ -3,16 +3,16 @@
 BP_CommodityManifestBook_MerchantAlliance_C:
   Attributes:
   - Name: NPCDialog
-    Offset: '0x500'
+    Offset: '0x510'
     Size: '0x8'
     Type: Class NPCDialogComponent*
   - Name: DefaultSceneRoot
-    Offset: '0x508'
+    Offset: '0x518'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x10'
-  FullSize: '0x510'
-  InheritedSize: '0x500'
+  FullSize: '0x520'
+  InheritedSize: '0x510'
   Super: ModalInteractionProxy
 BP_Emote_Dice_D10_Desc_C:
   Attributes: []
@@ -53,20 +53,20 @@ BP_Emote_Dice_D8_Desc_C:
 BP_IslandStorageBarrel_Outpost_C:
   Attributes:
   - Name: Replenishable
-    Offset: '0x4b8'
+    Offset: '0x4c8'
     Size: '0x8'
     Type: Class ReplenishableComponent*
   - Name: IslandTelemetrySubject
-    Offset: '0x4c0'
+    Offset: '0x4d0'
     Size: '0x8'
     Type: Class IslandTelemetrySubjectComponent*
   - Name: StorageContainer
-    Offset: '0x4c8'
+    Offset: '0x4d8'
     Size: '0x8'
     Type: Class StorageContainerComponent*
   ClassSize: '0x18'
-  FullSize: '0x4d0'
-  InheritedSize: '0x4b8'
+  FullSize: '0x4e0'
+  InheritedSize: '0x4c8'
   Super: StorageContainer
 BP_PromptActor_EmissaryRank2_AF_C:
   Attributes:
@@ -394,6 +394,12 @@ BP_fod_ChickenMeatRawBite1_00_a_ItemDesc_C:
   FullSize: '0x120'
   InheritedSize: '0x120'
   Super: ItemDesc
+BP_fod_ChickenMeatRaw_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemDesc
 BP_fod_ChickenMeatRaw_00_a_ItemInfo_C:
   Attributes:
   - Name: MaterialManipulationSettings
@@ -415,8 +421,8 @@ BP_fod_ChickenMeatRaw_00_a_ItemInfo_C:
 BP_fod_ChickenMeatRaw_00_a_ItemProxy_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x7b0'
-  InheritedSize: '0x7b0'
+  FullSize: '0x7c0'
+  InheritedSize: '0x7c0'
   Super: BP_ProxyIngestible_Retractable_C
 BP_fod_ChickenMeatRaw_00_a_Wieldable_C:
   Attributes: []
@@ -425,6 +431,18 @@ BP_fod_ChickenMeatRaw_00_a_Wieldable_C:
   InheritedSize: '0x848'
   Super: BP_StaticWieldableIngestible_C
 BP_fod_PineappleFresh_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemDesc
+BP_fod_PorkMeatBurned_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemDesc
+BP_fod_PorkMeatCooked_00_a_ItemDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x120'

@@ -19,20 +19,20 @@ GetVeilOfTheAncientsStepDesc:
 VeilOfTheAncients:
   Attributes:
   - Name: NumberOfGems
-    Offset: '0x3f0'
+    Offset: '0x400'
     Size: '0x4'
     Type: float
   - Name: LockComponent
-    Offset: '0x3f8'
+    Offset: '0x408'
     Size: '0x8'
     Type: Class LockComponent*
   - Name: StaticMeshComponent
-    Offset: '0x400'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x18'
-  FullSize: '0x408'
-  InheritedSize: '0x3f0'
+  FullSize: '0x418'
+  InheritedSize: '0x400'
   Super: InteractableBase
 VeilOfTheAncientsServiceDesc:
   Attributes: []

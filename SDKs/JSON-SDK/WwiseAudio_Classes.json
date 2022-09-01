@@ -146,9 +146,9 @@
   },
   "WwiseAudioSettings": {
     "Super": "Object",
-    "FullSize": "0x408",
+    "FullSize": "0x420",
     "InheritedSize": "0x28",
-    "ClassSize": "0x3e0",
+    "ClassSize": "0x3f8",
     "Attributes": [
       {
         "Name": "ReverbPresetSettings",
@@ -253,76 +253,88 @@
         "Offset": "0x270"
       },
       {
-        "Name": "PauseEventStartInstance",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
+        "Name": "WwiseMediaSoundComponentEventName",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
         "Offset": "0x318"
       },
       {
-        "Name": "PauseEventReleaseInstance",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x320"
-      },
-      {
-        "Name": "StopAllEventInstance",
+        "Name": "PauseEventStartInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x328"
       },
       {
+        "Name": "PauseEventReleaseInstance",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x330"
+      },
+      {
+        "Name": "StopAllEventInstance",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x338"
+      },
+      {
+        "Name": "WwiseMediaSoundComponentEventNameInstance",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x340"
+      },
+      {
         "Name": "AnimNotifyPoolInstance",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x330"
+        "Offset": "0x348"
       },
       {
         "Name": "EventsToPlayOnFrontendStartInstance",
         "Type": "TArray<class EventsToPlayOnFrontendStartInstance*>",
         "Size": "0x10",
-        "Offset": "0x388"
+        "Offset": "0x3a0"
       },
       {
         "Name": "EventsToPlayOnFrontendEndInstance",
         "Type": "TArray<class EventsToPlayOnFrontendEndInstance*>",
         "Size": "0x10",
-        "Offset": "0x398"
+        "Offset": "0x3b0"
       },
       {
         "Name": "EventsToPlayOnStartEngagementInstance",
         "Type": "TArray<class EventsToPlayOnStartEngagementInstance*>",
         "Size": "0x10",
-        "Offset": "0x3a8"
+        "Offset": "0x3c0"
       },
       {
         "Name": "EventsToPlayOnEndEngagementInstance",
         "Type": "TArray<class EventsToPlayOnEndEngagementInstance*>",
         "Size": "0x10",
-        "Offset": "0x3b8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "EventsToPlayOnLoadingStartInstance",
         "Type": "TArray<class EventsToPlayOnLoadingStartInstance*>",
         "Size": "0x10",
-        "Offset": "0x3c8"
+        "Offset": "0x3e0"
       },
       {
         "Name": "EventsToPlayOnLoadingEndInstance",
         "Type": "TArray<class EventsToPlayOnLoadingEndInstance*>",
         "Size": "0x10",
-        "Offset": "0x3d8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingStartInstance",
         "Type": "TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>",
         "Size": "0x10",
-        "Offset": "0x3e8"
+        "Offset": "0x400"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingEndInstance",
         "Type": "TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>",
         "Size": "0x10",
-        "Offset": "0x3f8"
+        "Offset": "0x410"
       }
     ]
   },

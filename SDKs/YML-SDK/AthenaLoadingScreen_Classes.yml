@@ -20,12 +20,8 @@ AthenaLoadingScreenParams:
     Offset: '0x58'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: ArenaLoadingScreens
-    Offset: '0x68'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  ClassSize: '0x40'
-  FullSize: '0x78'
+  ClassSize: '0x30'
+  FullSize: '0x68'
   InheritedSize: '0x38'
   Super: DeveloperSettings
 LoadingUtilities:

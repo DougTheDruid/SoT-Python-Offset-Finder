@@ -66,6 +66,12 @@ sailslivery_blackbeard_01_CustomizationDesc_C:
   FullSize: '0xf8'
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
+sailslivery_blackdog_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
 sailslivery_boreal_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -96,7 +102,19 @@ sailslivery_creator_01_CustomizationDesc_C:
   FullSize: '0xf8'
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
+sailslivery_creator_01_v01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
 sailslivery_edgelord_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+sailslivery_edna_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'
@@ -145,6 +163,18 @@ sailslivery_goldhoarders_01_v02_CustomizationDesc_C:
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_halloweensolo_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+sailslivery_highwayman_01_v02_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+sailslivery_islander_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'
@@ -325,6 +355,12 @@ sailslivery_seasonfour_01_CustomizationDesc_C:
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 sailslivery_seasonone_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+sailslivery_seasonseven_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'

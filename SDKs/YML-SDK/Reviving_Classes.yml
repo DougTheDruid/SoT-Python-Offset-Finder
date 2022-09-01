@@ -3,12 +3,12 @@
 DeathSelfInteractionComponent:
   Attributes:
   - Name: HasGivenUp
-    Offset: '0x120'
+    Offset: '0x130'
     Size: '0x1'
     Type: bool
   ClassSize: '0x60'
-  FullSize: '0x178'
-  InheritedSize: '0x118'
+  FullSize: '0x188'
+  InheritedSize: '0x128'
   Super: InteractableComponent
 PostReviveLocomotionActionStateId:
   Attributes: []
@@ -35,36 +35,36 @@ ReviveAudioComponent:
 ReviveComponent:
   Attributes:
   - Name: OwningCharacter
-    Offset: '0x128'
+    Offset: '0x138'
     Size: '0x8'
     Type: Class Character*
   - Name: ReviveableRepresentationActor
-    Offset: '0x130'
+    Offset: '0x140'
     Size: '0x8'
     Type: Class Actor*
   - Name: ReviveState
-    Offset: '0x138'
+    Offset: '0x148'
     Size: '0x1'
     Type: byte
   - Name: InteractionState
-    Offset: '0x139'
+    Offset: '0x149'
     Size: '0x1'
     Type: byte
   - Name: ReviveableRepresentationClass
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x8'
     Type: class
   - Name: ReviveWindowIsOpen
-    Offset: '0x15a'
+    Offset: '0x16a'
     Size: '0x1'
     Type: bool
   - Name: RevivableStatus
-    Offset: '0x230'
+    Offset: '0x240'
     Size: '0x18'
     Type: Struct Status
   ClassSize: '0x148'
-  FullSize: '0x260'
-  InheritedSize: '0x118'
+  FullSize: '0x270'
+  InheritedSize: '0x128'
   Super: InteractableComponent
 ReviveConditionalStatTrigger:
   Attributes: []

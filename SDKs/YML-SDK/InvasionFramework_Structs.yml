@@ -10,6 +10,10 @@ InvasionCrewData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: ReadyForInvasion
+    Offset: '0x11'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x14'
 InvasionEndedTelemetryEvent:
   Attributes:
@@ -44,4 +48,4 @@ InvasionParticipatingCrewData:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class Participants*>
-  ClassSize: '0x38'
+  ClassSize: '0x70'

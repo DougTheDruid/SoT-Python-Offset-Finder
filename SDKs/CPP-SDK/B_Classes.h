@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C: public BuoyantStorageContainer
 {
 public:
-	Class SphereComponent*                                       Sphere;                                            // 0x6e8(0x8)
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x6f0(0x8)
-	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x6f8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x700(0x8)
+	Class SphereComponent*                                       Sphere;                                            // 0x6f8(0x8)
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x700(0x8)
+	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x708(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x710(0x8)
 };
 
 
@@ -24,14 +24,84 @@ public:
 };
 
 
+// Size 0x0
+class BP_fod_Pondie_05_OrchidBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_Pondie_05_BronzeBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_Pondie_05_BrightBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_SnakeMeatCooked_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_SnakeMeatBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_SharkMeatCooked_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_SharkMeatBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_Pondie_03_OrchidBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_Pondie_03_BronzeBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_fod_Pondie_03_BrightBurned_00_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
 // Size 0x20
 class BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C: public BuoyantStorageContainer
 {
 public:
-	Class SphereComponent*                                       Sphere;                                            // 0x6e8(0x8)
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x6f0(0x8)
-	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x6f8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x700(0x8)
+	Class SphereComponent*                                       Sphere;                                            // 0x6f8(0x8)
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x700(0x8)
+	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x708(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x710(0x8)
 };
 
 
@@ -39,10 +109,10 @@ public:
 class BP_BuoyantStorageBarrel_LockedToWater_C: public BuoyantStorageContainer
 {
 public:
-	Class SphereComponent*                                       Sphere;                                            // 0x6e8(0x8)
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x6f0(0x8)
-	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x6f8(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x700(0x8)
+	Class SphereComponent*                                       Sphere;                                            // 0x6f8(0x8)
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x700(0x8)
+	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x708(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x710(0x8)
 };
 
 

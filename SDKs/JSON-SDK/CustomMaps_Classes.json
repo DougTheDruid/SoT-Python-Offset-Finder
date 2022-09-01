@@ -1,10 +1,37 @@
 {
+  "CustomMapDisplayObjectBase": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Guid",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "CustomMap": {
     "Super": "RenderToTextureMapBase",
-    "FullSize": "0x830",
+    "FullSize": "0x860",
     "InheritedSize": "0x830",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Font",
+        "Type": "Class Font*",
+        "Size": "0x8",
+        "Offset": "0x838"
+      },
+      {
+        "Name": "DisplayItems",
+        "Type": "TArray<class DisplayItems*>",
+        "Size": "0x10",
+        "Offset": "0x840"
+      }
+    ]
   },
   "CustomMapCollectionInterface": {
     "Super": "Interface",
@@ -13,11 +40,25 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "CustomMapDataTypeBase": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Guid",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "CustomMapData": {
     "Super": "DataAsset",
-    "FullSize": "0x78",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x50",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "CustomMapItemDescClass",
@@ -26,10 +67,134 @@
         "Offset": "0x28"
       },
       {
-        "Name": "RegionMapData",
-        "Type": "Struct RegionMapData",
-        "Size": "0x48",
+        "Name": "Font",
+        "Type": "Class Font*",
+        "Size": "0x8",
         "Offset": "0x30"
+      },
+      {
+        "Name": "MapDisplayItemList",
+        "Type": "TArray<class MapDisplayItemList*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CustomMapDataTypePositional": {
+    "Super": "CustomMapDataTypeBase",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "CustomMapDisplayObjectPositional": {
+    "Super": "CustomMapDisplayObjectBase",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "CustomMapDisplayObjectText": {
+    "Super": "CustomMapDisplayObjectPositional",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "StrikeThrough",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "StrikethroughThickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "CustomMapDataTypeText": {
+    "Super": "CustomMapDataTypePositional",
+    "FullSize": "0x90",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "StrikeThrough",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "StrikethroughThickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "CustomMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CustomMapItemDescClass",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },

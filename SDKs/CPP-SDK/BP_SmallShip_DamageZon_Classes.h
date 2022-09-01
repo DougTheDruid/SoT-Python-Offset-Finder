@@ -7,28 +7,28 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_SmallShip_DamageZone_LowerDeck_00_C: public BP_BaseInternalDamageZone_C
+class BP_SmallShip_DamageZone_MezzanineDeck_01_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_SmallShip_DamageZone_LowerDeck_01_C: public BP_BaseInternalDamageZone_C
+// Size 0x3f6e60b3
+class BP_SmallShip_DamageZone_MezzanineDeck_00_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_SmallShip_DamageZone_MezzanineDeck_00_C: public BP_BaseInternalDamageZone_C
+// Size 0x43816ef4
+class BP_SmallShip_DamageZone_LowerDeck_01_C: public None
 {
 public:
 };
 
 
-// Size 0x0
-class BP_SmallShip_DamageZone_MezzanineDeck_01_C: public BP_BaseInternalDamageZone_C
+// Size 0x3cc58
+class BP_SmallShip_DamageZone_LowerDeck_00_C: public None
 {
 public:
 };

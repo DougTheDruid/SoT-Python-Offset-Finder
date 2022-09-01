@@ -1,9 +1,9 @@
 {
   "BP_Crest_C": {
     "Super": "Crest",
-    "FullSize": "0x554",
+    "FullSize": "0x55c",
     "InheritedSize": "0x460",
-    "ClassSize": "0xf4",
+    "ClassSize": "0xfc",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -124,6 +124,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x550"
+      },
+      {
+        "Name": "FeatureName",
+        "Type": "Struct FeatureFlag",
+        "Size": "0x8",
+        "Offset": "0x554"
       }
     ]
   },

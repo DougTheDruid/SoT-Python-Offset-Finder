@@ -166,7 +166,7 @@ public:
 };
 
 
-// Size 0x1a0
+// Size 0x1d8
 class StartEmissaryVoyageInlineVoteConsumer: public EmissaryVoyageInlineVoteConsumerBase
 {
 public:
@@ -175,8 +175,9 @@ public:
 	Struct FText                                                 EmissaryVotingCantVoteReasonCrewShipOutsideRange;  // 0x198(0x38)
 	Struct FText                                                 EmissaryVotingCantVoteReasonNoEmissaryEntitlement; // 0x1d0(0x38)
 	Struct FText                                                 EmissaryVotingCantVoteReasonHasActiveVoteForDifferentCompany; // 0x208(0x38)
-	Struct FText                                                 EmissaryVotingRemoveVote;                          // 0x240(0x38)
-	Struct FText                                                 EmissaryVotingCantRemoveVote;                      // 0x278(0x38)
+	Struct FText                                                 EmissaryVotingCantVoteReasonOnOpposingFaction;     // 0x240(0x38)
+	Struct FText                                                 EmissaryVotingRemoveVote;                          // 0x278(0x38)
+	Struct FText                                                 EmissaryVotingCantRemoveVote;                      // 0x2b0(0x38)
 };
 
 
@@ -193,13 +194,13 @@ public:
 };
 
 
-// Size 0x78
+// Size 0x90
 class EmissaryVoyageVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
 	class                                                        RequiredEntitlement;                               // 0x30(0x8)
-	class                                                        TargetCompany;                                     // 0x98(0x8)
-	Class EmissaryVoyageInlineVoteConsumerBase*                  Consumer;                                          // 0xa0(0x8)
+	class                                                        TargetCompany;                                     // 0xb0(0x8)
+	Class EmissaryVoyageInlineVoteConsumerBase*                  Consumer;                                          // 0xb8(0x8)
 };
 
 

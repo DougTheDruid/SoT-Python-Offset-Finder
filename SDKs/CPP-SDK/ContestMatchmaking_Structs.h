@@ -6,6 +6,35 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x10
+struct ServerQueueWaitTimesResponseModel
+{
+public:
+	TArray<Struct ServerQueueWaitTimeModel>                      QueueWaitTimes;                                    // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct ServerQueueWaitTimeModel
+{
+public:
+	Struct FString                                               QueueScopeId;                                      // 0x0(0x10)
+	Struct Timespan                                              AvgWaitTime;                                       // 0x10(0x8)
+	Struct Timespan                                              MaxWaitTime;                                       // 0x18(0x8)
+};
+
+
+// Size 0x48
+struct ServerQueueWaitTimesRequestModel
+{
+public:
+	Struct FString                                               ServerLocation;                                    // 0x0(0x10)
+	Struct FString                                               PrivateServerId;                                   // 0x18(0x10)
+	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x28(0x10)
+	Struct FString                                               PlayModeState;                                     // 0x38(0x10)
+};
+
+
 // Size 0xa0
 struct ContestMatchmakingServerRequestModel
 {
@@ -23,20 +52,21 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x90
 struct ServerCrewModel
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	Struct UniqueNetIdRepl                                       UserId;                                            // 0x10(0x18)
 	Struct Guid                                                  ServerId;                                          // 0x28(0x10)
-	int                                                          SessionType;                                       // 0x38(0x4)
-	TArray<Struct Vector2D>                                      Positions;                                         // 0x40(0x10)
-	TArray<UInt32 Resources>                                     Resources;                                         // 0x50(0x10)
-	byte                                                         PvPFaction;                                        // 0x60(0x1)
-	int                                                          PvPSkillLevel;                                     // 0x64(0x4)
-	Struct Guid                                                  RivalCrewId;                                       // 0x68(0x10)
-	byte                                                         MatchmakingRequestReason;                          // 0x78(0x1)
+	Struct FString                                               ServerAddress;                                     // 0x38(0x10)
+	int                                                          SessionType;                                       // 0x48(0x4)
+	TArray<Struct Vector2D>                                      Positions;                                         // 0x50(0x10)
+	TArray<UInt32 Resources>                                     Resources;                                         // 0x60(0x10)
+	byte                                                         PvPFaction;                                        // 0x70(0x1)
+	int                                                          PvPSkillLevel;                                     // 0x74(0x4)
+	Struct Guid                                                  RivalCrewId;                                       // 0x78(0x10)
+	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
 };
 
 

@@ -377,9 +377,9 @@
   },
   "StartEmissaryVoyageInlineVoteConsumer": {
     "Super": "EmissaryVoyageInlineVoteConsumerBase",
-    "FullSize": "0x2c8",
+    "FullSize": "0x300",
     "InheritedSize": "0x128",
-    "ClassSize": "0x1a0",
+    "ClassSize": "0x1d8",
     "Attributes": [
       {
         "Name": "EmissaryVotingCastVote",
@@ -412,16 +412,22 @@
         "Offset": "0x208"
       },
       {
-        "Name": "EmissaryVotingRemoveVote",
+        "Name": "EmissaryVotingCantVoteReasonOnOpposingFaction",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x240"
       },
       {
-        "Name": "EmissaryVotingCantRemoveVote",
+        "Name": "EmissaryVotingRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x278"
+      },
+      {
+        "Name": "EmissaryVotingCantRemoveVote",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x2b0"
       }
     ]
   },
@@ -471,9 +477,9 @@
   },
   "EmissaryVoyageVoteValidatorBase": {
     "Super": "VoteValidatorInlineBase",
-    "FullSize": "0xa8",
+    "FullSize": "0xc0",
     "InheritedSize": "0x30",
-    "ClassSize": "0x78",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "RequiredEntitlement",
@@ -485,27 +491,27 @@
         "Name": "TargetCompany",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x98"
+        "Offset": "0xb0"
       },
       {
         "Name": "Consumer",
         "Type": "Class EmissaryVoyageInlineVoteConsumerBase*",
         "Size": "0x8",
-        "Offset": "0xa0"
+        "Offset": "0xb8"
       }
     ]
   },
   "StartEmissaryVoyageInlineVoteValidator": {
     "Super": "EmissaryVoyageVoteValidatorBase",
-    "FullSize": "0xa8",
-    "InheritedSize": "0xa8",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xc0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "StopEmissaryVoyageInlineVoteValidator": {
     "Super": "EmissaryVoyageVoteValidatorBase",
-    "FullSize": "0xa8",
-    "InheritedSize": "0xa8",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xc0",
     "ClassSize": "0x0",
     "Attributes": []
   },

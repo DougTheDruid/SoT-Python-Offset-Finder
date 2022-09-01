@@ -44,7 +44,7 @@ public:
 class GlitterbeardSlidingDoor: public SlidingDoor
 {
 public:
-	Class EffectBlendControllerComponent*                        DecalBlendComponent;                               // 0x530(0x8)
+	Class EffectBlendControllerComponent*                        DecalBlendComponent;                               // 0x540(0x8)
 };
 
 

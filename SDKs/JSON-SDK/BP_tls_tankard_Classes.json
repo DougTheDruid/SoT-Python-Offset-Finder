@@ -62,7 +62,28 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_tls_tankard_s7_01_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_tls_tankard_s5_01_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_tls_tankard_hwm_01_a_v02_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_tls_tankard_cre_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x120",
     "InheritedSize": "0x120",
@@ -77,6 +98,13 @@
     "Attributes": []
   },
   "BP_tls_tankard_wth_01_a_v01_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_tls_tankard_bdg_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x120",
     "InheritedSize": "0x120",

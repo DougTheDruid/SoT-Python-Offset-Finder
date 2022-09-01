@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_SmallShip_WindowHatch_C: public SwitchMechanismTrigger
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x558(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x560(0x8)
-	Class StaticMeshComponent*                                   shp_mid_serving_hatch_R_01_a;                      // 0x568(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x570(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x568(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x570(0x8)
+	Class StaticMeshComponent*                                   shp_mid_serving_hatch_R_01_a;                      // 0x578(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x580(0x8)
 };
 
 

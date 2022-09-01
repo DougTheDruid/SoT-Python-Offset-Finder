@@ -1,12 +1,12 @@
 {
-  "wheel_orderofsouls_01_CustomizationDesc_C": {
+  "wheel_orderofsoulsdre_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0xf8",
     "InheritedSize": "0xf8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "wheel_orderofsoulsdre_01_CustomizationDesc_C": {
+  "wheel_orderofsouls_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0xf8",
     "InheritedSize": "0xf8",

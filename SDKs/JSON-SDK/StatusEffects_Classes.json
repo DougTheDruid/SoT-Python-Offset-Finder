@@ -81,58 +81,6 @@
       }
     ]
   },
-  "StatusEffectOverlapZone": {
-    "Super": "Actor",
-    "FullSize": "0x490",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "CollisionMesh",
-        "Type": "Class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "StatusesToApplyOnOverlap",
-        "Type": "TArray<Struct DelayedStatusEffect>",
-        "Size": "0x10",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "StartActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x488"
-      }
-    ]
-  },
-  "DebugStatusEffectOverlapZoneVisualizerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "BoxCollisionDimensions",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "DebugColour",
-        "Type": "Struct Color",
-        "Size": "0x4",
-        "Offset": "0xdc"
-      },
-      {
-        "Name": "VisibleState",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe0"
-      }
-    ]
-  },
   "DebugStatusTicketHolder": {
     "Super": "Actor",
     "FullSize": "0x3d0",
@@ -360,6 +308,20 @@
         "Type": "TArray<Struct ActiveStatusEffect>",
         "Size": "0x10",
         "Offset": "0xf8"
+      }
+    ]
+  },
+  "StatusEffectOverlapZone": {
+    "Super": "SimpleOverlapZone",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x4a0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusesToApplyOnOverlap",
+        "Type": "TArray<Struct DelayedStatusEffect>",
+        "Size": "0x10",
+        "Offset": "0x4a0"
       }
     ]
   },

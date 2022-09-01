@@ -61,6 +61,15 @@ public:
 };
 
 
+// Size 0x48
+struct CompondNodePinDesc
+{
+public:
+	Struct FText                                                 DisplayName;                                       // 0x0(0x38)
+	Struct Guid                                                  PinId;                                             // 0x38(0x10)
+};
+
+
 // Size 0x80
 struct TaleQuestDesc
 {
@@ -379,6 +388,13 @@ struct TaleQuestContextInvalidTelemetryEvent
 public:
 	struct FName                                                 StepType;                                          // 0x0(0x8)
 	struct FName                                                 Tale;                                              // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct QuestVariableAISpawner
+{
+public:
 };
 
 

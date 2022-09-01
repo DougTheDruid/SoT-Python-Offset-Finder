@@ -102,10 +102,10 @@ BP_EmissaryTable_Reapers_01_C:
     Offset: '0x6f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: ToggleName
+  - Name: FeatureName
     Offset: '0x700'
     Size: '0x8'
-    Type: struct FName
+    Type: Struct FeatureFlag
   ClassSize: '0xd0'
   FullSize: '0x708'
   InheritedSize: '0x638'

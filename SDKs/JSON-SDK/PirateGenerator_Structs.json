@@ -22,6 +22,23 @@
       }
     ]
   },
+  "PirateGeneratorAdditionalBakeInfo": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "VFXParticles",
+        "Type": "TArray<class VFXParticles*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VFXSockets",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "PirateDescription": {
     "ClassSize": "0x80",
     "Attributes": [
@@ -168,7 +185,7 @@
     ]
   },
   "WardrobeOutfitResult": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "Meshes",
@@ -187,6 +204,18 @@
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x20"
+      },
+      {
+        "Name": "VFXParticles",
+        "Type": "TArray<class VFXParticles*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "VFXSockets",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x40"
       }
     ]
   },
@@ -623,7 +652,7 @@
     ]
   },
   "Outfit": {
-    "ClassSize": "0x40",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "PartNames",
@@ -648,11 +677,40 @@
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
+      },
+      {
+        "Name": "VFXs",
+        "Type": "TArray<Struct ClothingVFX>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "ClothingVFX": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Sockets",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Slots",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
   "ClothingItem": {
-    "ClassSize": "0x78",
+    "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "Type",
@@ -697,16 +755,22 @@
         "Offset": "0x48"
       },
       {
+        "Name": "VFXs",
+        "Type": "TArray<Struct ClothingVFX>",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
         "Name": "ScalarParameters",
         "Type": "TArray<Struct IPGScalarParameter>",
         "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x68"
       },
       {
         "Name": "MaterialReferences",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
-        "Offset": "0x68"
+        "Offset": "0x78"
       }
     ]
   },
@@ -843,6 +907,23 @@
       {
         "Name": "References",
         "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MeshPatchEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Reference",
+        "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1000,23 +1081,6 @@
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "MeshPatchEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Reference",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },

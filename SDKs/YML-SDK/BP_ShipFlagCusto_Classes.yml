@@ -13,10 +13,10 @@ BP_ShipFlagCustomizationChestInteraction_C:
 BP_ShipFlagCustomizationChest_C:
   Attributes:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x600'
+    Offset: '0x610'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
   ClassSize: '0x8'
-  FullSize: '0x608'
-  InheritedSize: '0x600'
+  FullSize: '0x618'
+  InheritedSize: '0x610'
   Super: ShipFlagCustomizationChest

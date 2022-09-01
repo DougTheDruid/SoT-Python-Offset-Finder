@@ -36,6 +36,13 @@ public:
 
 
 // Size 0x0
+class BP_gmp_telescope_hwm_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_gmp_telescope_wan_01_a_ItemDesc_C: public ItemDesc
 {
 public:

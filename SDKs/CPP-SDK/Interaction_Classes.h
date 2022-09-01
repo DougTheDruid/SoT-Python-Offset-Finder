@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50
+// Size 0x60
 class InteractableComponent: public ActorComponent
 {
 public:
@@ -20,8 +20,9 @@ public:
 	bool                                                         RequiresNotAirborne;                               // 0xfc(0x1)
 	bool                                                         RequiresNotSwimming;                               // 0xfc(0x1)
 	float                                                        InteractionRadius;                                 // 0x100(0x4)
-	Class InteractableArea*                                      InteractableArea;                                  // 0x108(0x8)
-	byte                                                         CurrentInteractionState;                           // 0x110(0x1)
+	TArray<class InteractionPrerequisites*>                      InteractionPrerequisites;                          // 0x108(0x10)
+	Class InteractableArea*                                      InteractableArea;                                  // 0x118(0x8)
+	byte                                                         CurrentInteractionState;                           // 0x120(0x1)
 };
 
 

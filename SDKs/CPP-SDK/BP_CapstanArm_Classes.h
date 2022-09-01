@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_CapstanArm_C: public CapstanArm
 {
 public:
-	Class InteractableComponent*                                 Interactable;                                      // 0x550(0x8)
-	Class SceneComponent*                                        LookAtPos;                                         // 0x558(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x560(0x8)
+	Class SceneComponent*                                        LookAtPos;                                         // 0x568(0x8)
 };
 
 

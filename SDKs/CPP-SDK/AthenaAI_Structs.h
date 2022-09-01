@@ -1518,6 +1518,14 @@ public:
 };
 
 
+// Size 0x8
+struct EventAIAbilityStarted
+{
+public:
+	class                                                        AbilityTypeCategory;                               // 0x0(0x8)
+};
+
+
 // Size 0x1
 struct EventAIVulnerabilityAbilityEnded
 {

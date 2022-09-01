@@ -2,27 +2,27 @@
 # https://github.com/DougTheDruid
 BP_Shopkeeper_C:
   Attributes:
-  - Name: None
-    Offset: '0x680'
-    Size: '0x8'
-    Type: Class CargoRunParticipantComponent*
-  - Name: None
-    Offset: '0x688'
-    Size: '0x8'
-    Type: Class CapsuleComponent*
-  - Name: None
+  - Name: CargoRunParticipant
     Offset: '0x690'
     Size: '0x8'
-    Type: Class NPCDialogComponent*
-  - Name: None
+    Type: Class CargoRunParticipantComponent*
+  - Name: SolidHits
     Offset: '0x698'
     Size: '0x8'
-    Type: Class SkeletalMeshComponent*
-  - Name: None
+    Type: Class CapsuleComponent*
+  - Name: NPCDialog
     Offset: '0x6a0'
+    Size: '0x8'
+    Type: Class NPCDialogComponent*
+  - Name: SkeletalMesh
+    Offset: '0x6a8'
+    Size: '0x8'
+    Type: Class SkeletalMeshComponent*
+  - Name: AnimNotifyWwiseEmitter
+    Offset: '0x6b0'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   ClassSize: '0x28'
-  FullSize: '0x6a8'
-  InheritedSize: '0x680'
+  FullSize: '0x6b8'
+  InheritedSize: '0x690'
   Super: Shopkeeper

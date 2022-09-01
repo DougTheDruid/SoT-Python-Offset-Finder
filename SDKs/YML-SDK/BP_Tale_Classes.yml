@@ -3,17 +3,9 @@
 BP_TaleBook_APiratesLife_C:
   Attributes:
   - Name: Arrow
-    Offset: '0x780'
-    Size: '0x8'
-    Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x788'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
     Offset: '0x790'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class ArrowComponent*
   - Name: TaleSelectionSlot
     Offset: '0x798'
     Size: '0x8'
@@ -30,24 +22,24 @@ BP_TaleBook_APiratesLife_C:
     Offset: '0x7b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7b8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7c0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x38'
-  FullSize: '0x7b8'
-  InheritedSize: '0x780'
+  FullSize: '0x7c8'
+  InheritedSize: '0x790'
   Super: VoyageProposalContainer
 BP_TaleBook_CaptainsOfTheDamned_C:
   Attributes:
   - Name: Arrow
-    Offset: '0x780'
-    Size: '0x8'
-    Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x788'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
     Offset: '0x790'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class ArrowComponent*
   - Name: TaleSelectionSlot
     Offset: '0x798'
     Size: '0x8'
@@ -64,24 +56,24 @@ BP_TaleBook_CaptainsOfTheDamned_C:
     Offset: '0x7b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7b8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7c0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x38'
-  FullSize: '0x7b8'
-  InheritedSize: '0x780'
+  FullSize: '0x7c8'
+  InheritedSize: '0x790'
   Super: VoyageProposalContainer
 BP_TaleBook_DarkBrethren_C:
   Attributes:
   - Name: Arrow
-    Offset: '0x780'
-    Size: '0x8'
-    Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x788'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
     Offset: '0x790'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class ArrowComponent*
   - Name: TaleSelectionSlot
     Offset: '0x798'
     Size: '0x8'
@@ -98,24 +90,24 @@ BP_TaleBook_DarkBrethren_C:
     Offset: '0x7b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7b8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7c0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x38'
-  FullSize: '0x7b8'
-  InheritedSize: '0x780'
+  FullSize: '0x7c8'
+  InheritedSize: '0x790'
   Super: VoyageProposalContainer
 BP_TaleBook_LordsOfTheSea_C:
   Attributes:
   - Name: Arrow
-    Offset: '0x780'
-    Size: '0x8'
-    Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x788'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
     Offset: '0x790'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class ArrowComponent*
   - Name: TaleSelectionSlot
     Offset: '0x798'
     Size: '0x8'
@@ -132,24 +124,24 @@ BP_TaleBook_LordsOfTheSea_C:
     Offset: '0x7b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7b8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7c0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x38'
-  FullSize: '0x7b8'
-  InheritedSize: '0x780'
+  FullSize: '0x7c8'
+  InheritedSize: '0x790'
   Super: VoyageProposalContainer
 BP_TaleBook_SunkenCrystal_C:
   Attributes:
   - Name: Arrow
-    Offset: '0x780'
-    Size: '0x8'
-    Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x788'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
     Offset: '0x790'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class ArrowComponent*
   - Name: TaleSelectionSlot
     Offset: '0x798'
     Size: '0x8'
@@ -166,7 +158,15 @@ BP_TaleBook_SunkenCrystal_C:
     Offset: '0x7b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7b8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: TaleSelectionSlot
+    Offset: '0x7c0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x38'
-  FullSize: '0x7b8'
-  InheritedSize: '0x780'
+  FullSize: '0x7c8'
+  InheritedSize: '0x790'
   Super: VoyageProposalContainer

@@ -27,7 +27,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_tls_speaking_trumpet_meg_01_a_ItemDesc_C": {
+  "BP_tls_speaking_trumpet_hwm_01_a_v02_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_tls_speaking_trumpet_bdg_01_a_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x120",
     "InheritedSize": "0x120",

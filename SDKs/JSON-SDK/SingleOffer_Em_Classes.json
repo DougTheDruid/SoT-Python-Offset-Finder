@@ -55,6 +55,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_Emote_Flirt_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_Emote_Drama_Desc_C": {
     "Super": "EmoteDesc",
     "FullSize": "0x100",
@@ -111,6 +118,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BP_Emote_Confused1_Desc_C": {
+    "Super": "EmoteDesc",
+    "FullSize": "0x100",
+    "InheritedSize": "0x100",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_Emote_Backflip_Desc_C": {
     "Super": "EmoteDesc",
     "FullSize": "0x100",
@@ -139,7 +153,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_Emote_CastawayFire_Desc_C": {
+  "BP_Emote_Castaway_Desc_C": {
     "Super": "EmoteDesc",
     "FullSize": "0x100",
     "InheritedSize": "0x100",

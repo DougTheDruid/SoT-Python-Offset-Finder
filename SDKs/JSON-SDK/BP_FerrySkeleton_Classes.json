@@ -1,12 +1,12 @@
 {
-  "BP_FerrySkeleton_01_b_TrinketDesc_C": {
+  "BP_FerrySkeleton_01_d_TrinketDesc_C": {
     "Super": "TrinketDesc",
     "FullSize": "0xf8",
     "InheritedSize": "0xf8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_FerrySkeleton_01_d_TrinketDesc_C": {
+  "BP_FerrySkeleton_01_b_TrinketDesc_C": {
     "Super": "TrinketDesc",
     "FullSize": "0xf8",
     "InheritedSize": "0xf8",

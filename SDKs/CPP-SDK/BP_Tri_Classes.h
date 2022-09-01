@@ -7,20 +7,11 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-class BP_Trinket_XMarksPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
-{
-public:
-	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
-};
-
-
-// Size 0x10
 class BP_Trinket_StormPainting_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
 };
 
 
@@ -28,8 +19,8 @@ public:
 class BP_Trinket_SirenQueenPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
 };
 
 
@@ -37,8 +28,8 @@ public:
 class BP_Trinket_ShipwreckPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
 };
 
 
@@ -46,8 +37,8 @@ public:
 class BP_Trinket_MadamOPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
 };
 
 
@@ -55,8 +46,8 @@ public:
 class BP_Trinket_GoldHoarderPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cap_painting_01_b;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   cap_painting_01_b;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
 };
 
 
@@ -64,8 +55,8 @@ public:
 class BP_Trinket_FortPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
 };
 
 
@@ -73,8 +64,45 @@ public:
 class BP_Trinket_FlameheartJrPainting_01_c_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x400(0x8)
+	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
+};
+
+
+// Size 0x10
+class BP_Trinket_XMarksPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+	Class StaticMeshComponent*                                   cap_painting_01_e;                                 // 0x408(0x8)
+	Class StaticMeshComponent*                                   cap_frame_01_a;                                    // 0x410(0x8)
+};
+
+
+// Size 0x10
+class BP_Trinket_TavernPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+};
+
+
+// Size 0x10
+class BP_Trinket_SkeletonPainting_01_c_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+};
+
+
+// Size 0x10
+class BP_Trinket_SeaFortPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
+};
+
+
+// Size 0x10
+class BP_Trinket_AnimalsPainting_01_d_C: public BP_Trinket_HangingSinglePoint_C
+{
+public:
 };
 
 

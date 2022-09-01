@@ -6,38 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xd4
+// Size 0x60
 class BP_CaptainsBookcase_01_C: public CaptainsBookcase
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x658(0x8)
-	Class StaticMeshComponent*                                   OrderOfSouls_ScrollStack;                          // 0x660(0x8)
-	Class StaticMeshComponent*                                   MerchantsAliance_ScrollStack;                      // 0x668(0x8)
-	Class StaticMeshComponent*                                   Mercenary_ScrollStack;                             // 0x670(0x8)
-	Class StaticMeshComponent*                                   Legendary_ScrollStack;                             // 0x678(0x8)
-	Class StaticMeshComponent*                                   GoldHoarder_ScrollStack;                           // 0x680(0x8)
-	Class StaticMeshComponent*                                   gmp_key_pirateLegends_03;                          // 0x688(0x8)
-	Class StaticMeshComponent*                                   gmp_key_pirateLegends_02;                          // 0x690(0x8)
-	Class StaticMeshComponent*                                   gmp_key_pirateLegends_01;                          // 0x698(0x8)
-	Class StaticMeshComponent*                                   Plant;                                             // 0x6a0(0x8)
-	Class StaticMeshComponent*                                   coin_02;                                           // 0x6a8(0x8)
-	Class StaticMeshComponent*                                   coin_03;                                           // 0x6b0(0x8)
-	Class StaticMeshComponent*                                   coin_04;                                           // 0x6b8(0x8)
-	Class StaticMeshComponent*                                   bottle;                                            // 0x6c0(0x8)
-	Class StaticMeshComponent*                                   coin_05;                                           // 0x6c8(0x8)
-	Class StaticMeshComponent*                                   coin_06;                                           // 0x6d0(0x8)
-	Class StaticMeshComponent*                                   skull;                                             // 0x6d8(0x8)
-	Class StaticMeshComponent*                                   dagger;                                            // 0x6e0(0x8)
-	Class StaticMeshComponent*                                   coin_01;                                           // 0x6e8(0x8)
-	Class StaticMeshComponent*                                   Bookcase;                                          // 0x6f0(0x8)
-	class                                                        Company_GH;                                        // 0x6f8(0x8)
-	class                                                        Company_MA;                                        // 0x700(0x8)
-	class                                                        Company_OoS;                                       // 0x708(0x8)
-	class                                                        Company_Leg;                                       // 0x710(0x8)
-	class                                                        Company_Merc;                                      // 0x718(0x8)
-	float                                                        ThresholdOneScroll;                                // 0x720(0x4)
-	float                                                        ThresholdTwoScrolls;                               // 0x724(0x4)
-	float                                                        ThresholdThreeScrolls;                             // 0x728(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x668(0x8)
+	Class StaticMeshComponent*                                   OrderOfSouls_ScrollStack;                          // 0x670(0x8)
+	Class StaticMeshComponent*                                   MerchantsAliance_ScrollStack;                      // 0x678(0x8)
+	Class StaticMeshComponent*                                   Mercenary_ScrollStack;                             // 0x680(0x8)
+	Class StaticMeshComponent*                                   Legendary_ScrollStack;                             // 0x688(0x8)
+	Class StaticMeshComponent*                                   GoldHoarder_ScrollStack;                           // 0x690(0x8)
+	Class StaticMeshComponent*                                   MergedBookcaseAndDressing;                         // 0x698(0x8)
+	class                                                        Company_GH;                                        // 0x6a0(0x8)
+	class                                                        Company_MA;                                        // 0x6a8(0x8)
+	class                                                        Company_OoS;                                       // 0x6b0(0x8)
+	class                                                        Company_Leg;                                       // 0x6b8(0x8)
+	class                                                        Company_Merc;                                      // 0x6c0(0x8)
 };
 
 

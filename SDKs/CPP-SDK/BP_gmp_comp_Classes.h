@@ -57,6 +57,13 @@ public:
 
 
 // Size 0x0
+class BP_gmp_compass_hwm_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_gmp_compass_bdg_01_a_ItemDesc_C: public ItemDesc
 {
 public:

@@ -82,7 +82,11 @@ BP_Crest_C:
     Offset: '0x550'
     Size: '0x4'
     Type: int
-  ClassSize: '0xf4'
-  FullSize: '0x554'
+  - Name: FeatureName
+    Offset: '0x554'
+    Size: '0x8'
+    Type: Struct FeatureFlag
+  ClassSize: '0xfc'
+  FullSize: '0x55c'
   InheritedSize: '0x460'
   Super: Crest

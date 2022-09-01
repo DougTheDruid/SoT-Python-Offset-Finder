@@ -461,14 +461,16 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x68
 struct AthenaPlayerCharacterModelSwap
 {
 public:
 	Class SkeletalMesh*                                          FirstPersonMesh;                                   // 0x0(0x8)
 	class                                                        FirstPersonAnimSetDataId;                          // 0x8(0x8)
-	Class SkeletalMesh*                                          ThirdPersonMesh;                                   // 0x10(0x8)
-	class                                                        ThirdPersonAnimSetDataId;                          // 0x18(0x8)
+	Struct PirateGeneratorAdditionalBakeInfo                     FirstPersonAdditionalBakeInfo;                     // 0x10(0x20)
+	Class SkeletalMesh*                                          ThirdPersonMesh;                                   // 0x30(0x8)
+	class                                                        ThirdPersonAnimSetDataId;                          // 0x38(0x8)
+	Struct PirateGeneratorAdditionalBakeInfo                     ThirdPersonAdditionalBakeInfo;                     // 0x40(0x20)
 };
 
 
@@ -2239,7 +2241,7 @@ public:
 };
 
 
-// Size 0xc8
+// Size 0xd0
 struct AudioDataTelemetryFragment
 {
 public:
@@ -2252,18 +2254,19 @@ public:
 	TArray<UInt32 StreamReadFailedIDs>                           StreamReadFailedIDs;                               // 0x80(0x10)
 	TArray<Struct SoundBankFailureTelemetryEntry>                FailedToLoadBankIDs;                               // 0x90(0x10)
 	float                                                        AverageIOBytesPerSecondRead;                       // 0xac(0x4)
-	Struct FrameDurationDataTelemetryFragment                    FrameKickoffTimesInMs;                             // 0xb0(0xc)
-	Struct FrameDurationDataTelemetryFragment                    UpdateDurationsInMs;                               // 0xbc(0xc)
+	Struct FrameDurationDataTelemetryFragment                    FrameKickoffTimesInMs;                             // 0xb0(0x10)
+	Struct FrameDurationDataTelemetryFragment                    UpdateDurationsInMs;                               // 0xc0(0x10)
 };
 
 
-// Size 0xc
+// Size 0x10
 struct FrameDurationDataTelemetryFragment
 {
 public:
 	float                                                        Min;                                               // 0x0(0x4)
 	float                                                        Max;                                               // 0x4(0x4)
 	float                                                        Average;                                           // 0x8(0x4)
+	float                                                        StdDeviation;                                      // 0xc(0x4)
 };
 
 
@@ -2413,6 +2416,7 @@ public:
 	bool                                                         IsInAlliance;                                      // 0x34(0x1)
 	bool                                                         IsInFaction;                                       // 0x35(0x1)
 	bool                                                         IsFactionMaxRank;                                  // 0x36(0x1)
+	bool                                                         IsInvadingShip;                                    // 0x37(0x1)
 	struct FName                                                 CrewFactionName;                                   // 0x38(0x8)
 	byte                                                         ReapersMarkLevel;                                  // 0x40(0x1)
 	byte                                                         EmissaryLevel;                                     // 0x41(0x1)
@@ -3495,10 +3499,10 @@ public:
 
 
 // Size 0x10
-struct MaxFactionStreakIcon
+struct FactionStreakIcon
 {
 public:
-	Class Texture*                                               FactionMaxStreakIcon;                              // 0x0(0x8)
+	Class Texture*                                               FactionStreakIcon;                                 // 0x0(0x8)
 	class                                                        Faction;                                           // 0x8(0x8)
 };
 
@@ -4852,12 +4856,23 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x38
 struct CrewShipPersistentData
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	Class CrewShipManifest*                                      CrewShipManifest;                                  // 0x10(0x8)
+	TArray<Struct PirateIdentity>                                PiratesWhoHaveSpottedCrewsShip;                    // 0x18(0x10)
+	TArray<Struct Guid>                                          CrewsWhoHaveSpottedCrewsShip;                      // 0x28(0x10)
+};
+
+
+// Size 0x78
+struct PirateIdentity
+{
+public:
+	Struct UniqueNetIdRepl                                       UserId;                                            // 0x0(0x18)
+	Struct FString                                               PirateId;                                          // 0x18(0x10)
 };
 
 
@@ -5719,15 +5734,6 @@ struct EventInactivityDetectionActionPerformed
 public:
 	Struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
 	struct FName                                                 ActionName;                                        // 0x78(0x8)
-};
-
-
-// Size 0x78
-struct PirateIdentity
-{
-public:
-	Struct UniqueNetIdRepl                                       UserId;                                            // 0x0(0x18)
-	Struct FString                                               PirateId;                                          // 0x18(0x10)
 };
 
 
@@ -7741,12 +7747,12 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct PetSpawnDefinition
 {
 public:
 	class                                                        PetDesc;                                           // 0x0(0x8)
-	Struct PetCustomisation                                      PetCustomisation;                                  // 0x8(0x18)
+	Struct PetCustomisation                                      PetCustomisation;                                  // 0x8(0x28)
 };
 
 
@@ -8314,14 +8320,6 @@ struct PlayerEntitlementsCompact
 public:
 	byte                                                         Status;                                            // 0x0(0x1)
 	TArray<Class Loose>                                          Loose;                                             // 0x28(0x10)
-};
-
-
-// Size 0x30
-struct EntitlementIdInfo
-{
-public:
-	Struct FString                                               EntitlementId;                                     // 0x20(0x10)
 };
 
 
@@ -10267,13 +10265,6 @@ struct LoadoutCacheEntry
 public:
 	Struct FString                                               PirateId;                                          // 0x0(0x10)
 	Struct Loadout                                               Loadout;                                           // 0x10(0x48)
-};
-
-
-// Size 0x20
-struct QuestVariableAISpawner
-{
-public:
 };
 
 
@@ -13382,14 +13373,6 @@ public:
 
 
 // Size 0x18
-struct ServerAsyncLoadingCompleteAckNetworkEvent
-{
-public:
-	byte                                                         Reason;                                            // 0x10(0x1)
-};
-
-
-// Size 0x18
 struct ServerTeleportCompleteAckNetworkEvent
 {
 public:
@@ -13681,6 +13664,33 @@ struct MountedWeaponFireRejectionRpc
 {
 public:
 	Class Object*                                                MountedWeaponObject;                               // 0x10(0x8)
+};
+
+
+// Size 0x1
+struct ReputationMenuClosedEvent
+{
+public:
+};
+
+
+// Size 0x18
+struct OpenReputationMenuEvent
+{
+public:
+	byte                                                         NavigationAction;                                  // 0x0(0x1)
+	Struct FString                                               CompanyId;                                         // 0x8(0x10)
+};
+
+
+// Size 0x38
+struct OpenReputationMenuTelemetryEvent
+{
+public:
+	Struct FString                                               ShopLocation;                                      // 0x0(0x10)
+	Struct FString                                               VisitStartDate;                                    // 0x10(0x10)
+	byte                                                         NavigationAction;                                  // 0x24(0x1)
+	Struct FString                                               CompanyId;                                         // 0x28(0x10)
 };
 
 
@@ -16164,21 +16174,6 @@ public:
 };
 
 
-// Size 0x1
-struct AllianceJoinStatusChangedEvent
-{
-public:
-};
-
-
-// Size 0x18
-struct AllianceStatusChangedNetworkEvent
-{
-public:
-	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x10(0x8)
-};
-
-
 // Size 0x20
 struct AllianceDisbandedTelemetryEvent
 {
@@ -16585,6 +16580,39 @@ struct MatineeActorPlayNetworkEvent
 {
 public:
 	Class MatineeActor*                                          MatineeActor;                                      // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct VideoSubtitleEvent
+{
+public:
+	Struct FString                                               SubtitleString;                                    // 0x0(0x10)
+	double                                                       SubtitleDuration;                                  // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct VideoPlaybackResetEvent
+{
+public:
+	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct VideoPlaybackPauseEvent
+{
+public:
+	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct VideoPlaybackStartEvent
+{
+public:
+	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 };
 
 
@@ -17610,6 +17638,32 @@ public:
 };
 
 
+// Size 0xe0
+struct FactionLeaveFightRewardMessage
+{
+public:
+	Struct RewardRequestCrew                                     Recipient;                                         // 0x0(0xc8)
+	Struct Guid                                                  RequestID;                                         // 0xc8(0x10)
+	int                                                          SandOfFateGoldLevel;                               // 0xd8(0x4)
+	byte                                                         PlayMode;                                          // 0xdc(0x1)
+	byte                                                         PlayModeVariant;                                   // 0xdd(0x1)
+};
+
+
+// Size 0xc8
+struct RewardRequestCrew
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	Struct Guid                                                  ShipId;                                            // 0x10(0x10)
+	TArray<Struct PirateIdentity>                                Pirates;                                           // 0x20(0x10)
+	struct FName                                                 EmissaryAffiliation;                               // 0x30(0x8)
+	struct FName                                                 FactionAffiliation;                                // 0x3c(0x8)
+	byte                                                         FactionDefenderLootLevel;                          // 0x4c(0x1)
+	Struct PirateIdentity                                        Captain;                                           // 0x50(0x78)
+};
+
+
 // Size 0x128
 struct AllianceRewardRequestMessage
 {
@@ -17630,20 +17684,6 @@ public:
 	bool                                                         DontRewardSeasonXp;                                // 0x125(0x1)
 	bool                                                         DontRewardAllegiance;                              // 0x126(0x1)
 	bool                                                         SkipXpToAllegianceMultiplier;                      // 0x127(0x1)
-};
-
-
-// Size 0xc8
-struct RewardRequestCrew
-{
-public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct Guid                                                  ShipId;                                            // 0x10(0x10)
-	TArray<Struct PirateIdentity>                                Pirates;                                           // 0x20(0x10)
-	struct FName                                                 EmissaryAffiliation;                               // 0x30(0x8)
-	struct FName                                                 FactionAffiliation;                                // 0x3c(0x8)
-	byte                                                         FactionDefenderLootLevel;                          // 0x4c(0x1)
-	Struct PirateIdentity                                        Captain;                                           // 0x50(0x78)
 };
 
 
@@ -18115,6 +18155,15 @@ struct ClientInputBlockedTelemetryEvent
 {
 public:
 	Struct FString                                               BlockedKey;                                        // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct ClientInfoTelemetryEvent
+{
+public:
+	Struct FString                                               OSVersion;                                         // 0x0(0x10)
+	Struct FString                                               OSSubVersion;                                      // 0x10(0x10)
 };
 
 
@@ -19886,7 +19935,7 @@ public:
 };
 
 
-// Size 0x108
+// Size 0x110
 struct CompanyReputationSummary
 {
 public:
@@ -19894,7 +19943,8 @@ public:
 	Struct CappedCount                                           Commendations;                                     // 0xe8(0x8)
 	Struct CappedCount                                           Items;                                             // 0xf0(0x8)
 	Struct CappedCount                                           Promotions;                                        // 0xf8(0x8)
-	Struct CappedCount                                           Titles;                                            // 0x100(0x8)
+	Struct CappedCount                                           FactionFigureheads;                                // 0x100(0x8)
+	Struct CappedCount                                           Titles;                                            // 0x108(0x8)
 };
 
 
@@ -20174,10 +20224,11 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x18
 struct BoxedRpcDiscardTinVoyage
 {
 public:
+	int                                                          IndexOfVoyageToDiscard;                            // 0x10(0x4)
 };
 
 
@@ -20854,12 +20905,13 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct VoyageProposalVoteSlotUpdatedEvent
 {
 public:
 	Struct ProposedVoyageEntry                                   Proposal;                                          // 0x0(0x18)
 	int                                                          VoteIndex;                                         // 0x18(0x4)
+	Struct FString                                               ShipName;                                          // 0x20(0x10)
 };
 
 
@@ -21502,8 +21554,8 @@ struct AccoladeProgressId
 {
 public:
 	Struct Guid                                                  GoalId;                                            // 0x0(0x10)
-	Struct Guid                                                  SecondaryId;                                       // 0x10(0x10)
-	int                                                          Level;                                             // 0x20(0x4)
+	Struct Guid                                                  ScheduleId;                                        // 0x10(0x10)
+	int                                                          CycleIndex;                                        // 0x20(0x4)
 };
 
 
@@ -21858,6 +21910,14 @@ public:
 	float                                                        ShipY;                                             // 0x4(0x4)
 	TArray<Str CrewPirateIds>                                    CrewPirateIds;                                     // 0x8(0x10)
 	TArray<Str CrewUserIds>                                      CrewUserIds;                                       // 0x18(0x10)
+};
+
+
+// Size 0x10
+struct CaptaincyRequestStartedSessionModel
+{
+public:
+	Struct FString                                               ShipType;                                          // 0x0(0x10)
 };
 
 
@@ -22681,7 +22741,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x58
 struct MeshRegistration
 {
 public:
@@ -22700,15 +22760,19 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x20
 struct MeshMemoryConstraintTelemetryFragment
 {
 public:
 	TArray<Struct MeshMemoryConstraintTelemetryBudgetFragment>   BudgetData;                                        // 0x0(0x10)
+	int                                                          MemoryUsedInBytes;                                 // 0x10(0x4)
+	int                                                          MemoryUsedOfNoFallbackMeshesInBytes;               // 0x14(0x4)
+	int                                                          MaximumMemoryUsedInBytes;                          // 0x18(0x4)
+	int                                                          ThresholdScale;                                    // 0x1c(0x4)
 };
 
 
-// Size 0x38
+// Size 0x50
 struct MeshMemoryConstraintTelemetryBudgetFragment
 {
 public:
@@ -22722,6 +22786,7 @@ public:
 	int                                                          NumUniqueNoFallbackMeshes;                         // 0x28(0x4)
 	int                                                          NumTotalNoFallbackMeshes;                          // 0x2c(0x4)
 	int                                                          ThresholdScale;                                    // 0x30(0x4)
+	Struct JsonObjectWrapper                                     RegisteredMeshes;                                  // 0x38(0x18)
 };
 
 
@@ -23020,6 +23085,14 @@ public:
 };
 
 
+// Size 0x18
+struct ServerAsyncLoadingCompleteAckNetworkEvent
+{
+public:
+	byte                                                         Reason;                                            // 0x10(0x1)
+};
+
+
 // Size 0x10
 struct MaterialInformationAudioData
 {
@@ -23139,9 +23212,10 @@ struct ConditionalStat
 public:
 	Struct PlayerStat                                            Stat;                                              // 0x0(0x4)
 	byte                                                         StatType;                                          // 0x4(0x1)
-	Struct PlayerTrackedObjective                                TrackedObjective;                                  // 0x8(0x10)
-	byte                                                         TrackedObjectiveType;                              // 0x18(0x1)
-	byte                                                         TrackedObjectiveTargetType;                        // 0x19(0x1)
+	float                                                        Range;                                             // 0x8(0x4)
+	Struct PlayerTrackedObjective                                TrackedObjective;                                  // 0xc(0x10)
+	byte                                                         TrackedObjectiveType;                              // 0x1c(0x1)
+	byte                                                         TrackedObjectiveTargetType;                        // 0x1d(0x1)
 	TArray<class Conditions*>                                    Conditions;                                        // 0x20(0x10)
 };
 
@@ -23171,6 +23245,22 @@ public:
 
 
 // Size 0x28
+struct CursedCrewStatEvent
+{
+public:
+	Class Object*                                                ObjectOfInterest;                                  // 0x18(0x8)
+};
+
+
+// Size 0x28
+struct AllPlayersInRangeStatEvent
+{
+public:
+	Class Object*                                                ObjectOfInterest;                                  // 0x18(0x8)
+};
+
+
+// Size 0x28
 struct CrewStatEvent
 {
 public:
@@ -23183,6 +23273,15 @@ struct StatEvent
 {
 public:
 	Class Object*                                                ObjectOfInterest;                                  // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct CompanyConditionalStatsTriggerType
+{
+public:
+	class                                                        Company;                                           // 0x0(0x8)
+	class                                                        ConditionalStatsTriggerType;                       // 0x8(0x8)
 };
 
 
@@ -23290,6 +23389,936 @@ public:
 };
 
 
+// Size 0x8
+struct CameraSpringArmPlayModeParameters
+{
+public:
+	byte                                                         PlayMode;                                          // 0x0(0x1)
+	float                                                        CameraPullbackSpeed;                               // 0x4(0x4)
+};
+
+
+// Size 0xa0
+struct LookAtOffset
+{
+public:
+	float                                                        LookAtPitchRate;                                   // 0x0(0x4)
+	float                                                        LookAtYawRate;                                     // 0x4(0x4)
+	float                                                        LookAtYawRawScale;                                 // 0x8(0x4)
+	float                                                        LookAtPitchRawScale;                               // 0xc(0x4)
+};
+
+
+// Size 0x30
+struct StartCameraFadeRpc
+{
+public:
+	float                                                        FromAlpha;                                         // 0x10(0x4)
+	float                                                        ToAlpha;                                           // 0x14(0x4)
+	float                                                        FadeTimeInSeconds;                                 // 0x18(0x4)
+	Struct LinearColor                                           FadeColour;                                        // 0x1c(0x10)
+	bool                                                         ShouldFadeAudio;                                   // 0x2c(0x1)
+	bool                                                         HoldFadeWhenFinished;                              // 0x2d(0x1)
+};
+
+
+// Size 0x30
+struct WalletTransactionRequestRemoteServiceResult
+{
+public:
+};
+
+
+// Size 0x80
+struct CinematicQuestEvent
+{
+public:
+	Struct FText                                                 Message;                                           // 0x0(0x38)
+	Struct FText                                                 Header;                                            // 0x38(0x38)
+	struct FName                                                 Tag;                                               // 0x70(0x8)
+	bool                                                         DisableMusic;                                      // 0x78(0x1)
+};
+
+
+// Size 0x90
+struct CinematicQuestNetworkEvent
+{
+public:
+	Struct CinematicQuestEvent                                   BannerData;                                        // 0x10(0x80)
+};
+
+
+// Size 0x1
+struct PossessionsChestTypeSelectedEvent
+{
+public:
+	byte                                                         PossessionsChestType;                              // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct PossessionsChestClosedEvent
+{
+public:
+	byte                                                         PossessionsChestType;                              // 0x0(0x1)
+};
+
+
+// Size 0x20
+struct SaveToLoadoutCosts
+{
+public:
+	TArray<Struct SaveToLoadoutItemCost>                         CategoryCosts;                                     // 0x0(0x10)
+	TArray<Struct SaveToLoadoutItemCost>                         EntitlementCosts;                                  // 0x10(0x10)
+};
+
+
+// Size 0x28
+struct SaveToLoadoutItemCost
+{
+public:
+	Struct FString                                               Name;                                              // 0x0(0x10)
+	Struct FString                                               Currency;                                          // 0x10(0x10)
+	int                                                          Amount;                                            // 0x20(0x4)
+};
+
+
+// Size 0x4
+struct PlayModeVariantResponse
+{
+public:
+	int                                                          Variant;                                           // 0x0(0x4)
+};
+
+
+// Size 0x1
+struct RequestPlayModeVariant
+{
+public:
+};
+
+
+// Size 0x8
+struct EventPopUpQueueServicePaused
+{
+public:
+	bool                                                         Paused;                                            // 0x0(0x1)
+	int                                                          Reason;                                            // 0x4(0x4)
+};
+
+
+// Size 0x4
+struct SetArenaIslandBanners
+{
+public:
+	int                                                          Value;                                             // 0x0(0x4)
+};
+
+
+// Size 0x4
+struct SetAdventureIslandBanners
+{
+public:
+	int                                                          Value;                                             // 0x0(0x4)
+};
+
+
+// Size 0x1
+struct NarrationStateRequestEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct NarrationStateEvent
+{
+public:
+	bool                                                         IsEnabled;                                         // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct NarrationRequestEvent
+{
+public:
+	Struct FString                                               Text;                                              // 0x0(0x10)
+};
+
+
+// Size 0x4
+struct SetToastHoldDurationMultiplier
+{
+public:
+	float                                                        Multiplier;                                        // 0x0(0x4)
+};
+
+
+// Size 0x1
+struct SetNarrateToasts
+{
+public:
+	bool                                                         IsEnabled;                                         // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct SetScreenSpaceTooltips
+{
+public:
+	bool                                                         IsEnabled;                                         // 0x0(0x1)
+};
+
+
+// Size 0x4
+struct SetNotificationScale
+{
+public:
+	float                                                        ScaleValue;                                        // 0x0(0x4)
+};
+
+
+// Size 0x1
+struct SendMarketingOptInResponse
+{
+public:
+	bool                                                         OptedIn;                                           // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct AccessibiltySettingsModalEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct RequestShowMarketingOptInPopUp
+{
+public:
+};
+
+
+// Size 0x10
+struct RequestShowGamerCard
+{
+public:
+	Struct FString                                               XUID;                                              // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct EventSendCapturedKeybind
+{
+public:
+	Struct FString                                               CapturedKey;                                       // 0x0(0x10)
+};
+
+
+// Size 0x1
+struct EventKeybindCaptureCancelRequest
+{
+public:
+};
+
+
+// Size 0x1
+struct EventKeybindCaptureRequest
+{
+public:
+	byte                                                         ControllerTypeKeyToExpect;                         // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventFrontendSetSceneVisibility
+{
+public:
+	bool                                                         Visible;                                           // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventInGameUISetMigrationMode
+{
+public:
+	bool                                                         MigrationModeEnabled;                              // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventToggleNonCrewVoiceMuteState
+{
+public:
+};
+
+
+// Size 0x1
+struct EventToggleScrambleGamertags
+{
+public:
+};
+
+
+// Size 0x1
+struct EventToggleCrewNameplates
+{
+public:
+};
+
+
+// Size 0x1
+struct EventToggleOtherCrewNameplates
+{
+public:
+};
+
+
+// Size 0x1
+struct EventTogglePhotoMode
+{
+public:
+};
+
+
+// Size 0x1
+struct EventInGameUISetPhotoMode
+{
+public:
+	bool                                                         PhotoModeEnabled;                                  // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct EventHUDSetMousePosition
+{
+public:
+	Struct Vector2D                                              Position;                                          // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventHUDMouseCursorCentre
+{
+public:
+};
+
+
+// Size 0x1
+struct EventHUDMouseFocusRequest
+{
+public:
+	bool                                                         RequestFocus;                                      // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventHUDScriptingReady
+{
+public:
+};
+
+
+// Size 0x10
+struct EventShipNameTextboxTextFromVirtualKeyboard
+{
+public:
+	Struct FString                                               Text;                                              // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct TextboxTextFromVirtualKeyboard
+{
+public:
+	Struct FString                                               Text;                                              // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct EventPetNameTextboxTextFromVirtualKeyboard
+{
+public:
+	Struct FString                                               Text;                                              // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct EventChatboxTextFromVirtualKeyboard
+{
+public:
+	Struct FString                                               Text;                                              // 0x0(0x10)
+};
+
+
+// Size 0x1
+struct EventPlayerOpenChatbox
+{
+public:
+};
+
+
+// Size 0x1
+struct EventPlayerOpenQuickMenu
+{
+public:
+};
+
+
+// Size 0x1
+struct NavigateToMenuEvent
+{
+public:
+	byte                                                         Action;                                            // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventPlayerOpenEscapeMenu
+{
+public:
+};
+
+
+// Size 0x1
+struct EventInGameBlurRequest
+{
+public:
+	bool                                                         ShouldBlurGame;                                    // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventShipNameTextboxFocusRequest
+{
+public:
+	bool                                                         ShouldFocusShipNameTextbox;                        // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct TextboxFocusRequest
+{
+public:
+	bool                                                         ShouldFocusTextbox;                                // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventPetNameTextboxFocusRequest
+{
+public:
+	bool                                                         ShouldFocusPetNameTextbox;                         // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventChatboxFocusRequest
+{
+public:
+	bool                                                         ShouldFocusChatbox;                                // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventInGameUIFocusRequest
+{
+public:
+	bool                                                         ShouldFocusUI;                                     // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct UIWhatsNewAvailableArticlesEvent
+{
+public:
+	TArray<Str Articles>                                         Articles;                                          // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct UIAdventuresDataErrorEvent
+{
+public:
+	Struct FString                                               ErrorMessage;                                      // 0x0(0x10)
+	Struct FString                                               ErrorStack;                                        // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct UILiveCampaignDataErrorEvent
+{
+public:
+	Struct FString                                               ErrorMessage;                                      // 0x0(0x10)
+	Struct FString                                               ErrorStack;                                        // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct UISeasonsDataErrorEvent
+{
+public:
+	Struct FString                                               ErrorMessage;                                      // 0x0(0x10)
+	Struct FString                                               ErrorStack;                                        // 0x10(0x10)
+};
+
+
+// Size 0x60
+struct UIPremiumStoreItemInteractEvent
+{
+public:
+	Struct FString                                               CurrencyUsed;                                      // 0x0(0x10)
+	Struct FString                                               EngagementOutcome;                                 // 0x10(0x10)
+	Struct FString                                               ItemCost;                                          // 0x20(0x10)
+	Struct FString                                               ItemName;                                          // 0x30(0x10)
+	Struct FString                                               PageName;                                          // 0x40(0x10)
+	Struct FString                                               SessionId;                                         // 0x50(0x10)
+};
+
+
+// Size 0x38
+struct UIPremiumStorePanelHighlightEvent
+{
+public:
+	Struct FString                                               CurrentPage;                                       // 0x0(0x10)
+	Struct FString                                               CurrentPanel;                                      // 0x10(0x10)
+	Struct FString                                               SessionId;                                         // 0x20(0x10)
+	float                                                        TimeOnPanel;                                       // 0x30(0x4)
+};
+
+
+// Size 0x48
+struct UIPremiumStorePageTransitionEvent
+{
+public:
+	Struct FString                                               CurrentPage;                                       // 0x0(0x10)
+	Struct FString                                               PreviousHighlight;                                 // 0x10(0x10)
+	Struct FString                                               PreviousPage;                                      // 0x20(0x10)
+	Struct FString                                               SessionId;                                         // 0x30(0x10)
+	float                                                        TimeOnPreviousPage;                                // 0x40(0x4)
+};
+
+
+// Size 0x18
+struct UIPremiumStoreOpenEvent
+{
+public:
+	bool                                                         IsFrontend;                                        // 0x0(0x1)
+	Struct FString                                               SessionId;                                         // 0x8(0x10)
+};
+
+
+// Size 0x20
+struct UIScreenTransitionEvent
+{
+public:
+	Struct FString                                               CurrentScreen;                                     // 0x0(0x10)
+	Struct FString                                               PreviousScreen;                                    // 0x10(0x10)
+};
+
+
+// Size 0x1
+struct OnHUDDestruction
+{
+public:
+};
+
+
+// Size 0x1e8
+struct OfferPurchasedEvent
+{
+public:
+	Struct ShopOffer                                             Purchase;                                          // 0x0(0x1e0)
+	struct FName                                                 NPCName;                                           // 0x1e0(0x8)
+};
+
+
+// Size 0x18
+struct LaunchableProjectileDamageEvent
+{
+public:
+	Class Actor*                                                 Instigator;                                        // 0x0(0x8)
+	Class Actor*                                                 ProjectileActor;                                   // 0x8(0x8)
+	Class Actor*                                                 ActorHit;                                          // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct DamageableVulnerabilityPair
+{
+public:
+	class                                                        DamagerType;                                       // 0x0(0x8)
+	float                                                        DamageMultiplier;                                  // 0x8(0x4)
+};
+
+
+// Size 0x30
+struct DamageInstance
+{
+public:
+	Struct Guid                                                  AttackId;                                          // 0x0(0x10)
+	Class Actor*                                                 DirectInstigator;                                  // 0x10(0x8)
+	Class Actor*                                                 RootInstigator;                                    // 0x18(0x8)
+	Class Controller*                                            RootInstigatorController;                          // 0x20(0x8)
+	float                                                        Amount;                                            // 0x28(0x4)
+	byte                                                         Reason;                                            // 0x2c(0x1)
+};
+
+
+// Size 0x4
+struct EventHealthStageChanged
+{
+public:
+	int                                                          CurrentHealthStage;                                // 0x0(0x4)
+};
+
+
+// Size 0x1
+struct EventRecoveredMaxHealth
+{
+public:
+};
+
+
+// Size 0x1
+struct EventHealthChangeContinuousEnd
+{
+public:
+};
+
+
+// Size 0x8
+struct EventHealthChangeContinuousStart
+{
+public:
+	float                                                        CurrentHealth;                                     // 0x0(0x4)
+	float                                                        ChangeRate;                                        // 0x4(0x4)
+};
+
+
+// Size 0x1
+struct EventHealthChangeAllContinuousChangesRemoved
+{
+public:
+};
+
+
+// Size 0x1
+struct EventHealthChangeContinuousRemoved
+{
+public:
+	byte                                                         Reason;                                            // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct EventHealthChangeContinuousApplied
+{
+public:
+	float                                                        ChangeDelta;                                       // 0x0(0x4)
+	byte                                                         Reason;                                            // 0x4(0x1)
+};
+
+
+// Size 0x48
+struct EventHealthChanged
+{
+public:
+	Struct HealthChange                                          ChangePayload;                                     // 0x0(0x40)
+	bool                                                         IsLocalPrediction;                                 // 0x40(0x1)
+	bool                                                         IsRepetitionOfPrediction;                          // 0x41(0x1)
+};
+
+
+// Size 0x40
+struct HealthChange
+{
+public:
+	float                                                        From;                                              // 0x0(0x4)
+	float                                                        To;                                                // 0x4(0x4)
+	byte                                                         Reason;                                            // 0x8(0x1)
+	Class Actor*                                                 DirectInstigator;                                  // 0x10(0x8)
+	Class Actor*                                                 RootInstigator;                                    // 0x18(0x8)
+	Struct Guid                                                  IncidentId;                                        // 0x20(0x10)
+	Struct Vector_NetQuantize10                                  DirectInstigatorLocation;                          // 0x30(0xc)
+};
+
+
+// Size 0x18
+struct CurrentHealthInfo
+{
+public:
+	float                                                        Health;                                            // 0x0(0x4)
+	byte                                                         LastChangedReason;                                 // 0x4(0x1)
+	Struct Vector_NetQuantize10                                  LastInstigatorLocation;                            // 0x8(0xc)
+};
+
+
+// Size 0xc
+struct ContinuousHealthChange
+{
+public:
+	float                                                        Rate;                                              // 0x0(0x4)
+	float                                                        ChangeApplied;                                     // 0x4(0x4)
+	byte                                                         Reason;                                            // 0x8(0x1)
+};
+
+
+// Size 0x8
+struct HealthRegenState
+{
+public:
+	float                                                        CurrentPoolAmount;                                 // 0x0(0x4)
+	byte                                                         State;                                             // 0x4(0x1)
+};
+
+
+// Size 0x30
+struct TeleportLocation
+{
+public:
+	bool                                                         Valid;                                             // 0x0(0x1)
+	struct FName                                                 Description;                                       // 0x4(0x8)
+	Class SceneComponent*                                        TeleportBase;                                      // 0x10(0x8)
+	Struct Vector                                                TeleportLocation;                                  // 0x18(0xc)
+	Struct Rotator                                               TeleportRotation;                                  // 0x24(0xc)
+};
+
+
+// Size 0x78
+struct TeleportActionStateConstructionInfo
+{
+public:
+	Struct TeleportLocation                                      TeleportLocationOverride;                          // 0x30(0x30)
+	byte                                                         TeleportFadeType;                                  // 0x60(0x1)
+	int                                                          StreamInLevelId;                                   // 0x64(0x4)
+	int                                                          StreamOutLevelId;                                  // 0x68(0x4)
+	byte                                                         TeleportConditions;                                // 0x6c(0x1)
+	bool                                                         ShouldPlayTeleportSFX;                             // 0x6d(0x1)
+	bool                                                         ShouldWaitForLoadout;                              // 0x6f(0x1)
+	bool                                                         ShouldWaitForEntitlements;                         // 0x70(0x1)
+	bool                                                         CallFinishSpawningOnEnd;                           // 0x71(0x1)
+	byte                                                         Reason;                                            // 0x72(0x1)
+	byte                                                         TeleportSpace;                                     // 0x73(0x1)
+};
+
+
+// Size 0x30
+struct EventTeleportLocationDestroyed
+{
+public:
+	Struct TeleportLocation                                      TeleportLocation;                                  // 0x0(0x30)
+};
+
+
+// Size 0x30
+struct EventTeleportLocationCreated
+{
+public:
+	Struct TeleportLocation                                      TeleportLocation;                                  // 0x0(0x30)
+};
+
+
+// Size 0x10
+struct CharacterHitReactionDamagerTypeToAnimTypePair
+{
+public:
+	class                                                        DamagerType;                                       // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct EventFinishedSpawning
+{
+public:
+	byte                                                         SpawnType;                                         // 0x10(0x1)
+};
+
+
+// Size 0x8
+struct EventFiredFromActorEnd
+{
+public:
+};
+
+
+// Size 0x8
+struct EventFiredFromActorStart
+{
+public:
+};
+
+
+// Size 0x48
+struct EventRequestRespawn
+{
+public:
+	Class Pawn*                                                  Character;                                         // 0x0(0x8)
+	byte                                                         RespawnType;                                       // 0x8(0x1)
+};
+
+
+// Size 0x1
+struct SetFirstPersonMeshVisibleEvent
+{
+public:
+	bool                                                         IsVisible;                                         // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct EventCharacterKnockedBack
+{
+public:
+	struct FName                                                 RumbleTag;                                         // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventCharacterDespawned
+{
+public:
+	Class Character*                                             Character;                                         // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventCharacterSpawned
+{
+public:
+	Class Character*                                             Character;                                         // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct EventCharacterEndTeleport
+{
+public:
+	Class Actor*                                                 Character;                                         // 0x0(0x8)
+	bool                                                         PlayOnTeleportEndSounds;                           // 0x8(0x1)
+	byte                                                         TeleportNotificationSource;                        // 0x9(0x1)
+};
+
+
+// Size 0x10
+struct EventCharacterBeginTeleport
+{
+public:
+	Class Actor*                                                 Character;                                         // 0x0(0x8)
+	bool                                                         PlayOnTeleportBeginSounds;                         // 0x8(0x1)
+	byte                                                         TeleportNotificationSource;                        // 0x9(0x1)
+};
+
+
+// Size 0x4
+struct EventCharacterMovementModeChanged
+{
+public:
+	byte                                                         PreviousMovementMode;                              // 0x0(0x1)
+	byte                                                         NewMovementMode;                                   // 0x1(0x1)
+	byte                                                         PreviousCustomMovementMode;                        // 0x2(0x1)
+	byte                                                         NewCustomMovementMode;                             // 0x3(0x1)
+};
+
+
+// Size 0x1
+struct EventCharacterInert
+{
+public:
+	bool                                                         bIsInert;                                          // 0x0(0x1)
+};
+
+
+// Size 0x18
+struct EventPlayerInteractedWithObject
+{
+public:
+};
+
+
+// Size 0x10
+struct EventPlayerStatePawnUnPossessed
+{
+public:
+	Class PlayerState*                                           PlayerState;                                       // 0x0(0x8)
+	Class Pawn*                                                  UnPossessedPawn;                                   // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct EventPlayerStatePawnPossessed
+{
+public:
+	Class PlayerState*                                           PlayerState;                                       // 0x0(0x8)
+	Class Pawn*                                                  PossessedPawn;                                     // 0x8(0x8)
+	bool                                                         IsLocalPlayer;                                     // 0x10(0x1)
+};
+
+
+// Size 0x8
+struct EventRemovePlayerOnLogOut
+{
+public:
+	Class Controller*                                            Controller;                                        // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct OtherPartyTelemetryFragmentInput
+{
+public:
+};
+
+
+// Size 0x30
+struct OtherPartyTelemetryFragment
+{
+public:
+	Struct FString                                               OtherPartyType;                                    // 0x0(0x10)
+	Struct FString                                               OtherPartyId;                                      // 0x10(0x10)
+	double                                                       OtherPartySecondsSinceSpawned;                     // 0x28(0x8)
+};
+
+
+// Size 0x8
+struct EventPlayerLeftProximity
+{
+public:
+	Class Actor*                                                 Player;                                            // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventPlayerEnteredProximity
+{
+public:
+	Class Actor*                                                 Player;                                            // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct TrackedActorEntry
+{
+public:
+};
+
+
+// Size 0x10
+struct TrackedActorTelemetryFragmentInput
+{
+public:
+};
+
+
+// Size 0x18
+struct TrackedActorTelemetryFragment
+{
+public:
+	Struct JsonObjectWrapper                                     Json;                                              // 0x0(0x18)
+};
+
+
 // Size 0x18
 struct VisualFeedbackList
 {
@@ -23377,20 +24406,6 @@ public:
 
 // Size 0x1
 struct PersistenceModel
-{
-public:
-};
-
-
-// Size 0x1
-struct EventWaterSplashExitWater
-{
-public:
-};
-
-
-// Size 0x1
-struct EventWaterSplashEnterWater
 {
 public:
 };
@@ -23832,6 +24847,15 @@ public:
 };
 
 
+// Size 0x18
+struct EventShipHasBeenSpotted
+{
+public:
+	Class Actor*                                                 SpottingPlayer;                                    // 0x0(0x8)
+	Struct Guid                                                  SpottedShipId;                                     // 0x8(0x10)
+};
+
+
 // Size 0x30
 struct ShipPartChangedEvent
 {
@@ -24041,141 +25065,178 @@ public:
 };
 
 
-// Size 0x14
-struct RainZoneParametersAndLocation
+// Size 0x1
+struct AllianceJoinStatusChangedEvent
 {
 public:
-	Struct RainZoneParameters                                    RainZoneParameters;                                // 0x0(0xc)
-	Struct Vector2D                                              Location;                                          // 0xc(0x8)
+};
+
+
+// Size 0x18
+struct AllianceStatusChangedNetworkEvent
+{
+public:
+	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct LoadableProjectileData
+{
+public:
+	Struct StringAssetReference                                  DataAsset;                                         // 0x0(0x10)
+	int                                                          GeneratedDataRNGSeed;                              // 0x10(0x4)
+	bool                                                         ShouldProjectileTrailDoReflections;                // 0x14(0x1)
+};
+
+
+// Size 0x1
+struct EventCharacterConcealedInLoadableEnd
+{
+public:
+};
+
+
+// Size 0x10
+struct EventCharacterConcealedInLoadableBegin
+{
+public:
+};
+
+
+// Size 0x1
+struct EventLoadableItemUnloadingEnd
+{
+public:
+};
+
+
+// Size 0x1
+struct EventLoadableItemUnloadingBegin
+{
+public:
+};
+
+
+// Size 0x1
+struct EventLoadableItemLoadingEnd
+{
+public:
+};
+
+
+// Size 0x1
+struct EventLoadableItemLoadingBegin
+{
+public:
+};
+
+
+// Size 0x1
+struct EventLoadableObjectUnloaded
+{
+public:
+};
+
+
+// Size 0x1
+struct EventLoadableObjectLoaded
+{
+public:
+};
+
+
+// Size 0x1
+struct EventLoadableObjectDestroyed
+{
+public:
 };
 
 
 // Size 0xc
-struct RainZoneParameters
+struct GhostPlayModeParameters
 {
 public:
-	float                                                        OuterRadius;                                       // 0x0(0x4)
-	float                                                        InnerRadius;                                       // 0x4(0x4)
-	float                                                        Strength;                                          // 0x8(0x4)
-};
-
-
-// Size 0x1
-struct EventExposedToRainChanged
-{
-public:
-	bool                                                         IsExposedToRain;                                   // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventWithinRainZoneChanged
-{
-public:
-	bool                                                         IsWithinRainZone;                                  // 0x0(0x1)
-};
-
-
-// Size 0x30
-struct WaterModifierDrowningParams
-{
-public:
-	Struct BlendableDrowningParams                               BlendableDrowningParams;                           // 0x0(0x28)
-};
-
-
-// Size 0x28
-struct BlendableDrowningParams
-{
-public:
-	float                                                        TimeToEmptyLungs;                                  // 0x0(0x4)
-	float                                                        TimeToFillLungs;                                   // 0x4(0x4)
-	float                                                        DamagePerMinute;                                   // 0x8(0x4)
-	float                                                        DrownWaterLevel;                                   // 0xc(0x4)
-	float                                                        GulpingStartTime;                                  // 0x10(0x4)
-	float                                                        GulpingPeakTime;                                   // 0x14(0x4)
-	float                                                        ClientErrorOxygenDifference;                       // 0x18(0x4)
-	Class Object*                                                ExtraBubblesFirstPerson;                           // 0x20(0x8)
+	byte                                                         PlayMode;                                          // 0x0(0x1)
+	float                                                        RotationPerSecond;                                 // 0x4(0x4)
+	float                                                        DisplacementPerSecond;                             // 0x8(0x4)
 };
 
 
 // Size 0x38
-struct ShipInternalWaterParams
+struct EventPlayerCharacterDeath
 {
 public:
-	Class CurveFloat*                                            SloshinessCurve;                                   // 0x0(0x8)
-	float                                                        MaxWaterAmount;                                    // 0x8(0x4)
-	float                                                        MaxWaterHeight;                                    // 0xc(0x4)
-	float                                                        CorrectiveSpeed;                                   // 0x10(0x4)
-	float                                                        MaxClientWaterError;                               // 0x14(0x4)
-	float                                                        WaterStartHeight;                                  // 0x18(0x4)
-	float                                                        VisibleWaterLevelSpringAccel;                      // 0x1c(0x4)
-	float                                                        MinShowAmount;                                     // 0x20(0x4)
-	float                                                        MaxTipAdjustmentDepth;                             // 0x24(0x4)
-	float                                                        MaxTipAdjustmentRoll;                              // 0x28(0x4)
-	float                                                        MinTipAdjustmentAmount;                            // 0x2c(0x4)
-	Class CurveFloat*                                            FillPercentageVSMaxRollAngleCurve;                 // 0x30(0x8)
+	Class Character*                                             PirateKilled;                                      // 0x0(0x8)
+	Struct DamageInstance                                        FinalBlowInformation;                              // 0x8(0x30)
 };
 
 
-// Size 0x88
-struct WaterModifierZoneParametersAndLocation
+// Size 0x38
+struct EventCharacterDead
 {
 public:
-	Struct WaterModifierZoneParameters                           WaterModifierZoneParameters;                       // 0x0(0x78)
-	Struct Vector                                                Location;                                          // 0x78(0xc)
-};
-
-
-// Size 0x78
-struct WaterModifierZoneParameters
-{
-public:
-	float                                                        OuterRadius;                                       // 0x0(0x4)
-	float                                                        InnerRadius;                                       // 0x4(0x4)
-	float                                                        Strength;                                          // 0x8(0x4)
-	bool                                                         UseDragScalar;                                     // 0xc(0x1)
-	float                                                        DragScalar;                                        // 0x10(0x4)
-	Struct BlendableDrowningParams                               DrowningParameters;                                // 0x18(0x28)
-	Struct BlendableDrowningParams                               ShipInternalWaterDrowningParameters;               // 0x40(0x28)
-	bool                                                         IsSuperHeatedWater;                                // 0x68(0x1)
-	bool                                                         ResetOxygenLevel;                                  // 0x69(0x1)
-	bool                                                         Is3DWaterModifierZone;                             // 0x6a(0x1)
-	float                                                        OuterCylinderHalfHeight;                           // 0x6c(0x4)
-	float                                                        InnerCylinderHalfHeight;                           // 0x70(0x4)
+	Struct DamageInstance                                        FinalBlow;                                         // 0x0(0x30)
+	byte                                                         DeathType;                                         // 0x30(0x1)
 };
 
 
 // Size 0x8
-struct EventWaterAmountChanged
+struct EventKilledCharacter
 {
 public:
-	float                                                        NewWaterAmount;                                    // 0x0(0x4)
-	float                                                        NewRelativeWaterHeight;                            // 0x4(0x4)
+	Class Actor*                                                 KilledCharacter;                                   // 0x0(0x8)
 };
 
 
-// Size 0x1
-struct EventSubmergedStateChanged
+// Size 0x80
+struct EventCharacterDeath
 {
 public:
-	byte                                                         SubmergedState;                                    // 0x0(0x1)
+	Struct DamageInstance                                        DamageInstance;                                    // 0x0(0x30)
 };
 
 
-// Size 0x1
-struct EventLocalPlayerSuperheatedWaterZoneChanged
+// Size 0x10
+struct CrewBasedRespawnTimes
 {
 public:
-	bool                                                         IsInSuperheatedWaterZone;                          // 0x0(0x1)
+	float                                                        CrewOfOneSpawnTimer;                               // 0x0(0x4)
+	float                                                        CrewOfTwoSpawnTimer;                               // 0x4(0x4)
+	float                                                        CrewOfThreeSpawnTimer;                             // 0x8(0x4)
+	float                                                        CrewOfFourSpawnTimer;                              // 0xc(0x4)
 };
 
 
-// Size 0x1
-struct EventPlayerViewUnderWaterStateChanged
+// Size 0x68
+struct DeadActionStateConstructionInfo
 {
 public:
-	bool                                                         NewUnderWaterState;                                // 0x0(0x1)
+	Struct DamageInstance                                        FinalBlow;                                         // 0x30(0x30)
+	byte                                                         DeathType;                                         // 0x60(0x1)
+	byte                                                         RespawnCharacterType;                              // 0x61(0x1)
+};
+
+
+// Size 0x58
+struct DeadActionStateParams
+{
+public:
+	float                                                        FadeDelay;                                         // 0x0(0x4)
+	float                                                        FadeDuration;                                      // 0x4(0x4)
+	float                                                        FadeEventTimeout;                                  // 0x8(0x4)
+	float                                                        FadeServerTimeout;                                 // 0xc(0x4)
+	Struct LinearColor                                           FadeColour;                                        // 0x10(0x10)
+	bool                                                         FadeAudio;                                         // 0x20(0x1)
+	float                                                        DeathCameraBlackFadeDelay;                         // 0x24(0x4)
+	float                                                        DeathCameraBlackFadeDuration;                      // 0x28(0x4)
+	float                                                        DeathCameraBlackFadeEventTimeout;                  // 0x2c(0x4)
+	float                                                        DeathCameraBlackFadeServerTimeout;                 // 0x30(0x4)
+	Struct LinearColor                                           DeathCameraBlackFadeColour;                        // 0x34(0x10)
+	float                                                        DeathCameraDelayBeforeEvaporate;                   // 0x44(0x4)
+	bool                                                         DeathCameraFadeAudio;                              // 0x48(0x1)
+	float                                                        DeathCameraDelay;                                  // 0x4c(0x4)
+	Class GhostDataAsset*                                        PlayerGhostDataAsset;                              // 0x50(0x8)
 };
 
 
@@ -24203,69 +25264,6 @@ struct ItemBlockingParameters
 {
 public:
 	float                                                        BlockingHalfAngle;                                 // 0x0(0x4)
-};
-
-
-// Size 0x1
-struct SecondaryInteractableNoLongerAvailableEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct SecondaryInteractableAvailableEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct PrimaryInteractableNoLongerAvailableEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct PrimaryInteractableAvailableEvent
-{
-public:
-};
-
-
-// Size 0x3
-struct NarrateInteractablesSettingsEvent
-{
-public:
-	bool                                                         NarrateInteractableText;                           // 0x0(0x1)
-	bool                                                         NarrateInteractableButtons;                        // 0x1(0x1)
-	bool                                                         IgnoreDisabledInteractables;                       // 0x2(0x1)
-};
-
-
-// Size 0x50
-struct InteractionInputComponentTickFunction
-{
-public:
-	Class InteractionInputComponent*                             Target;                                            // 0x48(0x8)
-};
-
-
-// Size 0x30
-struct InteractOnServerRpc
-{
-public:
-	Struct NetSubObjectPtr                                       Interactable;                                      // 0x10(0x14)
-	class                                                        NotificationInputId;                               // 0x28(0x8)
-};
-
-
-// Size 0x48
-struct InteractObjectActionStateConstructionInfo
-{
-public:
-	Struct NetSubObjectPtr                                       InteractObject;                                    // 0x30(0x14)
 };
 
 
@@ -24623,6 +25621,989 @@ public:
 };
 
 
+// Size 0x1
+struct SecondaryInteractableNoLongerAvailableEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct SecondaryInteractableAvailableEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct PrimaryInteractableNoLongerAvailableEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct PrimaryInteractableAvailableEvent
+{
+public:
+};
+
+
+// Size 0x3
+struct NarrateInteractablesSettingsEvent
+{
+public:
+	bool                                                         NarrateInteractableText;                           // 0x0(0x1)
+	bool                                                         NarrateInteractableButtons;                        // 0x1(0x1)
+	bool                                                         IgnoreDisabledInteractables;                       // 0x2(0x1)
+};
+
+
+// Size 0x50
+struct InteractionInputComponentTickFunction
+{
+public:
+	Class InteractionInputComponent*                             Target;                                            // 0x48(0x8)
+};
+
+
+// Size 0x30
+struct InteractOnServerRpc
+{
+public:
+	Struct NetSubObjectPtr                                       Interactable;                                      // 0x10(0x14)
+	class                                                        NotificationInputId;                               // 0x28(0x8)
+};
+
+
+// Size 0x48
+struct InteractObjectActionStateConstructionInfo
+{
+public:
+	Struct NetSubObjectPtr                                       InteractObject;                                    // 0x30(0x14)
+};
+
+
+// Size 0x8
+struct PlayerFinishedInteractingWithNPCDialog
+{
+public:
+	Class Actor*                                                 Interactee;                                        // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct PlayerStartedInteractingWithNPCDialog
+{
+public:
+};
+
+
+// Size 0x8
+struct EventStartDialogueOnServer
+{
+public:
+	Class Actor*                                                 Interactor;                                        // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct InteractionClosedEvent
+{
+public:
+};
+
+
+// Size 0x28
+struct InteractionOptionSelectedNonUI
+{
+public:
+	struct FName                                                 EventName;                                         // 0x0(0x8)
+	Class Actor*                                                 InteractingPlayer;                                 // 0x8(0x8)
+	Struct Guid                                                  InstagatorCrewID;                                  // 0x10(0x10)
+	int                                                          Index;                                             // 0x20(0x4)
+};
+
+
+// Size 0xc
+struct InteractionOptionSelected
+{
+public:
+	struct FName                                                 EventName;                                         // 0x0(0x8)
+	int                                                          Index;                                             // 0x8(0x4)
+};
+
+
+// Size 0x1
+struct RequestCloseInteractionEvent
+{
+public:
+};
+
+
+// Size 0x20
+struct UpdateInteractionEvent
+{
+public:
+	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x20)
+};
+
+
+// Size 0x20
+struct InteractionDefinition
+{
+public:
+	Struct FString                                               Header;                                            // 0x0(0x10)
+	TArray<Struct InteractionOption>                             Options;                                           // 0x10(0x10)
+};
+
+
+// Size 0x40
+struct InteractionOption
+{
+public:
+	Struct FString                                               Text;                                              // 0x0(0x10)
+	int                                                          Index;                                             // 0x10(0x4)
+	Struct FString                                               Icon;                                              // 0x18(0x10)
+	Struct FString                                               IconNarrationText;                                 // 0x28(0x10)
+	bool                                                         IsEnabled;                                         // 0x38(0x1)
+};
+
+
+// Size 0x20
+struct StartInteractionEvent
+{
+public:
+	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x20)
+};
+
+
+// Size 0x8
+struct ItemUseSpeedParams
+{
+public:
+	float                                                        LookSpeedScalar;                                   // 0x0(0x4)
+	float                                                        MaxMoveSpeedScalar;                                // 0x4(0x4)
+};
+
+
+// Size 0x30
+struct DetailAppearenceDesc
+{
+public:
+	Struct StringAssetReference                                  Mesh;                                              // 0x0(0x10)
+	TArray<Struct DetailAppearenceMaterialDesc>                  Materials;                                         // 0x10(0x10)
+	Struct StringAssetReference                                  CustomDepthMaterial;                               // 0x20(0x10)
+};
+
+
+// Size 0x18
+struct DetailAppearenceMaterialDesc
+{
+public:
+	Struct StringAssetReference                                  Material;                                          // 0x0(0x10)
+	int                                                          MaterialIndex;                                     // 0x10(0x4)
+};
+
+
+// Size 0x18
+struct WieldableItemActionVisuals
+{
+public:
+	TArray<Class BlockActions>                                   BlockActions;                                      // 0x0(0x10)
+	byte                                                         AnimVariant;                                       // 0x10(0x1)
+	bool                                                         IsAlternate;                                       // 0x11(0x1)
+	bool                                                         HideItem;                                          // 0x12(0x1)
+};
+
+
+// Size 0x10
+struct ItemActionEffectHandle
+{
+public:
+};
+
+
+// Size 0x1
+struct EventWieldableItemIsAboutToBeStowed
+{
+public:
+};
+
+
+// Size 0x8
+struct EventItemDroppedOnActor
+{
+public:
+	Class Actor*                                                 DroppedActor;                                      // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct EventWieldableItemDropped
+{
+public:
+	class                                                        DroppedItemCategory;                               // 0x0(0x8)
+	Class Actor*                                                 ContactActor;                                      // 0x8(0x8)
+	float                                                        DropDistance;                                      // 0x10(0x4)
+	bool                                                         InDeepWater;                                       // 0x14(0x1)
+};
+
+
+// Size 0x8
+struct EventExplosionDidDestroyWieldedItem
+{
+public:
+	Class WieldableItem*                                         DestroyedItem;                                     // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct LockedWieldableItemCategoriesUpdatedEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct WieldableItemsUpdatedEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct EventUseAlternateIdle
+{
+public:
+	bool                                                         UseAlternateIdle;                                  // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct EventClientItemUseSpeedScaled
+{
+public:
+	float                                                        ClientTimeStamp;                                   // 0x0(0x4)
+	bool                                                         bItemUseSlowed;                                    // 0x4(0x1)
+};
+
+
+// Size 0x10
+struct EventWieldableItemSetIsWielded
+{
+public:
+	Class Actor*                                                 Wielder;                                           // 0x0(0x8)
+	bool                                                         bIsWielded;                                        // 0x8(0x1)
+	bool                                                         bGettingDropped;                                   // 0x9(0x1)
+	bool                                                         bIsUnstashing;                                     // 0xa(0x1)
+};
+
+
+// Size 0x10
+struct EventWieldableItemUseStoppedAndFullyHidden
+{
+public:
+	Class Actor*                                                 Item;                                              // 0x0(0x8)
+	byte                                                         PerspectiveType;                                   // 0x8(0x1)
+};
+
+
+// Size 0x18
+struct EventWieldableItemUseStopped
+{
+public:
+	Class Actor*                                                 Item;                                              // 0x0(0x8)
+	class                                                        InputID;                                           // 0x8(0x8)
+	byte                                                         ItemUseStoppedReason;                              // 0x10(0x1)
+	byte                                                         TrackId;                                           // 0x11(0x1)
+};
+
+
+// Size 0x30
+struct EventWieldableItemUseStarted
+{
+public:
+	Class Actor*                                                 Item;                                              // 0x0(0x8)
+	class                                                        InputID;                                           // 0x8(0x8)
+	Struct WieldableItemActionVisuals                            Visuals;                                           // 0x10(0x18)
+	byte                                                         TrackId;                                           // 0x28(0x1)
+};
+
+
+// Size 0x10
+struct EventWieldableItemUseStartingAndJustMadeVisible
+{
+public:
+	Class Actor*                                                 Item;                                              // 0x0(0x8)
+	byte                                                         PerspectiveType;                                   // 0x8(0x1)
+};
+
+
+// Size 0x28
+struct EventOneShotUseTriggered
+{
+public:
+	Class Actor*                                                 Item;                                              // 0x0(0x8)
+	class                                                        InputID;                                           // 0x8(0x8)
+	Struct WieldableItemActionVisuals                            Visuals;                                           // 0x10(0x18)
+};
+
+
+// Size 0x18
+struct ItemInfoTogglePair
+{
+public:
+	struct FName                                                 Toggle;                                            // 0x0(0x8)
+	Struct StringClassReference                                  ItemInfo;                                          // 0x8(0x10)
+};
+
+
+// Size 0x48
+struct DropItemParams
+{
+public:
+	TArray<AssetClass AttachOnDropParentTypes>                   AttachOnDropParentTypes;                           // 0x0(0x10)
+	Struct Vector                                                DropItemOffset;                                    // 0x10(0xc)
+	float                                                        MaxShallowWaterHeightToAllowItemDrop;              // 0x1c(0x4)
+	byte                                                         DropItemPosTestTraceChannel;                       // 0x20(0x1)
+	float                                                        WaterVolumeOverlapRadius;                          // 0x24(0x4)
+	float                                                        MaxDroppedItemPitchRoll;                           // 0x28(0x4)
+	float                                                        ItemWorldProxyCapsuleCastRadius;                   // 0x2c(0x4)
+	float                                                        ItemWorldProxyCapsuleCastHeight;                   // 0x30(0x4)
+	float                                                        ItemWorldProxyCapsuleDownCastRadiusModifier;       // 0x34(0x4)
+	float                                                        LineTraceDepth;                                    // 0x38(0x4)
+	float                                                        SweepPercentageOnHit;                              // 0x3c(0x4)
+	float                                                        HitDiffTolerance;                                  // 0x40(0x4)
+	float                                                        LineTraceOffsetUpwardsFromStart;                   // 0x44(0x4)
+};
+
+
+// Size 0x10
+struct StartPickupObjectActionRuleParams
+{
+public:
+	TArray<Byte WieldableItemSizesDisablePickup>                 WieldableItemSizesDisablePickup;                   // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct ItemProxyImpactVfxParams
+{
+public:
+	byte                                                         SurfaceType;                                       // 0x0(0x1)
+	Class Object*                                                Particles;                                         // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct ActionVisualsOverride
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+	Struct WieldableItemActionVisuals                            ActionVisuals;                                     // 0x8(0x18)
+};
+
+
+// Size 0x40
+struct HoldToUseInput
+{
+public:
+	struct FName                                                 FeatureFlag;                                       // 0x0(0x8)
+	class                                                        StartUse;                                          // 0x8(0x8)
+	class                                                        StopUse;                                           // 0x10(0x8)
+	Struct WieldableItemActionVisuals                            ActionVisuals;                                     // 0x18(0x18)
+	Class HoldToUseInputVisualModifier*                          WieldableVisualModifier;                           // 0x30(0x8)
+	bool                                                         SplitActionRules;                                  // 0x38(0x1)
+};
+
+
+// Size 0x20
+struct InputMontagePair
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+	Class AnimSequenceBase*                                      Into;                                              // 0x8(0x8)
+	Class AnimSequenceBase*                                      Loop;                                              // 0x10(0x8)
+	Class AnimSequenceBase*                                      Outof;                                             // 0x18(0x8)
+};
+
+
+// Size 0x10
+struct InputSequencePair
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+	Class AnimMontage*                                           Sequence;                                          // 0x8(0x8)
+};
+
+
+// Size 0x40
+struct WieldAnimationParams
+{
+public:
+	byte                                                         WieldLocation;                                     // 0x0(0x1)
+	Struct Transform                                             PropOffset;                                        // 0x10(0x30)
+};
+
+
+// Size 0x18
+struct WieldingParamsAssetLookup
+{
+public:
+	class                                                        Class;                                             // 0x0(0x8)
+	Struct StringAssetReference                                  Params;                                            // 0x8(0x10)
+};
+
+
+// Size 0x48
+struct PickupObjectActionStateConstructionInfo
+{
+public:
+	Struct NetActorPtr                                           PickupableObject;                                  // 0x30(0x14)
+};
+
+
+// Size 0x50
+struct UseItemActionStateConstructionInfo
+{
+public:
+	Struct NetActorPtr                                           UsableObject;                                      // 0x30(0x14)
+	class                                                        InputID;                                           // 0x48(0x8)
+};
+
+
+// Size 0x1
+struct UseItemActionStateParams
+{
+public:
+};
+
+
+// Size 0x8
+struct EventItemConsumed
+{
+public:
+	Class Actor*                                                 Consumer;                                          // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct ContestBootyItemReleasedEvent
+{
+public:
+};
+
+
+// Size 0x10
+struct EventItemWielded
+{
+public:
+	Class WieldableItem*                                         WieldedItem;                                       // 0x0(0x8)
+	Class Actor*                                                 Wielder;                                           // 0x8(0x8)
+};
+
+
+// Size 0x8
+struct EventRemoveItemFromSpawner
+{
+public:
+};
+
+
+// Size 0x18
+struct EventTransferObjectState
+{
+public:
+	Class Actor*                                                 TargetActor;                                       // 0x10(0x8)
+};
+
+
+// Size 0x1
+struct EventUnhideItem
+{
+public:
+};
+
+
+// Size 0x1
+struct EventHideItem
+{
+public:
+};
+
+
+// Size 0x1
+struct EventStowComplete
+{
+public:
+};
+
+
+// Size 0x18
+struct EventStartStow
+{
+public:
+	bool                                                         FastStow;                                          // 0x10(0x1)
+	byte                                                         StowMethod;                                        // 0x11(0x1)
+};
+
+
+// Size 0x1
+struct EventPreStartStow
+{
+public:
+	byte                                                         StowMethod;                                        // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventVisibleWield
+{
+public:
+};
+
+
+// Size 0x10
+struct EventStartWield
+{
+public:
+};
+
+
+// Size 0x10
+struct EventObjectWielded
+{
+public:
+};
+
+
+// Size 0x18
+struct EventObjectStowed
+{
+public:
+	bool                                                         FastStow;                                          // 0x10(0x1)
+	byte                                                         StowMethod;                                        // 0x11(0x1)
+};
+
+
+// Size 0x10
+struct CanLoadItemCategoryEntry
+{
+public:
+	class                                                        CanLoadItemCategory;                               // 0x0(0x8)
+	struct FName                                                 FeatureToggle;                                     // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct EventPickupableObjectPickedUp
+{
+public:
+	Class PickupableObject*                                      PickupableObject;                                  // 0x0(0x8)
+	Class Actor*                                                 InteractingPlayer;                                 // 0x8(0x8)
+};
+
+
+// Size 0x1
+struct EventPickupableObjectDropped
+{
+public:
+	byte                                                         SurfaceType;                                       // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventPickupableObjectDestroyed
+{
+public:
+};
+
+
+// Size 0x18
+struct UseItemNoParamsOnServerRpc
+{
+public:
+};
+
+
+// Size 0x8
+struct EventItemTransmuted
+{
+public:
+	Class ItemInfo*                                              NewItem;                                           // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct EventUseItemStopped
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
+	Class Actor*                                                 Usable;                                            // 0x10(0x8)
+	byte                                                         TrackToUse;                                        // 0x18(0x1)
+};
+
+
+// Size 0x20
+struct EventUseItemForceStop
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
+	Class Actor*                                                 Usable;                                            // 0x10(0x8)
+	byte                                                         TrackToUse;                                        // 0x18(0x1)
+};
+
+
+// Size 0x20
+struct TriggerStopUseEvent
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
+	Class Actor*                                                 Usable;                                            // 0x10(0x8)
+	byte                                                         TrackToUse;                                        // 0x18(0x1)
+};
+
+
+// Size 0x20
+struct TriggerStartUseEvent
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
+	Class Actor*                                                 Usable;                                            // 0x10(0x8)
+	byte                                                         TrackToUse;                                        // 0x18(0x1)
+};
+
+
+// Size 0x8
+struct EventCharacterStoppedContinuousUse
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventCharacterStartedContinuousUse
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventCharacterStartedOneShotUse
+{
+public:
+	class                                                        InputID;                                           // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventAthenaAnimationCurrentAnimationCanBeInterrupted
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemEquipStarted
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemEquipBlendFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemUnequipFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventWieldedItemOutOfContinuousUseStateEntered
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemOutOfUseFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemIntoContinuousUseFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemContinuousUseStateEntered
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemOneShotInitialised
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemOneShotEntered
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemOneShotFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemEquipFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemStateChanged
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemComplexOneShotFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemBlockingFeedbackFinished
+{
+public:
+};
+
+
+// Size 0x1
+struct EventAnimationWieldedItemBlockingFinished
+{
+public:
+};
+
+
+// Size 0x10
+struct EventWieldableStashedToStashPoint
+{
+public:
+	Class PrimitiveComponent*                                    StashPointAttachParent;                            // 0x0(0x8)
+	bool                                                         Visible;                                           // 0x8(0x1)
+};
+
+
+// Size 0x18
+struct WieldableItemFirstTimeEquipRpc
+{
+public:
+	Class WwiseEvent*                                            FirstTimeEquipSfx;                                 // 0x10(0x8)
+};
+
+
+// Size 0x2c
+struct LightingZoneParametersAndLocation
+{
+public:
+	Struct LightingZoneParameters                                LightingZoneParameters;                            // 0x0(0x20)
+	Struct Vector                                                Location;                                          // 0x20(0xc)
+};
+
+
+// Size 0x20
+struct LightingZoneParameters
+{
+public:
+	int                                                          PriorityLayer;                                     // 0x0(0x4)
+	int                                                          TargetLightingIndex;                               // 0x4(0x4)
+	float                                                        OuterRadius;                                       // 0x8(0x4)
+	float                                                        InnerRadius;                                       // 0xc(0x4)
+	float                                                        Weight;                                            // 0x10(0x4)
+	bool                                                         IsUnderwaterZone;                                  // 0x14(0x1)
+	bool                                                         Is3DLightingZone;                                  // 0x15(0x1)
+	float                                                        OuterCylinderHalfHeight;                           // 0x18(0x4)
+	float                                                        InnerCylinderHalfHeight;                           // 0x1c(0x4)
+};
+
+
+// Size 0x8
+struct LightingZoneBlendValues
+{
+public:
+	int                                                          LightingSetIndex;                                  // 0x0(0x4)
+	float                                                        LightingZoneWeight;                                // 0x4(0x4)
+};
+
+
+// Size 0x14
+struct RainZoneParametersAndLocation
+{
+public:
+	Struct RainZoneParameters                                    RainZoneParameters;                                // 0x0(0xc)
+	Struct Vector2D                                              Location;                                          // 0xc(0x8)
+};
+
+
+// Size 0xc
+struct RainZoneParameters
+{
+public:
+	float                                                        OuterRadius;                                       // 0x0(0x4)
+	float                                                        InnerRadius;                                       // 0x4(0x4)
+	float                                                        Strength;                                          // 0x8(0x4)
+};
+
+
+// Size 0x1
+struct EventExposedToRainChanged
+{
+public:
+	bool                                                         IsExposedToRain;                                   // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventWithinRainZoneChanged
+{
+public:
+	bool                                                         IsWithinRainZone;                                  // 0x0(0x1)
+};
+
+
+// Size 0x30
+struct WaterModifierDrowningParams
+{
+public:
+	Struct BlendableDrowningParams                               BlendableDrowningParams;                           // 0x0(0x28)
+};
+
+
+// Size 0x28
+struct BlendableDrowningParams
+{
+public:
+	float                                                        TimeToEmptyLungs;                                  // 0x0(0x4)
+	float                                                        TimeToFillLungs;                                   // 0x4(0x4)
+	float                                                        DamagePerMinute;                                   // 0x8(0x4)
+	float                                                        DrownWaterLevel;                                   // 0xc(0x4)
+	float                                                        GulpingStartTime;                                  // 0x10(0x4)
+	float                                                        GulpingPeakTime;                                   // 0x14(0x4)
+	float                                                        ClientErrorOxygenDifference;                       // 0x18(0x4)
+	Class Object*                                                ExtraBubblesFirstPerson;                           // 0x20(0x8)
+};
+
+
+// Size 0x38
+struct ShipInternalWaterParams
+{
+public:
+	Class CurveFloat*                                            SloshinessCurve;                                   // 0x0(0x8)
+	float                                                        MaxWaterAmount;                                    // 0x8(0x4)
+	float                                                        MaxWaterHeight;                                    // 0xc(0x4)
+	float                                                        CorrectiveSpeed;                                   // 0x10(0x4)
+	float                                                        MaxClientWaterError;                               // 0x14(0x4)
+	float                                                        WaterStartHeight;                                  // 0x18(0x4)
+	float                                                        VisibleWaterLevelSpringAccel;                      // 0x1c(0x4)
+	float                                                        MinShowAmount;                                     // 0x20(0x4)
+	float                                                        MaxTipAdjustmentDepth;                             // 0x24(0x4)
+	float                                                        MaxTipAdjustmentRoll;                              // 0x28(0x4)
+	float                                                        MinTipAdjustmentAmount;                            // 0x2c(0x4)
+	Class CurveFloat*                                            FillPercentageVSMaxRollAngleCurve;                 // 0x30(0x8)
+};
+
+
+// Size 0x88
+struct WaterModifierZoneParametersAndLocation
+{
+public:
+	Struct WaterModifierZoneParameters                           WaterModifierZoneParameters;                       // 0x0(0x78)
+	Struct Vector                                                Location;                                          // 0x78(0xc)
+};
+
+
+// Size 0x78
+struct WaterModifierZoneParameters
+{
+public:
+	float                                                        OuterRadius;                                       // 0x0(0x4)
+	float                                                        InnerRadius;                                       // 0x4(0x4)
+	float                                                        Strength;                                          // 0x8(0x4)
+	bool                                                         UseDragScalar;                                     // 0xc(0x1)
+	float                                                        DragScalar;                                        // 0x10(0x4)
+	Struct BlendableDrowningParams                               DrowningParameters;                                // 0x18(0x28)
+	Struct BlendableDrowningParams                               ShipInternalWaterDrowningParameters;               // 0x40(0x28)
+	bool                                                         IsSuperHeatedWater;                                // 0x68(0x1)
+	bool                                                         ResetOxygenLevel;                                  // 0x69(0x1)
+	bool                                                         Is3DWaterModifierZone;                             // 0x6a(0x1)
+	float                                                        OuterCylinderHalfHeight;                           // 0x6c(0x4)
+	float                                                        InnerCylinderHalfHeight;                           // 0x70(0x4)
+};
+
+
+// Size 0x8
+struct EventWaterAmountChanged
+{
+public:
+	float                                                        NewWaterAmount;                                    // 0x0(0x4)
+	float                                                        NewRelativeWaterHeight;                            // 0x4(0x4)
+};
+
+
+// Size 0x1
+struct EventSubmergedStateChanged
+{
+public:
+	byte                                                         SubmergedState;                                    // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventLocalPlayerSuperheatedWaterZoneChanged
+{
+public:
+	bool                                                         IsInSuperheatedWaterZone;                          // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventPlayerViewUnderWaterStateChanged
+{
+public:
+	bool                                                         NewUnderWaterState;                                // 0x0(0x1)
+};
+
+
 // Size 0x4
 struct IntentSignChangedEvent
 {
@@ -24762,167 +26743,6 @@ public:
 };
 
 
-// Size 0xc
-struct GhostPlayModeParameters
-{
-public:
-	byte                                                         PlayMode;                                          // 0x0(0x1)
-	float                                                        RotationPerSecond;                                 // 0x4(0x4)
-	float                                                        DisplacementPerSecond;                             // 0x8(0x4)
-};
-
-
-// Size 0x30
-struct EventPlayerCharacterDeath
-{
-public:
-	Class Character*                                             PirateKilled;                                      // 0x0(0x8)
-	Struct DamageInstance                                        FinalBlowInformation;                              // 0x8(0x28)
-};
-
-
-// Size 0x28
-struct DamageInstance
-{
-public:
-	Struct Guid                                                  AttackId;                                          // 0x0(0x10)
-	Class Actor*                                                 DirectInstigator;                                  // 0x10(0x8)
-	Class Actor*                                                 RootInstigator;                                    // 0x18(0x8)
-	float                                                        Amount;                                            // 0x20(0x4)
-	byte                                                         Reason;                                            // 0x24(0x1)
-};
-
-
-// Size 0x30
-struct EventCharacterDead
-{
-public:
-	Struct DamageInstance                                        FinalBlow;                                         // 0x0(0x28)
-	byte                                                         DeathType;                                         // 0x28(0x1)
-};
-
-
-// Size 0x8
-struct EventKilledCharacter
-{
-public:
-	Class Actor*                                                 KilledCharacter;                                   // 0x0(0x8)
-};
-
-
-// Size 0x78
-struct EventCharacterDeath
-{
-public:
-	Struct DamageInstance                                        DamageInstance;                                    // 0x0(0x28)
-};
-
-
-// Size 0x60
-struct DeadActionStateConstructionInfo
-{
-public:
-	Struct DamageInstance                                        FinalBlow;                                         // 0x30(0x28)
-	byte                                                         DeathType;                                         // 0x58(0x1)
-	byte                                                         RespawnCharacterType;                              // 0x59(0x1)
-};
-
-
-// Size 0x58
-struct DeadActionStateParams
-{
-public:
-	float                                                        FadeDelay;                                         // 0x0(0x4)
-	float                                                        FadeDuration;                                      // 0x4(0x4)
-	float                                                        FadeEventTimeout;                                  // 0x8(0x4)
-	float                                                        FadeServerTimeout;                                 // 0xc(0x4)
-	Struct LinearColor                                           FadeColour;                                        // 0x10(0x10)
-	bool                                                         FadeAudio;                                         // 0x20(0x1)
-	float                                                        DeathCameraBlackFadeDelay;                         // 0x24(0x4)
-	float                                                        DeathCameraBlackFadeDuration;                      // 0x28(0x4)
-	float                                                        DeathCameraBlackFadeEventTimeout;                  // 0x2c(0x4)
-	float                                                        DeathCameraBlackFadeServerTimeout;                 // 0x30(0x4)
-	Struct LinearColor                                           DeathCameraBlackFadeColour;                        // 0x34(0x10)
-	float                                                        DeathCameraDelayBeforeEvaporate;                   // 0x44(0x4)
-	bool                                                         DeathCameraFadeAudio;                              // 0x48(0x1)
-	float                                                        DeathCameraDelay;                                  // 0x4c(0x4)
-	Class GhostDataAsset*                                        PlayerGhostDataAsset;                              // 0x50(0x8)
-};
-
-
-// Size 0x18
-struct LoadableProjectileData
-{
-public:
-	Struct StringAssetReference                                  DataAsset;                                         // 0x0(0x10)
-	int                                                          GeneratedDataRNGSeed;                              // 0x10(0x4)
-	bool                                                         ShouldProjectileTrailDoReflections;                // 0x14(0x1)
-};
-
-
-// Size 0x1
-struct EventCharacterConcealedInLoadableEnd
-{
-public:
-};
-
-
-// Size 0x10
-struct EventCharacterConcealedInLoadableBegin
-{
-public:
-};
-
-
-// Size 0x1
-struct EventLoadableItemUnloadingEnd
-{
-public:
-};
-
-
-// Size 0x1
-struct EventLoadableItemUnloadingBegin
-{
-public:
-};
-
-
-// Size 0x1
-struct EventLoadableItemLoadingEnd
-{
-public:
-};
-
-
-// Size 0x1
-struct EventLoadableItemLoadingBegin
-{
-public:
-};
-
-
-// Size 0x1
-struct EventLoadableObjectUnloaded
-{
-public:
-};
-
-
-// Size 0x1
-struct EventLoadableObjectLoaded
-{
-public:
-};
-
-
-// Size 0x1
-struct EventLoadableObjectDestroyed
-{
-public:
-};
-
-
 // Size 0x8
 struct EventReceiveMountpointComponentState
 {
@@ -24978,6 +26798,7 @@ public:
 	class                                                        TrinketClassCached;                                // 0x8(0x8)
 	Struct Transform                                             TrinketRelativePivotOffset;                        // 0x10(0x30)
 	Class NudgeInterpolationParamsDataAsset*                     NudgeInterpolationParamsDataAsset;                 // 0x40(0x8)
+	Class TrinketSfxDataAsset*                                   SfxDataAsset;                                      // 0x48(0x8)
 };
 
 
@@ -25019,6 +26840,17 @@ public:
 };
 
 
+// Size 0x38
+struct EquipTrinketOnServerLoadoutRpc
+{
+public:
+	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
+	class                                                        TrinketToEquip;                                    // 0x28(0x8)
+	int                                                          LocationIndex;                                     // 0x30(0x4)
+	bool                                                         ShouldVerifyCaptainsPermissions;                   // 0x34(0x1)
+};
+
+
 // Size 0x1
 struct EventMountedItemFullyInterpolatedToMountpoint
 {
@@ -25054,6 +26886,16 @@ public:
 struct EventSetMountpointLocationInUseForUI
 {
 public:
+};
+
+
+// Size 0x38
+struct UnequipAllTrinketsOfClassOnServerLoadoutRpc
+{
+public:
+	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
+	class                                                        TrinketToUnequip;                                  // 0x28(0x8)
+	bool                                                         ShouldVerifyCaptainsPermissions;                   // 0x30(0x1)
 };
 
 
@@ -25159,418 +27001,75 @@ public:
 };
 
 
-// Size 0x2c
-struct LightingZoneParametersAndLocation
+// Size 0x18
+struct ImpactProjectileData
 {
 public:
-	Struct LightingZoneParameters                                LightingZoneParameters;                            // 0x0(0x20)
-	Struct Vector                                                Location;                                          // 0x20(0xc)
-};
-
-
-// Size 0x20
-struct LightingZoneParameters
-{
-public:
-	int                                                          PriorityLayer;                                     // 0x0(0x4)
-	int                                                          TargetLightingIndex;                               // 0x4(0x4)
-	float                                                        OuterRadius;                                       // 0x8(0x4)
-	float                                                        InnerRadius;                                       // 0xc(0x4)
-	float                                                        Weight;                                            // 0x10(0x4)
-	bool                                                         IsUnderwaterZone;                                  // 0x14(0x1)
-	bool                                                         Is3DLightingZone;                                  // 0x15(0x1)
-	float                                                        OuterCylinderHalfHeight;                           // 0x18(0x4)
-	float                                                        InnerCylinderHalfHeight;                           // 0x1c(0x4)
-};
-
-
-// Size 0x8
-struct LightingZoneBlendValues
-{
-public:
-	int                                                          LightingSetIndex;                                  // 0x0(0x4)
-	float                                                        LightingZoneWeight;                                // 0x4(0x4)
-};
-
-
-// Size 0x30
-struct TrackedActorEntry
-{
-public:
+	class                                                        ProjectileId;                                      // 0x0(0x8)
+	TArray<Struct ImpactSurfaceData>                             SurfaceList;                                       // 0x8(0x10)
 };
 
 
 // Size 0x10
-struct TrackedActorTelemetryFragmentInput
+struct ImpactSurfaceData
 {
 public:
+	byte                                                         SurfaceType;                                       // 0x0(0x1)
+	Class ImpactDataAsset*                                       ImpactData;                                        // 0x8(0x8)
 };
 
 
-// Size 0x18
-struct TrackedActorTelemetryFragment
+// Size 0x1
+struct EventImpactVfxSpawned
 {
 public:
-	Struct JsonObjectWrapper                                     Json;                                              // 0x0(0x18)
 };
 
 
 // Size 0x1c
-struct AtmosphericPressureZoneParametersAndLocation
+struct DeepSeaRegionData
 {
 public:
-	Struct AtmosphericPressureZoneParameters                     PressureZoneParameters;                            // 0x0(0x14)
-	Struct Vector2D                                              Location;                                          // 0x14(0x8)
-};
-
-
-// Size 0x14
-struct AtmosphericPressureZoneParameters
-{
-public:
-	float                                                        Radius;                                            // 0x0(0x4)
-	float                                                        TargetPressure;                                    // 0x4(0x4)
-	float                                                        PushForce;                                         // 0x8(0x4)
-	float                                                        TwistForce;                                        // 0xc(0x4)
-	float                                                        Weight;                                            // 0x10(0x4)
-};
-
-
-// Size 0xb0
-struct GameEventSettings
-{
-public:
-	class                                                        GameEventType;                                     // 0x0(0x8)
-	float                                                        RepeatQueryTime;                                   // 0x8(0x4)
-	float                                                        InertQueryTime;                                    // 0xc(0x4)
-	float                                                        InertCancelTime;                                   // 0x10(0x4)
-	Struct WeightedProbabilityRangeOfRanges                      FirstRegenInterval;                                // 0x18(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      RegenInterval;                                     // 0x48(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      SpawnTime;                                         // 0x78(0x30)
-	bool                                                         Required;                                          // 0xa8(0x1)
-};
-
-
-// Size 0x38
-struct GameEventSchedulerConfiguration
-{
-public:
-	struct FName                                                 Feature;                                           // 0x0(0x8)
-	struct FName                                                 ServerConfigName;                                  // 0x8(0x8)
-	TArray<Struct GameEventCount>                                MainEvents;                                        // 0x10(0x10)
-	TArray<Struct GameEventWeightedList>                         SubConfigs;                                        // 0x20(0x10)
-	float                                                        Weight;                                            // 0x30(0x4)
-};
-
-
-// Size 0x20
-struct GameEventWeightedList
-{
-public:
-	struct FName                                                 ServerConfigName;                                  // 0x0(0x8)
-	TArray<Struct GameEventCount>                                Events;                                            // 0x8(0x10)
-	float                                                        Weight;                                            // 0x18(0x4)
-};
-
-
-// Size 0x10
-struct GameEventCount
-{
-public:
-	class                                                        GameEventType;                                     // 0x0(0x8)
-	int                                                          NumAllowed;                                        // 0x8(0x4)
-};
-
-
-// Size 0xc
-struct GameEventExclusionZone
-{
-public:
-	Struct Vector2D                                              Location;                                          // 0x0(0x8)
-	float                                                        Radius;                                            // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct GameEventServiceDesc
-{
-public:
-	Struct StringAssetReference                                  ServiceParamsAssetPath;                            // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct GameEventSchedulerSettingsChangeTelemetryEvent
-{
-public:
-	Struct StringAssetReference                                  SettingsAssetPath;                                 // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct GameEventSchedulerConfigChangeTelemetryEvent
-{
-public:
-	Struct Guid                                                  ConfigId;                                          // 0x0(0x10)
-	TArray<Struct GameEventSchedulerConfigTelemetry>             Events;                                            // 0x10(0x10)
-};
-
-
-// Size 0x8
-struct GameEventSchedulerConfigTelemetry
-{
-public:
-	byte                                                         TrackedActorType;                                  // 0x0(0x1)
-	int                                                          NumAllowed;                                        // 0x4(0x4)
-};
-
-
-// Size 0x1
-struct EventApplicationAccountLinkingEventRequest
-{
-public:
-};
-
-
-// Size 0x1
-struct EventApplicationSignOutRequest
-{
-public:
-};
-
-
-// Size 0x1
-struct EventApplicationStartRequest
-{
-public:
-};
-
-
-// Size 0x1
-struct EventApplicationExitRequest
-{
-public:
-};
-
-
-// Size 0x1
-struct EventApplicationResumed
-{
-public:
-};
-
-
-// Size 0x1
-struct EventApplicationSuspended
-{
-public:
-};
-
-
-// Size 0x1
-struct EventApplicationReactivated
-{
-public:
-};
-
-
-// Size 0x1
-struct EventApplicationDeactivated
-{
-public:
-};
-
-
-// Size 0x10
-struct GameSessionIdTelemetryFragmentInput
-{
-public:
-};
-
-
-// Size 0x20
-struct GameSessionIdTelemetryFragment
-{
-public:
-	Struct FString                                               SessionHostId;                                     // 0x0(0x10)
-	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
-};
-
-
-// Size 0x1c
-struct BuryDecal
-{
-public:
-	Struct Guid                                                  Id;                                                // 0x0(0x10)
-	Struct Vector                                                Location;                                          // 0x10(0xc)
-};
-
-
-// Size 0x14
-struct BuriedFactor
-{
-public:
-	int                                                          CurrentBuriedFactor;                               // 0x0(0x4)
-	int                                                          FactorToConsiderFullyBuried;                       // 0x4(0x4)
-	int                                                          BuryStep;                                          // 0x8(0x4)
-	int                                                          ExhumeStep;                                        // 0xc(0x4)
-	byte                                                         LastDigDirection;                                  // 0x10(0x1)
-};
-
-
-// Size 0x28
-struct ItemDiggingMergedConfig
-{
-public:
-	Class ItemDiggingBaseConfig*                                 BaseConfig;                                        // 0x0(0x8)
-	Class ItemDiggingAnimationConfig*                            AnimationConfig;                                   // 0x8(0x8)
-	Class ItemDiggingEffectsConfig*                              EffectsConfig;                                     // 0x10(0x8)
-	Class ItemDiggingAudioConfig*                                AudioConfig;                                       // 0x18(0x8)
-	Class ItemDiggingBuryConfig*                                 BuryingConfig;                                     // 0x20(0x8)
-};
-
-
-// Size 0x8
-struct EventBuriedItemRevealed
-{
-public:
-	Class ItemInfo*                                              BuriedItem;                                        // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct PlayerStartedDiggingEvent
-{
-public:
-	Class Actor*                                                 ActorBeingDugUp;                                   // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct EventDiggingStarted
-{
-public:
-	byte                                                         DigDirection;                                      // 0x0(0x1)
-	Class Actor*                                                 ActorBeingDugUp;                                   // 0x8(0x8)
-};
-
-
-// Size 0x14
-struct EncounterHandle
-{
-public:
-};
-
-
-// Size 0x30
-struct Encounter
-{
-public:
-	Class Actor*                                                 EncounterActor;                                    // 0x0(0x8)
+	float                                                        DeepSeaRegionRadius;                               // 0x8(0x4)
+	float                                                        MaxSwimDepth;                                      // 0xc(0x4)
+	bool                                                         ShouldUseDeepSeaSwimmingBounds;                    // 0x10(0x1)
+	float                                                        SwimmingBoundsRadius;                              // 0x14(0x4)
+	float                                                        SlowDownZoneWidth;                                 // 0x18(0x4)
 };
 
 
 // Size 0x18
-struct EncounterListener
+struct DeepSeaRegionAmbienceAudio
 {
 public:
-	Class Actor*                                                 EncounterListenerActor;                            // 0x0(0x8)
-	Struct Vector                                                EncounterListenerLocation;                         // 0x8(0xc)
-	byte                                                         EncounterListenerType;                             // 0x14(0x1)
+	Class WwiseEvent*                                            PlayerInDeepSeaStart;                              // 0x0(0x8)
+	Class WwiseEvent*                                            PlayerInDeepSeaStop;                               // 0x8(0x8)
+	bool                                                         OnlyPostMoodMusicEventsWhenSubmerged;              // 0x10(0x1)
 };
 
 
-// Size 0x20
-struct EncounterServiceParams
+// Size 0x10
+struct DeepSeaRegionScreenEffects
 {
 public:
-	TArray<Struct EncounterServiceEntry>                         EncounterList;                                     // 0x0(0x10)
-	int                                                          MinEventsToTriggerPerCycle;                        // 0x10(0x4)
-	double                                                       SecondsToSpendTriggeringEventsPerCycle;            // 0x18(0x8)
+	bool                                                         ShouldUseScreenEffects;                            // 0x0(0x1)
+	float                                                        DepthFadeEnd;                                      // 0x4(0x4)
+	float                                                        RadialFadeStart;                                   // 0x8(0x4)
+	float                                                        RadialFadeEnd;                                     // 0xc(0x4)
 };
 
 
-// Size 0x18
-struct EncounterServiceEntry
-{
-public:
-	byte                                                         EncounterListenerType;                             // 0x0(0x1)
-	TArray<Byte ValidEncounterTypes>                             ValidEncounterTypes;                               // 0x8(0x10)
-};
-
-
-// Size 0x40
-struct EncounterListenerData
-{
-public:
-	TArray<Byte EncounterListenerTypes>                          EncounterListenerTypes;                            // 0x0(0x10)
-	TArray<class EncounterListenerActors*>                       EncounterListenerActors;                           // 0x10(0x10)
-	TArray<Struct Vector>                                        EncounterListenerLocations;                        // 0x20(0x10)
-};
-
-
-// Size 0x20
-struct EventEncounterEnd
-{
-public:
-};
-
-
-// Size 0x20
-struct EventEncounterBase
-{
-public:
-	Struct Guid                                                  EncounterId;                                       // 0x0(0x10)
-	Class Actor*                                                 EncounterActor;                                    // 0x10(0x8)
-	byte                                                         EncounterType;                                     // 0x18(0x1)
-	float                                                        EncounterRadiusSquared;                            // 0x1c(0x4)
-};
-
-
-// Size 0x20
-struct EventEncounterStart
+// Size 0x1
+struct OnExitedDeepSeaRegion
 {
 public:
 };
 
 
 // Size 0x10
-struct FeedStruct
+struct OnEnteredDeepSeaRegion
 {
 public:
-	Class Actor*                                                 ActorToFeed;                                       // 0x0(0x8)
-	bool                                                         WantRules;                                         // 0x8(0x1)
-};
-
-
-// Size 0x1
-struct EventStarved
-{
-public:
-};
-
-
-// Size 0x4
-struct EventStarvingAmountChanged
-{
-public:
-	float                                                        PercentageStarved;                                 // 0x0(0x4)
-};
-
-
-// Size 0x8
-struct EventJustBeenFed
-{
-public:
-	Class Actor*                                                 FedBy;                                             // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct EventStartedBeingFed
-{
-public:
-	Class Actor*                                                 FedBy;                                             // 0x0(0x8)
 };
 
 
@@ -25771,1119 +27270,16 @@ public:
 };
 
 
-// Size 0xc
-struct CanvasLOD
-{
-public:
-	bool                                                         IsCanvasCountLimited;                              // 0x0(0x1)
-	int                                                          MaxNumCanvasesAtThisLOD;                           // 0x4(0x4)
-	float                                                        ResolutionScaler;                                  // 0x8(0x4)
-};
-
-
-// Size 0x70
-struct TreasureMapWidgetTextWithScaledWidthBackground
-{
-public:
-	Struct TreasureMapWidgetTexture                              Background;                                        // 0x38(0x28)
-	float                                                        MaxTextWidthForDefaultTextureScale;                // 0x60(0x4)
-	float                                                        MinScaleModifier;                                  // 0x64(0x4)
-	float                                                        MaxScaleModifier;                                  // 0x68(0x4)
-};
-
-
-// Size 0x30
-struct TreasureMapWidgetStreamedTexture
-{
-public:
-	Struct StringAssetReference                                  TexturePath;                                       // 0x18(0x10)
-	float                                                        RelativeHeightModifier;                            // 0x28(0x4)
-	bool                                                         FlipX;                                             // 0x2c(0x1)
-};
-
-
-// Size 0x20
-struct ClientCargoRunCrewDataUnit
-{
-public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	TArray<Struct Guid>                                          NPCPickUpPoints;                                   // 0x10(0x10)
-};
-
-
-// Size 0x28
-struct CargoRunItemDropOffData
-{
-public:
-	Struct Guid                                                  PickUpId;                                          // 0x0(0x10)
-	Struct Guid                                                  DeliveryLocationId;                                // 0x10(0x10)
-};
-
-
-// Size 0x1
-struct ItemLoadoutSetEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct ItemLoadoutSlotsUpdatedEvent
-{
-public:
-};
-
-
-// Size 0x8
-struct ItemLoadoutItemCategoryRemovedEvent
-{
-public:
-	class                                                        ItemCategory;                                      // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct ItemLoadoutItemRemovedEvent
-{
-public:
-	Class ItemInfo*                                              Item;                                              // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct ItemLoadoutItemCategoryAddedEvent
-{
-public:
-	class                                                        ItemCategory;                                      // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct ItemLoadoutItemAddedEvent
-{
-public:
-	Class ItemInfo*                                              Item;                                              // 0x0(0x8)
-};
-
-
 // Size 0x48
-struct CategorisedLoadout
-{
-public:
-	TArray<Struct LoadoutCategory>                               ItemLoadout;                                       // 0x0(0x10)
-	TArray<Struct LoadoutCategory>                               ClothingLoadout;                                   // 0x10(0x10)
-	TArray<Struct LoadoutPetCategory>                            PetLoadout;                                        // 0x20(0x10)
-	bool                                                         PetNamingDisallowed;                               // 0x30(0x1)
-	bool                                                         InitialLoadout;                                    // 0x31(0x1)
-	Struct FString                                               Hash;                                              // 0x38(0x10)
-};
-
-
-// Size 0x30
-struct LoadoutPetCategory
-{
-public:
-	Struct FString                                               PetEntitlementId;                                  // 0x0(0x10)
-	Struct FString                                               PetCustomizationEntitlementId;                     // 0x10(0x10)
-	Struct FString                                               PetName;                                           // 0x20(0x10)
-};
-
-
-// Size 0x20
-struct LoadoutCategory
-{
-public:
-	Struct FString                                               CategoryName;                                      // 0x0(0x10)
-	Struct FString                                               EntitlementId;                                     // 0x10(0x10)
-};
-
-
-// Size 0x1
-struct TitleLoadoutUpdatedEvent
-{
-public:
-};
-
-
-// Size 0x30
-struct WalletTransactionRequestRemoteServiceResult
-{
-public:
-};
-
-
-// Size 0x58
-struct CaptainedCrew
-{
-public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct Guid                                                  ShipId;                                            // 0x10(0x10)
-	struct FName                                                 SessionToken;                                      // 0x20(0x8)
-	Struct UniqueNetIdRepl                                       CaptainUserId;                                     // 0x28(0x18)
-	Struct FString                                               CaptainPirateId;                                   // 0x40(0x10)
-	bool                                                         IsFirstTimeSailingShip;                            // 0x50(0x1)
-};
-
-
-// Size 0x1
-struct RequestCaptainedSessionCrewDataEvent
-{
-public:
-};
-
-
-// Size 0x48
-struct ShipNameChangedOnServerEvent
-{
-public:
-	Struct FString                                               ShipName;                                          // 0x0(0x10)
-	Struct FText                                                 ScrambledShipName;                                 // 0x10(0x38)
-};
-
-
-// Size 0x10
-struct ShipNameChangedEvent
-{
-public:
-	Struct FString                                               ShipName;                                          // 0x0(0x10)
-};
-
-
-// Size 0x8
-struct PersistenceSettingChangedEvent
-{
-public:
-};
-
-
-// Size 0x58
-struct StartedCaptainedSessionEvent
-{
-public:
-};
-
-
-// Size 0x10
-struct StartedCaptainedSessionFailedEvent
-{
-public:
-};
-
-
-// Size 0x10
-struct CrewAbandonedCaptainedSessionEvent
-{
-public:
-};
-
-
-// Size 0x40
-struct RewardDefinition
-{
-public:
-	struct FName                                                 RewardIdentifier;                                  // 0x0(0x8)
-	Class PopUpMessageDesc*                                      PopUp;                                             // 0x8(0x8)
-	bool                                                         IgnorePopUp;                                       // 0x10(0x1)
-	TArray<class Rewards*>                                       Rewards;                                           // 0x18(0x10)
-	TArray<Class PrerequisiteEntitlements>                       PrerequisiteEntitlements;                          // 0x28(0x10)
-	bool                                                         AllowedFromInsecureSources;                        // 0x38(0x1)
-	bool                                                         AwardToAccountAndNotJustToPirate;                  // 0x39(0x1)
-	bool                                                         EmissaryExempt;                                    // 0x3a(0x1)
-};
-
-
-// Size 0xc8
-struct RewardRequestCrewGame
-{
-public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct Guid                                                  ShipId;                                            // 0x10(0x10)
-	TArray<Struct PirateIdentity>                                Pirates;                                           // 0x20(0x10)
-	struct FName                                                 EmissaryAffiliation;                               // 0x30(0x8)
-	struct FName                                                 FactionAffiliation;                                // 0x3c(0x8)
-	byte                                                         FactionDefenderLootLevel;                          // 0x4c(0x1)
-	Struct PirateIdentity                                        Captain;                                           // 0x50(0x78)
-};
-
-
-// Size 0x68
-struct RewardGrantedEvent
-{
-public:
-	Struct FString                                               RewardId;                                          // 0x0(0x10)
-	byte                                                         CurrencyId;                                        // 0x10(0x1)
-	Struct FString                                               CompanyId;                                         // 0x18(0x10)
-	TArray<Str Entitlements>                                     Entitlements;                                      // 0x30(0x10)
-	Struct Guid                                                  RequestID;                                         // 0x40(0x10)
-	Struct FString                                               DeferralReason;                                    // 0x50(0x10)
-	bool                                                         ShouldBePropagatedToOtherCrewMembers;              // 0x60(0x1)
-};
-
-
-// Size 0x38
-struct XPGrantedEvent
-{
-public:
-	struct FName                                                 CompanyId;                                         // 0x4(0x8)
-	Struct Guid                                                  RequestID;                                         // 0xc(0x10)
-	Struct Guid                                                  BootyId;                                           // 0x1c(0x10)
-	struct FName                                                 EmissaryAffiliation;                               // 0x2c(0x8)
-};
-
-
-// Size 0x30
-struct CurrencyGrantedEvent
-{
-public:
-	byte                                                         Currency;                                          // 0x4(0x1)
-	Struct Guid                                                  TransactionId;                                     // 0x8(0x10)
-	struct FName                                                 EmissaryAffiliation;                               // 0x18(0x8)
-	double                                                       EmissaryMultiplier;                                // 0x28(0x8)
-};
-
-
-// Size 0x18
-struct RewardRequestSucceededEvent
-{
-public:
-	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
-	struct FName                                                 RewardId;                                          // 0x10(0x8)
-};
-
-
-// Size 0x14
-struct RewardRequestFailedEvent
-{
-public:
-	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
-	byte                                                         FailureReason;                                     // 0x10(0x1)
-};
-
-
-// Size 0x90
-struct PenaltyRequestEvent
-{
-public:
-	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
-	Struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
-	struct FName                                                 PenaltyId;                                         // 0x88(0x8)
-};
-
-
-// Size 0xb8
-struct RewardRequestForPirateEvent
-{
-public:
-	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
-	Struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
-	Struct Guid                                                  CrewId;                                            // 0x88(0x10)
-	struct FName                                                 RewardId;                                          // 0x98(0x8)
-	struct FName                                                 CompanyAffiliation;                                // 0xa0(0x8)
-	struct FName                                                 EmissaryAffiliation;                               // 0xa8(0x8)
-	int                                                          EmissaryLevel;                                     // 0xb0(0x4)
-	bool                                                         FromInsecureSource;                                // 0xb4(0x1)
-	bool                                                         NotifyPlayer;                                      // 0xb5(0x1)
-};
-
-
-// Size 0x60
-struct DeferredRewardRequestEvent
-{
-public:
-	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
-	struct FName                                                 CompanyAffiliation;                                // 0x10(0x8)
-	struct FName                                                 RewardId;                                          // 0x18(0x8)
-	Struct FString                                               UserId;                                            // 0x20(0x10)
-	Struct FString                                               PirateId;                                          // 0x30(0x10)
-	bool                                                         RewardAccount;                                     // 0x40(0x1)
-	bool                                                         NotifyPlayer;                                      // 0x41(0x1)
-	bool                                                         DontRewardCurrency;                                // 0x42(0x1)
-	bool                                                         DontRewardXp;                                      // 0x43(0x1)
-	bool                                                         DontRewardSeasonXp;                                // 0x44(0x1)
-	Struct FString                                               DeferralReason;                                    // 0x48(0x10)
-	double                                                       RewardMultiplier;                                  // 0x58(0x8)
-};
-
-
-// Size 0x128
-struct AllianceRewardRequestEvent
-{
-public:
-	Struct Guid                                                  AllianceId;                                        // 0x0(0x10)
-	Struct Guid                                                  RequestID;                                         // 0x10(0x10)
-	Struct RewardRequestCrewGame                                 PrimaryRecipient;                                  // 0x20(0xc8)
-	TArray<Struct RewardRequestCrewGame>                         SecondaryRecipients;                               // 0xe8(0x10)
-	struct FName                                                 RewardId;                                          // 0xf8(0x8)
-	struct FName                                                 CompanyAffiliation;                                // 0x100(0x8)
-	Struct Guid                                                  BootyId;                                           // 0x108(0x10)
-	struct FName                                                 NPCName;                                           // 0x118(0x8)
-	bool                                                         NotifyPlayer;                                      // 0x120(0x1)
-	bool                                                         DontRewardCurrency;                                // 0x121(0x1)
-	bool                                                         DontRewardXp;                                      // 0x122(0x1)
-	bool                                                         DontRewardSeasonXp;                                // 0x123(0x1)
-	bool                                                         DontRewardAllegiance;                              // 0x124(0x1)
-	bool                                                         SkipXpToAllegianceMultiplier;                      // 0x125(0x1)
-};
-
-
-// Size 0x50
-struct RewardRequestEvent
-{
-public:
-	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
-	TArray<Struct PirateIdentity>                                PirateIdentities;                                  // 0x10(0x10)
-	Struct Guid                                                  CrewId;                                            // 0x20(0x10)
-	struct FName                                                 RewardId;                                          // 0x30(0x8)
-	struct FName                                                 CompanyAffiliation;                                // 0x38(0x8)
-	struct FName                                                 EmissaryAffiliation;                               // 0x40(0x8)
-	int                                                          EmissaryLevel;                                     // 0x48(0x4)
-	bool                                                         NotifyPlayer;                                      // 0x4c(0x1)
-};
-
-
-// Size 0x18
-struct WeightedRewardDistribution
-{
-public:
-	TArray<Struct WeightedRewardEntry>                           RewardWeightings;                                  // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct WeightedRewardEntry
-{
-public:
-	Struct RewardId                                              Reward;                                            // 0x0(0x8)
-	Struct FString                                               WeightingConfigurationKey;                         // 0x8(0x10)
-	float                                                        FallbackWeight;                                    // 0x18(0x4)
-};
-
-
-// Size 0x10
-struct WeightedRewardTable
-{
-public:
-	TArray<Struct WeightedRewardTableUnit>                       Rewards;                                           // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct WeightedRewardTableUnit
-{
-public:
-	class                                                        Entitlement;                                       // 0x0(0x8)
-	float                                                        Weight;                                            // 0x8(0x4)
-};
-
-
-// Size 0x38
-struct RewardRuntimeDefinition
-{
-public:
-	Class PopUpMessageDesc*                                      PopUp;                                             // 0x8(0x8)
-	TArray<Class PrerequisiteEntitlements>                       PrerequisiteEntitlements;                          // 0x20(0x10)
-};
-
-
-// Size 0x40
-struct StorageContainerBackingStore
-{
-public:
-	TArray<Struct AllowedItemsBasedOnFeature>                    AllowedItems;                                      // 0x0(0x10)
-	int                                                          MaxCapacityPerNode;                                // 0x10(0x4)
-	int                                                          MaxNumNodes;                                       // 0x14(0x4)
-	int                                                          MaxCapacityTotal;                                  // 0x18(0x4)
-	TArray<Struct StorageContainerNode>                          ContainerNodes;                                    // 0x20(0x10)
-	bool                                                         AllowedItemsAreCached;                             // 0x30(0x1)
-	Class ContainerAllowedItemsDataAsset*                        CachedAllowedItems;                                // 0x38(0x8)
-};
-
-
-// Size 0x10
-struct StorageContainerNode
-{
-public:
-	class                                                        ItemDesc;                                          // 0x0(0x8)
-	int                                                          NumItems;                                          // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct AllowedItemsBasedOnFeature
-{
-public:
-	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	Class ContainerAllowedItemsDataAsset*                        AllowedItems;                                      // 0x8(0x8)
-};
-
-
-// Size 0x30
-struct InventoryInteractionUpdateEvent
-{
-public:
-	TArray<Struct IInventoryItem>                                Current;                                           // 0x0(0x10)
-	TArray<Struct IInventoryItem>                                Available;                                         // 0x10(0x10)
-	TArray<Struct IInventoryItemDescription>                     Descriptions;                                      // 0x20(0x10)
-};
-
-
-// Size 0x4
-struct InventoryInteractionTakeAllRequestEvent
-{
-public:
-	int                                                          Index;                                             // 0x0(0x4)
-};
-
-
-// Size 0x4
-struct InventoryInteractionTakeRequestEvent
-{
-public:
-	int                                                          Index;                                             // 0x0(0x4)
-};
-
-
-// Size 0x10
-struct InventoryInteractionStowAllRequestEvent
-{
-public:
-	Struct FString                                               ItemDesc;                                          // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct InventoryInteractionStowRequestEvent
-{
-public:
-	Struct FString                                               ItemDesc;                                          // 0x0(0x10)
-};
-
-
-// Size 0x1
-struct InventoryInteractionClosedEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct CloseInventoryInteractionEvent
-{
-public:
-};
-
-
-// Size 0x48
-struct OpenInventoryInteractionEvent
-{
-public:
-	Struct FString                                               InventoryName;                                     // 0x0(0x10)
-	TArray<Struct IInventoryItem>                                Current;                                           // 0x10(0x10)
-	TArray<Struct IInventoryItem>                                Available;                                         // 0x20(0x10)
-	TArray<Struct IInventoryItemDescription>                     Descriptions;                                      // 0x30(0x10)
-	bool                                                         CanPlayerStoreItems;                               // 0x40(0x1)
-};
-
-
-// Size 0x8
-struct EventStorageContainerContentsChanged
-{
-public:
-	Class StorageContainerComponent*                             Source;                                            // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct EventReceiveStorageContainerComponentState
-{
-public:
-	Class StorageContainerComponent*                             Source;                                            // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct StorageContainerContentSpawnerOutput
-{
-public:
-	class                                                        ItemDesc;                                          // 0x0(0x8)
-};
-
-
-// Size 0x40
-struct StorageContainerContentSpawnerEntry
-{
-public:
-	class                                                        ItemDesc;                                          // 0x0(0x8)
-	Class StorageContainerSpawnerItemListBase*                   ItemList;                                          // 0x8(0x8)
-	Struct WeightedProbabilityRangeOfRanges                      AmountToStock;                                     // 0x10(0x30)
-};
-
-
-// Size 0x18
-struct StorageContainerWeightedItemListFeatureGroup
-{
-public:
-	struct FName                                                 Feature;                                           // 0x0(0x8)
-	TArray<Struct StorageContainerWeightedItemListEntry>         Entries;                                           // 0x8(0x10)
-};
-
-
-// Size 0x10
-struct StorageContainerWeightedItemListEntry
-{
-public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	class                                                        ItemDesc;                                          // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct StorageContainerWeightedItemListEntryList
-{
-public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	TArray<Struct StorageContainerWeightedItemListEntry>         Entries;                                           // 0x8(0x10)
-};
-
-
-// Size 0x10
-struct SpawnerTypeMappings
-{
-public:
-	TArray<Struct SpawnerTypeMapping>                            Mappings;                                          // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct SpawnerTypeMapping
-{
-public:
-	class                                                        Type;                                              // 0x0(0x8)
-	Class StorageContainerContentSpawner*                        Spawner;                                           // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct TypedStorageContainerContentTypeSelectorEntry
-{
-public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	int                                                          MinimumUses;                                       // 0x4(0x4)
-	int                                                          MaximumUses;                                       // 0x8(0x4)
-	class                                                        ContentSpawnerType;                                // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct StorageContainerContentTypeSelectorEntry
-{
-public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	int                                                          MinimumUses;                                       // 0x4(0x4)
-	int                                                          MaximumUses;                                       // 0x8(0x4)
-	Class StorageContainerContentSpawner*                        ContentSpawner;                                    // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct CategoryTypeMapEntry
-{
-public:
-	Struct FString                                               Type;                                              // 0x0(0x10)
-	TArray<Class Categories>                                     Categories;                                        // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct StorageContainerHealthChangedCloseInventoryRpc
-{
-public:
-};
-
-
-// Size 0x18
-struct StorageContainerUnregisterServerEventsRpc
-{
-public:
-	Class Object*                                                InStorageContainerOwnerObject;                     // 0x10(0x8)
-};
-
-
-// Size 0x30
-struct StowAllItemsToContainerRPC
-{
-public:
-	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
-	class                                                        ItemDescToStow;                                    // 0x28(0x8)
-};
-
-
-// Size 0x30
-struct StowItemToContainerRPC
-{
-public:
-	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
-	class                                                        ItemDescToStow;                                    // 0x28(0x8)
-};
-
-
-// Size 0x28
-struct TakeAllItemsFromContainerRPC
-{
-public:
-	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
-	int                                                          IndexToTake;                                       // 0x24(0x4)
-};
-
-
-// Size 0x28
-struct TakeItemFromContainerRPC
-{
-public:
-	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
-	int                                                          IndexToTake;                                       // 0x24(0x4)
-};
-
-
-// Size 0x50
-struct CaptainsShopInventoryCountsResponseEvent
-{
-public:
-};
-
-
-// Size 0x10
-struct CaptainsShopInventoryCountsRequestEvent
-{
-public:
-	TArray<Str Requests>                                         Requests;                                          // 0x0(0x10)
-};
-
-
-// Size 0x8
-struct EventObtainedFromContainer
-{
-public:
-};
-
-
-// Size 0x8
-struct EventStorageContainerDestroyed
-{
-public:
-	Class Object*                                                Replenishable;                                     // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct EventStorageContainerCreated
-{
-public:
-	Class Object*                                                Replenishable;                                     // 0x0(0x8)
-};
-
-
-// Size 0x30
-struct QuickTransferTelemetryEvent
-{
-public:
-	Struct FString                                               SrcClass;                                          // 0x0(0x10)
-	Struct FString                                               DestClass;                                         // 0x10(0x10)
-	float                                                        TransferTime;                                      // 0x20(0x4)
-	int                                                          NumTransferred;                                    // 0x24(0x4)
-	bool                                                         Giving;                                            // 0x28(0x1)
-};
-
-
-// Size 0x28
-struct PlayerItemAddToContainerTelemetryEvent
-{
-public:
-	Struct FString                                               ContainerId;                                       // 0x0(0x10)
-	Struct FString                                               ItemType;                                          // 0x10(0x10)
-	int                                                          NumberOfItemsInContainer;                          // 0x20(0x4)
-};
-
-
-// Size 0x28
-struct PlayerItemRetrievalFromContainerTelemetryEvent
-{
-public:
-	Struct FString                                               ContainerId;                                       // 0x0(0x10)
-	Struct FString                                               ItemType;                                          // 0x10(0x10)
-	int                                                          NumberOfItemsRemainingInContainer;                 // 0x20(0x4)
-};
-
-
-// Size 0x20
-struct ItemConsumptionStatusChanceEntry
-{
-public:
-	float                                                        Chance;                                            // 0x0(0x4)
-	Struct Status                                                Status;                                            // 0x8(0x18)
-};
-
-
-// Size 0x20
-struct ConditionalHandInStat
-{
-public:
-	Struct PlayerStat                                            Stat;                                              // 0x18(0x4)
-};
-
-
-// Size 0x10
-struct BootyItemSellPrerequisites
-{
-public:
-	TArray<Class Entitlements>                                   Entitlements;                                      // 0x0(0x10)
-};
-
-
-// Size 0x14
-struct BootyItemShipDroppedInfo
-{
-public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	bool                                                         DroppedOnOwnShip;                                  // 0x10(0x1)
-	bool                                                         DroppedOnAnotherShip;                              // 0x11(0x1)
-};
-
-
-// Size 0x18
-struct SpawnableItemCategory
-{
-public:
-	struct FName                                                 Category;                                          // 0x0(0x8)
-	TArray<Class SpawnableItems>                                 SpawnableItems;                                    // 0x8(0x10)
-};
-
-
-// Size 0x18
-struct BootyItemDroppedOnShipEvent
-{
-public:
-	Class Actor*                                                 Ship;                                              // 0x0(0x8)
-	Class ItemInfo*                                              ItemOnShip;                                        // 0x8(0x8)
-	bool                                                         FirstTimeDroppedOnOwnOrAnotherShipByCrew;          // 0x10(0x1)
-};
-
-
-// Size 0x18
-struct BootyItemTransferredToVendor
-{
-public:
-	Class BootyItemInfo*                                         ItemInfo;                                          // 0x0(0x8)
-	Struct Guid                                                  CrewId;                                            // 0x8(0x10)
-};
-
-
-// Size 0x3c
-struct BootyItemOwnershipChangedParams
-{
-public:
-	Struct Guid                                                  NewCrewId;                                         // 0x0(0x10)
-	Struct Guid                                                  PreviousCrewId;                                    // 0x10(0x10)
-	Struct Guid                                                  BootyId;                                           // 0x20(0x10)
-	byte                                                         BootyType;                                         // 0x30(0x1)
-	struct FName                                                 Rarity;                                            // 0x34(0x8)
-};
-
-
-// Size 0x10
-struct BootyItemShipOwnershipChangeEvent
-{
-public:
-	Class Actor*                                                 Ship;                                              // 0x0(0x8)
-	Class ItemInfo*                                              ItemOnShip;                                        // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct EventCargoRunCrateDelivered
-{
-public:
-	Struct Guid                                                  PickUpId;                                          // 0x0(0x10)
-	Class BootyItemInfo*                                         ItemInfo;                                          // 0x10(0x8)
-};
-
-
-// Size 0x40
-struct EventCargoRunCratePickedUp
-{
-public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct Guid                                                  BatchId;                                           // 0x10(0x10)
-	Struct Guid                                                  PickUpId;                                          // 0x20(0x10)
-	Class BootyItemInfo*                                         ItemInfo;                                          // 0x30(0x8)
-	Class WieldableItem*                                         Item;                                              // 0x38(0x8)
-};
-
-
-// Size 0x28
-struct EventCargoRunCrateSetDropOff
-{
-public:
-	Struct Guid                                                  PickUpId;                                          // 0x0(0x10)
-	Struct Guid                                                  DropOffLocationId;                                 // 0x10(0x10)
-};
-
-
-// Size 0x28
-struct RewardPouchGivenRewardTelemetryEvent
-{
-public:
-	Struct Guid                                                  PouchId;                                           // 0x0(0x10)
-	struct FName                                                 RewardId;                                          // 0x10(0x8)
-	byte                                                         BootyType;                                         // 0x18(0x1)
-	struct FName                                                 Rarity;                                            // 0x1c(0x8)
-	byte                                                         TrackedActorType;                                  // 0x24(0x1)
-};
-
-
-// Size 0x28
-struct ConsumedIngestibleTelemetryEvent
-{
-public:
-	Struct FString                                               ItemName;                                          // 0x0(0x10)
-	byte                                                         CookState;                                         // 0x10(0x1)
-	TArray<Str StatusesApplied>                                  StatusesApplied;                                   // 0x18(0x10)
-};
-
-
-// Size 0x40
-struct ItemSpawnTelemetryEvent
-{
-public:
-	Struct Guid                                                  ItemId;                                            // 0x0(0x10)
-	struct FName                                                 SpawnedClass;                                      // 0x10(0x8)
-	byte                                                         Source;                                            // 0x18(0x1)
-	Struct FString                                               SourceId;                                          // 0x20(0x10)
-	Struct Vector                                                SpawnLocation;                                     // 0x30(0xc)
-};
-
-
-// Size 0x20
-struct MessageInABottleGivenVoyageTelemetryEvent
-{
-public:
-	Struct Guid                                                  BottleId;                                          // 0x0(0x10)
-	Struct Guid                                                  VoyageId;                                          // 0x10(0x10)
-};
-
-
-// Size 0x58
-struct TreasureBuriedTelemetryEvent
-{
-public:
-	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	byte                                                         BootyType;                                         // 0x10(0x1)
-	Struct FString                                               Rarity;                                            // 0x18(0x10)
-	Struct Vector                                                TreasureLocation;                                  // 0x28(0xc)
-	Struct Guid                                                  MapId;                                             // 0x34(0x10)
-	Struct Guid                                                  BuriedByCrewId;                                    // 0x44(0x10)
-};
-
-
-// Size 0x50
-struct TreasureSpawnedTelemetryEvent
-{
-public:
-	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	byte                                                         BootyType;                                         // 0x10(0x1)
-	Struct FString                                               Rarity;                                            // 0x18(0x10)
-	byte                                                         Source;                                            // 0x28(0x1)
-	Struct FString                                               SourceId;                                          // 0x30(0x10)
-	Struct Vector                                                TreasureLocation;                                  // 0x40(0xc)
-};
-
-
-// Size 0x40
-struct TreasureSoldTelemetryEvent
-{
-public:
-	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	byte                                                         BootyType;                                         // 0x10(0x1)
-	Struct FString                                               Rarity;                                            // 0x18(0x10)
-	bool                                                         GoldAwarded;                                       // 0x28(0x1)
-	byte                                                         Source;                                            // 0x29(0x1)
-	Struct FString                                               TreasurePurchaser;                                 // 0x30(0x10)
-};
-
-
-// Size 0x38
-struct TreasureDroppedTelemetryEvent
-{
-public:
-	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	byte                                                         BootyType;                                         // 0x10(0x1)
-	Struct FString                                               Rarity;                                            // 0x18(0x10)
-	Struct FString                                               LocationOnShip;                                    // 0x28(0x10)
-};
-
-
-// Size 0x28
-struct TreasurePickedUpTelemetryEvent
-{
-public:
-	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	byte                                                         BootyType;                                         // 0x10(0x1)
-	Struct FString                                               Rarity;                                            // 0x18(0x10)
-};
-
-
-// Size 0x20
-struct TreasureSurfacedTelemetryEvent
-{
-public:
-	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	Struct FString                                               Rarity;                                            // 0x10(0x10)
-};
-
-
-// Size 0x38
-struct TreasureFoundTelemetryEvent
-{
-public:
-	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	Struct Guid                                                  QuestId;                                           // 0x10(0x10)
-	Struct FString                                               Rarity;                                            // 0x20(0x10)
-	bool                                                         IsBoobyTrapped;                                    // 0x30(0x1)
-};
-
-
-// Size 0x48
-struct BuriedTreasureChestParams
-{
-public:
-	int                                                          MaxSmallCrewSizeForNumDigsSelection;               // 0x0(0x4)
-	Struct WeightedProbabilityRange                              NumDigsRequiredForSmallCrewSize;                   // 0x8(0x20)
-	Struct WeightedProbabilityRange                              NumDigsRequiredForBiggerCrewSize;                  // 0x28(0x20)
-};
-
-
-// Size 0x8
-struct TreasureChestSoldClientPredictionEvent
-{
-public:
-	class                                                        Company;                                           // 0x0(0x8)
-};
-
-
-// Size 0x78
-struct TreasureChestSoldInContestNetworkEvent
-{
-public:
-	struct FName                                                 RewardId;                                          // 0x10(0x8)
-	Struct FText                                                 CrewName;                                          // 0x18(0x38)
-	Struct StringAssetReference                                  ToastBackgroundImage;                              // 0x50(0x10)
-	Struct StringAssetReference                                  BackgroundImage;                                   // 0x60(0x10)
-	struct FName                                                 AudioEventName;                                    // 0x70(0x8)
-};
-
-
-// Size 0x38
-struct TreasureChestSoldInAllianceNetworkEvent
-{
-public:
-	struct FName                                                 RewardId;                                          // 0x10(0x8)
-	Struct StringAssetReference                                  AllianceIcon;                                      // 0x18(0x10)
-	Struct StringAssetReference                                  StampIcon;                                         // 0x28(0x10)
-};
-
-
-// Size 0x28
-struct TreasureChestSoldNetworkEvent
-{
-public:
-	struct FName                                                 RewardId;                                          // 0x10(0x8)
-	Struct StringAssetReference                                  StampIcon;                                         // 0x18(0x10)
-};
-
-
-// Size 0x18
-struct ImpactProjectileData
-{
-public:
-	class                                                        ProjectileId;                                      // 0x0(0x8)
-	TArray<Struct ImpactSurfaceData>                             SurfaceList;                                       // 0x8(0x10)
-};
-
-
-// Size 0x10
-struct ImpactSurfaceData
-{
-public:
-	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	Class ImpactDataAsset*                                       ImpactData;                                        // 0x8(0x8)
-};
-
-
-// Size 0x1
-struct EventImpactVfxSpawned
-{
-public:
-};
-
-
-// Size 0x1c
-struct DeepSeaRegionData
-{
-public:
-	float                                                        DeepSeaRegionRadius;                               // 0x8(0x4)
-	float                                                        MaxSwimDepth;                                      // 0xc(0x4)
-	bool                                                         ShouldUseDeepSeaSwimmingBounds;                    // 0x10(0x1)
-	float                                                        SwimmingBoundsRadius;                              // 0x14(0x4)
-	float                                                        SlowDownZoneWidth;                                 // 0x18(0x4)
-};
-
-
-// Size 0x18
-struct DeepSeaRegionAmbienceAudio
-{
-public:
-	Class WwiseEvent*                                            PlayerInDeepSeaStart;                              // 0x0(0x8)
-	Class WwiseEvent*                                            PlayerInDeepSeaStop;                               // 0x8(0x8)
-	bool                                                         OnlyPostMoodMusicEventsWhenSubmerged;              // 0x10(0x1)
-};
-
-
-// Size 0x10
-struct DeepSeaRegionScreenEffects
-{
-public:
-	bool                                                         ShouldUseScreenEffects;                            // 0x0(0x1)
-	float                                                        DepthFadeEnd;                                      // 0x4(0x4)
-	float                                                        RadialFadeStart;                                   // 0x8(0x4)
-	float                                                        RadialFadeEnd;                                     // 0xc(0x4)
-};
-
-
-// Size 0x1
-struct OnExitedDeepSeaRegion
-{
-public:
-};
-
-
-// Size 0x10
-struct OnEnteredDeepSeaRegion
-{
-public:
-};
-
-
-// Size 0x50
 struct BuoyantObjectSpawnParams
 {
 public:
-	Class BuoyantObjectSpawnProfileDataAsset*                    DefaultSpawnProfile;                               // 0x0(0x8)
-	Class BuoyantObjectSpawnProfileDataAsset*                    ArenaSpawnProfile;                                 // 0x8(0x8)
-	Class BuoyantObjectSpawnProfileDataAsset*                    FloatingItemsWithBarrelsOfPlentySpawnProfile;      // 0x10(0x8)
-	Class BuoyantObjectSpawnProfileDataAsset*                    MerchantAllianceBarrelsOfPlentySpawnProfile;       // 0x18(0x8)
-	byte                                                         HitTestTraceChannel;                               // 0x20(0x1)
-	TArray<Class ExcludedShipSizes>                              ExcludedShipSizes;                                 // 0x28(0x10)
-	Struct BuoyantObjectSpawnDistributionParams                  SpawnDistributionParams;                           // 0x38(0x14)
+	Class BuoyantObjectSpawnProfileDataAsset*                    ArenaSpawnProfile;                                 // 0x0(0x8)
+	Class BuoyantObjectSpawnProfileDataAsset*                    FloatingItemsWithBarrelsOfPlentySpawnProfile;      // 0x8(0x8)
+	Class BuoyantObjectSpawnProfileDataAsset*                    MerchantAllianceBarrelsOfPlentySpawnProfile;       // 0x10(0x8)
+	byte                                                         HitTestTraceChannel;                               // 0x18(0x1)
+	TArray<Class ExcludedShipSizes>                              ExcludedShipSizes;                                 // 0x20(0x10)
+	Struct BuoyantObjectSpawnDistributionParams                  SpawnDistributionParams;                           // 0x30(0x14)
 };
 
 
@@ -27076,100 +27472,6 @@ public:
 };
 
 
-// Size 0x8
-struct PlayerFinishedInteractingWithNPCDialog
-{
-public:
-	Class Actor*                                                 Interactee;                                        // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct PlayerStartedInteractingWithNPCDialog
-{
-public:
-};
-
-
-// Size 0x8
-struct EventStartDialogueOnServer
-{
-public:
-	Class Actor*                                                 Interactor;                                        // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct InteractionClosedEvent
-{
-public:
-};
-
-
-// Size 0x28
-struct InteractionOptionSelectedNonUI
-{
-public:
-	struct FName                                                 EventName;                                         // 0x0(0x8)
-	Class Actor*                                                 InteractingPlayer;                                 // 0x8(0x8)
-	Struct Guid                                                  InstagatorCrewID;                                  // 0x10(0x10)
-	int                                                          Index;                                             // 0x20(0x4)
-};
-
-
-// Size 0xc
-struct InteractionOptionSelected
-{
-public:
-	struct FName                                                 EventName;                                         // 0x0(0x8)
-	int                                                          Index;                                             // 0x8(0x4)
-};
-
-
-// Size 0x1
-struct RequestCloseInteractionEvent
-{
-public:
-};
-
-
-// Size 0x20
-struct UpdateInteractionEvent
-{
-public:
-	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x20)
-};
-
-
-// Size 0x20
-struct InteractionDefinition
-{
-public:
-	Struct FString                                               Header;                                            // 0x0(0x10)
-	TArray<Struct InteractionOption>                             Options;                                           // 0x10(0x10)
-};
-
-
-// Size 0x40
-struct InteractionOption
-{
-public:
-	Struct FString                                               Text;                                              // 0x0(0x10)
-	int                                                          Index;                                             // 0x10(0x4)
-	Struct FString                                               Icon;                                              // 0x18(0x10)
-	Struct FString                                               IconNarrationText;                                 // 0x28(0x10)
-	bool                                                         IsEnabled;                                         // 0x38(0x1)
-};
-
-
-// Size 0x20
-struct StartInteractionEvent
-{
-public:
-	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x20)
-};
-
-
 // Size 0x4
 struct EventAmmoChanged
 {
@@ -27239,6 +27541,349 @@ struct EventReceiveAmmoTransferComponentState
 {
 public:
 	Class AmmoTransferComponent*                                 Source;                                            // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct CanvasLOD
+{
+public:
+	bool                                                         IsCanvasCountLimited;                              // 0x0(0x1)
+	int                                                          MaxNumCanvasesAtThisLOD;                           // 0x4(0x4)
+	float                                                        ResolutionScaler;                                  // 0x8(0x4)
+};
+
+
+// Size 0x70
+struct TreasureMapWidgetTextWithScaledWidthBackground
+{
+public:
+	Struct TreasureMapWidgetTexture                              Background;                                        // 0x38(0x28)
+	float                                                        MaxTextWidthForDefaultTextureScale;                // 0x60(0x4)
+	float                                                        MinScaleModifier;                                  // 0x64(0x4)
+	float                                                        MaxScaleModifier;                                  // 0x68(0x4)
+};
+
+
+// Size 0x30
+struct TreasureMapWidgetStreamedTexture
+{
+public:
+	Struct StringAssetReference                                  TexturePath;                                       // 0x18(0x10)
+	float                                                        RelativeHeightModifier;                            // 0x28(0x4)
+	bool                                                         FlipX;                                             // 0x2c(0x1)
+};
+
+
+// Size 0x20
+struct ClientCargoRunCrewDataUnit
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	TArray<Struct Guid>                                          NPCPickUpPoints;                                   // 0x10(0x10)
+};
+
+
+// Size 0x28
+struct CargoRunItemDropOffData
+{
+public:
+	Struct Guid                                                  PickUpId;                                          // 0x0(0x10)
+	Struct Guid                                                  DeliveryLocationId;                                // 0x10(0x10)
+};
+
+
+// Size 0x58
+struct CaptainedCrew
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	Struct Guid                                                  ShipId;                                            // 0x10(0x10)
+	struct FName                                                 SessionToken;                                      // 0x20(0x8)
+	Struct UniqueNetIdRepl                                       CaptainUserId;                                     // 0x28(0x18)
+	Struct FString                                               CaptainPirateId;                                   // 0x40(0x10)
+	bool                                                         IsFirstTimeSailingShip;                            // 0x50(0x1)
+};
+
+
+// Size 0x1
+struct RequestCaptainedSessionCrewDataEvent
+{
+public:
+};
+
+
+// Size 0x48
+struct ShipNameChangedOnServerEvent
+{
+public:
+	Struct FString                                               ShipName;                                          // 0x0(0x10)
+	Struct FText                                                 ScrambledShipName;                                 // 0x10(0x38)
+};
+
+
+// Size 0x10
+struct ShipNameChangedEvent
+{
+public:
+	Struct FString                                               ShipName;                                          // 0x0(0x10)
+};
+
+
+// Size 0x8
+struct PersistenceSettingChangedEvent
+{
+public:
+};
+
+
+// Size 0x58
+struct StartedCaptainedSessionEvent
+{
+public:
+};
+
+
+// Size 0x10
+struct StartedCaptainedSessionFailedEvent
+{
+public:
+};
+
+
+// Size 0x10
+struct CrewAbandonedCaptainedSessionEvent
+{
+public:
+};
+
+
+// Size 0x8
+struct DefenderLootLevelThreshold
+{
+public:
+	byte                                                         LootLevel;                                         // 0x0(0x1)
+	int                                                          Threshold;                                         // 0x4(0x4)
+};
+
+
+// Size 0x40
+struct RewardDefinition
+{
+public:
+	struct FName                                                 RewardIdentifier;                                  // 0x0(0x8)
+	Class PopUpMessageDesc*                                      PopUp;                                             // 0x8(0x8)
+	bool                                                         IgnorePopUp;                                       // 0x10(0x1)
+	TArray<class Rewards*>                                       Rewards;                                           // 0x18(0x10)
+	TArray<Class PrerequisiteEntitlements>                       PrerequisiteEntitlements;                          // 0x28(0x10)
+	bool                                                         AllowedFromInsecureSources;                        // 0x38(0x1)
+	bool                                                         AwardToAccountAndNotJustToPirate;                  // 0x39(0x1)
+	bool                                                         EmissaryExempt;                                    // 0x3a(0x1)
+};
+
+
+// Size 0xc8
+struct RewardRequestCrewGame
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	Struct Guid                                                  ShipId;                                            // 0x10(0x10)
+	TArray<Struct PirateIdentity>                                Pirates;                                           // 0x20(0x10)
+	struct FName                                                 EmissaryAffiliation;                               // 0x30(0x8)
+	struct FName                                                 FactionAffiliation;                                // 0x3c(0x8)
+	byte                                                         FactionDefenderLootLevel;                          // 0x4c(0x1)
+	Struct PirateIdentity                                        Captain;                                           // 0x50(0x78)
+};
+
+
+// Size 0x68
+struct RewardGrantedEvent
+{
+public:
+	Struct FString                                               RewardId;                                          // 0x0(0x10)
+	byte                                                         CurrencyId;                                        // 0x10(0x1)
+	Struct FString                                               CompanyId;                                         // 0x18(0x10)
+	TArray<Str Entitlements>                                     Entitlements;                                      // 0x30(0x10)
+	Struct Guid                                                  RequestID;                                         // 0x40(0x10)
+	Struct FString                                               DeferralReason;                                    // 0x50(0x10)
+	bool                                                         ShouldBePropagatedToOtherCrewMembers;              // 0x60(0x1)
+};
+
+
+// Size 0x38
+struct XPGrantedEvent
+{
+public:
+	struct FName                                                 CompanyId;                                         // 0x4(0x8)
+	Struct Guid                                                  RequestID;                                         // 0xc(0x10)
+	Struct Guid                                                  BootyId;                                           // 0x1c(0x10)
+	struct FName                                                 EmissaryAffiliation;                               // 0x2c(0x8)
+};
+
+
+// Size 0x30
+struct CurrencyGrantedEvent
+{
+public:
+	byte                                                         Currency;                                          // 0x4(0x1)
+	Struct Guid                                                  TransactionId;                                     // 0x8(0x10)
+	struct FName                                                 EmissaryAffiliation;                               // 0x18(0x8)
+	double                                                       EmissaryMultiplier;                                // 0x28(0x8)
+};
+
+
+// Size 0x18
+struct RewardRequestSucceededEvent
+{
+public:
+	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
+	struct FName                                                 RewardId;                                          // 0x10(0x8)
+};
+
+
+// Size 0x14
+struct RewardRequestFailedEvent
+{
+public:
+	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
+	byte                                                         FailureReason;                                     // 0x10(0x1)
+};
+
+
+// Size 0x90
+struct PenaltyRequestEvent
+{
+public:
+	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
+	Struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
+	struct FName                                                 PenaltyId;                                         // 0x88(0x8)
+};
+
+
+// Size 0xb8
+struct RewardRequestForPirateEvent
+{
+public:
+	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
+	Struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
+	Struct Guid                                                  CrewId;                                            // 0x88(0x10)
+	struct FName                                                 RewardId;                                          // 0x98(0x8)
+	struct FName                                                 CompanyAffiliation;                                // 0xa0(0x8)
+	struct FName                                                 EmissaryAffiliation;                               // 0xa8(0x8)
+	int                                                          EmissaryLevel;                                     // 0xb0(0x4)
+	bool                                                         FromInsecureSource;                                // 0xb4(0x1)
+	bool                                                         NotifyPlayer;                                      // 0xb5(0x1)
+};
+
+
+// Size 0x60
+struct DeferredRewardRequestEvent
+{
+public:
+	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
+	struct FName                                                 CompanyAffiliation;                                // 0x10(0x8)
+	struct FName                                                 RewardId;                                          // 0x18(0x8)
+	Struct FString                                               UserId;                                            // 0x20(0x10)
+	Struct FString                                               PirateId;                                          // 0x30(0x10)
+	bool                                                         RewardAccount;                                     // 0x40(0x1)
+	bool                                                         NotifyPlayer;                                      // 0x41(0x1)
+	bool                                                         DontRewardCurrency;                                // 0x42(0x1)
+	bool                                                         DontRewardXp;                                      // 0x43(0x1)
+	bool                                                         DontRewardSeasonXp;                                // 0x44(0x1)
+	Struct FString                                               DeferralReason;                                    // 0x48(0x10)
+	double                                                       RewardMultiplier;                                  // 0x58(0x8)
+};
+
+
+// Size 0xe0
+struct FactionLeaveFightRewardEvent
+{
+public:
+	Struct RewardRequestCrewGame                                 Recipient;                                         // 0x0(0xc8)
+	Struct Guid                                                  RequestID;                                         // 0xc8(0x10)
+	int                                                          SandOfFateGoldLevel;                               // 0xd8(0x4)
+	byte                                                         PlayMode;                                          // 0xdc(0x1)
+	byte                                                         PlayModeVariant;                                   // 0xdd(0x1)
+};
+
+
+// Size 0x128
+struct AllianceRewardRequestEvent
+{
+public:
+	Struct Guid                                                  AllianceId;                                        // 0x0(0x10)
+	Struct Guid                                                  RequestID;                                         // 0x10(0x10)
+	Struct RewardRequestCrewGame                                 PrimaryRecipient;                                  // 0x20(0xc8)
+	TArray<Struct RewardRequestCrewGame>                         SecondaryRecipients;                               // 0xe8(0x10)
+	struct FName                                                 RewardId;                                          // 0xf8(0x8)
+	struct FName                                                 CompanyAffiliation;                                // 0x100(0x8)
+	Struct Guid                                                  BootyId;                                           // 0x108(0x10)
+	struct FName                                                 NPCName;                                           // 0x118(0x8)
+	bool                                                         NotifyPlayer;                                      // 0x120(0x1)
+	bool                                                         DontRewardCurrency;                                // 0x121(0x1)
+	bool                                                         DontRewardXp;                                      // 0x122(0x1)
+	bool                                                         DontRewardSeasonXp;                                // 0x123(0x1)
+	bool                                                         DontRewardAllegiance;                              // 0x124(0x1)
+	bool                                                         SkipXpToAllegianceMultiplier;                      // 0x125(0x1)
+};
+
+
+// Size 0x50
+struct RewardRequestEvent
+{
+public:
+	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
+	TArray<Struct PirateIdentity>                                PirateIdentities;                                  // 0x10(0x10)
+	Struct Guid                                                  CrewId;                                            // 0x20(0x10)
+	struct FName                                                 RewardId;                                          // 0x30(0x8)
+	struct FName                                                 CompanyAffiliation;                                // 0x38(0x8)
+	struct FName                                                 EmissaryAffiliation;                               // 0x40(0x8)
+	int                                                          EmissaryLevel;                                     // 0x48(0x4)
+	bool                                                         NotifyPlayer;                                      // 0x4c(0x1)
+};
+
+
+// Size 0x18
+struct WeightedRewardDistribution
+{
+public:
+	TArray<Struct WeightedRewardEntry>                           RewardWeightings;                                  // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct WeightedRewardEntry
+{
+public:
+	Struct RewardId                                              Reward;                                            // 0x0(0x8)
+	Struct FString                                               WeightingConfigurationKey;                         // 0x8(0x10)
+	float                                                        FallbackWeight;                                    // 0x18(0x4)
+};
+
+
+// Size 0x10
+struct WeightedRewardTable
+{
+public:
+	TArray<Struct WeightedRewardTableUnit>                       Rewards;                                           // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct WeightedRewardTableUnit
+{
+public:
+	class                                                        Entitlement;                                       // 0x0(0x8)
+	float                                                        Weight;                                            // 0x8(0x4)
+};
+
+
+// Size 0x38
+struct RewardRuntimeDefinition
+{
+public:
+	Class PopUpMessageDesc*                                      PopUp;                                             // 0x8(0x8)
+	TArray<Class PrerequisiteEntitlements>                       PrerequisiteEntitlements;                          // 0x20(0x10)
 };
 
 
@@ -27631,6 +28276,170 @@ public:
 };
 
 
+// Size 0x1
+struct ItemLoadoutSetEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct ItemLoadoutSlotsUpdatedEvent
+{
+public:
+};
+
+
+// Size 0x8
+struct ItemLoadoutItemCategoryRemovedEvent
+{
+public:
+	class                                                        ItemCategory;                                      // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct ItemLoadoutItemRemovedEvent
+{
+public:
+	Class ItemInfo*                                              Item;                                              // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct ItemLoadoutItemCategoryAddedEvent
+{
+public:
+	class                                                        ItemCategory;                                      // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct ItemLoadoutItemAddedEvent
+{
+public:
+	Class ItemInfo*                                              Item;                                              // 0x0(0x8)
+};
+
+
+// Size 0x48
+struct CategorisedLoadout
+{
+public:
+	TArray<Struct LoadoutCategory>                               ItemLoadout;                                       // 0x0(0x10)
+	TArray<Struct LoadoutCategory>                               ClothingLoadout;                                   // 0x10(0x10)
+	TArray<Struct LoadoutPetCategory>                            PetLoadout;                                        // 0x20(0x10)
+	bool                                                         PetNamingDisallowed;                               // 0x30(0x1)
+	bool                                                         InitialLoadout;                                    // 0x31(0x1)
+	Struct FString                                               Hash;                                              // 0x38(0x10)
+};
+
+
+// Size 0x30
+struct LoadoutPetCategory
+{
+public:
+	Struct FString                                               PetEntitlementId;                                  // 0x0(0x10)
+	Struct FString                                               PetCustomizationEntitlementId;                     // 0x10(0x10)
+	Struct FString                                               PetName;                                           // 0x20(0x10)
+};
+
+
+// Size 0x20
+struct LoadoutCategory
+{
+public:
+	Struct FString                                               CategoryName;                                      // 0x0(0x10)
+	Struct FString                                               EntitlementId;                                     // 0x10(0x10)
+};
+
+
+// Size 0x1
+struct TitleLoadoutUpdatedEvent
+{
+public:
+};
+
+
+// Size 0x14
+struct EncounterHandle
+{
+public:
+};
+
+
+// Size 0x30
+struct Encounter
+{
+public:
+	Class Actor*                                                 EncounterActor;                                    // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct EncounterListener
+{
+public:
+	Class Actor*                                                 EncounterListenerActor;                            // 0x0(0x8)
+	Struct Vector                                                EncounterListenerLocation;                         // 0x8(0xc)
+	byte                                                         EncounterListenerType;                             // 0x14(0x1)
+};
+
+
+// Size 0x20
+struct EncounterServiceParams
+{
+public:
+	TArray<Struct EncounterServiceEntry>                         EncounterList;                                     // 0x0(0x10)
+	int                                                          MinEventsToTriggerPerCycle;                        // 0x10(0x4)
+	double                                                       SecondsToSpendTriggeringEventsPerCycle;            // 0x18(0x8)
+};
+
+
+// Size 0x18
+struct EncounterServiceEntry
+{
+public:
+	byte                                                         EncounterListenerType;                             // 0x0(0x1)
+	TArray<Byte ValidEncounterTypes>                             ValidEncounterTypes;                               // 0x8(0x10)
+};
+
+
+// Size 0x40
+struct EncounterListenerData
+{
+public:
+	TArray<Byte EncounterListenerTypes>                          EncounterListenerTypes;                            // 0x0(0x10)
+	TArray<class EncounterListenerActors*>                       EncounterListenerActors;                           // 0x10(0x10)
+	TArray<Struct Vector>                                        EncounterListenerLocations;                        // 0x20(0x10)
+};
+
+
+// Size 0x20
+struct EventEncounterEnd
+{
+public:
+};
+
+
+// Size 0x20
+struct EventEncounterBase
+{
+public:
+	Struct Guid                                                  EncounterId;                                       // 0x0(0x10)
+	Class Actor*                                                 EncounterActor;                                    // 0x10(0x8)
+	byte                                                         EncounterType;                                     // 0x18(0x1)
+	float                                                        EncounterRadiusSquared;                            // 0x1c(0x4)
+};
+
+
+// Size 0x20
+struct EventEncounterStart
+{
+public:
+};
+
+
 // Size 0x10
 struct EventClearCrewProgressOverride
 {
@@ -27882,8 +28691,10 @@ public:
 	Class Texture*                                               CrewLiveryOverlayIcon;                             // 0x28(0x8)
 	byte                                                         ReapersMarkLevel;                                  // 0x30(0x1)
 	byte                                                         EmissaryLevel;                                     // 0x31(0x1)
-	bool                                                         OwnerIsMaxFaction;                                 // 0x32(0x1)
+	bool                                                         OwnerIsInFaction;                                  // 0x32(0x1)
+	bool                                                         OwnerIsMaxFaction;                                 // 0x33(0x1)
 	struct FName                                                 OwnerFactionName;                                  // 0x34(0x8)
+	bool                                                         OwnerIsInvadingShip;                               // 0x3c(0x1)
 };
 
 
@@ -27898,6 +28709,46 @@ public:
 struct RiddleQuestGateCompletedEvent
 {
 public:
+};
+
+
+// Size 0x10
+struct FeedStruct
+{
+public:
+	Class Actor*                                                 ActorToFeed;                                       // 0x0(0x8)
+	bool                                                         WantRules;                                         // 0x8(0x1)
+};
+
+
+// Size 0x1
+struct EventStarved
+{
+public:
+};
+
+
+// Size 0x4
+struct EventStarvingAmountChanged
+{
+public:
+	float                                                        PercentageStarved;                                 // 0x0(0x4)
+};
+
+
+// Size 0x8
+struct EventJustBeenFed
+{
+public:
+	Class Actor*                                                 FedBy;                                             // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventStartedBeingFed
+{
+public:
+	Class Actor*                                                 FedBy;                                             // 0x0(0x8)
 };
 
 
@@ -28136,6 +28987,336 @@ struct MerchantMapLayoutItem
 public:
 	Struct TreasureMapWidgetText                                 Name;                                              // 0x0(0x38)
 	Struct TreasureMapWidgetTexture                              IconImage;                                         // 0x38(0x28)
+};
+
+
+// Size 0x40
+struct StorageContainerBackingStore
+{
+public:
+	TArray<Struct AllowedItemsBasedOnFeature>                    AllowedItems;                                      // 0x0(0x10)
+	int                                                          MaxCapacityPerNode;                                // 0x10(0x4)
+	int                                                          MaxNumNodes;                                       // 0x14(0x4)
+	int                                                          MaxCapacityTotal;                                  // 0x18(0x4)
+	TArray<Struct StorageContainerNode>                          ContainerNodes;                                    // 0x20(0x10)
+	bool                                                         AllowedItemsAreCached;                             // 0x30(0x1)
+	Class ContainerAllowedItemsDataAsset*                        CachedAllowedItems;                                // 0x38(0x8)
+};
+
+
+// Size 0x10
+struct StorageContainerNode
+{
+public:
+	class                                                        ItemDesc;                                          // 0x0(0x8)
+	int                                                          NumItems;                                          // 0x8(0x4)
+};
+
+
+// Size 0x10
+struct AllowedItemsBasedOnFeature
+{
+public:
+	struct FName                                                 FeatureName;                                       // 0x0(0x8)
+	Class ContainerAllowedItemsDataAsset*                        AllowedItems;                                      // 0x8(0x8)
+};
+
+
+// Size 0x30
+struct InventoryInteractionUpdateEvent
+{
+public:
+	TArray<Struct IInventoryItem>                                Current;                                           // 0x0(0x10)
+	TArray<Struct IInventoryItem>                                Available;                                         // 0x10(0x10)
+	TArray<Struct IInventoryItemDescription>                     Descriptions;                                      // 0x20(0x10)
+};
+
+
+// Size 0x4
+struct InventoryInteractionTakeAllRequestEvent
+{
+public:
+	int                                                          Index;                                             // 0x0(0x4)
+};
+
+
+// Size 0x4
+struct InventoryInteractionTakeRequestEvent
+{
+public:
+	int                                                          Index;                                             // 0x0(0x4)
+};
+
+
+// Size 0x10
+struct InventoryInteractionStowAllRequestEvent
+{
+public:
+	Struct FString                                               ItemDesc;                                          // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct InventoryInteractionStowRequestEvent
+{
+public:
+	Struct FString                                               ItemDesc;                                          // 0x0(0x10)
+};
+
+
+// Size 0x1
+struct InventoryInteractionClosedEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct CloseInventoryInteractionEvent
+{
+public:
+};
+
+
+// Size 0x48
+struct OpenInventoryInteractionEvent
+{
+public:
+	Struct FString                                               InventoryName;                                     // 0x0(0x10)
+	TArray<Struct IInventoryItem>                                Current;                                           // 0x10(0x10)
+	TArray<Struct IInventoryItem>                                Available;                                         // 0x20(0x10)
+	TArray<Struct IInventoryItemDescription>                     Descriptions;                                      // 0x30(0x10)
+	bool                                                         CanPlayerStoreItems;                               // 0x40(0x1)
+};
+
+
+// Size 0x8
+struct EventStorageContainerContentsChanged
+{
+public:
+	Class StorageContainerComponent*                             Source;                                            // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventReceiveStorageContainerComponentState
+{
+public:
+	Class StorageContainerComponent*                             Source;                                            // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct StorageContainerContentSpawnerOutput
+{
+public:
+	class                                                        ItemDesc;                                          // 0x0(0x8)
+};
+
+
+// Size 0x40
+struct StorageContainerContentSpawnerEntry
+{
+public:
+	class                                                        ItemDesc;                                          // 0x0(0x8)
+	Class StorageContainerSpawnerItemListBase*                   ItemList;                                          // 0x8(0x8)
+	Struct WeightedProbabilityRangeOfRanges                      AmountToStock;                                     // 0x10(0x30)
+};
+
+
+// Size 0x18
+struct StorageContainerWeightedItemListFeatureGroup
+{
+public:
+	struct FName                                                 Feature;                                           // 0x0(0x8)
+	TArray<Struct StorageContainerWeightedItemListEntry>         Entries;                                           // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct StorageContainerWeightedItemListEntry
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	class                                                        ItemDesc;                                          // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct StorageContainerWeightedItemListEntryList
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	TArray<Struct StorageContainerWeightedItemListEntry>         Entries;                                           // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct SpawnerTypeMappings
+{
+public:
+	TArray<Struct SpawnerTypeMapping>                            Mappings;                                          // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct SpawnerTypeMapping
+{
+public:
+	class                                                        Type;                                              // 0x0(0x8)
+	Class StorageContainerContentSpawner*                        Spawner;                                           // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct TypedStorageContainerContentTypeSelectorEntry
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	int                                                          MinimumUses;                                       // 0x4(0x4)
+	int                                                          MaximumUses;                                       // 0x8(0x4)
+	class                                                        ContentSpawnerType;                                // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct StorageContainerContentTypeSelectorEntry
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	int                                                          MinimumUses;                                       // 0x4(0x4)
+	int                                                          MaximumUses;                                       // 0x8(0x4)
+	Class StorageContainerContentSpawner*                        ContentSpawner;                                    // 0x10(0x8)
+};
+
+
+// Size 0x20
+struct CategoryTypeMapEntry
+{
+public:
+	Struct FString                                               Type;                                              // 0x0(0x10)
+	TArray<Class Categories>                                     Categories;                                        // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct StorageContainerHealthChangedCloseInventoryRpc
+{
+public:
+};
+
+
+// Size 0x18
+struct StorageContainerUnregisterServerEventsRpc
+{
+public:
+	Class Object*                                                InStorageContainerOwnerObject;                     // 0x10(0x8)
+};
+
+
+// Size 0x30
+struct StowAllItemsToContainerRPC
+{
+public:
+	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
+	class                                                        ItemDescToStow;                                    // 0x28(0x8)
+};
+
+
+// Size 0x30
+struct StowItemToContainerRPC
+{
+public:
+	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
+	class                                                        ItemDescToStow;                                    // 0x28(0x8)
+};
+
+
+// Size 0x28
+struct TakeAllItemsFromContainerRPC
+{
+public:
+	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
+	int                                                          IndexToTake;                                       // 0x24(0x4)
+};
+
+
+// Size 0x28
+struct TakeItemFromContainerRPC
+{
+public:
+	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
+	int                                                          IndexToTake;                                       // 0x24(0x4)
+};
+
+
+// Size 0x50
+struct CaptainsShopInventoryCountsResponseEvent
+{
+public:
+};
+
+
+// Size 0x10
+struct CaptainsShopInventoryCountsRequestEvent
+{
+public:
+	TArray<Str Requests>                                         Requests;                                          // 0x0(0x10)
+};
+
+
+// Size 0x8
+struct EventObtainedFromContainer
+{
+public:
+};
+
+
+// Size 0x8
+struct EventStorageContainerDestroyed
+{
+public:
+	Class Object*                                                Replenishable;                                     // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventStorageContainerCreated
+{
+public:
+	Class Object*                                                Replenishable;                                     // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct QuickTransferTelemetryEvent
+{
+public:
+	Struct FString                                               SrcClass;                                          // 0x0(0x10)
+	Struct FString                                               DestClass;                                         // 0x10(0x10)
+	float                                                        TransferTime;                                      // 0x20(0x4)
+	int                                                          NumTransferred;                                    // 0x24(0x4)
+	bool                                                         Giving;                                            // 0x28(0x1)
+};
+
+
+// Size 0x28
+struct PlayerItemAddToContainerTelemetryEvent
+{
+public:
+	Struct FString                                               ContainerId;                                       // 0x0(0x10)
+	Struct FString                                               ItemType;                                          // 0x10(0x10)
+	int                                                          NumberOfItemsInContainer;                          // 0x20(0x4)
+};
+
+
+// Size 0x28
+struct PlayerItemRetrievalFromContainerTelemetryEvent
+{
+public:
+	Struct FString                                               ContainerId;                                       // 0x0(0x10)
+	Struct FString                                               ItemType;                                          // 0x10(0x10)
+	int                                                          NumberOfItemsRemainingInContainer;                 // 0x20(0x4)
 };
 
 
@@ -28571,6 +29752,78 @@ public:
 };
 
 
+// Size 0x1
+struct EventApplicationAccountLinkingEventRequest
+{
+public:
+};
+
+
+// Size 0x1
+struct EventApplicationSignOutRequest
+{
+public:
+};
+
+
+// Size 0x1
+struct EventApplicationStartRequest
+{
+public:
+};
+
+
+// Size 0x1
+struct EventApplicationExitRequest
+{
+public:
+};
+
+
+// Size 0x1
+struct EventApplicationResumed
+{
+public:
+};
+
+
+// Size 0x1
+struct EventApplicationSuspended
+{
+public:
+};
+
+
+// Size 0x1
+struct EventApplicationReactivated
+{
+public:
+};
+
+
+// Size 0x1
+struct EventApplicationDeactivated
+{
+public:
+};
+
+
+// Size 0x10
+struct GameSessionIdTelemetryFragmentInput
+{
+public:
+};
+
+
+// Size 0x20
+struct GameSessionIdTelemetryFragment
+{
+public:
+	Struct FString                                               SessionHostId;                                     // 0x0(0x10)
+	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
+};
+
+
 // Size 0x10
 struct CampfireDamageLightingChance
 {
@@ -28879,52 +30132,6 @@ public:
 	TArray<Struct VotersByOption>                                Votes;                                             // 0x0(0x10)
 	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
 	bool                                                         IsLocked;                                          // 0x20(0x1)
-};
-
-
-// Size 0x30
-struct TeleportLocation
-{
-public:
-	bool                                                         Valid;                                             // 0x0(0x1)
-	struct FName                                                 Description;                                       // 0x4(0x8)
-	Class SceneComponent*                                        TeleportBase;                                      // 0x10(0x8)
-	Struct Vector                                                TeleportLocation;                                  // 0x18(0xc)
-	Struct Rotator                                               TeleportRotation;                                  // 0x24(0xc)
-};
-
-
-// Size 0x78
-struct TeleportActionStateConstructionInfo
-{
-public:
-	Struct TeleportLocation                                      TeleportLocationOverride;                          // 0x30(0x30)
-	byte                                                         TeleportFadeType;                                  // 0x60(0x1)
-	int                                                          StreamInLevelId;                                   // 0x64(0x4)
-	int                                                          StreamOutLevelId;                                  // 0x68(0x4)
-	byte                                                         TeleportConditions;                                // 0x6c(0x1)
-	bool                                                         ShouldPlayTeleportSFX;                             // 0x6d(0x1)
-	bool                                                         ShouldWaitForLoadout;                              // 0x6f(0x1)
-	bool                                                         ShouldWaitForEntitlements;                         // 0x70(0x1)
-	bool                                                         CallFinishSpawningOnEnd;                           // 0x71(0x1)
-	byte                                                         Reason;                                            // 0x72(0x1)
-	byte                                                         TeleportSpace;                                     // 0x73(0x1)
-};
-
-
-// Size 0x30
-struct EventTeleportLocationDestroyed
-{
-public:
-	Struct TeleportLocation                                      TeleportLocation;                                  // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct EventTeleportLocationCreated
-{
-public:
-	Struct TeleportLocation                                      TeleportLocation;                                  // 0x0(0x30)
 };
 
 
@@ -29398,27 +30605,29 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 struct HitRegCapsuleTargetData
 {
 public:
-	Class Actor*                                                 CapsuleOwner;                                      // 0x0(0x8)
-	Struct Vector                                                Center;                                            // 0x8(0xc)
-	float                                                        HalfHeight;                                        // 0x14(0x4)
-	float                                                        Radius;                                            // 0x18(0x4)
-	Struct Quat                                                  Rotation;                                          // 0x20(0x10)
+	int                                                          CapsuleOwnerId;                                    // 0x0(0x4)
+	Struct FString                                               OwnerName;                                         // 0x8(0x10)
+	Struct Vector                                                Center;                                            // 0x18(0xc)
+	float                                                        HalfHeight;                                        // 0x24(0x4)
+	float                                                        Radius;                                            // 0x28(0x4)
+	Struct Quat                                                  Rotation;                                          // 0x30(0x10)
 };
 
 
-// Size 0x28
+// Size 0x38
 struct HitRegRewindSnapshot
 {
 public:
-	Class Actor*                                                 CapsuleOwner;                                      // 0x0(0x8)
-	float                                                        HalfHeight;                                        // 0x8(0x4)
-	float                                                        Radius;                                            // 0xc(0x4)
-	float                                                        TimeStampModifier;                                 // 0x10(0x4)
-	Struct ReplicatedRewindBuffer                                RewindBuffer;                                      // 0x18(0x10)
+	int                                                          CapsuleOwnerId;                                    // 0x0(0x4)
+	Struct FString                                               OwnerName;                                         // 0x8(0x10)
+	float                                                        HalfHeight;                                        // 0x18(0x4)
+	float                                                        Radius;                                            // 0x1c(0x4)
+	float                                                        TimeStampModifier;                                 // 0x20(0x4)
+	Struct ReplicatedRewindBuffer                                RewindBuffer;                                      // 0x28(0x10)
 };
 
 
@@ -29469,7 +30678,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x50
 struct HitRegTrailData
 {
 public:
@@ -29480,7 +30689,8 @@ public:
 	Struct Vector                                                GravityStartPoint;                                 // 0x18(0xc)
 	Struct Vector                                                ImpactPoint;                                       // 0x24(0xc)
 	Class PrimitiveComponent*                                    ImpactedComponent;                                 // 0x30(0x8)
-	Class Actor*                                                 ImpactedActor;                                     // 0x38(0x8)
+	Struct FString                                               ImpactedActorName;                                 // 0x38(0x10)
+	int                                                          ImpactedActorNetId;                                // 0x48(0x4)
 };
 
 
@@ -29504,7 +30714,7 @@ public:
 };
 
 
-// Size 0xf0
+// Size 0x100
 struct HitRegSnapshotProjectileRecord
 {
 public:
@@ -29518,11 +30728,11 @@ public:
 	Class Object*                                                WeaponMesh;                                        // 0x70(0x8)
 	int                                                          AttackGroupSize;                                   // 0x78(0x4)
 	int                                                          SubAttackGroupId;                                  // 0x7c(0x4)
-	Struct HitRegTrailData                                       ProjectileTrail;                                   // 0x80(0x40)
-	TArray<Struct HitRegCapsuleTargetData>                       PossibleTargetCapsules;                            // 0xc0(0x10)
-	TArray<Struct HitRegRewindSnapshot>                          RewindSnapshots;                                   // 0xd0(0x10)
-	double                                                       RewoundTime;                                       // 0xe0(0x8)
-	double                                                       PreCorrectionRewoundTime;                          // 0xe8(0x8)
+	Struct HitRegTrailData                                       ProjectileTrail;                                   // 0x80(0x50)
+	TArray<Struct HitRegCapsuleTargetData>                       PossibleTargetCapsules;                            // 0xd0(0x10)
+	TArray<Struct HitRegRewindSnapshot>                          RewindSnapshots;                                   // 0xe0(0x10)
+	double                                                       RewoundTime;                                       // 0xf0(0x8)
+	double                                                       PreCorrectionRewoundTime;                          // 0xf8(0x8)
 };
 
 
@@ -29592,12 +30802,12 @@ public:
 };
 
 
-// Size 0x110
+// Size 0x120
 struct HitRegRecordProjectileShotRpc
 {
 public:
 	Struct Guid                                                  AttackId;                                          // 0x10(0x10)
-	Struct HitRegSnapshotProjectileRecord                        AttackRecord;                                      // 0x20(0xf0)
+	Struct HitRegSnapshotProjectileRecord                        AttackRecord;                                      // 0x20(0x100)
 };
 
 
@@ -30129,26 +31339,6 @@ struct CurrentPhaseData
 {
 public:
 	Struct BattleElevatorEventRoomPhase                          CurrentPhase;                                      // 0x0(0x38)
-};
-
-
-// Size 0x80
-struct CinematicQuestEvent
-{
-public:
-	Struct FText                                                 Message;                                           // 0x0(0x38)
-	Struct FText                                                 Header;                                            // 0x38(0x38)
-	struct FName                                                 Tag;                                               // 0x70(0x8)
-	bool                                                         DisableMusic;                                      // 0x78(0x1)
-};
-
-
-// Size 0x8
-struct ItemUseSpeedParams
-{
-public:
-	float                                                        LookSpeedScalar;                                   // 0x0(0x4)
-	float                                                        MaxMoveSpeedScalar;                                // 0x4(0x4)
 };
 
 
@@ -30772,6 +31962,13 @@ public:
 
 
 // Size 0x1
+struct HuntersCryDisableTimedFail
+{
+public:
+};
+
+
+// Size 0x1
 struct HuntersCryFailEvent
 {
 public:
@@ -30796,6 +31993,64 @@ public:
 struct EventBellRung
 {
 public:
+};
+
+
+// Size 0x1c
+struct BuryDecal
+{
+public:
+	Struct Guid                                                  Id;                                                // 0x0(0x10)
+	Struct Vector                                                Location;                                          // 0x10(0xc)
+};
+
+
+// Size 0x14
+struct BuriedFactor
+{
+public:
+	int                                                          CurrentBuriedFactor;                               // 0x0(0x4)
+	int                                                          FactorToConsiderFullyBuried;                       // 0x4(0x4)
+	int                                                          BuryStep;                                          // 0x8(0x4)
+	int                                                          ExhumeStep;                                        // 0xc(0x4)
+	byte                                                         LastDigDirection;                                  // 0x10(0x1)
+};
+
+
+// Size 0x28
+struct ItemDiggingMergedConfig
+{
+public:
+	Class ItemDiggingBaseConfig*                                 BaseConfig;                                        // 0x0(0x8)
+	Class ItemDiggingAnimationConfig*                            AnimationConfig;                                   // 0x8(0x8)
+	Class ItemDiggingEffectsConfig*                              EffectsConfig;                                     // 0x10(0x8)
+	Class ItemDiggingAudioConfig*                                AudioConfig;                                       // 0x18(0x8)
+	Class ItemDiggingBuryConfig*                                 BuryingConfig;                                     // 0x20(0x8)
+};
+
+
+// Size 0x8
+struct EventBuriedItemRevealed
+{
+public:
+	Class ItemInfo*                                              BuriedItem;                                        // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct PlayerStartedDiggingEvent
+{
+public:
+	Class Actor*                                                 ActorBeingDugUp;                                   // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct EventDiggingStarted
+{
+public:
+	byte                                                         DigDirection;                                      // 0x0(0x1)
+	Class Actor*                                                 ActorBeingDugUp;                                   // 0x8(0x8)
 };
 
 
@@ -31157,6 +32412,36 @@ public:
 };
 
 
+// Size 0x60
+struct TunnelCreatureDiorama
+{
+public:
+	Struct Transform                                             DioramaTransform;                                  // 0x0(0x30)
+	float                                                        ChanceToSpawnCreatures;                            // 0x30(0x4)
+	Class InvasionTunnelSceneryCreatureDioramaGroup*             CreaturePool;                                      // 0x38(0x8)
+	bool                                                         OverrideCreatureDioramaTypes;                      // 0x40(0x1)
+	Struct WeightedTunnelCreatureDioramaCollection               OverrideCreaturePool;                              // 0x48(0x18)
+};
+
+
+// Size 0x18
+struct WeightedTunnelCreatureDioramaCollection
+{
+public:
+	TArray<Struct WeightedTunnelCreatureDioramaType>             CreatureDioramas;                                  // 0x0(0x10)
+	float                                                        CumulativeWeight;                                  // 0x10(0x4)
+};
+
+
+// Size 0x20
+struct WeightedTunnelCreatureDioramaType
+{
+public:
+	class                                                        DioramaClassType;                                  // 0x0(0x8)
+	float                                                        SelectionChance;                                   // 0x8(0x4)
+};
+
+
 // Size 0x10
 struct ShipSpecificData
 {
@@ -31226,6 +32511,15 @@ public:
 };
 
 
+// Size 0x18
+struct ArrivalTunnelOfTheDamnedCompletedTelemetryEvent
+{
+public:
+	Struct Vector                                                DestinationLocation;                               // 0x0(0xc)
+	Struct Rotator                                               DestinationRotation;                               // 0xc(0xc)
+};
+
+
 // Size 0x10
 struct TunnelOfTheDamnedMigrationFailedTelemetryEvent
 {
@@ -31291,19 +32585,21 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x20
 struct TunnelOfTheDamnedBaseTelemetryFragmentInput
 {
 public:
 	Struct Guid                                                  TunnelInstanceId;                                  // 0x0(0x10)
+	Struct FString                                               TunnelType;                                        // 0x10(0x10)
 };
 
 
-// Size 0x10
+// Size 0x20
 struct TunnelOfTheDamnedBaseTelemetryFragment
 {
 public:
 	Struct Guid                                                  TunnelInstanceId;                                  // 0x0(0x10)
+	Struct FString                                               TunnelType;                                        // 0x10(0x10)
 };
 
 
@@ -31327,6 +32623,14 @@ struct CrewEnteredTunnelOfTheDamnedPortalProximityEvent
 {
 public:
 	Class Actor*                                                 Ship;                                              // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct TunnelOfTheDamnedFailedNetworkEvent
+{
+public:
+	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x10(0x8)
 };
 
 
@@ -31484,6 +32788,22 @@ public:
 };
 
 
+// Size 0x30
+struct SinkingTunnelOfTheDamnedActionStateConstructionInfo
+{
+public:
+};
+
+
+// Size 0x20
+struct SinkingTunnelOfTheDamnedActionStateParams
+{
+public:
+	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x0(0x1c)
+	float                                                        ClientSetupResponseTimeout;                        // 0x1c(0x4)
+};
+
+
 // Size 0x10
 struct TunnelOfTheDamnedMigrationFailed
 {
@@ -31505,6 +32825,13 @@ struct TunnelsOfTheDamnedMigrationDataEntry
 public:
 	Struct Transform                                             ShipsTransform;                                    // 0x0(0x30)
 	Struct Guid                                                  CrewId;                                            // 0x30(0x10)
+};
+
+
+// Size 0x1
+struct InvasionDepartureTunnelRivalCrewFoundEvent
+{
+public:
 };
 
 
@@ -31708,7 +33035,7 @@ public:
 	int                                                          IslandIndex;                                       // 0x10(0x4)
 	int                                                          NumXs;                                             // 0x14(0x4)
 	int                                                          MapCreatedByPlayerNameOverrideIndex;               // 0x18(0x4)
-	Struct Guid                                                  MapId;                                             // 0x1c(0x10)
+	Struct Guid                                                  MapID;                                             // 0x1c(0x10)
 	Struct FString                                               MapCreatedByPlayerName;                            // 0x30(0x10)
 };
 
@@ -31797,7 +33124,7 @@ public:
 	Struct Guid                                                  MapBundleId;                                       // 0x0(0x10)
 	Struct Guid                                                  TakingCrewId;                                      // 0x10(0x10)
 	Struct Guid                                                  TakingCrewSessionId;                               // 0x20(0x10)
-	Struct Guid                                                  MapId;                                             // 0x30(0x10)
+	Struct Guid                                                  MapID;                                             // 0x30(0x10)
 	bool                                                         IsPlayerGenerated;                                 // 0x40(0x1)
 };
 
@@ -31809,7 +33136,7 @@ public:
 	Struct Guid                                                  MapBundleId;                                       // 0x0(0x10)
 	Struct Guid                                                  OwningCrewID;                                      // 0x10(0x10)
 	Struct Guid                                                  OwningCrewSessionId;                               // 0x20(0x10)
-	Struct Guid                                                  MapId;                                             // 0x30(0x10)
+	Struct Guid                                                  MapID;                                             // 0x30(0x10)
 };
 
 
@@ -32045,6 +33372,13 @@ public:
 };
 
 
+// Size 0x10
+struct EventCrewShipManifestCurrentActiveVoyageUpdated
+{
+public:
+};
+
+
 // Size 0x18
 struct EventCrewShipManifestCurrentActiveTaleUpdated
 {
@@ -32061,6 +33395,15 @@ public:
 	Struct HullCharringPersistenceModel                          HullCharringModel;                                 // 0x20(0x18)
 	Struct MapTablePersistenceModel                              MapTablePersistenceModel;                          // 0x38(0x10)
 	Struct ShipInternalWaterPersistenceModel                     InternalWaterModel;                                // 0x48(0x4)
+};
+
+
+// Size 0x20
+struct ShipVoyageSaveData
+{
+public:
+	TArray<Struct ShipVoyageModel>                               AddedVoyages;                                      // 0x0(0x10)
+	TArray<Struct ShipVoyageModel>                               RemovedVoyages;                                    // 0x10(0x10)
 };
 
 
@@ -32257,35 +33600,42 @@ public:
 };
 
 
-// Size 0xa0
+// Size 0x14
+struct NetAccoladeModel
+{
+public:
+	Struct Guid                                                  GoalId;                                            // 0x0(0x10)
+	int                                                          Progress;                                          // 0x10(0x4)
+};
+
+
+// Size 0x48
 struct CaptainsLogbookCrewMember
 {
 public:
 	Class PlayerState*                                           PlayerState;                                       // 0x0(0x8)
 	Struct FString                                               PirateName;                                        // 0x8(0x10)
-	Struct FString                                               ScrambledPirateName;                               // 0x18(0x10)
-	Struct FText                                                 PirateTitle;                                       // 0x28(0x38)
-	int                                                          PirateTitleIndex;                                  // 0x60(0x4)
-	Struct FString                                               PirateNickname;                                    // 0x68(0x10)
-	Struct FString                                               PetName;                                           // 0x78(0x10)
-	bool                                                         IsCaptain;                                         // 0x88(0x1)
-	TArray<Struct AccoladeModel>                                 CrewAccolades;                                     // 0x90(0x10)
+	int                                                          ScrambledPirateNameIndex;                          // 0x18(0x4)
+	int                                                          PirateTitleIndex;                                  // 0x1c(0x4)
+	Struct FString                                               PetName;                                           // 0x20(0x10)
+	bool                                                         IsCaptain;                                         // 0x30(0x1)
+	TArray<Struct NetAccoladeModel>                              CrewAccolades;                                     // 0x38(0x10)
 };
 
 
-// Size 0xe8
+// Size 0xb0
 struct CaptainsLogbookServiceCache
 {
 public:
 	Struct FString                                               ShipName;                                          // 0x0(0x10)
 	Struct FText                                                 ScrambledShipName;                                 // 0x10(0x38)
-	Struct FText                                                 ShipTitle;                                         // 0x48(0x38)
-	Struct CaptainsLogCrewSessionStatsEntry                      StatsEntry;                                        // 0x80(0x24)
-	TArray<Struct CaptainsLogbookCrewMember>                     CrewMembers;                                       // 0xa8(0x10)
-	class                                                        ShipSizeObject;                                    // 0xb8(0x8)
-	TArray<Struct AccoladeModel>                                 ShipAccolades;                                     // 0xc0(0x10)
-	TArray<Struct CrewEventLogEntry>                             CrewEventLog;                                      // 0xd0(0x10)
-	bool                                                         IsValid;                                           // 0xe0(0x1)
+	int                                                          ShipTitleIndex;                                    // 0x48(0x4)
+	Struct CaptainsLogCrewSessionStatsEntry                      StatsEntry;                                        // 0x4c(0x24)
+	TArray<Struct CaptainsLogbookCrewMember>                     CrewMembers;                                       // 0x70(0x10)
+	byte                                                         ShipType;                                          // 0x80(0x1)
+	TArray<Struct NetAccoladeModel>                              ShipAccolades;                                     // 0x88(0x10)
+	TArray<Struct CrewEventLogEntry>                             CrewEventLog;                                      // 0x98(0x10)
+	bool                                                         IsValid;                                           // 0xa8(0x1)
 };
 
 
@@ -32342,14 +33692,14 @@ public:
 };
 
 
-// Size 0x198
+// Size 0x160
 struct CaptainsLogServiceEntry
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct CaptainsLogbookServiceCache                           Cache;                                             // 0x10(0xe8)
-	Struct CaptainsLogPinnedAccoladeEntries                      PinnedShipAccolades;                               // 0xf8(0x30)
-	Struct PartDesc                                              CustomizationPartDesc;                             // 0x178(0x20)
+	Struct CaptainsLogbookServiceCache                           Cache;                                             // 0x10(0xb0)
+	Struct CaptainsLogPinnedAccoladeEntries                      PinnedShipAccolades;                               // 0xc0(0x30)
+	Struct PartDesc                                              CustomizationPartDesc;                             // 0x140(0x20)
 };
 
 
@@ -32802,6 +34152,14 @@ public:
 };
 
 
+// Size 0x10
+struct GameEventServiceDesc
+{
+public:
+	Struct StringAssetReference                                  ServiceParamsAssetPath;                            // 0x0(0x10)
+};
+
+
 // Size 0x30
 struct AggressiveGhostShipShotSelection
 {
@@ -33006,6 +34364,16 @@ public:
 	float                                                        MaximumChargePercentage;                           // 0x0(0x4)
 	Struct RewardId                                              DefaultRewardId;                                   // 0x4(0x8)
 	TArray<Struct CompanySpecificBootyReward>                    CompanyRewardIds;                                  // 0x10(0x10)
+};
+
+
+// Size 0x38
+struct AshenLordCustomEncounterSettings
+{
+public:
+	bool                                                         ShouldEncounterGiveRewardsWhenCompleted;           // 0x0(0x1)
+	class                                                        CustomDioramaCategory;                             // 0x8(0x8)
+	class                                                        CustomAshenLordClassID;                            // 0x10(0x8)
 };
 
 
@@ -33238,17 +34606,17 @@ public:
 };
 
 
-// Size 0xc0
+// Size 0x98
 struct ShipAnnouncementCinematicEvent
 {
 public:
-	Struct FText                                                 ShipName;                                          // 0x0(0x38)
-	Struct FText                                                 ShipTitle;                                         // 0x38(0x38)
-	Struct FString                                               CaptainName;                                       // 0x70(0x10)
-	Struct FString                                               Alignment;                                         // 0x80(0x10)
-	Struct FString                                               AlignmentId;                                       // 0x90(0x10)
-	Struct FString                                               Icon;                                              // 0xa0(0x10)
-	Struct FString                                               AudioCue;                                          // 0xb0(0x10)
+	Struct FString                                               ShipName;                                          // 0x0(0x10)
+	Struct FText                                                 ShipTitle;                                         // 0x10(0x38)
+	Struct FString                                               CaptainName;                                       // 0x48(0x10)
+	Struct FString                                               Alignment;                                         // 0x58(0x10)
+	Struct FString                                               AlignmentId;                                       // 0x68(0x10)
+	Struct FString                                               Icon;                                              // 0x78(0x10)
+	Struct FString                                               AudioCue;                                          // 0x88(0x10)
 };
 
 
@@ -33283,7 +34651,7 @@ struct SendShipStatsServerRpc
 {
 public:
 	Class Controller*                                            Controller;                                        // 0x10(0x8)
-	TArray<Struct PlayerStat>                                    Stats;                                             // 0x18(0x10)
+	Struct Guid                                                  SpottedShipId;                                     // 0x18(0x10)
 };
 
 
@@ -33359,14 +34727,14 @@ public:
 };
 
 
-// Size 0x230
+// Size 0x240
 struct GhostShipCoordinator
 {
 public:
 	TArray<Struct GhostPawnEntry>                                GhostPawns;                                        // 0x0(0x10)
 	Class Object*                                                Parent;                                            // 0x10(0x8)
-	Class GhostShipPlayerSpawnLocation*                          SpawnLocation;                                     // 0x20(0x8)
-	Class GhostShipDoor*                                         GhostShipDoor;                                     // 0x28(0x8)
+	Class GhostShipPlayerSpawnLocation*                          SpawnLocation;                                     // 0x30(0x8)
+	Class GhostShipDoor*                                         GhostShipDoor;                                     // 0x38(0x8)
 };
 
 
@@ -34166,7 +35534,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x50
 struct DynamicAnimationAllocationTelemetryEvent
 {
 public:
@@ -34174,6 +35542,16 @@ public:
 	TArray<Struct LoadRequestAssetInfo>                          LoadAssetSuccessInfo;                              // 0x10(0x10)
 	TArray<Struct FallbackAnimUsageInfo>                         FallbackAnimUsageInfo;                             // 0x20(0x10)
 	TArray<Struct AssetLoadSkipInfo>                             AssetLoadSkipInfo;                                 // 0x30(0x10)
+	TArray<Struct AnimInfo>                                      LoadOrderMismatchOccuranceAnimInfo;                // 0x40(0x10)
+};
+
+
+// Size 0x20
+struct AnimInfo
+{
+public:
+	Struct FString                                               AnimationsStructName;                              // 0x0(0x10)
+	Struct FString                                               CharacterName;                                     // 0x10(0x10)
 };
 
 
@@ -34186,23 +35564,25 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 struct FallbackAnimUsageInfo
 {
 public:
 	Struct FString                                               AnimationsStructName;                              // 0x0(0x10)
 	Struct FString                                               FallbackForCharacterName;                          // 0x10(0x10)
 	float                                                        DurationOfUsage;                                   // 0x20(0x4)
+	Struct FString                                               ItemName;                                          // 0x28(0x10)
 };
 
 
-// Size 0x28
+// Size 0x38
 struct LoadRequestAssetInfo
 {
 public:
 	float                                                        LoadDuration;                                      // 0x0(0x4)
 	Struct FString                                               AnimationsStructName;                              // 0x8(0x10)
 	Struct FString                                               LoadingForCharacterName;                           // 0x18(0x10)
+	Struct FString                                               ItemName;                                          // 0x28(0x10)
 };
 
 
@@ -34247,24 +35627,24 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x38
 struct AthenaAnimationDeathData
 {
 public:
-	Struct DamageInstance                                        KillingDamage;                                     // 0x0(0x28)
-	byte                                                         DeathType;                                         // 0x28(0x1)
-	bool                                                         IsDead;                                            // 0x2c(0x1)
-	bool                                                         Reviving;                                          // 0x2c(0x1)
+	Struct DamageInstance                                        KillingDamage;                                     // 0x0(0x30)
+	byte                                                         DeathType;                                         // 0x30(0x1)
+	bool                                                         IsDead;                                            // 0x34(0x1)
+	bool                                                         Reviving;                                          // 0x34(0x1)
 };
 
 
-// Size 0xf8
+// Size 0x100
 struct AthenaAnimationDeath
 {
 public:
-	Struct AthenaAnimationDeathData                              DeathData;                                         // 0x8(0x30)
-	Struct AthenaAnimationDeathAnimData                          DeathAnimData;                                     // 0x38(0x40)
-	Class AthenaAnimationDeathDataAsset*                         DeathDataAsset;                                    // 0x78(0x8)
+	Struct AthenaAnimationDeathData                              DeathData;                                         // 0x8(0x38)
+	Struct AthenaAnimationDeathAnimData                          DeathAnimData;                                     // 0x40(0x40)
+	Class AthenaAnimationDeathDataAsset*                         DeathDataAsset;                                    // 0x80(0x8)
 };
 
 
@@ -34885,15 +36265,6 @@ public:
 	bool                                                         UseAlternateAsTransition;                          // 0x8e1(0x1)
 	Struct AthenaAnimationSkeletonKnockbackLocomotionStrength    KnockBack;                                         // 0x8e8(0x20)
 	Class AnimSequence*                                          ScreamStun;                                        // 0x908(0x8)
-};
-
-
-// Size 0x40
-struct WieldAnimationParams
-{
-public:
-	byte                                                         WieldLocation;                                     // 0x0(0x1)
-	Struct Transform                                             PropOffset;                                        // 0x10(0x30)
 };
 
 
@@ -35524,6 +36895,414 @@ public:
 };
 
 
+// Size 0x1c
+struct AtmosphericPressureZoneParametersAndLocation
+{
+public:
+	Struct AtmosphericPressureZoneParameters                     PressureZoneParameters;                            // 0x0(0x14)
+	Struct Vector2D                                              Location;                                          // 0x14(0x8)
+};
+
+
+// Size 0x14
+struct AtmosphericPressureZoneParameters
+{
+public:
+	float                                                        Radius;                                            // 0x0(0x4)
+	float                                                        TargetPressure;                                    // 0x4(0x4)
+	float                                                        PushForce;                                         // 0x8(0x4)
+	float                                                        TwistForce;                                        // 0xc(0x4)
+	float                                                        Weight;                                            // 0x10(0x4)
+};
+
+
+// Size 0xb0
+struct GameEventSettings
+{
+public:
+	class                                                        GameEventType;                                     // 0x0(0x8)
+	float                                                        RepeatQueryTime;                                   // 0x8(0x4)
+	float                                                        InertQueryTime;                                    // 0xc(0x4)
+	float                                                        InertCancelTime;                                   // 0x10(0x4)
+	Struct WeightedProbabilityRangeOfRanges                      FirstRegenInterval;                                // 0x18(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      RegenInterval;                                     // 0x48(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      SpawnTime;                                         // 0x78(0x30)
+	bool                                                         Required;                                          // 0xa8(0x1)
+};
+
+
+// Size 0x38
+struct GameEventSchedulerConfiguration
+{
+public:
+	struct FName                                                 Feature;                                           // 0x0(0x8)
+	struct FName                                                 ServerConfigName;                                  // 0x8(0x8)
+	TArray<Struct GameEventCount>                                MainEvents;                                        // 0x10(0x10)
+	TArray<Struct GameEventWeightedList>                         SubConfigs;                                        // 0x20(0x10)
+	float                                                        Weight;                                            // 0x30(0x4)
+};
+
+
+// Size 0x20
+struct GameEventWeightedList
+{
+public:
+	struct FName                                                 ServerConfigName;                                  // 0x0(0x8)
+	TArray<Struct GameEventCount>                                Events;                                            // 0x8(0x10)
+	float                                                        Weight;                                            // 0x18(0x4)
+};
+
+
+// Size 0x10
+struct GameEventCount
+{
+public:
+	class                                                        GameEventType;                                     // 0x0(0x8)
+	int                                                          NumAllowed;                                        // 0x8(0x4)
+};
+
+
+// Size 0xc
+struct GameEventExclusionZone
+{
+public:
+	Struct Vector2D                                              Location;                                          // 0x0(0x8)
+	float                                                        Radius;                                            // 0x8(0x4)
+};
+
+
+// Size 0x10
+struct GameEventSchedulerStoryCustomiser
+{
+public:
+	Class GameEventSchedulerStoryCustomiserSettings*             StoryCustomiserSettings;                           // 0x0(0x8)
+	Class GameEventSchedulerSettingsAsset*                       ActiveStorySettings;                               // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct GameEventSchedulerStoryCustomisationData
+{
+public:
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	byte                                                         PlayMode;                                          // 0x8(0x1)
+	Class GameEventSchedulerSettingsAsset*                       SchedulerSettings;                                 // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct GameEventSchedulerSettingsChangeTelemetryEvent
+{
+public:
+	Struct StringAssetReference                                  SettingsAssetPath;                                 // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct GameEventSchedulerConfigChangeTelemetryEvent
+{
+public:
+	Struct Guid                                                  ConfigId;                                          // 0x0(0x10)
+	TArray<Struct GameEventSchedulerConfigTelemetry>             Events;                                            // 0x10(0x10)
+};
+
+
+// Size 0x8
+struct GameEventSchedulerConfigTelemetry
+{
+public:
+	byte                                                         TrackedActorType;                                  // 0x0(0x1)
+	int                                                          NumAllowed;                                        // 0x4(0x4)
+};
+
+
+// Size 0x20
+struct ItemConsumptionStatusChanceEntry
+{
+public:
+	float                                                        Chance;                                            // 0x0(0x4)
+	Struct Status                                                Status;                                            // 0x8(0x18)
+};
+
+
+// Size 0x20
+struct ConditionalHandInStat
+{
+public:
+	Struct PlayerStat                                            Stat;                                              // 0x18(0x4)
+};
+
+
+// Size 0x10
+struct BootyItemSellPrerequisites
+{
+public:
+	TArray<Class Entitlements>                                   Entitlements;                                      // 0x0(0x10)
+};
+
+
+// Size 0x14
+struct BootyItemShipDroppedInfo
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	bool                                                         DroppedOnOwnShip;                                  // 0x10(0x1)
+	bool                                                         DroppedOnAnotherShip;                              // 0x11(0x1)
+};
+
+
+// Size 0x18
+struct SpawnableItemCategory
+{
+public:
+	struct FName                                                 Category;                                          // 0x0(0x8)
+	TArray<Class SpawnableItems>                                 SpawnableItems;                                    // 0x8(0x10)
+};
+
+
+// Size 0x18
+struct BootyItemDroppedOnShipEvent
+{
+public:
+	Class Actor*                                                 Ship;                                              // 0x0(0x8)
+	Class ItemInfo*                                              ItemOnShip;                                        // 0x8(0x8)
+	bool                                                         FirstTimeDroppedOnOwnOrAnotherShipByCrew;          // 0x10(0x1)
+};
+
+
+// Size 0x18
+struct BootyItemTransferredToVendor
+{
+public:
+	Class BootyItemInfo*                                         ItemInfo;                                          // 0x0(0x8)
+	Struct Guid                                                  CrewId;                                            // 0x8(0x10)
+};
+
+
+// Size 0x48
+struct BootyItemOwnershipChangedParams
+{
+public:
+	Struct Guid                                                  NewCrewId;                                         // 0x0(0x10)
+	Struct Guid                                                  PreviousCrewId;                                    // 0x10(0x10)
+	Struct Guid                                                  BootyId;                                           // 0x20(0x10)
+	byte                                                         BootyType;                                         // 0x30(0x1)
+	struct FName                                                 Rarity;                                            // 0x34(0x8)
+	Class ItemInfo*                                              BootyItemInfo;                                     // 0x40(0x8)
+};
+
+
+// Size 0x10
+struct BootyItemShipOwnershipChangeEvent
+{
+public:
+	Class Actor*                                                 Ship;                                              // 0x0(0x8)
+	Class ItemInfo*                                              ItemOnShip;                                        // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct EventCargoRunCrateDelivered
+{
+public:
+	Struct Guid                                                  PickUpId;                                          // 0x0(0x10)
+	Class BootyItemInfo*                                         ItemInfo;                                          // 0x10(0x8)
+};
+
+
+// Size 0x40
+struct EventCargoRunCratePickedUp
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	Struct Guid                                                  BatchId;                                           // 0x10(0x10)
+	Struct Guid                                                  PickUpId;                                          // 0x20(0x10)
+	Class BootyItemInfo*                                         ItemInfo;                                          // 0x30(0x8)
+	Class WieldableItem*                                         Item;                                              // 0x38(0x8)
+};
+
+
+// Size 0x28
+struct EventCargoRunCrateSetDropOff
+{
+public:
+	Struct Guid                                                  PickUpId;                                          // 0x0(0x10)
+	Struct Guid                                                  DropOffLocationId;                                 // 0x10(0x10)
+};
+
+
+// Size 0x28
+struct RewardPouchGivenRewardTelemetryEvent
+{
+public:
+	Struct Guid                                                  PouchId;                                           // 0x0(0x10)
+	struct FName                                                 RewardId;                                          // 0x10(0x8)
+	byte                                                         BootyType;                                         // 0x18(0x1)
+	struct FName                                                 Rarity;                                            // 0x1c(0x8)
+	byte                                                         TrackedActorType;                                  // 0x24(0x1)
+};
+
+
+// Size 0x28
+struct ConsumedIngestibleTelemetryEvent
+{
+public:
+	Struct FString                                               ItemName;                                          // 0x0(0x10)
+	byte                                                         CookState;                                         // 0x10(0x1)
+	TArray<Str StatusesApplied>                                  StatusesApplied;                                   // 0x18(0x10)
+};
+
+
+// Size 0x40
+struct ItemSpawnTelemetryEvent
+{
+public:
+	Struct Guid                                                  ItemId;                                            // 0x0(0x10)
+	struct FName                                                 SpawnedClass;                                      // 0x10(0x8)
+	byte                                                         Source;                                            // 0x18(0x1)
+	Struct FString                                               SourceId;                                          // 0x20(0x10)
+	Struct Vector                                                SpawnLocation;                                     // 0x30(0xc)
+};
+
+
+// Size 0x20
+struct MessageInABottleGivenVoyageTelemetryEvent
+{
+public:
+	Struct Guid                                                  BottleId;                                          // 0x0(0x10)
+	Struct Guid                                                  VoyageId;                                          // 0x10(0x10)
+};
+
+
+// Size 0x58
+struct TreasureBuriedTelemetryEvent
+{
+public:
+	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	byte                                                         BootyType;                                         // 0x10(0x1)
+	Struct FString                                               Rarity;                                            // 0x18(0x10)
+	Struct Vector                                                TreasureLocation;                                  // 0x28(0xc)
+	Struct Guid                                                  MapID;                                             // 0x34(0x10)
+	Struct Guid                                                  BuriedByCrewId;                                    // 0x44(0x10)
+};
+
+
+// Size 0x50
+struct TreasureSpawnedTelemetryEvent
+{
+public:
+	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	byte                                                         BootyType;                                         // 0x10(0x1)
+	Struct FString                                               Rarity;                                            // 0x18(0x10)
+	byte                                                         Source;                                            // 0x28(0x1)
+	Struct FString                                               SourceId;                                          // 0x30(0x10)
+	Struct Vector                                                TreasureLocation;                                  // 0x40(0xc)
+};
+
+
+// Size 0x40
+struct TreasureSoldTelemetryEvent
+{
+public:
+	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	byte                                                         BootyType;                                         // 0x10(0x1)
+	Struct FString                                               Rarity;                                            // 0x18(0x10)
+	bool                                                         GoldAwarded;                                       // 0x28(0x1)
+	byte                                                         Source;                                            // 0x29(0x1)
+	Struct FString                                               TreasurePurchaser;                                 // 0x30(0x10)
+};
+
+
+// Size 0x38
+struct TreasureDroppedTelemetryEvent
+{
+public:
+	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	byte                                                         BootyType;                                         // 0x10(0x1)
+	Struct FString                                               Rarity;                                            // 0x18(0x10)
+	Struct FString                                               LocationOnShip;                                    // 0x28(0x10)
+};
+
+
+// Size 0x28
+struct TreasurePickedUpTelemetryEvent
+{
+public:
+	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	byte                                                         BootyType;                                         // 0x10(0x1)
+	Struct FString                                               Rarity;                                            // 0x18(0x10)
+};
+
+
+// Size 0x20
+struct TreasureSurfacedTelemetryEvent
+{
+public:
+	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	Struct FString                                               Rarity;                                            // 0x10(0x10)
+};
+
+
+// Size 0x38
+struct TreasureFoundTelemetryEvent
+{
+public:
+	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	Struct Guid                                                  QuestId;                                           // 0x10(0x10)
+	Struct FString                                               Rarity;                                            // 0x20(0x10)
+	bool                                                         IsBoobyTrapped;                                    // 0x30(0x1)
+};
+
+
+// Size 0x48
+struct BuriedTreasureChestParams
+{
+public:
+	int                                                          MaxSmallCrewSizeForNumDigsSelection;               // 0x0(0x4)
+	Struct WeightedProbabilityRange                              NumDigsRequiredForSmallCrewSize;                   // 0x8(0x20)
+	Struct WeightedProbabilityRange                              NumDigsRequiredForBiggerCrewSize;                  // 0x28(0x20)
+};
+
+
+// Size 0x8
+struct TreasureChestSoldClientPredictionEvent
+{
+public:
+	class                                                        Company;                                           // 0x0(0x8)
+};
+
+
+// Size 0x78
+struct TreasureChestSoldInContestNetworkEvent
+{
+public:
+	struct FName                                                 RewardId;                                          // 0x10(0x8)
+	Struct FText                                                 CrewName;                                          // 0x18(0x38)
+	Struct StringAssetReference                                  ToastBackgroundImage;                              // 0x50(0x10)
+	Struct StringAssetReference                                  BackgroundImage;                                   // 0x60(0x10)
+	struct FName                                                 AudioEventName;                                    // 0x70(0x8)
+};
+
+
+// Size 0x38
+struct TreasureChestSoldInAllianceNetworkEvent
+{
+public:
+	struct FName                                                 RewardId;                                          // 0x10(0x8)
+	Struct StringAssetReference                                  AllianceIcon;                                      // 0x18(0x10)
+	Struct StringAssetReference                                  StampIcon;                                         // 0x28(0x10)
+};
+
+
+// Size 0x28
+struct TreasureChestSoldNetworkEvent
+{
+public:
+	struct FName                                                 RewardId;                                          // 0x10(0x8)
+	Struct StringAssetReference                                  StampIcon;                                         // 0x18(0x10)
+};
+
+
 // Size 0x2
 struct CrewArenaRivalVotingData
 {
@@ -35837,1462 +37616,17 @@ public:
 };
 
 
-// Size 0x30
-struct DetailAppearenceDesc
-{
-public:
-	Struct StringAssetReference                                  Mesh;                                              // 0x0(0x10)
-	TArray<Struct DetailAppearenceMaterialDesc>                  Materials;                                         // 0x10(0x10)
-	Struct StringAssetReference                                  CustomDepthMaterial;                               // 0x20(0x10)
-};
-
-
-// Size 0x18
-struct DetailAppearenceMaterialDesc
-{
-public:
-	Struct StringAssetReference                                  Material;                                          // 0x0(0x10)
-	int                                                          MaterialIndex;                                     // 0x10(0x4)
-};
-
-
-// Size 0x18
-struct WieldableItemActionVisuals
-{
-public:
-	TArray<Class BlockActions>                                   BlockActions;                                      // 0x0(0x10)
-	byte                                                         AnimVariant;                                       // 0x10(0x1)
-	bool                                                         IsAlternate;                                       // 0x11(0x1)
-	bool                                                         HideItem;                                          // 0x12(0x1)
-};
-
-
-// Size 0x10
-struct ItemActionEffectHandle
-{
-public:
-};
-
-
-// Size 0x1
-struct EventWieldableItemIsAboutToBeStowed
-{
-public:
-};
-
-
-// Size 0x8
-struct EventItemDroppedOnActor
-{
-public:
-	Class Actor*                                                 DroppedActor;                                      // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct EventWieldableItemDropped
-{
-public:
-	class                                                        DroppedItemCategory;                               // 0x0(0x8)
-	Class Actor*                                                 ContactActor;                                      // 0x8(0x8)
-	float                                                        DropDistance;                                      // 0x10(0x4)
-	bool                                                         InDeepWater;                                       // 0x14(0x1)
-};
-
-
-// Size 0x8
-struct EventExplosionDidDestroyWieldedItem
-{
-public:
-	Class WieldableItem*                                         DestroyedItem;                                     // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct LockedWieldableItemCategoriesUpdatedEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct WieldableItemsUpdatedEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct EventUseAlternateIdle
-{
-public:
-	bool                                                         UseAlternateIdle;                                  // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct EventClientItemUseSpeedScaled
-{
-public:
-	float                                                        ClientTimeStamp;                                   // 0x0(0x4)
-	bool                                                         bItemUseSlowed;                                    // 0x4(0x1)
-};
-
-
-// Size 0x10
-struct EventWieldableItemSetIsWielded
-{
-public:
-	Class Actor*                                                 Wielder;                                           // 0x0(0x8)
-	bool                                                         bIsWielded;                                        // 0x8(0x1)
-	bool                                                         bGettingDropped;                                   // 0x9(0x1)
-	bool                                                         bIsUnstashing;                                     // 0xa(0x1)
-};
-
-
-// Size 0x10
-struct EventWieldableItemUseStoppedAndFullyHidden
-{
-public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
-	byte                                                         PerspectiveType;                                   // 0x8(0x1)
-};
-
-
-// Size 0x18
-struct EventWieldableItemUseStopped
-{
-public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
-	class                                                        InputID;                                           // 0x8(0x8)
-	byte                                                         ItemUseStoppedReason;                              // 0x10(0x1)
-	byte                                                         TrackId;                                           // 0x11(0x1)
-};
-
-
-// Size 0x30
-struct EventWieldableItemUseStarted
-{
-public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
-	class                                                        InputID;                                           // 0x8(0x8)
-	Struct WieldableItemActionVisuals                            Visuals;                                           // 0x10(0x18)
-	byte                                                         TrackId;                                           // 0x28(0x1)
-};
-
-
-// Size 0x10
-struct EventWieldableItemUseStartingAndJustMadeVisible
-{
-public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
-	byte                                                         PerspectiveType;                                   // 0x8(0x1)
-};
-
-
-// Size 0x28
-struct EventOneShotUseTriggered
-{
-public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
-	class                                                        InputID;                                           // 0x8(0x8)
-	Struct WieldableItemActionVisuals                            Visuals;                                           // 0x10(0x18)
-};
-
-
-// Size 0x18
-struct ItemInfoTogglePair
-{
-public:
-	struct FName                                                 Toggle;                                            // 0x0(0x8)
-	Struct StringClassReference                                  ItemInfo;                                          // 0x8(0x10)
-};
-
-
-// Size 0x48
-struct DropItemParams
-{
-public:
-	TArray<AssetClass AttachOnDropParentTypes>                   AttachOnDropParentTypes;                           // 0x0(0x10)
-	Struct Vector                                                DropItemOffset;                                    // 0x10(0xc)
-	float                                                        MaxShallowWaterHeightToAllowItemDrop;              // 0x1c(0x4)
-	byte                                                         DropItemPosTestTraceChannel;                       // 0x20(0x1)
-	float                                                        WaterVolumeOverlapRadius;                          // 0x24(0x4)
-	float                                                        MaxDroppedItemPitchRoll;                           // 0x28(0x4)
-	float                                                        ItemWorldProxyCapsuleCastRadius;                   // 0x2c(0x4)
-	float                                                        ItemWorldProxyCapsuleCastHeight;                   // 0x30(0x4)
-	float                                                        ItemWorldProxyCapsuleDownCastRadiusModifier;       // 0x34(0x4)
-	float                                                        LineTraceDepth;                                    // 0x38(0x4)
-	float                                                        SweepPercentageOnHit;                              // 0x3c(0x4)
-	float                                                        HitDiffTolerance;                                  // 0x40(0x4)
-	float                                                        LineTraceOffsetUpwardsFromStart;                   // 0x44(0x4)
-};
-
-
-// Size 0x10
-struct StartPickupObjectActionRuleParams
-{
-public:
-	TArray<Byte WieldableItemSizesDisablePickup>                 WieldableItemSizesDisablePickup;                   // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct ItemProxyImpactVfxParams
-{
-public:
-	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	Class Object*                                                Particles;                                         // 0x8(0x8)
-};
-
-
-// Size 0x20
-struct ActionVisualsOverride
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-	Struct WieldableItemActionVisuals                            ActionVisuals;                                     // 0x8(0x18)
-};
-
-
-// Size 0x40
-struct HoldToUseInput
-{
-public:
-	struct FName                                                 FeatureFlag;                                       // 0x0(0x8)
-	class                                                        StartUse;                                          // 0x8(0x8)
-	class                                                        StopUse;                                           // 0x10(0x8)
-	Struct WieldableItemActionVisuals                            ActionVisuals;                                     // 0x18(0x18)
-	Class HoldToUseInputVisualModifier*                          WieldableVisualModifier;                           // 0x30(0x8)
-	bool                                                         SplitActionRules;                                  // 0x38(0x1)
-};
-
-
-// Size 0x20
-struct InputMontagePair
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-	Class AnimSequenceBase*                                      Into;                                              // 0x8(0x8)
-	Class AnimSequenceBase*                                      Loop;                                              // 0x10(0x8)
-	Class AnimSequenceBase*                                      Outof;                                             // 0x18(0x8)
-};
-
-
-// Size 0x10
-struct InputSequencePair
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-	Class AnimMontage*                                           Sequence;                                          // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct WieldingParamsAssetLookup
-{
-public:
-	class                                                        Class;                                             // 0x0(0x8)
-	Struct StringAssetReference                                  Params;                                            // 0x8(0x10)
-};
-
-
-// Size 0x48
-struct PickupObjectActionStateConstructionInfo
-{
-public:
-	Struct NetActorPtr                                           PickupableObject;                                  // 0x30(0x14)
-};
-
-
-// Size 0x50
-struct UseItemActionStateConstructionInfo
-{
-public:
-	Struct NetActorPtr                                           UsableObject;                                      // 0x30(0x14)
-	class                                                        InputID;                                           // 0x48(0x8)
-};
-
-
-// Size 0x1
-struct UseItemActionStateParams
-{
-public:
-};
-
-
-// Size 0x8
-struct EventItemConsumed
-{
-public:
-	Class Actor*                                                 Consumer;                                          // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct ContestBootyItemReleasedEvent
-{
-public:
-};
-
-
-// Size 0x10
-struct EventItemWielded
-{
-public:
-	Class WieldableItem*                                         WieldedItem;                                       // 0x0(0x8)
-	Class Actor*                                                 Wielder;                                           // 0x8(0x8)
-};
-
-
-// Size 0x8
-struct EventRemoveItemFromSpawner
-{
-public:
-};
-
-
-// Size 0x18
-struct EventTransferObjectState
-{
-public:
-	Class Actor*                                                 TargetActor;                                       // 0x10(0x8)
-};
-
-
-// Size 0x1
-struct EventUnhideItem
-{
-public:
-};
-
-
-// Size 0x1
-struct EventHideItem
-{
-public:
-};
-
-
-// Size 0x1
-struct EventStowComplete
-{
-public:
-};
-
-
-// Size 0x18
-struct EventStartStow
-{
-public:
-	bool                                                         FastStow;                                          // 0x10(0x1)
-	byte                                                         StowMethod;                                        // 0x11(0x1)
-};
-
-
-// Size 0x1
-struct EventPreStartStow
-{
-public:
-	byte                                                         StowMethod;                                        // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventVisibleWield
-{
-public:
-};
-
-
-// Size 0x10
-struct EventStartWield
-{
-public:
-};
-
-
-// Size 0x10
-struct EventObjectWielded
-{
-public:
-};
-
-
-// Size 0x18
-struct EventObjectStowed
-{
-public:
-	bool                                                         FastStow;                                          // 0x10(0x1)
-	byte                                                         StowMethod;                                        // 0x11(0x1)
-};
-
-
-// Size 0x10
-struct CanLoadItemCategoryEntry
-{
-public:
-	class                                                        CanLoadItemCategory;                               // 0x0(0x8)
-	struct FName                                                 FeatureToggle;                                     // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct EventPickupableObjectPickedUp
-{
-public:
-	Class PickupableObject*                                      PickupableObject;                                  // 0x0(0x8)
-	Class Actor*                                                 InteractingPlayer;                                 // 0x8(0x8)
-};
-
-
-// Size 0x1
-struct EventPickupableObjectDropped
-{
-public:
-	byte                                                         SurfaceType;                                       // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventPickupableObjectDestroyed
-{
-public:
-};
-
-
-// Size 0x18
-struct UseItemNoParamsOnServerRpc
-{
-public:
-};
-
-
-// Size 0x8
-struct EventItemTransmuted
-{
-public:
-	Class ItemInfo*                                              NewItem;                                           // 0x0(0x8)
-};
-
-
-// Size 0x20
-struct EventUseItemStopped
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
-	Class Actor*                                                 Usable;                                            // 0x10(0x8)
-	byte                                                         TrackToUse;                                        // 0x18(0x1)
-};
-
-
-// Size 0x20
-struct EventUseItemForceStop
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
-	Class Actor*                                                 Usable;                                            // 0x10(0x8)
-	byte                                                         TrackToUse;                                        // 0x18(0x1)
-};
-
-
-// Size 0x20
-struct TriggerStopUseEvent
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
-	Class Actor*                                                 Usable;                                            // 0x10(0x8)
-	byte                                                         TrackToUse;                                        // 0x18(0x1)
-};
-
-
-// Size 0x20
-struct TriggerStartUseEvent
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-	Class Actor*                                                 ActionSource;                                      // 0x8(0x8)
-	Class Actor*                                                 Usable;                                            // 0x10(0x8)
-	byte                                                         TrackToUse;                                        // 0x18(0x1)
-};
-
-
-// Size 0x8
-struct EventCharacterStoppedContinuousUse
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct EventCharacterStartedContinuousUse
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct EventCharacterStartedOneShotUse
-{
-public:
-	class                                                        InputID;                                           // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventAthenaAnimationCurrentAnimationCanBeInterrupted
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemEquipStarted
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemEquipBlendFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemUnequipFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventWieldedItemOutOfContinuousUseStateEntered
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemOutOfUseFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemIntoContinuousUseFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemContinuousUseStateEntered
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemOneShotInitialised
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemOneShotEntered
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemOneShotFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemEquipFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemStateChanged
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemComplexOneShotFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemBlockingFeedbackFinished
-{
-public:
-};
-
-
-// Size 0x1
-struct EventAnimationWieldedItemBlockingFinished
-{
-public:
-};
-
-
-// Size 0x10
-struct EventWieldableStashedToStashPoint
-{
-public:
-	Class PrimitiveComponent*                                    StashPointAttachParent;                            // 0x0(0x8)
-	bool                                                         Visible;                                           // 0x8(0x1)
-};
-
-
-// Size 0x18
-struct WieldableItemFirstTimeEquipRpc
-{
-public:
-	Class WwiseEvent*                                            FirstTimeEquipSfx;                                 // 0x10(0x8)
-};
-
-
-// Size 0x8
-struct CameraSpringArmPlayModeParameters
-{
-public:
-	byte                                                         PlayMode;                                          // 0x0(0x1)
-	float                                                        CameraPullbackSpeed;                               // 0x4(0x4)
-};
-
-
-// Size 0xa0
-struct LookAtOffset
-{
-public:
-	float                                                        LookAtPitchRate;                                   // 0x0(0x4)
-	float                                                        LookAtYawRate;                                     // 0x4(0x4)
-	float                                                        LookAtYawRawScale;                                 // 0x8(0x4)
-	float                                                        LookAtPitchRawScale;                               // 0xc(0x4)
-};
-
-
-// Size 0x30
-struct StartCameraFadeRpc
-{
-public:
-	float                                                        FromAlpha;                                         // 0x10(0x4)
-	float                                                        ToAlpha;                                           // 0x14(0x4)
-	float                                                        FadeTimeInSeconds;                                 // 0x18(0x4)
-	Struct LinearColor                                           FadeColour;                                        // 0x1c(0x10)
-	bool                                                         ShouldFadeAudio;                                   // 0x2c(0x1)
-	bool                                                         HoldFadeWhenFinished;                              // 0x2d(0x1)
-};
-
-
-// Size 0x90
-struct CinematicQuestNetworkEvent
-{
-public:
-	Struct CinematicQuestEvent                                   BannerData;                                        // 0x10(0x80)
-};
-
-
-// Size 0x1
-struct PossessionsChestTypeSelectedEvent
-{
-public:
-	byte                                                         PossessionsChestType;                              // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct PossessionsChestClosedEvent
-{
-public:
-	byte                                                         PossessionsChestType;                              // 0x0(0x1)
-};
-
-
-// Size 0x20
-struct SaveToLoadoutCosts
-{
-public:
-	TArray<Struct SaveToLoadoutItemCost>                         CategoryCosts;                                     // 0x0(0x10)
-	TArray<Struct SaveToLoadoutItemCost>                         EntitlementCosts;                                  // 0x10(0x10)
-};
-
-
-// Size 0x28
-struct SaveToLoadoutItemCost
-{
-public:
-	Struct FString                                               Name;                                              // 0x0(0x10)
-	Struct FString                                               Currency;                                          // 0x10(0x10)
-	int                                                          Amount;                                            // 0x20(0x4)
-};
-
-
-// Size 0x4
-struct PlayModeVariantResponse
-{
-public:
-	int                                                          Variant;                                           // 0x0(0x4)
-};
-
-
-// Size 0x1
-struct RequestPlayModeVariant
-{
-public:
-};
-
-
-// Size 0x8
-struct EventPopUpQueueServicePaused
-{
-public:
-	bool                                                         Paused;                                            // 0x0(0x1)
-	int                                                          Reason;                                            // 0x4(0x4)
-};
-
-
-// Size 0x4
-struct SetArenaIslandBanners
-{
-public:
-	int                                                          Value;                                             // 0x0(0x4)
-};
-
-
-// Size 0x4
-struct SetAdventureIslandBanners
-{
-public:
-	int                                                          Value;                                             // 0x0(0x4)
-};
-
-
-// Size 0x1
-struct NarrationStateRequestEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct NarrationStateEvent
-{
-public:
-	bool                                                         IsEnabled;                                         // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct NarrationRequestEvent
-{
-public:
-	Struct FString                                               Text;                                              // 0x0(0x10)
-};
-
-
-// Size 0x4
-struct SetToastHoldDurationMultiplier
-{
-public:
-	float                                                        Multiplier;                                        // 0x0(0x4)
-};
-
-
-// Size 0x1
-struct SetNarrateToasts
-{
-public:
-	bool                                                         IsEnabled;                                         // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct SetScreenSpaceTooltips
-{
-public:
-	bool                                                         IsEnabled;                                         // 0x0(0x1)
-};
-
-
-// Size 0x4
-struct SetNotificationScale
-{
-public:
-	float                                                        ScaleValue;                                        // 0x0(0x4)
-};
-
-
-// Size 0x1
-struct SendMarketingOptInResponse
-{
-public:
-	bool                                                         OptedIn;                                           // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct AccessibiltySettingsModalEvent
-{
-public:
-};
-
-
-// Size 0x1
-struct RequestShowMarketingOptInPopUp
-{
-public:
-};
-
-
-// Size 0x10
-struct RequestShowGamerCard
-{
-public:
-	Struct FString                                               XUID;                                              // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct EventSendCapturedKeybind
-{
-public:
-	Struct FString                                               CapturedKey;                                       // 0x0(0x10)
-};
-
-
-// Size 0x1
-struct EventKeybindCaptureCancelRequest
-{
-public:
-};
-
-
-// Size 0x1
-struct EventKeybindCaptureRequest
-{
-public:
-	byte                                                         ControllerTypeKeyToExpect;                         // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventFrontendSetSceneVisibility
-{
-public:
-	bool                                                         Visible;                                           // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventInGameUISetMigrationMode
-{
-public:
-	bool                                                         MigrationModeEnabled;                              // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventToggleNonCrewVoiceMuteState
-{
-public:
-};
-
-
-// Size 0x1
-struct EventToggleScrambleGamertags
-{
-public:
-};
-
-
-// Size 0x1
-struct EventToggleCrewNameplates
-{
-public:
-};
-
-
-// Size 0x1
-struct EventToggleOtherCrewNameplates
-{
-public:
-};
-
-
-// Size 0x1
-struct EventTogglePhotoMode
-{
-public:
-};
-
-
-// Size 0x1
-struct EventInGameUISetPhotoMode
-{
-public:
-	bool                                                         PhotoModeEnabled;                                  // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct EventHUDSetMousePosition
-{
-public:
-	Struct Vector2D                                              Position;                                          // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventHUDMouseCursorCentre
-{
-public:
-};
-
-
-// Size 0x1
-struct EventHUDMouseFocusRequest
-{
-public:
-	bool                                                         RequestFocus;                                      // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventHUDScriptingReady
-{
-public:
-};
-
-
-// Size 0x10
-struct EventShipNameTextboxTextFromVirtualKeyboard
-{
-public:
-	Struct FString                                               Text;                                              // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct TextboxTextFromVirtualKeyboard
-{
-public:
-	Struct FString                                               Text;                                              // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct EventPetNameTextboxTextFromVirtualKeyboard
-{
-public:
-	Struct FString                                               Text;                                              // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct EventChatboxTextFromVirtualKeyboard
-{
-public:
-	Struct FString                                               Text;                                              // 0x0(0x10)
-};
-
-
-// Size 0x1
-struct EventPlayerOpenChatbox
-{
-public:
-};
-
-
-// Size 0x1
-struct EventPlayerOpenQuickMenu
-{
-public:
-};
-
-
-// Size 0x1
-struct NavigateToMenuEvent
-{
-public:
-	byte                                                         Action;                                            // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventPlayerOpenEscapeMenu
-{
-public:
-};
-
-
-// Size 0x1
-struct EventInGameBlurRequest
-{
-public:
-	bool                                                         ShouldBlurGame;                                    // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventShipNameTextboxFocusRequest
-{
-public:
-	bool                                                         ShouldFocusShipNameTextbox;                        // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct TextboxFocusRequest
-{
-public:
-	bool                                                         ShouldFocusTextbox;                                // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventPetNameTextboxFocusRequest
-{
-public:
-	bool                                                         ShouldFocusPetNameTextbox;                         // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventChatboxFocusRequest
-{
-public:
-	bool                                                         ShouldFocusChatbox;                                // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventInGameUIFocusRequest
-{
-public:
-	bool                                                         ShouldFocusUI;                                     // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct UIWhatsNewAvailableArticlesEvent
-{
-public:
-	TArray<Str Articles>                                         Articles;                                          // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct UIAdventuresDataErrorEvent
-{
-public:
-	Struct FString                                               ErrorMessage;                                      // 0x0(0x10)
-	Struct FString                                               ErrorStack;                                        // 0x10(0x10)
-};
-
-
-// Size 0x20
-struct UILiveCampaignDataErrorEvent
-{
-public:
-	Struct FString                                               ErrorMessage;                                      // 0x0(0x10)
-	Struct FString                                               ErrorStack;                                        // 0x10(0x10)
-};
-
-
-// Size 0x20
-struct UISeasonsDataErrorEvent
-{
-public:
-	Struct FString                                               ErrorMessage;                                      // 0x0(0x10)
-	Struct FString                                               ErrorStack;                                        // 0x10(0x10)
-};
-
-
-// Size 0x60
-struct UIPremiumStoreItemInteractEvent
-{
-public:
-	Struct FString                                               CurrencyUsed;                                      // 0x0(0x10)
-	Struct FString                                               EngagementOutcome;                                 // 0x10(0x10)
-	Struct FString                                               ItemCost;                                          // 0x20(0x10)
-	Struct FString                                               ItemName;                                          // 0x30(0x10)
-	Struct FString                                               PageName;                                          // 0x40(0x10)
-	Struct FString                                               SessionId;                                         // 0x50(0x10)
-};
-
-
-// Size 0x38
-struct UIPremiumStorePanelHighlightEvent
-{
-public:
-	Struct FString                                               CurrentPage;                                       // 0x0(0x10)
-	Struct FString                                               CurrentPanel;                                      // 0x10(0x10)
-	Struct FString                                               SessionId;                                         // 0x20(0x10)
-	float                                                        TimeOnPanel;                                       // 0x30(0x4)
-};
-
-
-// Size 0x48
-struct UIPremiumStorePageTransitionEvent
-{
-public:
-	Struct FString                                               CurrentPage;                                       // 0x0(0x10)
-	Struct FString                                               PreviousHighlight;                                 // 0x10(0x10)
-	Struct FString                                               PreviousPage;                                      // 0x20(0x10)
-	Struct FString                                               SessionId;                                         // 0x30(0x10)
-	float                                                        TimeOnPreviousPage;                                // 0x40(0x4)
-};
-
-
-// Size 0x18
-struct UIPremiumStoreOpenEvent
-{
-public:
-	bool                                                         IsFrontend;                                        // 0x0(0x1)
-	Struct FString                                               SessionId;                                         // 0x8(0x10)
-};
-
-
-// Size 0x20
-struct UIScreenTransitionEvent
-{
-public:
-	Struct FString                                               CurrentScreen;                                     // 0x0(0x10)
-	Struct FString                                               PreviousScreen;                                    // 0x10(0x10)
-};
-
-
-// Size 0x1
-struct OnHUDDestruction
-{
-public:
-};
-
-
-// Size 0x1e8
-struct OfferPurchasedEvent
-{
-public:
-	Struct ShopOffer                                             Purchase;                                          // 0x0(0x1e0)
-	struct FName                                                 NPCName;                                           // 0x1e0(0x8)
-};
-
-
-// Size 0x18
-struct LaunchableProjectileDamageEvent
-{
-public:
-	Class Actor*                                                 Instigator;                                        // 0x0(0x8)
-	Class Actor*                                                 ProjectileActor;                                   // 0x8(0x8)
-	Class Actor*                                                 ActorHit;                                          // 0x10(0x8)
-};
-
-
-// Size 0x10
-struct DamageableVulnerabilityPair
-{
-public:
-	class                                                        DamagerType;                                       // 0x0(0x8)
-	float                                                        DamageMultiplier;                                  // 0x8(0x4)
-};
-
-
-// Size 0x1
-struct EventRecoveredMaxHealth
-{
-public:
-};
-
-
-// Size 0x1
-struct EventHealthChangeContinuousEnd
-{
-public:
-};
-
-
-// Size 0x8
-struct EventHealthChangeContinuousStart
-{
-public:
-	float                                                        CurrentHealth;                                     // 0x0(0x4)
-	float                                                        ChangeRate;                                        // 0x4(0x4)
-};
-
-
-// Size 0x1
-struct EventHealthChangeAllContinuousChangesRemoved
-{
-public:
-};
-
-
-// Size 0x1
-struct EventHealthChangeContinuousRemoved
-{
-public:
-	byte                                                         Reason;                                            // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct EventHealthChangeContinuousApplied
-{
-public:
-	float                                                        ChangeDelta;                                       // 0x0(0x4)
-	byte                                                         Reason;                                            // 0x4(0x1)
-};
-
-
-// Size 0x48
-struct EventHealthChanged
-{
-public:
-	Struct HealthChange                                          ChangePayload;                                     // 0x0(0x40)
-	bool                                                         IsLocalPrediction;                                 // 0x40(0x1)
-	bool                                                         IsRepetitionOfPrediction;                          // 0x41(0x1)
-};
-
-
-// Size 0x40
-struct HealthChange
-{
-public:
-	float                                                        From;                                              // 0x0(0x4)
-	float                                                        To;                                                // 0x4(0x4)
-	byte                                                         Reason;                                            // 0x8(0x1)
-	Class Actor*                                                 DirectInstigator;                                  // 0x10(0x8)
-	Class Actor*                                                 RootInstigator;                                    // 0x18(0x8)
-	Struct Guid                                                  IncidentId;                                        // 0x20(0x10)
-	Struct Vector_NetQuantize10                                  DirectInstigatorLocation;                          // 0x30(0xc)
-};
-
-
-// Size 0x18
-struct CurrentHealthInfo
-{
-public:
-	float                                                        Health;                                            // 0x0(0x4)
-	byte                                                         LastChangedReason;                                 // 0x4(0x1)
-	Struct Vector_NetQuantize10                                  LastInstigatorLocation;                            // 0x8(0xc)
-};
-
-
-// Size 0xc
-struct ContinuousHealthChange
-{
-public:
-	float                                                        Rate;                                              // 0x0(0x4)
-	float                                                        ChangeApplied;                                     // 0x4(0x4)
-	byte                                                         Reason;                                            // 0x8(0x1)
-};
-
-
-// Size 0x8
-struct HealthRegenState
-{
-public:
-	float                                                        CurrentPoolAmount;                                 // 0x0(0x4)
-	byte                                                         State;                                             // 0x4(0x1)
-};
-
-
-// Size 0x10
-struct CharacterHitReactionDamagerTypeToAnimTypePair
-{
-public:
-	class                                                        DamagerType;                                       // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct EventFinishedSpawning
-{
-public:
-	byte                                                         SpawnType;                                         // 0x10(0x1)
-};
-
-
-// Size 0x8
-struct EventFiredFromActorEnd
-{
-public:
-};
-
-
-// Size 0x8
-struct EventFiredFromActorStart
-{
-public:
-};
-
-
-// Size 0x48
-struct EventRequestRespawn
-{
-public:
-	Class Pawn*                                                  Character;                                         // 0x0(0x8)
-	byte                                                         RespawnType;                                       // 0x8(0x1)
-};
-
-
 // Size 0x1
-struct SetFirstPersonMeshVisibleEvent
-{
-public:
-	bool                                                         IsVisible;                                         // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct EventCharacterKnockedBack
+struct EventWaterSplashExitWater
 {
 public:
-	struct FName                                                 RumbleTag;                                         // 0x0(0x8)
 };
 
 
-// Size 0x8
-struct EventCharacterDespawned
-{
-public:
-	Class Character*                                             Character;                                         // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct EventCharacterSpawned
-{
-public:
-	Class Character*                                             Character;                                         // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct EventCharacterEndTeleport
-{
-public:
-	Class Actor*                                                 Character;                                         // 0x0(0x8)
-	bool                                                         PlayOnTeleportEndSounds;                           // 0x8(0x1)
-	byte                                                         TeleportNotificationSource;                        // 0x9(0x1)
-};
-
-
-// Size 0x10
-struct EventCharacterBeginTeleport
-{
-public:
-	Class Actor*                                                 Character;                                         // 0x0(0x8)
-	bool                                                         PlayOnTeleportBeginSounds;                         // 0x8(0x1)
-	byte                                                         TeleportNotificationSource;                        // 0x9(0x1)
-};
-
-
-// Size 0x4
-struct EventCharacterMovementModeChanged
-{
-public:
-	byte                                                         PreviousMovementMode;                              // 0x0(0x1)
-	byte                                                         NewMovementMode;                                   // 0x1(0x1)
-	byte                                                         PreviousCustomMovementMode;                        // 0x2(0x1)
-	byte                                                         NewCustomMovementMode;                             // 0x3(0x1)
-};
-
-
 // Size 0x1
-struct EventCharacterInert
-{
-public:
-	bool                                                         bIsInert;                                          // 0x0(0x1)
-};
-
-
-// Size 0x18
-struct EventPlayerInteractedWithObject
-{
-public:
-};
-
-
-// Size 0x10
-struct EventPlayerStatePawnUnPossessed
-{
-public:
-	Class PlayerState*                                           PlayerState;                                       // 0x0(0x8)
-	Class Pawn*                                                  UnPossessedPawn;                                   // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct EventPlayerStatePawnPossessed
-{
-public:
-	Class PlayerState*                                           PlayerState;                                       // 0x0(0x8)
-	Class Pawn*                                                  PossessedPawn;                                     // 0x8(0x8)
-	bool                                                         IsLocalPlayer;                                     // 0x10(0x1)
-};
-
-
-// Size 0x8
-struct EventRemovePlayerOnLogOut
-{
-public:
-	Class Controller*                                            Controller;                                        // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct OtherPartyTelemetryFragmentInput
-{
-public:
-};
-
-
-// Size 0x30
-struct OtherPartyTelemetryFragment
-{
-public:
-	Struct FString                                               OtherPartyType;                                    // 0x0(0x10)
-	Struct FString                                               OtherPartyId;                                      // 0x10(0x10)
-	double                                                       OtherPartySecondsSinceSpawned;                     // 0x28(0x8)
-};
-
-
-// Size 0x8
-struct EventPlayerLeftProximity
-{
-public:
-	Class Actor*                                                 Player;                                            // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct EventPlayerEnteredProximity
+struct EventWaterSplashEnterWater
 {
 public:
-	Class Actor*                                                 Player;                                            // 0x0(0x8)
 };
 
 

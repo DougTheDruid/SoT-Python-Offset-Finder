@@ -120,6 +120,30 @@ captainslog_illfated_01_v03_CustomizationDesc_C:
   FullSize: '0xf8'
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
+captainslog_protector_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+captainslog_protector_01_v01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+captainslog_protector_01_v02_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+captainslog_protector_01_v03_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
 captainslog_rogue_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -145,6 +169,30 @@ captainslog_rogue_01_v03_CustomizationDesc_C:
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 captainslog_sailor_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+captainslog_servant_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+captainslog_servant_01_v01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+captainslog_servant_01_v02_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+captainslog_servant_01_v03_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'

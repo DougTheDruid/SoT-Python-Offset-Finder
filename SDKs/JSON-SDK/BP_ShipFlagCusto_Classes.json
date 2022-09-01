@@ -1,15 +1,15 @@
 {
   "BP_ShipFlagCustomizationChest_C": {
     "Super": "ShipFlagCustomizationChest",
-    "FullSize": "0x608",
-    "InheritedSize": "0x600",
+    "FullSize": "0x618",
+    "InheritedSize": "0x610",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
         "Size": "0x8",
-        "Offset": "0x600"
+        "Offset": "0x610"
       }
     ]
   },

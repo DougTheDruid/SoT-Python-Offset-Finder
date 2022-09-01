@@ -28,10 +28,6 @@
     "ClassSize": "0x90",
     "Attributes": []
   },
-  "PrepareForWorldSwitchRpc": {
-    "ClassSize": "0x10",
-    "Attributes": []
-  },
   "ServerMigrationAboutToStartEvent": {
     "ClassSize": "0x20",
     "Attributes": []
@@ -124,6 +120,27 @@
         "Offset": "0x40"
       }
     ]
+  },
+  "ServerMigrationRequestBroadcastEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DestinationAddress",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "PrepareForWorldSwitchRpc": {
+    "ClassSize": "0x10",
+    "Attributes": []
   },
   "AthenaServerMigrationClientContext": {
     "ClassSize": "0x10",

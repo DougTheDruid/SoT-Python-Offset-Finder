@@ -30,13 +30,31 @@ hulllivery_azurescout_01_CustomizationDesc_C:
   FullSize: '0xf8'
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
+hulllivery_blackdog_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
 hulllivery_boreal_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
+hulllivery_creator_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
 hulllivery_edgelord_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+hulllivery_edna_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'
@@ -67,6 +85,12 @@ hulllivery_goldhoarders_01_CustomizationDesc_C:
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 hulllivery_goldhoardersghw_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+hulllivery_islander_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'

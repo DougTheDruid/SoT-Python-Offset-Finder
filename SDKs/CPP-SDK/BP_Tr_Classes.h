@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Trinket_Wheel_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cmn_wheel_01_a__cmn_wheel_01_a;                    // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   cmn_wheel_01_a__cmn_wheel_01_a;                    // 0x408(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class BP_Trinket_PinBoard_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   bld_enc_shop_pin_board_01_a;                       // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   bld_enc_shop_pin_board_01_a;                       // 0x408(0x8)
 };
 
 
@@ -26,8 +26,8 @@ public:
 class BP_Trinket_MapPainting_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   tri_com_gmp_onboarding_map_static_01_a;            // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   cmn_picture_frame_02_a;                            // 0x400(0x8)
+	Class StaticMeshComponent*                                   tri_com_gmp_onboarding_map_static_01_a;            // 0x408(0x8)
+	Class StaticMeshComponent*                                   cmn_picture_frame_02_a;                            // 0x410(0x8)
 };
 
 
@@ -35,9 +35,9 @@ public:
 class BP_Trinket_HatRack_02_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cmn_shovel_02_a;                                   // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   shp_pistol_rack_01_a;                              // 0x400(0x8)
-	Class StaticMeshComponent*                                   cmn_hat_22_a;                                      // 0x408(0x8)
+	Class StaticMeshComponent*                                   cmn_shovel_02_a;                                   // 0x408(0x8)
+	Class StaticMeshComponent*                                   shp_pistol_rack_01_a;                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   cmn_hat_22_a;                                      // 0x418(0x8)
 };
 
 
@@ -45,9 +45,9 @@ public:
 class BP_Trinket_HatRack_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cmn_hat_18_a;                                      // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   shp_pistol_rack_01_a;                              // 0x400(0x8)
-	Class StaticMeshComponent*                                   cmn_hat_22_a;                                      // 0x408(0x8)
+	Class StaticMeshComponent*                                   cmn_hat_18_a;                                      // 0x408(0x8)
+	Class StaticMeshComponent*                                   shp_pistol_rack_01_a;                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   cmn_hat_22_a;                                      // 0x418(0x8)
 };
 
 
@@ -55,9 +55,9 @@ public:
 class BP_Trinket_HangingBottles_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   cmn_bottle_01_a;                                   // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   bsp_bottle_hanging_rope_01_b;                      // 0x400(0x8)
-	Class StaticMeshComponent*                                   cmn_bottle_01_a1;                                  // 0x408(0x8)
+	Class StaticMeshComponent*                                   cmn_bottle_01_a;                                   // 0x408(0x8)
+	Class StaticMeshComponent*                                   bsp_bottle_hanging_rope_01_b;                      // 0x410(0x8)
+	Class StaticMeshComponent*                                   cmn_bottle_01_a1;                                  // 0x418(0x8)
 };
 
 
@@ -65,7 +65,7 @@ public:
 class BP_Trinket_GlowBalls_01_a_C: public BP_Trinket_HangingSinglePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   tls_wld_Orb_light_a;                               // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   tls_wld_Orb_light_a;                               // 0x408(0x8)
 };
 
 
@@ -73,12 +73,12 @@ public:
 class BP_Trinket_Barnacles_01_a_C: public BP_Trinket_HangingMultiplePoint_C
 {
 public:
-	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j;                         // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i;                         // 0x400(0x8)
-	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j2;                        // 0x408(0x8)
-	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i2;                        // 0x410(0x8)
-	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j1;                        // 0x418(0x8)
-	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i1;                        // 0x420(0x8)
+	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j;                         // 0x408(0x8)
+	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i;                         // 0x410(0x8)
+	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j2;                        // 0x418(0x8)
+	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i2;                        // 0x420(0x8)
+	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_j1;                        // 0x428(0x8)
+	Class StaticMeshComponent*                                   shp_barnacles_01_a__brn_i1;                        // 0x430(0x8)
 };
 
 

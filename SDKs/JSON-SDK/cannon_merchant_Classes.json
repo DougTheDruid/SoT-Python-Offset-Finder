@@ -1,12 +1,12 @@
 {
-  "cannon_merchant_01_CustomizationDesc_C": {
+  "cannon_merchantgmu_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0xf8",
     "InheritedSize": "0xf8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "cannon_merchantgmu_01_CustomizationDesc_C": {
+  "cannon_merchant_01_CustomizationDesc_C": {
     "Super": "ShipCustomizationDesc",
     "FullSize": "0xf8",
     "InheritedSize": "0xf8",

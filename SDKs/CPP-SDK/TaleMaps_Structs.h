@@ -29,4 +29,11 @@ public:
 };
 
 
+// Size 0x20
+struct TaleQuestVariableTreasureMapItemDescType
+{
+public:
+};
+
+
 }

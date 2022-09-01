@@ -7,14 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0
-class BP_Lantern_SmallShip_Cabin_Quest_C: public BP_InteractableShipLantern_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_Lantern_SmallShip_Cabin_Table_C: public BP_InteractableShipLantern_C
+class BP_Lantern_SmallShip_DeckFront_C: public BP_InteractableShipLantern_C
 {
 public:
 };
@@ -28,7 +21,14 @@ public:
 
 
 // Size 0x0
-class BP_Lantern_SmallShip_DeckFront_C: public BP_InteractableShipLantern_C
+class BP_Lantern_SmallShip_Cabin_Table_C: public BP_InteractableShipLantern_C
+{
+public:
+};
+
+
+// Size 0x11
+class BP_Lantern_SmallShip_Cabin_Quest_C: public None
 {
 public:
 };

@@ -1,4 +1,8 @@
 {
+  "EventLocalPlayerOpenedWarMap": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "EventWarMapStateChanged": {
     "ClassSize": "0x10",
     "Attributes": [

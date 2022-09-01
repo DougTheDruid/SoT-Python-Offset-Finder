@@ -34,7 +34,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BP_wpn_blunderbuss_win_01_a_ItemInfo_C": {
+  "BP_wpn_blunderbuss_shr_01_a_ItemInfo_C": {
     "Super": "ItemInfo",
     "FullSize": "0x518",
     "InheritedSize": "0x510",
@@ -48,7 +48,7 @@
       }
     ]
   },
-  "BP_wpn_blunderbuss_win_01_a_Wieldable_C": {
+  "BP_wpn_blunderbuss_shr_01_a_Wieldable_C": {
     "Super": "BP_Blunderbuss_C",
     "FullSize": "0xa80",
     "InheritedSize": "0xa80",
@@ -119,6 +119,13 @@
     "Attributes": []
   },
   "BP_wpn_blunderbuss_yr1_leg_01_a_ItemDesc_C": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_wpn_blunderbuss_hwm_01_a_v02_ItemDesc_C": {
     "Super": "ItemDesc",
     "FullSize": "0x120",
     "InheritedSize": "0x120",

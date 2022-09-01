@@ -37,7 +37,7 @@ public:
 };
 
 
-// Size 0xd0
+// Size 0xc0
 class StoryClaimedResourcesService: public Actor
 {
 public:
@@ -103,7 +103,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 class StorySpawnedActorsComponent: public ActorComponent
 {
 public:
@@ -125,7 +125,7 @@ class StorySpawnedActorsComponentDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0x8)
-	TArray<Struct StorySpawnedNamedPointsList>                   StorySpawnedActorsList;                            // 0x30(0x10)
+	TArray<Struct StorySpawnedActorsComponentList>               StorySpawnedActorsList;                            // 0x30(0x10)
 };
 
 
@@ -145,7 +145,7 @@ public:
 };
 
 
-// Size 0x138
+// Size 0x128
 class StorySpawnedActorsService: public Actor
 {
 public:
@@ -169,12 +169,13 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x58
 class DebugStoryServiceCheat: public Actor
 {
 public:
 	TArray<Struct StoryInfo>                                     AllStories;                                        // 0x3d0(0x10)
-	TArray<Str AllFilters>                                       AllFilters;                                        // 0x3e0(0x10)
+	TArray<Str AllIncludeFilters>                                AllIncludeFilters;                                 // 0x3e0(0x10)
+	TArray<Str AllExcludeFilters>                                AllExcludeFilters;                                 // 0x3f0(0x10)
 };
 
 
@@ -202,7 +203,7 @@ public:
 };
 
 
-// Size 0xe8
+// Size 0xd8
 class StoryService: public Actor
 {
 public:

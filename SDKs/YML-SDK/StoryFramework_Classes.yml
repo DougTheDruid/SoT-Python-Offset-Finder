@@ -20,12 +20,16 @@ DebugStoryServiceCheat:
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<Struct StoryInfo>
-  - Name: AllFilters
+  - Name: AllIncludeFilters
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<Str AllFilters>
-  ClassSize: '0x48'
-  FullSize: '0x410'
+    Type: TArray<Str AllIncludeFilters>
+  - Name: AllExcludeFilters
+    Offset: '0x3f0'
+    Size: '0x10'
+    Type: TArray<Str AllExcludeFilters>
+  ClassSize: '0x58'
+  FullSize: '0x420'
   InheritedSize: '0x3c8'
   Super: Actor
 DebugStoryServiceCheatInterface:
@@ -56,8 +60,8 @@ StoryClaimedResourcesService:
     Offset: '0x428'
     Size: '0x10'
     Type: TArray<Weakclass PendingClaims>
-  ClassSize: '0xd0'
-  FullSize: '0x498'
+  ClassSize: '0xc0'
+  FullSize: '0x488'
   InheritedSize: '0x3c8'
   Super: Actor
 StoryClaimedResourcesServiceInterface:
@@ -154,8 +158,8 @@ StoryService:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct StoryInfo>
-  ClassSize: '0xe8'
-  FullSize: '0x4b0'
+  ClassSize: '0xd8'
+  FullSize: '0x4a0'
   InheritedSize: '0x3c8'
   Super: Actor
 StoryServiceInterface:
@@ -194,8 +198,8 @@ StorySpawnedActorsComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class StorySpawnedActorsComponentCollectionDataAsset*
-  ClassSize: '0x30'
-  FullSize: '0xf8'
+  ClassSize: '0x40'
+  FullSize: '0x108'
   InheritedSize: '0xc8'
   Super: ActorComponent
 StorySpawnedActorsComponentCollectionDataAsset:
@@ -221,7 +225,7 @@ StorySpawnedActorsComponentDataAsset:
   - Name: StorySpawnedActorsList
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct StorySpawnedNamedPointsList>
+    Type: TArray<Struct StorySpawnedActorsComponentList>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -250,8 +254,8 @@ StorySpawnedActorsService:
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StorySpawnedActorsCollectionDataAsset*
-  ClassSize: '0x138'
-  FullSize: '0x500'
+  ClassSize: '0x128'
+  FullSize: '0x4f0'
   InheritedSize: '0x3c8'
   Super: Actor
 StorySpawnedActorsServiceInterface:

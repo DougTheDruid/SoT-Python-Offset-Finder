@@ -273,15 +273,15 @@ EmissaryVoyageVoteValidatorBase:
     Size: '0x8'
     Type: class
   - Name: TargetCompany
-    Offset: '0x98'
+    Offset: '0xb0'
     Size: '0x8'
     Type: class
   - Name: Consumer
-    Offset: '0xa0'
+    Offset: '0xb8'
     Size: '0x8'
     Type: Class EmissaryVoyageInlineVoteConsumerBase*
-  ClassSize: '0x78'
-  FullSize: '0xa8'
+  ClassSize: '0x90'
+  FullSize: '0xc0'
   InheritedSize: '0x30'
   Super: VoteValidatorInlineBase
 IsAnEmissaryStatCondition:
@@ -326,23 +326,27 @@ StartEmissaryVoyageInlineVoteConsumer:
     Offset: '0x208'
     Size: '0x38'
     Type: Struct FText
-  - Name: EmissaryVotingRemoveVote
+  - Name: EmissaryVotingCantVoteReasonOnOpposingFaction
     Offset: '0x240'
     Size: '0x38'
     Type: Struct FText
-  - Name: EmissaryVotingCantRemoveVote
+  - Name: EmissaryVotingRemoveVote
     Offset: '0x278'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x1a0'
-  FullSize: '0x2c8'
+  - Name: EmissaryVotingCantRemoveVote
+    Offset: '0x2b0'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x1d8'
+  FullSize: '0x300'
   InheritedSize: '0x128'
   Super: EmissaryVoyageInlineVoteConsumerBase
 StartEmissaryVoyageInlineVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xa8'
-  InheritedSize: '0xa8'
+  FullSize: '0xc0'
+  InheritedSize: '0xc0'
   Super: EmissaryVoyageVoteValidatorBase
 StopEmissaryVoyageInlineVoteConsumer:
   Attributes:
@@ -377,6 +381,6 @@ StopEmissaryVoyageInlineVoteConsumer:
 StopEmissaryVoyageInlineVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xa8'
-  InheritedSize: '0xa8'
+  FullSize: '0xc0'
+  InheritedSize: '0xc0'
   Super: EmissaryVoyageVoteValidatorBase

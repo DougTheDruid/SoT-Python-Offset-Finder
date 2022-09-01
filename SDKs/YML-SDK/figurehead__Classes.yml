@@ -36,6 +36,12 @@ figurehead_blackbeardsolo_01_CustomizationDesc_C:
   FullSize: '0xf8'
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
+figurehead_blackdog_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
 figurehead_boreal_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -67,6 +73,12 @@ figurehead_courage_c_CustomizationDesc_C:
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 figurehead_courage_d_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+figurehead_edna_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'
@@ -163,6 +175,12 @@ figurehead_orderofsoulsdre_01_CustomizationDesc_C:
   InheritedSize: '0xf8'
   Super: ShipCustomizationDesc
 figurehead_party_01_CustomizationDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipCustomizationDesc
+figurehead_phoenix_01_CustomizationDesc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'

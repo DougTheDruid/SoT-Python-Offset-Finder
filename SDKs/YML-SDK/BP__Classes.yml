@@ -24,18 +24,6 @@ BP_BriggsyCollectorsChest_Desc_C:
   FullSize: '0x120'
   InheritedSize: '0x120'
   Super: BootyItemDesc
-BP_Campaign005_CursedSails_ClothingCarl_PreCursedSails_C:
-  Attributes: []
-  ClassSize: '-0x43c5eb7d'
-  FullSize: '0x6a0'
-  InheritedSize: '0x43c5f21d'
-  Super: ''
-BP_Campaign005_CursedSails_ShopkeeperTony_PreCursedSails_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x6a8'
-  InheritedSize: '0x6a8'
-  Super: None
 BP_CollectorsChest_Desc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -54,6 +42,54 @@ BP_CollectorsChest_RevengeOfTheMorningstar_Desc_C:
   FullSize: '0x120'
   InheritedSize: '0x120'
   Super: BootyItemDesc
+BP_Emote_SkeletonCurse_Cheer_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_SkeletonCurse_Clap_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_SkeletonCurse_Dance_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_SkeletonCurse_MakeFriends_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_SkeletonCurse_Point_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_SkeletonCurse_Sit_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_SkeletonCurse_Sleep_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_SkeletonCurse_Wave_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
 BP_GoldHoarder_SkeletonKey_Desc_C:
   Attributes: []
   ClassSize: '0x0'
@@ -84,7 +120,19 @@ BP_LoversChest_Desc_C:
   FullSize: '0x120'
   InheritedSize: '0x120'
   Super: BootyItemDesc
+BP_MerchantCrate_AnyItemCrate_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemWithoutIconsDesc
 BP_MerchantCrate_BananaCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: BootyItemDesc
+BP_MerchantCrate_BananaCrate_FullyStocked_Desc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x120'
@@ -97,6 +145,12 @@ BP_MerchantCrate_BigGunpowderBarrel_Desc_C:
   InheritedSize: '0x120'
   Super: BootyItemDesc
 BP_MerchantCrate_CannonballCrate_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: BootyItemDesc
+BP_MerchantCrate_CannonballCrate_FullyStocked_Desc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x120'
@@ -535,8 +589,8 @@ BP_fod_KrakenMeatRawBite1_00_a_ItemInfo_C:
 BP_fod_KrakenMeatRawBite1_00_a_ItemProxy_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x7b0'
-  InheritedSize: '0x7b0'
+  FullSize: '0x7c0'
+  InheritedSize: '0x7c0'
   Super: BP_ProxyIngestible_Retractable_C
 BP_fod_KrakenMeatRawBite1_00_a_Wieldable_C:
   Attributes: []
@@ -544,6 +598,12 @@ BP_fod_KrakenMeatRawBite1_00_a_Wieldable_C:
   FullSize: '0x848'
   InheritedSize: '0x848'
   Super: BP_StaticWieldableIngestible_C
+BP_fod_KrakenMeatRaw_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemDesc
 BP_fod_KrakenMeatRaw_00_a_ItemInfo_C:
   Attributes:
   - Name: MaterialManipulationSettings
@@ -565,8 +625,8 @@ BP_fod_KrakenMeatRaw_00_a_ItemInfo_C:
 BP_fod_KrakenMeatRaw_00_a_ItemProxy_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x7b0'
-  InheritedSize: '0x7b0'
+  FullSize: '0x7c0'
+  InheritedSize: '0x7c0'
   Super: BP_ProxyIngestible_Retractable_C
 BP_fod_KrakenMeatRaw_00_a_Wieldable_C:
   Attributes: []
@@ -574,6 +634,18 @@ BP_fod_KrakenMeatRaw_00_a_Wieldable_C:
   FullSize: '0x848'
   InheritedSize: '0x848'
   Super: BP_StaticWieldableIngestible_C
+BP_fod_MegMeatBurned_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemDesc
+BP_fod_MegMeatCooked_00_a_ItemDesc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x120'
+  InheritedSize: '0x120'
+  Super: ItemDesc
 BP_hair_col_black_01_over_Desc_C:
   Attributes: []
   ClassSize: '0x0'

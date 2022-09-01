@@ -86,16 +86,20 @@ InteractableComponent:
     Offset: '0x100'
     Size: '0x4'
     Type: float
-  - Name: InteractableArea
+  - Name: InteractionPrerequisites
     Offset: '0x108'
+    Size: '0x10'
+    Type: TArray<class InteractionPrerequisites*>
+  - Name: InteractableArea
+    Offset: '0x118'
     Size: '0x8'
     Type: Class InteractableArea*
   - Name: CurrentInteractionState
-    Offset: '0x110'
+    Offset: '0x120'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x50'
-  FullSize: '0x118'
+  ClassSize: '0x60'
+  FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
 InteractableIdentifierInterface:

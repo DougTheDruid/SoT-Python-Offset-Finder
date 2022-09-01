@@ -105,6 +105,23 @@
       }
     ]
   },
+  "CompondNodePinDesc": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "DisplayName",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PinId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "TaleQuestDesc": {
     "ClassSize": "0x80",
     "Attributes": [
@@ -488,6 +505,10 @@
         "Offset": "0x8"
       }
     ]
+  },
+  "QuestVariableAISpawner": {
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "TaleQuestDeliverableItem": {
     "ClassSize": "0x40",

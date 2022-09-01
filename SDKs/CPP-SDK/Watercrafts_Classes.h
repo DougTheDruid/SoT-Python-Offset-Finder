@@ -278,8 +278,8 @@ public:
 class StorageSeat: public Seat
 {
 public:
-	class                                                        StorageInteractionInput;                           // 0x670(0x8)
-	Class StorageContainerComponent*                             StorageContainerComponent;                         // 0x678(0x8)
+	class                                                        StorageInteractionInput;                           // 0x680(0x8)
+	Class StorageContainerComponent*                             StorageContainerComponent;                         // 0x688(0x8)
 };
 
 

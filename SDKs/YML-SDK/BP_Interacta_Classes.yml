@@ -3,144 +3,144 @@
 BP_InteractableShipLantern_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x6c8'
+    Offset: '0x6d8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: Interactable
-    Offset: '0x6d0'
+    Offset: '0x6e0'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: LanternGlow
-    Offset: '0x6d8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Lantern
-    Offset: '0x6e0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Hook
     Offset: '0x6e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: DynamicMaterial
+  - Name: Lantern
     Offset: '0x6f0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: Hook
+    Offset: '0x6f8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: DynamicMaterial
+    Offset: '0x700'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: DynamicGlowMaterial
-    Offset: '0x6f8'
+    Offset: '0x708'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: FlameParameterName
-    Offset: '0x700'
-    Size: '0x8'
-    Type: struct FName
-  - Name: GlowBrightnessParameterName
-    Offset: '0x708'
-    Size: '0x8'
-    Type: struct FName
-  - Name: GlowRandomSeedParameterName
     Offset: '0x710'
     Size: '0x8'
     Type: struct FName
-  - Name: FlameIntensityOn
+  - Name: GlowBrightnessParameterName
     Offset: '0x718'
+    Size: '0x8'
+    Type: struct FName
+  - Name: GlowRandomSeedParameterName
+    Offset: '0x720'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FlameIntensityOn
+    Offset: '0x728'
     Size: '0x4'
     Type: float
   - Name: FlameIntensityOff
-    Offset: '0x71c'
+    Offset: '0x72c'
     Size: '0x4'
     Type: float
   - Name: GlowIntensityOn
-    Offset: '0x720'
+    Offset: '0x730'
     Size: '0x4'
     Type: float
   - Name: GlowIntensityOff
-    Offset: '0x724'
+    Offset: '0x734'
     Size: '0x4'
     Type: float
   - Name: Uses Glow
-    Offset: '0x728'
+    Offset: '0x738'
     Size: '0x1'
     Type: bool
   - Name: DefaultGlowColour
-    Offset: '0x72c'
+    Offset: '0x73c'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: CurrentFlameOFateType
-    Offset: '0x73c'
+    Offset: '0x74c'
     Size: '0x1'
     Type: byte
   ClassSize: '0x75'
-  FullSize: '0x73d'
-  InheritedSize: '0x6c8'
+  FullSize: '0x74d'
+  InheritedSize: '0x6d8'
   Super: ShipInteractableLight
 BP_InteractableShipRailingLight_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x6c8'
+    Offset: '0x6d8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: Interactable
-    Offset: '0x6d0'
+    Offset: '0x6e0'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: LanternGlow
-    Offset: '0x6d8'
+    Offset: '0x6e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Light
-    Offset: '0x6e0'
+    Offset: '0x6f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DynamicGlowMaterial
-    Offset: '0x6e8'
+    Offset: '0x6f8'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: GlowBrightnessParameterName
-    Offset: '0x6f0'
+    Offset: '0x700'
     Size: '0x8'
     Type: struct FName
   - Name: GlowRandomSeedParameterName
-    Offset: '0x6f8'
+    Offset: '0x708'
     Size: '0x8'
     Type: struct FName
   - Name: GlowIntensityOn
-    Offset: '0x700'
+    Offset: '0x710'
     Size: '0x4'
     Type: float
   - Name: GlowIntensityOff
-    Offset: '0x704'
+    Offset: '0x714'
     Size: '0x4'
     Type: float
   - Name: UsesGlow
-    Offset: '0x708'
+    Offset: '0x718'
     Size: '0x1'
     Type: bool
   - Name: DynamicMaterial
-    Offset: '0x710'
+    Offset: '0x720'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: FlameParameterName
-    Offset: '0x718'
+    Offset: '0x728'
     Size: '0x8'
     Type: struct FName
   - Name: FlameIntensityOn
-    Offset: '0x720'
+    Offset: '0x730'
     Size: '0x4'
     Type: float
   - Name: FlameIntensityOff
-    Offset: '0x724'
+    Offset: '0x734'
     Size: '0x4'
     Type: float
   - Name: DefaultGlowColour
-    Offset: '0x728'
+    Offset: '0x738'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: CurrentFlameOfFateType
-    Offset: '0x738'
+    Offset: '0x748'
     Size: '0x1'
     Type: byte
   ClassSize: '0x71'
-  FullSize: '0x739'
-  InheritedSize: '0x6c8'
+  FullSize: '0x749'
+  InheritedSize: '0x6d8'
   Super: ShipInteractableLight

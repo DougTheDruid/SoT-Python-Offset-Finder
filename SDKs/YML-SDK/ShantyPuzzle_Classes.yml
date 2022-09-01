@@ -22,12 +22,8 @@ ShantyPuzzleCompletionComponent:
     Offset: '0x100'
     Size: '0x8'
     Type: Class LandmarkReactionPlayer*
-  - Name: ReactionState
-    Offset: '0x108'
-    Size: '0x1'
-    Type: byte
-  ClassSize: '0x48'
-  FullSize: '0x110'
+  ClassSize: '0x40'
+  FullSize: '0x108'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ShantyPuzzleComponent:

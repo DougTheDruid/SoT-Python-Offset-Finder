@@ -49,9 +49,9 @@
   },
   "StoryClaimedResourcesService": {
     "Super": "Actor",
-    "FullSize": "0x498",
+    "FullSize": "0x488",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0xd0",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "PendingClaims",
@@ -172,9 +172,9 @@
   },
   "StorySpawnedActorsComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xf8",
+    "FullSize": "0x108",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "AssetsCollection",
@@ -218,7 +218,7 @@
       },
       {
         "Name": "StorySpawnedActorsList",
-        "Type": "TArray<Struct StorySpawnedNamedPointsList>",
+        "Type": "TArray<Struct StorySpawnedActorsComponentList>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -253,9 +253,9 @@
   },
   "StorySpawnedActorsService": {
     "Super": "Actor",
-    "FullSize": "0x500",
+    "FullSize": "0x4f0",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x138",
+    "ClassSize": "0x128",
     "Attributes": [
       {
         "Name": "EarlyRegisteredComponents",
@@ -294,9 +294,9 @@
   },
   "DebugStoryServiceCheat": {
     "Super": "Actor",
-    "FullSize": "0x410",
+    "FullSize": "0x420",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x48",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "AllStories",
@@ -305,10 +305,16 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "AllFilters",
-        "Type": "TArray<Str AllFilters>",
+        "Name": "AllIncludeFilters",
+        "Type": "TArray<Str AllIncludeFilters>",
         "Size": "0x10",
         "Offset": "0x3e0"
+      },
+      {
+        "Name": "AllExcludeFilters",
+        "Type": "TArray<Str AllExcludeFilters>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
       }
     ]
   },
@@ -355,9 +361,9 @@
   },
   "StoryService": {
     "Super": "Actor",
-    "FullSize": "0x4b0",
+    "FullSize": "0x4a0",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0xe8",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "Stories",

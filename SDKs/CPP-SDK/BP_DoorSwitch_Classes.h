@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_DoorSwitchMechanismTrigger_C: public SwitchMechanismTrigger
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x558(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x560(0x8)
+	Class ArrowComponent*                                        Arrow;                                             // 0x568(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x570(0x8)
 };
 
 

@@ -32,15 +32,6 @@ public:
 };
 
 
-// Size 0x20
-struct DelayedStatusEffect
-{
-public:
-	Struct Status                                                StatusEffect;                                      // 0x0(0x18)
-	float                                                        InEffectTime;                                      // 0x18(0x4)
-};
-
-
 // Size 0x50
 struct ActiveStatusEffect
 {
@@ -69,6 +60,15 @@ public:
 	TArray<Class StatusApplied>                                  StatusApplied;                                     // 0x0(0x10)
 	TArray<class Targets*>                                       Targets;                                           // 0x10(0x10)
 	Class Actor*                                                 StatusSource;                                      // 0x20(0x8)
+};
+
+
+// Size 0x20
+struct DelayedStatusEffect
+{
+public:
+	Struct Status                                                StatusEffect;                                      // 0x0(0x18)
+	float                                                        InEffectTime;                                      // 0x18(0x4)
 };
 
 

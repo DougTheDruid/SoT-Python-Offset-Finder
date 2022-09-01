@@ -1,27 +1,27 @@
 {
   "VeilOfTheAncients": {
     "Super": "InteractableBase",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f0",
+    "FullSize": "0x418",
+    "InheritedSize": "0x400",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "NumberOfGems",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f0"
+        "Offset": "0x400"
       },
       {
         "Name": "LockComponent",
         "Type": "Class LockComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x408"
       },
       {
         "Name": "StaticMeshComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x410"
       }
     ]
   },

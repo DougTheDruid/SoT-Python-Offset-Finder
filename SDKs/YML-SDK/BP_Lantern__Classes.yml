@@ -3,30 +3,30 @@
 BP_Lantern_MediumShip_Cabin_Quest_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x73d'
-  InheritedSize: '0x73d'
+  FullSize: '0x74d'
+  InheritedSize: '0x74d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_MediumShip_Quest_Table_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x73d'
-  InheritedSize: '0x73d'
+  FullSize: '0x74d'
+  InheritedSize: '0x74d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_MediumShip_brig_new_2_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x73d'
-  InheritedSize: '0x73d'
+  FullSize: '0x74d'
+  InheritedSize: '0x74d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_MediumShip_brig_new_3_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x73d'
-  InheritedSize: '0x73d'
+  FullSize: '0x74d'
+  InheritedSize: '0x74d'
   Super: BP_InteractableShipLantern_C
 BP_Lantern_MediumShip_brig_new_C:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x73d'
-  InheritedSize: '0x73d'
+  FullSize: '0x74d'
+  InheritedSize: '0x74d'
   Super: BP_InteractableShipLantern_C

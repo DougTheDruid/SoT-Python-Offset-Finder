@@ -1,9 +1,9 @@
 {
   "InteractableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x118",
+    "FullSize": "0x128",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x50",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "FeatureFlag",
@@ -66,16 +66,22 @@
         "Offset": "0x100"
       },
       {
+        "Name": "InteractionPrerequisites",
+        "Type": "TArray<class InteractionPrerequisites*>",
+        "Size": "0x10",
+        "Offset": "0x108"
+      },
+      {
         "Name": "InteractableArea",
         "Type": "Class InteractableArea*",
         "Size": "0x8",
-        "Offset": "0x108"
+        "Offset": "0x118"
       },
       {
         "Name": "CurrentInteractionState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x110"
+        "Offset": "0x120"
       }
     ]
   },

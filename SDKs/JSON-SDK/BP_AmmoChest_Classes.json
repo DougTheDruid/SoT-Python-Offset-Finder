@@ -1,39 +1,39 @@
 {
   "BP_AmmoChest_C": {
     "Super": "AmmoChest",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x460",
+    "FullSize": "0x4b0",
+    "InheritedSize": "0x470",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x470"
       },
       {
         "Name": "Hits",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x478"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x480"
       },
       {
         "Name": "Emitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
-        "Offset": "0x478"
+        "Offset": "0x488"
       },
       {
         "Name": "DynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x4a8"
       }
     ]
   },

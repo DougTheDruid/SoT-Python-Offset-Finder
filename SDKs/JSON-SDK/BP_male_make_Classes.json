@@ -1,4 +1,67 @@
 {
+  "BP_male_makeup_black_08_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_black_07_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_black_06_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_black_05_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_black_04_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_black_03_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_black_02_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_black_01_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BP_male_makeup_white_08_Desc_C": {
+    "Super": "ClothingDesc",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BP_male_makeup_white_07_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xd0",
@@ -98,69 +161,6 @@
     "Attributes": []
   },
   "BP_male_makeup_asian_01_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_08_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_07_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_06_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_05_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_04_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_03_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_02_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_black_01_Desc_C": {
-    "Super": "ClothingDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BP_male_makeup_white_08_Desc_C": {
     "Super": "ClothingDesc",
     "FullSize": "0xd0",
     "InheritedSize": "0xd0",

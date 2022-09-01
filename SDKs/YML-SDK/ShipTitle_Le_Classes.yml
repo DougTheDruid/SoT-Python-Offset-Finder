@@ -30,7 +30,19 @@ ShipTitle_LegendaryIllFated_C:
   FullSize: '0xf8'
   InheritedSize: '0xf8'
   Super: ShipTitleDesc
+ShipTitle_LegendaryProtectorOfAthenasFortune_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipTitleDesc
 ShipTitle_LegendaryRogue_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xf8'
+  InheritedSize: '0xf8'
+  Super: ShipTitleDesc
+ShipTitle_LegendaryServantOfTheFlame_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0xf8'

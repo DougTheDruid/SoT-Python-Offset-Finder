@@ -33,6 +33,82 @@
       }
     ]
   },
+  "AudioPortalComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x340",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "PortalTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "InsideRtpcUpdateDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2e4"
+      },
+      {
+        "Name": "OutsideRtpcUpdateDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2e8"
+      },
+      {
+        "Name": "TrackAttachmentToActor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2ec"
+      },
+      {
+        "Name": "AudioInsideSpace",
+        "Type": "Class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "AudioOutsideSpace",
+        "Type": "Class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "ActiveAudioInsideSpace",
+        "Type": "Class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "ActiveAudioOutsideSpace",
+        "Type": "Class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x308"
+      },
+      {
+        "Name": "CollectionAsset",
+        "Type": "Class StoryDrivenAudioPortalCollectionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x310"
+      }
+    ]
+  },
+  "AudioPortalInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AudioPortalService": {
+    "Super": "Object",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": []
+  },
   "MultiEmitter": {
     "Super": "Actor",
     "FullSize": "0x3d8",
@@ -44,6 +120,40 @@
         "Type": "Class MultiEmitterRootComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
+      }
+    ]
+  },
+  "StoryDrivenAudioPortalDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "Struct FeatureFlag",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Stories",
+        "Type": "TArray<Struct StoryDrivenAudioPortalSetting>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StoryDrivenAudioPortalCollectionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class AssetsList*>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

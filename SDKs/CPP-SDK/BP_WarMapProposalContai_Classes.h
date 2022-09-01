@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_WarMapProposalContainer_C: public WarMapProposalContainer
 {
 public:
-	Class ChildActorComponent*                                   CancelTale;                                        // 0x928(0x8)
-	Class ChildActorComponent*                                   TaleSelection;                                     // 0x930(0x8)
+	Class ChildActorComponent*                                   CancelTale;                                        // 0xa50(0x8)
+	Class ChildActorComponent*                                   TaleSelection;                                     // 0xa58(0x8)
 };
 
 

@@ -36,13 +36,25 @@ BP_Emote_BarrelHide_Desc_C:
   FullSize: '0x100'
   InheritedSize: '0x100'
   Super: EmoteDesc
-BP_Emote_CastawayFire_Desc_C:
+BP_Emote_Castaway_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_Confused1_Desc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x100'
   InheritedSize: '0x100'
   Super: EmoteDesc
 BP_Emote_Drama_Desc_C:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x100'
+  InheritedSize: '0x100'
+  Super: EmoteDesc
+BP_Emote_Flirt_Desc_C:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x100'

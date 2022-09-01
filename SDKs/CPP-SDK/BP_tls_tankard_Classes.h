@@ -64,7 +64,28 @@ public:
 
 
 // Size 0x0
+class BP_tls_tankard_s7_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
 class BP_tls_tankard_s5_01_a_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_tls_tankard_hwm_01_a_v02_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_tls_tankard_cre_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };
@@ -79,6 +100,13 @@ public:
 
 // Size 0x0
 class BP_tls_tankard_wth_01_a_v01_ItemDesc_C: public ItemDesc
+{
+public:
+};
+
+
+// Size 0x0
+class BP_tls_tankard_bdg_01_a_ItemDesc_C: public ItemDesc
 {
 public:
 };

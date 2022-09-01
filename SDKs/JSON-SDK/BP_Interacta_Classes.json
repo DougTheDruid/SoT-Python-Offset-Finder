@@ -1,215 +1,215 @@
 {
   "BP_InteractableShipRailingLight_C": {
     "Super": "ShipInteractableLight",
-    "FullSize": "0x739",
-    "InheritedSize": "0x6c8",
+    "FullSize": "0x749",
+    "InheritedSize": "0x6d8",
     "ClassSize": "0x71",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x6c8"
+        "Offset": "0x6d8"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x6d0"
+        "Offset": "0x6e0"
       },
       {
         "Name": "LanternGlow",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6d8"
+        "Offset": "0x6e8"
       },
       {
         "Name": "Light",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6e0"
+        "Offset": "0x6f0"
       },
       {
         "Name": "DynamicGlowMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x6e8"
+        "Offset": "0x6f8"
       },
       {
         "Name": "GlowBrightnessParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x700"
       },
       {
         "Name": "GlowRandomSeedParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x708"
       },
       {
         "Name": "GlowIntensityOn",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x700"
+        "Offset": "0x710"
       },
       {
         "Name": "GlowIntensityOff",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x704"
+        "Offset": "0x714"
       },
       {
         "Name": "UsesGlow",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x708"
+        "Offset": "0x718"
       },
       {
         "Name": "DynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x710"
+        "Offset": "0x720"
       },
       {
         "Name": "FlameParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x718"
+        "Offset": "0x728"
       },
       {
         "Name": "FlameIntensityOn",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x720"
+        "Offset": "0x730"
       },
       {
         "Name": "FlameIntensityOff",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x724"
+        "Offset": "0x734"
       },
       {
         "Name": "DefaultGlowColour",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x728"
+        "Offset": "0x738"
       },
       {
         "Name": "CurrentFlameOfFateType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x738"
+        "Offset": "0x748"
       }
     ]
   },
   "BP_InteractableShipLantern_C": {
     "Super": "ShipInteractableLight",
-    "FullSize": "0x73d",
-    "InheritedSize": "0x6c8",
+    "FullSize": "0x74d",
+    "InheritedSize": "0x6d8",
     "ClassSize": "0x75",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x6c8"
+        "Offset": "0x6d8"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x6d0"
+        "Offset": "0x6e0"
       },
       {
         "Name": "LanternGlow",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6d8"
+        "Offset": "0x6e8"
       },
       {
         "Name": "Lantern",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6e0"
+        "Offset": "0x6f0"
       },
       {
         "Name": "Hook",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6e8"
+        "Offset": "0x6f8"
       },
       {
         "Name": "DynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x700"
       },
       {
         "Name": "DynamicGlowMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x708"
       },
       {
         "Name": "FlameParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x710"
       },
       {
         "Name": "GlowBrightnessParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x718"
       },
       {
         "Name": "GlowRandomSeedParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x710"
+        "Offset": "0x720"
       },
       {
         "Name": "FlameIntensityOn",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x718"
+        "Offset": "0x728"
       },
       {
         "Name": "FlameIntensityOff",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x71c"
+        "Offset": "0x72c"
       },
       {
         "Name": "GlowIntensityOn",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x720"
+        "Offset": "0x730"
       },
       {
         "Name": "GlowIntensityOff",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x724"
+        "Offset": "0x734"
       },
       {
         "Name": "Uses Glow",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x728"
+        "Offset": "0x738"
       },
       {
         "Name": "DefaultGlowColour",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x72c"
+        "Offset": "0x73c"
       },
       {
         "Name": "CurrentFlameOFateType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x73c"
+        "Offset": "0x74c"
       }
     ]
   },

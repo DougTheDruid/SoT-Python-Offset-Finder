@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_Shopkeeper_C: public Shopkeeper
 {
 public:
-	Class CargoRunParticipantComponent*                          None;                                              // 0x680(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0x688(0x8)
-	Class NPCDialogComponent*                                    None;                                              // 0x690(0x8)
-	Class SkeletalMeshComponent*                                 None;                                              // 0x698(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x6a0(0x8)
+	Class CargoRunParticipantComponent*                          CargoRunParticipant;                               // 0x690(0x8)
+	Class CapsuleComponent*                                      SolidHits;                                         // 0x698(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x6a0(0x8)
+	Class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x6a8(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6b0(0x8)
 };
 
 

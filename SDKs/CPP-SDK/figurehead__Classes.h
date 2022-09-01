@@ -98,76 +98,6 @@ public:
 
 
 // Size 0x0
-class figurehead_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_reapersbones_e_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_reapersbones_d_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_reapersbones_c_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_reapersbones_b_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_reapersbones_a_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
-class figurehead_goldhoarders_01_b_CustomizationDesc_C: public ShipCustomizationDesc
-{
-public:
-};
-
-
-// Size 0x0
 class figurehead_sakurasolo_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
@@ -301,7 +231,21 @@ public:
 
 
 // Size 0x0
+class figurehead_phoenix_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
 class figurehead_sabrewulfsolo_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_edna_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };
@@ -329,6 +273,13 @@ public:
 
 
 // Size 0x0
+class figurehead_blackdog_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
 class figurehead_swordfish_01_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
@@ -337,6 +288,76 @@ public:
 
 // Size 0x0
 class figurehead_sailor_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_yr1_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_reapersbones_e_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_reapersbones_d_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_reapersbones_c_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_reapersbones_b_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_reapersbones_a_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_orderofsouls_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_merchant_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_legendary_01_CustomizationDesc_C: public ShipCustomizationDesc
+{
+public:
+};
+
+
+// Size 0x0
+class figurehead_goldhoarders_01_b_CustomizationDesc_C: public ShipCustomizationDesc
 {
 public:
 };

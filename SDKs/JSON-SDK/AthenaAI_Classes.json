@@ -2155,6 +2155,76 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "AINameplateComponent": {
+    "Super": "NameplateComponent",
+    "FullSize": "0x480",
+    "InheritedSize": "0x310",
+    "ClassSize": "0x170",
+    "Attributes": [
+      {
+        "Name": "VisibleFromWorldDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x318"
+      },
+      {
+        "Name": "VisibleUntilWorldDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x31c"
+      },
+      {
+        "Name": "VisibleAfterDeathDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x320"
+      },
+      {
+        "Name": "Title",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x360"
+      },
+      {
+        "Name": "DisplayNameAsString",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x398"
+      },
+      {
+        "Name": "DebugDisplayText",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "VisibilityDisabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b8"
+      }
+    ]
+  },
+  "PetNameplateComponent": {
+    "Super": "AINameplateComponent",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x480",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DefaultPetName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x478"
+      }
+    ]
+  },
   "Pet": {
     "Super": "AICreatureCharacter",
     "FullSize": "0xc70",
@@ -2295,7 +2365,7 @@
       },
       {
         "Name": "AINameplateComponent",
-        "Type": "Class AINameplateComponent*",
+        "Type": "Class PetNameplateComponent*",
         "Size": "0x8",
         "Offset": "0x968"
       },
@@ -2569,76 +2639,6 @@
     "ClassSize": "0x70",
     "Attributes": []
   },
-  "AINameplateComponent": {
-    "Super": "NameplateComponent",
-    "FullSize": "0x480",
-    "InheritedSize": "0x310",
-    "ClassSize": "0x170",
-    "Attributes": [
-      {
-        "Name": "VisibleFromWorldDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x318"
-      },
-      {
-        "Name": "VisibleUntilWorldDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x31c"
-      },
-      {
-        "Name": "VisibleAfterDeathDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x320"
-      },
-      {
-        "Name": "Title",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x328"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x360"
-      },
-      {
-        "Name": "DisplayNameAsString",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x398"
-      },
-      {
-        "Name": "DebugDisplayText",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "VisibilityDisabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3b8"
-      }
-    ]
-  },
-  "PetNameplateComponent": {
-    "Super": "AINameplateComponent",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x480",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DefaultPetName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x478"
-      }
-    ]
-  },
   "PetPartCustomisationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x180",
@@ -2776,9 +2776,9 @@
   },
   "PetTelemetryComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x110",
+    "FullSize": "0x100",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x48",
+    "ClassSize": "0x38",
     "Attributes": []
   },
   "PetWieldableReactMappingsDataAsset": {
@@ -7558,8 +7558,8 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "FeatureName",
-        "Type": "struct FName",
+        "Name": "Feature",
+        "Type": "Struct FeatureFlag",
         "Size": "0x8",
         "Offset": "0x68"
       }
@@ -9616,6 +9616,20 @@
       {
         "Name": "AISkillsets",
         "Type": "TArray<class AISkillsets*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "IsAIUsingFormDataAssetStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AllowedAIDataAssetForms",
+        "Type": "TArray<class AllowedAIDataAssetForms*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
