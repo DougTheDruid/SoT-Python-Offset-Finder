@@ -87,7 +87,7 @@ ContextualTutorialComponent:
   - Name: SpawnedPromptActors
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class SpawnedPromptActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x58'
   FullSize: '0x120'
   InheritedSize: '0xc8'

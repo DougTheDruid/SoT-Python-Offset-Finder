@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
-        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*",
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x590"
       }

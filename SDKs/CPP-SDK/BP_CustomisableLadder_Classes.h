@@ -14,7 +14,7 @@ public:
 	Class InteractableComponent*                                 InteractableComponent;                             // 0x5c8(0x8)
 	Class StaticMeshComponent*                                   Ladder Cap;                                        // 0x5d0(0x8)
 	Struct CustomisableLadderDefinitionStruct                    LadderCustomisationDefinition;                     // 0x5d8(0x20)
-	TArray<Struct InteractOffset>                                OffTopSplineComponentPositions;                    // 0x5f8(0x10)
+	TArray<Struct Vector>                                        OffTopSplineComponentPositions;                    // 0x5f8(0x10)
 	TArray<Struct Vector>                                        OnTopSplineComponentPositions;                     // 0x608(0x10)
 	int                                                          Steps;                                             // 0x618(0x4)
 	Class MaterialInterface*                                     Material Override;                                 // 0x620(0x8)

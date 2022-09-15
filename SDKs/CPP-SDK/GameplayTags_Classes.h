@@ -51,7 +51,7 @@ public:
 class EditableGameplayTagQueryExpression_AnyExprMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	TArray<class Expressions*>                                   Expressions;                                       // 0x28(0x10)
+	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
 };
 
 
@@ -59,7 +59,7 @@ public:
 class EditableGameplayTagQueryExpression_AllExprMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	TArray<class Expressions*>                                   Expressions;                                       // 0x28(0x10)
+	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
 };
 
 
@@ -67,7 +67,7 @@ public:
 class EditableGameplayTagQueryExpression_NoExprMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	TArray<class Expressions*>                                   Expressions;                                       // 0x28(0x10)
+	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
 };
 
 
@@ -89,7 +89,7 @@ public:
 class GameplayTagsManager: public Object
 {
 public:
-	TArray<class GameplayTagTables*>                             GameplayTagTables;                                 // 0x140(0x10)
+	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x140(0x10)
 };
 
 

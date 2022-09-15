@@ -187,7 +187,7 @@ AIOnShipManagerComponent:
   - Name: AIOnShipAIFixedWavesSpawners
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class AIOnShipAIFixedWavesSpawners*>
+    Type: TArray<class AIFixedWavesSpawner*>
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'
@@ -983,15 +983,15 @@ AggressiveGhostShip:
   - Name: ExtraMeshes
     Offset: '0x5d0'
     Size: '0x10'
-    Type: TArray<class ExtraMeshes*>
+    Type: TArray<class StaticMeshComponent*>
   - Name: AllMeshes
     Offset: '0x760'
     Size: '0x10'
-    Type: TArray<class AllMeshes*>
+    Type: TArray<class MeshComponent*>
   - Name: AllMaterials
     Offset: '0x770'
     Size: '0x10'
-    Type: TArray<class AllMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x4b8'
   FullSize: '0x880'
   InheritedSize: '0x3c8'
@@ -1755,7 +1755,7 @@ AggressiveGhostShipsEncounterService:
   - Name: Encounters
     Offset: '0x520'
     Size: '0x10'
-    Type: TArray<class Encounters*>
+    Type: TArray<class AggressiveGhostShipsEncounter*>
   ClassSize: '0x110'
   FullSize: '0x530'
   InheritedSize: '0x420'
@@ -2135,7 +2135,7 @@ AmmoEffectsComponent:
   - Name: AmmoEffects
     Offset: '0x110'
     Size: '0x10'
-    Type: TArray<class AmmoEffects*>
+    Type: TArray<class AmmoBaseEffect*>
   - Name: AmmoEffectState
     Offset: '0x170'
     Size: '0x8'
@@ -2284,7 +2284,7 @@ AnimNotifyStateWieldableBookLeftSpreadCurrentRightSpreadNext:
   FullSize: '0x78'
   InheritedSize: '0x78'
   Super: AnimNotifyStateWieldableBookRenderingModeRequest
-AnimNotifyStateWieldableBookLeftSpreadPreviousRightSpreadCurren:
+AnimNotifyStateWieldableBookLeftSpreadPreviousRightSpreadCurrent:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x78'
@@ -2643,7 +2643,7 @@ AnimatedStepsComponent:
   - Name: Boxes
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class Boxes*>
+    Type: TArray<class BoxComponent*>
   - Name: BoxOrigins
     Offset: '0xe0'
     Size: '0x10'
@@ -2693,7 +2693,7 @@ AppearComponent:
   - Name: DynamicMaterials
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'
@@ -3033,7 +3033,7 @@ AshenLordEncounterParams:
   - Name: AllAshenLordDescs
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class AllAshenLordDescs*>
+    Type: TArray<class AshenLordDesc*>
   - Name: RandomlySpawnableAshenLords
     Offset: '0x90'
     Size: '0x10'
@@ -3827,7 +3827,7 @@ AthenaAnimationEmoteListingAsset:
   - Name: EmoteGroupings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class EmoteGroupings*>
+    Type: TArray<class AthenaAnimationEmoteGroupingAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -4659,7 +4659,7 @@ AthenaCharacter:
   - Name: RegisteredInputComponents
     Offset: '0xb30'
     Size: '0x10'
-    Type: TArray<class RegisteredInputComponents*>
+    Type: TArray<class InputComponent*>
   ClassSize: '0x5d0'
   FullSize: '0xbb0'
   InheritedSize: '0x5e0'
@@ -5011,11 +5011,11 @@ AthenaContestTavern:
   - Name: TavernSpawnPoints
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<class TavernSpawnPoints*>
+    Type: TArray<class SpawnLocation*>
   - Name: TavernLevelActorsToPrepare
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class TavernLevelActorsToPrepare*>
+    Type: TArray<class Actor*>
   ClassSize: '0x38'
   FullSize: '0x400'
   InheritedSize: '0x3c8'
@@ -6389,7 +6389,7 @@ AthenaHUD:
   - Name: CoherentComponents
     Offset: '0x738'
     Size: '0x10'
-    Type: TArray<class CoherentComponents*>
+    Type: TArray<class CoherentUIGTInstancedComponent*>
   ClassSize: '0x308'
   FullSize: '0x7e0'
   InheritedSize: '0x4d8'
@@ -6615,7 +6615,7 @@ AthenaPlayerCharacter:
   - Name: FirstPersonParticleComponents
     Offset: '0xcd8'
     Size: '0x10'
-    Type: TArray<class FirstPersonParticleComponents*>
+    Type: TArray<class ParticleSystemComponent*>
   - Name: ThirdPersonCamera
     Offset: '0xce8'
     Size: '0x8'
@@ -6623,7 +6623,7 @@ AthenaPlayerCharacter:
   - Name: ThirdPersonParticleComponents
     Offset: '0xcf0'
     Size: '0x10'
-    Type: TArray<class ThirdPersonParticleComponents*>
+    Type: TArray<class ParticleSystemComponent*>
   - Name: SpringArmCamera
     Offset: '0xd00'
     Size: '0x8'
@@ -7297,7 +7297,7 @@ AthenaPlayerZonePenetrationTrackerComponent:
   - Name: PlayersInZone
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class PlayersInZone*>
+    Type: TArray<class AthenaPlayerCharacter*>
   ClassSize: '0xf8'
   FullSize: '0x1c0'
   InheritedSize: '0xc8'
@@ -7811,7 +7811,7 @@ AvailableFishForSpawning:
   - Name: AvailableFishToSelectForSpawning
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AvailableFishToSelectForSpawning*>
+    Type: TArray<class FishSpawnParamsDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -8213,7 +8213,7 @@ BaitRadialContentRule:
   - Name: MappedSlots
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<class MappedSlots*>
+    Type: TArray<class ItemInfo*>
   - Name: BaitItemCategory
     Offset: '0xf8'
     Size: '0x8'
@@ -8243,7 +8243,7 @@ BakedDecalComponent:
   - Name: StaticMeshes
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<class StaticMeshes*>
+    Type: TArray<class StaticMeshComponent*>
   - Name: DeferredDecals
     Offset: '0xf8'
     Size: '0x10'
@@ -8529,7 +8529,7 @@ BattleElevator:
   - Name: ChainPivotComponents
     Offset: '0xb18'
     Size: '0x10'
-    Type: TArray<class ChainPivotComponents*>
+    Type: TArray<class SceneComponent*>
   - Name: ChainAnchorLocations
     Offset: '0xb28'
     Size: '0x10'
@@ -8551,7 +8551,7 @@ BattleElevatorEventRoom:
   - Name: ActorsWithAIRegionsToAssignAIToCannons
     Offset: '0x500'
     Size: '0x10'
-    Type: TArray<class ActorsWithAIRegionsToAssignAIToCannons*>
+    Type: TArray<class Actor*>
   - Name: TargetBattleElevatorActor
     Offset: '0x510'
     Size: '0x8'
@@ -9821,7 +9821,7 @@ BrazierMechanismTrigger:
   - Name: DynamicMaterials
     Offset: '0x880'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0xb8'
   FullSize: '0x890'
   InheritedSize: '0x7d8'
@@ -9841,7 +9841,7 @@ BroadcasterPuzzleStatue:
   - Name: ReceiverStatues
     Offset: '0x458'
     Size: '0x10'
-    Type: TArray<class ReceiverStatues*>
+    Type: TArray<class Actor*>
   - Name: ValidConfigurationCombos
     Offset: '0x468'
     Size: '0x10'
@@ -10375,7 +10375,7 @@ BuriedTreasureLocation:
   - Name: DiggableSurfaceTypes
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class DiggableSurfaceTypes*>
+    Type: TArray<class PhysicalMaterial*>
   - Name: StopVerification
     Offset: '0x3e0'
     Size: '0x1'
@@ -10739,7 +10739,7 @@ Campfire:
   - Name: OverlappingActors
     Offset: '0x680'
     Size: '0x10'
-    Type: TArray<class OverlappingActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x3b0'
   FullSize: '0x778'
   InheritedSize: '0x3c8'
@@ -11275,7 +11275,7 @@ CanvasLODService:
   - Name: ResourceManagedCanvases
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class ResourceManagedCanvases*>
+    Type: TArray<class Actor*>
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -11427,11 +11427,11 @@ CanvasWorldMapComponent:
   - Name: ReapersMarkFlagIcons
     Offset: '0x1f0'
     Size: '0x10'
-    Type: TArray<class ReapersMarkFlagIcons*>
+    Type: TArray<class Texture*>
   - Name: ReapersBonesIcons
     Offset: '0x200'
     Size: '0x10'
-    Type: TArray<class ReapersBonesIcons*>
+    Type: TArray<class Texture*>
   - Name: ReapersMarkShipIcon
     Offset: '0x210'
     Size: '0x8'
@@ -11537,7 +11537,7 @@ Capstan:
   - Name: CapstanArms
     Offset: '0x458'
     Size: '0x10'
-    Type: TArray<class CapstanArms*>
+    Type: TArray<class CapstanArm*>
   - Name: AudioParameters
     Offset: '0x468'
     Size: '0x68'
@@ -12519,7 +12519,7 @@ CatalogDataAsset:
   - Name: Offers
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class Offers*>
+    Type: TArray<class CatalogOfferDataAsset*>
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -12547,7 +12547,7 @@ CatalogListDataAsset:
   - Name: Catalogs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Catalogs*>
+    Type: TArray<class CatalogDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -12709,11 +12709,11 @@ ChainLightningVisualActor:
   - Name: CachedChainMaterials
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<class CachedChainMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: CachedChainComponents
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<class CachedChainComponents*>
+    Type: TArray<class StaticMeshComponent*>
   - Name: SettingsAsset
     Offset: '0x468'
     Size: '0x8'
@@ -12765,7 +12765,7 @@ ChaliceStatue:
   - Name: PhaseParticleSystems
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class PhaseParticleSystems*>
+    Type: TArray<class ParticleSystemComponent*>
   - Name: EventDispatcher
     Offset: '0x428'
     Size: '0xa0'
@@ -13697,11 +13697,11 @@ ChestOfRageComponent:
   - Name: DynamicMaterials
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: RageContributors
     Offset: '0x188'
     Size: '0x10'
-    Type: TArray<class RageContributors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x128'
   FullSize: '0x1f0'
   InheritedSize: '0xc8'
@@ -14273,7 +14273,7 @@ CloudDomeService:
   - Name: RegisteredCloudDomes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class RegisteredCloudDomes*>
+    Type: TArray<class Object*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -14365,11 +14365,11 @@ Cluster:
   - Name: ClusterStaticMeshes
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<class ClusterStaticMeshes*>
+    Type: TArray<class ClusterStaticMeshComponent*>
   - Name: AllComponents
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class AllComponents*>
+    Type: TArray<class StaticMeshComponent*>
   - Name: DoesContainDecorator
     Offset: '0x3e8'
     Size: '0x1'
@@ -14497,7 +14497,7 @@ CoherentUIGTAssetContainer:
   - Name: TextureAssets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class TextureAssets*>
+    Type: TArray<class Texture2D*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -14581,7 +14581,7 @@ CoherentUIGTPersistentDataAsset:
   - Name: AlwaysLoadedTextures
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AlwaysLoadedTextures*>
+    Type: TArray<class Texture2D*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -14591,31 +14591,31 @@ CoherentUIGTRootDataAsset:
   - Name: SharedContainers
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class SharedContainers*>
+    Type: TArray<class CoherentUIGTAssetContainer*>
   - Name: HUDContainers
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class HUDContainers*>
+    Type: TArray<class CoherentUIGTAssetContainer*>
   - Name: MenuContainers
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class MenuContainers*>
+    Type: TArray<class CoherentUIGTAssetContainer*>
   - Name: ShopContainers
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class ShopContainers*>
+    Type: TArray<class CoherentUIGTAssetContainer*>
   - Name: CompanyContainers
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<class CompanyContainers*>
+    Type: TArray<class CoherentUIGTAssetContainer*>
   - Name: FrontendContainers
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class FrontendContainers*>
+    Type: TArray<class CoherentUIGTAssetContainer*>
   - Name: InGameContainers
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class InGameContainers*>
+    Type: TArray<class CoherentUIGTAssetContainer*>
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
@@ -14737,7 +14737,7 @@ CollectorsChestItemInfo:
   - Name: ItemInfosToStore
     Offset: '0x788'
     Size: '0x10'
-    Type: TArray<class ItemInfosToStore*>
+    Type: TArray<class ItemInfo*>
   - Name: CollectorsChestShipOwnershipPropagationComponent
     Offset: '0x798'
     Size: '0x8'
@@ -14835,7 +14835,7 @@ CollectorsChestSharedParamsDataAsset:
   - Name: SlotDefinitions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class SlotDefinitions*>
+    Type: TArray<class CollectorsChestItemSlotDefinitionDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -14855,7 +14855,7 @@ CollectorsChestStaticWieldableItem:
   - Name: Slots
     Offset: '0x798'
     Size: '0x10'
-    Type: TArray<class Slots*>
+    Type: TArray<class CollectorsChestItemSlotInteractable*>
   ClassSize: '0x40'
   FullSize: '0x7c0'
   InheritedSize: '0x780'
@@ -14869,7 +14869,7 @@ CollectorsChestWieldableItem:
   - Name: Slots
     Offset: '0x798'
     Size: '0x10'
-    Type: TArray<class Slots*>
+    Type: TArray<class CollectorsChestItemSlotInteractable*>
   ClassSize: '0x40'
   FullSize: '0x7c0'
   InheritedSize: '0x780'
@@ -15023,7 +15023,7 @@ CompanyDataList:
   - Name: ClientCompanyData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ClientCompanyData*>
+    Type: TArray<class CompanyData*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -15290,7 +15290,7 @@ CompositeQuickSwitchWeaponSecondaryInteractNotificationInputId:
   FullSize: '0x38'
   InheritedSize: '0x38'
   Super: NotificationInputId
-CompositeQuickSwitchWeaponSecondaryInteractReleasedNotification:
+CompositeQuickSwitchWeaponSecondaryInteractReleasedNotificationInputId:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x38'
@@ -15385,7 +15385,7 @@ ConditionalStatTriggerArea:
   - Name: PlayersMeetingCriteria
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class PlayersMeetingCriteria*>
+    Type: TArray<class Controller*>
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'
@@ -15521,7 +15521,7 @@ Constellation:
   - Name: DynamicMaterials
     Offset: '0x450'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x98'
   FullSize: '0x460'
   InheritedSize: '0x3c8'
@@ -15699,7 +15699,7 @@ ContestCeremoniesComponent:
   - Name: PlayedAudio
     Offset: '0x110'
     Size: '0x10'
-    Type: TArray<class PlayedAudio*>
+    Type: TArray<class WwiseEvent*>
   - Name: ContestEventsDataAsset
     Offset: '0x120'
     Size: '0x8'
@@ -15781,7 +15781,7 @@ ContestManagerService:
   - Name: BackfilledPlayers
     Offset: '0x5c8'
     Size: '0x10'
-    Type: TArray<class BackfilledPlayers*>
+    Type: TArray<class AthenaPlayerState*>
   - Name: ContestsPlayedCountBlacklist
     Offset: '0x5d8'
     Size: '0x10'
@@ -15849,11 +15849,11 @@ ContestManagerService:
   - Name: PlayersNeedingTeleport
     Offset: '0x9b0'
     Size: '0x10'
-    Type: TArray<class PlayersNeedingTeleport*>
+    Type: TArray<class Controller*>
   - Name: PlayersAwaitingContestRespawn
     Offset: '0x9c0'
     Size: '0x10'
-    Type: TArray<class PlayersAwaitingContestRespawn*>
+    Type: TArray<class Controller*>
   - Name: ItemsToReset
     Offset: '0x9d0'
     Size: '0x10'
@@ -16061,7 +16061,7 @@ ContestMerchantSpawnerComponent:
   - Name: SpawnedMerchantsArray
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<class SpawnedMerchantsArray*>
+    Type: TArray<class CompanyShopkeeper*>
   - Name: MerchantSpawnDataArray
     Offset: '0x108'
     Size: '0x10'
@@ -16373,7 +16373,7 @@ ContestTavernBanners:
   - Name: Meshes
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class Meshes*>
+    Type: TArray<class StaticMesh*>
   - Name: BannerBaseMaterialIndex
     Offset: '0x3f8'
     Size: '0x4'
@@ -16547,7 +16547,7 @@ ContestZone:
   - Name: IslandsWithinContestZone
     Offset: '0x4b8'
     Size: '0x10'
-    Type: TArray<class IslandsWithinContestZone*>
+    Type: TArray<class IslandData*>
   - Name: RespawnPointAsset
     Offset: '0x4c8'
     Size: '0x10'
@@ -16571,7 +16571,7 @@ ContestZone:
   - Name: VendorShips
     Offset: '0x4f0'
     Size: '0x10'
-    Type: TArray<class VendorShips*>
+    Type: TArray<class ArenaVendorShip*>
   - Name: RespawnLocations
     Offset: '0x500'
     Size: '0x10'
@@ -16583,7 +16583,7 @@ ContestZone:
   - Name: ShipSpawnLocationsForContest
     Offset: '0x518'
     Size: '0x10'
-    Type: TArray<class ShipSpawnLocationsForContest*>
+    Type: TArray<class ShipSpawnLocation*>
   - Name: NumberOfSpawnPointsToGenerate
     Offset: '0x5b0'
     Size: '0x4'
@@ -16603,7 +16603,7 @@ ContestZone:
   - Name: CalmWaters
     Offset: '0x5d8'
     Size: '0x10'
-    Type: TArray<class CalmWaters*>
+    Type: TArray<class CalmWaterComponent*>
   ClassSize: '0x220'
   FullSize: '0x5e8'
   InheritedSize: '0x3c8'
@@ -17401,15 +17401,15 @@ CrewSpawnLocations:
   - Name: AvailableSpawnLocations
     Offset: '0x4f0'
     Size: '0x10'
-    Type: TArray<class AvailableSpawnLocations*>
+    Type: TArray<class ShipSpawnLocation*>
   - Name: AvailableNamedSpawnLocations
     Offset: '0x500'
     Size: '0x10'
-    Type: TArray<class AvailableNamedSpawnLocations*>
+    Type: TArray<class ProgressSpawnLocation*>
   - Name: PendingUnavailableSpawnLocations
     Offset: '0x510'
     Size: '0x10'
-    Type: TArray<class PendingUnavailableSpawnLocations*>
+    Type: TArray<class ShipSpawnLocation*>
   - Name: SpawnVariablesAsset
     Offset: '0x760'
     Size: '0x8'
@@ -17715,7 +17715,7 @@ CutSceneActor:
   - Name: TargetActors
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<class TargetActors*>
+    Type: TArray<class Actor*>
   - Name: AnimationNameToPlay
     Offset: '0x400'
     Size: '0x8'
@@ -17941,7 +17941,7 @@ CutsceneResponseComponent:
   - Name: Sheets
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class Sheets*>
+    Type: TArray<class CutsceneResponseSheet*>
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -17995,7 +17995,7 @@ CutsceneService:
   - Name: RegisteredCutsceneActors
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class RegisteredCutsceneActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -18839,7 +18839,7 @@ DeliverableRedirectionActionDataAsset:
   - Name: Handlers
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Handlers*>
+    Type: TArray<class DeliverableRedirectionContextHandlerBase*>
   - Name: RedirectionTooltip
     Offset: '0x38'
     Size: '0x38'
@@ -19513,7 +19513,7 @@ DockableKeyedInstrument:
   - Name: VFXPositions
     Offset: '0x5d0'
     Size: '0x10'
-    Type: TArray<class VFXPositions*>
+    Type: TArray<class ParticleSystemComponent*>
   - Name: CurrentVFXSpawner
     Offset: '0x5e0'
     Size: '0x8'
@@ -20165,7 +20165,7 @@ DynamicOnlyMechanismTriggerComponent:
   - Name: MechanismActors
     Offset: '0x150'
     Size: '0x10'
-    Type: TArray<class MechanismActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x10'
   FullSize: '0x160'
   InheritedSize: '0x150'
@@ -20241,7 +20241,7 @@ EmblemDefinitionAssetList:
   - Name: EmblemDefinitionAssets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class EmblemDefinitionAssets*>
+    Type: TArray<class EmblemDefinitionDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -20315,11 +20315,11 @@ EmblemService:
   - Name: GarbageCollectorVisiblePopups
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class GarbageCollectorVisiblePopups*>
+    Type: TArray<class PopUpMessageDesc*>
   - Name: GarbageCollectorPopupAudioOverrides
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class GarbageCollectorPopupAudioOverrides*>
+    Type: TArray<class PopUpAudioDesc*>
   ClassSize: '0x1e0'
   FullSize: '0x208'
   InheritedSize: '0x28'
@@ -20679,7 +20679,7 @@ Ensemble:
   - Name: Instruments
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class Instruments*>
+    Type: TArray<class Actor*>
   - Name: OldInstruments
     Offset: '0x410'
     Size: '0x10'
@@ -20799,7 +20799,7 @@ EntitlementMapDataAsset:
   - Name: EntitlementAssets
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class EntitlementAssets*>
+    Type: TArray<class EntitlementMapDataAsset*>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -21257,11 +21257,11 @@ EventRoom:
   - Name: EntranceMechanisms
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class EntranceMechanisms*>
+    Type: TArray<class Actor*>
   - Name: ExitMechanisms
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class ExitMechanisms*>
+    Type: TArray<class Actor*>
   - Name: RoomAreaComponent
     Offset: '0x418'
     Size: '0x8'
@@ -22063,11 +22063,11 @@ FireworksDebugSpawnItemsDataAsset:
   - Name: Flares
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<class Flares*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: AllFireworks
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class AllFireworks*>
+    Type: TArray<class ItemDescSpawnData*>
   ClassSize: '0xb0'
   FullSize: '0xd8'
   InheritedSize: '0x28'
@@ -22527,7 +22527,7 @@ FishingFloat:
   - Name: FloatMaterials
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class FloatMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x418'
   FullSize: '0x7e0'
   InheritedSize: '0x3c8'
@@ -23523,7 +23523,7 @@ FlamethrowerChargeVisuals:
   - Name: DynamicMaterials
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -23587,7 +23587,7 @@ FlamethrowerCoordinatorComponent:
   - Name: Flamethrowers
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class Flamethrowers*>
+    Type: TArray<class FlamethrowerComponent*>
   ClassSize: '0x68'
   FullSize: '0x130'
   InheritedSize: '0xc8'
@@ -23695,7 +23695,7 @@ FlotsamItemSpawnComponent:
   - Name: PreLoadedClasses
     Offset: '0x528'
     Size: '0x10'
-    Type: TArray<class PreLoadedClasses*>
+    Type: TArray<class Object*>
   ClassSize: '0x100'
   FullSize: '0x540'
   InheritedSize: '0x440'
@@ -24011,7 +24011,7 @@ FortDataAsset:
   - Name: BountySpawners
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class BountySpawners*>
+    Type: TArray<class AIBountySpawner*>
   - Name: NamedAIDataAsset
     Offset: '0x40'
     Size: '0x8'
@@ -24371,7 +24371,7 @@ GameAudioService:
   - Name: ClientRegisteredShips
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class ClientRegisteredShips*>
+    Type: TArray<class Ship*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -24489,7 +24489,7 @@ GameEventService:
   - Name: GameEvents
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class GameEvents*>
+    Type: TArray<class GameEvent*>
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'
@@ -24645,7 +24645,7 @@ GarbageGenerator:
   - Name: StronglyReferencedObjects
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class StronglyReferencedObjects*>
+    Type: TArray<class Object*>
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -24917,7 +24917,7 @@ GhostCharacterAudioComponent:
   - Name: GhostShipPlayEvents
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class GhostShipPlayEvents*>
+    Type: TArray<class WwiseEvent*>
   - Name: GhostShipWaterphonePlay
     Offset: '0xd8'
     Size: '0x8'
@@ -25047,7 +25047,7 @@ GhostShipDoor:
   - Name: DynamicMaterialInstances
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class DynamicMaterialInstances*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: DoorOpeningAnimation
     Offset: '0x410'
     Size: '0x8'
@@ -25111,7 +25111,7 @@ GhostShipTickManager:
   - Name: GhostShipActors
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<class GhostShipActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
@@ -25169,7 +25169,7 @@ GlintComponent:
   - Name: CurrentEnteredShips
     Offset: '0x628'
     Size: '0x10'
-    Type: TArray<class CurrentEnteredShips*>
+    Type: TArray<class Actor*>
   - Name: GlintVisibilityLock
     Offset: '0x638'
     Size: '0x1'
@@ -25223,7 +25223,7 @@ GlobalVoyageDirectorService:
   - Name: Participants
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Participants*>
+    Type: TArray<class CrewVoyageParticipant*>
   - Name: Settings
     Offset: '0x48'
     Size: '0x8'
@@ -25333,7 +25333,7 @@ GoldMoundItemProxy:
   - Name: DynamicMaterials
     Offset: '0x6b0'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: FadeOutDuration
     Offset: '0x6c4'
     Size: '0x4'
@@ -25549,7 +25549,7 @@ HandHatch:
   - Name: HandAnimations
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class HandAnimations*>
+    Type: TArray<class AnimSequence*>
   - Name: HatchLight
     Offset: '0x3f0'
     Size: '0x8'
@@ -25561,7 +25561,7 @@ HandHatch:
   - Name: HandsMeshes
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class HandsMeshes*>
+    Type: TArray<class ClientSkeletalMeshComponent*>
   - Name: HandsMeshesInvisibleRelativeLocations
     Offset: '0x410'
     Size: '0x10'
@@ -26223,11 +26223,11 @@ HauntedFort:
   - Name: TargetsArray
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<class TargetsArray*>
+    Type: TArray<class HauntedFortTarget*>
   - Name: EmplacementsArray
     Offset: '0x450'
     Size: '0x10'
-    Type: TArray<class EmplacementsArray*>
+    Type: TArray<class HauntedFortTarget*>
   - Name: ServerMigrationExclusionRadius
     Offset: '0x460'
     Size: '0x4'
@@ -26449,7 +26449,7 @@ Hideout:
   - Name: AssociatedSpawnLocations
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<class AssociatedSpawnLocations*>
+    Type: TArray<class SpawnLocation*>
   - Name: RevealTriggerVolume
     Offset: '0x3d8'
     Size: '0x8'
@@ -26475,7 +26475,7 @@ HideoutEntrance:
   - Name: HideoutExitSpawnPoints
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class HideoutExitSpawnPoints*>
+    Type: TArray<class SpawnLocation*>
   ClassSize: '0x48'
   FullSize: '0x410'
   InheritedSize: '0x3c8'
@@ -26495,7 +26495,7 @@ HideoutService:
   - Name: Hideouts
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class Hideouts*>
+    Type: TArray<class Hideout*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -26604,7 +26604,7 @@ HitRegSnapshotImpactedActorRedirectionInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
-HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom:
+HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent:
   Attributes: []
   ClassSize: '0x8'
   FullSize: '0xd0'
@@ -26619,7 +26619,7 @@ HitRegSnapshotService:
   - Name: ActiveSnapshotComponents
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class ActiveSnapshotComponents*>
+    Type: TArray<class HitRegSnapshotComponent*>
   - Name: PlayerHitScanEnabled
     Offset: '0x3f0'
     Size: '0x1'
@@ -26753,7 +26753,7 @@ HotTub:
   - Name: PlayersInHotTub
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class PlayersInHotTub*>
+    Type: TArray<class AthenaPlayerState*>
   ClassSize: '0x78'
   FullSize: '0x440'
   InheritedSize: '0x3c8'
@@ -26799,19 +26799,19 @@ HullDamage:
   - Name: DamageZones
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class DamageZones*>
+    Type: TArray<class DamageZone*>
   - Name: ActiveHullDamageZones
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class ActiveHullDamageZones*>
+    Type: TArray<class DamageZone*>
   - Name: BottomDeckDamageZones
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<class BottomDeckDamageZones*>
+    Type: TArray<class DamageZone*>
   - Name: MiddleDeckDamageZones
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<class MiddleDeckDamageZones*>
+    Type: TArray<class DamageZone*>
   - Name: DamageZoneDeckDistribution
     Offset: '0x450'
     Size: '0x20'
@@ -26823,7 +26823,7 @@ HullDamage:
   - Name: RepairablePoints
     Offset: '0x548'
     Size: '0x10'
-    Type: TArray<class RepairablePoints*>
+    Type: TArray<class RepairableComponent*>
   ClassSize: '0x1b8'
   FullSize: '0x580'
   InheritedSize: '0x3c8'
@@ -26841,7 +26841,7 @@ HullDamage2:
   - Name: ExternalScarDecals
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class ExternalScarDecals*>
+    Type: TArray<class Texture2D*>
   - Name: ExternalHoleDecalMinSize
     Offset: '0x3f8'
     Size: '0x4'
@@ -26853,7 +26853,7 @@ HullDamage2:
   - Name: ExternalHoleDecals
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class ExternalHoleDecals*>
+    Type: TArray<class MaterialInstance*>
   - Name: InternalHoleDecal
     Offset: '0x410'
     Size: '0x8'
@@ -26909,7 +26909,7 @@ HullDamage2:
   - Name: Points
     Offset: '0x520'
     Size: '0x10'
-    Type: TArray<class Points*>
+    Type: TArray<class HullDamagePointProxy*>
   - Name: HitsCircularBuffer
     Offset: '0x5a8'
     Size: '0x10'
@@ -26917,15 +26917,15 @@ HullDamage2:
   - Name: RepairComponents
     Offset: '0x5b8'
     Size: '0x10'
-    Type: TArray<class RepairComponents*>
+    Type: TArray<class RepairableComponent*>
   - Name: ExternalHoleDecalComponents
     Offset: '0x5c8'
     Size: '0x10'
-    Type: TArray<class ExternalHoleDecalComponents*>
+    Type: TArray<class DecalComponent*>
   - Name: InternalHoleDecalComponents
     Offset: '0x5d8'
     Size: '0x10'
-    Type: TArray<class InternalHoleDecalComponents*>
+    Type: TArray<class DecalComponent*>
   - Name: ServerHitCount
     Offset: '0x650'
     Size: '0x4'
@@ -28043,7 +28043,7 @@ IntentCombinerComponent:
   - Name: IntentProviders
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class IntentProviders*>
+    Type: TArray<class Object*>
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'
@@ -28125,7 +28125,7 @@ InteractableBase:
   - Name: InteractionPrerequisites
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class InteractionPrerequisites*>
+    Type: TArray<class InteractionPrerequisiteBase*>
   - Name: ActionRulesComponent
     Offset: '0x3f0'
     Size: '0x8'
@@ -28259,7 +28259,7 @@ InteractableMockActor:
   - Name: Prerequisites
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class Prerequisites*>
+    Type: TArray<class InteractionPrerequisiteBase*>
   - Name: CanSetInteractionState
     Offset: '0x430'
     Size: '0x1'
@@ -28621,7 +28621,7 @@ InvasionDepartureTunnelSceneryTileInstance:
   - Name: SpawnedCreatureDioramas
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class SpawnedCreatureDioramas*>
+    Type: TArray<class Actor*>
   - Name: Root
     Offset: '0x3f0'
     Size: '0x8'
@@ -28659,7 +28659,7 @@ InvasionDepartureTunnelScrollingScenery:
   - Name: MovingObjects
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<class MovingObjects*>
+    Type: TArray<class SceneComponent*>
   ClassSize: '0x80'
   FullSize: '0x448'
   InheritedSize: '0x3c8'
@@ -29199,7 +29199,7 @@ IslandAnnouncementComponent:
   - Name: MutedPlayers
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class MutedPlayers*>
+    Type: TArray<class Controller*>
   ClassSize: '0xc8'
   FullSize: '0x190'
   InheritedSize: '0xc8'
@@ -29243,11 +29243,11 @@ IslandData:
   - Name: AssociatedSpawnLocations
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class AssociatedSpawnLocations*>
+    Type: TArray<class SpawnLocation*>
   - Name: AssociatedShipSpawnLocations
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class AssociatedShipSpawnLocations*>
+    Type: TArray<class ShipSpawnLocation*>
   - Name: ObjectMessageDispatcher
     Offset: '0x430'
     Size: '0xa0'
@@ -29285,11 +29285,11 @@ IslandDataAsset:
   - Name: IslandDefaultDataEntries
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class IslandDefaultDataEntries*>
+    Type: TArray<class IslandDataDefaultAssetEntry*>
   - Name: IslandDataEntries
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class IslandDataEntries*>
+    Type: TArray<class IslandDataAssetEntry*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -29331,11 +29331,11 @@ IslandDataAssetEntry:
   - Name: IslandItemLocationDataSources
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class IslandItemLocationDataSources*>
+    Type: TArray<class IslandItemDataAsset*>
   - Name: IslandSalvageSpawnerCollections
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class IslandSalvageSpawnerCollections*>
+    Type: TArray<class IslandSalvageSpawnerCollection*>
   - Name: SalvageItemsLocationData
     Offset: '0xa0'
     Size: '0x10'
@@ -29577,7 +29577,7 @@ IslandFaunaSpawnComponent:
   - Name: FaunaSpawners
     Offset: '0x500'
     Size: '0x10'
-    Type: TArray<class FaunaSpawners*>
+    Type: TArray<class AIFaunaSpawner*>
   ClassSize: '0x90'
   FullSize: '0x590'
   InheritedSize: '0x500'
@@ -29671,7 +29671,7 @@ IslandMechanismSelectionComponent:
   - Name: MechanismGroups
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class MechanismGroups*>
+    Type: TArray<class MechanismGroup*>
   - Name: FeatureToggledMechanismGroups
     Offset: '0xd8'
     Size: '0x10'
@@ -29691,7 +29691,7 @@ IslandMechanismSelectionComponent:
   - Name: SelectedMechanismGroups
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<class SelectedMechanismGroups*>
+    Type: TArray<class MechanismGroup*>
   ClassSize: '0x118'
   FullSize: '0x1e0'
   InheritedSize: '0xc8'
@@ -29743,7 +29743,7 @@ IslandSalvageSpawnerManager:
   - Name: SalvageSpawnComponentsAwaitingRequests
     Offset: '0x478'
     Size: '0x10'
-    Type: TArray<class SalvageSpawnComponentsAwaitingRequests*>
+    Type: TArray<class SalvageItemSpawnComponent*>
   - Name: IslandData
     Offset: '0x4d8'
     Size: '0x8'
@@ -29751,7 +29751,7 @@ IslandSalvageSpawnerManager:
   - Name: IslandSalvageItemSpawnComponents
     Offset: '0x4f0'
     Size: '0x10'
-    Type: TArray<class IslandSalvageItemSpawnComponents*>
+    Type: TArray<class SalvageItemSpawnComponent*>
   - Name: IslandSalvageLocationData
     Offset: '0x500'
     Size: '0x10'
@@ -29789,7 +29789,7 @@ IslandService:
   - Name: PlayerTrackers
     Offset: '0x5d0'
     Size: '0x10'
-    Type: TArray<class PlayerTrackers*>
+    Type: TArray<class AIProximityPlayerTracker*>
   ClassSize: '0x220'
   FullSize: '0x5e8'
   InheritedSize: '0x3c8'
@@ -29907,7 +29907,7 @@ ItemActionComponent:
   - Name: ActionEffects
     Offset: '0x230'
     Size: '0x10'
-    Type: TArray<class ActionEffects*>
+    Type: TArray<class ItemActionEffect*>
   - Name: ItemActionAudio
     Offset: '0x290'
     Size: '0x8'
@@ -30393,7 +30393,7 @@ ItemPreviewActor:
   - Name: CameraLocations
     Offset: '0x490'
     Size: '0x10'
-    Type: TArray<class CameraLocations*>
+    Type: TArray<class SceneComponent*>
   - Name: PendingAnim
     Offset: '0x4a0'
     Size: '0x8'
@@ -30641,7 +30641,7 @@ ItemRadialContentRule:
   - Name: RemappedSlots
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<class RemappedSlots*>
+    Type: TArray<class ItemInfo*>
   ClassSize: '0xa8'
   FullSize: '0x120'
   InheritedSize: '0x78'
@@ -30853,7 +30853,7 @@ ItemsByCategoryRadialContentRule:
   - Name: MappedSlots
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<class MappedSlots*>
+    Type: TArray<class ItemInfo*>
   - Name: CustomItemCategory
     Offset: '0xf8'
     Size: '0x8'
@@ -32165,7 +32165,7 @@ LandmarkReactionPlayer:
   - Name: ActiveParticleSystems
     Offset: '0x438'
     Size: '0x10'
-    Type: TArray<class ActiveParticleSystems*>
+    Type: TArray<class ParticleSystemComponent*>
   ClassSize: '0x150'
   FullSize: '0x518'
   InheritedSize: '0x3c8'
@@ -32587,7 +32587,7 @@ LauncherParentMock:
   - Name: IgnoreActors
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class IgnoreActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'
@@ -32609,7 +32609,7 @@ LayerInContainerComponent:
   - Name: DynamicMaterials
     Offset: '0x638'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x30'
   FullSize: '0x650'
   InheritedSize: '0x620'
@@ -32811,7 +32811,7 @@ LightingController:
   - Name: LightingSettings
     Offset: '0x708'
     Size: '0x10'
-    Type: TArray<class LightingSettings*>
+    Type: TArray<class LightingControllerSettings*>
   - Name: OverworldFarQuad
     Offset: '0x718'
     Size: '0x8'
@@ -32919,7 +32919,7 @@ LightingController:
   - Name: ReflectionProbes
     Offset: '0xc90'
     Size: '0x10'
-    Type: TArray<class ReflectionProbes*>
+    Type: TArray<class Actor*>
   - Name: MurkZones
     Offset: '0xcc0'
     Size: '0x10'
@@ -33393,7 +33393,7 @@ LightningComponent:
   - Name: LightningMeshComponents
     Offset: '0x270'
     Size: '0x10'
-    Type: TArray<class LightningMeshComponents*>
+    Type: TArray<class StaticMeshComponent*>
   ClassSize: '0x250'
   FullSize: '0x318'
   InheritedSize: '0xc8'
@@ -33488,16 +33488,20 @@ LightningDataAsset:
   Super: DataAsset
 LightningManagerComponent:
   Attributes:
-  - Name: LightningManagerDataAsset
+  - Name: QueueLightningStrikeOnStart
     Offset: '0xc8'
+    Size: '0x1'
+    Type: bool
+  - Name: LightningManagerDataAsset
+    Offset: '0xd0'
     Size: '0x8'
     Type: Class LightningManagerDataAsset*
   - Name: Radius
-    Offset: '0xd0'
+    Offset: '0xd8'
     Size: '0x4'
     Type: float
-  ClassSize: '0x10'
-  FullSize: '0xd8'
+  ClassSize: '0x18'
+  FullSize: '0xe0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 LightningManagerDataAsset:
@@ -34091,7 +34095,7 @@ LockComponent:
   - Name: LockKeyMeshComponents
     Offset: '0x148'
     Size: '0x10'
-    Type: TArray<class LockKeyMeshComponents*>
+    Type: TArray<class StaticMeshMemoryConstraintComponent*>
   - Name: UnlockInputId
     Offset: '0x158'
     Size: '0x8'
@@ -34107,7 +34111,7 @@ LockComponent:
   - Name: ConditionalLockStats
     Offset: '0x1f0'
     Size: '0x10'
-    Type: TArray<class ConditionalLockStats*>
+    Type: TArray<class UnlockLockConditionalStatTrigger*>
   - Name: UnlockText
     Offset: '0x200'
     Size: '0x38'
@@ -34297,7 +34301,7 @@ LogicalOrStatCondition:
   - Name: StatConditions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class StatConditions*>
+    Type: TArray<class StatCondition*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -34483,7 +34487,7 @@ MapRadialContentRule:
   - Name: MappedSlots
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class MappedSlots*>
+    Type: TArray<class Actor*>
   ClassSize: '0x98'
   FullSize: '0x110'
   InheritedSize: '0x78'
@@ -34697,7 +34701,7 @@ MapTable:
   - Name: ControllerQueue
     Offset: '0x4d8'
     Size: '0x10'
-    Type: TArray<class ControllerQueue*>
+    Type: TArray<class Actor*>
   - Name: MapPins
     Offset: '0x4e8'
     Size: '0x10'
@@ -34983,7 +34987,7 @@ Mast:
   - Name: YardArms
     Offset: '0x4f8'
     Size: '0x10'
-    Type: TArray<class YardArms*>
+    Type: TArray<class StaticMeshComponent*>
   - Name: TelemetryIdentifier
     Offset: '0x508'
     Size: '0x8'
@@ -35103,7 +35107,7 @@ Mast:
   - Name: RepairableComponents
     Offset: '0x628'
     Size: '0x10'
-    Type: TArray<class RepairableComponents*>
+    Type: TArray<class RepairableComponent*>
   - Name: DamageAudioParameters
     Offset: '0x638'
     Size: '0xb0'
@@ -35115,7 +35119,7 @@ Mast:
   - Name: LinkedSails
     Offset: '0x798'
     Size: '0x10'
-    Type: TArray<class LinkedSails*>
+    Type: TArray<class ChildActorComponent*>
   - Name: LengthIntentPredictor
     Offset: '0x7a8'
     Size: '0x1c'
@@ -35281,7 +35285,7 @@ MatchesAllConditionsStatCondition:
   - Name: Conditions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Conditions*>
+    Type: TArray<class StatCondition*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -35503,7 +35507,7 @@ MechanismActionComponent:
   - Name: TriggerActors
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class TriggerActors*>
+    Type: TArray<class Actor*>
   - Name: ActionState
     Offset: '0x150'
     Size: '0x1'
@@ -35523,15 +35527,15 @@ MechanismAnimation:
   - Name: AnimationStartedEvents
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AnimationStartedEvents*>
+    Type: TArray<class MechanismOneShotEvent*>
   - Name: Events
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Events*>
+    Type: TArray<class MechanismAnimationEvent*>
   - Name: AnimationStoppedEvents
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class AnimationStoppedEvents*>
+    Type: TArray<class MechanismOneShotEvent*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -35747,7 +35751,7 @@ MechanismGroup:
   - Name: Mechanisms
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class Mechanisms*>
+    Type: TArray<class Mechanism*>
   - Name: MechanismsToSelect
     Offset: '0x3e8'
     Size: '0x30'
@@ -35755,7 +35759,7 @@ MechanismGroup:
   - Name: SelectedMechanisms
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<class SelectedMechanisms*>
+    Type: TArray<class Mechanism*>
   ClassSize: '0x70'
   FullSize: '0x438'
   InheritedSize: '0x3c8'
@@ -35791,7 +35795,7 @@ MechanismInteractionComponent:
   - Name: ComplexCollisionShapes
     Offset: '0x678'
     Size: '0x10'
-    Type: TArray<class ComplexCollisionShapes*>
+    Type: TArray<class PrimitiveComponent*>
   ClassSize: '0xe0'
   FullSize: '0x6c0'
   InheritedSize: '0x5e0'
@@ -36563,7 +36567,7 @@ MeleeWeaponDataAsset:
   - Name: ComboAttacks
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class ComboAttacks*>
+    Type: TArray<class MeleeAttackDataAsset*>
   - Name: HeavyAttack
     Offset: '0x48'
     Size: '0x8'
@@ -36649,7 +36653,7 @@ MemoryConstrainedMeshInitializer:
   - Name: OverrideMaterials
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class OverrideMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: FallbackOverrideMaterials
     Offset: '0x48'
     Size: '0x10'
@@ -36879,7 +36883,7 @@ MerchantQuestDescData:
   - Name: MerchantMapLayouts
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class MerchantMapLayouts*>
+    Type: TArray<class MerchantMapLayout*>
   - Name: DeliverByTimeTextFormat
     Offset: '0x68'
     Size: '0x38'
@@ -37455,7 +37459,7 @@ MeshMemoryConstraintFallbackCollection:
   - Name: FallbackDataAssets
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class FallbackDataAssets*>
+    Type: TArray<class MeshMemoryConstraintFallbackDataAsset*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -37473,7 +37477,7 @@ MeshMemoryConstraintFallbackDataAsset:
   - Name: MeshFallbacks
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class MeshFallbacks*>
+    Type: TArray<class MeshMemoryConstraintFallbackCategoryDataAsset*>
   - Name: ThresholdsMB
     Offset: '0x48'
     Size: '0x10'
@@ -37485,7 +37489,7 @@ MeshMemoryConstraintFallbackDataAsset:
   - Name: ScoringData
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class ScoringData*>
+    Type: TArray<class MeshMemoryConstraintScoringObject*>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -37625,7 +37629,7 @@ MeshRotatorComponent:
   - Name: Meshes
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class Meshes*>
+    Type: TArray<class MeshComponent*>
   ClassSize: '0x48'
   FullSize: '0x110'
   InheritedSize: '0xc8'
@@ -37649,7 +37653,7 @@ MessageInABottleItemProxy:
   - Name: PremadeVoyages
     Offset: '0x7b8'
     Size: '0x10'
-    Type: TArray<class PremadeVoyages*>
+    Type: TArray<class VoyageDescDataAsset*>
   - Name: EmergentSource
     Offset: '0x7c8'
     Size: '0x1'
@@ -37876,7 +37880,7 @@ MockAthenaPlayerCharacterMovementComponent:
   FullSize: '0x930'
   InheritedSize: '0x930'
   Super: AthenaPlayerCharacterMovementComponent
-MockAthenaPlayerCharacterWithAthenaPlayerCharacterMovementCompo:
+MockAthenaPlayerCharacterWithAthenaPlayerCharacterMovementComponent:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x1b80'
@@ -38279,7 +38283,7 @@ MultipleContextsRadialContext:
   - Name: RadialContexts
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class RadialContexts*>
+    Type: TArray<class RadialContextBase*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -38459,7 +38463,7 @@ MusicalTrigger:
   - Name: SwitchesToSyncTo
     Offset: '0x448'
     Size: '0x10'
-    Type: TArray<class SwitchesToSyncTo*>
+    Type: TArray<class SwitchMechanismTrigger*>
   - Name: ReactionEventPlayer
     Offset: '0x458'
     Size: '0x8'
@@ -38471,7 +38475,7 @@ MusicalTrigger:
   - Name: ActorsPlayingInstruments
     Offset: '0x468'
     Size: '0x10'
-    Type: TArray<class ActorsPlayingInstruments*>
+    Type: TArray<class Actor*>
   - Name: AssociatedMechanismActions
     Offset: '0x478'
     Size: '0x10'
@@ -38581,7 +38585,7 @@ NPCAnimInstance:
   - Name: InitialSpawnedCosmeticItems
     Offset: '0x480'
     Size: '0x10'
-    Type: TArray<class InitialSpawnedCosmeticItems*>
+    Type: TArray<class Actor*>
   - Name: HitReactionState
     Offset: '0x490'
     Size: '0x28'
@@ -38649,15 +38653,15 @@ NPCAnimInstance:
   - Name: IdleVariantAnims
     Offset: '0x568'
     Size: '0x10'
-    Type: TArray<class IdleVariantAnims*>
+    Type: TArray<class AnimSequence*>
   - Name: InactiveVariantAnims
     Offset: '0x578'
     Size: '0x10'
-    Type: TArray<class InactiveVariantAnims*>
+    Type: TArray<class AnimSequence*>
   - Name: InteractVariantAnims
     Offset: '0x588'
     Size: '0x10'
-    Type: TArray<class InteractVariantAnims*>
+    Type: TArray<class AnimSequence*>
   - Name: NPCAllocatedIdleAnimations
     Offset: '0x598'
     Size: '0x20'
@@ -38883,7 +38887,7 @@ NPCDialogConditionalTextHeader:
   - Name: Text
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Text*>
+    Type: TArray<class NPCDialogConditionalText*>
   - Name: DefaultText
     Offset: '0x38'
     Size: '0x38'
@@ -39017,7 +39021,7 @@ NPCDialogOption:
   - Name: Conditions
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class Conditions*>
+    Type: TArray<class NPCDialogConditional*>
   - Name: ClientRunnables
     Offset: '0x70'
     Size: '0x10'
@@ -39385,7 +39389,7 @@ NPCDialogOptionShops:
   - Name: ShopDescArray
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<class ShopDescArray*>
+    Type: TArray<class ShopDesc*>
   - Name: Interactor
     Offset: '0x118'
     Size: '0x8'
@@ -40193,7 +40197,7 @@ NPCOnSurfaceManager:
   - Name: CannonActors
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class CannonActors*>
+    Type: TArray<class Cannon*>
   - Name: VOManager
     Offset: '0x68'
     Size: '0x8'
@@ -40329,7 +40333,7 @@ NamedPointsCollectionListDataAsset:
   - Name: SubAssets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class SubAssets*>
+    Type: TArray<class NamedPointsCollectionDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -40389,7 +40393,7 @@ NameplateService:
   - Name: RegisteredNameplates
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class RegisteredNameplates*>
+    Type: TArray<class NameplateComponent*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -40507,7 +40511,7 @@ NetworkTriggeredVFXComponent:
   - Name: NetworkTriggerableVFX
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class NetworkTriggerableVFX*>
+    Type: TArray<class Object*>
   - Name: CurrentlyPlayingParticleSystem
     Offset: '0xd8'
     Size: '0x8'
@@ -40595,7 +40599,7 @@ NoiseMakerControllerParams:
   - Name: WwiseFoliagePoolWrappers
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class WwiseFoliagePoolWrappers*>
+    Type: TArray<class WwiseObjectPoolWrapper*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -40739,7 +40743,7 @@ ObjectProximityResetComponent:
   - Name: ResetTargets
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class ResetTargets*>
+    Type: TArray<class Actor*>
   - Name: ObjectResetTimeout
     Offset: '0xf8'
     Size: '0x4'
@@ -41165,7 +41169,7 @@ OpenableItemMaterialAnimationReactionComponent:
   - Name: AnimNameSets
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct OpenableItemMaterialAnimationReactionComponentAnimationNameAndS>
+    Type: TArray<Struct OpenableItemMaterialAnimationReactionComponentAnimationNameAndSfxCueSet>
   - Name: MaterialAnimatorComponent
     Offset: '0xe8'
     Size: '0x8'
@@ -41179,7 +41183,7 @@ OpenableItemMeshAnimationReactionComponent:
   - Name: AnimNameSets
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCu>
+    Type: TArray<Struct OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCueSet>
   - Name: MeshAnimatorComponent
     Offset: '0xe8'
     Size: '0x8'
@@ -41313,7 +41317,7 @@ PLQuestLocationDataBundle:
   - Name: ActiveLocations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ActiveLocations*>
+    Type: TArray<class PLQuestLocationDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -41399,7 +41403,7 @@ PanicTeleportVolume:
   - Name: AssociatedSpawnLocations
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class AssociatedSpawnLocations*>
+    Type: TArray<class SpawnLocation*>
   - Name: PlayersInVolume
     Offset: '0x3e0'
     Size: '0x10'
@@ -41537,7 +41541,7 @@ PersistenceIdentifierSettingsAsset:
   - Name: PersistenceMapData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class PersistenceMapData*>
+    Type: TArray<class PersistenceIdentifierMap*>
   - Name: ScrambledShipNames
     Offset: '0x38'
     Size: '0x10'
@@ -41865,7 +41869,7 @@ PhasedClusterRoot:
   - Name: Pawns
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<class Pawns*>
+    Type: TArray<class Pawn*>
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -42127,7 +42131,7 @@ PiratePreviewActor:
   - Name: CameraLocations
     Offset: '0x6c0'
     Size: '0x10'
-    Type: TArray<class CameraLocations*>
+    Type: TArray<class SceneComponent*>
   - Name: PendingAnim
     Offset: '0x6d0'
     Size: '0x8'
@@ -42139,7 +42143,7 @@ PiratePreviewActor:
   - Name: ParticleComponents
     Offset: '0x6f8'
     Size: '0x10'
-    Type: TArray<class ParticleComponents*>
+    Type: TArray<class ParticleSystemComponent*>
   - Name: DefaultAnimation
     Offset: '0x708'
     Size: '0x8'
@@ -42245,7 +42249,7 @@ PirateSelector:
   - Name: QueuedPiratesToSpawn
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class QueuedPiratesToSpawn*>
+    Type: TArray<class PosablePirate*>
   ClassSize: '0x178'
   FullSize: '0x240'
   InheritedSize: '0xc8'
@@ -42685,7 +42689,7 @@ PlayerBuriedItemService:
   - Name: RegisteredTavernBoards
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class RegisteredTavernBoards*>
+    Type: TArray<class TavernBoard*>
   - Name: NumMapsTakenFromStoreThisDayPerCrew
     Offset: '0x3e8'
     Size: '0x10'
@@ -43241,7 +43245,7 @@ PlayerGeneratedMapsContainerComponent:
   - Name: ServerAttachedPlayers
     Offset: '0x1b8'
     Size: '0x10'
-    Type: TArray<class ServerAttachedPlayers*>
+    Type: TArray<class Actor*>
   - Name: SfxPool
     Offset: '0x1c8'
     Size: '0x8'
@@ -43813,11 +43817,11 @@ PlayerMusicControllerParams:
   - Name: KrakenTentacleTakeHitEvents
     Offset: '0x318'
     Size: '0x10'
-    Type: TArray<class KrakenTentacleTakeHitEvents*>
+    Type: TArray<class WwiseEvent*>
   - Name: KrakenTentacleKilledEvents
     Offset: '0x328'
     Size: '0x10'
-    Type: TArray<class KrakenTentacleKilledEvents*>
+    Type: TArray<class WwiseEvent*>
   - Name: KrakenHeadHitEvent
     Offset: '0x338'
     Size: '0x8'
@@ -44063,7 +44067,7 @@ PlayerMuteComponent:
   - Name: PlayerStatesPendingCrewMuting
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class PlayerStatesPendingCrewMuting*>
+    Type: TArray<class PlayerState*>
   ClassSize: '0x290'
   FullSize: '0x358'
   InheritedSize: '0xc8'
@@ -44613,11 +44617,11 @@ PopUpNotificationComponent:
   - Name: DeferralReasonPopUpNotifications
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class DeferralReasonPopUpNotifications*>
+    Type: TArray<class DeferralReasonPopUpNotificationDataAsset*>
   - Name: CampaignPopUpNotifications
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class CampaignPopUpNotifications*>
+    Type: TArray<class CampaignPopUpNotificationDataAsset*>
   - Name: PeriodicObjectiveCompletePopUp
     Offset: '0xf0'
     Size: '0x8'
@@ -44713,7 +44717,7 @@ PortalLocatorActor:
   - Name: AssociatedSpawnLocations
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class AssociatedSpawnLocations*>
+    Type: TArray<class TunnelOfTheDamnedPortalShipSpawnLocation*>
   ClassSize: '0x38'
   FullSize: '0x400'
   InheritedSize: '0x3c8'
@@ -44821,7 +44825,7 @@ PosablePirate:
   - Name: ParticleComponents
     Offset: '0x478'
     Size: '0x10'
-    Type: TArray<class ParticleComponents*>
+    Type: TArray<class ParticleSystemComponent*>
   ClassSize: '0xc0'
   FullSize: '0x488'
   InheritedSize: '0x3c8'
@@ -45021,7 +45025,7 @@ PremiumCatalogCardsDataAsset:
   - Name: Cards
     Offset: '0x150'
     Size: '0x10'
-    Type: TArray<class Cards*>
+    Type: TArray<class PremiumCatalogItemSetDataAsset*>
   ClassSize: '0x58'
   FullSize: '0x160'
   InheritedSize: '0x108'
@@ -45125,7 +45129,7 @@ PremiumCatalogListDataAsset:
   - Name: Catalogs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Catalogs*>
+    Type: TArray<class PremiumCatalogDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -45409,7 +45413,7 @@ ProjectileLauncherMechanismAction:
   - Name: IndependentProjectileLaunchers
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class IndependentProjectileLaunchers*>
+    Type: TArray<class Actor*>
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'
@@ -46245,11 +46249,11 @@ PuzzleVault:
   - Name: PuzzleMechanisms
     Offset: '0x11f8'
     Size: '0x10'
-    Type: TArray<class PuzzleMechanisms*>
+    Type: TArray<class RotatingBlockPuzzle*>
   - Name: Braziers
     Offset: '0x1208'
     Size: '0x10'
-    Type: TArray<class Braziers*>
+    Type: TArray<class Beacon*>
   - Name: VaultTable
     Offset: '0x1218'
     Size: '0x8'
@@ -46273,11 +46277,11 @@ PuzzleVault:
   - Name: RewardSpawners
     Offset: '0x1240'
     Size: '0x10'
-    Type: TArray<class RewardSpawners*>
+    Type: TArray<class TreasureVaultItemSpawnComponent*>
   - Name: PressurePlateSpawners
     Offset: '0x1250'
     Size: '0x10'
-    Type: TArray<class PressurePlateSpawners*>
+    Type: TArray<class TreasureVaultItemSpawnComponent*>
   - Name: Solutions
     Offset: '0x1260'
     Size: '0x10'
@@ -46285,7 +46289,7 @@ PuzzleVault:
   - Name: PlayersInVaultPassage
     Offset: '0x1270'
     Size: '0x10'
-    Type: TArray<class PlayersInVaultPassage*>
+    Type: TArray<class AthenaPlayerCharacter*>
   - Name: MaterialSetReferences
     Offset: '0x1280'
     Size: '0x10'
@@ -46309,7 +46313,7 @@ PuzzleVault:
   - Name: MaterialSets
     Offset: '0x12a0'
     Size: '0x10'
-    Type: TArray<class MaterialSets*>
+    Type: TArray<class VaultMaterialSetDataAsset*>
   - Name: NumActiveWaterSpouts
     Offset: '0x12b0'
     Size: '0x4'
@@ -47459,7 +47463,7 @@ RandomPirateLegendSectStepDesc:
   - Name: Filters
     Offset: '0xc0'
     Size: '0x10'
-    Type: TArray<class Filters*>
+    Type: TArray<class PirateLegendSectionFilter*>
   ClassSize: '0x50'
   FullSize: '0xd0'
   InheritedSize: '0x80'
@@ -47671,7 +47675,7 @@ RegionMapSetAsset:
   - Name: MapRegions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class MapRegions*>
+    Type: TArray<class RegionMapDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -47851,7 +47855,7 @@ RenderToTextureMapBase:
   - Name: MapTextures
     Offset: '0x7d8'
     Size: '0x10'
-    Type: TArray<class MapTextures*>
+    Type: TArray<class Texture*>
   - Name: CanvasWidth
     Offset: '0x7e8'
     Size: '0x4'
@@ -48071,7 +48075,7 @@ RespawnAndTaleProgressComponent:
   - Name: LinkedSpawnLocations
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<class LinkedSpawnLocations*>
+    Type: TArray<class ProgressSpawnLocation*>
   - Name: ProgressLevel
     Offset: '0x110'
     Size: '0x4'
@@ -48117,7 +48121,7 @@ RespawnAndTaleProgressTriggerVolume:
   - Name: LinkedSpawnLocation
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class LinkedSpawnLocation*>
+    Type: TArray<class ProgressSpawnLocation*>
   - Name: SetRespawnProgress
     Offset: '0x430'
     Size: '0x1'
@@ -48317,7 +48321,7 @@ RevealRequirement:
   - Name: OR_Requirements
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class OR_Requirements*>
+    Type: TArray<class RevealRequirement*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -48343,11 +48347,11 @@ RevealableComponent:
   - Name: RevealRequirements
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<class RevealRequirements*>
+    Type: TArray<class RevealRequirement*>
   - Name: DynamicMaterials
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: TargetGameStateObject
     Offset: '0x168'
     Size: '0x8'
@@ -48359,11 +48363,11 @@ RevealableComponent:
   - Name: RequirementsPerRevealer
     Offset: '0x1e8'
     Size: '0x10'
-    Type: TArray<class RequirementsPerRevealer*>
+    Type: TArray<class RevealRequirement*>
   - Name: RequirementsPerRevealable
     Offset: '0x1f8'
     Size: '0x10'
-    Type: TArray<class RequirementsPerRevealable*>
+    Type: TArray<class RevealRequirement*>
   ClassSize: '0x1b8'
   FullSize: '0x280'
   InheritedSize: '0xc8'
@@ -48501,7 +48505,7 @@ RewardDefinitionAssetList:
   - Name: RewardDefinitionAssets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class RewardDefinitionAssets*>
+    Type: TArray<class RewardDefinitionAsset*>
   - Name: WeightRewardTable
     Offset: '0x38'
     Size: '0x8'
@@ -48545,7 +48549,7 @@ RewardPopUpNotificationCollectionDataAsset:
   - Name: RewardPopUpNotifications
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class RewardPopUpNotifications*>
+    Type: TArray<class RewardPopUpNotificationDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -48579,7 +48583,7 @@ RewardService:
   - Name: RewardDefinitionAssets
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class RewardDefinitionAssets*>
+    Type: TArray<class RewardDefinitionAsset*>
   ClassSize: '0x68'
   FullSize: '0x90'
   InheritedSize: '0x28'
@@ -48941,7 +48945,7 @@ RomeBeacon:
   - Name: DynamicMaterials
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: VelocityMap
     Offset: '0x430'
     Size: '0x10'
@@ -49221,7 +49225,7 @@ Sail:
   - Name: DynamicMaterials
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: PositionForSailDynamicsRelativeToSailActor
     Offset: '0x3f0'
     Size: '0xc'
@@ -49384,7 +49388,7 @@ SailAnimInstance:
     Offset: '0x48c'
     Size: '0x4'
     Type: float
-  - Name: BetweenZeroAndHalfBillowedFoldAnimationWithFullWindAdditiveAlph
+  - Name: BetweenZeroAndHalfBillowedFoldAnimationWithFullWindAdditiveAlpha
     Offset: '0x490'
     Size: '0x4'
     Type: float
@@ -49643,7 +49647,7 @@ SceneDialogueCoordinator:
   - Name: LinkedActors
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class LinkedActors*>
+    Type: TArray<class Actor*>
   - Name: DialogueData
     Offset: '0x3e8'
     Size: '0x8'
@@ -49679,7 +49683,7 @@ SceneDialogueData:
   - Name: TextSections
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class TextSections*>
+    Type: TArray<class SceneDialogueSection*>
   - Name: ChainedDialogue
     Offset: '0x50'
     Size: '0x1'
@@ -49735,7 +49739,7 @@ SceneDialogueSection:
   - Name: Points
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class Points*>
+    Type: TArray<class SceneDialoguePointWithConditional*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -49877,7 +49881,7 @@ ScreenSpaceVfxComponent:
   - Name: ScreenSpaceParticleSystems
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class ScreenSpaceParticleSystems*>
+    Type: TArray<class ParticleSystemComponent*>
   ClassSize: '0x4d8'
   FullSize: '0x5a0'
   InheritedSize: '0xc8'
@@ -50123,7 +50127,7 @@ SeaFortsService:
   - Name: SeaForts
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class SeaForts*>
+    Type: TArray<class Seafort*>
   ClassSize: '0xf0'
   FullSize: '0x4b8'
   InheritedSize: '0x3c8'
@@ -50311,7 +50315,7 @@ Seafort:
   - Name: Rewards
     Offset: '0x8c0'
     Size: '0x10'
-    Type: TArray<class Rewards*>
+    Type: TArray<class ItemSpawnComponent*>
   - Name: AIToggler
     Offset: '0x8d0'
     Size: '0x8'
@@ -50585,7 +50589,7 @@ SeatComponentBase:
   - Name: ConditionalSeatStats
     Offset: '0x210'
     Size: '0x10'
-    Type: TArray<class ConditionalSeatStats*>
+    Type: TArray<class SeatStat*>
   - Name: CanBeUnderwater
     Offset: '0x220'
     Size: '0x1'
@@ -50823,7 +50827,7 @@ SequencerCutSceneActor:
   - Name: LevelSequencesToPlay
     Offset: '0x4a8'
     Size: '0x10'
-    Type: TArray<class LevelSequencesToPlay*>
+    Type: TArray<class LevelSequence*>
   ClassSize: '0x108'
   FullSize: '0x540'
   InheritedSize: '0x438'
@@ -50869,7 +50873,7 @@ ServerNetworkedEventsWhitelistDefinition:
   - Name: ValidEvents
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ValidEvents*>
+    Type: TArray<class ScriptStruct*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -51195,11 +51199,11 @@ ShadowAIFormComponent:
   - Name: ShadowDynamicMaterialInstances
     Offset: '0x1c8'
     Size: '0x10'
-    Type: TArray<class ShadowDynamicMaterialInstances*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: LanternArray
     Offset: '0x230'
     Size: '0x10'
-    Type: TArray<class LanternArray*>
+    Type: TArray<class Lantern*>
   - Name: FlameSpecificDataMap
     Offset: '0x240'
     Size: '0x10'
@@ -51299,7 +51303,7 @@ ShantyRadialContentRule:
   - Name: CachedShanties
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class CachedShanties*>
+    Type: TArray<class ShantyItemDesc*>
   - Name: ShuffleTitle
     Offset: '0xb0'
     Size: '0x38'
@@ -51341,7 +51345,7 @@ ShantyService:
   - Name: EnsembleActors
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class EnsembleActors*>
+    Type: TArray<class Ensemble*>
   - Name: ShantySettings
     Offset: '0x40'
     Size: '0x8'
@@ -51395,7 +51399,7 @@ ShantyZone:
   - Name: PlayersInZone
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<class PlayersInZone*>
+    Type: TArray<class Actor*>
   - Name: Instrument
     Offset: '0x400'
     Size: '0x8'
@@ -51409,7 +51413,7 @@ SharedObjectReplicationService:
   - Name: RepArray
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class RepArray*>
+    Type: TArray<class Object*>
   ClassSize: '0x68'
   FullSize: '0x430'
   InheritedSize: '0x3c8'
@@ -51911,7 +51915,7 @@ Ship:
   - Name: DamageableChildActors
     Offset: '0xd78'
     Size: '0x10'
-    Type: TArray<class DamageableChildActors*>
+    Type: TArray<class Actor*>
   - Name: ShipPartsDamageTrackerComponent
     Offset: '0xd88'
     Size: '0x8'
@@ -52011,7 +52015,7 @@ Ship:
   - Name: InstancedMeshes
     Offset: '0x1058'
     Size: '0x10'
-    Type: TArray<class InstancedMeshes*>
+    Type: TArray<class MobileInstancedStaticMeshComponent*>
   - Name: ConstraintBudget
     Offset: '0x1068'
     Size: '0x8'
@@ -52241,15 +52245,15 @@ ShipCreatureManagerCreatureInstanceMotionModifierDataAsset:
   - Name: SpeedModifierCurves
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class SpeedModifierCurves*>
+    Type: TArray<class CurveFloat*>
   - Name: RollCurves
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class RollCurves*>
+    Type: TArray<class CurveFloat*>
   - Name: OffsetCurves
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class OffsetCurves*>
+    Type: TArray<class CurveVector*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -52259,11 +52263,11 @@ ShipCurseComponent:
   - Name: CachedShipAttachedActors
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class CachedShipAttachedActors*>
+    Type: TArray<class Actor*>
   - Name: FoundMasts
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class FoundMasts*>
+    Type: TArray<class Mast*>
   - Name: ShipCapstan
     Offset: '0xe8'
     Size: '0x8'
@@ -52271,7 +52275,7 @@ ShipCurseComponent:
   - Name: ShipCannons
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<class ShipCannons*>
+    Type: TArray<class Cannon*>
   - Name: ShipWheel
     Offset: '0x100'
     Size: '0x8'
@@ -52279,7 +52283,7 @@ ShipCurseComponent:
   - Name: SailFixedIntentComponents
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<class SailFixedIntentComponents*>
+    Type: TArray<class FixedIntentComponent*>
   - Name: ShipCapstanTargetRatio
     Offset: '0x184'
     Size: '0x4'
@@ -52291,7 +52295,7 @@ ShipCurseComponent:
   - Name: ActorsAffectedByToggleInteractionsCurse
     Offset: '0x198'
     Size: '0x10'
-    Type: TArray<class ActorsAffectedByToggleInteractionsCurse*>
+    Type: TArray<class Actor*>
   - Name: SpawnedFXForCurses
     Offset: '0x1a8'
     Size: '0x10'
@@ -52561,7 +52565,7 @@ ShipEntitlementProcessingPolicyDataAsset:
   - Name: ShipEntitlementProcessingPolicies
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ShipEntitlementProcessingPolicies*>
+    Type: TArray<class ShipEntitlementProcessingPolicy*>
   - Name: ShipEntitlementsGrantedMessage
     Offset: '0x38'
     Size: '0x8'
@@ -52585,7 +52589,7 @@ ShipFactory:
   - Name: Builders
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class Builders*>
+    Type: TArray<class ShipBuilder*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -52775,7 +52779,7 @@ ShipHullCollisionComponent:
   - Name: HitLandForceFeedbackEffects
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<class HitLandForceFeedbackEffects*>
+    Type: TArray<class ForceFeedbackEffect*>
   - Name: FeedbackStrengthToRumbleIndexMapping
     Offset: '0x108'
     Size: '0x8'
@@ -52855,7 +52859,7 @@ ShipInteractableLight:
   - Name: SiblingLights
     Offset: '0x600'
     Size: '0x10'
-    Type: TArray<class SiblingLights*>
+    Type: TArray<class ShipInteractableLight*>
   ClassSize: '0x110'
   FullSize: '0x6d8'
   InheritedSize: '0x5c8'
@@ -52963,7 +52967,7 @@ ShipInternalWater:
   - Name: OverlappingActors
     Offset: '0x578'
     Size: '0x10'
-    Type: TArray<class OverlappingActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x258'
   FullSize: '0x620'
   InheritedSize: '0x3c8'
@@ -53031,7 +53035,7 @@ ShipLightComponent:
   - Name: Lights
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<class Lights*>
+    Type: TArray<class PointLightComponent*>
   ClassSize: '0xe8'
   FullSize: '0x1b0'
   InheritedSize: '0xc8'
@@ -53155,7 +53159,7 @@ ShipNetProxy:
   - Name: ShipLanterns
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class ShipLanterns*>
+    Type: TArray<class ShipInteractableLight*>
   - Name: LanternBits
     Offset: '0x440'
     Size: '0x4'
@@ -53363,11 +53367,11 @@ ShipSpawnLocation:
   - Name: LinkedShipSpawnLocations
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<class LinkedShipSpawnLocations*>
+    Type: TArray<class ShipSpawnLocation*>
   - Name: AssociatedSpawnLocations
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class AssociatedSpawnLocations*>
+    Type: TArray<class SpawnLocation*>
   - Name: ShipSize
     Offset: '0x3e8'
     Size: '0x8'
@@ -53646,7 +53650,7 @@ Shipwreck:
     Offset: '0x430'
     Size: '0x1'
     Type: byte
-  - Name: DistanceThresholdToConsiderPlayerAsBeingNearShipwreckForTelemet
+  - Name: DistanceThresholdToConsiderPlayerAsBeingNearShipwreckForTelemetry
     Offset: '0x434'
     Size: '0x4'
     Type: float
@@ -54409,7 +54413,7 @@ SignalMechanism:
   - Name: Targets
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<class Targets*>
+    Type: TArray<class Actor*>
   ClassSize: '0x40'
   FullSize: '0x408'
   InheritedSize: '0x3c8'
@@ -54433,7 +54437,7 @@ SignalMechanismTargetComponent:
   - Name: NumActiveInstigators
     Offset: '0x168'
     Size: '0x10'
-    Type: TArray<class NumActiveInstigators*>
+    Type: TArray<class Actor*>
   ClassSize: '0x28'
   FullSize: '0x178'
   InheritedSize: '0x150'
@@ -54731,7 +54735,7 @@ SirenTridentProjectile:
   - Name: ProjectileParameters
     Offset: '0x680'
     Size: '0x10'
-    Type: TArray<class ProjectileParameters*>
+    Type: TArray<class SirenTridentProjectileParams*>
   - Name: CurrentMaterialScale
     Offset: '0x690'
     Size: '0x4'
@@ -54839,7 +54843,7 @@ SirenTridentShotActionComponent:
   - Name: ProjectileParameters
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<class ProjectileParameters*>
+    Type: TArray<class SirenTridentProjectileParams*>
   - Name: CurrentProjectileParameters
     Offset: '0x450'
     Size: '0x8'
@@ -55281,7 +55285,7 @@ SkellyFort:
   - Name: Rewards
     Offset: '0x728'
     Size: '0x10'
-    Type: TArray<class Rewards*>
+    Type: TArray<class FortItemSpawnComponent*>
   - Name: WaveSpawnerLocations
     Offset: '0x738'
     Size: '0x10'
@@ -55413,7 +55417,7 @@ SkellyFortListDataAsset:
   - Name: FortsList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class FortsList*>
+    Type: TArray<class SkellyFortDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -55457,7 +55461,7 @@ SkellyFortService:
   - Name: SkellyForts
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class SkellyForts*>
+    Type: TArray<class SkellyFort*>
   - Name: SkellyFortListDataAsset
     Offset: '0x518'
     Size: '0x8'
@@ -55465,7 +55469,7 @@ SkellyFortService:
   - Name: AllFortsData
     Offset: '0x520'
     Size: '0x10'
-    Type: TArray<class AllFortsData*>
+    Type: TArray<class SkellyFortDataAsset*>
   - Name: FortAIToggler
     Offset: '0x530'
     Size: '0x8'
@@ -56079,7 +56083,7 @@ SpawnProgressTriggerVolume:
   - Name: LinkedSpawnLocation
     Offset: '0x470'
     Size: '0x10'
-    Type: TArray<class LinkedSpawnLocation*>
+    Type: TArray<class ProgressSpawnLocation*>
   - Name: ProgressLevel
     Offset: '0x480'
     Size: '0x4'
@@ -56093,7 +56097,7 @@ SpawnRequirement:
   - Name: OR_Requirements
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class OR_Requirements*>
+    Type: TArray<class SpawnRequirement*>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -56891,7 +56895,7 @@ StaticMerchantCrate:
   - Name: HitRegSnapshotRedirectComponent
     Offset: '0x7b8'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
+    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   - Name: RequiresRewindComponent
     Offset: '0x7d0'
     Size: '0x1'
@@ -57641,7 +57645,7 @@ StoneFaceGlowComponent:
   - Name: OverriddenMaterials
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class OverriddenMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x70'
   FullSize: '0x138'
   InheritedSize: '0xc8'
@@ -57875,7 +57879,7 @@ StorageContainerContentTypeSelector:
   - Name: SpecialEntries
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class SpecialEntries*>
+    Type: TArray<class StorageContainerSpecialTypeSelectorEntries*>
   - Name: SpawnerTypeMappings
     Offset: '0x88'
     Size: '0x10'
@@ -58109,7 +58113,7 @@ StoreBootyHandInComponent:
   - Name: DynamicMaterialMap
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<class DynamicMaterialMap*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: LocalController
     Offset: '0x190'
     Size: '0x8'
@@ -58299,7 +58303,7 @@ StormService:
   - Name: StormList
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<class StormList*>
+    Type: TArray<class Actor*>
   ClassSize: '0x68'
   FullSize: '0x430'
   InheritedSize: '0x3c8'
@@ -58337,7 +58341,7 @@ StoryDrivenFogBankCollectionDataAsset:
   - Name: StoryDrivenFogBankAssetList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class StoryDrivenFogBankAssetList*>
+    Type: TArray<class StoryDrivenFogBankDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -58545,11 +58549,11 @@ SummonMegalodonRitualTable:
   - Name: RitualParticleSystems
     Offset: '0x460'
     Size: '0x10'
-    Type: TArray<class RitualParticleSystems*>
+    Type: TArray<class ParticleSystemComponent*>
   - Name: CompleteParticleSystems
     Offset: '0x470'
     Size: '0x10'
-    Type: TArray<class CompleteParticleSystems*>
+    Type: TArray<class ParticleSystemComponent*>
   - Name: WispsMaterialInstanceDynamic
     Offset: '0x480'
     Size: '0x8'
@@ -58655,7 +58659,7 @@ SunkenCurseArtefactDynamicMaterialComponent:
   - Name: DynamicMaterials
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: Statue
     Offset: '0x110'
     Size: '0x8'
@@ -58899,11 +58903,11 @@ SwimmingCreatureAnimationInstance:
   - Name: RPCPlayableMontages
     Offset: '0x4b0'
     Size: '0x10'
-    Type: TArray<class RPCPlayableMontages*>
+    Type: TArray<class Object*>
   - Name: NetworkPlayableAnimations
     Offset: '0x4c0'
     Size: '0x10'
-    Type: TArray<class NetworkPlayableAnimations*>
+    Type: TArray<class AnimSequenceBase*>
   - Name: StrategySpeedOverrides
     Offset: '0x4d0'
     Size: '0x10'
@@ -59235,7 +59239,7 @@ SwingMechanismAction:
   - Name: CordChildren
     Offset: '0x630'
     Size: '0x10'
-    Type: TArray<class CordChildren*>
+    Type: TArray<class SwingMechanismCordRenderComponent*>
   - Name: MaterialAnimations
     Offset: '0x640'
     Size: '0x10'
@@ -59329,7 +59333,7 @@ SwitchMechanismTrigger:
   - Name: SwitchesToSyncTo
     Offset: '0x4a8'
     Size: '0x10'
-    Type: TArray<class SwitchesToSyncTo*>
+    Type: TArray<class SwitchMechanismTrigger*>
   - Name: DisableWhenActivated
     Offset: '0x4b8'
     Size: '0x1'
@@ -59891,7 +59895,7 @@ TaleQuestDescAsset:
   - Name: Linkage
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Linkage*>
+    Type: TArray<class UserDefinedStruct*>
   - Name: ToggledDefinitions
     Offset: '0x48'
     Size: '0x10'
@@ -60129,7 +60133,7 @@ TaleQuestNumericSwitchStepDesc:
   - Name: Descs
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class Descs*>
+    Type: TArray<class TaleQuestStepDesc*>
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -60151,7 +60155,7 @@ TaleQuestParallelForeachStep:
   - Name: Frames
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<class Frames*>
+    Type: TArray<class IteratorFrame*>
   ClassSize: '0x38'
   FullSize: '0xd0'
   InheritedSize: '0x98'
@@ -60197,7 +60201,7 @@ TaleQuestParallelStepDesc:
   - Name: Descs
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class Descs*>
+    Type: TArray<class TaleQuestStepDesc*>
   ClassSize: '0x10'
   FullSize: '0x90'
   InheritedSize: '0x80'
@@ -60347,7 +60351,7 @@ TaleQuestSequenceStepDesc:
   - Name: Descs
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class Descs*>
+    Type: TArray<class TaleQuestStepDesc*>
   ClassSize: '0x10'
   FullSize: '0xb0'
   InheritedSize: '0xa0'
@@ -60585,7 +60589,7 @@ TaleQuestToolService:
   - Name: WieldableDescs
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<class WieldableDescs*>
+    Type: TArray<class ItemDesc*>
   ClassSize: '0xc0'
   FullSize: '0x120'
   InheritedSize: '0x60'
@@ -60765,11 +60769,11 @@ TallTaleService:
   - Name: ActiveLocalPlayerQuestBooks
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<class ActiveLocalPlayerQuestBooks*>
+    Type: TArray<class QuestBook*>
   - Name: ActiveRemotePlayerQuestBooks
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<class ActiveRemotePlayerQuestBooks*>
+    Type: TArray<class QuestBook*>
   ClassSize: '0x60'
   FullSize: '0x428'
   InheritedSize: '0x3c8'
@@ -61015,7 +61019,7 @@ TavernStepsTrigger:
   - Name: ActorsPlayingInstruments
     Offset: '0x458'
     Size: '0x10'
-    Type: TArray<class ActorsPlayingInstruments*>
+    Type: TArray<class Actor*>
   ClassSize: '0xe8'
   FullSize: '0x4b0'
   InheritedSize: '0x3c8'
@@ -61635,11 +61639,11 @@ TestProjectileWeapon:
   - Name: ActorsHits
     Offset: '0xa80'
     Size: '0x10'
-    Type: TArray<class ActorsHits*>
+    Type: TArray<class Actor*>
   - Name: PhysicsMaterials
     Offset: '0xa90'
     Size: '0x10'
-    Type: TArray<class PhysicsMaterials*>
+    Type: TArray<class PhysicalMaterial*>
   - Name: LastProjectileAim
     Offset: '0xaa0'
     Size: '0x50'
@@ -61677,7 +61681,7 @@ TestServerNetworkedEventsWhitelistDefinition:
   - Name: ValidEvents
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ValidEvents*>
+    Type: TArray<class ScriptStruct*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -62477,7 +62481,7 @@ TornMap:
   - Name: MaskTextures
     Offset: '0x8a8'
     Size: '0x10'
-    Type: TArray<class MaskTextures*>
+    Type: TArray<class Texture*>
   ClassSize: '0xb0'
   FullSize: '0x8e0'
   InheritedSize: '0x830'
@@ -62555,7 +62559,7 @@ TrackedActorService:
   - Name: ActorsAwaitingRegistration
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class ActorsAwaitingRegistration*>
+    Type: TArray<class Actor*>
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
@@ -62709,7 +62713,7 @@ TransientActorTaleService:
   - Name: TrackedActors
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class TrackedActors*>
+    Type: TArray<class Actor*>
   - Name: MigrationEntries
     Offset: '0x90'
     Size: '0x10'
@@ -62859,7 +62863,7 @@ TreasureMapCollectionComponent:
   - Name: TreasureMaps
     Offset: '0x190'
     Size: '0x10'
-    Type: TArray<class TreasureMaps*>
+    Type: TArray<class TreasureMap*>
   - Name: TreasureMapDestinationIslands
     Offset: '0x1a0'
     Size: '0x10'
@@ -62937,7 +62941,7 @@ TreasureRoom:
   - Name: OverlappingActors
     Offset: '0x4d0'
     Size: '0x10'
-    Type: TArray<class OverlappingActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x128'
   FullSize: '0x4f0'
   InheritedSize: '0x3c8'
@@ -63131,7 +63135,7 @@ TrinketMountpointManagerComponent:
   - Name: NudgePolicies
     Offset: '0x448'
     Size: '0x10'
-    Type: TArray<class NudgePolicies*>
+    Type: TArray<class NudgePolicy*>
   - Name: TrinketLoadoutFinderPolicy
     Offset: '0x458'
     Size: '0x8'
@@ -63151,7 +63155,7 @@ TrinketMountpointManagerComponent:
   - Name: TrinketReplacementMeshes
     Offset: '0x550'
     Size: '0x10'
-    Type: TArray<class TrinketReplacementMeshes*>
+    Type: TArray<class StaticMeshComponent*>
   ClassSize: '0x280'
   FullSize: '0x560'
   InheritedSize: '0x2e0'
@@ -63405,7 +63409,7 @@ TunnelOfTheDamned:
   - Name: CrewMembersInTunnel
     Offset: '0x480'
     Size: '0x10'
-    Type: TArray<class CrewMembersInTunnel*>
+    Type: TArray<class Actor*>
   - Name: Endpoint
     Offset: '0x490'
     Size: '0x8'
@@ -63475,7 +63479,7 @@ TunnelOfTheDamnedBase:
   - Name: CrewMembersInTunnel
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<class CrewMembersInTunnel*>
+    Type: TArray<class Actor*>
   - Name: FailureFallbackShipSpawnLocation
     Offset: '0x508'
     Size: '0x8'
@@ -64317,7 +64321,7 @@ VaultTableMaterialSetDataAsset:
   - Name: SolutionHintMaterials
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class SolutionHintMaterials*>
+    Type: TArray<class MaterialInstance*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -64417,7 +64421,7 @@ VfxStoryResponseManager:
   - Name: Emitters
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class Emitters*>
+    Type: TArray<class Actor*>
   - Name: EmitterValue
     Offset: '0x3e8'
     Size: '0x4'
@@ -64445,7 +64449,7 @@ VisualHealthResponseComponent:
   - Name: HealthResponseMaterials
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class HealthResponseMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: WaitForAllMeshChange
     Offset: '0x180'
     Size: '0x1'
@@ -64459,7 +64463,7 @@ VisualHealthResponseDataAsset:
   - Name: GatedByHealthVfxAscendingOrder
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class GatedByHealthVfxAscendingOrder*>
+    Type: TArray<class Object*>
   - Name: GatedByHealthVfxSocketName
     Offset: '0x38'
     Size: '0x8'
@@ -65141,7 +65145,7 @@ VoyageProposalContainer:
   - Name: VoyageSelectionVotableObjectViews
     Offset: '0x5a8'
     Size: '0x10'
-    Type: TArray<class VoyageSelectionVotableObjectViews*>
+    Type: TArray<class Actor*>
   - Name: VoyageCancelVotableObjectView
     Offset: '0x5b8'
     Size: '0x8'
@@ -65149,7 +65153,7 @@ VoyageProposalContainer:
   - Name: TaleManifests
     Offset: '0x5c0'
     Size: '0x10'
-    Type: TArray<class TaleManifests*>
+    Type: TArray<class CrewShipManifest*>
   - Name: TaleCancelVotableObjectView
     Offset: '0x620'
     Size: '0x8'
@@ -66193,7 +66197,7 @@ WaterPuzzleAlterationMechanismAudioParams:
   - Name: AlterationMechanismDeactivateEvents
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class AlterationMechanismDeactivateEvents*>
+    Type: TArray<class WwiseEvent*>
   - Name: MechanismSubmergedSwitchGroup
     Offset: '0x48'
     Size: '0x8'
@@ -66363,7 +66367,7 @@ WaterVolume:
   - Name: OverlappingActors
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<class OverlappingActors*>
+    Type: TArray<class Actor*>
   - Name: RippleFrequency
     Offset: '0x400'
     Size: '0x4'
@@ -66399,7 +66403,7 @@ WaveBasedMechanismVisualController:
   - Name: WaveVisualActors
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class WaveVisualActors*>
+    Type: TArray<class Actor*>
   - Name: StaticMeshDynamicMaterialTag
     Offset: '0x3e0'
     Size: '0x8'
@@ -66423,11 +66427,11 @@ WaveBasedMechanismVisualController:
   - Name: DynamicMaterials
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: MaterialsToTransition
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<class MaterialsToTransition*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x80'
   FullSize: '0x448'
   InheritedSize: '0x3c8'
@@ -66519,7 +66523,7 @@ WeepingComponent:
   - Name: DynamicMaterials
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: DecalMaterial
     Offset: '0x150'
     Size: '0x8'
@@ -66535,7 +66539,7 @@ WeepingComponent:
   - Name: ParticleEmitters
     Offset: '0x198'
     Size: '0x10'
-    Type: TArray<class ParticleEmitters*>
+    Type: TArray<class ParticleSystemComponent*>
   ClassSize: '0x1a0'
   FullSize: '0x268'
   InheritedSize: '0xc8'
@@ -66675,7 +66679,7 @@ WetnessComponent:
   - Name: DynamicMaterials
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x48'
   FullSize: '0x110'
   InheritedSize: '0xc8'
@@ -67391,11 +67395,11 @@ WieldableItem:
   - Name: ThirdPersonExtraMeshes
     Offset: '0x740'
     Size: '0x10'
-    Type: TArray<class ThirdPersonExtraMeshes*>
+    Type: TArray<class MeshComponent*>
   - Name: StashedExtraMeshes
     Offset: '0x750'
     Size: '0x10'
-    Type: TArray<class StashedExtraMeshes*>
+    Type: TArray<class MeshComponent*>
   - Name: OfferingEnabled
     Offset: '0x779'
     Size: '0x1'
@@ -67487,7 +67491,7 @@ WieldableItemCanvasRenderingComponent:
   - Name: AdditionalRenderTargets
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<class AdditionalRenderTargets*>
+    Type: TArray<class MaybeCompressedCanvasRenderTarget2D*>
   ClassSize: '0xc8'
   FullSize: '0x190'
   InheritedSize: '0xc8'
@@ -68109,7 +68113,7 @@ WorldMarkerManagerComponent:
   - Name: MarkerDataObjects
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class MarkerDataObjects*>
+    Type: TArray<class BaseWorldMarker*>
   - Name: ClientMarkerRepresentations
     Offset: '0xf0'
     Size: '0x10'

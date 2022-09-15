@@ -17,7 +17,7 @@ public:
 class CordRenderComponent: public StaticMeshComponent
 {
 public:
-	TArray<class CordMaterials*>                                 CordMaterials;                                     // 0x628(0x10)
+	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x628(0x10)
 	float                                                        ThicknessCm;                                       // 0x638(0x4)
 };
 
@@ -36,7 +36,7 @@ public:
 class HarpoonRenderComponent: public CordRenderComponent
 {
 public:
-	TArray<class HarpoonMaterials*>                              HarpoonMaterials;                                  // 0x658(0x10)
+	TArray<class MaterialInstanceDynamic*>                       HarpoonMaterials;                                  // 0x658(0x10)
 	float                                                        LaunchAnimationDurationSecs;                       // 0x668(0x4)
 	float                                                        HitAnimationDurationSecs;                          // 0x66c(0x4)
 	float                                                        QuickRetractAnimationSpeed;                        // 0x670(0x4)

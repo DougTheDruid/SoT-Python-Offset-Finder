@@ -101,8 +101,8 @@ class ClueConnectionConfig: public DataAsset
 {
 public:
 	TArray<Struct ClueSiteTypeSupportedDescribedByEntry>         CluesThatCanDescribeSites;                         // 0x28(0x10)
-	TArray<class ClueGenerators*>                                ClueGenerators;                                    // 0x38(0x10)
-	TArray<class DestinationGenerators*>                         DestinationGenerators;                             // 0x48(0x10)
+	TArray<class ClueDescriptorGenerator*>                       ClueGenerators;                                    // 0x38(0x10)
+	TArray<class ClueDestinationGenerator*>                      DestinationGenerators;                             // 0x48(0x10)
 };
 
 
@@ -126,8 +126,8 @@ public:
 class ClueFactoryConfig: public DataAsset
 {
 public:
-	TArray<class LandClueCreators*>                              LandClueCreators;                                  // 0x28(0x10)
-	TArray<class SeaClueCreators*>                               SeaClueCreators;                                   // 0x38(0x10)
+	TArray<class LandClueCreator*>                               LandClueCreators;                                  // 0x28(0x10)
+	TArray<class SeaClueCreator*>                                SeaClueCreators;                                   // 0x38(0x10)
 	Class ClueChoiceSelectionStrategy*                           ChoiceStrategy;                                    // 0x48(0x8)
 	TArray<Struct RestrictedClueType>                            RestrictedClueTypes;                               // 0x50(0x10)
 };

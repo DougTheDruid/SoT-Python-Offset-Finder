@@ -74,7 +74,7 @@ public:
 class CoherentUIGTJSEvent: public Object
 {
 public:
-	TArray<class StructTypes*>                                   StructTypes;                                       // 0xa8(0x10)
+	TArray<class Struct*>                                        StructTypes;                                       // 0xa8(0x10)
 };
 
 

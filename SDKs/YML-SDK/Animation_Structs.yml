@@ -185,7 +185,7 @@ CosmeticItems:
   - Name: CosmeticItemArray
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class CosmeticItemArray*>
+    Type: TArray<class Actor*>
   ClassSize: '0x10'
 CurveUpdateValues:
   Attributes:
@@ -236,11 +236,11 @@ CustomAnimationMontageStagedLoopingData:
   - Name: LoopAnims
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class LoopAnims*>
+    Type: TArray<class AnimMontage*>
   - Name: OutOfAnims
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class OutOfAnims*>
+    Type: TArray<class AnimMontage*>
   ClassSize: '0x28'
 CustomAnimationMontageStateMachine:
   Attributes:

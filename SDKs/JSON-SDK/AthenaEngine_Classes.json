@@ -83,7 +83,7 @@
     "Attributes": [
       {
         "Name": "Assets",
-        "Type": "TArray<class Assets*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x28"
       }

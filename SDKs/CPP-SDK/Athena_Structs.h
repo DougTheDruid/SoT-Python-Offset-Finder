@@ -595,7 +595,7 @@ struct AnimNotifyWwiseObserver
 public:
 	Class WwiseEvent*                                            OnEventPosted;                                     // 0x0(0x8)
 	bool                                                         PreventPlayingPostedEvent;                         // 0x8(0x1)
-	TArray<class AdditionalEventsToTrigger*>                     AdditionalEventsToTrigger;                         // 0x10(0x10)
+	TArray<class WwiseEvent*>                                    AdditionalEventsToTrigger;                         // 0x10(0x10)
 };
 
 
@@ -630,7 +630,7 @@ public:
 	Class AnimSequence*                                          ContinuousLoop_A;                                  // 0x10(0x8)
 	Class AnimSequence*                                          ContinuousLoop_B;                                  // 0x18(0x8)
 	Class AnimSequence*                                          ContinuousOut;                                     // 0x20(0x8)
-	TArray<class AlternateContinuousOuts*>                       AlternateContinuousOuts;                           // 0x28(0x10)
+	TArray<class AnimSequence*>                                  AlternateContinuousOuts;                           // 0x28(0x10)
 };
 
 
@@ -641,7 +641,7 @@ public:
 	TArray<Struct OneShotAnimationElement>                       OneShotSequences;                                  // 0x0(0x10)
 	TArray<Struct ContinuousAnimationElement>                    ContinuousSequences;                               // 0x10(0x10)
 	Class NPCHeldObjectData*                                     WieldableCosmeticItemList;                         // 0x20(0x8)
-	TArray<class AudioEvents*>                                   AudioEvents;                                       // 0x28(0x10)
+	TArray<class WwiseEvent*>                                    AudioEvents;                                       // 0x28(0x10)
 };
 
 
@@ -661,10 +661,10 @@ struct AnimationContinuousCycle
 public:
 	Class AnimSequence*                                          In;                                                // 0x0(0x8)
 	float                                                        InEffectTime;                                      // 0x8(0x4)
-	TArray<class Loop*>                                          Loop;                                              // 0x10(0x10)
+	TArray<class AnimSequence*>                                  Loop;                                              // 0x10(0x10)
 	Class BlendSpace1D*                                          LoopHitReact;                                      // 0x20(0x8)
 	Class AnimSequence*                                          Out;                                               // 0x28(0x8)
-	TArray<class OutAlternates*>                                 OutAlternates;                                     // 0x30(0x10)
+	TArray<class AnimSequence*>                                  OutAlternates;                                     // 0x30(0x10)
 	float                                                        OutUndockTime;                                     // 0x40(0x4)
 };
 
@@ -674,7 +674,7 @@ struct OneShotAnimationElement
 {
 public:
 	struct FName                                                 SequenceName;                                      // 0x0(0x8)
-	TArray<class OneShotSequence*>                               OneShotSequence;                                   // 0x8(0x10)
+	TArray<class AnimSequence*>                                  OneShotSequence;                                   // 0x8(0x10)
 	float                                                        EffectTime;                                        // 0x18(0x4)
 	float                                                        BlendTime;                                         // 0x1c(0x4)
 };
@@ -880,7 +880,7 @@ public:
 	Class AnimSequence*                                          TurnRight;                                         // 0x8(0x8)
 	Class BlendSpace*                                            LocomotionBase;                                    // 0x10(0x8)
 	Class BlendSpace*                                            LocomotionVariant;                                 // 0x18(0x8)
-	TArray<class LocomotionVariantSelection*>                    LocomotionVariantSelection;                        // 0x20(0x10)
+	TArray<class BlendSpace*>                                    LocomotionVariantSelection;                        // 0x20(0x10)
 	int                                                          PrecentageChanceOfVariantOccuring;                 // 0x30(0x4)
 };
 
@@ -890,10 +890,10 @@ struct AthenaAnimationSkeletonFlee
 {
 public:
 	class                                                        UseWithObject;                                     // 0x0(0x8)
-	TArray<class FleeTurnLeft*>                                  FleeTurnLeft;                                      // 0x8(0x10)
-	TArray<class FleeTurnRight*>                                 FleeTurnRight;                                     // 0x18(0x10)
+	TArray<class AnimSequence*>                                  FleeTurnLeft;                                      // 0x8(0x10)
+	TArray<class AnimSequence*>                                  FleeTurnRight;                                     // 0x18(0x10)
 	Class BlendSpace*                                            FleeLocomotionBase;                                // 0x28(0x8)
-	TArray<class FleeLocomotionVariants*>                        FleeLocomotionVariants;                            // 0x30(0x10)
+	TArray<class BlendSpace*>                                    FleeLocomotionVariants;                            // 0x30(0x10)
 };
 
 
@@ -915,8 +915,8 @@ struct AthenaAnimationSkeletonEmoteActionAnimations
 {
 public:
 	class                                                        UseWithObject;                                     // 0x0(0x8)
-	TArray<class Taunt*>                                         Taunt;                                             // 0x8(0x10)
-	TArray<class Cheer*>                                         Cheer;                                             // 0x18(0x10)
+	TArray<class AnimSequence*>                                  Taunt;                                             // 0x8(0x10)
+	TArray<class AnimSequence*>                                  Cheer;                                             // 0x18(0x10)
 };
 
 
@@ -936,7 +936,7 @@ struct AthenaAnimationSkeletonShipCaptainAnimations
 {
 public:
 	Class AnimSequence*                                          EnterDockedPose;                                   // 0x0(0x8)
-	TArray<class DockedIdles*>                                   DockedIdles;                                       // 0x8(0x10)
+	TArray<class AnimSequence*>                                  DockedIdles;                                       // 0x8(0x10)
 	Class AnimSequence*                                          ExitDockedPose;                                    // 0x18(0x8)
 	Class AnimSequence*                                          Taunt;                                             // 0x20(0x8)
 	Class AnimSequence*                                          RamInto;                                           // 0x28(0x8)
@@ -1047,7 +1047,7 @@ public:
 struct AthenaAnimationHarpoonLauncherAnimData
 {
 public:
-	TArray<class Idle*>                                          Idle;                                              // 0x0(0x10)
+	TArray<class BlendSpace1D*>                                  Idle;                                              // 0x0(0x10)
 	Class BlendSpace1D*                                          FireInto;                                          // 0x10(0x8)
 	Class BlendSpace1D*                                          FireOutOf;                                         // 0x18(0x8)
 	Class BlendSpace1D*                                          FireAction;                                        // 0x20(0x8)
@@ -1474,7 +1474,7 @@ public:
 	float                                                        MinPlayerToShipDistForPlayerToBeClearedOfAbandonedStatus; // 0x20(0x4)
 	float                                                        MinPlayerToEnemyShipDistForPlayerToQualifyForStealthSpawns; // 0x24(0x4)
 	float                                                        MinPlayerToWatercraftDistForPlayerToQualifyAsAbandoned; // 0x28(0x4)
-	float                                                        MinDistFromAnyMermaidForPlayerToBeAbandonedIfPlayerNotNearIslan; // 0x2c(0x4)
+	float                                                        MinDistFromAnyMermaidForPlayerToBeAbandonedIfPlayerNotNearIsland; // 0x2c(0x4)
 	float                                                        MinDistFromAnyMermaidForPlayerToBeAbandonedIfPlayerNearIsland; // 0x30(0x4)
 	int                                                          MaxNumberOfConcurrentMermaids;                     // 0x34(0x4)
 	float                                                        MinLifeTimeOfMermaidBeforeCanBeCulledInPopulationCheck; // 0x38(0x4)
@@ -1811,9 +1811,9 @@ struct XMarksTheSpotQuestParams
 public:
 	Struct WeightedProbabilityRange                              NumTreasureLocations;                              // 0x30(0x20)
 	Class BoobyTrapSpawnerDataAsset*                             BoobyTrapSpawnerDataAsset;                         // 0x50(0x8)
-	TArray<class UniqueTreasureLocationBoobyTraps*>              UniqueTreasureLocationBoobyTraps;                  // 0x58(0x10)
-	TArray<class UniqueTreasureLocationRewards*>                 UniqueTreasureLocationRewards;                     // 0x68(0x10)
-	TArray<class UniqueTreasureLocationRewardsAssets*>           UniqueTreasureLocationRewardsAssets;               // 0x78(0x10)
+	TArray<class BoobyTrapSpawnerDataAsset*>                     UniqueTreasureLocationBoobyTraps;                  // 0x58(0x10)
+	TArray<class WeightedTreasureChestDescAsset*>                UniqueTreasureLocationRewards;                     // 0x68(0x10)
+	TArray<class WeightedItemDescSpawnDataAsset*>                UniqueTreasureLocationRewardsAssets;               // 0x78(0x10)
 };
 
 
@@ -3098,7 +3098,7 @@ struct AchievementSailWithFlameOfFateColoursAboard
 {
 public:
 	Class Ship*                                                  Ship;                                              // 0x8(0x8)
-	TArray<class ShipLights*>                                    ShipLights;                                        // 0x10(0x10)
+	TArray<class ShipInteractableLight*>                         ShipLights;                                        // 0x10(0x10)
 };
 
 
@@ -3277,7 +3277,7 @@ public:
 struct TimedResponseAction
 {
 public:
-	TArray<class TargetActors*>                                  TargetActors;                                      // 0x0(0x10)
+	TArray<class Actor*>                                         TargetActors;                                      // 0x0(0x10)
 	float                                                        Duration;                                          // 0x10(0x4)
 	bool                                                         IsActive;                                          // 0x14(0x1)
 };
@@ -3346,7 +3346,7 @@ struct LiquidContents
 {
 public:
 	Class Ship*                                                  LiquidSource;                                      // 0x0(0x8)
-	TArray<class LiquidTargets*>                                 LiquidTargets;                                     // 0x8(0x10)
+	TArray<class Ship*>                                          LiquidTargets;                                     // 0x8(0x10)
 	Class Actor*                                                 Container;                                         // 0x18(0x8)
 	float                                                        LiquidVolume;                                      // 0x20(0x4)
 	Struct Guid                                                  ScoopID;                                           // 0x24(0x10)
@@ -4335,7 +4335,7 @@ public:
 struct ContestCeremonyEvent
 {
 public:
-	TArray<class AudioEvents*>                                   AudioEvents;                                       // 0x0(0x10)
+	TArray<class WwiseEvent*>                                    AudioEvents;                                       // 0x0(0x10)
 	TArray<Byte SpecialEvents>                                   SpecialEvents;                                     // 0x10(0x10)
 	Struct FText                                                 NPCName;                                           // 0x20(0x38)
 	Struct FText                                                 NPCMessageToAllPlayers;                            // 0x58(0x38)
@@ -4421,7 +4421,7 @@ public:
 	Struct FText                                                 NPCMessageToAllPlayers;                            // 0x40(0x38)
 	float                                                        Duration;                                          // 0x78(0x4)
 	TArray<Byte SpecialEvents>                                   SpecialEvents;                                     // 0x80(0x10)
-	TArray<class AudioEvents*>                                   AudioEvents;                                       // 0x90(0x10)
+	TArray<class WwiseEvent*>                                    AudioEvents;                                       // 0x90(0x10)
 };
 
 
@@ -5107,7 +5107,7 @@ struct CrestPartDesc
 {
 public:
 	Class StaticMesh*                                            CrestMesh;                                         // 0x0(0x8)
-	TArray<class CrestMaterials*>                                CrestMaterials;                                    // 0x8(0x10)
+	TArray<class MaterialInterface*>                             CrestMaterials;                                    // 0x8(0x10)
 };
 
 
@@ -5548,13 +5548,13 @@ public:
 struct ClassicFireworkDebugList
 {
 public:
-	TArray<class Peony*>                                         Peony;                                             // 0x0(0x10)
-	TArray<class Crackle*>                                       Crackle;                                           // 0x10(0x10)
-	TArray<class Strobe*>                                        Strobe;                                            // 0x20(0x10)
-	TArray<class Brocade*>                                       Brocade;                                           // 0x30(0x10)
-	TArray<class Comet*>                                         Comet;                                             // 0x40(0x10)
-	TArray<class HummingSnakes*>                                 HummingSnakes;                                     // 0x50(0x10)
-	TArray<class Cakes*>                                         Cakes;                                             // 0x60(0x10)
+	TArray<class ItemDescSpawnData*>                             Peony;                                             // 0x0(0x10)
+	TArray<class ItemDescSpawnData*>                             Crackle;                                           // 0x10(0x10)
+	TArray<class ItemDescSpawnData*>                             Strobe;                                            // 0x20(0x10)
+	TArray<class ItemDescSpawnData*>                             Brocade;                                           // 0x30(0x10)
+	TArray<class ItemDescSpawnData*>                             Comet;                                             // 0x40(0x10)
+	TArray<class ItemDescSpawnData*>                             HummingSnakes;                                     // 0x50(0x10)
+	TArray<class ItemDescSpawnData*>                             Cakes;                                             // 0x60(0x10)
 };
 
 
@@ -5562,8 +5562,8 @@ public:
 struct FireworkDebugListByFireworkType
 {
 public:
-	TArray<class Rockets*>                                       Rockets;                                           // 0x0(0x10)
-	TArray<class Cakes*>                                         Cakes;                                             // 0x10(0x10)
+	TArray<class ItemDescSpawnData*>                             Rockets;                                           // 0x0(0x10)
+	TArray<class ItemDescSpawnData*>                             Cakes;                                             // 0x10(0x10)
 };
 
 
@@ -5866,7 +5866,7 @@ struct PlayerHideoutInfo
 {
 public:
 	Class PlayerState*                                           PlayerState;                                       // 0x0(0x8)
-	TArray<class ExitPoints*>                                    ExitPoints;                                        // 0x8(0x10)
+	TArray<class SpawnLocation*>                                 ExitPoints;                                        // 0x8(0x10)
 };
 
 
@@ -6408,7 +6408,7 @@ struct ItemLoadoutSlot
 {
 public:
 	class                                                        ItemCategory;                                      // 0x0(0x8)
-	TArray<class Items*>                                         Items;                                             // 0x8(0x10)
+	TArray<class ItemInfo*>                                      Items;                                             // 0x8(0x10)
 	int                                                          Capacity;                                          // 0x18(0x4)
 };
 
@@ -6790,7 +6790,7 @@ public:
 struct LightingControllerMaterialInstances
 {
 public:
-	TArray<class SkyDomeMaterials*>                              SkyDomeMaterials;                                  // 0x0(0x10)
+	TArray<class MaterialInstanceDynamic*>                       SkyDomeMaterials;                                  // 0x0(0x10)
 	Class MaterialInstanceDynamic*                               NorthStarMaterial;                                 // 0x10(0x8)
 	Class MaterialInstanceDynamic*                               MoonMaterial;                                      // 0x18(0x8)
 };
@@ -7156,7 +7156,7 @@ public:
 	Class PrimitiveComponent*                                    MastWeldedPhysicsBodyComponent;                    // 0x10(0x8)
 	Class PrimitiveComponent*                                    WeldedCrowsNestComponent;                          // 0x18(0x8)
 	Class PrimitiveComponent*                                    UnweldedCrowsNestComponent;                        // 0x20(0x8)
-	TArray<class UnweldedCrossBeamComponents*>                   UnweldedCrossBeamComponents;                       // 0x28(0x10)
+	TArray<class PrimitiveComponent*>                            UnweldedCrossBeamComponents;                       // 0x28(0x10)
 };
 
 
@@ -7338,7 +7338,7 @@ public:
 struct MerchantQuestRequiredItemsGroup
 {
 public:
-	TArray<class RequiredItems*>                                 RequiredItems;                                     // 0x0(0x10)
+	TArray<class MerchantQuestItemData*>                         RequiredItems;                                     // 0x0(0x10)
 };
 
 
@@ -7520,7 +7520,7 @@ struct BookcaseIndicatorSetting
 public:
 	class                                                        RelevantCompany;                                   // 0x0(0x8)
 	Class StaticMeshComponent*                                   IndicatorMesh;                                     // 0x8(0x8)
-	TArray<class OverriddenMaterials*>                           OverriddenMaterials;                               // 0x10(0x10)
+	TArray<class MaterialInstanceDynamic*>                       OverriddenMaterials;                               // 0x10(0x10)
 };
 
 
@@ -7573,7 +7573,7 @@ struct NPCDialogFormattedHeaderByConditionText
 public:
 	Struct FText                                                 Text;                                              // 0x0(0x38)
 	Struct FString                                               ParameterName;                                     // 0x38(0x10)
-	TArray<class Conditions*>                                    Conditions;                                        // 0x48(0x10)
+	TArray<class NPCDialogConditional*>                          Conditions;                                        // 0x48(0x10)
 };
 
 
@@ -7582,7 +7582,7 @@ struct NPCDialogHeaderByConditionText
 {
 public:
 	Struct FText                                                 Text;                                              // 0x0(0x38)
-	TArray<class Conditions*>                                    Conditions;                                        // 0x38(0x10)
+	TArray<class NPCDialogConditional*>                          Conditions;                                        // 0x38(0x10)
 };
 
 
@@ -7718,7 +7718,7 @@ struct NPCDialogData
 {
 public:
 	Class NPCDialogHeader*                                       Header;                                            // 0x0(0x8)
-	TArray<class Options*>                                       Options;                                           // 0x8(0x10)
+	TArray<class NPCDialogOption*>                               Options;                                           // 0x8(0x10)
 };
 
 
@@ -8365,7 +8365,7 @@ public:
 struct RecentlyInteractedWithPlayers
 {
 public:
-	TArray<class RecentlyInteractedPlayers*>                     RecentlyInteractedPlayers;                         // 0x0(0x10)
+	TArray<class AthenaPlayerCharacter*>                         RecentlyInteractedPlayers;                         // 0x0(0x10)
 	Class AthenaPlayerCharacter*                                 ReportingCharacter;                                // 0x10(0x8)
 	Struct DateTime                                              InteractionTime;                                   // 0x18(0x8)
 };
@@ -8499,7 +8499,7 @@ struct PremiumCatalogLandingPageTab
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
 	Struct FText                                                 DisplayName;                                       // 0x10(0x38)
-	TArray<class Actor*>                                         Children;                                          // 0x48(0x10)
+	TArray<class PremiumCatalogLandingPageItemDataAsset*>        Children;                                          // 0x48(0x10)
 	struct FName                                                 FeatureToggle;                                     // 0x58(0x8)
 	struct FName                                                 IncludeForPromotion;                               // 0x60(0x8)
 	struct FName                                                 ExcludeFromPromotion;                              // 0x68(0x8)
@@ -9224,7 +9224,7 @@ public:
 	Struct Vector                                                Origin;                                            // 0x28(0xc)
 	Struct Vector                                                Direction;                                         // 0x34(0xc)
 	Struct ProjectileAim                                         AimData;                                           // 0x40(0x50)
-	TArray<class IgnoredActors*>                                 IgnoredActors;                                     // 0x90(0x10)
+	TArray<class Actor*>                                         IgnoredActors;                                     // 0x90(0x10)
 	Struct WeaponProjectileParams                                Params;                                            // 0xa0(0xb0)
 	class                                                        DamagerType;                                       // 0x150(0x8)
 	Struct Guid                                                  TelemetryAttackId;                                 // 0x158(0x10)
@@ -9278,7 +9278,7 @@ struct ConfigurationComboAndTrigger
 public:
 	TArray<Int8 RequiredConfigurationCombo>                      RequiredConfigurationCombo;                        // 0x0(0x10)
 	Class Actor*                                                 TriggerToActivate;                                 // 0x10(0x8)
-	TArray<class TriggeredActionMechanisms*>                     TriggeredActionMechanisms;                         // 0x18(0x10)
+	TArray<class Actor*>                                         TriggeredActionMechanisms;                         // 0x18(0x10)
 	byte                                                         ActivatedMechanismType;                            // 0x28(0x1)
 };
 
@@ -9506,7 +9506,7 @@ public:
 struct ResourceCacheEntry
 {
 public:
-	TArray<class Resources*>                                     Resources;                                         // 0x0(0x10)
+	TArray<class Object*>                                        Resources;                                         // 0x0(0x10)
 };
 
 
@@ -10326,7 +10326,7 @@ public:
 struct CinematicCrewNetworkEvent
 {
 public:
-	TArray<class CrewMembersPlayerStates*>                       CrewMembersPlayerStates;                           // 0x10(0x10)
+	TArray<class PlayerState*>                                   CrewMembersPlayerStates;                           // 0x10(0x10)
 	Struct FText                                                 Header;                                            // 0x20(0x38)
 	struct FName                                                 Tag;                                               // 0x58(0x8)
 };
@@ -10396,7 +10396,7 @@ public:
 	TArray<Struct TreasureData>                                  Treasure;                                          // 0x28(0x10)
 	float                                                        RotationFromNorth;                                 // 0x78(0x4)
 	Struct Guid                                                  MapGroupGuid;                                      // 0x7c(0x10)
-	TArray<class BoobyTrapSpawners*>                             BoobyTrapSpawners;                                 // 0x90(0x10)
+	TArray<class AIBoobyTrapSpawner*>                            BoobyTrapSpawners;                                 // 0x90(0x10)
 	class                                                        OverrideTreasureMapItemDesc;                       // 0xa0(0x8)
 };
 
@@ -10598,7 +10598,7 @@ public:
 struct BlockDecalMaterials
 {
 public:
-	TArray<class BlockMaterials*>                                BlockMaterials;                                    // 0x0(0x10)
+	TArray<class MaterialInterface*>                             BlockMaterials;                                    // 0x0(0x10)
 };
 
 
@@ -10716,7 +10716,7 @@ struct WheelDesc
 {
 public:
 	Struct StringAssetReference                                  WheelMesh;                                         // 0x0(0x10)
-	TArray<class WheelMeshOverrideMaterials*>                    WheelMeshOverrideMaterials;                        // 0x18(0x10)
+	TArray<class MaterialInterface*>                             WheelMeshOverrideMaterials;                        // 0x18(0x10)
 };
 
 
@@ -12810,7 +12810,7 @@ struct AthenaAnimationCannonAnimData
 {
 public:
 	Class BlendSpace1D*                                          Into;                                              // 0x0(0x8)
-	TArray<class Idle*>                                          Idle;                                              // 0x8(0x10)
+	TArray<class BlendSpace1D*>                                  Idle;                                              // 0x8(0x10)
 	Class BlendSpace1D*                                          Fire;                                              // 0x18(0x8)
 	Class BlendSpace1D*                                          Outof;                                             // 0x20(0x8)
 };
@@ -15185,10 +15185,10 @@ public:
 	bool                                                         ServerAndClientAgreedFirstTime_Unimportant;        // 0x91(0x1)
 	bool                                                         ServerAndClientAgreedFirstTime_Important;          // 0x92(0x1)
 	bool                                                         ServerAndClientDisagreedFirstTime_Unimportant;     // 0x93(0x1)
-	bool                                                         ServerAndClientDisagreedFirstTime_Important_NoCorrectionAttempt; // 0x94(0x1)
+	bool                                                         ServerAndClientDisagreedFirstTime_Important_NoCorrectionAttempted; // 0x94(0x1)
 	bool                                                         ServerAndClientDisagreedFirstTime_Important_ClientMissBelieved; // 0x95(0x1)
-	bool                                                         ServerAndClientDisagreedFirstTime_Important_RewindEstimation_Co; // 0x96(0x1)
-	bool                                                         ServerAndClientDisagreedFirstTime_Important_RewindEstimation_St; // 0x97(0x1)
+	bool                                                         ServerAndClientDisagreedFirstTime_Important_RewindEstimation_Corrected; // 0x96(0x1)
+	bool                                                         ServerAndClientDisagreedFirstTime_Important_RewindEstimation_StillDisagrees; // 0x97(0x1)
 };
 
 
@@ -15213,7 +15213,7 @@ public:
 
 
 // Size 0x30
-struct ProjectileWeaponFireEnhancedClientRewindEstimationTelemetryEven
+struct ProjectileWeaponFireEnhancedClientRewindEstimationTelemetryEvent
 {
 public:
 	Struct Guid                                                  TelemetryAttackId;                                 // 0x0(0x10)
@@ -17067,7 +17067,7 @@ public:
 struct RequestEmblemDefinitionsSucceededEvent
 {
 public:
-	TArray<class DataAssets*>                                    DataAssets;                                        // 0x0(0x10)
+	TArray<class EmblemDefinitionDataAsset*>                     DataAssets;                                        // 0x0(0x10)
 };
 
 
@@ -20476,7 +20476,7 @@ public:
 	TArray<Struct TreasureMapTextDesc>                           Descriptions;                                      // 0x80(0x10)
 	TArray<Struct BountyMapTargetDesc>                           Targets;                                           // 0x90(0x10)
 	TArray<Class BountyRewards>                                  BountyRewards;                                     // 0xa0(0x10)
-	TArray<class BountyRewardsSpawnData*>                        BountyRewardsSpawnData;                            // 0xb0(0x10)
+	TArray<class ItemSpawnData*>                                 BountyRewardsSpawnData;                            // 0xb0(0x10)
 	Class Landmark*                                              Landmark;                                          // 0xc0(0x8)
 	float                                                        IslandRotation;                                    // 0xc8(0x4)
 	Struct AIBountySpawnerParams                                 SpawnerGeneratedData;                              // 0xf0(0xc8)
@@ -20651,7 +20651,7 @@ public:
 struct MerchantItemGroupDesc
 {
 public:
-	TArray<class Items*>                                         Items;                                             // 0x0(0x10)
+	TArray<class MerchantQuestItemData*>                         Items;                                             // 0x0(0x10)
 };
 
 
@@ -20817,7 +20817,7 @@ public:
 struct QuestPageListPopulator
 {
 public:
-	TArray<class PageListsToUpdate*>                             PageListsToUpdate;                                 // 0x0(0x10)
+	TArray<class QuestBookPageList*>                             PageListsToUpdate;                                 // 0x0(0x10)
 };
 
 
@@ -21124,7 +21124,7 @@ public:
 
 
 // Size 0x40
-struct OpenableItemMaterialAnimationReactionComponentAnimationNameAndS
+struct OpenableItemMaterialAnimationReactionComponentAnimationNameAndSfxCueSet
 {
 public:
 	struct FName                                                 Open;                                              // 0x0(0x8)
@@ -21139,7 +21139,7 @@ public:
 
 
 // Size 0x40
-struct OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCu
+struct OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCueSet
 {
 public:
 	struct FName                                                 Open;                                              // 0x0(0x8)
@@ -22297,7 +22297,7 @@ public:
 
 
 // Size 0x1
-struct EventAthenaLocalPlayerRequestRequiredControllersConnectedRespon
+struct EventAthenaLocalPlayerRequestRequiredControllersConnectedResponse
 {
 public:
 	bool                                                         ControllerConnected;                               // 0x0(0x1)
@@ -22755,8 +22755,8 @@ public:
 struct IndividualMeshConsumer
 {
 public:
-	TArray<class OverrideMaterials*>                             OverrideMaterials;                                 // 0x18(0x10)
-	TArray<class OverrideFallbackMaterials*>                     OverrideFallbackMaterials;                         // 0x28(0x10)
+	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x18(0x10)
+	TArray<class MaterialInterface*>                             OverrideFallbackMaterials;                         // 0x28(0x10)
 };
 
 
@@ -22890,7 +22890,7 @@ public:
 struct DynamicMaterialListContainer
 {
 public:
-	TArray<class MaterialsList*>                                 MaterialsList;                                     // 0x0(0x10)
+	TArray<class MaterialInstanceDynamic*>                       MaterialsList;                                     // 0x0(0x10)
 };
 
 
@@ -22908,7 +22908,7 @@ public:
 struct MeshAnimatorInstance
 {
 public:
-	TArray<class Meshes*>                                        Meshes;                                            // 0x60(0x10)
+	TArray<class MeshComponent*>                                 Meshes;                                            // 0x60(0x10)
 };
 
 
@@ -23216,7 +23216,7 @@ public:
 	Struct PlayerTrackedObjective                                TrackedObjective;                                  // 0xc(0x10)
 	byte                                                         TrackedObjectiveType;                              // 0x1c(0x1)
 	byte                                                         TrackedObjectiveTargetType;                        // 0x1d(0x1)
-	TArray<class Conditions*>                                    Conditions;                                        // 0x20(0x10)
+	TArray<class StatCondition*>                                 Conditions;                                        // 0x20(0x10)
 };
 
 
@@ -23225,7 +23225,7 @@ struct ConditionalStatsTriggerUnit
 {
 public:
 	class                                                        TriggerType;                                       // 0x0(0x8)
-	TArray<class ConditionalStatsAssets*>                        ConditionalStatsAssets;                            // 0x8(0x10)
+	TArray<class ConditionalStatsAsset*>                         ConditionalStatsAssets;                            // 0x8(0x10)
 };
 
 
@@ -27084,7 +27084,7 @@ public:
 struct ManagedItems
 {
 public:
-	TArray<class Items*>                                         Items;                                             // 0x0(0x10)
+	TArray<class ItemProxy*>                                     Items;                                             // 0x0(0x10)
 };
 
 
@@ -27104,7 +27104,7 @@ public:
 	struct FName                                                 Feature;                                           // 0x8(0x8)
 	bool                                                         InvertFeatureCheck;                                // 0x10(0x1)
 	int                                                          Weight;                                            // 0x14(0x4)
-	TArray<class Requirements*>                                  Requirements;                                      // 0x18(0x10)
+	TArray<class SpawnRequirement*>                              Requirements;                                      // 0x18(0x10)
 };
 
 
@@ -27152,7 +27152,7 @@ public:
 	float                                                        Weight;                                            // 0x8(0x4)
 	struct FName                                                 Feature;                                           // 0xc(0x8)
 	bool                                                         InvertFeatureCheck;                                // 0x14(0x1)
-	TArray<class Requirements*>                                  Requirements;                                      // 0x18(0x10)
+	TArray<class SpawnRequirement*>                              Requirements;                                      // 0x18(0x10)
 	bool                                                         CustomLifetimeManagement;                          // 0x28(0x1)
 };
 
@@ -27349,7 +27349,7 @@ struct AthenaStreamedLevelData
 public:
 	int                                                          LevelId;                                           // 0x0(0x4)
 	struct FName                                                 PackagePath;                                       // 0x4(0x8)
-	TArray<class Levels*>                                        Levels;                                            // 0x10(0x10)
+	TArray<class LevelStreaming*>                                Levels;                                            // 0x10(0x10)
 };
 
 
@@ -27674,7 +27674,7 @@ public:
 	struct FName                                                 RewardIdentifier;                                  // 0x0(0x8)
 	Class PopUpMessageDesc*                                      PopUp;                                             // 0x8(0x8)
 	bool                                                         IgnorePopUp;                                       // 0x10(0x1)
-	TArray<class Rewards*>                                       Rewards;                                           // 0x18(0x10)
+	TArray<class Reward*>                                        Rewards;                                           // 0x18(0x10)
 	TArray<Class PrerequisiteEntitlements>                       PrerequisiteEntitlements;                          // 0x28(0x10)
 	bool                                                         AllowedFromInsecureSources;                        // 0x38(0x1)
 	bool                                                         AwardToAccountAndNotJustToPirate;                  // 0x39(0x1)
@@ -28410,7 +28410,7 @@ struct EncounterListenerData
 {
 public:
 	TArray<Byte EncounterListenerTypes>                          EncounterListenerTypes;                            // 0x0(0x10)
-	TArray<class EncounterListenerActors*>                       EncounterListenerActors;                           // 0x10(0x10)
+	TArray<class Actor*>                                         EncounterListenerActors;                           // 0x10(0x10)
 	TArray<Struct Vector>                                        EncounterListenerLocations;                        // 0x20(0x10)
 };
 
@@ -28540,7 +28540,7 @@ struct NPCDialogOverrideTypeWithConditionalsUnit
 {
 public:
 	class                                                        OverrideType;                                      // 0x0(0x8)
-	TArray<class Conditionals*>                                  Conditionals;                                      // 0x8(0x10)
+	TArray<class NPCDialogConditional*>                          Conditionals;                                      // 0x8(0x10)
 };
 
 
@@ -28801,14 +28801,14 @@ public:
 struct FaunaAnimationBaseStructure
 {
 public:
-	TArray<class Idle*>                                          Idle;                                              // 0x0(0x10)
-	TArray<class Locomotion*>                                    Locomotion;                                        // 0x10(0x10)
+	TArray<class AnimSequence*>                                  Idle;                                              // 0x0(0x10)
+	TArray<class BlendSpace1D*>                                  Locomotion;                                        // 0x10(0x10)
 	Struct FaunaAnimationTurningStructure                        Turning;                                           // 0x20(0x10)
 	Struct FaunaAnimationStartledStructure                       Startled;                                          // 0x30(0x18)
-	TArray<class Impact*>                                        Impact;                                            // 0x48(0x10)
-	TArray<class DyingLoop*>                                     DyingLoop;                                         // 0x58(0x10)
-	TArray<class Death*>                                         Death;                                             // 0x68(0x10)
-	TArray<class Special*>                                       Special;                                           // 0x78(0x10)
+	TArray<class BlendSpace1D*>                                  Impact;                                            // 0x48(0x10)
+	TArray<class AnimSequence*>                                  DyingLoop;                                         // 0x58(0x10)
+	TArray<class AnimSequence*>                                  Death;                                             // 0x68(0x10)
+	TArray<class AnimSequence*>                                  Special;                                           // 0x78(0x10)
 	Struct FaunaAnimationPigStarvingStructure                    PigStarving;                                       // 0x88(0x30)
 	Struct FaunaAnimationEatingStructure                         Eating;                                            // 0xb8(0x10)
 	Struct FaunaAnimationSnakeAttack                             SnakeAttack;                                       // 0xc8(0x58)
@@ -29940,7 +29940,7 @@ struct CutsceneAnimationElement
 {
 public:
 	struct FName                                                 SequenceName;                                      // 0x0(0x8)
-	TArray<class OneShotSequences*>                              OneShotSequences;                                  // 0x8(0x10)
+	TArray<class AnimSequenceBase*>                              OneShotSequences;                                  // 0x8(0x10)
 };
 
 
@@ -29963,7 +29963,7 @@ public:
 	bool                                                         ShouldQueue;                                       // 0x10(0x1)
 	float                                                        AdditionalPoolCooldown;                            // 0x14(0x4)
 	Class CutscenePoolType*                                      PoolType;                                          // 0x18(0x8)
-	TArray<class DialogueData*>                                  DialogueData;                                      // 0x20(0x10)
+	TArray<class SceneDialogueData*>                             DialogueData;                                      // 0x20(0x10)
 	TArray<Float CutsceneLengths>                                CutsceneLengths;                                   // 0x30(0x10)
 };
 
@@ -30121,7 +30121,7 @@ struct VotersByOption
 {
 public:
 	int                                                          VoteOption;                                        // 0x0(0x4)
-	TArray<class Voters*>                                        Voters;                                            // 0x8(0x10)
+	TArray<class Object*>                                        Voters;                                            // 0x8(0x10)
 };
 
 
@@ -30861,7 +30861,7 @@ public:
 struct InitialShipSpawnLocations
 {
 public:
-	TArray<class ShipSpawnLocations*>                            ShipSpawnLocations;                                // 0x0(0x10)
+	TArray<class ShipSpawnLocation*>                             ShipSpawnLocations;                                // 0x0(0x10)
 };
 
 
@@ -31077,7 +31077,7 @@ public:
 	float                                                        BlendDuration;                                     // 0x8(0x4)
 	Class CurveFloat*                                            InCurve;                                           // 0x10(0x8)
 	Class CurveFloat*                                            OutCurve;                                          // 0x18(0x8)
-	TArray<class FoundMaterials*>                                FoundMaterials;                                    // 0x20(0x10)
+	TArray<class MaterialInstanceDynamic*>                       FoundMaterials;                                    // 0x20(0x10)
 	Class CurveFloat*                                            CurrentBlendCurve;                                 // 0x30(0x8)
 };
 
@@ -31094,10 +31094,10 @@ public:
 struct MechanismAnimationEventContainer
 {
 public:
-	TArray<class AnimationStartedEvents*>                        AnimationStartedEvents;                            // 0x0(0x10)
-	TArray<class OneShotTimelineEvents*>                         OneShotTimelineEvents;                             // 0x10(0x10)
-	TArray<class ContinuousTimelineEvents*>                      ContinuousTimelineEvents;                          // 0x20(0x10)
-	TArray<class AnimationStoppedEvents*>                        AnimationStoppedEvents;                            // 0x30(0x10)
+	TArray<class MechanismOneShotEvent*>                         AnimationStartedEvents;                            // 0x0(0x10)
+	TArray<class MechanismAnimationEvent*>                       OneShotTimelineEvents;                             // 0x10(0x10)
+	TArray<class MechanismAnimationEvent*>                       ContinuousTimelineEvents;                          // 0x20(0x10)
+	TArray<class MechanismOneShotEvent*>                         AnimationStoppedEvents;                            // 0x30(0x10)
 };
 
 
@@ -31152,7 +31152,7 @@ struct MechanismMaterialAnimationContext
 {
 public:
 	Class MeshComponent*                                         Mesh;                                              // 0x8(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x10(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x10(0x10)
 };
 
 
@@ -31182,11 +31182,11 @@ public:
 struct MechanismBinding
 {
 public:
-	TArray<class Actions*>                                       Actions;                                           // 0x0(0x10)
-	TArray<class Triggers*>                                      Triggers;                                          // 0x10(0x10)
+	TArray<class MechanismElementProxy*>                         Actions;                                           // 0x0(0x10)
+	TArray<class MechanismElementProxy*>                         Triggers;                                          // 0x10(0x10)
 	Struct MechanismBindingSettings                              Settings;                                          // 0x20(0x68)
-	TArray<class SelectedActions*>                               SelectedActions;                                   // 0x88(0x10)
-	TArray<class SelectedTriggers*>                              SelectedTriggers;                                  // 0x98(0x10)
+	TArray<class MechanismElementProxy*>                         SelectedActions;                                   // 0x88(0x10)
+	TArray<class MechanismElementProxy*>                         SelectedTriggers;                                  // 0x98(0x10)
 };
 
 
@@ -31205,7 +31205,7 @@ struct FeatureToggledMechanismGroups
 {
 public:
 	struct FName                                                 Feature;                                           // 0x0(0x8)
-	TArray<class MechanismGroups*>                               MechanismGroups;                                   // 0x8(0x10)
+	TArray<class MechanismGroup*>                                MechanismGroups;                                   // 0x8(0x10)
 };
 
 
@@ -31329,8 +31329,8 @@ public:
 	struct FName                                                 PhaseName;                                         // 0x0(0x8)
 	bool                                                         IsFinalPhase;                                      // 0x8(0x1)
 	struct FName                                                 NextPhaseName;                                     // 0xc(0x8)
-	TArray<class Policies*>                                      Policies;                                          // 0x18(0x10)
-	TArray<class Actions*>                                       Actions;                                           // 0x28(0x10)
+	TArray<class BattleElevatorEventRoomBasePolicy*>             Policies;                                          // 0x18(0x10)
+	TArray<class ElevatorActionBase*>                            Actions;                                           // 0x28(0x10)
 };
 
 
@@ -31657,7 +31657,7 @@ struct FishingFishSelector
 {
 public:
 	Class AvailableFishForSpawning*                              AvailableFish;                                     // 0x0(0x8)
-	TArray<class SelectedFishCache*>                             SelectedFishCache;                                 // 0xb0(0x10)
+	TArray<class FishSpawnParamsDataAsset*>                      SelectedFishCache;                                 // 0xb0(0x10)
 	Class Object*                                                Root;                                              // 0xc0(0x8)
 	Class FishSpawnParamsDataAsset*                              GatheredConditions;                                // 0xc8(0x8)
 	Class VoyageLocationOnlyNamedIslandListDataAsset*            GatheredIsland;                                    // 0xd0(0x8)
@@ -33222,7 +33222,7 @@ struct FortTogglerUnit
 {
 public:
 	Class AIProximityPlayerTracker*                              AIProxPlayerTracker;                               // 0x8(0x8)
-	TArray<class AISpawners*>                                    AISpawners;                                        // 0x10(0x10)
+	TArray<class AISpawner*>                                     AISpawners;                                        // 0x10(0x10)
 };
 
 
@@ -34065,7 +34065,7 @@ public:
 	int                                                          NumShipsInFormation;                               // 0x0(0x4)
 	Struct AggressiveGhostShipEncounterShipDesc                  FormationShipDesc;                                 // 0x8(0x48)
 	Struct AggressiveGhostShipEncounterShipDesc                  FormationLeaderShipDesc;                           // 0x50(0x48)
-	TArray<class FormationGruntVisuals*>                         FormationGruntVisuals;                             // 0x98(0x10)
+	TArray<class AggressiveGhostShipVisualsDataAsset*>           FormationGruntVisuals;                             // 0x98(0x10)
 	bool                                                         FormationLeaderIsCaptain;                          // 0xa8(0x1)
 	bool                                                         IsBurningBlade;                                    // 0xa9(0x1)
 	bool                                                         IsHellishMermaid;                                  // 0xaa(0x1)
@@ -34810,8 +34810,8 @@ struct LaunchableProjectileCreator
 {
 public:
 	Class PrimitiveComponent*                                    AimBase;                                           // 0x50(0x8)
-	TArray<class IgnoredActors*>                                 IgnoredActors;                                     // 0x58(0x10)
-	TArray<class IgnoredComponents*>                             IgnoredComponents;                                 // 0x68(0x10)
+	TArray<class Actor*>                                         IgnoredActors;                                     // 0x58(0x10)
+	TArray<class ActorComponent*>                                IgnoredComponents;                                 // 0x68(0x10)
 };
 
 
@@ -35142,13 +35142,13 @@ public:
 struct AthenaAnimationObjectFacial
 {
 public:
-	TArray<class PrimaryContinuous*>                             PrimaryContinuous;                                 // 0x0(0x10)
-	TArray<class SecondaryContinuous*>                           SecondaryContinuous;                               // 0x10(0x10)
-	TArray<class PrimaryOneShot*>                                PrimaryOneShot;                                    // 0x20(0x10)
-	TArray<class SecondaryOneShot*>                              SecondaryOneShot;                                  // 0x30(0x10)
-	TArray<class MeleeBlocking*>                                 MeleeBlocking;                                     // 0x40(0x10)
-	TArray<class MeleeAttack*>                                   MeleeAttack;                                       // 0x50(0x10)
-	TArray<class MeleeBlockReact*>                               MeleeBlockReact;                                   // 0x60(0x10)
+	TArray<class AnimMontage*>                                   PrimaryContinuous;                                 // 0x0(0x10)
+	TArray<class AnimMontage*>                                   SecondaryContinuous;                               // 0x10(0x10)
+	TArray<class AnimMontage*>                                   PrimaryOneShot;                                    // 0x20(0x10)
+	TArray<class AnimMontage*>                                   SecondaryOneShot;                                  // 0x30(0x10)
+	TArray<class AnimMontage*>                                   MeleeBlocking;                                     // 0x40(0x10)
+	TArray<class AnimMontage*>                                   MeleeAttack;                                       // 0x50(0x10)
+	TArray<class AnimMontage*>                                   MeleeBlockReact;                                   // 0x60(0x10)
 };
 
 
@@ -35406,11 +35406,11 @@ public:
 	Class AnimSequence*                                          BlockingMainInto;                                  // 0x90(0x8)
 	Class AnimSequence*                                          BlockingIntoFromCombat;                            // 0x98(0x8)
 	Class BlendSpace*                                            BlockingMainBlendSpace;                            // 0xa0(0x8)
-	TArray<class BlockingFeedbackSequences*>                     BlockingFeedbackSequences;                         // 0xa8(0x10)
+	TArray<class AnimSequence*>                                  BlockingFeedbackSequences;                         // 0xa8(0x10)
 	Class AnimSequence*                                          BlockingOut;                                       // 0xb8(0x8)
 	Class AnimSequence*                                          BlockingMainIntoSwimming;                          // 0xc0(0x8)
 	Class BlendSpace*                                            BlockingMainBlendSpaceSwimming;                    // 0xc8(0x8)
-	TArray<class BlockingFeedbackSequencesSwimming*>             BlockingFeedbackSequencesSwimming;                 // 0xd0(0x10)
+	TArray<class AnimSequence*>                                  BlockingFeedbackSequencesSwimming;                 // 0xd0(0x10)
 	Class AnimSequence*                                          BlockingOutSwimming;                               // 0xe0(0x8)
 	Struct AthenaAnimationObjectJumpingAnimations                BlockingJump;                                      // 0xe8(0x20)
 	Class BlendSpace*                                            CombatLocomotion;                                  // 0x108(0x8)
@@ -35686,10 +35686,10 @@ public:
 struct AthenaAnimationHitReactsAnimData
 {
 public:
-	TArray<class HitReact*>                                      HitReact;                                          // 0x0(0x10)
-	TArray<class HitReactItem*>                                  HitReactItem;                                      // 0x10(0x10)
-	TArray<class HitReactItemAction*>                            HitReactItemAction;                                // 0x20(0x10)
-	TArray<class HitReactSubtle*>                                HitReactSubtle;                                    // 0x30(0x10)
+	TArray<class BlendSpace1D*>                                  HitReact;                                          // 0x0(0x10)
+	TArray<class BlendSpace1D*>                                  HitReactItem;                                      // 0x10(0x10)
+	TArray<class BlendSpace1D*>                                  HitReactItemAction;                                // 0x20(0x10)
+	TArray<class BlendSpace1D*>                                  HitReactSubtle;                                    // 0x30(0x10)
 };
 
 
@@ -35714,7 +35714,7 @@ struct AthenaAnimationFacialAnimData
 public:
 	int                                                          FacialIdleAnimationIndex0;                         // 0x0(0x4)
 	int                                                          FacialIdleAnimationIndex1;                         // 0x4(0x4)
-	TArray<class IdleAnimations*>                                IdleAnimations;                                    // 0x8(0x10)
+	TArray<class AnimSequence*>                                  IdleAnimations;                                    // 0x8(0x10)
 	Class AnimSequence*                                          Death;                                             // 0x18(0x8)
 	Class AnimSequence*                                          HitReact;                                          // 0x20(0x8)
 	Struct AthenaAnimationControllableFacialAnimData             Controllables;                                     // 0x28(0x30)
@@ -35831,7 +35831,7 @@ public:
 struct AthenaAnimationIdlesAnimData
 {
 public:
-	TArray<class IdleAnimations*>                                IdleAnimations;                                    // 0x0(0x10)
+	TArray<class AnimSequence*>                                  IdleAnimations;                                    // 0x0(0x10)
 };
 
 
@@ -35848,11 +35848,11 @@ public:
 struct AthenaAnimationJumpingThirdPersonAnimData
 {
 public:
-	TArray<class JumpStart*>                                     JumpStart;                                         // 0x0(0x10)
-	TArray<class JumpCycle*>                                     JumpCycle;                                         // 0x10(0x10)
-	TArray<class PreImpact*>                                     PreImpact;                                         // 0x20(0x10)
-	TArray<class LandLight*>                                     LandLight;                                         // 0x30(0x10)
-	TArray<class LandHeavy*>                                     LandHeavy;                                         // 0x40(0x10)
+	TArray<class BlendSpace*>                                    JumpStart;                                         // 0x0(0x10)
+	TArray<class BlendSpace*>                                    JumpCycle;                                         // 0x10(0x10)
+	TArray<class BlendSpace*>                                    PreImpact;                                         // 0x20(0x10)
+	TArray<class BlendSpace*>                                    LandLight;                                         // 0x30(0x10)
+	TArray<class BlendSpace*>                                    LandHeavy;                                         // 0x40(0x10)
 };
 
 
@@ -35932,8 +35932,8 @@ public:
 	Class BlendSpace1D*                                          UnderwaterTreadwater;                              // 0x10(0x8)
 	Struct AthenaAnimationLocomotionTurningAnimData              TurningLeft;                                       // 0x18(0x8)
 	Struct AthenaAnimationLocomotionTurningAnimData              TurningRight;                                      // 0x20(0x8)
-	TArray<class Idles*>                                         Idles;                                             // 0x28(0x10)
-	TArray<class IdlesUnderwater*>                               IdlesUnderwater;                                   // 0x38(0x10)
+	TArray<class AnimSequence*>                                  Idles;                                             // 0x28(0x10)
+	TArray<class AnimSequence*>                                  IdlesUnderwater;                                   // 0x38(0x10)
 	Struct AthenaAnimationSwimmingSprintAnimData                 SwimSprint;                                        // 0x48(0x20)
 };
 
@@ -35953,8 +35953,8 @@ public:
 struct AthenaAnimationSpawnAnimData
 {
 public:
-	TArray<class Spawn*>                                         Spawn;                                             // 0x0(0x10)
-	TArray<class Despawn*>                                       Despawn;                                           // 0x10(0x10)
+	TArray<class AnimSequence*>                                  Spawn;                                             // 0x0(0x10)
+	TArray<class AnimSequence*>                                  Despawn;                                           // 0x10(0x10)
 };
 
 
@@ -36083,9 +36083,9 @@ struct AthenaAnimationCapstanAnimData
 public:
 	Class AnimSequence*                                          Attach;                                            // 0x0(0x8)
 	Class AnimSequence*                                          Detach;                                            // 0x8(0x8)
-	TArray<class NeutralForce*>                                  NeutralForce;                                      // 0x10(0x10)
-	TArray<class PushForce*>                                     PushForce;                                         // 0x20(0x10)
-	TArray<class PullForce*>                                     PullForce;                                         // 0x30(0x10)
+	TArray<class BlendSpace1D*>                                  NeutralForce;                                      // 0x10(0x10)
+	TArray<class BlendSpace1D*>                                  PushForce;                                         // 0x20(0x10)
+	TArray<class BlendSpace1D*>                                  PullForce;                                         // 0x30(0x10)
 	Class BlendSpace1D*                                          PullToNeutral;                                     // 0x40(0x8)
 	Class BlendSpace1D*                                          PushToPull;                                        // 0x48(0x8)
 	Class BlendSpace1D*                                          PullToPush;                                        // 0x50(0x8)
@@ -36138,8 +36138,8 @@ public:
 struct AthenaAnimationObjectActionOneShotPitchOverride
 {
 public:
-	TArray<class MainAction*>                                    MainAction;                                        // 0x0(0x10)
-	TArray<class AlternateAction*>                               AlternateAction;                                   // 0x10(0x10)
+	TArray<class BlendSpace1D*>                                  MainAction;                                        // 0x0(0x10)
+	TArray<class BlendSpace1D*>                                  AlternateAction;                                   // 0x10(0x10)
 };
 
 
@@ -36159,10 +36159,10 @@ public:
 struct AthenaAnimationObjectActionOneShot
 {
 public:
-	TArray<class MainAction*>                                    MainAction;                                        // 0x0(0x10)
-	TArray<class MainActionLocomotion*>                          MainActionLocomotion;                              // 0x10(0x10)
-	TArray<class AlternateAction*>                               AlternateAction;                                   // 0x20(0x10)
-	TArray<class AlternateActionLocomotion*>                     AlternateActionLocomotion;                         // 0x30(0x10)
+	TArray<class AnimSequence*>                                  MainAction;                                        // 0x0(0x10)
+	TArray<class BlendSpace*>                                    MainActionLocomotion;                              // 0x10(0x10)
+	TArray<class AnimSequence*>                                  AlternateAction;                                   // 0x20(0x10)
+	TArray<class BlendSpace*>                                    AlternateActionLocomotion;                         // 0x30(0x10)
 };
 
 
@@ -36182,7 +36182,7 @@ public:
 	Class BlendSpace1D*                                          MainInto;                                          // 0x0(0x8)
 	Class BlendSpace1D*                                          MainCycleIdle;                                     // 0x8(0x8)
 	Class BlendSpace1D*                                          MainCycleLocomotion;                               // 0x10(0x8)
-	TArray<class VariantCycleIdle*>                              VariantCycleIdle;                                  // 0x18(0x10)
+	TArray<class BlendSpace1D*>                                  VariantCycleIdle;                                  // 0x18(0x10)
 	bool                                                         UseMainCycleJump;                                  // 0x28(0x1)
 	bool                                                         IgnoreFullBody;                                    // 0x29(0x1)
 	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   MainCycleJump;                                     // 0x30(0x20)
@@ -36370,9 +36370,9 @@ public:
 struct AthenaAnimationMapTable
 {
 public:
-	TArray<class Into*>                                          Into;                                              // 0x0(0x10)
-	TArray<class IdleCycle*>                                     IdleCycle;                                         // 0x10(0x10)
-	TArray<class Outof*>                                         Outof;                                             // 0x20(0x10)
+	TArray<class AnimSequence*>                                  Into;                                              // 0x0(0x10)
+	TArray<class AnimSequence*>                                  IdleCycle;                                         // 0x10(0x10)
+	TArray<class AnimSequence*>                                  Outof;                                             // 0x20(0x10)
 };
 
 
@@ -36457,9 +36457,9 @@ public:
 	Struct AthenaAnimationWheelTurnsAnimData                     RightTurn;                                         // 0x20(0x18)
 	Struct AthenaAnimationWheelArmOverlayAnimData                LeftArm;                                           // 0x38(0x10)
 	Struct AthenaAnimationWheelArmOverlayAnimData                RightArm;                                          // 0x48(0x10)
-	TArray<class Idles*>                                         Idles;                                             // 0x58(0x10)
-	TArray<class LeftFingerIdles*>                               LeftFingerIdles;                                   // 0x68(0x10)
-	TArray<class RightFingerIdles*>                              RightFingerIdles;                                  // 0x78(0x10)
+	TArray<class AnimSequence*>                                  Idles;                                             // 0x58(0x10)
+	TArray<class AnimSequence*>                                  LeftFingerIdles;                                   // 0x68(0x10)
+	TArray<class AnimSequence*>                                  RightFingerIdles;                                  // 0x78(0x10)
 };
 
 
@@ -36500,7 +36500,7 @@ struct AthenaAnimationShopInteractionAnimations
 public:
 	byte                                                         ObjectType;                                        // 0x0(0x1)
 	Class AnimSequence*                                          Into;                                              // 0x8(0x8)
-	TArray<class Loop*>                                          Loop;                                              // 0x10(0x10)
+	TArray<class AnimSequence*>                                  Loop;                                              // 0x10(0x10)
 	Class AnimSequence*                                          Out;                                               // 0x20(0x8)
 };
 
@@ -37349,10 +37349,10 @@ struct Crew
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
-	TArray<class Players*>                                       Players;                                           // 0x20(0x10)
+	TArray<class PlayerState*>                                   Players;                                           // 0x20(0x10)
 	Struct CrewSessionTemplate                                   CrewSessionTemplate;                               // 0x30(0x38)
 	Struct Guid                                                  LiveryID;                                          // 0x68(0x10)
-	TArray<class AssociatedActors*>                              AssociatedActors;                                  // 0x80(0x10)
+	TArray<class Actor*>                                         AssociatedActors;                                  // 0x80(0x10)
 	bool                                                         HasEverSetSail;                                    // 0x90(0x1)
 	int                                                          ScrambleNameIndex;                                 // 0x94(0x4)
 };

@@ -74,7 +74,7 @@ public:
 class StoryDrivenAudioPortalCollectionDataAsset: public DataAsset
 {
 public:
-	TArray<class AssetsList*>                                    AssetsList;                                        // 0x28(0x10)
+	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x28(0x10)
 };
 
 

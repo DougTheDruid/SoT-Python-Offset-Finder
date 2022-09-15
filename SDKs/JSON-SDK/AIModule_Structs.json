@@ -88,7 +88,7 @@
     "Attributes": [
       {
         "Name": "AllowedTypes",
-        "Type": "TArray<class AllowedTypes*>",
+        "Type": "TArray<class BlackboardKeyType*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -429,7 +429,7 @@
       },
       {
         "Name": "Decorators",
-        "Type": "TArray<class Decorators*>",
+        "Type": "TArray<class BTDecorator*>",
         "Size": "0x10",
         "Offset": "0x10"
       },

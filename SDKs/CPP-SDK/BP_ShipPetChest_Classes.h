@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ShipPetChest_C: public PossessionsChest
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x590(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x590(0x8)
 };
 
 

@@ -19,7 +19,7 @@ class CustomMap: public RenderToTextureMapBase
 {
 public:
 	Class Font*                                                  Font;                                              // 0x838(0x8)
-	TArray<class DisplayItems*>                                  DisplayItems;                                      // 0x840(0x10)
+	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x840(0x10)
 };
 
 
@@ -44,7 +44,7 @@ class CustomMapData: public DataAsset
 public:
 	class                                                        CustomMapItemDescClass;                            // 0x28(0x8)
 	Class Font*                                                  Font;                                              // 0x30(0x8)
-	TArray<class MapDisplayItemList*>                            MapDisplayItemList;                                // 0x38(0x10)
+	TArray<class CustomMapDataTypeBase*>                         MapDisplayItemList;                                // 0x38(0x10)
 };
 
 

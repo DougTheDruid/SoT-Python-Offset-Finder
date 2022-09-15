@@ -15,11 +15,11 @@ public:
 	float                                                        Vertical Displacement;                             // 0x3d4(0x4)
 	bool                                                         Match Surface Orientation;                         // 0x3d8(0x1)
 	float                                                        Maximum Deviation Angle;                           // 0x3dc(0x4)
-	TArray<class ComponentsToDrop*>                              ComponentsToDrop;                                  // 0x3e0(0x10)
+	TArray<class SceneComponent*>                                ComponentsToDrop;                                  // 0x3e0(0x10)
 	bool                                                         Check For Movable Components;                      // 0x3f0(0x1)
 	bool                                                         CreateParentBoundsVolume;                          // 0x3f1(0x1)
 	float                                                        ParentBoundsPadding;                               // 0x3f4(0x4)
-	TArray<class Physical Materials To Ignore*>                  Physical Materials To Ignore;                      // 0x3f8(0x10)
+	TArray<class PhysicalMaterial*>                              Physical Materials To Ignore;                      // 0x3f8(0x10)
 };
 
 

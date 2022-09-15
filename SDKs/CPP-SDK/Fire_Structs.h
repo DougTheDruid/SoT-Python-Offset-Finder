@@ -311,7 +311,7 @@ public:
 struct FireGridCharringManager
 {
 public:
-	TArray<class OwnerMaterials*>                                OwnerMaterials;                                    // 0x0(0x10)
+	TArray<class MaterialInterface*>                             OwnerMaterials;                                    // 0x0(0x10)
 	Struct Vector                                                AdditionalGridOffsetForCharring;                   // 0x10(0xc)
 	Class Texture2DDynamic*                                      FireGridTexture;                                   // 0x20(0x8)
 };

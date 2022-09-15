@@ -56,7 +56,7 @@ public:
 class MediaPlaylist: public Object
 {
 public:
-	TArray<class Items*>                                         Items;                                             // 0x28(0x10)
+	TArray<class MediaSource*>                                   Items;                                             // 0x28(0x10)
 };
 
 

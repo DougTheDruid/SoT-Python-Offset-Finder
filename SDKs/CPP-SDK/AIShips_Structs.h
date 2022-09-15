@@ -321,7 +321,7 @@ public:
 struct AIShipEncounterWave
 {
 public:
-	TArray<class AIShipsInWave*>                                 AIShipsInWave;                                     // 0x0(0x10)
+	TArray<class AIShipContextDescDataAsset*>                    AIShipsInWave;                                     // 0x0(0x10)
 };
 
 

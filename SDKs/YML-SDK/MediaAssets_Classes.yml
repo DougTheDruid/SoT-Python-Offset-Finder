@@ -115,7 +115,7 @@ MediaPlaylist:
   - Name: Items
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Items*>
+    Type: TArray<class MediaSource*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

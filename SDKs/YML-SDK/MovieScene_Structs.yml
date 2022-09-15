@@ -16,7 +16,7 @@ MovieSceneBinding:
   - Name: Tracks
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class Tracks*>
+    Type: TArray<class MovieSceneTrack*>
   ClassSize: '0x30'
 MovieSceneBindingOverrideData:
   Attributes:

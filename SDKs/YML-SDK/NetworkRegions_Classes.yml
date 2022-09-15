@@ -5,7 +5,7 @@ NetworkRegionService:
   - Name: PlayersThatNeedToBeTicked
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<class PlayersThatNeedToBeTicked*>
+    Type: TArray<class PlayerController*>
   ClassSize: '0xa0'
   FullSize: '0xc8'
   InheritedSize: '0x28'
@@ -25,7 +25,7 @@ RegionAssetCacheActor:
   - Name: LoadedAssets
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class LoadedAssets*>
+    Type: TArray<class Object*>
   ClassSize: '0x40'
   FullSize: '0x408'
   InheritedSize: '0x3c8'

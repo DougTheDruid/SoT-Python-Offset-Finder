@@ -584,7 +584,7 @@
     "Attributes": [
       {
         "Name": "MemberVotes",
-        "Type": "TArray<class MemberVotes*>",
+        "Type": "TArray<class PlayerState*>",
         "Size": "0x10",
         "Offset": "0x0"
       },

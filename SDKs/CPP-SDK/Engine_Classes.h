@@ -85,7 +85,7 @@ public:
 	Class Pawn*                                                  Instigator;                                        // 0x150(0x8)
 	TArray<class Actor*>                                         Children;                                          // 0x158(0x10)
 	Class SceneComponent*                                        RootComponent;                                     // 0x168(0x8)
-	TArray<class ControllingMatineeActors*>                      ControllingMatineeActors;                          // 0x170(0x10)
+	TArray<class MatineeActor*>                                  ControllingMatineeActors;                          // 0x170(0x10)
 	float                                                        InitialLifeSpan;                                   // 0x180(0x4)
 	bool                                                         bAllowReceiveTickEventOnDedicatedServer;           // 0x188(0x1)
 	TArray<Struct FName>                                         Layers;                                            // 0x190(0x10)
@@ -98,9 +98,9 @@ public:
 	struct FName                                                 Feature;                                           // 0x1c4(0x8)
 	TArray<Struct FName>                                         Tags;                                              // 0x1d0(0x10)
 	bool                                                         bDoOverlapNotifiesOnLoad;                          // 0x229(0x1)
-	TArray<class BlueprintCreatedComponents*>                    BlueprintCreatedComponents;                        // 0x320(0x10)
-	TArray<class InstanceComponents*>                            InstanceComponents;                                // 0x330(0x10)
-	TArray<class ChildActorInterfaceProviders*>                  ChildActorInterfaceProviders;                      // 0x348(0x10)
+	TArray<class ActorComponent*>                                BlueprintCreatedComponents;                        // 0x320(0x10)
+	TArray<class ActorComponent*>                                InstanceComponents;                                // 0x330(0x10)
+	TArray<class Actor*>                                         ChildActorInterfaceProviders;                      // 0x348(0x10)
 	double                                                       DormancyLingeringInSeconds;                        // 0x3c0(0x8)
 };
 
@@ -123,7 +123,7 @@ public:
 class SceneComponent: public ActorComponent
 {
 public:
-	TArray<class AttachChildren*>                                AttachChildren;                                    // 0xc8(0x10)
+	TArray<class SceneComponent*>                                AttachChildren;                                    // 0xc8(0x10)
 	bool                                                         bRequiresCustomLocation;                           // 0xd8(0x1)
 	Class SceneComponent*                                        AttachParent;                                      // 0xe0(0x8)
 	struct FName                                                 AttachSocketName;                                  // 0xe8(0x8)
@@ -147,7 +147,7 @@ public:
 	byte                                                         DetailMode;                                        // 0x231(0x1)
 	Struct Vector                                                ComponentVelocity;                                 // 0x23c(0xc)
 	TArray<Struct FName>                                         SocketVelocitiesToCache;                           // 0x268(0x10)
-	TArray<class MovedActors*>                                   MovedActors;                                       // 0x278(0x10)
+	TArray<class Actor*>                                         MovedActors;                                       // 0x278(0x10)
 };
 
 
@@ -473,7 +473,7 @@ public:
 	Struct StringAssetReference                                  SubtitleFontName;                                  // 0xb0(0x10)
 	Class Font*                                                  HugeFont;                                          // 0xc0(0x8)
 	Struct StringAssetReference                                  HugeFontName;                                      // 0xc8(0x10)
-	TArray<class AdditionalFonts*>                               AdditionalFonts;                                   // 0xd8(0x10)
+	TArray<class Font*>                                          AdditionalFonts;                                   // 0xd8(0x10)
 	TArray<Str AdditionalFontNames>                              AdditionalFontNames;                               // 0xf0(0x10)
 	class                                                        ConsoleClass;                                      // 0x100(0x8)
 	Struct StringClassReference                                  ConsoleClassName;                                  // 0x108(0x10)
@@ -681,7 +681,7 @@ public:
 class GameInstance: public Object
 {
 public:
-	TArray<class LocalPlayers*>                                  LocalPlayers;                                      // 0x38(0x10)
+	TArray<class LocalPlayer*>                                   LocalPlayers;                                      // 0x38(0x10)
 	Class OnlineSession*                                         OnlineSession;                                     // 0x50(0x8)
 };
 
@@ -719,7 +719,7 @@ public:
 	class                                                        PlayerStateClass;                                  // 0x470(0x8)
 	class                                                        GameStateClass;                                    // 0x478(0x8)
 	Class GameState*                                             GameState;                                         // 0x480(0x8)
-	TArray<class InactivePlayerArray*>                           InactivePlayerArray;                               // 0x488(0x10)
+	TArray<class PlayerState*>                                   InactivePlayerArray;                               // 0x488(0x10)
 	TArray<Struct GameClassShortName>                            GameModeClassAliases;                              // 0x4a8(0x10)
 	float                                                        InactivePlayerStateLifeSpan;                       // 0x4b8(0x4)
 	bool                                                         bHandleDedicatedServerReplays;                     // 0x4bc(0x1)
@@ -832,7 +832,7 @@ public:
 	struct FName                                                 MatchState;                                        // 0x3e0(0x8)
 	struct FName                                                 PreviousMatchState;                                // 0x3e8(0x8)
 	int                                                          ElapsedTime;                                       // 0x3f0(0x4)
-	TArray<class PlayerArray*>                                   PlayerArray;                                       // 0x3f8(0x10)
+	TArray<class PlayerState*>                                   PlayerArray;                                       // 0x3f8(0x10)
 	float                                                        ReplicatedWorldTimeSeconds;                        // 0x408(0x4)
 	float                                                        ServerWorldTimeSecondsDelta;                       // 0x40c(0x4)
 	float                                                        ServerWorldTimeSecondsUpdateFrequency;             // 0x410(0x4)
@@ -916,7 +916,7 @@ public:
 	class                                                        PlayerCameraManagerClass;                          // 0x460(0x8)
 	bool                                                         bAutoManageActiveCameraTarget;                     // 0x468(0x1)
 	Struct Rotator                                               TargetViewRotation;                                // 0x46c(0xc)
-	TArray<class HiddenActors*>                                  HiddenActors;                                      // 0x488(0x10)
+	TArray<class Actor*>                                         HiddenActors;                                      // 0x488(0x10)
 	float                                                        LastSpectatorStateSynchTime;                       // 0x498(0x4)
 	Struct Vector                                                LastSpectatorSyncLocation;                         // 0x49c(0xc)
 	Struct Rotator                                               LastSpectatorSyncRotation;                         // 0x4a8(0xc)
@@ -1135,7 +1135,7 @@ public:
 	bool                                                         bShowHitBoxDebugInfo;                              // 0x3e0(0x1)
 	bool                                                         bShowOverlays;                                     // 0x3e0(0x1)
 	bool                                                         bEnableDebugTextShadow;                            // 0x3e0(0x1)
-	TArray<class PostRenderedActors*>                            PostRenderedActors;                                // 0x3e8(0x10)
+	TArray<class Actor*>                                         PostRenderedActors;                                // 0x3e8(0x10)
 	float                                                        LastHUDRenderTime;                                 // 0x3f8(0x4)
 	float                                                        RenderDelta;                                       // 0x3fc(0x4)
 	TArray<Struct FName>                                         DebugDisplay;                                      // 0x400(0x10)
@@ -1181,7 +1181,7 @@ public:
 class MeshComponent: public PrimitiveComponent
 {
 public:
-	TArray<class OverrideMaterials*>                             OverrideMaterials;                                 // 0x5b8(0x10)
+	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x5b8(0x10)
 };
 
 
@@ -1365,7 +1365,7 @@ public:
 	int                                                          EditorY;                                           // 0x90c(0x4)
 	int                                                          EditorPitch;                                       // 0x910(0x4)
 	int                                                          EditorYaw;                                         // 0x914(0x4)
-	TArray<class Expressions*>                                   Expressions;                                       // 0x918(0x10)
+	TArray<class MaterialExpression*>                            Expressions;                                       // 0x918(0x10)
 	TArray<Struct MaterialFunctionInfo>                          MaterialFunctionInfos;                             // 0x928(0x10)
 	TArray<Struct MaterialParameterCollectionInfo>               MaterialParameterCollectionInfos;                  // 0x938(0x10)
 	bool                                                         bCanMaskedBeAssumedOpaque;                         // 0x948(0x1)
@@ -1382,7 +1382,7 @@ public:
 	float                                                        RefractionDepthBias;                               // 0x95c(0x4)
 	Struct Guid                                                  StateId;                                           // 0x960(0x10)
 	int                                                          UnwrappedUVSet;                                    // 0x970(0x4)
-	TArray<class ExpressionTextureReferences*>                   ExpressionTextureReferences;                       // 0xa00(0x10)
+	TArray<class Texture*>                                       ExpressionTextureReferences;                       // 0xa00(0x10)
 };
 
 
@@ -1418,8 +1418,8 @@ class ParticleSystemComponent: public PrimitiveComponent
 {
 public:
 	Class ParticleSystem*                                        Template;                                          // 0x5b8(0x8)
-	TArray<class EmitterMaterials*>                              EmitterMaterials;                                  // 0x5c0(0x10)
-	TArray<class SkelMeshComponents*>                            SkelMeshComponents;                                // 0x5d0(0x10)
+	TArray<class MaterialInterface*>                             EmitterMaterials;                                  // 0x5c0(0x10)
+	TArray<class SkeletalMeshComponent*>                         SkelMeshComponents;                                // 0x5d0(0x10)
 	bool                                                         bResetOnDetach;                                    // 0x5e0(0x1)
 	bool                                                         bUpdateOnDedicatedServer;                          // 0x5e0(0x1)
 	TArray<Struct ParticleSysParam>                              InstanceParameters;                                // 0x5e8(0x10)
@@ -1438,7 +1438,7 @@ public:
 	byte                                                         LODMethod;                                         // 0x720(0x1)
 	bool                                                         bSkipUpdateDynamicDataDuringTick;                  // 0x724(0x1)
 	TArray<Struct MaterialRelevance>                             CachedViewRelevanceFlags;                          // 0x728(0x10)
-	TArray<class ReplayClips*>                                   ReplayClips;                                       // 0x740(0x10)
+	TArray<class ParticleSystemReplay*>                          ReplayClips;                                       // 0x740(0x10)
 	float                                                        CustomTimeDilation;                                // 0x7b0(0x4)
 	bool                                                         bUnbound;                                          // 0x7c8(0x1)
 };
@@ -1605,9 +1605,9 @@ class BlueprintGeneratedClass: public Class
 {
 public:
 	int                                                          NumReplicatedProperties;                           // 0x1c0(0x4)
-	TArray<class DynamicBindingObjects*>                         DynamicBindingObjects;                             // 0x1c8(0x10)
-	TArray<class ComponentTemplates*>                            ComponentTemplates;                                // 0x1d8(0x10)
-	TArray<class Timelines*>                                     Timelines;                                         // 0x1e8(0x10)
+	TArray<class DynamicBlueprintBinding*>                       DynamicBindingObjects;                             // 0x1c8(0x10)
+	TArray<class ActorComponent*>                                ComponentTemplates;                                // 0x1d8(0x10)
+	TArray<class TimelineTemplate*>                              Timelines;                                         // 0x1e8(0x10)
 	Class SimpleConstructionScript*                              SimpleConstructionScript;                          // 0x1f8(0x8)
 	Class InheritableComponentHandler*                           InheritableComponentHandler;                       // 0x200(0x8)
 	Class StructProperty*                                        UberGraphFramePointerProperty;                     // 0x208(0x8)
@@ -1648,18 +1648,18 @@ public:
 class NetConnection: public Player
 {
 public:
-	TArray<class Actor*>                                         Children;                                          // 0x50(0x10)
+	TArray<class ChildConnection*>                               Children;                                          // 0x50(0x10)
 	Class NetDriver*                                             Driver;                                            // 0x60(0x8)
 	Class PackageMap*                                            PackageMap;                                        // 0x68(0x8)
-	TArray<class OpenChannels*>                                  OpenChannels;                                      // 0x70(0x10)
-	TArray<class SentTemporaries*>                               SentTemporaries;                                   // 0x80(0x10)
+	TArray<class Channel*>                                       OpenChannels;                                      // 0x70(0x10)
+	TArray<class Actor*>                                         SentTemporaries;                                   // 0x80(0x10)
 	Class Actor*                                                 ViewTarget;                                        // 0x90(0x8)
 	Class Actor*                                                 OwningActor;                                       // 0x98(0x8)
 	int                                                          MaxPacket;                                         // 0xa0(0x4)
 	bool                                                         InternalAck;                                       // 0xa4(0x1)
 	double                                                       LastReceiveTime;                                   // 0x3a0(0x8)
 	int                                                          MaxDormantActorsCheckedFromRelevancy;              // 0x34468(0x4)
-	TArray<class DeferredCloseChannels*>                         DeferredCloseChannels;                             // 0x344c0(0x10)
+	TArray<class Channel*>                                       DeferredCloseChannels;                             // 0x344c0(0x10)
 };
 
 
@@ -1680,7 +1680,7 @@ public:
 	float                                                        InitialConnectTimeout;                             // 0x6c(0x4)
 	float                                                        ConnectionTimeout;                                 // 0x70(0x4)
 	Class NetConnection*                                         ServerConnection;                                  // 0x78(0x8)
-	TArray<class ClientConnections*>                             ClientConnections;                                 // 0x80(0x10)
+	TArray<class NetConnection*>                                 ClientConnections;                                 // 0x80(0x10)
 	Class World*                                                 World;                                             // 0x90(0x8)
 	class                                                        NetConnectionClass;                                // 0xc8(0x8)
 	Class Property*                                              RoleProperty;                                      // 0xd0(0x8)
@@ -1707,7 +1707,7 @@ public:
 class EdGraphNode: public Object
 {
 public:
-	TArray<class Pins*>                                          Pins;                                              // 0x28(0x10)
+	TArray<class EdGraphPin*>                                    Pins;                                              // 0x28(0x10)
 	int                                                          NodePosX;                                          // 0x38(0x4)
 	int                                                          NodePosY;                                          // 0x3c(0x4)
 	int                                                          NodeWidth;                                         // 0x40(0x4)
@@ -1737,8 +1737,8 @@ public:
 	Struct FString                                               AutogeneratedDefaultValue;                         // 0xb0(0x10)
 	Class Object*                                                DefaultObject;                                     // 0xc0(0x8)
 	Struct FText                                                 DefaultTextValue;                                  // 0xc8(0x38)
-	TArray<class LinkedTo*>                                      LinkedTo;                                          // 0x100(0x10)
-	TArray<class SubPins*>                                       SubPins;                                           // 0x110(0x10)
+	TArray<class EdGraphPin*>                                    LinkedTo;                                          // 0x100(0x10)
+	TArray<class EdGraphPin*>                                    SubPins;                                           // 0x110(0x10)
 	Class EdGraphPin*                                            ParentPin;                                         // 0x120(0x8)
 };
 
@@ -1793,8 +1793,8 @@ public:
 	bool                                                         bHasBeenRegenerated;                               // 0x68(0x1)
 	bool                                                         bIsRegeneratingOnLoad;                             // 0x68(0x1)
 	Class SimpleConstructionScript*                              SimpleConstructionScript;                          // 0x70(0x8)
-	TArray<class ComponentTemplates*>                            ComponentTemplates;                                // 0x78(0x10)
-	TArray<class Timelines*>                                     Timelines;                                         // 0x88(0x10)
+	TArray<class ActorComponent*>                                ComponentTemplates;                                // 0x78(0x10)
+	TArray<class TimelineTemplate*>                              Timelines;                                         // 0x88(0x10)
 	Class InheritableComponentHandler*                           InheritableComponentHandler;                       // 0x98(0x8)
 	byte                                                         BlueprintType;                                     // 0xa0(0x1)
 	int                                                          BlueprintSystemVersion;                            // 0xa4(0x4)
@@ -1891,14 +1891,14 @@ public:
 	Class GameState*                                             GameState;                                         // 0x58(0x8)
 	Class GameNetworkManager*                                    NetworkManager;                                    // 0x60(0x8)
 	Class PhysicsCollisionHandler*                               PhysicsCollisionHandler;                           // 0x68(0x8)
-	TArray<class ExtraReferencedObjects*>                        ExtraReferencedObjects;                            // 0x70(0x10)
-	TArray<class PerModuleDataObjects*>                          PerModuleDataObjects;                              // 0x80(0x10)
-	TArray<class StreamingLevels*>                               StreamingLevels;                                   // 0x90(0x10)
+	TArray<class Object*>                                        ExtraReferencedObjects;                            // 0x70(0x10)
+	TArray<class Object*>                                        PerModuleDataObjects;                              // 0x80(0x10)
+	TArray<class LevelStreaming*>                                StreamingLevels;                                   // 0x90(0x10)
 	Struct FString                                               StreamingLevelsPrefix;                             // 0xa0(0x10)
 	Class Level*                                                 CurrentLevelPendingVisibility;                     // 0xb0(0x8)
 	Class ParticleEventManager*                                  MyParticleEventManager;                            // 0xb8(0x8)
 	Class PhysicsVolume*                                         DefaultPhysicsVolume;                              // 0xc0(0x8)
-	TArray<class DirtyStreamingLevels*>                          DirtyStreamingLevels;                              // 0xc8(0x10)
+	TArray<class LevelStreaming*>                                DirtyStreamingLevels;                              // 0xc8(0x10)
 	struct FName                                                 Feature;                                           // 0xf4(0x8)
 	TArray<Struct FName>                                         FeatureReferences;                                 // 0x100(0x10)
 	bool                                                         ParticleLOD_bUseGameThread;                        // 0x110(0x1)
@@ -1909,10 +1909,10 @@ public:
 	Class GameMode*                                              AuthorityGameMode;                                 // 0x138(0x8)
 	Class AISystemBase*                                          AISystem;                                          // 0x140(0x8)
 	Class AvoidanceManager*                                      AvoidanceManager;                                  // 0x148(0x8)
-	TArray<class Levels*>                                        Levels;                                            // 0x150(0x10)
+	TArray<class Level*>                                         Levels;                                            // 0x150(0x10)
 	Class Level*                                                 CurrentLevel;                                      // 0x1b0(0x8)
 	Class GameInstance*                                          OwningGameInstance;                                // 0x1c0(0x8)
-	TArray<class ParameterCollectionInstances*>                  ParameterCollectionInstances;                      // 0x1c8(0x10)
+	TArray<class MaterialParameterCollectionInstance*>           ParameterCollectionInstances;                      // 0x1c8(0x10)
 	Class WorldComposition*                                      WorldComposition;                                  // 0x6f8(0x8)
 	bool                                                         bAreConstraintsDirty;                              // 0x73d(0x1)
 };
@@ -1925,11 +1925,11 @@ public:
 	Class LevelActorContainer*                                   ActorCluster;                                      // 0xc8(0x8)
 	Class World*                                                 OwningWorld;                                       // 0xd0(0x8)
 	Class Model*                                                 Model;                                             // 0xd8(0x8)
-	TArray<class ModelComponents*>                               ModelComponents;                                   // 0xe0(0x10)
+	TArray<class ModelComponent*>                                ModelComponents;                                   // 0xe0(0x10)
 	Class LevelScriptActor*                                      LevelScriptActor;                                  // 0xf0(0x8)
 	Class NavigationObjectBase*                                  NavListStart;                                      // 0xf8(0x8)
 	Class NavigationObjectBase*                                  NavListEnd;                                        // 0x100(0x8)
-	TArray<class NavDataChunks*>                                 NavDataChunks;                                     // 0x108(0x10)
+	TArray<class NavigationDataChunk*>                           NavDataChunks;                                     // 0x108(0x10)
 	float                                                        LightmapTotalSize;                                 // 0x118(0x4)
 	float                                                        ShadowmapTotalSize;                                // 0x11c(0x4)
 	TArray<Struct Vector>                                        StaticNavigableGeometry;                           // 0x120(0x10)
@@ -2139,8 +2139,8 @@ public:
 class PrecomputedVisibilityOverrideVolume: public Volume
 {
 public:
-	TArray<class OverrideVisibleActors*>                         OverrideVisibleActors;                             // 0x400(0x10)
-	TArray<class OverrideInvisibleActors*>                       OverrideInvisibleActors;                           // 0x410(0x10)
+	TArray<class Actor*>                                         OverrideVisibleActors;                             // 0x400(0x10)
+	TArray<class Actor*>                                         OverrideInvisibleActors;                           // 0x410(0x10)
 	TArray<Struct FName>                                         OverrideInvisibleLevels;                           // 0x420(0x10)
 };
 
@@ -2233,17 +2233,17 @@ public:
 	Struct CameraCacheEntry                                      LastFrameCameraCache;                              // 0x9f0(0x5b0)
 	Struct TViewTarget                                           ViewTarget;                                        // 0xfa0(0x5c0)
 	Struct TViewTarget                                           PendingViewTarget;                                 // 0x1560(0x5c0)
-	TArray<class ModifierList*>                                  ModifierList;                                      // 0x1b38(0x10)
+	TArray<class CameraModifier*>                                ModifierList;                                      // 0x1b38(0x10)
 	TArray<Class DefaultModifiers>                               DefaultModifiers;                                  // 0x1b48(0x10)
 	float                                                        FreeCamDistance;                                   // 0x1b58(0x4)
 	Struct Vector                                                FreeCamOffset;                                     // 0x1b5c(0xc)
 	Struct Vector                                                ViewTargetOffset;                                  // 0x1b68(0xc)
-	TArray<class CameraLensEffects*>                             CameraLensEffects;                                 // 0x1b88(0x10)
+	TArray<class EmitterCameraLensEffectBase*>                   CameraLensEffects;                                 // 0x1b88(0x10)
 	Class CameraModifier_CameraShake*                            CachedCameraShakeMod;                              // 0x1b98(0x8)
 	Class CameraAnimInst*                                        AnimInstPool;                                      // 0x1ba0(0x8)
 	TArray<Struct PostProcessSettings>                           PostProcessBlendCache;                             // 0x1be0(0x10)
-	TArray<class ActiveAnims*>                                   ActiveAnims;                                       // 0x1c00(0x10)
-	TArray<class FreeAnims*>                                     FreeAnims;                                         // 0x1c10(0x10)
+	TArray<class CameraAnimInst*>                                ActiveAnims;                                       // 0x1c00(0x10)
+	TArray<class CameraAnimInst*>                                FreeAnims;                                         // 0x1c10(0x10)
 	Class CameraActor*                                           AnimCameraActor;                                   // 0x1c20(0x8)
 	bool                                                         bIsOrthographic;                                   // 0x1c28(0x1)
 	bool                                                         bUseClientSideCameraUpdates;                       // 0x1c28(0x1)
@@ -2567,10 +2567,10 @@ class LODActor: public Actor
 {
 public:
 	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3c8(0x8)
-	TArray<class SubActors*>                                     SubActors;                                         // 0x3d0(0x10)
+	TArray<class Actor*>                                         SubActors;                                         // 0x3d0(0x10)
 	float                                                        LODDrawDistance;                                   // 0x3e0(0x4)
 	int                                                          LodLevel;                                          // 0x3e4(0x4)
-	TArray<class SubObjects*>                                    SubObjects;                                        // 0x3e8(0x10)
+	TArray<class Object*>                                        SubObjects;                                        // 0x3e8(0x10)
 };
 
 
@@ -2578,7 +2578,7 @@ public:
 class MaterialInstanceActor: public Actor
 {
 public:
-	TArray<class TargetActors*>                                  TargetActors;                                      // 0x3c8(0x10)
+	TArray<class Actor*>                                         TargetActors;                                      // 0x3c8(0x10)
 };
 
 
@@ -2607,7 +2607,7 @@ public:
 	bool                                                         bHideHud;                                          // 0x3ec(0x1)
 	TArray<Struct InterpGroupActorInfo>                          GroupActorInfos;                                   // 0x3f0(0x10)
 	bool                                                         bShouldShowGore;                                   // 0x400(0x1)
-	TArray<class GroupInst*>                                     GroupInst;                                         // 0x408(0x10)
+	TArray<class InterpGroupInst*>                               GroupInst;                                         // 0x408(0x10)
 	TArray<Struct CameraCutInfo>                                 CameraCuts;                                        // 0x418(0x10)
 	bool                                                         bIsPlaying;                                        // 0x428(0x1)
 	bool                                                         bReversePlayback;                                  // 0x428(0x1)
@@ -2833,7 +2833,7 @@ public:
 	float                                                        UpdateTime_Delta;                                  // 0x30(0x4)
 	float                                                        WarmUpTime;                                        // 0x34(0x4)
 	float                                                        WarmupTickRate;                                    // 0x38(0x4)
-	TArray<class Emitters*>                                      Emitters;                                          // 0x40(0x10)
+	TArray<class ParticleEmitter*>                               Emitters;                                          // 0x40(0x10)
 	Class ParticleSystemComponent*                               PreviewComponent;                                  // 0x50(0x8)
 	Class InterpCurveEdSetup*                                    CurveEdSetup;                                      // 0x58(0x8)
 	bool                                                         bOrientZAxisTowardCamera;                          // 0x60(0x1)
@@ -2921,11 +2921,11 @@ public:
 	Class PhysicsAsset*                                          DeformablesPhysicsAsset;                           // 0xe8(0x8)
 	float                                                        StreamingDistanceMultiplier;                       // 0xf0(0x4)
 	float                                                        StreamingDiscardedTexelRatios;                     // 0xf4(0x4)
-	TArray<class MorphTargets*>                                  MorphTargets;                                      // 0xf8(0x10)
-	TArray<class MeshPatchAssets*>                               MeshPatchAssets;                                   // 0x108(0x10)
+	TArray<class MorphTarget*>                                   MorphTargets;                                      // 0xf8(0x10)
+	TArray<class MeshPatchAsset*>                                MeshPatchAssets;                                   // 0x108(0x10)
 	TArray<Struct ClothingAssetData>                             ClothingAssets;                                    // 0x1f0(0x10)
 	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0x210(0x10)
-	TArray<class Sockets*>                                       Sockets;                                           // 0x228(0x10)
+	TArray<class SkeletalMeshSocket*>                            Sockets;                                           // 0x228(0x10)
 };
 
 
@@ -2934,7 +2934,7 @@ class AnimationAsset: public Object
 {
 public:
 	Class Skeleton*                                              Skeleton;                                          // 0x28(0x8)
-	TArray<class MetaData*>                                      MetaData;                                          // 0x40(0x10)
+	TArray<class AnimMetaData*>                                  MetaData;                                          // 0x40(0x10)
 };
 
 
@@ -3113,7 +3113,7 @@ class Skeleton: public Object
 public:
 	TArray<Struct BoneNode>                                      BoneTree;                                          // 0x28(0x10)
 	TArray<Struct SkeletonToMeshLinkup>                          LinkupCache;                                       // 0xb8(0x10)
-	TArray<class Sockets*>                                       Sockets;                                           // 0xc8(0x10)
+	TArray<class SkeletalMeshSocket*>                            Sockets;                                           // 0xc8(0x10)
 	Struct SmartNameContainer                                    SmartNames;                                        // 0x128(0x50)
 	TArray<Struct AnimSlotGroup>                                 SlotGroups;                                        // 0x178(0x10)
 };
@@ -3307,7 +3307,7 @@ public:
 class ComponentAggregatorComponent: public ActorComponent
 {
 public:
-	TArray<class Aggregatables*>                                 Aggregatables;                                     // 0xd0(0x10)
+	TArray<class Object*>                                        Aggregatables;                                     // 0xd0(0x10)
 };
 
 
@@ -3341,8 +3341,8 @@ public:
 	float                                                        ActiveTilesUpdateInterval;                         // 0x44(0x4)
 	TArray<Struct NavDataConfig>                                 SupportedAgents;                                   // 0x48(0x10)
 	float                                                        DirtyAreasUpdateFreq;                              // 0x58(0x4)
-	TArray<class NavDataSet*>                                    NavDataSet;                                        // 0x60(0x10)
-	TArray<class NavDataRegistrationQueue*>                      NavDataRegistrationQueue;                          // 0x70(0x10)
+	TArray<class NavigationData*>                                NavDataSet;                                        // 0x60(0x10)
+	TArray<class NavigationData*>                                NavDataRegistrationQueue;                          // 0x70(0x10)
 	byte                                                         OperationMode;                                     // 0x1cc(0x1)
 	Struct StringAssetReference                                  InstancedNavMeshesDataAsset;                       // 0x3c0(0x10)
 	Class InstancedNavMeshesDataAsset*                           InstancedNavMeshesData;                            // 0x3d0(0x8)
@@ -3971,7 +3971,7 @@ class StaticMesh: public Object
 {
 public:
 	int                                                          MinLOD;                                            // 0x40(0x4)
-	TArray<class Materials*>                                     Materials;                                         // 0x48(0x10)
+	TArray<class MaterialInterface*>                             Materials;                                         // 0x48(0x10)
 	int                                                          LightMapResolution;                                // 0x58(0x4)
 	int                                                          LightMapCoordinateIndex;                           // 0x5c(0x4)
 	Class BodySetup*                                             BodySetup;                                         // 0x60(0x8)
@@ -3981,7 +3981,7 @@ public:
 	bool                                                         bHasNavigationData;                                // 0x6c(0x1)
 	float                                                        StreamingDistanceMultiplier;                       // 0x70(0x4)
 	float                                                        LpvBiasMultiplier;                                 // 0x74(0x4)
-	TArray<class Sockets*>                                       Sockets;                                           // 0xa8(0x10)
+	TArray<class StaticMeshSocket*>                              Sockets;                                           // 0xa8(0x10)
 	Struct Vector                                                PositiveBoundsExtension;                           // 0xd0(0xc)
 	Struct Vector                                                NegativeBoundsExtension;                           // 0xdc(0xc)
 	Struct BoxSphereBounds                                       ExtendedBounds;                                    // 0xe8(0x1c)
@@ -4046,7 +4046,7 @@ public:
 	Class Texture*                                               Texture;                                           // 0x660(0x8)
 	Class Texture*                                               NormalTexture;                                     // 0x668(0x8)
 	Class TextureRenderTarget2D*                                 WaterMaskTexture;                                  // 0x670(0x8)
-	TArray<class OriginalMaterials*>                             OriginalMaterials;                                 // 0x690(0x10)
+	TArray<class MaterialInterface*>                             OriginalMaterials;                                 // 0x690(0x10)
 	TArray<Struct FlatWaterMeshTextureOverride>                  TextureOverrides;                                  // 0x6a0(0x10)
 };
 
@@ -4833,7 +4833,7 @@ public:
 class WorldComposition: public Object
 {
 public:
-	TArray<class TilesStreaming*>                                TilesStreaming;                                    // 0x98(0x10)
+	TArray<class LevelStreaming*>                                TilesStreaming;                                    // 0x98(0x10)
 	double                                                       TilesStreamingTimeThreshold;                       // 0xa8(0x8)
 	bool                                                         bLoadAllTilesDuringCinematic;                      // 0xb0(0x1)
 	bool                                                         bRebaseOriginIn3DSpace;                            // 0xb1(0x1)
@@ -5020,7 +5020,7 @@ public:
 class CameraModifier_CameraShake: public CameraModifier
 {
 public:
-	TArray<class ActiveShakes*>                                  ActiveShakes;                                      // 0x48(0x10)
+	TArray<class CameraShake*>                                   ActiveShakes;                                      // 0x48(0x10)
 	float                                                        SplitScreenShakeScale;                             // 0x58(0x4)
 };
 
@@ -5059,7 +5059,7 @@ class ActorChannel: public Channel
 {
 public:
 	Class Actor*                                                 Actor;                                             // 0x68(0x8)
-	TArray<class ObjectsRequiredForQueuedBunches*>               ObjectsRequiredForQueuedBunches;                   // 0x158(0x10)
+	TArray<class Object*>                                        ObjectsRequiredForQueuedBunches;                   // 0x158(0x10)
 };
 
 
@@ -5190,7 +5190,7 @@ public:
 	int                                                          RandomSeed;                                        // 0x50(0x4)
 	TArray<Struct Vector>                                        VoronoiSites;                                      // 0x58(0x10)
 	int                                                          OriginalSubmeshCount;                              // 0x68(0x4)
-	TArray<class Materials*>                                     Materials;                                         // 0x70(0x10)
+	TArray<class MaterialInterface*>                             Materials;                                         // 0x70(0x10)
 	TArray<Struct DestructibleChunkParameters>                   ChunkParameters;                                   // 0x80(0x10)
 	TArray<Str MaterialNames>                                    MaterialNames;                                     // 0x90(0x10)
 };
@@ -5256,7 +5256,7 @@ public:
 	byte                                                         UIScaleRule;                                       // 0xa4(0x1)
 	Struct StringClassReference                                  CustomScalingRuleClass;                            // 0xa8(0x10)
 	Struct RuntimeFloatCurve                                     UIScaleCurve;                                      // 0xb8(0x80)
-	TArray<class CursorClasses*>                                 CursorClasses;                                     // 0x138(0x10)
+	TArray<class Object*>                                        CursorClasses;                                     // 0x138(0x10)
 	class                                                        CustomScalingRuleClassInstance;                    // 0x148(0x8)
 	Class DPICustomScalingRule*                                  CustomScalingRule;                                 // 0x150(0x8)
 };
@@ -5422,7 +5422,7 @@ public:
 class DeviceProfileManager: public Object
 {
 public:
-	TArray<class Profiles*>                                      Profiles;                                          // 0x28(0x10)
+	TArray<class Object*>                                        Profiles;                                          // 0x28(0x10)
 };
 
 
@@ -5679,7 +5679,7 @@ class EdGraph: public Object
 {
 public:
 	class                                                        Schema;                                            // 0x28(0x8)
-	TArray<class Nodes*>                                         Nodes;                                             // 0x30(0x10)
+	TArray<class EdGraphNode*>                                   Nodes;                                             // 0x30(0x10)
 	bool                                                         bEditable;                                         // 0x40(0x1)
 	bool                                                         bAllowDeletion;                                    // 0x40(0x1)
 	bool                                                         bAllowRenaming;                                    // 0x40(0x1)
@@ -5778,7 +5778,7 @@ class Font: public Object
 public:
 	byte                                                         FontCacheType;                                     // 0x30(0x1)
 	TArray<Struct FontCharacter>                                 Characters;                                        // 0x38(0x10)
-	TArray<class Textures*>                                      Textures;                                          // 0x48(0x10)
+	TArray<class Texture2D*>                                     Textures;                                          // 0x48(0x10)
 	int                                                          IsRemapped;                                        // 0x58(0x4)
 	float                                                        EmScale;                                           // 0x5c(0x4)
 	float                                                        Ascent;                                            // 0x60(0x4)
@@ -5919,7 +5919,7 @@ class InterpData: public Object
 public:
 	float                                                        InterpLength;                                      // 0x28(0x4)
 	float                                                        PathBuildTime;                                     // 0x2c(0x4)
-	TArray<class InterpGroups*>                                  InterpGroups;                                      // 0x30(0x10)
+	TArray<class InterpGroup*>                                   InterpGroups;                                      // 0x30(0x10)
 	Class InterpCurveEdSetup*                                    CurveEdSetup;                                      // 0x40(0x8)
 	float                                                        EdSectionStart;                                    // 0x48(0x4)
 	float                                                        EdSectionEnd;                                      // 0x4c(0x4)
@@ -5955,7 +5955,7 @@ public:
 class InterpGroup: public Object
 {
 public:
-	TArray<class InterpTracks*>                                  InterpTracks;                                      // 0x30(0x10)
+	TArray<class InterpTrack*>                                   InterpTracks;                                      // 0x30(0x10)
 	struct FName                                                 GroupName;                                         // 0x40(0x8)
 	Struct Color                                                 GroupColor;                                        // 0x48(0x4)
 	bool                                                         bCollapsed;                                        // 0x4c(0x1)
@@ -5988,7 +5988,7 @@ class InterpGroupInst: public Object
 public:
 	Class InterpGroup*                                           Group;                                             // 0x28(0x8)
 	Class Actor*                                                 GroupActor;                                        // 0x30(0x8)
-	TArray<class TrackInst*>                                     TrackInst;                                         // 0x38(0x10)
+	TArray<class InterpTrackInst*>                               TrackInst;                                         // 0x38(0x10)
 };
 
 
@@ -6010,7 +6010,7 @@ public:
 class InterpTrack: public Object
 {
 public:
-	TArray<class SubTracks*>                                     SubTracks;                                         // 0x38(0x10)
+	TArray<class InterpTrack*>                                   SubTracks;                                         // 0x38(0x10)
 	class                                                        TrackInstClass;                                    // 0x48(0x8)
 	byte                                                         ActiveCondition;                                   // 0x50(0x1)
 	Struct FString                                               TrackTitle;                                        // 0x58(0x10)
@@ -6097,7 +6097,7 @@ public:
 class InterpTrackFloatMaterialParam: public InterpTrackFloatBase
 {
 public:
-	TArray<class TargetMaterials*>                               TargetMaterials;                                   // 0x90(0x10)
+	TArray<class MaterialInterface*>                             TargetMaterials;                                   // 0x90(0x10)
 	struct FName                                                 ParamName;                                         // 0xa0(0x8)
 };
 
@@ -6233,7 +6233,7 @@ public:
 class InterpTrackVectorMaterialParam: public InterpTrackVectorBase
 {
 public:
-	TArray<class TargetMaterials*>                               TargetMaterials;                                   // 0x90(0x10)
+	TArray<class MaterialInterface*>                             TargetMaterials;                                   // 0x90(0x10)
 	struct FName                                                 ParamName;                                         // 0xa0(0x8)
 };
 
@@ -6322,7 +6322,7 @@ public:
 class InterpTrackInstFloatMaterialParam: public InterpTrackInst
 {
 public:
-	TArray<class MaterialInstances*>                             MaterialInstances;                                 // 0x28(0x10)
+	TArray<class MaterialInstanceDynamic*>                       MaterialInstances;                                 // 0x28(0x10)
 	TArray<Float ResetFloats>                                    ResetFloats;                                       // 0x38(0x10)
 	TArray<Struct PrimitiveMaterialRef>                          PrimitiveMaterialRefs;                             // 0x48(0x10)
 	Class InterpTrackFloatMaterialParam*                         InstancedTrack;                                    // 0x58(0x8)
@@ -6427,7 +6427,7 @@ public:
 class InterpTrackInstVectorMaterialParam: public InterpTrackInst
 {
 public:
-	TArray<class MaterialInstances*>                             MaterialInstances;                                 // 0x28(0x10)
+	TArray<class MaterialInstanceDynamic*>                       MaterialInstances;                                 // 0x28(0x10)
 	TArray<Struct Vector>                                        ResetVectors;                                      // 0x38(0x10)
 	TArray<Struct PrimitiveMaterialRef>                          PrimitiveMaterialRefs;                             // 0x48(0x10)
 	Class InterpTrackVectorMaterialParam*                        InstancedTrack;                                    // 0x58(0x8)
@@ -6466,7 +6466,7 @@ public:
 class LevelActorContainer: public Object
 {
 public:
-	TArray<class Actors*>                                        Actors;                                            // 0x28(0x10)
+	TArray<class Actor*>                                         Actors;                                            // 0x28(0x10)
 };
 
 
@@ -6486,7 +6486,7 @@ public:
 	bool                                                         bDisableDistanceStreaming;                         // 0xc4(0x1)
 	bool                                                         bDrawOnLevelStatusMap;                             // 0xc4(0x1)
 	Struct LinearColor                                           LevelColor;                                        // 0xc8(0x10)
-	TArray<class EditorStreamingVolumes*>                        EditorStreamingVolumes;                            // 0xd8(0x10)
+	TArray<class LevelStreamingVolume*>                          EditorStreamingVolumes;                            // 0xd8(0x10)
 	float                                                        MinTimeBetweenVolumeUnloadRequests;                // 0xe8(0x4)
 	TArray<Str Keywords>                                         Keywords;                                          // 0xf0(0x10)
 	Class Level*                                                 LoadedLevel;                                       // 0x200(0x8)
@@ -7858,7 +7858,7 @@ public:
 	Struct FString                                               Description;                                       // 0x38(0x10)
 	bool                                                         bExposeToLibrary;                                  // 0x48(0x1)
 	TArray<Struct FText>                                         LibraryCategoriesText;                             // 0x50(0x10)
-	TArray<class FunctionExpressions*>                           FunctionExpressions;                               // 0x60(0x10)
+	TArray<class MaterialExpression*>                            FunctionExpressions;                               // 0x60(0x10)
 	bool                                                         bReentrantFlag;                                    // 0x70(0x1)
 };
 
@@ -8084,7 +8084,7 @@ class ObjectLibrary: public Object
 public:
 	class                                                        ObjectBaseClass;                                   // 0x28(0x8)
 	bool                                                         bHasBlueprintClasses;                              // 0x30(0x1)
-	TArray<class Objects*>                                       Objects;                                           // 0x38(0x10)
+	TArray<class Object*>                                        Objects;                                           // 0x38(0x10)
 	TArray<Weakclass WeakObjects>                                WeakObjects;                                       // 0x48(0x10)
 	bool                                                         bUseWeakReferences;                                // 0x58(0x1)
 	bool                                                         bIsFullyLoaded;                                    // 0x59(0x1)
@@ -8095,7 +8095,7 @@ public:
 class ObjectReferencer: public Object
 {
 public:
-	TArray<class ReferencedObjects*>                             ReferencedObjects;                                 // 0x28(0x10)
+	TArray<class Object*>                                        ReferencedObjects;                                 // 0x28(0x10)
 };
 
 
@@ -8113,7 +8113,7 @@ public:
 	struct FName                                                 EmitterName;                                       // 0x28(0x8)
 	int                                                          SubUVDataOffset;                                   // 0x30(0x4)
 	byte                                                         EmitterRenderMode;                                 // 0x34(0x1)
-	TArray<class LODLevels*>                                     LODLevels;                                         // 0x38(0x10)
+	TArray<class ParticleLODLevel*>                              LODLevels;                                         // 0x38(0x10)
 	bool                                                         ConvertedModules;                                  // 0x48(0x1)
 	int                                                          PeakActiveParticles;                               // 0x4c(0x4)
 	int                                                          InitialAllocationCount;                            // 0x50(0x4)
@@ -8127,7 +8127,7 @@ public:
 	bool                                                         bDisabledLODsKeepEmitterAlive;                     // 0x60(0x1)
 	bool                                                         bHasAnyEnabledLODs;                                // 0x60(0x1)
 	bool                                                         bHasAnyEnabledLODsValid;                           // 0x60(0x1)
-	TArray<class ModulesNeedingInstanceData*>                    ModulesNeedingInstanceData;                        // 0xa0(0x10)
+	TArray<class ParticleModule*>                                ModulesNeedingInstanceData;                        // 0xa0(0x10)
 };
 
 
@@ -8145,15 +8145,15 @@ public:
 	int                                                          Level;                                             // 0x28(0x4)
 	bool                                                         bEnabled;                                          // 0x2c(0x1)
 	Class ParticleModuleRequired*                                RequiredModule;                                    // 0x30(0x8)
-	TArray<class Modules*>                                       Modules;                                           // 0x38(0x10)
+	TArray<class ParticleModule*>                                Modules;                                           // 0x38(0x10)
 	Class ParticleModule*                                        TypeDataModule;                                    // 0x48(0x8)
 	Class ParticleModuleSpawn*                                   SpawnModule;                                       // 0x50(0x8)
 	Class ParticleModuleEventGenerator*                          EventGenerator;                                    // 0x58(0x8)
-	TArray<class SpawningModules*>                               SpawningModules;                                   // 0x60(0x10)
-	TArray<class SpawnModules*>                                  SpawnModules;                                      // 0x70(0x10)
-	TArray<class UpdateModules*>                                 UpdateModules;                                     // 0x80(0x10)
-	TArray<class OrbitModules*>                                  OrbitModules;                                      // 0x90(0x10)
-	TArray<class EventReceiverModules*>                          EventReceiverModules;                              // 0xa0(0x10)
+	TArray<class ParticleModuleSpawnBase*>                       SpawningModules;                                   // 0x60(0x10)
+	TArray<class ParticleModule*>                                SpawnModules;                                      // 0x70(0x10)
+	TArray<class ParticleModule*>                                UpdateModules;                                     // 0x80(0x10)
+	TArray<class ParticleModuleOrbit*>                           OrbitModules;                                      // 0x90(0x10)
+	TArray<class ParticleModuleEventReceiverBase*>               EventReceiverModules;                              // 0xa0(0x10)
 	bool                                                         ConvertedModules;                                  // 0xb0(0x1)
 	int                                                          PeakActiveParticles;                               // 0xb4(0x4)
 };
@@ -8944,7 +8944,7 @@ public:
 class ParticleModuleMeshMaterial: public ParticleModuleMaterialBase
 {
 public:
-	TArray<class MeshMaterials*>                                 MeshMaterials;                                     // 0x50(0x10)
+	TArray<class MaterialInterface*>                             MeshMaterials;                                     // 0x50(0x10)
 };
 
 
@@ -9500,11 +9500,11 @@ public:
 	bool                                                         RenderDirectLine;                                  // 0x130(0x1)
 	bool                                                         RenderLines;                                       // 0x130(0x1)
 	bool                                                         RenderTessellation;                                // 0x130(0x1)
-	TArray<class LOD_BeamModule_Source*>                         LOD_BeamModule_Source;                             // 0x138(0x10)
-	TArray<class LOD_BeamModule_Target*>                         LOD_BeamModule_Target;                             // 0x148(0x10)
-	TArray<class LOD_BeamModule_Noise*>                          LOD_BeamModule_Noise;                              // 0x158(0x10)
-	TArray<class LOD_BeamModule_SourceModifier*>                 LOD_BeamModule_SourceModifier;                     // 0x168(0x10)
-	TArray<class LOD_BeamModule_TargetModifier*>                 LOD_BeamModule_TargetModifier;                     // 0x178(0x10)
+	TArray<class ParticleModuleBeamSource*>                      LOD_BeamModule_Source;                             // 0x138(0x10)
+	TArray<class ParticleModuleBeamTarget*>                      LOD_BeamModule_Target;                             // 0x148(0x10)
+	TArray<class ParticleModuleBeamNoise*>                       LOD_BeamModule_Noise;                              // 0x158(0x10)
+	TArray<class ParticleModuleBeamModifier*>                    LOD_BeamModule_SourceModifier;                     // 0x168(0x10)
+	TArray<class ParticleModuleBeamModifier*>                    LOD_BeamModule_TargetModifier;                     // 0x178(0x10)
 };
 
 
@@ -9800,7 +9800,7 @@ class PhysicsAsset: public Object
 public:
 	TArray<class BodySetup*>                                     BodySetup;                                         // 0x28(0x10)
 	TArray<Int BoundsBodies>                                     BoundsBodies;                                      // 0x38(0x10)
-	TArray<class ConstraintSetup*>                               ConstraintSetup;                                   // 0x48(0x10)
+	TArray<class PhysicsConstraintTemplate*>                     ConstraintSetup;                                   // 0x48(0x10)
 };
 
 
@@ -10008,7 +10008,7 @@ public:
 class SimpleConstructionScript: public Object
 {
 public:
-	TArray<class RootNodes*>                                     RootNodes;                                         // 0x28(0x10)
+	TArray<class SCS_Node*>                                      RootNodes;                                         // 0x28(0x10)
 	Class SCS_Node*                                              DefaultSceneRootNode;                              // 0x38(0x8)
 };
 
@@ -10024,7 +10024,7 @@ public:
 	struct FName                                                 ParentComponentOwnerClassName;                     // 0x48(0x8)
 	bool                                                         bIsParentComponentNative;                          // 0x50(0x1)
 	bool                                                         ServerMigrationFlagSet;                            // 0x51(0x1)
-	TArray<class ChildNodes*>                                    ChildNodes;                                        // 0x58(0x10)
+	TArray<class SCS_Node*>                                      ChildNodes;                                        // 0x58(0x10)
 	TArray<Struct BPVariableMetaDataEntry>                       MetaDataArray;                                     // 0x68(0x10)
 	Struct Guid                                                  VariableGuid;                                      // 0x78(0x10)
 };
@@ -10142,7 +10142,7 @@ class SoundClass: public Object
 {
 public:
 	Struct SoundClassProperties                                  Properties;                                        // 0x28(0x24)
-	TArray<class ChildClasses*>                                  ChildClasses;                                      // 0x50(0x10)
+	TArray<class SoundClass*>                                    ChildClasses;                                      // 0x50(0x10)
 	TArray<Struct PassiveSoundMixModifier>                       PassiveSoundMixModifiers;                          // 0x60(0x10)
 	Class SoundClass*                                            ParentClass;                                       // 0x70(0x8)
 };
@@ -10167,7 +10167,7 @@ public:
 class SoundNode: public Object
 {
 public:
-	TArray<class ChildNodes*>                                    ChildNodes;                                        // 0x28(0x10)
+	TArray<class SoundNode*>                                     ChildNodes;                                        // 0x28(0x10)
 };
 
 

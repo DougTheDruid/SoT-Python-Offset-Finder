@@ -17,7 +17,7 @@ MovieScene:
   - Name: MasterTracks
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<class MasterTracks*>
+    Type: TArray<class MovieSceneTrack*>
   - Name: CameraCutTrack
     Offset: '0xc0'
     Size: '0x8'
@@ -95,11 +95,11 @@ MovieSceneFolder:
   - Name: ChildFolders
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class ChildFolders*>
+    Type: TArray<class MovieSceneFolder*>
   - Name: ChildMasterTracks
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class ChildMasterTracks*>
+    Type: TArray<class MovieSceneTrack*>
   - Name: ChildObjectBindingStrings
     Offset: '0x50'
     Size: '0x10'

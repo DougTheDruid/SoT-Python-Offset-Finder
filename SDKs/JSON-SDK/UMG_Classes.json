@@ -365,7 +365,7 @@
       },
       {
         "Name": "NativeBindings",
-        "Type": "TArray<class NativeBindings*>",
+        "Type": "TArray<class PropertyBinding*>",
         "Size": "0x10",
         "Offset": "0x128"
       }
@@ -403,13 +403,13 @@
       },
       {
         "Name": "ActiveSequencePlayers",
-        "Type": "TArray<class ActiveSequencePlayers*>",
+        "Type": "TArray<class UMGSequencePlayer*>",
         "Size": "0x10",
         "Offset": "0x1b0"
       },
       {
         "Name": "StoppedSequencePlayers",
-        "Type": "TArray<class StoppedSequencePlayers*>",
+        "Type": "TArray<class UMGSequencePlayer*>",
         "Size": "0x10",
         "Offset": "0x1c0"
       },
@@ -925,7 +925,7 @@
     "Attributes": [
       {
         "Name": "Items",
-        "Type": "TArray<class Items*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x138"
       }
@@ -1392,7 +1392,7 @@
     "Attributes": [
       {
         "Name": "Slots",
-        "Type": "TArray<class Slots*>",
+        "Type": "TArray<class PanelSlot*>",
         "Size": "0x10",
         "Offset": "0x138"
       }
@@ -2059,7 +2059,7 @@
       },
       {
         "Name": "Decorators",
-        "Type": "TArray<class Decorators*>",
+        "Type": "TArray<class RichTextBlockDecorator*>",
         "Size": "0x10",
         "Offset": "0x1f0"
       }
@@ -2304,7 +2304,7 @@
       },
       {
         "Name": "Items",
-        "Type": "TArray<class Items*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x140"
       },
@@ -2336,7 +2336,7 @@
       },
       {
         "Name": "Items",
-        "Type": "TArray<class Items*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x140"
       },
@@ -2512,7 +2512,7 @@
       },
       {
         "Name": "Animations",
-        "Type": "TArray<class Animations*>",
+        "Type": "TArray<class WidgetAnimation*>",
         "Size": "0x10",
         "Offset": "0x240"
       },
@@ -2748,7 +2748,7 @@
       },
       {
         "Name": "AllWidgets",
-        "Type": "TArray<class AllWidgets*>",
+        "Type": "TArray<class Widget*>",
         "Size": "0x10",
         "Offset": "0x30"
       }

@@ -473,7 +473,7 @@
       },
       {
         "Name": "OverrideMaterials",
-        "Type": "TArray<class OverrideMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x368"
       },

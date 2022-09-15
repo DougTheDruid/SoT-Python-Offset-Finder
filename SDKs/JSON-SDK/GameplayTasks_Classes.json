@@ -69,13 +69,13 @@
     "Attributes": [
       {
         "Name": "SimulatedTasks",
-        "Type": "TArray<class SimulatedTasks*>",
+        "Type": "TArray<class GameplayTask*>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "TaskPriorityQueue",
-        "Type": "TArray<class TaskPriorityQueue*>",
+        "Type": "TArray<class GameplayTask*>",
         "Size": "0x10",
         "Offset": "0xe0"
       }

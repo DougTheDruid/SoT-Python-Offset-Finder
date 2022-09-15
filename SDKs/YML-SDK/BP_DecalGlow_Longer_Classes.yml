@@ -17,7 +17,7 @@ BP_DecalGlow_Longer_C:
   - Name: DecalMaterials
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class DecalMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: Reveal Duration
     Offset: '0x3f8'
     Size: '0x4'

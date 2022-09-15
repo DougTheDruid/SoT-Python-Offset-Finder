@@ -322,7 +322,7 @@
       },
       {
         "Name": "ValidatorEQSystems",
-        "Type": "TArray<class ValidatorEQSystems*>",
+        "Type": "TArray<class EnvQuery*>",
         "Size": "0x10",
         "Offset": "0xe8"
       },

@@ -50,7 +50,7 @@
       },
       {
         "Name": "OneShotEvents",
-        "Type": "TArray<class OneShotEvents*>",
+        "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x310"
       },
@@ -94,7 +94,7 @@
       },
       {
         "Name": "SpawnerPawns",
-        "Type": "TArray<class SpawnerPawns*>",
+        "Type": "TArray<class Pawn*>",
         "Size": "0x10",
         "Offset": "0x3b0"
       },

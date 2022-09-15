@@ -27,7 +27,7 @@
     "Attributes": [
       {
         "Name": "VFXParticles",
-        "Type": "TArray<class VFXParticles*>",
+        "Type": "TArray<class ParticleSystem*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -189,7 +189,7 @@
     "Attributes": [
       {
         "Name": "Meshes",
-        "Type": "TArray<class Meshes*>",
+        "Type": "TArray<class SkeletalMesh*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -207,7 +207,7 @@
       },
       {
         "Name": "VFXParticles",
-        "Type": "TArray<class VFXParticles*>",
+        "Type": "TArray<class ParticleSystem*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -837,7 +837,7 @@
       },
       {
         "Name": "MeshPatchAssets",
-        "Type": "TArray<class MeshPatchAssets*>",
+        "Type": "TArray<class MeshPatchAsset*>",
         "Size": "0x10",
         "Offset": "0x10"
       },

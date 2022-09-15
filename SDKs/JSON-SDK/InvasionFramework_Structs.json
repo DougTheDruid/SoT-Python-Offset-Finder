@@ -33,7 +33,7 @@
       },
       {
         "Name": "Participants",
-        "Type": "TArray<class Participants*>",
+        "Type": "TArray<class CrewVoyageParticipant*>",
         "Size": "0x10",
         "Offset": "0x10"
       }

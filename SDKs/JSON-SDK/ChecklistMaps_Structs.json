@@ -16,7 +16,7 @@
       },
       {
         "Name": "ActionData",
-        "Type": "TArray<class ActionData*>",
+        "Type": "TArray<class ChecklistActionData*>",
         "Size": "0x10",
         "Offset": "0x40"
       }

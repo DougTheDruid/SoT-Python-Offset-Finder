@@ -728,7 +728,7 @@
       },
       {
         "Name": "OneShotSequences",
-        "Type": "TArray<class OneShotSequences*>",
+        "Type": "TArray<class AnimSequenceBase*>",
         "Size": "0x10",
         "Offset": "0x48"
       }

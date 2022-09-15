@@ -25,7 +25,7 @@
       },
       {
         "Name": "Persistent Damage Decals",
-        "Type": "TArray<class Persistent Damage Decals*>",
+        "Type": "TArray<class Texture2D*>",
         "Size": "0x10",
         "Offset": "0x598"
       },
@@ -37,7 +37,7 @@
       },
       {
         "Name": "Deferred Damage Decals",
-        "Type": "TArray<class Deferred Damage Decals*>",
+        "Type": "TArray<class MaterialInstance*>",
         "Size": "0x10",
         "Offset": "0x5b0"
       },

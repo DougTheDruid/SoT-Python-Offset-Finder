@@ -41,7 +41,7 @@
       }
     ]
   },
-  "ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPl": {
+  "ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPlay": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3c8",
@@ -69,7 +69,7 @@
       }
     ]
   },
-  "ServerMigrationSerialisationDetailsTestsActorWithReplicatedChil": {
+  "ServerMigrationSerialisationDetailsTestsActorWithReplicatedChild": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3c8",
@@ -83,7 +83,7 @@
       }
     ]
   },
-  "ServerMigrationSerialisationDetailsTestsActorWithDynamicCompone": {
+  "ServerMigrationSerialisationDetailsTestsActorWithDynamicComponent": {
     "Super": "Actor",
     "FullSize": "0x3e0",
     "InheritedSize": "0x3c8",
@@ -157,7 +157,7 @@
       }
     ]
   },
-  "ServerMigrationSerialisationDetailsTestsMigratableComponentActo": {
+  "ServerMigrationSerialisationDetailsTestsMigratableComponentActor": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3c8",
@@ -171,7 +171,7 @@
       }
     ]
   },
-  "ServerMigrationSerialisationDetailsTestsMigratableDefaultCompon": {
+  "ServerMigrationSerialisationDetailsTestsMigratableDefaultComponentActor": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3c8",
@@ -185,21 +185,21 @@
       }
     ]
   },
-  "ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrde": {
+  "ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x8",
     "Attributes": []
   },
-  "ServerMigrationSerialisationDetailsTestsMigrationActorWithRootC": {
+  "ServerMigrationSerialisationDetailsTestsMigrationActorWithRootComponentSimulatePhysicsEnabledByDefault": {
     "Super": "Actor",
     "FullSize": "0x3c8",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ServerMigrationSerialisationDetailsTestsMigrationChildActorLink": {
+  "ServerMigrationSerialisationDetailsTestsMigrationChildActorLinkedActor": {
     "Super": "Actor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3c8",
@@ -213,8 +213,22 @@
       }
     ]
   },
-  "ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis": {
-    "Super": "ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis",
+  "ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TestStruct",
+        "Type": "Struct ServerMigrationCustomMigrationSerialisationStruct",
+        "Size": "0x4",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
+  "ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseReplicatingActor": {
+    "Super": "ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor",
     "FullSize": "0x3d0",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x0",

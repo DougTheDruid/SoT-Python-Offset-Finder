@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "Pawns",
-        "Type": "TArray<class Pawns*>",
+        "Type": "TArray<class Pawn*>",
         "Size": "0x10",
         "Offset": "0x0"
       }

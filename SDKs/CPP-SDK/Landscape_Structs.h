@@ -86,7 +86,7 @@ struct LandscapeSplineMeshEntry
 {
 public:
 	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	TArray<class MaterialOverrides*>                             MaterialOverrides;                                 // 0x8(0x10)
+	TArray<class MaterialInterface*>                             MaterialOverrides;                                 // 0x8(0x10)
 	bool                                                         bCenterH;                                          // 0x18(0x1)
 	Struct Vector2D                                              CenterAdjust;                                      // 0x1c(0x8)
 	bool                                                         bScaleToWidth;                                     // 0x24(0x1)

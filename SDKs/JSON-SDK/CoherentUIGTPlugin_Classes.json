@@ -184,7 +184,7 @@
     "Attributes": [
       {
         "Name": "StructTypes",
-        "Type": "TArray<class StructTypes*>",
+        "Type": "TArray<class Struct*>",
         "Size": "0x10",
         "Offset": "0xa8"
       }

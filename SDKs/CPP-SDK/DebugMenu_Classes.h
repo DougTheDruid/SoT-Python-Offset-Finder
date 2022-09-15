@@ -25,10 +25,10 @@ public:
 class DebugMenuDataAsset: public DataAsset
 {
 public:
-	TArray<class DataAssets*>                                    DataAssets;                                        // 0x28(0x10)
+	TArray<class DebugMenuDataAsset*>                            DataAssets;                                        // 0x28(0x10)
 	TArray<Struct DebugMenuDataAssetEntry>                       MenuEntires;                                       // 0x38(0x10)
 	TArray<Struct DebugMenuButtonShortcut>                       ButtonShortcuts;                                   // 0x48(0x10)
-	TArray<class MenuEntryGenerators*>                           MenuEntryGenerators;                               // 0x58(0x10)
+	TArray<class DebugMenuEntryGenerator*>                       MenuEntryGenerators;                               // 0x58(0x10)
 };
 
 

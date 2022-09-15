@@ -11,7 +11,7 @@ class WidgetReflectorNodeBase: public Object
 {
 public:
 	Struct Geometry                                              Geometry;                                          // 0x28(0x34)
-	TArray<class ChildNodes*>                                    ChildNodes;                                        // 0x60(0x10)
+	TArray<class WidgetReflectorNodeBase*>                       ChildNodes;                                        // 0x60(0x10)
 	Struct LinearColor                                           Tint;                                              // 0x70(0x10)
 };
 

@@ -252,7 +252,7 @@
     "Attributes": [
       {
         "Name": "Components",
-        "Type": "TArray<class Components*>",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -263,7 +263,7 @@
     "Attributes": [
       {
         "Name": "Actors",
-        "Type": "TArray<class Actors*>",
+        "Type": "TArray<class StaticMeshActor*>",
         "Size": "0x10",
         "Offset": "0x0"
       }

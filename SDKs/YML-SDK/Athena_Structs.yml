@@ -360,7 +360,7 @@ AchievementSailWithFlameOfFateColoursAboard:
   - Name: ShipLights
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class ShipLights*>
+    Type: TArray<class ShipInteractableLight*>
   ClassSize: '0xf8'
 AchievementUnlockedEvent:
   Attributes:
@@ -925,7 +925,7 @@ AggressiveGhostShipEncounterWaveFormationDesc:
   - Name: FormationGruntVisuals
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<class FormationGruntVisuals*>
+    Type: TArray<class AggressiveGhostShipVisualsDataAsset*>
   - Name: FormationLeaderIsCaptain
     Offset: '0xa8'
     Size: '0x1'
@@ -1742,7 +1742,7 @@ AnimNotifyWwiseObserver:
   - Name: AdditionalEventsToTrigger
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class AdditionalEventsToTrigger*>
+    Type: TArray<class WwiseEvent*>
   ClassSize: '0x20'
 AnimatedMaterialData:
   Attributes:
@@ -1765,7 +1765,7 @@ AnimatedMaterialData:
   - Name: FoundMaterials
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class FoundMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: CurrentBlendCurve
     Offset: '0x30'
     Size: '0x8'
@@ -1799,7 +1799,7 @@ AnimationContinuousCycle:
   - Name: Loop
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Loop*>
+    Type: TArray<class AnimSequence*>
   - Name: LoopHitReact
     Offset: '0x20'
     Size: '0x8'
@@ -1811,7 +1811,7 @@ AnimationContinuousCycle:
   - Name: OutAlternates
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class OutAlternates*>
+    Type: TArray<class AnimSequence*>
   - Name: OutUndockTime
     Offset: '0x40'
     Size: '0x4'
@@ -2411,7 +2411,7 @@ AthenaAnimationCannonAnimData:
   - Name: Idle
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Idle*>
+    Type: TArray<class BlendSpace1D*>
   - Name: Fire
     Offset: '0x18'
     Size: '0x8'
@@ -2512,15 +2512,15 @@ AthenaAnimationCapstanAnimData:
   - Name: NeutralForce
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class NeutralForce*>
+    Type: TArray<class BlendSpace1D*>
   - Name: PushForce
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class PushForce*>
+    Type: TArray<class BlendSpace1D*>
   - Name: PullForce
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class PullForce*>
+    Type: TArray<class BlendSpace1D*>
   - Name: PullToNeutral
     Offset: '0x40'
     Size: '0x8'
@@ -2901,7 +2901,7 @@ AthenaAnimationFacialAnimData:
   - Name: IdleAnimations
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class IdleAnimations*>
+    Type: TArray<class AnimSequence*>
   - Name: Death
     Offset: '0x18'
     Size: '0x8'
@@ -3263,7 +3263,7 @@ AthenaAnimationHarpoonLauncherAnimData:
   - Name: Idle
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Idle*>
+    Type: TArray<class BlendSpace1D*>
   - Name: FireInto
     Offset: '0x10'
     Size: '0x8'
@@ -3329,19 +3329,19 @@ AthenaAnimationHitReactsAnimData:
   - Name: HitReact
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class HitReact*>
+    Type: TArray<class BlendSpace1D*>
   - Name: HitReactItem
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class HitReactItem*>
+    Type: TArray<class BlendSpace1D*>
   - Name: HitReactItemAction
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class HitReactItemAction*>
+    Type: TArray<class BlendSpace1D*>
   - Name: HitReactSubtle
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class HitReactSubtle*>
+    Type: TArray<class BlendSpace1D*>
   ClassSize: '0x40'
 AthenaAnimationHitReactsSelectedAnimations:
   Attributes:
@@ -3452,7 +3452,7 @@ AthenaAnimationIdlesAnimData:
   - Name: IdleAnimations
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class IdleAnimations*>
+    Type: TArray<class AnimSequence*>
   ClassSize: '0x10'
 AthenaAnimationItemAnimationCache:
   Attributes:
@@ -3565,23 +3565,23 @@ AthenaAnimationJumpingThirdPersonAnimData:
   - Name: JumpStart
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class JumpStart*>
+    Type: TArray<class BlendSpace*>
   - Name: JumpCycle
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class JumpCycle*>
+    Type: TArray<class BlendSpace*>
   - Name: PreImpact
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class PreImpact*>
+    Type: TArray<class BlendSpace*>
   - Name: LandLight
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class LandLight*>
+    Type: TArray<class BlendSpace*>
   - Name: LandHeavy
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class LandHeavy*>
+    Type: TArray<class BlendSpace*>
   ClassSize: '0x50'
 AthenaAnimationKeyedInstrumentAnimData:
   Attributes:
@@ -4034,15 +4034,15 @@ AthenaAnimationMapTable:
   - Name: Into
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Into*>
+    Type: TArray<class AnimSequence*>
   - Name: IdleCycle
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class IdleCycle*>
+    Type: TArray<class AnimSequence*>
   - Name: Outof
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class Outof*>
+    Type: TArray<class AnimSequence*>
   ClassSize: '0x30'
 AthenaAnimationMountedWeapon:
   Attributes:
@@ -4165,7 +4165,7 @@ AthenaAnimationObjectActionContinuousStructPitchOverride:
   - Name: VariantCycleIdle
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class VariantCycleIdle*>
+    Type: TArray<class BlendSpace1D*>
   - Name: UseMainCycleJump
     Offset: '0x28'
     Size: '0x1'
@@ -4211,30 +4211,30 @@ AthenaAnimationObjectActionOneShot:
   - Name: MainAction
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class MainAction*>
+    Type: TArray<class AnimSequence*>
   - Name: MainActionLocomotion
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class MainActionLocomotion*>
+    Type: TArray<class BlendSpace*>
   - Name: AlternateAction
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class AlternateAction*>
+    Type: TArray<class AnimSequence*>
   - Name: AlternateActionLocomotion
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class AlternateActionLocomotion*>
+    Type: TArray<class BlendSpace*>
   ClassSize: '0x40'
 AthenaAnimationObjectActionOneShotPitchOverride:
   Attributes:
   - Name: MainAction
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class MainAction*>
+    Type: TArray<class BlendSpace1D*>
   - Name: AlternateAction
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class AlternateAction*>
+    Type: TArray<class BlendSpace1D*>
   ClassSize: '0x20'
 AthenaAnimationObjectActionOneShotPlayingStruct:
   Attributes:
@@ -4372,31 +4372,31 @@ AthenaAnimationObjectFacial:
   - Name: PrimaryContinuous
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class PrimaryContinuous*>
+    Type: TArray<class AnimMontage*>
   - Name: SecondaryContinuous
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class SecondaryContinuous*>
+    Type: TArray<class AnimMontage*>
   - Name: PrimaryOneShot
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class PrimaryOneShot*>
+    Type: TArray<class AnimMontage*>
   - Name: SecondaryOneShot
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class SecondaryOneShot*>
+    Type: TArray<class AnimMontage*>
   - Name: MeleeBlocking
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class MeleeBlocking*>
+    Type: TArray<class AnimMontage*>
   - Name: MeleeAttack
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class MeleeAttack*>
+    Type: TArray<class AnimMontage*>
   - Name: MeleeBlockReact
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class MeleeBlockReact*>
+    Type: TArray<class AnimMontage*>
   ClassSize: '0x70'
 AthenaAnimationObjectIdleAnimations:
   Attributes:
@@ -4578,7 +4578,7 @@ AthenaAnimationObjectMeleeV2:
   - Name: BlockingFeedbackSequences
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<class BlockingFeedbackSequences*>
+    Type: TArray<class AnimSequence*>
   - Name: BlockingOut
     Offset: '0xb8'
     Size: '0x8'
@@ -4594,7 +4594,7 @@ AthenaAnimationObjectMeleeV2:
   - Name: BlockingFeedbackSequencesSwimming
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class BlockingFeedbackSequencesSwimming*>
+    Type: TArray<class AnimSequence*>
   - Name: BlockingOutSwimming
     Offset: '0xe0'
     Size: '0x8'
@@ -5225,7 +5225,7 @@ AthenaAnimationShopInteractionAnimations:
   - Name: Loop
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Loop*>
+    Type: TArray<class AnimSequence*>
   - Name: Out
     Offset: '0x20'
     Size: '0x8'
@@ -5343,11 +5343,11 @@ AthenaAnimationSkeletonEmoteActionAnimations:
   - Name: Taunt
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Taunt*>
+    Type: TArray<class AnimSequence*>
   - Name: Cheer
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class Cheer*>
+    Type: TArray<class AnimSequence*>
   ClassSize: '0x28'
 AthenaAnimationSkeletonEmoteActionParams:
   Attributes:
@@ -5385,11 +5385,11 @@ AthenaAnimationSkeletonFlee:
   - Name: FleeTurnLeft
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class FleeTurnLeft*>
+    Type: TArray<class AnimSequence*>
   - Name: FleeTurnRight
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class FleeTurnRight*>
+    Type: TArray<class AnimSequence*>
   - Name: FleeLocomotionBase
     Offset: '0x28'
     Size: '0x8'
@@ -5397,7 +5397,7 @@ AthenaAnimationSkeletonFlee:
   - Name: FleeLocomotionVariants
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class FleeLocomotionVariants*>
+    Type: TArray<class BlendSpace*>
   ClassSize: '0x40'
 AthenaAnimationSkeletonFleeInGraph:
   Attributes:
@@ -5420,7 +5420,7 @@ AthenaAnimationSkeletonFleeInGraph:
   - Name: LocomotionVariantSelection
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class LocomotionVariantSelection*>
+    Type: TArray<class BlendSpace*>
   - Name: PrecentageChanceOfVariantOccuring
     Offset: '0x30'
     Size: '0x4'
@@ -5514,7 +5514,7 @@ AthenaAnimationSkeletonShipCaptainAnimations:
   - Name: DockedIdles
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class DockedIdles*>
+    Type: TArray<class AnimSequence*>
   - Name: ExitDockedPose
     Offset: '0x18'
     Size: '0x8'
@@ -5564,11 +5564,11 @@ AthenaAnimationSpawnAnimData:
   - Name: Spawn
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Spawn*>
+    Type: TArray<class AnimSequence*>
   - Name: Despawn
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Despawn*>
+    Type: TArray<class AnimSequence*>
   ClassSize: '0x20'
 AthenaAnimationSpawnBase:
   Attributes:
@@ -5633,11 +5633,11 @@ AthenaAnimationSwimmingAnimData:
   - Name: Idles
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Idles*>
+    Type: TArray<class AnimSequence*>
   - Name: IdlesUnderwater
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class IdlesUnderwater*>
+    Type: TArray<class AnimSequence*>
   - Name: SwimSprint
     Offset: '0x48'
     Size: '0x20'
@@ -5901,15 +5901,15 @@ AthenaAnimationWheelAnimData:
   - Name: Idles
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class Idles*>
+    Type: TArray<class AnimSequence*>
   - Name: LeftFingerIdles
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<class LeftFingerIdles*>
+    Type: TArray<class AnimSequence*>
   - Name: RightFingerIdles
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class RightFingerIdles*>
+    Type: TArray<class AnimSequence*>
   ClassSize: '0x88'
 AthenaAnimationWheelArmOverlayAnimData:
   Attributes:
@@ -6266,7 +6266,7 @@ AthenaStreamedLevelData:
   - Name: Levels
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Levels*>
+    Type: TArray<class LevelStreaming*>
   ClassSize: '0x70'
 AthenaStreamedLevelItem:
   Attributes:
@@ -6672,11 +6672,11 @@ BattleElevatorEventRoomPhase:
   - Name: Policies
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class Policies*>
+    Type: TArray<class BattleElevatorEventRoomBasePolicy*>
   - Name: Actions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Actions*>
+    Type: TArray<class ElevatorActionBase*>
   ClassSize: '0x38'
 BeaconData:
   Attributes:
@@ -6830,7 +6830,7 @@ BlockDecalMaterials:
   - Name: BlockMaterials
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class BlockMaterials*>
+    Type: TArray<class MaterialInterface*>
   ClassSize: '0x10'
 BlueprintableIntegerHandle:
   Attributes:
@@ -6878,7 +6878,7 @@ BookcaseIndicatorSetting:
   - Name: OverriddenMaterials
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class OverriddenMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x20'
 BootFlowAdvanceLegalSplashStateEvent:
   Attributes: []
@@ -7391,7 +7391,7 @@ BountyQuestDesc:
   - Name: BountyRewardsSpawnData
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<class BountyRewardsSpawnData*>
+    Type: TArray<class ItemSpawnData*>
   - Name: Landmark
     Offset: '0xc0'
     Size: '0x8'
@@ -10047,7 +10047,7 @@ CinematicCrewNetworkEvent:
   - Name: CrewMembersPlayerStates
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class CrewMembersPlayerStates*>
+    Type: TArray<class PlayerState*>
   - Name: Header
     Offset: '0x20'
     Size: '0x38'
@@ -10157,31 +10157,31 @@ ClassicFireworkDebugList:
   - Name: Peony
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Peony*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: Crackle
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Crackle*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: Strobe
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class Strobe*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: Brocade
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class Brocade*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: Comet
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class Comet*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: HummingSnakes
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class HummingSnakes*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: Cakes
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class Cakes*>
+    Type: TArray<class ItemDescSpawnData*>
   ClassSize: '0x70'
 ClearRadialInventory:
   Attributes: []
@@ -11663,7 +11663,7 @@ ConditionalStat:
   - Name: Conditions
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class Conditions*>
+    Type: TArray<class StatCondition*>
   ClassSize: '0x30'
 ConditionalStatContext:
   Attributes:
@@ -11685,7 +11685,7 @@ ConditionalStatsTriggerUnit:
   - Name: ConditionalStatsAssets
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class ConditionalStatsAssets*>
+    Type: TArray<class ConditionalStatsAsset*>
   ClassSize: '0x18'
 ConfigurationComboAndTrigger:
   Attributes:
@@ -11700,7 +11700,7 @@ ConfigurationComboAndTrigger:
   - Name: TriggeredActionMechanisms
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class TriggeredActionMechanisms*>
+    Type: TArray<class Actor*>
   - Name: ActivatedMechanismType
     Offset: '0x28'
     Size: '0x1'
@@ -11817,7 +11817,7 @@ ContestCeremonyEvent:
   - Name: AudioEvents
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class AudioEvents*>
+    Type: TArray<class WwiseEvent*>
   - Name: SpecialEvents
     Offset: '0x10'
     Size: '0x10'
@@ -12801,7 +12801,7 @@ CrestPartDesc:
   - Name: CrestMaterials
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class CrestMaterials*>
+    Type: TArray<class MaterialInterface*>
   ClassSize: '0x18'
 Crew:
   Attributes:
@@ -12816,7 +12816,7 @@ Crew:
   - Name: Players
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class Players*>
+    Type: TArray<class PlayerState*>
   - Name: CrewSessionTemplate
     Offset: '0x30'
     Size: '0x38'
@@ -12828,7 +12828,7 @@ Crew:
   - Name: AssociatedActors
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class AssociatedActors*>
+    Type: TArray<class Actor*>
   - Name: HasEverSetSail
     Offset: '0x90'
     Size: '0x1'
@@ -13874,7 +13874,7 @@ CutsceneAnimationElement:
   - Name: OneShotSequences
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class OneShotSequences*>
+    Type: TArray<class AnimSequenceBase*>
   ClassSize: '0x18'
 CutsceneGroup:
   Attributes:
@@ -13916,7 +13916,7 @@ CutscenePool:
   - Name: DialogueData
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class DialogueData*>
+    Type: TArray<class SceneDialogueData*>
   - Name: CutsceneLengths
     Offset: '0x30'
     Size: '0x10'
@@ -14901,7 +14901,7 @@ DynamicMaterialListContainer:
   - Name: MaterialsList
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class MaterialsList*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x10'
 DynamicMaterialsList:
   Attributes:
@@ -15645,7 +15645,7 @@ EncounterListenerData:
   - Name: EncounterListenerActors
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class EncounterListenerActors*>
+    Type: TArray<class Actor*>
   - Name: EncounterListenerLocations
     Offset: '0x20'
     Size: '0x10'
@@ -16291,7 +16291,7 @@ EventAthenaLocalPlayerPirateIdentitySet:
 EventAthenaLocalPlayerRequestRequiredControllersConnected:
   Attributes: []
   ClassSize: '0x1'
-EventAthenaLocalPlayerRequestRequiredControllersConnectedRespon:
+EventAthenaLocalPlayerRequestRequiredControllersConnectedResponse:
   Attributes:
   - Name: ControllerConnected
     Offset: '0x0'
@@ -20333,11 +20333,11 @@ FaunaAnimationBaseStructure:
   - Name: Idle
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Idle*>
+    Type: TArray<class AnimSequence*>
   - Name: Locomotion
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Locomotion*>
+    Type: TArray<class BlendSpace1D*>
   - Name: Turning
     Offset: '0x20'
     Size: '0x10'
@@ -20349,19 +20349,19 @@ FaunaAnimationBaseStructure:
   - Name: Impact
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class Impact*>
+    Type: TArray<class BlendSpace1D*>
   - Name: DyingLoop
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class DyingLoop*>
+    Type: TArray<class AnimSequence*>
   - Name: Death
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<class Death*>
+    Type: TArray<class AnimSequence*>
   - Name: Special
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class Special*>
+    Type: TArray<class AnimSequence*>
   - Name: PigStarving
     Offset: '0x88'
     Size: '0x30'
@@ -20666,7 +20666,7 @@ FeatureToggledMechanismGroups:
   - Name: MechanismGroups
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class MechanismGroups*>
+    Type: TArray<class MechanismGroup*>
   ClassSize: '0x18'
 FeatureToggledPremiumCatalog:
   Attributes:
@@ -20912,11 +20912,11 @@ FireworkDebugListByFireworkType:
   - Name: Rockets
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Rockets*>
+    Type: TArray<class ItemDescSpawnData*>
   - Name: Cakes
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Cakes*>
+    Type: TArray<class ItemDescSpawnData*>
   ClassSize: '0x20'
 FirstInteractableTelemetryEvent:
   Attributes:
@@ -21120,7 +21120,7 @@ FishingFishSelector:
   - Name: SelectedFishCache
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<class SelectedFishCache*>
+    Type: TArray<class FishSpawnParamsDataAsset*>
   - Name: Root
     Offset: '0xc0'
     Size: '0x8'
@@ -21657,7 +21657,7 @@ FortTogglerUnit:
   - Name: AISpawners
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class AISpawners*>
+    Type: TArray<class AISpawner*>
   ClassSize: '0x20'
 FortWaveCompletedTelemetryEvent:
   Attributes:
@@ -23386,11 +23386,11 @@ IndividualMeshConsumer:
   - Name: OverrideMaterials
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class OverrideMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: OverrideFallbackMaterials
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class OverrideFallbackMaterials*>
+    Type: TArray<class MaterialInterface*>
   ClassSize: '0x80'
 IndividualMeshScoring:
   Attributes:
@@ -23454,7 +23454,7 @@ InitialShipSpawnLocations:
   - Name: ShipSpawnLocations
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class ShipSpawnLocations*>
+    Type: TArray<class ShipSpawnLocation*>
   ClassSize: '0x10'
 InitialiseContestZoneEvent:
   Attributes: []
@@ -24391,7 +24391,7 @@ ItemLoadoutSlot:
   - Name: Items
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Items*>
+    Type: TArray<class ItemInfo*>
   - Name: Capacity
     Offset: '0x18'
     Size: '0x4'
@@ -24655,7 +24655,7 @@ ItemSpawnWeightedType:
   - Name: Requirements
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class Requirements*>
+    Type: TArray<class SpawnRequirement*>
   ClassSize: '0x28'
 ItemSpawnerFinishedSpawningEvent:
   Attributes: []
@@ -25172,11 +25172,11 @@ LaunchableProjectileCreator:
   - Name: IgnoredActors
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class IgnoredActors*>
+    Type: TArray<class Actor*>
   - Name: IgnoredComponents
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<class IgnoredComponents*>
+    Type: TArray<class ActorComponent*>
   ClassSize: '0x78'
 LaunchableProjectileDamageEvent:
   Attributes:
@@ -25623,7 +25623,7 @@ LightingControllerMaterialInstances:
   - Name: SkyDomeMaterials
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class SkyDomeMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: NorthStarMaterial
     Offset: '0x10'
     Size: '0x8'
@@ -26356,7 +26356,7 @@ LiquidContents:
   - Name: LiquidTargets
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class LiquidTargets*>
+    Type: TArray<class Ship*>
   - Name: Container
     Offset: '0x18'
     Size: '0x8'
@@ -27010,7 +27010,7 @@ ManagedItems:
   - Name: Items
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Items*>
+    Type: TArray<class ItemProxy*>
   ClassSize: '0x10'
 ManagedVulnerabilityLayer:
   Attributes:
@@ -27316,7 +27316,7 @@ MastPhysicsComponents:
   - Name: UnweldedCrossBeamComponents
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class UnweldedCrossBeamComponents*>
+    Type: TArray<class PrimitiveComponent*>
   ClassSize: '0x38'
 MastReachedFallenPositionEvent:
   Attributes: []
@@ -27557,19 +27557,19 @@ MechanismAnimationEventContainer:
   - Name: AnimationStartedEvents
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class AnimationStartedEvents*>
+    Type: TArray<class MechanismOneShotEvent*>
   - Name: OneShotTimelineEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class OneShotTimelineEvents*>
+    Type: TArray<class MechanismAnimationEvent*>
   - Name: ContinuousTimelineEvents
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<class ContinuousTimelineEvents*>
+    Type: TArray<class MechanismAnimationEvent*>
   - Name: AnimationStoppedEvents
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class AnimationStoppedEvents*>
+    Type: TArray<class MechanismOneShotEvent*>
   ClassSize: '0x50'
 MechanismAnimationEvent_VFXParams:
   Attributes:
@@ -27619,11 +27619,11 @@ MechanismBinding:
   - Name: Actions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Actions*>
+    Type: TArray<class MechanismElementProxy*>
   - Name: Triggers
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Triggers*>
+    Type: TArray<class MechanismElementProxy*>
   - Name: Settings
     Offset: '0x20'
     Size: '0x68'
@@ -27631,11 +27631,11 @@ MechanismBinding:
   - Name: SelectedActions
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class SelectedActions*>
+    Type: TArray<class MechanismElementProxy*>
   - Name: SelectedTriggers
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<class SelectedTriggers*>
+    Type: TArray<class MechanismElementProxy*>
   ClassSize: '0xa8'
 MechanismBindingSettings:
   Attributes:
@@ -27683,7 +27683,7 @@ MechanismMaterialAnimationContext:
   - Name: DynamicMaterials
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x20'
 MechanismMaterialMapEntry:
   Attributes:
@@ -27928,7 +27928,7 @@ MerchantItemGroupDesc:
   - Name: Items
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Items*>
+    Type: TArray<class MerchantQuestItemData*>
   ClassSize: '0x10'
 MerchantMapContents:
   Attributes:
@@ -28171,7 +28171,7 @@ MerchantQuestRequiredItemsGroup:
   - Name: RequiredItems
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class RequiredItems*>
+    Type: TArray<class MerchantQuestItemData*>
   ClassSize: '0x10'
 MerchantQuestRequiredItemsGroupList:
   Attributes:
@@ -28437,7 +28437,7 @@ MermaidServiceParams:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: MinDistFromAnyMermaidForPlayerToBeAbandonedIfPlayerNotNearIslan
+  - Name: MinDistFromAnyMermaidForPlayerToBeAbandonedIfPlayerNotNearIsland
     Offset: '0x2c'
     Size: '0x4'
     Type: float
@@ -28556,7 +28556,7 @@ MeshAnimatorInstance:
   - Name: Meshes
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class Meshes*>
+    Type: TArray<class MeshComponent*>
   ClassSize: '0x70'
 MeshAnimatorSyncData:
   Attributes:
@@ -29285,7 +29285,7 @@ NPCDialogData:
   - Name: Options
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Options*>
+    Type: TArray<class NPCDialogOption*>
   ClassSize: '0x18'
 NPCDialogDataForOverrideType:
   Attributes:
@@ -29334,7 +29334,7 @@ NPCDialogFormattedHeaderByConditionText:
   - Name: Conditions
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class Conditions*>
+    Type: TArray<class NPCDialogConditional*>
   ClassSize: '0x58'
 NPCDialogHeaderByConditionText:
   Attributes:
@@ -29345,7 +29345,7 @@ NPCDialogHeaderByConditionText:
   - Name: Conditions
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Conditions*>
+    Type: TArray<class NPCDialogConditional*>
   ClassSize: '0x48'
 NPCDialogOverrideTypeWithConditionalsUnit:
   Attributes:
@@ -29356,7 +29356,7 @@ NPCDialogOverrideTypeWithConditionalsUnit:
   - Name: Conditionals
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Conditionals*>
+    Type: TArray<class NPCDialogConditional*>
   ClassSize: '0x18'
 NPCDialogRankGatedText:
   Attributes:
@@ -30114,7 +30114,7 @@ OneShotAnimationElement:
   - Name: OneShotSequence
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class OneShotSequence*>
+    Type: TArray<class AnimSequence*>
   - Name: EffectTime
     Offset: '0x18'
     Size: '0x4'
@@ -30253,7 +30253,7 @@ OpenTrinketBoxActionRuleVerbiage:
 OpenVoyageInventoryEvent:
   Attributes: []
   ClassSize: '0x1'
-OpenableItemMaterialAnimationReactionComponentAnimationNameAndS:
+OpenableItemMaterialAnimationReactionComponentAnimationNameAndSfxCueSet:
   Attributes:
   - Name: Open
     Offset: '0x0'
@@ -30288,7 +30288,7 @@ OpenableItemMaterialAnimationReactionComponentAnimationNameAndS:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x40'
-OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCu:
+OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCueSet:
   Attributes:
   - Name: Open
     Offset: '0x0'
@@ -33672,7 +33672,7 @@ PlayerHideoutInfo:
   - Name: ExitPoints
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class ExitPoints*>
+    Type: TArray<class SpawnLocation*>
   ClassSize: '0x18'
 PlayerInfoRequest:
   Attributes: []
@@ -34595,7 +34595,7 @@ PremiumCatalogLandingPageTab:
   - Name: Children
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class Actor*>
+    Type: TArray<class PremiumCatalogLandingPageItemDataAsset*>
   - Name: FeatureToggle
     Offset: '0x58'
     Size: '0x8'
@@ -35515,7 +35515,7 @@ ProjectileWeaponFireBelieveClientMissesTelemetryEvent:
     Size: '0x8'
     Type: double
   ClassSize: '0x20'
-ProjectileWeaponFireEnhancedClientRewindEstimationTelemetryEven:
+ProjectileWeaponFireEnhancedClientRewindEstimationTelemetryEvent:
   Attributes:
   - Name: TelemetryAttackId
     Offset: '0x0'
@@ -35673,7 +35673,7 @@ ProjectileWeaponHitScanShotTelemetryEvent:
     Offset: '0x93'
     Size: '0x1'
     Type: bool
-  - Name: ServerAndClientDisagreedFirstTime_Important_NoCorrectionAttempt
+  - Name: ServerAndClientDisagreedFirstTime_Important_NoCorrectionAttempted
     Offset: '0x94'
     Size: '0x1'
     Type: bool
@@ -35681,11 +35681,11 @@ ProjectileWeaponHitScanShotTelemetryEvent:
     Offset: '0x95'
     Size: '0x1'
     Type: bool
-  - Name: ServerAndClientDisagreedFirstTime_Important_RewindEstimation_Co
+  - Name: ServerAndClientDisagreedFirstTime_Important_RewindEstimation_Corrected
     Offset: '0x96'
     Size: '0x1'
     Type: bool
-  - Name: ServerAndClientDisagreedFirstTime_Important_RewindEstimation_St
+  - Name: ServerAndClientDisagreedFirstTime_Important_RewindEstimation_StillDisagrees
     Offset: '0x97'
     Size: '0x1'
     Type: bool
@@ -36336,7 +36336,7 @@ QuestPageListPopulator:
   - Name: PageListsToUpdate
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class PageListsToUpdate*>
+    Type: TArray<class QuestBookPageList*>
   ClassSize: '0x10'
 QuestParams:
   Attributes:
@@ -37088,7 +37088,7 @@ RecentlyInteractedWithPlayers:
   - Name: RecentlyInteractedPlayers
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class RecentlyInteractedPlayers*>
+    Type: TArray<class AthenaPlayerCharacter*>
   - Name: ReportingCharacter
     Offset: '0x10'
     Size: '0x8'
@@ -38237,7 +38237,7 @@ RequestEmblemDefinitionsSucceededEvent:
   - Name: DataAssets
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class DataAssets*>
+    Type: TArray<class EmblemDefinitionDataAsset*>
   ClassSize: '0x10'
 RequestEmblemProgressEvent:
   Attributes:
@@ -38740,7 +38740,7 @@ ResourceCacheEntry:
   - Name: Resources
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Resources*>
+    Type: TArray<class Object*>
   ClassSize: '0x10'
 ResponseContendedResourcesNetworkEvent:
   Attributes:
@@ -38883,7 +38883,7 @@ RewardDefinition:
   - Name: Rewards
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class Rewards*>
+    Type: TArray<class Reward*>
   - Name: PrerequisiteEntitlements
     Offset: '0x28'
     Size: '0x10'
@@ -43941,7 +43941,7 @@ SkeletonCustomAnimationBlueprintPlayingAnimations:
   - Name: AlternateContinuousOuts
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AlternateContinuousOuts*>
+    Type: TArray<class AnimSequence*>
   ClassSize: '0x38'
 SkeletonCustomAnimationDataStructure:
   Attributes:
@@ -43960,7 +43960,7 @@ SkeletonCustomAnimationDataStructure:
   - Name: AudioEvents
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AudioEvents*>
+    Type: TArray<class WwiseEvent*>
   ClassSize: '0x38'
 SkeletonThroneStateData:
   Attributes: []
@@ -46281,7 +46281,7 @@ TimedContestEventAction:
   - Name: AudioEvents
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class AudioEvents*>
+    Type: TArray<class WwiseEvent*>
   ClassSize: '0xe8'
 TimedDoorClosedEvent:
   Attributes: []
@@ -46325,7 +46325,7 @@ TimedResponseAction:
   - Name: TargetActors
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class TargetActors*>
+    Type: TArray<class Actor*>
   - Name: Duration
     Offset: '0x10'
     Size: '0x4'
@@ -48704,7 +48704,7 @@ VotersByOption:
   - Name: Voters
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Voters*>
+    Type: TArray<class Object*>
   ClassSize: '0x18'
 VoyageAbortedTelemetryEvent:
   Attributes: []
@@ -49920,7 +49920,7 @@ WeaponProjectileCreator:
   - Name: IgnoredActors
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class IgnoredActors*>
+    Type: TArray<class Actor*>
   - Name: Params
     Offset: '0xa0'
     Size: '0xb0'
@@ -50150,7 +50150,7 @@ WeightedItemDescSpawnData:
   - Name: Requirements
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class Requirements*>
+    Type: TArray<class SpawnRequirement*>
   - Name: CustomLifetimeManagement
     Offset: '0x28'
     Size: '0x1'
@@ -50640,7 +50640,7 @@ WheelDesc:
   - Name: WheelMeshOverrideMaterials
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class WheelMeshOverrideMaterials*>
+    Type: TArray<class MaterialInterface*>
   ClassSize: '0x28'
 WheelEventProperties:
   Attributes:
@@ -51332,7 +51332,7 @@ XMarksTheSpotQuestDesc:
   - Name: BoobyTrapSpawners
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class BoobyTrapSpawners*>
+    Type: TArray<class AIBoobyTrapSpawner*>
   - Name: OverrideTreasureMapItemDesc
     Offset: '0xa0'
     Size: '0x8'
@@ -51351,15 +51351,15 @@ XMarksTheSpotQuestParams:
   - Name: UniqueTreasureLocationBoobyTraps
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class UniqueTreasureLocationBoobyTraps*>
+    Type: TArray<class BoobyTrapSpawnerDataAsset*>
   - Name: UniqueTreasureLocationRewards
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<class UniqueTreasureLocationRewards*>
+    Type: TArray<class WeightedTreasureChestDescAsset*>
   - Name: UniqueTreasureLocationRewardsAssets
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class UniqueTreasureLocationRewardsAssets*>
+    Type: TArray<class WeightedItemDescSpawnDataAsset*>
   ClassSize: '0x88'
 XPGrantedEvent:
   Attributes:

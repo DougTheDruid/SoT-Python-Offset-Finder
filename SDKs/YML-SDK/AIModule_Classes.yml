@@ -143,7 +143,7 @@ AIPerceptionComponent:
   - Name: SensesConfig
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class SensesConfig*>
+    Type: TArray<class AISenseConfig*>
   - Name: DominantSense
     Offset: '0xf0'
     Size: '0x8'
@@ -181,7 +181,7 @@ AIPerceptionSystem:
   - Name: Senses
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class Senses*>
+    Type: TArray<class AISense*>
   - Name: PerceptionAgingRate
     Offset: '0x90'
     Size: '0x4'
@@ -391,11 +391,11 @@ AISense_Blueprint:
   - Name: ListenerContainer
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class ListenerContainer*>
+    Type: TArray<class AIPerceptionComponent*>
   - Name: UnprocessedEvents
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class UnprocessedEvents*>
+    Type: TArray<class AISenseEvent*>
   ClassSize: '0x28'
   FullSize: '0xb0'
   InheritedSize: '0x88'
@@ -539,7 +539,7 @@ AISystem:
   - Name: AllProxyObjects
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class AllProxyObjects*>
+    Type: TArray<class AIAsyncTaskBlueprintProxy*>
   - Name: HotSpotManager
     Offset: '0x90'
     Size: '0x8'
@@ -603,7 +603,7 @@ BTCompositeNode:
   - Name: Services
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<class Services*>
+    Type: TArray<class BTService*>
   ClassSize: '0x30'
   FullSize: '0x88'
   InheritedSize: '0x58'
@@ -1291,7 +1291,7 @@ BehaviorTree:
   - Name: RootDecorators
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class RootDecorators*>
+    Type: TArray<class BTDecorator*>
   - Name: RootDecoratorOps
     Offset: '0x48'
     Size: '0x10'
@@ -1305,7 +1305,7 @@ BehaviorTreeComponent:
   - Name: NodeInstances
     Offset: '0x148'
     Size: '0x10'
-    Type: TArray<class NodeInstances*>
+    Type: TArray<class BTNode*>
   ClassSize: '0x160'
   FullSize: '0x288'
   InheritedSize: '0x128'
@@ -1323,7 +1323,7 @@ BehaviorTreeManager:
   - Name: ActiveComponents
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class ActiveComponents*>
+    Type: TArray<class BehaviorTreeComponent*>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -1347,7 +1347,7 @@ BlackboardComponent:
   - Name: KeyInstances
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<class KeyInstances*>
+    Type: TArray<class BlackboardKeyType*>
   ClassSize: '0x148'
   FullSize: '0x210'
   InheritedSize: '0xc8'
@@ -1645,7 +1645,7 @@ EnvQuery:
   - Name: Options
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Options*>
+    Type: TArray<class EnvQueryOption*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1739,7 +1739,7 @@ EnvQueryGenerator_Composite:
   - Name: Generators
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class Generators*>
+    Type: TArray<class EnvQueryGenerator*>
   - Name: bHasMatchingItemType
     Offset: '0x60'
     Size: '0x1'
@@ -1937,7 +1937,7 @@ EnvQueryManager:
   - Name: LocalContexts
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<class LocalContexts*>
+    Type: TArray<class EnvQueryContext*>
   ClassSize: '0xe8'
   FullSize: '0x110'
   InheritedSize: '0x28'
@@ -1961,7 +1961,7 @@ EnvQueryOption:
   - Name: Tests
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class Tests*>
+    Type: TArray<class EnvQueryTest*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -2305,7 +2305,7 @@ PawnAction_Sequence:
   - Name: ActionSequence
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class ActionSequence*>
+    Type: TArray<class PawnAction*>
   - Name: ChildFailureHandlingMode
     Offset: '0xa0'
     Size: '0x1'

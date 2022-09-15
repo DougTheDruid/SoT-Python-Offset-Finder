@@ -189,7 +189,7 @@ ReviveGhost:
   - Name: CorpseMaterials
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class CorpseMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: Root
     Offset: '0x3e8'
     Size: '0x8'
@@ -241,7 +241,7 @@ ReviveGhost:
   - Name: AstralCordDynamicMaterials
     Offset: '0x608'
     Size: '0x10'
-    Type: TArray<class AstralCordDynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: GhostPlayModeSpecificParameters
     Offset: '0x618'
     Size: '0xc'

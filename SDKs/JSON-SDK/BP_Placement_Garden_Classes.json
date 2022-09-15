@@ -31,7 +31,7 @@
       },
       {
         "Name": "Meshes",
-        "Type": "TArray<Struct None>",
+        "Type": "TArray<Struct PlacementGardenSeed>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
@@ -67,7 +67,7 @@
       },
       {
         "Name": "Physical Materials",
-        "Type": "TArray<class Physical Materials*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x410"
       },
@@ -85,7 +85,7 @@
       },
       {
         "Name": "Instanced Meshes",
-        "Type": "TArray<class Instanced Meshes*>",
+        "Type": "TArray<class InstancedStaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x438"
       },
@@ -103,7 +103,7 @@
       },
       {
         "Name": "Mesh Radii",
-        "Type": "TArray<Struct Instanced Meshes>",
+        "Type": "TArray<Struct LinearColor>",
         "Size": "0x10",
         "Offset": "0x458"
       },

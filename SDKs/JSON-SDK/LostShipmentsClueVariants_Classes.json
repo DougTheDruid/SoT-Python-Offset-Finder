@@ -176,7 +176,7 @@
     "Attributes": [
       {
         "Name": "ClueDestinationDescriptions",
-        "Type": "TArray<class ClueDestinationDescriptions*>",
+        "Type": "TArray<class AbandonedNoteClueGenderSpecificTextAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -190,7 +190,7 @@
     "Attributes": [
       {
         "Name": "ClueDestinationDescriptions",
-        "Type": "TArray<class ClueDestinationDescriptions*>",
+        "Type": "TArray<class AbandonedNoteClueTextAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -771,7 +771,7 @@
     "Attributes": [
       {
         "Name": "ObtainedClues",
-        "Type": "TArray<class ObtainedClues*>",
+        "Type": "TArray<class ClueDescriptor*>",
         "Size": "0x10",
         "Offset": "0x78"
       },

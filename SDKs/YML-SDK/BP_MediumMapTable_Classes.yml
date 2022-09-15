@@ -9,7 +9,7 @@ BP_MediumMapTable_C:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x7a8'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
+    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   - Name: NavBlocker
     Offset: '0x7b0'
     Size: '0x8'

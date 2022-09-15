@@ -1402,7 +1402,7 @@ struct BPInterfaceDescription
 {
 public:
 	class                                                        Interface;                                         // 0x0(0x8)
-	TArray<class Graphs*>                                        Graphs;                                            // 0x8(0x10)
+	TArray<class EdGraph*>                                       Graphs;                                            // 0x8(0x10)
 };
 
 
@@ -1447,7 +1447,7 @@ public:
 struct AutomaticInstancingMeshComponentArray
 {
 public:
-	TArray<class Array*>                                         Array;                                             // 0x0(0x10)
+	TArray<class InstancedStaticMeshComponent*>                  Array;                                             // 0x0(0x10)
 };
 
 
@@ -1966,7 +1966,7 @@ public:
 	float                                                        GaussianBlurIntensity;                             // 0x510(0x4)
 	byte                                                         DisableShadowMethod;                               // 0x514(0x1)
 	Struct WeightedBlendables                                    WeightedBlendables;                                // 0x518(0x10)
-	TArray<class Blendables*>                                    Blendables;                                        // 0x528(0x10)
+	TArray<class Object*>                                        Blendables;                                        // 0x528(0x10)
 };
 
 
@@ -2258,7 +2258,7 @@ struct InterpGroupActorInfo
 {
 public:
 	struct FName                                                 ObjectName;                                        // 0x0(0x8)
-	TArray<class Actors*>                                        Actors;                                            // 0x8(0x10)
+	TArray<class Actor*>                                         Actors;                                            // 0x8(0x10)
 };
 
 
@@ -3252,7 +3252,7 @@ public:
 	struct FName                                                 SectionName;                                       // 0x30(0x8)
 	float                                                        StartTime;                                         // 0x38(0x4)
 	struct FName                                                 NextSectionName;                                   // 0x3c(0x8)
-	TArray<class MetaData*>                                      MetaData;                                          // 0x48(0x10)
+	TArray<class AnimMetaData*>                                  MetaData;                                          // 0x48(0x10)
 };
 
 
@@ -4175,7 +4175,7 @@ struct DialogueContext
 {
 public:
 	Class DialogueVoice*                                         Speaker;                                           // 0x0(0x8)
-	TArray<class Targets*>                                       Targets;                                           // 0x8(0x10)
+	TArray<class DialogueVoice*>                                 Targets;                                           // 0x8(0x10)
 };
 
 
@@ -4814,8 +4814,8 @@ public:
 	Struct URL                                                   LastRemoteURL;                                     // 0x150(0x70)
 	Class PendingNetGame*                                        PendingNetGame;                                    // 0x1c0(0x8)
 	TArray<Struct FullyLoadedPackagesInfo>                       PackagesToFullyLoad;                               // 0x1c8(0x10)
-	TArray<class LoadedLevelsForPendingMapChange*>               LoadedLevelsForPendingMapChange;                   // 0x1e8(0x10)
-	TArray<class ObjectReferencers*>                             ObjectReferencers;                                 // 0x210(0x10)
+	TArray<class Level*>                                         LoadedLevelsForPendingMapChange;                   // 0x1e8(0x10)
+	TArray<class ObjectReferencer*>                              ObjectReferencers;                                 // 0x210(0x10)
 	TArray<Struct LevelStreamingStatus>                          PendingLevelStreamingStatusUpdates;                // 0x220(0x10)
 	Class GameViewportClient*                                    GameViewport;                                      // 0x230(0x8)
 	Class GameInstance*                                          OwningGameInstance;                                // 0x238(0x8)
@@ -4848,7 +4848,7 @@ public:
 	byte                                                         FullyLoadType;                                     // 0x0(0x1)
 	Struct FString                                               Tag;                                               // 0x8(0x10)
 	TArray<Struct FName>                                         PackagesToLoad;                                    // 0x18(0x10)
-	TArray<class LoadedObjects*>                                 LoadedObjects;                                     // 0x28(0x10)
+	TArray<class Object*>                                        LoadedObjects;                                     // 0x28(0x10)
 };
 
 
@@ -5511,7 +5511,7 @@ public:
 	bool                                                         UseReflectedImpactVector;                          // 0xc(0x1)
 	bool                                                         bUseOrbitOffset;                                   // 0xc(0x1)
 	struct FName                                                 CustomName;                                        // 0x10(0x8)
-	TArray<class ParticleModuleEventsToSendToGame*>              ParticleModuleEventsToSendToGame;                  // 0x18(0x10)
+	TArray<class ParticleModuleEventSendToGame*>                 ParticleModuleEventsToSendToGame;                  // 0x18(0x10)
 };
 
 
@@ -5523,7 +5523,7 @@ public:
 	int                                                          Frequency;                                         // 0x4(0x4)
 	struct FName                                                 CustomName;                                        // 0x8(0x8)
 	byte                                                         CollisionEventLimit;                               // 0x10(0x1)
-	TArray<class ParticleModuleEventsToSendToGame*>              ParticleModuleEventsToSendToGame;                  // 0x18(0x10)
+	TArray<class ParticleModuleEventSendToGame*>                 ParticleModuleEventsToSendToGame;                  // 0x18(0x10)
 };
 
 
@@ -5650,7 +5650,7 @@ public:
 	Class ParticleComputeShaderData*                             ParticleComputeData;                               // 0x20(0x8)
 	Class ParticleModuleParametersOverVelocity*                  ParametersOverVelocity;                            // 0x28(0x8)
 	Class ParticleModuleParametersOverCustom*                    ParametersOverCustom;                              // 0x30(0x8)
-	TArray<class SpawnModules*>                                  SpawnModules;                                      // 0x38(0x10)
+	TArray<class ParticleModule*>                                SpawnModules;                                      // 0x38(0x10)
 	Struct GPUSpriteLocalVectorFieldInfo                         LocalVectorField;                                  // 0x50(0x70)
 	Struct FloatDistribution                                     VectorFieldScale;                                  // 0xc0(0x28)
 	Struct FloatDistribution                                     PointAttractorStrength;                            // 0xe8(0x28)

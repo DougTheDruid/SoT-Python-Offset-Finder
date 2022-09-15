@@ -31,13 +31,13 @@
       },
       {
         "Name": "Tokens",
-        "Type": "TArray<class Tokens*>",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x510"
       },
       {
         "Name": "DaggerPositions",
-        "Type": "TArray<Struct Tokens>",
+        "Type": "TArray<Struct Transform>",
         "Size": "0x10",
         "Offset": "0x520"
       }

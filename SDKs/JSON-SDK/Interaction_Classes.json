@@ -67,7 +67,7 @@
       },
       {
         "Name": "InteractionPrerequisites",
-        "Type": "TArray<class InteractionPrerequisites*>",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
         "Size": "0x10",
         "Offset": "0x108"
       },
@@ -181,7 +181,7 @@
     "Attributes": [
       {
         "Name": "InteractableAreas",
-        "Type": "TArray<class InteractableAreas*>",
+        "Type": "TArray<class InteractableArea*>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -202,7 +202,7 @@
     "Attributes": [
       {
         "Name": "ActorsToPreventInteractingWith",
-        "Type": "TArray<class ActorsToPreventInteractingWith*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xd0"
       }

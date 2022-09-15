@@ -107,7 +107,7 @@ CommodityRedemptionComponent:
   - Name: PendingRedemptions
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<class PendingRedemptions*>
+    Type: TArray<class Actor*>
   ClassSize: '0xc8'
   FullSize: '0x190'
   InheritedSize: '0xc8'

@@ -213,7 +213,7 @@ class BullRushAIAbilityParams: public MeleeChargeAIAbilityParams
 {
 public:
 	float                                                        StaticCollisionWarmup;                             // 0xe0(0x4)
-	TArray<class ValidatorEQSystems*>                            ValidatorEQSystems;                                // 0xe8(0x10)
+	TArray<class EnvQuery*>                                      ValidatorEQSystems;                                // 0xe8(0x10)
 	float                                                        TimeBetweenCanExecuteChecks;                       // 0xf8(0x4)
 };
 

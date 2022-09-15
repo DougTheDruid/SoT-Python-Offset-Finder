@@ -13,7 +13,7 @@
       },
       {
         "Name": "ChildNodes",
-        "Type": "TArray<class ChildNodes*>",
+        "Type": "TArray<class WidgetReflectorNodeBase*>",
         "Size": "0x10",
         "Offset": "0x60"
       },

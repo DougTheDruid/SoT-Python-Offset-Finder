@@ -76,7 +76,7 @@
       },
       {
         "Name": "TargetEffects",
-        "Type": "TArray<class TargetEffects*>",
+        "Type": "TArray<class GameplayEffect*>",
         "Size": "0x10",
         "Offset": "0x220"
       },
@@ -410,7 +410,7 @@
       },
       {
         "Name": "SpawnedAttributes",
-        "Type": "TArray<class SpawnedAttributes*>",
+        "Type": "TArray<class AttributeSet*>",
         "Size": "0x10",
         "Offset": "0x140"
       },
@@ -440,13 +440,13 @@
       },
       {
         "Name": "AllReplicatedInstancedAbilities",
-        "Type": "TArray<class AllReplicatedInstancedAbilities*>",
+        "Type": "TArray<class GameplayAbility*>",
         "Size": "0x10",
         "Offset": "0x2f8"
       },
       {
         "Name": "SpawnedTargetActors",
-        "Type": "TArray<class SpawnedTargetActors*>",
+        "Type": "TArray<class GameplayAbilityTargetActor*>",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
@@ -1163,7 +1163,7 @@
       },
       {
         "Name": "GameplayEffectsWhileAnimating",
-        "Type": "TArray<class GameplayEffectsWhileAnimating*>",
+        "Type": "TArray<class GameplayEffect*>",
         "Size": "0x10",
         "Offset": "0x470"
       }
@@ -1298,7 +1298,7 @@
       },
       {
         "Name": "VisualizationComponents",
-        "Type": "TArray<class VisualizationComponents*>",
+        "Type": "TArray<class ActorComponent*>",
         "Size": "0x10",
         "Offset": "0x3f0"
       }

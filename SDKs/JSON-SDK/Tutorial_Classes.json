@@ -40,7 +40,7 @@
       },
       {
         "Name": "SpawnedPromptActors",
-        "Type": "TArray<class SpawnedPromptActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xd8"
       }

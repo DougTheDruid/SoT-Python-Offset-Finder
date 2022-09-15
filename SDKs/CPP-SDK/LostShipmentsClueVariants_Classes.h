@@ -113,7 +113,7 @@ public:
 class AbandonedNoteClueGenderSpecificTextIndexAsset: public AbandonedNoteClueTextIndexAssetBase
 {
 public:
-	TArray<class ClueDestinationDescriptions*>                   ClueDestinationDescriptions;                       // 0x28(0x10)
+	TArray<class AbandonedNoteClueGenderSpecificTextAsset*>      ClueDestinationDescriptions;                       // 0x28(0x10)
 };
 
 
@@ -121,7 +121,7 @@ public:
 class AbandonedNoteClueTextIndexAsset: public AbandonedNoteClueTextIndexAssetBase
 {
 public:
-	TArray<class ClueDestinationDescriptions*>                   ClueDestinationDescriptions;                       // 0x28(0x10)
+	TArray<class AbandonedNoteClueTextAsset*>                    ClueDestinationDescriptions;                       // 0x28(0x10)
 };
 
 
@@ -442,7 +442,7 @@ public:
 class TaleQuestClueInventoryService: public TaleQuestService
 {
 public:
-	TArray<class ObtainedClues*>                                 ObtainedClues;                                     // 0x78(0x10)
+	TArray<class ClueDescriptor*>                                ObtainedClues;                                     // 0x78(0x10)
 	Struct FText                                                 TitleText;                                         // 0x248(0x38)
 	Class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x280(0x8)
 };

@@ -645,7 +645,7 @@
       },
       {
         "Name": "AllProxyObjects",
-        "Type": "TArray<class AllProxyObjects*>",
+        "Type": "TArray<class AIAsyncTaskBlueprintProxy*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -715,7 +715,7 @@
     "Attributes": [
       {
         "Name": "Senses",
-        "Type": "TArray<class Senses*>",
+        "Type": "TArray<class AISense*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -765,7 +765,7 @@
       },
       {
         "Name": "SensesConfig",
-        "Type": "TArray<class SensesConfig*>",
+        "Type": "TArray<class AISenseConfig*>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -831,13 +831,13 @@
       },
       {
         "Name": "ListenerContainer",
-        "Type": "TArray<class ListenerContainer*>",
+        "Type": "TArray<class AIPerceptionComponent*>",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "UnprocessedEvents",
-        "Type": "TArray<class UnprocessedEvents*>",
+        "Type": "TArray<class AISenseEvent*>",
         "Size": "0x10",
         "Offset": "0xa0"
       }
@@ -1255,7 +1255,7 @@
     "Attributes": [
       {
         "Name": "NodeInstances",
-        "Type": "TArray<class NodeInstances*>",
+        "Type": "TArray<class BTNode*>",
         "Size": "0x10",
         "Offset": "0x148"
       }
@@ -1275,7 +1275,7 @@
       },
       {
         "Name": "Services",
-        "Type": "TArray<class Services*>",
+        "Type": "TArray<class BTService*>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -1301,7 +1301,7 @@
       },
       {
         "Name": "RootDecorators",
-        "Type": "TArray<class RootDecorators*>",
+        "Type": "TArray<class BTDecorator*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -1333,7 +1333,7 @@
       },
       {
         "Name": "ActiveComponents",
-        "Type": "TArray<class ActiveComponents*>",
+        "Type": "TArray<class BehaviorTreeComponent*>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -1431,7 +1431,7 @@
       },
       {
         "Name": "KeyInstances",
-        "Type": "TArray<class KeyInstances*>",
+        "Type": "TArray<class BlackboardKeyType*>",
         "Size": "0x10",
         "Offset": "0xf8"
       }
@@ -2473,7 +2473,7 @@
     "Attributes": [
       {
         "Name": "Options",
-        "Type": "TArray<class Options*>",
+        "Type": "TArray<class EnvQueryOption*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -2596,7 +2596,7 @@
       },
       {
         "Name": "LocalContexts",
-        "Type": "TArray<class LocalContexts*>",
+        "Type": "TArray<class EnvQueryContext*>",
         "Size": "0x10",
         "Offset": "0xa8"
       }
@@ -2662,7 +2662,7 @@
     "Attributes": [
       {
         "Name": "Generators",
-        "Type": "TArray<class Generators*>",
+        "Type": "TArray<class EnvQueryGenerator*>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -3053,7 +3053,7 @@
       },
       {
         "Name": "Tests",
-        "Type": "TArray<class Tests*>",
+        "Type": "TArray<class EnvQueryTest*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -3293,7 +3293,7 @@
     "Attributes": [
       {
         "Name": "ActionSequence",
-        "Type": "TArray<class ActionSequence*>",
+        "Type": "TArray<class PawnAction*>",
         "Size": "0x10",
         "Offset": "0x90"
       },

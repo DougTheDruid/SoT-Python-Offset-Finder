@@ -17,7 +17,7 @@ public:
 class FakeShip: public Actor
 {
 public:
-	TArray<class AttachedItems*>                                 AttachedItems;                                     // 0x3d0(0x10)
+	TArray<class ItemProxy*>                                     AttachedItems;                                     // 0x3d0(0x10)
 };
 
 
@@ -229,7 +229,7 @@ public:
 	Class CurveFloat*                                            AngularDampingOverTimeWhileBeachedScalarCurve;     // 0x7f0(0x8)
 	Struct RowboatDamageEffectData                               DamageEffectData;                                  // 0x7f8(0x18)
 	Struct RowboatStrainDamageData                               StrainDamageData;                                  // 0x810(0x20)
-	TArray<class AlwaysEnabledInteractables*>                    AlwaysEnabledInteractables;                        // 0x830(0x10)
+	TArray<class ChildActorComponent*>                           AlwaysEnabledInteractables;                        // 0x830(0x10)
 	Class ShroudBreakerTrackerComponent*                         ShroudBreakerTrackerComponent;                     // 0x840(0x8)
 	bool                                                         IsBeingLaunched;                                   // 0x848(0x1)
 	bool                                                         IsSinking;                                         // 0x849(0x1)
@@ -368,7 +368,7 @@ public:
 class WatercraftTrackerComponent: public ActorComponent
 {
 public:
-	TArray<class CurrentWatercrafts*>                            CurrentWatercrafts;                                // 0xd0(0x10)
+	TArray<class Actor*>                                         CurrentWatercrafts;                                // 0xd0(0x10)
 };
 
 

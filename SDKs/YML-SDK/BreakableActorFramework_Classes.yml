@@ -93,7 +93,7 @@ BreakableActorDynamicMaterialComponent:
   - Name: DynamicMaterials
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: BreakableActor
     Offset: '0x110'
     Size: '0x8'

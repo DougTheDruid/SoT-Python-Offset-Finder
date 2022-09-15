@@ -12,7 +12,7 @@ struct ChecklistItem
 public:
 	Struct FText                                                 Description;                                       // 0x0(0x38)
 	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
-	TArray<class ActionData*>                                    ActionData;                                        // 0x40(0x10)
+	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
 };
 
 

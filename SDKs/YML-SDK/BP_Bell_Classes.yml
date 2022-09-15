@@ -5,7 +5,7 @@ BP_Bell_C:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x570'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom*
+    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   ClassSize: '0x8'
   FullSize: '0x578'
   InheritedSize: '0x570'

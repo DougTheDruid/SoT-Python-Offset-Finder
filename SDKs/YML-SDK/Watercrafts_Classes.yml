@@ -11,7 +11,7 @@ FakeShip:
   - Name: AttachedItems
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class AttachedItems*>
+    Type: TArray<class ItemProxy*>
   ClassSize: '0x100'
   FullSize: '0x4c8'
   InheritedSize: '0x3c8'
@@ -133,7 +133,7 @@ Rowboat:
   - Name: AlwaysEnabledInteractables
     Offset: '0x830'
     Size: '0x10'
-    Type: TArray<class AlwaysEnabledInteractables*>
+    Type: TArray<class ChildActorComponent*>
   - Name: ShroudBreakerTrackerComponent
     Offset: '0x840'
     Size: '0x8'
@@ -617,7 +617,7 @@ WatercraftTrackerComponent:
   - Name: CurrentWatercrafts
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class CurrentWatercrafts*>
+    Type: TArray<class Actor*>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'

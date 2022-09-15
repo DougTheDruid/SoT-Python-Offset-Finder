@@ -21,7 +21,7 @@ public:
 	TArray<Struct MovieSceneSpawnable>                           Spawnables;                                        // 0x80(0x10)
 	TArray<Struct MovieScenePossessable>                         Possessables;                                      // 0x90(0x10)
 	TArray<Struct MovieSceneBinding>                             ObjectBindings;                                    // 0xa0(0x10)
-	TArray<class MasterTracks*>                                  MasterTracks;                                      // 0xb0(0x10)
+	TArray<class MovieSceneTrack*>                               MasterTracks;                                      // 0xb0(0x10)
 	Class MovieSceneTrack*                                       CameraCutTrack;                                    // 0xc0(0x8)
 	Struct FloatRange                                            SelectionRange;                                    // 0xc8(0x10)
 	Struct FloatRange                                            PlaybackRange;                                     // 0xd8(0x10)
@@ -68,8 +68,8 @@ class MovieSceneFolder: public Object
 {
 public:
 	struct FName                                                 FolderName;                                        // 0x28(0x8)
-	TArray<class ChildFolders*>                                  ChildFolders;                                      // 0x30(0x10)
-	TArray<class ChildMasterTracks*>                             ChildMasterTracks;                                 // 0x40(0x10)
+	TArray<class MovieSceneFolder*>                              ChildFolders;                                      // 0x30(0x10)
+	TArray<class MovieSceneTrack*>                               ChildMasterTracks;                                 // 0x40(0x10)
 	TArray<Str ChildObjectBindingStrings>                        ChildObjectBindingStrings;                         // 0x50(0x10)
 };
 

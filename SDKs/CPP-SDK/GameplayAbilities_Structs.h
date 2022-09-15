@@ -294,8 +294,8 @@ public:
 	byte                                                         ActiveCount;                                       // 0x29(0x1)
 	bool                                                         RemoveAfterActivation;                             // 0x2a(0x1)
 	Struct GameplayAbilityActivationInfo                         ActivationInfo;                                    // 0x30(0x20)
-	TArray<class NonReplicatedInstances*>                        NonReplicatedInstances;                            // 0x50(0x10)
-	TArray<class ReplicatedInstances*>                           ReplicatedInstances;                               // 0x60(0x10)
+	TArray<class GameplayAbility*>                               NonReplicatedInstances;                            // 0x50(0x10)
+	TArray<class GameplayAbility*>                               ReplicatedInstances;                               // 0x60(0x10)
 	Struct ActiveGameplayEffectHandle                            GameplayEffectHandle;                              // 0x70(0x4)
 	bool                                                         PendingRemove;                                     // 0x74(0x1)
 };

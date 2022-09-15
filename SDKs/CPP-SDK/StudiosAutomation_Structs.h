@@ -19,7 +19,7 @@ public:
 struct ClientPawnDetails
 {
 public:
-	TArray<class Pawns*>                                         Pawns;                                             // 0x0(0x10)
+	TArray<class Pawn*>                                          Pawns;                                             // 0x0(0x10)
 };
 
 

@@ -71,7 +71,7 @@
       },
       {
         "Name": "PulleyInstances",
-        "Type": "TArray<class PulleyInstances*>",
+        "Type": "TArray<class MobileInstancedStaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x400"
       },

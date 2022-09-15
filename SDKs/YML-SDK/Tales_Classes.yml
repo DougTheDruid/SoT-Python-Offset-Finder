@@ -95,15 +95,15 @@ CutsceneResponsesTaleService:
   - Name: TrackedResponseCoordinators
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class TrackedResponseCoordinators*>
+    Type: TArray<class CutsceneResponseCoordinator*>
   - Name: TrackedResponseComponents
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<class TrackedResponseComponents*>
+    Type: TArray<class CutsceneResponseComponent*>
   - Name: ResponseRelevantActors
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class ResponseRelevantActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x30'
   FullSize: '0x90'
   InheritedSize: '0x60'
@@ -483,7 +483,7 @@ LoadSequencerAnimationStepDesc:
   - Name: LevelSequencesToLoad
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class LevelSequencesToLoad*>
+    Type: TArray<class LevelSequence*>
   - Name: TargetActorToSpawn
     Offset: '0x90'
     Size: '0x20'
@@ -817,7 +817,7 @@ RewardGenTaleQuestService:
   - Name: ItemsToSpawn
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class ItemsToSpawn*>
+    Type: TArray<class ItemSpawnData*>
   ClassSize: '0x30'
   FullSize: '0x90'
   InheritedSize: '0x60'
@@ -1196,36 +1196,32 @@ TaleQuestAddChecklistMapStepDesc:
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
-  - Name: OverrideTreasureMapItemDesc
-    Offset: '0x88'
-    Size: '0x10'
-    Type: Struct StringAssetReference
   - Name: Title
-    Offset: '0x98'
+    Offset: '0xa8'
     Size: '0x20'
     Type: Struct QuestVariableText
   - Name: Description
-    Offset: '0xb8'
+    Offset: '0xc8'
     Size: '0x20'
     Type: Struct QuestVariableText
   - Name: ChecklistItemsData
-    Offset: '0xd8'
+    Offset: '0xe8'
     Size: '0x20'
     Type: Struct QuestVariableDataAsset
   - Name: Afternote
-    Offset: '0xf8'
+    Offset: '0x108'
     Size: '0x20'
     Type: Struct QuestVariableText
   - Name: Layout
-    Offset: '0x118'
+    Offset: '0x128'
     Size: '0x20'
     Type: Struct QuestVariableDataAsset
   - Name: RadialMiniIcon
-    Offset: '0x138'
+    Offset: '0x148'
     Size: '0x1'
     Type: byte
-  ClassSize: '0xc0'
-  FullSize: '0x140'
+  ClassSize: '0xd0'
+  FullSize: '0x150'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddCircleMapStep:
@@ -1527,7 +1523,7 @@ TaleQuestCargoRunContractsService:
   - Name: Contracts
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class Contracts*>
+    Type: TArray<class TaleQuestCargoRunContract*>
   ClassSize: '0x48'
   FullSize: '0xa8'
   InheritedSize: '0x60'
@@ -1813,7 +1809,7 @@ TaleQuestFramedStep:
   - Name: Services
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class Services*>
+    Type: TArray<class TaleQuestService*>
   - Name: FrameDesc
     Offset: '0xb0'
     Size: '0x8'
@@ -1835,7 +1831,7 @@ TaleQuestFramedStepDesc:
   - Name: Services
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class Services*>
+    Type: TArray<class TaleQuestServiceDesc*>
   - Name: Variables
     Offset: '0x90'
     Size: '0x8'
@@ -1880,6 +1876,30 @@ TaleQuestGetCollectionItemCountStepDesc:
     Type: Struct QuestVariableInt
   ClassSize: '0x40'
   FullSize: '0xc0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestGetParticipatingCrewsInRadiusStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestGetParticipatingCrewsInRadiusStepDesc:
+  Attributes:
+  - Name: CrewIds
+    Offset: '0x80'
+    Size: '0x20'
+    Type: Struct QuestVariableGuidArray
+  - Name: Location
+    Offset: '0xa0'
+    Size: '0x20'
+    Type: Struct QuestVariableVector
+  - Name: Radius
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x48'
+  FullSize: '0xc8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGetParticipatingCrewsStep:
@@ -1965,7 +1985,7 @@ TaleQuestInteractionPreventionService:
   - Name: TrackedInteractionActors
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class TrackedInteractionActors*>
+    Type: TArray<class Actor*>
   - Name: Desc
     Offset: '0x70'
     Size: '0x8'
@@ -2015,7 +2035,7 @@ TaleQuestMerchantContractsService:
   - Name: Contracts
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class Contracts*>
+    Type: TArray<class TaleQuestMerchantContract*>
   ClassSize: '0x10'
   FullSize: '0x70'
   InheritedSize: '0x60'

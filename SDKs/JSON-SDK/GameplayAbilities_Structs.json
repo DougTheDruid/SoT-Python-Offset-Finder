@@ -743,13 +743,13 @@
       },
       {
         "Name": "NonReplicatedInstances",
-        "Type": "TArray<class NonReplicatedInstances*>",
+        "Type": "TArray<class GameplayAbility*>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "ReplicatedInstances",
-        "Type": "TArray<class ReplicatedInstances*>",
+        "Type": "TArray<class GameplayAbility*>",
         "Size": "0x10",
         "Offset": "0x60"
       },

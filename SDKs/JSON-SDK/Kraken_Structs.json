@@ -137,7 +137,7 @@
     "Attributes": [
       {
         "Name": "Params",
-        "Type": "TArray<class Params*>",
+        "Type": "TArray<class KrakenShipHittingBehaviourParamsDataAsset*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -525,7 +525,7 @@
     "Attributes": [
       {
         "Name": "Params",
-        "Type": "TArray<class Params*>",
+        "Type": "TArray<class KrakenShipWrappingBehaviourParamsDataAsset*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -716,7 +716,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaning",
+        "Name": "ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaningOnSameSide",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x44"
@@ -1228,7 +1228,7 @@
       },
       {
         "Name": "TransitionAnimations",
-        "Type": "TArray<class TransitionAnimations*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x10"
       }

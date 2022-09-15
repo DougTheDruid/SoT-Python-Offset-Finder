@@ -25,7 +25,7 @@ BP_DamageZone_C:
   - Name: Deferred Decals
     Offset: '0x818'
     Size: '0x10'
-    Type: TArray<class Deferred Decals*>
+    Type: TArray<class DecalComponent*>
   - Name: ClientUpdateEventCount
     Offset: '0x828'
     Size: '0x4'

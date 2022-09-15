@@ -89,11 +89,11 @@ BP_PlayerPirate_C:
   - Name: SkeletalMeshArray
     Offset: '0x1bf8'
     Size: '0x10'
-    Type: TArray<class SkeletalMeshArray*>
+    Type: TArray<class SkeletalMesh*>
   - Name: StaticMeshArray
     Offset: '0x1c08'
     Size: '0x10'
-    Type: TArray<class StaticMeshArray*>
+    Type: TArray<class StaticMesh*>
   - Name: IsSkeletalMesh
     Offset: '0x1c18'
     Size: '0x1'

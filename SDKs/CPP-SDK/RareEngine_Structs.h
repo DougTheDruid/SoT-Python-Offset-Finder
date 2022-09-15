@@ -76,7 +76,7 @@ public:
 struct StaticMeshComponentList
 {
 public:
-	TArray<class Components*>                                    Components;                                        // 0x0(0x10)
+	TArray<class StaticMeshComponent*>                           Components;                                        // 0x0(0x10)
 };
 
 
@@ -84,7 +84,7 @@ public:
 struct StaticMeshActorList
 {
 public:
-	TArray<class Actors*>                                        Actors;                                            // 0x0(0x10)
+	TArray<class StaticMeshActor*>                               Actors;                                            // 0x0(0x10)
 };
 
 

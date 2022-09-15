@@ -43,7 +43,7 @@
       },
       {
         "Name": "MaterialInstance",
-        "Type": "TArray<class MaterialInstance*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x440"
       },

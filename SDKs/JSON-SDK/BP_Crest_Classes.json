@@ -115,7 +115,7 @@
       },
       {
         "Name": "VFXSizeVariants",
-        "Type": "TArray<class VFXSizeVariants*>",
+        "Type": "TArray<class ParticleSystem*>",
         "Size": "0x10",
         "Offset": "0x540"
       },

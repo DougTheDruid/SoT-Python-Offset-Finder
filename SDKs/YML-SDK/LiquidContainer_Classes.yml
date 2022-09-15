@@ -33,7 +33,7 @@ LiquidContainerComponent:
   - Name: LiquidMaterials
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<class LiquidMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'

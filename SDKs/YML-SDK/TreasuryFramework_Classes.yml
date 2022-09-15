@@ -91,7 +91,7 @@ TreasuryRoom:
   - Name: OverlappingActors
     Offset: '0x470'
     Size: '0x10'
-    Type: TArray<class OverlappingActors*>
+    Type: TArray<class Actor*>
   - Name: CachedParticipantControllers
     Offset: '0x480'
     Size: '0x10'
@@ -125,19 +125,19 @@ TreasuryWaveDataAsset:
   - Name: Waves1Player
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Waves1Player*>
+    Type: TArray<class AIProgressiveWavesSpawner*>
   - Name: Waves2Player
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Waves2Player*>
+    Type: TArray<class AIProgressiveWavesSpawner*>
   - Name: Waves3Player
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class Waves3Player*>
+    Type: TArray<class AIProgressiveWavesSpawner*>
   - Name: Waves4Player
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class Waves4Player*>
+    Type: TArray<class AIProgressiveWavesSpawner*>
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'

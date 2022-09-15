@@ -5,7 +5,7 @@ ShortRangeMarker:
   - Name: DynamicMaterials
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<class DynamicMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: LifetimerTimer
     Offset: '0x3e8'
     Size: '0x4'

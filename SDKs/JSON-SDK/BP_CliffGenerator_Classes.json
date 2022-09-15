@@ -43,7 +43,7 @@
       },
       {
         "Name": "Source Actors",
-        "Type": "TArray<class Source Actors*>",
+        "Type": "TArray<class StaticMesh*>",
         "Size": "0x10",
         "Offset": "0x3f8"
       },
@@ -85,7 +85,7 @@
       },
       {
         "Name": "DataArray",
-        "Type": "TArray<Struct Source Actors>",
+        "Type": "TArray<Struct BP_CliffGenerator_Struct>",
         "Size": "0x10",
         "Offset": "0x420"
       },
@@ -277,7 +277,7 @@
       },
       {
         "Name": "ActorsToIgnore",
-        "Type": "TArray<class ActorsToIgnore*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x4c8"
       },
@@ -295,13 +295,13 @@
       },
       {
         "Name": "TopSplineIntersectionPoints",
-        "Type": "TArray<Struct ActorsToIgnore>",
+        "Type": "TArray<Struct Vector>",
         "Size": "0x10",
         "Offset": "0x560"
       },
       {
         "Name": "Local_InternalActorsToIgnore",
-        "Type": "TArray<class Local_InternalActorsToIgnore*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x570"
       },

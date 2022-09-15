@@ -14,7 +14,7 @@
     "Attributes": [
       {
         "Name": "PlayersThatNeedToBeTicked",
-        "Type": "TArray<class PlayersThatNeedToBeTicked*>",
+        "Type": "TArray<class PlayerController*>",
         "Size": "0x10",
         "Offset": "0xb8"
       }
@@ -34,7 +34,7 @@
       },
       {
         "Name": "LoadedAssets",
-        "Type": "TArray<class LoadedAssets*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x3d8"
       }

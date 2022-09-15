@@ -137,13 +137,13 @@
       },
       {
         "Name": "ClueGenerators",
-        "Type": "TArray<class ClueGenerators*>",
+        "Type": "TArray<class ClueDescriptorGenerator*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "DestinationGenerators",
-        "Type": "TArray<class DestinationGenerators*>",
+        "Type": "TArray<class ClueDestinationGenerator*>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -184,13 +184,13 @@
     "Attributes": [
       {
         "Name": "LandClueCreators",
-        "Type": "TArray<class LandClueCreators*>",
+        "Type": "TArray<class LandClueCreator*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "SeaClueCreators",
-        "Type": "TArray<class SeaClueCreators*>",
+        "Type": "TArray<class SeaClueCreator*>",
         "Size": "0x10",
         "Offset": "0x38"
       },

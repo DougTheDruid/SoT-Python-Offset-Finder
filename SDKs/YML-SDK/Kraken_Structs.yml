@@ -309,7 +309,7 @@ KrakenAnimatedTentacleTransitionAnimation:
   - Name: TransitionAnimations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class TransitionAnimations*>
+    Type: TArray<class AnimSequence*>
   ClassSize: '0x20'
 KrakenBehaviourParams:
   Attributes:
@@ -709,7 +709,7 @@ KrakenShipHittingBehaviourParamsCollection:
   - Name: Params
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Params*>
+    Type: TArray<class KrakenShipHittingBehaviourParamsDataAsset*>
   ClassSize: '0x10'
 KrakenShipWrappingBehaviourDamageParams:
   Attributes:
@@ -811,7 +811,7 @@ KrakenShipWrappingBehaviourParamsCollection:
   - Name: Params
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Params*>
+    Type: TArray<class KrakenShipWrappingBehaviourParamsDataAsset*>
   ClassSize: '0x10'
 KrakenShipWrappingBehaviourShakeAttackParams:
   Attributes:
@@ -861,7 +861,7 @@ KrakenShipWrappingBehaviourTentacleHeadParams:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaning
+  - Name: ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaningOnSameSide
     Offset: '0x44'
     Size: '0x4'
     Type: float

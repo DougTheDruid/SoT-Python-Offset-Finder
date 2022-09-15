@@ -119,7 +119,7 @@ AudioSpaceTrackerComponent:
   - Name: CurrentSpaces
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class CurrentSpaces*>
+    Type: TArray<class AudioSpaceComponent*>
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -179,7 +179,7 @@ TritonService:
   - Name: RegisteredTritonComponents
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class RegisteredTritonComponents*>
+    Type: TArray<class TritonComponent*>
   - Name: CachedListenerInfo
     Offset: '0xf0'
     Size: '0x8'

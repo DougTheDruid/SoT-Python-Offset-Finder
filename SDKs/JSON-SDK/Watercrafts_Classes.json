@@ -14,7 +14,7 @@
     "Attributes": [
       {
         "Name": "AttachedItems",
-        "Type": "TArray<class AttachedItems*>",
+        "Type": "TArray<class ItemProxy*>",
         "Size": "0x10",
         "Offset": "0x3d0"
       }
@@ -630,7 +630,7 @@
       },
       {
         "Name": "AlwaysEnabledInteractables",
-        "Type": "TArray<class AlwaysEnabledInteractables*>",
+        "Type": "TArray<class ChildActorComponent*>",
         "Size": "0x10",
         "Offset": "0x830"
       },
@@ -876,7 +876,7 @@
     "Attributes": [
       {
         "Name": "CurrentWatercrafts",
-        "Type": "TArray<class CurrentWatercrafts*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xd0"
       }

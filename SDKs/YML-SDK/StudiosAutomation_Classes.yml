@@ -139,7 +139,7 @@ TestLevelScriptActor:
   - Name: SpawnedActors
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<class SpawnedActors*>
+    Type: TArray<class Actor*>
   - Name: NextSpawnedActorIndex
     Offset: '0x450'
     Size: '0x4'

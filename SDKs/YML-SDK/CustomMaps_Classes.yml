@@ -9,7 +9,7 @@ CustomMap:
   - Name: DisplayItems
     Offset: '0x840'
     Size: '0x10'
-    Type: TArray<class DisplayItems*>
+    Type: TArray<class CustomMapDisplayObjectBase*>
   ClassSize: '0x30'
   FullSize: '0x860'
   InheritedSize: '0x830'
@@ -33,7 +33,7 @@ CustomMapData:
   - Name: MapDisplayItemList
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class MapDisplayItemList*>
+    Type: TArray<class CustomMapDataTypeBase*>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

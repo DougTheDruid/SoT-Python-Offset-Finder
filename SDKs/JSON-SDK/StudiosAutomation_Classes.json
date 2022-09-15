@@ -97,7 +97,7 @@
       },
       {
         "Name": "SpawnedActors",
-        "Type": "TArray<class SpawnedActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x440"
       },

@@ -70,7 +70,7 @@
     "Attributes": [
       {
         "Name": "Contexts",
-        "Type": "TArray<class Contexts*>",
+        "Type": "TArray<class DeliverableRedirectionContextBase*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -119,7 +119,7 @@
     "Attributes": [
       {
         "Name": "Requirements",
-        "Type": "TArray<class Requirements*>",
+        "Type": "TArray<class DeliverableRequirementBase*>",
         "Size": "0x10",
         "Offset": "0x28"
       },

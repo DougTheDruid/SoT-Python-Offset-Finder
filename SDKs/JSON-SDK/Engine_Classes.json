@@ -388,7 +388,7 @@
       },
       {
         "Name": "ControllingMatineeActors",
-        "Type": "TArray<class ControllingMatineeActors*>",
+        "Type": "TArray<class MatineeActor*>",
         "Size": "0x10",
         "Offset": "0x170"
       },
@@ -466,19 +466,19 @@
       },
       {
         "Name": "BlueprintCreatedComponents",
-        "Type": "TArray<class BlueprintCreatedComponents*>",
+        "Type": "TArray<class ActorComponent*>",
         "Size": "0x10",
         "Offset": "0x320"
       },
       {
         "Name": "InstanceComponents",
-        "Type": "TArray<class InstanceComponents*>",
+        "Type": "TArray<class ActorComponent*>",
         "Size": "0x10",
         "Offset": "0x330"
       },
       {
         "Name": "ChildActorInterfaceProviders",
-        "Type": "TArray<class ChildActorInterfaceProviders*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x348"
       },
@@ -512,7 +512,7 @@
     "Attributes": [
       {
         "Name": "AttachChildren",
-        "Type": "TArray<class AttachChildren*>",
+        "Type": "TArray<class SceneComponent*>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -656,7 +656,7 @@
       },
       {
         "Name": "MovedActors",
-        "Type": "TArray<class MovedActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x278"
       }
@@ -2168,7 +2168,7 @@
       },
       {
         "Name": "AdditionalFonts",
-        "Type": "TArray<class AdditionalFonts*>",
+        "Type": "TArray<class Font*>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
@@ -3348,7 +3348,7 @@
     "Attributes": [
       {
         "Name": "LocalPlayers",
-        "Type": "TArray<class LocalPlayers*>",
+        "Type": "TArray<class LocalPlayer*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -3507,7 +3507,7 @@
       },
       {
         "Name": "InactivePlayerArray",
-        "Type": "TArray<class InactivePlayerArray*>",
+        "Type": "TArray<class PlayerState*>",
         "Size": "0x10",
         "Offset": "0x488"
       },
@@ -4117,7 +4117,7 @@
       },
       {
         "Name": "PlayerArray",
-        "Type": "TArray<class PlayerArray*>",
+        "Type": "TArray<class PlayerState*>",
         "Size": "0x10",
         "Offset": "0x3f8"
       },
@@ -4416,7 +4416,7 @@
       },
       {
         "Name": "HiddenActors",
-        "Type": "TArray<class HiddenActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x488"
       },
@@ -5354,7 +5354,7 @@
       },
       {
         "Name": "PostRenderedActors",
-        "Type": "TArray<class PostRenderedActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
@@ -5494,7 +5494,7 @@
     "Attributes": [
       {
         "Name": "OverrideMaterials",
-        "Type": "TArray<class OverrideMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x5b8"
       }
@@ -6427,7 +6427,7 @@
       },
       {
         "Name": "Expressions",
-        "Type": "TArray<class Expressions*>",
+        "Type": "TArray<class MaterialExpression*>",
         "Size": "0x10",
         "Offset": "0x918"
       },
@@ -6529,7 +6529,7 @@
       },
       {
         "Name": "ExpressionTextureReferences",
-        "Type": "TArray<class ExpressionTextureReferences*>",
+        "Type": "TArray<class Texture*>",
         "Size": "0x10",
         "Offset": "0xa00"
       }
@@ -6643,13 +6643,13 @@
       },
       {
         "Name": "EmitterMaterials",
-        "Type": "TArray<class EmitterMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x5c0"
       },
       {
         "Name": "SkelMeshComponents",
-        "Type": "TArray<class SkelMeshComponents*>",
+        "Type": "TArray<class SkeletalMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x5d0"
       },
@@ -6763,7 +6763,7 @@
       },
       {
         "Name": "ReplayClips",
-        "Type": "TArray<class ReplayClips*>",
+        "Type": "TArray<class ParticleSystemReplay*>",
         "Size": "0x10",
         "Offset": "0x740"
       },
@@ -7320,19 +7320,19 @@
       },
       {
         "Name": "DynamicBindingObjects",
-        "Type": "TArray<class DynamicBindingObjects*>",
+        "Type": "TArray<class DynamicBlueprintBinding*>",
         "Size": "0x10",
         "Offset": "0x1c8"
       },
       {
         "Name": "ComponentTemplates",
-        "Type": "TArray<class ComponentTemplates*>",
+        "Type": "TArray<class ActorComponent*>",
         "Size": "0x10",
         "Offset": "0x1d8"
       },
       {
         "Name": "Timelines",
-        "Type": "TArray<class Timelines*>",
+        "Type": "TArray<class TimelineTemplate*>",
         "Size": "0x10",
         "Offset": "0x1e8"
       },
@@ -7442,7 +7442,7 @@
     "Attributes": [
       {
         "Name": "Children",
-        "Type": "TArray<class Actor*>",
+        "Type": "TArray<class ChildConnection*>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -7460,13 +7460,13 @@
       },
       {
         "Name": "OpenChannels",
-        "Type": "TArray<class OpenChannels*>",
+        "Type": "TArray<class Channel*>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "SentTemporaries",
-        "Type": "TArray<class SentTemporaries*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -7508,7 +7508,7 @@
       },
       {
         "Name": "DeferredCloseChannels",
-        "Type": "TArray<class DeferredCloseChannels*>",
+        "Type": "TArray<class Channel*>",
         "Size": "0x10",
         "Offset": "0x344c0"
       }
@@ -7600,7 +7600,7 @@
       },
       {
         "Name": "ClientConnections",
-        "Type": "TArray<class ClientConnections*>",
+        "Type": "TArray<class NetConnection*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -7658,7 +7658,7 @@
     "Attributes": [
       {
         "Name": "Pins",
-        "Type": "TArray<class Pins*>",
+        "Type": "TArray<class EdGraphPin*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -7804,13 +7804,13 @@
       },
       {
         "Name": "LinkedTo",
-        "Type": "TArray<class LinkedTo*>",
+        "Type": "TArray<class EdGraphPin*>",
         "Size": "0x10",
         "Offset": "0x100"
       },
       {
         "Name": "SubPins",
-        "Type": "TArray<class SubPins*>",
+        "Type": "TArray<class EdGraphPin*>",
         "Size": "0x10",
         "Offset": "0x110"
       },
@@ -7968,13 +7968,13 @@
       },
       {
         "Name": "ComponentTemplates",
-        "Type": "TArray<class ComponentTemplates*>",
+        "Type": "TArray<class ActorComponent*>",
         "Size": "0x10",
         "Offset": "0x78"
       },
       {
         "Name": "Timelines",
-        "Type": "TArray<class Timelines*>",
+        "Type": "TArray<class TimelineTemplate*>",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -8177,19 +8177,19 @@
       },
       {
         "Name": "ExtraReferencedObjects",
-        "Type": "TArray<class ExtraReferencedObjects*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "PerModuleDataObjects",
-        "Type": "TArray<class PerModuleDataObjects*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "StreamingLevels",
-        "Type": "TArray<class StreamingLevels*>",
+        "Type": "TArray<class LevelStreaming*>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -8219,7 +8219,7 @@
       },
       {
         "Name": "DirtyStreamingLevels",
-        "Type": "TArray<class DirtyStreamingLevels*>",
+        "Type": "TArray<class LevelStreaming*>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -8285,7 +8285,7 @@
       },
       {
         "Name": "Levels",
-        "Type": "TArray<class Levels*>",
+        "Type": "TArray<class Level*>",
         "Size": "0x10",
         "Offset": "0x150"
       },
@@ -8303,7 +8303,7 @@
       },
       {
         "Name": "ParameterCollectionInstances",
-        "Type": "TArray<class ParameterCollectionInstances*>",
+        "Type": "TArray<class MaterialParameterCollectionInstance*>",
         "Size": "0x10",
         "Offset": "0x1c8"
       },
@@ -8347,7 +8347,7 @@
       },
       {
         "Name": "ModelComponents",
-        "Type": "TArray<class ModelComponents*>",
+        "Type": "TArray<class ModelComponent*>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -8371,7 +8371,7 @@
       },
       {
         "Name": "NavDataChunks",
-        "Type": "TArray<class NavDataChunks*>",
+        "Type": "TArray<class NavigationDataChunk*>",
         "Size": "0x10",
         "Offset": "0x108"
       },
@@ -8871,13 +8871,13 @@
     "Attributes": [
       {
         "Name": "OverrideVisibleActors",
-        "Type": "TArray<class OverrideVisibleActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x400"
       },
       {
         "Name": "OverrideInvisibleActors",
-        "Type": "TArray<class OverrideInvisibleActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x410"
       },
@@ -9159,7 +9159,7 @@
       },
       {
         "Name": "ModifierList",
-        "Type": "TArray<class ModifierList*>",
+        "Type": "TArray<class CameraModifier*>",
         "Size": "0x10",
         "Offset": "0x1b38"
       },
@@ -9189,7 +9189,7 @@
       },
       {
         "Name": "CameraLensEffects",
-        "Type": "TArray<class CameraLensEffects*>",
+        "Type": "TArray<class EmitterCameraLensEffectBase*>",
         "Size": "0x10",
         "Offset": "0x1b88"
       },
@@ -9213,13 +9213,13 @@
       },
       {
         "Name": "ActiveAnims",
-        "Type": "TArray<class ActiveAnims*>",
+        "Type": "TArray<class CameraAnimInst*>",
         "Size": "0x10",
         "Offset": "0x1c00"
       },
       {
         "Name": "FreeAnims",
-        "Type": "TArray<class FreeAnims*>",
+        "Type": "TArray<class CameraAnimInst*>",
         "Size": "0x10",
         "Offset": "0x1c10"
       },
@@ -10171,7 +10171,7 @@
       },
       {
         "Name": "SubActors",
-        "Type": "TArray<class SubActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
@@ -10189,7 +10189,7 @@
       },
       {
         "Name": "SubObjects",
-        "Type": "TArray<class SubObjects*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x3e8"
       }
@@ -10203,7 +10203,7 @@
     "Attributes": [
       {
         "Name": "TargetActors",
-        "Type": "TArray<class TargetActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x3c8"
       }
@@ -10343,7 +10343,7 @@
       },
       {
         "Name": "GroupInst",
-        "Type": "TArray<class GroupInst*>",
+        "Type": "TArray<class InterpGroupInst*>",
         "Size": "0x10",
         "Offset": "0x408"
       },
@@ -11148,7 +11148,7 @@
       },
       {
         "Name": "Emitters",
-        "Type": "TArray<class Emitters*>",
+        "Type": "TArray<class ParticleEmitter*>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -11503,13 +11503,13 @@
       },
       {
         "Name": "MorphTargets",
-        "Type": "TArray<class MorphTargets*>",
+        "Type": "TArray<class MorphTarget*>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "MeshPatchAssets",
-        "Type": "TArray<class MeshPatchAssets*>",
+        "Type": "TArray<class MeshPatchAsset*>",
         "Size": "0x10",
         "Offset": "0x108"
       },
@@ -11527,7 +11527,7 @@
       },
       {
         "Name": "Sockets",
-        "Type": "TArray<class Sockets*>",
+        "Type": "TArray<class SkeletalMeshSocket*>",
         "Size": "0x10",
         "Offset": "0x228"
       }
@@ -11547,7 +11547,7 @@
       },
       {
         "Name": "MetaData",
-        "Type": "TArray<class MetaData*>",
+        "Type": "TArray<class AnimMetaData*>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -12038,7 +12038,7 @@
       },
       {
         "Name": "Sockets",
-        "Type": "TArray<class Sockets*>",
+        "Type": "TArray<class SkeletalMeshSocket*>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -12511,7 +12511,7 @@
     "Attributes": [
       {
         "Name": "Aggregatables",
-        "Type": "TArray<class Aggregatables*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
@@ -12647,13 +12647,13 @@
       },
       {
         "Name": "NavDataSet",
-        "Type": "TArray<class NavDataSet*>",
+        "Type": "TArray<class NavigationData*>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "NavDataRegistrationQueue",
-        "Type": "TArray<class NavDataRegistrationQueue*>",
+        "Type": "TArray<class NavigationData*>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -14785,7 +14785,7 @@
       },
       {
         "Name": "Materials",
-        "Type": "TArray<class Materials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -14845,7 +14845,7 @@
       },
       {
         "Name": "Sockets",
-        "Type": "TArray<class Sockets*>",
+        "Type": "TArray<class StaticMeshSocket*>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -15063,7 +15063,7 @@
       },
       {
         "Name": "OriginalMaterials",
-        "Type": "TArray<class OriginalMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x690"
       },
@@ -17201,7 +17201,7 @@
     "Attributes": [
       {
         "Name": "TilesStreaming",
-        "Type": "TArray<class TilesStreaming*>",
+        "Type": "TArray<class LevelStreaming*>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -17705,7 +17705,7 @@
     "Attributes": [
       {
         "Name": "ActiveShakes",
-        "Type": "TArray<class ActiveShakes*>",
+        "Type": "TArray<class CameraShake*>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -17837,7 +17837,7 @@
       },
       {
         "Name": "ObjectsRequiredForQueuedBunches",
-        "Type": "TArray<class ObjectsRequiredForQueuedBunches*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x158"
       }
@@ -18072,7 +18072,7 @@
       },
       {
         "Name": "Materials",
-        "Type": "TArray<class Materials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -18332,7 +18332,7 @@
       },
       {
         "Name": "CursorClasses",
-        "Type": "TArray<class CursorClasses*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x138"
       },
@@ -19022,7 +19022,7 @@
     "Attributes": [
       {
         "Name": "Profiles",
-        "Type": "TArray<class Profiles*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -19571,7 +19571,7 @@
       },
       {
         "Name": "Nodes",
-        "Type": "TArray<class Nodes*>",
+        "Type": "TArray<class EdGraphNode*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -19786,7 +19786,7 @@
       },
       {
         "Name": "Textures",
-        "Type": "TArray<class Textures*>",
+        "Type": "TArray<class Texture2D*>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -20360,7 +20360,7 @@
       },
       {
         "Name": "InterpGroups",
-        "Type": "TArray<class InterpGroups*>",
+        "Type": "TArray<class InterpGroup*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -20438,7 +20438,7 @@
     "Attributes": [
       {
         "Name": "InterpTracks",
-        "Type": "TArray<class InterpTracks*>",
+        "Type": "TArray<class InterpTrack*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -20533,7 +20533,7 @@
       },
       {
         "Name": "TrackInst",
-        "Type": "TArray<class TrackInst*>",
+        "Type": "TArray<class InterpTrackInst*>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -20561,7 +20561,7 @@
     "Attributes": [
       {
         "Name": "SubTracks",
-        "Type": "TArray<class SubTracks*>",
+        "Type": "TArray<class InterpTrack*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -20811,7 +20811,7 @@
     "Attributes": [
       {
         "Name": "TargetMaterials",
-        "Type": "TArray<class TargetMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -21149,7 +21149,7 @@
     "Attributes": [
       {
         "Name": "TargetMaterials",
-        "Type": "TArray<class TargetMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -21305,7 +21305,7 @@
     "Attributes": [
       {
         "Name": "MaterialInstances",
-        "Type": "TArray<class MaterialInstances*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -21527,7 +21527,7 @@
     "Attributes": [
       {
         "Name": "MaterialInstances",
-        "Type": "TArray<class MaterialInstances*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -21625,7 +21625,7 @@
     "Attributes": [
       {
         "Name": "Actors",
-        "Type": "TArray<class Actors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -21711,7 +21711,7 @@
       },
       {
         "Name": "EditorStreamingVolumes",
-        "Type": "TArray<class EditorStreamingVolumes*>",
+        "Type": "TArray<class LevelStreamingVolume*>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
@@ -24870,7 +24870,7 @@
       },
       {
         "Name": "FunctionExpressions",
-        "Type": "TArray<class FunctionExpressions*>",
+        "Type": "TArray<class MaterialExpression*>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -25361,7 +25361,7 @@
       },
       {
         "Name": "Objects",
-        "Type": "TArray<class Objects*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -25393,7 +25393,7 @@
     "Attributes": [
       {
         "Name": "ReferencedObjects",
-        "Type": "TArray<class ReferencedObjects*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -25432,7 +25432,7 @@
       },
       {
         "Name": "LODLevels",
-        "Type": "TArray<class LODLevels*>",
+        "Type": "TArray<class ParticleLODLevel*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -25516,7 +25516,7 @@
       },
       {
         "Name": "ModulesNeedingInstanceData",
-        "Type": "TArray<class ModulesNeedingInstanceData*>",
+        "Type": "TArray<class ParticleModule*>",
         "Size": "0x10",
         "Offset": "0xa0"
       }
@@ -25555,7 +25555,7 @@
       },
       {
         "Name": "Modules",
-        "Type": "TArray<class Modules*>",
+        "Type": "TArray<class ParticleModule*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -25579,31 +25579,31 @@
       },
       {
         "Name": "SpawningModules",
-        "Type": "TArray<class SpawningModules*>",
+        "Type": "TArray<class ParticleModuleSpawnBase*>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "SpawnModules",
-        "Type": "TArray<class SpawnModules*>",
+        "Type": "TArray<class ParticleModule*>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "UpdateModules",
-        "Type": "TArray<class UpdateModules*>",
+        "Type": "TArray<class ParticleModule*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "OrbitModules",
-        "Type": "TArray<class OrbitModules*>",
+        "Type": "TArray<class ParticleModuleOrbit*>",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "EventReceiverModules",
-        "Type": "TArray<class EventReceiverModules*>",
+        "Type": "TArray<class ParticleModuleEventReceiverBase*>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
@@ -27957,7 +27957,7 @@
     "Attributes": [
       {
         "Name": "MeshMaterials",
-        "Type": "TArray<class MeshMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -29651,31 +29651,31 @@
       },
       {
         "Name": "LOD_BeamModule_Source",
-        "Type": "TArray<class LOD_BeamModule_Source*>",
+        "Type": "TArray<class ParticleModuleBeamSource*>",
         "Size": "0x10",
         "Offset": "0x138"
       },
       {
         "Name": "LOD_BeamModule_Target",
-        "Type": "TArray<class LOD_BeamModule_Target*>",
+        "Type": "TArray<class ParticleModuleBeamTarget*>",
         "Size": "0x10",
         "Offset": "0x148"
       },
       {
         "Name": "LOD_BeamModule_Noise",
-        "Type": "TArray<class LOD_BeamModule_Noise*>",
+        "Type": "TArray<class ParticleModuleBeamNoise*>",
         "Size": "0x10",
         "Offset": "0x158"
       },
       {
         "Name": "LOD_BeamModule_SourceModifier",
-        "Type": "TArray<class LOD_BeamModule_SourceModifier*>",
+        "Type": "TArray<class ParticleModuleBeamModifier*>",
         "Size": "0x10",
         "Offset": "0x168"
       },
       {
         "Name": "LOD_BeamModule_TargetModifier",
-        "Type": "TArray<class LOD_BeamModule_TargetModifier*>",
+        "Type": "TArray<class ParticleModuleBeamModifier*>",
         "Size": "0x10",
         "Offset": "0x178"
       }
@@ -30562,7 +30562,7 @@
       },
       {
         "Name": "ConstraintSetup",
-        "Type": "TArray<class ConstraintSetup*>",
+        "Type": "TArray<class PhysicsConstraintTemplate*>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -31157,7 +31157,7 @@
     "Attributes": [
       {
         "Name": "RootNodes",
-        "Type": "TArray<class RootNodes*>",
+        "Type": "TArray<class SCS_Node*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -31219,7 +31219,7 @@
       },
       {
         "Name": "ChildNodes",
-        "Type": "TArray<class ChildNodes*>",
+        "Type": "TArray<class SCS_Node*>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -31550,7 +31550,7 @@
       },
       {
         "Name": "ChildClasses",
-        "Type": "TArray<class ChildClasses*>",
+        "Type": "TArray<class SoundClass*>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -31632,7 +31632,7 @@
     "Attributes": [
       {
         "Name": "ChildNodes",
-        "Type": "TArray<class ChildNodes*>",
+        "Type": "TArray<class SoundNode*>",
         "Size": "0x10",
         "Offset": "0x28"
       }

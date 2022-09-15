@@ -118,7 +118,7 @@ struct TestActionStateConstructionInfoWithObjPointers
 public:
 	Class Object*                                                ObjPointer;                                        // 0x28(0x8)
 	Struct InnerWithObjTestStruct                                Inner;                                             // 0x30(0x8)
-	TArray<class Array*>                                         Array;                                             // 0x38(0x10)
+	TArray<class Object*>                                        Array;                                             // 0x38(0x10)
 };
 
 

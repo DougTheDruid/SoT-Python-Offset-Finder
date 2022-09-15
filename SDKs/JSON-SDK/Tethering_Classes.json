@@ -14,7 +14,7 @@
     "Attributes": [
       {
         "Name": "CordMaterials",
-        "Type": "TArray<class CordMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x628"
       },
@@ -60,7 +60,7 @@
     "Attributes": [
       {
         "Name": "HarpoonMaterials",
-        "Type": "TArray<class HarpoonMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x658"
       },

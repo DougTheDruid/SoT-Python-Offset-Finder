@@ -31,7 +31,7 @@ public:
 class LinkerComponent: public ActorComponent
 {
 public:
-	TArray<class EndPlayHandlers*>                               EndPlayHandlers;                                   // 0x190(0x10)
+	TArray<class EndPlayHandler*>                                EndPlayHandlers;                                   // 0x190(0x10)
 };
 
 

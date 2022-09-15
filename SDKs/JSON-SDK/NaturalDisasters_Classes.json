@@ -549,7 +549,7 @@
       },
       {
         "Name": "GeysersToDisable",
-        "Type": "TArray<class GeysersToDisable*>",
+        "Type": "TArray<class Geyser*>",
         "Size": "0x10",
         "Offset": "0x3d0"
       }
@@ -1112,7 +1112,7 @@
       },
       {
         "Name": "ActorsInZone",
-        "Type": "TArray<class ActorsInZone*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x438"
       },

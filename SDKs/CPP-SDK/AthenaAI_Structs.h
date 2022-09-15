@@ -820,7 +820,7 @@ public:
 struct AthenaAIAbilityDamageStage
 {
 public:
-	TArray<class AbilitiesInStage*>                              AbilitiesInStage;                                  // 0x0(0x10)
+	TArray<class AthenaAIAbilityStageParams*>                    AbilitiesInStage;                                  // 0x0(0x10)
 };
 
 
@@ -860,7 +860,7 @@ public:
 
 
 // Size 0x10
-struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP
+struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties
 {
 public:
 	class                                                        ItemCategory;                                      // 0x0(0x8)
@@ -982,7 +982,7 @@ struct AIEncounterGenerationRecipeFeatureBasedRankOrderList
 {
 public:
 	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	TArray<class Recipes*>                                       Recipes;                                           // 0x8(0x10)
+	TArray<class AIEncounterGenerationRecipe*>                   Recipes;                                           // 0x8(0x10)
 };
 
 

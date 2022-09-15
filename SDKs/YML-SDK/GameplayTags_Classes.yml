@@ -35,7 +35,7 @@ EditableGameplayTagQueryExpression_AllExprMatch:
   - Name: Expressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Expressions*>
+    Type: TArray<class EditableGameplayTagQueryExpression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -55,7 +55,7 @@ EditableGameplayTagQueryExpression_AnyExprMatch:
   - Name: Expressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Expressions*>
+    Type: TArray<class EditableGameplayTagQueryExpression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -75,7 +75,7 @@ EditableGameplayTagQueryExpression_NoExprMatch:
   - Name: Expressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Expressions*>
+    Type: TArray<class EditableGameplayTagQueryExpression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -101,7 +101,7 @@ GameplayTagsManager:
   - Name: GameplayTagTables
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<class GameplayTagTables*>
+    Type: TArray<class DataTable*>
   ClassSize: '0x148'
   FullSize: '0x170'
   InheritedSize: '0x28'

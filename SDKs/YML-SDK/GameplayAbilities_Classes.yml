@@ -15,7 +15,7 @@ AbilitySystemComponent:
   - Name: SpawnedAttributes
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<class SpawnedAttributes*>
+    Type: TArray<class AttributeSet*>
   - Name: ReplicatedPredictionKey
     Offset: '0x150'
     Size: '0x18'
@@ -35,11 +35,11 @@ AbilitySystemComponent:
   - Name: AllReplicatedInstancedAbilities
     Offset: '0x2f8'
     Size: '0x10'
-    Type: TArray<class AllReplicatedInstancedAbilities*>
+    Type: TArray<class GameplayAbility*>
   - Name: SpawnedTargetActors
     Offset: '0x4b8'
     Size: '0x10'
-    Type: TArray<class SpawnedTargetActors*>
+    Type: TArray<class GameplayAbilityTargetActor*>
   - Name: RepAnimMontageInfo
     Offset: '0x4c8'
     Size: '0x30'
@@ -755,7 +755,7 @@ GameplayAbilityWorldReticle_ActorVisualization:
   - Name: VisualizationComponents
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<class VisualizationComponents*>
+    Type: TArray<class ActorComponent*>
   ClassSize: '0x18'
   FullSize: '0x400'
   InheritedSize: '0x3e8'
@@ -787,7 +787,7 @@ GameplayAbility_Montage:
   - Name: GameplayEffectsWhileAnimating
     Offset: '0x470'
     Size: '0x10'
-    Type: TArray<class GameplayEffectsWhileAnimating*>
+    Type: TArray<class GameplayEffect*>
   ClassSize: '0x38'
   FullSize: '0x480'
   InheritedSize: '0x448'
@@ -941,7 +941,7 @@ GameplayEffect:
   - Name: TargetEffects
     Offset: '0x220'
     Size: '0x10'
-    Type: TArray<class TargetEffects*>
+    Type: TArray<class GameplayEffect*>
   - Name: OverflowEffects
     Offset: '0x230'
     Size: '0x10'

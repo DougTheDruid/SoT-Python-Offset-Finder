@@ -89,7 +89,7 @@ StoryDrivenBlendedLightingZoneComponentCollectionDataAsset:
   - Name: StoryDrivenLightingAssetList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class StoryDrivenLightingAssetList*>
+    Type: TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -143,7 +143,7 @@ StoryNamesCollectionDataAsset:
   - Name: StoriesAssets
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class StoriesAssets*>
+    Type: TArray<class StoryNamesCollectionDataAsset*>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -183,11 +183,11 @@ StorySpawnedActorsCollectionDataAsset:
   - Name: StorySpawnedActorsAssetList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class StorySpawnedActorsAssetList*>
+    Type: TArray<class StorySpawnedActorsDataAsset*>
   - Name: StorySpawnedActorsCollectionList
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class StorySpawnedActorsCollectionList*>
+    Type: TArray<class StorySpawnedActorsCollectionDataAsset*>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -207,11 +207,11 @@ StorySpawnedActorsComponentCollectionDataAsset:
   - Name: StorySpawnedActorsAssetList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class StorySpawnedActorsAssetList*>
+    Type: TArray<class StorySpawnedActorsComponentDataAsset*>
   - Name: StorySpawnedActorsCollectionList
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class StorySpawnedActorsCollectionList*>
+    Type: TArray<class StorySpawnedActorsComponentCollectionDataAsset*>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -249,7 +249,7 @@ StorySpawnedActorsService:
   - Name: EarlyRegisteredComponents
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class EarlyRegisteredComponents*>
+    Type: TArray<class StorySpawnedActorsComponent*>
   - Name: Asset
     Offset: '0x3f0'
     Size: '0x8'

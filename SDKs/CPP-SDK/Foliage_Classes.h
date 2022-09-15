@@ -105,7 +105,7 @@ class FoliageType_InstancedStaticMesh: public FoliageType
 {
 public:
 	Class StaticMesh*                                            Mesh;                                              // 0x360(0x8)
-	TArray<class OverrideMaterials*>                             OverrideMaterials;                                 // 0x368(0x10)
+	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x368(0x10)
 	class                                                        ComponentClass;                                    // 0x378(0x8)
 };
 

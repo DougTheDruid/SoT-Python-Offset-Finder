@@ -144,7 +144,7 @@
       },
       {
         "Name": "DynamicMaterials",
-        "Type": "TArray<class DynamicMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x100"
       },

@@ -31,7 +31,7 @@ ChecklistItem:
   - Name: ActionData
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class ActionData*>
+    Type: TArray<class ChecklistActionData*>
   ClassSize: '0x50'
 ChecklistItemCompletedTelemetryEvent:
   Attributes:

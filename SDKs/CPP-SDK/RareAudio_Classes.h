@@ -123,7 +123,7 @@ public:
 class AudioSpaceTrackerComponent: public ActorComponent
 {
 public:
-	TArray<class CurrentSpaces*>                                 CurrentSpaces;                                     // 0xc8(0x10)
+	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xc8(0x10)
 };
 
 
@@ -171,7 +171,7 @@ public:
 class TritonService: public Object
 {
 public:
-	TArray<class RegisteredTritonComponents*>                    RegisteredTritonComponents;                        // 0x38(0x10)
+	TArray<class TritonComponent*>                               RegisteredTritonComponents;                        // 0x38(0x10)
 	Class TritonComponent*                                       CachedListenerInfo;                                // 0xf0(0x8)
 };
 

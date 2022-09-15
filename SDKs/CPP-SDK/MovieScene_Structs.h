@@ -12,7 +12,7 @@ struct MovieSceneBinding
 public:
 	Struct Guid                                                  ObjectGuid;                                        // 0x0(0x10)
 	Struct FString                                               BindingName;                                       // 0x10(0x10)
-	TArray<class Tracks*>                                        Tracks;                                            // 0x20(0x10)
+	TArray<class MovieSceneTrack*>                               Tracks;                                            // 0x20(0x10)
 };
 
 

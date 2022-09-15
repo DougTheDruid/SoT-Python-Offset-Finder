@@ -400,7 +400,7 @@ class CosmeticItemAnimationSetDataAsset: public DataAsset
 {
 public:
 	Struct CosmeticItemAnimationSetLoopData                      LoopData;                                          // 0x28(0x20)
-	TArray<class OneShotSequences*>                              OneShotSequences;                                  // 0x48(0x10)
+	TArray<class AnimSequenceBase*>                              OneShotSequences;                                  // 0x48(0x10)
 };
 
 

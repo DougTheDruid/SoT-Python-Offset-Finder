@@ -49,8 +49,8 @@ public:
 class GameplayTasksComponent: public ActorComponent
 {
 public:
-	TArray<class SimulatedTasks*>                                SimulatedTasks;                                    // 0xd0(0x10)
-	TArray<class TaskPriorityQueue*>                             TaskPriorityQueue;                                 // 0xe0(0x10)
+	TArray<class GameplayTask*>                                  SimulatedTasks;                                    // 0xd0(0x10)
+	TArray<class GameplayTask*>                                  TaskPriorityQueue;                                 // 0xe0(0x10)
 };
 
 

@@ -25,7 +25,7 @@ public:
 	Struct LinearColor                                           DefaultSpotlightColour;                            // 0x974(0x10)
 	Struct LinearColor                                           DefaultAmbientLightColour;                         // 0x984(0x10)
 	Struct LinearColor                                           DefaultGlowColour;                                 // 0x994(0x10)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x9a8(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x9a8(0x10)
 };
 
 

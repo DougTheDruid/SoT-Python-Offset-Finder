@@ -17,7 +17,7 @@ BP_HullDamage_C:
   - Name: Persistent Damage Decals
     Offset: '0x598'
     Size: '0x10'
-    Type: TArray<class Persistent Damage Decals*>
+    Type: TArray<class Texture2D*>
   - Name: Damage VFX
     Offset: '0x5a8'
     Size: '0x8'
@@ -25,7 +25,7 @@ BP_HullDamage_C:
   - Name: Deferred Damage Decals
     Offset: '0x5b0'
     Size: '0x10'
-    Type: TArray<class Deferred Damage Decals*>
+    Type: TArray<class MaterialInstance*>
   - Name: Deferred Min Size
     Offset: '0x5c0'
     Size: '0x4'

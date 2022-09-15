@@ -37,7 +37,7 @@
       },
       {
         "Name": "Deferred Decals",
-        "Type": "TArray<class Deferred Decals*>",
+        "Type": "TArray<class DecalComponent*>",
         "Size": "0x10",
         "Offset": "0x818"
       },

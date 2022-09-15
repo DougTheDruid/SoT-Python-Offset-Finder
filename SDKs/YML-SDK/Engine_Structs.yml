@@ -1823,7 +1823,7 @@ AutomaticInstancingMeshComponentArray:
   - Name: Array
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Array*>
+    Type: TArray<class InstancedStaticMeshComponent*>
   ClassSize: '0x10'
 BPInterfaceDescription:
   Attributes:
@@ -1834,7 +1834,7 @@ BPInterfaceDescription:
   - Name: Graphs
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Graphs*>
+    Type: TArray<class EdGraph*>
   ClassSize: '0x18'
 BPVariableDescription:
   Attributes:
@@ -3250,7 +3250,7 @@ CompositeSection:
   - Name: MetaData
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class MetaData*>
+    Type: TArray<class AnimMetaData*>
   ClassSize: '0x58'
 CompressedOffsetData:
   Attributes:
@@ -4085,7 +4085,7 @@ DialogueContext:
   - Name: Targets
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Targets*>
+    Type: TArray<class DialogueVoice*>
   ClassSize: '0x18'
 DialogueContextMapping:
   Attributes:
@@ -5263,7 +5263,7 @@ FullyLoadedPackagesInfo:
   - Name: LoadedObjects
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class LoadedObjects*>
+    Type: TArray<class Object*>
   ClassSize: '0x38'
 FuncStatEntry:
   Attributes:
@@ -5338,7 +5338,7 @@ GPUSpriteEmitterInfo:
   - Name: SpawnModules
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class SpawnModules*>
+    Type: TArray<class ParticleModule*>
   - Name: LocalVectorField
     Offset: '0x50'
     Size: '0x70'
@@ -6204,7 +6204,7 @@ InterpGroupActorInfo:
   - Name: Actors
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Actors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x18'
 InterpLookupPoint:
   Attributes:
@@ -8748,7 +8748,7 @@ ParticleEventGPU_GenerateInfo:
   - Name: ParticleModuleEventsToSendToGame
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class ParticleModuleEventsToSendToGame*>
+    Type: TArray<class ParticleModuleEventSendToGame*>
   ClassSize: '0x28'
 ParticleEvent_GenerateInfo:
   Attributes:
@@ -8787,7 +8787,7 @@ ParticleEvent_GenerateInfo:
   - Name: ParticleModuleEventsToSendToGame
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class ParticleModuleEventsToSendToGame*>
+    Type: TArray<class ParticleModuleEventSendToGame*>
   ClassSize: '0x28'
 ParticleRandomSeedInfo:
   Attributes:
@@ -10248,7 +10248,7 @@ PostProcessSettings:
   - Name: Blendables
     Offset: '0x528'
     Size: '0x10'
-    Type: TArray<class Blendables*>
+    Type: TArray<class Object*>
   ClassSize: '0x540'
 PresortedBillboardsParams:
   Attributes:
@@ -12801,11 +12801,11 @@ WorldContext:
   - Name: LoadedLevelsForPendingMapChange
     Offset: '0x1e8'
     Size: '0x10'
-    Type: TArray<class LoadedLevelsForPendingMapChange*>
+    Type: TArray<class Level*>
   - Name: ObjectReferencers
     Offset: '0x210'
     Size: '0x10'
-    Type: TArray<class ObjectReferencers*>
+    Type: TArray<class ObjectReferencer*>
   - Name: PendingLevelStreamingStatusUpdates
     Offset: '0x220'
     Size: '0x10'

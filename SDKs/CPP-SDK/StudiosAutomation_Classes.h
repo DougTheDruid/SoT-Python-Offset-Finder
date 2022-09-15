@@ -25,7 +25,7 @@ public:
 	TArray<Int ClientsRunning>                                   ClientsRunning;                                    // 0x410(0x10)
 	TArray<Int ClientIds>                                        ClientIds;                                         // 0x420(0x10)
 	TArray<Struct ClientPawnDetails>                             ClientPawns;                                       // 0x430(0x10)
-	TArray<class SpawnedActors*>                                 SpawnedActors;                                     // 0x440(0x10)
+	TArray<class Actor*>                                         SpawnedActors;                                     // 0x440(0x10)
 	int                                                          NextSpawnedActorIndex;                             // 0x450(0x4)
 };
 

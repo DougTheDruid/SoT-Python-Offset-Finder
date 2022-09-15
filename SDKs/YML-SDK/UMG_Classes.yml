@@ -259,7 +259,7 @@ ComboBox:
   - Name: Items
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<class Items*>
+    Type: TArray<class Object*>
   ClassSize: '0x38'
   FullSize: '0x170'
   InheritedSize: '0x138'
@@ -629,7 +629,7 @@ ListView:
   - Name: Items
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<class Items*>
+    Type: TArray<class Object*>
   - Name: SelectionMode
     Offset: '0x150'
     Size: '0x1'
@@ -869,7 +869,7 @@ PanelWidget:
   - Name: Slots
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<class Slots*>
+    Type: TArray<class PanelSlot*>
   ClassSize: '0x18'
   FullSize: '0x150'
   InheritedSize: '0x138'
@@ -967,7 +967,7 @@ RichTextBlock:
   - Name: Decorators
     Offset: '0x1f0'
     Size: '0x10'
-    Type: TArray<class Decorators*>
+    Type: TArray<class RichTextBlockDecorator*>
   ClassSize: '0x240'
   FullSize: '0x378'
   InheritedSize: '0x138'
@@ -1441,7 +1441,7 @@ TileView:
   - Name: Items
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<class Items*>
+    Type: TArray<class Object*>
   - Name: SelectionMode
     Offset: '0x150'
     Size: '0x1'
@@ -1521,11 +1521,11 @@ UserWidget:
   - Name: ActiveSequencePlayers
     Offset: '0x1b0'
     Size: '0x10'
-    Type: TArray<class ActiveSequencePlayers*>
+    Type: TArray<class UMGSequencePlayer*>
   - Name: StoppedSequencePlayers
     Offset: '0x1c0'
     Size: '0x10'
-    Type: TArray<class StoppedSequencePlayers*>
+    Type: TArray<class UMGSequencePlayer*>
   - Name: NamedSlotBindings
     Offset: '0x1d0'
     Size: '0x10'
@@ -1645,7 +1645,7 @@ Widget:
   - Name: NativeBindings
     Offset: '0x128'
     Size: '0x10'
-    Type: TArray<class NativeBindings*>
+    Type: TArray<class PropertyBinding*>
   ClassSize: '0x110'
   FullSize: '0x138'
   InheritedSize: '0x28'
@@ -1683,7 +1683,7 @@ WidgetBlueprintGeneratedClass:
   - Name: Animations
     Offset: '0x240'
     Size: '0x10'
-    Type: TArray<class Animations*>
+    Type: TArray<class WidgetAnimation*>
   - Name: NamedSlots
     Offset: '0x250'
     Size: '0x10'
@@ -1873,7 +1873,7 @@ WidgetTree:
   - Name: AllWidgets
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class AllWidgets*>
+    Type: TArray<class Widget*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'

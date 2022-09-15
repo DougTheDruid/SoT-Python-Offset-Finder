@@ -261,7 +261,7 @@ public:
 struct PerCompanyVotes
 {
 public:
-	TArray<class MemberVotes*>                                   MemberVotes;                                       // 0x0(0x10)
+	TArray<class PlayerState*>                                   MemberVotes;                                       // 0x0(0x10)
 	struct FName                                                 CompanyIdentifier;                                 // 0x10(0x8)
 };
 

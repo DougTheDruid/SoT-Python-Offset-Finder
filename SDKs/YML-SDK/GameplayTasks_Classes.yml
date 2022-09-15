@@ -51,11 +51,11 @@ GameplayTasksComponent:
   - Name: SimulatedTasks
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class SimulatedTasks*>
+    Type: TArray<class GameplayTask*>
   - Name: TaskPriorityQueue
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class TaskPriorityQueue*>
+    Type: TArray<class GameplayTask*>
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'

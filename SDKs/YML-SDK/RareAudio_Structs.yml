@@ -13,7 +13,7 @@ EventToComponentMapping:
   - Name: WwiseEmitterComponents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class WwiseEmitterComponents*>
+    Type: TArray<class WwiseEmitterComponent*>
   ClassSize: '0x20'
 StaticMeshAudioAssociation:
   Attributes:
@@ -24,7 +24,7 @@ StaticMeshAudioAssociation:
   - Name: Meshes
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Meshes*>
+    Type: TArray<class StaticMesh*>
   ClassSize: '0x20'
 StaticMeshComponentAudioAssociation:
   Attributes:
@@ -50,11 +50,11 @@ StaticMeshWwiseEmitterData:
   - Name: StartEvents
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class StartEvents*>
+    Type: TArray<class WwiseEvent*>
   - Name: StopEvents
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class StopEvents*>
+    Type: TArray<class WwiseEvent*>
   ClassSize: '0x38'
 WWiseEmitterCreationRTPCSetting:
   Attributes:

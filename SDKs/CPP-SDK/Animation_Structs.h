@@ -114,7 +114,7 @@ public:
 struct CosmeticItems
 {
 public:
-	TArray<class CosmeticItemArray*>                             CosmeticItemArray;                                 // 0x0(0x10)
+	TArray<class Actor*>                                         CosmeticItemArray;                                 // 0x0(0x10)
 };
 
 
@@ -143,8 +143,8 @@ struct CustomAnimationMontageStagedLoopingData
 {
 public:
 	Class AnimMontage*                                           Into;                                              // 0x0(0x8)
-	TArray<class LoopAnims*>                                     LoopAnims;                                         // 0x8(0x10)
-	TArray<class OutOfAnims*>                                    OutOfAnims;                                        // 0x18(0x10)
+	TArray<class AnimMontage*>                                   LoopAnims;                                         // 0x8(0x10)
+	TArray<class AnimMontage*>                                   OutOfAnims;                                        // 0x18(0x10)
 };
 
 

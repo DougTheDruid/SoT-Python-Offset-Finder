@@ -21,11 +21,11 @@ ClueConnectionConfig:
   - Name: ClueGenerators
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class ClueGenerators*>
+    Type: TArray<class ClueDescriptorGenerator*>
   - Name: DestinationGenerators
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class DestinationGenerators*>
+    Type: TArray<class ClueDestinationGenerator*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -105,11 +105,11 @@ ClueFactoryConfig:
   - Name: LandClueCreators
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class LandClueCreators*>
+    Type: TArray<class LandClueCreator*>
   - Name: SeaClueCreators
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class SeaClueCreators*>
+    Type: TArray<class SeaClueCreator*>
   - Name: ChoiceStrategy
     Offset: '0x48'
     Size: '0x8'

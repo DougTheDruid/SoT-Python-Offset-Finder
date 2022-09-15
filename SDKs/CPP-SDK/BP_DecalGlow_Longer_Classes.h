@@ -13,7 +13,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
 	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x3d8(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
-	TArray<class DecalMaterials*>                                DecalMaterials;                                    // 0x3e8(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DecalMaterials;                                    // 0x3e8(0x10)
 	float                                                        Reveal Duration;                                   // 0x3f8(0x4)
 	BlueprintGeneratedClass BP_StepsTrigger_C*                   StepsTriggerActor;                                 // 0x400(0x8)
 	float                                                        StartTime;                                         // 0x408(0x4)

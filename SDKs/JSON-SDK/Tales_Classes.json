@@ -56,7 +56,7 @@
     "Attributes": [
       {
         "Name": "Services",
-        "Type": "TArray<class Services*>",
+        "Type": "TArray<class TaleQuestService*>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
@@ -88,7 +88,7 @@
     "Attributes": [
       {
         "Name": "Services",
-        "Type": "TArray<class Services*>",
+        "Type": "TArray<class TaleQuestServiceDesc*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -255,7 +255,7 @@
     "Attributes": [
       {
         "Name": "Contracts",
-        "Type": "TArray<class Contracts*>",
+        "Type": "TArray<class TaleQuestCargoRunContract*>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -303,7 +303,7 @@
     "Attributes": [
       {
         "Name": "Contracts",
-        "Type": "TArray<class Contracts*>",
+        "Type": "TArray<class TaleQuestMerchantContract*>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -331,19 +331,19 @@
     "Attributes": [
       {
         "Name": "TrackedResponseCoordinators",
-        "Type": "TArray<class TrackedResponseCoordinators*>",
+        "Type": "TArray<class CutsceneResponseCoordinator*>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "TrackedResponseComponents",
-        "Type": "TArray<class TrackedResponseComponents*>",
+        "Type": "TArray<class CutsceneResponseComponent*>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "ResponseRelevantActors",
-        "Type": "TArray<class ResponseRelevantActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -376,7 +376,7 @@
       },
       {
         "Name": "ItemsToSpawn",
-        "Type": "TArray<class ItemsToSpawn*>",
+        "Type": "TArray<class ItemSpawnData*>",
         "Size": "0x10",
         "Offset": "0x78"
       }
@@ -467,7 +467,7 @@
     "Attributes": [
       {
         "Name": "TrackedInteractionActors",
-        "Type": "TArray<class TrackedInteractionActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -1128,6 +1128,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestGetParticipatingCrewsInRadiusStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestGetParticipatingCrewsStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
@@ -1653,7 +1660,7 @@
     "Attributes": [
       {
         "Name": "LevelSequencesToLoad",
-        "Type": "TArray<class LevelSequencesToLoad*>",
+        "Type": "TArray<class LevelSequence*>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -2483,6 +2490,32 @@
       }
     ]
   },
+  "TaleQuestGetParticipatingCrewsInRadiusStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "CrewIds",
+        "Type": "Struct QuestVariableGuidArray",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Location",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x20",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      }
+    ]
+  },
   "TaleQuestGetParticipatingCrewsStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
@@ -3271,9 +3304,9 @@
   },
   "TaleQuestAddChecklistMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x140",
+    "FullSize": "0x150",
     "InheritedSize": "0x80",
-    "ClassSize": "0xc0",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "MapID",
@@ -3282,46 +3315,40 @@
         "Offset": "0x80"
       },
       {
-        "Name": "OverrideTreasureMapItemDesc",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
         "Name": "Title",
         "Type": "Struct QuestVariableText",
         "Size": "0x20",
-        "Offset": "0x98"
+        "Offset": "0xa8"
       },
       {
         "Name": "Description",
         "Type": "Struct QuestVariableText",
         "Size": "0x20",
-        "Offset": "0xb8"
+        "Offset": "0xc8"
       },
       {
         "Name": "ChecklistItemsData",
         "Type": "Struct QuestVariableDataAsset",
         "Size": "0x20",
-        "Offset": "0xd8"
+        "Offset": "0xe8"
       },
       {
         "Name": "Afternote",
         "Type": "Struct QuestVariableText",
         "Size": "0x20",
-        "Offset": "0xf8"
+        "Offset": "0x108"
       },
       {
         "Name": "Layout",
         "Type": "Struct QuestVariableDataAsset",
         "Size": "0x20",
-        "Offset": "0x118"
+        "Offset": "0x128"
       },
       {
         "Name": "RadialMiniIcon",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x138"
+        "Offset": "0x148"
       }
     ]
   },

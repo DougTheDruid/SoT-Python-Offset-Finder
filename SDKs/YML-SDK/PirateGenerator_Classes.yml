@@ -53,7 +53,7 @@ CharacterMeshBakeSpecification:
   - Name: UnblendedSubMeshes
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class UnblendedSubMeshes*>
+    Type: TArray<class SkeletalMesh*>
   - Name: BlendShapes
     Offset: '0x88'
     Size: '0x10'
@@ -125,7 +125,7 @@ PirateGeneratorMaterials:
   - Name: Materials
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Materials*>
+    Type: TArray<class MaterialInterface*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

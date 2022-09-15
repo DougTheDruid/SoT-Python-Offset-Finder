@@ -55,7 +55,7 @@ public:
 struct BlackboardKeySelector
 {
 public:
-	TArray<class AllowedTypes*>                                  AllowedTypes;                                      // 0x0(0x10)
+	TArray<class BlackboardKeyType*>                             AllowedTypes;                                      // 0x0(0x10)
 	struct FName                                                 SelectedKeyName;                                   // 0x10(0x8)
 	class                                                        SelectedKeyType;                                   // 0x18(0x8)
 	byte                                                         SelectedKeyID;                                     // 0x20(0x1)
@@ -223,7 +223,7 @@ struct BTCompositeChild
 public:
 	Class BTCompositeNode*                                       ChildComposite;                                    // 0x0(0x8)
 	Class BTTaskNode*                                            ChildTask;                                         // 0x8(0x8)
-	TArray<class Decorators*>                                    Decorators;                                        // 0x10(0x10)
+	TArray<class BTDecorator*>                                   Decorators;                                        // 0x10(0x10)
 	TArray<Struct BTDecoratorLogic>                              DecoratorOps;                                      // 0x20(0x10)
 };
 

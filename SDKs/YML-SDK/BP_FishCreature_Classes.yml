@@ -29,7 +29,7 @@ BP_FishCreature_C:
   - Name: MaterialInstance
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class MaterialInstance*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: Seed
     Offset: '0x3f8'
     Size: '0x4'

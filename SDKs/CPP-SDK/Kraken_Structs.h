@@ -63,7 +63,7 @@ public:
 struct KrakenShipHittingBehaviourParamsCollection
 {
 public:
-	TArray<class Params*>                                        Params;                                            // 0x0(0x10)
+	TArray<class KrakenShipHittingBehaviourParamsDataAsset*>     Params;                                            // 0x0(0x10)
 };
 
 
@@ -208,7 +208,7 @@ public:
 struct KrakenShipWrappingBehaviourParamsCollection
 {
 public:
-	TArray<class Params*>                                        Params;                                            // 0x0(0x10)
+	TArray<class KrakenShipWrappingBehaviourParamsDataAsset*>    Params;                                            // 0x0(0x10)
 };
 
 
@@ -277,7 +277,7 @@ public:
 	float                                                        RelocationThreshold;                               // 0x38(0x4)
 	float                                                        ChanceOfSwitchingSides;                            // 0x3c(0x4)
 	float                                                        ChanceOfSelectingNearLocationAfterSwitchingSides;  // 0x40(0x4)
-	float                                                        ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaning; // 0x44(0x4)
+	float                                                        ChanceOfSelectingSelectingDifferentDistanceFromShipWhenRemaningOnSameSide; // 0x44(0x4)
 };
 
 
@@ -467,7 +467,7 @@ struct KrakenAnimatedTentacleTransitionAnimation
 public:
 	class                                                        FromState;                                         // 0x0(0x8)
 	float                                                        BranchAnimationTimeRemaining;                      // 0x8(0x4)
-	TArray<class TransitionAnimations*>                          TransitionAnimations;                              // 0x10(0x10)
+	TArray<class AnimSequence*>                                  TransitionAnimations;                              // 0x10(0x10)
 };
 
 

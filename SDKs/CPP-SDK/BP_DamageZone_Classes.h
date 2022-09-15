@@ -15,7 +15,7 @@ public:
 	Struct BP_InternalDamageGroup                                RepairGroup;                                       // 0x800(0x10)
 	int                                                          ExternalHitBufferIndex;                            // 0x810(0x4)
 	int                                                          MaxStoredHits;                                     // 0x814(0x4)
-	TArray<class Deferred Decals*>                               Deferred Decals;                                   // 0x818(0x10)
+	TArray<class DecalComponent*>                                Deferred Decals;                                   // 0x818(0x10)
 	int                                                          ClientUpdateEventCount;                            // 0x828(0x4)
 	int                                                          ExternalDecalBufferIndex;                          // 0x82c(0x4)
 	bool                                                         HasBeenInitialized;                                // 0x830(0x1)

@@ -249,7 +249,7 @@ StatusRecipientResponseList:
   - Name: ResponseAssets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ResponseAssets*>
+    Type: TArray<class StatusResponseAsset*>
   - Name: FeatureToggledResponseLists
     Offset: '0x38'
     Size: '0x10'
@@ -257,7 +257,7 @@ StatusRecipientResponseList:
   - Name: FinalResponseAssets
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class FinalResponseAssets*>
+    Type: TArray<class StatusResponseAsset*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -281,7 +281,7 @@ StatusResponseAsset:
   - Name: Responses
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<class Responses*>
+    Type: TArray<class StatusResponse*>
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'

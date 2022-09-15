@@ -67,7 +67,7 @@ BullRushAIAbilityParams:
   - Name: ValidatorEQSystems
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<class ValidatorEQSystems*>
+    Type: TArray<class EnvQuery*>
   - Name: TimeBetweenCanExecuteChecks
     Offset: '0xf8'
     Size: '0x4'

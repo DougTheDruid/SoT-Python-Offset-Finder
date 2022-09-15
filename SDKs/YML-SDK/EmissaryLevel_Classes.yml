@@ -227,7 +227,7 @@ EmissaryShipAffiliationTrackerComponent:
   - Name: EmissaryRepresentationMeshes
     Offset: '0x320'
     Size: '0x10'
-    Type: TArray<class EmissaryRepresentationMeshes*>
+    Type: TArray<class StaticMeshComponent*>
   - Name: LoadedEmissaryRepresentationMesh
     Offset: '0x330'
     Size: '0x8'

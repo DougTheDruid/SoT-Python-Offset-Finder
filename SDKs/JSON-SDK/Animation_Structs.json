@@ -219,7 +219,7 @@
     "Attributes": [
       {
         "Name": "CosmeticItemArray",
-        "Type": "TArray<class CosmeticItemArray*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -282,13 +282,13 @@
       },
       {
         "Name": "LoopAnims",
-        "Type": "TArray<class LoopAnims*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "OutOfAnims",
-        "Type": "TArray<class OutOfAnims*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x18"
       }

@@ -13,5 +13,5 @@ InstancedLayer:
   - Name: SpawnedActors
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<class SpawnedActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x48'

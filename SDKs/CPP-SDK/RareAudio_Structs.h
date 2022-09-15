@@ -47,7 +47,7 @@ struct EventToComponentMapping
 public:
 	Class WwiseEvent*                                            PlayEvent;                                         // 0x0(0x8)
 	Class WwiseEvent*                                            StopEvent;                                         // 0x8(0x8)
-	TArray<class WwiseEmitterComponents*>                        WwiseEmitterComponents;                            // 0x10(0x10)
+	TArray<class WwiseEmitterComponent*>                         WwiseEmitterComponents;                            // 0x10(0x10)
 };
 
 
@@ -56,7 +56,7 @@ struct StaticMeshAudioAssociation
 {
 public:
 	TArray<Struct StaticMeshWwiseEmitterData>                    PlaybackDataArray;                                 // 0x0(0x10)
-	TArray<class Meshes*>                                        Meshes;                                            // 0x10(0x10)
+	TArray<class StaticMesh*>                                    Meshes;                                            // 0x10(0x10)
 };
 
 
@@ -66,8 +66,8 @@ struct StaticMeshWwiseEmitterData
 public:
 	Class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
 	Struct Vector                                                LocalOriginOffset;                                 // 0x8(0xc)
-	TArray<class StartEvents*>                                   StartEvents;                                       // 0x18(0x10)
-	TArray<class StopEvents*>                                    StopEvents;                                        // 0x28(0x10)
+	TArray<class WwiseEvent*>                                    StartEvents;                                       // 0x18(0x10)
+	TArray<class WwiseEvent*>                                    StopEvents;                                        // 0x28(0x10)
 };
 
 

@@ -14,7 +14,7 @@
     "Attributes": [
       {
         "Name": "CustomPlayerStarts",
-        "Type": "TArray<class CustomPlayerStarts*>",
+        "Type": "TArray<class PlayerStart*>",
         "Size": "0x10",
         "Offset": "0x400"
       }

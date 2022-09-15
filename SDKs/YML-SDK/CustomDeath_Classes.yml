@@ -11,7 +11,7 @@ CustomDeathService:
   - Name: CustomPlayerStarts
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class CustomPlayerStarts*>
+    Type: TArray<class PlayerStart*>
   ClassSize: '0x98'
   FullSize: '0x460'
   InheritedSize: '0x3c8'

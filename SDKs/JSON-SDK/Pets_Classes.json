@@ -677,7 +677,7 @@
       },
       {
         "Name": "PetPerchComponents",
-        "Type": "TArray<class PetPerchComponents*>",
+        "Type": "TArray<class PetPerchComponent*>",
         "Size": "0x10",
         "Offset": "0x328"
       },
@@ -917,31 +917,31 @@
       },
       {
         "Name": "OwnersToRemove",
-        "Type": "TArray<class OwnersToRemove*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "OwnersToRequestDespawn",
-        "Type": "TArray<class OwnersToRequestDespawn*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
       {
         "Name": "MovingPetsOnIslands",
-        "Type": "TArray<class MovingPetsOnIslands*>",
+        "Type": "TArray<class Pawn*>",
         "Size": "0x10",
         "Offset": "0x100"
       },
       {
         "Name": "MovingPetsOnShips",
-        "Type": "TArray<class MovingPetsOnShips*>",
+        "Type": "TArray<class Pawn*>",
         "Size": "0x10",
         "Offset": "0x110"
       },
       {
         "Name": "ScratchArray",
-        "Type": "TArray<class ScratchArray*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x120"
       },

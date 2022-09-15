@@ -102,7 +102,7 @@ class StatusResponseAsset: public DataAsset
 public:
 	Struct FText                                                 HighFrequencyTriggerStatusHelper;                  // 0x28(0x38)
 	TArray<Class TriggerStatus>                                  TriggerStatus;                                     // 0x60(0x10)
-	TArray<class Responses*>                                     Responses;                                         // 0x70(0x10)
+	TArray<class StatusResponse*>                                Responses;                                         // 0x70(0x10)
 };
 
 
@@ -110,9 +110,9 @@ public:
 class StatusRecipientResponseList: public DataAsset
 {
 public:
-	TArray<class ResponseAssets*>                                ResponseAssets;                                    // 0x28(0x10)
+	TArray<class StatusResponseAsset*>                           ResponseAssets;                                    // 0x28(0x10)
 	TArray<Struct FeatureToggledStatusResponseList>              FeatureToggledResponseLists;                       // 0x38(0x10)
-	TArray<class FinalResponseAssets*>                           FinalResponseAssets;                               // 0x48(0x10)
+	TArray<class StatusResponseAsset*>                           FinalResponseAssets;                               // 0x48(0x10)
 };
 
 

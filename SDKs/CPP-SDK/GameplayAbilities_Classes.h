@@ -39,7 +39,7 @@ public:
 	TArray<Struct GameplayEffectExecutionDefinition>             Executions;                                        // 0x1e0(0x10)
 	Struct ScalableFloat                                         ChanceToApplyToTarget;                             // 0x1f0(0x20)
 	TArray<Class TargetEffectClasses>                            TargetEffectClasses;                               // 0x210(0x10)
-	TArray<class TargetEffects*>                                 TargetEffects;                                     // 0x220(0x10)
+	TArray<class GameplayEffect*>                                TargetEffects;                                     // 0x220(0x10)
 	TArray<Class OverflowEffects>                                OverflowEffects;                                   // 0x230(0x10)
 	bool                                                         bDenyOverflowApplication;                          // 0x240(0x1)
 	bool                                                         bClearStackOnOverflow;                             // 0x241(0x1)
@@ -106,13 +106,13 @@ class AbilitySystemComponent: public GameplayTasksComponent
 {
 public:
 	TArray<Struct AttributeDefaults>                             DefaultStartingData;                               // 0x130(0x10)
-	TArray<class SpawnedAttributes*>                             SpawnedAttributes;                                 // 0x140(0x10)
+	TArray<class AttributeSet*>                                  SpawnedAttributes;                                 // 0x140(0x10)
 	Struct PredictionKey                                         ReplicatedPredictionKey;                           // 0x150(0x18)
 	float                                                        OutgoingDuration;                                  // 0x1e0(0x4)
 	float                                                        IncomingDuration;                                  // 0x1e4(0x4)
 	Struct GameplayAbilitySpecContainer                          ActivatableAbilities;                              // 0x1e8(0xc0)
-	TArray<class AllReplicatedInstancedAbilities*>               AllReplicatedInstancedAbilities;                   // 0x2f8(0x10)
-	TArray<class SpawnedTargetActors*>                           SpawnedTargetActors;                               // 0x4b8(0x10)
+	TArray<class GameplayAbility*>                               AllReplicatedInstancedAbilities;                   // 0x2f8(0x10)
+	TArray<class GameplayAbilityTargetActor*>                    SpawnedTargetActors;                               // 0x4b8(0x10)
 	Struct GameplayAbilityRepAnimMontage                         RepAnimMontageInfo;                                // 0x4c8(0x30)
 	Struct GameplayAbilityLocalAnimMontage                       LocalAnimMontageInfo;                              // 0x4f8(0x30)
 	Class Actor*                                                 OwnerActor;                                        // 0x5c8(0x8)
@@ -446,7 +446,7 @@ public:
 	float                                                        PlayRate;                                          // 0x450(0x4)
 	struct FName                                                 SectionName;                                       // 0x454(0x8)
 	TArray<Class GameplayEffectClassesWhileAnimating>            GameplayEffectClassesWhileAnimating;               // 0x460(0x10)
-	TArray<class GameplayEffectsWhileAnimating*>                 GameplayEffectsWhileAnimating;                     // 0x470(0x10)
+	TArray<class GameplayEffect*>                                GameplayEffectsWhileAnimating;                     // 0x470(0x10)
 };
 
 
@@ -520,7 +520,7 @@ class GameplayAbilityWorldReticle_ActorVisualization: public GameplayAbilityWorl
 {
 public:
 	Class CapsuleComponent*                                      CollisionComponent;                                // 0x3e8(0x8)
-	TArray<class VisualizationComponents*>                       VisualizationComponents;                           // 0x3f0(0x10)
+	TArray<class ActorComponent*>                                VisualizationComponents;                           // 0x3f0(0x10)
 };
 
 

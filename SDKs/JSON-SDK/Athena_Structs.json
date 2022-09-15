@@ -1695,7 +1695,7 @@
       },
       {
         "Name": "AdditionalEventsToTrigger",
-        "Type": "TArray<class AdditionalEventsToTrigger*>",
+        "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -1793,7 +1793,7 @@
       },
       {
         "Name": "AlternateContinuousOuts",
-        "Type": "TArray<class AlternateContinuousOuts*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1822,7 +1822,7 @@
       },
       {
         "Name": "AudioEvents",
-        "Type": "TArray<class AudioEvents*>",
+        "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1868,7 +1868,7 @@
       },
       {
         "Name": "Loop",
-        "Type": "TArray<class Loop*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -1886,7 +1886,7 @@
       },
       {
         "Name": "OutAlternates",
-        "Type": "TArray<class OutAlternates*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -1909,7 +1909,7 @@
       },
       {
         "Name": "OneShotSequence",
-        "Type": "TArray<class OneShotSequence*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -2664,7 +2664,7 @@
       },
       {
         "Name": "LocomotionVariantSelection",
-        "Type": "TArray<class LocomotionVariantSelection*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -2687,13 +2687,13 @@
       },
       {
         "Name": "FleeTurnLeft",
-        "Type": "TArray<class FleeTurnLeft*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "FleeTurnRight",
-        "Type": "TArray<class FleeTurnRight*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -2705,7 +2705,7 @@
       },
       {
         "Name": "FleeLocomotionVariants",
-        "Type": "TArray<class FleeLocomotionVariants*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -2763,13 +2763,13 @@
       },
       {
         "Name": "Taunt",
-        "Type": "TArray<class Taunt*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Cheer",
-        "Type": "TArray<class Cheer*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -2815,7 +2815,7 @@
       },
       {
         "Name": "DockedIdles",
-        "Type": "TArray<class DockedIdles*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -3148,7 +3148,7 @@
     "Attributes": [
       {
         "Name": "Idle",
-        "Type": "TArray<class Idle*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -4524,7 +4524,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "MinDistFromAnyMermaidForPlayerToBeAbandonedIfPlayerNotNearIslan",
+        "Name": "MinDistFromAnyMermaidForPlayerToBeAbandonedIfPlayerNotNearIsland",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -5280,19 +5280,19 @@
       },
       {
         "Name": "UniqueTreasureLocationBoobyTraps",
-        "Type": "TArray<class UniqueTreasureLocationBoobyTraps*>",
+        "Type": "TArray<class BoobyTrapSpawnerDataAsset*>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "UniqueTreasureLocationRewards",
-        "Type": "TArray<class UniqueTreasureLocationRewards*>",
+        "Type": "TArray<class WeightedTreasureChestDescAsset*>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "UniqueTreasureLocationRewardsAssets",
-        "Type": "TArray<class UniqueTreasureLocationRewardsAssets*>",
+        "Type": "TArray<class WeightedItemDescSpawnDataAsset*>",
         "Size": "0x10",
         "Offset": "0x78"
       }
@@ -7941,7 +7941,7 @@
       },
       {
         "Name": "ShipLights",
-        "Type": "TArray<class ShipLights*>",
+        "Type": "TArray<class ShipInteractableLight*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -8308,7 +8308,7 @@
     "Attributes": [
       {
         "Name": "TargetActors",
-        "Type": "TArray<class TargetActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -8500,7 +8500,7 @@
       },
       {
         "Name": "LiquidTargets",
-        "Type": "TArray<class LiquidTargets*>",
+        "Type": "TArray<class Ship*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -10800,7 +10800,7 @@
     "Attributes": [
       {
         "Name": "AudioEvents",
-        "Type": "TArray<class AudioEvents*>",
+        "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -11056,7 +11056,7 @@
       },
       {
         "Name": "AudioEvents",
-        "Type": "TArray<class AudioEvents*>",
+        "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -12463,7 +12463,7 @@
       },
       {
         "Name": "CrestMaterials",
-        "Type": "TArray<class CrestMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -13365,43 +13365,43 @@
     "Attributes": [
       {
         "Name": "Peony",
-        "Type": "TArray<class Peony*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Crackle",
-        "Type": "TArray<class Crackle*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Strobe",
-        "Type": "TArray<class Strobe*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Brocade",
-        "Type": "TArray<class Brocade*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "Comet",
-        "Type": "TArray<class Comet*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "HummingSnakes",
-        "Type": "TArray<class HummingSnakes*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "Cakes",
-        "Type": "TArray<class Cakes*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -13412,13 +13412,13 @@
     "Attributes": [
       {
         "Name": "Rockets",
-        "Type": "TArray<class Rockets*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Cakes",
-        "Type": "TArray<class Cakes*>",
+        "Type": "TArray<class ItemDescSpawnData*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -14084,7 +14084,7 @@
       },
       {
         "Name": "ExitPoints",
-        "Type": "TArray<class ExitPoints*>",
+        "Type": "TArray<class SpawnLocation*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -15372,7 +15372,7 @@
       },
       {
         "Name": "Items",
-        "Type": "TArray<class Items*>",
+        "Type": "TArray<class ItemInfo*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -16551,7 +16551,7 @@
     "Attributes": [
       {
         "Name": "SkyDomeMaterials",
-        "Type": "TArray<class SkyDomeMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -17599,7 +17599,7 @@
       },
       {
         "Name": "UnweldedCrossBeamComponents",
-        "Type": "TArray<class UnweldedCrossBeamComponents*>",
+        "Type": "TArray<class PrimitiveComponent*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -17945,7 +17945,7 @@
     "Attributes": [
       {
         "Name": "RequiredItems",
-        "Type": "TArray<class RequiredItems*>",
+        "Type": "TArray<class MerchantQuestItemData*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -18258,7 +18258,7 @@
       },
       {
         "Name": "OverriddenMaterials",
-        "Type": "TArray<class OverriddenMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -18391,7 +18391,7 @@
       },
       {
         "Name": "Conditions",
-        "Type": "TArray<class Conditions*>",
+        "Type": "TArray<class NPCDialogConditional*>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -18408,7 +18408,7 @@
       },
       {
         "Name": "Conditions",
-        "Type": "TArray<class Conditions*>",
+        "Type": "TArray<class NPCDialogConditional*>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -18589,7 +18589,7 @@
       },
       {
         "Name": "Options",
-        "Type": "TArray<class Options*>",
+        "Type": "TArray<class NPCDialogOption*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -19673,7 +19673,7 @@
     "Attributes": [
       {
         "Name": "RecentlyInteractedPlayers",
-        "Type": "TArray<class RecentlyInteractedPlayers*>",
+        "Type": "TArray<class AthenaPlayerCharacter*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -19957,7 +19957,7 @@
       },
       {
         "Name": "Children",
-        "Type": "TArray<class Actor*>",
+        "Type": "TArray<class PremiumCatalogLandingPageItemDataAsset*>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -21704,7 +21704,7 @@
       },
       {
         "Name": "IgnoredActors",
-        "Type": "TArray<class IgnoredActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -21843,7 +21843,7 @@
       },
       {
         "Name": "TriggeredActionMechanisms",
-        "Type": "TArray<class TriggeredActionMechanisms*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -22359,7 +22359,7 @@
     "Attributes": [
       {
         "Name": "Resources",
-        "Type": "TArray<class Resources*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -24080,7 +24080,7 @@
     "Attributes": [
       {
         "Name": "CrewMembersPlayerStates",
-        "Type": "TArray<class CrewMembersPlayerStates*>",
+        "Type": "TArray<class PlayerState*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -24200,7 +24200,7 @@
       },
       {
         "Name": "BoobyTrapSpawners",
-        "Type": "TArray<class BoobyTrapSpawners*>",
+        "Type": "TArray<class AIBoobyTrapSpawner*>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -24554,7 +24554,7 @@
     "Attributes": [
       {
         "Name": "BlockMaterials",
-        "Type": "TArray<class BlockMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -24854,7 +24854,7 @@
       },
       {
         "Name": "WheelMeshOverrideMaterials",
-        "Type": "TArray<class WheelMeshOverrideMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -27890,7 +27890,7 @@
       },
       {
         "Name": "Idle",
-        "Type": "TArray<class Idle*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -31923,7 +31923,7 @@
         "Offset": "0x93"
       },
       {
-        "Name": "ServerAndClientDisagreedFirstTime_Important_NoCorrectionAttempt",
+        "Name": "ServerAndClientDisagreedFirstTime_Important_NoCorrectionAttempted",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x94"
@@ -31935,13 +31935,13 @@
         "Offset": "0x95"
       },
       {
-        "Name": "ServerAndClientDisagreedFirstTime_Important_RewindEstimation_Co",
+        "Name": "ServerAndClientDisagreedFirstTime_Important_RewindEstimation_Corrected",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x96"
       },
       {
-        "Name": "ServerAndClientDisagreedFirstTime_Important_RewindEstimation_St",
+        "Name": "ServerAndClientDisagreedFirstTime_Important_RewindEstimation_StillDisagrees",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x97"
@@ -31994,7 +31994,7 @@
       }
     ]
   },
-  "ProjectileWeaponFireEnhancedClientRewindEstimationTelemetryEven": {
+  "ProjectileWeaponFireEnhancedClientRewindEstimationTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
       {
@@ -35533,7 +35533,7 @@
     "Attributes": [
       {
         "Name": "DataAssets",
-        "Type": "TArray<class DataAssets*>",
+        "Type": "TArray<class EmblemDefinitionDataAsset*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -43059,7 +43059,7 @@
       },
       {
         "Name": "BountyRewardsSpawnData",
-        "Type": "TArray<class BountyRewardsSpawnData*>",
+        "Type": "TArray<class ItemSpawnData*>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
@@ -43439,7 +43439,7 @@
     "Attributes": [
       {
         "Name": "Items",
-        "Type": "TArray<class Items*>",
+        "Type": "TArray<class MerchantQuestItemData*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -43805,7 +43805,7 @@
     "Attributes": [
       {
         "Name": "PageListsToUpdate",
-        "Type": "TArray<class PageListsToUpdate*>",
+        "Type": "TArray<class QuestBookPageList*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -44395,7 +44395,7 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
-  "OpenableItemMaterialAnimationReactionComponentAnimationNameAndS": {
+  "OpenableItemMaterialAnimationReactionComponentAnimationNameAndSfxCueSet": {
     "ClassSize": "0x40",
     "Attributes": [
       {
@@ -44448,7 +44448,7 @@
       }
     ]
   },
-  "OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCu": {
+  "OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCueSet": {
     "ClassSize": "0x40",
     "Attributes": [
       {
@@ -47054,7 +47054,7 @@
       }
     ]
   },
-  "EventAthenaLocalPlayerRequestRequiredControllersConnectedRespon": {
+  "EventAthenaLocalPlayerRequestRequiredControllersConnectedResponse": {
     "ClassSize": "0x1",
     "Attributes": [
       {
@@ -47774,13 +47774,13 @@
     "Attributes": [
       {
         "Name": "OverrideMaterials",
-        "Type": "TArray<class OverrideMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "OverrideFallbackMaterials",
-        "Type": "TArray<class OverrideFallbackMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -48062,7 +48062,7 @@
     "Attributes": [
       {
         "Name": "MaterialsList",
-        "Type": "TArray<class MaterialsList*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -48096,7 +48096,7 @@
     "Attributes": [
       {
         "Name": "Meshes",
-        "Type": "TArray<class Meshes*>",
+        "Type": "TArray<class MeshComponent*>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -48867,7 +48867,7 @@
       },
       {
         "Name": "Conditions",
-        "Type": "TArray<class Conditions*>",
+        "Type": "TArray<class StatCondition*>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -48884,7 +48884,7 @@
       },
       {
         "Name": "ConditionalStatsAssets",
-        "Type": "TArray<class ConditionalStatsAssets*>",
+        "Type": "TArray<class ConditionalStatsAsset*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -55370,7 +55370,7 @@
     "Attributes": [
       {
         "Name": "Items",
-        "Type": "TArray<class Items*>",
+        "Type": "TArray<class ItemProxy*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -55416,7 +55416,7 @@
       },
       {
         "Name": "Requirements",
-        "Type": "TArray<class Requirements*>",
+        "Type": "TArray<class SpawnRequirement*>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -55519,7 +55519,7 @@
       },
       {
         "Name": "Requirements",
-        "Type": "TArray<class Requirements*>",
+        "Type": "TArray<class SpawnRequirement*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -55958,7 +55958,7 @@
       },
       {
         "Name": "Levels",
-        "Type": "TArray<class Levels*>",
+        "Type": "TArray<class LevelStreaming*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -56603,7 +56603,7 @@
       },
       {
         "Name": "Rewards",
-        "Type": "TArray<class Rewards*>",
+        "Type": "TArray<class Reward*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -58232,7 +58232,7 @@
       },
       {
         "Name": "EncounterListenerActors",
-        "Type": "TArray<class EncounterListenerActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -58455,7 +58455,7 @@
       },
       {
         "Name": "Conditionals",
-        "Type": "TArray<class Conditionals*>",
+        "Type": "TArray<class NPCDialogConditional*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -58976,13 +58976,13 @@
     "Attributes": [
       {
         "Name": "Idle",
-        "Type": "TArray<class Idle*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Locomotion",
-        "Type": "TArray<class Locomotion*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -59000,25 +59000,25 @@
       },
       {
         "Name": "Impact",
-        "Type": "TArray<class Impact*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "DyingLoop",
-        "Type": "TArray<class DyingLoop*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "Death",
-        "Type": "TArray<class Death*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "Special",
-        "Type": "TArray<class Special*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -61047,7 +61047,7 @@
       },
       {
         "Name": "OneShotSequences",
-        "Type": "TArray<class OneShotSequences*>",
+        "Type": "TArray<class AnimSequenceBase*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -61111,7 +61111,7 @@
       },
       {
         "Name": "DialogueData",
-        "Type": "TArray<class DialogueData*>",
+        "Type": "TArray<class SceneDialogueData*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -61389,7 +61389,7 @@
       },
       {
         "Name": "Voters",
-        "Type": "TArray<class Voters*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -62918,7 +62918,7 @@
     "Attributes": [
       {
         "Name": "ShipSpawnLocations",
-        "Type": "TArray<class ShipSpawnLocations*>",
+        "Type": "TArray<class ShipSpawnLocation*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -63203,7 +63203,7 @@
       },
       {
         "Name": "FoundMaterials",
-        "Type": "TArray<class FoundMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -63231,25 +63231,25 @@
     "Attributes": [
       {
         "Name": "AnimationStartedEvents",
-        "Type": "TArray<class AnimationStartedEvents*>",
+        "Type": "TArray<class MechanismOneShotEvent*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "OneShotTimelineEvents",
-        "Type": "TArray<class OneShotTimelineEvents*>",
+        "Type": "TArray<class MechanismAnimationEvent*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ContinuousTimelineEvents",
-        "Type": "TArray<class ContinuousTimelineEvents*>",
+        "Type": "TArray<class MechanismAnimationEvent*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "AnimationStoppedEvents",
-        "Type": "TArray<class AnimationStoppedEvents*>",
+        "Type": "TArray<class MechanismOneShotEvent*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -63357,7 +63357,7 @@
       },
       {
         "Name": "DynamicMaterials",
-        "Type": "TArray<class DynamicMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -63387,13 +63387,13 @@
     "Attributes": [
       {
         "Name": "Actions",
-        "Type": "TArray<class Actions*>",
+        "Type": "TArray<class MechanismElementProxy*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Triggers",
-        "Type": "TArray<class Triggers*>",
+        "Type": "TArray<class MechanismElementProxy*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -63405,13 +63405,13 @@
       },
       {
         "Name": "SelectedActions",
-        "Type": "TArray<class SelectedActions*>",
+        "Type": "TArray<class MechanismElementProxy*>",
         "Size": "0x10",
         "Offset": "0x88"
       },
       {
         "Name": "SelectedTriggers",
-        "Type": "TArray<class SelectedTriggers*>",
+        "Type": "TArray<class MechanismElementProxy*>",
         "Size": "0x10",
         "Offset": "0x98"
       }
@@ -63451,7 +63451,7 @@
       },
       {
         "Name": "MechanismGroups",
-        "Type": "TArray<class MechanismGroups*>",
+        "Type": "TArray<class MechanismGroup*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -63670,13 +63670,13 @@
       },
       {
         "Name": "Policies",
-        "Type": "TArray<class Policies*>",
+        "Type": "TArray<class BattleElevatorEventRoomBasePolicy*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "Actions",
-        "Type": "TArray<class Actions*>",
+        "Type": "TArray<class ElevatorActionBase*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -64262,7 +64262,7 @@
       },
       {
         "Name": "SelectedFishCache",
-        "Type": "TArray<class SelectedFishCache*>",
+        "Type": "TArray<class FishSpawnParamsDataAsset*>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
@@ -67312,7 +67312,7 @@
       },
       {
         "Name": "AISpawners",
-        "Type": "TArray<class AISpawners*>",
+        "Type": "TArray<class AISpawner*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -69133,7 +69133,7 @@
       },
       {
         "Name": "FormationGruntVisuals",
-        "Type": "TArray<class FormationGruntVisuals*>",
+        "Type": "TArray<class AggressiveGhostShipVisualsDataAsset*>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -70627,13 +70627,13 @@
       },
       {
         "Name": "IgnoredActors",
-        "Type": "TArray<class IgnoredActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "IgnoredComponents",
-        "Type": "TArray<class IgnoredComponents*>",
+        "Type": "TArray<class ActorComponent*>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -71428,43 +71428,43 @@
     "Attributes": [
       {
         "Name": "PrimaryContinuous",
-        "Type": "TArray<class PrimaryContinuous*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SecondaryContinuous",
-        "Type": "TArray<class SecondaryContinuous*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PrimaryOneShot",
-        "Type": "TArray<class PrimaryOneShot*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "SecondaryOneShot",
-        "Type": "TArray<class SecondaryOneShot*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "MeleeBlocking",
-        "Type": "TArray<class MeleeBlocking*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "MeleeAttack",
-        "Type": "TArray<class MeleeAttack*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "MeleeBlockReact",
-        "Type": "TArray<class MeleeBlockReact*>",
+        "Type": "TArray<class AnimMontage*>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -72232,7 +72232,7 @@
       },
       {
         "Name": "BlockingFeedbackSequences",
-        "Type": "TArray<class BlockingFeedbackSequences*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -72256,7 +72256,7 @@
       },
       {
         "Name": "BlockingFeedbackSequencesSwimming",
-        "Type": "TArray<class BlockingFeedbackSequencesSwimming*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
@@ -73135,25 +73135,25 @@
     "Attributes": [
       {
         "Name": "HitReact",
-        "Type": "TArray<class HitReact*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "HitReactItem",
-        "Type": "TArray<class HitReactItem*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "HitReactItemAction",
-        "Type": "TArray<class HitReactItemAction*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "HitReactSubtle",
-        "Type": "TArray<class HitReactSubtle*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -73229,7 +73229,7 @@
       },
       {
         "Name": "IdleAnimations",
-        "Type": "TArray<class IdleAnimations*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -73598,7 +73598,7 @@
     "Attributes": [
       {
         "Name": "IdleAnimations",
-        "Type": "TArray<class IdleAnimations*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -73626,31 +73626,31 @@
     "Attributes": [
       {
         "Name": "JumpStart",
-        "Type": "TArray<class JumpStart*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "JumpCycle",
-        "Type": "TArray<class JumpCycle*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PreImpact",
-        "Type": "TArray<class PreImpact*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "LandLight",
-        "Type": "TArray<class LandLight*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "LandHeavy",
-        "Type": "TArray<class LandHeavy*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -73871,13 +73871,13 @@
       },
       {
         "Name": "Idles",
-        "Type": "TArray<class Idles*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "IdlesUnderwater",
-        "Type": "TArray<class IdlesUnderwater*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -73923,13 +73923,13 @@
     "Attributes": [
       {
         "Name": "Spawn",
-        "Type": "TArray<class Spawn*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Despawn",
-        "Type": "TArray<class Despawn*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -74296,19 +74296,19 @@
       },
       {
         "Name": "NeutralForce",
-        "Type": "TArray<class NeutralForce*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PushForce",
-        "Type": "TArray<class PushForce*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "PullForce",
-        "Type": "TArray<class PullForce*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -74478,13 +74478,13 @@
     "Attributes": [
       {
         "Name": "MainAction",
-        "Type": "TArray<class MainAction*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "AlternateAction",
-        "Type": "TArray<class AlternateAction*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -74530,25 +74530,25 @@
     "Attributes": [
       {
         "Name": "MainAction",
-        "Type": "TArray<class MainAction*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "MainActionLocomotion",
-        "Type": "TArray<class MainActionLocomotion*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "AlternateAction",
-        "Type": "TArray<class AlternateAction*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "AlternateActionLocomotion",
-        "Type": "TArray<class AlternateActionLocomotion*>",
+        "Type": "TArray<class BlendSpace*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -74594,7 +74594,7 @@
       },
       {
         "Name": "VariantCycleIdle",
-        "Type": "TArray<class VariantCycleIdle*>",
+        "Type": "TArray<class BlendSpace1D*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -75241,19 +75241,19 @@
     "Attributes": [
       {
         "Name": "Into",
-        "Type": "TArray<class Into*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "IdleCycle",
-        "Type": "TArray<class IdleCycle*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Outof",
-        "Type": "TArray<class Outof*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -75504,19 +75504,19 @@
       },
       {
         "Name": "Idles",
-        "Type": "TArray<class Idles*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "LeftFingerIdles",
-        "Type": "TArray<class LeftFingerIdles*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "RightFingerIdles",
-        "Type": "TArray<class RightFingerIdles*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x78"
       }
@@ -75614,7 +75614,7 @@
       },
       {
         "Name": "Loop",
-        "Type": "TArray<class Loop*>",
+        "Type": "TArray<class AnimSequence*>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -77595,7 +77595,7 @@
       },
       {
         "Name": "Players",
-        "Type": "TArray<class Players*>",
+        "Type": "TArray<class PlayerState*>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -77613,7 +77613,7 @@
       },
       {
         "Name": "AssociatedActors",
-        "Type": "TArray<class AssociatedActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x80"
       },

@@ -293,11 +293,11 @@ GameplayAbilitySpec:
   - Name: NonReplicatedInstances
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class NonReplicatedInstances*>
+    Type: TArray<class GameplayAbility*>
   - Name: ReplicatedInstances
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class ReplicatedInstances*>
+    Type: TArray<class GameplayAbility*>
   - Name: GameplayEffectHandle
     Offset: '0x70'
     Size: '0x4'

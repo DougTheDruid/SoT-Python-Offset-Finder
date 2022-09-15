@@ -6,69 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class BP_CylinderLightingZone_Treasury_1C_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Treasury_1B_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Treasury_1A_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Shrine_2C_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Shrine_2B_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Shrine_2A_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Shrine_1C_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Shrine_1B_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
-// Size 0x0
-class BP_CylinderLightingZone_Shrine_1A_C: public BP_CylinderLightingZone_C
-{
-public:
-};
-
-
 // Size 0x45
 class BP_CylinderLightingZone_C: public Actor
 {

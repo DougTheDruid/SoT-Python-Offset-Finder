@@ -23,7 +23,7 @@ LinkerComponent:
   - Name: EndPlayHandlers
     Offset: '0x190'
     Size: '0x10'
-    Type: TArray<class EndPlayHandlers*>
+    Type: TArray<class EndPlayHandler*>
   ClassSize: '0xd8'
   FullSize: '0x1a0'
   InheritedSize: '0xc8'

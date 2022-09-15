@@ -319,7 +319,7 @@ FoliageType_InstancedStaticMesh:
   - Name: OverrideMaterials
     Offset: '0x368'
     Size: '0x10'
-    Type: TArray<class OverrideMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: ComponentClass
     Offset: '0x378'
     Size: '0x8'

@@ -55,7 +55,7 @@
       },
       {
         "Name": "StateTextures",
-        "Type": "TArray<class StateTextures*>",
+        "Type": "TArray<class Texture2D*>",
         "Size": "0x10",
         "Offset": "0x408"
       },
@@ -79,7 +79,7 @@
       },
       {
         "Name": "StateParams",
-        "Type": "TArray<Struct StateTextures>",
+        "Type": "TArray<Struct BP_Struct_DynamicFogVolumeParams>",
         "Size": "0x10",
         "Offset": "0x428"
       }

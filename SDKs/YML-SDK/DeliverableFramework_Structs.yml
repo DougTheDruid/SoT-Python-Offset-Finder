@@ -9,5 +9,5 @@ DeliverableRequirementFeatureOverride:
   - Name: Requirements
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Requirements*>
+    Type: TArray<class DeliverableRequirementBase*>
   ClassSize: '0x18'

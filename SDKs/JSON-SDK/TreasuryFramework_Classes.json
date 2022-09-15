@@ -14,25 +14,25 @@
     "Attributes": [
       {
         "Name": "Waves1Player",
-        "Type": "TArray<class Waves1Player*>",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "Waves2Player",
-        "Type": "TArray<class Waves2Player*>",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "Waves3Player",
-        "Type": "TArray<class Waves3Player*>",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "Waves4Player",
-        "Type": "TArray<class Waves4Player*>",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
         "Size": "0x10",
         "Offset": "0x58"
       }
@@ -166,7 +166,7 @@
       },
       {
         "Name": "OverlappingActors",
-        "Type": "TArray<class OverlappingActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x470"
       },

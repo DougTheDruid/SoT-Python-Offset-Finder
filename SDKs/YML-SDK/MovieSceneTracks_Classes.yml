@@ -59,7 +59,7 @@ MovieScene3DConstraintTrack:
   - Name: ConstraintSections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class ConstraintSections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -187,7 +187,7 @@ MovieSceneAudioTrack:
   - Name: AudioSections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class AudioSections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -271,7 +271,7 @@ MovieSceneCameraAnimTrack:
   - Name: CameraAnimSections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class CameraAnimSections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -291,7 +291,7 @@ MovieSceneCameraCutTrack:
   - Name: Sections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -327,7 +327,7 @@ MovieSceneCameraShakeTrack:
   - Name: CameraShakeSections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class CameraShakeSections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -437,7 +437,7 @@ MovieSceneEventTrack:
   - Name: Sections
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x18'
   FullSize: '0xa0'
   InheritedSize: '0x88'
@@ -513,7 +513,7 @@ MovieSceneLevelVisibilityTrack:
   - Name: Sections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -523,7 +523,7 @@ MovieSceneMaterialTrack:
   - Name: Sections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -551,7 +551,7 @@ MovieSceneParticleParameterTrack:
   - Name: Sections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -571,7 +571,7 @@ MovieSceneParticleTrack:
   - Name: ParticleSections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class ParticleSections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -589,7 +589,7 @@ MovieScenePropertyTrack:
   - Name: Sections
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x28'
   FullSize: '0xb0'
   InheritedSize: '0x88'
@@ -641,7 +641,7 @@ MovieSceneSkeletalAnimationTrack:
   - Name: AnimationSections
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class AnimationSections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x18'
   FullSize: '0xa0'
   InheritedSize: '0x88'
@@ -669,7 +669,7 @@ MovieSceneSpawnTrack:
   - Name: Sections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   - Name: ObjectGuid
     Offset: '0x98'
     Size: '0x10'
@@ -733,7 +733,7 @@ MovieSceneSubTrack:
   - Name: Sections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'

@@ -40,7 +40,7 @@ public:
 	TArray<Struct FName>                                         SourceSkeletonNames;                               // 0x48(0x10)
 	TArray<Float SourceSkeletonWeights>                          SourceSkeletonWeights;                             // 0x58(0x10)
 	TArray<Struct BlendedSubMeshSpecification>                   BlendedSubMeshes;                                  // 0x68(0x10)
-	TArray<class UnblendedSubMeshes*>                            UnblendedSubMeshes;                                // 0x78(0x10)
+	TArray<class SkeletalMesh*>                                  UnblendedSubMeshes;                                // 0x78(0x10)
 	TArray<Struct IPGBlendShape>                                 BlendShapes;                                       // 0x88(0x10)
 };
 
@@ -86,7 +86,7 @@ public:
 class PirateGeneratorMaterials: public Object
 {
 public:
-	TArray<class Materials*>                                     Materials;                                         // 0x28(0x10)
+	TArray<class MaterialInterface*>                             Materials;                                         // 0x28(0x10)
 };
 
 

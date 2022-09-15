@@ -29,7 +29,7 @@ BP_CliffGenerator_C:
   - Name: Source Actors
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<class Source Actors*>
+    Type: TArray<class StaticMesh*>
   - Name: MaxTopSplineHeight
     Offset: '0x408'
     Size: '0x4'
@@ -57,7 +57,7 @@ BP_CliffGenerator_C:
   - Name: DataArray
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct Source Actors>
+    Type: TArray<Struct BP_CliffGenerator_Struct>
   - Name: Use_Deformable(SplineMesh)
     Offset: '0x430'
     Size: '0x1'
@@ -185,7 +185,7 @@ BP_CliffGenerator_C:
   - Name: ActorsToIgnore
     Offset: '0x4c8'
     Size: '0x10'
-    Type: TArray<class ActorsToIgnore*>
+    Type: TArray<class Actor*>
   - Name: '[[------DEFORM TERRAIN ------]]'
     Offset: '0x4d8'
     Size: '0x1'
@@ -197,11 +197,11 @@ BP_CliffGenerator_C:
   - Name: TopSplineIntersectionPoints
     Offset: '0x560'
     Size: '0x10'
-    Type: TArray<Struct ActorsToIgnore>
+    Type: TArray<Struct Vector>
   - Name: Local_InternalActorsToIgnore
     Offset: '0x570'
     Size: '0x10'
-    Type: TArray<class Local_InternalActorsToIgnore*>
+    Type: TArray<class Actor*>
   - Name: TopSplineColour
     Offset: '0x580'
     Size: '0x10'

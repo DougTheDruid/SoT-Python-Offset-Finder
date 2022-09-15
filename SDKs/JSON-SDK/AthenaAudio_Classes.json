@@ -151,7 +151,7 @@
     "Attributes": [
       {
         "Name": "AssetsList",
-        "Type": "TArray<class AssetsList*>",
+        "Type": "TArray<class StoryDrivenAudioPortalDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       }

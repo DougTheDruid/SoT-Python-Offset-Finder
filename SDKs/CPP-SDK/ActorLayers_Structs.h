@@ -12,7 +12,7 @@ struct InstancedLayer
 public:
 	Class LayerActorsDataAsset*                                  LayerActors;                                       // 0x0(0x8)
 	TArray<Struct Transform>                                     ActorTransforms;                                   // 0x8(0x10)
-	TArray<class SpawnedActors*>                                 SpawnedActors;                                     // 0x18(0x10)
+	TArray<class Actor*>                                         SpawnedActors;                                     // 0x18(0x10)
 };
 
 

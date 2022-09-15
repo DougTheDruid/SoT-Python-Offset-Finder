@@ -61,7 +61,7 @@ WidgetReflectorNodeBase:
   - Name: ChildNodes
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class ChildNodes*>
+    Type: TArray<class WidgetReflectorNodeBase*>
   - Name: Tint
     Offset: '0x70'
     Size: '0x10'

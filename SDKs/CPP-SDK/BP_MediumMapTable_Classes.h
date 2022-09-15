@@ -11,7 +11,7 @@ class BP_MediumMapTable_C: public MapTable
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x7a0(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x7a8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x7a8(0x8)
 	Class BoxComponent*                                          NavBlocker;                                        // 0x7b0(0x8)
 	Class ChildActorComponent*                                   ControlPoint;                                      // 0x7b8(0x8)
 	Class ChildActorComponent*                                   ControlPoint;                                      // 0x7c0(0x8)

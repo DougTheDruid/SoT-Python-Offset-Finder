@@ -106,7 +106,7 @@
       },
       {
         "Name": "WeightmapTextures",
-        "Type": "TArray<class WeightmapTextures*>",
+        "Type": "TArray<class Texture2D*>",
         "Size": "0x10",
         "Offset": "0x5f8"
       },
@@ -299,7 +299,7 @@
     "Attributes": [
       {
         "Name": "ComponentLayerInfos",
-        "Type": "TArray<class ComponentLayerInfos*>",
+        "Type": "TArray<class LandscapeLayerInfoObject*>",
         "Size": "0x10",
         "Offset": "0x5b8"
       },
@@ -347,7 +347,7 @@
       },
       {
         "Name": "CookedPhysicalMaterials",
-        "Type": "TArray<class CookedPhysicalMaterials*>",
+        "Type": "TArray<class PhysicalMaterial*>",
         "Size": "0x10",
         "Offset": "0x640"
       }
@@ -508,19 +508,19 @@
       },
       {
         "Name": "LandscapeComponents",
-        "Type": "TArray<class LandscapeComponents*>",
+        "Type": "TArray<class LandscapeComponent*>",
         "Size": "0x10",
         "Offset": "0x420"
       },
       {
         "Name": "CollisionComponents",
-        "Type": "TArray<class CollisionComponents*>",
+        "Type": "TArray<class LandscapeHeightfieldCollisionComponent*>",
         "Size": "0x10",
         "Offset": "0x430"
       },
       {
         "Name": "FoliageComponents",
-        "Type": "TArray<class FoliageComponents*>",
+        "Type": "TArray<class HierarchicalInstancedStaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x440"
       },
@@ -687,19 +687,19 @@
     "Attributes": [
       {
         "Name": "ControlPoints",
-        "Type": "TArray<class ControlPoints*>",
+        "Type": "TArray<class LandscapeSplineControlPoint*>",
         "Size": "0x10",
         "Offset": "0x5b8"
       },
       {
         "Name": "Segments",
-        "Type": "TArray<class Segments*>",
+        "Type": "TArray<class LandscapeSplineSegment*>",
         "Size": "0x10",
         "Offset": "0x5c8"
       },
       {
         "Name": "CookedForeignMeshComponents",
-        "Type": "TArray<class CookedForeignMeshComponents*>",
+        "Type": "TArray<class MeshComponent*>",
         "Size": "0x10",
         "Offset": "0x5d8"
       }
@@ -737,7 +737,7 @@
       },
       {
         "Name": "LocalMeshComponents",
-        "Type": "TArray<class LocalMeshComponents*>",
+        "Type": "TArray<class SplineMeshComponent*>",
         "Size": "0x10",
         "Offset": "0xa0"
       }

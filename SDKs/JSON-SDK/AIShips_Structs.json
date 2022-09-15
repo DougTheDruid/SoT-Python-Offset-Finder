@@ -760,7 +760,7 @@
     "Attributes": [
       {
         "Name": "AIShipsInWave",
-        "Type": "TArray<class AIShipsInWave*>",
+        "Type": "TArray<class AIShipContextDescDataAsset*>",
         "Size": "0x10",
         "Offset": "0x0"
       }

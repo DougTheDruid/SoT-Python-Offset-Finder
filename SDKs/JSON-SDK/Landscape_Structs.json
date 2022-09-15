@@ -161,7 +161,7 @@
       },
       {
         "Name": "MaterialOverrides",
-        "Type": "TArray<class MaterialOverrides*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x8"
       },

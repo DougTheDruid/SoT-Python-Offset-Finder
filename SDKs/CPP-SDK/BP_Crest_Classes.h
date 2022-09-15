@@ -28,7 +28,7 @@ public:
 	Struct WwiseEmitterCreationParams                            EmitterCreationParams;                             // 0x4d0(0x28)
 	float                                                        Cooldown;                                          // 0x4f8(0x4)
 	Struct SlateFontInfo                                         FontInfo;                                          // 0x500(0x40)
-	TArray<class VFXSizeVariants*>                               VFXSizeVariants;                                   // 0x540(0x10)
+	TArray<class ParticleSystem*>                                VFXSizeVariants;                                   // 0x540(0x10)
 	int                                                          NameSizeIndex;                                     // 0x550(0x4)
 	Struct FeatureFlag                                           FeatureName;                                       // 0x554(0x8)
 };

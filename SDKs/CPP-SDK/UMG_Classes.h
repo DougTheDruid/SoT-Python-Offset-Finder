@@ -197,7 +197,7 @@ public:
 	Struct WidgetTransform                                       RenderTransform;                                   // 0xcc(0x1c)
 	Struct Vector2D                                              RenderTransformPivot;                              // 0xe8(0x8)
 	Class WidgetNavigation*                                      Navigation;                                        // 0xf0(0x8)
-	TArray<class NativeBindings*>                                NativeBindings;                                    // 0x128(0x10)
+	TArray<class PropertyBinding*>                               NativeBindings;                                    // 0x128(0x10)
 };
 
 
@@ -209,8 +209,8 @@ public:
 	Struct SlateColor                                            ForegroundColor;                                   // 0x160(0x30)
 	bool                                                         bSupportsKeyboardFocus;                            // 0x1a0(0x1)
 	Class WidgetTree*                                            WidgetTree;                                        // 0x1a8(0x8)
-	TArray<class ActiveSequencePlayers*>                         ActiveSequencePlayers;                             // 0x1b0(0x10)
-	TArray<class StoppedSequencePlayers*>                        StoppedSequencePlayers;                            // 0x1c0(0x10)
+	TArray<class UMGSequencePlayer*>                             ActiveSequencePlayers;                             // 0x1b0(0x10)
+	TArray<class UMGSequencePlayer*>                             StoppedSequencePlayers;                            // 0x1c0(0x10)
 	TArray<Struct NamedSlotBinding>                              NamedSlotBindings;                                 // 0x1d0(0x10)
 };
 
@@ -398,7 +398,7 @@ public:
 class ComboBox: public Widget
 {
 public:
-	TArray<class Items*>                                         Items;                                             // 0x138(0x10)
+	TArray<class Object*>                                        Items;                                             // 0x138(0x10)
 };
 
 
@@ -527,7 +527,7 @@ public:
 class PanelWidget: public Widget
 {
 public:
-	TArray<class Slots*>                                         Slots;                                             // 0x138(0x10)
+	TArray<class PanelSlot*>                                     Slots;                                             // 0x138(0x10)
 };
 
 
@@ -764,7 +764,7 @@ public:
 	float                                                        WrapTextAt;                                        // 0x1d4(0x4)
 	Struct Margin                                                Margin;                                            // 0x1d8(0x10)
 	float                                                        LineHeightPercentage;                              // 0x1e8(0x4)
-	TArray<class Decorators*>                                    Decorators;                                        // 0x1f0(0x10)
+	TArray<class RichTextBlockDecorator*>                        Decorators;                                        // 0x1f0(0x10)
 };
 
 
@@ -839,7 +839,7 @@ class ListView: public TableViewBase
 {
 public:
 	float                                                        ItemHeight;                                        // 0x138(0x4)
-	TArray<class Items*>                                         Items;                                             // 0x140(0x10)
+	TArray<class Object*>                                        Items;                                             // 0x140(0x10)
 	byte                                                         SelectionMode;                                     // 0x150(0x1)
 };
 
@@ -850,7 +850,7 @@ class TileView: public TableViewBase
 public:
 	float                                                        ItemWidth;                                         // 0x138(0x4)
 	float                                                        ItemHeight;                                        // 0x13c(0x4)
-	TArray<class Items*>                                         Items;                                             // 0x140(0x10)
+	TArray<class Object*>                                        Items;                                             // 0x140(0x10)
 	byte                                                         SelectionMode;                                     // 0x150(0x1)
 };
 
@@ -902,7 +902,7 @@ class WidgetBlueprintGeneratedClass: public BlueprintGeneratedClass
 public:
 	Class WidgetTree*                                            WidgetTree;                                        // 0x228(0x8)
 	TArray<Struct DelegateRuntimeBinding>                        Bindings;                                          // 0x230(0x10)
-	TArray<class Animations*>                                    Animations;                                        // 0x240(0x10)
+	TArray<class WidgetAnimation*>                               Animations;                                        // 0x240(0x10)
 	TArray<Struct FName>                                         NamedSlots;                                        // 0x250(0x10)
 };
 
@@ -970,7 +970,7 @@ class WidgetTree: public Object
 {
 public:
 	Class Widget*                                                RootWidget;                                        // 0x28(0x8)
-	TArray<class AllWidgets*>                                    AllWidgets;                                        // 0x30(0x10)
+	TArray<class Widget*>                                        AllWidgets;                                        // 0x30(0x10)
 };
 
 

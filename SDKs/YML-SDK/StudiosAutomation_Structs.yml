@@ -23,7 +23,7 @@ ClientPawnDetails:
   - Name: Pawns
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Pawns*>
+    Type: TArray<class Pawn*>
   ClassSize: '0x10'
 CollectionAnimSequenceLimits:
   Attributes:

@@ -133,13 +133,13 @@
       },
       {
         "Name": "SkeletalMeshArray",
-        "Type": "TArray<class SkeletalMeshArray*>",
+        "Type": "TArray<class SkeletalMesh*>",
         "Size": "0x10",
         "Offset": "0x1bf8"
       },
       {
         "Name": "StaticMeshArray",
-        "Type": "TArray<class StaticMeshArray*>",
+        "Type": "TArray<class StaticMesh*>",
         "Size": "0x10",
         "Offset": "0x1c08"
       },

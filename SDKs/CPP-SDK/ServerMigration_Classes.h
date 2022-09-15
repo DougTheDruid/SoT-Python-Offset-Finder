@@ -43,7 +43,7 @@ public:
 
 
 // Size 0x8
-class ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPl: public Actor
+class ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPlay: public Actor
 {
 public:
 	Class PrimitiveComponent*                                    PrimitiveComponent;                                // 0x3c8(0x8)
@@ -59,7 +59,7 @@ public:
 
 
 // Size 0x8
-class ServerMigrationSerialisationDetailsTestsActorWithReplicatedChil: public Actor
+class ServerMigrationSerialisationDetailsTestsActorWithReplicatedChild: public Actor
 {
 public:
 	Class ChildActorComponent*                                   ChildActorComponent;                               // 0x3c8(0x8)
@@ -67,7 +67,7 @@ public:
 
 
 // Size 0x18
-class ServerMigrationSerialisationDetailsTestsActorWithDynamicCompone: public Actor
+class ServerMigrationSerialisationDetailsTestsActorWithDynamicComponent: public Actor
 {
 public:
 	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* SubObject;                                         // 0x3c8(0x8)
@@ -102,7 +102,7 @@ public:
 
 
 // Size 0x8
-class ServerMigrationSerialisationDetailsTestsMigratableComponentActo: public Actor
+class ServerMigrationSerialisationDetailsTestsMigratableComponentActor: public Actor
 {
 public:
 	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3c8(0x8)
@@ -110,7 +110,7 @@ public:
 
 
 // Size 0x8
-class ServerMigrationSerialisationDetailsTestsMigratableDefaultCompon: public Actor
+class ServerMigrationSerialisationDetailsTestsMigratableDefaultComponentActor: public Actor
 {
 public:
 	Class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3c8(0x8)
@@ -118,29 +118,37 @@ public:
 
 
 // Size 0x8
-class ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrde: public Actor
+class ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor: public Actor
 {
 public:
 };
 
 
 // Size 0x0
-class ServerMigrationSerialisationDetailsTestsMigrationActorWithRootC: public Actor
+class ServerMigrationSerialisationDetailsTestsMigrationActorWithRootComponentSimulatePhysicsEnabledByDefault: public Actor
 {
 public:
 };
 
 
 // Size 0x8
-class ServerMigrationSerialisationDetailsTestsMigrationChildActorLink: public Actor
+class ServerMigrationSerialisationDetailsTestsMigrationChildActorLinkedActor: public Actor
 {
 public:
 	Class ChildActorComponent*                                   Component;                                         // 0x3c8(0x8)
 };
 
 
+// Size 0x8
+class ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor: public Actor
+{
+public:
+	Struct ServerMigrationCustomMigrationSerialisationStruct     TestStruct;                                        // 0x3c8(0x4)
+};
+
+
 // Size 0x0
-class ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis: public ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis
+class ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseReplicatingActor: public ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor
 {
 public:
 };

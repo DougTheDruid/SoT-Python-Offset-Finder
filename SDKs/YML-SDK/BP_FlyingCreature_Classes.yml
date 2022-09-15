@@ -29,7 +29,7 @@ BP_FlyingCreature_C:
   - Name: MaterialInstance
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<class MaterialInstance*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: Seed
     Offset: '0x450'
     Size: '0x4'

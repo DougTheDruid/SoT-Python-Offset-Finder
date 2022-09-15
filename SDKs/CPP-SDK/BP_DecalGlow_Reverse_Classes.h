@@ -12,7 +12,7 @@ class BP_DecalGlow_Reverse_C: public LandmarkReactionActor
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
-	TArray<class DecalMaterials*>                                DecalMaterials;                                    // 0x3e0(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DecalMaterials;                                    // 0x3e0(0x10)
 	float                                                        Reveal Duration;                                   // 0x3f0(0x4)
 	BlueprintGeneratedClass BP_StepsTrigger_C*                   StepsTriggerActor;                                 // 0x3f8(0x8)
 	BlueprintGeneratedClass BP_DecalGlow_Longer_C*               StarterActor;                                      // 0x400(0x8)

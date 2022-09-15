@@ -20,7 +20,7 @@ public:
 	bool                                                         RequiresNotAirborne;                               // 0xfc(0x1)
 	bool                                                         RequiresNotSwimming;                               // 0xfc(0x1)
 	float                                                        InteractionRadius;                                 // 0x100(0x4)
-	TArray<class InteractionPrerequisites*>                      InteractionPrerequisites;                          // 0x108(0x10)
+	TArray<class InteractionPrerequisiteBase*>                   InteractionPrerequisites;                          // 0x108(0x10)
 	Class InteractableArea*                                      InteractableArea;                                  // 0x118(0x8)
 	byte                                                         CurrentInteractionState;                           // 0x120(0x1)
 };
@@ -91,7 +91,7 @@ public:
 class InteractableService: public Object
 {
 public:
-	TArray<class InteractableAreas*>                             InteractableAreas;                                 // 0x38(0x10)
+	TArray<class InteractableArea*>                              InteractableAreas;                                 // 0x38(0x10)
 };
 
 
@@ -106,7 +106,7 @@ public:
 class InteractionPreventionComponent: public ActorComponent
 {
 public:
-	TArray<class ActorsToPreventInteractingWith*>                ActorsToPreventInteractingWith;                    // 0xd0(0x10)
+	TArray<class Actor*>                                         ActorsToPreventInteractingWith;                    // 0xd0(0x10)
 };
 
 

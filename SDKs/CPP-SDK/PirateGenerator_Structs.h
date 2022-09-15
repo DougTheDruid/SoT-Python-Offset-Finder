@@ -20,7 +20,7 @@ public:
 struct PirateGeneratorAdditionalBakeInfo
 {
 public:
-	TArray<class VFXParticles*>                                  VFXParticles;                                      // 0x0(0x10)
+	TArray<class ParticleSystem*>                                VFXParticles;                                      // 0x0(0x10)
 	TArray<Struct FName>                                         VFXSockets;                                        // 0x10(0x10)
 };
 
@@ -84,10 +84,10 @@ public:
 struct WardrobeOutfitResult
 {
 public:
-	TArray<class Meshes*>                                        Meshes;                                            // 0x0(0x10)
+	TArray<class SkeletalMesh*>                                  Meshes;                                            // 0x0(0x10)
 	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x10(0x10)
 	TArray<Struct FName>                                         MaterialReferences;                                // 0x20(0x10)
-	TArray<class VFXParticles*>                                  VFXParticles;                                      // 0x30(0x10)
+	TArray<class ParticleSystem*>                                VFXParticles;                                      // 0x30(0x10)
 	TArray<Struct FName>                                         VFXSockets;                                        // 0x40(0x10)
 };
 
@@ -340,7 +340,7 @@ struct BlendedSubMeshSpecification
 public:
 	Class SkeletalMesh*                                          Mesh;                                              // 0x0(0x8)
 	float                                                        BaseMeshWeight;                                    // 0x8(0x4)
-	TArray<class MeshPatchAssets*>                               MeshPatchAssets;                                   // 0x10(0x10)
+	TArray<class MeshPatchAsset*>                                MeshPatchAssets;                                   // 0x10(0x10)
 	TArray<Float MeshPatchAssetWeights>                          MeshPatchAssetWeights;                             // 0x20(0x10)
 };
 

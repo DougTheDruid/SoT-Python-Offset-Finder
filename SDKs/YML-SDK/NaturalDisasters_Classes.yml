@@ -163,7 +163,7 @@ DisableGeyserMechanismAction:
   - Name: GeysersToDisable
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class GeysersToDisable*>
+    Type: TArray<class Geyser*>
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -585,7 +585,7 @@ LavaZone:
   - Name: ActorsInZone
     Offset: '0x438'
     Size: '0x10'
-    Type: TArray<class ActorsInZone*>
+    Type: TArray<class Actor*>
   - Name: Active
     Offset: '0x448'
     Size: '0x1'

@@ -25,7 +25,7 @@ BP_Placement_HeightDrop_C:
   - Name: ComponentsToDrop
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class ComponentsToDrop*>
+    Type: TArray<class SceneComponent*>
   - Name: Check For Movable Components
     Offset: '0x3f0'
     Size: '0x1'
@@ -41,7 +41,7 @@ BP_Placement_HeightDrop_C:
   - Name: Physical Materials To Ignore
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<class Physical Materials To Ignore*>
+    Type: TArray<class PhysicalMaterial*>
   ClassSize: '0x40'
   FullSize: '0x408'
   InheritedSize: '0x3c8'

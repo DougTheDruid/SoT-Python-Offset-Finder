@@ -19,7 +19,7 @@
       },
       {
         "Name": "DecalMaterials",
-        "Type": "TArray<class DecalMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },

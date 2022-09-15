@@ -137,7 +137,7 @@ class OnlineBeaconHost: public OnlineBeacon
 {
 public:
 	int                                                          ListenPort;                                        // 0x3f0(0x4)
-	TArray<class ClientActors*>                                  ClientActors;                                      // 0x3f8(0x10)
+	TArray<class OnlineBeaconClient*>                            ClientActors;                                      // 0x3f8(0x10)
 };
 
 
@@ -147,7 +147,7 @@ class OnlineBeaconHostObject: public Actor
 public:
 	Struct FString                                               BeaconTypeName;                                    // 0x3c8(0x10)
 	class                                                        ClientBeaconActorClass;                            // 0x3d8(0x8)
-	TArray<class ClientActors*>                                  ClientActors;                                      // 0x3e0(0x10)
+	TArray<class OnlineBeaconClient*>                            ClientActors;                                      // 0x3e0(0x10)
 };
 
 

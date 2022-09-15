@@ -123,7 +123,7 @@
     "Attributes": [
       {
         "Name": "SeasonPopups",
-        "Type": "TArray<class SeasonPopups*>",
+        "Type": "TArray<class SeasonPopupAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       }

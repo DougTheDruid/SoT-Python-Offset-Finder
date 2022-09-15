@@ -53,7 +53,7 @@ LandscapeComponent:
   - Name: WeightmapTextures
     Offset: '0x5f8'
     Size: '0x10'
-    Type: TArray<class WeightmapTextures*>
+    Type: TArray<class Texture2D*>
   - Name: XYOffsetmapTexture
     Offset: '0x608'
     Size: '0x8'
@@ -187,7 +187,7 @@ LandscapeHeightfieldCollisionComponent:
   - Name: ComponentLayerInfos
     Offset: '0x5b8'
     Size: '0x10'
-    Type: TArray<class ComponentLayerInfos*>
+    Type: TArray<class LandscapeLayerInfoObject*>
   - Name: SectionBaseX
     Offset: '0x5c8'
     Size: '0x4'
@@ -219,7 +219,7 @@ LandscapeHeightfieldCollisionComponent:
   - Name: CookedPhysicalMaterials
     Offset: '0x640'
     Size: '0x10'
-    Type: TArray<class CookedPhysicalMaterials*>
+    Type: TArray<class PhysicalMaterial*>
   ClassSize: '0xd0'
   FullSize: '0x690'
   InheritedSize: '0x5c0'
@@ -371,15 +371,15 @@ LandscapeProxy:
   - Name: LandscapeComponents
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<class LandscapeComponents*>
+    Type: TArray<class LandscapeComponent*>
   - Name: CollisionComponents
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<class CollisionComponents*>
+    Type: TArray<class LandscapeHeightfieldCollisionComponent*>
   - Name: FoliageComponents
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<class FoliageComponents*>
+    Type: TArray<class HierarchicalInstancedStaticMeshComponent*>
   - Name: StaticLightingResolution
     Offset: '0x4c0'
     Size: '0x4'
@@ -531,7 +531,7 @@ LandscapeSplineSegment:
   - Name: LocalMeshComponents
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class LocalMeshComponents*>
+    Type: TArray<class SplineMeshComponent*>
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'
@@ -541,15 +541,15 @@ LandscapeSplinesComponent:
   - Name: ControlPoints
     Offset: '0x5b8'
     Size: '0x10'
-    Type: TArray<class ControlPoints*>
+    Type: TArray<class LandscapeSplineControlPoint*>
   - Name: Segments
     Offset: '0x5c8'
     Size: '0x10'
-    Type: TArray<class Segments*>
+    Type: TArray<class LandscapeSplineSegment*>
   - Name: CookedForeignMeshComponents
     Offset: '0x5d8'
     Size: '0x10'
-    Type: TArray<class CookedForeignMeshComponents*>
+    Type: TArray<class MeshComponent*>
   ClassSize: '0x30'
   FullSize: '0x5f0'
   InheritedSize: '0x5c0'

@@ -220,7 +220,7 @@ BTCompositeChild:
   - Name: Decorators
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class Decorators*>
+    Type: TArray<class BTDecorator*>
   - Name: DecoratorOps
     Offset: '0x20'
     Size: '0x10'
@@ -264,7 +264,7 @@ BlackboardKeySelector:
   - Name: AllowedTypes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class AllowedTypes*>
+    Type: TArray<class BlackboardKeyType*>
   - Name: SelectedKeyName
     Offset: '0x10'
     Size: '0x8'

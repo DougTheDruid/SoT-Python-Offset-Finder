@@ -89,7 +89,7 @@ InteractableComponent:
   - Name: InteractionPrerequisites
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<class InteractionPrerequisites*>
+    Type: TArray<class InteractionPrerequisiteBase*>
   - Name: InteractableArea
     Offset: '0x118'
     Size: '0x8'
@@ -119,7 +119,7 @@ InteractableService:
   - Name: InteractableAreas
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class InteractableAreas*>
+    Type: TArray<class InteractableArea*>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -135,7 +135,7 @@ InteractionPreventionComponent:
   - Name: ActorsToPreventInteractingWith
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class ActorsToPreventInteractingWith*>
+    Type: TArray<class Actor*>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'

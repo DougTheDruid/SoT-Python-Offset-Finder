@@ -24,7 +24,7 @@ BlendedSubMeshSpecification:
   - Name: MeshPatchAssets
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<class MeshPatchAssets*>
+    Type: TArray<class MeshPatchAsset*>
   - Name: MeshPatchAssetWeights
     Offset: '0x20'
     Size: '0x10'
@@ -546,7 +546,7 @@ PirateGeneratorAdditionalBakeInfo:
   - Name: VFXParticles
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class VFXParticles*>
+    Type: TArray<class ParticleSystem*>
   - Name: VFXSockets
     Offset: '0x10'
     Size: '0x10'
@@ -691,7 +691,7 @@ WardrobeOutfitResult:
   - Name: Meshes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class Meshes*>
+    Type: TArray<class SkeletalMesh*>
   - Name: ScalarParameters
     Offset: '0x10'
     Size: '0x10'
@@ -703,7 +703,7 @@ WardrobeOutfitResult:
   - Name: VFXParticles
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class VFXParticles*>
+    Type: TArray<class ParticleSystem*>
   - Name: VFXSockets
     Offset: '0x40'
     Size: '0x10'

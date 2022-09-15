@@ -5,7 +5,7 @@ CordRenderComponent:
   - Name: CordMaterials
     Offset: '0x628'
     Size: '0x10'
-    Type: TArray<class CordMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: ThicknessCm
     Offset: '0x638'
     Size: '0x4'
@@ -77,7 +77,7 @@ HarpoonRenderComponent:
   - Name: HarpoonMaterials
     Offset: '0x658'
     Size: '0x10'
-    Type: TArray<class HarpoonMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: LaunchAnimationDurationSecs
     Offset: '0x668'
     Size: '0x4'

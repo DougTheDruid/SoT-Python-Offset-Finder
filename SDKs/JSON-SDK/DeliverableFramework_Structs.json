@@ -10,7 +10,7 @@
       },
       {
         "Name": "Requirements",
-        "Type": "TArray<class Requirements*>",
+        "Type": "TArray<class DeliverableRequirementBase*>",
         "Size": "0x10",
         "Offset": "0x8"
       }

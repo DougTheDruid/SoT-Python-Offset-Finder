@@ -306,7 +306,7 @@ FireGridCharringManager:
   - Name: OwnerMaterials
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class OwnerMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: AdditionalGridOffsetForCharring
     Offset: '0x10'
     Size: '0xc'

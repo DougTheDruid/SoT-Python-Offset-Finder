@@ -18,11 +18,11 @@ public:
 	Class CanvasRenderTarget2D*                                  Canvas;                                            // 0x3f8(0x8)
 	int                                                          CurrentState;                                      // 0x400(0x4)
 	int                                                          NextState;                                         // 0x404(0x4)
-	TArray<class StateTextures*>                                 StateTextures;                                     // 0x408(0x10)
+	TArray<class Texture2D*>                                     StateTextures;                                     // 0x408(0x10)
 	int                                                          Width;                                             // 0x418(0x4)
 	int                                                          Height;                                            // 0x41c(0x4)
 	bool                                                         UseStateParameters;                                // 0x420(0x1)
-	TArray<Struct StateTextures>                                 StateParams;                                       // 0x428(0x10)
+	TArray<Struct BP_Struct_DynamicFogVolumeParams>              StateParams;                                       // 0x428(0x10)
 };
 
 

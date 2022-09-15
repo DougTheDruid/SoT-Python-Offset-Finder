@@ -67,7 +67,7 @@ public:
 class StoryDrivenBlendedLightingZoneComponentCollectionDataAsset: public DataAsset
 {
 public:
-	TArray<class StoryDrivenLightingAssetList*>                  StoryDrivenLightingAssetList;                      // 0x28(0x10)
+	TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*> StoryDrivenLightingAssetList;                      // 0x28(0x10)
 };
 
 
@@ -98,8 +98,8 @@ public:
 class StorySpawnedActorsCollectionDataAsset: public DataAsset
 {
 public:
-	TArray<class StorySpawnedActorsAssetList*>                   StorySpawnedActorsAssetList;                       // 0x28(0x10)
-	TArray<class StorySpawnedActorsCollectionList*>              StorySpawnedActorsCollectionList;                  // 0x38(0x10)
+	TArray<class StorySpawnedActorsDataAsset*>                   StorySpawnedActorsAssetList;                       // 0x28(0x10)
+	TArray<class StorySpawnedActorsCollectionDataAsset*>         StorySpawnedActorsCollectionList;                  // 0x38(0x10)
 };
 
 
@@ -115,8 +115,8 @@ public:
 class StorySpawnedActorsComponentCollectionDataAsset: public DataAsset
 {
 public:
-	TArray<class StorySpawnedActorsAssetList*>                   StorySpawnedActorsAssetList;                       // 0x28(0x10)
-	TArray<class StorySpawnedActorsCollectionList*>              StorySpawnedActorsCollectionList;                  // 0x38(0x10)
+	TArray<class StorySpawnedActorsComponentDataAsset*>          StorySpawnedActorsAssetList;                       // 0x28(0x10)
+	TArray<class StorySpawnedActorsComponentCollectionDataAsset*> StorySpawnedActorsCollectionList;                  // 0x38(0x10)
 };
 
 
@@ -149,7 +149,7 @@ public:
 class StorySpawnedActorsService: public Actor
 {
 public:
-	TArray<class EarlyRegisteredComponents*>                     EarlyRegisteredComponents;                         // 0x3e0(0x10)
+	TArray<class StorySpawnedActorsComponent*>                   EarlyRegisteredComponents;                         // 0x3e0(0x10)
 	Class StorySpawnedActorsCollectionDataAsset*                 Asset;                                             // 0x3f0(0x8)
 };
 
@@ -192,7 +192,7 @@ class StoryNamesCollectionDataAsset: public DataAsset
 {
 public:
 	TArray<Struct StoryNameInfo>                                 Stories;                                           // 0x28(0x10)
-	TArray<class StoriesAssets*>                                 StoriesAssets;                                     // 0x38(0x10)
+	TArray<class StoryNamesCollectionDataAsset*>                 StoriesAssets;                                     // 0x38(0x10)
 };
 
 

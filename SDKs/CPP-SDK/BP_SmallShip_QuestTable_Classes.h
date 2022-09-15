@@ -6,13 +6,6 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
-class BP_SmallShip_QuestTable_ShipPartMMC_C: public BP_SmallShip_QuestTable_C
-{
-public:
-};
-
-
 // Size 0x50
 class BP_SmallShip_QuestTable_C: public VoyageTable
 {

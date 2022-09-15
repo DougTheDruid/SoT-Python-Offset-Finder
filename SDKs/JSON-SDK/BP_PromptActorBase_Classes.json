@@ -25,7 +25,7 @@
       },
       {
         "Name": "PromptCoordinators",
-        "Type": "TArray<class PromptCoordinators*>",
+        "Type": "TArray<class BP_PromptCoordinator_Base_C*>",
         "Size": "0x10",
         "Offset": "0x3e0"
       }

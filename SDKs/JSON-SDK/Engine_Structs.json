@@ -3970,7 +3970,7 @@
       },
       {
         "Name": "Graphs",
-        "Type": "TArray<class Graphs*>",
+        "Type": "TArray<class EdGraph*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -4092,7 +4092,7 @@
     "Attributes": [
       {
         "Name": "Array",
-        "Type": "TArray<class Array*>",
+        "Type": "TArray<class InstancedStaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -6497,7 +6497,7 @@
       },
       {
         "Name": "Blendables",
-        "Type": "TArray<class Blendables*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x528"
       }
@@ -7398,7 +7398,7 @@
       },
       {
         "Name": "Actors",
-        "Type": "TArray<class Actors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -10247,7 +10247,7 @@
       },
       {
         "Name": "MetaData",
-        "Type": "TArray<class MetaData*>",
+        "Type": "TArray<class AnimMetaData*>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -12742,7 +12742,7 @@
       },
       {
         "Name": "Targets",
-        "Type": "TArray<class Targets*>",
+        "Type": "TArray<class DialogueVoice*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -14125,13 +14125,13 @@
       },
       {
         "Name": "LoadedLevelsForPendingMapChange",
-        "Type": "TArray<class LoadedLevelsForPendingMapChange*>",
+        "Type": "TArray<class Level*>",
         "Size": "0x10",
         "Offset": "0x1e8"
       },
       {
         "Name": "ObjectReferencers",
-        "Type": "TArray<class ObjectReferencers*>",
+        "Type": "TArray<class ObjectReferencer*>",
         "Size": "0x10",
         "Offset": "0x210"
       },
@@ -14218,7 +14218,7 @@
       },
       {
         "Name": "LoadedObjects",
-        "Type": "TArray<class LoadedObjects*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -16122,7 +16122,7 @@
       },
       {
         "Name": "ParticleModuleEventsToSendToGame",
-        "Type": "TArray<class ParticleModuleEventsToSendToGame*>",
+        "Type": "TArray<class ParticleModuleEventSendToGame*>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -16157,7 +16157,7 @@
       },
       {
         "Name": "ParticleModuleEventsToSendToGame",
-        "Type": "TArray<class ParticleModuleEventsToSendToGame*>",
+        "Type": "TArray<class ParticleModuleEventSendToGame*>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -16623,7 +16623,7 @@
       },
       {
         "Name": "SpawnModules",
-        "Type": "TArray<class SpawnModules*>",
+        "Type": "TArray<class ParticleModule*>",
         "Size": "0x10",
         "Offset": "0x38"
       },

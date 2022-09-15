@@ -24,7 +24,7 @@ public:
 	Class CurveFloat*                                            TransitionCurve;                                   // 0xf0(0x8)
 	float                                                        TransitionSpeedDecrease;                           // 0xf8(0x4)
 	float                                                        TransitionSpeedIncrease;                           // 0xfc(0x4)
-	TArray<class LiquidMaterials*>                               LiquidMaterials;                                   // 0x100(0x10)
+	TArray<class MaterialInstanceDynamic*>                       LiquidMaterials;                                   // 0x100(0x10)
 };
 
 

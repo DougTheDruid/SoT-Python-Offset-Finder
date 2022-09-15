@@ -64,7 +64,7 @@ public:
 class VideprinterService: public Object
 {
 public:
-	TArray<class Videprinters*>                                  Videprinters;                                      // 0x30(0x10)
+	TArray<class Videprinter*>                                   Videprinters;                                      // 0x30(0x10)
 };
 
 

@@ -61,7 +61,7 @@ AbandonedNoteClueGenderSpecificTextIndexAsset:
   - Name: ClueDestinationDescriptions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ClueDestinationDescriptions*>
+    Type: TArray<class AbandonedNoteClueGenderSpecificTextAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -97,7 +97,7 @@ AbandonedNoteClueTextIndexAsset:
   - Name: ClueDestinationDescriptions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ClueDestinationDescriptions*>
+    Type: TArray<class AbandonedNoteClueTextAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -577,7 +577,7 @@ TaleQuestClueInventoryService:
   - Name: ObtainedClues
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class ObtainedClues*>
+    Type: TArray<class ClueDescriptor*>
   - Name: TitleText
     Offset: '0x248'
     Size: '0x38'

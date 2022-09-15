@@ -32,7 +32,7 @@ public:
 	Class InstancedRopeComponent*                                InstancedRopes;                                    // 0x3d8(0x8)
 	TArray<Struct RiggingSystemLine>                             Lines;                                             // 0x3e0(0x10)
 	TArray<Struct InstancedRopeParams>                           Ropes;                                             // 0x3f0(0x10)
-	TArray<class PulleyInstances*>                               PulleyInstances;                                   // 0x400(0x10)
+	TArray<class MobileInstancedStaticMeshComponent*>            PulleyInstances;                                   // 0x400(0x10)
 	Struct RiggingSystemPulleyData                               Pulleys;                                           // 0x410(0x60)
 	TArray<Struct SocketId>                                      Sockets;                                           // 0x470(0x10)
 	TArray<Float InitialMainRopeLengths>                         InitialMainRopeLengths;                            // 0x480(0x10)

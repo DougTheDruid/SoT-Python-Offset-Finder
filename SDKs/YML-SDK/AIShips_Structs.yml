@@ -349,7 +349,7 @@ AIShipEncounterWave:
   - Name: AIShipsInWave
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class AIShipsInWave*>
+    Type: TArray<class AIShipContextDescDataAsset*>
   ClassSize: '0x10'
 AIShipEncounterWaveDesc:
   Attributes:

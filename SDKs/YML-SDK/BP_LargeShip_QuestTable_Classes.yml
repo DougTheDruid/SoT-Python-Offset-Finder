@@ -46,9 +46,3 @@ BP_LargeShip_QuestTable_C:
   FullSize: '0x8c8'
   InheritedSize: '0x878'
   Super: VoyageTable
-BP_LargeShip_QuestTable_ShipPartMMC_C:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x8c8'
-  InheritedSize: '0x8c8'
-  Super: BP_LargeShip_QuestTable_C

@@ -21,7 +21,7 @@ struct InvasionParticipatingCrewData
 {
 public:
 	TArray<Struct InvasionCrewData>                              CrewIds;                                           // 0x0(0x10)
-	TArray<class Participants*>                                  Participants;                                      // 0x10(0x10)
+	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0x10(0x10)
 };
 
 

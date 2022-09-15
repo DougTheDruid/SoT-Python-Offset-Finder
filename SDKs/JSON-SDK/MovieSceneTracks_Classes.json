@@ -121,7 +121,7 @@
     "Attributes": [
       {
         "Name": "ConstraintSections",
-        "Type": "TArray<class ConstraintSections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -251,7 +251,7 @@
     "Attributes": [
       {
         "Name": "AudioSections",
-        "Type": "TArray<class AudioSections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -356,7 +356,7 @@
     "Attributes": [
       {
         "Name": "CameraAnimSections",
-        "Type": "TArray<class CameraAnimSections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -384,7 +384,7 @@
     "Attributes": [
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -436,7 +436,7 @@
     "Attributes": [
       {
         "Name": "CameraShakeSections",
-        "Type": "TArray<class CameraShakeSections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -516,7 +516,7 @@
     "Attributes": [
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -548,7 +548,7 @@
       },
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -649,7 +649,7 @@
       },
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0xa0"
       }
@@ -663,7 +663,7 @@
     "Attributes": [
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -703,7 +703,7 @@
     "Attributes": [
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -731,7 +731,7 @@
     "Attributes": [
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -759,7 +759,7 @@
     "Attributes": [
       {
         "Name": "ParticleSections",
-        "Type": "TArray<class ParticleSections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -954,7 +954,7 @@
       },
       {
         "Name": "AnimationSections",
-        "Type": "TArray<class AnimationSections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -1046,7 +1046,7 @@
     "Attributes": [
       {
         "Name": "Sections",
-        "Type": "TArray<class Sections*>",
+        "Type": "TArray<class MovieSceneSection*>",
         "Size": "0x10",
         "Offset": "0x88"
       }

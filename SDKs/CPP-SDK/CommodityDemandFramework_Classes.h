@@ -101,7 +101,7 @@ class CommodityRedemptionComponent: public ActorComponent
 {
 public:
 	Struct FText                                                 RedeemTooltipText;                                 // 0xd0(0x38)
-	TArray<class PendingRedemptions*>                            PendingRedemptions;                                // 0x180(0x10)
+	TArray<class Actor*>                                         PendingRedemptions;                                // 0x180(0x10)
 };
 
 

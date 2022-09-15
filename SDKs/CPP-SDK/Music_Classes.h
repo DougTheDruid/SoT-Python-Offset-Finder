@@ -23,7 +23,7 @@ public:
 	bool                                                         LocalRTPC;                                         // 0x2f8(0x1)
 	Class WwiseEvent*                                            PlayEvent;                                         // 0x300(0x8)
 	Class WwiseEvent*                                            StopEvent;                                         // 0x308(0x8)
-	TArray<class OneShotEvents*>                                 OneShotEvents;                                     // 0x310(0x10)
+	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x310(0x10)
 	Class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x320(0x8)
 	bool                                                         DisableAfterPlayThrough;                           // 0x328(0x1)
 	bool                                                         ActivateOnBeginPlay;                               // 0x329(0x1)
@@ -36,7 +36,7 @@ class AISpawnerMusicZoneComponent: public MusicZoneComponent
 public:
 	Class WwiseEvent*                                            BattleWonEvent;                                    // 0x3a0(0x8)
 	Class AISpawner*                                             AISpawner;                                         // 0x3a8(0x8)
-	TArray<class SpawnerPawns*>                                  SpawnerPawns;                                      // 0x3b0(0x10)
+	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3b0(0x10)
 	byte                                                         SpawnerState;                                      // 0x3c0(0x1)
 };
 

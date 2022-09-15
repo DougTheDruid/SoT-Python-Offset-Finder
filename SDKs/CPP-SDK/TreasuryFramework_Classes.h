@@ -17,10 +17,10 @@ public:
 class TreasuryWaveDataAsset: public DataAsset
 {
 public:
-	TArray<class Waves1Player*>                                  Waves1Player;                                      // 0x28(0x10)
-	TArray<class Waves2Player*>                                  Waves2Player;                                      // 0x38(0x10)
-	TArray<class Waves3Player*>                                  Waves3Player;                                      // 0x48(0x10)
-	TArray<class Waves4Player*>                                  Waves4Player;                                      // 0x58(0x10)
+	TArray<class AIProgressiveWavesSpawner*>                     Waves1Player;                                      // 0x28(0x10)
+	TArray<class AIProgressiveWavesSpawner*>                     Waves2Player;                                      // 0x38(0x10)
+	TArray<class AIProgressiveWavesSpawner*>                     Waves3Player;                                      // 0x48(0x10)
+	TArray<class AIProgressiveWavesSpawner*>                     Waves4Player;                                      // 0x58(0x10)
 };
 
 
@@ -48,7 +48,7 @@ public:
 	Class Actor*                                                 VaultTriggerActor;                                 // 0x438(0x8)
 	class                                                        VaultLootSpawner;                                  // 0x440(0x8)
 	Class Actor*                                                 VaultLootSpawnLocationActor;                       // 0x448(0x8)
-	TArray<class OverlappingActors*>                             OverlappingActors;                                 // 0x470(0x10)
+	TArray<class Actor*>                                         OverlappingActors;                                 // 0x470(0x10)
 	TArray<Weakclass CachedParticipantControllers>               CachedParticipantControllers;                      // 0x480(0x10)
 	Class Actor*                                                 VaultLootSpawnerActor;                             // 0x490(0x8)
 	Struct PlayerStat                                            VaultOpenStat;                                     // 0x498(0x4)

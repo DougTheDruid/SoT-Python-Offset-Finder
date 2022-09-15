@@ -124,7 +124,7 @@
     "Attributes": [
       {
         "Name": "Videprinters",
-        "Type": "TArray<class Videprinters*>",
+        "Type": "TArray<class Videprinter*>",
         "Size": "0x10",
         "Offset": "0x30"
       }

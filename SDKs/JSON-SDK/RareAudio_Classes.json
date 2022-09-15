@@ -239,7 +239,7 @@
     "Attributes": [
       {
         "Name": "CurrentSpaces",
-        "Type": "TArray<class CurrentSpaces*>",
+        "Type": "TArray<class AudioSpaceComponent*>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -322,7 +322,7 @@
     "Attributes": [
       {
         "Name": "RegisteredTritonComponents",
-        "Type": "TArray<class RegisteredTritonComponents*>",
+        "Type": "TArray<class TritonComponent*>",
         "Size": "0x10",
         "Offset": "0x38"
       },

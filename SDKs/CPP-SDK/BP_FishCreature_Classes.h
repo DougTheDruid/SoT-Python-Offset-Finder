@@ -16,7 +16,7 @@ public:
 	float                                                        BoundsBias;                                        // 0x3d4(0x4)
 	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3d8(0x8)
 	Class MaterialInstanceDynamic*                               currMaterial;                                      // 0x3e0(0x8)
-	TArray<class MaterialInstance*>                              MaterialInstance;                                  // 0x3e8(0x10)
+	TArray<class MaterialInstanceDynamic*>                       MaterialInstance;                                  // 0x3e8(0x10)
 	float                                                        Seed;                                              // 0x3f8(0x4)
 	float                                                        SwimSpeed;                                         // 0x3fc(0x4)
 	float                                                        CirclingSpeed;                                     // 0x400(0x4)

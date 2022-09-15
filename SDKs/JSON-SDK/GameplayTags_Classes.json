@@ -82,7 +82,7 @@
     "Attributes": [
       {
         "Name": "Expressions",
-        "Type": "TArray<class Expressions*>",
+        "Type": "TArray<class EditableGameplayTagQueryExpression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -96,7 +96,7 @@
     "Attributes": [
       {
         "Name": "Expressions",
-        "Type": "TArray<class Expressions*>",
+        "Type": "TArray<class EditableGameplayTagQueryExpression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -110,7 +110,7 @@
     "Attributes": [
       {
         "Name": "Expressions",
-        "Type": "TArray<class Expressions*>",
+        "Type": "TArray<class EditableGameplayTagQueryExpression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -138,7 +138,7 @@
     "Attributes": [
       {
         "Name": "GameplayTagTables",
-        "Type": "TArray<class GameplayTagTables*>",
+        "Type": "TArray<class DataTable*>",
         "Size": "0x10",
         "Offset": "0x140"
       }

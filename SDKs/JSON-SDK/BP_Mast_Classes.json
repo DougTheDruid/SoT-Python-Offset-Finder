@@ -61,19 +61,19 @@
       },
       {
         "Name": "Sail Parameters",
-        "Type": "TArray<Struct None>",
+        "Type": "TArray<Struct BP_SailStructure>",
         "Size": "0x10",
         "Offset": "0x9e0"
       },
       {
         "Name": "Yards",
-        "Type": "TArray<class Yards*>",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x9f0"
       },
       {
         "Name": "Sails",
-        "Type": "TArray<class Sails*>",
+        "Type": "TArray<class ChildActorComponent*>",
         "Size": "0x10",
         "Offset": "0xa00"
       },
@@ -85,7 +85,7 @@
       },
       {
         "Name": "SailActors",
-        "Type": "TArray<class SailActors*>",
+        "Type": "TArray<class BP_Sail_C*>",
         "Size": "0x10",
         "Offset": "0xa18"
       },

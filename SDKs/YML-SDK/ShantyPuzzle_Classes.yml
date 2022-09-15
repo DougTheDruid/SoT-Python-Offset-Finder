@@ -51,7 +51,7 @@ ShantyPuzzleComponent:
   - Name: ShantyPuzzleInteractionZones
     Offset: '0x318'
     Size: '0x10'
-    Type: TArray<class ShantyPuzzleInteractionZones*>
+    Type: TArray<class ShantyPuzzleInteractionZoneComponent*>
   - Name: CurrentlyPlayingShantyPuzzleEnsemble
     Offset: '0x328'
     Size: '0x8'

@@ -34,7 +34,7 @@ ServerMigrationSerialisationDetailsTestsActorRef:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: Object
-ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPl:
+ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPlay:
   Attributes:
   - Name: PrimitiveComponent
     Offset: '0x3c8'
@@ -54,7 +54,7 @@ ServerMigrationSerialisationDetailsTestsActorWithChild:
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
   Super: Actor
-ServerMigrationSerialisationDetailsTestsActorWithDynamicCompone:
+ServerMigrationSerialisationDetailsTestsActorWithDynamicComponent:
   Attributes:
   - Name: SubObject
     Offset: '0x3c8'
@@ -82,7 +82,7 @@ ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr:
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
   Super: Actor
-ServerMigrationSerialisationDetailsTestsActorWithReplicatedChil:
+ServerMigrationSerialisationDetailsTestsActorWithReplicatedChild:
   Attributes:
   - Name: ChildActorComponent
     Offset: '0x3c8'
@@ -116,7 +116,7 @@ ServerMigrationSerialisationDetailsTestsMigratableComponent:
   FullSize: '0xd0'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ServerMigrationSerialisationDetailsTestsMigratableComponentActo:
+ServerMigrationSerialisationDetailsTestsMigratableComponentActor:
   Attributes:
   - Name: ComponentWithMigrationMarkup
     Offset: '0x3c8'
@@ -126,7 +126,7 @@ ServerMigrationSerialisationDetailsTestsMigratableComponentActo:
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
   Super: Actor
-ServerMigrationSerialisationDetailsTestsMigratableDefaultCompon:
+ServerMigrationSerialisationDetailsTestsMigratableDefaultComponentActor:
   Attributes:
   - Name: ComponentWithMigrationMarkup
     Offset: '0x3c8'
@@ -136,19 +136,19 @@ ServerMigrationSerialisationDetailsTestsMigratableDefaultCompon:
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
   Super: Actor
-ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrde:
+ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor:
   Attributes: []
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
   Super: Actor
-ServerMigrationSerialisationDetailsTestsMigrationActorWithRootC:
+ServerMigrationSerialisationDetailsTestsMigrationActorWithRootComponentSimulatePhysicsEnabledByDefault:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x3c8'
   InheritedSize: '0x3c8'
   Super: Actor
-ServerMigrationSerialisationDetailsTestsMigrationChildActorLink:
+ServerMigrationSerialisationDetailsTestsMigrationChildActorLinkedActor:
   Attributes:
   - Name: Component
     Offset: '0x3c8'
@@ -158,12 +158,22 @@ ServerMigrationSerialisationDetailsTestsMigrationChildActorLink:
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
   Super: Actor
-ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis:
+ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor:
+  Attributes:
+  - Name: TestStruct
+    Offset: '0x3c8'
+    Size: '0x4'
+    Type: Struct ServerMigrationCustomMigrationSerialisationStruct
+  ClassSize: '0x8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
+  Super: Actor
+ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseReplicatingActor:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x3d0'
   InheritedSize: '0x3d0'
-  Super: ServerMigrationSerialisationDetailsTestsMigrationCustomSerialis
+  Super: ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor
 ServerMigrationSerialisationDetailsTestsMigrationGetLinkedActor:
   Attributes:
   - Name: DependentActor

@@ -109,7 +109,7 @@
     "Attributes": [
       {
         "Name": "StoryDrivenLightingAssetList",
-        "Type": "TArray<class StoryDrivenLightingAssetList*>",
+        "Type": "TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -158,13 +158,13 @@
     "Attributes": [
       {
         "Name": "StorySpawnedActorsAssetList",
-        "Type": "TArray<class StorySpawnedActorsAssetList*>",
+        "Type": "TArray<class StorySpawnedActorsDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "StorySpawnedActorsCollectionList",
-        "Type": "TArray<class StorySpawnedActorsCollectionList*>",
+        "Type": "TArray<class StorySpawnedActorsCollectionDataAsset*>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -192,13 +192,13 @@
     "Attributes": [
       {
         "Name": "StorySpawnedActorsAssetList",
-        "Type": "TArray<class StorySpawnedActorsAssetList*>",
+        "Type": "TArray<class StorySpawnedActorsComponentDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "StorySpawnedActorsCollectionList",
-        "Type": "TArray<class StorySpawnedActorsCollectionList*>",
+        "Type": "TArray<class StorySpawnedActorsComponentCollectionDataAsset*>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -259,7 +259,7 @@
     "Attributes": [
       {
         "Name": "EarlyRegisteredComponents",
-        "Type": "TArray<class EarlyRegisteredComponents*>",
+        "Type": "TArray<class StorySpawnedActorsComponent*>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
@@ -346,7 +346,7 @@
       },
       {
         "Name": "StoriesAssets",
-        "Type": "TArray<class StoriesAssets*>",
+        "Type": "TArray<class StoryNamesCollectionDataAsset*>",
         "Size": "0x10",
         "Offset": "0x38"
       }

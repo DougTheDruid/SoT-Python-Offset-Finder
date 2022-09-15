@@ -11,7 +11,7 @@ struct DeliverableRequirementFeatureOverride
 {
 public:
 	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	TArray<class Requirements*>                                  Requirements;                                      // 0x8(0x10)
+	TArray<class DeliverableRequirementBase*>                    Requirements;                                      // 0x8(0x10)
 };
 
 

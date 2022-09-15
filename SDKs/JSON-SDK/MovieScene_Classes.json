@@ -39,7 +39,7 @@
       },
       {
         "Name": "MasterTracks",
-        "Type": "TArray<class MasterTracks*>",
+        "Type": "TArray<class MovieSceneTrack*>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
@@ -148,13 +148,13 @@
       },
       {
         "Name": "ChildFolders",
-        "Type": "TArray<class ChildFolders*>",
+        "Type": "TArray<class MovieSceneFolder*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ChildMasterTracks",
-        "Type": "TArray<class ChildMasterTracks*>",
+        "Type": "TArray<class MovieSceneTrack*>",
         "Size": "0x10",
         "Offset": "0x40"
       },

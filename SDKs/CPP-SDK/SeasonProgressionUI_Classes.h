@@ -35,7 +35,7 @@ public:
 class SeasonPopupListAsset: public DataAsset
 {
 public:
-	TArray<class SeasonPopups*>                                  SeasonPopups;                                      // 0x28(0x10)
+	TArray<class SeasonPopupAsset*>                              SeasonPopups;                                      // 0x28(0x10)
 };
 
 

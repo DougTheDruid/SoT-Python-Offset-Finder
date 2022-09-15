@@ -27,7 +27,7 @@
       },
       {
         "Name": "DisplayItems",
-        "Type": "TArray<class DisplayItems*>",
+        "Type": "TArray<class CustomMapDisplayObjectBase*>",
         "Size": "0x10",
         "Offset": "0x840"
       }
@@ -74,7 +74,7 @@
       },
       {
         "Name": "MapDisplayItemList",
-        "Type": "TArray<class MapDisplayItemList*>",
+        "Type": "TArray<class CustomMapDataTypeBase*>",
         "Size": "0x10",
         "Offset": "0x38"
       }

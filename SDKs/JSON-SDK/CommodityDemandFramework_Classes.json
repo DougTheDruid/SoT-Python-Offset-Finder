@@ -174,7 +174,7 @@
       },
       {
         "Name": "PendingRedemptions",
-        "Type": "TArray<class PendingRedemptions*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x180"
       }

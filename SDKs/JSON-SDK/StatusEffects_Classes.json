@@ -143,7 +143,7 @@
       },
       {
         "Name": "Responses",
-        "Type": "TArray<class Responses*>",
+        "Type": "TArray<class StatusResponse*>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -157,7 +157,7 @@
     "Attributes": [
       {
         "Name": "ResponseAssets",
-        "Type": "TArray<class ResponseAssets*>",
+        "Type": "TArray<class StatusResponseAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -169,7 +169,7 @@
       },
       {
         "Name": "FinalResponseAssets",
-        "Type": "TArray<class FinalResponseAssets*>",
+        "Type": "TArray<class StatusResponseAsset*>",
         "Size": "0x10",
         "Offset": "0x48"
       }

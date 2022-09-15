@@ -167,7 +167,7 @@
       },
       {
         "Name": "Array",
-        "Type": "TArray<class Array*>",
+        "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x38"
       }

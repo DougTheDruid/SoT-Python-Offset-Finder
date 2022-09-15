@@ -82,7 +82,7 @@
       },
       {
         "Name": "ShantyPuzzleInteractionZones",
-        "Type": "TArray<class ShantyPuzzleInteractionZones*>",
+        "Type": "TArray<class ShantyPuzzleInteractionZoneComponent*>",
         "Size": "0x10",
         "Offset": "0x318"
       },

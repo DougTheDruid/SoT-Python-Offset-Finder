@@ -319,7 +319,7 @@
       },
       {
         "Name": "EmissaryRepresentationMeshes",
-        "Type": "TArray<class EmissaryRepresentationMeshes*>",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x320"
       },

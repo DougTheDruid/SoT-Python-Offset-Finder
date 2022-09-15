@@ -34,7 +34,7 @@ public:
 	bool                                                         TimeLimited;                                       // 0x300(0x1)
 	bool                                                         ShouldMoveEnsembleToActorPosition;                 // 0x301(0x1)
 	Struct GameTimeRange                                         ActiveTimeRange;                                   // 0x308(0x10)
-	TArray<class ShantyPuzzleInteractionZones*>                  ShantyPuzzleInteractionZones;                      // 0x318(0x10)
+	TArray<class ShantyPuzzleInteractionZoneComponent*>          ShantyPuzzleInteractionZones;                      // 0x318(0x10)
 	Class Ensemble*                                              CurrentlyPlayingShantyPuzzleEnsemble;              // 0x328(0x8)
 };
 

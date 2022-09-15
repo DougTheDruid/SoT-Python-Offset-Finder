@@ -17,7 +17,7 @@ BP_PromptActorBase_C:
   - Name: PromptCoordinators
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class PromptCoordinators*>
+    Type: TArray<class BP_PromptCoordinator_Base_C*>
   ClassSize: '0x38'
   FullSize: '0x400'
   InheritedSize: '0x3c8'

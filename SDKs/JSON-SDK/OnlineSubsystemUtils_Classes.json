@@ -249,7 +249,7 @@
       },
       {
         "Name": "ClientActors",
-        "Type": "TArray<class ClientActors*>",
+        "Type": "TArray<class OnlineBeaconClient*>",
         "Size": "0x10",
         "Offset": "0x3f8"
       }
@@ -275,7 +275,7 @@
       },
       {
         "Name": "ClientActors",
-        "Type": "TArray<class ClientActors*>",
+        "Type": "TArray<class OnlineBeaconClient*>",
         "Size": "0x10",
         "Offset": "0x3e0"
       }

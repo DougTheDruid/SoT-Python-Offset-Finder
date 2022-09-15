@@ -61,7 +61,7 @@ MovieSceneAkTrack:
   - Name: Sections
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Sections*>
+    Type: TArray<class MovieSceneSection*>
   - Name: bIsAMasterTrack
     Offset: '0x98'
     Size: '0x1'
@@ -181,35 +181,35 @@ WwiseAudioSettings:
   - Name: EventsToPlayOnFrontendStartInstance
     Offset: '0x3a0'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnFrontendStartInstance*>
+    Type: TArray<class WwiseEvent*>
   - Name: EventsToPlayOnFrontendEndInstance
     Offset: '0x3b0'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnFrontendEndInstance*>
+    Type: TArray<class WwiseEvent*>
   - Name: EventsToPlayOnStartEngagementInstance
     Offset: '0x3c0'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnStartEngagementInstance*>
+    Type: TArray<class WwiseEvent*>
   - Name: EventsToPlayOnEndEngagementInstance
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnEndEngagementInstance*>
+    Type: TArray<class WwiseEvent*>
   - Name: EventsToPlayOnLoadingStartInstance
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnLoadingStartInstance*>
+    Type: TArray<class WwiseEvent*>
   - Name: EventsToPlayOnLoadingEndInstance
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnLoadingEndInstance*>
+    Type: TArray<class WwiseEvent*>
   - Name: EventsToPlayOnFrontEndOrLoadingStartInstance
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>
+    Type: TArray<class WwiseEvent*>
   - Name: EventsToPlayOnFrontEndOrLoadingEndInstance
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>
+    Type: TArray<class WwiseEvent*>
   ClassSize: '0x3f8'
   FullSize: '0x420'
   InheritedSize: '0x28'
@@ -347,7 +347,7 @@ WwisePersistentContentStore:
   - Name: PersistentlyLoadedBanks
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class PersistentlyLoadedBanks*>
+    Type: TArray<class WwiseBank*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

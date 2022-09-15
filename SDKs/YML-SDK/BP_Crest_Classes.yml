@@ -77,7 +77,7 @@ BP_Crest_C:
   - Name: VFXSizeVariants
     Offset: '0x540'
     Size: '0x10'
-    Type: TArray<class VFXSizeVariants*>
+    Type: TArray<class ParticleSystem*>
   - Name: NameSizeIndex
     Offset: '0x550'
     Size: '0x4'

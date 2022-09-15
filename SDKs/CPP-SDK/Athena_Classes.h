@@ -71,8 +71,8 @@ public:
 	byte                                                         CurrentState;                                      // 0x1b0(0x1)
 	Class ParticleSystemComponent*                               LightStateConstantParticleSystemComponent;         // 0x1b8(0x8)
 	Class ParticleSystemComponent*                               DarkStateConstantParticleSystemComponent;          // 0x1c0(0x8)
-	TArray<class ShadowDynamicMaterialInstances*>                ShadowDynamicMaterialInstances;                    // 0x1c8(0x10)
-	TArray<class LanternArray*>                                  LanternArray;                                      // 0x230(0x10)
+	TArray<class MaterialInstanceDynamic*>                       ShadowDynamicMaterialInstances;                    // 0x1c8(0x10)
+	TArray<class Lantern*>                                       LanternArray;                                      // 0x230(0x10)
 	TArray<Struct FlameSpecificDataEntry>                        FlameSpecificDataMap;                              // 0x240(0x10)
 };
 
@@ -161,7 +161,7 @@ public:
 	bool                                                         RequiresNotSwimming;                               // 0x3da(0x1)
 	bool                                                         InteractionsCanBeDisabled;                         // 0x3db(0x1)
 	bool                                                         CanSetInteractionState;                            // 0x3dc(0x1)
-	TArray<class InteractionPrerequisites*>                      InteractionPrerequisites;                          // 0x3e0(0x10)
+	TArray<class InteractionPrerequisiteBase*>                   InteractionPrerequisites;                          // 0x3e0(0x10)
 	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x3f0(0x8)
 	byte                                                         InteractableIdentifier;                            // 0x3f8(0x1)
 	byte                                                         CurrentInteractionState;                           // 0x3fa(0x1)
@@ -256,7 +256,7 @@ public:
 	struct FName                                                 InflationRTPC;                                     // 0x4e0(0x8)
 	struct FName                                                 SailLengthRTPC;                                    // 0x4e8(0x8)
 	float                                                        ClientSailBlendSpeed;                              // 0x4f0(0x4)
-	TArray<class YardArms*>                                      YardArms;                                          // 0x4f8(0x10)
+	TArray<class StaticMeshComponent*>                           YardArms;                                          // 0x4f8(0x10)
 	struct FName                                                 TelemetryIdentifier;                               // 0x508(0x8)
 	bool                                                         MastShouldBeFractured;                             // 0x510(0x1)
 	Struct MastCollisionProfiles                                 MastCollisionProfiles;                             // 0x514(0x28)
@@ -286,10 +286,10 @@ public:
 	float                                                        CameraShakeInnerRadius;                            // 0x618(0x4)
 	float                                                        CameraShakeOuterRadius;                            // 0x61c(0x4)
 	bool                                                         PreviewMastFallenPosition;                         // 0x620(0x1)
-	TArray<class RepairableComponents*>                          RepairableComponents;                              // 0x628(0x10)
+	TArray<class RepairableComponent*>                           RepairableComponents;                              // 0x628(0x10)
 	Struct MastDamageAudioParams                                 DamageAudioParameters;                             // 0x638(0xb0)
 	Class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x6f0(0x8)
-	TArray<class LinkedSails*>                                   LinkedSails;                                       // 0x798(0x10)
+	TArray<class ChildActorComponent*>                           LinkedSails;                                       // 0x798(0x10)
 	Struct IntentPredictor                                       LengthIntentPredictor;                             // 0x7a8(0x1c)
 	Struct IntentPredictor                                       AngleIntentPredictor;                              // 0x7c4(0x1c)
 	Struct IntentPredictor                                       MastHoistIntentPredictor;                          // 0x7e0(0x1c)
@@ -669,7 +669,7 @@ class AIOnShipManagerComponent: public ActorComponent
 {
 public:
 	Class AIProximityPlayerTracker*                              AIProximityPlayerTracker;                          // 0xd0(0x8)
-	TArray<class AIOnShipAIFixedWavesSpawners*>                  AIOnShipAIFixedWavesSpawners;                      // 0xd8(0x10)
+	TArray<class AIFixedWavesSpawner*>                           AIOnShipAIFixedWavesSpawners;                      // 0xd8(0x10)
 };
 
 
@@ -893,7 +893,7 @@ public:
 	int                                                          RandomAnimationSeed;                               // 0xabc(0x4)
 	bool                                                         RandomBool;                                        // 0xac8(0x1)
 	Class SkeletalMeshSocket*                                    CameraSocket;                                      // 0xae0(0x8)
-	TArray<class RegisteredInputComponents*>                     RegisteredInputComponents;                         // 0xb30(0x10)
+	TArray<class InputComponent*>                                RegisteredInputComponents;                         // 0xb30(0x10)
 };
 
 
@@ -932,9 +932,9 @@ public:
 	Class SceneComponent*                                        FirstPersonMeshOffsetComponent;                    // 0xcc0(0x8)
 	Class SkeletalMeshComponent*                                 FirstPersonMesh;                                   // 0xcc8(0x8)
 	Class AthenaCameraComponent*                                 FirstPersonCamera;                                 // 0xcd0(0x8)
-	TArray<class FirstPersonParticleComponents*>                 FirstPersonParticleComponents;                     // 0xcd8(0x10)
+	TArray<class ParticleSystemComponent*>                       FirstPersonParticleComponents;                     // 0xcd8(0x10)
 	Class AthenaCameraComponent*                                 ThirdPersonCamera;                                 // 0xce8(0x8)
-	TArray<class ThirdPersonParticleComponents*>                 ThirdPersonParticleComponents;                     // 0xcf0(0x10)
+	TArray<class ParticleSystemComponent*>                       ThirdPersonParticleComponents;                     // 0xcf0(0x10)
 	Class AthenaCameraComponent*                                 SpringArmCamera;                                   // 0xd00(0x8)
 	Class LookAtEmoteCameraComponent*                            LookAtEmoteCameraComponent;                        // 0xd08(0x8)
 	Class AthenaSpringArmComponent*                              SpringArm;                                         // 0xd10(0x8)
@@ -1243,7 +1243,7 @@ class AnimatedStepsComponent: public ActorComponent
 {
 public:
 	Class PoseableSkeletalMeshComponent*                         Mesh;                                              // 0xc8(0x8)
-	TArray<class Boxes*>                                         Boxes;                                             // 0xd0(0x10)
+	TArray<class BoxComponent*>                                  Boxes;                                             // 0xd0(0x10)
 	TArray<Struct Vector>                                        BoxOrigins;                                        // 0xe0(0x10)
 };
 
@@ -2070,7 +2070,7 @@ public:
 
 
 // Size 0x0
-class MockAthenaPlayerCharacterWithAthenaPlayerCharacterMovementCompo: public AthenaPlayerCharacterMock
+class MockAthenaPlayerCharacterWithAthenaPlayerCharacterMovementComponent: public AthenaPlayerCharacterMock
 {
 public:
 };
@@ -2236,8 +2236,8 @@ public:
 class AthenaContestTavern: public Actor
 {
 public:
-	TArray<class TavernSpawnPoints*>                             TavernSpawnPoints;                                 // 0x3c8(0x10)
-	TArray<class TavernLevelActorsToPrepare*>                    TavernLevelActorsToPrepare;                        // 0x3d8(0x10)
+	TArray<class SpawnLocation*>                                 TavernSpawnPoints;                                 // 0x3c8(0x10)
+	TArray<class Actor*>                                         TavernLevelActorsToPrepare;                        // 0x3d8(0x10)
 };
 
 
@@ -3054,7 +3054,7 @@ public:
 	byte                                                         OverlapType;                                       // 0xd0(0x1)
 	float                                                        UpdateInterval;                                    // 0xd4(0x4)
 	Class ShapeComponent*                                        ShapeComponent;                                    // 0xd8(0x8)
-	TArray<class PlayersInZone*>                                 PlayersInZone;                                     // 0xe0(0x10)
+	TArray<class AthenaPlayerCharacter*>                         PlayersInZone;                                     // 0xe0(0x10)
 };
 
 
@@ -3200,7 +3200,7 @@ public:
 	float                                                        RadialIconScale;                                   // 0xd0(0x4)
 	Struct Vector2D                                              RadialIconOffset;                                  // 0xd4(0x8)
 	Class InventoryItemDescToSlotRemappingPolicyAsset*           RemappingAsset;                                    // 0xe0(0x8)
-	TArray<class MappedSlots*>                                   MappedSlots;                                       // 0xe8(0x10)
+	TArray<class ItemInfo*>                                      MappedSlots;                                       // 0xe8(0x10)
 	class                                                        BaitItemCategory;                                  // 0xf8(0x8)
 };
 
@@ -3213,7 +3213,7 @@ public:
 	Struct LinearColor                                           ClearColour;                                       // 0xcc(0x10)
 	int                                                          MaxDeferredDecals;                                 // 0xdc(0x4)
 	Class TextureRenderTarget2D*                                 TargetTexture;                                     // 0xe0(0x8)
-	TArray<class StaticMeshes*>                                  StaticMeshes;                                      // 0xe8(0x10)
+	TArray<class StaticMeshComponent*>                           StaticMeshes;                                      // 0xe8(0x10)
 	TArray<Struct DeferredBakedDecal>                            DeferredDecals;                                    // 0xf8(0x10)
 };
 
@@ -3448,8 +3448,8 @@ public:
 	Class ItemInfo*                                              ItemInfo;                                          // 0x708(0x8)
 	Class InterpolatingItem*                                     InterpolatingItem;                                 // 0x710(0x8)
 	Class WieldableItemVfxComponent*                             WieldableItemVfxComponent;                         // 0x738(0x8)
-	TArray<class ThirdPersonExtraMeshes*>                        ThirdPersonExtraMeshes;                            // 0x740(0x10)
-	TArray<class StashedExtraMeshes*>                            StashedExtraMeshes;                                // 0x750(0x10)
+	TArray<class MeshComponent*>                                 ThirdPersonExtraMeshes;                            // 0x740(0x10)
+	TArray<class MeshComponent*>                                 StashedExtraMeshes;                                // 0x750(0x10)
 	bool                                                         OfferingEnabled;                                   // 0x779(0x1)
 };
 
@@ -3496,7 +3496,7 @@ class StaticMerchantCrate: public LargeStaticMeshWieldableItem
 public:
 	Class RewindComponent*                                       RewindComponent;                                   // 0x780(0x8)
 	Struct MerchantCrateSfx                                      FullCrateSfx;                                      // 0x788(0x20)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom* HitRegSnapshotRedirectComponent;                   // 0x7b8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectComponent;                   // 0x7b8(0x8)
 	bool                                                         RequiresRewindComponent;                           // 0x7d0(0x1)
 };
 
@@ -3733,7 +3733,7 @@ public:
 	float                                                        LanternSwingAmmount;                               // 0x870(0x4)
 	float                                                        LanternEmissiveAmmount;                            // 0x874(0x4)
 	float                                                        LanternMegaEmmisiveAmount;                         // 0x878(0x4)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x880(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x880(0x10)
 };
 
 
@@ -4100,7 +4100,7 @@ class TaleQuestToolService: public TaleQuestService
 {
 public:
 	Class TaleQuestToolServiceDesc*                              ServiceDesc;                                       // 0x60(0x8)
-	TArray<class WieldableDescs*>                                WieldableDescs;                                    // 0x68(0x10)
+	TArray<class ItemDesc*>                                      WieldableDescs;                                    // 0x68(0x10)
 };
 
 
@@ -4507,15 +4507,15 @@ public:
 class ShipCurseComponent: public ActorComponent
 {
 public:
-	TArray<class CachedShipAttachedActors*>                      CachedShipAttachedActors;                          // 0xc8(0x10)
-	TArray<class FoundMasts*>                                    FoundMasts;                                        // 0xd8(0x10)
+	TArray<class Actor*>                                         CachedShipAttachedActors;                          // 0xc8(0x10)
+	TArray<class Mast*>                                          FoundMasts;                                        // 0xd8(0x10)
 	Class Capstan*                                               ShipCapstan;                                       // 0xe8(0x8)
-	TArray<class ShipCannons*>                                   ShipCannons;                                       // 0xf0(0x10)
+	TArray<class Cannon*>                                        ShipCannons;                                       // 0xf0(0x10)
 	Class Wheel*                                                 ShipWheel;                                         // 0x100(0x8)
-	TArray<class SailFixedIntentComponents*>                     SailFixedIntentComponents;                         // 0x108(0x10)
+	TArray<class FixedIntentComponent*>                          SailFixedIntentComponents;                         // 0x108(0x10)
 	float                                                        ShipCapstanTargetRatio;                            // 0x184(0x4)
 	TArray<Struct ShipActiveCurseFXData>                         ActiveCurseFX;                                     // 0x188(0x10)
-	TArray<class ActorsAffectedByToggleInteractionsCurse*>       ActorsAffectedByToggleInteractionsCurse;           // 0x198(0x10)
+	TArray<class Actor*>                                         ActorsAffectedByToggleInteractionsCurse;           // 0x198(0x10)
 	TArray<Struct ShipCurseSpawnedFXForCurse>                    SpawnedFXForCurses;                                // 0x1a8(0x10)
 };
 
@@ -4625,7 +4625,7 @@ public:
 	class                                                        ShipCategoryObject;                                // 0xd60(0x8)
 	class                                                        ShipSizeObject;                                    // 0xd68(0x8)
 	class                                                        ShipTypeObject;                                    // 0xd70(0x8)
-	TArray<class DamageableChildActors*>                         DamageableChildActors;                             // 0xd78(0x10)
+	TArray<class Actor*>                                         DamageableChildActors;                             // 0xd78(0x10)
 	Class ShipPartsDamageTrackerComponent*                       ShipPartsDamageTrackerComponent;                   // 0xd88(0x8)
 	Class CrewShipManifest*                                      CrewShipManifest;                                  // 0xd90(0x8)
 	bool                                                         IsInCaptainedCrew;                                 // 0xd98(0x1)
@@ -4650,7 +4650,7 @@ public:
 	bool                                                         HasEverStartedSailing;                             // 0x1051(0x1)
 	bool                                                         EmissaryFlagActive;                                // 0x1052(0x1)
 	byte                                                         SurfacingState;                                    // 0x1053(0x1)
-	TArray<class InstancedMeshes*>                               InstancedMeshes;                                   // 0x1058(0x10)
+	TArray<class MobileInstancedStaticMeshComponent*>            InstancedMeshes;                                   // 0x1058(0x10)
 	class                                                        ConstraintBudget;                                  // 0x1068(0x8)
 	float                                                        ScuttleTime;                                       // 0x1624(0x4)
 };
@@ -4868,7 +4868,7 @@ class BuriedTreasureLocation: public Actor
 {
 public:
 	Class SphereComponent*                                       BaseComponent;                                     // 0x3c8(0x8)
-	TArray<class DiggableSurfaceTypes*>                          DiggableSurfaceTypes;                              // 0x3d0(0x10)
+	TArray<class PhysicalMaterial*>                              DiggableSurfaceTypes;                              // 0x3d0(0x10)
 	bool                                                         StopVerification;                                  // 0x3e0(0x1)
 };
 
@@ -5097,8 +5097,8 @@ public:
 	float                                                        LineTextureLength;                                 // 0x1d4(0x4)
 	TArray<Struct CanvasWorldMapShipIcons>                       TrackedShipIcons;                                  // 0x1d8(0x10)
 	Class Texture*                                               AllianceFlagIcon;                                  // 0x1e8(0x8)
-	TArray<class ReapersMarkFlagIcons*>                          ReapersMarkFlagIcons;                              // 0x1f0(0x10)
-	TArray<class ReapersBonesIcons*>                             ReapersBonesIcons;                                 // 0x200(0x10)
+	TArray<class Texture*>                                       ReapersMarkFlagIcons;                              // 0x1f0(0x10)
+	TArray<class Texture*>                                       ReapersBonesIcons;                                 // 0x200(0x10)
 	Class Texture*                                               ReapersMarkShipIcon;                               // 0x210(0x8)
 	Struct Vector2D                                              ShipFlagOverlayOffset;                             // 0x218(0x8)
 	Struct Vector2D                                              SecondaryShipFlagOverlayOffset;                    // 0x220(0x8)
@@ -5149,7 +5149,7 @@ public:
 	Class StaticMeshMemoryConstraintComponent*                   MeshComponent;                                     // 0x440(0x8)
 	Class ChildActorComponent*                                   CapstanReleaseComponent;                           // 0x448(0x8)
 	Class ReplicatedShipPartCustomizationComponent*              CustomizationComponent;                            // 0x450(0x8)
-	TArray<class CapstanArms*>                                   CapstanArms;                                       // 0x458(0x10)
+	TArray<class CapstanArm*>                                    CapstanArms;                                       // 0x458(0x10)
 	Struct CapstanAudioParams                                    AudioParameters;                                   // 0x468(0x68)
 	bool                                                         CanSpinInfinitely;                                 // 0x4d0(0x1)
 	Class ShipDamageableComponent*                               CapstanDamageComponent;                            // 0x4e8(0x8)
@@ -5465,7 +5465,7 @@ public:
 	Struct Guid                                                  CatalogId;                                         // 0x28(0x10)
 	Struct FText                                                 DisplayName;                                       // 0x38(0x38)
 	bool                                                         ExportAsRewardIds;                                 // 0x70(0x1)
-	TArray<class Offers*>                                        Offers;                                            // 0x78(0x10)
+	TArray<class CatalogOfferDataAsset*>                         Offers;                                            // 0x78(0x10)
 };
 
 
@@ -5473,7 +5473,7 @@ public:
 class CatalogListDataAsset: public DataAsset
 {
 public:
-	TArray<class Catalogs*>                                      Catalogs;                                          // 0x28(0x10)
+	TArray<class CatalogDataAsset*>                              Catalogs;                                          // 0x28(0x10)
 };
 
 
@@ -5490,7 +5490,7 @@ class ChaliceStatue: public Actor
 {
 public:
 	Class StaticMeshComponent*                                   Mesh;                                              // 0x3c8(0x8)
-	TArray<class PhaseParticleSystems*>                          PhaseParticleSystems;                              // 0x3d0(0x10)
+	TArray<class ParticleSystemComponent*>                       PhaseParticleSystems;                              // 0x3d0(0x10)
 	Struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x428(0xa0)
 };
 
@@ -5833,8 +5833,8 @@ public:
 	Class ParticleSystemComponent*                               RageBuildingVfxEmitter;                            // 0x160(0x8)
 	Class ParticleSystemComponent*                               SteamingVfxEmitter;                                // 0x168(0x8)
 	Class ParticleSystemComponent*                               OnFireVfxEmitter;                                  // 0x170(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x178(0x10)
-	TArray<class RageContributors*>                              RageContributors;                                  // 0x188(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x178(0x10)
+	TArray<class Actor*>                                         RageContributors;                                  // 0x188(0x10)
 };
 
 
@@ -6054,7 +6054,7 @@ public:
 class CloudDomeService: public Object
 {
 public:
-	TArray<class RegisteredCloudDomes*>                          RegisteredCloudDomes;                              // 0x30(0x10)
+	TArray<class Object*>                                        RegisteredCloudDomes;                              // 0x30(0x10)
 };
 
 
@@ -6162,7 +6162,7 @@ public:
 	Class PiratePreviewComponentPirateProfileRTT*                PirateProfileRTTComponent;                         // 0x628(0x8)
 	Struct HUDBlur                                               Blur;                                              // 0x658(0x18)
 	Class AthenaDebugMenuComponent*                              AthenaDebugMenuComponent;                          // 0x670(0x8)
-	TArray<class CoherentComponents*>                            CoherentComponents;                                // 0x738(0x10)
+	TArray<class CoherentUIGTInstancedComponent*>                CoherentComponents;                                // 0x738(0x10)
 };
 
 
@@ -6254,7 +6254,7 @@ public:
 class CoherentUIGTAssetContainer: public DataAsset
 {
 public:
-	TArray<class TextureAssets*>                                 TextureAssets;                                     // 0x28(0x10)
+	TArray<class Texture2D*>                                     TextureAssets;                                     // 0x28(0x10)
 };
 
 
@@ -6314,7 +6314,7 @@ public:
 class CoherentUIGTPersistentDataAsset: public DataAsset
 {
 public:
-	TArray<class AlwaysLoadedTextures*>                          AlwaysLoadedTextures;                              // 0x28(0x10)
+	TArray<class Texture2D*>                                     AlwaysLoadedTextures;                              // 0x28(0x10)
 };
 
 
@@ -6322,13 +6322,13 @@ public:
 class CoherentUIGTRootDataAsset: public DataAsset
 {
 public:
-	TArray<class SharedContainers*>                              SharedContainers;                                  // 0x28(0x10)
-	TArray<class HUDContainers*>                                 HUDContainers;                                     // 0x38(0x10)
-	TArray<class MenuContainers*>                                MenuContainers;                                    // 0x48(0x10)
-	TArray<class ShopContainers*>                                ShopContainers;                                    // 0x58(0x10)
-	TArray<class CompanyContainers*>                             CompanyContainers;                                 // 0x68(0x10)
-	TArray<class FrontendContainers*>                            FrontendContainers;                                // 0x78(0x10)
-	TArray<class InGameContainers*>                              InGameContainers;                                  // 0x88(0x10)
+	TArray<class CoherentUIGTAssetContainer*>                    SharedContainers;                                  // 0x28(0x10)
+	TArray<class CoherentUIGTAssetContainer*>                    HUDContainers;                                     // 0x38(0x10)
+	TArray<class CoherentUIGTAssetContainer*>                    MenuContainers;                                    // 0x48(0x10)
+	TArray<class CoherentUIGTAssetContainer*>                    ShopContainers;                                    // 0x58(0x10)
+	TArray<class CoherentUIGTAssetContainer*>                    CompanyContainers;                                 // 0x68(0x10)
+	TArray<class CoherentUIGTAssetContainer*>                    FrontendContainers;                                // 0x78(0x10)
+	TArray<class CoherentUIGTAssetContainer*>                    InGameContainers;                                  // 0x88(0x10)
 };
 
 
@@ -6438,7 +6438,7 @@ public:
 class CompanyDataList: public DataAsset
 {
 public:
-	TArray<class ClientCompanyData*>                             ClientCompanyData;                                 // 0x28(0x10)
+	TArray<class CompanyData*>                                   ClientCompanyData;                                 // 0x28(0x10)
 };
 
 
@@ -6593,7 +6593,7 @@ public:
 	Class WwiseEvent*                                            StopFullyRevealedSFX;                              // 0x428(0x8)
 	Class WwiseEvent*                                            StartInitialRevealMusic;                           // 0x438(0x8)
 	Class WwiseEvent*                                            StopInitialRevealMusic;                            // 0x440(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x450(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x450(0x10)
 };
 
 
@@ -6767,7 +6767,7 @@ class ContestCeremoniesComponent: public ActorComponent
 public:
 	byte                                                         CurrentContestStage;                               // 0xc8(0x1)
 	TArray<Struct TimedContestEventAction>                       ContestCeremonyTimedActions;                       // 0x100(0x10)
-	TArray<class PlayedAudio*>                                   PlayedAudio;                                       // 0x110(0x10)
+	TArray<class WwiseEvent*>                                    PlayedAudio;                                       // 0x110(0x10)
 	Class ContestCeremonyEventsDataAsset*                        ContestEventsDataAsset;                            // 0x120(0x8)
 };
 
@@ -6909,7 +6909,7 @@ public:
 	Class ContestTeamAssignmentComponent*                        ContestTeamAssignmentComponent;                    // 0x408(0x8)
 	byte                                                         CurrentContestState;                               // 0x410(0x1)
 	TArray<Struct TrackedCrewInContest>                          TrackedCrewsInContest;                             // 0x578(0x10)
-	TArray<class BackfilledPlayers*>                             BackfilledPlayers;                                 // 0x5c8(0x10)
+	TArray<class AthenaPlayerState*>                             BackfilledPlayers;                                 // 0x5c8(0x10)
 	TArray<Struct Guid>                                          ContestsPlayedCountBlacklist;                      // 0x5d8(0x10)
 	Class EmergentContestVoyageRecipeDataAsset*                  CurrentContestVoyageDataAsset;                     // 0x658(0x8)
 	Class TallTaleContestRecipeDataAsset*                        CurrentTallTaleContestDataAsset;                   // 0x660(0x8)
@@ -6926,8 +6926,8 @@ public:
 	class                                                        StatTriggerForShipsCompletingContest;              // 0x958(0x8)
 	Struct Guid                                                  ContestUniqueId;                                   // 0x984(0x10)
 	Class ContestManagerDebugRepActor*                           DebugRepActor;                                     // 0x998(0x8)
-	TArray<class PlayersNeedingTeleport*>                        PlayersNeedingTeleport;                            // 0x9b0(0x10)
-	TArray<class PlayersAwaitingContestRespawn*>                 PlayersAwaitingContestRespawn;                     // 0x9c0(0x10)
+	TArray<class Controller*>                                    PlayersNeedingTeleport;                            // 0x9b0(0x10)
+	TArray<class Controller*>                                    PlayersAwaitingContestRespawn;                     // 0x9c0(0x10)
 	TArray<Class ItemsToReset>                                   ItemsToReset;                                      // 0x9d0(0x10)
 	TArray<Struct CrewScore>                                     CachedLeaderboard;                                 // 0xa00(0x10)
 	Struct ContestCrewRequirementData                            InitialStagingRequirements;                        // 0xa18(0x28)
@@ -7037,7 +7037,7 @@ public:
 class ContestMerchantSpawnerComponent: public ActorComponent
 {
 public:
-	TArray<class SpawnedMerchantsArray*>                         SpawnedMerchantsArray;                             // 0xf8(0x10)
+	TArray<class CompanyShopkeeper*>                             SpawnedMerchantsArray;                             // 0xf8(0x10)
 	TArray<Struct MerchantSpawnData>                             MerchantSpawnDataArray;                            // 0x108(0x10)
 };
 
@@ -7097,7 +7097,7 @@ public:
 	Class SceneComponent*                                        SceneRootComponent;                                // 0x3d0(0x8)
 	Class StaticMeshComponent*                                   BannerMeshComponent;                               // 0x3d8(0x8)
 	int                                                          BannerPosition;                                    // 0x3e0(0x4)
-	TArray<class Meshes*>                                        Meshes;                                            // 0x3e8(0x10)
+	TArray<class StaticMesh*>                                    Meshes;                                            // 0x3e8(0x10)
 	int                                                          BannerBaseMaterialIndex;                           // 0x3f8(0x4)
 	float                                                        UnfoldTime;                                        // 0x3fc(0x4)
 	float                                                        UnfoldDelay;                                       // 0x400(0x4)
@@ -7179,21 +7179,21 @@ public:
 	bool                                                         IsFullyActivated;                                  // 0x404(0x1)
 	Struct ObjectMessagingDispatcher                             ContestZoneObjectMessagingDispatcher;              // 0x408(0xa0)
 	TArray<Struct InitialShipSpawnLocations>                     InitialSpawnLocations;                             // 0x4a8(0x10)
-	TArray<class IslandsWithinContestZone*>                      IslandsWithinContestZone;                          // 0x4b8(0x10)
+	TArray<class IslandData*>                                    IslandsWithinContestZone;                          // 0x4b8(0x10)
 	Struct StringAssetReference                                  RespawnPointAsset;                                 // 0x4c8(0x10)
 	Class ContestSafeRegion*                                     ContestSafeRegion;                                 // 0x4d8(0x8)
 	float                                                        ContestZoneRadiusSquared;                          // 0x4e0(0x4)
 	float                                                        ContestZoneDiameter;                               // 0x4e4(0x4)
 	float                                                        ContestZoneArea;                                   // 0x4e8(0x4)
-	TArray<class VendorShips*>                                   VendorShips;                                       // 0x4f0(0x10)
+	TArray<class ArenaVendorShip*>                               VendorShips;                                       // 0x4f0(0x10)
 	TArray<Struct Transform>                                     RespawnLocations;                                  // 0x500(0x10)
 	Class ShipSpawnLocation*                                     PooledRespawnLocation;                             // 0x510(0x8)
-	TArray<class ShipSpawnLocationsForContest*>                  ShipSpawnLocationsForContest;                      // 0x518(0x10)
+	TArray<class ShipSpawnLocation*>                             ShipSpawnLocationsForContest;                      // 0x518(0x10)
 	int                                                          NumberOfSpawnPointsToGenerate;                     // 0x5b0(0x4)
 	float                                                        MinimumDistanceFromBounds;                         // 0x5b4(0x4)
 	byte                                                         ContestZoneRespawnLocationOrientation;             // 0x5b8(0x1)
 	float                                                        RadiusForStaticObjectCheck;                        // 0x5bc(0x4)
-	TArray<class CalmWaters*>                                    CalmWaters;                                        // 0x5d8(0x10)
+	TArray<class CalmWaterComponent*>                            CalmWaters;                                        // 0x5d8(0x10)
 };
 
 
@@ -7557,9 +7557,9 @@ public:
 class CrewSpawnLocations: public Actor
 {
 public:
-	TArray<class AvailableSpawnLocations*>                       AvailableSpawnLocations;                           // 0x4f0(0x10)
-	TArray<class AvailableNamedSpawnLocations*>                  AvailableNamedSpawnLocations;                      // 0x500(0x10)
-	TArray<class PendingUnavailableSpawnLocations*>              PendingUnavailableSpawnLocations;                  // 0x510(0x10)
+	TArray<class ShipSpawnLocation*>                             AvailableSpawnLocations;                           // 0x4f0(0x10)
+	TArray<class ProgressSpawnLocation*>                         AvailableNamedSpawnLocations;                      // 0x500(0x10)
+	TArray<class ShipSpawnLocation*>                             PendingUnavailableSpawnLocations;                  // 0x510(0x10)
 	Class CrewSpawnLocationVariablesListAsset*                   SpawnVariablesAsset;                               // 0x760(0x8)
 };
 
@@ -7659,7 +7659,7 @@ public:
 	Class CutSceneSubtitlesComponent*                            CutSceneSubtitlesComponent;                        // 0x3d8(0x8)
 	double                                                       StartTimeInSeconds;                                // 0x3e0(0x8)
 	bool                                                         CutsceneActivated;                                 // 0x3e8(0x1)
-	TArray<class TargetActors*>                                  TargetActors;                                      // 0x3f0(0x10)
+	TArray<class Actor*>                                         TargetActors;                                      // 0x3f0(0x10)
 	struct FName                                                 AnimationNameToPlay;                               // 0x400(0x8)
 	class                                                        LocalMusicZone;                                    // 0x408(0x8)
 	Class PlaceableReaction*                                     PlaceableReaction;                                 // 0x410(0x8)
@@ -7744,7 +7744,7 @@ public:
 class SirenTridentProjectile: public DamageableCannonProjectile
 {
 public:
-	TArray<class ProjectileParameters*>                          ProjectileParameters;                              // 0x680(0x10)
+	TArray<class SirenTridentProjectileParams*>                  ProjectileParameters;                              // 0x680(0x10)
 	float                                                        CurrentMaterialScale;                              // 0x690(0x4)
 	struct FName                                                 MaterialScaleParameterName;                        // 0x694(0x8)
 	Class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x6a0(0x8)
@@ -8082,7 +8082,7 @@ public:
 class DeliverableRedirectionActionDataAsset: public DataAsset
 {
 public:
-	TArray<class Handlers*>                                      Handlers;                                          // 0x28(0x10)
+	TArray<class DeliverableRedirectionContextHandlerBase*>      Handlers;                                          // 0x28(0x10)
 	Struct FText                                                 RedirectionTooltip;                                // 0x38(0x38)
 	Struct FText                                                 VisitSingleFemaleNPCTooltip;                       // 0x70(0x38)
 	Struct FText                                                 VisitSingleMaleNPCTooltip;                         // 0xa8(0x38)
@@ -8442,8 +8442,8 @@ public:
 class EmblemService: public Object
 {
 public:
-	TArray<class GarbageCollectorVisiblePopups*>                 GarbageCollectorVisiblePopups;                     // 0x30(0x10)
-	TArray<class GarbageCollectorPopupAudioOverrides*>           GarbageCollectorPopupAudioOverrides;               // 0x40(0x10)
+	TArray<class PopUpMessageDesc*>                              GarbageCollectorVisiblePopups;                     // 0x30(0x10)
+	TArray<class PopUpAudioDesc*>                                GarbageCollectorPopupAudioOverrides;               // 0x40(0x10)
 };
 
 
@@ -9069,8 +9069,8 @@ class FireworksDebugSpawnItemsDataAsset: public DataAsset
 public:
 	Struct ClassicFireworkDebugList                              ClassicFireworks;                                  // 0x28(0x70)
 	Struct FireworkDebugListByFireworkType                       ThemedFireworks;                                   // 0x98(0x20)
-	TArray<class Flares*>                                        Flares;                                            // 0xb8(0x10)
-	TArray<class AllFireworks*>                                  AllFireworks;                                      // 0xc8(0x10)
+	TArray<class ItemDescSpawnData*>                             Flares;                                            // 0xb8(0x10)
+	TArray<class ItemDescSpawnData*>                             AllFireworks;                                      // 0xc8(0x10)
 };
 
 
@@ -9189,7 +9189,7 @@ public:
 class StoryDrivenFogBankCollectionDataAsset: public DataAsset
 {
 public:
-	TArray<class StoryDrivenFogBankAssetList*>                   StoryDrivenFogBankAssetList;                       // 0x28(0x10)
+	TArray<class StoryDrivenFogBankDataAsset*>                   StoryDrivenFogBankAssetList;                       // 0x28(0x10)
 };
 
 
@@ -9449,7 +9449,7 @@ public:
 class GameAudioService: public Object
 {
 public:
-	TArray<class ClientRegisteredShips*>                         ClientRegisteredShips;                             // 0x30(0x10)
+	TArray<class Ship*>                                          ClientRegisteredShips;                             // 0x30(0x10)
 };
 
 
@@ -9509,7 +9509,7 @@ class GarbageGenerator: public Actor
 public:
 	int                                                          GarbageGenerationRatePerFrame;                     // 0x3c8(0x4)
 	int                                                          SizeOfPersistentSet;                               // 0x3cc(0x4)
-	TArray<class StronglyReferencedObjects*>                     StronglyReferencedObjects;                         // 0x3d0(0x10)
+	TArray<class Object*>                                        StronglyReferencedObjects;                         // 0x3d0(0x10)
 };
 
 
@@ -9642,7 +9642,7 @@ public:
 class PLQuestLocationDataBundle: public DataAsset
 {
 public:
-	TArray<class ActiveLocations*>                               ActiveLocations;                                   // 0x28(0x10)
+	TArray<class PLQuestLocationDataAsset*>                      ActiveLocations;                                   // 0x28(0x10)
 };
 
 
@@ -9746,7 +9746,7 @@ public:
 class GhostCharacterAudioComponent: public ActorComponent
 {
 public:
-	TArray<class GhostShipPlayEvents*>                           GhostShipPlayEvents;                               // 0xc8(0x10)
+	TArray<class WwiseEvent*>                                    GhostShipPlayEvents;                               // 0xc8(0x10)
 	Class WwiseEvent*                                            GhostShipWaterphonePlay;                           // 0xd8(0x8)
 	Class WwiseEvent*                                            GhostShipMusicStopAll;                             // 0xe0(0x8)
 	Class WwiseEvent*                                            GhostShipAmbiencePlay;                             // 0xe8(0x8)
@@ -9797,7 +9797,7 @@ class GlintComponent: public StaticMeshComponent
 {
 public:
 	Class GlintComponentDataAsset*                               GlintComponentDataAsset;                           // 0x620(0x8)
-	TArray<class CurrentEnteredShips*>                           CurrentEnteredShips;                               // 0x628(0x10)
+	TArray<class Actor*>                                         CurrentEnteredShips;                               // 0x628(0x10)
 	Struct GlintVisibilityLock                                   GlintVisibilityLock;                               // 0x638(0x1)
 };
 
@@ -9824,7 +9824,7 @@ class GlobalVoyageDirectorService: public Object
 {
 public:
 	Class World*                                                 World;                                             // 0x30(0x8)
-	TArray<class Participants*>                                  Participants;                                      // 0x38(0x10)
+	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0x38(0x10)
 	Class GlobalVoyageDirectorServiceSettings*                   Settings;                                          // 0x48(0x8)
 	Class AthenaWorldSettings*                                   WorldSettings;                                     // 0x50(0x8)
 };
@@ -9976,10 +9976,10 @@ class HandHatch: public Actor
 public:
 	Class StaticMeshComponent*                                   Mesh;                                              // 0x3d0(0x8)
 	Class StaticMeshComponent*                                   GlowMesh;                                          // 0x3d8(0x8)
-	TArray<class HandAnimations*>                                HandAnimations;                                    // 0x3e0(0x10)
+	TArray<class AnimSequence*>                                  HandAnimations;                                    // 0x3e0(0x10)
 	Class PointLightComponent*                                   HatchLight;                                        // 0x3f0(0x8)
 	byte                                                         FlameOfFateType;                                   // 0x3f8(0x1)
-	TArray<class HandsMeshes*>                                   HandsMeshes;                                       // 0x400(0x10)
+	TArray<class ClientSkeletalMeshComponent*>                   HandsMeshes;                                       // 0x400(0x10)
 	TArray<Struct Vector>                                        HandsMeshesInvisibleRelativeLocations;             // 0x410(0x10)
 	TArray<Struct Vector>                                        HandsMeshesVisibleRelativeLocations;               // 0x420(0x10)
 	Struct Vector                                                HandsMoveDistance;                                 // 0x430(0xc)
@@ -10215,7 +10215,7 @@ public:
 class Hideout: public Actor
 {
 public:
-	TArray<class AssociatedSpawnLocations*>                      AssociatedSpawnLocations;                          // 0x3c8(0x10)
+	TArray<class SpawnLocation*>                                 AssociatedSpawnLocations;                          // 0x3c8(0x10)
 	Class PrimitiveComponent*                                    RevealTriggerVolume;                               // 0x3d8(0x8)
 	Struct FText                                                 HideoutName;                                       // 0x3e0(0x38)
 	TArray<Struct PlayerHideoutInfo>                             Players;                                           // 0x418(0x10)
@@ -10227,7 +10227,7 @@ class HideoutEntrance: public Actor
 {
 public:
 	Class BoxComponent*                                          TriggerZoneComponent;                              // 0x3c8(0x8)
-	TArray<class HideoutExitSpawnPoints*>                        HideoutExitSpawnPoints;                            // 0x3d0(0x10)
+	TArray<class SpawnLocation*>                                 HideoutExitSpawnPoints;                            // 0x3d0(0x10)
 };
 
 
@@ -10243,7 +10243,7 @@ public:
 class HideoutService: public Object
 {
 public:
-	TArray<class Hideouts*>                                      Hideouts;                                          // 0x30(0x10)
+	TArray<class Hideout*>                                       Hideouts;                                          // 0x30(0x10)
 };
 
 
@@ -10378,7 +10378,7 @@ public:
 	float                                                        LiquidCollectionAmount;                            // 0x3d8(0x4)
 	Class SceneComponent*                                        Root;                                              // 0x3e0(0x8)
 	Class ShapeComponent*                                        CollisionComponent;                                // 0x3e8(0x8)
-	TArray<class PlayersInHotTub*>                               PlayersInHotTub;                                   // 0x420(0x10)
+	TArray<class AthenaPlayerState*>                             PlayersInHotTub;                                   // 0x420(0x10)
 };
 
 
@@ -10399,13 +10399,13 @@ public:
 	Class ShipDamageableComponent*                               ShipDamageComponent;                               // 0x3f8(0x8)
 	int                                                          DamageZoneTickInterval;                            // 0x400(0x4)
 	Class ShipInternalWater*                                     InternalWater;                                     // 0x408(0x8)
-	TArray<class DamageZones*>                                   DamageZones;                                       // 0x410(0x10)
-	TArray<class ActiveHullDamageZones*>                         ActiveHullDamageZones;                             // 0x420(0x10)
-	TArray<class BottomDeckDamageZones*>                         BottomDeckDamageZones;                             // 0x430(0x10)
-	TArray<class MiddleDeckDamageZones*>                         MiddleDeckDamageZones;                             // 0x440(0x10)
+	TArray<class DamageZone*>                                    DamageZones;                                       // 0x410(0x10)
+	TArray<class DamageZone*>                                    ActiveHullDamageZones;                             // 0x420(0x10)
+	TArray<class DamageZone*>                                    BottomDeckDamageZones;                             // 0x430(0x10)
+	TArray<class DamageZone*>                                    MiddleDeckDamageZones;                             // 0x440(0x10)
 	Struct WeightedProbabilityRange                              DamageZoneDeckDistribution;                        // 0x450(0x20)
 	Class PersistenceIdentifierSettingsAsset*                    PersistenceIdentifierSettingsAsset;                // 0x470(0x8)
-	TArray<class RepairablePoints*>                              RepairablePoints;                                  // 0x548(0x10)
+	TArray<class RepairableComponent*>                           RepairablePoints;                                  // 0x548(0x10)
 };
 
 
@@ -10449,10 +10449,10 @@ class HullDamage2: public Actor
 public:
 	float                                                        ExternalScarDecalMinSize;                          // 0x3e0(0x4)
 	float                                                        ExternalScarDecalMaxSize;                          // 0x3e4(0x4)
-	TArray<class ExternalScarDecals*>                            ExternalScarDecals;                                // 0x3e8(0x10)
+	TArray<class Texture2D*>                                     ExternalScarDecals;                                // 0x3e8(0x10)
 	float                                                        ExternalHoleDecalMinSize;                          // 0x3f8(0x4)
 	float                                                        ExternalHoleDecalMaxSize;                          // 0x3fc(0x4)
-	TArray<class ExternalHoleDecals*>                            ExternalHoleDecals;                                // 0x400(0x10)
+	TArray<class MaterialInstance*>                              ExternalHoleDecals;                                // 0x400(0x10)
 	Class MaterialInstance*                                      InternalHoleDecal;                                 // 0x410(0x8)
 	Struct WeightedProbabilityRange                              DamageZoneDeckDistribution;                        // 0x418(0x20)
 	Class ParticleSystem*                                        InternalHitVfx;                                    // 0x438(0x8)
@@ -10466,11 +10466,11 @@ public:
 	Class ShipLeakerComponent*                                   ShipLeakerComponent;                               // 0x4d8(0x8)
 	Class MobileInstancedStaticMeshComponent*                    InstancedPlanksComponent;                          // 0x4e0(0x8)
 	Struct Transform                                             HiddenPlankLocation;                               // 0x4f0(0x30)
-	TArray<class Points*>                                        Points;                                            // 0x520(0x10)
+	TArray<class HullDamagePointProxy*>                          Points;                                            // 0x520(0x10)
 	TArray<Struct HullDamageHit>                                 HitsCircularBuffer;                                // 0x5a8(0x10)
-	TArray<class RepairComponents*>                              RepairComponents;                                  // 0x5b8(0x10)
-	TArray<class ExternalHoleDecalComponents*>                   ExternalHoleDecalComponents;                       // 0x5c8(0x10)
-	TArray<class InternalHoleDecalComponents*>                   InternalHoleDecalComponents;                       // 0x5d8(0x10)
+	TArray<class RepairableComponent*>                           RepairComponents;                                  // 0x5b8(0x10)
+	TArray<class DecalComponent*>                                ExternalHoleDecalComponents;                       // 0x5c8(0x10)
+	TArray<class DecalComponent*>                                InternalHoleDecalComponents;                       // 0x5d8(0x10)
 	int                                                          ServerHitCount;                                    // 0x650(0x4)
 };
 
@@ -11072,7 +11072,7 @@ public:
 	float                                                        StopMovingThreshold;                               // 0xd0(0x4)
 	float                                                        ConflictedStartMovingThreshold;                    // 0xd4(0x4)
 	float                                                        ConflictedStopMovingThreshold;                     // 0xd8(0x4)
-	TArray<class IntentProviders*>                               IntentProviders;                                   // 0xe0(0x10)
+	TArray<class Object*>                                        IntentProviders;                                   // 0xe0(0x10)
 };
 
 
@@ -11124,7 +11124,7 @@ public:
 	bool                                                         IsBrigLight;                                       // 0x5e0(0x1)
 	bool                                                         ExposeToNetProxy;                                  // 0x5e1(0x1)
 	int                                                          NetProxyBitIndex;                                  // 0x5e4(0x4)
-	TArray<class SiblingLights*>                                 SiblingLights;                                     // 0x600(0x10)
+	TArray<class ShipInteractableLight*>                         SiblingLights;                                     // 0x600(0x10)
 };
 
 
@@ -11146,7 +11146,7 @@ public:
 	Class InteractableComponent*                                 InteractableComponent;                             // 0x408(0x8)
 	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x410(0x8)
 	byte                                                         CurrentInteractionState;                           // 0x418(0x1)
-	TArray<class Prerequisites*>                                 Prerequisites;                                     // 0x420(0x10)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x420(0x10)
 	bool                                                         CanSetInteractionState;                            // 0x430(0x1)
 };
 
@@ -11338,7 +11338,7 @@ class IslandFaunaSpawnComponent: public IslandItemSpawnComponent
 {
 public:
 	Class IslandFaunaSettings*                                   FaunaSettings;                                     // 0x4f8(0x8)
-	TArray<class FaunaSpawners*>                                 FaunaSpawners;                                     // 0x500(0x10)
+	TArray<class AIFaunaSpawner*>                                FaunaSpawners;                                     // 0x500(0x10)
 };
 
 
@@ -11373,7 +11373,7 @@ public:
 	TArray<Struct Island>                                        IslandArray;                                       // 0x480(0x10)
 	TArray<Struct CannonAISpawnerZone>                           CannonAISpawnerZoneDebugArray;                     // 0x5b0(0x10)
 	TArray<Struct CannonAILocation>                              CannonAILocationDebugArray;                        // 0x5c0(0x10)
-	TArray<class PlayerTrackers*>                                PlayerTrackers;                                    // 0x5d0(0x10)
+	TArray<class AIProximityPlayerTracker*>                      PlayerTrackers;                                    // 0x5d0(0x10)
 };
 
 
@@ -11578,7 +11578,7 @@ class ItemPreviewActor: public Actor
 {
 public:
 	Struct ItemPreviewView                                       CurrentView;                                       // 0x3d8(0x18)
-	TArray<class CameraLocations*>                               CameraLocations;                                   // 0x490(0x10)
+	TArray<class SceneComponent*>                                CameraLocations;                                   // 0x490(0x10)
 	Class AnimationAsset*                                        PendingAnim;                                       // 0x4a0(0x8)
 	Class CosmeticItemAnimationComponent*                        CosmeticItemAnimationComponent;                    // 0x4c8(0x8)
 	Class AnimationAsset*                                        DefaultAnimation;                                  // 0x4d0(0x8)
@@ -11637,7 +11637,7 @@ public:
 	float                                                        RadialIconScale;                                   // 0xd0(0x4)
 	Struct Vector2D                                              RadialIconOffset;                                  // 0xd4(0x8)
 	Class InventoryItemCategoryToSlotRemappingAsset*             RemappingAsset;                                    // 0xe0(0x8)
-	TArray<class RemappedSlots*>                                 RemappedSlots;                                     // 0xe8(0x10)
+	TArray<class ItemInfo*>                                      RemappedSlots;                                     // 0xe8(0x10)
 };
 
 
@@ -11648,7 +11648,7 @@ public:
 	float                                                        RadialIconScale;                                   // 0xd0(0x4)
 	Struct Vector2D                                              RadialIconOffset;                                  // 0xd4(0x8)
 	Class InventoryItemDescToSlotRemappingPolicyAsset*           RemappingAsset;                                    // 0xe0(0x8)
-	TArray<class MappedSlots*>                                   MappedSlots;                                       // 0xe8(0x10)
+	TArray<class ItemInfo*>                                      MappedSlots;                                       // 0xe8(0x10)
 	class                                                        CustomItemCategory;                                // 0xf8(0x8)
 	TArray<Class CustomItemCategories>                           CustomItemCategories;                              // 0x100(0x10)
 };
@@ -12182,7 +12182,7 @@ public:
 	Struct WwiseEmitterCreationParams                            ActionStopSfxParams;                               // 0x158(0x28)
 	class                                                        StartInputId;                                      // 0x208(0x8)
 	class                                                        StopInputId;                                       // 0x210(0x8)
-	TArray<class ActionEffects*>                                 ActionEffects;                                     // 0x230(0x10)
+	TArray<class ItemActionEffect*>                              ActionEffects;                                     // 0x230(0x10)
 	Class ItemActionComponentAudioParams*                        ItemActionAudio;                                   // 0x290(0x8)
 	Class ForceFeedbackEffect*                                   ActionForceFeedback;                               // 0x298(0x8)
 	struct FName                                                 ActionForceFeedbackTag;                            // 0x2a0(0x8)
@@ -12222,7 +12222,7 @@ class SirenTridentShotActionComponent: public LaunchableShotActionComponent
 {
 public:
 	float                                                        MaxAcceptableChargeTimeStampDelta;                 // 0x43c(0x4)
-	TArray<class ProjectileParameters*>                          ProjectileParameters;                              // 0x440(0x10)
+	TArray<class SirenTridentProjectileParams*>                  ProjectileParameters;                              // 0x440(0x10)
 	Class SirenTridentProjectileParams*                          CurrentProjectileParameters;                       // 0x450(0x8)
 	struct FName                                                 ActionSizeChangeForceFeedbackTag;                  // 0x458(0x8)
 	byte                                                         CurrentShotState;                                  // 0x460(0x1)
@@ -12242,7 +12242,7 @@ public:
 class LauncherParentMock: public Actor
 {
 public:
-	TArray<class IgnoreActors*>                                  IgnoreActors;                                      // 0x3e0(0x10)
+	TArray<class Actor*>                                         IgnoreActors;                                      // 0x3e0(0x10)
 };
 
 
@@ -12378,7 +12378,7 @@ public:
 	Struct LightingControllerTransformParams                     TransformParams;                                   // 0x650(0x90)
 	Struct LightingControllerTimeParams                          TimeParams;                                        // 0x6e0(0x20)
 	Struct LightingControllerIslandDangerParams                  DangerLevelParams;                                 // 0x700(0x8)
-	TArray<class LightingSettings*>                              LightingSettings;                                  // 0x708(0x10)
+	TArray<class LightingControllerSettings*>                    LightingSettings;                                  // 0x708(0x10)
 	Class StaticMeshActor*                                       OverworldFarQuad;                                  // 0x718(0x8)
 	Class StaticMeshActor*                                       UnderworldFarQuad;                                 // 0x720(0x8)
 	float                                                        FixedTimeOfDay;                                    // 0x728(0x4)
@@ -12405,7 +12405,7 @@ public:
 	bool                                                         ShowDebugUnderwater;                               // 0x7e8(0x1)
 	Struct LightingControllerLightingVars                        LightingVars;                                      // 0x810(0x460)
 	Struct LightingControllerMaterialInstances                   MaterialInstances;                                 // 0xc70(0x20)
-	TArray<class ReflectionProbes*>                              ReflectionProbes;                                  // 0xc90(0x10)
+	TArray<class Actor*>                                         ReflectionProbes;                                  // 0xc90(0x10)
 	TArray<Struct WaterModifierZoneParametersAndLocation>        MurkZones;                                         // 0xcc0(0x10)
 	Class CurveFloat*                                            EndOfWorldLightingZoneWeightCurve;                 // 0xd78(0x8)
 };
@@ -12427,7 +12427,7 @@ public:
 	Class ExplosionComponent*                                    CachedExplosionComponent;                          // 0xd0(0x8)
 	Class StaticMeshComponent*                                   BaseCloudMeshComponent;                            // 0xd8(0x8)
 	Struct ActiveLightning                                       ActiveLightning;                                   // 0xe0(0xc8)
-	TArray<class LightningMeshComponents*>                       LightningMeshComponents;                           // 0x270(0x10)
+	TArray<class StaticMeshComponent*>                           LightningMeshComponents;                           // 0x270(0x10)
 };
 
 
@@ -12480,12 +12480,13 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 class LightningManagerComponent: public ActorComponent
 {
 public:
-	Class LightningManagerDataAsset*                             LightningManagerDataAsset;                         // 0xc8(0x8)
-	float                                                        Radius;                                            // 0xd0(0x4)
+	bool                                                         QueueLightningStrikeOnStart;                       // 0xc8(0x1)
+	Class LightningManagerDataAsset*                             LightningManagerDataAsset;                         // 0xd0(0x8)
+	float                                                        Radius;                                            // 0xd8(0x4)
 };
 
 
@@ -12749,7 +12750,7 @@ class MapRadialContentRule: public RadialContentRule
 public:
 	float                                                        RadialIconScale;                                   // 0x78(0x4)
 	Struct Vector2D                                              RadialIconOffset;                                  // 0x7c(0x8)
-	TArray<class MappedSlots*>                                   MappedSlots;                                       // 0xd8(0x10)
+	TArray<class Actor*>                                         MappedSlots;                                       // 0xd8(0x10)
 };
 
 
@@ -12801,7 +12802,7 @@ public:
 	float                                                        LeftMargin;                                        // 0x4c4(0x4)
 	Struct Vector2D                                              ServerCentreLocation;                              // 0x4c8(0x8)
 	float                                                        ServerZoomLevel;                                   // 0x4d0(0x4)
-	TArray<class ControllerQueue*>                               ControllerQueue;                                   // 0x4d8(0x10)
+	TArray<class Actor*>                                         ControllerQueue;                                   // 0x4d8(0x10)
 	TArray<Struct Vector2D>                                      MapPins;                                           // 0x4e8(0x10)
 	TArray<Struct WorldMapShipLocation>                          TrackedShips;                                      // 0x4f8(0x10)
 	TArray<Struct ReapersMarkTrackedBootyItemInfo>               TrackedBootyItemInfos;                             // 0x508(0x10)
@@ -12934,7 +12935,7 @@ public:
 class SpawnRequirement: public Object
 {
 public:
-	TArray<class OR_Requirements*>                               OR_Requirements;                                   // 0x40(0x10)
+	TArray<class SpawnRequirement*>                              OR_Requirements;                                   // 0x40(0x10)
 };
 
 
@@ -13115,7 +13116,7 @@ class MeleeWeaponDataAsset: public DataAsset
 public:
 	float                                                        PlayerAttackSelectionTime;                         // 0x28(0x4)
 	Class MeleeWeaponMovementSpeedConfig*                        MovementSpeedConfig;                               // 0x30(0x8)
-	TArray<class ComboAttacks*>                                  ComboAttacks;                                      // 0x38(0x10)
+	TArray<class MeleeAttackDataAsset*>                          ComboAttacks;                                      // 0x38(0x10)
 	Class MeleeAttackDataAsset*                                  HeavyAttack;                                       // 0x48(0x8)
 	float                                                        HeavyAttackChargeDuration;                         // 0x50(0x4)
 	TArray<Struct MeleeWeaponSpecialAttackData>                  SpecialAttacks;                                    // 0x58(0x10)
@@ -13242,7 +13243,7 @@ public:
 	TArray<Class AllMerchantCrates>                              AllMerchantCrates;                                 // 0x28(0x10)
 	TArray<Class AllMerchantCargo>                               AllMerchantCargo;                                  // 0x38(0x10)
 	TArray<AssetClass AllFauna>                                  AllFauna;                                          // 0x48(0x10)
-	TArray<class MerchantMapLayouts*>                            MerchantMapLayouts;                                // 0x58(0x10)
+	TArray<class MerchantMapLayout*>                             MerchantMapLayouts;                                // 0x58(0x10)
 	Struct FText                                                 DeliverByTimeTextFormat;                           // 0x68(0x38)
 	TArray<Struct FText>                                         DeliverByTimeHourFormat;                           // 0xa0(0x10)
 	TArray<Struct FText>                                         DeliverByTimeDayFormat;                            // 0xb0(0x10)
@@ -13340,7 +13341,7 @@ class MessageInABottleItemProxy: public FloatingItemProxy
 public:
 	TArray<Struct MessageInABottleVoyageEntry>                   VoyageRecipeList;                                  // 0x7a0(0x10)
 	bool                                                         UsePremadeVoyages;                                 // 0x7b0(0x1)
-	TArray<class PremadeVoyages*>                                PremadeVoyages;                                    // 0x7b8(0x10)
+	TArray<class VoyageDescDataAsset*>                           PremadeVoyages;                                    // 0x7b8(0x10)
 	byte                                                         EmergentSource;                                    // 0x7c8(0x1)
 	Class WwiseEvent*                                            OnBottleOpenedSfx;                                 // 0x7d0(0x8)
 };
@@ -13701,9 +13702,9 @@ public:
 	Class VoyageDescDataAsset*                                   VoyageDescAsset;                                   // 0x580(0x8)
 	Class IslandEventComponent*                                  IslandEventComponent;                              // 0x588(0x8)
 	Class CrewShipManifest*                                      CrewShipManifest;                                  // 0x590(0x8)
-	TArray<class VoyageSelectionVotableObjectViews*>             VoyageSelectionVotableObjectViews;                 // 0x5a8(0x10)
+	TArray<class Actor*>                                         VoyageSelectionVotableObjectViews;                 // 0x5a8(0x10)
 	Class Actor*                                                 VoyageCancelVotableObjectView;                     // 0x5b8(0x8)
-	TArray<class TaleManifests*>                                 TaleManifests;                                     // 0x5c0(0x10)
+	TArray<class CrewShipManifest*>                              TaleManifests;                                     // 0x5c0(0x10)
 	Class Actor*                                                 TaleCancelVotableObjectView;                       // 0x620(0x8)
 	Class Actor*                                                 AdventureCancelVotableObjectView;                  // 0x628(0x8)
 };
@@ -13854,10 +13855,10 @@ public:
 	Class WwiseEvent*                                            StopMagicEvent;                                    // 0x418(0x8)
 	Struct WwiseEmitter                                          ShantyMagicEmitter;                                // 0x420(0x20)
 	float                                                        DelayBeforeMechanismTrigger;                       // 0x440(0x4)
-	TArray<class SwitchesToSyncTo*>                              SwitchesToSyncTo;                                  // 0x448(0x10)
+	TArray<class SwitchMechanismTrigger*>                        SwitchesToSyncTo;                                  // 0x448(0x10)
 	Class LandmarkReactionPlayer*                                ReactionEventPlayer;                               // 0x458(0x8)
 	byte                                                         MusicalTriggerState;                               // 0x460(0x1)
-	TArray<class ActorsPlayingInstruments*>                      ActorsPlayingInstruments;                          // 0x468(0x10)
+	TArray<class Actor*>                                         ActorsPlayingInstruments;                          // 0x468(0x10)
 	TArray<Interface AssociatedMechanismActions>                 AssociatedMechanismActions;                        // 0x478(0x10)
 };
 
@@ -14006,7 +14007,7 @@ class NoiseMakerControllerParams: public DataAsset
 public:
 	float                                                        LookupRadiusAroundListener;                        // 0x28(0x4)
 	int                                                          MaxAmountOfRemoteNoiseMakers;                      // 0x2c(0x4)
-	TArray<class WwiseFoliagePoolWrappers*>                      WwiseFoliagePoolWrappers;                          // 0x30(0x10)
+	TArray<class WwiseObjectPoolWrapper*>                        WwiseFoliagePoolWrappers;                          // 0x30(0x10)
 };
 
 
@@ -14095,7 +14096,7 @@ public:
 	Class Actor*                                                 RightHandObject;                                   // 0x468(0x8)
 	Class NPCHeldObjectData*                                     HeldObjectList;                                    // 0x470(0x8)
 	Class SkeletalMeshComponent*                                 NPCSkeletalMesh;                                   // 0x478(0x8)
-	TArray<class InitialSpawnedCosmeticItems*>                   InitialSpawnedCosmeticItems;                       // 0x480(0x10)
+	TArray<class Actor*>                                         InitialSpawnedCosmeticItems;                       // 0x480(0x10)
 	Struct HitReactionAnimationState                             HitReactionState;                                  // 0x490(0x28)
 	Struct HitReactionAnimationData                              HitReactionData;                                   // 0x4b8(0x8)
 	bool                                                         Active;                                            // 0x4c0(0x1)
@@ -14112,9 +14113,9 @@ public:
 	bool                                                         InitialSpawnedCosmeticItemsActive;                 // 0x550(0x1)
 	Class AnimMontage*                                           NPCCustomAnimationCurrentMontage;                  // 0x558(0x8)
 	Class AnimMontage*                                           NPCCustomAnimationCurrentFacialAdditiveMontage;    // 0x560(0x8)
-	TArray<class IdleVariantAnims*>                              IdleVariantAnims;                                  // 0x568(0x10)
-	TArray<class InactiveVariantAnims*>                          InactiveVariantAnims;                              // 0x578(0x10)
-	TArray<class InteractVariantAnims*>                          InteractVariantAnims;                              // 0x588(0x10)
+	TArray<class AnimSequence*>                                  IdleVariantAnims;                                  // 0x568(0x10)
+	TArray<class AnimSequence*>                                  InactiveVariantAnims;                              // 0x578(0x10)
+	TArray<class AnimSequence*>                                  InteractVariantAnims;                              // 0x588(0x10)
 	Struct NPCAnimationIdlesVariantStruct                        NPCAllocatedIdleAnimations;                        // 0x598(0x20)
 	byte                                                         PreviousCustomAnimationState;                      // 0x5b8(0x1)
 	bool                                                         UseLookAt;                                         // 0x5b9(0x1)
@@ -14185,7 +14186,7 @@ public:
 class NPCDialogConditionalTextHeader: public NPCDialogHeader
 {
 public:
-	TArray<class Text*>                                          Text;                                              // 0x28(0x10)
+	TArray<class NPCDialogConditionalText*>                      Text;                                              // 0x28(0x10)
 	Struct FText                                                 DefaultText;                                       // 0x38(0x38)
 };
 
@@ -14243,7 +14244,7 @@ public:
 	Struct FString                                               TelemetryKey;                                      // 0x30(0x10)
 	TArray<Struct PlayerStatOption>                              StatsToFire;                                       // 0x40(0x10)
 	TArray<Class ConditionalStatsToFire>                         ConditionalStatsToFire;                            // 0x50(0x10)
-	TArray<class Conditions*>                                    Conditions;                                        // 0x60(0x10)
+	TArray<class NPCDialogConditional*>                          Conditions;                                        // 0x60(0x10)
 	TArray<Class ClientRunnables>                                ClientRunnables;                                   // 0x70(0x10)
 	Struct StringAssetReference                                  OptionIcon;                                        // 0x80(0x10)
 	Struct FText                                                 OptionIconNarrationText;                           // 0x90(0x38)
@@ -14444,7 +14445,7 @@ class NPCDialogOptionShops: public NPCDialogOption
 {
 public:
 	Struct FText                                                 Text;                                              // 0xd0(0x38)
-	TArray<class ShopDescArray*>                                 ShopDescArray;                                     // 0x108(0x10)
+	TArray<class ShopDesc*>                                      ShopDescArray;                                     // 0x108(0x10)
 	Class Controller*                                            Interactor;                                        // 0x118(0x8)
 };
 
@@ -14665,7 +14666,7 @@ public:
 class ObjectProximityResetComponent: public ActorComponent
 {
 public:
-	TArray<class ResetTargets*>                                  ResetTargets;                                      // 0xc8(0x10)
+	TArray<class Actor*>                                         ResetTargets;                                      // 0xc8(0x10)
 	float                                                        ObjectResetTimeout;                                // 0xf8(0x4)
 };
 
@@ -14847,7 +14848,7 @@ class PanicTeleportVolume: public Actor
 {
 public:
 	Class BoxComponent*                                          AreaComponent;                                     // 0x3c8(0x8)
-	TArray<class AssociatedSpawnLocations*>                      AssociatedSpawnLocations;                          // 0x3d0(0x10)
+	TArray<class SpawnLocation*>                                 AssociatedSpawnLocations;                          // 0x3d0(0x10)
 	TArray<Weakclass PlayersInVolume>                            PlayersInVolume;                                   // 0x3e0(0x10)
 };
 
@@ -14947,7 +14948,7 @@ public:
 	bool                                                         ShowSwitchInteractionPrompt;                       // 0x430(0x1)
 	Struct FText                                                 SwitchInteractionPromptText;                       // 0x438(0x38)
 	Struct FText                                                 SwitchNameText;                                    // 0x470(0x38)
-	TArray<class SwitchesToSyncTo*>                              SwitchesToSyncTo;                                  // 0x4a8(0x10)
+	TArray<class SwitchMechanismTrigger*>                        SwitchesToSyncTo;                                  // 0x4a8(0x10)
 	bool                                                         DisableWhenActivated;                              // 0x4b8(0x1)
 	bool                                                         AutoDeactivateAfterActivation;                     // 0x4b9(0x1)
 	float                                                        TimeAfterActivationBeforeAutoDeactivating;         // 0x4bc(0x4)
@@ -15117,10 +15118,10 @@ public:
 	Class CosmeticItemAnimationComponent*                        CosmeticItemAnimationComponent;                    // 0x3e0(0x8)
 	Class CosmeticVfxComponent*                                  CosmeticVfxComponent;                              // 0x3e8(0x8)
 	Struct PiratePreviewView                                     DelayedGenerationView;                             // 0x618(0x20)
-	TArray<class CameraLocations*>                               CameraLocations;                                   // 0x6c0(0x10)
+	TArray<class SceneComponent*>                                CameraLocations;                                   // 0x6c0(0x10)
 	Class AnimationAsset*                                        PendingAnim;                                       // 0x6d0(0x8)
 	Class DataAsset*                                             EmotePropData;                                     // 0x6d8(0x8)
-	TArray<class ParticleComponents*>                            ParticleComponents;                                // 0x6f8(0x10)
+	TArray<class ParticleSystemComponent*>                       ParticleComponents;                                // 0x6f8(0x10)
 	Class AnimationAsset*                                        DefaultAnimation;                                  // 0x708(0x8)
 	Struct ObjectMessagingHandle                                 PreviewReadyEventHandle;                           // 0x720(0x48)
 	Struct ObjectMessagingHandle                                 PreviewBusyEventHandle;                            // 0x768(0x48)
@@ -15167,7 +15168,7 @@ public:
 class PirateSelector: public ActorComponent
 {
 public:
-	TArray<class QueuedPiratesToSpawn*>                          QueuedPiratesToSpawn;                              // 0xc8(0x10)
+	TArray<class PosablePirate*>                                 QueuedPiratesToSpawn;                              // 0xc8(0x10)
 };
 
 
@@ -15479,8 +15480,8 @@ public:
 	Class WwiseEvent*                                            CompanyMoodStart;                                  // 0x2f8(0x8)
 	Class WwiseEvent*                                            CompanyMoodStop;                                   // 0x300(0x8)
 	TArray<Struct KrakenMusicEvent>                              KrakenMusicEvents;                                 // 0x308(0x10)
-	TArray<class KrakenTentacleTakeHitEvents*>                   KrakenTentacleTakeHitEvents;                       // 0x318(0x10)
-	TArray<class KrakenTentacleKilledEvents*>                    KrakenTentacleKilledEvents;                        // 0x328(0x10)
+	TArray<class WwiseEvent*>                                    KrakenTentacleTakeHitEvents;                       // 0x318(0x10)
+	TArray<class WwiseEvent*>                                    KrakenTentacleKilledEvents;                        // 0x328(0x10)
 	Class WwiseEvent*                                            KrakenHeadHitEvent;                                // 0x338(0x8)
 	Struct TinySharkMusicEvent                                   TinySharkExperienceMusic;                          // 0x340(0x10)
 	TArray<Class TinySharkPursuitStrategies>                     TinySharkPursuitStrategies;                        // 0x350(0x10)
@@ -15547,7 +15548,7 @@ public:
 class PlayerMuteComponent: public ActorComponent
 {
 public:
-	TArray<class PlayerStatesPendingCrewMuting*>                 PlayerStatesPendingCrewMuting;                     // 0xd0(0x10)
+	TArray<class PlayerState*>                                   PlayerStatesPendingCrewMuting;                     // 0xd0(0x10)
 };
 
 
@@ -15804,8 +15805,8 @@ class PopUpNotificationComponent: public ActorComponent
 {
 public:
 	Class RewardPopUpNotificationCollectionDataAsset*            RewardPopUpNotificationCollection;                 // 0xc8(0x8)
-	TArray<class DeferralReasonPopUpNotifications*>              DeferralReasonPopUpNotifications;                  // 0xd0(0x10)
-	TArray<class CampaignPopUpNotifications*>                    CampaignPopUpNotifications;                        // 0xe0(0x10)
+	TArray<class DeferralReasonPopUpNotificationDataAsset*>      DeferralReasonPopUpNotifications;                  // 0xd0(0x10)
+	TArray<class CampaignPopUpNotificationDataAsset*>            CampaignPopUpNotifications;                        // 0xe0(0x10)
 	Class PopUpMessageDesc*                                      PeriodicObjectiveCompletePopUp;                    // 0xf0(0x8)
 	Class PopUpMessageDesc*                                      PeriodicObjectiveIncompletePopUp;                  // 0xf8(0x8)
 	Class PopUpMessageDesc*                                      NPCOnBeachFlowPopUpNoTaleCheckpointVoyage;         // 0x100(0x8)
@@ -15830,7 +15831,7 @@ public:
 	bool                                                         UseIPG;                                            // 0x3d1(0x1)
 	Class PirateGeneratorService*                                GeneratorServiceActor;                             // 0x3d8(0x8)
 	TArray<Class Outfit>                                         Outfit;                                            // 0x468(0x10)
-	TArray<class ParticleComponents*>                            ParticleComponents;                                // 0x478(0x10)
+	TArray<class ParticleSystemComponent*>                       ParticleComponents;                                // 0x478(0x10)
 };
 
 
@@ -15883,7 +15884,7 @@ class PremiumCatalogCardsDataAsset: public PremiumCatalogLandingPageItemDataAsse
 public:
 	Struct FText                                                 PageTitle;                                         // 0x108(0x38)
 	Struct StringAssetReference                                  PageIcon;                                          // 0x140(0x10)
-	TArray<class Cards*>                                         Cards;                                             // 0x150(0x10)
+	TArray<class PremiumCatalogItemSetDataAsset*>                Cards;                                             // 0x150(0x10)
 };
 
 
@@ -15910,7 +15911,7 @@ public:
 class PremiumCatalogListDataAsset: public DataAsset
 {
 public:
-	TArray<class Catalogs*>                                      Catalogs;                                          // 0x28(0x10)
+	TArray<class PremiumCatalogDataAsset*>                       Catalogs;                                          // 0x28(0x10)
 };
 
 
@@ -15968,8 +15969,8 @@ public:
 class ShipSpawnLocation: public Actor
 {
 public:
-	TArray<class LinkedShipSpawnLocations*>                      LinkedShipSpawnLocations;                          // 0x3c8(0x10)
-	TArray<class AssociatedSpawnLocations*>                      AssociatedSpawnLocations;                          // 0x3d8(0x10)
+	TArray<class ShipSpawnLocation*>                             LinkedShipSpawnLocations;                          // 0x3c8(0x10)
+	TArray<class SpawnLocation*>                                 AssociatedSpawnLocations;                          // 0x3d8(0x10)
 	class                                                        ShipSize;                                          // 0x3e8(0x8)
 	Struct FString                                               Description;                                       // 0x3f0(0x10)
 	Class BoxComponent*                                          BoxComponent;                                      // 0x400(0x8)
@@ -15990,7 +15991,7 @@ public:
 	Class MechanismActionComponent*                              MechanismActionComponent;                          // 0x3d8(0x8)
 	byte                                                         Mode;                                              // 0x3e0(0x1)
 	Struct PoolableCollectionMapConfiguration                    ProjectilePoolConfiguration;                       // 0x3e8(0x18)
-	TArray<class IndependentProjectileLaunchers*>                IndependentProjectileLaunchers;                    // 0x400(0x10)
+	TArray<class Actor*>                                         IndependentProjectileLaunchers;                    // 0x400(0x10)
 };
 
 
@@ -16053,8 +16054,8 @@ public:
 	int                                                          ProcessHitsAuthorityCallCount;                     // 0xa64(0x4)
 	bool                                                         OnWeaponFiredCalled;                               // 0xa68(0x1)
 	Struct Guid                                                  AttackId;                                          // 0xa6c(0x10)
-	TArray<class ActorsHits*>                                    ActorsHits;                                        // 0xa80(0x10)
-	TArray<class PhysicsMaterials*>                              PhysicsMaterials;                                  // 0xa90(0x10)
+	TArray<class Actor*>                                         ActorsHits;                                        // 0xa80(0x10)
+	TArray<class PhysicalMaterial*>                              PhysicsMaterials;                                  // 0xa90(0x10)
 	Struct ProjectileAim                                         LastProjectileAim;                                 // 0xaa0(0x50)
 };
 
@@ -16148,7 +16149,7 @@ class BroadcasterPuzzleStatue: public PuzzleStatueBase
 {
 public:
 	Class StaticMeshComponent*                                   ArmStaticMesh;                                     // 0x450(0x8)
-	TArray<class ReceiverStatues*>                               ReceiverStatues;                                   // 0x458(0x10)
+	TArray<class Actor*>                                         ReceiverStatues;                                   // 0x458(0x10)
 	TArray<Struct ConfigurationComboAndTrigger>                  ValidConfigurationCombos;                          // 0x468(0x10)
 	Struct ReactionSequenceStateInfo                             ReactionSequenceState;                             // 0x478(0x10)
 	Class IslandVisitorCallbackComponent*                        IslandVisitorCallbackComponent;                    // 0x4d0(0x8)
@@ -16263,23 +16264,23 @@ public:
 	Class TimedDoorMechanismAction*                              TimedVaultDoor;                                    // 0x11e0(0x8)
 	Class SlidingDoor*                                           VaultRewardDoor;                                   // 0x11e8(0x8)
 	Class WaterVolume*                                           WaterVolume;                                       // 0x11f0(0x8)
-	TArray<class PuzzleMechanisms*>                              PuzzleMechanisms;                                  // 0x11f8(0x10)
-	TArray<class Braziers*>                                      Braziers;                                          // 0x1208(0x10)
+	TArray<class RotatingBlockPuzzle*>                           PuzzleMechanisms;                                  // 0x11f8(0x10)
+	TArray<class Beacon*>                                        Braziers;                                          // 0x1208(0x10)
 	Class TreasureVaultTable*                                    VaultTable;                                        // 0x1218(0x8)
 	Class VaultPuzzleDataAsset*                                  VaultDataAsset;                                    // 0x1220(0x8)
 	byte                                                         VaultAudioSetting;                                 // 0x1228(0x1)
 	Class PuzzleVaultAudioParams*                                VaultAudioParams;                                  // 0x1230(0x8)
 	Class TreasureVaultItemSpawnComponent*                       ScaffoldingSpawner;                                // 0x1238(0x8)
-	TArray<class RewardSpawners*>                                RewardSpawners;                                    // 0x1240(0x10)
-	TArray<class PressurePlateSpawners*>                         PressurePlateSpawners;                             // 0x1250(0x10)
+	TArray<class TreasureVaultItemSpawnComponent*>               RewardSpawners;                                    // 0x1240(0x10)
+	TArray<class TreasureVaultItemSpawnComponent*>               PressurePlateSpawners;                             // 0x1250(0x10)
 	TArray<Struct VaultPuzzleSolutionPositions>                  Solutions;                                         // 0x1260(0x10)
-	TArray<class PlayersInVaultPassage*>                         PlayersInVaultPassage;                             // 0x1270(0x10)
+	TArray<class AthenaPlayerCharacter*>                         PlayersInVaultPassage;                             // 0x1270(0x10)
 	TArray<Struct StringAssetReference>                          MaterialSetReferences;                             // 0x1280(0x10)
 	Class InteractableComponent*                                 InteractableComponent;                             // 0x1290(0x8)
 	int                                                          CurrentSolution;                                   // 0x1298(0x4)
 	bool                                                         IsActive;                                          // 0x129c(0x1)
 	bool                                                         IsCompleted;                                       // 0x129d(0x1)
-	TArray<class MaterialSets*>                                  MaterialSets;                                      // 0x12a0(0x10)
+	TArray<class VaultMaterialSetDataAsset*>                     MaterialSets;                                      // 0x12a0(0x10)
 	int                                                          NumActiveWaterSpouts;                              // 0x12b0(0x4)
 	int                                                          ActiveActionRule;                                  // 0x12f8(0x4)
 	float                                                        ServerMigrationExclusionRadius;                    // 0x1430(0x4)
@@ -16475,7 +16476,7 @@ class RandomPirateLegendSectStepDesc: public TaleQuestStepDesc
 public:
 	Struct QuestVarPLSectionBundle                               SectionBundle;                                     // 0x80(0x20)
 	Struct QuestVarPLSection                                     OutSection;                                        // 0xa0(0x20)
-	TArray<class Filters*>                                       Filters;                                           // 0xc0(0x10)
+	TArray<class PirateLegendSectionFilter*>                     Filters;                                           // 0xc0(0x10)
 };
 
 
@@ -16688,7 +16689,7 @@ public:
 class RespawnAndTaleProgressComponent: public ActorComponent
 {
 public:
-	TArray<class LinkedSpawnLocations*>                          LinkedSpawnLocations;                              // 0x100(0x10)
+	TArray<class ProgressSpawnLocation*>                         LinkedSpawnLocations;                              // 0x100(0x10)
 	int                                                          ProgressLevel;                                     // 0x110(0x4)
 	bool                                                         ClearProgress;                                     // 0x114(0x1)
 	bool                                                         SetRespawnProgress;                                // 0x115(0x1)
@@ -16705,7 +16706,7 @@ public:
 	Class RespawnAndTaleProgressComponent*                       Progress;                                          // 0x410(0x8)
 	bool                                                         ClearProgress;                                     // 0x418(0x1)
 	int                                                          ProgressLevel;                                     // 0x41c(0x4)
-	TArray<class LinkedSpawnLocation*>                           LinkedSpawnLocation;                               // 0x420(0x10)
+	TArray<class ProgressSpawnLocation*>                         LinkedSpawnLocation;                               // 0x420(0x10)
 	bool                                                         SetRespawnProgress;                                // 0x430(0x1)
 	bool                                                         SetRespawnProgressForWholeCrew;                    // 0x431(0x1)
 	bool                                                         SetTaleProgress;                                   // 0x432(0x1)
@@ -16775,7 +16776,7 @@ public:
 class RewardPopUpNotificationCollectionDataAsset: public DataAsset
 {
 public:
-	TArray<class RewardPopUpNotifications*>                      RewardPopUpNotifications;                          // 0x28(0x10)
+	TArray<class RewardPopUpNotificationDataAsset*>              RewardPopUpNotifications;                          // 0x28(0x10)
 };
 
 
@@ -16829,7 +16830,7 @@ class MeshRotatorComponent: public ActorComponent
 {
 public:
 	Struct Rotator                                               RotationRate;                                      // 0xc8(0xc)
-	TArray<class Meshes*>                                        Meshes;                                            // 0xd8(0x10)
+	TArray<class MeshComponent*>                                 Meshes;                                            // 0xd8(0x10)
 };
 
 
@@ -16890,7 +16891,7 @@ class Sail: public Actor
 {
 public:
 	Class SkeletalMeshComponent*                                 Mesh;                                              // 0x3d8(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x3e0(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x3e0(0x10)
 	Struct Vector                                                PositionForSailDynamicsRelativeToSailActor;        // 0x3f0(0xc)
 	Class BaseSailDynamicsDesc*                                  SailDynamicsDesc;                                  // 0x400(0x8)
 	float                                                        MinRelativeWindSpdForFullVisibleInflation;         // 0x408(0x4)
@@ -16936,7 +16937,7 @@ public:
 	float                                                        BillowedFoldAnimationWithWindModulationBillowedAlphaUnfurled; // 0x484(0x4)
 	float                                                        BillowedFoldAnimationWithWindModulationLaxAlphaUnfurled; // 0x488(0x4)
 	float                                                        BetweenZeroAndHalfBillowedFoldAnimationWithFullWindBlendAlpha; // 0x48c(0x4)
-	float                                                        BetweenZeroAndHalfBillowedFoldAnimationWithFullWindAdditiveAlph; // 0x490(0x4)
+	float                                                        BetweenZeroAndHalfBillowedFoldAnimationWithFullWindAdditiveAlpha; // 0x490(0x4)
 	float                                                        BetweenHalfAndOneBillowedFoldAnimationBlendAlpha;  // 0x494(0x4)
 	float                                                        TurningMapRangeUnclamped;                          // 0x498(0x4)
 	float                                                        PlayRateMultiplier;                                // 0x49c(0x4)
@@ -17018,7 +17019,7 @@ class ScreenSpaceVfxComponent: public ActorComponent
 {
 public:
 	Class ScreenSpaceVFXComponentParams*                         Params;                                            // 0xc8(0x8)
-	TArray<class ScreenSpaceParticleSystems*>                    ScreenSpaceParticleSystems;                        // 0xd8(0x10)
+	TArray<class ParticleSystemComponent*>                       ScreenSpaceParticleSystems;                        // 0xd8(0x10)
 };
 
 
@@ -17129,7 +17130,7 @@ public:
 class ServerNetworkedEventsWhitelistDefinition: public NetworkedEventsWhitelistDefinition
 {
 public:
-	TArray<class ValidEvents*>                                   ValidEvents;                                       // 0x28(0x10)
+	TArray<class ScriptStruct*>                                  ValidEvents;                                       // 0x28(0x10)
 };
 
 
@@ -17334,7 +17335,7 @@ public:
 class ShantyRadialContentRule: public RadialContentRule
 {
 public:
-	TArray<class CachedShanties*>                                CachedShanties;                                    // 0xa0(0x10)
+	TArray<class ShantyItemDesc*>                                CachedShanties;                                    // 0xa0(0x10)
 	Struct FText                                                 ShuffleTitle;                                      // 0xb0(0x38)
 	Struct StringAssetReference                                  ShuffleIcon;                                       // 0xe8(0x10)
 	Struct StringAssetReference                                  ShuffleBackground;                                 // 0xf8(0x10)
@@ -17346,7 +17347,7 @@ public:
 class ShantyService: public Object
 {
 public:
-	TArray<class EnsembleActors*>                                EnsembleActors;                                    // 0x30(0x10)
+	TArray<class Ensemble*>                                      EnsembleActors;                                    // 0x30(0x10)
 	Class ShantySettings*                                        ShantySettings;                                    // 0x40(0x8)
 };
 
@@ -17358,7 +17359,7 @@ public:
 	Class OverlapTriggerComponent*                               AudioZone;                                         // 0x3c8(0x8)
 	class                                                        BaseInstrument;                                    // 0x3d0(0x8)
 	Class PrimitiveComponent*                                    Root;                                              // 0x3e8(0x8)
-	TArray<class PlayersInZone*>                                 PlayersInZone;                                     // 0x3f0(0x10)
+	TArray<class Actor*>                                         PlayersInZone;                                     // 0x3f0(0x10)
 	Class MusicalInstrument*                                     Instrument;                                        // 0x400(0x8)
 };
 
@@ -17535,9 +17536,9 @@ public:
 class ShipCreatureManagerCreatureInstanceMotionModifierDataAsset: public DataAsset
 {
 public:
-	TArray<class SpeedModifierCurves*>                           SpeedModifierCurves;                               // 0x28(0x10)
-	TArray<class RollCurves*>                                    RollCurves;                                        // 0x38(0x10)
-	TArray<class OffsetCurves*>                                  OffsetCurves;                                      // 0x48(0x10)
+	TArray<class CurveFloat*>                                    SpeedModifierCurves;                               // 0x28(0x10)
+	TArray<class CurveFloat*>                                    RollCurves;                                        // 0x38(0x10)
+	TArray<class CurveVector*>                                   OffsetCurves;                                      // 0x48(0x10)
 };
 
 
@@ -17598,7 +17599,7 @@ public:
 class ShipFactory: public Object
 {
 public:
-	TArray<class Builders*>                                      Builders;                                          // 0x30(0x10)
+	TArray<class ShipBuilder*>                                   Builders;                                          // 0x30(0x10)
 };
 
 
@@ -17621,7 +17622,7 @@ public:
 	float                                                        MinIntervalBetweenShipHitDamage;                   // 0xe0(0x4)
 	Class ShipHullDamageDataAsset*                               HullDamageDataAsset;                               // 0xe8(0x8)
 	Class CurveFloat*                                            ShipFwdSpeedToFeedbackAmplitude;                   // 0xf0(0x8)
-	TArray<class HitLandForceFeedbackEffects*>                   HitLandForceFeedbackEffects;                       // 0xf8(0x10)
+	TArray<class ForceFeedbackEffect*>                           HitLandForceFeedbackEffects;                       // 0xf8(0x10)
 	Class CurveFloat*                                            FeedbackStrengthToRumbleIndexMapping;              // 0x108(0x8)
 	class                                                        CameraShake;                                       // 0x110(0x8)
 	float                                                        MinIntervalBetweenHitFeedback;                     // 0x118(0x4)
@@ -17645,7 +17646,7 @@ public:
 	int                                                          NetProxyBitIndex;                                  // 0xe4(0x4)
 	Class InteractableLightParameters*                           LightParameters;                                   // 0xe8(0x8)
 	bool                                                         LightIsOn_Server;                                  // 0xf1(0x1)
-	TArray<class Lights*>                                        Lights;                                            // 0x108(0x10)
+	TArray<class PointLightComponent*>                           Lights;                                            // 0x108(0x10)
 };
 
 
@@ -17692,7 +17693,7 @@ public:
 	bool                                                         EmissaryFlagActive;                                // 0x3f8(0x1)
 	Struct StringAssetReference                                  EmmissaryFlagTextureReference;                     // 0x400(0x10)
 	Class MaterialInstanceDynamic*                               EmmissaryFlagMaterial;                             // 0x410(0x8)
-	TArray<class ShipLanterns*>                                  ShipLanterns;                                      // 0x420(0x10)
+	TArray<class ShipInteractableLight*>                         ShipLanterns;                                      // 0x420(0x10)
 	int                                                          LanternBits;                                       // 0x440(0x4)
 };
 
@@ -18221,7 +18222,7 @@ public:
 	float                                                        SkullCloudCloseProximityRotation;                  // 0x578(0x4)
 	Class AIBountySpawner*                                       Spawner;                                           // 0x580(0x8)
 	Class GameplayEventSignal*                                   SkullCloud;                                        // 0x720(0x8)
-	TArray<class Rewards*>                                       Rewards;                                           // 0x728(0x10)
+	TArray<class FortItemSpawnComponent*>                        Rewards;                                           // 0x728(0x10)
 	TArray<Struct AIBountySpawnerWaveLocation>                   WaveSpawnerLocations;                              // 0x738(0x10)
 	float                                                        SkullCloudMaxPitch;                                // 0x748(0x4)
 	Struct EncounterParams                                       SightingEncounterParams;                           // 0x74c(0xc)
@@ -18258,7 +18259,7 @@ class FortDataAsset: public DataAsset
 public:
 	float                                                        MinActivationDistanceFromPlayers;                  // 0x28(0x4)
 	float                                                        MinEngagedDistanceFromPlayers;                     // 0x2c(0x4)
-	TArray<class BountySpawners*>                                BountySpawners;                                    // 0x30(0x10)
+	TArray<class AIBountySpawner*>                               BountySpawners;                                    // 0x30(0x10)
 	Class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x40(0x8)
 	struct FName                                                 NavMeshOverride;                                   // 0x48(0x8)
 	Class AISpawner*                                             AISpawnerWhenFortInactive;                         // 0x50(0x8)
@@ -18302,7 +18303,7 @@ public:
 class SkellyFortListDataAsset: public DataAsset
 {
 public:
-	TArray<class FortsList*>                                     FortsList;                                         // 0x28(0x10)
+	TArray<class SkellyFortDataAsset*>                           FortsList;                                         // 0x28(0x10)
 };
 
 
@@ -18324,9 +18325,9 @@ public:
 class SkellyFortService: public Actor
 {
 public:
-	TArray<class SkellyForts*>                                   SkellyForts;                                       // 0x3d8(0x10)
+	TArray<class SkellyFort*>                                    SkellyForts;                                       // 0x3d8(0x10)
 	Class SkellyFortListDataAsset*                               SkellyFortListDataAsset;                           // 0x518(0x8)
-	TArray<class AllFortsData*>                                  AllFortsData;                                      // 0x520(0x10)
+	TArray<class SkellyFortDataAsset*>                           AllFortsData;                                      // 0x520(0x10)
 	Class FortAIToggler*                                         FortAIToggler;                                     // 0x530(0x8)
 	Struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x5c8(0xa0)
 };
@@ -18431,7 +18432,7 @@ class SpawnProgressTriggerVolume: public PhysicsVolume
 public:
 	bool                                                         ClearProgress;                                     // 0x418(0x1)
 	bool                                                         StartDisabled;                                     // 0x468(0x1)
-	TArray<class LinkedSpawnLocation*>                           LinkedSpawnLocation;                               // 0x470(0x10)
+	TArray<class ProgressSpawnLocation*>                         LinkedSpawnLocation;                               // 0x470(0x10)
 	int                                                          ProgressLevel;                                     // 0x480(0x4)
 };
 
@@ -19108,7 +19109,7 @@ public:
 class StormService: public Actor
 {
 public:
-	TArray<class StormList*>                                     StormList;                                         // 0x418(0x10)
+	TArray<class Actor*>                                         StormList;                                         // 0x418(0x10)
 };
 
 
@@ -19222,8 +19223,8 @@ public:
 	Class WwiseEvent*                                            PlayRitualCompleteAudioEvent;                      // 0x428(0x8)
 	Class WwiseObjectPoolWrapper*                                RitualTableAudioPool;                              // 0x430(0x8)
 	Struct PlayerStat                                            StatToFireOnShantyPuzzleComplete;                  // 0x438(0x4)
-	TArray<class RitualParticleSystems*>                         RitualParticleSystems;                             // 0x460(0x10)
-	TArray<class CompleteParticleSystems*>                       CompleteParticleSystems;                           // 0x470(0x10)
+	TArray<class ParticleSystemComponent*>                       RitualParticleSystems;                             // 0x460(0x10)
+	TArray<class ParticleSystemComponent*>                       CompleteParticleSystems;                           // 0x470(0x10)
 	Class MaterialInstanceDynamic*                               WispsMaterialInstanceDynamic;                      // 0x480(0x8)
 	Class MaterialInstanceDynamic*                               TableMaterialInstanceDynamic;                      // 0x488(0x8)
 	TArray<Byte ActiveTypes>                                     ActiveTypes;                                       // 0x490(0x10)
@@ -19255,7 +19256,7 @@ public:
 	struct FName                                                 HitPositionPropertyName;                           // 0xe4(0x8)
 	struct FName                                                 CollapseStartTimePropertyName;                     // 0xec(0x8)
 	Class PrimitiveComponent*                                    TargetMesh;                                        // 0xf8(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x100(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x100(0x10)
 	Class StatueThreatBase*                                      Statue;                                            // 0x110(0x8)
 };
 
@@ -19766,7 +19767,7 @@ class TaleQuestNumericSwitchStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct QuestVariableInt                                      Condition;                                         // 0x80(0x20)
-	TArray<class Descs*>                                         Descs;                                             // 0xa0(0x10)
+	TArray<class TaleQuestStepDesc*>                             Descs;                                             // 0xa0(0x10)
 };
 
 
@@ -19797,7 +19798,7 @@ public:
 class TaleQuestParallelStepDesc: public TaleQuestStepDesc
 {
 public:
-	TArray<class Descs*>                                         Descs;                                             // 0x80(0x10)
+	TArray<class TaleQuestStepDesc*>                             Descs;                                             // 0x80(0x10)
 };
 
 
@@ -19923,7 +19924,7 @@ public:
 class TaleQuestSequenceStepDesc: public TaleQuestFramedStepDesc
 {
 public:
-	TArray<class Descs*>                                         Descs;                                             // 0xa0(0x10)
+	TArray<class TaleQuestStepDesc*>                             Descs;                                             // 0xa0(0x10)
 };
 
 
@@ -20053,8 +20054,8 @@ class TallTaleService: public Actor
 public:
 	Class TaleRankRequirements*                                  RankRequirementsAsset;                             // 0x3f0(0x8)
 	TArray<Struct Guid>                                          InTaleCrews;                                       // 0x3f8(0x10)
-	TArray<class ActiveLocalPlayerQuestBooks*>                   ActiveLocalPlayerQuestBooks;                       // 0x408(0x10)
-	TArray<class ActiveRemotePlayerQuestBooks*>                  ActiveRemotePlayerQuestBooks;                      // 0x418(0x10)
+	TArray<class QuestBook*>                                     ActiveLocalPlayerQuestBooks;                       // 0x408(0x10)
+	TArray<class QuestBook*>                                     ActiveRemotePlayerQuestBooks;                      // 0x418(0x10)
 };
 
 
@@ -20141,7 +20142,7 @@ public:
 	Class LandmarkReactionPlayer*                                ReactionEventPlayerOpen;                           // 0x440(0x8)
 	Class AnimatedStepsComponent*                                AnimatedSteps;                                     // 0x448(0x8)
 	byte                                                         StepsState;                                        // 0x450(0x1)
-	TArray<class ActorsPlayingInstruments*>                      ActorsPlayingInstruments;                          // 0x458(0x10)
+	TArray<class Actor*>                                         ActorsPlayingInstruments;                          // 0x458(0x10)
 };
 
 
@@ -20465,7 +20466,7 @@ public:
 class TestServerNetworkedEventsWhitelistDefinition: public NetworkedEventsWhitelistDefinition
 {
 public:
-	TArray<class ValidEvents*>                                   ValidEvents;                                       // 0x28(0x10)
+	TArray<class ScriptStruct*>                                  ValidEvents;                                       // 0x28(0x10)
 };
 
 
@@ -20563,7 +20564,7 @@ public:
 class TrackedActorService: public Object
 {
 public:
-	TArray<class ActorsAwaitingRegistration*>                    ActorsAwaitingRegistration;                        // 0x30(0x10)
+	TArray<class Actor*>                                         ActorsAwaitingRegistration;                        // 0x30(0x10)
 };
 
 
@@ -20620,7 +20621,7 @@ public:
 	class                                                        ContestMapType;                                    // 0x178(0x8)
 	class                                                        TornMapType;                                       // 0x180(0x8)
 	class                                                        LocationMapType;                                   // 0x188(0x8)
-	TArray<class TreasureMaps*>                                  TreasureMaps;                                      // 0x190(0x10)
+	TArray<class TreasureMap*>                                   TreasureMaps;                                      // 0x190(0x10)
 	TArray<Struct FName>                                         TreasureMapDestinationIslands;                     // 0x1a0(0x10)
 };
 
@@ -20638,7 +20639,7 @@ public:
 	Class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x428(0x8)
 	Class AISpawner*                                             ActiveSpawner;                                     // 0x430(0x8)
 	Class AIDioramaController*                                   AIDioramaController;                               // 0x438(0x8)
-	TArray<class OverlappingActors*>                             OverlappingActors;                                 // 0x4d0(0x10)
+	TArray<class Actor*>                                         OverlappingActors;                                 // 0x4d0(0x10)
 };
 
 
@@ -20897,7 +20898,7 @@ class VfxStoryResponseManager: public Actor
 {
 public:
 	TArray<Struct VfxStoryStoryRelatedSettings>                  StoryResponses;                                    // 0x3c8(0x10)
-	TArray<class Emitters*>                                      Emitters;                                          // 0x3d8(0x10)
+	TArray<class Actor*>                                         Emitters;                                          // 0x3d8(0x10)
 	float                                                        EmitterValue;                                      // 0x3e8(0x4)
 };
 
@@ -20908,7 +20909,7 @@ class VisualHealthResponseComponent: public ActorComponent
 public:
 	Class ParticleSystemComponent*                               ActiveVfx;                                         // 0xc8(0x8)
 	Class VisualHealthResponseDataAsset*                         VisualHealthResponseData;                          // 0xd0(0x8)
-	TArray<class HealthResponseMaterials*>                       HealthResponseMaterials;                           // 0xd8(0x10)
+	TArray<class MaterialInstanceDynamic*>                       HealthResponseMaterials;                           // 0xd8(0x10)
 	bool                                                         WaitForAllMeshChange;                              // 0x180(0x1)
 };
 
@@ -20917,7 +20918,7 @@ public:
 class VisualHealthResponseDataAsset: public DataAsset
 {
 public:
-	TArray<class GatedByHealthVfxAscendingOrder*>                GatedByHealthVfxAscendingOrder;                    // 0x28(0x10)
+	TArray<class Object*>                                        GatedByHealthVfxAscendingOrder;                    // 0x28(0x10)
 	struct FName                                                 GatedByHealthVfxSocketName;                        // 0x38(0x8)
 	bool                                                         GatedByHealthVfxValidUnderwater;                   // 0x40(0x1)
 	struct FName                                                 HealthPropertyName;                                // 0x44(0x8)
@@ -21533,11 +21534,11 @@ public:
 	Class WwiseEvent*                                            StartWeepingSFX;                                   // 0xf0(0x8)
 	Class WwiseEvent*                                            StopWeepingSFX;                                    // 0xf8(0x8)
 	Class WwiseObjectPoolWrapper*                                WeepingSFXPool;                                    // 0x138(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x140(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x140(0x10)
 	Class MaterialInstanceDynamic*                               DecalMaterial;                                     // 0x150(0x8)
 	byte                                                         State;                                             // 0x158(0x1)
 	struct FName                                                 SupressableEmitterTag;                             // 0x190(0x8)
-	TArray<class ParticleEmitters*>                              ParticleEmitters;                                  // 0x198(0x10)
+	TArray<class ParticleSystemComponent*>                       ParticleEmitters;                                  // 0x198(0x10)
 };
 
 
@@ -21567,7 +21568,7 @@ public:
 	float                                                        LastWetTime;                                       // 0xe8(0x4)
 	float                                                        WaterLevel;                                        // 0xec(0x4)
 	Struct Vector                                                Rep_WetData;                                       // 0xf0(0xc)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x100(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x100(0x10)
 };
 
 
@@ -22131,7 +22132,7 @@ class RenderToTextureMapBase: public TreasureMap
 {
 public:
 	TArray<Struct MapTextureRenderData>                          RenderData;                                        // 0x7c8(0x10)
-	TArray<class MapTextures*>                                   MapTextures;                                       // 0x7d8(0x10)
+	TArray<class Texture*>                                       MapTextures;                                       // 0x7d8(0x10)
 	int                                                          CanvasWidth;                                       // 0x7e8(0x4)
 	int                                                          CanvasHeight;                                      // 0x7ec(0x4)
 };
@@ -22219,7 +22220,7 @@ public:
 	Class NPCOnSurfaceDataAsset*                                 NPCOnSurfaceDataAsset;                             // 0x28(0x8)
 	Class NPCOnSurface*                                          NPC;                                               // 0x30(0x8)
 	Class Actor*                                                 ParentActor;                                       // 0x50(0x8)
-	TArray<class CannonActors*>                                  CannonActors;                                      // 0x58(0x10)
+	TArray<class Cannon*>                                        CannonActors;                                      // 0x58(0x10)
 	Class NPCOnSurfaceVOManager*                                 VOManager;                                         // 0x68(0x8)
 	Class NPCOnSurfaceCannonManager*                             CannonManager;                                     // 0x70(0x8)
 };
@@ -22514,7 +22515,7 @@ public:
 class OpenableItemMaterialAnimationReactionComponent: public OpenableItemReactionComponent
 {
 public:
-	TArray<Struct OpenableItemMaterialAnimationReactionComponentAnimationNameAndS> AnimNameSets;                                      // 0xd8(0x10)
+	TArray<Struct OpenableItemMaterialAnimationReactionComponentAnimationNameAndSfxCueSet> AnimNameSets;                                      // 0xd8(0x10)
 	Class MaterialAnimatorComponent*                             MaterialAnimatorComponent;                         // 0xe8(0x8)
 };
 
@@ -22523,7 +22524,7 @@ public:
 class OpenableItemMeshAnimationReactionComponent: public OpenableItemReactionComponent
 {
 public:
-	TArray<Struct OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCu> AnimNameSets;                                      // 0xd8(0x10)
+	TArray<Struct OpenableItemMeshAnimationReactionComponentAnimationNameAndSfxCueSet> AnimNameSets;                                      // 0xd8(0x10)
 	Class MeshAnimatorComponent*                                 MeshAnimatorComponent;                             // 0xe8(0x8)
 };
 
@@ -22766,7 +22767,7 @@ class EntitlementMapDataAsset: public DataAsset
 {
 public:
 	TArray<Struct EntitlementMapEntry>                           Entitlements;                                      // 0x28(0x10)
-	TArray<class EntitlementAssets*>                             EntitlementAssets;                                 // 0x38(0x10)
+	TArray<class EntitlementMapDataAsset*>                       EntitlementAssets;                                 // 0x38(0x10)
 };
 
 
@@ -22934,7 +22935,7 @@ class MemoryConstrainedMeshInitializer: public Object
 {
 public:
 	Class Object*                                                Mesh;                                              // 0x30(0x8)
-	TArray<class OverrideMaterials*>                             OverrideMaterials;                                 // 0x38(0x10)
+	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x38(0x10)
 	TArray<Struct StringAssetReference>                          FallbackOverrideMaterials;                         // 0x48(0x10)
 	Struct StringAssetReference                                  MeshReference;                                     // 0x58(0x10)
 	bool                                                         MemoryAccountedFor;                                // 0x68(0x1)
@@ -23012,7 +23013,7 @@ class MeshMemoryConstraintFallbackCollection: public DataAsset
 {
 public:
 	int                                                          MaxScoringPerFrame;                                // 0x28(0x4)
-	TArray<class FallbackDataAssets*>                            FallbackDataAssets;                                // 0x30(0x10)
+	TArray<class MeshMemoryConstraintFallbackDataAsset*>         FallbackDataAssets;                                // 0x30(0x10)
 };
 
 
@@ -23031,10 +23032,10 @@ class MeshMemoryConstraintFallbackDataAsset: public DataAsset
 public:
 	struct FName                                                 FallbackName;                                      // 0x28(0x8)
 	class                                                        ConstraintBudget;                                  // 0x30(0x8)
-	TArray<class MeshFallbacks*>                                 MeshFallbacks;                                     // 0x38(0x10)
+	TArray<class MeshMemoryConstraintFallbackCategoryDataAsset*> MeshFallbacks;                                     // 0x38(0x10)
 	TArray<Float ThresholdsMB>                                   ThresholdsMB;                                      // 0x48(0x10)
 	float                                                        ScoringIntervalInSeconds;                          // 0x58(0x4)
-	TArray<class ScoringData*>                                   ScoringData;                                       // 0x60(0x10)
+	TArray<class MeshMemoryConstraintScoringObject*>             ScoringData;                                       // 0x60(0x10)
 };
 
 
@@ -23178,7 +23179,7 @@ public:
 	bool                                                         UseReversibleCurveTime;                            // 0xd1(0x1)
 	TArray<Struct AppearMaterialParams>                          MaterialParams;                                    // 0xd8(0x10)
 	bool                                                         IsVisible;                                         // 0x118(0x1)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x120(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x120(0x10)
 };
 
 
@@ -23347,7 +23348,7 @@ public:
 class SharedObjectReplicationService: public Actor
 {
 public:
-	TArray<class RepArray*>                                      RepArray;                                          // 0x420(0x10)
+	TArray<class Object*>                                        RepArray;                                          // 0x420(0x10)
 };
 
 
@@ -23605,7 +23606,7 @@ public:
 class LogicalOrStatCondition: public StatCondition
 {
 public:
-	TArray<class StatConditions*>                                StatConditions;                                    // 0x28(0x10)
+	TArray<class StatCondition*>                                 StatConditions;                                    // 0x28(0x10)
 };
 
 
@@ -23613,7 +23614,7 @@ public:
 class MatchesAllConditionsStatCondition: public StatCondition
 {
 public:
-	TArray<class Conditions*>                                    Conditions;                                        // 0x28(0x10)
+	TArray<class StatCondition*>                                 Conditions;                                        // 0x28(0x10)
 };
 
 
@@ -24594,7 +24595,7 @@ public:
 class NetworkTriggeredVFXComponent: public ActorComponent
 {
 public:
-	TArray<class NetworkTriggerableVFX*>                         NetworkTriggerableVFX;                             // 0xc8(0x10)
+	TArray<class Object*>                                        NetworkTriggerableVFX;                             // 0xc8(0x10)
 	Class ParticleSystemComponent*                               CurrentlyPlayingParticleSystem;                    // 0xd8(0x8)
 };
 
@@ -24684,7 +24685,7 @@ public:
 class PersistenceIdentifierSettingsAsset: public DataAsset
 {
 public:
-	TArray<class PersistenceMapData*>                            PersistenceMapData;                                // 0x28(0x10)
+	TArray<class PersistenceIdentifierMap*>                      PersistenceMapData;                                // 0x28(0x10)
 	TArray<Struct FText>                                         ScrambledShipNames;                                // 0x38(0x10)
 };
 
@@ -25028,7 +25029,7 @@ public:
 class ShipEntitlementProcessingPolicyDataAsset: public DataAsset
 {
 public:
-	TArray<class ShipEntitlementProcessingPolicies*>             ShipEntitlementProcessingPolicies;                 // 0x28(0x10)
+	TArray<class ShipEntitlementProcessingPolicy*>               ShipEntitlementProcessingPolicies;                 // 0x28(0x10)
 	Class PopUpMessageDesc*                                      ShipEntitlementsGrantedMessage;                    // 0x38(0x8)
 };
 
@@ -25671,7 +25672,7 @@ public:
 class MultipleContextsRadialContext: public RadialContextBase
 {
 public:
-	TArray<class RadialContexts*>                                RadialContexts;                                    // 0x28(0x10)
+	TArray<class RadialContextBase*>                             RadialContexts;                                    // 0x28(0x10)
 };
 
 
@@ -25867,7 +25868,7 @@ public:
 
 
 // Size 0x0
-class CompositeQuickSwitchWeaponSecondaryInteractReleasedNotification: public NotificationInputId
+class CompositeQuickSwitchWeaponSecondaryInteractReleasedNotificationInputId: public NotificationInputId
 {
 public:
 };
@@ -26012,7 +26013,7 @@ public:
 	TArray<Class EntitlementsToCheckFor>                         EntitlementsToCheckFor;                            // 0x3d8(0x10)
 	TArray<Class WieldableItemsToCheckFor>                       WieldableItemsToCheckFor;                          // 0x3e8(0x10)
 	class                                                        RequiredInputId;                                   // 0x3f8(0x8)
-	TArray<class PlayersMeetingCriteria*>                        PlayersMeetingCriteria;                            // 0x410(0x10)
+	TArray<class Controller*>                                    PlayersMeetingCriteria;                            // 0x410(0x10)
 };
 
 
@@ -26717,7 +26718,7 @@ public:
 	float                                                        SuperheatedWaterCoolingRatePerSecond;              // 0x52c(0x4)
 	float                                                        TimeToIgnoreCoolingDueToSuperheating;              // 0x530(0x4)
 	Struct Status                                                SuperheatedWaterStatusToApply;                     // 0x538(0x18)
-	TArray<class OverlappingActors*>                             OverlappingActors;                                 // 0x578(0x10)
+	TArray<class Actor*>                                         OverlappingActors;                                 // 0x578(0x10)
 };
 
 
@@ -26816,7 +26817,7 @@ public:
 	bool                                                         EnableRipplesFromOverlappingActors;                // 0x3cc(0x1)
 	TArray<Struct Vector>                                        RippleLocations;                                   // 0x3d0(0x10)
 	TArray<Struct Vector>                                        RippleGenerators;                                  // 0x3e0(0x10)
-	TArray<class OverlappingActors*>                             OverlappingActors;                                 // 0x3f0(0x10)
+	TArray<class Actor*>                                         OverlappingActors;                                 // 0x3f0(0x10)
 	float                                                        RippleFrequency;                                   // 0x400(0x4)
 	float                                                        CurrentAmount;                                     // 0x404(0x4)
 	float                                                        TargetAmount;                                      // 0x408(0x4)
@@ -27076,12 +27077,12 @@ public:
 	Struct StraightenNudgedTrinketActionRuleParams               StraightenNudgedTrinketActionRuleParams;           // 0x3e8(0x40)
 	TArray<Class TrinketCategoriesToDisplayInUI>                 TrinketCategoriesToDisplayInUI;                    // 0x428(0x10)
 	TArray<Class ComponentsAllowedForTrinketVisuals>             ComponentsAllowedForTrinketVisuals;                // 0x438(0x10)
-	TArray<class NudgePolicies*>                                 NudgePolicies;                                     // 0x448(0x10)
+	TArray<class NudgePolicy*>                                   NudgePolicies;                                     // 0x448(0x10)
 	Class TrinketLoadoutFinderPolicyBase*                        TrinketLoadoutFinderPolicy;                        // 0x458(0x8)
 	TArray<Bool CachedCanTrinketEverBeNudged>                    CachedCanTrinketEverBeNudged;                      // 0x460(0x10)
 	TArray<Struct MountpointClientState>                         MountpointClientStates;                            // 0x470(0x10)
 	TArray<Struct TrinketNudgeProgress>                          NudgingTrinketProgress;                            // 0x480(0x10)
-	TArray<class TrinketReplacementMeshes*>                      TrinketReplacementMeshes;                          // 0x550(0x10)
+	TArray<class StaticMeshComponent*>                           TrinketReplacementMeshes;                          // 0x550(0x10)
 };
 
 
@@ -27377,8 +27378,8 @@ public:
 class Cluster: public Actor
 {
 public:
-	TArray<class ClusterStaticMeshes*>                           ClusterStaticMeshes;                               // 0x3c8(0x10)
-	TArray<class AllComponents*>                                 AllComponents;                                     // 0x3d8(0x10)
+	TArray<class ClusterStaticMeshComponent*>                    ClusterStaticMeshes;                               // 0x3c8(0x10)
+	TArray<class StaticMeshComponent*>                           AllComponents;                                     // 0x3d8(0x10)
 	bool                                                         DoesContainDecorator;                              // 0x3e8(0x1)
 };
 
@@ -27460,7 +27461,7 @@ public:
 class FlotsamItemSpawnComponent: public ItemSpawnComponent
 {
 public:
-	TArray<class PreLoadedClasses*>                              PreLoadedClasses;                                  // 0x528(0x10)
+	TArray<class Object*>                                        PreLoadedClasses;                                  // 0x528(0x10)
 };
 
 
@@ -27619,7 +27620,7 @@ public:
 class AmmoEffectsComponent: public MaterialManipulationComponent
 {
 public:
-	TArray<class AmmoEffects*>                                   AmmoEffects;                                       // 0x110(0x10)
+	TArray<class AmmoBaseEffect*>                                AmmoEffects;                                       // 0x110(0x10)
 	Struct AmmoEffectState                                       AmmoEffectState;                                   // 0x170(0x8)
 };
 
@@ -27676,7 +27677,7 @@ public:
 class CanvasLODService: public Object
 {
 public:
-	TArray<class ResourceManagedCanvases*>                       ResourceManagedCanvases;                           // 0x38(0x10)
+	TArray<class Actor*>                                         ResourceManagedCanvases;                           // 0x38(0x10)
 };
 
 
@@ -27695,7 +27696,7 @@ public:
 	int                                                          CanvasHeight;                                      // 0xdc(0x4)
 	struct FName                                                 PrimaryMaterialTextureParameterName;               // 0xe0(0x8)
 	Class MaybeCompressedCanvasRenderTarget2D*                   PrimaryRenderTarget;                               // 0xf8(0x8)
-	TArray<class AdditionalRenderTargets*>                       AdditionalRenderTargets;                           // 0x100(0x10)
+	TArray<class MaybeCompressedCanvasRenderTarget2D*>           AdditionalRenderTargets;                           // 0x100(0x10)
 };
 
 
@@ -27910,7 +27911,7 @@ public:
 class RewardDefinitionAssetList: public DataAsset
 {
 public:
-	TArray<class RewardDefinitionAssets*>                        RewardDefinitionAssets;                            // 0x28(0x10)
+	TArray<class RewardDefinitionAsset*>                         RewardDefinitionAssets;                            // 0x28(0x10)
 	Class WeightedRewardTableAsset*                              WeightRewardTable;                                 // 0x38(0x8)
 };
 
@@ -27940,7 +27941,7 @@ public:
 class RewardService: public Object
 {
 public:
-	TArray<class RewardDefinitionAssets*>                        RewardDefinitionAssets;                            // 0x30(0x10)
+	TArray<class RewardDefinitionAsset*>                         RewardDefinitionAssets;                            // 0x30(0x10)
 };
 
 
@@ -28194,7 +28195,7 @@ class LandmarkReactionPlayer: public Actor
 {
 public:
 	TArray<Struct LandmarkReactionKeyFrame>                      OrderedReactions;                                  // 0x3d0(0x10)
-	TArray<class ActiveParticleSystems*>                         ActiveParticleSystems;                             // 0x438(0x10)
+	TArray<class ParticleSystemComponent*>                       ActiveParticleSystems;                             // 0x438(0x10)
 };
 
 
@@ -28660,7 +28661,7 @@ public:
 	Struct FString                                               Name;                                              // 0x28(0x10)
 	bool                                                         IsPool;                                            // 0x38(0x1)
 	float                                                        TimeDelayBetweenText;                              // 0x40(0x4)
-	TArray<class Points*>                                        Points;                                            // 0x48(0x10)
+	TArray<class SceneDialoguePointWithConditional*>             Points;                                            // 0x48(0x10)
 };
 
 
@@ -28687,7 +28688,7 @@ class SceneDialogueData: public Object
 public:
 	TArray<Struct FName>                                         ActorNames;                                        // 0x28(0x10)
 	byte                                                         ChatType;                                          // 0x38(0x1)
-	TArray<class TextSections*>                                  TextSections;                                      // 0x40(0x10)
+	TArray<class SceneDialogueSection*>                          TextSections;                                      // 0x40(0x10)
 	bool                                                         ChainedDialogue;                                   // 0x50(0x1)
 	Struct FString                                               SourceText;                                        // 0x58(0x10)
 };
@@ -28832,7 +28833,7 @@ public:
 class SceneDialogueCoordinator: public Actor
 {
 public:
-	TArray<class LinkedActors*>                                  LinkedActors;                                      // 0x3d8(0x10)
+	TArray<class Actor*>                                         LinkedActors;                                      // 0x3d8(0x10)
 	Class SceneDialogueData*                                     DialogueData;                                      // 0x3e8(0x8)
 	TArray<Struct FText>                                         LocalisableNames;                                  // 0x3f0(0x10)
 	float                                                        DefaultMessageDistance;                            // 0x400(0x4)
@@ -29345,7 +29346,7 @@ public:
 	TArray<Struct StorageContainerContentTypeSelectorEntry>      ContentSpawners;                                   // 0x58(0x10)
 	Class StorageContainerContentSpawner*                        DebugSpawner;                                      // 0x68(0x8)
 	Class StorageContainerContentTypeSelectorEntries*            SelectorEntries;                                   // 0x70(0x8)
-	TArray<class SpecialEntries*>                                SpecialEntries;                                    // 0x78(0x10)
+	TArray<class StorageContainerSpecialTypeSelectorEntries*>    SpecialEntries;                                    // 0x78(0x10)
 	Struct SpawnerTypeMappings                                   SpawnerTypeMappings;                               // 0x88(0x10)
 };
 
@@ -29436,7 +29437,7 @@ public:
 class VaultTableMaterialSetDataAsset: public DataAsset
 {
 public:
-	TArray<class SolutionHintMaterials*>                         SolutionHintMaterials;                             // 0x28(0x10)
+	TArray<class MaterialInstance*>                              SolutionHintMaterials;                             // 0x28(0x10)
 };
 
 
@@ -29495,11 +29496,11 @@ public:
 	TArray<Struct LockState>                                     LockStates;                                        // 0xf8(0x10)
 	class                                                        KeyUsedToUnlock;                                   // 0x138(0x8)
 	Class SceneComponent*                                        LockKeyMeshAttachParent;                           // 0x140(0x8)
-	TArray<class LockKeyMeshComponents*>                         LockKeyMeshComponents;                             // 0x148(0x10)
+	TArray<class StaticMeshMemoryConstraintComponent*>           LockKeyMeshComponents;                             // 0x148(0x10)
 	class                                                        UnlockInputId;                                     // 0x158(0x8)
 	byte                                                         TooltipDisplayPriority;                            // 0x160(0x1)
 	Class ActionRulesComponent*                                  ActionRules;                                       // 0x1e8(0x8)
-	TArray<class ConditionalLockStats*>                          ConditionalLockStats;                              // 0x1f0(0x10)
+	TArray<class UnlockLockConditionalStatTrigger*>              ConditionalLockStats;                              // 0x1f0(0x10)
 	Struct FText                                                 UnlockText;                                        // 0x200(0x38)
 	Struct FText                                                 NeedKeyToUnlockText;                               // 0x238(0x38)
 	Struct FText                                                 VaultUnavailableUnlockText;                        // 0x270(0x38)
@@ -29652,7 +29653,7 @@ public:
 	float                                                        FadeRate;                                          // 0x628(0x4)
 	bool                                                         CanTake;                                           // 0x62c(0x1)
 	Class LayerInContainerComponent*                             LayerBlockingTakingThisLayer;                      // 0x630(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x638(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x638(0x10)
 };
 
 
@@ -29673,7 +29674,7 @@ public:
 	Class QuestBookPagesInContainerDataAsset*                    PagesInContainerDataAsset;                         // 0x760(0x8)
 	TArray<Class CurrentLayerPriorityOrder>                      CurrentLayerPriorityOrder;                         // 0x768(0x10)
 	byte                                                         Material;                                          // 0x778(0x1)
-	TArray<class ItemInfosToStore*>                              ItemInfosToStore;                                  // 0x788(0x10)
+	TArray<class ItemInfo*>                                      ItemInfosToStore;                                  // 0x788(0x10)
 	Class CollectorsChestShipOwnershipPropagationComponent*      CollectorsChestShipOwnershipPropagationComponent;  // 0x798(0x8)
 };
 
@@ -29760,7 +29761,7 @@ class CollectorsChestWieldableItem: public LargeSkeletalMeshWieldableItem
 {
 public:
 	Class OpenableItemComponent*                                 OpenableItemComponent;                             // 0x790(0x8)
-	TArray<class Slots*>                                         Slots;                                             // 0x798(0x10)
+	TArray<class CollectorsChestItemSlotInteractable*>           Slots;                                             // 0x798(0x10)
 };
 
 
@@ -29769,7 +29770,7 @@ class CollectorsChestStaticWieldableItem: public NonDisplaceableLargeStaticMeshW
 {
 public:
 	Class OpenableItemComponent*                                 OpenableItemComponent;                             // 0x790(0x8)
-	TArray<class Slots*>                                         Slots;                                             // 0x798(0x10)
+	TArray<class CollectorsChestItemSlotInteractable*>           Slots;                                             // 0x798(0x10)
 };
 
 
@@ -29784,7 +29785,7 @@ public:
 class CollectorsChestSharedParamsDataAsset: public DataAsset
 {
 public:
-	TArray<class SlotDefinitions*>                               SlotDefinitions;                                   // 0x28(0x10)
+	TArray<class CollectorsChestItemSlotDefinitionDataAsset*>    SlotDefinitions;                                   // 0x28(0x10)
 };
 
 
@@ -29921,7 +29922,7 @@ class WorldMarkerManagerComponent: public ActorComponent
 {
 public:
 	TArray<Struct MarkerVariantDesc>                             MarkerVariants;                                    // 0xd0(0x10)
-	TArray<class MarkerDataObjects*>                             MarkerDataObjects;                                 // 0xe0(0x10)
+	TArray<class BaseWorldMarker*>                               MarkerDataObjects;                                 // 0xe0(0x10)
 	TArray<Struct ClientMarkerRepresentation>                    ClientMarkerRepresentations;                       // 0xf0(0x10)
 };
 
@@ -30058,7 +30059,7 @@ public:
 	float                                                        VFXEmptyGlow;                                      // 0x158(0x4)
 	float                                                        VFXPartialGlow;                                    // 0x15c(0x4)
 	float                                                        VFXFullGlow;                                       // 0x160(0x4)
-	TArray<class DynamicMaterialMap*>                            DynamicMaterialMap;                                // 0x180(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterialMap;                                // 0x180(0x10)
 	Class Controller*                                            LocalController;                                   // 0x190(0x8)
 	Class BootyStorageSettings*                                  BootyStorageSettings;                              // 0x198(0x8)
 	Class ActionRulesComponent*                                  OwnerActionRulesComponent;                         // 0x240(0x8)
@@ -30131,7 +30132,7 @@ public:
 	Struct Status                                                IgnitedStatus;                                     // 0x648(0x18)
 	class                                                        WoodCategory;                                      // 0x660(0x8)
 	Class MaterialInstanceDynamic*                               BuiltMeshCharrableMaterial;                        // 0x678(0x8)
-	TArray<class OverlappingActors*>                             OverlappingActors;                                 // 0x680(0x10)
+	TArray<class Actor*>                                         OverlappingActors;                                 // 0x680(0x10)
 };
 
 
@@ -30312,7 +30313,7 @@ public:
 class CutsceneResponseComponent: public ActorComponent
 {
 public:
-	TArray<class Sheets*>                                        Sheets;                                            // 0xc8(0x10)
+	TArray<class CutsceneResponseSheet*>                         Sheets;                                            // 0xc8(0x10)
 };
 
 
@@ -30346,7 +30347,7 @@ public:
 class CutsceneService: public Object
 {
 public:
-	TArray<class RegisteredCutsceneActors*>                      RegisteredCutsceneActors;                          // 0x30(0x10)
+	TArray<class Actor*>                                         RegisteredCutsceneActors;                          // 0x30(0x10)
 };
 
 
@@ -30390,7 +30391,7 @@ public:
 	Class Pawn*                                                  InteractingPlayerPawn;                             // 0x490(0x8)
 	bool                                                         IsLooping;                                         // 0x498(0x1)
 	Class LevelSequence*                                         LevelSequenceToPlay;                               // 0x4a0(0x8)
-	TArray<class LevelSequencesToPlay*>                          LevelSequencesToPlay;                              // 0x4a8(0x10)
+	TArray<class LevelSequence*>                                 LevelSequencesToPlay;                              // 0x4a8(0x10)
 };
 
 
@@ -30421,7 +30422,7 @@ public:
 class NamedPointsCollectionListDataAsset: public DataAsset
 {
 public:
-	TArray<class SubAssets*>                                     SubAssets;                                         // 0x28(0x10)
+	TArray<class NamedPointsCollectionDataAsset*>                SubAssets;                                         // 0x28(0x10)
 };
 
 
@@ -30499,7 +30500,7 @@ public:
 class PhasedClusterRoot: public Actor
 {
 public:
-	TArray<class Pawns*>                                         Pawns;                                             // 0x3c8(0x10)
+	TArray<class Pawn*>                                          Pawns;                                             // 0x3c8(0x10)
 };
 
 
@@ -30641,7 +30642,7 @@ public:
 	Class TaleQuestParallelForeachStepDesc*                      Desc;                                              // 0x98(0x8)
 	int                                                          Count;                                             // 0xa0(0x4)
 	TArray<Interface Steps>                                      Steps;                                             // 0xa8(0x10)
-	TArray<class Frames*>                                        Frames;                                            // 0xb8(0x10)
+	TArray<class IteratorFrame*>                                 Frames;                                            // 0xb8(0x10)
 };
 
 
@@ -30657,7 +30658,7 @@ class TaleQuestDescAsset: public QuestDescDataAsset
 {
 public:
 	Class TaleQuestStepDesc*                                     Root;                                              // 0x30(0x8)
-	TArray<class Linkage*>                                       Linkage;                                           // 0x38(0x10)
+	TArray<class UserDefinedStruct*>                             Linkage;                                           // 0x38(0x10)
 	TArray<Struct TaleQuestToggledDefinition>                    ToggledDefinitions;                                // 0x48(0x10)
 	class                                                        Definition;                                        // 0x58(0x8)
 	class                                                        DevDefinition;                                     // 0x60(0x8)
@@ -31039,7 +31040,7 @@ public:
 
 
 // Size 0x8
-class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentCom: public ActorComponent
+class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent: public ActorComponent
 {
 public:
 };
@@ -31057,7 +31058,7 @@ class HitRegSnapshotService: public Actor
 {
 public:
 	bool                                                         SnapshotsEnabled;                                  // 0x3d8(0x1)
-	TArray<class ActiveSnapshotComponents*>                      ActiveSnapshotComponents;                          // 0x3e0(0x10)
+	TArray<class HitRegSnapshotComponent*>                       ActiveSnapshotComponents;                          // 0x3e0(0x10)
 	bool                                                         PlayerHitScanEnabled;                              // 0x3f0(0x1)
 };
 
@@ -31254,7 +31255,7 @@ public:
 	float                                                        MinBeamScale;                                      // 0x414(0x4)
 	float                                                        MaxBeamScale;                                      // 0x418(0x4)
 	float                                                        MarkerPositionBlendSpeed;                          // 0x41c(0x4)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x420(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x420(0x10)
 	TArray<Struct RomeBeaconVelocityMap>                         VelocityMap;                                       // 0x430(0x10)
 	float                                                        FallbackVelocity;                                  // 0x440(0x4)
 	float                                                        MaxOffset;                                         // 0x444(0x4)
@@ -31331,7 +31332,7 @@ public:
 class EmblemDefinitionAssetList: public DataAsset
 {
 public:
-	TArray<class EmblemDefinitionAssets*>                        EmblemDefinitionAssets;                            // 0x28(0x10)
+	TArray<class EmblemDefinitionDataAsset*>                     EmblemDefinitionAssets;                            // 0x28(0x10)
 };
 
 
@@ -31404,7 +31405,7 @@ class MechanismActionComponent: public ActorComponent
 public:
 	byte                                                         ActionType;                                        // 0xd8(0x1)
 	byte                                                         ActivationMode;                                    // 0xd9(0x1)
-	TArray<class TriggerActors*>                                 TriggerActors;                                     // 0xe0(0x10)
+	TArray<class Actor*>                                         TriggerActors;                                     // 0xe0(0x10)
 	byte                                                         ActionState;                                       // 0x150(0x1)
 };
 
@@ -31487,9 +31488,9 @@ public:
 class MechanismAnimation: public DataAsset
 {
 public:
-	TArray<class AnimationStartedEvents*>                        AnimationStartedEvents;                            // 0x28(0x10)
-	TArray<class Events*>                                        Events;                                            // 0x38(0x10)
-	TArray<class AnimationStoppedEvents*>                        AnimationStoppedEvents;                            // 0x48(0x10)
+	TArray<class MechanismOneShotEvent*>                         AnimationStartedEvents;                            // 0x28(0x10)
+	TArray<class MechanismAnimationEvent*>                       Events;                                            // 0x38(0x10)
+	TArray<class MechanismOneShotEvent*>                         AnimationStoppedEvents;                            // 0x48(0x10)
 };
 
 
@@ -31606,7 +31607,7 @@ public:
 	float                                                        SphereRadius;                                      // 0x5e4(0x4)
 	Struct Vector                                                BoxExtent;                                         // 0x5e8(0xc)
 	TArray<Struct AllowedInteractableTypes>                      AllowedInteractableTypes;                          // 0x5f8(0x10)
-	TArray<class ComplexCollisionShapes*>                        ComplexCollisionShapes;                            // 0x678(0x10)
+	TArray<class PrimitiveComponent*>                            ComplexCollisionShapes;                            // 0x678(0x10)
 };
 
 
@@ -31646,7 +31647,7 @@ public:
 	byte                                                         Axis;                                              // 0x620(0x1)
 	float                                                        Damage;                                            // 0x624(0x4)
 	byte                                                         DamageReason;                                      // 0x628(0x1)
-	TArray<class CordChildren*>                                  CordChildren;                                      // 0x630(0x10)
+	TArray<class SwingMechanismCordRenderComponent*>             CordChildren;                                      // 0x630(0x10)
 	TArray<Struct SwingMechanismMaterialAnimationContext>        MaterialAnimations;                                // 0x640(0x10)
 };
 
@@ -31776,7 +31777,7 @@ public:
 class FlamethrowerCoordinatorComponent: public ActorComponent
 {
 public:
-	TArray<class Flamethrowers*>                                 Flamethrowers;                                     // 0xd0(0x10)
+	TArray<class FlamethrowerComponent*>                         Flamethrowers;                                     // 0xd0(0x10)
 };
 
 
@@ -31834,9 +31835,9 @@ public:
 class MechanismGroup: public Actor
 {
 public:
-	TArray<class Mechanisms*>                                    Mechanisms;                                        // 0x3d8(0x10)
+	TArray<class Mechanism*>                                     Mechanisms;                                        // 0x3d8(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      MechanismsToSelect;                                // 0x3e8(0x30)
-	TArray<class SelectedMechanisms*>                            SelectedMechanisms;                                // 0x428(0x10)
+	TArray<class Mechanism*>                                     SelectedMechanisms;                                // 0x428(0x10)
 };
 
 
@@ -31844,12 +31845,12 @@ public:
 class IslandMechanismSelectionComponent: public ActorComponent
 {
 public:
-	TArray<class MechanismGroups*>                               MechanismGroups;                                   // 0xc8(0x10)
+	TArray<class MechanismGroup*>                                MechanismGroups;                                   // 0xc8(0x10)
 	TArray<Struct FeatureToggledMechanismGroups>                 FeatureToggledMechanismGroups;                     // 0xd8(0x10)
 	float                                                        CoolDownDuration;                                  // 0xe8(0x4)
 	bool                                                         EnableRandomSelection;                             // 0xec(0x1)
 	Struct WeightedProbabilityRangeOfRanges                      MechanismGroupsToSelect;                           // 0xf0(0x30)
-	TArray<class SelectedMechanismGroups*>                       SelectedMechanismGroups;                           // 0x120(0x10)
+	TArray<class MechanismGroup*>                                SelectedMechanismGroups;                           // 0x120(0x10)
 };
 
 
@@ -32235,7 +32236,7 @@ public:
 class DynamicOnlyMechanismTriggerComponent: public MechanismTriggerComponent
 {
 public:
-	TArray<class MechanismActors*>                               MechanismActors;                                   // 0x150(0x10)
+	TArray<class Actor*>                                         MechanismActors;                                   // 0x150(0x10)
 };
 
 
@@ -32252,7 +32253,7 @@ class SignalMechanismTargetComponent: public MechanismTriggerComponent
 public:
 	Struct Vector                                                TargetLocationRelativeToOwner;                     // 0x158(0xc)
 	bool                                                         StopSignalWhenOutsideRange;                        // 0x164(0x1)
-	TArray<class NumActiveInstigators*>                          NumActiveInstigators;                              // 0x168(0x10)
+	TArray<class Actor*>                                         NumActiveInstigators;                              // 0x168(0x10)
 };
 
 
@@ -32332,7 +32333,7 @@ public:
 	float                                                        SignalSpreadDegrees;                               // 0x3e0(0x4)
 	float                                                        FocusDurationBeforeSignalling;                     // 0x3e4(0x4)
 	bool                                                         RequiresOcclusionValidation;                       // 0x3e8(0x1)
-	TArray<class Targets*>                                       Targets;                                           // 0x3f0(0x10)
+	TArray<class Actor*>                                         Targets;                                           // 0x3f0(0x10)
 };
 
 
@@ -32370,7 +32371,7 @@ public:
 	Class CurveFloat*                                            FullToEmptyGlowCurve;                              // 0xc8(0x8)
 	Class CurveFloat*                                            EmptyToFullGlowCurve;                              // 0xd0(0x8)
 	struct FName                                                 ScalarParamOverrideName;                           // 0xd8(0x8)
-	TArray<class OverriddenMaterials*>                           OverriddenMaterials;                               // 0xe0(0x10)
+	TArray<class MaterialInstanceDynamic*>                       OverriddenMaterials;                               // 0xe0(0x10)
 };
 
 
@@ -32418,7 +32419,7 @@ class WaterPuzzleAlterationMechanismAudioParams: public DataAsset
 public:
 	Class WwiseObjectPoolWrapper*                                AlterationMechanismPool;                           // 0x28(0x8)
 	Class WwiseEvent*                                            AlterationMechanismActivateEvent;                  // 0x30(0x8)
-	TArray<class AlterationMechanismDeactivateEvents*>           AlterationMechanismDeactivateEvents;               // 0x38(0x10)
+	TArray<class WwiseEvent*>                                    AlterationMechanismDeactivateEvents;               // 0x38(0x10)
 	struct FName                                                 MechanismSubmergedSwitchGroup;                     // 0x48(0x8)
 	struct FName                                                 MechanismSubmergedSwitchSubmerged;                 // 0x50(0x8)
 	struct FName                                                 MechanismSubmergedSwitchNotSubmerged;              // 0x58(0x8)
@@ -32435,14 +32436,14 @@ class WaveBasedMechanismVisualController: public Actor
 {
 public:
 	Class MechanismActionComponent*                              MechanismActionComponent;                          // 0x3c8(0x8)
-	TArray<class WaveVisualActors*>                              WaveVisualActors;                                  // 0x3d0(0x10)
+	TArray<class Actor*>                                         WaveVisualActors;                                  // 0x3d0(0x10)
 	struct FName                                                 StaticMeshDynamicMaterialTag;                      // 0x3e0(0x8)
 	Class CurveFloat*                                            ScalarParameterCurve;                              // 0x3e8(0x8)
 	struct FName                                                 MaterialScalarParameterName;                       // 0x3f0(0x8)
 	float                                                        NewWaveDelay;                                      // 0x3f8(0x4)
 	int                                                          WaveIndex;                                         // 0x3fc(0x4)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x410(0x10)
-	TArray<class MaterialsToTransition*>                         MaterialsToTransition;                             // 0x430(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x410(0x10)
+	TArray<class MaterialInstanceDynamic*>                       MaterialsToTransition;                             // 0x430(0x10)
 };
 
 
@@ -32454,7 +32455,7 @@ public:
 	Class LocatorContainer*                                      BattleElevatorLocators;                            // 0xb00(0x8)
 	Class NamedPointsComponent*                                  NamedPointsComponent;                              // 0xb08(0x8)
 	Class DamageableComponent*                                   DamageableComponent;                               // 0xb10(0x8)
-	TArray<class ChainPivotComponents*>                          ChainPivotComponents;                              // 0xb18(0x10)
+	TArray<class SceneComponent*>                                ChainPivotComponents;                              // 0xb18(0x10)
 	TArray<Struct Vector>                                        ChainAnchorLocations;                              // 0xb28(0x10)
 	float                                                        OverrideTransitionPeriod;                          // 0xb50(0x4)
 	struct FName                                                 ExplosionNamedPointsGroupName;                     // 0xbe4(0x8)
@@ -32530,8 +32531,8 @@ class EventRoom: public Actor
 {
 public:
 	bool                                                         ClearSpawnProgressOnRoomActivate;                  // 0x3d0(0x1)
-	TArray<class EntranceMechanisms*>                            EntranceMechanisms;                                // 0x3d8(0x10)
-	TArray<class ExitMechanisms*>                                ExitMechanisms;                                    // 0x3e8(0x10)
+	TArray<class Actor*>                                         EntranceMechanisms;                                // 0x3d8(0x10)
+	TArray<class Actor*>                                         ExitMechanisms;                                    // 0x3e8(0x10)
 	Class BoxComponent*                                          RoomAreaComponent;                                 // 0x418(0x8)
 };
 
@@ -32547,7 +32548,7 @@ public:
 class BattleElevatorEventRoom: public NetworkClusterEventRoom
 {
 public:
-	TArray<class ActorsWithAIRegionsToAssignAIToCannons*>        ActorsWithAIRegionsToAssignAIToCannons;            // 0x500(0x10)
+	TArray<class Actor*>                                         ActorsWithAIRegionsToAssignAIToCannons;            // 0x500(0x10)
 	Class BattleElevator*                                        TargetBattleElevatorActor;                         // 0x510(0x8)
 	struct FName                                                 InitialFightPhase;                                 // 0x548(0x8)
 	Class BattleElevatorEventRoomPhasesDataAsset*                PhasesAsset;                                       // 0x550(0x8)
@@ -32590,7 +32591,7 @@ public:
 class NameplateService: public Object
 {
 public:
-	TArray<class RegisteredNameplates*>                          RegisteredNameplates;                              // 0x30(0x10)
+	TArray<class NameplateComponent*>                            RegisteredNameplates;                              // 0x30(0x10)
 };
 
 
@@ -32671,7 +32672,7 @@ public:
 	Class CalmWaterComponent*                                    CalmZone;                                          // 0x3f0(0x8)
 	Struct FText                                                 LocalisedName;                                     // 0x3f8(0x38)
 	byte                                                         TrackedActorType;                                  // 0x430(0x1)
-	float                                                        DistanceThresholdToConsiderPlayerAsBeingNearShipwreckForTelemet; // 0x434(0x4)
+	float                                                        DistanceThresholdToConsiderPlayerAsBeingNearShipwreckForTelemetry; // 0x434(0x4)
 	float                                                        GameEventExclusionRadius;                          // 0x438(0x4)
 	float                                                        ServerMigrationPointOfInterestDistance;            // 0x43c(0x4)
 	class                                                        ProxyClass;                                        // 0x440(0x8)
@@ -32813,7 +32814,7 @@ public:
 class AvailableFishForSpawning: public DataAsset
 {
 public:
-	TArray<class AvailableFishToSelectForSpawning*>              AvailableFishToSelectForSpawning;                  // 0x28(0x10)
+	TArray<class FishSpawnParamsDataAsset*>                      AvailableFishToSelectForSpawning;                  // 0x28(0x10)
 };
 
 
@@ -32931,7 +32932,7 @@ public:
 	Class BoxComponent*                                          CollisionComponent;                                // 0x3e8(0x8)
 	Class FishingFloatSetupDataAsset*                            FishingFloatSetupDataAsset;                        // 0x3f0(0x8)
 	Class StaticMeshComponent*                                   FishingFloatMesh;                                  // 0x3f8(0x8)
-	TArray<class FloatMaterials*>                                FloatMaterials;                                    // 0x400(0x10)
+	TArray<class MaterialInstanceDynamic*>                       FloatMaterials;                                    // 0x400(0x10)
 };
 
 
@@ -33278,7 +33279,7 @@ class Ensemble: public Actor
 {
 public:
 	Class ShantyItemDesc*                                        ShantyDesc;                                        // 0x3f8(0x8)
-	TArray<class Instruments*>                                   Instruments;                                       // 0x400(0x10)
+	TArray<class Actor*>                                         Instruments;                                       // 0x400(0x10)
 	TArray<Struct InstrumentHandlePairedWithActor>               OldInstruments;                                    // 0x410(0x10)
 	TArray<Struct InstrumentHandlePairedWithActor>               NewInstruments;                                    // 0x420(0x10)
 	Struct Vector                                                OverrideLeadPosition;                              // 0x430(0xc)
@@ -33392,7 +33393,7 @@ public:
 class RegionMapSetAsset: public DataAsset
 {
 public:
-	TArray<class MapRegions*>                                    MapRegions;                                        // 0x28(0x10)
+	TArray<class RegionMapDataAsset*>                            MapRegions;                                        // 0x28(0x10)
 };
 
 
@@ -33767,7 +33768,7 @@ public:
 	TArray<Struct Vector>                                        TargetVisibility;                                  // 0x868(0x10)
 	float                                                        MaskRotation;                                      // 0x89c(0x4)
 	int                                                          NumPieces;                                         // 0x8a0(0x4)
-	TArray<class MaskTextures*>                                  MaskTextures;                                      // 0x8a8(0x10)
+	TArray<class Texture*>                                       MaskTextures;                                      // 0x8a8(0x10)
 };
 
 
@@ -33873,7 +33874,7 @@ public:
 	Class SceneComponent*                                        Root;                                              // 0x3c8(0x8)
 	Class ContendedResourceComponent*                            ContendedResourceComponent;                        // 0x3d0(0x8)
 	class                                                        ActivePortalClass;                                 // 0x3d8(0x8)
-	TArray<class AssociatedSpawnLocations*>                      AssociatedSpawnLocations;                          // 0x3e0(0x10)
+	TArray<class TunnelOfTheDamnedPortalShipSpawnLocation*>      AssociatedSpawnLocations;                          // 0x3e0(0x10)
 };
 
 
@@ -33988,7 +33989,7 @@ class InvasionDepartureTunnelSceneryTileInstance: public Actor
 public:
 	TArray<Struct TunnelCreatureDiorama>                         CreatureDioromas;                                  // 0x3c8(0x10)
 	int                                                          MaxCreatureDioromas;                               // 0x3d8(0x4)
-	TArray<class SpawnedCreatureDioramas*>                       SpawnedCreatureDioramas;                           // 0x3e0(0x10)
+	TArray<class Actor*>                                         SpawnedCreatureDioramas;                           // 0x3e0(0x10)
 	Class SceneComponent*                                        Root;                                              // 0x3f0(0x8)
 };
 
@@ -34003,7 +34004,7 @@ public:
 	bool                                                         HaltRequested;                                     // 0x3e4(0x1)
 	int                                                          ReplicatedRandomSeed;                              // 0x3e8(0x4)
 	Class SceneComponent*                                        SharedRoot;                                        // 0x3f0(0x8)
-	TArray<class MovingObjects*>                                 MovingObjects;                                     // 0x3f8(0x10)
+	TArray<class SceneComponent*>                                MovingObjects;                                     // 0x3f8(0x10)
 };
 
 
@@ -34213,7 +34214,7 @@ public:
 	Class TunnelDesc*                                            Desc;                                              // 0x468(0x8)
 	int                                                          TunnelStreamingLevelId;                            // 0x470(0x4)
 	Class Actor*                                                 ShipInTunnel;                                      // 0x478(0x8)
-	TArray<class CrewMembersInTunnel*>                           CrewMembersInTunnel;                               // 0x480(0x10)
+	TArray<class Actor*>                                         CrewMembersInTunnel;                               // 0x480(0x10)
 	Class Actor*                                                 Endpoint;                                          // 0x490(0x8)
 	Class SequencerCutSceneActor*                                SequencerLevelActor;                               // 0x498(0x8)
 	Class SequencerCutSceneActor*                                ShipSpecificSequencerLevelActor;                   // 0x4a0(0x8)
@@ -34250,7 +34251,7 @@ public:
 	Class TunnelDesc*                                            Desc;                                              // 0x470(0x8)
 	Class Actor*                                                 ShipInTunnel;                                      // 0x478(0x8)
 	int                                                          TunnelStreamingLevelId;                            // 0x480(0x4)
-	TArray<class CrewMembersInTunnel*>                           CrewMembersInTunnel;                               // 0x488(0x10)
+	TArray<class Actor*>                                         CrewMembersInTunnel;                               // 0x488(0x10)
 	Class ShipSpawnLocation*                                     FailureFallbackShipSpawnLocation;                  // 0x508(0x8)
 	TArray<Interface FailureActionStateFadeCompletedTargets>     FailureActionStateFadeCompletedTargets;            // 0x510(0x10)
 };
@@ -34552,7 +34553,7 @@ public:
 class PlayerBuriedItemService: public Actor
 {
 public:
-	TArray<class RegisteredTavernBoards*>                        RegisteredTavernBoards;                            // 0x3d8(0x10)
+	TArray<class TavernBoard*>                                   RegisteredTavernBoards;                            // 0x3d8(0x10)
 	TArray<Struct PlayerBuriedItemServiceNumMapsTakenFromStoreThisDayPerCrew> NumMapsTakenFromStoreThisDayPerCrew;               // 0x3e8(0x10)
 	Class PlayerBuriedItemServiceDataAsset*                      DataAsset;                                         // 0x3f8(0x8)
 	Class PlayerBuriedItemServiceMapStorePopulator*              MapStorePopulator;                                 // 0x400(0x8)
@@ -34681,7 +34682,7 @@ public:
 	int                                                          DailyMapLimit;                                     // 0x190(0x4)
 	Struct StringAssetReference                                  MapTakenBackgroundImage;                           // 0x198(0x10)
 	TArray<Struct StringAssetReference>                          MapTakenImages;                                    // 0x1a8(0x10)
-	TArray<class ServerAttachedPlayers*>                         ServerAttachedPlayers;                             // 0x1b8(0x10)
+	TArray<class Actor*>                                         ServerAttachedPlayers;                             // 0x1b8(0x10)
 	Class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x1c8(0x8)
 };
 
@@ -34817,8 +34818,8 @@ public:
 	Class SphereComponent*                                       IslandSafeZoneComponent;                           // 0x3f8(0x8)
 	struct FName                                                 IslandName;                                        // 0x400(0x8)
 	byte                                                         IslandType;                                        // 0x408(0x1)
-	TArray<class AssociatedSpawnLocations*>                      AssociatedSpawnLocations;                          // 0x410(0x10)
-	TArray<class AssociatedShipSpawnLocations*>                  AssociatedShipSpawnLocations;                      // 0x420(0x10)
+	TArray<class SpawnLocation*>                                 AssociatedSpawnLocations;                          // 0x410(0x10)
+	TArray<class ShipSpawnLocation*>                             AssociatedShipSpawnLocations;                      // 0x420(0x10)
 	Struct ObjectMessagingDispatcher                             ObjectMessageDispatcher;                           // 0x430(0xa0)
 	Struct Vector                                                CompassDirectionIslandCentre;                      // 0x4d0(0xc)
 	Class AICreatureMovementModifierParamsDataAsset*             PetMovementParamsData;                             // 0x4e0(0x8)
@@ -34853,7 +34854,7 @@ public:
 	Class WwiseEvent*                                            FortCompleteEvent;                                 // 0x610(0x8)
 	Struct WwiseEmitter                                          SeaFortEmitter;                                    // 0x618(0x20)
 	Struct PlayerStat                                            StatToFireOnFortComplete;                          // 0x7c8(0x4)
-	TArray<class Rewards*>                                       Rewards;                                           // 0x8c0(0x10)
+	TArray<class ItemSpawnComponent*>                            Rewards;                                           // 0x8c0(0x10)
 	Class FortAIToggler*                                         AIToggler;                                         // 0x8d0(0x8)
 	TArray<Struct AdditionalCaptainTarget>                       SpawnedAdditionalCaptainsData;                     // 0x8d8(0x10)
 	Class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x8e8(0x8)
@@ -34959,7 +34960,7 @@ public:
 	Struct SeaFortDistantLightsAssetLoader                       DistantLightsAssetLoader;                          // 0x3d0(0x28)
 	TArray<Struct SeaFortDistantLightsSignal>                    ReplicatedDistantLightsSignals;                    // 0x3f8(0x10)
 	Class SeaFortsWorldDataAsset*                                SeaFortsData;                                      // 0x408(0x8)
-	TArray<class SeaForts*>                                      SeaForts;                                          // 0x410(0x10)
+	TArray<class Seafort*>                                       SeaForts;                                          // 0x410(0x10)
 };
 
 
@@ -35032,7 +35033,7 @@ public:
 
 
 // Size 0x0
-class AnimNotifyStateWieldableBookLeftSpreadPreviousRightSpreadCurren: public AnimNotifyStateWieldableBookRenderingModeRequest
+class AnimNotifyStateWieldableBookLeftSpreadPreviousRightSpreadCurrent: public AnimNotifyStateWieldableBookRenderingModeRequest
 {
 public:
 };
@@ -35417,8 +35418,8 @@ public:
 	float                                                        AccelerationSmoothingFactor;                       // 0x4a4(0x4)
 	float                                                        YawSmoothingFactor;                                // 0x4a8(0x4)
 	float                                                        NetworkAnimationBlendTime;                         // 0x4ac(0x4)
-	TArray<class RPCPlayableMontages*>                           RPCPlayableMontages;                               // 0x4b0(0x10)
-	TArray<class NetworkPlayableAnimations*>                     NetworkPlayableAnimations;                         // 0x4c0(0x10)
+	TArray<class Object*>                                        RPCPlayableMontages;                               // 0x4b0(0x10)
+	TArray<class AnimSequenceBase*>                              NetworkPlayableAnimations;                         // 0x4c0(0x10)
 	TArray<Struct AIStrategySpeedOverride>                       StrategySpeedOverrides;                            // 0x4d0(0x10)
 	TArray<Class HitReactBlockingAIStrategies>                   HitReactBlockingAIStrategies;                      // 0x4e0(0x10)
 	Class AnimMontage*                                           CurrentlyPlayingNetworkMontage;                    // 0x4f0(0x8)
@@ -35547,9 +35548,9 @@ public:
 	TArray<Class AllProjectiles>                                 AllProjectiles;                                    // 0x5b0(0x10)
 	Class StaticMeshComponent*                                   VisibleMesh;                                       // 0x5c0(0x8)
 	Class ParticleSystemComponent*                               HealthIndicatorEffect;                             // 0x5c8(0x8)
-	TArray<class ExtraMeshes*>                                   ExtraMeshes;                                       // 0x5d0(0x10)
-	TArray<class AllMeshes*>                                     AllMeshes;                                         // 0x760(0x10)
-	TArray<class AllMaterials*>                                  AllMaterials;                                      // 0x770(0x10)
+	TArray<class StaticMeshComponent*>                           ExtraMeshes;                                       // 0x5d0(0x10)
+	TArray<class MeshComponent*>                                 AllMeshes;                                         // 0x760(0x10)
+	TArray<class MaterialInstanceDynamic*>                       AllMaterials;                                      // 0x770(0x10)
 };
 
 
@@ -35882,7 +35883,7 @@ public:
 class GameEventService: public Actor
 {
 public:
-	TArray<class GameEvents*>                                    GameEvents;                                        // 0x410(0x10)
+	TArray<class GameEvent*>                                     GameEvents;                                        // 0x410(0x10)
 };
 
 
@@ -35892,7 +35893,7 @@ class AggressiveGhostShipsEncounterService: public GameEventService
 public:
 	Struct AggressiveGhostShipsEncounterServiceDesc              Desc;                                              // 0x508(0x10)
 	Class AggressiveGhostShipsEncounterServiceParams*            Params;                                            // 0x518(0x8)
-	TArray<class Encounters*>                                    Encounters;                                        // 0x520(0x10)
+	TArray<class AggressiveGhostShipsEncounter*>                 Encounters;                                        // 0x520(0x10)
 };
 
 
@@ -35981,7 +35982,7 @@ public:
 	TArray<Class AshenLordMusicZones>                            AshenLordMusicZones;                               // 0x68(0x10)
 	float                                                        DelayFromPlayerSpottedToRitualEnd;                 // 0x78(0x4)
 	float                                                        AshenLordSpawnerProximityPlayerTrackerDistanceScalar; // 0x7c(0x4)
-	TArray<class AllAshenLordDescs*>                             AllAshenLordDescs;                                 // 0x80(0x10)
+	TArray<class AshenLordDesc*>                                 AllAshenLordDescs;                                 // 0x80(0x10)
 	TArray<Class RandomlySpawnableAshenLords>                    RandomlySpawnableAshenLords;                       // 0x90(0x10)
 	float                                                        EventSignalHeightOffset;                           // 0xc0(0x4)
 	Struct EncounterParams                                       SightingEncounterParams;                           // 0xc4(0xc)
@@ -36087,7 +36088,7 @@ public:
 class FlamethrowerChargeVisuals: public Object
 {
 public:
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x48(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x48(0x10)
 };
 
 
@@ -36290,8 +36291,8 @@ class ChainLightningVisualActor: public Actor
 public:
 	Struct WwiseEmitter                                          Emitter;                                           // 0x3c8(0x20)
 	Struct ChainData                                             Data;                                              // 0x3f0(0x18)
-	TArray<class CachedChainMaterials*>                          CachedChainMaterials;                              // 0x408(0x10)
-	TArray<class CachedChainComponents*>                         CachedChainComponents;                             // 0x418(0x10)
+	TArray<class MaterialInstanceDynamic*>                       CachedChainMaterials;                              // 0x408(0x10)
+	TArray<class StaticMeshComponent*>                           CachedChainComponents;                             // 0x418(0x10)
 	Class ChainLightningVisualActorSettingsAsset*                SettingsAsset;                                     // 0x468(0x8)
 	Class SceneComponent*                                        RootSceneComponent;                                // 0x470(0x8)
 	TArray<Weakclass LightningVFXComponents>                     LightningVFXComponents;                            // 0x490(0x10)
@@ -36468,8 +36469,8 @@ public:
 	Class HauntedFortEmplacement*                                Emplacement_A;                                     // 0x428(0x8)
 	Class HauntedFortEmplacement*                                Emplacement_B;                                     // 0x430(0x8)
 	Class HauntedFortEmplacement*                                Emplacement_C;                                     // 0x438(0x8)
-	TArray<class TargetsArray*>                                  TargetsArray;                                      // 0x440(0x10)
-	TArray<class EmplacementsArray*>                             EmplacementsArray;                                 // 0x450(0x10)
+	TArray<class HauntedFortTarget*>                             TargetsArray;                                      // 0x440(0x10)
+	TArray<class HauntedFortTarget*>                             EmplacementsArray;                                 // 0x450(0x10)
 	float                                                        ServerMigrationExclusionRadius;                    // 0x460(0x4)
 };
 
@@ -36540,7 +36541,7 @@ public:
 	Class InteractableComponent*                                 InteractableComponent;                             // 0x5b8(0x8)
 	Class SceneComponent*                                        PlayerPositionComponent;                           // 0x5c0(0x8)
 	Class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x5c8(0x8)
-	TArray<class VFXPositions*>                                  VFXPositions;                                      // 0x5d0(0x10)
+	TArray<class ParticleSystemComponent*>                       VFXPositions;                                      // 0x5d0(0x10)
 	Class ParticleSystemComponent*                               CurrentVFXSpawner;                                 // 0x5e0(0x8)
 };
 
@@ -36827,12 +36828,12 @@ public:
 	float                                                        MaterialVisibleDistance;                           // 0xd4(0x4)
 	float                                                        CloseRevealDistance;                               // 0xd8(0x4)
 	class                                                        SceneType;                                         // 0xe0(0x8)
-	TArray<class RevealRequirements*>                            RevealRequirements;                                // 0xe8(0x10)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0xf8(0x10)
+	TArray<class RevealRequirement*>                             RevealRequirements;                                // 0xe8(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0xf8(0x10)
 	Class Object*                                                TargetGameStateObject;                             // 0x168(0x8)
 	bool                                                         PermanentlyRevealed;                               // 0x170(0x1)
-	TArray<class RequirementsPerRevealer*>                       RequirementsPerRevealer;                           // 0x1e8(0x10)
-	TArray<class RequirementsPerRevealable*>                     RequirementsPerRevealable;                         // 0x1f8(0x10)
+	TArray<class RevealRequirement*>                             RequirementsPerRevealer;                           // 0x1e8(0x10)
+	TArray<class RevealRequirement*>                             RequirementsPerRevealable;                         // 0x1f8(0x10)
 };
 
 
@@ -36895,7 +36896,7 @@ public:
 class RevealRequirement: public Object
 {
 public:
-	TArray<class OR_Requirements*>                               OR_Requirements;                                   // 0x28(0x10)
+	TArray<class RevealRequirement*>                             OR_Requirements;                                   // 0x28(0x10)
 };
 
 
@@ -37019,7 +37020,7 @@ public:
 class TransientActorTaleService: public TaleQuestService
 {
 public:
-	TArray<class TrackedActors*>                                 TrackedActors;                                     // 0x80(0x10)
+	TArray<class Actor*>                                         TrackedActors;                                     // 0x80(0x10)
 	TArray<Struct TransientActorEntry>                           MigrationEntries;                                  // 0x90(0x10)
 };
 
@@ -37075,7 +37076,7 @@ public:
 	TArray<Struct OpenForListEntry>                              OpenForList;                                       // 0x3e0(0x10)
 	float                                                        DoorFullyOpenTimer;                                // 0x3f0(0x4)
 	Class ClientSkeletalMeshComponent*                           DoorMesh;                                          // 0x3f8(0x8)
-	TArray<class DynamicMaterialInstances*>                      DynamicMaterialInstances;                          // 0x400(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterialInstances;                          // 0x400(0x10)
 	Class AnimSequence*                                          DoorOpeningAnimation;                              // 0x410(0x8)
 	Class WwiseEvent*                                            DoorOpeningSfx;                                    // 0x418(0x8)
 	Struct Box                                                   DoorBoundingVolume;                                // 0x420(0x1c)
@@ -37096,7 +37097,7 @@ public:
 class GhostShipTickManager: public Actor
 {
 public:
-	TArray<class GhostShipActors*>                               GhostShipActors;                                   // 0x3c8(0x10)
+	TArray<class Actor*>                                         GhostShipActors;                                   // 0x3c8(0x10)
 };
 
 
@@ -37401,7 +37402,7 @@ public:
 	Class PhrasesRadialDataAsset*                                RadialPhrases;                                     // 0x1f8(0x8)
 	bool                                                         CustomInteractionPoint;                            // 0x200(0x1)
 	Struct Vector                                                CustomInteractionPointLocation;                    // 0x204(0xc)
-	TArray<class ConditionalSeatStats*>                          ConditionalSeatStats;                              // 0x210(0x10)
+	TArray<class SeatStat*>                                      ConditionalSeatStats;                              // 0x210(0x10)
 	bool                                                         CanBeUnderwater;                                   // 0x220(0x1)
 };
 
@@ -37686,7 +37687,7 @@ public:
 class AthenaAnimationEmoteListingAsset: public DataAsset
 {
 public:
-	TArray<class EmoteGroupings*>                                EmoteGroupings;                                    // 0x28(0x10)
+	TArray<class AthenaAnimationEmoteGroupingAsset*>             EmoteGroupings;                                    // 0x28(0x10)
 };
 
 
@@ -38079,7 +38080,7 @@ class IslandAnnouncementComponent: public ActorComponent
 {
 public:
 	bool                                                         AnnouncesOnUI;                                     // 0xc8(0x1)
-	TArray<class MutedPlayers*>                                  MutedPlayers;                                      // 0xd0(0x10)
+	TArray<class Controller*>                                    MutedPlayers;                                      // 0xd0(0x10)
 };
 
 
@@ -38133,8 +38134,8 @@ public:
 	Class LandmarkTreasureLocationsDataAsset*                    LandmarkTreasureLocationsSource;                   // 0x60(0x8)
 	Class GeneratedLocationsDataAsset*                           AISpawnLocationsSource;                            // 0x68(0x8)
 	TArray<Struct Vector>                                        AISpawnLocations;                                  // 0x70(0x10)
-	TArray<class IslandItemLocationDataSources*>                 IslandItemLocationDataSources;                     // 0x80(0x10)
-	TArray<class IslandSalvageSpawnerCollections*>               IslandSalvageSpawnerCollections;                   // 0x90(0x10)
+	TArray<class IslandItemDataAsset*>                           IslandItemLocationDataSources;                     // 0x80(0x10)
+	TArray<class IslandSalvageSpawnerCollection*>                IslandSalvageSpawnerCollections;                   // 0x90(0x10)
 	TArray<Struct TypedIslandItemSpawnLocationData>              SalvageItemsLocationData;                          // 0xa0(0x10)
 	Struct FText                                                 LocalisedName;                                     // 0xb0(0x38)
 	Class AISpawner*                                             AISpawner;                                         // 0xe8(0x8)
@@ -38156,8 +38157,8 @@ public:
 	bool                                                         AllowDefaultIdentityTransform;                     // 0x28(0x1)
 	float                                                        SpawningGracePeriod;                               // 0x2c(0x4)
 	Class AISpawner*                                             AncientSkeletonSpawner;                            // 0x30(0x8)
-	TArray<class IslandDefaultDataEntries*>                      IslandDefaultDataEntries;                          // 0x38(0x10)
-	TArray<class IslandDataEntries*>                             IslandDataEntries;                                 // 0x48(0x10)
+	TArray<class IslandDataDefaultAssetEntry*>                   IslandDefaultDataEntries;                          // 0x38(0x10)
+	TArray<class IslandDataAssetEntry*>                          IslandDataEntries;                                 // 0x48(0x10)
 };
 
 
@@ -38215,9 +38216,9 @@ class IslandSalvageSpawnerManager: public Actor
 {
 public:
 	Struct ObjectMessagingDispatcher                             ObjectMessagingDispatcher;                         // 0x3d8(0xa0)
-	TArray<class SalvageSpawnComponentsAwaitingRequests*>        SalvageSpawnComponentsAwaitingRequests;            // 0x478(0x10)
+	TArray<class SalvageItemSpawnComponent*>                     SalvageSpawnComponentsAwaitingRequests;            // 0x478(0x10)
 	Class IslandData*                                            IslandData;                                        // 0x4d8(0x8)
-	TArray<class IslandSalvageItemSpawnComponents*>              IslandSalvageItemSpawnComponents;                  // 0x4f0(0x10)
+	TArray<class SalvageItemSpawnComponent*>                     IslandSalvageItemSpawnComponents;                  // 0x4f0(0x10)
 	TArray<Struct TypedIslandItemSpawnLocationData>              IslandSalvageLocationData;                         // 0x500(0x10)
 };
 
@@ -38979,7 +38980,7 @@ public:
 	Class Object*                                                PickupVfx;                                         // 0x660(0x8)
 	Class ParticleSystemComponent*                               AmbientParticleSystem;                             // 0x688(0x8)
 	Class ParticleSystemComponent*                               PickupParticleSystem;                              // 0x690(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x6b0(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x6b0(0x10)
 	float                                                        FadeOutDuration;                                   // 0x6c4(0x4)
 	bool                                                         DelayedDestroyStarted;                             // 0x6c8(0x1)
 };

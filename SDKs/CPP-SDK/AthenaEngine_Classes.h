@@ -75,7 +75,7 @@ public:
 class PersistentAssetCollectionDataAsset: public DataAsset
 {
 public:
-	TArray<class Assets*>                                        Assets;                                            // 0x28(0x10)
+	TArray<class Object*>                                        Assets;                                            // 0x28(0x10)
 };
 
 

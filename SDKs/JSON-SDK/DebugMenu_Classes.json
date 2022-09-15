@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "DataAssets",
-        "Type": "TArray<class DataAssets*>",
+        "Type": "TArray<class DebugMenuDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -46,7 +46,7 @@
       },
       {
         "Name": "MenuEntryGenerators",
-        "Type": "TArray<class MenuEntryGenerators*>",
+        "Type": "TArray<class DebugMenuEntryGenerator*>",
         "Size": "0x10",
         "Offset": "0x58"
       }

@@ -5,7 +5,7 @@ AIAmmoProgressionTypeList:
   - Name: AllProgressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllProgressions*>
+    Type: TArray<class AIAmmoRankProgression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -29,7 +29,7 @@ AIAmmoTypeList:
   - Name: AllAmmo
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllAmmo*>
+    Type: TArray<class AthenaAIAmmoDataAsset*>
   - Name: DefaultAmmo
     Offset: '0x38'
     Size: '0x8'
@@ -121,15 +121,15 @@ AIBountySpawner:
   - Name: CrewMembers
     Offset: '0x4e8'
     Size: '0x10'
-    Type: TArray<class CrewMembers*>
+    Type: TArray<class Actor*>
   - Name: NonCrewMembersInRegion
     Offset: '0x4f8'
     Size: '0x10'
-    Type: TArray<class NonCrewMembersInRegion*>
+    Type: TArray<class Actor*>
   - Name: AllParticipatingPlayers
     Offset: '0x508'
     Size: '0x10'
-    Type: TArray<class AllParticipatingPlayers*>
+    Type: TArray<class Actor*>
   - Name: AudioZoneTriggerComponent
     Offset: '0x518'
     Size: '0x8'
@@ -373,7 +373,7 @@ AIDebugSpawnActor:
   - Name: SpawnedAIList
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class SpawnedAIList*>
+    Type: TArray<class Pawn*>
   ClassSize: '0x30'
   FullSize: '0x3f8'
   InheritedSize: '0x3c8'
@@ -587,7 +587,7 @@ AIEncounterGenerationRecipeRankOrderList:
   - Name: Recipes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Recipes*>
+    Type: TArray<class AIEncounterGenerationRecipe*>
   - Name: FeatureBasedRecipeLists
     Offset: '0x38'
     Size: '0x10'
@@ -601,7 +601,7 @@ AIEncounterGenerationRecipeTypeList:
   - Name: AllRecipes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllRecipes*>
+    Type: TArray<class AIEncounterGenerationRecipe*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -687,7 +687,7 @@ AIEncounterService:
   - Name: DebugSpawnableEncounterSettings
     Offset: '0x458'
     Size: '0x10'
-    Type: TArray<class DebugSpawnableEncounterSettings*>
+    Type: TArray<class AIEncounterSettings*>
   ClassSize: '0x3d0'
   FullSize: '0x798'
   InheritedSize: '0x3c8'
@@ -799,7 +799,7 @@ AIFaunaSpawner:
   - Name: PlayersInSpawnArea
     Offset: '0x570'
     Size: '0x10'
-    Type: TArray<class PlayersInSpawnArea*>
+    Type: TArray<class Actor*>
   ClassSize: '0x148'
   FullSize: '0x580'
   InheritedSize: '0x438'
@@ -823,7 +823,7 @@ AIFormItemSpawnRequirement:
   - Name: AllowedForms
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class AllowedForms*>
+    Type: TArray<class AthenaAIFormDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
@@ -833,7 +833,7 @@ AIFormProgressionTypeList:
   - Name: AllProgressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllProgressions*>
+    Type: TArray<class AIFormRankProgression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -857,7 +857,7 @@ AIFormTypeList:
   - Name: AllForms
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllForms*>
+    Type: TArray<class AthenaAIFormDataAsset*>
   - Name: DefaultForm
     Offset: '0x38'
     Size: '0x8'
@@ -983,7 +983,7 @@ AIItemDropComponentRankProgressionList:
   - Name: AllProgressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllProgressions*>
+    Type: TArray<class AIItemSpawnRankProgression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1035,7 +1035,7 @@ AILoadoutItemSpawnRequirement:
   - Name: AllowedLoadouts
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class AllowedLoadouts*>
+    Type: TArray<class LoadoutAsset*>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
@@ -1045,7 +1045,7 @@ AILoadoutProgressionTypeList:
   - Name: AllProgressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllProgressions*>
+    Type: TArray<class AILoadoutRankProgression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1069,7 +1069,7 @@ AILoadoutTypeList:
   - Name: AllLoadouts
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllLoadouts*>
+    Type: TArray<class LoadoutAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1103,7 +1103,7 @@ AIManagerService:
   - Name: PlayerTrackers
     Offset: '0x800'
     Size: '0x10'
-    Type: TArray<class PlayerTrackers*>
+    Type: TArray<class AIPlayerTracker*>
   - Name: CustomPlayersTrackerDatas
     Offset: '0x810'
     Size: '0x10'
@@ -1111,7 +1111,7 @@ AIManagerService:
   - Name: SpawnersPendingShutdown
     Offset: '0x920'
     Size: '0x10'
-    Type: TArray<class SpawnersPendingShutdown*>
+    Type: TArray<class AISpawner*>
   - Name: AITypeList
     Offset: '0x9d8'
     Size: '0x8'
@@ -1201,7 +1201,7 @@ AIPartsCategory:
   - Name: Parts
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Parts*>
+    Type: TArray<class AIPartsDesc*>
   - Name: NextPartsIndex
     Offset: '0x38'
     Size: '0x4'
@@ -1227,7 +1227,7 @@ AIPartsCategoryTypeList:
   - Name: AllPartsCategories
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllPartsCategories*>
+    Type: TArray<class AIPartsCategory*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1351,11 +1351,11 @@ AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset:
   - Name: StoryOverrideAssetList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class StoryOverrideAssetList*>
+    Type: TArray<class AIPerCrewSpawnerSettingsStoryOverrideAsset*>
   - Name: StoryoverrideAssetCollectionList
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class StoryoverrideAssetCollectionList*>
+    Type: TArray<class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -1493,7 +1493,7 @@ AISkillsetItemSpawnRequirement:
   - Name: DisallowedSkillsets
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class DisallowedSkillsets*>
+    Type: TArray<class AthenaAIControllerParamsDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
@@ -1503,7 +1503,7 @@ AISkillsetProgressionTypeList:
   - Name: AllProgressions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllProgressions*>
+    Type: TArray<class AISkillsetRankProgression*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1527,7 +1527,7 @@ AISkillsetTypeList:
   - Name: AllSkillsets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class AllSkillsets*>
+    Type: TArray<class AthenaAIControllerParamsDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -1553,7 +1553,7 @@ AISpawnComplexCondition:
   - Name: Conditions
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class Conditions*>
+    Type: TArray<class AISpawnOverrideCondition*>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -1763,7 +1763,7 @@ AISpawnerList:
   - Name: Spawners
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Spawners*>
+    Type: TArray<class AISpawner*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -2025,11 +2025,11 @@ AthenaAIAbilityComponent:
   - Name: AIAbilities
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class AIAbilities*>
+    Type: TArray<class AthenaAIAbility*>
   - Name: ActivatableAbilitiesInCurrentStage
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class ActivatableAbilitiesInCurrentStage*>
+    Type: TArray<class AthenaAIAbility*>
   - Name: CurrentAIAbility
     Offset: '0xf0'
     Size: '0x8'
@@ -2059,7 +2059,7 @@ AthenaAIAbilityHandlerComponent:
   - Name: AIAbilities
     Offset: '0x188'
     Size: '0x10'
-    Type: TArray<class AIAbilities*>
+    Type: TArray<class AthenaAIAbility*>
   - Name: ReadyAbilitiesPool
     Offset: '0x198'
     Size: '0x10'
@@ -2233,7 +2233,7 @@ AthenaAICharacterController:
   - Name: AIAbilityParams
     Offset: '0x9d0'
     Size: '0x10'
-    Type: TArray<class AIAbilityParams*>
+    Type: TArray<class AthenaAIAbilityParams*>
   - Name: NonItemEngageOptions
     Offset: '0x9e0'
     Size: '0x10'
@@ -2283,7 +2283,7 @@ AthenaAICharacterControllerParamsDataAsset:
   - Name: IndividualWieldedItemProjectileEffectivenessProperties
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>
+    Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>
   - Name: IndividualWieldedItemOverrideNamedControllerParams
     Offset: '0x150'
     Size: '0x10'
@@ -2311,7 +2311,7 @@ AthenaAICharacterControllerParamsDataAsset:
   - Name: IndividualAIAbilityParams
     Offset: '0x1a8'
     Size: '0x10'
-    Type: TArray<class IndividualAIAbilityParams*>
+    Type: TArray<class AthenaAIAbilityParams*>
   - Name: IndividualNonItemEngageOptions
     Offset: '0x1b8'
     Size: '0x10'
@@ -2385,7 +2385,7 @@ AthenaAICharacterControllerSharedParamValuesDataAsset:
   - Name: WieldedItemProjectileEffectivenessProperties
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>
+    Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>
   - Name: WieldedItemOverrideNamedControllerParams
     Offset: '0xd8'
     Size: '0x10'
@@ -2401,7 +2401,7 @@ AthenaAICharacterControllerSharedParamValuesDataAsset:
   - Name: AIAbilityParams
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<class AIAbilityParams*>
+    Type: TArray<class AthenaAIAbilityParams*>
   - Name: NonItemEngageOptions
     Offset: '0x118'
     Size: '0x10'
@@ -2577,7 +2577,7 @@ AthenaAIControllerParamsDataAsset:
   - Name: SharedParamValues
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class SharedParamValues*>
+    Type: TArray<class AthenaAIControllerSharedParamValuesDataAsset*>
   - Name: IndividualOverrideMeshScale
     Offset: '0x98'
     Size: '0x1'
@@ -4723,7 +4723,7 @@ BurrowComponent:
   - Name: BurrowCracks
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<class BurrowCracks*>
+    Type: TArray<class BurrowCrack*>
   - Name: BurrowErupt
     Offset: '0xf8'
     Size: '0x8'
@@ -4913,11 +4913,11 @@ CoralShieldVFXComponent:
   - Name: OverriddenMaterialsForReceive
     Offset: '0x128'
     Size: '0x10'
-    Type: TArray<class OverriddenMaterialsForReceive*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: OverriddenMaterialsForCast
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<class OverriddenMaterialsForCast*>
+    Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0xe0'
   FullSize: '0x1a8'
   InheritedSize: '0xc8'
@@ -5073,7 +5073,7 @@ EnvQueryContext_SeenActorsProjectedToGround:
   - Name: SeenActors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class SeenActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -5791,7 +5791,7 @@ HealthGemComponent:
   - Name: OverridenMaterials
     Offset: '0x1e0'
     Size: '0x10'
-    Type: TArray<class OverridenMaterials*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: EmissiveMaterialParameterName
     Offset: '0x1f0'
     Size: '0x8'
@@ -5835,7 +5835,7 @@ IsAIOfSkillsetStatCondition:
   - Name: AISkillsets
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class AISkillsets*>
+    Type: TArray<class AthenaAIControllerParamsDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -5845,7 +5845,7 @@ IsAIUsingFormDataAssetStatCondition:
   - Name: AllowedAIDataAssetForms
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class AllowedAIDataAssetForms*>
+    Type: TArray<class AthenaAIFormDataAsset*>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -5873,7 +5873,7 @@ MeshMemoryConstraintsAIPartsDesc:
   - Name: OverrideMaterials
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class OverrideMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: FallbackOverrideMaterials
     Offset: '0x70'
     Size: '0x10'
@@ -6777,7 +6777,7 @@ TaleQuestTinySharkService:
   - Name: ActiveExperiences
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class ActiveExperiences*>
+    Type: TArray<class TinySharkExperience*>
   ClassSize: '0x78'
   FullSize: '0xd8'
   InheritedSize: '0x60'
@@ -6867,11 +6867,11 @@ TinySharkService:
   - Name: TinySharkExperiences
     Offset: '0x550'
     Size: '0x10'
-    Type: TArray<class TinySharkExperiences*>
+    Type: TArray<class TinySharkExperience*>
   - Name: ExternallyManagedTinySharkExperiences
     Offset: '0x560'
     Size: '0x10'
-    Type: TArray<class ExternallyManagedTinySharkExperiences*>
+    Type: TArray<class TinySharkExperience*>
   ClassSize: '0x1c8'
   FullSize: '0x590'
   InheritedSize: '0x3c8'

@@ -1204,19 +1204,19 @@
       },
       {
         "Name": "CrewMembers",
-        "Type": "TArray<class CrewMembers*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x4e8"
       },
       {
         "Name": "NonCrewMembersInRegion",
-        "Type": "TArray<class NonCrewMembersInRegion*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x4f8"
       },
       {
         "Name": "AllParticipatingPlayers",
-        "Type": "TArray<class AllParticipatingPlayers*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x508"
       },
@@ -1269,7 +1269,7 @@
       },
       {
         "Name": "PlayersInSpawnArea",
-        "Type": "TArray<class PlayersInSpawnArea*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x570"
       }
@@ -1873,7 +1873,7 @@
       },
       {
         "Name": "SpawnedAIList",
-        "Type": "TArray<class SpawnedAIList*>",
+        "Type": "TArray<class Pawn*>",
         "Size": "0x10",
         "Offset": "0x3e8"
       }
@@ -3282,7 +3282,7 @@
       },
       {
         "Name": "SharedParamValues",
-        "Type": "TArray<class SharedParamValues*>",
+        "Type": "TArray<class AthenaAIControllerSharedParamValuesDataAsset*>",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -3417,7 +3417,7 @@
     "Attributes": [
       {
         "Name": "ActiveExperiences",
-        "Type": "TArray<class ActiveExperiences*>",
+        "Type": "TArray<class TinySharkExperience*>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -3684,13 +3684,13 @@
       },
       {
         "Name": "TinySharkExperiences",
-        "Type": "TArray<class TinySharkExperiences*>",
+        "Type": "TArray<class TinySharkExperience*>",
         "Size": "0x10",
         "Offset": "0x550"
       },
       {
         "Name": "ExternallyManagedTinySharkExperiences",
-        "Type": "TArray<class ExternallyManagedTinySharkExperiences*>",
+        "Type": "TArray<class TinySharkExperience*>",
         "Size": "0x10",
         "Offset": "0x560"
       }
@@ -3742,7 +3742,7 @@
       },
       {
         "Name": "OverrideMaterials",
-        "Type": "TArray<class OverrideMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -3886,7 +3886,7 @@
       },
       {
         "Name": "WieldedItemProjectileEffectivenessProperties",
-        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>",
+        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -3910,7 +3910,7 @@
       },
       {
         "Name": "AIAbilityParams",
-        "Type": "TArray<class AIAbilityParams*>",
+        "Type": "TArray<class AthenaAIAbilityParams*>",
         "Size": "0x10",
         "Offset": "0x108"
       },
@@ -4020,7 +4020,7 @@
       },
       {
         "Name": "IndividualWieldedItemProjectileEffectivenessProperties",
-        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessP>",
+        "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>",
         "Size": "0x10",
         "Offset": "0x140"
       },
@@ -4062,7 +4062,7 @@
       },
       {
         "Name": "IndividualAIAbilityParams",
-        "Type": "TArray<class IndividualAIAbilityParams*>",
+        "Type": "TArray<class AthenaAIAbilityParams*>",
         "Size": "0x10",
         "Offset": "0x1a8"
       },
@@ -4164,7 +4164,7 @@
     "Attributes": [
       {
         "Name": "AllProgressions",
-        "Type": "TArray<class AllProgressions*>",
+        "Type": "TArray<class AIAmmoRankProgression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4178,7 +4178,7 @@
     "Attributes": [
       {
         "Name": "AllAmmo",
-        "Type": "TArray<class AllAmmo*>",
+        "Type": "TArray<class AthenaAIAmmoDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4219,7 +4219,7 @@
     "Attributes": [
       {
         "Name": "Parts",
-        "Type": "TArray<class Parts*>",
+        "Type": "TArray<class AIPartsDesc*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4396,7 +4396,7 @@
     "Attributes": [
       {
         "Name": "Recipes",
-        "Type": "TArray<class Recipes*>",
+        "Type": "TArray<class AIEncounterGenerationRecipe*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4416,7 +4416,7 @@
     "Attributes": [
       {
         "Name": "AllRecipes",
-        "Type": "TArray<class AllRecipes*>",
+        "Type": "TArray<class AIEncounterGenerationRecipe*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4471,7 +4471,7 @@
     "Attributes": [
       {
         "Name": "AllProgressions",
-        "Type": "TArray<class AllProgressions*>",
+        "Type": "TArray<class AIFormRankProgression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4485,7 +4485,7 @@
     "Attributes": [
       {
         "Name": "AllForms",
-        "Type": "TArray<class AllForms*>",
+        "Type": "TArray<class AthenaAIFormDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -4505,7 +4505,7 @@
     "Attributes": [
       {
         "Name": "AllProgressions",
-        "Type": "TArray<class AllProgressions*>",
+        "Type": "TArray<class AILoadoutRankProgression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4519,7 +4519,7 @@
     "Attributes": [
       {
         "Name": "AllLoadouts",
-        "Type": "TArray<class AllLoadouts*>",
+        "Type": "TArray<class LoadoutAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4533,7 +4533,7 @@
     "Attributes": [
       {
         "Name": "AllProgressions",
-        "Type": "TArray<class AllProgressions*>",
+        "Type": "TArray<class AISkillsetRankProgression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4547,7 +4547,7 @@
     "Attributes": [
       {
         "Name": "AllSkillsets",
-        "Type": "TArray<class AllSkillsets*>",
+        "Type": "TArray<class AthenaAIControllerParamsDataAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4561,7 +4561,7 @@
     "Attributes": [
       {
         "Name": "AllPartsCategories",
-        "Type": "TArray<class AllPartsCategories*>",
+        "Type": "TArray<class AIPartsCategory*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4665,7 +4665,7 @@
       },
       {
         "Name": "DebugSpawnableEncounterSettings",
-        "Type": "TArray<class DebugSpawnableEncounterSettings*>",
+        "Type": "TArray<class AIEncounterSettings*>",
         "Size": "0x10",
         "Offset": "0x458"
       }
@@ -4813,7 +4813,7 @@
     "Attributes": [
       {
         "Name": "AllowedForms",
-        "Type": "TArray<class AllowedForms*>",
+        "Type": "TArray<class AthenaAIFormDataAsset*>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -4862,7 +4862,7 @@
     "Attributes": [
       {
         "Name": "AllProgressions",
-        "Type": "TArray<class AllProgressions*>",
+        "Type": "TArray<class AIItemSpawnRankProgression*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -4924,7 +4924,7 @@
     "Attributes": [
       {
         "Name": "AllowedLoadouts",
-        "Type": "TArray<class AllowedLoadouts*>",
+        "Type": "TArray<class LoadoutAsset*>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -5321,7 +5321,7 @@
       },
       {
         "Name": "PlayerTrackers",
-        "Type": "TArray<class PlayerTrackers*>",
+        "Type": "TArray<class AIPlayerTracker*>",
         "Size": "0x10",
         "Offset": "0x800"
       },
@@ -5333,7 +5333,7 @@
       },
       {
         "Name": "SpawnersPendingShutdown",
-        "Type": "TArray<class SpawnersPendingShutdown*>",
+        "Type": "TArray<class AISpawner*>",
         "Size": "0x10",
         "Offset": "0x920"
       },
@@ -5483,13 +5483,13 @@
     "Attributes": [
       {
         "Name": "StoryOverrideAssetList",
-        "Type": "TArray<class StoryOverrideAssetList*>",
+        "Type": "TArray<class AIPerCrewSpawnerSettingsStoryOverrideAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "StoryoverrideAssetCollectionList",
-        "Type": "TArray<class StoryoverrideAssetCollectionList*>",
+        "Type": "TArray<class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -5570,7 +5570,7 @@
     "Attributes": [
       {
         "Name": "DisallowedSkillsets",
-        "Type": "TArray<class DisallowedSkillsets*>",
+        "Type": "TArray<class AthenaAIControllerParamsDataAsset*>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -5967,7 +5967,7 @@
     "Attributes": [
       {
         "Name": "Spawners",
-        "Type": "TArray<class Spawners*>",
+        "Type": "TArray<class AISpawner*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -6009,7 +6009,7 @@
     "Attributes": [
       {
         "Name": "Conditions",
-        "Type": "TArray<class Conditions*>",
+        "Type": "TArray<class AISpawnOverrideCondition*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -6599,13 +6599,13 @@
     "Attributes": [
       {
         "Name": "AIAbilities",
-        "Type": "TArray<class AIAbilities*>",
+        "Type": "TArray<class AthenaAIAbility*>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "ActivatableAbilitiesInCurrentStage",
-        "Type": "TArray<class ActivatableAbilitiesInCurrentStage*>",
+        "Type": "TArray<class AthenaAIAbility*>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -6649,7 +6649,7 @@
       },
       {
         "Name": "AIAbilities",
-        "Type": "TArray<class AIAbilities*>",
+        "Type": "TArray<class AthenaAIAbility*>",
         "Size": "0x10",
         "Offset": "0x188"
       },
@@ -6918,7 +6918,7 @@
       },
       {
         "Name": "AIAbilityParams",
-        "Type": "TArray<class AIAbilityParams*>",
+        "Type": "TArray<class AthenaAIAbilityParams*>",
         "Size": "0x10",
         "Offset": "0x9d0"
       },
@@ -8931,7 +8931,7 @@
       },
       {
         "Name": "BurrowCracks",
-        "Type": "TArray<class BurrowCracks*>",
+        "Type": "TArray<class BurrowCrack*>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
@@ -9023,13 +9023,13 @@
       },
       {
         "Name": "OverriddenMaterialsForReceive",
-        "Type": "TArray<class OverriddenMaterialsForReceive*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x128"
       },
       {
         "Name": "OverriddenMaterialsForCast",
-        "Type": "TArray<class OverriddenMaterialsForCast*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x138"
       }
@@ -9092,7 +9092,7 @@
     "Attributes": [
       {
         "Name": "SeenActors",
-        "Type": "TArray<class SeenActors*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -9561,7 +9561,7 @@
     "Attributes": [
       {
         "Name": "OverridenMaterials",
-        "Type": "TArray<class OverridenMaterials*>",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x1e0"
       },
@@ -9615,7 +9615,7 @@
     "Attributes": [
       {
         "Name": "AISkillsets",
-        "Type": "TArray<class AISkillsets*>",
+        "Type": "TArray<class AthenaAIControllerParamsDataAsset*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -9629,7 +9629,7 @@
     "Attributes": [
       {
         "Name": "AllowedAIDataAssetForms",
-        "Type": "TArray<class AllowedAIDataAssetForms*>",
+        "Type": "TArray<class AthenaAIFormDataAsset*>",
         "Size": "0x10",
         "Offset": "0x30"
       }

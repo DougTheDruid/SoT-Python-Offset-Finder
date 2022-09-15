@@ -153,7 +153,7 @@ TestActionStateConstructionInfoWithObjPointers:
   - Name: Array
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Array*>
+    Type: TArray<class Object*>
   ClassSize: '0x48'
 TestActionStateMessage:
   Attributes:

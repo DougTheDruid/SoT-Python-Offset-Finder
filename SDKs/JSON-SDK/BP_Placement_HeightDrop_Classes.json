@@ -37,7 +37,7 @@
       },
       {
         "Name": "ComponentsToDrop",
-        "Type": "TArray<class ComponentsToDrop*>",
+        "Type": "TArray<class SceneComponent*>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
@@ -61,7 +61,7 @@
       },
       {
         "Name": "Physical Materials To Ignore",
-        "Type": "TArray<class Physical Materials To Ignore*>",
+        "Type": "TArray<class PhysicalMaterial*>",
         "Size": "0x10",
         "Offset": "0x3f8"
       }

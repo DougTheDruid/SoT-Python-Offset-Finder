@@ -48,7 +48,7 @@ public:
 class MovieSceneAkTrack: public MovieSceneTrack
 {
 public:
-	TArray<class Sections*>                                      Sections;                                          // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
 };
 
@@ -103,14 +103,14 @@ public:
 	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x338(0x8)
 	Class WwiseEvent*                                            WwiseMediaSoundComponentEventNameInstance;         // 0x340(0x8)
 	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x348(0x8)
-	TArray<class EventsToPlayOnFrontendStartInstance*>           EventsToPlayOnFrontendStartInstance;               // 0x3a0(0x10)
-	TArray<class EventsToPlayOnFrontendEndInstance*>             EventsToPlayOnFrontendEndInstance;                 // 0x3b0(0x10)
-	TArray<class EventsToPlayOnStartEngagementInstance*>         EventsToPlayOnStartEngagementInstance;             // 0x3c0(0x10)
-	TArray<class EventsToPlayOnEndEngagementInstance*>           EventsToPlayOnEndEngagementInstance;               // 0x3d0(0x10)
-	TArray<class EventsToPlayOnLoadingStartInstance*>            EventsToPlayOnLoadingStartInstance;                // 0x3e0(0x10)
-	TArray<class EventsToPlayOnLoadingEndInstance*>              EventsToPlayOnLoadingEndInstance;                  // 0x3f0(0x10)
-	TArray<class EventsToPlayOnFrontEndOrLoadingStartInstance*>  EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x400(0x10)
-	TArray<class EventsToPlayOnFrontEndOrLoadingEndInstance*>    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x410(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendStartInstance;               // 0x3a0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendEndInstance;                 // 0x3b0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnStartEngagementInstance;             // 0x3c0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnEndEngagementInstance;               // 0x3d0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingStartInstance;                // 0x3e0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingEndInstance;                  // 0x3f0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x400(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x410(0x10)
 };
 
 
@@ -207,7 +207,7 @@ public:
 class WwisePersistentContentStore: public Object
 {
 public:
-	TArray<class PersistentlyLoadedBanks*>                       PersistentlyLoadedBanks;                           // 0x28(0x10)
+	TArray<class WwiseBank*>                                     PersistentlyLoadedBanks;                           // 0x28(0x10)
 };
 
 

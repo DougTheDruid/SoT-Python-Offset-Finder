@@ -494,7 +494,7 @@ AIEncounterGenerationRecipeFeatureBasedRankOrderList:
   - Name: Recipes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<class Recipes*>
+    Type: TArray<class AIEncounterGenerationRecipe*>
   ClassSize: '0x18'
 AIEncounterSpecification:
   Attributes:
@@ -1134,7 +1134,7 @@ AthenaAIAbilityDamageStage:
   - Name: AbilitiesInStage
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<class AbilitiesInStage*>
+    Type: TArray<class AthenaAIAbilityStageParams*>
   ClassSize: '0x10'
 AthenaAIAbilityPlayerBasedRange:
   Attributes:
@@ -1183,7 +1183,7 @@ AthenaAICharacterControllerItemCategoryNamedParams:
     Size: '0x10'
     Type: TArray<Struct AthenaAIControllerParamValue>
   ClassSize: '0x18'
-AthenaAICharacterControllerItemCategoryProjectileEffectivenessP:
+AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties:
   Attributes:
   - Name: ItemCategory
     Offset: '0x0'

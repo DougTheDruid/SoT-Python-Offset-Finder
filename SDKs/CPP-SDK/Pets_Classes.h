@@ -375,7 +375,7 @@ public:
 	float                                                        MiddleDeckFloodThreshold;                          // 0x2fc(0x4)
 	float                                                        PerchInteractableHeightOffset;                     // 0x300(0x4)
 	bool                                                         IsWorldHangout;                                    // 0x304(0x1)
-	TArray<class PetPerchComponents*>                            PetPerchComponents;                                // 0x328(0x10)
+	TArray<class PetPerchComponent*>                             PetPerchComponents;                                // 0x328(0x10)
 	bool                                                         IsTopDeckBlocked;                                  // 0x348(0x1)
 	bool                                                         IsOwnerSinking;                                    // 0x349(0x1)
 	Class PetHangoutSpotsDataAsset*                              PetHangoutSpotsDataAsset;                          // 0x368(0x8)
@@ -478,11 +478,11 @@ class PetsService: public Object
 public:
 	Class AIPetsOnDemandSpawner*                                 Spawner;                                           // 0x88(0x8)
 	Struct PetsServiceParams                                     PetsServiceParams;                                 // 0xa8(0x38)
-	TArray<class OwnersToRemove*>                                OwnersToRemove;                                    // 0xe0(0x10)
-	TArray<class OwnersToRequestDespawn*>                        OwnersToRequestDespawn;                            // 0xf0(0x10)
-	TArray<class MovingPetsOnIslands*>                           MovingPetsOnIslands;                               // 0x100(0x10)
-	TArray<class MovingPetsOnShips*>                             MovingPetsOnShips;                                 // 0x110(0x10)
-	TArray<class ScratchArray*>                                  ScratchArray;                                      // 0x120(0x10)
+	TArray<class Actor*>                                         OwnersToRemove;                                    // 0xe0(0x10)
+	TArray<class Actor*>                                         OwnersToRequestDespawn;                            // 0xf0(0x10)
+	TArray<class Pawn*>                                          MovingPetsOnIslands;                               // 0x100(0x10)
+	TArray<class Pawn*>                                          MovingPetsOnShips;                                 // 0x110(0x10)
+	TArray<class Actor*>                                         ScratchArray;                                      // 0x120(0x10)
 	Class PetHangoutSpotsDataAsset*                              PetHangoutDataAsset;                               // 0x2d8(0x8)
 };
 

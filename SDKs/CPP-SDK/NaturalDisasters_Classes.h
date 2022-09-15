@@ -140,7 +140,7 @@ class DisableGeyserMechanismAction: public Actor
 {
 public:
 	Class MechanismActionComponent*                              MechanismActionComponent;                          // 0x3c8(0x8)
-	TArray<class GeysersToDisable*>                              GeysersToDisable;                                  // 0x3d0(0x10)
+	TArray<class Geyser*>                                        GeysersToDisable;                                  // 0x3d0(0x10)
 };
 
 
@@ -291,7 +291,7 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      ActiveDuration;                                    // 0x3f8(0x30)
 	Struct StoryFlag                                             StoryFlag;                                         // 0x428(0x8)
 	Class PhysicalMaterial*                                      LavaMaterial;                                      // 0x430(0x8)
-	TArray<class ActorsInZone*>                                  ActorsInZone;                                      // 0x438(0x10)
+	TArray<class Actor*>                                         ActorsInZone;                                      // 0x438(0x10)
 	bool                                                         Active;                                            // 0x448(0x1)
 	bool                                                         InitializeFromGlobalState;                         // 0x449(0x1)
 	bool                                                         SelfActivating;                                    // 0x44a(0x1)

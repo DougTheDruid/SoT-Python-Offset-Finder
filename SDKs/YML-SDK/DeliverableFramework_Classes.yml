@@ -31,7 +31,7 @@ DeliverableRedirectionCompositeContext:
   - Name: Contexts
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Contexts*>
+    Type: TArray<class DeliverableRedirectionContextBase*>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -91,7 +91,7 @@ DeliverableRequirementsDataAsset:
   - Name: Requirements
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Requirements*>
+    Type: TArray<class DeliverableRequirementBase*>
   - Name: FeatureOverrideRequirements
     Offset: '0x38'
     Size: '0x18'

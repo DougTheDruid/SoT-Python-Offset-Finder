@@ -61,13 +61,13 @@
       },
       {
         "Name": "ResponseTemplates",
-        "Type": "TArray<class ResponseTemplates*>",
+        "Type": "TArray<class StatusResponse*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "InstancedResponses",
-        "Type": "TArray<class InstancedResponses*>",
+        "Type": "TArray<class StatusResponse*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -90,7 +90,7 @@
       },
       {
         "Name": "ResponseAssets",
-        "Type": "TArray<class ResponseAssets*>",
+        "Type": "TArray<class StatusResponseAsset*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -107,7 +107,7 @@
       },
       {
         "Name": "Targets",
-        "Type": "TArray<class Targets*>",
+        "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x10"
       },

@@ -77,7 +77,7 @@
       },
       {
         "Name": "WwiseEmitterComponents",
-        "Type": "TArray<class WwiseEmitterComponents*>",
+        "Type": "TArray<class WwiseEmitterComponent*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -94,7 +94,7 @@
       },
       {
         "Name": "Meshes",
-        "Type": "TArray<class Meshes*>",
+        "Type": "TArray<class StaticMesh*>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -117,13 +117,13 @@
       },
       {
         "Name": "StartEvents",
-        "Type": "TArray<class StartEvents*>",
+        "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "StopEvents",
-        "Type": "TArray<class StopEvents*>",
+        "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x28"
       }

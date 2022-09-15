@@ -283,7 +283,7 @@ public:
 	Class BehaviorTreeManager*                                   BehaviorTreeManager;                               // 0x68(0x8)
 	Class EnvQueryManager*                                       EnvironmentQueryManager;                           // 0x70(0x8)
 	Class AIPerceptionSystem*                                    PerceptionSystem;                                  // 0x78(0x8)
-	TArray<class AllProxyObjects*>                               AllProxyObjects;                                   // 0x80(0x10)
+	TArray<class AIAsyncTaskBlueprintProxy*>                     AllProxyObjects;                                   // 0x80(0x10)
 	Class AIHotSpotManager*                                      HotSpotManager;                                    // 0x90(0x8)
 };
 
@@ -306,7 +306,7 @@ public:
 class AIPerceptionSystem: public Object
 {
 public:
-	TArray<class Senses*>                                        Senses;                                            // 0x80(0x10)
+	TArray<class AISense*>                                       Senses;                                            // 0x80(0x10)
 	float                                                        PerceptionAgingRate;                               // 0x90(0x4)
 };
 
@@ -320,7 +320,7 @@ public:
 	float                                                        SightRadius;                                       // 0xd0(0x4)
 	float                                                        LoseSightRadius;                                   // 0xd4(0x4)
 	float                                                        PeripheralVisionAngle;                             // 0xd8(0x4)
-	TArray<class SensesConfig*>                                  SensesConfig;                                      // 0xe0(0x10)
+	TArray<class AISenseConfig*>                                 SensesConfig;                                      // 0xe0(0x10)
 	class                                                        DominantSense;                                     // 0xf0(0x8)
 	Class AIController*                                          AIOwner;                                           // 0x108(0x8)
 };
@@ -354,8 +354,8 @@ class AISense_Blueprint: public AISense
 {
 public:
 	class                                                        ListenerDataType;                                  // 0x88(0x8)
-	TArray<class ListenerContainer*>                             ListenerContainer;                                 // 0x90(0x10)
-	TArray<class UnprocessedEvents*>                             UnprocessedEvents;                                 // 0xa0(0x10)
+	TArray<class AIPerceptionComponent*>                         ListenerContainer;                                 // 0x90(0x10)
+	TArray<class AISenseEvent*>                                  UnprocessedEvents;                                 // 0xa0(0x10)
 };
 
 
@@ -556,7 +556,7 @@ public:
 class BehaviorTreeComponent: public BrainComponent
 {
 public:
-	TArray<class NodeInstances*>                                 NodeInstances;                                     // 0x148(0x10)
+	TArray<class BTNode*>                                        NodeInstances;                                     // 0x148(0x10)
 };
 
 
@@ -565,7 +565,7 @@ class BTCompositeNode: public BTNode
 {
 public:
 	TArray<Struct BTCompositeChild>                              Children;                                          // 0x58(0x10)
-	TArray<class Services*>                                      Services;                                          // 0x68(0x10)
+	TArray<class BTService*>                                     Services;                                          // 0x68(0x10)
 };
 
 
@@ -575,7 +575,7 @@ class BehaviorTree: public Object
 public:
 	Class BTCompositeNode*                                       RootNode;                                          // 0x28(0x8)
 	Class BlackboardData*                                        BlackboardAsset;                                   // 0x30(0x8)
-	TArray<class RootDecorators*>                                RootDecorators;                                    // 0x38(0x10)
+	TArray<class BTDecorator*>                                   RootDecorators;                                    // 0x38(0x10)
 	TArray<Struct BTDecoratorLogic>                              RootDecoratorOps;                                  // 0x48(0x10)
 };
 
@@ -586,7 +586,7 @@ class BehaviorTreeManager: public Object
 public:
 	int                                                          MaxDebuggerSteps;                                  // 0x28(0x4)
 	TArray<Struct BehaviorTreeTemplateInfo>                      LoadedTemplates;                                   // 0x30(0x10)
-	TArray<class ActiveComponents*>                              ActiveComponents;                                  // 0x40(0x10)
+	TArray<class BehaviorTreeComponent*>                         ActiveComponents;                                  // 0x40(0x10)
 };
 
 
@@ -625,7 +625,7 @@ class BlackboardComponent: public ActorComponent
 public:
 	Class BrainComponent*                                        BrainComp;                                         // 0xc8(0x8)
 	Class BlackboardData*                                        BlackboardAsset;                                   // 0xd0(0x8)
-	TArray<class KeyInstances*>                                  KeyInstances;                                      // 0xf8(0x10)
+	TArray<class BlackboardKeyType*>                             KeyInstances;                                      // 0xf8(0x10)
 };
 
 
@@ -1096,7 +1096,7 @@ public:
 class EnvQuery: public Object
 {
 public:
-	TArray<class Options*>                                       Options;                                           // 0x28(0x10)
+	TArray<class EnvQueryOption*>                                Options;                                           // 0x28(0x10)
 };
 
 
@@ -1192,7 +1192,7 @@ class EnvQueryManager: public Object
 {
 public:
 	TArray<Struct EnvQueryInstanceCache>                         InstanceCache;                                     // 0x98(0x10)
-	TArray<class LocalContexts*>                                 LocalContexts;                                     // 0xa8(0x10)
+	TArray<class EnvQueryContext*>                               LocalContexts;                                     // 0xa8(0x10)
 };
 
 
@@ -1220,7 +1220,7 @@ public:
 class EnvQueryGenerator_Composite: public EnvQueryGenerator
 {
 public:
-	TArray<class Generators*>                                    Generators;                                        // 0x50(0x10)
+	TArray<class EnvQueryGenerator*>                             Generators;                                        // 0x50(0x10)
 	bool                                                         bHasMatchingItemType;                              // 0x60(0x1)
 };
 
@@ -1359,7 +1359,7 @@ class EnvQueryOption: public Object
 {
 public:
 	Class EnvQueryGenerator*                                     Generator;                                         // 0x28(0x8)
-	TArray<class Tests*>                                         Tests;                                             // 0x30(0x10)
+	TArray<class EnvQueryTest*>                                  Tests;                                             // 0x30(0x10)
 };
 
 
@@ -1439,7 +1439,7 @@ public:
 class PawnAction_Sequence: public PawnAction
 {
 public:
-	TArray<class ActionSequence*>                                ActionSequence;                                    // 0x90(0x10)
+	TArray<class PawnAction*>                                    ActionSequence;                                    // 0x90(0x10)
 	byte                                                         ChildFailureHandlingMode;                          // 0xa0(0x1)
 	Class PawnAction*                                            RecentActionCopy;                                  // 0xa8(0x8)
 };

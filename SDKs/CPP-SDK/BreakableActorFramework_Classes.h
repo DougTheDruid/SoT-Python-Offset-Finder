@@ -50,7 +50,7 @@ public:
 	struct FName                                                 HitPositionPropertyName;                           // 0xe4(0x8)
 	struct FName                                                 CollapseStartTimePropertyName;                     // 0xec(0x8)
 	Class PrimitiveComponent*                                    TargetMesh;                                        // 0xf8(0x8)
-	TArray<class DynamicMaterials*>                              DynamicMaterials;                                  // 0x100(0x10)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x100(0x10)
 	Class BreakableActorBase*                                    BreakableActor;                                    // 0x110(0x8)
 };
 

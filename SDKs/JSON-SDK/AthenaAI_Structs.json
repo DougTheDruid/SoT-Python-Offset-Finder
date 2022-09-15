@@ -1818,7 +1818,7 @@
     "Attributes": [
       {
         "Name": "AbilitiesInStage",
-        "Type": "TArray<class AbilitiesInStage*>",
+        "Type": "TArray<class AthenaAIAbilityStageParams*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -1886,7 +1886,7 @@
       }
     ]
   },
-  "AthenaAICharacterControllerItemCategoryProjectileEffectivenessP": {
+  "AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -2198,7 +2198,7 @@
       },
       {
         "Name": "Recipes",
-        "Type": "TArray<class Recipes*>",
+        "Type": "TArray<class AIEncounterGenerationRecipe*>",
         "Size": "0x10",
         "Offset": "0x8"
       }

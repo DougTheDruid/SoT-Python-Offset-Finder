@@ -61,7 +61,7 @@ public:
 class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
 {
 public:
-	TArray<class Contexts*>                                      Contexts;                                          // 0x28(0x10)
+	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
 };
 
 
@@ -92,7 +92,7 @@ public:
 class DeliverableRequirementsDataAsset: public DataAsset
 {
 public:
-	TArray<class Requirements*>                                  Requirements;                                      // 0x28(0x10)
+	TArray<class DeliverableRequirementBase*>                    Requirements;                                      // 0x28(0x10)
 	Struct DeliverableRequirementFeatureOverride                 FeatureOverrideRequirements;                       // 0x38(0x18)
 };
 

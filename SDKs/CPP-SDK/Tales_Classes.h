@@ -47,7 +47,7 @@ public:
 class TaleQuestFramedStep: public TaleQuestStep
 {
 public:
-	TArray<class Services*>                                      Services;                                          // 0xa0(0x10)
+	TArray<class TaleQuestService*>                              Services;                                          // 0xa0(0x10)
 	Class TaleQuestFramedStepDesc*                               FrameDesc;                                         // 0xb0(0x8)
 	Class ScriptStruct*                                          StructForCollector;                                // 0xc8(0x8)
 	Class ScriptStruct*                                          LocalStructForCollector;                           // 0xd0(0x8)
@@ -58,7 +58,7 @@ public:
 class TaleQuestFramedStepDesc: public TaleQuestStepDesc
 {
 public:
-	TArray<class Services*>                                      Services;                                          // 0x80(0x10)
+	TArray<class TaleQuestServiceDesc*>                          Services;                                          // 0x80(0x10)
 	Class ScriptStruct*                                          Variables;                                         // 0x90(0x8)
 	Struct InlineUserDefinedStructDetails                        GeneratedVariables;                                // 0x98(0x8)
 };
@@ -155,7 +155,7 @@ public:
 class TaleQuestCargoRunContractsService: public TaleQuestService
 {
 public:
-	TArray<class Contracts*>                                     Contracts;                                         // 0x60(0x10)
+	TArray<class TaleQuestCargoRunContract*>                     Contracts;                                         // 0x60(0x10)
 };
 
 
@@ -186,7 +186,7 @@ public:
 class TaleQuestMerchantContractsService: public TaleQuestService
 {
 public:
-	TArray<class Contracts*>                                     Contracts;                                         // 0x60(0x10)
+	TArray<class TaleQuestMerchantContract*>                     Contracts;                                         // 0x60(0x10)
 };
 
 
@@ -208,9 +208,9 @@ public:
 class CutsceneResponsesTaleService: public TaleQuestService
 {
 public:
-	TArray<class TrackedResponseCoordinators*>                   TrackedResponseCoordinators;                       // 0x60(0x10)
-	TArray<class TrackedResponseComponents*>                     TrackedResponseComponents;                         // 0x70(0x10)
-	TArray<class ResponseRelevantActors*>                        ResponseRelevantActors;                            // 0x80(0x10)
+	TArray<class CutsceneResponseCoordinator*>                   TrackedResponseCoordinators;                       // 0x60(0x10)
+	TArray<class CutsceneResponseComponent*>                     TrackedResponseComponents;                         // 0x70(0x10)
+	TArray<class Actor*>                                         ResponseRelevantActors;                            // 0x80(0x10)
 };
 
 
@@ -227,7 +227,7 @@ class RewardGenTaleQuestService: public TaleQuestService
 public:
 	Class TaleQuestWeightedItemDescSpawnDataAsset*               GlobalSpawnData;                                   // 0x60(0x8)
 	TArray<Int ValidSpawnData>                                   ValidSpawnData;                                    // 0x68(0x10)
-	TArray<class ItemsToSpawn*>                                  ItemsToSpawn;                                      // 0x78(0x10)
+	TArray<class ItemSpawnData*>                                 ItemsToSpawn;                                      // 0x78(0x10)
 };
 
 
@@ -265,7 +265,7 @@ public:
 class TaleQuestInteractionPreventionService: public TaleQuestService
 {
 public:
-	TArray<class TrackedInteractionActors*>                      TrackedInteractionActors;                          // 0x60(0x10)
+	TArray<class Actor*>                                         TrackedInteractionActors;                          // 0x60(0x10)
 	Class TaleQuestInteractionPreventionServiceDesc*             Desc;                                              // 0x70(0x8)
 };
 
@@ -743,6 +743,13 @@ public:
 
 
 // Size 0x0
+class TaleQuestGetParticipatingCrewsInRadiusStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestGetParticipatingCrewsStep: public TaleQuestStep
 {
 public:
@@ -1033,7 +1040,7 @@ public:
 class LoadSequencerAnimationStepDesc: public TaleQuestStepDesc
 {
 public:
-	TArray<class LevelSequencesToLoad*>                          LevelSequencesToLoad;                              // 0x80(0x10)
+	TArray<class LevelSequence*>                                 LevelSequencesToLoad;                              // 0x80(0x10)
 	Struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x90(0x20)
 	Struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xb0(0x20)
 	Struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xd0(0x20)
@@ -1389,6 +1396,16 @@ class TaleQuestGetCollectionItemCountStepDesc: public TaleQuestStepDesc
 public:
 	Struct QuestVariableCollection                               Collection;                                        // 0x80(0x20)
 	Struct QuestVariableInt                                      Num;                                               // 0xa0(0x20)
+};
+
+
+// Size 0x48
+class TaleQuestGetParticipatingCrewsInRadiusStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x20)
+	Struct QuestVariableVector                                   Location;                                          // 0xa0(0x20)
+	float                                                        Radius;                                            // 0xc0(0x4)
 };
 
 
@@ -1822,18 +1839,17 @@ public:
 };
 
 
-// Size 0xc0
+// Size 0xd0
 class TaleQuestAddChecklistMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
 	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct StringAssetReference                                  OverrideTreasureMapItemDesc;                       // 0x88(0x10)
-	Struct QuestVariableText                                     Title;                                             // 0x98(0x20)
-	Struct QuestVariableText                                     Description;                                       // 0xb8(0x20)
-	Struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0xd8(0x20)
-	Struct QuestVariableText                                     Afternote;                                         // 0xf8(0x20)
-	Struct QuestVariableDataAsset                                Layout;                                            // 0x118(0x20)
-	byte                                                         RadialMiniIcon;                                    // 0x138(0x1)
+	Struct QuestVariableText                                     Title;                                             // 0xa8(0x20)
+	Struct QuestVariableText                                     Description;                                       // 0xc8(0x20)
+	Struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0xe8(0x20)
+	Struct QuestVariableText                                     Afternote;                                         // 0x108(0x20)
+	Struct QuestVariableDataAsset                                Layout;                                            // 0x128(0x20)
+	byte                                                         RadialMiniIcon;                                    // 0x148(0x1)
 };
 
 

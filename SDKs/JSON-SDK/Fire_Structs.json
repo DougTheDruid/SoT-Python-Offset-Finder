@@ -769,7 +769,7 @@
     "Attributes": [
       {
         "Name": "OwnerMaterials",
-        "Type": "TArray<class OwnerMaterials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x0"
       },

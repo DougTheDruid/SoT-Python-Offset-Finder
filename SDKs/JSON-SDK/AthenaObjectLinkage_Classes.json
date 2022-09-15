@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "EndPlayHandlers",
-        "Type": "TArray<class EndPlayHandlers*>",
+        "Type": "TArray<class EndPlayHandler*>",
         "Size": "0x10",
         "Offset": "0x190"
       }

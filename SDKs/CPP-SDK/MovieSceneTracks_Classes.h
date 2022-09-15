@@ -46,7 +46,7 @@ public:
 class MovieScene3DConstraintTrack: public MovieSceneTrack
 {
 public:
-	TArray<class ConstraintSections*>                            ConstraintSections;                                // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             ConstraintSections;                                // 0x88(0x10)
 };
 
 
@@ -102,7 +102,7 @@ public:
 class MovieSceneAudioTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class AudioSections*>                                 AudioSections;                                     // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             AudioSections;                                     // 0x88(0x10)
 };
 
 
@@ -148,7 +148,7 @@ public:
 class MovieSceneCameraAnimTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class CameraAnimSections*>                            CameraAnimSections;                                // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             CameraAnimSections;                                // 0x88(0x10)
 };
 
 
@@ -164,7 +164,7 @@ public:
 class MovieSceneCameraCutTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class Sections*>                                      Sections;                                          // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 };
 
 
@@ -184,7 +184,7 @@ public:
 class MovieSceneCameraShakeTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class CameraShakeSections*>                           CameraShakeSections;                               // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             CameraShakeSections;                               // 0x88(0x10)
 };
 
 
@@ -220,7 +220,7 @@ public:
 class MovieSceneSpawnTrack: public MovieSceneTrack
 {
 public:
-	TArray<class Sections*>                                      Sections;                                          // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	Struct Guid                                                  ObjectGuid;                                        // 0x98(0x10)
 };
 
@@ -231,7 +231,7 @@ class MovieSceneEventTrack: public MovieSceneNameableTrack
 public:
 	bool                                                         bFireEventsWhenForwards;                           // 0x88(0x1)
 	bool                                                         bFireEventsWhenBackwards;                          // 0x88(0x1)
-	TArray<class Sections*>                                      Sections;                                          // 0x90(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x90(0x10)
 };
 
 
@@ -282,7 +282,7 @@ class MovieScenePropertyTrack: public MovieSceneNameableTrack
 public:
 	struct FName                                                 PropertyName;                                      // 0x88(0x8)
 	Struct FString                                               PropertyPath;                                      // 0x90(0x10)
-	TArray<class Sections*>                                      Sections;                                          // 0xa0(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0xa0(0x10)
 };
 
 
@@ -290,7 +290,7 @@ public:
 class MovieSceneLevelVisibilityTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class Sections*>                                      Sections;                                          // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 };
 
 
@@ -308,7 +308,7 @@ public:
 class MovieSceneMaterialTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class Sections*>                                      Sections;                                          // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 };
 
 
@@ -324,7 +324,7 @@ public:
 class MovieSceneParticleParameterTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class Sections*>                                      Sections;                                          // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 };
 
 
@@ -340,7 +340,7 @@ public:
 class MovieSceneParticleTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class ParticleSections*>                              ParticleSections;                                  // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             ParticleSections;                                  // 0x88(0x10)
 };
 
 
@@ -459,7 +459,7 @@ class MovieSceneSkeletalAnimationTrack: public MovieSceneNameableTrack
 {
 public:
 	byte                                                         TrackSubtype;                                      // 0x88(0x1)
-	TArray<class AnimationSections*>                             AnimationSections;                                 // 0x90(0x10)
+	TArray<class MovieSceneSection*>                             AnimationSections;                                 // 0x90(0x10)
 };
 
 
@@ -497,7 +497,7 @@ public:
 class MovieSceneSubTrack: public MovieSceneNameableTrack
 {
 public:
-	TArray<class Sections*>                                      Sections;                                          // 0x88(0x10)
+	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 };
 
 

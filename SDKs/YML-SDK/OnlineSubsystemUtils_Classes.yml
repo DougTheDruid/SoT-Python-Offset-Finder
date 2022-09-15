@@ -173,7 +173,7 @@ OnlineBeaconHost:
   - Name: ClientActors
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<class ClientActors*>
+    Type: TArray<class OnlineBeaconClient*>
   ClassSize: '0xb8'
   FullSize: '0x4a8'
   InheritedSize: '0x3f0'
@@ -191,7 +191,7 @@ OnlineBeaconHostObject:
   - Name: ClientActors
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<class ClientActors*>
+    Type: TArray<class OnlineBeaconClient*>
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'

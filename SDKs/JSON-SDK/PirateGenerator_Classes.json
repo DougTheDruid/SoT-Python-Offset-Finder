@@ -83,7 +83,7 @@
       },
       {
         "Name": "UnblendedSubMeshes",
-        "Type": "TArray<class UnblendedSubMeshes*>",
+        "Type": "TArray<class SkeletalMesh*>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -152,7 +152,7 @@
     "Attributes": [
       {
         "Name": "Materials",
-        "Type": "TArray<class Materials*>",
+        "Type": "TArray<class MaterialInterface*>",
         "Size": "0x10",
         "Offset": "0x28"
       }

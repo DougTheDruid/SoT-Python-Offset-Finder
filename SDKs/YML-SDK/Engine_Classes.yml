@@ -209,7 +209,7 @@ Actor:
   - Name: ControllingMatineeActors
     Offset: '0x170'
     Size: '0x10'
-    Type: TArray<class ControllingMatineeActors*>
+    Type: TArray<class MatineeActor*>
   - Name: InitialLifeSpan
     Offset: '0x180'
     Size: '0x4'
@@ -261,15 +261,15 @@ Actor:
   - Name: BlueprintCreatedComponents
     Offset: '0x320'
     Size: '0x10'
-    Type: TArray<class BlueprintCreatedComponents*>
+    Type: TArray<class ActorComponent*>
   - Name: InstanceComponents
     Offset: '0x330'
     Size: '0x10'
-    Type: TArray<class InstanceComponents*>
+    Type: TArray<class ActorComponent*>
   - Name: ChildActorInterfaceProviders
     Offset: '0x348'
     Size: '0x10'
-    Type: TArray<class ChildActorInterfaceProviders*>
+    Type: TArray<class Actor*>
   - Name: DormancyLingeringInSeconds
     Offset: '0x3c0'
     Size: '0x8'
@@ -287,7 +287,7 @@ ActorChannel:
   - Name: ObjectsRequiredForQueuedBunches
     Offset: '0x158'
     Size: '0x10'
-    Type: TArray<class ObjectsRequiredForQueuedBunches*>
+    Type: TArray<class Object*>
   ClassSize: '0x1f8'
   FullSize: '0x260'
   InheritedSize: '0x68'
@@ -1191,7 +1191,7 @@ AnimationAsset:
   - Name: MetaData
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class MetaData*>
+    Type: TArray<class AnimMetaData*>
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -1825,11 +1825,11 @@ Blueprint:
   - Name: ComponentTemplates
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<class ComponentTemplates*>
+    Type: TArray<class ActorComponent*>
   - Name: Timelines
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<class Timelines*>
+    Type: TArray<class TimelineTemplate*>
   - Name: InheritableComponentHandler
     Offset: '0x98'
     Size: '0x8'
@@ -1893,15 +1893,15 @@ BlueprintGeneratedClass:
   - Name: DynamicBindingObjects
     Offset: '0x1c8'
     Size: '0x10'
-    Type: TArray<class DynamicBindingObjects*>
+    Type: TArray<class DynamicBlueprintBinding*>
   - Name: ComponentTemplates
     Offset: '0x1d8'
     Size: '0x10'
-    Type: TArray<class ComponentTemplates*>
+    Type: TArray<class ActorComponent*>
   - Name: Timelines
     Offset: '0x1e8'
     Size: '0x10'
-    Type: TArray<class Timelines*>
+    Type: TArray<class TimelineTemplate*>
   - Name: SimpleConstructionScript
     Offset: '0x1f8'
     Size: '0x8'
@@ -2459,7 +2459,7 @@ CameraModifier_CameraShake:
   - Name: ActiveShakes
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class ActiveShakes*>
+    Type: TArray<class CameraShake*>
   - Name: SplitScreenShakeScale
     Offset: '0x58'
     Size: '0x4'
@@ -3427,7 +3427,7 @@ ComponentAggregatorComponent:
   - Name: Aggregatables
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<class Aggregatables*>
+    Type: TArray<class Object*>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -3901,7 +3901,7 @@ DestructibleFractureSettings:
   - Name: Materials
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<class Materials*>
+    Type: TArray<class MaterialInterface*>
   - Name: ChunkParameters
     Offset: '0x80'
     Size: '0x10'
@@ -3961,7 +3961,7 @@ DeviceProfileManager:
   - Name: Profiles
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Profiles*>
+    Type: TArray<class Object*>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -4433,7 +4433,7 @@ EdGraph:
   - Name: Nodes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class Nodes*>
+    Type: TArray<class EdGraphNode*>
   - Name: bEditable
     Offset: '0x40'
     Size: '0x1'
@@ -4455,7 +4455,7 @@ EdGraphNode:
   - Name: Pins
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Pins*>
+    Type: TArray<class EdGraphPin*>
   - Name: NodePosX
     Offset: '0x38'
     Size: '0x4'
@@ -4567,11 +4567,11 @@ EdGraphPin:
   - Name: LinkedTo
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<class LinkedTo*>
+    Type: TArray<class EdGraphPin*>
   - Name: SubPins
     Offset: '0x110'
     Size: '0x10'
-    Type: TArray<class SubPins*>
+    Type: TArray<class EdGraphPin*>
   - Name: ParentPin
     Offset: '0x120'
     Size: '0x8'
@@ -4729,7 +4729,7 @@ Engine:
   - Name: AdditionalFonts
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class AdditionalFonts*>
+    Type: TArray<class Font*>
   - Name: AdditionalFontNames
     Offset: '0xf0'
     Size: '0x10'
@@ -5847,7 +5847,7 @@ FlatWaterMeshComponent:
   - Name: OriginalMaterials
     Offset: '0x690'
     Size: '0x10'
-    Type: TArray<class OriginalMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: TextureOverrides
     Offset: '0x6a0'
     Size: '0x10'
@@ -6071,7 +6071,7 @@ Font:
   - Name: Textures
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class Textures*>
+    Type: TArray<class Texture2D*>
   - Name: IsRemapped
     Offset: '0x58'
     Size: '0x4'
@@ -6183,7 +6183,7 @@ GameInstance:
   - Name: LocalPlayers
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class LocalPlayers*>
+    Type: TArray<class LocalPlayer*>
   - Name: OnlineSession
     Offset: '0x50'
     Size: '0x8'
@@ -6285,7 +6285,7 @@ GameMode:
   - Name: InactivePlayerArray
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<class InactivePlayerArray*>
+    Type: TArray<class PlayerState*>
   - Name: GameModeClassAliases
     Offset: '0x4a8'
     Size: '0x10'
@@ -6483,7 +6483,7 @@ GameState:
   - Name: PlayerArray
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<class PlayerArray*>
+    Type: TArray<class PlayerState*>
   - Name: ReplicatedWorldTimeSeconds
     Offset: '0x408'
     Size: '0x4'
@@ -6821,7 +6821,7 @@ HUD:
   - Name: PostRenderedActors
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class PostRenderedActors*>
+    Type: TArray<class Actor*>
   - Name: LastHUDRenderTime
     Offset: '0x3f8'
     Size: '0x4'
@@ -7357,7 +7357,7 @@ InterpData:
   - Name: InterpGroups
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class InterpGroups*>
+    Type: TArray<class InterpGroup*>
   - Name: CurveEdSetup
     Offset: '0x40'
     Size: '0x8'
@@ -7413,7 +7413,7 @@ InterpGroup:
   - Name: InterpTracks
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<class InterpTracks*>
+    Type: TArray<class InterpTrack*>
   - Name: GroupName
     Offset: '0x40'
     Size: '0x8'
@@ -7479,7 +7479,7 @@ InterpGroupInst:
   - Name: TrackInst
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class TrackInst*>
+    Type: TArray<class InterpTrackInst*>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -7535,7 +7535,7 @@ InterpTrack:
   - Name: SubTracks
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class SubTracks*>
+    Type: TArray<class InterpTrack*>
   - Name: TrackInstClass
     Offset: '0x48'
     Size: '0x8'
@@ -7729,7 +7729,7 @@ InterpTrackFloatMaterialParam:
   - Name: TargetMaterials
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class TargetMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: ParamName
     Offset: '0xa0'
     Size: '0x8'
@@ -7855,7 +7855,7 @@ InterpTrackInstFloatMaterialParam:
   - Name: MaterialInstances
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class MaterialInstances*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: ResetFloats
     Offset: '0x38'
     Size: '0x10'
@@ -7977,7 +7977,7 @@ InterpTrackInstVectorMaterialParam:
   - Name: MaterialInstances
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class MaterialInstances*>
+    Type: TArray<class MaterialInstanceDynamic*>
   - Name: ResetVectors
     Offset: '0x38'
     Size: '0x10'
@@ -8203,7 +8203,7 @@ InterpTrackVectorMaterialParam:
   - Name: TargetMaterials
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class TargetMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: ParamName
     Offset: '0xa0'
     Size: '0x8'
@@ -8313,7 +8313,7 @@ LODActor:
   - Name: SubActors
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<class SubActors*>
+    Type: TArray<class Actor*>
   - Name: LODDrawDistance
     Offset: '0x3e0'
     Size: '0x4'
@@ -8325,7 +8325,7 @@ LODActor:
   - Name: SubObjects
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<class SubObjects*>
+    Type: TArray<class Object*>
   ClassSize: '0x38'
   FullSize: '0x400'
   InheritedSize: '0x3c8'
@@ -8365,7 +8365,7 @@ Level:
   - Name: ModelComponents
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<class ModelComponents*>
+    Type: TArray<class ModelComponent*>
   - Name: LevelScriptActor
     Offset: '0xf0'
     Size: '0x8'
@@ -8381,7 +8381,7 @@ Level:
   - Name: NavDataChunks
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<class NavDataChunks*>
+    Type: TArray<class NavigationDataChunk*>
   - Name: LightmapTotalSize
     Offset: '0x118'
     Size: '0x4'
@@ -8415,7 +8415,7 @@ LevelActorContainer:
   - Name: Actors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class Actors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -8499,7 +8499,7 @@ LevelStreaming:
   - Name: EditorStreamingVolumes
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<class EditorStreamingVolumes*>
+    Type: TArray<class LevelStreamingVolume*>
   - Name: MinTimeBetweenVolumeUnloadRequests
     Offset: '0xe8'
     Size: '0x4'
@@ -9373,7 +9373,7 @@ Material:
   - Name: Expressions
     Offset: '0x918'
     Size: '0x10'
-    Type: TArray<class Expressions*>
+    Type: TArray<class MaterialExpression*>
   - Name: MaterialFunctionInfos
     Offset: '0x928'
     Size: '0x10'
@@ -9441,7 +9441,7 @@ Material:
   - Name: ExpressionTextureReferences
     Offset: '0xa00'
     Size: '0x10'
-    Type: TArray<class ExpressionTextureReferences*>
+    Type: TArray<class Texture*>
   ClassSize: '0x9c0'
   FullSize: '0xa18'
   InheritedSize: '0x58'
@@ -11649,7 +11649,7 @@ MaterialFunction:
   - Name: FunctionExpressions
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class FunctionExpressions*>
+    Type: TArray<class MaterialExpression*>
   - Name: bReentrantFlag
     Offset: '0x70'
     Size: '0x1'
@@ -11709,7 +11709,7 @@ MaterialInstanceActor:
   - Name: TargetActors
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<class TargetActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
@@ -11861,7 +11861,7 @@ MatineeActor:
   - Name: GroupInst
     Offset: '0x408'
     Size: '0x10'
-    Type: TArray<class GroupInst*>
+    Type: TArray<class InterpGroupInst*>
   - Name: CameraCuts
     Offset: '0x418'
     Size: '0x10'
@@ -11997,7 +11997,7 @@ MeshComponent:
   - Name: OverrideMaterials
     Offset: '0x5b8'
     Size: '0x10'
-    Type: TArray<class OverrideMaterials*>
+    Type: TArray<class MaterialInterface*>
   ClassSize: '0x10'
   FullSize: '0x5d0'
   InheritedSize: '0x5c0'
@@ -12789,11 +12789,11 @@ NavigationSystem:
   - Name: NavDataSet
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class NavDataSet*>
+    Type: TArray<class NavigationData*>
   - Name: NavDataRegistrationQueue
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<class NavDataRegistrationQueue*>
+    Type: TArray<class NavigationData*>
   - Name: OperationMode
     Offset: '0x1cc'
     Size: '0x1'
@@ -12947,7 +12947,7 @@ NetConnection:
   - Name: Children
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class Actor*>
+    Type: TArray<class ChildConnection*>
   - Name: Driver
     Offset: '0x60'
     Size: '0x8'
@@ -12959,11 +12959,11 @@ NetConnection:
   - Name: OpenChannels
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<class OpenChannels*>
+    Type: TArray<class Channel*>
   - Name: SentTemporaries
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class SentTemporaries*>
+    Type: TArray<class Actor*>
   - Name: ViewTarget
     Offset: '0x90'
     Size: '0x8'
@@ -12991,7 +12991,7 @@ NetConnection:
   - Name: DeferredCloseChannels
     Offset: '0x344c0'
     Size: '0x10'
-    Type: TArray<class DeferredCloseChannels*>
+    Type: TArray<class Channel*>
   ClassSize: '0x34540'
   FullSize: '0x34588'
   InheritedSize: '0x48'
@@ -13053,7 +13053,7 @@ NetDriver:
   - Name: ClientConnections
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class ClientConnections*>
+    Type: TArray<class NetConnection*>
   - Name: World
     Offset: '0x90'
     Size: '0x8'
@@ -13139,7 +13139,7 @@ ObjectLibrary:
   - Name: Objects
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Objects*>
+    Type: TArray<class Object*>
   - Name: WeakObjects
     Offset: '0x48'
     Size: '0x10'
@@ -13161,7 +13161,7 @@ ObjectReferencer:
   - Name: ReferencedObjects
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ReferencedObjects*>
+    Type: TArray<class Object*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -13235,7 +13235,7 @@ ParticleEmitter:
   - Name: LODLevels
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class LODLevels*>
+    Type: TArray<class ParticleLODLevel*>
   - Name: ConvertedModules
     Offset: '0x48'
     Size: '0x1'
@@ -13291,7 +13291,7 @@ ParticleEmitter:
   - Name: ModulesNeedingInstanceData
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class ModulesNeedingInstanceData*>
+    Type: TArray<class ParticleModule*>
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'
@@ -13319,7 +13319,7 @@ ParticleLODLevel:
   - Name: Modules
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class Modules*>
+    Type: TArray<class ParticleModule*>
   - Name: TypeDataModule
     Offset: '0x48'
     Size: '0x8'
@@ -13335,23 +13335,23 @@ ParticleLODLevel:
   - Name: SpawningModules
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<class SpawningModules*>
+    Type: TArray<class ParticleModuleSpawnBase*>
   - Name: SpawnModules
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<class SpawnModules*>
+    Type: TArray<class ParticleModule*>
   - Name: UpdateModules
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class UpdateModules*>
+    Type: TArray<class ParticleModule*>
   - Name: OrbitModules
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class OrbitModules*>
+    Type: TArray<class ParticleModuleOrbit*>
   - Name: EventReceiverModules
     Offset: '0xa0'
     Size: '0x10'
-    Type: TArray<class EventReceiverModules*>
+    Type: TArray<class ParticleModuleEventReceiverBase*>
   - Name: ConvertedModules
     Offset: '0xb0'
     Size: '0x1'
@@ -14971,7 +14971,7 @@ ParticleModuleMeshMaterial:
   - Name: MeshMaterials
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class MeshMaterials*>
+    Type: TArray<class MaterialInterface*>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
@@ -16125,23 +16125,23 @@ ParticleModuleTypeDataBeam2:
   - Name: LOD_BeamModule_Source
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<class LOD_BeamModule_Source*>
+    Type: TArray<class ParticleModuleBeamSource*>
   - Name: LOD_BeamModule_Target
     Offset: '0x148'
     Size: '0x10'
-    Type: TArray<class LOD_BeamModule_Target*>
+    Type: TArray<class ParticleModuleBeamTarget*>
   - Name: LOD_BeamModule_Noise
     Offset: '0x158'
     Size: '0x10'
-    Type: TArray<class LOD_BeamModule_Noise*>
+    Type: TArray<class ParticleModuleBeamNoise*>
   - Name: LOD_BeamModule_SourceModifier
     Offset: '0x168'
     Size: '0x10'
-    Type: TArray<class LOD_BeamModule_SourceModifier*>
+    Type: TArray<class ParticleModuleBeamModifier*>
   - Name: LOD_BeamModule_TargetModifier
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<class LOD_BeamModule_TargetModifier*>
+    Type: TArray<class ParticleModuleBeamModifier*>
   ClassSize: '0x138'
   FullSize: '0x188'
   InheritedSize: '0x50'
@@ -16683,7 +16683,7 @@ ParticleSystem:
   - Name: Emitters
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<class Emitters*>
+    Type: TArray<class ParticleEmitter*>
   - Name: PreviewComponent
     Offset: '0x50'
     Size: '0x8'
@@ -16831,11 +16831,11 @@ ParticleSystemComponent:
   - Name: EmitterMaterials
     Offset: '0x5c0'
     Size: '0x10'
-    Type: TArray<class EmitterMaterials*>
+    Type: TArray<class MaterialInterface*>
   - Name: SkelMeshComponents
     Offset: '0x5d0'
     Size: '0x10'
-    Type: TArray<class SkelMeshComponents*>
+    Type: TArray<class SkeletalMeshComponent*>
   - Name: bResetOnDetach
     Offset: '0x5e0'
     Size: '0x1'
@@ -16911,7 +16911,7 @@ ParticleSystemComponent:
   - Name: ReplayClips
     Offset: '0x740'
     Size: '0x10'
-    Type: TArray<class ReplayClips*>
+    Type: TArray<class ParticleSystemReplay*>
   - Name: CustomTimeDilation
     Offset: '0x7b0'
     Size: '0x4'
@@ -17133,7 +17133,7 @@ PhysicsAsset:
   - Name: ConstraintSetup
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class ConstraintSetup*>
+    Type: TArray<class PhysicsConstraintTemplate*>
   ClassSize: '0xd0'
   FullSize: '0xf8'
   InheritedSize: '0x28'
@@ -17757,7 +17757,7 @@ PlayerCameraManager:
   - Name: ModifierList
     Offset: '0x1b38'
     Size: '0x10'
-    Type: TArray<class ModifierList*>
+    Type: TArray<class CameraModifier*>
   - Name: DefaultModifiers
     Offset: '0x1b48'
     Size: '0x10'
@@ -17777,7 +17777,7 @@ PlayerCameraManager:
   - Name: CameraLensEffects
     Offset: '0x1b88'
     Size: '0x10'
-    Type: TArray<class CameraLensEffects*>
+    Type: TArray<class EmitterCameraLensEffectBase*>
   - Name: CachedCameraShakeMod
     Offset: '0x1b98'
     Size: '0x8'
@@ -17793,11 +17793,11 @@ PlayerCameraManager:
   - Name: ActiveAnims
     Offset: '0x1c00'
     Size: '0x10'
-    Type: TArray<class ActiveAnims*>
+    Type: TArray<class CameraAnimInst*>
   - Name: FreeAnims
     Offset: '0x1c10'
     Size: '0x10'
-    Type: TArray<class FreeAnims*>
+    Type: TArray<class CameraAnimInst*>
   - Name: AnimCameraActor
     Offset: '0x1c20'
     Size: '0x8'
@@ -17879,7 +17879,7 @@ PlayerController:
   - Name: HiddenActors
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<class HiddenActors*>
+    Type: TArray<class Actor*>
   - Name: LastSpectatorStateSynchTime
     Offset: '0x498'
     Size: '0x4'
@@ -18277,11 +18277,11 @@ PrecomputedVisibilityOverrideVolume:
   - Name: OverrideVisibleActors
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<class OverrideVisibleActors*>
+    Type: TArray<class Actor*>
   - Name: OverrideInvisibleActors
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<class OverrideInvisibleActors*>
+    Type: TArray<class Actor*>
   - Name: OverrideInvisibleLevels
     Offset: '0x420'
     Size: '0x10'
@@ -19353,7 +19353,7 @@ SCS_Node:
   - Name: ChildNodes
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<class ChildNodes*>
+    Type: TArray<class SCS_Node*>
   - Name: MetaDataArray
     Offset: '0x68'
     Size: '0x10'
@@ -19507,7 +19507,7 @@ SceneComponent:
   - Name: AttachChildren
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class AttachChildren*>
+    Type: TArray<class SceneComponent*>
   - Name: bRequiresCustomLocation
     Offset: '0xd8'
     Size: '0x1'
@@ -19603,7 +19603,7 @@ SceneComponent:
   - Name: MovedActors
     Offset: '0x278'
     Size: '0x10'
-    Type: TArray<class MovedActors*>
+    Type: TArray<class Actor*>
   ClassSize: '0x218'
   FullSize: '0x2e0'
   InheritedSize: '0xc8'
@@ -19671,7 +19671,7 @@ SimpleConstructionScript:
   - Name: RootNodes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class RootNodes*>
+    Type: TArray<class SCS_Node*>
   - Name: DefaultSceneRootNode
     Offset: '0x38'
     Size: '0x8'
@@ -19765,11 +19765,11 @@ SkeletalMesh:
   - Name: MorphTargets
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<class MorphTargets*>
+    Type: TArray<class MorphTarget*>
   - Name: MeshPatchAssets
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<class MeshPatchAssets*>
+    Type: TArray<class MeshPatchAsset*>
   - Name: ClothingAssets
     Offset: '0x1f0'
     Size: '0x10'
@@ -19781,7 +19781,7 @@ SkeletalMesh:
   - Name: Sockets
     Offset: '0x228'
     Size: '0x10'
-    Type: TArray<class Sockets*>
+    Type: TArray<class SkeletalMeshSocket*>
   ClassSize: '0x210'
   FullSize: '0x238'
   InheritedSize: '0x28'
@@ -20023,7 +20023,7 @@ Skeleton:
   - Name: Sockets
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class Sockets*>
+    Type: TArray<class SkeletalMeshSocket*>
   - Name: SmartNames
     Offset: '0x128'
     Size: '0x50'
@@ -20295,7 +20295,7 @@ SoundClass:
   - Name: ChildClasses
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<class ChildClasses*>
+    Type: TArray<class SoundClass*>
   - Name: PassiveSoundMixModifiers
     Offset: '0x60'
     Size: '0x10'
@@ -20387,7 +20387,7 @@ SoundNode:
   - Name: ChildNodes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<class ChildNodes*>
+    Type: TArray<class SoundNode*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -21109,7 +21109,7 @@ StaticMesh:
   - Name: Materials
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<class Materials*>
+    Type: TArray<class MaterialInterface*>
   - Name: LightMapResolution
     Offset: '0x58'
     Size: '0x4'
@@ -21149,7 +21149,7 @@ StaticMesh:
   - Name: Sockets
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<class Sockets*>
+    Type: TArray<class StaticMeshSocket*>
   - Name: PositiveBoundsExtension
     Offset: '0xd0'
     Size: '0xc'
@@ -22003,7 +22003,7 @@ UserInterfaceSettings:
   - Name: CursorClasses
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<class CursorClasses*>
+    Type: TArray<class Object*>
   - Name: CustomScalingRuleClassInstance
     Offset: '0x148'
     Size: '0x8'
@@ -22289,15 +22289,15 @@ World:
   - Name: ExtraReferencedObjects
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<class ExtraReferencedObjects*>
+    Type: TArray<class Object*>
   - Name: PerModuleDataObjects
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<class PerModuleDataObjects*>
+    Type: TArray<class Object*>
   - Name: StreamingLevels
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<class StreamingLevels*>
+    Type: TArray<class LevelStreaming*>
   - Name: StreamingLevelsPrefix
     Offset: '0xa0'
     Size: '0x10'
@@ -22317,7 +22317,7 @@ World:
   - Name: DirtyStreamingLevels
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<class DirtyStreamingLevels*>
+    Type: TArray<class LevelStreaming*>
   - Name: Feature
     Offset: '0xf4'
     Size: '0x8'
@@ -22361,7 +22361,7 @@ World:
   - Name: Levels
     Offset: '0x150'
     Size: '0x10'
-    Type: TArray<class Levels*>
+    Type: TArray<class Level*>
   - Name: CurrentLevel
     Offset: '0x1b0'
     Size: '0x8'
@@ -22373,7 +22373,7 @@ World:
   - Name: ParameterCollectionInstances
     Offset: '0x1c8'
     Size: '0x10'
-    Type: TArray<class ParameterCollectionInstances*>
+    Type: TArray<class MaterialParameterCollectionInstance*>
   - Name: WorldComposition
     Offset: '0x6f8'
     Size: '0x8'
@@ -22391,7 +22391,7 @@ WorldComposition:
   - Name: TilesStreaming
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<class TilesStreaming*>
+    Type: TArray<class LevelStreaming*>
   - Name: TilesStreamingTimeThreshold
     Offset: '0xa8'
     Size: '0x8'
