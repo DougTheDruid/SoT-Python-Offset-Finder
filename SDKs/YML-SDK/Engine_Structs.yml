@@ -3861,7 +3861,11 @@ DeformablesSettings:
     Offset: '0xc'
     Size: '0x4'
     Type: float
-  ClassSize: '0x10'
+  - Name: WeightMultiplier
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
 DelegateArray:
   Attributes:
   - Name: Delegates
@@ -4905,7 +4909,11 @@ FeatureFlag:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x8'
+  - Name: InverseToggle
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xc'
 FeatureToggledStringAssetReferenceEntry:
   Attributes:
   - Name: Asset
@@ -8551,6 +8559,140 @@ NetDriverDefinition:
 NetObjectPtr:
   Attributes: []
   ClassSize: '0x14'
+NetRelevancyActorClusterStat:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: SubClusters
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Str SubClusters>
+  - Name: Type
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Owner
+    Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: IsCustomNamed
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  - Name: NeedsPreparation
+    Offset: '0x41'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x48'
+NetRelevancyActorStat:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: path
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Owner
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Location
+    Offset: '0x30'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: Cluster
+    Offset: '0x40'
+    Size: '0x48'
+    Type: Struct NetRelevancyActorClusterStat
+  - Name: ChannelState
+    Offset: '0x88'
+    Size: '0x1'
+    Type: byte
+  - Name: IsNetRelevant
+    Offset: '0x89'
+    Size: '0x1'
+    Type: bool
+  - Name: ActorDormancy
+    Offset: '0x8a'
+    Size: '0x1'
+    Type: byte
+  - Name: ChannelDormancy
+    Offset: '0x8b'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x90'
+NetRelevancyConnectionStat:
+  Attributes:
+  - Name: Id
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Viewer
+    Offset: '0x8'
+    Size: '0x28'
+    Type: Struct NetViewer
+  - Name: ViewerGridLocation
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Struct IntPoint
+  ClassSize: '0x38'
+NetRelevancyLevelStat:
+  Attributes:
+  - Name: Name
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Visible
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: LODIndex
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
+NetRelevancyStat:
+  Attributes:
+  - Name: Reason
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: State
+    Offset: '0x10'
+    Size: '0x70'
+    Type: Struct NetRelevancyStateStat
+  ClassSize: '0x80'
+NetRelevancyStateStat:
+  Attributes:
+  - Name: Duration
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: RemainingCycles
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: StreamingMode
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Connection
+    Offset: '0x18'
+    Size: '0x38'
+    Type: Struct NetRelevancyConnectionStat
+  - Name: Actors
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Struct NetRelevancyActorStat>
+  - Name: Levels
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<Struct NetRelevancyLevelStat>
+  ClassSize: '0x70'
 NetSubObjectPtr:
   Attributes:
   - Name: SubObject

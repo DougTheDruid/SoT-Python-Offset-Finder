@@ -963,6 +963,23 @@
       }
     ]
   },
+  "EventFaunaPickedup": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Interactor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PickedUpFauna",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "AthenaAIDebugCostDisplay": {
     "ClassSize": "0x1",
     "Attributes": []
@@ -1238,7 +1255,7 @@
     ]
   },
   "QuestVariableSharkPawn": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "TinySharkParams": {
@@ -1300,7 +1317,7 @@
     ]
   },
   "QuestVariableTinySharkExperience": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "TinySharkWorldSettingsParams": {
@@ -1411,7 +1428,7 @@
     ]
   },
   "EventTinySharkSpawned": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "TinySharkPartTag",
@@ -1424,6 +1441,12 @@
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
       }
     ]
   },
@@ -1492,7 +1515,7 @@
     ]
   },
   "TinySharkSpawnTelemetryEvent": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "TinySharkId",
@@ -1511,6 +1534,12 @@
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
       }
     ]
   },

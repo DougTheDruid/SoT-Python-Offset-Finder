@@ -12,7 +12,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "TrinketMountpointManager",
+        "Name": "BasicTrinketMountpointManager",
         "Type": "Class TrinketMountpointManagerComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"

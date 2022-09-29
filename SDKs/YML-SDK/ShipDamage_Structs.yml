@@ -137,9 +137,9 @@ ShipPartLevelsOfDamage:
     Type: TArray<Struct DistanceAndLevelOfDamage>
   - Name: FeatureName
     Offset: '0x30'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x38'
+  ClassSize: '0x40'
 ShipRestoredNetworkEvent:
   Attributes: []
   ClassSize: '0x10'

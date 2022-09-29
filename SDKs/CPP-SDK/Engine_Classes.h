@@ -668,7 +668,7 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x60
 class GameEngine: public Engine
 {
 public:
@@ -1413,7 +1413,7 @@ public:
 };
 
 
-// Size 0x2e0
+// Size 0x2f0
 class ParticleSystemComponent: public PrimitiveComponent
 {
 public:
@@ -1427,20 +1427,20 @@ public:
 	Struct Vector                                                OldPosition;                                       // 0x688(0xc)
 	Struct Vector                                                PartSysVelocity;                                   // 0x694(0xc)
 	Struct Vector                                                CustomInheritedVelocity;                           // 0x6b8(0xc)
-	float                                                        CustomParameterDrivingCurves;                      // 0x6d0(0x4)
-	Struct LinearColor                                           ColourTint;                                        // 0x6d4(0x10)
-	float                                                        WarmUpTime;                                        // 0x6e4(0x4)
-	float                                                        WarmupTickRate;                                    // 0x6e8(0x4)
-	bool                                                         bWarmingUp;                                        // 0x6ec(0x1)
-	float                                                        SecondsBeforeInactive;                             // 0x708(0x4)
-	float                                                        MaxTimeBeforeForceUpdateTransform;                 // 0x714(0x4)
-	bool                                                         bOverrideLODMethod;                                // 0x71c(0x1)
-	byte                                                         LODMethod;                                         // 0x720(0x1)
-	bool                                                         bSkipUpdateDynamicDataDuringTick;                  // 0x724(0x1)
-	TArray<Struct MaterialRelevance>                             CachedViewRelevanceFlags;                          // 0x728(0x10)
-	TArray<class ParticleSystemReplay*>                          ReplayClips;                                       // 0x740(0x10)
-	float                                                        CustomTimeDilation;                                // 0x7b0(0x4)
-	bool                                                         bUnbound;                                          // 0x7c8(0x1)
+	float                                                        CustomParameterDrivingCurves;                      // 0x6d8(0x4)
+	Struct LinearColor                                           ColourTint;                                        // 0x6dc(0x10)
+	float                                                        WarmUpTime;                                        // 0x6ec(0x4)
+	float                                                        WarmupTickRate;                                    // 0x6f0(0x4)
+	bool                                                         bWarmingUp;                                        // 0x6f4(0x1)
+	float                                                        SecondsBeforeInactive;                             // 0x710(0x4)
+	float                                                        MaxTimeBeforeForceUpdateTransform;                 // 0x71c(0x4)
+	bool                                                         bOverrideLODMethod;                                // 0x724(0x1)
+	byte                                                         LODMethod;                                         // 0x728(0x1)
+	bool                                                         bSkipUpdateDynamicDataDuringTick;                  // 0x72c(0x1)
+	TArray<Struct MaterialRelevance>                             CachedViewRelevanceFlags;                          // 0x730(0x10)
+	TArray<class ParticleSystemReplay*>                          ReplayClips;                                       // 0x748(0x10)
+	float                                                        CustomTimeDilation;                                // 0x7b8(0x4)
+	bool                                                         bUnbound;                                          // 0x7d0(0x1)
 };
 
 
@@ -9089,6 +9089,7 @@ public:
 	bool                                                         bKillOnDeactivate;                                 // 0xdc(0x1)
 	bool                                                         bKillOnCompleted;                                  // 0xdc(0x1)
 	byte                                                         SortMode;                                          // 0xe0(0x1)
+	byte                                                         WaterKillCondition;                                // 0xe1(0x1)
 	bool                                                         bUseLegacyEmitterTime;                             // 0xe4(0x1)
 	float                                                        EmitterDuration;                                   // 0xe8(0x4)
 	float                                                        EmitterDurationLow;                                // 0xec(0x4)

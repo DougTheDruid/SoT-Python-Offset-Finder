@@ -25,7 +25,7 @@ BP_VotableCancelTale_C:
   - Name: DaggerPositions
     Offset: '0x520'
     Size: '0x10'
-    Type: TArray<Struct Transform>
+    Type: TArray<Struct Tokens>
   ClassSize: '0x40'
   FullSize: '0x530'
   InheritedSize: '0x4f0'

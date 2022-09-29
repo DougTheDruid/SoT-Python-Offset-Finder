@@ -62,6 +62,23 @@
       }
     ]
   },
+  "ClientMatchmakingResponseModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "EstimatedWaitTime",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RetryAfter",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "ContestMatchmakingServerRequestModel": {
     "ClassSize": "0xa0",
     "Attributes": [
@@ -128,7 +145,7 @@
     ]
   },
   "ServerCrewModel": {
-    "ClassSize": "0x90",
+    "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -195,6 +212,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x88"
+      },
+      {
+        "Name": "TimeWaitingForMatch",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x90"
       }
     ]
   },

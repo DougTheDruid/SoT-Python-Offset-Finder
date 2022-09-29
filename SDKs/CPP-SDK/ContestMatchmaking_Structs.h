@@ -35,6 +35,15 @@ public:
 };
 
 
+// Size 0x10
+struct ClientMatchmakingResponseModel
+{
+public:
+	Struct Timespan                                              EstimatedWaitTime;                                 // 0x0(0x8)
+	Struct Timespan                                              RetryAfter;                                        // 0x8(0x8)
+};
+
+
 // Size 0xa0
 struct ContestMatchmakingServerRequestModel
 {
@@ -52,7 +61,7 @@ public:
 };
 
 
-// Size 0x90
+// Size 0x98
 struct ServerCrewModel
 {
 public:
@@ -67,6 +76,7 @@ public:
 	int                                                          PvPSkillLevel;                                     // 0x74(0x4)
 	Struct Guid                                                  RivalCrewId;                                       // 0x78(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
+	Struct Timespan                                              TimeWaitingForMatch;                               // 0x90(0x8)
 };
 
 

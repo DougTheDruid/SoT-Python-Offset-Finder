@@ -60,9 +60,9 @@ BP_EmissaryTable_Athena_01_C:
     Type: Class StaticMesh*
   - Name: FeatureName
     Offset: '0x6a8'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x78'
-  FullSize: '0x6b0'
+  ClassSize: '0x7c'
+  FullSize: '0x6b4'
   InheritedSize: '0x638'
   Super: BP_EmissaryTable_01_C

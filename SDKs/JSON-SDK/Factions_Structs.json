@@ -1,4 +1,101 @@
 {
+  "LootLevelReward": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "LootLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RewardId",
+        "Type": "Struct RewardId",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "LootLevelPopUpMessageDesc",
+        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PopUpIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "StreakParticles": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Particles",
+        "Type": "Class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PartType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StreakMesh": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "Class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PartType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StreakMaterial": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Material",
+        "Type": "Class MaterialInstance*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PartType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StreakCompanyParticles": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParticleData",
+        "Type": "TArray<Struct StreakParticles>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "FactionVoteRemovedEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -90,54 +187,139 @@
       }
     ]
   },
-  "FigureheadFactionVFXParams": {
-    "ClassSize": "0x30",
+  "FactionStreakData": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "FBParticleSystem",
-        "Type": "Class ParticleSystem*",
+        "Name": "Faction",
+        "Type": "class",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "FGParticleSystem",
-        "Type": "Class ParticleSystem*",
-        "Size": "0x8",
+        "Name": "StreakLevel",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x8"
       },
       {
-        "Name": "Location",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "Struct Rotator",
-        "Size": "0xc",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "AutoDestroy",
+        "Name": "IsUpdate",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OwnerOnlySee",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "OwnerNoSee",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2a"
+        "Offset": "0xc"
       }
     ]
   },
-  "CrewJoinedFactionPopupEvent": {
+  "StreakDynamicMaterials": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DynamicMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StreakCompanyMaterials": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Materials",
+        "Type": "TArray<Struct StreakMaterial>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StreakMaterialValue": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Streak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Length",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "FactionShipSunkUIEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "OpponentFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MyKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TheirKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "FactionShipSunkNetworkEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "OpponentFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OpponentCrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "MyKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "TheirKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FactionPopupEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {

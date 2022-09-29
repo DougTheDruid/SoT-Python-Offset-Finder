@@ -31,7 +31,7 @@
       },
       {
         "Name": "OffTopSplineComponentPositions",
-        "Type": "TArray<Struct Vector>",
+        "Type": "TArray<Struct InteractOffset>",
         "Size": "0x10",
         "Offset": "0x5f8"
       },

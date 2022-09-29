@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 CrewSkillRatingService:
   Attributes: []
-  ClassSize: '0xa8'
-  FullSize: '0xd0'
+  ClassSize: '0xf8'
+  FullSize: '0x120'
   InheritedSize: '0x28'
   Super: Object
 CrewSkillRatingServiceInterface:

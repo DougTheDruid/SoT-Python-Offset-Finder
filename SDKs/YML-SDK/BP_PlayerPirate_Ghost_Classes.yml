@@ -3,42 +3,42 @@
 BP_PlayerPirate_Ghost_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x1c50'
+    Offset: '0x1c60'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: BP_GhostCharacterAudioComponent
-    Offset: '0x1c58'
+    Offset: '0x1c68'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_GhostCharacterAudioComponent_C*
   - Name: WaterInteraction
-    Offset: '0x1c60'
+    Offset: '0x1c70'
     Size: '0x8'
     Type: Class WaterInteractionComponent*
   - Name: PlayerNameplate
-    Offset: '0x1c68'
+    Offset: '0x1c78'
     Size: '0x8'
     Type: Class PlayerNameplateComponent*
   - Name: BodyLightController
-    Offset: '0x1c70'
+    Offset: '0x1c80'
     Size: '0x8'
     Type: Class BodyLightControllerComponent*
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x1c78'
+    Offset: '0x1c88'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   - Name: BodyLight
-    Offset: '0x1c80'
+    Offset: '0x1c90'
     Size: '0x8'
     Type: Class AmbientLightSourceComponent*
   - Name: CharacterFootImpact
-    Offset: '0x1c88'
+    Offset: '0x1c98'
     Size: '0x8'
     Type: Class CharacterFootImpactComponent*
   - Name: Default Ghost Parameter
-    Offset: '0x1c90'
+    Offset: '0x1ca0'
     Size: '0x4'
     Type: float
   ClassSize: '0x44'
-  FullSize: '0x1c94'
-  InheritedSize: '0x1c50'
+  FullSize: '0x1ca4'
+  InheritedSize: '0x1c60'
   Super: AthenaGhostPlayerCharacter

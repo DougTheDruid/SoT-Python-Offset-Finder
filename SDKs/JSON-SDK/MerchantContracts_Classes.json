@@ -15,9 +15,9 @@
   },
   "MerchantContractsService": {
     "Super": "Object",
-    "FullSize": "0x58",
+    "FullSize": "0xc8",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "Contracts",

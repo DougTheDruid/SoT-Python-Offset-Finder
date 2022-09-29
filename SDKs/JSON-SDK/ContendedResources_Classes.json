@@ -20,6 +20,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ReservableContendedResourceStateInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "WorldResourceRegistryInterface": {
     "Super": "Interface",
     "FullSize": "0x28",

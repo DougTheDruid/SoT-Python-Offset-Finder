@@ -8,9 +8,9 @@
   },
   "AsyncLoadingMonitoringService": {
     "Super": "Object",
-    "FullSize": "0xf8",
+    "FullSize": "0xb8",
     "InheritedSize": "0x28",
-    "ClassSize": "0xd0",
+    "ClassSize": "0x90",
     "Attributes": []
   },
   "DougTheDruid": {

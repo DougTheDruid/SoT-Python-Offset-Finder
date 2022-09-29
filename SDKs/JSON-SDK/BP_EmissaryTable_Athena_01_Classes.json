@@ -1,9 +1,9 @@
 {
   "BP_EmissaryTable_Athena_01_C": {
     "Super": "BP_EmissaryTable_01_C",
-    "FullSize": "0x6b0",
+    "FullSize": "0x6b4",
     "InheritedSize": "0x638",
-    "ClassSize": "0x78",
+    "ClassSize": "0x7c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -92,7 +92,7 @@
       {
         "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x6a8"
       }
     ]

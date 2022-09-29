@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 QuestVariableTradeRouteData:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 TradeRouteMapping:
   Attributes:
   - Name: StartIsland

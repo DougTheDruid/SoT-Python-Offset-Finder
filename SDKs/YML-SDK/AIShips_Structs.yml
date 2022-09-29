@@ -480,11 +480,15 @@ AIShipSpawnTelemetryEvent:
     Offset: '0x50'
     Size: '0x10'
     Type: Struct FString
-  - Name: AIShipWaveIndex
+  - Name: SpawnLocation
     Offset: '0x60'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: AIShipWaveIndex
+    Offset: '0x6c'
     Size: '0x4'
     Type: int
-  ClassSize: '0x68'
+  ClassSize: '0x70'
 AIShipSpawnedEvent:
   Attributes:
   - Name: Ship
@@ -564,13 +568,13 @@ FeatureLockedAIShipBattles:
   Attributes:
   - Name: Feature
     Offset: '0x0'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
   - Name: BattlesData
-    Offset: '0x8'
+    Offset: '0x10'
     Size: '0x8'
     Type: Class AIShipBattlesDataAsset*
-  ClassSize: '0x10'
+  ClassSize: '0x18'
 FeatureLockedAIShipEncounterBattleGenerationParams:
   Attributes:
   - Name: Feature

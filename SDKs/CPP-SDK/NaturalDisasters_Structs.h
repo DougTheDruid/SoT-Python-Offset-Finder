@@ -80,6 +80,15 @@ public:
 };
 
 
+// Size 0x10
+struct GeyserStoryCustomisationData
+{
+public:
+	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Class GeyserSetupDataAsset*                                  GeyserSetupData;                                   // 0x8(0x8)
+};
+
+
 // Size 0x80
 struct PlayerFeedback
 {

@@ -50,10 +50,11 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	class                                                        Faction;                                           // 0x10(0x8)
 	byte                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
+	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
 };
 
 
-// Size 0x48
+// Size 0x70
 struct CrewFactionEntryData
 {
 public:
@@ -64,6 +65,9 @@ public:
 	int                                                          SandsOfFate;                                       // 0x2c(0x4)
 	float                                                        CooldownTimeStamp;                                 // 0x30(0x4)
 	bool                                                         IsInInvasion;                                      // 0x34(0x1)
+	TArray<Struct Guid>                                          EligibleLootBootyIds;                              // 0x38(0x10)
+	int                                                          CurrentLootValue;                                  // 0x48(0x4)
+	TArray<Bool HasDisplayedPromptForLootLevel>                  HasDisplayedPromptForLootLevel;                    // 0x50(0x10)
 };
 
 
@@ -126,11 +130,12 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 struct CrewJoinedFactionSuccess
 {
 public:
 	Struct Guid                                                  JoiningCrewId;                                     // 0x0(0x10)
+	class                                                        FactionJoined;                                     // 0x10(0x8)
 };
 
 

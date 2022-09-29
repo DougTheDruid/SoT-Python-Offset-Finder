@@ -104,9 +104,9 @@ BP_EmissaryTable_Reapers_01_C:
     Type: Class StaticMeshComponent*
   - Name: FeatureName
     Offset: '0x700'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0xd0'
-  FullSize: '0x708'
+  ClassSize: '0xd4'
+  FullSize: '0x70c'
   InheritedSize: '0x638'
   Super: BP_EmissaryTable_01_C

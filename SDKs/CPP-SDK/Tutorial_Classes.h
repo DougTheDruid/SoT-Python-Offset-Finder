@@ -84,7 +84,7 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x70
 class TutorialManager: public ActorComponent
 {
 public:
@@ -103,6 +103,7 @@ public:
 	bool                                                         HasPosessedPawn;                                   // 0x114(0x1)
 	bool                                                         HasPlayerFinshedSpawning;                          // 0x115(0x1)
 	bool                                                         IsPlayerWaitingForCaptaincySessionResponse;        // 0x116(0x1)
+	bool                                                         HasPlayerPromptsServiceSetup;                      // 0x117(0x1)
 };
 
 

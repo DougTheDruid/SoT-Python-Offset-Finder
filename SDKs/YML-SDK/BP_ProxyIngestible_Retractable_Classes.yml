@@ -3,10 +3,10 @@
 BP_ProxyIngestible_Retractable_C:
   Attributes:
   - Name: RetractableItemProxy
-    Offset: '0x7b8'
+    Offset: '0x7f0'
     Size: '0x8'
     Type: Class RetractableItemProxyComponent*
   ClassSize: '0x8'
-  FullSize: '0x7c0'
-  InheritedSize: '0x7b8'
+  FullSize: '0x7f8'
+  InheritedSize: '0x7f0'
   Super: BP_ProxyIngestible_C

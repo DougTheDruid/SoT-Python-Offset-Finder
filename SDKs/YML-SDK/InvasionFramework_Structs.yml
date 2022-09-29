@@ -10,11 +10,22 @@ InvasionCrewData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: FactionIdentifier
+    Offset: '0x14'
+    Size: '0x8'
+    Type: struct FName
   - Name: ReadyForInvasion
-    Offset: '0x11'
+    Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x14'
+  ClassSize: '0x20'
+InvasionCrewMusicStateChangedClientEvent:
+  Attributes:
+  - Name: InvasionCrewMusicState
+    Offset: '0x0'
+    Size: '0x18'
+    Type: Struct TimeStampedInvasionMusicState
+  ClassSize: '0x18'
 InvasionEndedTelemetryEvent:
   Attributes:
   - Name: Participants
@@ -23,21 +34,21 @@ InvasionEndedTelemetryEvent:
     Type: TArray<Struct InvasionCrewData>
   - Name: Winner
     Offset: '0x10'
-    Size: '0x14'
+    Size: '0x20'
     Type: Struct InvasionCrewData
   - Name: InvasionDurationInSeconds
-    Offset: '0x24'
+    Offset: '0x30'
     Size: '0x4'
     Type: float
   - Name: ParticipantFactionData
-    Offset: '0x28'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct CrewFactionTelemetryData>
   - Name: InvasionEndedReason
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x40'
+  ClassSize: '0x50'
 InvasionParticipatingCrewData:
   Attributes:
   - Name: CrewIds
@@ -49,3 +60,29 @@ InvasionParticipatingCrewData:
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
   ClassSize: '0x70'
+ReplicatedInvasionCrewMusicState:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: CurrentTimeStampedMusicState
+    Offset: '0x10'
+    Size: '0x18'
+    Type: Struct TimeStampedInvasionMusicState
+  ClassSize: '0x28'
+TimeStampedInvasionMusicState:
+  Attributes:
+  - Name: Faction
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Company*
+  - Name: InvasionMusicState
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: EnteredStateServerTimeStamp
+    Offset: '0x10'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x18'

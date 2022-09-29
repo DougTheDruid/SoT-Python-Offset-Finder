@@ -14,44 +14,44 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class AddMarkToTornMapStepDescBase: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableGuid                                     MapID;                                             // 0x80(0x20)
-	Struct TaleQuestVariableMapMarkType                          MapMark;                                           // 0xa0(0x20)
-};
-
-
-// Size 0x20
-class AddMarkToTornMapAtLocationStepDesc: public AddMarkToTornMapStepDescBase
-{
-public:
-	Struct QuestVariableVector                                   MarkLocation;                                      // 0xc0(0x20)
-};
-
-
-// Size 0x20
-class AddMarkToTornMapAtActorLocationStepDesc: public AddMarkToTornMapStepDescBase
-{
-public:
-	Struct QuestVariableActor                                    MarkLocation;                                      // 0xc0(0x20)
+	Struct QuestVariableGuid                                     MapId;                                             // 0x80(0x30)
+	Struct TaleQuestVariableMapMarkType                          MapMark;                                           // 0xb0(0x30)
 };
 
 
 // Size 0x30
+class AddMarkToTornMapAtLocationStepDesc: public AddMarkToTornMapStepDescBase
+{
+public:
+	Struct QuestVariableVector                                   MarkLocation;                                      // 0xe0(0x30)
+};
+
+
+// Size 0x30
+class AddMarkToTornMapAtActorLocationStepDesc: public AddMarkToTornMapStepDescBase
+{
+public:
+	Struct QuestVariableActor                                    MarkLocation;                                      // 0xe0(0x30)
+};
+
+
+// Size 0x40
 class GetNumberOfCollectedTornMapPiecesStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class GetNumberOfCollectedTornMapPiecesStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableGuid                                     MapID;                                             // 0x80(0x20)
-	Struct QuestVariableInt                                      NumPieces;                                         // 0xa0(0x20)
+	Struct QuestVariableGuid                                     MapId;                                             // 0x80(0x30)
+	Struct QuestVariableInt                                      NumPieces;                                         // 0xb0(0x30)
 };
 
 
@@ -79,7 +79,7 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x60
 class SelectIslandsFromRegionStep: public TaleQuestStep
 {
 public:
@@ -88,35 +88,35 @@ public:
 };
 
 
-// Size 0x90
+// Size 0xd0
 class SelectIslandsFromRegionStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableDataAsset                                Region;                                            // 0x80(0x20)
-	Struct QuestVariableInt                                      NumIslands;                                        // 0xa0(0x20)
-	Struct QuestVariableInt                                      MaxDifferentIslands;                               // 0xc0(0x20)
-	Struct QuestVariableNameArray                                SelectedIslands;                                   // 0xe0(0x20)
-	Class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0x100(0x8)
-	int                                                          DefaultNumIslands;                                 // 0x108(0x4)
-	int                                                          DefaultMaxDifferentIslands;                        // 0x10c(0x4)
+	Struct QuestVariableDataAsset                                Region;                                            // 0x80(0x30)
+	Struct QuestVariableInt                                      NumIslands;                                        // 0xb0(0x30)
+	Struct QuestVariableInt                                      MaxDifferentIslands;                               // 0xe0(0x30)
+	Struct QuestVariableNameArray                                SelectedIslands;                                   // 0x110(0x30)
+	Class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0x140(0x8)
+	int                                                          DefaultNumIslands;                                 // 0x148(0x4)
+	int                                                          DefaultMaxDifferentIslands;                        // 0x14c(0x4)
 };
 
 
-// Size 0x80
+// Size 0xc0
 class TaleQuestAddLocationMapStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x80
+// Size 0xc0
 class TaleQuestAddTornMapStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x60
+// Size 0x90
 class TaleQuestAddTradeRouteMapStep: public TaleQuestStep
 {
 public:
@@ -144,37 +144,37 @@ public:
 };
 
 
-// Size 0x88
+// Size 0xc8
 class TaleQuestAddLocationMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableInt                                      NumberOfChests;                                    // 0x88(0x20)
-	Struct QuestVariableDataAsset                                RegionMapData;                                     // 0xa8(0x20)
-	Struct QuestVariableDataAsset                                VaultData;                                         // 0xc8(0x20)
-	Struct QuestVariableDataAsset                                MapParams;                                         // 0xe8(0x20)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableInt                                      NumberOfChests;                                    // 0x88(0x30)
+	Struct QuestVariableDataAsset                                RegionMapData;                                     // 0xb8(0x30)
+	Struct QuestVariableDataAsset                                VaultData;                                         // 0xe8(0x30)
+	Struct QuestVariableDataAsset                                MapParams;                                         // 0x118(0x30)
 };
 
 
-// Size 0x80
+// Size 0xc0
 class TaleQuestAddTornMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	Struct QuestVariableName                                     IslandName;                                        // 0x80(0x20)
-	Struct QuestVariableInt                                      NumberOfPieces;                                    // 0xa0(0x20)
-	Struct QuestVariableDataAsset                                MapParams;                                         // 0xc0(0x20)
-	Struct QuestVariableGuid                                     MapID;                                             // 0xe0(0x20)
+	Struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
+	Struct QuestVariableInt                                      NumberOfPieces;                                    // 0xb0(0x30)
+	Struct QuestVariableDataAsset                                MapParams;                                         // 0xe0(0x30)
+	Struct QuestVariableGuid                                     MapId;                                             // 0x110(0x30)
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestAddTradeRouteMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	Struct QuestVariableDataAsset                                TradeRouteData;                                    // 0x80(0x20)
-	Struct QuestVariableText                                     VesselName;                                        // 0xa0(0x20)
-	Struct QuestVariableGuid                                     MapID;                                             // 0xc0(0x20)
-	Class ClueSiteTypeToMapMarkIdDataAsset*                      ClueSiteToMapMarkIdMap;                            // 0xe0(0x8)
+	Struct QuestVariableDataAsset                                TradeRouteData;                                    // 0x80(0x30)
+	Struct QuestVariableText                                     VesselName;                                        // 0xb0(0x30)
+	Struct QuestVariableGuid                                     MapId;                                             // 0xe0(0x30)
+	Class ClueSiteTypeToMapMarkIdDataAsset*                      ClueSiteToMapMarkIdMap;                            // 0x110(0x8)
 };
 
 
@@ -182,7 +182,7 @@ public:
 class TaleQuestLocationMapChestFoundStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
 };
 
 

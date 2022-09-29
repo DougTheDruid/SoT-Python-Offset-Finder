@@ -1760,6 +1760,17 @@ EventFaunaAgitationBegun:
 EventFaunaAgitationEnded:
   Attributes: []
   ClassSize: '0x1'
+EventFaunaPickedup:
+  Attributes:
+  - Name: Interactor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: PickedUpFauna
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x10'
 EventFaunaThreatLevelChanged:
   Attributes:
   - Name: ThreatLevel
@@ -1974,7 +1985,11 @@ EventTinySharkSpawned:
     Offset: '0x10'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0x20'
+  - Name: SpawnLocation
+    Offset: '0x20'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x30'
 EventVisualAppearanceSelected:
   Attributes:
   - Name: PartsCategory
@@ -2184,10 +2199,10 @@ PlayerKillAITelemetryEvent:
   ClassSize: '0x10'
 QuestVariableSharkPawn:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableTinySharkExperience:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 ReplicatedAIPartsData:
   Attributes:
   - Name: PartsCategory
@@ -2440,7 +2455,11 @@ TinySharkSpawnTelemetryEvent:
     Offset: '0x20'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0x30'
+  - Name: SpawnLocation
+    Offset: '0x30'
+    Size: '0xc'
+    Type: Struct Vector
+  ClassSize: '0x40'
 TinySharkSpawnedNetworkEvent:
   Attributes: []
   ClassSize: '0x10'

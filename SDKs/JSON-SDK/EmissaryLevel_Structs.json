@@ -380,7 +380,7 @@
     ]
   },
   "EmissaryRewardEntry": {
-    "ClassSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "Company",
@@ -391,13 +391,13 @@
       {
         "Name": "ActionRewardData",
         "Type": "Struct EmissaryActionRewardData",
-        "Size": "0x78",
+        "Size": "0x88",
         "Offset": "0x8"
       }
     ]
   },
   "EmissaryActionRewardData": {
-    "ClassSize": "0x78",
+    "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "OwnershipChangedRewards",
@@ -434,6 +434,29 @@
         "Type": "TArray<Struct EmissaryCompanyActionReward>",
         "Size": "0x10",
         "Offset": "0x68"
+      },
+      {
+        "Name": "FactionActionRewards",
+        "Type": "TArray<Struct EmissaryFactionActionReward>",
+        "Size": "0x10",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "EmissaryFactionActionReward": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "FactionActionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Amount",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

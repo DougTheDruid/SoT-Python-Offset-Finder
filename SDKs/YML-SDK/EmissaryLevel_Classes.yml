@@ -49,16 +49,16 @@ EmissaryFlotsamDuplicationInterface:
 EmissaryFlotsamItemInfo:
   Attributes:
   - Name: HandInOwnFlotsamReward
-    Offset: '0x728'
+    Offset: '0x730'
     Size: '0x18'
     Type: Struct CompanySpecificBootyReward
   - Name: FlotsamCanBeDuplicated
-    Offset: '0x740'
+    Offset: '0x748'
     Size: '0x1'
     Type: bool
   ClassSize: '0x28'
-  FullSize: '0x748'
-  InheritedSize: '0x720'
+  FullSize: '0x750'
+  InheritedSize: '0x728'
   Super: BootyItemInfo
 EmissaryFlotsamItemSpawnComponent:
   Attributes: []
@@ -83,15 +83,15 @@ EmissaryFlotsamTooltipCustomizerComponent:
 EmissaryLevelService:
   Attributes:
   - Name: Settings
-    Offset: '0x468'
+    Offset: '0x480'
     Size: '0x8'
     Type: Class EmissaryLevelSettingsAsset*
   - Name: RewardSettings
-    Offset: '0x470'
+    Offset: '0x488'
     Size: '0x8'
     Type: Class EmissaryRewardSettingsAsset*
-  ClassSize: '0x338'
-  FullSize: '0x700'
+  ClassSize: '0x350'
+  FullSize: '0x718'
   InheritedSize: '0x3c8'
   Super: Actor
 EmissaryLevelSettingsAsset:

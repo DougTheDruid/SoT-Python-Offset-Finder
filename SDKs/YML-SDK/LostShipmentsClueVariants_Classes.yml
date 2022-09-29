@@ -606,14 +606,14 @@ TaleQuestGetNPCActorFromClueSiteStepDesc:
   Attributes:
   - Name: ClueSite
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: NPCFromClueSite
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGetPhasedVersionOfActorFromAssetMapStep:
@@ -630,22 +630,22 @@ TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc:
   Attributes:
   - Name: ExistingNPCActor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: ObtainedPhasedNPCActorType
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActorAssetType
   - Name: PhasingSourceActor
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: IndexAssetMap
-    Offset: '0xe0'
+    Offset: '0x110'
     Size: '0x8'
     Type: Class ExistingToPhasedNPCIndexAssetMap*
-  ClassSize: '0x68'
-  FullSize: '0xe8'
+  ClassSize: '0x98'
+  FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStep:
@@ -658,14 +658,14 @@ TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc:
   Attributes:
   - Name: ShipwreckSpawnedOn
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableShipwreck
   - Name: SpawnedMerchantCaptain
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSpawnWashedUpMessageInABottleClueStep:
@@ -678,18 +678,18 @@ TaleQuestSpawnWashedUpMessageInABottleClueStepDesc:
   Attributes:
   - Name: ClueSite
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: ClueDescriptor
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableClueDescriptor
   - Name: MessageInABottle
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x60'
-  FullSize: '0xe0'
+  ClassSize: '0x90'
+  FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSpawnWashedUpSkeletonClueStep:
@@ -702,26 +702,26 @@ TaleQuestSpawnWashedUpSkeletonClueStepDesc:
   Attributes:
   - Name: ClueSite
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: ClueDescriptor
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableClueDescriptor
   - Name: SkeletonActor
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: ClueItem
-    Offset: '0xe0'
-    Size: '0x20'
+    Offset: '0x110'
+    Size: '0x30'
     Type: Struct QuestVariableItemInfo
   - Name: SkeletonClueSocketName
-    Offset: '0x100'
+    Offset: '0x140'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x88'
-  FullSize: '0x108'
+  ClassSize: '0xc8'
+  FullSize: '0x148'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 WaitForClueCollectedStep:
@@ -734,26 +734,26 @@ WaitForClueCollectedStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class Actor*
-  ClassSize: '0x78'
-  FullSize: '0x110'
+  ClassSize: '0xa8'
+  FullSize: '0x140'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 WaitForClueCollectedStepDesc:
   Attributes:
   - Name: Clue
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueDescriptor
   - Name: ClueActor
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: Discoverer
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x60'
-  FullSize: '0xe0'
+  ClassSize: '0x90'
+  FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 WashedUpMessageInABottleClueCreator:

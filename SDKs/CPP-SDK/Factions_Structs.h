@@ -6,6 +6,53 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x28
+struct LootLevelReward
+{
+public:
+	byte                                                         LootLevel;                                         // 0x0(0x1)
+	Struct RewardId                                              RewardId;                                          // 0x4(0x8)
+	TArray<Struct FactionServicePopUpData>                       LootLevelPopUpMessageDesc;                         // 0x10(0x10)
+	int                                                          PopUpIndex;                                        // 0x20(0x4)
+};
+
+
+// Size 0x10
+struct StreakParticles
+{
+public:
+	Class ParticleSystem*                                        Particles;                                         // 0x0(0x8)
+	byte                                                         PartType;                                          // 0x8(0x1)
+};
+
+
+// Size 0x10
+struct StreakMesh
+{
+public:
+	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	byte                                                         PartType;                                          // 0x8(0x1)
+};
+
+
+// Size 0x10
+struct StreakMaterial
+{
+public:
+	Class MaterialInstance*                                      Material;                                          // 0x0(0x8)
+	byte                                                         PartType;                                          // 0x8(0x1)
+};
+
+
+// Size 0x18
+struct StreakCompanyParticles
+{
+public:
+	class                                                        Company;                                           // 0x0(0x8)
+	TArray<Struct StreakParticles>                               ParticleData;                                      // 0x8(0x10)
+};
+
+
 // Size 0x8
 struct FactionVoteRemovedEvent
 {
@@ -52,22 +99,67 @@ public:
 };
 
 
-// Size 0x30
-struct FigureheadFactionVFXParams
+// Size 0x10
+struct FactionStreakData
 {
 public:
-	Class ParticleSystem*                                        FBParticleSystem;                                  // 0x0(0x8)
-	Class ParticleSystem*                                        FGParticleSystem;                                  // 0x8(0x8)
-	Struct Vector                                                Location;                                          // 0x10(0xc)
-	Struct Rotator                                               Rotation;                                          // 0x1c(0xc)
-	bool                                                         AutoDestroy;                                       // 0x28(0x1)
-	bool                                                         OwnerOnlySee;                                      // 0x29(0x1)
-	bool                                                         OwnerNoSee;                                        // 0x2a(0x1)
+	class                                                        Faction;                                           // 0x0(0x8)
+	int                                                          StreakLevel;                                       // 0x8(0x4)
+	bool                                                         IsUpdate;                                          // 0xc(0x1)
 };
 
 
 // Size 0x18
-struct CrewJoinedFactionPopupEvent
+struct StreakDynamicMaterials
+{
+public:
+	class                                                        Company;                                           // 0x0(0x8)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x8(0x10)
+};
+
+
+// Size 0x18
+struct StreakCompanyMaterials
+{
+public:
+	class                                                        Company;                                           // 0x0(0x8)
+	TArray<Struct StreakMaterial>                                Materials;                                         // 0x8(0x10)
+};
+
+
+// Size 0x8
+struct StreakMaterialValue
+{
+public:
+	int                                                          Streak;                                            // 0x0(0x4)
+	float                                                        Length;                                            // 0x4(0x4)
+};
+
+
+// Size 0x20
+struct FactionShipSunkUIEvent
+{
+public:
+	byte                                                         OpponentFaction;                                   // 0x0(0x1)
+	Struct FString                                               ShipName;                                          // 0x8(0x10)
+	int                                                          MyKillStreak;                                      // 0x18(0x4)
+	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
+};
+
+
+// Size 0x30
+struct FactionShipSunkNetworkEvent
+{
+public:
+	byte                                                         OpponentFaction;                                   // 0x10(0x1)
+	Struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
+	int                                                          MyKillStreak;                                      // 0x24(0x4)
+	int                                                          TheirKillStreak;                                   // 0x28(0x4)
+};
+
+
+// Size 0x18
+struct FactionPopupEvent
 {
 public:
 	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)

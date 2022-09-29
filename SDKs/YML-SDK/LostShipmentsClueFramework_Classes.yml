@@ -264,8 +264,8 @@ TaleQuestChooseLandOrSeaStep:
     Offset: '0xb0'
     Size: '0x8'
     Type: Class SeaClueSiteTypesDataAsset*
-  ClassSize: '0xc0'
-  FullSize: '0x158'
+  ClassSize: '0x100'
+  FullSize: '0x198'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestChooseLandOrSeaStepDesc:
@@ -296,22 +296,22 @@ TaleQuestChooseLandOrSeaStepDesc:
     Type: float
   - Name: ProjectionPoint
     Offset: '0xa0'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: TradeRouteData
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xd0'
+    Size: '0x30'
     Type: Struct QuestVariableTradeRouteData
   - Name: IsSeaLocation
-    Offset: '0xe0'
-    Size: '0x20'
+    Offset: '0x100'
+    Size: '0x30'
     Type: Struct QuestVariableBool
   - Name: ValidIslandNames
-    Offset: '0x100'
-    Size: '0x20'
+    Offset: '0x130'
+    Size: '0x30'
     Type: Struct QuestVariableNameArray
-  ClassSize: '0xa0'
-  FullSize: '0x120'
+  ClassSize: '0xe0'
+  FullSize: '0x160'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestClueSiteService:
@@ -340,134 +340,134 @@ TaleQuestClueSiteServiceDesc:
   Super: TaleQuestServiceDesc
 TaleQuestGenerateCluePointingToSiteStep:
   Attributes: []
-  ClassSize: '0x80'
-  FullSize: '0x118'
+  ClassSize: '0xc0'
+  FullSize: '0x158'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestGenerateCluePointingToSiteStepDesc:
   Attributes:
   - Name: Difficulty
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableInt
   - Name: SourceLocation
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: TargetClueSite
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: GeneratedClue
-    Offset: '0xe0'
-    Size: '0x20'
+    Offset: '0x110'
+    Size: '0x30'
     Type: Struct QuestVariableClueDescriptor
   - Name: AllowedClueTypes
-    Offset: '0x100'
+    Offset: '0x140'
     Size: '0x10'
     Type: TArray<Class AllowedClueTypes>
   - Name: ConnectionConfiguration
-    Offset: '0x110'
+    Offset: '0x150'
     Size: '0x8'
     Type: Class ClueConnectionConfig*
-  ClassSize: '0x98'
-  FullSize: '0x118'
+  ClassSize: '0xd8'
+  FullSize: '0x158'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateClueSiteAtSeaLocationStep:
   Attributes: []
-  ClassSize: '0x40'
-  FullSize: '0xd8'
+  ClassSize: '0x60'
+  FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestGenerateClueSiteAtSeaLocationStepDesc:
   Attributes:
   - Name: ApproximateLocation
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: ClueSite
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: ClueFactoryConfiguration
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: Class ClueFactoryConfig*
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateClueSiteOnIslandStep:
   Attributes: []
-  ClassSize: '0x40'
-  FullSize: '0xd8'
+  ClassSize: '0x60'
+  FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestGenerateClueSiteOnIslandStepDesc:
   Attributes:
   - Name: IslandName
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: ClueSite
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: ClueGenerationConfiguration
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: Class ClueFactoryConfig*
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateDebrisTypeForVoyageRankStep:
   Attributes: []
-  ClassSize: '0x40'
-  FullSize: '0xd8'
+  ClassSize: '0x60'
+  FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestGenerateDebrisTypeForVoyageRankStepDesc:
   Attributes:
   - Name: VoyageRank
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableInt
   - Name: DebrisTypeArray
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActorAssetTypeArray
   - Name: DebrisForRankDescAsset
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: Class DebrisForVoyageRankDescAsset*
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateLootDescForVoyageRankStep:
   Attributes: []
-  ClassSize: '0x40'
-  FullSize: '0xd8'
+  ClassSize: '0x60'
+  FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestGenerateLootDescForVoyageRankStepDesc:
   Attributes:
   - Name: VoyageRank
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableInt
   - Name: LootDescArray
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableItemDescTypeArray
   - Name: LootForRankDescAsset
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: Class LootForVoyageRankDescAsset*
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestIsClueOfTypeStep:
@@ -484,14 +484,14 @@ TaleQuestIsClueOfTypeStepDesc:
     Type: class
   - Name: ClueSite
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: IsMatchingType
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableBool
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSelectClueSiteForLootStep:
@@ -500,8 +500,8 @@ TaleQuestSelectClueSiteForLootStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class TaleQuestSelectClueSiteForLootStepDesc*
-  ClassSize: '0x48'
-  FullSize: '0xe0'
+  ClassSize: '0x68'
+  FullSize: '0x100'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestSelectClueSiteForLootStepDesc:
@@ -520,38 +520,38 @@ TaleQuestSelectClueSiteForLootStepDesc:
     Type: byte
   - Name: OutputClueSite
     Offset: '0x98'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: MaxedAllClueSites
-    Offset: '0xb8'
-    Size: '0x20'
+    Offset: '0xc8'
+    Size: '0x30'
     Type: Struct QuestVariableBool
-  ClassSize: '0x58'
-  FullSize: '0xd8'
+  ClassSize: '0x78'
+  FullSize: '0xf8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSpawnDebrisAtClueSiteStep:
   Attributes: []
-  ClassSize: '0x78'
-  FullSize: '0x110'
+  ClassSize: '0xa8'
+  FullSize: '0x140'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestSpawnDebrisAtClueSiteStepDesc:
   Attributes:
   - Name: ClueSiteVar
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: DebrisTypeVar
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActorAssetType
   - Name: OutDebrisActorVar
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x60'
-  FullSize: '0xe0'
+  ClassSize: '0x90'
+  FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSpawnLootItemInClueSiteStep:
@@ -564,22 +564,22 @@ TaleQuestSpawnLootItemInClueSiteStepDesc:
   Attributes:
   - Name: LootItem
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClass
   - Name: ClueSite
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableClueSite
   - Name: SpawnedLootItem
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableItemInfo
   - Name: Tracked
-    Offset: '0xe0'
+    Offset: '0x110'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x68'
-  FullSize: '0xe8'
+  ClassSize: '0x98'
+  FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestStoreClueOnActorStep:
@@ -592,38 +592,38 @@ TaleQuestStoreClueOnActorStepDesc:
   Attributes:
   - Name: ClueDescriptor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableClueDescriptor
   - Name: Actor
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: ClueActor
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x60'
-  FullSize: '0xe0'
+  ClassSize: '0x90'
+  FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestUpdateBuoyancyAutoSinkSettingForItemStep:
   Attributes: []
-  ClassSize: '0x28'
-  FullSize: '0xc0'
+  ClassSize: '0x38'
+  FullSize: '0xd0'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc:
   Attributes:
   - Name: Item
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableItemInfo
   - Name: EnableAutoSink
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 WeightedDebrisDataAsset:

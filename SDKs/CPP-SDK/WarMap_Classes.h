@@ -23,4 +23,83 @@ public:
 };
 
 
+// Size 0x0
+class WarMapInteractionVoteComponent: public InlineVotingInteractionComponent
+{
+public:
+};
+
+
+// Size 0xd0
+class WarMapVoteConsumerBase: public VoteConsumerInlineBase
+{
+public:
+	Class WarMapVoteValidatorBase*                               Validator;                                         // 0x30(0x8)
+	Class Actor*                                                 OwningActor;                                       // 0x38(0x8)
+	TArray<class PlayerState*>                                   Votes;                                             // 0xa0(0x10)
+	Class BoxedRpcDispatcherComponent*                           RpcDispatcher;                                     // 0xb0(0x8)
+};
+
+
+// Size 0x188
+class StartWarMapVoyageVoteConsumer: public WarMapVoteConsumerBase
+{
+public:
+	Struct FText                                                 WarMapVotingCastVote;                              // 0x100(0x38)
+	Struct FText                                                 WarMapVotingCantVote;                              // 0x138(0x38)
+	Struct FText                                                 WarMapVotingRemoveVote;                            // 0x170(0x38)
+	Struct FText                                                 WarMapVotingCantRemoveVote;                        // 0x1a8(0x38)
+	Struct FText                                                 WarMapVotingCantVoteReasonCrewOnInvasion;          // 0x1e0(0x38)
+	Struct FText                                                 WarMapVotingCantVoteReasonNearbyEnemyFactionShip;  // 0x218(0x38)
+	Struct FText                                                 WarMapVotingCantVoteReasonCrewIsInPVEEncounter;    // 0x250(0x38)
+};
+
+
+// Size 0xe0
+class StopWarMapVoyageVoteConsumer: public WarMapVoteConsumerBase
+{
+public:
+	Struct FText                                                 WarMapVotingCastVote;                              // 0x100(0x38)
+	Struct FText                                                 WarMapVotingCantVote;                              // 0x138(0x38)
+	Struct FText                                                 WarMapVotingRemoveVote;                            // 0x170(0x38)
+	Struct FText                                                 WarMapVotingCantRemoveVote;                        // 0x1a8(0x38)
+};
+
+
+// Size 0xe0
+class WarMapVoteInteractionActor: public Actor
+{
+public:
+	float                                                        TooltipUIFadeDuration;                             // 0x3d8(0x4)
+	Struct Vector2D                                              TooltipUIScreenSpaceOffsetRatio;                   // 0x3dc(0x8)
+	TArray<Struct FactionDisplayInfo>                            FactionInfos;                                      // 0x3e8(0x10)
+	TArray<Struct FactionRequest>                                FactionInfoPtrs;                                   // 0x3f8(0x10)
+};
+
+
+// Size 0xe8
+class WarMapVoteValidatorBase: public VoteValidatorInlineBase
+{
+public:
+	Class WarMapVoteConsumerBase*                                Consumer;                                          // 0x30(0x8)
+	Class Actor*                                                 OwningActor;                                       // 0x38(0x8)
+	float                                                        UpdateIsCrewInPVEEncounterInterval;                // 0x40(0x4)
+	bool                                                         IsCrewInPVEEncounterCached;                        // 0x44(0x1)
+};
+
+
+// Size 0x0
+class StartWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
+{
+public:
+};
+
+
+// Size 0x0
+class StopWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
+{
+public:
+};
+
+
 }

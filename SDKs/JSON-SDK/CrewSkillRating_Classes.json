@@ -8,9 +8,9 @@
   },
   "CrewSkillRatingService": {
     "Super": "Object",
-    "FullSize": "0xd0",
+    "FullSize": "0x120",
     "InheritedSize": "0x28",
-    "ClassSize": "0xa8",
+    "ClassSize": "0xf8",
     "Attributes": []
   },
   "DougTheDruid": {

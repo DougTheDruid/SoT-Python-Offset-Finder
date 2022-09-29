@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_ProxyIngestible_C: public StaticMeshFloatingItemProxy
 {
 public:
-	Class ConfigurableBuryableItemComponent*                     ConfigurableBuryableItem;                          // 0x798(0x8)
-	Class TrackedOwnerComponent*                                 TrackedOwner;                                      // 0x7a0(0x8)
-	Class MaterialManipulationComponent*                         MaterialManipulation;                              // 0x7a8(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x7b0(0x8)
+	Class ConfigurableBuryableItemComponent*                     ConfigurableBuryableItem;                          // 0x7d0(0x8)
+	Class TrackedOwnerComponent*                                 TrackedOwner;                                      // 0x7d8(0x8)
+	Class MaterialManipulationComponent*                         MaterialManipulation;                              // 0x7e0(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x7e8(0x8)
 };
 
 

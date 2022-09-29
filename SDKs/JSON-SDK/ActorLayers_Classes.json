@@ -7,16 +7,16 @@
     "Attributes": []
   },
   "InstancedLayerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xc8",
+    "Super": "SceneComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2e0",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "InstancedLayers",
         "Type": "TArray<Struct InstancedLayer>",
         "Size": "0x10",
-        "Offset": "0xd0"
+        "Offset": "0x2e8"
       }
     ]
   },

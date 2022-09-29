@@ -451,9 +451,9 @@
   },
   "Geyser": {
     "Super": "Actor",
-    "FullSize": "0x478",
+    "FullSize": "0x4b0",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0xb0",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "SetupData",
@@ -462,76 +462,94 @@
         "Offset": "0x3d0"
       },
       {
+        "Name": "GeyserSetupDataOverride",
+        "Type": "Class GeyserSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "SelectedGeyserForNextActivation",
+        "Type": "Class GeyserSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "StoryCustomisationData",
+        "Type": "TArray<Struct GeyserStoryCustomisationData>",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
         "Name": "GeyserState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3d8"
+        "Offset": "0x410"
       },
       {
         "Name": "GeyserBuildUpPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x418"
       },
       {
         "Name": "GeyserBlowPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x420"
       },
       {
         "Name": "StartActiveAudioLoopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x428"
       },
       {
         "Name": "StopActiveAudioLoopEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x430"
       },
       {
         "Name": "PlayEruptingAudioEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x438"
       },
       {
         "Name": "ExplosionComponent",
         "Type": "Class ExplosionComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x440"
       },
       {
         "Name": "ActiveParticlesComponent",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x448"
       },
       {
         "Name": "EruptingParticlesComponent",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x450"
       },
       {
         "Name": "HitTestTraceChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x420"
+        "Offset": "0x458"
       },
       {
         "Name": "GeyserHoleClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x460"
       },
       {
         "Name": "GeyserHole",
         "Type": "Class Hole*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x468"
       }
     ]
   },
@@ -837,21 +855,21 @@
   },
   "MechanismGeyser": {
     "Super": "Geyser",
-    "FullSize": "0x488",
-    "InheritedSize": "0x478",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x4b0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "GeyserStateWhenMechanismIsInactive",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x478"
+        "Offset": "0x4b0"
       },
       {
         "Name": "MechanismActionComponent",
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x4b8"
       }
     ]
   },
@@ -1031,45 +1049,51 @@
   },
   "GeyserSetupDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0xe0",
+    "FullSize": "0xe8",
     "InheritedSize": "0x28",
-    "ClassSize": "0xb8",
+    "ClassSize": "0xc0",
     "Attributes": [
+      {
+        "Name": "IsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
       {
         "Name": "DormantDuration",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x28"
+        "Offset": "0x30"
       },
       {
         "Name": "InitialWarningDuration",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x58"
+        "Offset": "0x60"
       },
       {
         "Name": "NumSpurtsPerActivation",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
-        "Offset": "0x88"
+        "Offset": "0x90"
       },
       {
         "Name": "TimeBetweenSpurts",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0xa8"
+        "Offset": "0xb0"
       },
       {
         "Name": "ShouldDestroyOnDeactivation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xd8"
+        "Offset": "0xe0"
       },
       {
         "Name": "DestroyAfterDeactivationDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xdc"
+        "Offset": "0xe4"
       }
     ]
   },

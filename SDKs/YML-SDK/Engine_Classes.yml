@@ -6174,8 +6174,8 @@ GameEngine:
     Offset: '0x9d4'
     Size: '0x4'
     Type: float
-  ClassSize: '0x70'
-  FullSize: '0xa40'
+  ClassSize: '0x60'
+  FullSize: '0xa30'
   InheritedSize: '0x9d0'
   Super: Engine
 GameInstance:
@@ -15338,6 +15338,10 @@ ParticleModuleRequired:
     Offset: '0xe0'
     Size: '0x1'
     Type: byte
+  - Name: WaterKillCondition
+    Offset: '0xe1'
+    Size: '0x1'
+    Type: byte
   - Name: bUseLegacyEmitterTime
     Offset: '0xe4'
     Size: '0x1'
@@ -16865,63 +16869,63 @@ ParticleSystemComponent:
     Size: '0xc'
     Type: Struct Vector
   - Name: CustomParameterDrivingCurves
-    Offset: '0x6d0'
+    Offset: '0x6d8'
     Size: '0x4'
     Type: float
   - Name: ColourTint
-    Offset: '0x6d4'
+    Offset: '0x6dc'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: WarmUpTime
-    Offset: '0x6e4'
+    Offset: '0x6ec'
     Size: '0x4'
     Type: float
   - Name: WarmupTickRate
-    Offset: '0x6e8'
+    Offset: '0x6f0'
     Size: '0x4'
     Type: float
   - Name: bWarmingUp
-    Offset: '0x6ec'
+    Offset: '0x6f4'
     Size: '0x1'
     Type: bool
   - Name: SecondsBeforeInactive
-    Offset: '0x708'
+    Offset: '0x710'
     Size: '0x4'
     Type: float
   - Name: MaxTimeBeforeForceUpdateTransform
-    Offset: '0x714'
+    Offset: '0x71c'
     Size: '0x4'
     Type: float
   - Name: bOverrideLODMethod
-    Offset: '0x71c'
-    Size: '0x1'
-    Type: bool
-  - Name: LODMethod
-    Offset: '0x720'
-    Size: '0x1'
-    Type: byte
-  - Name: bSkipUpdateDynamicDataDuringTick
     Offset: '0x724'
     Size: '0x1'
     Type: bool
-  - Name: CachedViewRelevanceFlags
+  - Name: LODMethod
     Offset: '0x728'
+    Size: '0x1'
+    Type: byte
+  - Name: bSkipUpdateDynamicDataDuringTick
+    Offset: '0x72c'
+    Size: '0x1'
+    Type: bool
+  - Name: CachedViewRelevanceFlags
+    Offset: '0x730'
     Size: '0x10'
     Type: TArray<Struct MaterialRelevance>
   - Name: ReplayClips
-    Offset: '0x740'
+    Offset: '0x748'
     Size: '0x10'
     Type: TArray<class ParticleSystemReplay*>
   - Name: CustomTimeDilation
-    Offset: '0x7b0'
+    Offset: '0x7b8'
     Size: '0x4'
     Type: float
   - Name: bUnbound
-    Offset: '0x7c8'
+    Offset: '0x7d0'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x2e0'
-  FullSize: '0x8a0'
+  ClassSize: '0x2f0'
+  FullSize: '0x8b0'
   InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 ParticleSystemReplay:

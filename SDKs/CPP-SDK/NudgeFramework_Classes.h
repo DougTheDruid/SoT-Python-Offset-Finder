@@ -6,11 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x28
 class NudgeInterpolationParamsDataAsset: public DataAsset
 {
 public:
 	Struct NudgeInterpolationParams                              NudgeInterpParams;                                 // 0x28(0x20)
+	Class ForceFeedbackEffect*                                   ControllerForceFeedbackEffect;                     // 0x48(0x8)
 };
 
 

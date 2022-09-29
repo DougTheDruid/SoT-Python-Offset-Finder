@@ -3,22 +3,22 @@
 BP_BuoyantStorageBarrel_LockedToWater_C:
   Attributes:
   - Name: Sphere
-    Offset: '0x6f8'
+    Offset: '0x728'
     Size: '0x8'
     Type: Class SphereComponent*
   - Name: Replenishable
-    Offset: '0x700'
+    Offset: '0x730'
     Size: '0x8'
     Type: Class ReplenishableComponent*
   - Name: TelemetrySubject
-    Offset: '0x708'
+    Offset: '0x738'
     Size: '0x8'
     Type: Class TelemetrySubjectComponent*
   - Name: StorageContainer
-    Offset: '0x710'
+    Offset: '0x740'
     Size: '0x8'
     Type: Class StorageContainerComponent*
   ClassSize: '0x20'
-  FullSize: '0x718'
-  InheritedSize: '0x6f8'
+  FullSize: '0x748'
+  InheritedSize: '0x728'
   Super: BuoyantStorageContainer

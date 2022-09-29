@@ -3322,9 +3322,9 @@
   },
   "GameEngine": {
     "Super": "Engine",
-    "FullSize": "0xa40",
+    "FullSize": "0xa30",
     "InheritedSize": "0x9d0",
-    "ClassSize": "0x70",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "MaxDeltaTime",
@@ -6631,9 +6631,9 @@
   },
   "ParticleSystemComponent": {
     "Super": "PrimitiveComponent",
-    "FullSize": "0x8a0",
+    "FullSize": "0x8b0",
     "InheritedSize": "0x5c0",
-    "ClassSize": "0x2e0",
+    "ClassSize": "0x2f0",
     "Attributes": [
       {
         "Name": "Template",
@@ -6699,85 +6699,85 @@
         "Name": "CustomParameterDrivingCurves",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6d0"
+        "Offset": "0x6d8"
       },
       {
         "Name": "ColourTint",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x6d4"
+        "Offset": "0x6dc"
       },
       {
         "Name": "WarmUpTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6e4"
+        "Offset": "0x6ec"
       },
       {
         "Name": "WarmupTickRate",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6e8"
+        "Offset": "0x6f0"
       },
       {
         "Name": "bWarmingUp",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6ec"
+        "Offset": "0x6f4"
       },
       {
         "Name": "SecondsBeforeInactive",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x708"
+        "Offset": "0x710"
       },
       {
         "Name": "MaxTimeBeforeForceUpdateTransform",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x714"
+        "Offset": "0x71c"
       },
       {
         "Name": "bOverrideLODMethod",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x71c"
+        "Offset": "0x724"
       },
       {
         "Name": "LODMethod",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x720"
+        "Offset": "0x728"
       },
       {
         "Name": "bSkipUpdateDynamicDataDuringTick",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x724"
+        "Offset": "0x72c"
       },
       {
         "Name": "CachedViewRelevanceFlags",
         "Type": "TArray<Struct MaterialRelevance>",
         "Size": "0x10",
-        "Offset": "0x728"
+        "Offset": "0x730"
       },
       {
         "Name": "ReplayClips",
         "Type": "TArray<class ParticleSystemReplay*>",
         "Size": "0x10",
-        "Offset": "0x740"
+        "Offset": "0x748"
       },
       {
         "Name": "CustomTimeDilation",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7b0"
+        "Offset": "0x7b8"
       },
       {
         "Name": "bUnbound",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x7c8"
+        "Offset": "0x7d0"
       }
     ]
   },
@@ -28414,6 +28414,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xe0"
+      },
+      {
+        "Name": "WaterKillCondition",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xe1"
       },
       {
         "Name": "bUseLegacyEmitterTime",

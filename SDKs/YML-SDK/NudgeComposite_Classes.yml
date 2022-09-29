@@ -34,21 +34,25 @@ NudgeFromStormPolicy:
     Offset: '0xd0'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
-  ClassSize: '0x98'
-  FullSize: '0x160'
+  ClassSize: '0x90'
+  FullSize: '0x158'
   InheritedSize: '0xc8'
   Super: NudgePolicy
 NudgeFromWaterLevelPolicy:
   Attributes:
-  - Name: WaterLevelDifferenceBetweenUpdates
+  - Name: ChanceOfNudge
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: ZOffsetFromWaterToMountpoint
-    Offset: '0xcc'
+  - Name: WaterLevelDifferenceBetweenUpdates
+    Offset: '0xe0'
     Size: '0x4'
     Type: float
-  ClassSize: '0x10'
-  FullSize: '0xd8'
+  - Name: ZOffsetFromWaterToMountpoint
+    Offset: '0xe4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+  FullSize: '0xf0'
   InheritedSize: '0xc8'
   Super: NudgePolicy

@@ -1,9 +1,9 @@
 {
   "BP_LargeShip_StandardHull_Art_Doors_C": {
     "Super": "Actor",
-    "FullSize": "0x3f0",
+    "FullSize": "0x3f4",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x28",
+    "ClassSize": "0x2c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -32,7 +32,7 @@
       {
         "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x3e8"
       }
     ]

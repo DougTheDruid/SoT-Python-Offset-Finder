@@ -54,14 +54,14 @@
   },
   "SpawnBarrelsOfPlentyStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xa0",
+    "FullSize": "0xb0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "LocatorVar",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       }
     ]

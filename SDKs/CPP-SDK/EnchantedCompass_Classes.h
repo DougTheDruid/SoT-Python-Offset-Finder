@@ -43,12 +43,12 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableVector                                   Location;                                          // 0x80(0x20)
-	Struct QuestVariableGuid                                     TargetID;                                          // 0xa0(0x20)
+	Struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
+	Struct QuestVariableGuid                                     TargetID;                                          // 0xb0(0x30)
 };
 
 
@@ -59,11 +59,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x20)
+	Struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x30)
 };
 
 
@@ -82,7 +82,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestSetCompassTargetToTargetStep: public TaleQuestStep
 {
 public:
@@ -97,19 +97,19 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestSetCompassTargetToActorStepDesc: public TaleQuestSetCompassTargetBaseStepDesc
 {
 public:
-	Struct QuestVariableActor                                    TargetActor;                                       // 0x88(0x20)
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x88(0x30)
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestSetCompassTargetToPointStepDesc: public TaleQuestSetCompassTargetBaseStepDesc
 {
 public:
-	Struct QuestVariableOrientedPoint                            TargetPoint;                                       // 0x88(0x20)
+	Struct QuestVariableOrientedPoint                            TargetPoint;                                       // 0x88(0x30)
 };
 
 

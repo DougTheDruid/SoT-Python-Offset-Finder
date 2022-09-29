@@ -79,7 +79,7 @@
       },
       {
         "Name": "StateParams",
-        "Type": "TArray<Struct BP_Struct_DynamicFogVolumeParams>",
+        "Type": "TArray<Struct StateTextures>",
         "Size": "0x10",
         "Offset": "0x428"
       }

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ProxyIngestible_Retractable_C: public BP_ProxyIngestible_C
 {
 public:
-	Class RetractableItemProxyComponent*                         RetractableItemProxy;                              // 0x7b8(0x8)
+	Class RetractableItemProxyComponent*                         RetractableItemProxy;                              // 0x7f0(0x8)
 };
 
 

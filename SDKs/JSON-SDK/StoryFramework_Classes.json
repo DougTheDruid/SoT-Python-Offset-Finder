@@ -83,21 +83,21 @@
   },
   "StoryDrivenBlendedLightingZoneComponentDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x40",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Feature",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x28"
       },
       {
         "Name": "StoryResponses",
         "Type": "TArray<Struct LightingZoneStoryRelatedSettings>",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x38"
       }
     ]
   },
@@ -206,41 +206,41 @@
   },
   "StorySpawnedActorsComponentDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x40",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Feature",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x28"
       },
       {
         "Name": "StorySpawnedActorsList",
         "Type": "TArray<Struct StorySpawnedActorsComponentList>",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x38"
       }
     ]
   },
   "StorySpawnedActorsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x40",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Feature",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x28"
       },
       {
         "Name": "StorySpawnedActorsList",
         "Type": "TArray<Struct StorySpawnedActorsList>",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x38"
       }
     ]
   },

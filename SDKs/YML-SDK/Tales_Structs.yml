@@ -117,73 +117,76 @@ PlaySequencerAutomationEvent:
   ClassSize: '0x18'
 QuestVariableAISpawner:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableActorArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableActorAssetType:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableActorAssetTypeArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableAny:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableBountyTargetArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableClassArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableCollection:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
+QuestVariableGameEvent:
+  Attributes: []
+  ClassSize: '0x30'
 QuestVariableGuidArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableItemDescType:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableItemDescTypeArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableItemInfo:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableLinkEQSContext:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableMerchantItem:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableMerchantItemArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableObjectArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariablePageLayout:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariablePrioritisedPrompt:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableRotator:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableSetEQSTaleContextValue:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableTaleResourceHandle:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableTexture:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 SnapshottedActorData:
   Attributes:
   - Name: SnapshotID

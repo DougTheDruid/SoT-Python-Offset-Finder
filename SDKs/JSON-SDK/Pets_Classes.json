@@ -457,87 +457,87 @@
   },
   "PetAIController": {
     "Super": "AthenaAIController",
-    "FullSize": "0x9d8",
-    "InheritedSize": "0x8f0",
+    "FullSize": "0x9e8",
+    "InheritedSize": "0x900",
     "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "StrategyControllerMovementMods",
         "Type": "TArray<Struct AIStategyControllerMovementMod>",
         "Size": "0x10",
-        "Offset": "0x910"
+        "Offset": "0x920"
       },
       {
         "Name": "DefaultControlRotationInterpSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x920"
+        "Offset": "0x930"
       },
       {
         "Name": "DefaultStrategy",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x928"
+        "Offset": "0x938"
       },
       {
         "Name": "ReactMappings",
         "Type": "Class ReactStateMappingsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x930"
+        "Offset": "0x940"
       },
       {
         "Name": "HangoutSpotSelectorComponent",
         "Type": "Class PetHangoutSpotSelectorComponent*",
         "Size": "0x8",
-        "Offset": "0x940"
+        "Offset": "0x950"
       },
       {
         "Name": "ForcedHangoutSpotComponent",
         "Type": "Class PetHangoutSpotComponent*",
         "Size": "0x8",
-        "Offset": "0x948"
+        "Offset": "0x958"
       },
       {
         "Name": "DefaultBlackboardAsset",
         "Type": "Class BlackboardData*",
         "Size": "0x8",
-        "Offset": "0x950"
+        "Offset": "0x960"
       },
       {
         "Name": "DefaultTree",
         "Type": "Class BehaviorTree*",
         "Size": "0x8",
-        "Offset": "0x958"
+        "Offset": "0x968"
       },
       {
         "Name": "HangoutTree",
         "Type": "Class BehaviorTree*",
         "Size": "0x8",
-        "Offset": "0x960"
+        "Offset": "0x970"
       },
       {
         "Name": "IdleTree",
         "Type": "Class BehaviorTree*",
         "Size": "0x8",
-        "Offset": "0x968"
+        "Offset": "0x978"
       },
       {
         "Name": "MaximumReactRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x970"
+        "Offset": "0x980"
       },
       {
         "Name": "DangerComponent",
         "Type": "Class PetDangerComponent*",
         "Size": "0x8",
-        "Offset": "0x978"
+        "Offset": "0x988"
       },
       {
         "Name": "MinAgentHalfHeightPctOverride",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x980"
+        "Offset": "0x990"
       }
     ]
   },

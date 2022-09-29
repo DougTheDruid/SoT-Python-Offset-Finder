@@ -127,7 +127,7 @@ public:
 };
 
 
-// Size 0x568
+// Size 0x578
 class Kraken: public Actor
 {
 public:
@@ -136,12 +136,12 @@ public:
 	float                                                        OuterRadius;                                       // 0x3fc(0x4)
 	byte                                                         CurrentState;                                      // 0x400(0x1)
 	Class Murk*                                                  MurkActor;                                         // 0x5b8(0x8)
-	Class KrakenAICharacterAudioComponent*                       KrakenAudioComponent;                              // 0x668(0x8)
-	Class KrakenTelemetryComponent*                              KrakenTelemetryComponent;                          // 0x670(0x8)
-	Struct EncounterParams                                       SightingEncounterParams;                           // 0x678(0xc)
-	Struct EncounterParams                                       CloseEncounterParams;                              // 0x684(0xc)
-	Struct KrakenParams                                          Params;                                            // 0x6a0(0x160)
-	int                                                          NumTentaclesRemaining;                             // 0x800(0x4)
+	Class KrakenAICharacterAudioComponent*                       KrakenAudioComponent;                              // 0x678(0x8)
+	Class KrakenTelemetryComponent*                              KrakenTelemetryComponent;                          // 0x680(0x8)
+	Struct EncounterParams                                       SightingEncounterParams;                           // 0x688(0xc)
+	Struct EncounterParams                                       CloseEncounterParams;                              // 0x694(0xc)
+	Struct KrakenParams                                          Params;                                            // 0x6b0(0x160)
+	int                                                          NumTentaclesRemaining;                             // 0x810(0x4)
 };
 
 

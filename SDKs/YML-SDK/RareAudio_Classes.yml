@@ -86,16 +86,6 @@ AudioIslandStaticMeshAssociatorBase:
   FullSize: '0x3c8'
   InheritedSize: '0x3c8'
   Super: Actor
-AudioSpaceComponent:
-  Attributes:
-  - Name: AudioSpace
-    Offset: '0x620'
-    Size: '0x8'
-    Type: Class AudioSpaceDataAsset*
-  ClassSize: '0x10'
-  FullSize: '0x630'
-  InheritedSize: '0x620'
-  Super: StaticMeshComponent
 AudioSpaceDataAsset:
   Attributes:
   - Name: RtpcToUpdate
@@ -114,16 +104,6 @@ AudioSpaceDataAsset:
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: DataAsset
-AudioSpaceTrackerComponent:
-  Attributes:
-  - Name: CurrentSpaces
-    Offset: '0xc8'
-    Size: '0x10'
-    Type: TArray<class AudioSpaceComponent*>
-  ClassSize: '0x10'
-  FullSize: '0xd8'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
 RareAudioHardwareDeviceService:
   Attributes: []
   ClassSize: '0x10'
@@ -184,8 +164,8 @@ TritonService:
     Offset: '0xf0'
     Size: '0x8'
     Type: Class TritonComponent*
-  ClassSize: '0x108'
-  FullSize: '0x130'
+  ClassSize: '0x128'
+  FullSize: '0x150'
   InheritedSize: '0x28'
   Super: Object
 WwiseEmitterBlueprintLibrary:

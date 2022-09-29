@@ -162,16 +162,16 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x90
 struct EmissaryRewardEntry
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
-	Struct EmissaryActionRewardData                              ActionRewardData;                                  // 0x8(0x78)
+	Struct EmissaryActionRewardData                              ActionRewardData;                                  // 0x8(0x88)
 };
 
 
-// Size 0x78
+// Size 0x88
 struct EmissaryActionRewardData
 {
 public:
@@ -181,6 +181,16 @@ public:
 	TArray<Struct EmissaryGameEventsReward>                      GameEventsRewards;                                 // 0x48(0x10)
 	TArray<Struct EmissaryEventAward>                            HandinRewards;                                     // 0x58(0x10)
 	TArray<Struct EmissaryCompanyActionReward>                   CompanyActionRewards;                              // 0x68(0x10)
+	TArray<Struct EmissaryFactionActionReward>                   FactionActionRewards;                              // 0x78(0x10)
+};
+
+
+// Size 0x8
+struct EmissaryFactionActionReward
+{
+public:
+	byte                                                         FactionActionType;                                 // 0x0(0x1)
+	float                                                        Amount;                                            // 0x4(0x4)
 };
 
 

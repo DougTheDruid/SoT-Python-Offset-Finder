@@ -49,8 +49,8 @@ public:
 class EmissaryFlotsamItemInfo: public BootyItemInfo
 {
 public:
-	Struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x728(0x18)
-	bool                                                         FlotsamCanBeDuplicated;                            // 0x740(0x1)
+	Struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x730(0x18)
+	bool                                                         FlotsamCanBeDuplicated;                            // 0x748(0x1)
 };
 
 
@@ -80,12 +80,12 @@ public:
 };
 
 
-// Size 0x338
+// Size 0x350
 class EmissaryLevelService: public Actor
 {
 public:
-	Class EmissaryLevelSettingsAsset*                            Settings;                                          // 0x468(0x8)
-	Class EmissaryRewardSettingsAsset*                           RewardSettings;                                    // 0x470(0x8)
+	Class EmissaryLevelSettingsAsset*                            Settings;                                          // 0x480(0x8)
+	Class EmissaryRewardSettingsAsset*                           RewardSettings;                                    // 0x488(0x8)
 };
 
 

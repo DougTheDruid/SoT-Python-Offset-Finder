@@ -93,11 +93,17 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "CurrentLootValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
   "CrewFactionEntryData": {
-    "ClassSize": "0x48",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -140,6 +146,24 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x34"
+      },
+      {
+        "Name": "EligibleLootBootyIds",
+        "Type": "TArray<Struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CurrentLootValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "HasDisplayedPromptForLootLevel",
+        "Type": "TArray<Bool HasDisplayedPromptForLootLevel>",
+        "Size": "0x10",
+        "Offset": "0x50"
       }
     ]
   },
@@ -276,13 +300,19 @@
     ]
   },
   "CrewJoinedFactionSuccess": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "JoiningCrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "FactionJoined",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

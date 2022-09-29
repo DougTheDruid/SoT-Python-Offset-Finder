@@ -20,7 +20,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0xa0
 class MerchantContractsService: public Object
 {
 public:

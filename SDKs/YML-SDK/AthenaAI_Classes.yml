@@ -2199,52 +2199,52 @@ AthenaAIBuffAbilityInterface:
 AthenaAICharacterController:
   Attributes:
   - Name: ItemParamsDataAsset
-    Offset: '0x8f8'
+    Offset: '0x908'
     Size: '0x8'
     Type: Class AthenaAIItemParamsDataAsset*
   - Name: FallbackLoadoutIfAllEngageItemsDropped
-    Offset: '0x900'
+    Offset: '0x910'
     Size: '0x8'
     Type: Class LoadoutAsset*
   - Name: ControlRotationInterpSpeed
-    Offset: '0x908'
+    Offset: '0x918'
     Size: '0x4'
     Type: float
   - Name: ControlRotationUseConstantInterp
-    Offset: '0x90c'
+    Offset: '0x91c'
     Size: '0x1'
     Type: bool
   - Name: FaceTargetDisabled
-    Offset: '0x90d'
+    Offset: '0x91d'
     Size: '0x1'
     Type: bool
   - Name: MinTurnAngleToPlayTurnAnim
-    Offset: '0x910'
+    Offset: '0x920'
     Size: '0x4'
     Type: float
   - Name: CharacterParamsDataAsset
-    Offset: '0x928'
+    Offset: '0x938'
     Size: '0x8'
     Type: Class AthenaAICharacterControllerParamsDataAsset*
   - Name: SpawnItemDescForItemCategories
-    Offset: '0x9c0'
+    Offset: '0x9d0'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: AIAbilityParams
-    Offset: '0x9d0'
+    Offset: '0x9e0'
     Size: '0x10'
     Type: TArray<class AthenaAIAbilityParams*>
   - Name: NonItemEngageOptions
-    Offset: '0x9e0'
+    Offset: '0x9f0'
     Size: '0x10'
     Type: TArray<Struct AthenaAIEngageEnemyData>
   - Name: DistanceInMToCannonShotHitChanceCurve
-    Offset: '0x9f0'
+    Offset: '0xa00'
     Size: '0x8'
     Type: Class CurveFloat*
   ClassSize: '0x220'
-  FullSize: '0xb10'
-  InheritedSize: '0x8f0'
+  FullSize: '0xb20'
+  InheritedSize: '0x900'
   Super: AthenaAIController
 AthenaAICharacterControllerParamsDataAsset:
   Attributes:
@@ -2493,15 +2493,15 @@ AthenaAIController:
     Size: '0x10'
     Type: TArray<Struct AthenaAIControllerSenseSettingOverride>
   - Name: CurrentNotSeenPerceivedActor
-    Offset: '0x8c0'
+    Offset: '0x8d0'
     Size: '0x8'
     Type: Class Actor*
   - Name: PendingSpawnTriggerActor
-    Offset: '0x8c8'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: Class Actor*
-  ClassSize: '0x2e0'
-  FullSize: '0x8f0'
+  ClassSize: '0x2f0'
+  FullSize: '0x900'
   InheritedSize: '0x610'
   Super: AthenaAIControllerBase
 AthenaAIControllerBase:
@@ -2953,78 +2953,78 @@ AthenaAIWeightedRangesDataProvider:
 AthenaFaunaAIController:
   Attributes:
   - Name: MaxTimeBetweenThreatDetermination
-    Offset: '0x8f0'
+    Offset: '0x900'
     Size: '0x4'
     Type: float
   - Name: DefaultControlRotationInterpSpeed
-    Offset: '0x8f4'
+    Offset: '0x904'
     Size: '0x4'
     Type: float
   - Name: StrategyControllerMovementMods
-    Offset: '0x8f8'
+    Offset: '0x908'
     Size: '0x10'
     Type: TArray<Struct AIStategyControllerMovementMod>
   - Name: MinAgentHalfHeightPctOverride
-    Offset: '0x908'
+    Offset: '0x918'
     Size: '0x4'
     Type: float
   - Name: FaunaDataAsset
-    Offset: '0x910'
+    Offset: '0x920'
     Size: '0x8'
     Type: Class FaunaAIContollerParamsDataAsset*
   - Name: CarrierActor
-    Offset: '0x918'
+    Offset: '0x928'
     Size: '0x8'
     Type: Class Actor*
   - Name: HighestDangerActor
-    Offset: '0x9c8'
+    Offset: '0x9d8'
     Size: '0x8'
     Type: Class Actor*
   - Name: PlayerTracker
-    Offset: '0xa58'
+    Offset: '0xa68'
     Size: '0x8'
     Type: Class FaunaAIPlayerTracker*
   ClassSize: '0x198'
-  FullSize: '0xa88'
-  InheritedSize: '0x8f0'
+  FullSize: '0xa98'
+  InheritedSize: '0x900'
   Super: AthenaAIController
 AthenaSwimmingAIController:
   Attributes:
   - Name: SwimmingPathFollowingComponent
-    Offset: '0x8f0'
+    Offset: '0x900'
     Size: '0x8'
     Type: Class SwimmingPathFollowingComponent*
   - Name: IgnoreTargetsOutOfWater
-    Offset: '0x8f8'
+    Offset: '0x908'
     Size: '0x1'
     Type: bool
   - Name: DistOfAttackerVsChanceToPursue
-    Offset: '0x900'
+    Offset: '0x910'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: TimersToZeroIfStartingRevengeAttack
-    Offset: '0x908'
+    Offset: '0x918'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: DespawnRequiredBlackboardKey
-    Offset: '0x918'
+    Offset: '0x928'
     Size: '0x8'
     Type: struct FName
   - Name: DespawnRequiredReasonBlackboardKey
-    Offset: '0x920'
+    Offset: '0x930'
     Size: '0x8'
     Type: struct FName
   - Name: PathingFailedWeight
-    Offset: '0x928'
+    Offset: '0x938'
     Size: '0x4'
     Type: float
   - Name: PathingFailedThresholdToDespawn
-    Offset: '0x92c'
+    Offset: '0x93c'
     Size: '0x4'
     Type: float
   ClassSize: '0xe0'
-  FullSize: '0x9d0'
-  InheritedSize: '0x8f0'
+  FullSize: '0x9e0'
+  InheritedSize: '0x900'
   Super: AthenaAIController
 BTDecorator_ActionState:
   Attributes:
@@ -3188,10 +3188,10 @@ BTDecorator_FeatureToggle:
   Attributes:
   - Name: Feature
     Offset: '0x68'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x8'
-  FullSize: '0x70'
+  ClassSize: '0x10'
+  FullSize: '0x78'
   InheritedSize: '0x68'
   Super: BTDecorator
 BTDecorator_IsAbilityAvailable:
@@ -4922,6 +4922,12 @@ CoralShieldVFXComponent:
   FullSize: '0x1a8'
   InheritedSize: '0xc8'
   Super: ActorComponent
+CustomAttitudeInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 CustomSkeletonAnimationDataList:
   Attributes:
   - Name: CustomAnimationAssets
@@ -6332,6 +6338,24 @@ PetsPartsDesc:
   FullSize: '0x70'
   InheritedSize: '0x30'
   Super: AIPartsDesc
+PlayerEntitlementCustomAttitudeComponent:
+  Attributes:
+  - Name: Entitlement
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: class
+  - Name: HasEntitlementAttitude
+    Offset: '0xd8'
+    Size: '0x1'
+    Type: byte
+  - Name: LacksEntitlementAttitude
+    Offset: '0xd9'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x18'
+  FullSize: '0xe0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 PlayerProximityObservedSpawnContextProvider:
   Attributes: []
   ClassSize: '0x20'
@@ -6650,10 +6674,10 @@ TaleQuestGetTinySharkExperienceParticipatingCrewsDesc:
     Type: Class TinySharkExperience*
   - Name: ParticipatingCrews
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableGuidArray
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGetTinySharkPawn:
@@ -6670,10 +6694,10 @@ TaleQuestGetTinySharkPawnDesc:
     Type: Class TinySharkExperience*
   - Name: TinySharkPawn
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableSharkPawn
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestShroudedDeepSGExperienceTracker:
@@ -6756,10 +6780,10 @@ TaleQuestStartTinySharkExperienceStepDesc:
     Type: bool
   - Name: TinySharkExperience
     Offset: '0x180'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableTinySharkExperience
-  ClassSize: '0x120'
-  FullSize: '0x1a0'
+  ClassSize: '0x130'
+  FullSize: '0x1b0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestTinySharkExperienceTracker:
@@ -6837,15 +6861,15 @@ TinySharkExperience:
     Size: '0x8'
     Type: Class Ship*
   - Name: SightingEncounterParams
-    Offset: '0x5f8'
+    Offset: '0x608'
     Size: '0xc'
     Type: Struct EncounterParams
   - Name: CloseEncounterParams
-    Offset: '0x604'
+    Offset: '0x614'
     Size: '0xc'
     Type: Struct EncounterParams
-  ClassSize: '0x418'
-  FullSize: '0x7e0'
+  ClassSize: '0x428'
+  FullSize: '0x7f0'
   InheritedSize: '0x3c8'
   Super: Actor
 TinySharkParamsDataAsset:

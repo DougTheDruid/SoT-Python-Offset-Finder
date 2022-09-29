@@ -1,9 +1,9 @@
 {
   "BP_Soveriegn_LiftMechanism_Toggle_C": {
     "Super": "ToggleAnimatedMechanismAction",
-    "FullSize": "0x5a8",
+    "FullSize": "0x5a0",
     "InheritedSize": "0x570",
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -18,34 +18,28 @@
         "Offset": "0x578"
       },
       {
-        "Name": "Box",
-        "Type": "Class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x580"
-      },
-      {
         "Name": "StaticMesh4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x588"
+        "Offset": "0x580"
       },
       {
         "Name": "BP_RopeRendererComponent",
         "Type": "BlueprintGeneratedClass BP_RopeRendererComponent_C*",
         "Size": "0x8",
-        "Offset": "0x590"
+        "Offset": "0x588"
       },
       {
         "Name": "Rope Source",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x598"
+        "Offset": "0x590"
       },
       {
         "Name": "IntentCombiner",
         "Type": "Class IntentCombinerComponent*",
         "Size": "0x8",
-        "Offset": "0x5a0"
+        "Offset": "0x598"
       }
     ]
   },

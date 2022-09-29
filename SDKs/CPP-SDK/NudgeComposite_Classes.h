@@ -23,7 +23,7 @@ public:
 };
 
 
-// Size 0x98
+// Size 0x90
 class NudgeFromStormPolicy: public NudgePolicy
 {
 public:
@@ -32,12 +32,13 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x28
 class NudgeFromWaterLevelPolicy: public NudgePolicy
 {
 public:
-	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xc8(0x4)
-	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xcc(0x4)
+	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
+	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
 };
 
 

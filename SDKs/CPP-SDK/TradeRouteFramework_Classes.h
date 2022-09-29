@@ -26,21 +26,21 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestGetProjectionPointOnTradeRouteStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestGetProjectionPointOnTradeRouteStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        ProjectionProportion;                              // 0x80(0x4)
-	Struct QuestVariableVector                                   SourcePoint;                                       // 0x88(0x20)
-	Struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xa8(0x20)
-	Struct QuestVariableVector                                   ProjectedPoint;                                    // 0xc8(0x20)
+	Struct QuestVariableVector                                   SourcePoint;                                       // 0x88(0x30)
+	Struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xb8(0x30)
+	Struct QuestVariableVector                                   ProjectedPoint;                                    // 0xe8(0x30)
 };
 
 
@@ -52,15 +52,15 @@ public:
 };
 
 
-// Size 0x88
+// Size 0xc8
 class TaleQuestSelectTradeRouteStepDesc: public TaleQuestStepDesc
 {
 public:
 	int                                                          NumSelectFromClosestIslands;                       // 0x80(0x4)
-	Struct QuestVariableVector                                   SelectionOriginPointVar;                           // 0x88(0x20)
-	Struct QuestVariableInt                                      TradeRouteDifficulty;                              // 0xa8(0x20)
-	Struct QuestVariableTradeRouteData                           TradeRoute;                                        // 0xc8(0x20)
-	Struct QuestVariableTaleResourceHandle                       AllocatedTradeRouteHandleVar;                      // 0xe8(0x20)
+	Struct QuestVariableVector                                   SelectionOriginPointVar;                           // 0x88(0x30)
+	Struct QuestVariableInt                                      TradeRouteDifficulty;                              // 0xb8(0x30)
+	Struct QuestVariableTradeRouteData                           TradeRoute;                                        // 0xe8(0x30)
+	Struct QuestVariableTaleResourceHandle                       AllocatedTradeRouteHandleVar;                      // 0x118(0x30)
 };
 
 

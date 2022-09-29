@@ -1,9 +1,9 @@
 {
   "BP_Prompt_CTPurchaseVoyageSequence_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x848",
+    "FullSize": "0x84c",
     "InheritedSize": "0x118",
-    "ClassSize": "0x730",
+    "ClassSize": "0x734",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -218,7 +218,7 @@
       {
         "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x840"
       }
     ]

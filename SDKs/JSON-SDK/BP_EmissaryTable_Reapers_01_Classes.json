@@ -1,9 +1,9 @@
 {
   "BP_EmissaryTable_Reapers_01_C": {
     "Super": "BP_EmissaryTable_01_C",
-    "FullSize": "0x708",
+    "FullSize": "0x70c",
     "InheritedSize": "0x638",
-    "ClassSize": "0xd0",
+    "ClassSize": "0xd4",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -158,7 +158,7 @@
       {
         "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x700"
       }
     ]

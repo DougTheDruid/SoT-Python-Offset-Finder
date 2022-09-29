@@ -109,13 +109,13 @@ LootToRangeDist:
   ClassSize: '0x28'
 QuestVariableClueDescriptor:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableClueSite:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 QuestVariableClueSiteArray:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 RestrictedClueType:
   Attributes:
   - Name: Type

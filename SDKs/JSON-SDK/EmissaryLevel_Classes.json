@@ -61,21 +61,21 @@
   },
   "EmissaryFlotsamItemInfo": {
     "Super": "BootyItemInfo",
-    "FullSize": "0x748",
-    "InheritedSize": "0x720",
+    "FullSize": "0x750",
+    "InheritedSize": "0x728",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "HandInOwnFlotsamReward",
         "Type": "Struct CompanySpecificBootyReward",
         "Size": "0x18",
-        "Offset": "0x728"
+        "Offset": "0x730"
       },
       {
         "Name": "FlotsamCanBeDuplicated",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x740"
+        "Offset": "0x748"
       }
     ]
   },
@@ -134,21 +134,21 @@
   },
   "EmissaryLevelService": {
     "Super": "Actor",
-    "FullSize": "0x700",
+    "FullSize": "0x718",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x338",
+    "ClassSize": "0x350",
     "Attributes": [
       {
         "Name": "Settings",
         "Type": "Class EmissaryLevelSettingsAsset*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x480"
       },
       {
         "Name": "RewardSettings",
         "Type": "Class EmissaryRewardSettingsAsset*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x488"
       }
     ]
   },

@@ -28,6 +28,13 @@ public:
 
 
 // Size 0x0
+class ReservableContendedResourceStateInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class WorldResourceRegistryInterface: public Interface
 {
 public:

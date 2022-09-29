@@ -144,9 +144,9 @@ BP_Prompt_CTPurchaseVoyageSequence_C:
     Type: Struct ObjectMessagingHandle
   - Name: FeatureName
     Offset: '0x840'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x730'
-  FullSize: '0x848'
+  ClassSize: '0x734'
+  FullSize: '0x84c'
   InheritedSize: '0x118'
   Super: BP_PromptCoordinator_Base_C

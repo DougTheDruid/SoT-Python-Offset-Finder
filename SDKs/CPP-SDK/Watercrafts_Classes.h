@@ -304,11 +304,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestSinkWatercraftStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableWatercraft                               Watercraft;                                        // 0x80(0x20)
+	Struct QuestVariableWatercraft                               Watercraft;                                        // 0x80(0x30)
 };
 
 
@@ -319,12 +319,12 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x88
 class TaleQuestSpawnWatercraftStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x28)
-	Struct QuestVariableWatercraft                               Watercraft;                                        // 0xc8(0x20)
+	Struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x38)
+	Struct QuestVariableWatercraft                               Watercraft;                                        // 0xd8(0x30)
 };
 
 

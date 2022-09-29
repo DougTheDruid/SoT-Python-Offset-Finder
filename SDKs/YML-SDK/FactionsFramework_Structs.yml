@@ -25,6 +25,10 @@ CrewFactionEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: CurrentLootValue
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x20'
 CrewFactionEntryData:
   Attributes:
@@ -56,7 +60,19 @@ CrewFactionEntryData:
     Offset: '0x34'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x48'
+  - Name: EligibleLootBootyIds
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Struct Guid>
+  - Name: CurrentLootValue
+    Offset: '0x48'
+    Size: '0x4'
+    Type: int
+  - Name: HasDisplayedPromptForLootLevel
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<Bool HasDisplayedPromptForLootLevel>
+  ClassSize: '0x70'
 CrewFactionTelemetryData:
   Attributes:
   - Name: CrewId
@@ -97,7 +113,11 @@ CrewJoinedFactionSuccess:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0x10'
+  - Name: FactionJoined
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x18'
 CrewLeavingFaction:
   Attributes:
   - Name: LeavingCrewId

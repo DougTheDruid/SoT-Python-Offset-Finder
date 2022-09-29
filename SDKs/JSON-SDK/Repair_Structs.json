@@ -1,4 +1,38 @@
 {
+  "DamageZoneRepairableStateChangedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageZoneActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RepairableComponentRepairableStateChangedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RepairableComponent",
+        "Type": "Class ActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "EventRepairableObjectRepairEndedEvent": {
     "ClassSize": "0x28",
     "Attributes": [

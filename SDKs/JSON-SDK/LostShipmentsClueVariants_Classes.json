@@ -805,21 +805,21 @@
   },
   "TaleQuestGetNPCActorFromClueSiteStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xc0",
+    "FullSize": "0xe0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x40",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "ClueSite",
         "Type": "Struct QuestVariableClueSite",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "NPCFromClueSite",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -839,33 +839,33 @@
   },
   "TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
+    "FullSize": "0x118",
     "InheritedSize": "0x80",
-    "ClassSize": "0x68",
+    "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "ExistingNPCActor",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ObtainedPhasedNPCActorType",
         "Type": "Struct QuestVariableActorAssetType",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "PhasingSourceActor",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       },
       {
         "Name": "IndexAssetMap",
         "Type": "Class ExistingToPhasedNPCIndexAssetMap*",
         "Size": "0x8",
-        "Offset": "0xe0"
+        "Offset": "0x110"
       }
     ]
   },
@@ -878,21 +878,21 @@
   },
   "TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xc0",
+    "FullSize": "0xe0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x40",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "ShipwreckSpawnedOn",
         "Type": "Struct QuestVariableShipwreck",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "SpawnedMerchantCaptain",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -905,27 +905,27 @@
   },
   "TaleQuestSpawnWashedUpMessageInABottleClueStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
+    "FullSize": "0x110",
     "InheritedSize": "0x80",
-    "ClassSize": "0x60",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "ClueSite",
         "Type": "Struct QuestVariableClueSite",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ClueDescriptor",
         "Type": "Struct QuestVariableClueDescriptor",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "MessageInABottle",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       }
     ]
   },
@@ -938,47 +938,47 @@
   },
   "TaleQuestSpawnWashedUpSkeletonClueStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x108",
+    "FullSize": "0x148",
     "InheritedSize": "0x80",
-    "ClassSize": "0x88",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "ClueSite",
         "Type": "Struct QuestVariableClueSite",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ClueDescriptor",
         "Type": "Struct QuestVariableClueDescriptor",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "SkeletonActor",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       },
       {
         "Name": "ClueItem",
         "Type": "Struct QuestVariableItemInfo",
-        "Size": "0x20",
-        "Offset": "0xe0"
+        "Size": "0x30",
+        "Offset": "0x110"
       },
       {
         "Name": "SkeletonClueSocketName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x100"
+        "Offset": "0x140"
       }
     ]
   },
   "WaitForClueCollectedStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0x110",
+    "FullSize": "0x140",
     "InheritedSize": "0x98",
-    "ClassSize": "0x78",
+    "ClassSize": "0xa8",
     "Attributes": [
       {
         "Name": "ClueDesc",
@@ -996,27 +996,27 @@
   },
   "WaitForClueCollectedStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
+    "FullSize": "0x110",
     "InheritedSize": "0x80",
-    "ClassSize": "0x60",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "Clue",
         "Type": "Struct QuestVariableClueDescriptor",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ClueActor",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "Discoverer",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       }
     ]
   },

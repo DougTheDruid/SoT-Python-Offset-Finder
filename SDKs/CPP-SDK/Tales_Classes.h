@@ -87,6 +87,13 @@ public:
 
 
 // Size 0x0
+class TaleQuestExpressionInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestStepInterface: public Interface
 {
 public:
@@ -214,6 +221,13 @@ public:
 };
 
 
+// Size 0x38
+class GameEventBlockingTaleService: public TaleQuestService
+{
+public:
+};
+
+
 // Size 0x28
 class GameEventExclusionZoneTaleService: public TaleQuestService
 {
@@ -254,7 +268,7 @@ public:
 };
 
 
-// Size 0xc8
+// Size 0xd8
 class TaleQuestEQSService: public TaleQuestService
 {
 public:
@@ -278,6 +292,14 @@ public:
 };
 
 
+// Size 0x50
+class TaleQuestShipSetSinkingParamsService: public TaleQuestService
+{
+public:
+	Class TaleQuestShipSetSinkingParamsServiceDesc*              Desc;                                              // 0x60(0x8)
+};
+
+
 // Size 0x58
 class TaleQuestToggleInteractionDescriptionService: public TaleQuestService
 {
@@ -296,6 +318,13 @@ public:
 
 // Size 0x0
 class CutsceneResponsesTaleServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x0
+class GameEventBlockingTaleServiceDesc: public TaleQuestServiceDesc
 {
 public:
 };
@@ -359,6 +388,17 @@ public:
 };
 
 
+// Size 0x48
+class TaleQuestShipSetSinkingParamsServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	Struct QuestVariableGuid                                     CrewId;                                            // 0x28(0x30)
+	Class ShipSinkingParametersDataAsset*                        SmallShipSinkingData;                              // 0x58(0x8)
+	Class ShipSinkingParametersDataAsset*                        MediumShipSinkingData;                             // 0x60(0x8)
+	Class ShipSinkingParametersDataAsset*                        LargeShipSinkingData;                              // 0x68(0x8)
+};
+
+
 // Size 0x8
 class TaleQuestToggleInteractionDescriptionServiceDesc: public TaleQuestServiceDesc
 {
@@ -377,11 +417,10 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x0
 class AddGameEventExclusionZoneStep: public TaleQuestStep
 {
 public:
-	Class AddGameEventExclusionZoneStepDesc*                     Desc;                                              // 0x98(0x8)
 };
 
 
@@ -392,7 +431,7 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x40
 class DebugTaleAddInstancedLevelStep: public TaleQuestStep
 {
 public:
@@ -460,14 +499,14 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class ForceCannonLoadStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x80
+// Size 0xb0
 class GenerateDigLocationInRadiusStep: public TaleQuestStep
 {
 public:
@@ -481,7 +520,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 class GetVoyageDifficultyFromRankStep: public TaleQuestStep
 {
 public:
@@ -561,11 +600,24 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x0
+class ReleaseGameEventBlockStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
 class RemoveGameEventExclusionZoneStep: public TaleQuestStep
 {
 public:
-	Class RemoveGameEventExclusionZoneStepDesc*                  Desc;                                              // 0x98(0x8)
+};
+
+
+// Size 0x0
+class RequestGameEventBlockStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -591,7 +643,7 @@ public:
 };
 
 
-// Size 0x58
+// Size 0x68
 class SpawnPhasedActorWithTransformStep: public TaleQuestStep
 {
 public:
@@ -654,11 +706,11 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestChooseIslandFromWeightsStep: public TaleQuestStep
 {
 public:
-	Class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0xf8(0x8)
+	Class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0x128(0x8)
 };
 
 
@@ -778,10 +830,12 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestSelectEntryFromArrayStep: public TaleQuestStep
 {
 public:
+	Struct QuestVariableArray                                    InputArray;                                        // 0x98(0x30)
+	Struct QuestVariable                                         OutputEntry;                                       // 0xc8(0x30)
 };
 
 
@@ -872,6 +926,14 @@ public:
 };
 
 
+// Size 0x10
+class WaitForGameEventToCompleteStep: public TaleQuestStep
+{
+public:
+	Class GameEvent*                                             GameEvent;                                         // 0x98(0x8)
+};
+
+
 // Size 0x70
 class WaitForHealthToReachFractionStep: public TaleQuestStep
 {
@@ -879,31 +941,41 @@ public:
 };
 
 
-// Size 0xb0
+// Size 0xd0
 class WaitForItemPickupStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x70
-class ActorRadiusTrackerStepDesc: public TaleQuestStepDesc
+// Size 0x18
+class WaitForSpawnedPawnBaseStep: public TaleQuestStep
 {
 public:
-	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x20)
-	float                                                        DurationBetweenChecks;                             // 0xa0(0x4)
-	Struct QuestVariableVector                                   Location;                                          // 0xa8(0x20)
-	float                                                        Radius;                                            // 0xc8(0x4)
-	Struct QuestVariableBool                                     ActorInsideRadius;                                 // 0xd0(0x20)
+	Class AISpawner*                                             AISpawner;                                         // 0x98(0x8)
 };
 
 
-// Size 0x28
+// Size 0xa0
+class ActorRadiusTrackerStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
+	float                                                        DurationBetweenChecks;                             // 0xb0(0x4)
+	Struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
+	float                                                        Radius;                                            // 0xe8(0x4)
+	Struct QuestVariableBool                                     ActorInsideRadius;                                 // 0xf0(0x30)
+};
+
+
+// Size 0x40
 class AddGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        Radius;                                            // 0x80(0x4)
-	Struct QuestVariableVector                                   Location;                                          // 0x88(0x20)
+	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
+	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
+	Struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
 };
 
 
@@ -916,158 +988,158 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class DestroySpawnedActorStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x20)
+	Struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x30)
 };
 
 
-// Size 0x28
+// Size 0x38
 class DoEQSQueryStepDesc: public TaleQuestStepDesc
 {
 public:
 	Class EnvQuery*                                              EQSQuery;                                          // 0x80(0x8)
-	Struct QuestVariableArray                                    OutPoints;                                         // 0x88(0x20)
-};
-
-
-// Size 0x20
-class EnableInteractionWithActorStepDesc: public TaleQuestStepDesc
-{
-public:
-	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x20)
-};
-
-
-// Size 0x48
-class FindItemInCollectorsChestStepDesc: public TaleQuestStepDesc
-{
-public:
-	Struct QuestVariableActor                                    CollectorsChest;                                   // 0x80(0x20)
-	Struct QuestVariableActor                                    ItemInChest;                                       // 0xa0(0x20)
-	class                                                        ItemToFind;                                        // 0xc0(0x8)
-};
-
-
-// Size 0x70
-class FindNamedPointStepDescBase: public TaleQuestStepDesc
-{
-public:
-	Struct QuestVariableActor                                    ActorToSearch;                                     // 0xa0(0x20)
-	Struct QuestVariableName                                     GroupNamePin;                                      // 0xc0(0x20)
-	struct FName                                                 PointGroupName;                                    // 0xe0(0x8)
-	byte                                                         SearchMethod;                                      // 0xe8(0x1)
-	byte                                                         ReturnInSpace;                                     // 0xe9(0x1)
-};
-
-
-// Size 0x20
-class FindNamedPointStepDesc: public FindNamedPointStepDescBase
-{
-public:
-	Struct QuestVariableOrientedPoint                            OutputOrientedPoint;                               // 0xf0(0x20)
-};
-
-
-// Size 0x20
-class FindNamedPointAsVectorStepDesc: public FindNamedPointStepDescBase
-{
-public:
-	Struct QuestVariableVector                                   OutputVectorLocation;                              // 0xf0(0x20)
-};
-
-
-// Size 0x28
-class FindNamedPointAsTransformStepDesc: public FindNamedPointStepDescBase
-{
-public:
-	Struct QuestVariableTransform                                OutputTransform;                                   // 0xf0(0x28)
-};
-
-
-// Size 0x40
-class ForceCannonLoadStepDesc: public TaleQuestStepDesc
-{
-public:
-	Struct QuestVariableActor                                    Cannon;                                            // 0x80(0x20)
-	Struct QuestVariableActor                                    Projectile;                                        // 0xa0(0x20)
-};
-
-
-// Size 0x68
-class GenerateDigLocationInRadiusStepDesc: public TaleQuestStepDesc
-{
-public:
-	Struct QuestVariableName                                     IslandName;                                        // 0x80(0x20)
-	Struct QuestVariableVector                                   Center;                                            // 0xa0(0x20)
-	float                                                        RadiusInCm;                                        // 0xc0(0x4)
-	Struct QuestVariableVector                                   DigLocation;                                       // 0xc8(0x20)
-};
-
-
-// Size 0x28
-class GetActorOfInterestStepDesc: public TaleQuestStepDesc
-{
-public:
-	class                                                        ActorOfInterestId;                                 // 0x80(0x8)
-	Struct QuestVariableActor                                    ActorOfInterest;                                   // 0x88(0x20)
+	Struct QuestVariableArray                                    OutPoints;                                         // 0x88(0x30)
 };
 
 
 // Size 0x30
-class InvokeDamageDesc: public TaleQuestStepDesc
+class EnableInteractionWithActorStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    ActorToDamage;                                     // 0x80(0x20)
-	class                                                        DamageType;                                        // 0xa0(0x8)
-	float                                                        DamageAmount;                                      // 0xa8(0x4)
-	byte                                                         DamageReason;                                      // 0xac(0x1)
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
 };
 
 
-// Size 0x28
-class LinkEQSContextWithVariableStepDesc: public TaleQuestStepDesc
+// Size 0x68
+class FindItemInCollectorsChestStepDesc: public TaleQuestStepDesc
 {
 public:
-	class                                                        Context;                                           // 0x80(0x8)
-	Struct QuestVariableSetEQSTaleContextValue                   Variable;                                          // 0x88(0x20)
+	Struct QuestVariableActor                                    CollectorsChest;                                   // 0x80(0x30)
+	Struct QuestVariableActor                                    ItemInChest;                                       // 0xb0(0x30)
+	class                                                        ItemToFind;                                        // 0xe0(0x8)
 };
 
 
-// Size 0x80
-class LoadSequencerAnimationStepDesc: public TaleQuestStepDesc
+// Size 0x90
+class FindNamedPointStepDescBase: public TaleQuestStepDesc
 {
 public:
-	TArray<class LevelSequence*>                                 LevelSequencesToLoad;                              // 0x80(0x10)
-	Struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x90(0x20)
-	Struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xb0(0x20)
-	Struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xd0(0x20)
-	bool                                                         AttachToTargetActor;                               // 0xf0(0x1)
-	struct FName                                                 AttachSocketName;                                  // 0xf4(0x8)
-	bool                                                         PlayGlobally;                                      // 0xfc(0x1)
+	Struct QuestVariableActor                                    ActorToSearch;                                     // 0xa0(0x30)
+	Struct QuestVariableName                                     GroupNamePin;                                      // 0xd0(0x30)
+	struct FName                                                 PointGroupName;                                    // 0x100(0x8)
+	byte                                                         SearchMethod;                                      // 0x108(0x1)
+	byte                                                         ReturnInSpace;                                     // 0x109(0x1)
+};
+
+
+// Size 0x30
+class FindNamedPointStepDesc: public FindNamedPointStepDescBase
+{
+public:
+	Struct QuestVariableOrientedPoint                            OutputOrientedPoint;                               // 0x110(0x30)
+};
+
+
+// Size 0x30
+class FindNamedPointAsVectorStepDesc: public FindNamedPointStepDescBase
+{
+public:
+	Struct QuestVariableVector                                   OutputVectorLocation;                              // 0x110(0x30)
+};
+
+
+// Size 0x38
+class FindNamedPointAsTransformStepDesc: public FindNamedPointStepDescBase
+{
+public:
+	Struct QuestVariableTransform                                OutputTransform;                                   // 0x110(0x38)
 };
 
 
 // Size 0x60
-class OverrideManagedActorStateStepDesc: public TaleQuestStepDesc
+class ForceCannonLoadStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x20)
-	bool                                                         TrackActor;                                        // 0xa0(0x1)
-	bool                                                         MarkAsCritical;                                    // 0xa1(0x1)
-	Struct FText                                                 CriticalActorLostMessage;                          // 0xa8(0x38)
+	Struct QuestVariableActor                                    Cannon;                                            // 0x80(0x30)
+	Struct QuestVariableActor                                    Projectile;                                        // 0xb0(0x30)
 };
 
 
-// Size 0x48
+// Size 0x98
+class GenerateDigLocationInRadiusStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
+	Struct QuestVariableVector                                   Center;                                            // 0xb0(0x30)
+	float                                                        RadiusInCm;                                        // 0xe0(0x4)
+	Struct QuestVariableVector                                   DigLocation;                                       // 0xe8(0x30)
+};
+
+
+// Size 0x38
+class GetActorOfInterestStepDesc: public TaleQuestStepDesc
+{
+public:
+	class                                                        ActorOfInterestId;                                 // 0x80(0x8)
+	Struct QuestVariableActor                                    ActorOfInterest;                                   // 0x88(0x30)
+};
+
+
+// Size 0x40
+class InvokeDamageDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    ActorToDamage;                                     // 0x80(0x30)
+	class                                                        DamageType;                                        // 0xb0(0x8)
+	float                                                        DamageAmount;                                      // 0xb8(0x4)
+	byte                                                         DamageReason;                                      // 0xbc(0x1)
+};
+
+
+// Size 0x38
+class LinkEQSContextWithVariableStepDesc: public TaleQuestStepDesc
+{
+public:
+	class                                                        Context;                                           // 0x80(0x8)
+	Struct QuestVariableSetEQSTaleContextValue                   Variable;                                          // 0x88(0x30)
+};
+
+
+// Size 0xb0
+class LoadSequencerAnimationStepDesc: public TaleQuestStepDesc
+{
+public:
+	TArray<class LevelSequence*>                                 LevelSequencesToLoad;                              // 0x80(0x10)
+	Struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x90(0x30)
+	Struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xc0(0x30)
+	Struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xf0(0x30)
+	bool                                                         AttachToTargetActor;                               // 0x120(0x1)
+	struct FName                                                 AttachSocketName;                                  // 0x124(0x8)
+	bool                                                         PlayGlobally;                                      // 0x12c(0x1)
+};
+
+
+// Size 0x70
+class OverrideManagedActorStateStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x30)
+	bool                                                         TrackActor;                                        // 0xb0(0x1)
+	bool                                                         MarkAsCritical;                                    // 0xb1(0x1)
+	Struct FText                                                 CriticalActorLostMessage;                          // 0xb8(0x38)
+};
+
+
+// Size 0x68
 class ParticipantRadiusTrackerStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        DurationBetweenChecks;                             // 0x80(0x4)
-	Struct QuestVariableVector                                   Location;                                          // 0x88(0x20)
-	Struct QuestVariableFloat                                    Radius;                                            // 0xa8(0x20)
+	Struct QuestVariableVector                                   Location;                                          // 0x88(0x30)
+	Struct QuestVariableFloat                                    Radius;                                            // 0xb8(0x30)
 };
 
 
@@ -1092,124 +1164,140 @@ public:
 };
 
 
-// Size 0xe8
+// Size 0x138
 class PlaySequencerAnimationOnCutsceneActorStepDesc: public TaleQuestStepDesc
 {
 public:
 	Class LevelSequence*                                         LevelSequence;                                     // 0x80(0x8)
 	float                                                        Delay;                                             // 0x88(0x4)
-	Struct QuestVariableActor                                    DockableBaseActor;                                 // 0x90(0x20)
-	Struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xb0(0x20)
-	Struct QuestVariableActor                                    ActorToPossess;                                    // 0xd0(0x20)
-	Struct QuestVariableArray                                    AdditionalPossessables;                            // 0xf0(0x20)
-	Struct QuestVariableActor                                    InteractingActor;                                  // 0x110(0x20)
-	Struct FString                                               PossessableName;                                   // 0x130(0x10)
-	Class SceneDialogueData*                                     DialogueData;                                      // 0x140(0x8)
-	TArray<Struct FText>                                         LocalisableNames;                                  // 0x148(0x10)
-	bool                                                         IsLevelSequenceActorAlwaysRelevant;                // 0x158(0x1)
-	bool                                                         IsLooping;                                         // 0x159(0x1)
-	float                                                        SubtitleSphereRadiusInCm;                          // 0x15c(0x4)
-	Class LevelSequence*                                         FemaleLevelSequence;                               // 0x160(0x8)
+	Struct QuestVariableActor                                    DockableBaseActor;                                 // 0x90(0x30)
+	Struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xc0(0x30)
+	Struct QuestVariableActor                                    ActorToPossess;                                    // 0xf0(0x30)
+	Struct QuestVariableArray                                    AdditionalPossessables;                            // 0x120(0x30)
+	Struct QuestVariableActor                                    InteractingActor;                                  // 0x150(0x30)
+	Struct FString                                               PossessableName;                                   // 0x180(0x10)
+	Class SceneDialogueData*                                     DialogueData;                                      // 0x190(0x8)
+	TArray<Struct FText>                                         LocalisableNames;                                  // 0x198(0x10)
+	bool                                                         IsLevelSequenceActorAlwaysRelevant;                // 0x1a8(0x1)
+	bool                                                         IsLooping;                                         // 0x1a9(0x1)
+	float                                                        SubtitleSphereRadiusInCm;                          // 0x1ac(0x4)
+	Class LevelSequence*                                         FemaleLevelSequence;                               // 0x1b0(0x8)
 };
 
 
-// Size 0xb8
+// Size 0xf8
 class PlaySequencerAnimationStepDesc: public TaleQuestStepDesc
 {
 public:
 	Class LevelSequence*                                         LevelSequenceToPlay;                               // 0x80(0x8)
-	Struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x88(0x20)
-	Struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xa8(0x20)
-	Struct QuestVariableActor                                    DockableBaseActor;                                 // 0xc8(0x20)
-	Struct QuestVariableActor                                    InteractingActor;                                  // 0xe8(0x20)
-	bool                                                         PlayGlobally;                                      // 0x108(0x1)
-	bool                                                         IsLevelSequenceActorAlawaysRelevant;               // 0x109(0x1)
-	Class SceneDialogueData*                                     DialogueData;                                      // 0x110(0x8)
-	TArray<Struct FText>                                         LocalisableNames;                                  // 0x118(0x10)
-	bool                                                         IsLooping;                                         // 0x128(0x1)
-	float                                                        SubtitleSphereRadiusInCm;                          // 0x12c(0x4)
-	Class LevelSequence*                                         FemaleLevelSequenceToPlay;                         // 0x130(0x8)
-};
-
-
-// Size 0x20
-class PreventInteractionWithActorStepDesc: public TaleQuestStepDesc
-{
-public:
-	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x20)
+	Struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x88(0x30)
+	Struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xb8(0x30)
+	Struct QuestVariableActor                                    DockableBaseActor;                                 // 0xe8(0x30)
+	Struct QuestVariableActor                                    InteractingActor;                                  // 0x118(0x30)
+	bool                                                         PlayGlobally;                                      // 0x148(0x1)
+	bool                                                         IsLevelSequenceActorAlawaysRelevant;               // 0x149(0x1)
+	Class SceneDialogueData*                                     DialogueData;                                      // 0x150(0x8)
+	TArray<Struct FText>                                         LocalisableNames;                                  // 0x158(0x10)
+	bool                                                         IsLooping;                                         // 0x168(0x1)
+	float                                                        SubtitleSphereRadiusInCm;                          // 0x16c(0x4)
+	Class LevelSequence*                                         FemaleLevelSequenceToPlay;                         // 0x170(0x8)
 };
 
 
 // Size 0x30
-class ProvokeHitReactionDesc: public TaleQuestStepDesc
+class PreventInteractionWithActorStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    ActorToProvoke;                                    // 0x80(0x20)
-	class                                                        DamageType;                                        // 0xa0(0x8)
-	float                                                        DamageAmount;                                      // 0xa8(0x4)
-	byte                                                         DamageReason;                                      // 0xac(0x1)
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
 };
 
 
-// Size 0x28
+// Size 0x40
+class ProvokeHitReactionDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    ActorToProvoke;                                    // 0x80(0x30)
+	class                                                        DamageType;                                        // 0xb0(0x8)
+	float                                                        DamageAmount;                                      // 0xb8(0x4)
+	byte                                                         DamageReason;                                      // 0xbc(0x1)
+};
+
+
+// Size 0x0
+class ReleaseGameEventBlockStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x40
 class RemoveGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        Radius;                                            // 0x80(0x4)
-	Struct QuestVariableVector                                   Location;                                          // 0x88(0x20)
+	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
+	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
+	Struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
 };
 
 
-// Size 0x50
+// Size 0x0
+class RequestGameEventBlockStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x60
 class SelectNamedPointStepDesc: public TaleQuestStepDesc
 {
 public:
 	struct FName                                                 GroupName;                                         // 0xa0(0x8)
 	int                                                          PointIndex;                                        // 0xa8(0x4)
 	byte                                                         ReturnInSpace;                                     // 0xac(0x1)
-	Struct QuestVariableOrientedPoint                            Point;                                             // 0xb0(0x20)
+	Struct QuestVariableOrientedPoint                            Point;                                             // 0xb0(0x30)
 };
 
 
-// Size 0x28
+// Size 0x38
 class SetEQSNamedContextStepDesc: public TaleQuestStepDesc
 {
 public:
 	struct FName                                                 Name;                                              // 0x80(0x8)
-	Struct QuestVariableLinkEQSContext                           Value;                                             // 0x88(0x20)
+	Struct QuestVariableLinkEQSContext                           Value;                                             // 0x88(0x30)
 };
 
 
-// Size 0x40
+// Size 0x50
 class SpawnLayerStepDesc: public TaleQuestStepDesc
 {
 public:
 	Class LayerActorsDataAsset*                                  LayerAsset;                                        // 0x80(0x8)
 	bool                                                         SpawnPhased;                                       // 0x88(0x1)
-	Struct QuestVariableActor                                    ActorWithLayers;                                   // 0x90(0x20)
-	TArray<Struct QuestVariableActor>                            SpawnedActors;                                     // 0xb0(0x10)
+	Struct QuestVariableActor                                    ActorWithLayers;                                   // 0x90(0x30)
+	TArray<Struct QuestVariableActor>                            SpawnedActors;                                     // 0xc0(0x10)
 };
 
 
-// Size 0x80
+// Size 0x90
 class SpawnPhasedActorWithTransformStepBaseDesc: public TaleQuestStepDesc
 {
 public:
 	bool                                                         MarkAsCritical;                                    // 0xa0(0x1)
 	Struct FText                                                 CriticalActorLostMessage;                          // 0xa8(0x38)
-	Struct QuestVariableActor                                    ActorVar;                                          // 0xe0(0x20)
+	Struct QuestVariableActor                                    ActorVar;                                          // 0xe0(0x30)
 };
 
 
-// Size 0x28
+// Size 0x38
 class SpawnPhasedActorAtLocationStepDesc: public SpawnPhasedActorWithTransformStepBaseDesc
 {
 public:
-	Struct QuestVariableTransform                                Location;                                          // 0x100(0x28)
+	Struct QuestVariableTransform                                Location;                                          // 0x110(0x38)
 };
 
 
-// Size 0xa8
+// Size 0xd8
 class SpawnPhasedItemStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1217,9 +1305,9 @@ public:
 	bool                                                         MarkItemAsCritical;                                // 0x81(0x1)
 	Struct FText                                                 CriticalActorLostMessage;                          // 0x88(0x38)
 	struct FName                                                 SocketName;                                        // 0xc0(0x8)
-	Struct QuestVariableItemDescType                             Item;                                              // 0xc8(0x20)
-	Struct QuestVariableActor                                    LocatorVar;                                        // 0xe8(0x20)
-	Struct QuestVariableItemInfo                                 SpawnedItemVar;                                    // 0x108(0x20)
+	Struct QuestVariableItemDescType                             Item;                                              // 0xc8(0x30)
+	Struct QuestVariableActor                                    LocatorVar;                                        // 0xf8(0x30)
+	Struct QuestVariableItemInfo                                 SpawnedItemVar;                                    // 0x128(0x30)
 };
 
 
@@ -1253,11 +1341,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestArrayContainsStepDesc: public TaleQuestArrayItemStepBaseDesc
 {
 public:
-	Struct QuestVariableBool                                     Result;                                            // 0x90(0x20)
+	Struct QuestVariableBool                                     Result;                                            // 0x90(0x30)
 };
 
 
@@ -1285,14 +1373,14 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestChooseIslandFromWeightsStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableNameArray                                IslandsToChooseFrom;                               // 0x80(0x20)
-	Struct QuestVariableInt                                      DifficultyRank;                                    // 0xa0(0x20)
-	Struct QuestVariableName                                     ChosenIsland;                                      // 0xc0(0x20)
-	Class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0xe0(0x8)
+	Struct QuestVariableNameArray                                IslandsToChooseFrom;                               // 0x80(0x30)
+	Struct QuestVariableInt                                      DifficultyRank;                                    // 0xb0(0x30)
+	Struct QuestVariableName                                     ChosenIsland;                                      // 0xe0(0x30)
+	Class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0x110(0x8)
 };
 
 
@@ -1304,11 +1392,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestDisableInteractionStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x20)
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
 };
 
 
@@ -1320,11 +1408,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestEnableInteractionStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x20)
+	Struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
 };
 
 
@@ -1390,34 +1478,34 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestGetCollectionItemCountStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableCollection                               Collection;                                        // 0x80(0x20)
-	Struct QuestVariableInt                                      Num;                                               // 0xa0(0x20)
+	Struct QuestVariableCollection                               Collection;                                        // 0x80(0x30)
+	Struct QuestVariableInt                                      Num;                                               // 0xb0(0x30)
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestGetParticipatingCrewsInRadiusStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x20)
-	Struct QuestVariableVector                                   Location;                                          // 0xa0(0x20)
-	float                                                        Radius;                                            // 0xc0(0x4)
+	Struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x30)
+	Struct QuestVariableVector                                   Location;                                          // 0xb0(0x30)
+	float                                                        Radius;                                            // 0xe0(0x4)
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestGetParticipatingCrewsStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x20)
+	Struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x30)
 };
 
 
-// Size 0x50
+// Size 0x60
 class TaleQuestGrantRewardStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1425,17 +1513,17 @@ public:
 	class                                                        Company;                                           // 0x88(0x8)
 	Struct Guid                                                  Id;                                                // 0x90(0x10)
 	bool                                                         ShouldGrantToAlliedCrews;                          // 0xa0(0x1)
-	Struct QuestVariablePlayerActor                              SpecificPlayerToAward;                             // 0xa8(0x20)
-	struct FName                                                 Feature;                                           // 0xc8(0x8)
+	Struct QuestVariablePlayerActor                              SpecificPlayerToAward;                             // 0xa8(0x30)
+	struct FName                                                 Feature;                                           // 0xd8(0x8)
 };
 
 
-// Size 0x28
+// Size 0x38
 class TaleQuestPermanentPromptStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariablePrioritisedPrompt                        Prompt;                                            // 0x80(0x20)
-	byte                                                         StartOrStop;                                       // 0xa0(0x1)
+	Struct QuestVariablePrioritisedPrompt                        Prompt;                                            // 0x80(0x30)
+	byte                                                         StartOrStop;                                       // 0xb0(0x1)
 };
 
 
@@ -1446,12 +1534,12 @@ public:
 };
 
 
-// Size 0x90
+// Size 0x98
 class TaleQuestFunctionStepLibrary: public TaleQuestRunnableStepDesc
 {
 public:
-	Class Function*                                              Function;                                          // 0xe8(0x8)
-	byte                                                         FunctionStepFlags;                                 // 0x170(0x1)
+	Class Function*                                              Function;                                          // 0xf0(0x8)
+	byte                                                         FunctionStepFlags;                                 // 0x178(0x1)
 };
 
 
@@ -1477,7 +1565,21 @@ public:
 
 
 // Size 0x0
+class TaleQuestLogicFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestNamedPointsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestNameFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
@@ -1501,8 +1603,8 @@ public:
 class TaleQuestStoryBranchFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
-	Class TaleQuestStepDesc*                                     Active;                                            // 0x180(0x8)
-	Class TaleQuestStepDesc*                                     Inactive;                                          // 0x188(0x8)
+	Class TaleQuestStepDesc*                                     Active;                                            // 0x188(0x8)
+	Class TaleQuestStepDesc*                                     Inactive;                                          // 0x190(0x8)
 };
 
 
@@ -1541,13 +1643,13 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestSelectEntryFromArrayStepDesc: public TaleQuestStepDesc
 {
 public:
 	Class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
-	Struct QuestVariableArray                                    InputArray;                                        // 0x88(0x20)
-	Struct QuestVariableAny                                      OutputEntry;                                       // 0xa8(0x20)
+	Struct QuestVariableArray                                    InputArray;                                        // 0x88(0x30)
+	Struct QuestVariableAny                                      OutputEntry;                                       // 0xb8(0x30)
 };
 
 
@@ -1609,11 +1711,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestCrewTaskStepDesc: public TaleQuestTaskStepDescBase
 {
 public:
-	Struct QuestVariableGuid                                     CrewId;                                            // 0x88(0x20)
+	Struct QuestVariableGuid                                     CrewId;                                            // 0x88(0x30)
 };
 
 
@@ -1642,30 +1744,30 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestWaitForHandInStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    HandInActor;                                       // 0x80(0x20)
-	class                                                        SpecificItem;                                      // 0xa0(0x8)
-	Struct QuestVariableItemDescType                             HandInItem;                                        // 0xa8(0x20)
+	Struct QuestVariableActor                                    HandInActor;                                       // 0x80(0x30)
+	class                                                        SpecificItem;                                      // 0xb0(0x8)
+	Struct QuestVariableItemDescType                             HandInItem;                                        // 0xb8(0x30)
 };
 
 
-// Size 0x20
+// Size 0x30
 class TrackResponseCoordinatorStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableUObject                                  CutsceneResponseCoordinator;                       // 0x80(0x20)
+	Struct QuestVariableUObject                                  CutsceneResponseCoordinator;                       // 0x80(0x30)
 };
 
 
-// Size 0x40
+// Size 0x60
 class VisualiseLoggerEQSResultsTaleStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableArray                                    ResultsArray;                                      // 0x80(0x20)
-	Struct QuestVariableVector                                   SelectedResult;                                    // 0xa0(0x20)
+	Struct QuestVariableArray                                    ResultsArray;                                      // 0x80(0x30)
+	Struct QuestVariableVector                                   SelectedResult;                                    // 0xb0(0x30)
 };
 
 
@@ -1678,6 +1780,14 @@ public:
 };
 
 
+// Size 0x30
+class WaitForGameEventToCompleteStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableGameEvent                                GameEvent;                                         // 0x80(0x30)
+};
+
+
 // Size 0x10
 class WaitForHealthToReachFractionStepDesc: public TaleQuestStepDesc
 {
@@ -1687,31 +1797,39 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class WaitForItemPickupStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    Item;                                              // 0x80(0x20)
-	Struct QuestVariableActor                                    PickerUpper;                                       // 0xa0(0x20)
+	Struct QuestVariableActor                                    Item;                                              // 0x80(0x30)
+	Struct QuestVariableActor                                    PickerUpper;                                       // 0xb0(0x30)
 };
 
 
-// Size 0x178
+// Size 0x30
+class WaitForSpawnedPawnBaseStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableAISpawner                                AISpawner;                                         // 0x80(0x30)
+};
+
+
+// Size 0x198
 class TaleQuestSelectShipwreckLocationFromValidCandidatesStep: public TaleQuestStep
 {
 public:
-	Class TaleQuestSelectorService*                              CachedSelectorService;                             // 0xf0(0x8)
+	Class TaleQuestSelectorService*                              CachedSelectorService;                             // 0x110(0x8)
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc: public TaleQuestStepDesc
 {
 public:
 	Class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
-	Struct QuestVariableVectorArray                              InputArray;                                        // 0x88(0x20)
-	Struct QuestVariableVector                                   OutputEntry;                                       // 0xa8(0x20)
-	Struct QuestVariableBool                                     ShuffleLists;                                      // 0xc8(0x20)
+	Struct QuestVariableVectorArray                              InputArray;                                        // 0x88(0x30)
+	Struct QuestVariableVector                                   OutputEntry;                                       // 0xb8(0x30)
+	Struct QuestVariableBool                                     ShuffleLists;                                      // 0xe8(0x30)
 };
 
 
@@ -1749,18 +1867,18 @@ public:
 };
 
 
-// Size 0xb8
+// Size 0x108
 class TaleQuestAddBountyMapStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
-	Struct QuestVariableText                                     Location;                                          // 0xa8(0x20)
-	Struct QuestVariableTextArray                                Description;                                       // 0xc8(0x20)
-	Struct QuestVariableBountyTargetArray                        CaptainTargets;                                    // 0xe8(0x20)
-	Struct QuestVariableBountyTargetArray                        CrewTargets;                                       // 0x108(0x20)
-	Class BountyMapLayout*                                       CustomLayout;                                      // 0x128(0x8)
-	class                                                        OverrideTreasureMapItemDesc;                       // 0x130(0x8)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
+	Struct QuestVariableText                                     Location;                                          // 0xb8(0x30)
+	Struct QuestVariableTextArray                                Description;                                       // 0xe8(0x30)
+	Struct QuestVariableBountyTargetArray                        CaptainTargets;                                    // 0x118(0x30)
+	Struct QuestVariableBountyTargetArray                        CrewTargets;                                       // 0x148(0x30)
+	Class BountyMapLayout*                                       CustomLayout;                                      // 0x178(0x8)
+	class                                                        OverrideTreasureMapItemDesc;                       // 0x180(0x8)
 };
 
 
@@ -1827,63 +1945,63 @@ public:
 };
 
 
-// Size 0x70
+// Size 0xa0
 class TaleQuestAddCargoRunMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
-	Struct QuestVariableInt                                      NumItems;                                          // 0xa8(0x20)
-	Struct QuestVariableGuid                                     NPCId;                                             // 0xc8(0x20)
-	Class CargoRunMapLayout*                                     Layout;                                            // 0xe8(0x8)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
+	Struct QuestVariableInt                                      NumItems;                                          // 0xb8(0x30)
+	Struct QuestVariableGuid                                     NPCId;                                             // 0xe8(0x30)
+	Class CargoRunMapLayout*                                     Layout;                                            // 0x118(0x8)
+};
+
+
+// Size 0x120
+class TaleQuestAddChecklistMapStepDesc: public TaleQuestMapStepDescBase
+{
+public:
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableText                                     Title;                                             // 0xa8(0x30)
+	Struct QuestVariableText                                     Description;                                       // 0xd8(0x30)
+	Struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0x108(0x30)
+	Struct QuestVariableText                                     Afternote;                                         // 0x138(0x30)
+	Struct QuestVariableDataAsset                                Layout;                                            // 0x168(0x30)
+	byte                                                         RadialMiniIcon;                                    // 0x198(0x1)
+};
+
+
+// Size 0x70
+class TaleQuestAddCircleMapStepDesc: public TaleQuestMapStepDescBase
+{
+public:
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
+	Struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
+	float                                                        CircleScale;                                       // 0xe8(0x4)
+	byte                                                         RadialMiniIcon;                                    // 0xec(0x1)
 };
 
 
 // Size 0xd0
-class TaleQuestAddChecklistMapStepDesc: public TaleQuestMapStepDescBase
-{
-public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableText                                     Title;                                             // 0xa8(0x20)
-	Struct QuestVariableText                                     Description;                                       // 0xc8(0x20)
-	Struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0xe8(0x20)
-	Struct QuestVariableText                                     Afternote;                                         // 0x108(0x20)
-	Struct QuestVariableDataAsset                                Layout;                                            // 0x128(0x20)
-	byte                                                         RadialMiniIcon;                                    // 0x148(0x1)
-};
-
-
-// Size 0x50
-class TaleQuestAddCircleMapStepDesc: public TaleQuestMapStepDescBase
-{
-public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
-	Struct QuestVariableVector                                   Location;                                          // 0xa8(0x20)
-	float                                                        CircleScale;                                       // 0xc8(0x4)
-	byte                                                         RadialMiniIcon;                                    // 0xcc(0x1)
-};
-
-
-// Size 0x90
 class TaleQuestAddMerchantMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
-	Struct QuestVariableText                                     DeliveryLocation;                                  // 0xa8(0x20)
-	Struct QuestVariableText                                     DeliverByTime;                                     // 0xc8(0x20)
-	Struct QuestVariableMerchantItemArray                        Items;                                             // 0xe8(0x20)
-	Class MerchantMapLayout*                                     Layout;                                            // 0x108(0x8)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
+	Struct QuestVariableText                                     DeliveryLocation;                                  // 0xb8(0x30)
+	Struct QuestVariableText                                     DeliverByTime;                                     // 0xe8(0x30)
+	Struct QuestVariableMerchantItemArray                        Items;                                             // 0x118(0x30)
+	Class MerchantMapLayout*                                     Layout;                                            // 0x148(0x8)
 };
 
 
-// Size 0x28
+// Size 0x38
 class TaleQuestAddRiddleMapBaseStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
 };
 
 
@@ -1891,27 +2009,27 @@ public:
 class TaleQuestAddRiddleMapStepDesc: public TaleQuestAddRiddleMapBaseStepDesc
 {
 public:
-	TArray<Struct FText>                                         Text;                                              // 0xa8(0x10)
+	TArray<Struct FText>                                         Text;                                              // 0xb8(0x10)
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleQuestAddRiddleMapUsingVariableStepDesc: public TaleQuestAddRiddleMapBaseStepDesc
 {
 public:
-	Struct QuestVariableTextArray                                TextVariable;                                      // 0xa8(0x20)
+	Struct QuestVariableTextArray                                TextVariable;                                      // 0xb8(0x30)
 };
 
 
-// Size 0x88
+// Size 0xc8
 class TaleQuestAddXMarksMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x20)
-	Struct QuestVariableVector                                   Location;                                          // 0xa8(0x20)
-	Struct QuestVariableBool                                     IsUnderground;                                     // 0xc8(0x20)
-	Struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0xe8(0x20)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
+	Struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
+	Struct QuestVariableBool                                     IsUnderground;                                     // 0xe8(0x30)
+	Struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0x118(0x30)
 };
 
 
@@ -1919,7 +2037,7 @@ public:
 class TaleQuestAdvanceRiddleMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
 };
 
 
@@ -1931,12 +2049,12 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 class TaleQuestRemoveMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableVector                                   Location;                                          // 0x88(0x20)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableVector                                   Location;                                          // 0x88(0x30)
 };
 
 
@@ -1948,13 +2066,13 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestUpdateMerchantMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	Struct QuestVariableMerchantItem                             Item;                                              // 0x88(0x20)
-	Struct QuestVariableInt                                      Index;                                             // 0xa8(0x20)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
+	Struct QuestVariableMerchantItem                             Item;                                              // 0x88(0x30)
+	Struct QuestVariableInt                                      Index;                                             // 0xb8(0x30)
 };
 
 
@@ -1962,7 +2080,7 @@ public:
 class TaleQuestWaitForChecklistMapCompletionStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
+	struct FName                                                 MapId;                                             // 0x80(0x8)
 };
 
 

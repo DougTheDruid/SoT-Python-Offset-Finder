@@ -1,4 +1,21 @@
 {
+  "EmissaryFactionActionRewardBoostServiceEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "FactionActionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AssociatedCrew",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "EmissaryGlobalActionRewardBoostServiceEvent": {
     "ClassSize": "0x18",
     "Attributes": [

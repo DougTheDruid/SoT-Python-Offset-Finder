@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C: public BuoyantStorageContainer
 {
 public:
-	Class SphereComponent*                                       Sphere;                                            // 0x6f8(0x8)
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x700(0x8)
-	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x708(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x710(0x8)
+	Class SphereComponent*                                       Sphere;                                            // 0x728(0x8)
+	Class ReplenishableComponent*                                Replenishable;                                     // 0x730(0x8)
+	Class TelemetrySubjectComponent*                             TelemetrySubject;                                  // 0x738(0x8)
+	Class StorageContainerComponent*                             StorageContainer;                                  // 0x740(0x8)
 };
 
 

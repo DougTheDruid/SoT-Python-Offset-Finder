@@ -89,31 +89,31 @@ Kraken:
     Size: '0x8'
     Type: Class Murk*
   - Name: KrakenAudioComponent
-    Offset: '0x668'
+    Offset: '0x678'
     Size: '0x8'
     Type: Class KrakenAICharacterAudioComponent*
   - Name: KrakenTelemetryComponent
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class KrakenTelemetryComponent*
   - Name: SightingEncounterParams
-    Offset: '0x678'
+    Offset: '0x688'
     Size: '0xc'
     Type: Struct EncounterParams
   - Name: CloseEncounterParams
-    Offset: '0x684'
+    Offset: '0x694'
     Size: '0xc'
     Type: Struct EncounterParams
   - Name: Params
-    Offset: '0x6a0'
+    Offset: '0x6b0'
     Size: '0x160'
     Type: Struct KrakenParams
   - Name: NumTentaclesRemaining
-    Offset: '0x800'
+    Offset: '0x810'
     Size: '0x4'
     Type: int
-  ClassSize: '0x568'
-  FullSize: '0x930'
+  ClassSize: '0x578'
+  FullSize: '0x940'
   InheritedSize: '0x3c8'
   Super: Actor
 KrakenAnimatedTentacleAnimationDataAsset:

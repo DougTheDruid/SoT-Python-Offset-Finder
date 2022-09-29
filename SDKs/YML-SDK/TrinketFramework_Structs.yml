@@ -63,18 +63,22 @@ TrinketLoadout:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<Struct TrinketLoadoutEntry>
-  ClassSize: '0x10'
+  - Name: TrinketOwnerXUIDs
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct UniqueNetIdRepl>
+  ClassSize: '0x48'
 TrinketLoadoutEntry:
   Attributes:
-  - Name: Trinket
+  - Name: TrinketEntitlementIndex
     Offset: '0x0'
-    Size: '0x8'
-    Type: class
-  - Name: TrinketOwnerPlayerXuid
-    Offset: '0x8'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x18'
+    Size: '0x4'
+    Type: int
+  - Name: TrinketOwnerPlayerXUIDIndex
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
 TrinketLoadoutModel:
   Attributes:
   - Name: Trinkets

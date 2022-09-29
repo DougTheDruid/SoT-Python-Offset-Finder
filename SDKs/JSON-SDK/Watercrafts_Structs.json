@@ -180,7 +180,7 @@
     ]
   },
   "QuestVariableWatercraft": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "EventOarStrokeEnded": {

@@ -15,76 +15,76 @@
   },
   "AddMarkToTornMapStepDescBase": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xc0",
+    "FullSize": "0xe0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x40",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "MapID",
+        "Name": "MapId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "MapMark",
         "Type": "Struct TaleQuestVariableMapMarkType",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       }
     ]
   },
   "AddMarkToTornMapAtLocationStepDesc": {
     "Super": "AddMarkToTornMapStepDescBase",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc0",
-    "ClassSize": "0x20",
+    "FullSize": "0x110",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "MarkLocation",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       }
     ]
   },
   "AddMarkToTornMapAtActorLocationStepDesc": {
     "Super": "AddMarkToTornMapStepDescBase",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc0",
-    "ClassSize": "0x20",
+    "FullSize": "0x110",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "MarkLocation",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       }
     ]
   },
   "GetNumberOfCollectedTornMapPiecesStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xc8",
+    "FullSize": "0xd8",
     "InheritedSize": "0x98",
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": []
   },
   "GetNumberOfCollectedTornMapPiecesStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xc0",
+    "FullSize": "0xe0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x40",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "MapID",
+        "Name": "MapId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "NumPieces",
         "Type": "Struct QuestVariableInt",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -130,9 +130,9 @@
   },
   "SelectIslandsFromRegionStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xe8",
+    "FullSize": "0xf8",
     "InheritedSize": "0x98",
-    "ClassSize": "0x50",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "RegionData",
@@ -150,79 +150,79 @@
   },
   "SelectIslandsFromRegionStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x110",
+    "FullSize": "0x150",
     "InheritedSize": "0x80",
-    "ClassSize": "0x90",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "Region",
         "Type": "Struct QuestVariableDataAsset",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "NumIslands",
         "Type": "Struct QuestVariableInt",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "MaxDifferentIslands",
         "Type": "Struct QuestVariableInt",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       },
       {
         "Name": "SelectedIslands",
         "Type": "Struct QuestVariableNameArray",
-        "Size": "0x20",
-        "Offset": "0xe0"
+        "Size": "0x30",
+        "Offset": "0x110"
       },
       {
         "Name": "SelectionStrategy",
         "Type": "Class RegionIslandSelectionStrategyBase*",
         "Size": "0x8",
-        "Offset": "0x100"
+        "Offset": "0x140"
       },
       {
         "Name": "DefaultNumIslands",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x108"
+        "Offset": "0x148"
       },
       {
         "Name": "DefaultMaxDifferentIslands",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x10c"
+        "Offset": "0x14c"
       }
     ]
   },
   "TaleQuestAddLocationMapStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0x118",
+    "FullSize": "0x158",
     "InheritedSize": "0x98",
-    "ClassSize": "0x80",
+    "ClassSize": "0xc0",
     "Attributes": []
   },
   "TaleQuestAddTornMapStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0x118",
+    "FullSize": "0x158",
     "InheritedSize": "0x98",
-    "ClassSize": "0x80",
+    "ClassSize": "0xc0",
     "Attributes": []
   },
   "TaleQuestAddTradeRouteMapStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xf8",
+    "FullSize": "0x128",
     "InheritedSize": "0x98",
-    "ClassSize": "0x60",
+    "ClassSize": "0x90",
     "Attributes": []
   },
   "TaleQuestCustomMapFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x190",
-    "InheritedSize": "0x178",
+    "FullSize": "0x198",
+    "InheritedSize": "0x180",
     "ClassSize": "0x18",
     "Attributes": []
   },
@@ -242,12 +242,12 @@
   },
   "TaleQuestAddLocationMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x108",
+    "FullSize": "0x148",
     "InheritedSize": "0x80",
-    "ClassSize": "0x88",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "MapID",
+        "Name": "MapId",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -255,90 +255,90 @@
       {
         "Name": "NumberOfChests",
         "Type": "Struct QuestVariableInt",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "RegionMapData",
         "Type": "Struct QuestVariableDataAsset",
-        "Size": "0x20",
-        "Offset": "0xa8"
+        "Size": "0x30",
+        "Offset": "0xb8"
       },
       {
         "Name": "VaultData",
         "Type": "Struct QuestVariableDataAsset",
-        "Size": "0x20",
-        "Offset": "0xc8"
+        "Size": "0x30",
+        "Offset": "0xe8"
       },
       {
         "Name": "MapParams",
         "Type": "Struct QuestVariableDataAsset",
-        "Size": "0x20",
-        "Offset": "0xe8"
+        "Size": "0x30",
+        "Offset": "0x118"
       }
     ]
   },
   "TaleQuestAddTornMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x100",
+    "FullSize": "0x140",
     "InheritedSize": "0x80",
-    "ClassSize": "0x80",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "IslandName",
         "Type": "Struct QuestVariableName",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "NumberOfPieces",
         "Type": "Struct QuestVariableInt",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "MapParams",
         "Type": "Struct QuestVariableDataAsset",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       },
       {
-        "Name": "MapID",
+        "Name": "MapId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
-        "Offset": "0xe0"
+        "Size": "0x30",
+        "Offset": "0x110"
       }
     ]
   },
   "TaleQuestAddTradeRouteMapStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0xe8",
+    "FullSize": "0x118",
     "InheritedSize": "0x80",
-    "ClassSize": "0x68",
+    "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "TradeRouteData",
         "Type": "Struct QuestVariableDataAsset",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "VesselName",
         "Type": "Struct QuestVariableText",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
-        "Name": "MapID",
+        "Name": "MapId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       },
       {
         "Name": "ClueSiteToMapMarkIdMap",
         "Type": "Class ClueSiteTypeToMapMarkIdDataAsset*",
         "Size": "0x8",
-        "Offset": "0xe0"
+        "Offset": "0x110"
       }
     ]
   },
@@ -349,7 +349,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MapID",
+        "Name": "MapId",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"

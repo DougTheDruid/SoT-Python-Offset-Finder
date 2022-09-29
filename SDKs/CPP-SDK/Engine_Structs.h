@@ -591,11 +591,12 @@ public:
 };
 
 
-// Size 0x8
+// Size 0xc
 struct FeatureFlag
 {
 public:
 	struct FName                                                 FeatureName;                                       // 0x0(0x8)
+	bool                                                         InverseToggle;                                     // 0x8(0x1)
 };
 
 
@@ -2521,7 +2522,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x14
 struct DeformablesSettings
 {
 public:
@@ -2529,6 +2530,7 @@ public:
 	float                                                        VolumeStiffness;                                   // 0x4(0x4)
 	float                                                        Damping;                                           // 0x8(0x4)
 	float                                                        MaxDistance;                                       // 0xc(0x4)
+	float                                                        WeightMultiplier;                                  // 0x10(0x4)
 };
 
 
@@ -6594,6 +6596,77 @@ public:
 struct DummySpacerCameraTypes
 {
 public:
+};
+
+
+// Size 0x80
+struct NetRelevancyStat
+{
+public:
+	Struct FString                                               Reason;                                            // 0x0(0x10)
+	Struct NetRelevancyStateStat                                 State;                                             // 0x10(0x70)
+};
+
+
+// Size 0x70
+struct NetRelevancyStateStat
+{
+public:
+	float                                                        Duration;                                          // 0x0(0x4)
+	int                                                          RemainingCycles;                                   // 0x4(0x4)
+	Struct FString                                               StreamingMode;                                     // 0x8(0x10)
+	Struct NetRelevancyConnectionStat                            Connection;                                        // 0x18(0x38)
+	TArray<Struct NetRelevancyActorStat>                         Actors;                                            // 0x50(0x10)
+	TArray<Struct NetRelevancyLevelStat>                         Levels;                                            // 0x60(0x10)
+};
+
+
+// Size 0x18
+struct NetRelevancyLevelStat
+{
+public:
+	Struct FString                                               Name;                                              // 0x0(0x10)
+	bool                                                         Visible;                                           // 0x10(0x1)
+	int                                                          LODIndex;                                          // 0x14(0x4)
+};
+
+
+// Size 0x90
+struct NetRelevancyActorStat
+{
+public:
+	Struct FString                                               Name;                                              // 0x0(0x10)
+	Struct FString                                               path;                                              // 0x10(0x10)
+	Struct FString                                               Owner;                                             // 0x20(0x10)
+	Struct Vector                                                Location;                                          // 0x30(0xc)
+	Struct NetRelevancyActorClusterStat                          Cluster;                                           // 0x40(0x48)
+	byte                                                         ChannelState;                                      // 0x88(0x1)
+	bool                                                         IsNetRelevant;                                     // 0x89(0x1)
+	byte                                                         ActorDormancy;                                     // 0x8a(0x1)
+	byte                                                         ChannelDormancy;                                   // 0x8b(0x1)
+};
+
+
+// Size 0x48
+struct NetRelevancyActorClusterStat
+{
+public:
+	Struct FString                                               Name;                                              // 0x0(0x10)
+	TArray<Str SubClusters>                                      SubClusters;                                       // 0x10(0x10)
+	Struct FString                                               Type;                                              // 0x20(0x10)
+	Struct FString                                               Owner;                                             // 0x30(0x10)
+	bool                                                         IsCustomNamed;                                     // 0x40(0x1)
+	bool                                                         NeedsPreparation;                                  // 0x41(0x1)
+};
+
+
+// Size 0x38
+struct NetRelevancyConnectionStat
+{
+public:
+	int                                                          Id;                                                // 0x0(0x4)
+	Struct NetViewer                                             Viewer;                                            // 0x8(0x28)
+	Struct IntPoint                                              ViewerGridLocation;                                // 0x30(0x8)
 };
 
 

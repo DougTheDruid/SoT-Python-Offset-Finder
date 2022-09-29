@@ -1,6 +1,6 @@
 {
   "AsyncExcessiveLoadTelemetryEvent": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "FrameCounter",
@@ -25,6 +25,12 @@
         "Type": "TArray<Str AssetRequestList>",
         "Size": "0x10",
         "Offset": "0x18"
+      },
+      {
+        "Name": "LoadedAssetList",
+        "Type": "TArray<Str LoadedAssetList>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

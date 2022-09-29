@@ -6,8 +6,12 @@ NudgeInterpolationParamsDataAsset:
     Offset: '0x28'
     Size: '0x20'
     Type: Struct NudgeInterpolationParams
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: ControllerForceFeedbackEffect
+    Offset: '0x48'
+    Size: '0x8'
+    Type: Class ForceFeedbackEffect*
+  ClassSize: '0x28'
+  FullSize: '0x50'
   InheritedSize: '0x28'
   Super: DataAsset
 NudgePolicy:

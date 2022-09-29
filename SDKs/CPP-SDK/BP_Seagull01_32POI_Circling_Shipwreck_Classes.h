@@ -10,7 +10,11 @@ namespace DougsSDKDumper
 class BP_Seagull01_32POI_Circling_Shipwreck_C: public Actor
 {
 public:
-	Struct None                                                  ;                                                  // 0x3f800000(0x3f57e2d6)
+	Class WwiseEmitterComponent*                                 WwiseEmitter2;                                     // 0x3c8(0x8)
+	Class WwiseEmitterComponent*                                 WwiseEmitter1;                                     // 0x3d0(0x8)
+	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   wil_seagull_01_ProcAnim32;                         // 0x3e0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
 };
 
 

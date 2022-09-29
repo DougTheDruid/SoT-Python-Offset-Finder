@@ -18,6 +18,12 @@ ReservableContendedResourceInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+ReservableContendedResourceStateInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 WorldResourceRegistryInterface:
   Attributes: []
   ClassSize: '0x0'

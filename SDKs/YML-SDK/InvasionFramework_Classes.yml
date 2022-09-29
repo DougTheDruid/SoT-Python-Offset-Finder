@@ -6,6 +6,26 @@ EnvQueryGenerator_AggressiveAggressiveSpawnLocations:
   FullSize: '0x50'
   InheritedSize: '0x50'
   Super: EnvQueryGenerator
+GetInvasionBattleLocationStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+GetInvasionBattleLocationStepDesc:
+  Attributes:
+  - Name: Location
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableVector
+  - Name: Radius
+    Offset: '0xb0'
+    Size: '0x30'
+    Type: Struct QuestVariableFloat
+  ClassSize: '0x60'
+  FullSize: '0xe0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 GetInvasionShipsStep:
   Attributes: []
   ClassSize: '0x0'
@@ -16,44 +36,76 @@ GetInvasionShipsStepDesc:
   Attributes:
   - Name: AggressiveShip
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: AggressiveShip
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: PassiveShip
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: AggressiveCrewId
-    Offset: '0xe0'
-    Size: '0x20'
+    Offset: '0x110'
+    Size: '0x30'
     Type: Struct QuestVariableGuid
   - Name: AggressiveCrewId
-    Offset: '0x100'
-    Size: '0x20'
+    Offset: '0x140'
+    Size: '0x30'
     Type: Struct QuestVariableGuid
   - Name: PassiveCrewId
-    Offset: '0x120'
-    Size: '0x20'
+    Offset: '0x170'
+    Size: '0x30'
     Type: Struct QuestVariableGuid
   - Name: AggressiveFaction
-    Offset: '0x140'
-    Size: '0x20'
+    Offset: '0x1a0'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: AggressiveFaction
-    Offset: '0x160'
-    Size: '0x20'
+    Offset: '0x1d0'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: PassiveFaction
-    Offset: '0x180'
-    Size: '0x20'
+    Offset: '0x200'
+    Size: '0x30'
     Type: Struct QuestVariableName
-  ClassSize: '0x120'
-  FullSize: '0x1a0'
+  ClassSize: '0x1b0'
+  FullSize: '0x230'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+InvasionBattleBounds:
+  Attributes:
+  - Name: Root
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: ShipToTrack1
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: ShipToTrack2
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: InnerRadius
+    Offset: '0x3e0'
+    Size: '0x4'
+    Type: float
+  - Name: OuterRadius
+    Offset: '0x3e4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c8'
+  Super: Actor
+InvasionBattleBoundsShipComponentInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 InvasionBlueprintFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
@@ -87,23 +139,31 @@ InvasionService:
     Size: '0x8'
     Type: Class InvasionLocationsDataAsset*
   - Name: MatchmakingCrews
-    Offset: '0x518'
+    Offset: '0x4f0'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: InvadingCrews
-    Offset: '0x528'
+    Offset: '0x500'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
+  - Name: ReplicatedInvasionCrewMusicStates
+    Offset: '0x510'
+    Size: '0x10'
+    Type: TArray<Struct ReplicatedInvasionCrewMusicState>
   - Name: MatchmakingCrewsReplicated
-    Offset: '0x538'
+    Offset: '0x520'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: InvadingCrewsReplicated
-    Offset: '0x548'
+    Offset: '0x530'
     Size: '0x10'
     Type: TArray<Struct Guid>
-  ClassSize: '0x1e0'
-  FullSize: '0x5a8'
+  - Name: InvasionBattleBoundsList
+    Offset: '0x540'
+    Size: '0x10'
+    Type: TArray<class InvasionBattleBounds*>
+  ClassSize: '0x1d8'
+  FullSize: '0x5a0'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionServiceDataAsset:
@@ -120,7 +180,7 @@ InvasionServiceDataAsset:
     Offset: '0x38'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
-  - Name: Invasion_Emergent_VoyageDescDataAsset
+  - Name: Invasion_LosingCrew_VoyageDescDataAsset
     Offset: '0x40'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
@@ -140,20 +200,36 @@ InvasionServiceDataAsset:
     Offset: '0x60'
     Size: '0x8'
     Type: Class EnvQuery*
-  - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
+  - Name: AggressivePassive_EQSQueryParamData_SailingTargetDistance_Min
     Offset: '0x68'
+    Size: '0x4'
+    Type: float
+  - Name: AggressivePassive_EQSQueryParamData_SailingTargetDistance_Max
+    Offset: '0x6c'
+    Size: '0x4'
+    Type: float
+  - Name: AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Min
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Max
+    Offset: '0x74'
+    Size: '0x4'
+    Type: float
+  - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
+    Offset: '0x78'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
   - Name: Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset
-    Offset: '0x70'
+    Offset: '0x80'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
-  - Name: Emergent_DistanceBetweenShipsInMetres
-    Offset: '0x78'
+  - Name: StopPlayingEmergeMusicAfterSeconds
+    Offset: '0x88'
     Size: '0x4'
     Type: float
-  ClassSize: '0x58'
-  FullSize: '0x80'
+  ClassSize: '0x68'
+  FullSize: '0x90'
   InheritedSize: '0x28'
   Super: DataAsset
 InvasionServiceInterface:
@@ -162,6 +238,42 @@ InvasionServiceInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+SetInvasionMusicStateForCrewStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+SetInvasionMusicStateForCrewStepDesc:
+  Attributes:
+  - Name: MusicState
+    Offset: '0x80'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestInvasionCreateBattleBoundsStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestInvasionCreateBattleBoundsStepDesc:
+  Attributes:
+  - Name: Ship1
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  - Name: Ship2
+    Offset: '0xb0'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x60'
+  FullSize: '0xe0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 TaleQuestInvasionMatchmakingService:
   Attributes:
   - Name: ServiceDesc
@@ -186,6 +298,22 @@ TaleQuestInvasionMatchmakingServiceDesc:
   FullSize: '0x98'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
+TaleQuestInvasionRemoveBattleBoundsStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestInvasionRemoveBattleBoundsStepDesc:
+  Attributes:
+  - Name: ShipInBattleBounds
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x30'
+  FullSize: '0xb0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 TaleQuestInvasionService:
   Attributes:
   - Name: ServiceDesc
@@ -228,45 +356,45 @@ WaitForShipToBeDefeatedStepDesc:
   Attributes:
   - Name: WinningShip
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: DefeatedShip
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: WinningCrewId
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableGuid
   - Name: DefeatedCrewId
-    Offset: '0xe0'
-    Size: '0x20'
+    Offset: '0x110'
+    Size: '0x30'
     Type: Struct QuestVariableGuid
   - Name: WinningFaction
-    Offset: '0x100'
-    Size: '0x20'
+    Offset: '0x140'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: DefeatedFaction
-    Offset: '0x120'
-    Size: '0x20'
+    Offset: '0x170'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: CheckProximityTimerInterval
-    Offset: '0x140'
+    Offset: '0x1a0'
     Size: '0x4'
     Type: float
   - Name: CheckProximityDistanceInMetres
-    Offset: '0x144'
+    Offset: '0x1a4'
     Size: '0x4'
     Type: float
   - Name: TimeoutTimerIntervalInMinutes
-    Offset: '0x148'
+    Offset: '0x1a8'
     Size: '0x4'
     Type: float
   - Name: FailMessage
-    Offset: '0x150'
+    Offset: '0x1b0'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x108'
-  FullSize: '0x188'
+  ClassSize: '0x168'
+  FullSize: '0x1e8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc

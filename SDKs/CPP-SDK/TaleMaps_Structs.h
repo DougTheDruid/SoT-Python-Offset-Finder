@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x30
 struct TaleQuestVariableMapMarkType
 {
 public:
@@ -29,7 +29,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct TaleQuestVariableTreasureMapItemDescType
 {
 public:

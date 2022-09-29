@@ -6,6 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x10
+struct DamageZoneRepairableStateChangedEvent
+{
+public:
+	Class Actor*                                                 DamageZoneActor;                                   // 0x0(0x8)
+	byte                                                         RepairableState;                                   // 0x8(0x1)
+};
+
+
+// Size 0x10
+struct RepairableComponentRepairableStateChangedEvent
+{
+public:
+	Class ActorComponent*                                        RepairableComponent;                               // 0x0(0x8)
+	byte                                                         RepairableState;                                   // 0x8(0x1)
+};
+
+
 // Size 0x28
 struct EventRepairableObjectRepairEndedEvent
 {

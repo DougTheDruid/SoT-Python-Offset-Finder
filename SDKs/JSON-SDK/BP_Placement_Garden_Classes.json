@@ -31,7 +31,7 @@
       },
       {
         "Name": "Meshes",
-        "Type": "TArray<Struct PlacementGardenSeed>",
+        "Type": "TArray<Struct None>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
@@ -103,7 +103,7 @@
       },
       {
         "Name": "Mesh Radii",
-        "Type": "TArray<Struct LinearColor>",
+        "Type": "TArray<Struct Instanced Meshes>",
         "Size": "0x10",
         "Offset": "0x458"
       },

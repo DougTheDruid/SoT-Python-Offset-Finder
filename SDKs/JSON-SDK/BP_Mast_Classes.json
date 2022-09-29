@@ -61,7 +61,7 @@
       },
       {
         "Name": "Sail Parameters",
-        "Type": "TArray<Struct BP_SailStructure>",
+        "Type": "TArray<Struct None>",
         "Size": "0x10",
         "Offset": "0x9e0"
       },

@@ -14,7 +14,7 @@ public:
 	Class BillboardComponent*                                    Billboard;                                         // 0x3d0(0x8)
 	Class SphereComponent*                                       Spherical Volume;                                  // 0x3d8(0x8)
 	Class SceneComponent*                                        Scene;                                             // 0x3e0(0x8)
-	TArray<Struct PlacementGardenSeed>                           Meshes;                                            // 0x3e8(0x10)
+	TArray<Struct None>                                          Meshes;                                            // 0x3e8(0x10)
 	float                                                        Radius;                                            // 0x3f8(0x4)
 	bool                                                         Radius Visible;                                    // 0x3fc(0x1)
 	float                                                        Spawn Density;                                     // 0x400(0x4)
@@ -26,7 +26,7 @@ public:
 	TArray<class InstancedStaticMeshComponent*>                  Instanced Meshes;                                  // 0x438(0x10)
 	Struct RandomStream                                          Random;                                            // 0x448(0x8)
 	int                                                          Instance Count;                                    // 0x450(0x4)
-	TArray<Struct LinearColor>                                   Mesh Radii;                                        // 0x458(0x10)
+	TArray<Struct Instanced Meshes>                              Mesh Radii;                                        // 0x458(0x10)
 	float                                                        Max Draw Distance;                                 // 0x468(0x4)
 	bool                                                         Cast Shadows;                                      // 0x46c(0x1)
 };

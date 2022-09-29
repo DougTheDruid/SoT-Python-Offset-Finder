@@ -6,16 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xbe
+// Size 0x138
 class BP_Prompt_WarMap_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
 	Struct ObjectMessagingHandle                                 HandleWarMapStateChanged;                          // 0x120(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x168(0x68)
-	float                                                        PromptDisplayDuration;                             // 0x1d0(0x4)
-	bool                                                         PromptEvaluated;                                   // 0x1d4(0x1)
-	bool                                                         WarMapOpened;                                      // 0x1d5(0x1)
+	Struct PrioritisedPromptWithHandle                           PromptFlameheart;                                  // 0x168(0x68)
+	Struct PrioritisedPromptWithHandle                           PromptPirateLord;                                  // 0x1d0(0x68)
+	float                                                        PromptDelay;                                       // 0x238(0x4)
+	float                                                        PromptDisplayDuration;                             // 0x23c(0x4)
+	bool                                                         PromptEvaluated;                                   // 0x240(0x1)
+	bool                                                         WarMapOpened;                                      // 0x241(0x1)
+	class                                                        CurrentFaction;                                    // 0x248(0x8)
 };
 
 

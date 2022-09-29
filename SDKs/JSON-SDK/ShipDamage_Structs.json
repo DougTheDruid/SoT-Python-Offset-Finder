@@ -11,7 +11,7 @@
     ]
   },
   "ShipPartLevelsOfDamage": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "DamagePerDistance",
@@ -22,7 +22,7 @@
       {
         "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x30"
       }
     ]

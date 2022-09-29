@@ -431,12 +431,12 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 struct FeatureLockedAIShipBattles
 {
 public:
-	Struct FeatureFlag                                           Feature;                                           // 0x0(0x8)
-	Class AIShipBattlesDataAsset*                                BattlesData;                                       // 0x8(0x8)
+	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
+	Class AIShipBattlesDataAsset*                                BattlesData;                                       // 0x10(0x8)
 };
 
 
@@ -461,7 +461,7 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x70
 struct AIShipSpawnTelemetryEvent
 {
 public:
@@ -471,7 +471,8 @@ public:
 	Struct FString                                               AIShipType;                                        // 0x30(0x10)
 	Struct Guid                                                  SpawnConfigId;                                     // 0x40(0x10)
 	Struct FString                                               AIShipSize;                                        // 0x50(0x10)
-	int                                                          AIShipWaveIndex;                                   // 0x60(0x4)
+	Struct Vector                                                SpawnLocation;                                     // 0x60(0xc)
+	int                                                          AIShipWaveIndex;                                   // 0x6c(0x4)
 };
 
 

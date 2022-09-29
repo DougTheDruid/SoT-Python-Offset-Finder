@@ -191,20 +191,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AudioSpaceComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x630",
-    "InheritedSize": "0x620",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AudioSpace",
-        "Type": "Class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x620"
-      }
-    ]
-  },
   "AudioSpaceDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x40",
@@ -228,20 +214,6 @@
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "AudioSpaceTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CurrentSpaces",
-        "Type": "TArray<class AudioSpaceComponent*>",
-        "Size": "0x10",
-        "Offset": "0xc8"
       }
     ]
   },
@@ -316,9 +288,9 @@
   },
   "TritonService": {
     "Super": "Object",
-    "FullSize": "0x130",
+    "FullSize": "0x150",
     "InheritedSize": "0x28",
-    "ClassSize": "0x108",
+    "ClassSize": "0x128",
     "Attributes": [
       {
         "Name": "RegisteredTritonComponents",

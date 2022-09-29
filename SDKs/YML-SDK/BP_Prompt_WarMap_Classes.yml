@@ -10,23 +10,35 @@ BP_Prompt_WarMap_C:
     Offset: '0x120'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: Prompt
+  - Name: PromptFlameheart
     Offset: '0x168'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
-  - Name: PromptDisplayDuration
+  - Name: PromptPirateLord
     Offset: '0x1d0'
+    Size: '0x68'
+    Type: Struct PrioritisedPromptWithHandle
+  - Name: PromptDelay
+    Offset: '0x238'
+    Size: '0x4'
+    Type: float
+  - Name: PromptDisplayDuration
+    Offset: '0x23c'
     Size: '0x4'
     Type: float
   - Name: PromptEvaluated
-    Offset: '0x1d4'
+    Offset: '0x240'
     Size: '0x1'
     Type: bool
   - Name: WarMapOpened
-    Offset: '0x1d5'
+    Offset: '0x241'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xbe'
-  FullSize: '0x1d6'
+  - Name: CurrentFaction
+    Offset: '0x248'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x138'
+  FullSize: '0x250'
   InheritedSize: '0x118'
   Super: BP_PromptCoordinator_Base_C

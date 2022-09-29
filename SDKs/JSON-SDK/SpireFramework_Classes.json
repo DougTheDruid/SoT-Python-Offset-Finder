@@ -258,33 +258,33 @@
   },
   "TaleRegisterSpireStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x100",
+    "FullSize": "0x140",
     "InheritedSize": "0x80",
-    "ClassSize": "0x80",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "SelectionOriginPoint",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "PlayerExclusionSelectionRadius",
         "Type": "Struct QuestVariableFloat",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "AllocatedSpireHandle",
         "Type": "Struct QuestVariableTaleResourceHandle",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       },
       {
         "Name": "AllocatedSpireLocation",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
-        "Offset": "0xe0"
+        "Size": "0x30",
+        "Offset": "0x110"
       }
     ]
   },
@@ -297,14 +297,14 @@
   },
   "TaleReleaseSpireStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xa0",
+    "FullSize": "0xb0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "SpireHandle",
         "Type": "Struct QuestVariableTaleResourceHandle",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       }
     ]

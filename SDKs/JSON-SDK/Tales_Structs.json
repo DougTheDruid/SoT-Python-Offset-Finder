@@ -87,7 +87,7 @@
     ]
   },
   "QuestVariableAny": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "SplineFootprintPathTool": {
@@ -289,35 +289,35 @@
     ]
   },
   "QuestVariableCollection": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableGuidArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableActorArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableObjectArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableClassArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableSetEQSTaleContextValue": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableLinkEQSContext": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "ParticpantToolGroup": {
@@ -342,11 +342,11 @@
     ]
   },
   "QuestVariableRotator": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableActorAssetType": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "BodyFramePair": {
@@ -365,19 +365,27 @@
     "Attributes": []
   },
   "QuestVariableItemDescType": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableItemInfo": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariablePrioritisedPrompt": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
+    "Attributes": []
+  },
+  "QuestVariableGameEvent": {
+    "ClassSize": "0x30",
+    "Attributes": []
+  },
+  "QuestVariableAISpawner": {
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableTaleResourceHandle": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "ActorSpawnedAutomationEvent": {
@@ -432,11 +440,11 @@
     ]
   },
   "QuestVariableMerchantItemArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableMerchantItem": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "StepMerchantItemDesc": {
@@ -457,19 +465,19 @@
     ]
   },
   "QuestVariableActorAssetTypeArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableItemDescTypeArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariablePageLayout": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableTexture": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "TaleQuestFailedEvent": {
@@ -506,10 +514,6 @@
       }
     ]
   },
-  "QuestVariableAISpawner": {
-    "ClassSize": "0x20",
-    "Attributes": []
-  },
   "TaleQuestDeliverableItem": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -528,7 +532,7 @@
     ]
   },
   "QuestVariableBountyTargetArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "StepBountyTargetDesc": {

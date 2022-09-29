@@ -17,20 +17,21 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x48
 struct TrinketLoadout
 {
 public:
 	TArray<Struct TrinketLoadoutEntry>                           TrinketEntries;                                    // 0x0(0x10)
+	TArray<Struct UniqueNetIdRepl>                               TrinketOwnerXUIDs;                                 // 0x10(0x10)
 };
 
 
-// Size 0x18
+// Size 0x8
 struct TrinketLoadoutEntry
 {
 public:
-	class                                                        Trinket;                                           // 0x0(0x8)
-	Struct FString                                               TrinketOwnerPlayerXuid;                            // 0x8(0x10)
+	int                                                          TrinketEntitlementIndex;                           // 0x0(0x4)
+	int                                                          TrinketOwnerPlayerXUIDIndex;                       // 0x4(0x4)
 };
 
 

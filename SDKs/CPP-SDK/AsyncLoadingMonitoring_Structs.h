@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x38
 struct AsyncExcessiveLoadTelemetryEvent
 {
 public:
@@ -14,6 +14,7 @@ public:
 	double                                                       ExpectedAsyncLoadingTime;                          // 0x8(0x8)
 	double                                                       ActualAsyncLoadingTime;                            // 0x10(0x8)
 	TArray<Str AssetRequestList>                                 AssetRequestList;                                  // 0x18(0x10)
+	TArray<Str LoadedAssetList>                                  LoadedAssetList;                                   // 0x28(0x10)
 };
 
 

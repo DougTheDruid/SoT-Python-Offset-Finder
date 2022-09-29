@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-class BP_SoveriegnHarpoonLauncher_C: public HarpoonLauncher
+class BP_SoveriegnHarpoonLauncher_2_C: public HarpoonLauncher
 {
 public:
 	Class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xb60(0x8)
@@ -17,7 +17,7 @@ public:
 
 
 // Size 0x18
-class BP_SoveriegnHarpoonLauncher_2_C: public HarpoonLauncher
+class BP_SoveriegnHarpoonLauncher_C: public HarpoonLauncher
 {
 public:
 	Class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xb60(0x8)

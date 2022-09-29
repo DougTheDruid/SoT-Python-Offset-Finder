@@ -1,33 +1,33 @@
 {
   "BP_MA_LS_BuoyantStorageBarrel_LockedToWater_C": {
     "Super": "BuoyantStorageContainer",
-    "FullSize": "0x718",
-    "InheritedSize": "0x6f8",
+    "FullSize": "0x748",
+    "InheritedSize": "0x728",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Sphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x728"
       },
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x730"
       },
       {
         "Name": "TelemetrySubject",
         "Type": "Class TelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x738"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x710"
+        "Offset": "0x740"
       }
     ]
   },

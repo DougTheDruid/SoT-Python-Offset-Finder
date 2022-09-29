@@ -1,9 +1,9 @@
 {
   "BP_CharacterVFXComponent_C": {
     "Super": "CharacterVfxComponent",
-    "FullSize": "0x338",
+    "FullSize": "0x33c",
     "InheritedSize": "0xe0",
-    "ClassSize": "0x258",
+    "ClassSize": "0x25c",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -122,7 +122,7 @@
       {
         "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x330"
       }
     ]

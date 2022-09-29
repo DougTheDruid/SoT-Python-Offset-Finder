@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x78
+// Size 0x7c
 class BP_EmissaryTable_Athena_01_C: public BP_EmissaryTable_01_C
 {
 public:
@@ -24,7 +24,7 @@ public:
 	Class StaticMeshComponent*                                   cmn_candle_01_e;                                   // 0x690(0x8)
 	Class StaticMeshComponent*                                   cap_desk_model_leg_01_a;                           // 0x698(0x8)
 	Class StaticMesh*                                            NewTableMesh;                                      // 0x6a0(0x8)
-	Struct FeatureFlag                                           FeatureName;                                       // 0x6a8(0x8)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x6a8(0xc)
 };
 
 

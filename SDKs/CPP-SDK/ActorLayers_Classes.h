@@ -14,10 +14,10 @@ public:
 
 
 // Size 0x30
-class InstancedLayerComponent: public ActorComponent
+class InstancedLayerComponent: public SceneComponent
 {
 public:
-	TArray<Struct InstancedLayer>                                InstancedLayers;                                   // 0xd0(0x10)
+	TArray<Struct InstancedLayer>                                InstancedLayers;                                   // 0x2e8(0x10)
 };
 
 

@@ -383,6 +383,15 @@ public:
 };
 
 
+// Size 0x10
+struct EventFaunaPickedup
+{
+public:
+	Class Actor*                                                 Interactor;                                        // 0x0(0x8)
+	Class Actor*                                                 PickedUpFauna;                                     // 0x8(0x8)
+};
+
+
 // Size 0x1
 struct AthenaAIDebugCostDisplay
 {
@@ -534,7 +543,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableSharkPawn
 {
 public:
@@ -563,7 +572,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableTinySharkExperience
 {
 public:
@@ -644,12 +653,13 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct EventTinySharkSpawned
 {
 public:
 	Struct FString                                               TinySharkPartTag;                                  // 0x0(0x10)
 	Struct Guid                                                  SpawnConfigId;                                     // 0x10(0x10)
+	Struct Vector                                                SpawnLocation;                                     // 0x20(0xc)
 };
 
 
@@ -676,13 +686,14 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 struct TinySharkSpawnTelemetryEvent
 {
 public:
 	Struct FString                                               TinySharkId;                                       // 0x0(0x10)
 	Struct FString                                               TinySharkType;                                     // 0x10(0x10)
 	Struct Guid                                                  ConfigSpawnId;                                     // 0x20(0x10)
+	Struct Vector                                                SpawnLocation;                                     // 0x30(0xc)
 };
 
 

@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 TaleQuestGetProjectionPointOnTradeRouteStep:
   Attributes: []
-  ClassSize: '0x68'
-  FullSize: '0x100'
+  ClassSize: '0x98'
+  FullSize: '0x130'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestGetProjectionPointOnTradeRouteStepDesc:
@@ -14,18 +14,18 @@ TaleQuestGetProjectionPointOnTradeRouteStepDesc:
     Type: float
   - Name: SourcePoint
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: TradeRouteData
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableTradeRouteData
   - Name: ProjectedPoint
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x68'
-  FullSize: '0xe8'
+  ClassSize: '0x98'
+  FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSelectTradeRouteStep:
@@ -46,22 +46,22 @@ TaleQuestSelectTradeRouteStepDesc:
     Type: int
   - Name: SelectionOriginPointVar
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: TradeRouteDifficulty
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableInt
   - Name: TradeRoute
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableTradeRouteData
   - Name: AllocatedTradeRouteHandleVar
-    Offset: '0xe8'
-    Size: '0x20'
+    Offset: '0x118'
+    Size: '0x30'
     Type: Struct QuestVariableTaleResourceHandle
-  ClassSize: '0x88'
-  FullSize: '0x108'
+  ClassSize: '0xc8'
+  FullSize: '0x148'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TradeRouteData:

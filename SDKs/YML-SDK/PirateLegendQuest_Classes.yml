@@ -10,10 +10,10 @@ GetVeilOfTheAncientsStepDesc:
   Attributes:
   - Name: QuestVeil
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 VeilOfTheAncients:

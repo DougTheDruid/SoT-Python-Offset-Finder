@@ -6,13 +6,41 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x14
+// Size 0x18
+struct TimeStampedInvasionMusicState
+{
+public:
+	Class Company*                                               Faction;                                           // 0x0(0x8)
+	byte                                                         InvasionMusicState;                                // 0x8(0x1)
+	double                                                       EnteredStateServerTimeStamp;                       // 0x10(0x8)
+};
+
+
+// Size 0x20
 struct InvasionCrewData
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	byte                                                         InvasionStatus;                                    // 0x10(0x1)
-	bool                                                         ReadyForInvasion;                                  // 0x11(0x1)
+	struct FName                                                 FactionIdentifier;                                 // 0x14(0x8)
+	bool                                                         ReadyForInvasion;                                  // 0x1c(0x1)
+};
+
+
+// Size 0x28
+struct ReplicatedInvasionCrewMusicState
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	Struct TimeStampedInvasionMusicState                         CurrentTimeStampedMusicState;                      // 0x10(0x18)
+};
+
+
+// Size 0x18
+struct InvasionCrewMusicStateChangedClientEvent
+{
+public:
+	Struct TimeStampedInvasionMusicState                         InvasionCrewMusicState;                            // 0x0(0x18)
 };
 
 
@@ -25,15 +53,15 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x50
 struct InvasionEndedTelemetryEvent
 {
 public:
 	TArray<Struct InvasionCrewData>                              Participants;                                      // 0x0(0x10)
-	Struct InvasionCrewData                                      Winner;                                            // 0x10(0x14)
-	float                                                        InvasionDurationInSeconds;                         // 0x24(0x4)
-	TArray<Struct CrewFactionTelemetryData>                      ParticipantFactionData;                            // 0x28(0x10)
-	byte                                                         InvasionEndedReason;                               // 0x38(0x1)
+	Struct InvasionCrewData                                      Winner;                                            // 0x10(0x20)
+	float                                                        InvasionDurationInSeconds;                         // 0x30(0x4)
+	TArray<Struct CrewFactionTelemetryData>                      ParticipantFactionData;                            // 0x38(0x10)
+	byte                                                         InvasionEndedReason;                               // 0x48(0x1)
 };
 
 

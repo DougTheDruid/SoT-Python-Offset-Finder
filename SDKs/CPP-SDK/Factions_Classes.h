@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x90
+// Size 0x100
 class FactionSettingsAsset: public DataAsset
 {
 public:
@@ -21,6 +21,8 @@ public:
 	TArray<Struct CompanyFactionAlignment>                       AlignedFactionsAndCompanies;                       // 0x88(0x10)
 	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x98(0x10)
 	TArray<Struct FactionServicePopUpData>                       JoiningFactionPopUp;                               // 0xa8(0x10)
+	Struct FText                                                 LosingBattleHeaderText;                            // 0xb8(0x38)
+	Struct FText                                                 LosingBattleMessageText;                           // 0xf0(0x38)
 };
 
 
@@ -31,13 +33,15 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x1d0
 class FactionFlipMeshComponent: public StaticMeshComponent
 {
 public:
 	Class CurveFloat*                                            FlipCurve;                                         // 0x620(0x8)
-	bool                                                         IsFlipping;                                        // 0x668(0x1)
-	bool                                                         Flipped;                                           // 0x669(0x1)
+	float                                                        FactionJoinedLerpDuration;                         // 0x628(0x4)
+	TArray<Struct CrewStreakLevelIncreased>                      StreakData;                                        // 0x7d0(0x10)
+	bool                                                         IsFlipping;                                        // 0x7e0(0x1)
+	bool                                                         Flipped;                                           // 0x7e1(0x1)
 };
 
 
@@ -56,6 +60,24 @@ public:
 };
 
 
+// Size 0x10
+class FactionLootLevelRewardsAsset: public DataAsset
+{
+public:
+	TArray<Struct LootLevelReward>                               LootLevelRewards;                                  // 0x28(0x10)
+};
+
+
+// Size 0x170
+class FactionParticleComponent: public ParticleSystemComponent
+{
+public:
+	class                                                        Faction;                                           // 0x9f8(0x8)
+	class                                                        JoinedFaction;                                     // 0xa00(0x8)
+	TArray<Struct CrewStreakLevelIncreased>                      StreakData;                                        // 0xa08(0x10)
+};
+
+
 // Size 0x20
 class FactionServiceDebugRepActor: public Actor
 {
@@ -66,15 +88,25 @@ public:
 };
 
 
-// Size 0x130
+// Size 0x1d8
 class FactionService: public Actor
 {
 public:
 	Class FactionSettingsAsset*                                  Settings;                                          // 0x3d8(0x8)
-	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x450(0x10)
-	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x460(0x10)
-	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x470(0x10)
-	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x4d8(0x8)
+	Class FactionLootLevelRewardsAsset*                          LootLevelRewardsAsset;                             // 0x3e0(0x8)
+	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x4a8(0x10)
+	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x4b8(0x10)
+	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x4c8(0x10)
+	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x580(0x8)
+};
+
+
+// Size 0x20
+class FactionShipStreakDataAsset: public DataAsset
+{
+public:
+	TArray<Struct StreakMesh>                                    StreakMeshes;                                      // 0x28(0x10)
+	TArray<Struct StreakCompanyParticles>                        CompanyParticles;                                  // 0x38(0x10)
 };
 
 
@@ -115,7 +147,7 @@ public:
 };
 
 
-// Size 0x150
+// Size 0x1c0
 class StopFactionVoyageVoteConsumer: public FactionVoteConsumerBase
 {
 public:
@@ -125,6 +157,8 @@ public:
 	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x168(0x38)
 	Struct FText                                                 FactionVotingCantVoteReasonGoToOutpost;            // 0x1a0(0x38)
 	Struct FText                                                 FactionVotingCantVoteReasonActiveForDifferentCompany; // 0x1d8(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonEnemyShipNearby;        // 0x210(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonShipNotInHarbour;       // 0x248(0x38)
 };
 
 
@@ -140,15 +174,15 @@ public:
 };
 
 
-// Size 0x60
+// Size 0xa0
 class FactionVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
 	TArray<Class TargetCompanies>                                TargetCompanies;                                   // 0x30(0x10)
-	Class FactionVoteConsumerBase*                               Consumer;                                          // 0x70(0x8)
-	int                                                          CurrentCompany;                                    // 0x78(0x4)
-	float                                                        FlipTime;                                          // 0x7c(0x4)
-	Class Actor*                                                 OwningActor;                                       // 0x88(0x8)
+	Class FactionVoteConsumerBase*                               Consumer;                                          // 0xb0(0x8)
+	int                                                          CurrentCompany;                                    // 0xb8(0x4)
+	float                                                        FlipTime;                                          // 0xbc(0x4)
+	Class Actor*                                                 OwningActor;                                       // 0xc8(0x8)
 };
 
 
@@ -179,13 +213,33 @@ public:
 };
 
 
-// Size 0x50
-class ShipFactionCustomisation: public SceneComponent
+// Size 0x8
+class IsWearingCursePrerequisite: public InteractionPrerequisiteBase
 {
 public:
-	Struct FigureheadFactionVFXParams                            FigureheadFactionVFX;                              // 0x2e0(0x30)
-	Class ChildActorComponent*                                   BPFactionHourglass;                                // 0x320(0x8)
-	Class ParticleSystemComponent*                               SpawnedFigureheadParticles;                        // 0x328(0x8)
+	bool                                                         AnyCurse;                                          // 0x80(0x1)
+	bool                                                         SkeletonCurse;                                     // 0x81(0x1)
+	bool                                                         GhostCurse;                                        // 0x82(0x1)
+};
+
+
+// Size 0x20
+class StreakMaterialDataAsset: public DataAsset
+{
+public:
+	TArray<Struct StreakMaterialValue>                           MaterialValues;                                    // 0x28(0x10)
+	TArray<Struct StreakCompanyMaterials>                        StreakMaterials;                                   // 0x38(0x10)
+};
+
+
+// Size 0x78
+class ShipFactionCustomisation: public ActorComponent
+{
+public:
+	Class StreakMaterialDataAsset*                               StreakMaterialData;                                // 0xc8(0x8)
+	Class FactionShipStreakDataAsset*                            ShipStreakData;                                    // 0xd0(0x8)
+	TArray<Struct StreakDynamicMaterials>                        CachedDynamicMaterials;                            // 0xd8(0x10)
+	Struct FactionStreakData                                     FactionStreakData;                                 // 0x130(0x10)
 };
 
 

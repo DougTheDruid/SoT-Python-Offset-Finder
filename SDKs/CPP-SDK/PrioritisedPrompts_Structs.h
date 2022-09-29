@@ -61,6 +61,13 @@ public:
 };
 
 
+// Size 0x1
+struct PromptsServiceSetupEvent
+{
+public:
+};
+
+
 // Size 0x20
 struct PlayerPromptTelemetryEvent
 {

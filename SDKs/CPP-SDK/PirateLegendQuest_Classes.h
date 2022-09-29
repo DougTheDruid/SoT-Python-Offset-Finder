@@ -41,11 +41,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class GetVeilOfTheAncientsStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    QuestVeil;                                         // 0x80(0x20)
+	Struct QuestVariableActor                                    QuestVeil;                                         // 0x80(0x30)
 };
 
 

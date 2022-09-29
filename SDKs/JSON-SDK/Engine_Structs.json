@@ -1536,13 +1536,19 @@
     "Attributes": []
   },
   "FeatureFlag": {
-    "ClassSize": "0x8",
+    "ClassSize": "0xc",
     "Attributes": [
       {
         "Name": "FeatureName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "InverseToggle",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
       }
     ]
   },
@@ -8180,7 +8186,7 @@
     ]
   },
   "DeformablesSettings": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "DistanceStiffness",
@@ -8205,6 +8211,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
+      },
+      {
+        "Name": "WeightMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },
@@ -19317,6 +19329,210 @@
   "DummySpacerCameraTypes": {
     "ClassSize": "0x1",
     "Attributes": []
+  },
+  "NetRelevancyStat": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "Reason",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "State",
+        "Type": "Struct NetRelevancyStateStat",
+        "Size": "0x70",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "NetRelevancyStateStat": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "Duration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RemainingCycles",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "StreamingMode",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Connection",
+        "Type": "Struct NetRelevancyConnectionStat",
+        "Size": "0x38",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Actors",
+        "Type": "TArray<Struct NetRelevancyActorStat>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "Levels",
+        "Type": "TArray<Struct NetRelevancyLevelStat>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "NetRelevancyLevelStat": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Visible",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "LODIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "NetRelevancyActorStat": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "path",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Owner",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Location",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Cluster",
+        "Type": "Struct NetRelevancyActorClusterStat",
+        "Size": "0x48",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ChannelState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "IsNetRelevant",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x89"
+      },
+      {
+        "Name": "ActorDormancy",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8a"
+      },
+      {
+        "Name": "ChannelDormancy",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8b"
+      }
+    ]
+  },
+  "NetRelevancyActorClusterStat": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubClusters",
+        "Type": "TArray<Str SubClusters>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Type",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Owner",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "IsCustomNamed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "NeedsPreparation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x41"
+      }
+    ]
+  },
+  "NetRelevancyConnectionStat": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Viewer",
+        "Type": "Struct NetViewer",
+        "Size": "0x28",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ViewerGridLocation",
+        "Type": "Struct IntPoint",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
   },
   "NetTimeStampCalculator": {
     "ClassSize": "0x70",

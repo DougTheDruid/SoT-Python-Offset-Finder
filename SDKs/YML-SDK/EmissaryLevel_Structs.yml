@@ -85,7 +85,11 @@ EmissaryActionRewardData:
     Offset: '0x68'
     Size: '0x10'
     Type: TArray<Struct EmissaryCompanyActionReward>
-  ClassSize: '0x78'
+  - Name: FactionActionRewards
+    Offset: '0x78'
+    Size: '0x10'
+    Type: TArray<Struct EmissaryFactionActionReward>
+  ClassSize: '0x88'
 EmissaryActivated:
   Attributes:
   - Name: CompanyName
@@ -233,6 +237,17 @@ EmissaryEventAward:
     Offset: '0x4'
     Size: '0x4'
     Type: int
+  ClassSize: '0x8'
+EmissaryFactionActionReward:
+  Attributes:
+  - Name: FactionActionType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Amount
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x8'
 EmissaryFlagMeshReferences:
   Attributes:
@@ -450,9 +465,9 @@ EmissaryRewardEntry:
     Type: class
   - Name: ActionRewardData
     Offset: '0x8'
-    Size: '0x78'
+    Size: '0x88'
     Type: Struct EmissaryActionRewardData
-  ClassSize: '0x80'
+  ClassSize: '0x90'
 EmissaryRoleplayActionTelemetryEvent:
   Attributes:
   - Name: EmissarySessionId

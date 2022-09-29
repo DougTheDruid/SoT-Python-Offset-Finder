@@ -1,6 +1,29 @@
 {
+  "TimeStampedInvasionMusicState": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "Class Company*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InvasionMusicState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "EnteredStateServerTimeStamp",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "InvasionCrewData": {
-    "ClassSize": "0x14",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -15,10 +38,44 @@
         "Offset": "0x10"
       },
       {
+        "Name": "FactionIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x14"
+      },
+      {
         "Name": "ReadyForInvasion",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x11"
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "ReplicatedInvasionCrewMusicState": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CurrentTimeStampedMusicState",
+        "Type": "Struct TimeStampedInvasionMusicState",
+        "Size": "0x18",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "InvasionCrewMusicStateChangedClientEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "InvasionCrewMusicState",
+        "Type": "Struct TimeStampedInvasionMusicState",
+        "Size": "0x18",
+        "Offset": "0x0"
       }
     ]
   },
@@ -40,7 +97,7 @@
     ]
   },
   "InvasionEndedTelemetryEvent": {
-    "ClassSize": "0x40",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "Participants",
@@ -51,26 +108,26 @@
       {
         "Name": "Winner",
         "Type": "Struct InvasionCrewData",
-        "Size": "0x14",
+        "Size": "0x20",
         "Offset": "0x10"
       },
       {
         "Name": "InvasionDurationInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x24"
+        "Offset": "0x30"
       },
       {
         "Name": "ParticipantFactionData",
         "Type": "TArray<Struct CrewFactionTelemetryData>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x38"
       },
       {
         "Name": "InvasionEndedReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x38"
+        "Offset": "0x48"
       }
     ]
   },

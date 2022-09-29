@@ -53,6 +53,24 @@ public:
 };
 
 
+// Size 0x30
+class AudioSpaceComponent: public StaticMeshComponent
+{
+public:
+	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
+	Class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
+	Class StoryDrivenAudioPortalCollectionDataAsset*             CollectionAsset;                                   // 0x630(0x8)
+};
+
+
+// Size 0x10
+class AudioSpaceTrackerComponent: public ActorComponent
+{
+public:
+	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xc8(0x10)
+};
+
+
 // Size 0x10
 class MultiEmitter: public Actor
 {
@@ -61,12 +79,12 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x20
 class StoryDrivenAudioPortalDataAsset: public DataAsset
 {
 public:
-	Struct FeatureFlag                                           Feature;                                           // 0x28(0x8)
-	TArray<Struct StoryDrivenAudioPortalSetting>                 Stories;                                           // 0x30(0x10)
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	TArray<Struct StoryDrivenAudioPortalSetting>                 Stories;                                           // 0x38(0x10)
 };
 
 

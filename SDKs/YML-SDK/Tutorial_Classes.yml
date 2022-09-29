@@ -212,8 +212,12 @@ TutorialManager:
     Offset: '0x116'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x68'
-  FullSize: '0x130'
+  - Name: HasPlayerPromptsServiceSetup
+    Offset: '0x117'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x70'
+  FullSize: '0x138'
   InheritedSize: '0xc8'
   Super: ActorComponent
 TutorialManagerInterface:

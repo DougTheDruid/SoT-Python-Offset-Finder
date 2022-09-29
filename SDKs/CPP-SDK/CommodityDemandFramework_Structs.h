@@ -50,6 +50,15 @@ public:
 };
 
 
+// Size 0x28
+struct CommoditySourceMetaWrapper
+{
+public:
+	struct FName                                                 NPCIdentifier;                                     // 0x18(0x8)
+	struct FName                                                 IslandIdentifier;                                  // 0x20(0x8)
+};
+
+
 // Size 0x10
 struct CommodityTypeDataEntry
 {

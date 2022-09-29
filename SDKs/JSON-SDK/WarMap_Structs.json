@@ -1,7 +1,14 @@
 {
   "EventLocalPlayerOpenedWarMap": {
-    "ClassSize": "0x1",
-    "Attributes": []
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventWarMapStateChanged": {
     "ClassSize": "0x10",

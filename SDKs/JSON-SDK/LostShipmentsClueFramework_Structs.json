@@ -182,11 +182,11 @@
     ]
   },
   "QuestVariableClueSiteArray": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "QuestVariableClueSite": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "ClueSiteLootHistory": {
@@ -224,7 +224,7 @@
     ]
   },
   "QuestVariableClueDescriptor": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "WeightedDebris": {

@@ -462,12 +462,12 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestGetNPCActorFromClueSiteStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x20)
-	Struct QuestVariableActor                                    NPCFromClueSite;                                   // 0xa0(0x20)
+	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
+	Struct QuestVariableActor                                    NPCFromClueSite;                                   // 0xb0(0x30)
 };
 
 
@@ -479,14 +479,14 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    ExistingNPCActor;                                  // 0x80(0x20)
-	Struct QuestVariableActorAssetType                           ObtainedPhasedNPCActorType;                        // 0xa0(0x20)
-	Struct QuestVariableActor                                    PhasingSourceActor;                                // 0xc0(0x20)
-	Class ExistingToPhasedNPCIndexAssetMap*                      IndexAssetMap;                                     // 0xe0(0x8)
+	Struct QuestVariableActor                                    ExistingNPCActor;                                  // 0x80(0x30)
+	Struct QuestVariableActorAssetType                           ObtainedPhasedNPCActorType;                        // 0xb0(0x30)
+	Struct QuestVariableActor                                    PhasingSourceActor;                                // 0xe0(0x30)
+	Class ExistingToPhasedNPCIndexAssetMap*                      IndexAssetMap;                                     // 0x110(0x8)
 };
 
 
@@ -497,12 +497,12 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableShipwreck                                ShipwreckSpawnedOn;                                // 0x80(0x20)
-	Struct QuestVariableActor                                    SpawnedMerchantCaptain;                            // 0xa0(0x20)
+	Struct QuestVariableShipwreck                                ShipwreckSpawnedOn;                                // 0x80(0x30)
+	Struct QuestVariableActor                                    SpawnedMerchantCaptain;                            // 0xb0(0x30)
 };
 
 
@@ -513,13 +513,13 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x90
 class TaleQuestSpawnWashedUpMessageInABottleClueStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x20)
-	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xa0(0x20)
-	Struct QuestVariableActor                                    MessageInABottle;                                  // 0xc0(0x20)
+	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
+	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
+	Struct QuestVariableActor                                    MessageInABottle;                                  // 0xe0(0x30)
 };
 
 
@@ -530,19 +530,19 @@ public:
 };
 
 
-// Size 0x88
+// Size 0xc8
 class TaleQuestSpawnWashedUpSkeletonClueStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x20)
-	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xa0(0x20)
-	Struct QuestVariableActor                                    SkeletonActor;                                     // 0xc0(0x20)
-	Struct QuestVariableItemInfo                                 ClueItem;                                          // 0xe0(0x20)
-	struct FName                                                 SkeletonClueSocketName;                            // 0x100(0x8)
+	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
+	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
+	Struct QuestVariableActor                                    SkeletonActor;                                     // 0xe0(0x30)
+	Struct QuestVariableItemInfo                                 ClueItem;                                          // 0x110(0x30)
+	struct FName                                                 SkeletonClueSocketName;                            // 0x140(0x8)
 };
 
 
-// Size 0x78
+// Size 0xa8
 class WaitForClueCollectedStep: public TaleQuestStep
 {
 public:
@@ -551,13 +551,13 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x90
 class WaitForClueCollectedStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueDescriptor                           Clue;                                              // 0x80(0x20)
-	Struct QuestVariableActor                                    ClueActor;                                         // 0xa0(0x20)
-	Struct QuestVariableActor                                    Discoverer;                                        // 0xc0(0x20)
+	Struct QuestVariableClueDescriptor                           Clue;                                              // 0x80(0x30)
+	Struct QuestVariableActor                                    ClueActor;                                         // 0xb0(0x30)
+	Struct QuestVariableActor                                    Discoverer;                                        // 0xe0(0x30)
 };
 
 

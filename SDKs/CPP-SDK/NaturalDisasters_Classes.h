@@ -115,23 +115,26 @@ public:
 };
 
 
-// Size 0xb0
+// Size 0xe8
 class Geyser: public Actor
 {
 public:
 	Class GeyserSetupDataAsset*                                  SetupData;                                         // 0x3d0(0x8)
-	byte                                                         GeyserState;                                       // 0x3d8(0x1)
-	Class WwiseObjectPoolWrapper*                                GeyserBuildUpPool;                                 // 0x3e0(0x8)
-	Class WwiseObjectPoolWrapper*                                GeyserBlowPool;                                    // 0x3e8(0x8)
-	Class WwiseEvent*                                            StartActiveAudioLoopEvent;                         // 0x3f0(0x8)
-	Class WwiseEvent*                                            StopActiveAudioLoopEvent;                          // 0x3f8(0x8)
-	Class WwiseEvent*                                            PlayEruptingAudioEvent;                            // 0x400(0x8)
-	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x408(0x8)
-	Class ParticleSystemComponent*                               ActiveParticlesComponent;                          // 0x410(0x8)
-	Class ParticleSystemComponent*                               EruptingParticlesComponent;                        // 0x418(0x8)
-	byte                                                         HitTestTraceChannel;                               // 0x420(0x1)
-	class                                                        GeyserHoleClass;                                   // 0x428(0x8)
-	Class Hole*                                                  GeyserHole;                                        // 0x430(0x8)
+	Class GeyserSetupDataAsset*                                  GeyserSetupDataOverride;                           // 0x3d8(0x8)
+	Class GeyserSetupDataAsset*                                  SelectedGeyserForNextActivation;                   // 0x3e0(0x8)
+	TArray<Struct GeyserStoryCustomisationData>                  StoryCustomisationData;                            // 0x3e8(0x10)
+	byte                                                         GeyserState;                                       // 0x410(0x1)
+	Class WwiseObjectPoolWrapper*                                GeyserBuildUpPool;                                 // 0x418(0x8)
+	Class WwiseObjectPoolWrapper*                                GeyserBlowPool;                                    // 0x420(0x8)
+	Class WwiseEvent*                                            StartActiveAudioLoopEvent;                         // 0x428(0x8)
+	Class WwiseEvent*                                            StopActiveAudioLoopEvent;                          // 0x430(0x8)
+	Class WwiseEvent*                                            PlayEruptingAudioEvent;                            // 0x438(0x8)
+	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x440(0x8)
+	Class ParticleSystemComponent*                               ActiveParticlesComponent;                          // 0x448(0x8)
+	Class ParticleSystemComponent*                               EruptingParticlesComponent;                        // 0x450(0x8)
+	byte                                                         HitTestTraceChannel;                               // 0x458(0x1)
+	class                                                        GeyserHoleClass;                                   // 0x460(0x8)
+	Class Hole*                                                  GeyserHole;                                        // 0x468(0x8)
 };
 
 
@@ -206,8 +209,8 @@ public:
 class MechanismGeyser: public Geyser
 {
 public:
-	byte                                                         GeyserStateWhenMechanismIsInactive;                // 0x478(0x1)
-	Class MechanismActionComponent*                              MechanismActionComponent;                          // 0x480(0x8)
+	byte                                                         GeyserStateWhenMechanismIsInactive;                // 0x4b0(0x1)
+	Class MechanismActionComponent*                              MechanismActionComponent;                          // 0x4b8(0x8)
 };
 
 
@@ -263,16 +266,17 @@ public:
 };
 
 
-// Size 0xb8
+// Size 0xc0
 class GeyserSetupDataAsset: public DataAsset
 {
 public:
-	Struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0x28(0x30)
-	Struct WeightedProbabilityRangeOfRanges                      InitialWarningDuration;                            // 0x58(0x30)
-	Struct WeightedProbabilityRange                              NumSpurtsPerActivation;                            // 0x88(0x20)
-	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenSpurts;                                 // 0xa8(0x30)
-	bool                                                         ShouldDestroyOnDeactivation;                       // 0xd8(0x1)
-	float                                                        DestroyAfterDeactivationDelay;                     // 0xdc(0x4)
+	bool                                                         IsEnabled;                                         // 0x28(0x1)
+	Struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0x30(0x30)
+	Struct WeightedProbabilityRangeOfRanges                      InitialWarningDuration;                            // 0x60(0x30)
+	Struct WeightedProbabilityRange                              NumSpurtsPerActivation;                            // 0x90(0x20)
+	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenSpurts;                                 // 0xb0(0x30)
+	bool                                                         ShouldDestroyOnDeactivation;                       // 0xe0(0x1)
+	float                                                        DestroyAfterDeactivationDelay;                     // 0xe4(0x4)
 };
 
 

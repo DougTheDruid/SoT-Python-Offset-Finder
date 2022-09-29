@@ -11,13 +11,6 @@ CinematicFactionEvent:
     Size: '0x80'
     Type: Struct CinematicQuestEvent
   ClassSize: '0x88'
-CrewJoinedFactionPopupEvent:
-  Attributes:
-  - Name: PopUpDesc
-    Offset: '0x10'
-    Size: '0x8'
-    Type: Class DataAsset*
-  ClassSize: '0x18'
 FactionDisplayInfo:
   Attributes:
   - Name: Faction
@@ -45,6 +38,13 @@ FactionDisplayInfo:
     Size: '0x10'
     Type: Struct StringAssetReference
   ClassSize: '0xa0'
+FactionPopupEvent:
+  Attributes:
+  - Name: PopUpDesc
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class DataAsset*
+  ClassSize: '0x18'
 FactionRequest:
   Attributes:
   - Name: Faction
@@ -52,6 +52,59 @@ FactionRequest:
     Size: '0x8'
     Type: class
   ClassSize: '0x20'
+FactionShipSunkNetworkEvent:
+  Attributes:
+  - Name: OpponentFaction
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: OpponentCrewId
+    Offset: '0x14'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: MyKillStreak
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  - Name: TheirKillStreak
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x30'
+FactionShipSunkUIEvent:
+  Attributes:
+  - Name: OpponentFaction
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: ShipName
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MyKillStreak
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  - Name: TheirKillStreak
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
+FactionStreakData:
+  Attributes:
+  - Name: Faction
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: StreakLevel
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: IsUpdate
+    Offset: '0xc'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x10'
 FactionVoteAddedEvent:
   Attributes:
   - Name: Company
@@ -66,34 +119,99 @@ FactionVoteRemovedEvent:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x8'
-FigureheadFactionVFXParams:
+LootLevelReward:
   Attributes:
-  - Name: FBParticleSystem
+  - Name: LootLevel
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: RewardId
+    Offset: '0x4'
+    Size: '0x8'
+    Type: Struct RewardId
+  - Name: LootLevelPopUpMessageDesc
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct FactionServicePopUpData>
+  - Name: PopUpIndex
+    Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
+StreakCompanyMaterials:
+  Attributes:
+  - Name: Company
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: Materials
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct StreakMaterial>
+  ClassSize: '0x18'
+StreakCompanyParticles:
+  Attributes:
+  - Name: Company
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: ParticleData
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Struct StreakParticles>
+  ClassSize: '0x18'
+StreakDynamicMaterials:
+  Attributes:
+  - Name: Company
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: DynamicMaterials
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<class MaterialInstanceDynamic*>
+  ClassSize: '0x18'
+StreakMaterial:
+  Attributes:
+  - Name: Material
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class MaterialInstance*
+  - Name: PartType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x10'
+StreakMaterialValue:
+  Attributes:
+  - Name: Streak
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: Length
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+StreakMesh:
+  Attributes:
+  - Name: Mesh
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class StaticMesh*
+  - Name: PartType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x10'
+StreakParticles:
+  Attributes:
+  - Name: Particles
     Offset: '0x0'
     Size: '0x8'
     Type: Class ParticleSystem*
-  - Name: FGParticleSystem
+  - Name: PartType
     Offset: '0x8'
-    Size: '0x8'
-    Type: Class ParticleSystem*
-  - Name: Location
-    Offset: '0x10'
-    Size: '0xc'
-    Type: Struct Vector
-  - Name: Rotation
-    Offset: '0x1c'
-    Size: '0xc'
-    Type: Struct Rotator
-  - Name: AutoDestroy
-    Offset: '0x28'
     Size: '0x1'
-    Type: bool
-  - Name: OwnerOnlySee
-    Offset: '0x29'
-    Size: '0x1'
-    Type: bool
-  - Name: OwnerNoSee
-    Offset: '0x2a'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x30'
+    Type: byte
+  ClassSize: '0x10'

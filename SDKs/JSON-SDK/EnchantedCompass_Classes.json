@@ -86,21 +86,21 @@
   },
   "TaleQuestMultiTargetCompassAddTrackedLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xc0",
+    "FullSize": "0xe0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x40",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "Location",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "TargetID",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -113,14 +113,14 @@
   },
   "TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xa0",
+    "FullSize": "0xb0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "TargetID",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       }
     ]
@@ -148,9 +148,9 @@
   },
   "TaleQuestSetCompassTargetToTargetStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xd8",
+    "FullSize": "0xf8",
     "InheritedSize": "0x98",
-    "ClassSize": "0x40",
+    "ClassSize": "0x60",
     "Attributes": []
   },
   "TaleQuestSetCompassTargetBaseStepDesc": {
@@ -169,28 +169,28 @@
   },
   "TaleQuestSetCompassTargetToActorStepDesc": {
     "Super": "TaleQuestSetCompassTargetBaseStepDesc",
-    "FullSize": "0xa8",
+    "FullSize": "0xb8",
     "InheritedSize": "0x88",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "TargetActor",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x88"
       }
     ]
   },
   "TaleQuestSetCompassTargetToPointStepDesc": {
     "Super": "TaleQuestSetCompassTargetBaseStepDesc",
-    "FullSize": "0xa8",
+    "FullSize": "0xb8",
     "InheritedSize": "0x88",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "TargetPoint",
         "Type": "Struct QuestVariableOrientedPoint",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x88"
       }
     ]

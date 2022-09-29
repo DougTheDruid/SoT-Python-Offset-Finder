@@ -6,7 +6,7 @@ BP_TavernTrinketMountpoints_C:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class TrinketLoadoutComponent*
-  - Name: TrinketMountpointManager
+  - Name: BasicTrinketMountpointManager
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class TrinketMountpointManagerComponent*

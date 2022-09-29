@@ -787,14 +787,14 @@
   },
   "TaleQuestSinkWatercraftStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xa0",
+    "FullSize": "0xb0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Watercraft",
         "Type": "Struct QuestVariableWatercraft",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       }
     ]
@@ -808,28 +808,28 @@
   },
   "TaleQuestSpawnWatercraftStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
+    "FullSize": "0x108",
     "InheritedSize": "0x80",
-    "ClassSize": "0x68",
+    "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "SpawnLocation",
         "Type": "Struct QuestVariableTransform",
-        "Size": "0x28",
+        "Size": "0x38",
         "Offset": "0x80"
       },
       {
         "Name": "Watercraft",
         "Type": "Struct QuestVariableWatercraft",
-        "Size": "0x20",
-        "Offset": "0xc8"
+        "Size": "0x30",
+        "Offset": "0xd8"
       }
     ]
   },
   "TaleQuestWatercraftFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x178",
-    "InheritedSize": "0x178",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
     "ClassSize": "0x0",
     "Attributes": []
   },

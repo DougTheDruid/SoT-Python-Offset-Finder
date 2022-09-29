@@ -13,7 +13,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GetInvasionShipsStep": {
+  "GetInvasionBattleLocationStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x98",
@@ -66,67 +66,139 @@
       }
     ]
   },
+  "GetInvasionBattleLocationStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Radius",
+        "Type": "Struct QuestVariableFloat",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "GetInvasionShipsStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "GetInvasionShipsStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x1a0",
+    "FullSize": "0x230",
     "InheritedSize": "0x80",
-    "ClassSize": "0x120",
+    "ClassSize": "0x1b0",
     "Attributes": [
       {
         "Name": "AggressiveShip",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "AggressiveShip",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "PassiveShip",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "AggressiveCrewId",
-        "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0xe0"
       },
       {
         "Name": "AggressiveCrewId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
-        "Offset": "0x100"
+        "Size": "0x30",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "AggressiveCrewId",
+        "Type": "Struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x140"
       },
       {
         "Name": "PassiveCrewId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
-        "Offset": "0x120"
+        "Size": "0x30",
+        "Offset": "0x170"
       },
       {
         "Name": "AggressiveFaction",
         "Type": "Struct QuestVariableName",
-        "Size": "0x20",
-        "Offset": "0x140"
+        "Size": "0x30",
+        "Offset": "0x1a0"
       },
       {
         "Name": "AggressiveFaction",
         "Type": "Struct QuestVariableName",
-        "Size": "0x20",
-        "Offset": "0x160"
+        "Size": "0x30",
+        "Offset": "0x1d0"
       },
       {
         "Name": "PassiveFaction",
         "Type": "Struct QuestVariableName",
-        "Size": "0x20",
-        "Offset": "0x180"
+        "Size": "0x30",
+        "Offset": "0x200"
       }
     ]
+  },
+  "InvasionBattleBounds": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Root",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "ShipToTrack1",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "ShipToTrack2",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "InnerRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "OuterRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e4"
+      }
+    ]
+  },
+  "InvasionBattleBoundsShipComponentInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "InvasionBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -158,9 +230,9 @@
   },
   "InvasionServiceDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x80",
+    "FullSize": "0x90",
     "InheritedSize": "0x28",
-    "ClassSize": "0x58",
+    "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "Matchmaking_VoyageDescDataAsset",
@@ -181,7 +253,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "Invasion_Emergent_VoyageDescDataAsset",
+        "Name": "Invasion_LosingCrew_VoyageDescDataAsset",
         "Type": "Class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x40"
@@ -211,30 +283,54 @@
         "Offset": "0x60"
       },
       {
+        "Name": "AggressivePassive_EQSQueryParamData_SailingTargetDistance_Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "AggressivePassive_EQSQueryParamData_SailingTargetDistance_Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x74"
+      },
+      {
         "Name": "Invasion_Debug_AggressivePassive_VoyageDescDataAsset",
         "Type": "Class VoyageDescDataAsset*",
         "Size": "0x8",
-        "Offset": "0x68"
+        "Offset": "0x78"
       },
       {
         "Name": "Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset",
         "Type": "Class VoyageDescDataAsset*",
         "Size": "0x8",
-        "Offset": "0x70"
+        "Offset": "0x80"
       },
       {
-        "Name": "Emergent_DistanceBetweenShipsInMetres",
+        "Name": "StopPlayingEmergeMusicAfterSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x78"
+        "Offset": "0x88"
       }
     ]
   },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x5a8",
+    "FullSize": "0x5a0",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x1e0",
+    "ClassSize": "0x1d8",
     "Attributes": [
       {
         "Name": "InvasionServiceDataAsset",
@@ -252,25 +348,85 @@
         "Name": "MatchmakingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x518"
+        "Offset": "0x4f0"
       },
       {
         "Name": "InvadingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x528"
+        "Offset": "0x500"
+      },
+      {
+        "Name": "ReplicatedInvasionCrewMusicStates",
+        "Type": "TArray<Struct ReplicatedInvasionCrewMusicState>",
+        "Size": "0x10",
+        "Offset": "0x510"
       },
       {
         "Name": "MatchmakingCrewsReplicated",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x538"
+        "Offset": "0x520"
       },
       {
         "Name": "InvadingCrewsReplicated",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x548"
+        "Offset": "0x530"
+      },
+      {
+        "Name": "InvasionBattleBoundsList",
+        "Type": "TArray<class InvasionBattleBounds*>",
+        "Size": "0x10",
+        "Offset": "0x540"
+      }
+    ]
+  },
+  "SetInvasionMusicStateForCrewStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SetInvasionMusicStateForCrewStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MusicState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "TaleQuestInvasionCreateBattleBoundsStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestInvasionCreateBattleBoundsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Ship1",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Ship2",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -308,6 +464,27 @@
       }
     ]
   },
+  "TaleQuestInvasionRemoveBattleBoundsStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestInvasionRemoveBattleBoundsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ShipInBattleBounds",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
   "WaitForShipToBeDefeatedStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xc8",
@@ -317,69 +494,69 @@
   },
   "WaitForShipToBeDefeatedStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x188",
+    "FullSize": "0x1e8",
     "InheritedSize": "0x80",
-    "ClassSize": "0x108",
+    "ClassSize": "0x168",
     "Attributes": [
       {
         "Name": "WinningShip",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "DefeatedShip",
         "Type": "Struct QuestVariableActor",
-        "Size": "0x20",
-        "Offset": "0xa0"
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
         "Name": "WinningCrewId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
-        "Offset": "0xc0"
+        "Size": "0x30",
+        "Offset": "0xe0"
       },
       {
         "Name": "DefeatedCrewId",
         "Type": "Struct QuestVariableGuid",
-        "Size": "0x20",
-        "Offset": "0xe0"
+        "Size": "0x30",
+        "Offset": "0x110"
       },
       {
         "Name": "WinningFaction",
         "Type": "Struct QuestVariableName",
-        "Size": "0x20",
-        "Offset": "0x100"
+        "Size": "0x30",
+        "Offset": "0x140"
       },
       {
         "Name": "DefeatedFaction",
         "Type": "Struct QuestVariableName",
-        "Size": "0x20",
-        "Offset": "0x120"
+        "Size": "0x30",
+        "Offset": "0x170"
       },
       {
         "Name": "CheckProximityTimerInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x140"
+        "Offset": "0x1a0"
       },
       {
         "Name": "CheckProximityDistanceInMetres",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x144"
+        "Offset": "0x1a4"
       },
       {
         "Name": "TimeoutTimerIntervalInMinutes",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x148"
+        "Offset": "0x1a8"
       },
       {
         "Name": "FailMessage",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x150"
+        "Offset": "0x1b0"
       }
     ]
   },

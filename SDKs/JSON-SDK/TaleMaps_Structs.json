@@ -1,6 +1,6 @@
 {
   "TaleQuestVariableMapMarkType": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "TaleQuestChecklistItem": {
@@ -26,7 +26,7 @@
     ]
   },
   "TaleQuestVariableTreasureMapItemDescType": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": []
   },
   "DougTheDruid": {

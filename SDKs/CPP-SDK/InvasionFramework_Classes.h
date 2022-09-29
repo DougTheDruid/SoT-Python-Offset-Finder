@@ -21,7 +21,7 @@ public:
 
 
 // Size 0x0
-class GetInvasionShipsStep: public TaleQuestStep
+class GetInvasionBattleLocationStep: public TaleQuestStep
 {
 public:
 };
@@ -46,19 +46,54 @@ public:
 };
 
 
-// Size 0x120
+// Size 0x60
+class GetInvasionBattleLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
+	Struct QuestVariableFloat                                    Radius;                                            // 0xb0(0x30)
+};
+
+
+// Size 0x0
+class GetInvasionShipsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x1b0
 class GetInvasionShipsStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    AggressiveShip;                                    // 0x80(0x20)
-	Struct QuestVariableActor                                    AggressiveShip;                                    // 0xa0(0x20)
-	Struct QuestVariableActor                                    PassiveShip;                                       // 0xc0(0x20)
-	Struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0xe0(0x20)
-	Struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0x100(0x20)
-	Struct QuestVariableGuid                                     PassiveCrewId;                                     // 0x120(0x20)
-	Struct QuestVariableName                                     AggressiveFaction;                                 // 0x140(0x20)
-	Struct QuestVariableName                                     AggressiveFaction;                                 // 0x160(0x20)
-	Struct QuestVariableName                                     PassiveFaction;                                    // 0x180(0x20)
+	Struct QuestVariableActor                                    AggressiveShip;                                    // 0x80(0x30)
+	Struct QuestVariableActor                                    AggressiveShip;                                    // 0xb0(0x30)
+	Struct QuestVariableActor                                    PassiveShip;                                       // 0xe0(0x30)
+	Struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0x110(0x30)
+	Struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0x140(0x30)
+	Struct QuestVariableGuid                                     PassiveCrewId;                                     // 0x170(0x30)
+	Struct QuestVariableName                                     AggressiveFaction;                                 // 0x1a0(0x30)
+	Struct QuestVariableName                                     AggressiveFaction;                                 // 0x1d0(0x30)
+	Struct QuestVariableName                                     PassiveFaction;                                    // 0x200(0x30)
+};
+
+
+// Size 0x28
+class InvasionBattleBounds: public Actor
+{
+public:
+	Class SceneComponent*                                        Root;                                              // 0x3c8(0x8)
+	Class Actor*                                                 ShipToTrack1;                                      // 0x3d0(0x8)
+	Class Actor*                                                 ShipToTrack2;                                      // 0x3d8(0x8)
+	float                                                        InnerRadius;                                       // 0x3e0(0x4)
+	float                                                        OuterRadius;                                       // 0x3e4(0x4)
+};
+
+
+// Size 0x0
+class InvasionBattleBoundsShipComponentInterface: public Interface
+{
+public:
 };
 
 
@@ -84,34 +119,71 @@ public:
 };
 
 
-// Size 0x58
+// Size 0x68
 class InvasionServiceDataAsset: public DataAsset
 {
 public:
 	Class VoyageDescDataAsset*                                   Matchmaking_VoyageDescDataAsset;                   // 0x28(0x8)
 	Class VoyageDescDataAsset*                                   Invasion_AggressivePassive_VoyageDescDataAsset;    // 0x30(0x8)
 	Class VoyageDescDataAsset*                                   Invasion_AggressiveAggressive_VoyageDescDataAsset; // 0x38(0x8)
-	Class VoyageDescDataAsset*                                   Invasion_Emergent_VoyageDescDataAsset;             // 0x40(0x8)
+	Class VoyageDescDataAsset*                                   Invasion_LosingCrew_VoyageDescDataAsset;           // 0x40(0x8)
 	Class EnvQuery*                                              AggressivePassive_EnvQueryTemplate;                // 0x48(0x8)
 	Class EnvQuery*                                              AggressiveAggressive_InvasionLocation_EnvQueryTemplate; // 0x50(0x8)
 	Class EnvQuery*                                              AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate; // 0x58(0x8)
 	Class EnvQuery*                                              AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate; // 0x60(0x8)
-	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressivePassive_VoyageDescDataAsset; // 0x68(0x8)
-	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset; // 0x70(0x8)
-	float                                                        Emergent_DistanceBetweenShipsInMetres;             // 0x78(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistance_Min; // 0x68(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistance_Max; // 0x6c(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Min; // 0x70(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Max; // 0x74(0x4)
+	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressivePassive_VoyageDescDataAsset; // 0x78(0x8)
+	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset; // 0x80(0x8)
+	float                                                        StopPlayingEmergeMusicAfterSeconds;                // 0x88(0x4)
 };
 
 
-// Size 0x1e0
+// Size 0x1d8
 class InvasionService: public Actor
 {
 public:
 	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x408(0x8)
 	Class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x410(0x8)
-	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x518(0x10)
-	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x528(0x10)
-	TArray<Struct Guid>                                          MatchmakingCrewsReplicated;                        // 0x538(0x10)
-	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x548(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x4f0(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x500(0x10)
+	TArray<Struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x510(0x10)
+	TArray<Struct Guid>                                          MatchmakingCrewsReplicated;                        // 0x520(0x10)
+	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x530(0x10)
+	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x540(0x10)
+};
+
+
+// Size 0x0
+class SetInvasionMusicStateForCrewStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8
+class SetInvasionMusicStateForCrewStepDesc: public TaleQuestStepDesc
+{
+public:
+	byte                                                         MusicState;                                        // 0x80(0x1)
+};
+
+
+// Size 0x0
+class TaleQuestInvasionCreateBattleBoundsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x60
+class TaleQuestInvasionCreateBattleBoundsStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    Ship1;                                             // 0x80(0x30)
+	Struct QuestVariableActor                                    Ship2;                                             // 0xb0(0x30)
 };
 
 
@@ -132,6 +204,21 @@ public:
 };
 
 
+// Size 0x0
+class TaleQuestInvasionRemoveBattleBoundsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30
+class TaleQuestInvasionRemoveBattleBoundsStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    ShipInBattleBounds;                                // 0x80(0x30)
+};
+
+
 // Size 0x30
 class WaitForShipToBeDefeatedStep: public TaleQuestStep
 {
@@ -139,20 +226,20 @@ public:
 };
 
 
-// Size 0x108
+// Size 0x168
 class WaitForShipToBeDefeatedStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    WinningShip;                                       // 0x80(0x20)
-	Struct QuestVariableActor                                    DefeatedShip;                                      // 0xa0(0x20)
-	Struct QuestVariableGuid                                     WinningCrewId;                                     // 0xc0(0x20)
-	Struct QuestVariableGuid                                     DefeatedCrewId;                                    // 0xe0(0x20)
-	Struct QuestVariableName                                     WinningFaction;                                    // 0x100(0x20)
-	Struct QuestVariableName                                     DefeatedFaction;                                   // 0x120(0x20)
-	float                                                        CheckProximityTimerInterval;                       // 0x140(0x4)
-	float                                                        CheckProximityDistanceInMetres;                    // 0x144(0x4)
-	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x148(0x4)
-	Struct FText                                                 FailMessage;                                       // 0x150(0x38)
+	Struct QuestVariableActor                                    WinningShip;                                       // 0x80(0x30)
+	Struct QuestVariableActor                                    DefeatedShip;                                      // 0xb0(0x30)
+	Struct QuestVariableGuid                                     WinningCrewId;                                     // 0xe0(0x30)
+	Struct QuestVariableGuid                                     DefeatedCrewId;                                    // 0x110(0x30)
+	Struct QuestVariableName                                     WinningFaction;                                    // 0x140(0x30)
+	Struct QuestVariableName                                     DefeatedFaction;                                   // 0x170(0x30)
+	float                                                        CheckProximityTimerInterval;                       // 0x1a0(0x4)
+	float                                                        CheckProximityDistanceInMetres;                    // 0x1a4(0x4)
+	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x1a8(0x4)
+	Struct FText                                                 FailMessage;                                       // 0x1b0(0x38)
 };
 
 

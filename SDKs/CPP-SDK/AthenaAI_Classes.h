@@ -268,103 +268,6 @@ public:
 };
 
 
-// Size 0xc0
-class AICreatureCharacterMovementComponent: public CharacterMovementComponent
-{
-public:
-	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x558(0x10)
-	float                                                        BlendSpeed;                                        // 0x568(0x4)
-	bool                                                         bCreateDisturbance;                                // 0x56c(0x1)
-	float                                                        DisturbanceSize;                                   // 0x570(0x4)
-	float                                                        DisturbanceVelocityScale;                          // 0x574(0x4)
-	float                                                        OrientationBlendSpeed;                             // 0x578(0x4)
-	float                                                        OrientationMaxPitch;                               // 0x57c(0x4)
-	float                                                        UpdateOrientationFrequency;                        // 0x580(0x4)
-	float                                                        MinStairAngle;                                     // 0x584(0x4)
-	float                                                        MinStairVelocityDampen;                            // 0x588(0x4)
-	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x590(0x10)
-};
-
-
-// Size 0x230
-class AICreatureCharacter: public Character
-{
-public:
-	float                                                        DelayBeforeDestroying;                             // 0x638(0x4)
-	float                                                        TimeBeforeFadingOut;                               // 0x63c(0x4)
-	float                                                        PickupTime;                                        // 0x640(0x4)
-	Struct Vector                                                TooltipDisplayOffset;                              // 0x644(0xc)
-	Class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x650(0x8)
-	Class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x658(0x8)
-	class                                                        ActionStateCreatorDefinition;                      // 0x660(0x8)
-	Class AthenaAIControllerParamsDataAsset*                     AIControllerParams;                                // 0x668(0x8)
-	Class InteractableComponent*                                 InteractableComponent;                             // 0x670(0x8)
-	Class WaterHeightProviderComponent*                          WaterHeightProviderComponent;                      // 0x678(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitterComponent;                   // 0x680(0x8)
-	Class RewindComponent*                                       RewindComponent;                                   // 0x688(0x8)
-	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x690(0x8)
-	Class AICreatureCharacterMovementComponent*                  AICreatureCharacterMovementComponent;              // 0x798(0x8)
-	class                                                        CurrentAIStrategy;                                 // 0x808(0x8)
-};
-
-
-// Size 0x38
-class AthenaAICharacterPathFollowingComponent: public PathFollowingComponent
-{
-public:
-	float                                                        ProportionOfTurnToMove;                            // 0x2b8(0x4)
-	float                                                        MinAngleToTurnOnSpot;                              // 0x2bc(0x4)
-	float                                                        ReachedGoalMaxSpeedToSlowDistanceFactor;           // 0x2c0(0x4)
-	float                                                        AbortMoveMaxSpeedToSlowDistanceFactor;             // 0x2c4(0x4)
-	float                                                        MinSlowDownSpeed;                                  // 0x2cc(0x4)
-};
-
-
-// Size 0x30
-class AICreatureCharacterPathFollowingComponent: public AthenaAICharacterPathFollowingComponent
-{
-public:
-	float                                                        LandingAngle;                                      // 0x2f0(0x4)
-	float                                                        HopDistanceScale;                                  // 0x2f4(0x4)
-	float                                                        MaximumLandTime;                                   // 0x2f8(0x4)
-	float                                                        MinStairAngle;                                     // 0x2fc(0x4)
-	float                                                        MinStairVelocityDampen;                            // 0x300(0x4)
-	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x308(0x10)
-};
-
-
-// Size 0x0
-class AICreatureMovementModifierInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10
-class AICreatureMovementModifierParamsDataAsset: public DataAsset
-{
-public:
-	float                                                        TurnRateMultiplier;                                // 0x28(0x4)
-	float                                                        FlyingTurnRateMultiplier;                          // 0x2c(0x4)
-	bool                                                         UseTighterTurningCircle;                           // 0x30(0x1)
-	bool                                                         UseHighResNavMesh;                                 // 0x31(0x1)
-};
-
-
-// Size 0x0
-class BehaviourTreeInterruptionInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0
-class ForcedIdleBehaviourInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x0
 class AIDialogueStateProviderInterface: public Interface
 {
@@ -438,7 +341,7 @@ public:
 };
 
 
-// Size 0x2e0
+// Size 0x2f0
 class AthenaAIController: public AthenaAIControllerBase
 {
 public:
@@ -447,8 +350,8 @@ public:
 	Class AISenseConfig_Hearing*                                 HearingConfig;                                     // 0x680(0x8)
 	Class AISenseConfig_Damage*                                  DamageSenseConfig;                                 // 0x688(0x8)
 	TArray<Struct AthenaAIControllerSenseSettingOverride>        AIStrategySenseSettingOverrides;                   // 0x6d8(0x10)
-	Class Actor*                                                 CurrentNotSeenPerceivedActor;                      // 0x8c0(0x8)
-	Class Actor*                                                 PendingSpawnTriggerActor;                          // 0x8c8(0x8)
+	Class Actor*                                                 CurrentNotSeenPerceivedActor;                      // 0x8d0(0x8)
+	Class Actor*                                                 PendingSpawnTriggerActor;                          // 0x8d8(0x8)
 };
 
 
@@ -456,14 +359,14 @@ public:
 class AthenaFaunaAIController: public AthenaAIController
 {
 public:
-	float                                                        MaxTimeBetweenThreatDetermination;                 // 0x8f0(0x4)
-	float                                                        DefaultControlRotationInterpSpeed;                 // 0x8f4(0x4)
-	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x8f8(0x10)
-	float                                                        MinAgentHalfHeightPctOverride;                     // 0x908(0x4)
-	Class FaunaAIContollerParamsDataAsset*                       FaunaDataAsset;                                    // 0x910(0x8)
-	Class Actor*                                                 CarrierActor;                                      // 0x918(0x8)
-	Class Actor*                                                 HighestDangerActor;                                // 0x9c8(0x8)
-	Class FaunaAIPlayerTracker*                                  PlayerTracker;                                     // 0xa58(0x8)
+	float                                                        MaxTimeBetweenThreatDetermination;                 // 0x900(0x4)
+	float                                                        DefaultControlRotationInterpSpeed;                 // 0x904(0x4)
+	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x908(0x10)
+	float                                                        MinAgentHalfHeightPctOverride;                     // 0x918(0x4)
+	Class FaunaAIContollerParamsDataAsset*                       FaunaDataAsset;                                    // 0x920(0x8)
+	Class Actor*                                                 CarrierActor;                                      // 0x928(0x8)
+	Class Actor*                                                 HighestDangerActor;                                // 0x9d8(0x8)
+	Class FaunaAIPlayerTracker*                                  PlayerTracker;                                     // 0xa68(0x8)
 };
 
 
@@ -485,6 +388,28 @@ public:
 class EnvQueryContext_Threat: public EnvQueryContext
 {
 public:
+};
+
+
+// Size 0x230
+class AICreatureCharacter: public Character
+{
+public:
+	float                                                        DelayBeforeDestroying;                             // 0x638(0x4)
+	float                                                        TimeBeforeFadingOut;                               // 0x63c(0x4)
+	float                                                        PickupTime;                                        // 0x640(0x4)
+	Struct Vector                                                TooltipDisplayOffset;                              // 0x644(0xc)
+	Class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x650(0x8)
+	Class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x658(0x8)
+	class                                                        ActionStateCreatorDefinition;                      // 0x660(0x8)
+	Class AthenaAIControllerParamsDataAsset*                     AIControllerParams;                                // 0x668(0x8)
+	Class InteractableComponent*                                 InteractableComponent;                             // 0x670(0x8)
+	Class WaterHeightProviderComponent*                          WaterHeightProviderComponent;                      // 0x678(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitterComponent;                   // 0x680(0x8)
+	Class RewindComponent*                                       RewindComponent;                                   // 0x688(0x8)
+	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x690(0x8)
+	Class AICreatureCharacterMovementComponent*                  AICreatureCharacterMovementComponent;              // 0x798(0x8)
+	class                                                        CurrentAIStrategy;                                 // 0x808(0x8)
 };
 
 
@@ -573,6 +498,24 @@ public:
 class FaunaAnimationInterface: public Interface
 {
 public:
+};
+
+
+// Size 0xc0
+class AICreatureCharacterMovementComponent: public CharacterMovementComponent
+{
+public:
+	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x558(0x10)
+	float                                                        BlendSpeed;                                        // 0x568(0x4)
+	bool                                                         bCreateDisturbance;                                // 0x56c(0x1)
+	float                                                        DisturbanceSize;                                   // 0x570(0x4)
+	float                                                        DisturbanceVelocityScale;                          // 0x574(0x4)
+	float                                                        OrientationBlendSpeed;                             // 0x578(0x4)
+	float                                                        OrientationMaxPitch;                               // 0x57c(0x4)
+	float                                                        UpdateOrientationFrequency;                        // 0x580(0x4)
+	float                                                        MinStairAngle;                                     // 0x584(0x4)
+	float                                                        MinStairVelocityDampen;                            // 0x588(0x4)
+	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x590(0x10)
 };
 
 
@@ -915,14 +858,14 @@ public:
 class AthenaSwimmingAIController: public AthenaAIController
 {
 public:
-	Class SwimmingPathFollowingComponent*                        SwimmingPathFollowingComponent;                    // 0x8f0(0x8)
-	bool                                                         IgnoreTargetsOutOfWater;                           // 0x8f8(0x1)
-	Class CurveFloat*                                            DistOfAttackerVsChanceToPursue;                    // 0x900(0x8)
-	TArray<Struct FName>                                         TimersToZeroIfStartingRevengeAttack;               // 0x908(0x10)
-	struct FName                                                 DespawnRequiredBlackboardKey;                      // 0x918(0x8)
-	struct FName                                                 DespawnRequiredReasonBlackboardKey;                // 0x920(0x8)
-	float                                                        PathingFailedWeight;                               // 0x928(0x4)
-	float                                                        PathingFailedThresholdToDespawn;                   // 0x92c(0x4)
+	Class SwimmingPathFollowingComponent*                        SwimmingPathFollowingComponent;                    // 0x900(0x8)
+	bool                                                         IgnoreTargetsOutOfWater;                           // 0x908(0x1)
+	Class CurveFloat*                                            DistOfAttackerVsChanceToPursue;                    // 0x910(0x8)
+	TArray<Struct FName>                                         TimersToZeroIfStartingRevengeAttack;               // 0x918(0x10)
+	struct FName                                                 DespawnRequiredBlackboardKey;                      // 0x928(0x8)
+	struct FName                                                 DespawnRequiredReasonBlackboardKey;                // 0x930(0x8)
+	float                                                        PathingFailedWeight;                               // 0x938(0x4)
+	float                                                        PathingFailedThresholdToDespawn;                   // 0x93c(0x4)
 };
 
 
@@ -1053,12 +996,12 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 class TaleQuestGetTinySharkExperienceParticipatingCrewsDesc: public TaleQuestStepDesc
 {
 public:
 	Class TinySharkExperience*                                   TinySharkExperience;                               // 0x80(0x8)
-	Struct QuestVariableGuidArray                                ParticipatingCrews;                                // 0x88(0x20)
+	Struct QuestVariableGuidArray                                ParticipatingCrews;                                // 0x88(0x30)
 };
 
 
@@ -1069,12 +1012,12 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 class TaleQuestGetTinySharkPawnDesc: public TaleQuestStepDesc
 {
 public:
 	Class TinySharkExperience*                                   TinySharkExperience;                               // 0x80(0x8)
-	Struct QuestVariableSharkPawn                                TinySharkPawn;                                     // 0x88(0x20)
+	Struct QuestVariableSharkPawn                                TinySharkPawn;                                     // 0x88(0x30)
 };
 
 
@@ -1100,7 +1043,7 @@ public:
 };
 
 
-// Size 0x120
+// Size 0x130
 class TaleQuestStartTinySharkExperienceStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1110,7 +1053,7 @@ public:
 	Class Ship*                                                  TargetShip;                                        // 0x168(0x8)
 	Class TaleQuestTinySharkExperienceTracker*                   ExperienceTracker;                                 // 0x170(0x8)
 	bool                                                         FireTinySharkVariantDefeatedStats;                 // 0x178(0x1)
-	Struct QuestVariableTinySharkExperience                      TinySharkExperience;                               // 0x180(0x20)
+	Struct QuestVariableTinySharkExperience                      TinySharkExperience;                               // 0x180(0x30)
 };
 
 
@@ -1146,7 +1089,7 @@ public:
 };
 
 
-// Size 0x418
+// Size 0x428
 class TinySharkExperience: public Actor
 {
 public:
@@ -1160,8 +1103,8 @@ public:
 	Struct TinySharkParams                                       Params;                                            // 0x4b0(0xb8)
 	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x568(0x8)
 	Class Ship*                                                  TrackedShip;                                       // 0x570(0x8)
-	Struct EncounterParams                                       SightingEncounterParams;                           // 0x5f8(0xc)
-	Struct EncounterParams                                       CloseEncounterParams;                              // 0x604(0xc)
+	Struct EncounterParams                                       SightingEncounterParams;                           // 0x608(0xc)
+	Struct EncounterParams                                       CloseEncounterParams;                              // 0x614(0xc)
 };
 
 
@@ -1196,25 +1139,6 @@ class TinySharkServiceParamsDataAsset: public DataAsset
 public:
 	Struct TinySharkServiceParams                                Params;                                            // 0x28(0x28)
 	int                                                          MaxNumTinySharkExperiences;                        // 0x50(0x4)
-};
-
-
-// Size 0x50
-class MeshMemoryConstraintsAIPartsDesc: public AIPartsDesc
-{
-public:
-	Struct StringAssetReference                                  Mesh;                                              // 0x38(0x10)
-	class                                                        MeshFallbackCategory;                              // 0x50(0x8)
-	class                                                        BudgetToCountMemoryAgainstIfNoFallback;            // 0x58(0x8)
-	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x60(0x10)
-	TArray<Struct StringAssetReference>                          FallbackOverrideMaterials;                         // 0x70(0x10)
-};
-
-
-// Size 0x8
-class TeleportAIAbility: public AthenaAIAbility
-{
-public:
 };
 
 
@@ -1901,6 +1825,18 @@ public:
 };
 
 
+// Size 0x50
+class MeshMemoryConstraintsAIPartsDesc: public AIPartsDesc
+{
+public:
+	Struct StringAssetReference                                  Mesh;                                              // 0x38(0x10)
+	class                                                        MeshFallbackCategory;                              // 0x50(0x8)
+	class                                                        BudgetToCountMemoryAgainstIfNoFallback;            // 0x58(0x8)
+	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x60(0x10)
+	TArray<Struct StringAssetReference>                          FallbackOverrideMaterials;                         // 0x70(0x10)
+};
+
+
 // Size 0x0
 class AIPartsRetrievalInterface: public Interface
 {
@@ -2428,6 +2364,13 @@ public:
 };
 
 
+// Size 0x8
+class TeleportAIAbility: public AthenaAIAbility
+{
+public:
+};
+
+
 // Size 0x0
 class AthenaAIAbilityHandlerInterface: public Interface
 {
@@ -2541,6 +2484,18 @@ public:
 };
 
 
+// Size 0x38
+class AthenaAICharacterPathFollowingComponent: public PathFollowingComponent
+{
+public:
+	float                                                        ProportionOfTurnToMove;                            // 0x2b8(0x4)
+	float                                                        MinAngleToTurnOnSpot;                              // 0x2bc(0x4)
+	float                                                        ReachedGoalMaxSpeedToSlowDistanceFactor;           // 0x2c0(0x4)
+	float                                                        AbortMoveMaxSpeedToSlowDistanceFactor;             // 0x2c4(0x4)
+	float                                                        MinSlowDownSpeed;                                  // 0x2cc(0x4)
+};
+
+
 // Size 0x0
 class AthenaAICharacterStatsInterface: public Interface
 {
@@ -2559,17 +2514,17 @@ public:
 class AthenaAICharacterController: public AthenaAIController
 {
 public:
-	Class AthenaAIItemParamsDataAsset*                           ItemParamsDataAsset;                               // 0x8f8(0x8)
-	Class LoadoutAsset*                                          FallbackLoadoutIfAllEngageItemsDropped;            // 0x900(0x8)
-	float                                                        ControlRotationInterpSpeed;                        // 0x908(0x4)
-	bool                                                         ControlRotationUseConstantInterp;                  // 0x90c(0x1)
-	bool                                                         FaceTargetDisabled;                                // 0x90d(0x1)
-	float                                                        MinTurnAngleToPlayTurnAnim;                        // 0x910(0x4)
-	Class AthenaAICharacterControllerParamsDataAsset*            CharacterParamsDataAsset;                          // 0x928(0x8)
-	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> SpawnItemDescForItemCategories;                    // 0x9c0(0x10)
-	TArray<class AthenaAIAbilityParams*>                         AIAbilityParams;                                   // 0x9d0(0x10)
-	TArray<Struct AthenaAIEngageEnemyData>                       NonItemEngageOptions;                              // 0x9e0(0x10)
-	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0x9f0(0x8)
+	Class AthenaAIItemParamsDataAsset*                           ItemParamsDataAsset;                               // 0x908(0x8)
+	Class LoadoutAsset*                                          FallbackLoadoutIfAllEngageItemsDropped;            // 0x910(0x8)
+	float                                                        ControlRotationInterpSpeed;                        // 0x918(0x4)
+	bool                                                         ControlRotationUseConstantInterp;                  // 0x91c(0x1)
+	bool                                                         FaceTargetDisabled;                                // 0x91d(0x1)
+	float                                                        MinTurnAngleToPlayTurnAnim;                        // 0x920(0x4)
+	Class AthenaAICharacterControllerParamsDataAsset*            CharacterParamsDataAsset;                          // 0x938(0x8)
+	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> SpawnItemDescForItemCategories;                    // 0x9d0(0x10)
+	TArray<class AthenaAIAbilityParams*>                         AIAbilityParams;                                   // 0x9e0(0x10)
+	TArray<Struct AthenaAIEngageEnemyData>                       NonItemEngageOptions;                              // 0x9f0(0x10)
+	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0xa00(0x8)
 };
 
 
@@ -2847,11 +2802,11 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x10
 class BTDecorator_FeatureToggle: public BTDecorator
 {
 public:
-	Struct FeatureFlag                                           Feature;                                           // 0x68(0x8)
+	Struct FeatureFlag                                           Feature;                                           // 0x68(0xc)
 };
 
 
@@ -3579,6 +3534,13 @@ public:
 };
 
 
+// Size 0x0
+class CustomAttitudeInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x10
 class CustomSkeletonAnimationDataList: public DataAsset
 {
@@ -3857,6 +3819,16 @@ public:
 };
 
 
+// Size 0x18
+class PlayerEntitlementCustomAttitudeComponent: public ActorComponent
+{
+public:
+	class                                                        Entitlement;                                       // 0xd0(0x8)
+	byte                                                         HasEntitlementAttitude;                            // 0xd8(0x1)
+	byte                                                         LacksEntitlementAttitude;                          // 0xd9(0x1)
+};
+
+
 // Size 0x20
 class PlayerProximityObservedSpawnContextProvider: public Object
 {
@@ -3940,6 +3912,51 @@ class WaterbasedAISupplier: public Actor
 {
 public:
 	Class AISpawnerList*                                         Spawners;                                          // 0x3c8(0x8)
+};
+
+
+// Size 0x30
+class AICreatureCharacterPathFollowingComponent: public AthenaAICharacterPathFollowingComponent
+{
+public:
+	float                                                        LandingAngle;                                      // 0x2f0(0x4)
+	float                                                        HopDistanceScale;                                  // 0x2f4(0x4)
+	float                                                        MaximumLandTime;                                   // 0x2f8(0x4)
+	float                                                        MinStairAngle;                                     // 0x2fc(0x4)
+	float                                                        MinStairVelocityDampen;                            // 0x300(0x4)
+	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x308(0x10)
+};
+
+
+// Size 0x0
+class AICreatureMovementModifierInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10
+class AICreatureMovementModifierParamsDataAsset: public DataAsset
+{
+public:
+	float                                                        TurnRateMultiplier;                                // 0x28(0x4)
+	float                                                        FlyingTurnRateMultiplier;                          // 0x2c(0x4)
+	bool                                                         UseTighterTurningCircle;                           // 0x30(0x1)
+	bool                                                         UseHighResNavMesh;                                 // 0x31(0x1)
+};
+
+
+// Size 0x0
+class BehaviourTreeInterruptionInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
+class ForcedIdleBehaviourInterface: public Interface
+{
+public:
 };
 
 

@@ -141,14 +141,14 @@ public:
 };
 
 
-// Size 0x80
+// Size 0xc0
 class TaleRegisterSpireStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableVector                                   SelectionOriginPoint;                              // 0x80(0x20)
-	Struct QuestVariableFloat                                    PlayerExclusionSelectionRadius;                    // 0xa0(0x20)
-	Struct QuestVariableTaleResourceHandle                       AllocatedSpireHandle;                              // 0xc0(0x20)
-	Struct QuestVariableVector                                   AllocatedSpireLocation;                            // 0xe0(0x20)
+	Struct QuestVariableVector                                   SelectionOriginPoint;                              // 0x80(0x30)
+	Struct QuestVariableFloat                                    PlayerExclusionSelectionRadius;                    // 0xb0(0x30)
+	Struct QuestVariableTaleResourceHandle                       AllocatedSpireHandle;                              // 0xe0(0x30)
+	Struct QuestVariableVector                                   AllocatedSpireLocation;                            // 0x110(0x30)
 };
 
 
@@ -159,11 +159,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class TaleReleaseSpireStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableTaleResourceHandle                       SpireHandle;                                       // 0x80(0x20)
+	Struct QuestVariableTaleResourceHandle                       SpireHandle;                                       // 0x80(0x30)
 };
 
 

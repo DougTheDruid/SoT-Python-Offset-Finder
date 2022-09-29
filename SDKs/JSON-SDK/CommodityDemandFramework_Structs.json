@@ -78,6 +78,23 @@
       }
     ]
   },
+  "CommoditySourceMetaWrapper": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NPCIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "CommodityTypeDataEntry": {
     "ClassSize": "0x10",
     "Attributes": [

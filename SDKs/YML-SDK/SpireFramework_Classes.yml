@@ -180,22 +180,22 @@ TaleRegisterSpireStepDesc:
   Attributes:
   - Name: SelectionOriginPoint
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: PlayerExclusionSelectionRadius
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableFloat
   - Name: AllocatedSpireHandle
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableTaleResourceHandle
   - Name: AllocatedSpireLocation
-    Offset: '0xe0'
-    Size: '0x20'
+    Offset: '0x110'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x80'
-  FullSize: '0x100'
+  ClassSize: '0xc0'
+  FullSize: '0x140'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleReleaseSpireStep:
@@ -208,10 +208,10 @@ TaleReleaseSpireStepDesc:
   Attributes:
   - Name: SpireHandle
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableTaleResourceHandle
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleSpireService:

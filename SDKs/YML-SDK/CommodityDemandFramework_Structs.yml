@@ -47,6 +47,17 @@ CommoditySelectionType:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x8'
+CommoditySourceMetaWrapper:
+  Attributes:
+  - Name: NPCIdentifier
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: IslandIdentifier
+    Offset: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x28'
 CommodityTrackingModel:
   Attributes:
   - Name: ItemOfferId

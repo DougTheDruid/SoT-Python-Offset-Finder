@@ -14,12 +14,12 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x40
 struct ShipPartLevelsOfDamage
 {
 public:
 	TArray<Struct DistanceAndLevelOfDamage>                      DamagePerDistance;                                 // 0x20(0x10)
-	Struct FeatureFlag                                           FeatureName;                                       // 0x30(0x8)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x30(0xc)
 };
 
 

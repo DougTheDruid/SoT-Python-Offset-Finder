@@ -3,22 +3,22 @@
 BP_ProxyIngestible_C:
   Attributes:
   - Name: ConfigurableBuryableItem
-    Offset: '0x798'
+    Offset: '0x7d0'
     Size: '0x8'
     Type: Class ConfigurableBuryableItemComponent*
   - Name: TrackedOwner
-    Offset: '0x7a0'
+    Offset: '0x7d8'
     Size: '0x8'
     Type: Class TrackedOwnerComponent*
   - Name: MaterialManipulation
-    Offset: '0x7a8'
+    Offset: '0x7e0'
     Size: '0x8'
     Type: Class MaterialManipulationComponent*
   - Name: Interactable
-    Offset: '0x7b0'
+    Offset: '0x7e8'
     Size: '0x8'
     Type: Class InteractableComponent*
   ClassSize: '0x20'
-  FullSize: '0x7b8'
-  InheritedSize: '0x798'
+  FullSize: '0x7f0'
+  InheritedSize: '0x7d0'
   Super: StaticMeshFloatingItemProxy

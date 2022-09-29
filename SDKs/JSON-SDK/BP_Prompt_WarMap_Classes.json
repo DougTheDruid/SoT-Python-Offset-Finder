@@ -1,9 +1,9 @@
 {
   "BP_Prompt_WarMap_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x1d6",
+    "FullSize": "0x250",
     "InheritedSize": "0x118",
-    "ClassSize": "0xbe",
+    "ClassSize": "0x138",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -18,28 +18,46 @@
         "Offset": "0x120"
       },
       {
-        "Name": "Prompt",
+        "Name": "PromptFlameheart",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
         "Offset": "0x168"
       },
       {
+        "Name": "PromptPirateLord",
+        "Type": "Struct PrioritisedPromptWithHandle",
+        "Size": "0x68",
+        "Offset": "0x1d0"
+      },
+      {
+        "Name": "PromptDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x238"
+      },
+      {
         "Name": "PromptDisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d0"
+        "Offset": "0x23c"
       },
       {
         "Name": "PromptEvaluated",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d4"
+        "Offset": "0x240"
       },
       {
         "Name": "WarMapOpened",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d5"
+        "Offset": "0x241"
+      },
+      {
+        "Name": "CurrentFaction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x248"
       }
     ]
   },

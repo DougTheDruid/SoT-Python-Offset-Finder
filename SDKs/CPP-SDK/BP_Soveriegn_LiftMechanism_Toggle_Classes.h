@@ -6,17 +6,16 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38
+// Size 0x30
 class BP_Soveriegn_LiftMechanism_Toggle_C: public ToggleAnimatedMechanismAction
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x570(0x8)
 	Class SceneComponent*                                        Rope Anchor Point;                                 // 0x578(0x8)
-	Class BoxComponent*                                          Box;                                               // 0x580(0x8)
-	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x588(0x8)
-	BlueprintGeneratedClass BP_RopeRendererComponent_C*          BP_RopeRendererComponent;                          // 0x590(0x8)
-	Class SceneComponent*                                        Rope Source;                                       // 0x598(0x8)
-	Class IntentCombinerComponent*                               IntentCombiner;                                    // 0x5a0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x580(0x8)
+	BlueprintGeneratedClass BP_RopeRendererComponent_C*          BP_RopeRendererComponent;                          // 0x588(0x8)
+	Class SceneComponent*                                        Rope Source;                                       // 0x590(0x8)
+	Class IntentCombinerComponent*                               IntentCombiner;                                    // 0x598(0x8)
 };
 
 

@@ -32,11 +32,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class SpawnBarrelsOfPlentyStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableVector                                   LocatorVar;                                        // 0x80(0x20)
+	Struct QuestVariableVector                                   LocatorVar;                                        // 0x80(0x30)
 };
 
 

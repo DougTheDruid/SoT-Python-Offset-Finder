@@ -109,6 +109,46 @@
     "ClassSize": "0xb0",
     "Attributes": []
   },
+  "AudioSpaceComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x650",
+    "InheritedSize": "0x620",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AudioSpace",
+        "Type": "Class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Name": "ActiveAudioSpace",
+        "Type": "Class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Name": "CollectionAsset",
+        "Type": "Class StoryDrivenAudioPortalCollectionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x630"
+      }
+    ]
+  },
+  "AudioSpaceTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CurrentSpaces",
+        "Type": "TArray<class AudioSpaceComponent*>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
   "MultiEmitter": {
     "Super": "Actor",
     "FullSize": "0x3d8",
@@ -125,21 +165,21 @@
   },
   "StoryDrivenAudioPortalDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x40",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Feature",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x28"
       },
       {
         "Name": "Stories",
         "Type": "TArray<Struct StoryDrivenAudioPortalSetting>",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x38"
       }
     ]
   },

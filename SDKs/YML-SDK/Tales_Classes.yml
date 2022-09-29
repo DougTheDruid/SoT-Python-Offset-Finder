@@ -18,36 +18,32 @@ ActorRadiusTrackerStepDesc:
   Attributes:
   - Name: TargetActor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: DurationBetweenChecks
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x4'
     Type: float
   - Name: Location
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: Radius
-    Offset: '0xc8'
+    Offset: '0xe8'
     Size: '0x4'
     Type: float
   - Name: ActorInsideRadius
-    Offset: '0xd0'
-    Size: '0x20'
+    Offset: '0xf0'
+    Size: '0x30'
     Type: Struct QuestVariableBool
-  ClassSize: '0x70'
-  FullSize: '0xf0'
+  ClassSize: '0xa0'
+  FullSize: '0x120'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AddGameEventExclusionZoneStep:
-  Attributes:
-  - Name: Desc
-    Offset: '0x98'
-    Size: '0x8'
-    Type: Class AddGameEventExclusionZoneStepDesc*
-  ClassSize: '0x8'
-  FullSize: '0xa0'
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 AddGameEventExclusionZoneStepDesc:
@@ -56,12 +52,20 @@ AddGameEventExclusionZoneStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: Location
+  - Name: ShouldGetRadiusFromRemoteConfig
+    Offset: '0x84'
+    Size: '0x1'
+    Type: bool
+  - Name: RemoteConfigKeyRadius
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Location
+    Offset: '0x90'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x40'
+  FullSize: '0xc0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 CallObjectFunctionStep:
@@ -124,8 +128,8 @@ DebugTaleAddInstancedLevelStep:
     Offset: '0xa8'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x38'
-  FullSize: '0xd0'
+  ClassSize: '0x40'
+  FullSize: '0xd8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 DebugTaleAddInstancedLevelStepDesc:
@@ -148,10 +152,10 @@ DestroySpawnedActorStepDesc:
   Attributes:
   - Name: ActorVar
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 DoEQSQueryStep:
@@ -176,10 +180,10 @@ DoEQSQueryStepDesc:
     Type: Class EnvQuery*
   - Name: OutPoints
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableArray
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 EnableInteractionWithActorStep:
@@ -192,10 +196,10 @@ EnableInteractionWithActorStepDesc:
   Attributes:
   - Name: TargetActor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 EnvQueryContext_TaleContextBase:
@@ -214,18 +218,18 @@ FindItemInCollectorsChestStepDesc:
   Attributes:
   - Name: CollectorsChest
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: ItemInChest
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: ItemToFind
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: class
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 FindNamedPointAsTransformStep:
@@ -237,12 +241,12 @@ FindNamedPointAsTransformStep:
 FindNamedPointAsTransformStepDesc:
   Attributes:
   - Name: OutputTransform
-    Offset: '0xf0'
-    Size: '0x28'
+    Offset: '0x110'
+    Size: '0x38'
     Type: Struct QuestVariableTransform
-  ClassSize: '0x28'
-  FullSize: '0x118'
-  InheritedSize: '0xf0'
+  ClassSize: '0x38'
+  FullSize: '0x148'
+  InheritedSize: '0x110'
   Super: FindNamedPointStepDescBase
 FindNamedPointAsVectorStep:
   Attributes: []
@@ -253,12 +257,12 @@ FindNamedPointAsVectorStep:
 FindNamedPointAsVectorStepDesc:
   Attributes:
   - Name: OutputVectorLocation
-    Offset: '0xf0'
-    Size: '0x20'
+    Offset: '0x110'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x20'
-  FullSize: '0x110'
-  InheritedSize: '0xf0'
+  ClassSize: '0x30'
+  FullSize: '0x140'
+  InheritedSize: '0x110'
   Super: FindNamedPointStepDescBase
 FindNamedPointStep:
   Attributes: []
@@ -269,37 +273,37 @@ FindNamedPointStep:
 FindNamedPointStepDesc:
   Attributes:
   - Name: OutputOrientedPoint
-    Offset: '0xf0'
-    Size: '0x20'
+    Offset: '0x110'
+    Size: '0x30'
     Type: Struct QuestVariableOrientedPoint
-  ClassSize: '0x20'
-  FullSize: '0x110'
-  InheritedSize: '0xf0'
+  ClassSize: '0x30'
+  FullSize: '0x140'
+  InheritedSize: '0x110'
   Super: FindNamedPointStepDescBase
 FindNamedPointStepDescBase:
   Attributes:
   - Name: ActorToSearch
     Offset: '0xa0'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: GroupNamePin
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xd0'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: PointGroupName
-    Offset: '0xe0'
+    Offset: '0x100'
     Size: '0x8'
     Type: struct FName
   - Name: SearchMethod
-    Offset: '0xe8'
+    Offset: '0x108'
     Size: '0x1'
     Type: byte
   - Name: ReturnInSpace
-    Offset: '0xe9'
+    Offset: '0x109'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x70'
-  FullSize: '0xf0'
+  ClassSize: '0x90'
+  FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 FixedArrayEntrySelectionStrategy:
@@ -314,24 +318,36 @@ FixedArrayEntrySelectionStrategy:
   Super: TaleQuestArrayEntrySelectionStrategy
 ForceCannonLoadStep:
   Attributes: []
-  ClassSize: '0x40'
-  FullSize: '0xd8'
+  ClassSize: '0x60'
+  FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 ForceCannonLoadStepDesc:
   Attributes:
   - Name: Cannon
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: Projectile
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+GameEventBlockingTaleService:
+  Attributes: []
+  ClassSize: '0x38'
+  FullSize: '0x98'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+GameEventBlockingTaleServiceDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
 GameEventExclusionZoneTaleService:
   Attributes: []
   ClassSize: '0x28'
@@ -346,30 +362,30 @@ GameEventExclusionZoneTaleServiceDesc:
   Super: TaleQuestServiceDesc
 GenerateDigLocationInRadiusStep:
   Attributes: []
-  ClassSize: '0x80'
-  FullSize: '0x118'
+  ClassSize: '0xb0'
+  FullSize: '0x148'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 GenerateDigLocationInRadiusStepDesc:
   Attributes:
   - Name: IslandName
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: Center
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: RadiusInCm
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x4'
     Type: float
   - Name: DigLocation
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x68'
-  FullSize: '0xe8'
+  ClassSize: '0x98'
+  FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 GetActorOfInterestStep:
@@ -386,38 +402,38 @@ GetActorOfInterestStepDesc:
     Type: class
   - Name: ActorOfInterest
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 GetVoyageDifficultyFromRankStep:
   Attributes: []
-  ClassSize: '0x28'
-  FullSize: '0xc0'
+  ClassSize: '0x38'
+  FullSize: '0xd0'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 InvokeDamageDesc:
   Attributes:
   - Name: ActorToDamage
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: DamageType
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x8'
     Type: class
   - Name: DamageAmount
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x4'
     Type: float
   - Name: DamageReason
-    Offset: '0xac'
+    Offset: '0xbc'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x30'
-  FullSize: '0xb0'
+  ClassSize: '0x40'
+  FullSize: '0xc0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 InvokeDamageStep:
@@ -454,10 +470,10 @@ LinkEQSContextWithVariableStepDesc:
     Type: class
   - Name: Variable
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableSetEQSTaleContextValue
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 LoadSequencerAnimationStep:
@@ -486,30 +502,30 @@ LoadSequencerAnimationStepDesc:
     Type: TArray<class LevelSequence*>
   - Name: TargetActorToSpawn
     Offset: '0x90'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: LevelSequenceActorSpawnLocation
-    Offset: '0xb0'
-    Size: '0x20'
+    Offset: '0xc0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: SequencerCutSceneActor
-    Offset: '0xd0'
-    Size: '0x20'
+    Offset: '0xf0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: AttachToTargetActor
-    Offset: '0xf0'
+    Offset: '0x120'
     Size: '0x1'
     Type: bool
   - Name: AttachSocketName
-    Offset: '0xf4'
+    Offset: '0x124'
     Size: '0x8'
     Type: struct FName
   - Name: PlayGlobally
-    Offset: '0xfc'
+    Offset: '0x12c'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x80'
-  FullSize: '0x100'
+  ClassSize: '0xb0'
+  FullSize: '0x130'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 OverrideManagedActorStateStep:
@@ -522,22 +538,22 @@ OverrideManagedActorStateStepDesc:
   Attributes:
   - Name: ActorVar
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: TrackActor
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x1'
     Type: bool
   - Name: MarkAsCritical
-    Offset: '0xa1'
+    Offset: '0xb1'
     Size: '0x1'
     Type: bool
   - Name: CriticalActorLostMessage
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x60'
-  FullSize: '0xe0'
+  ClassSize: '0x70'
+  FullSize: '0xf0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 ParticipantRadiusTrackerStep:
@@ -558,14 +574,14 @@ ParticipantRadiusTrackerStepDesc:
     Type: float
   - Name: Location
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: Radius
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableFloat
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 PlaySequencerAnimationOnCutsceneActorStep:
@@ -598,54 +614,54 @@ PlaySequencerAnimationOnCutsceneActorStepDesc:
     Type: float
   - Name: DockableBaseActor
     Offset: '0x90'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: SequencerCutSceneActor
-    Offset: '0xb0'
-    Size: '0x20'
+    Offset: '0xc0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: ActorToPossess
-    Offset: '0xd0'
-    Size: '0x20'
+    Offset: '0xf0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: AdditionalPossessables
-    Offset: '0xf0'
-    Size: '0x20'
+    Offset: '0x120'
+    Size: '0x30'
     Type: Struct QuestVariableArray
   - Name: InteractingActor
-    Offset: '0x110'
-    Size: '0x20'
+    Offset: '0x150'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: PossessableName
-    Offset: '0x130'
+    Offset: '0x180'
     Size: '0x10'
     Type: Struct FString
   - Name: DialogueData
-    Offset: '0x140'
+    Offset: '0x190'
     Size: '0x8'
     Type: Class SceneDialogueData*
   - Name: LocalisableNames
-    Offset: '0x148'
+    Offset: '0x198'
     Size: '0x10'
     Type: TArray<Struct FText>
   - Name: IsLevelSequenceActorAlwaysRelevant
-    Offset: '0x158'
+    Offset: '0x1a8'
     Size: '0x1'
     Type: bool
   - Name: IsLooping
-    Offset: '0x159'
+    Offset: '0x1a9'
     Size: '0x1'
     Type: bool
   - Name: SubtitleSphereRadiusInCm
-    Offset: '0x15c'
+    Offset: '0x1ac'
     Size: '0x4'
     Type: float
   - Name: FemaleLevelSequence
-    Offset: '0x160'
+    Offset: '0x1b0'
     Size: '0x8'
     Type: Class LevelSequence*
-  ClassSize: '0xe8'
-  FullSize: '0x168'
+  ClassSize: '0x138'
+  FullSize: '0x1b8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 PlaySequencerAnimationStep:
@@ -670,50 +686,50 @@ PlaySequencerAnimationStepDesc:
     Type: Class LevelSequence*
   - Name: TargetActorToSpawn
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: LevelSequenceActorSpawnLocation
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: DockableBaseActor
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: InteractingActor
-    Offset: '0xe8'
-    Size: '0x20'
+    Offset: '0x118'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: PlayGlobally
-    Offset: '0x108'
+    Offset: '0x148'
     Size: '0x1'
     Type: bool
   - Name: IsLevelSequenceActorAlawaysRelevant
-    Offset: '0x109'
+    Offset: '0x149'
     Size: '0x1'
     Type: bool
   - Name: DialogueData
-    Offset: '0x110'
+    Offset: '0x150'
     Size: '0x8'
     Type: Class SceneDialogueData*
   - Name: LocalisableNames
-    Offset: '0x118'
+    Offset: '0x158'
     Size: '0x10'
     Type: TArray<Struct FText>
   - Name: IsLooping
-    Offset: '0x128'
+    Offset: '0x168'
     Size: '0x1'
     Type: bool
   - Name: SubtitleSphereRadiusInCm
-    Offset: '0x12c'
+    Offset: '0x16c'
     Size: '0x4'
     Type: float
   - Name: FemaleLevelSequenceToPlay
-    Offset: '0x130'
+    Offset: '0x170'
     Size: '0x8'
     Type: Class LevelSequence*
-  ClassSize: '0xb8'
-  FullSize: '0x138'
+  ClassSize: '0xf8'
+  FullSize: '0x178'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 PreventInteractionWithActorStep:
@@ -726,32 +742,32 @@ PreventInteractionWithActorStepDesc:
   Attributes:
   - Name: TargetActor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 ProvokeHitReactionDesc:
   Attributes:
   - Name: ActorToProvoke
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: DamageType
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x8'
     Type: class
   - Name: DamageAmount
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x4'
     Type: float
   - Name: DamageReason
-    Offset: '0xac'
+    Offset: '0xbc'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x30'
-  FullSize: '0xb0'
+  ClassSize: '0x40'
+  FullSize: '0xc0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 ProvokeHitReactionStep:
@@ -766,6 +782,18 @@ RandomArrayEntrySelectionStrategy:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: TaleQuestArrayEntrySelectionStrategy
+ReleaseGameEventBlockStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+ReleaseGameEventBlockStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 RemoveFlameOfFateTypeStepDesc:
   Attributes:
   - Name: FlameOfFateTypeToRemove
@@ -781,13 +809,9 @@ RemoveFlameOfFateTypeStepDesc:
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 RemoveGameEventExclusionZoneStep:
-  Attributes:
-  - Name: Desc
-    Offset: '0x98'
-    Size: '0x8'
-    Type: Class RemoveGameEventExclusionZoneStepDesc*
-  ClassSize: '0x8'
-  FullSize: '0xa0'
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 RemoveGameEventExclusionZoneStepDesc:
@@ -796,12 +820,32 @@ RemoveGameEventExclusionZoneStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: Location
+  - Name: ShouldGetRadiusFromRemoteConfig
+    Offset: '0x84'
+    Size: '0x1'
+    Type: bool
+  - Name: RemoteConfigKeyRadius
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Location
+    Offset: '0x90'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x40'
+  FullSize: '0xc0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+RequestGameEventBlockStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+RequestGameEventBlockStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 RewardGenTaleQuestService:
@@ -854,10 +898,10 @@ SelectNamedPointStepDesc:
     Type: byte
   - Name: Point
     Offset: '0xb0'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableOrientedPoint
-  ClassSize: '0x50'
-  FullSize: '0xd0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 SequentialArrayEntrySelectionStrategy:
@@ -884,10 +928,10 @@ SetEQSNamedContextStepDesc:
     Type: struct FName
   - Name: Value
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableLinkEQSContext
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 SpawnLayerStep:
@@ -908,30 +952,30 @@ SpawnLayerStepDesc:
     Type: bool
   - Name: ActorWithLayers
     Offset: '0x90'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: SpawnedActors
-    Offset: '0xb0'
+    Offset: '0xc0'
     Size: '0x10'
     Type: TArray<Struct QuestVariableActor>
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x50'
+  FullSize: '0xd0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 SpawnPhasedActorAtLocationStepDesc:
   Attributes:
   - Name: Location
-    Offset: '0x100'
-    Size: '0x28'
+    Offset: '0x110'
+    Size: '0x38'
     Type: Struct QuestVariableTransform
-  ClassSize: '0x28'
-  FullSize: '0x128'
-  InheritedSize: '0x100'
+  ClassSize: '0x38'
+  FullSize: '0x148'
+  InheritedSize: '0x110'
   Super: SpawnPhasedActorWithTransformStepBaseDesc
 SpawnPhasedActorWithTransformStep:
   Attributes: []
-  ClassSize: '0x58'
-  FullSize: '0xf0'
+  ClassSize: '0x68'
+  FullSize: '0x100'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 SpawnPhasedActorWithTransformStepBaseDesc:
@@ -946,10 +990,10 @@ SpawnPhasedActorWithTransformStepBaseDesc:
     Type: Struct FText
   - Name: ActorVar
     Offset: '0xe0'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x80'
-  FullSize: '0x100'
+  ClassSize: '0x90'
+  FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 SpawnPhasedItemStep:
@@ -978,18 +1022,18 @@ SpawnPhasedItemStepDesc:
     Type: struct FName
   - Name: Item
     Offset: '0xc8'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableItemDescType
   - Name: LocatorVar
-    Offset: '0xe8'
-    Size: '0x20'
+    Offset: '0xf8'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: SpawnedItemVar
-    Offset: '0x108'
-    Size: '0x20'
+    Offset: '0x128'
+    Size: '0x30'
     Type: Struct QuestVariableItemInfo
-  ClassSize: '0xa8'
-  FullSize: '0x128'
+  ClassSize: '0xd8'
+  FullSize: '0x158'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 SplineFootprintPathComponent:
@@ -1057,8 +1101,8 @@ TaleMigrationAction:
 TaleQuestActorFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestActorService:
   Attributes:
@@ -1116,40 +1160,40 @@ TaleQuestAddBountyMapStep:
   Super: TaleQuestStep
 TaleQuestAddBountyMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: IslandName
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: Location
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableText
   - Name: Description
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableTextArray
   - Name: CaptainTargets
-    Offset: '0xe8'
-    Size: '0x20'
+    Offset: '0x118'
+    Size: '0x30'
     Type: Struct QuestVariableBountyTargetArray
   - Name: CrewTargets
-    Offset: '0x108'
-    Size: '0x20'
+    Offset: '0x148'
+    Size: '0x30'
     Type: Struct QuestVariableBountyTargetArray
   - Name: CustomLayout
-    Offset: '0x128'
+    Offset: '0x178'
     Size: '0x8'
     Type: Class BountyMapLayout*
   - Name: OverrideTreasureMapItemDesc
-    Offset: '0x130'
+    Offset: '0x180'
     Size: '0x8'
     Type: class
-  ClassSize: '0xb8'
-  FullSize: '0x138'
+  ClassSize: '0x108'
+  FullSize: '0x188'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestAddCargoRunMapStep:
@@ -1160,28 +1204,28 @@ TaleQuestAddCargoRunMapStep:
   Super: TaleQuestStep
 TaleQuestAddCargoRunMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: IslandName
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: NumItems
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableInt
   - Name: NPCId
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableGuid
   - Name: Layout
-    Offset: '0xe8'
+    Offset: '0x118'
     Size: '0x8'
     Type: Class CargoRunMapLayout*
-  ClassSize: '0x70'
-  FullSize: '0xf0'
+  ClassSize: '0xa0'
+  FullSize: '0x120'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddChecklistMapStep:
@@ -1192,36 +1236,36 @@ TaleQuestAddChecklistMapStep:
   Super: TaleQuestStep
 TaleQuestAddChecklistMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: Title
     Offset: '0xa8'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableText
   - Name: Description
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xd8'
+    Size: '0x30'
     Type: Struct QuestVariableText
   - Name: ChecklistItemsData
-    Offset: '0xe8'
-    Size: '0x20'
+    Offset: '0x108'
+    Size: '0x30'
     Type: Struct QuestVariableDataAsset
   - Name: Afternote
-    Offset: '0x108'
-    Size: '0x20'
+    Offset: '0x138'
+    Size: '0x30'
     Type: Struct QuestVariableText
   - Name: Layout
-    Offset: '0x128'
-    Size: '0x20'
+    Offset: '0x168'
+    Size: '0x30'
     Type: Struct QuestVariableDataAsset
   - Name: RadialMiniIcon
-    Offset: '0x148'
+    Offset: '0x198'
     Size: '0x1'
     Type: byte
-  ClassSize: '0xd0'
-  FullSize: '0x150'
+  ClassSize: '0x120'
+  FullSize: '0x1a0'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddCircleMapStep:
@@ -1232,28 +1276,28 @@ TaleQuestAddCircleMapStep:
   Super: TaleQuestStep
 TaleQuestAddCircleMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: IslandName
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: Location
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: CircleScale
-    Offset: '0xc8'
+    Offset: '0xe8'
     Size: '0x4'
     Type: float
   - Name: RadialMiniIcon
-    Offset: '0xcc'
+    Offset: '0xec'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x50'
-  FullSize: '0xd0'
+  ClassSize: '0x70'
+  FullSize: '0xf0'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddMerchantMapStep:
@@ -1264,46 +1308,46 @@ TaleQuestAddMerchantMapStep:
   Super: TaleQuestStep
 TaleQuestAddMerchantMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: IslandName
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: DeliveryLocation
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableText
   - Name: DeliverByTime
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableText
   - Name: Items
-    Offset: '0xe8'
-    Size: '0x20'
+    Offset: '0x118'
+    Size: '0x30'
     Type: Struct QuestVariableMerchantItemArray
   - Name: Layout
-    Offset: '0x108'
+    Offset: '0x148'
     Size: '0x8'
     Type: Class MerchantMapLayout*
-  ClassSize: '0x90'
-  FullSize: '0x110'
+  ClassSize: '0xd0'
+  FullSize: '0x150'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddRiddleMapBaseStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: IslandName
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAddRiddleMapStep:
@@ -1315,22 +1359,22 @@ TaleQuestAddRiddleMapStep:
 TaleQuestAddRiddleMapStepDesc:
   Attributes:
   - Name: Text
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x10'
     Type: TArray<Struct FText>
   ClassSize: '0x10'
-  FullSize: '0xb8'
-  InheritedSize: '0xa8'
+  FullSize: '0xc8'
+  InheritedSize: '0xb8'
   Super: TaleQuestAddRiddleMapBaseStepDesc
 TaleQuestAddRiddleMapUsingVariableStepDesc:
   Attributes:
   - Name: TextVariable
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableTextArray
-  ClassSize: '0x20'
-  FullSize: '0xc8'
-  InheritedSize: '0xa8'
+  ClassSize: '0x30'
+  FullSize: '0xe8'
+  InheritedSize: '0xb8'
   Super: TaleQuestAddRiddleMapBaseStepDesc
 TaleQuestAddToArrayStep:
   Attributes: []
@@ -1352,28 +1396,28 @@ TaleQuestAddXMarksMapStep:
   Super: TaleQuestStep
 TaleQuestAddXMarksMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: IslandName
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: Location
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: IsUnderground
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableBool
   - Name: TreasureMapOverride
-    Offset: '0xe8'
-    Size: '0x20'
+    Offset: '0x118'
+    Size: '0x30'
     Type: Struct TaleQuestVariableTreasureMapItemDescType
-  ClassSize: '0x88'
-  FullSize: '0x108'
+  ClassSize: '0xc8'
+  FullSize: '0x148'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestAdvanceRiddleMapStep:
@@ -1384,7 +1428,7 @@ TaleQuestAdvanceRiddleMapStep:
   Super: TaleQuestStep
 TaleQuestAdvanceRiddleMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -1395,8 +1439,8 @@ TaleQuestAdvanceRiddleMapStepDesc:
 TaleQuestAnimationStepFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestArrayAppendStep:
   Attributes: []
@@ -1420,10 +1464,10 @@ TaleQuestArrayContainsStepDesc:
   Attributes:
   - Name: Result
     Offset: '0x90'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableBool
-  ClassSize: '0x20'
-  FullSize: '0xb0'
+  ClassSize: '0x30'
+  FullSize: '0xc0'
   InheritedSize: '0x90'
   Super: TaleQuestArrayItemStepBaseDesc
 TaleQuestArrayEntrySelectionStrategy:
@@ -1547,33 +1591,33 @@ TaleQuestCheckpointService:
 TaleQuestChooseIslandFromWeightsStep:
   Attributes:
   - Name: IslandTypeWeights
-    Offset: '0xf8'
+    Offset: '0x128'
     Size: '0x8'
     Type: Class IslandTypeWeightsDataAsset*
-  ClassSize: '0x68'
-  FullSize: '0x100'
+  ClassSize: '0x98'
+  FullSize: '0x130'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestChooseIslandFromWeightsStepDesc:
   Attributes:
   - Name: IslandsToChooseFrom
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableNameArray
   - Name: DifficultyRank
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableInt
   - Name: ChosenIsland
-    Offset: '0xc0'
-    Size: '0x20'
+    Offset: '0xe0'
+    Size: '0x30'
     Type: Struct QuestVariableName
   - Name: IslandTypeWeights
-    Offset: '0xe0'
+    Offset: '0x110'
     Size: '0x8'
     Type: Class IslandTypeWeightsDataAsset*
-  ClassSize: '0x68'
-  FullSize: '0xe8'
+  ClassSize: '0x98'
+  FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestClearTaleProposalsStep:
@@ -1608,10 +1652,10 @@ TaleQuestCrewTaskStepDesc:
   Attributes:
   - Name: CrewId
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableGuid
-  ClassSize: '0x20'
-  FullSize: '0xa8'
+  ClassSize: '0x30'
+  FullSize: '0xb8'
   InheritedSize: '0x88'
   Super: TaleQuestTaskStepDescBase
 TaleQuestDisableInteractionStep:
@@ -1624,16 +1668,16 @@ TaleQuestDisableInteractionStepDesc:
   Attributes:
   - Name: TargetActor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestEQSService:
   Attributes: []
-  ClassSize: '0xc8'
-  FullSize: '0x128'
+  ClassSize: '0xd8'
+  FullSize: '0x138'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestEQSServiceDesc:
@@ -1672,10 +1716,10 @@ TaleQuestEnableInteractionStepDesc:
   Attributes:
   - Name: TargetActor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestEventStepDescBase:
@@ -1692,6 +1736,12 @@ TaleQuestEventStepDescBase:
   FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestExpressionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 TaleQuestFireEventStep:
   Attributes: []
   ClassSize: '0x0'
@@ -1847,15 +1897,15 @@ TaleQuestFramedStepDesc:
 TaleQuestFunctionStepLibrary:
   Attributes:
   - Name: Function
-    Offset: '0xe8'
+    Offset: '0xf0'
     Size: '0x8'
     Type: Class Function*
   - Name: FunctionStepFlags
-    Offset: '0x170'
+    Offset: '0x178'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x90'
-  FullSize: '0x178'
+  ClassSize: '0x98'
+  FullSize: '0x180'
   InheritedSize: '0xe8'
   Super: TaleQuestRunnableStepDesc
 TaleQuestGetCollectionItemCountStep:
@@ -1868,14 +1918,14 @@ TaleQuestGetCollectionItemCountStepDesc:
   Attributes:
   - Name: Collection
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableCollection
   - Name: Num
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableInt
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGetParticipatingCrewsInRadiusStep:
@@ -1888,18 +1938,18 @@ TaleQuestGetParticipatingCrewsInRadiusStepDesc:
   Attributes:
   - Name: CrewIds
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableGuidArray
   - Name: Location
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: Radius
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x4'
     Type: float
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGetParticipatingCrewsStep:
@@ -1912,10 +1962,10 @@ TaleQuestGetParticipatingCrewsStepDesc:
   Attributes:
   - Name: CrewIds
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableGuidArray
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGrantRewardStep:
@@ -1944,14 +1994,14 @@ TaleQuestGrantRewardStepDesc:
     Type: bool
   - Name: SpecificPlayerToAward
     Offset: '0xa8'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariablePlayerActor
   - Name: Feature
-    Offset: '0xc8'
+    Offset: '0xd8'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x50'
-  FullSize: '0xd0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestImportFrame:
@@ -1977,8 +2027,8 @@ TaleQuestIndexedFrame:
 TaleQuestIntMathsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestInteractionPreventionService:
   Attributes:
@@ -2000,6 +2050,12 @@ TaleQuestInteractionPreventionServiceDesc:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
+TaleQuestLogicFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestMakeStructStep:
   Attributes: []
   ClassSize: '0x0'
@@ -2049,14 +2105,20 @@ TaleQuestMerchantContractsServiceDesc:
 TaleQuestNPCHideFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestNameFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestNamedPointsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestPermanentPromptStep:
   Attributes: []
@@ -2068,14 +2130,14 @@ TaleQuestPermanentPromptStepDesc:
   Attributes:
   - Name: Prompt
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariablePrioritisedPrompt
   - Name: StartOrStop
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestPersistentForEachCrewTaskStep:
@@ -2106,16 +2168,16 @@ TaleQuestRemoveMapStep:
   Super: TaleQuestStep
 TaleQuestRemoveMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: Location
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x28'
-  FullSize: '0xa8'
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestRunnableStepDesc:
@@ -2125,9 +2187,17 @@ TaleQuestRunnableStepDesc:
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSelectEntryFromArrayStep:
-  Attributes: []
-  ClassSize: '0x40'
-  FullSize: '0xd8'
+  Attributes:
+  - Name: InputArray
+    Offset: '0x98'
+    Size: '0x30'
+    Type: Struct QuestVariableArray
+  - Name: OutputEntry
+    Offset: '0xc8'
+    Size: '0x30'
+    Type: Struct QuestVariable
+  ClassSize: '0x60'
+  FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestSelectEntryFromArrayStepDesc:
@@ -2138,24 +2208,24 @@ TaleQuestSelectEntryFromArrayStepDesc:
     Type: Class TaleQuestArrayEntrySelectionStrategy*
   - Name: InputArray
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableArray
   - Name: OutputEntry
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableAny
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSelectShipwreckLocationFromValidCandidatesStep:
   Attributes:
   - Name: CachedSelectorService
-    Offset: '0xf0'
+    Offset: '0x110'
     Size: '0x8'
     Type: Class TaleQuestSelectorService*
-  ClassSize: '0x178'
-  FullSize: '0x210'
+  ClassSize: '0x198'
+  FullSize: '0x230'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc:
@@ -2166,18 +2236,18 @@ TaleQuestSelectShipwreckLocationFromValidCandidatesStepDesc:
     Type: Class TaleQuestArrayEntrySelectionStrategy*
   - Name: InputArray
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableVectorArray
   - Name: OutputEntry
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableVector
   - Name: ShuffleLists
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xe8'
+    Size: '0x30'
     Type: Struct QuestVariableBool
-  ClassSize: '0x68'
-  FullSize: '0xe8'
+  ClassSize: '0x98'
+  FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSelectorService:
@@ -2226,6 +2296,38 @@ TaleQuestShipDiveStepDesc:
   FullSize: '0x80'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestShipSetSinkingParamsService:
+  Attributes:
+  - Name: Desc
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class TaleQuestShipSetSinkingParamsServiceDesc*
+  ClassSize: '0x50'
+  FullSize: '0xb0'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+TaleQuestShipSetSinkingParamsServiceDesc:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x28'
+    Size: '0x30'
+    Type: Struct QuestVariableGuid
+  - Name: SmallShipSinkingData
+    Offset: '0x58'
+    Size: '0x8'
+    Type: Class ShipSinkingParametersDataAsset*
+  - Name: MediumShipSinkingData
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class ShipSinkingParametersDataAsset*
+  - Name: LargeShipSinkingData
+    Offset: '0x68'
+    Size: '0x8'
+    Type: Class ShipSinkingParametersDataAsset*
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
 TaleQuestShipSurfaceStep:
   Attributes: []
   ClassSize: '0x0'
@@ -2307,22 +2409,22 @@ TaleQuestStepInterface:
 TaleQuestStoryBranchFunctionLibrary:
   Attributes:
   - Name: Active
-    Offset: '0x180'
-    Size: '0x8'
-    Type: Class TaleQuestStepDesc*
-  - Name: Inactive
     Offset: '0x188'
     Size: '0x8'
     Type: Class TaleQuestStepDesc*
+  - Name: Inactive
+    Offset: '0x190'
+    Size: '0x8'
+    Type: Class TaleQuestStepDesc*
   ClassSize: '0x48'
-  FullSize: '0x1c0'
-  InheritedSize: '0x178'
+  FullSize: '0x1c8'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestStoryFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestStructStepBase:
   Attributes: []
@@ -2393,20 +2495,20 @@ TaleQuestToggleInteractionDescriptionServiceDesc:
 TaleQuestTransformMathsFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestTransfromConversionFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestUObjectFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestUpdateCheckpointStep:
   Attributes: []
@@ -2444,31 +2546,31 @@ TaleQuestUpdateMerchantMapStep:
   Super: TaleQuestStep
 TaleQuestUpdateMerchantMapStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
   - Name: Item
     Offset: '0x88'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableMerchantItem
   - Name: Index
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableInt
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
 TaleQuestUtilityFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestWaitForChecklistMapCompletionStepDesc:
   Attributes:
-  - Name: MapID
+  - Name: MapId
     Offset: '0x80'
     Size: '0x8'
     Type: struct FName
@@ -2490,25 +2592,25 @@ TaleQuestWaitForHandInStepDesc:
   Attributes:
   - Name: HandInActor
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: SpecificItem
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x8'
     Type: class
   - Name: HandInItem
-    Offset: '0xa8'
-    Size: '0x20'
+    Offset: '0xb8'
+    Size: '0x30'
     Type: Struct QuestVariableItemDescType
-  ClassSize: '0x48'
-  FullSize: '0xc8'
+  ClassSize: '0x68'
+  FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestWaterVolumeFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleResourceBrokerService:
   Attributes:
@@ -2534,10 +2636,10 @@ TrackResponseCoordinatorStepDesc:
   Attributes:
   - Name: CutsceneResponseCoordinator
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableUObject
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 ValueProviderStepInterface:
@@ -2556,14 +2658,14 @@ VisualiseLoggerEQSResultsTaleStepDesc:
   Attributes:
   - Name: ResultsArray
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableArray
   - Name: SelectedResult
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 WaitForActorOfInterestToUnregisterStep:
@@ -2590,6 +2692,26 @@ WaitForActorOfInterestToUnregisterStepDesc:
   FullSize: '0xc0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+WaitForGameEventToCompleteStep:
+  Attributes:
+  - Name: GameEvent
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class GameEvent*
+  ClassSize: '0x10'
+  FullSize: '0xa8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+WaitForGameEventToCompleteStepDesc:
+  Attributes:
+  - Name: GameEvent
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableGameEvent
+  ClassSize: '0x30'
+  FullSize: '0xb0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 WaitForHealthToReachFractionStep:
   Attributes: []
   ClassSize: '0x70'
@@ -2612,39 +2734,59 @@ WaitForHealthToReachFractionStepDesc:
   Super: TaleQuestStepDesc
 WaitForItemPickupStep:
   Attributes: []
-  ClassSize: '0xb0'
-  FullSize: '0x148'
+  ClassSize: '0xd0'
+  FullSize: '0x168'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 WaitForItemPickupStepDesc:
   Attributes:
   - Name: Item
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableActor
   - Name: PickerUpper
-    Offset: '0xa0'
-    Size: '0x20'
+    Offset: '0xb0'
+    Size: '0x30'
     Type: Struct QuestVariableActor
-  ClassSize: '0x40'
-  FullSize: '0xc0'
+  ClassSize: '0x60'
+  FullSize: '0xe0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+WaitForSpawnedPawnBaseStep:
+  Attributes:
+  - Name: AISpawner
+    Offset: '0x98'
+    Size: '0x8'
+    Type: Class AISpawner*
+  ClassSize: '0x18'
+  FullSize: '0xb0'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+WaitForSpawnedPawnBaseStepDesc:
+  Attributes:
+  - Name: AISpawner
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableAISpawner
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 WaitUntilAllParticipantsEnterRadiusStep:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xc8'
-  InheritedSize: '0xc8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: ParticipantRadiusTrackerStepDesc
 WaitUntilAllParticipantsLeaveRadiusStep:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xc8'
-  InheritedSize: '0xc8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: ParticipantRadiusTrackerStepDesc
 WaitUntilAnyParticipantEntersRadiusStep:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xc8'
-  InheritedSize: '0xc8'
+  FullSize: '0xe8'
+  InheritedSize: '0xe8'
   Super: ParticipantRadiusTrackerStepDesc

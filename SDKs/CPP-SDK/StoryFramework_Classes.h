@@ -54,12 +54,12 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x20
 class StoryDrivenBlendedLightingZoneComponentDataAsset: public DataAsset
 {
 public:
-	Struct FeatureFlag                                           Feature;                                           // 0x28(0x8)
-	TArray<Struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x30(0x10)
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	TArray<Struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x38(0x10)
 };
 
 
@@ -120,21 +120,21 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x20
 class StorySpawnedActorsComponentDataAsset: public DataAsset
 {
 public:
-	Struct FeatureFlag                                           Feature;                                           // 0x28(0x8)
-	TArray<Struct StorySpawnedActorsComponentList>               StorySpawnedActorsList;                            // 0x30(0x10)
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	TArray<Struct StorySpawnedActorsComponentList>               StorySpawnedActorsList;                            // 0x38(0x10)
 };
 
 
-// Size 0x18
+// Size 0x20
 class StorySpawnedActorsDataAsset: public DataAsset
 {
 public:
-	Struct FeatureFlag                                           Feature;                                           // 0x28(0x8)
-	TArray<Struct StorySpawnedActorsList>                        StorySpawnedActorsList;                            // 0x30(0x10)
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	TArray<Struct StorySpawnedActorsList>                        StorySpawnedActorsList;                            // 0x38(0x10)
 };
 
 

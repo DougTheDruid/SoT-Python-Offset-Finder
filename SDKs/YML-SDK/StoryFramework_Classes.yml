@@ -98,14 +98,14 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
   Attributes:
   - Name: Feature
     Offset: '0x28'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
   - Name: StoryResponses
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct LightingZoneStoryRelatedSettings>
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 StoryDrivenSalvageItemSpawnComponent:
@@ -220,28 +220,28 @@ StorySpawnedActorsComponentDataAsset:
   Attributes:
   - Name: Feature
     Offset: '0x28'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
   - Name: StorySpawnedActorsList
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct StorySpawnedActorsComponentList>
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsDataAsset:
   Attributes:
   - Name: Feature
     Offset: '0x28'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
   - Name: StorySpawnedActorsList
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct StorySpawnedActorsList>
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsService:

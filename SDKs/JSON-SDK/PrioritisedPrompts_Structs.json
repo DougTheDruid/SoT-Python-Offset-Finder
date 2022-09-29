@@ -107,6 +107,10 @@
       }
     ]
   },
+  "PromptsServiceSetupEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "PlayerPromptTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [

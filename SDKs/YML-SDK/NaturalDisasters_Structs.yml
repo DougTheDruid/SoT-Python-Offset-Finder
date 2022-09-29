@@ -73,6 +73,17 @@ GeyserSpawnAngleOption:
     Size: '0x4'
     Type: float
   ClassSize: '0xc'
+GeyserStoryCustomisationData:
+  Attributes:
+  - Name: StoryFlag
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Struct StoryFlag
+  - Name: GeyserSetupData
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class GeyserSetupDataAsset*
+  ClassSize: '0x10'
 PlayerFeedback:
   Attributes:
   - Name: ForceFeedback

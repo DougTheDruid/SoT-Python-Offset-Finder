@@ -29,30 +29,36 @@
     ]
   },
   "TrinketLoadout": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "TrinketEntries",
         "Type": "TArray<Struct TrinketLoadoutEntry>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "TrinketOwnerXUIDs",
+        "Type": "TArray<Struct UniqueNetIdRepl>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
   "TrinketLoadoutEntry": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Trinket",
-        "Type": "class",
-        "Size": "0x8",
+        "Name": "TrinketEntitlementIndex",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "TrinketOwnerPlayerXuid",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
+        "Name": "TrinketOwnerPlayerXUIDIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

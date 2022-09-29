@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableTradeRouteData
 {
 public:

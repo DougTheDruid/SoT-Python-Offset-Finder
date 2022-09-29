@@ -454,10 +454,10 @@ TaleQuestSinkWatercraftStepDesc:
   Attributes:
   - Name: Watercraft
     Offset: '0x80'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct QuestVariableWatercraft
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSpawnWatercraftStep:
@@ -470,21 +470,21 @@ TaleQuestSpawnWatercraftStepDesc:
   Attributes:
   - Name: SpawnLocation
     Offset: '0x80'
-    Size: '0x28'
+    Size: '0x38'
     Type: Struct QuestVariableTransform
   - Name: Watercraft
-    Offset: '0xc8'
-    Size: '0x20'
+    Offset: '0xd8'
+    Size: '0x30'
     Type: Struct QuestVariableWatercraft
-  ClassSize: '0x68'
-  FullSize: '0xe8'
+  ClassSize: '0x88'
+  FullSize: '0x108'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestWatercraftFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x178'
-  InheritedSize: '0x178'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
 TaleQuestWatercraftService:
   Attributes: []

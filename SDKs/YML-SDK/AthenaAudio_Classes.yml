@@ -78,6 +78,34 @@ AudioPortalService:
   FullSize: '0xd8'
   InheritedSize: '0x28'
   Super: Object
+AudioSpaceComponent:
+  Attributes:
+  - Name: AudioSpace
+    Offset: '0x620'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: ActiveAudioSpace
+    Offset: '0x628'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: CollectionAsset
+    Offset: '0x630'
+    Size: '0x8'
+    Type: Class StoryDrivenAudioPortalCollectionDataAsset*
+  ClassSize: '0x30'
+  FullSize: '0x650'
+  InheritedSize: '0x620'
+  Super: StaticMeshComponent
+AudioSpaceTrackerComponent:
+  Attributes:
+  - Name: CurrentSpaces
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: TArray<class AudioSpaceComponent*>
+  ClassSize: '0x10'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 MultiEmitter:
   Attributes:
   - Name: MultiEmitterRootComponent
@@ -102,13 +130,13 @@ StoryDrivenAudioPortalDataAsset:
   Attributes:
   - Name: Feature
     Offset: '0x28'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
   - Name: Stories
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct StoryDrivenAudioPortalSetting>
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset

@@ -1,15 +1,15 @@
 {
   "BP_ProxyIngestible_Retractable_C": {
     "Super": "BP_ProxyIngestible_C",
-    "FullSize": "0x7c0",
-    "InheritedSize": "0x7b8",
+    "FullSize": "0x7f8",
+    "InheritedSize": "0x7f0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "RetractableItemProxy",
         "Type": "Class RetractableItemProxyComponent*",
         "Size": "0x8",
-        "Offset": "0x7b8"
+        "Offset": "0x7f0"
       }
     ]
   },

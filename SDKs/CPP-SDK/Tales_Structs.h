@@ -39,7 +39,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableAny
 {
 public:
@@ -147,56 +147,56 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableCollection
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableGuidArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableActorArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableObjectArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableClassArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableSetEQSTaleContextValue
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableLinkEQSContext
 {
 public:
@@ -219,14 +219,14 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableRotator
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableActorAssetType
 {
 public:
@@ -248,28 +248,42 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableItemDescType
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableItemInfo
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariablePrioritisedPrompt
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
+struct QuestVariableGameEvent
+{
+public:
+};
+
+
+// Size 0x30
+struct QuestVariableAISpawner
+{
+public:
+};
+
+
+// Size 0x30
 struct QuestVariableTaleResourceHandle
 {
 public:
@@ -322,14 +336,14 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableMerchantItemArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableMerchantItem
 {
 public:
@@ -345,28 +359,28 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableActorAssetTypeArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableItemDescTypeArray
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariablePageLayout
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableTexture
 {
 public:
@@ -391,13 +405,6 @@ public:
 };
 
 
-// Size 0x20
-struct QuestVariableAISpawner
-{
-public:
-};
-
-
 // Size 0x40
 struct TaleQuestDeliverableItem
 {
@@ -407,7 +414,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestVariableBountyTargetArray
 {
 public:

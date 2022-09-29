@@ -993,19 +993,19 @@
     ]
   },
   "FeatureLockedAIShipBattles": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Feature",
         "Type": "Struct FeatureFlag",
-        "Size": "0x8",
+        "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "BattlesData",
         "Type": "Class AIShipBattlesDataAsset*",
         "Size": "0x8",
-        "Offset": "0x8"
+        "Offset": "0x10"
       }
     ]
   },
@@ -1062,7 +1062,7 @@
     ]
   },
   "AIShipSpawnTelemetryEvent": {
-    "ClassSize": "0x68",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "AIShipId",
@@ -1101,10 +1101,16 @@
         "Offset": "0x50"
       },
       {
+        "Name": "SpawnLocation",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x60"
+      },
+      {
         "Name": "AIShipWaveIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x60"
+        "Offset": "0x6c"
       }
     ]
   },

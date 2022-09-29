@@ -12,8 +12,8 @@ MerchantContractsService:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<Struct MerchantContract>
-  ClassSize: '0x30'
-  FullSize: '0x58'
+  ClassSize: '0xa0'
+  FullSize: '0xc8'
   InheritedSize: '0x28'
   Super: Object
 MerchantContractsServiceInterface:

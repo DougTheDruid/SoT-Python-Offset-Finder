@@ -208,7 +208,7 @@ public:
 };
 
 
-// Size 0xc0
+// Size 0x100
 class TaleQuestChooseLandOrSeaStep: public TaleQuestStep
 {
 public:
@@ -233,7 +233,7 @@ public:
 };
 
 
-// Size 0xa0
+// Size 0xe0
 class TaleQuestChooseLandOrSeaStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -243,98 +243,98 @@ public:
 	float                                                        MaxProjectionProportion;                           // 0x90(0x4)
 	float                                                        LandClueChanceWhenPreviousClueWasSea;              // 0x94(0x4)
 	float                                                        LandClueChanceWhenPreviousClueWasLand;             // 0x98(0x4)
-	Struct QuestVariableVector                                   ProjectionPoint;                                   // 0xa0(0x20)
-	Struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xc0(0x20)
-	Struct QuestVariableBool                                     IsSeaLocation;                                     // 0xe0(0x20)
-	Struct QuestVariableNameArray                                ValidIslandNames;                                  // 0x100(0x20)
+	Struct QuestVariableVector                                   ProjectionPoint;                                   // 0xa0(0x30)
+	Struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xd0(0x30)
+	Struct QuestVariableBool                                     IsSeaLocation;                                     // 0x100(0x30)
+	Struct QuestVariableNameArray                                ValidIslandNames;                                  // 0x130(0x30)
 };
 
 
-// Size 0x80
+// Size 0xc0
 class TaleQuestGenerateCluePointingToSiteStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x98
+// Size 0xd8
 class TaleQuestGenerateCluePointingToSiteStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableInt                                      Difficulty;                                        // 0x80(0x20)
-	Struct QuestVariableVector                                   SourceLocation;                                    // 0xa0(0x20)
-	Struct QuestVariableClueSite                                 TargetClueSite;                                    // 0xc0(0x20)
-	Struct QuestVariableClueDescriptor                           GeneratedClue;                                     // 0xe0(0x20)
-	TArray<Class AllowedClueTypes>                               AllowedClueTypes;                                  // 0x100(0x10)
-	Class ClueConnectionConfig*                                  ConnectionConfiguration;                           // 0x110(0x8)
+	Struct QuestVariableInt                                      Difficulty;                                        // 0x80(0x30)
+	Struct QuestVariableVector                                   SourceLocation;                                    // 0xb0(0x30)
+	Struct QuestVariableClueSite                                 TargetClueSite;                                    // 0xe0(0x30)
+	Struct QuestVariableClueDescriptor                           GeneratedClue;                                     // 0x110(0x30)
+	TArray<Class AllowedClueTypes>                               AllowedClueTypes;                                  // 0x140(0x10)
+	Class ClueConnectionConfig*                                  ConnectionConfiguration;                           // 0x150(0x8)
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestGenerateClueSiteAtSeaLocationStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestGenerateClueSiteAtSeaLocationStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableVector                                   ApproximateLocation;                               // 0x80(0x20)
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0xa0(0x20)
-	Class ClueFactoryConfig*                                     ClueFactoryConfiguration;                          // 0xc0(0x8)
+	Struct QuestVariableVector                                   ApproximateLocation;                               // 0x80(0x30)
+	Struct QuestVariableClueSite                                 ClueSite;                                          // 0xb0(0x30)
+	Class ClueFactoryConfig*                                     ClueFactoryConfiguration;                          // 0xe0(0x8)
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestGenerateClueSiteOnIslandStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestGenerateClueSiteOnIslandStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableName                                     IslandName;                                        // 0x80(0x20)
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0xa0(0x20)
-	Class ClueFactoryConfig*                                     ClueGenerationConfiguration;                       // 0xc0(0x8)
+	Struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
+	Struct QuestVariableClueSite                                 ClueSite;                                          // 0xb0(0x30)
+	Class ClueFactoryConfig*                                     ClueGenerationConfiguration;                       // 0xe0(0x8)
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestGenerateDebrisTypeForVoyageRankStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestGenerateDebrisTypeForVoyageRankStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableInt                                      VoyageRank;                                        // 0x80(0x20)
-	Struct QuestVariableActorAssetTypeArray                      DebrisTypeArray;                                   // 0xa0(0x20)
-	Class DebrisForVoyageRankDescAsset*                          DebrisForRankDescAsset;                            // 0xc0(0x8)
+	Struct QuestVariableInt                                      VoyageRank;                                        // 0x80(0x30)
+	Struct QuestVariableActorAssetTypeArray                      DebrisTypeArray;                                   // 0xb0(0x30)
+	Class DebrisForVoyageRankDescAsset*                          DebrisForRankDescAsset;                            // 0xe0(0x8)
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestGenerateLootDescForVoyageRankStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestGenerateLootDescForVoyageRankStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableInt                                      VoyageRank;                                        // 0x80(0x20)
-	Struct QuestVariableItemDescTypeArray                        LootDescArray;                                     // 0xa0(0x20)
-	Class LootForVoyageRankDescAsset*                            LootForRankDescAsset;                              // 0xc0(0x8)
+	Struct QuestVariableInt                                      VoyageRank;                                        // 0x80(0x30)
+	Struct QuestVariableItemDescTypeArray                        LootDescArray;                                     // 0xb0(0x30)
+	Class LootForVoyageRankDescAsset*                            LootForRankDescAsset;                              // 0xe0(0x8)
 };
 
 
@@ -345,17 +345,17 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestIsClueOfTypeStepDesc: public TaleQuestStepDesc
 {
 public:
 	class                                                        ClueSiteTypeToMatch;                               // 0x80(0x8)
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x88(0x20)
-	Struct QuestVariableBool                                     IsMatchingType;                                    // 0xa8(0x20)
+	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x88(0x30)
+	Struct QuestVariableBool                                     IsMatchingType;                                    // 0xb8(0x30)
 };
 
 
-// Size 0x48
+// Size 0x68
 class TaleQuestSelectClueSiteForLootStep: public TaleQuestStep
 {
 public:
@@ -363,32 +363,32 @@ public:
 };
 
 
-// Size 0x58
+// Size 0x78
 class TaleQuestSelectClueSiteForLootStepDesc: public TaleQuestStepDesc
 {
 public:
 	Class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
 	Class ClueSiteLootRestrictionsDataAsset*                     ClueSiteLootRestrictions;                          // 0x88(0x8)
 	byte                                                         LootType;                                          // 0x90(0x1)
-	Struct QuestVariableClueSite                                 OutputClueSite;                                    // 0x98(0x20)
-	Struct QuestVariableBool                                     MaxedAllClueSites;                                 // 0xb8(0x20)
+	Struct QuestVariableClueSite                                 OutputClueSite;                                    // 0x98(0x30)
+	Struct QuestVariableBool                                     MaxedAllClueSites;                                 // 0xc8(0x30)
 };
 
 
-// Size 0x78
+// Size 0xa8
 class TaleQuestSpawnDebrisAtClueSiteStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x60
+// Size 0x90
 class TaleQuestSpawnDebrisAtClueSiteStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueSite                                 ClueSiteVar;                                       // 0x80(0x20)
-	Struct QuestVariableActorAssetType                           DebrisTypeVar;                                     // 0xa0(0x20)
-	Struct QuestVariableActor                                    OutDebrisActorVar;                                 // 0xc0(0x20)
+	Struct QuestVariableClueSite                                 ClueSiteVar;                                       // 0x80(0x30)
+	Struct QuestVariableActorAssetType                           DebrisTypeVar;                                     // 0xb0(0x30)
+	Struct QuestVariableActor                                    OutDebrisActorVar;                                 // 0xe0(0x30)
 };
 
 
@@ -399,14 +399,14 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x98
 class TaleQuestSpawnLootItemInClueSiteStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClass                                    LootItem;                                          // 0x80(0x20)
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0xa0(0x20)
-	Struct QuestVariableItemInfo                                 SpawnedLootItem;                                   // 0xc0(0x20)
-	bool                                                         Tracked;                                           // 0xe0(0x1)
+	Struct QuestVariableClass                                    LootItem;                                          // 0x80(0x30)
+	Struct QuestVariableClueSite                                 ClueSite;                                          // 0xb0(0x30)
+	Struct QuestVariableItemInfo                                 SpawnedLootItem;                                   // 0xe0(0x30)
+	bool                                                         Tracked;                                           // 0x110(0x1)
 };
 
 
@@ -417,29 +417,29 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x90
 class TaleQuestStoreClueOnActorStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0x80(0x20)
-	Struct QuestVariableActor                                    Actor;                                             // 0xa0(0x20)
-	Struct QuestVariableActor                                    ClueActor;                                         // 0xc0(0x20)
+	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0x80(0x30)
+	Struct QuestVariableActor                                    Actor;                                             // 0xb0(0x30)
+	Struct QuestVariableActor                                    ClueActor;                                         // 0xe0(0x30)
 };
 
 
-// Size 0x28
+// Size 0x38
 class TaleQuestUpdateBuoyancyAutoSinkSettingForItemStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x28
+// Size 0x38
 class TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableItemInfo                                 Item;                                              // 0x80(0x20)
-	bool                                                         EnableAutoSink;                                    // 0xa0(0x1)
+	Struct QuestVariableItemInfo                                 Item;                                              // 0x80(0x30)
+	bool                                                         EnableAutoSink;                                    // 0xb0(0x1)
 };
 
 

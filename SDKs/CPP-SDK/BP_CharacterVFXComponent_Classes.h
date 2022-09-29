@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x258
+// Size 0x25c
 class BP_CharacterVFXComponent_C: public CharacterVfxComponent
 {
 public:
@@ -29,7 +29,7 @@ public:
 	Struct ObjectMessagingHandle                                 WindDirectionChangedHandle;                        // 0x2d8(0x48)
 	Class ParticleSystemComponent*                               vfx_particle_underwater_ambient;                   // 0x320(0x8)
 	Class ParticleSystemComponent*                               vfx_player_underwater_ambient;                     // 0x328(0x8)
-	Struct FeatureFlag                                           FeatureName;                                       // 0x330(0x8)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x330(0xc)
 };
 
 

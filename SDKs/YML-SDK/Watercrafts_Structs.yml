@@ -79,7 +79,7 @@ OarParams:
   ClassSize: '0x38'
 QuestVariableWatercraft:
   Attributes: []
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 RowboatDamageEffectData:
   Attributes:
   - Name: DynamicMaterialInstance

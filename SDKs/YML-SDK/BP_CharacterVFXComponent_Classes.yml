@@ -80,9 +80,9 @@ BP_CharacterVFXComponent_C:
     Type: Class ParticleSystemComponent*
   - Name: FeatureName
     Offset: '0x330'
-    Size: '0x8'
+    Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x258'
-  FullSize: '0x338'
+  ClassSize: '0x25c'
+  FullSize: '0x33c'
   InheritedSize: '0xe0'
   Super: CharacterVfxComponent

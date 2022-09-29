@@ -118,15 +118,27 @@
   },
   "AssetAuditSettings": {
     "Super": "DeveloperSettings",
-    "FullSize": "0x48",
+    "FullSize": "0x68",
     "InheritedSize": "0x38",
-    "ClassSize": "0x10",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "PathsToAuditOnSave",
         "Type": "TArray<Str PathsToAuditOnSave>",
         "Size": "0x10",
         "Offset": "0x38"
+      },
+      {
+        "Name": "TypesToIgnoreInFeatureToggleAudits",
+        "Type": "TArray<AssetClass TypesToIgnoreInFeatureToggleAudits>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "AssetAuditorsLoadExceptionList",
+        "Type": "TArray<Str AssetAuditorsLoadExceptionList>",
+        "Size": "0x10",
+        "Offset": "0x58"
       }
     ]
   },

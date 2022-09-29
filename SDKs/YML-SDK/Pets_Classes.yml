@@ -261,60 +261,60 @@ HangoutSpotSelectionInterface:
 PetAIController:
   Attributes:
   - Name: StrategyControllerMovementMods
-    Offset: '0x910'
+    Offset: '0x920'
     Size: '0x10'
     Type: TArray<Struct AIStategyControllerMovementMod>
   - Name: DefaultControlRotationInterpSpeed
-    Offset: '0x920'
+    Offset: '0x930'
     Size: '0x4'
     Type: float
   - Name: DefaultStrategy
-    Offset: '0x928'
+    Offset: '0x938'
     Size: '0x8'
     Type: class
   - Name: ReactMappings
-    Offset: '0x930'
+    Offset: '0x940'
     Size: '0x8'
     Type: Class ReactStateMappingsDataAsset*
   - Name: HangoutSpotSelectorComponent
-    Offset: '0x940'
+    Offset: '0x950'
     Size: '0x8'
     Type: Class PetHangoutSpotSelectorComponent*
   - Name: ForcedHangoutSpotComponent
-    Offset: '0x948'
+    Offset: '0x958'
     Size: '0x8'
     Type: Class PetHangoutSpotComponent*
   - Name: DefaultBlackboardAsset
-    Offset: '0x950'
+    Offset: '0x960'
     Size: '0x8'
     Type: Class BlackboardData*
   - Name: DefaultTree
-    Offset: '0x958'
-    Size: '0x8'
-    Type: Class BehaviorTree*
-  - Name: HangoutTree
-    Offset: '0x960'
-    Size: '0x8'
-    Type: Class BehaviorTree*
-  - Name: IdleTree
     Offset: '0x968'
     Size: '0x8'
     Type: Class BehaviorTree*
-  - Name: MaximumReactRange
+  - Name: HangoutTree
     Offset: '0x970'
-    Size: '0x4'
-    Type: float
-  - Name: DangerComponent
+    Size: '0x8'
+    Type: Class BehaviorTree*
+  - Name: IdleTree
     Offset: '0x978'
     Size: '0x8'
-    Type: Class PetDangerComponent*
-  - Name: MinAgentHalfHeightPctOverride
+    Type: Class BehaviorTree*
+  - Name: MaximumReactRange
     Offset: '0x980'
     Size: '0x4'
     Type: float
+  - Name: DangerComponent
+    Offset: '0x988'
+    Size: '0x8'
+    Type: Class PetDangerComponent*
+  - Name: MinAgentHalfHeightPctOverride
+    Offset: '0x990'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xe8'
-  FullSize: '0x9d8'
-  InheritedSize: '0x8f0'
+  FullSize: '0x9e8'
+  InheritedSize: '0x900'
   Super: AthenaAIController
 PetCustomisationOverrideDataAsset:
   Attributes:

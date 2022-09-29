@@ -13,7 +13,7 @@ public:
 };
 
 
-// Size 0xa8
+// Size 0xf8
 class CrewSkillRatingService: public Object
 {
 public:

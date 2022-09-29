@@ -101,14 +101,6 @@ public:
 };
 
 
-// Size 0x10
-class AudioSpaceComponent: public StaticMeshComponent
-{
-public:
-	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
-};
-
-
 // Size 0x18
 class AudioSpaceDataAsset: public DataAsset
 {
@@ -116,14 +108,6 @@ public:
 	struct FName                                                 RtpcToUpdate;                                      // 0x28(0x8)
 	Class WwiseEvent*                                            AmbienceToStart;                                   // 0x30(0x8)
 	Class WwiseEvent*                                            AmbienceToStop;                                    // 0x38(0x8)
-};
-
-
-// Size 0x10
-class AudioSpaceTrackerComponent: public ActorComponent
-{
-public:
-	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xc8(0x10)
 };
 
 
@@ -167,7 +151,7 @@ public:
 };
 
 
-// Size 0x108
+// Size 0x128
 class TritonService: public Object
 {
 public:

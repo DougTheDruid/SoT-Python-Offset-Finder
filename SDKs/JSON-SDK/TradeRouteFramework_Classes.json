@@ -53,16 +53,16 @@
   },
   "TaleQuestGetProjectionPointOnTradeRouteStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0x100",
+    "FullSize": "0x130",
     "InheritedSize": "0x98",
-    "ClassSize": "0x68",
+    "ClassSize": "0x98",
     "Attributes": []
   },
   "TaleQuestGetProjectionPointOnTradeRouteStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
+    "FullSize": "0x118",
     "InheritedSize": "0x80",
-    "ClassSize": "0x68",
+    "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "ProjectionProportion",
@@ -73,20 +73,20 @@
       {
         "Name": "SourcePoint",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "TradeRouteData",
         "Type": "Struct QuestVariableTradeRouteData",
-        "Size": "0x20",
-        "Offset": "0xa8"
+        "Size": "0x30",
+        "Offset": "0xb8"
       },
       {
         "Name": "ProjectedPoint",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
-        "Offset": "0xc8"
+        "Size": "0x30",
+        "Offset": "0xe8"
       }
     ]
   },
@@ -106,9 +106,9 @@
   },
   "TaleQuestSelectTradeRouteStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x108",
+    "FullSize": "0x148",
     "InheritedSize": "0x80",
-    "ClassSize": "0x88",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "NumSelectFromClosestIslands",
@@ -119,26 +119,26 @@
       {
         "Name": "SelectionOriginPointVar",
         "Type": "Struct QuestVariableVector",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "TradeRouteDifficulty",
         "Type": "Struct QuestVariableInt",
-        "Size": "0x20",
-        "Offset": "0xa8"
+        "Size": "0x30",
+        "Offset": "0xb8"
       },
       {
         "Name": "TradeRoute",
         "Type": "Struct QuestVariableTradeRouteData",
-        "Size": "0x20",
-        "Offset": "0xc8"
+        "Size": "0x30",
+        "Offset": "0xe8"
       },
       {
         "Name": "AllocatedTradeRouteHandleVar",
         "Type": "Struct QuestVariableTaleResourceHandle",
-        "Size": "0x20",
-        "Offset": "0xe8"
+        "Size": "0x30",
+        "Offset": "0x118"
       }
     ]
   },

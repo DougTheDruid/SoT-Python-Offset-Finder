@@ -10,27 +10,23 @@ BP_Soveriegn_LiftMechanism_Toggle_C:
     Offset: '0x578'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: Box
-    Offset: '0x580'
-    Size: '0x8'
-    Type: Class BoxComponent*
   - Name: StaticMesh4
-    Offset: '0x588'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: BP_RopeRendererComponent
-    Offset: '0x590'
+    Offset: '0x588'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_RopeRendererComponent_C*
   - Name: Rope Source
-    Offset: '0x598'
+    Offset: '0x590'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: IntentCombiner
-    Offset: '0x5a0'
+    Offset: '0x598'
     Size: '0x8'
     Type: Class IntentCombinerComponent*
-  ClassSize: '0x38'
-  FullSize: '0x5a8'
+  ClassSize: '0x30'
+  FullSize: '0x5a0'
   InheritedSize: '0x570'
   Super: ToggleAnimatedMechanismAction

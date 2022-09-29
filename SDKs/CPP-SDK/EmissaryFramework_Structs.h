@@ -6,6 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x14
+struct EmissaryFactionActionRewardBoostServiceEvent
+{
+public:
+	byte                                                         FactionActionType;                                 // 0x0(0x1)
+	Struct Guid                                                  AssociatedCrew;                                    // 0x4(0x10)
+};
+
+
 // Size 0x18
 struct EmissaryGlobalActionRewardBoostServiceEvent
 {

@@ -6,6 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x158
+class ShipDamagerComponent: public ActorComponent
+{
+public:
+	Class PrimitiveComponent*                                    Shape;                                             // 0xd0(0x8)
+	TArray<Interface ShipHulls>                                  ShipHulls;                                         // 0xd8(0x10)
+	TArray<Interface WatercraftHealthInterfaces>                 WatercraftHealthInterfaces;                        // 0xe8(0x10)
+	Struct StrainDamage                                          ShipStrainDamage;                                  // 0xf8(0x28)
+	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenWatercraftDamage;                       // 0x120(0x30)
+	float                                                        WatercraftDamage;                                  // 0x150(0x4)
+	bool                                                         StartDamagingOnBeginPlay;                          // 0x154(0x1)
+};
+
+
 // Size 0x58
 class RadialDamagerComponent: public ActorComponent
 {
@@ -45,20 +59,6 @@ public:
 	float                                                        NearbyEncounterDistanceInMetres;                   // 0x140(0x4)
 	TArray<Weakclass ProcessedShips>                             ProcessedShips;                                    // 0x168(0x10)
 	TArray<Weakclass ProcessedGhostShips>                        ProcessedGhostShips;                               // 0x178(0x10)
-};
-
-
-// Size 0x158
-class ShipDamagerComponent: public ActorComponent
-{
-public:
-	Class PrimitiveComponent*                                    Shape;                                             // 0xd0(0x8)
-	TArray<Interface ShipHulls>                                  ShipHulls;                                         // 0xd8(0x10)
-	TArray<Interface WatercraftHealthInterfaces>                 WatercraftHealthInterfaces;                        // 0xe8(0x10)
-	Struct StrainDamage                                          ShipStrainDamage;                                  // 0xf8(0x28)
-	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenWatercraftDamage;                       // 0x120(0x30)
-	float                                                        WatercraftDamage;                                  // 0x150(0x4)
-	bool                                                         StartDamagingOnBeginPlay;                          // 0x154(0x1)
 };
 
 

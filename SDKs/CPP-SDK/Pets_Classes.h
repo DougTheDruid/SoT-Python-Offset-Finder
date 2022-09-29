@@ -311,19 +311,19 @@ public:
 class PetAIController: public AthenaAIController
 {
 public:
-	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x910(0x10)
-	float                                                        DefaultControlRotationInterpSpeed;                 // 0x920(0x4)
-	class                                                        DefaultStrategy;                                   // 0x928(0x8)
-	Class ReactStateMappingsDataAsset*                           ReactMappings;                                     // 0x930(0x8)
-	Class PetHangoutSpotSelectorComponent*                       HangoutSpotSelectorComponent;                      // 0x940(0x8)
-	Class PetHangoutSpotComponent*                               ForcedHangoutSpotComponent;                        // 0x948(0x8)
-	Class BlackboardData*                                        DefaultBlackboardAsset;                            // 0x950(0x8)
-	Class BehaviorTree*                                          DefaultTree;                                       // 0x958(0x8)
-	Class BehaviorTree*                                          HangoutTree;                                       // 0x960(0x8)
-	Class BehaviorTree*                                          IdleTree;                                          // 0x968(0x8)
-	float                                                        MaximumReactRange;                                 // 0x970(0x4)
-	Class PetDangerComponent*                                    DangerComponent;                                   // 0x978(0x8)
-	float                                                        MinAgentHalfHeightPctOverride;                     // 0x980(0x4)
+	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x920(0x10)
+	float                                                        DefaultControlRotationInterpSpeed;                 // 0x930(0x4)
+	class                                                        DefaultStrategy;                                   // 0x938(0x8)
+	Class ReactStateMappingsDataAsset*                           ReactMappings;                                     // 0x940(0x8)
+	Class PetHangoutSpotSelectorComponent*                       HangoutSpotSelectorComponent;                      // 0x950(0x8)
+	Class PetHangoutSpotComponent*                               ForcedHangoutSpotComponent;                        // 0x958(0x8)
+	Class BlackboardData*                                        DefaultBlackboardAsset;                            // 0x960(0x8)
+	Class BehaviorTree*                                          DefaultTree;                                       // 0x968(0x8)
+	Class BehaviorTree*                                          HangoutTree;                                       // 0x970(0x8)
+	Class BehaviorTree*                                          IdleTree;                                          // 0x978(0x8)
+	float                                                        MaximumReactRange;                                 // 0x980(0x4)
+	Class PetDangerComponent*                                    DangerComponent;                                   // 0x988(0x8)
+	float                                                        MinAgentHalfHeightPctOverride;                     // 0x990(0x4)
 };
 
 
