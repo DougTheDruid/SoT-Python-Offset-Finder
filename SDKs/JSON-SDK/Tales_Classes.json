@@ -316,6 +316,101 @@
       }
     ]
   },
+  "TaleQuestQueryableStateDataID": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateReadAnyValueBoolNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateReadValueIntNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DataID",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TaleQuestQueryableStatesReadInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStatesWriteInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStatesAccessComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TalesData",
+        "Type": "TArray<Struct TaleQuestQueryableStateDataInfo>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      }
+    ]
+  },
   "TaleQuestImportFrame": {
     "Super": "TaleQuestRootFrame",
     "FullSize": "0xc0",
@@ -393,6 +488,20 @@
         "Type": "TArray<class ItemSpawnData*>",
         "Size": "0x10",
         "Offset": "0x78"
+      }
+    ]
+  },
+  "TaleQuestActorOfInterestService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "Desc",
+        "Type": "Class TaleQuestActorOfInterestServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -493,6 +602,20 @@
       }
     ]
   },
+  "TaleQuestQueryableStatesService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x90",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AllData",
+        "Type": "TArray<Struct TaleQuestQueryableStateDataInfo>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
   "TaleQuestSelectorService": {
     "Super": "TaleQuestService",
     "FullSize": "0x88",
@@ -584,6 +707,26 @@
       }
     ]
   },
+  "TaleQuestActorOfInterestServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "AllNeededActorsOfInterest",
+        "Type": "TArray<Class AllNeededActorsOfInterest>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ActorOfInterestUnregisteredFailureMessage",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "TaleQuestActorServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x30",
@@ -620,6 +763,13 @@
     "Attributes": []
   },
   "TaleQuestMerchantContractsServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStatesServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -2767,6 +2917,13 @@
       }
     ]
   },
+  "ActorOfInterestTaleFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestActorFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
@@ -2782,6 +2939,13 @@
     "Attributes": []
   },
   "TaleQuestIntMathsFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestItemFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
     "InheritedSize": "0x180",
@@ -2810,6 +2974,41 @@
     "Attributes": []
   },
   "TaleQuestNPCHideFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStateAddToIntFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStateReadBoolFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStateReadIntFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStateWriteBoolFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestQueryableStateWriteIntFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
     "InheritedSize": "0x180",

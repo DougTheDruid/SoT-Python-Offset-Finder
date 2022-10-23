@@ -47,7 +47,7 @@ public:
 struct LightingZoneStoryRelatedSettings
 {
 public:
-	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
 	float                                                        TargetPointOnCurve;                                // 0x8(0x4)
 	float                                                        FadeDuration;                                      // 0xc(0x4)
 };
@@ -65,7 +65,7 @@ public:
 struct StorySpawnedActorsComponentList
 {
 public:
-	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
 	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
 	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x18(0x8)
 };
@@ -75,39 +75,36 @@ public:
 struct StorySpawnedActorsList
 {
 public:
-	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
 	TArray<Struct ActorLocationPair>                             ActorLocations;                                    // 0x8(0x10)
 	TArray<Struct NamedPointsActorLocation>                      NamedPointsActorLocations;                         // 0x18(0x10)
 	TArray<Struct InstancedLayerLocation>                        InstancedLayerLocations;                           // 0x28(0x10)
 };
 
 
-// Size 0x28
+// Size 0x18
 struct InstancedLayerLocation
 {
 public:
 	Struct StringAssetReference                                  ActorWithInstancedLayerComponent;                  // 0x0(0x10)
-	Struct StringAssetReference                                  DevActorWithInstancedLayerComponent;               // 0x10(0x10)
-	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x20(0x8)
+	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x10(0x8)
 };
 
 
-// Size 0x30
+// Size 0x20
 struct NamedPointsActorLocation
 {
 public:
 	Struct StringAssetReference                                  ActorWithNamedPointsComponent;                     // 0x0(0x10)
-	Struct StringAssetReference                                  DevActorWithNamedPointsComponent;                  // 0x10(0x10)
-	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x20(0x10)
+	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x10(0x10)
 };
 
 
-// Size 0x40
+// Size 0x30
 struct ActorLocationPair
 {
 public:
 	Struct StringAssetReference                                  SpawnLocation;                                     // 0x0(0x10)
-	Struct StringAssetReference                                  DevSpawnLocation;                                  // 0x10(0x10)
 };
 
 

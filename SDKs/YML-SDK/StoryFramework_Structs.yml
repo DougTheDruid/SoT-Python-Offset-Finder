@@ -6,29 +6,21 @@ ActorLocationPair:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: DevSpawnLocation
-    Offset: '0x10'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  ClassSize: '0x40'
+  ClassSize: '0x30'
 InstancedLayerLocation:
   Attributes:
   - Name: ActorWithInstancedLayerComponent
     Offset: '0x0'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: DevActorWithInstancedLayerComponent
-    Offset: '0x10'
-    Size: '0x10'
-    Type: Struct StringAssetReference
   - Name: LayerToSpawn
-    Offset: '0x20'
+    Offset: '0x10'
     Size: '0x8'
     Type: Class LayerActorsDataAsset*
-  ClassSize: '0x28'
+  ClassSize: '0x18'
 LightingZoneStoryRelatedSettings:
   Attributes:
-  - Name: StoryFlag
+  - Name: Story
     Offset: '0x0'
     Size: '0x8'
     Type: Struct StoryFlag
@@ -47,15 +39,11 @@ NamedPointsActorLocation:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: DevActorWithNamedPointsComponent
+  - Name: GroupLocations
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: GroupLocations
-    Offset: '0x20'
-    Size: '0x10'
     Type: TArray<Struct NamedPointsGroupActorLocation>
-  ClassSize: '0x30'
+  ClassSize: '0x20'
 NamedPointsGroupActorLocation:
   Attributes:
   - Name: NamedPointsGroup
@@ -161,7 +149,7 @@ StorySpawnedActorsChangeTelemetryEvent:
   ClassSize: '0x20'
 StorySpawnedActorsComponentList:
   Attributes:
-  - Name: StoryFlag
+  - Name: Story
     Offset: '0x0'
     Size: '0x8'
     Type: Struct StoryFlag
@@ -191,7 +179,7 @@ StorySpawnedActorsIndividualStoryInfo:
   ClassSize: '0x18'
 StorySpawnedActorsList:
   Attributes:
-  - Name: StoryFlag
+  - Name: Story
     Offset: '0x0'
     Size: '0x8'
     Type: Struct StoryFlag

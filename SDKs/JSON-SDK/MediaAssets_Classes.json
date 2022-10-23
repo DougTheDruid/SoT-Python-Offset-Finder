@@ -42,9 +42,9 @@
   },
   "MediaPlayer": {
     "Super": "Object",
-    "FullSize": "0x178",
+    "FullSize": "0x170",
     "InheritedSize": "0x28",
-    "ClassSize": "0x150",
+    "ClassSize": "0x148",
     "Attributes": [
       {
         "Name": "CacheAhead",
@@ -107,34 +107,28 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "CachedMediaSource",
-        "Type": "Class MediaSource*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
         "Name": "HorizontalFieldOfView",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xe8"
+        "Offset": "0xe0"
       },
       {
         "Name": "VerticalFieldOfView",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xec"
+        "Offset": "0xe4"
       },
       {
         "Name": "ViewRotation",
         "Type": "Struct Rotator",
         "Size": "0xc",
-        "Offset": "0xf0"
+        "Offset": "0xe8"
       },
       {
         "Name": "PlayerGuid",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x160"
+        "Offset": "0x158"
       }
     ]
   },

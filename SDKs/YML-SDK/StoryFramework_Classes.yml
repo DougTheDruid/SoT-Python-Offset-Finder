@@ -75,25 +75,15 @@ StoryDrivenBlendedLightingZoneComponent:
   - Name: StoryDrivenLightingAssetsCollection
     Offset: '0x328'
     Size: '0x8'
-    Type: Class StoryDrivenBlendedLightingZoneComponentCollectionDataAsset*
+    Type: Class StoryDrivenBlendedLightingZoneComponentDataAsset*
   - Name: CurrentStoryResponse
     Offset: '0x330'
     Size: '0x10'
     Type: Struct LightingZoneStoryRelatedSettings
-  ClassSize: '0x40'
-  FullSize: '0x370'
+  ClassSize: '0x30'
+  FullSize: '0x360'
   InheritedSize: '0x330'
   Super: BlendedLightingZoneComponent
-StoryDrivenBlendedLightingZoneComponentCollectionDataAsset:
-  Attributes:
-  - Name: StoryDrivenLightingAssetList
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>
-  ClassSize: '0x10'
-  FullSize: '0x38'
-  InheritedSize: '0x28'
-  Super: DataAsset
 StoryDrivenBlendedLightingZoneComponentDataAsset:
   Attributes:
   - Name: Feature
@@ -104,8 +94,12 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct LightingZoneStoryRelatedSettings>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: AssetsList
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>
+  ClassSize: '0x30'
+  FullSize: '0x58'
   InheritedSize: '0x28'
   Super: DataAsset
 StoryDrivenSalvageItemSpawnComponent:
@@ -178,56 +172,32 @@ StorySettings:
   FullSize: '0x48'
   InheritedSize: '0x38'
   Super: DeveloperSettings
-StorySpawnedActorsCollectionDataAsset:
-  Attributes:
-  - Name: StorySpawnedActorsAssetList
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<class StorySpawnedActorsDataAsset*>
-  - Name: StorySpawnedActorsCollectionList
-    Offset: '0x38'
-    Size: '0x10'
-    Type: TArray<class StorySpawnedActorsCollectionDataAsset*>
-  ClassSize: '0x20'
-  FullSize: '0x48'
-  InheritedSize: '0x28'
-  Super: DataAsset
 StorySpawnedActorsComponent:
   Attributes:
   - Name: AssetsCollection
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class StorySpawnedActorsComponentCollectionDataAsset*
+    Type: Class StorySpawnedActorsComponentDataAsset*
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'
   Super: ActorComponent
-StorySpawnedActorsComponentCollectionDataAsset:
-  Attributes:
-  - Name: StorySpawnedActorsAssetList
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<class StorySpawnedActorsComponentDataAsset*>
-  - Name: StorySpawnedActorsCollectionList
-    Offset: '0x38'
-    Size: '0x10'
-    Type: TArray<class StorySpawnedActorsComponentCollectionDataAsset*>
-  ClassSize: '0x20'
-  FullSize: '0x48'
-  InheritedSize: '0x28'
-  Super: DataAsset
 StorySpawnedActorsComponentDataAsset:
   Attributes:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
-  - Name: StorySpawnedActorsList
+  - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct StorySpawnedActorsComponentList>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: AssetsList
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<class StorySpawnedActorsComponentDataAsset*>
+  ClassSize: '0x30'
+  FullSize: '0x58'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsDataAsset:
@@ -236,12 +206,16 @@ StorySpawnedActorsDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
-  - Name: StorySpawnedActorsList
+  - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct StorySpawnedActorsList>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: AssetsList
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<class StorySpawnedActorsDataAsset*>
+  ClassSize: '0x30'
+  FullSize: '0x58'
   InheritedSize: '0x28'
   Super: DataAsset
 StorySpawnedActorsService:
@@ -253,7 +227,7 @@ StorySpawnedActorsService:
   - Name: Asset
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class StorySpawnedActorsCollectionDataAsset*
+    Type: Class StorySpawnedActorsDataAsset*
   ClassSize: '0x128'
   FullSize: '0x4f0'
   InheritedSize: '0x3c8'
@@ -266,7 +240,7 @@ StorySpawnedActorsServiceInterface:
   Super: Interface
 StorySpawnedActorsSettings:
   Attributes:
-  - Name: StorySpawnActorsCollectionDataAssetLocation
+  - Name: StorySpawnActorsDataAssetLocation
     Offset: '0x38'
     Size: '0x10'
     Type: Struct StringAssetReference

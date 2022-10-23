@@ -1,9 +1,9 @@
 {
   "ShroudedIslands_AnchoredGhostShip_C": {
-    "Super": "ByteProperty",
+    "Super": "None",
     "FullSize": "0x461",
-    "InheritedSize": "0xfa0",
-    "ClassSize": "-0xb3f",
+    "InheritedSize": "0x428",
+    "ClassSize": "0x39",
     "Attributes": [
       {
         "Name": "None",

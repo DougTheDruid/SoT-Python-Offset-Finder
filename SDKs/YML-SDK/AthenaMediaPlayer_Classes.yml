@@ -3,14 +3,14 @@
 AthenaMediaPlayer:
   Attributes:
   - Name: SoundComponent
-    Offset: '0x180'
+    Offset: '0x178'
     Size: '0x8'
     Type: Class WwiseMediaSoundComponent*
   - Name: SubtitleComponent
-    Offset: '0x188'
+    Offset: '0x180'
     Size: '0x8'
     Type: Class MediaSubtitleComponent*
   ClassSize: '0x20'
-  FullSize: '0x198'
-  InheritedSize: '0x178'
+  FullSize: '0x190'
+  InheritedSize: '0x170'
   Super: MediaPlayer

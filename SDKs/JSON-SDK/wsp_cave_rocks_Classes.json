@@ -67,7 +67,7 @@
       }
     ]
   },
-  "wsp_cave_rocks_11_C": {
+  "wsp_cave_rocks_10_C": {
     "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x458",
     "InheritedSize": "0x408",

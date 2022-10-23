@@ -197,6 +197,62 @@ public:
 };
 
 
+// Size 0x0
+class TaleQuestQueryableStateDataID: public Object
+{
+public:
+};
+
+
+// Size 0x18
+class TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x30(0x10)
+	bool                                                         ExpectedValue;                                     // 0x40(0x1)
+};
+
+
+// Size 0x18
+class TaleQuestQueryableStateReadAnyValueBoolNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x30(0x10)
+	bool                                                         ExpectedValue;                                     // 0x40(0x1)
+};
+
+
+// Size 0x10
+class TaleQuestQueryableStateReadValueIntNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	class                                                        DataID;                                            // 0x30(0x8)
+	int                                                          ExpectedValue;                                     // 0x38(0x4)
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStatesReadInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStatesWriteInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20
+class TaleQuestQueryableStatesAccessComponent: public ActorComponent
+{
+public:
+	TArray<Struct TaleQuestQueryableStateDataInfo>               TalesData;                                         // 0xd8(0x10)
+};
+
+
 // Size 0x88
 class TaleQuestImportFrame: public TaleQuestRootFrame
 {
@@ -245,6 +301,14 @@ public:
 };
 
 
+// Size 0x88
+class TaleQuestActorOfInterestService: public TaleQuestService
+{
+public:
+	Class TaleQuestActorOfInterestServiceDesc*                   Desc;                                              // 0xb0(0x8)
+};
+
+
 // Size 0x310
 class TaleQuestActorService: public TaleQuestService
 {
@@ -281,6 +345,14 @@ class TaleQuestInteractionPreventionService: public TaleQuestService
 public:
 	TArray<class Actor*>                                         TrackedInteractionActors;                          // 0x60(0x10)
 	Class TaleQuestInteractionPreventionServiceDesc*             Desc;                                              // 0x70(0x8)
+};
+
+
+// Size 0x30
+class TaleQuestQueryableStatesService: public TaleQuestService
+{
+public:
+	TArray<Struct TaleQuestQueryableStateDataInfo>               AllData;                                           // 0x60(0x10)
 };
 
 
@@ -345,6 +417,15 @@ public:
 };
 
 
+// Size 0x48
+class TaleQuestActorOfInterestServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	TArray<Class AllNeededActorsOfInterest>                      AllNeededActorsOfInterest;                         // 0x28(0x10)
+	Struct FText                                                 ActorOfInterestUnregisteredFailureMessage;         // 0x38(0x38)
+};
+
+
 // Size 0x8
 class TaleQuestActorServiceDesc: public TaleQuestServiceDesc
 {
@@ -376,6 +457,13 @@ public:
 
 // Size 0x0
 class TaleQuestMerchantContractsServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStatesServiceDesc: public TaleQuestServiceDesc
 {
 public:
 };
@@ -1544,6 +1632,13 @@ public:
 
 
 // Size 0x0
+class ActorOfInterestTaleFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestActorFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
@@ -1559,6 +1654,13 @@ public:
 
 // Size 0x0
 class TaleQuestIntMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestItemFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
@@ -1587,6 +1689,41 @@ public:
 
 // Size 0x0
 class TaleQuestNPCHideFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStateAddToIntFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStateReadBoolFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStateReadIntFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStateWriteBoolFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestQueryableStateWriteIntFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };

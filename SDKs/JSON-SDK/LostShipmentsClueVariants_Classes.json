@@ -103,20 +103,20 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "CurrentClueDestination",
-        "Type": "Struct ClueDestinationChoice",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
         "Name": "ClueTextIndexAssetMap",
         "Type": "Class AbandonedNoteClueTextIndexAssetMap*",
         "Size": "0x8",
-        "Offset": "0xf8"
+        "Offset": "0xe8"
       },
       {
         "Name": "CompositeFormatString",
         "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "CurrentClueDestination",
+        "Type": "Struct ClueDestinationChoice",
         "Size": "0x10",
         "Offset": "0x100"
       },

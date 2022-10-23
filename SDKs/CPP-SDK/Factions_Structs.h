@@ -17,12 +17,97 @@ public:
 };
 
 
-// Size 0x10
-struct StreakParticles
+// Size 0xc
+struct KillStreakRibbonEvent
 {
 public:
-	Class ParticleSystem*                                        Particles;                                         // 0x0(0x8)
-	byte                                                         PartType;                                          // 0x8(0x1)
+	int                                                          HourGlassPreValue;                                 // 0x0(0x4)
+	int                                                          HourGlassPostValue;                                // 0x4(0x4)
+	int                                                          HourGlassIncrement;                                // 0x8(0x4)
+};
+
+
+// Size 0x1
+struct KillStreakHideEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct KillStreakShowEvent
+{
+public:
+};
+
+
+// Size 0x4
+struct UpdateKillStreakEvent
+{
+public:
+	int                                                          NewLevel;                                          // 0x0(0x4)
+};
+
+
+// Size 0x1
+struct DeactivateKillStreakEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct ActivateKillStreakEvent
+{
+public:
+	byte                                                         FactionId;                                         // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct DeactivateKillStreakNetworkEvent
+{
+public:
+};
+
+
+// Size 0x18
+struct ActivateKillStreakNetworkEvent
+{
+public:
+	byte                                                         FactionId;                                         // 0x10(0x1)
+};
+
+
+// Size 0x20
+struct FactionShipSunkUIEvent
+{
+public:
+	byte                                                         OpponentFaction;                                   // 0x0(0x1)
+	Struct FString                                               ShipName;                                          // 0x8(0x10)
+	int                                                          MyKillStreak;                                      // 0x18(0x4)
+	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
+};
+
+
+// Size 0x38
+struct FactionShipSunkNetworkEvent
+{
+public:
+	byte                                                         OpponentFaction;                                   // 0x10(0x1)
+	Struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
+	int                                                          MyKillStreak;                                      // 0x24(0x4)
+	int                                                          TheirKillStreak;                                   // 0x28(0x4)
+	int                                                          SandsOfFateBefore;                                 // 0x2c(0x4)
+	int                                                          SandsOfFateAfter;                                  // 0x30(0x4)
+};
+
+
+// Size 0x18
+struct FactionPopupEvent
+{
+public:
+	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
 };
 
 
@@ -41,15 +126,6 @@ struct StreakMaterial
 public:
 	Class MaterialInstance*                                      Material;                                          // 0x0(0x8)
 	byte                                                         PartType;                                          // 0x8(0x1)
-};
-
-
-// Size 0x18
-struct StreakCompanyParticles
-{
-public:
-	class                                                        Company;                                           // 0x0(0x8)
-	TArray<Struct StreakParticles>                               ParticleData;                                      // 0x8(0x10)
 };
 
 
@@ -105,7 +181,6 @@ struct FactionStreakData
 public:
 	class                                                        Faction;                                           // 0x0(0x8)
 	int                                                          StreakLevel;                                       // 0x8(0x4)
-	bool                                                         IsUpdate;                                          // 0xc(0x1)
 };
 
 
@@ -136,33 +211,10 @@ public:
 };
 
 
-// Size 0x20
-struct FactionShipSunkUIEvent
+// Size 0x1
+struct EventLocalPlayerApproachedHourglass
 {
 public:
-	byte                                                         OpponentFaction;                                   // 0x0(0x1)
-	Struct FString                                               ShipName;                                          // 0x8(0x10)
-	int                                                          MyKillStreak;                                      // 0x18(0x4)
-	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
-};
-
-
-// Size 0x30
-struct FactionShipSunkNetworkEvent
-{
-public:
-	byte                                                         OpponentFaction;                                   // 0x10(0x1)
-	Struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
-	int                                                          MyKillStreak;                                      // 0x24(0x4)
-	int                                                          TheirKillStreak;                                   // 0x28(0x4)
-};
-
-
-// Size 0x18
-struct FactionPopupEvent
-{
-public:
-	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
 };
 
 

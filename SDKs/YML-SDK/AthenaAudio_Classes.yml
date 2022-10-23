@@ -61,7 +61,7 @@ AudioPortalComponent:
   - Name: CollectionAsset
     Offset: '0x310'
     Size: '0x8'
-    Type: Class StoryDrivenAudioPortalCollectionDataAsset*
+    Type: Class StoryDrivenAudioPortalDataAsset*
   ClassSize: '0x60'
   FullSize: '0x340'
   InheritedSize: '0x2e0'
@@ -91,7 +91,7 @@ AudioSpaceComponent:
   - Name: CollectionAsset
     Offset: '0x630'
     Size: '0x8'
-    Type: Class StoryDrivenAudioPortalCollectionDataAsset*
+    Type: Class StoryDrivenAudioPortalDataAsset*
   ClassSize: '0x30'
   FullSize: '0x650'
   InheritedSize: '0x620'
@@ -116,27 +116,21 @@ MultiEmitter:
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
   Super: Actor
-StoryDrivenAudioPortalCollectionDataAsset:
-  Attributes:
-  - Name: AssetsList
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<class StoryDrivenAudioPortalDataAsset*>
-  ClassSize: '0x10'
-  FullSize: '0x38'
-  InheritedSize: '0x28'
-  Super: DataAsset
 StoryDrivenAudioPortalDataAsset:
   Attributes:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
-  - Name: Stories
+  - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<Struct StoryDrivenAudioPortalSetting>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: AssetsList
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<class StoryDrivenAudioPortalDataAsset*>
+  ClassSize: '0x30'
+  FullSize: '0x58'
   InheritedSize: '0x28'
   Super: DataAsset

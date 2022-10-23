@@ -82,7 +82,7 @@ BP_SmallShip_StandardHull_Art_C:
     Offset: '0x460'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: map_deck
+  - Name: Map_Deck
     Offset: '0x468'
     Size: '0x8'
     Type: Class BoxComponent*

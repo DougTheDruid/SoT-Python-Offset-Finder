@@ -32,7 +32,7 @@ GlitterBeardLanternSoundEffect:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: WWisePool
+  - Name: WwisePool
     Offset: '0x40'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*

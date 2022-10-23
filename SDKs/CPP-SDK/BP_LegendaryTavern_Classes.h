@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_LegendaryTavern_C: public TavernStrangerNPC
 {
 public:
-	Class EmissaryMaxRankQuestProvider*                          None;                                              // 0x748(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0x750(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x758(0x8)
-	Class NPCDialogComponent*                                    None;                                              // 0x760(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x768(0x8)
+	Class EmissaryMaxRankQuestProvider*                          EmissaryMaxRankQuestProvider;                      // 0x748(0x8)
+	Class CapsuleComponent*                                      SolidHits;                                         // 0x750(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x758(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x760(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x768(0x8)
 };
 
 

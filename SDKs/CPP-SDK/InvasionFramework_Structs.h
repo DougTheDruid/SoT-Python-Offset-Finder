@@ -36,6 +36,42 @@ public:
 };
 
 
+// Size 0x68
+struct InvasionBannerNetworkEvent
+{
+public:
+	Struct FText                                                 Message;                                           // 0x10(0x38)
+	Struct Guid                                                  CrewId;                                            // 0x48(0x10)
+	byte                                                         Faction;                                           // 0x58(0x1)
+	struct FName                                                 Tag;                                               // 0x5c(0x8)
+	bool                                                         DisableMusic;                                      // 0x64(0x1)
+};
+
+
+// Size 0x10
+struct CrewMatchmakingCancelledDueToInvasion
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct CrewStoppedInvasion
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct CrewStartedInvasion
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
 // Size 0x18
 struct InvasionCrewMusicStateChangedClientEvent
 {
@@ -62,6 +98,15 @@ public:
 	float                                                        InvasionDurationInSeconds;                         // 0x30(0x4)
 	TArray<Struct CrewFactionTelemetryData>                      ParticipantFactionData;                            // 0x38(0x10)
 	byte                                                         InvasionEndedReason;                               // 0x48(0x1)
+};
+
+
+// Size 0x14
+struct InvasionServiceMatchmakingCrewInfo
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	byte                                                         CrewSessionType;                                   // 0x10(0x1)
 };
 
 

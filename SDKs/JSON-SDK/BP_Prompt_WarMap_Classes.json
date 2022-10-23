@@ -55,7 +55,7 @@
       },
       {
         "Name": "CurrentFaction",
-        "Type": "class",
+        "Type": "Class Company*",
         "Size": "0x8",
         "Offset": "0x248"
       }

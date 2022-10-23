@@ -3,36 +3,40 @@
 StartWarMapVoyageVoteConsumer:
   Attributes:
   - Name: WarMapVotingCastVote
-    Offset: '0x100'
+    Offset: '0x118'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingCantVote
-    Offset: '0x138'
+    Offset: '0x150'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingRemoveVote
-    Offset: '0x170'
+    Offset: '0x188'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingCantRemoveVote
-    Offset: '0x1a8'
+    Offset: '0x1c0'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingCantVoteReasonCrewOnInvasion
-    Offset: '0x1e0'
+    Offset: '0x1f8'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingCantVoteReasonNearbyEnemyFactionShip
-    Offset: '0x218'
+    Offset: '0x230'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingCantVoteReasonCrewIsInPVEEncounter
-    Offset: '0x250'
+    Offset: '0x268'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x188'
-  FullSize: '0x288'
-  InheritedSize: '0x100'
+  - Name: WarMapVotingCantVoteReasonInTunnelOfTheDamned
+    Offset: '0x2a0'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x1c0'
+  FullSize: '0x2d8'
+  InheritedSize: '0x118'
   Super: WarMapVoteConsumerBase
 StartWarMapVoyageVoteValidator:
   Attributes: []
@@ -43,29 +47,33 @@ StartWarMapVoyageVoteValidator:
 StopWarMapVoyageVoteConsumer:
   Attributes:
   - Name: WarMapVotingCastVote
-    Offset: '0x100'
+    Offset: '0x118'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingCantVote
-    Offset: '0x138'
+    Offset: '0x150'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingRemoveVote
-    Offset: '0x170'
+    Offset: '0x188'
     Size: '0x38'
     Type: Struct FText
   - Name: WarMapVotingCantRemoveVote
-    Offset: '0x1a8'
+    Offset: '0x1c0'
     Size: '0x38'
     Type: Struct FText
   ClassSize: '0xe0'
-  FullSize: '0x1e0'
-  InheritedSize: '0x100'
+  FullSize: '0x1f8'
+  InheritedSize: '0x118'
   Super: WarMapVoteConsumerBase
 StopWarMapVoyageVoteValidator:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x118'
+  Attributes:
+  - Name: ShowWhenInHardModeMatchmaking
+    Offset: '0x118'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+  FullSize: '0x120'
   InheritedSize: '0x118'
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
@@ -88,8 +96,8 @@ WarMapInteractionComponent:
   Super: InteractableComponent
 WarMapInteractionVoteComponent:
   Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x150'
+  ClassSize: '0x10'
+  FullSize: '0x160'
   InheritedSize: '0x150'
   Super: InlineVotingInteractionComponent
 WarMapStateInterface:
@@ -108,16 +116,20 @@ WarMapVoteConsumerBase:
     Offset: '0x38'
     Size: '0x8'
     Type: Class Actor*
+  - Name: IsHardMode
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
   - Name: Votes
-    Offset: '0xa0'
+    Offset: '0xa8'
     Size: '0x10'
     Type: TArray<class PlayerState*>
   - Name: RpcDispatcher
-    Offset: '0xb0'
+    Offset: '0xb8'
     Size: '0x8'
     Type: Class BoxedRpcDispatcherComponent*
-  ClassSize: '0xd0'
-  FullSize: '0x100'
+  ClassSize: '0xe8'
+  FullSize: '0x118'
   InheritedSize: '0x30'
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
@@ -130,16 +142,20 @@ WarMapVoteInteractionActor:
     Offset: '0x3dc'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: FactionInfos
+  - Name: InvasionActiveMesh
     Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: FactionInfos
+    Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<Struct FactionDisplayInfo>
   - Name: FactionInfoPtrs
-    Offset: '0x3f8'
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct FactionRequest>
-  ClassSize: '0xe0'
-  FullSize: '0x4a8'
+  ClassSize: '0x248'
+  FullSize: '0x610'
   InheritedSize: '0x3c8'
   Super: Actor
 WarMapVoteValidatorBase:
@@ -158,6 +174,10 @@ WarMapVoteValidatorBase:
     Type: float
   - Name: IsCrewInPVEEncounterCached
     Offset: '0x44'
+    Size: '0x1'
+    Type: bool
+  - Name: ShowWithHardMode
+    Offset: '0x45'
     Size: '0x1'
     Type: bool
   ClassSize: '0xe8'

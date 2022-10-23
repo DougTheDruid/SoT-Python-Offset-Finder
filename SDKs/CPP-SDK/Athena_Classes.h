@@ -925,7 +925,7 @@ public:
 };
 
 
-// Size 0xfb0
+// Size 0x1040
 class AthenaPlayerCharacter: public AthenaCharacter
 {
 public:
@@ -999,26 +999,29 @@ public:
 	Class AimAssistComponent*                                    AimAssistComponent;                                // 0xf10(0x8)
 	Class SequencerCameraDockingComponent*                       SequencerCameraDockingComponent;                   // 0xf18(0x8)
 	Class EmotePropData*                                         EmotePropData;                                     // 0xf20(0x8)
-	struct FName                                                 ReplicatedOverrideAnimationEntry;                  // 0xfd8(0x8)
-	class                                                        FirstPersonAnimSetDataId;                          // 0xfe0(0x8)
-	Class AnimationDataStoreWeakReferenceAsset*                  FirstPersonAnimationDataStoreWeakReferencesAsset;  // 0xfe8(0x8)
-	byte                                                         CharacterType;                                     // 0xff0(0x1)
-	Class ClothingLoadoutComponent*                              ClothingLoadoutComponent;                          // 0x19b8(0x8)
-	Class PetLoadoutComponent*                                   PetLoadoutComponent;                               // 0x19c0(0x8)
-	Class VoyageParticipantComponent*                            PrimaryVoyageParticipantComponent;                 // 0x19c8(0x8)
-	Class VoyageParticipantComponent*                            TaleVoyageParticipantComponent;                    // 0x19d0(0x8)
-	Class VoyageParticipantComponent*                            EmergentVoyageParticipantComponent;                // 0x19d8(0x8)
-	Class PlayerWorldLocationComponent*                          PlayerWorldLocationComponent;                      // 0x19e0(0x8)
-	Class ChainLightningReceiverComponent*                       ChainLightningReceiverComponent;                   // 0x19e8(0x8)
-	Struct AthenaPlayerCharacterModelSwap                        PendingModelSwap;                                  // 0x19f0(0x68)
-	bool                                                         ReplicatedEmoteExitAllowed;                        // 0x1a80(0x1)
-	bool                                                         FinishedWaitingForSpawn;                           // 0x1b00(0x1)
-	bool                                                         AutoFloatInWater;                                  // 0x1b32(0x1)
-	bool                                                         ReplicatedIsSprinting;                             // 0x1b34(0x1)
-	float                                                        AutoMoveCancelThreshold;                           // 0x1b50(0x4)
-	int                                                          ReplicatedOverridePirateDescSeed;                  // 0x1b54(0x4)
-	bool                                                         PreventJumping;                                    // 0x1b58(0x1)
-	bool                                                         StopMovementAndPreventSwimming;                    // 0x1b59(0x1)
+	class                                                        FirstPersonAnimSetDataId;                          // 0xfd8(0x8)
+	Class AnimationDataStoreWeakReferenceAsset*                  FirstPersonAnimationDataStoreWeakReferencesAsset;  // 0xfe0(0x8)
+	byte                                                         CharacterType;                                     // 0xfe8(0x1)
+	bool                                                         IsWearingSkeletonCurseCached;                      // 0x1009(0x1)
+	bool                                                         IsWearingGhostCurseCached;                         // 0x100a(0x1)
+	Class ClothingLoadoutComponent*                              ClothingLoadoutComponent;                          // 0x1a38(0x8)
+	Class PetLoadoutComponent*                                   PetLoadoutComponent;                               // 0x1a40(0x8)
+	Class VoyageParticipantComponent*                            PrimaryVoyageParticipantComponent;                 // 0x1a48(0x8)
+	Class VoyageParticipantComponent*                            TaleVoyageParticipantComponent;                    // 0x1a50(0x8)
+	Class VoyageParticipantComponent*                            EmergentVoyageParticipantComponent;                // 0x1a58(0x8)
+	Class PlayerWorldLocationComponent*                          PlayerWorldLocationComponent;                      // 0x1a60(0x8)
+	Class ChainLightningReceiverComponent*                       ChainLightningReceiverComponent;                   // 0x1a68(0x8)
+	Struct AthenaPlayerCharacterModelSwap                        PendingModelSwap;                                  // 0x1a70(0x68)
+	struct FName                                                 ReplicatedOverrideAnimationEntry;                  // 0x1af8(0x8)
+	bool                                                         ReplicatedEmoteExitAllowed;                        // 0x1b08(0x1)
+	bool                                                         FinishedWaitingForSpawn;                           // 0x1b88(0x1)
+	bool                                                         AutoFloatInWater;                                  // 0x1bba(0x1)
+	bool                                                         ReplicatedIsSprinting;                             // 0x1bbc(0x1)
+	float                                                        AutoMoveCancelThreshold;                           // 0x1bd8(0x4)
+	int                                                          ReplicatedOverridePirateDescSeed;                  // 0x1bdc(0x4)
+	bool                                                         PreventJumping;                                    // 0x1be0(0x1)
+	bool                                                         StopMovementAndPreventSwimming;                    // 0x1be1(0x1)
+	byte                                                         BodyType;                                          // 0x1be2(0x1)
 };
 
 
@@ -1671,7 +1674,7 @@ public:
 };
 
 
-// Size 0x12f0
+// Size 0x1360
 class ThirdPersonAnimationInstance: public AthenaAnimationInstance
 {
 public:
@@ -1710,89 +1713,90 @@ public:
 	Struct AthenaAnimationHitReactsAnimData                      HitReactionsAnimationData;                         // 0x3cd8(0x40)
 	Struct AthenaAnimationHitReactsSelectedAnimations            HitReactionsSelectedAnimationData;                 // 0x3d18(0x48)
 	Struct AthenaAnimationHitReactParams                         HitReactionsAnimationParams;                       // 0x3d60(0x2c)
-	float                                                        HitReactAdditiveBlendAmount;                       // 0x3d8c(0x4)
-	float                                                        WieldedItemPoseBlendTime;                          // 0x3d90(0x4)
-	float                                                        UpperBodyPoseBlendTime;                            // 0x3d94(0x4)
-	float                                                        AimingAndPitchOverride;                            // 0x3d98(0x4)
-	float                                                        FacialOverlayBlendWeight;                          // 0x3d9c(0x4)
-	Struct Rotator                                               PitchShoulderRotation;                             // 0x3da0(0xc)
-	Struct Rotator                                               PitchClavicleRotation;                             // 0x3dac(0xc)
-	float                                                        RightArmPitchAlpha;                                // 0x3db8(0x4)
-	float                                                        LeftArmPitchAlpha;                                 // 0x3dbc(0x4)
-	float                                                        SpineRotation;                                     // 0x3dc0(0x4)
-	Struct AthenaAnimationStunData                               StunData;                                          // 0x3dc4(0x8)
-	Class BlendSpace1D*                                          HitReactItem;                                      // 0x3dd0(0x8)
-	float                                                        WorldDelta;                                        // 0x3dd8(0x4)
-	float                                                        CapstanAngularVelocityWanted;                      // 0x3ddc(0x4)
-	Struct AthenaAnimationPlayingFacialAnimations                PlayingFacialAnimations;                           // 0x3de0(0x40)
-	Struct AthenaAnimationPlayingEquipAnimations                 PlayingEquipAnimations;                            // 0x3e20(0x18)
-	float                                                        CharacterPitch;                                    // 0x3e38(0x4)
-	float                                                        TargetingPitch;                                    // 0x3e3c(0x4)
-	Struct AthenaAnimationObjectLocomotionAnimations             ItemAlternateLocomotionAnims;                      // 0x3e40(0x40)
-	Struct AthenaAnimationObjectIdleAnimations                   ItemAlternateIdleAnims;                            // 0x3e80(0x18)
-	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemPrimaryContinousUseAnimsPitchOverride;         // 0x3e98(0x78)
-	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemSecondaryContinousUseAnimsPitchOverride;       // 0x3f10(0x78)
-	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemPrimaryContinousUseAlternateAnimsPitchOverride; // 0x3f88(0x78)
-	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemSecondaryContinousUseAlternateAnimsPitchOverride; // 0x4000(0x78)
-	Struct AthenaAnimationObjectActionContinuousSwimming         ItemPrimaryContinousUseSwimmingAnimsPitchOverride; // 0x4078(0x20)
-	Struct AthenaAnimationObjectActionContinuousSwimming         ItemSecondaryContinousUseSwimmingAnimsPitchOverride; // 0x4098(0x20)
-	Struct AthenaAnimationObjectActionContinuousSwimming         ItemPrimaryContinousUseSwimmingAlternateAnimsPitchOverride; // 0x40b8(0x20)
-	Struct AthenaAnimationObjectActionContinuousSwimming         ItemSecondaryContinousUseSwimmingAlternateAnimsPitchOverride; // 0x40d8(0x20)
-	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemPrimaryContinousUseJumpingAnimsPitchOverride;  // 0x40f8(0x20)
-	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemSecondaryContinousUseJumpingAnimsPitchOverride; // 0x4118(0x20)
-	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemPrimaryContinousUseJumpingAlternateAnimsPitchOverride; // 0x4138(0x20)
-	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemSecondaryContinousUseJumpingAlternateAnimsPitchOverride; // 0x4158(0x20)
-	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemPrimaryOneShotAnimsPitchOverride;              // 0x4178(0x28)
-	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemSecondaryOneShotAnimsPitchOverride;            // 0x41a0(0x28)
-	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemPrimaryOneShotAlternateAnimsPitchOverride;     // 0x41c8(0x28)
-	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemSecondaryOneShotAlternateAnimsPitchOverride;   // 0x41f0(0x28)
-	bool                                                         ZeroLocomotionForced;                              // 0x4218(0x1)
-	bool                                                         ConcealedInLoadable;                               // 0x4218(0x1)
-	bool                                                         AIUseAlternateLocomotion;                          // 0x4218(0x1)
-	bool                                                         EmoteIKIsOff;                                      // 0x4218(0x1)
-	bool                                                         InBlockingInto;                                    // 0x4218(0x1)
-	bool                                                         IsAI;                                              // 0x4218(0x1)
-	bool                                                         IsLocallyControlled;                               // 0x4218(0x1)
-	bool                                                         IsHit;                                             // 0x4218(0x1)
-	bool                                                         InRecover;                                         // 0x4219(0x1)
-	bool                                                         InWarmUp;                                          // 0x4219(0x1)
-	bool                                                         PlayingFullBodyAnimation;                          // 0x4219(0x1)
-	bool                                                         PlayingUpperBodyAnimation;                         // 0x4219(0x1)
-	bool                                                         PlayingRightArmOverlayAnimation;                   // 0x4219(0x1)
-	bool                                                         PlayingSpineOverlayAnimation;                      // 0x4219(0x1)
-	bool                                                         PlayingLeftArmOverlayAnimation;                    // 0x4219(0x1)
-	bool                                                         IsUsingFullBodyOverlayPose;                        // 0x4219(0x1)
-	bool                                                         IsUsingLocalIKPose;                                // 0x421a(0x1)
-	bool                                                         IsRightShoulderActive;                             // 0x421a(0x1)
-	bool                                                         IsLeftShoulderActive;                              // 0x421a(0x1)
-	bool                                                         ControllableObjectTypeHasValidTarget;              // 0x421a(0x1)
-	bool                                                         UseHandsAndFootplantingIK;                         // 0x421a(0x1)
-	bool                                                         IKLODActive;                                       // 0x421a(0x1)
-	bool                                                         LODSolverActive;                                   // 0x421a(0x1)
-	bool                                                         ObjectPitchTargetingActive;                        // 0x421a(0x1)
-	bool                                                         ObjectOrIKEmoteActive;                             // 0x421b(0x1)
-	bool                                                         ObjectOrWheelCapstanAndNotDocking;                 // 0x421b(0x1)
-	bool                                                         HitReact1Active;                                   // 0x421b(0x1)
-	bool                                                         HitReact2Active;                                   // 0x421b(0x1)
-	bool                                                         AthenaCharacterIsValid;                            // 0x421b(0x1)
-	bool                                                         UsePrimaryActionPitchOverride;                     // 0x421b(0x1)
-	bool                                                         UseSecondaryActionPitchOverride;                   // 0x421b(0x1)
+	Struct AthenaAnimationSinkingTunnel                          Sinking;                                           // 0x3d90(0x68)
+	float                                                        HitReactAdditiveBlendAmount;                       // 0x3df8(0x4)
+	float                                                        WieldedItemPoseBlendTime;                          // 0x3dfc(0x4)
+	float                                                        UpperBodyPoseBlendTime;                            // 0x3e00(0x4)
+	float                                                        AimingAndPitchOverride;                            // 0x3e04(0x4)
+	float                                                        FacialOverlayBlendWeight;                          // 0x3e08(0x4)
+	Struct Rotator                                               PitchShoulderRotation;                             // 0x3e0c(0xc)
+	Struct Rotator                                               PitchClavicleRotation;                             // 0x3e18(0xc)
+	float                                                        RightArmPitchAlpha;                                // 0x3e24(0x4)
+	float                                                        LeftArmPitchAlpha;                                 // 0x3e28(0x4)
+	float                                                        SpineRotation;                                     // 0x3e2c(0x4)
+	Struct AthenaAnimationStunData                               StunData;                                          // 0x3e30(0x8)
+	Class BlendSpace1D*                                          HitReactItem;                                      // 0x3e38(0x8)
+	float                                                        WorldDelta;                                        // 0x3e40(0x4)
+	float                                                        CapstanAngularVelocityWanted;                      // 0x3e44(0x4)
+	Struct AthenaAnimationPlayingFacialAnimations                PlayingFacialAnimations;                           // 0x3e48(0x40)
+	Struct AthenaAnimationPlayingEquipAnimations                 PlayingEquipAnimations;                            // 0x3e88(0x18)
+	float                                                        CharacterPitch;                                    // 0x3ea0(0x4)
+	float                                                        TargetingPitch;                                    // 0x3ea4(0x4)
+	Struct AthenaAnimationObjectLocomotionAnimations             ItemAlternateLocomotionAnims;                      // 0x3ea8(0x40)
+	Struct AthenaAnimationObjectIdleAnimations                   ItemAlternateIdleAnims;                            // 0x3ee8(0x18)
+	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemPrimaryContinousUseAnimsPitchOverride;         // 0x3f00(0x78)
+	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemSecondaryContinousUseAnimsPitchOverride;       // 0x3f78(0x78)
+	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemPrimaryContinousUseAlternateAnimsPitchOverride; // 0x3ff0(0x78)
+	Struct AthenaAnimationObjectActionContinuousStructPitchOverride ItemSecondaryContinousUseAlternateAnimsPitchOverride; // 0x4068(0x78)
+	Struct AthenaAnimationObjectActionContinuousSwimming         ItemPrimaryContinousUseSwimmingAnimsPitchOverride; // 0x40e0(0x20)
+	Struct AthenaAnimationObjectActionContinuousSwimming         ItemSecondaryContinousUseSwimmingAnimsPitchOverride; // 0x4100(0x20)
+	Struct AthenaAnimationObjectActionContinuousSwimming         ItemPrimaryContinousUseSwimmingAlternateAnimsPitchOverride; // 0x4120(0x20)
+	Struct AthenaAnimationObjectActionContinuousSwimming         ItemSecondaryContinousUseSwimmingAlternateAnimsPitchOverride; // 0x4140(0x20)
+	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemPrimaryContinousUseJumpingAnimsPitchOverride;  // 0x4160(0x20)
+	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemSecondaryContinousUseJumpingAnimsPitchOverride; // 0x4180(0x20)
+	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemPrimaryContinousUseJumpingAlternateAnimsPitchOverride; // 0x41a0(0x20)
+	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   ItemSecondaryContinousUseJumpingAlternateAnimsPitchOverride; // 0x41c0(0x20)
+	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemPrimaryOneShotAnimsPitchOverride;              // 0x41e0(0x28)
+	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemSecondaryOneShotAnimsPitchOverride;            // 0x4208(0x28)
+	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemPrimaryOneShotAlternateAnimsPitchOverride;     // 0x4230(0x28)
+	Struct AthenaAnimationObjectActionOneShotPlayingStructPitchOverride ItemSecondaryOneShotAlternateAnimsPitchOverride;   // 0x4258(0x28)
+	bool                                                         ZeroLocomotionForced;                              // 0x4280(0x1)
+	bool                                                         ConcealedInLoadable;                               // 0x4280(0x1)
+	bool                                                         AIUseAlternateLocomotion;                          // 0x4280(0x1)
+	bool                                                         EmoteIKIsOff;                                      // 0x4280(0x1)
+	bool                                                         InBlockingInto;                                    // 0x4280(0x1)
+	bool                                                         IsAI;                                              // 0x4280(0x1)
+	bool                                                         IsLocallyControlled;                               // 0x4280(0x1)
+	bool                                                         IsHit;                                             // 0x4280(0x1)
+	bool                                                         InRecover;                                         // 0x4281(0x1)
+	bool                                                         InWarmUp;                                          // 0x4281(0x1)
+	bool                                                         PlayingFullBodyAnimation;                          // 0x4281(0x1)
+	bool                                                         PlayingUpperBodyAnimation;                         // 0x4281(0x1)
+	bool                                                         PlayingRightArmOverlayAnimation;                   // 0x4281(0x1)
+	bool                                                         PlayingSpineOverlayAnimation;                      // 0x4281(0x1)
+	bool                                                         PlayingLeftArmOverlayAnimation;                    // 0x4281(0x1)
+	bool                                                         IsUsingFullBodyOverlayPose;                        // 0x4281(0x1)
+	bool                                                         IsUsingLocalIKPose;                                // 0x4282(0x1)
+	bool                                                         IsRightShoulderActive;                             // 0x4282(0x1)
+	bool                                                         IsLeftShoulderActive;                              // 0x4282(0x1)
+	bool                                                         ControllableObjectTypeHasValidTarget;              // 0x4282(0x1)
+	bool                                                         UseHandsAndFootplantingIK;                         // 0x4282(0x1)
+	bool                                                         IKLODActive;                                       // 0x4282(0x1)
+	bool                                                         LODSolverActive;                                   // 0x4282(0x1)
+	bool                                                         ObjectPitchTargetingActive;                        // 0x4282(0x1)
+	bool                                                         ObjectOrIKEmoteActive;                             // 0x4283(0x1)
+	bool                                                         ObjectOrWheelCapstanAndNotDocking;                 // 0x4283(0x1)
+	bool                                                         HitReact1Active;                                   // 0x4283(0x1)
+	bool                                                         HitReact2Active;                                   // 0x4283(0x1)
+	bool                                                         AthenaCharacterIsValid;                            // 0x4283(0x1)
+	bool                                                         UsePrimaryActionPitchOverride;                     // 0x4283(0x1)
+	bool                                                         UseSecondaryActionPitchOverride;                   // 0x4283(0x1)
 };
 
 
-// Size 0x150
+// Size 0x140
 class SkeletonAnimationInstance: public ThirdPersonAnimationInstance
 {
 public:
-	Struct AthenaAnimationSkeletonAIFastPathData                 SkeletonAIFastPathData;                            // 0x4270(0x4)
-	Class NPCHeldObjectData*                                     HeldObjectList;                                    // 0x4278(0x8)
-	Class Actor*                                                 LeftHandObject;                                    // 0x4280(0x8)
-	Class Actor*                                                 RightHandObject;                                   // 0x4288(0x8)
-	float                                                        ObjectOverlayBlendOutTime;                         // 0x4290(0x4)
-	Class AthenaAnimationCustomSkeletonAnimationData*            CustomAnimationData;                               // 0x4298(0x8)
-	Struct AthenaAnimationCustomSkeletonAnimationBlueprintData   CustomAnimationBlueprintData;                      // 0x42a0(0x58)
-	byte                                                         PreviousCustomAnimationState;                      // 0x42f8(0x1)
-	Class AnimMontage*                                           CustomAnimationCurrentMontage;                     // 0x4300(0x8)
+	Struct AthenaAnimationSkeletonAIFastPathData                 SkeletonAIFastPathData;                            // 0x42d8(0x4)
+	Class NPCHeldObjectData*                                     HeldObjectList;                                    // 0x42e0(0x8)
+	Class Actor*                                                 LeftHandObject;                                    // 0x42e8(0x8)
+	Class Actor*                                                 RightHandObject;                                   // 0x42f0(0x8)
+	float                                                        ObjectOverlayBlendOutTime;                         // 0x42f8(0x4)
+	Class AthenaAnimationCustomSkeletonAnimationData*            CustomAnimationData;                               // 0x4300(0x8)
+	Struct AthenaAnimationCustomSkeletonAnimationBlueprintData   CustomAnimationBlueprintData;                      // 0x4308(0x58)
+	byte                                                         PreviousCustomAnimationState;                      // 0x4360(0x1)
+	Class AnimMontage*                                           CustomAnimationCurrentMontage;                     // 0x4368(0x8)
 };
 
 
@@ -1930,11 +1934,11 @@ public:
 };
 
 
-// Size 0x100
+// Size 0xf0
 class AthenaGhostPlayerCharacter: public AthenaPlayerCharacter
 {
 public:
-	Class GhostShipTickManager*                                  GhostShipTickManager;                              // 0x1bf0(0x8)
+	Class GhostShipTickManager*                                  GhostShipTickManager;                              // 0x1c78(0x8)
 };
 
 
@@ -1959,8 +1963,8 @@ public:
 class AthenaPlayerCharacterMock: public AthenaPlayerCharacter
 {
 public:
-	Class AICreatureMovementModifierParamsDataAsset*             PetMovementParamsDataAsset;                        // 0x1bf0(0x8)
-	bool                                                         AllowedToSwim;                                     // 0x1bf8(0x1)
+	Class AICreatureMovementModifierParamsDataAsset*             PetMovementParamsDataAsset;                        // 0x1c78(0x8)
+	bool                                                         AllowedToSwim;                                     // 0x1c80(0x1)
 };
 
 
@@ -1968,7 +1972,7 @@ public:
 class AthenaPlayerCharacterUnitTestMock: public AthenaPlayerCharacterMock
 {
 public:
-	class                                                        ExpectedActionStateId;                             // 0x1d60(0x8)
+	class                                                        ExpectedActionStateId;                             // 0x1de8(0x8)
 };
 
 
@@ -2092,13 +2096,13 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x60
 class AthenaTavernPlayerCharacter: public AthenaPlayerCharacter
 {
 public:
-	Class AICreatureMovementModifierParamsDataAsset*             ArenaTavernPetMovementData;                        // 0x1b60(0x8)
-	Class AthenaPlayerController*                                PlayerController;                                  // 0x1b98(0x8)
-	bool                                                         VoteForRivalsHasPassed;                            // 0x1bc0(0x1)
+	Class AICreatureMovementModifierParamsDataAsset*             ArenaTavernPetMovementData;                        // 0x1be8(0x8)
+	Class AthenaPlayerController*                                PlayerController;                                  // 0x1c20(0x8)
+	bool                                                         VoteForRivalsHasPassed;                            // 0x1c48(0x1)
 };
 
 
@@ -2428,20 +2432,6 @@ public:
 class AthenaGameplayDebuggingHUDComponent: public GameplayDebuggingHUDComponent
 {
 public:
-};
-
-
-// Size 0x198
-class GameNarrationCoordinator: public Object
-{
-public:
-	Class WwiseEvent*                                            NarrationSpeakEvent;                               // 0x28(0x8)
-	Struct WwiseEmitter                                          Emitter;                                           // 0x38(0x20)
-	Struct FString                                               CachedPreferredVoice;                              // 0x190(0x10)
-	Struct FString                                               CachedLanguage;                                    // 0x1a0(0x10)
-	int                                                          CachedGender;                                      // 0x1b0(0x4)
-	bool                                                         IsNarrationSettingEnabled;                         // 0x1b4(0x1)
-	int                                                          NarrationOverride;                                 // 0x1b8(0x4)
 };
 
 
@@ -2819,12 +2809,13 @@ public:
 	bool                                                         IsEmergent;                                        // 0x118(0x1)
 	bool                                                         IsTale;                                            // 0x119(0x1)
 	bool                                                         IsStarlightTale;                                   // 0x11a(0x1)
-	bool                                                         IsAdventure;                                       // 0x11b(0x1)
-	bool                                                         IsCrossWorld;                                      // 0x11c(0x1)
-	bool                                                         IsAthenaVoyage2;                                   // 0x11d(0x1)
-	Struct ViewVoyageBanners                                     ViewVoyageBanners;                                 // 0x11e(0x2)
-	bool                                                         DoNotNotifyParticipantsOnVoyageComplete;           // 0x120(0x1)
-	bool                                                         DoNotNotifyParticipantsOfQuestPages;               // 0x121(0x1)
+	bool                                                         IsUtilityVoyage;                                   // 0x11b(0x1)
+	bool                                                         IsAdventure;                                       // 0x11c(0x1)
+	bool                                                         IsCrossWorld;                                      // 0x11d(0x1)
+	bool                                                         IsAthenaVoyage2;                                   // 0x11e(0x1)
+	Struct ViewVoyageBanners                                     ViewVoyageBanners;                                 // 0x11f(0x2)
+	bool                                                         DoNotNotifyParticipantsOnVoyageComplete;           // 0x121(0x1)
+	bool                                                         DoNotNotifyParticipantsOfQuestPages;               // 0x122(0x1)
 	int                                                          Rank;                                              // 0x124(0x4)
 	TArray<Struct PlayerStat>                                    VoyageCompletionStats;                             // 0x128(0x10)
 	TArray<Struct PlayerStat>                                    ReapersMarkCompletionStats;                        // 0x138(0x10)
@@ -2944,7 +2935,7 @@ public:
 };
 
 
-// Size 0xdb8
+// Size 0xdc0
 class AthenaPlayerController: public PlayerController
 {
 public:
@@ -2980,20 +2971,21 @@ public:
 	Class PlayerActivityComponent*                               PlayerActivityComponent;                           // 0x8c0(0x8)
 	Class IslandEventTrackerComponent*                           IslandEventTrackerComponent;                       // 0x8c8(0x8)
 	Class CampaignComponent*                                     CampaignComponent;                                 // 0x8d0(0x8)
-	float                                                        InputRawYawScale;                                  // 0x8d8(0x4)
-	float                                                        InputRawPitchScale;                                // 0x8dc(0x4)
-	Struct InventoryMemory                                       InventoryMemory;                                   // 0x8e0(0x50)
-	Class CinematicCameraController*                             CinematicCameraController;                         // 0x930(0x8)
-	Struct Guid                                                  ClientSessionId;                                   // 0x13b8(0x10)
-	Class PromptsLocalService*                                   PromptsLocalService;                               // 0x1438(0x8)
-	Class CurveFloat*                                            AutoCentreCurve;                                   // 0x1440(0x8)
-	Struct Vector                                                CinematicCameraControllerLocation;                 // 0x1460(0xc)
-	Struct Rotator                                               CinematicCameraControllerRotation;                 // 0x146c(0xc)
-	Struct PirateIdentity                                        PirateIdentity;                                    // 0x1478(0x78)
-	byte                                                         DeathFlameOfFateType;                              // 0x14f0(0x1)
-	byte                                                         FlameOfFateType;                                   // 0x14f1(0x1)
-	Class IndividualReplicationChannel*                          IndividualReplicationChannel;                      // 0x14f8(0x8)
-	Struct FString                                               DebugServerMigrationEndpoint;                      // 0x1518(0x10)
+	Class TaleQuestQueryableStatesAccessComponent*               TaleQuestQueryableStatesAccessComponent;           // 0x8d8(0x8)
+	float                                                        InputRawYawScale;                                  // 0x8e0(0x4)
+	float                                                        InputRawPitchScale;                                // 0x8e4(0x4)
+	Struct InventoryMemory                                       InventoryMemory;                                   // 0x8e8(0x50)
+	Class CinematicCameraController*                             CinematicCameraController;                         // 0x938(0x8)
+	Struct Guid                                                  ClientSessionId;                                   // 0x13c0(0x10)
+	Class PromptsLocalService*                                   PromptsLocalService;                               // 0x1440(0x8)
+	Class CurveFloat*                                            AutoCentreCurve;                                   // 0x1448(0x8)
+	Struct Vector                                                CinematicCameraControllerLocation;                 // 0x1468(0xc)
+	Struct Rotator                                               CinematicCameraControllerRotation;                 // 0x1474(0xc)
+	Struct PirateIdentity                                        PirateIdentity;                                    // 0x1480(0x78)
+	byte                                                         DeathFlameOfFateType;                              // 0x14f8(0x1)
+	byte                                                         FlameOfFateType;                                   // 0x14f9(0x1)
+	Class IndividualReplicationChannel*                          IndividualReplicationChannel;                      // 0x1500(0x8)
+	Struct FString                                               DebugServerMigrationEndpoint;                      // 0x1520(0x10)
 };
 
 
@@ -3001,8 +2993,8 @@ public:
 class OnlineAthenaPlayerController: public AthenaPlayerController
 {
 public:
-	Struct MysteriousNotesCompletionEventsModelEntry             LogoutNoteCompletionIdent;                         // 0x1530(0x8)
-	bool                                                         IdleDisconnectEnabled;                             // 0x1551(0x1)
+	Struct MysteriousNotesCompletionEventsModelEntry             LogoutNoteCompletionIdent;                         // 0x1538(0x8)
+	bool                                                         IdleDisconnectEnabled;                             // 0x1559(0x1)
 };
 
 
@@ -3010,7 +3002,7 @@ public:
 class TestAthenaPlayerController: public AthenaPlayerController
 {
 public:
-	Class ForceFeedbackEffect*                                   LastReceivedForceFeedbackEffect;                   // 0x1528(0x8)
+	Class ForceFeedbackEffect*                                   LastReceivedForceFeedbackEffect;                   // 0x1530(0x8)
 };
 
 
@@ -4073,11 +4065,11 @@ class QuestBook: public SkeletalMeshWieldableItem
 {
 public:
 	Class InventoryItemComponent*                                InventoryItem;                                     // 0x798(0x8)
-	Struct QuestBookRepInfo                                      ReplicationInfo;                                   // 0x7b0(0x28)
-	Class QuestBookPageList*                                     PageList;                                          // 0x7d8(0x8)
-	class                                                        RemapperClass;                                     // 0x830(0x8)
-	Struct QuestBookMaterialHandler                              MaterialHandler;                                   // 0x838(0x140)
-	float                                                        ExtraPageTurnDurationForForceRedraw;               // 0x978(0x4)
+	Struct QuestBookMaterialHandler                              MaterialHandler;                                   // 0x800(0x140)
+	float                                                        ExtraPageTurnDurationForForceRedraw;               // 0x940(0x4)
+	Struct QuestBookRepInfo                                      ReplicationInfo;                                   // 0x948(0x28)
+	Class QuestBookPageList*                                     PageList;                                          // 0x970(0x8)
+	class                                                        RemapperClass;                                     // 0x978(0x8)
 	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x980(0x8)
 	Class DirectionalLightComponent*                             DirectionalLightComponent;                         // 0x988(0x8)
 	float                                                        ShadowCascadeDistributionExponentWhenUsing;        // 0x990(0x4)
@@ -4518,26 +4510,26 @@ public:
 class Ship: public Actor
 {
 public:
-	Struct ShipPartConnections                                   PartConnections;                                   // 0x4a0(0x98)
-	Class StaticMeshComponent*                                   BoatCollision;                                     // 0x538(0x8)
-	Class BasisComponent*                                        BoatBasis;                                         // 0x540(0x8)
-	Class StaticMeshComponent*                                   OverlapHit;                                        // 0x548(0x8)
-	Class StaticMeshComponent*                                   BelowDeckVolume;                                   // 0x550(0x8)
-	Class StaticMeshComponent*                                   CabinVolume;                                       // 0x558(0x8)
-	Struct ObjectMessagingDispatcher                             ObjectMessageDispatcher;                           // 0x560(0xa0)
-	Class TeleportLocationRetrievalComponent*                    TeleportLocationRetrievalComponent;                // 0x600(0x8)
-	Class ChildActorComponent*                                   ShipInternalWaterComponent;                        // 0x608(0x8)
-	Class SinkingComponent*                                      SinkingComponent;                                  // 0x610(0x8)
-	Class ShipHullCollisionComponent*                            HullCollisionComponent;                            // 0x618(0x8)
-	Class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x620(0x8)
-	Class ShipStuckDetectionComponent*                           StuckDetectionComponent;                           // 0x628(0x8)
-	Class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x630(0x8)
-	Class StatusEffectPersistenceComponent*                      StatusEffectPersistenceComponent;                  // 0x638(0x8)
-	Class ShipCurseComponent*                                    ShipCurseComponent;                                // 0x640(0x8)
-	Class AIOnShipManagerComponent*                              AIOnShipManagerComponent;                          // 0x648(0x8)
-	Class InstancedNavMeshComponent*                             InstancedNavMeshComponent;                         // 0x650(0x8)
-	Class DockableComponent*                                     DockableComponent;                                 // 0x658(0x8)
-	Class InvasionBattleBoundsComponent*                         InvasionBattleBoundsComponent;                     // 0x660(0x8)
+	Struct ShipPartConnections                                   PartConnections;                                   // 0x4a8(0x98)
+	Class StaticMeshComponent*                                   BoatCollision;                                     // 0x540(0x8)
+	Class BasisComponent*                                        BoatBasis;                                         // 0x548(0x8)
+	Class StaticMeshComponent*                                   OverlapHit;                                        // 0x550(0x8)
+	Class StaticMeshComponent*                                   BelowDeckVolume;                                   // 0x558(0x8)
+	Class StaticMeshComponent*                                   CabinVolume;                                       // 0x560(0x8)
+	Struct ObjectMessagingDispatcher                             ObjectMessageDispatcher;                           // 0x568(0xa0)
+	Class TeleportLocationRetrievalComponent*                    TeleportLocationRetrievalComponent;                // 0x608(0x8)
+	Class ChildActorComponent*                                   ShipInternalWaterComponent;                        // 0x610(0x8)
+	Class SinkingComponent*                                      SinkingComponent;                                  // 0x618(0x8)
+	Class ShipHullCollisionComponent*                            HullCollisionComponent;                            // 0x620(0x8)
+	Class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x628(0x8)
+	Class ShipStuckDetectionComponent*                           StuckDetectionComponent;                           // 0x630(0x8)
+	Class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x638(0x8)
+	Class StatusEffectPersistenceComponent*                      StatusEffectPersistenceComponent;                  // 0x640(0x8)
+	Class ShipCurseComponent*                                    ShipCurseComponent;                                // 0x648(0x8)
+	Class AIOnShipManagerComponent*                              AIOnShipManagerComponent;                          // 0x650(0x8)
+	Class InstancedNavMeshComponent*                             InstancedNavMeshComponent;                         // 0x658(0x8)
+	Class DockableComponent*                                     DockableComponent;                                 // 0x660(0x8)
+	Class InvasionBattleBoundsComponent*                         InvasionBattleBoundsComponent;                     // 0x668(0x8)
 	Struct WaterBuoyancy                                         Buoyancy;                                          // 0x670(0x130)
 	Class CrewOwnershipComponent*                                CrewOwnershipComponent;                            // 0x7a0(0x8)
 	Class OnboardCharacterTrackerComponent*                      OnboardCharacterTrackerComponent;                  // 0x7a8(0x8)
@@ -4624,8 +4616,9 @@ public:
 	Class ShipEntitlementProcessingPolicyDataAsset*              ShipEntitlementProcessingPolicyDataAsset;          // 0x1068(0x8)
 	bool                                                         HasEverStartedSailing;                             // 0x1071(0x1)
 	bool                                                         EmissaryFlagActive;                                // 0x1072(0x1)
-	byte                                                         SurfacingState;                                    // 0x1073(0x1)
-	double                                                       StartedResurfacingTimeStamp;                       // 0x1078(0x8)
+	bool                                                         InTunnelOfTheDamned;                               // 0x1073(0x1)
+	byte                                                         SurfacingState;                                    // 0x1074(0x1)
+	double                                                       FinishedResurfacingTimeStamp;                      // 0x1078(0x8)
 	TArray<class MobileInstancedStaticMeshComponent*>            InstancedMeshes;                                   // 0x1080(0x10)
 	class                                                        ConstraintBudget;                                  // 0x1090(0x8)
 	float                                                        ScuttleTime;                                       // 0x1604(0x4)
@@ -5352,13 +5345,12 @@ public:
 };
 
 
-// Size 0x158
+// Size 0x148
 class CargoRunParticipantComponent: public ActorComponent
 {
 public:
 	class                                                        ConditionalStatForBootyHandIn;                     // 0xd0(0x8)
 	class                                                        Company;                                           // 0xd8(0x8)
-	TArray<Struct Guid>                                          CrewsWithPickUpData;                               // 0x1c0(0x10)
 };
 
 
@@ -6168,6 +6160,41 @@ public:
 };
 
 
+// Size 0xb8
+class FrontendShipPreview: public Actor
+{
+public:
+	Class SceneComponent*                                        Root;                                              // 0x3c8(0x8)
+	Class ShipLiveryComponent*                                   LiveryComponent;                                   // 0x3d0(0x8)
+	Class ReplicatedShipPartCustomizationComponent*              HullLiveryCustomizationComponent;                  // 0x3d8(0x8)
+	Class ReplicatedShipPartCustomizationComponent*              SailsLiveryCustomizationComponent;                 // 0x3e0(0x8)
+	Class ReplicatedShipPartCustomizationComponent*              CannonEnchantmentCustomizationComponent;           // 0x3e8(0x8)
+	Class ChildActorComponent*                                   MastChildActorComponent;                           // 0x3f0(0x8)
+	Class ChildActorComponent*                                   WheelChildActorComponent;                          // 0x3f8(0x8)
+	Class ChildActorComponent*                                   CapstanChildActorComponent;                        // 0x400(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentLeft1;                    // 0x408(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentLeft2;                    // 0x410(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentLeft3;                    // 0x418(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentLeft4;                    // 0x420(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentRight1;                   // 0x428(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentRight2;                   // 0x430(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentRight3;                   // 0x438(0x8)
+	Class ChildActorComponent*                                   CannonChildActorComponentRight4;                   // 0x440(0x8)
+	TArray<class ChildActorComponent*>                           CannonComponents;                                  // 0x448(0x10)
+	Class ShipCustomizationInfo*                                 ShipCustomizationInfo;                             // 0x458(0x8)
+	struct FName                                                 Category;                                          // 0x460(0x8)
+};
+
+
+// Size 0x68
+class ShipPreviewComponent: public CoherentUIGTRenderToTextureLiveView
+{
+public:
+	Struct IntPoint                                              DefaultResolution;                                 // 0x120(0x8)
+	Class RenderToTextureSceneDetails*                           Details;                                           // 0x128(0x8)
+};
+
+
 // Size 0x68
 class UIInputForwardComponent: public ActorComponent
 {
@@ -6176,7 +6203,7 @@ public:
 };
 
 
-// Size 0x150
+// Size 0x158
 class FrontendHUD: public CoherentBaseHUD
 {
 public:
@@ -6189,11 +6216,12 @@ public:
 	Class FrontendPremiumShopViewModelComponent*                 PremiumShopViewModelComponent;                     // 0x5a8(0x8)
 	Class PiratePreviewComponentFrontend*                        PiratePreviewComponent;                            // 0x5b0(0x8)
 	Class ItemPreviewComponent*                                  ItemPreviewComponent;                              // 0x5b8(0x8)
-	Class HttpClientComponent*                                   HttpClientComponent;                               // 0x5c0(0x8)
-	Class UIDataRequestComponent*                                UIDataRequestComponent;                            // 0x5c8(0x8)
-	Class FrontendEntitlementInformationComponent*               FrontendEntitlementInformationComponent;           // 0x5d0(0x8)
-	Class CoherentToWwiseEventComponent*                         CoherentToWwiseEventComponent;                     // 0x5e0(0x8)
-	Class WwiseEvent*                                            PressAnyButtonSFX;                                 // 0x5e8(0x8)
+	Class ShipPreviewComponent*                                  ShipPreviewComponent;                              // 0x5c0(0x8)
+	Class HttpClientComponent*                                   HttpClientComponent;                               // 0x5c8(0x8)
+	Class UIDataRequestComponent*                                UIDataRequestComponent;                            // 0x5d0(0x8)
+	Class FrontendEntitlementInformationComponent*               FrontendEntitlementInformationComponent;           // 0x5d8(0x8)
+	Class CoherentToWwiseEventComponent*                         CoherentToWwiseEventComponent;                     // 0x5e8(0x8)
+	Class WwiseEvent*                                            PressAnyButtonSFX;                                 // 0x5f0(0x8)
 };
 
 
@@ -6270,7 +6298,7 @@ public:
 };
 
 
-// Size 0x1b0
+// Size 0x260
 class CoherentUIGTTooltipComponent: public CoherentUIGTAtlasComponent
 {
 public:
@@ -6443,16 +6471,16 @@ public:
 };
 
 
-// Size 0x170
+// Size 0x188
 class CompanyNPCComponent: public ActorComponent
 {
 public:
 	class                                                        Company;                                           // 0x100(0x8)
-	TArray<Class SpecifiedItemsToPurchase>                       SpecifiedItemsToPurchase;                          // 0x108(0x10)
-	Struct FText                                                 SellSpecificItemText;                              // 0x118(0x38)
-	struct FName                                                 NPCName;                                           // 0x150(0x8)
-	float                                                        HoldToHandInBootyDuration;                         // 0x158(0x4)
-	class                                                        ConditionalStatForBootyHandIn;                     // 0x160(0x8)
+	Struct FText                                                 SellSpecificItemText;                              // 0x108(0x38)
+	struct FName                                                 NPCName;                                           // 0x140(0x8)
+	float                                                        HoldToHandInBootyDuration;                         // 0x148(0x4)
+	class                                                        ConditionalStatForBootyHandIn;                     // 0x150(0x8)
+	TArray<Class SpecifiedItemsToPurchase>                       SpecifiedItemsToPurchase;                          // 0x238(0x10)
 };
 
 
@@ -6460,8 +6488,8 @@ public:
 class SovereignNPCComponent: public CompanyNPCComponent
 {
 public:
-	TArray<Class AssociatedCompanies>                            AssociatedCompanies;                               // 0x240(0x10)
-	Class SovereignData*                                         SovereignData;                                     // 0x250(0x8)
+	TArray<Class AssociatedCompanies>                            AssociatedCompanies;                               // 0x258(0x10)
+	Class SovereignData*                                         SovereignData;                                     // 0x268(0x8)
 };
 
 
@@ -7243,11 +7271,11 @@ public:
 	Class SceneComponent*                                        KrakenRoot;                                        // 0x3f0(0x8)
 	Class KrakenActionCoordinatorComponent*                      KrakenActionCoordinator;                           // 0x3f8(0x8)
 	TArray<Struct CoordinatedKrakenPhaseAssetEntry>              PhaseAssets;                                       // 0x400(0x10)
-	TArray<Struct CoordinatedKrakenTentacleSpawnInfo>            TentacleSpawnInfo;                                 // 0x438(0x10)
-	Struct Transform                                             HeadSpawnTransform;                                // 0x450(0x30)
-	Class KrakenHead*                                            SpawnedHead;                                       // 0x480(0x8)
-	Class Actor*                                                 TargetActor;                                       // 0x488(0x8)
-	Class NetworkClusterEventRoom*                               NetworkClusterEventRoom;                           // 0x490(0x8)
+	Struct Transform                                             HeadSpawnTransform;                                // 0x440(0x30)
+	Class KrakenHead*                                            SpawnedHead;                                       // 0x470(0x8)
+	Class NetworkClusterEventRoom*                               NetworkClusterEventRoom;                           // 0x478(0x8)
+	Class Actor*                                                 TargetActor;                                       // 0x480(0x8)
+	TArray<Struct CoordinatedKrakenTentacleSpawnInfo>            TentacleSpawnInfo;                                 // 0x488(0x10)
 	byte                                                         ReplicatedTargetActorOverride;                     // 0x498(0x1)
 };
 
@@ -7406,7 +7434,7 @@ class ShipCustomizationLoadoutComponent: public ActorComponent
 public:
 	Struct ShipCustomizationLoadout                              Loadout;                                           // 0xe8(0x38)
 	bool                                                         SavedCustomizationsPreviouslyApplied;              // 0x120(0x1)
-	Class Ship*                                                  Ship;                                              // 0x128(0x8)
+	Class Actor*                                                 Ship;                                              // 0x128(0x8)
 	class                                                        ShipSize;                                          // 0x130(0x8)
 	Struct ShipCustomizationLoadoutPartCustomizations            ActivePartCustomizations;                          // 0x188(0x10)
 	Class ShipCustomizationSettings*                             ShipCustomizationSettings;                         // 0x1c8(0x8)
@@ -7426,38 +7454,38 @@ public:
 class CrewShipManifest: public Actor
 {
 public:
-	TArray<Struct CommodityTrackingModel>                        CommodityPurchases;                                // 0x3e8(0x10)
-	TArray<Struct CommodityRedemptionTrackingModel>              CommodityRedemptions;                              // 0x3f8(0x10)
-	Class NPCIdAsset*                                            NPCIdList;                                         // 0x410(0x8)
-	Struct VoteSessionData                                       VoyageSelectionVoteData;                           // 0x498(0x28)
-	Struct VoteSessionData                                       VoyageCancelVoteData;                              // 0x500(0x28)
-	Struct VoteSessionData                                       TaleSelectionVoteData;                             // 0x568(0x28)
-	Struct VoteSessionData                                       TaleCancelVoteData;                                // 0x5d0(0x28)
-	class                                                        AssociatedShipSize;                                // 0x728(0x8)
-	Struct Guid                                                  AssociatedCrew;                                    // 0x730(0x10)
-	TArray<Struct ProposedVoyageEntry>                           ProposedVoyages;                                   // 0x740(0x10)
-	Class VoyageProposalDesc*                                    CurrentActiveVoyage;                               // 0x760(0x8)
-	TArray<Struct BeckonTag>                                     CrewBeckonTags;                                    // 0x768(0x10)
-	TArray<Interface VoyageVoteUpdaters>                         VoyageVoteUpdaters;                                // 0x778(0x10)
-	TArray<Interface VoyageCancellers>                           VoyageCancellers;                                  // 0x788(0x10)
-	TArray<Struct ProposedTaleEntry>                             ProposedTales;                                     // 0x798(0x10)
-	Class VoyageDescDataAsset*                                   CurrentActiveTale;                                 // 0x7b8(0x8)
-	int                                                          ReapersVoyageCount;                                // 0x7c0(0x4)
-	TArray<Interface TaleVoteUpdaters>                           TaleVoteUpdaters;                                  // 0x7c8(0x10)
-	TArray<Interface TaleCancellers>                             TaleCancellers;                                    // 0x7d8(0x10)
-	Class ShipCustomizationLoadoutComponent*                     ShipCustomizationLoadoutComponent;                 // 0x7e8(0x8)
-	Class TrinketLoadoutComponent*                               TrinketLoadoutComponent;                           // 0x7f0(0x8)
-	Class ShipEntitlementComponent*                              ShipEntitlementComponent;                          // 0x7f8(0x8)
-	Class ShipMilestoneEntitlementComponent*                     ShipMilestoneEntitlementComponent;                 // 0x800(0x8)
-	Class ShipPersistenceComponent*                              ShipPersistenceComponent;                          // 0x808(0x8)
-	Class Company*                                               CurrentActiveEmissaryCompany;                      // 0x8b8(0x8)
-	Struct Guid                                                  CurrentActiveEmissarySessionId;                    // 0x8c0(0x10)
-	int                                                          CurrentEmissaryTotal;                              // 0x8d0(0x4)
-	bool                                                         EmissaryMaxRankQuestBeenRedeemed;                  // 0x8d4(0x1)
-	bool                                                         IsCaptained;                                       // 0x8d5(0x1)
-	bool                                                         IsShipAssociated;                                  // 0x8d6(0x1)
-	bool                                                         IsPendingExCaptainedShipDissociation;              // 0x8d7(0x1)
-	bool                                                         ShouldForceSpawnOnShip;                            // 0x8d8(0x1)
+	Class NPCIdAsset*                                            NPCIdList;                                         // 0x3f0(0x8)
+	class                                                        AssociatedShipSize;                                // 0x668(0x8)
+	TArray<Interface VoyageVoteUpdaters>                         VoyageVoteUpdaters;                                // 0x680(0x10)
+	TArray<Interface VoyageCancellers>                           VoyageCancellers;                                  // 0x690(0x10)
+	TArray<Interface TaleVoteUpdaters>                           TaleVoteUpdaters;                                  // 0x6b0(0x10)
+	TArray<Interface TaleCancellers>                             TaleCancellers;                                    // 0x6c0(0x10)
+	Class ShipCustomizationLoadoutComponent*                     ShipCustomizationLoadoutComponent;                 // 0x6d0(0x8)
+	Class TrinketLoadoutComponent*                               TrinketLoadoutComponent;                           // 0x6d8(0x8)
+	bool                                                         EmissaryMaxRankQuestBeenRedeemed;                  // 0x788(0x1)
+	bool                                                         IsShipAssociated;                                  // 0x789(0x1)
+	bool                                                         IsPendingExCaptainedShipDissociation;              // 0x78a(0x1)
+	bool                                                         ShouldForceSpawnOnShip;                            // 0x78b(0x1)
+	TArray<Struct CommodityTrackingModel>                        CommodityPurchases;                                // 0x7b8(0x10)
+	TArray<Struct CommodityRedemptionTrackingModel>              CommodityRedemptions;                              // 0x7c8(0x10)
+	Struct VoteSessionData                                       VoyageSelectionVoteData;                           // 0x7d8(0x28)
+	Struct VoteSessionData                                       VoyageCancelVoteData;                              // 0x800(0x28)
+	Struct VoteSessionData                                       TaleSelectionVoteData;                             // 0x828(0x28)
+	Struct VoteSessionData                                       TaleCancelVoteData;                                // 0x850(0x28)
+	Struct Guid                                                  AssociatedCrew;                                    // 0x878(0x10)
+	TArray<Struct ProposedVoyageEntry>                           ProposedVoyages;                                   // 0x888(0x10)
+	Class VoyageProposalDesc*                                    CurrentActiveVoyage;                               // 0x898(0x8)
+	TArray<Struct BeckonTag>                                     CrewBeckonTags;                                    // 0x8a0(0x10)
+	TArray<Struct ProposedTaleEntry>                             ProposedTales;                                     // 0x8b0(0x10)
+	Class VoyageDescDataAsset*                                   CurrentActiveTale;                                 // 0x8c0(0x8)
+	int                                                          ReapersVoyageCount;                                // 0x8c8(0x4)
+	Class ShipEntitlementComponent*                              ShipEntitlementComponent;                          // 0x8d0(0x8)
+	Class ShipMilestoneEntitlementComponent*                     ShipMilestoneEntitlementComponent;                 // 0x8d8(0x8)
+	Class ShipPersistenceComponent*                              ShipPersistenceComponent;                          // 0x8e0(0x8)
+	Class Company*                                               CurrentActiveEmissaryCompany;                      // 0x8e8(0x8)
+	Struct Guid                                                  CurrentActiveEmissarySessionId;                    // 0x8f0(0x10)
+	int                                                          CurrentEmissaryTotal;                              // 0x908(0x4)
+	bool                                                         IsCaptained;                                       // 0x90c(0x1)
 };
 
 
@@ -8623,6 +8651,14 @@ public:
 
 
 // Size 0x8
+class EnvQueryTest_InIslandShipDiveAndResurfaceExclusionZoneRadius: public EnvQueryTest
+{
+public:
+	float                                                        Radius;                                            // 0x170(0x4)
+};
+
+
+// Size 0x8
 class EnvQueryTest_InKrakenZone: public EnvQueryTest
 {
 public:
@@ -9111,29 +9147,22 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class StoryDrivenFogBankDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
 	TArray<Struct FogBankStoryRelatedSettings>                   StoryResponses;                                    // 0x38(0x10)
+	TArray<class StoryDrivenFogBankDataAsset*>                   AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x10
-class StoryDrivenFogBankCollectionDataAsset: public DataAsset
-{
-public:
-	TArray<class StoryDrivenFogBankDataAsset*>                   StoryDrivenFogBankAssetList;                       // 0x28(0x10)
-};
-
-
-// Size 0x198
+// Size 0x190
 class FogBank: public FogVolume
 {
 public:
 	Class FogBankDataAsset*                                      FogBankDataAsset;                                  // 0x3f0(0x8)
-	Class StoryDrivenFogBankCollectionDataAsset*                 StoryDrivenFogBankAssetsCollection;                // 0x3f8(0x8)
+	Class StoryDrivenFogBankDataAsset*                           StoryDrivenFogBankAssetsCollection;                // 0x3f8(0x8)
 	Struct FogBankSettings                                       Settings;                                          // 0x400(0x4c)
 };
 
@@ -10418,7 +10447,7 @@ public:
 };
 
 
-// Size 0x640
+// Size 0x638
 class HumanoidActionStateCreatorDefinition: public ActionStateCreatorDefinition
 {
 public:
@@ -10460,13 +10489,13 @@ public:
 	Struct SwallowedByKrakenActionStateParams                    SwallowedByKrakenParams;                           // 0x8b4(0x8)
 	Struct LinearTransitionActionStateParams                     LinearTransitionParams;                            // 0x8bc(0x14)
 	Struct WaterSlideActionStateParams                           WaterSlideParams;                                  // 0x8d0(0x24)
-	Struct EnterTunnelOfTheDamnedActionStateParams               EnterTunnelOfTheDamnedParams;                      // 0x8f4(0x20)
-	Struct EjectFromTunnelOfTheDamnedActionStateParams           EjectFromTunnelOfTheDamnedParams;                  // 0x914(0x20)
-	Struct ExitTunnelOfTheDamnedActionStateParams                ExitTunnelOfTheDamnedParams;                       // 0x934(0x14)
-	Struct ArrivalTunnelOfTheDamnedActionStateParams             ArrivalTunnelOfTheDamnedParams;                    // 0x948(0x24)
-	Struct SinkingTunnelOfTheDamnedActionStateParams             SinkingTunnelOfTheDamnedParams;                    // 0x96c(0x20)
-	Struct CaptainsLogInteractableActionStateParams              CaptainsLogParams;                                 // 0x990(0x28)
-	Struct AttachedToObjectActionStateParams                     AttachedToObjectParams;                            // 0x9b8(0x2c)
+	Struct EnterTunnelOfTheDamnedActionStateParams               EnterTunnelOfTheDamnedParams;                      // 0x8f4(0x1c)
+	Struct EjectFromTunnelOfTheDamnedActionStateParams           EjectFromTunnelOfTheDamnedParams;                  // 0x910(0x20)
+	Struct ExitTunnelOfTheDamnedActionStateParams                ExitTunnelOfTheDamnedParams;                       // 0x930(0x14)
+	Struct ArrivalTunnelOfTheDamnedActionStateParams             ArrivalTunnelOfTheDamnedParams;                    // 0x944(0x20)
+	Struct SinkingTunnelOfTheDamnedActionStateParams             SinkingTunnelOfTheDamnedParams;                    // 0x964(0x20)
+	Struct CaptainsLogInteractableActionStateParams              CaptainsLogParams;                                 // 0x988(0x28)
+	Struct AttachedToObjectActionStateParams                     AttachedToObjectParams;                            // 0x9b0(0x2c)
 };
 
 
@@ -12147,31 +12176,31 @@ public:
 };
 
 
-// Size 0x170
+// Size 0x180
 class LaunchableShotActionComponent: public ItemActionComponent
 {
 public:
 	bool                                                         InterruptActionOnProjectileDestroyed;              // 0x2d0(0x1)
 	Class LaunchableProjectile*                                  CurrentProjectile;                                 // 0x2d8(0x8)
-	Struct LaunchableProjectileState                             LaunchableProjectileState;                         // 0x2e0(0x40)
-	bool                                                         OverrideProjectileCollisionBeforeFiring;           // 0x324(0x1)
-	Struct CollisionProfileName                                  ProjectileCollisionProfileOverride;                // 0x328(0x8)
-	Struct CollisionProfileName                                  ProjectileCollisionProfile;                        // 0x330(0x8)
-	class                                                        ProjectileType;                                    // 0x338(0x8)
-	int                                                          AmmoCost;                                          // 0x340(0x4)
-	bool                                                         ShouldProjectileAttachToWeaponOnSpawn;             // 0x344(0x1)
-	bool                                                         ShouldConsumeAmmoWhenUsedByAI;                     // 0x345(0x1)
-	bool                                                         ShouldConsumeAmmoWhenUsedByPlayers;                // 0x346(0x1)
-	Struct Vector                                                ProjectileRelativeAimOffset;                       // 0x348(0xc)
-	float                                                        MaxAcceptableAttackTimeStampDelta;                 // 0x354(0x4)
-	Class LaunchableShotComponentAudioParams*                    LaunchableAudioParams;                             // 0x380(0x8)
-	Struct WwiseEmitterCreationParams                            FireProjectileSfxParams;                           // 0x388(0x28)
-	struct FName                                                 MuzzleFireVFXSocketName;                           // 0x3b0(0x8)
-	Class Object*                                                MuzzleFireVfxFirst;                                // 0x3b8(0x8)
-	Class Object*                                                MuzzleFireVfxThird;                                // 0x3c0(0x8)
-	Class Object*                                                MuzzleFireVfxLocal;                                // 0x3c8(0x8)
-	Class ForceFeedbackEffect*                                   ActionFireForceFeedback;                           // 0x3d0(0x8)
-	struct FName                                                 ActionFireForceFeedbackTag;                        // 0x3d8(0x8)
+	bool                                                         OverrideProjectileCollisionBeforeFiring;           // 0x2e4(0x1)
+	Struct CollisionProfileName                                  ProjectileCollisionProfileOverride;                // 0x2e8(0x8)
+	Struct CollisionProfileName                                  ProjectileCollisionProfile;                        // 0x2f0(0x8)
+	class                                                        ProjectileType;                                    // 0x2f8(0x8)
+	int                                                          AmmoCost;                                          // 0x300(0x4)
+	bool                                                         ShouldProjectileAttachToWeaponOnSpawn;             // 0x304(0x1)
+	bool                                                         ShouldConsumeAmmoWhenUsedByAI;                     // 0x305(0x1)
+	bool                                                         ShouldConsumeAmmoWhenUsedByPlayers;                // 0x306(0x1)
+	Struct Vector                                                ProjectileRelativeAimOffset;                       // 0x308(0xc)
+	float                                                        MaxAcceptableAttackTimeStampDelta;                 // 0x314(0x4)
+	Class LaunchableShotComponentAudioParams*                    LaunchableAudioParams;                             // 0x358(0x8)
+	Struct WwiseEmitterCreationParams                            FireProjectileSfxParams;                           // 0x360(0x28)
+	struct FName                                                 MuzzleFireVFXSocketName;                           // 0x388(0x8)
+	Class Object*                                                MuzzleFireVfxFirst;                                // 0x390(0x8)
+	Class Object*                                                MuzzleFireVfxThird;                                // 0x398(0x8)
+	Class Object*                                                MuzzleFireVfxLocal;                                // 0x3a0(0x8)
+	Class ForceFeedbackEffect*                                   ActionFireForceFeedback;                           // 0x3a8(0x8)
+	struct FName                                                 ActionFireForceFeedbackTag;                        // 0x3b0(0x8)
+	Struct LaunchableProjectileState                             LaunchableProjectileState;                         // 0x410(0x40)
 };
 
 
@@ -12179,13 +12208,13 @@ public:
 class SirenTridentShotActionComponent: public LaunchableShotActionComponent
 {
 public:
-	float                                                        MaxAcceptableChargeTimeStampDelta;                 // 0x43c(0x4)
-	TArray<class SirenTridentProjectileParams*>                  ProjectileParameters;                              // 0x440(0x10)
-	Class SirenTridentProjectileParams*                          CurrentProjectileParameters;                       // 0x450(0x8)
-	struct FName                                                 ActionSizeChangeForceFeedbackTag;                  // 0x458(0x8)
-	byte                                                         CurrentShotState;                                  // 0x460(0x1)
-	Class SirenTridentProjectile*                                TridentProjectile;                                 // 0x468(0x8)
-	Class SirenTridentShotComponentAudioParams*                  SirenShotActionAudio;                              // 0x470(0x8)
+	float                                                        MaxAcceptableChargeTimeStampDelta;                 // 0x454(0x4)
+	TArray<class SirenTridentProjectileParams*>                  ProjectileParameters;                              // 0x458(0x10)
+	Class SirenTridentProjectileParams*                          CurrentProjectileParameters;                       // 0x468(0x8)
+	struct FName                                                 ActionSizeChangeForceFeedbackTag;                  // 0x470(0x8)
+	byte                                                         CurrentShotState;                                  // 0x478(0x1)
+	Class SirenTridentProjectile*                                TridentProjectile;                                 // 0x480(0x8)
+	Class SirenTridentShotComponentAudioParams*                  SirenShotActionAudio;                              // 0x488(0x8)
 };
 
 
@@ -12747,7 +12776,6 @@ public:
 	float                                                        TrackedBootyItemsUpdateInterval;                   // 0x480(0x4)
 	float                                                        TrackedShipsUpdateInterval;                        // 0x484(0x4)
 	float                                                        TrackedShipDistanceThreshold;                      // 0x488(0x4)
-	byte                                                         MaxFactionStreakNumber;                            // 0x48c(0x1)
 	class                                                        ReapersMarkFlag;                                   // 0x490(0x8)
 	bool                                                         DisplayFactionShips;                               // 0x498(0x1)
 	bool                                                         DisplayTallTaleIcons;                              // 0x499(0x1)
@@ -13673,6 +13701,7 @@ public:
 	float                                                        MaxSpeedScalar;                                    // 0x3e4(0x4)
 	bool                                                         DisableSprint;                                     // 0x3e8(0x1)
 	bool                                                         DisableJump;                                       // 0x3e9(0x1)
+	bool                                                         DisableSwimming;                                   // 0x3ea(0x1)
 	Class SceneComponent*                                        Root;                                              // 0x3f0(0x8)
 	Class PrimitiveComponent*                                    OverlapVolume;                                     // 0x3f8(0x8)
 };
@@ -17397,7 +17426,7 @@ public:
 };
 
 
-// Size 0x110
+// Size 0x1b0
 class ShipHullAudio: public ShipAudio
 {
 public:
@@ -17411,22 +17440,24 @@ public:
 	Class WwiseEvent*                                            WwiseEvent_SuperheatedWater_Stop;                  // 0x490(0x8)
 	Class WwiseEvent*                                            WwiseEvent_ShipSinking_Music;                      // 0x498(0x8)
 	Class WwiseEvent*                                            WwiseEvent_ShroudBreakerShield;                    // 0x4a0(0x8)
-	Class WwiseObjectPoolWrapper*                                WwiseEvent_ShipSinking_Music_Pool;                 // 0x4a8(0x8)
-	Class WwiseObjectPoolWrapper*                                Emitter_MidShip_Pool;                              // 0x4b0(0x8)
-	struct FName                                                 RTPC_ShipRoll;                                     // 0x4b8(0x8)
-	struct FName                                                 RTPC_ShipPitch;                                    // 0x4c0(0x8)
-	struct FName                                                 RTPC_FloodDamage;                                  // 0x4c8(0x8)
-	struct FName                                                 RTPC_ShipVelocity;                                 // 0x4d0(0x8)
-	struct FName                                                 RTPC_ShipStrain;                                   // 0x4d8(0x8)
-	struct FName                                                 RTPC_SuperheatedWaterIntensity;                    // 0x4e0(0x8)
-	float                                                        PositionTolerance;                                 // 0x4e8(0x4)
-	float                                                        MaxVelocity;                                       // 0x4ec(0x4)
-	float                                                        SinkingShipRollThreshold;                          // 0x4f0(0x4)
-	Class SceneComponent*                                        ShipAudioRootComponent;                            // 0x4f8(0x8)
-	TArray<Struct ShipHullAudioData>                             ShipHullAudioDataArray;                            // 0x500(0x10)
-	Class ShipInternalWater*                                     InternalWater;                                     // 0x520(0x8)
-	Struct WwiseEmitter                                          Emitter_MidShip;                                   // 0x528(0x20)
-	Struct WwiseEmitter                                          ShipSinkingMusicEmitter;                           // 0x548(0x20)
+	Class WwiseEvent*                                            WwiseEvent_InvasionShipDive;                       // 0x4a8(0x8)
+	Class WwiseEvent*                                            WwiseEvent_InvasionShipSurface;                    // 0x4b0(0x8)
+	Class WwiseObjectPoolWrapper*                                WwiseEvent_ShipSinking_Music_Pool;                 // 0x4b8(0x8)
+	Class WwiseObjectPoolWrapper*                                Emitter_MidShip_Pool;                              // 0x4c0(0x8)
+	struct FName                                                 RTPC_ShipRoll;                                     // 0x4c8(0x8)
+	struct FName                                                 RTPC_ShipPitch;                                    // 0x4d0(0x8)
+	struct FName                                                 RTPC_FloodDamage;                                  // 0x4d8(0x8)
+	struct FName                                                 RTPC_ShipVelocity;                                 // 0x4e0(0x8)
+	struct FName                                                 RTPC_ShipStrain;                                   // 0x4e8(0x8)
+	struct FName                                                 RTPC_SuperheatedWaterIntensity;                    // 0x4f0(0x8)
+	float                                                        PositionTolerance;                                 // 0x4f8(0x4)
+	float                                                        MaxVelocity;                                       // 0x4fc(0x4)
+	float                                                        SinkingShipRollThreshold;                          // 0x500(0x4)
+	Class SceneComponent*                                        ShipAudioRootComponent;                            // 0x508(0x8)
+	TArray<Struct ShipHullAudioData>                             ShipHullAudioDataArray;                            // 0x510(0x10)
+	Class ShipInternalWater*                                     InternalWater;                                     // 0x5c0(0x8)
+	Struct WwiseEmitter                                          Emitter_MidShip;                                   // 0x5c8(0x20)
+	Struct WwiseEmitter                                          ShipSinkingMusicEmitter;                           // 0x5e8(0x20)
 };
 
 
@@ -17982,11 +18013,11 @@ public:
 	float                                                        ScreenEffectStrengthWhenSicknessActive;            // 0x1c0(0x4)
 	float                                                        ScreenEffectStrengthWhileVomiting;                 // 0x1c4(0x4)
 	float                                                        MaterialEffectStrengthWhenSicknessActive;          // 0x1c8(0x4)
-	float                                                        TargetScreenEffectStrength;                        // 0x1cc(0x4)
-	float                                                        TargetMaterialEffectStrength;                      // 0x1d0(0x4)
-	float                                                        ScreenEffectSpringAcceleration;                    // 0x1d4(0x4)
-	float                                                        MaterialEffectSpringAcceleration;                  // 0x1d8(0x4)
-	bool                                                         CanGetSick;                                        // 0x1dc(0x1)
+	float                                                        ScreenEffectSpringAcceleration;                    // 0x1cc(0x4)
+	float                                                        MaterialEffectSpringAcceleration;                  // 0x1d0(0x4)
+	bool                                                         CanGetSick;                                        // 0x1d4(0x1)
+	float                                                        TargetScreenEffectStrength;                        // 0x220(0x4)
+	float                                                        TargetMaterialEffectStrength;                      // 0x224(0x4)
 };
 
 
@@ -18354,7 +18385,7 @@ public:
 };
 
 
-// Size 0xb0
+// Size 0xe0
 class SpawnItemStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -18364,7 +18395,8 @@ public:
 	Struct FText                                                 CriticalActorLostMessage;                          // 0x90(0x38)
 	struct FName                                                 SocketName;                                        // 0xc8(0x8)
 	Struct QuestVariableActor                                    LocatorVar;                                        // 0xd0(0x30)
-	Struct QuestVariableActor                                    ActorVar;                                          // 0x100(0x30)
+	Struct QuestVariableOrientedPoint                            SpawnPoint;                                        // 0x100(0x30)
+	Struct QuestVariableActor                                    ActorVar;                                          // 0x130(0x30)
 };
 
 
@@ -18546,6 +18578,23 @@ public:
 	Struct QuestVariableText                                     LocalisedEncounterIslandName;                      // 0x118(0x30)
 	Struct QuestVariableBountyTargetArray                        ShipFleetNames;                                    // 0x148(0x30)
 	Struct QuestVariableActor                                    AggressiveGhostShipsEncounterActor;                // 0x178(0x30)
+};
+
+
+// Size 0x8
+class StatFireOnItemNPCHandinComponent: public ActorComponent
+{
+public:
+};
+
+
+// Size 0x18
+class SeaFortStatFireOnItemNPCHandinComponent: public StatFireOnItemNPCHandinComponent
+{
+public:
+	class                                                        BewitchingDoll;                                    // 0xd0(0x8)
+	class                                                        EnchantedDoll;                                     // 0xd8(0x8)
+	byte                                                         SeaFortAlignmentState;                             // 0xe0(0x1)
 };
 
 
@@ -20038,10 +20087,10 @@ public:
 class TankardRefillerComponent: public ActorComponent
 {
 public:
-	int                                                          Capacity;                                          // 0xc8(0x4)
-	byte                                                         ActionDisplayPriority;                             // 0xcc(0x1)
+	byte                                                         ActionDisplayPriority;                             // 0xc8(0x1)
 	class                                                        NotificationInputId;                               // 0xd0(0x8)
-	int                                                          RemainingGrogs;                                    // 0xd8(0x4)
+	int                                                          Capacity;                                          // 0xd8(0x4)
+	int                                                          RemainingGrogs;                                    // 0xdc(0x4)
 };
 
 
@@ -20821,7 +20870,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x38
 class VfxStoryResponseManager: public Actor
 {
 public:
@@ -21188,23 +21237,21 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x30
 class WaitForShipToBeInOpenWaterStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x50
+// Size 0x48
 class WaitForShipToBeInOpenWaterDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        IntervalTimer;                                     // 0x80(0x4)
-	float                                                        LineTraceShipOffsetInMetres;                       // 0x84(0x4)
-	float                                                        LineTraceValidDepthInMetres;                       // 0x88(0x4)
-	float                                                        SafeZoneRadiusOffsetMetres;                        // 0x8c(0x4)
-	bool                                                         ShouldFailTaleOnShipDestroyed;                     // 0x90(0x1)
-	Struct FText                                                 ShipDestroyedFailMessage;                          // 0x98(0x38)
+	float                                                        BufferRadiusInMetres;                              // 0x84(0x4)
+	bool                                                         ShouldFailTaleOnShipDestroyed;                     // 0x88(0x1)
+	Struct FText                                                 ShipDestroyedFailMessage;                          // 0x90(0x38)
 };
 
 
@@ -21293,24 +21340,28 @@ public:
 };
 
 
-// Size 0x3a0
+// Size 0x4a0
 class WarMapProposalContainer: public Actor
 {
 public:
-	TArray<class WarMapInteractionVoteComponent*>                VoteComponents;                                    // 0x3e8(0x10)
-	Class WarMapInteractionComponent*                            InteractionComponent;                              // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   WarMapMesh;                                        // 0x400(0x8)
-	Class MaterialAnimatorComponent*                             MaterialAnimatorComponent;                         // 0x408(0x8)
-	struct FName                                                 OpenScrollMaterialAnimationName;                   // 0x410(0x8)
-	struct FName                                                 CloseScrollMaterialAnimationName;                  // 0x418(0x8)
-	Struct FText                                                 CloseMapInteractionText;                           // 0x420(0x38)
-	class                                                        CloseMapInteractionInput;                          // 0x458(0x8)
-	class                                                        CloseMapHoldInteractionInput;                      // 0x460(0x8)
-	float                                                        CloseMapHoldDuration;                              // 0x468(0x4)
-	Class WwiseEvent*                                            OpenMapSfx;                                        // 0x470(0x8)
-	Class WwiseEvent*                                            CloseMapSfx;                                       // 0x478(0x8)
-	Class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x480(0x8)
-	bool                                                         IsWarMapOpen;                                      // 0x488(0x1)
+	Class SceneComponent*                                        RootSceneComponent;                                // 0x3e8(0x8)
+	TArray<class WarMapInteractionVoteComponent*>                VoteComponents;                                    // 0x3f0(0x10)
+	Class WarMapInteractionComponent*                            InteractionComponent;                              // 0x400(0x8)
+	Class StaticMeshComponent*                                   WarMapMesh;                                        // 0x408(0x8)
+	Class StaticMeshComponent*                                   WarMapMeshHardMode;                                // 0x410(0x8)
+	Class MaterialAnimatorComponent*                             MaterialAnimatorComponent;                         // 0x418(0x8)
+	struct FName                                                 OpenScrollMaterialAnimationName;                   // 0x420(0x8)
+	struct FName                                                 CloseScrollMaterialAnimationName;                  // 0x428(0x8)
+	Struct FText                                                 CloseMapInteractionText;                           // 0x430(0x38)
+	class                                                        CloseMapInteractionInput;                          // 0x468(0x8)
+	class                                                        CloseMapHoldInteractionInput;                      // 0x470(0x8)
+	float                                                        CloseMapHoldDuration;                              // 0x478(0x4)
+	Class WwiseEvent*                                            OpenMapSfx;                                        // 0x480(0x8)
+	Class WwiseEvent*                                            CloseMapSfx;                                       // 0x488(0x8)
+	Class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x490(0x8)
+	bool                                                         IsWarMapOpen;                                      // 0x498(0x1)
+	bool                                                         ShowHardModeVoting;                                // 0x499(0x1)
+	bool                                                         ShipCrewHasJoinedFaction;                          // 0x49a(0x1)
 };
 
 
@@ -22092,14 +22143,28 @@ public:
 };
 
 
+// Size 0x190
+class GameNarrationCoordinator: public Object
+{
+public:
+	Class WwiseEvent*                                            NarrationSpeakEvent;                               // 0x28(0x8)
+	Struct WwiseEmitter                                          Emitter;                                           // 0x30(0x20)
+	Struct FString                                               CachedPreferredVoice;                              // 0x188(0x10)
+	Struct FString                                               CachedLanguage;                                    // 0x198(0x10)
+	int                                                          CachedGender;                                      // 0x1a8(0x4)
+	bool                                                         IsNarrationSettingEnabled;                         // 0x1ac(0x1)
+	int                                                          NarrationOverride;                                 // 0x1b0(0x4)
+};
+
+
 // Size 0x60
 class RenderToTextureMapBase: public TreasureMap
 {
 public:
-	TArray<Struct MapTextureRenderData>                          RenderData;                                        // 0x7c8(0x10)
-	TArray<class Texture*>                                       MapTextures;                                       // 0x7d8(0x10)
-	int                                                          CanvasWidth;                                       // 0x7e8(0x4)
-	int                                                          CanvasHeight;                                      // 0x7ec(0x4)
+	TArray<class Texture*>                                       MapTextures;                                       // 0x7c8(0x10)
+	int                                                          CanvasWidth;                                       // 0x7d8(0x4)
+	int                                                          CanvasHeight;                                      // 0x7dc(0x4)
+	TArray<Struct MapTextureRenderData>                          RenderData;                                        // 0x7e8(0x10)
 };
 
 
@@ -23185,7 +23250,7 @@ public:
 };
 
 
-// Size 0xa0
+// Size 0x98
 class MaterialAnimatorComponent: public ActorComponent
 {
 public:
@@ -24206,7 +24271,7 @@ public:
 	float                                                        HealingRate;                                       // 0xd4(0x4)
 	float                                                        HealingDelayWhenDamaged;                           // 0xd8(0x4)
 	double                                                       UIUpdateThrottleMs;                                // 0xe0(0x8)
-	Struct HealthRegenState                                      RegenerationState;                                 // 0xe8(0x8)
+	Struct HealthRegenState                                      RegenerationState;                                 // 0x120(0x8)
 };
 
 
@@ -24286,6 +24351,13 @@ public:
 
 // Size 0x0
 class AttitudeSource: public Interface
+{
+public:
+};
+
+
+// Size 0x0
+class BlockedInputActionStateId: public ActionStateId
 {
 public:
 };
@@ -25071,11 +25143,11 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x38
 class CaptainsLogPartDescAsset: public ShipPartDescAsset
 {
 public:
-	Struct CaptainsLogPartDesc                                   CaptainsLogPartDesc;                               // 0x28(0x30)
+	Struct CaptainsLogPartDesc                                   CaptainsLogPartDesc;                               // 0x28(0x38)
 };
 
 
@@ -25084,6 +25156,13 @@ class ShipAnnouncementPartDescAsset: public ShipPartDescAsset
 {
 public:
 	Struct ShipAnnouncementPartDesc                              ShipAnnouncementPartDesc;                          // 0x28(0x38)
+};
+
+
+// Size 0x0
+class ShipPartRegistrationInterface: public Interface
+{
+public:
 };
 
 
@@ -25101,17 +25180,16 @@ public:
 };
 
 
-// Size 0x90
+// Size 0x80
 class ShipResurfaceWetnessContainer: public DataAsset
 {
 public:
 	Class ShipResurfaceWetnessActor*                             SpawnedResurfaceVFXInstance;                       // 0x28(0x8)
 	class                                                        LoadedShipResurfaceVFXClass;                       // 0x50(0x8)
-	float                                                        SecondsUntilAddingDeckWater;                       // 0x58(0x4)
-	Struct Vector                                                SurfaceWaterLocation;                              // 0x88(0xc)
-	float                                                        SurfaceWaterRadius;                                // 0x94(0x4)
-	float                                                        SurfaceWaterStrength;                              // 0x98(0x4)
-	Class Actor*                                                 ShipContext;                                       // 0xa0(0x8)
+	Struct Vector                                                SurfaceWaterLocation;                              // 0x80(0xc)
+	float                                                        SurfaceWaterRadius;                                // 0x8c(0x4)
+	float                                                        SurfaceWaterStrength;                              // 0x90(0x4)
+	Class Actor*                                                 ShipContext;                                       // 0x98(0x8)
 };
 
 
@@ -26111,6 +26189,13 @@ class InteractionPrerequisiteBase: public Object
 public:
 	bool                                                         Invert;                                            // 0x28(0x1)
 	Struct FText                                                 CantInteractTooltip;                               // 0x30(0x38)
+};
+
+
+// Size 0x20
+class HasEntitlementPrerequisite: public InteractionPrerequisiteBase
+{
+public:
 };
 
 
@@ -27741,7 +27826,7 @@ public:
 };
 
 
-// Size 0x108
+// Size 0x1a8
 class CaptainedSessionService: public Actor
 {
 public:
@@ -27965,10 +28050,19 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x10
+class IsQuestMapOverriddenStatCondition: public TargetedStatCondition
+{
+public:
+	TArray<Class ValidMaps>                                      ValidMaps;                                         // 0x30(0x10)
+};
+
+
+// Size 0x10
 class QuestConditionalStatIdentifier: public Object
 {
 public:
+	class                                                        QuestMapOverride;                                  // 0x30(0x8)
 };
 
 
@@ -28833,16 +28927,17 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x68
 class GameEventSchedulerSettingsAsset: public DataAsset
 {
 public:
 	TArray<Struct GameEventSettings>                             EventSettings;                                     // 0x28(0x10)
 	TArray<Struct GameEventSchedulerConfiguration>               Configs;                                           // 0x38(0x10)
-	float                                                        InitialStartupTime;                                // 0x48(0x4)
-	float                                                        BlockingVerificationFrequency;                     // 0x4c(0x4)
-	float                                                        InvalidEventDeactivationQueryFrequency;            // 0x50(0x4)
-	float                                                        InvalidEventDeactivationThreshold;                 // 0x54(0x4)
+	Struct GameEventSchedulerConfiguration                       NeutralConfig;                                     // 0x48(0x38)
+	float                                                        InitialStartupTime;                                // 0x80(0x4)
+	float                                                        BlockingVerificationFrequency;                     // 0x84(0x4)
+	float                                                        InvalidEventDeactivationQueryFrequency;            // 0x88(0x4)
+	float                                                        InvalidEventDeactivationThreshold;                 // 0x8c(0x4)
 };
 
 
@@ -28906,7 +29001,7 @@ public:
 };
 
 
-// Size 0x150
+// Size 0x160
 class GameEventSchedulerService: public Object
 {
 public:
@@ -28931,11 +29026,13 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x30
 class GameEventSchedulerStoryCustomiserSettings: public DataAsset
 {
 public:
-	TArray<Struct GameEventSchedulerStoryCustomisationData>      CustomisationData;                                 // 0x28(0x10)
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	TArray<Struct GameEventSchedulerStoryCustomisationData>      StoryResponses;                                    // 0x38(0x10)
+	TArray<class GameEventSchedulerStoryCustomiserSettings*>     AssetsList;                                        // 0x48(0x10)
 };
 
 
@@ -30052,6 +30149,24 @@ public:
 };
 
 
+// Size 0x0
+class ItemReactionItemProxyInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x78
+class ItemReactionItemProxy: public StaticSimpleBootyItemProxy
+{
+public:
+	Class InteractableComponentWithActionRules*                  InteractableComponentWithActionRules;              // 0x800(0x8)
+	Struct ItemReactionItemProxyActionRuleParams                 ItemReactionItemProxyActionRuleParams;             // 0x808(0x50)
+	TArray<AssetClass InAllowedItems>                            InAllowedItems;                                    // 0x858(0x10)
+	class                                                        ItemToGive;                                        // 0x868(0x8)
+};
+
+
 // Size 0x10
 class StoolItemProxy: public StaticSimpleBootyItemProxy
 {
@@ -30924,6 +31039,21 @@ public:
 
 
 // Size 0x0
+class WorldMarkerRepresentationInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10
+class WorldMarkerBeaconActor: public Actor
+{
+public:
+	Class BaseWorldMarker*                                       MarkerDataObject;                                  // 0x3d0(0x8)
+};
+
+
+// Size 0x0
 class WorldMarkerBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
@@ -30944,13 +31074,6 @@ public:
 	TArray<Struct MarkerVariantDesc>                             MarkerVariants;                                    // 0xd0(0x10)
 	TArray<class BaseWorldMarker*>                               MarkerDataObjects;                                 // 0xe0(0x10)
 	TArray<Struct ClientMarkerRepresentation>                    ClientMarkerRepresentations;                       // 0xf0(0x10)
-};
-
-
-// Size 0x0
-class WorldMarkerRepresentationInterface: public Interface
-{
-public:
 };
 
 
@@ -31154,7 +31277,14 @@ public:
 
 
 // Size 0x0
-class NPCCustomItemPurchaseInterface: public Interface
+class NPCCommerceEventInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
+class NPCCustomItemPurchaseInterface: public NPCCommerceEventInterface
 {
 public:
 };
@@ -35681,13 +35811,14 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x58
 class InvasionDepartureTunnelRandomisedSceneryTile: public Actor
 {
 public:
-	TArray<Class RandomActors>                                   RandomActors;                                      // 0x3c8(0x10)
-	Class ChildActorComponent*                                   ChildActor;                                        // 0x3e0(0x8)
-	Class SceneComponent*                                        RootComp;                                          // 0x3e8(0x8)
+	TArray<AssetClass RandomActors>                              RandomActors;                                      // 0x3c8(0x10)
+	Struct InvasionTunnelLoadedSceneryTileAssetEntryWrapper      LoadedRandomActors;                                // 0x3f8(0x10)
+	Class ChildActorComponent*                                   ChildActor;                                        // 0x408(0x8)
+	Class SceneComponent*                                        RootComp;                                          // 0x410(0x8)
 };
 
 
@@ -35760,7 +35891,7 @@ public:
 };
 
 
-// Size 0x108
+// Size 0x110
 class TunnelDesc: public DataAsset
 {
 public:
@@ -35782,9 +35913,10 @@ public:
 	Class WwiseEvent*                                            AmbienceSfxEvent;                                  // 0xc0(0x8)
 	Class WwiseEvent*                                            AmbienceSfxStop;                                   // 0xc8(0x8)
 	Class WwiseObjectPoolWrapper*                                AmbienceSfxPool;                                   // 0xd0(0x8)
-	bool                                                         ForceRespawnPlayersOnShipInFailureScenarios;       // 0xd8(0x1)
-	bool                                                         DropCapstanOnTunnelExit;                           // 0xd9(0x1)
-	bool                                                         TeleportShipAfterMigration;                        // 0xda(0x1)
+	byte                                                         TeleportAudioSettings;                             // 0xd8(0x1)
+	bool                                                         ForceRespawnPlayersOnShipInFailureScenarios;       // 0xd9(0x1)
+	bool                                                         DropCapstanOnTunnelExit;                           // 0xda(0x1)
+	bool                                                         TeleportShipAfterMigration;                        // 0xdb(0x1)
 	Struct StringAssetReference                                  SpawnLocation;                                     // 0xe0(0x10)
 	bool                                                         SpawnShipOutsidePortalOnDestinationServer;         // 0xf0(0x1)
 	bool                                                         SpawnShipOutsidePortalInFailureScenarios;          // 0xf1(0x1)
@@ -35794,6 +35926,8 @@ public:
 	class                                                        TunnelLevelId;                                     // 0x110(0x8)
 	Struct StringAssetReference                                  ArrivalTunnelDesc;                                 // 0x118(0x10)
 	Class PopUpMessageDesc*                                      TunnelFailurePopUpDesc;                            // 0x128(0x8)
+	byte                                                         TunnelFailureShipSailState;                        // 0x130(0x1)
+	float                                                        TunnelYaw;                                         // 0x134(0x4)
 };
 
 
@@ -35813,7 +35947,7 @@ public:
 };
 
 
-// Size 0xa0
+// Size 0xb0
 class TunnelDependencies: public Object
 {
 public:
@@ -35848,18 +35982,19 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x10
 class SinkingTunnelDependencies: public DepartureTunnelDependencies
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x18
 class ArrivalTunnelDesc: public TunnelDesc
 {
 public:
-	Struct Guid                                                  MigrationGuid;                                     // 0x130(0x10)
+	Struct Guid                                                  MigrationGuid;                                     // 0x138(0x10)
+	byte                                                         ShipSailStateUponArrival;                          // 0x148(0x1)
 };
 
 
@@ -35874,9 +36009,9 @@ public:
 class InvasionArrivalTunnelDesc: public ArrivalTunnelDesc
 {
 public:
-	Struct Vector                                                DestinationLocationOffset;                         // 0x140(0xc)
-	float                                                        DestinationLocationAsyncLoadTimeoutSeconds;        // 0x14c(0x4)
-	int                                                          SecondsToAllowLoadingBeforeRecomputingDestinationLocation; // 0x150(0x4)
+	Struct Vector                                                DestinationLocationOffset;                         // 0x150(0xc)
+	float                                                        DestinationLocationAsyncLoadTimeoutSeconds;        // 0x15c(0x4)
+	int                                                          SecondsToAllowLoadingBeforeRecomputingDestinationLocation; // 0x160(0x4)
 };
 
 
@@ -35884,24 +36019,30 @@ public:
 class DepartureTunnelDesc: public TunnelDesc
 {
 public:
-	float                                                        PlayerArrivalTimeoutSeconds;                       // 0x130(0x4)
-	float                                                        MigrationSequenceSeconds;                          // 0x134(0x4)
-	bool                                                         WaitForMatchmakingSequenceToCompleteBeforeMigrating; // 0x138(0x1)
+	float                                                        PlayerArrivalTimeoutSeconds;                       // 0x138(0x4)
+	float                                                        MigrationSequenceSeconds;                          // 0x13c(0x4)
+	bool                                                         WaitForMatchmakingSequenceToCompleteBeforeMigrating; // 0x140(0x1)
+	byte                                                         MigrationShipSailState;                            // 0x141(0x1)
 };
 
 
-// Size 0x8
+// Size 0x20
 class InvasionDepartureTunnelDesc: public DepartureTunnelDesc
 {
 public:
-	float                                                        SecondsAfterCrewArriveInTunnelBeforeAllowingTunnelCancellation; // 0x140(0x4)
+	float                                                        SecondsAfterCrewArriveInTunnelBeforeAllowingTunnelCancellation; // 0x148(0x4)
+	float                                                        SecondsAfterCrewArriveInTunnelBeforeShowingCancellationReminderPopUp; // 0x14c(0x4)
+	float                                                        SecondsBetweenEachCancellationReminderPopUp;       // 0x150(0x4)
+	TArray<Struct TunnelOfTheDamnedFactionThemedPopUpDesc>       CancellationReminderPopUpDescs;                    // 0x158(0x10)
 };
 
 
-// Size 0x0
+// Size 0x18
 class SinkingTunnelDesc: public DepartureTunnelDesc
 {
 public:
+	TArray<Struct FactionMusic>                                  FactionMusics;                                     // 0x148(0x10)
+	Class WwiseObjectPoolWrapper*                                FactionMusicPool;                                  // 0x158(0x8)
 };
 
 
@@ -35975,7 +36116,7 @@ public:
 };
 
 
-// Size 0x230
+// Size 0x240
 class TunnelOfTheDamnedBase: public Actor
 {
 public:
@@ -35989,16 +36130,17 @@ public:
 	Class Actor*                                                 ShipInTunnel;                                      // 0x478(0x8)
 	int                                                          TunnelStreamingLevelId;                            // 0x480(0x4)
 	TArray<class Actor*>                                         CrewMembersInTunnel;                               // 0x488(0x10)
-	Class ShipSpawnLocation*                                     FailureFallbackShipSpawnLocation;                  // 0x510(0x8)
-	TArray<Interface FailureActionStateFadeCompletedTargets>     FailureActionStateFadeCompletedTargets;            // 0x518(0x10)
+	Class ShipSpawnLocation*                                     FailureFallbackShipSpawnLocation;                  // 0x520(0x8)
+	TArray<Interface FailureActionStateFadeCompletedTargets>     FailureActionStateFadeCompletedTargets;            // 0x528(0x10)
 };
 
 
-// Size 0x18
+// Size 0x28
 class ArrivalTunnelOfTheDamned: public TunnelOfTheDamnedBase
 {
 public:
-	Class ArrivalTunnelDesc*                                     ArrivalTunnelDesc;                                 // 0x608(0x8)
+	Class ArrivalTunnelDesc*                                     ArrivalTunnelDesc;                                 // 0x618(0x8)
+	TArray<class Character*>                                     PlayersInArrivalTunnelOfTheDamnedActionState;      // 0x620(0x10)
 };
 
 
@@ -36009,11 +36151,11 @@ public:
 };
 
 
-// Size 0x98
+// Size 0xf0
 class InvasionArrivalTunnelOfTheDamned: public ArrivalTunnelOfTheDamned
 {
 public:
-	Class InvasionArrivalTunnelDesc*                             InvasionArrivalTunnelDesc;                         // 0x610(0x8)
+	Class InvasionArrivalTunnelDesc*                             InvasionArrivalTunnelDesc;                         // 0x630(0x8)
 };
 
 
@@ -36021,27 +36163,28 @@ public:
 class DepartureTunnelOfTheDamned: public TunnelOfTheDamnedBase
 {
 public:
-	Class TunnelsOfTheDamnedLootFilterDataAsset*                 LootFilterDataAsset;                               // 0x5f8(0x8)
-	Class DepartureTunnelDesc*                                   DepartureTunnelDesc;                               // 0x600(0x8)
-	TArray<Interface EnterTunnelFadeCompletedTargets>            EnterTunnelFadeCompletedTargets;                   // 0x650(0x10)
+	Class TunnelsOfTheDamnedLootFilterDataAsset*                 LootFilterDataAsset;                               // 0x608(0x8)
+	Class DepartureTunnelDesc*                                   DepartureTunnelDesc;                               // 0x610(0x8)
+	TArray<Interface EnterTunnelFadeCompletedTargets>            EnterTunnelFadeCompletedTargets;                   // 0x660(0x10)
 };
 
 
-// Size 0xc8
+// Size 0xd0
 class InvasionDepartureTunnelOfTheDamned: public DepartureTunnelOfTheDamned
 {
 public:
-	Class InvasionDepartureTunnelDesc*                           InvasionDepartureTunnelDesc;                       // 0x6d0(0x8)
-	bool                                                         AllowTunnelCancellation;                           // 0x6f8(0x1)
+	Class InvasionDepartureTunnelDesc*                           InvasionDepartureTunnelDesc;                       // 0x6e0(0x8)
+	bool                                                         AllowTunnelCancellation;                           // 0x708(0x1)
 };
 
 
-// Size 0xc8
+// Size 0x108
 class SinkingTunnelOfTheDamned: public DepartureTunnelOfTheDamned
 {
 public:
-	Class ExhaustibleTeleportLocationRetrievalComponent*         TeleportLocationRetrievalComponent;                // 0x6e0(0x8)
-	Struct Rotator                                               ShipOrientation;                                   // 0x6e8(0xc)
+	Class ExhaustibleTeleportLocationRetrievalComponent*         TeleportLocationRetrievalComponent;                // 0x6f0(0x8)
+	Struct Rotator                                               ShipOrientation;                                   // 0x6f8(0xc)
+	Struct CrewInTunnel                                          CrewInTunnel;                                      // 0x7d8(0x10)
 };
 
 
@@ -36075,7 +36218,7 @@ public:
 };
 
 
-// Size 0x108
+// Size 0xb8
 class InvasionDepartureTunnelPresenterObject: public TunnelPresenterObjectBase
 {
 public:
@@ -36108,7 +36251,6 @@ class InvasionDepartureTunnelPresenterObjectParams: public TunnelPresenterObject
 public:
 	class                                                        ScrollingSceneryActorClass;                        // 0x30(0x8)
 	Struct Vector                                                ScrollingScenerySpawnOffset;                       // 0x38(0xc)
-	float                                                        SecondsAfterMatchFoundResumeMigration;             // 0x44(0x4)
 };
 
 
@@ -36569,7 +36711,7 @@ public:
 };
 
 
-// Size 0x528
+// Size 0x530
 class Seafort: public IslandData
 {
 public:
@@ -36582,30 +36724,31 @@ public:
 	Class FortFlag*                                              Flag;                                              // 0x590(0x8)
 	Class Actor*                                                 AlignmentFlagPole;                                 // 0x598(0x8)
 	Class SeaFortAddOnComponent*                                 SeaFortAddOnComponent;                             // 0x5a0(0x8)
-	Class Actor*                                                 SeaFortCannonsMechanismAction;                     // 0x5a8(0x8)
-	Class SeaFortCannonsMechanismTrigger*                        CannonsMechanismTrigger;                           // 0x5b0(0x8)
-	Class OverlapTriggerComponent*                               ActionAudioZoneComponent;                          // 0x5b8(0x8)
-	Class OverlapTriggerComponent*                               AnticipationAudioZoneComponent;                    // 0x5c0(0x8)
-	Struct Vector                                                BellEmitterOffset;                                 // 0x5c8(0xc)
-	Class OneShotAnimatedMechanismAction*                        TreasuryDoor;                                      // 0x5d8(0x8)
-	Class OneShotAnimatedMechanismAction*                        StoreroomDoor;                                     // 0x5e0(0x8)
-	Class PopUpMessageDesc*                                      KeyDiscoveredPopUpDesc;                            // 0x5e8(0x8)
-	Class PopUpMessageDesc*                                      KeyHandInHintPopUpDesc;                            // 0x5f0(0x8)
-	Struct EncounterParams                                       SightingEncounterParams;                           // 0x5f8(0xc)
-	Struct EncounterParams                                       CloseEncounterParams;                              // 0x604(0xc)
-	Class SeaFortTelemetryComponent*                             TelemetryComponent;                                // 0x610(0x8)
-	Class WwiseEvent*                                            WaveGroupSpawnedEvent;                             // 0x618(0x8)
-	Class WwiseEvent*                                            FinalWaveGroupSpawnedEvent;                        // 0x620(0x8)
-	Class WwiseEvent*                                            FortCompleteEvent;                                 // 0x628(0x8)
-	Struct WwiseEmitter                                          SeaFortEmitter;                                    // 0x630(0x20)
-	Struct PlayerStat                                            StatToFireOnFortComplete;                          // 0x850(0x4)
-	TArray<class ItemSpawnComponent*>                            Rewards;                                           // 0x948(0x10)
-	Class FortAIToggler*                                         AIToggler;                                         // 0x958(0x8)
-	TArray<Struct AdditionalCaptainTarget>                       SpawnedAdditionalCaptainsData;                     // 0x960(0x10)
-	Class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x970(0x8)
-	Class LockComponent*                                         TreasuryLock;                                      // 0x9a0(0x8)
-	Class LockComponent*                                         StoreroomLock;                                     // 0x9a8(0x8)
-	byte                                                         CurrentSeaFortState;                               // 0x9b0(0x1)
+	Class SeaFortStateComponent*                                 SeaFortStateComponent;                             // 0x5a8(0x8)
+	Class Actor*                                                 SeaFortCannonsMechanismAction;                     // 0x5b0(0x8)
+	Class SeaFortCannonsMechanismTrigger*                        CannonsMechanismTrigger;                           // 0x5b8(0x8)
+	Class OverlapTriggerComponent*                               ActionAudioZoneComponent;                          // 0x5c0(0x8)
+	Class OverlapTriggerComponent*                               AnticipationAudioZoneComponent;                    // 0x5c8(0x8)
+	Struct Vector                                                BellEmitterOffset;                                 // 0x5d0(0xc)
+	Class OneShotAnimatedMechanismAction*                        TreasuryDoor;                                      // 0x5e0(0x8)
+	Class OneShotAnimatedMechanismAction*                        StoreroomDoor;                                     // 0x5e8(0x8)
+	Class PopUpMessageDesc*                                      KeyDiscoveredPopUpDesc;                            // 0x5f0(0x8)
+	Class PopUpMessageDesc*                                      KeyHandInHintPopUpDesc;                            // 0x5f8(0x8)
+	Struct EncounterParams                                       SightingEncounterParams;                           // 0x600(0xc)
+	Struct EncounterParams                                       CloseEncounterParams;                              // 0x60c(0xc)
+	Class SeaFortTelemetryComponent*                             TelemetryComponent;                                // 0x618(0x8)
+	Class WwiseEvent*                                            WaveGroupSpawnedEvent;                             // 0x620(0x8)
+	Class WwiseEvent*                                            FinalWaveGroupSpawnedEvent;                        // 0x628(0x8)
+	Class WwiseEvent*                                            FortCompleteEvent;                                 // 0x630(0x8)
+	Struct WwiseEmitter                                          SeaFortEmitter;                                    // 0x638(0x20)
+	Struct PlayerStat                                            StatToFireOnFortComplete;                          // 0x858(0x4)
+	TArray<class ItemSpawnComponent*>                            Rewards;                                           // 0x950(0x10)
+	Class FortAIToggler*                                         AIToggler;                                         // 0x960(0x8)
+	TArray<Struct AdditionalCaptainTarget>                       SpawnedAdditionalCaptainsData;                     // 0x968(0x10)
+	Class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x978(0x8)
+	Class LockComponent*                                         TreasuryLock;                                      // 0x9a8(0x8)
+	Class LockComponent*                                         StoreroomLock;                                     // 0x9b0(0x8)
+	byte                                                         CurrentSeaFortState;                               // 0x9b8(0x1)
 };
 
 
@@ -36677,7 +36820,7 @@ public:
 };
 
 
-// Size 0x298
+// Size 0x1c8
 class SeaFortAlignmentFlagPole: public Actor
 {
 public:
@@ -36685,14 +36828,16 @@ public:
 	Class StaticMeshComponent*                                   FlagPoleMesh;                                      // 0x3e0(0x8)
 	Class StaticMeshComponent*                                   FlagMesh;                                          // 0x3e8(0x8)
 	Class InteractableComponentWithActionRules*                  FlagPoleInteractableComponent;                     // 0x3f0(0x8)
-	Struct AlignmentFlagMeshParams                               AlignmentFlagMeshParams;                           // 0x3f8(0xa0)
-	Struct AlignmentFlagActionRuleParams                         AlignmentFlagActionRuleParams;                     // 0x498(0xf8)
-	byte                                                         FlagAlignment;                                     // 0x5a8(0x1)
-	bool                                                         AreAllFortEnemiesDefeated;                         // 0x5a9(0x1)
+	Struct AlignmentFlagMeshParams                               AlignmentFlagMeshParams;                           // 0x3f8(0x30)
+	Struct AlignmentFlagActionRuleParams                         AlignmentFlagActionRuleParams;                     // 0x428(0x18)
+	Struct AlignmentWorldMarkerParams                            AlignmentWorldMarkerParams;                        // 0x440(0x10)
+	Struct SeaFortAlignmentFlagPoleAudioParams                   FlagPoleAudioParams;                               // 0x450(0x70)
+	byte                                                         FlagAlignment;                                     // 0x4d8(0x1)
+	bool                                                         AreAllFortEnemiesDefeated;                         // 0x4d9(0x1)
 };
 
 
-// Size 0x80
+// Size 0x138
 class SeaFortAlignmentTable: public Actor
 {
 public:
@@ -36704,27 +36849,35 @@ public:
 	Class SeaFortAlignmentTableModelComponent*                   Fort4Mesh;                                         // 0x3f0(0x8)
 	Class SeaFortAlignmentTableModelComponent*                   Fort5Mesh;                                         // 0x3f8(0x8)
 	Class SeaFortAlignmentTableModelComponent*                   Fort6Mesh;                                         // 0x400(0x8)
-	byte                                                         TableAlignment;                                    // 0x408(0x1)
-	Class SeaFortAlignmentTableModelCosmeticsDataAsset*          SeaFortAlignmentModelMeshesDataAsset;              // 0x410(0x8)
-	TArray<Struct SeaFortAlignment>                              ReplicatedSeaFortAlignmentData;                    // 0x418(0x10)
-	TArray<class SeaFortAlignmentTableModelComponent*>           FortMeshes;                                        // 0x428(0x10)
+	Class ParticleSystemComponent*                               FlameParticleComponent;                            // 0x408(0x8)
+	Class Object*                                                SmallFlareParticleSystem;                          // 0x410(0x8)
+	Class Object*                                                MediumFlareParticleSystem;                         // 0x418(0x8)
+	Class Object*                                                LargeFlareParticleSystem;                          // 0x420(0x8)
+	Struct Vector                                                FlareVFXSpawnLocation;                             // 0x428(0xc)
+	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x438(0x8)
+	struct FName                                                 WwiseEmitterName;                                  // 0x440(0x8)
+	Class WwiseEvent*                                            PlayFlameAudioLoopEvent;                           // 0x448(0x8)
+	Class WwiseEvent*                                            StopFlameAudioLoopEvent;                           // 0x450(0x8)
+	Class WwiseEvent*                                            PlaySmallFlareAudioEvent;                          // 0x458(0x8)
+	Class WwiseEvent*                                            PlayMediumFlareAudioEvent;                         // 0x460(0x8)
+	Class WwiseEvent*                                            PlayLargeFlareAudioEvent;                          // 0x468(0x8)
+	byte                                                         TableAlignment;                                    // 0x490(0x1)
+	Struct SeaFortAlignmentTableModelCosmeticDefaults            ModelCosmeticDefaults;                             // 0x498(0x10)
+	TArray<Struct SeaFortAlignment>                              ReplicatedSeaFortAlignmentData;                    // 0x4a8(0x10)
+	byte                                                         ReplicatedAlignmentTableFlameSize;                 // 0x4b8(0x1)
+	float                                                        SmallFlameParameterValue;                          // 0x4bc(0x4)
+	float                                                        MediumFlameParameterValue;                         // 0x4c0(0x4)
+	float                                                        LargeFlameParameterValue;                          // 0x4c4(0x4)
+	TArray<class SeaFortAlignmentTableModelComponent*>           FortMeshes;                                        // 0x4c8(0x10)
 };
 
 
-// Size 0xd0
+// Size 0xf0
 class SeaFortAlignmentTableModelComponent: public StaticMeshComponent
 {
 public:
-	Class SeaFortAlignmentTableModelCosmeticsDataAsset*          SeaFortAlignmentModelMeshesDataAsset;              // 0x628(0x8)
-	byte                                                         IslandType;                                        // 0x630(0x1)
-};
-
-
-// Size 0x10
-class SeaFortAlignmentTableModelCosmeticsDataAsset: public DataAsset
-{
-public:
-	TArray<Struct SeaFortAlignmentTableModelCosmetic>            AlignmentModels;                                   // 0x28(0x10)
+	byte                                                         IslandType;                                        // 0x628(0x1)
+	Struct FlagAlignmentCosmetic                                 AlignmentCosmetic;                                 // 0x630(0x28)
 };
 
 
@@ -36760,6 +36913,34 @@ public:
 };
 
 
+// Size 0x20
+class SeaFortStateBase: public Object
+{
+public:
+	Class World*                                                 World;                                             // 0x38(0x8)
+};
+
+
+// Size 0x18
+class SeaFortState_AdventureAlignment: public SeaFortStateBase
+{
+public:
+	Struct AdventureFortAllignmentState                          BelleAlignment;                                    // 0x48(0x8)
+	Struct AdventureFortAllignmentState                          SotFAlignment;                                     // 0x50(0x8)
+	Class SeaFortDataAsset*                                      CachedOriginalFortData;                            // 0x58(0x8)
+};
+
+
+// Size 0x28
+class SeaFortStateComponent: public ActorComponent
+{
+public:
+	TArray<class SeaFortStateBase*>                              States;                                            // 0xc8(0x10)
+	TArray<class SeaFortStateBase*>                              ActiveStates;                                      // 0xd8(0x10)
+	Class Seafort*                                               OwningFort;                                        // 0xe8(0x8)
+};
+
+
 // Size 0x48
 class SeaFortsWorldDataAsset: public DataAsset
 {
@@ -36770,6 +36951,7 @@ public:
 	float                                                        RandomActivationTimeMin;                           // 0x60(0x4)
 	float                                                        RandomActivationTimeMax;                           // 0x64(0x4)
 	float                                                        CrewVacantGracePeriod;                             // 0x68(0x4)
+	float                                                        SeaFortAlignmentReset;                             // 0x6c(0x4)
 };
 
 
@@ -37006,7 +37188,7 @@ public:
 };
 
 
-// Size 0x190
+// Size 0x1b0
 class CaptainsLogbookInteractableProxy: public ControllableObject
 {
 public:
@@ -37015,11 +37197,12 @@ public:
 	bool                                                         IsEnabled;                                         // 0x528(0x1)
 	bool                                                         IsVisible;                                         // 0x529(0x1)
 	Class ReplicatedShipPartCustomizationComponent*              CustomizationComponent;                            // 0x530(0x8)
-	Class MemoryConstrainedMeshInitializer*                      MMCMeshInitializer;                                // 0x698(0x8)
+	Struct PartDesc                                              DefaultCustomization;                              // 0x558(0x20)
+	Class MemoryConstrainedMeshInitializer*                      MMCMeshInitializer;                                // 0x6b8(0x8)
 };
 
 
-// Size 0xc8
+// Size 0xe0
 class CaptainsLogbookProxy: public WieldableBookProxy
 {
 public:
@@ -37045,6 +37228,7 @@ public:
 	Class MemoryConstrainedMeshInitializer*                      MMCMeshInitializer;                                // 0xbf8(0x8)
 	Struct PartDesc                                              CachedCustomization;                               // 0xc00(0x20)
 	TArray<Struct WieldableBookPageLayoutRepInfo>                ClientEventLogPages;                               // 0xc20(0x10)
+	bool                                                         IsWaterlogged;                                     // 0xc88(0x1)
 };
 
 
@@ -37104,12 +37288,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x10
 class EventLogDefinitionsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct EventLogDefinition>                            DefinitionsToBeParsed;                             // 0x28(0x10)
-	TArray<Struct StatEventDefinition>                           StatDefinitions;                                   // 0x38(0x10)
+	TArray<Struct StatEventDefinition>                           StatDefinitions;                                   // 0x28(0x10)
 };
 
 
@@ -37128,12 +37311,12 @@ public:
 	TArray<Struct Guid>                                          PendingRemovalLogbooks;                            // 0x3f8(0x10)
 	float                                                        HeartbeatUpdateFrequency;                          // 0x408(0x4)
 	float                                                        ServiceHeartbeatUpdateFrequency;                   // 0x40c(0x4)
-	Class EventLogDefinitionsDataAsset*                          DefinitionAsset;                                   // 0x430(0x8)
-	Struct StringAssetReference                                  DefinitionAssetRef;                                // 0x438(0x10)
+	TArray<class EventLogDefinitionsDataAsset*>                  DefinitionAssets;                                  // 0x430(0x10)
+	TArray<Struct StringAssetReference>                          DefinitionAssetRefs;                               // 0x440(0x10)
 };
 
 
-// Size 0xb0
+// Size 0xc8
 class CaptainsLogItemInfo: public WieldableBookItemInfo
 {
 public:
@@ -37725,6 +37908,22 @@ public:
 };
 
 
+// Size 0x18
+class AthenaAnimationSinkingTunnelDataAsset: public DataAsset
+{
+public:
+	TArray<Struct StringAssetReference>                          Animations;                                        // 0x28(0x10)
+	class                                                        SinkingTunnelAnimationStateId;                     // 0x38(0x8)
+};
+
+
+// Size 0x0
+class SinkingTunnelAnimationId: public Object
+{
+public:
+};
+
+
 // Size 0x0
 class AnimatableMeshInterface: public Interface
 {
@@ -37833,13 +38032,14 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x20
 class AthenaAnimationThirdPersonAnimationData: public AthenaAnimationData
 {
 public:
 	Class AthenaAnimationPulleyDataAsset*                        PulleyAnimationsDataAsset;                         // 0x68(0x8)
 	Class AthenaAnimationEmoteListingAsset*                      EmoteListingAsset;                                 // 0x70(0x8)
 	Class AthenaAnimationKeyedInstrumentDataAsset*               KeyedInstrumentDataAsset;                          // 0x78(0x8)
+	Class AthenaAnimationSinkingTunnelDataAsset*                 SinkingTunnelDataAsset;                            // 0x80(0x8)
 };
 
 

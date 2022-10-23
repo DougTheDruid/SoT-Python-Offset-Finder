@@ -34,16 +34,16 @@
   },
   "WarMapInteractionVoteComponent": {
     "Super": "InlineVotingInteractionComponent",
-    "FullSize": "0x150",
+    "FullSize": "0x160",
     "InheritedSize": "0x150",
-    "ClassSize": "0x0",
+    "ClassSize": "0x10",
     "Attributes": []
   },
   "WarMapVoteConsumerBase": {
     "Super": "VoteConsumerInlineBase",
-    "FullSize": "0x100",
+    "FullSize": "0x118",
     "InheritedSize": "0x30",
-    "ClassSize": "0xd0",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "Validator",
@@ -58,106 +58,118 @@
         "Offset": "0x38"
       },
       {
+        "Name": "IsHardMode",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
         "Name": "Votes",
         "Type": "TArray<class PlayerState*>",
         "Size": "0x10",
-        "Offset": "0xa0"
+        "Offset": "0xa8"
       },
       {
         "Name": "RpcDispatcher",
         "Type": "Class BoxedRpcDispatcherComponent*",
         "Size": "0x8",
-        "Offset": "0xb0"
+        "Offset": "0xb8"
       }
     ]
   },
   "StartWarMapVoyageVoteConsumer": {
     "Super": "WarMapVoteConsumerBase",
-    "FullSize": "0x288",
-    "InheritedSize": "0x100",
-    "ClassSize": "0x188",
+    "FullSize": "0x2d8",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x1c0",
     "Attributes": [
       {
         "Name": "WarMapVotingCastVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x100"
+        "Offset": "0x118"
       },
       {
         "Name": "WarMapVotingCantVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x138"
+        "Offset": "0x150"
       },
       {
         "Name": "WarMapVotingRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x170"
+        "Offset": "0x188"
       },
       {
         "Name": "WarMapVotingCantRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x1a8"
+        "Offset": "0x1c0"
       },
       {
         "Name": "WarMapVotingCantVoteReasonCrewOnInvasion",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x1e0"
+        "Offset": "0x1f8"
       },
       {
         "Name": "WarMapVotingCantVoteReasonNearbyEnemyFactionShip",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x218"
+        "Offset": "0x230"
       },
       {
         "Name": "WarMapVotingCantVoteReasonCrewIsInPVEEncounter",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x250"
+        "Offset": "0x268"
+      },
+      {
+        "Name": "WarMapVotingCantVoteReasonInTunnelOfTheDamned",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x2a0"
       }
     ]
   },
   "StopWarMapVoyageVoteConsumer": {
     "Super": "WarMapVoteConsumerBase",
-    "FullSize": "0x1e0",
-    "InheritedSize": "0x100",
+    "FullSize": "0x1f8",
+    "InheritedSize": "0x118",
     "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "WarMapVotingCastVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x100"
+        "Offset": "0x118"
       },
       {
         "Name": "WarMapVotingCantVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x138"
+        "Offset": "0x150"
       },
       {
         "Name": "WarMapVotingRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x170"
+        "Offset": "0x188"
       },
       {
         "Name": "WarMapVotingCantRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x1a8"
+        "Offset": "0x1c0"
       }
     ]
   },
   "WarMapVoteInteractionActor": {
     "Super": "Actor",
-    "FullSize": "0x4a8",
+    "FullSize": "0x610",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0xe0",
+    "ClassSize": "0x248",
     "Attributes": [
       {
         "Name": "TooltipUIFadeDuration",
@@ -172,16 +184,22 @@
         "Offset": "0x3dc"
       },
       {
+        "Name": "InvasionActiveMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
         "Name": "FactionInfos",
         "Type": "TArray<Struct FactionDisplayInfo>",
         "Size": "0x10",
-        "Offset": "0x3e8"
+        "Offset": "0x3f0"
       },
       {
         "Name": "FactionInfoPtrs",
         "Type": "TArray<Struct FactionRequest>",
         "Size": "0x10",
-        "Offset": "0x3f8"
+        "Offset": "0x400"
       }
     ]
   },
@@ -214,6 +232,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x44"
+      },
+      {
+        "Name": "ShowWithHardMode",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x45"
       }
     ]
   },
@@ -226,10 +250,17 @@
   },
   "StopWarMapVoyageVoteValidator": {
     "Super": "WarMapVoteValidatorBase",
-    "FullSize": "0x118",
+    "FullSize": "0x120",
     "InheritedSize": "0x118",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ShowWhenInHardModeMatchmaking",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x118"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

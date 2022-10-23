@@ -46,7 +46,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "WWisePool",
+        "Name": "WwisePool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x40"

@@ -1,9 +1,9 @@
 {
   "FactionSettingsAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x128",
+    "FullSize": "0x178",
     "InheritedSize": "0x28",
-    "ClassSize": "0x100",
+    "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "PossibleFactions",
@@ -54,6 +54,12 @@
         "Offset": "0x80"
       },
       {
+        "Name": "UpdateWaitTimesRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
         "Name": "AlignedFactionsAndCompanies",
         "Type": "TArray<Struct CompanyFactionAlignment>",
         "Size": "0x10",
@@ -72,16 +78,46 @@
         "Offset": "0xa8"
       },
       {
+        "Name": "LeavingFactionPopUp",
+        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "DefeatedFactionPopUp",
+        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "LeavingBattleBoundsPopUp",
+        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "MaxRankAchievedForSloopOrBrigantinePopUp",
+        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "MaxRankAchievedForGalleonPopUp",
+        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Size": "0x10",
+        "Offset": "0xf8"
+      },
+      {
         "Name": "LosingBattleHeaderText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0xb8"
+        "Offset": "0x108"
       },
       {
         "Name": "LosingBattleMessageText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0xf0"
+        "Offset": "0x140"
       }
     ]
   },
@@ -219,9 +255,9 @@
   },
   "FactionService": {
     "Super": "Actor",
-    "FullSize": "0x5a0",
+    "FullSize": "0x608",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x1d8",
+    "ClassSize": "0x240",
     "Attributes": [
       {
         "Name": "Settings",
@@ -254,10 +290,16 @@
         "Offset": "0x4c8"
       },
       {
+        "Name": "MatchmakingWaitTimes",
+        "Type": "TArray<Struct FactionWaitTimesData>",
+        "Size": "0x10",
+        "Offset": "0x4d8"
+      },
+      {
         "Name": "DebugRepActor",
         "Type": "Class FactionServiceDebugRepActor*",
         "Size": "0x8",
-        "Offset": "0x580"
+        "Offset": "0x5e8"
       }
     ]
   },
@@ -274,10 +316,16 @@
         "Offset": "0x28"
       },
       {
-        "Name": "CompanyParticles",
-        "Type": "TArray<Struct StreakCompanyParticles>",
-        "Size": "0x10",
+        "Name": "FactionBParticles",
+        "Type": "class",
+        "Size": "0x8",
         "Offset": "0x38"
+      },
+      {
+        "Name": "FactionGParticles",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x40"
       }
     ]
   },
@@ -403,9 +451,9 @@
   },
   "StopFactionVoyageVoteConsumer": {
     "Super": "FactionVoteConsumerBase",
-    "FullSize": "0x280",
+    "FullSize": "0x2b8",
     "InheritedSize": "0xc0",
-    "ClassSize": "0x1c0",
+    "ClassSize": "0x1f8",
     "Attributes": [
       {
         "Name": "FactionVotingCastVote",
@@ -454,6 +502,12 @@
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x248"
+      },
+      {
+        "Name": "FactionVotingCantVoteReasonLeaveFactionCooldownIsActive",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x280"
       }
     ]
   },
@@ -639,9 +693,9 @@
   },
   "ShipFactionCustomisation": {
     "Super": "ActorComponent",
-    "FullSize": "0x140",
+    "FullSize": "0x150",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x78",
+    "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "StreakMaterialData",
@@ -656,16 +710,22 @@
         "Offset": "0xd0"
       },
       {
+        "Name": "CachedStaticMeshComponents",
+        "Type": "TArray<class ActorComponent*>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
         "Name": "CachedDynamicMaterials",
         "Type": "TArray<Struct StreakDynamicMaterials>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xe8"
       },
       {
         "Name": "FactionStreakData",
         "Type": "Struct FactionStreakData",
         "Size": "0x10",
-        "Offset": "0x130"
+        "Offset": "0x140"
       }
     ]
   },

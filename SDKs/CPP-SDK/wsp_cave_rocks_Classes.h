@@ -24,7 +24,7 @@ public:
 
 
 // Size 0x50
-class wsp_cave_rocks_11_C: public BP_Placement_HeightDrop_C
+class wsp_cave_rocks_10_C: public BP_Placement_HeightDrop_C
 {
 public:
 	Class StaticMeshComponent*                                   StaticMesh7;                                       // 0x408(0x8)

@@ -84,9 +84,9 @@ public:
 class AbandonedNoteClueDestinationContainerComponent: public ActorComponent
 {
 public:
-	Struct ClueDestinationChoice                                 CurrentClueDestination;                            // 0xe8(0x10)
-	Class AbandonedNoteClueTextIndexAssetMap*                    ClueTextIndexAssetMap;                             // 0xf8(0x8)
-	Struct FString                                               CompositeFormatString;                             // 0x100(0x10)
+	Class AbandonedNoteClueTextIndexAssetMap*                    ClueTextIndexAssetMap;                             // 0xe8(0x8)
+	Struct FString                                               CompositeFormatString;                             // 0xf0(0x10)
+	Struct ClueDestinationChoice                                 CurrentClueDestination;                            // 0x100(0x10)
 	Struct FText                                                 CurrentTitleText;                                  // 0x110(0x38)
 	Class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x148(0x8)
 };

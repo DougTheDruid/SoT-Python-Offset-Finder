@@ -61,9 +61,9 @@
   },
   "EmissaryFlotsamItemInfo": {
     "Super": "BootyItemInfo",
-    "FullSize": "0x750",
+    "FullSize": "0x768",
     "InheritedSize": "0x728",
-    "ClassSize": "0x28",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "HandInOwnFlotsamReward",
@@ -72,10 +72,16 @@
         "Offset": "0x730"
       },
       {
+        "Name": "AlternateHandInOwnFlotsamReward",
+        "Type": "Struct CompanySpecificBootyReward",
+        "Size": "0x18",
+        "Offset": "0x748"
+      },
+      {
         "Name": "FlotsamCanBeDuplicated",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x748"
+        "Offset": "0x760"
       }
     ]
   },
@@ -300,33 +306,33 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "EmissaryCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2e0"
-      },
-      {
         "Name": "TrackedCompany",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x2e8"
+        "Offset": "0x2e0"
       },
       {
         "Name": "EmissaryRepresentationTransforms",
         "Type": "TArray<Struct Transform>",
         "Size": "0x10",
-        "Offset": "0x310"
+        "Offset": "0x308"
       },
       {
         "Name": "EmissaryRepresentationMeshes",
         "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
-        "Offset": "0x320"
+        "Offset": "0x318"
       },
       {
         "Name": "LoadedEmissaryRepresentationMesh",
         "Type": "class",
         "Size": "0x8",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "EmissaryCount",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x330"
       }
     ]

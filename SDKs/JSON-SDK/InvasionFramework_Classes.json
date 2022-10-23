@@ -6,14 +6,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "EnvQueryGenerator_AggressiveAggressiveSpawnLocations": {
-    "Super": "EnvQueryGenerator",
-    "FullSize": "0x50",
-    "InheritedSize": "0x50",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GetInvasionBattleLocationStep": {
+  "DisplayInvasionBannersStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x98",
@@ -65,6 +58,52 @@
         "Offset": "0xd0"
       }
     ]
+  },
+  "DisplayInvasionBannersStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "Message",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "DisableMusic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "DisplayShipsNameForCrewId",
+        "Type": "Struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "DisplayBannersForFaction",
+        "Type": "Struct QuestVariableName",
+        "Size": "0x30",
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "EnvQueryGenerator_AggressiveAggressiveSpawnLocations": {
+    "Super": "EnvQueryGenerator",
+    "FullSize": "0x50",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GetInvasionBattleLocationStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "GetInvasionBattleLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -157,9 +196,9 @@
   },
   "InvasionBattleBounds": {
     "Super": "Actor",
-    "FullSize": "0x3f0",
+    "FullSize": "0x400",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "Root",
@@ -190,6 +229,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e4"
+      },
+      {
+        "Name": "HasLeftBattleBounds",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
       }
     ]
   },
@@ -328,9 +373,9 @@
   },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x5a0",
+    "FullSize": "0x5b8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x1d8",
+    "ClassSize": "0x1f0",
     "Attributes": [
       {
         "Name": "InvasionServiceDataAsset",
@@ -348,37 +393,37 @@
         "Name": "MatchmakingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x4f0"
+        "Offset": "0x508"
       },
       {
         "Name": "InvadingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x500"
+        "Offset": "0x518"
       },
       {
         "Name": "ReplicatedInvasionCrewMusicStates",
         "Type": "TArray<Struct ReplicatedInvasionCrewMusicState>",
         "Size": "0x10",
-        "Offset": "0x510"
+        "Offset": "0x528"
       },
       {
         "Name": "MatchmakingCrewsReplicated",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<Struct InvasionServiceMatchmakingCrewInfo>",
         "Size": "0x10",
-        "Offset": "0x520"
+        "Offset": "0x538"
       },
       {
         "Name": "InvadingCrewsReplicated",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x530"
+        "Offset": "0x548"
       },
       {
         "Name": "InvasionBattleBoundsList",
         "Type": "TArray<class InvasionBattleBounds*>",
         "Size": "0x10",
-        "Offset": "0x540"
+        "Offset": "0x558"
       }
     ]
   },
@@ -487,16 +532,16 @@
   },
   "WaitForShipToBeDefeatedStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xc8",
+    "FullSize": "0xb0",
     "InheritedSize": "0x98",
-    "ClassSize": "0x30",
+    "ClassSize": "0x18",
     "Attributes": []
   },
   "WaitForShipToBeDefeatedStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x1e8",
+    "FullSize": "0x1e0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x168",
+    "ClassSize": "0x160",
     "Attributes": [
       {
         "Name": "WinningShip",
@@ -535,28 +580,16 @@
         "Offset": "0x170"
       },
       {
-        "Name": "CheckProximityTimerInterval",
+        "Name": "TimeoutTimerIntervalInMinutes",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x1a0"
       },
       {
-        "Name": "CheckProximityDistanceInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1a4"
-      },
-      {
-        "Name": "TimeoutTimerIntervalInMinutes",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1a8"
-      },
-      {
         "Name": "FailMessage",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x1b0"
+        "Offset": "0x1a8"
       }
     ]
   },

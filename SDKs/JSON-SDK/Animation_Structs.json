@@ -574,6 +574,35 @@
       }
     ]
   },
+  "WeightedAnimationLoadOnDemandDataMetaData": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AnimationList",
+        "Type": "TArray<Struct WeightedAnimationData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AssetName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FallbackSkeletonName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "FallbackValidAdditive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "EventCustomAnimationMontageExitRequested": {
     "ClassSize": "0xc",
     "Attributes": []

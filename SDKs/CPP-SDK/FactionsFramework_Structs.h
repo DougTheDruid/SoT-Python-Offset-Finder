@@ -37,13 +37,13 @@ public:
 struct SandsOfFateData
 {
 public:
-	int                                                          SinkingCrewStreak;                                 // 0x0(0x4)
-	int                                                          SunkCrewStreak;                                    // 0x4(0x4)
+	int                                                          SinkingCrewStreakLevel;                            // 0x0(0x4)
+	int                                                          SunkCrewStreakLevel;                               // 0x4(0x4)
 	int                                                          SandsOfFateReward;                                 // 0x8(0x4)
 };
 
 
-// Size 0x20
+// Size 0x28
 struct CrewFactionEntry
 {
 public:
@@ -51,10 +51,11 @@ public:
 	class                                                        Faction;                                           // 0x10(0x8)
 	byte                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
 	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
+	double                                                       LeaveFactionCooldownTimeStamp;                     // 0x20(0x8)
 };
 
 
-// Size 0x70
+// Size 0x68
 struct CrewFactionEntryData
 {
 public:
@@ -63,11 +64,11 @@ public:
 	class                                                        Faction;                                           // 0x20(0x8)
 	int                                                          Streak;                                            // 0x28(0x4)
 	int                                                          SandsOfFate;                                       // 0x2c(0x4)
-	float                                                        CooldownTimeStamp;                                 // 0x30(0x4)
-	bool                                                         IsInInvasion;                                      // 0x34(0x1)
-	TArray<Struct Guid>                                          EligibleLootBootyIds;                              // 0x38(0x10)
-	int                                                          CurrentLootValue;                                  // 0x48(0x4)
-	TArray<Bool HasDisplayedPromptForLootLevel>                  HasDisplayedPromptForLootLevel;                    // 0x50(0x10)
+	double                                                       CooldownTimeStamp;                                 // 0x30(0x8)
+	bool                                                         IsInInvasion;                                      // 0x38(0x1)
+	TArray<Struct Guid>                                          EligibleLootBootyIds;                              // 0x40(0x10)
+	int                                                          CurrentLootValue;                                  // 0x50(0x4)
+	TArray<Bool HasDisplayedPromptForLootLevel>                  HasDisplayedPromptForLootLevel;                    // 0x58(0x10)
 };
 
 
@@ -76,10 +77,10 @@ struct CrewFactionTelemetryData
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	struct FName                                                 Faction;                                           // 0x10(0x8)
-	int                                                          Streak;                                            // 0x18(0x4)
-	int                                                          SandsOfFate;                                       // 0x1c(0x4)
-	TArray<Struct Guid>                                          CrewsAlreadySunk;                                  // 0x20(0x10)
+	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
+	struct FName                                                 Faction;                                           // 0x20(0x8)
+	int                                                          Streak;                                            // 0x28(0x4)
+	int                                                          SandsOfFate;                                       // 0x2c(0x4)
 };
 
 
@@ -164,6 +165,17 @@ struct FactionJoinedTelemetryEvent
 public:
 	Struct Guid                                                  FactionSessionId;                                  // 0x0(0x10)
 	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct FactionWaitTimesData
+{
+public:
+	byte                                                         Faction;                                           // 0x0(0x1)
+	byte                                                         SessionType;                                       // 0x1(0x1)
+	Struct Timespan                                              AverageWaitTime;                                   // 0x8(0x8)
+	Struct Timespan                                              MaxWaitTime;                                       // 0x10(0x8)
 };
 
 

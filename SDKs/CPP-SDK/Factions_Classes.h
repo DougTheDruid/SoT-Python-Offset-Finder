@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x100
+// Size 0x150
 class FactionSettingsAsset: public DataAsset
 {
 public:
@@ -18,11 +18,17 @@ public:
 	float                                                        EnemyFactionShipEmergentRange;                     // 0x78(0x4)
 	float                                                        EnemyFactionShipInvasionRange;                     // 0x7c(0x4)
 	float                                                        CrewShipRangeStatesUpdateInterval;                 // 0x80(0x4)
+	float                                                        UpdateWaitTimesRate;                               // 0x84(0x4)
 	TArray<Struct CompanyFactionAlignment>                       AlignedFactionsAndCompanies;                       // 0x88(0x10)
 	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x98(0x10)
 	TArray<Struct FactionServicePopUpData>                       JoiningFactionPopUp;                               // 0xa8(0x10)
-	Struct FText                                                 LosingBattleHeaderText;                            // 0xb8(0x38)
-	Struct FText                                                 LosingBattleMessageText;                           // 0xf0(0x38)
+	TArray<Struct FactionServicePopUpData>                       LeavingFactionPopUp;                               // 0xb8(0x10)
+	TArray<Struct FactionServicePopUpData>                       DefeatedFactionPopUp;                              // 0xc8(0x10)
+	TArray<Struct FactionServicePopUpData>                       LeavingBattleBoundsPopUp;                          // 0xd8(0x10)
+	TArray<Struct FactionServicePopUpData>                       MaxRankAchievedForSloopOrBrigantinePopUp;          // 0xe8(0x10)
+	TArray<Struct FactionServicePopUpData>                       MaxRankAchievedForGalleonPopUp;                    // 0xf8(0x10)
+	Struct FText                                                 LosingBattleHeaderText;                            // 0x108(0x38)
+	Struct FText                                                 LosingBattleMessageText;                           // 0x140(0x38)
 };
 
 
@@ -88,7 +94,7 @@ public:
 };
 
 
-// Size 0x1d8
+// Size 0x240
 class FactionService: public Actor
 {
 public:
@@ -97,7 +103,8 @@ public:
 	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x4a8(0x10)
 	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x4b8(0x10)
 	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x4c8(0x10)
-	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x580(0x8)
+	TArray<Struct FactionWaitTimesData>                          MatchmakingWaitTimes;                              // 0x4d8(0x10)
+	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x5e8(0x8)
 };
 
 
@@ -106,7 +113,8 @@ class FactionShipStreakDataAsset: public DataAsset
 {
 public:
 	TArray<Struct StreakMesh>                                    StreakMeshes;                                      // 0x28(0x10)
-	TArray<Struct StreakCompanyParticles>                        CompanyParticles;                                  // 0x38(0x10)
+	class                                                        FactionBParticles;                                 // 0x38(0x8)
+	class                                                        FactionGParticles;                                 // 0x40(0x8)
 };
 
 
@@ -147,7 +155,7 @@ public:
 };
 
 
-// Size 0x1c0
+// Size 0x1f8
 class StopFactionVoyageVoteConsumer: public FactionVoteConsumerBase
 {
 public:
@@ -159,6 +167,7 @@ public:
 	Struct FText                                                 FactionVotingCantVoteReasonActiveForDifferentCompany; // 0x1d8(0x38)
 	Struct FText                                                 FactionVotingCantVoteReasonEnemyShipNearby;        // 0x210(0x38)
 	Struct FText                                                 FactionVotingCantVoteReasonShipNotInHarbour;       // 0x248(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonLeaveFactionCooldownIsActive; // 0x280(0x38)
 };
 
 
@@ -232,14 +241,15 @@ public:
 };
 
 
-// Size 0x78
+// Size 0x88
 class ShipFactionCustomisation: public ActorComponent
 {
 public:
 	Class StreakMaterialDataAsset*                               StreakMaterialData;                                // 0xc8(0x8)
 	Class FactionShipStreakDataAsset*                            ShipStreakData;                                    // 0xd0(0x8)
-	TArray<Struct StreakDynamicMaterials>                        CachedDynamicMaterials;                            // 0xd8(0x10)
-	Struct FactionStreakData                                     FactionStreakData;                                 // 0x130(0x10)
+	TArray<class ActorComponent*>                                CachedStaticMeshComponents;                        // 0xd8(0x10)
+	TArray<Struct StreakDynamicMaterials>                        CachedDynamicMaterials;                            // 0xe8(0x10)
+	Struct FactionStreakData                                     FactionStreakData;                                 // 0x140(0x10)
 };
 
 

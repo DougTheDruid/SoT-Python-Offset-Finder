@@ -6304,7 +6304,7 @@
     ]
   },
   "UIFrameDurationDataTelemetryFragment": {
-    "ClassSize": "0xc",
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Min",
@@ -6323,6 +6323,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "StdDeviation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -13354,7 +13360,7 @@
     "ClassSize": "0x24",
     "Attributes": [
       {
-        "Name": "StoryFlag",
+        "Name": "Story",
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
@@ -22973,6 +22979,10 @@
       }
     ]
   },
+  "ShopOffersUpdateAvailableEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "CaptainsShopVoyageLimitResponseEvent": {
     "ClassSize": "0x4",
     "Attributes": [
@@ -25579,110 +25589,6 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
-  "SpeechAccessibilityModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ProfileUsers",
-        "Type": "TArray<Struct SpeechAccessibilityProfileUser>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpeechAccessibilityProfileUser": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HostID",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Settings",
-        "Type": "TArray<Struct SpeechAccessibilitySetting>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "IsSponsoredUser",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "SpeechAccessibilitySetting": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Value",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "SpeechAccessibilityOptions": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "GameChatSTT",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameChatTTS",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "PersonaID",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PersonaName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "PersonaGender",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PersonaLang",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "GameTextSS",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      }
-    ]
-  },
   "LocalGameChatStatusEvent": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -25852,35 +25758,6 @@
   "OptedIntoMarketingEvent": {
     "ClassSize": "0x1",
     "Attributes": []
-  },
-  "GameNarrationStateChangeEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Enabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PreferredVoice",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Language",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Gender",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      }
-    ]
   },
   "GamerTagUpdated": {
     "ClassSize": "0x10",
@@ -27006,7 +26883,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "HostID",
+        "Name": "HostId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -27052,7 +26929,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "HostID",
+        "Name": "HostId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x70"
@@ -31053,6 +30930,17 @@
       }
     ]
   },
+  "ShipCustomizationChestUnsaveFromLoadoutEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Category",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ShipCustomizationChestSwapToSavedLoadoutEvent": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -34536,56 +34424,6 @@
       }
     ]
   },
-  "VideoSubtitleEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SubtitleString",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubtitleDuration",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "VideoPlaybackStopEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoPlaybackPauseEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoPlaybackStartEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PlayerRadialChatTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -37819,7 +37657,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "HostID",
+        "Name": "HostId",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x80"
@@ -38012,17 +37850,6 @@
         "Name": "AlwaysSkipMapTableAnimation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameNarrationOverrideStateChangeEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Status",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
@@ -39554,10 +39381,16 @@
         "Offset": "0x17c"
       },
       {
-        "Name": "FishNameplateNarrationEnabled",
+        "Name": "RenarrateAfterClosingMenus",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x180"
+      },
+      {
+        "Name": "FishNameplateNarrationEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x181"
       },
       {
         "Name": "ContinuousNarrationDelay",
@@ -40458,6 +40291,57 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xac"
+      }
+    ]
+  },
+  "RequestShipPreviewUpdateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipDesc",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipPreviewLoadingEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ShipPreviewLoadedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ShipPreviewCreatedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PreviewURL",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RequestDestroyShipPreviewEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "RequestCreateShipPreviewEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ResolutionX",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ResolutionY",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -42134,7 +42018,7 @@
     ]
   },
   "CompanyScreenInformation": {
-    "ClassSize": "0x170",
+    "ClassSize": "0x180",
     "Attributes": [
       {
         "Name": "CompanySummary",
@@ -42165,6 +42049,35 @@
         "Type": "TArray<Struct EmblemSetInformation>",
         "Size": "0x10",
         "Offset": "0x160"
+      },
+      {
+        "Name": "FactionStats",
+        "Type": "Struct FactionStatsInformation",
+        "Size": "0xc",
+        "Offset": "0x170"
+      }
+    ]
+  },
+  "FactionStatsInformation": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "TotalRivalShipsSunk",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HighestFactionStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "HighestHourglassValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -42377,12 +42290,12 @@
     ]
   },
   "EventCompanyScreenDisplayInformationResponse": {
-    "ClassSize": "0x170",
+    "ClassSize": "0x180",
     "Attributes": [
       {
         "Name": "CompanyData",
         "Type": "Struct CompanyScreenInformation",
-        "Size": "0x170",
+        "Size": "0x180",
         "Offset": "0x0"
       }
     ]
@@ -44036,6 +43949,161 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
+  "GameNarrationActivityChangedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameNarrationStateChangeEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PreferredVoice",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Language",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Gender",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "GameNarrationOverrideStateChangeEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpeechAccessibilityModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ProfileUsers",
+        "Type": "TArray<Struct SpeechAccessibilityProfileUser>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpeechAccessibilityProfileUser": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HostId",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Settings",
+        "Type": "TArray<Struct SpeechAccessibilitySetting>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "IsSponsoredUser",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SpeechAccessibilitySetting": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SpeechAccessibilityOptions": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "GameChatSTT",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameChatTTS",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "PersonaID",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PersonaName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PersonaGender",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PersonaLang",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "GameTextSS",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "NarrationRequestedEvent": {
     "ClassSize": "0x1",
     "Attributes": []
@@ -45051,6 +45119,17 @@
   "ServerDeveloperTelemetryEvent": {
     "ClassSize": "0x28",
     "Attributes": []
+  },
+  "NetRelevancyTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NetRelevancyStatJson",
+        "Type": "Struct JsonObjectWrapper",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
   },
   "PlayerAggregatePositionTelemetryFragmentInput": {
     "ClassSize": "0x10",
@@ -47027,6 +47106,10 @@
         "Offset": "0x0"
       }
     ]
+  },
+  "CondensedPlayerStat": {
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "ForceStoryServiceRefreshEvent": {
     "ClassSize": "0x1",
@@ -50294,8 +50377,8 @@
         "Offset": "0x6c"
       },
       {
-        "Name": "ShouldPlayTeleportSFX",
-        "Type": "bool",
+        "Name": "TeleportAudioMode",
+        "Type": "byte",
         "Size": "0x1",
         "Offset": "0x6d"
       },
@@ -50374,6 +50457,10 @@
         "Offset": "0x10"
       }
     ]
+  },
+  "BlockedInputActionStateConstructionInfo": {
+    "ClassSize": "0x30",
+    "Attributes": []
   },
   "EventFiredFromActorEnd": {
     "ClassSize": "0x8",
@@ -50483,10 +50570,16 @@
         "Offset": "0x8"
       },
       {
+        "Name": "ShouldApplyWwiseSwitch",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x9"
+      },
+      {
         "Name": "TeleportNotificationSource",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x9"
+        "Offset": "0xa"
       }
     ]
   },
@@ -51234,7 +51327,7 @@
     ]
   },
   "CaptainsLogPartDesc": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "BookSkeletalMesh",
@@ -51247,6 +51340,12 @@
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x18"
+      },
+      {
+        "Name": "WaterloggedTexture",
+        "Type": "Class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x30"
       }
     ]
   },
@@ -52880,6 +52979,14 @@
       }
     ]
   },
+  "ShipSurfaceEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ShipDiveEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "BuoyancyStateChanged": {
     "ClassSize": "0x10",
     "Attributes": []
@@ -53752,16 +53859,16 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "ActionText",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x8"
-      },
-      {
         "Name": "ActionBindings",
         "Type": "Struct RadialActionBindings",
         "Size": "0x20",
-        "Offset": "0x40"
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ActionText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
       },
       {
         "Name": "AsLinkedRadial",
@@ -53821,8 +53928,15 @@
     "Attributes": []
   },
   "TooltipInvalidatedEvent": {
-    "ClassSize": "0x1",
-    "Attributes": []
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "SlotId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SecondaryInteractableNoLongerAvailableEvent": {
     "ClassSize": "0x1",
@@ -53841,7 +53955,7 @@
     "Attributes": []
   },
   "NarrateInteractablesSettingsEvent": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "NarrateInteractableText",
@@ -53878,6 +53992,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
+      },
+      {
+        "Name": "RenarrateAfterClosingMenus",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
       }
     ]
   },
@@ -56957,16 +57077,32 @@
         "Offset": "0x9c"
       },
       {
-        "Name": "CaptainHasUGCBlocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x9d"
-      },
-      {
         "Name": "LocalPlayerHasUGCBlocked",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x9e"
+        "Offset": "0x9d"
+      }
+    ]
+  },
+  "SendScrambledShipNamesToUIEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ScrambledShipNames",
+        "Type": "TArray<Struct FText>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RequestScrambledShipNamesEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "NumShipNamesRequested",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
       }
     ]
   },
@@ -60001,7 +60137,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "StoryFlag",
+        "Name": "Story",
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
@@ -61100,6 +61236,35 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x11"
+      }
+    ]
+  },
+  "ItemReactionItemProxyActionRuleParams": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "ItemReactionHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PressedNotificationInputId",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ReleasedNotificationInputId",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ItemReactionItemProxyText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x18"
       }
     ]
   },
@@ -68346,6 +68511,28 @@
       }
     ]
   },
+  "InvasionTunnelLoadedSceneryTileAssetEntryWrapper": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Data",
+        "Type": "TArray<Struct InvasionTunnelLoadedSceneryTileAssetEntry>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InvasionTunnelLoadedSceneryTileAssetEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StrongAssetPtr",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TunnelCreatureDiorama": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -68415,6 +68602,23 @@
       }
     ]
   },
+  "BakedInvasionTunnelSceneryTileInstances": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MeshType",
+        "Type": "Class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Instances",
+        "Type": "TArray<Struct Transform>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "ShipSpecificData": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -68450,6 +68654,46 @@
       {
         "Name": "BlendCurve",
         "Type": "Class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TunnelOfTheDamnedFactionThemedPopUpDesc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PopUpDesc",
+        "Type": "Class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FactionMusic": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "StopEvent",
+        "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -68549,6 +68793,23 @@
         "Type": "TArray<Class LadderTypes>",
         "Size": "0x10",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "CrewInTunnel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FullCrewInTunnel",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Faction",
+        "Type": "Class Company*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -68676,6 +68937,10 @@
       }
     ]
   },
+  "TunnelOfTheDamnedErrorOccurredEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
   "OnArrivalTunnelCompleteEvent": {
     "ClassSize": "0x10",
     "Attributes": []
@@ -68687,6 +68952,28 @@
   "TunnelOfTheDamnedMigrationAboutToStart": {
     "ClassSize": "0x10",
     "Attributes": []
+  },
+  "ShipLeftTunnelOfTheDamnedEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipEnteredTunnelOfTheDamnedEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "TeleportShipToTunnelEvent": {
     "ClassSize": "0x8",
@@ -68714,6 +69001,17 @@
       }
     ]
   },
+  "TunnelOfTheDamnedCancellationReminderNetworkEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "Class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "TunnelOfTheDamnedFailedNetworkEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -68737,6 +69035,14 @@
     "ClassSize": "0x4",
     "Attributes": []
   },
+  "EventPlayerExitedTunnelOfTheDamned": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventPlayerEnteredTunnelOfTheDamned": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "ArrivalTunnelOfTheDamnedActionStateConstructionInfo": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -68751,6 +69057,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x40"
+      },
+      {
+        "Name": "TeleportAudioMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x44"
       }
     ]
   },
@@ -68759,7 +69071,7 @@
     "Attributes": []
   },
   "ArrivalTunnelOfTheDamnedActionStateParams": {
-    "ClassSize": "0x24",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "FadeDuration",
@@ -68786,16 +69098,10 @@
         "Offset": "0xc"
       },
       {
-        "Name": "FadeAudio",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      },
-      {
         "Name": "ClientSetupResponseTimeout",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x20"
+        "Offset": "0x1c"
       }
     ]
   },
@@ -68866,7 +69172,7 @@
     ]
   },
   "EnterTunnelOfTheDamnedActionStateConstructionInfo": {
-    "ClassSize": "0x68",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "TunnelId",
@@ -68885,6 +69191,12 @@
         "Type": "Struct TeleportLocation",
         "Size": "0x30",
         "Offset": "0x38"
+      },
+      {
+        "Name": "TeleportAudioMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x68"
       }
     ]
   },
@@ -68921,7 +69233,7 @@
     "Attributes": []
   },
   "EnterTunnelOfTheDamnedActionStateParams": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x1c",
     "Attributes": [
       {
         "Name": "FadeDuration",
@@ -68946,12 +69258,6 @@
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0xc"
-      },
-      {
-        "Name": "FadeAudio",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1c"
       }
     ]
   },
@@ -69014,8 +69320,21 @@
     ]
   },
   "SinkingTunnelOfTheDamnedActionStateConstructionInfo": {
-    "ClassSize": "0x30",
-    "Attributes": []
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Seed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Entry",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
   },
   "SinkingTunnelOfTheDamnedActionStateParams": {
     "ClassSize": "0x20",
@@ -70043,8 +70362,66 @@
       }
     ]
   },
+  "SeaFortAlignmentFlagPoleAudioParams": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "WwisePool",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwiseEmitterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "RaiseFlagStartEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "RaiseFlagCompletedEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "LowerFlagStartEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "LowerFlagCompletedEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "AlignmentWorldMarkerParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "BelleWorldMarker",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReaperWorldMarker",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "AlignmentFlagActionRuleParams": {
-    "ClassSize": "0xf8",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "PressedNotificationInputId",
@@ -70069,52 +70446,28 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
-      },
-      {
-        "Name": "AddFlagText",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "RemoveFlagText",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "DefeatAllEnemiesText",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "EquipAlignmentFlagText",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0xc0"
       }
     ]
   },
   "AlignmentFlagMeshParams": {
-    "ClassSize": "0xa0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "BelleFlag",
         "Type": "Struct FlagMeshParams",
-        "Size": "0x50",
+        "Size": "0x18",
         "Offset": "0x0"
       },
       {
         "Name": "ReaperFlag",
         "Type": "Struct FlagMeshParams",
-        "Size": "0x50",
-        "Offset": "0x50"
+        "Size": "0x18",
+        "Offset": "0x18"
       }
     ]
   },
   "FlagMeshParams": {
-    "ClassSize": "0x50",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "FlagMesh",
@@ -70127,12 +70480,23 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "SeaFortAlignmentTableModelCosmeticDefaults": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ScalarParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
       },
       {
-        "Name": "FlagName",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x18"
+        "Name": "Curve",
+        "Type": "Class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -70153,26 +70517,26 @@
       }
     ]
   },
-  "SeaFortAlignmentTableModelCosmetic": {
-    "ClassSize": "0x18",
+  "FlagAlignmentCosmetic": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Alignment",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "ScalarParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMesh*",
+        "Name": "FlagMaterialDynamic",
+        "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "MaterialOverride",
-        "Type": "Class MaterialInterface*",
+        "Name": "Curve",
+        "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x20"
       }
     ]
   },
@@ -70216,9 +70580,39 @@
       }
     ]
   },
+  "AdventureFortAllignmentState": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "FortData",
+        "Type": "Class SeaFortDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SeaFortAlignmentTableDollHandedInEvent": {
+    "ClassSize": "0x2",
+    "Attributes": []
+  },
   "ResetAllSeaFortsEvent": {
     "ClassSize": "0x1",
     "Attributes": []
+  },
+  "ResetSeaFortAlignmentEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "CrewChangedSeaFortAlignmentEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SeaFortEnableFlagPoleInteractionEvent": {
     "ClassSize": "0x1",
@@ -70227,6 +70621,52 @@
   "SeaFortAlignmentChangedEvent": {
     "ClassSize": "0x2",
     "Attributes": []
+  },
+  "SeaFortAlignmentChangedTelemetryEvent": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "PreviousAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "SeaFortAlignmentDollHandinEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HandInAlignemnt",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsDollEnchanted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "FortsAlignedToHandInType",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
   },
   "SeaFortKeyPickedUpNetworkEvent": {
     "ClassSize": "0x20",
@@ -70969,31 +71409,26 @@
       }
     ]
   },
-  "EventLogDefinition": {
+  "StatEventDefinition": {
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "LogEntryText",
-        "Type": "Struct FText",
-        "Size": "0x38",
+        "Name": "StatId",
+        "Type": "Struct PlayerStat",
+        "Size": "0x4",
         "Offset": "0x0"
       },
-      {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StatEventDefinition": {
-    "ClassSize": "0x8",
-    "Attributes": [
       {
         "Name": "EventType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "LogEntryText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x8"
       }
     ]
   },
@@ -72221,6 +72656,61 @@
   "EventActorStartedUsingSeat": {
     "ClassSize": "0x1",
     "Attributes": []
+  },
+  "AthenaAnimationSinkingTunnelAnimData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Drowning",
+        "Type": "Class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AthenaAnimationSinkingTunnel": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "SinkingAnimData",
+        "Type": "Struct AthenaAnimationSinkingTunnelAnimData",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Activated",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DrowningAnimationsDataAsset",
+        "Type": "Class AthenaAnimationSinkingTunnelDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventPlayerExitedSinkingTunnelActionState": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "EventPlayerEnteredSinkingTunnelActionState": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Seed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Entry",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
   },
   "AthenaAnimationCapstan": {
     "ClassSize": "0x158",
@@ -78262,19 +78752,13 @@
     ]
   },
   "SendUserSettingsToServerRpc": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x18",
     "Attributes": [
-      {
-        "Name": "Controller",
-        "Type": "Class Controller*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
       {
         "Name": "ServerUserGameSettings",
         "Type": "Struct ServerUserGameSettings",
         "Size": "0x1",
-        "Offset": "0x18"
+        "Offset": "0x10"
       }
     ]
   },

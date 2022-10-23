@@ -86,28 +86,24 @@ MediaPlayer:
     Offset: '0xd8'
     Size: '0x8'
     Type: Struct Timespan
-  - Name: CachedMediaSource
-    Offset: '0xe0'
-    Size: '0x8'
-    Type: Class MediaSource*
   - Name: HorizontalFieldOfView
-    Offset: '0xe8'
+    Offset: '0xe0'
     Size: '0x4'
     Type: float
   - Name: VerticalFieldOfView
-    Offset: '0xec'
+    Offset: '0xe4'
     Size: '0x4'
     Type: float
   - Name: ViewRotation
-    Offset: '0xf0'
+    Offset: '0xe8'
     Size: '0xc'
     Type: Struct Rotator
   - Name: PlayerGuid
-    Offset: '0x160'
+    Offset: '0x158'
     Size: '0x10'
     Type: Struct Guid
-  ClassSize: '0x150'
-  FullSize: '0x178'
+  ClassSize: '0x148'
+  FullSize: '0x170'
   InheritedSize: '0x28'
   Super: Object
 MediaPlaylist:

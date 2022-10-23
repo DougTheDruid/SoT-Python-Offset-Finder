@@ -19,7 +19,7 @@ public:
 struct StoryDrivenAudioPortalSetting
 {
 public:
-	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
 	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
 	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
 };

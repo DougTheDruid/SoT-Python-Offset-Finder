@@ -294,6 +294,17 @@ public:
 };
 
 
+// Size 0x38
+struct WeightedAnimationLoadOnDemandDataMetaData
+{
+public:
+	TArray<Struct WeightedAnimationData>                         AnimationList;                                     // 0x0(0x10)
+	Struct FString                                               AssetName;                                         // 0x10(0x10)
+	Struct FString                                               FallbackSkeletonName;                              // 0x20(0x10)
+	bool                                                         FallbackValidAdditive;                             // 0x30(0x1)
+};
+
+
 // Size 0xc
 struct EventCustomAnimationMontageExitRequested
 {

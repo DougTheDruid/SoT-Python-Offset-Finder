@@ -6,11 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x18
 class BP_WarMap_C: public WarMapProposalContainer
 {
 public:
-	Class ChildActorComponent*                                   VoteInteraction;                                   // 0x768(0x8)
+	Class ChildActorComponent*                                   VoteInteractionHardMode;                           // 0x868(0x8)
+	Class ChildActorComponent*                                   VoteInteractionNormalMode;                         // 0x870(0x8)
+	Class ChildActorComponent*                                   VoteInteractionSingle;                             // 0x878(0x8)
 };
 
 

@@ -89,7 +89,7 @@
       },
       {
         "Name": "CollectionAsset",
-        "Type": "Class StoryDrivenAudioPortalCollectionDataAsset*",
+        "Type": "Class StoryDrivenAudioPortalDataAsset*",
         "Size": "0x8",
         "Offset": "0x310"
       }
@@ -129,7 +129,7 @@
       },
       {
         "Name": "CollectionAsset",
-        "Type": "Class StoryDrivenAudioPortalCollectionDataAsset*",
+        "Type": "Class StoryDrivenAudioPortalDataAsset*",
         "Size": "0x8",
         "Offset": "0x630"
       }
@@ -165,9 +165,9 @@
   },
   "StoryDrivenAudioPortalDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x48",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Feature",
@@ -176,24 +176,16 @@
         "Offset": "0x28"
       },
       {
-        "Name": "Stories",
+        "Name": "StoryResponses",
         "Type": "TArray<Struct StoryDrivenAudioPortalSetting>",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "StoryDrivenAudioPortalCollectionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
+      },
       {
         "Name": "AssetsList",
         "Type": "TArray<class StoryDrivenAudioPortalDataAsset*>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x48"
       }
     ]
   },

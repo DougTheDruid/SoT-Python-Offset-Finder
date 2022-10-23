@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_LegendaryTavern_C:
   Attributes:
-  - Name: None
+  - Name: EmissaryMaxRankQuestProvider
     Offset: '0x748'
     Size: '0x8'
     Type: Class EmissaryMaxRankQuestProvider*
-  - Name: None
+  - Name: SolidHits
     Offset: '0x750'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x758'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: NPCDialog
     Offset: '0x760'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: AnimNotifyWwiseEmitter
     Offset: '0x768'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*

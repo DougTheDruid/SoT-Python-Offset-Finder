@@ -77,7 +77,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StoryFlag",
+        "Name": "Story",
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
@@ -111,7 +111,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "StoryFlag",
+        "Name": "Story",
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
@@ -134,7 +134,7 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "StoryFlag",
+        "Name": "Story",
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
@@ -160,7 +160,7 @@
     ]
   },
   "InstancedLayerLocation": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "ActorWithInstancedLayerComponent",
@@ -169,21 +169,15 @@
         "Offset": "0x0"
       },
       {
-        "Name": "DevActorWithInstancedLayerComponent",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
         "Name": "LayerToSpawn",
         "Type": "Class LayerActorsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x20"
+        "Offset": "0x10"
       }
     ]
   },
   "NamedPointsActorLocation": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ActorWithNamedPointsComponent",
@@ -192,33 +186,21 @@
         "Offset": "0x0"
       },
       {
-        "Name": "DevActorWithNamedPointsComponent",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
         "Name": "GroupLocations",
         "Type": "TArray<Struct NamedPointsGroupActorLocation>",
         "Size": "0x10",
-        "Offset": "0x20"
+        "Offset": "0x10"
       }
     ]
   },
   "ActorLocationPair": {
-    "ClassSize": "0x40",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "SpawnLocation",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "DevSpawnLocation",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

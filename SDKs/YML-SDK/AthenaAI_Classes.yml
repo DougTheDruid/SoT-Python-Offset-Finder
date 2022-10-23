@@ -1331,33 +1331,27 @@ AIPerCrewSpawner:
   - Name: StoryOverrideRespawnSettingsAsset
     Offset: '0x450'
     Size: '0x8'
-    Type: Class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*
+    Type: Class AIPerCrewSpawnerSettingsStoryOverrideAsset*
   ClassSize: '0x140'
   FullSize: '0x578'
   InheritedSize: '0x438'
   Super: AISpawner
 AIPerCrewSpawnerSettingsStoryOverrideAsset:
   Attributes:
-  - Name: StoryOverrides
+  - Name: Feature
     Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<Struct AIPerCrewSpawnerStoryBasedRespawnSettings>
-  ClassSize: '0x10'
-  FullSize: '0x38'
-  InheritedSize: '0x28'
-  Super: DataAsset
-AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset:
-  Attributes:
-  - Name: StoryOverrideAssetList
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<class AIPerCrewSpawnerSettingsStoryOverrideAsset*>
-  - Name: StoryoverrideAssetCollectionList
+    Size: '0xc'
+    Type: Struct FeatureFlag
+  - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+    Type: TArray<Struct AIPerCrewSpawnerStoryBasedRespawnSettings>
+  - Name: AssetsList
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<class AIPerCrewSpawnerSettingsStoryOverrideAsset*>
+  ClassSize: '0x30'
+  FullSize: '0x58'
   InheritedSize: '0x28'
   Super: DataAsset
 AIPerPlayerSpawner:
@@ -5967,259 +5961,259 @@ PeriodicAINoiseEventComponent:
 Pet:
   Attributes:
   - Name: WieldableReactMappingsAsset
-    Offset: '0x8b0'
+    Offset: '0x8c0'
     Size: '0x8'
     Type: Class PetWieldableReactMappingsDataAsset*
   - Name: MaxVelocityForLocomotionAnimation
-    Offset: '0x8b8'
+    Offset: '0x8c8'
     Size: '0x4'
     Type: float
   - Name: CanFly
-    Offset: '0x8bc'
+    Offset: '0x8cc'
     Size: '0x1'
     Type: bool
   - Name: FlyingStrategyProperties
-    Offset: '0x8c0'
+    Offset: '0x8d0'
     Size: '0x10'
     Type: TArray<Struct PetFlyingStrategyProperties>
   - Name: FlyingLandTime
-    Offset: '0x8d0'
-    Size: '0x4'
-    Type: float
-  - Name: FlyingLandCurve
-    Offset: '0x8d8'
-    Size: '0x8'
-    Type: Class CurveFloat*
-  - Name: FlyingTakeOffTime
     Offset: '0x8e0'
     Size: '0x4'
     Type: float
-  - Name: FlyingTakeOffCurve
+  - Name: FlyingLandCurve
     Offset: '0x8e8'
     Size: '0x8'
     Type: Class CurveFloat*
-  - Name: MidFlightAdjustmentTimerRange
+  - Name: FlyingTakeOffTime
     Offset: '0x8f0'
+    Size: '0x4'
+    Type: float
+  - Name: FlyingTakeOffCurve
+    Offset: '0x8f8'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: MidFlightAdjustmentTimerRange
+    Offset: '0x900'
     Size: '0x10'
     Type: Struct FloatRange
   - Name: MidFlightAdjustmentCurve
-    Offset: '0x900'
+    Offset: '0x910'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: MidFlightTimeToDistanceAdjustmentCurve
-    Offset: '0x908'
+    Offset: '0x918'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: FiredFromActorCollision
-    Offset: '0x910'
+    Offset: '0x920'
     Size: '0x8'
     Type: struct FName
   - Name: FiredFromActorSFX
-    Offset: '0x918'
+    Offset: '0x928'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: DitherComponent
-    Offset: '0x920'
+    Offset: '0x930'
     Size: '0x8'
     Type: Class PetDitherComponent*
   - Name: MinimumDamageForHealthReact
-    Offset: '0x928'
-    Size: '0x4'
-    Type: float
-  - Name: MaxDistForWaterBucketToClean
-    Offset: '0x92c'
-    Size: '0x4'
-    Type: float
-  - Name: MinimumDurationUntilPetCanDespawnConcealed
-    Offset: '0x930'
-    Size: '0x4'
-    Type: float
-  - Name: DefaultNamePlateHeight
-    Offset: '0x934'
-    Size: '0x4'
-    Type: float
-  - Name: AlternateNamePlateHeight
     Offset: '0x938'
     Size: '0x4'
     Type: float
-  - Name: StatesToUseAlternateNamePlatePos
+  - Name: MaxDistForWaterBucketToClean
+    Offset: '0x93c'
+    Size: '0x4'
+    Type: float
+  - Name: MinimumDurationUntilPetCanDespawnConcealed
     Offset: '0x940'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultNamePlateHeight
+    Offset: '0x944'
+    Size: '0x4'
+    Type: float
+  - Name: AlternateNamePlateHeight
+    Offset: '0x948'
+    Size: '0x4'
+    Type: float
+  - Name: StatesToUseAlternateNamePlatePos
+    Offset: '0x950'
     Size: '0x10'
     Type: TArray<Byte StatesToUseAlternateNamePlatePos>
   - Name: PetTimeSpentSad
-    Offset: '0x950'
+    Offset: '0x960'
     Size: '0x10'
     Type: Struct FloatRange
   - Name: DebugStateDescriptor
-    Offset: '0x960'
+    Offset: '0x970'
     Size: '0x1'
     Type: byte
   - Name: AINameplateComponent
-    Offset: '0x968'
+    Offset: '0x978'
     Size: '0x8'
     Type: Class PetNameplateComponent*
   - Name: FeedingComponent
-    Offset: '0x970'
+    Offset: '0x980'
     Size: '0x8'
     Type: Class FeedingComponent*
   - Name: StarvingComponent
-    Offset: '0x978'
+    Offset: '0x988'
     Size: '0x8'
     Type: Class StarvingComponent*
   - Name: CleanlinessComponent
-    Offset: '0x980'
+    Offset: '0x990'
     Size: '0x8'
     Type: Class CleanlinessComponent*
   - Name: CannonSquashComponent
-    Offset: '0x988'
+    Offset: '0x998'
     Size: '0x8'
     Type: Class CannonSquashComponent*
   - Name: ReplicatedMovementRequest
-    Offset: '0x990'
+    Offset: '0x9a0'
     Size: '0xc'
     Type: Struct PetMovementRequest
   - Name: TargetMeshRoll
-    Offset: '0x99c'
+    Offset: '0x9ac'
     Size: '0x4'
     Type: float
   - Name: DefaultShipTurnRateModifier
-    Offset: '0x9b0'
+    Offset: '0x9c0'
     Size: '0x4'
     Type: float
   - Name: TurnRateModifierList
-    Offset: '0x9b8'
+    Offset: '0x9c8'
     Size: '0x10'
     Type: TArray<Struct PetTurnRateModifier>
   - Name: LocomotingMovementStates
-    Offset: '0x9c8'
+    Offset: '0x9d8'
     Size: '0x10'
     Type: TArray<Byte LocomotingMovementStates>
   - Name: RequestIdleOrMovementValidMovementStates
-    Offset: '0x9d8'
+    Offset: '0x9e8'
     Size: '0x10'
     Type: TArray<Byte RequestIdleOrMovementValidMovementStates>
   - Name: MaxRollAngle
-    Offset: '0x9e8'
+    Offset: '0x9f8'
     Size: '0x4'
     Type: float
   - Name: DelayForDisablingMovementOnIdle
-    Offset: '0x9ec'
+    Offset: '0x9fc'
     Size: '0x4'
     Type: float
   - Name: IslandDustRatePerSecond
-    Offset: '0x9f0'
+    Offset: '0xa00'
     Size: '0x4'
     Type: float
   - Name: CrewId
-    Offset: '0x9f4'
+    Offset: '0xa04'
     Size: '0x10'
     Type: Struct Guid
   - Name: InHangout
-    Offset: '0xa04'
+    Offset: '0xa14'
     Size: '0x1'
     Type: bool
   - Name: PerchedInHangout
-    Offset: '0xa05'
+    Offset: '0xa15'
     Size: '0x1'
     Type: bool
   - Name: ResetRollAndZOffset
-    Offset: '0xa06'
+    Offset: '0xa16'
     Size: '0x1'
     Type: bool
   - Name: ShouldIgnoreTooltipDisplayOffset
-    Offset: '0xa07'
+    Offset: '0xa17'
     Size: '0x1'
     Type: bool
   - Name: PetTurnToFaceData
-    Offset: '0xa10'
+    Offset: '0xa20'
     Size: '0x20'
     Type: Struct PetTurnToFaceData
   - Name: MaximumSubmergedWaterDepthBeforeDespawn
-    Offset: '0xa30'
+    Offset: '0xa40'
     Size: '0x4'
     Type: float
   - Name: AIPartsRetrievalComponent
-    Offset: '0xa58'
+    Offset: '0xa68'
     Size: '0x8'
     Type: Class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
-    Offset: '0xa60'
+    Offset: '0xa70'
     Size: '0x8'
     Type: Class PetPartCustomisationComponent*
   - Name: LightWeightStatusEffectManagerComponent
-    Offset: '0xa68'
+    Offset: '0xa78'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: TelemetryComponent
-    Offset: '0xa70'
+    Offset: '0xa80'
     Size: '0x8'
     Type: Class PetTelemetryComponent*
   - Name: SicknessComponent
-    Offset: '0xa78'
+    Offset: '0xa88'
     Size: '0x8'
     Type: Class PetSicknessComponent*
   - Name: WaterExposureComponent
-    Offset: '0xa80'
+    Offset: '0xa90'
     Size: '0x8'
     Type: Class WaterExposureComponent*
   - Name: AnimationDataStoreComponent
-    Offset: '0xa88'
+    Offset: '0xa98'
     Size: '0x8'
     Type: Class AnimationDataStoreComponent*
   - Name: SpawnedForShip
-    Offset: '0xa90'
+    Offset: '0xaa0'
     Size: '0x8'
     Type: Class Actor*
   - Name: PetOwner
-    Offset: '0xa98'
+    Offset: '0xaa8'
     Size: '0x8'
     Type: Class Actor*
   - Name: PetInfo
-    Offset: '0xaa0'
+    Offset: '0xab0'
     Size: '0x8'
     Type: Class ItemInfo*
   - Name: Docker
-    Offset: '0xab0'
+    Offset: '0xac0'
     Size: '0x50'
     Type: Struct Docker
   - Name: StartPickupObjectActionRuleParams
-    Offset: '0xb00'
+    Offset: '0xb10'
     Size: '0x10'
     Type: Struct StartPickupObjectActionRuleParams
   - Name: CurrentlyPlayingParticleSystem
-    Offset: '0xb20'
+    Offset: '0xb30'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: LandingStrategy
-    Offset: '0xb28'
+    Offset: '0xb38'
     Size: '0x8'
     Type: class
   - Name: PursuitStrategy
-    Offset: '0xb30'
+    Offset: '0xb40'
     Size: '0x8'
     Type: class
   - Name: DefaultRollLerpTime
-    Offset: '0xb38'
+    Offset: '0xb48'
     Size: '0x4'
     Type: float
   - Name: LandingRollLerpTime
-    Offset: '0xb3c'
+    Offset: '0xb4c'
     Size: '0x4'
     Type: float
   - Name: IsBeingDismissed
-    Offset: '0xb40'
+    Offset: '0xb50'
     Size: '0x1'
     Type: bool
   - Name: IsInDisabledPetPerchHangout
-    Offset: '0xc2c'
+    Offset: '0xc3c'
     Size: '0x1'
     Type: bool
   - Name: PetIsSad
-    Offset: '0xc2d'
+    Offset: '0xc3d'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x460'
-  FullSize: '0xc70'
+  ClassSize: '0x470'
+  FullSize: '0xc80'
   InheritedSize: '0x810'
   Super: AICreatureCharacter
 PetDitherComponent:
@@ -6231,7 +6225,7 @@ PetDitherComponent:
 PetNameplateComponent:
   Attributes:
   - Name: DefaultPetName
-    Offset: '0x478'
+    Offset: '0x488'
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x20'

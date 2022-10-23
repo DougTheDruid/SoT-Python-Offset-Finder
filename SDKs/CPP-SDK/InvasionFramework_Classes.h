@@ -14,14 +14,7 @@ public:
 
 
 // Size 0x0
-class EnvQueryGenerator_AggressiveAggressiveSpawnLocations: public EnvQueryGenerator
-{
-public:
-};
-
-
-// Size 0x0
-class GetInvasionBattleLocationStep: public TaleQuestStep
+class DisplayInvasionBannersStep: public TaleQuestStep
 {
 public:
 };
@@ -43,6 +36,31 @@ public:
 	Struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
 	Struct FText                                                 FactionGBannerTag;                                 // 0x98(0x38)
 	Struct FText                                                 FactionBBannerTag;                                 // 0xd0(0x38)
+};
+
+
+// Size 0xa0
+class DisplayInvasionBannersStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct FText                                                 Message;                                           // 0x80(0x38)
+	bool                                                         DisableMusic;                                      // 0xb8(0x1)
+	Struct QuestVariableGuid                                     DisplayShipsNameForCrewId;                         // 0xc0(0x30)
+	Struct QuestVariableName                                     DisplayBannersForFaction;                          // 0xf0(0x30)
+};
+
+
+// Size 0x0
+class EnvQueryGenerator_AggressiveAggressiveSpawnLocations: public EnvQueryGenerator
+{
+public:
+};
+
+
+// Size 0x0
+class GetInvasionBattleLocationStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -78,7 +96,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 class InvasionBattleBounds: public Actor
 {
 public:
@@ -87,6 +105,7 @@ public:
 	Class Actor*                                                 ShipToTrack2;                                      // 0x3d8(0x8)
 	float                                                        InnerRadius;                                       // 0x3e0(0x4)
 	float                                                        OuterRadius;                                       // 0x3e4(0x4)
+	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x3f0(0x10)
 };
 
 
@@ -141,18 +160,18 @@ public:
 };
 
 
-// Size 0x1d8
+// Size 0x1f0
 class InvasionService: public Actor
 {
 public:
 	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x408(0x8)
 	Class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x410(0x8)
-	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x4f0(0x10)
-	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x500(0x10)
-	TArray<Struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x510(0x10)
-	TArray<Struct Guid>                                          MatchmakingCrewsReplicated;                        // 0x520(0x10)
-	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x530(0x10)
-	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x540(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x508(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x518(0x10)
+	TArray<Struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x528(0x10)
+	TArray<Struct InvasionServiceMatchmakingCrewInfo>            MatchmakingCrewsReplicated;                        // 0x538(0x10)
+	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x548(0x10)
+	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x558(0x10)
 };
 
 
@@ -219,14 +238,14 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x18
 class WaitForShipToBeDefeatedStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x168
+// Size 0x160
 class WaitForShipToBeDefeatedStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -236,10 +255,8 @@ public:
 	Struct QuestVariableGuid                                     DefeatedCrewId;                                    // 0x110(0x30)
 	Struct QuestVariableName                                     WinningFaction;                                    // 0x140(0x30)
 	Struct QuestVariableName                                     DefeatedFaction;                                   // 0x170(0x30)
-	float                                                        CheckProximityTimerInterval;                       // 0x1a0(0x4)
-	float                                                        CheckProximityDistanceInMetres;                    // 0x1a4(0x4)
-	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x1a8(0x4)
-	Struct FText                                                 FailMessage;                                       // 0x1b0(0x38)
+	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x1a0(0x4)
+	Struct FText                                                 FailMessage;                                       // 0x1a8(0x38)
 };
 
 

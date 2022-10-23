@@ -28,20 +28,156 @@
       }
     ]
   },
-  "StreakParticles": {
-    "ClassSize": "0x10",
+  "KillStreakRibbonEvent": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "Particles",
-        "Type": "Class ParticleSystem*",
-        "Size": "0x8",
+        "Name": "HourGlassPreValue",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "PartType",
+        "Name": "HourGlassPostValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "HourGlassIncrement",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "KillStreakHideEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "KillStreakShowEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "UpdateKillStreakEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "NewLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DeactivateKillStreakEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
+  "ActivateKillStreakEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "FactionId",
         "Type": "byte",
         "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DeactivateKillStreakNetworkEvent": {
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "ActivateKillStreakNetworkEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FactionId",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "FactionShipSunkUIEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "OpponentFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipName",
+        "Type": "Struct FString",
+        "Size": "0x10",
         "Offset": "0x8"
+      },
+      {
+        "Name": "MyKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TheirKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "FactionShipSunkNetworkEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "OpponentFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OpponentCrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "MyKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "TheirKillStreak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SandsOfFateBefore",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "SandsOfFateAfter",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "FactionPopupEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "Class DataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -75,23 +211,6 @@
         "Name": "PartType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "StreakCompanyParticles": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ParticleData",
-        "Type": "TArray<Struct StreakParticles>",
-        "Size": "0x10",
         "Offset": "0x8"
       }
     ]
@@ -201,12 +320,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
-      },
-      {
-        "Name": "IsUpdate",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc"
       }
     ]
   },
@@ -261,74 +374,9 @@
       }
     ]
   },
-  "FactionShipSunkUIEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "OpponentFaction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ShipName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MyKillStreak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "TheirKillStreak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "FactionShipSunkNetworkEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "OpponentFaction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "OpponentCrewId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "MyKillStreak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "TheirKillStreak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "FactionPopupEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PopUpDesc",
-        "Type": "Class DataAsset*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
+  "EventLocalPlayerApproachedHourglass": {
+    "ClassSize": "0x1",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

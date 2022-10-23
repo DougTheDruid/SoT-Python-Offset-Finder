@@ -29,7 +29,11 @@ CrewFactionEntry:
     Offset: '0x1c'
     Size: '0x4'
     Type: int
-  ClassSize: '0x20'
+  - Name: LeaveFactionCooldownTimeStamp
+    Offset: '0x20'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x28'
 CrewFactionEntryData:
   Attributes:
   - Name: CrewId
@@ -54,47 +58,47 @@ CrewFactionEntryData:
     Type: int
   - Name: CooldownTimeStamp
     Offset: '0x30'
-    Size: '0x4'
-    Type: float
+    Size: '0x8'
+    Type: double
   - Name: IsInInvasion
-    Offset: '0x34'
+    Offset: '0x38'
     Size: '0x1'
     Type: bool
   - Name: EligibleLootBootyIds
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: CurrentLootValue
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x4'
     Type: int
   - Name: HasDisplayedPromptForLootLevel
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x10'
     Type: TArray<Bool HasDisplayedPromptForLootLevel>
-  ClassSize: '0x70'
+  ClassSize: '0x68'
 CrewFactionTelemetryData:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
     Type: Struct Guid
-  - Name: Faction
+  - Name: SessionId
     Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Faction
+    Offset: '0x20'
     Size: '0x8'
     Type: struct FName
   - Name: Streak
-    Offset: '0x18'
+    Offset: '0x28'
     Size: '0x4'
     Type: int
   - Name: SandsOfFate
-    Offset: '0x1c'
+    Offset: '0x2c'
     Size: '0x4'
     Type: int
-  - Name: CrewsAlreadySunk
-    Offset: '0x20'
-    Size: '0x10'
-    Type: TArray<Struct Guid>
   ClassSize: '0x30'
 CrewJoinedFaction:
   Attributes:
@@ -229,13 +233,32 @@ FactionStreakLevelData:
     Size: '0x4'
     Type: int
   ClassSize: '0x8'
+FactionWaitTimesData:
+  Attributes:
+  - Name: Faction
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: SessionType
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: AverageWaitTime
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Struct Timespan
+  - Name: MaxWaitTime
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct Timespan
+  ClassSize: '0x18'
 SandsOfFateData:
   Attributes:
-  - Name: SinkingCrewStreak
+  - Name: SinkingCrewStreakLevel
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: SunkCrewStreak
+  - Name: SunkCrewStreakLevel
     Offset: '0x4'
     Size: '0x4'
     Type: int

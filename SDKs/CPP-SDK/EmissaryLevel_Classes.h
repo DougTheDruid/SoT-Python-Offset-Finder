@@ -45,12 +45,13 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x40
 class EmissaryFlotsamItemInfo: public BootyItemInfo
 {
 public:
 	Struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x730(0x18)
-	bool                                                         FlotsamCanBeDuplicated;                            // 0x748(0x1)
+	Struct CompanySpecificBootyReward                            AlternateHandInOwnFlotsamReward;                   // 0x748(0x18)
+	bool                                                         FlotsamCanBeDuplicated;                            // 0x760(0x1)
 };
 
 
@@ -145,11 +146,11 @@ public:
 class EmissaryShipAffiliationTrackerComponent: public SceneComponent
 {
 public:
-	int                                                          EmissaryCount;                                     // 0x2e0(0x4)
-	class                                                        TrackedCompany;                                    // 0x2e8(0x8)
-	TArray<Struct Transform>                                     EmissaryRepresentationTransforms;                  // 0x310(0x10)
-	TArray<class StaticMeshComponent*>                           EmissaryRepresentationMeshes;                      // 0x320(0x10)
-	class                                                        LoadedEmissaryRepresentationMesh;                  // 0x330(0x8)
+	class                                                        TrackedCompany;                                    // 0x2e0(0x8)
+	TArray<Struct Transform>                                     EmissaryRepresentationTransforms;                  // 0x308(0x10)
+	TArray<class StaticMeshComponent*>                           EmissaryRepresentationMeshes;                      // 0x318(0x10)
+	class                                                        LoadedEmissaryRepresentationMesh;                  // 0x328(0x8)
+	int                                                          EmissaryCount;                                     // 0x330(0x4)
 };
 
 

@@ -430,6 +430,25 @@ WeightedAnimationData:
     Size: '0x4'
     Type: float
   ClassSize: '0x18'
+WeightedAnimationLoadOnDemandDataMetaData:
+  Attributes:
+  - Name: AnimationList
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct WeightedAnimationData>
+  - Name: AssetName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FallbackSkeletonName
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: FallbackValidAdditive
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x38'
 WeightedAnimationTimeout:
   Attributes:
   - Name: TimeoutRange

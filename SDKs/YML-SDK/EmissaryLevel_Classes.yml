@@ -52,12 +52,16 @@ EmissaryFlotsamItemInfo:
     Offset: '0x730'
     Size: '0x18'
     Type: Struct CompanySpecificBootyReward
-  - Name: FlotsamCanBeDuplicated
+  - Name: AlternateHandInOwnFlotsamReward
     Offset: '0x748'
+    Size: '0x18'
+    Type: Struct CompanySpecificBootyReward
+  - Name: FlotsamCanBeDuplicated
+    Offset: '0x760'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x28'
-  FullSize: '0x750'
+  ClassSize: '0x40'
+  FullSize: '0x768'
   InheritedSize: '0x728'
   Super: BootyItemInfo
 EmissaryFlotsamItemSpawnComponent:
@@ -212,26 +216,26 @@ EmissaryRewardSettingsAsset:
   Super: DataAsset
 EmissaryShipAffiliationTrackerComponent:
   Attributes:
-  - Name: EmissaryCount
-    Offset: '0x2e0'
-    Size: '0x4'
-    Type: int
   - Name: TrackedCompany
-    Offset: '0x2e8'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: class
   - Name: EmissaryRepresentationTransforms
-    Offset: '0x310'
+    Offset: '0x308'
     Size: '0x10'
     Type: TArray<Struct Transform>
   - Name: EmissaryRepresentationMeshes
-    Offset: '0x320'
+    Offset: '0x318'
     Size: '0x10'
     Type: TArray<class StaticMeshComponent*>
   - Name: LoadedEmissaryRepresentationMesh
-    Offset: '0x330'
+    Offset: '0x328'
     Size: '0x8'
     Type: class
+  - Name: EmissaryCount
+    Offset: '0x330'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x70'
   FullSize: '0x350'
   InheritedSize: '0x2e0'

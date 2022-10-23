@@ -2724,7 +2724,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "StoryFlag",
+        "Name": "Story",
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0xc"

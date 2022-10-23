@@ -86,7 +86,11 @@ BP_Crest_C:
     Offset: '0x53c'
     Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x100'
-  FullSize: '0x548'
+  - Name: TextHiddenThroughTutorial
+    Offset: '0x548'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x101'
+  FullSize: '0x549'
   InheritedSize: '0x448'
   Super: Crest

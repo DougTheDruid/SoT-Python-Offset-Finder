@@ -126,7 +126,7 @@
         "Offset": "0x460"
       },
       {
-        "Name": "map_deck",
+        "Name": "Map_Deck",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x468"

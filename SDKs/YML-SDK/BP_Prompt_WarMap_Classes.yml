@@ -37,7 +37,7 @@ BP_Prompt_WarMap_C:
   - Name: CurrentFaction
     Offset: '0x248'
     Size: '0x8'
-    Type: class
+    Type: Class Company*
   ClassSize: '0x138'
   FullSize: '0x250'
   InheritedSize: '0x118'

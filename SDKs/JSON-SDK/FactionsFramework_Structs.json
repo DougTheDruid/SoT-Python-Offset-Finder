@@ -54,13 +54,13 @@
     "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "SinkingCrewStreak",
+        "Name": "SinkingCrewStreakLevel",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "SunkCrewStreak",
+        "Name": "SunkCrewStreakLevel",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
@@ -74,7 +74,7 @@
     ]
   },
   "CrewFactionEntry": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -99,11 +99,17 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "LeaveFactionCooldownTimeStamp",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
   "CrewFactionEntryData": {
-    "ClassSize": "0x70",
+    "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -137,33 +143,33 @@
       },
       {
         "Name": "CooldownTimeStamp",
-        "Type": "float",
-        "Size": "0x4",
+        "Type": "double",
+        "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "IsInInvasion",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x34"
+        "Offset": "0x38"
       },
       {
         "Name": "EligibleLootBootyIds",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x40"
       },
       {
         "Name": "CurrentLootValue",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x48"
+        "Offset": "0x50"
       },
       {
         "Name": "HasDisplayedPromptForLootLevel",
         "Type": "TArray<Bool HasDisplayedPromptForLootLevel>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x58"
       }
     ]
   },
@@ -177,28 +183,28 @@
         "Offset": "0x0"
       },
       {
+        "Name": "SessionId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
         "Name": "Faction",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x20"
       },
       {
         "Name": "Streak",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x18"
+        "Offset": "0x28"
       },
       {
         "Name": "SandsOfFate",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "CrewsAlreadySunk",
-        "Type": "TArray<Struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x20"
+        "Offset": "0x2c"
       }
     ]
   },
@@ -368,6 +374,35 @@
       {
         "Name": "AlignedFactionName",
         "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "FactionWaitTimesData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "AverageWaitTime",
+        "Type": "Struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaxWaitTime",
+        "Type": "Struct Timespan",
         "Size": "0x8",
         "Offset": "0x10"
       }

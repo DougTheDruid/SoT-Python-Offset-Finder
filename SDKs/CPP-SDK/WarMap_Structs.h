@@ -7,10 +7,25 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
+struct WarMapVoteAddedEvent
+{
+public:
+	Class Actor*                                                 Voter;                                             // 0x0(0x8)
+};
+
+
+// Size 0x8
 struct EventLocalPlayerOpenedWarMap
 {
 public:
-	class                                                        Faction;                                           // 0x0(0x8)
+	Class Company*                                               Faction;                                           // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventWarMapHardModeStateChanged
+{
+public:
 };
 
 

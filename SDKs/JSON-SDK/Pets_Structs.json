@@ -621,6 +621,17 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
+  "EventPetInfoAssigned": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PetInfo",
+        "Type": "Class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventPetOwnerAssigned": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -929,6 +940,17 @@
         "Name": "Actor",
         "Type": "Class Actor*",
         "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventPetUGCBlockStateChanged": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsPetUGCBlocked",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]

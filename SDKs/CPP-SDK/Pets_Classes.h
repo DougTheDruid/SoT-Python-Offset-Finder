@@ -181,6 +181,13 @@ public:
 
 
 // Size 0x0
+class PetUGCNameInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class PetLifetimeInterface: public Interface
 {
 public:
@@ -188,7 +195,14 @@ public:
 
 
 // Size 0x0
-class PlayerPetInterface: public Interface
+class PetOwnerIdentityInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
+class PetSpawnOnShipInterface: public Interface
 {
 public:
 };
@@ -382,16 +396,17 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x80
 class PetItemInfo: public NonStorableItemInfo
 {
 public:
-	Struct PetCustomisation                                      PetCustomisation;                                  // 0x528(0x28)
-	Class Actor*                                                 PetOwner;                                          // 0x550(0x8)
-	Class Actor*                                                 SpawnedForShip;                                    // 0x558(0x8)
-	float                                                        DropTraceDistance;                                 // 0x560(0x4)
-	float                                                        PointSearchRadius;                                 // 0x564(0x4)
-	byte                                                         DropChannel;                                       // 0x568(0x1)
+	Class Actor*                                                 SpawnedForShip;                                    // 0x530(0x8)
+	float                                                        DropTraceDistance;                                 // 0x538(0x4)
+	float                                                        PointSearchRadius;                                 // 0x53c(0x4)
+	byte                                                         DropChannel;                                       // 0x540(0x1)
+	Class Actor*                                                 PetOwner;                                          // 0x548(0x8)
+	Struct PetCustomisation                                      PetCustomisation;                                  // 0x550(0x28)
+	Class PetUGCNameComponent*                                   PetUGCNameComponent;                               // 0x578(0x8)
 };
 
 
@@ -499,6 +514,15 @@ public:
 };
 
 
+// Size 0x40
+class PetUGCNameComponent: public ActorComponent
+{
+public:
+	Struct FString                                               DefaultPetName;                                    // 0xe0(0x10)
+	Struct FString                                               CustomisedPetName;                                 // 0xf0(0x10)
+};
+
+
 // Size 0x0
 class ReactAIStrategyId: public AIStrategyId
 {
@@ -518,28 +542,28 @@ public:
 class WieldablePet: public SkeletalMeshWieldableItem
 {
 public:
-	float                                                        ThirdPersonScalingModifier;                        // 0x7b0(0x4)
-	Class WieldablePetComponent*                                 WieldablePetComponent;                             // 0x7b8(0x8)
-	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0x7c0(0x8)
-	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0x7c8(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitterComponent;                   // 0x7d0(0x8)
-	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0x7d8(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x7e0(0x8)
-	Class PickupableComponent*                                   PickupableComponent;                               // 0x7e8(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x7f0(0x8)
-	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x7f8(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0x800(0x8)
-	Class PetDitherComponent*                                    PetDitherComponent;                                // 0x808(0x8)
-	Class Actor*                                                 PetOwner;                                          // 0x810(0x8)
-	Class FeedingComponent*                                      FeedingComponent;                                  // 0x818(0x8)
-	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0x820(0x8)
-	Class WieldablePetHungerComponent*                           HungerComponent;                                   // 0x828(0x8)
-	Class StarvingComponent*                                     StarvingComponent;                                 // 0x830(0x8)
-	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0x838(0x8)
-	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0x840(0x8)
-	bool                                                         SubmergedStrokingEnabled;                          // 0x848(0x1)
-	byte                                                         HungerReactAnimationState;                         // 0x8b8(0x1)
-	byte                                                         DropRequest;                                       // 0x8b9(0x1)
+	float                                                        ThirdPersonScalingModifier;                        // 0x7b8(0x4)
+	Class WieldablePetComponent*                                 WieldablePetComponent;                             // 0x7c0(0x8)
+	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0x7c8(0x8)
+	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0x7d0(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitterComponent;                   // 0x7d8(0x8)
+	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0x7e0(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x7e8(0x8)
+	Class PickupableComponent*                                   PickupableComponent;                               // 0x7f0(0x8)
+	Class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x7f8(0x8)
+	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x800(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0x808(0x8)
+	Class PetDitherComponent*                                    PetDitherComponent;                                // 0x810(0x8)
+	Class Actor*                                                 PetOwner;                                          // 0x818(0x8)
+	Class FeedingComponent*                                      FeedingComponent;                                  // 0x820(0x8)
+	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0x828(0x8)
+	Class WieldablePetHungerComponent*                           HungerComponent;                                   // 0x830(0x8)
+	Class StarvingComponent*                                     StarvingComponent;                                 // 0x838(0x8)
+	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0x840(0x8)
+	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0x848(0x8)
+	bool                                                         SubmergedStrokingEnabled;                          // 0x850(0x1)
+	byte                                                         HungerReactAnimationState;                         // 0x8c0(0x1)
+	byte                                                         DropRequest;                                       // 0x8c1(0x1)
 };
 
 

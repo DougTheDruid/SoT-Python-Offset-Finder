@@ -3,110 +3,110 @@
 BP_PlayerPirate_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x1b60'
+    Offset: '0x1bf0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: WorldVelocityTracker
-    Offset: '0x1b68'
+    Offset: '0x1bf8'
     Size: '0x8'
     Type: Class WorldVelocityTrackerComponent*
   - Name: ChainLightningReceiver
-    Offset: '0x1b70'
+    Offset: '0x1c00'
     Size: '0x8'
     Type: Class ChainLightningReceiverComponent*
   - Name: StatusApplicationMonitor
-    Offset: '0x1b78'
+    Offset: '0x1c08'
     Size: '0x8'
     Type: Class StatusApplicationMonitorComponent*
   - Name: ReviveComponent
-    Offset: '0x1b80'
+    Offset: '0x1c10'
     Size: '0x8'
     Type: Class ReviveComponent*
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x1b88'
+    Offset: '0x1c18'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   - Name: Vomit
-    Offset: '0x1b90'
+    Offset: '0x1c20'
     Size: '0x8'
     Type: Class VomitComponent*
   - Name: NoiseMaker
-    Offset: '0x1b98'
+    Offset: '0x1c28'
     Size: '0x8'
     Type: Class NoiseMakerComponent*
   - Name: PlayerNameplate
-    Offset: '0x1ba0'
+    Offset: '0x1c30'
     Size: '0x8'
     Type: Class PlayerNameplateComponent*
   - Name: BodyLightController
-    Offset: '0x1ba8'
+    Offset: '0x1c38'
     Size: '0x8'
     Type: Class BodyLightControllerComponent*
   - Name: BodyLight
-    Offset: '0x1bb0'
+    Offset: '0x1c40'
     Size: '0x8'
     Type: Class AmbientLightSourceComponent*
   - Name: AudioSpaceTracker
-    Offset: '0x1bb8'
+    Offset: '0x1c48'
     Size: '0x8'
     Type: Class AudioSpaceTrackerComponent*
   - Name: PlayerAtmosphericsAudio
-    Offset: '0x1bc0'
+    Offset: '0x1c50'
     Size: '0x8'
     Type: Class PlayerAtmosphericsAudioComponent*
   - Name: BP_CharacterVFXComponent
-    Offset: '0x1bc8'
+    Offset: '0x1c58'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_CharacterVFXComponent_C*
   - Name: WaterInteraction
-    Offset: '0x1bd0'
+    Offset: '0x1c60'
     Size: '0x8'
     Type: Class WaterInteractionComponent*
   - Name: BP_PlayerAudioComponent
-    Offset: '0x1bd8'
+    Offset: '0x1c68'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_CharacterAudioComponent_C*
   - Name: CharacterFootImpact
-    Offset: '0x1be0'
+    Offset: '0x1c70'
     Size: '0x8'
     Type: Class CharacterFootImpactComponent*
   - Name: PlayerOceanAudio
-    Offset: '0x1be8'
+    Offset: '0x1c78'
     Size: '0x8'
     Type: Class PlayerOceanAudioComponent*
   - Name: TattooGlowDuration
-    Offset: '0x1bf0'
+    Offset: '0x1c80'
     Size: '0x4'
     Type: float
   - Name: CurrentStaticMesh
-    Offset: '0x1bf8'
+    Offset: '0x1c88'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: CurrentSkeletalMesh
-    Offset: '0x1c00'
+    Offset: '0x1c90'
     Size: '0x8'
     Type: Class SkeletalMesh*
   - Name: SkeletalMeshArray
-    Offset: '0x1c08'
+    Offset: '0x1c98'
     Size: '0x10'
     Type: TArray<class SkeletalMesh*>
   - Name: StaticMeshArray
-    Offset: '0x1c18'
+    Offset: '0x1ca8'
     Size: '0x10'
     Type: TArray<class StaticMesh*>
   - Name: IsSkeletalMesh
-    Offset: '0x1c28'
+    Offset: '0x1cb8'
     Size: '0x1'
     Type: bool
   - Name: ItemSelectArray
-    Offset: '0x1c2c'
+    Offset: '0x1cbc'
     Size: '0x4'
     Type: int
   - Name: ItemScale
-    Offset: '0x1c30'
+    Offset: '0x1cc0'
     Size: '0xc'
     Type: Struct Vector
   ClassSize: '0xdc'
-  FullSize: '0x1c3c'
-  InheritedSize: '0x1b60'
+  FullSize: '0x1ccc'
+  InheritedSize: '0x1bf0'
   Super: AthenaPlayerCharacter

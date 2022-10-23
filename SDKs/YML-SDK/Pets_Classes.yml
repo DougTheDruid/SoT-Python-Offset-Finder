@@ -492,32 +492,36 @@ PetIdleMovementInterface:
   Super: Interface
 PetItemInfo:
   Attributes:
-  - Name: PetCustomisation
-    Offset: '0x528'
-    Size: '0x28'
-    Type: Struct PetCustomisation
-  - Name: PetOwner
-    Offset: '0x550'
-    Size: '0x8'
-    Type: Class Actor*
   - Name: SpawnedForShip
-    Offset: '0x558'
+    Offset: '0x530'
     Size: '0x8'
     Type: Class Actor*
   - Name: DropTraceDistance
-    Offset: '0x560'
+    Offset: '0x538'
     Size: '0x4'
     Type: float
   - Name: PointSearchRadius
-    Offset: '0x564'
+    Offset: '0x53c'
     Size: '0x4'
     Type: float
   - Name: DropChannel
-    Offset: '0x568'
+    Offset: '0x540'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x70'
-  FullSize: '0x580'
+  - Name: PetOwner
+    Offset: '0x548'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: PetCustomisation
+    Offset: '0x550'
+    Size: '0x28'
+    Type: Struct PetCustomisation
+  - Name: PetUGCNameComponent
+    Offset: '0x578'
+    Size: '0x8'
+    Type: Class PetUGCNameComponent*
+  ClassSize: '0x80'
+  FullSize: '0x590'
   InheritedSize: '0x510'
   Super: NonStorableItemInfo
 PetLifetimeInterface:
@@ -558,6 +562,12 @@ PetOwnerComponent:
   FullSize: '0xe8'
   InheritedSize: '0xc8'
   Super: ActorComponent
+PetOwnerIdentityInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 PetOwnerInterface:
   Attributes: []
   ClassSize: '0x0'
@@ -610,6 +620,12 @@ PetReactInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+PetSpawnOnShipInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 PetSpawnParamsDataAsset:
   Attributes:
   - Name: PetClassID
@@ -632,6 +648,26 @@ PetSpawnParamsDataAsset:
   FullSize: '0x68'
   InheritedSize: '0x28'
   Super: DataAsset
+PetUGCNameComponent:
+  Attributes:
+  - Name: DefaultPetName
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: CustomisedPetName
+    Offset: '0xf0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x40'
+  FullSize: '0x108'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+PetUGCNameInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 PetsService:
   Attributes:
   - Name: Spawner
@@ -712,12 +748,6 @@ PetsSettings:
   FullSize: '0x78'
   InheritedSize: '0x28'
   Super: Object
-PlayerPetInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 ReactAIStrategyId:
   Attributes: []
   ClassSize: '0x0'
@@ -737,91 +767,91 @@ ReactStateMappingsDataAsset:
 WieldablePet:
   Attributes:
   - Name: ThirdPersonScalingModifier
-    Offset: '0x7b0'
+    Offset: '0x7b8'
     Size: '0x4'
     Type: float
   - Name: WieldablePetComponent
-    Offset: '0x7b8'
+    Offset: '0x7c0'
     Size: '0x8'
     Type: Class WieldablePetComponent*
   - Name: AIPartsRetrievalComponent
-    Offset: '0x7c0'
+    Offset: '0x7c8'
     Size: '0x8'
     Type: Class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
-    Offset: '0x7c8'
+    Offset: '0x7d0'
     Size: '0x8'
     Type: Class PetPartCustomisationComponent*
   - Name: AnimNotifyWwiseEmitterComponent
-    Offset: '0x7d0'
+    Offset: '0x7d8'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   - Name: WaterExposureComponent
-    Offset: '0x7d8'
+    Offset: '0x7e0'
     Size: '0x8'
     Type: Class WaterExposureComponent*
   - Name: UsableWieldableComponent
-    Offset: '0x7e0'
+    Offset: '0x7e8'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   - Name: PickupableComponent
-    Offset: '0x7e8'
+    Offset: '0x7f0'
     Size: '0x8'
     Type: Class PickupableComponent*
   - Name: WieldableInteractableComponent
-    Offset: '0x7f0'
+    Offset: '0x7f8'
     Size: '0x8'
     Type: Class WieldableInteractableComponent*
   - Name: CleanlinessComponent
-    Offset: '0x7f8'
+    Offset: '0x800'
     Size: '0x8'
     Type: Class CleanlinessComponent*
   - Name: LightWeightStatusEffectManagerComponent
-    Offset: '0x800'
+    Offset: '0x808'
     Size: '0x8'
     Type: Class LightWeightStatusEffectManagerComponent*
   - Name: PetDitherComponent
-    Offset: '0x808'
+    Offset: '0x810'
     Size: '0x8'
     Type: Class PetDitherComponent*
   - Name: PetOwner
-    Offset: '0x810'
+    Offset: '0x818'
     Size: '0x8'
     Type: Class Actor*
   - Name: FeedingComponent
-    Offset: '0x818'
+    Offset: '0x820'
     Size: '0x8'
     Type: Class FeedingComponent*
   - Name: SicknessComponent
-    Offset: '0x820'
+    Offset: '0x828'
     Size: '0x8'
     Type: Class PetSicknessComponent*
   - Name: HungerComponent
-    Offset: '0x828'
+    Offset: '0x830'
     Size: '0x8'
     Type: Class WieldablePetHungerComponent*
   - Name: StarvingComponent
-    Offset: '0x830'
+    Offset: '0x838'
     Size: '0x8'
     Type: Class StarvingComponent*
   - Name: TelemetryComponent
-    Offset: '0x838'
+    Offset: '0x840'
     Size: '0x8'
     Type: Class PetTelemetryComponent*
   - Name: AnimationDataStoreComponent
-    Offset: '0x840'
+    Offset: '0x848'
     Size: '0x8'
     Type: Class AnimationDataStoreComponent*
   - Name: SubmergedStrokingEnabled
-    Offset: '0x848'
+    Offset: '0x850'
     Size: '0x1'
     Type: bool
   - Name: HungerReactAnimationState
-    Offset: '0x8b8'
+    Offset: '0x8c0'
     Size: '0x1'
     Type: byte
   - Name: DropRequest
-    Offset: '0x8b9'
+    Offset: '0x8c1'
     Size: '0x1'
     Type: byte
   ClassSize: '0x150'

@@ -1,21 +1,21 @@
 {
   "AthenaMediaPlayer": {
     "Super": "MediaPlayer",
-    "FullSize": "0x198",
-    "InheritedSize": "0x178",
+    "FullSize": "0x190",
+    "InheritedSize": "0x170",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "SoundComponent",
         "Type": "Class WwiseMediaSoundComponent*",
         "Size": "0x8",
-        "Offset": "0x180"
+        "Offset": "0x178"
       },
       {
         "Name": "SubtitleComponent",
         "Type": "Class MediaSubtitleComponent*",
         "Size": "0x8",
-        "Offset": "0x188"
+        "Offset": "0x180"
       }
     ]
   },

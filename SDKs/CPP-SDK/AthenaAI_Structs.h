@@ -1218,7 +1218,7 @@ struct AIPerCrewSpawnerStoryBasedRespawnSettings
 {
 public:
 	Struct AIPerCrewSpawnerRespawnSettings                       RespawnSettings;                                   // 0x0(0xc)
-	Struct StoryFlag                                             StoryFlag;                                         // 0xc(0x8)
+	Struct StoryFlag                                             Story;                                             // 0xc(0x8)
 };
 
 

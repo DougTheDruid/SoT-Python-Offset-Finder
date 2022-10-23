@@ -6,8 +6,8 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0xb3f
-class ShroudedIslands_AnchoredGhostShip_C: public ByteProperty
+// Size 0x39
+class ShroudedIslands_AnchoredGhostShip_C: public None
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0x428(0x8)

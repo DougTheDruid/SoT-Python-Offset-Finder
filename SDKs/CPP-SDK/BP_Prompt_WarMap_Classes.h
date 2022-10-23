@@ -18,7 +18,7 @@ public:
 	float                                                        PromptDisplayDuration;                             // 0x23c(0x4)
 	bool                                                         PromptEvaluated;                                   // 0x240(0x1)
 	bool                                                         WarMapOpened;                                      // 0x241(0x1)
-	class                                                        CurrentFaction;                                    // 0x248(0x8)
+	Class Company*                                               CurrentFaction;                                    // 0x248(0x8)
 };
 
 

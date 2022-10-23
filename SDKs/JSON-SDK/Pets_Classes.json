@@ -283,6 +283,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "PetUGCNameInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "PetLifetimeInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -290,7 +297,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PlayerPetInterface": {
+  "PetOwnerIdentityInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetSpawnOnShipInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -703,45 +717,51 @@
   },
   "PetItemInfo": {
     "Super": "NonStorableItemInfo",
-    "FullSize": "0x580",
+    "FullSize": "0x590",
     "InheritedSize": "0x510",
-    "ClassSize": "0x70",
+    "ClassSize": "0x80",
     "Attributes": [
-      {
-        "Name": "PetCustomisation",
-        "Type": "Struct PetCustomisation",
-        "Size": "0x28",
-        "Offset": "0x528"
-      },
-      {
-        "Name": "PetOwner",
-        "Type": "Class Actor*",
-        "Size": "0x8",
-        "Offset": "0x550"
-      },
       {
         "Name": "SpawnedForShip",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x530"
       },
       {
         "Name": "DropTraceDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x560"
+        "Offset": "0x538"
       },
       {
         "Name": "PointSearchRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x564"
+        "Offset": "0x53c"
       },
       {
         "Name": "DropChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x568"
+        "Offset": "0x540"
+      },
+      {
+        "Name": "PetOwner",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "PetCustomisation",
+        "Type": "Struct PetCustomisation",
+        "Size": "0x28",
+        "Offset": "0x550"
+      },
+      {
+        "Name": "PetUGCNameComponent",
+        "Type": "Class PetUGCNameComponent*",
+        "Size": "0x8",
+        "Offset": "0x578"
       }
     ]
   },
@@ -991,6 +1011,26 @@
       }
     ]
   },
+  "PetUGCNameComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "DefaultPetName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "CustomisedPetName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      }
+    ]
+  },
   "ReactAIStrategyId": {
     "Super": "AIStrategyId",
     "FullSize": "0x28",
@@ -1022,133 +1062,133 @@
         "Name": "ThirdPersonScalingModifier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7b0"
+        "Offset": "0x7b8"
       },
       {
         "Name": "WieldablePetComponent",
         "Type": "Class WieldablePetComponent*",
         "Size": "0x8",
-        "Offset": "0x7b8"
+        "Offset": "0x7c0"
       },
       {
         "Name": "AIPartsRetrievalComponent",
         "Type": "Class AIPartsRetrievalComponent*",
         "Size": "0x8",
-        "Offset": "0x7c0"
+        "Offset": "0x7c8"
       },
       {
         "Name": "PetPartCustomisationComponent",
         "Type": "Class PetPartCustomisationComponent*",
         "Size": "0x8",
-        "Offset": "0x7c8"
+        "Offset": "0x7d0"
       },
       {
         "Name": "AnimNotifyWwiseEmitterComponent",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7d8"
       },
       {
         "Name": "WaterExposureComponent",
         "Type": "Class WaterExposureComponent*",
         "Size": "0x8",
-        "Offset": "0x7d8"
+        "Offset": "0x7e0"
       },
       {
         "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7e8"
       },
       {
         "Name": "PickupableComponent",
         "Type": "Class PickupableComponent*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x7f0"
       },
       {
         "Name": "WieldableInteractableComponent",
         "Type": "Class WieldableInteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x7f8"
       },
       {
         "Name": "CleanlinessComponent",
         "Type": "Class CleanlinessComponent*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x800"
       },
       {
         "Name": "LightWeightStatusEffectManagerComponent",
         "Type": "Class LightWeightStatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x800"
+        "Offset": "0x808"
       },
       {
         "Name": "PetDitherComponent",
         "Type": "Class PetDitherComponent*",
         "Size": "0x8",
-        "Offset": "0x808"
+        "Offset": "0x810"
       },
       {
         "Name": "PetOwner",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x810"
+        "Offset": "0x818"
       },
       {
         "Name": "FeedingComponent",
         "Type": "Class FeedingComponent*",
         "Size": "0x8",
-        "Offset": "0x818"
+        "Offset": "0x820"
       },
       {
         "Name": "SicknessComponent",
         "Type": "Class PetSicknessComponent*",
         "Size": "0x8",
-        "Offset": "0x820"
+        "Offset": "0x828"
       },
       {
         "Name": "HungerComponent",
         "Type": "Class WieldablePetHungerComponent*",
         "Size": "0x8",
-        "Offset": "0x828"
+        "Offset": "0x830"
       },
       {
         "Name": "StarvingComponent",
         "Type": "Class StarvingComponent*",
         "Size": "0x8",
-        "Offset": "0x830"
+        "Offset": "0x838"
       },
       {
         "Name": "TelemetryComponent",
         "Type": "Class PetTelemetryComponent*",
         "Size": "0x8",
-        "Offset": "0x838"
+        "Offset": "0x840"
       },
       {
         "Name": "AnimationDataStoreComponent",
         "Type": "Class AnimationDataStoreComponent*",
         "Size": "0x8",
-        "Offset": "0x840"
+        "Offset": "0x848"
       },
       {
         "Name": "SubmergedStrokingEnabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x848"
+        "Offset": "0x850"
       },
       {
         "Name": "HungerReactAnimationState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8b8"
+        "Offset": "0x8c0"
       },
       {
         "Name": "DropRequest",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8b9"
+        "Offset": "0x8c1"
       }
     ]
   },

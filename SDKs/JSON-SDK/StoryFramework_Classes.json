@@ -63,13 +63,13 @@
   },
   "StoryDrivenBlendedLightingZoneComponent": {
     "Super": "BlendedLightingZoneComponent",
-    "FullSize": "0x370",
+    "FullSize": "0x360",
     "InheritedSize": "0x330",
-    "ClassSize": "0x40",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "StoryDrivenLightingAssetsCollection",
-        "Type": "Class StoryDrivenBlendedLightingZoneComponentCollectionDataAsset*",
+        "Type": "Class StoryDrivenBlendedLightingZoneComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0x328"
       },
@@ -83,9 +83,9 @@
   },
   "StoryDrivenBlendedLightingZoneComponentDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x48",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Feature",
@@ -98,20 +98,12 @@
         "Type": "TArray<Struct LightingZoneStoryRelatedSettings>",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "StoryDrivenBlendedLightingZoneComponentCollectionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
+      },
       {
-        "Name": "StoryDrivenLightingAssetList",
+        "Name": "AssetsList",
         "Type": "TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x48"
       }
     ]
   },
@@ -150,26 +142,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "StorySpawnedActorsCollectionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StorySpawnedActorsAssetList",
-        "Type": "TArray<class StorySpawnedActorsDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StorySpawnedActorsCollectionList",
-        "Type": "TArray<class StorySpawnedActorsCollectionDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "StorySpawnedActorsComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x108",
@@ -178,37 +150,17 @@
     "Attributes": [
       {
         "Name": "AssetsCollection",
-        "Type": "Class StorySpawnedActorsComponentCollectionDataAsset*",
+        "Type": "Class StorySpawnedActorsComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0xc8"
       }
     ]
   },
-  "StorySpawnedActorsComponentCollectionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StorySpawnedActorsAssetList",
-        "Type": "TArray<class StorySpawnedActorsComponentDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StorySpawnedActorsCollectionList",
-        "Type": "TArray<class StorySpawnedActorsComponentCollectionDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "StorySpawnedActorsComponentDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x48",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Feature",
@@ -217,18 +169,24 @@
         "Offset": "0x28"
       },
       {
-        "Name": "StorySpawnedActorsList",
+        "Name": "StoryResponses",
         "Type": "TArray<Struct StorySpawnedActorsComponentList>",
         "Size": "0x10",
         "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StorySpawnedActorsComponentDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },
   "StorySpawnedActorsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x48",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Feature",
@@ -237,10 +195,16 @@
         "Offset": "0x28"
       },
       {
-        "Name": "StorySpawnedActorsList",
+        "Name": "StoryResponses",
         "Type": "TArray<Struct StorySpawnedActorsList>",
         "Size": "0x10",
         "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StorySpawnedActorsDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },
@@ -265,7 +229,7 @@
       },
       {
         "Name": "Asset",
-        "Type": "Class StorySpawnedActorsCollectionDataAsset*",
+        "Type": "Class StorySpawnedActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x3f0"
       }
@@ -278,7 +242,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StorySpawnActorsCollectionDataAssetLocation",
+        "Name": "StorySpawnActorsDataAssetLocation",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"

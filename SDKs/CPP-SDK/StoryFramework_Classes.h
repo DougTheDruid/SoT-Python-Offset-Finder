@@ -45,29 +45,22 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x30
 class StoryDrivenBlendedLightingZoneComponent: public BlendedLightingZoneComponent
 {
 public:
-	Class StoryDrivenBlendedLightingZoneComponentCollectionDataAsset* StoryDrivenLightingAssetsCollection;               // 0x328(0x8)
+	Class StoryDrivenBlendedLightingZoneComponentDataAsset*      StoryDrivenLightingAssetsCollection;               // 0x328(0x8)
 	Struct LightingZoneStoryRelatedSettings                      CurrentStoryResponse;                              // 0x330(0x10)
 };
 
 
-// Size 0x20
+// Size 0x30
 class StoryDrivenBlendedLightingZoneComponentDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
 	TArray<Struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x38(0x10)
-};
-
-
-// Size 0x10
-class StoryDrivenBlendedLightingZoneComponentCollectionDataAsset: public DataAsset
-{
-public:
-	TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*> StoryDrivenLightingAssetList;                      // 0x28(0x10)
+	TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*> AssetsList;                                        // 0x48(0x10)
 };
 
 
@@ -94,47 +87,31 @@ public:
 };
 
 
-// Size 0x20
-class StorySpawnedActorsCollectionDataAsset: public DataAsset
-{
-public:
-	TArray<class StorySpawnedActorsDataAsset*>                   StorySpawnedActorsAssetList;                       // 0x28(0x10)
-	TArray<class StorySpawnedActorsCollectionDataAsset*>         StorySpawnedActorsCollectionList;                  // 0x38(0x10)
-};
-
-
 // Size 0x40
 class StorySpawnedActorsComponent: public ActorComponent
 {
 public:
-	Class StorySpawnedActorsComponentCollectionDataAsset*        AssetsCollection;                                  // 0xc8(0x8)
+	Class StorySpawnedActorsComponentDataAsset*                  AssetsCollection;                                  // 0xc8(0x8)
 };
 
 
-// Size 0x20
-class StorySpawnedActorsComponentCollectionDataAsset: public DataAsset
-{
-public:
-	TArray<class StorySpawnedActorsComponentDataAsset*>          StorySpawnedActorsAssetList;                       // 0x28(0x10)
-	TArray<class StorySpawnedActorsComponentCollectionDataAsset*> StorySpawnedActorsCollectionList;                  // 0x38(0x10)
-};
-
-
-// Size 0x20
+// Size 0x30
 class StorySpawnedActorsComponentDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	TArray<Struct StorySpawnedActorsComponentList>               StorySpawnedActorsList;                            // 0x38(0x10)
+	TArray<Struct StorySpawnedActorsComponentList>               StoryResponses;                                    // 0x38(0x10)
+	TArray<class StorySpawnedActorsComponentDataAsset*>          AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x20
+// Size 0x30
 class StorySpawnedActorsDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	TArray<Struct StorySpawnedActorsList>                        StorySpawnedActorsList;                            // 0x38(0x10)
+	TArray<Struct StorySpawnedActorsList>                        StoryResponses;                                    // 0x38(0x10)
+	TArray<class StorySpawnedActorsDataAsset*>                   AssetsList;                                        // 0x48(0x10)
 };
 
 
@@ -150,7 +127,7 @@ class StorySpawnedActorsService: public Actor
 {
 public:
 	TArray<class StorySpawnedActorsComponent*>                   EarlyRegisteredComponents;                         // 0x3e0(0x10)
-	Class StorySpawnedActorsCollectionDataAsset*                 Asset;                                             // 0x3f0(0x8)
+	Class StorySpawnedActorsDataAsset*                           Asset;                                             // 0x3f0(0x8)
 };
 
 
@@ -158,7 +135,7 @@ public:
 class StorySpawnedActorsSettings: public DeveloperSettings
 {
 public:
-	Struct StringAssetReference                                  StorySpawnActorsCollectionDataAssetLocation;       // 0x38(0x10)
+	Struct StringAssetReference                                  StorySpawnActorsDataAssetLocation;                 // 0x38(0x10)
 };
 
 

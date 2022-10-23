@@ -309,6 +309,14 @@ public:
 
 
 // Size 0x8
+struct EventPetInfoAssigned
+{
+public:
+	Class ItemInfo*                                              PetInfo;                                           // 0x0(0x8)
+};
+
+
+// Size 0x8
 struct EventPetOwnerAssigned
 {
 public:
@@ -506,6 +514,14 @@ struct PetControllerSetTickOrderEvent
 {
 public:
 	Class Actor*                                                 Actor;                                             // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventPetUGCBlockStateChanged
+{
+public:
+	bool                                                         IsPetUGCBlocked;                                   // 0x0(0x1)
 };
 
 

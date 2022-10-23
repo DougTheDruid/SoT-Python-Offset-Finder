@@ -34,7 +34,7 @@ ShroudedIslands_AnchoredGhostShip_C:
     Offset: '0x460'
     Size: '0x1'
     Type: bool
-  ClassSize: '-0xb3f'
+  ClassSize: '0x39'
   FullSize: '0x461'
-  InheritedSize: '0xfa0'
-  Super: ByteProperty
+  InheritedSize: '0x428'
+  Super: None

@@ -65,7 +65,7 @@ public:
 	bool                                                         PerceiveTriggerActorOnSpawn;                       // 0x447(0x1)
 	bool                                                         EnforceRespawnTimeAfterCrewLeaves;                 // 0x448(0x1)
 	bool                                                         IgnoreSpawningGracePeriodForNewCrew;               // 0x449(0x1)
-	Class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*  StoryOverrideRespawnSettingsAsset;                 // 0x450(0x8)
+	Class AIPerCrewSpawnerSettingsStoryOverrideAsset*            StoryOverrideRespawnSettingsAsset;                 // 0x450(0x8)
 };
 
 
@@ -678,77 +678,77 @@ public:
 class PetNameplateComponent: public AINameplateComponent
 {
 public:
-	Struct FString                                               DefaultPetName;                                    // 0x478(0x10)
+	Struct FString                                               DefaultPetName;                                    // 0x488(0x10)
 };
 
 
-// Size 0x460
+// Size 0x470
 class Pet: public AICreatureCharacter
 {
 public:
-	Class PetWieldableReactMappingsDataAsset*                    WieldableReactMappingsAsset;                       // 0x8b0(0x8)
-	float                                                        MaxVelocityForLocomotionAnimation;                 // 0x8b8(0x4)
-	bool                                                         CanFly;                                            // 0x8bc(0x1)
-	TArray<Struct PetFlyingStrategyProperties>                   FlyingStrategyProperties;                          // 0x8c0(0x10)
-	float                                                        FlyingLandTime;                                    // 0x8d0(0x4)
-	Class CurveFloat*                                            FlyingLandCurve;                                   // 0x8d8(0x8)
-	float                                                        FlyingTakeOffTime;                                 // 0x8e0(0x4)
-	Class CurveFloat*                                            FlyingTakeOffCurve;                                // 0x8e8(0x8)
-	Struct FloatRange                                            MidFlightAdjustmentTimerRange;                     // 0x8f0(0x10)
-	Class CurveFloat*                                            MidFlightAdjustmentCurve;                          // 0x900(0x8)
-	Class CurveFloat*                                            MidFlightTimeToDistanceAdjustmentCurve;            // 0x908(0x8)
-	struct FName                                                 FiredFromActorCollision;                           // 0x910(0x8)
-	Class WwiseEvent*                                            FiredFromActorSFX;                                 // 0x918(0x8)
-	Class PetDitherComponent*                                    DitherComponent;                                   // 0x920(0x8)
-	float                                                        MinimumDamageForHealthReact;                       // 0x928(0x4)
-	float                                                        MaxDistForWaterBucketToClean;                      // 0x92c(0x4)
-	float                                                        MinimumDurationUntilPetCanDespawnConcealed;        // 0x930(0x4)
-	float                                                        DefaultNamePlateHeight;                            // 0x934(0x4)
-	float                                                        AlternateNamePlateHeight;                          // 0x938(0x4)
-	TArray<Byte StatesToUseAlternateNamePlatePos>                StatesToUseAlternateNamePlatePos;                  // 0x940(0x10)
-	Struct FloatRange                                            PetTimeSpentSad;                                   // 0x950(0x10)
-	byte                                                         DebugStateDescriptor;                              // 0x960(0x1)
-	Class PetNameplateComponent*                                 AINameplateComponent;                              // 0x968(0x8)
-	Class FeedingComponent*                                      FeedingComponent;                                  // 0x970(0x8)
-	Class StarvingComponent*                                     StarvingComponent;                                 // 0x978(0x8)
-	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x980(0x8)
-	Class CannonSquashComponent*                                 CannonSquashComponent;                             // 0x988(0x8)
-	Struct PetMovementRequest                                    ReplicatedMovementRequest;                         // 0x990(0xc)
-	float                                                        TargetMeshRoll;                                    // 0x99c(0x4)
-	float                                                        DefaultShipTurnRateModifier;                       // 0x9b0(0x4)
-	TArray<Struct PetTurnRateModifier>                           TurnRateModifierList;                              // 0x9b8(0x10)
-	TArray<Byte LocomotingMovementStates>                        LocomotingMovementStates;                          // 0x9c8(0x10)
-	TArray<Byte RequestIdleOrMovementValidMovementStates>        RequestIdleOrMovementValidMovementStates;          // 0x9d8(0x10)
-	float                                                        MaxRollAngle;                                      // 0x9e8(0x4)
-	float                                                        DelayForDisablingMovementOnIdle;                   // 0x9ec(0x4)
-	float                                                        IslandDustRatePerSecond;                           // 0x9f0(0x4)
-	Struct Guid                                                  CrewId;                                            // 0x9f4(0x10)
-	bool                                                         InHangout;                                         // 0xa04(0x1)
-	bool                                                         PerchedInHangout;                                  // 0xa05(0x1)
-	bool                                                         ResetRollAndZOffset;                               // 0xa06(0x1)
-	bool                                                         ShouldIgnoreTooltipDisplayOffset;                  // 0xa07(0x1)
-	Struct PetTurnToFaceData                                     PetTurnToFaceData;                                 // 0xa10(0x20)
-	float                                                        MaximumSubmergedWaterDepthBeforeDespawn;           // 0xa30(0x4)
-	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0xa58(0x8)
-	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0xa60(0x8)
-	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0xa68(0x8)
-	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0xa70(0x8)
-	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0xa78(0x8)
-	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0xa80(0x8)
-	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0xa88(0x8)
-	Class Actor*                                                 SpawnedForShip;                                    // 0xa90(0x8)
-	Class Actor*                                                 PetOwner;                                          // 0xa98(0x8)
-	Class ItemInfo*                                              PetInfo;                                           // 0xaa0(0x8)
-	Struct Docker                                                Docker;                                            // 0xab0(0x50)
-	Struct StartPickupObjectActionRuleParams                     StartPickupObjectActionRuleParams;                 // 0xb00(0x10)
-	Class ParticleSystemComponent*                               CurrentlyPlayingParticleSystem;                    // 0xb20(0x8)
-	class                                                        LandingStrategy;                                   // 0xb28(0x8)
-	class                                                        PursuitStrategy;                                   // 0xb30(0x8)
-	float                                                        DefaultRollLerpTime;                               // 0xb38(0x4)
-	float                                                        LandingRollLerpTime;                               // 0xb3c(0x4)
-	bool                                                         IsBeingDismissed;                                  // 0xb40(0x1)
-	bool                                                         IsInDisabledPetPerchHangout;                       // 0xc2c(0x1)
-	bool                                                         PetIsSad;                                          // 0xc2d(0x1)
+	Class PetWieldableReactMappingsDataAsset*                    WieldableReactMappingsAsset;                       // 0x8c0(0x8)
+	float                                                        MaxVelocityForLocomotionAnimation;                 // 0x8c8(0x4)
+	bool                                                         CanFly;                                            // 0x8cc(0x1)
+	TArray<Struct PetFlyingStrategyProperties>                   FlyingStrategyProperties;                          // 0x8d0(0x10)
+	float                                                        FlyingLandTime;                                    // 0x8e0(0x4)
+	Class CurveFloat*                                            FlyingLandCurve;                                   // 0x8e8(0x8)
+	float                                                        FlyingTakeOffTime;                                 // 0x8f0(0x4)
+	Class CurveFloat*                                            FlyingTakeOffCurve;                                // 0x8f8(0x8)
+	Struct FloatRange                                            MidFlightAdjustmentTimerRange;                     // 0x900(0x10)
+	Class CurveFloat*                                            MidFlightAdjustmentCurve;                          // 0x910(0x8)
+	Class CurveFloat*                                            MidFlightTimeToDistanceAdjustmentCurve;            // 0x918(0x8)
+	struct FName                                                 FiredFromActorCollision;                           // 0x920(0x8)
+	Class WwiseEvent*                                            FiredFromActorSFX;                                 // 0x928(0x8)
+	Class PetDitherComponent*                                    DitherComponent;                                   // 0x930(0x8)
+	float                                                        MinimumDamageForHealthReact;                       // 0x938(0x4)
+	float                                                        MaxDistForWaterBucketToClean;                      // 0x93c(0x4)
+	float                                                        MinimumDurationUntilPetCanDespawnConcealed;        // 0x940(0x4)
+	float                                                        DefaultNamePlateHeight;                            // 0x944(0x4)
+	float                                                        AlternateNamePlateHeight;                          // 0x948(0x4)
+	TArray<Byte StatesToUseAlternateNamePlatePos>                StatesToUseAlternateNamePlatePos;                  // 0x950(0x10)
+	Struct FloatRange                                            PetTimeSpentSad;                                   // 0x960(0x10)
+	byte                                                         DebugStateDescriptor;                              // 0x970(0x1)
+	Class PetNameplateComponent*                                 AINameplateComponent;                              // 0x978(0x8)
+	Class FeedingComponent*                                      FeedingComponent;                                  // 0x980(0x8)
+	Class StarvingComponent*                                     StarvingComponent;                                 // 0x988(0x8)
+	Class CleanlinessComponent*                                  CleanlinessComponent;                              // 0x990(0x8)
+	Class CannonSquashComponent*                                 CannonSquashComponent;                             // 0x998(0x8)
+	Struct PetMovementRequest                                    ReplicatedMovementRequest;                         // 0x9a0(0xc)
+	float                                                        TargetMeshRoll;                                    // 0x9ac(0x4)
+	float                                                        DefaultShipTurnRateModifier;                       // 0x9c0(0x4)
+	TArray<Struct PetTurnRateModifier>                           TurnRateModifierList;                              // 0x9c8(0x10)
+	TArray<Byte LocomotingMovementStates>                        LocomotingMovementStates;                          // 0x9d8(0x10)
+	TArray<Byte RequestIdleOrMovementValidMovementStates>        RequestIdleOrMovementValidMovementStates;          // 0x9e8(0x10)
+	float                                                        MaxRollAngle;                                      // 0x9f8(0x4)
+	float                                                        DelayForDisablingMovementOnIdle;                   // 0x9fc(0x4)
+	float                                                        IslandDustRatePerSecond;                           // 0xa00(0x4)
+	Struct Guid                                                  CrewId;                                            // 0xa04(0x10)
+	bool                                                         InHangout;                                         // 0xa14(0x1)
+	bool                                                         PerchedInHangout;                                  // 0xa15(0x1)
+	bool                                                         ResetRollAndZOffset;                               // 0xa16(0x1)
+	bool                                                         ShouldIgnoreTooltipDisplayOffset;                  // 0xa17(0x1)
+	Struct PetTurnToFaceData                                     PetTurnToFaceData;                                 // 0xa20(0x20)
+	float                                                        MaximumSubmergedWaterDepthBeforeDespawn;           // 0xa40(0x4)
+	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0xa68(0x8)
+	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0xa70(0x8)
+	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0xa78(0x8)
+	Class PetTelemetryComponent*                                 TelemetryComponent;                                // 0xa80(0x8)
+	Class PetSicknessComponent*                                  SicknessComponent;                                 // 0xa88(0x8)
+	Class WaterExposureComponent*                                WaterExposureComponent;                            // 0xa90(0x8)
+	Class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0xa98(0x8)
+	Class Actor*                                                 SpawnedForShip;                                    // 0xaa0(0x8)
+	Class Actor*                                                 PetOwner;                                          // 0xaa8(0x8)
+	Class ItemInfo*                                              PetInfo;                                           // 0xab0(0x8)
+	Struct Docker                                                Docker;                                            // 0xac0(0x50)
+	Struct StartPickupObjectActionRuleParams                     StartPickupObjectActionRuleParams;                 // 0xb10(0x10)
+	Class ParticleSystemComponent*                               CurrentlyPlayingParticleSystem;                    // 0xb30(0x8)
+	class                                                        LandingStrategy;                                   // 0xb38(0x8)
+	class                                                        PursuitStrategy;                                   // 0xb40(0x8)
+	float                                                        DefaultRollLerpTime;                               // 0xb48(0x4)
+	float                                                        LandingRollLerpTime;                               // 0xb4c(0x4)
+	bool                                                         IsBeingDismissed;                                  // 0xb50(0x1)
+	bool                                                         IsInDisabledPetPerchHangout;                       // 0xc3c(0x1)
+	bool                                                         PetIsSad;                                          // 0xc3d(0x1)
 };
 
 
@@ -1867,20 +1867,13 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x30
 class AIPerCrewSpawnerSettingsStoryOverrideAsset: public DataAsset
 {
 public:
-	TArray<Struct AIPerCrewSpawnerStoryBasedRespawnSettings>     StoryOverrides;                                    // 0x28(0x10)
-};
-
-
-// Size 0x20
-class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset: public DataAsset
-{
-public:
-	TArray<class AIPerCrewSpawnerSettingsStoryOverrideAsset*>    StoryOverrideAssetList;                            // 0x28(0x10)
-	TArray<class AIPerCrewSpawnerSettingsStoryOverrideCollectionAsset*> StoryoverrideAssetCollectionList;                  // 0x38(0x10)
+	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	TArray<Struct AIPerCrewSpawnerStoryBasedRespawnSettings>     StoryResponses;                                    // 0x38(0x10)
+	TArray<class AIPerCrewSpawnerSettingsStoryOverrideAsset*>    AssetsList;                                        // 0x48(0x10)
 };
 
 

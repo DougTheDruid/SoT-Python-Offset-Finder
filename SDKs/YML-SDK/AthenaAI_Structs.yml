@@ -760,7 +760,7 @@ AIPerCrewSpawnerStoryBasedRespawnSettings:
     Offset: '0x0'
     Size: '0xc'
     Type: Struct AIPerCrewSpawnerRespawnSettings
-  - Name: StoryFlag
+  - Name: Story
     Offset: '0xc'
     Size: '0x8'
     Type: Struct StoryFlag

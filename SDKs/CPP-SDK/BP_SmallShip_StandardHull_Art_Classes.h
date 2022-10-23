@@ -30,7 +30,7 @@ public:
 	Class PostProcessComponent*                                  PostProcess1;                                      // 0x450(0x8)
 	Class BoxComponent*                                          Map_Deck_B;                                        // 0x458(0x8)
 	Class PostProcessComponent*                                  PostProcess;                                       // 0x460(0x8)
-	Class BoxComponent*                                          map_deck;                                          // 0x468(0x8)
+	Class BoxComponent*                                          Map_Deck;                                          // 0x468(0x8)
 	Class StaticMeshComponent*                                   shp_small_hull_rope_01_a;                          // 0x470(0x8)
 	Class MergedStaticMeshComponent*                             MergedStaticMesh;                                  // 0x478(0x8)
 	Class ChildActorComponent*                                   BP_SmallShip_StandardHull_Art_Interior_Lower_Deck; // 0x480(0x8)

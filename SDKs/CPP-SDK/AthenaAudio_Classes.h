@@ -35,7 +35,7 @@ public:
 	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2f8(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x300(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x308(0x8)
-	Class StoryDrivenAudioPortalCollectionDataAsset*             CollectionAsset;                                   // 0x310(0x8)
+	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x310(0x8)
 };
 
 
@@ -59,7 +59,7 @@ class AudioSpaceComponent: public StaticMeshComponent
 public:
 	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
-	Class StoryDrivenAudioPortalCollectionDataAsset*             CollectionAsset;                                   // 0x630(0x8)
+	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x630(0x8)
 };
 
 
@@ -79,20 +79,13 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 class StoryDrivenAudioPortalDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	TArray<Struct StoryDrivenAudioPortalSetting>                 Stories;                                           // 0x38(0x10)
-};
-
-
-// Size 0x10
-class StoryDrivenAudioPortalCollectionDataAsset: public DataAsset
-{
-public:
-	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x28(0x10)
+	TArray<Struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
+	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
 };
 
 

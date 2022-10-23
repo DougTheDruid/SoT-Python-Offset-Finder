@@ -18,18 +18,18 @@ AbandonedNoteClueDescriptorGenerator:
   Super: ClueDescriptorGenerator
 AbandonedNoteClueDestinationContainerComponent:
   Attributes:
-  - Name: CurrentClueDestination
-    Offset: '0xe8'
-    Size: '0x10'
-    Type: Struct ClueDestinationChoice
   - Name: ClueTextIndexAssetMap
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x8'
     Type: Class AbandonedNoteClueTextIndexAssetMap*
   - Name: CompositeFormatString
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x10'
     Type: Struct FString
+  - Name: CurrentClueDestination
+    Offset: '0x100'
+    Size: '0x10'
+    Type: Struct ClueDestinationChoice
   - Name: CurrentTitleText
     Offset: '0x110'
     Size: '0x38'

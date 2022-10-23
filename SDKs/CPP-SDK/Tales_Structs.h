@@ -92,6 +92,17 @@ public:
 };
 
 
+// Size 0x20
+struct TaleQuestQueryableStateDataInfo
+{
+public:
+	Struct Guid                                                  TaleId;                                            // 0x0(0x10)
+	class                                                        DataID;                                            // 0x10(0x8)
+	bool                                                         DataBool;                                          // 0x18(0x1)
+	int                                                          DataInt;                                           // 0x1c(0x4)
+};
+
+
 // Size 0x10
 struct TrackedActorData
 {

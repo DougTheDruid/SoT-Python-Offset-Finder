@@ -30,7 +30,7 @@ public:
 };
 
 
-// Size 0x150
+// Size 0x148
 class MediaPlayer: public Object
 {
 public:
@@ -44,11 +44,10 @@ public:
 	Class MediaPlaylist*                                         Playlist;                                          // 0xc8(0x8)
 	int                                                          PlaylistIndex;                                     // 0xd0(0x4)
 	Struct Timespan                                              TimeDelay;                                         // 0xd8(0x8)
-	Class MediaSource*                                           CachedMediaSource;                                 // 0xe0(0x8)
-	float                                                        HorizontalFieldOfView;                             // 0xe8(0x4)
-	float                                                        VerticalFieldOfView;                               // 0xec(0x4)
-	Struct Rotator                                               ViewRotation;                                      // 0xf0(0xc)
-	Struct Guid                                                  PlayerGuid;                                        // 0x160(0x10)
+	float                                                        HorizontalFieldOfView;                             // 0xe0(0x4)
+	float                                                        VerticalFieldOfView;                               // 0xe4(0x4)
+	Struct Rotator                                               ViewRotation;                                      // 0xe8(0xc)
+	Struct Guid                                                  PlayerGuid;                                        // 0x158(0x10)
 };
 
 

@@ -34,7 +34,7 @@ class GlitterBeardLanternSoundEffect: public EffectBlendObjectBase
 {
 public:
 	float                                                        TriggerThreshold;                                  // 0x38(0x4)
-	Class WwiseObjectPoolWrapper*                                WWisePool;                                         // 0x40(0x8)
+	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x40(0x8)
 	Class WwiseEvent*                                            WwiseEvent;                                        // 0x48(0x8)
 	Struct WwiseEmitter                                          Emitter;                                           // 0x50(0x20)
 };

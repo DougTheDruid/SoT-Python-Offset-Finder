@@ -13,7 +13,7 @@ AnimNotify_SoundSwitch:
   ClassSize: '0x18'
 StoryDrivenAudioPortalSetting:
   Attributes:
-  - Name: StoryFlag
+  - Name: Story
     Offset: '0x0'
     Size: '0x8'
     Type: Struct StoryFlag

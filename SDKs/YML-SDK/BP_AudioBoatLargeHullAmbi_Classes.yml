@@ -3,226 +3,226 @@
 BP_AudioBoatLargeHullAmbi_C:
   Attributes:
   - Name: Triton
-    Offset: '0x568'
+    Offset: '0x608'
     Size: '0x8'
     Type: Class TritonComponent*
   - Name: ShipAudio_Wake_Bow
-    Offset: '0x570'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Water_Wash_Front_Right
-    Offset: '0x578'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Water_Wash_Front_Left
-    Offset: '0x580'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Water_Wash_Bow
-    Offset: '0x588'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Water_Wash_Back_Right
-    Offset: '0x590'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Water_Wash_Back_Left
-    Offset: '0x598'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Wake_Stern
-    Offset: '0x5a0'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Side_Right
-    Offset: '0x5a8'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Side_Left
-    Offset: '0x5b0'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_PitchRoll
-    Offset: '0x5b8'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Front_Top
-    Offset: '0x5c0'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Front_Right
-    Offset: '0x5c8'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Back_Left
-    Offset: '0x5d0'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Bow_Rope
-    Offset: '0x5d8'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Bow_Bottom
-    Offset: '0x5e0'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Back_Rope
-    Offset: '0x5e8'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Back_Right
-    Offset: '0x5f0'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_TopDeck_Front_Left
-    Offset: '0x5f8'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Mizzen_Base
-    Offset: '0x600'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Mizzen_Sail2
-    Offset: '0x608'
-    Size: '0x8'
-    Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Mizzen_Sail1
     Offset: '0x610'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Main_Sail1
+  - Name: ShipAudio_Water_Wash_Front_Right
     Offset: '0x618'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Main_Sail3
+  - Name: ShipAudio_Water_Wash_Front_Left
     Offset: '0x620'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Main_Sail2
+  - Name: ShipAudio_Water_Wash_Bow
     Offset: '0x628'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Main_Base
+  - Name: ShipAudio_Water_Wash_Back_Right
     Offset: '0x630'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Fore_Base
+  - Name: ShipAudio_Water_Wash_Back_Left
     Offset: '0x638'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Fore_Sail2
+  - Name: ShipAudio_Wake_Stern
     Offset: '0x640'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Mast_Fore_Sail1
+  - Name: ShipAudio_Creak_TopDeck_Side_Right
     Offset: '0x648'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Pillar_Mid_Right
+  - Name: ShipAudio_Creak_TopDeck_Side_Left
     Offset: '0x650'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Pillar_Front_Right
+  - Name: ShipAudio_Creak_TopDeck_PitchRoll
     Offset: '0x658'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Pillar_Front_Left
+  - Name: ShipAudio_Creak_TopDeck_Front_Top
     Offset: '0x660'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Pillar_Back_Right
+  - Name: ShipAudio_Creak_TopDeck_Front_Right
     Offset: '0x668'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Pillar_Mid_Left
+  - Name: ShipAudio_Creak_TopDeck_Back_Left
     Offset: '0x670'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Mast_Mizzen
+  - Name: ShipAudio_Creak_TopDeck_Bow_Rope
     Offset: '0x678'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Mast_Main
+  - Name: ShipAudio_Creak_TopDeck_Bow_Bottom
     Offset: '0x680'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Mast_Fore
+  - Name: ShipAudio_Creak_TopDeck_Back_Rope
     Offset: '0x688'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_MapDeck_Pillar_Back_Left
+  - Name: ShipAudio_Creak_TopDeck_Back_Right
     Offset: '0x690'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Captain_Back_Left
+  - Name: ShipAudio_Creak_TopDeck_Front_Left
     Offset: '0x698'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Captain_Lamp
+  - Name: ShipAudio_Creak_Mast_Mizzen_Base
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Captain_Front_Right
+  - Name: ShipAudio_Creak_Mast_Mizzen_Sail2
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Captain_Front_Left
+  - Name: ShipAudio_Creak_Mast_Mizzen_Sail1
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Captain_Cage
+  - Name: ShipAudio_Creak_Mast_Main_Sail1
     Offset: '0x6b8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_Captain_Back_Right
+  - Name: ShipAudio_Creak_Mast_Main_Sail3
     Offset: '0x6c0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_BrigDeck_Centre
+  - Name: ShipAudio_Creak_Mast_Main_Sail2
     Offset: '0x6c8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_BrigDeck_Pillar_Front_Right
+  - Name: ShipAudio_Creak_Mast_Main_Base
     Offset: '0x6d0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_BrigDeck_Pillar_Front_Left
+  - Name: ShipAudio_Creak_Mast_Fore_Base
     Offset: '0x6d8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_BrigDeck_Pillar_Back_Right
+  - Name: ShipAudio_Creak_Mast_Fore_Sail2
     Offset: '0x6e0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Creak_BrigDeck_Pillar_Back_Left
+  - Name: ShipAudio_Creak_Mast_Fore_Sail1
     Offset: '0x6e8'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: ShipAudio_Ambience_BelowDeck
+  - Name: ShipAudio_Creak_MapDeck_Pillar_Mid_Right
     Offset: '0x6f0'
     Size: '0x8'
     Type: Class ShipAudioEmitterComponent*
-  - Name: LargeBoat_AudioPortal_BrigDeckDoor
+  - Name: ShipAudio_Creak_MapDeck_Pillar_Front_Right
     Offset: '0x6f8'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_MapDeck_Pillar_Front_Left
+    Offset: '0x700'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_MapDeck_Pillar_Back_Right
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_MapDeck_Pillar_Mid_Left
+    Offset: '0x710'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_MapDeck_Mast_Mizzen
+    Offset: '0x718'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_MapDeck_Mast_Main
+    Offset: '0x720'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_MapDeck_Mast_Fore
+    Offset: '0x728'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_MapDeck_Pillar_Back_Left
+    Offset: '0x730'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_Captain_Back_Left
+    Offset: '0x738'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_Captain_Lamp
+    Offset: '0x740'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_Captain_Front_Right
+    Offset: '0x748'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_Captain_Front_Left
+    Offset: '0x750'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_Captain_Cage
+    Offset: '0x758'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_Captain_Back_Right
+    Offset: '0x760'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_BrigDeck_Centre
+    Offset: '0x768'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_BrigDeck_Pillar_Front_Right
+    Offset: '0x770'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_BrigDeck_Pillar_Front_Left
+    Offset: '0x778'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_BrigDeck_Pillar_Back_Right
+    Offset: '0x780'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Creak_BrigDeck_Pillar_Back_Left
+    Offset: '0x788'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: ShipAudio_Ambience_BelowDeck
+    Offset: '0x790'
+    Size: '0x8'
+    Type: Class ShipAudioEmitterComponent*
+  - Name: LargeBoat_AudioPortal_BrigDeckDoor
+    Offset: '0x798'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   - Name: LargeBoat_AudioPortal_MapDeckStairs
-    Offset: '0x700'
+    Offset: '0x7a0'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   - Name: LargeBoat_AudioPortal_MapDeckGrille
-    Offset: '0x708'
+    Offset: '0x7a8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   - Name: LargeBoat_AudioPortal_CaptCab_DeckDoor
-    Offset: '0x710'
+    Offset: '0x7b0'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   - Name: LargeBoat_AudioPortal_CaptCab_SideDoor
-    Offset: '0x718'
+    Offset: '0x7b8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
   ClassSize: '0x1b8'
-  FullSize: '0x720'
-  InheritedSize: '0x568'
+  FullSize: '0x7c0'
+  InheritedSize: '0x608'
   Super: ShipHullAudio
