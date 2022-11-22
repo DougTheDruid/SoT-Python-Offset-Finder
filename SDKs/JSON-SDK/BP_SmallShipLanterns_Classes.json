@@ -6,49 +6,49 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "Railing_Wheel",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "BottomDeckFront",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "BottomDeckBrig",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "CabinMapTable",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "Railing_BowRightFront",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "Railing_BowLeftFront",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "CabinQuestTable",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x400"

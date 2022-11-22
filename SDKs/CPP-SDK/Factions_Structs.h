@@ -17,6 +17,27 @@ public:
 };
 
 
+// Size 0x20
+struct FactionRequest
+{
+public:
+	class                                                        Faction;                                           // 0x0(0x8)
+};
+
+
+// Size 0xa0
+struct FactionDisplayInfo
+{
+public:
+	class                                                        Faction;                                           // 0x0(0x8)
+	Struct FText                                                 Title;                                             // 0x8(0x38)
+	Struct FText                                                 Description;                                       // 0x40(0x38)
+	Struct Vector2D                                              CardOffset;                                        // 0x78(0x8)
+	Struct StringAssetReference                                  KeyArt;                                            // 0x80(0x10)
+	Struct StringAssetReference                                  Icon;                                              // 0x90(0x10)
+};
+
+
 // Size 0xc
 struct KillStreakRibbonEvent
 {
@@ -151,27 +172,6 @@ struct CinematicFactionEvent
 public:
 	class                                                        Company;                                           // 0x0(0x8)
 	Struct CinematicQuestEvent                                   CinematicData;                                     // 0x8(0x80)
-};
-
-
-// Size 0x20
-struct FactionRequest
-{
-public:
-	class                                                        Faction;                                           // 0x0(0x8)
-};
-
-
-// Size 0xa0
-struct FactionDisplayInfo
-{
-public:
-	class                                                        Faction;                                           // 0x0(0x8)
-	Struct FText                                                 Title;                                             // 0x8(0x38)
-	Struct FText                                                 Description;                                       // 0x40(0x38)
-	Struct Vector2D                                              CardOffset;                                        // 0x78(0x8)
-	Struct StringAssetReference                                  KeyArt;                                            // 0x80(0x10)
-	Struct StringAssetReference                                  Icon;                                              // 0x90(0x10)
 };
 
 

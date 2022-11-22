@@ -31,8 +31,8 @@ DisplayInvasionBannersStepDesc:
 EnvQueryGenerator_AggressiveAggressiveSpawnLocations:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x50'
-  InheritedSize: '0x50'
+  FullSize: '0x58'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 GetInvasionBattleLocationStep:
   Attributes: []
@@ -162,40 +162,44 @@ InvasionLocationsDataAssetGetterInterface:
   Super: Interface
 InvasionService:
   Attributes:
-  - Name: InvasionServiceDataAsset
+  - Name: InvasionSettings
     Offset: '0x408'
+    Size: '0x8'
+    Type: Class InvasionSettings*
+  - Name: InvasionServiceDataAsset
+    Offset: '0x410'
     Size: '0x8'
     Type: Class InvasionServiceDataAsset*
   - Name: InvasionLocationsDataAsset
-    Offset: '0x410'
+    Offset: '0x418'
     Size: '0x8'
     Type: Class InvasionLocationsDataAsset*
   - Name: MatchmakingCrews
-    Offset: '0x508'
+    Offset: '0x570'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: InvadingCrews
-    Offset: '0x518'
+    Offset: '0x580'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: ReplicatedInvasionCrewMusicStates
-    Offset: '0x528'
+    Offset: '0x590'
     Size: '0x10'
     Type: TArray<Struct ReplicatedInvasionCrewMusicState>
   - Name: MatchmakingCrewsReplicated
-    Offset: '0x538'
+    Offset: '0x5a0'
     Size: '0x10'
     Type: TArray<Struct InvasionServiceMatchmakingCrewInfo>
   - Name: InvadingCrewsReplicated
-    Offset: '0x548'
+    Offset: '0x5b0'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: InvasionBattleBoundsList
-    Offset: '0x558'
+    Offset: '0x5c0'
     Size: '0x10'
     Type: TArray<class InvasionBattleBounds*>
-  ClassSize: '0x1f0'
-  FullSize: '0x5b8'
+  ClassSize: '0x270'
+  FullSize: '0x638'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionServiceDataAsset:
@@ -212,56 +216,68 @@ InvasionServiceDataAsset:
     Offset: '0x38'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
-  - Name: Invasion_LosingCrew_VoyageDescDataAsset
+  - Name: VoteValidationRivalShipDetectionRadius
     Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: Invasion_LosingCrew_VoyageDescDataAsset
+    Offset: '0x48'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
   - Name: AggressivePassive_EnvQueryTemplate
-    Offset: '0x48'
-    Size: '0x8'
-    Type: Class EnvQuery*
-  - Name: AggressiveAggressive_InvasionLocation_EnvQueryTemplate
     Offset: '0x50'
     Size: '0x8'
     Type: Class EnvQuery*
-  - Name: AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate
+  - Name: AggressiveAggressive_InvasionLocation_EnvQueryTemplate
     Offset: '0x58'
     Size: '0x8'
     Type: Class EnvQuery*
-  - Name: AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate
+  - Name: AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate
     Offset: '0x60'
     Size: '0x8'
     Type: Class EnvQuery*
-  - Name: AggressivePassive_EQSQueryParamData_SailingTargetDistance_Min
+  - Name: AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate
     Offset: '0x68'
-    Size: '0x4'
-    Type: float
-  - Name: AggressivePassive_EQSQueryParamData_SailingTargetDistance_Max
-    Offset: '0x6c'
-    Size: '0x4'
-    Type: float
-  - Name: AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Min
+    Size: '0x8'
+    Type: Class EnvQuery*
+  - Name: AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Min
     Offset: '0x70'
     Size: '0x4'
     Type: float
-  - Name: AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Max
+  - Name: AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Max
     Offset: '0x74'
     Size: '0x4'
     Type: float
-  - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
+  - Name: AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Min
     Offset: '0x78'
+    Size: '0x4'
+    Type: float
+  - Name: AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Max
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: float
+  - Name: AggressivePassive_EQSQueryParamData_TargetLocationOffsetInMetres
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
+    Offset: '0x88'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
   - Name: Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset
-    Offset: '0x80'
+    Offset: '0x90'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
   - Name: StopPlayingEmergeMusicAfterSeconds
-    Offset: '0x88'
+    Offset: '0x98'
     Size: '0x4'
     Type: float
-  ClassSize: '0x68'
-  FullSize: '0x90'
+  - Name: WorldEventsCooldown
+    Offset: '0x9c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x78'
+  FullSize: '0xa0'
   InheritedSize: '0x28'
   Super: DataAsset
 InvasionServiceInterface:
@@ -270,6 +286,16 @@ InvasionServiceInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+InvasionSettings:
+  Attributes:
+  - Name: InvasionServiceDataAsset
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x10'
+  FullSize: '0x48'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings
 SetInvasionMusicStateForCrewStep:
   Attributes: []
   ClassSize: '0x0'

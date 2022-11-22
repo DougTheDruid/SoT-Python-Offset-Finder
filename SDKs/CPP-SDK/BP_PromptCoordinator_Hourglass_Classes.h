@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x130
+// Size 0x111
 class BP_PromptCoordinator_Hourglass_C: public BP_PromptCoordinator_Base_C
 {
 public:
@@ -17,7 +17,8 @@ public:
 	float                                                        Prompt Delay;                                      // 0x16c(0x4)
 	Struct PrioritisedPromptWithHandle                           PromptHourglassTutorial1;                          // 0x170(0x68)
 	float                                                        PromptDisplayDuration;                             // 0x1d8(0x4)
-	Struct PrioritisedPromptWithHandle                           PromptHourglassTutorial2;                          // 0x1e0(0x68)
+	Struct ObjectMessagingHandle                                 HandleChoseFaction;                                // 0x1e0(0x48)
+	bool                                                         FactionChosen;                                     // 0x228(0x1)
 };
 
 

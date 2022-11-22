@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x101
+// Size 0x100
 class BP_Crest_C: public Crest
 {
 public:
@@ -31,7 +31,6 @@ public:
 	TArray<class ParticleSystem*>                                VFXSizeVariants;                                   // 0x528(0x10)
 	int                                                          NameSizeIndex;                                     // 0x538(0x4)
 	Struct FeatureFlag                                           FeatureName;                                       // 0x53c(0xc)
-	bool                                                         TextHiddenThroughTutorial;                         // 0x548(0x1)
 };
 
 

@@ -124,7 +124,7 @@ public:
 };
 
 
-// Size 0xf0
+// Size 0xe8
 class ElectricShieldBuffComponent: public ActorComponent
 {
 public:
@@ -132,8 +132,8 @@ public:
 	struct FName                                                 VfxSocketName;                                     // 0xd8(0x8)
 	Class WwiseEvent*                                            StartAudioLoopEvent;                               // 0xe0(0x8)
 	Class WwiseEvent*                                            StopAudioLoopEvent;                                // 0xe8(0x8)
-	bool                                                         IsShieldActive;                                    // 0xf0(0x1)
-	Class ParticleSystemComponent*                               ShieldEffectComponent;                             // 0xf8(0x8)
+	Class ParticleSystemComponent*                               ShieldEffectComponent;                             // 0xf0(0x8)
+	bool                                                         IsShieldActive;                                    // 0xf8(0x1)
 };
 
 

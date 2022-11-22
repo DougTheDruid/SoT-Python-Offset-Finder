@@ -550,7 +550,7 @@ public:
 };
 
 
-// Size 0xb8
+// Size 0xc8
 struct TinySharkParams
 {
 public:
@@ -559,8 +559,17 @@ public:
 	Struct Vector                                                SpawnOffset;                                       // 0xc(0xc)
 	class                                                        TinySharkClassID;                                  // 0x78(0x8)
 	Struct WeightedProbabilityRangeOfRanges                      LifetimeTimeout;                                   // 0x80(0x30)
-	float                                                        TrackedShipDistanceThreshold;                      // 0xb0(0x4)
-	float                                                        RepositionTime;                                    // 0xb4(0x4)
+	TArray<Struct TinySharkTrackedShipDistanceThresholdByFeature> TrackedShipDistanceThresholdByFeatureInPriorityOrder; // 0xb0(0x10)
+	float                                                        RepositionTime;                                    // 0xc0(0x4)
+};
+
+
+// Size 0x10
+struct TinySharkTrackedShipDistanceThresholdByFeature
+{
+public:
+	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
+	float                                                        TrackedShipDistanceThreshold;                      // 0xc(0x4)
 };
 
 
@@ -785,6 +794,15 @@ struct AthenaAIControllerWeightedRangesParamValue
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
 	Struct WeightedProbabilityRangeOfRanges                      Value;                                             // 0x8(0x30)
+};
+
+
+// Size 0x20
+struct AthenaAIControllerFeatureToggledParams
+{
+public:
+	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
+	TArray<Struct AthenaAIControllerParamValue>                  Params;                                            // 0x10(0x10)
 };
 
 

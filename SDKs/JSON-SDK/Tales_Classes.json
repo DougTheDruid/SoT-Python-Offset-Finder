@@ -323,6 +323,46 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestQueryableStateCanAllDataBeReadNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateCanAnyDataBeReadNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional": {
     "Super": "NPCDialogConditional",
     "FullSize": "0x48",
@@ -602,6 +642,20 @@
       }
     ]
   },
+  "TaleQuestLockGhostShipDoorService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Desc",
+        "Type": "Class TaleQuestLockGhostShipDoorServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
   "TaleQuestQueryableStatesService": {
     "Super": "TaleQuestService",
     "FullSize": "0x90",
@@ -756,6 +810,13 @@
     "Attributes": []
   },
   "TaleQuestInteractionPreventionServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestLockGhostShipDoorServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -1198,6 +1259,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleMigrationVolatileTaskStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
   "TaleQuestAddToArrayStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
@@ -1224,6 +1292,13 @@
     "FullSize": "0x98",
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestAwaitCrewShipSinkStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x48",
     "Attributes": []
   },
   "TaleQuestAwaitEventStep": {
@@ -1419,6 +1494,27 @@
     "FullSize": "0x98",
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestStarFieldPuzzleDimStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestStarFieldPuzzleEndStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x10",
+    "Attributes": []
+  },
+  "TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x18",
     "Attributes": []
   },
   "TaleQuestStartCameraFadeStep": {
@@ -2441,9 +2537,9 @@
   },
   "SpawnPhasedItemStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x158",
+    "FullSize": "0x188",
     "InheritedSize": "0x80",
-    "ClassSize": "0xd8",
+    "ClassSize": "0x108",
     "Attributes": [
       {
         "Name": "TrackItem",
@@ -2482,10 +2578,16 @@
         "Offset": "0xf8"
       },
       {
+        "Name": "LocatorPoint",
+        "Type": "Struct QuestVariableOrientedPoint",
+        "Size": "0x30",
+        "Offset": "0x128"
+      },
+      {
         "Name": "SpawnedItemVar",
         "Type": "Struct QuestVariableItemInfo",
         "Size": "0x30",
-        "Offset": "0x128"
+        "Offset": "0x158"
       }
     ]
   },
@@ -2583,6 +2685,20 @@
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "TaleQuestAwaitCrewShipSinkStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
   },
   "TaleQuestChooseIslandFromWeightsStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -2938,6 +3054,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestCoreFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestIntMathsFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
@@ -3124,6 +3247,48 @@
       }
     ]
   },
+  "TaleQuestStarFieldPuzzleDimStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StarFieldPuzzleActor",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "TaleQuestStarFieldPuzzleEndStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StarFieldPuzzleActor",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StarFieldPuzzleActor",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
   "TaleQuestStartCameraFadeStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xa0",
@@ -3209,6 +3374,13 @@
         "Offset": "0x80"
       }
     ]
+  },
+  "TaleMigrationVolatileTaskStepDesc": {
+    "Super": "TaleQuestTaskStepDescBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TaleQuestCrewTaskStepDesc": {
     "Super": "TaleQuestTaskStepDescBase",

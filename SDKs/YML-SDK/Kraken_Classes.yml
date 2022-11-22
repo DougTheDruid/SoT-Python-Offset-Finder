@@ -57,14 +57,14 @@ EnvQueryContext_PreviousLocation:
 EnvQueryGenerator_KrakenSpawnLocations:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x50'
-  InheritedSize: '0x50'
+  FullSize: '0x58'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 EnvQueryGenerator_KrakenTentacleSpawnLocations:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x50'
-  InheritedSize: '0x50'
+  FullSize: '0x58'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 Kraken:
   Attributes:

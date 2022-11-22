@@ -6,13 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_ARoguesLegacy_Larinna_C: public InteractableBase
+// Size 0x10
+class BP_ARoguesLegacy_Larinna_C: public BP_SoleTrader_C
 {
 public:
-	Class TankardRefillerComponent*                              TankardRefiller;                                   // 0x400(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x408(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x6b0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6b8(0x8)
 };
 
 

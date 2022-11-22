@@ -28,6 +28,58 @@
       }
     ]
   },
+  "FactionRequest": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FactionDisplayInfo": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Title",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Description",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CardOffset",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "KeyArt",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Icon",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x90"
+      }
+    ]
+  },
   "KillStreakRibbonEvent": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -251,58 +303,6 @@
         "Type": "Struct CinematicQuestEvent",
         "Size": "0x80",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "FactionRequest": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Faction",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FactionDisplayInfo": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "Faction",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Title",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Description",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CardOffset",
-        "Type": "Struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "KeyArt",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "Icon",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x90"
       }
     ]
   },

@@ -24,14 +24,15 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x58
 struct ServerQueueWaitTimesRequestModel
 {
 public:
-	Struct FString                                               ServerLocation;                                    // 0x0(0x10)
-	Struct FString                                               PrivateServerId;                                   // 0x18(0x10)
-	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x28(0x10)
-	Struct FString                                               PlayModeState;                                     // 0x38(0x10)
+	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	Struct FString                                               ServerLocation;                                    // 0x10(0x10)
+	Struct FString                                               PrivateServerId;                                   // 0x28(0x10)
+	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x38(0x10)
+	Struct FString                                               PlayModeState;                                     // 0x48(0x10)
 };
 
 
@@ -74,8 +75,9 @@ public:
 	TArray<UInt32 Resources>                                     Resources;                                         // 0x60(0x10)
 	byte                                                         PvPFaction;                                        // 0x70(0x1)
 	int                                                          PvPSkillLevel;                                     // 0x74(0x4)
-	Struct Guid                                                  RivalCrewId;                                       // 0x78(0x10)
-	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
+	int                                                          PvPRivalSessionType;                               // 0x78(0x4)
+	Struct Guid                                                  RivalCrewId;                                       // 0x7c(0x10)
+	byte                                                         MatchmakingRequestReason;                          // 0x8c(0x1)
 	Struct Timespan                                              TimeWaitingForMatch;                               // 0x90(0x8)
 };
 

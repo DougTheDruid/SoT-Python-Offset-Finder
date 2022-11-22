@@ -103,6 +103,17 @@
       }
     ]
   },
+  "TaleDisplayedInvasionBanner": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "CrewMatchmakingCancelledDueToInvasion": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -148,7 +159,7 @@
     ]
   },
   "InvasionParticipatingCrewData": {
-    "ClassSize": "0x70",
+    "ClassSize": "0x78",
     "Attributes": [
       {
         "Name": "CrewIds",

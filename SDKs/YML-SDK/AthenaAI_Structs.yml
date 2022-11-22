@@ -1239,6 +1239,17 @@ AthenaAIControllerDamageTargetScoreFromPerceivedTarget:
     Size: '0x4'
     Type: float
   ClassSize: '0x14'
+AthenaAIControllerFeatureToggledParams:
+  Attributes:
+  - Name: Feature
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct FeatureFlag
+  - Name: Params
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Struct AthenaAIControllerParamValue>
+  ClassSize: '0x20'
 AthenaAIControllerHealthCustomisation:
   Attributes:
   - Name: OverrideMaxHealth
@@ -2394,15 +2405,15 @@ TinySharkParams:
     Offset: '0x80'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
-  - Name: TrackedShipDistanceThreshold
+  - Name: TrackedShipDistanceThresholdByFeatureInPriorityOrder
     Offset: '0xb0'
-    Size: '0x4'
-    Type: float
+    Size: '0x10'
+    Type: TArray<Struct TinySharkTrackedShipDistanceThresholdByFeature>
   - Name: RepositionTime
-    Offset: '0xb4'
+    Offset: '0xc0'
     Size: '0x4'
     Type: float
-  ClassSize: '0xb8'
+  ClassSize: '0xc8'
 TinySharkServiceParams:
   Attributes:
   - Name: TinySharkParams
@@ -2462,6 +2473,17 @@ TinySharkSpawnTelemetryEvent:
   ClassSize: '0x40'
 TinySharkSpawnedNetworkEvent:
   Attributes: []
+  ClassSize: '0x10'
+TinySharkTrackedShipDistanceThresholdByFeature:
+  Attributes:
+  - Name: Feature
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct FeatureFlag
+  - Name: TrackedShipDistanceThreshold
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
   ClassSize: '0x10'
 TinySharkWorldSettingsParams:
   Attributes:

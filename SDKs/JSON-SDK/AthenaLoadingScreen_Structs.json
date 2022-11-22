@@ -1,6 +1,6 @@
 {
   "SlateLoadingScreenImageParams": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "ImageAsset",
@@ -13,6 +13,76 @@
         "Type": "TArray<Struct FText>",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "AdvancedTips",
+        "Type": "Struct SlateLoadingScreenAdvancedTipsParams",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "SlateLoadingScreenAdvancedTipsParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TipDescriptions",
+        "Type": "TArray<Struct SlateLoadingScreenAdvancedTipDescription>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateLoadingScreenAdvancedTipDescription": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Centre",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TopEdge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "Width",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Footer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "Font",
+        "Type": "Struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Colour",
+        "Type": "Struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "LineHeightPercentage",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb8"
       }
     ]
   },

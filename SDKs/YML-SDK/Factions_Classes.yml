@@ -20,12 +20,8 @@ FactionFlipMeshComponent:
     Offset: '0x7d0'
     Size: '0x10'
     Type: TArray<Struct CrewStreakLevelIncreased>
-  - Name: IsFlipping
+  - Name: ServerTargetFlipped
     Offset: '0x7e0'
-    Size: '0x1'
-    Type: bool
-  - Name: Flipped
-    Offset: '0x7e1'
     Size: '0x1'
     Type: bool
   ClassSize: '0x1d0'
@@ -38,6 +34,10 @@ FactionInteractionVoteComponent:
     Offset: '0x158'
     Size: '0x4'
     Type: float
+  - Name: WaitTimeSimilarityThresholdSeconds
+    Offset: '0x15c'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x20'
   FullSize: '0x170'
   InheritedSize: '0x150'
@@ -58,6 +58,28 @@ FactionLootLevelRewardsAsset:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+FactionOutpostVoteInteractionActor:
+  Attributes:
+  - Name: FadeDuration
+    Offset: '0x3d8'
+    Size: '0x4'
+    Type: float
+  - Name: FactionInactiveInfo
+    Offset: '0x3e0'
+    Size: '0xa0'
+    Type: Struct FactionDisplayInfo
+  - Name: FactionActiveInfo
+    Offset: '0x480'
+    Size: '0xa0'
+    Type: Struct FactionDisplayInfo
+  - Name: FactionActiveInfoPtr
+    Offset: '0x538'
+    Size: '0x20'
+    Type: Struct FactionRequest
+  ClassSize: '0x230'
+  FullSize: '0x5f8'
+  InheritedSize: '0x3c8'
+  Super: Actor
 FactionParticleComponent:
   Attributes:
   - Name: Faction
@@ -68,10 +90,18 @@ FactionParticleComponent:
     Offset: '0xa00'
     Size: '0x8'
     Type: class
-  - Name: StreakData
+  - Name: OwningShipCrewId
     Offset: '0xa08'
     Size: '0x10'
-    Type: TArray<Struct CrewStreakLevelIncreased>
+    Type: Struct Guid
+  - Name: OwningShipCrewStreak
+    Offset: '0xa18'
+    Size: '0x4'
+    Type: int
+  - Name: ServerMigrationEnded
+    Offset: '0xa1c'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x170'
   FullSize: '0xa20'
   InheritedSize: '0x8b0'
@@ -90,24 +120,28 @@ FactionService:
     Offset: '0x4a8'
     Size: '0x10'
     Type: TArray<Struct CompanyFactionAlignment>
-  - Name: FactionAlignedCrewData
+  - Name: DefenderLootLevelThresholds
     Offset: '0x4b8'
+    Size: '0x10'
+    Type: TArray<Struct DefenderLootLevelThreshold>
+  - Name: FactionAlignedCrewData
+    Offset: '0x4c8'
     Size: '0x10'
     Type: TArray<Struct CrewFactionEntryData>
   - Name: FactionAlignedCrews
-    Offset: '0x4c8'
+    Offset: '0x4d8'
     Size: '0x10'
     Type: TArray<Struct CrewFactionEntry>
   - Name: MatchmakingWaitTimes
-    Offset: '0x4d8'
+    Offset: '0x4e8'
     Size: '0x10'
     Type: TArray<Struct FactionWaitTimesData>
   - Name: DebugRepActor
-    Offset: '0x5e8'
+    Offset: '0x5f8'
     Size: '0x8'
     Type: Class FactionServiceDebugRepActor*
-  ClassSize: '0x240'
-  FullSize: '0x608'
+  ClassSize: '0x250'
+  FullSize: '0x618'
   InheritedSize: '0x3c8'
   Super: Actor
 FactionServiceDebugRepActor:
@@ -186,28 +220,36 @@ FactionSettingsAsset:
     Offset: '0xc8'
     Size: '0x10'
     Type: TArray<Struct FactionServicePopUpData>
-  - Name: LeavingBattleBoundsPopUp
+  - Name: EnteredTunnelOfTheDamnedFactionPopUp
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<Struct FactionServicePopUpData>
-  - Name: MaxRankAchievedForSloopOrBrigantinePopUp
+  - Name: LeavingBattleBoundsPopUp
     Offset: '0xe8'
     Size: '0x10'
     Type: TArray<Struct FactionServicePopUpData>
-  - Name: MaxRankAchievedForGalleonPopUp
+  - Name: SentToSinBinPopUp
     Offset: '0xf8'
     Size: '0x10'
     Type: TArray<Struct FactionServicePopUpData>
-  - Name: LosingBattleHeaderText
+  - Name: MaxRankAchievedForSloopOrBrigantinePopUp
     Offset: '0x108'
+    Size: '0x10'
+    Type: TArray<Struct FactionServicePopUpData>
+  - Name: MaxRankAchievedForGalleonPopUp
+    Offset: '0x118'
+    Size: '0x10'
+    Type: TArray<Struct FactionServicePopUpData>
+  - Name: LosingBattleHeaderText
+    Offset: '0x128'
     Size: '0x38'
     Type: Struct FText
   - Name: LosingBattleMessageText
-    Offset: '0x140'
+    Offset: '0x160'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x150'
-  FullSize: '0x178'
+  ClassSize: '0x170'
+  FullSize: '0x198'
   InheritedSize: '0x28'
   Super: DataAsset
 FactionShipStreakDataAsset:
@@ -216,16 +258,8 @@ FactionShipStreakDataAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<Struct StreakMesh>
-  - Name: FactionBParticles
-    Offset: '0x38'
-    Size: '0x8'
-    Type: class
-  - Name: FactionGParticles
-    Offset: '0x40'
-    Size: '0x8'
-    Type: class
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  ClassSize: '0x10'
+  FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 FactionVoteAudioComponent:
@@ -308,24 +342,28 @@ FactionVoteValidatorBase:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<Class TargetCompanies>
+  - Name: EdgeOfWorldWarningWeightForFactionLock
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
   - Name: Consumer
-    Offset: '0xb0'
+    Offset: '0xd0'
     Size: '0x8'
     Type: Class FactionVoteConsumerBase*
   - Name: CurrentCompany
-    Offset: '0xb8'
+    Offset: '0xd8'
     Size: '0x4'
     Type: int
   - Name: FlipTime
-    Offset: '0xbc'
+    Offset: '0xdc'
     Size: '0x4'
     Type: float
   - Name: OwningActor
-    Offset: '0xc8'
+    Offset: '0xe8'
     Size: '0x8'
     Type: Class Actor*
-  ClassSize: '0xa0'
-  FullSize: '0xd0'
+  ClassSize: '0xc0'
+  FullSize: '0xf0'
   InheritedSize: '0x30'
   Super: VoteValidatorInlineBase
 IsInFactionStatCondition:
@@ -438,19 +476,27 @@ StartFactionVoyageVoteConsumer:
     Offset: '0x1d8'
     Size: '0x38'
     Type: Struct FText
-  - Name: FactionVotingSwitchVote
+  - Name: FactionVotingCantVoteReasonIsOnFactionBlockedTale
     Offset: '0x210'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x188'
-  FullSize: '0x248'
+  - Name: FactionVotingCantVoteReasonIsInInvalidWorldRegion
+    Offset: '0x248'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingSwitchVote
+    Offset: '0x280'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x1f8'
+  FullSize: '0x2b8'
   InheritedSize: '0xc0'
   Super: FactionVoteConsumerBase
 StartFactionVoyageVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xd0'
-  InheritedSize: '0xd0'
+  FullSize: '0xf0'
+  InheritedSize: '0xf0'
   Super: FactionVoteValidatorBase
 StopFactionVoyageVoteConsumer:
   Attributes:
@@ -486,19 +532,23 @@ StopFactionVoyageVoteConsumer:
     Offset: '0x248'
     Size: '0x38'
     Type: Struct FText
-  - Name: FactionVotingCantVoteReasonLeaveFactionCooldownIsActive
+  - Name: FactionVotingCantVoteReasonCrewInBattle
     Offset: '0x280'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x1f8'
-  FullSize: '0x2b8'
+  - Name: FactionVotingCantVoteReasonLeaveFactionCooldownIsActive
+    Offset: '0x2b8'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x230'
+  FullSize: '0x2f0'
   InheritedSize: '0xc0'
   Super: FactionVoteConsumerBase
 StopFactionVoyageVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xd0'
-  InheritedSize: '0xd0'
+  FullSize: '0xf0'
+  InheritedSize: '0xf0'
   Super: FactionVoteValidatorBase
 StreakMaterialDataAsset:
   Attributes:

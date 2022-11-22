@@ -60,7 +60,7 @@
         "Offset": "0x3fc"
       },
       {
-        "Name": "CirclingSpeed",
+        "Name": "circlingSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x400"
@@ -138,7 +138,7 @@
         "Offset": "0x438"
       },
       {
-        "Name": "Smoothness",
+        "Name": "smoothness",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x43c"

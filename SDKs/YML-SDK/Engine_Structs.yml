@@ -5475,11 +5475,15 @@ GPUSpriteEmitterInfo:
     Offset: '0x28c'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: bKillParticlesOnFFTWater
+  - Name: MissingParentParticlesBehaviour
     Offset: '0x294'
     Size: '0x1'
+    Type: byte
+  - Name: bKillParticlesOnFFTWater
+    Offset: '0x298'
+    Size: '0x1'
     Type: bool
-  ClassSize: '0x2a0'
+  ClassSize: '0x2b0'
 GPUSpriteLocalVectorFieldInfo:
   Attributes:
   - Name: Field

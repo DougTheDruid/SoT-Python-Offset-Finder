@@ -1626,82 +1626,82 @@
   },
   "AICreatureCharacterMovementComponent": {
     "Super": "CharacterMovementComponent",
-    "FullSize": "0x620",
-    "InheritedSize": "0x560",
+    "FullSize": "0x650",
+    "InheritedSize": "0x590",
     "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "AIStrategyMovementProperties",
         "Type": "TArray<Struct AIStrategyMovementProperties>",
         "Size": "0x10",
-        "Offset": "0x558"
+        "Offset": "0x588"
       },
       {
         "Name": "BlendSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x568"
+        "Offset": "0x598"
       },
       {
         "Name": "bCreateDisturbance",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x56c"
+        "Offset": "0x59c"
       },
       {
         "Name": "DisturbanceSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x570"
+        "Offset": "0x5a0"
       },
       {
         "Name": "DisturbanceVelocityScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x574"
+        "Offset": "0x5a4"
       },
       {
         "Name": "OrientationBlendSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x578"
+        "Offset": "0x5a8"
       },
       {
         "Name": "OrientationMaxPitch",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x57c"
+        "Offset": "0x5ac"
       },
       {
         "Name": "UpdateOrientationFrequency",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x580"
+        "Offset": "0x5b0"
       },
       {
         "Name": "MinStairAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x584"
+        "Offset": "0x5b4"
       },
       {
         "Name": "MinStairVelocityDampen",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x588"
+        "Offset": "0x5b8"
       },
       {
         "Name": "SubscribedStairClimbStrategies",
         "Type": "TArray<Class SubscribedStairClimbStrategies>",
         "Size": "0x10",
-        "Offset": "0x590"
+        "Offset": "0x5c0"
       }
     ]
   },
   "FaunaMovementComponent": {
     "Super": "AICreatureCharacterMovementComponent",
-    "FullSize": "0x620",
-    "InheritedSize": "0x620",
+    "FullSize": "0x650",
+    "InheritedSize": "0x650",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -3057,9 +3057,9 @@
   },
   "AthenaAIControllerParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x100",
+    "FullSize": "0x110",
     "InheritedSize": "0x28",
-    "ClassSize": "0xd8",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "DefaultSenseSettings",
@@ -3182,34 +3182,40 @@
         "Offset": "0xc0"
       },
       {
+        "Name": "FeatureToggleIndividualNamedParamOverrides",
+        "Type": "TArray<Struct AthenaAIControllerFeatureToggledParams>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
         "Name": "IndividualNamedWeightedRangesControllerParams",
         "Type": "TArray<Struct AthenaAIControllerWeightedRangesParamValue>",
         "Size": "0x10",
-        "Offset": "0xd0"
+        "Offset": "0xe0"
       },
       {
         "Name": "IndividualAIStrategySenseSettingOverrides",
         "Type": "TArray<Struct AthenaAIControllerSenseSettingOverride>",
         "Size": "0x10",
-        "Offset": "0xe0"
+        "Offset": "0xf0"
       },
       {
         "Name": "IndividualOverrideCurrentTargetPerceivedNotVisibleAge",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xf0"
+        "Offset": "0x100"
       },
       {
         "Name": "IndividualCurrentTargetPerceivedNotVisibleAge",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xf4"
+        "Offset": "0x104"
       },
       {
         "Name": "FeatureName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xf8"
+        "Offset": "0x108"
       }
     ]
   },
@@ -3297,9 +3303,9 @@
   },
   "TaleQuestStartTinySharkExperienceStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x1b0",
+    "FullSize": "0x1c0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x130",
+    "ClassSize": "0x140",
     "Attributes": [
       {
         "Name": "SpawnLocation",
@@ -3316,32 +3322,32 @@
       {
         "Name": "TinySharkParams",
         "Type": "Struct TinySharkParams",
-        "Size": "0xb8",
+        "Size": "0xc8",
         "Offset": "0x90"
       },
       {
         "Name": "TargetShip",
         "Type": "Class Ship*",
         "Size": "0x8",
-        "Offset": "0x168"
+        "Offset": "0x178"
       },
       {
         "Name": "ExperienceTracker",
         "Type": "Class TaleQuestTinySharkExperienceTracker*",
         "Size": "0x8",
-        "Offset": "0x170"
+        "Offset": "0x180"
       },
       {
         "Name": "FireTinySharkVariantDefeatedStats",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x178"
+        "Offset": "0x188"
       },
       {
         "Name": "TinySharkExperience",
         "Type": "Struct QuestVariableTinySharkExperience",
         "Size": "0x30",
-        "Offset": "0x180"
+        "Offset": "0x190"
       }
     ]
   },
@@ -3436,9 +3442,9 @@
   },
   "TinySharkExperience": {
     "Super": "Actor",
-    "FullSize": "0x7f0",
+    "FullSize": "0x800",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x428",
+    "ClassSize": "0x438",
     "Attributes": [
       {
         "Name": "RelevancyDistance",
@@ -3485,45 +3491,45 @@
       {
         "Name": "Params",
         "Type": "Struct TinySharkParams",
-        "Size": "0xb8",
+        "Size": "0xc8",
         "Offset": "0x4b0"
       },
       {
         "Name": "TinySharkTelemetryComponent",
         "Type": "Class TinySharkTelemetryComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x578"
       },
       {
         "Name": "TrackedShip",
         "Type": "Class Ship*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x580"
       },
       {
         "Name": "SightingEncounterParams",
         "Type": "Struct EncounterParams",
         "Size": "0xc",
-        "Offset": "0x608"
+        "Offset": "0x618"
       },
       {
         "Name": "CloseEncounterParams",
         "Type": "Struct EncounterParams",
         "Size": "0xc",
-        "Offset": "0x614"
+        "Offset": "0x624"
       }
     ]
   },
   "TinySharkParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0xe0",
+    "FullSize": "0xf0",
     "InheritedSize": "0x28",
-    "ClassSize": "0xb8",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "Params",
         "Type": "Struct TinySharkParams",
-        "Size": "0xb8",
+        "Size": "0xc8",
         "Offset": "0x28"
       }
     ]
@@ -3590,9 +3596,9 @@
   },
   "AthenaAIControllerSharedParamValuesDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x88",
+    "FullSize": "0x98",
     "InheritedSize": "0x28",
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "OverrideMeshScale",
@@ -3643,296 +3649,302 @@
         "Offset": "0x68"
       },
       {
+        "Name": "FeatureToggleNamedParamOverrides",
+        "Type": "TArray<Struct AthenaAIControllerFeatureToggledParams>",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
         "Name": "NamedWeightedRangesControllerParams",
         "Type": "TArray<Struct AthenaAIControllerWeightedRangesParamValue>",
         "Size": "0x10",
-        "Offset": "0x78"
+        "Offset": "0x88"
       }
     ]
   },
   "AthenaAICharacterControllerSharedParamValuesDataAsset": {
     "Super": "AthenaAIControllerSharedParamValuesDataAsset",
-    "FullSize": "0x158",
-    "InheritedSize": "0x88",
+    "FullSize": "0x168",
+    "InheritedSize": "0x98",
     "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "OverrideUseRVOAvoidance",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x88"
+        "Offset": "0x98"
       },
       {
         "Name": "UseRVOAvoidance",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x89"
+        "Offset": "0x99"
       },
       {
         "Name": "OverridePrioritiseInteractablesBeforeEnemies",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x8a"
+        "Offset": "0x9a"
       },
       {
         "Name": "PrioritiseInteractablesBeforeEnemies",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x8b"
+        "Offset": "0x9b"
       },
       {
         "Name": "DistanceInMToCannonShotHitChanceCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x90"
+        "Offset": "0xa0"
       },
       {
         "Name": "AIStrategyMovementProperties",
         "Type": "TArray<Struct AIStrategyMovementProperties>",
         "Size": "0x10",
-        "Offset": "0x98"
+        "Offset": "0xa8"
       },
       {
         "Name": "ItemCategoryAIStrategyMovementPropertiesOverrides",
         "Type": "TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>",
         "Size": "0x10",
-        "Offset": "0xa8"
+        "Offset": "0xb8"
       },
       {
         "Name": "CannonTargetingParams",
         "Type": "Struct AthenaAICharacterCannonTargetingParams",
         "Size": "0x10",
-        "Offset": "0xb8"
+        "Offset": "0xc8"
       },
       {
         "Name": "WieldedItemProjectileEffectivenessProperties",
         "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>",
         "Size": "0x10",
-        "Offset": "0xc8"
+        "Offset": "0xd8"
       },
       {
         "Name": "WieldedItemOverrideNamedControllerParams",
         "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xe8"
       },
       {
         "Name": "NamedItemParams",
         "Type": "TArray<Struct AthenaAIItemParamValue>",
         "Size": "0x10",
-        "Offset": "0xe8"
+        "Offset": "0xf8"
       },
       {
         "Name": "SpawnItemDescForItemCategories",
         "Type": "TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>",
         "Size": "0x10",
-        "Offset": "0xf8"
+        "Offset": "0x108"
       },
       {
         "Name": "AIAbilityParams",
         "Type": "TArray<class AthenaAIAbilityParams*>",
         "Size": "0x10",
-        "Offset": "0x108"
+        "Offset": "0x118"
       },
       {
         "Name": "NonItemEngageOptions",
         "Type": "TArray<Struct AthenaAIEngageEnemyData>",
         "Size": "0x10",
-        "Offset": "0x118"
+        "Offset": "0x128"
       },
       {
         "Name": "AnimationDataOverrideAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x128"
+        "Offset": "0x138"
       },
       {
         "Name": "CustomAnimationAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x138"
+        "Offset": "0x148"
       },
       {
         "Name": "OverrideNoInitialItem",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x148"
+        "Offset": "0x158"
       },
       {
         "Name": "NoInitialItem",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x149"
+        "Offset": "0x159"
       },
       {
         "Name": "OverrideBeginFleeing",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x14a"
+        "Offset": "0x15a"
       },
       {
         "Name": "BeginFleeing",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x14b"
+        "Offset": "0x15b"
       },
       {
         "Name": "FleeingEQS",
         "Type": "Class EnvQuery*",
         "Size": "0x8",
-        "Offset": "0x150"
+        "Offset": "0x160"
       }
     ]
   },
   "AthenaAICharacterControllerParamsDataAsset": {
     "Super": "AthenaAIControllerParamsDataAsset",
-    "FullSize": "0x1f8",
-    "InheritedSize": "0x100",
+    "FullSize": "0x208",
+    "InheritedSize": "0x110",
     "ClassSize": "0xf8",
     "Attributes": [
       {
         "Name": "IndividualOverrideUseRVOAvoidance",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x100"
+        "Offset": "0x110"
       },
       {
         "Name": "IndividualUseRVOAvoidance",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x101"
+        "Offset": "0x111"
       },
       {
         "Name": "IndividualOverridePrioritiseInteractablesBeforeEnemies",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x102"
+        "Offset": "0x112"
       },
       {
         "Name": "IndividualPrioritiseInteractablesBeforeEnemies",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x103"
+        "Offset": "0x113"
       },
       {
         "Name": "IndividualDistanceInMToCannonShotHitChanceCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x108"
+        "Offset": "0x118"
       },
       {
         "Name": "IndividualAIStrategyMovementProperties",
         "Type": "TArray<Struct AIStrategyMovementProperties>",
         "Size": "0x10",
-        "Offset": "0x110"
+        "Offset": "0x120"
       },
       {
         "Name": "IndividualItemCategoryAIStrategyMovementPropertiesOverrides",
         "Type": "TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>",
         "Size": "0x10",
-        "Offset": "0x120"
+        "Offset": "0x130"
       },
       {
         "Name": "IndividualCannonTargetingParams",
         "Type": "Struct AthenaAICharacterCannonTargetingParams",
         "Size": "0x10",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
         "Name": "IndividualWieldedItemProjectileEffectivenessProperties",
         "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>",
         "Size": "0x10",
-        "Offset": "0x140"
+        "Offset": "0x150"
       },
       {
         "Name": "IndividualWieldedItemOverrideNamedControllerParams",
         "Type": "TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>",
         "Size": "0x10",
-        "Offset": "0x150"
+        "Offset": "0x160"
       },
       {
         "Name": "IndividualNamedItemParams",
         "Type": "TArray<Struct AthenaAIItemParamValue>",
         "Size": "0x10",
-        "Offset": "0x160"
+        "Offset": "0x170"
       },
       {
         "Name": "IndividualSpawnItemDescForItemCategories",
         "Type": "TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>",
         "Size": "0x10",
-        "Offset": "0x170"
+        "Offset": "0x180"
       },
       {
         "Name": "UseDamageBasedAbilityStages",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x180"
+        "Offset": "0x190"
       },
       {
         "Name": "HealthStages",
         "Type": "TArray<Float HealthStages>",
         "Size": "0x10",
-        "Offset": "0x188"
+        "Offset": "0x198"
       },
       {
         "Name": "IndividualDamageBasedAIAbilityStages",
         "Type": "TArray<Struct AthenaAIAbilityDamageStage>",
         "Size": "0x10",
-        "Offset": "0x198"
+        "Offset": "0x1a8"
       },
       {
         "Name": "IndividualAIAbilityParams",
         "Type": "TArray<class AthenaAIAbilityParams*>",
         "Size": "0x10",
-        "Offset": "0x1a8"
+        "Offset": "0x1b8"
       },
       {
         "Name": "IndividualNonItemEngageOptions",
         "Type": "TArray<Struct AthenaAIEngageEnemyData>",
         "Size": "0x10",
-        "Offset": "0x1b8"
+        "Offset": "0x1c8"
       },
       {
         "Name": "IndividualAnimationDataOverrideAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x1c8"
+        "Offset": "0x1d8"
       },
       {
         "Name": "IndividualCustomAnimationAsset",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x1d8"
+        "Offset": "0x1e8"
       },
       {
         "Name": "IndividualOverrideNoInitialItem",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1e8"
+        "Offset": "0x1f8"
       },
       {
         "Name": "IndividualNoInitialItem",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1e9"
+        "Offset": "0x1f9"
       },
       {
         "Name": "IndividualOverrideBeginFleeing",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1ea"
+        "Offset": "0x1fa"
       },
       {
         "Name": "IndividualBeginFleeing",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1eb"
+        "Offset": "0x1fb"
       },
       {
         "Name": "IndividualFleeingEQS",
         "Type": "Class EnvQuery*",
         "Size": "0x8",
-        "Offset": "0x1f0"
+        "Offset": "0x200"
       }
     ]
   },
@@ -6840,111 +6852,111 @@
   },
   "FaunaAIContollerParamsDataAsset": {
     "Super": "AthenaAIControllerParamsDataAsset",
-    "FullSize": "0x188",
-    "InheritedSize": "0x100",
+    "FullSize": "0x198",
+    "InheritedSize": "0x110",
     "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "Courage",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
-        "Offset": "0x100"
+        "Offset": "0x110"
       },
       {
         "Name": "CarriedItemThreatOverrides",
         "Type": "TArray<Struct CarriedItemThreatOverride>",
         "Size": "0x10",
-        "Offset": "0x120"
+        "Offset": "0x130"
       },
       {
         "Name": "ThreatenedBySightOfCarrier",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
         "Name": "KnownHearingDangers",
         "Type": "TArray<Struct HearingThreat>",
         "Size": "0x10",
-        "Offset": "0x138"
+        "Offset": "0x148"
       },
       {
         "Name": "CarrierHearingThreatSpeedThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x148"
+        "Offset": "0x158"
       },
       {
         "Name": "DamageThreat",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x14c"
+        "Offset": "0x15c"
       },
       {
         "Name": "CharacterDistanceToDangerRatingCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x150"
+        "Offset": "0x160"
       },
       {
         "Name": "DangerRatingToAgitationDurationCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x158"
+        "Offset": "0x168"
       },
       {
         "Name": "TimeToBecomeAgitatedMin",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x160"
+        "Offset": "0x170"
       },
       {
         "Name": "TimeToBecomeAgitatedMax",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x164"
+        "Offset": "0x174"
       },
       {
         "Name": "AgitationDurationVariance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x168"
+        "Offset": "0x178"
       },
       {
         "Name": "AlertThreshold",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x16c"
+        "Offset": "0x17c"
       },
       {
         "Name": "FleeThreshold",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x170"
+        "Offset": "0x180"
       },
       {
         "Name": "TimeToBecomeCalm",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x174"
+        "Offset": "0x184"
       },
       {
         "Name": "CalmCooldownTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x178"
+        "Offset": "0x188"
       },
       {
         "Name": "MaxDistanceFromLeaderForIdle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x17c"
+        "Offset": "0x18c"
       },
       {
         "Name": "DistanceToLeaderPatrolChanceCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x180"
+        "Offset": "0x190"
       }
     ]
   },
@@ -9030,335 +9042,335 @@
   },
   "EnvQueryGenerator_AIRegionLocations": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0x60",
-    "InheritedSize": "0x50",
+    "FullSize": "0x68",
+    "InheritedSize": "0x58",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "UseOverrideSpawnType",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "OverrideSpawnType",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x54"
+        "Offset": "0x5c"
       }
     ]
   },
   "EnvQueryGenerator_FromContext": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0x58",
-    "InheritedSize": "0x50",
+    "FullSize": "0x60",
+    "InheritedSize": "0x58",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Context",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x50"
+        "Offset": "0x58"
       }
     ]
   },
   "EnvQueryGenerator_Line": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x138",
-    "InheritedSize": "0x90",
+    "FullSize": "0x140",
+    "InheritedSize": "0x98",
     "ClassSize": "0xa8",
     "Attributes": [
       {
         "Name": "FromContext",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "ToContext",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x98"
+        "Offset": "0xa0"
       },
       {
         "Name": "PointSpacing",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0xa0"
+        "Offset": "0xa8"
       },
       {
         "Name": "NumExtraPairsOfParallelLines",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0xd0"
+        "Offset": "0xd8"
       },
       {
         "Name": "ParallelLineSpacing",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x100"
+        "Offset": "0x108"
       },
       {
         "Name": "MaxValidLineLength",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x130"
+        "Offset": "0x138"
       },
       {
         "Name": "ForceIncludeEndPoint",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x134"
+        "Offset": "0x13c"
       },
       {
         "Name": "ProjectPointsToWaterSurface",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x135"
+        "Offset": "0x13d"
       }
     ]
   },
   "EnvQueryGenerator_PointsAtContext": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x98",
-    "InheritedSize": "0x90",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Context",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x90"
+        "Offset": "0x98"
       }
     ]
   },
   "EnvQueryGenerator_Sphere": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x160",
-    "InheritedSize": "0x90",
+    "FullSize": "0x168",
+    "InheritedSize": "0x98",
     "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "Radiuses",
         "Type": "TArray<Struct AIDataProviderFloatValue>",
         "Size": "0x10",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "NumberOfVerticalCircles",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0xa0"
+        "Offset": "0xa8"
       },
       {
         "Name": "NumberOfHorizontalCircles",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0xd0"
+        "Offset": "0xd8"
       },
       {
         "Name": "DefineFirstPointDirection",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x100"
+        "Offset": "0x108"
       },
       {
         "Name": "FirstPointDirection",
         "Type": "Struct EnvDirection",
         "Size": "0x20",
-        "Offset": "0x108"
+        "Offset": "0x110"
       },
       {
         "Name": "Centre",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x128"
+        "Offset": "0x130"
       },
       {
         "Name": "ZOffsetFromCentre",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x130"
+        "Offset": "0x138"
       }
     ]
   },
   "EnvQueryGenerator_WaterArc": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x210",
-    "InheritedSize": "0x90",
+    "FullSize": "0x218",
+    "InheritedSize": "0x98",
     "ClassSize": "0x180",
     "Attributes": [
       {
         "Name": "Origin",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "NumberOfArcsToGenerate",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0x98"
+        "Offset": "0xa0"
       },
       {
         "Name": "MinArcRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0xc8"
+        "Offset": "0xd0"
       },
       {
         "Name": "MaxArcRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0xf8"
+        "Offset": "0x100"
       },
       {
         "Name": "MinArcTiltDegrees",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x128"
+        "Offset": "0x130"
       },
       {
         "Name": "MaxArcTiltDegrees",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x158"
+        "Offset": "0x160"
       },
       {
         "Name": "MinArcPercentage",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x188"
+        "Offset": "0x190"
       },
       {
         "Name": "MaxArcPercentage",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x1b8"
+        "Offset": "0x1c0"
       },
       {
         "Name": "IncludeDirectArcToTarget",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1e8"
+        "Offset": "0x1f0"
       },
       {
         "Name": "DirectArcTarget",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x1f0"
+        "Offset": "0x1f8"
       }
     ]
   },
   "EnvQueryGenerator_WaterDonut": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x1f0",
-    "InheritedSize": "0x90",
+    "FullSize": "0x1f8",
+    "InheritedSize": "0x98",
     "ClassSize": "0x160",
     "Attributes": [
       {
         "Name": "InnerRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "OuterRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "NumberOfRings",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0xf0"
+        "Offset": "0xf8"
       },
       {
         "Name": "PointsPerRing",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0x120"
+        "Offset": "0x128"
       },
       {
         "Name": "ArcDirection",
         "Type": "Struct EnvDirection",
         "Size": "0x20",
-        "Offset": "0x150"
+        "Offset": "0x158"
       },
       {
         "Name": "ArcAngle",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x170"
+        "Offset": "0x178"
       },
       {
         "Name": "ZOffsetFromCentre",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x1a0"
+        "Offset": "0x1a8"
       },
       {
         "Name": "Center",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x1d0"
+        "Offset": "0x1d8"
       },
       {
         "Name": "bDefineArc",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d8"
+        "Offset": "0x1e0"
       },
       {
         "Name": "ProjectPointsToWaterSurface",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d8"
+        "Offset": "0x1e0"
       },
       {
         "Name": "WaterPlaneSourceContext",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x1e0"
+        "Offset": "0x1e8"
       },
       {
         "Name": "ApplyZOffsetToProjectPoints",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1e8"
+        "Offset": "0x1f0"
       }
     ]
   },
   "EnvQueryGenerator_WaterMultiDeckerRing": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x108",
-    "InheritedSize": "0x90",
+    "FullSize": "0x110",
+    "InheritedSize": "0x98",
     "ClassSize": "0x78",
     "Attributes": [
       {
         "Name": "Radius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "ZOffsetOfRingsFromContext",
         "Type": "TArray<Struct AIDataProviderFloatValue>",
         "Size": "0x10",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "PointsPerRing",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0xd0"
+        "Offset": "0xd8"
       },
       {
         "Name": "Center",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x100"
+        "Offset": "0x108"
       }
     ]
   },

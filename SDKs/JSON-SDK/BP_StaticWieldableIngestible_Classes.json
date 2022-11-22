@@ -1,39 +1,39 @@
 {
   "BP_StaticWieldableIngestible_C": {
     "Super": "StaticWieldableIngestible",
-    "FullSize": "0x848",
-    "InheritedSize": "0x820",
+    "FullSize": "0x858",
+    "InheritedSize": "0x830",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "MaterialManipulation",
         "Type": "Class MaterialManipulationComponent*",
         "Size": "0x8",
-        "Offset": "0x820"
+        "Offset": "0x830"
       },
       {
         "Name": "Pottable",
         "Type": "Class PottableComponent*",
         "Size": "0x8",
-        "Offset": "0x828"
+        "Offset": "0x838"
       },
       {
         "Name": "WieldableInteractable",
         "Type": "Class WieldableInteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x830"
+        "Offset": "0x840"
       },
       {
         "Name": "UsableWieldable",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x838"
+        "Offset": "0x848"
       },
       {
         "Name": "Pickupable",
         "Type": "Class PickupableComponent*",
         "Size": "0x8",
-        "Offset": "0x840"
+        "Offset": "0x850"
       }
     ]
   },

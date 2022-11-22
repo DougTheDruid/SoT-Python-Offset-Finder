@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_StandardHull_Art_Interior_Lower_Deck_C:
   Attributes:
-  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: BP_CookingPot
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: shp_kitchen_extractor_01_a
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_cooker_02_a
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_small_lower_deck_rope_01_a
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_small_lower_deck_01_a
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class SceneComponent*

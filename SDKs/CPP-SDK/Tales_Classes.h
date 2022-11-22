@@ -205,6 +205,24 @@ public:
 
 
 // Size 0x18
+class TaleQuestQueryableStateCanAllDataBeReadNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x30(0x10)
+	bool                                                         ExpectedValue;                                     // 0x40(0x1)
+};
+
+
+// Size 0x18
+class TaleQuestQueryableStateCanAnyDataBeReadNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x30(0x10)
+	bool                                                         ExpectedValue;                                     // 0x40(0x1)
+};
+
+
+// Size 0x18
 class TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional: public NPCDialogConditional
 {
 public:
@@ -348,6 +366,14 @@ public:
 };
 
 
+// Size 0x8
+class TaleQuestLockGhostShipDoorService: public TaleQuestService
+{
+public:
+	Class TaleQuestLockGhostShipDoorServiceDesc*                 Desc;                                              // 0x60(0x8)
+};
+
+
 // Size 0x30
 class TaleQuestQueryableStatesService: public TaleQuestService
 {
@@ -450,6 +476,13 @@ public:
 
 // Size 0x0
 class TaleQuestInteractionPreventionServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestLockGhostShipDoorServiceDesc: public TaleQuestServiceDesc
 {
 public:
 };
@@ -759,6 +792,13 @@ public:
 };
 
 
+// Size 0x10
+class TaleMigrationVolatileTaskStep: public TaleQuestStep
+{
+public:
+};
+
+
 // Size 0x0
 class TaleQuestAddToArrayStep: public TaleQuestStep
 {
@@ -782,6 +822,13 @@ public:
 
 // Size 0x0
 class TaleQuestArrayUnionStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x48
+class TaleQuestAwaitCrewShipSinkStep: public TaleQuestStep
 {
 public:
 };
@@ -936,6 +983,27 @@ public:
 
 // Size 0x0
 class TaleQuestShipSurfaceStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0
+class TaleQuestStarFieldPuzzleDimStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10
+class TaleQuestStarFieldPuzzleEndStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x18
+class TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStep: public TaleQuestStep
 {
 public:
 };
@@ -1385,7 +1453,7 @@ public:
 };
 
 
-// Size 0xd8
+// Size 0x108
 class SpawnPhasedItemStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1395,7 +1463,8 @@ public:
 	struct FName                                                 SocketName;                                        // 0xc0(0x8)
 	Struct QuestVariableItemDescType                             Item;                                              // 0xc8(0x30)
 	Struct QuestVariableActor                                    LocatorVar;                                        // 0xf8(0x30)
-	Struct QuestVariableItemInfo                                 SpawnedItemVar;                                    // 0x128(0x30)
+	Struct QuestVariableOrientedPoint                            LocatorPoint;                                      // 0x128(0x30)
+	Struct QuestVariableItemInfo                                 SpawnedItemVar;                                    // 0x158(0x30)
 };
 
 
@@ -1458,6 +1527,14 @@ public:
 class TaleQuestArrayUnionStepDesc: public TaleQuestArrayOperationStepBaseDesc
 {
 public:
+};
+
+
+// Size 0x30
+class TaleQuestAwaitCrewShipSinkStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableGuid                                     CrewId;                                            // 0x80(0x30)
 };
 
 
@@ -1653,6 +1730,13 @@ public:
 
 
 // Size 0x0
+class TaleQuestCoreFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0
 class TaleQuestIntMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
@@ -1805,6 +1889,30 @@ public:
 };
 
 
+// Size 0x30
+class TaleQuestStarFieldPuzzleDimStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
+};
+
+
+// Size 0x30
+class TaleQuestStarFieldPuzzleEndStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
+};
+
+
+// Size 0x30
+class TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
+};
+
+
 // Size 0x20
 class TaleQuestStartCameraFadeStepDesc: public TaleQuestStepDesc
 {
@@ -1845,6 +1953,13 @@ class TaleQuestTaskStepDescBase: public TaleQuestStepDesc
 {
 public:
 	Class TaleQuestStepDesc*                                     Task;                                              // 0x80(0x8)
+};
+
+
+// Size 0x0
+class TaleMigrationVolatileTaskStepDesc: public TaleQuestTaskStepDescBase
+{
+public:
 };
 
 

@@ -5641,7 +5641,7 @@ public:
 };
 
 
-// Size 0x2a0
+// Size 0x2b0
 struct GPUSpriteEmitterInfo
 {
 public:
@@ -5685,7 +5685,8 @@ public:
 	struct FName                                                 LocationEmitterName;                               // 0x280(0x8)
 	bool                                                         bUseInheritedVelocityLocationEmitter;              // 0x288(0x1)
 	Struct Vector2D                                              InheritedVelocityScaleLocationEmitter;             // 0x28c(0x8)
-	bool                                                         bKillParticlesOnFFTWater;                          // 0x294(0x1)
+	byte                                                         MissingParentParticlesBehaviour;                   // 0x294(0x1)
+	bool                                                         bKillParticlesOnFFTWater;                          // 0x298(0x1)
 };
 
 

@@ -6,8 +6,8 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x40aa4bf1
-class BP_AlternaticeSovereignSpawnProxy_C: public None
+// Size 0x10
+class BP_AlternaticeSovereignSpawnProxy_C: public Actor
 {
 public:
 	Class PhasedActorComponent*                                  None;                                              // 0x3c8(0x8)

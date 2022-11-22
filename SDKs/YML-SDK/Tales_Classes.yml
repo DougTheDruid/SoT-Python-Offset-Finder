@@ -1034,12 +1034,16 @@ SpawnPhasedItemStepDesc:
     Offset: '0xf8'
     Size: '0x30'
     Type: Struct QuestVariableActor
-  - Name: SpawnedItemVar
+  - Name: LocatorPoint
     Offset: '0x128'
     Size: '0x30'
+    Type: Struct QuestVariableOrientedPoint
+  - Name: SpawnedItemVar
+    Offset: '0x158'
+    Size: '0x30'
     Type: Struct QuestVariableItemInfo
-  ClassSize: '0xd8'
-  FullSize: '0x158'
+  ClassSize: '0x108'
+  FullSize: '0x188'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 SplineFootprintPathComponent:
@@ -1104,6 +1108,18 @@ TaleMigrationAction:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
+TaleMigrationVolatileTaskStep:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0xa8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleMigrationVolatileTaskStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x88'
+  InheritedSize: '0x88'
+  Super: TaleQuestTaskStepDescBase
 TaleQuestActorFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
@@ -1550,6 +1566,22 @@ TaleQuestArrayUnionStepDesc:
   FullSize: '0x98'
   InheritedSize: '0x98'
   Super: TaleQuestArrayOperationStepBaseDesc
+TaleQuestAwaitCrewShipSinkStep:
+  Attributes: []
+  ClassSize: '0x48'
+  FullSize: '0xe0'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestAwaitCrewShipSinkStepDesc:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableGuid
+  ClassSize: '0x30'
+  FullSize: '0xb0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 TaleQuestAwaitEventStep:
   Attributes: []
   ClassSize: '0x48'
@@ -1672,6 +1704,12 @@ TaleQuestCompoundStepInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+TaleQuestCoreFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestCrewTaskStep:
   Attributes: []
   ClassSize: '0x38'
@@ -2086,6 +2124,22 @@ TaleQuestItemFunctionLibrary:
   FullSize: '0x180'
   InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
+TaleQuestLockGhostShipDoorService:
+  Attributes:
+  - Name: Desc
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class TaleQuestLockGhostShipDoorServiceDesc*
+  ClassSize: '0x8'
+  FullSize: '0x68'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+TaleQuestLockGhostShipDoorServiceDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
 TaleQuestLogicFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
@@ -2198,6 +2252,34 @@ TaleQuestQueryableStateAddToIntFunctionLibrary:
   FullSize: '0x180'
   InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
+TaleQuestQueryableStateCanAllDataBeReadNPCDialogConditional:
+  Attributes:
+  - Name: AllDataToCheck
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Class AllDataToCheck>
+  - Name: ExpectedValue
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0x48'
+  InheritedSize: '0x30'
+  Super: NPCDialogConditional
+TaleQuestQueryableStateCanAnyDataBeReadNPCDialogConditional:
+  Attributes:
+  - Name: AllDataToCheck
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<Class AllDataToCheck>
+  - Name: ExpectedValue
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+  FullSize: '0x48'
+  InheritedSize: '0x30'
+  Super: NPCDialogConditional
 TaleQuestQueryableStateDataID:
   Attributes: []
   ClassSize: '0x0'
@@ -2494,6 +2576,54 @@ TaleQuestShipSurfaceStepDesc:
     Type: float
   ClassSize: '0x8'
   FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestStarFieldPuzzleDimStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestStarFieldPuzzleDimStepDesc:
+  Attributes:
+  - Name: StarFieldPuzzleActor
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x30'
+  FullSize: '0xb0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestStarFieldPuzzleEndStep:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0xa8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestStarFieldPuzzleEndStepDesc:
+  Attributes:
+  - Name: StarFieldPuzzleActor
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x30'
+  FullSize: '0xb0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStep:
+  Attributes: []
+  ClassSize: '0x18'
+  FullSize: '0xb0'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStepDesc:
+  Attributes:
+  - Name: StarFieldPuzzleActor
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x30'
+  FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestStartCameraFadeStep:

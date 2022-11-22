@@ -99,13 +99,14 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x28
 class EnvQueryGenerator: public EnvQueryNode
 {
 public:
 	Struct FString                                               OptionName;                                        // 0x30(0x10)
 	bool                                                         NonShippingOnly;                                   // 0x40(0x1)
-	class                                                        ItemType;                                          // 0x48(0x8)
+	Struct FeatureFlag                                           Feature;                                           // 0x44(0xc)
+	class                                                        ItemType;                                          // 0x50(0x8)
 };
 
 
@@ -1200,9 +1201,9 @@ public:
 class EnvQueryGenerator_ActorsOfClass: public EnvQueryGenerator
 {
 public:
-	Struct AIDataProviderFloatValue                              SearchRadius;                                      // 0x50(0x30)
-	class                                                        SearchedActorClass;                                // 0x80(0x8)
-	class                                                        SearchCenter;                                      // 0x88(0x8)
+	Struct AIDataProviderFloatValue                              SearchRadius;                                      // 0x58(0x30)
+	class                                                        SearchedActorClass;                                // 0x88(0x8)
+	class                                                        SearchCenter;                                      // 0x90(0x8)
 };
 
 
@@ -1210,9 +1211,9 @@ public:
 class EnvQueryGenerator_BlueprintBase: public EnvQueryGenerator
 {
 public:
-	Struct FText                                                 GeneratorsActionDescription;                       // 0x50(0x38)
-	class                                                        Context;                                           // 0x88(0x8)
-	class                                                        GeneratedItemType;                                 // 0x90(0x8)
+	Struct FText                                                 GeneratorsActionDescription;                       // 0x58(0x38)
+	class                                                        Context;                                           // 0x90(0x8)
+	class                                                        GeneratedItemType;                                 // 0x98(0x8)
 };
 
 
@@ -1220,8 +1221,8 @@ public:
 class EnvQueryGenerator_Composite: public EnvQueryGenerator
 {
 public:
-	TArray<class EnvQueryGenerator*>                             Generators;                                        // 0x50(0x10)
-	bool                                                         bHasMatchingItemType;                              // 0x60(0x1)
+	TArray<class EnvQueryGenerator*>                             Generators;                                        // 0x58(0x10)
+	bool                                                         bHasMatchingItemType;                              // 0x68(0x1)
 };
 
 
@@ -1229,7 +1230,7 @@ public:
 class EnvQueryGenerator_ProjectedPoints: public EnvQueryGenerator
 {
 public:
-	Struct EnvTraceData                                          ProjectionData;                                    // 0x50(0x40)
+	Struct EnvTraceData                                          ProjectionData;                                    // 0x58(0x40)
 };
 
 
@@ -1237,15 +1238,15 @@ public:
 class EnvQueryGenerator_Donut: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	Struct AIDataProviderFloatValue                              InnerRadius;                                       // 0x90(0x30)
-	Struct AIDataProviderFloatValue                              OuterRadius;                                       // 0xc0(0x30)
-	Struct AIDataProviderIntValue                                NumberOfRings;                                     // 0xf0(0x30)
-	Struct AIDataProviderIntValue                                PointsPerRing;                                     // 0x120(0x30)
-	Struct EnvDirection                                          ArcDirection;                                      // 0x150(0x20)
-	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x170(0x30)
-	bool                                                         RandomiseRadius;                                   // 0x1a0(0x1)
-	class                                                        Center;                                            // 0x1a8(0x8)
-	bool                                                         bDefineArc;                                        // 0x1b0(0x1)
+	Struct AIDataProviderFloatValue                              InnerRadius;                                       // 0x98(0x30)
+	Struct AIDataProviderFloatValue                              OuterRadius;                                       // 0xc8(0x30)
+	Struct AIDataProviderIntValue                                NumberOfRings;                                     // 0xf8(0x30)
+	Struct AIDataProviderIntValue                                PointsPerRing;                                     // 0x128(0x30)
+	Struct EnvDirection                                          ArcDirection;                                      // 0x158(0x20)
+	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x178(0x30)
+	bool                                                         RandomiseRadius;                                   // 0x1a8(0x1)
+	class                                                        Center;                                            // 0x1b0(0x8)
+	bool                                                         bDefineArc;                                        // 0x1b8(0x1)
 };
 
 
@@ -1253,14 +1254,14 @@ public:
 class EnvQueryGenerator_OnCircle: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	Struct AIDataProviderFloatValue                              CircleRadius;                                      // 0x90(0x30)
-	Struct AIDataProviderFloatValue                              SpaceBetween;                                      // 0xc0(0x30)
-	Struct EnvDirection                                          ArcDirection;                                      // 0xf0(0x20)
-	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x110(0x30)
-	float                                                        AngleRadians;                                      // 0x140(0x4)
-	class                                                        CircleCenter;                                      // 0x148(0x8)
-	Struct EnvTraceData                                          TraceData;                                         // 0x150(0x40)
-	bool                                                         bDefineArc;                                        // 0x190(0x1)
+	Struct AIDataProviderFloatValue                              CircleRadius;                                      // 0x98(0x30)
+	Struct AIDataProviderFloatValue                              SpaceBetween;                                      // 0xc8(0x30)
+	Struct EnvDirection                                          ArcDirection;                                      // 0xf8(0x20)
+	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x118(0x30)
+	float                                                        AngleRadians;                                      // 0x148(0x4)
+	class                                                        CircleCenter;                                      // 0x150(0x8)
+	Struct EnvTraceData                                          TraceData;                                         // 0x158(0x40)
+	bool                                                         bDefineArc;                                        // 0x198(0x1)
 };
 
 
@@ -1268,9 +1269,9 @@ public:
 class EnvQueryGenerator_SimpleGrid: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	Struct AIDataProviderFloatValue                              GridSize;                                          // 0x90(0x30)
-	Struct AIDataProviderFloatValue                              SpaceBetween;                                      // 0xc0(0x30)
-	class                                                        GenerateAround;                                    // 0xf0(0x8)
+	Struct AIDataProviderFloatValue                              GridSize;                                          // 0x98(0x30)
+	Struct AIDataProviderFloatValue                              SpaceBetween;                                      // 0xc8(0x30)
+	class                                                        GenerateAround;                                    // 0xf8(0x8)
 };
 
 
@@ -1278,9 +1279,9 @@ public:
 class EnvQueryGenerator_PathingGrid: public EnvQueryGenerator_SimpleGrid
 {
 public:
-	Struct AIDataProviderBoolValue                               PathToItem;                                        // 0xf8(0x30)
-	class                                                        NavigationFilter;                                  // 0x128(0x8)
-	Struct AIDataProviderFloatValue                              ScanRangeMultiplier;                               // 0x130(0x30)
+	Struct AIDataProviderBoolValue                               PathToItem;                                        // 0x100(0x30)
+	class                                                        NavigationFilter;                                  // 0x130(0x8)
+	Struct AIDataProviderFloatValue                              ScanRangeMultiplier;                               // 0x138(0x30)
 };
 
 

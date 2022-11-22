@@ -134,11 +134,12 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x40
 class TritonAcousticMap: public Object
 {
 public:
 	Struct FString                                               TritonMapFilename;                                 // 0x28(0x10)
+	float                                                        CustomCacheRatio;                                  // 0x38(0x4)
 };
 
 

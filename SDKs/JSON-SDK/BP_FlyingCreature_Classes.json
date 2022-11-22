@@ -60,7 +60,7 @@
         "Offset": "0x454"
       },
       {
-        "Name": "CirclingSpeed",
+        "Name": "circlingSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x458"
@@ -90,7 +90,7 @@
         "Offset": "0x468"
       },
       {
-        "Name": "FlockSpeed",
+        "Name": "flockSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x46c"
@@ -108,7 +108,7 @@
         "Offset": "0x478"
       },
       {
-        "Name": "BirdSpeed",
+        "Name": "birdSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x47c"
@@ -144,7 +144,7 @@
         "Offset": "0x494"
       },
       {
-        "Name": "Smoothness",
+        "Name": "smoothness",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x498"

@@ -29,11 +29,15 @@ CrewFactionEntry:
     Offset: '0x1c'
     Size: '0x4'
     Type: int
-  - Name: LeaveFactionCooldownTimeStamp
+  - Name: SandsOfFate
     Offset: '0x20'
+    Size: '0x4'
+    Type: int
+  - Name: LeaveFactionCooldownTimeStamp
+    Offset: '0x28'
     Size: '0x8'
     Type: double
-  ClassSize: '0x28'
+  ClassSize: '0x30'
 CrewFactionEntryData:
   Attributes:
   - Name: CrewId
@@ -50,10 +54,6 @@ CrewFactionEntryData:
     Type: class
   - Name: Streak
     Offset: '0x28'
-    Size: '0x4'
-    Type: int
-  - Name: SandsOfFate
-    Offset: '0x2c'
     Size: '0x4'
     Type: int
   - Name: CooldownTimeStamp
@@ -211,6 +211,17 @@ FactionServicePopUpData:
     Size: '0x8'
     Type: Class DataAsset*
   ClassSize: '0x10'
+FactionServicePostMigrationEvent:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: Faction
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x18'
 FactionShipDefeatedEvent:
   Attributes:
   - Name: VictoriousCrewIds
@@ -243,15 +254,7 @@ FactionWaitTimesData:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: AverageWaitTime
-    Offset: '0x8'
-    Size: '0x8'
-    Type: Struct Timespan
-  - Name: MaxWaitTime
-    Offset: '0x10'
-    Size: '0x8'
-    Type: Struct Timespan
-  ClassSize: '0x18'
+  ClassSize: '0x10'
 SandsOfFateData:
   Attributes:
   - Name: SinkingCrewStreakLevel

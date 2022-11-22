@@ -151,15 +151,15 @@
   },
   "EnvQueryGenerator_KrakenSpawnLocations": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0x50",
-    "InheritedSize": "0x50",
+    "FullSize": "0x58",
+    "InheritedSize": "0x58",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "EnvQueryGenerator_KrakenTentacleSpawnLocations": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0x50",
-    "InheritedSize": "0x50",
+    "FullSize": "0x58",
+    "InheritedSize": "0x58",
     "ClassSize": "0x0",
     "Attributes": []
   },

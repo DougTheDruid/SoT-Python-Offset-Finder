@@ -245,52 +245,52 @@ AICreatureCharacter:
 AICreatureCharacterMovementComponent:
   Attributes:
   - Name: AIStrategyMovementProperties
-    Offset: '0x558'
+    Offset: '0x588'
     Size: '0x10'
     Type: TArray<Struct AIStrategyMovementProperties>
   - Name: BlendSpeed
-    Offset: '0x568'
+    Offset: '0x598'
     Size: '0x4'
     Type: float
   - Name: bCreateDisturbance
-    Offset: '0x56c'
+    Offset: '0x59c'
     Size: '0x1'
     Type: bool
   - Name: DisturbanceSize
-    Offset: '0x570'
+    Offset: '0x5a0'
     Size: '0x4'
     Type: float
   - Name: DisturbanceVelocityScale
-    Offset: '0x574'
+    Offset: '0x5a4'
     Size: '0x4'
     Type: float
   - Name: OrientationBlendSpeed
-    Offset: '0x578'
+    Offset: '0x5a8'
     Size: '0x4'
     Type: float
   - Name: OrientationMaxPitch
-    Offset: '0x57c'
+    Offset: '0x5ac'
     Size: '0x4'
     Type: float
   - Name: UpdateOrientationFrequency
-    Offset: '0x580'
+    Offset: '0x5b0'
     Size: '0x4'
     Type: float
   - Name: MinStairAngle
-    Offset: '0x584'
+    Offset: '0x5b4'
     Size: '0x4'
     Type: float
   - Name: MinStairVelocityDampen
-    Offset: '0x588'
+    Offset: '0x5b8'
     Size: '0x4'
     Type: float
   - Name: SubscribedStairClimbStrategies
-    Offset: '0x590'
+    Offset: '0x5c0'
     Size: '0x10'
     Type: TArray<Class SubscribedStairClimbStrategies>
   ClassSize: '0xc0'
-  FullSize: '0x620'
-  InheritedSize: '0x560'
+  FullSize: '0x650'
+  InheritedSize: '0x590'
   Super: CharacterMovementComponent
 AICreatureCharacterPathFollowingComponent:
   Attributes:
@@ -2243,194 +2243,194 @@ AthenaAICharacterController:
 AthenaAICharacterControllerParamsDataAsset:
   Attributes:
   - Name: IndividualOverrideUseRVOAvoidance
-    Offset: '0x100'
+    Offset: '0x110'
     Size: '0x1'
     Type: bool
   - Name: IndividualUseRVOAvoidance
-    Offset: '0x101'
+    Offset: '0x111'
     Size: '0x1'
     Type: bool
   - Name: IndividualOverridePrioritiseInteractablesBeforeEnemies
-    Offset: '0x102'
+    Offset: '0x112'
     Size: '0x1'
     Type: bool
   - Name: IndividualPrioritiseInteractablesBeforeEnemies
-    Offset: '0x103'
+    Offset: '0x113'
     Size: '0x1'
     Type: bool
   - Name: IndividualDistanceInMToCannonShotHitChanceCurve
-    Offset: '0x108'
+    Offset: '0x118'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: IndividualAIStrategyMovementProperties
-    Offset: '0x110'
+    Offset: '0x120'
     Size: '0x10'
     Type: TArray<Struct AIStrategyMovementProperties>
   - Name: IndividualItemCategoryAIStrategyMovementPropertiesOverrides
-    Offset: '0x120'
+    Offset: '0x130'
     Size: '0x10'
     Type: TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>
   - Name: IndividualCannonTargetingParams
-    Offset: '0x130'
+    Offset: '0x140'
     Size: '0x10'
     Type: Struct AthenaAICharacterCannonTargetingParams
   - Name: IndividualWieldedItemProjectileEffectivenessProperties
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>
   - Name: IndividualWieldedItemOverrideNamedControllerParams
-    Offset: '0x150'
+    Offset: '0x160'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>
   - Name: IndividualNamedItemParams
-    Offset: '0x160'
+    Offset: '0x170'
     Size: '0x10'
     Type: TArray<Struct AthenaAIItemParamValue>
   - Name: IndividualSpawnItemDescForItemCategories
-    Offset: '0x170'
+    Offset: '0x180'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: UseDamageBasedAbilityStages
-    Offset: '0x180'
+    Offset: '0x190'
     Size: '0x1'
     Type: bool
   - Name: HealthStages
-    Offset: '0x188'
+    Offset: '0x198'
     Size: '0x10'
     Type: TArray<Float HealthStages>
   - Name: IndividualDamageBasedAIAbilityStages
-    Offset: '0x198'
+    Offset: '0x1a8'
     Size: '0x10'
     Type: TArray<Struct AthenaAIAbilityDamageStage>
   - Name: IndividualAIAbilityParams
-    Offset: '0x1a8'
+    Offset: '0x1b8'
     Size: '0x10'
     Type: TArray<class AthenaAIAbilityParams*>
   - Name: IndividualNonItemEngageOptions
-    Offset: '0x1b8'
+    Offset: '0x1c8'
     Size: '0x10'
     Type: TArray<Struct AthenaAIEngageEnemyData>
   - Name: IndividualAnimationDataOverrideAsset
-    Offset: '0x1c8'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: IndividualCustomAnimationAsset
     Offset: '0x1d8'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: IndividualOverrideNoInitialItem
+  - Name: IndividualCustomAnimationAsset
     Offset: '0x1e8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: IndividualOverrideNoInitialItem
+    Offset: '0x1f8'
     Size: '0x1'
     Type: bool
   - Name: IndividualNoInitialItem
-    Offset: '0x1e9'
+    Offset: '0x1f9'
     Size: '0x1'
     Type: bool
   - Name: IndividualOverrideBeginFleeing
-    Offset: '0x1ea'
+    Offset: '0x1fa'
     Size: '0x1'
     Type: bool
   - Name: IndividualBeginFleeing
-    Offset: '0x1eb'
+    Offset: '0x1fb'
     Size: '0x1'
     Type: bool
   - Name: IndividualFleeingEQS
-    Offset: '0x1f0'
+    Offset: '0x200'
     Size: '0x8'
     Type: Class EnvQuery*
   ClassSize: '0xf8'
-  FullSize: '0x1f8'
-  InheritedSize: '0x100'
+  FullSize: '0x208'
+  InheritedSize: '0x110'
   Super: AthenaAIControllerParamsDataAsset
 AthenaAICharacterControllerSharedParamValuesDataAsset:
   Attributes:
   - Name: OverrideUseRVOAvoidance
-    Offset: '0x88'
+    Offset: '0x98'
     Size: '0x1'
     Type: bool
   - Name: UseRVOAvoidance
-    Offset: '0x89'
+    Offset: '0x99'
     Size: '0x1'
     Type: bool
   - Name: OverridePrioritiseInteractablesBeforeEnemies
-    Offset: '0x8a'
+    Offset: '0x9a'
     Size: '0x1'
     Type: bool
   - Name: PrioritiseInteractablesBeforeEnemies
-    Offset: '0x8b'
+    Offset: '0x9b'
     Size: '0x1'
     Type: bool
   - Name: DistanceInMToCannonShotHitChanceCurve
-    Offset: '0x90'
+    Offset: '0xa0'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: AIStrategyMovementProperties
-    Offset: '0x98'
+    Offset: '0xa8'
     Size: '0x10'
     Type: TArray<Struct AIStrategyMovementProperties>
   - Name: ItemCategoryAIStrategyMovementPropertiesOverrides
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x10'
     Type: TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride>
   - Name: CannonTargetingParams
-    Offset: '0xb8'
+    Offset: '0xc8'
     Size: '0x10'
     Type: Struct AthenaAICharacterCannonTargetingParams
   - Name: WieldedItemProjectileEffectivenessProperties
-    Offset: '0xc8'
+    Offset: '0xd8'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>
   - Name: WieldedItemOverrideNamedControllerParams
-    Offset: '0xd8'
+    Offset: '0xe8'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams>
   - Name: NamedItemParams
-    Offset: '0xe8'
+    Offset: '0xf8'
     Size: '0x10'
     Type: TArray<Struct AthenaAIItemParamValue>
   - Name: SpawnItemDescForItemCategories
-    Offset: '0xf8'
+    Offset: '0x108'
     Size: '0x10'
     Type: TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: AIAbilityParams
-    Offset: '0x108'
+    Offset: '0x118'
     Size: '0x10'
     Type: TArray<class AthenaAIAbilityParams*>
   - Name: NonItemEngageOptions
-    Offset: '0x118'
+    Offset: '0x128'
     Size: '0x10'
     Type: TArray<Struct AthenaAIEngageEnemyData>
   - Name: AnimationDataOverrideAsset
-    Offset: '0x128'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: CustomAnimationAsset
     Offset: '0x138'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: OverrideNoInitialItem
+  - Name: CustomAnimationAsset
     Offset: '0x148'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: OverrideNoInitialItem
+    Offset: '0x158'
     Size: '0x1'
     Type: bool
   - Name: NoInitialItem
-    Offset: '0x149'
+    Offset: '0x159'
     Size: '0x1'
     Type: bool
   - Name: OverrideBeginFleeing
-    Offset: '0x14a'
+    Offset: '0x15a'
     Size: '0x1'
     Type: bool
   - Name: BeginFleeing
-    Offset: '0x14b'
+    Offset: '0x15b'
     Size: '0x1'
     Type: bool
   - Name: FleeingEQS
-    Offset: '0x150'
+    Offset: '0x160'
     Size: '0x8'
     Type: Class EnvQuery*
   ClassSize: '0xd0'
-  FullSize: '0x158'
-  InheritedSize: '0x88'
+  FullSize: '0x168'
+  InheritedSize: '0x98'
   Super: AthenaAIControllerSharedParamValuesDataAsset
 AthenaAICharacterPathFollowingComponent:
   Attributes:
@@ -2592,28 +2592,32 @@ AthenaAIControllerParamsDataAsset:
     Offset: '0xc0'
     Size: '0x10'
     Type: TArray<Struct AthenaAIControllerParamValue>
-  - Name: IndividualNamedWeightedRangesControllerParams
+  - Name: FeatureToggleIndividualNamedParamOverrides
     Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<Struct AthenaAIControllerFeatureToggledParams>
+  - Name: IndividualNamedWeightedRangesControllerParams
+    Offset: '0xe0'
     Size: '0x10'
     Type: TArray<Struct AthenaAIControllerWeightedRangesParamValue>
   - Name: IndividualAIStrategySenseSettingOverrides
-    Offset: '0xe0'
+    Offset: '0xf0'
     Size: '0x10'
     Type: TArray<Struct AthenaAIControllerSenseSettingOverride>
   - Name: IndividualOverrideCurrentTargetPerceivedNotVisibleAge
-    Offset: '0xf0'
+    Offset: '0x100'
     Size: '0x1'
     Type: bool
   - Name: IndividualCurrentTargetPerceivedNotVisibleAge
-    Offset: '0xf4'
+    Offset: '0x104'
     Size: '0x4'
     Type: float
   - Name: FeatureName
-    Offset: '0xf8'
+    Offset: '0x108'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0xd8'
-  FullSize: '0x100'
+  ClassSize: '0xe8'
+  FullSize: '0x110'
   InheritedSize: '0x28'
   Super: DataAsset
 AthenaAIControllerParamsDataProvider:
@@ -2678,12 +2682,16 @@ AthenaAIControllerSharedParamValuesDataAsset:
     Offset: '0x68'
     Size: '0x10'
     Type: TArray<Struct AthenaAIControllerParamValue>
-  - Name: NamedWeightedRangesControllerParams
+  - Name: FeatureToggleNamedParamOverrides
     Offset: '0x78'
     Size: '0x10'
+    Type: TArray<Struct AthenaAIControllerFeatureToggledParams>
+  - Name: NamedWeightedRangesControllerParams
+    Offset: '0x88'
+    Size: '0x10'
     Type: TArray<Struct AthenaAIControllerWeightedRangesParamValue>
-  ClassSize: '0x60'
-  FullSize: '0x88'
+  ClassSize: '0x70'
+  FullSize: '0x98'
   InheritedSize: '0x28'
   Super: DataAsset
 AthenaAIDebugFunctionLibrary:
@@ -5117,230 +5125,230 @@ EnvQueryContext_ThrowableTargetPositionFromBlackboard:
 EnvQueryGenerator_AIRegionLocations:
   Attributes:
   - Name: UseOverrideSpawnType
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x1'
     Type: bool
   - Name: OverrideSpawnType
-    Offset: '0x54'
+    Offset: '0x5c'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
-  FullSize: '0x60'
-  InheritedSize: '0x50'
+  FullSize: '0x68'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 EnvQueryGenerator_FromContext:
   Attributes:
   - Name: Context
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x8'
     Type: class
   ClassSize: '0x8'
-  FullSize: '0x58'
-  InheritedSize: '0x50'
+  FullSize: '0x60'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 EnvQueryGenerator_Line:
   Attributes:
   - Name: FromContext
-    Offset: '0x90'
-    Size: '0x8'
-    Type: class
-  - Name: ToContext
     Offset: '0x98'
     Size: '0x8'
     Type: class
-  - Name: PointSpacing
+  - Name: ToContext
     Offset: '0xa0'
+    Size: '0x8'
+    Type: class
+  - Name: PointSpacing
+    Offset: '0xa8'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: NumExtraPairsOfParallelLines
-    Offset: '0xd0'
+    Offset: '0xd8'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: ParallelLineSpacing
-    Offset: '0x100'
+    Offset: '0x108'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: MaxValidLineLength
-    Offset: '0x130'
+    Offset: '0x138'
     Size: '0x4'
     Type: float
   - Name: ForceIncludeEndPoint
-    Offset: '0x134'
+    Offset: '0x13c'
     Size: '0x1'
     Type: bool
   - Name: ProjectPointsToWaterSurface
-    Offset: '0x135'
+    Offset: '0x13d'
     Size: '0x1'
     Type: bool
   ClassSize: '0xa8'
-  FullSize: '0x138'
-  InheritedSize: '0x90'
+  FullSize: '0x140'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryGenerator_PointsAtContext:
   Attributes:
   - Name: Context
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x8'
     Type: class
   ClassSize: '0x8'
-  FullSize: '0x98'
-  InheritedSize: '0x90'
+  FullSize: '0xa0'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryGenerator_Sphere:
   Attributes:
   - Name: Radiuses
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x10'
     Type: TArray<Struct AIDataProviderFloatValue>
   - Name: NumberOfVerticalCircles
-    Offset: '0xa0'
+    Offset: '0xa8'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: NumberOfHorizontalCircles
-    Offset: '0xd0'
+    Offset: '0xd8'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: DefineFirstPointDirection
-    Offset: '0x100'
+    Offset: '0x108'
     Size: '0x1'
     Type: bool
   - Name: FirstPointDirection
-    Offset: '0x108'
+    Offset: '0x110'
     Size: '0x20'
     Type: Struct EnvDirection
   - Name: Centre
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x8'
     Type: class
   - Name: ZOffsetFromCentre
-    Offset: '0x130'
+    Offset: '0x138'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   ClassSize: '0xd0'
-  FullSize: '0x160'
-  InheritedSize: '0x90'
+  FullSize: '0x168'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryGenerator_WaterArc:
   Attributes:
   - Name: Origin
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x8'
     Type: class
   - Name: NumberOfArcsToGenerate
-    Offset: '0x98'
+    Offset: '0xa0'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: MinArcRadius
-    Offset: '0xc8'
+    Offset: '0xd0'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: MaxArcRadius
-    Offset: '0xf8'
+    Offset: '0x100'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: MinArcTiltDegrees
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: MaxArcTiltDegrees
-    Offset: '0x158'
+    Offset: '0x160'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: MinArcPercentage
-    Offset: '0x188'
+    Offset: '0x190'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: MaxArcPercentage
-    Offset: '0x1b8'
+    Offset: '0x1c0'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: IncludeDirectArcToTarget
-    Offset: '0x1e8'
+    Offset: '0x1f0'
     Size: '0x1'
     Type: bool
   - Name: DirectArcTarget
-    Offset: '0x1f0'
+    Offset: '0x1f8'
     Size: '0x8'
     Type: class
   ClassSize: '0x180'
-  FullSize: '0x210'
-  InheritedSize: '0x90'
+  FullSize: '0x218'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryGenerator_WaterDonut:
   Attributes:
   - Name: InnerRadius
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: OuterRadius
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: NumberOfRings
-    Offset: '0xf0'
+    Offset: '0xf8'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: PointsPerRing
-    Offset: '0x120'
+    Offset: '0x128'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: ArcDirection
-    Offset: '0x150'
+    Offset: '0x158'
     Size: '0x20'
     Type: Struct EnvDirection
   - Name: ArcAngle
-    Offset: '0x170'
+    Offset: '0x178'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: ZOffsetFromCentre
-    Offset: '0x1a0'
+    Offset: '0x1a8'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: Center
-    Offset: '0x1d0'
+    Offset: '0x1d8'
     Size: '0x8'
     Type: class
   - Name: bDefineArc
-    Offset: '0x1d8'
+    Offset: '0x1e0'
     Size: '0x1'
     Type: bool
   - Name: ProjectPointsToWaterSurface
-    Offset: '0x1d8'
+    Offset: '0x1e0'
     Size: '0x1'
     Type: bool
   - Name: WaterPlaneSourceContext
-    Offset: '0x1e0'
+    Offset: '0x1e8'
     Size: '0x8'
     Type: class
   - Name: ApplyZOffsetToProjectPoints
-    Offset: '0x1e8'
+    Offset: '0x1f0'
     Size: '0x1'
     Type: bool
   ClassSize: '0x160'
-  FullSize: '0x1f0'
-  InheritedSize: '0x90'
+  FullSize: '0x1f8'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryGenerator_WaterMultiDeckerRing:
   Attributes:
   - Name: Radius
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: ZOffsetOfRingsFromContext
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x10'
     Type: TArray<Struct AIDataProviderFloatValue>
   - Name: PointsPerRing
-    Offset: '0xd0'
+    Offset: '0xd8'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: Center
-    Offset: '0x100'
+    Offset: '0x108'
     Size: '0x8'
     Type: class
   ClassSize: '0x78'
-  FullSize: '0x108'
-  InheritedSize: '0x90'
+  FullSize: '0x110'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryProviderInterface:
   Attributes: []
@@ -5685,76 +5693,76 @@ Fauna:
 FaunaAIContollerParamsDataAsset:
   Attributes:
   - Name: Courage
-    Offset: '0x100'
+    Offset: '0x110'
     Size: '0x20'
     Type: Struct WeightedProbabilityRange
   - Name: CarriedItemThreatOverrides
-    Offset: '0x120'
+    Offset: '0x130'
     Size: '0x10'
     Type: TArray<Struct CarriedItemThreatOverride>
   - Name: ThreatenedBySightOfCarrier
-    Offset: '0x130'
+    Offset: '0x140'
     Size: '0x1'
     Type: bool
   - Name: KnownHearingDangers
-    Offset: '0x138'
+    Offset: '0x148'
     Size: '0x10'
     Type: TArray<Struct HearingThreat>
   - Name: CarrierHearingThreatSpeedThreshold
-    Offset: '0x148'
+    Offset: '0x158'
     Size: '0x4'
     Type: float
   - Name: DamageThreat
-    Offset: '0x14c'
+    Offset: '0x15c'
     Size: '0x4'
     Type: float
   - Name: CharacterDistanceToDangerRatingCurve
-    Offset: '0x150'
+    Offset: '0x160'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: DangerRatingToAgitationDurationCurve
-    Offset: '0x158'
+    Offset: '0x168'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: TimeToBecomeAgitatedMin
-    Offset: '0x160'
+    Offset: '0x170'
     Size: '0x4'
     Type: float
   - Name: TimeToBecomeAgitatedMax
-    Offset: '0x164'
-    Size: '0x4'
-    Type: float
-  - Name: AgitationDurationVariance
-    Offset: '0x168'
-    Size: '0x4'
-    Type: float
-  - Name: AlertThreshold
-    Offset: '0x16c'
-    Size: '0x4'
-    Type: int
-  - Name: FleeThreshold
-    Offset: '0x170'
-    Size: '0x4'
-    Type: int
-  - Name: TimeToBecomeCalm
     Offset: '0x174'
     Size: '0x4'
     Type: float
-  - Name: CalmCooldownTime
+  - Name: AgitationDurationVariance
     Offset: '0x178'
     Size: '0x4'
     Type: float
-  - Name: MaxDistanceFromLeaderForIdle
+  - Name: AlertThreshold
     Offset: '0x17c'
+    Size: '0x4'
+    Type: int
+  - Name: FleeThreshold
+    Offset: '0x180'
+    Size: '0x4'
+    Type: int
+  - Name: TimeToBecomeCalm
+    Offset: '0x184'
+    Size: '0x4'
+    Type: float
+  - Name: CalmCooldownTime
+    Offset: '0x188'
+    Size: '0x4'
+    Type: float
+  - Name: MaxDistanceFromLeaderForIdle
+    Offset: '0x18c'
     Size: '0x4'
     Type: float
   - Name: DistanceToLeaderPatrolChanceCurve
-    Offset: '0x180'
+    Offset: '0x190'
     Size: '0x8'
     Type: Class CurveFloat*
   ClassSize: '0x88'
-  FullSize: '0x188'
-  InheritedSize: '0x100'
+  FullSize: '0x198'
+  InheritedSize: '0x110'
   Super: AthenaAIControllerParamsDataAsset
 FaunaAIPlayerTracker:
   Attributes: []
@@ -5771,8 +5779,8 @@ FaunaAnimationInterface:
 FaunaMovementComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x620'
-  InheritedSize: '0x620'
+  FullSize: '0x650'
+  InheritedSize: '0x650'
   Super: AICreatureCharacterMovementComponent
 FilterFirstPlayerEnterPlayerTrackerDecorator:
   Attributes: []
@@ -6758,26 +6766,26 @@ TaleQuestStartTinySharkExperienceStepDesc:
     Type: int
   - Name: TinySharkParams
     Offset: '0x90'
-    Size: '0xb8'
+    Size: '0xc8'
     Type: Struct TinySharkParams
   - Name: TargetShip
-    Offset: '0x168'
+    Offset: '0x178'
     Size: '0x8'
     Type: Class Ship*
   - Name: ExperienceTracker
-    Offset: '0x170'
+    Offset: '0x180'
     Size: '0x8'
     Type: Class TaleQuestTinySharkExperienceTracker*
   - Name: FireTinySharkVariantDefeatedStats
-    Offset: '0x178'
+    Offset: '0x188'
     Size: '0x1'
     Type: bool
   - Name: TinySharkExperience
-    Offset: '0x180'
+    Offset: '0x190'
     Size: '0x30'
     Type: Struct QuestVariableTinySharkExperience
-  ClassSize: '0x130'
-  FullSize: '0x1b0'
+  ClassSize: '0x140'
+  FullSize: '0x1c0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestTinySharkExperienceTracker:
@@ -6844,36 +6852,36 @@ TinySharkExperience:
     Type: struct FName
   - Name: Params
     Offset: '0x4b0'
-    Size: '0xb8'
+    Size: '0xc8'
     Type: Struct TinySharkParams
   - Name: TinySharkTelemetryComponent
-    Offset: '0x568'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class TinySharkTelemetryComponent*
   - Name: TrackedShip
-    Offset: '0x570'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class Ship*
   - Name: SightingEncounterParams
-    Offset: '0x608'
+    Offset: '0x618'
     Size: '0xc'
     Type: Struct EncounterParams
   - Name: CloseEncounterParams
-    Offset: '0x614'
+    Offset: '0x624'
     Size: '0xc'
     Type: Struct EncounterParams
-  ClassSize: '0x428'
-  FullSize: '0x7f0'
+  ClassSize: '0x438'
+  FullSize: '0x800'
   InheritedSize: '0x3c8'
   Super: Actor
 TinySharkParamsDataAsset:
   Attributes:
   - Name: Params
     Offset: '0x28'
-    Size: '0xb8'
+    Size: '0xc8'
     Type: Struct TinySharkParams
-  ClassSize: '0xb8'
-  FullSize: '0xe0'
+  ClassSize: '0xc8'
+  FullSize: '0xf0'
   InheritedSize: '0x28'
   Super: DataAsset
 TinySharkService:

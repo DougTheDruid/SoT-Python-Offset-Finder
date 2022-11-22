@@ -103,7 +103,7 @@ InvasionParticipatingCrewData:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
-  ClassSize: '0x70'
+  ClassSize: '0x78'
 InvasionServiceMatchmakingCrewInfo:
   Attributes:
   - Name: CrewId
@@ -126,6 +126,13 @@ ReplicatedInvasionCrewMusicState:
     Size: '0x18'
     Type: Struct TimeStampedInvasionMusicState
   ClassSize: '0x28'
+TaleDisplayedInvasionBanner:
+  Attributes:
+  - Name: Player
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
 TimeStampedInvasionMusicState:
   Attributes:
   - Name: Faction

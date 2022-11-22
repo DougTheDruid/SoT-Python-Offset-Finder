@@ -30,8 +30,8 @@
         "Offset": "0x4d8"
       },
       {
-        "Name": "ParticlesFactionB",
-        "Type": "Class FactionParticleComponent*",
+        "Name": "HourglassStand",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4e0"
       },
@@ -42,61 +42,61 @@
         "Offset": "0x4e8"
       },
       {
-        "Name": "FactionFlipMesh",
-        "Type": "Class FactionFlipMeshComponent*",
+        "Name": "ParticlesFactionB",
+        "Type": "Class FactionParticleComponent*",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "HourglassStand",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "FactionFlipMesh",
+        "Type": "Class FactionFlipMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
-        "Name": "VoteIndicator8",
+        "Name": "FH_VoteIndicator4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
-        "Name": "VoteIndicator7",
+        "Name": "PL_VoteIndicator4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
-        "Name": "VoteIndicator6",
+        "Name": "FH_VoteIndicator3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
-        "Name": "VoteIndicator5",
+        "Name": "PL_VoteIndicator3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x518"
       },
       {
-        "Name": "VoteIndicator4",
+        "Name": "FH_VoteIndicator2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x520"
       },
       {
-        "Name": "VoteIndicator3",
+        "Name": "PL_VoteIndicator2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
-        "Name": "VoteIndicator2",
+        "Name": "FH_VoteIndicator1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x530"
       },
       {
-        "Name": "VoteIndicator1",
+        "Name": "PL_VoteIndicator1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x538"

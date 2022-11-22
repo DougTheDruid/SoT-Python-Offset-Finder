@@ -30,11 +30,15 @@ BP_PromptCoordinator_Hourglass_C:
     Offset: '0x1d8'
     Size: '0x4'
     Type: float
-  - Name: PromptHourglassTutorial2
+  - Name: HandleChoseFaction
     Offset: '0x1e0'
-    Size: '0x68'
-    Type: Struct PrioritisedPromptWithHandle
-  ClassSize: '0x130'
-  FullSize: '0x248'
+    Size: '0x48'
+    Type: Struct ObjectMessagingHandle
+  - Name: FactionChosen
+    Offset: '0x228'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x111'
+  FullSize: '0x229'
   InheritedSize: '0x118'
   Super: BP_PromptCoordinator_Base_C

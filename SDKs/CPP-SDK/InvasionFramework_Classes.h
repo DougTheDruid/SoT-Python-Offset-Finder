@@ -138,40 +138,52 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x78
 class InvasionServiceDataAsset: public DataAsset
 {
 public:
 	Class VoyageDescDataAsset*                                   Matchmaking_VoyageDescDataAsset;                   // 0x28(0x8)
 	Class VoyageDescDataAsset*                                   Invasion_AggressivePassive_VoyageDescDataAsset;    // 0x30(0x8)
 	Class VoyageDescDataAsset*                                   Invasion_AggressiveAggressive_VoyageDescDataAsset; // 0x38(0x8)
-	Class VoyageDescDataAsset*                                   Invasion_LosingCrew_VoyageDescDataAsset;           // 0x40(0x8)
-	Class EnvQuery*                                              AggressivePassive_EnvQueryTemplate;                // 0x48(0x8)
-	Class EnvQuery*                                              AggressiveAggressive_InvasionLocation_EnvQueryTemplate; // 0x50(0x8)
-	Class EnvQuery*                                              AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate; // 0x58(0x8)
-	Class EnvQuery*                                              AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate; // 0x60(0x8)
-	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistance_Min; // 0x68(0x4)
-	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistance_Max; // 0x6c(0x4)
-	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Min; // 0x70(0x4)
-	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistance_Max; // 0x74(0x4)
-	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressivePassive_VoyageDescDataAsset; // 0x78(0x8)
-	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset; // 0x80(0x8)
-	float                                                        StopPlayingEmergeMusicAfterSeconds;                // 0x88(0x4)
+	float                                                        VoteValidationRivalShipDetectionRadius;            // 0x40(0x4)
+	Class VoyageDescDataAsset*                                   Invasion_LosingCrew_VoyageDescDataAsset;           // 0x48(0x8)
+	Class EnvQuery*                                              AggressivePassive_EnvQueryTemplate;                // 0x50(0x8)
+	Class EnvQuery*                                              AggressiveAggressive_InvasionLocation_EnvQueryTemplate; // 0x58(0x8)
+	Class EnvQuery*                                              AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate; // 0x60(0x8)
+	Class EnvQuery*                                              AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate; // 0x68(0x8)
+	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Min; // 0x70(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Max; // 0x74(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Min; // 0x78(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Max; // 0x7c(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_TargetLocationOffsetInMetres; // 0x80(0x4)
+	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressivePassive_VoyageDescDataAsset; // 0x88(0x8)
+	Class VoyageDescDataAsset*                                   Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset; // 0x90(0x8)
+	float                                                        StopPlayingEmergeMusicAfterSeconds;                // 0x98(0x4)
+	float                                                        WorldEventsCooldown;                               // 0x9c(0x4)
 };
 
 
-// Size 0x1f0
+// Size 0x270
 class InvasionService: public Actor
 {
 public:
-	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x408(0x8)
-	Class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x410(0x8)
-	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x508(0x10)
-	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x518(0x10)
-	TArray<Struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x528(0x10)
-	TArray<Struct InvasionServiceMatchmakingCrewInfo>            MatchmakingCrewsReplicated;                        // 0x538(0x10)
-	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x548(0x10)
-	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x558(0x10)
+	Class InvasionSettings*                                      InvasionSettings;                                  // 0x408(0x8)
+	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x410(0x8)
+	Class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x418(0x8)
+	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x570(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x580(0x10)
+	TArray<Struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x590(0x10)
+	TArray<Struct InvasionServiceMatchmakingCrewInfo>            MatchmakingCrewsReplicated;                        // 0x5a0(0x10)
+	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x5b0(0x10)
+	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x5c0(0x10)
+};
+
+
+// Size 0x10
+class InvasionSettings: public DeveloperSettings
+{
+public:
+	Struct StringAssetReference                                  InvasionServiceDataAsset;                          // 0x38(0x10)
 };
 
 

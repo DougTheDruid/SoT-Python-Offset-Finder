@@ -74,85 +74,85 @@ SlateLoadingScreenParams:
     Type: Struct LinearColor
   - Name: PrimaryImage
     Offset: '0x60'
-    Size: '0x20'
+    Size: '0x30'
     Type: Struct SlateLoadingScreenImageParams
   - Name: CyclingImages
-    Offset: '0x80'
+    Offset: '0x90'
     Size: '0x10'
     Type: TArray<Struct SlateLoadingScreenImageParams>
   - Name: MaxNumImagesPerLoad
-    Offset: '0x90'
+    Offset: '0xa0'
     Size: '0x4'
     Type: int
   - Name: SpinnerText
-    Offset: '0x98'
+    Offset: '0xa8'
     Size: '0x38'
     Type: Struct FText
   - Name: SpinnerTextColour
-    Offset: '0xd0'
+    Offset: '0xe0'
     Size: '0x30'
     Type: Struct SlateColor
   - Name: SpinnerTextFont
-    Offset: '0x100'
+    Offset: '0x110'
     Size: '0x40'
     Type: Struct SlateFontInfo
   - Name: SpinnerSize
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x4'
     Type: float
   - Name: SpinnerMargin
-    Offset: '0x144'
+    Offset: '0x154'
     Size: '0x10'
     Type: Struct Margin
   - Name: SpinnerPadding
-    Offset: '0x154'
+    Offset: '0x164'
     Size: '0x4'
     Type: float
   - Name: SpinnerIcon
-    Offset: '0x158'
+    Offset: '0x168'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: TipsMargin
-    Offset: '0x168'
+    Offset: '0x178'
     Size: '0x10'
     Type: Struct Margin
   - Name: TipWrapLength
-    Offset: '0x178'
+    Offset: '0x188'
     Size: '0x4'
     Type: float
   - Name: TipDisplayDuration
-    Offset: '0x17c'
+    Offset: '0x18c'
     Size: '0x4'
     Type: float
   - Name: TipDurationBetweenTips
-    Offset: '0x180'
+    Offset: '0x190'
     Size: '0x4'
     Type: float
   - Name: NumTipsPerImage
-    Offset: '0x184'
+    Offset: '0x194'
     Size: '0x4'
     Type: int
   - Name: LoadingTipFont
-    Offset: '0x188'
+    Offset: '0x198'
     Size: '0x40'
     Type: Struct SlateFontInfo
   - Name: LoadingTipFontLineHeightPercentage
-    Offset: '0x1c8'
+    Offset: '0x1d8'
     Size: '0x4'
     Type: float
   - Name: LoadingScreenTips
-    Offset: '0x1d0'
+    Offset: '0x1e0'
     Size: '0x10'
     Type: TArray<Struct FText>
   - Name: LoadingScreenTipColour
-    Offset: '0x1e0'
+    Offset: '0x1f0'
     Size: '0x30'
     Type: Struct SlateColor
   - Name: AllowSyncronousAssetLoad
-    Offset: '0x210'
+    Offset: '0x220'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x1f0'
-  FullSize: '0x218'
+  ClassSize: '0x200'
+  FullSize: '0x228'
   InheritedSize: '0x28'
   Super: DataAsset

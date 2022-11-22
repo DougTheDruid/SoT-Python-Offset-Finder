@@ -1259,7 +1259,7 @@
     "Attributes": []
   },
   "TinySharkParams": {
-    "ClassSize": "0xb8",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "TinySharkType",
@@ -1292,16 +1292,33 @@
         "Offset": "0x80"
       },
       {
-        "Name": "TrackedShipDistanceThreshold",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "TrackedShipDistanceThresholdByFeatureInPriorityOrder",
+        "Type": "TArray<Struct TinySharkTrackedShipDistanceThresholdByFeature>",
+        "Size": "0x10",
         "Offset": "0xb0"
       },
       {
         "Name": "RepositionTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xb4"
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "TinySharkTrackedShipDistanceThresholdByFeature": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TrackedShipDistanceThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -1753,6 +1770,23 @@
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "AthenaAIControllerFeatureToggledParams": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Params",
+        "Type": "TArray<Struct AthenaAIControllerParamValue>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

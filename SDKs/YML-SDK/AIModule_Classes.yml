@@ -1690,189 +1690,193 @@ EnvQueryGenerator:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
+  - Name: Feature
+    Offset: '0x44'
+    Size: '0xc'
+    Type: Struct FeatureFlag
   - Name: ItemType
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x8'
     Type: class
-  ClassSize: '0x20'
-  FullSize: '0x50'
+  ClassSize: '0x28'
+  FullSize: '0x58'
   InheritedSize: '0x30'
   Super: EnvQueryNode
 EnvQueryGenerator_ActorsOfClass:
   Attributes:
   - Name: SearchRadius
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: SearchedActorClass
-    Offset: '0x80'
-    Size: '0x8'
-    Type: class
-  - Name: SearchCenter
     Offset: '0x88'
     Size: '0x8'
     Type: class
+  - Name: SearchCenter
+    Offset: '0x90'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x40'
-  FullSize: '0x90'
-  InheritedSize: '0x50'
+  FullSize: '0x98'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 EnvQueryGenerator_BlueprintBase:
   Attributes:
   - Name: GeneratorsActionDescription
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x38'
     Type: Struct FText
   - Name: Context
-    Offset: '0x88'
-    Size: '0x8'
-    Type: class
-  - Name: GeneratedItemType
     Offset: '0x90'
     Size: '0x8'
     Type: class
+  - Name: GeneratedItemType
+    Offset: '0x98'
+    Size: '0x8'
+    Type: class
   ClassSize: '0x50'
-  FullSize: '0xa0'
-  InheritedSize: '0x50'
+  FullSize: '0xa8'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 EnvQueryGenerator_Composite:
   Attributes:
   - Name: Generators
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x10'
     Type: TArray<class EnvQueryGenerator*>
   - Name: bHasMatchingItemType
-    Offset: '0x60'
+    Offset: '0x68'
     Size: '0x1'
     Type: bool
   ClassSize: '0x18'
-  FullSize: '0x68'
-  InheritedSize: '0x50'
+  FullSize: '0x70'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 EnvQueryGenerator_Donut:
   Attributes:
   - Name: InnerRadius
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: OuterRadius
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: NumberOfRings
-    Offset: '0xf0'
+    Offset: '0xf8'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: PointsPerRing
-    Offset: '0x120'
+    Offset: '0x128'
     Size: '0x30'
     Type: Struct AIDataProviderIntValue
   - Name: ArcDirection
-    Offset: '0x150'
+    Offset: '0x158'
     Size: '0x20'
     Type: Struct EnvDirection
   - Name: ArcAngle
-    Offset: '0x170'
+    Offset: '0x178'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: RandomiseRadius
-    Offset: '0x1a0'
+    Offset: '0x1a8'
     Size: '0x1'
     Type: bool
   - Name: Center
-    Offset: '0x1a8'
+    Offset: '0x1b0'
     Size: '0x8'
     Type: class
   - Name: bDefineArc
-    Offset: '0x1b0'
+    Offset: '0x1b8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x128'
-  FullSize: '0x1b8'
-  InheritedSize: '0x90'
+  FullSize: '0x1c0'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryGenerator_OnCircle:
   Attributes:
   - Name: CircleRadius
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: SpaceBetween
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: ArcDirection
-    Offset: '0xf0'
+    Offset: '0xf8'
     Size: '0x20'
     Type: Struct EnvDirection
   - Name: ArcAngle
-    Offset: '0x110'
+    Offset: '0x118'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: AngleRadians
-    Offset: '0x140'
+    Offset: '0x148'
     Size: '0x4'
     Type: float
   - Name: CircleCenter
-    Offset: '0x148'
+    Offset: '0x150'
     Size: '0x8'
     Type: class
   - Name: TraceData
-    Offset: '0x150'
+    Offset: '0x158'
     Size: '0x40'
     Type: Struct EnvTraceData
   - Name: bDefineArc
-    Offset: '0x190'
+    Offset: '0x198'
     Size: '0x1'
     Type: bool
   ClassSize: '0x108'
-  FullSize: '0x198'
-  InheritedSize: '0x90'
+  FullSize: '0x1a0'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryGenerator_PathingGrid:
   Attributes:
   - Name: PathToItem
-    Offset: '0xf8'
+    Offset: '0x100'
     Size: '0x30'
     Type: Struct AIDataProviderBoolValue
   - Name: NavigationFilter
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x8'
     Type: class
   - Name: ScanRangeMultiplier
-    Offset: '0x130'
+    Offset: '0x138'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   ClassSize: '0x68'
-  FullSize: '0x160'
-  InheritedSize: '0xf8'
+  FullSize: '0x168'
+  InheritedSize: '0x100'
   Super: EnvQueryGenerator_SimpleGrid
 EnvQueryGenerator_ProjectedPoints:
   Attributes:
   - Name: ProjectionData
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x40'
     Type: Struct EnvTraceData
   ClassSize: '0x40'
-  FullSize: '0x90'
-  InheritedSize: '0x50'
+  FullSize: '0x98'
+  InheritedSize: '0x58'
   Super: EnvQueryGenerator
 EnvQueryGenerator_SimpleGrid:
   Attributes:
   - Name: GridSize
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: SpaceBetween
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x30'
     Type: Struct AIDataProviderFloatValue
   - Name: GenerateAround
-    Offset: '0xf0'
+    Offset: '0xf8'
     Size: '0x8'
     Type: class
   ClassSize: '0x68'
-  FullSize: '0xf8'
-  InheritedSize: '0x90'
+  FullSize: '0x100'
+  InheritedSize: '0x98'
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryInstanceBlueprintWrapper:
   Attributes:

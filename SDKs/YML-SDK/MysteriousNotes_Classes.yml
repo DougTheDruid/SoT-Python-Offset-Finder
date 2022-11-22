@@ -84,20 +84,20 @@ MysteriousNotesServiceInterface:
   Super: Interface
 PlayerMysteriousNoteComponent:
   Attributes:
-  - Name: NoteData
+  - Name: CinematicPlayed
     Offset: '0xd0'
+    Size: '0x1'
+    Type: bool
+  - Name: NoteData
+    Offset: '0x1c0'
     Size: '0x18'
     Type: Struct ClientNoteData
   - Name: BeenPossessed
-    Offset: '0xe8'
+    Offset: '0x1d8'
     Size: '0x1'
     Type: bool
-  - Name: CinematicPlayed
-    Offset: '0xe9'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x188'
-  FullSize: '0x250'
+  ClassSize: '0x190'
+  FullSize: '0x258'
   InheritedSize: '0xc8'
   Super: ActorComponent
 PlayerMysteriousNoteInterface:

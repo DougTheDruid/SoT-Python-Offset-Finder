@@ -1,18 +1,41 @@
 {
-  "VideoSubtitleEvent": {
+  "VideoPlaybackStateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "SubtitleString",
+        "Name": "MediaTextureName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "VideoSubtitleEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubtitleString",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
         "Name": "SubtitleDuration",
         "Type": "double",
         "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x20"
       }
     ]
   },

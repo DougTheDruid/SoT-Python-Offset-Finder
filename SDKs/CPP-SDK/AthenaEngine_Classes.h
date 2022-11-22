@@ -21,6 +21,13 @@ public:
 
 
 // Size 0x0
+class AthenaGameStateInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0
 class BoxedRpcDispatcherInterface: public Interface
 {
 public:

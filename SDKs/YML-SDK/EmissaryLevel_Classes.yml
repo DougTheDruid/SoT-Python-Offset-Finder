@@ -148,36 +148,36 @@ EmissaryMaxRankQuestProvider:
   Super: ActorComponent
 EmissaryParticipantComponent:
   Attributes:
-  - Name: EmissaryLevel
-    Offset: '0xd0'
-    Size: '0x4'
-    Type: int
-  - Name: EmissaryLevelProgress
-    Offset: '0xd4'
-    Size: '0x4'
-    Type: float
-  - Name: AffiliatedCompany
-    Offset: '0xd8'
-    Size: '0x8'
-    Type: struct FName
   - Name: IsAtMaxRank
-    Offset: '0xe0'
-    Size: '0x1'
-    Type: bool
-  - Name: IsEmissaryMaxRankQuestBeenActivatedThisSession
-    Offset: '0xe1'
+    Offset: '0xd0'
     Size: '0x1'
     Type: bool
   - Name: NoteCompletionIdents
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x10'
     Type: TArray<Struct MysteriousNotesCompletionEventsModelEntry>
-  - Name: VotedCompany
-    Offset: '0x108'
+  - Name: EmissaryLevel
+    Offset: '0xf8'
+    Size: '0x4'
+    Type: int
+  - Name: EmissaryLevelProgress
+    Offset: '0xfc'
+    Size: '0x4'
+    Type: float
+  - Name: AffiliatedCompany
+    Offset: '0x100'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x48'
-  FullSize: '0x110'
+  - Name: IsEmissaryMaxRankQuestBeenActivatedThisSession
+    Offset: '0x108'
+    Size: '0x1'
+    Type: bool
+  - Name: VotedCompany
+    Offset: '0x10c'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x50'
+  FullSize: '0x118'
   InheritedSize: '0xc8'
   Super: ActorComponent
 EmissaryRepresentationMeshComponent:

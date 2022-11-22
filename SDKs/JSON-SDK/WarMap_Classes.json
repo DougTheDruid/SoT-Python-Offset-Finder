@@ -114,7 +114,7 @@
         "Offset": "0x1f8"
       },
       {
-        "Name": "WarMapVotingCantVoteReasonNearbyEnemyFactionShip",
+        "Name": "WarMapVotingCantVoteReasonNearbyRivalShip",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x230"

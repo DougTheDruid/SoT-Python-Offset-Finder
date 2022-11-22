@@ -312,7 +312,7 @@ public:
 };
 
 
-// Size 0x400
+// Size 0x430
 class CharacterMovementComponent: public PawnMovementComponent
 {
 public:
@@ -388,70 +388,70 @@ public:
 	Struct Vector                                                PendingImpulseToApply;                             // 0x298(0xc)
 	Struct Vector                                                PendingForceToApply;                               // 0x2a4(0xc)
 	float                                                        AnalogInputModifier;                               // 0x2b0(0x4)
-	float                                                        MaxSimulationTimeStep;                             // 0x2c4(0x4)
-	int                                                          MaxSimulationIterations;                           // 0x2c8(0x4)
-	float                                                        MaxSmoothNetUpdateDist;                            // 0x2cc(0x4)
-	float                                                        NoSmoothNetUpdateDist;                             // 0x2d0(0x4)
-	float                                                        NetworkSimulatedSmoothLocationTime;                // 0x2d4(0x4)
-	float                                                        NetworkSimulatedSmoothRotationTime;                // 0x2d8(0x4)
-	float                                                        LedgeCheckThreshold;                               // 0x2dc(0x4)
-	float                                                        JumpOutOfWaterPitch;                               // 0x2e0(0x4)
-	Struct FindFloorResult                                       CurrentFloor;                                      // 0x2e4(0x8c)
-	byte                                                         DefaultLandMovementMode;                           // 0x370(0x1)
-	byte                                                         DefaultWaterMovementMode;                          // 0x371(0x1)
-	byte                                                         GroundMovementMode;                                // 0x372(0x1)
-	bool                                                         bMaintainHorizontalGroundVelocity;                 // 0x374(0x1)
-	bool                                                         bImpartBaseVelocityX;                              // 0x374(0x1)
-	bool                                                         bImpartBaseVelocityY;                              // 0x374(0x1)
-	bool                                                         bImpartBaseVelocityZ;                              // 0x374(0x1)
-	bool                                                         bImpartBaseAngularVelocity;                        // 0x374(0x1)
-	bool                                                         bJustTeleported;                                   // 0x374(0x1)
-	bool                                                         bNetworkUpdateReceived;                            // 0x374(0x1)
-	bool                                                         bBasedMovementUpdateReceived;                      // 0x374(0x1)
-	bool                                                         bMovementUpdateReceived;                           // 0x375(0x1)
-	bool                                                         bNetworkMovementModeChanged;                       // 0x375(0x1)
-	bool                                                         bNotifyApex;                                       // 0x375(0x1)
-	bool                                                         bCheatFlying;                                      // 0x375(0x1)
-	bool                                                         bWantsToCrouch;                                    // 0x375(0x1)
-	bool                                                         bCrouchMaintainsBaseLocation;                      // 0x375(0x1)
-	bool                                                         bIgnoreBaseRotation;                               // 0x375(0x1)
-	bool                                                         bFastAttachedMove;                                 // 0x375(0x1)
-	bool                                                         bAlwaysCheckFloor;                                 // 0x376(0x1)
-	bool                                                         bUseFlatBaseForFloorChecks;                        // 0x376(0x1)
-	bool                                                         bPerformingJumpOff;                                // 0x376(0x1)
-	bool                                                         bWantsToLeaveNavWalking;                           // 0x376(0x1)
-	bool                                                         bUseRVOAvoidance;                                  // 0x376(0x1)
-	bool                                                         bRequestedMoveUseAcceleration;                     // 0x376(0x1)
-	bool                                                         bPreventSimulatedFloorChecks;                      // 0x376(0x1)
-	bool                                                         bPreventNavMeshFalling;                            // 0x376(0x1)
-	bool                                                         bHasRequestedVelocity;                             // 0x377(0x1)
-	bool                                                         bRequestedMoveWithMaxSpeed;                        // 0x377(0x1)
-	bool                                                         bWasAvoidanceUpdated;                              // 0x377(0x1)
-	bool                                                         bProjectNavMeshWalking;                            // 0x377(0x1)
-	float                                                        SmoothingClientPositionTolerance;                  // 0x38c(0x4)
-	float                                                        AvoidanceConsiderationRadius;                      // 0x390(0x4)
-	Struct Vector                                                RequestedVelocity;                                 // 0x394(0xc)
-	int                                                          AvoidanceUID;                                      // 0x3a0(0x4)
-	Struct NavAvoidanceMask                                      AvoidanceGroup;                                    // 0x3a4(0x4)
-	Struct NavAvoidanceMask                                      GroupsToAvoid;                                     // 0x3a8(0x4)
-	Struct NavAvoidanceMask                                      GroupsToIgnore;                                    // 0x3ac(0x4)
-	float                                                        AvoidanceWeight;                                   // 0x3b0(0x4)
-	Struct Vector                                                PendingLaunchVelocity;                             // 0x3b4(0xc)
-	float                                                        NavMeshProjectionInterval;                         // 0x458(0x4)
-	float                                                        NavMeshProjectionTimer;                            // 0x45c(0x4)
-	bool                                                         bUseNavMeshProjectionTimeModifier;                 // 0x460(0x1)
-	float                                                        MaxNavMeshProjectionInterval;                      // 0x464(0x4)
-	float                                                        NavMeshProjectionInterpSpeed;                      // 0x46c(0x4)
-	bool                                                         bUsePlaneBasedNavMeshProjectionInterpSystem;       // 0x470(0x1)
-	float                                                        MaxAllowedZOffsetFromCurrentPlane;                 // 0x474(0x4)
-	float                                                        MaxZDiffFromPrevPlane;                             // 0x478(0x4)
-	float                                                        NavMeshProjectionHeightScaleUp;                    // 0x498(0x4)
-	float                                                        NavMeshProjectionHeightScaleDown;                  // 0x49c(0x4)
-	bool                                                         UseControllerRotationInNavWalkingMoveComponent;    // 0x4a0(0x1)
-	Struct CharacterMovementComponentPreClothTickFunction        PreClothComponentTick;                             // 0x4a8(0x50)
-	float                                                        MinTimeBetweenTimeStampResets;                     // 0x50c(0x4)
-	Struct RootMotionMovementParams                              RootMotionParams;                                  // 0x510(0x40)
-	bool                                                         bWasSimulatingRootMotion;                          // 0x550(0x1)
+	float                                                        MaxSimulationTimeStep;                             // 0x2e8(0x4)
+	int                                                          MaxSimulationIterations;                           // 0x2ec(0x4)
+	float                                                        MaxSmoothNetUpdateDist;                            // 0x2f0(0x4)
+	float                                                        NoSmoothNetUpdateDist;                             // 0x2f4(0x4)
+	float                                                        NetworkSimulatedSmoothLocationTime;                // 0x2f8(0x4)
+	float                                                        NetworkSimulatedSmoothRotationTime;                // 0x2fc(0x4)
+	float                                                        LedgeCheckThreshold;                               // 0x300(0x4)
+	float                                                        JumpOutOfWaterPitch;                               // 0x304(0x4)
+	Struct FindFloorResult                                       CurrentFloor;                                      // 0x308(0x8c)
+	byte                                                         DefaultLandMovementMode;                           // 0x394(0x1)
+	byte                                                         DefaultWaterMovementMode;                          // 0x395(0x1)
+	byte                                                         GroundMovementMode;                                // 0x396(0x1)
+	bool                                                         bMaintainHorizontalGroundVelocity;                 // 0x398(0x1)
+	bool                                                         bImpartBaseVelocityX;                              // 0x398(0x1)
+	bool                                                         bImpartBaseVelocityY;                              // 0x398(0x1)
+	bool                                                         bImpartBaseVelocityZ;                              // 0x398(0x1)
+	bool                                                         bImpartBaseAngularVelocity;                        // 0x398(0x1)
+	bool                                                         bJustTeleported;                                   // 0x398(0x1)
+	bool                                                         bNetworkUpdateReceived;                            // 0x398(0x1)
+	bool                                                         bBasedMovementUpdateReceived;                      // 0x398(0x1)
+	bool                                                         bMovementUpdateReceived;                           // 0x399(0x1)
+	bool                                                         bNetworkMovementModeChanged;                       // 0x399(0x1)
+	bool                                                         bNotifyApex;                                       // 0x399(0x1)
+	bool                                                         bCheatFlying;                                      // 0x399(0x1)
+	bool                                                         bWantsToCrouch;                                    // 0x399(0x1)
+	bool                                                         bCrouchMaintainsBaseLocation;                      // 0x399(0x1)
+	bool                                                         bIgnoreBaseRotation;                               // 0x399(0x1)
+	bool                                                         bFastAttachedMove;                                 // 0x399(0x1)
+	bool                                                         bAlwaysCheckFloor;                                 // 0x39a(0x1)
+	bool                                                         bUseFlatBaseForFloorChecks;                        // 0x39a(0x1)
+	bool                                                         bPerformingJumpOff;                                // 0x39a(0x1)
+	bool                                                         bWantsToLeaveNavWalking;                           // 0x39a(0x1)
+	bool                                                         bUseRVOAvoidance;                                  // 0x39a(0x1)
+	bool                                                         bRequestedMoveUseAcceleration;                     // 0x39a(0x1)
+	bool                                                         bPreventSimulatedFloorChecks;                      // 0x39a(0x1)
+	bool                                                         bPreventNavMeshFalling;                            // 0x39a(0x1)
+	bool                                                         bHasRequestedVelocity;                             // 0x39b(0x1)
+	bool                                                         bRequestedMoveWithMaxSpeed;                        // 0x39b(0x1)
+	bool                                                         bWasAvoidanceUpdated;                              // 0x39b(0x1)
+	bool                                                         bProjectNavMeshWalking;                            // 0x39b(0x1)
+	float                                                        SmoothingClientPositionTolerance;                  // 0x3b0(0x4)
+	float                                                        AvoidanceConsiderationRadius;                      // 0x3b4(0x4)
+	Struct Vector                                                RequestedVelocity;                                 // 0x3b8(0xc)
+	int                                                          AvoidanceUID;                                      // 0x3c4(0x4)
+	Struct NavAvoidanceMask                                      AvoidanceGroup;                                    // 0x3c8(0x4)
+	Struct NavAvoidanceMask                                      GroupsToAvoid;                                     // 0x3cc(0x4)
+	Struct NavAvoidanceMask                                      GroupsToIgnore;                                    // 0x3d0(0x4)
+	float                                                        AvoidanceWeight;                                   // 0x3d4(0x4)
+	Struct Vector                                                PendingLaunchVelocity;                             // 0x3d8(0xc)
+	float                                                        NavMeshProjectionInterval;                         // 0x480(0x4)
+	float                                                        NavMeshProjectionTimer;                            // 0x484(0x4)
+	bool                                                         bUseNavMeshProjectionTimeModifier;                 // 0x488(0x1)
+	float                                                        MaxNavMeshProjectionInterval;                      // 0x48c(0x4)
+	float                                                        NavMeshProjectionInterpSpeed;                      // 0x494(0x4)
+	bool                                                         bUsePlaneBasedNavMeshProjectionInterpSystem;       // 0x498(0x1)
+	float                                                        MaxAllowedZOffsetFromCurrentPlane;                 // 0x49c(0x4)
+	float                                                        MaxZDiffFromPrevPlane;                             // 0x4a0(0x4)
+	float                                                        NavMeshProjectionHeightScaleUp;                    // 0x4c0(0x4)
+	float                                                        NavMeshProjectionHeightScaleDown;                  // 0x4c4(0x4)
+	bool                                                         UseControllerRotationInNavWalkingMoveComponent;    // 0x4c8(0x1)
+	Struct CharacterMovementComponentPreClothTickFunction        PreClothComponentTick;                             // 0x4d0(0x50)
+	float                                                        MinTimeBetweenTimeStampResets;                     // 0x534(0x4)
+	Struct RootMotionMovementParams                              RootMotionParams;                                  // 0x540(0x40)
+	bool                                                         bWasSimulatingRootMotion;                          // 0x580(0x1)
 };
 
 
@@ -1644,7 +1644,7 @@ public:
 };
 
 
-// Size 0x34540
+// Size 0x34548
 class NetConnection: public Player
 {
 public:
@@ -1659,7 +1659,7 @@ public:
 	bool                                                         InternalAck;                                       // 0xa4(0x1)
 	double                                                       LastReceiveTime;                                   // 0x3a0(0x8)
 	int                                                          MaxDormantActorsCheckedFromRelevancy;              // 0x34468(0x4)
-	TArray<class Channel*>                                       DeferredCloseChannels;                             // 0x344c0(0x10)
+	TArray<class Channel*>                                       DeferredCloseChannels;                             // 0x344c8(0x10)
 };
 
 
@@ -3177,7 +3177,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x30
 class SkeletalMeshActor: public Actor
 {
 public:
@@ -3186,8 +3186,6 @@ public:
 	Class SkeletalMeshComponent*                                 SkeletalMeshComponent;                             // 0x3d8(0x8)
 	Class SkeletalMesh*                                          ReplicatedMesh;                                    // 0x3e0(0x8)
 	Class PhysicsAsset*                                          ReplicatedPhysAsset;                               // 0x3e8(0x8)
-	Class MaterialInterface*                                     ReplicatedMaterial0;                               // 0x3f0(0x8)
-	Class MaterialInterface*                                     ReplicatedMaterial1;                               // 0x3f8(0x8)
 };
 
 
@@ -8736,7 +8734,7 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x58
 class ParticleModuleLocationEmitter: public ParticleModuleLocationBase
 {
 public:
@@ -8746,6 +8744,7 @@ public:
 	Struct RawDistributionFloat                                  InheritSourceVelocityScaleDistribution;            // 0x60(0x38)
 	bool                                                         bInheritSourceRotation;                            // 0x98(0x1)
 	float                                                        InheritSourceRotationScale;                        // 0x9c(0x4)
+	byte                                                         MissingParentParticlesBehaviour;                   // 0xa0(0x1)
 };
 
 
@@ -9061,7 +9060,7 @@ public:
 };
 
 
-// Size 0x2a8
+// Size 0x298
 class ParticleModuleRequired: public ParticleModule
 {
 public:
@@ -9125,25 +9124,24 @@ public:
 	Struct Vector                                                NormalsCylinderDirection;                          // 0x248(0xc)
 	bool                                                         bOrbitModuleAffectsVelocityAlignment;              // 0x254(0x1)
 	byte                                                         UVFlippingMode;                                    // 0x258(0x1)
-	Class Texture2D*                                             CutoutTexture;                                     // 0x260(0x8)
-	byte                                                         BoundingMode;                                      // 0x268(0x1)
-	byte                                                         OpacitySourceMode;                                 // 0x269(0x1)
-	float                                                        AlphaThreshold;                                    // 0x26c(0x4)
-	float                                                        SafeMarginSize;                                    // 0x270(0x4)
-	TArray<Struct FName>                                         NamedMaterialOverrides;                            // 0x278(0x10)
-	bool                                                         bUseDistanceFading;                                // 0x288(0x1)
-	float                                                        FarStopFade;                                       // 0x28c(0x4)
-	float                                                        FarStartFade;                                      // 0x290(0x4)
-	float                                                        NearStartFade;                                     // 0x294(0x4)
-	float                                                        NearStopFade;                                      // 0x298(0x4)
-	bool                                                         ApplyFOVDistanceScaling;                           // 0x29c(0x1)
-	bool                                                         bUseDistanceSizeScale;                             // 0x29c(0x1)
-	float                                                        FarScaleFactor;                                    // 0x2a0(0x4)
-	float                                                        FarScaleEndDistance;                               // 0x2a4(0x4)
-	float                                                        FarScaleBeginDistance;                             // 0x2a8(0x4)
-	float                                                        NearScaleBeginDistance;                            // 0x2ac(0x4)
-	float                                                        NearScaleEndDistance;                              // 0x2b0(0x4)
-	float                                                        NearScaleFactor;                                   // 0x2b4(0x4)
+	byte                                                         BoundingMode;                                      // 0x259(0x1)
+	byte                                                         OpacitySourceMode;                                 // 0x25a(0x1)
+	float                                                        AlphaThreshold;                                    // 0x25c(0x4)
+	float                                                        SafeMarginSize;                                    // 0x260(0x4)
+	TArray<Struct FName>                                         NamedMaterialOverrides;                            // 0x268(0x10)
+	bool                                                         bUseDistanceFading;                                // 0x278(0x1)
+	float                                                        FarStopFade;                                       // 0x27c(0x4)
+	float                                                        FarStartFade;                                      // 0x280(0x4)
+	float                                                        NearStartFade;                                     // 0x284(0x4)
+	float                                                        NearStopFade;                                      // 0x288(0x4)
+	bool                                                         ApplyFOVDistanceScaling;                           // 0x28c(0x1)
+	bool                                                         bUseDistanceSizeScale;                             // 0x28c(0x1)
+	float                                                        FarScaleFactor;                                    // 0x290(0x4)
+	float                                                        FarScaleEndDistance;                               // 0x294(0x4)
+	float                                                        FarScaleBeginDistance;                             // 0x298(0x4)
+	float                                                        NearScaleBeginDistance;                            // 0x29c(0x4)
+	float                                                        NearScaleEndDistance;                              // 0x2a0(0x4)
+	float                                                        NearScaleFactor;                                   // 0x2a4(0x4)
 };
 
 
@@ -9509,20 +9507,20 @@ public:
 };
 
 
-// Size 0xcc0
+// Size 0xcd0
 class ParticleModuleTypeDataGpu: public ParticleModuleTypeDataBase
 {
 public:
-	Struct GPUSpriteEmitterInfo                                  EmitterInfo;                                       // 0x50(0x2a0)
-	Struct GPUSpriteResourceData                                 ResourceData;                                      // 0x2f0(0xa00)
-	float                                                        CameraMotionBlurAmount;                            // 0xcf0(0x4)
-	bool                                                         bClearExistingParticlesOnInit;                     // 0xcf4(0x1)
-	byte                                                         AlphaCullingAggressiveness;                        // 0xcf8(0x1)
-	bool                                                         bOverrideAlphaThreshold;                           // 0xcfc(0x1)
-	float                                                        OverriddenAlphaThreshold;                          // 0xd00(0x4)
-	byte                                                         InteractionWithKillPlane;                          // 0xd04(0x1)
-	byte                                                         KillPlanePointLocation;                            // 0xd05(0x1)
-	float                                                        FadingTimeWhenKilled;                              // 0xd08(0x4)
+	Struct GPUSpriteEmitterInfo                                  EmitterInfo;                                       // 0x50(0x2b0)
+	Struct GPUSpriteResourceData                                 ResourceData;                                      // 0x300(0xa00)
+	float                                                        CameraMotionBlurAmount;                            // 0xd00(0x4)
+	bool                                                         bClearExistingParticlesOnInit;                     // 0xd04(0x1)
+	byte                                                         AlphaCullingAggressiveness;                        // 0xd08(0x1)
+	bool                                                         bOverrideAlphaThreshold;                           // 0xd0c(0x1)
+	float                                                        OverriddenAlphaThreshold;                          // 0xd10(0x4)
+	byte                                                         InteractionWithKillPlane;                          // 0xd14(0x1)
+	byte                                                         KillPlanePointLocation;                            // 0xd15(0x1)
+	float                                                        FadingTimeWhenKilled;                              // 0xd18(0x4)
 };
 
 
@@ -9938,7 +9936,7 @@ public:
 class ChildConnection: public NetConnection
 {
 public:
-	Class NetConnection*                                         Parent;                                            // 0x34588(0x8)
+	Class NetConnection*                                         Parent;                                            // 0x34590(0x8)
 };
 
 

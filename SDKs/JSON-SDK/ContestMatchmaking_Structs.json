@@ -34,31 +34,37 @@
     ]
   },
   "ServerQueueWaitTimesRequestModel": {
-    "ClassSize": "0x48",
+    "ClassSize": "0x58",
     "Attributes": [
+      {
+        "Name": "ServerId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "ServerLocation",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x10"
       },
       {
         "Name": "PrivateServerId",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x18"
+        "Offset": "0x28"
       },
       {
         "Name": "PlayModeTags",
         "Type": "TArray<Str PlayModeTags>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x38"
       },
       {
         "Name": "PlayModeState",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x48"
       }
     ]
   },
@@ -202,16 +208,22 @@
         "Offset": "0x74"
       },
       {
+        "Name": "PvPRivalSessionType",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
         "Name": "RivalCrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
-        "Offset": "0x78"
+        "Offset": "0x7c"
       },
       {
         "Name": "MatchmakingRequestReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x88"
+        "Offset": "0x8c"
       },
       {
         "Name": "TimeWaitingForMatch",

@@ -51,7 +51,7 @@ public:
 	Struct FText                                                 WarMapVotingRemoveVote;                            // 0x188(0x38)
 	Struct FText                                                 WarMapVotingCantRemoveVote;                        // 0x1c0(0x38)
 	Struct FText                                                 WarMapVotingCantVoteReasonCrewOnInvasion;          // 0x1f8(0x38)
-	Struct FText                                                 WarMapVotingCantVoteReasonNearbyEnemyFactionShip;  // 0x230(0x38)
+	Struct FText                                                 WarMapVotingCantVoteReasonNearbyRivalShip;         // 0x230(0x38)
 	Struct FText                                                 WarMapVotingCantVoteReasonCrewIsInPVEEncounter;    // 0x268(0x38)
 	Struct FText                                                 WarMapVotingCantVoteReasonInTunnelOfTheDamned;     // 0x2a0(0x38)
 };

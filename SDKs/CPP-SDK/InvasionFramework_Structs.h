@@ -48,6 +48,14 @@ public:
 };
 
 
+// Size 0x8
+struct TaleDisplayedInvasionBanner
+{
+public:
+	Class Actor*                                                 Player;                                            // 0x0(0x8)
+};
+
+
 // Size 0x10
 struct CrewMatchmakingCancelledDueToInvasion
 {
@@ -80,7 +88,7 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x78
 struct InvasionParticipatingCrewData
 {
 public:

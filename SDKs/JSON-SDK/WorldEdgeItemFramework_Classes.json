@@ -6,18 +6,11 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "WorldEdgeItemService": {
-    "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x8",
-    "Attributes": []
-  },
   "WorldEdgeItemServiceParams": {
     "Super": "DataAsset",
-    "FullSize": "0x38",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "TeleportItemsEQSQuery",
@@ -30,6 +23,44 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "TimeToSinkFor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "AdditionalMoveDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaxBatchItemsPerSlice",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "WorldEdgeItemService": {
+    "Super": "Actor",
+    "FullSize": "0x610",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Name": "WorldEdgeItemParameters",
+        "Type": "Class WorldEdgeItemServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "SpawnItemEQSRequest",
+        "Type": "Struct EnvQueryRequest",
+        "Size": "0x170",
+        "Offset": "0x3d8"
       }
     ]
   },

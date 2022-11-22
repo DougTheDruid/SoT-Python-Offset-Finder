@@ -2,19 +2,15 @@
 # https://github.com/DougTheDruid
 BP_ARoguesLegacy_Larinna_C:
   Attributes:
-  - Name: TankardRefiller
-    Offset: '0x400'
-    Size: '0x8'
-    Type: Class TankardRefillerComponent*
-  - Name: Interactable
-    Offset: '0x408'
-    Size: '0x8'
-    Type: Class InteractableComponent*
-  - Name: StaticMesh
-    Offset: '0x410'
+  - Name: StaticMesh1
+    Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x18'
-  FullSize: '0x418'
-  InheritedSize: '0x400'
-  Super: InteractableBase
+  - Name: StaticMesh
+    Offset: '0x6b8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x10'
+  FullSize: '0x6c0'
+  InheritedSize: '0x6b0'
+  Super: BP_SoleTrader_C

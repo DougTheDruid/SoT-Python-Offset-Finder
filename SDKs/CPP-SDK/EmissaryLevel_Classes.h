@@ -103,17 +103,17 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x50
 class EmissaryParticipantComponent: public ActorComponent
 {
 public:
-	int                                                          EmissaryLevel;                                     // 0xd0(0x4)
-	float                                                        EmissaryLevelProgress;                             // 0xd4(0x4)
-	struct FName                                                 AffiliatedCompany;                                 // 0xd8(0x8)
-	bool                                                         IsAtMaxRank;                                       // 0xe0(0x1)
-	bool                                                         IsEmissaryMaxRankQuestBeenActivatedThisSession;    // 0xe1(0x1)
-	TArray<Struct MysteriousNotesCompletionEventsModelEntry>     NoteCompletionIdents;                              // 0xe8(0x10)
-	struct FName                                                 VotedCompany;                                      // 0x108(0x8)
+	bool                                                         IsAtMaxRank;                                       // 0xd0(0x1)
+	TArray<Struct MysteriousNotesCompletionEventsModelEntry>     NoteCompletionIdents;                              // 0xd8(0x10)
+	int                                                          EmissaryLevel;                                     // 0xf8(0x4)
+	float                                                        EmissaryLevelProgress;                             // 0xfc(0x4)
+	struct FName                                                 AffiliatedCompany;                                 // 0x100(0x8)
+	bool                                                         IsEmissaryMaxRankQuestBeenActivatedThisSession;    // 0x108(0x1)
+	struct FName                                                 VotedCompany;                                      // 0x10c(0x8)
 };
 
 

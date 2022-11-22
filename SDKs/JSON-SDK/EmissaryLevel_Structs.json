@@ -134,7 +134,7 @@
     ]
   },
   "EmissaryLevelEntry": {
-    "ClassSize": "0x80",
+    "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "Company",
@@ -155,40 +155,46 @@
         "Offset": "0x18"
       },
       {
-        "Name": "EmissarySunkPopUpToastData",
+        "Name": "EmissaryJoinedPopUpToastData",
         "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
+        "Name": "EmissarySunkPopUpToastData",
+        "Type": "Class DataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
         "Name": "CompanyCosmetics",
         "Type": "Struct EmissaryCompanyCosmetics",
         "Size": "0x20",
-        "Offset": "0x28"
+        "Offset": "0x30"
       },
       {
         "Name": "TimeSpentAtMaxRankStat",
         "Type": "Struct PlayerStat",
         "Size": "0x4",
-        "Offset": "0x48"
+        "Offset": "0x50"
       },
       {
         "Name": "StatsToFireOnFullEmissaryClothing",
         "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "StatsToFireOnFullEmissaryShipCustomizations",
         "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
-        "Offset": "0x60"
+        "Offset": "0x68"
       },
       {
         "Name": "StatsToFireOnFullShipCustomizationsAndClothing",
         "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
-        "Offset": "0x70"
+        "Offset": "0x78"
       }
     ]
   },
@@ -780,6 +786,17 @@
       {
         "Name": "CompanyName",
         "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EmissaryJoinedNetworkEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       }

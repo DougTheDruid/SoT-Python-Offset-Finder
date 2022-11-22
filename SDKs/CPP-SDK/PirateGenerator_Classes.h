@@ -97,11 +97,10 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x0
 class WardrobeExcludeDataAsset: public DataAsset
 {
 public:
-	TArray<Struct FName>                                         ExcludeItems;                                      // 0x28(0x10)
 };
 
 

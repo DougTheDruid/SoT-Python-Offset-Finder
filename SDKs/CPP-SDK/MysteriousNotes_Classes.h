@@ -92,13 +92,13 @@ public:
 };
 
 
-// Size 0x188
+// Size 0x190
 class PlayerMysteriousNoteComponent: public ActorComponent
 {
 public:
-	Struct ClientNoteData                                        NoteData;                                          // 0xd0(0x18)
-	bool                                                         BeenPossessed;                                     // 0xe8(0x1)
-	bool                                                         CinematicPlayed;                                   // 0xe9(0x1)
+	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
+	Struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
+	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
 };
 
 

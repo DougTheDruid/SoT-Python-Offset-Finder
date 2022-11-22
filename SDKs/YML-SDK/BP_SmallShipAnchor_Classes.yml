@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_SmallShipAnchor_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x400'
     Size: '0x8'
     Type: Class SceneComponent*

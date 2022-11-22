@@ -53,19 +53,20 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x88
 struct EmissaryLevelEntry
 {
 public:
 	class                                                        Company;                                           // 0x0(0x8)
 	TArray<Struct EmissaryLevelData>                             CompanyLevelData;                                  // 0x8(0x10)
 	Class DataAsset*                                             MaxRankPopUpToastData;                             // 0x18(0x8)
-	Class DataAsset*                                             EmissarySunkPopUpToastData;                        // 0x20(0x8)
-	Struct EmissaryCompanyCosmetics                              CompanyCosmetics;                                  // 0x28(0x20)
-	Struct PlayerStat                                            TimeSpentAtMaxRankStat;                            // 0x48(0x4)
-	TArray<Struct PlayerStat>                                    StatsToFireOnFullEmissaryClothing;                 // 0x50(0x10)
-	TArray<Struct PlayerStat>                                    StatsToFireOnFullEmissaryShipCustomizations;       // 0x60(0x10)
-	TArray<Struct PlayerStat>                                    StatsToFireOnFullShipCustomizationsAndClothing;    // 0x70(0x10)
+	Class DataAsset*                                             EmissaryJoinedPopUpToastData;                      // 0x20(0x8)
+	Class DataAsset*                                             EmissarySunkPopUpToastData;                        // 0x28(0x8)
+	Struct EmissaryCompanyCosmetics                              CompanyCosmetics;                                  // 0x30(0x20)
+	Struct PlayerStat                                            TimeSpentAtMaxRankStat;                            // 0x50(0x4)
+	TArray<Struct PlayerStat>                                    StatsToFireOnFullEmissaryClothing;                 // 0x58(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFireOnFullEmissaryShipCustomizations;       // 0x68(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFireOnFullShipCustomizationsAndClothing;    // 0x78(0x10)
 };
 
 
@@ -387,6 +388,14 @@ struct EmissarySecuredLootOnShipNetworkEvent
 {
 public:
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct EmissaryJoinedNetworkEvent
+{
+public:
+	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
 };
 
 

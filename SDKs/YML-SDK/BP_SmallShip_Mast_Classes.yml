@@ -2,55 +2,55 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_Mast_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0xa38'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: BP_MastEmissaryFlag
+  - Name: None
     Offset: '0xa40'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: shp_flag_pennant_alliance_01_a
+  - Name: None
     Offset: '0xa48'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_flag_jolly_roger_01_a
+  - Name: None
     Offset: '0xa50'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: BP_Bell
+  - Name: None
     Offset: '0xa58'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: Ladder
+  - Name: None
     Offset: '0xa60'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: WeldedCrowsNestPhysics
+  - Name: None
     Offset: '0xa68'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: WeldedMastPhysics
+  - Name: None
     Offset: '0xa70'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_ladder_step_01_a
+  - Name: None
     Offset: '0xa78'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_small_mast_bell_support_01_a
+  - Name: None
     Offset: '0xa80'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: BP_Bell1
+  - Name: None
     Offset: '0xa88'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: BP_ShipFlagCustomizationChest
+  - Name: None
     Offset: '0xa90'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: CrowsNest
+  - Name: None
     Offset: '0xa98'
     Size: '0x8'
     Type: Class StaticMeshComponent*

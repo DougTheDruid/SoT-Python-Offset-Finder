@@ -3023,263 +3023,263 @@ CharacterMovementComponent:
     Size: '0x4'
     Type: float
   - Name: MaxSimulationTimeStep
-    Offset: '0x2c4'
+    Offset: '0x2e8'
     Size: '0x4'
     Type: float
   - Name: MaxSimulationIterations
-    Offset: '0x2c8'
+    Offset: '0x2ec'
     Size: '0x4'
     Type: int
   - Name: MaxSmoothNetUpdateDist
-    Offset: '0x2cc'
+    Offset: '0x2f0'
     Size: '0x4'
     Type: float
   - Name: NoSmoothNetUpdateDist
-    Offset: '0x2d0'
+    Offset: '0x2f4'
     Size: '0x4'
     Type: float
   - Name: NetworkSimulatedSmoothLocationTime
-    Offset: '0x2d4'
+    Offset: '0x2f8'
     Size: '0x4'
     Type: float
   - Name: NetworkSimulatedSmoothRotationTime
-    Offset: '0x2d8'
+    Offset: '0x2fc'
     Size: '0x4'
     Type: float
   - Name: LedgeCheckThreshold
-    Offset: '0x2dc'
+    Offset: '0x300'
     Size: '0x4'
     Type: float
   - Name: JumpOutOfWaterPitch
-    Offset: '0x2e0'
+    Offset: '0x304'
     Size: '0x4'
     Type: float
   - Name: CurrentFloor
-    Offset: '0x2e4'
+    Offset: '0x308'
     Size: '0x8c'
     Type: Struct FindFloorResult
   - Name: DefaultLandMovementMode
-    Offset: '0x370'
+    Offset: '0x394'
     Size: '0x1'
     Type: byte
   - Name: DefaultWaterMovementMode
-    Offset: '0x371'
+    Offset: '0x395'
     Size: '0x1'
     Type: byte
   - Name: GroundMovementMode
-    Offset: '0x372'
+    Offset: '0x396'
     Size: '0x1'
     Type: byte
   - Name: bMaintainHorizontalGroundVelocity
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bImpartBaseVelocityX
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bImpartBaseVelocityY
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bImpartBaseVelocityZ
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bImpartBaseAngularVelocity
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bJustTeleported
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bNetworkUpdateReceived
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bBasedMovementUpdateReceived
-    Offset: '0x374'
+    Offset: '0x398'
     Size: '0x1'
     Type: bool
   - Name: bMovementUpdateReceived
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bNetworkMovementModeChanged
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bNotifyApex
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bCheatFlying
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bWantsToCrouch
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bCrouchMaintainsBaseLocation
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bIgnoreBaseRotation
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bFastAttachedMove
-    Offset: '0x375'
+    Offset: '0x399'
     Size: '0x1'
     Type: bool
   - Name: bAlwaysCheckFloor
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bUseFlatBaseForFloorChecks
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bPerformingJumpOff
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bWantsToLeaveNavWalking
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bUseRVOAvoidance
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bRequestedMoveUseAcceleration
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bPreventSimulatedFloorChecks
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bPreventNavMeshFalling
-    Offset: '0x376'
+    Offset: '0x39a'
     Size: '0x1'
     Type: bool
   - Name: bHasRequestedVelocity
-    Offset: '0x377'
+    Offset: '0x39b'
     Size: '0x1'
     Type: bool
   - Name: bRequestedMoveWithMaxSpeed
-    Offset: '0x377'
+    Offset: '0x39b'
     Size: '0x1'
     Type: bool
   - Name: bWasAvoidanceUpdated
-    Offset: '0x377'
+    Offset: '0x39b'
     Size: '0x1'
     Type: bool
   - Name: bProjectNavMeshWalking
-    Offset: '0x377'
+    Offset: '0x39b'
     Size: '0x1'
     Type: bool
   - Name: SmoothingClientPositionTolerance
-    Offset: '0x38c'
-    Size: '0x4'
-    Type: float
-  - Name: AvoidanceConsiderationRadius
-    Offset: '0x390'
-    Size: '0x4'
-    Type: float
-  - Name: RequestedVelocity
-    Offset: '0x394'
-    Size: '0xc'
-    Type: Struct Vector
-  - Name: AvoidanceUID
-    Offset: '0x3a0'
-    Size: '0x4'
-    Type: int
-  - Name: AvoidanceGroup
-    Offset: '0x3a4'
-    Size: '0x4'
-    Type: Struct NavAvoidanceMask
-  - Name: GroupsToAvoid
-    Offset: '0x3a8'
-    Size: '0x4'
-    Type: Struct NavAvoidanceMask
-  - Name: GroupsToIgnore
-    Offset: '0x3ac'
-    Size: '0x4'
-    Type: Struct NavAvoidanceMask
-  - Name: AvoidanceWeight
     Offset: '0x3b0'
     Size: '0x4'
     Type: float
-  - Name: PendingLaunchVelocity
+  - Name: AvoidanceConsiderationRadius
     Offset: '0x3b4'
+    Size: '0x4'
+    Type: float
+  - Name: RequestedVelocity
+    Offset: '0x3b8'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: AvoidanceUID
+    Offset: '0x3c4'
+    Size: '0x4'
+    Type: int
+  - Name: AvoidanceGroup
+    Offset: '0x3c8'
+    Size: '0x4'
+    Type: Struct NavAvoidanceMask
+  - Name: GroupsToAvoid
+    Offset: '0x3cc'
+    Size: '0x4'
+    Type: Struct NavAvoidanceMask
+  - Name: GroupsToIgnore
+    Offset: '0x3d0'
+    Size: '0x4'
+    Type: Struct NavAvoidanceMask
+  - Name: AvoidanceWeight
+    Offset: '0x3d4'
+    Size: '0x4'
+    Type: float
+  - Name: PendingLaunchVelocity
+    Offset: '0x3d8'
     Size: '0xc'
     Type: Struct Vector
   - Name: NavMeshProjectionInterval
-    Offset: '0x458'
+    Offset: '0x480'
     Size: '0x4'
     Type: float
   - Name: NavMeshProjectionTimer
-    Offset: '0x45c'
+    Offset: '0x484'
     Size: '0x4'
     Type: float
   - Name: bUseNavMeshProjectionTimeModifier
-    Offset: '0x460'
+    Offset: '0x488'
     Size: '0x1'
     Type: bool
   - Name: MaxNavMeshProjectionInterval
-    Offset: '0x464'
+    Offset: '0x48c'
     Size: '0x4'
     Type: float
   - Name: NavMeshProjectionInterpSpeed
-    Offset: '0x46c'
+    Offset: '0x494'
     Size: '0x4'
     Type: float
   - Name: bUsePlaneBasedNavMeshProjectionInterpSystem
-    Offset: '0x470'
+    Offset: '0x498'
     Size: '0x1'
     Type: bool
   - Name: MaxAllowedZOffsetFromCurrentPlane
-    Offset: '0x474'
-    Size: '0x4'
-    Type: float
-  - Name: MaxZDiffFromPrevPlane
-    Offset: '0x478'
-    Size: '0x4'
-    Type: float
-  - Name: NavMeshProjectionHeightScaleUp
-    Offset: '0x498'
-    Size: '0x4'
-    Type: float
-  - Name: NavMeshProjectionHeightScaleDown
     Offset: '0x49c'
     Size: '0x4'
     Type: float
-  - Name: UseControllerRotationInNavWalkingMoveComponent
+  - Name: MaxZDiffFromPrevPlane
     Offset: '0x4a0'
+    Size: '0x4'
+    Type: float
+  - Name: NavMeshProjectionHeightScaleUp
+    Offset: '0x4c0'
+    Size: '0x4'
+    Type: float
+  - Name: NavMeshProjectionHeightScaleDown
+    Offset: '0x4c4'
+    Size: '0x4'
+    Type: float
+  - Name: UseControllerRotationInNavWalkingMoveComponent
+    Offset: '0x4c8'
     Size: '0x1'
     Type: bool
   - Name: PreClothComponentTick
-    Offset: '0x4a8'
+    Offset: '0x4d0'
     Size: '0x50'
     Type: Struct CharacterMovementComponentPreClothTickFunction
   - Name: MinTimeBetweenTimeStampResets
-    Offset: '0x50c'
+    Offset: '0x534'
     Size: '0x4'
     Type: float
   - Name: RootMotionParams
-    Offset: '0x510'
+    Offset: '0x540'
     Size: '0x40'
     Type: Struct RootMotionMovementParams
   - Name: bWasSimulatingRootMotion
-    Offset: '0x550'
+    Offset: '0x580'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x400'
-  FullSize: '0x560'
+  ClassSize: '0x430'
+  FullSize: '0x590'
   InheritedSize: '0x160'
   Super: PawnMovementComponent
 CheatManager:
@@ -3323,12 +3323,12 @@ ChildActorComponent:
 ChildConnection:
   Attributes:
   - Name: Parent
-    Offset: '0x34588'
+    Offset: '0x34590'
     Size: '0x8'
     Type: Class NetConnection*
   ClassSize: '0x8'
-  FullSize: '0x34590'
-  InheritedSize: '0x34588'
+  FullSize: '0x34598'
+  InheritedSize: '0x34590'
   Super: NetConnection
 ClientOnlyTestActor:
   Attributes: []
@@ -3819,8 +3819,8 @@ DeformablesBlueprintFunctionLibrary:
 DemoNetConnection:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x34598'
-  InheritedSize: '0x34588'
+  FullSize: '0x345a0'
+  InheritedSize: '0x34590'
   Super: NetConnection
 DemoNetDriver:
   Attributes: []
@@ -12989,11 +12989,11 @@ NetConnection:
     Size: '0x4'
     Type: int
   - Name: DeferredCloseChannels
-    Offset: '0x344c0'
+    Offset: '0x344c8'
     Size: '0x10'
     Type: TArray<class Channel*>
-  ClassSize: '0x34540'
-  FullSize: '0x34588'
+  ClassSize: '0x34548'
+  FullSize: '0x34590'
   InheritedSize: '0x48'
   Super: Player
 NetDriver:
@@ -14554,8 +14554,12 @@ ParticleModuleLocationEmitter:
     Offset: '0x9c'
     Size: '0x4'
     Type: float
-  ClassSize: '0x50'
-  FullSize: '0xa0'
+  - Name: MissingParentParticlesBehaviour
+    Offset: '0xa0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x58'
+  FullSize: '0xa8'
   InheritedSize: '0x50'
   Super: ParticleModuleLocationBase
 ParticleModuleLocationEmitterDirect:
@@ -15482,84 +15486,80 @@ ParticleModuleRequired:
     Offset: '0x258'
     Size: '0x1'
     Type: byte
-  - Name: CutoutTexture
-    Offset: '0x260'
-    Size: '0x8'
-    Type: Class Texture2D*
   - Name: BoundingMode
-    Offset: '0x268'
+    Offset: '0x259'
     Size: '0x1'
     Type: byte
   - Name: OpacitySourceMode
-    Offset: '0x269'
+    Offset: '0x25a'
     Size: '0x1'
     Type: byte
   - Name: AlphaThreshold
-    Offset: '0x26c'
+    Offset: '0x25c'
     Size: '0x4'
     Type: float
   - Name: SafeMarginSize
-    Offset: '0x270'
+    Offset: '0x260'
     Size: '0x4'
     Type: float
   - Name: NamedMaterialOverrides
-    Offset: '0x278'
+    Offset: '0x268'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: bUseDistanceFading
-    Offset: '0x288'
+    Offset: '0x278'
     Size: '0x1'
     Type: bool
   - Name: FarStopFade
-    Offset: '0x28c'
+    Offset: '0x27c'
     Size: '0x4'
     Type: float
   - Name: FarStartFade
-    Offset: '0x290'
+    Offset: '0x280'
     Size: '0x4'
     Type: float
   - Name: NearStartFade
-    Offset: '0x294'
+    Offset: '0x284'
     Size: '0x4'
     Type: float
   - Name: NearStopFade
-    Offset: '0x298'
+    Offset: '0x288'
     Size: '0x4'
     Type: float
   - Name: ApplyFOVDistanceScaling
-    Offset: '0x29c'
+    Offset: '0x28c'
     Size: '0x1'
     Type: bool
   - Name: bUseDistanceSizeScale
-    Offset: '0x29c'
+    Offset: '0x28c'
     Size: '0x1'
     Type: bool
   - Name: FarScaleFactor
-    Offset: '0x2a0'
+    Offset: '0x290'
     Size: '0x4'
     Type: float
   - Name: FarScaleEndDistance
-    Offset: '0x2a4'
+    Offset: '0x294'
     Size: '0x4'
     Type: float
   - Name: FarScaleBeginDistance
-    Offset: '0x2a8'
+    Offset: '0x298'
     Size: '0x4'
     Type: float
   - Name: NearScaleBeginDistance
-    Offset: '0x2ac'
+    Offset: '0x29c'
     Size: '0x4'
     Type: float
   - Name: NearScaleEndDistance
-    Offset: '0x2b0'
+    Offset: '0x2a0'
     Size: '0x4'
     Type: float
   - Name: NearScaleFactor
-    Offset: '0x2b4'
+    Offset: '0x2a4'
     Size: '0x4'
     Type: float
-  ClassSize: '0x2a8'
-  FullSize: '0x2f8'
+  ClassSize: '0x298'
+  FullSize: '0x2e8'
   InheritedSize: '0x50'
   Super: ParticleModule
 ParticleModuleRotateRotationAxis:
@@ -16154,46 +16154,46 @@ ParticleModuleTypeDataGpu:
   Attributes:
   - Name: EmitterInfo
     Offset: '0x50'
-    Size: '0x2a0'
+    Size: '0x2b0'
     Type: Struct GPUSpriteEmitterInfo
   - Name: ResourceData
-    Offset: '0x2f0'
+    Offset: '0x300'
     Size: '0xa00'
     Type: Struct GPUSpriteResourceData
   - Name: CameraMotionBlurAmount
-    Offset: '0xcf0'
-    Size: '0x4'
-    Type: float
-  - Name: bClearExistingParticlesOnInit
-    Offset: '0xcf4'
-    Size: '0x1'
-    Type: bool
-  - Name: AlphaCullingAggressiveness
-    Offset: '0xcf8'
-    Size: '0x1'
-    Type: byte
-  - Name: bOverrideAlphaThreshold
-    Offset: '0xcfc'
-    Size: '0x1'
-    Type: bool
-  - Name: OverriddenAlphaThreshold
     Offset: '0xd00'
     Size: '0x4'
     Type: float
-  - Name: InteractionWithKillPlane
+  - Name: bClearExistingParticlesOnInit
     Offset: '0xd04'
+    Size: '0x1'
+    Type: bool
+  - Name: AlphaCullingAggressiveness
+    Offset: '0xd08'
+    Size: '0x1'
+    Type: byte
+  - Name: bOverrideAlphaThreshold
+    Offset: '0xd0c'
+    Size: '0x1'
+    Type: bool
+  - Name: OverriddenAlphaThreshold
+    Offset: '0xd10'
+    Size: '0x4'
+    Type: float
+  - Name: InteractionWithKillPlane
+    Offset: '0xd14'
     Size: '0x1'
     Type: byte
   - Name: KillPlanePointLocation
-    Offset: '0xd05'
+    Offset: '0xd15'
     Size: '0x1'
     Type: byte
   - Name: FadingTimeWhenKilled
-    Offset: '0xd08'
+    Offset: '0xd18'
     Size: '0x4'
     Type: float
-  ClassSize: '0xcc0'
-  FullSize: '0xd10'
+  ClassSize: '0xcd0'
+  FullSize: '0xd20'
   InheritedSize: '0x50'
   Super: ParticleModuleTypeDataBase
 ParticleModuleTypeDataMesh:
@@ -19812,16 +19812,8 @@ SkeletalMeshActor:
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class PhysicsAsset*
-  - Name: ReplicatedMaterial0
-    Offset: '0x3f0'
-    Size: '0x8'
-    Type: Class MaterialInterface*
-  - Name: ReplicatedMaterial1
-    Offset: '0x3f8'
-    Size: '0x8'
-    Type: Class MaterialInterface*
-  ClassSize: '0x40'
-  FullSize: '0x408'
+  ClassSize: '0x30'
+  FullSize: '0x3f8'
   InheritedSize: '0x3c8'
   Super: Actor
 SkeletalMeshComponent:

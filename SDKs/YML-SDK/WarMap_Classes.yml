@@ -22,7 +22,7 @@ StartWarMapVoyageVoteConsumer:
     Offset: '0x1f8'
     Size: '0x38'
     Type: Struct FText
-  - Name: WarMapVotingCantVoteReasonNearbyEnemyFactionShip
+  - Name: WarMapVotingCantVoteReasonNearbyRivalShip
     Offset: '0x230'
     Size: '0x38'
     Type: Struct FText

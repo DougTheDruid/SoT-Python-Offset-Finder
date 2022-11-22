@@ -3,10 +3,10 @@
 BP_HumanoidActionStateCreatorDefinition_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0xa00'
+    Offset: '0xa28'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0xa08'
-  InheritedSize: '0xa00'
+  FullSize: '0xa30'
+  InheritedSize: '0xa28'
   Super: HumanoidActionStateCreatorDefinition

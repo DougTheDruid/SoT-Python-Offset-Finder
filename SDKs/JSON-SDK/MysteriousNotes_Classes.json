@@ -172,27 +172,27 @@
   },
   "PlayerMysteriousNoteComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x250",
+    "FullSize": "0x258",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x188",
+    "ClassSize": "0x190",
     "Attributes": [
+      {
+        "Name": "CinematicPlayed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
       {
         "Name": "NoteData",
         "Type": "Struct ClientNoteData",
         "Size": "0x18",
-        "Offset": "0xd0"
+        "Offset": "0x1c0"
       },
       {
         "Name": "BeenPossessed",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "CinematicPlayed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe9"
+        "Offset": "0x1d8"
       }
     ]
   },

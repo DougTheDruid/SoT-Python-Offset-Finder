@@ -38,7 +38,7 @@ BP_FlyingCreature_C:
     Offset: '0x454'
     Size: '0x4'
     Type: float
-  - Name: CirclingSpeed
+  - Name: circlingSpeed
     Offset: '0x458'
     Size: '0x4'
     Type: float
@@ -58,7 +58,7 @@ BP_FlyingCreature_C:
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: FlockSpeed
+  - Name: flockSpeed
     Offset: '0x46c'
     Size: '0x4'
     Type: float
@@ -70,7 +70,7 @@ BP_FlyingCreature_C:
     Offset: '0x478'
     Size: '0x4'
     Type: float
-  - Name: BirdSpeed
+  - Name: birdSpeed
     Offset: '0x47c'
     Size: '0x4'
     Type: float
@@ -94,7 +94,7 @@ BP_FlyingCreature_C:
     Offset: '0x494'
     Size: '0x4'
     Type: float
-  - Name: Smoothness
+  - Name: smoothness
     Offset: '0x498'
     Size: '0x4'
     Type: float

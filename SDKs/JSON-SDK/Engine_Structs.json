@@ -16589,7 +16589,7 @@
     ]
   },
   "GPUSpriteEmitterInfo": {
-    "ClassSize": "0x2a0",
+    "ClassSize": "0x2b0",
     "Attributes": [
       {
         "Name": "RequiredModule",
@@ -16832,10 +16832,16 @@
         "Offset": "0x28c"
       },
       {
+        "Name": "MissingParentParticlesBehaviour",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x294"
+      },
+      {
         "Name": "bKillParticlesOnFFTWater",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x294"
+        "Offset": "0x298"
       }
     ]
   },

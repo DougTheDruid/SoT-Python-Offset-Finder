@@ -7,11 +7,21 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
+struct VideoPlaybackStateEvent
+{
+public:
+	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	byte                                                         State;                                             // 0x10(0x1)
+};
+
+
+// Size 0x28
 struct VideoSubtitleEvent
 {
 public:
-	Struct FString                                               SubtitleString;                                    // 0x0(0x10)
-	double                                                       SubtitleDuration;                                  // 0x10(0x8)
+	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	Struct FString                                               SubtitleString;                                    // 0x10(0x10)
+	double                                                       SubtitleDuration;                                  // 0x20(0x8)
 };
 
 

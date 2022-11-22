@@ -1,9 +1,9 @@
 {
   "BP_PromptCoordinator_Hourglass_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x248",
+    "FullSize": "0x229",
     "InheritedSize": "0x118",
-    "ClassSize": "0x130",
+    "ClassSize": "0x111",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -48,10 +48,16 @@
         "Offset": "0x1d8"
       },
       {
-        "Name": "PromptHourglassTutorial2",
-        "Type": "Struct PrioritisedPromptWithHandle",
-        "Size": "0x68",
+        "Name": "HandleChoseFaction",
+        "Type": "Struct ObjectMessagingHandle",
+        "Size": "0x48",
         "Offset": "0x1e0"
+      },
+      {
+        "Name": "FactionChosen",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x228"
       }
     ]
   },

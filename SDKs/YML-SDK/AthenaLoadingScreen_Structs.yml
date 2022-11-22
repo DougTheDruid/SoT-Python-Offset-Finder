@@ -30,6 +30,48 @@ EventAthenaLoadingScreenStateResponse:
     Size: '0x1'
     Type: bool
   ClassSize: '0x1'
+SlateLoadingScreenAdvancedTipDescription:
+  Attributes:
+  - Name: Text
+    Offset: '0x0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: Centre
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: TopEdge
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: Width
+    Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: Footer
+    Offset: '0x44'
+    Size: '0x4'
+    Type: float
+  - Name: Font
+    Offset: '0x48'
+    Size: '0x40'
+    Type: Struct SlateFontInfo
+  - Name: Colour
+    Offset: '0x88'
+    Size: '0x30'
+    Type: Struct SlateColor
+  - Name: LineHeightPercentage
+    Offset: '0xb8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc0'
+SlateLoadingScreenAdvancedTipsParams:
+  Attributes:
+  - Name: TipDescriptions
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Struct SlateLoadingScreenAdvancedTipDescription>
+  ClassSize: '0x10'
 SlateLoadingScreenImageParams:
   Attributes:
   - Name: ImageAsset
@@ -40,4 +82,8 @@ SlateLoadingScreenImageParams:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<Struct FText>
-  ClassSize: '0x20'
+  - Name: AdvancedTips
+    Offset: '0x20'
+    Size: '0x10'
+    Type: Struct SlateLoadingScreenAdvancedTipsParams
+  ClassSize: '0x30'

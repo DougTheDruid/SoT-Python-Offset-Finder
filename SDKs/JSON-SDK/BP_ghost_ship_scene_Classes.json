@@ -28,42 +28,6 @@
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x3e0"
-      },
-      {
-        "Name": "None",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "None",
-        "Type": "TArray<class MeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "None",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "None",
-        "Type": "TArray<class ParticleSystemComponent*>",
-        "Size": "0x10",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "None",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "None",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x424"
       }
     ]
   },

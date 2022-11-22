@@ -505,17 +505,17 @@ public:
 class AICreatureCharacterMovementComponent: public CharacterMovementComponent
 {
 public:
-	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x558(0x10)
-	float                                                        BlendSpeed;                                        // 0x568(0x4)
-	bool                                                         bCreateDisturbance;                                // 0x56c(0x1)
-	float                                                        DisturbanceSize;                                   // 0x570(0x4)
-	float                                                        DisturbanceVelocityScale;                          // 0x574(0x4)
-	float                                                        OrientationBlendSpeed;                             // 0x578(0x4)
-	float                                                        OrientationMaxPitch;                               // 0x57c(0x4)
-	float                                                        UpdateOrientationFrequency;                        // 0x580(0x4)
-	float                                                        MinStairAngle;                                     // 0x584(0x4)
-	float                                                        MinStairVelocityDampen;                            // 0x588(0x4)
-	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x590(0x10)
+	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x588(0x10)
+	float                                                        BlendSpeed;                                        // 0x598(0x4)
+	bool                                                         bCreateDisturbance;                                // 0x59c(0x1)
+	float                                                        DisturbanceSize;                                   // 0x5a0(0x4)
+	float                                                        DisturbanceVelocityScale;                          // 0x5a4(0x4)
+	float                                                        OrientationBlendSpeed;                             // 0x5a8(0x4)
+	float                                                        OrientationMaxPitch;                               // 0x5ac(0x4)
+	float                                                        UpdateOrientationFrequency;                        // 0x5b0(0x4)
+	float                                                        MinStairAngle;                                     // 0x5b4(0x4)
+	float                                                        MinStairVelocityDampen;                            // 0x5b8(0x4)
+	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x5c0(0x10)
 };
 
 
@@ -957,7 +957,7 @@ public:
 };
 
 
-// Size 0xd8
+// Size 0xe8
 class AthenaAIControllerParamsDataAsset: public DataAsset
 {
 public:
@@ -981,11 +981,12 @@ public:
 	Struct AthenaAIControllerHealthCustomisation                 IndividualHealthCustomisationValues;               // 0xa0(0xc)
 	TArray<Struct AthenaAIControllerParamValue>                  IndividualInitialBlackboardValues;                 // 0xb0(0x10)
 	TArray<Struct AthenaAIControllerParamValue>                  IndividualNamedControllerParams;                   // 0xc0(0x10)
-	TArray<Struct AthenaAIControllerWeightedRangesParamValue>    IndividualNamedWeightedRangesControllerParams;     // 0xd0(0x10)
-	TArray<Struct AthenaAIControllerSenseSettingOverride>        IndividualAIStrategySenseSettingOverrides;         // 0xe0(0x10)
-	bool                                                         IndividualOverrideCurrentTargetPerceivedNotVisibleAge; // 0xf0(0x1)
-	float                                                        IndividualCurrentTargetPerceivedNotVisibleAge;     // 0xf4(0x4)
-	struct FName                                                 FeatureName;                                       // 0xf8(0x8)
+	TArray<Struct AthenaAIControllerFeatureToggledParams>        FeatureToggleIndividualNamedParamOverrides;        // 0xd0(0x10)
+	TArray<Struct AthenaAIControllerWeightedRangesParamValue>    IndividualNamedWeightedRangesControllerParams;     // 0xe0(0x10)
+	TArray<Struct AthenaAIControllerSenseSettingOverride>        IndividualAIStrategySenseSettingOverrides;         // 0xf0(0x10)
+	bool                                                         IndividualOverrideCurrentTargetPerceivedNotVisibleAge; // 0x100(0x1)
+	float                                                        IndividualCurrentTargetPerceivedNotVisibleAge;     // 0x104(0x4)
+	struct FName                                                 FeatureName;                                       // 0x108(0x8)
 };
 
 
@@ -1043,17 +1044,17 @@ public:
 };
 
 
-// Size 0x130
+// Size 0x140
 class TaleQuestStartTinySharkExperienceStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct Vector                                                SpawnLocation;                                     // 0x80(0xc)
 	int                                                          PartIndex;                                         // 0x8c(0x4)
-	Struct TinySharkParams                                       TinySharkParams;                                   // 0x90(0xb8)
-	Class Ship*                                                  TargetShip;                                        // 0x168(0x8)
-	Class TaleQuestTinySharkExperienceTracker*                   ExperienceTracker;                                 // 0x170(0x8)
-	bool                                                         FireTinySharkVariantDefeatedStats;                 // 0x178(0x1)
-	Struct QuestVariableTinySharkExperience                      TinySharkExperience;                               // 0x180(0x30)
+	Struct TinySharkParams                                       TinySharkParams;                                   // 0x90(0xc8)
+	Class Ship*                                                  TargetShip;                                        // 0x178(0x8)
+	Class TaleQuestTinySharkExperienceTracker*                   ExperienceTracker;                                 // 0x180(0x8)
+	bool                                                         FireTinySharkVariantDefeatedStats;                 // 0x188(0x1)
+	Struct QuestVariableTinySharkExperience                      TinySharkExperience;                               // 0x190(0x30)
 };
 
 
@@ -1089,7 +1090,7 @@ public:
 };
 
 
-// Size 0x428
+// Size 0x438
 class TinySharkExperience: public Actor
 {
 public:
@@ -1100,19 +1101,19 @@ public:
 	Class AIOnDemandSpawner*                                     TinySharkSpawner;                                  // 0x490(0x8)
 	Class SharkPawn*                                             TinySharkPawn;                                     // 0x498(0x8)
 	struct FName                                                 HealthRTPC;                                        // 0x4a0(0x8)
-	Struct TinySharkParams                                       Params;                                            // 0x4b0(0xb8)
-	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x568(0x8)
-	Class Ship*                                                  TrackedShip;                                       // 0x570(0x8)
-	Struct EncounterParams                                       SightingEncounterParams;                           // 0x608(0xc)
-	Struct EncounterParams                                       CloseEncounterParams;                              // 0x614(0xc)
+	Struct TinySharkParams                                       Params;                                            // 0x4b0(0xc8)
+	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x578(0x8)
+	Class Ship*                                                  TrackedShip;                                       // 0x580(0x8)
+	Struct EncounterParams                                       SightingEncounterParams;                           // 0x618(0xc)
+	Struct EncounterParams                                       CloseEncounterParams;                              // 0x624(0xc)
 };
 
 
-// Size 0xb8
+// Size 0xc8
 class TinySharkParamsDataAsset: public DataAsset
 {
 public:
-	Struct TinySharkParams                                       Params;                                            // 0x28(0xb8)
+	Struct TinySharkParams                                       Params;                                            // 0x28(0xc8)
 };
 
 
@@ -1149,7 +1150,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x70
 class AthenaAIControllerSharedParamValuesDataAsset: public DataAsset
 {
 public:
@@ -1161,7 +1162,8 @@ public:
 	Struct AthenaAIControllerHealthCustomisation                 HealthCustomisationValues;                         // 0x48(0xc)
 	TArray<Struct AthenaAIControllerParamValue>                  InitialBlackboardValues;                           // 0x58(0x10)
 	TArray<Struct AthenaAIControllerParamValue>                  NamedControllerParams;                             // 0x68(0x10)
-	TArray<Struct AthenaAIControllerWeightedRangesParamValue>    NamedWeightedRangesControllerParams;               // 0x78(0x10)
+	TArray<Struct AthenaAIControllerFeatureToggledParams>        FeatureToggleNamedParamOverrides;                  // 0x78(0x10)
+	TArray<Struct AthenaAIControllerWeightedRangesParamValue>    NamedWeightedRangesControllerParams;               // 0x88(0x10)
 };
 
 
@@ -1169,27 +1171,27 @@ public:
 class AthenaAICharacterControllerSharedParamValuesDataAsset: public AthenaAIControllerSharedParamValuesDataAsset
 {
 public:
-	bool                                                         OverrideUseRVOAvoidance;                           // 0x88(0x1)
-	bool                                                         UseRVOAvoidance;                                   // 0x89(0x1)
-	bool                                                         OverridePrioritiseInteractablesBeforeEnemies;      // 0x8a(0x1)
-	bool                                                         PrioritiseInteractablesBeforeEnemies;              // 0x8b(0x1)
-	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0x90(0x8)
-	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x98(0x10)
-	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> ItemCategoryAIStrategyMovementPropertiesOverrides; // 0xa8(0x10)
-	Struct AthenaAICharacterCannonTargetingParams                CannonTargetingParams;                             // 0xb8(0x10)
-	TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties> WieldedItemProjectileEffectivenessProperties;      // 0xc8(0x10)
-	TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams> WieldedItemOverrideNamedControllerParams;          // 0xd8(0x10)
-	TArray<Struct AthenaAIItemParamValue>                        NamedItemParams;                                   // 0xe8(0x10)
-	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> SpawnItemDescForItemCategories;                    // 0xf8(0x10)
-	TArray<class AthenaAIAbilityParams*>                         AIAbilityParams;                                   // 0x108(0x10)
-	TArray<Struct AthenaAIEngageEnemyData>                       NonItemEngageOptions;                              // 0x118(0x10)
-	Struct StringAssetReference                                  AnimationDataOverrideAsset;                        // 0x128(0x10)
-	Struct StringAssetReference                                  CustomAnimationAsset;                              // 0x138(0x10)
-	bool                                                         OverrideNoInitialItem;                             // 0x148(0x1)
-	bool                                                         NoInitialItem;                                     // 0x149(0x1)
-	bool                                                         OverrideBeginFleeing;                              // 0x14a(0x1)
-	bool                                                         BeginFleeing;                                      // 0x14b(0x1)
-	Class EnvQuery*                                              FleeingEQS;                                        // 0x150(0x8)
+	bool                                                         OverrideUseRVOAvoidance;                           // 0x98(0x1)
+	bool                                                         UseRVOAvoidance;                                   // 0x99(0x1)
+	bool                                                         OverridePrioritiseInteractablesBeforeEnemies;      // 0x9a(0x1)
+	bool                                                         PrioritiseInteractablesBeforeEnemies;              // 0x9b(0x1)
+	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0xa0(0x8)
+	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0xa8(0x10)
+	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> ItemCategoryAIStrategyMovementPropertiesOverrides; // 0xb8(0x10)
+	Struct AthenaAICharacterCannonTargetingParams                CannonTargetingParams;                             // 0xc8(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties> WieldedItemProjectileEffectivenessProperties;      // 0xd8(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams> WieldedItemOverrideNamedControllerParams;          // 0xe8(0x10)
+	TArray<Struct AthenaAIItemParamValue>                        NamedItemParams;                                   // 0xf8(0x10)
+	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> SpawnItemDescForItemCategories;                    // 0x108(0x10)
+	TArray<class AthenaAIAbilityParams*>                         AIAbilityParams;                                   // 0x118(0x10)
+	TArray<Struct AthenaAIEngageEnemyData>                       NonItemEngageOptions;                              // 0x128(0x10)
+	Struct StringAssetReference                                  AnimationDataOverrideAsset;                        // 0x138(0x10)
+	Struct StringAssetReference                                  CustomAnimationAsset;                              // 0x148(0x10)
+	bool                                                         OverrideNoInitialItem;                             // 0x158(0x1)
+	bool                                                         NoInitialItem;                                     // 0x159(0x1)
+	bool                                                         OverrideBeginFleeing;                              // 0x15a(0x1)
+	bool                                                         BeginFleeing;                                      // 0x15b(0x1)
+	Class EnvQuery*                                              FleeingEQS;                                        // 0x160(0x8)
 };
 
 
@@ -1197,30 +1199,30 @@ public:
 class AthenaAICharacterControllerParamsDataAsset: public AthenaAIControllerParamsDataAsset
 {
 public:
-	bool                                                         IndividualOverrideUseRVOAvoidance;                 // 0x100(0x1)
-	bool                                                         IndividualUseRVOAvoidance;                         // 0x101(0x1)
-	bool                                                         IndividualOverridePrioritiseInteractablesBeforeEnemies; // 0x102(0x1)
-	bool                                                         IndividualPrioritiseInteractablesBeforeEnemies;    // 0x103(0x1)
-	Class CurveFloat*                                            IndividualDistanceInMToCannonShotHitChanceCurve;   // 0x108(0x8)
-	TArray<Struct AIStrategyMovementProperties>                  IndividualAIStrategyMovementProperties;            // 0x110(0x10)
-	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> IndividualItemCategoryAIStrategyMovementPropertiesOverrides; // 0x120(0x10)
-	Struct AthenaAICharacterCannonTargetingParams                IndividualCannonTargetingParams;                   // 0x130(0x10)
-	TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties> IndividualWieldedItemProjectileEffectivenessProperties; // 0x140(0x10)
-	TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams> IndividualWieldedItemOverrideNamedControllerParams; // 0x150(0x10)
-	TArray<Struct AthenaAIItemParamValue>                        IndividualNamedItemParams;                         // 0x160(0x10)
-	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> IndividualSpawnItemDescForItemCategories;          // 0x170(0x10)
-	bool                                                         UseDamageBasedAbilityStages;                       // 0x180(0x1)
-	TArray<Float HealthStages>                                   HealthStages;                                      // 0x188(0x10)
-	TArray<Struct AthenaAIAbilityDamageStage>                    IndividualDamageBasedAIAbilityStages;              // 0x198(0x10)
-	TArray<class AthenaAIAbilityParams*>                         IndividualAIAbilityParams;                         // 0x1a8(0x10)
-	TArray<Struct AthenaAIEngageEnemyData>                       IndividualNonItemEngageOptions;                    // 0x1b8(0x10)
-	Struct StringAssetReference                                  IndividualAnimationDataOverrideAsset;              // 0x1c8(0x10)
-	Struct StringAssetReference                                  IndividualCustomAnimationAsset;                    // 0x1d8(0x10)
-	bool                                                         IndividualOverrideNoInitialItem;                   // 0x1e8(0x1)
-	bool                                                         IndividualNoInitialItem;                           // 0x1e9(0x1)
-	bool                                                         IndividualOverrideBeginFleeing;                    // 0x1ea(0x1)
-	bool                                                         IndividualBeginFleeing;                            // 0x1eb(0x1)
-	Class EnvQuery*                                              IndividualFleeingEQS;                              // 0x1f0(0x8)
+	bool                                                         IndividualOverrideUseRVOAvoidance;                 // 0x110(0x1)
+	bool                                                         IndividualUseRVOAvoidance;                         // 0x111(0x1)
+	bool                                                         IndividualOverridePrioritiseInteractablesBeforeEnemies; // 0x112(0x1)
+	bool                                                         IndividualPrioritiseInteractablesBeforeEnemies;    // 0x113(0x1)
+	Class CurveFloat*                                            IndividualDistanceInMToCannonShotHitChanceCurve;   // 0x118(0x8)
+	TArray<Struct AIStrategyMovementProperties>                  IndividualAIStrategyMovementProperties;            // 0x120(0x10)
+	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> IndividualItemCategoryAIStrategyMovementPropertiesOverrides; // 0x130(0x10)
+	Struct AthenaAICharacterCannonTargetingParams                IndividualCannonTargetingParams;                   // 0x140(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties> IndividualWieldedItemProjectileEffectivenessProperties; // 0x150(0x10)
+	TArray<Struct AthenaAICharacterControllerItemCategoryNamedParams> IndividualWieldedItemOverrideNamedControllerParams; // 0x160(0x10)
+	TArray<Struct AthenaAIItemParamValue>                        IndividualNamedItemParams;                         // 0x170(0x10)
+	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> IndividualSpawnItemDescForItemCategories;          // 0x180(0x10)
+	bool                                                         UseDamageBasedAbilityStages;                       // 0x190(0x1)
+	TArray<Float HealthStages>                                   HealthStages;                                      // 0x198(0x10)
+	TArray<Struct AthenaAIAbilityDamageStage>                    IndividualDamageBasedAIAbilityStages;              // 0x1a8(0x10)
+	TArray<class AthenaAIAbilityParams*>                         IndividualAIAbilityParams;                         // 0x1b8(0x10)
+	TArray<Struct AthenaAIEngageEnemyData>                       IndividualNonItemEngageOptions;                    // 0x1c8(0x10)
+	Struct StringAssetReference                                  IndividualAnimationDataOverrideAsset;              // 0x1d8(0x10)
+	Struct StringAssetReference                                  IndividualCustomAnimationAsset;                    // 0x1e8(0x10)
+	bool                                                         IndividualOverrideNoInitialItem;                   // 0x1f8(0x1)
+	bool                                                         IndividualNoInitialItem;                           // 0x1f9(0x1)
+	bool                                                         IndividualOverrideBeginFleeing;                    // 0x1fa(0x1)
+	bool                                                         IndividualBeginFleeing;                            // 0x1fb(0x1)
+	Class EnvQuery*                                              IndividualFleeingEQS;                              // 0x200(0x8)
 };
 
 
@@ -2532,23 +2534,23 @@ public:
 class FaunaAIContollerParamsDataAsset: public AthenaAIControllerParamsDataAsset
 {
 public:
-	Struct WeightedProbabilityRange                              Courage;                                           // 0x100(0x20)
-	TArray<Struct CarriedItemThreatOverride>                     CarriedItemThreatOverrides;                        // 0x120(0x10)
-	bool                                                         ThreatenedBySightOfCarrier;                        // 0x130(0x1)
-	TArray<Struct HearingThreat>                                 KnownHearingDangers;                               // 0x138(0x10)
-	float                                                        CarrierHearingThreatSpeedThreshold;                // 0x148(0x4)
-	float                                                        DamageThreat;                                      // 0x14c(0x4)
-	Class CurveFloat*                                            CharacterDistanceToDangerRatingCurve;              // 0x150(0x8)
-	Class CurveFloat*                                            DangerRatingToAgitationDurationCurve;              // 0x158(0x8)
-	float                                                        TimeToBecomeAgitatedMin;                           // 0x160(0x4)
-	float                                                        TimeToBecomeAgitatedMax;                           // 0x164(0x4)
-	float                                                        AgitationDurationVariance;                         // 0x168(0x4)
-	int                                                          AlertThreshold;                                    // 0x16c(0x4)
-	int                                                          FleeThreshold;                                     // 0x170(0x4)
-	float                                                        TimeToBecomeCalm;                                  // 0x174(0x4)
-	float                                                        CalmCooldownTime;                                  // 0x178(0x4)
-	float                                                        MaxDistanceFromLeaderForIdle;                      // 0x17c(0x4)
-	Class CurveFloat*                                            DistanceToLeaderPatrolChanceCurve;                 // 0x180(0x8)
+	Struct WeightedProbabilityRange                              Courage;                                           // 0x110(0x20)
+	TArray<Struct CarriedItemThreatOverride>                     CarriedItemThreatOverrides;                        // 0x130(0x10)
+	bool                                                         ThreatenedBySightOfCarrier;                        // 0x140(0x1)
+	TArray<Struct HearingThreat>                                 KnownHearingDangers;                               // 0x148(0x10)
+	float                                                        CarrierHearingThreatSpeedThreshold;                // 0x158(0x4)
+	float                                                        DamageThreat;                                      // 0x15c(0x4)
+	Class CurveFloat*                                            CharacterDistanceToDangerRatingCurve;              // 0x160(0x8)
+	Class CurveFloat*                                            DangerRatingToAgitationDurationCurve;              // 0x168(0x8)
+	float                                                        TimeToBecomeAgitatedMin;                           // 0x170(0x4)
+	float                                                        TimeToBecomeAgitatedMax;                           // 0x174(0x4)
+	float                                                        AgitationDurationVariance;                         // 0x178(0x4)
+	int                                                          AlertThreshold;                                    // 0x17c(0x4)
+	int                                                          FleeThreshold;                                     // 0x180(0x4)
+	float                                                        TimeToBecomeCalm;                                  // 0x184(0x4)
+	float                                                        CalmCooldownTime;                                  // 0x188(0x4)
+	float                                                        MaxDistanceFromLeaderForIdle;                      // 0x18c(0x4)
+	Class CurveFloat*                                            DistanceToLeaderPatrolChanceCurve;                 // 0x190(0x8)
 };
 
 
@@ -3617,8 +3619,8 @@ public:
 class EnvQueryGenerator_AIRegionLocations: public EnvQueryGenerator
 {
 public:
-	bool                                                         UseOverrideSpawnType;                              // 0x50(0x1)
-	struct FName                                                 OverrideSpawnType;                                 // 0x54(0x8)
+	bool                                                         UseOverrideSpawnType;                              // 0x58(0x1)
+	struct FName                                                 OverrideSpawnType;                                 // 0x5c(0x8)
 };
 
 
@@ -3626,7 +3628,7 @@ public:
 class EnvQueryGenerator_FromContext: public EnvQueryGenerator
 {
 public:
-	class                                                        Context;                                           // 0x50(0x8)
+	class                                                        Context;                                           // 0x58(0x8)
 };
 
 
@@ -3634,14 +3636,14 @@ public:
 class EnvQueryGenerator_Line: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	class                                                        FromContext;                                       // 0x90(0x8)
-	class                                                        ToContext;                                         // 0x98(0x8)
-	Struct AIDataProviderFloatValue                              PointSpacing;                                      // 0xa0(0x30)
-	Struct AIDataProviderIntValue                                NumExtraPairsOfParallelLines;                      // 0xd0(0x30)
-	Struct AIDataProviderFloatValue                              ParallelLineSpacing;                               // 0x100(0x30)
-	float                                                        MaxValidLineLength;                                // 0x130(0x4)
-	bool                                                         ForceIncludeEndPoint;                              // 0x134(0x1)
-	bool                                                         ProjectPointsToWaterSurface;                       // 0x135(0x1)
+	class                                                        FromContext;                                       // 0x98(0x8)
+	class                                                        ToContext;                                         // 0xa0(0x8)
+	Struct AIDataProviderFloatValue                              PointSpacing;                                      // 0xa8(0x30)
+	Struct AIDataProviderIntValue                                NumExtraPairsOfParallelLines;                      // 0xd8(0x30)
+	Struct AIDataProviderFloatValue                              ParallelLineSpacing;                               // 0x108(0x30)
+	float                                                        MaxValidLineLength;                                // 0x138(0x4)
+	bool                                                         ForceIncludeEndPoint;                              // 0x13c(0x1)
+	bool                                                         ProjectPointsToWaterSurface;                       // 0x13d(0x1)
 };
 
 
@@ -3649,7 +3651,7 @@ public:
 class EnvQueryGenerator_PointsAtContext: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	class                                                        Context;                                           // 0x90(0x8)
+	class                                                        Context;                                           // 0x98(0x8)
 };
 
 
@@ -3657,13 +3659,13 @@ public:
 class EnvQueryGenerator_Sphere: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	TArray<Struct AIDataProviderFloatValue>                      Radiuses;                                          // 0x90(0x10)
-	Struct AIDataProviderIntValue                                NumberOfVerticalCircles;                           // 0xa0(0x30)
-	Struct AIDataProviderIntValue                                NumberOfHorizontalCircles;                         // 0xd0(0x30)
-	bool                                                         DefineFirstPointDirection;                         // 0x100(0x1)
-	Struct EnvDirection                                          FirstPointDirection;                               // 0x108(0x20)
-	class                                                        Centre;                                            // 0x128(0x8)
-	Struct AIDataProviderFloatValue                              ZOffsetFromCentre;                                 // 0x130(0x30)
+	TArray<Struct AIDataProviderFloatValue>                      Radiuses;                                          // 0x98(0x10)
+	Struct AIDataProviderIntValue                                NumberOfVerticalCircles;                           // 0xa8(0x30)
+	Struct AIDataProviderIntValue                                NumberOfHorizontalCircles;                         // 0xd8(0x30)
+	bool                                                         DefineFirstPointDirection;                         // 0x108(0x1)
+	Struct EnvDirection                                          FirstPointDirection;                               // 0x110(0x20)
+	class                                                        Centre;                                            // 0x130(0x8)
+	Struct AIDataProviderFloatValue                              ZOffsetFromCentre;                                 // 0x138(0x30)
 };
 
 
@@ -3671,16 +3673,16 @@ public:
 class EnvQueryGenerator_WaterArc: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	class                                                        Origin;                                            // 0x90(0x8)
-	Struct AIDataProviderIntValue                                NumberOfArcsToGenerate;                            // 0x98(0x30)
-	Struct AIDataProviderFloatValue                              MinArcRadius;                                      // 0xc8(0x30)
-	Struct AIDataProviderFloatValue                              MaxArcRadius;                                      // 0xf8(0x30)
-	Struct AIDataProviderFloatValue                              MinArcTiltDegrees;                                 // 0x128(0x30)
-	Struct AIDataProviderFloatValue                              MaxArcTiltDegrees;                                 // 0x158(0x30)
-	Struct AIDataProviderFloatValue                              MinArcPercentage;                                  // 0x188(0x30)
-	Struct AIDataProviderFloatValue                              MaxArcPercentage;                                  // 0x1b8(0x30)
-	bool                                                         IncludeDirectArcToTarget;                          // 0x1e8(0x1)
-	class                                                        DirectArcTarget;                                   // 0x1f0(0x8)
+	class                                                        Origin;                                            // 0x98(0x8)
+	Struct AIDataProviderIntValue                                NumberOfArcsToGenerate;                            // 0xa0(0x30)
+	Struct AIDataProviderFloatValue                              MinArcRadius;                                      // 0xd0(0x30)
+	Struct AIDataProviderFloatValue                              MaxArcRadius;                                      // 0x100(0x30)
+	Struct AIDataProviderFloatValue                              MinArcTiltDegrees;                                 // 0x130(0x30)
+	Struct AIDataProviderFloatValue                              MaxArcTiltDegrees;                                 // 0x160(0x30)
+	Struct AIDataProviderFloatValue                              MinArcPercentage;                                  // 0x190(0x30)
+	Struct AIDataProviderFloatValue                              MaxArcPercentage;                                  // 0x1c0(0x30)
+	bool                                                         IncludeDirectArcToTarget;                          // 0x1f0(0x1)
+	class                                                        DirectArcTarget;                                   // 0x1f8(0x8)
 };
 
 
@@ -3688,18 +3690,18 @@ public:
 class EnvQueryGenerator_WaterDonut: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	Struct AIDataProviderFloatValue                              InnerRadius;                                       // 0x90(0x30)
-	Struct AIDataProviderFloatValue                              OuterRadius;                                       // 0xc0(0x30)
-	Struct AIDataProviderIntValue                                NumberOfRings;                                     // 0xf0(0x30)
-	Struct AIDataProviderIntValue                                PointsPerRing;                                     // 0x120(0x30)
-	Struct EnvDirection                                          ArcDirection;                                      // 0x150(0x20)
-	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x170(0x30)
-	Struct AIDataProviderFloatValue                              ZOffsetFromCentre;                                 // 0x1a0(0x30)
-	class                                                        Center;                                            // 0x1d0(0x8)
-	bool                                                         bDefineArc;                                        // 0x1d8(0x1)
-	bool                                                         ProjectPointsToWaterSurface;                       // 0x1d8(0x1)
-	class                                                        WaterPlaneSourceContext;                           // 0x1e0(0x8)
-	bool                                                         ApplyZOffsetToProjectPoints;                       // 0x1e8(0x1)
+	Struct AIDataProviderFloatValue                              InnerRadius;                                       // 0x98(0x30)
+	Struct AIDataProviderFloatValue                              OuterRadius;                                       // 0xc8(0x30)
+	Struct AIDataProviderIntValue                                NumberOfRings;                                     // 0xf8(0x30)
+	Struct AIDataProviderIntValue                                PointsPerRing;                                     // 0x128(0x30)
+	Struct EnvDirection                                          ArcDirection;                                      // 0x158(0x20)
+	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x178(0x30)
+	Struct AIDataProviderFloatValue                              ZOffsetFromCentre;                                 // 0x1a8(0x30)
+	class                                                        Center;                                            // 0x1d8(0x8)
+	bool                                                         bDefineArc;                                        // 0x1e0(0x1)
+	bool                                                         ProjectPointsToWaterSurface;                       // 0x1e0(0x1)
+	class                                                        WaterPlaneSourceContext;                           // 0x1e8(0x8)
+	bool                                                         ApplyZOffsetToProjectPoints;                       // 0x1f0(0x1)
 };
 
 
@@ -3707,10 +3709,10 @@ public:
 class EnvQueryGenerator_WaterMultiDeckerRing: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	Struct AIDataProviderFloatValue                              Radius;                                            // 0x90(0x30)
-	TArray<Struct AIDataProviderFloatValue>                      ZOffsetOfRingsFromContext;                         // 0xc0(0x10)
-	Struct AIDataProviderIntValue                                PointsPerRing;                                     // 0xd0(0x30)
-	class                                                        Center;                                            // 0x100(0x8)
+	Struct AIDataProviderFloatValue                              Radius;                                            // 0x98(0x30)
+	TArray<Struct AIDataProviderFloatValue>                      ZOffsetOfRingsFromContext;                         // 0xc8(0x10)
+	Struct AIDataProviderIntValue                                PointsPerRing;                                     // 0xd8(0x30)
+	class                                                        Center;                                            // 0x108(0x8)
 };
 
 

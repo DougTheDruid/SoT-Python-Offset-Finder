@@ -8,9 +8,9 @@
   },
   "SlateLoadingScreenParams": {
     "Super": "DataAsset",
-    "FullSize": "0x218",
+    "FullSize": "0x228",
     "InheritedSize": "0x28",
-    "ClassSize": "0x1f0",
+    "ClassSize": "0x200",
     "Attributes": [
       {
         "Name": "DrawBackground",
@@ -75,122 +75,122 @@
       {
         "Name": "PrimaryImage",
         "Type": "Struct SlateLoadingScreenImageParams",
-        "Size": "0x20",
+        "Size": "0x30",
         "Offset": "0x60"
       },
       {
         "Name": "CyclingImages",
         "Type": "TArray<Struct SlateLoadingScreenImageParams>",
         "Size": "0x10",
-        "Offset": "0x80"
+        "Offset": "0x90"
       },
       {
         "Name": "MaxNumImagesPerLoad",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x90"
+        "Offset": "0xa0"
       },
       {
         "Name": "SpinnerText",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x98"
+        "Offset": "0xa8"
       },
       {
         "Name": "SpinnerTextColour",
         "Type": "Struct SlateColor",
         "Size": "0x30",
-        "Offset": "0xd0"
+        "Offset": "0xe0"
       },
       {
         "Name": "SpinnerTextFont",
         "Type": "Struct SlateFontInfo",
         "Size": "0x40",
-        "Offset": "0x100"
+        "Offset": "0x110"
       },
       {
         "Name": "SpinnerSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x140"
+        "Offset": "0x150"
       },
       {
         "Name": "SpinnerMargin",
         "Type": "Struct Margin",
         "Size": "0x10",
-        "Offset": "0x144"
+        "Offset": "0x154"
       },
       {
         "Name": "SpinnerPadding",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x154"
+        "Offset": "0x164"
       },
       {
         "Name": "SpinnerIcon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x158"
+        "Offset": "0x168"
       },
       {
         "Name": "TipsMargin",
         "Type": "Struct Margin",
         "Size": "0x10",
-        "Offset": "0x168"
+        "Offset": "0x178"
       },
       {
         "Name": "TipWrapLength",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x178"
+        "Offset": "0x188"
       },
       {
         "Name": "TipDisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x17c"
+        "Offset": "0x18c"
       },
       {
         "Name": "TipDurationBetweenTips",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x180"
+        "Offset": "0x190"
       },
       {
         "Name": "NumTipsPerImage",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x184"
+        "Offset": "0x194"
       },
       {
         "Name": "LoadingTipFont",
         "Type": "Struct SlateFontInfo",
         "Size": "0x40",
-        "Offset": "0x188"
+        "Offset": "0x198"
       },
       {
         "Name": "LoadingTipFontLineHeightPercentage",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1c8"
+        "Offset": "0x1d8"
       },
       {
         "Name": "LoadingScreenTips",
         "Type": "TArray<Struct FText>",
         "Size": "0x10",
-        "Offset": "0x1d0"
+        "Offset": "0x1e0"
       },
       {
         "Name": "LoadingScreenTipColour",
         "Type": "Struct SlateColor",
         "Size": "0x30",
-        "Offset": "0x1e0"
+        "Offset": "0x1f0"
       },
       {
         "Name": "AllowSyncronousAssetLoad",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x210"
+        "Offset": "0x220"
       }
     ]
   },

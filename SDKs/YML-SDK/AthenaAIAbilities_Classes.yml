@@ -194,16 +194,16 @@ ElectricShieldBuffComponent:
     Offset: '0xe8'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: IsShieldActive
-    Offset: '0xf0'
-    Size: '0x1'
-    Type: bool
   - Name: ShieldEffectComponent
-    Offset: '0xf8'
+    Offset: '0xf0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  ClassSize: '0xf0'
-  FullSize: '0x1b8'
+  - Name: IsShieldActive
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xe8'
+  FullSize: '0x1b0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ElectricShieldBuffInterface:

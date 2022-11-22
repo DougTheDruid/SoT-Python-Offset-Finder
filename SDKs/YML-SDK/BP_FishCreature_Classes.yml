@@ -38,7 +38,7 @@ BP_FishCreature_C:
     Offset: '0x3fc'
     Size: '0x4'
     Type: float
-  - Name: CirclingSpeed
+  - Name: circlingSpeed
     Offset: '0x400'
     Size: '0x4'
     Type: float
@@ -90,7 +90,7 @@ BP_FishCreature_C:
     Offset: '0x438'
     Size: '0x4'
     Type: float
-  - Name: Smoothness
+  - Name: smoothness
     Offset: '0x43c'
     Size: '0x4'
     Type: float

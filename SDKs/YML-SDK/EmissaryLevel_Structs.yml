@@ -271,6 +271,13 @@ EmissaryGameEventsReward:
     Size: '0x4'
     Type: float
   ClassSize: '0x10'
+EmissaryJoinedNetworkEvent:
+  Attributes:
+  - Name: PopUpDesc
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class DataAsset*
+  ClassSize: '0x18'
 EmissaryKillPlayerReward:
   Attributes:
   - Name: EmissaryLevelIncrease
@@ -364,31 +371,35 @@ EmissaryLevelEntry:
     Offset: '0x18'
     Size: '0x8'
     Type: Class DataAsset*
-  - Name: EmissarySunkPopUpToastData
+  - Name: EmissaryJoinedPopUpToastData
     Offset: '0x20'
     Size: '0x8'
     Type: Class DataAsset*
-  - Name: CompanyCosmetics
+  - Name: EmissarySunkPopUpToastData
     Offset: '0x28'
+    Size: '0x8'
+    Type: Class DataAsset*
+  - Name: CompanyCosmetics
+    Offset: '0x30'
     Size: '0x20'
     Type: Struct EmissaryCompanyCosmetics
   - Name: TimeSpentAtMaxRankStat
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x4'
     Type: Struct PlayerStat
   - Name: StatsToFireOnFullEmissaryClothing
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x10'
     Type: TArray<Struct PlayerStat>
   - Name: StatsToFireOnFullEmissaryShipCustomizations
-    Offset: '0x60'
+    Offset: '0x68'
     Size: '0x10'
     Type: TArray<Struct PlayerStat>
   - Name: StatsToFireOnFullShipCustomizationsAndClothing
-    Offset: '0x70'
+    Offset: '0x78'
     Size: '0x10'
     Type: TArray<Struct PlayerStat>
-  ClassSize: '0x80'
+  ClassSize: '0x88'
 EmissaryLevelProgressUpdatedEvent:
   Attributes:
   - Name: LevelProgress

@@ -29,8 +29,8 @@
   },
   "IpConnection": {
     "Super": "NetConnection",
-    "FullSize": "0x345d8",
-    "InheritedSize": "0x34588",
+    "FullSize": "0x345e0",
+    "InheritedSize": "0x34590",
     "ClassSize": "0x50",
     "Attributes": []
   },

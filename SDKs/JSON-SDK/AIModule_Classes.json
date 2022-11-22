@@ -182,9 +182,9 @@
   },
   "EnvQueryGenerator": {
     "Super": "EnvQueryNode",
-    "FullSize": "0x50",
+    "FullSize": "0x58",
     "InheritedSize": "0x30",
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "OptionName",
@@ -199,10 +199,16 @@
         "Offset": "0x40"
       },
       {
+        "Name": "Feature",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x44"
+      },
+      {
         "Name": "ItemType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x48"
+        "Offset": "0x50"
       }
     ]
   },
@@ -2604,257 +2610,257 @@
   },
   "EnvQueryGenerator_ActorsOfClass": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x50",
+    "FullSize": "0x98",
+    "InheritedSize": "0x58",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "SearchRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "SearchedActorClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x80"
+        "Offset": "0x88"
       },
       {
         "Name": "SearchCenter",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x88"
+        "Offset": "0x90"
       }
     ]
   },
   "EnvQueryGenerator_BlueprintBase": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x50",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x58",
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "GeneratorsActionDescription",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "Context",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x88"
+        "Offset": "0x90"
       },
       {
         "Name": "GeneratedItemType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x90"
+        "Offset": "0x98"
       }
     ]
   },
   "EnvQueryGenerator_Composite": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0x68",
-    "InheritedSize": "0x50",
+    "FullSize": "0x70",
+    "InheritedSize": "0x58",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Generators",
         "Type": "TArray<class EnvQueryGenerator*>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "bHasMatchingItemType",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x60"
+        "Offset": "0x68"
       }
     ]
   },
   "EnvQueryGenerator_ProjectedPoints": {
     "Super": "EnvQueryGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x50",
+    "FullSize": "0x98",
+    "InheritedSize": "0x58",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "ProjectionData",
         "Type": "Struct EnvTraceData",
         "Size": "0x40",
-        "Offset": "0x50"
+        "Offset": "0x58"
       }
     ]
   },
   "EnvQueryGenerator_Donut": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x1b8",
-    "InheritedSize": "0x90",
+    "FullSize": "0x1c0",
+    "InheritedSize": "0x98",
     "ClassSize": "0x128",
     "Attributes": [
       {
         "Name": "InnerRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "OuterRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "NumberOfRings",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0xf0"
+        "Offset": "0xf8"
       },
       {
         "Name": "PointsPerRing",
         "Type": "Struct AIDataProviderIntValue",
         "Size": "0x30",
-        "Offset": "0x120"
+        "Offset": "0x128"
       },
       {
         "Name": "ArcDirection",
         "Type": "Struct EnvDirection",
         "Size": "0x20",
-        "Offset": "0x150"
+        "Offset": "0x158"
       },
       {
         "Name": "ArcAngle",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x170"
+        "Offset": "0x178"
       },
       {
         "Name": "RandomiseRadius",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1a0"
+        "Offset": "0x1a8"
       },
       {
         "Name": "Center",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x1a8"
+        "Offset": "0x1b0"
       },
       {
         "Name": "bDefineArc",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1b0"
+        "Offset": "0x1b8"
       }
     ]
   },
   "EnvQueryGenerator_OnCircle": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x198",
-    "InheritedSize": "0x90",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x98",
     "ClassSize": "0x108",
     "Attributes": [
       {
         "Name": "CircleRadius",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "SpaceBetween",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "ArcDirection",
         "Type": "Struct EnvDirection",
         "Size": "0x20",
-        "Offset": "0xf0"
+        "Offset": "0xf8"
       },
       {
         "Name": "ArcAngle",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x110"
+        "Offset": "0x118"
       },
       {
         "Name": "AngleRadians",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x140"
+        "Offset": "0x148"
       },
       {
         "Name": "CircleCenter",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x148"
+        "Offset": "0x150"
       },
       {
         "Name": "TraceData",
         "Type": "Struct EnvTraceData",
         "Size": "0x40",
-        "Offset": "0x150"
+        "Offset": "0x158"
       },
       {
         "Name": "bDefineArc",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x190"
+        "Offset": "0x198"
       }
     ]
   },
   "EnvQueryGenerator_SimpleGrid": {
     "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0xf8",
-    "InheritedSize": "0x90",
+    "FullSize": "0x100",
+    "InheritedSize": "0x98",
     "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "GridSize",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "SpaceBetween",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "GenerateAround",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xf0"
+        "Offset": "0xf8"
       }
     ]
   },
   "EnvQueryGenerator_PathingGrid": {
     "Super": "EnvQueryGenerator_SimpleGrid",
-    "FullSize": "0x160",
-    "InheritedSize": "0xf8",
+    "FullSize": "0x168",
+    "InheritedSize": "0x100",
     "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "PathToItem",
         "Type": "Struct AIDataProviderBoolValue",
         "Size": "0x30",
-        "Offset": "0xf8"
+        "Offset": "0x100"
       },
       {
         "Name": "NavigationFilter",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x128"
+        "Offset": "0x130"
       },
       {
         "Name": "ScanRangeMultiplier",
         "Type": "Struct AIDataProviderFloatValue",
         "Size": "0x30",
-        "Offset": "0x130"
+        "Offset": "0x138"
       }
     ]
   },

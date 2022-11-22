@@ -43,7 +43,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x30
 struct CrewFactionEntry
 {
 public:
@@ -51,7 +51,8 @@ public:
 	class                                                        Faction;                                           // 0x10(0x8)
 	byte                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
 	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
-	double                                                       LeaveFactionCooldownTimeStamp;                     // 0x20(0x8)
+	int                                                          SandsOfFate;                                       // 0x20(0x4)
+	double                                                       LeaveFactionCooldownTimeStamp;                     // 0x28(0x8)
 };
 
 
@@ -63,7 +64,6 @@ public:
 	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
 	class                                                        Faction;                                           // 0x20(0x8)
 	int                                                          Streak;                                            // 0x28(0x4)
-	int                                                          SandsOfFate;                                       // 0x2c(0x4)
 	double                                                       CooldownTimeStamp;                                 // 0x30(0x8)
 	bool                                                         IsInInvasion;                                      // 0x38(0x1)
 	TArray<Struct Guid>                                          EligibleLootBootyIds;                              // 0x40(0x10)
@@ -81,6 +81,15 @@ public:
 	struct FName                                                 Faction;                                           // 0x20(0x8)
 	int                                                          Streak;                                            // 0x28(0x4)
 	int                                                          SandsOfFate;                                       // 0x2c(0x4)
+};
+
+
+// Size 0x18
+struct FactionServicePostMigrationEvent
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	class                                                        Faction;                                           // 0x10(0x8)
 };
 
 
@@ -168,14 +177,12 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x10
 struct FactionWaitTimesData
 {
 public:
 	byte                                                         Faction;                                           // 0x0(0x1)
 	byte                                                         SessionType;                                       // 0x1(0x1)
-	Struct Timespan                                              AverageWaitTime;                                   // 0x8(0x8)
-	Struct Timespan                                              MaxWaitTime;                                       // 0x10(0x8)
 };
 
 

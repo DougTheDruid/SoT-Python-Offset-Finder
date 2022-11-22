@@ -1254,9 +1254,9 @@
   },
   "CharacterMovementComponent": {
     "Super": "PawnMovementComponent",
-    "FullSize": "0x560",
+    "FullSize": "0x590",
     "InheritedSize": "0x160",
-    "ClassSize": "0x400",
+    "ClassSize": "0x430",
     "Attributes": [
       {
         "Name": "CharacterOwner",
@@ -1694,385 +1694,385 @@
         "Name": "MaxSimulationTimeStep",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2c4"
+        "Offset": "0x2e8"
       },
       {
         "Name": "MaxSimulationIterations",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x2c8"
+        "Offset": "0x2ec"
       },
       {
         "Name": "MaxSmoothNetUpdateDist",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2cc"
+        "Offset": "0x2f0"
       },
       {
         "Name": "NoSmoothNetUpdateDist",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2d0"
+        "Offset": "0x2f4"
       },
       {
         "Name": "NetworkSimulatedSmoothLocationTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2d4"
+        "Offset": "0x2f8"
       },
       {
         "Name": "NetworkSimulatedSmoothRotationTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2d8"
+        "Offset": "0x2fc"
       },
       {
         "Name": "LedgeCheckThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2dc"
+        "Offset": "0x300"
       },
       {
         "Name": "JumpOutOfWaterPitch",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e0"
+        "Offset": "0x304"
       },
       {
         "Name": "CurrentFloor",
         "Type": "Struct FindFloorResult",
         "Size": "0x8c",
-        "Offset": "0x2e4"
+        "Offset": "0x308"
       },
       {
         "Name": "DefaultLandMovementMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x370"
+        "Offset": "0x394"
       },
       {
         "Name": "DefaultWaterMovementMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x371"
+        "Offset": "0x395"
       },
       {
         "Name": "GroundMovementMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x372"
+        "Offset": "0x396"
       },
       {
         "Name": "bMaintainHorizontalGroundVelocity",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bImpartBaseVelocityX",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bImpartBaseVelocityY",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bImpartBaseVelocityZ",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bImpartBaseAngularVelocity",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bJustTeleported",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bNetworkUpdateReceived",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bBasedMovementUpdateReceived",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x374"
+        "Offset": "0x398"
       },
       {
         "Name": "bMovementUpdateReceived",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bNetworkMovementModeChanged",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bNotifyApex",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bCheatFlying",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bWantsToCrouch",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bCrouchMaintainsBaseLocation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bIgnoreBaseRotation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bFastAttachedMove",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x375"
+        "Offset": "0x399"
       },
       {
         "Name": "bAlwaysCheckFloor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bUseFlatBaseForFloorChecks",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bPerformingJumpOff",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bWantsToLeaveNavWalking",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bUseRVOAvoidance",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bRequestedMoveUseAcceleration",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bPreventSimulatedFloorChecks",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bPreventNavMeshFalling",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x376"
+        "Offset": "0x39a"
       },
       {
         "Name": "bHasRequestedVelocity",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x377"
+        "Offset": "0x39b"
       },
       {
         "Name": "bRequestedMoveWithMaxSpeed",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x377"
+        "Offset": "0x39b"
       },
       {
         "Name": "bWasAvoidanceUpdated",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x377"
+        "Offset": "0x39b"
       },
       {
         "Name": "bProjectNavMeshWalking",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x377"
+        "Offset": "0x39b"
       },
       {
         "Name": "SmoothingClientPositionTolerance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x38c"
+        "Offset": "0x3b0"
       },
       {
         "Name": "AvoidanceConsiderationRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x390"
+        "Offset": "0x3b4"
       },
       {
         "Name": "RequestedVelocity",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x394"
+        "Offset": "0x3b8"
       },
       {
         "Name": "AvoidanceUID",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x3a0"
+        "Offset": "0x3c4"
       },
       {
         "Name": "AvoidanceGroup",
         "Type": "Struct NavAvoidanceMask",
         "Size": "0x4",
-        "Offset": "0x3a4"
+        "Offset": "0x3c8"
       },
       {
         "Name": "GroupsToAvoid",
         "Type": "Struct NavAvoidanceMask",
         "Size": "0x4",
-        "Offset": "0x3a8"
+        "Offset": "0x3cc"
       },
       {
         "Name": "GroupsToIgnore",
         "Type": "Struct NavAvoidanceMask",
         "Size": "0x4",
-        "Offset": "0x3ac"
+        "Offset": "0x3d0"
       },
       {
         "Name": "AvoidanceWeight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3b0"
+        "Offset": "0x3d4"
       },
       {
         "Name": "PendingLaunchVelocity",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x3b4"
+        "Offset": "0x3d8"
       },
       {
         "Name": "NavMeshProjectionInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x458"
+        "Offset": "0x480"
       },
       {
         "Name": "NavMeshProjectionTimer",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x45c"
+        "Offset": "0x484"
       },
       {
         "Name": "bUseNavMeshProjectionTimeModifier",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x460"
+        "Offset": "0x488"
       },
       {
         "Name": "MaxNavMeshProjectionInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x464"
+        "Offset": "0x48c"
       },
       {
         "Name": "NavMeshProjectionInterpSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x46c"
+        "Offset": "0x494"
       },
       {
         "Name": "bUsePlaneBasedNavMeshProjectionInterpSystem",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x470"
+        "Offset": "0x498"
       },
       {
         "Name": "MaxAllowedZOffsetFromCurrentPlane",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x474"
+        "Offset": "0x49c"
       },
       {
         "Name": "MaxZDiffFromPrevPlane",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x478"
+        "Offset": "0x4a0"
       },
       {
         "Name": "NavMeshProjectionHeightScaleUp",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x498"
+        "Offset": "0x4c0"
       },
       {
         "Name": "NavMeshProjectionHeightScaleDown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x49c"
+        "Offset": "0x4c4"
       },
       {
         "Name": "UseControllerRotationInNavWalkingMoveComponent",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4a0"
+        "Offset": "0x4c8"
       },
       {
         "Name": "PreClothComponentTick",
         "Type": "Struct CharacterMovementComponentPreClothTickFunction",
         "Size": "0x50",
-        "Offset": "0x4a8"
+        "Offset": "0x4d0"
       },
       {
         "Name": "MinTimeBetweenTimeStampResets",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x50c"
+        "Offset": "0x534"
       },
       {
         "Name": "RootMotionParams",
         "Type": "Struct RootMotionMovementParams",
         "Size": "0x40",
-        "Offset": "0x510"
+        "Offset": "0x540"
       },
       {
         "Name": "bWasSimulatingRootMotion",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x550"
+        "Offset": "0x580"
       }
     ]
   },
@@ -7436,9 +7436,9 @@
   },
   "NetConnection": {
     "Super": "Player",
-    "FullSize": "0x34588",
+    "FullSize": "0x34590",
     "InheritedSize": "0x48",
-    "ClassSize": "0x34540",
+    "ClassSize": "0x34548",
     "Attributes": [
       {
         "Name": "Children",
@@ -7510,7 +7510,7 @@
         "Name": "DeferredCloseChannels",
         "Type": "TArray<class Channel*>",
         "Size": "0x10",
-        "Offset": "0x344c0"
+        "Offset": "0x344c8"
       }
     ]
   },
@@ -12302,9 +12302,9 @@
   },
   "SkeletalMeshActor": {
     "Super": "Actor",
-    "FullSize": "0x408",
+    "FullSize": "0x3f8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x40",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "bShouldDoAnimNotifies",
@@ -12335,18 +12335,6 @@
         "Type": "Class PhysicsAsset*",
         "Size": "0x8",
         "Offset": "0x3e8"
-      },
-      {
-        "Name": "ReplicatedMaterial0",
-        "Type": "Class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "ReplicatedMaterial1",
-        "Type": "Class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
       }
     ]
   },
@@ -27306,9 +27294,9 @@
   },
   "ParticleModuleLocationEmitter": {
     "Super": "ParticleModuleLocationBase",
-    "FullSize": "0xa0",
+    "FullSize": "0xa8",
     "InheritedSize": "0x50",
-    "ClassSize": "0x50",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "EmitterName",
@@ -27345,6 +27333,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x9c"
+      },
+      {
+        "Name": "MissingParentParticlesBehaviour",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa0"
       }
     ]
   },
@@ -28267,9 +28261,9 @@
   },
   "ParticleModuleRequired": {
     "Super": "ParticleModule",
-    "FullSize": "0x2f8",
+    "FullSize": "0x2e8",
     "InheritedSize": "0x50",
-    "ClassSize": "0x2a8",
+    "ClassSize": "0x298",
     "Attributes": [
       {
         "Name": "bDeactivateGroupA",
@@ -28632,118 +28626,112 @@
         "Offset": "0x258"
       },
       {
-        "Name": "CutoutTexture",
-        "Type": "Class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x260"
-      },
-      {
         "Name": "BoundingMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x268"
+        "Offset": "0x259"
       },
       {
         "Name": "OpacitySourceMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x269"
+        "Offset": "0x25a"
       },
       {
         "Name": "AlphaThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x26c"
+        "Offset": "0x25c"
       },
       {
         "Name": "SafeMarginSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x270"
+        "Offset": "0x260"
       },
       {
         "Name": "NamedMaterialOverrides",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
-        "Offset": "0x278"
+        "Offset": "0x268"
       },
       {
         "Name": "bUseDistanceFading",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x288"
+        "Offset": "0x278"
       },
       {
         "Name": "FarStopFade",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x28c"
+        "Offset": "0x27c"
       },
       {
         "Name": "FarStartFade",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x290"
+        "Offset": "0x280"
       },
       {
         "Name": "NearStartFade",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x294"
+        "Offset": "0x284"
       },
       {
         "Name": "NearStopFade",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x298"
+        "Offset": "0x288"
       },
       {
         "Name": "ApplyFOVDistanceScaling",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x29c"
+        "Offset": "0x28c"
       },
       {
         "Name": "bUseDistanceSizeScale",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x29c"
+        "Offset": "0x28c"
       },
       {
         "Name": "FarScaleFactor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2a0"
+        "Offset": "0x290"
       },
       {
         "Name": "FarScaleEndDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2a4"
+        "Offset": "0x294"
       },
       {
         "Name": "FarScaleBeginDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2a8"
+        "Offset": "0x298"
       },
       {
         "Name": "NearScaleBeginDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2ac"
+        "Offset": "0x29c"
       },
       {
         "Name": "NearScaleEndDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2b0"
+        "Offset": "0x2a0"
       },
       {
         "Name": "NearScaleFactor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2b4"
+        "Offset": "0x2a4"
       }
     ]
   },
@@ -29689,69 +29677,69 @@
   },
   "ParticleModuleTypeDataGpu": {
     "Super": "ParticleModuleTypeDataBase",
-    "FullSize": "0xd10",
+    "FullSize": "0xd20",
     "InheritedSize": "0x50",
-    "ClassSize": "0xcc0",
+    "ClassSize": "0xcd0",
     "Attributes": [
       {
         "Name": "EmitterInfo",
         "Type": "Struct GPUSpriteEmitterInfo",
-        "Size": "0x2a0",
+        "Size": "0x2b0",
         "Offset": "0x50"
       },
       {
         "Name": "ResourceData",
         "Type": "Struct GPUSpriteResourceData",
         "Size": "0xa00",
-        "Offset": "0x2f0"
+        "Offset": "0x300"
       },
       {
         "Name": "CameraMotionBlurAmount",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xcf0"
+        "Offset": "0xd00"
       },
       {
         "Name": "bClearExistingParticlesOnInit",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xcf4"
+        "Offset": "0xd04"
       },
       {
         "Name": "AlphaCullingAggressiveness",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xcf8"
+        "Offset": "0xd08"
       },
       {
         "Name": "bOverrideAlphaThreshold",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xcfc"
+        "Offset": "0xd0c"
       },
       {
         "Name": "OverriddenAlphaThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xd00"
+        "Offset": "0xd10"
       },
       {
         "Name": "InteractionWithKillPlane",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xd04"
+        "Offset": "0xd14"
       },
       {
         "Name": "KillPlanePointLocation",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xd05"
+        "Offset": "0xd15"
       },
       {
         "Name": "FadingTimeWhenKilled",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xd08"
+        "Offset": "0xd18"
       }
     ]
   },
@@ -31008,22 +30996,22 @@
   },
   "ChildConnection": {
     "Super": "NetConnection",
-    "FullSize": "0x34590",
-    "InheritedSize": "0x34588",
+    "FullSize": "0x34598",
+    "InheritedSize": "0x34590",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Parent",
         "Type": "Class NetConnection*",
         "Size": "0x8",
-        "Offset": "0x34588"
+        "Offset": "0x34590"
       }
     ]
   },
   "DemoNetConnection": {
     "Super": "NetConnection",
-    "FullSize": "0x34598",
-    "InheritedSize": "0x34588",
+    "FullSize": "0x345a0",
+    "InheritedSize": "0x34590",
     "ClassSize": "0x10",
     "Attributes": []
   },

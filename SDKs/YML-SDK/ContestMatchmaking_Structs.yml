@@ -144,12 +144,16 @@ ServerCrewModel:
     Offset: '0x74'
     Size: '0x4'
     Type: int
-  - Name: RivalCrewId
+  - Name: PvPRivalSessionType
     Offset: '0x78'
+    Size: '0x4'
+    Type: int
+  - Name: RivalCrewId
+    Offset: '0x7c'
     Size: '0x10'
     Type: Struct Guid
   - Name: MatchmakingRequestReason
-    Offset: '0x88'
+    Offset: '0x8c'
     Size: '0x1'
     Type: byte
   - Name: TimeWaitingForMatch
@@ -252,23 +256,27 @@ ServerQueueWaitTimeModel:
   ClassSize: '0x20'
 ServerQueueWaitTimesRequestModel:
   Attributes:
-  - Name: ServerLocation
+  - Name: ServerId
     Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: ServerLocation
+    Offset: '0x10'
     Size: '0x10'
     Type: Struct FString
   - Name: PrivateServerId
-    Offset: '0x18'
+    Offset: '0x28'
     Size: '0x10'
     Type: Struct FString
   - Name: PlayModeTags
-    Offset: '0x28'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<Str PlayModeTags>
   - Name: PlayModeState
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 ServerQueueWaitTimesResponseModel:
   Attributes:
   - Name: QueueWaitTimes
