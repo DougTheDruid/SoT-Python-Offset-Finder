@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x68
-class BP_SmallShip_Mast_C: public BP_Mast_C
+class BP_SmallShip_Mast_C: public None
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0xa38(0x8)

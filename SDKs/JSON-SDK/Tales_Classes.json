@@ -50,9 +50,9 @@
   },
   "TaleQuestFramedStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xd8",
+    "FullSize": "0xf8",
     "InheritedSize": "0x98",
-    "ClassSize": "0x40",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "Services",
@@ -67,24 +67,24 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "StructForCollector",
-        "Type": "Class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0xc8"
+        "Name": "Variables",
+        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Size": "0x20",
+        "Offset": "0xb8"
       },
       {
-        "Name": "LocalStructForCollector",
-        "Type": "Class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0xd0"
+        "Name": "LocalVariables",
+        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Size": "0x20",
+        "Offset": "0xd8"
       }
     ]
   },
   "TaleQuestFramedStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xa0",
+    "FullSize": "0xd0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x20",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "Services",
@@ -93,16 +93,16 @@
         "Offset": "0x80"
       },
       {
-        "Name": "Variables",
-        "Type": "Class ScriptStruct*",
-        "Size": "0x8",
+        "Name": "VariablesWithDefaults",
+        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Size": "0x20",
         "Offset": "0x90"
       },
       {
         "Name": "GeneratedVariables",
         "Type": "Struct InlineUserDefinedStructDetails",
-        "Size": "0x8",
-        "Offset": "0x98"
+        "Size": "0x20",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -658,9 +658,9 @@
   },
   "TaleQuestQueryableStatesService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x90",
+    "FullSize": "0xa0",
     "InheritedSize": "0x60",
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "AllData",
@@ -1296,9 +1296,9 @@
   },
   "TaleQuestAwaitCrewShipSinkStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xe0",
+    "FullSize": "0xf0",
     "InheritedSize": "0x98",
-    "ClassSize": "0x48",
+    "ClassSize": "0x58",
     "Attributes": []
   },
   "TaleQuestAwaitEventStep": {
@@ -1634,6 +1634,13 @@
     "FullSize": "0x168",
     "InheritedSize": "0x98",
     "ClassSize": "0xd0",
+    "Attributes": []
+  },
+  "WaitForQueryableStateValueStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x100",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x68",
     "Attributes": []
   },
   "WaitForSpawnedPawnBaseStep": {
@@ -2688,15 +2695,21 @@
   },
   "TaleQuestAwaitCrewShipSinkStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
+    "FullSize": "0xb8",
     "InheritedSize": "0x80",
-    "ClassSize": "0x30",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "CrewId",
         "Type": "Struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x80"
+      },
+      {
+        "Name": "TimeoutTimerInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -3574,6 +3587,48 @@
         "Type": "Struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
+      }
+    ]
+  },
+  "WaitForQueryableStateValueStepDescBase": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DataID",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "WaitForQueryableStateValueBoolStepDesc": {
+    "Super": "WaitForQueryableStateValueStepDescBase",
+    "FullSize": "0x90",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "WaitForQueryableStateValueIntStepDesc": {
+    "Super": "WaitForQueryableStateValueStepDescBase",
+    "FullSize": "0x90",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ExpectedValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x88"
       }
     ]
   },

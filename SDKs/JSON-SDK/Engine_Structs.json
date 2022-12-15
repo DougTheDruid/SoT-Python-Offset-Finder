@@ -1499,6 +1499,23 @@
       }
     ]
   },
+  "FeatureFlag": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "FeatureName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InverseToggle",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "NetActorPtr": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -1534,23 +1551,6 @@
   "UniqueNetIdRepl": {
     "ClassSize": "0x18",
     "Attributes": []
-  },
-  "FeatureFlag": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "FeatureName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InverseToggle",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      }
-    ]
   },
   "RainPostProcessSettings": {
     "ClassSize": "0xc0",
@@ -19337,7 +19337,7 @@
     "Attributes": []
   },
   "NetRelevancyStat": {
-    "ClassSize": "0x80",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "Reason",
@@ -19348,13 +19348,13 @@
       {
         "Name": "State",
         "Type": "Struct NetRelevancyStateStat",
-        "Size": "0x70",
+        "Size": "0x90",
         "Offset": "0x10"
       }
     ]
   },
   "NetRelevancyStateStat": {
-    "ClassSize": "0x70",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "Duration",
@@ -19377,20 +19377,20 @@
       {
         "Name": "Connection",
         "Type": "Struct NetRelevancyConnectionStat",
-        "Size": "0x38",
+        "Size": "0x58",
         "Offset": "0x18"
       },
       {
         "Name": "Actors",
         "Type": "TArray<Struct NetRelevancyActorStat>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x70"
       },
       {
         "Name": "Levels",
         "Type": "TArray<Struct NetRelevancyLevelStat>",
         "Size": "0x10",
-        "Offset": "0x60"
+        "Offset": "0x80"
       }
     ]
   },
@@ -19418,7 +19418,7 @@
     ]
   },
   "NetRelevancyActorStat": {
-    "ClassSize": "0x90",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "Name",
@@ -19439,40 +19439,82 @@
         "Offset": "0x20"
       },
       {
+        "Name": "AttachedParent",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AttachedParentOwner",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
         "Name": "Location",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x30"
+        "Offset": "0x50"
       },
       {
         "Name": "Cluster",
         "Type": "Struct NetRelevancyActorClusterStat",
         "Size": "0x48",
-        "Offset": "0x40"
+        "Offset": "0x60"
       },
       {
         "Name": "ChannelState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x88"
+        "Offset": "0xa8"
       },
       {
         "Name": "IsNetRelevant",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x89"
+        "Offset": "0xa9"
+      },
+      {
+        "Name": "IsAlwaysRelevant",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xaa"
+      },
+      {
+        "Name": "UseOwnerRelevancy",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xab"
+      },
+      {
+        "Name": "OnlyRelevantToOwner",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xac"
       },
       {
         "Name": "ActorDormancy",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8a"
+        "Offset": "0xad"
       },
       {
         "Name": "ChannelDormancy",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8b"
+        "Offset": "0xae"
+      },
+      {
+        "Name": "PushModelDormancy",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "NetUpdateFrequency",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
       }
     ]
   },
@@ -19518,7 +19560,7 @@
     ]
   },
   "NetRelevancyConnectionStat": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "Id",
@@ -19537,6 +19579,18 @@
         "Type": "Struct IntPoint",
         "Size": "0x8",
         "Offset": "0x30"
+      },
+      {
+        "Name": "DormantActors",
+        "Type": "TArray<Str DormantActors>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ConsideredActors",
+        "Type": "TArray<Str ConsideredActors>",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },

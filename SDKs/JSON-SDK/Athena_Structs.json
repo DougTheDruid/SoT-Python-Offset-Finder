@@ -181,6 +181,23 @@
     "ClassSize": "0x4",
     "Attributes": []
   },
+  "FeatureToggledFogBankManagerAsset": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FeatureToggle",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Asset",
+        "Type": "Class FogBankManagerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "FogBankManagerFogAvoidanceArea": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -9456,19 +9473,13 @@
     ]
   },
   "CatalogOfferBundleDataAsset": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x18",
     "Attributes": [
-      {
-        "Name": "OwningBundle",
-        "Type": "Class CatalogOfferDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
       {
         "Name": "TileImage",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x8"
       }
     ]
   },
@@ -13194,6 +13205,23 @@
       }
     ]
   },
+  "FeatureToggledFogBankAsset": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FeatureToggle",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Asset",
+        "Type": "Class FogBankDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "FogBankSettings": {
     "ClassSize": "0x4c",
     "Attributes": [
@@ -15583,23 +15611,6 @@
         "Type": "Class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "FlameData": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkipChangeAnimation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
       }
     ]
   },
@@ -18222,7 +18233,7 @@
     ]
   },
   "CatalogDescTab": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "FilterIcon",
@@ -18235,6 +18246,23 @@
         "Type": "Class CatalogDataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "CatalogData",
+        "Type": "Struct ShopCatalogDesc",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ShopCatalogDesc": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "CurrencyType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -19303,7 +19331,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "ReportingGamertag",
+        "Name": "ReportingGamerTag",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
@@ -19326,13 +19354,13 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "ReportableGamertag",
+        "Name": "ReportableGamerTag",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "ScrambledGamertag",
+        "Name": "ScrambledGamerTag",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -19378,7 +19406,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "ScrambledGamertag",
+        "Name": "ScrambledGamerTag",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -19699,48 +19727,36 @@
     ]
   },
   "PremiumShopOfferItem": {
-    "ClassSize": "0x48",
+    "ClassSize": "0x40",
     "Attributes": [
-      {
-        "Name": "Offer",
-        "Type": "Class CatalogOfferDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
       {
         "Name": "IsSuperPremium",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x8"
+        "Offset": "0x0"
       },
       {
         "Name": "LockedReason",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x10"
+        "Offset": "0x8"
       }
     ]
   },
   "PremiumShopBundleOfferItem": {
-    "ClassSize": "0x48",
+    "ClassSize": "0x40",
     "Attributes": [
-      {
-        "Name": "Offer",
-        "Type": "Class CatalogOfferDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
       {
         "Name": "IsPurchasable",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x8"
+        "Offset": "0x0"
       },
       {
         "Name": "LockedReason",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x10"
+        "Offset": "0x8"
       }
     ]
   },
@@ -20836,7 +20852,7 @@
     ]
   },
   "CatalogTab": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "CatalogName",
@@ -20845,16 +20861,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "CatalogDisplayName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
         "Name": "CatalogTabImageUrl",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x20"
+        "Offset": "0x10"
       }
     ]
   },
@@ -34545,7 +34555,7 @@
     ]
   },
   "CommerceRemoteServicePurchaseRequest": {
-    "ClassSize": "0x90",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "StoreId",
@@ -34574,26 +34584,43 @@
       {
         "Name": "PiratePurchaseClaims",
         "Type": "Struct PiratePurchaseClaims",
-        "Size": "0x50",
+        "Size": "0xa0",
         "Offset": "0x38"
       },
       {
         "Name": "PlayMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x88"
+        "Offset": "0xd8"
       },
       {
         "Name": "PlayModeVariant",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x89"
+        "Offset": "0xd9"
       }
     ]
   },
   "PiratePurchaseClaims": {
-    "ClassSize": "0x50",
+    "ClassSize": "0xa0",
     "Attributes": []
+  },
+  "EmblemClaim": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "IsCompleted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Sig",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
   },
   "CompanyLevelClaim": {
     "ClassSize": "0x18",
@@ -34864,7 +34891,7 @@
     "Attributes": []
   },
   "EmblemRemoteProgress": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "Id",
@@ -34889,6 +34916,12 @@
         "Type": "TArray<Struct EmblemRemoteCriteriaProgress>",
         "Size": "0x10",
         "Offset": "0x20"
+      },
+      {
+        "Name": "Sig",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },
@@ -35190,7 +35223,7 @@
     ]
   },
   "EmblemProgress": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "Id",
@@ -35215,6 +35248,12 @@
         "Type": "TArray<Struct EmblemCriteriaProgress>",
         "Size": "0x10",
         "Offset": "0x20"
+      },
+      {
+        "Name": "Sig",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },
@@ -35268,13 +35307,19 @@
     ]
   },
   "EmblemUnlockedEvent": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "EmblemId",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Sig",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -35290,7 +35335,7 @@
     ]
   },
   "EmblemUnlockedMessage": {
-    "ClassSize": "0x88",
+    "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "PirateIdentity",
@@ -35303,6 +35348,12 @@
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x78"
+      },
+      {
+        "Name": "Sig",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
       }
     ]
   },
@@ -35784,18 +35835,18 @@
     "Attributes": []
   },
   "RemotePreferencesModel": {
-    "ClassSize": "0x158",
+    "ClassSize": "0x160",
     "Attributes": [
       {
         "Name": "Preferences",
         "Type": "Struct RemotePreferences",
-        "Size": "0x158",
+        "Size": "0x160",
         "Offset": "0x0"
       }
     ]
   },
   "RemotePreferences": {
-    "ClassSize": "0x158",
+    "ClassSize": "0x160",
     "Attributes": [
       {
         "Name": "ActionBindings",
@@ -36350,190 +36401,202 @@
         "Offset": "0x11e"
       },
       {
+        "Name": "DisablePirateToast",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x11f"
+      },
+      {
+        "Name": "DisableShipToast",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
         "Name": "PushToTalkMode",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x120"
+        "Offset": "0x124"
       },
       {
         "Name": "CircularUINavigation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x124"
+        "Offset": "0x128"
       },
       {
         "Name": "Enable120Hz",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x125"
+        "Offset": "0x129"
       },
       {
         "Name": "AlwaysSkipMapTableAnimation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x126"
+        "Offset": "0x12a"
       },
       {
         "Name": "AudioMonoMix",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x127"
+        "Offset": "0x12b"
       },
       {
         "Name": "AudioOutputHeadphones",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x128"
+        "Offset": "0x12c"
       },
       {
         "Name": "DisableSeasonsNotifications",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x129"
+        "Offset": "0x12d"
       },
       {
         "Name": "AllowCrewToCustomiseCaptainedShip",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x12a"
+        "Offset": "0x12e"
       },
       {
         "Name": "EnableTutorialAttractAnimation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x12b"
+        "Offset": "0x12f"
       },
       {
         "Name": "DisableInviteNotifications",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x12c"
+        "Offset": "0x130"
       },
       {
         "Name": "ControlledTextAlignment",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x12d"
+        "Offset": "0x131"
       },
       {
         "Name": "ControlledLineHeight",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x12e"
+        "Offset": "0x132"
       },
       {
         "Name": "OtherCrewsMuteState",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x130"
+        "Offset": "0x134"
       },
       {
         "Name": "NauticalNarrationEnabled",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x134"
+        "Offset": "0x138"
       },
       {
         "Name": "NarrateInteractableText",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x138"
+        "Offset": "0x13c"
       },
       {
         "Name": "NarrateInteractableButtons",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x139"
+        "Offset": "0x13d"
       },
       {
         "Name": "IgnoreDisabledInteractables",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x13a"
+        "Offset": "0x13e"
       },
       {
         "Name": "FishNameplateNarrationEnabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x13b"
+        "Offset": "0x13f"
       },
       {
         "Name": "UseContinuousNarration",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x13c"
+        "Offset": "0x140"
       },
       {
         "Name": "ContinuousNarrationDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x140"
+        "Offset": "0x144"
       },
       {
         "Name": "DisableFlashes",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x144"
+        "Offset": "0x148"
       },
       {
         "Name": "DisableBlur",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x145"
+        "Offset": "0x149"
       },
       {
         "Name": "DisableScreenShake",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x146"
+        "Offset": "0x14a"
       },
       {
         "Name": "DisableOnScreenEffects",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x147"
+        "Offset": "0x14b"
       },
       {
         "Name": "EnchantedCompassProximityAnnouncerEnabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x148"
+        "Offset": "0x14c"
       },
       {
         "Name": "DisableRats",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x149"
+        "Offset": "0x14d"
       },
       {
         "Name": "EnableSqueakyWheel",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x14a"
+        "Offset": "0x14e"
       },
       {
         "Name": "SqueakyWheelVolume",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x14c"
+        "Offset": "0x150"
       },
       {
         "Name": "RemoteGameLanguage",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x150"
+        "Offset": "0x154"
       },
       {
         "Name": "DisableShipSittingInteractions",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x154"
+        "Offset": "0x158"
       },
       {
         "Name": "DisableShipTrinketInteractions",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x155"
+        "Offset": "0x159"
       }
     ]
   },
@@ -38524,6 +38587,108 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
+  "MeshMemoryConstraintCapstanDelayedHealthReport": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "BodyMeshIsNotNull",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ReleaseMeshIsNotNull",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x19"
+      },
+      {
+        "Name": "NumberOfArmSubActors",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "NumberOfArmsNotNull",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "MeshMemoryConstraintShipPartMeshSetDelayedHealthReport": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DescIsNotNull",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DidMakeAttemptToSetMesh",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "DescAssetPathName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MeshMemoryConstraintWheelDelayedHealthReport": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "WheelMeshIsNotNull",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MeshMemoryConstraintCannonDelayedHealthReport": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "BoxMeshIsNotNull",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "BarrelMeshIsNotNull",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "MeshMemoryConstraintShipPartReceivedShipSafeDeclaration": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipPartName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MeshMemoryConstraintShipPartCannotSetAsShipIsUnsafe": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipPartName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "VoiceChatStatusTelemetryEvent": {
     "ClassSize": "0x2",
     "Attributes": [
@@ -39238,208 +39403,220 @@
         "Offset": "0x15a"
       },
       {
+        "Name": "DisablePirateToast",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x15b"
+      },
+      {
+        "Name": "DisableShipToast",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x15c"
+      },
+      {
         "Name": "PushToTalkMode",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x15c"
+        "Offset": "0x160"
       },
       {
         "Name": "CircularUINavigation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x160"
+        "Offset": "0x164"
       },
       {
         "Name": "Enable120Hz",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x161"
+        "Offset": "0x165"
       },
       {
         "Name": "AlwaysSkipMapTableAnimation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x162"
+        "Offset": "0x166"
       },
       {
         "Name": "AudioMonoMix",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x163"
+        "Offset": "0x167"
       },
       {
         "Name": "AudioOutputHeadphones",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x164"
+        "Offset": "0x168"
       },
       {
         "Name": "AudioOutputSpatialAudio",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x165"
+        "Offset": "0x169"
       },
       {
         "Name": "DisableSeasonsNotifications",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x166"
+        "Offset": "0x16a"
       },
       {
         "Name": "AllowCrewToCustomiseCaptainedShip",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x167"
+        "Offset": "0x16b"
       },
       {
         "Name": "EnableTutorialAttractAnimation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x168"
+        "Offset": "0x16c"
       },
       {
         "Name": "DisableInviteNotifications",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x169"
+        "Offset": "0x16d"
       },
       {
         "Name": "ControlledTextAlignment",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x16a"
+        "Offset": "0x16e"
       },
       {
         "Name": "ControlledLineHeight",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x16b"
+        "Offset": "0x16f"
       },
       {
         "Name": "OtherCrewsMuteState",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x16c"
+        "Offset": "0x170"
       },
       {
         "Name": "NauticalNarrationEnabled",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x170"
+        "Offset": "0x174"
       },
       {
         "Name": "NarrateInteractableText",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x174"
+        "Offset": "0x178"
       },
       {
         "Name": "NarrateInteractableButtons",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x178"
+        "Offset": "0x17c"
       },
       {
         "Name": "IgnoreDisabledInteractables",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x17c"
+        "Offset": "0x180"
       },
       {
         "Name": "NarrationInitialDelaySeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x180"
+        "Offset": "0x184"
       },
       {
         "Name": "RepeatTooltipNarration",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x184"
+        "Offset": "0x188"
       },
       {
         "Name": "NarrationRepeatingDelaySeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x188"
+        "Offset": "0x18c"
       },
       {
         "Name": "RenarrateAfterClosingMenus",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x18c"
+        "Offset": "0x190"
       },
       {
         "Name": "FishNameplateNarrationEnabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x18d"
+        "Offset": "0x191"
       },
       {
         "Name": "ContinuousNarrationDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x190"
+        "Offset": "0x194"
       },
       {
         "Name": "DisableFlashes",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x194"
+        "Offset": "0x198"
       },
       {
         "Name": "DisableBlur",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x195"
+        "Offset": "0x199"
       },
       {
         "Name": "DisableScreenShake",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x196"
+        "Offset": "0x19a"
       },
       {
         "Name": "DisableOnScreenEffects",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x197"
+        "Offset": "0x19b"
       },
       {
         "Name": "EnchantedCompassProximityAnnouncerEnabled",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x198"
+        "Offset": "0x19c"
       },
       {
         "Name": "DisableRats",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x199"
+        "Offset": "0x19d"
       },
       {
         "Name": "EnableSqueakyWheel",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x19a"
+        "Offset": "0x19e"
       },
       {
         "Name": "SqueakyWheelVolume",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x19c"
+        "Offset": "0x1a0"
       },
       {
         "Name": "DisableShipSittingInteractions",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1a0"
+        "Offset": "0x1a4"
       },
       {
         "Name": "DisableShipTrinketInteractions",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1a1"
+        "Offset": "0x1a5"
       }
     ]
   },
@@ -45185,7 +45362,7 @@
     ]
   },
   "ServerTelemetryFragment": {
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "ServerSessionId",
@@ -45218,16 +45395,28 @@
         "Offset": "0x48"
       },
       {
+        "Name": "PrivateServerId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ServerIsPrivateServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
         "Name": "ServerIsActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x58"
+        "Offset": "0x69"
       },
       {
         "Name": "ServerIsXboxPadOnlySession",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x59"
+        "Offset": "0x6a"
       }
     ]
   },
@@ -51735,6 +51924,17 @@
       }
     ]
   },
+  "ShipResurfaceWetnessHandle": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ShipWetnessActor",
+        "Type": "Class ShipResurfaceWetnessActor*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "SinkingShipParams": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -51824,6 +52024,17 @@
       }
     ]
   },
+  "NewCaptaincyCustomisationEquipped": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Desc",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventCustomizableActorChanged": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -51838,17 +52049,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ShipAnnouncementUpdatedEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ShipActor",
-        "Type": "Class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },
@@ -52983,6 +53183,10 @@
         "Offset": "0x0"
       }
     ]
+  },
+  "EventShipScuttled": {
+    "ClassSize": "0x10",
+    "Attributes": []
   },
   "EventScuttleShip": {
     "ClassSize": "0x1",
@@ -56059,7 +56263,7 @@
     ]
   },
   "BuoyantObjectSpawnProfile": {
-    "ClassSize": "0xe8",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
         "Name": "TravelDistanceToSpawnObjects",
@@ -56068,88 +56272,94 @@
         "Offset": "0x0"
       },
       {
+        "Name": "MaximumDistanceThresholdToIncrementCurrentDistanceTravelled",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
         "Name": "NumberOfBarrelsToSpawn",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
-        "Offset": "0x30"
+        "Offset": "0x38"
       },
       {
         "Name": "NumberOfSpecialItemTypesToSpawn",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "SpawnCentreDistanceInFrontOfShip",
         "Type": "Struct FloatRange",
         "Size": "0x10",
-        "Offset": "0x70"
+        "Offset": "0x78"
       },
       {
         "Name": "SpawnCentreOffsetFromShipPath",
         "Type": "Struct FloatRange",
         "Size": "0x10",
-        "Offset": "0x80"
+        "Offset": "0x88"
       },
       {
         "Name": "ObjectSpawnDepth",
         "Type": "Struct FloatRange",
         "Size": "0x10",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "ObjectLifetime",
         "Type": "Struct FloatRange",
         "Size": "0x10",
-        "Offset": "0xa0"
+        "Offset": "0xa8"
       },
       {
         "Name": "ObjectSinkingTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xb0"
+        "Offset": "0xb8"
       },
       {
         "Name": "ObjectSinkRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xb4"
+        "Offset": "0xbc"
       },
       {
         "Name": "MinShipSpeedInKnotsToSpawnObjects",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xb8"
+        "Offset": "0xc0"
       },
       {
         "Name": "WildlifeSpawnHeight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xbc"
+        "Offset": "0xc4"
       },
       {
         "Name": "ChanceOfSpawningSpecialItems",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "WildlifeType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xc8"
+        "Offset": "0xd0"
       },
       {
         "Name": "BarrelType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xd0"
+        "Offset": "0xd8"
       },
       {
         "Name": "SpecialItemTypes",
         "Type": "TArray<Struct BuoyantObjectWeightedGroup>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xe0"
       }
     ]
   },
@@ -57186,6 +57396,17 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
+  "EventPopUpNotificationComponentInitialised": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AthenaController",
+        "Type": "Class Controller*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventPlayerCharacterLeft": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -57628,6 +57849,52 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x9e"
+      }
+    ]
+  },
+  "MigratableMPSDFallbackData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CaptainUserId",
+        "Type": "Struct UniqueNetIdRepl",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ReconnectTimeRemaining",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MPSDFallbackData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CaptainUserId",
+        "Type": "Struct UniqueNetIdRepl",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ReconnectExpiryTimerHandle",
+        "Type": "Struct TimerHandle",
+        "Size": "0x4",
+        "Offset": "0x28"
       }
     ]
   },
@@ -62882,6 +63149,53 @@
     "ClassSize": "0x30",
     "Attributes": []
   },
+  "NPCData": {
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "NPC",
+        "Type": "Struct NetActorPtr",
+        "Size": "0x14",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Id",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "Name",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Location",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "IslandNameLocalised",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "GrammaticalGender",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xb0"
+      }
+    ]
+  },
   "WeightedGoldReward": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -63002,13 +63316,19 @@
     ]
   },
   "ItemStoredInChestEvent": {
-    "ClassSize": "0x8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StoredItem",
         "Type": "Class ItemInfo*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "CollectorsChestStoredIn",
+        "Type": "Class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -63221,53 +63541,6 @@
   "DismissRetrieveBootyActorEvent": {
     "ClassSize": "0x1",
     "Attributes": []
-  },
-  "NPCData": {
-    "ClassSize": "0xb8",
-    "Attributes": [
-      {
-        "Name": "NPC",
-        "Type": "Struct NetActorPtr",
-        "Size": "0x14",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Id",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "Name",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Location",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x6c"
-      },
-      {
-        "Name": "IslandNameLocalised",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "GrammaticalGender",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xb0"
-      }
-    ]
   },
   "NPCDialogOverrideTypeWithConditionalsUnit": {
     "ClassSize": "0x18",
@@ -63628,6 +63901,17 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
+  "AllowedInteractableTypes": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CollisionProfileName",
+        "Type": "Struct CollisionProfileName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "EventGameNarrationClientNotificationMessage": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -63791,7 +64075,7 @@
     "Attributes": [
       {
         "Name": "OtherCutscene",
-        "Type": "Class CoordinatedCutsceneTrigger*",
+        "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -64945,6 +65229,17 @@
       }
     ]
   },
+  "TaleVoteAdded": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Voter",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SeaRock": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -65047,6 +65342,100 @@
       }
     ]
   },
+  "StarFieldPuzzleAudioParams": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "WwisePool",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwiseEmitterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ConstellationStartEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ConstellationFinishedEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "StarsGlowingStartLoopEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "StarsGlowingStopLoopEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ConstellationCompletedMusicStartEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ConstellationCompletedMusicStopEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "StarFieldRevealerMaskAudioParams": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "WwisePool",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwiseEmitterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WearMaskEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RemoveMaskEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaskSkySpinSFXEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "MaskSkySpinMusicEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
   "MaskPostProcessParams": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -65120,6 +65509,17 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "StarFieldMaskClearSpinQueue": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -65360,7 +65760,7 @@
     ]
   },
   "ShipStorageJettisonRequest": {
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "LoadedAsset",
@@ -65377,13 +65777,13 @@
     ]
   },
   "JettisonedStorageContainerHandle": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "StorageContainer",
         "Type": "Class Actor*",
         "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x20"
       }
     ]
   },
@@ -65401,6 +65801,17 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "ShipStorageJettisonEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "JettisonedContainers",
+        "Type": "TArray<Weakclass JettisonedContainers>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -66840,24 +67251,24 @@
     "Attributes": []
   },
   "EmblemRuntimeDefinition": {
-    "ClassSize": "0x140",
+    "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "UnlockPopUp",
         "Type": "Class PopUpMessageDesc*",
         "Size": "0x8",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
         "Name": "UnlockPopUpAudioOverrides",
         "Type": "Class PopUpAudioDesc*",
         "Size": "0x8",
-        "Offset": "0x138"
+        "Offset": "0x148"
       }
     ]
   },
   "EmblemProgressRuntimeDefinition": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x28",
     "Attributes": []
   },
   "MechanismMaterialMapEntry": {
@@ -66885,17 +67296,6 @@
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "AllowedInteractableTypes": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CollisionProfileName",
-        "Type": "Struct CollisionProfileName",
-        "Size": "0x8",
-        "Offset": "0x20"
       }
     ]
   },
@@ -69623,6 +70023,28 @@
       }
     ]
   },
+  "InvasionTunnelCreatureDioramaSpawnManager": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DioramaRestrictedSpawnSettings",
+        "Type": "TArray<Struct InvasionTunnelDioramaRestrictedSpawnSettings>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "InvasionTunnelDioramaRestrictedSpawnSettings": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Conditions",
+        "Type": "TArray<class InvasionTunnelDioramaSpawnCondition*>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "ShipSpecificData": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -69874,14 +70296,43 @@
       }
     ]
   },
+  "InvasionArrivalTunnelOfTheDamnedCompletedTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RivalCrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TunnelCrewSkillScore",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "RivalCrewSkillScore",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
   "InvasionDepartureTunnelOfTheDamnedInitializedTelemetryEvent": {
-    "ClassSize": "0x1",
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "RequestedSessionType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "CrewSkillScore",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -69953,7 +70404,7 @@
     ]
   },
   "TunnelOfTheDamnedBaseTelemetryFragmentInput": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "TunnelInstanceId",
@@ -69966,11 +70417,17 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "TunnelLifetimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
   "TunnelOfTheDamnedBaseTelemetryFragment": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "TunnelInstanceId",
@@ -69983,6 +70440,12 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "TunnelLifetimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -72339,10 +72802,16 @@
         "Offset": "0x0"
       },
       {
+        "Name": "StatId",
+        "Type": "Struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
         "Name": "LogEntryType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8"
+        "Offset": "0xc"
       },
       {
         "Name": "Image",
@@ -72482,7 +72951,7 @@
     ]
   },
   "CaptainsLogbookServiceCache": {
-    "ClassSize": "0x78",
+    "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "ShipName",
@@ -72491,52 +72960,58 @@
         "Offset": "0x0"
       },
       {
-        "Name": "ShipTitleIndex",
+        "Name": "ScrambledShipNameIndex",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
       },
       {
+        "Name": "ShipTitleIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
         "Name": "StatsEntry",
         "Type": "Struct CaptainsLogCrewSessionStatsEntry",
         "Size": "0x24",
-        "Offset": "0x14"
+        "Offset": "0x18"
       },
       {
         "Name": "CrewMembers",
         "Type": "TArray<Struct CaptainsLogbookCrewMember>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x40"
       },
       {
         "Name": "ShipType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x48"
+        "Offset": "0x50"
       },
       {
         "Name": "ShipAccolades",
         "Type": "TArray<Struct NetAccoladeModel>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "CrewEventLog",
         "Type": "TArray<Struct CrewEventLogEntry>",
         "Size": "0x10",
-        "Offset": "0x60"
+        "Offset": "0x68"
       },
       {
         "Name": "IsValid",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x70"
+        "Offset": "0x78"
       },
       {
         "Name": "IsRuinedLog",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x71"
+        "Offset": "0x79"
       }
     ]
   },
@@ -72641,7 +73116,7 @@
     ]
   },
   "CaptainsLogServiceEntry": {
-    "ClassSize": "0x128",
+    "ClassSize": "0x130",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -72652,20 +73127,20 @@
       {
         "Name": "Cache",
         "Type": "Struct CaptainsLogbookServiceCache",
-        "Size": "0x78",
+        "Size": "0x80",
         "Offset": "0x10"
       },
       {
         "Name": "PinnedShipAccolades",
         "Type": "Struct CaptainsLogPinnedAccoladeEntries",
         "Size": "0x30",
-        "Offset": "0x88"
+        "Offset": "0x90"
       },
       {
         "Name": "CustomizationPartDesc",
         "Type": "Struct PartDesc",
         "Size": "0x20",
-        "Offset": "0x108"
+        "Offset": "0x110"
       }
     ]
   },
@@ -80014,6 +80489,23 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipAnnouncementLoadoutUpdatedEventRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Controller",
+        "Type": "Class Controller*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ShipGuid",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },

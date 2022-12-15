@@ -2,15 +2,19 @@
 # https://github.com/DougTheDruid
 BP_ShipWeaponsChest_C:
   Attributes:
-  - Name: AddCrewLockableActionRule
+  - Name: CrewLockableComponent
     Offset: '0x590'
     Size: '0x8'
-    Type: Class AddCrewLockableActionRuleComponent*
-  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+    Type: Class CrewLockableComponent*
+  - Name: LockMesh
     Offset: '0x598'
     Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+    Offset: '0x5a0'
+    Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  ClassSize: '0x10'
-  FullSize: '0x5a0'
+  ClassSize: '0x18'
+  FullSize: '0x5a8'
   InheritedSize: '0x590'
   Super: PossessionsChest

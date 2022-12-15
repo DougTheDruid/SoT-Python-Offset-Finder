@@ -3,14 +3,14 @@
 BP_TunnelOfTheDamnedPortal_Ship_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x638'
+    Offset: '0x650'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: SynchedMusicZone
-    Offset: '0x640'
+    Offset: '0x658'
     Size: '0x8'
     Type: Class SynchedMusicZoneComponent*
   ClassSize: '0x10'
-  FullSize: '0x648'
-  InheritedSize: '0x638'
+  FullSize: '0x660'
+  InheritedSize: '0x650'
   Super: TunnelOfTheDamnedPortal

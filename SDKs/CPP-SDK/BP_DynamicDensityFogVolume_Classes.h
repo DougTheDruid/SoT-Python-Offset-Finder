@@ -22,7 +22,7 @@ public:
 	int                                                          Width;                                             // 0x418(0x4)
 	int                                                          Height;                                            // 0x41c(0x4)
 	bool                                                         UseStateParameters;                                // 0x420(0x1)
-	TArray<Struct StateTextures>                                 StateParams;                                       // 0x428(0x10)
+	TArray<Struct Texture2D>                                     StateParams;                                       // 0x428(0x10)
 };
 
 

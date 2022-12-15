@@ -109,11 +109,27 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x20
+struct UserDefinedStructWithSerialisableValue
+{
+public:
+	Class ScriptStruct*                                          InternalStruct;                                    // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct ConfigurableStructureInstanceWrapper
+{
+public:
+	Struct UserDefinedStructWithSerialisableValue                Value;                                             // 0x0(0x20)
+};
+
+
+// Size 0x20
 struct InlineUserDefinedStructDetails
 {
 public:
-	Class ScriptStruct*                                          Struct;                                            // 0x0(0x8)
+	Struct UserDefinedStructWithSerialisableValue                StructWithDefaults;                                // 0x0(0x20)
 };
 
 

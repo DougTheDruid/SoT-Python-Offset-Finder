@@ -127,4 +127,13 @@ public:
 };
 
 
+// Size 0x20
+class MovieAssetContainer: public DataAsset
+{
+public:
+	TArray<class MediaTexture*>                                  MediaTextures;                                     // 0x28(0x10)
+	TArray<class MediaPlayer*>                                   MediaPlayers;                                      // 0x38(0x10)
+};
+
+
 }

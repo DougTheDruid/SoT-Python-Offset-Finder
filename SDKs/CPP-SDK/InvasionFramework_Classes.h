@@ -96,7 +96,7 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x40
 class InvasionBattleBounds: public Actor
 {
 public:
@@ -105,7 +105,8 @@ public:
 	Class Actor*                                                 ShipToTrack2;                                      // 0x3d8(0x8)
 	float                                                        InnerRadius;                                       // 0x3e0(0x4)
 	float                                                        OuterRadius;                                       // 0x3e4(0x4)
-	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x3f0(0x10)
+	Class Actor*                                                 ShipThatWasDestroyed;                              // 0x3f0(0x8)
+	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x3f8(0x10)
 };
 
 
@@ -163,19 +164,19 @@ public:
 };
 
 
-// Size 0x270
+// Size 0x288
 class InvasionService: public Actor
 {
 public:
 	Class InvasionSettings*                                      InvasionSettings;                                  // 0x408(0x8)
 	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x410(0x8)
 	Class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x418(0x8)
-	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x570(0x10)
-	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x580(0x10)
-	TArray<Struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x590(0x10)
-	TArray<Struct InvasionServiceMatchmakingCrewInfo>            MatchmakingCrewsReplicated;                        // 0x5a0(0x10)
-	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x5b0(0x10)
-	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x5c0(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x588(0x10)
+	TArray<Struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x598(0x10)
+	TArray<Struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x5a8(0x10)
+	TArray<Struct InvasionServiceMatchmakingCrewInfo>            MatchmakingCrewsReplicated;                        // 0x5b8(0x10)
+	TArray<Struct Guid>                                          InvadingCrewsReplicated;                           // 0x5c8(0x10)
+	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x5d8(0x10)
 };
 
 
@@ -218,7 +219,7 @@ public:
 };
 
 
-// Size 0xb0
+// Size 0x190
 class TaleQuestInvasionMatchmakingService: public TaleQuestService
 {
 public:

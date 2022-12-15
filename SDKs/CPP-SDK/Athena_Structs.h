@@ -86,6 +86,15 @@ public:
 };
 
 
+// Size 0x18
+struct FeatureToggledFogBankManagerAsset
+{
+public:
+	Struct FeatureFlag                                           FeatureToggle;                                     // 0x0(0xc)
+	Class FogBankManagerDataAsset*                               Asset;                                             // 0x10(0x8)
+};
+
+
 // Size 0x10
 struct FogBankManagerFogAvoidanceArea
 {
@@ -3743,12 +3752,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x18
 struct CatalogOfferBundleDataAsset
 {
 public:
-	Class CatalogOfferDataAsset*                                 OwningBundle;                                      // 0x0(0x8)
-	Struct StringAssetReference                                  TileImage;                                         // 0x10(0x10)
+	Struct StringAssetReference                                  TileImage;                                         // 0x8(0x10)
 };
 
 
@@ -5511,6 +5519,15 @@ public:
 };
 
 
+// Size 0x18
+struct FeatureToggledFogBankAsset
+{
+public:
+	Struct FeatureFlag                                           FeatureToggle;                                     // 0x0(0xc)
+	Class FogBankDataAsset*                                      Asset;                                             // 0x10(0x8)
+};
+
+
 // Size 0x4c
 struct FogBankSettings
 {
@@ -6565,15 +6582,6 @@ public:
 };
 
 
-// Size 0x2
-struct FlameData
-{
-public:
-	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
-	bool                                                         SkipChangeAnimation;                               // 0x1(0x1)
-};
-
-
 // Size 0x40
 struct LaunchableProjectileState
 {
@@ -7605,12 +7613,21 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x20
 struct CatalogDescTab
 {
 public:
 	Struct StringAssetReference                                  FilterIcon;                                        // 0x0(0x10)
 	Class CatalogDataAsset*                                      Catalog;                                           // 0x10(0x8)
+	Struct ShopCatalogDesc                                       CatalogData;                                       // 0x18(0x1)
+};
+
+
+// Size 0x1
+struct ShopCatalogDesc
+{
+public:
+	byte                                                         CurrencyType;                                      // 0x0(0x1)
 };
 
 
@@ -8255,7 +8272,7 @@ public:
 struct PlayerModerationReportablePlayers
 {
 public:
-	Struct FString                                               ReportingGamertag;                                 // 0x0(0x10)
+	Struct FString                                               ReportingGamerTag;                                 // 0x0(0x10)
 	Struct FString                                               ReportingXUID;                                     // 0x10(0x10)
 	TArray<Struct PlayerModerationReportablePlayerDetails>       Players;                                           // 0x20(0x10)
 };
@@ -8265,8 +8282,8 @@ public:
 struct PlayerModerationReportablePlayerDetails
 {
 public:
-	Struct FString                                               ReportableGamertag;                                // 0x0(0x10)
-	Struct FString                                               ScrambledGamertag;                                 // 0x10(0x10)
+	Struct FString                                               ReportableGamerTag;                                // 0x0(0x10)
+	Struct FString                                               ScrambledGamerTag;                                 // 0x10(0x10)
 	Struct FString                                               XUID;                                              // 0x20(0x10)
 };
 
@@ -8286,7 +8303,7 @@ struct RecentlyInteractedWithPlayer
 {
 public:
 	Struct FString                                               GamerTag;                                          // 0x0(0x10)
-	Struct FString                                               ScrambledGamertag;                                 // 0x10(0x10)
+	Struct FString                                               ScrambledGamerTag;                                 // 0x10(0x10)
 	Struct FString                                               XUID;                                              // 0x20(0x10)
 	Struct DateTime                                              LastInteractionTime;                               // 0x30(0x8)
 };
@@ -8435,23 +8452,21 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x40
 struct PremiumShopOfferItem
 {
 public:
-	Class CatalogOfferDataAsset*                                 Offer;                                             // 0x0(0x8)
-	bool                                                         IsSuperPremium;                                    // 0x8(0x1)
-	Struct FText                                                 LockedReason;                                      // 0x10(0x38)
+	bool                                                         IsSuperPremium;                                    // 0x0(0x1)
+	Struct FText                                                 LockedReason;                                      // 0x8(0x38)
 };
 
 
-// Size 0x48
+// Size 0x40
 struct PremiumShopBundleOfferItem
 {
 public:
-	Class CatalogOfferDataAsset*                                 Offer;                                             // 0x0(0x8)
-	bool                                                         IsPurchasable;                                     // 0x8(0x1)
-	Struct FText                                                 LockedReason;                                      // 0x10(0x38)
+	bool                                                         IsPurchasable;                                     // 0x0(0x1)
+	Struct FText                                                 LockedReason;                                      // 0x8(0x38)
 };
 
 
@@ -8847,13 +8862,12 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x20
 struct CatalogTab
 {
 public:
 	Struct FString                                               CatalogName;                                       // 0x0(0x10)
-	Struct FString                                               CatalogDisplayName;                                // 0x10(0x10)
-	Struct FString                                               CatalogTabImageUrl;                                // 0x20(0x10)
+	Struct FString                                               CatalogTabImageUrl;                                // 0x10(0x10)
 };
 
 
@@ -16640,7 +16654,7 @@ public:
 };
 
 
-// Size 0x90
+// Size 0xe0
 struct CommerceRemoteServicePurchaseRequest
 {
 public:
@@ -16648,16 +16662,25 @@ public:
 	Struct Guid                                                  OfferId;                                           // 0x10(0x10)
 	byte                                                         CurrencyId;                                        // 0x20(0x1)
 	Struct FString                                               TransactionId;                                     // 0x28(0x10)
-	Struct PiratePurchaseClaims                                  PiratePurchaseClaims;                              // 0x38(0x50)
-	byte                                                         PlayMode;                                          // 0x88(0x1)
-	byte                                                         PlayModeVariant;                                   // 0x89(0x1)
+	Struct PiratePurchaseClaims                                  PiratePurchaseClaims;                              // 0x38(0xa0)
+	byte                                                         PlayMode;                                          // 0xd8(0x1)
+	byte                                                         PlayModeVariant;                                   // 0xd9(0x1)
 };
 
 
-// Size 0x50
+// Size 0xa0
 struct PiratePurchaseClaims
 {
 public:
+};
+
+
+// Size 0x18
+struct EmblemClaim
+{
+public:
+	bool                                                         IsCompleted;                                       // 0x0(0x1)
+	Struct FString                                               Sig;                                               // 0x8(0x10)
 };
 
 
@@ -16842,7 +16865,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 struct EmblemRemoteProgress
 {
 public:
@@ -16850,6 +16873,7 @@ public:
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)
 	bool                                                         IsCompleted;                                       // 0x18(0x1)
 	TArray<Struct EmblemRemoteCriteriaProgress>                  CriteriaProgress;                                  // 0x20(0x10)
+	Struct FString                                               Sig;                                               // 0x30(0x10)
 };
 
 
@@ -16952,7 +16976,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 struct EmblemProgress
 {
 public:
@@ -16960,6 +16984,7 @@ public:
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)
 	bool                                                         IsCompleted;                                       // 0x18(0x1)
 	TArray<Struct EmblemCriteriaProgress>                        CriteriaProgress;                                  // 0x20(0x10)
+	Struct FString                                               Sig;                                               // 0x30(0x10)
 };
 
 
@@ -16996,11 +17021,12 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x20
 struct EmblemUnlockedEvent
 {
 public:
 	Struct Guid                                                  EmblemId;                                          // 0x0(0x10)
+	Struct FString                                               Sig;                                               // 0x10(0x10)
 };
 
 
@@ -17012,12 +17038,13 @@ public:
 };
 
 
-// Size 0x88
+// Size 0x98
 struct EmblemUnlockedMessage
 {
 public:
 	Struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
 	Struct Guid                                                  EmblemId;                                          // 0x78(0x10)
+	Struct FString                                               Sig;                                               // 0x88(0x10)
 };
 
 
@@ -17255,15 +17282,15 @@ public:
 };
 
 
-// Size 0x158
+// Size 0x160
 struct RemotePreferencesModel
 {
 public:
-	Struct RemotePreferences                                     Preferences;                                       // 0x0(0x158)
+	Struct RemotePreferences                                     Preferences;                                       // 0x0(0x160)
 };
 
 
-// Size 0x158
+// Size 0x160
 struct RemotePreferences
 {
 public:
@@ -17359,37 +17386,39 @@ public:
 	bool                                                         DisableControllerOnPC;                             // 0x11c(0x1)
 	bool                                                         RecenterMouseInMenus;                              // 0x11d(0x1)
 	bool                                                         AutoFloatInWater;                                  // 0x11e(0x1)
-	int                                                          PushToTalkMode;                                    // 0x120(0x4)
-	bool                                                         CircularUINavigation;                              // 0x124(0x1)
-	bool                                                         Enable120Hz;                                       // 0x125(0x1)
-	bool                                                         AlwaysSkipMapTableAnimation;                       // 0x126(0x1)
-	bool                                                         AudioMonoMix;                                      // 0x127(0x1)
-	bool                                                         AudioOutputHeadphones;                             // 0x128(0x1)
-	bool                                                         DisableSeasonsNotifications;                       // 0x129(0x1)
-	bool                                                         AllowCrewToCustomiseCaptainedShip;                 // 0x12a(0x1)
-	bool                                                         EnableTutorialAttractAnimation;                    // 0x12b(0x1)
-	bool                                                         DisableInviteNotifications;                        // 0x12c(0x1)
-	bool                                                         ControlledTextAlignment;                           // 0x12d(0x1)
-	bool                                                         ControlledLineHeight;                              // 0x12e(0x1)
-	int                                                          OtherCrewsMuteState;                               // 0x130(0x4)
-	int                                                          NauticalNarrationEnabled;                          // 0x134(0x4)
-	bool                                                         NarrateInteractableText;                           // 0x138(0x1)
-	bool                                                         NarrateInteractableButtons;                        // 0x139(0x1)
-	bool                                                         IgnoreDisabledInteractables;                       // 0x13a(0x1)
-	bool                                                         FishNameplateNarrationEnabled;                     // 0x13b(0x1)
-	bool                                                         UseContinuousNarration;                            // 0x13c(0x1)
-	float                                                        ContinuousNarrationDelay;                          // 0x140(0x4)
-	bool                                                         DisableFlashes;                                    // 0x144(0x1)
-	bool                                                         DisableBlur;                                       // 0x145(0x1)
-	bool                                                         DisableScreenShake;                                // 0x146(0x1)
-	bool                                                         DisableOnScreenEffects;                            // 0x147(0x1)
-	bool                                                         EnchantedCompassProximityAnnouncerEnabled;         // 0x148(0x1)
-	bool                                                         DisableRats;                                       // 0x149(0x1)
-	bool                                                         EnableSqueakyWheel;                                // 0x14a(0x1)
-	float                                                        SqueakyWheelVolume;                                // 0x14c(0x4)
-	int                                                          RemoteGameLanguage;                                // 0x150(0x4)
-	bool                                                         DisableShipSittingInteractions;                    // 0x154(0x1)
-	bool                                                         DisableShipTrinketInteractions;                    // 0x155(0x1)
+	bool                                                         DisablePirateToast;                                // 0x11f(0x1)
+	bool                                                         DisableShipToast;                                  // 0x120(0x1)
+	int                                                          PushToTalkMode;                                    // 0x124(0x4)
+	bool                                                         CircularUINavigation;                              // 0x128(0x1)
+	bool                                                         Enable120Hz;                                       // 0x129(0x1)
+	bool                                                         AlwaysSkipMapTableAnimation;                       // 0x12a(0x1)
+	bool                                                         AudioMonoMix;                                      // 0x12b(0x1)
+	bool                                                         AudioOutputHeadphones;                             // 0x12c(0x1)
+	bool                                                         DisableSeasonsNotifications;                       // 0x12d(0x1)
+	bool                                                         AllowCrewToCustomiseCaptainedShip;                 // 0x12e(0x1)
+	bool                                                         EnableTutorialAttractAnimation;                    // 0x12f(0x1)
+	bool                                                         DisableInviteNotifications;                        // 0x130(0x1)
+	bool                                                         ControlledTextAlignment;                           // 0x131(0x1)
+	bool                                                         ControlledLineHeight;                              // 0x132(0x1)
+	int                                                          OtherCrewsMuteState;                               // 0x134(0x4)
+	int                                                          NauticalNarrationEnabled;                          // 0x138(0x4)
+	bool                                                         NarrateInteractableText;                           // 0x13c(0x1)
+	bool                                                         NarrateInteractableButtons;                        // 0x13d(0x1)
+	bool                                                         IgnoreDisabledInteractables;                       // 0x13e(0x1)
+	bool                                                         FishNameplateNarrationEnabled;                     // 0x13f(0x1)
+	bool                                                         UseContinuousNarration;                            // 0x140(0x1)
+	float                                                        ContinuousNarrationDelay;                          // 0x144(0x4)
+	bool                                                         DisableFlashes;                                    // 0x148(0x1)
+	bool                                                         DisableBlur;                                       // 0x149(0x1)
+	bool                                                         DisableScreenShake;                                // 0x14a(0x1)
+	bool                                                         DisableOnScreenEffects;                            // 0x14b(0x1)
+	bool                                                         EnchantedCompassProximityAnnouncerEnabled;         // 0x14c(0x1)
+	bool                                                         DisableRats;                                       // 0x14d(0x1)
+	bool                                                         EnableSqueakyWheel;                                // 0x14e(0x1)
+	float                                                        SqueakyWheelVolume;                                // 0x150(0x4)
+	int                                                          RemoteGameLanguage;                                // 0x154(0x4)
+	bool                                                         DisableShipSittingInteractions;                    // 0x158(0x1)
+	bool                                                         DisableShipTrinketInteractions;                    // 0x159(0x1)
 };
 
 
@@ -18359,6 +18388,60 @@ public:
 };
 
 
+// Size 0x28
+struct MeshMemoryConstraintCapstanDelayedHealthReport
+{
+public:
+	bool                                                         BodyMeshIsNotNull;                                 // 0x18(0x1)
+	bool                                                         ReleaseMeshIsNotNull;                              // 0x19(0x1)
+	int                                                          NumberOfArmSubActors;                              // 0x1c(0x4)
+	int                                                          NumberOfArmsNotNull;                               // 0x20(0x4)
+};
+
+
+// Size 0x18
+struct MeshMemoryConstraintShipPartMeshSetDelayedHealthReport
+{
+public:
+	bool                                                         DescIsNotNull;                                     // 0x0(0x1)
+	bool                                                         DidMakeAttemptToSetMesh;                           // 0x1(0x1)
+	Struct FString                                               DescAssetPathName;                                 // 0x8(0x10)
+};
+
+
+// Size 0x20
+struct MeshMemoryConstraintWheelDelayedHealthReport
+{
+public:
+	bool                                                         WheelMeshIsNotNull;                                // 0x18(0x1)
+};
+
+
+// Size 0x20
+struct MeshMemoryConstraintCannonDelayedHealthReport
+{
+public:
+	bool                                                         BoxMeshIsNotNull;                                  // 0x18(0x1)
+	bool                                                         BarrelMeshIsNotNull;                               // 0x19(0x1)
+};
+
+
+// Size 0x10
+struct MeshMemoryConstraintShipPartReceivedShipSafeDeclaration
+{
+public:
+	Struct FString                                               ShipPartName;                                      // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct MeshMemoryConstraintShipPartCannotSetAsShipIsUnsafe
+{
+public:
+	Struct FString                                               ShipPartName;                                      // 0x0(0x10)
+};
+
+
 // Size 0x2
 struct VoiceChatStatusTelemetryEvent
 {
@@ -18500,40 +18583,42 @@ public:
 	bool                                                         DisableControllerOnPC;                             // 0x158(0x1)
 	bool                                                         RecenterMouseInMenus;                              // 0x159(0x1)
 	bool                                                         AutoFloatInWater;                                  // 0x15a(0x1)
-	int                                                          PushToTalkMode;                                    // 0x15c(0x4)
-	bool                                                         CircularUINavigation;                              // 0x160(0x1)
-	bool                                                         Enable120Hz;                                       // 0x161(0x1)
-	bool                                                         AlwaysSkipMapTableAnimation;                       // 0x162(0x1)
-	bool                                                         AudioMonoMix;                                      // 0x163(0x1)
-	bool                                                         AudioOutputHeadphones;                             // 0x164(0x1)
-	bool                                                         AudioOutputSpatialAudio;                           // 0x165(0x1)
-	bool                                                         DisableSeasonsNotifications;                       // 0x166(0x1)
-	bool                                                         AllowCrewToCustomiseCaptainedShip;                 // 0x167(0x1)
-	bool                                                         EnableTutorialAttractAnimation;                    // 0x168(0x1)
-	bool                                                         DisableInviteNotifications;                        // 0x169(0x1)
-	bool                                                         ControlledTextAlignment;                           // 0x16a(0x1)
-	bool                                                         ControlledLineHeight;                              // 0x16b(0x1)
-	int                                                          OtherCrewsMuteState;                               // 0x16c(0x4)
-	int                                                          NauticalNarrationEnabled;                          // 0x170(0x4)
-	bool                                                         NarrateInteractableText;                           // 0x174(0x1)
-	int                                                          NarrateInteractableButtons;                        // 0x178(0x4)
-	bool                                                         IgnoreDisabledInteractables;                       // 0x17c(0x1)
-	float                                                        NarrationInitialDelaySeconds;                      // 0x180(0x4)
-	bool                                                         RepeatTooltipNarration;                            // 0x184(0x1)
-	float                                                        NarrationRepeatingDelaySeconds;                    // 0x188(0x4)
-	bool                                                         RenarrateAfterClosingMenus;                        // 0x18c(0x1)
-	bool                                                         FishNameplateNarrationEnabled;                     // 0x18d(0x1)
-	float                                                        ContinuousNarrationDelay;                          // 0x190(0x4)
-	bool                                                         DisableFlashes;                                    // 0x194(0x1)
-	bool                                                         DisableBlur;                                       // 0x195(0x1)
-	bool                                                         DisableScreenShake;                                // 0x196(0x1)
-	bool                                                         DisableOnScreenEffects;                            // 0x197(0x1)
-	bool                                                         EnchantedCompassProximityAnnouncerEnabled;         // 0x198(0x1)
-	bool                                                         DisableRats;                                       // 0x199(0x1)
-	bool                                                         EnableSqueakyWheel;                                // 0x19a(0x1)
-	float                                                        SqueakyWheelVolume;                                // 0x19c(0x4)
-	bool                                                         DisableShipSittingInteractions;                    // 0x1a0(0x1)
-	bool                                                         DisableShipTrinketInteractions;                    // 0x1a1(0x1)
+	bool                                                         DisablePirateToast;                                // 0x15b(0x1)
+	bool                                                         DisableShipToast;                                  // 0x15c(0x1)
+	int                                                          PushToTalkMode;                                    // 0x160(0x4)
+	bool                                                         CircularUINavigation;                              // 0x164(0x1)
+	bool                                                         Enable120Hz;                                       // 0x165(0x1)
+	bool                                                         AlwaysSkipMapTableAnimation;                       // 0x166(0x1)
+	bool                                                         AudioMonoMix;                                      // 0x167(0x1)
+	bool                                                         AudioOutputHeadphones;                             // 0x168(0x1)
+	bool                                                         AudioOutputSpatialAudio;                           // 0x169(0x1)
+	bool                                                         DisableSeasonsNotifications;                       // 0x16a(0x1)
+	bool                                                         AllowCrewToCustomiseCaptainedShip;                 // 0x16b(0x1)
+	bool                                                         EnableTutorialAttractAnimation;                    // 0x16c(0x1)
+	bool                                                         DisableInviteNotifications;                        // 0x16d(0x1)
+	bool                                                         ControlledTextAlignment;                           // 0x16e(0x1)
+	bool                                                         ControlledLineHeight;                              // 0x16f(0x1)
+	int                                                          OtherCrewsMuteState;                               // 0x170(0x4)
+	int                                                          NauticalNarrationEnabled;                          // 0x174(0x4)
+	bool                                                         NarrateInteractableText;                           // 0x178(0x1)
+	int                                                          NarrateInteractableButtons;                        // 0x17c(0x4)
+	bool                                                         IgnoreDisabledInteractables;                       // 0x180(0x1)
+	float                                                        NarrationInitialDelaySeconds;                      // 0x184(0x4)
+	bool                                                         RepeatTooltipNarration;                            // 0x188(0x1)
+	float                                                        NarrationRepeatingDelaySeconds;                    // 0x18c(0x4)
+	bool                                                         RenarrateAfterClosingMenus;                        // 0x190(0x1)
+	bool                                                         FishNameplateNarrationEnabled;                     // 0x191(0x1)
+	float                                                        ContinuousNarrationDelay;                          // 0x194(0x4)
+	bool                                                         DisableFlashes;                                    // 0x198(0x1)
+	bool                                                         DisableBlur;                                       // 0x199(0x1)
+	bool                                                         DisableScreenShake;                                // 0x19a(0x1)
+	bool                                                         DisableOnScreenEffects;                            // 0x19b(0x1)
+	bool                                                         EnchantedCompassProximityAnnouncerEnabled;         // 0x19c(0x1)
+	bool                                                         DisableRats;                                       // 0x19d(0x1)
+	bool                                                         EnableSqueakyWheel;                                // 0x19e(0x1)
+	float                                                        SqueakyWheelVolume;                                // 0x1a0(0x4)
+	bool                                                         DisableShipSittingInteractions;                    // 0x1a4(0x1)
+	bool                                                         DisableShipTrinketInteractions;                    // 0x1a5(0x1)
 };
 
 
@@ -21479,7 +21564,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x70
 struct ServerTelemetryFragment
 {
 public:
@@ -21488,8 +21573,10 @@ public:
 	Struct FString                                               ServerLocation;                                    // 0x28(0x10)
 	Struct FString                                               ServerPlayMode;                                    // 0x38(0x10)
 	Struct FString                                               PlayModeState;                                     // 0x48(0x10)
-	bool                                                         ServerIsActive;                                    // 0x58(0x1)
-	bool                                                         ServerIsXboxPadOnlySession;                        // 0x59(0x1)
+	Struct Guid                                                  PrivateServerId;                                   // 0x58(0x10)
+	bool                                                         ServerIsPrivateServer;                             // 0x68(0x1)
+	bool                                                         ServerIsActive;                                    // 0x69(0x1)
+	bool                                                         ServerIsXboxPadOnlySession;                        // 0x6a(0x1)
 };
 
 
@@ -24870,6 +24957,14 @@ public:
 };
 
 
+// Size 0x20
+struct ShipResurfaceWetnessHandle
+{
+public:
+	Class ShipResurfaceWetnessActor*                             ShipWetnessActor;                                  // 0x18(0x8)
+};
+
+
 // Size 0x38
 struct SinkingShipParams
 {
@@ -24891,20 +24986,20 @@ public:
 };
 
 
+// Size 0x8
+struct NewCaptaincyCustomisationEquipped
+{
+public:
+	class                                                        Desc;                                              // 0x0(0x8)
+};
+
+
 // Size 0x10
 struct EventCustomizableActorChanged
 {
 public:
 	Class Actor*                                                 CustomizableActor;                                 // 0x0(0x8)
 	bool                                                         StripOverrideMaterials;                            // 0x8(0x1)
-};
-
-
-// Size 0x8
-struct ShipAnnouncementUpdatedEvent
-{
-public:
-	Class Actor*                                                 ShipActor;                                         // 0x0(0x8)
 };
 
 
@@ -25653,6 +25748,13 @@ struct EventChangeMatchmakingVisibility
 {
 public:
 	bool                                                         MatchmakingEnabled;                                // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct EventShipScuttled
+{
+public:
 };
 
 
@@ -27488,25 +27590,26 @@ public:
 };
 
 
-// Size 0xe8
+// Size 0xf0
 struct BuoyantObjectSpawnProfile
 {
 public:
 	Struct WeightedProbabilityRangeOfRanges                      TravelDistanceToSpawnObjects;                      // 0x0(0x30)
-	Struct WeightedProbabilityRange                              NumberOfBarrelsToSpawn;                            // 0x30(0x20)
-	Struct WeightedProbabilityRange                              NumberOfSpecialItemTypesToSpawn;                   // 0x50(0x20)
-	Struct FloatRange                                            SpawnCentreDistanceInFrontOfShip;                  // 0x70(0x10)
-	Struct FloatRange                                            SpawnCentreOffsetFromShipPath;                     // 0x80(0x10)
-	Struct FloatRange                                            ObjectSpawnDepth;                                  // 0x90(0x10)
-	Struct FloatRange                                            ObjectLifetime;                                    // 0xa0(0x10)
-	float                                                        ObjectSinkingTime;                                 // 0xb0(0x4)
-	float                                                        ObjectSinkRadius;                                  // 0xb4(0x4)
-	float                                                        MinShipSpeedInKnotsToSpawnObjects;                 // 0xb8(0x4)
-	float                                                        WildlifeSpawnHeight;                               // 0xbc(0x4)
-	float                                                        ChanceOfSpawningSpecialItems;                      // 0xc0(0x4)
-	class                                                        WildlifeType;                                      // 0xc8(0x8)
-	class                                                        BarrelType;                                        // 0xd0(0x8)
-	TArray<Struct BuoyantObjectWeightedGroup>                    SpecialItemTypes;                                  // 0xd8(0x10)
+	float                                                        MaximumDistanceThresholdToIncrementCurrentDistanceTravelled; // 0x30(0x4)
+	Struct WeightedProbabilityRange                              NumberOfBarrelsToSpawn;                            // 0x38(0x20)
+	Struct WeightedProbabilityRange                              NumberOfSpecialItemTypesToSpawn;                   // 0x58(0x20)
+	Struct FloatRange                                            SpawnCentreDistanceInFrontOfShip;                  // 0x78(0x10)
+	Struct FloatRange                                            SpawnCentreOffsetFromShipPath;                     // 0x88(0x10)
+	Struct FloatRange                                            ObjectSpawnDepth;                                  // 0x98(0x10)
+	Struct FloatRange                                            ObjectLifetime;                                    // 0xa8(0x10)
+	float                                                        ObjectSinkingTime;                                 // 0xb8(0x4)
+	float                                                        ObjectSinkRadius;                                  // 0xbc(0x4)
+	float                                                        MinShipSpeedInKnotsToSpawnObjects;                 // 0xc0(0x4)
+	float                                                        WildlifeSpawnHeight;                               // 0xc4(0x4)
+	float                                                        ChanceOfSpawningSpecialItems;                      // 0xc8(0x4)
+	class                                                        WildlifeType;                                      // 0xd0(0x8)
+	class                                                        BarrelType;                                        // 0xd8(0x8)
+	TArray<Struct BuoyantObjectWeightedGroup>                    SpecialItemTypes;                                  // 0xe0(0x10)
 };
 
 
@@ -28074,6 +28177,14 @@ public:
 
 
 // Size 0x8
+struct EventPopUpNotificationComponentInitialised
+{
+public:
+	Class Controller*                                            AthenaController;                                  // 0x0(0x8)
+};
+
+
+// Size 0x8
 struct EventPlayerCharacterLeft
 {
 public:
@@ -28293,6 +28404,26 @@ public:
 	bool                                                         IsFirstTimeSailingShip;                            // 0x9c(0x1)
 	bool                                                         LocalPlayerHasUGCBlocked;                          // 0x9d(0x1)
 	bool                                                         UGCHasBeenChecked;                                 // 0x9e(0x1)
+};
+
+
+// Size 0x30
+struct MigratableMPSDFallbackData
+{
+public:
+	Struct UniqueNetIdRepl                                       CaptainUserId;                                     // 0x0(0x18)
+	Struct Guid                                                  CrewId;                                            // 0x18(0x10)
+	float                                                        ReconnectTimeRemaining;                            // 0x28(0x4)
+};
+
+
+// Size 0x30
+struct MPSDFallbackData
+{
+public:
+	Struct UniqueNetIdRepl                                       CaptainUserId;                                     // 0x0(0x18)
+	Struct Guid                                                  CrewId;                                            // 0x18(0x10)
+	Struct TimerHandle                                           ReconnectExpiryTimerHandle;                        // 0x28(0x4)
 };
 
 
@@ -30819,6 +30950,20 @@ public:
 };
 
 
+// Size 0xb8
+struct NPCData
+{
+public:
+	Struct NetActorPtr                                           NPC;                                               // 0x0(0x14)
+	Struct Guid                                                  Id;                                                // 0x14(0x10)
+	Struct FText                                                 Name;                                              // 0x28(0x38)
+	Struct Vector                                                Location;                                          // 0x60(0xc)
+	struct FName                                                 IslandName;                                        // 0x6c(0x8)
+	Struct FText                                                 IslandNameLocalised;                               // 0x78(0x38)
+	byte                                                         GrammaticalGender;                                 // 0xb0(0x1)
+};
+
+
 // Size 0xc
 struct WeightedGoldReward
 {
@@ -30882,11 +31027,12 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x10
 struct ItemStoredInChestEvent
 {
 public:
 	Class ItemInfo*                                              StoredItem;                                        // 0x0(0x8)
+	Class ItemInfo*                                              CollectorsChestStoredIn;                           // 0x8(0x8)
 };
 
 
@@ -31028,20 +31174,6 @@ public:
 struct DismissRetrieveBootyActorEvent
 {
 public:
-};
-
-
-// Size 0xb8
-struct NPCData
-{
-public:
-	Struct NetActorPtr                                           NPC;                                               // 0x0(0x14)
-	Struct Guid                                                  Id;                                                // 0x14(0x10)
-	Struct FText                                                 Name;                                              // 0x28(0x38)
-	Struct Vector                                                Location;                                          // 0x60(0xc)
-	struct FName                                                 IslandName;                                        // 0x6c(0x8)
-	Struct FText                                                 IslandNameLocalised;                               // 0x78(0x38)
-	byte                                                         GrammaticalGender;                                 // 0xb0(0x1)
 };
 
 
@@ -31224,6 +31356,14 @@ public:
 
 
 // Size 0x28
+struct AllowedInteractableTypes
+{
+public:
+	Struct CollisionProfileName                                  CollisionProfileName;                              // 0x20(0x8)
+};
+
+
+// Size 0x28
 struct EventGameNarrationClientNotificationMessage
 {
 public:
@@ -31309,7 +31449,7 @@ public:
 struct StateChangeCoordination
 {
 public:
-	Class CoordinatedCutsceneTrigger*                            OtherCutscene;                                     // 0x0(0x8)
+	Class Actor*                                                 OtherCutscene;                                     // 0x0(0x8)
 	byte                                                         OtherCutsceneStateChangeCondition;                 // 0x8(0x1)
 	byte                                                         CutsceneStateChangeResponse;                       // 0x9(0x1)
 };
@@ -31882,6 +32022,14 @@ public:
 };
 
 
+// Size 0x8
+struct TaleVoteAdded
+{
+public:
+	Class Actor*                                                 Voter;                                             // 0x0(0x8)
+};
+
+
 // Size 0xc
 struct SeaRock
 {
@@ -31968,6 +32116,34 @@ public:
 };
 
 
+// Size 0x60
+struct StarFieldPuzzleAudioParams
+{
+public:
+	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x0(0x8)
+	struct FName                                                 WwiseEmitterName;                                  // 0x8(0x8)
+	Class WwiseEvent*                                            ConstellationStartEvent;                           // 0x30(0x8)
+	Class WwiseEvent*                                            ConstellationFinishedEvent;                        // 0x38(0x8)
+	Class WwiseEvent*                                            StarsGlowingStartLoopEvent;                        // 0x40(0x8)
+	Class WwiseEvent*                                            StarsGlowingStopLoopEvent;                         // 0x48(0x8)
+	Class WwiseEvent*                                            ConstellationCompletedMusicStartEvent;             // 0x50(0x8)
+	Class WwiseEvent*                                            ConstellationCompletedMusicStopEvent;              // 0x58(0x8)
+};
+
+
+// Size 0x50
+struct StarFieldRevealerMaskAudioParams
+{
+public:
+	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x0(0x8)
+	struct FName                                                 WwiseEmitterName;                                  // 0x8(0x8)
+	Class WwiseEvent*                                            WearMaskEvent;                                     // 0x30(0x8)
+	Class WwiseEvent*                                            RemoveMaskEvent;                                   // 0x38(0x8)
+	Class WwiseEvent*                                            MaskSkySpinSFXEvent;                               // 0x40(0x8)
+	Class WwiseEvent*                                            MaskSkySpinMusicEvent;                             // 0x48(0x8)
+};
+
+
 // Size 0x50
 struct MaskPostProcessParams
 {
@@ -31990,6 +32166,14 @@ public:
 	Class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x0(0x8)
 	int                                                          MaterialIndex;                                     // 0x8(0x4)
 	struct FName                                                 StarSpinScalarParamName;                           // 0xc(0x8)
+};
+
+
+// Size 0x10
+struct StarFieldMaskClearSpinQueue
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -32195,7 +32379,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x70
 struct ShipStorageJettisonRequest
 {
 public:
@@ -32204,11 +32388,11 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 struct JettisonedStorageContainerHandle
 {
 public:
-	Class Actor*                                                 StorageContainer;                                  // 0x10(0x8)
+	Class Actor*                                                 StorageContainer;                                  // 0x20(0x8)
 };
 
 
@@ -32218,6 +32402,14 @@ struct AllowedItemsToDetermineJettisonedContainerTypePair
 public:
 	Struct StringAssetReference                                  AllowedItemsAsset;                                 // 0x0(0x10)
 	class                                                        ContainerTypeToSpawn;                              // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct ShipStorageJettisonEvent
+{
+public:
+	TArray<Weakclass JettisonedContainers>                       JettisonedContainers;                              // 0x0(0x10)
 };
 
 
@@ -32908,16 +33100,16 @@ public:
 };
 
 
-// Size 0x140
+// Size 0x150
 struct EmblemRuntimeDefinition
 {
 public:
-	Class PopUpMessageDesc*                                      UnlockPopUp;                                       // 0x130(0x8)
-	Class PopUpAudioDesc*                                        UnlockPopUpAudioOverrides;                         // 0x138(0x8)
+	Class PopUpMessageDesc*                                      UnlockPopUp;                                       // 0x140(0x8)
+	Class PopUpAudioDesc*                                        UnlockPopUpAudioOverrides;                         // 0x148(0x8)
 };
 
 
-// Size 0x18
+// Size 0x28
 struct EmblemProgressRuntimeDefinition
 {
 public:
@@ -32938,14 +33130,6 @@ struct MechanismMaterialOverride
 public:
 	class                                                        Group;                                             // 0x0(0x8)
 	Struct StringAssetReference                                  Material;                                          // 0x8(0x10)
-};
-
-
-// Size 0x28
-struct AllowedInteractableTypes
-{
-public:
-	Struct CollisionProfileName                                  CollisionProfileName;                              // 0x20(0x8)
 };
 
 
@@ -34309,6 +34493,22 @@ public:
 };
 
 
+// Size 0x18
+struct InvasionTunnelCreatureDioramaSpawnManager
+{
+public:
+	TArray<Struct InvasionTunnelDioramaRestrictedSpawnSettings>  DioramaRestrictedSpawnSettings;                    // 0x8(0x10)
+};
+
+
+// Size 0x30
+struct InvasionTunnelDioramaRestrictedSpawnSettings
+{
+public:
+	TArray<class InvasionTunnelDioramaSpawnCondition*>           Conditions;                                        // 0x20(0x10)
+};
+
+
 // Size 0x10
 struct ShipSpecificData
 {
@@ -34425,11 +34625,22 @@ public:
 };
 
 
-// Size 0x1
+// Size 0x18
+struct InvasionArrivalTunnelOfTheDamnedCompletedTelemetryEvent
+{
+public:
+	Struct Guid                                                  RivalCrewId;                                       // 0x0(0x10)
+	int                                                          TunnelCrewSkillScore;                              // 0x10(0x4)
+	int                                                          RivalCrewSkillScore;                               // 0x14(0x4)
+};
+
+
+// Size 0x8
 struct InvasionDepartureTunnelOfTheDamnedInitializedTelemetryEvent
 {
 public:
 	byte                                                         RequestedSessionType;                              // 0x0(0x1)
+	int                                                          CrewSkillScore;                                    // 0x4(0x4)
 };
 
 
@@ -34507,21 +34718,23 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x28
 struct TunnelOfTheDamnedBaseTelemetryFragmentInput
 {
 public:
 	Struct Guid                                                  TunnelInstanceId;                                  // 0x0(0x10)
 	Struct FString                                               TunnelType;                                        // 0x10(0x10)
+	double                                                       TunnelLifetimeSeconds;                             // 0x20(0x8)
 };
 
 
-// Size 0x20
+// Size 0x28
 struct TunnelOfTheDamnedBaseTelemetryFragment
 {
 public:
 	Struct Guid                                                  TunnelInstanceId;                                  // 0x0(0x10)
 	Struct FString                                               TunnelType;                                        // 0x10(0x10)
+	double                                                       TunnelLifetimeSeconds;                             // 0x20(0x8)
 };
 
 
@@ -35778,7 +35991,8 @@ struct CaptainsLogbookIconKeyValue
 {
 public:
 	struct FName                                                 ImageKey;                                          // 0x0(0x8)
-	byte                                                         LogEntryType;                                      // 0x8(0x1)
+	Struct PlayerStat                                            StatId;                                            // 0x8(0x4)
+	byte                                                         LogEntryType;                                      // 0xc(0x1)
 	Class Texture*                                               Image;                                             // 0x10(0x8)
 	int                                                          IconPriority;                                      // 0x18(0x4)
 };
@@ -35823,19 +36037,20 @@ public:
 };
 
 
-// Size 0x78
+// Size 0x80
 struct CaptainsLogbookServiceCache
 {
 public:
 	Struct FString                                               ShipName;                                          // 0x0(0x10)
-	int                                                          ShipTitleIndex;                                    // 0x10(0x4)
-	Struct CaptainsLogCrewSessionStatsEntry                      StatsEntry;                                        // 0x14(0x24)
-	TArray<Struct CaptainsLogbookCrewMember>                     CrewMembers;                                       // 0x38(0x10)
-	byte                                                         ShipType;                                          // 0x48(0x1)
-	TArray<Struct NetAccoladeModel>                              ShipAccolades;                                     // 0x50(0x10)
-	TArray<Struct CrewEventLogEntry>                             CrewEventLog;                                      // 0x60(0x10)
-	bool                                                         IsValid;                                           // 0x70(0x1)
-	bool                                                         IsRuinedLog;                                       // 0x71(0x1)
+	int                                                          ScrambledShipNameIndex;                            // 0x10(0x4)
+	int                                                          ShipTitleIndex;                                    // 0x14(0x4)
+	Struct CaptainsLogCrewSessionStatsEntry                      StatsEntry;                                        // 0x18(0x24)
+	TArray<Struct CaptainsLogbookCrewMember>                     CrewMembers;                                       // 0x40(0x10)
+	byte                                                         ShipType;                                          // 0x50(0x1)
+	TArray<Struct NetAccoladeModel>                              ShipAccolades;                                     // 0x58(0x10)
+	TArray<Struct CrewEventLogEntry>                             CrewEventLog;                                      // 0x68(0x10)
+	bool                                                         IsValid;                                           // 0x78(0x1)
+	bool                                                         IsRuinedLog;                                       // 0x79(0x1)
 };
 
 
@@ -35893,14 +36108,14 @@ public:
 };
 
 
-// Size 0x128
+// Size 0x130
 struct CaptainsLogServiceEntry
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct CaptainsLogbookServiceCache                           Cache;                                             // 0x10(0x78)
-	Struct CaptainsLogPinnedAccoladeEntries                      PinnedShipAccolades;                               // 0x88(0x30)
-	Struct PartDesc                                              CustomizationPartDesc;                             // 0x108(0x20)
+	Struct CaptainsLogbookServiceCache                           Cache;                                             // 0x10(0x80)
+	Struct CaptainsLogPinnedAccoladeEntries                      PinnedShipAccolades;                               // 0x90(0x30)
+	Struct PartDesc                                              CustomizationPartDesc;                             // 0x110(0x20)
 };
 
 
@@ -38684,6 +38899,15 @@ struct ShipAnnouncementShipSpottedEvent
 {
 public:
 	Class Actor*                                                 ShipSpotted;                                       // 0x0(0x8)
+};
+
+
+// Size 0x28
+struct ShipAnnouncementLoadoutUpdatedEventRpc
+{
+public:
+	Class Controller*                                            Controller;                                        // 0x10(0x8)
+	Struct Guid                                                  ShipGuid;                                          // 0x18(0x10)
 };
 
 

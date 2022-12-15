@@ -472,12 +472,16 @@ TaleQuestSpawnWatercraftStepDesc:
     Offset: '0x80'
     Size: '0x38'
     Type: Struct QuestVariableTransform
-  - Name: Watercraft
+  - Name: LiveryAsset
     Offset: '0xd8'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Watercraft
+    Offset: '0xe8'
     Size: '0x30'
     Type: Struct QuestVariableWatercraft
-  ClassSize: '0x88'
-  FullSize: '0x108'
+  ClassSize: '0x98'
+  FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestWatercraftFunctionLibrary:

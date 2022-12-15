@@ -6,12 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x18
 class BP_ShipWeaponsChest_C: public PossessionsChest
 {
 public:
-	Class AddCrewLockableActionRuleComponent*                    AddCrewLockableActionRule;                         // 0x590(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x598(0x8)
+	Class CrewLockableComponent*                                 CrewLockableComponent;                             // 0x590(0x8)
+	Class StaticMeshComponent*                                   LockMesh;                                          // 0x598(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5a0(0x8)
 };
 
 

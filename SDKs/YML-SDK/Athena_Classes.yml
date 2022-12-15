@@ -534,48 +534,6 @@ ActorSpawnData:
   FullSize: '0x78'
   InheritedSize: '0x58'
   Super: ItemSpawnData
-AddCrewLockableActionRuleComponent:
-  Attributes:
-  - Name: StartLocked
-    Offset: '0xd0'
-    Size: '0x1'
-    Type: bool
-  - Name: AllianceInteractable
-    Offset: '0xd1'
-    Size: '0x1'
-    Type: bool
-  - Name: LockHoldTime
-    Offset: '0xd4'
-    Size: '0x4'
-    Type: float
-  - Name: UnlockHoldTime
-    Offset: '0xd8'
-    Size: '0x4'
-    Type: float
-  - Name: PressedNotificationInputId
-    Offset: '0xe0'
-    Size: '0x8'
-    Type: class
-  - Name: ReleasedNotificationInputId
-    Offset: '0xe8'
-    Size: '0x8'
-    Type: class
-  - Name: DisplayPriority
-    Offset: '0xf0'
-    Size: '0x1'
-    Type: byte
-  - Name: Locked
-    Offset: '0xf1'
-    Size: '0x1'
-    Type: bool
-  - Name: LockedStateMesh
-    Offset: '0xf8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x60'
-  FullSize: '0x128'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
 AddFogBankAvoidanceAreaStep:
   Attributes: []
   ClassSize: '0x0'
@@ -2791,8 +2749,8 @@ ArrivalRespawnTunnelDesc:
 ArrivalRespawnTunnelOfTheDamned:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x680'
-  InheritedSize: '0x680'
+  FullSize: '0x6a0'
+  InheritedSize: '0x6a0'
   Super: ArrivalTunnelOfTheDamned
 ArrivalTunnelDependencies:
   Attributes: []
@@ -2817,16 +2775,16 @@ ArrivalTunnelDesc:
 ArrivalTunnelOfTheDamned:
   Attributes:
   - Name: ArrivalTunnelDesc
-    Offset: '0x660'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class ArrivalTunnelDesc*
   - Name: PlayersInArrivalTunnelOfTheDamnedActionState
-    Offset: '0x668'
+    Offset: '0x688'
     Size: '0x10'
     Type: TArray<Struct ArrivalTunnelOfTheDamnedPlayerState>
   ClassSize: '0x30'
-  FullSize: '0x680'
-  InheritedSize: '0x650'
+  FullSize: '0x6a0'
+  InheritedSize: '0x670'
   Super: TunnelOfTheDamnedBase
 ArrivalTunnelOfTheDamnedActionStateId:
   Attributes: []
@@ -5636,8 +5594,12 @@ AthenaGameSettings:
     Offset: '0x850'
     Size: '0x10'
     Type: Struct StringAssetReference
-  ClassSize: '0x838'
-  FullSize: '0x860'
+  - Name: PlayerLootMarkerServiceParamsFileLocation
+    Offset: '0x860'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x848'
+  FullSize: '0x870'
   InheritedSize: '0x28'
   Super: Object
 AthenaGameState:
@@ -6046,44 +6008,48 @@ AthenaGameState:
     Offset: '0x8d8'
     Size: '0x8'
     Type: Class UserSettingsService*
+  - Name: PlayerLootMarkerService
+    Offset: '0x8e0'
+    Size: '0x8'
+    Type: Class PlayerLootMarkerService*
   - Name: ServiceCoordinator
-    Offset: '0xa60'
+    Offset: '0xa68'
     Size: '0x20'
     Type: Struct GameServiceCoordinator
   - Name: ChatComponents
-    Offset: '0xaa8'
+    Offset: '0xab0'
     Size: '0x10'
     Type: TArray<Interface ChatComponents>
   - Name: IsXboxGamePadOnlyServer
-    Offset: '0xb38'
+    Offset: '0xb40'
     Size: '0x1'
     Type: bool
   - Name: ShouldDisableAsyncOcclusionCheck
-    Offset: '0xb39'
+    Offset: '0xb41'
     Size: '0x1'
     Type: bool
   - Name: SubPlayMode
-    Offset: '0xb40'
+    Offset: '0xb48'
     Size: '0x10'
     Type: Struct FString
   - Name: CustomVaultService
-    Offset: '0xb50'
+    Offset: '0xb58'
     Size: '0x8'
     Type: Class CustomVaultService*
   - Name: EntityEnumerationService
-    Offset: '0xb58'
+    Offset: '0xb60'
     Size: '0x8'
     Type: Class EntityEnumerationService*
   - Name: LevelAssetCachingService
-    Offset: '0xb60'
+    Offset: '0xb68'
     Size: '0x8'
     Type: Class LevelAssetCachingService*
   - Name: CrewSkillRatingService
-    Offset: '0xb68'
+    Offset: '0xb70'
     Size: '0x8'
     Type: Class CrewSkillRatingService*
-  ClassSize: '0x648'
-  FullSize: '0xb88'
+  ClassSize: '0x650'
+  FullSize: '0xb90'
   InheritedSize: '0x540'
   Super: ServiceProviderGameState
 AthenaGameUserSettings:
@@ -8210,6 +8176,12 @@ BackRadialAction:
   FullSize: '0x68'
   InheritedSize: '0x30'
   Super: RadialAction
+BaitRadialActivationInputComponent:
+  Attributes: []
+  ClassSize: '0x30'
+  FullSize: '0x2c8'
+  InheritedSize: '0x298'
+  Super: AthenaCharacterBaseInputComponent
 BaitRadialContentRule:
   Attributes:
   - Name: RadialIconScale
@@ -9518,8 +9490,8 @@ BootyItemShipOwnershipComponent:
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<Struct Guid>
-  ClassSize: '0x138'
-  FullSize: '0x200'
+  ClassSize: '0x1a8'
+  FullSize: '0x270'
   InheritedSize: '0xc8'
   Super: ActorComponent
 BootyItemWithCutscenesAnimationInstance:
@@ -10230,10 +10202,10 @@ BuoyantObjectSpawnProfileDataAsset:
   Attributes:
   - Name: Profile
     Offset: '0x28'
-    Size: '0xe8'
+    Size: '0xf0'
     Type: Struct BuoyantObjectSpawnProfile
-  ClassSize: '0xe8'
-  FullSize: '0x110'
+  ClassSize: '0xf0'
+  FullSize: '0x118'
   InheritedSize: '0x28'
   Super: DataAsset
 BuoyantStorageContainer:
@@ -11147,11 +11119,11 @@ Cannon:
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: InteractionState
-    Offset: '0xcb8'
+    Offset: '0xcd8'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x7b0'
-  FullSize: '0xcc0'
+  ClassSize: '0x7d0'
+  FullSize: '0xce0'
   InheritedSize: '0x510'
   Super: ControllableObject
 CannonAIInteractableType:
@@ -11538,36 +11510,40 @@ CanvasWorldMapComponent:
     Offset: '0x238'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: IslandEventHUDData
+  - Name: SecondaryFactionIconOverlayOffset
     Offset: '0x240'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: IslandEventHUDData
+    Offset: '0x248'
     Size: '0x8'
     Type: Class IslandEventHUDData*
   - Name: MaxStreakFactionsIconInfo
-    Offset: '0x248'
+    Offset: '0x250'
     Size: '0x10'
     Type: TArray<Struct FactionStreakIcon>
   - Name: FactionsIconInfo
-    Offset: '0x258'
+    Offset: '0x260'
     Size: '0x10'
     Type: TArray<Struct FactionStreakIcon>
   - Name: TrackedShips
-    Offset: '0x268'
+    Offset: '0x270'
     Size: '0x10'
     Type: TArray<Struct CanvasWorldMapShipLocation>
   - Name: TrackedBootyItemInfos
-    Offset: '0x278'
+    Offset: '0x280'
     Size: '0x10'
     Type: TArray<Struct ReapersMarkTrackedBootyItemInfo>
   - Name: RenderTarget
-    Offset: '0x288'
+    Offset: '0x290'
     Size: '0x8'
     Type: Class IterativeCanvasRenderTarget2D*
   - Name: CanvasDataAsset
-    Offset: '0x328'
+    Offset: '0x330'
     Size: '0x8'
     Type: Class MapTableCanvasDataAsset*
-  ClassSize: '0x3c0'
-  FullSize: '0x488'
+  ClassSize: '0x3c8'
+  FullSize: '0x490'
   InheritedSize: '0xc8'
   Super: ActorComponent
 Capstan:
@@ -11637,47 +11613,47 @@ Capstan:
     Size: '0xc'
     Type: Struct Vector
   - Name: NetState
-    Offset: '0x538'
+    Offset: '0x550'
     Size: '0x8'
     Type: Struct CapstanNetState
   - Name: CapstanEmitter
-    Offset: '0x540'
+    Offset: '0x558'
     Size: '0x20'
     Type: Struct WwiseEmitter
   - Name: CapstanDamageLevelAudio
-    Offset: '0x560'
+    Offset: '0x578'
     Size: '0x8'
     Type: Class DamageableShipPartAudioParams*
   - Name: CapstanDamageParticleSystem
-    Offset: '0x568'
+    Offset: '0x580'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: EventDispatcher
-    Offset: '0x570'
+    Offset: '0x588'
     Size: '0xa0'
     Type: Struct ObjectMessagingDispatcher
   - Name: DescToSetWhenSafe
-    Offset: '0x7e0'
+    Offset: '0x7f8'
     Size: '0x8'
     Type: Class CapstanDescAsset*
   - Name: CurrentCapstanDesc
-    Offset: '0x7e8'
+    Offset: '0x800'
     Size: '0x8'
     Type: Class CapstanDescAsset*
   - Name: IsCursed
-    Offset: '0x7f2'
+    Offset: '0x80a'
     Size: '0x1'
     Type: bool
   - Name: CursedIntent
-    Offset: '0x7f4'
+    Offset: '0x80c'
     Size: '0x4'
     Type: float
   - Name: MMCMeshInitializer
-    Offset: '0x820'
+    Offset: '0x838'
     Size: '0x8'
     Type: Class MemoryConstrainedMeshInitializer*
-  ClassSize: '0x460'
-  FullSize: '0x828'
+  ClassSize: '0x480'
+  FullSize: '0x848'
   InheritedSize: '0x3c8'
   Super: Actor
 CapstanArm:
@@ -11890,22 +11866,26 @@ CaptaincyShipCustomizationChestInteraction:
     Offset: '0x3f9'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x38'
-  FullSize: '0x410'
+  - Name: PreviousLoadout
+    Offset: '0x438'
+    Size: '0x10'
+    Type: TArray<Class PreviousLoadout>
+  ClassSize: '0x70'
+  FullSize: '0x448'
   InheritedSize: '0x3d8'
   Super: ModalInteraction
 CaptainedSessionService:
   Attributes:
-  - Name: PersistenceIdentifierSettingsAsset
-    Offset: '0x3e0'
-    Size: '0x8'
-    Type: Class PersistenceIdentifierSettingsAsset*
   - Name: CaptainedCrews
-    Offset: '0x3e8'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<Struct CaptainedCrew>
-  ClassSize: '0x1c0'
-  FullSize: '0x588'
+  - Name: ScrambledShipNamesDataAsset
+    Offset: '0x560'
+    Size: '0x8'
+    Type: Class ScrambledShipNamesDataAsset*
+  ClassSize: '0x1b8'
+  FullSize: '0x580'
   InheritedSize: '0x3c8'
   Super: Actor
 CaptainedSessionServiceInterface:
@@ -12133,8 +12113,8 @@ CaptainsLogbookActivityIconsAsset:
 CaptainsLogbookInteractable:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0xca0'
-  InheritedSize: '0xc90'
+  FullSize: '0xcc0'
+  InheritedSize: '0xcb0'
   Super: CaptainsLogbookWieldable
 CaptainsLogbookInteractableProxy:
   Attributes:
@@ -12182,18 +12162,18 @@ CaptainsLogbookProxy:
     Type: int
   - Name: Cache
     Offset: '0x810'
-    Size: '0x78'
+    Size: '0x80'
     Type: Struct CaptainsLogbookServiceCache
   - Name: CachedCustomization
-    Offset: '0x888'
+    Offset: '0x890'
     Size: '0x20'
     Type: Struct PartDesc
   - Name: MMCMeshInitializer
-    Offset: '0x8b8'
+    Offset: '0x8c0'
     Size: '0x8'
     Type: Class MemoryConstrainedMeshInitializer*
-  ClassSize: '0xe0'
-  FullSize: '0x8d8'
+  ClassSize: '0xe8'
+  FullSize: '0x8e0'
   InheritedSize: '0x7f8'
   Super: WieldableBookProxy
 CaptainsLogbookWieldable:
@@ -12224,26 +12204,26 @@ CaptainsLogbookWieldable:
     Type: Class ReplicatedShipPartCustomizationComponent*
   - Name: ServiceCache
     Offset: '0xb80'
-    Size: '0x78'
+    Size: '0x80'
     Type: Struct CaptainsLogbookServiceCache
   - Name: MMCMeshInitializer
-    Offset: '0xbf8'
+    Offset: '0xc00'
     Size: '0x8'
     Type: Class MemoryConstrainedMeshInitializer*
   - Name: CachedCustomization
-    Offset: '0xc00'
+    Offset: '0xc08'
     Size: '0x20'
     Type: Struct PartDesc
   - Name: ClientEventLogPages
-    Offset: '0xc20'
+    Offset: '0xc28'
     Size: '0x10'
     Type: TArray<Struct WieldableBookPageLayoutRepInfo>
   - Name: IsWaterlogged
-    Offset: '0xc88'
+    Offset: '0xca8'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x140'
-  FullSize: '0xc90'
+  ClassSize: '0x160'
+  FullSize: '0xcb0'
   InheritedSize: '0xb50'
   Super: WieldableBook
 CaptainsVoyageRecipesDebugMenuGenerator:
@@ -12618,20 +12598,12 @@ CatalogDataAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct Guid
-  - Name: DisplayName
-    Offset: '0x38'
-    Size: '0x38'
-    Type: Struct FText
   - Name: ExportAsRewardIds
-    Offset: '0x70'
+    Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: Offers
-    Offset: '0x78'
-    Size: '0x10'
-    Type: TArray<class CatalogOfferDataAsset*>
-  ClassSize: '0x60'
-  FullSize: '0x88'
+  ClassSize: '0x18'
+  FullSize: '0x40'
   InheritedSize: '0x28'
   Super: DataAsset
 CatalogDiscountDataAsset:
@@ -12663,17 +12635,9 @@ CatalogListDataAsset:
   InheritedSize: '0x28'
   Super: DataAsset
 CatalogOfferDataAsset:
-  Attributes:
-  - Name: OfferId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: Struct Guid
-  - Name: CurrencyType
-    Offset: '0x38'
-    Size: '0x1'
-    Type: byte
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
   InheritedSize: '0x28'
   Super: DataAsset
 CategoryBase:
@@ -13186,148 +13150,156 @@ CharacterAudioComponentParams:
     Offset: '0x17c'
     Size: '0x4'
     Type: float
-  - Name: BrokeLegSwitchGroupName
+  - Name: BoatSpeedForSeaRocksAmplificationRtpc
     Offset: '0x180'
     Size: '0x8'
     Type: struct FName
-  - Name: BrokeLegSwitch
+  - Name: BoatSpeedForSeaRocksMax
     Offset: '0x188'
+    Size: '0x4'
+    Type: float
+  - Name: BrokeLegSwitchGroupName
+    Offset: '0x18c'
+    Size: '0x8'
+    Type: struct FName
+  - Name: BrokeLegSwitch
+    Offset: '0x194'
     Size: '0x8'
     Type: struct FName
   - Name: HealedLegSwitch
-    Offset: '0x190'
+    Offset: '0x19c'
     Size: '0x8'
     Type: struct FName
   - Name: FallDamageRTPC
-    Offset: '0x198'
+    Offset: '0x1a4'
     Size: '0x8'
     Type: struct FName
   - Name: HealthChangeSfx
-    Offset: '0x1a0'
+    Offset: '0x1b0'
     Size: '0x10'
     Type: TArray<Struct HealthChangeAudio>
   - Name: LocalPlayerTeleportPlay
-    Offset: '0x1b0'
+    Offset: '0x1c0'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: LocalPlayerTeleportStop
-    Offset: '0x1b8'
+    Offset: '0x1c8'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: LargeShipMapDeck
-    Offset: '0x1c0'
-    Size: '0x8'
-    Type: Class AudioSpaceDataAsset*
-  - Name: LargeShipBrigDeck
-    Offset: '0x1c8'
-    Size: '0x8'
-    Type: Class AudioSpaceDataAsset*
-  - Name: LargeShipCaptainsCabin
     Offset: '0x1d0'
     Size: '0x8'
     Type: Class AudioSpaceDataAsset*
-  - Name: IslandTavern
+  - Name: LargeShipBrigDeck
     Offset: '0x1d8'
     Size: '0x8'
     Type: Class AudioSpaceDataAsset*
-  - Name: IslandCave
+  - Name: LargeShipCaptainsCabin
     Offset: '0x1e0'
     Size: '0x8'
     Type: Class AudioSpaceDataAsset*
-  - Name: SmallestEnclosedRatioToTriggerCave
+  - Name: IslandTavern
     Offset: '0x1e8'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: IslandCave
+    Offset: '0x1f0'
+    Size: '0x8'
+    Type: Class AudioSpaceDataAsset*
+  - Name: SmallestEnclosedRatioToTriggerCave
+    Offset: '0x1f8'
     Size: '0x4'
     Type: float
   - Name: PredominantCaveSurface
-    Offset: '0x1ec'
+    Offset: '0x1fc'
     Size: '0x1'
     Type: byte
   - Name: LargestCaveSizeMetersSquared
-    Offset: '0x1f0'
-    Size: '0x4'
-    Type: float
-  - Name: SmallestCaveSizeMetersSquared
-    Offset: '0x1f4'
-    Size: '0x4'
-    Type: float
-  - Name: CaveSizeRtpcName
-    Offset: '0x1f8'
-    Size: '0x8'
-    Type: struct FName
-  - Name: SmallestEnclosedRatioToTriggerCaveMusicNode
     Offset: '0x200'
     Size: '0x4'
     Type: float
-  - Name: LandingEventCooldownTime
+  - Name: SmallestCaveSizeMetersSquared
     Offset: '0x204'
     Size: '0x4'
     Type: float
-  - Name: FogPenetrationAudioThresholdMin
+  - Name: CaveSizeRtpcName
     Offset: '0x208'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SmallestEnclosedRatioToTriggerCaveMusicNode
+    Offset: '0x210'
+    Size: '0x4'
+    Type: float
+  - Name: LandingEventCooldownTime
+    Offset: '0x214'
+    Size: '0x4'
+    Type: float
+  - Name: FogPenetrationAudioThresholdMin
+    Offset: '0x218'
     Size: '0x4'
     Type: float
   - Name: FogPenetrationAudioThresholdMax
-    Offset: '0x20c'
+    Offset: '0x21c'
     Size: '0x4'
     Type: float
   - Name: FogDensityRTPC
-    Offset: '0x210'
+    Offset: '0x220'
     Size: '0x8'
     Type: struct FName
   - Name: FogTypeSfx
-    Offset: '0x218'
+    Offset: '0x228'
     Size: '0x10'
     Type: TArray<Struct FogTypeToAudio>
   - Name: TrapTriggeredEvent
-    Offset: '0x228'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: EmoteCameraStart
-    Offset: '0x230'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: EmoteCameraStop
     Offset: '0x238'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: ReviveSuccessful
+  - Name: EmoteCameraStart
     Offset: '0x240'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: OtherPlayers_BodyEvaporates
+  - Name: EmoteCameraStop
     Offset: '0x248'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: StartSleepingEvent
+  - Name: ReviveSuccessful
     Offset: '0x250'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: StopSleepingEvent
+  - Name: OtherPlayers_BodyEvaporates
     Offset: '0x258'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: StartSleepingWithoutFartingEvent
+  - Name: StartSleepingEvent
     Offset: '0x260'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: StopSleepingWithoutFartingEvent
+  - Name: StopSleepingEvent
     Offset: '0x268'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: GenderSwitchGroupName
+  - Name: StartSleepingWithoutFartingEvent
     Offset: '0x270'
     Size: '0x8'
-    Type: struct FName
-  - Name: GenderSwitchFemale
+    Type: Class WwiseEvent*
+  - Name: StopSleepingWithoutFartingEvent
     Offset: '0x278'
     Size: '0x8'
-    Type: struct FName
-  - Name: GenderSwitchMale
+    Type: Class WwiseEvent*
+  - Name: GenderSwitchGroupName
     Offset: '0x280'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x260'
-  FullSize: '0x288'
+  - Name: GenderSwitchFemale
+    Offset: '0x288'
+    Size: '0x8'
+    Type: struct FName
+  - Name: GenderSwitchMale
+    Offset: '0x290'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x270'
+  FullSize: '0x298'
   InheritedSize: '0x28'
   Super: DataAsset
 CharacterAudioEventControllerParams:
@@ -16716,6 +16688,64 @@ CoordinatedCutsceneTrigger:
   FullSize: '0x500'
   InheritedSize: '0x3c8'
   Super: Actor
+CoordinatedCutsceneTriggerComponent:
+  Attributes:
+  - Name: CutSceneActor
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: CutsceneName
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ActivationInitiallyEnabled
+    Offset: '0xd8'
+    Size: '0x1'
+    Type: bool
+  - Name: StateAfterFinishedPlaying
+    Offset: '0xd9'
+    Size: '0x1'
+    Type: byte
+  - Name: AllowInfiniteNumberOfActivations
+    Offset: '0xda'
+    Size: '0x1'
+    Type: bool
+  - Name: SpecificNumberOfActivationsAllowed
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: int
+  - Name: ReattemptActivationAfterConflictingCutsceneFinishes
+    Offset: '0xe0'
+    Size: '0x1'
+    Type: bool
+  - Name: DelayWhenReattemptingActivation
+    Offset: '0xe4'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: StateChangeCoordination
+    Offset: '0xf0'
+    Size: '0x10'
+    Type: TArray<Struct StateChangeCoordination>
+  - Name: StateChangeAfterMechanismActionIsTriggered
+    Offset: '0x100'
+    Size: '0x1'
+    Type: byte
+  - Name: DelayAfterMechanismActionIsTriggered
+    Offset: '0x104'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  - Name: StateToActivateMechanismTrigger
+    Offset: '0x10c'
+    Size: '0x1'
+    Type: byte
+  - Name: DelayToActivateMechanismTrigger
+    Offset: '0x110'
+    Size: '0x8'
+    Type: Struct FloatInterval
+  ClassSize: '0xb0'
+  FullSize: '0x178'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 CoordinatedKraken:
   Attributes:
   - Name: TentacleType
@@ -16896,6 +16926,104 @@ CrewFunctions:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
+CrewLockableComponent:
+  Attributes:
+  - Name: StartLocked
+    Offset: '0xd0'
+    Size: '0x1'
+    Type: bool
+  - Name: AllianceInteractable
+    Offset: '0xd1'
+    Size: '0x1'
+    Type: bool
+  - Name: LockHoldTime
+    Offset: '0xd4'
+    Size: '0x4'
+    Type: float
+  - Name: CrewCanUnlock
+    Offset: '0xd8'
+    Size: '0x1'
+    Type: bool
+  - Name: UnlockHoldTime
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: float
+  - Name: CrewCanUseWhenLocked
+    Offset: '0xe0'
+    Size: '0x1'
+    Type: bool
+  - Name: OpponentCanPickLock
+    Offset: '0xe1'
+    Size: '0x1'
+    Type: bool
+  - Name: OpponentPickLockHoldTime
+    Offset: '0xe4'
+    Size: '0x4'
+    Type: float
+  - Name: LockUnlockPressedNotificationInputID
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: class
+  - Name: LockUnlockReleasedNotificationInputID
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: class
+  - Name: LockUnlockDisplayPriority
+    Offset: '0xf8'
+    Size: '0x1'
+    Type: byte
+  - Name: PickLockPressedNotificationInputID
+    Offset: '0x100'
+    Size: '0x8'
+    Type: class
+  - Name: PickLockReleasedNotificationInputID
+    Offset: '0x108'
+    Size: '0x8'
+    Type: class
+  - Name: PickLockDisplayPriority
+    Offset: '0x110'
+    Size: '0x1'
+    Type: byte
+  - Name: LockMeshComponentReference
+    Offset: '0x118'
+    Size: '0x18'
+    Type: Struct ComponentReference
+  - Name: WwisePool
+    Offset: '0x130'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: StartPickingLockAudioEvent
+    Offset: '0x138'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: StopPickingLockAudioEvent
+    Offset: '0x140'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: LockAudioEvent
+    Offset: '0x148'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: UnlockAudioEvent
+    Offset: '0x150'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: Locked
+    Offset: '0x158'
+    Size: '0x1'
+    Type: bool
+  - Name: LockedStateMesh
+    Offset: '0x160'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: DitherComponent
+    Offset: '0x168'
+    Size: '0x8'
+    Type: Class DitherComponent*
+  ClassSize: '0xf8'
+  FullSize: '0x1c0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 CrewLockableInterface:
   Attributes: []
   ClassSize: '0x0'
@@ -17471,8 +17599,8 @@ CustomizableCaptainsLogbookInterface:
 CustomizableGameEventSchedulerService:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x230'
-  InheritedSize: '0x230'
+  FullSize: '0x260'
+  InheritedSize: '0x260'
   Super: GameEventSchedulerService
 CustomizableGameEventSchedulerServiceInterface:
   Attributes: []
@@ -18385,8 +18513,8 @@ DebugRegisterDynamicsShip:
 DebugRenderCaptainsLogbook:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0xc90'
-  InheritedSize: '0xc90'
+  FullSize: '0xcb0'
+  InheritedSize: '0xcb0'
   Super: CaptainsLogbookWieldable
 DebugRenderWieldableBook:
   Attributes: []
@@ -18867,20 +18995,20 @@ DepartureTunnelDesc:
 DepartureTunnelOfTheDamned:
   Attributes:
   - Name: LootFilterDataAsset
-    Offset: '0x650'
+    Offset: '0x670'
     Size: '0x8'
     Type: Class TunnelsOfTheDamnedLootFilterDataAsset*
   - Name: DepartureTunnelDesc
-    Offset: '0x658'
+    Offset: '0x678'
     Size: '0x8'
     Type: Class DepartureTunnelDesc*
   - Name: EnterTunnelFadeCompletedTargets
-    Offset: '0x700'
+    Offset: '0x720'
     Size: '0x10'
     Type: TArray<Interface EnterTunnelFadeCompletedTargets>
   ClassSize: '0x180'
-  FullSize: '0x7d0'
-  InheritedSize: '0x650'
+  FullSize: '0x7f0'
+  InheritedSize: '0x670'
   Super: TunnelOfTheDamnedBase
 DestroyItemWhenPlacedOnActor:
   Attributes:
@@ -23294,6 +23422,24 @@ FlameOfFateTypeRevealRequirement:
   FullSize: '0x40'
   InheritedSize: '0x38'
   Super: RevealRequirement
+FlamesOfFateContainerComponent:
+  Attributes:
+  - Name: DefaultFlameType
+    Offset: '0xe0'
+    Size: '0x1'
+    Type: byte
+  - Name: CanAcceptFlameFromOtherObjects
+    Offset: '0xe1'
+    Size: '0x1'
+    Type: bool
+  - Name: CurrentFlameData
+    Offset: '0xe2'
+    Size: '0x2'
+    Type: Struct FlameData
+  ClassSize: '0x30'
+  FullSize: '0xf8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 FlamesOfFateInteractableComponent:
   Attributes:
   - Name: DisplayName
@@ -23620,20 +23766,28 @@ FlyingCreature:
   Super: Actor
 FogBank:
   Attributes:
-  - Name: FogBankDataAsset
+  - Name: FeatureToggledFogBankAssetsArray
     Offset: '0x3f0'
+    Size: '0x10'
+    Type: TArray<Struct FeatureToggledFogBankAsset>
+  - Name: DefaultFogBankDataAsset
+    Offset: '0x400'
+    Size: '0x8'
+    Type: Class FogBankDataAsset*
+  - Name: ActiveFogBankDataAsset
+    Offset: '0x408'
     Size: '0x8'
     Type: Class FogBankDataAsset*
   - Name: StoryDrivenFogBankAssetsCollection
-    Offset: '0x3f8'
+    Offset: '0x410'
     Size: '0x8'
     Type: Class StoryDrivenFogBankDataAsset*
   - Name: Settings
-    Offset: '0x400'
+    Offset: '0x418'
     Size: '0x4c'
     Type: Struct FogBankSettings
-  ClassSize: '0x190'
-  FullSize: '0x568'
+  ClassSize: '0x1a8'
+  FullSize: '0x580'
   InheritedSize: '0x3d8'
   Super: FogVolume
 FogBankDataAsset:
@@ -23704,12 +23858,20 @@ FogBankDataAsset:
   Super: DataAsset
 FogBankManager:
   Attributes:
-  - Name: FogBankManagerDataAsset
+  - Name: FeatureToggledManagerAssetsArray
     Offset: '0x3c8'
+    Size: '0x10'
+    Type: TArray<Struct FeatureToggledFogBankManagerAsset>
+  - Name: DefaultFogBankManagerDataAsset
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class FogBankManagerDataAsset*
-  ClassSize: '0x8'
-  FullSize: '0x3d0'
+  - Name: ActiveFogBankManagerDataAsset
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class FogBankManagerDataAsset*
+  ClassSize: '0x20'
+  FullSize: '0x3e8'
   InheritedSize: '0x3c8'
   Super: Actor
 FogBankManagerDataAsset:
@@ -24005,6 +24167,12 @@ FortOfTheDamnedBrazierMechanismTrigger:
   InheritedSize: '0x890'
   Super: BrazierMechanismTrigger
 FortOfTheDamnedGameEventType:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: SkellyFortGameEventType
+FortOfTheDamnedRebalanceGameEventType:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
@@ -24324,8 +24492,8 @@ GameEventSchedulerService:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<Struct GameEventCount>
-  ClassSize: '0x208'
-  FullSize: '0x230'
+  ClassSize: '0x238'
+  FullSize: '0x260'
   InheritedSize: '0x28'
   Super: Object
 GameEventSchedulerServiceInterface:
@@ -25644,7 +25812,7 @@ HarpoonDamagerType:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: DamagerType
-HarpoonFireAndRetractNotificationInputId:
+HarpoonFireNotificationInputId:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x38'
@@ -26043,6 +26211,12 @@ HarpoonReelLockPressedNotificationInputId:
   InheritedSize: '0x38'
   Super: NotificationInputId
 HarpoonReelLockReleasedNotificationInputId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: NotificationInputId
+HarpoonRetractNotificationInputId:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x38'
@@ -28466,8 +28640,8 @@ InvalidShipCustomizationCategory:
   Super: ShipCustomizationCategory
 InvasionArrivalTunnelDependencies:
   Attributes: []
-  ClassSize: '0x30'
-  FullSize: '0x108'
+  ClassSize: '0x40'
+  FullSize: '0x118'
   InheritedSize: '0xd8'
   Super: ArrivalTunnelDependencies
 InvasionArrivalTunnelDesc:
@@ -28495,12 +28669,12 @@ InvasionArrivalTunnelDesc:
 InvasionArrivalTunnelOfTheDamned:
   Attributes:
   - Name: InvasionArrivalTunnelDesc
-    Offset: '0x678'
+    Offset: '0x698'
     Size: '0x8'
     Type: Class InvasionArrivalTunnelDesc*
-  ClassSize: '0x140'
-  FullSize: '0x7c0'
-  InheritedSize: '0x680'
+  ClassSize: '0x150'
+  FullSize: '0x7f0'
+  InheritedSize: '0x6a0'
   Super: ArrivalTunnelOfTheDamned
 InvasionBattleBoundsComponent:
   Attributes:
@@ -28574,8 +28748,8 @@ InvasionBattleBoundsComponent:
   Super: ActorComponent
 InvasionDepartureTunnelDependencies:
   Attributes: []
-  ClassSize: '0x10'
-  FullSize: '0x138'
+  ClassSize: '0x20'
+  FullSize: '0x148'
   InheritedSize: '0x128'
   Super: DepartureTunnelDependencies
 InvasionDepartureTunnelDesc:
@@ -28619,16 +28793,16 @@ InvasionDepartureTunnelDesc:
 InvasionDepartureTunnelOfTheDamned:
   Attributes:
   - Name: InvasionDepartureTunnelDesc
-    Offset: '0x7d0'
+    Offset: '0x7f0'
     Size: '0x8'
     Type: Class InvasionDepartureTunnelDesc*
   - Name: AllowTunnelCancellation
-    Offset: '0x7e8'
+    Offset: '0x818'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xc0'
-  FullSize: '0x890'
-  InheritedSize: '0x7d0'
+  ClassSize: '0xd0'
+  FullSize: '0x8c0'
+  InheritedSize: '0x7f0'
   Super: DepartureTunnelOfTheDamned
 InvasionDepartureTunnelPresenterObject:
   Attributes:
@@ -28676,8 +28850,8 @@ InvasionDepartureTunnelRandomisedSceneryTile:
     Offset: '0x410'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x58'
-  FullSize: '0x420'
+  ClassSize: '0x60'
+  FullSize: '0x428'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionDepartureTunnelSceneryTileInstance:
@@ -28695,11 +28869,11 @@ InvasionDepartureTunnelSceneryTileInstance:
     Size: '0x10'
     Type: TArray<class Actor*>
   - Name: Root
-    Offset: '0x3f0'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x38'
-  FullSize: '0x400'
+  ClassSize: '0x40'
+  FullSize: '0x408'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionDepartureTunnelScrollingScenery:
@@ -28724,24 +28898,28 @@ InvasionDepartureTunnelScrollingScenery:
     Offset: '0x3f8'
     Size: '0xc'
     Type: Struct Vector
+  - Name: CreatureDioramaManager
+    Offset: '0x408'
+    Size: '0x18'
+    Type: Struct InvasionTunnelCreatureDioramaSpawnManager
   - Name: HaltRequested
-    Offset: '0x404'
+    Offset: '0x420'
     Size: '0x1'
     Type: bool
   - Name: ReplicatedRandomSeed
-    Offset: '0x408'
+    Offset: '0x424'
     Size: '0x4'
     Type: int
   - Name: SharedRoot
-    Offset: '0x410'
+    Offset: '0x428'
     Size: '0x8'
     Type: Class SceneComponent*
   - Name: MovingObjects
-    Offset: '0x418'
+    Offset: '0x430'
     Size: '0x10'
     Type: TArray<class SceneComponent*>
-  ClassSize: '0xc8'
-  FullSize: '0x490'
+  ClassSize: '0xe0'
+  FullSize: '0x4a8'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionDepartureTunnelTaleService:
@@ -28756,6 +28934,22 @@ InvasionDepartureTunnelTaleServiceDesc:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
+InvasionTunnelDioramaLimitedQuantitySpawnCondition:
+  Attributes:
+  - Name: MaximumActiveAtOnce
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0x30'
+  InheritedSize: '0x28'
+  Super: InvasionTunnelDioramaSpawnCondition
+InvasionTunnelDioramaSpawnCondition:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
 InvasionTunnelSceneryCreatureDioramaGroup:
   Attributes:
   - Name: CreatureDioramas
@@ -29248,6 +29442,16 @@ IsWieldingBootyTypeStatCondition:
   FullSize: '0x40'
   InheritedSize: '0x30'
   Super: TargetedStatCondition
+IsWieldingItemCategoryRadialContext:
+  Attributes:
+  - Name: TargetItemCategories
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Class TargetItemCategories>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: RadialContextBase
 IsWieldingItemFilterDesc:
   Attributes:
   - Name: AllowedItems
@@ -37994,20 +38198,24 @@ MigrationService:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: MigrationSetupRequestTimeoutInSeconds
+  - Name: TunnelOfTheDamnedBeaconRange
     Offset: '0x4c'
     Size: '0x4'
     Type: float
-  - Name: BeaconActorClasses
+  - Name: MigrationSetupRequestTimeoutInSeconds
     Offset: '0x50'
+    Size: '0x4'
+    Type: float
+  - Name: BeaconActorClasses
+    Offset: '0x58'
     Size: '0x10'
     Type: TArray<Class BeaconActorClasses>
   - Name: CollectedActorClasses
-    Offset: '0x60'
+    Offset: '0x68'
     Size: '0x10'
     Type: TArray<Class CollectedActorClasses>
-  ClassSize: '0x458'
-  FullSize: '0x480'
+  ClassSize: '0x460'
+  FullSize: '0x488'
   InheritedSize: '0x28'
   Super: Object
 MigrationUIComponent:
@@ -39518,24 +39726,24 @@ NPCDialogOptionNoUIPurchase:
     Offset: '0xd0'
     Size: '0x38'
     Type: Struct FText
-  - Name: Catalog
+  - Name: CatalogId
     Offset: '0x108'
-    Size: '0x8'
-    Type: Class CatalogDataAsset*
-  - Name: CatalogOffer
-    Offset: '0x110'
-    Size: '0x8'
-    Type: Class CatalogOfferDataAsset*
-  - Name: OfferTriggeredPopupDesc
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: OfferId
     Offset: '0x118'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: OfferTriggeredPopupDesc
+    Offset: '0x128'
     Size: '0x8'
     Type: Class PopUpMessageDesc*
   - Name: Interactor
-    Offset: '0x120'
+    Offset: '0x130'
     Size: '0x8'
     Type: Class Controller*
-  ClassSize: '0x60'
-  FullSize: '0x130'
+  ClassSize: '0x70'
+  FullSize: '0x140'
   InheritedSize: '0xd0'
   Super: NPCDialogOption
 NPCDialogOptionRefillTankard:
@@ -45246,20 +45454,16 @@ PremiumCatalogBundleSetDataAsset:
     Offset: '0x188'
     Size: '0x38'
     Type: Struct FText
-  - Name: Offer
-    Offset: '0x1c0'
-    Size: '0x8'
-    Type: Class CatalogOfferDataAsset*
   - Name: BundleItems
-    Offset: '0x1c8'
+    Offset: '0x1c0'
     Size: '0x10'
     Type: TArray<Struct PremiumShopBundleOfferItem>
   - Name: AdditionalItems
-    Offset: '0x1d8'
+    Offset: '0x1d0'
     Size: '0x48'
     Type: Struct PremiumCatalogItemSet
-  ClassSize: '0x118'
-  FullSize: '0x220'
+  ClassSize: '0x110'
+  FullSize: '0x218'
   InheritedSize: '0x108'
   Super: PremiumCatalogLandingPageItemDataAsset
 PremiumCatalogCardsDataAsset:
@@ -45385,13 +45589,9 @@ PremiumCatalogListDataAsset:
   InheritedSize: '0x28'
   Super: DataAsset
 PremiumCatalogOfferDataAsset:
-  Attributes:
-  - Name: Offer
-    Offset: '0x108'
-    Size: '0x8'
-    Type: Class CatalogOfferDataAsset*
-  ClassSize: '0x8'
-  FullSize: '0x110'
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x108'
   InheritedSize: '0x108'
   Super: PremiumCatalogLandingPageItemDataAsset
 PremiumCurrencyReward:
@@ -49976,6 +50176,16 @@ ScrambleGamertagsToggleInputId:
   FullSize: '0x38'
   InheritedSize: '0x38'
   Super: NotificationInputId
+ScrambledShipNamesDataAsset:
+  Attributes:
+  - Name: ScrambledShipNames
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct FText>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
 ScreenSpaceVFXComponentParams:
   Attributes:
   - Name: EffectStrengthSpringAcceleration
@@ -52330,16 +52540,20 @@ Ship:
     Offset: '0xc78'
     Size: '0x4'
     Type: float
-  - Name: PositionSamplerTimeWindow
+  - Name: ResurfacingFinishedSubmergedHullPercentageThreshold
     Offset: '0xc7c'
     Size: '0x4'
     Type: float
-  - Name: ClientConvexHullCollisionProfile
+  - Name: PositionSamplerTimeWindow
     Offset: '0xc80'
+    Size: '0x4'
+    Type: float
+  - Name: ClientConvexHullCollisionProfile
+    Offset: '0xc84'
     Size: '0x8'
     Type: struct FName
   - Name: EmpiricalMaxSpeedInMPS
-    Offset: '0xc88'
+    Offset: '0xc8c'
     Size: '0x4'
     Type: float
   - Name: BrigSpawnLocation
@@ -52482,16 +52696,20 @@ Ship:
     Offset: '0x1088'
     Size: '0x8'
     Type: double
-  - Name: InstancedMeshes
+  - Name: Scuttled
     Offset: '0x1090'
+    Size: '0x1'
+    Type: bool
+  - Name: InstancedMeshes
+    Offset: '0x1098'
     Size: '0x10'
     Type: TArray<class MobileInstancedStaticMeshComponent*>
   - Name: ConstraintBudget
-    Offset: '0x10a0'
+    Offset: '0x10a8'
     Size: '0x8'
     Type: class
   - Name: ScuttleTime
-    Offset: '0x1614'
+    Offset: '0x161c'
     Size: '0x4'
     Type: float
   ClassSize: '0x12d8'
@@ -53051,7 +53269,7 @@ ShipEntitlementProcessingPolicyDataAsset:
 ShipErrorOnNonAuthorityPhysicsChange:
   Attributes:
   - Name: HullDragDynamicsDesc
-    Offset: '0x1698'
+    Offset: '0x16a0'
     Size: '0x8'
     Type: Class BaseHullDragDynamicsDesc*
   ClassSize: '0x20'
@@ -53840,30 +54058,26 @@ ShipResurfaceWetnessActor:
   Super: Actor
 ShipResurfaceWetnessContainer:
   Attributes:
-  - Name: SpawnedResurfaceVFXInstance
+  - Name: ShipWetnessInstanceHandles
     Offset: '0x28'
-    Size: '0x8'
-    Type: Class ShipResurfaceWetnessActor*
+    Size: '0x10'
+    Type: TArray<Struct ShipResurfaceWetnessHandle>
   - Name: LoadedShipResurfaceVFXClass
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x8'
     Type: class
   - Name: SurfaceWaterLocation
-    Offset: '0x80'
+    Offset: '0x78'
     Size: '0xc'
     Type: Struct Vector
   - Name: SurfaceWaterRadius
-    Offset: '0x8c'
+    Offset: '0x84'
     Size: '0x4'
     Type: float
   - Name: SurfaceWaterStrength
-    Offset: '0x90'
+    Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: ShipContext
-    Offset: '0x98'
-    Size: '0x8'
-    Type: Class Actor*
   ClassSize: '0x80'
   FullSize: '0xa8'
   InheritedSize: '0x28'
@@ -54008,8 +54222,8 @@ ShipStorageJettisonService:
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class ShipStorageJettisonServiceParams*
-  ClassSize: '0x80'
-  FullSize: '0x448'
+  ClassSize: '0x90'
+  FullSize: '0x458'
   InheritedSize: '0x3c8'
   Super: Actor
 ShipStorageJettisonServiceInterface:
@@ -54380,8 +54594,8 @@ ShipwreckService:
     Offset: '0x4a8'
     Size: '0x10'
     Type: TArray<Struct CustomWreckEntry>
-  ClassSize: '0x138'
-  FullSize: '0x500'
+  ClassSize: '0x150'
+  FullSize: '0x518'
   InheritedSize: '0x3c8'
   Super: Actor
 ShipwreckServiceInterface:
@@ -54560,56 +54774,60 @@ ShopDesc:
     Offset: '0x60'
     Size: '0x8'
     Type: Class CatalogDataAsset*
-  - Name: Catalogs
+  - Name: CatalogData
     Offset: '0x68'
+    Size: '0x1'
+    Type: Struct ShopCatalogDesc
+  - Name: Catalogs
+    Offset: '0x70'
     Size: '0x10'
     Type: TArray<Struct CatalogDescTab>
   - Name: PremiumCatalog
-    Offset: '0x78'
+    Offset: '0x80'
     Size: '0x8'
     Type: Class PremiumCatalogDataAsset*
   - Name: FeatureToggledPremiumCatalogs
-    Offset: '0x80'
+    Offset: '0x88'
     Size: '0x10'
     Type: TArray<Struct FeatureToggledPremiumCatalog>
   - Name: Storefront
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x10'
     Type: Struct FString
   - Name: OpenAudioCue
-    Offset: '0xa0'
+    Offset: '0xa8'
     Size: '0x10'
     Type: Struct FString
   - Name: EnablePiratePreview
-    Offset: '0xb0'
+    Offset: '0xb8'
     Size: '0x1'
     Type: bool
   - Name: IsPremiumShop
-    Offset: '0xb1'
+    Offset: '0xb9'
     Size: '0x1'
     Type: bool
   - Name: Dialogue
-    Offset: '0xb8'
+    Offset: '0xc0'
     Size: '0x8'
     Type: Class ShopDialogue*
   - Name: Company
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x8'
     Type: class
   - Name: Categories
-    Offset: '0xc8'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<Class Categories>
   - Name: AllTabIcon
-    Offset: '0xd8'
+    Offset: '0xe0'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: PiratePreviewSkeletonCurseMode
-    Offset: '0xe8'
+    Offset: '0xf0'
     Size: '0x1'
     Type: byte
-  ClassSize: '0xc8'
-  FullSize: '0xf0'
+  ClassSize: '0xd0'
+  FullSize: '0xf8'
   InheritedSize: '0x28'
   Super: DataAsset
 ShopDialogue:
@@ -54670,8 +54888,8 @@ ShopViewModelComponent:
     Offset: '0x170'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x3a8'
-  FullSize: '0x470'
+  ClassSize: '0x3c0'
+  FullSize: '0x488'
   InheritedSize: '0xc8'
   Super: ActorComponent
 Shopkeeper:
@@ -55215,20 +55433,20 @@ SinkingTunnelDesc:
 SinkingTunnelOfTheDamned:
   Attributes:
   - Name: TeleportLocationRetrievalComponent
-    Offset: '0x7e0'
+    Offset: '0x800'
     Size: '0x8'
     Type: Class ExhaustibleTeleportLocationRetrievalComponent*
   - Name: ShipOrientation
-    Offset: '0x7e8'
+    Offset: '0x808'
     Size: '0xc'
     Type: Struct Rotator
   - Name: CrewInTunnel
-    Offset: '0x8bc'
+    Offset: '0x8dc'
     Size: '0xc'
     Type: Struct CrewInTunnel
   ClassSize: '0x100'
-  FullSize: '0x8d0'
-  InheritedSize: '0x7d0'
+  FullSize: '0x8f0'
+  InheritedSize: '0x7f0'
   Super: DepartureTunnelOfTheDamned
 SinkingTunnelOfTheDamnedActionStateId:
   Attributes: []
@@ -56770,12 +56988,16 @@ SpawnRewardStepDesc:
     Offset: '0x148'
     Size: '0x1'
     Type: bool
-  - Name: Critical
+  - Name: TrackedProxy
     Offset: '0x149'
     Size: '0x1'
     Type: bool
-  - Name: DropOnSpawn
+  - Name: Critical
     Offset: '0x14a'
+    Size: '0x1'
+    Type: bool
+  - Name: DropOnSpawn
+    Offset: '0x14b'
     Size: '0x1'
     Type: bool
   - Name: FailureMessage
@@ -56879,20 +57101,20 @@ SpeakingTrumpetItemCategory:
 SpectacleCapstan:
   Attributes:
   - Name: DisengagedRotationSpeed
-    Offset: '0x830'
+    Offset: '0x850'
     Size: '0x4'
     Type: float
   - Name: DisengagedDropSpeed
-    Offset: '0x834'
+    Offset: '0x854'
     Size: '0x4'
     Type: float
   - Name: IsEngaged
-    Offset: '0x838'
+    Offset: '0x858'
     Size: '0x1'
     Type: bool
   ClassSize: '0x18'
-  FullSize: '0x840'
-  InheritedSize: '0x828'
+  FullSize: '0x860'
+  InheritedSize: '0x848'
   Super: Capstan
 SpectacleMechanismInterface:
   Attributes: []
@@ -57286,12 +57508,20 @@ StarFieldPuzzle:
     Offset: '0x418'
     Size: '0x8'
     Type: Class CurveFloat*
-  - Name: RelativePlayerLookAtTargetLocation
+  - Name: PositionCurveLines
     Offset: '0x420'
+    Size: '0x8'
+    Type: Class CurveFloat*
+  - Name: RelativePlayerLookAtTargetLocation
+    Offset: '0x428'
     Size: '0xc'
     Type: Struct Vector
-  ClassSize: '0x98'
-  FullSize: '0x460'
+  - Name: StarFieldPuzzleAudioParams
+    Offset: '0x478'
+    Size: '0x60'
+    Type: Struct StarFieldPuzzleAudioParams
+  ClassSize: '0x158'
+  FullSize: '0x520'
   InheritedSize: '0x3c8'
   Super: Actor
 StarFieldRevealerMask:
@@ -57321,15 +57551,19 @@ StarFieldRevealerMask:
     Size: '0x4'
     Type: float
   - Name: SkySphereMaterialParams
-    Offset: '0x7b8'
+    Offset: '0x7d0'
     Size: '0x18'
     Type: Struct SkySphereMaterialParams
   - Name: MaskPostProcessParams
-    Offset: '0x7d0'
+    Offset: '0x7e8'
     Size: '0x50'
     Type: Struct MaskPostProcessParams
-  ClassSize: '0xb0'
-  FullSize: '0x830'
+  - Name: MaskAudioParams
+    Offset: '0x838'
+    Size: '0x50'
+    Type: Struct StarFieldRevealerMaskAudioParams
+  ClassSize: '0x110'
+  FullSize: '0x890'
   InheritedSize: '0x780'
   Super: StaticMeshWieldableItem
 StarlightTunnelLegacyPresenterObject:
@@ -61113,26 +61347,26 @@ TaleQuestSelectAISpawnerStepDesc:
 TaleQuestSequenceStep:
   Attributes:
   - Name: Desc
-    Offset: '0xd8'
+    Offset: '0xf8'
     Size: '0x8'
     Type: Class TaleQuestSequenceStepDesc*
   - Name: ForkedSteps
-    Offset: '0xf8'
+    Offset: '0x118'
     Size: '0x10'
     Type: TArray<Struct ForkedStep>
   ClassSize: '0x30'
-  FullSize: '0x108'
-  InheritedSize: '0xd8'
+  FullSize: '0x128'
+  InheritedSize: '0xf8'
   Super: TaleQuestFramedStep
 TaleQuestSequenceStepDesc:
   Attributes:
   - Name: Descs
-    Offset: '0xa0'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<class TaleQuestStepDesc*>
   ClassSize: '0x10'
-  FullSize: '0xb0'
-  InheritedSize: '0xa0'
+  FullSize: '0xe0'
+  InheritedSize: '0xd0'
   Super: TaleQuestFramedStepDesc
 TaleQuestSetNPCDialogKeyStep:
   Attributes: []
@@ -64108,112 +64342,6 @@ TunnelLevelId:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
-TunnelOfTheDamned:
-  Attributes:
-  - Name: Root
-    Offset: '0x3e0'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: TunnelCollisions
-    Offset: '0x3e8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: TunnelOverlapZone
-    Offset: '0x3f0'
-    Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: RelativeSpawnLocation
-    Offset: '0x3f8'
-    Size: '0xc'
-    Type: Struct Vector
-  - Name: VoyageVotingTableType
-    Offset: '0x408'
-    Size: '0x8'
-    Type: class
-  - Name: CapstanType
-    Offset: '0x410'
-    Size: '0x8'
-    Type: class
-  - Name: WheelType
-    Offset: '0x418'
-    Size: '0x8'
-    Type: class
-  - Name: CannonPlayerLoadingInteractionPointType
-    Offset: '0x420'
-    Size: '0x8'
-    Type: class
-  - Name: CannonType
-    Offset: '0x428'
-    Size: '0x8'
-    Type: class
-  - Name: HarpoonType
-    Offset: '0x430'
-    Size: '0x8'
-    Type: class
-  - Name: RowboatAttachPointType
-    Offset: '0x438'
-    Size: '0x8'
-    Type: class
-  - Name: MapTableType
-    Offset: '0x440'
-    Size: '0x8'
-    Type: class
-  - Name: RowboatType
-    Offset: '0x448'
-    Size: '0x8'
-    Type: class
-  - Name: LadderTypes
-    Offset: '0x450'
-    Size: '0x10'
-    Type: TArray<Class LadderTypes>
-  - Name: LootFilterDataAsset
-    Offset: '0x460'
-    Size: '0x8'
-    Type: Class TunnelsOfTheDamnedLootFilterDataAsset*
-  - Name: Desc
-    Offset: '0x468'
-    Size: '0x8'
-    Type: Class TunnelDesc*
-  - Name: TunnelStreamingLevelId
-    Offset: '0x470'
-    Size: '0x4'
-    Type: int
-  - Name: ShipInTunnel
-    Offset: '0x478'
-    Size: '0x8'
-    Type: Class Actor*
-  - Name: CrewMembersInTunnel
-    Offset: '0x480'
-    Size: '0x10'
-    Type: TArray<class Actor*>
-  - Name: Endpoint
-    Offset: '0x490'
-    Size: '0x8'
-    Type: Class Actor*
-  - Name: SequencerLevelActor
-    Offset: '0x498'
-    Size: '0x8'
-    Type: Class SequencerCutSceneActor*
-  - Name: ShipSpecificSequencerLevelActor
-    Offset: '0x4a0'
-    Size: '0x8'
-    Type: Class SequencerCutSceneActor*
-  - Name: FailureFallbackShipSpawnLocation
-    Offset: '0x4f8'
-    Size: '0x8'
-    Type: Class ShipSpawnLocation*
-  - Name: ActionStateFadeCompletedTargets
-    Offset: '0x5d0'
-    Size: '0x10'
-    Type: TArray<Interface ActionStateFadeCompletedTargets>
-  - Name: FailureActionStateFadeCompletedTargets
-    Offset: '0x5e0'
-    Size: '0x10'
-    Type: TArray<Interface FailureActionStateFadeCompletedTargets>
-  ClassSize: '0x308'
-  FullSize: '0x6d0'
-  InheritedSize: '0x3c8'
-  Super: Actor
 TunnelOfTheDamnedBase:
   Attributes:
   - Name: Root
@@ -64260,8 +64388,8 @@ TunnelOfTheDamnedBase:
     Offset: '0x520'
     Size: '0x10'
     Type: TArray<Interface FailureActionStateFadeCompletedTargets>
-  ClassSize: '0x288'
-  FullSize: '0x650'
+  ClassSize: '0x2a8'
+  FullSize: '0x670'
   InheritedSize: '0x3c8'
   Super: Actor
 TunnelOfTheDamnedInterface:
@@ -64354,8 +64482,8 @@ TunnelOfTheDamnedPortal:
     Offset: '0x440'
     Size: '0x8'
     Type: Class Actor*
-  ClassSize: '0x270'
-  FullSize: '0x638'
+  ClassSize: '0x288'
+  FullSize: '0x650'
   InheritedSize: '0x3c8'
   Super: Actor
 TunnelOfTheDamnedPortalShipSpawnLocation:
@@ -64495,13 +64623,9 @@ TunnelsOfTheDamnedServiceInterface:
   InheritedSize: '0x28'
   Super: Interface
 TunnelsOfTheDamnedServiceParams:
-  Attributes:
-  - Name: TunnelClasses
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<Struct TunnelOfTheDamnedClass>
-  ClassSize: '0x10'
-  FullSize: '0x38'
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
   InheritedSize: '0x28'
   Super: DataAsset
 TunnelsOfTheDamnedSettings:
@@ -64728,6 +64852,16 @@ TutorialTavernStrangerNPC:
   FullSize: '0x7f0'
   InheritedSize: '0x748'
   Super: TavernStrangerNPC
+UGCSettings:
+  Attributes:
+  - Name: ScrambledShipNamesDataAssetReference
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x10'
+  FullSize: '0x48'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings
 UIDataRequestComponent:
   Attributes: []
   ClassSize: '0xd0'
@@ -67792,68 +67926,72 @@ Wheel:
     Offset: '0x738'
     Size: '0x8'
     Type: Class WheelDescAsset*
-  - Name: DamageSpeedMultiplierLevel1
+  - Name: CurrentWheelDesc
     Offset: '0x740'
-    Size: '0x4'
-    Type: float
-  - Name: DamageSpeedMultiplierLevel2
-    Offset: '0x744'
-    Size: '0x4'
-    Type: float
-  - Name: DamageSpeedMultiplierLevel3
+    Size: '0x8'
+    Type: Class WheelDescAsset*
+  - Name: DamageSpeedMultiplierLevel1
     Offset: '0x748'
     Size: '0x4'
     Type: float
-  - Name: WheelDamageParticleSystem
+  - Name: DamageSpeedMultiplierLevel2
+    Offset: '0x74c'
+    Size: '0x4'
+    Type: float
+  - Name: DamageSpeedMultiplierLevel3
     Offset: '0x750'
+    Size: '0x4'
+    Type: float
+  - Name: WheelDamageParticleSystem
+    Offset: '0x758'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: TurbulenceFactor
-    Offset: '0x758'
+    Offset: '0x778'
     Size: '0x4'
     Type: float
   - Name: ServerWheelAngle
-    Offset: '0x75c'
+    Offset: '0x77c'
     Size: '0x4'
     Type: float
   - Name: ServerWantedAngle
-    Offset: '0x760'
+    Offset: '0x780'
     Size: '0x4'
     Type: float
   - Name: CenterJoltDuration
-    Offset: '0x788'
+    Offset: '0x7a8'
     Size: '0x4'
     Type: float
   - Name: CenterJoltSlowDownFactor
-    Offset: '0x78c'
+    Offset: '0x7ac'
     Size: '0x4'
     Type: float
   - Name: WheelDamageLevelAudio
-    Offset: '0x7b0'
+    Offset: '0x7d0'
     Size: '0x8'
     Type: Class DamageableShipPartAudioParams*
   - Name: MaxWheelAngle
-    Offset: '0x7bc'
+    Offset: '0x7dc'
     Size: '0x4'
     Type: float
   - Name: MinWheelAngle
-    Offset: '0x7c0'
+    Offset: '0x7e0'
     Size: '0x4'
     Type: float
   - Name: SqueakAtAngle
-    Offset: '0x7c4'
+    Offset: '0x7e4'
     Size: '0x4'
     Type: float
   - Name: AllowedWheelDirection
-    Offset: '0x7c8'
+    Offset: '0x7e8'
     Size: '0x1'
     Type: byte
   - Name: NarratedShipDirectionComponent
-    Offset: '0x7d0'
+    Offset: '0x7f0'
     Size: '0x8'
     Type: Class NarratedShipDirectionComponent*
-  ClassSize: '0x4f8'
-  FullSize: '0xa08'
+  ClassSize: '0x520'
+  FullSize: '0xa30'
   InheritedSize: '0x510'
   Super: ControllableObject
 WheelAnimInstance:

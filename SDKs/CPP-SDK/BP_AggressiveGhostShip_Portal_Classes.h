@@ -6,17 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40
-class BP_AggressiveGhostShip_Portal_C: public AggressiveGhostShipPortal
+// Size -0x5c782e87
+class BP_AggressiveGhostShip_Portal_C: public ObjectProperty
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x410(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x418(0x8)
-	Class WwiseEmitterComponent*                                 None;                                              // 0x420(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
-	Class SceneComponent*                                        None;                                              // 0x438(0x8)
-	TArray<class MaterialInstanceDynamic*>                       None;                                              // 0x440(0x10)
+	None ByteProperty*                                           ;                                                  // 0x0(0x690067)
 };
 
 

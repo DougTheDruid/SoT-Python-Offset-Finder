@@ -289,7 +289,7 @@ public:
 };
 
 
-// Size 0x198
+// Size 0x1a0
 class AIBountySpawner: public AISpawner
 {
 public:
@@ -301,11 +301,14 @@ public:
 	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0x4a0(0x10)
 	float                                                        WaveSuicideMinDist;                                // 0x4b0(0x4)
 	bool                                                         ImmediatelyPerceiveTargets;                        // 0x4b4(0x1)
-	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4b8(0x8)
-	TArray<class Actor*>                                         CrewMembers;                                       // 0x4e8(0x10)
-	TArray<class Actor*>                                         NonCrewMembersInRegion;                            // 0x4f8(0x10)
-	TArray<class Actor*>                                         AllParticipatingPlayers;                           // 0x508(0x10)
-	Class OverlapTriggerComponent*                               AudioZoneTriggerComponent;                         // 0x518(0x8)
+	bool                                                         DynamicallyCreateWaveDelays;                       // 0x4b5(0x1)
+	float                                                        DynamicMinTimeBetweenSpawns;                       // 0x4b8(0x4)
+	float                                                        DynamicMaxTimeBetweenSpawns;                       // 0x4bc(0x4)
+	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4c0(0x8)
+	TArray<class Actor*>                                         CrewMembers;                                       // 0x4f0(0x10)
+	TArray<class Actor*>                                         NonCrewMembersInRegion;                            // 0x500(0x10)
+	TArray<class Actor*>                                         AllParticipatingPlayers;                           // 0x510(0x10)
+	Class OverlapTriggerComponent*                               AudioZoneTriggerComponent;                         // 0x520(0x8)
 };
 
 
@@ -1987,13 +1990,14 @@ public:
 	float                                                        InhabitedChance;                                   // 0x440(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulInhabitedCheck;                // 0x448(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedInhabitedCheck;                    // 0x478(0x30)
-	float                                                        SpawnForInteractableChance;                        // 0x4a8(0x4)
+	bool                                                         BlockSubsequentSpawningAtInteractableOnceAiKilled; // 0x4a8(0x1)
+	float                                                        SpawnForInteractableChance;                        // 0x4ac(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulSpawnOnInteractableCheck;      // 0x4b0(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedSpawnOnInteractableCheck;          // 0x4e0(0x30)
 	bool                                                         RunInhabitedSimulation;                            // 0x510(0x1)
 	bool                                                         RunSpawnForInteractableSimulation;                 // 0x511(0x1)
 	int                                                          NumIterations;                                     // 0x514(0x4)
-	byte                                                         CachedPlaymode;                                    // 0x530(0x1)
+	byte                                                         CachedPlaymode;                                    // 0x531(0x1)
 };
 
 

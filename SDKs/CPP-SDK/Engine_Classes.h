@@ -1644,7 +1644,7 @@ public:
 };
 
 
-// Size 0x34548
+// Size 0x34558
 class NetConnection: public Player
 {
 public:
@@ -1658,8 +1658,9 @@ public:
 	int                                                          MaxPacket;                                         // 0xa0(0x4)
 	bool                                                         InternalAck;                                       // 0xa4(0x1)
 	double                                                       LastReceiveTime;                                   // 0x3a0(0x8)
-	int                                                          MaxDormantActorsCheckedFromRelevancy;              // 0x34468(0x4)
-	TArray<class Channel*>                                       DeferredCloseChannels;                             // 0x344c8(0x10)
+	TArray<class Actor*>                                         ConsideredActorsList;                              // 0x34458(0x10)
+	int                                                          MaxDormantActorsCheckedFromRelevancy;              // 0x34478(0x4)
+	TArray<class Channel*>                                       DeferredCloseChannels;                             // 0x344d8(0x10)
 };
 
 
@@ -9936,7 +9937,7 @@ public:
 class ChildConnection: public NetConnection
 {
 public:
-	Class NetConnection*                                         Parent;                                            // 0x34590(0x8)
+	Class NetConnection*                                         Parent;                                            // 0x345a0(0x8)
 };
 
 

@@ -1,51 +1,15 @@
 {
   "BP_AggressiveGhostShip_Portal_C": {
-    "Super": "AggressiveGhostShipPortal",
-    "FullSize": "0x450",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x40",
+    "Super": "ObjectProperty",
+    "FullSize": "0x927fd9",
+    "InheritedSize": "0x5d0aae60",
+    "ClassSize": "-0x5c782e87",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "None",
-        "Type": "Class WwiseEmitterComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "None",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
-        "Offset": "0x440"
+        "Name": "",
+        "Type": "None ByteProperty*",
+        "Size": "0x690067",
+        "Offset": "0x0"
       }
     ]
   },

@@ -301,6 +301,14 @@ public:
 };
 
 
+// Size 0x20
+struct QueryableStateChangedEvent
+{
+public:
+	Struct TaleQuestQueryableStateDataInfo                       DataValue;                                         // 0x0(0x20)
+};
+
+
 // Size 0x8
 struct ActorSpawnedAutomationEvent
 {

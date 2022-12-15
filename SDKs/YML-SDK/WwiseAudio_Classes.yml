@@ -6,6 +6,12 @@ AnimNotifyWwiseEmitterComponentRetrievalInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+AudioReporterSubSystem:
+  Attributes: []
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: Object
 MergedMultiEmitterComponent:
   Attributes:
   - Name: EmitterPool

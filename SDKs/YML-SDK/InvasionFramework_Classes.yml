@@ -124,12 +124,16 @@ InvasionBattleBounds:
     Offset: '0x3e4'
     Size: '0x4'
     Type: float
-  - Name: HasLeftBattleBounds
+  - Name: ShipThatWasDestroyed
     Offset: '0x3f0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: HasLeftBattleBounds
+    Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class Actor*>
-  ClassSize: '0x38'
-  FullSize: '0x400'
+  ClassSize: '0x40'
+  FullSize: '0x408'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionBattleBoundsShipComponentInterface:
@@ -175,31 +179,31 @@ InvasionService:
     Size: '0x8'
     Type: Class InvasionLocationsDataAsset*
   - Name: MatchmakingCrews
-    Offset: '0x570'
+    Offset: '0x588'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: InvadingCrews
-    Offset: '0x580'
+    Offset: '0x598'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: ReplicatedInvasionCrewMusicStates
-    Offset: '0x590'
+    Offset: '0x5a8'
     Size: '0x10'
     Type: TArray<Struct ReplicatedInvasionCrewMusicState>
   - Name: MatchmakingCrewsReplicated
-    Offset: '0x5a0'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<Struct InvasionServiceMatchmakingCrewInfo>
   - Name: InvadingCrewsReplicated
-    Offset: '0x5b0'
+    Offset: '0x5c8'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: InvasionBattleBoundsList
-    Offset: '0x5c0'
+    Offset: '0x5d8'
     Size: '0x10'
     Type: TArray<class InvasionBattleBounds*>
-  ClassSize: '0x270'
-  FullSize: '0x638'
+  ClassSize: '0x288'
+  FullSize: '0x650'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionServiceDataAsset:
@@ -338,8 +342,8 @@ TaleQuestInvasionMatchmakingService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestInvasionMatchmakingServiceDesc*
-  ClassSize: '0xb0'
-  FullSize: '0x110'
+  ClassSize: '0x190'
+  FullSize: '0x1f0'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestInvasionMatchmakingServiceDesc:

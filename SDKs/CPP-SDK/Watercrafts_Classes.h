@@ -319,12 +319,13 @@ public:
 };
 
 
-// Size 0x88
+// Size 0x98
 class TaleQuestSpawnWatercraftStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x38)
-	Struct QuestVariableWatercraft                               Watercraft;                                        // 0xd8(0x30)
+	Struct StringAssetReference                                  LiveryAsset;                                       // 0xd8(0x10)
+	Struct QuestVariableWatercraft                               Watercraft;                                        // 0xe8(0x30)
 };
 
 

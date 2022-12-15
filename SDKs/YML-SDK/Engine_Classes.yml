@@ -3323,12 +3323,12 @@ ChildActorComponent:
 ChildConnection:
   Attributes:
   - Name: Parent
-    Offset: '0x34590'
+    Offset: '0x345a0'
     Size: '0x8'
     Type: Class NetConnection*
   ClassSize: '0x8'
-  FullSize: '0x34598'
-  InheritedSize: '0x34590'
+  FullSize: '0x345a8'
+  InheritedSize: '0x345a0'
   Super: NetConnection
 ClientOnlyTestActor:
   Attributes: []
@@ -3819,8 +3819,8 @@ DeformablesBlueprintFunctionLibrary:
 DemoNetConnection:
   Attributes: []
   ClassSize: '0x10'
-  FullSize: '0x345a0'
-  InheritedSize: '0x34590'
+  FullSize: '0x345b0'
+  InheritedSize: '0x345a0'
   Super: NetConnection
 DemoNetDriver:
   Attributes: []
@@ -12984,16 +12984,20 @@ NetConnection:
     Offset: '0x3a0'
     Size: '0x8'
     Type: double
+  - Name: ConsideredActorsList
+    Offset: '0x34458'
+    Size: '0x10'
+    Type: TArray<class Actor*>
   - Name: MaxDormantActorsCheckedFromRelevancy
-    Offset: '0x34468'
+    Offset: '0x34478'
     Size: '0x4'
     Type: int
   - Name: DeferredCloseChannels
-    Offset: '0x344c8'
+    Offset: '0x344d8'
     Size: '0x10'
     Type: TArray<class Channel*>
-  ClassSize: '0x34548'
-  FullSize: '0x34590'
+  ClassSize: '0x34558'
+  FullSize: '0x345a0'
   InheritedSize: '0x48'
   Super: Player
 NetDriver:

@@ -837,9 +837,9 @@
   },
   "AIBountySpawner": {
     "Super": "AISpawner",
-    "FullSize": "0x5d0",
+    "FullSize": "0x5d8",
     "InheritedSize": "0x438",
-    "ClassSize": "0x198",
+    "ClassSize": "0x1a0",
     "Attributes": [
       {
         "Name": "MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup",
@@ -890,34 +890,52 @@
         "Offset": "0x4b4"
       },
       {
+        "Name": "DynamicallyCreateWaveDelays",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4b5"
+      },
+      {
+        "Name": "DynamicMinTimeBetweenSpawns",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "DynamicMaxTimeBetweenSpawns",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4bc"
+      },
+      {
         "Name": "ActiveCombatDialogue",
         "Type": "Class AICombatDialogue*",
         "Size": "0x8",
-        "Offset": "0x4b8"
+        "Offset": "0x4c0"
       },
       {
         "Name": "CrewMembers",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
-        "Offset": "0x4e8"
+        "Offset": "0x4f0"
       },
       {
         "Name": "NonCrewMembersInRegion",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
-        "Offset": "0x4f8"
+        "Offset": "0x500"
       },
       {
         "Name": "AllParticipatingPlayers",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
-        "Offset": "0x508"
+        "Offset": "0x510"
       },
       {
         "Name": "AudioZoneTriggerComponent",
         "Type": "Class OverlapTriggerComponent*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x520"
       }
     ]
   },
@@ -5538,10 +5556,16 @@
         "Offset": "0x478"
       },
       {
+        "Name": "BlockSubsequentSpawningAtInteractableOnceAiKilled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4a8"
+      },
+      {
         "Name": "SpawnForInteractableChance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x4a8"
+        "Offset": "0x4ac"
       },
       {
         "Name": "DelayAfterSuccessfulSpawnOnInteractableCheck",
@@ -5577,7 +5601,7 @@
         "Name": "CachedPlaymode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x530"
+        "Offset": "0x531"
       }
     ]
   },

@@ -81,8 +81,8 @@ InAppPurchaseRestoreCallbackProxy:
 IpConnection:
   Attributes: []
   ClassSize: '0x50'
-  FullSize: '0x345e0'
-  InheritedSize: '0x34590'
+  FullSize: '0x345f0'
+  InheritedSize: '0x345a0'
   Super: NetConnection
 IpNetDriver:
   Attributes:

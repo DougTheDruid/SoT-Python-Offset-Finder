@@ -64,6 +64,18 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x7f0"
+      },
+      {
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7f4"
       }
     ]
   },

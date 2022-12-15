@@ -26,7 +26,7 @@ public:
 	TArray<class InstancedStaticMeshComponent*>                  Instanced Meshes;                                  // 0x438(0x10)
 	Struct RandomStream                                          Random;                                            // 0x448(0x8)
 	int                                                          Instance Count;                                    // 0x450(0x4)
-	TArray<Struct Instanced Meshes>                              Mesh Radii;                                        // 0x458(0x10)
+	TArray<Struct InstancedStaticMeshComponent>                  Mesh Radii;                                        // 0x458(0x10)
 	float                                                        Max Draw Distance;                                 // 0x468(0x4)
 	bool                                                         Cast Shadows;                                      // 0x46c(0x1)
 };

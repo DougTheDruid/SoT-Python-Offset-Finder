@@ -53,7 +53,7 @@ BP_DynamicDensityFogVolume_C:
   - Name: StateParams
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct StateTextures>
+    Type: TArray<Struct Texture2D>
   ClassSize: '0x60'
   FullSize: '0x438'
   InheritedSize: '0x3d8'

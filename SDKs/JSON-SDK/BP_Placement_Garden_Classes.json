@@ -103,7 +103,7 @@
       },
       {
         "Name": "Mesh Radii",
-        "Type": "TArray<Struct Instanced Meshes>",
+        "Type": "TArray<Struct InstancedStaticMeshComponent>",
         "Size": "0x10",
         "Offset": "0x458"
       },

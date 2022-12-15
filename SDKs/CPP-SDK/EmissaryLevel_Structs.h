@@ -79,7 +79,7 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x90
 struct EmissaryLevelData
 {
 public:
@@ -87,8 +87,9 @@ public:
 	Struct EmissaryFlagMeshReferences                            EmissaryFlagMeshAssetReferences;                   // 0x8(0x20)
 	Struct RewardId                                              EmissaryDeactivationReward;                        // 0x48(0x8)
 	TArray<Struct PlayerStat>                                    StatsToFireOnEmissaryLevelReached;                 // 0x50(0x10)
-	Struct StringAssetReference                                  TreasureSoldNotificationFlag;                      // 0x60(0x10)
-	Struct StringAssetReference                                  EmissaryFlagTextureReference;                      // 0x70(0x10)
+	TArray<Struct PlayerStat>                                    StatsToFireOnEmissaryDeactivated;                  // 0x60(0x10)
+	Struct StringAssetReference                                  TreasureSoldNotificationFlag;                      // 0x70(0x10)
+	Struct StringAssetReference                                  EmissaryFlagTextureReference;                      // 0x80(0x10)
 };
 
 

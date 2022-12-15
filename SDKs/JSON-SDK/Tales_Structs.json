@@ -417,6 +417,17 @@
     "ClassSize": "0x30",
     "Attributes": []
   },
+  "QueryableStateChangedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DataValue",
+        "Type": "Struct TaleQuestQueryableStateDataInfo",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ActorSpawnedAutomationEvent": {
     "ClassSize": "0x8",
     "Attributes": []

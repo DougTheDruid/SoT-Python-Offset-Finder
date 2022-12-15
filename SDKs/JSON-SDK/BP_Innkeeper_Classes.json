@@ -1,25 +1,19 @@
 {
   "BP_Innkeeper_C": {
-    "Super": "NPC",
-    "FullSize": "0x6f0",
-    "InheritedSize": "0x690",
-    "ClassSize": "0x60",
+    "Super": "Sovereign",
+    "FullSize": "0x6b0",
+    "InheritedSize": "0x698",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x690"
-      },
-      {
-        "Name": "CargoRunParticipant",
-        "Type": "Class CargoRunParticipantComponent*",
+        "Name": "Capsule",
+        "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "SolidHits",
-        "Type": "Class CapsuleComponent*",
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
@@ -28,36 +22,6 @@
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x6a8"
-      },
-      {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6b0"
-      },
-      {
-        "Name": "AnimNotifyWwiseEmitter",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
-        "Size": "0x8",
-        "Offset": "0x6b8"
-      },
-      {
-        "Name": "SFX_IdleLoopPlay",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x6c0"
-      },
-      {
-        "Name": "SFX_IdleLoopStop",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x6c8"
-      },
-      {
-        "Name": "InnkeeperEmitter",
-        "Type": "Struct WwiseEmitter",
-        "Size": "0x20",
-        "Offset": "0x6d0"
       }
     ]
   },

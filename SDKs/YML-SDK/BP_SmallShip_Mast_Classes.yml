@@ -57,4 +57,4 @@ BP_SmallShip_Mast_C:
   ClassSize: '0x68'
   FullSize: '0xaa0'
   InheritedSize: '0xa38'
-  Super: BP_Mast_C
+  Super: None

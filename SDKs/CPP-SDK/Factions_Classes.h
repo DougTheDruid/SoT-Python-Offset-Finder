@@ -41,14 +41,15 @@ public:
 };
 
 
-// Size 0x1d0
+// Size 0x240
 class FactionFlipMeshComponent: public StaticMeshComponent
 {
 public:
 	Class CurveFloat*                                            FlipCurve;                                         // 0x620(0x8)
-	float                                                        FactionJoinedLerpDuration;                         // 0x628(0x4)
-	TArray<Struct CrewStreakLevelIncreased>                      StreakData;                                        // 0x7d0(0x10)
-	bool                                                         ServerTargetFlipped;                               // 0x7e0(0x1)
+	class                                                        FlippedFaction;                                    // 0x628(0x8)
+	float                                                        FactionJoinedLerpDuration;                         // 0x630(0x4)
+	TArray<Struct CrewStreakLevelIncreased>                      StreakData;                                        // 0x840(0x10)
+	bool                                                         ServerTargetFlipped;                               // 0x850(0x1)
 };
 
 
@@ -59,7 +60,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x68
 class FactionInteractionVoteComponent: public InlineVotingInteractionComponent
 {
 public:
@@ -109,7 +110,7 @@ public:
 };
 
 
-// Size 0x250
+// Size 0x258
 class FactionService: public Actor
 {
 public:
@@ -144,7 +145,7 @@ public:
 };
 
 
-// Size 0x90
+// Size 0xa0
 class FactionVoteConsumerBase: public VoteConsumerInlineBase
 {
 public:
@@ -155,19 +156,20 @@ public:
 };
 
 
-// Size 0x1f8
+// Size 0x230
 class StartFactionVoyageVoteConsumer: public FactionVoteConsumerBase
 {
 public:
-	Struct FText                                                 FactionVotingCastVote;                             // 0xc0(0x38)
-	Struct FText                                                 FactionVotingCantVote;                             // 0xf8(0x38)
-	Struct FText                                                 FactionVotingRemoveVote;                           // 0x130(0x38)
-	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x168(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonVoterNotOnOwnShip;      // 0x1a0(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonIsOpposingEmissary;     // 0x1d8(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonIsOnFactionBlockedTale; // 0x210(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonIsInInvalidWorldRegion; // 0x248(0x38)
-	Struct FText                                                 FactionVotingSwitchVote;                           // 0x280(0x38)
+	Struct FText                                                 FactionVotingCastVote;                             // 0xd0(0x38)
+	Struct FText                                                 FactionVotingCantVote;                             // 0x108(0x38)
+	Struct FText                                                 FactionVotingRemoveVote;                           // 0x140(0x38)
+	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x178(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonVoterNotOnOwnShip;      // 0x1b0(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonIsOpposingEmissary;     // 0x1e8(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonIsOnFactionBlockedTale; // 0x220(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonIsInInvalidWorldRegion; // 0x258(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonIsNotOnNormalPlayMode;  // 0x290(0x38)
+	Struct FText                                                 FactionVotingSwitchVote;                           // 0x2c8(0x38)
 };
 
 
@@ -175,16 +177,16 @@ public:
 class StopFactionVoyageVoteConsumer: public FactionVoteConsumerBase
 {
 public:
-	Struct FText                                                 FactionVotingCastVote;                             // 0xc0(0x38)
-	Struct FText                                                 FactionVotingCantVote;                             // 0xf8(0x38)
-	Struct FText                                                 FactionVotingRemoveVote;                           // 0x130(0x38)
-	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x168(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonGoToOutpost;            // 0x1a0(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonActiveForDifferentCompany; // 0x1d8(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonEnemyShipNearby;        // 0x210(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonShipNotInHarbour;       // 0x248(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonCrewInBattle;           // 0x280(0x38)
-	Struct FText                                                 FactionVotingCantVoteReasonLeaveFactionCooldownIsActive; // 0x2b8(0x38)
+	Struct FText                                                 FactionVotingCastVote;                             // 0xd0(0x38)
+	Struct FText                                                 FactionVotingCantVote;                             // 0x108(0x38)
+	Struct FText                                                 FactionVotingRemoveVote;                           // 0x140(0x38)
+	Struct FText                                                 FactionVotingCantRemoveVote;                       // 0x178(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonGoToOutpost;            // 0x1b0(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonActiveForDifferentCompany; // 0x1e8(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonEnemyShipNearby;        // 0x220(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonShipNotInHarbour;       // 0x258(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonCrewInBattle;           // 0x290(0x38)
+	Struct FText                                                 FactionVotingCantVoteReasonLeaveFactionCooldownIsActive; // 0x2c8(0x38)
 };
 
 

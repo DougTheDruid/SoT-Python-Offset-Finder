@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_AthenaGameState_C: public AthenaGameState
 {
 public:
-	Class WorldMarkerRoutingComponent*                           WorldMarkerRouting;                                // 0xb88(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0xb90(0x8)
+	Class WorldMarkerRoutingComponent*                           WorldMarkerRouting;                                // 0xb90(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0xb98(0x8)
 };
 
 

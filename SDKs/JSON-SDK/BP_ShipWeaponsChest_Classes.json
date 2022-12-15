@@ -1,21 +1,27 @@
 {
   "BP_ShipWeaponsChest_C": {
     "Super": "PossessionsChest",
-    "FullSize": "0x5a0",
+    "FullSize": "0x5a8",
     "InheritedSize": "0x590",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "AddCrewLockableActionRule",
-        "Type": "Class AddCrewLockableActionRuleComponent*",
+        "Name": "CrewLockableComponent",
+        "Type": "Class CrewLockableComponent*",
         "Size": "0x8",
         "Offset": "0x590"
+      },
+      {
+        "Name": "LockMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x598"
       },
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
-        "Offset": "0x598"
+        "Offset": "0x5a0"
       }
     ]
   },

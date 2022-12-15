@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xa0
-class BP_SmallShip_StandardHull_Damage_C: public BP_HullDamage_C
+class BP_SmallShip_StandardHull_Damage_C: public None
 {
 public:
 	Class StaticMeshComponent*                                   None;                                              // 0x608(0x8)

@@ -7436,9 +7436,9 @@
   },
   "NetConnection": {
     "Super": "Player",
-    "FullSize": "0x34590",
+    "FullSize": "0x345a0",
     "InheritedSize": "0x48",
-    "ClassSize": "0x34548",
+    "ClassSize": "0x34558",
     "Attributes": [
       {
         "Name": "Children",
@@ -7501,16 +7501,22 @@
         "Offset": "0x3a0"
       },
       {
+        "Name": "ConsideredActorsList",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x34458"
+      },
+      {
         "Name": "MaxDormantActorsCheckedFromRelevancy",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x34468"
+        "Offset": "0x34478"
       },
       {
         "Name": "DeferredCloseChannels",
         "Type": "TArray<class Channel*>",
         "Size": "0x10",
-        "Offset": "0x344c8"
+        "Offset": "0x344d8"
       }
     ]
   },
@@ -30996,22 +31002,22 @@
   },
   "ChildConnection": {
     "Super": "NetConnection",
-    "FullSize": "0x34598",
-    "InheritedSize": "0x34590",
+    "FullSize": "0x345a8",
+    "InheritedSize": "0x345a0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Parent",
         "Type": "Class NetConnection*",
         "Size": "0x8",
-        "Offset": "0x34590"
+        "Offset": "0x345a0"
       }
     ]
   },
   "DemoNetConnection": {
     "Super": "NetConnection",
-    "FullSize": "0x345a0",
-    "InheritedSize": "0x34590",
+    "FullSize": "0x345b0",
+    "InheritedSize": "0x345a0",
     "ClassSize": "0x10",
     "Attributes": []
   },

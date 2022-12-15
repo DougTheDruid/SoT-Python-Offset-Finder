@@ -1,21 +1,21 @@
 {
   "BP_TunnelOfTheDamnedPortal_Ship_C": {
     "Super": "TunnelOfTheDamnedPortal",
-    "FullSize": "0x648",
-    "InheritedSize": "0x638",
+    "FullSize": "0x660",
+    "InheritedSize": "0x650",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x650"
       },
       {
         "Name": "SynchedMusicZone",
         "Type": "Class SynchedMusicZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x658"
       }
     ]
   },

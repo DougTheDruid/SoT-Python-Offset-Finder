@@ -21,6 +21,13 @@ BoxedRpc:
     Size: '0x8'
     Type: Class ScriptStruct*
   ClassSize: '0x10'
+ConfigurableStructureInstanceWrapper:
+  Attributes:
+  - Name: Value
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct UserDefinedStructWithSerialisableValue
+  ClassSize: '0x20'
 EventCancelForceFeedback:
   Attributes:
   - Name: ForceFeedbackEffect
@@ -52,11 +59,11 @@ EventTriggerForceFeedback:
   ClassSize: '0x18'
 InlineUserDefinedStructDetails:
   Attributes:
-  - Name: Struct
+  - Name: StructWithDefaults
     Offset: '0x0'
-    Size: '0x8'
-    Type: Class ScriptStruct*
-  ClassSize: '0x8'
+    Size: '0x20'
+    Type: Struct UserDefinedStructWithSerialisableValue
+  ClassSize: '0x20'
 NativeAndUserDefinedStructSelector:
   Attributes:
   - Name: Struct
@@ -126,3 +133,10 @@ StringAssetClassPairFeatureOverride:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x28'
+UserDefinedStructWithSerialisableValue:
+  Attributes:
+  - Name: InternalStruct
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class ScriptStruct*
+  ClassSize: '0x20'

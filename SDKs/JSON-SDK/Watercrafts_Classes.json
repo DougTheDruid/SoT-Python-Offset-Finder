@@ -808,9 +808,9 @@
   },
   "TaleQuestSpawnWatercraftStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x108",
+    "FullSize": "0x118",
     "InheritedSize": "0x80",
-    "ClassSize": "0x88",
+    "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "SpawnLocation",
@@ -819,10 +819,16 @@
         "Offset": "0x80"
       },
       {
+        "Name": "LiveryAsset",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
         "Name": "Watercraft",
         "Type": "Struct QuestVariableWatercraft",
         "Size": "0x30",
-        "Offset": "0xd8"
+        "Offset": "0xe8"
       }
     ]
   },

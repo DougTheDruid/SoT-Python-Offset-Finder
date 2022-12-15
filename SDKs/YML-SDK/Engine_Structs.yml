@@ -8604,31 +8604,59 @@ NetRelevancyActorStat:
     Offset: '0x20'
     Size: '0x10'
     Type: Struct FString
-  - Name: Location
+  - Name: AttachedParent
     Offset: '0x30'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: AttachedParentOwner
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Location
+    Offset: '0x50'
     Size: '0xc'
     Type: Struct Vector
   - Name: Cluster
-    Offset: '0x40'
+    Offset: '0x60'
     Size: '0x48'
     Type: Struct NetRelevancyActorClusterStat
   - Name: ChannelState
-    Offset: '0x88'
+    Offset: '0xa8'
     Size: '0x1'
     Type: byte
   - Name: IsNetRelevant
-    Offset: '0x89'
+    Offset: '0xa9'
+    Size: '0x1'
+    Type: bool
+  - Name: IsAlwaysRelevant
+    Offset: '0xaa'
+    Size: '0x1'
+    Type: bool
+  - Name: UseOwnerRelevancy
+    Offset: '0xab'
+    Size: '0x1'
+    Type: bool
+  - Name: OnlyRelevantToOwner
+    Offset: '0xac'
     Size: '0x1'
     Type: bool
   - Name: ActorDormancy
-    Offset: '0x8a'
+    Offset: '0xad'
     Size: '0x1'
     Type: byte
   - Name: ChannelDormancy
-    Offset: '0x8b'
+    Offset: '0xae'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x90'
+  - Name: PushModelDormancy
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: NetUpdateFrequency
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc8'
 NetRelevancyConnectionStat:
   Attributes:
   - Name: Id
@@ -8643,7 +8671,15 @@ NetRelevancyConnectionStat:
     Offset: '0x30'
     Size: '0x8'
     Type: Struct IntPoint
-  ClassSize: '0x38'
+  - Name: DormantActors
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Str DormantActors>
+  - Name: ConsideredActors
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Str ConsideredActors>
+  ClassSize: '0x58'
 NetRelevancyLevelStat:
   Attributes:
   - Name: Name
@@ -8667,9 +8703,9 @@ NetRelevancyStat:
     Type: Struct FString
   - Name: State
     Offset: '0x10'
-    Size: '0x70'
+    Size: '0x90'
     Type: Struct NetRelevancyStateStat
-  ClassSize: '0x80'
+  ClassSize: '0xa0'
 NetRelevancyStateStat:
   Attributes:
   - Name: Duration
@@ -8686,17 +8722,17 @@ NetRelevancyStateStat:
     Type: Struct FString
   - Name: Connection
     Offset: '0x18'
-    Size: '0x38'
+    Size: '0x58'
     Type: Struct NetRelevancyConnectionStat
   - Name: Actors
-    Offset: '0x50'
+    Offset: '0x70'
     Size: '0x10'
     Type: TArray<Struct NetRelevancyActorStat>
   - Name: Levels
-    Offset: '0x60'
+    Offset: '0x80'
     Size: '0x10'
     Type: TArray<Struct NetRelevancyLevelStat>
-  ClassSize: '0x70'
+  ClassSize: '0x90'
 NetSubObjectPtr:
   Attributes:
   - Name: SubObject

@@ -1568,8 +1568,8 @@ TaleQuestArrayUnionStepDesc:
   Super: TaleQuestArrayOperationStepBaseDesc
 TaleQuestAwaitCrewShipSinkStep:
   Attributes: []
-  ClassSize: '0x48'
-  FullSize: '0xe0'
+  ClassSize: '0x58'
+  FullSize: '0xf0'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestAwaitCrewShipSinkStepDesc:
@@ -1578,8 +1578,12 @@ TaleQuestAwaitCrewShipSinkStepDesc:
     Offset: '0x80'
     Size: '0x30'
     Type: Struct QuestVariableGuid
-  ClassSize: '0x30'
-  FullSize: '0xb0'
+  - Name: TimeoutTimerInterval
+    Offset: '0xb0'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
+  FullSize: '0xb8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestAwaitEventStep:
@@ -1932,16 +1936,16 @@ TaleQuestFramedStep:
     Offset: '0xb0'
     Size: '0x8'
     Type: Class TaleQuestFramedStepDesc*
-  - Name: StructForCollector
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: Class ScriptStruct*
-  - Name: LocalStructForCollector
-    Offset: '0xd0'
-    Size: '0x8'
-    Type: Class ScriptStruct*
-  ClassSize: '0x40'
-  FullSize: '0xd8'
+  - Name: Variables
+    Offset: '0xb8'
+    Size: '0x20'
+    Type: Struct UserDefinedStructWithSerialisableValue
+  - Name: LocalVariables
+    Offset: '0xd8'
+    Size: '0x20'
+    Type: Struct UserDefinedStructWithSerialisableValue
+  ClassSize: '0x60'
+  FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestFramedStepDesc:
@@ -1950,16 +1954,16 @@ TaleQuestFramedStepDesc:
     Offset: '0x80'
     Size: '0x10'
     Type: TArray<class TaleQuestServiceDesc*>
-  - Name: Variables
+  - Name: VariablesWithDefaults
     Offset: '0x90'
-    Size: '0x8'
-    Type: Class ScriptStruct*
+    Size: '0x20'
+    Type: Struct UserDefinedStructWithSerialisableValue
   - Name: GeneratedVariables
-    Offset: '0x98'
-    Size: '0x8'
+    Offset: '0xb0'
+    Size: '0x20'
     Type: Struct InlineUserDefinedStructDetails
-  ClassSize: '0x20'
-  FullSize: '0xa0'
+  ClassSize: '0x50'
+  FullSize: '0xd0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestFunctionStepLibrary:
@@ -2374,8 +2378,8 @@ TaleQuestQueryableStatesService:
     Offset: '0x60'
     Size: '0x10'
     Type: TArray<Struct TaleQuestQueryableStateDataInfo>
-  ClassSize: '0x30'
-  FullSize: '0x90'
+  ClassSize: '0x40'
+  FullSize: '0xa0'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestQueryableStatesServiceDesc:
@@ -3032,6 +3036,42 @@ WaitForItemPickupStepDesc:
     Type: Struct QuestVariableActor
   ClassSize: '0x60'
   FullSize: '0xe0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+WaitForQueryableStateValueBoolStepDesc:
+  Attributes:
+  - Name: ExpectedValue
+    Offset: '0x88'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x8'
+  FullSize: '0x90'
+  InheritedSize: '0x88'
+  Super: WaitForQueryableStateValueStepDescBase
+WaitForQueryableStateValueIntStepDesc:
+  Attributes:
+  - Name: ExpectedValue
+    Offset: '0x88'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0x90'
+  InheritedSize: '0x88'
+  Super: WaitForQueryableStateValueStepDescBase
+WaitForQueryableStateValueStep:
+  Attributes: []
+  ClassSize: '0x68'
+  FullSize: '0x100'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+WaitForQueryableStateValueStepDescBase:
+  Attributes:
+  - Name: DataID
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x8'
+  FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 WaitForSpawnedPawnBaseStep:

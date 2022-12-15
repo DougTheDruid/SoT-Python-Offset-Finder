@@ -182,6 +182,20 @@ MediaTimeStampInfo:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
+MovieAssetContainer:
+  Attributes:
+  - Name: MediaTextures
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class MediaTexture*>
+  - Name: MediaPlayers
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class MediaPlayer*>
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: DataAsset
 PlatformMediaSource:
   Attributes:
   - Name: MediaSource

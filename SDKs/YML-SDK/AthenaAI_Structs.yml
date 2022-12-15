@@ -216,7 +216,11 @@ AIBountySpawnerWaveGroup:
     Offset: '0x18'
     Size: '0x8'
     Type: class
-  ClassSize: '0x30'
+  - Name: DynamicDelayBeforeStart
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x38'
 AIBountySpawnerWaveLocation:
   Attributes:
   - Name: Location

@@ -6,6 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x10
+struct WorldEdgeItemServiceBatchCompletedEvent
+{
+public:
+	Struct Guid                                                  BatchId;                                           // 0x0(0x10)
+};
+
+
 // Size 0x1c
 struct WorldEdgeItemBatchTelemetryEvent
 {

@@ -554,7 +554,7 @@
     ]
   },
   "AIBountySpawnerWaveGroup": {
-    "ClassSize": "0x30",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "Waves",
@@ -573,6 +573,12 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x18"
+      },
+      {
+        "Name": "DynamicDelayBeforeStart",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },

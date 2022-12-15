@@ -43,24 +43,24 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x60
 class TaleQuestFramedStep: public TaleQuestStep
 {
 public:
 	TArray<class TaleQuestService*>                              Services;                                          // 0xa0(0x10)
 	Class TaleQuestFramedStepDesc*                               FrameDesc;                                         // 0xb0(0x8)
-	Class ScriptStruct*                                          StructForCollector;                                // 0xc8(0x8)
-	Class ScriptStruct*                                          LocalStructForCollector;                           // 0xd0(0x8)
+	Struct UserDefinedStructWithSerialisableValue                Variables;                                         // 0xb8(0x20)
+	Struct UserDefinedStructWithSerialisableValue                LocalVariables;                                    // 0xd8(0x20)
 };
 
 
-// Size 0x20
+// Size 0x50
 class TaleQuestFramedStepDesc: public TaleQuestStepDesc
 {
 public:
 	TArray<class TaleQuestServiceDesc*>                          Services;                                          // 0x80(0x10)
-	Class ScriptStruct*                                          Variables;                                         // 0x90(0x8)
-	Struct InlineUserDefinedStructDetails                        GeneratedVariables;                                // 0x98(0x8)
+	Struct UserDefinedStructWithSerialisableValue                VariablesWithDefaults;                             // 0x90(0x20)
+	Struct InlineUserDefinedStructDetails                        GeneratedVariables;                                // 0xb0(0x20)
 };
 
 
@@ -374,7 +374,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 class TaleQuestQueryableStatesService: public TaleQuestService
 {
 public:
@@ -827,7 +827,7 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x58
 class TaleQuestAwaitCrewShipSinkStep: public TaleQuestStep
 {
 public:
@@ -1099,6 +1099,13 @@ public:
 
 // Size 0xd0
 class WaitForItemPickupStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x68
+class WaitForQueryableStateValueStep: public TaleQuestStep
 {
 public:
 };
@@ -1530,11 +1537,12 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x38
 class TaleQuestAwaitCrewShipSinkStepDesc: public TaleQuestStepDesc
 {
 public:
 	Struct QuestVariableGuid                                     CrewId;                                            // 0x80(0x30)
+	float                                                        TimeoutTimerInterval;                              // 0xb0(0x4)
 };
 
 
@@ -2055,6 +2063,30 @@ class WaitForItemPickupStepDesc: public TaleQuestStepDesc
 public:
 	Struct QuestVariableActor                                    Item;                                              // 0x80(0x30)
 	Struct QuestVariableActor                                    PickerUpper;                                       // 0xb0(0x30)
+};
+
+
+// Size 0x8
+class WaitForQueryableStateValueStepDescBase: public TaleQuestStepDesc
+{
+public:
+	class                                                        DataID;                                            // 0x80(0x8)
+};
+
+
+// Size 0x8
+class WaitForQueryableStateValueBoolStepDesc: public WaitForQueryableStateValueStepDescBase
+{
+public:
+	bool                                                         ExpectedValue;                                     // 0x88(0x1)
+};
+
+
+// Size 0x8
+class WaitForQueryableStateValueIntStepDesc: public WaitForQueryableStateValueStepDescBase
+{
+public:
+	int                                                          ExpectedValue;                                     // 0x88(0x4)
 };
 
 

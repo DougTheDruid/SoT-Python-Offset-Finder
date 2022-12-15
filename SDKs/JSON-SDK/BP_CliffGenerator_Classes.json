@@ -85,7 +85,7 @@
       },
       {
         "Name": "DataArray",
-        "Type": "TArray<Struct Source Actors>",
+        "Type": "TArray<Struct StaticMesh>",
         "Size": "0x10",
         "Offset": "0x420"
       },
@@ -295,7 +295,7 @@
       },
       {
         "Name": "TopSplineIntersectionPoints",
-        "Type": "TArray<Struct ActorsToIgnore>",
+        "Type": "TArray<Struct Actor>",
         "Size": "0x10",
         "Offset": "0x560"
       },

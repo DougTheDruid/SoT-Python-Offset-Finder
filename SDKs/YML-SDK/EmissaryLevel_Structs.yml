@@ -348,15 +348,19 @@ EmissaryLevelData:
     Offset: '0x50'
     Size: '0x10'
     Type: TArray<Struct PlayerStat>
-  - Name: TreasureSoldNotificationFlag
+  - Name: StatsToFireOnEmissaryDeactivated
     Offset: '0x60'
     Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: EmissaryFlagTextureReference
+    Type: TArray<Struct PlayerStat>
+  - Name: TreasureSoldNotificationFlag
     Offset: '0x70'
     Size: '0x10'
     Type: Struct StringAssetReference
-  ClassSize: '0x80'
+  - Name: EmissaryFlagTextureReference
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  ClassSize: '0x90'
 EmissaryLevelEntry:
   Attributes:
   - Name: Company

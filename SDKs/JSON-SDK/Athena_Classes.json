@@ -1387,15 +1387,27 @@
   },
   "FogBankManager": {
     "Super": "Actor",
-    "FullSize": "0x3d0",
+    "FullSize": "0x3e8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x8",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "FogBankManagerDataAsset",
+        "Name": "FeatureToggledManagerAssetsArray",
+        "Type": "TArray<Struct FeatureToggledFogBankManagerAsset>",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "DefaultFogBankManagerDataAsset",
         "Type": "Class FogBankManagerDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3c8"
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "ActiveFogBankManagerDataAsset",
+        "Type": "Class FogBankManagerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
       }
     ]
   },
@@ -7324,9 +7336,9 @@
   },
   "AthenaGameSettings": {
     "Super": "Object",
-    "FullSize": "0x860",
+    "FullSize": "0x870",
     "InheritedSize": "0x28",
-    "ClassSize": "0x838",
+    "ClassSize": "0x848",
     "Attributes": [
       {
         "Name": "NumberOfDaysInEachMonth",
@@ -7975,14 +7987,20 @@
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x850"
+      },
+      {
+        "Name": "PlayerLootMarkerServiceParamsFileLocation",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x860"
       }
     ]
   },
   "AthenaGameState": {
     "Super": "ServiceProviderGameState",
-    "FullSize": "0xb88",
+    "FullSize": "0xb90",
     "InheritedSize": "0x540",
-    "ClassSize": "0x648",
+    "ClassSize": "0x650",
     "Attributes": [
       {
         "Name": "WindService",
@@ -8591,58 +8609,64 @@
         "Offset": "0x8d8"
       },
       {
+        "Name": "PlayerLootMarkerService",
+        "Type": "Class PlayerLootMarkerService*",
+        "Size": "0x8",
+        "Offset": "0x8e0"
+      },
+      {
         "Name": "ServiceCoordinator",
         "Type": "Struct GameServiceCoordinator",
         "Size": "0x20",
-        "Offset": "0xa60"
+        "Offset": "0xa68"
       },
       {
         "Name": "ChatComponents",
         "Type": "TArray<Interface ChatComponents>",
         "Size": "0x10",
-        "Offset": "0xaa8"
+        "Offset": "0xab0"
       },
       {
         "Name": "IsXboxGamePadOnlyServer",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xb38"
+        "Offset": "0xb40"
       },
       {
         "Name": "ShouldDisableAsyncOcclusionCheck",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xb39"
+        "Offset": "0xb41"
       },
       {
         "Name": "SubPlayMode",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0xb40"
+        "Offset": "0xb48"
       },
       {
         "Name": "CustomVaultService",
         "Type": "Class CustomVaultService*",
         "Size": "0x8",
-        "Offset": "0xb50"
+        "Offset": "0xb58"
       },
       {
         "Name": "EntityEnumerationService",
         "Type": "Class EntityEnumerationService*",
         "Size": "0x8",
-        "Offset": "0xb58"
+        "Offset": "0xb60"
       },
       {
         "Name": "LevelAssetCachingService",
         "Type": "Class LevelAssetCachingService*",
         "Size": "0x8",
-        "Offset": "0xb60"
+        "Offset": "0xb68"
       },
       {
         "Name": "CrewSkillRatingService",
         "Type": "Class CrewSkillRatingService*",
         "Size": "0x8",
-        "Offset": "0xb68"
+        "Offset": "0xb70"
       }
     ]
   },
@@ -13240,9 +13264,9 @@
   },
   "Cannon": {
     "Super": "ControllableObject",
-    "FullSize": "0xcc0",
+    "FullSize": "0xce0",
     "InheritedSize": "0x510",
-    "ClassSize": "0x7b0",
+    "ClassSize": "0x7d0",
     "Attributes": [
       {
         "Name": "BaseMeshComponent",
@@ -13674,7 +13698,7 @@
         "Name": "InteractionState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xcb8"
+        "Offset": "0xcd8"
       }
     ]
   },
@@ -14211,22 +14235,28 @@
         "Offset": "0xc78"
       },
       {
-        "Name": "PositionSamplerTimeWindow",
+        "Name": "ResurfacingFinishedSubmergedHullPercentageThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc7c"
       },
       {
+        "Name": "PositionSamplerTimeWindow",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc80"
+      },
+      {
         "Name": "ClientConvexHullCollisionProfile",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xc80"
+        "Offset": "0xc84"
       },
       {
         "Name": "EmpiricalMaxSpeedInMPS",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc88"
+        "Offset": "0xc8c"
       },
       {
         "Name": "BrigSpawnLocation",
@@ -14439,22 +14469,28 @@
         "Offset": "0x1088"
       },
       {
+        "Name": "Scuttled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1090"
+      },
+      {
         "Name": "InstancedMeshes",
         "Type": "TArray<class MobileInstancedStaticMeshComponent*>",
         "Size": "0x10",
-        "Offset": "0x1090"
+        "Offset": "0x1098"
       },
       {
         "Name": "ConstraintBudget",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x10a0"
+        "Offset": "0x10a8"
       },
       {
         "Name": "ScuttleTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1614"
+        "Offset": "0x161c"
       }
     ]
   },
@@ -15430,9 +15466,9 @@
   },
   "CanvasWorldMapComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x488",
+    "FullSize": "0x490",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x3c0",
+    "ClassSize": "0x3c8",
     "Attributes": [
       {
         "Name": "CanvasWidth",
@@ -15693,46 +15729,52 @@
         "Offset": "0x238"
       },
       {
+        "Name": "SecondaryFactionIconOverlayOffset",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x240"
+      },
+      {
         "Name": "IslandEventHUDData",
         "Type": "Class IslandEventHUDData*",
         "Size": "0x8",
-        "Offset": "0x240"
+        "Offset": "0x248"
       },
       {
         "Name": "MaxStreakFactionsIconInfo",
         "Type": "TArray<Struct FactionStreakIcon>",
         "Size": "0x10",
-        "Offset": "0x248"
+        "Offset": "0x250"
       },
       {
         "Name": "FactionsIconInfo",
         "Type": "TArray<Struct FactionStreakIcon>",
         "Size": "0x10",
-        "Offset": "0x258"
+        "Offset": "0x260"
       },
       {
         "Name": "TrackedShips",
         "Type": "TArray<Struct CanvasWorldMapShipLocation>",
         "Size": "0x10",
-        "Offset": "0x268"
+        "Offset": "0x270"
       },
       {
         "Name": "TrackedBootyItemInfos",
         "Type": "TArray<Struct ReapersMarkTrackedBootyItemInfo>",
         "Size": "0x10",
-        "Offset": "0x278"
+        "Offset": "0x280"
       },
       {
         "Name": "RenderTarget",
         "Type": "Class IterativeCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x288"
+        "Offset": "0x290"
       },
       {
         "Name": "CanvasDataAsset",
         "Type": "Class MapTableCanvasDataAsset*",
         "Size": "0x8",
-        "Offset": "0x328"
+        "Offset": "0x330"
       }
     ]
   },
@@ -15784,9 +15826,9 @@
   },
   "Capstan": {
     "Super": "Actor",
-    "FullSize": "0x828",
+    "FullSize": "0x848",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x460",
+    "ClassSize": "0x480",
     "Attributes": [
       {
         "Name": "Parameters",
@@ -15888,87 +15930,87 @@
         "Name": "NetState",
         "Type": "Struct CapstanNetState",
         "Size": "0x8",
-        "Offset": "0x538"
+        "Offset": "0x550"
       },
       {
         "Name": "CapstanEmitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
-        "Offset": "0x540"
+        "Offset": "0x558"
       },
       {
         "Name": "CapstanDamageLevelAudio",
         "Type": "Class DamageableShipPartAudioParams*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x578"
       },
       {
         "Name": "CapstanDamageParticleSystem",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x580"
       },
       {
         "Name": "EventDispatcher",
         "Type": "Struct ObjectMessagingDispatcher",
         "Size": "0xa0",
-        "Offset": "0x570"
+        "Offset": "0x588"
       },
       {
         "Name": "DescToSetWhenSafe",
         "Type": "Class CapstanDescAsset*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7f8"
       },
       {
         "Name": "CurrentCapstanDesc",
         "Type": "Class CapstanDescAsset*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x800"
       },
       {
         "Name": "IsCursed",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x7f2"
+        "Offset": "0x80a"
       },
       {
         "Name": "CursedIntent",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7f4"
+        "Offset": "0x80c"
       },
       {
         "Name": "MMCMeshInitializer",
         "Type": "Class MemoryConstrainedMeshInitializer*",
         "Size": "0x8",
-        "Offset": "0x820"
+        "Offset": "0x838"
       }
     ]
   },
   "SpectacleCapstan": {
     "Super": "Capstan",
-    "FullSize": "0x840",
-    "InheritedSize": "0x828",
+    "FullSize": "0x860",
+    "InheritedSize": "0x848",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "DisengagedRotationSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x830"
+        "Offset": "0x850"
       },
       {
         "Name": "DisengagedDropSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x834"
+        "Offset": "0x854"
       },
       {
         "Name": "IsEngaged",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x838"
+        "Offset": "0x858"
       }
     ]
   },
@@ -16677,23 +16719,10 @@
   },
   "CatalogOfferDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x40",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "OfferId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CurrencyType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x38"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "CatalogDiscountDataAsset": {
     "Super": "DataAsset",
@@ -16723,9 +16752,9 @@
   },
   "CatalogDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x88",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x60",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "CatalogId",
@@ -16734,22 +16763,10 @@
         "Offset": "0x28"
       },
       {
-        "Name": "DisplayName",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      },
-      {
         "Name": "ExportAsRewardIds",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "Offers",
-        "Type": "TArray<class CatalogOfferDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x78"
+        "Offset": "0x38"
       }
     ]
   },
@@ -17030,9 +17047,9 @@
   },
   "CharacterAudioComponentParams": {
     "Super": "DataAsset",
-    "FullSize": "0x288",
+    "FullSize": "0x298",
     "InheritedSize": "0x28",
-    "ClassSize": "0x260",
+    "ClassSize": "0x270",
     "Attributes": [
       {
         "Name": "CharacterAudioPool",
@@ -17275,214 +17292,226 @@
         "Offset": "0x17c"
       },
       {
-        "Name": "BrokeLegSwitchGroupName",
+        "Name": "BoatSpeedForSeaRocksAmplificationRtpc",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x180"
       },
       {
+        "Name": "BoatSpeedForSeaRocksMax",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x188"
+      },
+      {
+        "Name": "BrokeLegSwitchGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18c"
+      },
+      {
         "Name": "BrokeLegSwitch",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x188"
+        "Offset": "0x194"
       },
       {
         "Name": "HealedLegSwitch",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x190"
+        "Offset": "0x19c"
       },
       {
         "Name": "FallDamageRTPC",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x198"
+        "Offset": "0x1a4"
       },
       {
         "Name": "HealthChangeSfx",
         "Type": "TArray<Struct HealthChangeAudio>",
         "Size": "0x10",
-        "Offset": "0x1a0"
+        "Offset": "0x1b0"
       },
       {
         "Name": "LocalPlayerTeleportPlay",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x1b0"
+        "Offset": "0x1c0"
       },
       {
         "Name": "LocalPlayerTeleportStop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x1b8"
+        "Offset": "0x1c8"
       },
       {
         "Name": "LargeShipMapDeck",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1c0"
+        "Offset": "0x1d0"
       },
       {
         "Name": "LargeShipBrigDeck",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1c8"
+        "Offset": "0x1d8"
       },
       {
         "Name": "LargeShipCaptainsCabin",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1d0"
+        "Offset": "0x1e0"
       },
       {
         "Name": "IslandTavern",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1d8"
+        "Offset": "0x1e8"
       },
       {
         "Name": "IslandCave",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1e0"
+        "Offset": "0x1f0"
       },
       {
         "Name": "SmallestEnclosedRatioToTriggerCave",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1e8"
+        "Offset": "0x1f8"
       },
       {
         "Name": "PredominantCaveSurface",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x1ec"
+        "Offset": "0x1fc"
       },
       {
         "Name": "LargestCaveSizeMetersSquared",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1f0"
+        "Offset": "0x200"
       },
       {
         "Name": "SmallestCaveSizeMetersSquared",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1f4"
+        "Offset": "0x204"
       },
       {
         "Name": "CaveSizeRtpcName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x1f8"
+        "Offset": "0x208"
       },
       {
         "Name": "SmallestEnclosedRatioToTriggerCaveMusicNode",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x200"
+        "Offset": "0x210"
       },
       {
         "Name": "LandingEventCooldownTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x204"
+        "Offset": "0x214"
       },
       {
         "Name": "FogPenetrationAudioThresholdMin",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x208"
+        "Offset": "0x218"
       },
       {
         "Name": "FogPenetrationAudioThresholdMax",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x20c"
+        "Offset": "0x21c"
       },
       {
         "Name": "FogDensityRTPC",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x210"
+        "Offset": "0x220"
       },
       {
         "Name": "FogTypeSfx",
         "Type": "TArray<Struct FogTypeToAudio>",
         "Size": "0x10",
-        "Offset": "0x218"
+        "Offset": "0x228"
       },
       {
         "Name": "TrapTriggeredEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x228"
+        "Offset": "0x238"
       },
       {
         "Name": "EmoteCameraStart",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x230"
+        "Offset": "0x240"
       },
       {
         "Name": "EmoteCameraStop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x238"
+        "Offset": "0x248"
       },
       {
         "Name": "ReviveSuccessful",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x240"
+        "Offset": "0x250"
       },
       {
         "Name": "OtherPlayers_BodyEvaporates",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x248"
+        "Offset": "0x258"
       },
       {
         "Name": "StartSleepingEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x250"
+        "Offset": "0x260"
       },
       {
         "Name": "StopSleepingEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x258"
+        "Offset": "0x268"
       },
       {
         "Name": "StartSleepingWithoutFartingEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x260"
+        "Offset": "0x270"
       },
       {
         "Name": "StopSleepingWithoutFartingEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x268"
+        "Offset": "0x278"
       },
       {
         "Name": "GenderSwitchGroupName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x270"
+        "Offset": "0x280"
       },
       {
         "Name": "GenderSwitchFemale",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x278"
+        "Offset": "0x288"
       },
       {
         "Name": "GenderSwitchMale",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x280"
+        "Offset": "0x290"
       }
     ]
   },
@@ -25765,6 +25794,32 @@
       }
     ]
   },
+  "FlamesOfFateContainerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "DefaultFlameType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "CanAcceptFlameFromOtherObjects",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe1"
+      },
+      {
+        "Name": "CurrentFlameData",
+        "Type": "Struct FlameData",
+        "Size": "0x2",
+        "Offset": "0xe2"
+      }
+    ]
+  },
   "FlamesOfFateInteractableComponent": {
     "Super": "InteractableComponent",
     "FullSize": "0x270",
@@ -25967,27 +26022,39 @@
   },
   "FogBank": {
     "Super": "FogVolume",
-    "FullSize": "0x568",
+    "FullSize": "0x580",
     "InheritedSize": "0x3d8",
-    "ClassSize": "0x190",
+    "ClassSize": "0x1a8",
     "Attributes": [
       {
-        "Name": "FogBankDataAsset",
+        "Name": "FeatureToggledFogBankAssetsArray",
+        "Type": "TArray<Struct FeatureToggledFogBankAsset>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "DefaultFogBankDataAsset",
         "Type": "Class FogBankDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x400"
+      },
+      {
+        "Name": "ActiveFogBankDataAsset",
+        "Type": "Class FogBankDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x408"
       },
       {
         "Name": "StoryDrivenFogBankAssetsCollection",
         "Type": "Class StoryDrivenFogBankDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x410"
       },
       {
         "Name": "Settings",
         "Type": "Struct FogBankSettings",
         "Size": "0x4c",
-        "Offset": "0x400"
+        "Offset": "0x418"
       }
     ]
   },
@@ -27949,7 +28016,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "HarpoonFireAndRetractNotificationInputId": {
+  "HarpoonFireNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "HarpoonRetractNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
@@ -31379,6 +31453,20 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "IsWieldingItemCategoryRadialContext": {
+    "Super": "RadialContextBase",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TargetItemCategories",
+        "Type": "TArray<Class TargetItemCategories>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "IsWieldingItemNPCDialogConditional": {
     "Super": "NPCDialogConditional",
@@ -37045,9 +37133,9 @@
   },
   "MigrationService": {
     "Super": "Object",
-    "FullSize": "0x480",
+    "FullSize": "0x488",
     "InheritedSize": "0x28",
-    "ClassSize": "0x458",
+    "ClassSize": "0x460",
     "Attributes": [
       {
         "Name": "BeaconRange",
@@ -37056,22 +37144,28 @@
         "Offset": "0x48"
       },
       {
-        "Name": "MigrationSetupRequestTimeoutInSeconds",
+        "Name": "TunnelOfTheDamnedBeaconRange",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
+        "Name": "MigrationSetupRequestTimeoutInSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
         "Name": "BeaconActorClasses",
         "Type": "TArray<Class BeaconActorClasses>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "CollectedActorClasses",
         "Type": "TArray<Class CollectedActorClasses>",
         "Size": "0x10",
-        "Offset": "0x60"
+        "Offset": "0x68"
       }
     ]
   },
@@ -37232,9 +37326,9 @@
   },
   "CaptaincyShipCustomizationChestInteraction": {
     "Super": "ModalInteraction",
-    "FullSize": "0x410",
+    "FullSize": "0x448",
     "InheritedSize": "0x3d8",
-    "ClassSize": "0x38",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "ShipLiveryCategories",
@@ -37259,6 +37353,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3f9"
+      },
+      {
+        "Name": "PreviousLoadout",
+        "Type": "TArray<Class PreviousLoadout>",
+        "Size": "0x10",
+        "Offset": "0x438"
       }
     ]
   },
@@ -39721,9 +39821,9 @@
   },
   "NPCDialogOptionNoUIPurchase": {
     "Super": "NPCDialogOption",
-    "FullSize": "0x130",
+    "FullSize": "0x140",
     "InheritedSize": "0xd0",
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "Text",
@@ -39732,28 +39832,28 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "Catalog",
-        "Type": "Class CatalogDataAsset*",
-        "Size": "0x8",
+        "Name": "CatalogId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
         "Offset": "0x108"
       },
       {
-        "Name": "CatalogOffer",
-        "Type": "Class CatalogOfferDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x110"
+        "Name": "OfferId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x118"
       },
       {
         "Name": "OfferTriggeredPopupDesc",
         "Type": "Class PopUpMessageDesc*",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x128"
       },
       {
         "Name": "Interactor",
         "Type": "Class Controller*",
         "Size": "0x8",
-        "Offset": "0x120"
+        "Offset": "0x130"
       }
     ]
   },
@@ -39994,9 +40094,9 @@
   },
   "ShopDesc": {
     "Super": "DataAsset",
-    "FullSize": "0xf0",
+    "FullSize": "0xf8",
     "InheritedSize": "0x28",
-    "ClassSize": "0xc8",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "ShopName",
@@ -40011,76 +40111,82 @@
         "Offset": "0x60"
       },
       {
+        "Name": "CatalogData",
+        "Type": "Struct ShopCatalogDesc",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
         "Name": "Catalogs",
         "Type": "TArray<Struct CatalogDescTab>",
         "Size": "0x10",
-        "Offset": "0x68"
+        "Offset": "0x70"
       },
       {
         "Name": "PremiumCatalog",
         "Type": "Class PremiumCatalogDataAsset*",
         "Size": "0x8",
-        "Offset": "0x78"
+        "Offset": "0x80"
       },
       {
         "Name": "FeatureToggledPremiumCatalogs",
         "Type": "TArray<Struct FeatureToggledPremiumCatalog>",
         "Size": "0x10",
-        "Offset": "0x80"
+        "Offset": "0x88"
       },
       {
         "Name": "Storefront",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "OpenAudioCue",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0xa0"
+        "Offset": "0xa8"
       },
       {
         "Name": "EnablePiratePreview",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xb0"
+        "Offset": "0xb8"
       },
       {
         "Name": "IsPremiumShop",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xb1"
+        "Offset": "0xb9"
       },
       {
         "Name": "Dialogue",
         "Type": "Class ShopDialogue*",
         "Size": "0x8",
-        "Offset": "0xb8"
+        "Offset": "0xc0"
       },
       {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "Categories",
         "Type": "TArray<Class Categories>",
         "Size": "0x10",
-        "Offset": "0xc8"
+        "Offset": "0xd0"
       },
       {
         "Name": "AllTabIcon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xe0"
       },
       {
         "Name": "PiratePreviewSkeletonCurseMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xe8"
+        "Offset": "0xf0"
       }
     ]
   },
@@ -43904,9 +44010,9 @@
   },
   "PremiumCatalogBundleSetDataAsset": {
     "Super": "PremiumCatalogLandingPageItemDataAsset",
-    "FullSize": "0x220",
+    "FullSize": "0x218",
     "InheritedSize": "0x108",
-    "ClassSize": "0x118",
+    "ClassSize": "0x110",
     "Attributes": [
       {
         "Name": "PageTitle",
@@ -43933,22 +44039,16 @@
         "Offset": "0x188"
       },
       {
-        "Name": "Offer",
-        "Type": "Class CatalogOfferDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x1c0"
-      },
-      {
         "Name": "BundleItems",
         "Type": "TArray<Struct PremiumShopBundleOfferItem>",
         "Size": "0x10",
-        "Offset": "0x1c8"
+        "Offset": "0x1c0"
       },
       {
         "Name": "AdditionalItems",
         "Type": "Struct PremiumCatalogItemSet",
         "Size": "0x48",
-        "Offset": "0x1d8"
+        "Offset": "0x1d0"
       }
     ]
   },
@@ -44006,17 +44106,10 @@
   },
   "PremiumCatalogOfferDataAsset": {
     "Super": "PremiumCatalogLandingPageItemDataAsset",
-    "FullSize": "0x110",
+    "FullSize": "0x108",
     "InheritedSize": "0x108",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Offer",
-        "Type": "Class CatalogOfferDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "PremiumCatalogDataAsset": {
     "Super": "DataAsset",
@@ -48250,7 +48343,7 @@
         "Name": "HullDragDynamicsDesc",
         "Type": "Class BaseHullDragDynamicsDesc*",
         "Size": "0x8",
-        "Offset": "0x1698"
+        "Offset": "0x16a0"
       }
     ]
   },
@@ -49324,9 +49417,9 @@
   },
   "ShipwreckService": {
     "Super": "Actor",
-    "FullSize": "0x500",
+    "FullSize": "0x518",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x138",
+    "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "ToMoveList",
@@ -49622,9 +49715,9 @@
   },
   "ShopViewModelComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x470",
+    "FullSize": "0x488",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x3a8",
+    "ClassSize": "0x3c0",
     "Attributes": [
       {
         "Name": "IgnoredCompaniesForMaxVoyagesOwned",
@@ -51161,16 +51254,22 @@
         "Offset": "0x148"
       },
       {
-        "Name": "Critical",
+        "Name": "TrackedProxy",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x149"
       },
       {
-        "Name": "DropOnSpawn",
+        "Name": "Critical",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x14a"
+      },
+      {
+        "Name": "DropOnSpawn",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x14b"
       },
       {
         "Name": "FailureMessage",
@@ -54826,35 +54925,35 @@
   },
   "TaleQuestSequenceStep": {
     "Super": "TaleQuestFramedStep",
-    "FullSize": "0x108",
-    "InheritedSize": "0xd8",
+    "FullSize": "0x128",
+    "InheritedSize": "0xf8",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Desc",
         "Type": "Class TaleQuestSequenceStepDesc*",
         "Size": "0x8",
-        "Offset": "0xd8"
+        "Offset": "0xf8"
       },
       {
         "Name": "ForkedSteps",
         "Type": "TArray<Struct ForkedStep>",
         "Size": "0x10",
-        "Offset": "0xf8"
+        "Offset": "0x118"
       }
     ]
   },
   "TaleQuestSequenceStepDesc": {
     "Super": "TaleQuestFramedStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0xa0",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Descs",
         "Type": "TArray<class TaleQuestStepDesc*>",
         "Size": "0x10",
-        "Offset": "0xa0"
+        "Offset": "0xd0"
       }
     ]
   },
@@ -58437,9 +58536,9 @@
   },
   "Wheel": {
     "Super": "ControllableObject",
-    "FullSize": "0xa08",
+    "FullSize": "0xa30",
     "InheritedSize": "0x510",
-    "ClassSize": "0x4f8",
+    "ClassSize": "0x520",
     "Attributes": [
       {
         "Name": "CustomizationComponent",
@@ -58640,94 +58739,100 @@
         "Offset": "0x738"
       },
       {
-        "Name": "DamageSpeedMultiplierLevel1",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "CurrentWheelDesc",
+        "Type": "Class WheelDescAsset*",
+        "Size": "0x8",
         "Offset": "0x740"
       },
       {
-        "Name": "DamageSpeedMultiplierLevel2",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x744"
-      },
-      {
-        "Name": "DamageSpeedMultiplierLevel3",
+        "Name": "DamageSpeedMultiplierLevel1",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x748"
       },
       {
+        "Name": "DamageSpeedMultiplierLevel2",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x74c"
+      },
+      {
+        "Name": "DamageSpeedMultiplierLevel3",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x750"
+      },
+      {
         "Name": "WheelDamageParticleSystem",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x750"
+        "Offset": "0x758"
       },
       {
         "Name": "TurbulenceFactor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x758"
+        "Offset": "0x778"
       },
       {
         "Name": "ServerWheelAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x75c"
+        "Offset": "0x77c"
       },
       {
         "Name": "ServerWantedAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x760"
+        "Offset": "0x780"
       },
       {
         "Name": "CenterJoltDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x788"
+        "Offset": "0x7a8"
       },
       {
         "Name": "CenterJoltSlowDownFactor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x78c"
+        "Offset": "0x7ac"
       },
       {
         "Name": "WheelDamageLevelAudio",
         "Type": "Class DamageableShipPartAudioParams*",
         "Size": "0x8",
-        "Offset": "0x7b0"
+        "Offset": "0x7d0"
       },
       {
         "Name": "MaxWheelAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7bc"
+        "Offset": "0x7dc"
       },
       {
         "Name": "MinWheelAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7c0"
+        "Offset": "0x7e0"
       },
       {
         "Name": "SqueakAtAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7c4"
+        "Offset": "0x7e4"
       },
       {
         "Name": "AllowedWheelDirection",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x7c8"
+        "Offset": "0x7e8"
       },
       {
         "Name": "NarratedShipDirectionComponent",
         "Type": "Class NarratedShipDirectionComponent*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7f0"
       }
     ]
   },
@@ -65671,40 +65776,34 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "SpawnedResurfaceVFXInstance",
-        "Type": "Class ShipResurfaceWetnessActor*",
-        "Size": "0x8",
+        "Name": "ShipWetnessInstanceHandles",
+        "Type": "TArray<Struct ShipResurfaceWetnessHandle>",
+        "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "LoadedShipResurfaceVFXClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x50"
+        "Offset": "0x58"
       },
       {
         "Name": "SurfaceWaterLocation",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x80"
+        "Offset": "0x78"
       },
       {
         "Name": "SurfaceWaterRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x8c"
+        "Offset": "0x84"
       },
       {
         "Name": "SurfaceWaterStrength",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "ShipContext",
-        "Type": "Class Actor*",
-        "Size": "0x8",
-        "Offset": "0x98"
+        "Offset": "0x88"
       }
     ]
   },
@@ -68442,14 +68541,14 @@
   },
   "BuoyantObjectSpawnProfileDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x110",
+    "FullSize": "0x118",
     "InheritedSize": "0x28",
-    "ClassSize": "0xe8",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
         "Name": "Profile",
         "Type": "Struct BuoyantObjectSpawnProfile",
-        "Size": "0xe8",
+        "Size": "0xf0",
         "Offset": "0x28"
       }
     ]
@@ -70442,21 +70541,49 @@
   },
   "CaptainedSessionService": {
     "Super": "Actor",
-    "FullSize": "0x588",
+    "FullSize": "0x580",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x1c0",
+    "ClassSize": "0x1b8",
     "Attributes": [
-      {
-        "Name": "PersistenceIdentifierSettingsAsset",
-        "Type": "Class PersistenceIdentifierSettingsAsset*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
       {
         "Name": "CaptainedCrews",
         "Type": "TArray<Struct CaptainedCrew>",
         "Size": "0x10",
-        "Offset": "0x3e8"
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "ScrambledShipNamesDataAsset",
+        "Type": "Class ScrambledShipNamesDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x560"
+      }
+    ]
+  },
+  "ScrambledShipNamesDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ScrambledShipNames",
+        "Type": "TArray<Struct FText>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "UGCSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ScrambledShipNamesDataAssetReference",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },
@@ -72732,9 +72859,9 @@
   },
   "GameEventSchedulerService": {
     "Super": "Object",
-    "FullSize": "0x230",
+    "FullSize": "0x260",
     "InheritedSize": "0x28",
-    "ClassSize": "0x208",
+    "ClassSize": "0x238",
     "Attributes": [
       {
         "Name": "Settings",
@@ -72764,8 +72891,8 @@
   },
   "CustomizableGameEventSchedulerService": {
     "Super": "GameEventSchedulerService",
-    "FullSize": "0x230",
-    "InheritedSize": "0x230",
+    "FullSize": "0x260",
+    "InheritedSize": "0x260",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -72894,6 +73021,13 @@
     "Attributes": []
   },
   "FortOfTheDamnedGameEventType": {
+    "Super": "SkellyFortGameEventType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FortOfTheDamnedRebalanceGameEventType": {
     "Super": "SkellyFortGameEventType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -73719,11 +73853,11 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AddCrewLockableActionRuleComponent": {
+  "CrewLockableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x128",
+    "FullSize": "0x1c0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
+    "ClassSize": "0xf8",
     "Attributes": [
       {
         "Name": "StartLocked",
@@ -73744,40 +73878,124 @@
         "Offset": "0xd4"
       },
       {
-        "Name": "UnlockHoldTime",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "CrewCanUnlock",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0xd8"
       },
       {
-        "Name": "PressedNotificationInputId",
-        "Type": "class",
-        "Size": "0x8",
+        "Name": "UnlockHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xdc"
+      },
+      {
+        "Name": "CrewCanUseWhenLocked",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0xe0"
       },
       {
-        "Name": "ReleasedNotificationInputId",
+        "Name": "OpponentCanPickLock",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe1"
+      },
+      {
+        "Name": "OpponentPickLockHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "LockUnlockPressedNotificationInputID",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
-        "Name": "DisplayPriority",
+        "Name": "LockUnlockReleasedNotificationInputID",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "LockUnlockDisplayPriority",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xf0"
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "PickLockPressedNotificationInputID",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "PickLockReleasedNotificationInputID",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "PickLockDisplayPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "LockMeshComponentReference",
+        "Type": "Struct ComponentReference",
+        "Size": "0x18",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "WwisePool",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "StartPickingLockAudioEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "StopPickingLockAudioEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "LockAudioEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "UnlockAudioEvent",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x150"
       },
       {
         "Name": "Locked",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xf1"
+        "Offset": "0x158"
       },
       {
         "Name": "LockedStateMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xf8"
+        "Offset": "0x160"
+      },
+      {
+        "Name": "DitherComponent",
+        "Type": "Class DitherComponent*",
+        "Size": "0x8",
+        "Offset": "0x168"
       }
     ]
   },
@@ -74398,9 +74616,9 @@
   },
   "BootyItemShipOwnershipComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x200",
+    "FullSize": "0x270",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x138",
+    "ClassSize": "0x1a8",
     "Attributes": [
       {
         "Name": "FirstTimeDroppedConditionalStatTriggerSent",
@@ -75785,6 +76003,221 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "CompanyNPCInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DeliverableRedirectionNPCContext": {
+    "Super": "DeliverableRedirectionContextBase",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "NPCData",
+        "Type": "Struct NPCData",
+        "Size": "0xb8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DeliverableRedirectionNPCContextHandler": {
+    "Super": "DeliverableRedirectionContextHandlerBase",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SpecificNPCId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "DeliverableRedirectionNPCDestinationDescriptor": {
+    "Super": "DeliverableRedirectionDestinationDescriptorBase",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "DisplayNameType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "FemaleNPCDestination",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "MaleNPCDestination",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "DoesCompanyNPCNameContainStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CompanyNPCNameSubString",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "InteractableGrammaticalGenderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NamedNPCInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NamedNPCComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "NPCCommerceEventInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCCustomItemPurchaseInterface": {
+    "Super": "NPCCommerceEventInterface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCHideInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCHideComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "bHideActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "NPCIdAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCIds",
+        "Type": "TArray<Struct FName>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "NPCInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCLoadedOnClientServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCLoadedOnClientService": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AllNPCData",
+        "Type": "TArray<Struct NPCData>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "NPCMeshRetrievalInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCPriorityTickInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RewardHandInInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SovereignInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "CollectorsChestInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -76821,221 +77254,6 @@
         "Offset": "0x260"
       }
     ]
-  },
-  "CompanyNPCInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DeliverableRedirectionNPCContext": {
-    "Super": "DeliverableRedirectionContextBase",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb8",
-    "Attributes": [
-      {
-        "Name": "NPCData",
-        "Type": "Struct NPCData",
-        "Size": "0xb8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "DeliverableRedirectionNPCContextHandler": {
-    "Super": "DeliverableRedirectionContextHandlerBase",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SpecificNPCId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "DeliverableRedirectionNPCDestinationDescriptor": {
-    "Super": "DeliverableRedirectionDestinationDescriptorBase",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "DisplayNameType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "FemaleNPCDestination",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "MaleNPCDestination",
-        "Type": "Struct FText",
-        "Size": "0x38",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "DoesCompanyNPCNameContainStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CompanyNPCNameSubString",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "InteractableGrammaticalGenderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NamedNPCInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NamedNPCComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "NPCCommerceEventInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCCustomItemPurchaseInterface": {
-    "Super": "NPCCommerceEventInterface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCHideInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCHideComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "bHideActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "NPCIdAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NPCIds",
-        "Type": "TArray<Struct FName>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "NPCInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCLoadedOnClientServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCLoadedOnClientService": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "AllNPCData",
-        "Type": "TArray<Struct NPCData>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "NPCMeshRetrievalInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCPriorityTickInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RewardHandInInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SovereignInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "AICombatDialogue": {
     "Super": "Object",
@@ -78261,6 +78479,125 @@
       }
     ]
   },
+  "AnimatedMechanismInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismActionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismAnimationDurationProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismAudioEmitterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismElementProxyInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismGroupInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismInteractionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismResetInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismTriggerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MechanismVirtualSceneComponentTransformInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MeshMaterialLoadListenerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SignalMechanismInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SignalMechanismTargetInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SpectacleMechanismInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SwingMechanismInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SwitchMechanismInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ClientNotificationsServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -78442,6 +78779,92 @@
         "Type": "Struct CutsceneTriggerEditorOnlyData",
         "Size": "0x3",
         "Offset": "0x4f8"
+      }
+    ]
+  },
+  "CoordinatedCutsceneTriggerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x178",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "CutSceneActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CutsceneName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "ActivationInitiallyEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "StateAfterFinishedPlaying",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd9"
+      },
+      {
+        "Name": "AllowInfiniteNumberOfActivations",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xda"
+      },
+      {
+        "Name": "SpecificNumberOfActivationsAllowed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xdc"
+      },
+      {
+        "Name": "ReattemptActivationAfterConflictingCutsceneFinishes",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "DelayWhenReattemptingActivation",
+        "Type": "Struct FloatInterval",
+        "Size": "0x8",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "StateChangeCoordination",
+        "Type": "TArray<Struct StateChangeCoordination>",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "StateChangeAfterMechanismActionIsTriggered",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "DelayAfterMechanismActionIsTriggered",
+        "Type": "Struct FloatInterval",
+        "Size": "0x8",
+        "Offset": "0x104"
+      },
+      {
+        "Name": "StateToActivateMechanismTrigger",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10c"
+      },
+      {
+        "Name": "DelayToActivateMechanismTrigger",
+        "Type": "Struct FloatInterval",
+        "Size": "0x8",
+        "Offset": "0x110"
       }
     ]
   },
@@ -79965,9 +80388,9 @@
   },
   "StarFieldPuzzle": {
     "Super": "Actor",
-    "FullSize": "0x460",
+    "FullSize": "0x520",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x98",
+    "ClassSize": "0x158",
     "Attributes": [
       {
         "Name": "Root",
@@ -80060,18 +80483,30 @@
         "Offset": "0x418"
       },
       {
+        "Name": "PositionCurveLines",
+        "Type": "Class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
         "Name": "RelativePlayerLookAtTargetLocation",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x420"
+        "Offset": "0x428"
+      },
+      {
+        "Name": "StarFieldPuzzleAudioParams",
+        "Type": "Struct StarFieldPuzzleAudioParams",
+        "Size": "0x60",
+        "Offset": "0x478"
       }
     ]
   },
   "StarFieldRevealerMask": {
     "Super": "StaticMeshWieldableItem",
-    "FullSize": "0x830",
+    "FullSize": "0x890",
     "InheritedSize": "0x780",
-    "ClassSize": "0xb0",
+    "ClassSize": "0x110",
     "Attributes": [
       {
         "Name": "SkySphere",
@@ -80113,13 +80548,19 @@
         "Name": "SkySphereMaterialParams",
         "Type": "Struct SkySphereMaterialParams",
         "Size": "0x18",
-        "Offset": "0x7b8"
+        "Offset": "0x7d0"
       },
       {
         "Name": "MaskPostProcessParams",
         "Type": "Struct MaskPostProcessParams",
         "Size": "0x50",
-        "Offset": "0x7d0"
+        "Offset": "0x7e8"
+      },
+      {
+        "Name": "MaskAudioParams",
+        "Type": "Struct StarFieldRevealerMaskAudioParams",
+        "Size": "0x50",
+        "Offset": "0x838"
       }
     ]
   },
@@ -80665,9 +81106,9 @@
   },
   "ShipStorageJettisonService": {
     "Super": "Actor",
-    "FullSize": "0x448",
+    "FullSize": "0x458",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "PendingSpawns",
@@ -81745,27 +82186,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MechanismActionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MechanismResetInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MechanismTriggerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "MechanismActionComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x170",
@@ -81825,27 +82245,6 @@
         "Offset": "0x28"
       }
     ]
-  },
-  "AnimatedMechanismInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MechanismAudioEmitterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MechanismInteractionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "AnimatedMaterialMechanismAction": {
     "Super": "AnimatedMechanismAction",
@@ -82194,13 +82593,6 @@
       }
     ]
   },
-  "MechanismVirtualSceneComponentTransformInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "PivotAnimatedMechanismAction": {
     "Super": "SimpleAnimatedMechanismAction",
     "FullSize": "0x600",
@@ -82283,13 +82675,6 @@
       }
     ]
   },
-  "MeshMaterialLoadListenerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "SpikeMechanismAction": {
     "Super": "PivotAnimatedMechanismAction",
     "FullSize": "0x630",
@@ -82327,13 +82712,6 @@
         "Offset": "0x620"
       }
     ]
-  },
-  "SwingMechanismInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "SwingMechanismAction": {
     "Super": "PivotAnimatedMechanismAction",
@@ -82802,13 +83180,6 @@
       }
     ]
   },
-  "MechanismAnimationDurationProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "FlamethrowerCoordinatorComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x130",
@@ -82855,13 +83226,6 @@
       }
     ]
   },
-  "MechanismElementProxyInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "MechanismElementProxy": {
     "Super": "Actor",
     "FullSize": "0x3e8",
@@ -82888,13 +83252,6 @@
       }
     ]
   },
-  "MechanismInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "Mechanism": {
     "Super": "Actor",
     "FullSize": "0x3f8",
@@ -82908,13 +83265,6 @@
         "Offset": "0x3d8"
       }
     ]
-  },
-  "MechanismGroupInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "MechanismGroup": {
     "Super": "Actor",
@@ -83643,13 +83993,6 @@
       }
     ]
   },
-  "SwitchMechanismInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "SwitchMechanismTriggerProxy": {
     "Super": "MechanismElementProxy",
     "FullSize": "0x418",
@@ -84031,13 +84374,6 @@
       }
     ]
   },
-  "SignalMechanismTargetInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "SignalMechanismTargetComponent": {
     "Super": "MechanismTriggerComponent",
     "FullSize": "0x178",
@@ -84253,13 +84589,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SignalMechanismInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "SignalMechanism": {
     "Super": "Actor",
     "FullSize": "0x408",
@@ -84389,13 +84718,6 @@
         "Offset": "0x4f8"
       }
     ]
-  },
-  "SpectacleMechanismInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "StoneFaceGlowComponent": {
     "Super": "ActorComponent",
@@ -85408,6 +85730,20 @@
       }
     ]
   },
+  "FishingRodInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BaitRadialActivationInputComponent": {
+    "Super": "AthenaCharacterBaseInputComponent",
+    "FullSize": "0x2c8",
+    "InheritedSize": "0x298",
+    "ClassSize": "0x30",
+    "Attributes": []
+  },
   "FishingFish": {
     "Super": "Character",
     "FullSize": "0x910",
@@ -85789,13 +86125,6 @@
     "Attributes": []
   },
   "FishingFloatInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "FishingRodInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -87916,9 +88245,9 @@
   },
   "TunnelOfTheDamnedPortal": {
     "Super": "Actor",
-    "FullSize": "0x638",
+    "FullSize": "0x650",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x270",
+    "ClassSize": "0x288",
     "Attributes": [
       {
         "Name": "Root",
@@ -88182,9 +88511,9 @@
   },
   "InvasionDepartureTunnelRandomisedSceneryTile": {
     "Super": "Actor",
-    "FullSize": "0x420",
+    "FullSize": "0x428",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x58",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "RandomActors",
@@ -88228,9 +88557,9 @@
   },
   "InvasionDepartureTunnelSceneryTileInstance": {
     "Super": "Actor",
-    "FullSize": "0x400",
+    "FullSize": "0x408",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x38",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "CreatureDioromas",
@@ -88254,15 +88583,22 @@
         "Name": "Root",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3f8"
       }
     ]
   },
+  "InvasionTunnelDioramaSpawnCondition": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "InvasionDepartureTunnelScrollingScenery": {
     "Super": "Actor",
-    "FullSize": "0x490",
+    "FullSize": "0x4a8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0xc8",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "ReplicatedServerStartTime",
@@ -88295,28 +88631,34 @@
         "Offset": "0x3f8"
       },
       {
+        "Name": "CreatureDioramaManager",
+        "Type": "Struct InvasionTunnelCreatureDioramaSpawnManager",
+        "Size": "0x18",
+        "Offset": "0x408"
+      },
+      {
         "Name": "HaltRequested",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x404"
+        "Offset": "0x420"
       },
       {
         "Name": "ReplicatedRandomSeed",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x408"
+        "Offset": "0x424"
       },
       {
         "Name": "SharedRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
+        "Offset": "0x428"
       },
       {
         "Name": "MovingObjects",
         "Type": "TArray<class SceneComponent*>",
         "Size": "0x10",
-        "Offset": "0x418"
+        "Offset": "0x430"
       }
     ]
   },
@@ -88333,6 +88675,20 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "InvasionTunnelDioramaLimitedQuantitySpawnCondition": {
+    "Super": "InvasionTunnelDioramaSpawnCondition",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MaximumActiveAtOnce",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
   },
   "InvasionTunnelScrollingSceneryPersistentServerData": {
     "Super": "DataAsset",
@@ -88625,9 +88981,9 @@
   },
   "InvasionArrivalTunnelDependencies": {
     "Super": "ArrivalTunnelDependencies",
-    "FullSize": "0x108",
+    "FullSize": "0x118",
     "InheritedSize": "0xd8",
-    "ClassSize": "0x30",
+    "ClassSize": "0x40",
     "Attributes": []
   },
   "DepartureTunnelDependencies": {
@@ -88639,9 +88995,9 @@
   },
   "InvasionDepartureTunnelDependencies": {
     "Super": "DepartureTunnelDependencies",
-    "FullSize": "0x138",
+    "FullSize": "0x148",
     "InheritedSize": "0x128",
-    "ClassSize": "0x10",
+    "ClassSize": "0x20",
     "Attributes": []
   },
   "ArrivalTunnelDesc": {
@@ -88829,203 +89185,12 @@
       }
     ]
   },
-  "TunnelsOfTheDamnedLootFilterDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "TargetProxyTypes",
-        "Type": "TArray<AssetClass TargetProxyTypes>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "IgnoredProxyTypes",
-        "Type": "TArray<AssetClass IgnoredProxyTypes>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "IgnoreStorageContainers",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x68"
-      }
-    ]
-  },
   "TunnelOfTheDamnedInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "TunnelsOfTheDamnedRelativeSpawnInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TunnelOfTheDamned": {
-    "Super": "Actor",
-    "FullSize": "0x6d0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x308",
-    "Attributes": [
-      {
-        "Name": "Root",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "TunnelCollisions",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "TunnelOverlapZone",
-        "Type": "Class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "RelativeSpawnLocation",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "VoyageVotingTableType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "CapstanType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "WheelType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "CannonPlayerLoadingInteractionPointType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "CannonType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "HarpoonType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "RowboatAttachPointType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "MapTableType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "RowboatType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "LadderTypes",
-        "Type": "TArray<Class LadderTypes>",
-        "Size": "0x10",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "LootFilterDataAsset",
-        "Type": "Class TunnelsOfTheDamnedLootFilterDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "Desc",
-        "Type": "Class TunnelDesc*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "TunnelStreamingLevelId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "ShipInTunnel",
-        "Type": "Class Actor*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "CrewMembersInTunnel",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "Endpoint",
-        "Type": "Class Actor*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "SequencerLevelActor",
-        "Type": "Class SequencerCutSceneActor*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "ShipSpecificSequencerLevelActor",
-        "Type": "Class SequencerCutSceneActor*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "FailureFallbackShipSpawnLocation",
-        "Type": "Class ShipSpawnLocation*",
-        "Size": "0x8",
-        "Offset": "0x4f8"
-      },
-      {
-        "Name": "ActionStateFadeCompletedTargets",
-        "Type": "TArray<Interface ActionStateFadeCompletedTargets>",
-        "Size": "0x10",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "FailureActionStateFadeCompletedTargets",
-        "Type": "TArray<Interface FailureActionStateFadeCompletedTargets>",
-        "Size": "0x10",
-        "Offset": "0x5e0"
-      }
-    ]
   },
   "TunnelOfTheDamnedLocatorInterface": {
     "Super": "Interface",
@@ -89043,9 +89208,9 @@
   },
   "TunnelOfTheDamnedBase": {
     "Super": "Actor",
-    "FullSize": "0x650",
+    "FullSize": "0x670",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x288",
+    "ClassSize": "0x2a8",
     "Attributes": [
       {
         "Name": "Root",
@@ -89117,114 +89282,114 @@
   },
   "ArrivalTunnelOfTheDamned": {
     "Super": "TunnelOfTheDamnedBase",
-    "FullSize": "0x680",
-    "InheritedSize": "0x650",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x670",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "ArrivalTunnelDesc",
         "Type": "Class ArrivalTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x680"
       },
       {
         "Name": "PlayersInArrivalTunnelOfTheDamnedActionState",
         "Type": "TArray<Struct ArrivalTunnelOfTheDamnedPlayerState>",
         "Size": "0x10",
-        "Offset": "0x668"
+        "Offset": "0x688"
       }
     ]
   },
   "ArrivalRespawnTunnelOfTheDamned": {
     "Super": "ArrivalTunnelOfTheDamned",
-    "FullSize": "0x680",
-    "InheritedSize": "0x680",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x6a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "InvasionArrivalTunnelOfTheDamned": {
     "Super": "ArrivalTunnelOfTheDamned",
-    "FullSize": "0x7c0",
-    "InheritedSize": "0x680",
-    "ClassSize": "0x140",
+    "FullSize": "0x7f0",
+    "InheritedSize": "0x6a0",
+    "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "InvasionArrivalTunnelDesc",
         "Type": "Class InvasionArrivalTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x678"
+        "Offset": "0x698"
       }
     ]
   },
   "DepartureTunnelOfTheDamned": {
     "Super": "TunnelOfTheDamnedBase",
-    "FullSize": "0x7d0",
-    "InheritedSize": "0x650",
+    "FullSize": "0x7f0",
+    "InheritedSize": "0x670",
     "ClassSize": "0x180",
     "Attributes": [
       {
         "Name": "LootFilterDataAsset",
         "Type": "Class TunnelsOfTheDamnedLootFilterDataAsset*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x670"
       },
       {
         "Name": "DepartureTunnelDesc",
         "Type": "Class DepartureTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x678"
       },
       {
         "Name": "EnterTunnelFadeCompletedTargets",
         "Type": "TArray<Interface EnterTunnelFadeCompletedTargets>",
         "Size": "0x10",
-        "Offset": "0x700"
+        "Offset": "0x720"
       }
     ]
   },
   "InvasionDepartureTunnelOfTheDamned": {
     "Super": "DepartureTunnelOfTheDamned",
-    "FullSize": "0x890",
-    "InheritedSize": "0x7d0",
-    "ClassSize": "0xc0",
+    "FullSize": "0x8c0",
+    "InheritedSize": "0x7f0",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "InvasionDepartureTunnelDesc",
         "Type": "Class InvasionDepartureTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7f0"
       },
       {
         "Name": "AllowTunnelCancellation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x7e8"
+        "Offset": "0x818"
       }
     ]
   },
   "SinkingTunnelOfTheDamned": {
     "Super": "DepartureTunnelOfTheDamned",
-    "FullSize": "0x8d0",
-    "InheritedSize": "0x7d0",
+    "FullSize": "0x8f0",
+    "InheritedSize": "0x7f0",
     "ClassSize": "0x100",
     "Attributes": [
       {
         "Name": "TeleportLocationRetrievalComponent",
         "Type": "Class ExhaustibleTeleportLocationRetrievalComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x800"
       },
       {
         "Name": "ShipOrientation",
         "Type": "Struct Rotator",
         "Size": "0xc",
-        "Offset": "0x7e8"
+        "Offset": "0x808"
       },
       {
         "Name": "CrewInTunnel",
         "Type": "Struct CrewInTunnel",
         "Size": "0xc",
-        "Offset": "0x8bc"
+        "Offset": "0x8dc"
       }
     ]
   },
@@ -89418,6 +89583,32 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TunnelsOfTheDamnedLootFilterDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "TargetProxyTypes",
+        "Type": "TArray<AssetClass TargetProxyTypes>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "IgnoredProxyTypes",
+        "Type": "TArray<AssetClass IgnoredProxyTypes>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "IgnoreStorageContainers",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x68"
+      }
+    ]
+  },
   "TunnelsOfTheDamnedSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x48",
@@ -89439,19 +89630,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TunnelsOfTheDamnedRelativeSpawnInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TunnelsOfTheDamnedServiceParams": {
     "Super": "DataAsset",
-    "FullSize": "0x38",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TunnelClasses",
-        "Type": "TArray<Struct TunnelOfTheDamnedClass>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TunnelsOfTheDamnedService": {
     "Super": "Actor",
@@ -91830,9 +92021,9 @@
   },
   "CaptainsLogbookProxy": {
     "Super": "WieldableBookProxy",
-    "FullSize": "0x8d8",
+    "FullSize": "0x8e0",
     "InheritedSize": "0x7f8",
-    "ClassSize": "0xe0",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "CustomizationComponent",
@@ -91849,28 +92040,28 @@
       {
         "Name": "Cache",
         "Type": "Struct CaptainsLogbookServiceCache",
-        "Size": "0x78",
+        "Size": "0x80",
         "Offset": "0x810"
       },
       {
         "Name": "CachedCustomization",
         "Type": "Struct PartDesc",
         "Size": "0x20",
-        "Offset": "0x888"
+        "Offset": "0x890"
       },
       {
         "Name": "MMCMeshInitializer",
         "Type": "Class MemoryConstrainedMeshInitializer*",
         "Size": "0x8",
-        "Offset": "0x8b8"
+        "Offset": "0x8c0"
       }
     ]
   },
   "CaptainsLogbookWieldable": {
     "Super": "WieldableBook",
-    "FullSize": "0xc90",
+    "FullSize": "0xcb0",
     "InheritedSize": "0xb50",
-    "ClassSize": "0x140",
+    "ClassSize": "0x160",
     "Attributes": [
       {
         "Name": "LeftLogbookPageTemplate",
@@ -91911,46 +92102,46 @@
       {
         "Name": "ServiceCache",
         "Type": "Struct CaptainsLogbookServiceCache",
-        "Size": "0x78",
+        "Size": "0x80",
         "Offset": "0xb80"
       },
       {
         "Name": "MMCMeshInitializer",
         "Type": "Class MemoryConstrainedMeshInitializer*",
         "Size": "0x8",
-        "Offset": "0xbf8"
+        "Offset": "0xc00"
       },
       {
         "Name": "CachedCustomization",
         "Type": "Struct PartDesc",
         "Size": "0x20",
-        "Offset": "0xc00"
+        "Offset": "0xc08"
       },
       {
         "Name": "ClientEventLogPages",
         "Type": "TArray<Struct WieldableBookPageLayoutRepInfo>",
         "Size": "0x10",
-        "Offset": "0xc20"
+        "Offset": "0xc28"
       },
       {
         "Name": "IsWaterlogged",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xc88"
+        "Offset": "0xca8"
       }
     ]
   },
   "CaptainsLogbookInteractable": {
     "Super": "CaptainsLogbookWieldable",
-    "FullSize": "0xca0",
-    "InheritedSize": "0xc90",
+    "FullSize": "0xcc0",
+    "InheritedSize": "0xcb0",
     "ClassSize": "0x10",
     "Attributes": []
   },
   "DebugRenderCaptainsLogbook": {
     "Super": "CaptainsLogbookWieldable",
-    "FullSize": "0xc90",
-    "InheritedSize": "0xc90",
+    "FullSize": "0xcb0",
+    "InheritedSize": "0xcb0",
     "ClassSize": "0x0",
     "Attributes": []
   },

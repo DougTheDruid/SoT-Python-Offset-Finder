@@ -171,13 +171,35 @@
     "ClassSize": "0x1",
     "Attributes": []
   },
-  "InlineUserDefinedStructDetails": {
-    "ClassSize": "0x8",
+  "UserDefinedStructWithSerialisableValue": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Struct",
+        "Name": "InternalStruct",
         "Type": "Class ScriptStruct*",
         "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ConfigurableStructureInstanceWrapper": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InlineUserDefinedStructDetails": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StructWithDefaults",
+        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Size": "0x20",
         "Offset": "0x0"
       }
     ]

@@ -57,7 +57,7 @@ BP_CliffGenerator_C:
   - Name: DataArray
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct Source Actors>
+    Type: TArray<Struct StaticMesh>
   - Name: Use_Deformable(SplineMesh)
     Offset: '0x430'
     Size: '0x1'
@@ -197,7 +197,7 @@ BP_CliffGenerator_C:
   - Name: TopSplineIntersectionPoints
     Offset: '0x560'
     Size: '0x10'
-    Type: TArray<Struct ActorsToIgnore>
+    Type: TArray<Struct Actor>
   - Name: Local_InternalActorsToIgnore
     Offset: '0x570'
     Size: '0x10'

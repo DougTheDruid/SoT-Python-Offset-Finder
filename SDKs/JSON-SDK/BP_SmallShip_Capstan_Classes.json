@@ -1,21 +1,21 @@
 {
   "BP_SmallShip_Capstan_C": {
-    "Super": "BP_Base_Capstan_C",
-    "FullSize": "0x850",
-    "InheritedSize": "0x840",
+    "Super": "None",
+    "FullSize": "0x870",
+    "InheritedSize": "0x860",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x840"
+        "Offset": "0x860"
       },
       {
         "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x848"
+        "Offset": "0x868"
       }
     ]
   },

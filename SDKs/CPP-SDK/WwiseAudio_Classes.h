@@ -13,6 +13,20 @@ public:
 };
 
 
+// Size 0x0
+class WwiseSubSystemInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x50
+class AudioReporterSubSystem: public Object
+{
+public:
+};
+
+
 // Size 0x28
 class WwiseEvent: public Object
 {
@@ -119,13 +133,6 @@ class WwiseBank: public Object
 {
 public:
 	Struct FString                                               path;                                              // 0x28(0x10)
-};
-
-
-// Size 0x0
-class WwiseSubSystemInterface: public Interface
-{
-public:
 };
 
 

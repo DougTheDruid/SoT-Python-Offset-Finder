@@ -560,6 +560,15 @@ public:
 };
 
 
+// Size 0xc
+struct FeatureFlag
+{
+public:
+	struct FName                                                 FeatureName;                                       // 0x0(0x8)
+	bool                                                         InverseToggle;                                     // 0x8(0x1)
+};
+
+
 // Size 0x14
 struct NetActorPtr
 {
@@ -588,15 +597,6 @@ public:
 struct UniqueNetIdRepl
 {
 public:
-};
-
-
-// Size 0xc
-struct FeatureFlag
-{
-public:
-	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	bool                                                         InverseToggle;                                     // 0x8(0x1)
 };
 
 
@@ -6600,25 +6600,25 @@ public:
 };
 
 
-// Size 0x80
+// Size 0xa0
 struct NetRelevancyStat
 {
 public:
 	Struct FString                                               Reason;                                            // 0x0(0x10)
-	Struct NetRelevancyStateStat                                 State;                                             // 0x10(0x70)
+	Struct NetRelevancyStateStat                                 State;                                             // 0x10(0x90)
 };
 
 
-// Size 0x70
+// Size 0x90
 struct NetRelevancyStateStat
 {
 public:
 	float                                                        Duration;                                          // 0x0(0x4)
 	int                                                          RemainingCycles;                                   // 0x4(0x4)
 	Struct FString                                               StreamingMode;                                     // 0x8(0x10)
-	Struct NetRelevancyConnectionStat                            Connection;                                        // 0x18(0x38)
-	TArray<Struct NetRelevancyActorStat>                         Actors;                                            // 0x50(0x10)
-	TArray<Struct NetRelevancyLevelStat>                         Levels;                                            // 0x60(0x10)
+	Struct NetRelevancyConnectionStat                            Connection;                                        // 0x18(0x58)
+	TArray<Struct NetRelevancyActorStat>                         Actors;                                            // 0x70(0x10)
+	TArray<Struct NetRelevancyLevelStat>                         Levels;                                            // 0x80(0x10)
 };
 
 
@@ -6632,19 +6632,26 @@ public:
 };
 
 
-// Size 0x90
+// Size 0xc8
 struct NetRelevancyActorStat
 {
 public:
 	Struct FString                                               Name;                                              // 0x0(0x10)
 	Struct FString                                               path;                                              // 0x10(0x10)
 	Struct FString                                               Owner;                                             // 0x20(0x10)
-	Struct Vector                                                Location;                                          // 0x30(0xc)
-	Struct NetRelevancyActorClusterStat                          Cluster;                                           // 0x40(0x48)
-	byte                                                         ChannelState;                                      // 0x88(0x1)
-	bool                                                         IsNetRelevant;                                     // 0x89(0x1)
-	byte                                                         ActorDormancy;                                     // 0x8a(0x1)
-	byte                                                         ChannelDormancy;                                   // 0x8b(0x1)
+	Struct FString                                               AttachedParent;                                    // 0x30(0x10)
+	Struct FString                                               AttachedParentOwner;                               // 0x40(0x10)
+	Struct Vector                                                Location;                                          // 0x50(0xc)
+	Struct NetRelevancyActorClusterStat                          Cluster;                                           // 0x60(0x48)
+	byte                                                         ChannelState;                                      // 0xa8(0x1)
+	bool                                                         IsNetRelevant;                                     // 0xa9(0x1)
+	bool                                                         IsAlwaysRelevant;                                  // 0xaa(0x1)
+	bool                                                         UseOwnerRelevancy;                                 // 0xab(0x1)
+	bool                                                         OnlyRelevantToOwner;                               // 0xac(0x1)
+	byte                                                         ActorDormancy;                                     // 0xad(0x1)
+	byte                                                         ChannelDormancy;                                   // 0xae(0x1)
+	Struct FString                                               PushModelDormancy;                                 // 0xb0(0x10)
+	float                                                        NetUpdateFrequency;                                // 0xc0(0x4)
 };
 
 
@@ -6661,13 +6668,15 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x58
 struct NetRelevancyConnectionStat
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
 	Struct NetViewer                                             Viewer;                                            // 0x8(0x28)
 	Struct IntPoint                                              ViewerGridLocation;                                // 0x30(0x8)
+	TArray<Str DormantActors>                                    DormantActors;                                     // 0x38(0x10)
+	TArray<Str ConsideredActors>                                 ConsideredActors;                                  // 0x48(0x10)
 };
 
 

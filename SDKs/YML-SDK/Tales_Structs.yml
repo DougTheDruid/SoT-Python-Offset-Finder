@@ -115,6 +115,13 @@ PhasedItem:
 PlaySequencerAutomationEvent:
   Attributes: []
   ClassSize: '0x18'
+QueryableStateChangedEvent:
+  Attributes:
+  - Name: DataValue
+    Offset: '0x0'
+    Size: '0x20'
+    Type: Struct TaleQuestQueryableStateDataInfo
+  ClassSize: '0x20'
 QuestVariableAISpawner:
   Attributes: []
   ClassSize: '0x30'

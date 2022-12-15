@@ -197,13 +197,14 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x38
 struct AIBountySpawnerWaveGroup
 {
 public:
 	TArray<Struct AIBountySpawnerWave>                           Waves;                                             // 0x0(0x10)
 	int                                                          NumNonTargetAIToKillToMoveToNextWaveGroup;         // 0x10(0x4)
 	class                                                        CombatDialogueForWaveGroup;                        // 0x18(0x8)
+	float                                                        DynamicDelayBeforeStart;                           // 0x20(0x4)
 };
 
 

@@ -1,6 +1,6 @@
 {
   "BP_SmallShip_Mast_C": {
-    "Super": "BP_Mast_C",
+    "Super": "None",
     "FullSize": "0xaa0",
     "InheritedSize": "0xa38",
     "ClassSize": "0x68",

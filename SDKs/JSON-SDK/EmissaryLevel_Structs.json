@@ -216,7 +216,7 @@
     ]
   },
   "EmissaryLevelData": {
-    "ClassSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "LevelTarget",
@@ -243,16 +243,22 @@
         "Offset": "0x50"
       },
       {
+        "Name": "StatsToFireOnEmissaryDeactivated",
+        "Type": "TArray<Struct PlayerStat>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
         "Name": "TreasureSoldNotificationFlag",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x60"
+        "Offset": "0x70"
       },
       {
         "Name": "EmissaryFlagTextureReference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x70"
+        "Offset": "0x80"
       }
     ]
   },

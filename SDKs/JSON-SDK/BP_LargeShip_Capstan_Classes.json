@@ -1,33 +1,33 @@
 {
   "BP_LargeShip_Capstan_C": {
     "Super": "BP_Base_Capstan_C",
-    "FullSize": "0x860",
-    "InheritedSize": "0x840",
+    "FullSize": "0x880",
+    "InheritedSize": "0x860",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Arm1",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x840"
+        "Offset": "0x860"
       },
       {
         "Name": "Arm4",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x848"
+        "Offset": "0x868"
       },
       {
         "Name": "Arm3",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x850"
+        "Offset": "0x870"
       },
       {
         "Name": "Arm2",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x858"
+        "Offset": "0x878"
       }
     ]
   },

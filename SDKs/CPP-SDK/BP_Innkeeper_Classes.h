@@ -6,19 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60
-class BP_Innkeeper_C: public NPC
+// Size 0x18
+class BP_Innkeeper_C: public Sovereign
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x690(0x8)
-	Class CargoRunParticipantComponent*                          CargoRunParticipant;                               // 0x698(0x8)
-	Class CapsuleComponent*                                      SolidHits;                                         // 0x6a0(0x8)
+	Class CapsuleComponent*                                      Capsule;                                           // 0x698(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6a0(0x8)
 	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x6a8(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6b0(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6b8(0x8)
-	Class WwiseEvent*                                            SFX_IdleLoopPlay;                                  // 0x6c0(0x8)
-	Class WwiseEvent*                                            SFX_IdleLoopStop;                                  // 0x6c8(0x8)
-	Struct WwiseEmitter                                          InnkeeperEmitter;                                  // 0x6d0(0x20)
 };
 
 

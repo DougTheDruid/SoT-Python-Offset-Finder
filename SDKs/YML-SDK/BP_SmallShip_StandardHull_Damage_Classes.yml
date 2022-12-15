@@ -85,4 +85,4 @@ BP_SmallShip_StandardHull_Damage_C:
   ClassSize: '0xa0'
   FullSize: '0x6a8'
   InheritedSize: '0x608'
-  Super: BP_HullDamage_C
+  Super: None

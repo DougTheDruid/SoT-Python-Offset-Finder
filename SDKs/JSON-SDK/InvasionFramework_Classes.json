@@ -196,9 +196,9 @@
   },
   "InvasionBattleBounds": {
     "Super": "Actor",
-    "FullSize": "0x400",
+    "FullSize": "0x408",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x38",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "Root",
@@ -231,10 +231,16 @@
         "Offset": "0x3e4"
       },
       {
+        "Name": "ShipThatWasDestroyed",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
         "Name": "HasLeftBattleBounds",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
-        "Offset": "0x3f0"
+        "Offset": "0x3f8"
       }
     ]
   },
@@ -391,9 +397,9 @@
   },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x638",
+    "FullSize": "0x650",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x270",
+    "ClassSize": "0x288",
     "Attributes": [
       {
         "Name": "InvasionSettings",
@@ -417,37 +423,37 @@
         "Name": "MatchmakingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x570"
+        "Offset": "0x588"
       },
       {
         "Name": "InvadingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x580"
+        "Offset": "0x598"
       },
       {
         "Name": "ReplicatedInvasionCrewMusicStates",
         "Type": "TArray<Struct ReplicatedInvasionCrewMusicState>",
         "Size": "0x10",
-        "Offset": "0x590"
+        "Offset": "0x5a8"
       },
       {
         "Name": "MatchmakingCrewsReplicated",
         "Type": "TArray<Struct InvasionServiceMatchmakingCrewInfo>",
         "Size": "0x10",
-        "Offset": "0x5a0"
+        "Offset": "0x5b8"
       },
       {
         "Name": "InvadingCrewsReplicated",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x5b0"
+        "Offset": "0x5c8"
       },
       {
         "Name": "InvasionBattleBoundsList",
         "Type": "TArray<class InvasionBattleBounds*>",
         "Size": "0x10",
-        "Offset": "0x5c0"
+        "Offset": "0x5d8"
       }
     ]
   },
@@ -515,9 +521,9 @@
   },
   "TaleQuestInvasionMatchmakingService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x110",
+    "FullSize": "0x1f0",
     "InheritedSize": "0x60",
-    "ClassSize": "0xb0",
+    "ClassSize": "0x190",
     "Attributes": [
       {
         "Name": "ServiceDesc",

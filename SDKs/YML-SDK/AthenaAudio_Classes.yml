@@ -134,3 +134,37 @@ StoryDrivenAudioPortalDataAsset:
   FullSize: '0x58'
   InheritedSize: '0x28'
   Super: DataAsset
+WwiseEventsTriggerRegionComponent:
+  Attributes:
+  - Name: TriggerRegionPool
+    Offset: '0x2e0'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: TriggerRegionPlayEvents
+    Offset: '0x2e8'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: TriggerRegionStopEvents
+    Offset: '0x2f8'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: TriggerEnterRadiusInCms
+    Offset: '0x308'
+    Size: '0x4'
+    Type: float
+  - Name: TriggerExitRadiusInCms
+    Offset: '0x30c'
+    Size: '0x4'
+    Type: float
+  - Name: EmitterOffset
+    Offset: '0x310'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: LocalPlayer
+    Offset: '0x330'
+    Size: '0x8'
+    Type: Class Character*
+  ClassSize: '0x90'
+  FullSize: '0x370'
+  InheritedSize: '0x2e0'
+  Super: SceneComponent

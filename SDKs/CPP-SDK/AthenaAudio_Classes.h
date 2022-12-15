@@ -89,4 +89,18 @@ public:
 };
 
 
+// Size 0x90
+class WwiseEventsTriggerRegionComponent: public SceneComponent
+{
+public:
+	Class WwiseObjectPoolWrapper*                                TriggerRegionPool;                                 // 0x2e0(0x8)
+	TArray<class WwiseEvent*>                                    TriggerRegionPlayEvents;                           // 0x2e8(0x10)
+	TArray<class WwiseEvent*>                                    TriggerRegionStopEvents;                           // 0x2f8(0x10)
+	float                                                        TriggerEnterRadiusInCms;                           // 0x308(0x4)
+	float                                                        TriggerExitRadiusInCms;                            // 0x30c(0x4)
+	Struct Vector                                                EmitterOffset;                                     // 0x310(0xc)
+	Class Character*                                             LocalPlayer;                                       // 0x330(0x8)
+};
+
+
 }

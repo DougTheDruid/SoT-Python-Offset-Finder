@@ -6,6 +6,20 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "WwiseSubSystemInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AudioReporterSubSystem": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": []
+  },
   "WwiseEvent": {
     "Super": "Object",
     "FullSize": "0x50",
@@ -351,13 +365,6 @@
         "Offset": "0x28"
       }
     ]
-  },
-  "WwiseSubSystemInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WwiseDebugManager": {
     "Super": "Object",

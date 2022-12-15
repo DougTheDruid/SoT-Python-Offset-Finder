@@ -69,7 +69,7 @@ BP_Placement_Garden_C:
   - Name: Mesh Radii
     Offset: '0x458'
     Size: '0x10'
-    Type: TArray<Struct Instanced Meshes>
+    Type: TArray<Struct InstancedStaticMeshComponent>
   - Name: Max Draw Distance
     Offset: '0x468'
     Size: '0x4'

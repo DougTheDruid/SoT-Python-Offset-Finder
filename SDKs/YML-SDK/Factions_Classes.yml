@@ -12,20 +12,24 @@ FactionFlipMeshComponent:
     Offset: '0x620'
     Size: '0x8'
     Type: Class CurveFloat*
-  - Name: FactionJoinedLerpDuration
+  - Name: FlippedFaction
     Offset: '0x628'
+    Size: '0x8'
+    Type: class
+  - Name: FactionJoinedLerpDuration
+    Offset: '0x630'
     Size: '0x4'
     Type: float
   - Name: StreakData
-    Offset: '0x7d0'
+    Offset: '0x840'
     Size: '0x10'
     Type: TArray<Struct CrewStreakLevelIncreased>
   - Name: ServerTargetFlipped
-    Offset: '0x7e0'
+    Offset: '0x850'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x1d0'
-  FullSize: '0x7f0'
+  ClassSize: '0x240'
+  FullSize: '0x860'
   InheritedSize: '0x620'
   Super: StaticMeshComponent
 FactionInteractionVoteComponent:
@@ -38,8 +42,8 @@ FactionInteractionVoteComponent:
     Offset: '0x15c'
     Size: '0x4'
     Type: int
-  ClassSize: '0x20'
-  FullSize: '0x170'
+  ClassSize: '0x68'
+  FullSize: '0x1b8'
   InheritedSize: '0x150'
   Super: InlineVotingInteractionComponent
 FactionInterationInterface:
@@ -140,8 +144,8 @@ FactionService:
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class FactionServiceDebugRepActor*
-  ClassSize: '0x250'
-  FullSize: '0x618'
+  ClassSize: '0x258'
+  FullSize: '0x620'
   InheritedSize: '0x3c8'
   Super: Actor
 FactionServiceDebugRepActor:
@@ -306,8 +310,8 @@ FactionVoteConsumerBase:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<Struct CrewMemberVotes>
-  ClassSize: '0x90'
-  FullSize: '0xc0'
+  ClassSize: '0xa0'
+  FullSize: '0xd0'
   InheritedSize: '0x30'
   Super: VoteConsumerInlineBase
 FactionVoteInteractionActor:
@@ -453,44 +457,48 @@ ShipSunkTrackingComponent:
 StartFactionVoyageVoteConsumer:
   Attributes:
   - Name: FactionVotingCastVote
-    Offset: '0xc0'
+    Offset: '0xd0'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVote
-    Offset: '0xf8'
+    Offset: '0x108'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingRemoveVote
-    Offset: '0x130'
+    Offset: '0x140'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantRemoveVote
-    Offset: '0x168'
+    Offset: '0x178'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonVoterNotOnOwnShip
-    Offset: '0x1a0'
+    Offset: '0x1b0'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonIsOpposingEmissary
-    Offset: '0x1d8'
+    Offset: '0x1e8'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonIsOnFactionBlockedTale
-    Offset: '0x210'
+    Offset: '0x220'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonIsInInvalidWorldRegion
-    Offset: '0x248'
+    Offset: '0x258'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: FactionVotingCantVoteReasonIsNotOnNormalPlayMode
+    Offset: '0x290'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingSwitchVote
-    Offset: '0x280'
+    Offset: '0x2c8'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x1f8'
-  FullSize: '0x2b8'
-  InheritedSize: '0xc0'
+  ClassSize: '0x230'
+  FullSize: '0x300'
+  InheritedSize: '0xd0'
   Super: FactionVoteConsumerBase
 StartFactionVoyageVoteValidator:
   Attributes: []
@@ -501,48 +509,48 @@ StartFactionVoyageVoteValidator:
 StopFactionVoyageVoteConsumer:
   Attributes:
   - Name: FactionVotingCastVote
-    Offset: '0xc0'
+    Offset: '0xd0'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVote
-    Offset: '0xf8'
+    Offset: '0x108'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingRemoveVote
-    Offset: '0x130'
+    Offset: '0x140'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantRemoveVote
-    Offset: '0x168'
+    Offset: '0x178'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonGoToOutpost
-    Offset: '0x1a0'
+    Offset: '0x1b0'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonActiveForDifferentCompany
-    Offset: '0x1d8'
+    Offset: '0x1e8'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonEnemyShipNearby
-    Offset: '0x210'
+    Offset: '0x220'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonShipNotInHarbour
-    Offset: '0x248'
+    Offset: '0x258'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonCrewInBattle
-    Offset: '0x280'
+    Offset: '0x290'
     Size: '0x38'
     Type: Struct FText
   - Name: FactionVotingCantVoteReasonLeaveFactionCooldownIsActive
-    Offset: '0x2b8'
+    Offset: '0x2c8'
     Size: '0x38'
     Type: Struct FText
   ClassSize: '0x230'
-  FullSize: '0x2f0'
-  InheritedSize: '0xc0'
+  FullSize: '0x300'
+  InheritedSize: '0xd0'
   Super: FactionVoteConsumerBase
 StopFactionVoyageVoteValidator:
   Attributes: []

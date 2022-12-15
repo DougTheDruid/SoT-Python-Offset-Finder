@@ -3,10 +3,10 @@
 BP_TunnelOfTheDamnedPortal_BSP_C:
   Attributes:
   - Name: PortalEffects
-    Offset: '0x648'
+    Offset: '0x660'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x8'
-  FullSize: '0x650'
-  InheritedSize: '0x648'
+  FullSize: '0x668'
+  InheritedSize: '0x660'
   Super: BP_TunnelOfTheDamnedPortal_Ship_C

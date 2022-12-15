@@ -20,6 +20,8 @@ public:
 	Class TextureFeedbackComponent*                              None;                                              // 0x7d8(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x7e0(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x7e8(0x8)
+	float                                                        None;                                              // 0x7f0(0x4)
+	bool                                                         None;                                              // 0x7f4(0x1)
 };
 
 

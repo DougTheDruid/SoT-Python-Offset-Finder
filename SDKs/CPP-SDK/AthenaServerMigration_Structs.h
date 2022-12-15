@@ -36,6 +36,13 @@ public:
 };
 
 
+// Size 0x34
+struct AddedPendingIncomingInvaderCrewEvent
+{
+public:
+};
+
+
 // Size 0x20
 struct ServerMigrationAboutToStartEvent
 {
