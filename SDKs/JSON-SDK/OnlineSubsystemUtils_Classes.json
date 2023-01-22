@@ -51,6 +51,18 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x478"
+      },
+      {
+        "Name": "pad0x3_Y27CB[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x479"
+      },
+      {
+        "Name": "pad0x52_6L170[0x52]",
+        "Type": "char",
+        "Size": "0x52",
+        "Offset": "0x47a"
       }
     ]
   },
@@ -89,6 +101,12 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x8_8J96S[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "BeaconConnectionInitialTimeout",
         "Type": "float",
         "Size": "0x4",
@@ -105,6 +123,12 @@
         "Type": "Class NetDriver*",
         "Size": "0x8",
         "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x20_O4QJH[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3de"
       }
     ]
   },
@@ -131,6 +155,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x19_Q1PJ3[0x19]",
+        "Type": "char",
+        "Size": "0x19",
+        "Offset": "0x3ff"
       }
     ]
   },
@@ -187,6 +217,12 @@
         "Type": "TArray<Struct PartyReservation>",
         "Size": "0x10",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x30_ET2VU[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x56"
       }
     ]
   },
@@ -196,6 +232,12 @@
     "InheritedSize": "0x418",
     "ClassSize": "0x58",
     "Attributes": [
+      {
+        "Name": "pad0x10_2HHPB[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x418"
+      },
       {
         "Name": "DestSessionId",
         "Type": "Struct FString",
@@ -225,6 +267,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x46a"
+      },
+      {
+        "Name": "pad0x7_TYR86[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x469"
       }
     ]
   },
@@ -248,10 +296,22 @@
         "Offset": "0x3f0"
       },
       {
+        "Name": "pad0x4_MC32T[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3f4"
+      },
+      {
         "Name": "ClientActors",
         "Type": "TArray<class OnlineBeaconClient*>",
         "Size": "0x10",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0xc0_9CW1V[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x406"
       }
     ]
   },
@@ -292,6 +352,12 @@
         "Type": "Class PartyBeaconState*",
         "Size": "0x8",
         "Offset": "0x3f0"
+      },
+      {
+        "Name": "pad0x28_CA690[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x3f8"
       },
       {
         "Name": "SessionTimeoutSecs",
@@ -405,6 +471,12 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
+        "Name": "pad0x138_2XF6X[0x138]",
+        "Type": "char",
+        "Size": "0x138",
+        "Offset": "0x28"
+      },
+      {
         "Name": "bIsFromInvite",
         "Type": "bool",
         "Size": "0x1",
@@ -415,6 +487,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x161"
+      },
+      {
+        "Name": "pad0x8_8KJST[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x160"
       }
     ]
   },

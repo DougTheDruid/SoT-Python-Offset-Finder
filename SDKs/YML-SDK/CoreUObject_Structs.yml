@@ -101,6 +101,10 @@ FloatRangeBound:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_XI8FU[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: Value
     Offset: '0x4'
     Size: '0x4'
@@ -153,6 +157,10 @@ Int32RangeBound:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_EBXWO[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: Value
     Offset: '0x4'
     Size: '0x4'
@@ -194,6 +202,10 @@ InterpCurveFloat:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_4NM49[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: LoopKeyOffset
     Offset: '0x14'
     Size: '0x4'
@@ -209,6 +221,10 @@ InterpCurveLinearColor:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_1HX2W[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: LoopKeyOffset
     Offset: '0x14'
     Size: '0x4'
@@ -266,6 +282,10 @@ InterpCurvePointQuat:
     Offset: '0x0'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_GDXGC[0xc]
+    Offset: '0x4'
+    Size: '0xc'
+    Type: char
   - Name: OutVal
     Offset: '0x10'
     Size: '0x10'
@@ -362,6 +382,10 @@ InterpCurveQuat:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_RORLA[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: LoopKeyOffset
     Offset: '0x14'
     Size: '0x4'
@@ -377,6 +401,10 @@ InterpCurveTwoVectors:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_JGRKK[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: LoopKeyOffset
     Offset: '0x14'
     Size: '0x4'
@@ -392,6 +420,10 @@ InterpCurveVector:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_FR0DE[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: LoopKeyOffset
     Offset: '0x14'
     Size: '0x4'
@@ -407,6 +439,10 @@ InterpCurveVector2D:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_HIDWG[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: LoopKeyOffset
     Offset: '0x14'
     Size: '0x4'
@@ -575,6 +611,10 @@ Transform:
     Offset: '0x10'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_VTWDW[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: Scale3D
     Offset: '0x20'
     Size: '0xc'

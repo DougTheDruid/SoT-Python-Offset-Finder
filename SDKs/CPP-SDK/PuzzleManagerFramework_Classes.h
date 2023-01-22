@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
 class PuzzleManager: public Actor
 {
 public:
@@ -14,18 +14,27 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PuzzleManagerPolicyInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xb8
+// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
 class PuzzleManagerPolicy: public Object
 {
 public:
+	char                                                         pad0x10_ZW310[0x10];                               // 0x28(0x10)
 	Class Actor*                                                 PuzzleManager;                                     // 0x38(0x8)
+	char                                                         pad0xb0_2SS3C[0xb0];                               // 0x3e(0xb0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PuzzleManagerPolicyTriggerInterface: public Interface
+{
+public:
 };
 
 

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x668] - InheritedSize[0x650]
 class BP_Projectile_CannonBall_C: public CannonProjectile
 {
 public:

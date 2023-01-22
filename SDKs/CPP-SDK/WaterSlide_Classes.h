@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class WaterSlideParamsDataAsset: public DataAsset
 {
 public:
@@ -14,10 +14,11 @@ public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
 class WaterSlide: public Actor
 {
 public:
+	char                                                         pad0x8_NJBQM[0x8];                                 // 0x3c8(0x8)
 	Class SplineComponent*                                       SlideSpline;                                       // 0x3d0(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
 	Class WaterSlideParamsDataAsset*                             WaterSlideParamsDataAsset;                         // 0x3e0(0x8)
@@ -26,19 +27,21 @@ public:
 	Class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
 	Class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
 	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
+	char                                                         pad0x3_D8140[0x3];                                 // 0x409(0x3)
 	Struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
 	Class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
+	char                                                         pad0x30_OMQXV[0x30];                               // 0x41e(0x30)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class WaterSlideActionStateId: public ActionStateId
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class WaterSlideAudioParams: public DataAsset
 {
 public:
@@ -52,32 +55,34 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x2b0] - InheritedSize[0x2a0]
 class WaterSlideInputComponent: public LookAtOffsetInputComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class WaterSlidePlayerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x118] - InheritedSize[0xe0]
 class WaterSlidePlayerComponent: public DoubleIntentComponent
 {
 public:
+	char                                                         pad0x8_YQU1D[0x8];                                 // 0xe0(0x8)
 	Class ParticleSystemComponent*                               PlayerWaterSlideSplashingVFXComponent;             // 0xe8(0x8)
 	Class ParticleSystem*                                        PlayerWaterSlideSplashingVFX;                      // 0xf0(0x8)
 	float                                                        SpawnLocationZOffset;                              // 0xf8(0x4)
+	char                                                         pad0x14_7TEI6[0x14];                               // 0xfc(0x14)
 	Class WaterSlide*                                            CurrentWaterSlide;                                 // 0x110(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
 class WaterSlideVeeringAnalogInputId: public AnalogInputId
 {
 public:

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x4c0] - InheritedSize[0x4b8]
 class BP_SkellyFort_SkullCloud_C: public BP_RotatableSignalCloud_C
 {
 public:

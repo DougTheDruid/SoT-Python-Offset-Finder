@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_R1C9Y[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "Handle_EmissaryKilledAnotherEmissary",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -36,10 +42,22 @@
         "Offset": "0x178"
       },
       {
+        "Name": "pad0x3_D0AT3[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x179"
+      },
+      {
         "Name": "ExpectedCompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x17c"
+      },
+      {
+        "Name": "pad0x4_JD4SK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x184"
       },
       {
         "Name": "ExpectedVictimCompanyName",

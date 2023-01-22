@@ -41,6 +41,10 @@ ModeSpecificReviveSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_QCGB6[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: DeathCameraBlackFadeDelay
     Offset: '0x4'
     Size: '0x4'
@@ -81,6 +85,10 @@ ModeSpecificReviveSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_HKGRF[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: CachedReviveSettings
     Offset: '0x30'
     Size: '0x8'
@@ -180,6 +188,10 @@ RevivingWindowStart:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_KHJVP[0x7]
+    Offset: '0x31'
+    Size: '0x7'
+    Type: char
   - Name: RevivableCharacter
     Offset: '0x38'
     Size: '0x8'

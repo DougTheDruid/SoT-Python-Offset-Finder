@@ -12,6 +12,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x1eb_4TZS5[0x1eb]",
+        "Type": "char",
+        "Size": "0x1eb",
+        "Offset": "0x30"
+      },
+      {
         "Name": "AthenaPlayerController",
         "Type": "Class AthenaPlayerController*",
         "Size": "0x8",

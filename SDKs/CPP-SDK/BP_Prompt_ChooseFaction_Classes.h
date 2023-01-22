@@ -6,11 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20a
+// Size 0x20a (Full Size[0x322] - InheritedSize[0x118]
 class BP_Prompt_ChooseFaction_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_8FJNE[0xfc];                               // 0x120(0xfc)
 	Struct ObjectMessagingHandle                                 HandleChoseFaction;                                // 0x120(0x48)
 	Struct PrioritisedPromptWithHandle                           PromptPirateLord1;                                 // 0x168(0x68)
 	Struct PrioritisedPromptWithHandle                           PromptFlameheart1;                                 // 0x1d0(0x68)
@@ -20,6 +21,7 @@ public:
 	float                                                        PromptDisplayDuration;                             // 0x30c(0x4)
 	bool                                                         FactionPromptFinished;                             // 0x310(0x1)
 	bool                                                         FactionChosen;                                     // 0x311(0x1)
+	char                                                         pad0x6_HR4B5[0x6];                                 // 0x312(0x6)
 	class                                                        CurrentFaction;                                    // 0x318(0x8)
 	bool                                                         WarmapOpen;                                        // 0x320(0x1)
 	bool                                                         WarMapPromptFinished;                              // 0x321(0x1)

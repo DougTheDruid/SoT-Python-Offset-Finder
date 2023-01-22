@@ -6,17 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x140
+// Size 0x140 (Full Size[0x258] - InheritedSize[0x118]
 class BP_Prompt_MapBundle_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_LD885[0xfc];                               // 0x120(0xfc)
 	class                                                        MapBundlePromptAccessKey;                          // 0x120(0x8)
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x128(0x68)
 	bool                                                         MapBundleBecameVisible;                            // 0x190(0x1)
+	char                                                         pad0x7_W1EUL[0x7];                                 // 0x191(0x7)
 	Struct ObjectMessagingHandle                                 MapBundleAppearedHandle;                           // 0x198(0x48)
 	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x1e0(0x8)
 	bool                                                         HasShown;                                          // 0x1e8(0x1)
+	char                                                         pad0x7_A7NNI[0x7];                                 // 0x1e9(0x7)
 	Struct PrioritisedPromptWithHandle                           StealPrompt;                                       // 0x1f0(0x68)
 };
 

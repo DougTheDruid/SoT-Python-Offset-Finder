@@ -60,6 +60,10 @@ TestSerializationObject:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_CQSFW[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: TestInt
     Offset: '0x4'
     Size: '0x4'

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x41
+// Size 0x41 (Full Size[0x831] - InheritedSize[0x7f0]
 class BP_DamageZone_C: public DamageZone
 {
 public:

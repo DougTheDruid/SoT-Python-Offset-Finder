@@ -14,6 +14,10 @@ InstancedRopeComponent:
     Offset: '0x5d0'
     Size: '0x4'
     Type: int
+  - Name: pad0xb4_O069N[0xb4]
+    Offset: '0x5d2'
+    Size: '0xb4'
+    Type: char
   ClassSize: '0xc0'
   FullSize: '0x680'
   InheritedSize: '0x5c0'
@@ -24,12 +28,20 @@ MaterialExpressionRopeParameter:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_TADMF[0x9]
+    Offset: '0x6f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x78'
   InheritedSize: '0x70'
   Super: MaterialExpression
 RiggingSystem:
   Attributes:
+  - Name: pad0x8_182IA[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: Root
     Offset: '0x3d0'
     Size: '0x8'
@@ -62,6 +74,10 @@ RiggingSystem:
     Offset: '0x480'
     Size: '0x10'
     Type: TArray<Float InitialMainRopeLengths>
+  - Name: pad0xa8_Z9LOO[0xa8]
+    Offset: '0x48e'
+    Size: '0xa8'
+    Type: char
   ClassSize: '0x150'
   FullSize: '0x518'
   InheritedSize: '0x3c8'
@@ -80,6 +96,10 @@ RiggingSystemComponent:
     Offset: '0x310'
     Size: '0x8'
     Type: Class RiggingSystem*
+  - Name: pad0x18_NKS5I[0x18]
+    Offset: '0x316'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x320'
   InheritedSize: '0x2e0'

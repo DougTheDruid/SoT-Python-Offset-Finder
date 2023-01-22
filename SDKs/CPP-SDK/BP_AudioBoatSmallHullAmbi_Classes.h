@@ -6,35 +6,35 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xc8
+// Size 0xc8 (Full Size[0x6d0] - InheritedSize[0x608]
 class BP_AudioBoatSmallHullAmbi_C: public ShipHullAudio
 {
 public:
-	Class TritonComponent*                                       None;                                              // 0x608(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x610(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x618(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x620(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x628(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x630(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x638(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x640(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x648(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x650(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x658(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x660(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x668(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x670(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x678(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x680(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x688(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x690(0x8)
-	Class ShipAudioEmitterComponent*                             None;                                              // 0x698(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x6a0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x6a8(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x6b0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x6b8(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x6c0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x6c8(0x8)
+	Class TritonComponent*                                       Triton;                                            // 0x608(0x8)
+	Class ShipAudioEmitterComponent*                             audio_wake_stern;                                  // 0x610(0x8)
+	Class ShipAudioEmitterComponent*                             audio_wake_bow;                                    // 0x618(0x8)
+	Class ShipAudioEmitterComponent*                             audio_wake_side_L;                                 // 0x620(0x8)
+	Class ShipAudioEmitterComponent*                             audio_wake_side_R;                                 // 0x628(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_nest;                                  // 0x630(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_mast;                                  // 0x638(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_FL;                                    // 0x640(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_FR;                                    // 0x648(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_rope_front;                            // 0x650(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_brig_03;                               // 0x658(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_brig_02;                               // 0x660(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_rope_back;                             // 0x668(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_brig_01;                               // 0x670(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_cabin_04;                              // 0x678(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_cabin_03;                              // 0x680(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_cabin_02;                              // 0x688(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_cabin_01;                              // 0x690(0x8)
+	Class ShipAudioEmitterComponent*                             audio_creak_smallship_global;                      // 0x698(0x8)
+	Class AudioPortalComponent*                                  DeckGrille;                                        // 0x6a0(0x8)
+	Class AudioPortalComponent*                                  BrigDeck;                                          // 0x6a8(0x8)
+	Class AudioPortalComponent*                                  CaptainsCabin_Left;                                // 0x6b0(0x8)
+	Class AudioPortalComponent*                                  CaptainsCabin_Right;                               // 0x6b8(0x8)
+	Class AudioPortalComponent*                                  CaptainsCabin_Back;                                // 0x6c0(0x8)
+	Class AudioPortalComponent*                                  TopToCaptainsCabin;                                // 0x6c8(0x8)
 };
 
 

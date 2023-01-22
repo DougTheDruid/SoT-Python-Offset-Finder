@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x968] - InheritedSize[0x950]
 class BP_WarMap_C: public WarMapProposalContainer
 {
 public:

@@ -34,6 +34,12 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
+        "Name": "pad0x8_ZZ33Q[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
         "Name": "ReviveAnimations",
         "Type": "Struct ReviveGhostAnimations",
         "Size": "0x28",
@@ -56,6 +62,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x472"
+      },
+      {
+        "Name": "pad0x1f_NG5ZU[0x1f]",
+        "Type": "char",
+        "Size": "0x1f",
+        "Offset": "0x471"
       }
     ]
   },

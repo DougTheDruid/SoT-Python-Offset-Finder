@@ -49,6 +49,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_15D5R[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
         "Name": "RepairerActor",
         "Type": "Class Actor*",
         "Size": "0x8",

@@ -1,99 +1,117 @@
 {
   "TaleNote": {
     "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x9b0",
-    "InheritedSize": "0x780",
+    "FullSize": "0x9d0",
+    "InheritedSize": "0x7a0",
     "ClassSize": "0x230",
     "Attributes": [
+      {
+        "Name": "pad0x10_HUGZF[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x7a0"
+      },
       {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x790"
+        "Offset": "0x7b0"
       },
       {
         "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x794"
+        "Offset": "0x7b4"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x798"
+        "Offset": "0x7b8"
+      },
+      {
+        "Name": "pad0x4_X1OK2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x7bc"
       },
       {
         "Name": "Font",
         "Type": "Class Font*",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x7c0"
       },
       {
         "Name": "Image",
         "Type": "Struct TreasureMapWidgetStreamedTexture",
         "Size": "0x30",
-        "Offset": "0x7a8"
+        "Offset": "0x7c8"
       },
       {
         "Name": "TitleWidgetText",
         "Type": "Struct TreasureMapWidgetText",
         "Size": "0x38",
-        "Offset": "0x7d8"
+        "Offset": "0x7f8"
       },
       {
         "Name": "BodyWidgetText",
         "Type": "Struct TreasureMapWidgetText",
         "Size": "0x38",
-        "Offset": "0x810"
+        "Offset": "0x830"
       },
       {
         "Name": "NoteWidth",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x848"
+        "Offset": "0x868"
       },
       {
         "Name": "NoteLineSpacingMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x84c"
+        "Offset": "0x86c"
       },
       {
         "Name": "Title",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x850"
+        "Offset": "0x870"
       },
       {
         "Name": "Body",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x888"
+        "Offset": "0x8a8"
       },
       {
         "Name": "RenderTarget",
         "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x8c0"
+        "Offset": "0x8e0"
       },
       {
         "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x8c8"
+        "Offset": "0x8e8"
       },
       {
         "Name": "InventoryItemComponent",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x8d0"
+        "Offset": "0x8f0"
       },
       {
         "Name": "ZoomInOnWieldableComponent",
         "Type": "Class ZoomInOnWieldableItemComponent*",
         "Size": "0x8",
-        "Offset": "0x8d8"
+        "Offset": "0x8f8"
+      },
+      {
+        "Name": "pad0xe0_O45XC[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0x8fe"
       }
     ]
   },

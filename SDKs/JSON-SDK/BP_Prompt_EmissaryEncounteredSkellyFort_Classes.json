@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_962QM[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "Handle_EmissaryEncounteredSkellyFort",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -30,10 +36,22 @@
         "Offset": "0x170"
       },
       {
+        "Name": "pad0x3_D9O6C[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x171"
+      },
+      {
         "Name": "ExpectedCompanyName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x174"
+      },
+      {
+        "Name": "pad0x4_GB1UC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x17c"
       },
       {
         "Name": "Prompts",

@@ -16,6 +16,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x21_FCHJX[0x21]",
+        "Type": "char",
+        "Size": "0x21",
+        "Offset": "0x5f"
       }
     ]
   },
@@ -37,6 +43,12 @@
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x30_K81SR[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xce"
       }
     ]
   },
@@ -54,10 +66,22 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
+        "Name": "pad0x60_32CS9[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "PendingClaims",
         "Type": "TArray<Weakclass PendingClaims>",
         "Size": "0x10",
         "Offset": "0x428"
+      },
+      {
+        "Name": "pad0x70_B207Y[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x436"
       }
     ]
   },
@@ -78,6 +102,12 @@
         "Type": "Struct LightingZoneStoryRelatedSettings",
         "Size": "0x10",
         "Offset": "0x330"
+      },
+      {
+        "Name": "pad0x40_C8GQO[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x33e"
       }
     ]
   },
@@ -92,6 +122,12 @@
         "Type": "Struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_NJXP1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
@@ -118,6 +154,12 @@
         "Type": "Struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x560"
+      },
+      {
+        "Name": "pad0x38_CHLDR[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x566"
       }
     ]
   },
@@ -153,6 +195,12 @@
         "Type": "Class StorySpawnedActorsComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x48_YKYDP[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xce"
       }
     ]
   },
@@ -167,6 +215,12 @@
         "Type": "Struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_000MB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
@@ -193,6 +247,12 @@
         "Type": "Struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_CGJQX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
@@ -222,6 +282,12 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
+        "Name": "pad0x18_1K6AD[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "EarlyRegisteredComponents",
         "Type": "TArray<class StorySpawnedActorsComponent*>",
         "Size": "0x10",
@@ -232,6 +298,12 @@
         "Type": "Class StorySpawnedActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x3f0"
+      },
+      {
+        "Name": "pad0x108_8XSXL[0x108]",
+        "Type": "char",
+        "Size": "0x108",
+        "Offset": "0x3f6"
       }
     ]
   },
@@ -263,6 +335,12 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
+        "Name": "pad0x8_GZFBP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "AllStories",
         "Type": "TArray<Struct StoryInfo>",
         "Size": "0x10",
@@ -279,6 +357,12 @@
         "Type": "TArray<Str AllExcludeFilters>",
         "Size": "0x10",
         "Offset": "0x3f0"
+      },
+      {
+        "Name": "pad0x40_95BNE[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x3fe"
       }
     ]
   },
@@ -330,6 +414,12 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
+        "Name": "pad0x28_6SM5J[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "Stories",
         "Type": "TArray<Struct StoryInfo>",
         "Size": "0x10",
@@ -340,6 +430,12 @@
         "Type": "TArray<Struct StoryInfo>",
         "Size": "0x10",
         "Offset": "0x400"
+      },
+      {
+        "Name": "pad0xb0_IKVH7[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x40e"
       }
     ]
   },

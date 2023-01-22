@@ -6,16 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x78
+// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
 class UdpMessagingSettings: public Object
 {
 public:
 	bool                                                         EnableTransport;                                   // 0x28(0x1)
+	char                                                         pad0x7_RJWVD[0x7];                                 // 0x29(0x7)
 	Struct FString                                               UnicastEndpoint;                                   // 0x30(0x10)
 	Struct FString                                               MulticastEndpoint;                                 // 0x40(0x10)
 	byte                                                         MulticastTimeToLive;                               // 0x50(0x1)
+	char                                                         pad0x7_1OFAN[0x7];                                 // 0x51(0x7)
 	TArray<Str StaticEndpoints>                                  StaticEndpoints;                                   // 0x58(0x10)
 	bool                                                         EnableTunnel;                                      // 0x68(0x1)
+	char                                                         pad0x7_0J782[0x7];                                 // 0x69(0x7)
 	Struct FString                                               TunnelUnicastEndpoint;                             // 0x70(0x10)
 	Struct FString                                               TunnelMulticastEndpoint;                           // 0x80(0x10)
 	TArray<Str RemoteTunnelEndpoints>                            RemoteTunnelEndpoints;                             // 0x90(0x10)

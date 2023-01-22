@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x638] - InheritedSize[0x620]
 class BP_LargeShip_StandardHull_InternalShipWater_C: public ShipInternalWater
 {
 public:

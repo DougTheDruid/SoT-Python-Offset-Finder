@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_MHRL2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "Item",
         "Type": "Struct MerchantContractItemDesc",
         "Size": "0x28",
@@ -202,6 +208,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x3_XUB1I[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      },
+      {
         "Name": "DataInt",
         "Type": "int",
         "Size": "0x4",
@@ -240,6 +252,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21"
+      },
+      {
+        "Name": "pad0x6_58LOQ[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x22"
       },
       {
         "Name": "FailureMessage",
@@ -391,6 +409,10 @@
   },
   "TaleQuestForEachCrewTask": {
     "ClassSize": "0x28",
+    "Attributes": []
+  },
+  "TaleQuestStopPermanentPromptEvent": {
+    "ClassSize": "0x1",
     "Attributes": []
   },
   "QuestVariableItemDescType": {

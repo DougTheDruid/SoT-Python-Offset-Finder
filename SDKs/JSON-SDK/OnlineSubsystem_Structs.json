@@ -97,6 +97,12 @@
         "Offset": "0x14"
       },
       {
+        "Name": "pad0x3_IT64I[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15"
+      },
+      {
         "Name": "Reason",
         "Type": "Struct FString",
         "Size": "0x10",
@@ -182,6 +188,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x7_SNU7I[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x51"
       },
       {
         "Name": "SaleEndDate",

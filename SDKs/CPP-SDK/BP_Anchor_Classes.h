@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
 class BP_Anchor_C: public Anchor
 {
 public:

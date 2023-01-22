@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_SmallShipLadder_02_C:
   Attributes:
-  - Name: None
-    Offset: '0x5c0'
+  - Name: DefaultSceneRoot
+    Offset: '0x510'
     Size: '0x8'
-    Type: Class InteractableComponent*
-  ClassSize: '0x28'
-  FullSize: '0x5e8'
-  InheritedSize: '0x5c0'
-  Super: Ladder
+    Type: Class SceneComponent*
+  ClassSize: '0x8'
+  FullSize: '0x518'
+  InheritedSize: '0x510'
+  Super: NonStorableItemInfo

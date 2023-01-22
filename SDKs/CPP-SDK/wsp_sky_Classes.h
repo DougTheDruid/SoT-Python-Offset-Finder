@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xc
+// Size 0xc (Full Size[0x3dc] - InheritedSize[0x3d0]
 class wsp_sky_C: public LevelScriptActor
 {
 public:

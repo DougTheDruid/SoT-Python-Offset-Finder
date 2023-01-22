@@ -33,6 +33,10 @@ BuoyancySampleMovement:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<Struct BuoyancySampleMovementConfiguration>
+  - Name: pad0x40_3P6JW[0x40]
+    Offset: '0x10'
+    Size: '0x40'
+    Type: char
   - Name: BuoyancyScalarCurve
     Offset: '0x50'
     Size: '0x8'
@@ -56,6 +60,10 @@ BuoyancySampleMovementConfiguration:
     Offset: '0x18'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_1EDRC[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: OverallBuoyancyScalarBlendCurve
     Offset: '0x20'
     Size: '0x8'
@@ -75,6 +83,10 @@ BuoyancySampleMovementConfigurationEntry:
     Offset: '0x0'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_ZE8ZD[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: BuoyancyScaleCurve
     Offset: '0x10'
     Size: '0x8'
@@ -98,6 +110,10 @@ BuoyancyVolumeSample:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_MPAKP[0x2]
+    Offset: '0x12'
+    Size: '0x2'
+    Type: char
   - Name: Scalar
     Offset: '0x14'
     Size: '0x4'
@@ -106,6 +122,10 @@ BuoyancyVolumeSample:
     Offset: '0x18'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_2ACJY[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: DistUnderwaterVSBuoyancyForce
     Offset: '0x20'
     Size: '0x8'
@@ -209,6 +229,10 @@ SplashProbe:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_LIEPR[0x7]
+    Offset: '0x101'
+    Size: '0x7'
+    Type: char
   - Name: CurrentlyPlayingVFX
     Offset: '0x108'
     Size: '0x8'
@@ -232,6 +256,10 @@ WaterBuoyancy:
     Offset: '0x10'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_WNWVF[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: VolumeSamples
     Offset: '0x18'
     Size: '0x10'
@@ -306,6 +334,10 @@ WaterSplashProbe:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_EB8FP[0x2]
+    Offset: '0x4a'
+    Size: '0x2'
+    Type: char
   - Name: StaticWaterHeightValue
     Offset: '0x4c'
     Size: '0x4'

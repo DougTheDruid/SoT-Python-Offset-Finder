@@ -6,18 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CustomItemServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class CustomItemService: public Object
 {
 public:
+	char                                                         pad0x8_IB3S5[0x8];                                 // 0x28(0x8)
 	Class World*                                                 World;                                             // 0x30(0x8)
+	char                                                         pad0x28_I26N6[0x28];                               // 0x36(0x28)
 };
 
 

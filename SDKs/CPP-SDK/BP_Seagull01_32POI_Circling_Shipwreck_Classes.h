@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
 class BP_Seagull01_32POI_Circling_Shipwreck_C: public Actor
 {
 public:

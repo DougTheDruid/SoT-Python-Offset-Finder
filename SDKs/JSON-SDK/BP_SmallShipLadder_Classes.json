@@ -1,15 +1,111 @@
 {
   "BP_SmallShipLadder_C": {
-    "Super": "Ladder",
-    "FullSize": "0x5e8",
-    "InheritedSize": "0x5c0",
-    "ClassSize": "0x28",
+    "Super": "CollectorsChestItemProxyStatic",
+    "FullSize": "0x961",
+    "InheritedSize": "0x8a0",
+    "ClassSize": "0xc1",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
+        "Type": "Struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x8a0"
+      },
+      {
+        "Name": "WaterOcclusionVolume",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8a8"
+      },
+      {
+        "Name": "MaterialAnimator",
+        "Type": "Class MaterialAnimatorComponent*",
+        "Size": "0x8",
+        "Offset": "0x8b0"
+      },
+      {
+        "Name": "OpenableItemMeshAnimationReaction",
+        "Type": "Class OpenableItemMeshAnimationReactionComponent*",
+        "Size": "0x8",
+        "Offset": "0x8b8"
+      },
+      {
+        "Name": "MeshAnimator",
+        "Type": "Class MeshAnimatorComponent*",
+        "Size": "0x8",
+        "Offset": "0x8c0"
+      },
+      {
+        "Name": "OpenableItemMaterialAnimationReaction",
+        "Type": "Class OpenableItemMaterialAnimationReactionComponent*",
+        "Size": "0x8",
+        "Offset": "0x8c8"
+      },
+      {
+        "Name": "Glint",
+        "Type": "Class GlintComponent*",
+        "Size": "0x8",
+        "Offset": "0x8d0"
+      },
+      {
+        "Name": "QuestBookPagesInContainer",
+        "Type": "Class QuestBookPagesInContainerComponent*",
+        "Size": "0x8",
+        "Offset": "0x8d8"
+      },
+      {
+        "Name": "GoldInContainer",
+        "Type": "Class GoldInContainerComponent*",
+        "Size": "0x8",
+        "Offset": "0x8e0"
+      },
+      {
+        "Name": "Scene",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x8e8"
+      },
+      {
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
+        "Offset": "0x8f0"
+      },
+      {
+        "Name": "ItemSlotInteractable",
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Size": "0x8",
+        "Offset": "0x8f8"
+      },
+      {
+        "Name": "ItemSlotInteractable",
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Size": "0x8",
+        "Offset": "0x900"
+      },
+      {
+        "Name": "ItemSlotInteractable",
+        "Type": "Class CollectorsChestItemSlotInteractable*",
+        "Size": "0x8",
+        "Offset": "0x908"
+      },
+      {
+        "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x5c0"
+        "Offset": "0x910"
+      },
+      {
+        "Name": "OnDroppedHandle",
+        "Type": "Struct ObjectMessagingHandle",
+        "Size": "0x48",
+        "Offset": "0x918"
+      },
+      {
+        "Name": "HideWaterOcclusionVolume",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x960"
       }
     ]
   },

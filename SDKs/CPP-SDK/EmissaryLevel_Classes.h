@@ -6,96 +6,107 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class EmissaryActionRewardBoostComponent: public ActorComponent
 {
 public:
 };
 
 
-// Size 0x90
+// Size 0x90 (Full Size[0x158] - InheritedSize[0xc8]
 class EmissaryActiveTableVisualiserComponent: public ActorComponent
 {
 public:
 	class                                                        TargetCompany;                                     // 0xc8(0x8)
 	TArray<Struct MaterialVisualisation>                         MaterialChanges;                                   // 0xd0(0x10)
+	char                                                         pad0x10_N2MU3[0x10];                               // 0xe0(0x10)
 	TArray<Struct LightVisualisation>                            LightChanges;                                      // 0xf0(0x10)
+	char                                                         pad0x10_R3TEH[0x10];                               // 0x100(0x10)
 	TArray<Struct ParticleVisualisation>                         ParticleChanges;                                   // 0x110(0x10)
+	char                                                         pad0x58_FSM2H[0x58];                               // 0x11e(0x58)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
 class EmissaryEntitlementCategory: public ItemCategory
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xc8] - InheritedSize[0xc8]
 class EmissaryEntitlementDesc: public EntitlementDesc
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EmissaryFlotsamDuplicationInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x768] - InheritedSize[0x728]
 class EmissaryFlotsamItemInfo: public BootyItemInfo
 {
 public:
+	char                                                         pad0x8_OD5WA[0x8];                                 // 0x728(0x8)
 	Struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x730(0x18)
 	Struct CompanySpecificBootyReward                            AlternateHandInOwnFlotsamReward;                   // 0x748(0x18)
 	bool                                                         FlotsamCanBeDuplicated;                            // 0x760(0x1)
+	char                                                         pad0x9_BZ29S[0x9];                                 // 0x75f(0x9)
 };
 
 
-// Size 0x90
+// Size 0x90 (Full Size[0x4d0] - InheritedSize[0x440]
 class EmissaryFlotsamItemSpawnComponent: public ItemSpawnComponent
 {
 public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class EmissaryFlotsamTooltipCustomizerComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x10_IBZ02[0x10];                               // 0xc8(0x10)
 	bool                                                         CheckForDelivery;                                  // 0xd8(0x1)
 	bool                                                         CheckForPickup;                                    // 0xd9(0x1)
+	char                                                         pad0x18_W5KWQ[0x18];                               // 0xd8(0x18)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class EmissaryLevelSettingsAsset: public DataAsset
 {
 public:
 	TArray<Struct EmissaryLevelEntry>                            EmissaryLevelData;                                 // 0x28(0x10)
 	Struct EmissaryPointBoostMultipliers                         BoostMultiplers;                                   // 0x38(0x8)
 	Struct EmissaryFlagMeshReferences                            DefaultEmissaryFlagAssetReferences;                // 0x40(0x20)
+	char                                                         pad0x48_QW2DZ[0x48];                               // 0x5e(0x48)
 };
 
 
-// Size 0x350
+// Size 0x350 (Full Size[0x718] - InheritedSize[0x3c8]
 class EmissaryLevelService: public Actor
 {
 public:
+	char                                                         pad0xb8_NPT3U[0xb8];                               // 0x3c8(0xb8)
 	Class EmissaryLevelSettingsAsset*                            Settings;                                          // 0x480(0x8)
 	Class EmissaryRewardSettingsAsset*                           RewardSettings;                                    // 0x488(0x8)
+	char                                                         pad0x298_9P7AW[0x298];                             // 0x48e(0x298)
 };
 
 
-// Size 0x98
+// Size 0x98 (Full Size[0x160] - InheritedSize[0xc8]
 class EmissaryMaxRankQuestProvider: public ActorComponent
 {
 public:
 	class                                                        MaxRankQuestNotificationID;                        // 0xc8(0x8)
 	byte                                                         MaxRankQuestToolTipPriority;                       // 0xd0(0x1)
+	char                                                         pad0x7_D7HCX[0x7];                                 // 0xd1(0x7)
 	Struct FText                                                 StartMaxRankQuestToolTipText;                      // 0xd8(0x38)
 	Struct FText                                                 CannotStartMaxRankQuestToolTipText;                // 0x110(0x38)
 	Struct StringAssetReference                                  QuestDesc;                                         // 0x148(0x10)
@@ -103,28 +114,33 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
 class EmissaryParticipantComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_NDU79[0x8];                                 // 0xc8(0x8)
 	bool                                                         IsAtMaxRank;                                       // 0xd0(0x1)
+	char                                                         pad0x7_6HVDX[0x7];                                 // 0xd1(0x7)
 	TArray<Struct MysteriousNotesCompletionEventsModelEntry>     NoteCompletionIdents;                              // 0xd8(0x10)
+	char                                                         pad0x10_0NS1G[0x10];                               // 0xe8(0x10)
 	int                                                          EmissaryLevel;                                     // 0xf8(0x4)
 	float                                                        EmissaryLevelProgress;                             // 0xfc(0x4)
 	struct FName                                                 AffiliatedCompany;                                 // 0x100(0x8)
 	bool                                                         IsEmissaryMaxRankQuestBeenActivatedThisSession;    // 0x108(0x1)
+	char                                                         pad0x3_2973C[0x3];                                 // 0x109(0x3)
 	struct FName                                                 VotedCompany;                                      // 0x10c(0x8)
+	char                                                         pad0x14_79DCS[0x14];                               // 0x112(0x14)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x620] - InheritedSize[0x620]
 class EmissaryRepresentationMeshComponent: public StaticMeshComponent
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class EmissaryRewardCampaignSettingsAsset: public DataAsset
 {
 public:
@@ -132,17 +148,18 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class EmissaryRewardSettingsAsset: public DataAsset
 {
 public:
 	TArray<Struct EmissaryRewardEntry>                           EmissaryRewardData;                                // 0x28(0x10)
 	float                                                        PlayerKilledExpiryTime;                            // 0x38(0x4)
+	char                                                         pad0x4_SP456[0x4];                                 // 0x3c(0x4)
 	Class EmissaryRewardCampaignSettingsAsset*                   CampaignSettings;                                  // 0x40(0x8)
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x350] - InheritedSize[0x2e0]
 class EmissaryShipAffiliationTrackerComponent: public SceneComponent
 {
 public:
@@ -151,23 +168,28 @@ public:
 	TArray<class StaticMeshComponent*>                           EmissaryRepresentationMeshes;                      // 0x318(0x10)
 	class                                                        LoadedEmissaryRepresentationMesh;                  // 0x328(0x8)
 	int                                                          EmissaryCount;                                     // 0x330(0x4)
+	char                                                         pad0x24_DQJF9[0x24];                               // 0x332(0x24)
 };
 
 
-// Size 0xf8
+// Size 0xf8 (Full Size[0x128] - InheritedSize[0x30]
 class EmissaryVoyageInlineVoteConsumerBase: public VoteConsumerInlineBase
 {
 public:
 	Class EmissaryVoyageVoteValidatorBase*                       Validator;                                         // 0x30(0x8)
+	char                                                         pad0x48_NGGJW[0x48];                               // 0x38(0x48)
 	Struct FText                                                 VoyageCinematicHeader;                             // 0x80(0x38)
 	struct FName                                                 VoyageCinematicTag;                                // 0xb8(0x8)
+	char                                                         pad0x20_D07MD[0x20];                               // 0xc0(0x20)
 	TArray<Struct CrewMemberVotes>                               Votes;                                             // 0xe0(0x10)
 	Class BoxedRpcDispatcherComponent*                           RpcDispatcher;                                     // 0xf0(0x8)
+	char                                                         pad0x20_WF1XM[0x20];                               // 0xf8(0x20)
 	Class Actor*                                                 OwningActor;                                       // 0x118(0x8)
+	char                                                         pad0x18_H4LRA[0x18];                               // 0x11e(0x18)
 };
 
 
-// Size 0x1d8
+// Size 0x1d8 (Full Size[0x300] - InheritedSize[0x128]
 class StartEmissaryVoyageInlineVoteConsumer: public EmissaryVoyageInlineVoteConsumerBase
 {
 public:
@@ -179,10 +201,11 @@ public:
 	Struct FText                                                 EmissaryVotingCantVoteReasonOnOpposingFaction;     // 0x240(0x38)
 	Struct FText                                                 EmissaryVotingRemoveVote;                          // 0x278(0x38)
 	Struct FText                                                 EmissaryVotingCantRemoveVote;                      // 0x2b0(0x38)
+	char                                                         pad0x88_UOXN9[0x88];                               // 0x2e6(0x88)
 };
 
 
-// Size 0x168
+// Size 0x168 (Full Size[0x290] - InheritedSize[0x128]
 class StopEmissaryVoyageInlineVoteConsumer: public EmissaryVoyageInlineVoteConsumerBase
 {
 public:
@@ -192,46 +215,49 @@ public:
 	Struct FText                                                 EmissaryVotingCantVoteReasonActiveForDifferentCompany; // 0x1d0(0x38)
 	Struct FText                                                 EmissaryVotingRemoveVote;                          // 0x208(0x38)
 	Struct FText                                                 EmissaryVotingCantRemoveVote;                      // 0x240(0x38)
+	char                                                         pad0x88_8UMFR[0x88];                               // 0x276(0x88)
 };
 
 
-// Size 0x90
+// Size 0x90 (Full Size[0xc0] - InheritedSize[0x30]
 class EmissaryVoyageVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
 	class                                                        RequiredEntitlement;                               // 0x30(0x8)
+	char                                                         pad0x78_4JPDB[0x78];                               // 0x38(0x78)
 	class                                                        TargetCompany;                                     // 0xb0(0x8)
 	Class EmissaryVoyageInlineVoteConsumerBase*                  Consumer;                                          // 0xb8(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xc0] - InheritedSize[0xc0]
 class StartEmissaryVoyageInlineVoteValidator: public EmissaryVoyageVoteValidatorBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xc0] - InheritedSize[0xc0]
 class StopEmissaryVoyageInlineVoteValidator: public EmissaryVoyageVoteValidatorBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class IsAnEmissaryStatCondition: public TargetedStatCondition
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class IsEmissaryStatCondition: public StatCondition
 {
 public:
 	class                                                        RequiredEmissaryCompany;                           // 0x28(0x8)
 	bool                                                         RequiresMaxEmissaryLevel;                          // 0x30(0x1)
+	char                                                         pad0x9_DN3H3[0x9];                                 // 0x2f(0x9)
 };
 
 

@@ -10,16 +10,28 @@ LevelSequence:
     Offset: '0x2b0'
     Size: '0xa0'
     Type: Struct LevelSequenceObjectReferenceMap
+  - Name: pad0x190_A8ZUP[0x190]
+    Offset: '0x34e'
+    Size: '0x190'
+    Type: char
   ClassSize: '0xf8'
   FullSize: '0x3a0'
   InheritedSize: '0x2a8'
   Super: MovieSceneSequence
 LevelSequenceActor:
   Attributes:
+  - Name: pad0x8_GBEPA[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: bAutoPlay
     Offset: '0x3d0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_1AYPS[0x7]
+    Offset: '0x3d1'
+    Size: '0x7'
+    Type: char
   - Name: PlaybackSettings
     Offset: '0x3d8'
     Size: '0x28'
@@ -78,6 +90,10 @@ LevelSequenceBurnInOptions:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_LYM9O[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: BurnInClass
     Offset: '0x30'
     Size: '0x10'
@@ -96,6 +112,10 @@ LevelSequencePlayer:
     Offset: '0x608'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0x48_QE8VE[0x48]
+    Offset: '0x60e'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x648'
   InheritedSize: '0x608'

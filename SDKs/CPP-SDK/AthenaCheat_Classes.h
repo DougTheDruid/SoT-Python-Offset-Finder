@@ -6,16 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xc0
+// Size 0xc0 (Full Size[0x138] - InheritedSize[0x78]
 class AthenaCheatManager: public CheatManager
 {
 public:
 	Class CinematicCameraController*                             CinematicCameraController;                         // 0x78(0x8)
 	class                                                        CinematicCameraControllerClass;                    // 0x80(0x8)
+	char                                                         pad0x28_29E7B[0x28];                               // 0x88(0x28)
 	TArray<Struct WorldMarkerDesc>                               CreatedWorldMarkers;                               // 0xb0(0x10)
 	Class GameEventSchedulerSettingsAsset*                       DebugSchedulerSettings;                            // 0xc0(0x8)
 	Class ServerPerformanceReplicator*                           ServerPerformanceReplicator;                       // 0xc8(0x8)
 	float                                                        TeleportToDigsiteHeightOffset;                     // 0xd0(0x4)
+	char                                                         pad0x6c_9FMX5[0x6c];                               // 0xd2(0x6c)
 };
 
 

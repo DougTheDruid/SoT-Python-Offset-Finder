@@ -10,6 +10,10 @@ DrawDebugItemBox:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_DP4WH[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
@@ -18,6 +22,10 @@ DrawDebugItemBox:
     Offset: '0x18'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0xc_2J3DW[0xc]
+    Offset: '0x24'
+    Size: '0xc'
+    Type: char
   - Name: Rotation
     Offset: '0x30'
     Size: '0x10'
@@ -37,6 +45,10 @@ DrawDebugItemCapsule:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_VZAIJ[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
@@ -68,6 +80,10 @@ DrawDebugItemLine:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_WN21Q[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: LineStart
     Offset: '0xc'
     Size: '0xc'
@@ -95,6 +111,10 @@ DrawDebugItemMessage:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_UPXQW[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   - Name: Message
     Offset: '0x10'
     Size: '0x10'
@@ -114,6 +134,10 @@ DrawDebugItemSector:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_YJ5SF[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: RotationAngle
     Offset: '0xc'
     Size: '0x4'
@@ -161,6 +185,10 @@ DrawDebugItemSphere:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_9HUJR[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
@@ -184,6 +212,10 @@ DrawDebugItemString:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_ES8UQ[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   - Name: String
     Offset: '0x10'
     Size: '0x10'

@@ -81,6 +81,12 @@
         "Offset": "0x1"
       },
       {
+        "Name": "pad0x2_XUQ1P[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
+      },
+      {
         "Name": "LPVIntensity",
         "Type": "float",
         "Size": "0x4",
@@ -157,6 +163,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x34"
+      },
+      {
+        "Name": "pad0x8_FB5YW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x38"
       },
       {
         "Name": "LPVWorldRef",

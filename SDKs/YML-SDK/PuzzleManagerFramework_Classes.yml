@@ -12,15 +12,29 @@ PuzzleManager:
   Super: Actor
 PuzzleManagerPolicy:
   Attributes:
+  - Name: pad0x10_ZW310[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   - Name: PuzzleManager
     Offset: '0x38'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0xb0_2SS3C[0xb0]
+    Offset: '0x3e'
+    Size: '0xb0'
+    Type: char
   ClassSize: '0xb8'
   FullSize: '0xe0'
   InheritedSize: '0x28'
   Super: Object
 PuzzleManagerPolicyInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+PuzzleManagerPolicyTriggerInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'

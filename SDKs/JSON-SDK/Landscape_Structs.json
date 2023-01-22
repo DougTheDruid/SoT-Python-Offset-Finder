@@ -71,6 +71,12 @@
         "Offset": "0xc"
       },
       {
+        "Name": "pad0x3_VGDYR[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd"
+      },
+      {
         "Name": "PlacementJitter",
         "Type": "float",
         "Size": "0x4",
@@ -99,6 +105,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x3_79MID[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
       },
       {
         "Name": "AlignToSurface",
@@ -172,6 +184,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x3_XKV64[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      },
+      {
         "Name": "CenterAdjust",
         "Type": "Struct Vector2D",
         "Size": "0x8",
@@ -182,6 +200,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_3UMNK[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
       },
       {
         "Name": "Scale",
@@ -339,6 +363,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_5DSLL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       },
       {
         "Name": "LayerInput",

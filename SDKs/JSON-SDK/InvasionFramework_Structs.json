@@ -15,6 +15,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x7_AK15K[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
         "Name": "EnteredStateServerTimeStamp",
         "Type": "double",
         "Size": "0x8",
@@ -36,6 +42,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_W8565[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       },
       {
         "Name": "FactionIdentifier",
@@ -88,6 +100,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x3_HPGIN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x59"
       },
       {
         "Name": "Tag",
@@ -195,6 +213,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_DTRC5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
         "Name": "ParticipantFactionData",

@@ -15,6 +15,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x4_Y6R2D[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
         "Name": "ActionData",
         "Type": "TArray<class ChecklistActionData*>",
         "Size": "0x10",
@@ -114,6 +120,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_1A8RH[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       },
       {
         "Name": "ActionDescryption",

@@ -12,6 +12,10 @@ SirenAnimationData:
   Super: AnimationData
 SirenAnimationInstance:
   Attributes:
+  - Name: pad0x18_BTI66[0x18]
+    Offset: '0x440'
+    Size: '0x18'
+    Type: char
   - Name: PropAttachmentSocket
     Offset: '0x458'
     Size: '0x8'
@@ -28,6 +32,10 @@ SirenAnimationInstance:
     Offset: '0x578'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_7U0U8[0xc]
+    Offset: '0x57c'
+    Size: '0xc'
+    Type: char
   - Name: TiltDirectionAngleDegrees
     Offset: '0x588'
     Size: '0x4'
@@ -60,6 +68,10 @@ SirenAnimationInstance:
     Offset: '0x59b'
     Size: '0x1'
     Type: bool
+  - Name: pad0x4_RYRP7[0x4]
+    Offset: '0x59c'
+    Size: '0x4'
+    Type: char
   - Name: StrategiesForAggressiveAnimations
     Offset: '0x5a0'
     Size: '0x10'
@@ -68,10 +80,18 @@ SirenAnimationInstance:
     Offset: '0x5b0'
     Size: '0x10'
     Type: Struct FloatRange
+  - Name: pad0x8_QKMID[0x8]
+    Offset: '0x5c0'
+    Size: '0x8'
+    Type: char
   - Name: AnimationsLoaded
     Offset: '0x5c8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_222V3[0x3]
+    Offset: '0x5c9'
+    Size: '0x3'
+    Type: char
   - Name: AimUpAlpha
     Offset: '0x5cc'
     Size: '0x4'
@@ -80,6 +100,10 @@ SirenAnimationInstance:
     Offset: '0x5d0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_A9K2Y[0x4]
+    Offset: '0x5d4'
+    Size: '0x4'
+    Type: char
   - Name: FullBodyStateMachine
     Offset: '0x5d8'
     Size: '0xd8'
@@ -88,6 +112,10 @@ SirenAnimationInstance:
     Offset: '0x6b0'
     Size: '0x28'
     Type: Struct HitReactionAnimationState
+  - Name: pad0x88_VCINB[0x88]
+    Offset: '0x6d6'
+    Size: '0x88'
+    Type: char
   ClassSize: '0x2d0'
   FullSize: '0x710'
   InheritedSize: '0x440'

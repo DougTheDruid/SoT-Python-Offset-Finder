@@ -150,6 +150,12 @@
     "ClassSize": "0xe8",
     "Attributes": [
       {
+        "Name": "pad0x20_0BY5X[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "DetailsNavigationDesc",
         "Type": "TArray<Struct EnableMoreButtonEvent>",
         "Size": "0x10",
@@ -160,6 +166,12 @@
         "Type": "Struct SeasonProgressionUITelemetryFragment",
         "Size": "0x18",
         "Offset": "0xf8"
+      },
+      {
+        "Name": "pad0xd0_OWDS0[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
+        "Offset": "0x10e"
       }
     ]
   },
@@ -177,10 +189,22 @@
     "ClassSize": "0x1c0",
     "Attributes": [
       {
+        "Name": "pad0x30_L58M5[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "SeasonPopupListAsset",
         "Type": "Class SeasonPopupListAsset*",
         "Size": "0x8",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0x198_ANOEX[0x198]",
+        "Type": "char",
+        "Size": "0x198",
+        "Offset": "0x3fe"
       }
     ]
   },

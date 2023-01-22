@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 AsymmetricClientObject:
   Attributes:
+  - Name: pad0x18_JXQU1[0x18]
+    Offset: '0x3c8'
+    Size: '0x18'
+    Type: char
   - Name: BaseComponent
     Offset: '0x3e0'
     Size: '0x8'
@@ -36,6 +40,10 @@ AsymmetricClientObject:
   Super: Actor
 AsymmetricObjectServerManager:
   Attributes:
+  - Name: pad0x18_WN3PD[0x18]
+    Offset: '0x3c8'
+    Size: '0x18'
+    Type: char
   - Name: SpawnedObject
     Offset: '0x3e0'
     Size: '0x8'
@@ -48,6 +56,10 @@ AsymmetricObjectServerManager:
     Offset: '0x3f0'
     Size: '0x10'
     Type: Struct StringAssetReference
+  - Name: pad0x40_JQWVO[0x40]
+    Offset: '0x3fe'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'

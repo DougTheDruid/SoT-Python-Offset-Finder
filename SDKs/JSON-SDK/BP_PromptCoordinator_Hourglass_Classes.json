@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_SJ5ZP[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "HandlePlayerApproachesHourglass",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -30,6 +36,12 @@
         "Offset": "0x169"
       },
       {
+        "Name": "pad0x2_2MGFV[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x16a"
+      },
+      {
         "Name": "Prompt Delay",
         "Type": "float",
         "Size": "0x4",
@@ -46,6 +58,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x1d8"
+      },
+      {
+        "Name": "pad0x4_INGOS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1dc"
       },
       {
         "Name": "HandleChoseFaction",

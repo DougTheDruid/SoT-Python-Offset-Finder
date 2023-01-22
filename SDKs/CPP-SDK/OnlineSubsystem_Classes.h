@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class DefaultOnlineEnvironmentSettings: public Object
 {
 public:
@@ -16,16 +16,17 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class NamedInterfaces: public Object
 {
 public:
 	TArray<Struct NamedInterface>                                NamedInterfaces;                                   // 0x28(0x10)
 	TArray<Struct NamedInterfaceDef>                             NamedInterfaceDefs;                                // 0x38(0x10)
+	char                                                         pad0x38_YXDVN[0x38];                               // 0x46(0x38)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TurnBasedMatchInterface: public Interface
 {
 public:

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x650] - InheritedSize[0x628]
 class BP_Storm_C: public Storm
 {
 public:

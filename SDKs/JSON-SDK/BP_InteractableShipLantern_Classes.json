@@ -96,6 +96,12 @@
         "Offset": "0x738"
       },
       {
+        "Name": "pad0x3_SEBR2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x739"
+      },
+      {
         "Name": "DefaultGlowColour",
         "Type": "Struct LinearColor",
         "Size": "0x10",

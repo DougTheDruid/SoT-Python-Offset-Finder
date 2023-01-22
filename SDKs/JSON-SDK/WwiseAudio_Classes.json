@@ -39,6 +39,12 @@
         "Offset": "0x30"
       },
       {
+        "Name": "pad0x3_KJGOZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
+      },
+      {
         "Name": "DurationMin",
         "Type": "float",
         "Size": "0x4",
@@ -67,6 +73,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x45"
+      },
+      {
+        "Name": "pad0xc_C9EHM[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x44"
       }
     ]
   },
@@ -90,6 +102,12 @@
     "InheritedSize": "0x98",
     "ClassSize": "0x90",
     "Attributes": [
+      {
+        "Name": "pad0x8_XKTMA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
       {
         "Name": "Name",
         "Type": "Struct FString",
@@ -121,6 +139,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x9_63S4Y[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x97"
       }
     ]
   },
@@ -165,10 +189,22 @@
     "ClassSize": "0x3f8",
     "Attributes": [
       {
+        "Name": "pad0xc0_VOF5B[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x28"
+      },
+      {
         "Name": "ReverbPresetSettings",
         "Type": "Struct WwiseAudioReverbPresets",
         "Size": "0x64",
         "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x4_CX7HX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14c"
       },
       {
         "Name": "BinkSettings",
@@ -303,6 +339,12 @@
         "Offset": "0x348"
       },
       {
+        "Name": "pad0x50_9SX1O[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x350"
+      },
+      {
         "Name": "EventsToPlayOnFrontendStartInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
@@ -363,6 +405,12 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x50_XS4CK[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x36"
       }
     ]
   },

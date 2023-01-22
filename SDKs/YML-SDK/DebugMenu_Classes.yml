@@ -8,10 +8,18 @@ DebugMenu:
   Super: Actor
 DebugMenuComponent:
   Attributes:
+  - Name: pad0x28_GYC3J[0x28]
+    Offset: '0xc8'
+    Size: '0x28'
+    Type: char
   - Name: DebugMenuInstance
     Offset: '0xf0'
     Size: '0x8'
     Type: Class DebugMenu*
+  - Name: pad0x30_FKB14[0x30]
+    Offset: '0xf6'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x118'
   InheritedSize: '0xc8'

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x20 (Full Size[0x420] - InheritedSize[0x400]
 class BP_TunnelOfTheDamnedPortalLocator_WLD_C: public PortalLocatorActor
 {
 public:

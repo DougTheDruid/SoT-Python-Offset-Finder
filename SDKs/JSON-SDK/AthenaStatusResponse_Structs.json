@@ -15,6 +15,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x3_E2ZLP[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
         "Name": "NewScalarValue",
         "Type": "float",
         "Size": "0x4",

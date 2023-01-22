@@ -6,35 +6,35 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketLoadoutFinderPolicyBase: public Object
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketAudioInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
 class TrinketCategory: public CategoryBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
 class InvalidTrinketCategory: public TrinketCategory
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
 class TrinketDesc: public EntitlementDesc
 {
 public:
@@ -44,42 +44,42 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketLoadoutControlInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketLoadoutViewInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
 class TrinketReplacementActor: public Actor
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketSetControlInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class TrinketSfxDataAsset: public DataAsset
 {
 public:

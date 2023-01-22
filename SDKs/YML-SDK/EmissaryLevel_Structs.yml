@@ -54,6 +54,10 @@ DeactivateEmissaryForCrew:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_CDO2D[0x3]
+    Offset: '0x29'
+    Size: '0x3'
+    Type: char
   - Name: EmissaryTotal
     Offset: '0x2c'
     Size: '0x4'
@@ -103,6 +107,10 @@ EmissaryCompanyActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_X37HN[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: Amount
     Offset: '0x4'
     Size: '0x4'
@@ -233,6 +241,10 @@ EmissaryEventAward:
     Offset: '0x2'
     Size: '0x1'
     Type: byte
+  - Name: pad0x1_XZTFD[0x1]
+    Offset: '0x3'
+    Size: '0x1'
+    Type: char
   - Name: EmissaryLevelIncrease
     Offset: '0x4'
     Size: '0x4'
@@ -244,6 +256,10 @@ EmissaryFactionActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_I036G[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: Amount
     Offset: '0x4'
     Size: '0x4'
@@ -284,6 +300,10 @@ EmissaryKillPlayerReward:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_WU76M[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: EmissaryLevelKillCountScaleFactors
     Offset: '0x8'
     Size: '0x10'
@@ -336,6 +356,10 @@ EmissaryLevelData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_U5RY7[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: EmissaryFlagMeshAssetReferences
     Offset: '0x8'
     Size: '0x20'
@@ -391,6 +415,10 @@ EmissaryLevelEntry:
     Offset: '0x50'
     Size: '0x4'
     Type: Struct PlayerStat
+  - Name: pad0x4_FT49D[0x4]
+    Offset: '0x54'
+    Size: '0x4'
+    Type: char
   - Name: StatsToFireOnFullEmissaryClothing
     Offset: '0x58'
     Size: '0x10'
@@ -501,6 +529,10 @@ EmissaryRoleplayActionTelemetryEvent:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_EGPJC[0x3]
+    Offset: '0x1d'
+    Size: '0x3'
+    Type: char
   - Name: PointsRewarded
     Offset: '0x20'
     Size: '0x4'
@@ -619,6 +651,10 @@ LightVisualisation:
     Offset: '0x18'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_94IJK[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: Light
     Offset: '0x20'
     Size: '0x8'
@@ -755,6 +791,10 @@ UpdateEmissaryValueForCompany:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_CPMUA[0x3]
+    Offset: '0x29'
+    Size: '0x3'
+    Type: char
   - Name: UpdateAmount
     Offset: '0x2c'
     Size: '0x4'

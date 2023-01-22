@@ -29,6 +29,10 @@ LevelSequencePlayerSnapshot:
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_PSOYN[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   - Name: CurrentShotName
     Offset: '0x40'
     Size: '0x38'
@@ -37,6 +41,10 @@ LevelSequencePlayerSnapshot:
     Offset: '0x78'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_ND7FS[0x4]
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: char
   - Name: CameraComponent
     Offset: '0x80'
     Size: '0x8'
@@ -52,6 +60,10 @@ LevelSequenceSnapshotSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_O9NI8[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: FrameRate
     Offset: '0x4'
     Size: '0x4'

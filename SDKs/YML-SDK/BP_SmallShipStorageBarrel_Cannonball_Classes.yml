@@ -2,19 +2,11 @@
 # https://github.com/DougTheDruid
 BP_SmallShipStorageBarrel_Cannonball_C:
   Attributes:
-  - Name: None
-    Offset: '0x4c8'
+  - Name: Interactable
+    Offset: '0x820'
     Size: '0x8'
-    Type: Class ReplenishableComponent*
-  - Name: None
-    Offset: '0x4d0'
-    Size: '0x8'
-    Type: Class ShipTelemetrySubjectComponent*
-  - Name: None
-    Offset: '0x4d8'
-    Size: '0x8'
-    Type: Class StorageContainerComponent*
-  ClassSize: '0x18'
-  FullSize: '0x4e0'
-  InheritedSize: '0x4c8'
-  Super: StorageContainer
+    Type: Class InteractableComponent*
+  ClassSize: '0x8'
+  FullSize: '0x828'
+  InheritedSize: '0x820'
+  Super: BP_MerchantCrate_Commodity_Base_Proxy_C

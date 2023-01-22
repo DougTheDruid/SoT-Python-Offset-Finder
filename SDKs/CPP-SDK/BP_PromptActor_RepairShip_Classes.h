@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
 class BP_PromptActor_RepairShip_C: public BP_PromptActorBase_C
 {
 public:

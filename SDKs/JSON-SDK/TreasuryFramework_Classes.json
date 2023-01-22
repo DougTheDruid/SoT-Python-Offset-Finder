@@ -45,6 +45,12 @@
     "ClassSize": "0x130",
     "Attributes": [
       {
+        "Name": "pad0x8_BL6B9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "RoomAreaComponent",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
@@ -189,6 +195,12 @@
         "Offset": "0x498"
       },
       {
+        "Name": "pad0x4_GXKIO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x49c"
+      },
+      {
         "Name": "FloodMechanismComponent",
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
@@ -205,6 +217,12 @@
         "Type": "Class MechanismActionComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
+      },
+      {
+        "Name": "pad0x50_CHPRB[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x4b6"
       }
     ]
   },

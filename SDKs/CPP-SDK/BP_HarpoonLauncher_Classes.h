@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0xb78] - InheritedSize[0xb60]
 class BP_HarpoonLauncher_C: public HarpoonLauncher
 {
 public:

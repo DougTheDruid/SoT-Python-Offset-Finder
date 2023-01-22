@@ -670,6 +670,10 @@ BP_LargeShipTemplate_C:
     Offset: '0x1bd0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_LJ1HF[0x7]
+    Offset: '0x1bd1'
+    Size: '0x7'
+    Type: char
   - Name: Timeline_Disable_Secondary
     Offset: '0x1bd8'
     Size: '0x8'
@@ -678,6 +682,10 @@ BP_LargeShipTemplate_C:
     Offset: '0x1be0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_6UFHO[0x7]
+    Offset: '0x1be1'
+    Size: '0x7'
+    Type: char
   - Name: Timeline_DisableSplash1
     Offset: '0x1be8'
     Size: '0x8'

@@ -49,6 +49,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_92JPB[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Version",
         "Type": "int",
         "Size": "0x4",
@@ -67,10 +73,22 @@
         "Offset": "0x9"
       },
       {
+        "Name": "pad0x2_4JPIU[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xa"
+      },
+      {
         "Name": "BodyShapeCoordinate",
         "Type": "Struct RadialCoordinate",
         "Size": "0x8",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_KHI99[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       },
       {
         "Name": "BlendShapes",
@@ -89,6 +107,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_7MYV6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       },
       {
         "Name": "Items",
@@ -293,6 +317,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x3_LAJLB[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
         "Name": "ObjectTest",
         "Type": "Struct IPGTestSimpleType",
         "Size": "0xc",
@@ -303,6 +333,12 @@
         "Type": "Struct IPGTestSimpleType",
         "Size": "0xc",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_HQOFJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "VectorTest",
@@ -432,6 +468,12 @@
         "Offset": "0x30"
       },
       {
+        "Name": "pad0x4_9YSDZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
         "Name": "Versions",
         "Type": "TArray<Struct IPGSetsData>",
         "Size": "0x10",
@@ -447,6 +489,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_1SNRV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "Sets",
@@ -476,6 +524,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x9"
+      },
+      {
+        "Name": "pad0x2_K4PPY[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xa"
       },
       {
         "Name": "Priority",
@@ -534,6 +588,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_DEIOQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       },
       {
         "Name": "Compatibility",
@@ -836,6 +896,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_490S6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "MeshPatchAssets",
         "Type": "TArray<class MeshPatchAsset*>",
         "Size": "0x10",
@@ -880,6 +946,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x6_RUNRS[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
       },
       {
         "Name": "FromMaterial",
@@ -990,6 +1062,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x7_66R7W[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Texture",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
@@ -1005,6 +1083,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_202W2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "Texture",
@@ -1047,6 +1131,12 @@
         "Offset": "0x9"
       },
       {
+        "Name": "pad0x2_HNMZT[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xa"
+      },
+      {
         "Name": "Seed",
         "Type": "int",
         "Size": "0x4",
@@ -1065,10 +1155,22 @@
         "Offset": "0x11"
       },
       {
+        "Name": "pad0x2_EZGKZ[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x12"
+      },
+      {
         "Name": "SelectedBodyShape",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x4_XH1TU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
         "Name": "SelectedItems",

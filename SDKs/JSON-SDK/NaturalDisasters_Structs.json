@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_6NTDC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "ProjectileClass",
         "Type": "class",
         "Size": "0x8",
@@ -43,6 +49,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_Q5D21[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       },
       {
         "Name": "RotationRatePitch",
@@ -86,6 +98,12 @@
         "Offset": "0x1"
       },
       {
+        "Name": "pad0x6_L6IOF[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
+      },
+      {
         "Name": "Target",
         "Type": "Class Actor*",
         "Size": "0x8",
@@ -121,6 +139,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_3SBZP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "OnTargetNumExtraShots",
         "Type": "Struct WeightedProbabilityRange",
         "Size": "0x20",
@@ -148,6 +172,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_A5FT5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "Effect",
@@ -388,6 +418,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_I1NQT[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "StateDuration",

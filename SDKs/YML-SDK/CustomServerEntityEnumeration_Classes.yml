@@ -8,6 +8,10 @@ EntityEnumerationInterface:
   Super: Interface
 EntityEnumerationService:
   Attributes:
+  - Name: pad0x20_Z54ZF[0x20]
+    Offset: '0x28'
+    Size: '0x20'
+    Type: char
   - Name: World
     Offset: '0x48'
     Size: '0x8'

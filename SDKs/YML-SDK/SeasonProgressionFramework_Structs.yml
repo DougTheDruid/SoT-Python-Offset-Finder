@@ -79,6 +79,10 @@ SeasonGoalCompletionEvent:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_I922F[0x3]
+    Offset: '0x21'
+    Size: '0x3'
+    Type: char
   - Name: GoalGroupId
     Offset: '0x24'
     Size: '0x10'
@@ -110,6 +114,10 @@ SeasonGoalProgressionEvent:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_JQHC9[0x3]
+    Offset: '0x2d'
+    Size: '0x3'
+    Type: char
   - Name: GoalGroupId
     Offset: '0x30'
     Size: '0x10'
@@ -132,6 +140,10 @@ SeasonRewardEarnedEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_FXV7A[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   - Name: Rewards
     Offset: '0x18'
     Size: '0x10'
@@ -162,6 +174,10 @@ TrackedObjectiveCompletionMessage:
     Offset: '0xd1'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_2ST8Z[0x6]
+    Offset: '0xd2'
+    Size: '0x6'
+    Type: char
   - Name: CreatedAt
     Offset: '0xd8'
     Size: '0x8'
@@ -192,6 +208,10 @@ TrackedObjectiveProgressUpdateMessage:
     Offset: '0xd1'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_22ZM2[0x2]
+    Offset: '0xd2'
+    Size: '0x2'
+    Type: char
   - Name: Value
     Offset: '0xd4'
     Size: '0x4'

@@ -52,6 +52,10 @@ WaterSlideActionStateParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_N8L02[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   - Name: LookAtOffsetParams
     Offset: '0x8'
     Size: '0x1c'
@@ -87,6 +91,10 @@ WaterSlideParams:
     Offset: '0x18'
     Size: '0x4'
     Type: Struct PlayerStat
+  - Name: pad0x4_T8MZU[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: PlayerSplashingVFXOverride
     Offset: '0x20'
     Size: '0x8'

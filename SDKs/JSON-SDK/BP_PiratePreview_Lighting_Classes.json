@@ -46,6 +46,12 @@
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0x30_U9I17[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3fe"
       }
     ]
   },

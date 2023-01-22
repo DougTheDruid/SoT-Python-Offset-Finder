@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x68
+// Size 0x68 (Full Size[0x430] - InheritedSize[0x3c8]
 class bsp_sea_rock_cluster_c_C: public Actor
 {
 public:

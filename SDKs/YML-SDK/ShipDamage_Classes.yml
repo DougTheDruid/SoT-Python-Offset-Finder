@@ -36,6 +36,10 @@ ShipPartsDamageTrackerComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: int
+  - Name: pad0xc_9W1Y6[0xc]
+    Offset: '0xca'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xd0'
   InheritedSize: '0xc8'
@@ -46,6 +50,14 @@ ShipRestorationSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_MDJTO[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
+  - Name: pad0x10_M73JS[0x10]
+    Offset: '0x3e'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

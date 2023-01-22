@@ -6,6 +6,12 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x28_5LZ2K[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "FeatureToggle",
         "Type": "struct FName",
         "Size": "0x8",
@@ -40,6 +46,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xfe"
+      },
+      {
+        "Name": "pad0x3_3VTKQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xfd"
       }
     ]
   },
@@ -78,6 +90,12 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x48_T9IIT[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "RetractDestinationComponent",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
@@ -88,6 +106,12 @@
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x118"
+      },
+      {
+        "Name": "pad0x18_NWK2B[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x11e"
       }
     ]
   },

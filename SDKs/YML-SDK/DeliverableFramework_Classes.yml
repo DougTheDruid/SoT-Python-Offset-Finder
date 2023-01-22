@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 DeliverableComponent:
   Attributes:
+  - Name: pad0x10_LU181[0x10]
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: char
   - Name: DeliveryRequirementsAsset
     Offset: '0xd8'
     Size: '0x8'
     Type: Class DeliverableRequirementsDataAsset*
+  - Name: pad0x18_72F85[0x18]
+    Offset: '0xde'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'
@@ -18,6 +26,10 @@ DeliverableInterface:
   Super: Interface
 DeliverableRedirectionComponent:
   Attributes:
+  - Name: pad0x8_1725Q[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: Context
     Offset: '0xd0'
     Size: '0x8'
@@ -32,6 +44,10 @@ DeliverableRedirectionCompositeContext:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class DeliverableRedirectionContextBase*>
+  - Name: pad0x38_SKPQ0[0x38]
+    Offset: '0x36'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

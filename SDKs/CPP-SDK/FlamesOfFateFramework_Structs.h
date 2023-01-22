@@ -6,12 +6,61 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x18
+struct CycleFlameOfFateSequence
+{
+public:
+	TArray<Byte FlameTypeSequence>                               FlameTypeSequence;                                 // 0x0(0x10)
+};
+
+
 // Size 0x2
 struct FlameData
 {
 public:
 	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
 	bool                                                         SkipChangeAnimation;                               // 0x1(0x1)
+};
+
+
+// Size 0x18
+struct PlayerTookFlameOfFateEvent
+{
+public:
+	Class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
+	Class Object*                                                Source;                                            // 0x8(0x8)
+	byte                                                         FlameOfFateType;                                   // 0x10(0x1)
+};
+
+
+// Size 0x18
+struct PlayerSetFlameOfFateEvent
+{
+public:
+	Class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
+	Class Object*                                                Target;                                            // 0x8(0x8)
+	byte                                                         FlameOfFateType;                                   // 0x10(0x1)
+};
+
+
+// Size 0x18
+struct SetShipFlameOfFateEvent
+{
+public:
+	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
+	char                                                         pad0x7_SMM05[0x7];                                 // 0x1(0x7)
+	Class Object*                                                Source;                                            // 0x8(0x8)
+	Class Object*                                                Ship;                                              // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct SetFlameOfFateEvent
+{
+public:
+	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
+	char                                                         pad0x7_6CXK8[0x7];                                 // 0x1(0x7)
+	Class Object*                                                Source;                                            // 0x8(0x8)
 };
 
 

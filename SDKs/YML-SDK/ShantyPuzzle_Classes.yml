@@ -6,6 +6,10 @@ ShantyPuzzleCompletionComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_6LRWQ[0x4]
+    Offset: '0xcc'
+    Size: '0x4'
+    Type: char
   - Name: StartCompletionReaction
     Offset: '0xd0'
     Size: '0x10'
@@ -28,6 +32,10 @@ ShantyPuzzleCompletionComponent:
   Super: ActorComponent
 ShantyPuzzleComponent:
   Attributes:
+  - Name: pad0x8_E77T0[0x8]
+    Offset: '0x2e0'
+    Size: '0x8'
+    Type: char
   - Name: RequiredShantyItemDesc
     Offset: '0x2e8'
     Size: '0x8'
@@ -44,6 +52,10 @@ ShantyPuzzleComponent:
     Offset: '0x301'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_2SK62[0x6]
+    Offset: '0x302'
+    Size: '0x6'
+    Type: char
   - Name: ActiveTimeRange
     Offset: '0x308'
     Size: '0x10'
@@ -56,6 +68,10 @@ ShantyPuzzleComponent:
     Offset: '0x328'
     Size: '0x8'
     Type: Class Ensemble*
+  - Name: pad0xd0_5M43B[0xd0]
+    Offset: '0x32e'
+    Size: '0xd0'
+    Type: char
   ClassSize: '0x110'
   FullSize: '0x3f0'
   InheritedSize: '0x2e0'

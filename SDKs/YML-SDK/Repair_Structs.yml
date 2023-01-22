@@ -33,6 +33,10 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x8'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_15D5R[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: RepairerActor
     Offset: '0x18'
     Size: '0x8'

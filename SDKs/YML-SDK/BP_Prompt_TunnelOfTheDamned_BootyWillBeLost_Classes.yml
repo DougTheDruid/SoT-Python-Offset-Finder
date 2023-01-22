@@ -6,6 +6,10 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfb_LWFGP[0xfb]
+    Offset: '0x120'
+    Size: '0xfb'
+    Type: char
   - Name: Handle_CrewEnteredTunnelOfTheDamnedPortalProximity
     Offset: '0x120'
     Size: '0x48'
@@ -26,10 +30,18 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
     Offset: '0x1d5'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_A0A67[0x2]
+    Offset: '0x1d6'
+    Size: '0x2'
+    Type: char
   - Name: PromptDisplayCooldown
     Offset: '0x1d8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_QYJSX[0x4]
+    Offset: '0x1dc'
+    Size: '0x4'
+    Type: char
   - Name: LootFilterDataAsset
     Offset: '0x1e0'
     Size: '0x8'

@@ -13,10 +13,22 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x8_WGLMW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
         "Name": "HarbourRadiusInCentimetres",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2e8"
+      },
+      {
+        "Name": "pad0x2c_VFS54[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x2ea"
       }
     ]
   },

@@ -6,16 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xa0
+// Size 0xa0 (Full Size[0x1b8] - InheritedSize[0x118]
 class BP_Prompt_EmissaryEntitlementPurchased_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_GXM5W[0xfc];                               // 0x120(0xfc)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryEntitlementPurchased;               // 0x120(0x48)
 	Struct Guid                                                  OfferId;                                           // 0x168(0x10)
 	Struct Guid                                                  ExpectedOfferId;                                   // 0x178(0x10)
 	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x188(0x10)
 	bool                                                         PromptSurfacedThisSession;                         // 0x198(0x1)
+	char                                                         pad0x7_WNJ4E[0x7];                                 // 0x199(0x7)
 	class                                                        PromptAccessKey;                                   // 0x1a0(0x8)
 	int                                                          PromptIndex;                                       // 0x1a8(0x4)
 	int                                                          NumberOfPrompts;                                   // 0x1ac(0x4)

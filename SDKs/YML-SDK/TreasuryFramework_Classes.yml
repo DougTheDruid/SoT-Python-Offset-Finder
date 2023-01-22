@@ -8,6 +8,10 @@ ShimmerActor:
   Super: Actor
 TreasuryRoom:
   Attributes:
+  - Name: pad0x8_BL6B9[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: RoomAreaComponent
     Offset: '0x3d0'
     Size: '0x8'
@@ -104,6 +108,10 @@ TreasuryRoom:
     Offset: '0x498'
     Size: '0x4'
     Type: Struct PlayerStat
+  - Name: pad0x4_GXKIO[0x4]
+    Offset: '0x49c'
+    Size: '0x4'
+    Type: char
   - Name: FloodMechanismComponent
     Offset: '0x4a0'
     Size: '0x8'
@@ -116,6 +124,10 @@ TreasuryRoom:
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class MechanismActionComponent*
+  - Name: pad0x50_CHPRB[0x50]
+    Offset: '0x4b6'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x130'
   FullSize: '0x4f8'
   InheritedSize: '0x3c8'

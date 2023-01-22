@@ -6,6 +6,10 @@ GameplayTask:
     Offset: '0x28'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x38_8PT5Z[0x38]
+    Offset: '0x2e'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -22,16 +26,28 @@ GameplayTaskResource:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_IJLO2[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: bManuallySetID
     Offset: '0x30'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_7ZCS7[0x9]
+    Offset: '0x2f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 GameplayTask_SpawnActor:
   Attributes:
+  - Name: pad0x38_SPZQ9[0x38]
+    Offset: '0x58'
+    Size: '0x38'
+    Type: char
   - Name: ClassToSpawn
     Offset: '0x90'
     Size: '0x8'
@@ -48,6 +64,10 @@ GameplayTask_WaitDelay:
   Super: GameplayTask
 GameplayTasksComponent:
   Attributes:
+  - Name: pad0x8_DGN1M[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: SimulatedTasks
     Offset: '0xd0'
     Size: '0x10'
@@ -56,6 +76,14 @@ GameplayTasksComponent:
     Offset: '0xe0'
     Size: '0x10'
     Type: TArray<class GameplayTask*>
+  - Name: pad0x28_8369J[0x28]
+    Offset: '0xf0'
+    Size: '0x28'
+    Type: char
+  - Name: pad0x60_4JHDE[0x60]
+    Offset: '0x116'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'

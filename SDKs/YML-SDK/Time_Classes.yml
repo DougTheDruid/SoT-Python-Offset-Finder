@@ -50,10 +50,18 @@ TimeInterface:
   Super: Interface
 TimeService:
   Attributes:
+  - Name: pad0x38_0D22O[0x38]
+    Offset: '0x3c8'
+    Size: '0x38'
+    Type: char
   - Name: GameWorldTimeOffset
     Offset: '0x400'
     Size: '0x8'
     Type: Struct Timespan
+  - Name: pad0x4_T4BM1[0x4]
+    Offset: '0x408'
+    Size: '0x4'
+    Type: char
   - Name: ServiceTimeQueryRapidFrequencyOffsetMax
     Offset: '0x418'
     Size: '0x8'
@@ -102,6 +110,10 @@ TimeService:
     Offset: '0x498'
     Size: '0x10'
     Type: Struct ReplicatedAuthoritativeTime
+  - Name: pad0x68_9HM5H[0x68]
+    Offset: '0x4a6'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x128'
   FullSize: '0x4f0'
   InheritedSize: '0x3c8'

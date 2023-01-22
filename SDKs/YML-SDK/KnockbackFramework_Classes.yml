@@ -14,6 +14,10 @@ KnockbackColliderComponent:
     Offset: '0x5f8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_OZZ8I[0x3]
+    Offset: '0x5f9'
+    Size: '0x3'
+    Type: char
   - Name: KnockbackParams
     Offset: '0x5fc'
     Size: '0x50'
@@ -26,10 +30,18 @@ KnockbackColliderComponent:
     Offset: '0x660'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_IQBS3[0x4]
+    Offset: '0x664'
+    Size: '0x4'
+    Type: char
   - Name: SolidState
     Offset: '0x668'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_JAA8X[0x9]
+    Offset: '0x667'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x80'
   FullSize: '0x670'
   InheritedSize: '0x5f0'

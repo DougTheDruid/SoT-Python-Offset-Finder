@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x670] - InheritedSize[0x658]
 class BP_Projectile_VolcanoRockLarge_C: public VolcanicRock
 {
 public:

@@ -2,17 +2,25 @@
 # https://github.com/DougTheDruid
 CustomMap:
   Attributes:
+  - Name: pad0x8_W52HR[0x8]
+    Offset: '0x850'
+    Size: '0x8'
+    Type: char
   - Name: Font
-    Offset: '0x838'
+    Offset: '0x858'
     Size: '0x8'
     Type: Class Font*
   - Name: DisplayItems
-    Offset: '0x840'
+    Offset: '0x860'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
+  - Name: pad0x30_5R3G4[0x30]
+    Offset: '0x86e'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
-  FullSize: '0x860'
-  InheritedSize: '0x830'
+  FullSize: '0x880'
+  InheritedSize: '0x850'
   Super: RenderToTextureMapBase
 CustomMapCollectionInterface:
   Attributes: []
@@ -58,6 +66,10 @@ CustomMapDataTypePositional:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_OJ7KG[0xc]
+    Offset: '0x42'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -76,10 +88,18 @@ CustomMapDataTypeText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_VHDO8[0x3]
+    Offset: '0x85'
+    Size: '0x3'
+    Type: char
   - Name: StrikethroughThickness
     Offset: '0x88'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_GL3QE[0xc]
+    Offset: '0x8a'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x90'
   InheritedSize: '0x48'
@@ -104,6 +124,10 @@ CustomMapDisplayObjectPositional:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_BP16P[0xc]
+    Offset: '0x42'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -122,10 +146,18 @@ CustomMapDisplayObjectText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_4PXT0[0x3]
+    Offset: '0x85'
+    Size: '0x3'
+    Type: char
   - Name: StrikethroughThickness
     Offset: '0x88'
     Size: '0x4'
     Type: float
+  - Name: pad0x54_VP5GK[0x54]
+    Offset: '0x8a'
+    Size: '0x54'
+    Type: char
   ClassSize: '0x90'
   FullSize: '0xd8'
   InheritedSize: '0x48'

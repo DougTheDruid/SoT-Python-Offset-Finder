@@ -20,6 +20,12 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
+        "Name": "pad0x8_NJBQM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "SlideSpline",
         "Type": "Class SplineComponent*",
         "Size": "0x8",
@@ -68,6 +74,12 @@
         "Offset": "0x408"
       },
       {
+        "Name": "pad0x3_D8140[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x409"
+      },
+      {
         "Name": "EndOfSlideLaunchForce",
         "Type": "Struct Vector",
         "Size": "0xc",
@@ -78,6 +90,12 @@
         "Type": "Class WaterSlideAudioParams*",
         "Size": "0x8",
         "Offset": "0x418"
+      },
+      {
+        "Name": "pad0x30_OMQXV[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x41e"
       }
     ]
   },
@@ -159,6 +177,12 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x8_YQU1D[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
         "Name": "PlayerWaterSlideSplashingVFXComponent",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
@@ -175,6 +199,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xf8"
+      },
+      {
+        "Name": "pad0x14_7TEI6[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0xfc"
       },
       {
         "Name": "CurrentWaterSlide",

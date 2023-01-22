@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x2a8
+// Size 0x2a8 (Full Size[0x2d8] - InheritedSize[0x30]
 class ButtonWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -14,7 +14,7 @@ public:
 };
 
 
-// Size 0x5f0
+// Size 0x5f0 (Full Size[0x620] - InheritedSize[0x30]
 class CheckBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -22,7 +22,7 @@ public:
 };
 
 
-// Size 0x428
+// Size 0x428 (Full Size[0x458] - InheritedSize[0x30]
 class ComboBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -30,7 +30,7 @@ public:
 };
 
 
-// Size 0x3e0
+// Size 0x3e0 (Full Size[0x410] - InheritedSize[0x30]
 class ComboButtonWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -38,7 +38,7 @@ public:
 };
 
 
-// Size 0x860
+// Size 0x860 (Full Size[0x890] - InheritedSize[0x30]
 class EditableTextBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -46,7 +46,7 @@ public:
 };
 
 
-// Size 0x228
+// Size 0x228 (Full Size[0x258] - InheritedSize[0x30]
 class EditableTextWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -54,7 +54,7 @@ public:
 };
 
 
-// Size 0x1b8
+// Size 0x1b8 (Full Size[0x1e8] - InheritedSize[0x30]
 class ProgressWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -62,7 +62,7 @@ public:
 };
 
 
-// Size 0x518
+// Size 0x518 (Full Size[0x548] - InheritedSize[0x30]
 class ScrollBarWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -70,7 +70,7 @@ public:
 };
 
 
-// Size 0x248
+// Size 0x248 (Full Size[0x278] - InheritedSize[0x30]
 class ScrollBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -78,7 +78,7 @@ public:
 };
 
 
-// Size 0x318
+// Size 0x318 (Full Size[0x348] - InheritedSize[0x30]
 class SpinBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
@@ -86,7 +86,7 @@ public:
 };
 
 
-// Size 0x160
+// Size 0x160 (Full Size[0x190] - InheritedSize[0x30]
 class TextBlockWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:

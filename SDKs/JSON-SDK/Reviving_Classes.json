@@ -1,9 +1,9 @@
 {
   "ReviveSettings": {
     "Super": "DeveloperSettings",
-    "FullSize": "0x98",
+    "FullSize": "0x90",
     "InheritedSize": "0x38",
-    "ClassSize": "0x60",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "HealthRegained",
@@ -30,6 +30,12 @@
         "Offset": "0x50"
       },
       {
+        "Name": "pad0x3_A9FKT[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x51"
+      },
+      {
         "Name": "ServerWaitTimeBeforeFullyReviving",
         "Type": "float",
         "Size": "0x4",
@@ -42,46 +48,46 @@
         "Offset": "0x58"
       },
       {
-        "Name": "ReviveTimeOnEnemyShip",
+        "Name": "MaxRevertEvaporateDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x5c"
       },
       {
-        "Name": "MaxRevertEvaporateDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
         "Name": "UnsupportedPlayModes",
         "Type": "TArray<Byte UnsupportedPlayModes>",
         "Size": "0x10",
-        "Offset": "0x68"
+        "Offset": "0x60"
       },
       {
         "Name": "ModeSpecificSettings",
         "Type": "TArray<Struct ModeSpecificReviveSettings>",
         "Size": "0x10",
-        "Offset": "0x78"
+        "Offset": "0x70"
       },
       {
         "Name": "GiveUpHoldTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x88"
+        "Offset": "0x80"
       },
       {
         "Name": "GiveUpFadeDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x8c"
+        "Offset": "0x84"
       },
       {
         "Name": "GiveUpEvaporateDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x90"
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0xc_5YT9Z[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x8a"
       }
     ]
   },
@@ -92,10 +98,22 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x8_5DLL3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x128"
+      },
+      {
         "Name": "HasGivenUp",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x130"
+      },
+      {
+        "Name": "pad0x59_RIWUP[0x59]",
+        "Type": "char",
+        "Size": "0x59",
+        "Offset": "0x12f"
       }
     ]
   },
@@ -145,6 +163,12 @@
         "Type": "Class ReviveEffectsDataAsset*",
         "Size": "0x8",
         "Offset": "0x310"
+      },
+      {
+        "Name": "pad0x28_GDCZJ[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x316"
       }
     ]
   },
@@ -157,10 +181,16 @@
   },
   "ReviveComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x270",
+    "FullSize": "0x268",
     "InheritedSize": "0x128",
-    "ClassSize": "0x148",
+    "ClassSize": "0x140",
     "Attributes": [
+      {
+        "Name": "pad0x10_RZP9O[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x128"
+      },
       {
         "Name": "OwningCharacter",
         "Type": "Class Character*",
@@ -186,22 +216,46 @@
         "Offset": "0x149"
       },
       {
+        "Name": "pad0x6_041ZH[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x14a"
+      },
+      {
         "Name": "ReviveableRepresentationClass",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x150"
       },
       {
+        "Name": "pad0xc_G45VX[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x158"
+      },
+      {
         "Name": "ReviveWindowIsOpen",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x16a"
+        "Offset": "0x164"
+      },
+      {
+        "Name": "pad0xd3_POE1Q[0xd3]",
+        "Type": "char",
+        "Size": "0xd3",
+        "Offset": "0x165"
       },
       {
         "Name": "RevivableStatus",
         "Type": "Struct Status",
         "Size": "0x18",
-        "Offset": "0x240"
+        "Offset": "0x238"
+      },
+      {
+        "Name": "pad0x48_36CIW[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x24e"
       }
     ]
   },
@@ -391,6 +445,12 @@
     "ClassSize": "0x260",
     "Attributes": [
       {
+        "Name": "pad0x10_NKEE0[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "CorpseMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
@@ -439,10 +499,22 @@
         "Offset": "0x418"
       },
       {
+        "Name": "pad0x10_3TU1X[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x420"
+      },
+      {
         "Name": "RevivableOwnerNetRole",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x430"
+      },
+      {
+        "Name": "pad0x7_FHHPW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x431"
       },
       {
         "Name": "ReviveGhostDataAsset",
@@ -469,6 +541,12 @@
         "Offset": "0x468"
       },
       {
+        "Name": "pad0x13c_NF8VR[0x13c]",
+        "Type": "char",
+        "Size": "0x13c",
+        "Offset": "0x4a0"
+      },
+      {
         "Name": "AstralCordDynamicMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
@@ -479,6 +557,12 @@
         "Type": "Struct GhostPlayModeParameters",
         "Size": "0xc",
         "Offset": "0x618"
+      },
+      {
+        "Name": "pad0x1c_E4AUB[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x622"
       }
     ]
   },

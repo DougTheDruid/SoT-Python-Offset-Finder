@@ -16,6 +16,12 @@
         "Type": "Struct LevelSequenceObjectReferenceMap",
         "Size": "0xa0",
         "Offset": "0x2b0"
+      },
+      {
+        "Name": "pad0x190_A8ZUP[0x190]",
+        "Type": "char",
+        "Size": "0x190",
+        "Offset": "0x34e"
       }
     ]
   },
@@ -37,6 +43,12 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x608"
+      },
+      {
+        "Name": "pad0x48_QE8VE[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x60e"
       }
     ]
   },
@@ -60,6 +72,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x7_LYM9O[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      },
+      {
         "Name": "BurnInClass",
         "Type": "Struct StringClassReference",
         "Size": "0x10",
@@ -80,10 +98,22 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
+        "Name": "pad0x8_GBEPA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "bAutoPlay",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x7_1AYPS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x3d1"
       },
       {
         "Name": "PlaybackSettings",

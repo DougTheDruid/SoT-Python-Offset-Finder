@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
-class BP_SmallShipLadder_02_C: public Ladder
+// Size 0x8 (Full Size[0x518] - InheritedSize[0x510]
+class BP_SmallShipLadder_02_C: public NonStorableItemInfo
 {
 public:
-	Class InteractableComponent*                                 None;                                              // 0x5c0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 

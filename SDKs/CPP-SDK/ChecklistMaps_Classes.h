@@ -6,16 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class ChecklistActionData: public Object
 {
 public:
 	int                                                          NumRequiredActions;                                // 0x28(0x4)
 	byte                                                         ActionType;                                        // 0x2c(0x1)
+	char                                                         pad0x5_BA99J[0x5];                                 // 0x2b(0x5)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class DeliverBootyChecklistActionData: public ChecklistActionData
 {
 public:
@@ -24,7 +25,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class KillActorChecklistActionData: public ChecklistActionData
 {
 public:
@@ -32,7 +33,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class NamedChecklistEventActionData: public ChecklistActionData
 {
 public:
@@ -40,7 +41,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class NPCInteractionChecklistActionData: public ChecklistActionData
 {
 public:
@@ -48,7 +49,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class ChecklistItemsDataAsset: public DataAsset
 {
 public:
@@ -56,36 +57,39 @@ public:
 };
 
 
-// Size 0x150
+// Size 0x150 (Full Size[0x940] - InheritedSize[0x7f0]
 class ChecklistMap: public TreasureMap
 {
 public:
-	int                                                          CanvasWidth;                                       // 0x7c8(0x4)
-	int                                                          CanvasHeight;                                      // 0x7cc(0x4)
-	Class Font*                                                  Font;                                              // 0x7d0(0x8)
-	float                                                        FontScale;                                         // 0x7d8(0x4)
-	float                                                        FontLineSpacingScale;                              // 0x7dc(0x4)
-	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x7e8(0x8)
-	Struct ChecklistMapContents                                  Contents;                                          // 0x7f0(0xe8)
+	int                                                          CanvasWidth;                                       // 0x7e8(0x4)
+	int                                                          CanvasHeight;                                      // 0x7ec(0x4)
+	Class Font*                                                  Font;                                              // 0x7f0(0x8)
+	float                                                        FontScale;                                         // 0x7f8(0x4)
+	float                                                        FontLineSpacingScale;                              // 0x7fc(0x4)
+	char                                                         pad0x8_U1VU8[0x8];                                 // 0x800(0x8)
+	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x808(0x8)
+	Struct ChecklistMapContents                                  Contents;                                          // 0x810(0xe8)
+	char                                                         pad0x218_HUAPF[0x218];                             // 0x8f6(0x218)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ChecklistMapCollectionInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x140] - InheritedSize[0xc8]
 class ChecklistMapCompletionComponent: public ActorComponent
 {
 public:
 	Class ChecklistActionData*                                   ActionData;                                        // 0xc8(0x8)
+	char                                                         pad0x80_QAMRG[0x80];                               // 0xce(0x80)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
 class ChecklistMapSettings: public DeveloperSettings
 {
 public:

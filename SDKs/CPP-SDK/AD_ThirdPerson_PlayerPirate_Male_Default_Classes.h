@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x700
+// Size 0x700 (Full Size[0x788] - InheritedSize[0x88]
 class AD_ThirdPerson_PlayerPirate_Male_Default_C: public AthenaAnimationThirdPersonAnimationData
 {
 public:
@@ -22,8 +22,10 @@ public:
 	Struct ADS_CannonNative                                      Cannon;                                            // 0x470(0x38)
 	Struct ADS_HarpoonLauncherNative                             HarpoonLauncher;                                   // 0x4a8(0x28)
 	Struct ADS_Sockets                                           Sockets;                                           // 0x4d0(0x2)
+	char                                                         pad0x6_PH3I7[0x6];                                 // 0x4d2(0x6)
 	Struct ADS_FacialNative                                      Facial;                                            // 0x4d8(0x90)
 	Struct ADS_IKFootPlantingNative                              IkFootPlanting;                                    // 0x568(0x1c)
+	char                                                         pad0x4_MF00B[0x4];                                 // 0x584(0x4)
 	Struct ADS_HitReactsNative                                   HitReacts;                                         // 0x588(0x40)
 	Struct ADS_MapTableNative                                    MapTable;                                          // 0x5c8(0x30)
 	Struct ADS_SpawnNative2                                      Spawning;                                          // 0x5f8(0x10)

@@ -10,6 +10,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x9_TQKTO[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x5f"
       }
     ]
   },
@@ -74,6 +80,12 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xd8_MDDXV[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0xd6"
       }
     ]
   },

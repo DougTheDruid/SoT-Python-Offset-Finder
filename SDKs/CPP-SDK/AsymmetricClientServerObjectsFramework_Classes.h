@@ -6,10 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50
+// Size 0x50 (Full Size[0x418] - InheritedSize[0x3c8]
 class AsymmetricClientObject: public Actor
 {
 public:
+	char                                                         pad0x18_JXQU1[0x18];                               // 0x3c8(0x18)
 	Class BoxComponent*                                          BaseComponent;                                     // 0x3e0(0x8)
 	Class StaticMeshMemoryConstraintComponent*                   ThirdPersonMesh;                                   // 0x3e8(0x8)
 	Class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x3f0(0x8)
@@ -20,13 +21,15 @@ public:
 };
 
 
-// Size 0x58
+// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
 class AsymmetricObjectServerManager: public Actor
 {
 public:
+	char                                                         pad0x18_WN3PD[0x18];                               // 0x3c8(0x18)
 	Class AsymmetricClientObject*                                SpawnedObject;                                     // 0x3e0(0x8)
 	Class SceneComponent*                                        SceneComponent;                                    // 0x3e8(0x8)
 	Struct StringAssetReference                                  AsymmetricObjectAsset;                             // 0x3f0(0x10)
+	char                                                         pad0x40_JQWVO[0x40];                               // 0x3fe(0x40)
 };
 
 

@@ -13,10 +13,22 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x8_GPGIO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
         "Name": "InstancedLayers",
         "Type": "TArray<Struct InstancedLayer>",
         "Size": "0x10",
         "Offset": "0x2e8"
+      },
+      {
+        "Name": "pad0x38_T5C48[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x2f6"
       }
     ]
   },

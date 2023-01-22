@@ -94,6 +94,14 @@ IpNetDriver:
     Offset: '0x478'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_Y27CB[0x3]
+    Offset: '0x479'
+    Size: '0x3'
+    Type: char
+  - Name: pad0x52_6L170[0x52]
+    Offset: '0x47a'
+    Size: '0x52'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x4c8'
   InheritedSize: '0x478'
@@ -130,6 +138,10 @@ LogoutCallbackProxy:
   Super: BlueprintAsyncActionBase
 OnlineBeacon:
   Attributes:
+  - Name: pad0x8_8J96S[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: BeaconConnectionInitialTimeout
     Offset: '0x3d0'
     Size: '0x4'
@@ -142,6 +154,10 @@ OnlineBeacon:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class NetDriver*
+  - Name: pad0x20_O4QJH[0x20]
+    Offset: '0x3de'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'
@@ -160,6 +176,10 @@ OnlineBeaconClient:
     Offset: '0x400'
     Size: '0x1'
     Type: byte
+  - Name: pad0x19_Q1PJ3[0x19]
+    Offset: '0x3ff'
+    Size: '0x19'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x418'
   InheritedSize: '0x3f0'
@@ -170,10 +190,18 @@ OnlineBeaconHost:
     Offset: '0x3f0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_MC32T[0x4]
+    Offset: '0x3f4'
+    Size: '0x4'
+    Type: char
   - Name: ClientActors
     Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class OnlineBeaconClient*>
+  - Name: pad0xc0_9CW1V[0xc0]
+    Offset: '0x406'
+    Size: '0xc0'
+    Type: char
   ClassSize: '0xb8'
   FullSize: '0x4a8'
   InheritedSize: '0x3f0'
@@ -204,6 +232,10 @@ OnlineBlueprintCallProxyBase:
   Super: Object
 OnlineSessionClient:
   Attributes:
+  - Name: pad0x138_2XF6X[0x138]
+    Offset: '0x28'
+    Size: '0x138'
+    Type: char
   - Name: bIsFromInvite
     Offset: '0x160'
     Size: '0x1'
@@ -212,12 +244,20 @@ OnlineSessionClient:
     Offset: '0x161'
     Size: '0x1'
     Type: bool
+  - Name: pad0x8_8KJST[0x8]
+    Offset: '0x160'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x140'
   FullSize: '0x168'
   InheritedSize: '0x28'
   Super: OnlineSession
 PartyBeaconClient:
   Attributes:
+  - Name: pad0x10_2HHPB[0x10]
+    Offset: '0x418'
+    Size: '0x10'
+    Type: char
   - Name: DestSessionId
     Offset: '0x428'
     Size: '0x10'
@@ -238,6 +278,10 @@ PartyBeaconClient:
     Offset: '0x46a'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_TYR86[0x7]
+    Offset: '0x469'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x470'
   InheritedSize: '0x418'
@@ -248,6 +292,10 @@ PartyBeaconHost:
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class PartyBeaconState*
+  - Name: pad0x28_CA690[0x28]
+    Offset: '0x3f8'
+    Size: '0x28'
+    Type: char
   - Name: SessionTimeoutSecs
     Offset: '0x420'
     Size: '0x4'
@@ -294,6 +342,10 @@ PartyBeaconState:
     Offset: '0x48'
     Size: '0x10'
     Type: TArray<Struct PartyReservation>
+  - Name: pad0x30_ET2VU[0x30]
+    Offset: '0x56'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'

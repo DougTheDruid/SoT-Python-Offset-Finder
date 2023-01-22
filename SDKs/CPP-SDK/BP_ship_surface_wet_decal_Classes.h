@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x34
+// Size 0x34 (Full Size[0x3fc] - InheritedSize[0x3c8]
 class BP_ship_surface_wet_decal_C: public ShipResurfaceWetnessActor
 {
 public:
@@ -15,6 +15,7 @@ public:
 	Class DecalComponent*                                        WetDecalPort;                                      // 0x3d8(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
 	float                                                        WetEffectDuration;                                 // 0x3e8(0x4)
+	char                                                         pad0x4_YUS9I[0x4];                                 // 0x3ec(0x4)
 	Class MaterialInstanceDynamic*                               WetDynamicMaterial;                                // 0x3f0(0x8)
 	Struct TimerHandle                                           WetTimerHandle;                                    // 0x3f8(0x4)
 };

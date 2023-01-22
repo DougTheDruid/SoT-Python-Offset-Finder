@@ -747,6 +747,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x3_KP8MO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      },
+      {
         "Name": "CrewId",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -768,6 +774,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_UUVJS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "Title",
@@ -808,6 +820,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_LAJND[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "Title",
@@ -901,6 +919,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_77W7U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
         "Name": "ItemType",

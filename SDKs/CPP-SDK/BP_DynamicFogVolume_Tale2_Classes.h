@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x14
+// Size 0x14 (Full Size[0x44c] - InheritedSize[0x438]
 class BP_DynamicFogVolume_Tale2_C: public BP_DynamicDensityFogVolume_C
 {
 public:

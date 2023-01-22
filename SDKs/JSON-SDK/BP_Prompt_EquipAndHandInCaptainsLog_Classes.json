@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_QCJOT[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "EventObjectWieldedHandler",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -34,6 +40,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x1d8"
+      },
+      {
+        "Name": "pad0x4_I0DAD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1dc"
       },
       {
         "Name": "EventStartStowHandler",

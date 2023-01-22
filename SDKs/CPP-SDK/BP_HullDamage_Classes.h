@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x88
+// Size 0x88 (Full Size[0x608] - InheritedSize[0x580]
 class BP_HullDamage_C: public HullDamage
 {
 public:

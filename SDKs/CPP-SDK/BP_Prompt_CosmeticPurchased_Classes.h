@@ -6,11 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x1e8
+// Size 0x1e8 (Full Size[0x300] - InheritedSize[0x118]
 class BP_Prompt_CosmeticPurchased_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_1UAHO[0xfc];                               // 0x120(0xfc)
 	Struct ObjectMessagingHandle                                 Handle_OfferPurchasedEvent;                        // 0x120(0x48)
 	Struct ObjectMessagingHandle                                 Handle_ShopClosedEvent;                            // 0x168(0x48)
 	Struct ObjectMessagingHandle                                 Handle_PlayerEntitlementUpdatedEvent;              // 0x1b0(0x48)

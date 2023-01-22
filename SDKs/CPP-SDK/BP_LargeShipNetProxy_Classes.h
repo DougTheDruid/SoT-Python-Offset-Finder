@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x20 (Full Size[0x4d0] - InheritedSize[0x4b0]
 class BP_LargeShipNetProxy_C: public ShipNetProxy
 {
 public:

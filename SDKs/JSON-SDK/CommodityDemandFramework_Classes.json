@@ -64,6 +64,12 @@
         "Offset": "0x48"
       },
       {
+        "Name": "pad0x4_BNGNK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
         "Name": "CommodityRedemptionTimeOutPeriodInDays",
         "Type": "Struct GameTime",
         "Size": "0x8",
@@ -90,6 +96,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x40",
     "Attributes": [
+      {
+        "Name": "pad0x20_KW0D7[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "ActiveCommodityDemands",
         "Type": "Struct ActiveNPCDemands",
@@ -143,6 +155,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x128"
+      },
+      {
+        "Name": "pad0x9_R3ESE[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x127"
       }
     ]
   },
@@ -167,10 +185,22 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
+        "Name": "pad0x8_1413Z[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "RedeemTooltipText",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x78_10BYQ[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x108"
       },
       {
         "Name": "PendingRedemptions",
@@ -193,6 +223,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x8_LOVIU[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
       {
         "Name": "NPCIdentifier",
         "Type": "struct FName",
@@ -253,6 +289,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x21_2Y415[0x21]",
+        "Type": "char",
+        "Size": "0x21",
+        "Offset": "0x2f"
       }
     ]
   },
@@ -262,6 +304,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x8_E4A35[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
       {
         "Name": "ItemsToFillCrateWith",
         "Type": "TArray<Struct StorageContainerNode>",
@@ -281,6 +329,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x9_C5EVT[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x2f"
       }
     ]
   },

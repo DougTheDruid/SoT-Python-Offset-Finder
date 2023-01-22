@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
 class StatusResponseApplyOneShotStatus: public StatusResponse
 {
 public:
@@ -14,16 +14,17 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class StatusResponseApplyPersistentStatus: public StatusResponse
 {
 public:
 	Struct Status                                                StatusToApply;                                     // 0x30(0x18)
 	float                                                        DurationMultiplier;                                // 0x48(0x4)
+	char                                                         pad0xc_IRKKH[0xc];                                 // 0x4a(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class StatusResponseCancelStatus: public StatusResponse
 {
 public:
@@ -31,22 +32,23 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class StatusResponseCook: public StatusResponse
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class StatusResponseHealthRegenerationPoolChange: public StatusResponse
 {
 public:
 	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
+	char                                                         pad0xc_6OE7L[0xc];                                 // 0x32(0xc)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
 class StatusResponseReportNoiseEvent: public StatusResponse
 {
 public:
@@ -55,11 +57,13 @@ public:
 	float                                                        NoiseRange;                                        // 0x40(0x4)
 	float                                                        NoiseLoudness;                                     // 0x44(0x4)
 	bool                                                         NoiseMultipleTicks;                                // 0x48(0x1)
+	char                                                         pad0x3_0SBCB[0x3];                                 // 0x49(0x3)
 	float                                                        NoiseTimerTick;                                    // 0x4c(0x4)
+	char                                                         pad0x28_K5JMT[0x28];                               // 0x4e(0x28)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class StatusResponseSetScalarParamOnCharacter: public StatusResponse
 {
 public:
@@ -67,7 +71,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class StatusResponseSuspendStatus: public StatusResponse
 {
 public:

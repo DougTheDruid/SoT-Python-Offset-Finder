@@ -58,11 +58,12 @@ public:
 	TArray<Str PlayModeStates>                                   PlayModeStates;                                    // 0x68(0x10)
 	TArray<Struct ServerCrewModel>                               Crews;                                             // 0x78(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
+	char                                                         pad0x3_S5S1V[0x3];                                 // 0x89(0x3)
 	Struct Guid                                                  RequestCorrelationId;                              // 0x8c(0x10)
 };
 
 
-// Size 0x98
+// Size 0xa8
 struct ServerCrewModel
 {
 public:
@@ -71,25 +72,31 @@ public:
 	Struct Guid                                                  ServerId;                                          // 0x28(0x10)
 	Struct FString                                               ServerAddress;                                     // 0x38(0x10)
 	int                                                          SessionType;                                       // 0x48(0x4)
+	char                                                         pad0x4_Z29TH[0x4];                                 // 0x4c(0x4)
 	TArray<Struct Vector2D>                                      Positions;                                         // 0x50(0x10)
 	TArray<UInt32 Resources>                                     Resources;                                         // 0x60(0x10)
 	byte                                                         PvPFaction;                                        // 0x70(0x1)
+	char                                                         pad0x3_74WW9[0x3];                                 // 0x71(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x74(0x4)
 	int                                                          PvPRivalSessionType;                               // 0x78(0x4)
 	Struct Guid                                                  RivalCrewId;                                       // 0x7c(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x8c(0x1)
+	char                                                         pad0x3_H5M9E[0x3];                                 // 0x8d(0x3)
 	Struct Timespan                                              TimeWaitingForMatch;                               // 0x90(0x8)
+	Struct FString                                               ForcedStamp;                                       // 0x98(0x10)
 };
 
 
-// Size 0x78
+// Size 0x80
 struct ServerCrewResponseModel
 {
 public:
-	TArray<Struct ServerCrewModel>                               Crews;                                             // 0x0(0x10)
-	Struct Timespan                                              RetryAfter;                                        // 0x60(0x8)
-	Struct Timespan                                              MigrationThreshold;                                // 0x68(0x8)
-	Struct Timespan                                              ExpireAfter;                                       // 0x70(0x8)
+	byte                                                         ResultCode;                                        // 0x0(0x1)
+	char                                                         pad0x7_M5JZ0[0x7];                                 // 0x1(0x7)
+	TArray<Struct ServerCrewModel>                               Crews;                                             // 0x8(0x10)
+	Struct Timespan                                              RetryAfter;                                        // 0x68(0x8)
+	Struct Timespan                                              MigrationThreshold;                                // 0x70(0x8)
+	Struct Timespan                                              ExpireAfter;                                       // 0x78(0x8)
 };
 
 
@@ -100,7 +107,7 @@ public:
 };
 
 
-// Size 0xd0
+// Size 0xe0
 struct ServerCrewRequestModel
 {
 public:
@@ -108,16 +115,17 @@ public:
 	Struct FString                                               VmId;                                              // 0x10(0x10)
 	Struct FString                                               PrivateServerId;                                   // 0x20(0x10)
 	Struct FString                                               ServerLocation;                                    // 0x30(0x10)
-	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x48(0x10)
-	Struct FString                                               PlayModeState;                                     // 0x58(0x10)
-	int                                                          CrewCount;                                         // 0x68(0x4)
-	int                                                          CrewCountBucket;                                   // 0x6c(0x4)
-	int                                                          CrewMin;                                           // 0x70(0x4)
-	int                                                          CrewMax;                                           // 0x74(0x4)
-	TArray<Int CrewSessionTypes>                                 CrewSessionTypes;                                  // 0x78(0x10)
-	TArray<Struct ExistingServerCrewModel>                       Crews;                                             // 0x88(0x10)
-	Struct Timespan                                              Uptime;                                            // 0x98(0x8)
-	Struct ServerContendedModel                                  Contended;                                         // 0xa0(0x30)
+	Struct FString                                               StampId;                                           // 0x40(0x10)
+	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x58(0x10)
+	Struct FString                                               PlayModeState;                                     // 0x68(0x10)
+	int                                                          CrewCount;                                         // 0x78(0x4)
+	int                                                          CrewCountBucket;                                   // 0x7c(0x4)
+	int                                                          CrewMin;                                           // 0x80(0x4)
+	int                                                          CrewMax;                                           // 0x84(0x4)
+	TArray<Int CrewSessionTypes>                                 CrewSessionTypes;                                  // 0x88(0x10)
+	TArray<Struct ExistingServerCrewModel>                       Crews;                                             // 0x98(0x10)
+	Struct Timespan                                              Uptime;                                            // 0xa8(0x8)
+	Struct ServerContendedModel                                  Contended;                                         // 0xb0(0x30)
 };
 
 
@@ -140,15 +148,18 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x38
 struct ExistingServerCrewModel
 {
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	int                                                          SessionType;                                       // 0x10(0x4)
 	byte                                                         AlignedFaction;                                    // 0x14(0x1)
+	char                                                         pad0x3_MG1WF[0x3];                                 // 0x15(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x18(0x4)
+	char                                                         pad0x4_H1S0Z[0x4];                                 // 0x1c(0x4)
 	Struct Timespan                                              TimeInMatchmaking;                                 // 0x20(0x8)
+	Struct FString                                               ForcedStamp;                                       // 0x28(0x10)
 };
 
 

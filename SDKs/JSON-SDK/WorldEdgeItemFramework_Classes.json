@@ -51,6 +51,12 @@
     "ClassSize": "0x248",
     "Attributes": [
       {
+        "Name": "pad0x8_E42XA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "WorldEdgeItemParameters",
         "Type": "Class WorldEdgeItemServiceParams*",
         "Size": "0x8",
@@ -61,6 +67,12 @@
         "Type": "Struct EnvQueryRequest",
         "Size": "0x170",
         "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x3a8_YBHD2[0x3a8]",
+        "Type": "char",
+        "Size": "0x3a8",
+        "Offset": "0x546"
       }
     ]
   },

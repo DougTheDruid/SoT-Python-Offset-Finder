@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x4b8] - InheritedSize[0x4b0]
 class BP_PetPreview_Base_C: public PreviewPet
 {
 public:

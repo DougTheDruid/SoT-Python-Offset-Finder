@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 CleanlinessComponent:
   Attributes:
+  - Name: pad0x10_299QA[0x10]
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: char
   - Name: DirtinessStrengthToMaterialStrength
     Offset: '0xd8'
     Size: '0x8'
@@ -18,6 +22,10 @@ CleanlinessComponent:
     Offset: '0xf0'
     Size: '0x4'
     Type: float
+  - Name: pad0x5c_AWXN4[0x5c]
+    Offset: '0xf2'
+    Size: '0x5c'
+    Type: char
   ClassSize: '0x80'
   FullSize: '0x148'
   InheritedSize: '0xc8'

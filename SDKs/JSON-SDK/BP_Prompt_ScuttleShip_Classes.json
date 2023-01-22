@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfb_ALK7L[0xfb]",
+        "Type": "char",
+        "Size": "0xfb",
+        "Offset": "0x120"
+      },
+      {
         "Name": "Handle_CharacterDeadEvent",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",

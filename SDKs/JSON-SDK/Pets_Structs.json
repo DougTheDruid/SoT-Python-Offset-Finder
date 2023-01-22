@@ -89,6 +89,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_23EXX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "PetParams",
         "Type": "TArray<Struct PetHangoutSpotParams>",
         "Size": "0x10",
@@ -156,6 +162,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_Q3D32[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "Responses",
@@ -234,6 +246,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_H98ZN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "AnimationTimeout",
         "Type": "float",
         "Size": "0x4",
@@ -249,6 +267,12 @@
         "Type": "Struct HangoutSpotId",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_IF1OO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       },
       {
         "Name": "Transform",
@@ -269,10 +293,22 @@
         "Offset": "0x41"
       },
       {
+        "Name": "pad0x6_P9KSB[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x42"
+      },
+      {
         "Name": "Occupier",
         "Type": "Class Pawn*",
         "Size": "0x8",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x10_W2SJZ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x50"
       },
       {
         "Name": "IsPerch",
@@ -285,6 +321,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x61"
+      },
+      {
+        "Name": "pad0x2_N945D[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x62"
       },
       {
         "Name": "OverrideInteractionPointPosition",
@@ -421,6 +463,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x3_NZGBF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
         "Name": "AnimationTimeout",
         "Type": "float",
         "Size": "0x4",
@@ -443,6 +491,12 @@
         "Type": "Struct FloatRange",
         "Size": "0x10",
         "Offset": "0xb4"
+      },
+      {
+        "Name": "pad0x4_NXN5G[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc4"
       },
       {
         "Name": "IgnoringStrategies",
@@ -471,6 +525,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_P5UYQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "DropDelay",
@@ -505,6 +565,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_PTB0D[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "AnimTimeout",
@@ -797,6 +863,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x3_K80DU[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
       },
       {
         "Name": "PetLocation",

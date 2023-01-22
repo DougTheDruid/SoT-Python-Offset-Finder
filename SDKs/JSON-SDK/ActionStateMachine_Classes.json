@@ -73,6 +73,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x9_81C0C[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x27"
       }
     ]
   },

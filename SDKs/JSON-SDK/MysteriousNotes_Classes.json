@@ -144,6 +144,12 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
+        "Name": "pad0x28_2RGBD[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "CachedNoteSettings",
         "Type": "Class MysteriousNoteSettings*",
         "Size": "0x8",
@@ -160,6 +166,12 @@
         "Type": "Class MysteriousNotesCompletionEventsModelDataAsset*",
         "Size": "0x8",
         "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x98_S2RVZ[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x406"
       }
     ]
   },
@@ -177,10 +189,22 @@
     "ClassSize": "0x190",
     "Attributes": [
       {
+        "Name": "pad0x8_ZKF2A[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "CinematicPlayed",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xef_1VLP8[0xef]",
+        "Type": "char",
+        "Size": "0xef",
+        "Offset": "0xd1"
       },
       {
         "Name": "NoteData",
@@ -193,56 +217,80 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1d8"
+      },
+      {
+        "Name": "pad0x81_XMJZF[0x81]",
+        "Type": "char",
+        "Size": "0x81",
+        "Offset": "0x1d7"
       }
     ]
   },
   "WieldableMysteriousNote": {
     "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x920",
-    "InheritedSize": "0x780",
+    "FullSize": "0x940",
+    "InheritedSize": "0x7a0",
     "ClassSize": "0x1a0",
     "Attributes": [
+      {
+        "Name": "pad0x10_LH4JO[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x7a0"
+      },
       {
         "Name": "RenderTarget",
         "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x790"
+        "Offset": "0x7b0"
       },
       {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x798"
+        "Offset": "0x7b8"
       },
       {
         "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x79c"
+        "Offset": "0x7bc"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7a0"
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "pad0x5c_GBUA7[0x5c]",
+        "Type": "char",
+        "Size": "0x5c",
+        "Offset": "0x7c4"
       },
       {
         "Name": "NoteLayout",
         "Type": "Class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
-        "Offset": "0x800"
+        "Offset": "0x820"
       },
       {
         "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x808"
+        "Offset": "0x828"
       },
       {
         "Name": "InventoryItemComponent",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x810"
+        "Offset": "0x830"
+      },
+      {
+        "Name": "pad0x118_K5FN0[0x118]",
+        "Type": "char",
+        "Size": "0x118",
+        "Offset": "0x836"
       }
     ]
   },

@@ -6,58 +6,61 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DamageablePartsInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HullDamageInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HullDamageProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class LandscapeDamagerType: public DamagerType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ShipDamagerType: public DamagerType
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
 class ShipPartsDamageTrackerComponent: public ActorComponent
 {
 public:
 	int                                                          IsAnyShipPartDamaged;                              // 0xc8(0x4)
+	char                                                         pad0xc_9W1Y6[0xc];                                 // 0xca(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class ShipRestorationSettings: public DeveloperSettings
 {
 public:
 	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
+	char                                                         pad0x4_MDJTO[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x10_M73JS[0x10];                               // 0x3e(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class StrainDamagerType: public DamagerType
 {
 public:

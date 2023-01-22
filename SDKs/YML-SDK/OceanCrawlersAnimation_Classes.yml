@@ -12,6 +12,10 @@ OceanCrawlerAnimationData:
   Super: AnimationData
 OceanCrawlerAnimationInstance:
   Attributes:
+  - Name: pad0x18_LIY9U[0x18]
+    Offset: '0x440'
+    Size: '0x18'
+    Type: char
   - Name: LoadedAnimations
     Offset: '0x458'
     Size: '0x90'
@@ -24,6 +28,10 @@ OceanCrawlerAnimationInstance:
     Offset: '0x500'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_NKFZI[0x4]
+    Offset: '0x504'
+    Size: '0x4'
+    Type: char
   - Name: AttackAnims
     Offset: '0x508'
     Size: '0xb8'
@@ -40,10 +48,18 @@ OceanCrawlerAnimationInstance:
     Offset: '0x5c2'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_HUGJJ[0x1]
+    Offset: '0x5c3'
+    Size: '0x1'
+    Type: char
   - Name: PropAttachmentSocket
     Offset: '0x5c4'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_LJZFR[0x4]
+    Offset: '0x5cc'
+    Size: '0x4'
+    Type: char
   - Name: MontagePlayer
     Offset: '0x5d0'
     Size: '0xd8'
@@ -52,12 +68,20 @@ OceanCrawlerAnimationInstance:
     Offset: '0x6a8'
     Size: '0x28'
     Type: Struct HitReactionAnimationState
+  - Name: pad0xa0_1E5E0[0xa0]
+    Offset: '0x6ce'
+    Size: '0xa0'
+    Type: char
   ClassSize: '0x2e0'
   FullSize: '0x720'
   InheritedSize: '0x440'
   Super: AnimInstance
 OceanCrawlerAnimationServerData:
   Attributes:
+  - Name: pad0x8_FX14D[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   - Name: AnimInstanceType
     Offset: '0x30'
     Size: '0x8'
@@ -74,6 +98,10 @@ OceanCrawlerAnimationServerData:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_1JVHN[0xc]
+    Offset: '0x42'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

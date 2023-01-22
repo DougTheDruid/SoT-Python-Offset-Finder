@@ -12,10 +12,28 @@
         "Offset": "0xf8"
       },
       {
+        "Name": "pad0x11b_RGOUK[0x11b]",
+        "Type": "char",
+        "Size": "0x11b",
+        "Offset": "0x100"
+      },
+      {
         "Name": "IsCompleted",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x7_ALH7M[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
+      },
+      {
+        "Name": "pad0x1e_BDMYB[0x1e]",
+        "Type": "char",
+        "Size": "0x1e",
+        "Offset": "0x106"
       }
     ]
   },

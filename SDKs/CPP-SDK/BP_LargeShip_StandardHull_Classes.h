@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x408] - InheritedSize[0x3f0]
 class BP_LargeShip_StandardHull_C: public Hull
 {
 public:

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xf8
+// Size 0xf8 (Full Size[0x4f8] - InheritedSize[0x400]
 class BP_PromptActor_CosmeticPurchased_Weapon_C: public BP_PromptActorBase_C
 {
 public:

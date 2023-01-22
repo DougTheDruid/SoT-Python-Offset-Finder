@@ -6,31 +6,35 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class MusicZoneInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xc0
+// Size 0xc0 (Full Size[0x3a0] - InheritedSize[0x2e0]
 class MusicZoneComponent: public SceneComponent
 {
 public:
+	char                                                         pad0x8_6JKB9[0x8];                                 // 0x2e0(0x8)
 	float                                                        InnerRadius;                                       // 0x2e8(0x4)
 	float                                                        OuterRadius;                                       // 0x2ec(0x4)
 	struct FName                                                 LocationRTPC;                                      // 0x2f0(0x8)
 	bool                                                         LocalRTPC;                                         // 0x2f8(0x1)
+	char                                                         pad0x7_EU88U[0x7];                                 // 0x2f9(0x7)
 	Class WwiseEvent*                                            PlayEvent;                                         // 0x300(0x8)
 	Class WwiseEvent*                                            StopEvent;                                         // 0x308(0x8)
 	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x310(0x10)
 	Class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x320(0x8)
 	bool                                                         DisableAfterPlayThrough;                           // 0x328(0x1)
 	bool                                                         ActivateOnBeginPlay;                               // 0x329(0x1)
+	char                                                         pad0x6_XF2JS[0x6];                                 // 0x32a(0x6)
+	char                                                         pad0x7c_EPRL4[0x7c];                               // 0x32e(0x7c)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
 class AISpawnerMusicZoneComponent: public MusicZoneComponent
 {
 public:
@@ -38,26 +42,28 @@ public:
 	Class AISpawner*                                             AISpawner;                                         // 0x3a8(0x8)
 	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3b0(0x10)
 	byte                                                         SpawnerState;                                      // 0x3c0(0x1)
+	char                                                         pad0x11_CV6VE[0x11];                               // 0x3bf(0x11)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
 class SynchedMusicZoneComponent: public MusicZoneComponent
 {
 public:
 	float                                                        StartDelayTime;                                    // 0x3a0(0x4)
 	int                                                          PlayFromStartTimeMS;                               // 0x3a4(0x4)
+	char                                                         pad0x30_DMVRT[0x30];                               // 0x3a6(0x30)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class MusicZoneServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0x470] - InheritedSize[0x3c8]
 class MusicZoneService: public Actor
 {
 public:

@@ -100,6 +100,12 @@
         "Offset": "0x14"
       },
       {
+        "Name": "pad0x3_0YAXG[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15"
+      },
+      {
         "Name": "InstanceId",
         "Type": "Struct Guid",
         "Size": "0x10",

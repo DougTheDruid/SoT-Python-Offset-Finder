@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x7f0] - InheritedSize[0x7e0]
 class BP_FishingFloat_C: public FishingFloat
 {
 public:

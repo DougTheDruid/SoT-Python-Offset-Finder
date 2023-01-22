@@ -6,6 +6,10 @@ BP_Prompt_MapBundle_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_LD885[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: MapBundlePromptAccessKey
     Offset: '0x120'
     Size: '0x8'
@@ -18,6 +22,10 @@ BP_Prompt_MapBundle_C:
     Offset: '0x190'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_W1EUL[0x7]
+    Offset: '0x191'
+    Size: '0x7'
+    Type: char
   - Name: MapBundleAppearedHandle
     Offset: '0x198'
     Size: '0x48'
@@ -30,6 +38,10 @@ BP_Prompt_MapBundle_C:
     Offset: '0x1e8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_A7NNI[0x7]
+    Offset: '0x1e9'
+    Size: '0x7'
+    Type: char
   - Name: StealPrompt
     Offset: '0x1f0'
     Size: '0x68'

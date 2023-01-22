@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 SafeZoneComponent:
   Attributes:
+  - Name: pad0x10_OG0NB[0x10]
+    Offset: '0x5e0'
+    Size: '0x10'
+    Type: char
   - Name: ExclusionRadius
     Offset: '0x5f0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_106NV[0x4]
+    Offset: '0x5f4'
+    Size: '0x4'
+    Type: char
   - Name: ExclusionHeight
     Offset: '0x5f8'
     Size: '0x4'
@@ -26,18 +34,34 @@ SafeZoneComponent:
     Offset: '0x606'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_P58PH[0x1]
+    Offset: '0x607'
+    Size: '0x1'
+    Type: char
   - Name: PlayerTeleportRadius
     Offset: '0x608'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_EIND0[0x4]
+    Offset: '0x60c'
+    Size: '0x4'
+    Type: char
   - Name: UseRepelForce
     Offset: '0x610'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_76KQM[0x3]
+    Offset: '0x611'
+    Size: '0x3'
+    Type: char
   - Name: RepelForceRadius
     Offset: '0x614'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_NKP3Q[0x4]
+    Offset: '0x618'
+    Size: '0x4'
+    Type: char
   - Name: RepelForceExtents
     Offset: '0x61c'
     Size: '0x4'
@@ -54,6 +78,10 @@ SafeZoneComponent:
     Offset: '0x628'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_5FCMN[0x7]
+    Offset: '0x629'
+    Size: '0x7'
+    Type: char
   - Name: RepelForceGradientCurve
     Offset: '0x630'
     Size: '0x80'
@@ -62,10 +90,18 @@ SafeZoneComponent:
     Offset: '0x6b0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_OHO5O[0x3]
+    Offset: '0x6b1'
+    Size: '0x3'
+    Type: char
   - Name: AngularImpulseRadius
     Offset: '0x6b4'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_1JAM4[0x4]
+    Offset: '0x6b8'
+    Size: '0x4'
+    Type: char
   - Name: AngularImpulseForce
     Offset: '0x6bc'
     Size: '0x4'
@@ -82,6 +118,10 @@ SafeZoneComponent:
     Offset: '0x6c5'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_TZ8P9[0x2]
+    Offset: '0x6c6'
+    Size: '0x2'
+    Type: char
   - Name: CurrentCollisionProfile
     Offset: '0x6c8'
     Size: '0x8'
@@ -90,6 +130,10 @@ SafeZoneComponent:
     Offset: '0x6d0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x51_O0C2S[0x51]
+    Offset: '0x6cf'
+    Size: '0x51'
+    Type: char
   ClassSize: '0x140'
   FullSize: '0x720'
   InheritedSize: '0x5e0'

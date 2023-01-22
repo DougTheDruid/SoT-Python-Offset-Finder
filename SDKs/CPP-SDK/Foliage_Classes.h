@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x20 (Full Size[0x7c0] - InheritedSize[0x7a0]
 class FoliageInstancedStaticMeshComponent: public HierarchicalInstancedStaticMeshComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class FoliageStatistics: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x338
+// Size 0x338 (Full Size[0x360] - InheritedSize[0x28]
 class FoliageType: public Object
 {
 public:
@@ -29,27 +29,35 @@ public:
 	float                                                        DensityAdjustmentFactor;                           // 0x3c(0x4)
 	float                                                        Radius;                                            // 0x40(0x4)
 	byte                                                         Scaling;                                           // 0x44(0x1)
+	char                                                         pad0x3_6UNL9[0x3];                                 // 0x45(0x3)
 	Struct FloatInterval                                         ScaleX;                                            // 0x48(0x8)
 	Struct FloatInterval                                         ScaleY;                                            // 0x50(0x8)
 	Struct FloatInterval                                         ScaleZ;                                            // 0x58(0x8)
 	byte                                                         VertexColorMask;                                   // 0x60(0x1)
+	char                                                         pad0x3_UO70O[0x3];                                 // 0x61(0x3)
 	float                                                        VertexColorMaskThreshold;                          // 0x64(0x4)
 	bool                                                         VertexColorMaskInvert;                             // 0x68(0x1)
+	char                                                         pad0x3_9MZ2X[0x3];                                 // 0x69(0x3)
 	Struct FloatInterval                                         ZOffset;                                           // 0x6c(0x8)
 	bool                                                         AlignToNormal;                                     // 0x74(0x1)
+	char                                                         pad0x3_UFAB5[0x3];                                 // 0x75(0x3)
 	float                                                        AlignMaxAngle;                                     // 0x78(0x4)
 	bool                                                         RandomYaw;                                         // 0x7c(0x1)
+	char                                                         pad0x3_WNM6W[0x3];                                 // 0x7d(0x3)
 	float                                                        RandomPitchAngle;                                  // 0x80(0x4)
 	Struct FloatInterval                                         GroundSlopeAngle;                                  // 0x84(0x8)
 	Struct FloatInterval                                         Height;                                            // 0x8c(0x8)
+	char                                                         pad0x4_D91SV[0x4];                                 // 0x94(0x4)
 	TArray<Struct FName>                                         LandscapeLayers;                                   // 0x98(0x10)
 	struct FName                                                 LandscapeLayer;                                    // 0xa8(0x8)
 	bool                                                         CollisionWithWorld;                                // 0xb0(0x1)
+	char                                                         pad0x3_94NNU[0x3];                                 // 0xb1(0x3)
 	Struct Vector                                                CollisionScale;                                    // 0xb4(0xc)
 	float                                                        MinimumLayerWeight;                                // 0xc0(0x4)
 	Struct BoxSphereBounds                                       MeshBounds;                                        // 0xc4(0x1c)
 	Struct Vector                                                LowBoundOriginRadius;                              // 0xe0(0xc)
 	byte                                                         Mobility;                                          // 0xec(0x1)
+	char                                                         pad0x3_JHH61[0x3];                                 // 0xed(0x3)
 	Struct Int32Interval                                         CullDistance;                                      // 0xf0(0x8)
 	bool                                                         bEnableStaticLighting;                             // 0xf8(0x1)
 	bool                                                         CastShadow;                                        // 0xf8(0x1)
@@ -60,11 +68,15 @@ public:
 	bool                                                         bCastShadowAsTwoSided;                             // 0xf8(0x1)
 	bool                                                         bReceivesDecals;                                   // 0xf8(0x1)
 	bool                                                         bOverrideLightMapRes;                              // 0xf9(0x1)
+	char                                                         pad0x2_ACNPI[0x2];                                 // 0xfa(0x2)
 	int                                                          OverriddenLightMapRes;                             // 0xfc(0x4)
 	bool                                                         bUseAsOccluder;                                    // 0x100(0x1)
+	char                                                         pad0x7_ABUMQ[0x7];                                 // 0x101(0x7)
 	Struct BodyInstance                                          BodyInstance;                                      // 0x108(0x180)
 	byte                                                         CustomNavigableGeometry;                           // 0x288(0x1)
+	char                                                         pad0x7_BNZSZ[0x7];                                 // 0x289(0x7)
 	bool                                                         IsSelected;                                        // 0x298(0x1)
+	char                                                         pad0x3_W49BZ[0x3];                                 // 0x299(0x3)
 	float                                                        CollisionRadius;                                   // 0x29c(0x4)
 	float                                                        ShadeRadius;                                       // 0x2a0(0x4)
 	int                                                          NumSteps;                                          // 0x2a4(0x4)
@@ -76,6 +88,7 @@ public:
 	float                                                        MaxInitialSeedOffset;                              // 0x2bc(0x4)
 	bool                                                         bCanGrowInShade;                                   // 0x2c0(0x1)
 	bool                                                         bSpawnsInShade;                                    // 0x2c1(0x1)
+	char                                                         pad0x2_YXRM3[0x2];                                 // 0x2c2(0x2)
 	float                                                        MaxInitialAge;                                     // 0x2c4(0x4)
 	float                                                        MaxAge;                                            // 0x2c8(0x4)
 	float                                                        OverlapPriority;                                   // 0x2cc(0x4)
@@ -97,10 +110,11 @@ public:
 	bool                                                         ReapplyZOffset;                                    // 0x35d(0x1)
 	bool                                                         ReapplyCollisionWithWorld;                         // 0x35d(0x1)
 	bool                                                         ReapplyVertexColorMask;                            // 0x35d(0x1)
+	char                                                         pad0x4_85O0G[0x4];                                 // 0x35c(0x4)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x380] - InheritedSize[0x360]
 class FoliageType_InstancedStaticMesh: public FoliageType
 {
 public:
@@ -110,14 +124,14 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0x418] - InheritedSize[0x3c8]
 class InstancedFoliageActor: public Actor
 {
 public:
 };
 
 
-// Size 0x60
+// Size 0x60 (Full Size[0x438] - InheritedSize[0x3d8]
 class InteractiveFoliageActor: public StaticMeshActor
 {
 public:
@@ -135,17 +149,18 @@ public:
 	float                                                        MaxTouchImpulse;                                   // 0x428(0x4)
 	float                                                        MaxForce;                                          // 0x42c(0x4)
 	float                                                        Mass;                                              // 0x430(0x4)
+	char                                                         pad0xc_UP0W0[0xc];                                 // 0x432(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x630] - InheritedSize[0x620]
 class InteractiveFoliageComponent: public StaticMeshComponent
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
 class ProceduralFoliageBlockingVolume: public Volume
 {
 public:
@@ -153,39 +168,44 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class ProceduralFoliageComponent: public ActorComponent
 {
 public:
 	Class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0xc8(0x8)
 	float                                                        TileOverlap;                                       // 0xd0(0x4)
+	char                                                         pad0x4_I5L03[0x4];                                 // 0xd4(0x4)
 	Class Volume*                                                SpawningVolume;                                    // 0xd8(0x8)
 	Struct Guid                                                  ProceduralGuid;                                    // 0xe0(0x10)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class ProceduralFoliageSpawner: public Object
 {
 public:
 	int                                                          RandomSeed;                                        // 0x28(0x4)
 	float                                                        TileSize;                                          // 0x2c(0x4)
 	int                                                          NumUniqueTiles;                                    // 0x30(0x4)
+	char                                                         pad0x4_R11OA[0x4];                                 // 0x34(0x4)
 	TArray<Struct FoliageTypeObject>                             FoliageTypes;                                      // 0x38(0x10)
 	bool                                                         bNeedsSimulation;                                  // 0x48(0x1)
+	char                                                         pad0x21_RKHF3[0x21];                               // 0x47(0x21)
 };
 
 
-// Size 0x128
+// Size 0x128 (Full Size[0x150] - InheritedSize[0x28]
 class ProceduralFoliageTile: public Object
 {
 public:
 	Class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0x28(0x8)
+	char                                                         pad0xa0_SGXSG[0xa0];                               // 0x30(0xa0)
 	TArray<Struct ProceduralFoliageInstance>                     InstancesArray;                                    // 0xd0(0x10)
+	char                                                         pad0x90_LNTZ4[0x90];                               // 0xde(0x90)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
 class ProceduralFoliageVolume: public Volume
 {
 public:

@@ -29,6 +29,7 @@ struct CoordinatedKrakenSpecialEvent
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
+	char                                                         pad0x3_QKFF4[0x3];                                 // 0x1(0x3)
 	float                                                        TimeOffset;                                        // 0x4(0x4)
 };
 
@@ -50,6 +51,7 @@ public:
 	struct FName                                                 ActionName;                                        // 0x0(0x8)
 	float                                                        ActionLength;                                      // 0x8(0x4)
 	byte                                                         ActionType;                                        // 0xc(0x1)
+	char                                                         pad0x3_GO7OX[0x3];                                 // 0xd(0x3)
 	TArray<Struct CoordinatedKrakenSpecialEvent>                 SpecialEvents;                                     // 0x10(0x10)
 	TArray<Struct CoordinatedKrakenTentacleAction>               TentacleActions;                                   // 0x20(0x10)
 	TArray<Struct CoordinatedKrakenHeadAction>                   HeadActions;                                       // 0x30(0x10)
@@ -77,6 +79,7 @@ public:
 	float                                                        CancellationThreshold;                             // 0x40(0x4)
 	float                                                        ImpactTime;                                        // 0x44(0x4)
 	int                                                          LevelsOfDamage;                                    // 0x48(0x4)
+	char                                                         pad0x4_FJNHJ[0x4];                                 // 0x4c(0x4)
 	TArray<Struct KrakenShipHittingBehaviourImpactParams>        Configurations;                                    // 0x50(0x10)
 };
 
@@ -86,10 +89,12 @@ struct KrakenShipHittingBehaviourImpactParams
 {
 public:
 	int                                                          Weight;                                            // 0x0(0x4)
+	char                                                         pad0xc_JXIR7[0xc];                                 // 0x4(0xc)
 	Struct Transform                                             TentacleTransform;                                 // 0x10(0x30)
 	Struct Vector                                                ImpactLocation;                                    // 0x40(0xc)
 	Struct Vector                                                ImpactForce;                                       // 0x4c(0xc)
 	Struct Vector                                                DamageLocation;                                    // 0x58(0xc)
+	char                                                         pad0x4_F3T3Z[0x4];                                 // 0x64(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      NumZonesToDamage;                                  // 0x68(0x30)
 };
 
@@ -106,6 +111,7 @@ public:
 	float                                                        TimeIntoEnteringShakeAttackToEnableCollisions;     // 0x90(0x4)
 	float                                                        TimeIntoExitingShakeAttackToDisableCollisions;     // 0x94(0x4)
 	float                                                        HighDetailAnimationStreamingDistance;              // 0x98(0x4)
+	char                                                         pad0x4_2GC06[0x4];                                 // 0x9c(0x4)
 	Struct KrakenShipWrappingTentacleVFXParams                   WrappingOutOfWaterSplashVFX;                       // 0xa0(0x28)
 	Struct KrakenShipWrappingTentacleVFXParams                   WrappingIntoWaterSplashVFX;                        // 0xc8(0x28)
 };
@@ -142,6 +148,7 @@ struct KrakenShipWrappingTentacleAnimationStateParams
 {
 public:
 	bool                                                         Visible;                                           // 0x0(0x1)
+	char                                                         pad0x3_L9208[0x3];                                 // 0x1(0x3)
 	int                                                          StartFrame;                                        // 0x4(0x4)
 	int                                                          EndFrame;                                          // 0x8(0x4)
 	float                                                        Duration;                                          // 0xc(0x4)
@@ -153,6 +160,7 @@ struct KrakenShipWrappingTentacleAnimationState
 {
 public:
 	byte                                                         State;                                             // 0x4(0x1)
+	char                                                         pad0x3_KUVBT[0x3];                                 // 0x5(0x3)
 	double                                                       EndTime;                                           // 0x8(0x8)
 };
 
@@ -190,6 +198,7 @@ struct KrakenDynamicsStateFragmentParams
 public:
 	Class CurveVector*                                           TorqueCurve;                                       // 0x0(0x8)
 	float                                                        BaselineTorque;                                    // 0x8(0x4)
+	char                                                         pad0x4_Z7GXY[0x4];                                 // 0xc(0x4)
 	TArray<Struct KrakenDynamicsStateEvent>                      Events;                                            // 0x10(0x10)
 };
 
@@ -199,6 +208,7 @@ struct KrakenDynamicsStateEvent
 {
 public:
 	byte                                                         Event;                                             // 0x0(0x1)
+	char                                                         pad0x3_T5OJT[0x3];                                 // 0x1(0x3)
 	float                                                        Time;                                              // 0x4(0x4)
 	float                                                        Value;                                             // 0x8(0x4)
 };
@@ -217,6 +227,7 @@ struct KrakenShipWrappingBehaviourParams
 {
 public:
 	class                                                        ShipSize;                                          // 0x0(0x8)
+	char                                                         pad0x8_L83L3[0x8];                                 // 0x8(0x8)
 	Struct KrakenShipWrappingBehaviourWarningParams              WarningParams;                                     // 0x10(0xa0)
 	Struct KrakenShipWrappingBehaviourWrapParams                 WrapParams;                                        // 0xb0(0x140)
 	Struct KrakenShipWrappingBehaviourTentacleHeadParams         TentacleHeadParams;                                // 0x1f0(0x48)
@@ -242,6 +253,7 @@ public:
 	float                                                        ChanceOfDamagingBottomDeckDamageHoles;             // 0x0(0x4)
 	float                                                        ChanceThatExistingHolesWillBeDamaged;              // 0x4(0x4)
 	int                                                          LevelsOfDamage;                                    // 0x8(0x4)
+	char                                                         pad0x4_FIHCH[0x4];                                 // 0xc(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      NumHolesToDamageRange;                             // 0x10(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      DamageIntervalRange;                               // 0x40(0x30)
 };
@@ -287,9 +299,11 @@ struct KrakenShipWrappingBehaviourWrapParams
 public:
 	Struct FloatRange                                            WrapTimeBeforeGivingUpRange;                       // 0x0(0x10)
 	float                                                        ShipInternalWaterLevelToTriggerUnwrap;             // 0x10(0x4)
+	char                                                         pad0x4_KE5TC[0x4];                                 // 0x14(0x4)
 	Struct KrakenAnchorDynamicsParams                            AnchorDynamicsParams;                              // 0x18(0x28)
 	TArray<Struct KrakenShipWrappingBehaviourWrapLocationWeightedParams> WrapLocations;                                     // 0x40(0x10)
 	float                                                        WrapTimeBeforeGivingUp;                            // 0x50(0x4)
+	char                                                         pad0xc_KZTEY[0xc];                                 // 0x54(0xc)
 	Struct KrakenShipWrappingBehaviourWrapLocationParams         WrapLocation;                                      // 0x60(0xe0)
 };
 
@@ -300,6 +314,7 @@ struct KrakenShipWrappingBehaviourWrapLocationParams
 public:
 	class                                                        TentacleType;                                      // 0x0(0x8)
 	Struct Vector                                                WrapLocationAnchorPoint;                           // 0x8(0xc)
+	char                                                         pad0xc_6VOJ5[0xc];                                 // 0x14(0xc)
 	Struct Transform                                             TentacleHeadHoldShipLocation;                      // 0x20(0x30)
 	Struct KrakenShipWrappingBehaviourTentacleHeadLocations      PortTentacleHeadLocations;                         // 0x50(0x20)
 	Struct KrakenShipWrappingBehaviourTentacleHeadLocations      StarboardTentacleHeadLocations;                    // 0x70(0x20)
@@ -321,6 +336,7 @@ struct KrakenShipWrappingBehaviourNamedTransform
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
+	char                                                         pad0x8_GA7K6[0x8];                                 // 0x8(0x8)
 	Struct Transform                                             Transform;                                         // 0x10(0x30)
 };
 
@@ -330,6 +346,7 @@ struct KrakenShipWrappingBehaviourWrapLocationWeightedParams
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
+	char                                                         pad0xc_RBQ8B[0xc];                                 // 0x4(0xc)
 	Struct KrakenShipWrappingBehaviourWrapLocationParams         Params;                                            // 0x10(0xe0)
 };
 
@@ -341,10 +358,12 @@ public:
 	class                                                        TentacleType;                                      // 0x0(0x8)
 	float                                                        TickDuration;                                      // 0x8(0x4)
 	Struct FloatRange                                            TentacleTimeoutRange;                              // 0xc(0x10)
+	char                                                         pad0x4_0JLV2[0x4];                                 // 0x1c(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TentacleHealthRange;                               // 0x20(0x30)
 	TArray<Struct KrakenShipWrappingBehaviourNamedTransform>     TentacleLocations;                                 // 0x50(0x10)
 	float                                                        TentacleTimeout;                                   // 0x60(0x4)
 	float                                                        TentacleHealth;                                    // 0x64(0x4)
+	char                                                         pad0x8_HIFWA[0x8];                                 // 0x68(0x8)
 	Struct Transform                                             TentacleLocation;                                  // 0x70(0x30)
 };
 
@@ -354,6 +373,7 @@ struct KrakenBehaviourParams
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
+	char                                                         pad0x3_FEAT9[0x3];                                 // 0x1(0x3)
 	Struct WeightedProbabilityRangeOfRanges                      TargetTimeout;                                     // 0x8(0x30)
 	Class KrakenIdleBehaviourParamsDataAsset*                    IdleParams;                                        // 0x38(0x8)
 	Struct KrakenShipWrappingBehaviourParamsCollection           ShipWrappingParams;                                // 0x40(0x10)
@@ -378,6 +398,7 @@ public:
 	float                                                        GlobalPlayRateScale;                               // 0x60(0x4)
 	Struct FloatRange                                            NewTargetTimeout;                                  // 0x64(0x10)
 	Struct FloatRange                                            UnavailableTargetTimeout;                          // 0x74(0x10)
+	char                                                         pad0x4_EJSEL[0x4];                                 // 0x84(0x4)
 	Struct KrakenTentacleParams                                  TentacleParams;                                    // 0x88(0x50)
 	Struct WeightedProbabilityRangeOfRanges                      DismissTimeoutWhenNoTargets;                       // 0xd8(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      DismissTimeoutWithNewTarget;                       // 0x108(0x30)
@@ -413,6 +434,7 @@ struct KrakenTentaclesChanceParams
 {
 public:
 	int                                                          NumberOfTentaclesSpawned;                          // 0x0(0x4)
+	char                                                         pad0x4_LESN0[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRange                              ProbabilityRange;                                  // 0x8(0x20)
 };
 
@@ -457,6 +479,7 @@ public:
 	class                                                        State;                                             // 0x0(0x8)
 	Class AnimSequence*                                          Animation;                                         // 0x8(0x8)
 	bool                                                         Loop;                                              // 0x10(0x1)
+	char                                                         pad0x7_0WE8U[0x7];                                 // 0x11(0x7)
 	TArray<Struct KrakenAnimatedTentacleTransitionAnimation>     Transitions;                                       // 0x18(0x10)
 };
 
@@ -467,6 +490,7 @@ struct KrakenAnimatedTentacleTransitionAnimation
 public:
 	class                                                        FromState;                                         // 0x0(0x8)
 	float                                                        BranchAnimationTimeRemaining;                      // 0x8(0x4)
+	char                                                         pad0x4_0L7W4[0x4];                                 // 0xc(0x4)
 	TArray<class AnimSequence*>                                  TransitionAnimations;                              // 0x10(0x10)
 };
 
@@ -487,6 +511,7 @@ public:
 	class                                                        State;                                             // 0x0(0x8)
 	Class AnimSequence*                                          Animation;                                         // 0x8(0x8)
 	bool                                                         Loop;                                              // 0x10(0x1)
+	char                                                         pad0x7_2HJWB[0x7];                                 // 0x11(0x7)
 	TArray<Struct KrakenHeadTransitionAnimation>                 Transitions;                                       // 0x18(0x10)
 };
 
@@ -514,6 +539,7 @@ struct KrakenHeadHitReactAnimations
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
+	char                                                         pad0x4_JY5X4[0x4];                                 // 0x4(0x4)
 	Class AnimSequence*                                          HitReactAnimation;                                 // 0x8(0x8)
 };
 
@@ -524,6 +550,7 @@ struct KrakenTentacleBehaviourParams
 public:
 	Class EnvQuery*                                              InactiveSpawnQueryTemplate;                        // 0x0(0x8)
 	float                                                        ChanceOfCannonSideSpawn;                           // 0x8(0x4)
+	char                                                         pad0x4_P21F7[0x4];                                 // 0xc(0x4)
 	Class EnvQuery*                                              ActiveCannonSideSpawnQueryTemplate;                // 0x10(0x8)
 	Class EnvQuery*                                              ActiveNonCannonSideSpawnQueryTemplate;             // 0x18(0x8)
 	class                                                        TentacleClass;                                     // 0x20(0x8)
@@ -536,6 +563,7 @@ public:
 	float                                                        PanicDespawnTentacleRadius;                        // 0x40(0x4)
 	float                                                        PanicDespawnAnimationPlayRateScale;                // 0x44(0x4)
 	float                                                        PreDeathAnimationPlayRateScale;                    // 0x48(0x4)
+	char                                                         pad0x4_WOZ3P[0x4];                                 // 0x4c(0x4)
 	TArray<Struct KrakenTentacleBehaviourActionChances>          OnDamageActionChances;                             // 0x50(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      TimeToSpendInInactiveState;                        // 0x60(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TimeToSpendInActiveState;                          // 0x90(0x30)
@@ -547,6 +575,7 @@ struct KrakenTentacleBehaviourActionChances
 {
 public:
 	byte                                                         ActionToTransitionTo;                              // 0x0(0x1)
+	char                                                         pad0x3_MXH5F[0x3];                                 // 0x1(0x3)
 	float                                                        WeightedChance;                                    // 0x4(0x4)
 };
 
@@ -576,6 +605,7 @@ struct KrakenPlayerGrabbingHoldingStateTransitionChance
 {
 public:
 	float                                                        WeightedChance;                                    // 0x0(0x4)
+	char                                                         pad0x4_0SBRC[0x4];                                 // 0x4(0x4)
 	class                                                        StateToTransitionTo;                               // 0x8(0x8)
 };
 
@@ -608,6 +638,7 @@ public:
 	float                                                        SpawnLocationDistributionRadius;                   // 0x0(0x4)
 	float                                                        SpawnLocationDistributionMinDistanceBetweenPoints; // 0x4(0x4)
 	float                                                        SpawnDistanceInFrontOfShip;                        // 0x8(0x4)
+	char                                                         pad0x4_FCBFZ[0x4];                                 // 0xc(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenSpawnAttemptsRange;                     // 0x10(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenSpawnAttemptsPostSpawnFailure;          // 0x40(0x30)
 	float                                                        SpawnChance;                                       // 0x70(0x4)

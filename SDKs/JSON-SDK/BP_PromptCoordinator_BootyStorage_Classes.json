@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_L0DP5[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "ShowLootPrompt",
         "Type": "bool",
         "Size": "0x1",
@@ -34,6 +40,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x123"
+      },
+      {
+        "Name": "pad0x4_VM34S[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x124"
       },
       {
         "Name": "MermaidPrompt",

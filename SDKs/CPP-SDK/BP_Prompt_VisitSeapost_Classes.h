@@ -6,17 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x140
+// Size 0x140 (Full Size[0x258] - InheritedSize[0x118]
 class BP_Prompt_VisitSeapost_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfb_6I73Y[0xfb];                               // 0x120(0xfb)
 	Struct ObjectMessagingHandle                                 Handle_EventObjectWielded;                         // 0x120(0x48)
 	Struct PrioritisedPromptWithHandle                           Prompt_WieledFishOrMeat;                           // 0x168(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_VisitSeapost;                               // 0x1d0(0x68)
 	bool                                                         IsWieldingMeatOrFish;                              // 0x238(0x1)
+	char                                                         pad0x3_N9XJJ[0x3];                                 // 0x239(0x3)
 	float                                                        DisplayDuration;                                   // 0x23c(0x4)
 	float                                                        DelayUntilNextPrompt;                              // 0x240(0x4)
+	char                                                         pad0x4_6O4KA[0x4];                                 // 0x244(0x4)
 	TArray<Class IgnoredFood>                                    IgnoredFood;                                       // 0x248(0x10)
 };
 

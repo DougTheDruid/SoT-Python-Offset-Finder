@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x80
+// Size 0x80 (Full Size[0x448] - InheritedSize[0x3c8]
 class BP_LargeShipLanterns_C: public Actor
 {
 public:

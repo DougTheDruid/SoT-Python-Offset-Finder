@@ -100,6 +100,12 @@
         "Offset": "0x11"
       },
       {
+        "Name": "pad0x2_5E2KZ[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x12"
+      },
+      {
         "Name": "SidewaysPropagationTimeOverride",
         "Type": "Struct FloatRange",
         "Size": "0x10",
@@ -292,6 +298,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_7HJS4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "Mesh",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
@@ -326,6 +338,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2d"
+      },
+      {
+        "Name": "pad0x2_RSF1Z[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2e"
       },
       {
         "Name": "MaxLODToSpawnFor",
@@ -387,6 +405,12 @@
         "Offset": "0x36"
       },
       {
+        "Name": "pad0x1_CP4V6[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x37"
+      },
+      {
         "Name": "CellIndex",
         "Type": "int",
         "Size": "0x4",
@@ -403,6 +427,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xf_2FSF0[0xf]",
+        "Type": "char",
+        "Size": "0xf",
+        "Offset": "0x41"
       },
       {
         "Name": "DefaultParticleEffectSpawnTransform",
@@ -597,6 +627,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x8_VIAJ2[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
         "Name": "CellDesc",
         "Type": "Struct FireCellDesc",
         "Size": "0x100",
@@ -653,6 +689,12 @@
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_ES06U[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       },
       {
         "Name": "ParticleTemplate",
@@ -746,6 +788,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_Z0F0S[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "TimeSpentCharring",
         "Type": "TArray<Float TimeSpentCharring>",
         "Size": "0x10",
@@ -780,6 +828,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x4_Z2TVN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
         "Name": "FireGridTexture",
         "Type": "Class Texture2DDynamic*",
         "Size": "0x8",
@@ -795,6 +849,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_MQYWL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       },
       {
         "Name": "DormantShipRegions",
@@ -907,6 +967,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x4_MC9ZM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x114"
       },
       {
         "Name": "LightParams",

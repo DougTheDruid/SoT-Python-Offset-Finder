@@ -42,6 +42,12 @@
         "Offset": "0x3ec"
       },
       {
+        "Name": "pad0x3_BWXLS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x3ed"
+      },
+      {
         "Name": "FadeCurve",
         "Type": "Class TimelineComponent*",
         "Size": "0x8",

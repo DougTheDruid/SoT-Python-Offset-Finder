@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x6a0] - InheritedSize[0x698]
 class BP_VanityChestInteraction_C: public ClothingChestInteraction
 {
 public:

@@ -6,10 +6,18 @@ BP_Prompt_RepairShipMast_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_WCMJZ[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: State_ShipMastDamaged
     Offset: '0x120'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_UW2EM[0x7]
+    Offset: '0x121'
+    Size: '0x7'
+    Type: char
   - Name: Handle_OnMastDamaged1
     Offset: '0x128'
     Size: '0x48'
@@ -18,6 +26,10 @@ BP_Prompt_RepairShipMast_C:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_DV9HX[0x7]
+    Offset: '0x171'
+    Size: '0x7'
+    Type: char
   - Name: Prompt_RepairShip
     Offset: '0x178'
     Size: '0x68'

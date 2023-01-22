@@ -45,6 +45,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x4_T8MZU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
         "Name": "PlayerSplashingVFXOverride",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
@@ -77,6 +83,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_N8L02[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       },
       {
         "Name": "LookAtOffsetParams",

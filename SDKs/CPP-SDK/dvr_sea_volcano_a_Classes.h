@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x180
+// Size 0x180 (Full Size[0x548] - InheritedSize[0x3c8]
 class dvr_sea_volcano_a_C: public Actor
 {
 public:

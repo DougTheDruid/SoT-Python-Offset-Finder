@@ -6,6 +6,12 @@
     "ClassSize": "0x248",
     "Attributes": [
       {
+        "Name": "pad0xa8_MDIOL[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "Texture",
         "Type": "Class TextureRenderTarget2D*",
         "Size": "0x8",
@@ -88,6 +94,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x199"
+      },
+      {
+        "Name": "pad0x178_NVY5W[0x178]",
+        "Type": "char",
+        "Size": "0x178",
+        "Offset": "0x198"
       }
     ]
   },
@@ -122,6 +134,12 @@
         "Offset": "0x328"
       },
       {
+        "Name": "pad0x3_7B0KS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x329"
+      },
+      {
         "Name": "ClickThroughAlphaThreshold",
         "Type": "float",
         "Size": "0x4",
@@ -132,6 +150,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x330"
+      },
+      {
+        "Name": "pad0x19_WCLXK[0x19]",
+        "Type": "char",
+        "Size": "0x19",
+        "Offset": "0x32f"
       }
     ]
   },
@@ -152,6 +176,12 @@
         "Type": "Class TextureRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x28_B9EQ8[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xde"
       }
     ]
   },
@@ -183,6 +213,12 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
+        "Name": "pad0x80_E4YXT[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x28"
+      },
+      {
         "Name": "StructTypes",
         "Type": "TArray<class Struct*>",
         "Size": "0x10",
@@ -201,6 +237,12 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x28_2R08A[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x36"
       }
     ]
   },
@@ -234,6 +276,12 @@
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x328"
+      },
+      {
+        "Name": "pad0x18_9LN0T[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x32e"
       }
     ]
   },
@@ -255,6 +303,12 @@
         "Type": "Class CoherentUIGTHUD*",
         "Size": "0x8",
         "Offset": "0x4c0"
+      },
+      {
+        "Name": "pad0xa0_8N4OH[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x4c6"
       }
     ]
   },
@@ -276,6 +330,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x3_SE8HR[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
       },
       {
         "Name": "InspectorPort",
@@ -356,6 +416,12 @@
         "Offset": "0x3e"
       },
       {
+        "Name": "pad0x1_EEWIT[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3f"
+      },
+      {
         "Name": "HUDMaterialName",
         "Type": "Struct FString",
         "Size": "0x10",
@@ -378,6 +444,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x61"
+      },
+      {
+        "Name": "pad0x8_3TBD6[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x60"
       }
     ]
   },
@@ -387,6 +459,12 @@
     "InheritedSize": "0x138",
     "ClassSize": "0x2a0",
     "Attributes": [
+      {
+        "Name": "pad0x20_3X9FN[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x138"
+      },
       {
         "Name": "Owner",
         "Type": "Class Actor*",
@@ -422,6 +500,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1fc"
+      },
+      {
+        "Name": "pad0x3_7A18T[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1fd"
       },
       {
         "Name": "ExecuteJSTimersThresholdMs",
@@ -472,6 +556,12 @@
         "Offset": "0x21c"
       },
       {
+        "Name": "pad0x1a3_P7M71[0x1a3]",
+        "Type": "char",
+        "Size": "0x1a3",
+        "Offset": "0x21d"
+      },
+      {
         "Name": "URL",
         "Type": "Struct FString",
         "Size": "0x10",
@@ -488,6 +578,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d4"
+      },
+      {
+        "Name": "pad0x5_6GA03[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x3d3"
       }
     ]
   },

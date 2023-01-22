@@ -103,6 +103,12 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
+        "Name": "pad0x20_W8CA9[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "ClueTextIndexAssetMap",
         "Type": "Class AbandonedNoteClueTextIndexAssetMap*",
         "Size": "0x8",
@@ -131,6 +137,12 @@
         "Type": "Class AbandonedNoteClueTextChoiceSource*",
         "Size": "0x8",
         "Offset": "0x148"
+      },
+      {
+        "Name": "pad0x90_KWZXL[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x14e"
       }
     ]
   },
@@ -255,44 +267,62 @@
         "Type": "TArray<Struct TextEntryWithLayout>",
         "Size": "0x10",
         "Offset": "0x158"
+      },
+      {
+        "Name": "pad0x70_QGTF6[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x166"
       }
     ]
   },
   "AbandonedNoteWieldable": {
     "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x7c0",
-    "InheritedSize": "0x780",
+    "FullSize": "0x7e0",
+    "InheritedSize": "0x7a0",
     "ClassSize": "0x40",
     "Attributes": [
+      {
+        "Name": "pad0x10_TFI0Y[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x7a0"
+      },
       {
         "Name": "WieldableItemCanvasRenderingComponent",
         "Type": "Class WieldableItemCanvasRenderingComponent*",
         "Size": "0x8",
-        "Offset": "0x790"
+        "Offset": "0x7b0"
       },
       {
         "Name": "AbandonedNoteRenderingComponent",
         "Type": "Class AbandonedNoteWieldableRenderingComponent*",
         "Size": "0x8",
-        "Offset": "0x798"
+        "Offset": "0x7b8"
       },
       {
         "Name": "InventoryItemComponent",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x7c0"
       },
       {
         "Name": "UsableWieldableComponent",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x7a8"
+        "Offset": "0x7c8"
       },
       {
         "Name": "QuestMapIcon",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x7b0"
+        "Offset": "0x7d0"
+      },
+      {
+        "Name": "pad0x11_H76CO[0x11]",
+        "Type": "char",
+        "Size": "0x11",
+        "Offset": "0x7cf"
       }
     ]
   },
@@ -314,6 +344,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x44_H25RR[0x44]",
+        "Type": "char",
+        "Size": "0x44",
+        "Offset": "0x42"
       }
     ]
   },
@@ -379,6 +415,12 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x10_U1EVO[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "MapMarkId",
         "Type": "class",
         "Size": "0x8",
@@ -415,6 +457,12 @@
         "Offset": "0xf0"
       },
       {
+        "Name": "pad0x7_30LM6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xf1"
+      },
+      {
         "Name": "DebugCrossId",
         "Type": "class",
         "Size": "0x8",
@@ -427,24 +475,48 @@
         "Offset": "0x100"
       },
       {
+        "Name": "pad0x7_4NJ8Q[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
+      },
+      {
         "Name": "ClueRenderData",
         "Type": "TArray<Struct MapTextureRenderData>",
         "Size": "0x10",
         "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x68_HYKS2[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x116"
       }
     ]
   },
   "ClueSiteCircleMapWieldable": {
     "Super": "RenderToTextureMapBase",
-    "FullSize": "0x870",
-    "InheritedSize": "0x830",
+    "FullSize": "0x890",
+    "InheritedSize": "0x850",
     "ClassSize": "0x40",
     "Attributes": [
+      {
+        "Name": "pad0x20_1OWC0[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x850"
+      },
       {
         "Name": "MapRadialIconData",
         "Type": "Struct MapRadialIconData",
         "Size": "0x18",
-        "Offset": "0x850"
+        "Offset": "0x870"
+      },
+      {
+        "Name": "pad0x38_M71P9[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x886"
       }
     ]
   },
@@ -514,6 +586,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x44_O99VC[0x44]",
+        "Type": "char",
+        "Size": "0x44",
+        "Offset": "0x42"
       }
     ]
   },
@@ -562,6 +640,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x9_8L7P2[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x3f"
       }
     ]
   },
@@ -610,6 +694,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x1c_Q4QD8[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x52"
       }
     ]
   },
@@ -663,6 +753,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xc_AAD0Z[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x42"
       }
     ]
   },
@@ -684,6 +780,12 @@
         "Type": "Struct NPCData",
         "Size": "0xb8",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x1a0_QI36Q[0x1a0]",
+        "Type": "char",
+        "Size": "0x1a0",
+        "Offset": "0xee"
       }
     ]
   },
@@ -700,6 +802,12 @@
     "InheritedSize": "0x138",
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x8_LMOC3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
       {
         "Name": "ClueToObtain",
         "Type": "Class ClueDescriptor*",
@@ -732,6 +840,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x1c_Y1H48[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x4a"
       }
     ]
   },
@@ -770,10 +884,22 @@
     "ClassSize": "0x228",
     "Attributes": [
       {
+        "Name": "pad0x18_HX74L[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x60"
+      },
+      {
         "Name": "ObtainedClues",
         "Type": "TArray<class ClueDescriptor*>",
         "Size": "0x10",
         "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x50_2UMLK[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x88"
       },
       {
         "Name": "TitleText",
@@ -991,6 +1117,12 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0xa8_3OJB2[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0xa6"
       }
     ]
   },
@@ -1026,6 +1158,12 @@
     "InheritedSize": "0x30",
     "ClassSize": "0x50",
     "Attributes": [
+      {
+        "Name": "pad0x20_0X1B9[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x30"
+      },
       {
         "Name": "LootItemSpawnXYDistanceFromClueIncrementMin",
         "Type": "int",
@@ -1069,6 +1207,12 @@
         "Offset": "0x68"
       },
       {
+        "Name": "pad0x4_157NM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
         "Name": "SinkIntoSandItems",
         "Type": "TArray<AssetClass SinkIntoSandItems>",
         "Size": "0x10",
@@ -1108,6 +1252,12 @@
         "Offset": "0x48"
       },
       {
+        "Name": "pad0x8_HMEEK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
         "Name": "SpawnTransform",
         "Type": "Struct Transform",
         "Size": "0x30",
@@ -1118,6 +1268,12 @@
         "Type": "TArray<Class SinkIntoSandItems>",
         "Size": "0x10",
         "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x60_YBV3B[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -1170,6 +1326,12 @@
         "Type": "Struct Transform",
         "Size": "0x30",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x90_OEOEQ[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x8e"
       }
     ]
   },
@@ -1209,6 +1371,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x68"
+      },
+      {
+        "Name": "pad0xc_FOGSO[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x6a"
       }
     ]
   },
@@ -1219,10 +1387,22 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
+        "Name": "pad0x8_XLO8C[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "GrammaticalGender",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x9_OXU33[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0xcf"
       }
     ]
   },

@@ -16,6 +16,10 @@ DisplayInvasionBannersStepDesc:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_8QJS1[0x7]
+    Offset: '0xb9'
+    Size: '0x7'
+    Type: char
   - Name: DisplayShipsNameForCrewId
     Offset: '0xc0'
     Size: '0x30'
@@ -124,6 +128,10 @@ InvasionBattleBounds:
     Offset: '0x3e4'
     Size: '0x4'
     Type: float
+  - Name: pad0x8_P9P87[0x8]
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: char
   - Name: ShipThatWasDestroyed
     Offset: '0x3f0'
     Size: '0x8'
@@ -166,6 +174,10 @@ InvasionLocationsDataAssetGetterInterface:
   Super: Interface
 InvasionService:
   Attributes:
+  - Name: pad0x40_EOBQ7[0x40]
+    Offset: '0x3c8'
+    Size: '0x40'
+    Type: char
   - Name: InvasionSettings
     Offset: '0x408'
     Size: '0x8'
@@ -178,32 +190,40 @@ InvasionService:
     Offset: '0x418'
     Size: '0x8'
     Type: Class InvasionLocationsDataAsset*
+  - Name: pad0x160_B5ZQE[0x160]
+    Offset: '0x420'
+    Size: '0x160'
+    Type: char
   - Name: MatchmakingCrews
-    Offset: '0x588'
+    Offset: '0x580'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: InvadingCrews
-    Offset: '0x598'
+    Offset: '0x590'
     Size: '0x10'
     Type: TArray<Struct InvasionParticipatingCrewData>
   - Name: ReplicatedInvasionCrewMusicStates
-    Offset: '0x5a8'
+    Offset: '0x5a0'
     Size: '0x10'
     Type: TArray<Struct ReplicatedInvasionCrewMusicState>
   - Name: MatchmakingCrewsReplicated
-    Offset: '0x5b8'
+    Offset: '0x5b0'
     Size: '0x10'
     Type: TArray<Struct InvasionServiceMatchmakingCrewInfo>
   - Name: InvadingCrewsReplicated
-    Offset: '0x5c8'
+    Offset: '0x5c0'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: InvasionBattleBoundsList
-    Offset: '0x5d8'
+    Offset: '0x5d0'
     Size: '0x10'
     Type: TArray<class InvasionBattleBounds*>
-  ClassSize: '0x288'
-  FullSize: '0x650'
+  - Name: pad0x88_7G7LX[0x88]
+    Offset: '0x5de'
+    Size: '0x88'
+    Type: char
+  ClassSize: '0x280'
+  FullSize: '0x648'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionServiceDataAsset:
@@ -224,6 +244,10 @@ InvasionServiceDataAsset:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_PHAA9[0x4]
+    Offset: '0x44'
+    Size: '0x4'
+    Type: char
   - Name: Invasion_LosingCrew_VoyageDescDataAsset
     Offset: '0x48'
     Size: '0x8'
@@ -264,24 +288,44 @@ InvasionServiceDataAsset:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
+  - Name: AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Min
+    Offset: '0x84'
+    Size: '0x4'
+    Type: float
+  - Name: AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Max
     Offset: '0x88'
+    Size: '0x4'
+    Type: float
+  - Name: AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Min
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  - Name: AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Max
+    Offset: '0x90'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_5J0WH[0x4]
+    Offset: '0x94'
+    Size: '0x4'
+    Type: char
+  - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
+    Offset: '0x98'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
   - Name: Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset
-    Offset: '0x90'
+    Offset: '0xa0'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
   - Name: StopPlayingEmergeMusicAfterSeconds
-    Offset: '0x98'
+    Offset: '0xa8'
     Size: '0x4'
     Type: float
   - Name: WorldEventsCooldown
-    Offset: '0x9c'
+    Offset: '0xac'
     Size: '0x4'
     Type: float
-  ClassSize: '0x78'
-  FullSize: '0xa0'
+  ClassSize: '0x88'
+  FullSize: '0xb0'
   InheritedSize: '0x28'
   Super: DataAsset
 InvasionServiceInterface:
@@ -312,6 +356,10 @@ SetInvasionMusicStateForCrewStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_JH0TH[0x9]
+    Offset: '0x7f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'
@@ -342,8 +390,12 @@ TaleQuestInvasionMatchmakingService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestInvasionMatchmakingServiceDesc*
-  ClassSize: '0x190'
-  FullSize: '0x1f0'
+  - Name: pad0x1a0_95IC4[0x1a0]
+    Offset: '0x66'
+    Size: '0x1a0'
+    Type: char
+  ClassSize: '0x198'
+  FullSize: '0x1f8'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestInvasionMatchmakingServiceDesc:
@@ -382,6 +434,10 @@ TaleQuestInvasionService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestInvasionServiceDesc*
+  - Name: pad0xd0_7JIWB[0xd0]
+    Offset: '0x66'
+    Size: '0xd0'
+    Type: char
   ClassSize: '0xc8'
   FullSize: '0x128'
   InheritedSize: '0x60'
@@ -444,6 +500,10 @@ WaitForShipToBeDefeatedStepDesc:
     Offset: '0x1a0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_682I8[0x4]
+    Offset: '0x1a4'
+    Size: '0x4'
+    Type: char
   - Name: FailMessage
     Offset: '0x1a8'
     Size: '0x38'

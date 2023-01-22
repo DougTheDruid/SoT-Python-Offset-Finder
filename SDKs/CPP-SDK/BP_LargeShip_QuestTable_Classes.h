@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50
+// Size 0x50 (Full Size[0x8c8] - InheritedSize[0x878]
 class BP_LargeShip_QuestTable_C: public VoyageTable
 {
 public:

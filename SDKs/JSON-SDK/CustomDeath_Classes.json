@@ -13,10 +13,22 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x38_8QH2W[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "CustomPlayerStarts",
         "Type": "TArray<class PlayerStart*>",
         "Size": "0x10",
         "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x70_U3GJO[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x40e"
       }
     ]
   },

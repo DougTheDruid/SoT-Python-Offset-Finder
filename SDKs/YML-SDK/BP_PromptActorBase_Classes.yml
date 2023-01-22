@@ -14,10 +14,18 @@ BP_PromptActorBase_C:
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_C5O31[0x7]
+    Offset: '0x3d9'
+    Size: '0x7'
+    Type: char
   - Name: PromptCoordinators
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class BP_PromptCoordinator_Base_C*>
+  - Name: pad0x30_56UEF[0x30]
+    Offset: '0x3ee'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x400'
   InheritedSize: '0x3c8'

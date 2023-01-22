@@ -55,6 +55,10 @@ CheckBoxStyle:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_N7M3Y[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   - Name: UncheckedImage
     Offset: '0x10'
     Size: '0x90'
@@ -245,6 +249,10 @@ DockTabStyle:
     Offset: '0x6b0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_YQA04[0x4]
+    Offset: '0x6b4'
+    Size: '0x4'
+    Type: char
   - Name: FlashColor
     Offset: '0x6b8'
     Size: '0x30'
@@ -352,6 +360,10 @@ FontData:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_WHM4M[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   - Name: FontData
     Offset: '0x20'
     Size: '0x10'
@@ -579,6 +591,10 @@ SlateBrush:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_2LA51[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: Margin
     Offset: '0xc'
     Size: '0x10'
@@ -587,6 +603,10 @@ SlateBrush:
     Offset: '0x1c'
     Size: '0x10'
     Type: Struct LinearColor
+  - Name: pad0x4_Z7R9I[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: TintColor
     Offset: '0x30'
     Size: '0x30'
@@ -603,6 +623,10 @@ SlateBrush:
     Offset: '0x62'
     Size: '0x1'
     Type: byte
+  - Name: pad0x5_7PSH4[0x5]
+    Offset: '0x63'
+    Size: '0x5'
+    Type: char
   - Name: ResourceObject
     Offset: '0x68'
     Size: '0x8'
@@ -619,6 +643,10 @@ SlateBrush:
     Offset: '0x79'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_LXG8T[0x2]
+    Offset: '0x7a'
+    Size: '0x2'
+    Type: char
   - Name: UVRegion
     Offset: '0x7c'
     Size: '0x14'
@@ -645,6 +673,10 @@ SlateFontInfo:
     Offset: '0x8'
     Size: '0x8'
     Type: Class Object*
+  - Name: pad0x18_E5M3Q[0x18]
+    Offset: '0x10'
+    Size: '0x18'
+    Type: char
   - Name: TypefaceFontName
     Offset: '0x28'
     Size: '0x8'

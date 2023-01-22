@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x5a8] - InheritedSize[0x590]
 class BP_ShipWeaponsChest_C: public PossessionsChest
 {
 public:

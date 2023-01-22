@@ -26,6 +26,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x7_1S6S8[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
         "Name": "GameModeOverride",
         "Type": "class",
         "Size": "0x8",
@@ -50,6 +56,12 @@
         "Offset": "0x31"
       },
       {
+        "Name": "pad0x2_UKB8F[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x32"
+      },
+      {
         "Name": "HandleFrames",
         "Type": "int",
         "Size": "0x4",
@@ -60,6 +72,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_BBW74[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
       },
       {
         "Name": "FrameRate",

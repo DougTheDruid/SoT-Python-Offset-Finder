@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x450] - InheritedSize[0x440]
 class BP_Rudder_C: public Rudder
 {
 public:

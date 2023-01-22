@@ -44,6 +44,12 @@
         "Offset": "0xc"
       },
       {
+        "Name": "pad0x8_2K6O4[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
         "Name": "ExplosionData",
         "Type": "TArray<Struct FireworkExplosionData>",
         "Size": "0x10",
@@ -60,6 +66,12 @@
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x8_V0BT0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
       },
       {
         "Name": "FireworkFeedbackData",

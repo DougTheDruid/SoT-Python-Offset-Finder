@@ -28,6 +28,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2f4"
+      },
+      {
+        "Name": "pad0x6d_MBDT0[0x6d]",
+        "Type": "char",
+        "Size": "0x6d",
+        "Offset": "0x2f3"
       }
     ]
   },
@@ -77,10 +83,22 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x8_FBXJH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "RevisitCooldown",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x3c_FNBA3[0x3c]",
+        "Type": "char",
+        "Size": "0x3c",
+        "Offset": "0xd2"
       }
     ]
   },

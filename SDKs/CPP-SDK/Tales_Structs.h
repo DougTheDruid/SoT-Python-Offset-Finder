@@ -11,6 +11,7 @@ struct TaleQuestDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
+	char                                                         pad0x4_MHRL2[0x4];                                 // 0x4(0x4)
 	Struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
 	int                                                          NumToDeliver;                                      // 0x30(0x4)
 	int                                                          NumToAllocate;                                     // 0x34(0x4)
@@ -99,6 +100,7 @@ public:
 	Struct Guid                                                  TaleId;                                            // 0x0(0x10)
 	class                                                        DataID;                                            // 0x10(0x8)
 	bool                                                         DataBool;                                          // 0x18(0x1)
+	char                                                         pad0x3_XUB1I[0x3];                                 // 0x19(0x3)
 	int                                                          DataInt;                                           // 0x1c(0x4)
 };
 
@@ -118,6 +120,7 @@ public:
 	Struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
 	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
 	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
+	char                                                         pad0x6_58LOQ[0x6];                                 // 0x22(0x6)
 	Struct FText                                                 FailureMessage;                                    // 0x28(0x38)
 };
 
@@ -254,6 +257,13 @@ public:
 
 // Size 0x28
 struct TaleQuestForEachCrewTask
+{
+public:
+};
+
+
+// Size 0x1
+struct TaleQuestStopPermanentPromptEvent
 {
 public:
 };

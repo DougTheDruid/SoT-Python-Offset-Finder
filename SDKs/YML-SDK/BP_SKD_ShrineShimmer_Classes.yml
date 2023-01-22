@@ -38,6 +38,10 @@ BP_SKD_ShrineShimmer_C:
     Offset: '0x4ac'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_TMGK7[0x3]
+    Offset: '0x4ad'
+    Size: '0x3'
+    Type: char
   - Name: FadeCurve
     Offset: '0x4b0'
     Size: '0x8'

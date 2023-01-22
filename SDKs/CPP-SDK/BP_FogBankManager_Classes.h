@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x3f0] - InheritedSize[0x3e8]
 class BP_FogBankManager_C: public FogBankManager
 {
 public:

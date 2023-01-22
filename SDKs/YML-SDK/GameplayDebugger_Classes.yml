@@ -26,6 +26,10 @@ GameplayDebuggerSettings:
     Offset: '0x7c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_TCA7S[0x3]
+    Offset: '0x7d'
+    Size: '0x3'
+    Type: char
   - Name: ActiveEQSIndex
     Offset: '0x80'
     Size: '0x4'
@@ -54,6 +58,10 @@ GameplayDebuggerSettings:
     Offset: '0x89'
     Size: '0x1'
     Type: bool
+  - Name: pad0x20_HJPWJ[0x20]
+    Offset: '0x88'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x80'
   FullSize: '0xa8'
   InheritedSize: '0x28'
@@ -68,6 +76,10 @@ GameplayDebuggingComponent:
     Offset: '0x5d0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_NFIYV[0x4]
+    Offset: '0x5d4'
+    Size: '0x4'
+    Type: char
   - Name: ReplicateViewDataCounters
     Offset: '0x5d8'
     Size: '0x10'
@@ -140,6 +152,10 @@ GameplayDebuggingComponent:
     Offset: '0x6e8'
     Size: '0x10'
     Type: TArray<Byte BlackboardRepData>
+  - Name: pad0x10_FDI1C[0x10]
+    Offset: '0x6f8'
+    Size: '0x10'
+    Type: char
   - Name: PathPoints
     Offset: '0x708'
     Size: '0x10'
@@ -148,6 +164,10 @@ GameplayDebuggingComponent:
     Offset: '0x718'
     Size: '0x10'
     Type: TArray<Byte PathCorridorData>
+  - Name: pad0x10_QP6IC[0x10]
+    Offset: '0x728'
+    Size: '0x10'
+    Type: char
   - Name: NavmeshRepData
     Offset: '0x738'
     Size: '0x10'
@@ -180,10 +200,18 @@ GameplayDebuggingComponent:
     Offset: '0x768'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_TJ6C6[0x7]
+    Offset: '0x769'
+    Size: '0x7'
+    Type: char
   - Name: TargetActor
     Offset: '0x770'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0x88_HQH0E[0x88]
+    Offset: '0x776'
+    Size: '0x88'
+    Type: char
   ClassSize: '0x230'
   FullSize: '0x7f0'
   InheritedSize: '0x5c0'
@@ -206,6 +234,10 @@ GameplayDebuggingControllerComponent:
     Offset: '0xe0'
     Size: '0x8'
     Type: Class InputComponent*
+  - Name: pad0x28_N7L5K[0x28]
+    Offset: '0xe8'
+    Size: '0x28'
+    Type: char
   - Name: ActivationKey
     Offset: '0x110'
     Size: '0x28'
@@ -296,6 +328,10 @@ GameplayDebuggingHUDComponent:
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class PlayerController*
+  - Name: pad0xe0_TT6J8[0xe0]
+    Offset: '0x3e6'
+    Size: '0xe0'
+    Type: char
   ClassSize: '0xf0'
   FullSize: '0x4b8'
   InheritedSize: '0x3c8'
@@ -318,6 +354,10 @@ GameplayDebuggingReplicator:
     Offset: '0x3f8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_612D6[0x4]
+    Offset: '0x3fc'
+    Size: '0x4'
+    Type: char
   - Name: DebugComponent
     Offset: '0x400'
     Size: '0x8'
@@ -358,6 +398,10 @@ GameplayDebuggingReplicator:
     Offset: '0x41e'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_EWD3J[0x1]
+    Offset: '0x41f'
+    Size: '0x1'
+    Type: char
   - Name: ActiveEQSIndex
     Offset: '0x420'
     Size: '0x4'
@@ -386,6 +430,10 @@ GameplayDebuggingReplicator:
     Offset: '0x429'
     Size: '0x1'
     Type: bool
+  - Name: pad0x50_2QF8X[0x50]
+    Offset: '0x428'
+    Size: '0x50'
+    Type: char
   ClassSize: '0xb0'
   FullSize: '0x478'
   InheritedSize: '0x3c8'

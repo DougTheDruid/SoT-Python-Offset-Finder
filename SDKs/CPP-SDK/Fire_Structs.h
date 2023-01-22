@@ -70,6 +70,7 @@ public:
 	float                                                        ChanceToAffectCellsBelow;                          // 0xc(0x4)
 	bool                                                         TreatDiagonalsAsAdjacent;                          // 0x10(0x1)
 	bool                                                         OverrideFirePropagationTimesForAffectedCells;      // 0x11(0x1)
+	char                                                         pad0x2_5E2KZ[0x2];                                 // 0x12(0x2)
 	Struct FloatRange                                            SidewaysPropagationTimeOverride;                   // 0x14(0x10)
 	Struct FloatRange                                            UpwardPropagationTimeOverride;                     // 0x24(0x10)
 	Struct FloatRange                                            DownwardPropagationTimeOverride;                   // 0x34(0x10)
@@ -133,12 +134,14 @@ struct FireCellStateParticleTemplate
 public:
 	Class ParticleSystem*                                        Template;                                          // 0x0(0x8)
 	int                                                          TranslucencySortPriority;                          // 0x8(0x4)
+	char                                                         pad0x4_7HJS4[0x4];                                 // 0xc(0x4)
 	Class StaticMesh*                                            Mesh;                                              // 0x10(0x8)
 	float                                                        MeshSpawnTime;                                     // 0x18(0x4)
 	float                                                        MeshDespawnTime;                                   // 0x1c(0x4)
 	Struct Vector                                                MeshScale;                                         // 0x20(0xc)
 	byte                                                         State;                                             // 0x2c(0x1)
 	bool                                                         OverrideMaxLODToSpawnFor;                          // 0x2d(0x1)
+	char                                                         pad0x2_RSF1Z[0x2];                                 // 0x2e(0x2)
 	int                                                          MaxLODToSpawnFor;                                  // 0x30(0x4)
 	bool                                                         SpawnWithLowFrequencySettings;                     // 0x34(0x1)
 	bool                                                         VisibleInLowDetailMode;                            // 0x35(0x1)
@@ -155,9 +158,11 @@ public:
 	bool                                                         CanBurn;                                           // 0x34(0x1)
 	bool                                                         IsExposedToWeather;                                // 0x35(0x1)
 	byte                                                         Deck;                                              // 0x36(0x1)
+	char                                                         pad0x1_CP4V6[0x1];                                 // 0x37(0x1)
 	int                                                          CellIndex;                                         // 0x38(0x4)
 	int                                                          MasterCellFlatIndex;                               // 0x3c(0x4)
 	bool                                                         ShouldSpawnDefaultParticleEffect;                  // 0x40(0x1)
+	char                                                         pad0xf_2FSF0[0xf];                                 // 0x41(0xf)
 	Struct Transform                                             DefaultParticleEffectSpawnTransform;               // 0x50(0x30)
 	Struct Plane                                                 DefaultParticleEffectPlane;                        // 0x80(0x10)
 	TArray<Struct FireCellStateParticleTemplate>                 CustomParticleEffectTemplates;                     // 0x90(0x10)
@@ -227,6 +232,7 @@ struct FireDefaultVFXSpawnData
 {
 public:
 	Struct FireCellStateParticleTemplate                         Template;                                          // 0x0(0x38)
+	char                                                         pad0x8_VIAJ2[0x8];                                 // 0x38(0x8)
 	Struct FireCellDesc                                          CellDesc;                                          // 0x40(0x100)
 };
 
@@ -249,6 +255,7 @@ struct FireParticleSystem
 {
 public:
 	Class ParticleSystemComponent*                               SpawnedParticleSystem;                             // 0x0(0x8)
+	char                                                         pad0x8_ES06U[0x8];                                 // 0x8(0x8)
 	Struct FireCellStateParticleTemplate                         ParticleTemplate;                                  // 0x10(0x38)
 };
 
@@ -295,6 +302,7 @@ struct ReplicatedFireCellCharringData
 {
 public:
 	float                                                        MaxCharringTime;                                   // 0x0(0x4)
+	char                                                         pad0x4_Z0F0S[0x4];                                 // 0x4(0x4)
 	TArray<Float TimeSpentCharring>                              TimeSpentCharring;                                 // 0x8(0x10)
 };
 
@@ -313,6 +321,7 @@ struct FireGridCharringManager
 public:
 	TArray<class MaterialInterface*>                             OwnerMaterials;                                    // 0x0(0x10)
 	Struct Vector                                                AdditionalGridOffsetForCharring;                   // 0x10(0xc)
+	char                                                         pad0x4_Z2TVN[0x4];                                 // 0x1c(0x4)
 	Class Texture2DDynamic*                                      FireGridTexture;                                   // 0x20(0x8)
 };
 
@@ -322,6 +331,7 @@ struct ShipFireLightRelativeSpawnDesc
 {
 public:
 	Struct Vector                                                LightPositionOffset;                               // 0x30(0xc)
+	char                                                         pad0x4_MQYWL[0x4];                                 // 0x3c(0x4)
 	TArray<Byte DormantShipRegions>                              DormantShipRegions;                                // 0x40(0x10)
 	float                                                        DormantFadeDistance;                               // 0x50(0x4)
 	float                                                        AreaLightScaleWhenNotOnShip;                       // 0x54(0x4)
@@ -353,6 +363,7 @@ public:
 	float                                                        MaxLightRadius;                                    // 0x108(0x4)
 	float                                                        MinFlickerScale;                                   // 0x10c(0x4)
 	float                                                        LightMovementSpeedCmPerSecond;                     // 0x110(0x4)
+	char                                                         pad0x4_MC9ZM[0x4];                                 // 0x114(0x4)
 	Class ShipFireLightParamsDataAsset*                          LightParams;                                       // 0x118(0x8)
 	Class PostProcessComponent*                                  ShipPostProcessComponent;                          // 0x120(0x8)
 };

@@ -6,17 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38
+// Size 0x38 (Full Size[0xaa8] - InheritedSize[0xa70]
 class BP_FlintlockPistol_C: public ProjectileWeapon
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa50(0x8)
-	Class PostProcessComponent*                                  PostProcess;                                       // 0xa58(0x8)
-	byte                                                         sfx relationship;                                  // 0xa60(0x1)
-	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xa68(0x8)
-	Class Object*                                                ThirdPerson_VFX_AI;                                // 0xa70(0x8)
-	Class WwiseEvent*                                            Flintlock3rdPersonSFX;                             // 0xa78(0x8)
-	Class WwiseEvent*                                            FlintLockFirstPersonSFX;                           // 0xa80(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa70(0x8)
+	Class PostProcessComponent*                                  PostProcess;                                       // 0xa78(0x8)
+	byte                                                         sfx relationship;                                  // 0xa80(0x1)
+	char                                                         pad0x7_PEC7R[0x7];                                 // 0xa81(0x7)
+	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xa88(0x8)
+	Class Object*                                                ThirdPerson_VFX_AI;                                // 0xa90(0x8)
+	Class WwiseEvent*                                            Flintlock3rdPersonSFX;                             // 0xa98(0x8)
+	Class WwiseEvent*                                            FlintLockFirstPersonSFX;                           // 0xaa0(0x8)
 };
 
 

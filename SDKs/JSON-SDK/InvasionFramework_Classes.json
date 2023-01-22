@@ -24,6 +24,12 @@
         "Type": "Class TaleQuestInvasionServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0xd0_7JIWB[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
+        "Offset": "0x66"
       }
     ]
   },
@@ -76,6 +82,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x7_8QJS1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xb9"
       },
       {
         "Name": "DisplayShipsNameForCrewId",
@@ -231,6 +243,12 @@
         "Offset": "0x3e4"
       },
       {
+        "Name": "pad0x8_P9P87[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
         "Name": "ShipThatWasDestroyed",
         "Type": "Class Actor*",
         "Size": "0x8",
@@ -281,9 +299,9 @@
   },
   "InvasionServiceDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0xa0",
+    "FullSize": "0xb0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x78",
+    "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "Matchmaking_VoyageDescDataAsset",
@@ -308,6 +326,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_PHAA9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
       },
       {
         "Name": "Invasion_LosingCrew_VoyageDescDataAsset",
@@ -370,37 +394,73 @@
         "Offset": "0x80"
       },
       {
+        "Name": "AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x4_5J0WH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x94"
+      },
+      {
         "Name": "Invasion_Debug_AggressivePassive_VoyageDescDataAsset",
         "Type": "Class VoyageDescDataAsset*",
         "Size": "0x8",
-        "Offset": "0x88"
+        "Offset": "0x98"
       },
       {
         "Name": "Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset",
         "Type": "Class VoyageDescDataAsset*",
         "Size": "0x8",
-        "Offset": "0x90"
+        "Offset": "0xa0"
       },
       {
         "Name": "StopPlayingEmergeMusicAfterSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x98"
+        "Offset": "0xa8"
       },
       {
         "Name": "WorldEventsCooldown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x9c"
+        "Offset": "0xac"
       }
     ]
   },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x650",
+    "FullSize": "0x648",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x288",
+    "ClassSize": "0x280",
     "Attributes": [
+      {
+        "Name": "pad0x40_EOBQ7[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "InvasionSettings",
         "Type": "Class InvasionSettings*",
@@ -420,40 +480,52 @@
         "Offset": "0x418"
       },
       {
+        "Name": "pad0x160_B5ZQE[0x160]",
+        "Type": "char",
+        "Size": "0x160",
+        "Offset": "0x420"
+      },
+      {
         "Name": "MatchmakingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x588"
+        "Offset": "0x580"
       },
       {
         "Name": "InvadingCrews",
         "Type": "TArray<Struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x598"
+        "Offset": "0x590"
       },
       {
         "Name": "ReplicatedInvasionCrewMusicStates",
         "Type": "TArray<Struct ReplicatedInvasionCrewMusicState>",
         "Size": "0x10",
-        "Offset": "0x5a8"
+        "Offset": "0x5a0"
       },
       {
         "Name": "MatchmakingCrewsReplicated",
         "Type": "TArray<Struct InvasionServiceMatchmakingCrewInfo>",
         "Size": "0x10",
-        "Offset": "0x5b8"
+        "Offset": "0x5b0"
       },
       {
         "Name": "InvadingCrewsReplicated",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x5c8"
+        "Offset": "0x5c0"
       },
       {
         "Name": "InvasionBattleBoundsList",
         "Type": "TArray<class InvasionBattleBounds*>",
         "Size": "0x10",
-        "Offset": "0x5d8"
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "pad0x88_7G7LX[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x5de"
       }
     ]
   },
@@ -489,6 +561,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x9_JH0TH[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x7f"
       }
     ]
   },
@@ -521,15 +599,21 @@
   },
   "TaleQuestInvasionMatchmakingService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x1f0",
+    "FullSize": "0x1f8",
     "InheritedSize": "0x60",
-    "ClassSize": "0x190",
+    "ClassSize": "0x198",
     "Attributes": [
       {
         "Name": "ServiceDesc",
         "Type": "Class TaleQuestInvasionMatchmakingServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x1a0_95IC4[0x1a0]",
+        "Type": "char",
+        "Size": "0x1a0",
+        "Offset": "0x66"
       }
     ]
   },
@@ -628,6 +712,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x1a0"
+      },
+      {
+        "Name": "pad0x4_682I8[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1a4"
       },
       {
         "Name": "FailMessage",

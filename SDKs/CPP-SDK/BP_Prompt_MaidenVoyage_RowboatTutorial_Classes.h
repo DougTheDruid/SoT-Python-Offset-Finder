@@ -6,15 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x292
+// Size 0x292 (Full Size[0x3aa] - InheritedSize[0x118]
 class BP_Prompt_MaidenVoyage_RowboatTutorial_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_YY8CI[0xfc];                               // 0x120(0xfc)
 	bool                                                         State_SatInRowboat;                                // 0x120(0x1)
+	char                                                         pad0x7_BHA0N[0x7];                                 // 0x121(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt_RowTheBoat;                                 // 0x128(0x68)
 	Struct ObjectMessagingHandle                                 Handle_UseRowboat;                                 // 0x190(0x48)
 	bool                                                         State_LeaveRowboat;                                // 0x1d8(0x1)
+	char                                                         pad0x7_3UBER[0x7];                                 // 0x1d9(0x7)
 	Struct ObjectMessagingHandle                                 Handle_LeaveRowboat;                               // 0x1e0(0x48)
 	Struct PrioritisedPromptWithHandle                           Prompt_ReleaseOars;                                // 0x228(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_Brake;                                      // 0x290(0x68)

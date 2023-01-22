@@ -2,20 +2,36 @@
 # https://github.com/DougTheDruid
 PlayerLootMarkerService:
   Attributes:
+  - Name: pad0x8_D2VY2[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: Params
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class PlayerLootMarkerServiceParams*
-  - Name: ShortRangeMarkers
+  - Name: pad0x20_GMALD[0x20]
     Offset: '0x3d8'
+    Size: '0x20'
+    Type: char
+  - Name: ShortRangeMarkers
+    Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<Weakclass ShortRangeMarkers>
+  - Name: pad0xf8_YHKQG[0xf8]
+    Offset: '0x408'
+    Size: '0xf8'
+    Type: char
   - Name: BatchData
-    Offset: '0x4e0'
+    Offset: '0x500'
     Size: '0x10'
     Type: TArray<Struct PlayerLootMarkerWorldEdgeBatchData>
-  ClassSize: '0x128'
-  FullSize: '0x4f0'
+  - Name: pad0x30_MGA4E[0x30]
+    Offset: '0x50e'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x158'
+  FullSize: '0x520'
   InheritedSize: '0x3c8'
   Super: Actor
 PlayerLootMarkerServiceInterface:
@@ -34,6 +50,10 @@ PlayerLootMarkerServiceParams:
     Offset: '0x30'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_MO6TZ[0xc]
+    Offset: '0x32'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

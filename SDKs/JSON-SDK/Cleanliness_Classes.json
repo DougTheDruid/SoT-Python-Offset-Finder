@@ -20,6 +20,12 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
+        "Name": "pad0x10_299QA[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "DirtinessStrengthToMaterialStrength",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
@@ -42,6 +48,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x5c_AWXN4[0x5c]",
+        "Type": "char",
+        "Size": "0x5c",
+        "Offset": "0xf2"
       }
     ]
   },

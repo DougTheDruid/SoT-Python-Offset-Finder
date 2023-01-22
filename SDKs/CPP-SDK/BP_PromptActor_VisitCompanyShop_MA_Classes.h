@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x90
+// Size 0x90 (Full Size[0x490] - InheritedSize[0x400]
 class BP_PromptActor_VisitCompanyShop_MA_C: public BP_PromptActorBase_C
 {
 public:

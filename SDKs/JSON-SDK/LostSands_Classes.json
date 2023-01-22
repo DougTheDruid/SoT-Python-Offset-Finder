@@ -6,6 +6,12 @@
     "ClassSize": "0x230",
     "Attributes": [
       {
+        "Name": "pad0xb8_O7T62[0xb8]",
+        "Type": "char",
+        "Size": "0xb8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "ActionRulesComponent",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
@@ -94,6 +100,12 @@
         "Type": "Struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x574"
+      },
+      {
+        "Name": "pad0x88_IKUMF[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x576"
       }
     ]
   },

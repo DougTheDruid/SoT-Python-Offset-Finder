@@ -41,6 +41,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x7_FXV7A[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
         "Name": "Rewards",
         "Type": "TArray<Struct SeasonReward>",
         "Size": "0x10",
@@ -158,6 +164,12 @@
         "Offset": "0x20"
       },
       {
+        "Name": "pad0x3_I922F[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
+      },
+      {
         "Name": "GoalGroupId",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -205,6 +217,12 @@
         "Offset": "0x2c"
       },
       {
+        "Name": "pad0x3_JQHC9[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
+      },
+      {
         "Name": "GoalGroupId",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -246,6 +264,12 @@
         "Offset": "0xd1"
       },
       {
+        "Name": "pad0x6_2ST8Z[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xd2"
+      },
+      {
         "Name": "CreatedAt",
         "Type": "double",
         "Size": "0x8",
@@ -285,6 +309,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xd1"
+      },
+      {
+        "Name": "pad0x2_22ZM2[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xd2"
       },
       {
         "Name": "Value",

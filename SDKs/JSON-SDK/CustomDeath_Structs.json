@@ -30,6 +30,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_FLBTX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "Tag",
         "Type": "Struct FString",
         "Size": "0x10",
@@ -47,6 +53,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_9MH80[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "PlayerStartId",
         "Type": "int",
         "Size": "0x4",
@@ -62,6 +74,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_QVCNM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "Rotation",

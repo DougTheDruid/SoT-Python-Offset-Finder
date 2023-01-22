@@ -69,6 +69,10 @@ PromptEvaluation:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_5EVFS[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: Prompt
     Offset: '0x8'
     Size: '0x68'

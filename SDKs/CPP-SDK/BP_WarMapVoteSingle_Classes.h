@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40
+// Size 0x40 (Full Size[0x650] - InheritedSize[0x610]
 class BP_WarMapVoteSingle_C: public WarMapVoteInteractionActor
 {
 public:

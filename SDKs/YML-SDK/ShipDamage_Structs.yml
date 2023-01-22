@@ -54,6 +54,10 @@ EventShipDamageApplied:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_J0LPO[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: ImpactDamageEvent
     Offset: '0x18'
     Size: '0x58'
@@ -110,6 +114,10 @@ HullDamageZoneInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_7DX7P[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   - Name: ExternalHitList
     Offset: '0x20'
     Size: '0x10'

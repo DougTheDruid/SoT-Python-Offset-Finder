@@ -107,6 +107,10 @@ CrewSessionMatchmakingFollowedTelemetryEvent:
     Offset: '0x60'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_5QZKK[0x4]
+    Offset: '0x64'
+    Size: '0x4'
+    Type: char
   - Name: Message
     Offset: '0x68'
     Size: '0x10'
@@ -260,6 +264,10 @@ SessionTemplate:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_NEKGF[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: MaxPlayers
     Offset: '0x14'
     Size: '0x4'

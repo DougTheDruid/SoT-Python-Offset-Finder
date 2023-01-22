@@ -6,6 +6,12 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x8_4ZVPS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "FeatureFlag",
         "Type": "struct FName",
         "Size": "0x8",
@@ -60,10 +66,22 @@
         "Offset": "0xfc"
       },
       {
+        "Name": "pad0x3_N1C4C[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xfd"
+      },
+      {
         "Name": "InteractionRadius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x4_VVG0G[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x104"
       },
       {
         "Name": "InteractionPrerequisites",
@@ -82,6 +100,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x9_5GQUH[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x11f"
       }
     ]
   },
@@ -103,6 +127,12 @@
         "Type": "Class InteractableArea*",
         "Size": "0x8",
         "Offset": "0x5f0"
+      },
+      {
+        "Name": "pad0xc8_FGB26[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0x5f6"
       }
     ]
   },
@@ -130,6 +160,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x44"
+      },
+      {
+        "Name": "pad0x4_3M9Q7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
       },
       {
         "Name": "Interactable",
@@ -180,10 +216,22 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x10_PGR74[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
         "Name": "InteractableAreas",
         "Type": "TArray<class InteractableArea*>",
         "Size": "0x10",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x48_VP1W1[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x46"
       }
     ]
   },
@@ -200,6 +248,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x8_RS321[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
       {
         "Name": "ActorsToPreventInteractingWith",
         "Type": "TArray<class Actor*>",
@@ -229,10 +283,22 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
+        "Name": "pad0x8_90JTQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
         "Name": "CharacterInteractionComponent",
         "Type": "Class CharacterInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x5e8"
+      },
+      {
+        "Name": "pad0xb0_Z06YX[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x5ee"
       }
     ]
   },
@@ -249,6 +315,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x30",
     "Attributes": [
+      {
+        "Name": "pad0x8_249K6[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "FocusedInteractable",
         "Type": "Class Object*",

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class CommodityTokenEntitlementDesc: public EntitlementDesc
 {
 public:
@@ -15,7 +15,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class CommodityDemandFrameworkEditorSettings: public DeveloperSettings
 {
 public:
@@ -23,7 +23,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
 class CommodityDemandFrameworkSettings: public DeveloperSettings
 {
 public:
@@ -31,41 +31,43 @@ public:
 	struct FName                                                 DemandCollectionId;                                // 0x3c(0x8)
 	int                                                          CommodityPurchaseLockoutInGameDays;                // 0x44(0x4)
 	int                                                          InGameHourWhenCommoditiesRestock;                  // 0x48(0x4)
+	char                                                         pad0x4_BNGNK[0x4];                                 // 0x4c(0x4)
 	Struct GameTime                                              CommodityRedemptionTimeOutPeriodInDays;            // 0x50(0x8)
 	Struct StringAssetReference                                  NPCListAsset;                                      // 0x58(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CommodityDemandServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x408] - InheritedSize[0x3c8]
 class CommodityDemandService: public Actor
 {
 public:
+	char                                                         pad0x20_KW0D7[0x20];                               // 0x3c8(0x20)
 	Struct ActiveNPCDemands                                      ActiveCommodityDemands;                            // 0x3e8(0x20)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CommodityDemandStorageInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CommodityDemandStorageProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class CommodityEntitlementRedemptionAsset: public DataAsset
 {
 public:
@@ -73,55 +75,59 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x130] - InheritedSize[0x120]
 class CommodityItemDesc: public BootyItemDesc
 {
 public:
 	Struct CommoditySelectionType                                CommodityType;                                     // 0x120(0x8)
 	byte                                                         CommodityDemand;                                   // 0x128(0x1)
+	char                                                         pad0x9_R3ESE[0x9];                                 // 0x127(0x9)
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x148] - InheritedSize[0xc8]
 class CommodityPurchaseTrackingComponent: public ActorComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CommodityRedemptionInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xc8
+// Size 0xc8 (Full Size[0x190] - InheritedSize[0xc8]
 class CommodityRedemptionComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_1413Z[0x8];                                 // 0xc8(0x8)
 	Struct FText                                                 RedeemTooltipText;                                 // 0xd0(0x38)
+	char                                                         pad0x78_10BYQ[0x78];                               // 0x108(0x78)
 	TArray<class Actor*>                                         PendingRedemptions;                                // 0x180(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CommoditySourceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
 class CommoditySourceComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_LOVIU[0x8];                                 // 0xc8(0x8)
 	struct FName                                                 NPCIdentifier;                                     // 0xd0(0x8)
 	struct FName                                                 IslandIdentifier;                                  // 0xd8(0x8)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class CommodityTypeDataAsset: public DataAsset
 {
 public:
@@ -129,48 +135,51 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CrateFillerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class CrateFillerComponent: public ActorComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class DeliverableCommodityRequirement: public DeliverableRequirementBase
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class IsWieldedCommodityItemInDemandStatCondition: public TargetedStatCondition
 {
 public:
 	byte                                                         CommodityDemand;                                   // 0x30(0x1)
+	char                                                         pad0x21_2Y415[0x21];                               // 0x2f(0x21)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
 class SpecificItemsCrateFillerComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_E4A35[0x8];                                 // 0xc8(0x8)
 	TArray<Struct StorageContainerNode>                          ItemsToFillCrateWith;                              // 0xd0(0x10)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class WasWieldedCommodityItemBoughtAtDemandStatCondition: public TargetedStatCondition
 {
 public:
 	byte                                                         CommodityDemand;                                   // 0x30(0x1)
+	char                                                         pad0x9_C5EVT[0x9];                                 // 0x2f(0x9)
 };
 
 

@@ -6,22 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ActorLayerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
 class InstancedLayerComponent: public SceneComponent
 {
 public:
+	char                                                         pad0x8_GPGIO[0x8];                                 // 0x2e0(0x8)
 	TArray<Struct InstancedLayer>                                InstancedLayers;                                   // 0x2e8(0x10)
+	char                                                         pad0x38_T5C48[0x38];                               // 0x2f6(0x38)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class LayerActorsDataAsset: public DataAsset
 {
 public:

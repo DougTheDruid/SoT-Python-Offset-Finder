@@ -58,6 +58,10 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x38'
     Size: '0x78'
     Type: Struct RichCurve
+  - Name: pad0x78_U5BLS[0x78]
+    Offset: '0xb0'
+    Size: '0x78'
+    Type: char
   - Name: Rotation
     Offset: '0x128'
     Size: '0x78'
@@ -66,6 +70,10 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x1a0'
     Size: '0x78'
     Type: Struct RichCurve
+  - Name: pad0x78_6QB92[0x78]
+    Offset: '0x218'
+    Size: '0x78'
+    Type: char
   - Name: Shear
     Offset: '0x290'
     Size: '0x78'
@@ -125,6 +133,10 @@ PropertyPathSegment:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_9ZWUU[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: Struct
     Offset: '0x10'
     Size: '0x8'
@@ -170,6 +182,10 @@ WidgetNavigationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_ITPAZ[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: WidgetToFocus
     Offset: '0x4'
     Size: '0x8'

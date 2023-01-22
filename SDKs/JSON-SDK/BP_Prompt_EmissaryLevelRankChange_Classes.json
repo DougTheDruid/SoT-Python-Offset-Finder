@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_INEFK[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "Handle_EmissaryRankChange",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -36,6 +42,12 @@
         "Offset": "0x174"
       },
       {
+        "Name": "pad0x3_3PXZL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x175"
+      },
+      {
         "Name": "ExpectedCompanyName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -46,6 +58,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x180"
+      },
+      {
+        "Name": "pad0x4_UH8QF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x184"
       },
       {
         "Name": "Prompts",

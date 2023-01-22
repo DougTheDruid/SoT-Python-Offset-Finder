@@ -47,6 +47,10 @@ StaticMeshWwiseEmitterData:
     Offset: '0x8'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_NIRUT[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: StartEvents
     Offset: '0x18'
     Size: '0x10'

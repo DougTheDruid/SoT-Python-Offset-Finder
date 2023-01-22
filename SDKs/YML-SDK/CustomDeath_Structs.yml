@@ -9,6 +9,10 @@ CustomPlayerStartConfigData:
     Offset: '0x0'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_QVCNM[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: Rotation
     Offset: '0x10'
     Size: '0x10'
@@ -24,6 +28,10 @@ CustomPlayerStartConfigResponseData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_9MH80[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: PlayerStartId
     Offset: '0x4'
     Size: '0x4'
@@ -35,6 +43,10 @@ DestroyCustomPlayerStartData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_FLBTX[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Tag
     Offset: '0x8'
     Size: '0x10'

@@ -208,6 +208,10 @@ SnapshottedActorData:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_58LOQ[0x6]
+    Offset: '0x22'
+    Size: '0x6'
+    Type: char
   - Name: FailureMessage
     Offset: '0x28'
     Size: '0x38'
@@ -288,6 +292,10 @@ TaleQuestDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_MHRL2[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Item
     Offset: '0x8'
     Size: '0x28'
@@ -356,6 +364,10 @@ TaleQuestQueryableStateDataInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_XUB1I[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   - Name: DataInt
     Offset: '0x1c'
     Size: '0x4'
@@ -368,6 +380,9 @@ TaleQuestSelectorServiceSeedSetTelemetryEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x4'
+TaleQuestStopPermanentPromptEvent:
+  Attributes: []
+  ClassSize: '0x1'
 TaleQuestToggledDefinition:
   Attributes:
   - Name: FeatureToggle

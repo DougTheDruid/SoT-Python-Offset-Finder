@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x31
+// Size 0x31 (Full Size[0x431] - InheritedSize[0x400]
 class BP_PromptActor_TavernBoard_C: public BP_PromptActorBase_C
 {
 public:

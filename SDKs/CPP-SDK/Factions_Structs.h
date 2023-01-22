@@ -11,7 +11,9 @@ struct LootLevelReward
 {
 public:
 	byte                                                         LootLevel;                                         // 0x0(0x1)
+	char                                                         pad0x3_NRQ75[0x3];                                 // 0x1(0x3)
 	Struct RewardId                                              RewardId;                                          // 0x4(0x8)
+	char                                                         pad0x4_YOX3Q[0x4];                                 // 0xc(0x4)
 	TArray<Struct FactionServicePopUpData>                       LootLevelPopUpMessageDesc;                         // 0x10(0x10)
 	int                                                          PopUpIndex;                                        // 0x20(0x4)
 };
@@ -105,6 +107,7 @@ struct FactionShipSunkUIEvent
 {
 public:
 	byte                                                         OpponentFaction;                                   // 0x0(0x1)
+	char                                                         pad0x7_HCLDB[0x7];                                 // 0x1(0x7)
 	Struct FString                                               ShipName;                                          // 0x8(0x10)
 	int                                                          MyKillStreak;                                      // 0x18(0x4)
 	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
@@ -116,11 +119,13 @@ struct FactionShipSunkNetworkEvent
 {
 public:
 	byte                                                         OpponentFaction;                                   // 0x10(0x1)
+	char                                                         pad0x3_CP456[0x3];                                 // 0x11(0x3)
 	Struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
 	int                                                          MyKillStreak;                                      // 0x24(0x4)
 	int                                                          TheirKillStreak;                                   // 0x28(0x4)
 	int                                                          SandsOfFateBefore;                                 // 0x2c(0x4)
 	int                                                          SandsOfFateAfter;                                  // 0x30(0x4)
+	bool                                                         IsIntraFactionBattle;                              // 0x34(0x1)
 };
 
 

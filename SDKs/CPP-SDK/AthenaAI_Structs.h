@@ -30,8 +30,10 @@ struct AttackableTypeToAnimMapping
 {
 public:
 	byte                                                         AttackType;                                        // 0x0(0x1)
+	char                                                         pad0x7_GOOUL[0x7];                                 // 0x1(0x7)
 	Class Object*                                                AnimMontage;                                       // 0x8(0x8)
 	bool                                                         PlayAsDynamicMontage;                              // 0x10(0x1)
+	char                                                         pad0x3_1L3RQ[0x3];                                 // 0x11(0x3)
 	float                                                        AnimLength;                                        // 0x14(0x4)
 	float                                                        TimeIntoAnimOfAttack;                              // 0x18(0x4)
 	float                                                        TargetKnockBackStrength;                           // 0x1c(0x4)
@@ -77,6 +79,7 @@ public:
 	Struct StringAssetReference                                  TeamColorOverride;                                 // 0x88(0x10)
 	Struct EncounterParams                                       EncounterTrackingParams;                           // 0x98(0xc)
 	struct FName                                                 DioramaRole;                                       // 0xa4(0x8)
+	char                                                         pad0x4_1CT77[0x4];                                 // 0xac(0x4)
 	Struct FText                                                 LocalisableName;                                   // 0xb0(0x38)
 };
 
@@ -135,6 +138,7 @@ public:
 	Class AIPartsCategory*                                       PartsCategory;                                     // 0x48(0x8)
 	int                                                          TeamColorIndex;                                    // 0x70(0x4)
 	struct FName                                                 DioramaRole;                                       // 0x74(0x8)
+	char                                                         pad0x4_YMJ70[0x4];                                 // 0x7c(0x4)
 	Struct FText                                                 LocalisableName;                                   // 0x80(0x38)
 	Struct EncounterParams                                       EncounterTrackingParams;                           // 0xb8(0xc)
 	int                                                          MinPlayersToEnable;                                // 0xc4(0x4)
@@ -148,6 +152,7 @@ struct EventAIStartedDeadActionState
 {
 public:
 	byte                                                         DeathReason;                                       // 0x0(0x1)
+	char                                                         pad0x7_5CZ5P[0x7];                                 // 0x1(0x7)
 	Class Actor*                                                 Killer;                                            // 0x8(0x8)
 };
 
@@ -167,6 +172,7 @@ struct EventPawnStartedDying
 public:
 	Class Pawn*                                                  AIPawn;                                            // 0x0(0x8)
 	byte                                                         DeathType;                                         // 0x8(0x1)
+	char                                                         pad0x7_G8F2D[0x7];                                 // 0x9(0x7)
 	Class Actor*                                                 Instigator;                                        // 0x10(0x8)
 };
 
@@ -184,6 +190,7 @@ struct EventOwnedPawnStartedDying
 {
 public:
 	byte                                                         DeathType;                                         // 0x0(0x1)
+	char                                                         pad0x7_PGWEQ[0x7];                                 // 0x1(0x7)
 	Class Actor*                                                 Instigator;                                        // 0x8(0x8)
 };
 
@@ -203,6 +210,7 @@ struct AIBountySpawnerWaveGroup
 public:
 	TArray<Struct AIBountySpawnerWave>                           Waves;                                             // 0x0(0x10)
 	int                                                          NumNonTargetAIToKillToMoveToNextWaveGroup;         // 0x10(0x4)
+	char                                                         pad0x4_A3OSA[0x4];                                 // 0x14(0x4)
 	class                                                        CombatDialogueForWaveGroup;                        // 0x18(0x8)
 	float                                                        DynamicDelayBeforeStart;                           // 0x20(0x4)
 };
@@ -214,10 +222,13 @@ struct AIBountySpawnerWave
 public:
 	bool                                                         IsTarget;                                          // 0x128(0x1)
 	bool                                                         IsUsingDialogue;                                   // 0x129(0x1)
+	char                                                         pad0x2_VGP9H[0x2];                                 // 0x12a(0x2)
 	int                                                          MinPlayersToEnable;                                // 0x12c(0x4)
 	byte                                                         Gender;                                            // 0x130(0x1)
 	byte                                                         Rank;                                              // 0x131(0x1)
+	char                                                         pad0x6_OCOQG[0x6];                                 // 0x132(0x6)
 	Class PostBountyAIPawnSpawnedAction*                         PostSpawnAction;                                   // 0x138(0x8)
+	char                                                         pad0x38_2RCT8[0x38];                               // 0x140(0x38)
 	class                                                        BountyReward;                                      // 0x178(0x8)
 };
 
@@ -227,6 +238,7 @@ struct AIPersistentSpawnerWave
 {
 public:
 	bool                                                         CacheHealthOnDespawn;                              // 0x100(0x1)
+	char                                                         pad0x7_QDICE[0x7];                                 // 0x101(0x7)
 	class                                                        AITypeToCache;                                     // 0x108(0x8)
 };
 
@@ -236,6 +248,7 @@ struct AISpawnerWave
 {
 public:
 	float                                                        SpawnChance;                                       // 0x0(0x4)
+	char                                                         pad0x4_0RFKS[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRange                              NumOfSpawnsInWave;                                 // 0x8(0x20)
 	Struct AISpawnTypeParamsCollection                           SpawnTypeParamsOverride;                           // 0x28(0x48)
 	Struct WeightedProbabilityRangeOfRanges                      DelayBeforeWave;                                   // 0x70(0x30)
@@ -267,6 +280,7 @@ struct AIBountySpawnerArchive
 {
 public:
 	int                                                          CurrentWaveIndex;                                  // 0x8(0x4)
+	char                                                         pad0x4_L0AYY[0x4];                                 // 0xc(0x4)
 	TArray<Struct AIBountySpawnerArchiveWaveGroupEntry>          WaveGroupEntries;                                  // 0x10(0x10)
 	float                                                        BountyAudioIntensity;                              // 0x20(0x4)
 };
@@ -310,8 +324,10 @@ struct BountySpawnerAudioChangedNetworkEvent
 {
 public:
 	byte                                                         AudioState;                                        // 0x10(0x1)
+	char                                                         pad0x3_ALDOQ[0x3];                                 // 0x11(0x3)
 	float                                                        Intensity;                                         // 0x14(0x4)
 	byte                                                         BountyType;                                        // 0x18(0x1)
+	char                                                         pad0x3_0QR78[0x3];                                 // 0x19(0x3)
 	Struct Vector                                                BountyPosition;                                    // 0x1c(0xc)
 };
 
@@ -325,6 +341,7 @@ public:
 	struct FName                                                 RewardId;                                          // 0x40(0x8)
 	Class ItemInfo*                                              ItemDropped;                                       // 0x48(0x8)
 	byte                                                         Rank;                                              // 0x50(0x1)
+	char                                                         pad0x3_1MBKX[0x3];                                 // 0x51(0x3)
 	Struct Vector                                                DeathLocation;                                     // 0x54(0xc)
 	Class Actor*                                                 Instigator;                                        // 0x60(0x8)
 };
@@ -354,6 +371,7 @@ struct MerchantCrateMetaWrapper
 {
 public:
 	float                                                        Health;                                            // 0x18(0x4)
+	char                                                         pad0x4_2JOYW[0x4];                                 // 0x1c(0x4)
 	Struct StringAssetReference                                  FaunaType;                                         // 0x20(0x10)
 	float                                                        TimeSpentStarving;                                 // 0x30(0x4)
 	float                                                        TimeToStarveInSeconds;                             // 0x34(0x4)
@@ -412,6 +430,7 @@ struct AIDebugSpawnConfiguration
 {
 public:
 	int                                                          NumIslandsToSpawnOn;                               // 0x0(0x4)
+	char                                                         pad0x4_B0YAS[0x4];                                 // 0x4(0x4)
 	TArray<Struct FName>                                         SpecificRegionsToSpawnOn;                          // 0x8(0x10)
 	TArray<Struct AIDebugSpawnAmount>                            WhatToSpawn;                                       // 0x18(0x10)
 };
@@ -494,6 +513,7 @@ struct PetMovementRequest
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
+	char                                                         pad0x3_PW4ZA[0x3];                                 // 0x1(0x3)
 	float                                                        TargetMeshZOffset;                                 // 0x4(0x4)
 	bool                                                         AdjustingFlight;                                   // 0x8(0x1)
 };
@@ -513,6 +533,7 @@ struct PetPartSizeMapping
 {
 public:
 	byte                                                         PetSize;                                           // 0x0(0x1)
+	char                                                         pad0x3_X1POQ[0x3];                                 // 0x1(0x3)
 	float                                                        PetScale;                                          // 0x4(0x4)
 };
 
@@ -540,6 +561,7 @@ struct EventSwimRotationModeChanged
 {
 public:
 	byte                                                         NewSwimRotationMode;                               // 0x0(0x1)
+	char                                                         pad0x3_VXUQO[0x3];                                 // 0x1(0x3)
 	float                                                        NewRotationRate;                                   // 0x4(0x4)
 };
 
@@ -729,6 +751,7 @@ struct AthenaAIAbilityPlayerBasedRange
 {
 public:
 	int                                                          MaxPlayers;                                        // 0x0(0x4)
+	char                                                         pad0x4_8RMSC[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      WeightedArray;                                     // 0x8(0x30)
 };
 
@@ -749,6 +772,7 @@ public:
 	bool                                                         EnableSight;                                       // 0x0(0x1)
 	bool                                                         EnableHearing;                                     // 0x1(0x1)
 	bool                                                         EnableDamage;                                      // 0x2(0x1)
+	char                                                         pad0x1_QP8GO[0x1];                                 // 0x3(0x1)
 	float                                                        SightRadius;                                       // 0x4(0x4)
 	float                                                        LoseSightRadius;                                   // 0x8(0x4)
 	float                                                        PeripheralVisionAngleDegrees;                      // 0xc(0x4)
@@ -774,6 +798,7 @@ struct AthenaAIControllerHealthCustomisation
 public:
 	bool                                                         OverrideMaxHealth;                                 // 0x0(0x1)
 	bool                                                         OverrideMaxHealthWithMinMax;                       // 0x1(0x1)
+	char                                                         pad0x2_9K5G9[0x2];                                 // 0x2(0x2)
 	float                                                        MinHealth;                                         // 0x4(0x4)
 	float                                                        MaxHealth;                                         // 0x8(0x4)
 };
@@ -803,6 +828,7 @@ struct AthenaAIControllerFeatureToggledParams
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
+	char                                                         pad0x4_G0NRR[0x4];                                 // 0xc(0x4)
 	TArray<Struct AthenaAIControllerParamValue>                  Params;                                            // 0x10(0x10)
 };
 
@@ -959,6 +985,7 @@ struct AIDebugVisualisationBox
 public:
 	Struct Vector                                                Centre;                                            // 0x0(0xc)
 	Struct Vector                                                Extents;                                           // 0xc(0xc)
+	char                                                         pad0x8_GF12P[0x8];                                 // 0x18(0x8)
 	Struct Quat                                                  Rotation;                                          // 0x20(0x10)
 	float                                                        LifeTime;                                          // 0x30(0x4)
 	byte                                                         Colour;                                            // 0x34(0x1)
@@ -1022,6 +1049,7 @@ struct AthenaAIFormComponentVfxCustomisation
 public:
 	class                                                        VfxCustomisationType;                              // 0x0(0x8)
 	bool                                                         VfxEnabled;                                        // 0x8(0x1)
+	char                                                         pad0x7_JOQQ0[0x7];                                 // 0x9(0x7)
 	Class Object*                                                VfxTemplate;                                       // 0x10(0x8)
 };
 
@@ -1109,6 +1137,7 @@ public:
 	Struct StringAssetReference                                  DefaultDebugLoadout;                               // 0x28(0x10)
 	class                                                        DefaultDebugAIClassId;                             // 0x38(0x8)
 	bool                                                         RequireNavMesh;                                    // 0x40(0x1)
+	char                                                         pad0x3_VOK91[0x3];                                 // 0x41(0x3)
 	int                                                          AIRegionCostUnits;                                 // 0x44(0x4)
 	int                                                          AIWorldCostUnits;                                  // 0x48(0x4)
 	struct FName                                                 FeatureToggle;                                     // 0x4c(0x8)
@@ -1177,6 +1206,7 @@ struct AISpawnContextIdEncounterSettingsPair
 public:
 	TArray<Class SpawnContexts>                                  SpawnContexts;                                     // 0x0(0x10)
 	bool                                                         DisableSpawning;                                   // 0x10(0x1)
+	char                                                         pad0x7_7B63T[0x7];                                 // 0x11(0x7)
 	Class AIEncounterSettings*                                   EncounterSettings;                                 // 0x18(0x8)
 	Class AISpawnWaveSequenceRankProgression*                    SpawnWaveProgression;                              // 0x20(0x8)
 	TArray<Struct AIEncounterAndWaveSettingsOverride>            EncounterAndWaveSettingsOverride;                  // 0x28(0x10)
@@ -1347,6 +1377,7 @@ struct EscalatingWave
 {
 public:
 	int                                                          WaveNumber;                                        // 0x0(0x4)
+	char                                                         pad0x4_0E0ZP[0x4];                                 // 0x4(0x4)
 	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x8(0x100)
 };
 
@@ -1425,6 +1456,7 @@ struct WeightedAmmoTypeRange
 {
 public:
 	float                                                        MinRange;                                          // 0x0(0x4)
+	char                                                         pad0x4_WEOLQ[0x4];                                 // 0x4(0x4)
 	TArray<Struct WeightedAmmoType>                              AmmoTypeProbabilities;                             // 0x8(0x10)
 };
 
@@ -1434,6 +1466,7 @@ struct WeightedAmmoType
 {
 public:
 	float                                                        ProbabilityAtRange;                                // 0x0(0x4)
+	char                                                         pad0x4_LT9VM[0x4];                                 // 0x4(0x4)
 	class                                                        AmmoType;                                          // 0x8(0x8)
 };
 
@@ -1445,6 +1478,7 @@ public:
 	Struct FString                                               TargetName;                                        // 0x0(0x10)
 	bool                                                         BestTargetByScore;                                 // 0x10(0x1)
 	bool                                                         IsCurrentTargetActor;                              // 0x11(0x1)
+	char                                                         pad0x2_A0ART[0x2];                                 // 0x12(0x2)
 	float                                                        TargetScore;                                       // 0x14(0x4)
 	float                                                        DistScore;                                         // 0x18(0x4)
 	float                                                        FacingScore;                                       // 0x1c(0x4)
@@ -1491,6 +1525,7 @@ struct BlackboardValueCondition
 public:
 	Struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x0(0x28)
 	byte                                                         Comparison;                                        // 0x28(0x1)
+	char                                                         pad0x3_KZOF6[0x3];                                 // 0x29(0x3)
 	float                                                        Value;                                             // 0x2c(0x4)
 	bool                                                         OnEntry;                                           // 0x30(0x1)
 	bool                                                         OnExit;                                            // 0x31(0x1)
@@ -1511,6 +1546,7 @@ struct ConditionalBasedOnBlackboardKey
 {
 public:
 	bool                                                         UseCondition;                                      // 0x0(0x1)
+	char                                                         pad0x7_2NND6[0x7];                                 // 0x1(0x7)
 	Struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x8(0x28)
 	bool                                                         NegateCondition;                                   // 0x30(0x1)
 };
@@ -1701,8 +1737,10 @@ public:
 	Class Object*                                                AICoordinator;                                     // 0x0(0x8)
 	struct FName                                                 Region;                                            // 0x8(0x8)
 	Struct Vector                                                SpawnPos;                                          // 0x10(0xc)
+	char                                                         pad0x4_MVBO1[0x4];                                 // 0x1c(0x4)
 	Class Actor*                                                 ActorToPerceiveOnSpawn;                            // 0x20(0x8)
 	float                                                        MaximumDistanceToPerceiveOnSpawn;                  // 0x28(0x4)
+	char                                                         pad0x4_QG9LQ[0x4];                                 // 0x2c(0x4)
 	Class AthenaAIControllerParamsDataAsset*                     Skillset;                                          // 0x30(0x8)
 	struct FName                                                 HomeRegionZone;                                    // 0x38(0x8)
 	Class Object*                                                TargetInteractableOnSpawn;                         // 0x40(0x8)
@@ -1786,6 +1824,7 @@ struct EventOceanCrawlerAIAbilityAudioRequest
 {
 public:
 	byte                                                         RequestAudioKey;                                   // 0x0(0x1)
+	char                                                         pad0x3_QPEII[0x3];                                 // 0x1(0x3)
 	float                                                        AudioDelay;                                        // 0x4(0x4)
 };
 

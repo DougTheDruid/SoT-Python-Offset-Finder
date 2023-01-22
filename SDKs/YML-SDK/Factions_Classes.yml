@@ -20,38 +20,48 @@ FactionFlipMeshComponent:
     Offset: '0x630'
     Size: '0x4'
     Type: float
-  - Name: StreakData
-    Offset: '0x840'
+  - Name: pad0x204_S4KNQ[0x204]
+    Offset: '0x634'
+    Size: '0x204'
+    Type: char
+  - Name: OwningShipCrewId
+    Offset: '0x838'
     Size: '0x10'
-    Type: TArray<Struct CrewStreakLevelIncreased>
+    Type: Struct Guid
+  - Name: OwningShipCrewStreak
+    Offset: '0x848'
+    Size: '0x4'
+    Type: int
   - Name: ServerTargetFlipped
-    Offset: '0x850'
+    Offset: '0x84c'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x240'
-  FullSize: '0x860'
+  - Name: pad0x5_G2UQL[0x5]
+    Offset: '0x84b'
+    Size: '0x5'
+    Type: char
+  ClassSize: '0x230'
+  FullSize: '0x850'
   InheritedSize: '0x620'
   Super: StaticMeshComponent
 FactionInteractionVoteComponent:
   Attributes:
   - Name: TurnHourglassInteractionHoldTime
-    Offset: '0x158'
+    Offset: '0x150'
     Size: '0x4'
     Type: float
   - Name: WaitTimeSimilarityThresholdSeconds
-    Offset: '0x15c'
+    Offset: '0x154'
     Size: '0x4'
     Type: int
-  ClassSize: '0x68'
-  FullSize: '0x1b8'
+  - Name: pad0x50_MRW8R[0x50]
+    Offset: '0x156'
+    Size: '0x50'
+    Type: char
+  ClassSize: '0x50'
+  FullSize: '0x1a0'
   InheritedSize: '0x150'
   Super: InlineVotingInteractionComponent
-FactionInterationInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 FactionLootLevelRewardsAsset:
   Attributes:
   - Name: LootLevelRewards
@@ -64,10 +74,18 @@ FactionLootLevelRewardsAsset:
   Super: DataAsset
 FactionOutpostVoteInteractionActor:
   Attributes:
+  - Name: pad0x10_GMUZS[0x10]
+    Offset: '0x3c8'
+    Size: '0x10'
+    Type: char
   - Name: FadeDuration
     Offset: '0x3d8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_UN67G[0x4]
+    Offset: '0x3dc'
+    Size: '0x4'
+    Type: char
   - Name: FactionInactiveInfo
     Offset: '0x3e0'
     Size: '0xa0'
@@ -76,16 +94,28 @@ FactionOutpostVoteInteractionActor:
     Offset: '0x480'
     Size: '0xa0'
     Type: Struct FactionDisplayInfo
+  - Name: pad0x18_OWZ5K[0x18]
+    Offset: '0x520'
+    Size: '0x18'
+    Type: char
   - Name: FactionActiveInfoPtr
     Offset: '0x538'
     Size: '0x20'
     Type: Struct FactionRequest
+  - Name: pad0xe0_W8O31[0xe0]
+    Offset: '0x556'
+    Size: '0xe0'
+    Type: char
   ClassSize: '0x230'
   FullSize: '0x5f8'
   InheritedSize: '0x3c8'
   Super: Actor
 FactionParticleComponent:
   Attributes:
+  - Name: pad0x148_T69X1[0x148]
+    Offset: '0x8b0'
+    Size: '0x148'
+    Type: char
   - Name: Faction
     Offset: '0x9f8'
     Size: '0x8'
@@ -106,12 +136,20 @@ FactionParticleComponent:
     Offset: '0xa1c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x5_3248P[0x5]
+    Offset: '0xa1b'
+    Size: '0x5'
+    Type: char
   ClassSize: '0x170'
   FullSize: '0xa20'
   InheritedSize: '0x8b0'
   Super: ParticleSystemComponent
 FactionService:
   Attributes:
+  - Name: pad0x10_UF3UO[0x10]
+    Offset: '0x3c8'
+    Size: '0x10'
+    Type: char
   - Name: Settings
     Offset: '0x3d8'
     Size: '0x8'
@@ -120,6 +158,10 @@ FactionService:
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class FactionLootLevelRewardsAsset*
+  - Name: pad0xc0_0N5DI[0xc0]
+    Offset: '0x3e8'
+    Size: '0xc0'
+    Type: char
   - Name: OpposingFactionsAndCompanies
     Offset: '0x4a8'
     Size: '0x10'
@@ -140,12 +182,20 @@ FactionService:
     Offset: '0x4e8'
     Size: '0x10'
     Type: TArray<Struct FactionWaitTimesData>
+  - Name: pad0x120_4WGWV[0x120]
+    Offset: '0x4f8'
+    Size: '0x120'
+    Type: char
   - Name: DebugRepActor
-    Offset: '0x5f8'
+    Offset: '0x618'
     Size: '0x8'
     Type: Class FactionServiceDebugRepActor*
-  ClassSize: '0x258'
-  FullSize: '0x620'
+  - Name: pad0x30_2SI4K[0x30]
+    Offset: '0x61e'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x278'
+  FullSize: '0x640'
   InheritedSize: '0x3c8'
   Super: Actor
 FactionServiceDebugRepActor:
@@ -154,6 +204,10 @@ FactionServiceDebugRepActor:
     Offset: '0x3c8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_S28MH[0x7]
+    Offset: '0x3c9'
+    Size: '0x7'
+    Type: char
   - Name: FactionAlignedCrewData
     Offset: '0x3d0'
     Size: '0x10'
@@ -288,16 +342,28 @@ FactionVoteAudioComponent:
     Offset: '0x108'
     Size: '0x10'
     Type: TArray<Struct FName>
+  - Name: pad0x100_WZYSU[0x100]
+    Offset: '0x116'
+    Size: '0x100'
+    Type: char
   ClassSize: '0x110'
   FullSize: '0x1f8'
   InheritedSize: '0xe8'
   Super: VoteAudioComponent
 FactionVoteConsumerBase:
   Attributes:
+  - Name: pad0x10_6M67G[0x10]
+    Offset: '0x30'
+    Size: '0x10'
+    Type: char
   - Name: Validator
     Offset: '0x40'
     Size: '0x8'
     Type: Class FactionVoteValidatorBase*
+  - Name: pad0x48_9WBF5[0x48]
+    Offset: '0x48'
+    Size: '0x48'
+    Type: char
   - Name: OwningActor
     Offset: '0x90'
     Size: '0x8'
@@ -310,16 +376,28 @@ FactionVoteConsumerBase:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<Struct CrewMemberVotes>
+  - Name: pad0x38_DJ3EA[0x38]
+    Offset: '0xb6'
+    Size: '0x38'
+    Type: char
   ClassSize: '0xa0'
   FullSize: '0xd0'
   InheritedSize: '0x30'
   Super: VoteConsumerInlineBase
 FactionVoteInteractionActor:
   Attributes:
+  - Name: pad0x10_QK9SZ[0x10]
+    Offset: '0x3c8'
+    Size: '0x10'
+    Type: char
   - Name: FadeDuration
     Offset: '0x3d8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_46W6K[0x4]
+    Offset: '0x3dc'
+    Size: '0x4'
+    Type: char
   - Name: NoFactionInfos
     Offset: '0x3e0'
     Size: '0x10'
@@ -336,6 +414,10 @@ FactionVoteInteractionActor:
     Offset: '0x410'
     Size: '0x10'
     Type: TArray<Struct FactionRequest>
+  - Name: pad0xc0_UV1XE[0xc0]
+    Offset: '0x41e'
+    Size: '0xc0'
+    Type: char
   ClassSize: '0xf8'
   FullSize: '0x4c0'
   InheritedSize: '0x3c8'
@@ -350,6 +432,10 @@ FactionVoteValidatorBase:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0x8c_KB83W[0x8c]
+    Offset: '0x44'
+    Size: '0x8c'
+    Type: char
   - Name: Consumer
     Offset: '0xd0'
     Size: '0x8'
@@ -362,6 +448,10 @@ FactionVoteValidatorBase:
     Offset: '0xdc'
     Size: '0x4'
     Type: float
+  - Name: pad0x8_1K4H3[0x8]
+    Offset: '0xe0'
+    Size: '0x8'
+    Type: char
   - Name: OwningActor
     Offset: '0xe8'
     Size: '0x8'
@@ -380,6 +470,10 @@ IsInFactionStatCondition:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_3S3WW[0x6]
+    Offset: '0x32'
+    Size: '0x6'
+    Type: char
   - Name: RequiredOwnerFaction
     Offset: '0x38'
     Size: '0x8'
@@ -392,6 +486,10 @@ IsInFactionStatCondition:
     Offset: '0x41'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_MR06C[0x6]
+    Offset: '0x42'
+    Size: '0x6'
+    Type: char
   - Name: RequiredTargetFaction
     Offset: '0x48'
     Size: '0x8'
@@ -414,6 +512,10 @@ IsWearingCursePrerequisite:
     Offset: '0x82'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_SWXZD[0x7]
+    Offset: '0x81'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'
@@ -436,6 +538,10 @@ ShipFactionCustomisation:
     Offset: '0xe8'
     Size: '0x10'
     Type: TArray<Struct StreakDynamicMaterials>
+  - Name: pad0x48_HUK8Q[0x48]
+    Offset: '0xf8'
+    Size: '0x48'
+    Type: char
   - Name: FactionStreakData
     Offset: '0x140'
     Size: '0x10'
@@ -450,6 +556,10 @@ ShipSunkTrackingComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
+  - Name: pad0x1c_QU0UT[0x1c]
+    Offset: '0xca'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -492,12 +602,16 @@ StartFactionVoyageVoteConsumer:
     Offset: '0x290'
     Size: '0x38'
     Type: Struct FText
-  - Name: FactionVotingSwitchVote
+  - Name: FactionVotingCantVoteReasonShroudbreakerIsActive
     Offset: '0x2c8'
     Size: '0x38'
     Type: Struct FText
-  ClassSize: '0x230'
-  FullSize: '0x300'
+  - Name: FactionVotingSwitchVote
+    Offset: '0x300'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x268'
+  FullSize: '0x338'
   InheritedSize: '0xd0'
   Super: FactionVoteConsumerBase
 StartFactionVoyageVoteValidator:

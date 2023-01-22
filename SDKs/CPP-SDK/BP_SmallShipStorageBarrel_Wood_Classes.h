@@ -6,13 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_SmallShipStorageBarrel_Wood_C: public StorageContainer
+// Size 0x8 (Full Size[0x730] - InheritedSize[0x728]
+class BP_SmallShipStorageBarrel_Wood_C: public BootyItemInfo
 {
 public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c8(0x8)
-	Class ShipTelemetrySubjectComponent*                         ShipTelemetrySubject;                              // 0x4d0(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x728(0x8)
 };
 
 

@@ -20,6 +20,12 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
+        "Name": "pad0x40_V6H0X[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "ClueText",
         "Type": "Struct FText",
         "Size": "0x38",
@@ -30,6 +36,12 @@
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x140"
+      },
+      {
+        "Name": "pad0xa0_61LNH[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x176"
       }
     ]
   },
@@ -80,6 +92,12 @@
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x490"
+      },
+      {
+        "Name": "pad0x90_G6T5P[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x4c6"
       }
     ]
   },
@@ -94,6 +112,12 @@
         "Type": "Class PopUpMessageDesc*",
         "Size": "0x8",
         "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x28_7MY96[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x13e"
       }
     ]
   },
@@ -103,6 +127,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0xf0",
     "Attributes": [
+      {
+        "Name": "pad0x8_IAWQR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "Root",
         "Type": "Class SceneComponent*",
@@ -132,6 +162,12 @@
         "Type": "TArray<Byte LockStates>",
         "Size": "0x10",
         "Offset": "0x408"
+      },
+      {
+        "Name": "pad0xc0_46CY1[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x416"
       }
     ]
   },

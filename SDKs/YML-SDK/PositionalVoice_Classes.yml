@@ -8,6 +8,10 @@ VoiceChatEmitterInterface:
   Super: Interface
 VoiceChatRenderer:
   Attributes:
+  - Name: pad0x10_EKLW1[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   - Name: AttenuatedVoiceEvent
     Offset: '0x38'
     Size: '0x8'
@@ -32,6 +36,10 @@ VoiceChatRenderer:
     Offset: '0x58'
     Size: '0x4'
     Type: float
+  - Name: pad0x12c_U7I1A[0x12c]
+    Offset: '0x5a'
+    Size: '0x12c'
+    Type: char
   ClassSize: '0x158'
   FullSize: '0x180'
   InheritedSize: '0x28'

@@ -79,6 +79,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x4_94IJK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
         "Name": "Light",
         "Type": "Class LightComponent*",
         "Size": "0x8",
@@ -179,6 +185,12 @@
         "Offset": "0x50"
       },
       {
+        "Name": "pad0x4_FT49D[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
         "Name": "StatsToFireOnFullEmissaryClothing",
         "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
@@ -223,6 +235,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_U5RY7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "EmissaryFlagMeshAssetReferences",
@@ -465,6 +483,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_I036G[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Amount",
         "Type": "float",
         "Size": "0x4",
@@ -480,6 +504,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_X37HN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "Amount",
@@ -509,6 +539,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x2"
+      },
+      {
+        "Name": "pad0x1_XZTFD[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3"
       },
       {
         "Name": "EmissaryLevelIncrease",
@@ -543,6 +579,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_WU76M[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "EmissaryLevelKillCountScaleFactors",
@@ -929,6 +971,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x3_CPMUA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
         "Name": "UpdateAmount",
         "Type": "int",
         "Size": "0x4",
@@ -985,6 +1033,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x3_CDO2D[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
       },
       {
         "Name": "EmissaryTotal",
@@ -1097,6 +1151,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x3_EGPJC[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1d"
       },
       {
         "Name": "PointsRewarded",

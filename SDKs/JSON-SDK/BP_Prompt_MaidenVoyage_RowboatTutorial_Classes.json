@@ -12,10 +12,22 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_YY8CI[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "State_SatInRowboat",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x7_BHA0N[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x121"
       },
       {
         "Name": "Prompt_RowTheBoat",
@@ -34,6 +46,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1d8"
+      },
+      {
+        "Name": "pad0x7_3UBER[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1d9"
       },
       {
         "Name": "Handle_LeaveRowboat",

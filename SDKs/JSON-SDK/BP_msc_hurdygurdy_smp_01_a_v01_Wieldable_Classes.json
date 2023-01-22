@@ -1,27 +1,15 @@
 {
   "BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C": {
-    "Super": "BP_HurdyGurdy_C",
-    "FullSize": "0x8c8",
-    "InheritedSize": "0x8b0",
-    "ClassSize": "0x18",
+    "Super": "Compass",
+    "FullSize": "0x888",
+    "InheritedSize": "0x880",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "shroudmask_tp",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "InventoryItem",
+        "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x8b0"
-      },
-      {
-        "Name": "shroud_tp",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x8b8"
-      },
-      {
-        "Name": "shroud_fp",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x8c0"
+        "Offset": "0x880"
       }
     ]
   },

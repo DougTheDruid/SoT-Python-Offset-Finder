@@ -147,6 +147,10 @@ RiggingSystemPulleyParams:
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_9MBSR[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   - Name: Visuals
     Offset: '0x28'
     Size: '0x10'

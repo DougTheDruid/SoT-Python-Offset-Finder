@@ -17,6 +17,7 @@ public:
 	float                                                        LeftVeeringDistance;                               // 0x10(0x4)
 	float                                                        RightVeeringDistance;                              // 0x14(0x4)
 	Struct PlayerStat                                            StatToFireForRouteChange;                          // 0x18(0x4)
+	char                                                         pad0x4_T8MZU[0x4];                                 // 0x1c(0x4)
 	Class ParticleSystem*                                        PlayerSplashingVFXOverride;                        // 0x20(0x8)
 };
 
@@ -35,6 +36,7 @@ struct WaterSlideActionStateParams
 public:
 	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
 	bool                                                         ForceStash;                                        // 0x4(0x1)
+	char                                                         pad0x3_N8L02[0x3];                                 // 0x5(0x3)
 	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x8(0x1c)
 };
 

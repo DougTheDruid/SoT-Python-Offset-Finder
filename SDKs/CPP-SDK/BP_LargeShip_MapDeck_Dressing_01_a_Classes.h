@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x70
+// Size 0x70 (Full Size[0x448] - InheritedSize[0x3d8]
 class BP_LargeShip_MapDeck_Dressing_01_a_C: public TrinketReplacementActor
 {
 public:

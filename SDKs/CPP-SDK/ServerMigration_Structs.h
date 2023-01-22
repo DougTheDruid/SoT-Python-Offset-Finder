@@ -22,6 +22,7 @@ public:
 	bool                                                         FailToConnectToServer;                             // 0x0(0x1)
 	bool                                                         RefuseMigrationStart;                              // 0x1(0x1)
 	bool                                                         DisconnectServerConnectionDuringMigration;         // 0x2(0x1)
+	char                                                         pad0x1_YDRZ3[0x1];                                 // 0x3(0x1)
 	int                                                          RefuseIncomingClientConnections;                   // 0x4(0x4)
 };
 

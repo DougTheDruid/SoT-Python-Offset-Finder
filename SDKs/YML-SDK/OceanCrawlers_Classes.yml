@@ -6,6 +6,10 @@ BTTask_BroadcastOceanCrawlerAbilityAudioEvent:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_TQKTO[0x9]
+    Offset: '0x5f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x68'
   InheritedSize: '0x60'
@@ -20,6 +24,10 @@ OceanCrawlerAudioBroadcaster:
     Offset: '0xd0'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0xd8_MDDXV[0xd8]
+    Offset: '0xd6'
+    Size: '0xd8'
+    Type: char
   ClassSize: '0xd8'
   FullSize: '0x1a0'
   InheritedSize: '0xc8'

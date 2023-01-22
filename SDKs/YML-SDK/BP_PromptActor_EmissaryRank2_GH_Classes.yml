@@ -22,6 +22,10 @@ BP_PromptActor_EmissaryRank2_GH_C:
     Offset: '0x420'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_J76YA[0x4]
+    Offset: '0x424'
+    Size: '0x4'
+    Type: char
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'

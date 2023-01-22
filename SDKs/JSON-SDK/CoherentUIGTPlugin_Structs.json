@@ -21,6 +21,12 @@
         "Offset": "0x5"
       },
       {
+        "Name": "pad0x2_PQZ9V[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x6"
+      },
+      {
         "Name": "URL",
         "Type": "Struct FString",
         "Size": "0x10",
@@ -48,6 +54,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_DMRCI[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
       },
       {
         "Name": "ClickThroughAlphaThreshold",

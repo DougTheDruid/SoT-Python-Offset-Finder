@@ -64,6 +64,12 @@
         "Offset": "0x2ec"
       },
       {
+        "Name": "pad0x3_QYXYO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2ed"
+      },
+      {
         "Name": "AudioInsideSpace",
         "Type": "Class AudioSpaceDataAsset*",
         "Size": "0x8",
@@ -92,6 +98,12 @@
         "Type": "Class StoryDrivenAudioPortalDataAsset*",
         "Size": "0x8",
         "Offset": "0x310"
+      },
+      {
+        "Name": "pad0x38_ND89L[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x316"
       }
     ]
   },
@@ -132,6 +144,12 @@
         "Type": "Class StoryDrivenAudioPortalDataAsset*",
         "Size": "0x8",
         "Offset": "0x630"
+      },
+      {
+        "Name": "pad0x28_OAAUN[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x636"
       }
     ]
   },
@@ -160,6 +178,12 @@
         "Type": "Class MultiEmitterRootComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0x18_HJNOU[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3ce"
       }
     ]
   },
@@ -174,6 +198,12 @@
         "Type": "Struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_AA9AC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
@@ -232,10 +262,22 @@
         "Offset": "0x310"
       },
       {
+        "Name": "pad0x14_17AJF[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x31c"
+      },
+      {
         "Name": "LocalPlayer",
         "Type": "Class Character*",
         "Size": "0x8",
         "Offset": "0x330"
+      },
+      {
+        "Name": "pad0x48_D8YQ1[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x336"
       }
     ]
   },

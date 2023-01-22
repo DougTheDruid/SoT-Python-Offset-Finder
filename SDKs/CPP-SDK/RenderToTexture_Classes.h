@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class RenderToTextureFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
 class RenderToTextureSceneDetails: public Object
 {
 public:
@@ -21,6 +21,7 @@ public:
 	Struct IntPoint                                              Resolution;                                        // 0x30(0x8)
 	Class World*                                                 World;                                             // 0x38(0x8)
 	Class TextureRenderTarget2D*                                 RenderTarget;                                      // 0x50(0x8)
+	char                                                         pad0x60_FA9LL[0x60];                               // 0x56(0x60)
 };
 
 

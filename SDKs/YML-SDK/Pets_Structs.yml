@@ -210,6 +210,10 @@ HangoutSpotParams:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_23EXX[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: PetParams
     Offset: '0x10'
     Size: '0x10'
@@ -225,6 +229,10 @@ HangoutSpotPosition:
     Offset: '0x0'
     Size: '0x8'
     Type: Struct HangoutSpotId
+  - Name: pad0x8_IF1OO[0x8]
+    Offset: '0x8'
+    Size: '0x8'
+    Type: char
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
@@ -237,10 +245,18 @@ HangoutSpotPosition:
     Offset: '0x41'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_P9KSB[0x6]
+    Offset: '0x42'
+    Size: '0x6'
+    Type: char
   - Name: Occupier
     Offset: '0x48'
     Size: '0x8'
     Type: Class Pawn*
+  - Name: pad0x10_W2SJZ[0x10]
+    Offset: '0x50'
+    Size: '0x10'
+    Type: char
   - Name: IsPerch
     Offset: '0x60'
     Size: '0x1'
@@ -249,6 +265,10 @@ HangoutSpotPosition:
     Offset: '0x61'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_N945D[0x2]
+    Offset: '0x62'
+    Size: '0x2'
+    Type: char
   - Name: OverrideInteractionPointPosition
     Offset: '0x64'
     Size: '0xc'
@@ -276,6 +296,10 @@ PetBaseTelemetryFragment:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_K80DU[0x3]
+    Offset: '0x21'
+    Size: '0x3'
+    Type: char
   - Name: PetLocation
     Offset: '0x24'
     Size: '0xc'
@@ -327,6 +351,10 @@ PetDangerHearingThreat:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_Q3D32[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: Responses
     Offset: '0x10'
     Size: '0x10'
@@ -413,6 +441,10 @@ PetFeedingAnimationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_H98ZN[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: AnimationTimeout
     Offset: '0x4'
     Size: '0x4'
@@ -651,6 +683,10 @@ ReactStateMapping:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_NZGBF[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: AnimationTimeout
     Offset: '0xc'
     Size: '0x4'
@@ -667,6 +703,10 @@ ReactStateMapping:
     Offset: '0xb4'
     Size: '0x10'
     Type: Struct FloatRange
+  - Name: pad0x4_NXN5G[0x4]
+    Offset: '0xc4'
+    Size: '0x4'
+    Type: char
   - Name: IgnoringStrategies
     Offset: '0xc8'
     Size: '0x10'
@@ -685,6 +725,10 @@ WieldablePetDropTimeout:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_P5UYQ[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: DropDelay
     Offset: '0x4'
     Size: '0x4'
@@ -707,6 +751,10 @@ WieldablePetHungerAnimationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_PTB0D[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: AnimTimeout
     Offset: '0x4'
     Size: '0x4'

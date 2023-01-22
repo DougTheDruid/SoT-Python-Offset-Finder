@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x14
+// Size 0x14 (Full Size[0x3ec] - InheritedSize[0x3d8]
 class BP_FogVolume_Undersea_C: public FogVolume
 {
 public:

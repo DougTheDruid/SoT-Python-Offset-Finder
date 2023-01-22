@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_2BZJS[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "PromptAccessKey",
         "Type": "class",
         "Size": "0x8",
@@ -36,6 +42,12 @@
         "Offset": "0x171"
       },
       {
+        "Name": "pad0x6_NQIT1[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x172"
+      },
+      {
         "Name": "CharacterDispatcher",
         "Type": "Struct ObjectMessagingDispatcherHandle",
         "Size": "0x8",
@@ -46,6 +58,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x180"
+      },
+      {
+        "Name": "pad0x7_612VB[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x181"
       },
       {
         "Name": "Prompt",

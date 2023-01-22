@@ -21,6 +21,10 @@ BlendedSubMeshSpecification:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_490S6[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: MeshPatchAssets
     Offset: '0x10'
     Size: '0x10'
@@ -211,6 +215,10 @@ IPGBlendRange:
     Offset: '0x10'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_DEIOQ[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: Compatibility
     Offset: '0x18'
     Size: '0x10'
@@ -293,6 +301,10 @@ IPGData:
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_9YSDZ[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: Versions
     Offset: '0x38'
     Size: '0x10'
@@ -345,6 +357,10 @@ IPGSetData:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_K4PPY[0x2]
+    Offset: '0xa'
+    Size: '0x2'
+    Type: char
   - Name: Priority
     Offset: '0xc'
     Size: '0x4'
@@ -371,6 +387,10 @@ IPGSetsData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_1SNRV[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Sets
     Offset: '0x8'
     Size: '0x10'
@@ -394,6 +414,10 @@ IPGTestClass:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_LAJLB[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: ObjectTest
     Offset: '0x14'
     Size: '0xc'
@@ -402,6 +426,10 @@ IPGTestClass:
     Offset: '0x20'
     Size: '0xc'
     Type: Struct IPGTestSimpleType
+  - Name: pad0x4_HQOFJ[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: VectorTest
     Offset: '0x30'
     Size: '0x10'
@@ -436,6 +464,10 @@ MaterialReferenceEntry:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_RUNRS[0x6]
+    Offset: '0x2'
+    Size: '0x6'
+    Type: char
   - Name: FromMaterial
     Offset: '0x8'
     Size: '0x8'
@@ -496,6 +528,10 @@ PirateDescription:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_92JPB[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: Version
     Offset: '0x4'
     Size: '0x4'
@@ -508,10 +544,18 @@ PirateDescription:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_4JPIU[0x2]
+    Offset: '0xa'
+    Size: '0x2'
+    Type: char
   - Name: BodyShapeCoordinate
     Offset: '0xc'
     Size: '0x8'
     Type: Struct RadialCoordinate
+  - Name: pad0x4_KHI99[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: BlendShapes
     Offset: '0x18'
     Size: '0x10'
@@ -524,6 +568,10 @@ PirateDescription:
     Offset: '0x38'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_7MYV6[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   - Name: Items
     Offset: '0x40'
     Size: '0x10'
@@ -591,6 +639,10 @@ TextureSwitchEthnicityEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_66R7W[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
@@ -602,6 +654,10 @@ TextureSwitchGenderEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_202W2[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
@@ -628,6 +684,10 @@ TextureSwitchParameters:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_HNMZT[0x2]
+    Offset: '0xa'
+    Size: '0x2'
+    Type: char
   - Name: Seed
     Offset: '0xc'
     Size: '0x4'
@@ -640,10 +700,18 @@ TextureSwitchParameters:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_EZGKZ[0x2]
+    Offset: '0x12'
+    Size: '0x2'
+    Type: char
   - Name: SelectedBodyShape
     Offset: '0x14'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_XH1TU[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: SelectedItems
     Offset: '0x20'
     Size: '0x10'

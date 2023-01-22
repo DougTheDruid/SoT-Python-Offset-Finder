@@ -37,6 +37,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_9291Z[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "TagDictionary",
         "Type": "TArray<Struct GameplayTag>",
         "Size": "0x10",

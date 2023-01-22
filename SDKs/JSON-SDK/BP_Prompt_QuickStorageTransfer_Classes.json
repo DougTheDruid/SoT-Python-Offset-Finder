@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_E1V9Z[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "State_Complete",
         "Type": "bool",
         "Size": "0x1",
@@ -22,6 +28,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x121"
+      },
+      {
+        "Name": "pad0x6_FJRVS[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x122"
       },
       {
         "Name": "Prompt_QuickStorageTransfer_Take",
@@ -40,6 +52,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1f8"
+      },
+      {
+        "Name": "pad0x7_5HS7Z[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1f9"
       },
       {
         "Name": "Handle_ObjectWielded",

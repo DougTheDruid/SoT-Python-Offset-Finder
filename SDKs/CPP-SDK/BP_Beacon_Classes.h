@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60
+// Size 0x60 (Full Size[0x838] - InheritedSize[0x7d8]
 class BP_Beacon_C: public Beacon
 {
 public:

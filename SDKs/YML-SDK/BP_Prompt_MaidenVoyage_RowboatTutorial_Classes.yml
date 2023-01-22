@@ -6,10 +6,18 @@ BP_Prompt_MaidenVoyage_RowboatTutorial_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_YY8CI[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: State_SatInRowboat
     Offset: '0x120'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_BHA0N[0x7]
+    Offset: '0x121'
+    Size: '0x7'
+    Type: char
   - Name: Prompt_RowTheBoat
     Offset: '0x128'
     Size: '0x68'
@@ -22,6 +30,10 @@ BP_Prompt_MaidenVoyage_RowboatTutorial_C:
     Offset: '0x1d8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_3UBER[0x7]
+    Offset: '0x1d9'
+    Size: '0x7'
+    Type: char
   - Name: Handle_LeaveRowboat
     Offset: '0x1e0'
     Size: '0x48'

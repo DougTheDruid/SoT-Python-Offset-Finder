@@ -49,6 +49,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x7_GOOUL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
         "Name": "AnimMontage",
         "Type": "Class Object*",
         "Size": "0x8",
@@ -59,6 +65,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_1L3RQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       },
       {
         "Name": "AnimLength",
@@ -218,6 +230,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xa4"
+      },
+      {
+        "Name": "pad0x4_1CT77[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xac"
       },
       {
         "Name": "LocalisableName",
@@ -420,6 +438,12 @@
         "Offset": "0x74"
       },
       {
+        "Name": "pad0x4_YMJ70[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
         "Name": "LocalisableName",
         "Type": "Struct FText",
         "Size": "0x38",
@@ -459,6 +483,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_5CZ5P[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "Killer",
@@ -501,6 +531,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x7_G8F2D[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
         "Name": "Instigator",
         "Type": "Class Actor*",
         "Size": "0x8",
@@ -527,6 +563,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_PGWEQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "Instigator",
@@ -569,6 +611,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x4_A3OSA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
         "Name": "CombatDialogueForWaveGroup",
         "Type": "class",
         "Size": "0x8",
@@ -598,6 +646,12 @@
         "Offset": "0x129"
       },
       {
+        "Name": "pad0x2_VGP9H[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x12a"
+      },
+      {
         "Name": "MinPlayersToEnable",
         "Type": "int",
         "Size": "0x4",
@@ -616,10 +670,22 @@
         "Offset": "0x131"
       },
       {
+        "Name": "pad0x6_OCOQG[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x132"
+      },
+      {
         "Name": "PostSpawnAction",
         "Type": "Class PostBountyAIPawnSpawnedAction*",
         "Size": "0x8",
         "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x38_2RCT8[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x140"
       },
       {
         "Name": "BountyReward",
@@ -639,6 +705,12 @@
         "Offset": "0x100"
       },
       {
+        "Name": "pad0x7_QDICE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
+      },
+      {
         "Name": "AITypeToCache",
         "Type": "class",
         "Size": "0x8",
@@ -654,6 +726,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_0RFKS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "NumOfSpawnsInWave",
@@ -731,6 +809,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_L0AYY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "WaveGroupEntries",
         "Type": "TArray<Struct AIBountySpawnerArchiveWaveGroupEntry>",
         "Size": "0x10",
@@ -803,6 +887,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x3_ALDOQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
         "Name": "Intensity",
         "Type": "float",
         "Size": "0x4",
@@ -813,6 +903,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_0QR78[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
       },
       {
         "Name": "BountyPosition",
@@ -854,6 +950,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x3_1MBKX[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x51"
       },
       {
         "Name": "DeathLocation",
@@ -916,6 +1018,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_2JOYW[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
         "Name": "FaunaType",
@@ -1002,6 +1110,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_B0YAS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "SpecificRegionsToSpawnOn",
@@ -1162,6 +1276,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_PW4ZA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "TargetMeshZOffset",
         "Type": "float",
         "Size": "0x4",
@@ -1200,6 +1320,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_X1POQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "PetScale",
@@ -1251,6 +1377,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_VXUQO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "NewRotationRate",
@@ -1604,6 +1736,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_8RMSC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "WeightedArray",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
@@ -1648,6 +1786,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2"
+      },
+      {
+        "Name": "pad0x1_QP8GO[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3"
       },
       {
         "Name": "SightRadius",
@@ -1726,6 +1870,12 @@
         "Offset": "0x1"
       },
       {
+        "Name": "pad0x2_9K5G9[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
+      },
+      {
         "Name": "MinHealth",
         "Type": "float",
         "Size": "0x4",
@@ -1787,6 +1937,12 @@
         "Type": "Struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_G0NRR[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "Params",
@@ -2133,6 +2289,12 @@
         "Offset": "0xc"
       },
       {
+        "Name": "pad0x8_GF12P[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
         "Name": "Rotation",
         "Type": "Struct Quat",
         "Size": "0x10",
@@ -2287,6 +2449,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_JOQQ0[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       },
       {
         "Name": "VfxTemplate",
@@ -2478,6 +2646,12 @@
         "Offset": "0x40"
       },
       {
+        "Name": "pad0x3_VOK91[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x41"
+      },
+      {
         "Name": "AIRegionCostUnits",
         "Type": "int",
         "Size": "0x4",
@@ -2625,6 +2799,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_7B63T[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       },
       {
         "Name": "EncounterSettings",
@@ -2940,6 +3120,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_0E0ZP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "SpawnedWave",
         "Type": "Struct AISpawnerWave",
         "Size": "0x100",
@@ -3111,6 +3297,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_WEOLQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "AmmoTypeProbabilities",
         "Type": "TArray<Struct WeightedAmmoType>",
         "Size": "0x10",
@@ -3126,6 +3318,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_LT9VM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "AmmoType",
@@ -3155,6 +3353,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x2_A0ART[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x12"
       },
       {
         "Name": "TargetScore",
@@ -3285,6 +3489,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x3_KZOF6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
         "Name": "Value",
         "Type": "float",
         "Size": "0x4",
@@ -3329,6 +3539,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_2NND6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "BlackboardKey",
@@ -3571,6 +3787,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x4_MVBO1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
         "Name": "ActorToPerceiveOnSpawn",
         "Type": "Class Actor*",
         "Size": "0x8",
@@ -3581,6 +3803,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_QG9LQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "Skillset",
@@ -3708,6 +3936,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_QPEII[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "AudioDelay",

@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 WaterSlide:
   Attributes:
+  - Name: pad0x8_NJBQM[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: SlideSpline
     Offset: '0x3d0'
     Size: '0x8'
@@ -34,6 +38,10 @@ WaterSlide:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_D8140[0x3]
+    Offset: '0x409'
+    Size: '0x3'
+    Type: char
   - Name: EndOfSlideLaunchForce
     Offset: '0x40c'
     Size: '0xc'
@@ -42,6 +50,10 @@ WaterSlide:
     Offset: '0x418'
     Size: '0x8'
     Type: Class WaterSlideAudioParams*
+  - Name: pad0x30_OMQXV[0x30]
+    Offset: '0x41e'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x78'
   FullSize: '0x440'
   InheritedSize: '0x3c8'
@@ -104,6 +116,10 @@ WaterSlideParamsDataAsset:
   Super: DataAsset
 WaterSlidePlayerComponent:
   Attributes:
+  - Name: pad0x8_YQU1D[0x8]
+    Offset: '0xe0'
+    Size: '0x8'
+    Type: char
   - Name: PlayerWaterSlideSplashingVFXComponent
     Offset: '0xe8'
     Size: '0x8'
@@ -116,6 +132,10 @@ WaterSlidePlayerComponent:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
+  - Name: pad0x14_7TEI6[0x14]
+    Offset: '0xfc'
+    Size: '0x14'
+    Type: char
   - Name: CurrentWaterSlide
     Offset: '0x110'
     Size: '0x8'

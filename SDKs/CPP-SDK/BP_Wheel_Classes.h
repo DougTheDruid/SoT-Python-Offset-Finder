@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x111
+// Size 0x111 (Full Size[0xb41] - InheritedSize[0xa30]
 class BP_Wheel_C: public Wheel
 {
 public:

@@ -129,6 +129,10 @@ ItemSpawnCustomServerEvent:
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_77W7U[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: ItemType
     Offset: '0x20'
     Size: '0x10'
@@ -269,6 +273,10 @@ OnQuestStartedCustomServerEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_KP8MO[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   - Name: CrewId
     Offset: '0x1c'
     Size: '0x10'
@@ -295,6 +303,10 @@ OnVoyageAcceptedCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_LAJND[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: Title
     Offset: '0x30'
     Size: '0x10'
@@ -317,6 +329,10 @@ OnVoyageStartedCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_UUVJS[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: Title
     Offset: '0x30'
     Size: '0x10'

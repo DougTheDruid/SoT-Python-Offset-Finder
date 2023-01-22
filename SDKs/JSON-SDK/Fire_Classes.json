@@ -6,10 +6,22 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_PUP4B[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "OnFire",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x9_PY4OV[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0xd7"
       }
     ]
   },
@@ -19,6 +31,12 @@
     "InheritedSize": "0xe0",
     "ClassSize": "0x30",
     "Attributes": [
+      {
+        "Name": "pad0x18_HOVQF[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xe0"
+      },
       {
         "Name": "FireVFX",
         "Type": "Class ParticleSystem*",
@@ -36,6 +54,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x108"
+      },
+      {
+        "Name": "pad0xc_1JAGM[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x10a"
       }
     ]
   },
@@ -114,6 +138,12 @@
         "Offset": "0xe1"
       },
       {
+        "Name": "pad0x2_P8J9L[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xe2"
+      },
+      {
         "Name": "TimeInSecondsUntilFireExtinguished",
         "Type": "float",
         "Size": "0x4",
@@ -188,6 +218,12 @@
         "Type": "Struct FireCellStateTimingParams",
         "Size": "0x94",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x12c_TNH7M[0x12c]",
+        "Type": "char",
+        "Size": "0x12c",
+        "Offset": "0xba"
       }
     ]
   },
@@ -214,6 +250,12 @@
         "Type": "Class FirePropagator*",
         "Size": "0x8",
         "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x68_XE0VU[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x76"
       }
     ]
   },
@@ -312,6 +354,12 @@
         "Offset": "0x190"
       },
       {
+        "Name": "pad0x8_GXSDP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x1a0"
+      },
+      {
         "Name": "InterleavedSpawnLists",
         "Type": "TArray<Struct FireParticleSpawnList>",
         "Size": "0x10",
@@ -322,6 +370,12 @@
         "Type": "Class FirePropagator*",
         "Size": "0x8",
         "Offset": "0x1b8"
+      },
+      {
+        "Name": "pad0x60_XL1S4[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x1be"
       }
     ]
   },
@@ -332,16 +386,34 @@
     "ClassSize": "0xf8",
     "Attributes": [
       {
+        "Name": "pad0x90_QOQF9[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x28"
+      },
+      {
         "Name": "CellStateTimingParams",
         "Type": "Class FireCellStateTimingParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
+        "Name": "pad0x4_BKOIJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
         "Name": "WaterHeightOffsetToFloodCells",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc4"
+      },
+      {
+        "Name": "pad0x60_BGA5D[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0xc6"
       }
     ]
   },
@@ -352,10 +424,22 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x8_9HC1T[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
         "Name": "FireGridLocation",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x118"
+      },
+      {
+        "Name": "pad0x2c_RXTBT[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x122"
       }
     ]
   },
@@ -384,6 +468,12 @@
         "Type": "Struct ShipFireLightParams",
         "Size": "0x14",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x2c_JKF1B[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x3a"
       }
     ]
   },
@@ -393,6 +483,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x3c8",
     "Attributes": [
+      {
+        "Name": "pad0x10_GJRAW[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
       {
         "Name": "FeatureToggleName",
         "Type": "struct FName",
@@ -424,6 +520,12 @@
         "Offset": "0xf8"
       },
       {
+        "Name": "pad0x4_R2ZK7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x104"
+      },
+      {
         "Name": "Propagator",
         "Type": "Class FirePropagator*",
         "Size": "0x8",
@@ -440,6 +542,12 @@
         "Type": "TArray<Struct FireCellDesc>",
         "Size": "0x10",
         "Offset": "0x118"
+      },
+      {
+        "Name": "pad0x10_B3A5P[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x128"
       },
       {
         "Name": "BurnStatus",
@@ -494,6 +602,12 @@
         "Type": "Struct FireCellAudioParams",
         "Size": "0x40",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0xd8_I9YOA[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x436"
       }
     ]
   },

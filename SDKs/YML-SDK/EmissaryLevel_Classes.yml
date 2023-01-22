@@ -16,14 +16,26 @@ EmissaryActiveTableVisualiserComponent:
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<Struct MaterialVisualisation>
+  - Name: pad0x10_N2MU3[0x10]
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: char
   - Name: LightChanges
     Offset: '0xf0'
     Size: '0x10'
     Type: TArray<Struct LightVisualisation>
+  - Name: pad0x10_R3TEH[0x10]
+    Offset: '0x100'
+    Size: '0x10'
+    Type: char
   - Name: ParticleChanges
     Offset: '0x110'
     Size: '0x10'
     Type: TArray<Struct ParticleVisualisation>
+  - Name: pad0x58_FSM2H[0x58]
+    Offset: '0x11e'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'
@@ -48,6 +60,10 @@ EmissaryFlotsamDuplicationInterface:
   Super: Interface
 EmissaryFlotsamItemInfo:
   Attributes:
+  - Name: pad0x8_OD5WA[0x8]
+    Offset: '0x728'
+    Size: '0x8'
+    Type: char
   - Name: HandInOwnFlotsamReward
     Offset: '0x730'
     Size: '0x18'
@@ -60,6 +76,10 @@ EmissaryFlotsamItemInfo:
     Offset: '0x760'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_BZ29S[0x9]
+    Offset: '0x75f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x768'
   InheritedSize: '0x728'
@@ -72,6 +92,10 @@ EmissaryFlotsamItemSpawnComponent:
   Super: ItemSpawnComponent
 EmissaryFlotsamTooltipCustomizerComponent:
   Attributes:
+  - Name: pad0x10_IBZ02[0x10]
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: char
   - Name: CheckForDelivery
     Offset: '0xd8'
     Size: '0x1'
@@ -80,12 +104,20 @@ EmissaryFlotsamTooltipCustomizerComponent:
     Offset: '0xd9'
     Size: '0x1'
     Type: bool
+  - Name: pad0x18_W5KWQ[0x18]
+    Offset: '0xd8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 EmissaryLevelService:
   Attributes:
+  - Name: pad0xb8_NPT3U[0xb8]
+    Offset: '0x3c8'
+    Size: '0xb8'
+    Type: char
   - Name: Settings
     Offset: '0x480'
     Size: '0x8'
@@ -94,6 +126,10 @@ EmissaryLevelService:
     Offset: '0x488'
     Size: '0x8'
     Type: Class EmissaryRewardSettingsAsset*
+  - Name: pad0x298_9P7AW[0x298]
+    Offset: '0x48e'
+    Size: '0x298'
+    Type: char
   ClassSize: '0x350'
   FullSize: '0x718'
   InheritedSize: '0x3c8'
@@ -112,6 +148,10 @@ EmissaryLevelSettingsAsset:
     Offset: '0x40'
     Size: '0x20'
     Type: Struct EmissaryFlagMeshReferences
+  - Name: pad0x48_QW2DZ[0x48]
+    Offset: '0x5e'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -126,6 +166,10 @@ EmissaryMaxRankQuestProvider:
     Offset: '0xd0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_D7HCX[0x7]
+    Offset: '0xd1'
+    Size: '0x7'
+    Type: char
   - Name: StartMaxRankQuestToolTipText
     Offset: '0xd8'
     Size: '0x38'
@@ -148,14 +192,26 @@ EmissaryMaxRankQuestProvider:
   Super: ActorComponent
 EmissaryParticipantComponent:
   Attributes:
+  - Name: pad0x8_NDU79[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: IsAtMaxRank
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_6HVDX[0x7]
+    Offset: '0xd1'
+    Size: '0x7'
+    Type: char
   - Name: NoteCompletionIdents
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<Struct MysteriousNotesCompletionEventsModelEntry>
+  - Name: pad0x10_0NS1G[0x10]
+    Offset: '0xe8'
+    Size: '0x10'
+    Type: char
   - Name: EmissaryLevel
     Offset: '0xf8'
     Size: '0x4'
@@ -172,10 +228,18 @@ EmissaryParticipantComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_2973C[0x3]
+    Offset: '0x109'
+    Size: '0x3'
+    Type: char
   - Name: VotedCompany
     Offset: '0x10c'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x14_79DCS[0x14]
+    Offset: '0x112'
+    Size: '0x14'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x118'
   InheritedSize: '0xc8'
@@ -206,6 +270,10 @@ EmissaryRewardSettingsAsset:
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_SP456[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   - Name: CampaignSettings
     Offset: '0x40'
     Size: '0x8'
@@ -236,6 +304,10 @@ EmissaryShipAffiliationTrackerComponent:
     Offset: '0x330'
     Size: '0x4'
     Type: int
+  - Name: pad0x24_DQJF9[0x24]
+    Offset: '0x332'
+    Size: '0x24'
+    Type: char
   ClassSize: '0x70'
   FullSize: '0x350'
   InheritedSize: '0x2e0'
@@ -246,6 +318,10 @@ EmissaryVoyageInlineVoteConsumerBase:
     Offset: '0x30'
     Size: '0x8'
     Type: Class EmissaryVoyageVoteValidatorBase*
+  - Name: pad0x48_NGGJW[0x48]
+    Offset: '0x38'
+    Size: '0x48'
+    Type: char
   - Name: VoyageCinematicHeader
     Offset: '0x80'
     Size: '0x38'
@@ -254,6 +330,10 @@ EmissaryVoyageInlineVoteConsumerBase:
     Offset: '0xb8'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x20_D07MD[0x20]
+    Offset: '0xc0'
+    Size: '0x20'
+    Type: char
   - Name: Votes
     Offset: '0xe0'
     Size: '0x10'
@@ -262,10 +342,18 @@ EmissaryVoyageInlineVoteConsumerBase:
     Offset: '0xf0'
     Size: '0x8'
     Type: Class BoxedRpcDispatcherComponent*
+  - Name: pad0x20_WF1XM[0x20]
+    Offset: '0xf8'
+    Size: '0x20'
+    Type: char
   - Name: OwningActor
     Offset: '0x118'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0x18_H4LRA[0x18]
+    Offset: '0x11e'
+    Size: '0x18'
+    Type: char
   ClassSize: '0xf8'
   FullSize: '0x128'
   InheritedSize: '0x30'
@@ -276,6 +364,10 @@ EmissaryVoyageVoteValidatorBase:
     Offset: '0x30'
     Size: '0x8'
     Type: class
+  - Name: pad0x78_4JPDB[0x78]
+    Offset: '0x38'
+    Size: '0x78'
+    Type: char
   - Name: TargetCompany
     Offset: '0xb0'
     Size: '0x8'
@@ -304,6 +396,10 @@ IsEmissaryStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_DN3H3[0x9]
+    Offset: '0x2f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -342,6 +438,10 @@ StartEmissaryVoyageInlineVoteConsumer:
     Offset: '0x2b0'
     Size: '0x38'
     Type: Struct FText
+  - Name: pad0x88_UOXN9[0x88]
+    Offset: '0x2e6'
+    Size: '0x88'
+    Type: char
   ClassSize: '0x1d8'
   FullSize: '0x300'
   InheritedSize: '0x128'
@@ -378,6 +478,10 @@ StopEmissaryVoyageInlineVoteConsumer:
     Offset: '0x240'
     Size: '0x38'
     Type: Struct FText
+  - Name: pad0x88_8UMFR[0x88]
+    Offset: '0x276'
+    Size: '0x88'
+    Type: char
   ClassSize: '0x168'
   FullSize: '0x290'
   InheritedSize: '0x128'

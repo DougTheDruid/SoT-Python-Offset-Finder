@@ -21,6 +21,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x7_3BCSJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
         "Name": "Type",
         "Type": "class",
         "Size": "0x8",
@@ -36,6 +42,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_0XZRA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "Rotation",
@@ -60,6 +72,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_9YZR9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
         "Name": "Type",

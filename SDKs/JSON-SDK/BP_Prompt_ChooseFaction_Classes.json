@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_8FJNE[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "HandleChoseFaction",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -64,6 +70,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x311"
+      },
+      {
+        "Name": "pad0x6_HR4B5[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x312"
       },
       {
         "Name": "CurrentFaction",

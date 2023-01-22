@@ -34,6 +34,10 @@ FoliageType:
     Offset: '0x44'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_6UNL9[0x3]
+    Offset: '0x45'
+    Size: '0x3'
+    Type: char
   - Name: ScaleX
     Offset: '0x48'
     Size: '0x8'
@@ -50,6 +54,10 @@ FoliageType:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_UO70O[0x3]
+    Offset: '0x61'
+    Size: '0x3'
+    Type: char
   - Name: VertexColorMaskThreshold
     Offset: '0x64'
     Size: '0x4'
@@ -58,6 +66,10 @@ FoliageType:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_9MZ2X[0x3]
+    Offset: '0x69'
+    Size: '0x3'
+    Type: char
   - Name: ZOffset
     Offset: '0x6c'
     Size: '0x8'
@@ -66,6 +78,10 @@ FoliageType:
     Offset: '0x74'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_UFAB5[0x3]
+    Offset: '0x75'
+    Size: '0x3'
+    Type: char
   - Name: AlignMaxAngle
     Offset: '0x78'
     Size: '0x4'
@@ -74,6 +90,10 @@ FoliageType:
     Offset: '0x7c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_WNM6W[0x3]
+    Offset: '0x7d'
+    Size: '0x3'
+    Type: char
   - Name: RandomPitchAngle
     Offset: '0x80'
     Size: '0x4'
@@ -86,6 +106,10 @@ FoliageType:
     Offset: '0x8c'
     Size: '0x8'
     Type: Struct FloatInterval
+  - Name: pad0x4_D91SV[0x4]
+    Offset: '0x94'
+    Size: '0x4'
+    Type: char
   - Name: LandscapeLayers
     Offset: '0x98'
     Size: '0x10'
@@ -98,6 +122,10 @@ FoliageType:
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_94NNU[0x3]
+    Offset: '0xb1'
+    Size: '0x3'
+    Type: char
   - Name: CollisionScale
     Offset: '0xb4'
     Size: '0xc'
@@ -118,6 +146,10 @@ FoliageType:
     Offset: '0xec'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_JHH61[0x3]
+    Offset: '0xed'
+    Size: '0x3'
+    Type: char
   - Name: CullDistance
     Offset: '0xf0'
     Size: '0x8'
@@ -158,6 +190,10 @@ FoliageType:
     Offset: '0xf9'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_ACNPI[0x2]
+    Offset: '0xfa'
+    Size: '0x2'
+    Type: char
   - Name: OverriddenLightMapRes
     Offset: '0xfc'
     Size: '0x4'
@@ -166,6 +202,10 @@ FoliageType:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_ABUMQ[0x7]
+    Offset: '0x101'
+    Size: '0x7'
+    Type: char
   - Name: BodyInstance
     Offset: '0x108'
     Size: '0x180'
@@ -174,10 +214,18 @@ FoliageType:
     Offset: '0x288'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_BNZSZ[0x7]
+    Offset: '0x289'
+    Size: '0x7'
+    Type: char
   - Name: IsSelected
     Offset: '0x298'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_W49BZ[0x3]
+    Offset: '0x299'
+    Size: '0x3'
+    Type: char
   - Name: CollisionRadius
     Offset: '0x29c'
     Size: '0x4'
@@ -222,6 +270,10 @@ FoliageType:
     Offset: '0x2c1'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_YXRM3[0x2]
+    Offset: '0x2c2'
+    Size: '0x2'
+    Type: char
   - Name: MaxInitialAge
     Offset: '0x2c4'
     Size: '0x4'
@@ -306,6 +358,10 @@ FoliageType:
     Offset: '0x35d'
     Size: '0x1'
     Type: bool
+  - Name: pad0x4_85O0G[0x4]
+    Offset: '0x35c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x338'
   FullSize: '0x360'
   InheritedSize: '0x28'
@@ -392,6 +448,10 @@ InteractiveFoliageActor:
     Offset: '0x430'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_UP0W0[0xc]
+    Offset: '0x432'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x438'
   InheritedSize: '0x3d8'
@@ -422,6 +482,10 @@ ProceduralFoliageComponent:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_I5L03[0x4]
+    Offset: '0xd4'
+    Size: '0x4'
+    Type: char
   - Name: SpawningVolume
     Offset: '0xd8'
     Size: '0x8'
@@ -448,6 +512,10 @@ ProceduralFoliageSpawner:
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_R11OA[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: FoliageTypes
     Offset: '0x38'
     Size: '0x10'
@@ -456,6 +524,10 @@ ProceduralFoliageSpawner:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
+  - Name: pad0x21_RKHF3[0x21]
+    Offset: '0x47'
+    Size: '0x21'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -466,10 +538,18 @@ ProceduralFoliageTile:
     Offset: '0x28'
     Size: '0x8'
     Type: Class ProceduralFoliageSpawner*
+  - Name: pad0xa0_SGXSG[0xa0]
+    Offset: '0x30'
+    Size: '0xa0'
+    Type: char
   - Name: InstancesArray
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<Struct ProceduralFoliageInstance>
+  - Name: pad0x90_LNTZ4[0x90]
+    Offset: '0xde'
+    Size: '0x90'
+    Type: char
   ClassSize: '0x128'
   FullSize: '0x150'
   InheritedSize: '0x28'

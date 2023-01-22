@@ -41,7 +41,7 @@ BP_Mast_C:
   - Name: Sail Parameters
     Offset: '0x9e0'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct BP_SailStructure>
   - Name: Yards
     Offset: '0x9f0'
     Size: '0x10'

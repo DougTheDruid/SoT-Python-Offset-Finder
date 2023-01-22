@@ -2,20 +2,36 @@
 # https://github.com/DougTheDruid
 LevelAssetCachingService:
   Attributes:
+  - Name: pad0x18_A7P51[0x18]
+    Offset: '0x28'
+    Size: '0x18'
+    Type: char
   - Name: CurrentRegion
     Offset: '0x40'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x38_SPEN1[0x38]
+    Offset: '0x46'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: Object
 RegionLookupGeneratedGrid:
   Attributes:
+  - Name: pad0x8_034EL[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   - Name: WorldSetup
     Offset: '0x30'
     Size: '0x28'
     Type: Struct WorldRegionSetup
+  - Name: pad0xa8_SZZCX[0xa8]
+    Offset: '0x56'
+    Size: '0xa8'
+    Type: char
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'
@@ -34,10 +50,18 @@ RegionLookupSeaId:
   Super: Object
 RegionalAssetCache:
   Attributes:
+  - Name: pad0x10_YXKY2[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   - Name: CurrentListAsset
     Offset: '0x38'
     Size: '0x8'
     Type: Class RegionalAssetListDataAsset*
+  - Name: pad0xa8_AFM9I[0xa8]
+    Offset: '0x3e'
+    Size: '0xa8'
+    Type: char
   ClassSize: '0xb0'
   FullSize: '0xd8'
   InheritedSize: '0x28'

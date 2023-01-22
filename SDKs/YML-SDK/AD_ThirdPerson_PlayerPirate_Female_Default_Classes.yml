@@ -50,6 +50,10 @@ AD_ThirdPerson_PlayerPirate_Female_Default_C:
     Offset: '0x4d0'
     Size: '0x2'
     Type: Struct ADS_Sockets
+  - Name: pad0x6_TQ044[0x6]
+    Offset: '0x4d2'
+    Size: '0x6'
+    Type: char
   - Name: Facial
     Offset: '0x4d8'
     Size: '0x90'
@@ -58,6 +62,10 @@ AD_ThirdPerson_PlayerPirate_Female_Default_C:
     Offset: '0x568'
     Size: '0x1c'
     Type: Struct ADS_IKFootPlantingNative
+  - Name: pad0x4_IBP2N[0x4]
+    Offset: '0x584'
+    Size: '0x4'
+    Type: char
   - Name: HitReacts
     Offset: '0x588'
     Size: '0x40'

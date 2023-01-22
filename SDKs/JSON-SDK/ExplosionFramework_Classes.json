@@ -10,6 +10,12 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x68_TSS8B[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0xce"
       }
     ]
   },
@@ -58,6 +64,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x34"
+      },
+      {
+        "Name": "pad0x8_U8PX4[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x38"
       },
       {
         "Name": "CachedWorld",

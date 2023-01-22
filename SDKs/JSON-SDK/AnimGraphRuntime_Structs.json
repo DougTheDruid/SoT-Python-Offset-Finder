@@ -55,6 +55,12 @@
         "Offset": "0x64"
       },
       {
+        "Name": "pad0x3_FO55W[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x65"
+      },
+      {
         "Name": "DrivingCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
@@ -71,6 +77,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x74"
+      },
+      {
+        "Name": "pad0x3_ULYS5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x75"
       },
       {
         "Name": "RangeMin",
@@ -107,6 +119,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x94"
+      },
+      {
+        "Name": "pad0x3_0MPLB[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x95"
       },
       {
         "Name": "bAffectTargetTranslationX",
@@ -161,6 +179,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x99"
+      },
+      {
+        "Name": "pad0x2_34S82[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x9a"
       },
       {
         "Name": "ModificationMode",
@@ -221,6 +245,12 @@
         "Offset": "0x90"
       },
       {
+        "Name": "pad0x3_9N00M[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x91"
+      },
+      {
         "Name": "EffectorTransformBone",
         "Type": "Struct BoneReference",
         "Size": "0xc",
@@ -231,6 +261,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x3_Y0AZ4[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xa1"
       },
       {
         "Name": "TipBone",
@@ -345,6 +381,12 @@
         "Offset": "0x7e"
       },
       {
+        "Name": "pad0x1_FLBTK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x7f"
+      },
+      {
         "Name": "LookAtClamp",
         "Type": "float",
         "Size": "0x4",
@@ -355,6 +397,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x84"
+      },
+      {
+        "Name": "pad0x3_0H1Z6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x85"
       },
       {
         "Name": "InterpolationTime",
@@ -463,6 +511,12 @@
         "Offset": "0x65"
       },
       {
+        "Name": "pad0x2_KXEWN[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x66"
+      },
+      {
         "Name": "Translation",
         "Type": "Struct Vector",
         "Size": "0xc",
@@ -531,6 +585,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x64"
+      },
+      {
+        "Name": "pad0x3_I93K3[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x65"
       },
       {
         "Name": "MaxDisplacement",
@@ -634,6 +694,12 @@
         "Offset": "0x6a"
       },
       {
+        "Name": "pad0x1_3JLN8[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x6b"
+      },
+      {
         "Name": "TrailRelaxation",
         "Type": "float",
         "Size": "0x4",
@@ -711,6 +777,12 @@
         "Offset": "0x8c"
       },
       {
+        "Name": "pad0x3_QNRSV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x8d"
+      },
+      {
         "Name": "EffectorLocationSpace",
         "Type": "byte",
         "Size": "0x1",
@@ -721,6 +793,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x91"
+      },
+      {
+        "Name": "pad0x2_NYHAD[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x92"
       },
       {
         "Name": "JointTargetSpaceBoneName",

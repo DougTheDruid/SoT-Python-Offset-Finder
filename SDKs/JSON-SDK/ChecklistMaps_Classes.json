@@ -16,6 +16,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x5_BA99J[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x2b"
       }
     ]
   },
@@ -97,51 +103,63 @@
   },
   "ChecklistMap": {
     "Super": "TreasureMap",
-    "FullSize": "0x920",
-    "InheritedSize": "0x7d0",
+    "FullSize": "0x940",
+    "InheritedSize": "0x7f0",
     "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7c8"
+        "Offset": "0x7e8"
       },
       {
         "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7cc"
+        "Offset": "0x7ec"
       },
       {
         "Name": "Font",
         "Type": "Class Font*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7f0"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7d8"
+        "Offset": "0x7f8"
       },
       {
         "Name": "FontLineSpacingScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7dc"
+        "Offset": "0x7fc"
+      },
+      {
+        "Name": "pad0x8_U1VU8[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x800"
       },
       {
         "Name": "ChecklistMapLayout",
         "Type": "Class ChecklistMapLayout*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x808"
       },
       {
         "Name": "Contents",
         "Type": "Struct ChecklistMapContents",
         "Size": "0xe8",
-        "Offset": "0x7f0"
+        "Offset": "0x810"
+      },
+      {
+        "Name": "pad0x218_HUAPF[0x218]",
+        "Type": "char",
+        "Size": "0x218",
+        "Offset": "0x8f6"
       }
     ]
   },
@@ -163,6 +181,12 @@
         "Type": "Class ChecklistActionData*",
         "Size": "0x8",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x80_QAMRG[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xce"
       }
     ]
   },

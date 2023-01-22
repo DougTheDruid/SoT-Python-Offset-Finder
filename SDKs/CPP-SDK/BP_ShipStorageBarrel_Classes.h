@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
 class BP_ShipStorageBarrel_C: public Actor
 {
 public:

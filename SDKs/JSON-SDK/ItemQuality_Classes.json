@@ -13,10 +13,22 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x8_I0CZJ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "ItemQualityLevel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x7_5JINU[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xd1"
       },
       {
         "Name": "CompanySpecificItemQualityLevels",

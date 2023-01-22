@@ -39,6 +39,7 @@ struct StoryClaimableResourcesList
 public:
 	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
+	char                                                         pad0x7_DV05B[0x7];                                 // 0x9(0x7)
 	TArray<Weakclass ClaimableResources>                         ClaimableResources;                                // 0x10(0x10)
 };
 

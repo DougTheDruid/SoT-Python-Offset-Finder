@@ -6,6 +6,10 @@ wsp_audio_C:
     Offset: '0x3d0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_WBWOV[0x4]
+    Offset: '0x3d4'
+    Size: '0x4'
+    Type: char
   - Name: WSP_Audio_2D_Emitter
     Offset: '0x3d8'
     Size: '0x20'

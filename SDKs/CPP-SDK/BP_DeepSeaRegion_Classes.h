@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x448] - InheritedSize[0x438]
 class BP_DeepSeaRegion_C: public DeepSeaRegion
 {
 public:

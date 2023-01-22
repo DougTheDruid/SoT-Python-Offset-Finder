@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x528] - InheritedSize[0x520]
 class BP_ShipFlagCustomizationChestInteraction_C: public ShipFlagCustomizationChestInteraction
 {
 public:

@@ -6,6 +6,10 @@ CharacterInteractionComponent:
     Offset: '0x5f0'
     Size: '0x8'
     Type: Class InteractableArea*
+  - Name: pad0xc8_FGB26[0xc8]
+    Offset: '0x5f6'
+    Size: '0xc8'
+    Type: char
   ClassSize: '0xc0'
   FullSize: '0x6b0'
   InheritedSize: '0x5f0'
@@ -26,6 +30,10 @@ InteractableArea:
     Offset: '0x44'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_3M9Q7[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   - Name: Interactable
     Offset: '0x50'
     Size: '0x8'
@@ -46,6 +54,10 @@ InteractableBlueprintFunctionLibrary:
   Super: BlueprintFunctionLibrary
 InteractableComponent:
   Attributes:
+  - Name: pad0x8_4ZVPS[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: FeatureFlag
     Offset: '0xd0'
     Size: '0x8'
@@ -82,10 +94,18 @@ InteractableComponent:
     Offset: '0xfc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_N1C4C[0x3]
+    Offset: '0xfd'
+    Size: '0x3'
+    Type: char
   - Name: InteractionRadius
     Offset: '0x100'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_VVG0G[0x4]
+    Offset: '0x104'
+    Size: '0x4'
+    Type: char
   - Name: InteractionPrerequisites
     Offset: '0x108'
     Size: '0x10'
@@ -98,6 +118,10 @@ InteractableComponent:
     Offset: '0x120'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_5GQUH[0x9]
+    Offset: '0x11f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
@@ -116,10 +140,18 @@ InteractableInterface:
   Super: Interface
 InteractableService:
   Attributes:
+  - Name: pad0x10_PGR74[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   - Name: InteractableAreas
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class InteractableArea*>
+  - Name: pad0x48_VP1W1[0x48]
+    Offset: '0x46'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -132,6 +164,10 @@ InteractableServiceInterface:
   Super: Interface
 InteractionPreventionComponent:
   Attributes:
+  - Name: pad0x8_RS321[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: ActorsToPreventInteractingWith
     Offset: '0xd0'
     Size: '0x10'
@@ -166,10 +202,18 @@ InteractorInterface:
   Super: Interface
 MockActorWithCharacterInteractionComponent:
   Attributes:
+  - Name: pad0x8_90JTQ[0x8]
+    Offset: '0x5e0'
+    Size: '0x8'
+    Type: char
   - Name: CharacterInteractionComponent
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class CharacterInteractionComponent*
+  - Name: pad0xb0_Z06YX[0xb0]
+    Offset: '0x5ee'
+    Size: '0xb0'
+    Type: char
   ClassSize: '0xb0'
   FullSize: '0x690'
   InheritedSize: '0x5e0'
@@ -182,6 +226,10 @@ MockInteractableService:
   Super: Object
 MockInteractorActor:
   Attributes:
+  - Name: pad0x8_249K6[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: FocusedInteractable
     Offset: '0x3d0'
     Size: '0x8'

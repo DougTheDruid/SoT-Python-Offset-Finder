@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_LD885[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "MapBundlePromptAccessKey",
         "Type": "class",
         "Size": "0x8",
@@ -30,6 +36,12 @@
         "Offset": "0x190"
       },
       {
+        "Name": "pad0x7_W1EUL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x191"
+      },
+      {
         "Name": "MapBundleAppearedHandle",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -46,6 +58,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1e8"
+      },
+      {
+        "Name": "pad0x7_A7NNI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1e9"
       },
       {
         "Name": "StealPrompt",

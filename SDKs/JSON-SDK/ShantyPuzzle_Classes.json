@@ -12,6 +12,12 @@
         "Offset": "0xc8"
       },
       {
+        "Name": "pad0x4_6LRWQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
         "Name": "StartCompletionReaction",
         "Type": "TArray<Struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
@@ -51,6 +57,12 @@
     "ClassSize": "0x110",
     "Attributes": [
       {
+        "Name": "pad0x8_E77T0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
         "Name": "RequiredShantyItemDesc",
         "Type": "class",
         "Size": "0x8",
@@ -75,6 +87,12 @@
         "Offset": "0x301"
       },
       {
+        "Name": "pad0x6_2SK62[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x302"
+      },
+      {
         "Name": "ActiveTimeRange",
         "Type": "Struct GameTimeRange",
         "Size": "0x10",
@@ -91,6 +109,12 @@
         "Type": "Class Ensemble*",
         "Size": "0x8",
         "Offset": "0x328"
+      },
+      {
+        "Name": "pad0xd0_5M43B[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
+        "Offset": "0x32e"
       }
     ]
   },

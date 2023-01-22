@@ -40,6 +40,12 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
+        "Name": "pad0x90_NO1UZ[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x28"
+      },
+      {
         "Name": "OwningActor",
         "Type": "Class Actor*",
         "Size": "0x8",

@@ -18,6 +18,12 @@
         "Offset": "0x80"
       },
       {
+        "Name": "pad0x28_29E7B[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x88"
+      },
+      {
         "Name": "CreatedWorldMarkers",
         "Type": "TArray<Struct WorldMarkerDesc>",
         "Size": "0x10",
@@ -40,6 +46,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x6c_9FMX5[0x6c]",
+        "Type": "char",
+        "Size": "0x6c",
+        "Offset": "0xd2"
       }
     ]
   },

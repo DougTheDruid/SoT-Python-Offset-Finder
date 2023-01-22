@@ -186,6 +186,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x4_00EWY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
         "Name": "Audio",
         "Type": "Struct GenericPopupAudioDescriptor",
         "Size": "0x40",
@@ -201,6 +207,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_IVUCJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "Id",
@@ -247,6 +259,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_ILRBS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Id",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -273,6 +291,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_Q0TNW[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "Navigation",

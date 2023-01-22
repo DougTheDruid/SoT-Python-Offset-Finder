@@ -114,6 +114,12 @@
         "Offset": "0x44c"
       },
       {
+        "Name": "pad0x3_54HO1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x44d"
+      },
+      {
         "Name": "RainBlend",
         "Type": "Class TimelineComponent*",
         "Size": "0x8",
@@ -130,6 +136,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x468"
+      },
+      {
+        "Name": "pad0x4_4PCBA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x46c"
       },
       {
         "Name": "CreationParams",

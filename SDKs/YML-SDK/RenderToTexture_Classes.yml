@@ -24,6 +24,10 @@ RenderToTextureSceneDetails:
     Offset: '0x50'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
+  - Name: pad0x60_FA9LL[0x60]
+    Offset: '0x56'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x80'
   FullSize: '0xa8'
   InheritedSize: '0x28'

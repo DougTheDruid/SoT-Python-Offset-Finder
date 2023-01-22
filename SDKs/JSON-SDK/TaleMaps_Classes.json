@@ -6,6 +6,12 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x20_IZU4M[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x98"
+      },
+      {
         "Name": "MapMark",
         "Type": "class",
         "Size": "0x8",
@@ -114,6 +120,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x3_Y89K6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
         "Name": "MaxDistanceFromStartingIsland",
         "Type": "float",
         "Size": "0x4",
@@ -145,6 +157,12 @@
         "Type": "Class RegionIslandSelectionStrategyBase*",
         "Size": "0x8",
         "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x60_CY5CW[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0xa6"
       }
     ]
   },

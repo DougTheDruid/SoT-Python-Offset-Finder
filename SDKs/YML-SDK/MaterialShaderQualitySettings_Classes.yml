@@ -12,6 +12,10 @@ ShaderPlatformQualitySettings:
     Offset: '0x28'
     Size: '0x4'
     Type: Struct MaterialQualityOverrides
+  - Name: pad0x14_ZWXFU[0x14]
+    Offset: '0x2a'
+    Size: '0x14'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

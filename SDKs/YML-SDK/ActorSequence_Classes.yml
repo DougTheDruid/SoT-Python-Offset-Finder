@@ -32,6 +32,10 @@ ActorSequenceComponent:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_ALF8H[0x9]
+    Offset: '0xff'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'

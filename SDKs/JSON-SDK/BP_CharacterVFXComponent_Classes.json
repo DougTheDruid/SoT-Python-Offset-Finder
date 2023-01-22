@@ -12,6 +12,12 @@
         "Offset": "0xe0"
       },
       {
+        "Name": "pad0x134_GA2GE[0x134]",
+        "Type": "char",
+        "Size": "0x134",
+        "Offset": "0xe8"
+      },
+      {
         "Name": "EnterWaterEvent",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -96,10 +102,22 @@
         "Offset": "0x2cc"
       },
       {
+        "Name": "pad0x3_FSMYZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2cd"
+      },
+      {
         "Name": "DEBUG_WindToggleTimer",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2d0"
+      },
+      {
+        "Name": "pad0x4_R8YW5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2d4"
       },
       {
         "Name": "WindDirectionChangedHandle",

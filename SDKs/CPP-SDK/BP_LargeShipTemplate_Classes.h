@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x550
+// Size 0x550 (Full Size[0x1bf0] - InheritedSize[0x16a0]
 class BP_LargeShipTemplate_C: public Ship
 {
 public:
@@ -177,8 +177,10 @@ public:
 	Class ChildActorComponent*                                   AudioBoat;                                         // 0x1bc0(0x8)
 	Class ChildActorComponent*                                   MastMainSailAngleLeft;                             // 0x1bc8(0x8)
 	byte                                                         Timeline_Disable_Secondary__Direction_FB2965C04D191887E0A8AE9EBF5C5978; // 0x1bd0(0x1)
+	char                                                         pad0x7_LJ1HF[0x7];                                 // 0x1bd1(0x7)
 	Class TimelineComponent*                                     Timeline_Disable_Secondary;                        // 0x1bd8(0x8)
 	byte                                                         Timeline_DisableSplash1__Direction_6B41A1B3430D6C615C4EFEB03700C527; // 0x1be0(0x1)
+	char                                                         pad0x7_6UFHO[0x7];                                 // 0x1be1(0x7)
 	Class TimelineComponent*                                     Timeline_DisableSplash1;                           // 0x1be8(0x8)
 };
 

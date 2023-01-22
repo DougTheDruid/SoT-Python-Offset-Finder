@@ -11,6 +11,7 @@ struct EmissaryFactionActionRewardBoostServiceEvent
 {
 public:
 	byte                                                         FactionActionType;                                 // 0x0(0x1)
+	char                                                         pad0x3_GFR84[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  AssociatedCrew;                                    // 0x4(0x10)
 };
 
@@ -30,6 +31,7 @@ struct EmissaryCompanyActionRewardBoostServiceEvent
 public:
 	struct FName                                                 AssociatedCompany;                                 // 0x0(0x8)
 	byte                                                         CompanyActionType;                                 // 0x8(0x1)
+	char                                                         pad0x3_DZ8O5[0x3];                                 // 0x9(0x3)
 	Struct Guid                                                  AssociatedCrew;                                    // 0xc(0x10)
 };
 
@@ -55,6 +57,7 @@ struct EmissaryQuestCompanyActionRewardBoostEvent
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x0(0x1)
+	char                                                         pad0x3_KZ271[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  QuestId;                                           // 0x4(0x10)
 };
 

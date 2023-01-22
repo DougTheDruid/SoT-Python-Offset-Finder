@@ -76,6 +76,12 @@
         "Offset": "0x40"
       },
       {
+        "Name": "pad0x7_NGZFS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x41"
+      },
+      {
         "Name": "PlatformName",
         "Type": "Struct FString",
         "Size": "0x10",

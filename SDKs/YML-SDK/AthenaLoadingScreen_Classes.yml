@@ -64,6 +64,10 @@ SlateLoadingScreenParams:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_RWRYY[0x7]
+    Offset: '0x39'
+    Size: '0x7'
+    Type: char
   - Name: PlaceholderSpinnerTexture
     Offset: '0x40'
     Size: '0x10'
@@ -84,6 +88,10 @@ SlateLoadingScreenParams:
     Offset: '0xa0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_JU8J7[0x4]
+    Offset: '0xa4'
+    Size: '0x4'
+    Type: char
   - Name: SpinnerText
     Offset: '0xa8'
     Size: '0x38'
@@ -140,6 +148,10 @@ SlateLoadingScreenParams:
     Offset: '0x1d8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_GLHQS[0x4]
+    Offset: '0x1dc'
+    Size: '0x4'
+    Type: char
   - Name: LoadingScreenTips
     Offset: '0x1e0'
     Size: '0x10'
@@ -152,6 +164,10 @@ SlateLoadingScreenParams:
     Offset: '0x220'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_6354G[0x9]
+    Offset: '0x21f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x200'
   FullSize: '0x228'
   InheritedSize: '0x28'

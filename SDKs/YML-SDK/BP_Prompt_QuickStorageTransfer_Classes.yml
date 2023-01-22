@@ -6,6 +6,10 @@ BP_Prompt_QuickStorageTransfer_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_E1V9Z[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: State_Complete
     Offset: '0x120'
     Size: '0x1'
@@ -14,6 +18,10 @@ BP_Prompt_QuickStorageTransfer_C:
     Offset: '0x121'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_FJRVS[0x6]
+    Offset: '0x122'
+    Size: '0x6'
+    Type: char
   - Name: Prompt_QuickStorageTransfer_Take
     Offset: '0x128'
     Size: '0x68'
@@ -26,6 +34,10 @@ BP_Prompt_QuickStorageTransfer_C:
     Offset: '0x1f8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_5HS7Z[0x7]
+    Offset: '0x1f9'
+    Size: '0x7'
+    Type: char
   - Name: Handle_ObjectWielded
     Offset: '0x200'
     Size: '0x48'

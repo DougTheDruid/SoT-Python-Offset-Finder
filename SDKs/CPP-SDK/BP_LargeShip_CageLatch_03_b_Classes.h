@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x5a0] - InheritedSize[0x588]
 class BP_LargeShip_CageLatch_03_b_C: public PetCageSwitchMechanismTrigger
 {
 public:

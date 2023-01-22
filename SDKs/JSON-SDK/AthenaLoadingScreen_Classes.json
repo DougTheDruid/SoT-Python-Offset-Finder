@@ -61,6 +61,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x7_RWRYY[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
+      },
+      {
         "Name": "PlaceholderSpinnerTexture",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
@@ -89,6 +95,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x4_JU8J7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xa4"
       },
       {
         "Name": "SpinnerText",
@@ -175,6 +187,12 @@
         "Offset": "0x1d8"
       },
       {
+        "Name": "pad0x4_GLHQS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1dc"
+      },
+      {
         "Name": "LoadingScreenTips",
         "Type": "TArray<Struct FText>",
         "Size": "0x10",
@@ -191,6 +209,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x220"
+      },
+      {
+        "Name": "pad0x9_6354G[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x21f"
       }
     ]
   },

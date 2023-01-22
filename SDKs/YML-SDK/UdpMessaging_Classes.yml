@@ -6,6 +6,10 @@ UdpMessagingSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_RJWVD[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: UnicastEndpoint
     Offset: '0x30'
     Size: '0x10'
@@ -18,6 +22,10 @@ UdpMessagingSettings:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_1OFAN[0x7]
+    Offset: '0x51'
+    Size: '0x7'
+    Type: char
   - Name: StaticEndpoints
     Offset: '0x58'
     Size: '0x10'
@@ -26,6 +34,10 @@ UdpMessagingSettings:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_0J782[0x7]
+    Offset: '0x69'
+    Size: '0x7'
+    Type: char
   - Name: TunnelUnicastEndpoint
     Offset: '0x70'
     Size: '0x10'

@@ -17,7 +17,7 @@ BP_DistantLightProxy_C:
   - Name: LightList
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<Struct None>
+    Type: TArray<Struct PointLightProxy>
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'

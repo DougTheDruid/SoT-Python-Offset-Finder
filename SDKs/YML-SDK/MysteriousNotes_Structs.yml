@@ -21,6 +21,10 @@ ClientNoteData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_Q3N4B[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: PendingNotes
     Offset: '0x8'
     Size: '0x10'

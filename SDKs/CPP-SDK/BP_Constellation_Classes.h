@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x468] - InheritedSize[0x460]
 class BP_Constellation_C: public Constellation
 {
 public:

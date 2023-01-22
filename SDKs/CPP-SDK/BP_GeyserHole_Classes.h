@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
+// Size 0x30 (Full Size[0x468] - InheritedSize[0x438]
 class BP_GeyserHole_C: public ShovelHole
 {
 public:

@@ -12,6 +12,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x10_UBWNE[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
         "Name": "RootExpression",
         "Type": "Class EditableGameplayTagQueryExpression*",
         "Size": "0x8",
@@ -137,10 +143,22 @@
     "ClassSize": "0x148",
     "Attributes": [
       {
+        "Name": "pad0x118_TONC3[0x118]",
+        "Type": "char",
+        "Size": "0x118",
+        "Offset": "0x28"
+      },
+      {
         "Name": "GameplayTagTables",
         "Type": "TArray<class DataTable*>",
         "Size": "0x10",
         "Offset": "0x140"
+      },
+      {
+        "Name": "pad0x40_S7PFB[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x14e"
       }
     ]
   },

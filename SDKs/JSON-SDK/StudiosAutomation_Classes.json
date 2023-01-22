@@ -6,6 +6,12 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
+        "Name": "pad0x8_TYHHG[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
         "Name": "Category",
         "Type": "byte",
         "Size": "0x1",
@@ -42,6 +48,12 @@
         "Offset": "0x3dd"
       },
       {
+        "Name": "pad0x2_B37XA[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3de"
+      },
+      {
         "Name": "AdditionalMetadata",
         "Type": "TArray<Struct TestLevelMetadataEntry>",
         "Size": "0x10",
@@ -60,6 +72,12 @@
         "Offset": "0x3f1"
       },
       {
+        "Name": "pad0x2_JX8JD[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3f2"
+      },
+      {
         "Name": "TestTimeout",
         "Type": "float",
         "Size": "0x4",
@@ -70,6 +88,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0x4_PNTI5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3fc"
       },
       {
         "Name": "VerboseLogCategories",
@@ -106,6 +130,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x450"
+      },
+      {
+        "Name": "pad0x44_KMS9K[0x44]",
+        "Type": "char",
+        "Size": "0x44",
+        "Offset": "0x452"
       }
     ]
   },
@@ -113,6 +143,13 @@
     "Super": "Actor",
     "FullSize": "0x3c8",
     "InheritedSize": "0x3c8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AggregateAssetAudit": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },

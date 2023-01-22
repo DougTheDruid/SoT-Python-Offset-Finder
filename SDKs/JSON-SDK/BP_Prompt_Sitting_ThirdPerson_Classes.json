@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_U82YE[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "Handle_LocalPlayerEnteredSittingState",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -40,6 +46,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1d5"
+      },
+      {
+        "Name": "pad0x2_G0NLH[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x1d6"
       },
       {
         "Name": "Handle_LocalPlayerExitedSittingState",

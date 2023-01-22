@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60
+// Size 0x60 (Full Size[0x6c8] - InheritedSize[0x668]
 class BP_CaptainsBookcase_01_C: public CaptainsBookcase
 {
 public:

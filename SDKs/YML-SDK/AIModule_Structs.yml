@@ -14,6 +14,10 @@ AIDamageEvent:
     Offset: '0x10'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_7949V[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: DamagedActor
     Offset: '0x20'
     Size: '0x8'
@@ -165,6 +169,10 @@ AIStimulus:
     Offset: '0x24'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0xc_V8BXJ[0xc]
+    Offset: '0x2c'
+    Size: '0xc'
+    Type: char
   - Name: bSuccessfullySensed
     Offset: '0x38'
     Size: '0x1'
@@ -232,6 +240,10 @@ BTDecoratorLogic:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x1_AEDTB[0x1]
+    Offset: '0x1'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x4'
 BehaviorTreeTemplateInfo:
   Attributes:
@@ -277,6 +289,10 @@ BlackboardKeySelector:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_PO45A[0x3]
+    Offset: '0x21'
+    Size: '0x3'
+    Type: char
   - Name: bNoneIsAllowedValue
     Offset: '0x24'
     Size: '0x1'
@@ -356,6 +372,10 @@ EnvBoolParam_DEPRECATED:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_QKV1N[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: ParamName
     Offset: '0x4'
     Size: '0x8'
@@ -418,6 +438,10 @@ EnvNamedValue:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_V5U1H[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: Value
     Offset: '0xc'
     Size: '0x4'
@@ -451,6 +475,10 @@ EnvQueryResult:
     Offset: '0x10'
     Size: '0x8'
     Type: class
+  - Name: pad0x14_FLLR3[0x14]
+    Offset: '0x18'
+    Size: '0x14'
+    Type: char
   - Name: OptionIndex
     Offset: '0x2c'
     Size: '0x4'
@@ -466,6 +494,10 @@ EnvTraceData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_X1530[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: NavigationFilter
     Offset: '0x8'
     Size: '0x8'
@@ -538,6 +570,10 @@ EnvTraceData:
     Offset: '0x34'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_DSAR6[0x3]
+    Offset: '0x35'
+    Size: '0x3'
+    Type: char
   - Name: bUseUpDownAsAbsoluteZStartAndEnd
     Offset: '0x38'
     Size: '0x1'

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0x470] - InheritedSize[0x3c8]
 class BP_LargeShip_StandardHull_Art_Interior_Captains_Cabin_C: public Actor
 {
 public:

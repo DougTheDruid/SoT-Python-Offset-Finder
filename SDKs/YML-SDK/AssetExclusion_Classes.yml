@@ -10,6 +10,10 @@ AssetExclusionCanaryAsset:
     Offset: '0x60'
     Size: '0x4'
     Type: int
+  - Name: pad0xc_E8QEM[0xc]
+    Offset: '0x62'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'

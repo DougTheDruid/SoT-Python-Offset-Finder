@@ -13,6 +13,12 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
+        "Name": "pad0x8_EQCCW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "DynamicCardSelectionMaterialInstance",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
@@ -35,6 +41,12 @@
         "Type": "Struct Int32Range",
         "Size": "0x10",
         "Offset": "0x3e8"
+      },
+      {
+        "Name": "pad0x130_G5HOE[0x130]",
+        "Type": "char",
+        "Size": "0x130",
+        "Offset": "0x3f6"
       }
     ]
   },
@@ -77,6 +89,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x9_IJN9Q[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x27"
       }
     ]
   },
@@ -122,6 +140,12 @@
     "ClassSize": "0x130",
     "Attributes": [
       {
+        "Name": "pad0x8_USSLZ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "MeshComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
@@ -132,6 +156,12 @@
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x128_LNZ6W[0x128]",
+        "Type": "char",
+        "Size": "0x128",
+        "Offset": "0x3de"
       }
     ]
   },
@@ -148,10 +178,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "ExpandedAndCompactEmoteRadialNumPages",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
+        "Name": "pad0xc_7H1T3[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3a"
       }
     ]
   },

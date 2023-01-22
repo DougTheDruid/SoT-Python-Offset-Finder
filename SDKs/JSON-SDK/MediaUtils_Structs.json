@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_FU8GU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
         "Name": "SeekTime",
         "Type": "Struct Timespan",
         "Size": "0x8",

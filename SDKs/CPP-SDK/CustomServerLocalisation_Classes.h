@@ -6,18 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CustomServerLocalisationInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x98
+// Size 0x98 (Full Size[0x460] - InheritedSize[0x3c8]
 class CustomServerLocalisationService: public Actor
 {
 public:
+	char                                                         pad0x8_6AUKK[0x8];                                 // 0x3c8(0x8)
 	TArray<Struct CustomServerLocalisationData>                  LocalisationData;                                  // 0x3d0(0x10)
+	char                                                         pad0xa0_BJ0QX[0xa0];                               // 0x3de(0xa0)
 };
 
 

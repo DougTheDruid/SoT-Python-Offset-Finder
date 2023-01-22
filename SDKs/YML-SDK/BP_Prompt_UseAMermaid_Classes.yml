@@ -6,10 +6,18 @@ BP_Prompt_UseAMermaid_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_5ROXZ[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: State_IsThereAMermaid
     Offset: '0x120'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_RDI3R[0x7]
+    Offset: '0x121'
+    Size: '0x7'
+    Type: char
   - Name: Handle_OnMermaidActivatedLocally
     Offset: '0x128'
     Size: '0x48'
@@ -26,6 +34,10 @@ BP_Prompt_UseAMermaid_C:
     Offset: '0x200'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_Q21J9[0x7]
+    Offset: '0x201'
+    Size: '0x7'
+    Type: char
   - Name: Prompt_UseMermaid
     Offset: '0x208'
     Size: '0x68'
@@ -34,6 +46,10 @@ BP_Prompt_UseAMermaid_C:
     Offset: '0x270'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_IRTE7[0x3]
+    Offset: '0x271'
+    Size: '0x3'
+    Type: char
   - Name: PromptDisplayDuration
     Offset: '0x274'
     Size: '0x4'

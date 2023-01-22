@@ -6,6 +6,10 @@ BP_Prompt_EmissaryKilledAnotherEmissary_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_R1C9Y[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: Handle_EmissaryKilledAnotherEmissary
     Offset: '0x120'
     Size: '0x48'
@@ -22,10 +26,18 @@ BP_Prompt_EmissaryKilledAnotherEmissary_C:
     Offset: '0x178'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_D0AT3[0x3]
+    Offset: '0x179'
+    Size: '0x3'
+    Type: char
   - Name: ExpectedCompanyName
     Offset: '0x17c'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_JD4SK[0x4]
+    Offset: '0x184'
+    Size: '0x4'
+    Type: char
   - Name: ExpectedVictimCompanyName
     Offset: '0x188'
     Size: '0x10'

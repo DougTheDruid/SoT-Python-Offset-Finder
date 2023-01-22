@@ -62,6 +62,10 @@ BP_InteractableShipLantern_C:
     Offset: '0x738'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_SEBR2[0x3]
+    Offset: '0x739'
+    Size: '0x3'
+    Type: char
   - Name: DefaultGlowColour
     Offset: '0x73c'
     Size: '0x10'

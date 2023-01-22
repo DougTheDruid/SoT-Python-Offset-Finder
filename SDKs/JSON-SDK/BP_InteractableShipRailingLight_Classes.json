@@ -66,6 +66,12 @@
         "Offset": "0x718"
       },
       {
+        "Name": "pad0x7_AEKZQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x719"
+      },
+      {
         "Name": "DynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",

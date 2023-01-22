@@ -163,6 +163,10 @@ WwiseAudioReverbPresets:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_PC5VJ[0x3]
+    Offset: '0x31'
+    Size: '0x3'
+    Type: char
   - Name: MinSpaceSizeWindowForEarlyReflections
     Offset: '0x34'
     Size: '0x4'
@@ -190,6 +194,10 @@ WwiseBinkSettings:
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_QL6UI[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   - Name: Mappings
     Offset: '0x28'
     Size: '0x10'
@@ -205,6 +213,10 @@ WwiseBinkTrackMapping:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_91ZIZ[0x2]
+    Offset: '0x2'
+    Size: '0x2'
+    Type: char
   - Name: mVolumeDb
     Offset: '0x4'
     Size: '0x4'
@@ -216,6 +228,10 @@ WwiseBinkTrackMappings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_DAWS8[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: mChannels
     Offset: '0x8'
     Size: '0x10'
@@ -290,6 +306,10 @@ WwiseNativeEmitterPoolDensityParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_VPNRN[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: PoolDensityAudioPlayEvent
     Offset: '0x8'
     Size: '0x8'

@@ -6,6 +6,10 @@ AnimationSwitchDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_797O5[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: Entries
     Offset: '0x30'
     Size: '0x10'
@@ -26,6 +30,10 @@ CharacterMeshBakeSpecification:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_YAJDN[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: CharacterMesh
     Offset: '0x30'
     Size: '0x8'
@@ -136,68 +144,76 @@ PirateGeneratorSettings:
     Offset: '0x38'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: ConfigJson
+  - Name: EditorWardrobeDataAsset
     Offset: '0x48'
+    Size: '0x8'
+    Type: Class WardrobeDataAsset*
+  - Name: ConfigJson
+    Offset: '0x50'
     Size: '0x10'
     Type: Struct FString
   - Name: PiratesFolder
-    Offset: '0x58'
+    Offset: '0x60'
     Size: '0x10'
     Type: Struct FString
   - Name: WardrobeFolder
-    Offset: '0x68'
+    Offset: '0x70'
     Size: '0x10'
     Type: Struct FString
   - Name: DefaultWardrobeItems
-    Offset: '0x78'
+    Offset: '0x80'
     Size: '0x10'
     Type: TArray<Struct FName>
   - Name: MaterialReferencesDataAsset
-    Offset: '0x88'
+    Offset: '0x90'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: SkeletonsDataAsset
-    Offset: '0x98'
+    Offset: '0xa0'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: BaseSkeletonMeshes
-    Offset: '0xa8'
+    Offset: '0xb0'
     Size: '0x10'
     Type: TArray<Struct StringAssetReference>
   - Name: Characterization
-    Offset: '0xb8'
+    Offset: '0xc0'
     Size: '0x10'
     Type: TArray<Struct StringAssetReference>
   - Name: SkeletonMeshFormats
-    Offset: '0xc8'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<Str SkeletonMeshFormats>
   - Name: FirstPersonAnimations
-    Offset: '0xd8'
+    Offset: '0xe0'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: ThirdPersonAnimations
-    Offset: '0xe8'
+    Offset: '0xf0'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: LODScreenSizes
-    Offset: '0xf8'
+    Offset: '0x100'
     Size: '0x10'
     Type: TArray<Float LODScreenSizes>
   - Name: LODHysteresis
-    Offset: '0x108'
+    Offset: '0x110'
     Size: '0x10'
     Type: TArray<Float LODHysteresis>
   - Name: ExcludeDataAssets
-    Offset: '0x118'
+    Offset: '0x120'
     Size: '0x10'
     Type: TArray<Struct StringAssetReference>
   - Name: DefaultPirateGenerationSeed
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x4'
     Type: int
-  ClassSize: '0xf8'
-  FullSize: '0x130'
+  - Name: pad0xc_HY4NV[0xc]
+    Offset: '0x132'
+    Size: '0xc'
+    Type: char
+  ClassSize: '0x100'
+  FullSize: '0x138'
   InheritedSize: '0x38'
   Super: DeveloperSettings
 PreparePirateMeshBakeTestFunctionLibrary:
@@ -214,10 +230,18 @@ SkeletonsDataAsset:
   Super: DataAsset
 TextureSwitch:
   Attributes:
+  - Name: pad0x80_QTRPA[0x80]
+    Offset: '0x140'
+    Size: '0x80'
+    Type: char
   - Name: bDuplicated
     Offset: '0x1c0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_EUT8I[0x7]
+    Offset: '0x1c1'
+    Size: '0x7'
+    Type: char
   - Name: DefaultParameters
     Offset: '0x1c8'
     Size: '0x58'
@@ -284,6 +308,10 @@ TextureSwitchBySeed:
     Offset: '0x22c'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_OOKHE[0x4]
+    Offset: '0x234'
+    Size: '0x4'
+    Type: char
   - Name: FallbackTexture
     Offset: '0x238'
     Size: '0x10'
@@ -298,6 +326,10 @@ TextureSwitchBySeed:
   Super: TextureSwitch
 WardrobeDataAsset:
   Attributes:
+  - Name: pad0xa0_YXYWU[0xa0]
+    Offset: '0x28'
+    Size: '0xa0'
+    Type: char
   - Name: AssetMap
     Offset: '0xc8'
     Size: '0x10'

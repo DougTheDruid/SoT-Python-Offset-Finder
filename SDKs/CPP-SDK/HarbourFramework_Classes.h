@@ -6,29 +6,31 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HarbourInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
 class HarbourComponent: public SceneComponent
 {
 public:
+	char                                                         pad0x8_WGLMW[0x8];                                 // 0x2e0(0x8)
 	float                                                        HarbourRadiusInCentimetres;                        // 0x2e8(0x4)
+	char                                                         pad0x2c_VFS54[0x2c];                               // 0x2ea(0x2c)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HarbourServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class HarbourService: public Object
 {
 public:

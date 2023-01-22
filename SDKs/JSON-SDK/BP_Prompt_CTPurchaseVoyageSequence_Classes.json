@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_JSYGN[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "TriggerVolumeRadius",
         "Type": "float",
         "Size": "0x4",
@@ -40,6 +46,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x148"
+      },
+      {
+        "Name": "pad0x4_DGJ2U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14c"
       },
       {
         "Name": "Prompt_GoToVendors",

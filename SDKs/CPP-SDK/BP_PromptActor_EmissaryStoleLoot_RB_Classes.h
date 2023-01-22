@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
+// Size 0x30 (Full Size[0x430] - InheritedSize[0x400]
 class BP_PromptActor_EmissaryStoleLoot_RB_C: public BP_PromptActorBase_C
 {
 public:

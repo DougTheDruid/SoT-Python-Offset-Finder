@@ -6,6 +6,10 @@ BP_Prompt_TavernBoard_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_A5AGG[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: WieldableItemUseEvent
     Offset: '0x120'
     Size: '0x48'
@@ -22,6 +26,10 @@ BP_Prompt_TavernBoard_C:
     Offset: '0x1d8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_RAVEM[0x7]
+    Offset: '0x1d9'
+    Size: '0x7'
+    Type: char
   - Name: ApproachedTavernBoardHandle
     Offset: '0x1e0'
     Size: '0x48'

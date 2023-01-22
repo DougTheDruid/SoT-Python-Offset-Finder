@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x690] - InheritedSize[0x688]
 class BP_WaterBarrel_C: public WaterBarrel
 {
 public:

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x20 (Full Size[0x7f0] - InheritedSize[0x7d0]
 class BP_ProxyIngestible_C: public StaticMeshFloatingItemProxy
 {
 public:

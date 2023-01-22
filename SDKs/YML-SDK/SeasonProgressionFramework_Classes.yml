@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 SeasonProgressionExclusionComponent:
   Attributes:
+  - Name: pad0x8_LRDBS[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: ShouldBeExcludedFromSeasonProgessionValue
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_KW1QQ[0x9]
+    Offset: '0xcf'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'

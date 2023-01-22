@@ -12,10 +12,22 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_5ROXZ[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "State_IsThereAMermaid",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x7_RDI3R[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x121"
       },
       {
         "Name": "Handle_OnMermaidActivatedLocally",
@@ -42,6 +54,12 @@
         "Offset": "0x200"
       },
       {
+        "Name": "pad0x7_Q21J9[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x201"
+      },
+      {
         "Name": "Prompt_UseMermaid",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
@@ -52,6 +70,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x270"
+      },
+      {
+        "Name": "pad0x3_IRTE7[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x271"
       },
       {
         "Name": "PromptDisplayDuration",

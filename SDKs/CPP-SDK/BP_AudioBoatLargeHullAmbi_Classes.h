@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x1b8
+// Size 0x1b8 (Full Size[0x7c0] - InheritedSize[0x608]
 class BP_AudioBoatLargeHullAmbi_C: public ShipHullAudio
 {
 public:

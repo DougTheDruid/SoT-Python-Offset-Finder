@@ -85,6 +85,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x10_77M90[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
         "Name": "Duration",
         "Type": "float",
         "Size": "0x4",
@@ -101,6 +107,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x4_MW5KM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
       },
       {
         "Name": "CapturedSourceTags",
@@ -157,10 +169,22 @@
         "Offset": "0x214"
       },
       {
+        "Name": "pad0x3_M4IVW[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x215"
+      },
+      {
         "Name": "GrantedAbilitySpecs",
         "Type": "TArray<Struct GameplayAbilitySpecDef>",
         "Size": "0x10",
         "Offset": "0x218"
+      },
+      {
+        "Name": "pad0x50_2XIN1[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x228"
       },
       {
         "Name": "EffectContext",
@@ -206,6 +230,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_4ZFJU[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       },
       {
         "Name": "SourceObject",
@@ -445,6 +475,12 @@
         "Offset": "0x1"
       },
       {
+        "Name": "pad0x6_O9VWW[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
+      },
+      {
         "Name": "PredictionKeyWhenActivated",
         "Type": "Struct PredictionKey",
         "Size": "0x18",
@@ -607,6 +643,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x7_7XYS1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
         "Name": "PredictionKey",
         "Type": "Struct PredictionKey",
         "Size": "0x18",
@@ -666,6 +708,12 @@
         "Offset": "0x15"
       },
       {
+        "Name": "pad0x2_U5HGK[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x16"
+      },
+      {
         "Name": "PredictionKey",
         "Type": "Struct PredictionKey",
         "Size": "0x18",
@@ -692,6 +740,12 @@
         "Type": "Struct GameplayAbilitySpecHandle",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_JFWNP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "Ability",
@@ -734,6 +788,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2a"
+      },
+      {
+        "Name": "pad0x5_T0IBX[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x2b"
       },
       {
         "Name": "ActivationInfo",
@@ -804,6 +864,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x7_RI5EZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
         "Name": "RequiredActorClass",
         "Type": "class",
         "Size": "0x8",
@@ -839,6 +905,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_GIDLF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "DerivedAttributeInfo",
         "Type": "Struct FString",
         "Size": "0x10",
@@ -860,6 +932,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_72E78[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "Curve",
@@ -900,6 +978,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x18_841XL[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x38"
+      },
+      {
         "Name": "WorldOrigin",
         "Type": "Struct Vector",
         "Size": "0xc",
@@ -927,6 +1011,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_ORVTZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
       },
       {
         "Name": "Magnitude",
@@ -988,6 +1078,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0xf_55TSZ[0xf]",
+        "Type": "char",
+        "Size": "0xf",
+        "Offset": "0x11"
       },
       {
         "Name": "LiteralTransform",
@@ -1166,6 +1262,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x7_XA5N5[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
         "Name": "Magnitude",
         "Type": "Struct ScalableFloat",
         "Size": "0x20",
@@ -1199,6 +1301,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_BFNP4[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "ScalableFloatMagnitude",
@@ -1306,6 +1414,12 @@
         "Offset": "0x80"
       },
       {
+        "Name": "pad0x7_WTXPK[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      },
+      {
         "Name": "SourceTagFilter",
         "Type": "Struct GameplayTagContainer",
         "Size": "0x28",
@@ -1362,6 +1476,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_8O8WS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       },
       {
         "Name": "ModifierMagnitude",
@@ -1421,6 +1541,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x7_MYYHL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
         "Name": "GameplayAbilityClass",
         "Type": "class",
         "Size": "0x8",
@@ -1448,6 +1574,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x7_X73UW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x21"
       },
       {
         "Name": "OwningComponent",

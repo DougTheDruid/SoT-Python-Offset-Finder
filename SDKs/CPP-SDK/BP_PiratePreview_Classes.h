@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xe8
+// Size 0xe8 (Full Size[0x8a8] - InheritedSize[0x7c0]
 class BP_PiratePreview_C: public PiratePreviewActor
 {
 public:
@@ -33,6 +33,7 @@ public:
 	Class SkeletalMeshComponent*                                 PirateMesh;                                        // 0x860(0x8)
 	Class CameraComponent*                                       Camera;                                            // 0x868(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x870(0x8)
+	char                                                         pad0x40_4771Y[0x40];                               // 0x876(0x40)
 };
 
 

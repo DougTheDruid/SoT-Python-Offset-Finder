@@ -6,28 +6,30 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CleanlinessInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CleanlinessTransferInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x148] - InheritedSize[0xc8]
 class CleanlinessComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x10_299QA[0x10];                               // 0xc8(0x10)
 	Class CurveFloat*                                            DirtinessStrengthToMaterialStrength;               // 0xd8(0x8)
 	Struct CleanlinessInfo                                       CleanlinessInfo;                                   // 0xe0(0xc)
 	float                                                        DirtinessDecayRatePerSecond;                       // 0xec(0x4)
 	float                                                        QuickCleanDirtynessDecayRatePerSecond;             // 0xf0(0x4)
+	char                                                         pad0x5c_AWXN4[0x5c];                               // 0xf2(0x5c)
 };
 
 

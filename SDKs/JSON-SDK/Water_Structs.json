@@ -86,6 +86,12 @@
         "Offset": "0x49"
       },
       {
+        "Name": "pad0x2_EB8FP[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x4a"
+      },
+      {
         "Name": "StaticWaterHeightValue",
         "Type": "float",
         "Size": "0x4",
@@ -155,6 +161,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x7_LIEPR[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
       },
       {
         "Name": "CurrentlyPlayingVFX",
@@ -230,6 +242,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_WNWVF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       },
       {
         "Name": "VolumeSamples",
@@ -326,6 +344,12 @@
         "Offset": "0x11"
       },
       {
+        "Name": "pad0x2_MPAKP[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x12"
+      },
+      {
         "Name": "Scalar",
         "Type": "float",
         "Size": "0x4",
@@ -336,6 +360,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_2ACJY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
         "Name": "DistUnderwaterVSBuoyancyForce",
@@ -385,6 +415,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x40_3P6JW[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x10"
+      },
+      {
         "Name": "BuoyancyScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
@@ -420,6 +456,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x4_1EDRC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
         "Name": "OverallBuoyancyScalarBlendCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
@@ -447,6 +489,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_ZE8ZD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "BuoyancyScaleCurve",

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0xa50] - InheritedSize[0xa38]
 class BP_large_mast_mizzen_C: public BP_Mast_C
 {
 public:

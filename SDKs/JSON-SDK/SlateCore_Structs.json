@@ -15,6 +15,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x3_2LA51[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
         "Name": "Margin",
         "Type": "Struct Margin",
         "Size": "0x10",
@@ -25,6 +31,12 @@
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x4_Z7R9I[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "TintColor",
@@ -51,6 +63,12 @@
         "Offset": "0x62"
       },
       {
+        "Name": "pad0x5_7PSH4[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x63"
+      },
+      {
         "Name": "ResourceObject",
         "Type": "Class Object*",
         "Size": "0x8",
@@ -73,6 +91,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x79"
+      },
+      {
+        "Name": "pad0x2_LXG8T[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x7a"
       },
       {
         "Name": "UVRegion",
@@ -298,6 +322,12 @@
         "Type": "Class Object*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x18_E5M3Q[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x10"
       },
       {
         "Name": "TypefaceFontName",
@@ -686,6 +716,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x7_WHM4M[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      },
+      {
         "Name": "FontData",
         "Type": "TArray<Byte FontData>",
         "Size": "0x10",
@@ -884,6 +920,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x6b0"
+      },
+      {
+        "Name": "pad0x4_YQA04[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6b4"
       },
       {
         "Name": "FlashColor",
@@ -1315,6 +1357,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_N7M3Y[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       },
       {
         "Name": "UncheckedImage",

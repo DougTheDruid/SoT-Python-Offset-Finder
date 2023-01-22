@@ -20,10 +20,22 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
+        "Name": "pad0x8_J0H35[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
         "Name": "Contracts",
         "Type": "TArray<Struct MerchantContract>",
         "Size": "0x10",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xa8_3EGEP[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x3e"
       }
     ]
   },
@@ -40,6 +52,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x8_O4A1I[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
       {
         "Name": "Contracts",
         "Type": "TArray<Struct PlayerMerchantContract>",

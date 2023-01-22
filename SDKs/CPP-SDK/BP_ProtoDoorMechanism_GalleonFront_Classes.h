@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x41
+// Size 0x41 (Full Size[0x5c1] - InheritedSize[0x580]
 class BP_ProtoDoorMechanism_GalleonFront_C: public DoorMechanism
 {
 public:

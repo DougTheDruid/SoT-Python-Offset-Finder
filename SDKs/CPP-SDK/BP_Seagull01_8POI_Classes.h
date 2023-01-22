@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x58
+// Size 0x58 (Full Size[0x488] - InheritedSize[0x430]
 class BP_Seagull01_8POI_C: public Seagulls
 {
 public:
@@ -18,6 +18,7 @@ public:
 	Class MaterialInterface*                                     seagulls_MI;                                       // 0x458(0x8)
 	Class MaterialInstanceDynamic*                               seagulls_MT;                                       // 0x460(0x8)
 	float                                                        FadeTime;                                          // 0x468(0x4)
+	char                                                         pad0x4_LTIUK[0x4];                                 // 0x46c(0x4)
 	Class MaterialInterface*                                     seagulls_MI_LOD;                                   // 0x470(0x8)
 	Class MaterialInstanceDynamic*                               seagulls_MT_LOD;                                   // 0x478(0x8)
 	Class WwiseEvent*                                            WwiseEvent;                                        // 0x480(0x8)

@@ -8,6 +8,10 @@ CustomEmoteInterface:
   Super: Interface
 CustomEmoteService:
   Attributes:
+  - Name: pad0x8_O9OPN[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   - Name: World
     Offset: '0x30'
     Size: '0x8'

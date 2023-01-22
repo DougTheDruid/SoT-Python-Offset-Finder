@@ -24,6 +24,10 @@ RegisterServerMigrationPointOfInterestComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
+  - Name: pad0x24_KYHRR[0x24]
+    Offset: '0xca'
+    Size: '0x24'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'

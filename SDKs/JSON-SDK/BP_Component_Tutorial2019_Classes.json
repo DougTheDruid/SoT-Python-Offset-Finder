@@ -12,6 +12,12 @@
         "Offset": "0xd8"
       },
       {
+        "Name": "pad0x13c_0I2CR[0x13c]",
+        "Type": "char",
+        "Size": "0x13c",
+        "Offset": "0xe0"
+      },
+      {
         "Name": "GoldHoarders",
         "Type": "TArray<Assetclass GoldHoarders>",
         "Size": "0x10",
@@ -46,6 +52,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x128"
+      },
+      {
+        "Name": "pad0x7_OWT7N[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x129"
       },
       {
         "Name": "Handle_PlayerFinishedSpawning",

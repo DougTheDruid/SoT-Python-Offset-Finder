@@ -6,13 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60
+// Size 0x60 (Full Size[0x438] - InheritedSize[0x3d8]
 class BP_DynamicDensityFogVolume_C: public FogVolume
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d8(0x8)
 	float                                                        StateBlend_BlendAmount_F79089CA4C773743F03F4C978EB7C986; // 0x3e0(0x4)
 	byte                                                         StateBlend__Direction_F79089CA4C773743F03F4C978EB7C986; // 0x3e4(0x1)
+	char                                                         pad0x3_NBFAJ[0x3];                                 // 0x3e5(0x3)
 	Class TimelineComponent*                                     StateBlend;                                        // 0x3e8(0x8)
 	Class MaterialInstanceDynamic*                               UpdateMaterial;                                    // 0x3f0(0x8)
 	Class CanvasRenderTarget2D*                                  Canvas;                                            // 0x3f8(0x8)
@@ -22,7 +23,8 @@ public:
 	int                                                          Width;                                             // 0x418(0x4)
 	int                                                          Height;                                            // 0x41c(0x4)
 	bool                                                         UseStateParameters;                                // 0x420(0x1)
-	TArray<Struct Texture2D>                                     StateParams;                                       // 0x428(0x10)
+	char                                                         pad0x7_NFF96[0x7];                                 // 0x421(0x7)
+	TArray<Struct BP_Struct_DynamicFogVolumeParams>              StateParams;                                       // 0x428(0x10)
 };
 
 

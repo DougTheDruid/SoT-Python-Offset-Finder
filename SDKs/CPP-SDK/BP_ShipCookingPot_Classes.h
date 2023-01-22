@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x5f0] - InheritedSize[0x5e0]
 class BP_ShipCookingPot_C: public BP_CookingPotBase_C
 {
 public:

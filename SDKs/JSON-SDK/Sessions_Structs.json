@@ -15,6 +15,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x3_NEKGF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
         "Name": "MaxPlayers",
         "Type": "int",
         "Size": "0x4",
@@ -134,6 +140,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x4_5QZKK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
       },
       {
         "Name": "Message",

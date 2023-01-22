@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class CustomMapDisplayObjectBase: public Object
 {
 public:
@@ -14,23 +14,25 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x880] - InheritedSize[0x850]
 class CustomMap: public RenderToTextureMapBase
 {
 public:
-	Class Font*                                                  Font;                                              // 0x838(0x8)
-	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x840(0x10)
+	char                                                         pad0x8_W52HR[0x8];                                 // 0x850(0x8)
+	Class Font*                                                  Font;                                              // 0x858(0x8)
+	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x860(0x10)
+	char                                                         pad0x30_5R3G4[0x30];                               // 0x86e(0x30)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CustomMapCollectionInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class CustomMapDataTypeBase: public Object
 {
 public:
@@ -38,7 +40,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class CustomMapData: public DataAsset
 {
 public:
@@ -48,47 +50,53 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class CustomMapDataTypePositional: public CustomMapDataTypeBase
 {
 public:
 	Struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
+	char                                                         pad0xc_OJ7KG[0xc];                                 // 0x42(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class CustomMapDisplayObjectPositional: public CustomMapDisplayObjectBase
 {
 public:
 	Struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
+	char                                                         pad0xc_BP16P[0xc];                                 // 0x42(0xc)
 };
 
 
-// Size 0x90
+// Size 0x90 (Full Size[0xd8] - InheritedSize[0x48]
 class CustomMapDisplayObjectText: public CustomMapDisplayObjectPositional
 {
 public:
 	Struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
+	char                                                         pad0x3_4PXT0[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
+	char                                                         pad0x54_VP5GK[0x54];                               // 0x8a(0x54)
 };
 
 
-// Size 0x48
+// Size 0x48 (Full Size[0x90] - InheritedSize[0x48]
 class CustomMapDataTypeText: public CustomMapDataTypePositional
 {
 public:
 	Struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
+	char                                                         pad0x3_VHDO8[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
+	char                                                         pad0xc_GL3QE[0xc];                                 // 0x8a(0xc)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
 class CustomMapSettings: public DeveloperSettings
 {
 public:

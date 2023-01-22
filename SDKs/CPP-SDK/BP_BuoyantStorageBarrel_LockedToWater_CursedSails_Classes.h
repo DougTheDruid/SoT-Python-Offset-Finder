@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x20 (Full Size[0x748] - InheritedSize[0x728]
 class BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C: public BuoyantStorageContainer
 {
 public:

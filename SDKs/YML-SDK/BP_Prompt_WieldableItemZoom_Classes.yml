@@ -6,6 +6,10 @@ BP_Prompt_WieldableItemZoom_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_2BZJS[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: PromptAccessKey
     Offset: '0x120'
     Size: '0x8'
@@ -22,6 +26,10 @@ BP_Prompt_WieldableItemZoom_C:
     Offset: '0x171'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_NQIT1[0x6]
+    Offset: '0x172'
+    Size: '0x6'
+    Type: char
   - Name: CharacterDispatcher
     Offset: '0x178'
     Size: '0x8'
@@ -30,6 +38,10 @@ BP_Prompt_WieldableItemZoom_C:
     Offset: '0x180'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_612VB[0x7]
+    Offset: '0x181'
+    Size: '0x7'
+    Type: char
   - Name: Prompt
     Offset: '0x188'
     Size: '0x68'

@@ -46,10 +46,22 @@
         "Offset": "0xc8"
       },
       {
+        "Name": "pad0x4_0L5I4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
         "Name": "WeightedTimers",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xb8_DV3B7[0xb8]",
+        "Type": "char",
+        "Size": "0xb8",
+        "Offset": "0xfe"
       }
     ]
   },
@@ -66,6 +78,12 @@
         "Offset": "0xc8"
       },
       {
+        "Name": "pad0x14_1TMH1[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0xcc"
+      },
+      {
         "Name": "WaterLevelDifferenceBetweenUpdates",
         "Type": "float",
         "Size": "0x4",
@@ -76,6 +94,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe4"
+      },
+      {
+        "Name": "pad0x10_ZNH30[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xe6"
       }
     ]
   },

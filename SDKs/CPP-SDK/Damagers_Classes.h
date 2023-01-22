@@ -6,10 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x158
+// Size 0x158 (Full Size[0x220] - InheritedSize[0xc8]
 class ShipDamagerComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_3FYN4[0x8];                                 // 0xc8(0x8)
 	Class PrimitiveComponent*                                    Shape;                                             // 0xd0(0x8)
 	TArray<Interface ShipHulls>                                  ShipHulls;                                         // 0xd8(0x10)
 	TArray<Interface WatercraftHealthInterfaces>                 WatercraftHealthInterfaces;                        // 0xe8(0x10)
@@ -17,10 +18,11 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenWatercraftDamage;                       // 0x120(0x30)
 	float                                                        WatercraftDamage;                                  // 0x150(0x4)
 	bool                                                         StartDamagingOnBeginPlay;                          // 0x154(0x1)
+	char                                                         pad0xcd_O8LB3[0xcd];                               // 0x153(0xcd)
 };
 
 
-// Size 0x58
+// Size 0x58 (Full Size[0x120] - InheritedSize[0xc8]
 class RadialDamagerComponent: public ActorComponent
 {
 public:
@@ -28,37 +30,47 @@ public:
 	float                                                        DamagePerSecondAtCentre;                           // 0xcc(0x4)
 	float                                                        DamagePerSecondAtMaxRadius;                        // 0xd0(0x4)
 	float                                                        DamageRadius;                                      // 0xd4(0x4)
+	char                                                         pad0x8_EVZYU[0x8];                                 // 0xd8(0x8)
 	class                                                        DamagerType;                                       // 0xe0(0x8)
 	byte                                                         HealthChangedReason;                               // 0xe8(0x1)
+	char                                                         pad0x3_ATREC[0x3];                                 // 0xe9(0x3)
 	Struct Vector                                                LocalOffset;                                       // 0xec(0xc)
+	char                                                         pad0x40_CASEF[0x40];                               // 0xf6(0x40)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ShockwaveDamagerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x108
+// Size 0x108 (Full Size[0x1d0] - InheritedSize[0xc8]
 class ShockwaveDamagerComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_X3D8I[0x8];                                 // 0xc8(0x8)
 	float                                                        ExpansionDuration;                                 // 0xd0(0x4)
 	float                                                        EndRadiusInMetres;                                 // 0xd4(0x4)
 	bool                                                         ApplyImpulseToShips;                               // 0xd8(0x1)
+	char                                                         pad0x7_3MYZC[0x7];                                 // 0xd9(0x7)
 	Struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0xe0(0x30)
 	bool                                                         ApplyDamageToShips;                                // 0x110(0x1)
+	char                                                         pad0x7_L4IA4[0x7];                                 // 0x111(0x7)
 	TArray<Struct ShockwaveDamagerShipDamage>                    ShipDamageLevels;                                  // 0x118(0x10)
 	class                                                        DamagerType;                                       // 0x128(0x8)
 	bool                                                         ApplyImpulseToGhostShips;                          // 0x130(0x1)
+	char                                                         pad0x3_6TES5[0x3];                                 // 0x131(0x3)
 	float                                                        GhostShipImpulseDuration;                          // 0x134(0x4)
 	float                                                        GhostShipImpulseMaxDeflectionAngle;                // 0x138(0x4)
 	bool                                                         DestroyHostileGhostShips;                          // 0x13c(0x1)
+	char                                                         pad0x3_EFK7V[0x3];                                 // 0x13d(0x3)
 	float                                                        NearbyEncounterDistanceInMetres;                   // 0x140(0x4)
+	char                                                         pad0x4_FL8VR[0x4];                                 // 0x144(0x4)
 	TArray<Weakclass ProcessedShips>                             ProcessedShips;                                    // 0x168(0x10)
 	TArray<Weakclass ProcessedGhostShips>                        ProcessedGhostShips;                               // 0x178(0x10)
+	char                                                         pad0x68_TH7JG[0x68];                               // 0x186(0x68)
 };
 
 

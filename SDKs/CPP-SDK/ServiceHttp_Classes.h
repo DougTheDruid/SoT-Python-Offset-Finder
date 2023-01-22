@@ -6,17 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class ServiceHttpSettings: public Object
 {
 public:
 	Struct FString                                               DiscoveryServiceUrl;                               // 0x28(0x10)
 	byte                                                         ServerMetricsLevel;                                // 0x38(0x1)
 	byte                                                         ClientMetricsLevel;                                // 0x39(0x1)
+	char                                                         pad0x8_MP5NQ[0x8];                                 // 0x38(0x8)
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
 class DevelopmentAuthenticationSettings: public Object
 {
 public:

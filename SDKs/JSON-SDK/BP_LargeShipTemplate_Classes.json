@@ -1008,6 +1008,12 @@
         "Offset": "0x1bd0"
       },
       {
+        "Name": "pad0x7_LJ1HF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1bd1"
+      },
+      {
         "Name": "Timeline_Disable_Secondary",
         "Type": "Class TimelineComponent*",
         "Size": "0x8",
@@ -1018,6 +1024,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1be0"
+      },
+      {
+        "Name": "pad0x7_6UFHO[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1be1"
       },
       {
         "Name": "Timeline_DisableSplash1",

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x58
+// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
 class BP_PiratePreview_Lighting_C: public Actor
 {
 public:
@@ -17,6 +17,7 @@ public:
 	Class SpotLightComponent*                                    SpotLight;                                         // 0x3e8(0x8)
 	Class PostProcessComponent*                                  PostProcess;                                       // 0x3f0(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3f8(0x8)
+	char                                                         pad0x30_U9I17[0x30];                               // 0x3fe(0x30)
 };
 
 

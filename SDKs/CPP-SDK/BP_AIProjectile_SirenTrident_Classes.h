@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x830] - InheritedSize[0x818]
 class BP_AIProjectile_SirenTrident_C: public SirenTridentProjectile
 {
 public:

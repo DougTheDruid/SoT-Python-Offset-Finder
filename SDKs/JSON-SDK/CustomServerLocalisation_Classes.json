@@ -13,10 +13,22 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x8_6AUKK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "LocalisationData",
         "Type": "TArray<Struct CustomServerLocalisationData>",
         "Size": "0x10",
         "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0xa0_BJ0QX[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x3de"
       }
     ]
   },

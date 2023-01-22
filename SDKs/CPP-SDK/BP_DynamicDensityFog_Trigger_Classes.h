@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
 class BP_DynamicDensityFog_Trigger_C: public Actor
 {
 public:

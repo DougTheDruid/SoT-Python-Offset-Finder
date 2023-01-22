@@ -8,6 +8,10 @@ CoherentUIGTAssetReferencer:
   Super: Object
 CoherentUIGTBaseComponent:
   Attributes:
+  - Name: pad0xa8_MDIOL[0xa8]
+    Offset: '0xc8'
+    Size: '0xa8'
+    Type: char
   - Name: Texture
     Offset: '0x170'
     Size: '0x8'
@@ -64,6 +68,10 @@ CoherentUIGTBaseComponent:
     Offset: '0x199'
     Size: '0x1'
     Type: bool
+  - Name: pad0x178_NVY5W[0x178]
+    Offset: '0x198'
+    Size: '0x178'
+    Type: char
   ClassSize: '0x248'
   FullSize: '0x310'
   InheritedSize: '0xc8'
@@ -92,6 +100,10 @@ CoherentUIGTComponent:
     Offset: '0x328'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_7B0KS[0x3]
+    Offset: '0x329'
+    Size: '0x3'
+    Type: char
   - Name: ClickThroughAlphaThreshold
     Offset: '0x32c'
     Size: '0x4'
@@ -100,6 +112,10 @@ CoherentUIGTComponent:
     Offset: '0x330'
     Size: '0x1'
     Type: bool
+  - Name: pad0x19_WCLXK[0x19]
+    Offset: '0x32f'
+    Size: '0x19'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x348'
   InheritedSize: '0x310'
@@ -116,6 +132,10 @@ CoherentUIGTGameHUD:
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class CoherentUIGTHUD*
+  - Name: pad0xa0_8N4OH[0xa0]
+    Offset: '0x4c6'
+    Size: '0xa0'
+    Type: char
   ClassSize: '0x98'
   FullSize: '0x558'
   InheritedSize: '0x4c0'
@@ -134,6 +154,10 @@ CoherentUIGTHUD:
     Offset: '0x328'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
+  - Name: pad0x18_9LN0T[0x18]
+    Offset: '0x32e'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x338'
   InheritedSize: '0x310'
@@ -146,6 +170,10 @@ CoherentUIGTInputActor:
   Super: Actor
 CoherentUIGTJSEvent:
   Attributes:
+  - Name: pad0x80_E4YXT[0x80]
+    Offset: '0x28'
+    Size: '0x80'
+    Type: char
   - Name: StructTypes
     Offset: '0xa8'
     Size: '0x10'
@@ -160,6 +188,10 @@ CoherentUIGTJSPayload:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct FString
+  - Name: pad0x28_2R08A[0x28]
+    Offset: '0x36'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -174,6 +206,10 @@ CoherentUIGTLiveView:
     Offset: '0xd8'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
+  - Name: pad0x28_B9EQ8[0x28]
+    Offset: '0xde'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0xf8'
   InheritedSize: '0xc8'
@@ -190,6 +226,10 @@ CoherentUIGTSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_SE8HR[0x3]
+    Offset: '0x29'
+    Size: '0x3'
+    Type: char
   - Name: InspectorPort
     Offset: '0x2c'
     Size: '0x4'
@@ -242,6 +282,10 @@ CoherentUIGTSettings:
     Offset: '0x3e'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_EEWIT[0x1]
+    Offset: '0x3f'
+    Size: '0x1'
+    Type: char
   - Name: HUDMaterialName
     Offset: '0x40'
     Size: '0x10'
@@ -258,6 +302,10 @@ CoherentUIGTSettings:
     Offset: '0x61'
     Size: '0x1'
     Type: byte
+  - Name: pad0x8_3TBD6[0x8]
+    Offset: '0x60'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -270,6 +318,10 @@ CoherentUIGTSystem:
   Super: Actor
 CoherentUIGTWidget:
   Attributes:
+  - Name: pad0x20_3X9FN[0x20]
+    Offset: '0x138'
+    Size: '0x20'
+    Type: char
   - Name: Owner
     Offset: '0x158'
     Size: '0x8'
@@ -294,6 +346,10 @@ CoherentUIGTWidget:
     Offset: '0x1fc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_7A18T[0x3]
+    Offset: '0x1fd'
+    Size: '0x3'
+    Type: char
   - Name: ExecuteJSTimersThresholdMs
     Offset: '0x200'
     Size: '0x4'
@@ -326,6 +382,10 @@ CoherentUIGTWidget:
     Offset: '0x21c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1a3_P7M71[0x1a3]
+    Offset: '0x21d'
+    Size: '0x1a3'
+    Type: char
   - Name: URL
     Offset: '0x3c0'
     Size: '0x10'
@@ -338,6 +398,10 @@ CoherentUIGTWidget:
     Offset: '0x3d4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x5_6GA03[0x5]
+    Offset: '0x3d3'
+    Size: '0x5'
+    Type: char
   ClassSize: '0x2a0'
   FullSize: '0x3d8'
   InheritedSize: '0x138'

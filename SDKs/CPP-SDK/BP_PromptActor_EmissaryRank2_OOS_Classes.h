@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38
+// Size 0x38 (Full Size[0x438] - InheritedSize[0x400]
 class BP_PromptActor_EmissaryRank2_OOS_C: public BP_PromptActorBase_C
 {
 public:
@@ -15,6 +15,7 @@ public:
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
 	int                                                          ExpectedLevel;                                     // 0x420(0x4)
+	char                                                         pad0x4_OKRYU[0x4];                                 // 0x424(0x4)
 	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
 };
 

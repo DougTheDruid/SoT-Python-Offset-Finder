@@ -34,6 +34,7 @@ public:
 	byte                                                         IsStolen;                                          // 0x3(0x1)
 	byte                                                         QueryReason;                                       // 0x4(0x1)
 	byte                                                         QualityLevel;                                      // 0x5(0x1)
+	char                                                         pad0x2_8MW6R[0x2];                                 // 0x6(0x2)
 	struct FName                                                 Rarity;                                            // 0x8(0x8)
 };
 

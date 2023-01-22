@@ -6,15 +6,16 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x58
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
 class MovieSceneSignedObject: public Object
 {
 public:
 	Struct Guid                                                  Signature;                                         // 0x28(0x10)
+	char                                                         pad0x68_38RSW[0x68];                               // 0x36(0x68)
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x100] - InheritedSize[0x80]
 class MovieScene: public MovieSceneSignedObject
 {
 public:
@@ -26,6 +27,7 @@ public:
 	Struct FloatRange                                            SelectionRange;                                    // 0xc8(0x10)
 	Struct FloatRange                                            PlaybackRange;                                     // 0xd8(0x10)
 	bool                                                         bForceFixedFrameIntervalPlayback;                  // 0xe8(0x1)
+	char                                                         pad0x3_QQ0LV[0x3];                                 // 0xe9(0x3)
 	float                                                        FixedFrameInterval;                                // 0xec(0x4)
 	float                                                        InTime;                                            // 0xf0(0x4)
 	float                                                        OutTime;                                           // 0xf4(0x4)
@@ -34,36 +36,38 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class MovieSceneBindingOverridesInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
 class MovieSceneBindingOverrides: public Object
 {
 public:
+	char                                                         pad0x8_62DSF[0x8];                                 // 0x28(0x8)
 	TArray<Struct MovieSceneBindingOverrideData>                 BindingData;                                       // 0x30(0x10)
+	char                                                         pad0x78_ZMPOH[0x78];                               // 0x3e(0x78)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class MovieSceneBindingOwnerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class MovieSceneCameraDockingInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x48
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class MovieSceneFolder: public Object
 {
 public:
@@ -71,31 +75,38 @@ public:
 	TArray<class MovieSceneFolder*>                              ChildFolders;                                      // 0x30(0x10)
 	TArray<class MovieSceneTrack*>                               ChildMasterTracks;                                 // 0x40(0x10)
 	TArray<Str ChildObjectBindingStrings>                        ChildObjectBindingStrings;                         // 0x50(0x10)
+	char                                                         pad0x30_YXSI3[0x30];                               // 0x5e(0x30)
 };
 
 
-// Size 0x5e0
+// Size 0x5e0 (Full Size[0x608] - InheritedSize[0x28]
 class MovieSceneSequencePlayer: public Object
 {
 public:
+	char                                                         pad0x398_8PMVR[0x398];                             // 0x28(0x398)
 	bool                                                         bIsPlaying;                                        // 0x3c0(0x1)
 	bool                                                         bReversePlayback;                                  // 0x3c0(0x1)
 	bool                                                         bPendingFirstUpdate;                               // 0x3c0(0x1)
+	char                                                         pad0x7_SA1BH[0x7];                                 // 0x3c1(0x7)
 	Class MovieSceneSequence*                                    Sequence;                                          // 0x3c8(0x8)
 	float                                                        TimeCursorPosition;                                // 0x3d0(0x4)
 	float                                                        StartTime;                                         // 0x3d4(0x4)
 	float                                                        EndTime;                                           // 0x3d8(0x4)
 	int                                                          CurrentNumLoops;                                   // 0x3dc(0x4)
+	char                                                         pad0x10_R294T[0x10];                               // 0x3e0(0x10)
 	Struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3f0(0x28)
+	char                                                         pad0x1d0_JWA3Z[0x1d0];                             // 0x418(0x1d0)
 	Class Character*                                             InteractingCharacter;                              // 0x5e8(0x8)
+	char                                                         pad0x28_YANZO[0x28];                               // 0x5ee(0x28)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
 class MovieSceneSection: public MovieSceneSignedObject
 {
 public:
 	Struct MovieSceneSectionEvalOptions                          EvalOptions;                                       // 0x80(0x2)
+	char                                                         pad0x2_G30NU[0x2];                                 // 0x82(0x2)
 	float                                                        StartTime;                                         // 0x84(0x4)
 	float                                                        EndTime;                                           // 0x88(0x4)
 	int                                                          RowIndex;                                          // 0x8c(0x4)
@@ -103,28 +114,31 @@ public:
 	bool                                                         bIsActive;                                         // 0x94(0x1)
 	bool                                                         bIsLocked;                                         // 0x94(0x1)
 	bool                                                         bIsInfinite;                                       // 0x94(0x1)
+	char                                                         pad0x5_4174N[0x5];                                 // 0x93(0x5)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
 class MovieSceneTrack: public MovieSceneSignedObject
 {
 public:
 	Struct MovieSceneTrackEvalOptions                            EvalOptions;                                       // 0x80(0x4)
+	char                                                         pad0xc_FSYFV[0xc];                                 // 0x82(0xc)
 };
 
 
-// Size 0x228
+// Size 0x228 (Full Size[0x2a8] - InheritedSize[0x80]
 class MovieSceneSequence: public MovieSceneSignedObject
 {
 public:
 	Struct CachedMovieSceneEvaluationTemplate                    EvaluationTemplate;                                // 0x80(0x220)
 	Struct MovieSceneTrackCompilationParams                      TemplateParameters;                                // 0x2a0(0x1)
 	bool                                                         bParentContextsAreSignificant;                     // 0x2a1(0x1)
+	char                                                         pad0x8_M9HTQ[0x8];                                 // 0x2a0(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
 class MovieSceneNameableTrack: public MovieSceneTrack
 {
 public:

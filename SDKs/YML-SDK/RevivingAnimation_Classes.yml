@@ -22,6 +22,10 @@ ReviveGhostAnimationDataAsset:
   Super: DataAsset
 ReviveGhostAnimationInstance:
   Attributes:
+  - Name: pad0x8_ZZ33Q[0x8]
+    Offset: '0x440'
+    Size: '0x8'
+    Type: char
   - Name: ReviveAnimations
     Offset: '0x448'
     Size: '0x28'
@@ -38,6 +42,10 @@ ReviveGhostAnimationInstance:
     Offset: '0x472'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1f_NG5ZU[0x1f]
+    Offset: '0x471'
+    Size: '0x1f'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x490'
   InheritedSize: '0x440'

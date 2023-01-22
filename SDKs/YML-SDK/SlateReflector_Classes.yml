@@ -36,6 +36,10 @@ SnapshotWidgetReflectorNode:
     Offset: '0x144'
     Size: '0x8'
     Type: Struct Vector2D
+  - Name: pad0x4_M1S6V[0x4]
+    Offset: '0x14c'
+    Size: '0x4'
+    Type: char
   - Name: CachedWidgetForegroundColor
     Offset: '0x150'
     Size: '0x30'
@@ -48,6 +52,10 @@ SnapshotWidgetReflectorNode:
     Offset: '0x190'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_UNARS[0x9]
+    Offset: '0x18f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x118'
   FullSize: '0x198'
   InheritedSize: '0x80'
@@ -58,6 +66,10 @@ WidgetReflectorNodeBase:
     Offset: '0x28'
     Size: '0x34'
     Type: Struct Geometry
+  - Name: pad0x4_K8WR4[0x4]
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: char
   - Name: ChildNodes
     Offset: '0x60'
     Size: '0x10'

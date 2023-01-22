@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AthenaProjectilesThrottledTickCollectionAsset: public DataAsset
 {
 public:
@@ -14,7 +14,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class ProjectileLauncherSpecificSettings: public DeveloperSettings
 {
 public:

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x2c8
+// Size 0x2c8 (Full Size[0x720] - InheritedSize[0x458]
 class BP_Shroudbreaker_OnShip_C: public ShroudBreakerOnShip
 {
 public:
@@ -29,11 +29,13 @@ public:
 	Struct ObjectMessagingHandle                                 ShipDestroyedHandle;                               // 0x5d8(0x48)
 	Class Actor*                                                 ParentShipActor;                                   // 0x620(0x8)
 	bool                                                         MusicZoneActive;                                   // 0x628(0x1)
+	char                                                         pad0x3_8PEOW[0x3];                                 // 0x629(0x3)
 	float                                                        GemEmissiveOn;                                     // 0x62c(0x4)
 	Class MaterialInstanceDynamic*                               Shroudbreaker Material;                            // 0x630(0x8)
 	float                                                        GemEmissiveOff;                                    // 0x638(0x4)
 	bool                                                         ShroudBreakerEffectsActive;                        // 0x63c(0x1)
 	bool                                                         ShroudBreakerDeactivate;                           // 0x63d(0x1)
+	char                                                         pad0x2_4KSSZ[0x2];                                 // 0x63e(0x2)
 	Struct ObjectMessagingHandle                                 PlayerEnteredIslandVincityEventHandle;             // 0x640(0x48)
 	Struct ObjectMessagingHandle                                 PlayerLeftIslandVincityEventHandle;                // 0x688(0x48)
 	TArray<Assetclass ShipProgressSpawnLoactionsAssetID>         ShipProgressSpawnLoactionsAssetID;                 // 0x6d0(0x10)

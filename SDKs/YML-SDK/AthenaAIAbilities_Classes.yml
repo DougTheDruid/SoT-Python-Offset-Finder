@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 AreaOfEffectHealAIAbility:
   Attributes:
+  - Name: pad0x10_SK8MD[0x10]
+    Offset: '0x78'
+    Size: '0x10'
+    Type: char
   - Name: HealAreaOfEffectActor
     Offset: '0x88'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0x20_UQ453[0x20]
+    Offset: '0x8e'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0xa0'
   InheritedSize: '0x78'
@@ -54,6 +62,10 @@ BullRushAIAbility:
     Offset: '0x98'
     Size: '0x8'
     Type: Class World*
+  - Name: pad0x28_ND3PO[0x28]
+    Offset: '0x9e'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0xb8'
   InheritedSize: '0x98'
@@ -64,6 +76,10 @@ BullRushAIAbilityParams:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_5PN5T[0x4]
+    Offset: '0xe4'
+    Size: '0x4'
+    Type: char
   - Name: ValidatorEQSystems
     Offset: '0xe8'
     Size: '0x10'
@@ -72,6 +88,10 @@ BullRushAIAbilityParams:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_W4Q19[0xc]
+    Offset: '0xfa'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x100'
   InheritedSize: '0xe0'
@@ -102,6 +122,10 @@ BurrowHealVFXComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_J2EGL[0x4]
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: char
   - Name: SpawnedVFXSystem
     Offset: '0xe0'
     Size: '0x8'
@@ -110,6 +134,10 @@ BurrowHealVFXComponent:
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x31_021AV[0x31]
+    Offset: '0xe7'
+    Size: '0x31'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x118'
   InheritedSize: '0xc8'
@@ -178,6 +206,10 @@ EelThrowAIAbilityType:
   Super: AthenaAIAbilityType
 ElectricShieldBuffComponent:
   Attributes:
+  - Name: pad0x8_4JJ52[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: ShieldVFXAsset
     Offset: '0xd0'
     Size: '0x8'
@@ -202,6 +234,10 @@ ElectricShieldBuffComponent:
     Offset: '0xf8'
     Size: '0x1'
     Type: bool
+  - Name: pad0xb9_IJDYL[0xb9]
+    Offset: '0xf7'
+    Size: '0xb9'
+    Type: char
   ClassSize: '0xe8'
   FullSize: '0x1b0'
   InheritedSize: '0xc8'
@@ -300,6 +336,10 @@ StatusResponseActivateElectricShield:
     Offset: '0x30'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_OYTRH[0xc]
+    Offset: '0x32'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x38'
   InheritedSize: '0x30'

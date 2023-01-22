@@ -12,6 +12,12 @@
         "Offset": "0xc8"
       },
       {
+        "Name": "pad0x7_RGSJN[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc9"
+      },
+      {
         "Name": "AudioPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
@@ -40,6 +46,12 @@
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0xc0_WUTWT[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0xf6"
       }
     ]
   },
@@ -50,10 +62,22 @@
     "ClassSize": "0x180",
     "Attributes": [
       {
+        "Name": "pad0x20_OP1Z5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "DespawnDelay",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e8"
+      },
+      {
+        "Name": "pad0x4_G3JDO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3ec"
       },
       {
         "Name": "ThirdPersonMesh",
@@ -90,6 +114,12 @@
         "Type": "Class ActorDamageableComponent*",
         "Size": "0x8",
         "Offset": "0x438"
+      },
+      {
+        "Name": "pad0x118_SC2RD[0x118]",
+        "Type": "char",
+        "Size": "0x118",
+        "Offset": "0x43e"
       }
     ]
   },
@@ -106,6 +136,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x128",
     "Attributes": [
+      {
+        "Name": "pad0x4_N5Y1R[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
       {
         "Name": "MagicColourPropertyName",
         "Type": "struct FName",
@@ -137,6 +173,12 @@
         "Offset": "0xec"
       },
       {
+        "Name": "pad0x4_90RTL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xf4"
+      },
+      {
         "Name": "TargetMesh",
         "Type": "Class PrimitiveComponent*",
         "Size": "0x8",
@@ -153,6 +195,12 @@
         "Type": "Class BreakableActorBase*",
         "Size": "0x8",
         "Offset": "0x110"
+      },
+      {
+        "Name": "pad0xe8_HLP5H[0xe8]",
+        "Type": "char",
+        "Size": "0xe8",
+        "Offset": "0x116"
       }
     ]
   },
@@ -174,6 +222,12 @@
         "Type": "Struct Color",
         "Size": "0x4",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x4_ASAGF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
       },
       {
         "Name": "DamagedParticleSystem",
@@ -228,6 +282,12 @@
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x100"
+      },
+      {
+        "Name": "pad0xa8_9FIGV[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x106"
       }
     ]
   },

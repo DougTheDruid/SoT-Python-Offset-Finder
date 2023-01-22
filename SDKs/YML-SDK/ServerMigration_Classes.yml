@@ -78,6 +78,10 @@ ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr:
     Offset: '0x3c8'
     Size: '0x14'
     Type: Struct NetActorPtr
+  - Name: pad0x2c_65G44[0x2c]
+    Offset: '0x3da'
+    Size: '0x2c'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -164,6 +168,10 @@ ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor:
     Offset: '0x3c8'
     Size: '0x4'
     Type: Struct ServerMigrationCustomMigrationSerialisationStruct
+  - Name: pad0xc_EE7BI[0xc]
+    Offset: '0x3ca'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
@@ -190,6 +198,10 @@ ServerMigrationSerialisationDetailsTestsMigrationReferenceActor:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0x18_9C8MD[0x18]
+    Offset: '0x3ce'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
@@ -204,6 +216,10 @@ ServerMigrationSerialisationDetailsTestsPropertyMarkup:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_U6VJH[0x3]
+    Offset: '0x2d'
+    Size: '0x3'
+    Type: char
   - Name: StringWithSaveGameMarkup
     Offset: '0x30'
     Size: '0x10'
@@ -212,6 +228,10 @@ ServerMigrationSerialisationDetailsTestsPropertyMarkup:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_93ZCU[0xc]
+    Offset: '0x42'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -232,6 +252,10 @@ ServerMigrationSerialisationDetailsTestsUStructProperty:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct ServerMigrationSerialisationDetailsTestsUStruct
+  - Name: pad0x1c_C1K32[0x1c]
+    Offset: '0x32'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -242,6 +266,10 @@ ServerMigrationSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_FZMAJ[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: TransportImplementation
     Offset: '0x30'
     Size: '0x10'
@@ -258,6 +286,10 @@ ServerMigrationSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_LJ6Y5[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   - Name: InstanceImplementation
     Offset: '0x50'
     Size: '0x10'

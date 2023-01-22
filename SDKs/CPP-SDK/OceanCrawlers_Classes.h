@@ -6,15 +6,16 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_BroadcastOceanCrawlerAbilityAudioEvent: public BTTaskNode
 {
 public:
 	byte                                                         OceanCrawlerAudioKeyToBroadcast;                   // 0x60(0x1)
+	char                                                         pad0x9_TQKTO[0x9];                                 // 0x5f(0x9)
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
 class OceanCrawlerAudioParamsDataAsset: public DataAsset
 {
 public:
@@ -27,12 +28,13 @@ public:
 };
 
 
-// Size 0xd8
+// Size 0xd8 (Full Size[0x1a0] - InheritedSize[0xc8]
 class OceanCrawlerAudioBroadcaster: public ActorComponent
 {
 public:
 	Class OceanCrawlerAudioParamsDataAsset*                      AudioDataAsset;                                    // 0xc8(0x8)
 	Class Actor*                                                 CachedOwner;                                       // 0xd0(0x8)
+	char                                                         pad0xd8_MDDXV[0xd8];                               // 0xd6(0xd8)
 };
 
 

@@ -18,6 +18,10 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_BTBCT[0x3]
+    Offset: '0x109'
+    Size: '0x3'
+    Type: char
   - Name: PostAdjustmentBoxExtentX
     Offset: '0x10c'
     Size: '0x4'
@@ -26,6 +30,10 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0x110'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_RR8IM[0x3]
+    Offset: '0x111'
+    Size: '0x3'
+    Type: char
   - Name: PostAdjustmentBoxExtentY
     Offset: '0x114'
     Size: '0x4'
@@ -34,6 +42,10 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_XGS7U[0x3]
+    Offset: '0x119'
+    Size: '0x3'
+    Type: char
   - Name: PostAdjustmentBoxExtentZ
     Offset: '0x11c'
     Size: '0x4'
@@ -42,6 +54,10 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0x120'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_URJD9[0x4]
+    Offset: '0x12c'
+    Size: '0x4'
+    Type: char
   - Name: BoxCollisionToAdjust
     Offset: '0x130'
     Size: '0x8'
@@ -72,6 +88,10 @@ DynamicColourPointLightComponent:
     Offset: '0x528'
     Size: '0x80'
     Type: Struct RuntimeFloatCurve
+  - Name: pad0x138_EX7LF[0x138]
+    Offset: '0x5a6'
+    Size: '0x138'
+    Type: char
   ClassSize: '0x130'
   FullSize: '0x5e0'
   InheritedSize: '0x4b0'
@@ -134,10 +154,18 @@ PrimitiveCollisionExtentAdjustOverTimeComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
+  - Name: pad0x2c_Q0X3Z[0x2c]
+    Offset: '0xcc'
+    Size: '0x2c'
+    Type: char
   - Name: CachedWorld
     Offset: '0xf8'
     Size: '0x8'
     Type: Class World*
+  - Name: pad0x18_1CL50[0x18]
+    Offset: '0xfe'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'
@@ -170,6 +198,10 @@ RotateMeshToActorComponent:
     Offset: '0xdd'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_9VDU0[0x2]
+    Offset: '0xde'
+    Size: '0x2'
+    Type: char
   - Name: RotationSpeed
     Offset: '0xe0'
     Size: '0x4'
@@ -178,6 +210,10 @@ RotateMeshToActorComponent:
     Offset: '0xe4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_OTZTU[0x3]
+    Offset: '0xe5'
+    Size: '0x3'
+    Type: char
   - Name: MaxPitch
     Offset: '0xe8'
     Size: '0x4'
@@ -186,6 +222,10 @@ RotateMeshToActorComponent:
     Offset: '0xec'
     Size: '0x4'
     Type: float
+  - Name: pad0x10_Q6TOP[0x10]
+    Offset: '0xee'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0xf8'
   InheritedSize: '0xc8'
@@ -208,6 +248,10 @@ SkeletalMeshAggregateTickComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
+  - Name: pad0x38_JLL3X[0x38]
+    Offset: '0xce'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0xf8'
   InheritedSize: '0xc8'
@@ -218,6 +262,10 @@ SphereCollisionExtentAdjustOverTimeComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_VOPDB[0x3]
+    Offset: '0x109'
+    Size: '0x3'
+    Type: char
   - Name: PostAdjustmentSphereRadius
     Offset: '0x10c'
     Size: '0x4'
@@ -226,6 +274,10 @@ SphereCollisionExtentAdjustOverTimeComponent:
     Offset: '0x110'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_RLKUP[0x4]
+    Offset: '0x114'
+    Size: '0x4'
+    Type: char
   - Name: SphereCollisionToAdjust
     Offset: '0x118'
     Size: '0x8'
@@ -240,6 +292,10 @@ StringToAssetClassMap:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<Struct StringAssetClassPair>
+  - Name: pad0x38_2DI1A[0x38]
+    Offset: '0x36'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

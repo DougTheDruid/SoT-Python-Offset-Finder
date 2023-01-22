@@ -26,6 +26,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_BZTFS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "NoteId",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -41,6 +47,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_VBMQ5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "NoteType",

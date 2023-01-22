@@ -17,6 +17,12 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x28_ND1IO[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xce"
       }
     ]
   },
@@ -40,6 +46,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x100",
     "Attributes": [
+      {
+        "Name": "pad0x60_C3Y5I[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "EventDispatcher",
         "Type": "Struct ObjectMessagingDispatcher",

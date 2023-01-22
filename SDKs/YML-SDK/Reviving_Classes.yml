@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 DeathSelfInteractionComponent:
   Attributes:
+  - Name: pad0x8_5DLL3[0x8]
+    Offset: '0x128'
+    Size: '0x8'
+    Type: char
   - Name: HasGivenUp
     Offset: '0x130'
     Size: '0x1'
     Type: bool
+  - Name: pad0x59_RIWUP[0x59]
+    Offset: '0x12f'
+    Size: '0x59'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x188'
   InheritedSize: '0x128'
@@ -28,12 +36,20 @@ ReviveAudioComponent:
     Offset: '0x310'
     Size: '0x8'
     Type: Class ReviveEffectsDataAsset*
+  - Name: pad0x28_GDCZJ[0x28]
+    Offset: '0x316'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x330'
   InheritedSize: '0x310'
   Super: WwiseEmitterComponent
 ReviveComponent:
   Attributes:
+  - Name: pad0x10_RZP9O[0x10]
+    Offset: '0x128'
+    Size: '0x10'
+    Type: char
   - Name: OwningCharacter
     Offset: '0x138'
     Size: '0x8'
@@ -50,20 +66,36 @@ ReviveComponent:
     Offset: '0x149'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_041ZH[0x6]
+    Offset: '0x14a'
+    Size: '0x6'
+    Type: char
   - Name: ReviveableRepresentationClass
     Offset: '0x150'
     Size: '0x8'
     Type: class
+  - Name: pad0xc_G45VX[0xc]
+    Offset: '0x158'
+    Size: '0xc'
+    Type: char
   - Name: ReviveWindowIsOpen
-    Offset: '0x16a'
+    Offset: '0x164'
     Size: '0x1'
     Type: bool
+  - Name: pad0xd3_POE1Q[0xd3]
+    Offset: '0x165'
+    Size: '0xd3'
+    Type: char
   - Name: RevivableStatus
-    Offset: '0x240'
+    Offset: '0x238'
     Size: '0x18'
     Type: Struct Status
-  ClassSize: '0x148'
-  FullSize: '0x270'
+  - Name: pad0x48_36CIW[0x48]
+    Offset: '0x24e'
+    Size: '0x48'
+    Type: char
+  ClassSize: '0x140'
+  FullSize: '0x268'
   InheritedSize: '0x128'
   Super: InteractableComponent
 ReviveConditionalStatTrigger:
@@ -186,6 +218,10 @@ ReviveEffectsDataAsset:
   Super: DataAsset
 ReviveGhost:
   Attributes:
+  - Name: pad0x10_NKEE0[0x10]
+    Offset: '0x3c8'
+    Size: '0x10'
+    Type: char
   - Name: CorpseMaterials
     Offset: '0x3d8'
     Size: '0x10'
@@ -218,10 +254,18 @@ ReviveGhost:
     Offset: '0x418'
     Size: '0x8'
     Type: Class ReviveAudioComponent*
+  - Name: pad0x10_3TU1X[0x10]
+    Offset: '0x420'
+    Size: '0x10'
+    Type: char
   - Name: RevivableOwnerNetRole
     Offset: '0x430'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_FHHPW[0x7]
+    Offset: '0x431'
+    Size: '0x7'
+    Type: char
   - Name: ReviveGhostDataAsset
     Offset: '0x438'
     Size: '0x8'
@@ -238,6 +282,10 @@ ReviveGhost:
     Offset: '0x468'
     Size: '0x38'
     Type: Struct ModeSpecificReviveSettings
+  - Name: pad0x13c_NF8VR[0x13c]
+    Offset: '0x4a0'
+    Size: '0x13c'
+    Type: char
   - Name: AstralCordDynamicMaterials
     Offset: '0x608'
     Size: '0x10'
@@ -246,6 +294,10 @@ ReviveGhost:
     Offset: '0x618'
     Size: '0xc'
     Type: Struct GhostPlayModeParameters
+  - Name: pad0x1c_E4AUB[0x1c]
+    Offset: '0x622'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x260'
   FullSize: '0x628'
   InheritedSize: '0x3c8'
@@ -280,6 +332,10 @@ ReviveSettings:
     Offset: '0x50'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_A9FKT[0x3]
+    Offset: '0x51'
+    Size: '0x3'
+    Type: char
   - Name: ServerWaitTimeBeforeFullyReviving
     Offset: '0x54'
     Size: '0x4'
@@ -288,36 +344,36 @@ ReviveSettings:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: ReviveTimeOnEnemyShip
+  - Name: MaxRevertEvaporateDuration
     Offset: '0x5c'
     Size: '0x4'
     Type: float
-  - Name: MaxRevertEvaporateDuration
-    Offset: '0x60'
-    Size: '0x4'
-    Type: float
   - Name: UnsupportedPlayModes
-    Offset: '0x68'
+    Offset: '0x60'
     Size: '0x10'
     Type: TArray<Byte UnsupportedPlayModes>
   - Name: ModeSpecificSettings
-    Offset: '0x78'
+    Offset: '0x70'
     Size: '0x10'
     Type: TArray<Struct ModeSpecificReviveSettings>
   - Name: GiveUpHoldTime
-    Offset: '0x88'
+    Offset: '0x80'
     Size: '0x4'
     Type: float
   - Name: GiveUpFadeDuration
-    Offset: '0x8c'
+    Offset: '0x84'
     Size: '0x4'
     Type: float
   - Name: GiveUpEvaporateDuration
-    Offset: '0x90'
+    Offset: '0x88'
     Size: '0x4'
     Type: float
-  ClassSize: '0x60'
-  FullSize: '0x98'
+  - Name: pad0xc_5YT9Z[0xc]
+    Offset: '0x8a'
+    Size: '0xc'
+    Type: char
+  ClassSize: '0x58'
+  FullSize: '0x90'
   InheritedSize: '0x38'
   Super: DeveloperSettings
 ReviveableActionStateId:

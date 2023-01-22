@@ -6,41 +6,46 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xd0
+// Size 0xd0 (Full Size[0xf8] - InheritedSize[0x28]
 class BasePromptCoordinator: public Object
 {
 public:
 	Class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
+	char                                                         pad0x10_OTPST[0x10];                               // 0x30(0x10)
 	Class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
 	Class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
+	char                                                         pad0xb8_SOECM[0xb8];                               // 0x4e(0xb8)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class GetPromptsLocalService: public BlueprintAsyncActionBase
 {
 public:
+	char                                                         pad0x10_NGWA9[0x10];                               // 0x28(0x10)
 	Class Object*                                                WorldContextObject;                                // 0x38(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PrioritisedPromptsManagerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
 class PrioritisedPromptsManager: public Object
 {
 public:
+	char                                                         pad0x8_5NKR2[0x8];                                 // 0x28(0x8)
 	TArray<Struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
 	Class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
+	char                                                         pad0x40_TFY3B[0x40];                               // 0x46(0x40)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class PromptCounterAccessKey: public Object
 {
 public:
@@ -48,14 +53,14 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PromptsLocalServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
 class PromptsLocalService: public Object
 {
 public:

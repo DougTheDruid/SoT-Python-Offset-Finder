@@ -12,10 +12,22 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_WCMJZ[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "State_ShipMastDamaged",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x7_UW2EM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x121"
       },
       {
         "Name": "Handle_OnMastDamaged1",
@@ -28,6 +40,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x7_DV9HX[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x171"
       },
       {
         "Name": "Prompt_RepairShip",

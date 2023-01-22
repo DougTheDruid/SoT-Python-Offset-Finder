@@ -61,6 +61,7 @@ public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
 	float                                                        Radius;                                            // 0xc(0x4)
 	byte                                                         RequiredMusicalInstrumentType;                     // 0x10(0x1)
+	char                                                         pad0x3_H90WP[0x3];                                 // 0x11(0x3)
 	int                                                          RequiredNumInteractors;                            // 0x14(0x4)
 };
 

@@ -8,10 +8,16 @@
   },
   "PlayerLootMarkerService": {
     "Super": "Actor",
-    "FullSize": "0x4f0",
+    "FullSize": "0x520",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x128",
+    "ClassSize": "0x158",
     "Attributes": [
+      {
+        "Name": "pad0x8_D2VY2[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "Params",
         "Type": "Class PlayerLootMarkerServiceParams*",
@@ -19,16 +25,34 @@
         "Offset": "0x3d0"
       },
       {
+        "Name": "pad0x20_GMALD[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3d8"
+      },
+      {
         "Name": "ShortRangeMarkers",
         "Type": "TArray<Weakclass ShortRangeMarkers>",
         "Size": "0x10",
-        "Offset": "0x3d8"
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0xf8_YHKQG[0xf8]",
+        "Type": "char",
+        "Size": "0xf8",
+        "Offset": "0x408"
       },
       {
         "Name": "BatchData",
         "Type": "TArray<Struct PlayerLootMarkerWorldEdgeBatchData>",
         "Size": "0x10",
-        "Offset": "0x4e0"
+        "Offset": "0x500"
+      },
+      {
+        "Name": "pad0x30_MGA4E[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x50e"
       }
     ]
   },
@@ -49,6 +73,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xc_MO6TZ[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x32"
       }
     ]
   },

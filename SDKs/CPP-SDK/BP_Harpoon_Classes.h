@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
 class BP_Harpoon_C: public Actor
 {
 public:

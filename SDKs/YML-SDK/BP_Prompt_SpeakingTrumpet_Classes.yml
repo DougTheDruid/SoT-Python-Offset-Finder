@@ -6,6 +6,10 @@ BP_Prompt_SpeakingTrumpet_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_ZTUFA[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: WieldableItemUseEvent
     Offset: '0x120'
     Size: '0x48'
@@ -30,6 +34,10 @@ BP_Prompt_SpeakingTrumpet_C:
     Offset: '0x228'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_OW360[0x7]
+    Offset: '0x229'
+    Size: '0x7'
+    Type: char
   - Name: WieldableItemStow
     Offset: '0x230'
     Size: '0x48'
@@ -46,6 +54,10 @@ BP_Prompt_SpeakingTrumpet_C:
     Offset: '0x281'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_2BV5R[0x6]
+    Offset: '0x282'
+    Size: '0x6'
+    Type: char
   - Name: CharacterDispatcher
     Offset: '0x288'
     Size: '0x8'

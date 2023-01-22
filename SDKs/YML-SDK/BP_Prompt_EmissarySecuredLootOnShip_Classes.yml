@@ -6,6 +6,10 @@ BP_Prompt_EmissarySecuredLootOnShip_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_ETRGZ[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: Handle_EmissarySecuredLootOnShip
     Offset: '0x120'
     Size: '0x48'
@@ -18,10 +22,18 @@ BP_Prompt_EmissarySecuredLootOnShip_C:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_9RE02[0x3]
+    Offset: '0x171'
+    Size: '0x3'
+    Type: char
   - Name: ExpectedCompanyName
     Offset: '0x174'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_46FZN[0x4]
+    Offset: '0x17c'
+    Size: '0x4'
+    Type: char
   - Name: Prompts
     Offset: '0x180'
     Size: '0x10'

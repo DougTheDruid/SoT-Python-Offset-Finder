@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 BP_BaseInternalDamageZone_C:
   Attributes:
+  - Name: pad0x7_S3SW4[0x7]
+    Offset: '0x831'
+    Size: '0x7'
+    Type: char
   - Name: UberGraphFrame
     Offset: '0x838'
     Size: '0x8'

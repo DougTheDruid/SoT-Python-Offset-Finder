@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaLoadingScreenBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x200
+// Size 0x200 (Full Size[0x228] - InheritedSize[0x28]
 class SlateLoadingScreenParams: public DataAsset
 {
 public:
@@ -25,11 +25,13 @@ public:
 	float                                                        ViewportHeight;                                    // 0x30(0x4)
 	float                                                        FooterHeight;                                      // 0x34(0x4)
 	bool                                                         DrawSpinnerText;                                   // 0x38(0x1)
+	char                                                         pad0x7_RWRYY[0x7];                                 // 0x39(0x7)
 	Struct StringAssetReference                                  PlaceholderSpinnerTexture;                         // 0x40(0x10)
 	Struct LinearColor                                           BackgroundColour;                                  // 0x50(0x10)
 	Struct SlateLoadingScreenImageParams                         PrimaryImage;                                      // 0x60(0x30)
 	TArray<Struct SlateLoadingScreenImageParams>                 CyclingImages;                                     // 0x90(0x10)
 	int                                                          MaxNumImagesPerLoad;                               // 0xa0(0x4)
+	char                                                         pad0x4_JU8J7[0x4];                                 // 0xa4(0x4)
 	Struct FText                                                 SpinnerText;                                       // 0xa8(0x38)
 	Struct SlateColor                                            SpinnerTextColour;                                 // 0xe0(0x30)
 	Struct SlateFontInfo                                         SpinnerTextFont;                                   // 0x110(0x40)
@@ -44,13 +46,15 @@ public:
 	int                                                          NumTipsPerImage;                                   // 0x194(0x4)
 	Struct SlateFontInfo                                         LoadingTipFont;                                    // 0x198(0x40)
 	float                                                        LoadingTipFontLineHeightPercentage;                // 0x1d8(0x4)
+	char                                                         pad0x4_GLHQS[0x4];                                 // 0x1dc(0x4)
 	TArray<Struct FText>                                         LoadingScreenTips;                                 // 0x1e0(0x10)
 	Struct SlateColor                                            LoadingScreenTipColour;                            // 0x1f0(0x30)
 	bool                                                         AllowSyncronousAssetLoad;                          // 0x220(0x1)
+	char                                                         pad0x9_6354G[0x9];                                 // 0x21f(0x9)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
 class AthenaLoadingScreenParams: public DeveloperSettings
 {
 public:
@@ -60,7 +64,7 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class LoadingUtilities: public BlueprintFunctionLibrary
 {
 public:

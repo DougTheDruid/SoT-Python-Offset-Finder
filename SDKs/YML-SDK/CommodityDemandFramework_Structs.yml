@@ -39,6 +39,10 @@ CommodityRedemptionTrackingModel:
     Offset: '0x2'
     Size: '0x1'
     Type: byte
+  - Name: pad0x5_TECRV[0x5]
+    Offset: '0x3'
+    Size: '0x5'
+    Type: char
   ClassSize: '0x10'
 CommoditySelectionType:
   Attributes:
@@ -68,6 +72,10 @@ CommodityTrackingModel:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_WI2H8[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 CommodityTypeDataEntry:
   Attributes:

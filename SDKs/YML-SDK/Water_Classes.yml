@@ -20,6 +20,10 @@ FFTWaterInterface:
   Super: Interface
 FFTWaterService:
   Attributes:
+  - Name: pad0x78_LF6LO[0x78]
+    Offset: '0x3c8'
+    Size: '0x78'
+    Type: char
   - Name: ReplicatedServerCreationTime
     Offset: '0x440'
     Size: '0x8'
@@ -80,6 +84,10 @@ SplashProbeDataAsset:
   Super: DataAsset
 SplashProbeVFXComponent:
   Attributes:
+  - Name: pad0x28_7ZNF6[0x28]
+    Offset: '0xc8'
+    Size: '0x28'
+    Type: char
   - Name: Probes
     Offset: '0xf0'
     Size: '0x8'
@@ -100,6 +108,10 @@ SplashProbeVFXComponent:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_QKBVA[0x9]
+    Offset: '0x117'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x120'
   InheritedSize: '0xc8'
@@ -200,6 +212,10 @@ WaterSpoutVFXComponent:
     Offset: '0xd8'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_4GPJI[0x4]
+    Offset: '0xe4'
+    Size: '0x4'
+    Type: char
   - Name: SpoutParticleSystem
     Offset: '0xe8'
     Size: '0x8'
@@ -228,6 +244,10 @@ WaterSpoutVFXComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_HOWU2[0x7]
+    Offset: '0x109'
+    Size: '0x7'
+    Type: char
   - Name: SplashKillPlaneMesh
     Offset: '0x110'
     Size: '0x8'
@@ -236,6 +256,10 @@ WaterSpoutVFXComponent:
     Offset: '0x118'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_3CF34[0x4]
+    Offset: '0x124'
+    Size: '0x4'
+    Type: char
   - Name: SplashKillPlane
     Offset: '0x128'
     Size: '0x8'
@@ -244,6 +268,10 @@ WaterSpoutVFXComponent:
     Offset: '0x130'
     Size: '0x10'
     Type: TArray<Struct WaterSpout>
+  - Name: pad0x38_ZYS3W[0x38]
+    Offset: '0x13e'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'

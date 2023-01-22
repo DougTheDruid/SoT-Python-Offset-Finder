@@ -27,10 +27,22 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x10_LU181[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "DeliveryRequirementsAsset",
         "Type": "Class DeliverableRequirementsDataAsset*",
         "Size": "0x8",
         "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x18_72F85[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xde"
       }
     ]
   },
@@ -40,6 +52,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x10",
     "Attributes": [
+      {
+        "Name": "pad0x8_1725Q[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
       {
         "Name": "Context",
         "Type": "Class DeliverableRedirectionContextBase*",
@@ -73,6 +91,12 @@
         "Type": "TArray<class DeliverableRedirectionContextBase*>",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x38_SKPQ0[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x36"
       }
     ]
   },

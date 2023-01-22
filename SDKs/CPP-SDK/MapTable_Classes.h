@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x65
+// Size 0x65 (Full Size[0x805] - InheritedSize[0x7a0]
 class MapTable_C: public MapTable
 {
 public:

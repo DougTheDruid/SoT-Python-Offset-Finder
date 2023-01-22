@@ -38,6 +38,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x24_KYHRR[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0xca"
       }
     ]
   },

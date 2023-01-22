@@ -120,6 +120,10 @@ VolcanoSetupDataEmbersEntry:
     Offset: '0x0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_A5FT5[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Effect
     Offset: '0x8'
     Size: '0x8'
@@ -131,6 +135,10 @@ VolcanoStateData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_I1NQT[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: StateDuration
     Offset: '0x4'
     Size: '0x4'
@@ -161,6 +169,10 @@ VolcanoTarget:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_L6IOF[0x6]
+    Offset: '0x2'
+    Size: '0x6'
+    Type: char
   - Name: Target
     Offset: '0x8'
     Size: '0x8'
@@ -184,6 +196,10 @@ VolcanoTargetChances:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_3SBZP[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: OnTargetNumExtraShots
     Offset: '0x10'
     Size: '0x20'
@@ -241,6 +257,10 @@ WeightedVolcanoProjectile:
     Offset: '0x0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_6NTDC[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: ProjectileClass
     Offset: '0x8'
     Size: '0x8'
@@ -265,6 +285,10 @@ WeightedVolcanoProjectile:
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_Q5D21[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   - Name: RotationRatePitch
     Offset: '0x28'
     Size: '0x30'

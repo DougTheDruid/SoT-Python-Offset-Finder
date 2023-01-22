@@ -14,10 +14,18 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_U7FG1[0x4]
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: char
   - Name: IsSettingEnabled
     Offset: '0x120'
     Size: '0x1'
     Type: bool
+  - Name: pad0xd1_21QPL[0xd1]
+    Offset: '0x11f'
+    Size: '0xd1'
+    Type: char
   ClassSize: '0x128'
   FullSize: '0x1f0'
   InheritedSize: '0xc8'
@@ -25,30 +33,34 @@ EnchantedCompassProximityAnnouncementComponent:
 MultiTargetEnchantedCompass:
   Attributes:
   - Name: Locations
-    Offset: '0x858'
+    Offset: '0x878'
     Size: '0x10'
     Type: TArray<Struct Vector>
   - Name: LocationIds
-    Offset: '0x868'
+    Offset: '0x888'
     Size: '0x10'
     Type: TArray<Struct Guid>
   - Name: InventoryItem
-    Offset: '0x878'
+    Offset: '0x898'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   - Name: ProximityAnnouncementComponent
-    Offset: '0x880'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: Class EnchantedCompassProximityAnnouncementComponent*
+  - Name: pad0x18_JOXOZ[0x18]
+    Offset: '0x8a6'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x30'
-  FullSize: '0x890'
-  InheritedSize: '0x860'
+  FullSize: '0x8b0'
+  InheritedSize: '0x880'
   Super: Compass
 PrototypeMultiTargetEnchantedCompass:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x890'
-  InheritedSize: '0x890'
+  FullSize: '0x8b0'
+  InheritedSize: '0x8b0'
   Super: MultiTargetEnchantedCompass
 TaleQuestMultiTargetCompassAddTrackedLocationStep:
   Attributes:
@@ -93,8 +105,8 @@ TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc:
 TaleQuestMultiTargetCompassService:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x140'
-  InheritedSize: '0x120'
+  FullSize: '0x190'
+  InheritedSize: '0x170'
   Super: TaleQuestToolService
 TaleQuestMultiTargetCompassServiceDesc:
   Attributes:
@@ -112,6 +124,10 @@ TaleQuestSetCompassTargetBaseStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_7PCZJ[0x9]
+    Offset: '0x7f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'

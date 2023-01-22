@@ -44,6 +44,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x10_06ON5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
         "Name": "Curve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",

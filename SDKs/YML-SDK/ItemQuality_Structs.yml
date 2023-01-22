@@ -26,6 +26,10 @@ ComplexItemQualityEntry:
     Offset: '0x5'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_8MW6R[0x2]
+    Offset: '0x6'
+    Size: '0x2'
+    Type: char
   - Name: Rarity
     Offset: '0x8'
     Size: '0x8'

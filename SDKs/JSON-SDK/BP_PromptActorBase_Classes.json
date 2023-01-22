@@ -24,10 +24,22 @@
         "Offset": "0x3d8"
       },
       {
+        "Name": "pad0x7_C5O31[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x3d9"
+      },
+      {
         "Name": "PromptCoordinators",
         "Type": "TArray<class BP_PromptCoordinator_Base_C*>",
         "Size": "0x10",
         "Offset": "0x3e0"
+      },
+      {
+        "Name": "pad0x30_56UEF[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3ee"
       }
     ]
   },

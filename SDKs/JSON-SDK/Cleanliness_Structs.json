@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_QR0B5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Strength",
         "Type": "float",
         "Size": "0x4",

@@ -6,11 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x510
+// Size 0x510 (Full Size[0x628] - InheritedSize[0x118]
 class BP_Prompt_MaidenVoyage_FishingRodTutorial_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_EA5IW[0xfc];                               // 0x120(0xfc)
 	bool                                                         State_RodWielded;                                  // 0x120(0x1)
 	bool                                                         State_FishBattling;                                // 0x121(0x1)
 	bool                                                         State_CastRod;                                     // 0x122(0x1)
@@ -35,8 +36,10 @@ public:
 	Struct ObjectMessagingHandle                                 Handle_ReelingWhileBattling;                       // 0x4b0(0x48)
 	Struct ObjectMessagingHandle                                 Handle_StowRod;                                    // 0x4f8(0x48)
 	bool                                                         FishStartedBattling;                               // 0x540(0x1)
+	char                                                         pad0x7_VL609[0x7];                                 // 0x541(0x7)
 	Struct ObjectMessagingHandle                                 Handle_FishEscaped;                                // 0x548(0x48)
 	bool                                                         State_Completed;                                   // 0x590(0x1)
+	char                                                         pad0x7_GA4FJ[0x7];                                 // 0x591(0x7)
 	Struct ObjectMessagingHandle                                 Handle_PlayerDeath;                                // 0x598(0x48)
 	Struct ObjectMessagingHandle                                 Handle_DockToObject;                               // 0x5e0(0x48)
 };

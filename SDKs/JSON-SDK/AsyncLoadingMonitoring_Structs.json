@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_D4YC3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "ExpectedAsyncLoadingTime",
         "Type": "double",
         "Size": "0x8",

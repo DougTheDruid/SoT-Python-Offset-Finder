@@ -6,13 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x21
+// Size 0x21 (Full Size[0x101] - InheritedSize[0xe0]
 class BP_CT_VoyageProgress_C: public CompanyTutorialVoyageProgress
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xe0(0x8)
+	char                                                         pad0x134_NQXGM[0x134];                             // 0xe8(0x134)
 	Class AthenaPlayerController*                                AthenaPlayerController;                            // 0xe8(0x8)
 	byte                                                         VoyageState;                                       // 0xf0(0x1)
+	char                                                         pad0x7_9BEV2[0x7];                                 // 0xf1(0x7)
 	class                                                        MaximumRank;                                       // 0xf8(0x8)
 	bool                                                         NoLongerPurchaseable;                              // 0x100(0x1)
 };

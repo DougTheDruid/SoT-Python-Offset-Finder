@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x440] - InheritedSize[0x418]
 class BP_MultiCrewSkeletonThrone_C: public MultiCrewSkeletonThrone
 {
 public:

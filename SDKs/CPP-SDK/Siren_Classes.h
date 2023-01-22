@@ -6,77 +6,77 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SirenTeleportAIAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
 class DistantIdleAIAbility: public AthenaAIAbility
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xc8] - InheritedSize[0xc8]
 class DistantIdleAIAbilityParams: public AthenaAIAbilityParams
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DistantIdleAIAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
 class ScratchAIAbility: public MeleeAIAbility
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xd8] - InheritedSize[0xd8]
 class ScratchAIAbilityParams: public MeleeAIAbilityParams
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ScratchAIAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SirenCalmHealStrategyId: public AIStrategyId
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x9e8] - InheritedSize[0x9e0]
 class SirenController: public AthenaSwimmingAIController
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class SirenEmeraldHealStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
 class SirenPartsDesc: public MeshMemoryConstraintsAIPartsDesc
 {
 public:
@@ -84,63 +84,63 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class SirenRubyHealStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class SirenSapphireHealStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SirenScratchRespiteStrategyId: public AIStrategyId
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SirenScratchStrategyId: public AIStrategyId
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
 class SirenSongAIAbility: public AthenaAIAbility
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xc8] - InheritedSize[0xc8]
 class SirenSongAIAbilityParams: public AthenaAIAbilityParams
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SirenSongAIAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
 class SirenTeleportAIAbility: public TeleportAIAbility
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xf0] - InheritedSize[0xf0]
 class SirenTeleportAIAbilityParams: public TeleportAIAbilityParams
 {
 public:

@@ -24,49 +24,67 @@
         "Offset": "0xd8"
       },
       {
+        "Name": "pad0x4_U7FG1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xdc"
+      },
+      {
         "Name": "IsSettingEnabled",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x120"
+      },
+      {
+        "Name": "pad0xd1_21QPL[0xd1]",
+        "Type": "char",
+        "Size": "0xd1",
+        "Offset": "0x11f"
       }
     ]
   },
   "MultiTargetEnchantedCompass": {
     "Super": "Compass",
-    "FullSize": "0x890",
-    "InheritedSize": "0x860",
+    "FullSize": "0x8b0",
+    "InheritedSize": "0x880",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Locations",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
-        "Offset": "0x858"
+        "Offset": "0x878"
       },
       {
         "Name": "LocationIds",
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
-        "Offset": "0x868"
+        "Offset": "0x888"
       },
       {
         "Name": "InventoryItem",
         "Type": "Class InventoryItemComponent*",
         "Size": "0x8",
-        "Offset": "0x878"
+        "Offset": "0x898"
       },
       {
         "Name": "ProximityAnnouncementComponent",
         "Type": "Class EnchantedCompassProximityAnnouncementComponent*",
         "Size": "0x8",
-        "Offset": "0x880"
+        "Offset": "0x8a0"
+      },
+      {
+        "Name": "pad0x18_JOXOZ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8a6"
       }
     ]
   },
   "PrototypeMultiTargetEnchantedCompass": {
     "Super": "MultiTargetEnchantedCompass",
-    "FullSize": "0x890",
-    "InheritedSize": "0x890",
+    "FullSize": "0x8b0",
+    "InheritedSize": "0x8b0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -127,8 +145,8 @@
   },
   "TaleQuestMultiTargetCompassService": {
     "Super": "TaleQuestToolService",
-    "FullSize": "0x140",
-    "InheritedSize": "0x120",
+    "FullSize": "0x190",
+    "InheritedSize": "0x170",
     "ClassSize": "0x20",
     "Attributes": []
   },
@@ -164,6 +182,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x9_7PCZJ[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x7f"
       }
     ]
   },

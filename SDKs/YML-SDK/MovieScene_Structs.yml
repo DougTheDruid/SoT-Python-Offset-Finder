@@ -106,6 +106,10 @@ MovieSceneEvaluationGroupLUTIndex:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_C4JJE[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: LUTOffset
     Offset: '0x4'
     Size: '0x4'
@@ -159,6 +163,10 @@ MovieSceneEvaluationTrack:
     Offset: '0x12'
     Size: '0x1'
     Type: byte
+  - Name: pad0x5_V0K2J[0x5]
+    Offset: '0x13'
+    Size: '0x5'
+    Type: char
   - Name: Segments
     Offset: '0x18'
     Size: '0x10'
@@ -294,6 +302,10 @@ MovieSceneSequenceHierarchyNode:
     Offset: '0x0'
     Size: '0x4'
     Type: Struct MovieSceneSequenceID
+  - Name: pad0x4_HO7WB[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Children
     Offset: '0x8'
     Size: '0x10'
@@ -316,6 +328,10 @@ MovieSceneSequencePlaybackSettings:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_6TM81[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: StartTime
     Offset: '0xc'
     Size: '0x4'
@@ -324,6 +340,10 @@ MovieSceneSequencePlaybackSettings:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_AHE62[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
 MovieSceneSequenceTransform:
   Attributes:
@@ -342,10 +362,18 @@ MovieSceneSpawnable:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_1CNDF[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: Guid
     Offset: '0x4'
     Size: '0x10'
     Type: Struct Guid
+  - Name: pad0x4_J3LPI[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: Name
     Offset: '0x18'
     Size: '0x10'

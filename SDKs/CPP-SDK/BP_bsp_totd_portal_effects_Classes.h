@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x70
+// Size 0x70 (Full Size[0x4a0] - InheritedSize[0x430]
 class BP_bsp_totd_portal_effects_C: public BP_TotD_PortalController_C
 {
 public:

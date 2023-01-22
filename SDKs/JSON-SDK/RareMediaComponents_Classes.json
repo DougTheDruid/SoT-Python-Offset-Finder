@@ -13,16 +13,34 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
+        "Name": "pad0x88_4LGYO[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x2e0"
+      },
+      {
         "Name": "MediaSoundEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x368"
       },
       {
+        "Name": "pad0x40_DPEA6[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x370"
+      },
+      {
         "Name": "RelativeBufferSize",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3b0"
+      },
+      {
+        "Name": "pad0x14_I8QWB[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x3b2"
       }
     ]
   },

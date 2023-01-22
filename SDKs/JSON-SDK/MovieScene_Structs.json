@@ -61,10 +61,22 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_1CNDF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Guid",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x4_J3LPI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       },
       {
         "Name": "Name",
@@ -181,6 +193,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x3_6TM81[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
         "Name": "StartTime",
         "Type": "float",
         "Size": "0x4",
@@ -191,6 +209,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_AHE62[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
@@ -308,6 +332,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_C4JJE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "LUTOffset",
         "Type": "int",
         "Size": "0x4",
@@ -393,6 +423,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x12"
+      },
+      {
+        "Name": "pad0x5_V0K2J[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x13"
       },
       {
         "Name": "Segments",
@@ -490,6 +526,12 @@
         "Type": "Struct MovieSceneSequenceID",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_HO7WB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "Children",

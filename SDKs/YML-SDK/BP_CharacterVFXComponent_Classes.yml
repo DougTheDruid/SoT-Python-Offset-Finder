@@ -6,6 +6,10 @@ BP_CharacterVFXComponent_C:
     Offset: '0xe0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0x134_GA2GE[0x134]
+    Offset: '0xe8'
+    Size: '0x134'
+    Type: char
   - Name: EnterWaterEvent
     Offset: '0xe8'
     Size: '0x48'
@@ -62,10 +66,18 @@ BP_CharacterVFXComponent_C:
     Offset: '0x2cc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_FSMYZ[0x3]
+    Offset: '0x2cd'
+    Size: '0x3'
+    Type: char
   - Name: DEBUG_WindToggleTimer
     Offset: '0x2d0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_R8YW5[0x4]
+    Offset: '0x2d4'
+    Size: '0x4'
+    Type: char
   - Name: WindDirectionChangedHandle
     Offset: '0x2d8'
     Size: '0x48'

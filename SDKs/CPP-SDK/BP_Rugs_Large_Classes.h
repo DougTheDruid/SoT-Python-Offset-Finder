@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x3e8] - InheritedSize[0x3d8]
 class BP_Rugs_Large_C: public BP_Rugs_C
 {
 public:

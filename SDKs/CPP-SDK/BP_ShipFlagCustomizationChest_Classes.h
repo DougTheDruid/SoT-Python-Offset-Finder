@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x618] - InheritedSize[0x610]
 class BP_ShipFlagCustomizationChest_C: public ShipFlagCustomizationChest
 {
 public:

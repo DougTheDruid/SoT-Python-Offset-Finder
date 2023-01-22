@@ -6,42 +6,46 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x418] - InheritedSize[0x400]
 class VeilOfTheAncients: public InteractableBase
 {
 public:
 	float                                                        NumberOfGems;                                      // 0x400(0x4)
+	char                                                         pad0x4_8M54C[0x4];                                 // 0x404(0x4)
 	Class LockComponent*                                         LockComponent;                                     // 0x408(0x8)
 	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x410(0x8)
 };
 
 
-// Size 0x100
+// Size 0x100 (Full Size[0x160] - InheritedSize[0x60]
 class VeilService: public TaleQuestService
 {
 public:
+	char                                                         pad0x20_OD1KY[0x20];                               // 0x60(0x20)
 	Class World*                                                 World;                                             // 0x80(0x8)
 	Class GameState*                                             GameState;                                         // 0x88(0x8)
+	char                                                         pad0x8_CH4WU[0x8];                                 // 0x90(0x8)
 	Class VeilOfTheAncients*                                     TrackedVeil;                                       // 0x98(0x8)
 	Class Ship*                                                  Ship;                                              // 0xa0(0x8)
+	char                                                         pad0xc8_XIT9C[0xc8];                               // 0xa6(0xc8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class GetVeilOfTheAncientsStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class VeilOfTheAncientsServiceDesc: public TaleQuestServiceDesc
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
 class GetVeilOfTheAncientsStepDesc: public TaleQuestStepDesc
 {
 public:

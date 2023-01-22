@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x498] - InheritedSize[0x490]
 class BP_EquipmentChestInteraction_C: public EquipmentChestInteraction
 {
 public:

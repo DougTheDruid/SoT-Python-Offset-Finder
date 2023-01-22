@@ -6,35 +6,35 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x120
+// Size 0x120 (Full Size[0x540] - InheritedSize[0x420]
 class ServiceProviderGameState: public GameState
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameServiceLifecycleInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameServiceMapFunctions: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameServiceProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameServiceTickInterface: public Interface
 {
 public:

@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 ContestRowboatsService:
   Attributes:
+  - Name: pad0x8_AW4EZ[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: RowboatClass
     Offset: '0x3d0'
     Size: '0x8'
     Type: class
+  - Name: pad0x60_PMUD9[0x60]
+    Offset: '0x3d6'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x428'
   InheritedSize: '0x3c8'

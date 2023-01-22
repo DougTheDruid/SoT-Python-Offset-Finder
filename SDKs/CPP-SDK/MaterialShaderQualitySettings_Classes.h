@@ -6,18 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x58
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
 class MaterialShaderQualitySettings: public Object
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class ShaderPlatformQualitySettings: public Object
 {
 public:
 	Struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
+	char                                                         pad0x14_ZWXFU[0x14];                               // 0x2a(0x14)
 };
 
 

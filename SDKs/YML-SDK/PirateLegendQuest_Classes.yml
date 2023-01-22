@@ -22,6 +22,10 @@ VeilOfTheAncients:
     Offset: '0x400'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_8M54C[0x4]
+    Offset: '0x404'
+    Size: '0x4'
+    Type: char
   - Name: LockComponent
     Offset: '0x408'
     Size: '0x8'
@@ -42,6 +46,10 @@ VeilOfTheAncientsServiceDesc:
   Super: TaleQuestServiceDesc
 VeilService:
   Attributes:
+  - Name: pad0x20_OD1KY[0x20]
+    Offset: '0x60'
+    Size: '0x20'
+    Type: char
   - Name: World
     Offset: '0x80'
     Size: '0x8'
@@ -50,6 +58,10 @@ VeilService:
     Offset: '0x88'
     Size: '0x8'
     Type: Class GameState*
+  - Name: pad0x8_CH4WU[0x8]
+    Offset: '0x90'
+    Size: '0x8'
+    Type: char
   - Name: TrackedVeil
     Offset: '0x98'
     Size: '0x8'
@@ -58,6 +70,10 @@ VeilService:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class Ship*
+  - Name: pad0xc8_XIT9C[0xc8]
+    Offset: '0xa6'
+    Size: '0xc8'
+    Type: char
   ClassSize: '0x100'
   FullSize: '0x160'
   InheritedSize: '0x60'

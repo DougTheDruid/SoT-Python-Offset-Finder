@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xa0
+// Size 0xa0 (Full Size[0x560] - InheritedSize[0x4c0]
 class BP_FactionHourglass_C: public FactionVoteInteractionActor
 {
 public:

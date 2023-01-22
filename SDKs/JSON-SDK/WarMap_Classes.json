@@ -13,6 +13,12 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
+        "Name": "pad0x8_VFMBO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x128"
+      },
+      {
         "Name": "OpenMapInteractionText",
         "Type": "Struct FText",
         "Size": "0x38",
@@ -29,6 +35,12 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x1a0"
+      },
+      {
+        "Name": "pad0x30_774WV[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x1a6"
       }
     ]
   },
@@ -64,6 +76,12 @@
         "Offset": "0x40"
       },
       {
+        "Name": "pad0x67_DAZRP[0x67]",
+        "Type": "char",
+        "Size": "0x67",
+        "Offset": "0x41"
+      },
+      {
         "Name": "Votes",
         "Type": "TArray<class PlayerState*>",
         "Size": "0x10",
@@ -74,6 +92,12 @@
         "Type": "Class BoxedRpcDispatcherComponent*",
         "Size": "0x8",
         "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x68_TRSJZ[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0xbe"
       }
     ]
   },
@@ -172,6 +196,12 @@
     "ClassSize": "0x248",
     "Attributes": [
       {
+        "Name": "pad0x10_2D8Z9[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "TooltipUIFadeDuration",
         "Type": "float",
         "Size": "0x4",
@@ -182,6 +212,12 @@
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x3dc"
+      },
+      {
+        "Name": "pad0x4_59TN2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3e4"
       },
       {
         "Name": "InvasionActiveMesh",
@@ -200,6 +236,12 @@
         "Type": "TArray<Struct FactionRequest>",
         "Size": "0x10",
         "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x220_YXO9T[0x220]",
+        "Type": "char",
+        "Size": "0x220",
+        "Offset": "0x40e"
       }
     ]
   },
@@ -238,6 +280,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x45"
+      },
+      {
+        "Name": "pad0xd4_2J5TS[0xd4]",
+        "Type": "char",
+        "Size": "0xd4",
+        "Offset": "0x44"
       }
     ]
   },
@@ -259,6 +307,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x118"
+      },
+      {
+        "Name": "pad0x9_0VH0Q[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x117"
       }
     ]
   },

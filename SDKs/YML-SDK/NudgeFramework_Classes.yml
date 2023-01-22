@@ -16,6 +16,10 @@ NudgeInterpolationParamsDataAsset:
   Super: DataAsset
 NudgePolicy:
   Attributes:
+  - Name: pad0x90_NO1UZ[0x90]
+    Offset: '0x28'
+    Size: '0x90'
+    Type: char
   - Name: OwningActor
     Offset: '0xb8'
     Size: '0x8'

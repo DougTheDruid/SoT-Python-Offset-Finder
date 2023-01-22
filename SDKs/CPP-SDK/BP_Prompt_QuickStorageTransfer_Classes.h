@@ -6,16 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x130
+// Size 0x130 (Full Size[0x248] - InheritedSize[0x118]
 class BP_Prompt_QuickStorageTransfer_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_E1V9Z[0xfc];                               // 0x120(0xfc)
 	bool                                                         State_Complete;                                    // 0x120(0x1)
 	bool                                                         State_ShowPrompt;                                  // 0x121(0x1)
+	char                                                         pad0x6_FJRVS[0x6];                                 // 0x122(0x6)
 	Struct PrioritisedPromptWithHandle                           Prompt_QuickStorageTransfer_Take;                  // 0x128(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_QuickStorageTransfer_Add;                   // 0x190(0x68)
 	bool                                                         State_ShowAdd;                                     // 0x1f8(0x1)
+	char                                                         pad0x7_5HS7Z[0x7];                                 // 0x1f9(0x7)
 	Struct ObjectMessagingHandle                                 Handle_ObjectWielded;                              // 0x200(0x48)
 };
 

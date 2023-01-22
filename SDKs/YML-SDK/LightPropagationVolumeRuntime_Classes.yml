@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 LightPropagationVolumeBlendable:
   Attributes:
+  - Name: pad0x8_01D40[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   - Name: Settings
     Offset: '0x30'
     Size: '0x70'
@@ -10,6 +14,10 @@ LightPropagationVolumeBlendable:
     Offset: '0xa0'
     Size: '0x4'
     Type: float
+  - Name: pad0x14_P10O3[0x14]
+    Offset: '0xa2'
+    Size: '0x14'
+    Type: char
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'

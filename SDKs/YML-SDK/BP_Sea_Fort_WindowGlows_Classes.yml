@@ -26,6 +26,10 @@ BP_Sea_Fort_WindowGlows_C:
     Offset: '0x3ec'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_BWXLS[0x3]
+    Offset: '0x3ed'
+    Size: '0x3'
+    Type: char
   - Name: FadeCurve
     Offset: '0x3f0'
     Size: '0x8'

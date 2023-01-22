@@ -27,6 +27,12 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
+        "Name": "pad0xc8_973B4[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "EndPlayHandlers",
         "Type": "TArray<class EndPlayHandler*>",
         "Size": "0x10",

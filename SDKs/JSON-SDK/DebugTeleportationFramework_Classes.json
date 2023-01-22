@@ -27,6 +27,12 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x18_UQOYP[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "DebugTeleportationRegistry",
         "Type": "TArray<Struct DebugTeleportDestinationEntry>",
         "Size": "0x10",

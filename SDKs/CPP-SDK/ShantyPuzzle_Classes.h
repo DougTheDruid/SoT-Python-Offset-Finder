@@ -6,11 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
 class ShantyPuzzleCompletionComponent: public ActorComponent
 {
 public:
 	float                                                        CompletionTime;                                    // 0xc8(0x4)
+	char                                                         pad0x4_6LRWQ[0x4];                                 // 0xcc(0x4)
 	TArray<Struct LandmarkReactionKeyFrame>                      StartCompletionReaction;                           // 0xd0(0x10)
 	TArray<Struct LandmarkReactionKeyFrame>                      AbortCompletionReaction;                           // 0xe0(0x10)
 	TArray<Struct LandmarkReactionKeyFrame>                      PuzzleCompletedReaction;                           // 0xf0(0x10)
@@ -18,28 +19,31 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ShantyPuzzleInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x110
+// Size 0x110 (Full Size[0x3f0] - InheritedSize[0x2e0]
 class ShantyPuzzleComponent: public SceneComponent
 {
 public:
+	char                                                         pad0x8_E77T0[0x8];                                 // 0x2e0(0x8)
 	class                                                        RequiredShantyItemDesc;                            // 0x2e8(0x8)
 	TArray<Struct ShantyPuzzleInteractionZoneDefinition>         ShantyPuzzleInteractionZoneDefinitions;            // 0x2f0(0x10)
 	bool                                                         TimeLimited;                                       // 0x300(0x1)
 	bool                                                         ShouldMoveEnsembleToActorPosition;                 // 0x301(0x1)
+	char                                                         pad0x6_2SK62[0x6];                                 // 0x302(0x6)
 	Struct GameTimeRange                                         ActiveTimeRange;                                   // 0x308(0x10)
 	TArray<class ShantyPuzzleInteractionZoneComponent*>          ShantyPuzzleInteractionZones;                      // 0x318(0x10)
 	Class Ensemble*                                              CurrentlyPlayingShantyPuzzleEnsemble;              // 0x328(0x8)
+	char                                                         pad0xd0_5M43B[0xd0];                               // 0x32e(0xd0)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x600] - InheritedSize[0x5e0]
 class ShantyPuzzleInteractionZoneComponent: public SphereComponent
 {
 public:

@@ -6,73 +6,80 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
+// Size 0x30 (Full Size[0x80] - InheritedSize[0x50]
 class ActiveStorySpawnRequirement: public SpawnRequirement
 {
 public:
 	TArray<Struct FName>                                         StoryNames;                                        // 0x50(0x10)
 	bool                                                         AllStoriesRequired;                                // 0x60(0x1)
+	char                                                         pad0x21_FCHJX[0x21];                               // 0x5f(0x21)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class IsStoryActiveNPCDialogConditional: public NPCDialogConditional
 {
 public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class StoryClaimableResourceComponent: public ActorComponent
 {
 public:
 	Struct StoryFlag                                             ClaimedStoryFlag;                                  // 0xc8(0x8)
+	char                                                         pad0x30_K81SR[0x30];                               // 0xce(0x30)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class StoryClaimedResourcesServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xc0
+// Size 0xc0 (Full Size[0x488] - InheritedSize[0x3c8]
 class StoryClaimedResourcesService: public Actor
 {
 public:
+	char                                                         pad0x60_32CS9[0x60];                               // 0x3c8(0x60)
 	TArray<Weakclass PendingClaims>                              PendingClaims;                                     // 0x428(0x10)
+	char                                                         pad0x70_B207Y[0x70];                               // 0x436(0x70)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x360] - InheritedSize[0x330]
 class StoryDrivenBlendedLightingZoneComponent: public BlendedLightingZoneComponent
 {
 public:
 	Class StoryDrivenBlendedLightingZoneComponentDataAsset*      StoryDrivenLightingAssetsCollection;               // 0x328(0x8)
 	Struct LightingZoneStoryRelatedSettings                      CurrentStoryResponse;                              // 0x330(0x10)
+	char                                                         pad0x40_C8GQO[0x40];                               // 0x33e(0x40)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class StoryDrivenBlendedLightingZoneComponentDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_NJXP1[0x4];                                 // 0x34(0x4)
 	TArray<Struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x38(0x10)
 	TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*> AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x590] - InheritedSize[0x560]
 class StoryDrivenSalvageItemSpawnComponent: public SalvageItemSpawnComponent
 {
 public:
 	Struct StoryFlag                                             Story;                                             // 0x560(0x8)
+	char                                                         pad0x38_CHLDR[0x38];                               // 0x566(0x38)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class StoryNPCDialogConditionalContext: public NPCDialogConditionalContext
 {
 public:
@@ -80,58 +87,63 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class StoryNPCDialogOverrideType: public NPCDialogOverrideType
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
 class StorySpawnedActorsComponent: public ActorComponent
 {
 public:
 	Class StorySpawnedActorsComponentDataAsset*                  AssetsCollection;                                  // 0xc8(0x8)
+	char                                                         pad0x48_YKYDP[0x48];                               // 0xce(0x48)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class StorySpawnedActorsComponentDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_000MB[0x4];                                 // 0x34(0x4)
 	TArray<Struct StorySpawnedActorsComponentList>               StoryResponses;                                    // 0x38(0x10)
 	TArray<class StorySpawnedActorsComponentDataAsset*>          AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class StorySpawnedActorsDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_CGJQX[0x4];                                 // 0x34(0x4)
 	TArray<Struct StorySpawnedActorsList>                        StoryResponses;                                    // 0x38(0x10)
 	TArray<class StorySpawnedActorsDataAsset*>                   AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class StorySpawnedActorsServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x128
+// Size 0x128 (Full Size[0x4f0] - InheritedSize[0x3c8]
 class StorySpawnedActorsService: public Actor
 {
 public:
+	char                                                         pad0x18_1K6AD[0x18];                               // 0x3c8(0x18)
 	TArray<class StorySpawnedActorsComponent*>                   EarlyRegisteredComponents;                         // 0x3e0(0x10)
 	Class StorySpawnedActorsDataAsset*                           Asset;                                             // 0x3f0(0x8)
+	char                                                         pad0x108_8XSXL[0x108];                             // 0x3f6(0x108)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class StorySpawnedActorsSettings: public DeveloperSettings
 {
 public:
@@ -139,24 +151,26 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DebugStoryServiceCheatInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x58
+// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
 class DebugStoryServiceCheat: public Actor
 {
 public:
+	char                                                         pad0x8_GZFBP[0x8];                                 // 0x3c8(0x8)
 	TArray<Struct StoryInfo>                                     AllStories;                                        // 0x3d0(0x10)
 	TArray<Str AllIncludeFilters>                                AllIncludeFilters;                                 // 0x3e0(0x10)
 	TArray<Str AllExcludeFilters>                                AllExcludeFilters;                                 // 0x3f0(0x10)
+	char                                                         pad0x40_95BNE[0x40];                               // 0x3fe(0x40)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class StorySettings: public DeveloperSettings
 {
 public:
@@ -164,7 +178,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class StoryNamesCollectionDataAsset: public DataAsset
 {
 public:
@@ -173,19 +187,21 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class StoryServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xd8
+// Size 0xd8 (Full Size[0x4a0] - InheritedSize[0x3c8]
 class StoryService: public Actor
 {
 public:
+	char                                                         pad0x28_6SM5J[0x28];                               // 0x3c8(0x28)
 	TArray<Struct StoryInfo>                                     Stories;                                           // 0x3f0(0x10)
 	TArray<Struct StoryInfo>                                     ActiveStories;                                     // 0x400(0x10)
+	char                                                         pad0xb0_IKVH7[0xb0];                               // 0x40e(0xb0)
 };
 
 

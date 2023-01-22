@@ -6,54 +6,63 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x70
+// Size 0x70 (Full Size[0x138] - InheritedSize[0xc8]
 class AthenaAIFormComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_AYAFT[0x8];                                 // 0xc8(0x8)
 	TArray<Struct AthenaAIFormComponentVfxCustomisation>         VfxCustomisations;                                 // 0xd0(0x10)
 	Class AthenaAIFormDataAsset*                                 FormData;                                          // 0xe0(0x8)
 	Class CharacterHitReactionDamagerTypeToAnimTypeLayer*        HitReactionsLayer;                                 // 0xe8(0x8)
+	char                                                         pad0x58_61WMX[0x58];                               // 0xee(0x58)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIAbilityType: public Object
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIStrategyId: public Object
 {
 public:
 };
 
 
-// Size 0x410
+// Size 0x410 (Full Size[0x438] - InheritedSize[0x28]
 class AISpawner: public DataAsset
 {
 public:
+	char                                                         pad0x10_BPHIA[0x10];                               // 0x28(0x10)
 	bool                                                         HasSpawnerLevelEncounters;                         // 0x38(0x1)
+	char                                                         pad0x7_JV2QG[0x7];                                 // 0x39(0x7)
 	Struct AISpawnTypeParamsCollection                           SpawnTypeParamsCollection;                         // 0x40(0x48)
 	Class AIEncounterSettings*                                   DefaultEncounterSettings;                          // 0x88(0x8)
 	Class AISpawnWaveSequenceRankProgression*                    DefaultSpawnWaveProgression;                       // 0x90(0x8)
 	TArray<Struct AISpawnContextIdEncounterSettingsPair>         SpawnContextSpecificEncounterSettings;             // 0x98(0x10)
 	bool                                                         ShouldSpawnFacingRegionCentre;                     // 0xa8(0x1)
 	byte                                                         DefaultSpawnType;                                  // 0xa9(0x1)
+	char                                                         pad0x6_I4S4D[0x6];                                 // 0xaa(0x6)
 	Class EnvQuery*                                              FindSpawnPosQuery;                                 // 0xb0(0x8)
 	byte                                                         FindSpawnPosQueryRunMode;                          // 0xb8(0x1)
+	char                                                         pad0x3_I6321[0x3];                                 // 0xb9(0x3)
 	struct FName                                                 SpawnLocationType;                                 // 0xbc(0x8)
 	int                                                          MaxNumOfSpawnedPawns;                              // 0xc4(0x4)
 	int                                                          PriorityForSpawnedPawns;                           // 0xc8(0x4)
+	char                                                         pad0x4_JTSC4[0x4];                                 // 0xcc(0x4)
 	TArray<Struct ConditionalAISpawnOverride>                    SpawnOverrides;                                    // 0xd0(0x10)
 	TArray<Struct AdditionalSpawnerBehaviour>                    AdditionalBehaviours;                              // 0xe0(0x10)
 	bool                                                         EnforceHomePosition;                               // 0xf0(0x1)
+	char                                                         pad0x27f_GG0IG[0x27f];                             // 0xf1(0x27f)
 	Class AthenaAISettings*                                      AthenaAISettings;                                  // 0x370(0x8)
+	char                                                         pad0xd0_WYS51[0xd0];                               // 0x376(0xd0)
 };
 
 
-// Size 0x140
+// Size 0x140 (Full Size[0x578] - InheritedSize[0x438]
 class AIPerCrewSpawner: public AISpawner
 {
 public:
@@ -65,11 +74,13 @@ public:
 	bool                                                         PerceiveTriggerActorOnSpawn;                       // 0x447(0x1)
 	bool                                                         EnforceRespawnTimeAfterCrewLeaves;                 // 0x448(0x1)
 	bool                                                         IgnoreSpawningGracePeriodForNewCrew;               // 0x449(0x1)
+	char                                                         pad0x6_SB2HW[0x6];                                 // 0x44a(0x6)
 	Class AIPerCrewSpawnerSettingsStoryOverrideAsset*            StoryOverrideRespawnSettingsAsset;                 // 0x450(0x8)
+	char                                                         pad0x130_RZ5EW[0x130];                             // 0x456(0x130)
 };
 
 
-// Size 0x68
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
 class AthenaAIFormDataAsset: public DataAsset
 {
 public:
@@ -81,45 +92,49 @@ public:
 	class                                                        AICharacterAudioComponent;                         // 0x60(0x8)
 	class                                                        AnimNotifyEmitterWithObservers;                    // 0x68(0x8)
 	bool                                                         HighPriorityFootstepAudio;                         // 0x70(0x1)
+	char                                                         pad0x3_KOOMN[0x3];                                 // 0x71(0x3)
 	float                                                        MovementSpeedMultipler;                            // 0x74(0x4)
 	Struct PlayerStat                                            StatToFireOnDeath;                                 // 0x78(0x4)
 	struct FName                                                 FeatureName;                                       // 0x7c(0x8)
+	char                                                         pad0x4_OZDB4[0x4];                                 // 0x84(0x4)
 	class                                                        FormComponentClass;                                // 0x88(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPlayerTracker: public Object
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class AISpawnerPlayerTracker: public AIPlayerTracker
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIInteractableType: public Object
 {
 public:
 };
 
 
-// Size 0x138
+// Size 0x138 (Full Size[0x570] - InheritedSize[0x438]
 class AIWaveSpawner: public AISpawner
 {
 public:
+	char                                                         pad0x8_0XOFR[0x8];                                 // 0x438(0x8)
 	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x440(0x100)
 	float                                                        MinRespawnTime;                                    // 0x540(0x4)
 	float                                                        MaxRespawnTime;                                    // 0x544(0x4)
+	char                                                         pad0x30_DSJLO[0x30];                               // 0x546(0x30)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AthenaAIAbilityStageParams: public Object
 {
 public:
@@ -127,11 +142,12 @@ public:
 	float                                                        DamageRequiredForNextIntervalMultiplier;           // 0x2c(0x4)
 	bool                                                         OverrideParams;                                    // 0x30(0x1)
 	bool                                                         AutoActivateOnStageTransition;                     // 0x31(0x1)
+	char                                                         pad0x6_H0VL0[0x6];                                 // 0x32(0x6)
 	class                                                        TypeClass;                                         // 0x38(0x8)
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
 class AthenaAIAbility: public Object
 {
 public:
@@ -139,57 +155,65 @@ public:
 	Class Pawn*                                                  Pawn;                                              // 0x30(0x8)
 	Class AthenaAIController*                                    Controller;                                        // 0x38(0x8)
 	Class AthenaAIAbilityStageParams*                            CurrentAbilityStageParams;                         // 0x50(0x8)
+	char                                                         pad0x30_FV6KR[0x30];                               // 0x56(0x30)
 };
 
 
-// Size 0xa0
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
 class AthenaAIAbilityParams: public Object
 {
 public:
 	TArray<Struct AthenaAIControllerParamValue>                  NamedControllerParams;                             // 0x28(0x10)
 	byte                                                         DamageIntervalCountingMode;                        // 0x38(0x1)
 	bool                                                         UseTimeBetweenAbility;                             // 0x39(0x1)
+	char                                                         pad0x6_LK1GI[0x6];                                 // 0x3a(0x6)
 	Struct AthenaAIAbilityPlayerBasedRanges                      ActivationTimerCooldown;                           // 0x40(0x10)
 	Struct AthenaAIAbilityPlayerBasedRanges                      TimeBetweenAbility;                                // 0x50(0x10)
 	bool                                                         UseDamageBetweenAbility;                           // 0x60(0x1)
+	char                                                         pad0x7_C36D1[0x7];                                 // 0x61(0x7)
 	Struct AthenaAIAbilityPlayerBasedRanges                      DamageBetweenAbility;                              // 0x68(0x10)
 	float                                                        AbilityRadius;                                     // 0x78(0x4)
 	bool                                                         UseMinMaxAttackRange;                              // 0x7c(0x1)
+	char                                                         pad0x3_5FA4G[0x3];                                 // 0x7d(0x3)
 	Struct MinMaxAbilityRange                                    MinMaxAttackRange;                                 // 0x80(0x8)
 	TArray<Struct AIAbilityFollowUp>                             FollowUpAbilities;                                 // 0x88(0x10)
 	float                                                        Weight;                                            // 0x98(0x4)
+	char                                                         pad0x4_PS6UB[0x4];                                 // 0x9c(0x4)
 	Struct AIAbilityContinuousCooldownParameterData              ContinuousCooldownAbilityParameters;               // 0xa0(0x20)
 	class                                                        AIAbilityTypeClass;                                // 0xc0(0x8)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
 class AIInteractableComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_RZZOM[0x8];                                 // 0xc8(0x8)
 	class                                                        Type;                                              // 0xd0(0x8)
 	Struct Vector                                                DetachOffsetFromOwner;                             // 0xd8(0xc)
 	bool                                                         CanHaveTarget;                                     // 0xe4(0x1)
+	char                                                         pad0x1d_PMOKC[0x1d];                               // 0xe3(0x1d)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x68] - InheritedSize[0x68]
 class BTDecorator_BaseConditional: public BTDecorator
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0xa0] - InheritedSize[0x68]
 class BTDecorator_TargetOnShip: public BTDecorator_BaseConditional
 {
 public:
 	bool                                                         Invert;                                            // 0x68(0x1)
 	byte                                                         ShipOwnership;                                     // 0x69(0x1)
+	char                                                         pad0x38_TSBMU[0x38];                               // 0x68(0x38)
 };
 
 
-// Size 0x290
+// Size 0x290 (Full Size[0x300] - InheritedSize[0x70]
 class BTService_QueryShipsForTarget: public BTService
 {
 public:
@@ -205,10 +229,11 @@ public:
 	Struct AIDataProviderFloatValue                              DiceRollForDamageDormancy;                         // 0x220(0x30)
 	Struct AIDataProviderFloatValue                              PlayerDistanceThresholdToTurnAggressive;           // 0x250(0x30)
 	bool                                                         IgnoreAI;                                          // 0x280(0x1)
+	char                                                         pad0x81_ZO9HJ[0x81];                               // 0x27f(0x81)
 };
 
 
-// Size 0x58
+// Size 0x58 (Full Size[0xe0] - InheritedSize[0x88]
 class BTTask_SwimAttackTargetActor: public BTTask_BlackboardBase
 {
 public:
@@ -218,82 +243,88 @@ public:
 	struct FName                                                 LoSTraceProfileName;                               // 0xa0(0x8)
 	Struct AIDataProviderFloatValue                              LosTraceRadius;                                    // 0xa8(0x30)
 	float                                                        MaxDistanceToTargetToApplyDamage;                  // 0xd8(0x4)
+	char                                                         pad0xc_0PP7M[0xc];                                 // 0xda(0xc)
 };
 
 
-// Size 0x1b0
+// Size 0x1b0 (Full Size[0x238] - InheritedSize[0x88]
 class BTTask_SwimAttackTargetShip: public BTTask_BlackboardBase
 {
 public:
 	float                                                        BiteRadiusOffsetToBeginAttackHeadOn;               // 0x88(0x4)
 	float                                                        BiteRadiusOffsetToBeginAttackPerpendicular;        // 0x8c(0x4)
 	float                                                        MaxTimeToStartAttack;                              // 0x90(0x4)
+	char                                                         pad0x4_5IQFD[0x4];                                 // 0x94(0x4)
 	Class AnimSequence*                                          AttackAnim;                                        // 0x98(0x8)
 	float                                                        AttackAnimLength;                                  // 0xa0(0x4)
 	float                                                        TimeToPerformAttack;                               // 0xa4(0x4)
 	Class Object*                                                AttackVFX;                                         // 0xa8(0x8)
 	float                                                        AttackVFXZOffset;                                  // 0xb0(0x4)
 	struct FName                                                 LoSTraceProfileName;                               // 0xb4(0x8)
+	char                                                         pad0x4_7HZTS[0x4];                                 // 0xbc(0x4)
 	Struct AIDataProviderFloatValue                              LosTraceRadius;                                    // 0xc0(0x30)
 	TArray<Struct SwimAttackTargetShipImpulseData>               ImpulseData;                                       // 0xf0(0x10)
 	Struct AIDataProviderIntValue                                MinDamageHolesToApply;                             // 0x100(0x30)
 	Struct AIDataProviderIntValue                                MaxDamageHolesToApply;                             // 0x130(0x30)
 	int                                                          LevelsOfHullDamage;                                // 0x160(0x4)
+	char                                                         pad0x4_FBAB0[0x4];                                 // 0x164(0x4)
 	class                                                        DamageCauserType;                                  // 0x168(0x8)
 	Struct AIDataProviderFloatValue                              PlayerBiteRadius;                                  // 0x170(0x30)
 	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x1a0(0x50)
 	Struct AIDataProviderFloatValue                              PlayerBiteDamage;                                  // 0x1f0(0x30)
+	char                                                         pad0x10_6ZGW8[0x10];                               // 0x220(0x10)
 	Class Ship*                                                  TargetShip;                                        // 0x230(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x3c8] - InheritedSize[0x3c8]
 class BurrowEruptBase: public Actor
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIAnimationStateId: public Object
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class SpawnerBehaviourStrategy: public Object
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIDialogueStateProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class SimpleDialogueStateProvider: public Object
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class BountySpawnerAudioZonesInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x1a0
+// Size 0x1a0 (Full Size[0x5d8] - InheritedSize[0x438]
 class AIBountySpawner: public AISpawner
 {
 public:
 	float                                                        MaximumDistanceToPerceiveOnSpawnsAfterFirstGroup;  // 0x438(0x4)
+	char                                                         pad0x4_FI6VP[0x4];                                 // 0x43c(0x4)
 	TArray<Struct AIBountySpawnerWaveGroup>                      WaveGroups;                                        // 0x440(0x10)
 	Struct StringAssetReference                                  TeamColor;                                         // 0x450(0x10)
 	Struct WeightedProbabilityRange                              WavesPerRelocate;                                  // 0x460(0x20)
@@ -302,24 +333,27 @@ public:
 	float                                                        WaveSuicideMinDist;                                // 0x4b0(0x4)
 	bool                                                         ImmediatelyPerceiveTargets;                        // 0x4b4(0x1)
 	bool                                                         DynamicallyCreateWaveDelays;                       // 0x4b5(0x1)
+	char                                                         pad0x2_VN33L[0x2];                                 // 0x4b6(0x2)
 	float                                                        DynamicMinTimeBetweenSpawns;                       // 0x4b8(0x4)
 	float                                                        DynamicMaxTimeBetweenSpawns;                       // 0x4bc(0x4)
 	Class AICombatDialogue*                                      ActiveCombatDialogue;                              // 0x4c0(0x8)
+	char                                                         pad0x28_TP7P9[0x28];                               // 0x4c8(0x28)
 	TArray<class Actor*>                                         CrewMembers;                                       // 0x4f0(0x10)
 	TArray<class Actor*>                                         NonCrewMembersInRegion;                            // 0x500(0x10)
 	TArray<class Actor*>                                         AllParticipatingPlayers;                           // 0x510(0x10)
 	Class OverlapTriggerComponent*                               AudioZoneTriggerComponent;                         // 0x520(0x8)
+	char                                                         pad0xc0_1BL0P[0xc0];                               // 0x526(0xc0)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PostBountyAIPawnSpawnedAction: public DataAsset
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class ApplyNameplateToBountyWaveSpawnedAction: public PostBountyAIPawnSpawnedAction
 {
 public:
@@ -327,38 +361,45 @@ public:
 };
 
 
-// Size 0x148
+// Size 0x148 (Full Size[0x580] - InheritedSize[0x438]
 class AIFaunaSpawner: public AISpawner
 {
 public:
 	Struct AIFaunaSpawnerWave                                    FaunaWave;                                         // 0x438(0x110)
+	char                                                         pad0x10_DJY87[0x10];                               // 0x548(0x10)
 	Class Actor*                                                 FaunaLeader;                                       // 0x558(0x8)
+	char                                                         pad0x10_XLMDQ[0x10];                               // 0x560(0x10)
 	TArray<class Actor*>                                         PlayersInSpawnArea;                                // 0x570(0x10)
 };
 
 
-// Size 0x158
+// Size 0x158 (Full Size[0x610] - InheritedSize[0x4b8]
 class AthenaAIControllerBase: public AIController
 {
 public:
 };
 
 
-// Size 0x2f0
+// Size 0x2f0 (Full Size[0x900] - InheritedSize[0x610]
 class AthenaAIController: public AthenaAIControllerBase
 {
 public:
+	char                                                         pad0x24_XJKBZ[0x24];                               // 0x610(0x24)
 	float                                                        CurrentTargetPerceivedNotVisibleAge;               // 0x634(0x4)
+	char                                                         pad0x40_21KUD[0x40];                               // 0x638(0x40)
 	Class AISenseConfig_Sight*                                   SightConfig;                                       // 0x678(0x8)
 	Class AISenseConfig_Hearing*                                 HearingConfig;                                     // 0x680(0x8)
 	Class AISenseConfig_Damage*                                  DamageSenseConfig;                                 // 0x688(0x8)
+	char                                                         pad0x48_7EZTQ[0x48];                               // 0x690(0x48)
 	TArray<Struct AthenaAIControllerSenseSettingOverride>        AIStrategySenseSettingOverrides;                   // 0x6d8(0x10)
+	char                                                         pad0x1e8_F9A4N[0x1e8];                             // 0x6e8(0x1e8)
 	Class Actor*                                                 CurrentNotSeenPerceivedActor;                      // 0x8d0(0x8)
 	Class Actor*                                                 PendingSpawnTriggerActor;                          // 0x8d8(0x8)
+	char                                                         pad0x30_M47Y6[0x30];                               // 0x8de(0x30)
 };
 
 
-// Size 0x198
+// Size 0x198 (Full Size[0xa98] - InheritedSize[0x900]
 class AthenaFaunaAIController: public AthenaAIController
 {
 public:
@@ -366,38 +407,43 @@ public:
 	float                                                        DefaultControlRotationInterpSpeed;                 // 0x904(0x4)
 	TArray<Struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x908(0x10)
 	float                                                        MinAgentHalfHeightPctOverride;                     // 0x918(0x4)
+	char                                                         pad0x4_8LEMO[0x4];                                 // 0x91c(0x4)
 	Class FaunaAIContollerParamsDataAsset*                       FaunaDataAsset;                                    // 0x920(0x8)
 	Class Actor*                                                 CarrierActor;                                      // 0x928(0x8)
+	char                                                         pad0xa8_RSP0A[0xa8];                               // 0x930(0xa8)
 	Class Actor*                                                 HighestDangerActor;                                // 0x9d8(0x8)
+	char                                                         pad0x88_9GK1D[0x88];                               // 0x9e0(0x88)
 	Class FaunaAIPlayerTracker*                                  PlayerTracker;                                     // 0xa68(0x8)
+	char                                                         pad0x38_KLKLW[0x38];                               // 0xa6e(0x38)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class CatchFaunaConditionalStatTrigger: public ConditionalStatsTriggerType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EnvQueryContext_LeaderFromBlackboard: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EnvQueryContext_Threat: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x230
+// Size 0x230 (Full Size[0x810] - InheritedSize[0x5e0]
 class AICreatureCharacter: public Character
 {
 public:
+	char                                                         pad0x58_1MQ4C[0x58];                               // 0x5e0(0x58)
 	float                                                        DelayBeforeDestroying;                             // 0x638(0x4)
 	float                                                        TimeBeforeFadingOut;                               // 0x63c(0x4)
 	float                                                        PickupTime;                                        // 0x640(0x4)
@@ -411,15 +457,18 @@ public:
 	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitterComponent;                   // 0x680(0x8)
 	Class RewindComponent*                                       RewindComponent;                                   // 0x688(0x8)
 	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x690(0x8)
+	char                                                         pad0x100_XP54H[0x100];                             // 0x698(0x100)
 	Class AICreatureCharacterMovementComponent*                  AICreatureCharacterMovementComponent;              // 0x798(0x8)
+	char                                                         pad0x68_WI6NE[0x68];                               // 0x7a0(0x68)
 	class                                                        CurrentAIStrategy;                                 // 0x808(0x8)
 };
 
 
-// Size 0x3b0
+// Size 0x3b0 (Full Size[0xbc0] - InheritedSize[0x810]
 class Fauna: public AICreatureCharacter
 {
 public:
+	char                                                         pad0x8_YTDK7[0x8];                                 // 0x810(0x8)
 	Struct FText                                                 DisplayName;                                       // 0x818(0x38)
 	class                                                        FaunaSpecies;                                      // 0x850(0x8)
 	class                                                        FaunaBreed;                                        // 0x858(0x8)
@@ -463,54 +512,64 @@ public:
 	float                                                        AgitationResponseRangeParticleSystemAngle;         // 0x980(0x4)
 	byte                                                         AgitationCollisionChannel;                         // 0x984(0x1)
 	bool                                                         StopMovementWhenAgitated;                          // 0x985(0x1)
+	char                                                         pad0x2_ZRZEB[0x2];                                 // 0x986(0x2)
 	float                                                        ApproximateSpitTravelTime;                         // 0x988(0x4)
 	bool                                                         StopMovementWhenCalm;                              // 0x98c(0x1)
+	char                                                         pad0x3_8ABHZ[0x3];                                 // 0x98d(0x3)
 	float                                                        TurningSpringAcceleration;                         // 0x990(0x4)
 	float                                                        TurningSpringMaxVelocity;                          // 0x994(0x4)
 	float                                                        TurnResetDelay;                                    // 0x998(0x4)
 	Struct Vector                                                PivotPointOffset;                                  // 0x99c(0xc)
 	bool                                                         ShouldTurn;                                        // 0x9a8(0x1)
+	char                                                         pad0x7_MWZOC[0x7];                                 // 0x9a9(0x7)
 	Class FeedingComponent*                                      FeedingComponent;                                  // 0x9b0(0x8)
 	Class FaunaMovementComponent*                                FaunaMovementComponent;                            // 0x9b8(0x8)
 	float                                                        TimeUntilDrowned;                                  // 0x9c0(0x4)
 	int                                                          RandomAnimationSeed;                               // 0x9c4(0x4)
+	char                                                         pad0xc_EK63L[0xc];                                 // 0x9c8(0xc)
 	bool                                                         Drowned;                                           // 0x9d4(0x1)
+	char                                                         pad0x2_XD9EH[0x2];                                 // 0x9d5(0x2)
 	byte                                                         CratedState;                                       // 0x9d7(0x1)
 	byte                                                         InWaterState;                                      // 0x9d8(0x1)
+	char                                                         pad0x7_TOOHW[0x7];                                 // 0x9d9(0x7)
 	Class Actor*                                                 Crate;                                             // 0x9e0(0x8)
 	Class ParticleSystemComponent*                               BreathBubblesParticleSystemComponent;              // 0x9e8(0x8)
 	float                                                        DrowningDeathTime;                                 // 0x9f0(0x4)
 	bool                                                         IsPlayingStarvingAnim;                             // 0x9f4(0x1)
 	bool                                                         IsAgitated;                                        // 0x9f5(0x1)
 	bool                                                         IsCalm;                                            // 0x9f6(0x1)
+	char                                                         pad0x1_ZIRQG[0x1];                                 // 0x9f7(0x1)
 	float                                                        TargetTurnAngle;                                   // 0x9f8(0x4)
+	char                                                         pad0x12c_REWLO[0x12c];                             // 0x9fc(0x12c)
 	Class VenomComponent*                                        VenomComponent;                                    // 0xb28(0x8)
 	Class AthenaAICharacterPathFollowingComponent*               PathFollowingComponent;                            // 0xb30(0x8)
 	Class Actor*                                                 CurrentShip;                                       // 0xb38(0x8)
+	char                                                         pad0x90_ZWVTW[0x90];                               // 0xb3e(0x90)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class FaunaAIPlayerTracker: public AIPlayerTracker
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class FaunaAnimationInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xc0
+// Size 0xc0 (Full Size[0x650] - InheritedSize[0x590]
 class AICreatureCharacterMovementComponent: public CharacterMovementComponent
 {
 public:
 	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0x588(0x10)
 	float                                                        BlendSpeed;                                        // 0x598(0x4)
 	bool                                                         bCreateDisturbance;                                // 0x59c(0x1)
+	char                                                         pad0x3_E1XTQ[0x3];                                 // 0x59d(0x3)
 	float                                                        DisturbanceSize;                                   // 0x5a0(0x4)
 	float                                                        DisturbanceVelocityScale;                          // 0x5a4(0x4)
 	float                                                        OrientationBlendSpeed;                             // 0x5a8(0x4)
@@ -518,92 +577,102 @@ public:
 	float                                                        UpdateOrientationFrequency;                        // 0x5b0(0x4)
 	float                                                        MinStairAngle;                                     // 0x5b4(0x4)
 	float                                                        MinStairVelocityDampen;                            // 0x5b8(0x4)
+	char                                                         pad0x4_NK3L1[0x4];                                 // 0x5bc(0x4)
 	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x5c0(0x10)
+	char                                                         pad0xa0_119VM[0xa0];                               // 0x5ce(0xa0)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x650] - InheritedSize[0x650]
 class FaunaMovementComponent: public AICreatureCharacterMovementComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class MerchantCrateMetaGenerator: public ItemSnapshotMetaGenerator
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
 class AIDebugSpawnActor: public Actor
 {
 public:
 	Struct AthenaAIDebugCostDisplay                              DebugCostDisplay;                                  // 0x3c8(0x1)
+	char                                                         pad0x7_V0KI3[0x7];                                 // 0x3c9(0x7)
 	TArray<Struct AIDebugSpawnConfiguration>                     SpawnConfigList;                                   // 0x3d0(0x10)
 	int                                                          Seed;                                              // 0x3e0(0x4)
+	char                                                         pad0x4_XW8S8[0x4];                                 // 0x3e4(0x4)
 	TArray<class Pawn*>                                          SpawnedAIList;                                     // 0x3e8(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIDebugFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x58
+// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
 class DebugAISpawnerCreator: public Actor
 {
 public:
 	Class AISpawner*                                             SpawnerTemplate;                                   // 0x3c8(0x8)
 	float                                                        TriggerRadius;                                     // 0x3d0(0x4)
+	char                                                         pad0x4_CEP0Q[0x4];                                 // 0x3d4(0x4)
 	Class AISpawner*                                             Spawner;                                           // 0x3d8(0x8)
 	Class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x3e0(0x8)
 	Class SimpleAIRegion*                                        Region;                                            // 0x3e8(0x8)
+	char                                                         pad0x40_ARFWV[0x40];                               // 0x3ee(0x40)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIDioramaLocationSourceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x228
+// Size 0x228 (Full Size[0x5f0] - InheritedSize[0x3c8]
 class AIDiorama: public Actor
 {
 public:
+	char                                                         pad0x8_LL0U1[0x8];                                 // 0x3c8(0x8)
 	Class SceneComponent*                                        SceneComponent;                                    // 0x3d0(0x8)
 	Class SceneDialogueCoordinator*                              SpawnedDialogueCoordinator;                        // 0x3d8(0x8)
 	Class SceneDialogueData*                                     DialogueData;                                      // 0x3e0(0x8)
 	TArray<Struct AIDioramaPawn>                                 LinkedActors;                                      // 0x3e8(0x10)
+	char                                                         pad0x218_TQEXX[0x218];                             // 0x3f6(0x218)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIDioramaCategory: public Object
 {
 public:
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
 class AIDioramaController: public Object
 {
 public:
+	char                                                         pad0x8_WCH3D[0x8];                                 // 0x28(0x8)
 	Class AIDioramaDesc*                                         AIDioramaDesc;                                     // 0x30(0x8)
 	Class SceneDialogueData*                                     DialogueData;                                      // 0x38(0x8)
 	TArray<Struct AIDioramaPawn>                                 SpawnedDioramaPawns;                               // 0x40(0x10)
 	Class AIDiorama*                                             AIDiorama;                                         // 0x50(0x8)
 	Class AISpawner*                                             Spawner;                                           // 0x58(0x8)
+	char                                                         pad0x58_IVVLF[0x58];                               // 0x5e(0x58)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIDioramaDesc: public DataAsset
 {
 public:
@@ -612,40 +681,44 @@ public:
 };
 
 
-// Size 0x90
+// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
 class AIDioramaLocationSourceComponent: public SceneComponent
 {
 public:
+	char                                                         pad0x10_NHBDT[0x10];                               // 0x2e0(0x10)
 	TArray<Struct AIDioramaLocationSourceComponentData>          DioramaRelativeLocations;                          // 0x2f0(0x10)
 	float                                                        DialogueTriggerRadius;                             // 0x300(0x4)
 	float                                                        DialogueSubtitleBuffer;                            // 0x304(0x4)
 	float                                                        AISenseRadiusForDebugDisplay;                      // 0x308(0x4)
+	char                                                         pad0x4_9E7XT[0x4];                                 // 0x30c(0x4)
 	TArray<Class Categories>                                     Categories;                                        // 0x310(0x10)
 	struct FName                                                 FeatureToggle;                                     // 0x320(0x8)
 	Struct Color                                                 DebugTriggerRadiusColor;                           // 0x328(0x4)
 	Struct Color                                                 DebugSubtitleRadiusColor;                          // 0x32c(0x4)
 	Struct Color                                                 AISenseRadiusColor;                                // 0x330(0x4)
+	char                                                         pad0x4_B5UKM[0x4];                                 // 0x334(0x4)
 	Class SphereComponent*                                       DialogueTriggerRadiusSphere;                       // 0x338(0x8)
 	Class SphereComponent*                                       DialogueSubtitleRadiusSphere;                      // 0x340(0x8)
 	Class SphereComponent*                                       AISenseRadiusSphere;                               // 0x348(0x8)
+	char                                                         pad0x30_MK3UJ[0x30];                               // 0x34e(0x30)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIDioramaServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x68
+// Size 0x68 (Full Size[0x430] - InheritedSize[0x3c8]
 class AIDioramaService: public Actor
 {
 public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x438] - InheritedSize[0x420]
 class DebugDioramaCreator: public DebugAISpawnerCreator
 {
 public:
@@ -655,47 +728,56 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class InDioramaAIStrategyId: public AIStrategyId
 {
 public:
 };
 
 
-// Size 0x170
+// Size 0x170 (Full Size[0x480] - InheritedSize[0x310]
 class AINameplateComponent: public NameplateComponent
 {
 public:
+	char                                                         pad0x8_Q1JW8[0x8];                                 // 0x310(0x8)
 	float                                                        VisibleFromWorldDistance;                          // 0x318(0x4)
 	float                                                        VisibleUntilWorldDistance;                         // 0x31c(0x4)
 	float                                                        VisibleAfterDeathDuration;                         // 0x320(0x4)
+	char                                                         pad0x4_K1UJ0[0x4];                                 // 0x324(0x4)
 	Struct FText                                                 Title;                                             // 0x328(0x38)
 	Struct FText                                                 DisplayName;                                       // 0x360(0x38)
 	Struct FString                                               DisplayNameAsString;                               // 0x398(0x10)
 	Struct FString                                               DebugDisplayText;                                  // 0x3a8(0x10)
 	bool                                                         VisibilityDisabled;                                // 0x3b8(0x1)
+	char                                                         pad0xc9_I9W05[0xc9];                               // 0x3b7(0xc9)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x4a0] - InheritedSize[0x480]
 class PetNameplateComponent: public AINameplateComponent
 {
 public:
+	char                                                         pad0x8_C7YLZ[0x8];                                 // 0x480(0x8)
 	Struct FString                                               DefaultPetName;                                    // 0x488(0x10)
+	char                                                         pad0x28_BCKZX[0x28];                               // 0x496(0x28)
 };
 
 
-// Size 0x470
+// Size 0x4b0 (Full Size[0xcc0] - InheritedSize[0x810]
 class Pet: public AICreatureCharacter
 {
 public:
+	char                                                         pad0xb0_51XFZ[0xb0];                               // 0x810(0xb0)
 	Class PetWieldableReactMappingsDataAsset*                    WieldableReactMappingsAsset;                       // 0x8c0(0x8)
 	float                                                        MaxVelocityForLocomotionAnimation;                 // 0x8c8(0x4)
 	bool                                                         CanFly;                                            // 0x8cc(0x1)
+	char                                                         pad0x3_RLN3M[0x3];                                 // 0x8cd(0x3)
 	TArray<Struct PetFlyingStrategyProperties>                   FlyingStrategyProperties;                          // 0x8d0(0x10)
 	float                                                        FlyingLandTime;                                    // 0x8e0(0x4)
+	char                                                         pad0x4_BU94A[0x4];                                 // 0x8e4(0x4)
 	Class CurveFloat*                                            FlyingLandCurve;                                   // 0x8e8(0x8)
 	float                                                        FlyingTakeOffTime;                                 // 0x8f0(0x4)
+	char                                                         pad0x4_NMUZA[0x4];                                 // 0x8f4(0x4)
 	Class CurveFloat*                                            FlyingTakeOffCurve;                                // 0x8f8(0x8)
 	Struct FloatRange                                            MidFlightAdjustmentTimerRange;                     // 0x900(0x10)
 	Class CurveFloat*                                            MidFlightAdjustmentCurve;                          // 0x910(0x8)
@@ -708,9 +790,11 @@ public:
 	float                                                        MinimumDurationUntilPetCanDespawnConcealed;        // 0x940(0x4)
 	float                                                        DefaultNamePlateHeight;                            // 0x944(0x4)
 	float                                                        AlternateNamePlateHeight;                          // 0x948(0x4)
+	char                                                         pad0x4_OBWGQ[0x4];                                 // 0x94c(0x4)
 	TArray<Byte StatesToUseAlternateNamePlatePos>                StatesToUseAlternateNamePlatePos;                  // 0x950(0x10)
 	Struct FloatRange                                            PetTimeSpentSad;                                   // 0x960(0x10)
 	byte                                                         DebugStateDescriptor;                              // 0x970(0x1)
+	char                                                         pad0x7_XUS8S[0x7];                                 // 0x971(0x7)
 	Class PetNameplateComponent*                                 AINameplateComponent;                              // 0x978(0x8)
 	Class FeedingComponent*                                      FeedingComponent;                                  // 0x980(0x8)
 	Class StarvingComponent*                                     StarvingComponent;                                 // 0x988(0x8)
@@ -718,7 +802,9 @@ public:
 	Class CannonSquashComponent*                                 CannonSquashComponent;                             // 0x998(0x8)
 	Struct PetMovementRequest                                    ReplicatedMovementRequest;                         // 0x9a0(0xc)
 	float                                                        TargetMeshRoll;                                    // 0x9ac(0x4)
+	char                                                         pad0x10_CLCN2[0x10];                               // 0x9b0(0x10)
 	float                                                        DefaultShipTurnRateModifier;                       // 0x9c0(0x4)
+	char                                                         pad0x4_MQ30S[0x4];                                 // 0x9c4(0x4)
 	TArray<Struct PetTurnRateModifier>                           TurnRateModifierList;                              // 0x9c8(0x10)
 	TArray<Byte LocomotingMovementStates>                        LocomotingMovementStates;                          // 0x9d8(0x10)
 	TArray<Byte RequestIdleOrMovementValidMovementStates>        RequestIdleOrMovementValidMovementStates;          // 0x9e8(0x10)
@@ -730,8 +816,10 @@ public:
 	bool                                                         PerchedInHangout;                                  // 0xa15(0x1)
 	bool                                                         ResetRollAndZOffset;                               // 0xa16(0x1)
 	bool                                                         ShouldIgnoreTooltipDisplayOffset;                  // 0xa17(0x1)
+	char                                                         pad0x8_R77BM[0x8];                                 // 0xa18(0x8)
 	Struct PetTurnToFaceData                                     PetTurnToFaceData;                                 // 0xa20(0x20)
 	float                                                        MaximumSubmergedWaterDepthBeforeDespawn;           // 0xa40(0x4)
+	char                                                         pad0x24_SL51I[0x24];                               // 0xa44(0x24)
 	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0xa68(0x8)
 	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0xa70(0x8)
 	Class LightWeightStatusEffectManagerComponent*               LightWeightStatusEffectManagerComponent;           // 0xa78(0x8)
@@ -742,45 +830,51 @@ public:
 	Class Actor*                                                 SpawnedForShip;                                    // 0xaa0(0x8)
 	Class Actor*                                                 PetOwner;                                          // 0xaa8(0x8)
 	Class ItemInfo*                                              PetInfo;                                           // 0xab0(0x8)
-	Struct Docker                                                Docker;                                            // 0xac0(0x50)
-	Struct StartPickupObjectActionRuleParams                     StartPickupObjectActionRuleParams;                 // 0xb10(0x10)
-	Class ParticleSystemComponent*                               CurrentlyPlayingParticleSystem;                    // 0xb30(0x8)
-	class                                                        LandingStrategy;                                   // 0xb38(0x8)
-	class                                                        PursuitStrategy;                                   // 0xb40(0x8)
-	float                                                        DefaultRollLerpTime;                               // 0xb48(0x4)
-	float                                                        LandingRollLerpTime;                               // 0xb4c(0x4)
-	bool                                                         IsBeingDismissed;                                  // 0xb50(0x1)
-	bool                                                         IsInDisabledPetPerchHangout;                       // 0xc3c(0x1)
-	bool                                                         PetIsSad;                                          // 0xc3d(0x1)
+	char                                                         pad0x8_91B0O[0x8];                                 // 0xab8(0x8)
+	Struct Docker                                                Docker;                                            // 0xac0(0x90)
+	Struct StartPickupObjectActionRuleParams                     StartPickupObjectActionRuleParams;                 // 0xb50(0x10)
+	char                                                         pad0x10_BD5GV[0x10];                               // 0xb60(0x10)
+	Class ParticleSystemComponent*                               CurrentlyPlayingParticleSystem;                    // 0xb70(0x8)
+	class                                                        LandingStrategy;                                   // 0xb78(0x8)
+	class                                                        PursuitStrategy;                                   // 0xb80(0x8)
+	float                                                        DefaultRollLerpTime;                               // 0xb88(0x4)
+	float                                                        LandingRollLerpTime;                               // 0xb8c(0x4)
+	bool                                                         IsBeingDismissed;                                  // 0xb90(0x1)
+	char                                                         pad0xeb_N5NC2[0xeb];                               // 0xb91(0xeb)
+	bool                                                         IsInDisabledPetPerchHangout;                       // 0xc7c(0x1)
+	bool                                                         PetIsSad;                                          // 0xc7d(0x1)
+	char                                                         pad0x44_VWAMO[0x44];                               // 0xc7c(0x44)
 };
 
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0x130] - InheritedSize[0x88]
 class BTTask_SetRoamingPetAnimationState: public BTTask_BlackboardBase
 {
 public:
 	Struct WeightedPetAnimationSelector                          WeightedAnimationSelection;                        // 0x88(0xa0)
+	char                                                         pad0x148_BNHAJ[0x148];                             // 0x126(0x148)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class EnvQueryContext_PositionFromBlackboard: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x230] - InheritedSize[0x1c0]
 class PetDitherComponent: public DitherComponent
 {
 public:
 };
 
 
-// Size 0xb8
+// Size 0xb8 (Full Size[0x180] - InheritedSize[0xc8]
 class PetPartCustomisationComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x10_BALO1[0x10];                               // 0xc8(0x10)
 	class                                                        AnimationDataStoreId;                              // 0xd8(0x8)
 	Class PetPartSizeMappingsDataAsset*                          SizeMappingsAsset;                                 // 0xe0(0x8)
 	TArray<Struct PetLoadedMaterial>                             CurrentlyLoadedMaterials;                          // 0xe8(0x10)
@@ -788,11 +882,13 @@ public:
 	Struct StringAssetReference                                  HighResMeshRef;                                    // 0x108(0x10)
 	Class SkeletalMesh*                                          CurrentlyLoadedMesh;                               // 0x118(0x8)
 	byte                                                         CurrentPetSize;                                    // 0x120(0x1)
+	char                                                         pad0x7_TC0NF[0x7];                                 // 0x121(0x7)
 	Class PetCustomisationOverrideDataAsset*                     CurrentlyLoadedOverrideAsset;                      // 0x128(0x8)
+	char                                                         pad0x60_O4CYV[0x60];                               // 0x12e(0x60)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class PetPartSizeMappingsDataAsset: public DataAsset
 {
 public:
@@ -801,14 +897,14 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class PetSicknessComponent: public ActorComponent
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class AIPartsDesc: public DataAsset
 {
 public:
@@ -816,7 +912,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
 class PetsPartsDesc: public AIPartsDesc
 {
 public:
@@ -824,18 +920,19 @@ public:
 	Struct StringAssetReference                                  HighResMesh;                                       // 0x40(0x10)
 	TArray<Struct PetMaterialEntry>                              PetMaterials;                                      // 0x50(0x10)
 	byte                                                         PetSize;                                           // 0x60(0x1)
+	char                                                         pad0x7_IQ2L9[0x7];                                 // 0x61(0x7)
 	Class PetCustomisationOverrideDataAsset*                     PetOverrideAsset;                                  // 0x68(0x8)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
 class PetTelemetryComponent: public ActorComponent
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class PetWieldableReactMappingsDataAsset: public DataAsset
 {
 public:
@@ -843,68 +940,77 @@ public:
 };
 
 
-// Size 0xe8
+// Size 0xe8 (Full Size[0x4b0] - InheritedSize[0x3c8]
 class PreviewPet: public Actor
 {
 public:
+	char                                                         pad0x8_OS1TW[0x8];                                 // 0x3c8(0x8)
 	byte                                                         InitialAnimState;                                  // 0x3d0(0x1)
+	char                                                         pad0x3_PYFUC[0x3];                                 // 0x3d1(0x3)
 	Struct AIPartId                                              InitialPartIdToLoad;                               // 0x3d4(0x8)
+	char                                                         pad0x4_UGSTH[0x4];                                 // 0x3dc(0x4)
 	Class AIPartsCategory*                                       PreviewPetPartsCategory;                           // 0x3e0(0x8)
 	Class SkeletalMeshComponent*                                 PreviewPetMesh;                                    // 0x3e8(0x8)
 	Struct PetAnimationDataPreview                               PreviewPetAnimationData;                           // 0x3f0(0x10)
 	Class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0x400(0x8)
 	Class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0x408(0x8)
+	char                                                         pad0xb0_9SAZA[0xb0];                               // 0x40e(0xb0)
 };
 
 
-// Size 0xe0
+// Size 0xe0 (Full Size[0x9e0] - InheritedSize[0x900]
 class AthenaSwimmingAIController: public AthenaAIController
 {
 public:
 	Class SwimmingPathFollowingComponent*                        SwimmingPathFollowingComponent;                    // 0x900(0x8)
 	bool                                                         IgnoreTargetsOutOfWater;                           // 0x908(0x1)
+	char                                                         pad0x7_0F71T[0x7];                                 // 0x909(0x7)
 	Class CurveFloat*                                            DistOfAttackerVsChanceToPursue;                    // 0x910(0x8)
 	TArray<Struct FName>                                         TimersToZeroIfStartingRevengeAttack;               // 0x918(0x10)
 	struct FName                                                 DespawnRequiredBlackboardKey;                      // 0x928(0x8)
 	struct FName                                                 DespawnRequiredReasonBlackboardKey;                // 0x930(0x8)
 	float                                                        PathingFailedWeight;                               // 0x938(0x4)
 	float                                                        PathingFailedThresholdToDespawn;                   // 0x93c(0x4)
+	char                                                         pad0xa8_T6XZQ[0xa8];                               // 0x93e(0xa8)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
 class BTDecorator_NearSurfaceOfWater: public BTDecorator
 {
 public:
 	float                                                        DistanceFromSurface;                               // 0x68(0x4)
 	bool                                                         ReverseLogic;                                      // 0x6c(0x1)
+	char                                                         pad0x5_WBRTL[0x5];                                 // 0x6b(0x5)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
 class BTService_SetFloatToTheSurfaceWhileInBranch: public BTService
 {
 public:
 	bool                                                         FloatToTheSurfaceWhileInBranch;                    // 0x70(0x1)
+	char                                                         pad0x9_1AXMQ[0x9];                                 // 0x6f(0x9)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_SetFloatToTheSurface: public BTTaskNode
 {
 public:
 	bool                                                         ShouldFloatToTheSurface;                           // 0x60(0x1)
+	char                                                         pad0x9_0FJP9[0x9];                                 // 0x5f(0x9)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SwimmingCreatureMovementAnimationInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x128
+// Size 0x128 (Full Size[0x1f0] - InheritedSize[0xc8]
 class SwimmingPathFollowingComponent: public ActorComponent
 {
 public:
@@ -921,19 +1027,23 @@ public:
 	float                                                        FirstLoSTriggerTimeInNewPath;                      // 0xf4(0x4)
 	float                                                        FirstLoSTriggerTimeInRePath;                       // 0xf8(0x4)
 	bool                                                         DrawDebugOnServer;                                 // 0xfc(0x1)
+	char                                                         pad0x3_015SR[0x3];                                 // 0xfd(0x3)
 	TArray<Byte CollisionTypesToDoPathUpdate>                    CollisionTypesToDoPathUpdate;                      // 0x100(0x10)
 	Class SwimmingCreatureMovementComponent*                     MovementComponent;                                 // 0x110(0x8)
 	Class AthenaSwimmingAIController*                            SwimmingAIController;                              // 0x118(0x8)
 	byte                                                         ArcFollowingMode;                                  // 0x120(0x1)
+	char                                                         pad0x57_Q4I9N[0x57];                               // 0x121(0x57)
 	Class Actor*                                                 TargetActor;                                       // 0x178(0x8)
+	char                                                         pad0x80_5S4H9[0x80];                               // 0x17e(0x80)
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x100] - InheritedSize[0x88]
 class BTTask_SwimTo: public BTTask_BlackboardBase
 {
 public:
 	bool                                                         WantsToReportPathFailure;                          // 0x88(0x1)
+	char                                                         pad0x7_0MWJD[0x7];                                 // 0x89(0x7)
 	Struct BlackboardKeySelector                                 PathFailureCounter;                                // 0x90(0x28)
 	float                                                        AcceptableRadius;                                  // 0xb8(0x4)
 	byte                                                         GoalCheckMode;                                     // 0xbc(0x1)
@@ -943,13 +1053,15 @@ public:
 	Struct SpatialOffset                                         OffsetFromTargetActor;                             // 0xc0(0x8)
 	byte                                                         SwimSyncMode;                                      // 0xc8(0x1)
 	bool                                                         TrackTargetActor;                                  // 0xc9(0x1)
+	char                                                         pad0x6_E3C29[0x6];                                 // 0xca(0x6)
 	Struct BlackboardKeySelector                                 TrackedTargetActorKey;                             // 0xd0(0x28)
 	float                                                        TimeToSlowDownAndStop;                             // 0xf8(0x4)
 	byte                                                         LineOfSightTestMode;                               // 0xfc(0x1)
+	char                                                         pad0x5_5RDB1[0x5];                                 // 0xfb(0x5)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class BTTask_SwimTurnOnTheSpot: public BTTask_BlackboardBase
 {
 public:
@@ -960,7 +1072,7 @@ public:
 };
 
 
-// Size 0xe8
+// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
 class AthenaAIControllerParamsDataAsset: public DataAsset
 {
 public:
@@ -970,37 +1082,43 @@ public:
 	bool                                                         CanTargetNotSeenPerceivedActors;                   // 0x44(0x1)
 	bool                                                         OverrideTeamID;                                    // 0x45(0x1)
 	byte                                                         TeamID;                                            // 0x46(0x1)
+	char                                                         pad0x1_5OJHJ[0x1];                                 // 0x47(0x1)
 	float                                                        TargetSwitchScoreTolerance;                        // 0x48(0x4)
+	char                                                         pad0x4_YWAH0[0x4];                                 // 0x4c(0x4)
 	TArray<Float TargetLoadWeightingBias>                        TargetLoadWeightingBias;                           // 0x50(0x10)
 	float                                                        DistanceToStartTargetPickingDecrease;              // 0x60(0x4)
 	float                                                        TargetPickingDistScoreAtMaxSightRange;             // 0x64(0x4)
 	float                                                        VisionAngleToStartTargetPickingDecrease;           // 0x68(0x4)
 	float                                                        TargetPickingFacingScoreAtMaxPeripheralVisionAngle; // 0x6c(0x4)
 	bool                                                         UseDamageAsFactorInTargetScore;                    // 0x70(0x1)
+	char                                                         pad0x3_H8ZPQ[0x3];                                 // 0x71(0x3)
 	Struct AthenaAIControllerDamageTargetScoreFromPerceivedTarget DamageTargetScores;                                // 0x74(0x14)
 	TArray<class AthenaAIControllerSharedParamValuesDataAsset*>  SharedParamValues;                                 // 0x88(0x10)
 	bool                                                         IndividualOverrideMeshScale;                       // 0x98(0x1)
+	char                                                         pad0x3_S3KS9[0x3];                                 // 0x99(0x3)
 	float                                                        IndividualMeshScale;                               // 0x9c(0x4)
 	Struct AthenaAIControllerHealthCustomisation                 IndividualHealthCustomisationValues;               // 0xa0(0xc)
+	char                                                         pad0x4_1Y1HK[0x4];                                 // 0xac(0x4)
 	TArray<Struct AthenaAIControllerParamValue>                  IndividualInitialBlackboardValues;                 // 0xb0(0x10)
 	TArray<Struct AthenaAIControllerParamValue>                  IndividualNamedControllerParams;                   // 0xc0(0x10)
 	TArray<Struct AthenaAIControllerFeatureToggledParams>        FeatureToggleIndividualNamedParamOverrides;        // 0xd0(0x10)
 	TArray<Struct AthenaAIControllerWeightedRangesParamValue>    IndividualNamedWeightedRangesControllerParams;     // 0xe0(0x10)
 	TArray<Struct AthenaAIControllerSenseSettingOverride>        IndividualAIStrategySenseSettingOverrides;         // 0xf0(0x10)
 	bool                                                         IndividualOverrideCurrentTargetPerceivedNotVisibleAge; // 0x100(0x1)
+	char                                                         pad0x3_OAP5B[0x3];                                 // 0x101(0x3)
 	float                                                        IndividualCurrentTargetPerceivedNotVisibleAge;     // 0x104(0x4)
 	struct FName                                                 FeatureName;                                       // 0x108(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class TaleQuestGetTinySharkExperienceParticipatingCrews: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
 class TaleQuestGetTinySharkExperienceParticipatingCrewsDesc: public TaleQuestStepDesc
 {
 public:
@@ -1009,14 +1127,14 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x108] - InheritedSize[0x98]
 class TaleQuestGetTinySharkPawn: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
 class TaleQuestGetTinySharkPawnDesc: public TaleQuestStepDesc
 {
 public:
@@ -1025,29 +1143,30 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class TaleQuestStartTinySharkExperienceStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0xd8] - InheritedSize[0x60]
 class TaleQuestTinySharkService: public TaleQuestService
 {
 public:
 	TArray<class TinySharkExperience*>                           ActiveExperiences;                                 // 0x60(0x10)
+	char                                                         pad0x88_HQ5F7[0x88];                               // 0x6e(0x88)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TaleQuestTinySharkServiceDesc: public TaleQuestServiceDesc
 {
 public:
 };
 
 
-// Size 0x140
+// Size 0x140 (Full Size[0x1c0] - InheritedSize[0x80]
 class TaleQuestStartTinySharkExperienceStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1057,19 +1176,22 @@ public:
 	Class Ship*                                                  TargetShip;                                        // 0x178(0x8)
 	Class TaleQuestTinySharkExperienceTracker*                   ExperienceTracker;                                 // 0x180(0x8)
 	bool                                                         FireTinySharkVariantDefeatedStats;                 // 0x188(0x1)
+	char                                                         pad0x7_DFVJO[0x7];                                 // 0x189(0x7)
 	Struct QuestVariableTinySharkExperience                      TinySharkExperience;                               // 0x190(0x30)
 };
 
 
-// Size 0x48
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class TaleQuestTinySharkExperienceTracker: public Object
 {
 public:
+	char                                                         pad0x38_0RWBQ[0x38];                               // 0x28(0x38)
 	float                                                        UpdateFrequency;                                   // 0x60(0x4)
+	char                                                         pad0x14_T2KV7[0x14];                               // 0x62(0x14)
 };
 
 
-// Size 0xc0
+// Size 0xc0 (Full Size[0x130] - InheritedSize[0x70]
 class TaleQuestShroudedDeepSGExperienceTracker: public TaleQuestTinySharkExperienceTracker
 {
 public:
@@ -1083,36 +1205,43 @@ public:
 	float                                                        ShipNearExperiencePreference;                      // 0x90(0x4)
 	float                                                        ShipNearKillerWhalePreference;                     // 0x94(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      ForceRetargetFrequency;                            // 0x98(0x30)
+	char                                                         pad0xc8_UDLVJ[0xc8];                               // 0xc6(0xc8)
 };
 
 
-// Size 0x110
+// Size 0x110 (Full Size[0x1d8] - InheritedSize[0xc8]
 class TinySharkTelemetryComponent: public ActorComponent
 {
 public:
 };
 
 
-// Size 0x438
+// Size 0x438 (Full Size[0x800] - InheritedSize[0x3c8]
 class TinySharkExperience: public Actor
 {
 public:
+	char                                                         pad0x10_XDYBJ[0x10];                               // 0x3c8(0x10)
 	float                                                        RelevancyDistance;                                 // 0x3d8(0x4)
 	float                                                        TrackingMovementCheckInterval;                     // 0x3dc(0x4)
 	Class EnvQuery*                                              TrackingMovementValidQuery;                        // 0x3e0(0x8)
 	bool                                                         ShouldBlockMigrationForAllAttackingCrewsFromAnyDistance; // 0x3e8(0x1)
+	char                                                         pad0xa7_CPAEU[0xa7];                               // 0x3e9(0xa7)
 	Class AIOnDemandSpawner*                                     TinySharkSpawner;                                  // 0x490(0x8)
 	Class SharkPawn*                                             TinySharkPawn;                                     // 0x498(0x8)
 	struct FName                                                 HealthRTPC;                                        // 0x4a0(0x8)
+	char                                                         pad0x8_YQRT6[0x8];                                 // 0x4a8(0x8)
 	Struct TinySharkParams                                       Params;                                            // 0x4b0(0xc8)
 	Class TinySharkTelemetryComponent*                           TinySharkTelemetryComponent;                       // 0x578(0x8)
 	Class Ship*                                                  TrackedShip;                                       // 0x580(0x8)
+	char                                                         pad0x90_5NPRU[0x90];                               // 0x588(0x90)
 	Struct EncounterParams                                       SightingEncounterParams;                           // 0x618(0xc)
 	Struct EncounterParams                                       CloseEncounterParams;                              // 0x624(0xc)
+	char                                                         pad0x190_RK9D8[0x190];                             // 0x630(0x190)
+	char                                                         pad0x360_MUGQ0[0x360];                             // 0x7be(0x360)
 };
 
 
-// Size 0xc8
+// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
 class TinySharkParamsDataAsset: public DataAsset
 {
 public:
@@ -1120,49 +1249,56 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TinySharkServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x1c8
+// Size 0x1c8 (Full Size[0x590] - InheritedSize[0x3c8]
 class TinySharkService: public Actor
 {
 public:
+	char                                                         pad0x10_BRZKG[0x10];                               // 0x3c8(0x10)
 	Class TinySharkServiceParamsDataAsset*                       TinySharkServiceParams;                            // 0x3d8(0x8)
+	char                                                         pad0x170_OIZ0Y[0x170];                             // 0x3e0(0x170)
 	TArray<class TinySharkExperience*>                           TinySharkExperiences;                              // 0x550(0x10)
 	TArray<class TinySharkExperience*>                           ExternallyManagedTinySharkExperiences;             // 0x560(0x10)
+	char                                                         pad0x40_LNWZZ[0x40];                               // 0x56e(0x40)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class TinySharkServiceParamsDataAsset: public DataAsset
 {
 public:
 	Struct TinySharkServiceParams                                Params;                                            // 0x28(0x28)
 	int                                                          MaxNumTinySharkExperiences;                        // 0x50(0x4)
+	char                                                         pad0xc_XBLWN[0xc];                                 // 0x52(0xc)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIItemParameterInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
 class AthenaAIControllerSharedParamValuesDataAsset: public DataAsset
 {
 public:
 	bool                                                         OverrideMeshScale;                                 // 0x28(0x1)
+	char                                                         pad0x3_7R1KC[0x3];                                 // 0x29(0x3)
 	float                                                        MeshScale;                                         // 0x2c(0x4)
 	bool                                                         OverrideCurrentTargetPerceivedNotVisibleAge;       // 0x30(0x1)
+	char                                                         pad0x3_3HD9J[0x3];                                 // 0x31(0x3)
 	float                                                        CurrentTargetPerceivedNotVisibleAge;               // 0x34(0x4)
 	TArray<Struct AthenaAIControllerSenseSettingOverride>        AIStrategySenseSettingOverrides;                   // 0x38(0x10)
 	Struct AthenaAIControllerHealthCustomisation                 HealthCustomisationValues;                         // 0x48(0xc)
+	char                                                         pad0x4_M8Q7Q[0x4];                                 // 0x54(0x4)
 	TArray<Struct AthenaAIControllerParamValue>                  InitialBlackboardValues;                           // 0x58(0x10)
 	TArray<Struct AthenaAIControllerParamValue>                  NamedControllerParams;                             // 0x68(0x10)
 	TArray<Struct AthenaAIControllerFeatureToggledParams>        FeatureToggleNamedParamOverrides;                  // 0x78(0x10)
@@ -1170,7 +1306,7 @@ public:
 };
 
 
-// Size 0xd0
+// Size 0xd0 (Full Size[0x168] - InheritedSize[0x98]
 class AthenaAICharacterControllerSharedParamValuesDataAsset: public AthenaAIControllerSharedParamValuesDataAsset
 {
 public:
@@ -1178,6 +1314,7 @@ public:
 	bool                                                         UseRVOAvoidance;                                   // 0x99(0x1)
 	bool                                                         OverridePrioritiseInteractablesBeforeEnemies;      // 0x9a(0x1)
 	bool                                                         PrioritiseInteractablesBeforeEnemies;              // 0x9b(0x1)
+	char                                                         pad0x4_M27JQ[0x4];                                 // 0x9c(0x4)
 	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0xa0(0x8)
 	TArray<Struct AIStrategyMovementProperties>                  AIStrategyMovementProperties;                      // 0xa8(0x10)
 	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> ItemCategoryAIStrategyMovementPropertiesOverrides; // 0xb8(0x10)
@@ -1194,11 +1331,12 @@ public:
 	bool                                                         NoInitialItem;                                     // 0x159(0x1)
 	bool                                                         OverrideBeginFleeing;                              // 0x15a(0x1)
 	bool                                                         BeginFleeing;                                      // 0x15b(0x1)
+	char                                                         pad0x4_8U3DK[0x4];                                 // 0x15c(0x4)
 	Class EnvQuery*                                              FleeingEQS;                                        // 0x160(0x8)
 };
 
 
-// Size 0xf8
+// Size 0xf8 (Full Size[0x208] - InheritedSize[0x110]
 class AthenaAICharacterControllerParamsDataAsset: public AthenaAIControllerParamsDataAsset
 {
 public:
@@ -1206,6 +1344,7 @@ public:
 	bool                                                         IndividualUseRVOAvoidance;                         // 0x111(0x1)
 	bool                                                         IndividualOverridePrioritiseInteractablesBeforeEnemies; // 0x112(0x1)
 	bool                                                         IndividualPrioritiseInteractablesBeforeEnemies;    // 0x113(0x1)
+	char                                                         pad0x4_EW6JU[0x4];                                 // 0x114(0x4)
 	Class CurveFloat*                                            IndividualDistanceInMToCannonShotHitChanceCurve;   // 0x118(0x8)
 	TArray<Struct AIStrategyMovementProperties>                  IndividualAIStrategyMovementProperties;            // 0x120(0x10)
 	TArray<Struct ItemCategoryAIStrategyMovementPropertiesOverride> IndividualItemCategoryAIStrategyMovementPropertiesOverrides; // 0x130(0x10)
@@ -1215,6 +1354,7 @@ public:
 	TArray<Struct AthenaAIItemParamValue>                        IndividualNamedItemParams;                         // 0x170(0x10)
 	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> IndividualSpawnItemDescForItemCategories;          // 0x180(0x10)
 	bool                                                         UseDamageBasedAbilityStages;                       // 0x190(0x1)
+	char                                                         pad0x7_TBDX7[0x7];                                 // 0x191(0x7)
 	TArray<Float HealthStages>                                   HealthStages;                                      // 0x198(0x10)
 	TArray<Struct AthenaAIAbilityDamageStage>                    IndividualDamageBasedAIAbilityStages;              // 0x1a8(0x10)
 	TArray<class AthenaAIAbilityParams*>                         IndividualAIAbilityParams;                         // 0x1b8(0x10)
@@ -1225,29 +1365,32 @@ public:
 	bool                                                         IndividualNoInitialItem;                           // 0x1f9(0x1)
 	bool                                                         IndividualOverrideBeginFleeing;                    // 0x1fa(0x1)
 	bool                                                         IndividualBeginFleeing;                            // 0x1fb(0x1)
+	char                                                         pad0x4_6VBT3[0x4];                                 // 0x1fc(0x4)
 	Class EnvQuery*                                              IndividualFleeingEQS;                              // 0x200(0x8)
 };
 
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0xd0] - InheritedSize[0x28]
 class AthenaAIAmmoDataAsset: public DataAsset
 {
 public:
+	char                                                         pad0x90_1LM7U[0x90];                               // 0x28(0x90)
 	TArray<Struct AthenaAICharacterControllerWeightedAmmoType>   AmmoWeights;                                       // 0xb8(0x10)
 	struct FName                                                 FeatureName;                                       // 0xc8(0x8)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIAmmoRankProgression: public DataAsset
 {
 public:
 	TArray<Struct AIAmmoRankMapping>                             RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
+	char                                                         pad0xc_HWGH8[0xc];                                 // 0x3a(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIAmmoProgressionTypeList: public DataAsset
 {
 public:
@@ -1255,7 +1398,7 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIAmmoTypeList: public DataAsset
 {
 public:
@@ -1264,54 +1407,55 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIAnimationStateInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class AIChargeUpInterruptedStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIClassId: public Object
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class AIPartsCategory: public DataAsset
 {
 public:
 	TArray<class AIPartsDesc*>                                   Parts;                                             // 0x28(0x10)
 	int                                                          NextPartsIndex;                                    // 0x38(0x4)
 	bool                                                         UseWeightedArray;                                  // 0x3c(0x1)
+	char                                                         pad0x3_CS8LJ[0x3];                                 // 0x3d(0x3)
 	struct FName                                                 UseWeightedArrayFeatureName;                       // 0x40(0x8)
 	Struct WeightedProbabilityRange                              WeightedArray;                                     // 0x48(0x20)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPartsServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIEncounterServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIClassIdTypeList: public DataAsset
 {
 public:
@@ -1319,7 +1463,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIColorVariantPool: public DataAsset
 {
 public:
@@ -1327,21 +1471,21 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AICombatEncounterInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIDeathInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
 class AIDebugVisualisationComponent: public ActorComponent
 {
 public:
@@ -1353,14 +1497,14 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class AIElectricProjectileInterruptedStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
 class AIEncounterGenerationRecipe: public DataAsset
 {
 public:
@@ -1372,7 +1516,7 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class AIEncounterGenerationRecipeRankOrderList: public DataAsset
 {
 public:
@@ -1381,7 +1525,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIEncounterGenerationRecipeTypeList: public DataAsset
 {
 public:
@@ -1389,31 +1533,34 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIEncounterGenerationServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x88
+// Size 0x88 (Full Size[0x450] - InheritedSize[0x3c8]
 class AIEncounterGenerationService: public Actor
 {
 public:
+	char                                                         pad0x8_CKBMB[0x8];                                 // 0x3c8(0x8)
 	Class AIEncounterGenerationRecipeTypeList*                   GenerationRecipes;                                 // 0x3d0(0x8)
+	char                                                         pad0x88_NEOQS[0x88];                               // 0x3d6(0x88)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIFormRankProgression: public DataAsset
 {
 public:
 	TArray<Struct AIFormRankMapping>                             RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
+	char                                                         pad0xc_V044P[0xc];                                 // 0x3a(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIFormProgressionTypeList: public DataAsset
 {
 public:
@@ -1421,7 +1568,7 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIFormTypeList: public DataAsset
 {
 public:
@@ -1430,7 +1577,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AILoadoutProgressionTypeList: public DataAsset
 {
 public:
@@ -1438,7 +1585,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AILoadoutTypeList: public DataAsset
 {
 public:
@@ -1446,7 +1593,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AISkillsetProgressionTypeList: public DataAsset
 {
 public:
@@ -1454,7 +1601,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AISkillsetTypeList: public DataAsset
 {
 public:
@@ -1462,7 +1609,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIPartsCategoryTypeList: public DataAsset
 {
 public:
@@ -1470,10 +1617,11 @@ public:
 };
 
 
-// Size 0x3d0
+// Size 0x3d0 (Full Size[0x798] - InheritedSize[0x3c8]
 class AIEncounterService: public Actor
 {
 public:
+	char                                                         pad0x8_OBJV5[0x8];                                 // 0x3c8(0x8)
 	TArray<Struct AIPartsCategoryMapping>                        DefaultPartsCategories;                            // 0x3d0(0x10)
 	TArray<Struct AIPartsCategoryFormMapping>                    FormPartsCategories;                               // 0x3e0(0x10)
 	Class AIAmmoTypeList*                                        Ammo;                                              // 0x3f0(0x8)
@@ -1490,28 +1638,31 @@ public:
 	Class AIItemDropComponentList*                               AIItemDropSpawners;                                // 0x448(0x8)
 	Class AIItemDropComponentRankProgressionList*                AIItemDropSpawnerProgressions;                     // 0x450(0x8)
 	TArray<class AIEncounterSettings*>                           DebugSpawnableEncounterSettings;                   // 0x458(0x10)
+	char                                                         pad0x350_36SV4[0x350];                             // 0x466(0x350)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AISkillsetRankProgression: public DataAsset
 {
 public:
 	TArray<Struct AISkillsetRankMapping>                         RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
+	char                                                         pad0xc_ZWJX2[0xc];                                 // 0x3a(0xc)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class AIEncounterSettings: public DataAsset
 {
 public:
+	char                                                         pad0x20_HC4IU[0x20];                               // 0x28(0x20)
 	class                                                        AIClass;                                           // 0x48(0x8)
 	Struct StringAssetReference                                  TeamColor;                                         // 0x50(0x10)
 };
 
 
-// Size 0xb0
+// Size 0xb0 (Full Size[0x110] - InheritedSize[0x60]
 class AIEncounterSettingsFixed: public AIEncounterSettings
 {
 public:
@@ -1522,10 +1673,12 @@ public:
 	struct FName                                                 DioramaRole;                                       // 0xa0(0x8)
 	Struct FText                                                 LocalisableName;                                   // 0xa8(0x38)
 	Struct EncounterParams                                       EncounterTrackingParams;                           // 0xe0(0xc)
+	char                                                         pad0x4_65CEP[0x4];                                 // 0xec(0x4)
+	char                                                         pad0x28_OI53A[0x28];                               // 0xee(0x28)
 };
 
 
-// Size 0x60
+// Size 0x60 (Full Size[0xc0] - InheritedSize[0x60]
 class AIEncounterSettingsRankProgression: public AIEncounterSettings
 {
 public:
@@ -1535,10 +1688,11 @@ public:
 	Struct StringAssetReference                                  AmmoProgression;                                   // 0x90(0x10)
 	Struct StringAssetReference                                  ItemDropComponentProgression;                      // 0xa0(0x10)
 	Struct EncounterParams                                       EncounterTrackingParams;                           // 0xb0(0xc)
+	char                                                         pad0x1c_F6OPI[0x1c];                               // 0xba(0x1c)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
 class AIFormItemSpawnRequirement: public SpawnRequirement
 {
 public:
@@ -1546,28 +1700,28 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIIdentifierOwnerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIInteractableInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIInteractableOperatorInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIItemDropComponentList: public DataAsset
 {
 public:
@@ -1575,7 +1729,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIItemDropComponentRankProgressionList: public DataAsset
 {
 public:
@@ -1583,38 +1737,40 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIItemSpawnDataSourceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x2f0] - InheritedSize[0x2e0]
 class AIItemSpawnDataSourceComponent: public SceneComponent
 {
 public:
+	char                                                         pad0x8_0EJFT[0x8];                                 // 0x2e0(0x8)
 	Class ItemSpawnTransformWithRandomQuantityDataAssset*        ItemSpawnDataAsset;                                // 0x2e8(0x8)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIItemSpawnRankProgression: public DataAsset
 {
 public:
 	TArray<Struct AIDropSpawnerRankMapping>                      RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
+	char                                                         pad0xc_8YCIJ[0xc];                                 // 0x3a(0xc)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AILoadoutInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
 class AILoadoutItemSpawnRequirement: public SpawnRequirement
 {
 public:
@@ -1622,37 +1778,38 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AILoadoutRankProgression: public DataAsset
 {
 public:
 	TArray<Struct AILoadoutRankMapping>                          RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
+	char                                                         pad0xc_PF0WV[0xc];                                 // 0x3a(0xc)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AILoadoutWithNonStorableInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIManagerBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIManagerServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class AthenaAITypeListDataAsset: public DataAsset
 {
 public:
@@ -1661,7 +1818,7 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AISpawnWaveSequence: public DataAsset
 {
 public:
@@ -1670,56 +1827,59 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AISpawnWaveSequenceRankProgression: public DataAsset
 {
 public:
 	TArray<Struct AISpawnWaveSequenceRankMapping>                RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
+	char                                                         pad0xc_ON0WT[0xc];                                 // 0x3a(0xc)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class AIWeightedProbabilityRangeOfRangesAsset: public DataAsset
 {
 public:
 	float                                                        RespawnChance;                                     // 0x28(0x4)
+	char                                                         pad0x4_MEUK7[0x4];                                 // 0x2c(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      RespawnTimerRanges;                                // 0x30(0x30)
 	struct FName                                                 FeatureName;                                       // 0x60(0x8)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIWeightedProbabilityRangeOfRangesRankProgression: public DataAsset
 {
 public:
 	TArray<Struct AIWeightedProbabilityRangeOfRangesRankMapping> RankMappings;                                      // 0x28(0x10)
 	int                                                          NumberOfRanks;                                     // 0x38(0x4)
+	char                                                         pad0xc_3XYWB[0xc];                                 // 0x3a(0xc)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPlayerTrackerObservedInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPlayerTrackerObserverInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AISpawnRequestResultLoggerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0xe0] - InheritedSize[0x38]
 class AthenaAISettings: public DeveloperSettings
 {
 public:
@@ -1751,78 +1911,88 @@ public:
 	Struct StringAssetReference                                  AIEncounterGenerationServiceAssetClassFileLocation; // 0xc0(0x10)
 	struct FName                                                 AICharacterWaterInteractionCollisionProfileName;   // 0xd0(0x8)
 	float                                                        AICountTelemetryEventFrequency;                    // 0xd8(0x4)
+	char                                                         pad0xc_ATMTS[0xc];                                 // 0xda(0xc)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class AISpawnContextId: public Object
 {
 public:
 	int                                                          Weighting;                                         // 0x28(0x4)
+	char                                                         pad0xc_CE5PJ[0xc];                                 // 0x2a(0xc)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CustomizableAIManagerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x650
+// Size 0x650 (Full Size[0xa18] - InheritedSize[0x3c8]
 class AIManagerService: public Actor
 {
 public:
+	char                                                         pad0x108_9D46E[0x108];                             // 0x3c8(0x108)
 	TArray<Class LoadedAIPawnClasses>                            LoadedAIPawnClasses;                               // 0x4d0(0x10)
 	TArray<Class LoadedAIItemDropComponentClasses>               LoadedAIItemDropComponentClasses;                  // 0x4e0(0x10)
+	char                                                         pad0x8_IBONE[0x8];                                 // 0x4f0(0x8)
 	Class AmbientWaterSpawnerManager*                            AmbientWaterSpawnerManager;                        // 0x4f8(0x8)
+	char                                                         pad0x300_HPJCC[0x300];                             // 0x500(0x300)
 	TArray<class AIPlayerTracker*>                               PlayerTrackers;                                    // 0x800(0x10)
 	TArray<Struct CustomPlayersAITrackerData>                    CustomPlayersTrackerDatas;                         // 0x810(0x10)
+	char                                                         pad0x100_A9DV2[0x100];                             // 0x820(0x100)
 	TArray<class AISpawner*>                                     SpawnersPendingShutdown;                           // 0x920(0x10)
+	char                                                         pad0xa8_IHKIK[0xa8];                               // 0x930(0xa8)
 	Class AthenaAITypeListDataAsset*                             AITypeList;                                        // 0x9d8(0x8)
 	Class AISpawnContextList*                                    AISpawnContextList;                                // 0x9e0(0x8)
+	char                                                         pad0x40_K8CCE[0x40];                               // 0x9e6(0x40)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DebugAIManagerServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x100
+// Size 0x100 (Full Size[0xb18] - InheritedSize[0xa18]
 class DebugAIManagerService: public AIManagerService
 {
 public:
+	char                                                         pad0xf0_S9W2F[0xf0];                               // 0xa18(0xf0)
 	TArray<Class BlockedAIAbilities>                             BlockedAIAbilities;                                // 0xb08(0x10)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
 class AINoiseFireInstigator: public Actor
 {
 public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIPartsService: public Object
 {
 public:
+	char                                                         pad0x8_BTF2I[0x8];                                 // 0x28(0x8)
 	Class AIPartsCategoryTypeList*                               PartsCategoriesList;                               // 0x30(0x8)
 	Class AIColorVariantPool*                                    TeamColors;                                        // 0x38(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPartCustomizationInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIPartIdListingAsset: public DataAsset
 {
 public:
@@ -1830,10 +2000,11 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0x80] - InheritedSize[0x30]
 class MeshMemoryConstraintsAIPartsDesc: public AIPartsDesc
 {
 public:
+	char                                                         pad0x8_JE9TA[0x8];                                 // 0x30(0x8)
 	Struct StringAssetReference                                  Mesh;                                              // 0x38(0x10)
 	class                                                        MeshFallbackCategory;                              // 0x50(0x8)
 	class                                                        BudgetToCountMemoryAgainstIfNoFallback;            // 0x58(0x8)
@@ -1842,93 +2013,99 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPartsRetrievalInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0x170] - InheritedSize[0xc8]
 class AIPartsRetrievalComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_WB6C0[0x8];                                 // 0xc8(0x8)
 	Class AIPartsCategory*                                       PartsCategory;                                     // 0xd0(0x8)
 	Struct ReplicatedAIPartsData                                 ReplicatedAIPartsData;                             // 0xd8(0x18)
+	char                                                         pad0xb0_ILLGT[0xb0];                               // 0xee(0xb0)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPawnInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIPawnTurnActiveInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class AIPerCrewSpawnerSettingsStoryOverrideAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_QI24L[0x4];                                 // 0x34(0x4)
 	TArray<Struct AIPerCrewSpawnerStoryBasedRespawnSettings>     StoryResponses;                                    // 0x38(0x10)
 	TArray<class AIPerCrewSpawnerSettingsStoryOverrideAsset*>    AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x1e0
+// Size 0x1e0 (Full Size[0x228] - InheritedSize[0x48]
 class AIProximityPlayerTracker: public AISpawnerPlayerTracker
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x80] - InheritedSize[0x48]
 class FilterFirstPlayerEnterPlayerTrackerDecorator: public AISpawnerPlayerTracker
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIProjectileInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIRegionInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x350] - InheritedSize[0x2e0]
 class AIRegionComponent: public SceneComponent
 {
 public:
+	char                                                         pad0x8_VSIBW[0x8];                                 // 0x2e0(0x8)
 	bool                                                         UpdateRegionPosition;                              // 0x2e8(0x1)
+	char                                                         pad0x3_W5R9C[0x3];                                 // 0x2e9(0x3)
 	struct FName                                                 NavMeshAgentType;                                  // 0x2ec(0x8)
 	float                                                        RegionRadius;                                      // 0x2f4(0x4)
 	TArray<Struct SpawnLocationGroup>                            SpawnLocationGroups;                               // 0x2f8(0x10)
+	char                                                         pad0x68_0LY70[0x68];                               // 0x306(0x68)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIShipInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
 class AISkillsetItemSpawnRequirement: public SpawnRequirement
 {
 public:
@@ -1936,21 +2113,21 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AISpawnContextContainerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
 class AISpawnContextContainerComponent: public ActorComponent
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AISpawnContextList: public DataAsset
 {
 public:
@@ -1958,74 +2135,87 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AISpawnContextProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x478] - InheritedSize[0x438]
 class AIFixedWavesSpawner: public AISpawner
 {
 public:
 	TArray<Struct AIPersistentSpawnerWave>                       SpawnedWaves;                                      // 0x438(0x10)
 	int                                                          NumWavesToSpawnOnSpottedNewTarget;                 // 0x448(0x4)
+	char                                                         pad0x34_O4B67[0x34];                               // 0x44a(0x34)
 };
 
 
-// Size 0x118
+// Size 0x118 (Full Size[0x550] - InheritedSize[0x438]
 class AIIncrementalWaveSpawner: public AISpawner
 {
 public:
 	Struct AISpawnerWave                                         SpawnedWave;                                       // 0x438(0x100)
+	char                                                         pad0x218_9KV43[0x218];                             // 0x536(0x218)
 };
 
 
-// Size 0x100
+// Size 0x100 (Full Size[0x538] - InheritedSize[0x438]
 class AIInteractableSpawner: public AISpawner
 {
 public:
 	class                                                        AIInteractableType;                                // 0x438(0x8)
 	float                                                        InhabitedChance;                                   // 0x440(0x4)
+	char                                                         pad0x4_VDNBO[0x4];                                 // 0x444(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulInhabitedCheck;                // 0x448(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedInhabitedCheck;                    // 0x478(0x30)
 	bool                                                         BlockSubsequentSpawningAtInteractableOnceAiKilled; // 0x4a8(0x1)
+	char                                                         pad0x3_22W8N[0x3];                                 // 0x4a9(0x3)
 	float                                                        SpawnForInteractableChance;                        // 0x4ac(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterSuccessfulSpawnOnInteractableCheck;      // 0x4b0(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      DelayAfterFailedSpawnOnInteractableCheck;          // 0x4e0(0x30)
 	bool                                                         RunInhabitedSimulation;                            // 0x510(0x1)
 	bool                                                         RunSpawnForInteractableSimulation;                 // 0x511(0x1)
+	char                                                         pad0x2_STUJC[0x2];                                 // 0x512(0x2)
 	int                                                          NumIterations;                                     // 0x514(0x4)
+	char                                                         pad0x19_YVL8G[0x19];                               // 0x518(0x19)
 	byte                                                         CachedPlaymode;                                    // 0x531(0x1)
+	char                                                         pad0x8_X5DOS[0x8];                                 // 0x530(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x438] - InheritedSize[0x438]
 class AIOnDemandSpawner: public AISpawner
 {
 public:
 };
 
 
-// Size 0x1e8
+// Size 0x1e8 (Full Size[0x620] - InheritedSize[0x438]
 class AIPerPlayerSpawner: public AISpawner
 {
 public:
 	bool                                                         CheckSpawnedActorsInRadiusBeforeSpawning;          // 0x438(0x1)
+	char                                                         pad0x3_07A1N[0x3];                                 // 0x439(0x3)
 	float                                                        RadiusToCheckForExistingPopulation;                // 0x43c(0x4)
 	int                                                          MaxExistingPopulationInRadius;                     // 0x440(0x4)
 	bool                                                         DespawnAllPawnsWhenAllPlayersLeave;                // 0x444(0x1)
+	char                                                         pad0x3_5EH88[0x3];                                 // 0x445(0x3)
 	int                                                          MaxActorsTotalPerPlayer;                           // 0x448(0x4)
 	bool                                                         RunSimulation;                                     // 0x44c(0x1)
+	char                                                         pad0x3_IO068[0x3];                                 // 0x44d(0x3)
 	int                                                          RankForSimulation;                                 // 0x450(0x4)
 	int                                                          NumIterations;                                     // 0x454(0x4)
 	bool                                                         WantsToTemporarilyRememberPlayers;                 // 0x458(0x1)
+	char                                                         pad0x7_KU1OX[0x7];                                 // 0x459(0x7)
 	Struct WeightedProbabilityRangeOfRanges                      TemporaryPlayerMemoryTimeRange;                    // 0x460(0x30)
+	char                                                         pad0xe8_VDSYX[0xe8];                               // 0x490(0xe8)
+	char                                                         pad0x278_C4E9O[0x278];                             // 0x576(0x278)
 };
 
 
-// Size 0x88
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
 class NamedAIDataAsset: public DataAsset
 {
 public:
@@ -2043,45 +2233,51 @@ public:
 };
 
 
-// Size 0xd0
+// Size 0xd0 (Full Size[0x6f0] - InheritedSize[0x620]
 class AIBoobyTrapSpawner: public AIPerPlayerSpawner
 {
 public:
 	int                                                          NumberOfWavesToSpawn;                              // 0x620(0x4)
+	char                                                         pad0x4_RNT9S[0x4];                                 // 0x624(0x4)
 	Class WwiseEvent*                                            NewWaveSpawnSfx;                                   // 0x628(0x8)
 	float                                                        NewWaveSpawnSfxTriggerRadius;                      // 0x630(0x4)
+	char                                                         pad0x4_7VSTA[0x4];                                 // 0x634(0x4)
 	TArray<Class ShowNameplatesFor>                              ShowNameplatesFor;                                 // 0x638(0x10)
 	Class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x648(0x8)
 	Class Actor*                                                 ActorToTrack;                                      // 0x650(0x8)
+	char                                                         pad0xa8_GE0U9[0xa8];                               // 0x656(0xa8)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x470] - InheritedSize[0x438]
 class AIProgressiveWavesSpawner: public AISpawner
 {
 public:
 	bool                                                         ApplyLocalisableNamesToNameplates;                 // 0x438(0x1)
+	char                                                         pad0x7_PXY2J[0x7];                                 // 0x439(0x7)
 	TArray<Struct AIPersistentSpawnerWave>                       Waves;                                             // 0x440(0x10)
+	char                                                         pad0x18_JF69E[0x18];                               // 0x450(0x18)
 	Class Actor*                                                 TriggerActor;                                      // 0x468(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AISpawnerSpawnInteractableAssignmentInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x590] - InheritedSize[0x570]
 class AIEscalatingWaveSpawner: public AIWaveSpawner
 {
 public:
 	TArray<Struct EscalatingWave>                                EscalatingWaves;                                   // 0x570(0x10)
+	char                                                         pad0x30_RY21X[0x30];                               // 0x57e(0x30)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AISpawnerList: public DataAsset
 {
 public:
@@ -2089,23 +2285,25 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class AISpawnOverrideCondition: public Object
 {
 public:
 	bool                                                         InvertResult;                                      // 0x28(0x1)
+	char                                                         pad0x9_MHUH0[0x9];                                 // 0x27(0x9)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class AISpawnCampaignCondition: public AISpawnOverrideCondition
 {
 public:
 	struct FName                                                 CampaignName;                                      // 0x30(0x8)
+	char                                                         pad0x28_H5YPC[0x28];                               // 0x36(0x28)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class AISpawnComplexCondition: public AISpawnOverrideCondition
 {
 public:
@@ -2113,21 +2311,21 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
 class AISpawnAndCondition: public AISpawnComplexCondition
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
 class AISpawnOrCondition: public AISpawnComplexCondition
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class AISpawnMatchesAllContextsCondition: public AISpawnOverrideCondition
 {
 public:
@@ -2135,7 +2333,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class AISpawnMatchesAnyContextCondition: public AISpawnOverrideCondition
 {
 public:
@@ -2143,84 +2341,89 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class AISpawnStoryCondition: public AISpawnOverrideCondition
 {
 public:
 	Struct StoryFlag                                             StoryFlag;                                         // 0x30(0x8)
+	char                                                         pad0x28_376WH[0x28];                               // 0x36(0x28)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class StaticAISpawnCondition: public AISpawnOverrideCondition
 {
 public:
 	bool                                                         ShouldApplyOverride;                               // 0x30(0x1)
+	char                                                         pad0x9_6U1HT[0x9];                                 // 0x2f(0x9)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x2e0] - InheritedSize[0x2e0]
 class AISpawnPointSeedComponent: public SceneComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AISpawnRegionInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AITargetServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AITargetInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
 class AITargetActor: public Actor
 {
 public:
+	char                                                         pad0x8_B3FWU[0x8];                                 // 0x3c8(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
 	byte                                                         Team;                                              // 0x3d8(0x1)
+	char                                                         pad0x9_BVR3L[0x9];                                 // 0x3d7(0x9)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
 class AITargetService: public Actor
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AITargetWeaponInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIWithFormInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x250
+// Size 0x250 (Full Size[0x618] - InheritedSize[0x3c8]
 class AmbientWaterSpawnerManager: public Actor
 {
 public:
+	char                                                         pad0x10_21FWL[0x10];                               // 0x3c8(0x10)
 	Class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
 	Class AthenaAISettings*                                      AthenaAISettings;                                  // 0x3e0(0x8)
 	TArray<Struct FName>                                         AISpawnBlockingContextNames;                       // 0x3e8(0x10)
@@ -2232,53 +2435,59 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      UnsuccessfulSirenSpawningWeightedTimeRange;        // 0x440(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      SuccessfulSirenSpawningWeightedTimeRange;          // 0x470(0x30)
 	Struct ChanceForSharksToBlockSirenEncounterData              SharkEncounterSpawnBlockingData;                   // 0x4a0(0xc)
+	char                                                         pad0x4_QV393[0x4];                                 // 0x4ac(0x4)
 	TArray<Struct PerDepthSpawnChance>                           PerDepthSpawnChances;                              // 0x4b0(0x10)
 	Class AIPerPlayerSpawner*                                    SharkPerPlayerSpawner;                             // 0x4c0(0x8)
+	char                                                         pad0x130_02X5N[0x130];                             // 0x4c8(0x130)
 	TArray<Struct PlayerInWaterData>                             PlayersInWater;                                    // 0x5f8(0x10)
 	TArray<Struct SirenEncounterData>                            SirenEncounters;                                   // 0x608(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AmmunitionItemClassProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x48
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class AppliedStatusToMultipleAIWithFormsStatCondition: public StatCondition
 {
 public:
 	TArray<Class Status>                                         Status;                                            // 0x28(0x10)
 	int                                                          AICountMinimum;                                    // 0x38(0x4)
 	bool                                                         AllowAllForms;                                     // 0x3c(0x1)
+	char                                                         pad0x3_QIXHW[0x3];                                 // 0x3d(0x3)
 	TArray<AssetClass AllowedAIForms>                            AllowedAIForms;                                    // 0x40(0x10)
 	TArray<Class AIClassesToIgnore>                              AIClassesToIgnore;                                 // 0x50(0x10)
 	TArray<AssetClass AllowedSources>                            AllowedSources;                                    // 0x60(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AquaticAITargetInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xc8
+// Size 0xc8 (Full Size[0x140] - InheritedSize[0x78]
 class BurrowAIAbility: public AthenaAIAbility
 {
 public:
 	TArray<Struct Vector>                                        LocationsToSpawnCrack;                             // 0x78(0x10)
 	Struct TimerHandle                                           TimerHandleStartNextSpawnWave;                     // 0x88(0x4)
+	char                                                         pad0x4_JJ65L[0x4];                                 // 0x8c(0x4)
 	Class Actor*                                                 CachedTarget;                                      // 0x90(0x8)
+	char                                                         pad0x8c_G053Y[0x8c];                               // 0x98(0x8c)
 	bool                                                         bExecuting;                                        // 0x124(0x1)
 	bool                                                         bProcessingSpawnLocations;                         // 0x125(0x1)
+	char                                                         pad0x1c_XJ06K[0x1c];                               // 0x124(0x1c)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x408] - InheritedSize[0x3c8]
 class BurrowCrack: public Actor
 {
 public:
@@ -2286,10 +2495,11 @@ public:
 	Class DecalComponent*                                        DecalComponent;                                    // 0x3d0(0x8)
 	float                                                        FadeOutTimeSeconds;                                // 0x3d8(0x4)
 	bool                                                         HasFadeStarted;                                    // 0x3dc(0x1)
+	char                                                         pad0x2d_AY9HG[0x2d];                               // 0x3db(0x2d)
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x140] - InheritedSize[0xc8]
 class BurrowAIAbilityParams: public AthenaAIAbilityParams
 {
 public:
@@ -2303,15 +2513,17 @@ public:
 	float                                                        BurrowAroundTargetRange;                           // 0x108(0x4)
 	float                                                        MaxSurfaceAngleForBurrow;                          // 0x10c(0x4)
 	bool                                                         bEruptFromClosestSpawn;                            // 0x110(0x1)
+	char                                                         pad0x3_N01B9[0x3];                                 // 0x111(0x3)
 	Struct MinMaxBurrowAbility                                   EruptionDelayRndBetweenMinMaxSeconds;              // 0x114(0x8)
 	Struct MinMaxBurrowAbility                                   NumberOfCrackWavesMinMax;                          // 0x11c(0x8)
 	Struct MinMaxBurrowAbility                                   RndSecondsBetweenCrackWaves;                       // 0x124(0x8)
 	Struct MinMaxBurrowAbility                                   NumberOfCracksPerWaveMinMax;                       // 0x12c(0x8)
 	Struct MinMaxBurrowAbility                                   RndSecondsBetweenEachCrackSpawn;                   // 0x134(0x8)
+	char                                                         pad0x14_09QML[0x14];                               // 0x13a(0x14)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x170] - InheritedSize[0x140]
 class BurrowHealAIAbilityParams: public BurrowAIAbilityParams
 {
 public:
@@ -2319,163 +2531,178 @@ public:
 	float                                                        HealDuration;                                      // 0x148(0x4)
 	float                                                        RadiusForValidTargets;                             // 0x14c(0x4)
 	int                                                          NumberOfTargetsToHeal;                             // 0x150(0x4)
+	char                                                         pad0x4_ZZHPD[0x4];                                 // 0x154(0x4)
 	Struct Status                                                StatusToApplyOnHeal;                               // 0x158(0x18)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x150] - InheritedSize[0x140]
 class BurrowHealAIAbility: public BurrowAIAbility
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIBuffAbilityInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xb0
+// Size 0xb0 (Full Size[0x128] - InheritedSize[0x78]
 class CoralShieldAbility: public AthenaAIAbility
 {
 public:
 	TArray<Weakclass PotentialTargets>                           PotentialTargets;                                  // 0x78(0x10)
 	TArray<Struct BuffedTargetData>                              BuffedTargets;                                     // 0xa8(0x10)
+	char                                                         pad0x90_EAJDU[0x90];                               // 0xb6(0x90)
 };
 
 
-// Size 0x98
+// Size 0x98 (Full Size[0x110] - InheritedSize[0x78]
 class ElectricShieldAbility: public AthenaAIAbility
 {
 public:
+	char                                                         pad0x8_J0Z4P[0x8];                                 // 0x78(0x8)
 	TArray<Interface SelectedTargets>                            SelectedTargets;                                   // 0x80(0x10)
+	char                                                         pad0xa0_AZI8H[0xa0];                               // 0x8e(0xa0)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0xb0] - InheritedSize[0x78]
 class SporeBreathAIAbility: public AthenaAIAbility
 {
 public:
 	Class StatusEffectOverlapZone*                               BreathActor;                                       // 0x78(0x8)
 	Class VFXSpawnerComponent*                                   BreathVFX;                                         // 0x80(0x8)
+	char                                                         pad0x38_VNQFO[0x38];                               // 0x86(0x38)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x80] - InheritedSize[0x78]
 class TeleportAIAbility: public AthenaAIAbility
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIAbilityHandlerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x108
+// Size 0x108 (Full Size[0x1d0] - InheritedSize[0xc8]
 class AthenaAIAbilityComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_LQHP5[0x8];                                 // 0xc8(0x8)
 	TArray<class AthenaAIAbility*>                               AIAbilities;                                       // 0xd0(0x10)
 	TArray<class AthenaAIAbility*>                               ActivatableAbilitiesInCurrentStage;                // 0xe0(0x10)
 	Class AthenaAIAbility*                                       CurrentAIAbility;                                  // 0xf0(0x8)
 	class                                                        QueuedAbilityType;                                 // 0xf8(0x8)
 	class                                                        DebugAlwaysOnAbility;                              // 0x100(0x8)
 	TArray<Struct AthenaAIAbilityDamageStage>                    AbilityDamageStages;                               // 0x108(0x10)
+	char                                                         pad0xd8_KTI4P[0xd8];                               // 0x116(0xd8)
 };
 
 
-// Size 0x118
+// Size 0x118 (Full Size[0x1e0] - InheritedSize[0xc8]
 class AthenaAIAbilityHandlerComponent: public ActorComponent
 {
 public:
+	char                                                         pad0xb0_ABSQ1[0xb0];                               // 0xc8(0xb0)
 	TArray<Struct AthenaAIAbilityDamageStage>                    AbilityStages;                                     // 0x178(0x10)
 	TArray<class AthenaAIAbility*>                               AIAbilities;                                       // 0x188(0x10)
 	TArray<Class ReadyAbilitiesPool>                             ReadyAbilitiesPool;                                // 0x198(0x10)
+	char                                                         pad0x20_4FJXJ[0x20];                               // 0x1a8(0x20)
 	class                                                        DebugAlwaysOnAbility;                              // 0x1c8(0x8)
 	class                                                        RequiresActivation;                                // 0x1d0(0x8)
+	char                                                         pad0x18_YMG9Z[0x18];                               // 0x1d6(0x18)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
 class CoralShieldAbilityParams: public AthenaAIAbilityParams
 {
 public:
 	float                                                        ShieldEffectRadius;                                // 0xc8(0x4)
 	float                                                        DamageNeededToBreakShield;                         // 0xcc(0x4)
 	float                                                        ShieldLifeTime;                                    // 0xd0(0x4)
+	char                                                         pad0x4_5CN8Y[0x4];                                 // 0xd4(0x4)
 	Struct Status                                                CoralShieldStatusEffect;                           // 0xd8(0x18)
 	Class DamageableVulnerabilityLayer*                          VulnerabilityToApplyToSelf;                        // 0xf0(0x8)
 	float                                                        DelayBeforeSFXPlays;                               // 0xf8(0x4)
+	char                                                         pad0xc_PVEVW[0xc];                                 // 0xfa(0xc)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
 class ElectricShieldAbilityParams: public AthenaAIAbilityParams
 {
 public:
 	float                                                        ChargeUpTime;                                      // 0xc8(0x4)
+	char                                                         pad0x4_LW6XO[0x4];                                 // 0xcc(0x4)
 	Struct Status                                                BuffInterruptedStatusEffect;                       // 0xd0(0x18)
 	Struct Status                                                ElectricShieldStatusEffect;                        // 0xe8(0x18)
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x148] - InheritedSize[0xc8]
 class SporeBreathAIAbilityParams: public AthenaAIAbilityParams
 {
 public:
 	Struct AthenaAIAbilityPlayerBasedRanges                      BreathMaxDuration;                                 // 0xc8(0x10)
 	float                                                        BreathContinueThresholdDistance;                   // 0xd8(0x4)
+	char                                                         pad0x4_NEGJG[0x4];                                 // 0xdc(0x4)
 	class                                                        BreathActor;                                       // 0xe0(0x8)
 	Struct VFXHandlerComponentParams                             BreathVFXParams;                                   // 0xe8(0x40)
 	Struct Vector                                                BreathCollisionVolumeSize;                         // 0x128(0xc)
 	float                                                        BreathCollisionForwardOffset;                      // 0x134(0x4)
 	float                                                        BreathStartDelay;                                  // 0x138(0x4)
+	char                                                         pad0x4_11JYT[0x4];                                 // 0x13c(0x4)
 	class                                                        VfxSpawner;                                        // 0x140(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class BurrowAIAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class BurrowHealAIAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CoralShieldAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ElectricShieldAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SporeBreathAIAbilityType: public AthenaAIAbilityType
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xe0] - InheritedSize[0xd0]
 class AthenaAIRangeBasedAmmoDataAsset: public AthenaAIAmmoDataAsset
 {
 public:
@@ -2483,7 +2710,7 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x2f0] - InheritedSize[0x2b8]
 class AthenaAICharacterPathFollowingComponent: public PathFollowingComponent
 {
 public:
@@ -2491,56 +2718,64 @@ public:
 	float                                                        MinAngleToTurnOnSpot;                              // 0x2bc(0x4)
 	float                                                        ReachedGoalMaxSpeedToSlowDistanceFactor;           // 0x2c0(0x4)
 	float                                                        AbortMoveMaxSpeedToSlowDistanceFactor;             // 0x2c4(0x4)
+	char                                                         pad0x4_U8G9S[0x4];                                 // 0x2c8(0x4)
 	float                                                        MinSlowDownSpeed;                                  // 0x2cc(0x4)
+	char                                                         pad0x28_2JPBL[0x28];                               // 0x2ce(0x28)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAICharacterStatsInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SpawnItemDescProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x220
+// Size 0x220 (Full Size[0xb20] - InheritedSize[0x900]
 class AthenaAICharacterController: public AthenaAIController
 {
 public:
+	char                                                         pad0x8_PKYJL[0x8];                                 // 0x900(0x8)
 	Class AthenaAIItemParamsDataAsset*                           ItemParamsDataAsset;                               // 0x908(0x8)
 	Class LoadoutAsset*                                          FallbackLoadoutIfAllEngageItemsDropped;            // 0x910(0x8)
 	float                                                        ControlRotationInterpSpeed;                        // 0x918(0x4)
 	bool                                                         ControlRotationUseConstantInterp;                  // 0x91c(0x1)
 	bool                                                         FaceTargetDisabled;                                // 0x91d(0x1)
+	char                                                         pad0x2_Q9ZIK[0x2];                                 // 0x91e(0x2)
 	float                                                        MinTurnAngleToPlayTurnAnim;                        // 0x920(0x4)
+	char                                                         pad0x14_J89VP[0x14];                               // 0x924(0x14)
 	Class AthenaAICharacterControllerParamsDataAsset*            CharacterParamsDataAsset;                          // 0x938(0x8)
+	char                                                         pad0x90_DB1L0[0x90];                               // 0x940(0x90)
 	TArray<Struct AthenaAICharacterControllerSpawnItemDescForItemCategory> SpawnItemDescForItemCategories;                    // 0x9d0(0x10)
 	TArray<class AthenaAIAbilityParams*>                         AIAbilityParams;                                   // 0x9e0(0x10)
 	TArray<Struct AthenaAIEngageEnemyData>                       NonItemEngageOptions;                              // 0x9f0(0x10)
 	Class CurveFloat*                                            DistanceInMToCannonShotHitChanceCurve;             // 0xa00(0x8)
+	char                                                         pad0x128_D0ZBV[0x128];                             // 0xa06(0x128)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIControllerNavMeshTogglesInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x88
+// Size 0x88 (Full Size[0x198] - InheritedSize[0x110]
 class FaunaAIContollerParamsDataAsset: public AthenaAIControllerParamsDataAsset
 {
 public:
 	Struct WeightedProbabilityRange                              Courage;                                           // 0x110(0x20)
 	TArray<Struct CarriedItemThreatOverride>                     CarriedItemThreatOverrides;                        // 0x130(0x10)
 	bool                                                         ThreatenedBySightOfCarrier;                        // 0x140(0x1)
+	char                                                         pad0x7_AS38P[0x7];                                 // 0x141(0x7)
 	TArray<Struct HearingThreat>                                 KnownHearingDangers;                               // 0x148(0x10)
 	float                                                        CarrierHearingThreatSpeedThreshold;                // 0x158(0x4)
 	float                                                        DamageThreat;                                      // 0x15c(0x4)
@@ -2558,7 +2793,7 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AthenaAIControllerParamsDataProvider: public AIDataProvider
 {
 public:
@@ -2566,45 +2801,46 @@ public:
 	float                                                        FloatValue;                                        // 0x30(0x4)
 	int                                                          IntValue;                                          // 0x34(0x4)
 	bool                                                         BoolValue;                                         // 0x38(0x1)
+	char                                                         pad0x9_ENNQ3[0x9];                                 // 0x37(0x9)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIControllerParamsTargetInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIFormComponentContainerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAIInteractableInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x1c8] - InheritedSize[0x1c8]
 class AthenaAIPerceptionComponent: public AIPerceptionComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AthenaAISightTargetInterface: public AISightTargetInterface
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class AthenaAIWeightedRangesDataProvider: public AIDataProvider
 {
 public:
@@ -2613,7 +2849,7 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class BlackboardAIDataProvider: public AIDataProvider
 {
 public:
@@ -2621,27 +2857,31 @@ public:
 	float                                                        FloatValue;                                        // 0x30(0x4)
 	int                                                          IntValue;                                          // 0x34(0x4)
 	bool                                                         BoolValue;                                         // 0x38(0x1)
+	char                                                         pad0x9_CB00L[0x9];                                 // 0x37(0x9)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x88] - InheritedSize[0x68]
 class BTDecorator_ActionState: public BTDecorator
 {
 public:
 	byte                                                         TrackId;                                           // 0x68(0x1)
+	char                                                         pad0x7_QU1A3[0x7];                                 // 0x69(0x7)
 	class                                                        StateId;                                           // 0x70(0x8)
+	char                                                         pad0x20_YRD63[0x20];                               // 0x76(0x20)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
 class BTDecorator_ActorInWater: public BTDecorator_BlackboardBase
 {
 public:
 	bool                                                         ReverseLogic;                                      // 0x90(0x1)
+	char                                                         pad0x9_382Z7[0x9];                                 // 0x8f(0x9)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
 class BTDecorator_CurrentAIStrategy: public BTDecorator_BaseConditional
 {
 public:
@@ -2649,16 +2889,17 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
 class BTDecorator_IsActorInExpectedActionState: public BTDecorator_BaseConditional
 {
 public:
 	class                                                        ExpectedActionState;                               // 0x68(0x8)
 	byte                                                         ExpectedTrackId;                                   // 0x70(0x1)
+	char                                                         pad0x9_I4Y24[0x9];                                 // 0x6f(0x9)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
 class BTDecorator_ItemReadyToUse: public BTDecorator_BaseConditional
 {
 public:
@@ -2666,67 +2907,76 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
 class BTDecorator_LeftOfAIPawn: public BTDecorator_BaseConditional
 {
 public:
 	Struct BlackboardKeySelector                                 TargetKey;                                         // 0x68(0x28)
 	bool                                                         ReverseLogic;                                      // 0x90(0x1)
+	char                                                         pad0x9_YY8J8[0x9];                                 // 0x8f(0x9)
 };
 
 
-// Size 0x88
+// Size 0x88 (Full Size[0xf0] - InheritedSize[0x68]
 class BTDecorator_LineOfSightToTarget: public BTDecorator_BaseConditional
 {
 public:
 	float                                                        Interval;                                          // 0x68(0x4)
+	char                                                         pad0x4_I8SZO[0x4];                                 // 0x6c(0x4)
 	Struct BlackboardKeySelector                                 TargetActorKey;                                    // 0x70(0x28)
 	bool                                                         UseTargetPosition;                                 // 0x98(0x1)
+	char                                                         pad0x7_64KDT[0x7];                                 // 0x99(0x7)
 	Struct BlackboardKeySelector                                 TargetPositionKey;                                 // 0xa0(0x28)
 	Struct Vector                                                OffsetToApplyToTargetPosition;                     // 0xc8(0xc)
+	char                                                         pad0x34_6WDNF[0x34];                               // 0xd2(0x34)
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xb8] - InheritedSize[0x90]
 class BTDecorator_CompareBlackboardClassValue: public BTDecorator_BlackboardBase
 {
 public:
 	class                                                        Class;                                             // 0x90(0x8)
 	bool                                                         Invert;                                            // 0x98(0x1)
+	char                                                         pad0x7_810PU[0x7];                                 // 0x99(0x7)
 	Struct FString                                               CachedDescription;                                 // 0xa0(0x10)
 	byte                                                         NotifyObserver;                                    // 0xb0(0x1)
+	char                                                         pad0x9_L2UMX[0x9];                                 // 0xaf(0x9)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
 class BTDecorator_CompareBlackboardIntValue: public BTDecorator
 {
 public:
 	Struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x68(0x28)
 	int                                                          Value;                                             // 0x90(0x4)
 	byte                                                         ComparisonType;                                    // 0x94(0x1)
+	char                                                         pad0x5_AVCYR[0x5];                                 // 0x93(0x5)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x80] - InheritedSize[0x68]
 class BTDecorator_CompareBlackboardValues: public BTDecorator
 {
 public:
 	TArray<Struct BlackboardValueCondition>                      FloatConditions;                                   // 0x68(0x10)
 	byte                                                         FloatConditionComposite;                           // 0x78(0x1)
+	char                                                         pad0x9_IPDB6[0x9];                                 // 0x77(0x9)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
 class BTDecorator_CompareFloatValueBase: public BTDecorator_CompareBlackboardValues
 {
 public:
 	byte                                                         Comparison;                                        // 0x80(0x1)
+	char                                                         pad0x7_J2VXH[0x7];                                 // 0x81(0x7)
 	Struct AIDataProviderFloatValue                              Value;                                             // 0x88(0x30)
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
 class BTDecorator_CompareBlackboardActorSpeed: public BTDecorator_CompareFloatValueBase
 {
 public:
@@ -2734,7 +2984,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
 class BTDecorator_CompareBlackboardFloatValue: public BTDecorator_CompareFloatValueBase
 {
 public:
@@ -2742,14 +2992,14 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb8] - InheritedSize[0xb8]
 class BTDecorator_CompareCurrentHealth: public BTDecorator_CompareFloatValueBase
 {
 public:
 };
 
 
-// Size 0x88
+// Size 0x88 (Full Size[0x108] - InheritedSize[0x80]
 class BTDecorator_TargetInRange: public BTDecorator_CompareBlackboardValues
 {
 public:
@@ -2759,7 +3009,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0x130] - InheritedSize[0x108]
 class BTDecorator_TargetInRangeOfPoint: public BTDecorator_TargetInRange
 {
 public:
@@ -2767,49 +3017,52 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
 class BTDecorator_TestRange: public BTDecorator_CompareBlackboardValues
 {
 public:
 	Struct AIDataProviderFloatValue                              EnterRange;                                        // 0x80(0x30)
 	Struct AIDataProviderFloatValue                              ExitRange;                                         // 0xb0(0x30)
 	bool                                                         TestForOutsideRange;                               // 0xe0(0x1)
+	char                                                         pad0x9_830IK[0x9];                                 // 0xdf(0x9)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xf8] - InheritedSize[0xe8]
 class BTDecorator_TestRangeOfSeenActors: public BTDecorator_TestRange
 {
 public:
 };
 
 
-// Size 0x58
+// Size 0x58 (Full Size[0xc0] - InheritedSize[0x68]
 class BTDecorator_ConeCheck3D: public BTDecorator
 {
 public:
 	float                                                        ConeHalfAngle;                                     // 0x68(0x4)
+	char                                                         pad0x4_IWLGS[0x4];                                 // 0x6c(0x4)
 	Struct BlackboardKeySelector                                 ConeOrigin;                                        // 0x70(0x28)
 	Struct BlackboardKeySelector                                 Observed;                                          // 0x98(0x28)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
 class BTDecorator_DockedToInteractable: public BTDecorator_BlackboardBase
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
 class BTDecorator_FeatureToggle: public BTDecorator
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x68(0xc)
+	char                                                         pad0x1c_J2QOU[0x1c];                               // 0x72(0x1c)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
 class BTDecorator_IsAbilityAvailable: public BTDecorator
 {
 public:
@@ -2817,17 +3070,18 @@ public:
 };
 
 
-// Size 0x58
+// Size 0x58 (Full Size[0xe8] - InheritedSize[0x90]
 class BTDecorator_IsLocationInWater: public BTDecorator_BlackboardBase
 {
 public:
 	Struct BlackboardKeySelector                                 WaterVolumeActor;                                  // 0x90(0x28)
 	Struct BlackboardKeySelector                                 TargetLocation;                                    // 0xb8(0x28)
 	bool                                                         OnlyConsidersSwimmableWater;                       // 0xe0(0x1)
+	char                                                         pad0x9_QUC2J[0x9];                                 // 0xdf(0x9)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
 class BTDecorator_MultipleRandomDiceRolls: public BTDecorator
 {
 public:
@@ -2835,7 +3089,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
 class BTDecorator_RandomDiceRoll: public BTDecorator
 {
 public:
@@ -2843,7 +3097,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
 class BTDecorator_RandomLoop: public BTDecorator
 {
 public:
@@ -2853,14 +3107,14 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x68] - InheritedSize[0x68]
 class BTDecorator_RollAgainstPatrolChance: public BTDecorator
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
 class BTDecorator_TestAIInteractableType: public BTDecorator_BlackboardBase
 {
 public:
@@ -2868,7 +3122,7 @@ public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
 class BTService_AimAIInteractable: public BTService
 {
 public:
@@ -2878,7 +3132,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xa8] - InheritedSize[0xa0]
 class BTService_DefaultFocusToPosAtRelativeAngleToObject: public BTService_DefaultFocus
 {
 public:
@@ -2887,7 +3141,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
 class BTService_DetermineAIAbility: public BTService
 {
 public:
@@ -2895,7 +3149,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
 class BTService_DisableCollisions: public BTService
 {
 public:
@@ -2903,38 +3157,40 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
 class BTService_DisableDamageResponses: public BTService
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
 class BTService_DisableStun: public BTService
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0xd8] - InheritedSize[0x98]
 class BTService_EnableFaceFocusActor: public BTService_BlackboardBase
 {
 public:
 	bool                                                         DisableUpdateMoveFocusForCurrentPathOnExit;        // 0x98(0x1)
+	char                                                         pad0x7_K07N9[0x7];                                 // 0x99(0x7)
 	Struct ConditionalBasedOnBlackboardKey                       Conditional;                                       // 0xa0(0x38)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
 class BTService_IncrementFloatValueWithTimeSpentInBranch: public BTService_BlackboardBase
 {
 public:
 	float                                                        TimeMultiplier;                                    // 0x98(0x4)
+	char                                                         pad0xc_DBZCO[0xc];                                 // 0x9a(0xc)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xa0] - InheritedSize[0x70]
 class BTService_OverrideTurnSpeed: public BTService
 {
 public:
@@ -2942,7 +3198,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
 class BTService_PlayCustomMontageId: public BTService
 {
 public:
@@ -2950,35 +3206,37 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
 class BTService_QueryPerceptionForTarget: public BTService
 {
 public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0xe8] - InheritedSize[0x98]
 class BTService_RunEQSQuery: public BTService_BlackboardBase
 {
 public:
 	bool                                                         OverrideQueryTemplateWithBlackboardValue;          // 0x98(0x1)
+	char                                                         pad0x7_1PPI9[0x7];                                 // 0x99(0x7)
 	Struct BlackboardKeySelector                                 OverrideEQSKey;                                    // 0xa0(0x28)
 	Class EnvQuery*                                              QueryTemplate;                                     // 0xc8(0x8)
 	TArray<Struct EnvNamedValue>                                 QueryParams;                                       // 0xd0(0x10)
 	byte                                                         RunMode;                                           // 0xe0(0x1)
 	bool                                                         ThrottleQueryTimePerFrame;                         // 0xe1(0x1)
+	char                                                         pad0x2_Z5FPX[0x2];                                 // 0xe2(0x2)
 	float                                                        MaxSecondsToSpendOnQueryPerFrame;                  // 0xe4(0x4)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xe8] - InheritedSize[0xe8]
 class BTService_DoesEQSQuerySucceed: public BTService_RunEQSQuery
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x128] - InheritedSize[0xe8]
 class BTService_RunEQSQueryOnActorMovement: public BTService_RunEQSQuery
 {
 public:
@@ -2986,18 +3244,20 @@ public:
 	float                                                        MinimumActorMovementToRunEQS;                      // 0x110(0x4)
 	float                                                        MinimumActorVelocityChangeToRunEQS;                // 0x114(0x4)
 	bool                                                         RunEQSForYawChanges;                               // 0x118(0x1)
+	char                                                         pad0x3_MW69H[0x3];                                 // 0x119(0x3)
 	float                                                        MinimumActorYawChangeToRunEQS;                     // 0x11c(0x4)
+	char                                                         pad0x10_B2WF0[0x10];                               // 0x11e(0x10)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class BTService_SetAIAnimationState: public BTService_BlackboardBase
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
 class BTService_SetAIStrategy: public BTService
 {
 public:
@@ -3005,7 +3265,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
 class BTService_SetBoolBlackboardValueToTrueOnCeaseRelevant: public BTService
 {
 public:
@@ -3013,7 +3273,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
 class BTService_SetBoolBlackboardValueTrueWhileRelevant: public BTService
 {
 public:
@@ -3021,7 +3281,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xa0] - InheritedSize[0x70]
 class BTService_SetNameBlackboardValueWhileRelevant: public BTService
 {
 public:
@@ -3030,32 +3290,34 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
 class BTService_TriggerNotifications: public BTService
 {
 public:
 	class                                                        EnterBranchNotificationId;                         // 0x70(0x8)
 	class                                                        LeaveBranchNotificationId;                         // 0x78(0x8)
+	char                                                         pad0x28_TQP45[0x28];                               // 0x7e(0x28)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0xe0] - InheritedSize[0xa0]
 class BTService_UpdateFocusOnBBChange: public BTService_DefaultFocus
 {
 public:
 	bool                                                         DisableUpdateMoveFocusForCurrentPathOnExit;        // 0xa0(0x1)
+	char                                                         pad0x7_NUYHY[0x7];                                 // 0xa1(0x7)
 	Struct ConditionalBasedOnBlackboardKey                       Conditional;                                       // 0xa8(0x38)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xe0] - InheritedSize[0xe0]
 class BTService_UpdateFocusOnBBChangeWithOffsetFromWieldedProjectile: public BTService_UpdateFocusOnBBChange
 {
 public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0xc0] - InheritedSize[0x70]
 class BTService_UpdateTargetForInteractable: public BTService
 {
 public:
@@ -3064,52 +3326,57 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class BTService_UpdateViewPitchForWieldedProjectileToHitTarget: public BTService_BlackboardBase
 {
 public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
 class BTTask_ApplyStatusComposite: public BTTaskNode
 {
 public:
 	bool                                                         bOneShot;                                          // 0x60(0x1)
+	char                                                         pad0x7_FIE80[0x7];                                 // 0x61(0x7)
 	Struct AIDataProviderFloatValue                              ContinuousStatusDuration;                          // 0x68(0x30)
 	Struct Status                                                StatusToApply;                                     // 0x98(0x18)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xb8] - InheritedSize[0xa0]
 class BTTask_AthenaMoveTo: public BTTask_MoveTo
 {
 public:
 	bool                                                         ShouldFailBeforeSlowDown;                          // 0xa0(0x1)
+	char                                                         pad0x3_SM8VB[0x3];                                 // 0xa1(0x3)
 	float                                                        ExitBeforeSlowDownDistanceTolerance;               // 0xa4(0x4)
 	bool                                                         ShouldOverrideMaxSpeedToSlow;                      // 0xa8(0x1)
+	char                                                         pad0x3_Q4Y4D[0x3];                                 // 0xa9(0x3)
 	float                                                        OverrideMaxSpeedToSlowDistanceFactor;              // 0xac(0x4)
 	bool                                                         MaintainFacingBeforeMove;                          // 0xb0(0x1)
+	char                                                         pad0x9_39CNM[0x9];                                 // 0xaf(0x9)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
 class BTTask_MoveToFailOnDistanceChange: public BTTask_AthenaMoveTo
 {
 public:
 	bool                                                         FailOnDistanceBeingLess;                           // 0xb8(0x1)
+	char                                                         pad0x3_3TJ0C[0x3];                                 // 0xb9(0x3)
 	float                                                        FailDistance;                                      // 0xbc(0x4)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xd0] - InheritedSize[0xc0]
 class BTTask_MoveToFailOnDistanceToSeenActors: public BTTask_MoveToFailOnDistanceChange
 {
 public:
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xe8] - InheritedSize[0xc0]
 class BTTask_MoveToFailOnDistanceToTargetChanged: public BTTask_MoveToFailOnDistanceChange
 {
 public:
@@ -3117,28 +3384,30 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
 class BTTask_MoveToMovingLocation: public BTTask_AthenaMoveTo
 {
 public:
 	float                                                        MinimumLocationMovementForRePath;                  // 0xb8(0x4)
 	float                                                        MinimumTimeBeforeRePath;                           // 0xbc(0x4)
 	bool                                                         IsContinuous;                                      // 0xc0(0x1)
+	char                                                         pad0x9_GM6BS[0x9];                                 // 0xbf(0x9)
 };
 
 
-// Size 0x98
+// Size 0x98 (Full Size[0xf8] - InheritedSize[0x60]
 class BTTask_AthenaWait: public BTTaskNode
 {
 public:
 	bool                                                         UseMinMax;                                         // 0x60(0x1)
+	char                                                         pad0x7_4HWIV[0x7];                                 // 0x61(0x7)
 	Struct AIDataProviderFloatValue                              Min;                                               // 0x68(0x30)
 	Struct AIDataProviderFloatValue                              Max;                                               // 0x98(0x30)
 	Struct AIDataProviderFloatValue                              FixedWaitTime;                                     // 0xc8(0x30)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x128] - InheritedSize[0xf8]
 class BTTask_AthenaWaitWithFloor: public BTTask_AthenaWait
 {
 public:
@@ -3146,35 +3415,35 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
 class BTTask_BurrowAbilityTriggerEruptAreaFromBlackboard: public BTTaskNode
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
 class BTTask_BurrowIntoGround: public BTTaskNode
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
 class BTTask_ClearBlackboardValue: public BTTask_BlackboardBase
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
 class BTTask_ClearPerceptualData: public BTTaskNode
 {
 public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0xd8] - InheritedSize[0x60]
 class BTTask_CopyAIInteractionPointAndFocusToBlackboard: public BTTaskNode
 {
 public:
@@ -3184,7 +3453,7 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
 class BTTask_CopyBlackboardActor: public BTTaskNode
 {
 public:
@@ -3193,7 +3462,7 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
 class BTTask_CopyBlackboardVector: public BTTaskNode
 {
 public:
@@ -3202,7 +3471,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_DetermineFollowUpAIAbility: public BTTaskNode
 {
 public:
@@ -3210,7 +3479,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_ExecuteAIAbility: public BTTaskNode
 {
 public:
@@ -3218,22 +3487,23 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
 class BTTask_GetCurrentHealth: public BTTask_BlackboardBase
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
 class BTTask_IgnoreActorTemporarily: public BTTask_BlackboardBase
 {
 public:
 	float                                                        TimeToForget;                                      // 0x88(0x4)
+	char                                                         pad0xc_N6LXB[0xc];                                 // 0x8a(0xc)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
 class BTTask_IncrementBlackboardFloatValue: public BTTask_BlackboardBase
 {
 public:
@@ -3241,7 +3511,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
 class BTTask_IncrementBlackboardIntValue: public BTTask_BlackboardBase
 {
 public:
@@ -3249,7 +3519,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
 class BTTask_InteractWith: public BTTask_BlackboardBase
 {
 public:
@@ -3257,7 +3527,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xd0] - InheritedSize[0xa0]
 class BTTask_MoveToTarget: public BTTask_MoveTo
 {
 public:
@@ -3267,7 +3537,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
 class BTTask_NetworkTriggerAnim: public BTTaskNode
 {
 public:
@@ -3277,40 +3547,43 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_NOP: public BTTaskNode
 {
 public:
 	int                                                          Id;                                                // 0x60(0x4)
+	char                                                         pad0xc_D8T10[0xc];                                 // 0x62(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
 class BTTask_PlayCustomMontageId: public BTTaskNode
 {
 public:
 	Struct CustomAnimationMontageId                              CustomAnimationMontageId;                          // 0x60(0x8)
 	float                                                        TimeToWaitOnServer;                                // 0x68(0x4)
+	char                                                         pad0xc_OBL29[0xc];                                 // 0x6a(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
 class BTTask_PlayMontage: public BTTaskNode
 {
 public:
 	Class Object*                                                MontageToPlay;                                     // 0x60(0x8)
 	bool                                                         PlayAsDynamicMontage;                              // 0x68(0x1)
+	char                                                         pad0x9_40Y4J[0x9];                                 // 0x67(0x9)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
 class BTTask_RequestDespawn: public BTTaskNode
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_SetAIStrategy: public BTTaskNode
 {
 public:
@@ -3318,7 +3591,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
 class BTTask_SetAIStrategyFromWeightedArray: public BTTaskNode
 {
 public:
@@ -3326,7 +3599,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
 class BTTask_SetBlackboardActor: public BTTask_BlackboardBase
 {
 public:
@@ -3334,15 +3607,16 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
 class BTTask_SetBlackboardBoolValue: public BTTask_BlackboardBase
 {
 public:
 	bool                                                         NewValue;                                          // 0x88(0x1)
+	char                                                         pad0x9_V4KTS[0x9];                                 // 0x87(0x9)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
 class BTTask_SetBlackboardClassValue: public BTTask_BlackboardBase
 {
 public:
@@ -3350,7 +3624,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
 class BTTask_SetBlackboardEQSValue: public BTTask_BlackboardBase
 {
 public:
@@ -3358,7 +3632,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
 class BTTask_SetBlackboardFloatValue: public BTTask_BlackboardBase
 {
 public:
@@ -3366,7 +3640,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x60 (Full Size[0xe8] - InheritedSize[0x88]
 class BTTask_SetBlackboardFloatValueFromMinMax: public BTTask_BlackboardBase
 {
 public:
@@ -3375,7 +3649,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
 class BTTask_SetBlackboardFloatValueFromWeightedArray: public BTTask_BlackboardBase
 {
 public:
@@ -3383,7 +3657,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
 class BTTask_SetBlackboardIntValue: public BTTask_BlackboardBase
 {
 public:
@@ -3391,17 +3665,18 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0xc0] - InheritedSize[0x88]
 class BTTask_SetBlackboardVectorValue: public BTTask_BlackboardBase
 {
 public:
 	bool                                                         UseVectorFromBlackboard;                           // 0x88(0x1)
+	char                                                         pad0x3_2JIFT[0x3];                                 // 0x89(0x3)
 	Struct Vector                                                StaticValue;                                       // 0x8c(0xc)
 	Struct BlackboardKeySelector                                 BlackboardKeyToUseForVector;                       // 0x98(0x28)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_SetFollowUpAbility: public BTTaskNode
 {
 public:
@@ -3409,23 +3684,25 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_SetInHiddenActionState: public BTTaskNode
 {
 public:
 	bool                                                         EnableHiddenActionState;                           // 0x60(0x1)
+	char                                                         pad0x9_WCCVO[0x9];                                 // 0x5f(0x9)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_SetIsHeadingOffNavMeshCheck: public BTTaskNode
 {
 public:
 	bool                                                         DisableIsHeadingOffNavMeshCheck;                   // 0x60(0x1)
+	char                                                         pad0x9_8R8DU[0x9];                                 // 0x5f(0x9)
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0xd8] - InheritedSize[0x60]
 class BTTask_SetupAITargetWeaponForNextShot: public BTTaskNode
 {
 public:
@@ -3435,84 +3712,92 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class BTTask_SetVelocity: public BTTask_BlackboardBase
 {
 public:
 	bool                                                         UseBlackboardKey;                                  // 0x88(0x1)
+	char                                                         pad0x3_FD1PX[0x3];                                 // 0x89(0x3)
 	Struct Vector                                                NewVelocity;                                       // 0x8c(0xc)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0xa0] - InheritedSize[0x60]
 class BTTask_SpawnActorAndStore: public BTTaskNode
 {
 public:
 	Struct BlackboardKeySelector                                 BlackBoardKeyNameToStoreActor;                     // 0x60(0x28)
 	class                                                        ActorToSpawn;                                      // 0x88(0x8)
 	Struct Vector                                                SpawnOffset;                                       // 0x90(0xc)
+	char                                                         pad0x1c_YTKD9[0x1c];                               // 0x9a(0x1c)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
 class BTTask_StopMovementImmediately: public BTTaskNode
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
 class BTTask_StorePawnLocationInBlackboard: public BTTask_BlackboardBase
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
 class BTTask_TeleportTo: public BTTask_BlackboardBase
 {
 public:
 	bool                                                         UseNavMesh;                                        // 0x88(0x1)
+	char                                                         pad0x9_AI5IU[0x9];                                 // 0x87(0x9)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
 class BTTask_TriggerNotification: public BTTaskNode
 {
 public:
 	class                                                        NotificationId;                                    // 0x60(0x8)
+	char                                                         pad0x18_3G8NJ[0x18];                               // 0x66(0x18)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_UnwieldCurrentWeapon: public BTTaskNode
 {
 public:
 	bool                                                         WaitForSuccessfulUnwield;                          // 0x60(0x1)
 	bool                                                         ShouldUnwieldFast;                                 // 0x61(0x1)
+	char                                                         pad0x8_IRR2B[0x8];                                 // 0x60(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class BurrowInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
 class BurrowComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_ZRZAQ[0x8];                                 // 0xc8(0x8)
 	class                                                        BurrowCrackClass;                                  // 0xd0(0x8)
 	class                                                        BurrowEruptClass;                                  // 0xd8(0x8)
 	float                                                        BurrowFadeoutTime;                                 // 0xe0(0x4)
+	char                                                         pad0x4_6YO8E[0x4];                                 // 0xe4(0x4)
 	TArray<class BurrowCrack*>                                   BurrowCracks;                                      // 0xe8(0x10)
 	Class BurrowEruptBase*                                       BurrowErupt;                                       // 0xf8(0x8)
+	char                                                         pad0x18_HQ1FA[0x18];                               // 0xfe(0x18)
 };
 
 
-// Size 0xe0
+// Size 0xe0 (Full Size[0x1a8] - InheritedSize[0xc8]
 class CoralShieldVFXComponent: public ActorComponent
 {
 public:
@@ -3520,27 +3805,31 @@ public:
 	struct FName                                                 VfxSocketName;                                     // 0xd0(0x8)
 	Class ParticleSystemComponent*                               SpawnedVFXSystem;                                  // 0xd8(0x8)
 	byte                                                         CurrentCoralShieldRole;                            // 0xe0(0x1)
+	char                                                         pad0x7_WPGLS[0x7];                                 // 0xe1(0x7)
 	Class CurveFloat*                                            OffToOnCurve;                                      // 0xe8(0x8)
 	float                                                        OffToOnDuration;                                   // 0xf0(0x4)
+	char                                                         pad0x4_GIY5M[0x4];                                 // 0xf4(0x4)
 	Class CurveFloat*                                            OnToOffCurve;                                      // 0xf8(0x8)
 	float                                                        OnToOffDuration;                                   // 0x100(0x4)
 	struct FName                                                 OffToOnParamOverrideName;                          // 0x104(0x8)
 	struct FName                                                 OnToOffParamOverrideName;                          // 0x10c(0x8)
 	struct FName                                                 ReceiverMeshComponentName;                         // 0x114(0x8)
 	struct FName                                                 CasterMeshComponentName;                           // 0x11c(0x8)
+	char                                                         pad0x4_YQ6EB[0x4];                                 // 0x124(0x4)
 	TArray<class MaterialInstanceDynamic*>                       OverriddenMaterialsForReceive;                     // 0x128(0x10)
 	TArray<class MaterialInstanceDynamic*>                       OverriddenMaterialsForCast;                        // 0x138(0x10)
+	char                                                         pad0x80_W2CJT[0x80];                               // 0x146(0x80)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CustomAttitudeInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class CustomSkeletonAnimationDataList: public DataAsset
 {
 public:
@@ -3548,87 +3837,90 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class EnvQueryContext_ContextLocationFromBlackboard: public EnvQueryContext_PositionFromBlackboard
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class EnvQueryContext_HomePositionFromBlackboard: public EnvQueryContext_PositionFromBlackboard
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class EnvQueryContext_KnockbackPosFromBlackboard: public EnvQueryContext_PositionFromBlackboard
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class EnvQueryContext_ThrowableTargetPositionFromBlackboard: public EnvQueryContext_PositionFromBlackboard
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class EnvQueryContext_SeenActors: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class EnvQueryContext_SeenActorsProjectedToGround: public EnvQueryContext
 {
 public:
 	TArray<class Actor*>                                         SeenActors;                                        // 0x28(0x10)
+	char                                                         pad0x40_PPGLC[0x40];                               // 0x36(0x40)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EnvQueryContext_SpawnedForActorFromBlackboard: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EnvQueryContext_TargetActorFromBlackboard: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EnvQueryContext_TargetActorFromBlackboardPredictedLocation: public EnvQueryContext_TargetActorFromBlackboard
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EnvQueryContext_TargetActorFromParams: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x68] - InheritedSize[0x58]
 class EnvQueryGenerator_AIRegionLocations: public EnvQueryGenerator
 {
 public:
 	bool                                                         UseOverrideSpawnType;                              // 0x58(0x1)
+	char                                                         pad0x3_LMELU[0x3];                                 // 0x59(0x3)
 	struct FName                                                 OverrideSpawnType;                                 // 0x5c(0x8)
+	char                                                         pad0x14_6VBHT[0x14];                               // 0x62(0x14)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x60] - InheritedSize[0x58]
 class EnvQueryGenerator_FromContext: public EnvQueryGenerator
 {
 public:
@@ -3636,7 +3928,7 @@ public:
 };
 
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0x140] - InheritedSize[0x98]
 class EnvQueryGenerator_Line: public EnvQueryGenerator_ProjectedPoints
 {
 public:
@@ -3648,10 +3940,11 @@ public:
 	float                                                        MaxValidLineLength;                                // 0x138(0x4)
 	bool                                                         ForceIncludeEndPoint;                              // 0x13c(0x1)
 	bool                                                         ProjectPointsToWaterSurface;                       // 0x13d(0x1)
+	char                                                         pad0x4_0OB36[0x4];                                 // 0x13c(0x4)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
 class EnvQueryGenerator_PointsAtContext: public EnvQueryGenerator_ProjectedPoints
 {
 public:
@@ -3659,7 +3952,7 @@ public:
 };
 
 
-// Size 0xd0
+// Size 0xd0 (Full Size[0x168] - InheritedSize[0x98]
 class EnvQueryGenerator_Sphere: public EnvQueryGenerator_ProjectedPoints
 {
 public:
@@ -3667,13 +3960,14 @@ public:
 	Struct AIDataProviderIntValue                                NumberOfVerticalCircles;                           // 0xa8(0x30)
 	Struct AIDataProviderIntValue                                NumberOfHorizontalCircles;                         // 0xd8(0x30)
 	bool                                                         DefineFirstPointDirection;                         // 0x108(0x1)
+	char                                                         pad0x7_J5UY3[0x7];                                 // 0x109(0x7)
 	Struct EnvDirection                                          FirstPointDirection;                               // 0x110(0x20)
 	class                                                        Centre;                                            // 0x130(0x8)
 	Struct AIDataProviderFloatValue                              ZOffsetFromCentre;                                 // 0x138(0x30)
 };
 
 
-// Size 0x180
+// Size 0x180 (Full Size[0x218] - InheritedSize[0x98]
 class EnvQueryGenerator_WaterArc: public EnvQueryGenerator_ProjectedPoints
 {
 public:
@@ -3686,11 +3980,13 @@ public:
 	Struct AIDataProviderFloatValue                              MinArcPercentage;                                  // 0x190(0x30)
 	Struct AIDataProviderFloatValue                              MaxArcPercentage;                                  // 0x1c0(0x30)
 	bool                                                         IncludeDirectArcToTarget;                          // 0x1f0(0x1)
+	char                                                         pad0x7_FE6LR[0x7];                                 // 0x1f1(0x7)
 	class                                                        DirectArcTarget;                                   // 0x1f8(0x8)
+	char                                                         pad0x28_KSXGP[0x28];                               // 0x1fe(0x28)
 };
 
 
-// Size 0x160
+// Size 0x160 (Full Size[0x1f8] - InheritedSize[0x98]
 class EnvQueryGenerator_WaterDonut: public EnvQueryGenerator_ProjectedPoints
 {
 public:
@@ -3704,12 +4000,14 @@ public:
 	class                                                        Center;                                            // 0x1d8(0x8)
 	bool                                                         bDefineArc;                                        // 0x1e0(0x1)
 	bool                                                         ProjectPointsToWaterSurface;                       // 0x1e0(0x1)
+	char                                                         pad0x7_DNEYE[0x7];                                 // 0x1e1(0x7)
 	class                                                        WaterPlaneSourceContext;                           // 0x1e8(0x8)
 	bool                                                         ApplyZOffsetToProjectPoints;                       // 0x1f0(0x1)
+	char                                                         pad0x9_4R36E[0x9];                                 // 0x1ef(0x9)
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x110] - InheritedSize[0x98]
 class EnvQueryGenerator_WaterMultiDeckerRing: public EnvQueryGenerator_ProjectedPoints
 {
 public:
@@ -3720,31 +4018,33 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class EnvQueryProviderInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x180] - InheritedSize[0x170]
 class EnvQueryTest_HasLineOfSight: public EnvQueryTest
 {
 public:
 	byte                                                         TraceDirection;                                    // 0x170(0x1)
+	char                                                         pad0x7_GLDLA[0x7];                                 // 0x171(0x7)
 	class                                                        Context;                                           // 0x178(0x8)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x178] - InheritedSize[0x170]
 class EnvQueryTest_InGameEventExclusionZone: public EnvQueryTest
 {
 public:
 	float                                                        Radius;                                            // 0x170(0x4)
+	char                                                         pad0xc_JR7J8[0xc];                                 // 0x172(0xc)
 };
 
 
-// Size 0xa0
+// Size 0xa0 (Full Size[0x210] - InheritedSize[0x170]
 class EnvQueryTest_IsAngleInRange2D: public EnvQueryTest
 {
 public:
@@ -3755,26 +4055,29 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x180] - InheritedSize[0x170]
 class EnvQueryTest_WaterHeight: public EnvQueryTest
 {
 public:
 	float                                                        WaterHeightCheckOffset;                            // 0x170(0x4)
+	char                                                         pad0x4_54ICJ[0x4];                                 // 0x174(0x4)
 	class                                                        ActorWithWaterPlaneContext;                        // 0x178(0x8)
 };
 
 
-// Size 0x138
+// Size 0x138 (Full Size[0x200] - InheritedSize[0xc8]
 class HealthGemComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x118_EMHAW[0x118];                             // 0xc8(0x118)
 	TArray<class MaterialInstanceDynamic*>                       OverridenMaterials;                                // 0x1e0(0x10)
 	struct FName                                                 EmissiveMaterialParameterName;                     // 0x1f0(0x8)
 	bool                                                         BuildMaterialMapOnBeginPlay;                       // 0x1f8(0x1)
+	char                                                         pad0x9_YA55M[0x9];                                 // 0x1f7(0x9)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class IsAIOfClassStatCondition: public TargetedStatCondition
 {
 public:
@@ -3782,7 +4085,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class IsAIOfFormStatCondition: public TargetedStatCondition
 {
 public:
@@ -3790,7 +4093,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class IsAIOfSkillsetStatCondition: public TargetedStatCondition
 {
 public:
@@ -3798,7 +4101,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class IsAIUsingFormDataAssetStatCondition: public TargetedStatCondition
 {
 public:
@@ -3806,43 +4109,47 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x48 (Full Size[0x110] - InheritedSize[0xc8]
 class PeriodicAINoiseEventComponent: public ActorComponent
 {
 public:
 	struct FName                                                 NoiseTag;                                          // 0xc8(0x8)
 	bool                                                         NoiseRangeBasedOnMovementSpeed;                    // 0xd0(0x1)
+	char                                                         pad0x3_LI4L7[0x3];                                 // 0xd1(0x3)
 	float                                                        ConstantNoiseRange;                                // 0xd4(0x4)
 	Class CurveFloat*                                            MovementSpeedToNoiseRange;                         // 0xd8(0x8)
 	Class Actor*                                                 OwnerActor;                                        // 0xe0(0x8)
+	char                                                         pad0x38_UGMJ6[0x38];                               // 0xe6(0x38)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
 class PlayerEntitlementCustomAttitudeComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_QNQMY[0x8];                                 // 0xc8(0x8)
 	class                                                        Entitlement;                                       // 0xd0(0x8)
 	byte                                                         HasEntitlementAttitude;                            // 0xd8(0x1)
 	byte                                                         LacksEntitlementAttitude;                          // 0xd9(0x1)
+	char                                                         pad0x8_JE5WH[0x8];                                 // 0xd8(0x8)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class PlayerProximityObservedSpawnContextProvider: public Object
 {
 public:
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class SimpleAIRegion: public Object
 {
 public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
 class SpawnContextProviderZone: public Actor
 {
 public:
@@ -3851,62 +4158,67 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x48] - InheritedSize[0x48]
 class BaseSpawnBlockingBehaviourStrategy: public SpawnerBehaviourStrategy
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x58] - InheritedSize[0x48]
 class SirenEncounterSpawnBlockingBehaviourStrategy: public BaseSpawnBlockingBehaviourStrategy
 {
 public:
 	float                                                        ChanceToSpawn;                                     // 0x48(0x4)
+	char                                                         pad0x14_CQ416[0x14];                               // 0x4a(0x14)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class StatusResponseSetBlackboardBoolKey: public StatusResponse
 {
 public:
 	struct FName                                                 BlackboardBoolKeyName;                             // 0x30(0x8)
 	bool                                                         bValueWhenActive;                                  // 0x38(0x1)
 	bool                                                         ShouldClearKeyOnEnd;                               // 0x39(0x1)
+	char                                                         pad0x8_NY3I4[0x8];                                 // 0x38(0x8)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class StatusResponseSetBlackboardClassKey: public StatusResponse
 {
 public:
 	struct FName                                                 BlackboardClassKeyName;                            // 0x30(0x8)
 	class                                                        ValueWhenActive;                                   // 0x38(0x8)
 	bool                                                         SetValueOnDeactivate;                              // 0x40(0x1)
+	char                                                         pad0x7_DQCNA[0x7];                                 // 0x41(0x7)
 	class                                                        ValueWhenDeactivated;                              // 0x48(0x8)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
 class StatusResponseSetBlackboardFloatKey: public StatusResponse
 {
 public:
 	struct FName                                                 BlackboardFloatKeyName;                            // 0x30(0x8)
 	float                                                        ValueWhenActive;                                   // 0x38(0x4)
 	bool                                                         ShouldClearKeyOnEnd;                               // 0x3c(0x1)
+	char                                                         pad0xd_KHB5F[0xd];                                 // 0x3b(0xd)
 };
 
 
-// Size 0x88
+// Size 0x88 (Full Size[0x150] - InheritedSize[0xc8]
 class VulnerabilityDuringAIStrategyComponent: public ActorComponent
 {
 public:
 	TArray<Struct AIStrategyVulnerabilityData>                   StrategyVulnerabilities;                           // 0xc8(0x10)
 	Class HealthComponent*                                       HealthComponent;                                   // 0xd8(0x8)
+	char                                                         pad0x80_K6AEL[0x80];                               // 0xde(0x80)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
 class WaterbasedAISupplier: public Actor
 {
 public:
@@ -3914,7 +4226,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x320] - InheritedSize[0x2f0]
 class AICreatureCharacterPathFollowingComponent: public AthenaAICharacterPathFollowingComponent
 {
 public:
@@ -3923,18 +4235,20 @@ public:
 	float                                                        MaximumLandTime;                                   // 0x2f8(0x4)
 	float                                                        MinStairAngle;                                     // 0x2fc(0x4)
 	float                                                        MinStairVelocityDampen;                            // 0x300(0x4)
+	char                                                         pad0x4_BHVFL[0x4];                                 // 0x304(0x4)
 	TArray<Class SubscribedStairClimbStrategies>                 SubscribedStairClimbStrategies;                    // 0x308(0x10)
+	char                                                         pad0x28_O6HVF[0x28];                               // 0x316(0x28)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AICreatureMovementModifierInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AICreatureMovementModifierParamsDataAsset: public DataAsset
 {
 public:
@@ -3942,17 +4256,18 @@ public:
 	float                                                        FlyingTurnRateMultiplier;                          // 0x2c(0x4)
 	bool                                                         UseTighterTurningCircle;                           // 0x30(0x1)
 	bool                                                         UseHighResNavMesh;                                 // 0x31(0x1)
+	char                                                         pad0x8_5VNIB[0x8];                                 // 0x30(0x8)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class BehaviourTreeInterruptionInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ForcedIdleBehaviourInterface: public Interface
 {
 public:

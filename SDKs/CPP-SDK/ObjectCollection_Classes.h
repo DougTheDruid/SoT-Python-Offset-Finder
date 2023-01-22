@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ObjectCollectorInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x60
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
 class TestCollector: public Object
 {
 public:
 };
 
 
-// Size 0x48
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class TestObjectForCollection: public Object
 {
 public:

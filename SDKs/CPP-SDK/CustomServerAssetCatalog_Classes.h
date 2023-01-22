@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CustomServerAssetCatalogServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xc8
+// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
 class CustomServerAssetCatalogService: public Object
 {
 public:

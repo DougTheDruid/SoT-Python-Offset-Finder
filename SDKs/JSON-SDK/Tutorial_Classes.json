@@ -23,6 +23,12 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xb8_GSGO3[0xb8]",
+        "Type": "char",
+        "Size": "0xb8",
+        "Offset": "0x36"
       }
     ]
   },
@@ -43,6 +49,12 @@
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x58_DVRL1[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xe6"
       }
     ]
   },
@@ -57,6 +69,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x9_T9OJP[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x2f"
       }
     ]
   },
@@ -84,6 +102,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xc9"
+      },
+      {
+        "Name": "pad0x8_PP3XA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
       }
     ]
   },
@@ -128,6 +152,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x70",
     "Attributes": [
+      {
+        "Name": "pad0x8_XPOB4[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
       {
         "Name": "CompanyOnboardingStarterClass",
         "Type": "class",
@@ -223,6 +253,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x117"
+      },
+      {
+        "Name": "pad0x22_TJZHI[0x22]",
+        "Type": "char",
+        "Size": "0x22",
+        "Offset": "0x116"
       }
     ]
   },
@@ -249,6 +285,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x31"
+      },
+      {
+        "Name": "pad0x2_RUFRL[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x32"
       },
       {
         "Name": "IntroAnimationSettings",
@@ -296,6 +338,12 @@
         "Offset": "0x6a"
       },
       {
+        "Name": "pad0x5_JDWAB[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x6b"
+      },
+      {
         "Name": "CheckIfEntitlementIsOwned",
         "Type": "class",
         "Size": "0x8",
@@ -306,6 +354,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x3_N4WJL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x79"
       },
       {
         "Name": "FeatureToggle",
@@ -320,6 +374,12 @@
         "Offset": "0x84"
       },
       {
+        "Name": "pad0x3_OU0NY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x85"
+      },
+      {
         "Name": "PromptCounterKey",
         "Type": "class",
         "Size": "0x8",
@@ -330,6 +390,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x6c_IR8YQ[0x6c]",
+        "Type": "char",
+        "Size": "0x6c",
+        "Offset": "0x92"
       }
     ]
   },

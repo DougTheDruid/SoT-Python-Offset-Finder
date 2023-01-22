@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_EA5IW[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "State_RodWielded",
         "Type": "bool",
         "Size": "0x1",
@@ -156,6 +162,12 @@
         "Offset": "0x540"
       },
       {
+        "Name": "pad0x7_VL609[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x541"
+      },
+      {
         "Name": "Handle_FishEscaped",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -166,6 +178,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x590"
+      },
+      {
+        "Name": "pad0x7_GA4FJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x591"
       },
       {
         "Name": "Handle_PlayerDeath",

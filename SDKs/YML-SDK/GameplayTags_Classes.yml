@@ -12,6 +12,10 @@ EditableGameplayTagQuery:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct FString
+  - Name: pad0x10_UBWNE[0x10]
+    Offset: '0x38'
+    Size: '0x10'
+    Type: char
   - Name: RootExpression
     Offset: '0x48'
     Size: '0x8'
@@ -98,10 +102,18 @@ GameplayTagAssetInterface:
   Super: Interface
 GameplayTagsManager:
   Attributes:
+  - Name: pad0x118_TONC3[0x118]
+    Offset: '0x28'
+    Size: '0x118'
+    Type: char
   - Name: GameplayTagTables
     Offset: '0x140'
     Size: '0x10'
     Type: TArray<class DataTable*>
+  - Name: pad0x40_S7PFB[0x40]
+    Offset: '0x14e'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x148'
   FullSize: '0x170'
   InheritedSize: '0x28'

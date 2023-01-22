@@ -60,6 +60,10 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_S5S1V[0x3]
+    Offset: '0x89'
+    Size: '0x3'
+    Type: char
   - Name: RequestCorrelationId
     Offset: '0x8c'
     Size: '0x10'
@@ -79,15 +83,27 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_MG1WF[0x3]
+    Offset: '0x15'
+    Size: '0x3'
+    Type: char
   - Name: PvPSkillLevel
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_H1S0Z[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: TimeInMatchmaking
     Offset: '0x20'
     Size: '0x8'
     Type: Struct Timespan
-  ClassSize: '0x28'
+  - Name: ForcedStamp
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x38'
 OptionalPlayModeModel:
   Attributes: []
   ClassSize: '0x50'
@@ -128,6 +144,10 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_Z29TH[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   - Name: Positions
     Offset: '0x50'
     Size: '0x10'
@@ -140,6 +160,10 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_74WW9[0x3]
+    Offset: '0x71'
+    Size: '0x3'
+    Type: char
   - Name: PvPSkillLevel
     Offset: '0x74'
     Size: '0x4'
@@ -156,11 +180,19 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_H5M9E[0x3]
+    Offset: '0x8d'
+    Size: '0x3'
+    Type: char
   - Name: TimeWaitingForMatch
     Offset: '0x90'
     Size: '0x8'
     Type: Struct Timespan
-  ClassSize: '0x98'
+  - Name: ForcedStamp
+    Offset: '0x98'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0xa8'
 ServerCrewRequestModel:
   Attributes:
   - Name: ServerId
@@ -179,66 +211,78 @@ ServerCrewRequestModel:
     Offset: '0x30'
     Size: '0x10'
     Type: Struct FString
+  - Name: StampId
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
   - Name: PlayModeTags
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x10'
     Type: TArray<Str PlayModeTags>
   - Name: PlayModeState
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x10'
     Type: Struct FString
   - Name: CrewCount
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x4'
     Type: int
   - Name: CrewCountBucket
-    Offset: '0x6c'
+    Offset: '0x7c'
     Size: '0x4'
     Type: int
   - Name: CrewMin
-    Offset: '0x70'
+    Offset: '0x80'
     Size: '0x4'
     Type: int
   - Name: CrewMax
-    Offset: '0x74'
+    Offset: '0x84'
     Size: '0x4'
     Type: int
   - Name: CrewSessionTypes
-    Offset: '0x78'
+    Offset: '0x88'
     Size: '0x10'
     Type: TArray<Int CrewSessionTypes>
   - Name: Crews
-    Offset: '0x88'
+    Offset: '0x98'
     Size: '0x10'
     Type: TArray<Struct ExistingServerCrewModel>
   - Name: Uptime
-    Offset: '0x98'
+    Offset: '0xa8'
     Size: '0x8'
     Type: Struct Timespan
   - Name: Contended
-    Offset: '0xa0'
+    Offset: '0xb0'
     Size: '0x30'
     Type: Struct ServerContendedModel
-  ClassSize: '0xd0'
+  ClassSize: '0xe0'
 ServerCrewResponseModel:
   Attributes:
-  - Name: Crews
+  - Name: ResultCode
     Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x7_M5JZ0[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
+  - Name: Crews
+    Offset: '0x8'
     Size: '0x10'
     Type: TArray<Struct ServerCrewModel>
   - Name: RetryAfter
-    Offset: '0x60'
-    Size: '0x8'
-    Type: Struct Timespan
-  - Name: MigrationThreshold
     Offset: '0x68'
     Size: '0x8'
     Type: Struct Timespan
-  - Name: ExpireAfter
+  - Name: MigrationThreshold
     Offset: '0x70'
     Size: '0x8'
     Type: Struct Timespan
-  ClassSize: '0x78'
+  - Name: ExpireAfter
+    Offset: '0x78'
+    Size: '0x8'
+    Type: Struct Timespan
+  ClassSize: '0x80'
 ServerQueueWaitTimeModel:
   Attributes:
   - Name: QueueScopeId

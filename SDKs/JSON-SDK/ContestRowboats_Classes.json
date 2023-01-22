@@ -13,10 +13,22 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x8_AW4EZ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "RowboatClass",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x60_PMUD9[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x3d6"
       }
     ]
   },

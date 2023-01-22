@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x7f8] - InheritedSize[0x7f0]
 class BP_ProxyIngestible_Retractable_C: public BP_ProxyIngestible_C
 {
 public:

@@ -13,6 +13,12 @@
     "ClassSize": "0x1e8",
     "Attributes": [
       {
+        "Name": "pad0x1c_L6VY9[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x28"
+      },
+      {
         "Name": "LandscapeGuid",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -41,6 +47,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x1bc_TJ7CF[0x1bc]",
+        "Type": "char",
+        "Size": "0x1bc",
+        "Offset": "0x6a"
       }
     ]
   },
@@ -79,6 +91,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x5c8"
+      },
+      {
+        "Name": "pad0x4_8SRAO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5cc"
       },
       {
         "Name": "OverrideMaterial",
@@ -129,6 +147,12 @@
         "Offset": "0x620"
       },
       {
+        "Name": "pad0xc_9SM9T[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x624"
+      },
+      {
         "Name": "HeightmapScaleBias",
         "Type": "Struct Vector4",
         "Size": "0x10",
@@ -151,6 +175,12 @@
         "Type": "TArray<Struct Guid>",
         "Size": "0x10",
         "Offset": "0x680"
+      },
+      {
+        "Name": "pad0x10_0XYNM[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x690"
       },
       {
         "Name": "CollisionMipLevel",
@@ -201,6 +231,12 @@
         "Offset": "0x6d8"
       },
       {
+        "Name": "pad0x7_CY5X5[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x6d9"
+      },
+      {
         "Name": "MobileMaterialInterface",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
@@ -211,6 +247,12 @@
         "Type": "Class Texture2D*",
         "Size": "0x8",
         "Offset": "0x6e8"
+      },
+      {
+        "Name": "pad0x40_Q5U0J[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x6ee"
       }
     ]
   },
@@ -288,6 +330,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x51"
+      },
+      {
+        "Name": "pad0x8_21E7Z[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x50"
       }
     ]
   },
@@ -350,6 +398,12 @@
         "Type": "TArray<class PhysicalMaterial*>",
         "Size": "0x10",
         "Offset": "0x640"
+      },
+      {
+        "Name": "pad0x60_X3NR6[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x64e"
       }
     ]
   },
@@ -364,6 +418,12 @@
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x690"
+      },
+      {
+        "Name": "pad0x30_I2RZ1[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x69e"
       }
     ]
   },
@@ -397,6 +457,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0xc_3E80X[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3a"
       }
     ]
   },
@@ -413,6 +479,12 @@
         "Offset": "0x1b8"
       },
       {
+        "Name": "pad0x3_XM2QV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1b9"
+      },
+      {
         "Name": "DataWeightmapIndex",
         "Type": "int",
         "Size": "0x4",
@@ -423,6 +495,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x1c0"
+      },
+      {
+        "Name": "pad0xc_28GKI[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x1c2"
       }
     ]
   },
@@ -446,6 +524,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x388",
     "Attributes": [
+      {
+        "Name": "pad0x8_6PFIF[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "SplineComponent",
         "Type": "Class LandscapeSplinesComponent*",
@@ -489,6 +573,12 @@
         "Offset": "0x400"
       },
       {
+        "Name": "pad0x4_LXL05[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x404"
+      },
+      {
         "Name": "LandscapeMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
@@ -507,6 +597,12 @@
         "Offset": "0x418"
       },
       {
+        "Name": "pad0x4_PF5ZH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x41c"
+      },
+      {
         "Name": "LandscapeComponents",
         "Type": "TArray<class LandscapeComponent*>",
         "Size": "0x10",
@@ -523,6 +619,12 @@
         "Type": "TArray<class HierarchicalInstancedStaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x440"
+      },
+      {
+        "Name": "pad0x70_I24K6[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x450"
       },
       {
         "Name": "StaticLightingResolution",
@@ -565,6 +667,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4e0"
+      },
+      {
+        "Name": "pad0x3_X9TIL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x4e1"
       },
       {
         "Name": "LpvIntensityMultiplier",
@@ -639,6 +747,12 @@
         "Offset": "0x69c"
       },
       {
+        "Name": "pad0x3_A7UM7[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x69d"
+      },
+      {
         "Name": "NavigationGeometryGatheringMode",
         "Type": "byte",
         "Size": "0x1",
@@ -649,6 +763,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x6a1"
+      },
+      {
+        "Name": "pad0xb0_C4DD6[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x6a0"
       }
     ]
   },
@@ -669,6 +789,12 @@
         "Type": "TArray<Struct IntPoint>",
         "Size": "0x10",
         "Offset": "0x630"
+      },
+      {
+        "Name": "pad0x30_E3PXD[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x63e"
       }
     ]
   },
@@ -702,6 +828,12 @@
         "Type": "TArray<class MeshComponent*>",
         "Size": "0x10",
         "Offset": "0x5d8"
+      },
+      {
+        "Name": "pad0x28_M0431[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x5e6"
       }
     ]
   },
@@ -716,6 +848,12 @@
         "Type": "Struct LandscapeSplineSegmentConnection",
         "Size": "0x18",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x18_N3R1A[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x40"
       },
       {
         "Name": "SplineInfo",
@@ -734,6 +872,12 @@
         "Type": "Struct Box",
         "Size": "0x1c",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_G6MJ9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       },
       {
         "Name": "LocalMeshComponents",
@@ -780,6 +924,12 @@
         "Offset": "0x48"
       },
       {
+        "Name": "pad0x4_Q1M3Q[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
         "Name": "ConnectedSegments",
         "Type": "TArray<Struct LandscapeSplineConnection>",
         "Size": "0x10",
@@ -796,6 +946,12 @@
         "Type": "Struct Box",
         "Size": "0x1c",
         "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x4_MEDVK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8c"
       },
       {
         "Name": "LocalMeshComponent",
@@ -858,6 +1014,12 @@
         "Offset": "0x71"
       },
       {
+        "Name": "pad0x2_ILK5P[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x72"
+      },
+      {
         "Name": "MappingScale",
         "Type": "float",
         "Size": "0x4",
@@ -880,6 +1042,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0xc_72DB3[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x82"
       }
     ]
   },
@@ -906,6 +1074,12 @@
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x7c"
+      },
+      {
+        "Name": "pad0x24_YOPE3[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x8a"
       }
     ]
   },
@@ -940,10 +1114,22 @@
         "Offset": "0xe8"
       },
       {
+        "Name": "pad0x3_746W4[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xe9"
+      },
+      {
         "Name": "ExpressionGUID",
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0xec"
+      },
+      {
+        "Name": "pad0x24_SESFA[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0xfa"
       }
     ]
   },

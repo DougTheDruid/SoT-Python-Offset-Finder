@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
 class MovieScene3DConstraintSection: public MovieSceneSection
 {
 public:
@@ -14,7 +14,7 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xc0] - InheritedSize[0xa8]
 class MovieScene3DAttachSection: public MovieScene3DConstraintSection
 {
 public:
@@ -26,23 +26,26 @@ public:
 	bool                                                         bConstrainRx;                                      // 0xb8(0x1)
 	bool                                                         bConstrainRy;                                      // 0xb8(0x1)
 	bool                                                         bConstrainRz;                                      // 0xb8(0x1)
+	char                                                         pad0x9_UKRSG[0x9];                                 // 0xb7(0x9)
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x128] - InheritedSize[0xa8]
 class MovieScene3DPathSection: public MovieScene3DConstraintSection
 {
 public:
 	Struct RichCurve                                             TimingCurve;                                       // 0xa8(0x78)
 	byte                                                         FrontAxisEnum;                                     // 0x120(0x1)
 	byte                                                         UpAxisEnum;                                        // 0x121(0x1)
+	char                                                         pad0x2_XK9MD[0x2];                                 // 0x122(0x2)
 	bool                                                         bFollow;                                           // 0x124(0x1)
 	bool                                                         bReverse;                                          // 0x124(0x1)
 	bool                                                         bForceUpright;                                     // 0x124(0x1)
+	char                                                         pad0x5_OIPEL[0x5];                                 // 0x123(0x5)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieScene3DConstraintTrack: public MovieSceneTrack
 {
 public:
@@ -50,40 +53,46 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class MovieScene3DAttachTrack: public MovieScene3DConstraintTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class MovieScene3DPathTrack: public MovieScene3DConstraintTrack
 {
 public:
 };
 
 
-// Size 0x440
+// Size 0x440 (Full Size[0x4d8] - InheritedSize[0x98]
 class MovieScene3DTransformSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_HKYHQ[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             Translation;                                       // 0xa0(0x78)
+	char                                                         pad0xf0_BAZ5S[0xf0];                               // 0x118(0xf0)
 	Struct RichCurve                                             Rotation;                                          // 0x208(0x78)
+	char                                                         pad0xf0_2FMUS[0xf0];                               // 0x280(0xf0)
 	Struct RichCurve                                             Scale;                                             // 0x370(0x78)
+	char                                                         pad0x1e0_N4U3I[0x1e0];                             // 0x3e6(0x1e0)
 };
 
 
-// Size 0x98
+// Size 0x98 (Full Size[0x130] - InheritedSize[0x98]
 class MovieSceneActorReferenceSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_AOHE3[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         ActorGuidIndexCurve;                               // 0xa0(0x70)
+	char                                                         pad0x10_JV5QZ[0x10];                               // 0x110(0x10)
 	TArray<Str ActorGuidStrings>                                 ActorGuidStrings;                                  // 0x120(0x10)
 };
 
 
-// Size 0x110
+// Size 0x110 (Full Size[0x1a8] - InheritedSize[0x98]
 class MovieSceneAudioSection: public MovieSceneSection
 {
 public:
@@ -95,10 +104,11 @@ public:
 	Struct RichCurve                                             SoundVolume;                                       // 0xb0(0x78)
 	Struct RichCurve                                             PitchMultiplier;                                   // 0x128(0x78)
 	bool                                                         bSuppressSubtitles;                                // 0x1a0(0x1)
+	char                                                         pad0x9_YN32A[0x9];                                 // 0x19f(0x9)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneAudioTrack: public MovieSceneNameableTrack
 {
 public:
@@ -106,31 +116,34 @@ public:
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x118] - InheritedSize[0x98]
 class MovieSceneBoolSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_PICRH[0x8];                                 // 0x98(0x8)
 	bool                                                         DefaultValue;                                      // 0xa0(0x1)
+	char                                                         pad0x7_EJQNP[0x7];                                 // 0xa1(0x7)
 	Struct IntegralCurve                                         BoolCurve;                                         // 0xa8(0x70)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x118] - InheritedSize[0x118]
 class MovieSceneSpawnSection: public MovieSceneBoolSection
 {
 public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x110] - InheritedSize[0x98]
 class MovieSceneByteSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_IQNKY[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         ByteCurve;                                         // 0xa0(0x70)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0xd8] - InheritedSize[0x98]
 class MovieSceneCameraAnimSection: public MovieSceneSection
 {
 public:
@@ -141,10 +154,11 @@ public:
 	float                                                        BlendInTime;                                       // 0xc8(0x4)
 	float                                                        BlendOutTime;                                      // 0xcc(0x4)
 	bool                                                         bLooping;                                          // 0xd0(0x1)
+	char                                                         pad0x9_MSD23[0x9];                                 // 0xcf(0x9)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneCameraAnimTrack: public MovieSceneNameableTrack
 {
 public:
@@ -152,7 +166,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
 class MovieSceneCameraCutSection: public MovieSceneSection
 {
 public:
@@ -160,7 +174,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneCameraCutTrack: public MovieSceneNameableTrack
 {
 public:
@@ -168,7 +182,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0xd8] - InheritedSize[0x98]
 class MovieSceneCameraShakeSection: public MovieSceneSection
 {
 public:
@@ -176,11 +190,13 @@ public:
 	class                                                        ShakeClass;                                        // 0xb8(0x8)
 	float                                                        PlayScale;                                         // 0xc0(0x4)
 	byte                                                         PlaySpace;                                         // 0xc4(0x1)
+	char                                                         pad0x3_DEV0S[0x3];                                 // 0xc5(0x3)
 	Struct Rotator                                               UserDefinedPlaySpace;                              // 0xc8(0xc)
+	char                                                         pad0x1c_UT98I[0x1c];                               // 0xd2(0x1c)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneCameraShakeTrack: public MovieSceneNameableTrack
 {
 public:
@@ -188,10 +204,11 @@ public:
 };
 
 
-// Size 0x1e8
+// Size 0x1e8 (Full Size[0x280] - InheritedSize[0x98]
 class MovieSceneColorSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_2RQVI[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             RedCurve;                                          // 0xa0(0x78)
 	Struct RichCurve                                             GreenCurve;                                        // 0x118(0x78)
 	Struct RichCurve                                             BlueCurve;                                         // 0x190(0x78)
@@ -199,24 +216,26 @@ public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x110] - InheritedSize[0x98]
 class MovieSceneEnumSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_9M8EC[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         EnumCurve;                                         // 0xa0(0x70)
 };
 
 
-// Size 0x110
+// Size 0x110 (Full Size[0x1a8] - InheritedSize[0x98]
 class MovieSceneEventSection: public MovieSceneSection
 {
 public:
 	Struct NameCurve                                             Events;                                            // 0x98(0x68)
 	Struct MovieSceneEventSectionData                            EventData;                                         // 0x100(0x20)
+	char                                                         pad0xc8_PXP8N[0xc8];                               // 0x11e(0xc8)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0xa8] - InheritedSize[0x88]
 class MovieSceneSpawnTrack: public MovieSceneTrack
 {
 public:
@@ -225,58 +244,63 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xa0] - InheritedSize[0x88]
 class MovieSceneEventTrack: public MovieSceneNameableTrack
 {
 public:
 	bool                                                         bFireEventsWhenForwards;                           // 0x88(0x1)
 	bool                                                         bFireEventsWhenBackwards;                          // 0x88(0x1)
+	char                                                         pad0x7_QVMG8[0x7];                                 // 0x89(0x7)
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x90(0x10)
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x118] - InheritedSize[0x98]
 class MovieSceneFloatSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_VLS3B[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             FloatCurve;                                        // 0xa0(0x78)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0x130] - InheritedSize[0x118]
 class MovieSceneFadeSection: public MovieSceneFloatSection
 {
 public:
 	Struct LinearColor                                           FadeColor;                                         // 0x118(0x10)
 	bool                                                         bFadeAudio;                                        // 0x128(0x1)
+	char                                                         pad0x9_VP70R[0x9];                                 // 0x127(0x9)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x118] - InheritedSize[0x118]
 class MovieSceneSlomoSection: public MovieSceneFloatSection
 {
 public:
 };
 
 
-// Size 0x78
+// Size 0x78 (Full Size[0x110] - InheritedSize[0x98]
 class MovieSceneIntegerSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_LDWXH[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         IntegerCurve;                                      // 0xa0(0x70)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
 class MovieSceneLevelVisibilitySection: public MovieSceneSection
 {
 public:
 	byte                                                         Visibility;                                        // 0x98(0x1)
+	char                                                         pad0x7_QZP06[0x7];                                 // 0x99(0x7)
 	TArray<Struct FName>                                         LevelNames;                                        // 0xa0(0x10)
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xb0] - InheritedSize[0x88]
 class MovieScenePropertyTrack: public MovieSceneNameableTrack
 {
 public:
@@ -286,7 +310,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneLevelVisibilityTrack: public MovieSceneNameableTrack
 {
 public:
@@ -294,7 +318,7 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0xc8] - InheritedSize[0x98]
 class MovieSceneParameterSection: public MovieSceneSection
 {
 public:
@@ -304,7 +328,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneMaterialTrack: public MovieSceneNameableTrack
 {
 public:
@@ -312,15 +336,16 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
 class MovieSceneComponentMaterialTrack: public MovieSceneMaterialTrack
 {
 public:
 	int                                                          MaterialIndex;                                     // 0x98(0x4)
+	char                                                         pad0xc_BQYGC[0xc];                                 // 0x9a(0xc)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneParticleParameterTrack: public MovieSceneNameableTrack
 {
 public:
@@ -328,7 +353,7 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x70 (Full Size[0x108] - InheritedSize[0x98]
 class MovieSceneParticleSection: public MovieSceneSection
 {
 public:
@@ -336,7 +361,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneParticleTrack: public MovieSceneNameableTrack
 {
 public:
@@ -344,35 +369,35 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieScene3DTransformTrack: public MovieScenePropertyTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneActorReferenceTrack: public MovieScenePropertyTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneBoolTrack: public MovieScenePropertyTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneVisibilityTrack: public MovieSceneBoolTrack
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xb8] - InheritedSize[0xb0]
 class MovieSceneByteTrack: public MovieScenePropertyTrack
 {
 public:
@@ -380,15 +405,16 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xb8] - InheritedSize[0xb0]
 class MovieSceneColorTrack: public MovieScenePropertyTrack
 {
 public:
 	bool                                                         bIsSlateColor;                                     // 0xb0(0x1)
+	char                                                         pad0x9_5XWAA[0x9];                                 // 0xaf(0x9)
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xb8] - InheritedSize[0xb0]
 class MovieSceneEnumTrack: public MovieScenePropertyTrack
 {
 public:
@@ -396,50 +422,51 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneFloatTrack: public MovieScenePropertyTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneFadeTrack: public MovieSceneFloatTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneSlomoTrack: public MovieSceneFloatTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneIntegerTrack: public MovieScenePropertyTrack
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieSceneStringTrack: public MovieScenePropertyTrack
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xb8] - InheritedSize[0xb0]
 class MovieSceneVectorTrack: public MovieScenePropertyTrack
 {
 public:
 	int                                                          NumChannelsUsed;                                   // 0xb0(0x4)
+	char                                                         pad0xc_MBV6J[0xc];                                 // 0xb2(0xc)
 };
 
 
-// Size 0xc0
+// Size 0xc0 (Full Size[0x158] - InheritedSize[0x98]
 class MovieSceneSkeletalAnimationSection: public MovieSceneSection
 {
 public:
@@ -450,28 +477,31 @@ public:
 	float                                                        EndOffset;                                         // 0x144(0x4)
 	float                                                        PlayRate;                                          // 0x148(0x4)
 	bool                                                         bReverse;                                          // 0x14c(0x1)
+	char                                                         pad0x3_43FX8[0x3];                                 // 0x14d(0x3)
 	struct FName                                                 SlotName;                                          // 0x150(0x8)
 };
 
 
-// Size 0x18
+// Size 0x18 (Full Size[0xa0] - InheritedSize[0x88]
 class MovieSceneSkeletalAnimationTrack: public MovieSceneNameableTrack
 {
 public:
 	byte                                                         TrackSubtype;                                      // 0x88(0x1)
+	char                                                         pad0x7_94NJG[0x7];                                 // 0x89(0x7)
 	TArray<class MovieSceneSection*>                             AnimationSections;                                 // 0x90(0x10)
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x118] - InheritedSize[0x98]
 class MovieSceneStringSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_G9Q2X[0x8];                                 // 0x98(0x8)
 	Struct StringCurve                                           StringCurve;                                       // 0xa0(0x78)
 };
 
 
-// Size 0x68
+// Size 0x68 (Full Size[0x100] - InheritedSize[0x98]
 class MovieSceneSubSection: public MovieSceneSection
 {
 public:
@@ -479,13 +509,14 @@ public:
 	float                                                        StartOffset;                                       // 0xa8(0x4)
 	float                                                        TimeScale;                                         // 0xac(0x4)
 	float                                                        PrerollTime;                                       // 0xb0(0x4)
+	char                                                         pad0x4_4AR3J[0x4];                                 // 0xb4(0x4)
 	Class MovieSceneSequence*                                    SubSequence;                                       // 0xb8(0x8)
 	Struct FString                                               TargetSequenceName;                                // 0xe0(0x10)
 	Struct DirectoryPath                                         TargetPathToRecordTo;                              // 0xf0(0x10)
 };
 
 
-// Size 0x38
+// Size 0x38 (Full Size[0x138] - InheritedSize[0x100]
 class MovieSceneCinematicShotSection: public MovieSceneSubSection
 {
 public:
@@ -493,7 +524,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class MovieSceneSubTrack: public MovieSceneNameableTrack
 {
 public:
@@ -501,19 +532,22 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class MovieSceneCinematicShotTrack: public MovieSceneSubTrack
 {
 public:
 };
 
 
-// Size 0x1f0
+// Size 0x1f0 (Full Size[0x288] - InheritedSize[0x98]
 class MovieSceneVectorSection: public MovieSceneSection
 {
 public:
+	char                                                         pad0x8_AEGN0[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             Curves;                                            // 0xa0(0x78)
+	char                                                         pad0x168_BEVFB[0x168];                             // 0x118(0x168)
 	int                                                          ChannelsUsed;                                      // 0x280(0x4)
+	char                                                         pad0xc_GZR3V[0xc];                                 // 0x282(0xc)
 };
 
 

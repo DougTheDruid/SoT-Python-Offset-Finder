@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x5e8] - InheritedSize[0x5c0]
 class BP_LargeShipLadder_C: public Ladder
 {
 public:
 	Class InteractableComponent*                                 Interactable;                                      // 0x5c0(0x8)
-	TArray<Struct InteractOffset>                                OffTopSplineComponentPositions;                    // 0x5c8(0x10)
+	TArray<Struct Vector>                                        OffTopSplineComponentPositions;                    // 0x5c8(0x10)
 	TArray<Struct Vector>                                        OnTopSplineComponentPositions;                     // 0x5d8(0x10)
 };
 

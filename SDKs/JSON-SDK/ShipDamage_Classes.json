@@ -45,6 +45,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0xc_9W1Y6[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0xca"
       }
     ]
   },
@@ -59,6 +65,18 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_MDJTO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "pad0x10_M73JS[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3e"
       }
     ]
   },

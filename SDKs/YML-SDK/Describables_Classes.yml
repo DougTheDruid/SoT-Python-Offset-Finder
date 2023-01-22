@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 DescribableComponent:
   Attributes:
+  - Name: pad0x8_C0ACF[0x8]
+    Offset: '0x128'
+    Size: '0x8'
+    Type: char
   - Name: TooltipActiveOnBeginPlay
     Offset: '0x130'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_SGO6R[0x7]
+    Offset: '0x131'
+    Size: '0x7'
+    Type: char
   - Name: DescribableTooltipText
     Offset: '0x138'
     Size: '0x38'
@@ -14,6 +22,10 @@ DescribableComponent:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
+  - Name: pad0x19_DJ60U[0x19]
+    Offset: '0x16f'
+    Size: '0x19'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x188'
   InheritedSize: '0x128'

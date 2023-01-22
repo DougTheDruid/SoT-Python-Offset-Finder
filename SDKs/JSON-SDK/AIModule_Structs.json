@@ -43,6 +43,12 @@
         "Offset": "0x24"
       },
       {
+        "Name": "pad0xc_V8BXJ[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x2c"
+      },
+      {
         "Name": "bSuccessfullySensed",
         "Type": "bool",
         "Size": "0x1",
@@ -109,6 +115,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x3_PO45A[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
       },
       {
         "Name": "bNoneIsAllowedValue",
@@ -296,6 +308,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x4_7949V[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
         "Name": "DamagedActor",
         "Type": "Class Actor*",
         "Size": "0x8",
@@ -449,6 +467,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x1_AEDTB[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },
@@ -504,6 +528,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_QKV1N[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "ParamName",
@@ -565,6 +595,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x14_FLLR3[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x18"
+      },
+      {
         "Name": "OptionIndex",
         "Type": "int",
         "Size": "0x4",
@@ -586,6 +622,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_X1530[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "NavigationFilter",
@@ -696,6 +738,12 @@
         "Offset": "0x34"
       },
       {
+        "Name": "pad0x3_DSAR6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x35"
+      },
+      {
         "Name": "bUseUpDownAsAbsoluteZStartAndEnd",
         "Type": "bool",
         "Size": "0x1",
@@ -752,6 +800,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_V5U1H[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
       },
       {
         "Name": "Value",

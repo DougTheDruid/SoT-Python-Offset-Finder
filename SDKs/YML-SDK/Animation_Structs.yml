@@ -14,6 +14,10 @@ ActorVelocityData:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_XZE4U[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: WantedMovementSpeed
     Offset: '0x14'
     Size: '0x4'
@@ -28,6 +32,10 @@ AnimNode_WeightedLoadOnDemandSquencePlayer:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_B18NX[0x4]
+    Offset: '0x44'
+    Size: '0x4'
+    Type: char
   - Name: WeightedAnimSequenceLoadOnDemand
     Offset: '0x48'
     Size: '0x8'
@@ -40,6 +48,10 @@ AnimNode_WeightedLoadOnDemandSquencePlayer:
     Offset: '0x54'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_S95QP[0x3]
+    Offset: '0x55'
+    Size: '0x3'
+    Type: char
   - Name: CurrentSequence
     Offset: '0x58'
     Size: '0x8'
@@ -148,6 +160,10 @@ CharacterAnimationIKUpdateParams:
     Offset: '0xc'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x8_3H1JQ[0x8]
+    Offset: '0x18'
+    Size: '0x8'
+    Type: char
   - Name: Orientation
     Offset: '0x20'
     Size: '0x10'
@@ -156,6 +172,10 @@ CharacterAnimationIKUpdateParams:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_BGN74[0x3]
+    Offset: '0x31'
+    Size: '0x3'
+    Type: char
   - Name: ParentBone
     Offset: '0x34'
     Size: '0x8'
@@ -274,7 +294,7 @@ DockableInfo:
   ClassSize: '0x18'
 Docker:
   Attributes: []
-  ClassSize: '0x50'
+  ClassSize: '0x90'
 EventAnimationHappyReact:
   Attributes: []
   ClassSize: '0x1'
@@ -390,6 +410,10 @@ TransformBlendCurve:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_0N287[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: LocationCurve
     Offset: '0x8'
     Size: '0x170'
@@ -398,6 +422,10 @@ TransformBlendCurve:
     Offset: '0x178'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_X1602[0x7]
+    Offset: '0x179'
+    Size: '0x7'
+    Type: char
   - Name: RotationCurve
     Offset: '0x180'
     Size: '0x170'
@@ -406,10 +434,18 @@ TransformBlendCurve:
     Offset: '0x2f0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_A4XZ5[0x7]
+    Offset: '0x2f1'
+    Size: '0x7'
+    Type: char
   - Name: ScaleCurve
     Offset: '0x2f8'
     Size: '0x170'
     Type: Struct RuntimeVectorCurve
+  - Name: pad0x8_B6F0W[0x8]
+    Offset: '0x468'
+    Size: '0x8'
+    Type: char
   - Name: SourceTransform
     Offset: '0x470'
     Size: '0x30'

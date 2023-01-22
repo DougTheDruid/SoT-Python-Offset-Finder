@@ -6,6 +6,10 @@ BP_PromptCoordinator_BootyStorage_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_L0DP5[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: ShowLootPrompt
     Offset: '0x120'
     Size: '0x1'
@@ -22,6 +26,10 @@ BP_PromptCoordinator_BootyStorage_C:
     Offset: '0x123'
     Size: '0x1'
     Type: bool
+  - Name: pad0x4_VM34S[0x4]
+    Offset: '0x124'
+    Size: '0x4'
+    Type: char
   - Name: MermaidPrompt
     Offset: '0x128'
     Size: '0x68'

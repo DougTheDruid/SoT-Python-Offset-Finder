@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xa0
+// Size 0xa0 (Full Size[0xa38] - InheritedSize[0x998]
 class BP_Mast_C: public Mast
 {
 public:
@@ -19,7 +19,7 @@ public:
 	Class StaticMeshComponent*                                   Topgallant Yard;                                   // 0x9c8(0x8)
 	Class StaticMeshComponent*                                   Top Yard;                                          // 0x9d0(0x8)
 	Class StaticMeshComponent*                                   MastBaseComponent;                                 // 0x9d8(0x8)
-	TArray<Struct None>                                          Sail Parameters;                                   // 0x9e0(0x10)
+	TArray<Struct BP_SailStructure>                              Sail Parameters;                                   // 0x9e0(0x10)
 	TArray<class StaticMeshComponent*>                           Yards;                                             // 0x9f0(0x10)
 	TArray<class ChildActorComponent*>                           Sails;                                             // 0xa00(0x10)
 	Class MaterialInstance*                                      Sail Material;                                     // 0xa10(0x8)

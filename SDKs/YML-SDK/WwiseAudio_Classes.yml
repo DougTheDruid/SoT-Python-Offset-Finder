@@ -44,6 +44,10 @@ MovieSceneAkAudioEventTrack:
   Super: MovieSceneAkTrack
 MovieSceneAkAudioRTPCSection:
   Attributes:
+  - Name: pad0x8_XKTMA[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: Name
     Offset: '0xa0'
     Size: '0x10'
@@ -72,6 +76,10 @@ MovieSceneAkTrack:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
+  - Name: pad0x9_63S4Y[0x9]
+    Offset: '0x97'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0xa0'
   InheritedSize: '0x88'
@@ -92,10 +100,18 @@ MultiEmitterRootComponent:
   Super: SceneComponent
 WwiseAudioSettings:
   Attributes:
+  - Name: pad0xc0_VOF5B[0xc0]
+    Offset: '0x28'
+    Size: '0xc0'
+    Type: char
   - Name: ReverbPresetSettings
     Offset: '0xe8'
     Size: '0x64'
     Type: Struct WwiseAudioReverbPresets
+  - Name: pad0x4_CX7HX[0x4]
+    Offset: '0x14c'
+    Size: '0x4'
+    Type: char
   - Name: BinkSettings
     Offset: '0x150'
     Size: '0x38'
@@ -184,6 +200,10 @@ WwiseAudioSettings:
     Offset: '0x348'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
+  - Name: pad0x50_9SX1O[0x50]
+    Offset: '0x350'
+    Size: '0x50'
+    Type: char
   - Name: EventsToPlayOnFrontendStartInstance
     Offset: '0x3a0'
     Size: '0x10'
@@ -226,6 +246,10 @@ WwiseBank:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct FString
+  - Name: pad0x50_XS4CK[0x50]
+    Offset: '0x36'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -268,6 +292,10 @@ WwiseEvent:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_KJGOZ[0x3]
+    Offset: '0x31'
+    Size: '0x3'
+    Type: char
   - Name: DurationMin
     Offset: '0x38'
     Size: '0x4'
@@ -288,6 +316,10 @@ WwiseEvent:
     Offset: '0x45'
     Size: '0x1'
     Type: bool
+  - Name: pad0xc_C9EHM[0xc]
+    Offset: '0x44'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

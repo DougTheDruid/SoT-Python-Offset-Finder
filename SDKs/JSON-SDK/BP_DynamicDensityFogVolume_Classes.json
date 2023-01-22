@@ -24,6 +24,12 @@
         "Offset": "0x3e4"
       },
       {
+        "Name": "pad0x3_NBFAJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x3e5"
+      },
+      {
         "Name": "StateBlend",
         "Type": "Class TimelineComponent*",
         "Size": "0x8",
@@ -78,8 +84,14 @@
         "Offset": "0x420"
       },
       {
+        "Name": "pad0x7_NFF96[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x421"
+      },
+      {
         "Name": "StateParams",
-        "Type": "TArray<Struct Texture2D>",
+        "Type": "TArray<Struct BP_Struct_DynamicFogVolumeParams>",
         "Size": "0x10",
         "Offset": "0x428"
       }

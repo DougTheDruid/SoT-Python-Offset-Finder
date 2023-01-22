@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x920] - InheritedSize[0x910]
 class BP_FishingFish_Base_C: public FishingFish
 {
 public:

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x668] - InheritedSize[0x660]
 class BP_TunnelOfTheDamnedPortal_WSP_C: public BP_TunnelOfTheDamnedPortal_Ship_C
 {
 public:

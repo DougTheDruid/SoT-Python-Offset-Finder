@@ -34,6 +34,10 @@ LandscapeComponent:
     Offset: '0x5c8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_8SRAO[0x4]
+    Offset: '0x5cc'
+    Size: '0x4'
+    Type: char
   - Name: OverrideMaterial
     Offset: '0x5d0'
     Size: '0x8'
@@ -66,6 +70,10 @@ LandscapeComponent:
     Offset: '0x620'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_9SM9T[0xc]
+    Offset: '0x624'
+    Size: '0xc'
+    Type: char
   - Name: HeightmapScaleBias
     Offset: '0x630'
     Size: '0x10'
@@ -82,6 +90,10 @@ LandscapeComponent:
     Offset: '0x680'
     Size: '0x10'
     Type: TArray<Struct Guid>
+  - Name: pad0x10_0XYNM[0x10]
+    Offset: '0x690'
+    Size: '0x10'
+    Type: char
   - Name: CollisionMipLevel
     Offset: '0x6a0'
     Size: '0x4'
@@ -114,6 +126,10 @@ LandscapeComponent:
     Offset: '0x6d8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_CY5X5[0x7]
+    Offset: '0x6d9'
+    Size: '0x7'
+    Type: char
   - Name: MobileMaterialInterface
     Offset: '0x6e0'
     Size: '0x8'
@@ -122,6 +138,10 @@ LandscapeComponent:
     Offset: '0x6e8'
     Size: '0x8'
     Type: Class Texture2D*
+  - Name: pad0x40_Q5U0J[0x40]
+    Offset: '0x6ee'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x160'
   FullSize: '0x720'
   InheritedSize: '0x5c0'
@@ -178,6 +198,10 @@ LandscapeGrassType:
     Offset: '0x51'
     Size: '0x1'
     Type: bool
+  - Name: pad0x8_21E7Z[0x8]
+    Offset: '0x50'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -220,12 +244,20 @@ LandscapeHeightfieldCollisionComponent:
     Offset: '0x640'
     Size: '0x10'
     Type: TArray<class PhysicalMaterial*>
+  - Name: pad0x60_X3NR6[0x60]
+    Offset: '0x64e'
+    Size: '0x60'
+    Type: char
   ClassSize: '0xd0'
   FullSize: '0x690'
   InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 LandscapeInfo:
   Attributes:
+  - Name: pad0x1c_L6VY9[0x1c]
+    Offset: '0x28'
+    Size: '0x1c'
+    Type: char
   - Name: LandscapeGuid
     Offset: '0x44'
     Size: '0x10'
@@ -246,6 +278,10 @@ LandscapeInfo:
     Offset: '0x60'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x1bc_TJ7CF[0x1bc]
+    Offset: '0x6a'
+    Size: '0x1bc'
+    Type: char
   ClassSize: '0x1e8'
   FullSize: '0x210'
   InheritedSize: '0x28'
@@ -270,6 +306,10 @@ LandscapeLayerInfoObject:
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_3E80X[0xc]
+    Offset: '0x3a'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -280,6 +320,10 @@ LandscapeMaterialInstanceConstant:
     Offset: '0x1b8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_XM2QV[0x3]
+    Offset: '0x1b9'
+    Size: '0x3'
+    Type: char
   - Name: DataWeightmapIndex
     Offset: '0x1bc'
     Size: '0x4'
@@ -288,6 +332,10 @@ LandscapeMaterialInstanceConstant:
     Offset: '0x1c0'
     Size: '0x4'
     Type: int
+  - Name: pad0xc_28GKI[0xc]
+    Offset: '0x1c2'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x1c8'
   InheritedSize: '0x1b8'
@@ -298,6 +346,10 @@ LandscapeMeshCollisionComponent:
     Offset: '0x690'
     Size: '0x10'
     Type: Struct Guid
+  - Name: pad0x30_I2RZ1[0x30]
+    Offset: '0x69e'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x6b0'
   InheritedSize: '0x690'
@@ -322,12 +374,20 @@ LandscapeMeshProxyComponent:
     Offset: '0x630'
     Size: '0x10'
     Type: TArray<Struct IntPoint>
+  - Name: pad0x30_E3PXD[0x30]
+    Offset: '0x63e'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x650'
   InheritedSize: '0x620'
   Super: StaticMeshComponent
 LandscapeProxy:
   Attributes:
+  - Name: pad0x8_6PFIF[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: SplineComponent
     Offset: '0x3d0'
     Size: '0x8'
@@ -356,6 +416,10 @@ LandscapeProxy:
     Offset: '0x400'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_LXL05[0x4]
+    Offset: '0x404'
+    Size: '0x4'
+    Type: char
   - Name: LandscapeMaterial
     Offset: '0x408'
     Size: '0x8'
@@ -368,6 +432,10 @@ LandscapeProxy:
     Offset: '0x418'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_PF5ZH[0x4]
+    Offset: '0x41c'
+    Size: '0x4'
+    Type: char
   - Name: LandscapeComponents
     Offset: '0x420'
     Size: '0x10'
@@ -380,6 +448,10 @@ LandscapeProxy:
     Offset: '0x440'
     Size: '0x10'
     Type: TArray<class HierarchicalInstancedStaticMeshComponent*>
+  - Name: pad0x70_I24K6[0x70]
+    Offset: '0x450'
+    Size: '0x70'
+    Type: char
   - Name: StaticLightingResolution
     Offset: '0x4c0'
     Size: '0x4'
@@ -408,6 +480,10 @@ LandscapeProxy:
     Offset: '0x4e0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_X9TIL[0x3]
+    Offset: '0x4e1'
+    Size: '0x3'
+    Type: char
   - Name: LpvIntensityMultiplier
     Offset: '0x4e4'
     Size: '0x4'
@@ -456,6 +532,10 @@ LandscapeProxy:
     Offset: '0x69c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_A7UM7[0x3]
+    Offset: '0x69d'
+    Size: '0x3'
+    Type: char
   - Name: NavigationGeometryGatheringMode
     Offset: '0x6a0'
     Size: '0x1'
@@ -464,6 +544,10 @@ LandscapeProxy:
     Offset: '0x6a1'
     Size: '0x1'
     Type: byte
+  - Name: pad0xb0_C4DD6[0xb0]
+    Offset: '0x6a0'
+    Size: '0xb0'
+    Type: char
   ClassSize: '0x388'
   FullSize: '0x750'
   InheritedSize: '0x3c8'
@@ -490,6 +574,10 @@ LandscapeSplineControlPoint:
     Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_Q1M3Q[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   - Name: ConnectedSegments
     Offset: '0x50'
     Size: '0x10'
@@ -502,6 +590,10 @@ LandscapeSplineControlPoint:
     Offset: '0x70'
     Size: '0x1c'
     Type: Struct Box
+  - Name: pad0x4_MEDVK[0x4]
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: char
   - Name: LocalMeshComponent
     Offset: '0x90'
     Size: '0x8'
@@ -516,6 +608,10 @@ LandscapeSplineSegment:
     Offset: '0x28'
     Size: '0x18'
     Type: Struct LandscapeSplineSegmentConnection
+  - Name: pad0x18_N3R1A[0x18]
+    Offset: '0x40'
+    Size: '0x18'
+    Type: char
   - Name: SplineInfo
     Offset: '0x58'
     Size: '0x18'
@@ -528,6 +624,10 @@ LandscapeSplineSegment:
     Offset: '0x80'
     Size: '0x1c'
     Type: Struct Box
+  - Name: pad0x4_G6MJ9[0x4]
+    Offset: '0x9c'
+    Size: '0x4'
+    Type: char
   - Name: LocalMeshComponents
     Offset: '0xa0'
     Size: '0x10'
@@ -550,6 +650,10 @@ LandscapeSplinesComponent:
     Offset: '0x5d8'
     Size: '0x10'
     Type: TArray<class MeshComponent*>
+  - Name: pad0x28_M0431[0x28]
+    Offset: '0x5e6'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x5f0'
   InheritedSize: '0x5c0'
@@ -588,6 +692,10 @@ MaterialExpressionLandscapeLayerCoords:
     Offset: '0x71'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_ILK5P[0x2]
+    Offset: '0x72'
+    Size: '0x2'
+    Type: char
   - Name: MappingScale
     Offset: '0x74'
     Size: '0x4'
@@ -604,6 +712,10 @@ MaterialExpressionLandscapeLayerCoords:
     Offset: '0x80'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_72DB3[0xc]
+    Offset: '0x82'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x88'
   InheritedSize: '0x70'
@@ -622,6 +734,10 @@ MaterialExpressionLandscapeLayerSample:
     Offset: '0x7c'
     Size: '0x10'
     Type: Struct Guid
+  - Name: pad0x24_YOPE3[0x24]
+    Offset: '0x8a'
+    Size: '0x24'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x90'
   InheritedSize: '0x70'
@@ -644,10 +760,18 @@ MaterialExpressionLandscapeLayerSwitch:
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_746W4[0x3]
+    Offset: '0xe9'
+    Size: '0x3'
+    Type: char
   - Name: ExpressionGUID
     Offset: '0xec'
     Size: '0x10'
     Type: Struct Guid
+  - Name: pad0x24_SESFA[0x24]
+    Offset: '0xfa'
+    Size: '0x24'
+    Type: char
   ClassSize: '0x90'
   FullSize: '0x100'
   InheritedSize: '0x70'

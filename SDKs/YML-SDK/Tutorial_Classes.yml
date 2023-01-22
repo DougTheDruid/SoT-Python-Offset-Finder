@@ -24,6 +24,10 @@ CaptaincyStarter:
     Offset: '0x6a'
     Size: '0x1'
     Type: bool
+  - Name: pad0x5_JDWAB[0x5]
+    Offset: '0x6b'
+    Size: '0x5'
+    Type: char
   - Name: CheckIfEntitlementIsOwned
     Offset: '0x70'
     Size: '0x8'
@@ -32,6 +36,10 @@ CaptaincyStarter:
     Offset: '0x78'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_N4WJL[0x3]
+    Offset: '0x79'
+    Size: '0x3'
+    Type: char
   - Name: FeatureToggle
     Offset: '0x7c'
     Size: '0x8'
@@ -40,6 +48,10 @@ CaptaincyStarter:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_OU0NY[0x3]
+    Offset: '0x85'
+    Size: '0x3'
+    Type: char
   - Name: PromptCounterKey
     Offset: '0x88'
     Size: '0x8'
@@ -48,6 +60,10 @@ CaptaincyStarter:
     Offset: '0x90'
     Size: '0x4'
     Type: int
+  - Name: pad0x6c_IR8YQ[0x6c]
+    Offset: '0x92'
+    Size: '0x6c'
+    Type: char
   ClassSize: '0x98'
   FullSize: '0xf8'
   InheritedSize: '0x60'
@@ -74,6 +90,10 @@ CompanyTutorialVoyageProgress:
     Offset: '0x30'
     Size: '0x8'
     Type: class
+  - Name: pad0xb8_GSGO3[0xb8]
+    Offset: '0x36'
+    Size: '0xb8'
+    Type: char
   ClassSize: '0xb8'
   FullSize: '0xe0'
   InheritedSize: '0x28'
@@ -88,6 +108,10 @@ ContextualTutorialComponent:
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<class Actor*>
+  - Name: pad0x58_DVRL1[0x58]
+    Offset: '0xe6'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x120'
   InheritedSize: '0xc8'
@@ -98,6 +122,10 @@ HasTutorialStarterBegunNPCDialogConditional:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_T9OJP[0x9]
+    Offset: '0x2f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x38'
   InheritedSize: '0x30'
@@ -124,6 +152,10 @@ Tutorial2019Component:
     Offset: '0xc9'
     Size: '0x1'
     Type: bool
+  - Name: pad0x8_PP3XA[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xd0'
   InheritedSize: '0xc8'
@@ -152,6 +184,10 @@ TutorialHelpersBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 TutorialManager:
   Attributes:
+  - Name: pad0x8_XPOB4[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: CompanyOnboardingStarterClass
     Offset: '0xd0'
     Size: '0x8'
@@ -216,6 +252,10 @@ TutorialManager:
     Offset: '0x117'
     Size: '0x1'
     Type: bool
+  - Name: pad0x22_TJZHI[0x22]
+    Offset: '0x116'
+    Size: '0x22'
+    Type: char
   ClassSize: '0x70'
   FullSize: '0x138'
   InheritedSize: '0xc8'
@@ -240,6 +280,10 @@ TutorialStarter:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_RUFRL[0x2]
+    Offset: '0x32'
+    Size: '0x2'
+    Type: char
   - Name: IntroAnimationSettings
     Offset: '0x34'
     Size: '0x2c'

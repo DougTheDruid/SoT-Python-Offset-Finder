@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 NetworkRegionService:
   Attributes:
+  - Name: pad0x90_99H7Y[0x90]
+    Offset: '0x28'
+    Size: '0x90'
+    Type: char
   - Name: PlayersThatNeedToBeTicked
     Offset: '0xb8'
     Size: '0x10'
@@ -26,6 +30,10 @@ RegionAssetCacheActor:
     Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<class Object*>
+  - Name: pad0x40_T5G53[0x40]
+    Offset: '0x3e6'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x408'
   InheritedSize: '0x3c8'

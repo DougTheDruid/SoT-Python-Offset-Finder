@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x578] - InheritedSize[0x568]
 class BP_DoorSwitchMechanismTrigger_C: public SwitchMechanismTrigger
 {
 public:

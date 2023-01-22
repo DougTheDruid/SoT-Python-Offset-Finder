@@ -26,6 +26,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x4_438PQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
         "Name": "CameraShake",
         "Type": "class",
         "Size": "0x8",
@@ -36,6 +42,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_9Q9YF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       },
       {
         "Name": "ExplosionRumble",
@@ -76,6 +88,12 @@
         "Offset": "0x89"
       },
       {
+        "Name": "pad0x2_C0ARK[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x8a"
+      },
+      {
         "Name": "FireworkAmbientLightData",
         "Type": "Struct FireworkAmbientLightData",
         "Size": "0x14",
@@ -112,6 +130,12 @@
         "Offset": "0x130"
       },
       {
+        "Name": "pad0x4_AE1FG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x134"
+      },
+      {
         "Name": "ExplosionSfxPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
@@ -137,6 +161,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0xd8",
     "Attributes": [
+      {
+        "Name": "pad0x8_BCGHH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "GeneratedFireworkData",
         "Type": "Struct GeneratedFireworkData",
@@ -166,6 +196,12 @@
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x440"
+      },
+      {
+        "Name": "pad0x80_9KC2V[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x45e"
       }
     ]
   },
@@ -192,6 +228,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x528"
+      },
+      {
+        "Name": "pad0xc_NR8BR[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x52a"
       }
     ]
   },
@@ -208,6 +250,12 @@
     "InheritedSize": "0x600",
     "ClassSize": "0x108",
     "Attributes": [
+      {
+        "Name": "pad0x10_89QXN[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x600"
+      },
       {
         "Name": "CollisionComponent",
         "Type": "Class SphereComponent*",
@@ -249,6 +297,12 @@
         "Type": "Struct GeneratedFireworkData",
         "Size": "0x58",
         "Offset": "0x640"
+      },
+      {
+        "Name": "pad0x120_0TEAK[0x120]",
+        "Type": "char",
+        "Size": "0x120",
+        "Offset": "0x696"
       }
     ]
   },
@@ -259,10 +313,22 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x78_9WL0D[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "NumberOfCachedFlares",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x440"
+      },
+      {
+        "Name": "pad0x24_BBK1I[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x442"
       }
     ]
   },
@@ -301,6 +367,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0xc_3I7YZ[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x4a"
       }
     ]
   },
@@ -315,6 +387,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_QLCJQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "FuseSoundWisePool",
@@ -367,6 +445,12 @@
         "Offset": "0xc8"
       },
       {
+        "Name": "pad0x4_E271B[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
         "Name": "NumberOfFireworksFiredAtNight",
         "Type": "int",
         "Size": "0x4",
@@ -383,6 +467,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0xb4_72AMB[0xb4]",
+        "Type": "char",
+        "Size": "0xb4",
+        "Offset": "0xda"
       }
     ]
   },
@@ -430,6 +520,12 @@
         "Offset": "0x134"
       },
       {
+        "Name": "pad0x3_DPSXQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x135"
+      },
+      {
         "Name": "FireworksSettingsDataAsset",
         "Type": "Class FireworksSettingsDataAsset*",
         "Size": "0x8",
@@ -460,6 +556,12 @@
         "Type": "Struct RuntimeVectorCurve",
         "Size": "0x170",
         "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x320_HK6AQ[0x320]",
+        "Type": "char",
+        "Size": "0x320",
+        "Offset": "0x24e"
       }
     ]
   },

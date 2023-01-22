@@ -11,6 +11,7 @@ struct ThrottledProjectileTickPool
 {
 public:
 	int                                                          MaxNumberToTickPerFrame;                           // 0x0(0x4)
+	char                                                         pad0x4_FN0GQ[0x4];                                 // 0x4(0x4)
 	TArray<Class Projectiles>                                    Projectiles;                                       // 0x8(0x10)
 };
 
@@ -20,6 +21,7 @@ struct GlobalProjectileSettings
 {
 public:
 	byte                                                         SettingsFor;                                       // 0x0(0x1)
+	char                                                         pad0x3_GMJJZ[0x3];                                 // 0x1(0x3)
 	float                                                        ProjectileDestroyDepth;                            // 0x4(0x4)
 	float                                                        ProjectileOceanFloorDestroyDepth;                  // 0x8(0x4)
 	float                                                        ProjectileMinimumFallDistance;                     // 0xc(0x4)

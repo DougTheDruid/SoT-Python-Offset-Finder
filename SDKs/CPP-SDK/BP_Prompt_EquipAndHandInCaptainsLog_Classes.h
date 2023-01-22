@@ -6,15 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x160
+// Size 0x160 (Full Size[0x278] - InheritedSize[0x118]
 class BP_Prompt_EquipAndHandInCaptainsLog_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_QCJOT[0xfc];                               // 0x120(0xfc)
 	Struct ObjectMessagingHandle                                 EventObjectWieldedHandler;                         // 0x120(0x48)
 	class                                                        ExpectedWieldedItem;                               // 0x168(0x8)
 	Struct PrioritisedPromptWithHandle                           Prompt_EquipCaptainsLog;                           // 0x170(0x68)
 	float                                                        PromptPopupTime;                                   // 0x1d8(0x4)
+	char                                                         pad0x4_I0DAD[0x4];                                 // 0x1dc(0x4)
 	Struct ObjectMessagingHandle                                 EventStartStowHandler;                             // 0x1e0(0x48)
 	Struct ObjectMessagingHandle                                 TreasureChestSoldClientPredictionEventHandler;     // 0x228(0x48)
 	class                                                        AccessKey;                                         // 0x270(0x8)

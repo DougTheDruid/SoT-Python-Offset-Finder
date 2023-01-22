@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class NudgeFromExplosionsPolicy: public NudgePolicy
 {
 public:
@@ -14,7 +14,7 @@ public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
 class NudgeFromShipCollisionPolicy: public NudgePolicy
 {
 public:
@@ -23,22 +23,26 @@ public:
 };
 
 
-// Size 0x90
+// Size 0x90 (Full Size[0x158] - InheritedSize[0xc8]
 class NudgeFromStormPolicy: public NudgePolicy
 {
 public:
 	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	char                                                         pad0x4_0L5I4[0x4];                                 // 0xcc(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xd0(0x30)
+	char                                                         pad0xb8_DV3B7[0xb8];                               // 0xfe(0xb8)
 };
 
 
-// Size 0x28
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class NudgeFromWaterLevelPolicy: public NudgePolicy
 {
 public:
 	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	char                                                         pad0x14_1TMH1[0x14];                               // 0xcc(0x14)
 	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
 	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
+	char                                                         pad0x10_ZNH30[0x10];                               // 0xe6(0x10)
 };
 
 

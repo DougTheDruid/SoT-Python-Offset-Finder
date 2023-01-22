@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x590] - InheritedSize[0x578]
 class BP_fod_KrakenMeatRaw_00_a_ItemInfo_C: public BP_MeatItemInfo_C
 {
 public:

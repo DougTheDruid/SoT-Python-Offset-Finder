@@ -51,6 +51,12 @@
         "Type": "Struct RuntimeFloatCurve",
         "Size": "0x80",
         "Offset": "0x528"
+      },
+      {
+        "Name": "pad0x138_EX7LF[0x138]",
+        "Type": "char",
+        "Size": "0x138",
+        "Offset": "0x5a6"
       }
     ]
   },
@@ -123,10 +129,22 @@
         "Offset": "0xc8"
       },
       {
+        "Name": "pad0x2c_Q0X3Z[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0xcc"
+      },
+      {
         "Name": "CachedWorld",
         "Type": "Class World*",
         "Size": "0x8",
         "Offset": "0xf8"
+      },
+      {
+        "Name": "pad0x18_1CL50[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xfe"
       }
     ]
   },
@@ -143,6 +161,12 @@
         "Offset": "0x108"
       },
       {
+        "Name": "pad0x3_BTBCT[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x109"
+      },
+      {
         "Name": "PostAdjustmentBoxExtentX",
         "Type": "float",
         "Size": "0x4",
@@ -153,6 +177,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x3_RR8IM[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x111"
       },
       {
         "Name": "PostAdjustmentBoxExtentY",
@@ -167,6 +197,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0x3_XGS7U[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x119"
+      },
+      {
         "Name": "PostAdjustmentBoxExtentZ",
         "Type": "float",
         "Size": "0x4",
@@ -177,6 +213,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x4_URJD9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x12c"
       },
       {
         "Name": "BoxCollisionToAdjust",
@@ -199,6 +241,12 @@
         "Offset": "0x108"
       },
       {
+        "Name": "pad0x3_VOPDB[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x109"
+      },
+      {
         "Name": "PostAdjustmentSphereRadius",
         "Type": "float",
         "Size": "0x4",
@@ -209,6 +257,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x4_RLKUP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x114"
       },
       {
         "Name": "SphereCollisionToAdjust",
@@ -262,6 +316,12 @@
         "Offset": "0xdd"
       },
       {
+        "Name": "pad0x2_9VDU0[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xde"
+      },
+      {
         "Name": "RotationSpeed",
         "Type": "float",
         "Size": "0x4",
@@ -274,6 +334,12 @@
         "Offset": "0xe4"
       },
       {
+        "Name": "pad0x3_OTZTU[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xe5"
+      },
+      {
         "Name": "MaxPitch",
         "Type": "float",
         "Size": "0x4",
@@ -284,6 +350,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xec"
+      },
+      {
+        "Name": "pad0x10_Q6TOP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xee"
       }
     ]
   },
@@ -312,6 +384,12 @@
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x38_JLL3X[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0xce"
       }
     ]
   },
@@ -326,6 +404,12 @@
         "Type": "TArray<Struct StringAssetClassPair>",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x38_2DI1A[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x36"
       }
     ]
   },

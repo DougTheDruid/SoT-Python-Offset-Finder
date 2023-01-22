@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x3d
+// Size 0x3d (Full Size[0x405] - InheritedSize[0x3c8]
 class BP_LightingZone_C: public Actor
 {
 public:

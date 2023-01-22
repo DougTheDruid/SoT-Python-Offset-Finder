@@ -20,6 +20,10 @@ StatusResponseApplyPersistentStatus:
     Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_IRKKH[0xc]
+    Offset: '0x4a'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x50'
   InheritedSize: '0x30'
@@ -46,6 +50,10 @@ StatusResponseHealthRegenerationPoolChange:
     Offset: '0x30'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_6OE7L[0xc]
+    Offset: '0x32'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x38'
   InheritedSize: '0x30'
@@ -72,10 +80,18 @@ StatusResponseReportNoiseEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_0SBCB[0x3]
+    Offset: '0x49'
+    Size: '0x3'
+    Type: char
   - Name: NoiseTimerTick
     Offset: '0x4c'
     Size: '0x4'
     Type: float
+  - Name: pad0x28_K5JMT[0x28]
+    Offset: '0x4e'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x70'
   InheritedSize: '0x30'

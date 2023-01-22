@@ -6,15 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x2e8
+// Size 0x2e8 (Full Size[0x400] - InheritedSize[0x118]
 class BP_PromptCoordinator_BootyStorage_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0xfc_L0DP5[0xfc];                               // 0x120(0xfc)
 	bool                                                         ShowLootPrompt;                                    // 0x120(0x1)
 	bool                                                         ShowMermaidPrompt;                                 // 0x121(0x1)
 	bool                                                         HasUsedStatue;                                     // 0x122(0x1)
 	bool                                                         HasRetrievedLoot;                                  // 0x123(0x1)
+	char                                                         pad0x4_VM34S[0x4];                                 // 0x124(0x4)
 	Struct PrioritisedPromptWithHandle                           MermaidPrompt;                                     // 0x128(0x68)
 	Struct PrioritisedPromptWithHandle                           LootPrompt;                                        // 0x190(0x68)
 	Struct ObjectMessagingHandle                                 CrewStorageChangedHandle;                          // 0x1f8(0x48)

@@ -6,13 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_SmallShipStorageBarrel_Cannonball_C: public StorageContainer
+// Size 0x8 (Full Size[0x828] - InheritedSize[0x820]
+class BP_SmallShipStorageBarrel_Cannonball_C: public BP_MerchantCrate_Commodity_Base_Proxy_C
 {
 public:
-	Class ReplenishableComponent*                                None;                                              // 0x4c8(0x8)
-	Class ShipTelemetrySubjectComponent*                         None;                                              // 0x4d0(0x8)
-	Class StorageContainerComponent*                             None;                                              // 0x4d8(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x820(0x8)
 };
 
 

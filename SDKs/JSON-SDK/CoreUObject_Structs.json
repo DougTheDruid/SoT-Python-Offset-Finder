@@ -504,6 +504,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x3_4NM49[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
         "Name": "LoopKeyOffset",
         "Type": "float",
         "Size": "0x4",
@@ -560,6 +566,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_HIDWG[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       },
       {
         "Name": "LoopKeyOffset",
@@ -620,6 +632,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x3_FR0DE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
         "Name": "LoopKeyOffset",
         "Type": "float",
         "Size": "0x4",
@@ -635,6 +653,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0xc_GDXGC[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x4"
       },
       {
         "Name": "OutVal",
@@ -676,6 +700,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_RORLA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       },
       {
         "Name": "LoopKeyOffset",
@@ -736,6 +766,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x3_JGRKK[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
         "Name": "LoopKeyOffset",
         "Type": "float",
         "Size": "0x4",
@@ -794,6 +830,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x3_1HX2W[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
         "Name": "LoopKeyOffset",
         "Type": "float",
         "Size": "0x4",
@@ -815,6 +857,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_VTWDW[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
         "Name": "Scale3D",
@@ -878,6 +926,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_XI8FU[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Value",
         "Type": "float",
         "Size": "0x4",
@@ -910,6 +964,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_EBXWO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "Value",

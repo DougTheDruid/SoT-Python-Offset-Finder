@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 CustomItemService:
   Attributes:
+  - Name: pad0x8_IB3S5[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   - Name: World
     Offset: '0x30'
     Size: '0x8'
     Type: Class World*
+  - Name: pad0x28_I26N6[0x28]
+    Offset: '0x36'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

@@ -1,15 +1,27 @@
 {
   "BP_msc_concertina_smp_01_a_v01_ItemInfo_C": {
-    "Super": "ItemInfo",
-    "FullSize": "0x518",
-    "InheritedSize": "0x510",
-    "ClassSize": "0x8",
+    "Super": "None",
+    "FullSize": "0x3f79b10f",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x3f79b10f",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "pad0x510_25YIN[0x510]",
+        "Type": "char",
+        "Size": "0x510",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x510"
+      },
+      {
+        "Name": "pad0x3f79ac07_24K0J[0x3f79ac07]",
+        "Type": "char",
+        "Size": "0x3f79ac07",
+        "Offset": "0x516"
       }
     ]
   },

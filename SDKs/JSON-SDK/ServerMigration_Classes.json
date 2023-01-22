@@ -120,6 +120,12 @@
         "Type": "Struct NetActorPtr",
         "Size": "0x14",
         "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0x2c_65G44[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x3da"
       }
     ]
   },
@@ -224,6 +230,12 @@
         "Type": "Struct ServerMigrationCustomMigrationSerialisationStruct",
         "Size": "0x4",
         "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0xc_EE7BI[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3ca"
       }
     ]
   },
@@ -259,6 +271,12 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0x18_9C8MD[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3ce"
       }
     ]
   },
@@ -281,6 +299,12 @@
         "Offset": "0x2c"
       },
       {
+        "Name": "pad0x3_U6VJH[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
+      },
+      {
         "Name": "StringWithSaveGameMarkup",
         "Type": "Struct FString",
         "Size": "0x10",
@@ -291,6 +315,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xc_93ZCU[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x42"
       }
     ]
   },
@@ -319,6 +349,12 @@
         "Type": "Struct ServerMigrationSerialisationDetailsTestsUStruct",
         "Size": "0xc",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x1c_C1K32[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x32"
       }
     ]
   },
@@ -333,6 +369,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_FZMAJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "TransportImplementation",
@@ -357,6 +399,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_LJ6Y5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
       },
       {
         "Name": "InstanceImplementation",

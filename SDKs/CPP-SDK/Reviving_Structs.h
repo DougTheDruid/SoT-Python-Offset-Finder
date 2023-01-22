@@ -11,6 +11,7 @@ struct ModeSpecificReviveSettings
 {
 public:
 	byte                                                         AssociatedPlaymode;                                // 0x0(0x1)
+	char                                                         pad0x3_QCGB6[0x3];                                 // 0x1(0x3)
 	float                                                        DeathCameraBlackFadeDelay;                         // 0x4(0x4)
 	float                                                        DeathCameraBlackFadeDuration;                      // 0x8(0x4)
 	float                                                        DeathCameraBlackFadeEventClientTimeout;            // 0xc(0x4)
@@ -21,6 +22,7 @@ public:
 	float                                                        ReviveWindowDuration;                              // 0x20(0x4)
 	float                                                        GhostFadeDuration;                                 // 0x24(0x4)
 	float                                                        AutoGiveUpDuration;                                // 0x28(0x4)
+	char                                                         pad0x4_HKGRF[0x4];                                 // 0x2c(0x4)
 	Class ReviveSettings*                                        CachedReviveSettings;                              // 0x30(0x8)
 };
 
@@ -189,6 +191,7 @@ struct RevivingWindowStart
 public:
 	Struct DamageInstance                                        DamageInstance;                                    // 0x0(0x30)
 	byte                                                         CharacterDeathType;                                // 0x30(0x1)
+	char                                                         pad0x7_KHJVP[0x7];                                 // 0x31(0x7)
 	Class Character*                                             RevivableCharacter;                                // 0x38(0x8)
 };
 

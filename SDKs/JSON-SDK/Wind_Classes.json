@@ -34,6 +34,12 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x30_3FFTI[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x28"
+      },
+      {
         "Name": "WindZones",
         "Type": "TArray<Interface WindZones>",
         "Size": "0x10",
@@ -62,10 +68,22 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
+        "Name": "pad0x10_6OMC0[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "GlobalWindSource",
         "Type": "Class WindDirectionalSource*",
         "Size": "0x8",
         "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x10_LQI3Z[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3e0"
       },
       {
         "Name": "CurrentWindAngle",
@@ -78,6 +96,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f4"
+      },
+      {
+        "Name": "pad0xe8_AKWEI[0xe8]",
+        "Type": "char",
+        "Size": "0xe8",
+        "Offset": "0x3f8"
       },
       {
         "Name": "WindZones",
@@ -114,6 +138,12 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
+        "Name": "pad0x8_SM9CC[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
         "Name": "TurbulenceParams",
         "Type": "Struct WindTurbulenceParameters",
         "Size": "0x70",
@@ -124,6 +154,12 @@
         "Type": "Struct WindZoneParams",
         "Size": "0x10",
         "Offset": "0x358"
+      },
+      {
+        "Name": "pad0x28_AZKH2[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x366"
       }
     ]
   },

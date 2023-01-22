@@ -10,6 +10,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x11_9U16J[0x11]",
+        "Type": "char",
+        "Size": "0x11",
+        "Offset": "0x27"
       }
     ]
   },
@@ -52,6 +58,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0xc_PN507[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x2a"
       }
     ]
   },
@@ -120,6 +132,12 @@
         "Type": "TArray<Struct WeightedClueDestinationDescriptor>",
         "Size": "0x10",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x70_931UK[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x3e"
       }
     ]
   },
@@ -163,6 +181,12 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x8_HDD76[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "CurrentClue",
         "Type": "Class ClueDescriptor*",
         "Size": "0x8",
@@ -173,6 +197,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x9_FB1H5[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0xd7"
       }
     ]
   },
@@ -298,6 +328,12 @@
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x188"
+      },
+      {
+        "Name": "pad0x18_PRKIE[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x18e"
       }
     ]
   },
@@ -329,6 +365,12 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x8_PDHMX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "LootItemSpawnRelativeLocations",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
@@ -357,10 +399,22 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
+        "Name": "pad0x18_SR7BA[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x98"
+      },
+      {
         "Name": "SeaClueSiteTypes",
         "Type": "Class SeaClueSiteTypesDataAsset*",
         "Size": "0x8",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0xf0_G09TC[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0xb6"
       }
     ]
   },
@@ -438,6 +492,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x4_FFA4B[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       },
       {
         "Name": "ProjectionPoint",
@@ -692,6 +752,12 @@
         "Type": "Class TaleQuestSelectClueSiteForLootStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x70_VWZND[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -718,6 +784,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x7_X82X9[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x91"
       },
       {
         "Name": "OutputClueSite",
@@ -802,6 +874,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x9_AEKBY[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x10f"
       }
     ]
   },
@@ -862,6 +940,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x9_V4NHK[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0xaf"
       }
     ]
   },

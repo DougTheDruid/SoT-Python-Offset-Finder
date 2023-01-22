@@ -6,6 +6,10 @@ BP_Prompt_EmissaryEntitlementPurchased_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_GXM5W[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: Handle_EmissaryEntitlementPurchased
     Offset: '0x120'
     Size: '0x48'
@@ -26,6 +30,10 @@ BP_Prompt_EmissaryEntitlementPurchased_C:
     Offset: '0x198'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_WNJ4E[0x7]
+    Offset: '0x199'
+    Size: '0x7'
+    Type: char
   - Name: PromptAccessKey
     Offset: '0x1a0'
     Size: '0x8'

@@ -88,10 +88,22 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_RX2I2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1"
+      },
+      {
         "Name": "LatestRequestIds",
         "Type": "Struct ActionStateChangeRequestId",
         "Size": "0x1",
         "Offset": "0x5"
+      },
+      {
+        "Name": "pad0xa_L3YWY[0xa]",
+        "Type": "char",
+        "Size": "0xa",
+        "Offset": "0x6"
       },
       {
         "Name": "PerTrackConstructionInfoStore",
@@ -194,6 +206,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x4_1R9OK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
         "Name": "InnerStruct",
         "Type": "Struct InnerTestStruct",
         "Size": "0x18",
@@ -209,6 +227,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_PUGOT[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "StringProp",

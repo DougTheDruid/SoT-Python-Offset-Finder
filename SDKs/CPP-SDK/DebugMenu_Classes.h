@@ -6,22 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50
+// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
 class DebugMenuComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x28_GYC3J[0x28];                               // 0xc8(0x28)
 	Class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
+	char                                                         pad0x30_FKB14[0x30];                               // 0xf6(0x30)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DebugMenuEntryGenerator: public Object
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class DebugMenuDataAsset: public DataAsset
 {
 public:
@@ -32,21 +34,21 @@ public:
 };
 
 
-// Size 0xb0
+// Size 0xb0 (Full Size[0x478] - InheritedSize[0x3c8]
 class DebugMenu: public Actor
 {
 public:
 };
 
 
-// Size 0x8
+// Size 0x8 (Full Size[0x120] - InheritedSize[0x118]
 class DebugMenuComponentMock: public DebugMenuComponent
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DebugMenuTestFunctions: public BlueprintFunctionLibrary
 {
 public:

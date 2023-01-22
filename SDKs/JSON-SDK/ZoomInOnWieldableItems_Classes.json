@@ -13,6 +13,12 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x8_X8N9O[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "FeatureName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -47,6 +53,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x44_QX3QA[0x44]",
+        "Type": "char",
+        "Size": "0x44",
+        "Offset": "0xea"
       }
     ]
   },

@@ -14,6 +14,10 @@ CoherentUIGTLoadingScreenSettings:
     Offset: '0x5'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_PQZ9V[0x2]
+    Offset: '0x6'
+    Size: '0x2'
+    Type: char
   - Name: URL
     Offset: '0x8'
     Size: '0x10'
@@ -33,6 +37,10 @@ CoherentUIGTViewInfo:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_DMRCI[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: ClickThroughAlphaThreshold
     Offset: '0xc'
     Size: '0x4'

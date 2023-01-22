@@ -6,11 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x48
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class BP_CT_TutorialProgress_C: public Object
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x28(0x8)
+	char                                                         pad0x1eb_4TZS5[0x1eb];                             // 0x30(0x1eb)
 	Class AthenaPlayerController*                                AthenaPlayerController;                            // 0x30(0x8)
 	TArray<class BP_CT_VoyageProgress_C*>                        TutorialVoyageProgressTrackers;                    // 0x38(0x10)
 	BlueprintGeneratedClass BP_CT_VoyageProgress_C*              XMarksTutorialProgress;                            // 0x48(0x8)

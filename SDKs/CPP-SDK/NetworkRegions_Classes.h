@@ -6,27 +6,29 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class NetworkRegionServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xa0
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
 class NetworkRegionService: public Object
 {
 public:
+	char                                                         pad0x90_99H7Y[0x90];                               // 0x28(0x90)
 	TArray<class PlayerController*>                              PlayersThatNeedToBeTicked;                         // 0xb8(0x10)
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x408] - InheritedSize[0x3c8]
 class RegionAssetCacheActor: public Actor
 {
 public:
 	TArray<Struct RegionAssetsList>                              RegionData;                                        // 0x3c8(0x10)
 	TArray<class Object*>                                        LoadedAssets;                                      // 0x3d8(0x10)
+	char                                                         pad0x40_T5G53[0x40];                               // 0x3e6(0x40)
 };
 
 

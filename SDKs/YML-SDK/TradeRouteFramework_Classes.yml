@@ -12,6 +12,10 @@ TaleQuestGetProjectionPointOnTradeRouteStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_ZO47E[0x4]
+    Offset: '0x84'
+    Size: '0x4'
+    Type: char
   - Name: SourcePoint
     Offset: '0x88'
     Size: '0x30'
@@ -34,6 +38,10 @@ TaleQuestSelectTradeRouteStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class TaleQuestSelectTradeRouteStepDesc*
+  - Name: pad0x28_NIEZK[0x28]
+    Offset: '0x9e'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0xb8'
   InheritedSize: '0x98'
@@ -44,6 +52,10 @@ TaleQuestSelectTradeRouteStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_JWALC[0x4]
+    Offset: '0x84'
+    Size: '0x4'
+    Type: char
   - Name: SelectionOriginPointVar
     Offset: '0x88'
     Size: '0x30'
@@ -82,6 +94,10 @@ TradeRouteData:
     Offset: '0x3c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_WV52O[0x3]
+    Offset: '0x3d'
+    Size: '0x3'
+    Type: char
   - Name: TradeRouteMapData
     Offset: '0x40'
     Size: '0x80'
@@ -96,6 +112,10 @@ TradeRouteDifficultyBand:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0xc_4TEZS[0xc]
+    Offset: '0x2a'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'

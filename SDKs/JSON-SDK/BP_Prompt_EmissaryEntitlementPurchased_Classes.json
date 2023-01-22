@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_GXM5W[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "Handle_EmissaryEntitlementPurchased",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -40,6 +46,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x198"
+      },
+      {
+        "Name": "pad0x7_WNJ4E[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x199"
       },
       {
         "Name": "PromptAccessKey",

@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
 class BP_SmallShipAnchor_C: public Anchor
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x400(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x400(0x8)
 };
 
 

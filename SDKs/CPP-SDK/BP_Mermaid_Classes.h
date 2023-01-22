@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x9c8] - InheritedSize[0x9a0]
 class BP_Mermaid_C: public Mermaid
 {
 public:

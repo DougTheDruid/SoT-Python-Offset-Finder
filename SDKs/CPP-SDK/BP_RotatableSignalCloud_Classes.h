@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x4b8] - InheritedSize[0x4a8]
 class BP_RotatableSignalCloud_C: public GameplayEventSignal_StaticMesh
 {
 public:

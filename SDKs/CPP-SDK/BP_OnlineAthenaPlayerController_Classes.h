@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x1618] - InheritedSize[0x1610]
 class BP_OnlineAthenaPlayerController_C: public OnlineAthenaPlayerController
 {
 public:

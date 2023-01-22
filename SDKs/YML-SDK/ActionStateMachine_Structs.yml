@@ -79,6 +79,10 @@ InnerTestStruct:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_PUGOT[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: StringProp
     Offset: '0x8'
     Size: '0x10'
@@ -100,10 +104,18 @@ ResetStateMachineRpc:
     Offset: '0x0'
     Size: '0x1'
     Type: Struct ActionStateChangeRequestId
+  - Name: pad0x4_RX2I2[0x4]
+    Offset: '0x1'
+    Size: '0x4'
+    Type: char
   - Name: LatestRequestIds
     Offset: '0x5'
     Size: '0x1'
     Type: Struct ActionStateChangeRequestId
+  - Name: pad0xa_L3YWY[0xa]
+    Offset: '0x6'
+    Size: '0xa'
+    Type: char
   - Name: PerTrackConstructionInfoStore
     Offset: '0x10'
     Size: '0x140'
@@ -135,6 +147,10 @@ TestActionStateConstructionInfoWithInner:
     Offset: '0x28'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_1R9OK[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: InnerStruct
     Offset: '0x30'
     Size: '0x18'

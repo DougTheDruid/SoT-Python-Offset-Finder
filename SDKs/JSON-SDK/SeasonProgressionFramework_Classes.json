@@ -13,10 +13,22 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
+        "Name": "pad0x8_LRDBS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
         "Name": "ShouldBeExcludedFromSeasonProgessionValue",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x9_KW1QQ[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0xcf"
       }
     ]
   },

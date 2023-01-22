@@ -10,12 +10,20 @@ ActiveStorySpawnRequirement:
     Offset: '0x60'
     Size: '0x1'
     Type: bool
+  - Name: pad0x21_FCHJX[0x21]
+    Offset: '0x5f'
+    Size: '0x21'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x80'
   InheritedSize: '0x50'
   Super: SpawnRequirement
 DebugStoryServiceCheat:
   Attributes:
+  - Name: pad0x8_GZFBP[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: AllStories
     Offset: '0x3d0'
     Size: '0x10'
@@ -28,6 +36,10 @@ DebugStoryServiceCheat:
     Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<Str AllExcludeFilters>
+  - Name: pad0x40_95BNE[0x40]
+    Offset: '0x3fe'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'
@@ -50,16 +62,28 @@ StoryClaimableResourceComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Struct StoryFlag
+  - Name: pad0x30_K81SR[0x30]
+    Offset: '0xce'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 StoryClaimedResourcesService:
   Attributes:
+  - Name: pad0x60_32CS9[0x60]
+    Offset: '0x3c8'
+    Size: '0x60'
+    Type: char
   - Name: PendingClaims
     Offset: '0x428'
     Size: '0x10'
     Type: TArray<Weakclass PendingClaims>
+  - Name: pad0x70_B207Y[0x70]
+    Offset: '0x436'
+    Size: '0x70'
+    Type: char
   ClassSize: '0xc0'
   FullSize: '0x488'
   InheritedSize: '0x3c8'
@@ -80,6 +104,10 @@ StoryDrivenBlendedLightingZoneComponent:
     Offset: '0x330'
     Size: '0x10'
     Type: Struct LightingZoneStoryRelatedSettings
+  - Name: pad0x40_C8GQO[0x40]
+    Offset: '0x33e'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x360'
   InheritedSize: '0x330'
@@ -90,6 +118,10 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
+  - Name: pad0x4_NJXP1[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -108,6 +140,10 @@ StoryDrivenSalvageItemSpawnComponent:
     Offset: '0x560'
     Size: '0x8'
     Type: Struct StoryFlag
+  - Name: pad0x38_CHLDR[0x38]
+    Offset: '0x566'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x590'
   InheritedSize: '0x560'
@@ -144,6 +180,10 @@ StoryNamesCollectionDataAsset:
   Super: DataAsset
 StoryService:
   Attributes:
+  - Name: pad0x28_6SM5J[0x28]
+    Offset: '0x3c8'
+    Size: '0x28'
+    Type: char
   - Name: Stories
     Offset: '0x3f0'
     Size: '0x10'
@@ -152,6 +192,10 @@ StoryService:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct StoryInfo>
+  - Name: pad0xb0_IKVH7[0xb0]
+    Offset: '0x40e'
+    Size: '0xb0'
+    Type: char
   ClassSize: '0xd8'
   FullSize: '0x4a0'
   InheritedSize: '0x3c8'
@@ -178,6 +222,10 @@ StorySpawnedActorsComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class StorySpawnedActorsComponentDataAsset*
+  - Name: pad0x48_YKYDP[0x48]
+    Offset: '0xce'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'
@@ -188,6 +236,10 @@ StorySpawnedActorsComponentDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
+  - Name: pad0x4_000MB[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -206,6 +258,10 @@ StorySpawnedActorsDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
+  - Name: pad0x4_CGJQX[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -220,6 +276,10 @@ StorySpawnedActorsDataAsset:
   Super: DataAsset
 StorySpawnedActorsService:
   Attributes:
+  - Name: pad0x18_1K6AD[0x18]
+    Offset: '0x3c8'
+    Size: '0x18'
+    Type: char
   - Name: EarlyRegisteredComponents
     Offset: '0x3e0'
     Size: '0x10'
@@ -228,6 +288,10 @@ StorySpawnedActorsService:
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StorySpawnedActorsDataAsset*
+  - Name: pad0x108_8XSXL[0x108]
+    Offset: '0x3f6'
+    Size: '0x108'
+    Type: char
   ClassSize: '0x128'
   FullSize: '0x4f0'
   InheritedSize: '0x3c8'

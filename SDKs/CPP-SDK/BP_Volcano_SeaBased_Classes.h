@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x5f8] - InheritedSize[0x5f0]
 class BP_Volcano_SeaBased_C: public BP_Volcano_C
 {
 public:

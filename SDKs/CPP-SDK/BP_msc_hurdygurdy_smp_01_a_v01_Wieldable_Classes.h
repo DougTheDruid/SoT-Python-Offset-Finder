@@ -6,13 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
-class BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C: public BP_HurdyGurdy_C
+// Size 0x8 (Full Size[0x888] - InheritedSize[0x880]
+class BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C: public Compass
 {
 public:
-	Class StaticMeshComponent*                                   shroudmask_tp;                                     // 0x8b0(0x8)
-	Class StaticMeshComponent*                                   shroud_tp;                                         // 0x8b8(0x8)
-	Class StaticMeshComponent*                                   shroud_fp;                                         // 0x8c0(0x8)
+	Class InventoryItemComponent*                                InventoryItem;                                     // 0x880(0x8)
 };
 
 

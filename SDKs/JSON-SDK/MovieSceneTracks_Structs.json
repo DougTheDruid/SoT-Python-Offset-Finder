@@ -118,6 +118,12 @@
         "Offset": "0xc"
       },
       {
+        "Name": "pad0x3_IWKBF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd"
+      },
+      {
         "Name": "UserDefinedPlaySpace",
         "Type": "Struct Rotator",
         "Size": "0xc",
@@ -169,6 +175,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x3_46ROJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
         "Name": "ActorNumber",
         "Type": "int",
         "Size": "0x4",
@@ -179,6 +191,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_5XVAG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       },
       {
         "Name": "Parameters",
@@ -206,6 +224,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_OAUVS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "RedCurve",
@@ -249,6 +273,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_WKOX2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "XCurve",
         "Type": "Struct RichCurve",
         "Size": "0x78",
@@ -282,6 +312,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_PBBR3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "ParameterCurve",
@@ -323,6 +359,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x3_28B8I[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15"
       },
       {
         "Name": "SlotName",
@@ -471,6 +513,12 @@
         "Offset": "0xa1"
       },
       {
+        "Name": "pad0x2_RL0I0[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xa2"
+      },
+      {
         "Name": "bFollow",
         "Type": "bool",
         "Size": "0x1",
@@ -500,10 +548,22 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0xf0_QKP5L[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0x90"
+      },
+      {
         "Name": "RotationCurve",
         "Type": "Struct RichCurve",
         "Size": "0x78",
         "Offset": "0x180"
+      },
+      {
+        "Name": "pad0xf0_7YIFE[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0x1f8"
       },
       {
         "Name": "ScaleCurve",
@@ -567,6 +627,12 @@
         "Type": "Struct FloatRange",
         "Size": "0x10",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_ZDRHR[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
         "Name": "AudioPitchMultiplierCurve",
@@ -724,6 +790,12 @@
         "Offset": "0x18"
       },
       {
+        "Name": "pad0x7_9KFZB[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      },
+      {
         "Name": "LevelNames",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
@@ -760,6 +832,12 @@
         "Type": "Struct RichCurve",
         "Size": "0x78",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x168_2OWOU[0x168]",
+        "Type": "char",
+        "Size": "0x168",
+        "Offset": "0xb0"
       },
       {
         "Name": "NumChannelsUsed",

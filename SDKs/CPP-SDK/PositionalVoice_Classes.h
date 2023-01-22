@@ -6,34 +6,36 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class VoiceChatEmitterInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class VoiceChatRendererInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x158
+// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
 class VoiceChatRenderer: public Object
 {
 public:
+	char                                                         pad0x10_EKLW1[0x10];                               // 0x28(0x10)
 	Class WwiseEvent*                                            AttenuatedVoiceEvent;                              // 0x38(0x8)
 	Class WwiseEvent*                                            AttenuatedAndSpatialisedVoiceEvent;                // 0x40(0x8)
 	Class WwiseEvent*                                            UnattenuatedVoiceEvent;                            // 0x48(0x8)
 	int                                                          PreBufferInMilliseconds;                           // 0x50(0x4)
 	int                                                          ChatRoutingListenerIndex;                          // 0x54(0x4)
 	float                                                        EmitterHoldInSeconds;                              // 0x58(0x4)
+	char                                                         pad0x12c_U7I1A[0x12c];                             // 0x5a(0x12c)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class VoiceChatRendererRetreivalInterface: public Interface
 {
 public:

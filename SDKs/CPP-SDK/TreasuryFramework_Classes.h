@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xa8
+// Size 0xa8 (Full Size[0x470] - InheritedSize[0x3c8]
 class ShimmerActor: public Actor
 {
 public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class TreasuryWaveDataAsset: public DataAsset
 {
 public:
@@ -24,10 +24,11 @@ public:
 };
 
 
-// Size 0x130
+// Size 0x130 (Full Size[0x4f8] - InheritedSize[0x3c8]
 class TreasuryRoom: public Actor
 {
 public:
+	char                                                         pad0x8_BL6B9[0x8];                                 // 0x3c8(0x8)
 	Class BoxComponent*                                          RoomAreaComponent;                                 // 0x3d0(0x8)
 	float                                                        TreasuryInactiveDurationMinSeconds;                // 0x3d8(0x4)
 	float                                                        TreasuryInactiveDurationMaxSeconds;                // 0x3dc(0x4)
@@ -52,9 +53,11 @@ public:
 	TArray<Weakclass CachedParticipantControllers>               CachedParticipantControllers;                      // 0x480(0x10)
 	Class Actor*                                                 VaultLootSpawnerActor;                             // 0x490(0x8)
 	Struct PlayerStat                                            VaultOpenStat;                                     // 0x498(0x4)
+	char                                                         pad0x4_GXKIO[0x4];                                 // 0x49c(0x4)
 	Class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x4a0(0x8)
 	Class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x4a8(0x8)
 	Class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x4b0(0x8)
+	char                                                         pad0x50_CHPRB[0x50];                               // 0x4b6(0x50)
 };
 
 

@@ -127,6 +127,7 @@ struct RiggingSystemPulleyParams
 public:
 	Struct SocketId                                              Anchor;                                            // 0x0(0x20)
 	float                                                        OffsetFromAnchor;                                  // 0x20(0x4)
+	char                                                         pad0x4_9MBSR[0x4];                                 // 0x24(0x4)
 	Struct PulleyVisualParams                                    Visuals;                                           // 0x28(0x10)
 	Struct RiggingSystemPulleyAttachmentParams                   AttachmentRope;                                    // 0x38(0x14)
 };

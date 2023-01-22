@@ -6,6 +6,10 @@ BP_Prompt_MaidenVoyage_FishingRodTutorial_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_EA5IW[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: State_RodWielded
     Offset: '0x120'
     Size: '0x1'
@@ -102,6 +106,10 @@ BP_Prompt_MaidenVoyage_FishingRodTutorial_C:
     Offset: '0x540'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_VL609[0x7]
+    Offset: '0x541'
+    Size: '0x7'
+    Type: char
   - Name: Handle_FishEscaped
     Offset: '0x548'
     Size: '0x48'
@@ -110,6 +118,10 @@ BP_Prompt_MaidenVoyage_FishingRodTutorial_C:
     Offset: '0x590'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_GA4FJ[0x7]
+    Offset: '0x591'
+    Size: '0x7'
+    Type: char
   - Name: Handle_PlayerDeath
     Offset: '0x598'
     Size: '0x48'

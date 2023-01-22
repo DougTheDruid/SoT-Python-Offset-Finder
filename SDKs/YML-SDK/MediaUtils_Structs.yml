@@ -6,6 +6,10 @@ MediaPlayerOptions:
     Offset: '0x0'
     Size: '0x1c'
     Type: Struct MediaPlayerTrackOptions
+  - Name: pad0x4_FU8GU[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: SeekTime
     Offset: '0x20'
     Size: '0x8'

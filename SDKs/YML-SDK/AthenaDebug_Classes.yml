@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 DrawDebugService:
   Attributes:
+  - Name: pad0x8_BXWB6[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: MessagesReplicated
     Offset: '0x3d0'
     Size: '0x10'
@@ -34,6 +38,10 @@ DrawDebugService:
     Offset: '0x440'
     Size: '0x1'
     Type: bool
+  - Name: pad0x81_RP4U2[0x81]
+    Offset: '0x43f'
+    Size: '0x81'
+    Type: char
   ClassSize: '0xf8'
   FullSize: '0x4c0'
   InheritedSize: '0x3c8'
@@ -74,12 +82,20 @@ Videprinter:
     Offset: '0x3dc'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x1c_EET3M[0x1c]
+    Offset: '0x3e2'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'
   Super: Actor
 VideprinterService:
   Attributes:
+  - Name: pad0x8_1HLQQ[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   - Name: Videprinters
     Offset: '0x30'
     Size: '0x10'

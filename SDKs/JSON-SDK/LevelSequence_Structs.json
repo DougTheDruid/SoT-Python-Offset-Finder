@@ -34,6 +34,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x4_PSOYN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
         "Name": "CurrentShotName",
         "Type": "Struct FText",
         "Size": "0x38",
@@ -44,6 +50,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x4_ND7FS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x7c"
       },
       {
         "Name": "CameraComponent",
@@ -67,6 +79,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_O9NI8[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "FrameRate",

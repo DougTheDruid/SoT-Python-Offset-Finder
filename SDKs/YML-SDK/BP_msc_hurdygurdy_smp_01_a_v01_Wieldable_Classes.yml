@@ -2,19 +2,11 @@
 # https://github.com/DougTheDruid
 BP_msc_hurdygurdy_smp_01_a_v01_Wieldable_C:
   Attributes:
-  - Name: shroudmask_tp
-    Offset: '0x8b0'
+  - Name: InventoryItem
+    Offset: '0x880'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shroud_tp
-    Offset: '0x8b8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shroud_fp
-    Offset: '0x8c0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x18'
-  FullSize: '0x8c8'
-  InheritedSize: '0x8b0'
-  Super: BP_HurdyGurdy_C
+    Type: Class InventoryItemComponent*
+  ClassSize: '0x8'
+  FullSize: '0x888'
+  InheritedSize: '0x880'
+  Super: Compass

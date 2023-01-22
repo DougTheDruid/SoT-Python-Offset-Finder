@@ -18,6 +18,10 @@ WorldLocationPopUpComponent:
     Offset: '0x2f4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6d_MBDT0[0x6d]
+    Offset: '0x2f3'
+    Size: '0x6d'
+    Type: char
   ClassSize: '0x80'
   FullSize: '0x360'
   InheritedSize: '0x2e0'
@@ -46,10 +50,18 @@ WorldLocationPopUpDataAsset:
   Super: DataAsset
 WorldLocationVisitorComponent:
   Attributes:
+  - Name: pad0x8_FBXJH[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: RevisitCooldown
     Offset: '0xd0'
     Size: '0x4'
     Type: float
+  - Name: pad0x3c_FNBA3[0x3c]
+    Offset: '0xd2'
+    Size: '0x3c'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'

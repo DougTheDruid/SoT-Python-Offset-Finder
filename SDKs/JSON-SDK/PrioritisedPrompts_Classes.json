@@ -12,6 +12,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x10_OTPST[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
         "Name": "PrioritisedPromptsManager",
         "Type": "Class PrioritisedPromptsManager*",
         "Size": "0x8",
@@ -22,6 +28,12 @@
         "Type": "Class Character*",
         "Size": "0x8",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0xb8_SOECM[0xb8]",
+        "Type": "char",
+        "Size": "0xb8",
+        "Offset": "0x4e"
       }
     ]
   },
@@ -31,6 +43,12 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x10_NGWA9[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
       {
         "Name": "WorldContextObject",
         "Type": "Class Object*",
@@ -53,6 +71,12 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
+        "Name": "pad0x8_5NKR2[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
         "Name": "AllPrompts",
         "Type": "TArray<Struct PrioritisedPromptWithHandle>",
         "Size": "0x10",
@@ -63,6 +87,12 @@
         "Type": "Class PlayerController*",
         "Size": "0x8",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x40_TFY3B[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x46"
       }
     ]
   },

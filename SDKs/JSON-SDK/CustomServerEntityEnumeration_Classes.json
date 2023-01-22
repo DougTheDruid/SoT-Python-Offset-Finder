@@ -13,6 +13,12 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x20_Z54ZF[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      },
+      {
         "Name": "World",
         "Type": "Class World*",
         "Size": "0x8",

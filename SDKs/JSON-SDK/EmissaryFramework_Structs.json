@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_GFR84[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -49,6 +55,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x3_DZ8O5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
         "Name": "AssociatedCrew",
         "Type": "Struct Guid",
         "Size": "0x10",
@@ -86,6 +98,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_KZ271[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "QuestId",

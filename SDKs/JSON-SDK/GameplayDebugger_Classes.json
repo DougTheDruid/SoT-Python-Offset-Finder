@@ -18,6 +18,12 @@
         "Offset": "0x5d0"
       },
       {
+        "Name": "pad0x4_NFIYV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5d4"
+      },
+      {
         "Name": "ReplicateViewDataCounters",
         "Type": "TArray<Int ReplicateViewDataCounters>",
         "Size": "0x10",
@@ -126,6 +132,12 @@
         "Offset": "0x6e8"
       },
       {
+        "Name": "pad0x10_FDI1C[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x6f8"
+      },
+      {
         "Name": "PathPoints",
         "Type": "TArray<Struct Vector>",
         "Size": "0x10",
@@ -136,6 +148,12 @@
         "Type": "TArray<Byte PathCorridorData>",
         "Size": "0x10",
         "Offset": "0x718"
+      },
+      {
+        "Name": "pad0x10_QP6IC[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x728"
       },
       {
         "Name": "NavmeshRepData",
@@ -186,10 +204,22 @@
         "Offset": "0x768"
       },
       {
+        "Name": "pad0x7_TJ6C6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x769"
+      },
+      {
         "Name": "TargetActor",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x770"
+      },
+      {
+        "Name": "pad0x88_HQH0E[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x776"
       }
     ]
   },
@@ -234,6 +264,12 @@
         "Type": "Class PlayerController*",
         "Size": "0x8",
         "Offset": "0x3e0"
+      },
+      {
+        "Name": "pad0xe0_TT6J8[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0x3e6"
       }
     ]
   },
@@ -280,6 +316,12 @@
         "Offset": "0x7c"
       },
       {
+        "Name": "pad0x3_TCA7S[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x7d"
+      },
+      {
         "Name": "ActiveEQSIndex",
         "Type": "int",
         "Size": "0x4",
@@ -320,6 +362,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x89"
+      },
+      {
+        "Name": "pad0x20_HJPWJ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x88"
       }
     ]
   },
@@ -352,6 +400,12 @@
         "Type": "Class InputComponent*",
         "Size": "0x8",
         "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x28_N7L5K[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xe8"
       },
       {
         "Name": "ActivationKey",
@@ -483,6 +537,12 @@
         "Offset": "0x3f8"
       },
       {
+        "Name": "pad0x4_612D6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3fc"
+      },
+      {
         "Name": "DebugComponent",
         "Type": "Class GameplayDebuggingComponent*",
         "Size": "0x8",
@@ -543,6 +603,12 @@
         "Offset": "0x41e"
       },
       {
+        "Name": "pad0x1_EWD3J[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x41f"
+      },
+      {
         "Name": "ActiveEQSIndex",
         "Type": "int",
         "Size": "0x4",
@@ -583,6 +649,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x429"
+      },
+      {
+        "Name": "pad0x50_2QF8X[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x428"
       }
     ]
   },

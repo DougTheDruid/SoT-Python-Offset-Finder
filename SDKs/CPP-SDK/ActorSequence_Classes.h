@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x2d0] - InheritedSize[0x2a8]
 class ActorSequence: public MovieSceneSequence
 {
 public:
@@ -15,7 +15,7 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
 class ActorSequenceComponent: public ActorComponent
 {
 public:
@@ -23,10 +23,11 @@ public:
 	Class ActorSequence*                                         Sequence;                                          // 0xf0(0x8)
 	Class ActorSequencePlayer*                                   SequencePlayer;                                    // 0xf8(0x8)
 	bool                                                         bAutoPlay;                                         // 0x100(0x1)
+	char                                                         pad0x9_ALF8H[0x9];                                 // 0xff(0x9)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x608] - InheritedSize[0x608]
 class ActorSequencePlayer: public MovieSceneSequencePlayer
 {
 public:

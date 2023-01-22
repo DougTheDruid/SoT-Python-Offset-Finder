@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AbandonedNoteWeightedTextDataAsset: public DataAsset
 {
 public:
@@ -14,16 +14,18 @@ public:
 };
 
 
-// Size 0xe0
+// Size 0xe0 (Full Size[0x1a8] - InheritedSize[0xc8]
 class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x40_V6H0X[0x40];                               // 0xc8(0x40)
 	Struct FText                                                 ClueText;                                          // 0x108(0x38)
 	Struct FText                                                 TitleText;                                         // 0x140(0x38)
+	char                                                         pad0xa0_61LNH[0xa0];                               // 0x176(0xa0)
 };
 
 
-// Size 0x80
+// Size 0x80 (Full Size[0x4e8] - InheritedSize[0x468]
 class OneShotRewardableObjectBase: public InteractableObject
 {
 public:
@@ -34,26 +36,30 @@ public:
 	float                                                        InteractionHoldTime;                               // 0x488(0x4)
 	float                                                        InteractionRadius;                                 // 0x48c(0x4)
 	Struct FText                                                 DisplayName;                                       // 0x490(0x38)
+	char                                                         pad0x90_G6T5P[0x90];                               // 0x4c6(0x90)
 };
 
 
-// Size 0x20
+// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
 class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
 {
 public:
 	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x138(0x8)
+	char                                                         pad0x28_7MY96[0x28];                               // 0x13e(0x28)
 };
 
 
-// Size 0xf0
+// Size 0xf0 (Full Size[0x4b8] - InheritedSize[0x3c8]
 class SirenPuzzleContext: public Actor
 {
 public:
+	char                                                         pad0x8_IAWQR[0x8];                                 // 0x3c8(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
 	TArray<Struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
 	TArray<Struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
 	TArray<Struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
 	TArray<Byte LockStates>                                      LockStates;                                        // 0x408(0x10)
+	char                                                         pad0xc0_46CY1[0xc0];                               // 0x416(0xc0)
 };
 
 

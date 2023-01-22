@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 DebugTeleportationDestinationService:
   Attributes:
+  - Name: pad0x18_UQOYP[0x18]
+    Offset: '0x3c8'
+    Size: '0x18'
+    Type: char
   - Name: DebugTeleportationRegistry
     Offset: '0x3e0'
     Size: '0x10'

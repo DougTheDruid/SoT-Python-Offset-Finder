@@ -23,6 +23,12 @@
         "Type": "Struct FinaleReplicationState",
         "Size": "0x10",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xa0_H6X53[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0xde"
       }
     ]
   },
@@ -46,6 +52,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x4_VIYVW[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
         "Name": "WwisePool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
@@ -62,6 +74,12 @@
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x50_SJDJ8[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x6e"
       }
     ]
   },
@@ -100,6 +118,12 @@
     "ClassSize": "0x308",
     "Attributes": [
       {
+        "Name": "pad0x28_YTX0F[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "ActionRulesComponent",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
@@ -116,6 +140,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x4_WRB55[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x404"
       },
       {
         "Name": "UnlockVFXCoordinatorComponent",
@@ -172,6 +202,12 @@
         "Offset": "0x440"
       },
       {
+        "Name": "pad0x234_TRRJT[0x234]",
+        "Type": "char",
+        "Size": "0x234",
+        "Offset": "0x444"
+      },
+      {
         "Name": "HideoutDoor",
         "Type": "Class SlidingDoor*",
         "Size": "0x8",
@@ -182,6 +218,12 @@
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x680"
+      },
+      {
+        "Name": "pad0x70_B6P4C[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x69e"
       }
     ]
   },
@@ -198,10 +240,22 @@
         "Offset": "0xc8"
       },
       {
+        "Name": "pad0x10_MVCIP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
         "Name": "CurrentStates",
         "Type": "TArray<Byte CurrentStates>",
         "Size": "0x10",
         "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x40_J38MS[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xf6"
       }
     ]
   },
@@ -228,6 +282,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x14_8A9BX[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0xe2"
       }
     ]
   },

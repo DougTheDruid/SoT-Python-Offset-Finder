@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_ZTUFA[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "WieldableItemUseEvent",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -48,6 +54,12 @@
         "Offset": "0x228"
       },
       {
+        "Name": "pad0x7_OW360[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x229"
+      },
+      {
         "Name": "WieldableItemStow",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
@@ -70,6 +82,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x281"
+      },
+      {
+        "Name": "pad0x6_2BV5R[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x282"
       },
       {
         "Name": "CharacterDispatcher",

@@ -22,6 +22,10 @@ BP_PlayerBuriedItemsMapBundleInteractionPoint_C:
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_ZM2ZI[0x4]
+    Offset: '0x3ec'
+    Size: '0x4'
+    Type: char
   - Name: Token Material
     Offset: '0x3f0'
     Size: '0x8'

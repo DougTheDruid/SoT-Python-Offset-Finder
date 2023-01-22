@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class IsExcludedFromSeasonProgressionStatCondition: public TargetedStatCondition
 {
 public:
 };
 
 
-// Size 0xc0
+// Size 0xc0 (Full Size[0x188] - InheritedSize[0xc8]
 class PlayerSeasonProgressionComponent: public ActorComponent
 {
 public:

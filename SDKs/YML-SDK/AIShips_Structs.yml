@@ -6,6 +6,10 @@ AIShipBattleEncounterDescGenerationParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_5AW1S[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: BattleGenerationParams
     Offset: '0x8'
     Size: '0x10'
@@ -62,6 +66,10 @@ AIShipContextDescDamageParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_ZXWAA[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   - Name: RepairTimeMultiplier
     Offset: '0x8'
     Size: '0x4'
@@ -70,6 +78,10 @@ AIShipContextDescDamageParams:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_UC2KM[0x3]
+    Offset: '0xd'
+    Size: '0x3'
+    Type: char
   - Name: LeakAmountMultiplier
     Offset: '0x10'
     Size: '0x4'
@@ -153,6 +165,10 @@ AIShipCrewFormType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_U2S5N[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: IconColour
     Offset: '0x4'
     Size: '0x4'
@@ -172,6 +188,10 @@ AIShipDamagedTelemetryEvent:
     Offset: '0x10'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_MGFGP[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: DamagedShipPart
     Offset: '0x20'
     Size: '0x10'
@@ -232,6 +252,10 @@ AIShipEncounterBattleGenerationParams:
     Offset: '0x38'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_9DCT7[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   - Name: ShipSizeLimits
     Offset: '0x40'
     Size: '0x10'
@@ -285,6 +309,10 @@ AIShipEncounterParams:
     Offset: '0x0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_SYXN5[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: ShipTypeParams
     Offset: '0x8'
     Size: '0x10'
@@ -304,6 +332,10 @@ AIShipEncounterParamsSpawnerData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_UBHFO[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: CaptainName
     Offset: '0x14'
     Size: '0x8'
@@ -386,6 +418,10 @@ AIShipGenerationParams:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_YKJ8R[0x6]
+    Offset: '0x2'
+    Size: '0x6'
+    Type: char
   - Name: ShipControllerParams
     Offset: '0x8'
     Size: '0x8'
@@ -525,6 +561,10 @@ AIShipWeightedSize:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_3P3K1[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: ShipSize
     Offset: '0x10'
     Size: '0x8'
@@ -559,6 +599,10 @@ CursedSailsBattleParams:
     Offset: '0x71'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_NCLFD[0x6]
+    Offset: '0x72'
+    Size: '0x6'
+    Type: char
   - Name: EncounterDescription
     Offset: '0x78'
     Size: '0x8'
@@ -570,6 +614,10 @@ FeatureLockedAIShipBattles:
     Offset: '0x0'
     Size: '0xc'
     Type: Struct FeatureFlag
+  - Name: pad0x4_UDF6M[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: BattlesData
     Offset: '0x10'
     Size: '0x8'
@@ -676,6 +724,10 @@ WeightedAIShipCrewAmmoType:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_UMYOJ[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Params
     Offset: '0x8'
     Size: '0x18'
@@ -687,6 +739,10 @@ WeightedAIShipCrewFormType:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_NFHGD[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Params
     Offset: '0x8'
     Size: '0x20'
@@ -706,6 +762,10 @@ WeightedSpawnDirection:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_7NCTU[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: SpawnOffsets
     Offset: '0x10'
     Size: '0x10'
@@ -725,6 +785,10 @@ WeightedSpawnOffset:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_LJMPL[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: SpawnRotations
     Offset: '0x10'
     Size: '0x30'

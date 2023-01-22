@@ -6,10 +6,22 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
+        "Name": "pad0x60_AFMY6[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      },
+      {
         "Name": "TaleStepDesc",
         "Type": "Class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x18_W11P2[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8e"
       }
     ]
   },
@@ -38,6 +50,18 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_4YEMZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "pad0x5e_WKPX1[0x5e]",
+        "Type": "char",
+        "Size": "0x5e",
+        "Offset": "0x2e"
       }
     ]
   },
@@ -54,6 +78,12 @@
     "InheritedSize": "0x98",
     "ClassSize": "0x60",
     "Attributes": [
+      {
+        "Name": "pad0x8_YDPBX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
       {
         "Name": "Services",
         "Type": "TArray<class TaleQuestService*>",
@@ -161,6 +191,12 @@
         "Offset": "0x638"
       },
       {
+        "Name": "pad0x4_5XBYF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x63c"
+      },
+      {
         "Name": "DecalMaterial",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
@@ -173,6 +209,12 @@
         "Offset": "0x648"
       },
       {
+        "Name": "pad0x3_USZ9Z[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x649"
+      },
+      {
         "Name": "DecalYaw",
         "Type": "float",
         "Size": "0x4",
@@ -183,6 +225,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x650"
+      },
+      {
+        "Name": "pad0x1c_ATDY9[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x65a"
       }
     ]
   },
@@ -211,6 +259,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0xc_0N1XM[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x2a"
       }
     ]
   },
@@ -235,10 +289,22 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
+        "Name": "pad0x40_G52ZW[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x28"
+      },
+      {
         "Name": "ItemsToCollect",
         "Type": "TArray<Struct TaleQuestCargoRunContractItem>",
         "Size": "0x10",
         "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x10_1PK9U[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x78"
       },
       {
         "Name": "DeliverToNPC",
@@ -251,6 +317,12 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x28_7Y2AG[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x96"
       }
     ]
   },
@@ -265,6 +337,12 @@
         "Type": "TArray<class TaleQuestCargoRunContract*>",
         "Size": "0x10",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x58_QLRDC[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x6e"
       }
     ]
   },
@@ -282,6 +360,12 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x8_EGMNP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
         "Name": "Desc",
         "Type": "Class TaleQuestForEachStepDescBase*",
         "Size": "0x8",
@@ -292,6 +376,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x54_GI4DN[0x54]",
+        "Type": "char",
+        "Size": "0x54",
+        "Offset": "0x3a"
       }
     ]
   },
@@ -340,6 +430,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x9_IKC2I[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x3f"
       }
     ]
   },
@@ -360,6 +456,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x9_2CKQH[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x3f"
       }
     ]
   },
@@ -380,6 +482,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x9_2Q253[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x3f"
       }
     ]
   },
@@ -400,6 +508,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x9_E8DK0[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x3f"
       }
     ]
   },
@@ -420,6 +534,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0xc_Y07TH[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3a"
       }
     ]
   },
@@ -443,6 +563,12 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x20",
     "Attributes": [
+      {
+        "Name": "pad0x10_CWQB4[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
       {
         "Name": "TalesData",
         "Type": "TArray<Struct TaleQuestQueryableStateDataInfo>",
@@ -528,6 +654,12 @@
         "Type": "TArray<class ItemSpawnData*>",
         "Size": "0x10",
         "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x28_LHV1L[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x86"
       }
     ]
   },
@@ -538,10 +670,22 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
+        "Name": "pad0x50_KWJP1[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x60"
+      },
+      {
         "Name": "Desc",
         "Type": "Class TaleQuestActorOfInterestServiceDesc*",
         "Size": "0x8",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x40_AY4DE[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xb6"
       }
     ]
   },
@@ -598,6 +742,12 @@
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x2e8_9L43J[0x2e8]",
+        "Type": "char",
+        "Size": "0x2e8",
+        "Offset": "0xf6"
       }
     ]
   },
@@ -612,6 +762,12 @@
         "Type": "Class TaleQuestCheckpointServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x50_49HH1[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x66"
       }
     ]
   },
@@ -667,6 +823,12 @@
         "Type": "TArray<Struct TaleQuestQueryableStateDataInfo>",
         "Size": "0x10",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x50_ZLLSM[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x6e"
       }
     ]
   },
@@ -681,6 +843,12 @@
         "Type": "Class TaleQuestSelectorServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x30_NRMJ3[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x66"
       }
     ]
   },
@@ -695,6 +863,12 @@
         "Type": "Class TaleQuestShipSetSinkingParamsServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x58_VS90U[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x66"
       }
     ]
   },
@@ -704,6 +878,12 @@
     "InheritedSize": "0x60",
     "ClassSize": "0x58",
     "Attributes": [
+      {
+        "Name": "pad0x50_E8Y18[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x60"
+      },
       {
         "Name": "Desc",
         "Type": "Class TaleQuestToggleInteractionDescriptionServiceDesc*",
@@ -719,10 +899,22 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x20_ZKH8L[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x60"
+      },
+      {
         "Name": "MigrationActions",
         "Type": "TArray<Struct MigrationActionPair>",
         "Size": "0x10",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x38_SGNEF[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x8e"
       }
     ]
   },
@@ -893,6 +1085,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x29"
+      },
+      {
+        "Name": "pad0x8_ZJUCK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -913,6 +1111,12 @@
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x38_EIENO[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0xa6"
       }
     ]
   },
@@ -937,6 +1141,12 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x8_YZZH2[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
         "Name": "StepDesc",
         "Type": "Class DebugTaleAddInstancedLevelStepDesc*",
         "Size": "0x8",
@@ -947,6 +1157,12 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x40_2OP43[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xb6"
       }
     ]
   },
@@ -961,6 +1177,12 @@
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x78_NXMV5[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0xb6"
       }
     ]
   },
@@ -1119,6 +1341,12 @@
         "Type": "Class ParticipantRadiusTrackerStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x28_4G4C5[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -1145,6 +1373,12 @@
         "Type": "TArray<Struct PossessableSequence>",
         "Size": "0x10",
         "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x30_TJO0E[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xb6"
       }
     ]
   },
@@ -1165,6 +1399,12 @@
         "Type": "Class SequencerCutSceneActor*",
         "Size": "0x8",
         "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x38_Z5DPU[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0xa6"
       }
     ]
   },
@@ -1315,6 +1555,12 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x90_39EHF[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
         "Name": "IslandTypeWeights",
         "Type": "Class IslandTypeWeightsDataAsset*",
         "Size": "0x8",
@@ -1403,6 +1649,12 @@
         "Type": "Class TaleQuestIndexedFrame*",
         "Size": "0x8",
         "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x48_3JAQV[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xae"
       }
     ]
   },
@@ -1459,6 +1711,12 @@
         "Type": "Class TaleQuestPersistentForEachCrewTaskStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x60_4CC4S[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -1524,6 +1782,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestStartPermanentPromptAndWaitForEndEventStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x28",
+    "Attributes": []
+  },
   "TaleQuestStructStepBase": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
@@ -1570,6 +1835,12 @@
         "Type": "Class TaleQuestWaitForHandInStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x18_7GNTN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -1605,6 +1876,12 @@
         "Type": "Class WaitForActorOfInterestToUnregisterStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x80_P1GSD[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -1619,6 +1896,12 @@
         "Type": "Class GameEvent*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x18_2R8FQ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -1638,9 +1921,9 @@
   },
   "WaitForQueryableStateValueStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0x100",
+    "FullSize": "0x118",
     "InheritedSize": "0x98",
-    "ClassSize": "0x68",
+    "ClassSize": "0x80",
     "Attributes": []
   },
   "WaitForSpawnedPawnBaseStep": {
@@ -1654,6 +1937,12 @@
         "Type": "Class AISpawner*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x20_M7Q74[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x9e"
       }
     ]
   },
@@ -1676,6 +1965,12 @@
         "Offset": "0xb0"
       },
       {
+        "Name": "pad0x4_7P597[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xb4"
+      },
+      {
         "Name": "Location",
         "Type": "Struct QuestVariableVector",
         "Size": "0x30",
@@ -1686,6 +1981,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x4_2IENT[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xec"
       },
       {
         "Name": "ActorInsideRadius",
@@ -1712,6 +2013,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x84"
+      },
+      {
+        "Name": "pad0x3_HSYAD[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x85"
       },
       {
         "Name": "RemoteConfigKeyRadius",
@@ -1744,6 +2051,12 @@
         "Type": "Struct ClassFunctionSelectionType",
         "Size": "0x10",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x70_20SL6[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x96"
       }
     ]
   },
@@ -1828,6 +2141,12 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
+        "Name": "pad0x20_R71F3[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
         "Name": "ActorToSearch",
         "Type": "Struct QuestVariableActor",
         "Size": "0x30",
@@ -1856,6 +2175,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x109"
+      },
+      {
+        "Name": "pad0x8_BQA7O[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x108"
       }
     ]
   },
@@ -1946,6 +2271,12 @@
         "Offset": "0xe0"
       },
       {
+        "Name": "pad0x4_7XRUD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
         "Name": "DigLocation",
         "Type": "Struct QuestVariableVector",
         "Size": "0x30",
@@ -2002,6 +2333,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xbc"
+      },
+      {
+        "Name": "pad0x5_HX0RX[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0xbb"
       }
     ]
   },
@@ -2062,6 +2399,12 @@
         "Offset": "0x120"
       },
       {
+        "Name": "pad0x3_WNOSM[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x121"
+      },
+      {
         "Name": "AttachSocketName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -2072,6 +2415,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x12c"
+      },
+      {
+        "Name": "pad0x5_FF4WS[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x12b"
       }
     ]
   },
@@ -2100,6 +2449,12 @@
         "Offset": "0xb1"
       },
       {
+        "Name": "pad0x6_KTCX1[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xb2"
+      },
+      {
         "Name": "CriticalActorLostMessage",
         "Type": "Struct FText",
         "Size": "0x38",
@@ -2118,6 +2473,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_4JVDD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x84"
       },
       {
         "Name": "Location",
@@ -2171,6 +2532,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x4_1FMJU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8c"
       },
       {
         "Name": "DockableBaseActor",
@@ -2231,6 +2598,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1a9"
+      },
+      {
+        "Name": "pad0x2_XF6GX[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x1aa"
       },
       {
         "Name": "SubtitleSphereRadiusInCm",
@@ -2295,6 +2668,12 @@
         "Offset": "0x149"
       },
       {
+        "Name": "pad0x6_LV4Z3[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x14a"
+      },
+      {
         "Name": "DialogueData",
         "Type": "Class SceneDialogueData*",
         "Size": "0x8",
@@ -2311,6 +2690,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x168"
+      },
+      {
+        "Name": "pad0x3_LE2S9[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x169"
       },
       {
         "Name": "SubtitleSphereRadiusInCm",
@@ -2369,6 +2754,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xbc"
+      },
+      {
+        "Name": "pad0x5_5BWZ3[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0xbb"
       }
     ]
   },
@@ -2398,6 +2789,12 @@
         "Offset": "0x84"
       },
       {
+        "Name": "pad0x3_D417W[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x85"
+      },
+      {
         "Name": "RemoteConfigKeyRadius",
         "Type": "struct FName",
         "Size": "0x8",
@@ -2425,6 +2822,12 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x20_69CHF[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
         "Name": "GroupName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -2441,6 +2844,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xac"
+      },
+      {
+        "Name": "pad0x3_3THHJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xad"
       },
       {
         "Name": "Point",
@@ -2489,6 +2898,12 @@
         "Offset": "0x88"
       },
       {
+        "Name": "pad0x7_XTN6M[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x89"
+      },
+      {
         "Name": "ActorWithLayers",
         "Type": "Struct QuestVariableActor",
         "Size": "0x30",
@@ -2509,10 +2924,22 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
+        "Name": "pad0x20_JZMSB[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x80"
+      },
+      {
         "Name": "MarkAsCritical",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x7_VFVPX[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xa1"
       },
       {
         "Name": "CriticalActorLostMessage",
@@ -2559,6 +2986,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x81"
+      },
+      {
+        "Name": "pad0x6_QBW5M[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x82"
       },
       {
         "Name": "CriticalActorLostMessage",
@@ -2695,21 +3128,15 @@
   },
   "TaleQuestAwaitCrewShipSinkStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb8",
+    "FullSize": "0xb0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x38",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "CrewId",
         "Type": "Struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x80"
-      },
-      {
-        "Name": "TimeoutTimerInterval",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xb0"
       }
     ]
   },
@@ -2784,6 +3211,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x9_O3O2H[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x7f"
       }
     ]
   },
@@ -2818,6 +3251,12 @@
         "Type": "Struct NativeAndUserDefinedStructSelector",
         "Size": "0x8",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x60_QD6WE[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x8e"
       }
     ]
   },
@@ -2848,6 +3287,12 @@
     "InheritedSize": "0x80",
     "ClassSize": "0x28",
     "Attributes": [
+      {
+        "Name": "pad0x8_ELAUU[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
       {
         "Name": "Collection",
         "Type": "struct FName",
@@ -2938,6 +3383,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0xc_H2C7R[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0xe2"
       }
     ]
   },
@@ -2986,6 +3437,12 @@
         "Offset": "0xa0"
       },
       {
+        "Name": "pad0x7_JSYWA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xa1"
+      },
+      {
         "Name": "SpecificPlayerToAward",
         "Type": "Struct QuestVariablePlayerActor",
         "Size": "0x30",
@@ -3016,6 +3473,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x9_UYXW7[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0xaf"
       }
     ]
   },
@@ -3033,6 +3496,12 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x8_72WJT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
         "Name": "Function",
         "Type": "Class Function*",
         "Size": "0x8",
@@ -3043,6 +3512,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x178"
+      },
+      {
+        "Name": "pad0x9_OYTDC[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x177"
       }
     ]
   },
@@ -3068,6 +3543,13 @@
     "Attributes": []
   },
   "TaleQuestCoreFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestCutscenesFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
     "InheritedSize": "0x180",
@@ -3165,6 +3647,12 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x8_OBACM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x180"
+      },
+      {
         "Name": "Active",
         "Type": "Class TaleQuestStepDesc*",
         "Size": "0x8",
@@ -3175,6 +3663,12 @@
         "Type": "Class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x190"
+      },
+      {
+        "Name": "pad0x40_14TMI[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x196"
       }
     ]
   },
@@ -3257,6 +3751,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0xc_ESRHV[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x82"
       }
     ]
   },
@@ -3343,6 +3843,26 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x9d"
+      },
+      {
+        "Name": "pad0x4_X7YIW[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
+      }
+    ]
+  },
+  "TaleQuestStartPermanentPromptAndWaitForEndEventStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Prompt",
+        "Type": "Struct QuestVariablePrioritisedPrompt",
+        "Size": "0x30",
+        "Offset": "0x80"
       }
     ]
   },
@@ -3357,6 +3877,12 @@
         "Type": "Class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x60_D2LTD[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x86"
       }
     ]
   },
@@ -3427,6 +3953,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x9_HTHBI[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x7f"
       }
     ]
   },
@@ -3567,6 +4099,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0xc_IMYWH[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x8a"
       }
     ]
   },
@@ -3615,6 +4153,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x9_EQCU0[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x87"
       }
     ]
   },
@@ -3629,6 +4173,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0xc_S05G7[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x8a"
       }
     ]
   },
@@ -3653,10 +4203,22 @@
     "ClassSize": "0x198",
     "Attributes": [
       {
+        "Name": "pad0x78_QTF1S[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x98"
+      },
+      {
         "Name": "CachedSelectorService",
         "Type": "Class TaleQuestSelectorService*",
         "Size": "0x8",
         "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x128_WE0VZ[0x128]",
+        "Type": "char",
+        "Size": "0x128",
+        "Offset": "0x116"
       }
     ]
   },
@@ -3705,6 +4267,12 @@
         "Offset": "0x80"
       },
       {
+        "Name": "pad0x7_HSIKZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      },
+      {
         "Name": "LanternItemCategory",
         "Type": "class",
         "Size": "0x8",
@@ -3723,6 +4291,12 @@
         "Type": "Class TaleQuestFlameOfFateServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x68_MKCI7[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x66"
       }
     ]
   },
@@ -3749,6 +4323,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x31"
+      },
+      {
+        "Name": "pad0x8_E3UN8[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x30"
       }
     ]
   },
@@ -3963,6 +4543,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x198"
+      },
+      {
+        "Name": "pad0x9_GP1C9[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x197"
       }
     ]
   },
@@ -4001,6 +4587,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xec"
+      },
+      {
+        "Name": "pad0x5_CDBU1[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0xeb"
       }
     ]
   },

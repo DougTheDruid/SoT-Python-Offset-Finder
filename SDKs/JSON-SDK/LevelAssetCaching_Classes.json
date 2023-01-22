@@ -20,10 +20,22 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x18_A7P51[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      },
+      {
         "Name": "CurrentRegion",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x38_SPEN1[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x46"
       }
     ]
   },
@@ -48,10 +60,22 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
+        "Name": "pad0x10_YXKY2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
         "Name": "CurrentListAsset",
         "Type": "Class RegionalAssetListDataAsset*",
         "Size": "0x8",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0xa8_AFM9I[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x3e"
       }
     ]
   },
@@ -76,10 +100,22 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
+        "Name": "pad0x8_034EL[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
         "Name": "WorldSetup",
         "Type": "Struct WorldRegionSetup",
         "Size": "0x28",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xa8_SZZCX[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x56"
       }
     ]
   },

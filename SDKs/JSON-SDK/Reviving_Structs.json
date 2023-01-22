@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_QCGB6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "DeathCameraBlackFadeDelay",
         "Type": "float",
         "Size": "0x4",
@@ -67,6 +73,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_HKGRF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "CachedReviveSettings",
@@ -246,6 +258,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_KHJVP[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
       },
       {
         "Name": "RevivableCharacter",

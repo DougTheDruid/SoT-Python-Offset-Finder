@@ -132,6 +132,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_UMYOJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "Params",
         "Type": "Struct AIShipCrewAmmoType",
         "Size": "0x18",
@@ -166,6 +172,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_NFHGD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "Params",
         "Type": "Struct AIShipCrewFormType",
         "Size": "0x20",
@@ -181,6 +193,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_U2S5N[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "IconColour",
@@ -212,6 +230,12 @@
         "Offset": "0x4"
       },
       {
+        "Name": "pad0x3_ZXWAA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      },
+      {
         "Name": "RepairTimeMultiplier",
         "Type": "float",
         "Size": "0x4",
@@ -222,6 +246,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x3_UC2KM[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd"
       },
       {
         "Name": "LeakAmountMultiplier",
@@ -280,6 +310,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_UBHFO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       },
       {
         "Name": "CaptainName",
@@ -379,6 +415,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x6_YKJ8R[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
       },
       {
         "Name": "ShipControllerParams",
@@ -525,6 +567,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_3P3K1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "ShipSize",
         "Type": "class",
         "Size": "0x8",
@@ -540,6 +588,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_5AW1S[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "BattleGenerationParams",
@@ -622,6 +676,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x4_9DCT7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
         "Name": "ShipSizeLimits",
         "Type": "TArray<Struct AIShipSizeLimit>",
         "Size": "0x10",
@@ -685,6 +745,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_7NCTU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "SpawnOffsets",
         "Type": "TArray<Struct WeightedSpawnOffset>",
         "Size": "0x10",
@@ -714,6 +780,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_LJMPL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "SpawnRotations",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
@@ -729,6 +801,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_SYXN5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "ShipTypeParams",
@@ -792,6 +870,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x71"
+      },
+      {
+        "Name": "pad0x6_NCLFD[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x72"
       },
       {
         "Name": "EncounterDescription",
@@ -1002,6 +1086,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_UDF6M[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "BattlesData",
         "Type": "Class AIShipBattlesDataAsset*",
         "Size": "0x8",
@@ -1023,6 +1113,12 @@
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_MGFGP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
         "Name": "DamagedShipPart",

@@ -6,18 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ContestRowboatsServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x60
+// Size 0x60 (Full Size[0x428] - InheritedSize[0x3c8]
 class ContestRowboatsService: public Actor
 {
 public:
+	char                                                         pad0x8_AW4EZ[0x8];                                 // 0x3c8(0x8)
 	class                                                        RowboatClass;                                      // 0x3d0(0x8)
+	char                                                         pad0x60_PMUD9[0x60];                               // 0x3d6(0x60)
 };
 
 

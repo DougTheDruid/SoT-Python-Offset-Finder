@@ -41,6 +41,10 @@ GrassVariety:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_VGDYR[0x3]
+    Offset: '0xd'
+    Size: '0x3'
+    Type: char
   - Name: PlacementJitter
     Offset: '0x10'
     Size: '0x4'
@@ -61,6 +65,10 @@ GrassVariety:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_79MID[0x3]
+    Offset: '0x21'
+    Size: '0x3'
+    Type: char
   - Name: AlignToSurface
     Offset: '0x24'
     Size: '0x4'
@@ -150,6 +158,10 @@ LandscapeSplineMeshEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_XKV64[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   - Name: CenterAdjust
     Offset: '0x1c'
     Size: '0x8'
@@ -158,6 +170,10 @@ LandscapeSplineMeshEntry:
     Offset: '0x24'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_3UMNK[0x3]
+    Offset: '0x25'
+    Size: '0x3'
+    Type: char
   - Name: Scale
     Offset: '0x28'
     Size: '0xc'
@@ -207,6 +223,10 @@ LayerBlendInput:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_5DSLL[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   - Name: LayerInput
     Offset: '0x10'
     Size: '0x38'

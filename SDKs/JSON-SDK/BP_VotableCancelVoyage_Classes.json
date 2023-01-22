@@ -30,6 +30,12 @@
         "Offset": "0x510"
       },
       {
+        "Name": "pad0x4_UMWPP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x514"
+      },
+      {
         "Name": "Token Material",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
@@ -37,7 +43,7 @@
       },
       {
         "Name": "DaggerPositions",
-        "Type": "TArray<Struct StaticMeshComponent>",
+        "Type": "TArray<Struct Transform>",
         "Size": "0x10",
         "Offset": "0x520"
       }

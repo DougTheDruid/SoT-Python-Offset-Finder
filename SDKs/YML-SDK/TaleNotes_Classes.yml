@@ -2,67 +2,79 @@
 # https://github.com/DougTheDruid
 TaleNote:
   Attributes:
+  - Name: pad0x10_HUGZF[0x10]
+    Offset: '0x7a0'
+    Size: '0x10'
+    Type: char
   - Name: CanvasWidth
-    Offset: '0x790'
+    Offset: '0x7b0'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x794'
+    Offset: '0x7b4'
     Size: '0x4'
     Type: int
   - Name: FontScale
-    Offset: '0x798'
+    Offset: '0x7b8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_X1OK2[0x4]
+    Offset: '0x7bc'
+    Size: '0x4'
+    Type: char
   - Name: Font
-    Offset: '0x7a0'
+    Offset: '0x7c0'
     Size: '0x8'
     Type: Class Font*
   - Name: Image
-    Offset: '0x7a8'
+    Offset: '0x7c8'
     Size: '0x30'
     Type: Struct TreasureMapWidgetStreamedTexture
   - Name: TitleWidgetText
-    Offset: '0x7d8'
+    Offset: '0x7f8'
     Size: '0x38'
     Type: Struct TreasureMapWidgetText
   - Name: BodyWidgetText
-    Offset: '0x810'
+    Offset: '0x830'
     Size: '0x38'
     Type: Struct TreasureMapWidgetText
   - Name: NoteWidth
-    Offset: '0x848'
+    Offset: '0x868'
     Size: '0x4'
     Type: float
   - Name: NoteLineSpacingMultiplier
-    Offset: '0x84c'
+    Offset: '0x86c'
     Size: '0x4'
     Type: float
   - Name: Title
-    Offset: '0x850'
+    Offset: '0x870'
     Size: '0x38'
     Type: Struct FText
   - Name: Body
-    Offset: '0x888'
+    Offset: '0x8a8'
     Size: '0x38'
     Type: Struct FText
   - Name: RenderTarget
-    Offset: '0x8c0'
+    Offset: '0x8e0'
     Size: '0x8'
     Type: Class MaybeCompressedCanvasRenderTarget2D*
   - Name: UsableWieldableComponent
-    Offset: '0x8c8'
+    Offset: '0x8e8'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   - Name: InventoryItemComponent
-    Offset: '0x8d0'
+    Offset: '0x8f0'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   - Name: ZoomInOnWieldableComponent
-    Offset: '0x8d8'
+    Offset: '0x8f8'
     Size: '0x8'
     Type: Class ZoomInOnWieldableItemComponent*
+  - Name: pad0xe0_O45XC[0xe0]
+    Offset: '0x8fe'
+    Size: '0xe0'
+    Type: char
   ClassSize: '0x230'
-  FullSize: '0x9b0'
-  InheritedSize: '0x780'
+  FullSize: '0x9d0'
+  InheritedSize: '0x7a0'
   Super: SkeletalMeshWieldableItem

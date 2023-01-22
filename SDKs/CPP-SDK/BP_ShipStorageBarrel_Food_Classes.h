@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x20 (Full Size[0x4e8] - InheritedSize[0x4c8]
 class BP_ShipStorageBarrel_Food_C: public StorageContainer
 {
 public:

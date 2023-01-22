@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x4d0] - InheritedSize[0x4c8]
 class BP_CapstanRelease_C: public CapstanRelease
 {
 public:

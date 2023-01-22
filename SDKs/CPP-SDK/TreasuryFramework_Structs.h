@@ -11,6 +11,7 @@ struct TreasuryWaveEncounter
 {
 public:
 	byte                                                         EncounterType;                                     // 0x0(0x1)
+	char                                                         pad0x7_ZVH8I[0x7];                                 // 0x1(0x7)
 	Class SpawnAIWaveMechanismAction*                            SpawnerMechanism;                                  // 0x8(0x8)
 	Class Actor*                                                 MechanismTrigger;                                  // 0x10(0x8)
 	Class SpawnAIWaveMechanismAction*                            SpawnerMechanismVaultMaster;                       // 0x18(0x8)

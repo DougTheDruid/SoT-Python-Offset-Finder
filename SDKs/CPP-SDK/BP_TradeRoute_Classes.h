@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x3e0] - InheritedSize[0x3d8]
 class BP_TradeRoute_C: public TradeRoute
 {
 public:

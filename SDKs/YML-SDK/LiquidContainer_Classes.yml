@@ -18,6 +18,10 @@ LiquidContainerComponent:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_KS60L[0x4]
+    Offset: '0xec'
+    Size: '0x4'
+    Type: char
   - Name: TransitionCurve
     Offset: '0xf0'
     Size: '0x8'
@@ -34,6 +38,10 @@ LiquidContainerComponent:
     Offset: '0x100'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
+  - Name: pad0x38_9KD5Y[0x38]
+    Offset: '0x10e'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'

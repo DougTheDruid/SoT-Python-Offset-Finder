@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AthenaAudioConfig: public DataAsset
 {
 public:
@@ -15,7 +15,7 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class AthenaAudioModuleSettings: public DeveloperSettings
 {
 public:
@@ -23,7 +23,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x60 (Full Size[0x340] - InheritedSize[0x2e0]
 class AudioPortalComponent: public SceneComponent
 {
 public:
@@ -31,39 +31,42 @@ public:
 	float                                                        InsideRtpcUpdateDistance;                          // 0x2e4(0x4)
 	float                                                        OutsideRtpcUpdateDistance;                         // 0x2e8(0x4)
 	bool                                                         TrackAttachmentToActor;                            // 0x2ec(0x1)
+	char                                                         pad0x3_QYXYO[0x3];                                 // 0x2ed(0x3)
 	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2f0(0x8)
 	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2f8(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x300(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x308(0x8)
 	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x310(0x8)
+	char                                                         pad0x38_ND89L[0x38];                               // 0x316(0x38)
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AudioPortalInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xb0
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class AudioPortalService: public Object
 {
 public:
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x650] - InheritedSize[0x620]
 class AudioSpaceComponent: public StaticMeshComponent
 {
 public:
 	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
 	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x630(0x8)
+	char                                                         pad0x28_OAAUN[0x28];                               // 0x636(0x28)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class AudioSpaceTrackerComponent: public ActorComponent
 {
 public:
@@ -71,25 +74,27 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
 class MultiEmitter: public Actor
 {
 public:
 	Class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
+	char                                                         pad0x18_HJNOU[0x18];                               // 0x3ce(0x18)
 };
 
 
-// Size 0x30
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class StoryDrivenAudioPortalDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_AA9AC[0x4];                                 // 0x34(0x4)
 	TArray<Struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
 	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x90
+// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
 class WwiseEventsTriggerRegionComponent: public SceneComponent
 {
 public:
@@ -99,7 +104,9 @@ public:
 	float                                                        TriggerEnterRadiusInCms;                           // 0x308(0x4)
 	float                                                        TriggerExitRadiusInCms;                            // 0x30c(0x4)
 	Struct Vector                                                EmitterOffset;                                     // 0x310(0xc)
+	char                                                         pad0x14_17AJF[0x14];                               // 0x31c(0x14)
 	Class Character*                                             LocalPlayer;                                       // 0x330(0x8)
+	char                                                         pad0x48_D8YQ1[0x48];                               // 0x336(0x48)
 };
 
 

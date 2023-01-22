@@ -8,16 +8,28 @@ ControllableOarsInterface:
   Super: Interface
 FakeShip:
   Attributes:
+  - Name: pad0x8_3V3NH[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
   - Name: AttachedItems
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<class ItemProxy*>
+  - Name: pad0x108_1O6QM[0x108]
+    Offset: '0x3de'
+    Size: '0x108'
+    Type: char
   ClassSize: '0x100'
   FullSize: '0x4c8'
   InheritedSize: '0x3c8'
   Super: Actor
 ItemProxyWatercraftTrackerComponent:
   Attributes:
+  - Name: pad0x8_VV056[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: WatercraftTrackingData
     Offset: '0xd0'
     Size: '0x8'
@@ -26,6 +38,10 @@ ItemProxyWatercraftTrackerComponent:
     Offset: '0xd8'
     Size: '0x8'
     Type: Class Actor*
+  - Name: pad0x80_WNLC5[0x80]
+    Offset: '0xde'
+    Size: '0x80'
+    Type: char
   ClassSize: '0x88'
   FullSize: '0x150'
   InheritedSize: '0xc8'
@@ -42,6 +58,10 @@ ItemProxyWatercraftTrackerComponentDataAsset:
   Super: DataAsset
 Rowboat:
   Attributes:
+  - Name: pad0x40_W6PN2[0x40]
+    Offset: '0x710'
+    Size: '0x40'
+    Type: char
   - Name: LeftSideClamberSpot
     Offset: '0x750'
     Size: '0x8'
@@ -78,6 +98,10 @@ Rowboat:
     Offset: '0x790'
     Size: '0xc'
     Type: Struct Vector
+  - Name: pad0x4_8A18U[0x4]
+    Offset: '0x79c'
+    Size: '0x4'
+    Type: char
   - Name: TetherCustomisationComponent
     Offset: '0x7a0'
     Size: '0x8'
@@ -146,6 +170,10 @@ Rowboat:
     Offset: '0x849'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_SRBQM[0x2]
+    Offset: '0x84a'
+    Size: '0x2'
+    Type: char
   - Name: MaxPushingAngle
     Offset: '0x84c'
     Size: '0x4'
@@ -158,10 +186,18 @@ Rowboat:
     Offset: '0x854'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_X9ZJ5[0x1]
+    Offset: '0x855'
+    Size: '0x1'
+    Type: char
   - Name: CoverCollisionChannel
     Offset: '0x856'
     Size: '0x1'
     Type: byte
+  - Name: pad0x1_TM9XI[0x1]
+    Offset: '0x857'
+    Size: '0x1'
+    Type: char
   - Name: UnderCoverCheckInterval
     Offset: '0x858'
     Size: '0x4'
@@ -178,6 +214,10 @@ Rowboat:
     Offset: '0x870'
     Size: '0x1'
     Type: byte
+  - Name: pad0x191_KRK0Z[0x191]
+    Offset: '0x86f'
+    Size: '0x191'
+    Type: char
   ClassSize: '0x2f0'
   FullSize: '0xa00'
   InheritedSize: '0x710'
@@ -192,6 +232,10 @@ RowboatAudioComponent:
     Offset: '0x2e8'
     Size: '0x8'
     Type: Class Rowboat*
+  - Name: pad0x1b0_4RGDI[0x1b0]
+    Offset: '0x2ee'
+    Size: '0x1b0'
+    Type: char
   ClassSize: '0x1b0'
   FullSize: '0x490'
   InheritedSize: '0x2e0'
@@ -218,6 +262,10 @@ RowboatAudioComponentParams:
     Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_0XZMA[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   - Name: RowboatLaunch
     Offset: '0x50'
     Size: '0x8'
@@ -246,6 +294,10 @@ RowboatAudioComponentParams:
     Offset: '0x80'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_MMX13[0x4]
+    Offset: '0x84'
+    Size: '0x4'
+    Type: char
   - Name: RowboatTakenDamage
     Offset: '0x88'
     Size: '0x8'
@@ -254,6 +306,10 @@ RowboatAudioComponentParams:
     Offset: '0x90'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_9RRCS[0x4]
+    Offset: '0x94'
+    Size: '0x4'
+    Type: char
   - Name: RowboatAttach
     Offset: '0x98'
     Size: '0x8'
@@ -390,10 +446,18 @@ RowingInputComponent:
   Super: LookAtOffsetInputComponent
 ScrapeableComponent:
   Attributes:
+  - Name: pad0x8_BBEU3[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: MinIntervalBetweenScrapeDamage
     Offset: '0xd0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_H936A[0x4]
+    Offset: '0xd4'
+    Size: '0x4'
+    Type: char
   - Name: ScrapeDamageSettings
     Offset: '0xd8'
     Size: '0x8'
@@ -440,6 +504,10 @@ StorageSeat:
     Offset: '0x688'
     Size: '0x8'
     Type: Class StorageContainerComponent*
+  - Name: pad0x30_V9ZBC[0x30]
+    Offset: '0x68e'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x6b0'
   InheritedSize: '0x680'
@@ -504,6 +572,10 @@ TaleQuestWatercraftServiceDesc:
   Super: TaleQuestServiceDesc
 Watercraft:
   Attributes:
+  - Name: pad0x28_PFQ8F[0x28]
+    Offset: '0x3c8'
+    Size: '0x28'
+    Type: char
   - Name: BuoyancyComponent
     Offset: '0x3f0'
     Size: '0x8'
@@ -512,6 +584,10 @@ Watercraft:
     Offset: '0x3f8'
     Size: '0xc'
     Type: Struct WatercraftRolloverCorrector
+  - Name: pad0x4_CD8QI[0x4]
+    Offset: '0x404'
+    Size: '0x4'
+    Type: char
   - Name: NosediveBrake
     Offset: '0x408'
     Size: '0x8'
@@ -552,6 +628,10 @@ Watercraft:
     Offset: '0x4b8'
     Size: '0x1c'
     Type: Struct RigidBodyErrorCorrection
+  - Name: pad0x34_OF3IE[0x34]
+    Offset: '0x4d4'
+    Size: '0x34'
+    Type: char
   - Name: BuoyancySampleMovement
     Offset: '0x508'
     Size: '0x68'
@@ -584,6 +664,14 @@ Watercraft:
     Offset: '0x583'
     Size: '0x1'
     Type: bool
+  - Name: pad0x4_VHUTY[0x4]
+    Offset: '0x584'
+    Size: '0x4'
+    Type: char
+  - Name: pad0x190_I8C8P[0x190]
+    Offset: '0x586'
+    Size: '0x190'
+    Type: char
   ClassSize: '0x348'
   FullSize: '0x710'
   InheritedSize: '0x3c8'
@@ -608,16 +696,28 @@ WatercraftServiceInterface:
   Super: Interface
 WatercraftSpawnData:
   Attributes:
+  - Name: pad0x20_5DH0F[0x20]
+    Offset: '0x58'
+    Size: '0x20'
+    Type: char
   - Name: MinDistanceToNearestWatercraftInMetres
     Offset: '0x78'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_NDYSE[0xc]
+    Offset: '0x7a'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x80'
   InheritedSize: '0x58'
   Super: ItemSpawnData
 WatercraftTrackerComponent:
   Attributes:
+  - Name: pad0x8_VMMX1[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: CurrentWatercrafts
     Offset: '0xd0'
     Size: '0x10'

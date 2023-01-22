@@ -54,6 +54,12 @@
         "Offset": "0x468"
       },
       {
+        "Name": "pad0x4_LTIUK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x46c"
+      },
+      {
         "Name": "seagulls_MI_LOD",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",

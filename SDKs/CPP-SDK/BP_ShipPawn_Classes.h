@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8
+// Size 0x8 (Full Size[0x480] - InheritedSize[0x478]
 class BP_ShipPawn_C: public ShipProxyPawn
 {
 public:

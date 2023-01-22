@@ -18,6 +18,12 @@
         "Offset": "0x58"
       },
       {
+        "Name": "pad0x4_4DPZL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
         "Name": "AshCloudLifetime",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
@@ -80,6 +86,12 @@
         "Offset": "0x3e8"
       },
       {
+        "Name": "pad0x4_BFR16[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3ec"
+      },
+      {
         "Name": "LifeTime",
         "Type": "float",
         "Size": "0x4",
@@ -104,10 +116,22 @@
         "Offset": "0x3fc"
       },
       {
+        "Name": "pad0x37_094Z9[0x37]",
+        "Type": "char",
+        "Size": "0x37",
+        "Offset": "0x3fd"
+      },
+      {
         "Name": "MaxRadiusMultiplier",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x434"
+      },
+      {
+        "Name": "pad0x20_796OV[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x436"
       }
     ]
   },
@@ -122,6 +146,12 @@
         "Type": "Class AshenLordVolcanoSetupDataAsset*",
         "Size": "0x8",
         "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0x78_OF0EU[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x3ce"
       }
     ]
   },
@@ -136,6 +166,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_GMJ5Q[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       },
       {
         "Name": "WarmUpDuration",
@@ -160,6 +196,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x4_PWE1W[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc4"
       },
       {
         "Name": "GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration",
@@ -196,6 +238,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x160"
+      },
+      {
+        "Name": "pad0x4_6FVCV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x164"
       },
       {
         "Name": "ChanceToTargetPlayers",
@@ -300,6 +348,12 @@
         "Offset": "0x3b8"
       },
       {
+        "Name": "pad0x4_NZFS9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3bc"
+      },
+      {
         "Name": "LocalMiniProjectilesSpawnAngleRange",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
@@ -328,6 +382,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x428"
+      },
+      {
+        "Name": "pad0x4_ZGHB7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x42c"
       },
       {
         "Name": "LocalEmbers",
@@ -442,10 +502,22 @@
         "Offset": "0x3cc"
       },
       {
+        "Name": "pad0x3_MMD93[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x3cd"
+      },
+      {
         "Name": "CurrentCloudAnimation",
         "Type": "Struct AshenLordWorldEndCloudAnimation",
         "Size": "0x8",
         "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x18_ZLY6H[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3d6"
       }
     ]
   },
@@ -455,6 +527,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0xe8",
     "Attributes": [
+      {
+        "Name": "pad0x8_OR9T6[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "SetupData",
         "Type": "Class GeyserSetupDataAsset*",
@@ -480,10 +558,22 @@
         "Offset": "0x3e8"
       },
       {
+        "Name": "pad0x18_K3N16[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3f8"
+      },
+      {
         "Name": "GeyserState",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x410"
+      },
+      {
+        "Name": "pad0x7_ZWK3E[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x411"
       },
       {
         "Name": "GeyserBuildUpPool",
@@ -540,6 +630,12 @@
         "Offset": "0x458"
       },
       {
+        "Name": "pad0x7_SDP31[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x459"
+      },
+      {
         "Name": "GeyserHoleClass",
         "Type": "class",
         "Size": "0x8",
@@ -550,6 +646,12 @@
         "Type": "Class Hole*",
         "Size": "0x8",
         "Offset": "0x468"
+      },
+      {
+        "Name": "pad0x50_DN4L5[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x46e"
       }
     ]
   },
@@ -584,6 +686,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_TB01T[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       },
       {
         "Name": "WarmUpDuration",
@@ -622,6 +730,12 @@
         "Offset": "0xf4"
       },
       {
+        "Name": "pad0x4_KVJL4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x104"
+      },
+      {
         "Name": "WarmupPlayerFeedback",
         "Type": "Struct PlayerFeedback",
         "Size": "0x80",
@@ -656,6 +770,12 @@
         "Type": "Struct FloatRange",
         "Size": "0x10",
         "Offset": "0x24c"
+      },
+      {
+        "Name": "pad0x4_BPCLH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x25c"
       },
       {
         "Name": "ForceToApplyToShip",
@@ -738,6 +858,12 @@
     "ClassSize": "0x1f0",
     "Attributes": [
       {
+        "Name": "pad0x10_T31Z6[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
         "Name": "EarthquakeSetupData",
         "Type": "Class EarthquakeSetupDataAsset*",
         "Size": "0x8",
@@ -778,6 +904,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x410"
+      },
+      {
+        "Name": "pad0x4_XIJ1K[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x414"
       },
       {
         "Name": "AudioPool",
@@ -834,6 +966,12 @@
         "Offset": "0x450"
       },
       {
+        "Name": "pad0x4_RFXGD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x454"
+      },
+      {
         "Name": "HitDetectionVolume",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
@@ -850,6 +988,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x468"
+      },
+      {
+        "Name": "pad0x151_6LIEH[0x151]",
+        "Type": "char",
+        "Size": "0x151",
+        "Offset": "0x467"
       }
     ]
   },
@@ -864,6 +1008,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4b0"
+      },
+      {
+        "Name": "pad0x7_E22F4[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x4b1"
       },
       {
         "Name": "MechanismActionComponent",
@@ -884,6 +1034,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_6BGI7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       },
       {
         "Name": "DormantDuration",
@@ -922,6 +1078,12 @@
         "Offset": "0xc2"
       },
       {
+        "Name": "pad0x1_XAUXN[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0xc3"
+      },
+      {
         "Name": "MinDistanceFromPlayerInMetres",
         "Type": "float",
         "Size": "0x4",
@@ -932,6 +1094,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x4_FFAMB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
       },
       {
         "Name": "GeyserToSpawn",
@@ -1037,6 +1205,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0x51_192ZB[0x51]",
+        "Type": "char",
+        "Size": "0x51",
+        "Offset": "0x3f7"
       }
     ]
   },
@@ -1058,6 +1232,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_2G8C7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       },
       {
         "Name": "DormantDuration",
@@ -1088,6 +1268,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x3_LJ2DV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xe1"
       },
       {
         "Name": "DestroyAfterDeactivationDelay",
@@ -1157,6 +1343,18 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x44a"
+      },
+      {
+        "Name": "pad0x5_3BFW2[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x44b"
+      },
+      {
+        "Name": "pad0x2a_71UEZ[0x2a]",
+        "Type": "char",
+        "Size": "0x2a",
+        "Offset": "0x44e"
       }
     ]
   },
@@ -1185,6 +1383,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x70_S3MVJ[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x4e"
       }
     ]
   },
@@ -1217,6 +1421,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x4_JU6BI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
       },
       {
         "Name": "LargeSurfaceEffects",
@@ -1275,6 +1485,12 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
+        "Name": "pad0x10_TCU8J[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x468"
+      },
+      {
         "Name": "SetupData",
         "Type": "Class SuperheatedWaterSetupDataAsset*",
         "Size": "0x8",
@@ -1303,6 +1519,12 @@
         "Type": "TArray<Weakclass PlayersInZone>",
         "Size": "0x10",
         "Offset": "0x490"
+      },
+      {
+        "Name": "pad0xf0_KPTIY[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0x49e"
       }
     ]
   },
@@ -1312,6 +1534,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x228",
     "Attributes": [
+      {
+        "Name": "pad0x18_8P5EC[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "VolcanoSetupDataOverride",
         "Type": "Class VolcanoSetupDataAsset*",
@@ -1341,6 +1569,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x408"
+      },
+      {
+        "Name": "pad0x7_0CAGI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x409"
       },
       {
         "Name": "VolcanoSetupData",
@@ -1421,6 +1655,12 @@
         "Offset": "0x460"
       },
       {
+        "Name": "pad0x4_AXEHZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x46c"
+      },
+      {
         "Name": "AudioPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
@@ -1473,6 +1713,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x4b0"
+      },
+      {
+        "Name": "pad0x148_KPCCQ[0x148]",
+        "Type": "char",
+        "Size": "0x148",
+        "Offset": "0x4b6"
       }
     ]
   },

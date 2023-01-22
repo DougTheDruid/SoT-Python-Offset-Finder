@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 CrewOwnershipTrackingComponent:
   Attributes:
+  - Name: pad0x18_ZEYQV[0x18]
+    Offset: '0xc8'
+    Size: '0x18'
+    Type: char
   - Name: SpawningCrewId
     Offset: '0xe0'
     Size: '0x10'
@@ -14,6 +18,10 @@ CrewOwnershipTrackingComponent:
     Offset: '0x100'
     Size: '0x10'
     Type: Struct OwnerListEntry
+  - Name: pad0x80_SRHW4[0x80]
+    Offset: '0x10e'
+    Size: '0x80'
+    Type: char
   ClassSize: '0xa8'
   FullSize: '0x170'
   InheritedSize: '0xc8'

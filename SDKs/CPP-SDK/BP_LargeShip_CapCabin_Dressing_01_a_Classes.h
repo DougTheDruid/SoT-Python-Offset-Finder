@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x400] - InheritedSize[0x3d8]
 class BP_LargeShip_CapCabin_Dressing_01_a_C: public TrinketReplacementActor
 {
 public:

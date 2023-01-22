@@ -6,12 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x88
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
 class LightPropagationVolumeBlendable: public Object
 {
 public:
+	char                                                         pad0x8_01D40[0x8];                                 // 0x28(0x8)
 	Struct LightPropagationVolumeSettings                        Settings;                                          // 0x30(0x70)
 	float                                                        BlendWeight;                                       // 0xa0(0x4)
+	char                                                         pad0x14_P10O3[0x14];                               // 0xa2(0x14)
 };
 
 

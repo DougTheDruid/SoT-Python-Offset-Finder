@@ -108,6 +108,12 @@
         "Offset": "0x30"
       },
       {
+        "Name": "pad0x3_PC5VJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
+      },
+      {
         "Name": "MinSpaceSizeWindowForEarlyReflections",
         "Type": "float",
         "Size": "0x4",
@@ -267,6 +273,12 @@
         "Offset": "0x20"
       },
       {
+        "Name": "pad0x4_QL6UI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
         "Name": "Mappings",
         "Type": "TArray<Struct WwiseBinkTrackMappings>",
         "Size": "0x10",
@@ -282,6 +294,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_DAWS8[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "mChannels",
@@ -305,6 +323,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x2_91ZIZ[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
       },
       {
         "Name": "mVolumeDb",
@@ -414,6 +438,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_VPNRN[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "PoolDensityAudioPlayEvent",

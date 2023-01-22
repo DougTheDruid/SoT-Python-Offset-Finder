@@ -12,6 +12,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x4_LBRMU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
         "Name": "ManualAutoCompleteList",
         "Type": "TArray<Struct AutoCompleteCommand>",
         "Size": "0x10",
@@ -66,6 +72,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x5a"
+      },
+      {
+        "Name": "pad0x5_UK3CE[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x5b"
       },
       {
         "Name": "GameInstanceClass",
@@ -136,6 +148,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x3_41J9R[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
         "Name": "StandbyRxCheatTime",
         "Type": "float",
         "Size": "0x4",
@@ -170,6 +188,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0xc_V9Q1C[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x52"
       }
     ]
   },
@@ -196,6 +220,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x9_X84MC[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x2f"
       }
     ]
   },
@@ -297,6 +327,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_I2LXE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       },
       {
         "Name": "DebugDisplay",

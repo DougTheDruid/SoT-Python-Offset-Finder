@@ -12,6 +12,12 @@
         "Offset": "0x118"
       },
       {
+        "Name": "pad0xfc_1UAHO[0xfc]",
+        "Type": "char",
+        "Size": "0xfc",
+        "Offset": "0x120"
+      },
+      {
         "Name": "Handle_OfferPurchasedEvent",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",

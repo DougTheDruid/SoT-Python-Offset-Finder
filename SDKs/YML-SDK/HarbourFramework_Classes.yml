@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 HarbourComponent:
   Attributes:
+  - Name: pad0x8_WGLMW[0x8]
+    Offset: '0x2e0'
+    Size: '0x8'
+    Type: char
   - Name: HarbourRadiusInCentimetres
     Offset: '0x2e8'
     Size: '0x4'
     Type: float
+  - Name: pad0x2c_VFS54[0x2c]
+    Offset: '0x2ea'
+    Size: '0x2c'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x310'
   InheritedSize: '0x2e0'

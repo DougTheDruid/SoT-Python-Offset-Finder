@@ -6,6 +6,10 @@ BP_Prompt_EmissaryLevelRankChange_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
+  - Name: pad0xfc_INEFK[0xfc]
+    Offset: '0x120'
+    Size: '0xfc'
+    Type: char
   - Name: Handle_EmissaryRankChange
     Offset: '0x120'
     Size: '0x48'
@@ -22,6 +26,10 @@ BP_Prompt_EmissaryLevelRankChange_C:
     Offset: '0x174'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_3PXZL[0x3]
+    Offset: '0x175'
+    Size: '0x3'
+    Type: char
   - Name: ExpectedCompanyName
     Offset: '0x178'
     Size: '0x8'
@@ -30,6 +38,10 @@ BP_Prompt_EmissaryLevelRankChange_C:
     Offset: '0x180'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_UH8QF[0x4]
+    Offset: '0x184'
+    Size: '0x4'
+    Type: char
   - Name: Prompts
     Offset: '0x188'
     Size: '0x10'

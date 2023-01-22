@@ -42,6 +42,12 @@
         "Type": "TArray<Struct NamedInterfaceDef>",
         "Size": "0x10",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x38_YXDVN[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x46"
       }
     ]
   },

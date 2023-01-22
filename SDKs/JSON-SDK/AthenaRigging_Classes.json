@@ -22,6 +22,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x5d0"
+      },
+      {
+        "Name": "pad0xb4_O069N[0xb4]",
+        "Type": "char",
+        "Size": "0xb4",
+        "Offset": "0x5d2"
       }
     ]
   },
@@ -36,6 +42,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x9_TADMF[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x6f"
       }
     ]
   },
@@ -45,6 +57,12 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x150",
     "Attributes": [
+      {
+        "Name": "pad0x8_182IA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
       {
         "Name": "Root",
         "Type": "Class SceneComponent*",
@@ -92,6 +110,12 @@
         "Type": "TArray<Float InitialMainRopeLengths>",
         "Size": "0x10",
         "Offset": "0x480"
+      },
+      {
+        "Name": "pad0xa8_Z9LOO[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x48e"
       }
     ]
   },
@@ -118,6 +142,12 @@
         "Type": "Class RiggingSystem*",
         "Size": "0x8",
         "Offset": "0x310"
+      },
+      {
+        "Name": "pad0x18_NKS5I[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x316"
       }
     ]
   },

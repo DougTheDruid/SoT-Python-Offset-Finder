@@ -10,6 +10,10 @@ AnimNotifyState_WwiseSound:
     Offset: '0x30'
     Size: '0x8'
     Type: Class WwiseEvent*
+  - Name: pad0x60_MQYY2[0x60]
+    Offset: '0x36'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -30,6 +34,10 @@ AnimNotify_WwiseSound:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_WGEHS[0x3]
+    Offset: '0x41'
+    Size: '0x3'
+    Type: char
   - Name: OwnedByWorldEmitterOffset
     Offset: '0x44'
     Size: '0xc'
@@ -38,10 +46,18 @@ AnimNotify_WwiseSound:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_PZ946[0x7]
+    Offset: '0x51'
+    Size: '0x7'
+    Type: char
   - Name: OwnedByWorldWisePoolToUse
     Offset: '0x58'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
+  - Name: pad0x30_5OV5Z[0x30]
+    Offset: '0x5e'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x80'
   InheritedSize: '0x38'
@@ -140,6 +156,10 @@ TritonAcousticMap:
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x34_73D61[0x34]
+    Offset: '0x3a'
+    Size: '0x34'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -154,20 +174,36 @@ TritonComponent:
     Offset: '0x2e8'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_29UNR[0xc]
+    Offset: '0x2ea'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x2f0'
   InheritedSize: '0x2e0'
   Super: SceneComponent
 TritonService:
   Attributes:
+  - Name: pad0x10_5E4DG[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   - Name: RegisteredTritonComponents
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class TritonComponent*>
+  - Name: pad0xa8_OJ8BV[0xa8]
+    Offset: '0x48'
+    Size: '0xa8'
+    Type: char
   - Name: CachedListenerInfo
     Offset: '0xf0'
     Size: '0x8'
     Type: Class TritonComponent*
+  - Name: pad0x68_VIMPH[0x68]
+    Offset: '0xf6'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x128'
   FullSize: '0x150'
   InheritedSize: '0x28'
@@ -180,6 +216,10 @@ WwiseEmitterBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 WwiseEmitterComponent:
   Attributes:
+  - Name: pad0x8_U8CBP[0x8]
+    Offset: '0x2e0'
+    Size: '0x8'
+    Type: char
   - Name: Emitter
     Offset: '0x2e8'
     Size: '0x20'
@@ -216,10 +256,18 @@ WwiseObjectPoolWrapper:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_OVURY[0x2]
+    Offset: '0x36'
+    Size: '0x2'
+    Type: char
   - Name: PoolDensityParams
     Offset: '0x38'
     Size: '0x28'
     Type: Struct WwiseNativeEmitterPoolDensityParams
+  - Name: pad0x68_73QUC[0x68]
+    Offset: '0x5e'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'

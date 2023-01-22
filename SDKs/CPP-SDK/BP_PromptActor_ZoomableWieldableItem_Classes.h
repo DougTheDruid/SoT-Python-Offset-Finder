@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x18 (Full Size[0x418] - InheritedSize[0x400]
 class BP_PromptActor_ZoomableWieldableItem_C: public BP_PromptActorBase_C
 {
 public:

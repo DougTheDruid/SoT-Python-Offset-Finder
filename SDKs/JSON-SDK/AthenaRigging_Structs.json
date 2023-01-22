@@ -297,6 +297,12 @@
         "Offset": "0x20"
       },
       {
+        "Name": "pad0x4_9MBSR[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
         "Name": "Visuals",
         "Type": "Struct PulleyVisualParams",
         "Size": "0x10",

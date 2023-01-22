@@ -6,29 +6,34 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PlayerLootMarkerServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x128
+// Size 0x158 (Full Size[0x520] - InheritedSize[0x3c8]
 class PlayerLootMarkerService: public Actor
 {
 public:
+	char                                                         pad0x8_D2VY2[0x8];                                 // 0x3c8(0x8)
 	Class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3d0(0x8)
-	TArray<Weakclass ShortRangeMarkers>                          ShortRangeMarkers;                                 // 0x3d8(0x10)
-	TArray<Struct PlayerLootMarkerWorldEdgeBatchData>            BatchData;                                         // 0x4e0(0x10)
+	char                                                         pad0x20_GMALD[0x20];                               // 0x3d8(0x20)
+	TArray<Weakclass ShortRangeMarkers>                          ShortRangeMarkers;                                 // 0x3f8(0x10)
+	char                                                         pad0xf8_YHKQG[0xf8];                               // 0x408(0xf8)
+	TArray<Struct PlayerLootMarkerWorldEdgeBatchData>            BatchData;                                         // 0x500(0x10)
+	char                                                         pad0x30_MGA4E[0x30];                               // 0x50e(0x30)
 };
 
 
-// Size 0x10
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class PlayerLootMarkerServiceParams: public DataAsset
 {
 public:
 	Class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
 	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
+	char                                                         pad0xc_MO6TZ[0xc];                                 // 0x32(0xc)
 };
 
 

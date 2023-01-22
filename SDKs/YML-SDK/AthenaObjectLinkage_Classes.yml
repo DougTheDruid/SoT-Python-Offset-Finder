@@ -20,6 +20,10 @@ LinkEndpointInterface:
   Super: Interface
 LinkerComponent:
   Attributes:
+  - Name: pad0xc8_973B4[0xc8]
+    Offset: '0xc8'
+    Size: '0xc8'
+    Type: char
   - Name: EndPlayHandlers
     Offset: '0x190'
     Size: '0x10'

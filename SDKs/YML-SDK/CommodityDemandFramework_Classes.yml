@@ -28,6 +28,10 @@ CommodityDemandFrameworkSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_BNGNK[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   - Name: CommodityRedemptionTimeOutPeriodInDays
     Offset: '0x50'
     Size: '0x8'
@@ -42,6 +46,10 @@ CommodityDemandFrameworkSettings:
   Super: DeveloperSettings
 CommodityDemandService:
   Attributes:
+  - Name: pad0x20_KW0D7[0x20]
+    Offset: '0x3c8'
+    Size: '0x20'
+    Type: char
   - Name: ActiveCommodityDemands
     Offset: '0x3e8'
     Size: '0x20'
@@ -88,6 +96,10 @@ CommodityItemDesc:
     Offset: '0x128'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_R3ESE[0x9]
+    Offset: '0x127'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x130'
   InheritedSize: '0x120'
@@ -100,10 +112,18 @@ CommodityPurchaseTrackingComponent:
   Super: ActorComponent
 CommodityRedemptionComponent:
   Attributes:
+  - Name: pad0x8_1413Z[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: RedeemTooltipText
     Offset: '0xd0'
     Size: '0x38'
     Type: Struct FText
+  - Name: pad0x78_10BYQ[0x78]
+    Offset: '0x108'
+    Size: '0x78'
+    Type: char
   - Name: PendingRedemptions
     Offset: '0x180'
     Size: '0x10'
@@ -120,6 +140,10 @@ CommodityRedemptionInterface:
   Super: Interface
 CommoditySourceComponent:
   Attributes:
+  - Name: pad0x8_LOVIU[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: NPCIdentifier
     Offset: '0xd0'
     Size: '0x8'
@@ -186,12 +210,20 @@ IsWieldedCommodityItemInDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x21_2Y415[0x21]
+    Offset: '0x2f'
+    Size: '0x21'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x50'
   InheritedSize: '0x30'
   Super: TargetedStatCondition
 SpecificItemsCrateFillerComponent:
   Attributes:
+  - Name: pad0x8_E4A35[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   - Name: ItemsToFillCrateWith
     Offset: '0xd0'
     Size: '0x10'
@@ -206,6 +238,10 @@ WasWieldedCommodityItemBoughtAtDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x9_C5EVT[0x9]
+    Offset: '0x2f'
+    Size: '0x9'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x38'
   InheritedSize: '0x30'

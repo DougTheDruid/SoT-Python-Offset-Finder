@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x28
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class NudgeInterpolationParamsDataAsset: public DataAsset
 {
 public:
@@ -15,24 +15,25 @@ public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class NudgeableInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class NudgePolicyInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xa0
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
 class NudgePolicy: public Object
 {
 public:
+	char                                                         pad0x90_NO1UZ[0x90];                               // 0x28(0x90)
 	Class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
 	Class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
 };

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50
+// Size 0x50 (Full Size[0x450] - InheritedSize[0x400]
 class BP_PromptActor_EmissaryKilledAnotherEmissary_GH_C: public BP_PromptActorBase_C
 {
 public:

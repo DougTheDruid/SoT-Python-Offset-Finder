@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x7_0N287[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
         "Name": "LocationCurve",
         "Type": "Struct RuntimeVectorCurve",
         "Size": "0x170",
@@ -19,6 +25,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x178"
+      },
+      {
+        "Name": "pad0x7_X1602[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x179"
       },
       {
         "Name": "RotationCurve",
@@ -33,10 +45,22 @@
         "Offset": "0x2f0"
       },
       {
+        "Name": "pad0x7_A4XZ5[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x2f1"
+      },
+      {
         "Name": "ScaleCurve",
         "Type": "Struct RuntimeVectorCurve",
         "Size": "0x170",
         "Offset": "0x2f8"
+      },
+      {
+        "Name": "pad0x8_B6F0W[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x468"
       },
       {
         "Name": "SourceTransform",
@@ -191,6 +215,12 @@
         "Offset": "0xc"
       },
       {
+        "Name": "pad0x8_3H1JQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
         "Name": "Orientation",
         "Type": "Struct Quat",
         "Size": "0x10",
@@ -201,6 +231,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x3_BGN74[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
       },
       {
         "Name": "ParentBone",
@@ -331,6 +367,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_XZE4U[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       },
       {
         "Name": "WantedMovementSpeed",
@@ -543,6 +585,12 @@
         "Offset": "0x40"
       },
       {
+        "Name": "pad0x4_B18NX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
         "Name": "WeightedAnimSequenceLoadOnDemand",
         "Type": "Class WeightedAnimSequenceLoadOnDemand*",
         "Size": "0x8",
@@ -559,6 +607,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x54"
+      },
+      {
+        "Name": "pad0x3_S95QP[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x55"
       },
       {
         "Name": "CurrentSequence",
@@ -708,7 +762,7 @@
     ]
   },
   "Docker": {
-    "ClassSize": "0x50",
+    "ClassSize": "0x90",
     "Attributes": []
   },
   "DougTheDruid": {

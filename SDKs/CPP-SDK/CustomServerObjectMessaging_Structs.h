@@ -614,6 +614,7 @@ struct OnQuestStartedCustomServerEvent
 {
 public:
 	byte                                                         QuestType;                                         // 0x18(0x1)
+	char                                                         pad0x3_KP8MO[0x3];                                 // 0x19(0x3)
 	Struct Guid                                                  CrewId;                                            // 0x1c(0x10)
 };
 
@@ -624,6 +625,7 @@ struct OnVoyageStartedCustomServerEvent
 public:
 	Struct FString                                               CompanyDisplayName;                                // 0x18(0x10)
 	int                                                          Rank;                                              // 0x28(0x4)
+	char                                                         pad0x4_UUVJS[0x4];                                 // 0x2c(0x4)
 	Struct FString                                               Title;                                             // 0x30(0x10)
 	Struct Guid                                                  CrewId;                                            // 0x40(0x10)
 };
@@ -643,6 +645,7 @@ struct OnVoyageAcceptedCustomServerEvent
 public:
 	Struct FString                                               CompanyDisplayName;                                // 0x18(0x10)
 	int                                                          Rank;                                              // 0x28(0x4)
+	char                                                         pad0x4_LAJND[0x4];                                 // 0x2c(0x4)
 	Struct FString                                               Title;                                             // 0x30(0x10)
 };
 
@@ -702,6 +705,7 @@ struct ItemSpawnCustomServerEvent
 {
 public:
 	int                                                          EntityNetId;                                       // 0x18(0x4)
+	char                                                         pad0x4_77W7U[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               ItemType;                                          // 0x20(0x10)
 };
 
