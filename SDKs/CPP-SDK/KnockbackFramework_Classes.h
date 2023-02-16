@@ -20,13 +20,13 @@ public:
 	Struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5e8(0x8)
 	Struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x5f0(0x8)
 	byte                                                         KnockbackType;                                     // 0x5f8(0x1)
-	char                                                         pad0x3_OZZ8I[0x3];                                 // 0x5f9(0x3)
+	char                                                         pad0x3_Z4N51[0x3];                                 // 0x5f9(0x3)
 	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x5fc(0x50)
 	class                                                        KnockbackDamageType;                               // 0x658(0x8)
 	float                                                        KnockbackInterval;                                 // 0x660(0x4)
-	char                                                         pad0x4_IQBS3[0x4];                                 // 0x664(0x4)
+	char                                                         pad0x4_PDMJX[0x4];                                 // 0x664(0x4)
 	byte                                                         SolidState;                                        // 0x668(0x1)
-	char                                                         pad0x9_JAA8X[0x9];                                 // 0x667(0x9)
+	char                                                         pad0x9_H20A7[0x9];                                 // 0x667(0x9)
 };
 
 

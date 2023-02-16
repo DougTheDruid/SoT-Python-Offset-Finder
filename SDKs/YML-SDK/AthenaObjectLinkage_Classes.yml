@@ -20,7 +20,7 @@ LinkEndpointInterface:
   Super: Interface
 LinkerComponent:
   Attributes:
-  - Name: pad0xc8_973B4[0xc8]
+  - Name: pad0xc8_UR9EY[0xc8]
     Offset: '0xc8'
     Size: '0xc8'
     Type: char

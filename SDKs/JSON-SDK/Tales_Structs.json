@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_MHRL2[0x4]",
+        "Name": "pad0x4_JHFQ0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -208,7 +208,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_XUB1I[0x3]",
+        "Name": "pad0x3_809OY[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -254,7 +254,7 @@
         "Offset": "0x21"
       },
       {
-        "Name": "pad0x6_58LOQ[0x6]",
+        "Name": "pad0x6_JDB0F[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x22"
@@ -434,6 +434,97 @@
   "QuestVariableAISpawner": {
     "ClassSize": "0x30",
     "Attributes": []
+  },
+  "TaleQuestQueryableStateCanAllDataBeReadCondition": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateCanAnyDataBeReadCondition": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateReadAllValueBoolCondition": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateReadAnyValueBoolCondition": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<Class AllDataToCheck>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateReadValueIntCondition": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "DataID",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ComparisonToExpectedValue",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x34"
+      }
+    ]
   },
   "QuestVariableTaleResourceHandle": {
     "ClassSize": "0x30",

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomMap:
   Attributes:
-  - Name: pad0x8_W52HR[0x8]
+  - Name: pad0x8_4OF8F[0x8]
     Offset: '0x850'
     Size: '0x8'
     Type: char
@@ -14,7 +14,7 @@ CustomMap:
     Offset: '0x860'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
-  - Name: pad0x30_5R3G4[0x30]
+  - Name: pad0x30_F7O1F[0x30]
     Offset: '0x86e'
     Size: '0x30'
     Type: char
@@ -66,7 +66,7 @@ CustomMapDataTypePositional:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_OJ7KG[0xc]
+  - Name: pad0xc_NKF5Y[0xc]
     Offset: '0x42'
     Size: '0xc'
     Type: char
@@ -88,7 +88,7 @@ CustomMapDataTypeText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VHDO8[0x3]
+  - Name: pad0x3_8MQV1[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -96,7 +96,7 @@ CustomMapDataTypeText:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_GL3QE[0xc]
+  - Name: pad0xc_PNM87[0xc]
     Offset: '0x8a'
     Size: '0xc'
     Type: char
@@ -124,7 +124,7 @@ CustomMapDisplayObjectPositional:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_BP16P[0xc]
+  - Name: pad0xc_FR1S6[0xc]
     Offset: '0x42'
     Size: '0xc'
     Type: char
@@ -146,7 +146,7 @@ CustomMapDisplayObjectText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4PXT0[0x3]
+  - Name: pad0x3_H9FQS[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -154,7 +154,7 @@ CustomMapDisplayObjectText:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x54_VP5GK[0x54]
+  - Name: pad0x54_8VYM9[0x54]
     Offset: '0x8a'
     Size: '0x54'
     Type: char

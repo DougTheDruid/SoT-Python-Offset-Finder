@@ -2,11 +2,19 @@
 # https://github.com/DougTheDruid
 BP_SmallShipStorageBarrel_Wood_C:
   Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x728'
+  - Name: None
+    Offset: '0x4c8'
     Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x8'
-  FullSize: '0x730'
-  InheritedSize: '0x728'
-  Super: BootyItemInfo
+    Type: Class ReplenishableComponent*
+  - Name: None
+    Offset: '0x4d0'
+    Size: '0x8'
+    Type: Class ShipTelemetrySubjectComponent*
+  - Name: None
+    Offset: '0x4d8'
+    Size: '0x8'
+    Type: Class StorageContainerComponent*
+  ClassSize: '0x18'
+  FullSize: '0x4e0'
+  InheritedSize: '0x4c8'
+  Super: StorageContainer

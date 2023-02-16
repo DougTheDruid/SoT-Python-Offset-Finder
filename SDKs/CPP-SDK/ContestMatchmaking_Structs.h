@@ -58,7 +58,7 @@ public:
 	TArray<Str PlayModeStates>                                   PlayModeStates;                                    // 0x68(0x10)
 	TArray<Struct ServerCrewModel>                               Crews;                                             // 0x78(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
-	char                                                         pad0x3_S5S1V[0x3];                                 // 0x89(0x3)
+	char                                                         pad0x3_0GBQZ[0x3];                                 // 0x89(0x3)
 	Struct Guid                                                  RequestCorrelationId;                              // 0x8c(0x10)
 };
 
@@ -72,16 +72,16 @@ public:
 	Struct Guid                                                  ServerId;                                          // 0x28(0x10)
 	Struct FString                                               ServerAddress;                                     // 0x38(0x10)
 	int                                                          SessionType;                                       // 0x48(0x4)
-	char                                                         pad0x4_Z29TH[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_R8IFR[0x4];                                 // 0x4c(0x4)
 	TArray<Struct Vector2D>                                      Positions;                                         // 0x50(0x10)
 	TArray<UInt32 Resources>                                     Resources;                                         // 0x60(0x10)
 	byte                                                         PvPFaction;                                        // 0x70(0x1)
-	char                                                         pad0x3_74WW9[0x3];                                 // 0x71(0x3)
+	char                                                         pad0x3_FQ9F9[0x3];                                 // 0x71(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x74(0x4)
 	int                                                          PvPRivalSessionType;                               // 0x78(0x4)
 	Struct Guid                                                  RivalCrewId;                                       // 0x7c(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x8c(0x1)
-	char                                                         pad0x3_H5M9E[0x3];                                 // 0x8d(0x3)
+	char                                                         pad0x3_NH79C[0x3];                                 // 0x8d(0x3)
 	Struct Timespan                                              TimeWaitingForMatch;                               // 0x90(0x8)
 	Struct FString                                               ForcedStamp;                                       // 0x98(0x10)
 };
@@ -92,7 +92,7 @@ struct ServerCrewResponseModel
 {
 public:
 	byte                                                         ResultCode;                                        // 0x0(0x1)
-	char                                                         pad0x7_M5JZ0[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_JYWSQ[0x7];                                 // 0x1(0x7)
 	TArray<Struct ServerCrewModel>                               Crews;                                             // 0x8(0x10)
 	Struct Timespan                                              RetryAfter;                                        // 0x68(0x8)
 	Struct Timespan                                              MigrationThreshold;                                // 0x70(0x8)
@@ -155,9 +155,9 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	int                                                          SessionType;                                       // 0x10(0x4)
 	byte                                                         AlignedFaction;                                    // 0x14(0x1)
-	char                                                         pad0x3_MG1WF[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_K68Q4[0x3];                                 // 0x15(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x18(0x4)
-	char                                                         pad0x4_H1S0Z[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_J6PNF[0x4];                                 // 0x1c(0x4)
 	Struct Timespan                                              TimeInMatchmaking;                                 // 0x20(0x8)
 	Struct FString                                               ForcedStamp;                                       // 0x28(0x10)
 };

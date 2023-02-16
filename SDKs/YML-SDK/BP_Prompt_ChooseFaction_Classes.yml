@@ -6,9 +6,9 @@ BP_Prompt_ChooseFaction_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xfc_8FJNE[0xfc]
+  - Name: pad0x93_9SNP6[0x93]
     Offset: '0x120'
-    Size: '0xfc'
+    Size: '0x93'
     Type: char
   - Name: HandleChoseFaction
     Offset: '0x120'
@@ -46,7 +46,7 @@ BP_Prompt_ChooseFaction_C:
     Offset: '0x311'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_HR4B5[0x6]
+  - Name: pad0x6_W7B5L[0x6]
     Offset: '0x312'
     Size: '0x6'
     Type: char

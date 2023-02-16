@@ -22,7 +22,7 @@ BP_PromptActor_EmissaryRank5_MA_C:
     Offset: '0x420'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_2MRYL[0x4]
+  - Name: pad0x4_H6463[0x4]
     Offset: '0x424'
     Size: '0x4'
     Type: char

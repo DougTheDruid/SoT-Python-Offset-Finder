@@ -16,6 +16,14 @@ public:
 };
 
 
+// Size 0xc
+struct EventItemProxyMovedFromSlot
+{
+public:
+	Struct Vector                                                ItemLocation;                                      // 0x0(0xc)
+};
+
+
 // Size 0x8
 struct EventAttachedRetractableToItemProxy
 {

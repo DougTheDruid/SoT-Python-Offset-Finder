@@ -6,31 +6,31 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "WwiseEmitter2",
+        "Name": "None",
         "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "WwiseEmitter1",
+        "Name": "None",
         "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "WwiseEmitter",
+        "Name": "None",
         "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "wil_seagull_01_ProcAnim32",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"

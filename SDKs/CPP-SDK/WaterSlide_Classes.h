@@ -18,7 +18,7 @@ public:
 class WaterSlide: public Actor
 {
 public:
-	char                                                         pad0x8_NJBQM[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_ZY280[0x8];                                 // 0x3c8(0x8)
 	Class SplineComponent*                                       SlideSpline;                                       // 0x3d0(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
 	Class WaterSlideParamsDataAsset*                             WaterSlideParamsDataAsset;                         // 0x3e0(0x8)
@@ -27,10 +27,10 @@ public:
 	Class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
 	Class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
 	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
-	char                                                         pad0x3_D8140[0x3];                                 // 0x409(0x3)
+	char                                                         pad0x3_UNDXC[0x3];                                 // 0x409(0x3)
 	Struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
 	Class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
-	char                                                         pad0x30_OMQXV[0x30];                               // 0x41e(0x30)
+	char                                                         pad0x30_JJU8U[0x30];                               // 0x41e(0x30)
 };
 
 
@@ -73,11 +73,11 @@ public:
 class WaterSlidePlayerComponent: public DoubleIntentComponent
 {
 public:
-	char                                                         pad0x8_YQU1D[0x8];                                 // 0xe0(0x8)
+	char                                                         pad0x8_7NRM8[0x8];                                 // 0xe0(0x8)
 	Class ParticleSystemComponent*                               PlayerWaterSlideSplashingVFXComponent;             // 0xe8(0x8)
 	Class ParticleSystem*                                        PlayerWaterSlideSplashingVFX;                      // 0xf0(0x8)
 	float                                                        SpawnLocationZOffset;                              // 0xf8(0x4)
-	char                                                         pad0x14_7TEI6[0x14];                               // 0xfc(0x14)
+	char                                                         pad0x14_XR7ME[0x14];                               // 0xfc(0x14)
 	Class WaterSlide*                                            CurrentWaterSlide;                                 // 0x110(0x8)
 };
 

@@ -22,7 +22,7 @@ BP_ship_surface_wet_decal_C:
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_YUS9I[0x4]
+  - Name: pad0x4_55BZ0[0x4]
     Offset: '0x3ec'
     Size: '0x4'
     Type: char

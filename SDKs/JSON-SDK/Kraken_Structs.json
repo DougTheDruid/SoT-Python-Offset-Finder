@@ -43,7 +43,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_QKFF4[0x3]",
+        "Name": "pad0x3_7IOTZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -101,7 +101,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x3_GO7OX[0x3]",
+        "Name": "pad0x3_MNPZY[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd"
@@ -195,7 +195,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_FJNHJ[0x4]",
+        "Name": "pad0x4_1PGSJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -218,7 +218,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0xc_JXIR7[0xc]",
+        "Name": "pad0xc_FGKL1[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x4"
@@ -248,7 +248,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_F3T3Z[0x4]",
+        "Name": "pad0x4_KC4I0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -313,7 +313,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x4_2GC06[0x4]",
+        "Name": "pad0x4_XJ040[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
@@ -424,7 +424,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_L9208[0x3]",
+        "Name": "pad0x3_8P0GD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -459,7 +459,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_KUVBT[0x3]",
+        "Name": "pad0x3_MBTOF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
@@ -538,7 +538,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_Z7GXY[0x4]",
+        "Name": "pad0x4_T9EDT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -561,7 +561,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_T5OJT[0x3]",
+        "Name": "pad0x3_PEXP7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -601,7 +601,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_L83L3[0x8]",
+        "Name": "pad0x8_657OZ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -683,7 +683,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_FIHCH[0x4]",
+        "Name": "pad0x4_OE80M[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -811,7 +811,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_KE5TC[0x4]",
+        "Name": "pad0x4_B4MQI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -835,7 +835,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0xc_KZTEY[0xc]",
+        "Name": "pad0xc_7FUPR[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x54"
@@ -864,7 +864,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0xc_6VOJ5[0xc]",
+        "Name": "pad0xc_F1D0L[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x14"
@@ -922,7 +922,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_GA7K6[0x8]",
+        "Name": "pad0x8_AQW8M[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -945,7 +945,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0xc_RBQ8B[0xc]",
+        "Name": "pad0xc_6EUZ7[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x4"
@@ -980,7 +980,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x4_0JLV2[0x4]",
+        "Name": "pad0x4_VNL63[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -1010,7 +1010,7 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x8_HIFWA[0x8]",
+        "Name": "pad0x8_5K86Z[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x68"
@@ -1033,7 +1033,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_FEAT9[0x3]",
+        "Name": "pad0x3_8QKUI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1146,7 +1146,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x4_EJSEL[0x4]",
+        "Name": "pad0x4_BZT5Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -1251,7 +1251,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_LESN0[0x4]",
+        "Name": "pad0x4_1LO7R[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1336,7 +1336,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_0WE8U[0x7]",
+        "Name": "pad0x7_WJVCH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -1365,7 +1365,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_0L7W4[0x4]",
+        "Name": "pad0x4_UZNBW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -1417,7 +1417,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_2HJWB[0x7]",
+        "Name": "pad0x7_U0CAD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -1474,7 +1474,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_JY5X4[0x4]",
+        "Name": "pad0x4_Q7AQ9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1503,7 +1503,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_P21F7[0x4]",
+        "Name": "pad0x4_V7RC6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -1581,7 +1581,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_WOZ3P[0x4]",
+        "Name": "pad0x4_TGS8H[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -1616,7 +1616,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_MXH5F[0x3]",
+        "Name": "pad0x3_TWFCU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1684,7 +1684,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_0SBRC[0x4]",
+        "Name": "pad0x4_XIAF8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1698,7 +1698,7 @@
     ]
   },
   "KrakenServiceParams": {
-    "ClassSize": "0xa0",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "KrakenType",
@@ -1709,20 +1709,20 @@
       {
         "Name": "SpawnParams",
         "Type": "Struct KrakenServiceSpawnParams",
-        "Size": "0x80",
+        "Size": "0x18",
         "Offset": "0x8"
       },
       {
         "Name": "DefaultKrakenParams",
         "Type": "Class KrakenParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x88"
+        "Offset": "0x20"
       },
       {
         "Name": "KrakenParams",
         "Type": "TArray<Struct KrakenServiceShipParams>",
         "Size": "0x10",
-        "Offset": "0x90"
+        "Offset": "0x28"
       }
     ]
   },
@@ -1750,7 +1750,7 @@
     ]
   },
   "KrakenServiceSpawnParams": {
-    "ClassSize": "0x80",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "SpawnLocationDistributionRadius",
@@ -1771,40 +1771,16 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_FCBFZ[0x4]",
+        "Name": "pad0x4_0NRID[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
-        "Name": "TimeBetweenSpawnAttemptsRange",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TimeBetweenSpawnAttemptsPostSpawnFailure",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SpawnChance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "MaxConsecutiveFailedSpawnAttempts",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x74"
-      },
-      {
         "Name": "SpawnLocationQuery",
         "Type": "Class EnvQuery*",
         "Size": "0x8",
-        "Offset": "0x78"
+        "Offset": "0x10"
       }
     ]
   },

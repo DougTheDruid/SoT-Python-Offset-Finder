@@ -2,16 +2,20 @@
 # https://github.com/DougTheDruid
 UtilityVoyageService:
   Attributes:
-  - Name: pad0x38_6D0HD[0x38]
+  - Name: pad0x78_Y5L6D[0x78]
     Offset: '0x28'
-    Size: '0x38'
+    Size: '0x78'
     Type: char
   - Name: Participants
-    Offset: '0x60'
+    Offset: '0xa0'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
-  ClassSize: '0x48'
-  FullSize: '0x70'
+  - Name: Voyages
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: TArray<Struct UtilityVoyageData>
+  ClassSize: '0x98'
+  FullSize: '0xc0'
   InheritedSize: '0x28'
   Super: Object
 UtilityVoyageServiceInterface:

@@ -40,11 +40,19 @@ ServiceHttpSettings:
     Offset: '0x39'
     Size: '0x1'
     Type: byte
-  - Name: pad0x8_MP5NQ[0x8]
-    Offset: '0x38'
-    Size: '0x8'
+  - Name: pad0x6_K9B5R[0x6]
+    Offset: '0x3a'
+    Size: '0x6'
     Type: char
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  - Name: SubStringToFindInUrlForXBLiveTokenRequest
+    Offset: '0x40'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: UrlReplacementStringForXBLiveTokenRequest
+    Offset: '0x50'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x38'
+  FullSize: '0x60'
   InheritedSize: '0x28'
   Super: Object

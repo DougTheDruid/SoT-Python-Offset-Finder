@@ -33,6 +33,13 @@ EventTutorialTypeDecided:
     Size: '0x1'
     Type: byte
   ClassSize: '0x1'
+HasTutorialStarterBegunCondition:
+  Attributes:
+  - Name: TutorialStarterType
+    Offset: '0x28'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x30'
 TutorialShowTutorialLegendaryTavernStrangerEvent:
   Attributes: []
   ClassSize: '0x1'

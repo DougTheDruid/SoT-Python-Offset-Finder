@@ -6,9 +6,9 @@ BP_CT_VoyageProgress_C:
     Offset: '0xe0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x134_NQXGM[0x134]
+  - Name: pad0xcb_58X6E[0xcb]
     Offset: '0xe8'
-    Size: '0x134'
+    Size: '0xcb'
     Type: char
   - Name: AthenaPlayerController
     Offset: '0xe8'
@@ -18,7 +18,7 @@ BP_CT_VoyageProgress_C:
     Offset: '0xf0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_9BEV2[0x7]
+  - Name: pad0x7_HUR02[0x7]
     Offset: '0xf1'
     Size: '0x7'
     Type: char

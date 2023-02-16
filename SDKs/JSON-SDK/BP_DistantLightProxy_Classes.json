@@ -25,7 +25,7 @@
       },
       {
         "Name": "LightList",
-        "Type": "TArray<Struct PointLightProxy>",
+        "Type": "TArray<Struct None>",
         "Size": "0x10",
         "Offset": "0x3e0"
       }

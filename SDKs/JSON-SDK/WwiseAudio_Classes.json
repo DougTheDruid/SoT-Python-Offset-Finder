@@ -39,7 +39,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_KJGOZ[0x3]",
+        "Name": "pad0x3_0NV52[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -75,7 +75,7 @@
         "Offset": "0x45"
       },
       {
-        "Name": "pad0xc_C9EHM[0xc]",
+        "Name": "pad0xc_35J4U[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x44"
@@ -103,7 +103,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x8_XKTMA[0x8]",
+        "Name": "pad0x8_SMSWQ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
@@ -141,7 +141,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x9_63S4Y[0x9]",
+        "Name": "pad0x9_6S6KQ[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x97"
@@ -182,14 +182,54 @@
       }
     ]
   },
-  "WwiseAudioSettings": {
-    "Super": "Object",
-    "FullSize": "0x420",
+  "WwiseNonShippingAudioAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x3f8",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0xc0_VOF5B[0xc0]",
+        "Name": "CodeName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "UAssetRelativePath",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "StreamRelativePath",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "WwiseNonShippingAudioRootAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NonShippingAudioAssets",
+        "Type": "TArray<class WwiseNonShippingAudioAsset*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WwiseAudioSettings": {
+    "Super": "Object",
+    "FullSize": "0x438",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x410",
+    "Attributes": [
+      {
+        "Name": "pad0xc0_UZKPH[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x28"
@@ -201,7 +241,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_CX7HX[0x4]",
+        "Name": "pad0x4_K3QTG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14c"
@@ -309,88 +349,100 @@
         "Offset": "0x318"
       },
       {
-        "Name": "PauseEventStartInstance",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
+        "Name": "NonShippingAudioRootAssetPath",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
         "Offset": "0x328"
       },
       {
-        "Name": "PauseEventReleaseInstance",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x330"
-      },
-      {
-        "Name": "StopAllEventInstance",
+        "Name": "PauseEventStartInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x338"
       },
       {
-        "Name": "WwiseMediaSoundComponentEventNameInstance",
+        "Name": "PauseEventReleaseInstance",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x340"
       },
       {
-        "Name": "AnimNotifyPoolInstance",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Name": "StopAllEventInstance",
+        "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x348"
       },
       {
-        "Name": "pad0x50_9SX1O[0x50]",
+        "Name": "WwiseMediaSoundComponentEventNameInstance",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x350"
+      },
+      {
+        "Name": "AnimNotifyPoolInstance",
+        "Type": "Class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x358"
+      },
+      {
+        "Name": "pad0x50_Y281N[0x50]",
         "Type": "char",
         "Size": "0x50",
-        "Offset": "0x350"
+        "Offset": "0x360"
       },
       {
         "Name": "EventsToPlayOnFrontendStartInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x3a0"
+        "Offset": "0x3b0"
       },
       {
         "Name": "EventsToPlayOnFrontendEndInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x3b0"
+        "Offset": "0x3c0"
       },
       {
         "Name": "EventsToPlayOnStartEngagementInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x3c0"
+        "Offset": "0x3d0"
       },
       {
         "Name": "EventsToPlayOnEndEngagementInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x3d0"
+        "Offset": "0x3e0"
       },
       {
         "Name": "EventsToPlayOnLoadingStartInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x3e0"
+        "Offset": "0x3f0"
       },
       {
         "Name": "EventsToPlayOnLoadingEndInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x3f0"
+        "Offset": "0x400"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingStartInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x400"
+        "Offset": "0x410"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingEndInstance",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x410"
+        "Offset": "0x420"
+      },
+      {
+        "Name": "NonShippingAudioRootAsset",
+        "Type": "Class WwiseNonShippingAudioRootAsset*",
+        "Size": "0x8",
+        "Offset": "0x430"
       }
     ]
   },
@@ -407,7 +459,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x50_XS4CK[0x50]",
+        "Name": "pad0x50_53GXL[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x36"

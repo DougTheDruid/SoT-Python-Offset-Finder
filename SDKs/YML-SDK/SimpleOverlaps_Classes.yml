@@ -14,7 +14,7 @@ SimpleOverlapComponent:
   Super: ActorComponent
 SimpleOverlapZone:
   Attributes:
-  - Name: pad0xc8_2V4KZ[0xc8]
+  - Name: pad0xc8_WDJFT[0xc8]
     Offset: '0x3c8'
     Size: '0xc8'
     Type: char
@@ -26,7 +26,7 @@ SimpleOverlapZone:
     Offset: '0x498'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_2LB7K[0x9]
+  - Name: pad0x9_OXJWT[0x9]
     Offset: '0x497'
     Size: '0x9'
     Type: char

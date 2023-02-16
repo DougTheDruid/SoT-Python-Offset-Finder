@@ -16,11 +16,11 @@ public:
 	float                                                        DelayBeforeAllowingExit;                           // 0x78(0x4)
 	float                                                        VerticalOffsetFactorWhenZoomed;                    // 0x7c(0x4)
 	bool                                                         HideNameplate;                                     // 0x80(0x1)
-	char                                                         pad0x7_DVA4D[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_9N10W[0x7];                                 // 0x81(0x7)
 	Class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
 	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
 	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
-	char                                                         pad0x6_M946Q[0x6];                                 // 0x92(0x6)
+	char                                                         pad0x6_4BC1A[0x6];                                 // 0x92(0x6)
 	Class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
 };
 
@@ -39,7 +39,7 @@ struct EmotePropRandomObjectResult
 public:
 	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
 	bool                                                         HasTransformValue;                                 // 0x8(0x1)
-	char                                                         pad0x7_D21M4[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_6S2ZM[0x7];                                 // 0x9(0x7)
 	Struct Transform                                             Transform;                                         // 0x10(0x30)
 	struct FName                                                 TextureParameterName;                              // 0x40(0x8)
 	int                                                          TextureParameterValue;                             // 0x48(0x4)

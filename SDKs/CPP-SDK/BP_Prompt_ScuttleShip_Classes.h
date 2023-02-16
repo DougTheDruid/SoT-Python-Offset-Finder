@@ -11,7 +11,7 @@ class BP_Prompt_ScuttleShip_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfb_ALK7L[0xfb];                               // 0x120(0xfb)
+	char                                                         pad0x93_FU4PO[0x93];                               // 0x120(0x93)
 	Struct ObjectMessagingHandle                                 Handle_CharacterDeadEvent;                         // 0x120(0x48)
 	Struct ObjectMessagingHandle                                 Handle_WaitingToSpawnEndedEvent;                   // 0x168(0x48)
 	Struct PrioritisedPromptWithHandle                           Prompt_ArrivedOnFerry;                             // 0x1b0(0x68)

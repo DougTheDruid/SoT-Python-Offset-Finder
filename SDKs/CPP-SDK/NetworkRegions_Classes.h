@@ -17,7 +17,7 @@ public:
 class NetworkRegionService: public Object
 {
 public:
-	char                                                         pad0x90_99H7Y[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_4VSFE[0x90];                               // 0x28(0x90)
 	TArray<class PlayerController*>                              PlayersThatNeedToBeTicked;                         // 0xb8(0x10)
 };
 
@@ -28,7 +28,7 @@ class RegionAssetCacheActor: public Actor
 public:
 	TArray<Struct RegionAssetsList>                              RegionData;                                        // 0x3c8(0x10)
 	TArray<class Object*>                                        LoadedAssets;                                      // 0x3d8(0x10)
-	char                                                         pad0x40_T5G53[0x40];                               // 0x3e6(0x40)
+	char                                                         pad0x40_F7GYA[0x40];                               // 0x3e6(0x40)
 };
 
 

@@ -6,7 +6,7 @@ ShipBumperZone:
     Offset: '0x3c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_4XNNS[0x2f]
+  - Name: pad0x2f_0J8TY[0x2f]
     Offset: '0x3c9'
     Size: '0x2f'
     Type: char
@@ -22,7 +22,7 @@ ShipBumperZone:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_AY2VG[0x3]
+  - Name: pad0x3_5C9JA[0x3]
     Offset: '0x409'
     Size: '0x3'
     Type: char
@@ -38,7 +38,7 @@ ShipBumperZone:
     Offset: '0x411'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_WH1ZX[0x2]
+  - Name: pad0x2_U2XL8[0x2]
     Offset: '0x412'
     Size: '0x2'
     Type: char
@@ -50,7 +50,7 @@ ShipBumperZone:
     Offset: '0x418'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_ATBVW[0xc]
+  - Name: pad0xc_KWIZQ[0xc]
     Offset: '0x41a'
     Size: '0xc'
     Type: char

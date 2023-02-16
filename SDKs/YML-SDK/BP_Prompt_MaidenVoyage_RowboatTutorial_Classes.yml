@@ -6,15 +6,15 @@ BP_Prompt_MaidenVoyage_RowboatTutorial_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xfc_YY8CI[0xfc]
+  - Name: pad0x93_0RYSR[0x93]
     Offset: '0x120'
-    Size: '0xfc'
+    Size: '0x93'
     Type: char
   - Name: State_SatInRowboat
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_BHA0N[0x7]
+  - Name: pad0x7_DHM1R[0x7]
     Offset: '0x121'
     Size: '0x7'
     Type: char
@@ -30,7 +30,7 @@ BP_Prompt_MaidenVoyage_RowboatTutorial_C:
     Offset: '0x1d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3UBER[0x7]
+  - Name: pad0x7_8YOCY[0x7]
     Offset: '0x1d9'
     Size: '0x7'
     Type: char

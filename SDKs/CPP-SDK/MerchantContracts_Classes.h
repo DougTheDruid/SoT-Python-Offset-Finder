@@ -24,9 +24,9 @@ public:
 class MerchantContractsService: public Object
 {
 public:
-	char                                                         pad0x8_J0H35[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_011K9[0x8];                                 // 0x28(0x8)
 	TArray<Struct MerchantContract>                              Contracts;                                         // 0x30(0x10)
-	char                                                         pad0xa8_3EGEP[0xa8];                               // 0x3e(0xa8)
+	char                                                         pad0xa8_BXSPN[0xa8];                               // 0x3e(0xa8)
 };
 
 
@@ -41,7 +41,7 @@ public:
 class PlayerMerchantContractsComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_O4A1I[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_B9730[0x8];                                 // 0xc8(0x8)
 	TArray<Struct PlayerMerchantContract>                        Contracts;                                         // 0xd0(0x10)
 };
 

@@ -10,7 +10,7 @@ ScalarParamInfo:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_E2ZLP[0x3]
+  - Name: pad0x3_JAVIS[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char

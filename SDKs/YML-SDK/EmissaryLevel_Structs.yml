@@ -54,7 +54,7 @@ DeactivateEmissaryForCrew:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_CDO2D[0x3]
+  - Name: pad0x3_QWD18[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -107,7 +107,7 @@ EmissaryCompanyActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_X37HN[0x3]
+  - Name: pad0x3_LJRCQ[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -241,7 +241,7 @@ EmissaryEventAward:
     Offset: '0x2'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_XZTFD[0x1]
+  - Name: pad0x1_Y0QPF[0x1]
     Offset: '0x3'
     Size: '0x1'
     Type: char
@@ -256,7 +256,7 @@ EmissaryFactionActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_I036G[0x3]
+  - Name: pad0x3_AI0V0[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -300,7 +300,7 @@ EmissaryKillPlayerReward:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WU76M[0x4]
+  - Name: pad0x4_JFOG7[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -356,7 +356,7 @@ EmissaryLevelData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_U5RY7[0x4]
+  - Name: pad0x4_7TTXT[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -365,26 +365,26 @@ EmissaryLevelData:
     Size: '0x20'
     Type: Struct EmissaryFlagMeshReferences
   - Name: EmissaryDeactivationReward
-    Offset: '0x48'
+    Offset: '0x68'
     Size: '0x8'
     Type: Struct RewardId
   - Name: StatsToFireOnEmissaryLevelReached
-    Offset: '0x50'
+    Offset: '0x70'
     Size: '0x10'
     Type: TArray<Struct PlayerStat>
   - Name: StatsToFireOnEmissaryDeactivated
-    Offset: '0x60'
+    Offset: '0x80'
     Size: '0x10'
     Type: TArray<Struct PlayerStat>
   - Name: TreasureSoldNotificationFlag
-    Offset: '0x70'
+    Offset: '0x90'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: EmissaryFlagTextureReference
-    Offset: '0x80'
+    Offset: '0xa0'
     Size: '0x10'
     Type: Struct StringAssetReference
-  ClassSize: '0x90'
+  ClassSize: '0xb0'
 EmissaryLevelEntry:
   Attributes:
   - Name: Company
@@ -415,7 +415,7 @@ EmissaryLevelEntry:
     Offset: '0x50'
     Size: '0x4'
     Type: Struct PlayerStat
-  - Name: pad0x4_FT49D[0x4]
+  - Name: pad0x4_KUKX1[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -529,7 +529,7 @@ EmissaryRoleplayActionTelemetryEvent:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_EGPJC[0x3]
+  - Name: pad0x3_JOTB3[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -651,7 +651,7 @@ LightVisualisation:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_94IJK[0x4]
+  - Name: pad0x4_QCL25[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -791,7 +791,7 @@ UpdateEmissaryValueForCompany:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_CPMUA[0x3]
+  - Name: pad0x3_EBU92[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char

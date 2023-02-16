@@ -29,10 +29,10 @@ public:
 class WorldEdgeItemService: public Actor
 {
 public:
-	char                                                         pad0x8_E42XA[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_JYDV1[0x8];                                 // 0x3c8(0x8)
 	Class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3d0(0x8)
 	Struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
-	char                                                         pad0x3a8_YBHD2[0x3a8];                             // 0x546(0x3a8)
+	char                                                         pad0x3a8_1VQFT[0x3a8];                             // 0x546(0x3a8)
 };
 
 

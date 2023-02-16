@@ -6,13 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x8e8] - InheritedSize[0x8d0]
-class BP_msc_drum_smp_01_a_v01_ItemInfo_C: public BP_Banjo_C
+// Size 0x8 (Full Size[0x518] - InheritedSize[0x510]
+class BP_msc_drum_smp_01_a_v01_ItemInfo_C: public ItemInfo
 {
 public:
-	Class StaticMeshComponent*                                   shroudmask_tp;                                     // 0x8d0(0x8)
-	Class StaticMeshComponent*                                   shroud_tp;                                         // 0x8d8(0x8)
-	Class StaticMeshComponent*                                   shroud_fp;                                         // 0x8e0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 

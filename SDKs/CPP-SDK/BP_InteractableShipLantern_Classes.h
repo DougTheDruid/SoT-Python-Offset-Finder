@@ -25,7 +25,7 @@ public:
 	float                                                        GlowIntensityOn;                                   // 0x730(0x4)
 	float                                                        GlowIntensityOff;                                  // 0x734(0x4)
 	bool                                                         Uses Glow;                                         // 0x738(0x1)
-	char                                                         pad0x3_SEBR2[0x3];                                 // 0x739(0x3)
+	char                                                         pad0x3_TBTEP[0x3];                                 // 0x739(0x3)
 	Struct LinearColor                                           DefaultGlowColour;                                 // 0x73c(0x10)
 	byte                                                         CurrentFlameOFateType;                             // 0x74c(0x1)
 };

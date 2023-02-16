@@ -8,7 +8,7 @@ ActorLayerInterface:
   Super: Interface
 InstancedLayerComponent:
   Attributes:
-  - Name: pad0x8_GPGIO[0x8]
+  - Name: pad0x8_154EJ[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -16,7 +16,7 @@ InstancedLayerComponent:
     Offset: '0x2e8'
     Size: '0x10'
     Type: TArray<Struct InstancedLayer>
-  - Name: pad0x38_T5C48[0x38]
+  - Name: pad0x38_ESM3U[0x38]
     Offset: '0x2f6'
     Size: '0x38'
     Type: char

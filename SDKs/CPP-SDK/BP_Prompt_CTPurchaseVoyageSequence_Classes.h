@@ -11,13 +11,13 @@ class BP_Prompt_CTPurchaseVoyageSequence_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfc_JSYGN[0xfc];                               // 0x120(0xfc)
+	char                                                         pad0x93_XAC98[0x93];                               // 0x120(0x93)
 	float                                                        TriggerVolumeRadius;                               // 0x120(0x4)
 	int                                                          InsideGoldHoardersRadius;                          // 0x124(0x4)
 	TArray<class OverlapTriggerActor*>                           GoldHoarderOverlapActors;                          // 0x128(0x10)
 	TArray<class OverlapTriggerActor*>                           OutpostOverlapActors;                              // 0x138(0x10)
 	float                                                        OutpostRadiusReduction;                            // 0x148(0x4)
-	char                                                         pad0x4_DGJ2U[0x4];                                 // 0x14c(0x4)
+	char                                                         pad0x4_UZX22[0x4];                                 // 0x14c(0x4)
 	Struct PrioritisedPromptWithHandle                           Prompt_GoToVendors;                                // 0x150(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_GoToGoldhoarders;                           // 0x1b8(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_GoToOrderOfSouls;                           // 0x220(0x68)

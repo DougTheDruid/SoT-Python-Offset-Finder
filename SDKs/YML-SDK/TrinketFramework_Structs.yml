@@ -96,7 +96,7 @@ TrinketLoadoutModelEntry:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_5P792[0x4]
+  - Name: pad0x4_H5QZF[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

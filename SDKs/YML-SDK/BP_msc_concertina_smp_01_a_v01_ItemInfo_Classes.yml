@@ -2,19 +2,11 @@
 # https://github.com/DougTheDruid
 BP_msc_concertina_smp_01_a_v01_ItemInfo_C:
   Attributes:
-  - Name: pad0x510_25YIN[0x510]
-    Offset: '0x0'
-    Size: '0x510'
-    Type: char
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x510'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: pad0x3f79ac07_24K0J[0x3f79ac07]
-    Offset: '0x516'
-    Size: '0x3f79ac07'
-    Type: char
-  ClassSize: '0x3f79b10f'
-  FullSize: '0x3f79b10f'
-  InheritedSize: '0x0'
-  Super: None
+  ClassSize: '0x8'
+  FullSize: '0x518'
+  InheritedSize: '0x510'
+  Super: ItemInfo

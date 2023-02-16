@@ -60,7 +60,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_S5S1V[0x3]
+  - Name: pad0x3_0GBQZ[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
@@ -83,7 +83,7 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_MG1WF[0x3]
+  - Name: pad0x3_K68Q4[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -91,7 +91,7 @@ ExistingServerCrewModel:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H1S0Z[0x4]
+  - Name: pad0x4_J6PNF[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -144,7 +144,7 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_Z29TH[0x4]
+  - Name: pad0x4_R8IFR[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -160,7 +160,7 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_74WW9[0x3]
+  - Name: pad0x3_FQ9F9[0x3]
     Offset: '0x71'
     Size: '0x3'
     Type: char
@@ -180,7 +180,7 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_H5M9E[0x3]
+  - Name: pad0x3_NH79C[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -262,7 +262,7 @@ ServerCrewResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_M5JZ0[0x7]
+  - Name: pad0x7_JYWSQ[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

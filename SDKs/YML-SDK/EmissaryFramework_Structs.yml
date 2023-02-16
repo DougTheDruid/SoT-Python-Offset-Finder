@@ -10,7 +10,7 @@ EmissaryCompanyActionRewardBoostServiceEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_DZ8O5[0x3]
+  - Name: pad0x3_UGVXQ[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -28,7 +28,7 @@ EmissaryFactionActionRewardBoostServiceEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_GFR84[0x3]
+  - Name: pad0x3_JOXYL[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -75,7 +75,7 @@ EmissaryQuestCompanyActionRewardBoostEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_KZ271[0x3]
+  - Name: pad0x3_HWOTO[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

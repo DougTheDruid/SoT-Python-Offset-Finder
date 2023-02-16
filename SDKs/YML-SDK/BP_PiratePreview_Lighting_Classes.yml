@@ -30,7 +30,7 @@ BP_PiratePreview_Lighting_C:
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: pad0x30_U9I17[0x30]
+  - Name: pad0x30_DMRD1[0x30]
     Offset: '0x3fe'
     Size: '0x30'
     Type: char

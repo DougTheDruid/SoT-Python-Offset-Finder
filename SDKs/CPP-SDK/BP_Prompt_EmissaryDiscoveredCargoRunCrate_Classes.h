@@ -11,13 +11,13 @@ class BP_Prompt_EmissaryDiscoveredCargoRunCrate_C: public BP_PromptCoordinator_B
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfc_Z1XVC[0xfc];                               // 0x120(0xfc)
+	char                                                         pad0x93_1TIFS[0x93];                               // 0x120(0x93)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryDiscoveredCargoRunCrate;            // 0x120(0x48)
 	struct FName                                                 CompanyName;                                       // 0x168(0x8)
 	bool                                                         SurfacedThisSession;                               // 0x170(0x1)
-	char                                                         pad0x3_O2EAK[0x3];                                 // 0x171(0x3)
+	char                                                         pad0x3_TX62G[0x3];                                 // 0x171(0x3)
 	struct FName                                                 ExpectedCompanyName;                               // 0x174(0x8)
-	char                                                         pad0x4_8OHTZ[0x4];                                 // 0x17c(0x4)
+	char                                                         pad0x4_C18PK[0x4];                                 // 0x17c(0x4)
 	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x180(0x10)
 	class                                                        PromptAccessKey;                                   // 0x190(0x8)
 	int                                                          PromptIndex;                                       // 0x198(0x4)

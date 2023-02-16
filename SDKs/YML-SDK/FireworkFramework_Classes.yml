@@ -30,7 +30,7 @@ FireworkDataAsset:
     Offset: '0x89'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_C0ARK[0x2]
+  - Name: pad0x2_USOUT[0x2]
     Offset: '0x8a'
     Size: '0x2'
     Type: char
@@ -58,7 +58,7 @@ FireworkDataAsset:
     Offset: '0x130'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AE1FG[0x4]
+  - Name: pad0x4_45AU8[0x4]
     Offset: '0x134'
     Size: '0x4'
     Type: char
@@ -80,7 +80,7 @@ FireworkDataAsset:
   Super: DataAsset
 FireworkExplosion:
   Attributes:
-  - Name: pad0x8_BCGHH[0x8]
+  - Name: pad0x8_4ESQ5[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -104,7 +104,7 @@ FireworkExplosion:
     Offset: '0x440'
     Size: '0x20'
     Type: Struct WwiseEmitter
-  - Name: pad0x80_9KC2V[0x80]
+  - Name: pad0x80_QVI0J[0x80]
     Offset: '0x45e'
     Size: '0x80'
     Type: char
@@ -118,7 +118,7 @@ FireworkFeedbackDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_438PQ[0x4]
+  - Name: pad0x4_3P2LN[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -130,7 +130,7 @@ FireworkFeedbackDataAsset:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9Q9YF[0x4]
+  - Name: pad0x4_6IU37[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -156,7 +156,7 @@ FireworkItemInfo:
     Offset: '0x528'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_NR8BR[0xc]
+  - Name: pad0xc_QPTPM[0xc]
     Offset: '0x52a'
     Size: '0xc'
     Type: char
@@ -166,7 +166,7 @@ FireworkItemInfo:
   Super: ItemInfo
 FireworkProjectile:
   Attributes:
-  - Name: pad0x10_89QXN[0x10]
+  - Name: pad0x10_J0A9C[0x10]
     Offset: '0x600'
     Size: '0x10'
     Type: char
@@ -198,7 +198,7 @@ FireworkProjectile:
     Offset: '0x640'
     Size: '0x58'
     Type: Struct GeneratedFireworkData
-  - Name: pad0x120_0TEAK[0x120]
+  - Name: pad0x120_HO1N8[0x120]
     Offset: '0x696'
     Size: '0x120'
     Type: char
@@ -208,7 +208,7 @@ FireworkProjectile:
   Super: LaunchableProjectile
 FireworkService:
   Attributes:
-  - Name: pad0x78_9WL0D[0x78]
+  - Name: pad0x78_R43VZ[0x78]
     Offset: '0x3c8'
     Size: '0x78'
     Type: char
@@ -216,7 +216,7 @@ FireworkService:
     Offset: '0x440'
     Size: '0x4'
     Type: int
-  - Name: pad0x24_BBK1I[0x24]
+  - Name: pad0x24_BEKZM[0x24]
     Offset: '0x442'
     Size: '0x24'
     Type: char
@@ -236,7 +236,7 @@ FireworkStatsComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_E271B[0x4]
+  - Name: pad0x4_M5SMQ[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -252,7 +252,7 @@ FireworkStatsComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0xb4_72AMB[0xb4]
+  - Name: pad0xb4_LL719[0xb4]
     Offset: '0xda'
     Size: '0xb4'
     Type: char
@@ -282,7 +282,7 @@ FireworksSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_3I7YZ[0xc]
+  - Name: pad0xc_JWZRZ[0xc]
     Offset: '0x4a'
     Size: '0xc'
     Type: char
@@ -296,7 +296,7 @@ FireworksSettingsDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QLCJQ[0x4]
+  - Name: pad0x4_Q4106[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -356,7 +356,7 @@ LoadableFireworkComponent:
     Offset: '0x134'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DPSXQ[0x3]
+  - Name: pad0x3_46ME9[0x3]
     Offset: '0x135'
     Size: '0x3'
     Type: char
@@ -382,7 +382,7 @@ ProjectileAnimationComponent:
     Offset: '0xe0'
     Size: '0x170'
     Type: Struct RuntimeVectorCurve
-  - Name: pad0x320_HK6AQ[0x320]
+  - Name: pad0x320_M5AZO[0x320]
     Offset: '0x24e'
     Size: '0x320'
     Type: char

@@ -39,7 +39,7 @@ struct StoryClaimableResourcesList
 public:
 	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
-	char                                                         pad0x7_DV05B[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_4XJ0R[0x7];                                 // 0x9(0x7)
 	TArray<Weakclass ClaimableResources>                         ClaimableResources;                                // 0x10(0x10)
 };
 
@@ -128,6 +128,28 @@ public:
 };
 
 
+// Size 0x48
+struct IsStoryActiveConditionBase
+{
+public:
+	TArray<Struct StoryFlag>                                     StoryFlags;                                        // 0x28(0x10)
+};
+
+
+// Size 0x48
+struct IsAllStoryActiveCondition
+{
+public:
+};
+
+
+// Size 0x48
+struct IsAnyStoryActiveCondition
+{
+public:
+};
+
+
 // Size 0x18
 struct StoryInfo
 {
@@ -142,6 +164,22 @@ struct StoryNameInfo
 public:
 	struct FName                                                 StoryName;                                         // 0x0(0x8)
 	Struct FString                                               StoryDesc;                                         // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct DuplicateStoriesReceivedTelemetryEvent
+{
+public:
+	TArray<Str DuplicateStoriesReceived>                         DuplicateStoriesReceived;                          // 0x0(0x10)
+};
+
+
+// Size 0x1
+struct StoriesRefreshRequestedTelemetryEvent
+{
+public:
+	bool                                                         IsForcedRefresh;                                   // 0x0(0x1)
 };
 
 

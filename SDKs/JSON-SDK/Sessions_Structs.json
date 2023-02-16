@@ -1,33 +1,4 @@
 {
-  "SessionTemplate": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TemplateName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SessionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_NEKGF[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
   "CrewSessionTemplate": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -48,6 +19,35 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "SessionTemplate": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TemplateName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_4LXF2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -142,7 +142,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_5QZKK[0x4]",
+        "Name": "pad0x4_ZY5M2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"

@@ -38,7 +38,7 @@ public:
 class TestWindInterface: public Object
 {
 public:
-	char                                                         pad0x30_3FFTI[0x30];                               // 0x28(0x30)
+	char                                                         pad0x30_H3TVD[0x30];                               // 0x28(0x30)
 	TArray<Interface WindZones>                                  WindZones;                                         // 0x58(0x10)
 };
 
@@ -61,12 +61,12 @@ public:
 class WindService: public Actor
 {
 public:
-	char                                                         pad0x10_6OMC0[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_VB0JC[0x10];                               // 0x3c8(0x10)
 	Class WindDirectionalSource*                                 GlobalWindSource;                                  // 0x3d8(0x8)
-	char                                                         pad0x10_LQI3Z[0x10];                               // 0x3e0(0x10)
+	char                                                         pad0x10_0OHZ5[0x10];                               // 0x3e0(0x10)
 	float                                                        CurrentWindAngle;                                  // 0x3f0(0x4)
 	float                                                        CurrentWindMagnitude;                              // 0x3f4(0x4)
-	char                                                         pad0xe8_AKWEI[0xe8];                               // 0x3f8(0xe8)
+	char                                                         pad0xe8_AS3HF[0xe8];                               // 0x3f8(0xe8)
 	TArray<Interface WindZones>                                  WindZones;                                         // 0x4e0(0x10)
 	TArray<Struct ExtraWind>                                     ExtraWind;                                         // 0x4f0(0x10)
 };
@@ -90,10 +90,10 @@ public:
 class WindZoneComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_SM9CC[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_Y2BE6[0x8];                                 // 0x2e0(0x8)
 	Struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2e8(0x70)
 	Struct WindZoneParams                                        WindZoneParams;                                    // 0x358(0x10)
-	char                                                         pad0x28_AZKH2[0x28];                               // 0x366(0x28)
+	char                                                         pad0x28_4ROXR[0x28];                               // 0x366(0x28)
 };
 
 

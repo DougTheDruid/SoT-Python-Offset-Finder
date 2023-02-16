@@ -20,7 +20,7 @@ struct CreateMysteriousNoteResponseData
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_BZTFS[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_WAX9R[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  NoteId;                                            // 0x4(0x10)
 };
 
@@ -30,7 +30,7 @@ struct CreateMysteriousNoteData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	char                                                         pad0x4_VBMQ5[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_ZZISY[0x4];                                 // 0x4(0x4)
 	Struct FString                                               NoteType;                                          // 0x8(0x10)
 	Struct FString                                               NoteTitle;                                         // 0x18(0x10)
 	Struct FString                                               NoteBody;                                          // 0x28(0x10)

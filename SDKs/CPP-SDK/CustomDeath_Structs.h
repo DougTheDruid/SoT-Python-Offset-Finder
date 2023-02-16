@@ -27,7 +27,7 @@ struct DestroyCustomPlayerStartData
 {
 public:
 	int                                                          PlayerStartActorNetID;                             // 0x0(0x4)
-	char                                                         pad0x4_FLBTX[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_7ZOUO[0x4];                                 // 0x4(0x4)
 	Struct FString                                               Tag;                                               // 0x8(0x10)
 };
 
@@ -37,7 +37,7 @@ struct CustomPlayerStartConfigResponseData
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_9MH80[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_JVMHM[0x3];                                 // 0x1(0x3)
 	int                                                          PlayerStartId;                                     // 0x4(0x4)
 };
 
@@ -47,7 +47,7 @@ struct CustomPlayerStartConfigData
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_QVCNM[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_WXA7B[0x4];                                 // 0xc(0x4)
 	Struct Quat                                                  Rotation;                                          // 0x10(0x10)
 	TArray<Str Tags>                                             Tags;                                              // 0x20(0x10)
 };

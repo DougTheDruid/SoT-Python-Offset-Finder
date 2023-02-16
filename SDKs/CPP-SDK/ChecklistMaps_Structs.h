@@ -12,7 +12,7 @@ struct ChecklistItem
 public:
 	Struct FText                                                 Description;                                       // 0x0(0x38)
 	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
-	char                                                         pad0x4_Y6R2D[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_ITUGK[0x4];                                 // 0x3c(0x4)
 	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
 };
 
@@ -67,7 +67,7 @@ struct ChecklistItemCompletedTelemetryEvent
 public:
 	Struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
 	byte                                                         ReceivedActionType;                                // 0x10(0x1)
-	char                                                         pad0x7_1A8RH[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_0U9YE[0x7];                                 // 0x11(0x7)
 	Struct FString                                               ActionDescryption;                                 // 0x18(0x10)
 };
 

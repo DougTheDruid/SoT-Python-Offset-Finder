@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ActorFlammableComponent:
   Attributes:
-  - Name: pad0x18_HOVQF[0x18]
+  - Name: pad0x18_AZB53[0x18]
     Offset: '0xe0'
     Size: '0x18'
     Type: char
@@ -18,7 +18,7 @@ ActorFlammableComponent:
     Offset: '0x108'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_1JAGM[0xc]
+  - Name: pad0xc_ONBT2[0xc]
     Offset: '0x10a'
     Size: '0xc'
     Type: char
@@ -54,7 +54,7 @@ FireCellStateTimingParamsDataAsset:
     Offset: '0x28'
     Size: '0x94'
     Type: Struct FireCellStateTimingParams
-  - Name: pad0x12c_TNH7M[0x12c]
+  - Name: pad0x12c_PAB7M[0x12c]
     Offset: '0xba'
     Size: '0x12c'
     Type: char
@@ -88,7 +88,7 @@ FireGridAudioManager:
     Offset: '0x70'
     Size: '0x8'
     Type: Class FirePropagator*
-  - Name: pad0x68_XE0VU[0x68]
+  - Name: pad0x68_UNAMJ[0x68]
     Offset: '0x76'
     Size: '0x68'
     Type: char
@@ -160,7 +160,7 @@ FireGridVFXManager:
     Offset: '0x190'
     Size: '0x10'
     Type: TArray<Struct FireDefaultVFXSpawnData>
-  - Name: pad0x8_GXSDP[0x8]
+  - Name: pad0x8_STR38[0x8]
     Offset: '0x1a0'
     Size: '0x8'
     Type: char
@@ -172,7 +172,7 @@ FireGridVFXManager:
     Offset: '0x1b8'
     Size: '0x8'
     Type: Class FirePropagator*
-  - Name: pad0x60_XL1S4[0x60]
+  - Name: pad0x60_SBEE4[0x60]
     Offset: '0x1be'
     Size: '0x60'
     Type: char
@@ -198,7 +198,7 @@ FirePropagationInterface:
   Super: Interface
 FirePropagator:
   Attributes:
-  - Name: pad0x90_QOQF9[0x90]
+  - Name: pad0x90_JA4BQ[0x90]
     Offset: '0x28'
     Size: '0x90'
     Type: char
@@ -206,7 +206,7 @@ FirePropagator:
     Offset: '0xb8'
     Size: '0x8'
     Type: Class FireCellStateTimingParamsDataAsset*
-  - Name: pad0x4_BKOIJ[0x4]
+  - Name: pad0x4_3EW5C[0x4]
     Offset: '0xc0'
     Size: '0x4'
     Type: char
@@ -214,7 +214,7 @@ FirePropagator:
     Offset: '0xc4'
     Size: '0x4'
     Type: float
-  - Name: pad0x60_BGA5D[0x60]
+  - Name: pad0x60_OCHA3[0x60]
     Offset: '0xc6'
     Size: '0x60'
     Type: char
@@ -230,7 +230,7 @@ FireStatus:
   Super: StatusBase
 FlammableComponent:
   Attributes:
-  - Name: pad0x10_PUP4B[0x10]
+  - Name: pad0x10_1K94U[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -238,7 +238,7 @@ FlammableComponent:
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_PY4OV[0x9]
+  - Name: pad0x9_U1BKE[0x9]
     Offset: '0xd7'
     Size: '0x9'
     Type: char
@@ -270,7 +270,7 @@ IgniteStatus:
   Super: StatusBase
 MastFlammableComponent:
   Attributes:
-  - Name: pad0x8_9HC1T[0x8]
+  - Name: pad0x8_H5LA5[0x8]
     Offset: '0x110'
     Size: '0x8'
     Type: char
@@ -278,7 +278,7 @@ MastFlammableComponent:
     Offset: '0x118'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x2c_RXTBT[0x2c]
+  - Name: pad0x2c_N6QSV[0x2c]
     Offset: '0x122'
     Size: '0x2c'
     Type: char
@@ -302,7 +302,7 @@ ShipFireLightParamsDataAsset:
     Offset: '0x28'
     Size: '0x14'
     Type: Struct ShipFireLightParams
-  - Name: pad0x2c_JKF1B[0x2c]
+  - Name: pad0x2c_AWQ26[0x2c]
     Offset: '0x3a'
     Size: '0x2c'
     Type: char
@@ -312,7 +312,7 @@ ShipFireLightParamsDataAsset:
   Super: DataAsset
 ShipFirePropagationComponent:
   Attributes:
-  - Name: pad0x10_GJRAW[0x10]
+  - Name: pad0x10_LR0T0[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -336,7 +336,7 @@ ShipFirePropagationComponent:
     Offset: '0xf8'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_R2ZK7[0x4]
+  - Name: pad0x4_D6CS6[0x4]
     Offset: '0x104'
     Size: '0x4'
     Type: char
@@ -352,7 +352,7 @@ ShipFirePropagationComponent:
     Offset: '0x118'
     Size: '0x10'
     Type: TArray<Struct FireCellDesc>
-  - Name: pad0x10_B3A5P[0x10]
+  - Name: pad0x10_OH9OI[0x10]
     Offset: '0x128'
     Size: '0x10'
     Type: char
@@ -392,7 +392,7 @@ ShipFirePropagationComponent:
     Offset: '0x3f8'
     Size: '0x40'
     Type: Struct FireCellAudioParams
-  - Name: pad0xd8_I9YOA[0xd8]
+  - Name: pad0xd8_N4HS4[0xd8]
     Offset: '0x436'
     Size: '0xd8'
     Type: char
@@ -422,7 +422,7 @@ TimedFlammableComponent:
     Offset: '0xe1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_P8J9L[0x2]
+  - Name: pad0x2_7LTDR[0x2]
     Offset: '0xe2'
     Size: '0x2'
     Type: char

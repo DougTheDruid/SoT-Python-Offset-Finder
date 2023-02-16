@@ -6,27 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xc1 (Full Size[0x961] - InheritedSize[0x8a0]
-class BP_SmallShipLadder_C: public CollectorsChestItemProxyStatic
+// Size 0x28 (Full Size[0x5e8] - InheritedSize[0x5c0]
+class BP_SmallShipLadder_C: public Ladder
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x8a0(0x8)
-	Class StaticMeshComponent*                                   WaterOcclusionVolume;                              // 0x8a8(0x8)
-	Class MaterialAnimatorComponent*                             MaterialAnimator;                                  // 0x8b0(0x8)
-	Class OpenableItemMeshAnimationReactionComponent*            OpenableItemMeshAnimationReaction;                 // 0x8b8(0x8)
-	Class MeshAnimatorComponent*                                 MeshAnimator;                                      // 0x8c0(0x8)
-	Class OpenableItemMaterialAnimationReactionComponent*        OpenableItemMaterialAnimationReaction;             // 0x8c8(0x8)
-	Class GlintComponent*                                        Glint;                                             // 0x8d0(0x8)
-	Class QuestBookPagesInContainerComponent*                    QuestBookPagesInContainer;                         // 0x8d8(0x8)
-	Class GoldInContainerComponent*                              GoldInContainer;                                   // 0x8e0(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x8e8(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x8f0(0x8)
-	Class CollectorsChestItemSlotInteractable*                   ItemSlotInteractable;                              // 0x8f8(0x8)
-	Class CollectorsChestItemSlotInteractable*                   ItemSlotInteractable;                              // 0x900(0x8)
-	Class CollectorsChestItemSlotInteractable*                   ItemSlotInteractable;                              // 0x908(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x910(0x8)
-	Struct ObjectMessagingHandle                                 OnDroppedHandle;                                   // 0x918(0x48)
-	bool                                                         HideWaterOcclusionVolume;                          // 0x960(0x1)
+	Class InteractableComponent*                                 None;                                              // 0x5c0(0x8)
+	char                                                         pad0x30_2K9M6[0x30];                               // 0x5c6(0x30)
 };
 
 

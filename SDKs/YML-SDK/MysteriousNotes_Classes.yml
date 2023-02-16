@@ -60,7 +60,7 @@ MysteriousNotesCompletionEventsModelDataAsset:
   Super: DataAsset
 MysteriousNotesService:
   Attributes:
-  - Name: pad0x28_2RGBD[0x28]
+  - Name: pad0x28_D2BWU[0x28]
     Offset: '0x3c8'
     Size: '0x28'
     Type: char
@@ -76,7 +76,7 @@ MysteriousNotesService:
     Offset: '0x400'
     Size: '0x8'
     Type: Class MysteriousNotesCompletionEventsModelDataAsset*
-  - Name: pad0x98_S2RVZ[0x98]
+  - Name: pad0x98_NTC5J[0x98]
     Offset: '0x406'
     Size: '0x98'
     Type: char
@@ -92,7 +92,7 @@ MysteriousNotesServiceInterface:
   Super: Interface
 PlayerMysteriousNoteComponent:
   Attributes:
-  - Name: pad0x8_ZKF2A[0x8]
+  - Name: pad0x8_Q4YRN[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -100,7 +100,7 @@ PlayerMysteriousNoteComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_1VLP8[0xef]
+  - Name: pad0xef_G7C9A[0xef]
     Offset: '0xd1'
     Size: '0xef'
     Type: char
@@ -112,7 +112,7 @@ PlayerMysteriousNoteComponent:
     Offset: '0x1d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x81_XMJZF[0x81]
+  - Name: pad0x81_MTRQ1[0x81]
     Offset: '0x1d7'
     Size: '0x81'
     Type: char
@@ -128,7 +128,7 @@ PlayerMysteriousNoteInterface:
   Super: Interface
 WieldableMysteriousNote:
   Attributes:
-  - Name: pad0x10_LH4JO[0x10]
+  - Name: pad0x10_7JN8K[0x10]
     Offset: '0x7a0'
     Size: '0x10'
     Type: char
@@ -148,7 +148,7 @@ WieldableMysteriousNote:
     Offset: '0x7c0'
     Size: '0x4'
     Type: float
-  - Name: pad0x5c_GBUA7[0x5c]
+  - Name: pad0x5c_DL7IB[0x5c]
     Offset: '0x7c4'
     Size: '0x5c'
     Type: char
@@ -164,7 +164,7 @@ WieldableMysteriousNote:
     Offset: '0x830'
     Size: '0x8'
     Type: Class InventoryItemComponent*
-  - Name: pad0x118_K5FN0[0x118]
+  - Name: pad0x118_EGOYQ[0x118]
     Offset: '0x836'
     Size: '0x118'
     Type: char

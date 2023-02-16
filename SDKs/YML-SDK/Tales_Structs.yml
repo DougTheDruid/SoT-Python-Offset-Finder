@@ -208,7 +208,7 @@ SnapshottedActorData:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_58LOQ[0x6]
+  - Name: pad0x6_JDB0F[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -292,7 +292,7 @@ TaleQuestDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_MHRL2[0x4]
+  - Name: pad0x4_JHFQ0[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -350,6 +350,28 @@ TaleQuestFailedEvent:
 TaleQuestForEachCrewTask:
   Attributes: []
   ClassSize: '0x28'
+TaleQuestQueryableStateCanAllDataBeReadCondition:
+  Attributes:
+  - Name: AllDataToCheck
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Class AllDataToCheck>
+  - Name: ExpectedValue
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+TaleQuestQueryableStateCanAnyDataBeReadCondition:
+  Attributes:
+  - Name: AllDataToCheck
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Class AllDataToCheck>
+  - Name: ExpectedValue
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
 TaleQuestQueryableStateDataInfo:
   Attributes:
   - Name: TaleId
@@ -364,7 +386,7 @@ TaleQuestQueryableStateDataInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_XUB1I[0x3]
+  - Name: pad0x3_809OY[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -373,6 +395,43 @@ TaleQuestQueryableStateDataInfo:
     Size: '0x4'
     Type: int
   ClassSize: '0x20'
+TaleQuestQueryableStateReadAllValueBoolCondition:
+  Attributes:
+  - Name: AllDataToCheck
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Class AllDataToCheck>
+  - Name: ExpectedValue
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+TaleQuestQueryableStateReadAnyValueBoolCondition:
+  Attributes:
+  - Name: AllDataToCheck
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Class AllDataToCheck>
+  - Name: ExpectedValue
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x40'
+TaleQuestQueryableStateReadValueIntCondition:
+  Attributes:
+  - Name: DataID
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class
+  - Name: ExpectedValue
+    Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: ComparisonToExpectedValue
+    Offset: '0x34'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x38'
 TaleQuestSelectorServiceSeedSetTelemetryEvent:
   Attributes:
   - Name: Seed

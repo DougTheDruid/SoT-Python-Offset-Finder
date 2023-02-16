@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Sail Positions Top",
-        "Type": "TArray<Struct Vector>",
+        "Type": "TArray<Struct None>",
         "Size": "0x10",
         "Offset": "0x570"
       },

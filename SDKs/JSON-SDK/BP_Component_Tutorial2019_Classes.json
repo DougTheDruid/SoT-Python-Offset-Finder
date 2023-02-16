@@ -12,9 +12,9 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x13c_0I2CR[0x13c]",
+        "Name": "pad0xd3_OITPU[0xd3]",
         "Type": "char",
-        "Size": "0x13c",
+        "Size": "0xd3",
         "Offset": "0xe0"
       },
       {
@@ -54,7 +54,7 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x7_OWT7N[0x7]",
+        "Name": "pad0x7_2HDLH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x129"

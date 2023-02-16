@@ -1,33 +1,33 @@
 {
   "BP_ProxyIngestible_C": {
     "Super": "StaticMeshFloatingItemProxy",
-    "FullSize": "0x7f0",
-    "InheritedSize": "0x7d0",
+    "FullSize": "0x7f8",
+    "InheritedSize": "0x7d8",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ConfigurableBuryableItem",
         "Type": "Class ConfigurableBuryableItemComponent*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7d8"
       },
       {
         "Name": "TrackedOwner",
         "Type": "Class TrackedOwnerComponent*",
         "Size": "0x8",
-        "Offset": "0x7d8"
+        "Offset": "0x7e0"
       },
       {
         "Name": "MaterialManipulation",
         "Type": "Class MaterialManipulationComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7e8"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x7f0"
       }
     ]
   },

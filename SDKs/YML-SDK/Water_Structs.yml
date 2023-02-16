@@ -33,7 +33,7 @@ BuoyancySampleMovement:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<Struct BuoyancySampleMovementConfiguration>
-  - Name: pad0x40_3P6JW[0x40]
+  - Name: pad0x40_MARUG[0x40]
     Offset: '0x10'
     Size: '0x40'
     Type: char
@@ -60,7 +60,7 @@ BuoyancySampleMovementConfiguration:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1EDRC[0x4]
+  - Name: pad0x4_LEM2P[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -83,7 +83,7 @@ BuoyancySampleMovementConfigurationEntry:
     Offset: '0x0'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_ZE8ZD[0x4]
+  - Name: pad0x4_3RY7S[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -110,7 +110,7 @@ BuoyancyVolumeSample:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_MPAKP[0x2]
+  - Name: pad0x2_B5NPB[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -122,7 +122,7 @@ BuoyancyVolumeSample:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2ACJY[0x4]
+  - Name: pad0x4_RLGQB[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -229,7 +229,7 @@ SplashProbe:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_LIEPR[0x7]
+  - Name: pad0x7_PEQ68[0x7]
     Offset: '0x101'
     Size: '0x7'
     Type: char
@@ -256,7 +256,7 @@ WaterBuoyancy:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WNWVF[0x4]
+  - Name: pad0x4_LPL65[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -334,7 +334,7 @@ WaterSplashProbe:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_EB8FP[0x2]
+  - Name: pad0x2_VZTFN[0x2]
     Offset: '0x4a'
     Size: '0x2'
     Type: char

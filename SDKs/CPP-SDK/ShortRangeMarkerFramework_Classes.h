@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class ShortRangeMarker: public Actor
 {
 public:
-	char                                                         pad0x10_AODMM[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_U6YHM[0x10];                               // 0x3c8(0x10)
 	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x3d8(0x10)
 	float                                                        LifetimerTimer;                                    // 0x3e8(0x4)
 	float                                                        FadeTimer;                                         // 0x3ec(0x4)
@@ -38,7 +38,7 @@ class ShortRangeMarkerDataAsset: public DataAsset
 public:
 	Class ActorSpawnData*                                        RewardMarker;                                      // 0x28(0x8)
 	float                                                        RewardMarkerHeight;                                // 0x30(0x4)
-	char                                                         pad0xc_UCEON[0xc];                                 // 0x32(0xc)
+	char                                                         pad0xc_V67XT[0xc];                                 // 0x32(0xc)
 };
 
 

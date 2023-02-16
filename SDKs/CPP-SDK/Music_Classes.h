@@ -17,20 +17,20 @@ public:
 class MusicZoneComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_6JKB9[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_KAB2X[0x8];                                 // 0x2e0(0x8)
 	float                                                        InnerRadius;                                       // 0x2e8(0x4)
 	float                                                        OuterRadius;                                       // 0x2ec(0x4)
 	struct FName                                                 LocationRTPC;                                      // 0x2f0(0x8)
 	bool                                                         LocalRTPC;                                         // 0x2f8(0x1)
-	char                                                         pad0x7_EU88U[0x7];                                 // 0x2f9(0x7)
+	char                                                         pad0x7_SY6VL[0x7];                                 // 0x2f9(0x7)
 	Class WwiseEvent*                                            PlayEvent;                                         // 0x300(0x8)
 	Class WwiseEvent*                                            StopEvent;                                         // 0x308(0x8)
 	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x310(0x10)
 	Class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x320(0x8)
 	bool                                                         DisableAfterPlayThrough;                           // 0x328(0x1)
 	bool                                                         ActivateOnBeginPlay;                               // 0x329(0x1)
-	char                                                         pad0x6_XF2JS[0x6];                                 // 0x32a(0x6)
-	char                                                         pad0x7c_EPRL4[0x7c];                               // 0x32e(0x7c)
+	char                                                         pad0x6_M2R68[0x6];                                 // 0x32a(0x6)
+	char                                                         pad0x7c_NF9VI[0x7c];                               // 0x32e(0x7c)
 };
 
 
@@ -42,7 +42,7 @@ public:
 	Class AISpawner*                                             AISpawner;                                         // 0x3a8(0x8)
 	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3b0(0x10)
 	byte                                                         SpawnerState;                                      // 0x3c0(0x1)
-	char                                                         pad0x11_CV6VE[0x11];                               // 0x3bf(0x11)
+	char                                                         pad0x11_F9WMS[0x11];                               // 0x3bf(0x11)
 };
 
 
@@ -52,7 +52,7 @@ class SynchedMusicZoneComponent: public MusicZoneComponent
 public:
 	float                                                        StartDelayTime;                                    // 0x3a0(0x4)
 	int                                                          PlayFromStartTimeMS;                               // 0x3a4(0x4)
-	char                                                         pad0x30_DMVRT[0x30];                               // 0x3a6(0x30)
+	char                                                         pad0x30_3YWUN[0x30];                               // 0x3a6(0x30)
 };
 
 

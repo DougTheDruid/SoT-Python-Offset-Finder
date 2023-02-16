@@ -11,13 +11,13 @@ class BP_Prompt_EmissaryDiscoveredLoot_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfc_QUYE3[0xfc];                               // 0x120(0xfc)
+	char                                                         pad0x93_V3CTW[0x93];                               // 0x120(0x93)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryDiscoveredLoot;                     // 0x120(0x48)
 	struct FName                                                 CompnayName;                                       // 0x168(0x8)
 	bool                                                         SurfacedThisSession;                               // 0x170(0x1)
-	char                                                         pad0x3_RZCUI[0x3];                                 // 0x171(0x3)
+	char                                                         pad0x3_U0SV5[0x3];                                 // 0x171(0x3)
 	struct FName                                                 ExpectedCompanyName;                               // 0x174(0x8)
-	char                                                         pad0x4_BWQIJ[0x4];                                 // 0x17c(0x4)
+	char                                                         pad0x4_A3VIK[0x4];                                 // 0x17c(0x4)
 	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x180(0x10)
 	class                                                        PromptAccessKey;                                   // 0x190(0x8)
 	int                                                          PromptIndex;                                       // 0x198(0x4)

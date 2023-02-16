@@ -27,7 +27,7 @@ GameplayTagQuery:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9291Z[0x4]
+  - Name: pad0x4_VPJMV[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

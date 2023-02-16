@@ -24,7 +24,7 @@ RenderToTextureSceneDetails:
     Offset: '0x50'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
-  - Name: pad0x60_FA9LL[0x60]
+  - Name: pad0x60_JEPTH[0x60]
     Offset: '0x56'
     Size: '0x60'
     Type: char

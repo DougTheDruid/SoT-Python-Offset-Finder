@@ -12,7 +12,7 @@ TreasuryWaveEncounter:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_ZVH8I[0x7]
+  - Name: pad0x7_S99E8[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

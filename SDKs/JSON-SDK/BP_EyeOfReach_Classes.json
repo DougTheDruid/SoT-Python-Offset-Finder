@@ -30,7 +30,7 @@
         "Offset": "0xa88"
       },
       {
-        "Name": "pad0x7_I39DW[0x7]",
+        "Name": "pad0x7_XDEXC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa89"
@@ -48,7 +48,7 @@
         "Offset": "0xa98"
       },
       {
-        "Name": "pad0x3_SDR7U[0x3]",
+        "Name": "pad0x3_QEGJU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa99"

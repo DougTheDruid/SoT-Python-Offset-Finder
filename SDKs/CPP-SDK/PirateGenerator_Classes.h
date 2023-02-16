@@ -11,7 +11,7 @@ class AnimationSwitchDataAsset: public DataAsset
 {
 public:
 	float                                                        Threshold;                                         // 0x28(0x4)
-	char                                                         pad0x4_797O5[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_B4I2Q[0x4];                                 // 0x2c(0x4)
 	TArray<Struct AnimationSwitchEntry>                          Entries;                                           // 0x30(0x10)
 };
 
@@ -35,7 +35,7 @@ class CharacterMeshBakeSpecification: public Object
 {
 public:
 	bool                                                         StripTopLOD;                                       // 0x28(0x1)
-	char                                                         pad0x7_YAJDN[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_NLXUF[0x7];                                 // 0x29(0x7)
 	Class SkeletalMesh*                                          CharacterMesh;                                     // 0x30(0x8)
 	Class SkeletalMesh*                                          BaseMeshReferenceSkeleton;                         // 0x38(0x8)
 	Class SkeletonsDataAsset*                                    SourceSkeletons;                                   // 0x40(0x8)
@@ -110,7 +110,7 @@ public:
 class WardrobeDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0xa0_YXYWU[0xa0];                               // 0x28(0xa0)
+	char                                                         pad0xa0_438AI[0xa0];                               // 0x28(0xa0)
 	TArray<Struct MeshPatchEntry>                                AssetMap;                                          // 0xc8(0x10)
 };
 
@@ -136,7 +136,7 @@ public:
 	TArray<Float LODHysteresis>                                  LODHysteresis;                                     // 0x110(0x10)
 	TArray<Struct StringAssetReference>                          ExcludeDataAssets;                                 // 0x120(0x10)
 	int                                                          DefaultPirateGenerationSeed;                       // 0x130(0x4)
-	char                                                         pad0xc_HY4NV[0xc];                                 // 0x132(0xc)
+	char                                                         pad0xc_SX7NA[0xc];                                 // 0x132(0xc)
 };
 
 
@@ -151,9 +151,9 @@ public:
 class TextureSwitch: public TextureProxy
 {
 public:
-	char                                                         pad0x80_QTRPA[0x80];                               // 0x140(0x80)
+	char                                                         pad0x80_EH8B6[0x80];                               // 0x140(0x80)
 	bool                                                         bDuplicated;                                       // 0x1c0(0x1)
-	char                                                         pad0x7_EUT8I[0x7];                                 // 0x1c1(0x7)
+	char                                                         pad0x7_FITEL[0x7];                                 // 0x1c1(0x7)
 	Struct TextureSwitchParameters                               DefaultParameters;                                 // 0x1c8(0x58)
 };
 
@@ -165,7 +165,7 @@ public:
 	struct FName                                                 HashSource;                                        // 0x220(0x8)
 	float                                                        FallbackProbability;                               // 0x228(0x4)
 	struct FName                                                 FallbackReferenceName;                             // 0x22c(0x8)
-	char                                                         pad0x4_OOKHE[0x4];                                 // 0x234(0x4)
+	char                                                         pad0x4_GYFNR[0x4];                                 // 0x234(0x4)
 	Struct StringAssetReference                                  FallbackTexture;                                   // 0x238(0x10)
 	TArray<Struct TextureSwitchSeedEntry>                        Entries;                                           // 0x248(0x10)
 };

@@ -25,10 +25,10 @@ class FireworkFeedbackDataAsset: public DataAsset
 {
 public:
 	float                                                        MaxExplosionRadius;                                // 0x28(0x4)
-	char                                                         pad0x4_438PQ[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_3P2LN[0x4];                                 // 0x2c(0x4)
 	class                                                        CameraShake;                                       // 0x30(0x8)
 	float                                                        CameraShakeInnerRadiusMultiplier;                  // 0x38(0x4)
-	char                                                         pad0x4_9Q9YF[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_6IU37[0x4];                                 // 0x3c(0x4)
 	Class ForceFeedbackEffect*                                   ExplosionRumble;                                   // 0x40(0x8)
 };
 
@@ -41,14 +41,14 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      TimeUntilExplosion;                                // 0x58(0x30)
 	bool                                                         IsFlare;                                           // 0x88(0x1)
 	bool                                                         ShouldCastAmbientLight;                            // 0x89(0x1)
-	char                                                         pad0x2_C0ARK[0x2];                                 // 0x8a(0x2)
+	char                                                         pad0x2_USOUT[0x2];                                 // 0x8a(0x2)
 	Struct FireworkAmbientLightData                              FireworkAmbientLightData;                          // 0x8c(0x14)
 	TArray<Struct WeightedFireworkVFXData>                       Explosions;                                        // 0xa0(0x10)
 	Struct WeightedProbabilityRange                              NumExplosions;                                     // 0xb0(0x20)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenExplosions;                             // 0xd0(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      ExplosionLocationOffset;                           // 0x100(0x30)
 	float                                                        FlashbangRadius;                                   // 0x130(0x4)
-	char                                                         pad0x4_AE1FG[0x4];                                 // 0x134(0x4)
+	char                                                         pad0x4_45AU8[0x4];                                 // 0x134(0x4)
 	Class WwiseObjectPoolWrapper*                                ExplosionSfxPool;                                  // 0x138(0x8)
 	Class WwiseEvent*                                            LaunchSfx;                                         // 0x140(0x8)
 	Class FireworkFeedbackDataAsset*                             FireworkFeedbackData;                              // 0x148(0x8)
@@ -59,13 +59,13 @@ public:
 class FireworkExplosion: public Actor
 {
 public:
-	char                                                         pad0x8_BCGHH[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_4ESQ5[0x8];                                 // 0x3c8(0x8)
 	Struct GeneratedFireworkData                                 GeneratedFireworkData;                             // 0x3d0(0x58)
 	Class SceneComponent*                                        RootSceneComponent;                                // 0x428(0x8)
 	Class FireworkAmbientLightComponent*                         FireworkAmbientLightComponent;                     // 0x430(0x8)
 	Class ParticleSystemComponent*                               SpawnedExplosionParticles;                         // 0x438(0x8)
 	Struct WwiseEmitter                                          AudioEmitter;                                      // 0x440(0x20)
-	char                                                         pad0x80_9KC2V[0x80];                               // 0x45e(0x80)
+	char                                                         pad0x80_QVI0J[0x80];                               // 0x45e(0x80)
 };
 
 
@@ -76,7 +76,7 @@ public:
 	Class LoadableFireworkComponent*                             LoadableProjectileComponent;                       // 0x510(0x8)
 	Struct StringAssetReference                                  FireworkDataAsset;                                 // 0x518(0x10)
 	int                                                          GeneratedDataRNGSeed;                              // 0x528(0x4)
-	char                                                         pad0xc_NR8BR[0xc];                                 // 0x52a(0xc)
+	char                                                         pad0xc_QPTPM[0xc];                                 // 0x52a(0xc)
 };
 
 
@@ -91,7 +91,7 @@ public:
 class FireworkProjectile: public LaunchableProjectile
 {
 public:
-	char                                                         pad0x10_89QXN[0x10];                               // 0x600(0x10)
+	char                                                         pad0x10_J0A9C[0x10];                               // 0x600(0x10)
 	Class SphereComponent*                                       CollisionComponent;                                // 0x610(0x8)
 	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x618(0x8)
 	Class ExplosionComponent*                                    ExplosionComponent;                                // 0x620(0x8)
@@ -99,7 +99,7 @@ public:
 	Class SceneComponent*                                        MeshDirectionComponent;                            // 0x630(0x8)
 	Class ProjectileAnimationComponent*                          AnimationComponent;                                // 0x638(0x8)
 	Struct GeneratedFireworkData                                 GeneratedFireworkData;                             // 0x640(0x58)
-	char                                                         pad0x120_0TEAK[0x120];                             // 0x696(0x120)
+	char                                                         pad0x120_HO1N8[0x120];                             // 0x696(0x120)
 };
 
 
@@ -107,9 +107,9 @@ public:
 class FireworkService: public Actor
 {
 public:
-	char                                                         pad0x78_9WL0D[0x78];                               // 0x3c8(0x78)
+	char                                                         pad0x78_R43VZ[0x78];                               // 0x3c8(0x78)
 	int                                                          NumberOfCachedFlares;                              // 0x440(0x4)
-	char                                                         pad0x24_BBK1I[0x24];                               // 0x442(0x24)
+	char                                                         pad0x24_BEKZM[0x24];                               // 0x442(0x24)
 };
 
 
@@ -122,7 +122,7 @@ public:
 	float                                                        FlashbangFadeOutTimer;                             // 0x40(0x4)
 	float                                                        FlashbangCooldown;                                 // 0x44(0x4)
 	float                                                        LoadedFuseTimer;                                   // 0x48(0x4)
-	char                                                         pad0xc_3I7YZ[0xc];                                 // 0x4a(0xc)
+	char                                                         pad0xc_JWZRZ[0xc];                                 // 0x4a(0xc)
 };
 
 
@@ -131,7 +131,7 @@ class FireworksSettingsDataAsset: public DataAsset
 {
 public:
 	float                                                        LoadedFuseTimer;                                   // 0x28(0x4)
-	char                                                         pad0x4_QLCJQ[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_Q4106[0x4];                                 // 0x2c(0x4)
 	Class WwiseObjectPoolWrapper*                                FuseSoundWisePool;                                 // 0x30(0x8)
 	Class WwiseEvent*                                            FuseActivateSoundPlayEvent;                        // 0x38(0x8)
 	Class WwiseEvent*                                            FuseSoundPlayEvent;                                // 0x40(0x8)
@@ -146,11 +146,11 @@ class FireworkStatsComponent: public ActorComponent
 {
 public:
 	float                                                        FlareRadius;                                       // 0xc8(0x4)
-	char                                                         pad0x4_E271B[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_M5SMQ[0x4];                                 // 0xcc(0x4)
 	int                                                          NumberOfFireworksFiredAtNight;                     // 0xd0(0x4)
 	float                                                        FireworksFiredAtNightRadius;                       // 0xd4(0x4)
 	float                                                        FiredFireworksAtNightTimer;                        // 0xd8(0x4)
-	char                                                         pad0xb4_72AMB[0xb4];                               // 0xda(0xb4)
+	char                                                         pad0xb4_LL719[0xb4];                               // 0xda(0xb4)
 };
 
 
@@ -170,7 +170,7 @@ public:
 	bool                                                         ShouldUseGlobalOverrideFuseSfx;                    // 0x132(0x1)
 	bool                                                         ShouldUseGlobalOverrideFuseVfx;                    // 0x133(0x1)
 	bool                                                         ShouldUseGlobalOverrideFuseMesh;                   // 0x134(0x1)
-	char                                                         pad0x3_DPSXQ[0x3];                                 // 0x135(0x3)
+	char                                                         pad0x3_46ME9[0x3];                                 // 0x135(0x3)
 	Class FireworksSettingsDataAsset*                            FireworksSettingsDataAsset;                        // 0x138(0x8)
 };
 
@@ -182,7 +182,7 @@ public:
 	TArray<Struct WeightedProjectileMeshAnimationData>           ProjectileAnimationCurves;                         // 0xc8(0x10)
 	Class StaticMeshComponent*                                   MeshComponent;                                     // 0xd8(0x8)
 	Struct RuntimeVectorCurve                                    AnimationOffsetCurve;                              // 0xe0(0x170)
-	char                                                         pad0x320_HK6AQ[0x320];                             // 0x24e(0x320)
+	char                                                         pad0x320_M5AZO[0x320];                             // 0x24e(0x320)
 };
 
 

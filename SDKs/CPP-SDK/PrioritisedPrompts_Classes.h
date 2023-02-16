@@ -11,10 +11,10 @@ class BasePromptCoordinator: public Object
 {
 public:
 	Class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
-	char                                                         pad0x10_OTPST[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_35WXZ[0x10];                               // 0x30(0x10)
 	Class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
 	Class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
-	char                                                         pad0xb8_SOECM[0xb8];                               // 0x4e(0xb8)
+	char                                                         pad0xb8_CZEBZ[0xb8];                               // 0x4e(0xb8)
 };
 
 
@@ -22,7 +22,7 @@ public:
 class GetPromptsLocalService: public BlueprintAsyncActionBase
 {
 public:
-	char                                                         pad0x10_NGWA9[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_T5HVA[0x10];                               // 0x28(0x10)
 	Class Object*                                                WorldContextObject;                                // 0x38(0x8)
 };
 
@@ -38,10 +38,10 @@ public:
 class PrioritisedPromptsManager: public Object
 {
 public:
-	char                                                         pad0x8_5NKR2[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_ZMJO3[0x8];                                 // 0x28(0x8)
 	TArray<Struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
 	Class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
-	char                                                         pad0x40_TFY3B[0x40];                               // 0x46(0x40)
+	char                                                         pad0x40_6L1F9[0x40];                               // 0x46(0x40)
 };
 
 

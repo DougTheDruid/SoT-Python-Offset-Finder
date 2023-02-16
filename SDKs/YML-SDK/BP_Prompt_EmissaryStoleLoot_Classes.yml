@@ -6,9 +6,9 @@ BP_Prompt_EmissaryStoleLoot_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xfc_HLVZR[0xfc]
+  - Name: pad0x93_1EZ6F[0x93]
     Offset: '0x120'
-    Size: '0xfc'
+    Size: '0x93'
     Type: char
   - Name: Handle_EmissaryStoleLoot
     Offset: '0x120'
@@ -22,7 +22,7 @@ BP_Prompt_EmissaryStoleLoot_C:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7567I[0x3]
+  - Name: pad0x3_XEKN4[0x3]
     Offset: '0x171'
     Size: '0x3'
     Type: char
@@ -30,7 +30,7 @@ BP_Prompt_EmissaryStoleLoot_C:
     Offset: '0x174'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_UXAPE[0x4]
+  - Name: pad0x4_G6Z13[0x4]
     Offset: '0x17c'
     Size: '0x4'
     Type: char

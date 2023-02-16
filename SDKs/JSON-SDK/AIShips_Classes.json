@@ -39,7 +39,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x20_8ZNHA[0x20]",
+        "Name": "pad0x20_KPBAQ[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x88"
@@ -51,7 +51,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x48_1WKUC[0x48]",
+        "Name": "pad0x48_1UEBY[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xbe"
@@ -60,279 +60,279 @@
   },
   "AthenaAIShipControllerParamsDataAsset": {
     "Super": "AthenaAIControllerParamsDataAsset",
-    "FullSize": "0x460",
-    "InheritedSize": "0x110",
+    "FullSize": "0x480",
+    "InheritedSize": "0x130",
     "ClassSize": "0x350",
     "Attributes": [
       {
         "Name": "TrackingMovementParams",
         "Type": "Struct ShipMovementParams",
         "Size": "0x34",
-        "Offset": "0x110"
+        "Offset": "0x130"
       },
       {
-        "Name": "pad0x4_2YHQ4[0x4]",
+        "Name": "pad0x4_I42A2[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x144"
+        "Offset": "0x164"
       },
       {
         "Name": "TimesToSailBesideTarget",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x148"
+        "Offset": "0x168"
       },
       {
         "Name": "PerpendicularDistanceOffsets",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x178"
+        "Offset": "0x198"
       },
       {
         "Name": "TimesBeforeDistanceChange",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x1a8"
+        "Offset": "0x1c8"
       },
       {
         "Name": "MaxParallelDistanceOffset",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d8"
+        "Offset": "0x1f8"
       },
       {
         "Name": "AlignDistanceThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1dc"
+        "Offset": "0x1fc"
       },
       {
         "Name": "TimeToProjectIntoFutureForTracking",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1e0"
+        "Offset": "0x200"
       },
       {
         "Name": "TargetSpeedThresholdToTrackShip",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1e4"
+        "Offset": "0x204"
       },
       {
         "Name": "TrackingNoiseGenerator",
         "Type": "Struct TrackingNoiseGenerator",
         "Size": "0x18",
-        "Offset": "0x1e8"
+        "Offset": "0x208"
       },
       {
         "Name": "WheelAngleMonitorDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x200"
+        "Offset": "0x220"
       },
       {
         "Name": "WheelAngleChangeThresholdToBreakTracking",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x204"
+        "Offset": "0x224"
       },
       {
         "Name": "SpeedMonitorDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x208"
+        "Offset": "0x228"
       },
       {
         "Name": "SpeedChangeThresholdToBreakTrackingInMPS",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x20c"
+        "Offset": "0x22c"
       },
       {
         "Name": "TargetSpeedToConsiderAnchorLoweredInMPS",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x210"
+        "Offset": "0x230"
       },
       {
-        "Name": "pad0x4_FF7XD[0x4]",
+        "Name": "pad0x4_9M0W2[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x214"
+        "Offset": "0x234"
       },
       {
         "Name": "TrackingLatencyTimes",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x218"
+        "Offset": "0x238"
       },
       {
         "Name": "TrackingLatencyTimesWhenAnchorLowered",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x248"
+        "Offset": "0x268"
       },
       {
         "Name": "DistToTargetShipVSTrackingLatencyCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x278"
+        "Offset": "0x298"
       },
       {
         "Name": "CirclingMovementParams",
         "Type": "Struct ShipMovementParams",
         "Size": "0x34",
-        "Offset": "0x280"
+        "Offset": "0x2a0"
       },
       {
         "Name": "TargetSpeedThresholdInKnots",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2b4"
+        "Offset": "0x2d4"
       },
       {
         "Name": "SecondsInFutureToProjectTargetLocation",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2b8"
+        "Offset": "0x2d8"
       },
       {
-        "Name": "pad0x4_8DHMO[0x4]",
+        "Name": "pad0x4_ZM6H2[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x2bc"
+        "Offset": "0x2dc"
       },
       {
         "Name": "CircleRadiuses",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x2c0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "CirclingSpeedsInDegreesPerSecond",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x2f0"
+        "Offset": "0x310"
       },
       {
         "Name": "TimesToCircleBeforeChangingRadius",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x320"
+        "Offset": "0x340"
       },
       {
         "Name": "MinDistanceFromTargetToStartRam",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x350"
+        "Offset": "0x370"
       },
       {
         "Name": "MaxDistanceFromTargetToStartRam",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x354"
+        "Offset": "0x374"
       },
       {
         "Name": "MaxSpeedToRamTarget",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x358"
+        "Offset": "0x378"
       },
       {
         "Name": "RammingMaxTurnSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x35c"
+        "Offset": "0x37c"
       },
       {
         "Name": "RammingTimeDampingScalar",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x360"
+        "Offset": "0x380"
       },
       {
         "Name": "MinAngleToTargetToAttemptRam",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x364"
+        "Offset": "0x384"
       },
       {
         "Name": "RammingLocationOffsets",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x368"
+        "Offset": "0x388"
       },
       {
         "Name": "SailingForwardMovementParams",
         "Type": "Struct ShipMovementParams",
         "Size": "0x34",
-        "Offset": "0x398"
+        "Offset": "0x3b8"
       },
       {
         "Name": "MinAllowedDistanceToObstacle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3cc"
+        "Offset": "0x3ec"
       },
       {
         "Name": "MaxPathAvoidanceDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3d0"
+        "Offset": "0x3f0"
       },
       {
         "Name": "PassiveSailingMovementParams",
         "Type": "Struct ShipMovementParams",
         "Size": "0x34",
-        "Offset": "0x3d4"
+        "Offset": "0x3f4"
       },
       {
         "Name": "ChanceToAnchor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x408"
+        "Offset": "0x428"
       },
       {
-        "Name": "pad0x4_PEXBS[0x4]",
+        "Name": "pad0x4_A4FBQ[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x40c"
+        "Offset": "0x42c"
       },
       {
         "Name": "TimesToStayAnchored",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x410"
+        "Offset": "0x430"
       },
       {
         "Name": "NumIslandsToVisitBeforeReturning",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x460"
       },
       {
         "Name": "DistanceFromIslandsToSailTo",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x444"
+        "Offset": "0x464"
       },
       {
         "Name": "DistanceToTargetToDropAnchor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x448"
+        "Offset": "0x468"
       },
       {
-        "Name": "pad0x4_X7XMX[0x4]",
+        "Name": "pad0x4_87HSS[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x44c"
+        "Offset": "0x46c"
       },
       {
         "Name": "AggressionOverrideImpactIDs",
         "Type": "TArray<Class AggressionOverrideImpactIDs>",
         "Size": "0x10",
-        "Offset": "0x450"
+        "Offset": "0x470"
       }
     ]
   },
@@ -355,7 +355,7 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_1WFWV[0x6]",
+        "Name": "pad0x6_E4W6L[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2a"
@@ -441,7 +441,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_JHA2P[0x3]",
+        "Name": "pad0x3_XFM5O[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -579,10 +579,36 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x9_GZBP8[0x9]",
+        "Name": "pad0x9_0696X[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x87"
+      }
+    ]
+  },
+  "AIShipEncounterDynamicDesc": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "ShipPool",
+        "Type": "TArray<Struct AIShipSizeDynamicContexts>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "FinalShip",
+        "Type": "Class AIShipContextDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DynamicBalancingDesc",
+        "Type": "Struct AIShipEncounterDynamicBalancingDesc",
+        "Size": "0x58",
+        "Offset": "0x40"
       }
     ]
   },
@@ -643,7 +669,7 @@
         "Offset": "0x448"
       },
       {
-        "Name": "pad0x38_SB1HU[0x38]",
+        "Name": "pad0x38_I4ONE[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x44e"
@@ -699,7 +725,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_DOSLL[0x4]",
+        "Name": "pad0x4_BJAX8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
@@ -741,7 +767,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x3_U5GXX[0x3]",
+        "Name": "pad0x3_N5ELE[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa9"
@@ -759,7 +785,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0xc_HM5Q9[0xc]",
+        "Name": "pad0xc_IY1KR[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0xb2"
@@ -768,9 +794,9 @@
   },
   "AIShipServiceDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x1f8",
+    "FullSize": "0x250",
     "InheritedSize": "0x28",
-    "ClassSize": "0x1d0",
+    "ClassSize": "0x228",
     "Attributes": [
       {
         "Name": "BattleEncounterParams",
@@ -803,7 +829,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_DSAOF[0x4]",
+        "Name": "pad0x4_VI4PQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
@@ -817,86 +843,86 @@
       {
         "Name": "EncounterGenerationParams",
         "Type": "Struct AIShipBattleEncounterDescGenerationParams",
-        "Size": "0x28",
+        "Size": "0x80",
         "Offset": "0xf0"
       },
       {
         "Name": "AggressiveEncounterGenerationParams",
         "Type": "Struct AIShipSingleWaveEncounterDescGenerationParams",
         "Size": "0x10",
-        "Offset": "0x118"
+        "Offset": "0x170"
       },
       {
         "Name": "PassiveEncounterGenerationParams",
         "Type": "Struct AIShipSingleWaveEncounterDescGenerationParams",
         "Size": "0x10",
-        "Offset": "0x128"
+        "Offset": "0x180"
       },
       {
         "Name": "TimerBattleFirstRegenInterval",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x138"
+        "Offset": "0x190"
       },
       {
         "Name": "TimerBattleRegenInterval",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x168"
+        "Offset": "0x1c0"
       },
       {
         "Name": "TimerBattleFinderThrottle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x198"
+        "Offset": "0x1f0"
       },
       {
-        "Name": "pad0x4_V9HKX[0x4]",
+        "Name": "pad0x4_PH9PJ[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x19c"
+        "Offset": "0x1f4"
       },
       {
         "Name": "TimerBattleRetryRegenInterval",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x1a0"
+        "Offset": "0x1f8"
       },
       {
         "Name": "TimerBattleMinActivationDistanceFromPlayers",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d0"
+        "Offset": "0x228"
       },
       {
-        "Name": "pad0x4_8S1BP[0x4]",
+        "Name": "pad0x4_TQ6QK[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x1d4"
+        "Offset": "0x22c"
       },
       {
         "Name": "RewardMarkerParams",
         "Type": "Class ShortRangeMarkerDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1d8"
+        "Offset": "0x230"
       },
       {
         "Name": "IslandsToAvoid",
         "Type": "TArray<Struct FName>",
         "Size": "0x10",
-        "Offset": "0x1e0"
+        "Offset": "0x238"
       },
       {
         "Name": "AvoidanceRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1f0"
+        "Offset": "0x248"
       },
       {
-        "Name": "pad0xc_V42DE[0xc]",
+        "Name": "pad0xc_5M887[0xc]",
         "Type": "char",
         "Size": "0xc",
-        "Offset": "0x1f2"
+        "Offset": "0x24a"
       }
     ]
   },
@@ -962,7 +988,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x2_E3Q3H[0x2]",
+        "Name": "pad0x2_FKPSB[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3a"
@@ -980,7 +1006,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_5FGQH[0x3]",
+        "Name": "pad0x3_WIIMH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -998,7 +1024,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_JAX78[0x7]",
+        "Name": "pad0x7_YVZ9I[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
@@ -1024,7 +1050,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x3_ZWAK2[0x3]",
+        "Name": "pad0x3_8NGRF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc9"
@@ -1036,7 +1062,7 @@
         "Offset": "0xcc"
       },
       {
-        "Name": "pad0x28_E8TVL[0x28]",
+        "Name": "pad0x28_FDEC1[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xce"
@@ -1064,7 +1090,7 @@
     "ClassSize": "0x330",
     "Attributes": [
       {
-        "Name": "pad0x20_HZJOR[0x20]",
+        "Name": "pad0x20_EEI8A[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
@@ -1076,7 +1102,7 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x318_5665C[0x318]",
+        "Name": "pad0x318_56I9A[0x318]",
         "Type": "char",
         "Size": "0x318",
         "Offset": "0x3ee"
@@ -1103,7 +1129,7 @@
         "Offset": "0x610"
       },
       {
-        "Name": "pad0x18_POYM2[0x18]",
+        "Name": "pad0x18_JP8EC[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x618"
@@ -1127,7 +1153,7 @@
         "Offset": "0x640"
       },
       {
-        "Name": "pad0x148_I32KN[0x148]",
+        "Name": "pad0x148_71PZ2[0x148]",
         "Type": "char",
         "Size": "0x148",
         "Offset": "0x666"
@@ -1171,7 +1197,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x68_253BD[0x68]",
+        "Name": "pad0x68_OXVS8[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0x136"
@@ -1211,7 +1237,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x80_VXTY2[0x80]",
+        "Name": "pad0x80_5WN98[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x96"
@@ -1237,7 +1263,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x10_PXBMI[0x10]",
+        "Name": "pad0x10_BHGJX[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8e"
@@ -1283,7 +1309,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x80_N8U3Y[0x80]",
+        "Name": "pad0x80_DD7PU[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xfe"
@@ -1309,7 +1335,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x24_W6J2E[0x24]",
+        "Name": "pad0x24_1NCBO[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0xb2"
@@ -1357,7 +1383,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x9_N04VG[0x9]",
+        "Name": "pad0x9_R69JH[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x27"

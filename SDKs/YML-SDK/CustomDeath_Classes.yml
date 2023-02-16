@@ -8,7 +8,7 @@ CustomDeathInterface:
   Super: Interface
 CustomDeathService:
   Attributes:
-  - Name: pad0x38_8QH2W[0x38]
+  - Name: pad0x38_Z9BJ1[0x38]
     Offset: '0x3c8'
     Size: '0x38'
     Type: char
@@ -16,7 +16,7 @@ CustomDeathService:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<class PlayerStart*>
-  - Name: pad0x70_U3GJO[0x70]
+  - Name: pad0x70_AQ8NY[0x70]
     Offset: '0x40e'
     Size: '0x70'
     Type: char

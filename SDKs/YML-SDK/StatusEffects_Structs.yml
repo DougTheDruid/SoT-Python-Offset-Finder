@@ -10,7 +10,7 @@ ActiveStatusEffect:
     Offset: '0x10'
     Size: '0x4'
     Type: Struct StatusDescriptor
-  - Name: pad0x4_ZT2I5[0x4]
+  - Name: pad0x4_AYT4G[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

@@ -1,57 +1,57 @@
 {
   "RetractableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x100",
+    "FullSize": "0x110",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x38",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x28_5LZ2K[0x28]",
+        "Name": "pad0x38_XTFFS[0x38]",
         "Type": "char",
-        "Size": "0x28",
+        "Size": "0x38",
         "Offset": "0xc8"
       },
       {
         "Name": "FeatureToggle",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xf0"
+        "Offset": "0x100"
       },
       {
         "Name": "OrientationAdjustmentOnRetractFlags",
         "Type": "Struct RetractorOrientationAdjustmentFlags",
         "Size": "0x3",
-        "Offset": "0xf8"
+        "Offset": "0x108"
       },
       {
         "Name": "RetractorBoxAxis",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xfb"
+        "Offset": "0x10b"
       },
       {
         "Name": "ShouldAutoReleaseOnSuccessfulRetract",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xfc"
+        "Offset": "0x10c"
       },
       {
         "Name": "MigrateAttachedWithRetractor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xfd"
+        "Offset": "0x10d"
       },
       {
         "Name": "WasSimulatingPhysicsBeforeRetract",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xfe"
+        "Offset": "0x10e"
       },
       {
-        "Name": "pad0x3_3VTKQ[0x3]",
+        "Name": "pad0x3_XLDX2[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0xfd"
+        "Offset": "0x10d"
       }
     ]
   },
@@ -78,8 +78,8 @@
   },
   "RetractableFloatingBarrelComponent": {
     "Super": "RetractableComponent",
-    "FullSize": "0x110",
-    "InheritedSize": "0x100",
+    "FullSize": "0x120",
+    "InheritedSize": "0x110",
     "ClassSize": "0x10",
     "Attributes": []
   },
@@ -90,7 +90,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x48_T9IIT[0x48]",
+        "Name": "pad0x48_Y1ZND[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xc8"
@@ -108,7 +108,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x18_NWK2B[0x18]",
+        "Name": "pad0x18_J9A47[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x11e"

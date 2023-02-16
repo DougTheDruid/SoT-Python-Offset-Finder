@@ -22,7 +22,7 @@ public:
 	Class SkeletalMeshComponent*                                 ItemMesh;                                          // 0x5d0(0x8)
 	Class CameraComponent*                                       Camera;                                            // 0x5d8(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x5e0(0x8)
-	char                                                         pad0x40_5TGRG[0x40];                               // 0x5e6(0x40)
+	char                                                         pad0x40_Z3BC0[0x40];                               // 0x5e6(0x40)
 };
 
 

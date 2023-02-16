@@ -34,10 +34,10 @@ struct LevelSequencePlayerSnapshot
 public:
 	Struct FText                                                 MasterName;                                        // 0x0(0x38)
 	float                                                        MasterTime;                                        // 0x38(0x4)
-	char                                                         pad0x4_PSOYN[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_V1QA0[0x4];                                 // 0x3c(0x4)
 	Struct FText                                                 CurrentShotName;                                   // 0x40(0x38)
 	float                                                        CurrentShotLocalTime;                              // 0x78(0x4)
-	char                                                         pad0x4_ND7FS[0x4];                                 // 0x7c(0x4)
+	char                                                         pad0x4_HONRL[0x4];                                 // 0x7c(0x4)
 	Class CameraComponent*                                       CameraComponent;                                   // 0x80(0x8)
 	Struct LevelSequenceSnapshotSettings                         Settings;                                          // 0x88(0x8)
 };
@@ -48,7 +48,7 @@ struct LevelSequenceSnapshotSettings
 {
 public:
 	byte                                                         ZeroPadAmount;                                     // 0x0(0x1)
-	char                                                         pad0x3_O9NI8[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_SZ8LC[0x3];                                 // 0x1(0x3)
 	float                                                        FrameRate;                                         // 0x4(0x4)
 };
 

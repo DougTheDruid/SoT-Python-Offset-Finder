@@ -18,7 +18,7 @@ BP_EyeOfReach_C:
     Offset: '0xa88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_I39DW[0x7]
+  - Name: pad0x7_XDEXC[0x7]
     Offset: '0xa89'
     Size: '0x7'
     Type: char
@@ -30,7 +30,7 @@ BP_EyeOfReach_C:
     Offset: '0xa98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SDR7U[0x3]
+  - Name: pad0x3_QEGJU[0x3]
     Offset: '0xa99'
     Size: '0x3'
     Type: char

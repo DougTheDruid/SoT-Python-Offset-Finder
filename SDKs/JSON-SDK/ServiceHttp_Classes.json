@@ -1,9 +1,9 @@
 {
   "ServiceHttpSettings": {
     "Super": "Object",
-    "FullSize": "0x40",
+    "FullSize": "0x60",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "DiscoveryServiceUrl",
@@ -24,10 +24,22 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x8_MP5NQ[0x8]",
+        "Name": "pad0x6_K9B5R[0x6]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x38"
+        "Size": "0x6",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "SubStringToFindInUrlForXBLiveTokenRequest",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "UrlReplacementStringForXBLiveTokenRequest",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
       }
     ]
   },

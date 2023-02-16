@@ -12,20 +12,20 @@ struct SlateBrush
 public:
 	Struct Vector2D                                              ImageSize;                                         // 0x0(0x8)
 	byte                                                         DrawAs;                                            // 0x8(0x1)
-	char                                                         pad0x3_2LA51[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_5S7AD[0x3];                                 // 0x9(0x3)
 	Struct Margin                                                Margin;                                            // 0xc(0x10)
 	Struct LinearColor                                           Tint;                                              // 0x1c(0x10)
-	char                                                         pad0x4_Z7R9I[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_77GHM[0x4];                                 // 0x2c(0x4)
 	Struct SlateColor                                            TintColor;                                         // 0x30(0x30)
 	byte                                                         Tiling;                                            // 0x60(0x1)
 	byte                                                         Mirroring;                                         // 0x61(0x1)
 	byte                                                         ImageType;                                         // 0x62(0x1)
-	char                                                         pad0x5_7PSH4[0x5];                                 // 0x63(0x5)
+	char                                                         pad0x5_O8AHO[0x5];                                 // 0x63(0x5)
 	Class Object*                                                ResourceObject;                                    // 0x68(0x8)
 	struct FName                                                 ResourceName;                                      // 0x70(0x8)
 	bool                                                         bIsDynamicallyLoaded;                              // 0x78(0x1)
 	bool                                                         bHasUObject;                                       // 0x79(0x1)
-	char                                                         pad0x2_LXG8T[0x2];                                 // 0x7a(0x2)
+	char                                                         pad0x2_MT8K1[0x2];                                 // 0x7a(0x2)
 	Struct Box2D                                                 UVRegion;                                          // 0x7c(0x14)
 };
 
@@ -132,7 +132,7 @@ struct SlateFontInfo
 public:
 	Class Object*                                                FontObject;                                        // 0x0(0x8)
 	Class Object*                                                FontMaterial;                                      // 0x8(0x8)
-	char                                                         pad0x18_E5M3Q[0x18];                               // 0x10(0x18)
+	char                                                         pad0x18_8RG9Q[0x18];                               // 0x10(0x18)
 	struct FName                                                 TypefaceFontName;                                  // 0x28(0x8)
 	int                                                          Size;                                              // 0x30(0x4)
 	struct FName                                                 FontName;                                          // 0x34(0x8)
@@ -259,7 +259,7 @@ public:
 	Struct FString                                               FontFilename;                                      // 0x0(0x10)
 	Class FontBulkData*                                          BulkDataPtr;                                       // 0x10(0x8)
 	byte                                                         Hinting;                                           // 0x18(0x1)
-	char                                                         pad0x7_WHM4M[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_COEJN[0x7];                                 // 0x19(0x7)
 	TArray<Byte FontData>                                        FontData;                                          // 0x20(0x10)
 };
 
@@ -318,7 +318,7 @@ public:
 	Struct SlateBrush                                            TabWellBrush;                                      // 0x610(0x90)
 	Struct Margin                                                TabPadding;                                        // 0x6a0(0x10)
 	float                                                        OverlapWidth;                                      // 0x6b0(0x4)
-	char                                                         pad0x4_YQA04[0x4];                                 // 0x6b4(0x4)
+	char                                                         pad0x4_G9VG2[0x4];                                 // 0x6b4(0x4)
 	Struct SlateColor                                            FlashColor;                                        // 0x6b8(0x30)
 };
 
@@ -471,7 +471,7 @@ struct CheckBoxStyle
 {
 public:
 	byte                                                         CheckBoxType;                                      // 0x8(0x1)
-	char                                                         pad0x7_N7M3Y[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_27H6J[0x7];                                 // 0x9(0x7)
 	Struct SlateBrush                                            UncheckedImage;                                    // 0x10(0x90)
 	Struct SlateBrush                                            UncheckedHoveredImage;                             // 0xa0(0x90)
 	Struct SlateBrush                                            UncheckedPressedImage;                             // 0x130(0x90)

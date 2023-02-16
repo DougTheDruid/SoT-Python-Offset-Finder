@@ -72,7 +72,7 @@ StopWarMapVoyageVoteValidator:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_0VH0Q[0x9]
+  - Name: pad0x9_G1B7G[0x9]
     Offset: '0x117'
     Size: '0x9'
     Type: char
@@ -82,7 +82,7 @@ StopWarMapVoyageVoteValidator:
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
-  - Name: pad0x8_VFMBO[0x8]
+  - Name: pad0x8_TA17P[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -98,7 +98,7 @@ WarMapInteractionComponent:
     Offset: '0x1a0'
     Size: '0x8'
     Type: class
-  - Name: pad0x30_774WV[0x30]
+  - Name: pad0x30_LIQU0[0x30]
     Offset: '0x1a6'
     Size: '0x30'
     Type: char
@@ -132,7 +132,7 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x67_DAZRP[0x67]
+  - Name: pad0x67_EX4QM[0x67]
     Offset: '0x41'
     Size: '0x67'
     Type: char
@@ -144,7 +144,7 @@ WarMapVoteConsumerBase:
     Offset: '0xb8'
     Size: '0x8'
     Type: Class BoxedRpcDispatcherComponent*
-  - Name: pad0x68_TRSJZ[0x68]
+  - Name: pad0x68_N2BMZ[0x68]
     Offset: '0xbe'
     Size: '0x68'
     Type: char
@@ -154,7 +154,7 @@ WarMapVoteConsumerBase:
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_2D8Z9[0x10]
+  - Name: pad0x10_PEKSS[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -166,7 +166,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3dc'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: pad0x4_59TN2[0x4]
+  - Name: pad0x4_4HOCP[0x4]
     Offset: '0x3e4'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ WarMapVoteInteractionActor:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<Struct FactionRequest>
-  - Name: pad0x220_YXO9T[0x220]
+  - Name: pad0x220_ICXB7[0x220]
     Offset: '0x40e'
     Size: '0x220'
     Type: char
@@ -212,7 +212,7 @@ WarMapVoteValidatorBase:
     Offset: '0x45'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd4_2J5TS[0xd4]
+  - Name: pad0xd4_GFI85[0xd4]
     Offset: '0x44'
     Size: '0xd4'
     Type: char

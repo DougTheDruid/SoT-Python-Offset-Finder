@@ -8,21 +8,27 @@
   },
   "UtilityVoyageService": {
     "Super": "Object",
-    "FullSize": "0x70",
+    "FullSize": "0xc0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x48",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x38_6D0HD[0x38]",
+        "Name": "pad0x78_Y5L6D[0x78]",
         "Type": "char",
-        "Size": "0x38",
+        "Size": "0x78",
         "Offset": "0x28"
       },
       {
         "Name": "Participants",
         "Type": "TArray<class CrewVoyageParticipant*>",
         "Size": "0x10",
-        "Offset": "0x60"
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "Voyages",
+        "Type": "TArray<Struct UtilityVoyageData>",
+        "Size": "0x10",
+        "Offset": "0xb0"
       }
     ]
   },

@@ -33,13 +33,13 @@ class WwiseEvent: public Object
 public:
 	Class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
 	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
-	char                                                         pad0x3_KJGOZ[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_0NV52[0x3];                                 // 0x31(0x3)
 	float                                                        DurationMin;                                       // 0x38(0x4)
 	float                                                        DurationMax;                                       // 0x3c(0x4)
 	float                                                        MaxAttenuation;                                    // 0x40(0x4)
 	byte                                                         DurationType;                                      // 0x44(0x1)
 	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
-	char                                                         pad0xc_C9EHM[0xc];                                 // 0x44(0xc)
+	char                                                         pad0xc_35J4U[0xc];                                 // 0x44(0xc)
 };
 
 
@@ -55,7 +55,7 @@ public:
 class MovieSceneAkAudioRTPCSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_XKTMA[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_SMSWQ[0x8];                                 // 0x98(0x8)
 	Struct FString                                               Name;                                              // 0xa0(0x10)
 	Struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
 };
@@ -67,7 +67,7 @@ class MovieSceneAkTrack: public MovieSceneTrack
 public:
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
-	char                                                         pad0x9_63S4Y[0x9];                                 // 0x97(0x9)
+	char                                                         pad0x9_6S6KQ[0x9];                                 // 0x97(0x9)
 };
 
 
@@ -94,13 +94,31 @@ public:
 };
 
 
-// Size 0x3f8 (Full Size[0x420] - InheritedSize[0x28]
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class WwiseNonShippingAudioAsset: public DataAsset
+{
+public:
+	Struct FString                                               CodeName;                                          // 0x28(0x10)
+	Struct FString                                               UAssetRelativePath;                                // 0x38(0x10)
+	Struct FString                                               StreamRelativePath;                                // 0x48(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class WwiseNonShippingAudioRootAsset: public DataAsset
+{
+public:
+	TArray<class WwiseNonShippingAudioAsset*>                    NonShippingAudioAssets;                            // 0x28(0x10)
+};
+
+
+// Size 0x410 (Full Size[0x438] - InheritedSize[0x28]
 class WwiseAudioSettings: public Object
 {
 public:
-	char                                                         pad0xc0_VOF5B[0xc0];                               // 0x28(0xc0)
+	char                                                         pad0xc0_UZKPH[0xc0];                               // 0x28(0xc0)
 	Struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0xe8(0x64)
-	char                                                         pad0x4_CX7HX[0x4];                                 // 0x14c(0x4)
+	char                                                         pad0x4_K3QTG[0x4];                                 // 0x14c(0x4)
 	Struct WwiseBinkSettings                                     BinkSettings;                                      // 0x150(0x38)
 	TArray<Struct StringAssetReference>                          PersistentSoundBanks;                              // 0x188(0x10)
 	Struct StringAssetReference                                  InitBank;                                          // 0x198(0x10)
@@ -118,20 +136,22 @@ public:
 	Struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x258(0x18)
 	Struct WwiseAudioGameStateSettings                           AudioStateSettings;                                // 0x270(0xa0)
 	Struct StringAssetReference                                  WwiseMediaSoundComponentEventName;                 // 0x318(0x10)
-	Class WwiseEvent*                                            PauseEventStartInstance;                           // 0x328(0x8)
-	Class WwiseEvent*                                            PauseEventReleaseInstance;                         // 0x330(0x8)
-	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x338(0x8)
-	Class WwiseEvent*                                            WwiseMediaSoundComponentEventNameInstance;         // 0x340(0x8)
-	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x348(0x8)
-	char                                                         pad0x50_9SX1O[0x50];                               // 0x350(0x50)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendStartInstance;               // 0x3a0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendEndInstance;                 // 0x3b0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnStartEngagementInstance;             // 0x3c0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnEndEngagementInstance;               // 0x3d0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingStartInstance;                // 0x3e0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingEndInstance;                  // 0x3f0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x400(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x410(0x10)
+	Struct StringAssetReference                                  NonShippingAudioRootAssetPath;                     // 0x328(0x10)
+	Class WwiseEvent*                                            PauseEventStartInstance;                           // 0x338(0x8)
+	Class WwiseEvent*                                            PauseEventReleaseInstance;                         // 0x340(0x8)
+	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x348(0x8)
+	Class WwiseEvent*                                            WwiseMediaSoundComponentEventNameInstance;         // 0x350(0x8)
+	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x358(0x8)
+	char                                                         pad0x50_Y281N[0x50];                               // 0x360(0x50)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendStartInstance;               // 0x3b0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendEndInstance;                 // 0x3c0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnStartEngagementInstance;             // 0x3d0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnEndEngagementInstance;               // 0x3e0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingStartInstance;                // 0x3f0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingEndInstance;                  // 0x400(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x410(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x420(0x10)
+	Class WwiseNonShippingAudioRootAsset*                        NonShippingAudioRootAsset;                         // 0x430(0x8)
 };
 
 
@@ -140,7 +160,7 @@ class WwiseBank: public Object
 {
 public:
 	Struct FString                                               path;                                              // 0x28(0x10)
-	char                                                         pad0x50_XS4CK[0x50];                               // 0x36(0x50)
+	char                                                         pad0x50_53GXL[0x50];                               // 0x36(0x50)
 };
 
 

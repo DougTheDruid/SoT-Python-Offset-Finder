@@ -6,9 +6,9 @@ BP_Prompt_Sitting_ThirdPerson_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xfc_U82YE[0xfc]
+  - Name: pad0x93_DE4DY[0x93]
     Offset: '0x120'
-    Size: '0xfc'
+    Size: '0x93'
     Type: char
   - Name: Handle_LocalPlayerEnteredSittingState
     Offset: '0x120'
@@ -30,7 +30,7 @@ BP_Prompt_Sitting_ThirdPerson_C:
     Offset: '0x1d5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_G0NLH[0x2]
+  - Name: pad0x2_0IYKO[0x2]
     Offset: '0x1d6'
     Size: '0x2'
     Type: char

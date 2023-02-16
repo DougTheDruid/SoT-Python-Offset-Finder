@@ -6,9 +6,9 @@ BP_Prompt_BuryingItem_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xfb_X42D1[0xfb]
+  - Name: pad0x93_N8ZW8[0x93]
     Offset: '0x120'
-    Size: '0xfb'
+    Size: '0x93'
     Type: char
   - Name: WieldableItemUseEvent
     Offset: '0x120'
@@ -34,7 +34,7 @@ BP_Prompt_BuryingItem_C:
     Offset: '0x228'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6J1MQ[0x7]
+  - Name: pad0x7_JI3Q5[0x7]
     Offset: '0x229'
     Size: '0x7'
     Type: char
@@ -54,7 +54,7 @@ BP_Prompt_BuryingItem_C:
     Offset: '0x281'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_71HRJ[0x6]
+  - Name: pad0x6_UVOG5[0x6]
     Offset: '0x282'
     Size: '0x6'
     Type: char

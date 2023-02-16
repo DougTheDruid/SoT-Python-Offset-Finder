@@ -46,7 +46,7 @@ class ShipPartsDamageTrackerComponent: public ActorComponent
 {
 public:
 	int                                                          IsAnyShipPartDamaged;                              // 0xc8(0x4)
-	char                                                         pad0xc_9W1Y6[0xc];                                 // 0xca(0xc)
+	char                                                         pad0xc_K7C50[0xc];                                 // 0xca(0xc)
 };
 
 
@@ -55,8 +55,8 @@ class ShipRestorationSettings: public DeveloperSettings
 {
 public:
 	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
-	char                                                         pad0x4_MDJTO[0x4];                                 // 0x3c(0x4)
-	char                                                         pad0x10_M73JS[0x10];                               // 0x3e(0x10)
+	char                                                         pad0x4_30M6Y[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x10_UFXOT[0x10];                               // 0x3e(0x10)
 };
 
 

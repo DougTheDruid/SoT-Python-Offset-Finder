@@ -36,7 +36,7 @@ SnapshotWidgetReflectorNode:
     Offset: '0x144'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: pad0x4_M1S6V[0x4]
+  - Name: pad0x4_CQJ0A[0x4]
     Offset: '0x14c'
     Size: '0x4'
     Type: char
@@ -52,7 +52,7 @@ SnapshotWidgetReflectorNode:
     Offset: '0x190'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_UNARS[0x9]
+  - Name: pad0x9_QRI0P[0x9]
     Offset: '0x18f'
     Size: '0x9'
     Type: char
@@ -66,7 +66,7 @@ WidgetReflectorNodeBase:
     Offset: '0x28'
     Size: '0x34'
     Type: Struct Geometry
-  - Name: pad0x4_K8WR4[0x4]
+  - Name: pad0x4_3H10S[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char

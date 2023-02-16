@@ -11,15 +11,15 @@ class BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C: public BP_PromptCoordinator
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfb_LWFGP[0xfb];                               // 0x120(0xfb)
+	char                                                         pad0x93_W6GJY[0x93];                               // 0x120(0x93)
 	Struct ObjectMessagingHandle                                 Handle_CrewEnteredTunnelOfTheDamnedPortalProximity; // 0x120(0x48)
 	Struct PrioritisedPromptWithHandle                           Prompt_BootyWillBeLost;                            // 0x168(0x68)
 	float                                                        PromptDisplayDuration;                             // 0x1d0(0x4)
 	bool                                                         CrewInRadius;                                      // 0x1d4(0x1)
 	bool                                                         PromptOnCooldown;                                  // 0x1d5(0x1)
-	char                                                         pad0x2_A0A67[0x2];                                 // 0x1d6(0x2)
+	char                                                         pad0x2_1MBZ4[0x2];                                 // 0x1d6(0x2)
 	float                                                        PromptDisplayCooldown;                             // 0x1d8(0x4)
-	char                                                         pad0x4_QYJSX[0x4];                                 // 0x1dc(0x4)
+	char                                                         pad0x4_6DU6R[0x4];                                 // 0x1dc(0x4)
 	Class TunnelsOfTheDamnedLootFilterDataAsset*                 LootFilterDataAsset;                               // 0x1e0(0x8)
 };
 

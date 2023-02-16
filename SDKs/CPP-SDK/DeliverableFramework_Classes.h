@@ -31,9 +31,9 @@ public:
 class DeliverableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_LU181[0x10];                               // 0xc8(0x10)
+	char                                                         pad0x10_XH27B[0x10];                               // 0xc8(0x10)
 	Class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
-	char                                                         pad0x18_72F85[0x18];                               // 0xde(0x18)
+	char                                                         pad0x18_20NE9[0x18];                               // 0xde(0x18)
 };
 
 
@@ -41,7 +41,7 @@ public:
 class DeliverableRedirectionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_1725Q[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_JI7BS[0x8];                                 // 0xc8(0x8)
 	Class DeliverableRedirectionContextBase*                     Context;                                           // 0xd0(0x8)
 };
 
@@ -65,7 +65,7 @@ class DeliverableRedirectionCompositeContext: public DeliverableRedirectionConte
 {
 public:
 	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-	char                                                         pad0x38_SKPQ0[0x38];                               // 0x36(0x38)
+	char                                                         pad0x38_USCXP[0x38];                               // 0x36(0x38)
 };
 
 

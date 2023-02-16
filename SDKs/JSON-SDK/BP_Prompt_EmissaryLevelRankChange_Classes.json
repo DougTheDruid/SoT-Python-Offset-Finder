@@ -12,9 +12,9 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0xfc_INEFK[0xfc]",
+        "Name": "pad0x93_VTSAT[0x93]",
         "Type": "char",
-        "Size": "0xfc",
+        "Size": "0x93",
         "Offset": "0x120"
       },
       {
@@ -42,7 +42,7 @@
         "Offset": "0x174"
       },
       {
-        "Name": "pad0x3_3PXZL[0x3]",
+        "Name": "pad0x3_XD5GI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x175"
@@ -60,7 +60,7 @@
         "Offset": "0x180"
       },
       {
-        "Name": "pad0x4_UH8QF[0x4]",
+        "Name": "pad0x4_M1JGI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x184"

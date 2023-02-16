@@ -14,6 +14,22 @@ public:
 };
 
 
+// Size 0x20
+struct ConfigurableStructureInstanceWrapper
+{
+public:
+	Struct UserDefinedStructWithSerialisableValue                Value;                                             // 0x0(0x20)
+};
+
+
+// Size 0x20
+struct UserDefinedStructWithSerialisableValue
+{
+public:
+	Class ScriptStruct*                                          InternalStruct;                                    // 0x0(0x8)
+};
+
+
 // Size 0x28
 struct PlayModeDefiniton
 {
@@ -91,7 +107,7 @@ struct EventTriggerForceFeedback
 public:
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
 	bool                                                         Looping;                                           // 0x8(0x1)
-	char                                                         pad0x3_L4GRF[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_L785N[0x3];                                 // 0x9(0x3)
 	struct FName                                                 Tag;                                               // 0xc(0x8)
 };
 
@@ -107,22 +123,6 @@ public:
 struct EventMeshAssigned
 {
 public:
-};
-
-
-// Size 0x20
-struct UserDefinedStructWithSerialisableValue
-{
-public:
-	Class ScriptStruct*                                          InternalStruct;                                    // 0x0(0x8)
-};
-
-
-// Size 0x20
-struct ConfigurableStructureInstanceWrapper
-{
-public:
-	Struct UserDefinedStructWithSerialisableValue                Value;                                             // 0x0(0x20)
 };
 
 

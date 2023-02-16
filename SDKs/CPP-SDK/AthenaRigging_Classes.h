@@ -13,7 +13,7 @@ public:
 	Class StaticMesh*                                            StaticMesh;                                        // 0x5b8(0x8)
 	TArray<Struct InstancedRopeParams>                           Ropes;                                             // 0x5c0(0x10)
 	int                                                          ShadowLOD;                                         // 0x5d0(0x4)
-	char                                                         pad0xb4_O069N[0xb4];                               // 0x5d2(0xb4)
+	char                                                         pad0xb4_Y92TW[0xb4];                               // 0x5d2(0xb4)
 };
 
 
@@ -22,7 +22,7 @@ class MaterialExpressionRopeParameter: public MaterialExpression
 {
 public:
 	byte                                                         RopeParameterType;                                 // 0x70(0x1)
-	char                                                         pad0x9_TADMF[0x9];                                 // 0x6f(0x9)
+	char                                                         pad0x9_ZYT9H[0x9];                                 // 0x6f(0x9)
 };
 
 
@@ -30,7 +30,7 @@ public:
 class RiggingSystem: public Actor
 {
 public:
-	char                                                         pad0x8_182IA[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_6QUNM[0x8];                                 // 0x3c8(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
 	Class InstancedRopeComponent*                                InstancedRopes;                                    // 0x3d8(0x8)
 	TArray<Struct RiggingSystemLine>                             Lines;                                             // 0x3e0(0x10)
@@ -39,7 +39,7 @@ public:
 	Struct RiggingSystemPulleyData                               Pulleys;                                           // 0x410(0x60)
 	TArray<Struct SocketId>                                      Sockets;                                           // 0x470(0x10)
 	TArray<Float InitialMainRopeLengths>                         InitialMainRopeLengths;                            // 0x480(0x10)
-	char                                                         pad0xa8_Z9LOO[0xa8];                               // 0x48e(0xa8)
+	char                                                         pad0xa8_67TLD[0xa8];                               // 0x48e(0xa8)
 };
 
 
@@ -50,7 +50,7 @@ public:
 	Struct RopeStyleParams                                       RopeStyle;                                         // 0x2e0(0x20)
 	TArray<Struct RiggingSystemLineGroup>                        LineGroups;                                        // 0x300(0x10)
 	Class RiggingSystem*                                         Impl;                                              // 0x310(0x8)
-	char                                                         pad0x18_NKS5I[0x18];                               // 0x316(0x18)
+	char                                                         pad0x18_4US9I[0x18];                               // 0x316(0x18)
 };
 
 

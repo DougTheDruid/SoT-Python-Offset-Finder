@@ -66,7 +66,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_DV05B[0x7]",
+        "Name": "pad0x7_4XJ0R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -250,6 +250,25 @@
       }
     ]
   },
+  "IsStoryActiveConditionBase": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "StoryFlags",
+        "Type": "TArray<Struct StoryFlag>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "IsAllStoryActiveCondition": {
+    "ClassSize": "0x48",
+    "Attributes": []
+  },
+  "IsAnyStoryActiveCondition": {
+    "ClassSize": "0x48",
+    "Attributes": []
+  },
   "StoryInfo": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -275,6 +294,28 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "DuplicateStoriesReceivedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DuplicateStoriesReceived",
+        "Type": "TArray<Str DuplicateStoriesReceived>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StoriesRefreshRequestedTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsForcedRefresh",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

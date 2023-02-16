@@ -7,6 +7,13 @@ ActorLocationPair:
     Size: '0x10'
     Type: Struct StringAssetReference
   ClassSize: '0x30'
+DuplicateStoriesReceivedTelemetryEvent:
+  Attributes:
+  - Name: DuplicateStoriesReceived
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<Str DuplicateStoriesReceived>
+  ClassSize: '0x10'
 InstancedLayerLocation:
   Attributes:
   - Name: ActorWithInstancedLayerComponent
@@ -18,6 +25,19 @@ InstancedLayerLocation:
     Size: '0x8'
     Type: Class LayerActorsDataAsset*
   ClassSize: '0x18'
+IsAllStoryActiveCondition:
+  Attributes: []
+  ClassSize: '0x48'
+IsAnyStoryActiveCondition:
+  Attributes: []
+  ClassSize: '0x48'
+IsStoryActiveConditionBase:
+  Attributes:
+  - Name: StoryFlags
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Struct StoryFlag>
+  ClassSize: '0x48'
 LightingZoneStoryRelatedSettings:
   Attributes:
   - Name: Story
@@ -70,6 +90,13 @@ StoriesChangedTelemetryEvent:
     Size: '0x1'
     Type: bool
   ClassSize: '0x28'
+StoriesRefreshRequestedTelemetryEvent:
+  Attributes:
+  - Name: IsForcedRefresh
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
 StoryClaimableResourcesList:
   Attributes:
   - Name: StoryFlag
@@ -80,7 +107,7 @@ StoryClaimableResourcesList:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_DV05B[0x7]
+  - Name: pad0x7_4XJ0R[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

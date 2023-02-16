@@ -27,7 +27,7 @@ class MediaTimeStampInfo: public Object
 {
 public:
 	Struct Timespan                                              Time;                                              // 0x28(0x8)
-	char                                                         pad0x18_KSNMV[0x18];                               // 0x2e(0x18)
+	char                                                         pad0x18_BMHIQ[0x18];                               // 0x2e(0x18)
 };
 
 
@@ -35,26 +35,26 @@ public:
 class MediaPlayer: public Object
 {
 public:
-	char                                                         pad0x80_XUR2X[0x80];                               // 0x28(0x80)
+	char                                                         pad0x80_OPZWO[0x80];                               // 0x28(0x80)
 	Struct Timespan                                              CacheAhead;                                        // 0xa8(0x8)
 	Struct Timespan                                              CacheBehind;                                       // 0xb0(0x8)
 	Struct Timespan                                              CacheBehindGame;                                   // 0xb8(0x8)
 	bool                                                         NativeAudioOut;                                    // 0xc0(0x1)
 	bool                                                         PlayOnOpen;                                        // 0xc1(0x1)
-	char                                                         pad0x2_0K2E4[0x2];                                 // 0xc2(0x2)
+	char                                                         pad0x2_AES2P[0x2];                                 // 0xc2(0x2)
 	bool                                                         Shuffle;                                           // 0xc4(0x1)
 	bool                                                         Loop;                                              // 0xc4(0x1)
-	char                                                         pad0x3_LKIP8[0x3];                                 // 0xc5(0x3)
+	char                                                         pad0x3_BUX97[0x3];                                 // 0xc5(0x3)
 	Class MediaPlaylist*                                         Playlist;                                          // 0xc8(0x8)
 	int                                                          PlaylistIndex;                                     // 0xd0(0x4)
-	char                                                         pad0x4_VT9W5[0x4];                                 // 0xd4(0x4)
+	char                                                         pad0x4_L7VJJ[0x4];                                 // 0xd4(0x4)
 	Struct Timespan                                              TimeDelay;                                         // 0xd8(0x8)
 	float                                                        HorizontalFieldOfView;                             // 0xe0(0x4)
 	float                                                        VerticalFieldOfView;                               // 0xe4(0x4)
 	Struct Rotator                                               ViewRotation;                                      // 0xe8(0xc)
-	char                                                         pad0x64_EST5V[0x64];                               // 0xf4(0x64)
+	char                                                         pad0x64_5PWPK[0x64];                               // 0xf4(0x64)
 	Struct Guid                                                  PlayerGuid;                                        // 0x158(0x10)
-	char                                                         pad0x28_HGMTI[0x28];                               // 0x166(0x28)
+	char                                                         pad0x28_E8A27[0x28];                               // 0x166(0x28)
 };
 
 
@@ -87,7 +87,7 @@ class FileMediaSource: public BaseMediaSource
 public:
 	Struct FString                                               FilePath;                                          // 0x88(0x10)
 	bool                                                         PrecacheFile;                                      // 0x98(0x1)
-	char                                                         pad0x19_1XRVD[0x19];                               // 0x97(0x19)
+	char                                                         pad0x19_M3WUF[0x19];                               // 0x97(0x19)
 };
 
 
@@ -104,7 +104,7 @@ class TimeSynchronizableMediaSource: public BaseMediaSource
 {
 public:
 	bool                                                         bUseTimeSynchronization;                           // 0x88(0x1)
-	char                                                         pad0x3_6YP1S[0x3];                                 // 0x89(0x3)
+	char                                                         pad0x3_RD06Q[0x3];                                 // 0x89(0x3)
 	int                                                          FrameDelay;                                        // 0x8c(0x4)
 	double                                                       TimeDelay;                                         // 0x90(0x8)
 };
@@ -125,7 +125,7 @@ public:
 	byte                                                         AddressX;                                          // 0x138(0x1)
 	byte                                                         AddressY;                                          // 0x139(0x1)
 	bool                                                         AutoClear;                                         // 0x13a(0x1)
-	char                                                         pad0x1_PCB8R[0x1];                                 // 0x13b(0x1)
+	char                                                         pad0x1_9B6SE[0x1];                                 // 0x13b(0x1)
 	Struct LinearColor                                           ClearColor;                                        // 0x13c(0x10)
 	bool                                                         EnableGenMips;                                     // 0x14c(0x1)
 	byte                                                         NumMips;                                           // 0x14d(0x1)
@@ -133,9 +133,9 @@ public:
 	byte                                                         OutputFormat;                                      // 0x14f(0x1)
 	float                                                        CurrentAspectRatio;                                // 0x150(0x4)
 	byte                                                         CurrentOrientation;                                // 0x154(0x1)
-	char                                                         pad0x3_7QIVA[0x3];                                 // 0x155(0x3)
+	char                                                         pad0x3_W1973[0x3];                                 // 0x155(0x3)
 	Class MediaPlayer*                                           MediaPlayer;                                       // 0x158(0x8)
-	char                                                         pad0xd8_LKIVN[0xd8];                               // 0x15e(0xd8)
+	char                                                         pad0xd8_YMF3R[0xd8];                               // 0x15e(0xd8)
 };
 
 

@@ -1,63 +1,15 @@
 {
   "BP_tls_tankard_yr1_leg_01_a_ItemInfo_C": {
-    "Super": "OffTopSplineComponent",
-    "FullSize": "-0x1",
-    "InheritedSize": "0x0",
-    "ClassSize": "-0x1",
+    "Super": "ItemInfo",
+    "FullSize": "0x518",
+    "InheritedSize": "0x510",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x440_2V3HR[0x440]",
-        "Type": "char",
-        "Size": "0x440",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OffTopSplineComponent",
-        "Type": "Class SplineComponent*",
+        "Name": "DefaultSceneRoot",
+        "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "MaxDistFromLadderTopToClassifyAsTopDocking",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "InteractOffset",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0x44c"
-      },
-      {
-        "Name": "LadderDefinition",
-        "Type": "Struct LadderDefinition",
-        "Size": "0x1c",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "pad0x4_DR3LT[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x474"
-      },
-      {
-        "Name": "LadderPhysicsMaterial",
-        "Type": "Class PhysicalMaterial*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "Phrases",
-        "Type": "Class PhrasesRadialDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "RepeatExecutionThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x488"
+        "Offset": "0x510"
       }
     ]
   },

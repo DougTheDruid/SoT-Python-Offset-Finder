@@ -42,7 +42,7 @@ BP_InteractableShipRailingLight_C:
     Offset: '0x718'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AEKZQ[0x7]
+  - Name: pad0x7_ZRYFD[0x7]
     Offset: '0x719'
     Size: '0x7'
     Type: char

@@ -25,7 +25,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x10_N2MU3[0x10]",
+        "Name": "pad0x10_0G25C[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe0"
@@ -37,7 +37,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x10_R3TEH[0x10]",
+        "Name": "pad0x10_ME79B[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x100"
@@ -49,7 +49,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x58_FSM2H[0x58]",
+        "Name": "pad0x58_PLFGF[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x11e"
@@ -79,12 +79,12 @@
   },
   "EmissaryFlotsamItemInfo": {
     "Super": "BootyItemInfo",
-    "FullSize": "0x768",
+    "FullSize": "0x770",
     "InheritedSize": "0x728",
-    "ClassSize": "0x40",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_OD5WA[0x8]",
+        "Name": "pad0x8_AA977[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x728"
@@ -102,16 +102,22 @@
         "Offset": "0x748"
       },
       {
-        "Name": "FlotsamCanBeDuplicated",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "PermittedFlotsamPurchaseCompany",
+        "Type": "class",
+        "Size": "0x8",
         "Offset": "0x760"
       },
       {
-        "Name": "pad0x9_BZ29S[0x9]",
+        "Name": "FlotsamCanBeDuplicated",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "pad0x9_886F8[0x9]",
         "Type": "char",
         "Size": "0x9",
-        "Offset": "0x75f"
+        "Offset": "0x767"
       }
     ]
   },
@@ -129,7 +135,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x10_IBZ02[0x10]",
+        "Name": "pad0x10_2NHMJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
@@ -147,10 +153,16 @@
         "Offset": "0xd9"
       },
       {
-        "Name": "pad0x18_W5KWQ[0x18]",
+        "Name": "HonorBattleFlag",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xda"
+      },
+      {
+        "Name": "pad0x17_WVOMB[0x17]",
         "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xd8"
+        "Size": "0x17",
+        "Offset": "0xd9"
       }
     ]
   },
@@ -179,7 +191,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x48_QW2DZ[0x48]",
+        "Name": "pad0x48_9EMA5[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x5e"
@@ -193,7 +205,7 @@
     "ClassSize": "0x350",
     "Attributes": [
       {
-        "Name": "pad0xb8_NPT3U[0xb8]",
+        "Name": "pad0xb8_Q6KBB[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x3c8"
@@ -211,7 +223,7 @@
         "Offset": "0x488"
       },
       {
-        "Name": "pad0x298_9P7AW[0x298]",
+        "Name": "pad0x298_Z8B7J[0x298]",
         "Type": "char",
         "Size": "0x298",
         "Offset": "0x48e"
@@ -237,7 +249,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_D7HCX[0x7]",
+        "Name": "pad0x7_0W8XW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -275,7 +287,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_NDU79[0x8]",
+        "Name": "pad0x8_Q4482[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -287,7 +299,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_6HVDX[0x7]",
+        "Name": "pad0x7_I9TVD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -299,7 +311,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x10_0NS1G[0x10]",
+        "Name": "pad0x10_B7E7P[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe8"
@@ -329,7 +341,7 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x3_2973C[0x3]",
+        "Name": "pad0x3_PVK17[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x109"
@@ -341,7 +353,7 @@
         "Offset": "0x10c"
       },
       {
-        "Name": "pad0x14_79DCS[0x14]",
+        "Name": "pad0x14_JKJT8[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x112"
@@ -388,7 +400,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_SP456[0x4]",
+        "Name": "pad0x4_2J80I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -438,7 +450,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x24_DQJF9[0x24]",
+        "Name": "pad0x24_TULQP[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0x332"
@@ -458,7 +470,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x48_NGGJW[0x48]",
+        "Name": "pad0x48_KBG0U[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x38"
@@ -476,7 +488,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x20_D07MD[0x20]",
+        "Name": "pad0x20_GTQXP[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc0"
@@ -494,7 +506,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x20_WF1XM[0x20]",
+        "Name": "pad0x20_DAYCU[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xf8"
@@ -506,7 +518,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x18_H4LRA[0x18]",
+        "Name": "pad0x18_ET4UG[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x11e"
@@ -568,7 +580,7 @@
         "Offset": "0x2b0"
       },
       {
-        "Name": "pad0x88_UOXN9[0x88]",
+        "Name": "pad0x88_4UYVF[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x2e6"
@@ -618,7 +630,7 @@
         "Offset": "0x240"
       },
       {
-        "Name": "pad0x88_8UMFR[0x88]",
+        "Name": "pad0x88_P0786[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x276"
@@ -627,47 +639,65 @@
   },
   "EmissaryVoyageVoteValidatorBase": {
     "Super": "VoteValidatorInlineBase",
-    "FullSize": "0xc0",
+    "FullSize": "0xd0",
     "InheritedSize": "0x30",
-    "ClassSize": "0x90",
+    "ClassSize": "0xa0",
     "Attributes": [
+      {
+        "Name": "ValidatorType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_6M5LA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      },
       {
         "Name": "RequiredEntitlement",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x30"
+        "Offset": "0x38"
       },
       {
-        "Name": "pad0x78_4JPDB[0x78]",
+        "Name": "IsValidatorTypeEntitlement",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x7f_2MH0F[0x7f]",
         "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x38"
+        "Size": "0x7f",
+        "Offset": "0x41"
       },
       {
         "Name": "TargetCompany",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xb0"
+        "Offset": "0xc0"
       },
       {
         "Name": "Consumer",
         "Type": "Class EmissaryVoyageInlineVoteConsumerBase*",
         "Size": "0x8",
-        "Offset": "0xb8"
+        "Offset": "0xc8"
       }
     ]
   },
   "StartEmissaryVoyageInlineVoteValidator": {
     "Super": "EmissaryVoyageVoteValidatorBase",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xc0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "StopEmissaryVoyageInlineVoteValidator": {
     "Super": "EmissaryVoyageVoteValidatorBase",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xc0",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xd0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -697,7 +727,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x9_DN3H3[0x9]",
+        "Name": "pad0x9_DLF82[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x2f"

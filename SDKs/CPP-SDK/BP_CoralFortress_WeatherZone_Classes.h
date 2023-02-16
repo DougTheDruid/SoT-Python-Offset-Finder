@@ -28,11 +28,11 @@ public:
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x440(0x8)
 	float                                                        RainBlend_Blend_1B3587E7420F9A76FB06A6A63DE0B159;  // 0x448(0x4)
 	byte                                                         RainBlend__Direction_1B3587E7420F9A76FB06A6A63DE0B159; // 0x44c(0x1)
-	char                                                         pad0x3_54HO1[0x3];                                 // 0x44d(0x3)
+	char                                                         pad0x3_D1HND[0x3];                                 // 0x44d(0x3)
 	Class TimelineComponent*                                     RainBlend;                                         // 0x450(0x8)
 	TArray<class MaterialInstanceDynamic*>                       RainDynMaterials;                                  // 0x458(0x10)
 	float                                                        Opacity;                                           // 0x468(0x4)
-	char                                                         pad0x4_4PCBA[0x4];                                 // 0x46c(0x4)
+	char                                                         pad0x4_J7593[0x4];                                 // 0x46c(0x4)
 	Struct WwiseEmitterCreationParams                            CreationParams;                                    // 0x470(0x28)
 	Struct WwiseEmitter                                          WwiseEmitter;                                      // 0x498(0x20)
 };

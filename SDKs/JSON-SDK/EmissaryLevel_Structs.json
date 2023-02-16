@@ -79,7 +79,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_94IJK[0x4]",
+        "Name": "pad0x4_QCL25[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -185,7 +185,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_FT49D[0x4]",
+        "Name": "pad0x4_KUKX1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -228,7 +228,7 @@
     ]
   },
   "EmissaryLevelData": {
-    "ClassSize": "0x90",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
         "Name": "LevelTarget",
@@ -237,7 +237,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_U5RY7[0x4]",
+        "Name": "pad0x4_7TTXT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -252,31 +252,31 @@
         "Name": "EmissaryDeactivationReward",
         "Type": "Struct RewardId",
         "Size": "0x8",
-        "Offset": "0x48"
+        "Offset": "0x68"
       },
       {
         "Name": "StatsToFireOnEmissaryLevelReached",
         "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x70"
       },
       {
         "Name": "StatsToFireOnEmissaryDeactivated",
         "Type": "TArray<Struct PlayerStat>",
         "Size": "0x10",
-        "Offset": "0x60"
+        "Offset": "0x80"
       },
       {
         "Name": "TreasureSoldNotificationFlag",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x70"
+        "Offset": "0x90"
       },
       {
         "Name": "EmissaryFlagTextureReference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x80"
+        "Offset": "0xa0"
       }
     ]
   },
@@ -483,7 +483,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_I036G[0x3]",
+        "Name": "pad0x3_AI0V0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -506,7 +506,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_X37HN[0x3]",
+        "Name": "pad0x3_LJRCQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -541,7 +541,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_XZTFD[0x1]",
+        "Name": "pad0x1_Y0QPF[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -581,7 +581,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_WU76M[0x4]",
+        "Name": "pad0x4_JFOG7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -971,7 +971,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_CPMUA[0x3]",
+        "Name": "pad0x3_EBU92[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -1035,7 +1035,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_CDO2D[0x3]",
+        "Name": "pad0x3_QWD18[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -1153,7 +1153,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_EGPJC[0x3]",
+        "Name": "pad0x3_JOTB3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"

@@ -17,9 +17,9 @@ public:
 class ItemQualityComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_I0CZJ[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_FFU9C[0x8];                                 // 0xc8(0x8)
 	byte                                                         ItemQualityLevel;                                  // 0xd0(0x1)
-	char                                                         pad0x7_5JINU[0x7];                                 // 0xd1(0x7)
+	char                                                         pad0x7_OR2W8[0x7];                                 // 0xd1(0x7)
 	TArray<Struct PerComanyItemQualityEntry>                     CompanySpecificItemQualityLevels;                  // 0xd8(0x10)
 	TArray<Struct PerComanyComplexItemQualityEntry>              CompanySpecificComplexItemQualityLevels;           // 0xe8(0x10)
 	TArray<Struct PerComanyComplexItemQualityEntry>              CompanySpecificComplexItemQualityLevelsHandin;     // 0xf8(0x10)

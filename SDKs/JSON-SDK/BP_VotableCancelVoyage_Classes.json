@@ -30,7 +30,7 @@
         "Offset": "0x510"
       },
       {
-        "Name": "pad0x4_UMWPP[0x4]",
+        "Name": "pad0x4_386D7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x514"
@@ -43,7 +43,7 @@
       },
       {
         "Name": "DaggerPositions",
-        "Type": "TArray<Struct Transform>",
+        "Type": "TArray<Struct StaticMeshComponent>",
         "Size": "0x10",
         "Offset": "0x520"
       }

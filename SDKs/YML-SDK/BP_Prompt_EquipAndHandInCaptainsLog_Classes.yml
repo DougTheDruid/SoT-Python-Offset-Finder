@@ -6,9 +6,9 @@ BP_Prompt_EquipAndHandInCaptainsLog_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xfc_QCJOT[0xfc]
+  - Name: pad0x93_HRDEN[0x93]
     Offset: '0x120'
-    Size: '0xfc'
+    Size: '0x93'
     Type: char
   - Name: EventObjectWieldedHandler
     Offset: '0x120'
@@ -26,7 +26,7 @@ BP_Prompt_EquipAndHandInCaptainsLog_C:
     Offset: '0x1d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_I0DAD[0x4]
+  - Name: pad0x4_I24GE[0x4]
     Offset: '0x1dc'
     Size: '0x4'
     Type: char

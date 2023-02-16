@@ -14,9 +14,9 @@ public:
 	TArray<class StaticMeshComponent*>                           Tokens;                                            // 0x4f8(0x10)
 	Class StaticMesh*                                            Token Asset;                                       // 0x508(0x8)
 	float                                                        Show Token Animation Time;                         // 0x510(0x4)
-	char                                                         pad0x4_UHEP0[0x4];                                 // 0x514(0x4)
+	char                                                         pad0x4_Q4CC9[0x4];                                 // 0x514(0x4)
 	Class MaterialInterface*                                     Token Material;                                    // 0x518(0x8)
-	TArray<Struct Transform>                                     DaggerPositions;                                   // 0x520(0x10)
+	TArray<Struct StaticMeshComponent>                           DaggerPositions;                                   // 0x520(0x10)
 };
 
 

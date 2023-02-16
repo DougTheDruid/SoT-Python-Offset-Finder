@@ -40,7 +40,7 @@ struct PromptEvaluation
 {
 public:
 	byte                                                         PromptType;                                        // 0x0(0x1)
-	char                                                         pad0x7_5EVFS[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_J0PWY[0x7];                                 // 0x1(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x8(0x68)
 };
 

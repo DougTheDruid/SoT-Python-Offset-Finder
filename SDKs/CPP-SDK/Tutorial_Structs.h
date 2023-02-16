@@ -33,6 +33,14 @@ public:
 };
 
 
+// Size 0x30
+struct HasTutorialStarterBegunCondition
+{
+public:
+	byte                                                         TutorialStarterType;                               // 0x28(0x1)
+};
+
+
 // Size 0x28
 struct TutorialStepEndedTelemetryEvent
 {

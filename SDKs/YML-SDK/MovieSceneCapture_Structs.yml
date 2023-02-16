@@ -27,7 +27,7 @@ MovieSceneCaptureSettings:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1S6S8[0x7]
+  - Name: pad0x7_C7IAE[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -47,7 +47,7 @@ MovieSceneCaptureSettings:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_UKB8F[0x2]
+  - Name: pad0x2_Q15YE[0x2]
     Offset: '0x32'
     Size: '0x2'
     Type: char
@@ -59,7 +59,7 @@ MovieSceneCaptureSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BBW74[0x3]
+  - Name: pad0x3_59ER2[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char

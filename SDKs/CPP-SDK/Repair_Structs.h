@@ -30,7 +30,7 @@ struct EventRepairableObjectRepairEndedEvent
 public:
 	Class Object*                                                Repairable;                                        // 0x0(0x8)
 	Struct Vector                                                Position;                                          // 0x8(0xc)
-	char                                                         pad0x4_15D5R[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_JRWDI[0x4];                                 // 0x14(0x4)
 	Class Actor*                                                 RepairerActor;                                     // 0x18(0x8)
 	float                                                        RepairPercentage;                                  // 0x20(0x4)
 };

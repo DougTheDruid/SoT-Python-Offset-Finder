@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_SmallShip_StandardHull_Art_Interior_Lower_Deck_C: public Actor
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x3c8(0x8)
-	Class ChildActorComponent*                                   BP_CookingPot;                                     // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   shp_kitchen_extractor_01_a;                        // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   shp_cooker_02_a;                                   // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   shp_small_lower_deck_rope_01_a;                    // 0x3e8(0x8)
-	Class StaticMeshComponent*                                   shp_small_lower_deck_01_a;                         // 0x3f0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3f8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x3c8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3e0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3e8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3f0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3f8(0x8)
 };
 
 

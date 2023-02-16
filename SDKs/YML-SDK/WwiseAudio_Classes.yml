@@ -44,7 +44,7 @@ MovieSceneAkAudioEventTrack:
   Super: MovieSceneAkTrack
 MovieSceneAkAudioRTPCSection:
   Attributes:
-  - Name: pad0x8_XKTMA[0x8]
+  - Name: pad0x8_SMSWQ[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -76,7 +76,7 @@ MovieSceneAkTrack:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_63S4Y[0x9]
+  - Name: pad0x9_6S6KQ[0x9]
     Offset: '0x97'
     Size: '0x9'
     Type: char
@@ -100,7 +100,7 @@ MultiEmitterRootComponent:
   Super: SceneComponent
 WwiseAudioSettings:
   Attributes:
-  - Name: pad0xc0_VOF5B[0xc0]
+  - Name: pad0xc0_UZKPH[0xc0]
     Offset: '0x28'
     Size: '0xc0'
     Type: char
@@ -108,7 +108,7 @@ WwiseAudioSettings:
     Offset: '0xe8'
     Size: '0x64'
     Type: Struct WwiseAudioReverbPresets
-  - Name: pad0x4_CX7HX[0x4]
+  - Name: pad0x4_K3QTG[0x4]
     Offset: '0x14c'
     Size: '0x4'
     Type: char
@@ -180,64 +180,72 @@ WwiseAudioSettings:
     Offset: '0x318'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: PauseEventStartInstance
+  - Name: NonShippingAudioRootAssetPath
     Offset: '0x328'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: PauseEventReleaseInstance
-    Offset: '0x330'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: StopAllEventInstance
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: PauseEventStartInstance
     Offset: '0x338'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: WwiseMediaSoundComponentEventNameInstance
+  - Name: PauseEventReleaseInstance
     Offset: '0x340'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: AnimNotifyPoolInstance
+  - Name: StopAllEventInstance
     Offset: '0x348'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
-  - Name: pad0x50_9SX1O[0x50]
+    Type: Class WwiseEvent*
+  - Name: WwiseMediaSoundComponentEventNameInstance
     Offset: '0x350'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: AnimNotifyPoolInstance
+    Offset: '0x358'
+    Size: '0x8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: pad0x50_Y281N[0x50]
+    Offset: '0x360'
     Size: '0x50'
     Type: char
   - Name: EventsToPlayOnFrontendStartInstance
-    Offset: '0x3a0'
-    Size: '0x10'
-    Type: TArray<class WwiseEvent*>
-  - Name: EventsToPlayOnFrontendEndInstance
     Offset: '0x3b0'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  - Name: EventsToPlayOnStartEngagementInstance
+  - Name: EventsToPlayOnFrontendEndInstance
     Offset: '0x3c0'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  - Name: EventsToPlayOnEndEngagementInstance
+  - Name: EventsToPlayOnStartEngagementInstance
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  - Name: EventsToPlayOnLoadingStartInstance
+  - Name: EventsToPlayOnEndEngagementInstance
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  - Name: EventsToPlayOnLoadingEndInstance
+  - Name: EventsToPlayOnLoadingStartInstance
     Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  - Name: EventsToPlayOnFrontEndOrLoadingStartInstance
+  - Name: EventsToPlayOnLoadingEndInstance
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  - Name: EventsToPlayOnFrontEndOrLoadingEndInstance
+  - Name: EventsToPlayOnFrontEndOrLoadingStartInstance
     Offset: '0x410'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  ClassSize: '0x3f8'
-  FullSize: '0x420'
+  - Name: EventsToPlayOnFrontEndOrLoadingEndInstance
+    Offset: '0x420'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: NonShippingAudioRootAsset
+    Offset: '0x430'
+    Size: '0x8'
+    Type: Class WwiseNonShippingAudioRootAsset*
+  ClassSize: '0x410'
+  FullSize: '0x438'
   InheritedSize: '0x28'
   Super: Object
 WwiseBank:
@@ -246,7 +254,7 @@ WwiseBank:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct FString
-  - Name: pad0x50_XS4CK[0x50]
+  - Name: pad0x50_53GXL[0x50]
     Offset: '0x36'
     Size: '0x50'
     Type: char
@@ -292,7 +300,7 @@ WwiseEvent:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KJGOZ[0x3]
+  - Name: pad0x3_0NV52[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -316,7 +324,7 @@ WwiseEvent:
     Offset: '0x45'
     Size: '0x1'
     Type: bool
-  - Name: pad0xc_C9EHM[0xc]
+  - Name: pad0xc_35J4U[0xc]
     Offset: '0x44'
     Size: '0xc'
     Type: char
@@ -380,6 +388,34 @@ WwiseMediaManager:
   FullSize: '0x78'
   InheritedSize: '0x28'
   Super: Object
+WwiseNonShippingAudioAsset:
+  Attributes:
+  - Name: CodeName
+    Offset: '0x28'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: UAssetRelativePath
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: StreamRelativePath
+    Offset: '0x48'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x30'
+  FullSize: '0x58'
+  InheritedSize: '0x28'
+  Super: DataAsset
+WwiseNonShippingAudioRootAsset:
+  Attributes:
+  - Name: NonShippingAudioAssets
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class WwiseNonShippingAudioAsset*>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
 WwisePersistentContentStore:
   Attributes:
   - Name: PersistentlyLoadedBanks

@@ -6,19 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x1 (Full Size[-0x1] - InheritedSize[0x0]
-class BP_tls_tankard_yr1_leg_01_a_ItemInfo_C: public OffTopSplineComponent
+// Size 0x8 (Full Size[0x518] - InheritedSize[0x510]
+class BP_tls_tankard_yr1_leg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
-	char                                                         pad0x440_2V3HR[0x440];                             // 0x0(0x440)
-	Class SplineComponent*                                       OffTopSplineComponent;                             // 0x440(0x8)
-	float                                                        MaxDistFromLadderTopToClassifyAsTopDocking;        // 0x448(0x4)
-	Struct Vector                                                InteractOffset;                                    // 0x44c(0xc)
-	Struct LadderDefinition                                      LadderDefinition;                                  // 0x458(0x1c)
-	char                                                         pad0x4_DR3LT[0x4];                                 // 0x474(0x4)
-	Class PhysicalMaterial*                                      LadderPhysicsMaterial;                             // 0x478(0x8)
-	Class PhrasesRadialDataAsset*                                Phrases;                                           // 0x480(0x8)
-	float                                                        RepeatExecutionThreshold;                          // 0x488(0x4)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
 };
 
 

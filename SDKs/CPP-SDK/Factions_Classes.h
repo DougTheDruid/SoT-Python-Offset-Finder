@@ -48,11 +48,11 @@ public:
 	Class CurveFloat*                                            FlipCurve;                                         // 0x620(0x8)
 	class                                                        FlippedFaction;                                    // 0x628(0x8)
 	float                                                        FactionJoinedLerpDuration;                         // 0x630(0x4)
-	char                                                         pad0x204_S4KNQ[0x204];                             // 0x634(0x204)
+	char                                                         pad0x204_P77JA[0x204];                             // 0x634(0x204)
 	Struct Guid                                                  OwningShipCrewId;                                  // 0x838(0x10)
 	int                                                          OwningShipCrewStreak;                              // 0x848(0x4)
 	bool                                                         ServerTargetFlipped;                               // 0x84c(0x1)
-	char                                                         pad0x5_G2UQL[0x5];                                 // 0x84b(0x5)
+	char                                                         pad0x5_DC03M[0x5];                                 // 0x84b(0x5)
 };
 
 
@@ -62,7 +62,7 @@ class FactionInteractionVoteComponent: public InlineVotingInteractionComponent
 public:
 	float                                                        TurnHourglassInteractionHoldTime;                  // 0x150(0x4)
 	int                                                          WaitTimeSimilarityThresholdSeconds;                // 0x154(0x4)
-	char                                                         pad0x50_MRW8R[0x50];                               // 0x156(0x50)
+	char                                                         pad0x50_O0EO1[0x50];                               // 0x156(0x50)
 };
 
 
@@ -78,14 +78,14 @@ public:
 class FactionOutpostVoteInteractionActor: public Actor
 {
 public:
-	char                                                         pad0x10_GMUZS[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_0C0RC[0x10];                               // 0x3c8(0x10)
 	float                                                        FadeDuration;                                      // 0x3d8(0x4)
-	char                                                         pad0x4_UN67G[0x4];                                 // 0x3dc(0x4)
+	char                                                         pad0x4_FRAGF[0x4];                                 // 0x3dc(0x4)
 	Struct FactionDisplayInfo                                    FactionInactiveInfo;                               // 0x3e0(0xa0)
 	Struct FactionDisplayInfo                                    FactionActiveInfo;                                 // 0x480(0xa0)
-	char                                                         pad0x18_OWZ5K[0x18];                               // 0x520(0x18)
+	char                                                         pad0x18_45MJN[0x18];                               // 0x520(0x18)
 	Struct FactionRequest                                        FactionActiveInfoPtr;                              // 0x538(0x20)
-	char                                                         pad0xe0_W8O31[0xe0];                               // 0x556(0xe0)
+	char                                                         pad0xe0_WINQT[0xe0];                               // 0x556(0xe0)
 };
 
 
@@ -93,13 +93,13 @@ public:
 class FactionParticleComponent: public ParticleSystemComponent
 {
 public:
-	char                                                         pad0x148_T69X1[0x148];                             // 0x8b0(0x148)
+	char                                                         pad0x148_0EFWH[0x148];                             // 0x8b0(0x148)
 	class                                                        Faction;                                           // 0x9f8(0x8)
 	class                                                        JoinedFaction;                                     // 0xa00(0x8)
 	Struct Guid                                                  OwningShipCrewId;                                  // 0xa08(0x10)
 	int                                                          OwningShipCrewStreak;                              // 0xa18(0x4)
 	bool                                                         ServerMigrationEnded;                              // 0xa1c(0x1)
-	char                                                         pad0x5_3248P[0x5];                                 // 0xa1b(0x5)
+	char                                                         pad0x5_2R4BT[0x5];                                 // 0xa1b(0x5)
 };
 
 
@@ -108,7 +108,7 @@ class FactionServiceDebugRepActor: public Actor
 {
 public:
 	bool                                                         bDebugEnabled;                                     // 0x3c8(0x1)
-	char                                                         pad0x7_S28MH[0x7];                                 // 0x3c9(0x7)
+	char                                                         pad0x7_LFIUS[0x7];                                 // 0x3c9(0x7)
 	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x3d0(0x10)
 	Class FactionService*                                        FactionService;                                    // 0x3e0(0x8)
 };
@@ -118,18 +118,18 @@ public:
 class FactionService: public Actor
 {
 public:
-	char                                                         pad0x10_UF3UO[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_L83UJ[0x10];                               // 0x3c8(0x10)
 	Class FactionSettingsAsset*                                  Settings;                                          // 0x3d8(0x8)
 	Class FactionLootLevelRewardsAsset*                          LootLevelRewardsAsset;                             // 0x3e0(0x8)
-	char                                                         pad0xc0_0N5DI[0xc0];                               // 0x3e8(0xc0)
+	char                                                         pad0xc0_5MQYU[0xc0];                               // 0x3e8(0xc0)
 	TArray<Struct CompanyFactionAlignment>                       OpposingFactionsAndCompanies;                      // 0x4a8(0x10)
 	TArray<Struct DefenderLootLevelThreshold>                    DefenderLootLevelThresholds;                       // 0x4b8(0x10)
 	TArray<Struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x4c8(0x10)
 	TArray<Struct CrewFactionEntry>                              FactionAlignedCrews;                               // 0x4d8(0x10)
 	TArray<Struct FactionWaitTimesData>                          MatchmakingWaitTimes;                              // 0x4e8(0x10)
-	char                                                         pad0x120_4WGWV[0x120];                             // 0x4f8(0x120)
+	char                                                         pad0x120_IQ66E[0x120];                             // 0x4f8(0x120)
 	Class FactionServiceDebugRepActor*                           DebugRepActor;                                     // 0x618(0x8)
-	char                                                         pad0x30_2SI4K[0x30];                               // 0x61e(0x30)
+	char                                                         pad0x30_XA0II[0x30];                               // 0x61e(0x30)
 };
 
 
@@ -150,7 +150,7 @@ public:
 	Class WwiseEvent*                                            Levelup;                                           // 0xf8(0x8)
 	struct FName                                                 LevelupSwitchGroup;                                // 0x100(0x8)
 	TArray<Struct FName>                                         LevelupSwitchValues;                               // 0x108(0x10)
-	char                                                         pad0x100_WZYSU[0x100];                             // 0x116(0x100)
+	char                                                         pad0x100_BLKYT[0x100];                             // 0x116(0x100)
 };
 
 
@@ -158,13 +158,13 @@ public:
 class FactionVoteConsumerBase: public VoteConsumerInlineBase
 {
 public:
-	char                                                         pad0x10_6M67G[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_9UCHA[0x10];                               // 0x30(0x10)
 	Class FactionVoteValidatorBase*                              Validator;                                         // 0x40(0x8)
-	char                                                         pad0x48_9WBF5[0x48];                               // 0x48(0x48)
+	char                                                         pad0x48_6AP0F[0x48];                               // 0x48(0x48)
 	Class Actor*                                                 OwningActor;                                       // 0x90(0x8)
 	TArray<Struct CinematicFactionEvent>                         FactionBannerData;                                 // 0x98(0x10)
 	TArray<Struct CrewMemberVotes>                               Votes;                                             // 0xa8(0x10)
-	char                                                         pad0x38_DJ3EA[0x38];                               // 0xb6(0x38)
+	char                                                         pad0x38_ECA5T[0x38];                               // 0xb6(0x38)
 };
 
 
@@ -207,14 +207,14 @@ public:
 class FactionVoteInteractionActor: public Actor
 {
 public:
-	char                                                         pad0x10_QK9SZ[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_VIP7D[0x10];                               // 0x3c8(0x10)
 	float                                                        FadeDuration;                                      // 0x3d8(0x4)
-	char                                                         pad0x4_46W6K[0x4];                                 // 0x3dc(0x4)
+	char                                                         pad0x4_N7CW7[0x4];                                 // 0x3dc(0x4)
 	TArray<Struct FactionDisplayInfo>                            NoFactionInfos;                                    // 0x3e0(0x10)
 	TArray<Struct FactionDisplayInfo>                            FactionInfos;                                      // 0x3f0(0x10)
 	TArray<Struct FactionRequest>                                NoFactionInfoPtrs;                                 // 0x400(0x10)
 	TArray<Struct FactionRequest>                                FactionInfoPtrs;                                   // 0x410(0x10)
-	char                                                         pad0xc0_UV1XE[0xc0];                               // 0x41e(0xc0)
+	char                                                         pad0xc0_GL990[0xc0];                               // 0x41e(0xc0)
 };
 
 
@@ -224,11 +224,11 @@ class FactionVoteValidatorBase: public VoteValidatorInlineBase
 public:
 	TArray<Class TargetCompanies>                                TargetCompanies;                                   // 0x30(0x10)
 	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
-	char                                                         pad0x8c_KB83W[0x8c];                               // 0x44(0x8c)
+	char                                                         pad0x8c_SC518[0x8c];                               // 0x44(0x8c)
 	Class FactionVoteConsumerBase*                               Consumer;                                          // 0xd0(0x8)
 	int                                                          CurrentCompany;                                    // 0xd8(0x4)
 	float                                                        FlipTime;                                          // 0xdc(0x4)
-	char                                                         pad0x8_1K4H3[0x8];                                 // 0xe0(0x8)
+	char                                                         pad0x8_SDNBN[0x8];                                 // 0xe0(0x8)
 	Class Actor*                                                 OwningActor;                                       // 0xe8(0x8)
 };
 
@@ -253,11 +253,11 @@ class IsInFactionStatCondition: public TargetedStatCondition
 public:
 	bool                                                         CheckOwnerFaction;                                 // 0x30(0x1)
 	bool                                                         RequiresOwnerMaxStreakLevel;                       // 0x31(0x1)
-	char                                                         pad0x6_3S3WW[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_T3FZJ[0x6];                                 // 0x32(0x6)
 	class                                                        RequiredOwnerFaction;                              // 0x38(0x8)
 	bool                                                         CheckTargetFaction;                                // 0x40(0x1)
 	bool                                                         RequiresTargetMaxStreakLevel;                      // 0x41(0x1)
-	char                                                         pad0x6_MR06C[0x6];                                 // 0x42(0x6)
+	char                                                         pad0x6_LGV0E[0x6];                                 // 0x42(0x6)
 	class                                                        RequiredTargetFaction;                             // 0x48(0x8)
 };
 
@@ -269,7 +269,7 @@ public:
 	bool                                                         AnyCurse;                                          // 0x80(0x1)
 	bool                                                         SkeletonCurse;                                     // 0x81(0x1)
 	bool                                                         GhostCurse;                                        // 0x82(0x1)
-	char                                                         pad0x7_SWXZD[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_EUIP4[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -290,7 +290,7 @@ public:
 	Class FactionShipStreakDataAsset*                            ShipStreakData;                                    // 0xd0(0x8)
 	TArray<class ActorComponent*>                                CachedStaticMeshComponents;                        // 0xd8(0x10)
 	TArray<Struct StreakDynamicMaterials>                        CachedDynamicMaterials;                            // 0xe8(0x10)
-	char                                                         pad0x48_HUK8Q[0x48];                               // 0xf8(0x48)
+	char                                                         pad0x48_QSWDY[0x48];                               // 0xf8(0x48)
 	Struct FactionStreakData                                     FactionStreakData;                                 // 0x140(0x10)
 };
 
@@ -300,7 +300,7 @@ class ShipSunkTrackingComponent: public ActorComponent
 {
 public:
 	float                                                        CrewRange;                                         // 0xc8(0x4)
-	char                                                         pad0x1c_QU0UT[0x1c];                               // 0xca(0x1c)
+	char                                                         pad0x1c_O5MDY[0x1c];                               // 0xca(0x1c)
 };
 
 

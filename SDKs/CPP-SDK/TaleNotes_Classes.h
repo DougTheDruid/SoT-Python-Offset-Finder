@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class TaleNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_HUGZF[0x10];                               // 0x7a0(0x10)
+	char                                                         pad0x10_2N5TI[0x10];                               // 0x7a0(0x10)
 	int                                                          CanvasWidth;                                       // 0x7b0(0x4)
 	int                                                          CanvasHeight;                                      // 0x7b4(0x4)
 	float                                                        FontScale;                                         // 0x7b8(0x4)
-	char                                                         pad0x4_X1OK2[0x4];                                 // 0x7bc(0x4)
+	char                                                         pad0x4_CFA0P[0x4];                                 // 0x7bc(0x4)
 	Class Font*                                                  Font;                                              // 0x7c0(0x8)
 	Struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x7c8(0x30)
 	Struct TreasureMapWidgetText                                 TitleWidgetText;                                   // 0x7f8(0x38)
@@ -27,7 +27,7 @@ public:
 	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x8e8(0x8)
 	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x8f0(0x8)
 	Class ZoomInOnWieldableItemComponent*                        ZoomInOnWieldableComponent;                        // 0x8f8(0x8)
-	char                                                         pad0xe0_O45XC[0xe0];                               // 0x8fe(0xe0)
+	char                                                         pad0xe0_T1OOL[0xe0];                               // 0x8fe(0xe0)
 };
 
 

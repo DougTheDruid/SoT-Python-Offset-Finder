@@ -58,4 +58,12 @@ public:
 };
 
 
+// Size 0x18
+struct MediaPlayedTelemetryEvent
+{
+public:
+	Struct FString                                               MediaName;                                         // 0x0(0x10)
+};
+
+
 }

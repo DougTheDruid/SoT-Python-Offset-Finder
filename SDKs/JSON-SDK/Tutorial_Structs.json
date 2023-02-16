@@ -50,6 +50,17 @@
       }
     ]
   },
+  "HasTutorialStarterBegunCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "TutorialStepEndedTelemetryEvent": {
     "ClassSize": "0x28",
     "Attributes": [

@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x7e8] - InheritedSize[0x7e0]
+// Size 0x8 (Full Size[0x7f0] - InheritedSize[0x7e8]
 class BP_AthenaHUD_C: public AthenaHUD
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x7e0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x7e8(0x8)
 };
 
 

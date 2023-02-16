@@ -11,17 +11,17 @@ class BP_Prompt_UseAMermaid_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfc_5ROXZ[0xfc];                               // 0x120(0xfc)
+	char                                                         pad0x93_G9Q6N[0x93];                               // 0x120(0x93)
 	bool                                                         State_IsThereAMermaid;                             // 0x120(0x1)
-	char                                                         pad0x7_RDI3R[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x7_YJ8VX[0x7];                                 // 0x121(0x7)
 	Struct ObjectMessagingHandle                                 Handle_OnMermaidActivatedLocally;                  // 0x128(0x48)
 	Struct ObjectMessagingHandle                                 Handle_OnMermaidDeactivatedLocally;                // 0x170(0x48)
 	Struct ObjectMessagingHandle                                 Handle_OnMermaidUsed;                              // 0x1b8(0x48)
 	bool                                                         State_MermaidUsed;                                 // 0x200(0x1)
-	char                                                         pad0x7_Q21J9[0x7];                                 // 0x201(0x7)
+	char                                                         pad0x7_0PMIF[0x7];                                 // 0x201(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt_UseMermaid;                                 // 0x208(0x68)
 	bool                                                         State_ShowPrompt;                                  // 0x270(0x1)
-	char                                                         pad0x3_IRTE7[0x3];                                 // 0x271(0x3)
+	char                                                         pad0x3_GIHDQ[0x3];                                 // 0x271(0x3)
 	float                                                        PromptDisplayDuration;                             // 0x274(0x4)
 	float                                                        PromptHideDuration;                                // 0x278(0x4)
 };

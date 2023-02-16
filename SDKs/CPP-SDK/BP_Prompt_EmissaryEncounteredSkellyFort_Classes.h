@@ -11,13 +11,13 @@ class BP_Prompt_EmissaryEncounteredSkellyFort_C: public BP_PromptCoordinator_Bas
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfc_962QM[0xfc];                               // 0x120(0xfc)
+	char                                                         pad0x93_0GIO2[0x93];                               // 0x120(0x93)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryEncounteredSkellyFort;              // 0x120(0x48)
 	struct FName                                                 CompanyName;                                       // 0x168(0x8)
 	bool                                                         SurfacedThisSession;                               // 0x170(0x1)
-	char                                                         pad0x3_D9O6C[0x3];                                 // 0x171(0x3)
+	char                                                         pad0x3_L73MX[0x3];                                 // 0x171(0x3)
 	struct FName                                                 ExpectedCompanyName;                               // 0x174(0x8)
-	char                                                         pad0x4_GB1UC[0x4];                                 // 0x17c(0x4)
+	char                                                         pad0x4_I3Y6Y[0x4];                                 // 0x17c(0x4)
 	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x180(0x10)
 	class                                                        PromptAccessKey;                                   // 0x190(0x8)
 	int                                                          PromptIndex;                                       // 0x198(0x4)

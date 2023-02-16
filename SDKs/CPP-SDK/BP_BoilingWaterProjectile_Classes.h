@@ -6,50 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x1 (Full Size[-0x1] - InheritedSize[0x0]
-class BP_BoilingWaterProjectile_C: public ActionRules
+// Size 0x10 (Full Size[0x738] - InheritedSize[0x728]
+class BP_BoilingWaterProjectile_C: public LiquidProjectile
 {
 public:
-	char                                                         pad0x438_1RYH5[0x438];                             // 0x0(0x438)
-	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x438(0x8)
-	class                                                        AnimationKey;                                      // 0x440(0x8)
-	Struct ObjectMessagingDispatcher                             MessagingDispatcher;                               // 0x448(0xa0)
-	char                                                         pad0x8_Y1A7D[0x8];                                 // 0x4e8(0x8)
-	Struct Transform                                             AnimationOffset;                                   // 0x4f0(0x30)
-	Class WwiseEvent*                                            EquipSfx;                                          // 0x520(0x8)
-	Class WwiseEvent*                                            UnequipSfx;                                        // 0x528(0x8)
-	Class WwiseEvent*                                            WielderLandedJumpSfx;                              // 0x530(0x8)
-	Class WwiseEvent*                                            WielderFootstepLayerOneshot;                       // 0x538(0x8)
-	struct FName                                                 PlayerWalkSpeedRtpc;                               // 0x540(0x8)
-	Class WwiseEvent*                                            FirstTimeEquipSfx;                                 // 0x548(0x8)
-	bool                                                         ForceUnequipSfx;                                   // 0x550(0x1)
-	byte                                                         ItemSize;                                          // 0x551(0x1)
-	char                                                         pad0x6_N9T7B[0x6];                                 // 0x552(0x6)
-	Struct DetailAppearenceDesc                                  DetailAppearence;                                  // 0x558(0x30)
-	bool                                                         PropagateVisibilityToChildren;                     // 0x588(0x1)
-	char                                                         pad0x3_NH41H[0x3];                                 // 0x589(0x3)
-	struct FName                                                 AINoiseTag;                                        // 0x58c(0x8)
-	char                                                         pad0x4_RE4FT[0x4];                                 // 0x594(0x4)
-	TArray<Struct FName>                                         ThirdPersonExtraMeshNames;                         // 0x598(0x10)
-	TArray<Struct FName>                                         StashedExtraMeshNames;                             // 0x5a8(0x10)
-	Class MeshComponent*                                         StashedMeshComponent;                              // 0x5b8(0x8)
-	struct FName                                                 StashedMeshAttachSocket;                           // 0x5c0(0x8)
-	struct FName                                                 ServerWieldAttachSocket;                           // 0x5c8(0x8)
-	Class PhrasesRadialDataAsset*                                Phrases;                                           // 0x5d0(0x8)
-	Class Object*                                                CachedFirstPersonProxyMesh;                        // 0x5d8(0x8)
-	Class Object*                                                CachedThirdPersonProxyMesh;                        // 0x5e0(0x8)
-	char                                                         pad0x128_Y47GN[0x128];                             // 0x5e8(0x128)
-	class                                                        ItemCategory;                                      // 0x710(0x8)
-	Class ItemInfo*                                              ItemInfo;                                          // 0x718(0x8)
-	Class InterpolatingItem*                                     InterpolatingItem;                                 // 0x720(0x8)
-	char                                                         pad0x18_2IQ1E[0x18];                               // 0x728(0x18)
-	Class WieldableItemVfxComponent*                             WieldableItemVfxComponent;                         // 0x748(0x8)
-	TArray<class MeshComponent*>                                 ThirdPersonExtraMeshes;                            // 0x750(0x10)
-	TArray<class MeshComponent*>                                 StashedExtraMeshes;                                // 0x760(0x10)
-	char                                                         pad0x19_7V80G[0x19];                               // 0x770(0x19)
-	bool                                                         OfferingEnabled;                                   // 0x789(0x1)
-	char                                                         pad0x2_CM3WT[0x2];                                 // 0x78a(0x2)
-	Struct Guid                                                  QuestId;                                           // 0x78c(0x10)
+	Class StaticMeshComponent*                                   Sphere;                                            // 0x728(0x8)
+	Class SphereComponent*                                       Collision;                                         // 0x730(0x8)
 };
 
 

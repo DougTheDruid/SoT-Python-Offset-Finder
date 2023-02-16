@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_GOOUL[0x7]",
+        "Name": "pad0x7_NPS1S[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -67,7 +67,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_1L3RQ[0x3]",
+        "Name": "pad0x3_IDE2M[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -232,7 +232,7 @@
         "Offset": "0xa4"
       },
       {
-        "Name": "pad0x4_1CT77[0x4]",
+        "Name": "pad0x4_7993A[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xac"
@@ -438,7 +438,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x4_YMJ70[0x4]",
+        "Name": "pad0x4_D2JBE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x7c"
@@ -485,7 +485,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_5CZ5P[0x7]",
+        "Name": "pad0x7_W56RL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -531,7 +531,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_G8F2D[0x7]",
+        "Name": "pad0x7_SFGIS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -565,7 +565,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_PGWEQ[0x7]",
+        "Name": "pad0x7_2T7TQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -579,7 +579,7 @@
     ]
   },
   "BountySpawnerTargetDesc": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Gender",
@@ -592,11 +592,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x6_YGRW5[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "AIClassIdOverride",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
   "AIBountySpawnerWaveGroup": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "Waves",
@@ -611,7 +623,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_A3OSA[0x4]",
+        "Name": "pad0x4_7W7NI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -627,6 +639,30 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "WantsAdditionalWaveAI",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_5NJFG[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
+      },
+      {
+        "Name": "AdditionalWaveAIPerPlayer",
+        "Type": "TArray<Int AdditionalWaveAIPerPlayer>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AdditionalWaveCaptainAIPerPlayer",
+        "Type": "TArray<Int AdditionalWaveCaptainAIPerPlayer>",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },
@@ -646,7 +682,7 @@
         "Offset": "0x129"
       },
       {
-        "Name": "pad0x2_VGP9H[0x2]",
+        "Name": "pad0x2_88GL1[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12a"
@@ -670,7 +706,7 @@
         "Offset": "0x131"
       },
       {
-        "Name": "pad0x6_OCOQG[0x6]",
+        "Name": "pad0x6_N4ER6[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x132"
@@ -682,7 +718,7 @@
         "Offset": "0x138"
       },
       {
-        "Name": "pad0x38_2RCT8[0x38]",
+        "Name": "pad0x38_QNUIF[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x140"
@@ -705,7 +741,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_QDICE[0x7]",
+        "Name": "pad0x7_ZXLUQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
@@ -728,7 +764,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_0RFKS[0x4]",
+        "Name": "pad0x4_RRT58[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -809,7 +845,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_L0AYY[0x4]",
+        "Name": "pad0x4_RG13V[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -887,7 +923,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_ALDOQ[0x3]",
+        "Name": "pad0x3_VNSJ2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -905,7 +941,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_0QR78[0x3]",
+        "Name": "pad0x3_SL257[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -952,7 +988,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x3_1MBKX[0x3]",
+        "Name": "pad0x3_JK4IY[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51"
@@ -1020,7 +1056,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_2JOYW[0x4]",
+        "Name": "pad0x4_I8MKV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -1112,7 +1148,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_B0YAS[0x4]",
+        "Name": "pad0x4_L1SS7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1276,7 +1312,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_PW4ZA[0x3]",
+        "Name": "pad0x3_A1CEJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1322,7 +1358,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_X1POQ[0x3]",
+        "Name": "pad0x3_G35MR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1379,7 +1415,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_VXUQO[0x3]",
+        "Name": "pad0x3_GEP3O[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1736,7 +1772,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_8RMSC[0x4]",
+        "Name": "pad0x4_PMX7C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1788,7 +1824,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_QP8GO[0x1]",
+        "Name": "pad0x1_4KJFP[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -1870,7 +1906,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x2_9K5G9[0x2]",
+        "Name": "pad0x2_WE7BY[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2"
@@ -1939,7 +1975,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_G0NRR[0x4]",
+        "Name": "pad0x4_0KK4K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -1966,6 +2002,23 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "AthenaAISharedControllerParamToggledValues": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Assets",
+        "Type": "TArray<class AthenaAIControllerSharedParamValuesDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FeatureName",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x10"
       }
     ]
   },
@@ -2289,7 +2342,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x8_GF12P[0x8]",
+        "Name": "pad0x8_YNYK7[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
@@ -2451,7 +2504,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_JOQQ0[0x7]",
+        "Name": "pad0x7_AKVLK[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -2567,6 +2620,34 @@
       }
     ]
   },
+  "FeatureToggledAIEncounterSpecificSkillSetCollection": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ToggledSkillsets",
+        "Type": "TArray<Struct FeatureToggledAIEncounterSpecificSkillSet>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FeatureToggledAIEncounterSpecificSkillSet": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ToggledSpecificSkillset",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Feature",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "AIDropSpawnerRankMapping": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -2646,7 +2727,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_VOK91[0x3]",
+        "Name": "pad0x3_9VWJC[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -2801,7 +2882,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_7B63T[0x7]",
+        "Name": "pad0x7_GTUMC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -3120,7 +3201,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_0E0ZP[0x4]",
+        "Name": "pad0x4_JGOMK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -3297,7 +3378,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_WEOLQ[0x4]",
+        "Name": "pad0x4_MQANP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -3320,7 +3401,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_LT9VM[0x4]",
+        "Name": "pad0x4_N7415[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -3355,7 +3436,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_A0ART[0x2]",
+        "Name": "pad0x2_P8LEX[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -3473,6 +3554,29 @@
       }
     ]
   },
+  "DamageModifierCrewProximityVulnerabilityPairs": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NumPlayersInRange",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GlobalDamageMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "DamageMultipliers",
+        "Type": "TArray<Struct DamageableVulnerabilityPair>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "BlackboardValueCondition": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -3489,7 +3593,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_KZOF6[0x3]",
+        "Name": "pad0x3_ITXHZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -3541,7 +3645,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_2NND6[0x7]",
+        "Name": "pad0x7_NXKPC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -3787,7 +3891,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_MVBO1[0x4]",
+        "Name": "pad0x4_2AG8F[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -3805,7 +3909,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_QG9LQ[0x4]",
+        "Name": "pad0x4_5NSBI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -3863,6 +3967,28 @@
     "Attributes": [
       {
         "Name": "Player",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventCrewedShipLeftAISpawnRegion": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventCrewedShipEnteredAISpawnRegion": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Ship",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
@@ -3938,7 +4064,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_QPEII[0x3]",
+        "Name": "pad0x3_CM6T0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -3948,6 +4074,41 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "AthenaAICharacterParams": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "MissFiringHeightOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MissFiringTargetInFrontOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MinMissFiringTargetInFrontOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaxMissFiringTargetInFrontOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "BufferTimeWhenChangingItems",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },
@@ -4078,6 +4239,47 @@
       }
     ]
   },
+  "AIHealthChangeTelemetryEvent": {
+    "ClassSize": "0x2c",
+    "Attributes": [
+      {
+        "Name": "AttackId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CurrentHealth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PreviousHealth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "HealthDelta",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Position",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "Reason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "PlayerKillAITelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -4116,6 +4318,10 @@
         "Offset": "0x8"
       }
     ]
+  },
+  "StartCreatureSplineMovementEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

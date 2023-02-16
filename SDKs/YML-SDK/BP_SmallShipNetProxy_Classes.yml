@@ -2,18 +2,14 @@
 # https://github.com/DougTheDruid
 BP_SmallShipNetProxy_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x4b0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: EmissaryFlags
-    Offset: '0x4b8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: Dynamic Materials
-    Offset: '0x4c0'
-    Size: '0x10'
-    Type: TArray<class MaterialInstanceDynamic*>
+  - Name: pad0x28_CS2KX[0x28]
+    Offset: '0x4b6'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x4d0'
   InheritedSize: '0x4b0'

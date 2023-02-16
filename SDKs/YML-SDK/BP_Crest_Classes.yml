@@ -70,7 +70,7 @@ BP_Crest_C:
     Offset: '0x4e0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CREXN[0x4]
+  - Name: pad0x4_ZRFPE[0x4]
     Offset: '0x4e4'
     Size: '0x4'
     Type: char

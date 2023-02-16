@@ -18,10 +18,10 @@ public:
 class CustomMap: public RenderToTextureMapBase
 {
 public:
-	char                                                         pad0x8_W52HR[0x8];                                 // 0x850(0x8)
+	char                                                         pad0x8_4OF8F[0x8];                                 // 0x850(0x8)
 	Class Font*                                                  Font;                                              // 0x858(0x8)
 	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x860(0x10)
-	char                                                         pad0x30_5R3G4[0x30];                               // 0x86e(0x30)
+	char                                                         pad0x30_F7O1F[0x30];                               // 0x86e(0x30)
 };
 
 
@@ -56,7 +56,7 @@ class CustomMapDataTypePositional: public CustomMapDataTypeBase
 public:
 	Struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
-	char                                                         pad0xc_OJ7KG[0xc];                                 // 0x42(0xc)
+	char                                                         pad0xc_NKF5Y[0xc];                                 // 0x42(0xc)
 };
 
 
@@ -66,7 +66,7 @@ class CustomMapDisplayObjectPositional: public CustomMapDisplayObjectBase
 public:
 	Struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
-	char                                                         pad0xc_BP16P[0xc];                                 // 0x42(0xc)
+	char                                                         pad0xc_FR1S6[0xc];                                 // 0x42(0xc)
 };
 
 
@@ -77,9 +77,9 @@ public:
 	Struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
-	char                                                         pad0x3_4PXT0[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_H9FQS[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
-	char                                                         pad0x54_VP5GK[0x54];                               // 0x8a(0x54)
+	char                                                         pad0x54_8VYM9[0x54];                               // 0x8a(0x54)
 };
 
 
@@ -90,9 +90,9 @@ public:
 	Struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
-	char                                                         pad0x3_VHDO8[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_8MQV1[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
-	char                                                         pad0xc_GL3QE[0xc];                                 // 0x8a(0xc)
+	char                                                         pad0xc_PNM87[0xc];                                 // 0x8a(0xc)
 };
 
 

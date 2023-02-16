@@ -68,7 +68,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_81C0C[0x9]
+  - Name: pad0x9_EG93M[0x9]
     Offset: '0x27'
     Size: '0x9'
     Type: char

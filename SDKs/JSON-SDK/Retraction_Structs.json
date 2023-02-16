@@ -22,6 +22,17 @@
       }
     ]
   },
+  "EventItemProxyMovedFromSlot": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "ItemLocation",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventAttachedRetractableToItemProxy": {
     "ClassSize": "0x8",
     "Attributes": [

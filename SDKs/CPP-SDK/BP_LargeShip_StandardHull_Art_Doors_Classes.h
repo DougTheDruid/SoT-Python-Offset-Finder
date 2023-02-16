@@ -6,15 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x2c (Full Size[0x3f4] - InheritedSize[0x3c8]
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
 class BP_LargeShip_StandardHull_Art_Doors_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d8(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
-	Struct FeatureFlag                                           FeatureName;                                       // 0x3e8(0xc)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
 };
 
 

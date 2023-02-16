@@ -14,7 +14,7 @@ public:
 	Class ShapeComponent*                                        LocationOverlapVolume;                             // 0x2e8(0x8)
 	float                                                        LocationCooldown;                                  // 0x2f0(0x4)
 	bool                                                         AlwaysShowPopUp;                                   // 0x2f4(0x1)
-	char                                                         pad0x6d_MBDT0[0x6d];                               // 0x2f3(0x6d)
+	char                                                         pad0x6d_YY6PY[0x6d];                               // 0x2f3(0x6d)
 };
 
 
@@ -40,9 +40,9 @@ public:
 class WorldLocationVisitorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_FBXJH[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_ZRMTZ[0x8];                                 // 0xc8(0x8)
 	float                                                        RevisitCooldown;                                   // 0xd0(0x4)
-	char                                                         pad0x3c_FNBA3[0x3c];                               // 0xd2(0x3c)
+	char                                                         pad0x3c_XL200[0x3c];                               // 0xd2(0x3c)
 };
 
 

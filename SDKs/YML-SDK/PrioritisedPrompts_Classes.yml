@@ -6,7 +6,7 @@ BasePromptCoordinator:
     Offset: '0x28'
     Size: '0x8'
     Type: Class AthenaPlayerController*
-  - Name: pad0x10_OTPST[0x10]
+  - Name: pad0x10_35WXZ[0x10]
     Offset: '0x30'
     Size: '0x10'
     Type: char
@@ -18,7 +18,7 @@ BasePromptCoordinator:
     Offset: '0x48'
     Size: '0x8'
     Type: Class Character*
-  - Name: pad0xb8_SOECM[0xb8]
+  - Name: pad0xb8_CZEBZ[0xb8]
     Offset: '0x4e'
     Size: '0xb8'
     Type: char
@@ -28,7 +28,7 @@ BasePromptCoordinator:
   Super: Object
 GetPromptsLocalService:
   Attributes:
-  - Name: pad0x10_NGWA9[0x10]
+  - Name: pad0x10_T5HVA[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -42,7 +42,7 @@ GetPromptsLocalService:
   Super: BlueprintAsyncActionBase
 PrioritisedPromptsManager:
   Attributes:
-  - Name: pad0x8_5NKR2[0x8]
+  - Name: pad0x8_ZMJO3[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -54,7 +54,7 @@ PrioritisedPromptsManager:
     Offset: '0x40'
     Size: '0x8'
     Type: Class PlayerController*
-  - Name: pad0x40_TFY3B[0x40]
+  - Name: pad0x40_6L1F9[0x40]
     Offset: '0x46'
     Size: '0x40'
     Type: char

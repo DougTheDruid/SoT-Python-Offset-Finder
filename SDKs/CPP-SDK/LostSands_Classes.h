@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class LostSandsRowboatGunpowderBarrel: public Actor
 {
 public:
-	char                                                         pad0xb8_O7T62[0xb8];                               // 0x3c8(0xb8)
+	char                                                         pad0xb8_ET5DY[0xb8];                               // 0x3c8(0xb8)
 	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x480(0x8)
 	Class InteractableComponent*                                 InteractableComponent;                             // 0x488(0x8)
 	Class StaticMeshMemoryConstraintComponent*                   StaticMeshComponent;                               // 0x490(0x8)
@@ -26,7 +26,7 @@ public:
 	TArray<Float DistanceFromNamedPoints>                        DistanceFromNamedPoints;                           // 0x560(0x10)
 	Struct PlayerStat                                            RowboatDestroyedAtGoldenSandsStat;                 // 0x570(0x4)
 	Struct PlayerStat                                            RowboatDestroyedAwayFromGoldenSandsStat;           // 0x574(0x4)
-	char                                                         pad0x88_IKUMF[0x88];                               // 0x576(0x88)
+	char                                                         pad0x88_C5JCD[0x88];                               // 0x576(0x88)
 };
 
 

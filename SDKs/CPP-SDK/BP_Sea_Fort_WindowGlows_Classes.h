@@ -16,7 +16,7 @@ public:
 	Class SceneComponent*                                        SharedRoot;                                        // 0x3e0(0x8)
 	float                                                        FadeCurve_Fade_F995538E47EE9A6B32A4C3A8CF00537A;   // 0x3e8(0x4)
 	byte                                                         FadeCurve__Direction_F995538E47EE9A6B32A4C3A8CF00537A; // 0x3ec(0x1)
-	char                                                         pad0x3_BWXLS[0x3];                                 // 0x3ed(0x3)
+	char                                                         pad0x3_8WGJ6[0x3];                                 // 0x3ed(0x3)
 	Class TimelineComponent*                                     FadeCurve;                                         // 0x3f0(0x8)
 	Class MaterialInstanceDynamic*                               WindowDynamicMaterial;                             // 0x3f8(0x8)
 	Class MaterialInstanceDynamic*                               GlowDynamicMaterial;                               // 0x400(0x8)

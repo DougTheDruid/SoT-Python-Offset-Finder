@@ -11,14 +11,14 @@ class BP_Prompt_EmissaryKilledAnotherEmissary_C: public BP_PromptCoordinator_Bas
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0xfc_R1C9Y[0xfc];                               // 0x120(0xfc)
+	char                                                         pad0x93_2TX0X[0x93];                               // 0x120(0x93)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryKilledAnotherEmissary;              // 0x120(0x48)
 	struct FName                                                 CompanyName;                                       // 0x168(0x8)
 	struct FName                                                 VictimCompanyName;                                 // 0x170(0x8)
 	bool                                                         SurfacedThisSession;                               // 0x178(0x1)
-	char                                                         pad0x3_D0AT3[0x3];                                 // 0x179(0x3)
+	char                                                         pad0x3_7SRX4[0x3];                                 // 0x179(0x3)
 	struct FName                                                 ExpectedCompanyName;                               // 0x17c(0x8)
-	char                                                         pad0x4_JD4SK[0x4];                                 // 0x184(0x4)
+	char                                                         pad0x4_QZK0T[0x4];                                 // 0x184(0x4)
 	TArray<Struct FName>                                         ExpectedVictimCompanyName;                         // 0x188(0x10)
 	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x198(0x10)
 	class                                                        PromptAccessKey;                                   // 0x1a8(0x8)
