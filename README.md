@@ -13,7 +13,7 @@ I attempt to manage my own dump of the SDK, but it is not guaranteed to be up-to
 it outdated, please reach out to me via Discord and I will do my best to update it ASAP. There
 are also a number of folks on UnknownCheats who offer GitHub repos where they update the SDK. If using
 an SDK that I do not provide, you may need to adjust the `offset_finder.py` to ensure the mappings
-to the filenames are correct.
+to the filenames are correct. 
 
 ## How to Use
 Clone this repo. Within the folder created ensure the `offset_finder.py` global variables are pointing to the correct paths for your up-to-date JSON SDK (at the top 
