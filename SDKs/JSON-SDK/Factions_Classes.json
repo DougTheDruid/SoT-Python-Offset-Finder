@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "PossibleFactions",
-        "Type": "TArray<Class PossibleFactions>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "FactionsRewardingFriendlyFire",
-        "Type": "TArray<Class FactionsRewardingFriendlyFire>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "SandsOfFateRewards",
-        "Type": "TArray<Struct SandsOfFateData>",
+        "Type": "TArray<struct SandsOfFateRewards>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "FactionStreakLevelData",
-        "Type": "TArray<Struct FactionStreakLevelData>",
+        "Type": "TArray<struct FactionStreakLevelData>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "DefenderLootLevelThresholds",
-        "Type": "TArray<Struct DefenderLootLevelThreshold>",
+        "Type": "TArray<struct DefenderLootLevelThresholds>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -61,61 +61,61 @@
       },
       {
         "Name": "AlignedFactionsAndCompanies",
-        "Type": "TArray<Struct CompanyFactionAlignment>",
+        "Type": "TArray<struct AlignedFactionsAndCompanies>",
         "Size": "0x10",
         "Offset": "0x88"
       },
       {
         "Name": "OpposingFactionsAndCompanies",
-        "Type": "TArray<Struct CompanyFactionAlignment>",
+        "Type": "TArray<struct OpposingFactionsAndCompanies>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "JoiningFactionPopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct JoiningFactionPopUp>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
         "Name": "LeavingFactionPopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct LeavingFactionPopUp>",
         "Size": "0x10",
         "Offset": "0xb8"
       },
       {
         "Name": "DefeatedFactionPopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct DefeatedFactionPopUp>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "EnteredTunnelOfTheDamnedFactionPopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct EnteredTunnelOfTheDamnedFactionPopUp>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
         "Name": "LeavingBattleBoundsPopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct LeavingBattleBoundsPopUp>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
       {
         "Name": "SentToSinBinPopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct SentToSinBinPopUp>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "MaxRankAchievedForSloopOrBrigantinePopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct MaxRankAchievedForSloopOrBrigantinePopUp>",
         "Size": "0x10",
         "Offset": "0x108"
       },
       {
         "Name": "MaxRankAchievedForGalleonPopUp",
-        "Type": "TArray<Struct FactionServicePopUpData>",
+        "Type": "TArray<struct MaxRankAchievedForGalleonPopUp>",
         "Size": "0x10",
         "Offset": "0x118"
       },
@@ -165,7 +165,7 @@
         "Offset": "0x630"
       },
       {
-        "Name": "pad0x204_P77JA[0x204]",
+        "Name": "pad0x204_B5PPJ[0x204]",
         "Type": "char",
         "Size": "0x204",
         "Offset": "0x634"
@@ -189,7 +189,7 @@
         "Offset": "0x84c"
       },
       {
-        "Name": "pad0x5_DC03M[0x5]",
+        "Name": "pad0x5_Y80L4[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x84b"
@@ -215,7 +215,7 @@
         "Offset": "0x154"
       },
       {
-        "Name": "pad0x50_O0EO1[0x50]",
+        "Name": "pad0x50_8JN5P[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x156"
@@ -230,7 +230,7 @@
     "Attributes": [
       {
         "Name": "LootLevelRewards",
-        "Type": "TArray<Struct LootLevelReward>",
+        "Type": "TArray<struct LootLevelRewards>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -243,7 +243,7 @@
     "ClassSize": "0x230",
     "Attributes": [
       {
-        "Name": "pad0x10_0C0RC[0x10]",
+        "Name": "pad0x10_BBVK8[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -255,7 +255,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x4_FRAGF[0x4]",
+        "Name": "pad0x4_ZWQMP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3dc"
@@ -273,7 +273,7 @@
         "Offset": "0x480"
       },
       {
-        "Name": "pad0x18_45MJN[0x18]",
+        "Name": "pad0x18_3P66C[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x520"
@@ -285,7 +285,7 @@
         "Offset": "0x538"
       },
       {
-        "Name": "pad0xe0_WINQT[0xe0]",
+        "Name": "pad0xe0_CI2HJ[0xe0]",
         "Type": "char",
         "Size": "0xe0",
         "Offset": "0x556"
@@ -299,7 +299,7 @@
     "ClassSize": "0x170",
     "Attributes": [
       {
-        "Name": "pad0x148_0EFWH[0x148]",
+        "Name": "pad0x148_GWG1V[0x148]",
         "Type": "char",
         "Size": "0x148",
         "Offset": "0x8b0"
@@ -335,7 +335,7 @@
         "Offset": "0xa1c"
       },
       {
-        "Name": "pad0x5_2R4BT[0x5]",
+        "Name": "pad0x5_IWVX5[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0xa1b"
@@ -355,14 +355,14 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x7_LFIUS[0x7]",
+        "Name": "pad0x7_RGZSW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3c9"
       },
       {
         "Name": "FactionAlignedCrewData",
-        "Type": "TArray<Struct CrewFactionEntryData>",
+        "Type": "TArray<struct FactionAlignedCrewData>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
@@ -381,7 +381,7 @@
     "ClassSize": "0x278",
     "Attributes": [
       {
-        "Name": "pad0x10_L83UJ[0x10]",
+        "Name": "pad0x10_U0SNY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -399,43 +399,43 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0xc0_5MQYU[0xc0]",
+        "Name": "pad0xc0_G7S3F[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x3e8"
       },
       {
         "Name": "OpposingFactionsAndCompanies",
-        "Type": "TArray<Struct CompanyFactionAlignment>",
+        "Type": "TArray<struct OpposingFactionsAndCompanies>",
         "Size": "0x10",
         "Offset": "0x4a8"
       },
       {
         "Name": "DefenderLootLevelThresholds",
-        "Type": "TArray<Struct DefenderLootLevelThreshold>",
+        "Type": "TArray<struct DefenderLootLevelThresholds>",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
       {
         "Name": "FactionAlignedCrewData",
-        "Type": "TArray<Struct CrewFactionEntryData>",
+        "Type": "TArray<struct FactionAlignedCrewData>",
         "Size": "0x10",
         "Offset": "0x4c8"
       },
       {
         "Name": "FactionAlignedCrews",
-        "Type": "TArray<Struct CrewFactionEntry>",
+        "Type": "TArray<struct FactionAlignedCrews>",
         "Size": "0x10",
         "Offset": "0x4d8"
       },
       {
         "Name": "MatchmakingWaitTimes",
-        "Type": "TArray<Struct FactionWaitTimesData>",
+        "Type": "TArray<struct MatchmakingWaitTimes>",
         "Size": "0x10",
         "Offset": "0x4e8"
       },
       {
-        "Name": "pad0x120_IQ66E[0x120]",
+        "Name": "pad0x120_4SIB8[0x120]",
         "Type": "char",
         "Size": "0x120",
         "Offset": "0x4f8"
@@ -447,7 +447,7 @@
         "Offset": "0x618"
       },
       {
-        "Name": "pad0x30_XA0II[0x30]",
+        "Name": "pad0x30_HTB76[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x61e"
@@ -462,7 +462,7 @@
     "Attributes": [
       {
         "Name": "StreakMeshes",
-        "Type": "TArray<Struct StreakMesh>",
+        "Type": "TArray<struct StreakMeshes>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -500,12 +500,12 @@
       },
       {
         "Name": "LevelupSwitchValues",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x100_BLKYT[0x100]",
+        "Name": "pad0x100_323WG[0x100]",
         "Type": "char",
         "Size": "0x100",
         "Offset": "0x116"
@@ -519,7 +519,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x10_9UCHA[0x10]",
+        "Name": "pad0x10_SEFEV[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x30"
@@ -531,7 +531,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x48_6AP0F[0x48]",
+        "Name": "pad0x48_XWP3E[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x48"
@@ -544,18 +544,18 @@
       },
       {
         "Name": "FactionBannerData",
-        "Type": "TArray<Struct CinematicFactionEvent>",
+        "Type": "TArray<struct FactionBannerData>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "Votes",
-        "Type": "TArray<Struct CrewMemberVotes>",
+        "Type": "TArray<struct Votes>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x38_ECA5T[0x38]",
+        "Name": "pad0x38_SF52D[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xb6"
@@ -711,7 +711,7 @@
     "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "pad0x10_VIP7D[0x10]",
+        "Name": "pad0x10_J2013[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -723,37 +723,37 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x4_N7CW7[0x4]",
+        "Name": "pad0x4_Z0P32[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3dc"
       },
       {
         "Name": "NoFactionInfos",
-        "Type": "TArray<Struct FactionDisplayInfo>",
+        "Type": "TArray<struct NoFactionInfos>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
       {
         "Name": "FactionInfos",
-        "Type": "TArray<Struct FactionDisplayInfo>",
+        "Type": "TArray<struct FactionInfos>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
       {
         "Name": "NoFactionInfoPtrs",
-        "Type": "TArray<Struct FactionRequest>",
+        "Type": "TArray<struct NoFactionInfoPtrs>",
         "Size": "0x10",
         "Offset": "0x400"
       },
       {
         "Name": "FactionInfoPtrs",
-        "Type": "TArray<Struct FactionRequest>",
+        "Type": "TArray<struct FactionInfoPtrs>",
         "Size": "0x10",
         "Offset": "0x410"
       },
       {
-        "Name": "pad0xc0_GL990[0xc0]",
+        "Name": "pad0xc0_EA9MS[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x41e"
@@ -768,7 +768,7 @@
     "Attributes": [
       {
         "Name": "TargetCompanies",
-        "Type": "TArray<Class TargetCompanies>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -779,7 +779,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x8c_SC518[0x8c]",
+        "Name": "pad0x8c_GSC07[0x8c]",
         "Type": "char",
         "Size": "0x8c",
         "Offset": "0x44"
@@ -803,7 +803,7 @@
         "Offset": "0xdc"
       },
       {
-        "Name": "pad0x8_SDNBN[0x8]",
+        "Name": "pad0x8_2Z33Y[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe0"
@@ -849,7 +849,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x6_T3FZJ[0x6]",
+        "Name": "pad0x6_1KUKZ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x32"
@@ -873,7 +873,7 @@
         "Offset": "0x41"
       },
       {
-        "Name": "pad0x6_LGV0E[0x6]",
+        "Name": "pad0x6_F7HVK[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x42"
@@ -911,7 +911,7 @@
         "Offset": "0x82"
       },
       {
-        "Name": "pad0x7_EUIP4[0x7]",
+        "Name": "pad0x7_KRQVM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -926,13 +926,13 @@
     "Attributes": [
       {
         "Name": "MaterialValues",
-        "Type": "TArray<Struct StreakMaterialValue>",
+        "Type": "TArray<struct MaterialValues>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "StreakMaterials",
-        "Type": "TArray<Struct StreakCompanyMaterials>",
+        "Type": "TArray<struct StreakMaterials>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -964,12 +964,12 @@
       },
       {
         "Name": "CachedDynamicMaterials",
-        "Type": "TArray<Struct StreakDynamicMaterials>",
+        "Type": "TArray<struct CachedDynamicMaterials>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x48_QSWDY[0x48]",
+        "Name": "pad0x48_0F85F[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xf8"
@@ -984,9 +984,9 @@
   },
   "ShipSunkTrackingComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xe0",
+    "FullSize": "0xf8",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "CrewRange",
@@ -995,9 +995,9 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x1c_O5MDY[0x1c]",
+        "Name": "pad0x34_ZW2IB[0x34]",
         "Type": "char",
-        "Size": "0x1c",
+        "Size": "0x34",
         "Offset": "0xca"
       }
     ]

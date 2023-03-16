@@ -21,7 +21,7 @@ struct PirateGeneratorAdditionalBakeInfo
 {
 public:
 	TArray<class ParticleSystem*>                                VFXParticles;                                      // 0x0(0x10)
-	TArray<Struct FName>                                         VFXSockets;                                        // 0x10(0x10)
+	TArray<struct FName>                                         VFXSockets;                                        // 0x10(0x10)
 };
 
 
@@ -30,21 +30,21 @@ struct PirateDescription
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_HYJD7[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_1VU4B[0x3];                                 // 0x1(0x3)
 	int                                                          Version;                                           // 0x4(0x4)
 	byte                                                         Gender;                                            // 0x8(0x1)
 	byte                                                         Ethnicity;                                         // 0x9(0x1)
-	char                                                         pad0x2_OA294[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_6QQIN[0x2];                                 // 0xa(0x2)
 	Struct RadialCoordinate                                      BodyShapeCoordinate;                               // 0xc(0x8)
-	char                                                         pad0x4_T5IE8[0x4];                                 // 0x14(0x4)
-	TArray<Struct IPGBlendShape>                                 BlendShapes;                                       // 0x18(0x10)
-	TArray<Struct IPGDynamicSlider>                              DynamicSliders;                                    // 0x28(0x10)
+	char                                                         pad0x4_WF5M7[0x4];                                 // 0x14(0x4)
+	TArray<struct BlendShapes>                                   BlendShapes;                                       // 0x18(0x10)
+	TArray<struct DynamicSliders>                                DynamicSliders;                                    // 0x28(0x10)
 	int                                                          Seed;                                              // 0x38(0x4)
-	char                                                         pad0x4_9TAQP[0x4];                                 // 0x3c(0x4)
-	TArray<Struct FName>                                         Items;                                             // 0x40(0x10)
-	TArray<Struct FName>                                         TextureReferences;                                 // 0x50(0x10)
-	TArray<Struct FName>                                         MaterialReferences;                                // 0x60(0x10)
-	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x70(0x10)
+	char                                                         pad0x4_06RRN[0x4];                                 // 0x3c(0x4)
+	TArray<struct FName>                                         Items;                                             // 0x40(0x10)
+	TArray<struct FName>                                         TextureReferences;                                 // 0x50(0x10)
+	TArray<struct FName>                                         MaterialReferences;                                // 0x60(0x10)
+	TArray<struct ScalarParameters>                              ScalarParameters;                                  // 0x70(0x10)
 };
 
 
@@ -89,10 +89,10 @@ struct WardrobeOutfitResult
 {
 public:
 	TArray<class SkeletalMesh*>                                  Meshes;                                            // 0x0(0x10)
-	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x10(0x10)
-	TArray<Struct FName>                                         MaterialReferences;                                // 0x20(0x10)
+	TArray<struct ScalarParameters>                              ScalarParameters;                                  // 0x10(0x10)
+	TArray<struct FName>                                         MaterialReferences;                                // 0x20(0x10)
 	TArray<class ParticleSystem*>                                VFXParticles;                                      // 0x30(0x10)
-	TArray<Struct FName>                                         VFXSockets;                                        // 0x40(0x10)
+	TArray<struct FName>                                         VFXSockets;                                        // 0x40(0x10)
 };
 
 
@@ -100,7 +100,7 @@ public:
 struct ClothingCreatorSlotItemConfig
 {
 public:
-	TArray<Struct ClothingCreatorSlotItem>                       Items;                                             // 0x0(0x10)
+	TArray<struct Items>                                         Items;                                             // 0x0(0x10)
 };
 
 
@@ -124,12 +124,12 @@ public:
 	float                                                        FloatTest;                                         // 0x8(0x4)
 	int                                                          IntTest;                                           // 0xc(0x4)
 	byte                                                         EnumTest;                                          // 0x10(0x1)
-	char                                                         pad0x3_K7CZC[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_M6V53[0x3];                                 // 0x11(0x3)
 	Struct IPGTestSimpleType                                     ObjectTest;                                        // 0x14(0xc)
 	Struct IPGTestSimpleType                                     ObjectNoneTest;                                    // 0x20(0xc)
-	char                                                         pad0x4_70LM9[0x4];                                 // 0x2c(0x4)
-	TArray<Struct IPGTestSimpleType>                             VectorTest;                                        // 0x30(0x10)
-	TArray<Struct FName>                                         StrVectorTest;                                     // 0x40(0x10)
+	char                                                         pad0x4_2ZJVL[0x4];                                 // 0x2c(0x4)
+	TArray<struct VectorTest>                                    VectorTest;                                        // 0x30(0x10)
+	TArray<struct FName>                                         StrVectorTest;                                     // 0x40(0x10)
 	TArray<Byte EnumVectorTest>                                  EnumVectorTest;                                    // 0x50(0x10)
 };
 
@@ -158,8 +158,8 @@ public:
 struct IPGBodyShapes
 {
 public:
-	TArray<Struct IPGBodyShape>                                  Male;                                              // 0x0(0x10)
-	TArray<Struct IPGBodyShape>                                  Female;                                            // 0x10(0x10)
+	TArray<struct Male>                                          Male;                                              // 0x0(0x10)
+	TArray<struct Female>                                        Female;                                            // 0x10(0x10)
 };
 
 
@@ -176,12 +176,12 @@ public:
 struct IPGData
 {
 public:
-	TArray<Struct IPGDynamicSliderName>                          DynamicSliderNames;                                // 0x0(0x10)
-	TArray<Struct IPGBlendingMethod>                             BlendingMethods;                                   // 0x10(0x10)
-	TArray<Struct IPGSetGroup>                                   Groups;                                            // 0x20(0x10)
+	TArray<struct DynamicSliderNames>                            DynamicSliderNames;                                // 0x0(0x10)
+	TArray<struct BlendingMethods>                               BlendingMethods;                                   // 0x10(0x10)
+	TArray<struct Groups>                                        Groups;                                            // 0x20(0x10)
 	int                                                          CurrentVersion;                                    // 0x30(0x4)
-	char                                                         pad0x4_H3YTB[0x4];                                 // 0x34(0x4)
-	TArray<Struct IPGSetsData>                                   Versions;                                          // 0x38(0x10)
+	char                                                         pad0x4_XJRUS[0x4];                                 // 0x34(0x4)
+	TArray<struct Versions>                                      Versions;                                          // 0x38(0x10)
 };
 
 
@@ -190,8 +190,8 @@ struct IPGSetsData
 {
 public:
 	int                                                          Version;                                           // 0x0(0x4)
-	char                                                         pad0x4_VYPPU[0x4];                                 // 0x4(0x4)
-	TArray<Struct IPGSetData>                                    Sets;                                              // 0x8(0x10)
+	char                                                         pad0x4_BPIRS[0x4];                                 // 0x4(0x4)
+	TArray<struct Sets>                                          Sets;                                              // 0x8(0x10)
 };
 
 
@@ -202,9 +202,9 @@ public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	byte                                                         Gender;                                            // 0x8(0x1)
 	byte                                                         Ethnicity;                                         // 0x9(0x1)
-	char                                                         pad0x2_SV8RH[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_ZVK60[0x2];                                 // 0xa(0x2)
 	int                                                          Priority;                                          // 0xc(0x4)
-	TArray<Struct IPGBlendNode>                                  Nodes;                                             // 0x10(0x10)
+	TArray<struct Nodes>                                         Nodes;                                             // 0x10(0x10)
 };
 
 
@@ -213,7 +213,7 @@ struct IPGBlendNode
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct IPGBlendRange>                                 Ranges;                                            // 0x8(0x10)
+	TArray<struct Ranges>                                        Ranges;                                            // 0x8(0x10)
 };
 
 
@@ -225,8 +225,8 @@ public:
 	float                                                        Min;                                               // 0x8(0x4)
 	float                                                        Max;                                               // 0xc(0x4)
 	float                                                        Env;                                               // 0x10(0x4)
-	char                                                         pad0x4_PO7L5[0x4];                                 // 0x14(0x4)
-	TArray<Struct IPGCompatibleSet>                              Compatibility;                                     // 0x18(0x10)
+	char                                                         pad0x4_5P471[0x4];                                 // 0x14(0x4)
+	TArray<struct Compatibility>                                 Compatibility;                                     // 0x18(0x10)
 };
 
 
@@ -270,8 +270,8 @@ public:
 struct WardrobeConfig
 {
 public:
-	TArray<Struct ClothingSlot>                                  Slots;                                             // 0x0(0x10)
-	TArray<Struct FName>                                         Priority;                                          // 0x10(0x10)
+	TArray<struct Slots>                                         Slots;                                             // 0x0(0x10)
+	TArray<struct FName>                                         Priority;                                          // 0x10(0x10)
 };
 
 
@@ -280,7 +280,7 @@ struct ClothingSlot
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct FName>                                         Tags;                                              // 0x8(0x10)
+	TArray<struct FName>                                         Tags;                                              // 0x8(0x10)
 	byte                                                         Type;                                              // 0x18(0x1)
 };
 
@@ -289,11 +289,11 @@ public:
 struct Outfit
 {
 public:
-	TArray<Struct FName>                                         PartNames;                                         // 0x0(0x10)
-	TArray<Struct FName>                                         FreeSlots;                                         // 0x10(0x10)
-	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x20(0x10)
-	TArray<Struct FName>                                         MaterialReferences;                                // 0x30(0x10)
-	TArray<Struct ClothingVFX>                                   VFXs;                                              // 0x40(0x10)
+	TArray<struct FName>                                         PartNames;                                         // 0x0(0x10)
+	TArray<struct FName>                                         FreeSlots;                                         // 0x10(0x10)
+	TArray<struct ScalarParameters>                              ScalarParameters;                                  // 0x20(0x10)
+	TArray<struct FName>                                         MaterialReferences;                                // 0x30(0x10)
+	TArray<struct VFXs>                                          VFXs;                                              // 0x40(0x10)
 };
 
 
@@ -302,8 +302,8 @@ struct ClothingVFX
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct FName>                                         Sockets;                                           // 0x8(0x10)
-	TArray<Struct FName>                                         Slots;                                             // 0x18(0x10)
+	TArray<struct FName>                                         Sockets;                                           // 0x8(0x10)
+	TArray<struct FName>                                         Slots;                                             // 0x18(0x10)
 };
 
 
@@ -314,13 +314,13 @@ public:
 	struct FName                                                 Type;                                              // 0x0(0x8)
 	struct FName                                                 Name;                                              // 0x8(0x8)
 	TArray<Byte CompatiblePirateTypes>                           CompatiblePirateTypes;                             // 0x10(0x10)
-	TArray<Struct FName>                                         Variants;                                          // 0x20(0x10)
-	TArray<Struct FName>                                         NewSlots;                                          // 0x30(0x10)
+	TArray<struct FName>                                         Variants;                                          // 0x20(0x10)
+	TArray<struct FName>                                         NewSlots;                                          // 0x30(0x10)
 	struct FName                                                 Parent;                                            // 0x40(0x8)
-	TArray<Struct ClothingPart>                                  Parts;                                             // 0x48(0x10)
-	TArray<Struct ClothingVFX>                                   VFXs;                                              // 0x58(0x10)
-	TArray<Struct IPGScalarParameter>                            ScalarParameters;                                  // 0x68(0x10)
-	TArray<Struct FName>                                         MaterialReferences;                                // 0x78(0x10)
+	TArray<struct Parts>                                         Parts;                                             // 0x48(0x10)
+	TArray<struct VFXs>                                          VFXs;                                              // 0x58(0x10)
+	TArray<struct ScalarParameters>                              ScalarParameters;                                  // 0x68(0x10)
+	TArray<struct FName>                                         MaterialReferences;                                // 0x78(0x10)
 };
 
 
@@ -329,7 +329,7 @@ struct ClothingPart
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct FName>                                         Slots;                                             // 0x8(0x10)
+	TArray<struct FName>                                         Slots;                                             // 0x8(0x10)
 	byte                                                         Gender;                                            // 0x18(0x1)
 	byte                                                         PartType;                                          // 0x19(0x1)
 };
@@ -350,7 +350,7 @@ struct BlendedSubMeshSpecification
 public:
 	Class SkeletalMesh*                                          Mesh;                                              // 0x0(0x8)
 	float                                                        BaseMeshWeight;                                    // 0x8(0x4)
-	char                                                         pad0x4_1G0Y9[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_RS1IE[0x4];                                 // 0xc(0x4)
 	TArray<class MeshPatchAsset*>                                MeshPatchAssets;                                   // 0x10(0x10)
 	TArray<Float MeshPatchAssetWeights>                          MeshPatchAssetWeights;                             // 0x20(0x10)
 };
@@ -361,7 +361,7 @@ struct MaterialReferencesEntry
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct MaterialReferenceEntry>                        References;                                        // 0x8(0x10)
+	TArray<struct References>                                    References;                                        // 0x8(0x10)
 };
 
 
@@ -371,7 +371,7 @@ struct MaterialReferenceEntry
 public:
 	bool                                                         bCopyParametersAcross;                             // 0x0(0x1)
 	bool                                                         bReplaceAll;                                       // 0x1(0x1)
-	char                                                         pad0x6_RQFEI[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_29EAU[0x6];                                 // 0x2(0x6)
 	Class MaterialInterface*                                     FromMaterial;                                      // 0x8(0x8)
 	Class MaterialInstanceConstant*                              ToMaterial;                                        // 0x10(0x8)
 };
@@ -382,7 +382,7 @@ struct PirateGeneratorTextureReference
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct FName>                                         References;                                        // 0x8(0x10)
+	TArray<struct FName>                                         References;                                        // 0x8(0x10)
 };
 
 
@@ -427,7 +427,7 @@ struct TextureSwitchEthnicityEntry
 {
 public:
 	byte                                                         Ethnicity;                                         // 0x0(0x1)
-	char                                                         pad0x7_KFX4U[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_9M5UA[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  Texture;                                           // 0x8(0x10)
 };
 
@@ -437,7 +437,7 @@ struct TextureSwitchGenderEntry
 {
 public:
 	byte                                                         Gender;                                            // 0x0(0x1)
-	char                                                         pad0x7_KKOED[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_1BULC[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  Texture;                                           // 0x8(0x10)
 };
 
@@ -457,15 +457,15 @@ struct TextureSwitchParameters
 public:
 	bool                                                         bAsync;                                            // 0x8(0x1)
 	bool                                                         bHighPriority;                                     // 0x9(0x1)
-	char                                                         pad0x2_FNVNY[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_ZK6MQ[0x2];                                 // 0xa(0x2)
 	int                                                          Seed;                                              // 0xc(0x4)
 	byte                                                         SelectedGender;                                    // 0x10(0x1)
 	byte                                                         SelectedEthnicity;                                 // 0x11(0x1)
-	char                                                         pad0x2_VVD1Q[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_ED42Q[0x2];                                 // 0x12(0x2)
 	struct FName                                                 SelectedBodyShape;                                 // 0x14(0x8)
-	char                                                         pad0x4_OTHI8[0x4];                                 // 0x1c(0x4)
-	TArray<Struct FName>                                         SelectedItems;                                     // 0x20(0x10)
-	TArray<Struct FName>                                         SelectedReferences;                                // 0x30(0x10)
+	char                                                         pad0x4_YTYJM[0x4];                                 // 0x1c(0x4)
+	TArray<struct FName>                                         SelectedItems;                                     // 0x20(0x10)
+	TArray<struct FName>                                         SelectedReferences;                                // 0x30(0x10)
 };
 
 

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CleanlinessComponent:
   Attributes:
-  - Name: pad0x10_31NBH[0x10]
+  - Name: pad0x10_M3ZWB[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -22,7 +22,7 @@ CleanlinessComponent:
     Offset: '0xf0'
     Size: '0x4'
     Type: float
-  - Name: pad0x5c_QI923[0x5c]
+  - Name: pad0x5c_TPAWZ[0x5c]
     Offset: '0xf2'
     Size: '0x5c'
     Type: char

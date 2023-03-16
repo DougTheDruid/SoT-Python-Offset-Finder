@@ -24,10 +24,10 @@ public:
 class SimpleOverlapZone: public Actor
 {
 public:
-	char                                                         pad0xc8_WDJFT[0xc8];                               // 0x3c8(0xc8)
+	char                                                         pad0xc8_HDF0J[0xc8];                               // 0x3c8(0xc8)
 	Class BoxComponent*                                          CollisionMesh;                                     // 0x490(0x8)
 	bool                                                         StartActive;                                       // 0x498(0x1)
-	char                                                         pad0x9_OXJWT[0x9];                                 // 0x497(0x9)
+	char                                                         pad0x9_3G4HR[0x9];                                 // 0x497(0x9)
 };
 
 

@@ -20,7 +20,7 @@ ActiveNPCDemands:
   - Name: NPCDemands
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct ActiveCommodityDemands>
+    Type: TArray<struct NPCDemands>
   ClassSize: '0x20'
 CommodityDescWithRedeemId:
   Attributes:
@@ -39,7 +39,7 @@ CommodityRedemptionTrackingModel:
     Offset: '0x2'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_U0ACG[0x5]
+  - Name: pad0x5_9KM4X[0x5]
     Offset: '0x3'
     Size: '0x5'
     Type: char
@@ -72,7 +72,7 @@ CommodityTrackingModel:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_0T3LA[0x7]
+  - Name: pad0x7_HRBUY[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -97,7 +97,7 @@ EntitlementToRedeemItems:
   - Name: RedeemItems
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct CommodityDescWithRedeemId>
+    Type: TArray<struct RedeemItems>
   ClassSize: '0x18'
 EventCommodityCrateRedeemed:
   Attributes: []

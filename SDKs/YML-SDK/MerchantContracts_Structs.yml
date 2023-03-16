@@ -16,7 +16,7 @@ MerchantContract:
   - Name: DeliveryRequests
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct MerchantContractDeliveryRequest>
+    Type: TArray<struct DeliveryRequests>
   ClassSize: '0xc0'
 MerchantContractDeliveryRequest:
   Attributes:
@@ -24,7 +24,7 @@ MerchantContractDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SEFIE[0x4]
+  - Name: pad0x4_Q8N99[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -54,7 +54,7 @@ MerchantContractItemDesc:
   - Name: ItemData
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ItemAndReward>
+    Type: TArray<struct ItemData>
   - Name: FaunaSpecies
     Offset: '0x18'
     Size: '0x8'
@@ -77,5 +77,5 @@ PlayerMerchantContract:
   - Name: Requests
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct MerchantContractDeliveryRequest>
+    Type: TArray<struct Requests>
   ClassSize: '0x28'

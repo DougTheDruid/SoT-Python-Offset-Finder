@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AreaOfEffectHealAIAbility:
   Attributes:
-  - Name: pad0x10_W3O1B[0x10]
+  - Name: pad0x10_CRHU2[0x10]
     Offset: '0x78'
     Size: '0x10'
     Type: char
@@ -10,7 +10,7 @@ AreaOfEffectHealAIAbility:
     Offset: '0x88'
     Size: '0x8'
     Type: Class Actor*
-  - Name: pad0x20_U6RB9[0x20]
+  - Name: pad0x20_ITPBT[0x20]
     Offset: '0x8e'
     Size: '0x20'
     Type: char
@@ -62,7 +62,7 @@ BullRushAIAbility:
     Offset: '0x98'
     Size: '0x8'
     Type: Class World*
-  - Name: pad0x28_G56HQ[0x28]
+  - Name: pad0x28_K5TOC[0x28]
     Offset: '0x9e'
     Size: '0x28'
     Type: char
@@ -76,7 +76,7 @@ BullRushAIAbilityParams:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_44FG0[0x4]
+  - Name: pad0x4_DCKBN[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ BullRushAIAbilityParams:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_HLANA[0xc]
+  - Name: pad0xc_08CRE[0xc]
     Offset: '0xfa'
     Size: '0xc'
     Type: char
@@ -122,7 +122,7 @@ BurrowHealVFXComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KU481[0x4]
+  - Name: pad0x4_1MZIZ[0x4]
     Offset: '0xdc'
     Size: '0x4'
     Type: char
@@ -134,7 +134,7 @@ BurrowHealVFXComponent:
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x31_RBXBY[0x31]
+  - Name: pad0x31_DS2CJ[0x31]
     Offset: '0xe7'
     Size: '0x31'
     Type: char
@@ -206,7 +206,7 @@ EelThrowAIAbilityType:
   Super: AthenaAIAbilityType
 ElectricShieldBuffComponent:
   Attributes:
-  - Name: pad0x8_H7C1R[0x8]
+  - Name: pad0x8_JVNZV[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -234,7 +234,7 @@ ElectricShieldBuffComponent:
     Offset: '0xf8'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb9_RANQ1[0xb9]
+  - Name: pad0xb9_LYCIK[0xb9]
     Offset: '0xf7'
     Size: '0xb9'
     Type: char
@@ -283,7 +283,7 @@ MeleeAIAbilityParams:
   - Name: MeleeAttacks
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct MeleeAttackIdWeights>
+    Type: TArray<struct MeleeAttacks>
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -336,7 +336,7 @@ StatusResponseActivateElectricShield:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_0V7QV[0xc]
+  - Name: pad0xc_WLWOK[0xc]
     Offset: '0x32'
     Size: '0xc'
     Type: char

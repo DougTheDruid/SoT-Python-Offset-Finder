@@ -1,45 +1,27 @@
 {
   "BP_LeverMechanismTrigger_SovereignHut_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x438",
-    "InheritedSize": "0x408",
-    "ClassSize": "0x30",
+    "Super": "SwitchMechanismTrigger",
+    "FullSize": "0x580",
+    "InheritedSize": "0x568",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Interactable",
+        "Type": "Class InteractableComponent*",
+        "Size": "0x8",
+        "Offset": "0x568"
+      },
+      {
+        "Name": "LeverMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x408"
+        "Offset": "0x570"
       },
       {
-        "Name": "None",
+        "Name": "BaseMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "None",
-        "Type": "Class NonVagueNonUniqueLandmarkComponent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x578"
       }
     ]
   },

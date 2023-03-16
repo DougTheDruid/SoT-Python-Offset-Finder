@@ -62,11 +62,11 @@ TrinketLoadout:
   - Name: TrinketEntries
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct TrinketLoadoutEntry>
+    Type: TArray<struct TrinketEntries>
   - Name: TrinketOwnerXUIDs
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct UniqueNetIdRepl>
+    Type: TArray<struct TrinketOwnerXUIDs>
   ClassSize: '0x48'
 TrinketLoadoutEntry:
   Attributes:
@@ -84,7 +84,7 @@ TrinketLoadoutModel:
   - Name: Trinkets
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct TrinketLoadoutModelEntry>
+    Type: TArray<struct Trinkets>
   ClassSize: '0x10'
 TrinketLoadoutModelEntry:
   Attributes:
@@ -96,7 +96,7 @@ TrinketLoadoutModelEntry:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H5QZF[0x4]
+  - Name: pad0x4_YE9NB[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

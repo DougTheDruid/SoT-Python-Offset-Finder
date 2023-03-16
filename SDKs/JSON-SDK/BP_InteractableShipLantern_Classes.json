@@ -6,109 +6,109 @@
     "ClassSize": "0x75",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
-        "Name": "Interactable",
+        "Name": "None",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "LanternGlow",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
-        "Name": "Lantern",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
-        "Name": "Hook",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "DynamicMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x700"
       },
       {
-        "Name": "DynamicGlowMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
-        "Name": "FlameParameterName",
+        "Name": "None",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x710"
       },
       {
-        "Name": "GlowBrightnessParameterName",
+        "Name": "None",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x718"
       },
       {
-        "Name": "GlowRandomSeedParameterName",
+        "Name": "None",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x720"
       },
       {
-        "Name": "FlameIntensityOn",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x728"
       },
       {
-        "Name": "FlameIntensityOff",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x72c"
       },
       {
-        "Name": "GlowIntensityOn",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x730"
       },
       {
-        "Name": "GlowIntensityOff",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x734"
       },
       {
-        "Name": "Uses Glow",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x738"
       },
       {
-        "Name": "pad0x3_TBTEP[0x3]",
+        "Name": "pad0x3_DITQ5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x739"
       },
       {
-        "Name": "DefaultGlowColour",
+        "Name": "None",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x73c"
       },
       {
-        "Name": "CurrentFlameOFateType",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x74c"

@@ -2,47 +2,47 @@
 # https://github.com/DougTheDruid
 BP_onboarding_intro_tavern_table_C:
   Attributes:
-  - Name: None
+  - Name: Candle VFX
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: OnboardingIntroLocation
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class OnboardingIntroLocationComponent*
-  - Name: None
+  - Name: Table
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Tankard 2
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Plate 2
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Candle 3
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Candle 2
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Tankard 1
     Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Plate 1
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Candle 1
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x418'
     Size: '0x8'
     Type: Class SceneComponent*

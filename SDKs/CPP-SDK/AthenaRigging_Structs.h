@@ -127,7 +127,7 @@ struct RiggingSystemPulleyParams
 public:
 	Struct SocketId                                              Anchor;                                            // 0x0(0x20)
 	float                                                        OffsetFromAnchor;                                  // 0x20(0x4)
-	char                                                         pad0x4_U1JDU[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_DQG3Z[0x4];                                 // 0x24(0x4)
 	Struct PulleyVisualParams                                    Visuals;                                           // 0x28(0x10)
 	Struct RiggingSystemPulleyAttachmentParams                   AttachmentRope;                                    // 0x38(0x14)
 };
@@ -148,7 +148,7 @@ struct RiggingSystemLineParams
 {
 public:
 	Struct SocketId                                              Start;                                             // 0x0(0x20)
-	TArray<Struct RiggingSystemPulleyParams>                     Pulleys;                                           // 0x20(0x10)
+	TArray<struct Pulleys>                                       Pulleys;                                           // 0x20(0x10)
 	Struct SocketId                                              End;                                               // 0x30(0x20)
 	Struct RopeVisualParams                                      Visuals;                                           // 0x50(0xc)
 	Struct RopeCatenaryShapeParams                               Shape;                                             // 0x5c(0x18)
@@ -160,7 +160,7 @@ struct RiggingSystemLineGroup
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<Struct RiggingSystemLineParams>                       Lines;                                             // 0x8(0x10)
+	TArray<struct Lines>                                         Lines;                                             // 0x8(0x10)
 };
 
 

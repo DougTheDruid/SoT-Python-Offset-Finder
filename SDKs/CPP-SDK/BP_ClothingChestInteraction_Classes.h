@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ClothingChestInteraction_C: public ClothingChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x698(0x8)
+	Class SceneComponent*                                        None;                                              // 0x698(0x8)
 };
 
 

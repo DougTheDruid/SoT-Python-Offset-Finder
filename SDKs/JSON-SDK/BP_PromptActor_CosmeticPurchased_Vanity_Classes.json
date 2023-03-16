@@ -25,7 +25,7 @@
       },
       {
         "Name": "CategoryTypes",
-        "Type": "TArray<Class CategoryTypes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x418"
       },

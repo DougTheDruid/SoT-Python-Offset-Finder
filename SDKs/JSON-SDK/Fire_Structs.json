@@ -1,4 +1,21 @@
 {
+  "HullCharringPersistenceModel": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TimeSpentCharring",
+        "Type": "TArray<Float TimeSpentCharring>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TotalCellsOnFire",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "PlayerNearBurningFireGridUpdatedEvent": {
     "ClassSize": "0x8",
     "Attributes": []
@@ -100,7 +117,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_9S8X0[0x2]",
+        "Name": "pad0x2_IUHIV[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -298,7 +315,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_9D1XG[0x4]",
+        "Name": "pad0x4_PSUU8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -340,7 +357,7 @@
         "Offset": "0x2d"
       },
       {
-        "Name": "pad0x2_RT0AP[0x2]",
+        "Name": "pad0x2_L85KB[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2e"
@@ -405,7 +422,7 @@
         "Offset": "0x36"
       },
       {
-        "Name": "pad0x1_IH5Y2[0x1]",
+        "Name": "pad0x1_Y0H0R[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x37"
@@ -429,7 +446,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xf_MRTQJ[0xf]",
+        "Name": "pad0xf_TKQI2[0xf]",
         "Type": "char",
         "Size": "0xf",
         "Offset": "0x41"
@@ -448,7 +465,7 @@
       },
       {
         "Name": "CustomParticleEffectTemplates",
-        "Type": "TArray<Struct FireCellStateParticleTemplate>",
+        "Type": "TArray<struct CustomParticleEffectTemplates>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -466,13 +483,13 @@
       },
       {
         "Name": "CustomAddedDiagonalNeighbourOffsets",
-        "Type": "TArray<Struct IntVector>",
+        "Type": "TArray<struct CustomAddedDiagonalNeighbourOffsets>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "CustomRemovedDefaultNeighbourOffsets",
-        "Type": "TArray<Struct IntVector>",
+        "Type": "TArray<struct CustomRemovedDefaultNeighbourOffsets>",
         "Size": "0x10",
         "Offset": "0xf0"
       }
@@ -483,7 +500,7 @@
     "Attributes": [
       {
         "Name": "DefaultParticleTemplates",
-        "Type": "TArray<Struct FireCellStateParticleTemplate>",
+        "Type": "TArray<struct DefaultParticleTemplates>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -611,7 +628,7 @@
     "Attributes": [
       {
         "Name": "ParticleSpawnLODs",
-        "Type": "TArray<Struct FireParticleSpawnData>",
+        "Type": "TArray<struct ParticleSpawnLODs>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -627,7 +644,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_B6JYB[0x8]",
+        "Name": "pad0x8_S540R[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x38"
@@ -645,19 +662,19 @@
     "Attributes": [
       {
         "Name": "InteriorSmokeSpawnDescs",
-        "Type": "TArray<Struct FireGridRelativeSpawnDesc>",
+        "Type": "TArray<struct InteriorSmokeSpawnDescs>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LowDetailVFXSpawnDescs",
-        "Type": "TArray<Struct FireGridLowDetailRelativeSpawnDesc>",
+        "Type": "TArray<struct LowDetailVFXSpawnDescs>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ParticleSpawnLODSettings",
-        "Type": "TArray<Struct FireParticleSpawnData>",
+        "Type": "TArray<struct ParticleSpawnLODSettings>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -669,7 +686,7 @@
       },
       {
         "Name": "ExteriorSmokeVFXSpawnDescs",
-        "Type": "TArray<Struct FireGridLowDetailRelativeSpawnDesc>",
+        "Type": "TArray<struct ExteriorSmokeVFXSpawnDescs>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -691,7 +708,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_3LHEN[0x8]",
+        "Name": "pad0x8_F0CI4[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -726,7 +743,7 @@
       },
       {
         "Name": "ShipFireDamageParams",
-        "Type": "TArray<Struct ActorFireDamageParams>",
+        "Type": "TArray<struct ShipFireDamageParams>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -788,7 +805,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_25VPL[0x4]",
+        "Name": "pad0x4_H8WX1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -828,7 +845,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_7RPHE[0x4]",
+        "Name": "pad0x4_RR6WI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -851,7 +868,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_2VIF0[0x4]",
+        "Name": "pad0x4_AQKJP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -910,7 +927,7 @@
     "Attributes": [
       {
         "Name": "LightSpawnDescs",
-        "Type": "TArray<Struct ShipFireLightRelativeSpawnDesc>",
+        "Type": "TArray<struct LightSpawnDescs>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -922,7 +939,7 @@
       },
       {
         "Name": "Lights",
-        "Type": "TArray<Struct ShipFireLight>",
+        "Type": "TArray<struct Lights>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -969,7 +986,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x4_CGR7S[0x4]",
+        "Name": "pad0x4_2I8EZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x114"
@@ -985,23 +1002,6 @@
         "Type": "Class PostProcessComponent*",
         "Size": "0x8",
         "Offset": "0x120"
-      }
-    ]
-  },
-  "HullCharringPersistenceModel": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TimeSpentCharring",
-        "Type": "TArray<Float TimeSpentCharring>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TotalCellsOnFire",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
       }
     ]
   },

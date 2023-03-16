@@ -2,43 +2,43 @@
 # https://github.com/DougTheDruid
 BP_Sea_Fort_WindowGlows_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: glows
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: window_planes
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: SharedRoot
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: FadeCurve_Fade_F995538E47EE9A6B32A4C3A8CF00537A
+  - Name: None
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: FadeCurve__Direction_F995538E47EE9A6B32A4C3A8CF00537A
+  - Name: None
     Offset: '0x3ec'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8WGJ6[0x3]
+  - Name: pad0x3_SCYNT[0x3]
     Offset: '0x3ed'
     Size: '0x3'
     Type: char
-  - Name: FadeCurve
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class TimelineComponent*
-  - Name: WindowDynamicMaterial
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: GlowDynamicMaterial
+  - Name: None
     Offset: '0x400'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*

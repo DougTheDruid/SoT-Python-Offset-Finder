@@ -12,9 +12,9 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x93_5MIMR[0x93]",
+        "Name": "pad0x132_NBWB0[0x132]",
         "Type": "char",
-        "Size": "0x93",
+        "Size": "0x132",
         "Offset": "0x120"
       },
       {
@@ -36,7 +36,7 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x3_0I9KE[0x3]",
+        "Name": "pad0x3_BZQWV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x171"
@@ -48,14 +48,14 @@
         "Offset": "0x174"
       },
       {
-        "Name": "pad0x4_DWJWE[0x4]",
+        "Name": "pad0x4_ITACI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x17c"
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
+        "Type": "TArray<struct Prompts>",
         "Size": "0x10",
         "Offset": "0x180"
       },

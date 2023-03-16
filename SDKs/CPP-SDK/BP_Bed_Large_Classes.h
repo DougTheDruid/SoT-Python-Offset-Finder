@@ -7,10 +7,10 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8 (Full Size[0x3e0] - InheritedSize[0x3d8]
-class BP_Bed_Large_C: public BP_Bed_C
+class BP_Bed_Large_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   DrapesMeshComponent;                               // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
 };
 
 

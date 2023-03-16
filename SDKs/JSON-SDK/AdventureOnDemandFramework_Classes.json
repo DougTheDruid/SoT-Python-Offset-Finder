@@ -1,0 +1,222 @@
+{
+  "AdventureOnDemandDisplayHintPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandDisplayHintPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandForceIslandBannerStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandForceIslandBannerStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandService": {
+    "Super": "Actor",
+    "FullSize": "0x448",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "pad0x10_HVD5B[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "Params",
+        "Type": "Class AdventureOnDemandServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x48_BEHF7[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "DiveToTunnelEntries",
+        "Type": "TArray<struct DiveToTunnelEntries>",
+        "Size": "0x10",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "LeaveTunnelEntries",
+        "Type": "TArray<struct LeaveTunnelEntries>",
+        "Size": "0x10",
+        "Offset": "0x438"
+      }
+    ]
+  },
+  "AdventureOnDemandServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "DiveToTunnelVoyageDesc",
+        "Type": "Class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "VoyageTunnelDesc",
+        "Type": "Class TunnelDesc*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "LeaveTunnelVoyageDesc",
+        "Type": "Class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "EQSRadiusRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_E256G[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "ExtraSpawnDistanceFromIsland",
+        "Type": "TArray<struct ExtraSpawnDistanceFromIsland>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VoyageHintPopupDescs",
+        "Type": "TArray<struct VoyageHintPopupDescs>",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "AdventureOnDemandSetDirectionToApproachTargetFromStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandSetDirectionToApproachTargetFromStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "DirectionToApproachTargetFrom",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "PointOfInterestToGetDirectionToTargetFrom",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "ActorToGetDirectionToTargetFrom",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "AdventureOnDemandSetHintPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandSetHintPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HintPopup",
+        "Type": "Class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "AdventureOnDemandSetTargetLocationStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandSetTargetLocationStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x140",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "IslandName",
+        "Type": "Struct QuestVariableName",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "IslandData",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "TargetLocation",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "RadiusFromTarget",
+        "Type": "Struct QuestVariableFloat",
+        "Size": "0x30",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

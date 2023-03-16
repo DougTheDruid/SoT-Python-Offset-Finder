@@ -11,7 +11,7 @@ class BP_Prompt_ChooseFaction_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x93_9SNP6[0x93];                               // 0x120(0x93)
+	char                                                         pad0x132_QG4RK[0x132];                             // 0x120(0x132)
 	Struct ObjectMessagingHandle                                 HandleChoseFaction;                                // 0x120(0x48)
 	Struct PrioritisedPromptWithHandle                           PromptPirateLord1;                                 // 0x168(0x68)
 	Struct PrioritisedPromptWithHandle                           PromptFlameheart1;                                 // 0x1d0(0x68)
@@ -21,7 +21,7 @@ public:
 	float                                                        PromptDisplayDuration;                             // 0x30c(0x4)
 	bool                                                         FactionPromptFinished;                             // 0x310(0x1)
 	bool                                                         FactionChosen;                                     // 0x311(0x1)
-	char                                                         pad0x6_W7B5L[0x6];                                 // 0x312(0x6)
+	char                                                         pad0x6_KY31Y[0x6];                                 // 0x312(0x6)
 	class                                                        CurrentFaction;                                    // 0x318(0x8)
 	bool                                                         WarmapOpen;                                        // 0x320(0x1)
 	bool                                                         WarMapPromptFinished;                              // 0x321(0x1)

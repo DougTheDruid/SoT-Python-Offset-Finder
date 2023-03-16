@@ -21,8 +21,8 @@ struct SirenPuzzleLockState
 {
 public:
 	Struct Guid                                                  LockId;                                            // 0x0(0x10)
-	TArray<Struct LandmarkReactionKeyFrame>                      UnlockReactions;                                   // 0x10(0x10)
-	TArray<Struct Guid>                                          UnlockingCrews;                                    // 0x20(0x10)
+	TArray<struct UnlockReactions>                               UnlockReactions;                                   // 0x10(0x10)
+	TArray<struct UnlockingCrews>                                UnlockingCrews;                                    // 0x20(0x10)
 };
 
 

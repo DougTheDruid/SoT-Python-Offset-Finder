@@ -6,7 +6,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x28_7KT1I[0x28]",
+        "Name": "pad0x28_AASMF[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xc8"
@@ -18,7 +18,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x30_JMKWM[0x30]",
+        "Name": "pad0x30_P8CNY[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xf6"
@@ -46,13 +46,13 @@
       },
       {
         "Name": "MenuEntires",
-        "Type": "TArray<Struct DebugMenuDataAssetEntry>",
+        "Type": "TArray<struct MenuEntires>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "ButtonShortcuts",
-        "Type": "TArray<Struct DebugMenuButtonShortcut>",
+        "Type": "TArray<struct ButtonShortcuts>",
         "Size": "0x10",
         "Offset": "0x48"
       },

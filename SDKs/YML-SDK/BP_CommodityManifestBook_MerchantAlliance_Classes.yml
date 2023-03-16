@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_CommodityManifestBook_MerchantAlliance_C:
   Attributes:
-  - Name: NPCDialog
+  - Name: None
     Offset: '0x510'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x518'
     Size: '0x8'
     Type: Class SceneComponent*

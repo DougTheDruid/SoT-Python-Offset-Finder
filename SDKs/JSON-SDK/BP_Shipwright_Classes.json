@@ -6,55 +6,55 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
-        "Name": "None",
+        "Name": "NamedNPC",
         "Type": "Class NamedNPCComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "None",
+        "Name": "CargoRunParticipant",
         "Type": "Class CargoRunParticipantComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
       {
-        "Name": "None",
+        "Name": "NPCDialogComponent",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x6a8"
       },
       {
-        "Name": "None",
+        "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
       },
       {
-        "Name": "None",
+        "Name": "SolidHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x6b8"
       },
       {
-        "Name": "None",
+        "Name": "WwiseEmitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x6c0"
       },
       {
-        "Name": "None",
+        "Name": "WwiseShipwrightHummingPlay",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "None",
+        "Name": "WwiseShipwrightHummingStop",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x6e8"

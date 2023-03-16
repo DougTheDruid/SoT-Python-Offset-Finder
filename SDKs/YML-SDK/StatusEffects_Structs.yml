@@ -5,12 +5,12 @@ ActiveStatusEffect:
   - Name: SourceStatus
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class SourceStatus>
+    Type: TArray<class Class*>
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
     Type: Struct StatusDescriptor
-  - Name: pad0x4_AYT4G[0x4]
+  - Name: pad0x4_5HEOX[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -64,7 +64,7 @@ EventAppliedStatusToTargets:
   - Name: StatusApplied
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class StatusApplied>
+    Type: TArray<class Class*>
   - Name: Targets
     Offset: '0x10'
     Size: '0x10'
@@ -186,7 +186,7 @@ Status:
   - Name: Type
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Class Type>
+    Type: TArray<class Class*>
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'

@@ -2,31 +2,35 @@
 # https://github.com/DougTheDruid
 wld_bush_cluster_01_b_C:
   Attributes:
-  - Name: NonVagueNonUniqueLandmark
+  - Name: pad0x7cccd0d5_UXJA7[0x7cccd0d5]
+    Offset: '-0x7ccccccd'
+    Size: '0x7cccd0d5'
+    Type: char
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class NonVagueNonUniqueLandmarkComponent*
-  - Name: wld_trunk_01_a
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_bush_banana_01_a
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_bush_01_a_02
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_bush_01_a_01
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: SharedRoot
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x30'
+  ClassSize: '0x7cccd105'
   FullSize: '0x438'
-  InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+  InheritedSize: '-0x7ccccccd'
+  Super: ''

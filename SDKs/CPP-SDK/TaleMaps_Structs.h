@@ -17,7 +17,7 @@ public:
 struct TaleQuestChecklistItem
 {
 public:
-	TArray<Struct ChecklistActionProgressTracker>                ChecklistActions;                                  // 0x0(0x10)
+	TArray<struct ChecklistActions>                              ChecklistActions;                                  // 0x0(0x10)
 };
 
 

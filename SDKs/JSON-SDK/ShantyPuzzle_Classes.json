@@ -12,26 +12,26 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_ZBCGM[0x4]",
+        "Name": "pad0x4_ZG0QJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
       },
       {
         "Name": "StartCompletionReaction",
-        "Type": "TArray<Struct LandmarkReactionKeyFrame>",
+        "Type": "TArray<struct StartCompletionReaction>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "AbortCompletionReaction",
-        "Type": "TArray<Struct LandmarkReactionKeyFrame>",
+        "Type": "TArray<struct AbortCompletionReaction>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "PuzzleCompletedReaction",
-        "Type": "TArray<Struct LandmarkReactionKeyFrame>",
+        "Type": "TArray<struct PuzzleCompletedReaction>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
@@ -57,7 +57,7 @@
     "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "pad0x8_L1KI7[0x8]",
+        "Name": "pad0x8_UVUOF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
@@ -70,7 +70,7 @@
       },
       {
         "Name": "ShantyPuzzleInteractionZoneDefinitions",
-        "Type": "TArray<Struct ShantyPuzzleInteractionZoneDefinition>",
+        "Type": "TArray<struct ShantyPuzzleInteractionZoneDefinitions>",
         "Size": "0x10",
         "Offset": "0x2f0"
       },
@@ -87,7 +87,7 @@
         "Offset": "0x301"
       },
       {
-        "Name": "pad0x6_VW26J[0x6]",
+        "Name": "pad0x6_WZT09[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x302"
@@ -111,7 +111,7 @@
         "Offset": "0x328"
       },
       {
-        "Name": "pad0xd0_PEL15[0xd0]",
+        "Name": "pad0xd0_4QF8A[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0x32e"

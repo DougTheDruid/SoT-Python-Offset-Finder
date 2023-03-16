@@ -50,7 +50,7 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x3_ZZ3SR[0x3]",
+        "Name": "pad0x3_I55WL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x45"
@@ -80,7 +80,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x3_B3O9N[0x3]",
+        "Name": "pad0x3_9PD03[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x61"
@@ -98,7 +98,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x3_00G45[0x3]",
+        "Name": "pad0x3_7OEI1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x69"
@@ -116,7 +116,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x3_BBFST[0x3]",
+        "Name": "pad0x3_KEODH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x75"
@@ -134,7 +134,7 @@
         "Offset": "0x7c"
       },
       {
-        "Name": "pad0x3_0MVLG[0x3]",
+        "Name": "pad0x3_UC0EM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x7d"
@@ -158,14 +158,14 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x4_W3EI3[0x4]",
+        "Name": "pad0x4_IQ9W7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
       },
       {
         "Name": "LandscapeLayers",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -182,7 +182,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x3_1Q9AK[0x3]",
+        "Name": "pad0x3_WA07Z[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xb1"
@@ -218,7 +218,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x3_WYRGD[0x3]",
+        "Name": "pad0x3_6FNFD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xed"
@@ -284,7 +284,7 @@
         "Offset": "0xf9"
       },
       {
-        "Name": "pad0x2_DNUCK[0x2]",
+        "Name": "pad0x2_N9DZW[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xfa"
@@ -302,7 +302,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_M08BG[0x7]",
+        "Name": "pad0x7_BP2AA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
@@ -320,7 +320,7 @@
         "Offset": "0x288"
       },
       {
-        "Name": "pad0x7_HQMGG[0x7]",
+        "Name": "pad0x7_AC33O[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x289"
@@ -332,7 +332,7 @@
         "Offset": "0x298"
       },
       {
-        "Name": "pad0x3_JOXTW[0x3]",
+        "Name": "pad0x3_4ME1Z[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x299"
@@ -404,7 +404,7 @@
         "Offset": "0x2c1"
       },
       {
-        "Name": "pad0x2_V6RGD[0x2]",
+        "Name": "pad0x2_SHAUF[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2c2"
@@ -536,7 +536,7 @@
         "Offset": "0x35d"
       },
       {
-        "Name": "pad0x4_DCFJL[0x4]",
+        "Name": "pad0x4_J5HEN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x35c"
@@ -667,7 +667,7 @@
         "Offset": "0x430"
       },
       {
-        "Name": "pad0xc_L1T0F[0xc]",
+        "Name": "pad0xc_4IVL4[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x432"
@@ -714,7 +714,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x4_O3FOH[0x4]",
+        "Name": "pad0x4_VB6I9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
@@ -758,14 +758,14 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_RSXTI[0x4]",
+        "Name": "pad0x4_6HQBS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "FoliageTypes",
-        "Type": "TArray<Struct FoliageTypeObject>",
+        "Type": "TArray<struct FoliageTypes>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -776,7 +776,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x21_LVR0L[0x21]",
+        "Name": "pad0x21_812X6[0x21]",
         "Type": "char",
         "Size": "0x21",
         "Offset": "0x47"
@@ -796,19 +796,19 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0xa0_UXCNJ[0xa0]",
+        "Name": "pad0xa0_1IPXY[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x30"
       },
       {
         "Name": "InstancesArray",
-        "Type": "TArray<Struct ProceduralFoliageInstance>",
+        "Type": "TArray<struct InstancesArray>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x90_UVOV3[0x90]",
+        "Name": "pad0x90_JSRID[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0xde"

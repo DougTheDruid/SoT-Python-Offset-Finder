@@ -2,43 +2,43 @@
 # https://github.com/DougTheDruid
 BP_LargeShip_QuestTable_C:
   Attributes:
-  - Name: WarMap
+  - Name: None
     Offset: '0x878'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: FactionHourglass
+  - Name: None
     Offset: '0x880'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: CancelAdventure
+  - Name: None
     Offset: '0x888'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: PlayerBuiredItemsMapBundleInteractionPoint
+  - Name: None
     Offset: '0x890'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: CancelTale
+  - Name: None
     Offset: '0x898'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: CancelVoyage
+  - Name: None
     Offset: '0x8a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot4
+  - Name: None
     Offset: '0x8a8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot3
+  - Name: None
     Offset: '0x8b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot2
+  - Name: None
     Offset: '0x8b8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot1
+  - Name: None
     Offset: '0x8c0'
     Size: '0x8'
     Type: Class ChildActorComponent*

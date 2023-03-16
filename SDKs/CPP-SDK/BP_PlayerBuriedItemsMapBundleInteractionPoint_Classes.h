@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_PlayerBuriedItemsMapBundleInteractionPoint_C: public Actor
 {
 public:
-	Class PlayerBuriedItemsMapBundleInteractionComponent*        PlayerBuriedItemsMapBundleInteraction;             // 0x3c8(0x8)
-	Class ActionRulesComponent*                                  ActionRules;                                       // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   Mesh;                                              // 0x3d8(0x8)
-	Class StaticMesh*                                            Token Asset;                                       // 0x3e0(0x8)
-	float                                                        Show Token Animation Time;                         // 0x3e8(0x4)
-	char                                                         pad0x4_Z7J6F[0x4];                                 // 0x3ec(0x4)
-	Class MaterialInterface*                                     Token Material;                                    // 0x3f0(0x8)
+	Class PlayerBuriedItemsMapBundleInteractionComponent*        None;                                              // 0x3c8(0x8)
+	Class ActionRulesComponent*                                  None;                                              // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
+	Class StaticMesh*                                            None;                                              // 0x3e0(0x8)
+	float                                                        None;                                              // 0x3e8(0x4)
+	char                                                         pad0x4_VF8ED[0x4];                                 // 0x3ec(0x4)
+	Class MaterialInterface*                                     None;                                              // 0x3f0(0x8)
 };
 
 

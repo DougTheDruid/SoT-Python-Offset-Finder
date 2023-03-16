@@ -43,7 +43,7 @@ DynamicPropertyPath:
   - Name: Segments
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct PropertyPathSegment>
+    Type: TArray<struct Segments>
   ClassSize: '0x10'
 EventReply:
   Attributes: []
@@ -58,7 +58,7 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x38'
     Size: '0x78'
     Type: Struct RichCurve
-  - Name: pad0x78_YCZWU[0x78]
+  - Name: pad0x78_XPPW4[0x78]
     Offset: '0xb0'
     Size: '0x78'
     Type: char
@@ -70,7 +70,7 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x1a0'
     Size: '0x78'
     Type: Struct RichCurve
-  - Name: pad0x78_P1B7K[0x78]
+  - Name: pad0x78_WJTB4[0x78]
     Offset: '0x218'
     Size: '0x78'
     Type: char
@@ -107,7 +107,7 @@ MovieSceneWidgetMaterialSectionTemplate:
   - Name: BrushPropertyNamePath
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x58'
 NamedSlotBinding:
   Attributes:
@@ -133,7 +133,7 @@ PropertyPathSegment:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_PZC98[0x4]
+  - Name: pad0x4_RTA40[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ WidgetNavigationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_KP8KX[0x3]
+  - Name: pad0x3_BG157[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

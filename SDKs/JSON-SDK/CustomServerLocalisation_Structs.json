@@ -14,7 +14,7 @@
       },
       {
         "Name": "LocaleEntries",
-        "Type": "TArray<Struct LocPairData>",
+        "Type": "TArray<struct LocaleEntries>",
         "Size": "0x10",
         "Offset": "0x10"
       }

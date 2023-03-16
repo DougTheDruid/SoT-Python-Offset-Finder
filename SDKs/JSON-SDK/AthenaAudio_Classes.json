@@ -64,7 +64,7 @@
         "Offset": "0x2ec"
       },
       {
-        "Name": "pad0x3_I272J[0x3]",
+        "Name": "pad0x3_PL1RG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2ed"
@@ -100,7 +100,7 @@
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x38_N2IVG[0x38]",
+        "Name": "pad0x38_45B43[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x316"
@@ -146,7 +146,7 @@
         "Offset": "0x630"
       },
       {
-        "Name": "pad0x28_AEQQP[0x28]",
+        "Name": "pad0x28_BQSER[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x636"
@@ -180,7 +180,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x18_5PDVX[0x18]",
+        "Name": "pad0x18_2X717[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3ce"
@@ -200,14 +200,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_GUDNH[0x4]",
+        "Name": "pad0x4_CIBTO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<Struct StoryDrivenAudioPortalSetting>",
+        "Type": "TArray<struct StoryResponses>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -262,7 +262,7 @@
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x14_YGICX[0x14]",
+        "Name": "pad0x14_EZPAS[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x31c"
@@ -274,7 +274,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x48_O9LQG[0x48]",
+        "Name": "pad0x48_JZRCF[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x336"

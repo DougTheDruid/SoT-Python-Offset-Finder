@@ -18,7 +18,7 @@ public:
 	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x968(0x8)
 	Class MaterialInstanceDynamic*                               LanternGlowDynamicMaterial;                        // 0x970(0x8)
 	float                                                        EmissiveInt_threshold;                             // 0x978(0x4)
-	char                                                         pad0x4_BE4HP[0x4];                                 // 0x97c(0x4)
+	char                                                         pad0x4_V63CX[0x4];                                 // 0x97c(0x4)
 	Class MaterialInstanceDynamic*                               LanternTriggerGlowDynamicMaterial;                 // 0x980(0x8)
 	float                                                        TriggerGlowDuration;                               // 0x988(0x4)
 	float                                                        TriggerGlowRampInDuration;                         // 0x98c(0x4)
@@ -26,7 +26,7 @@ public:
 	Struct LinearColor                                           DefaultSpotlightColour;                            // 0x994(0x10)
 	Struct LinearColor                                           DefaultAmbientLightColour;                         // 0x9a4(0x10)
 	Struct LinearColor                                           DefaultGlowColour;                                 // 0x9b4(0x10)
-	char                                                         pad0x4_DAA9F[0x4];                                 // 0x9c4(0x4)
+	char                                                         pad0x4_S8KEH[0x4];                                 // 0x9c4(0x4)
 	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x9c8(0x10)
 };
 

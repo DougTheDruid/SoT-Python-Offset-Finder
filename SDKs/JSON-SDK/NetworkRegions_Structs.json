@@ -9,14 +9,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_KO8P5[0x7]",
+        "Name": "pad0x7_977KR[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "CachedAssetsForRegion",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct CachedAssetsForRegion>",
         "Size": "0x10",
         "Offset": "0x8"
       }

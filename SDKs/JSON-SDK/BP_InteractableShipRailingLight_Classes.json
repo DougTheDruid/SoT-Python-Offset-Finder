@@ -6,103 +6,103 @@
     "ClassSize": "0x71",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
-        "Name": "Interactable",
+        "Name": "None",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "LanternGlow",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
-        "Name": "Light",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
-        "Name": "DynamicGlowMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "GlowBrightnessParameterName",
+        "Name": "None",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x700"
       },
       {
-        "Name": "GlowRandomSeedParameterName",
+        "Name": "None",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
-        "Name": "GlowIntensityOn",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x710"
       },
       {
-        "Name": "GlowIntensityOff",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x714"
       },
       {
-        "Name": "UsesGlow",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x718"
       },
       {
-        "Name": "pad0x7_ZRYFD[0x7]",
+        "Name": "pad0x7_0VRQB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x719"
       },
       {
-        "Name": "DynamicMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x720"
       },
       {
-        "Name": "FlameParameterName",
+        "Name": "None",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x728"
       },
       {
-        "Name": "FlameIntensityOn",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x730"
       },
       {
-        "Name": "FlameIntensityOff",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x734"
       },
       {
-        "Name": "DefaultGlowColour",
+        "Name": "None",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x738"
       },
       {
-        "Name": "CurrentFlameOfFateType",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x748"

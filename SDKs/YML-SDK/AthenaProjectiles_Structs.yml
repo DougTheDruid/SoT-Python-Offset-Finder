@@ -6,7 +6,7 @@ GlobalProjectileSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_J1F7Z[0x3]
+  - Name: pad0x3_SG0DE[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -29,12 +29,12 @@ ThrottledProjectileTickPool:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_A71XF[0x4]
+  - Name: pad0x4_I6IH7[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
   - Name: Projectiles
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class Projectiles>
+    Type: TArray<class Class*>
   ClassSize: '0x18'

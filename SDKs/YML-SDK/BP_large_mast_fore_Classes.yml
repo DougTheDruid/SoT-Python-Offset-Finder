@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_large_mast_fore_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0xa38'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: shp_flag_pennant_pole_01_a
+  - Name: None
     Offset: '0xa40'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_flag_pennant_01_a
+  - Name: None
     Offset: '0xa48'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x18'
   FullSize: '0xa50'
   InheritedSize: '0xa38'
-  Super: BP_Mast_C
+  Super: None

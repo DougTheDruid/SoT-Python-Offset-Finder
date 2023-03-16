@@ -6,9 +6,9 @@ BP_Prompt_SpeakingTrumpet_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_CI854[0x93]
+  - Name: pad0x132_NEZQY[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: WieldableItemUseEvent
     Offset: '0x120'
@@ -34,7 +34,7 @@ BP_Prompt_SpeakingTrumpet_C:
     Offset: '0x228'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_NALDX[0x7]
+  - Name: pad0x7_N8QDZ[0x7]
     Offset: '0x229'
     Size: '0x7'
     Type: char
@@ -54,7 +54,7 @@ BP_Prompt_SpeakingTrumpet_C:
     Offset: '0x281'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_LJNI0[0x6]
+  - Name: pad0x6_KAU1Q[0x6]
     Offset: '0x282'
     Size: '0x6'
     Type: char

@@ -1,30 +1,36 @@
 {
   "wld_bush_cluster_01_a_C": {
-    "Super": "BP_Placement_HeightDrop_C",
+    "Super": "",
     "FullSize": "0x428",
-    "InheritedSize": "0x408",
-    "ClassSize": "0x20",
+    "InheritedSize": "-0x7ccccccd",
+    "ClassSize": "0x7cccd0f5",
     "Attributes": [
       {
-        "Name": "wld_bush_03_a",
+        "Name": "pad0x7cccd0d5_RV2KW[0x7cccd0d5]",
+        "Type": "char",
+        "Size": "0x7cccd0d5",
+        "Offset": "-0x7ccccccd"
+      },
+      {
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "wld_bush_banana_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "wld_bush_banana_01_b",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "SharedRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x420"

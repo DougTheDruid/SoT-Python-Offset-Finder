@@ -94,7 +94,7 @@
       },
       {
         "Name": "FeatureOverrides",
-        "Type": "TArray<Struct StringAssetClassPairFeatureOverride>",
+        "Type": "TArray<struct FeatureOverrides>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -178,7 +178,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_L785N[0x3]",
+        "Name": "pad0x3_YDEBL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -200,12 +200,12 @@
     "Attributes": []
   },
   "InlineUserDefinedStructDetails": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "StructWithDefaults",
-        "Type": "Struct UserDefinedStructWithSerialisableValue",
-        "Size": "0x20",
+        "Name": "Struct",
+        "Type": "Class ScriptStruct*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]

@@ -13,12 +13,6 @@
       },
       {
         "Name": "None",
-        "Type": "Class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x750"
-      },
-      {
-        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x758"
@@ -30,10 +24,10 @@
         "Offset": "0x760"
       },
       {
-        "Name": "None",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
-        "Size": "0x8",
-        "Offset": "0x768"
+        "Name": "pad0x18_V85S3[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x766"
       }
     ]
   },

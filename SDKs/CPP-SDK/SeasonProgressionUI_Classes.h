@@ -11,10 +11,10 @@ class SeasonPopupAsset: public DataAsset
 {
 public:
 	struct FName                                                 ThemeId;                                           // 0x28(0x8)
-	TArray<Struct SeasonIconPopupAsset>                          TierInfos;                                         // 0x30(0x10)
-	TArray<Struct SeasonGoalPopupAsset>                          TrialInfos;                                        // 0x40(0x10)
-	TArray<Struct SeasonGoalPopupAsset>                          DeedInfos;                                         // 0x50(0x10)
-	TArray<Struct SeasonGoalPopupAsset>                          RenownActionInfos;                                 // 0x60(0x10)
+	TArray<struct TierInfos>                                     TierInfos;                                         // 0x30(0x10)
+	TArray<struct TrialInfos>                                    TrialInfos;                                        // 0x40(0x10)
+	TArray<struct DeedInfos>                                     DeedInfos;                                         // 0x50(0x10)
+	TArray<struct RenownActionInfos>                             RenownActionInfos;                                 // 0x60(0x10)
 	Struct SeasonIconPopupAsset                                  SeasonInfo;                                        // 0x70(0x68)
 	Struct SeasonIconPopupAsset                                  LevelIncreaseInfo;                                 // 0xd8(0x68)
 	Struct SeasonIconPopupAsset                                  RewardInfo;                                        // 0x140(0x68)
@@ -57,10 +57,10 @@ public:
 class SeasonProgressionUIComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_ANE7F[0x20];                               // 0xc8(0x20)
-	TArray<Struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xe8(0x10)
+	char                                                         pad0x20_APQGX[0x20];                               // 0xc8(0x20)
+	TArray<struct DetailsNavigationDesc>                         DetailsNavigationDesc;                             // 0xe8(0x10)
 	Struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xf8(0x18)
-	char                                                         pad0xd0_DHKHV[0xd0];                               // 0x10e(0xd0)
+	char                                                         pad0xd0_7XQYX[0xd0];                               // 0x10e(0xd0)
 };
 
 
@@ -75,9 +75,9 @@ public:
 class SeasonProgressionUIService: public Actor
 {
 public:
-	char                                                         pad0x30_UW8Z8[0x30];                               // 0x3c8(0x30)
+	char                                                         pad0x30_OLSWV[0x30];                               // 0x3c8(0x30)
 	Class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
-	char                                                         pad0x198_YS1RE[0x198];                             // 0x3fe(0x198)
+	char                                                         pad0x198_7ZZFT[0x198];                             // 0x3fe(0x198)
 };
 
 

@@ -6,22 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60 (Full Size[0xa90] - InheritedSize[0xa30]
-class BP_Castaway_Staff_C: public IntentBasedContinuousAnimatedMechanismAction
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class BP_Castaway_Staff_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0xa30(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0xa38(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0xa40(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa48(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0xa50(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa58(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa60(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa68(0x8)
-	Class SceneComponent*                                        None;                                              // 0xa70(0x8)
-	Class SceneComponent*                                        None;                                              // 0xa78(0x8)
-	BlueprintGeneratedClass None*                                None;                                              // 0xa80(0x8)
-	Class IntentCombinerComponent*                               None;                                              // 0xa88(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3c8(0x8)
 };
 
 

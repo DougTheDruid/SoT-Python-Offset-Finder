@@ -12,7 +12,7 @@ class ChecklistActionData: public Object
 public:
 	int                                                          NumRequiredActions;                                // 0x28(0x4)
 	byte                                                         ActionType;                                        // 0x2c(0x1)
-	char                                                         pad0x5_NL240[0x5];                                 // 0x2b(0x5)
+	char                                                         pad0x5_U1J3D[0x5];                                 // 0x2b(0x5)
 };
 
 
@@ -20,8 +20,8 @@ public:
 class DeliverBootyChecklistActionData: public ChecklistActionData
 {
 public:
-	TArray<AssetClass TargetBootyTypes>                          TargetBootyTypes;                                  // 0x30(0x10)
-	TArray<Class TargetCompanies>                                TargetCompanies;                                   // 0x40(0x10)
+	TArray<Assetclass TargetBootyTypes>                          TargetBootyTypes;                                  // 0x30(0x10)
+	TArray<class Class*>                                         TargetCompanies;                                   // 0x40(0x10)
 };
 
 
@@ -29,7 +29,7 @@ public:
 class KillActorChecklistActionData: public ChecklistActionData
 {
 public:
-	TArray<Class TargetAIClasses>                                TargetAIClasses;                                   // 0x30(0x10)
+	TArray<class Class*>                                         TargetAIClasses;                                   // 0x30(0x10)
 };
 
 
@@ -45,7 +45,7 @@ public:
 class NPCInteractionChecklistActionData: public ChecklistActionData
 {
 public:
-	TArray<Struct Guid>                                          TargetNPCIds;                                      // 0x30(0x10)
+	TArray<struct TargetNPCIds>                                  TargetNPCIds;                                      // 0x30(0x10)
 };
 
 
@@ -53,7 +53,7 @@ public:
 class ChecklistItemsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct ChecklistItem>                                 ChecklistItems;                                    // 0x28(0x10)
+	TArray<struct ChecklistItems>                                ChecklistItems;                                    // 0x28(0x10)
 };
 
 
@@ -66,10 +66,10 @@ public:
 	Class Font*                                                  Font;                                              // 0x7f0(0x8)
 	float                                                        FontScale;                                         // 0x7f8(0x4)
 	float                                                        FontLineSpacingScale;                              // 0x7fc(0x4)
-	char                                                         pad0x8_8NVH2[0x8];                                 // 0x800(0x8)
+	char                                                         pad0x8_6AHEI[0x8];                                 // 0x800(0x8)
 	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x808(0x8)
 	Struct ChecklistMapContents                                  Contents;                                          // 0x810(0xe8)
-	char                                                         pad0x218_7AAKK[0x218];                             // 0x8f6(0x218)
+	char                                                         pad0x218_YAFEI[0x218];                             // 0x8f6(0x218)
 };
 
 
@@ -85,7 +85,7 @@ class ChecklistMapCompletionComponent: public ActorComponent
 {
 public:
 	Class ChecklistActionData*                                   ActionData;                                        // 0xc8(0x8)
-	char                                                         pad0x80_PVQHP[0x80];                               // 0xce(0x80)
+	char                                                         pad0x80_OWQVW[0x80];                               // 0xce(0x80)
 };
 
 
@@ -94,7 +94,7 @@ class ChecklistMapSettings: public DeveloperSettings
 {
 public:
 	Struct StringAssetReference                                  ChecklistMapItemDescClass;                         // 0x38(0x10)
-	TArray<Struct FName>                                         ChecklistEvents;                                   // 0x48(0x10)
+	TArray<struct FName>                                         ChecklistEvents;                                   // 0x48(0x10)
 };
 
 

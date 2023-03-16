@@ -27,14 +27,14 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x18_E7WCW[0x18]",
+        "Name": "pad0x18_L2NVA[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3c8"
       },
       {
         "Name": "DebugTeleportationRegistry",
-        "Type": "TArray<Struct DebugTeleportDestinationEntry>",
+        "Type": "TArray<struct DebugTeleportationRegistry>",
         "Size": "0x10",
         "Offset": "0x3e0"
       }

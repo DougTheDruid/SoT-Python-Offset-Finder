@@ -13,25 +13,25 @@
       },
       {
         "Name": "TierInfos",
-        "Type": "TArray<Struct SeasonIconPopupAsset>",
+        "Type": "TArray<struct TierInfos>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "TrialInfos",
-        "Type": "TArray<Struct SeasonGoalPopupAsset>",
+        "Type": "TArray<struct TrialInfos>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "DeedInfos",
-        "Type": "TArray<Struct SeasonGoalPopupAsset>",
+        "Type": "TArray<struct DeedInfos>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "RenownActionInfos",
-        "Type": "TArray<Struct SeasonGoalPopupAsset>",
+        "Type": "TArray<struct RenownActionInfos>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -150,14 +150,14 @@
     "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "pad0x20_ANE7F[0x20]",
+        "Name": "pad0x20_APQGX[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc8"
       },
       {
         "Name": "DetailsNavigationDesc",
-        "Type": "TArray<Struct EnableMoreButtonEvent>",
+        "Type": "TArray<struct DetailsNavigationDesc>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
@@ -168,7 +168,7 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0xd0_DHKHV[0xd0]",
+        "Name": "pad0xd0_7XQYX[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0x10e"
@@ -189,7 +189,7 @@
     "ClassSize": "0x1c0",
     "Attributes": [
       {
-        "Name": "pad0x30_UW8Z8[0x30]",
+        "Name": "pad0x30_OLSWV[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x3c8"
@@ -201,7 +201,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x198_YS1RE[0x198]",
+        "Name": "pad0x198_7ZZFT[0x198]",
         "Type": "char",
         "Size": "0x198",
         "Offset": "0x3fe"

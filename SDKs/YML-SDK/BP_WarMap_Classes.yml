@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_WarMap_C:
   Attributes:
-  - Name: VoteInteractionHardMode
+  - Name: None
     Offset: '0x950'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoteInteractionNormalMode
+  - Name: None
     Offset: '0x958'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoteInteractionSingle
+  - Name: None
     Offset: '0x960'
     Size: '0x8'
     Type: Class ChildActorComponent*

@@ -16,7 +16,7 @@ CustomServerLocalisationData:
   - Name: LocaleEntries
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct LocPairData>
+    Type: TArray<struct LocaleEntries>
   ClassSize: '0x20'
 CustomServerLocalisationModel:
   Attributes: []

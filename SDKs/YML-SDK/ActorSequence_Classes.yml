@@ -32,7 +32,7 @@ ActorSequenceComponent:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_CYBO1[0x9]
+  - Name: pad0x9_UJVPB[0x9]
     Offset: '0xff'
     Size: '0x9'
     Type: char

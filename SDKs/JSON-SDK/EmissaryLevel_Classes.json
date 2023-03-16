@@ -20,36 +20,36 @@
       },
       {
         "Name": "MaterialChanges",
-        "Type": "TArray<Struct MaterialVisualisation>",
+        "Type": "TArray<struct MaterialChanges>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x10_0G25C[0x10]",
+        "Name": "pad0x10_IQ6VS[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "LightChanges",
-        "Type": "TArray<Struct LightVisualisation>",
+        "Type": "TArray<struct LightChanges>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x10_ME79B[0x10]",
+        "Name": "pad0x10_2MQPN[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x100"
       },
       {
         "Name": "ParticleChanges",
-        "Type": "TArray<Struct ParticleVisualisation>",
+        "Type": "TArray<struct ParticleChanges>",
         "Size": "0x10",
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x58_PLFGF[0x58]",
+        "Name": "pad0x58_C5DBV[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x11e"
@@ -84,7 +84,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_AA977[0x8]",
+        "Name": "pad0x8_A1NFI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x728"
@@ -114,7 +114,7 @@
         "Offset": "0x768"
       },
       {
-        "Name": "pad0x9_886F8[0x9]",
+        "Name": "pad0x9_O05P7[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x767"
@@ -135,7 +135,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x10_2NHMJ[0x10]",
+        "Name": "pad0x10_VF9G0[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
@@ -159,7 +159,7 @@
         "Offset": "0xda"
       },
       {
-        "Name": "pad0x17_WVOMB[0x17]",
+        "Name": "pad0x17_FQC9Q[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0xd9"
@@ -174,7 +174,7 @@
     "Attributes": [
       {
         "Name": "EmissaryLevelData",
-        "Type": "TArray<Struct EmissaryLevelEntry>",
+        "Type": "TArray<struct EmissaryLevelData>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -191,7 +191,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x48_9EMA5[0x48]",
+        "Name": "pad0x48_CRA6M[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x5e"
@@ -205,7 +205,7 @@
     "ClassSize": "0x350",
     "Attributes": [
       {
-        "Name": "pad0xb8_Q6KBB[0xb8]",
+        "Name": "pad0xb8_DRIY9[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x3c8"
@@ -223,7 +223,7 @@
         "Offset": "0x488"
       },
       {
-        "Name": "pad0x298_Z8B7J[0x298]",
+        "Name": "pad0x298_CXD3D[0x298]",
         "Type": "char",
         "Size": "0x298",
         "Offset": "0x48e"
@@ -249,7 +249,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_0W8XW[0x7]",
+        "Name": "pad0x7_2O08Q[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -287,7 +287,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_Q4482[0x8]",
+        "Name": "pad0x8_736AB[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -299,19 +299,19 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_I9TVD[0x7]",
+        "Name": "pad0x7_OH9IU[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
       },
       {
         "Name": "NoteCompletionIdents",
-        "Type": "TArray<Struct MysteriousNotesCompletionEventsModelEntry>",
+        "Type": "TArray<struct NoteCompletionIdents>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x10_B7E7P[0x10]",
+        "Name": "pad0x10_ZPCSJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe8"
@@ -341,7 +341,7 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x3_PVK17[0x3]",
+        "Name": "pad0x3_IBZSK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x109"
@@ -353,7 +353,7 @@
         "Offset": "0x10c"
       },
       {
-        "Name": "pad0x14_JKJT8[0x14]",
+        "Name": "pad0x14_YOCDX[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x112"
@@ -375,7 +375,7 @@
     "Attributes": [
       {
         "Name": "Companies",
-        "Type": "TArray<Struct EmissaryCompanyCampaignSettings>",
+        "Type": "TArray<struct Companies>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -389,7 +389,7 @@
     "Attributes": [
       {
         "Name": "EmissaryRewardData",
-        "Type": "TArray<Struct EmissaryRewardEntry>",
+        "Type": "TArray<struct EmissaryRewardData>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -400,7 +400,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_2J80I[0x4]",
+        "Name": "pad0x4_WTIT1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -427,7 +427,7 @@
       },
       {
         "Name": "EmissaryRepresentationTransforms",
-        "Type": "TArray<Struct Transform>",
+        "Type": "TArray<struct EmissaryRepresentationTransforms>",
         "Size": "0x10",
         "Offset": "0x308"
       },
@@ -450,7 +450,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x24_TULQP[0x24]",
+        "Name": "pad0x24_C7H00[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0x332"
@@ -470,7 +470,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x48_KBG0U[0x48]",
+        "Name": "pad0x48_MXQVT[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x38"
@@ -488,14 +488,14 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x20_GTQXP[0x20]",
+        "Name": "pad0x20_PK7IT[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc0"
       },
       {
         "Name": "Votes",
-        "Type": "TArray<Struct CrewMemberVotes>",
+        "Type": "TArray<struct Votes>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -506,7 +506,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x20_DAYCU[0x20]",
+        "Name": "pad0x20_3IQG1[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xf8"
@@ -518,7 +518,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x18_ET4UG[0x18]",
+        "Name": "pad0x18_ZUFKF[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x11e"
@@ -580,10 +580,36 @@
         "Offset": "0x2b0"
       },
       {
-        "Name": "pad0x88_4UYVF[0x88]",
+        "Name": "pad0x88_LF7TW[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x2e6"
+      }
+    ]
+  },
+  "StartGuildEmissaryVoyageInlineVoteConsumer": {
+    "Super": "StartEmissaryVoyageInlineVoteConsumer",
+    "FullSize": "0x388",
+    "InheritedSize": "0x300",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "GuildEmissaryVotingCantVoteReasonGuildEmissaryNotUnlocked",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "GuildEmissaryVotingCantVoteReasonNoGuildShip",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x338"
+      },
+      {
+        "Name": "pad0x88_Y6P0J[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x36e"
       }
     ]
   },
@@ -630,18 +656,25 @@
         "Offset": "0x240"
       },
       {
-        "Name": "pad0x88_P0786[0x88]",
+        "Name": "pad0x88_5NWXN[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x276"
       }
     ]
   },
+  "StopGuildEmissaryVoyageInlineVoteConsumer": {
+    "Super": "StopEmissaryVoyageInlineVoteConsumer",
+    "FullSize": "0x2a8",
+    "InheritedSize": "0x290",
+    "ClassSize": "0x18",
+    "Attributes": []
+  },
   "EmissaryVoyageVoteValidatorBase": {
     "Super": "VoteValidatorInlineBase",
-    "FullSize": "0xd0",
+    "FullSize": "0xf0",
     "InheritedSize": "0x30",
-    "ClassSize": "0xa0",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
         "Name": "ValidatorType",
@@ -650,7 +683,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_6M5LA[0x7]",
+        "Name": "pad0x7_JDP52[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -668,36 +701,42 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7f_2MH0F[0x7f]",
+        "Name": "pad0x97_YY27R[0x97]",
         "Type": "char",
-        "Size": "0x7f",
+        "Size": "0x97",
         "Offset": "0x41"
       },
       {
         "Name": "TargetCompany",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xc0"
+        "Offset": "0xd8"
       },
       {
         "Name": "Consumer",
         "Type": "Class EmissaryVoyageInlineVoteConsumerBase*",
         "Size": "0x8",
-        "Offset": "0xc8"
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "GuildSettings",
+        "Type": "Class GuildSettings*",
+        "Size": "0x8",
+        "Offset": "0xe8"
       }
     ]
   },
   "StartEmissaryVoyageInlineVoteValidator": {
     "Super": "EmissaryVoyageVoteValidatorBase",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xf0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "StopEmissaryVoyageInlineVoteValidator": {
     "Super": "EmissaryVoyageVoteValidatorBase",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xd0",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xf0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -727,7 +766,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x9_DLF82[0x9]",
+        "Name": "pad0x9_SQM7F[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x2f"

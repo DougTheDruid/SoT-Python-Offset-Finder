@@ -64,7 +64,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_YGX8S[0x4]",
+        "Name": "pad0x4_0OFZ6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -97,7 +97,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x20_R5XIP[0x20]",
+        "Name": "pad0x20_IHLV4[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
@@ -132,7 +132,7 @@
     "Attributes": [
       {
         "Name": "CommoditiesForRedemption",
-        "Type": "TArray<Struct EntitlementToRedeemItems>",
+        "Type": "TArray<struct CommoditiesForRedemption>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -157,7 +157,7 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x9_H9XCJ[0x9]",
+        "Name": "pad0x9_Z92M3[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x127"
@@ -185,7 +185,7 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "pad0x8_Y913M[0x8]",
+        "Name": "pad0x8_GOD11[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -197,7 +197,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x78_ND972[0x78]",
+        "Name": "pad0x78_87E73[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x108"
@@ -224,7 +224,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_N3L6U[0x8]",
+        "Name": "pad0x8_Q0SNV[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -251,7 +251,7 @@
     "Attributes": [
       {
         "Name": "CommodityEntries",
-        "Type": "TArray<Struct CommodityTypeDataEntry>",
+        "Type": "TArray<struct CommodityEntries>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -291,7 +291,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x21_T0WQC[0x21]",
+        "Name": "pad0x21_KQH8L[0x21]",
         "Type": "char",
         "Size": "0x21",
         "Offset": "0x2f"
@@ -305,14 +305,14 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_6BNTE[0x8]",
+        "Name": "pad0x8_O67OW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "ItemsToFillCrateWith",
-        "Type": "TArray<Struct StorageContainerNode>",
+        "Type": "TArray<struct ItemsToFillCrateWith>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
@@ -331,7 +331,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x9_0NSQT[0x9]",
+        "Name": "pad0x9_0XZ34[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x2f"

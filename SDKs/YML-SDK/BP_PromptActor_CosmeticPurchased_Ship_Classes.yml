@@ -17,7 +17,7 @@ BP_PromptActor_CosmeticPurchased_Ship_C:
   - Name: CategoryTypes
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<Class CategoryTypes>
+    Type: TArray<class Class*>
   - Name: Prompt_CosmeticPurchased
     Offset: '0x428'
     Size: '0x68'

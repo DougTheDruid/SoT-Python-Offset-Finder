@@ -50,10 +50,10 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	class                                                        Faction;                                           // 0x10(0x8)
 	byte                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
-	char                                                         pad0x3_OMGJH[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_L6HJI[0x3];                                 // 0x19(0x3)
 	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
 	int                                                          SandsOfFate;                                       // 0x20(0x4)
-	char                                                         pad0x4_5ODLG[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_OAU4T[0x4];                                 // 0x24(0x4)
 	double                                                       LeaveFactionCooldownTimeStamp;                     // 0x28(0x8)
 };
 
@@ -66,13 +66,13 @@ public:
 	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
 	class                                                        Faction;                                           // 0x20(0x8)
 	int                                                          Streak;                                            // 0x28(0x4)
-	char                                                         pad0x4_O331E[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_O8K3I[0x4];                                 // 0x2c(0x4)
 	double                                                       CooldownTimeStamp;                                 // 0x30(0x8)
 	bool                                                         IsInInvasion;                                      // 0x38(0x1)
-	char                                                         pad0x7_Y0UEZ[0x7];                                 // 0x39(0x7)
-	TArray<Struct Guid>                                          EligibleLootBootyIds;                              // 0x40(0x10)
+	char                                                         pad0x7_2TK3Z[0x7];                                 // 0x39(0x7)
+	TArray<struct EligibleLootBootyIds>                          EligibleLootBootyIds;                              // 0x40(0x10)
 	int                                                          CurrentLootValue;                                  // 0x50(0x4)
-	char                                                         pad0x4_3D29Z[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_TXKFW[0x4];                                 // 0x54(0x4)
 	TArray<Bool HasDisplayedPromptForLootLevel>                  HasDisplayedPromptForLootLevel;                    // 0x58(0x10)
 };
 
@@ -102,7 +102,7 @@ public:
 struct FactionShipDefeatedEvent
 {
 public:
-	TArray<Struct Guid>                                          VictoriousCrewIds;                                 // 0x0(0x10)
+	TArray<struct VictoriousCrewIds>                             VictoriousCrewIds;                                 // 0x0(0x10)
 	Struct Guid                                                  DefeatedCrewId;                                    // 0x10(0x10)
 };
 
@@ -128,7 +128,7 @@ public:
 struct CrewsSunkShipEvent
 {
 public:
-	TArray<Struct Guid>                                          AttackingCrewIds;                                  // 0x0(0x10)
+	TArray<struct AttackingCrewIds>                              AttackingCrewIds;                                  // 0x0(0x10)
 	Struct Guid                                                  SunkShipCrewId;                                    // 0x10(0x10)
 };
 
@@ -182,6 +182,14 @@ public:
 };
 
 
+// Size 0x30
+struct FactionStreakIncreasedTelemetryEvent
+{
+public:
+	Struct CrewFactionTelemetryData                              CrewFactionData;                                   // 0x0(0x30)
+};
+
+
 // Size 0x1c
 struct FactionLeftTelemetryEvent
 {
@@ -207,7 +215,7 @@ struct FactionWaitTimesData
 public:
 	byte                                                         Faction;                                           // 0x0(0x1)
 	byte                                                         SessionType;                                       // 0x1(0x1)
-	char                                                         pad0x6_5X5J9[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_ESVAS[0x6];                                 // 0x2(0x6)
 };
 
 

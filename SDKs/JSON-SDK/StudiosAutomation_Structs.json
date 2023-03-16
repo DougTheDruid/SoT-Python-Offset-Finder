@@ -37,7 +37,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_SZYNS[0x7]",
+        "Name": "pad0x7_OC7BT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -60,7 +60,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_2P310[0x7]",
+        "Name": "pad0x7_A4AJD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -78,7 +78,7 @@
     "Attributes": [
       {
         "Name": "SubstringQueries",
-        "Type": "TArray<Struct SubstringAuditQueryData>",
+        "Type": "TArray<struct SubstringQueries>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -100,20 +100,20 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_71ZP6[0x7]",
+        "Name": "pad0x7_Q2BKG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "CollectionsAllowedForFolder",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "AssetTypesToTest",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -147,7 +147,7 @@
     "Attributes": [
       {
         "Name": "AssetAuditConstants",
-        "Type": "TArray<Struct AssetAuditConstantEntry>",
+        "Type": "TArray<struct AssetAuditConstants>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -192,7 +192,7 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_8NXOV[0x2]",
+        "Name": "pad0x2_Q45VK[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
@@ -305,7 +305,7 @@
     "Attributes": [
       {
         "Name": "CollectionLimits",
-        "Type": "TArray<Struct CollectionLimits>",
+        "Type": "TArray<struct CollectionLimits>",
         "Size": "0x10",
         "Offset": "0x0"
       }

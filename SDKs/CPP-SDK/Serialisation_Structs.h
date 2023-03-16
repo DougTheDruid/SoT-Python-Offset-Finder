@@ -14,7 +14,7 @@ public:
 	float                                                        Float;                                             // 0x4(0x4)
 	Struct FString                                               String;                                            // 0x8(0x10)
 	TArray<Int IntArray>                                         IntArray;                                          // 0x18(0x10)
-	TArray<Struct SerialisedNestedStruct>                        StructArray;                                       // 0x28(0x10)
+	TArray<struct StructArray>                                   StructArray;                                       // 0x28(0x10)
 	Struct SerialisedNestedStruct                                NestedStruct;                                      // 0x38(0x28)
 };
 

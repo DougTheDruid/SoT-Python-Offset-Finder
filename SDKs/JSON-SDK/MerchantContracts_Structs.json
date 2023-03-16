@@ -10,7 +10,7 @@
       },
       {
         "Name": "ItemData",
-        "Type": "TArray<Struct ItemAndReward>",
+        "Type": "TArray<struct ItemData>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -55,7 +55,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_SEFIE[0x4]",
+        "Name": "pad0x4_Q8N99[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -91,7 +91,7 @@
     "Attributes": [
       {
         "Name": "DeliveryRequests",
-        "Type": "TArray<Struct MerchantContractDeliveryRequest>",
+        "Type": "TArray<struct DeliveryRequests>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -114,7 +114,7 @@
       },
       {
         "Name": "Requests",
-        "Type": "TArray<Struct MerchantContractDeliveryRequest>",
+        "Type": "TArray<struct Requests>",
         "Size": "0x10",
         "Offset": "0x18"
       }

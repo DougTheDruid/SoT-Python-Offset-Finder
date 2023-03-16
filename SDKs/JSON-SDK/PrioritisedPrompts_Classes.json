@@ -12,7 +12,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x10_35WXZ[0x10]",
+        "Name": "pad0x10_Q5V5O[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x30"
@@ -30,7 +30,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0xb8_CZEBZ[0xb8]",
+        "Name": "pad0xb8_6HAIX[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x4e"
@@ -44,7 +44,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x10_T5HVA[0x10]",
+        "Name": "pad0x10_WYTZL[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -71,14 +71,14 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_ZMJO3[0x8]",
+        "Name": "pad0x8_Z5LRR[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "AllPrompts",
-        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
+        "Type": "TArray<struct AllPrompts>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -89,7 +89,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x40_6L1F9[0x40]",
+        "Name": "pad0x40_U0LXQ[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x46"

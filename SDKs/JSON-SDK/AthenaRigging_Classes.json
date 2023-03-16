@@ -13,7 +13,7 @@
       },
       {
         "Name": "Ropes",
-        "Type": "TArray<Struct InstancedRopeParams>",
+        "Type": "TArray<struct Ropes>",
         "Size": "0x10",
         "Offset": "0x5c0"
       },
@@ -24,7 +24,7 @@
         "Offset": "0x5d0"
       },
       {
-        "Name": "pad0xb4_Y92TW[0xb4]",
+        "Name": "pad0xb4_OBWY1[0xb4]",
         "Type": "char",
         "Size": "0xb4",
         "Offset": "0x5d2"
@@ -44,7 +44,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x9_ZYT9H[0x9]",
+        "Name": "pad0x9_YAVM6[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x6f"
@@ -58,7 +58,7 @@
     "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "pad0x8_6QUNM[0x8]",
+        "Name": "pad0x8_UAZDN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -77,13 +77,13 @@
       },
       {
         "Name": "Lines",
-        "Type": "TArray<Struct RiggingSystemLine>",
+        "Type": "TArray<struct Lines>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
       {
         "Name": "Ropes",
-        "Type": "TArray<Struct InstancedRopeParams>",
+        "Type": "TArray<struct Ropes>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
@@ -101,7 +101,7 @@
       },
       {
         "Name": "Sockets",
-        "Type": "TArray<Struct SocketId>",
+        "Type": "TArray<struct Sockets>",
         "Size": "0x10",
         "Offset": "0x470"
       },
@@ -112,7 +112,7 @@
         "Offset": "0x480"
       },
       {
-        "Name": "pad0xa8_67TLD[0xa8]",
+        "Name": "pad0xa8_4AOY2[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x48e"
@@ -133,7 +133,7 @@
       },
       {
         "Name": "LineGroups",
-        "Type": "TArray<Struct RiggingSystemLineGroup>",
+        "Type": "TArray<struct LineGroups>",
         "Size": "0x10",
         "Offset": "0x300"
       },
@@ -144,7 +144,7 @@
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x18_4US9I[0x18]",
+        "Name": "pad0x18_W4KIS[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x316"

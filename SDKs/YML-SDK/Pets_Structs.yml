@@ -96,7 +96,7 @@ EventPetPickedUp:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_TPOSF[0x3]
+  - Name: pad0x3_4BJTG[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -214,14 +214,14 @@ HangoutSpotParams:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_26GC6[0x4]
+  - Name: pad0x4_VHR8D[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: PetParams
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct PetHangoutSpotParams>
+    Type: TArray<struct PetParams>
   - Name: FeatureName
     Offset: '0x20'
     Size: '0x8'
@@ -233,7 +233,7 @@ HangoutSpotPosition:
     Offset: '0x0'
     Size: '0x8'
     Type: Struct HangoutSpotId
-  - Name: pad0x8_E15HL[0x8]
+  - Name: pad0x8_R5YZO[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -249,7 +249,7 @@ HangoutSpotPosition:
     Offset: '0x41'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_07PJ5[0x6]
+  - Name: pad0x6_CK0L5[0x6]
     Offset: '0x42'
     Size: '0x6'
     Type: char
@@ -257,7 +257,7 @@ HangoutSpotPosition:
     Offset: '0x48'
     Size: '0x8'
     Type: Class Pawn*
-  - Name: pad0x10_WVFJV[0x10]
+  - Name: pad0x10_3RD4Z[0x10]
     Offset: '0x50'
     Size: '0x10'
     Type: char
@@ -269,7 +269,7 @@ HangoutSpotPosition:
     Offset: '0x61'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_G6PCL[0x2]
+  - Name: pad0x2_DW3ZC[0x2]
     Offset: '0x62'
     Size: '0x2'
     Type: char
@@ -300,7 +300,7 @@ PetBaseTelemetryFragment:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1OCCE[0x3]
+  - Name: pad0x3_Z40CZ[0x3]
     Offset: '0x21'
     Size: '0x3'
     Type: char
@@ -355,14 +355,14 @@ PetDangerHearingThreat:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Z5X3E[0x4]
+  - Name: pad0x4_JIZNO[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: Responses
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct PetDangerHearingThreatResponse>
+    Type: TArray<struct Responses>
   ClassSize: '0x20'
 PetDangerHearingThreatResponse:
   Attributes:
@@ -445,7 +445,7 @@ PetFeedingAnimationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_5X3WG[0x3]
+  - Name: pad0x3_HUFFR[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -675,7 +675,7 @@ PetsServiceParams:
   - Name: IllegalShipsSizesForSpawn
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class IllegalShipsSizesForSpawn>
+    Type: TArray<class Class*>
   ClassSize: '0x38'
 ReactStateMapping:
   Attributes:
@@ -687,7 +687,7 @@ ReactStateMapping:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1ZDJY[0x3]
+  - Name: pad0x3_HJM9T[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -707,14 +707,14 @@ ReactStateMapping:
     Offset: '0xb4'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: pad0x4_8OULQ[0x4]
+  - Name: pad0x4_BVP3Y[0x4]
     Offset: '0xc4'
     Size: '0x4'
     Type: char
   - Name: IgnoringStrategies
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Class IgnoringStrategies>
+    Type: TArray<class Class*>
   ClassSize: '0xd8'
 RespawnPetEvent:
   Attributes:
@@ -729,7 +729,7 @@ WieldablePetDropTimeout:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_YSF8W[0x3]
+  - Name: pad0x3_XDO1O[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -755,7 +755,7 @@ WieldablePetHungerAnimationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_K9OUG[0x3]
+  - Name: pad0x3_67L0K[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

@@ -95,7 +95,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_OMGJH[0x3]",
+        "Name": "pad0x3_L6HJI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -113,7 +113,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_5ODLG[0x4]",
+        "Name": "pad0x4_OAU4T[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -154,7 +154,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_O331E[0x4]",
+        "Name": "pad0x4_O8K3I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -172,14 +172,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_Y0UEZ[0x7]",
+        "Name": "pad0x7_2TK3Z[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       },
       {
         "Name": "EligibleLootBootyIds",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct EligibleLootBootyIds>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -190,7 +190,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_3D29Z[0x4]",
+        "Name": "pad0x4_TXKFW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -260,7 +260,7 @@
     "Attributes": [
       {
         "Name": "VictoriousCrewIds",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct VictoriousCrewIds>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -305,7 +305,7 @@
     "Attributes": [
       {
         "Name": "AttackingCrewIds",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct AttackingCrewIds>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -426,6 +426,17 @@
       }
     ]
   },
+  "FactionStreakIncreasedTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CrewFactionData",
+        "Type": "Struct CrewFactionTelemetryData",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "FactionLeftTelemetryEvent": {
     "ClassSize": "0x1c",
     "Attributes": [
@@ -482,7 +493,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_5X5J9[0x6]",
+        "Name": "pad0x6_ESVAS[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"

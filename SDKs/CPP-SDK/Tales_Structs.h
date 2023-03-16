@@ -11,7 +11,7 @@ struct TaleQuestDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_JHFQ0[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_YGK5V[0x4];                                 // 0x4(0x4)
 	Struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
 	int                                                          NumToDeliver;                                      // 0x30(0x4)
 	int                                                          NumToAllocate;                                     // 0x34(0x4)
@@ -100,7 +100,7 @@ public:
 	Struct Guid                                                  TaleId;                                            // 0x0(0x10)
 	class                                                        DataID;                                            // 0x10(0x8)
 	bool                                                         DataBool;                                          // 0x18(0x1)
-	char                                                         pad0x3_809OY[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_HE0UJ[0x3];                                 // 0x19(0x3)
 	int                                                          DataInt;                                           // 0x1c(0x4)
 };
 
@@ -120,7 +120,7 @@ public:
 	Struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
 	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
 	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
-	char                                                         pad0x6_JDB0F[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_TWNYA[0x6];                                 // 0x22(0x6)
 	Struct FText                                                 FailureMessage;                                    // 0x28(0x38)
 };
 
@@ -308,7 +308,7 @@ public:
 struct TaleQuestQueryableStateCanAllDataBeReadCondition
 {
 public:
-	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x28(0x10)
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
 };
 
@@ -317,7 +317,7 @@ public:
 struct TaleQuestQueryableStateCanAnyDataBeReadCondition
 {
 public:
-	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x28(0x10)
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
 };
 
@@ -326,7 +326,7 @@ public:
 struct TaleQuestQueryableStateReadAllValueBoolCondition
 {
 public:
-	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x28(0x10)
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
 };
 
@@ -335,7 +335,7 @@ public:
 struct TaleQuestQueryableStateReadAnyValueBoolCondition
 {
 public:
-	TArray<Class AllDataToCheck>                                 AllDataToCheck;                                    // 0x28(0x10)
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
 };
 
@@ -466,7 +466,7 @@ public:
 struct TaleQuestFailedEvent
 {
 public:
-	TArray<Struct Guid>                                          CrewIds;                                           // 0x0(0x10)
+	TArray<struct CrewIds>                                       CrewIds;                                           // 0x0(0x10)
 	Struct Guid                                                  QuestId;                                           // 0x10(0x10)
 };
 

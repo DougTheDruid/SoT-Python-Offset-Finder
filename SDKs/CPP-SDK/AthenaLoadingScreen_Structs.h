@@ -11,7 +11,7 @@ struct SlateLoadingScreenImageParams
 {
 public:
 	Struct StringAssetReference                                  ImageAsset;                                        // 0x0(0x10)
-	TArray<Struct FText>                                         ImageTips;                                         // 0x10(0x10)
+	TArray<struct FText>                                         ImageTips;                                         // 0x10(0x10)
 	Struct SlateLoadingScreenAdvancedTipsParams                  AdvancedTips;                                      // 0x20(0x10)
 };
 
@@ -20,7 +20,7 @@ public:
 struct SlateLoadingScreenAdvancedTipsParams
 {
 public:
-	TArray<Struct SlateLoadingScreenAdvancedTipDescription>      TipDescriptions;                                   // 0x0(0x10)
+	TArray<struct TipDescriptions>                               TipDescriptions;                                   // 0x0(0x10)
 };
 
 

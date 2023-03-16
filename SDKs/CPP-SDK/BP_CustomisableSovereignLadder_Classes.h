@@ -6,19 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x48 (Full Size[0x450] - InheritedSize[0x408]
-class BP_CustomisableSovereignLadder_C: public BP_Placement_HeightDrop_C
+// Size 0x88 (Full Size[0x648] - InheritedSize[0x5c0]
+class BP_CustomisableSovereignLadder_C: public Ladder
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
-	Class SceneComponent*                                        None;                                              // 0x448(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x5c0(0x8)
+	Class InteractableComponent*                                 None;                                              // 0x5c8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x5d0(0x8)
+	Struct None                                                  None;                                              // 0x5d8(0x20)
+	TArray<struct None>                                          None;                                              // 0x5f8(0x10)
+	TArray<struct None>                                          None;                                              // 0x608(0x10)
+	int                                                          None;                                              // 0x618(0x4)
+	char                                                         pad0x4_K8AOC[0x4];                                 // 0x61c(0x4)
+	Class MaterialInterface*                                     None;                                              // 0x620(0x8)
+	float                                                        None;                                              // 0x628(0x4)
+	Struct Vector                                                None;                                              // 0x62c(0xc)
+	Struct Vector                                                None;                                              // 0x638(0xc)
+	int                                                          None;                                              // 0x644(0x4)
 };
 
 

@@ -6,16 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class ServiceHttpSettings: public Object
 {
 public:
 	Struct FString                                               DiscoveryServiceUrl;                               // 0x28(0x10)
 	byte                                                         ServerMetricsLevel;                                // 0x38(0x1)
 	byte                                                         ClientMetricsLevel;                                // 0x39(0x1)
-	char                                                         pad0x6_K9B5R[0x6];                                 // 0x3a(0x6)
+	char                                                         pad0x6_R8M4D[0x6];                                 // 0x3a(0x6)
 	Struct FString                                               SubStringToFindInUrlForXBLiveTokenRequest;         // 0x40(0x10)
 	Struct FString                                               UrlReplacementStringForXBLiveTokenRequest;         // 0x50(0x10)
+	Struct FString                                               CustomBuildVersionTag;                             // 0x60(0x10)
 };
 
 

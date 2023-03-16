@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 BP_Sail_C:
   Attributes:
-  - Name: Sail Positions Top
+  - Name: None
     Offset: '0x570'
     Size: '0x10'
-    Type: TArray<Struct None>
-  - Name: Sail Positions Bottom
+    Type: TArray<struct None>
+  - Name: None
     Offset: '0x580'
     Size: '0x10'
-    Type: TArray<Struct Vector>
+    Type: TArray<struct None>
   ClassSize: '0x20'
   FullSize: '0x590'
   InheritedSize: '0x570'

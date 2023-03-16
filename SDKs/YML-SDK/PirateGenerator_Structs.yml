@@ -21,7 +21,7 @@ BlendedSubMeshSpecification:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1G0Y9[0x4]
+  - Name: pad0x4_RS1IE[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -62,7 +62,7 @@ ClothingCreatorSlotItemConfig:
   - Name: Items
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ClothingCreatorSlotItem>
+    Type: TArray<struct Items>
   ClassSize: '0x10'
 ClothingItem:
   Attributes:
@@ -81,11 +81,11 @@ ClothingItem:
   - Name: Variants
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: NewSlots
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: Parent
     Offset: '0x40'
     Size: '0x8'
@@ -93,19 +93,19 @@ ClothingItem:
   - Name: Parts
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct ClothingPart>
+    Type: TArray<struct Parts>
   - Name: VFXs
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Struct ClothingVFX>
+    Type: TArray<struct VFXs>
   - Name: ScalarParameters
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct IPGScalarParameter>
+    Type: TArray<struct ScalarParameters>
   - Name: MaterialReferences
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x88'
 ClothingPart:
   Attributes:
@@ -116,7 +116,7 @@ ClothingPart:
   - Name: Slots
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: Gender
     Offset: '0x18'
     Size: '0x1'
@@ -135,7 +135,7 @@ ClothingSlot:
   - Name: Tags
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: Type
     Offset: '0x18'
     Size: '0x1'
@@ -150,11 +150,11 @@ ClothingVFX:
   - Name: Sockets
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: Slots
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x28'
 ColorTextureSwitchSeedEntry:
   Attributes:
@@ -195,7 +195,7 @@ IPGBlendNode:
   - Name: Ranges
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct IPGBlendRange>
+    Type: TArray<struct Ranges>
   ClassSize: '0x18'
 IPGBlendRange:
   Attributes:
@@ -215,14 +215,14 @@ IPGBlendRange:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_PO7L5[0x4]
+  - Name: pad0x4_5P471[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   - Name: Compatibility
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct IPGCompatibleSet>
+    Type: TArray<struct Compatibility>
   ClassSize: '0x28'
 IPGBlendShape:
   Attributes:
@@ -270,11 +270,11 @@ IPGBodyShapes:
   - Name: Male
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct IPGBodyShape>
+    Type: TArray<struct Male>
   - Name: Female
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct IPGBodyShape>
+    Type: TArray<struct Female>
   ClassSize: '0x20'
 IPGCompatibleSet:
   Attributes:
@@ -288,27 +288,27 @@ IPGData:
   - Name: DynamicSliderNames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct IPGDynamicSliderName>
+    Type: TArray<struct DynamicSliderNames>
   - Name: BlendingMethods
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct IPGBlendingMethod>
+    Type: TArray<struct BlendingMethods>
   - Name: Groups
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct IPGSetGroup>
+    Type: TArray<struct Groups>
   - Name: CurrentVersion
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H3YTB[0x4]
+  - Name: pad0x4_XJRUS[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
   - Name: Versions
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct IPGSetsData>
+    Type: TArray<struct Versions>
   ClassSize: '0x48'
 IPGDynamicSlider:
   Attributes:
@@ -357,7 +357,7 @@ IPGSetData:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_SV8RH[0x2]
+  - Name: pad0x2_ZVK60[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -368,7 +368,7 @@ IPGSetData:
   - Name: Nodes
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct IPGBlendNode>
+    Type: TArray<struct Nodes>
   ClassSize: '0x20'
 IPGSetGroup:
   Attributes:
@@ -387,14 +387,14 @@ IPGSetsData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_VYPPU[0x4]
+  - Name: pad0x4_BPIRS[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
   - Name: Sets
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct IPGSetData>
+    Type: TArray<struct Sets>
   ClassSize: '0x18'
 IPGTestClass:
   Attributes:
@@ -414,7 +414,7 @@ IPGTestClass:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_K7CZC[0x3]
+  - Name: pad0x3_M6V53[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -426,18 +426,18 @@ IPGTestClass:
     Offset: '0x20'
     Size: '0xc'
     Type: Struct IPGTestSimpleType
-  - Name: pad0x4_70LM9[0x4]
+  - Name: pad0x4_2ZJVL[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
   - Name: VectorTest
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct IPGTestSimpleType>
+    Type: TArray<struct VectorTest>
   - Name: StrVectorTest
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: EnumVectorTest
     Offset: '0x50'
     Size: '0x10'
@@ -464,7 +464,7 @@ MaterialReferenceEntry:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_RQFEI[0x6]
+  - Name: pad0x6_29EAU[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -486,7 +486,7 @@ MaterialReferencesEntry:
   - Name: References
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct MaterialReferenceEntry>
+    Type: TArray<struct References>
   ClassSize: '0x18'
 MeshPatchEntry:
   Attributes:
@@ -504,23 +504,23 @@ Outfit:
   - Name: PartNames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: FreeSlots
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: ScalarParameters
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct IPGScalarParameter>
+    Type: TArray<struct ScalarParameters>
   - Name: MaterialReferences
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: VFXs
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct ClothingVFX>
+    Type: TArray<struct VFXs>
   ClassSize: '0x50'
 PirateDescription:
   Attributes:
@@ -528,7 +528,7 @@ PirateDescription:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_HYJD7[0x3]
+  - Name: pad0x3_1VU4B[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -544,7 +544,7 @@ PirateDescription:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_OA294[0x2]
+  - Name: pad0x2_6QQIN[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -552,42 +552,42 @@ PirateDescription:
     Offset: '0xc'
     Size: '0x8'
     Type: Struct RadialCoordinate
-  - Name: pad0x4_T5IE8[0x4]
+  - Name: pad0x4_WF5M7[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   - Name: BlendShapes
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct IPGBlendShape>
+    Type: TArray<struct BlendShapes>
   - Name: DynamicSliders
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct IPGDynamicSlider>
+    Type: TArray<struct DynamicSliders>
   - Name: Seed
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9TAQP[0x4]
+  - Name: pad0x4_06RRN[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
   - Name: Items
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: TextureReferences
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: MaterialReferences
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: ScalarParameters
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct IPGScalarParameter>
+    Type: TArray<struct ScalarParameters>
   ClassSize: '0x80'
 PirateGeneratorAdditionalBakeInfo:
   Attributes:
@@ -598,7 +598,7 @@ PirateGeneratorAdditionalBakeInfo:
   - Name: VFXSockets
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x20'
 PirateGeneratorTextureReference:
   Attributes:
@@ -609,7 +609,7 @@ PirateGeneratorTextureReference:
   - Name: References
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x18'
 RadialCoordinate:
   Attributes:
@@ -639,7 +639,7 @@ TextureSwitchEthnicityEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KFX4U[0x7]
+  - Name: pad0x7_9M5UA[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -654,7 +654,7 @@ TextureSwitchGenderEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KKOED[0x7]
+  - Name: pad0x7_1BULC[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -684,7 +684,7 @@ TextureSwitchParameters:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_FNVNY[0x2]
+  - Name: pad0x2_ZK6MQ[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -700,7 +700,7 @@ TextureSwitchParameters:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_VVD1Q[0x2]
+  - Name: pad0x2_ED42Q[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -708,18 +708,18 @@ TextureSwitchParameters:
     Offset: '0x14'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_OTHI8[0x4]
+  - Name: pad0x4_YTYJM[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
   - Name: SelectedItems
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: SelectedReferences
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x58'
 TextureSwitchSeedEntry:
   Attributes:
@@ -737,11 +737,11 @@ WardrobeConfig:
   - Name: Slots
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ClothingSlot>
+    Type: TArray<struct Slots>
   - Name: Priority
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x20'
 WardrobeOutfitCategoryBias:
   Attributes:
@@ -763,11 +763,11 @@ WardrobeOutfitResult:
   - Name: ScalarParameters
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct IPGScalarParameter>
+    Type: TArray<struct ScalarParameters>
   - Name: MaterialReferences
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: VFXParticles
     Offset: '0x30'
     Size: '0x10'
@@ -775,5 +775,5 @@ WardrobeOutfitResult:
   - Name: VFXSockets
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x50'

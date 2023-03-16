@@ -244,19 +244,19 @@
     "Attributes": [
       {
         "Name": "NotesRemoteServiceNoteModels",
-        "Type": "TArray<Struct NotesRemoteServiceNoteModel>",
+        "Type": "TArray<struct NotesRemoteServiceNoteModels>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "PendingCompletionEntries",
-        "Type": "TArray<Struct NoteCompletionEntry>",
+        "Type": "TArray<struct PendingCompletionEntries>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PendingDetailRequestIDs",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct PendingDetailRequestIDs>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -335,14 +335,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_7X4XX[0x7]",
+        "Name": "pad0x7_5E558[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "PendingNotes",
-        "Type": "TArray<Struct MysteriousNoteInfo>",
+        "Type": "TArray<struct PendingNotes>",
         "Size": "0x10",
         "Offset": "0x8"
       }

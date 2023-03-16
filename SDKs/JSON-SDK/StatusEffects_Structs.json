@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Type",
-        "Type": "TArray<Class Type>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -49,7 +49,7 @@
     "Attributes": [
       {
         "Name": "SourceStatus",
-        "Type": "TArray<Class SourceStatus>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -60,7 +60,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_AYT4G[0x4]",
+        "Name": "pad0x4_5HEOX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -107,7 +107,7 @@
     "Attributes": [
       {
         "Name": "StatusApplied",
-        "Type": "TArray<Class StatusApplied>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x0"
       },

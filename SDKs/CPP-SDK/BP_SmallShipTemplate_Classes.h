@@ -127,10 +127,10 @@ public:
 	Class ChildActorComponent*                                   None;                                              // 0x1aa0(0x8)
 	Class ChildActorComponent*                                   None;                                              // 0x1aa8(0x8)
 	byte                                                         None;                                              // 0x1ab0(0x1)
-	char                                                         pad0x7_UC1IW[0x7];                                 // 0x1ab1(0x7)
+	char                                                         pad0x7_315C5[0x7];                                 // 0x1ab1(0x7)
 	Class TimelineComponent*                                     None;                                              // 0x1ab8(0x8)
 	byte                                                         None;                                              // 0x1ac0(0x1)
-	char                                                         pad0x7_6ZNKF[0x7];                                 // 0x1ac1(0x7)
+	char                                                         pad0x7_EYNLZ[0x7];                                 // 0x1ac1(0x7)
 	Class TimelineComponent*                                     None;                                              // 0x1ac8(0x8)
 };
 

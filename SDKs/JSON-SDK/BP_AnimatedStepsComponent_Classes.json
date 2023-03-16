@@ -6,49 +6,43 @@
     "ClassSize": "0x3c",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0xbb_KMZ2D[0xbb]",
-        "Type": "char",
-        "Size": "0xbb",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "BoxDelays",
-        "Type": "TArray<Float BoxDelays>",
+        "Name": "None",
+        "Type": "TArray<Float None>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
-        "Name": "BoxTargetZs",
-        "Type": "TArray<Float BoxTargetZs>",
+        "Name": "None",
+        "Type": "TArray<Float None>",
         "Size": "0x10",
         "Offset": "0x108"
       },
       {
-        "Name": "AnimCurve",
+        "Name": "None",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x118"
       },
       {
-        "Name": "MovementTimer",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x120"
       },
       {
-        "Name": "AnimationDuration",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x124"
       },
       {
-        "Name": "AnimationStartDelay",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x128"

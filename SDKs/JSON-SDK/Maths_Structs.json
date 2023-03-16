@@ -15,7 +15,7 @@
     "Attributes": [
       {
         "Name": "SubRanges",
-        "Type": "TArray<Struct WeightedProbabilityRangeOfRangesFloatPair>",
+        "Type": "TArray<struct SubRanges>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -93,7 +93,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct FixedStepInterpCurvePointVector2D>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x0"
       },

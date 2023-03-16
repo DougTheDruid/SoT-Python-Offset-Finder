@@ -33,13 +33,13 @@ class WwiseEvent: public Object
 public:
 	Class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
 	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
-	char                                                         pad0x3_0NV52[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_RQ9W3[0x3];                                 // 0x31(0x3)
 	float                                                        DurationMin;                                       // 0x38(0x4)
 	float                                                        DurationMax;                                       // 0x3c(0x4)
 	float                                                        MaxAttenuation;                                    // 0x40(0x4)
 	byte                                                         DurationType;                                      // 0x44(0x1)
 	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
-	char                                                         pad0xc_35J4U[0xc];                                 // 0x44(0xc)
+	char                                                         pad0xc_81PGT[0xc];                                 // 0x44(0xc)
 };
 
 
@@ -55,7 +55,7 @@ public:
 class MovieSceneAkAudioRTPCSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_SMSWQ[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_6RKIU[0x8];                                 // 0x98(0x8)
 	Struct FString                                               Name;                                              // 0xa0(0x10)
 	Struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
 };
@@ -67,7 +67,7 @@ class MovieSceneAkTrack: public MovieSceneTrack
 public:
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
-	char                                                         pad0x9_6S6KQ[0x9];                                 // 0x97(0x9)
+	char                                                         pad0x9_O413P[0x9];                                 // 0x97(0x9)
 };
 
 
@@ -89,8 +89,8 @@ public:
 class MultiEmitterRootComponent: public SceneComponent
 {
 public:
-	TArray<Struct MultiEmitterData>                              MultiEmitterDataArray;                             // 0x2e0(0x10)
-	TArray<Struct WwiseEmitter>                                  PlayingEmitters;                                   // 0x2f0(0x10)
+	TArray<struct MultiEmitterDataArray>                         MultiEmitterDataArray;                             // 0x2e0(0x10)
+	TArray<struct PlayingEmitters>                               PlayingEmitters;                                   // 0x2f0(0x10)
 };
 
 
@@ -116,17 +116,17 @@ public:
 class WwiseAudioSettings: public Object
 {
 public:
-	char                                                         pad0xc0_UZKPH[0xc0];                               // 0x28(0xc0)
+	char                                                         pad0xc0_L8OCO[0xc0];                               // 0x28(0xc0)
 	Struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0xe8(0x64)
-	char                                                         pad0x4_K3QTG[0x4];                                 // 0x14c(0x4)
+	char                                                         pad0x4_FUAS4[0x4];                                 // 0x14c(0x4)
 	Struct WwiseBinkSettings                                     BinkSettings;                                      // 0x150(0x38)
-	TArray<Struct StringAssetReference>                          PersistentSoundBanks;                              // 0x188(0x10)
+	TArray<struct PersistentSoundBanks>                          PersistentSoundBanks;                              // 0x188(0x10)
 	Struct StringAssetReference                                  InitBank;                                          // 0x198(0x10)
 	Struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x1a8(0x10)
 	Struct StringAssetReference                                  WwiseIDsDatabase;                                  // 0x1b8(0x10)
 	Struct StringAssetReference                                  WwiseFileHashDatabase;                             // 0x1c8(0x10)
 	Struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x1d8(0x10)
-	TArray<Struct WwiseIOPriorityMappingConfig>                  AsyncIOPriorityMappings;                           // 0x1e8(0x10)
+	TArray<struct AsyncIOPriorityMappings>                       AsyncIOPriorityMappings;                           // 0x1e8(0x10)
 	Struct DirectoryPath                                         TritonAcousticMapsDirectory;                       // 0x1f8(0x10)
 	Struct FString                                               DefaultLanguage;                                   // 0x208(0x10)
 	Struct FString                                               SinkSharesetName;                                  // 0x218(0x10)
@@ -142,7 +142,7 @@ public:
 	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x348(0x8)
 	Class WwiseEvent*                                            WwiseMediaSoundComponentEventNameInstance;         // 0x350(0x8)
 	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x358(0x8)
-	char                                                         pad0x50_Y281N[0x50];                               // 0x360(0x50)
+	char                                                         pad0x50_UWHE5[0x50];                               // 0x360(0x50)
 	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendStartInstance;               // 0x3b0(0x10)
 	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendEndInstance;                 // 0x3c0(0x10)
 	TArray<class WwiseEvent*>                                    EventsToPlayOnStartEngagementInstance;             // 0x3d0(0x10)
@@ -160,7 +160,7 @@ class WwiseBank: public Object
 {
 public:
 	Struct FString                                               path;                                              // 0x28(0x10)
-	char                                                         pad0x50_53GXL[0x50];                               // 0x36(0x50)
+	char                                                         pad0x50_TUFJX[0x50];                               // 0x36(0x50)
 };
 
 
@@ -207,13 +207,13 @@ class WwiseIDsDatabase: public DataAsset
 {
 public:
 	TArray<UInt32 StateGroupIDs>                                 StateGroupIDs;                                     // 0x28(0x10)
-	TArray<Struct FName>                                         StateGroupNames;                                   // 0x38(0x10)
+	TArray<struct FName>                                         StateGroupNames;                                   // 0x38(0x10)
 	TArray<UInt32 StateValueIDs>                                 StateValueIDs;                                     // 0x48(0x10)
-	TArray<Struct FName>                                         StateValueNames;                                   // 0x58(0x10)
+	TArray<struct FName>                                         StateValueNames;                                   // 0x58(0x10)
 	TArray<UInt32 SwitchGroupIDs>                                SwitchGroupIDs;                                    // 0x68(0x10)
-	TArray<Struct FName>                                         SwitchGroupNames;                                  // 0x78(0x10)
+	TArray<struct FName>                                         SwitchGroupNames;                                  // 0x78(0x10)
 	TArray<UInt32 SwitchStateIDs>                                SwitchStateIDs;                                    // 0x88(0x10)
-	TArray<Struct FName>                                         SwitchStateNames;                                  // 0x98(0x10)
+	TArray<struct FName>                                         SwitchStateNames;                                  // 0x98(0x10)
 };
 
 

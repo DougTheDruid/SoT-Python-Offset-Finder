@@ -11,7 +11,7 @@ struct MerchantContractItemDesc
 {
 public:
 	class                                                        AllocatedCrate;                                    // 0x0(0x8)
-	TArray<Struct ItemAndReward>                                 ItemData;                                          // 0x8(0x10)
+	TArray<struct ItemData>                                      ItemData;                                          // 0x8(0x10)
 	class                                                        FaunaSpecies;                                      // 0x18(0x8)
 	class                                                        FaunaBreed;                                        // 0x20(0x8)
 };
@@ -31,7 +31,7 @@ struct MerchantContractDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_SEFIE[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_Q8N99[0x4];                                 // 0x4(0x4)
 	Struct MerchantContractItemDesc                              ItemDesc;                                          // 0x8(0x28)
 	int                                                          NumToAllocate;                                     // 0x30(0x4)
 	int                                                          NumToCollect;                                      // 0x34(0x4)
@@ -43,7 +43,7 @@ public:
 struct MerchantContract
 {
 public:
-	TArray<Struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x18(0x10)
+	TArray<struct DeliveryRequests>                              DeliveryRequests;                                  // 0x18(0x10)
 };
 
 
@@ -53,7 +53,7 @@ struct PlayerMerchantContract
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
-	TArray<Struct MerchantContractDeliveryRequest>               Requests;                                          // 0x18(0x10)
+	TArray<struct Requests>                                      Requests;                                          // 0x18(0x10)
 };
 
 

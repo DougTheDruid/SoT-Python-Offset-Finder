@@ -12,12 +12,12 @@ AudioReportingComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class PlayerController*
-  - Name: pad0x178_WAVJ4[0x178]
+  - Name: pad0x180_FBDQ4[0x180]
     Offset: '0xce'
-    Size: '0x178'
+    Size: '0x180'
     Type: char
-  ClassSize: '0x170'
-  FullSize: '0x238'
+  ClassSize: '0x178'
+  FullSize: '0x240'
   InheritedSize: '0xc8'
   Super: ActorComponent
 AudioReportingConfig:
@@ -30,16 +30,22 @@ AudioReportingConfig:
   FullSize: '0x48'
   InheritedSize: '0x38'
   Super: DeveloperSettings
+AudioReportingDebugMenuGenerator:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: DebugMenuEntryGenerator
 AudioReportingSettings:
   Attributes:
   - Name: MaxReactionCount
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OR03J[0x4]
+  - Name: AudioVeryCloseThresholdDistance
     Offset: '0x2c'
     Size: '0x4'
-    Type: char
+    Type: float
   - Name: EventReactionDataAssets
     Offset: '0x30'
     Size: '0x10'
@@ -53,7 +59,7 @@ EventReactionsDataAsset:
   - Name: Reactions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct EventReactionDesc>
+    Type: TArray<struct Reactions>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

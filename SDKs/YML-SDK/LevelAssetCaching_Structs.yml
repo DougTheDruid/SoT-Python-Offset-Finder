@@ -17,5 +17,5 @@ WorldRegionSetup:
   - Name: RegionNames
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x28'

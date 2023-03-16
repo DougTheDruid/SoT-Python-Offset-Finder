@@ -34,7 +34,7 @@
       },
       {
         "Name": "AttackInterruptMontages",
-        "Type": "TArray<Struct CustomAnimationMontageId>",
+        "Type": "TArray<struct AttackInterruptMontages>",
         "Size": "0x10",
         "Offset": "0x60"
       },

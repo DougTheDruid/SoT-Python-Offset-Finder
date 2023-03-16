@@ -54,7 +54,7 @@ EventShipDamageApplied:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JOXKS[0x4]
+  - Name: pad0x4_91QAX[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -94,7 +94,7 @@ HullDamagePersistenceModel:
   - Name: DamageZones
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct HullDamageZoneInfo>
+    Type: TArray<struct DamageZones>
   ClassSize: '0x10'
 HullDamageZoneInfo:
   Attributes:
@@ -114,14 +114,14 @@ HullDamageZoneInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_QCLX6[0x7]
+  - Name: pad0x7_A6IPM[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
   - Name: ExternalHitList
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct HullDamageHit>
+    Type: TArray<struct ExternalHitList>
   ClassSize: '0x30'
 SendShipRestoredRpc:
   Attributes:
@@ -135,14 +135,14 @@ ShipDamageParams:
   - Name: DamageParams
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ShipPartLevelsOfDamage>
+    Type: TArray<struct DamageParams>
   ClassSize: '0x10'
 ShipPartLevelsOfDamage:
   Attributes:
   - Name: DamagePerDistance
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct DistanceAndLevelOfDamage>
+    Type: TArray<struct DamagePerDistance>
   - Name: FeatureName
     Offset: '0x30'
     Size: '0xc'

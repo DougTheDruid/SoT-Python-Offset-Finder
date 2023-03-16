@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_ZKXLH[0x4]",
+        "Name": "pad0x4_6HQTB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -51,7 +51,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_WTUZU[0x4]",
+        "Name": "pad0x4_3QX8P[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -98,7 +98,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_YCGRM[0x6]",
+        "Name": "pad0x6_V9YJ2[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
@@ -139,7 +139,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_JJ9FF[0x4]",
+        "Name": "pad0x4_ULOAU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -174,7 +174,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_7NS7N[0x4]",
+        "Name": "pad0x4_I13M5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -279,7 +279,7 @@
       },
       {
         "Name": "CameraShakes",
-        "Type": "TArray<Class CameraShakes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -296,7 +296,7 @@
     "Attributes": [
       {
         "Name": "ForceFeedbackOptions",
-        "Type": "TArray<Struct EarthquakeForceFeedbackOption>",
+        "Type": "TArray<struct ForceFeedbackOptions>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -313,7 +313,7 @@
     "Attributes": [
       {
         "Name": "ForceFeedback",
-        "Type": "TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>",
+        "Type": "TArray<struct ForceFeedback>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -420,7 +420,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_8KQBX[0x3]",
+        "Name": "pad0x3_LB7QU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"

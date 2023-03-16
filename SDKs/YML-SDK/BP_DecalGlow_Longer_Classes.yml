@@ -22,7 +22,7 @@ BP_DecalGlow_Longer_C:
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_LZVZV[0x4]
+  - Name: pad0x4_854PM[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char

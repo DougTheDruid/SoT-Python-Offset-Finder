@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_BuoyantStorageBarrel_LockedToWater_C:
   Attributes:
-  - Name: Sphere
+  - Name: None
     Offset: '0x728'
     Size: '0x8'
     Type: Class SphereComponent*
-  - Name: Replenishable
+  - Name: None
     Offset: '0x730'
     Size: '0x8'
     Type: Class ReplenishableComponent*
-  - Name: TelemetrySubject
+  - Name: None
     Offset: '0x738'
     Size: '0x8'
     Type: Class TelemetrySubjectComponent*
-  - Name: StorageContainer
+  - Name: None
     Offset: '0x740'
     Size: '0x8'
     Type: Class StorageContainerComponent*

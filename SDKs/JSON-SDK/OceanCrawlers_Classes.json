@@ -12,7 +12,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x9_436MA[0x9]",
+        "Name": "pad0x9_PPWCW[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x5f"
@@ -33,7 +33,7 @@
       },
       {
         "Name": "AudioKeyPairs",
-        "Type": "TArray<Struct OceanCrawlerAudioKeyPair>",
+        "Type": "TArray<struct AudioKeyPairs>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -82,7 +82,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0xd8_TNS5K[0xd8]",
+        "Name": "pad0xd8_UGGGO[0xd8]",
         "Type": "char",
         "Size": "0xd8",
         "Offset": "0xd6"

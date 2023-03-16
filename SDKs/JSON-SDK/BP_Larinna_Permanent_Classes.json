@@ -1,16 +1,10 @@
 {
   "BP_Larinna_Permanent_C": {
-    "Super": "",
+    "Super": "None",
     "FullSize": "0x6c0",
-    "InheritedSize": "-0x1",
-    "ClassSize": "0x6c1",
+    "InheritedSize": "0x6b0",
+    "ClassSize": "0x10",
     "Attributes": [
-      {
-        "Name": "pad0x6b1_E6LY6[0x6b1]",
-        "Type": "char",
-        "Size": "0x6b1",
-        "Offset": "-0x1"
-      },
       {
         "Name": "None",
         "Type": "Class StaticMeshComponent*",

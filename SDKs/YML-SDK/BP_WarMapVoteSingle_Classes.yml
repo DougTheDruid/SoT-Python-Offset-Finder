@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_WarMapVoteSingle_C:
   Attributes:
-  - Name: VoteIndicator4
+  - Name: None
     Offset: '0x610'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: VoteIndicator3
+  - Name: None
     Offset: '0x618'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: VoteIndicator2
+  - Name: None
     Offset: '0x620'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: VoteIndicator1
+  - Name: None
     Offset: '0x628'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: VoteAudio
+  - Name: None
     Offset: '0x630'
     Size: '0x8'
     Type: Class VoteAudioComponent*
-  - Name: WarMapInteractionVote
+  - Name: None
     Offset: '0x638'
     Size: '0x8'
     Type: Class WarMapInteractionVoteComponent*
-  - Name: StaticMeshVoteVisualiser
+  - Name: None
     Offset: '0x640'
     Size: '0x8'
     Type: Class StaticMeshVoteVisualiserComponent*
-  - Name: ActionRules
+  - Name: None
     Offset: '0x648'
     Size: '0x8'
     Type: Class ActionRulesComponent*

@@ -1,4 +1,204 @@
 {
+  "WaterSplashProbesContainer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Probes",
+        "Type": "TArray<struct Probes>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ProbeSamplingTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WaterSplashProbe": {
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "ProbeDebugName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "LocalOffset",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Height",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "Pitch",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Yaw",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "Roll",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RateOfChangeThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "LocalOffsetAdjustment",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "LocalOffsetAdjustmentDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "Type",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "WaterHeightType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0x2_5UQGX[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x4a"
+      },
+      {
+        "Name": "StaticWaterHeightValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "SplashProbe": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "Probe",
+        "Type": "Struct WaterSplashProbe",
+        "Size": "0xd8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ProbeSamplingTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "TimeBetweenProbeVfx",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "ParticleSystem",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "UnderwaterUsage",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "SpawnAttached",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf1"
+      },
+      {
+        "Name": "AttachToWaterSurface",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf2"
+      },
+      {
+        "Name": "SplashAttachType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xf3"
+      },
+      {
+        "Name": "VfxSpawnOffset",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0xf4"
+      },
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x7_Y88EL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
+      },
+      {
+        "Name": "CurrentlyPlayingVFX",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      }
+    ]
+  },
+  "WaterSpout": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "SpoutLocatorTransform",
+        "Type": "Struct Transform",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpoutParticleSystem",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "SplashParticleSystem",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "WaterInformation": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -44,20 +244,20 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_LPL65[0x4]",
+        "Name": "pad0x4_LZXHF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "VolumeSamples",
-        "Type": "TArray<Struct BuoyancyVolumeSample>",
+        "Type": "TArray<struct VolumeSamples>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "DragSamples",
-        "Type": "TArray<Struct BuoyancyDragSample>",
+        "Type": "TArray<struct DragSamples>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -144,7 +344,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_B5NPB[0x2]",
+        "Name": "pad0x2_RNW2D[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -162,7 +362,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_RLGQB[0x4]",
+        "Name": "pad0x4_JYW5C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -210,12 +410,12 @@
     "Attributes": [
       {
         "Name": "Configurations",
-        "Type": "TArray<Struct BuoyancySampleMovementConfiguration>",
+        "Type": "TArray<struct Configurations>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x40_MARUG[0x40]",
+        "Name": "pad0x40_RVKM9[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x10"
@@ -245,7 +445,7 @@
       },
       {
         "Name": "SampleMoveData",
-        "Type": "TArray<Struct BuoyancySampleMovementConfigurationEntry>",
+        "Type": "TArray<struct SampleMoveData>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -256,7 +456,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_LEM2P[0x4]",
+        "Name": "pad0x4_RCJDS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -291,7 +491,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_3RY7S[0x4]",
+        "Name": "pad0x4_5L3II[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -355,206 +555,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "WaterSplashProbesContainer": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Probes",
-        "Type": "TArray<Struct WaterSplashProbe>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ProbeSamplingTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WaterSplashProbe": {
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "ProbeDebugName",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "LocalOffset",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Height",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "Pitch",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Yaw",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "Roll",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "RateOfChangeThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "LocalOffsetAdjustment",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "LocalOffsetAdjustmentDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "WaterHeightType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0x2_VZTFN[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x4a"
-      },
-      {
-        "Name": "StaticWaterHeightValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "SplashProbe": {
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "Probe",
-        "Type": "Struct WaterSplashProbe",
-        "Size": "0xd8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ProbeSamplingTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "TimeBetweenProbeVfx",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      },
-      {
-        "Name": "ParticleSystem",
-        "Type": "Class Object*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "UnderwaterUsage",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "SpawnAttached",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf1"
-      },
-      {
-        "Name": "AttachToWaterSurface",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf2"
-      },
-      {
-        "Name": "SplashAttachType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xf3"
-      },
-      {
-        "Name": "VfxSpawnOffset",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0xf4"
-      },
-      {
-        "Name": "Enabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "pad0x7_PEQ68[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x101"
-      },
-      {
-        "Name": "CurrentlyPlayingVFX",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      }
-    ]
-  },
-  "WaterSpout": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "SpoutLocatorTransform",
-        "Type": "Struct Transform",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpoutParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "SplashParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x38"
       }
     ]
   },

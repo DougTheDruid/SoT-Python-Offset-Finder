@@ -16,7 +16,7 @@ DebugMenuButtonShortcut:
   - Name: Buttons
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Key>
+    Type: TArray<struct Buttons>
   - Name: RequiredHoldTime
     Offset: '0x30'
     Size: '0x4'

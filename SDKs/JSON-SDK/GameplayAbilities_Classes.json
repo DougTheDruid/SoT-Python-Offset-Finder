@@ -27,7 +27,7 @@
     "ClassSize": "0x550",
     "Attributes": [
       {
-        "Name": "pad0x8_1ZL81[0x8]",
+        "Name": "pad0x8_F5U4S[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -39,7 +39,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_QMXA4[0x7]",
+        "Name": "pad0x7_7EJYB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -63,20 +63,20 @@
         "Offset": "0x1c8"
       },
       {
-        "Name": "pad0x7_APRLE[0x7]",
+        "Name": "pad0x7_R0TAI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1c9"
       },
       {
         "Name": "Modifiers",
-        "Type": "TArray<Struct GameplayModifierInfo>",
+        "Type": "TArray<struct Modifiers>",
         "Size": "0x10",
         "Offset": "0x1d0"
       },
       {
         "Name": "Executions",
-        "Type": "TArray<Struct GameplayEffectExecutionDefinition>",
+        "Type": "TArray<struct Executions>",
         "Size": "0x10",
         "Offset": "0x1e0"
       },
@@ -88,7 +88,7 @@
       },
       {
         "Name": "TargetEffectClasses",
-        "Type": "TArray<Class TargetEffectClasses>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x210"
       },
@@ -100,7 +100,7 @@
       },
       {
         "Name": "OverflowEffects",
-        "Type": "TArray<Class OverflowEffects>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x230"
       },
@@ -117,20 +117,20 @@
         "Offset": "0x241"
       },
       {
-        "Name": "pad0x6_FIMZ6[0x6]",
+        "Name": "pad0x6_J2T5F[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x242"
       },
       {
         "Name": "PrematureExpirationEffectClasses",
-        "Type": "TArray<Class PrematureExpirationEffectClasses>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x248"
       },
       {
         "Name": "RoutineExpirationEffectClasses",
-        "Type": "TArray<Class RoutineExpirationEffectClasses>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x258"
       },
@@ -141,14 +141,14 @@
         "Offset": "0x268"
       },
       {
-        "Name": "pad0x7_OBOL2[0x7]",
+        "Name": "pad0x7_LB14B[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x269"
       },
       {
         "Name": "GameplayCues",
-        "Type": "TArray<Struct GameplayEffectCue>",
+        "Type": "TArray<struct GameplayCues>",
         "Size": "0x10",
         "Offset": "0x270"
       },
@@ -219,7 +219,7 @@
         "Offset": "0x558"
       },
       {
-        "Name": "pad0x3_VON82[0x3]",
+        "Name": "pad0x3_6IJUK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x559"
@@ -243,14 +243,14 @@
         "Offset": "0x561"
       },
       {
-        "Name": "pad0x6_14121[0x6]",
+        "Name": "pad0x6_LOD18[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x562"
       },
       {
         "Name": "GrantedAbilities",
-        "Type": "TArray<Struct GameplayAbilitySpecDef>",
+        "Type": "TArray<struct GrantedAbilities>",
         "Size": "0x10",
         "Offset": "0x568"
       }
@@ -263,7 +263,7 @@
     "ClassSize": "0x420",
     "Attributes": [
       {
-        "Name": "pad0x40_ONAU6[0x40]",
+        "Name": "pad0x40_F7FDV[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x28"
@@ -275,7 +275,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x18_A5P5G[0x18]",
+        "Name": "pad0x18_2B814[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x90"
@@ -287,7 +287,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x27_CAP3K[0x27]",
+        "Name": "pad0x27_DYFZR[0x27]",
         "Type": "char",
         "Size": "0x27",
         "Offset": "0xa9"
@@ -317,7 +317,7 @@
         "Offset": "0xd3"
       },
       {
-        "Name": "pad0x4_WTXKT[0x4]",
+        "Name": "pad0x4_QWHGI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
@@ -341,7 +341,7 @@
         "Offset": "0x198"
       },
       {
-        "Name": "pad0x7_JZSSW[0x7]",
+        "Name": "pad0x7_3NYC7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x199"
@@ -360,7 +360,7 @@
       },
       {
         "Name": "AbilityTriggers",
-        "Type": "TArray<Struct AbilityTriggerData>",
+        "Type": "TArray<struct AbilityTriggers>",
         "Size": "0x10",
         "Offset": "0x1b0"
       },
@@ -443,7 +443,7 @@
         "Offset": "0x3a0"
       },
       {
-        "Name": "pad0x70_EVOVN[0x70]",
+        "Name": "pad0x70_J6ZB7[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x3c8"
@@ -473,7 +473,7 @@
         "Offset": "0x442"
       },
       {
-        "Name": "pad0x7_O9M03[0x7]",
+        "Name": "pad0x7_KBK17[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x441"
@@ -487,14 +487,14 @@
     "ClassSize": "0xb70",
     "Attributes": [
       {
-        "Name": "pad0x8_3IHB1[0x8]",
+        "Name": "pad0x8_1YCYM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x128"
       },
       {
         "Name": "DefaultStartingData",
-        "Type": "TArray<Struct AttributeDefaults>",
+        "Type": "TArray<struct DefaultStartingData>",
         "Size": "0x10",
         "Offset": "0x130"
       },
@@ -511,7 +511,7 @@
         "Offset": "0x150"
       },
       {
-        "Name": "pad0x78_NCK14[0x78]",
+        "Name": "pad0x78_XTA5I[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x168"
@@ -535,7 +535,7 @@
         "Offset": "0x1e8"
       },
       {
-        "Name": "pad0x50_80CWK[0x50]",
+        "Name": "pad0x50_2Q3UD[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x2a8"
@@ -547,7 +547,7 @@
         "Offset": "0x2f8"
       },
       {
-        "Name": "pad0x1b0_2XAI3[0x1b0]",
+        "Name": "pad0x1b0_NKPUT[0x1b0]",
         "Type": "char",
         "Size": "0x1b0",
         "Offset": "0x308"
@@ -571,7 +571,7 @@
         "Offset": "0x4f8"
       },
       {
-        "Name": "pad0xa0_38LCQ[0xa0]",
+        "Name": "pad0xa0_X4JWE[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x528"
@@ -589,7 +589,7 @@
         "Offset": "0x5d0"
       },
       {
-        "Name": "pad0x18_VP1TU[0x18]",
+        "Name": "pad0x18_S01TK[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x5d8"
@@ -607,7 +607,7 @@
         "Offset": "0x958"
       },
       {
-        "Name": "pad0x130_EY93C[0x130]",
+        "Name": "pad0x130_CVOYJ[0x130]",
         "Type": "char",
         "Size": "0x130",
         "Offset": "0xa18"
@@ -619,7 +619,7 @@
         "Offset": "0xb48"
       },
       {
-        "Name": "pad0x160_JEITG[0x160]",
+        "Name": "pad0x160_GMMVO[0x160]",
         "Type": "char",
         "Size": "0x160",
         "Offset": "0xb56"
@@ -754,7 +754,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x7_JJ9AF[0x7]",
+        "Name": "pad0x7_Q4PVX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xf1"
@@ -784,7 +784,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x28_FO0KR[0x28]",
+        "Name": "pad0x28_54GHB[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x116"
@@ -805,7 +805,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x18_FLHFY[0x18]",
+        "Name": "pad0x18_FNG7Q[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x468"
@@ -832,7 +832,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x14_OXYL7[0x14]",
+        "Name": "pad0x14_M65LK[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x68"
@@ -856,7 +856,7 @@
         "Offset": "0x94"
       },
       {
-        "Name": "pad0x8_IBT8R[0x8]",
+        "Name": "pad0x8_YQXJY[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
@@ -973,7 +973,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x7_7G4JW[0x7]",
+        "Name": "pad0x7_MWUSX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3c9"
@@ -985,7 +985,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x30_NB8ML[0x30]",
+        "Name": "pad0x30_M0PP5[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x440"
@@ -1009,7 +1009,7 @@
         "Offset": "0x480"
       },
       {
-        "Name": "pad0x7_S08RI[0x7]",
+        "Name": "pad0x7_C1MFJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x481"
@@ -1027,7 +1027,7 @@
         "Offset": "0x490"
       },
       {
-        "Name": "pad0x4_D95JH[0x4]",
+        "Name": "pad0x4_BR5N8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
@@ -1051,7 +1051,7 @@
         "Offset": "0x4c0"
       },
       {
-        "Name": "pad0x21_CAU5L[0x21]",
+        "Name": "pad0x21_2OGI3[0x21]",
         "Type": "char",
         "Size": "0x21",
         "Offset": "0x4bf"
@@ -1205,7 +1205,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x10_RVVNF[0x10]",
+        "Name": "pad0x10_8Z50C[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x68"
@@ -1217,7 +1217,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x20_VDY18[0x20]",
+        "Name": "pad0x20_R9SUV[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x7e"
@@ -1360,14 +1360,14 @@
         "Offset": "0x454"
       },
       {
-        "Name": "pad0x4_DVTFY[0x4]",
+        "Name": "pad0x4_OGNJS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x45c"
       },
       {
         "Name": "GameplayEffectClassesWhileAnimating",
-        "Type": "TArray<Class GameplayEffectClassesWhileAnimating>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x460"
       },
@@ -1401,7 +1401,7 @@
     "Attributes": [
       {
         "Name": "Abilities",
-        "Type": "TArray<Struct GameplayAbilityBindInfo>",
+        "Type": "TArray<struct Abilities>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1420,7 +1420,7 @@
         "Offset": "0x4d8"
       },
       {
-        "Name": "pad0xc_X7SU4[0xc]",
+        "Name": "pad0xc_I1QRQ[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x4da"
@@ -1452,7 +1452,7 @@
         "Offset": "0x4e4"
       },
       {
-        "Name": "pad0xd_GAP1X[0xd]",
+        "Name": "pad0xd_NTU5V[0xd]",
         "Type": "char",
         "Size": "0xd",
         "Offset": "0x4e3"
@@ -1478,7 +1478,7 @@
         "Offset": "0x4f4"
       },
       {
-        "Name": "pad0x20_PBR48[0x20]",
+        "Name": "pad0x20_WOD1X[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x4f6"
@@ -1504,7 +1504,7 @@
         "Offset": "0x518"
       },
       {
-        "Name": "pad0x20_MF07B[0x20]",
+        "Name": "pad0x20_29G66[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x51e"
@@ -1569,14 +1569,14 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x60_678ZM[0x60]",
+        "Name": "pad0x60_EVVJF[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x100"
       },
       {
         "Name": "PendingExecuteCues",
-        "Type": "TArray<Struct GameplayCuePendingExecute>",
+        "Type": "TArray<struct PendingExecuteCues>",
         "Size": "0x10",
         "Offset": "0x160"
       },
@@ -1587,7 +1587,7 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x14_TFTLS[0x14]",
+        "Name": "pad0x14_2V6YG[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x172"
@@ -1619,7 +1619,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x3_RG12J[0x3]",
+        "Name": "pad0x3_XPS6R[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d9"
@@ -1649,7 +1649,7 @@
         "Offset": "0x3e2"
       },
       {
-        "Name": "pad0x7_U4FSU[0x7]",
+        "Name": "pad0x7_YKL1U[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3e1"
@@ -1681,7 +1681,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x9_6YXE9[0x9]",
+        "Name": "pad0x9_IRGG8[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x37"
@@ -1716,12 +1716,12 @@
     "Attributes": [
       {
         "Name": "GameplayCueData",
-        "Type": "TArray<Struct GameplayCueNotifyData>",
+        "Type": "TArray<struct GameplayCueData>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x70_WUP2F[0x70]",
+        "Name": "pad0x70_93COY[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x36"
@@ -1743,7 +1743,7 @@
     "Attributes": [
       {
         "Name": "RelevantAttributesToCapture",
-        "Type": "TArray<Struct GameplayEffectAttributeCaptureDefinition>",
+        "Type": "TArray<struct RelevantAttributesToCapture>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1762,7 +1762,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x9_1TAAB[0x9]",
+        "Name": "pad0x9_EVFVJ[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x37"
@@ -1784,13 +1784,13 @@
     "Attributes": [
       {
         "Name": "RelevantSourceAttributes",
-        "Type": "TArray<Struct GameplayAttribute>",
+        "Type": "TArray<struct RelevantSourceAttributes>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "RelevantTargetAttributes",
-        "Type": "TArray<Struct GameplayAttribute>",
+        "Type": "TArray<struct RelevantTargetAttributes>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -1853,12 +1853,12 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<Struct GameplayTagResponseTableEntry>",
+        "Type": "TArray<struct Entries>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x70_6AAX8[0x70]",
+        "Name": "pad0x70_44FEY[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x36"

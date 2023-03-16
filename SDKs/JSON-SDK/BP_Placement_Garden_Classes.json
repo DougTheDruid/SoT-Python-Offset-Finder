@@ -31,7 +31,7 @@
       },
       {
         "Name": "Meshes",
-        "Type": "TArray<Struct None>",
+        "Type": "TArray<struct Meshes>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
@@ -48,7 +48,7 @@
         "Offset": "0x3fc"
       },
       {
-        "Name": "pad0x3_FTEXO[0x3]",
+        "Name": "pad0x3_1Z5W0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3fd"
@@ -72,7 +72,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x4_Z8B1D[0x4]",
+        "Name": "pad0x4_JYCTN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x40c"
@@ -90,7 +90,7 @@
         "Offset": "0x420"
       },
       {
-        "Name": "pad0x7_9X9SQ[0x7]",
+        "Name": "pad0x7_GFR6J[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x421"
@@ -120,14 +120,14 @@
         "Offset": "0x450"
       },
       {
-        "Name": "pad0x4_CXXRY[0x4]",
+        "Name": "pad0x4_M4TN0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x454"
       },
       {
         "Name": "Mesh Radii",
-        "Type": "TArray<Struct InstancedStaticMeshComponent>",
+        "Type": "TArray<struct Mesh Radii>",
         "Size": "0x10",
         "Offset": "0x458"
       },

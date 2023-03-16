@@ -11,7 +11,8 @@ class BP_SmallShipNetProxy_C: public ShipNetProxy
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0x4b0(0x8)
-	char                                                         pad0x28_CS2KX[0x28];                               // 0x4b6(0x28)
+	Class StaticMeshComponent*                                   None;                                              // 0x4b8(0x8)
+	TArray<class MaterialInstanceDynamic*>                       None;                                              // 0x4c0(0x10)
 };
 
 

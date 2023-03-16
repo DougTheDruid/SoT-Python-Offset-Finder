@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_MultiCrewSkeletonThrone_C: public MultiCrewSkeletonThrone
 {
 public:
-	Class ParticleSystemComponent*                               VFX Skull 4;                                       // 0x418(0x8)
-	Class ParticleSystemComponent*                               VFX Skull 3;                                       // 0x420(0x8)
-	Class ParticleSystemComponent*                               VFX Skull 2;                                       // 0x428(0x8)
-	Class ParticleSystemComponent*                               VFX Skull 1;                                       // 0x430(0x8)
-	Class ParticleSystemComponent*                               VFX Under Chair;                                   // 0x438(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x418(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x420(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x428(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x430(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x438(0x8)
 };
 
 

@@ -31,7 +31,7 @@ public:
 	struct FName                                                 DemandCollectionId;                                // 0x3c(0x8)
 	int                                                          CommodityPurchaseLockoutInGameDays;                // 0x44(0x4)
 	int                                                          InGameHourWhenCommoditiesRestock;                  // 0x48(0x4)
-	char                                                         pad0x4_YGX8S[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_0OFZ6[0x4];                                 // 0x4c(0x4)
 	Struct GameTime                                              CommodityRedemptionTimeOutPeriodInDays;            // 0x50(0x8)
 	Struct StringAssetReference                                  NPCListAsset;                                      // 0x58(0x10)
 };
@@ -48,7 +48,7 @@ public:
 class CommodityDemandService: public Actor
 {
 public:
-	char                                                         pad0x20_R5XIP[0x20];                               // 0x3c8(0x20)
+	char                                                         pad0x20_IHLV4[0x20];                               // 0x3c8(0x20)
 	Struct ActiveNPCDemands                                      ActiveCommodityDemands;                            // 0x3e8(0x20)
 };
 
@@ -71,7 +71,7 @@ public:
 class CommodityEntitlementRedemptionAsset: public DataAsset
 {
 public:
-	TArray<Struct EntitlementToRedeemItems>                      CommoditiesForRedemption;                          // 0x28(0x10)
+	TArray<struct CommoditiesForRedemption>                      CommoditiesForRedemption;                          // 0x28(0x10)
 };
 
 
@@ -81,7 +81,7 @@ class CommodityItemDesc: public BootyItemDesc
 public:
 	Struct CommoditySelectionType                                CommodityType;                                     // 0x120(0x8)
 	byte                                                         CommodityDemand;                                   // 0x128(0x1)
-	char                                                         pad0x9_H9XCJ[0x9];                                 // 0x127(0x9)
+	char                                                         pad0x9_Z92M3[0x9];                                 // 0x127(0x9)
 };
 
 
@@ -103,9 +103,9 @@ public:
 class CommodityRedemptionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_Y913M[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_GOD11[0x8];                                 // 0xc8(0x8)
 	Struct FText                                                 RedeemTooltipText;                                 // 0xd0(0x38)
-	char                                                         pad0x78_ND972[0x78];                               // 0x108(0x78)
+	char                                                         pad0x78_87E73[0x78];                               // 0x108(0x78)
 	TArray<class Actor*>                                         PendingRedemptions;                                // 0x180(0x10)
 };
 
@@ -121,7 +121,7 @@ public:
 class CommoditySourceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_N3L6U[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_Q0SNV[0x8];                                 // 0xc8(0x8)
 	struct FName                                                 NPCIdentifier;                                     // 0xd0(0x8)
 	struct FName                                                 IslandIdentifier;                                  // 0xd8(0x8)
 };
@@ -131,7 +131,7 @@ public:
 class CommodityTypeDataAsset: public DataAsset
 {
 public:
-	TArray<Struct CommodityTypeDataEntry>                        CommodityEntries;                                  // 0x28(0x10)
+	TArray<struct CommodityEntries>                              CommodityEntries;                                  // 0x28(0x10)
 };
 
 
@@ -161,7 +161,7 @@ class IsWieldedCommodityItemInDemandStatCondition: public TargetedStatCondition
 {
 public:
 	byte                                                         CommodityDemand;                                   // 0x30(0x1)
-	char                                                         pad0x21_T0WQC[0x21];                               // 0x2f(0x21)
+	char                                                         pad0x21_KQH8L[0x21];                               // 0x2f(0x21)
 };
 
 
@@ -169,8 +169,8 @@ public:
 class SpecificItemsCrateFillerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_6BNTE[0x8];                                 // 0xc8(0x8)
-	TArray<Struct StorageContainerNode>                          ItemsToFillCrateWith;                              // 0xd0(0x10)
+	char                                                         pad0x8_O67OW[0x8];                                 // 0xc8(0x8)
+	TArray<struct ItemsToFillCrateWith>                          ItemsToFillCrateWith;                              // 0xd0(0x10)
 };
 
 
@@ -179,7 +179,7 @@ class WasWieldedCommodityItemBoughtAtDemandStatCondition: public TargetedStatCon
 {
 public:
 	byte                                                         CommodityDemand;                                   // 0x30(0x1)
-	char                                                         pad0x9_0NSQT[0x9];                                 // 0x2f(0x9)
+	char                                                         pad0x9_0XZ34[0x9];                                 // 0x2f(0x9)
 };
 
 

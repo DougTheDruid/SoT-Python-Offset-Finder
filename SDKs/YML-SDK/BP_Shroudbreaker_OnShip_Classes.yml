@@ -2,151 +2,151 @@
 # https://github.com/DougTheDruid
 BP_Shroudbreaker_OnShip_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x458'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: vfx_ShroudBreaker_OnShip_stage4
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ShieldPulseMesh
+  - Name: None
     Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: vfx_ShroudBreaker_OnShip_stage3
+  - Name: None
     Offset: '0x470'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: vfx_shroudbreaker_ember
+  - Name: None
     Offset: '0x478'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: vfx_shroudbreaker_shipTip
+  - Name: None
     Offset: '0x480'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ShieldMesh
+  - Name: None
     Offset: '0x488'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: WwiseEmitter
+  - Name: None
     Offset: '0x490'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*
-  - Name: vfx_ShroudBreaker_disappear_smoke_cloud
+  - Name: None
     Offset: '0x498'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: vfx_ShroudBreaker_OnShip_stage1
+  - Name: None
     Offset: '0x4a0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: MusicZone
+  - Name: None
     Offset: '0x4a8'
     Size: '0x8'
     Type: Class MusicZoneComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: ActivateShroudbreakerHandle
+  - Name: None
     Offset: '0x4b8'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: DeactivateShroudbreakerHandle
+  - Name: None
     Offset: '0x500'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: ActivateEffectsHandle
+  - Name: None
     Offset: '0x548'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: DeactivateEffectsHandle
+  - Name: None
     Offset: '0x590'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: ShipDestroyedHandle
+  - Name: None
     Offset: '0x5d8'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: ParentShipActor
+  - Name: None
     Offset: '0x620'
     Size: '0x8'
     Type: Class Actor*
-  - Name: MusicZoneActive
+  - Name: None
     Offset: '0x628'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N9RB3[0x3]
+  - Name: pad0x3_SRK0S[0x3]
     Offset: '0x629'
     Size: '0x3'
     Type: char
-  - Name: GemEmissiveOn
+  - Name: None
     Offset: '0x62c'
     Size: '0x4'
     Type: float
-  - Name: Shroudbreaker Material
+  - Name: None
     Offset: '0x630'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: GemEmissiveOff
+  - Name: None
     Offset: '0x638'
     Size: '0x4'
     Type: float
-  - Name: ShroudBreakerEffectsActive
+  - Name: None
     Offset: '0x63c'
     Size: '0x1'
     Type: bool
-  - Name: ShroudBreakerDeactivate
+  - Name: None
     Offset: '0x63d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_SP458[0x2]
+  - Name: pad0x2_MY0Q6[0x2]
     Offset: '0x63e'
     Size: '0x2'
     Type: char
-  - Name: PlayerEnteredIslandVincityEventHandle
+  - Name: None
     Offset: '0x640'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: PlayerLeftIslandVincityEventHandle
+  - Name: None
     Offset: '0x688'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: ShipProgressSpawnLoactionsAssetID
+  - Name: None
     Offset: '0x6d0'
     Size: '0x10'
-    Type: TArray<Assetclass ShipProgressSpawnLoactionsAssetID>
-  - Name: ShipProgressSpawnLocationsReference
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x6e0'
     Size: '0x10'
     Type: TArray<class ProgressShipSpawnLocation*>
-  - Name: ShieldMaterial
+  - Name: None
     Offset: '0x6f0'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: ShieldPulseMaterial
+  - Name: None
     Offset: '0x6f8'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: DEBUG_Stage
+  - Name: None
     Offset: '0x700'
     Size: '0x4'
     Type: int
-  - Name: FinalStageActivationDelay
+  - Name: None
     Offset: '0x704'
     Size: '0x4'
     Type: float
-  - Name: NewVar
+  - Name: None
     Offset: '0x708'
     Size: '0x8'
     Type: Class SoundBase*
-  - Name: ShipHullAudio
+  - Name: None
     Offset: '0x710'
     Size: '0x8'
     Type: Class ShipHullAudio*
-  - Name: ShroudBreakerAmbientLoopingWwiseEvent
+  - Name: None
     Offset: '0x718'
     Size: '0x8'
     Type: Class WwiseEvent*

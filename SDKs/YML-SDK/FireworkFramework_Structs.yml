@@ -44,14 +44,14 @@ GeneratedFireworkData:
     Offset: '0xc'
     Size: '0x14'
     Type: Struct FireworkAmbientLightData
-  - Name: pad0x8_7UFKN[0x8]
+  - Name: pad0x8_T2IHX[0x8]
     Offset: '0x20'
     Size: '0x8'
     Type: char
   - Name: ExplosionData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct FireworkExplosionData>
+    Type: TArray<struct ExplosionData>
   - Name: SfxPool
     Offset: '0x38'
     Size: '0x8'
@@ -60,7 +60,7 @@ GeneratedFireworkData:
     Offset: '0x40'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: pad0x8_Z3N9K[0x8]
+  - Name: pad0x8_T0DHJ[0x8]
     Offset: '0x48'
     Size: '0x8'
     Type: char

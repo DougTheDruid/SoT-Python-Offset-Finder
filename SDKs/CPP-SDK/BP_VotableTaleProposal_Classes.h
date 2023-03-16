@@ -17,7 +17,9 @@ public:
 	Class StaticMeshComponent*                                   None;                                              // 0x510(0x8)
 	TArray<class StaticMeshComponent*>                           None;                                              // 0x518(0x10)
 	Class StaticMesh*                                            None;                                              // 0x528(0x8)
-	char                                                         pad0x20_J8IV8[0x20];                               // 0x52e(0x20)
+	int                                                          None;                                              // 0x530(0x4)
+	float                                                        None;                                              // 0x534(0x4)
+	Class MaterialInterface*                                     None;                                              // 0x538(0x8)
 };
 
 

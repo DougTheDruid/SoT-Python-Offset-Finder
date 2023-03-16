@@ -2,50 +2,14 @@
 # https://github.com/DougTheDruid
 BP_LightingZone_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: InnerSphere
-    Offset: '0x3d0'
-    Size: '0x8'
-    Type: Class SphereComponent*
-  - Name: OuterSphere
-    Offset: '0x3d8'
-    Size: '0x8'
-    Type: Class SphereComponent*
-  - Name: LightingZone
-    Offset: '0x3e0'
-    Size: '0x8'
-    Type: Class LightingZoneComponent*
-  - Name: DefaultSceneRoot
-    Offset: '0x3e8'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: Outer Radius
-    Offset: '0x3f0'
-    Size: '0x4'
-    Type: float
-  - Name: Inner Radius
-    Offset: '0x3f4'
-    Size: '0x4'
-    Type: float
-  - Name: Weight
-    Offset: '0x3f8'
-    Size: '0x4'
-    Type: float
-  - Name: Priority Layer
-    Offset: '0x3fc'
-    Size: '0x4'
-    Type: int
-  - Name: Lighting Set
-    Offset: '0x400'
-    Size: '0x4'
-    Type: int
-  - Name: IsUnderwaterZone
-    Offset: '0x404'
-    Size: '0x1'
-    Type: bool
+  - Name: pad0x45_HHLB3[0x45]
+    Offset: '0x3ce'
+    Size: '0x45'
+    Type: char
   ClassSize: '0x3d'
   FullSize: '0x405'
   InheritedSize: '0x3c8'

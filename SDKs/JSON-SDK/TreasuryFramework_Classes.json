@@ -45,7 +45,7 @@
     "ClassSize": "0x130",
     "Attributes": [
       {
-        "Name": "pad0x8_MJQY6[0x8]",
+        "Name": "pad0x8_9ZEVO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -118,7 +118,7 @@
       },
       {
         "Name": "WaveEncounters",
-        "Type": "TArray<Struct TreasuryWaveEncounter>",
+        "Type": "TArray<struct WaveEncounters>",
         "Size": "0x10",
         "Offset": "0x400"
       },
@@ -195,7 +195,7 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_KPT40[0x4]",
+        "Name": "pad0x4_K0CGD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
@@ -219,7 +219,7 @@
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x50_DC535[0x50]",
+        "Name": "pad0x50_UX8XS[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x4b6"

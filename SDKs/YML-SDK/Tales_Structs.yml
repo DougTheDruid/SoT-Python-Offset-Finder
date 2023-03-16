@@ -208,7 +208,7 @@ SnapshottedActorData:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_JDB0F[0x6]
+  - Name: pad0x6_TWNYA[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -292,7 +292,7 @@ TaleQuestDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JHFQ0[0x4]
+  - Name: pad0x4_YGK5V[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -341,7 +341,7 @@ TaleQuestFailedEvent:
   - Name: CrewIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct Guid>
+    Type: TArray<struct CrewIds>
   - Name: QuestId
     Offset: '0x10'
     Size: '0x10'
@@ -355,7 +355,7 @@ TaleQuestQueryableStateCanAllDataBeReadCondition:
   - Name: AllDataToCheck
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class AllDataToCheck>
+    Type: TArray<class Class*>
   - Name: ExpectedValue
     Offset: '0x38'
     Size: '0x1'
@@ -366,7 +366,7 @@ TaleQuestQueryableStateCanAnyDataBeReadCondition:
   - Name: AllDataToCheck
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class AllDataToCheck>
+    Type: TArray<class Class*>
   - Name: ExpectedValue
     Offset: '0x38'
     Size: '0x1'
@@ -386,7 +386,7 @@ TaleQuestQueryableStateDataInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_809OY[0x3]
+  - Name: pad0x3_HE0UJ[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -400,7 +400,7 @@ TaleQuestQueryableStateReadAllValueBoolCondition:
   - Name: AllDataToCheck
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class AllDataToCheck>
+    Type: TArray<class Class*>
   - Name: ExpectedValue
     Offset: '0x38'
     Size: '0x1'
@@ -411,7 +411,7 @@ TaleQuestQueryableStateReadAnyValueBoolCondition:
   - Name: AllDataToCheck
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class AllDataToCheck>
+    Type: TArray<class Class*>
   - Name: ExpectedValue
     Offset: '0x38'
     Size: '0x1'

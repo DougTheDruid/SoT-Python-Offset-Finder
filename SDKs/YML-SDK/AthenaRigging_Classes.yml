@@ -9,12 +9,12 @@ InstancedRopeComponent:
   - Name: Ropes
     Offset: '0x5c0'
     Size: '0x10'
-    Type: TArray<Struct InstancedRopeParams>
+    Type: TArray<struct Ropes>
   - Name: ShadowLOD
     Offset: '0x5d0'
     Size: '0x4'
     Type: int
-  - Name: pad0xb4_Y92TW[0xb4]
+  - Name: pad0xb4_OBWY1[0xb4]
     Offset: '0x5d2'
     Size: '0xb4'
     Type: char
@@ -28,7 +28,7 @@ MaterialExpressionRopeParameter:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_ZYT9H[0x9]
+  - Name: pad0x9_YAVM6[0x9]
     Offset: '0x6f'
     Size: '0x9'
     Type: char
@@ -38,7 +38,7 @@ MaterialExpressionRopeParameter:
   Super: MaterialExpression
 RiggingSystem:
   Attributes:
-  - Name: pad0x8_6QUNM[0x8]
+  - Name: pad0x8_UAZDN[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -53,11 +53,11 @@ RiggingSystem:
   - Name: Lines
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<Struct RiggingSystemLine>
+    Type: TArray<struct Lines>
   - Name: Ropes
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<Struct InstancedRopeParams>
+    Type: TArray<struct Ropes>
   - Name: PulleyInstances
     Offset: '0x400'
     Size: '0x10'
@@ -69,12 +69,12 @@ RiggingSystem:
   - Name: Sockets
     Offset: '0x470'
     Size: '0x10'
-    Type: TArray<Struct SocketId>
+    Type: TArray<struct Sockets>
   - Name: InitialMainRopeLengths
     Offset: '0x480'
     Size: '0x10'
     Type: TArray<Float InitialMainRopeLengths>
-  - Name: pad0xa8_67TLD[0xa8]
+  - Name: pad0xa8_4AOY2[0xa8]
     Offset: '0x48e'
     Size: '0xa8'
     Type: char
@@ -91,12 +91,12 @@ RiggingSystemComponent:
   - Name: LineGroups
     Offset: '0x300'
     Size: '0x10'
-    Type: TArray<Struct RiggingSystemLineGroup>
+    Type: TArray<struct LineGroups>
   - Name: Impl
     Offset: '0x310'
     Size: '0x8'
     Type: Class RiggingSystem*
-  - Name: pad0x18_4US9I[0x18]
+  - Name: pad0x18_W4KIS[0x18]
     Offset: '0x316'
     Size: '0x18'
     Type: char

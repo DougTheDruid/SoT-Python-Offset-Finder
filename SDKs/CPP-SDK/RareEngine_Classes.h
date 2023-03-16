@@ -39,7 +39,7 @@ public:
 class MemoryUsageVisualiserSettings: public Object
 {
 public:
-	TArray<Struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
+	TArray<struct VisualiserCategories>                          VisualiserCategories;                              // 0x28(0x10)
 };
 
 

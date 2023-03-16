@@ -6,9 +6,9 @@ BP_Prompt_EmissaryActivated_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_6SUEZ[0x93]
+  - Name: pad0x132_L3MY4[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: Handle_EmissaryCompanyChangedEvent
     Offset: '0x120'
@@ -25,12 +25,12 @@ BP_Prompt_EmissaryActivated_C:
   - Name: Prompts
     Offset: '0x178'
     Size: '0x10'
-    Type: TArray<Struct PrioritisedPromptWithHandle>
+    Type: TArray<struct Prompts>
   - Name: PromptSurfacedThisSession
     Offset: '0x188'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PIEEL[0x7]
+  - Name: pad0x7_KKRCP[0x7]
     Offset: '0x189'
     Size: '0x7'
     Type: char

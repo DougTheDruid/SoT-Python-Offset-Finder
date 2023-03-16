@@ -12,9 +12,9 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0xd3_OITPU[0xd3]",
+        "Name": "pad0x172_LM89Y[0x172]",
         "Type": "char",
-        "Size": "0xd3",
+        "Size": "0x172",
         "Offset": "0xe0"
       },
       {
@@ -25,7 +25,7 @@
       },
       {
         "Name": "GoldHoarderLocations",
-        "Type": "TArray<Struct Vector>",
+        "Type": "TArray<struct GoldHoarderLocations>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
@@ -43,7 +43,7 @@
       },
       {
         "Name": "OutpostNames",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x118"
       },
@@ -54,7 +54,7 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x7_2HDLH[0x7]",
+        "Name": "pad0x7_6UJU1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x129"

@@ -6,67 +6,67 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "None",
+        "Name": "CommodityRedemption",
         "Type": "Class CommodityRedemptionComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
       {
-        "Name": "None",
+        "Name": "EmissaryMaxRankQuestProvider",
         "Type": "Class EmissaryMaxRankQuestProvider*",
         "Size": "0x8",
         "Offset": "0x6a8"
       },
       {
-        "Name": "None",
+        "Name": "CargoRunParticipant",
         "Type": "Class CargoRunParticipantComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
       },
       {
-        "Name": "None",
+        "Name": "SolidHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x6b8"
       },
       {
-        "Name": "None",
+        "Name": "NPCDialogSellCrate",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x6c0"
       },
       {
-        "Name": "None",
+        "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x6c8"
       },
       {
-        "Name": "None",
+        "Name": "MerchantCrateProvider",
         "Type": "Class MerchantCrateProviderComponent*",
         "Size": "0x8",
         "Offset": "0x6d0"
       },
       {
-        "Name": "None",
+        "Name": "cmp_pocket_watch_mrh_01_e",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "None",
+        "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"

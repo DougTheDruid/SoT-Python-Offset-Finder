@@ -5,7 +5,7 @@ AndCondition:
   - Name: Conditions
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ConditionInstance>
+    Type: TArray<struct Conditions>
   ClassSize: '0x18'
 ConditionBase:
   Attributes: []
@@ -80,7 +80,7 @@ IsObjectOfTypeCondition:
   - Name: TargetObjectClasses
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<AssetClass TargetObjectClasses>
+    Type: TArray<Assetclass TargetObjectClasses>
   ClassSize: '0x38'
 NotCondition:
   Attributes:
@@ -94,7 +94,7 @@ OrCondition:
   - Name: Conditions
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ConditionInstance>
+    Type: TArray<struct Conditions>
   ClassSize: '0x18'
 TargetConditionContextPayload:
   Attributes:

@@ -18,7 +18,7 @@ AbandonedNoteClueDescriptorGenerator:
   Super: ClueDescriptorGenerator
 AbandonedNoteClueDestinationContainerComponent:
   Attributes:
-  - Name: pad0x20_MEC2H[0x20]
+  - Name: pad0x20_DM810[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char
@@ -42,7 +42,7 @@ AbandonedNoteClueDestinationContainerComponent:
     Offset: '0x148'
     Size: '0x8'
     Type: Class AbandonedNoteClueTextChoiceSource*
-  - Name: pad0x90_87QA0[0x90]
+  - Name: pad0x90_HE9J6[0x90]
     Offset: '0x14e'
     Size: '0x90'
     Type: char
@@ -55,7 +55,7 @@ AbandonedNoteClueGenderSpecificTextAsset:
   - Name: Descriptions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct GenderSpecificTextPairings>
+    Type: TArray<struct Descriptions>
   - Name: DestinationType
     Offset: '0x38'
     Size: '0x8'
@@ -79,7 +79,7 @@ AbandonedNoteClueTextAsset:
   - Name: Descriptions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct FText>
+    Type: TArray<struct FText>
   - Name: DestinationType
     Offset: '0x38'
     Size: '0x8'
@@ -121,7 +121,7 @@ AbandonedNoteClueTextIndexAssetMap:
   - Name: TextIndexMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ClueDestinationToTextIndex>
+    Type: TArray<struct TextIndexMappings>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -134,7 +134,7 @@ AbandonedNoteClueTextSourceInterface:
   Super: Interface
 AbandonedNoteWieldable:
   Attributes:
-  - Name: pad0x10_SX5SU[0x10]
+  - Name: pad0x10_AFAF0[0x10]
     Offset: '0x7a0'
     Size: '0x10'
     Type: char
@@ -158,7 +158,7 @@ AbandonedNoteWieldable:
     Offset: '0x7d0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x11_0GVT0[0x11]
+  - Name: pad0x11_SJZWD[0x11]
     Offset: '0x7cf'
     Size: '0x11'
     Type: char
@@ -203,8 +203,8 @@ AbandonedNoteWieldableRenderingComponent:
   - Name: ExtraTextFields
     Offset: '0x158'
     Size: '0x10'
-    Type: TArray<Struct TextEntryWithLayout>
-  - Name: pad0x70_030GF[0x70]
+    Type: TArray<struct ExtraTextFields>
+  - Name: pad0x70_AEJ2I[0x70]
     Offset: '0x166'
     Size: '0x70'
     Type: char
@@ -224,7 +224,7 @@ BarrelsOfPlentyClueSiteData:
     Offset: '0x38'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x44_QUA4A[0x44]
+  - Name: pad0x44_L3SSX[0x44]
     Offset: '0x42'
     Size: '0x44'
     Type: char
@@ -270,7 +270,7 @@ CircleMapClueDescriptorGenerator:
   Super: ClueDescriptorGenerator
 CircleMapClueDestinationContainerComponent:
   Attributes:
-  - Name: pad0x10_GND05[0x10]
+  - Name: pad0x10_61ILY[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -298,7 +298,7 @@ CircleMapClueDestinationContainerComponent:
     Offset: '0xf0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_ETDDX[0x7]
+  - Name: pad0x7_X5J26[0x7]
     Offset: '0xf1'
     Size: '0x7'
     Type: char
@@ -310,15 +310,15 @@ CircleMapClueDestinationContainerComponent:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_9M97L[0x7]
+  - Name: pad0x7_DXECF[0x7]
     Offset: '0x101'
     Size: '0x7'
     Type: char
   - Name: ClueRenderData
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Struct MapTextureRenderData>
-  - Name: pad0x68_RQPI2[0x68]
+    Type: TArray<struct ClueRenderData>
+  - Name: pad0x68_TVNHN[0x68]
     Offset: '0x116'
     Size: '0x68'
     Type: char
@@ -340,7 +340,7 @@ ClueDestinationContainerInterface:
   Super: Interface
 ClueSiteCircleMapWieldable:
   Attributes:
-  - Name: pad0x20_CX9DU[0x20]
+  - Name: pad0x20_N9NSZ[0x20]
     Offset: '0x850'
     Size: '0x20'
     Type: char
@@ -348,7 +348,7 @@ ClueSiteCircleMapWieldable:
     Offset: '0x870'
     Size: '0x18'
     Type: Struct MapRadialIconData
-  - Name: pad0x38_8MM7U[0x38]
+  - Name: pad0x38_7OS1G[0x38]
     Offset: '0x886'
     Size: '0x38'
     Type: char
@@ -393,7 +393,7 @@ ExistingToPhasedNPCIndexAssetMap:
   - Name: NPCIndexMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ExistingNPCToPhasedNPC>
+    Type: TArray<struct NPCIndexMappings>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -410,7 +410,7 @@ FloatingMessageInABottleClueSiteData:
     Offset: '0x38'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x44_OV7HY[0x44]
+  - Name: pad0x44_10EYN[0x44]
     Offset: '0x42'
     Size: '0x44'
     Type: char
@@ -446,7 +446,7 @@ GooseChaseClueBlueprintFunctionLibrary:
   Super: BlueprintFunctionLibrary
 InteractableGrammaticalGenderComponent:
   Attributes:
-  - Name: pad0x8_XYH9S[0x8]
+  - Name: pad0x8_2WSJ0[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -454,7 +454,7 @@ InteractableGrammaticalGenderComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_I3YQW[0x9]
+  - Name: pad0x9_QNI59[0x9]
     Offset: '0xcf'
     Size: '0x9'
     Type: char
@@ -468,7 +468,7 @@ IslandByCompassBearingClueDestinationDescriptor:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_MPNSE[0x9]
+  - Name: pad0x9_H96XV[0x9]
     Offset: '0x3f'
     Size: '0x9'
     Type: char
@@ -506,7 +506,7 @@ LocationOnIslandClueDestinationDescriptor:
     Offset: '0x48'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x1c_V6VQF[0x1c]
+  - Name: pad0x1c_Z4AFH[0x1c]
     Offset: '0x52'
     Size: '0x1c'
     Type: char
@@ -560,7 +560,7 @@ NPCHintDialogueClueCreator:
     Offset: '0x40'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_OCJLK[0xc]
+  - Name: pad0xc_96KID[0xc]
     Offset: '0x42'
     Size: '0xc'
     Type: char
@@ -580,7 +580,7 @@ NPCHintDialogueClueSiteData:
     Offset: '0x38'
     Size: '0xb8'
     Type: Struct NPCData
-  - Name: pad0x1a0_DHRG6[0x1a0]
+  - Name: pad0x1a0_0NCT1[0x1a0]
     Offset: '0xee'
     Size: '0x1a0'
     Type: char
@@ -602,7 +602,7 @@ ObtainClueFromContainerOnWieldComponent:
   Super: ObtainClueOnWieldComponent
 ObtainClueOnWieldComponent:
   Attributes:
-  - Name: pad0x8_FJPH4[0x8]
+  - Name: pad0x8_8YQ1O[0x8]
     Offset: '0x138'
     Size: '0x8'
     Type: char
@@ -624,7 +624,7 @@ SeaLocationByGridSquareClueDestinationDescriptor:
     Offset: '0x40'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x1c_59K3A[0x1c]
+  - Name: pad0x1c_8NHFX[0x1c]
     Offset: '0x4a'
     Size: '0x1c'
     Type: char
@@ -658,7 +658,7 @@ ShipwreckClueSiteType:
   Super: ClueSiteType
 TaleQuestClueInventoryService:
   Attributes:
-  - Name: pad0x18_8UTOR[0x18]
+  - Name: pad0x18_I83FI[0x18]
     Offset: '0x60'
     Size: '0x18'
     Type: char
@@ -666,7 +666,7 @@ TaleQuestClueInventoryService:
     Offset: '0x78'
     Size: '0x10'
     Type: TArray<class ClueDescriptor*>
-  - Name: pad0x50_Z12F9[0x50]
+  - Name: pad0x50_1LS96[0x50]
     Offset: '0x88'
     Size: '0x50'
     Type: char
@@ -826,7 +826,7 @@ WaitForClueCollectedStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class Actor*
-  - Name: pad0xa8_H5KTI[0xa8]
+  - Name: pad0xa8_X5MAE[0xa8]
     Offset: '0xa6'
     Size: '0xa8'
     Type: char
@@ -854,7 +854,7 @@ WaitForClueCollectedStepDesc:
   Super: TaleQuestStepDesc
 WashedUpMessageInABottleClueCreator:
   Attributes:
-  - Name: pad0x20_347Y5[0x20]
+  - Name: pad0x20_UDTDP[0x20]
     Offset: '0x30'
     Size: '0x20'
     Type: char
@@ -886,14 +886,14 @@ WashedUpMessageInABottleClueCreator:
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_R1BXL[0x4]
+  - Name: pad0x4_LY4W0[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
   - Name: SinkIntoSandItems
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<AssetClass SinkIntoSandItems>
+    Type: TArray<Assetclass SinkIntoSandItems>
   ClassSize: '0x50'
   FullSize: '0x80'
   InheritedSize: '0x30'
@@ -918,7 +918,7 @@ WashedUpMessageInABottleClueSiteData:
     Offset: '0x48'
     Size: '0x10'
     Type: Struct Guid
-  - Name: pad0x8_0PL4Y[0x8]
+  - Name: pad0x8_6D38S[0x8]
     Offset: '0x58'
     Size: '0x8'
     Type: char
@@ -929,8 +929,8 @@ WashedUpMessageInABottleClueSiteData:
   - Name: SinkIntoSandItems
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Class SinkIntoSandItems>
-  - Name: pad0x60_KCJDW[0x60]
+    Type: TArray<class Class*>
+  - Name: pad0x60_X7J3F[0x60]
     Offset: '0x9e'
     Size: '0x60'
     Type: char
@@ -972,7 +972,7 @@ WashedUpSkeletonClueSiteData:
     Offset: '0x60'
     Size: '0x30'
     Type: Struct Transform
-  - Name: pad0x90_3DTQ4[0x90]
+  - Name: pad0x90_WO78B[0x90]
     Offset: '0x8e'
     Size: '0x90'
     Type: char
@@ -991,7 +991,7 @@ WashedUpSkeletonLandClueCreator:
   - Name: SkeletonPoses
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<AssetClass SkeletonPoses>
+    Type: TArray<Assetclass SkeletonPoses>
   - Name: LootItemSpawnXYDistanceFromClueIncrementMin
     Offset: '0x60'
     Size: '0x4'
@@ -1004,7 +1004,7 @@ WashedUpSkeletonLandClueCreator:
     Offset: '0x68'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_ZIGYJ[0xc]
+  - Name: pad0xc_BHXOX[0xc]
     Offset: '0x6a'
     Size: '0xc'
     Type: char

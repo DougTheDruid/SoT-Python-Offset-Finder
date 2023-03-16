@@ -2,10 +2,10 @@
 # https://github.com/DougTheDruid
 TaleQuestAIAsset:
   Attributes:
-  - Name: Spawner
+  - Name: SpawnerRoot
     Offset: '0x28'
     Size: '0x8'
-    Type: Class TaleQuestAISpawner*
+    Type: Class TaleQuestSpawnAICustomRootStepDesc*
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -14,5 +14,149 @@ TaleQuestAISpawner:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
+TaleQuestSpawnAICustomOnDespawnTask:
+  Attributes:
+  - Name: pad0x10_GW6KD[0x10]
+    Offset: '0x78'
+    Size: '0x10'
+    Type: char
+  - Name: TaskData
+    Offset: '0x88'
+    Size: '0x20'
+    Type: Struct SpawnAICustomOnDespawnTaskData
+  ClassSize: '0x30'
+  FullSize: '0xa8'
+  InheritedSize: '0x78'
+  Super: TaleQuestSpawnAICustomTaskBase
+TaleQuestSpawnAICustomOnSpawnTask:
+  Attributes:
+  - Name: pad0x10_JS9ZG[0x10]
+    Offset: '0x78'
+    Size: '0x10'
+    Type: char
+  - Name: TaskData
+    Offset: '0x88'
+    Size: '0x18'
+    Type: Struct SpawnAICustomOnSpawnTaskData
+  - Name: pad0xa0_II55F[0xa0]
+    Offset: '0x9e'
+    Size: '0xa0'
+    Type: char
+  ClassSize: '0x98'
+  FullSize: '0x110'
+  InheritedSize: '0x78'
+  Super: TaleQuestSpawnAICustomTaskBase
+TaleQuestSpawnAICustomPreSpawnTask:
+  Attributes:
+  - Name: pad0x10_RWBFL[0x10]
+    Offset: '0x78'
+    Size: '0x10'
+    Type: char
+  - Name: TaskData
+    Offset: '0x88'
+    Size: '0x68'
+    Type: Struct SpawnAICustomPreSpawnTaskData
+  - Name: ProximityPlayerTracker
+    Offset: '0xf0'
+    Size: '0x8'
+    Type: Class AIProximityPlayerTracker*
+  - Name: Region
+    Offset: '0xf8'
+    Size: '0x8'
+    Type: Class SimpleAIRegion*
+  - Name: pad0x28_35MC8[0x28]
+    Offset: '0xfe'
+    Size: '0x28'
+    Type: char
+  ClassSize: '0xa0'
+  FullSize: '0x118'
+  InheritedSize: '0x78'
+  Super: TaleQuestSpawnAICustomTaskBase
+TaleQuestSpawnAICustomRootStep:
+  Attributes:
+  - Name: ActiveTasks
+    Offset: '0x98'
+    Size: '0x10'
+    Type: TArray<class TaleQuestSpawnAICustomTaskBase*>
+  - Name: pad0x50_LYZF2[0x50]
+    Offset: '0xa6'
+    Size: '0x50'
+    Type: char
+  ClassSize: '0x40'
+  FullSize: '0xd8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestSpawnAICustomRootStepDesc:
+  Attributes:
+  - Name: SetupTaskData
+    Offset: '0x80'
+    Size: '0x10'
+    Type: Struct SpawnAICustomSetupTaskData
+  - Name: OnTriggerWaveTaskData
+    Offset: '0x90'
+    Size: '0x10'
+    Type: Struct SpawnActorCustomOnTriggerWaveTaskData
+  - Name: PreSpawnTaskData
+    Offset: '0xa0'
+    Size: '0x68'
+    Type: Struct SpawnAICustomPreSpawnTaskData
+  - Name: OnSpawnTaskData
+    Offset: '0x108'
+    Size: '0x18'
+    Type: Struct SpawnAICustomOnSpawnTaskData
+  - Name: OnDespawnTaskData
+    Offset: '0x120'
+    Size: '0x20'
+    Type: Struct SpawnAICustomOnDespawnTaskData
+  ClassSize: '0xc0'
+  FullSize: '0x140'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestSpawnAICustomSetupTask:
+  Attributes:
+  - Name: TaskData
+    Offset: '0x78'
+    Size: '0x10'
+    Type: Struct SpawnAICustomSetupTaskData
+  - Name: pad0x30_I01SS[0x30]
+    Offset: '0x86'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0x98'
+  InheritedSize: '0x78'
+  Super: TaleQuestSpawnAICustomTaskBase
+TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask:
+  Attributes:
+  - Name: TaskData
+    Offset: '0x78'
+    Size: '0x10'
+    Type: Struct SpawnActorCustomOnTriggerWaveTaskData
+  - Name: pad0x30_EZTHF[0x30]
+    Offset: '0x86'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0x98'
+  InheritedSize: '0x78'
+  Super: TaleQuestSpawnAICustomTaskBase
+TaleQuestSpawnAICustomTaskBase:
+  Attributes:
+  - Name: pad0x8_IPKIT[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
+  - Name: MyRootStep
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class TaleQuestSpawnAICustomRootStep*
+  - Name: pad0x50_L09QP[0x50]
+    Offset: '0x36'
+    Size: '0x50'
+    Type: char
+  ClassSize: '0x50'
+  FullSize: '0x78'
   InheritedSize: '0x28'
   Super: Object

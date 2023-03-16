@@ -8,9 +8,9 @@
   },
   "AudioReportingComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x238",
+    "FullSize": "0x240",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x170",
+    "ClassSize": "0x178",
     "Attributes": [
       {
         "Name": "CachedOwningController",
@@ -19,9 +19,9 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x178_WAVJ4[0x178]",
+        "Name": "pad0x180_FBDQ4[0x180]",
         "Type": "char",
-        "Size": "0x178",
+        "Size": "0x180",
         "Offset": "0xce"
       }
     ]
@@ -40,6 +40,13 @@
       }
     ]
   },
+  "AudioReportingDebugMenuGenerator": {
+    "Super": "DebugMenuEntryGenerator",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "EventReactionsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -48,7 +55,7 @@
     "Attributes": [
       {
         "Name": "Reactions",
-        "Type": "TArray<Struct EventReactionDesc>",
+        "Type": "TArray<struct Reactions>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -67,8 +74,8 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_OR03J[0x4]",
-        "Type": "char",
+        "Name": "AudioVeryCloseThresholdDistance",
+        "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       },

@@ -20,7 +20,7 @@ StaticMeshAudioAssociation:
   - Name: PlaybackDataArray
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct StaticMeshWwiseEmitterData>
+    Type: TArray<struct PlaybackDataArray>
   - Name: Meshes
     Offset: '0x10'
     Size: '0x10'
@@ -47,7 +47,7 @@ StaticMeshWwiseEmitterData:
     Offset: '0x8'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_5Y5YW[0x4]
+  - Name: pad0x4_HCJ4K[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -94,9 +94,9 @@ WwiseEmitterCreationParams:
   - Name: RTPCs
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct WWiseEmitterCreationRTPCSetting>
+    Type: TArray<struct RTPCs>
   - Name: Switches
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct WWiseEmitterCreationSwitchSetting>
+    Type: TArray<struct Switches>
   ClassSize: '0x28'

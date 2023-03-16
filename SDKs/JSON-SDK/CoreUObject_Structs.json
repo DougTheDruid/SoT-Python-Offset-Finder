@@ -493,7 +493,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct None>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -504,7 +504,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_MGCHD[0x3]",
+        "Name": "pad0x3_BM92Q[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -557,7 +557,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointVector2D>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -568,7 +568,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_7KDGT[0x3]",
+        "Name": "pad0x3_7INQ5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -621,7 +621,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointVector>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -632,7 +632,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_6Z4EN[0x3]",
+        "Name": "pad0x3_CGUDO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -655,7 +655,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0xc_7LW99[0xc]",
+        "Name": "pad0xc_4D7KR[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x4"
@@ -691,7 +691,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointQuat>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -702,7 +702,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_3PAMT[0x3]",
+        "Name": "pad0x3_WQYJH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -755,7 +755,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointTwoVectors>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -766,7 +766,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_206FO[0x3]",
+        "Name": "pad0x3_HBAS9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -819,7 +819,7 @@
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<Struct InterpCurvePointLinearColor>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -830,7 +830,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_S7NJC[0x3]",
+        "Name": "pad0x3_102ZZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -859,7 +859,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_36RRA[0x4]",
+        "Name": "pad0x4_N8J8I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -926,7 +926,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_9NQBZ[0x3]",
+        "Name": "pad0x3_QA2N9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -966,7 +966,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_1T166[0x3]",
+        "Name": "pad0x3_U0EAS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"

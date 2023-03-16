@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_Constellation_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame

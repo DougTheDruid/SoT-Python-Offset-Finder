@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_Chair_C:
   Attributes:
-  - Name: ChairMesh
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshMemoryConstraintComponent*

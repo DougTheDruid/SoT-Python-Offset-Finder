@@ -2,151 +2,147 @@
 # https://github.com/DougTheDruid
 BP_EmissaryTable_GoldHoarder_01_C:
   Attributes:
-  - Name: pad0x638_ZIHP5[0x638]
-    Offset: '0x0'
-    Size: '0x638'
-    Type: char
-  - Name: None
+  - Name: PointLight1
     Offset: '0x638'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: None
+  - Name: PointLight
     Offset: '0x640'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: None
+  - Name: StaticMesh3
     Offset: '0x648'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: ParticleSystem2
     Offset: '0x650'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: ParticleSystem1
     Offset: '0x658'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: ParticleSystem
     Offset: '0x660'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: StaticMesh2
     Offset: '0x668'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMesh1
     Offset: '0x670'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: EmissaryShipAffiliationTracker
     Offset: '0x678'
     Size: '0x8'
     Type: Class EmissaryShipAffiliationTrackerComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_a5
     Offset: '0x680'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a12
     Offset: '0x688'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a11
     Offset: '0x690'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a10
     Offset: '0x698'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a9
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a8
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_c2
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a7
     Offset: '0x6b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a6
     Offset: '0x6c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a5
     Offset: '0x6c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a4
     Offset: '0x6d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a3
     Offset: '0x6d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_c1
     Offset: '0x6e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a2
     Offset: '0x6e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a1
     Offset: '0x6f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_a4
     Offset: '0x6f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_a3
     Offset: '0x700'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_a2
     Offset: '0x708'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_a1
     Offset: '0x710'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_money_sack_medium_01_a
     Offset: '0x718'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_c
     Offset: '0x720'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_b
     Offset: '0x728'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: trs_gold_ingot_01_a
     Offset: '0x730'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: frt_coin_01_a
     Offset: '0x738'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: cap_desk_model_gld_01_a
     Offset: '0x740'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: con_cover_page_gld_01_a
     Offset: '0x748'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x750'
+  ClassSize: '0x118'
   FullSize: '0x750'
-  InheritedSize: '0x0'
-  Super: None
+  InheritedSize: '0x638'
+  Super: BP_EmissaryTable_01_C

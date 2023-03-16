@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BarrelsOfPlentyDebugSpawnLocation: public Actor
 {
 public:
-	TArray<Struct BarrelsOfPlentyDebugLocationEntry>             Objects;                                           // 0x3c8(0x10)
+	TArray<struct Objects>                                       Objects;                                           // 0x3c8(0x10)
 	Struct Vector                                                SpawnCentre;                                       // 0x3d8(0xc)
 	float                                                        Radius;                                            // 0x3e4(0x4)
 };
@@ -21,7 +21,7 @@ class BarrelsOfPlentySpawnProxy: public Actor
 {
 public:
 	Class Ship*                                                  Ship;                                              // 0x3c8(0x8)
-	char                                                         pad0x18_GXXL8[0x18];                               // 0x3d0(0x18)
+	char                                                         pad0x18_LP0O7[0x18];                               // 0x3d0(0x18)
 	Class SceneComponent*                                        SceneComponent;                                    // 0x3e8(0x8)
 };
 

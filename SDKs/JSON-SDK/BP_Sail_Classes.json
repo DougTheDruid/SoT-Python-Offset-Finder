@@ -6,14 +6,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Sail Positions Top",
-        "Type": "TArray<Struct None>",
+        "Name": "None",
+        "Type": "TArray<struct None>",
         "Size": "0x10",
         "Offset": "0x570"
       },
       {
-        "Name": "Sail Positions Bottom",
-        "Type": "TArray<Struct Vector>",
+        "Name": "None",
+        "Type": "TArray<struct None>",
         "Size": "0x10",
         "Offset": "0x580"
       }

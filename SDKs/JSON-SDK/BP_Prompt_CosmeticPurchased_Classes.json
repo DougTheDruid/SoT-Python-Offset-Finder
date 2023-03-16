@@ -12,9 +12,9 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x93_QLK9K[0x93]",
+        "Name": "pad0x132_13LP4[0x132]",
         "Type": "char",
-        "Size": "0x93",
+        "Size": "0x132",
         "Offset": "0x120"
       },
       {
@@ -55,7 +55,7 @@
       },
       {
         "Name": "CategoryTypes",
-        "Type": "TArray<Class CategoryTypes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x2d0"
       },

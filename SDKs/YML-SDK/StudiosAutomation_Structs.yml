@@ -16,7 +16,7 @@ AssetAuditConstants:
   - Name: AssetAuditConstants
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AssetAuditConstantEntry>
+    Type: TArray<struct AssetAuditConstants>
   ClassSize: '0x10'
 ClientPawnDetails:
   Attributes:
@@ -46,7 +46,7 @@ CollectionLimits:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_8NXOV[0x2]
+  - Name: pad0x2_Q45VK[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -80,7 +80,7 @@ CollectionLimitsArray:
   - Name: CollectionLimits
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct CollectionLimits>
+    Type: TArray<struct CollectionLimits>
   ClassSize: '0x10'
 CollectionMeshLimitsBase:
   Attributes:
@@ -124,25 +124,25 @@ FolderTotals:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_71ZP6[0x7]
+  - Name: pad0x7_Q2BKG[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: CollectionsAllowedForFolder
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: AssetTypesToTest
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x28'
 MeshAuditLimits:
   Attributes:
   - Name: SubstringQueries
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct SubstringAuditQueryData>
+    Type: TArray<struct SubstringQueries>
   - Name: FolderMeshLimits
     Offset: '0x10'
     Size: '0x28'
@@ -180,7 +180,7 @@ TextureAuditorGroupProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_SZYNS[0x7]
+  - Name: pad0x7_OC7BT[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -195,7 +195,7 @@ TextureAuditorProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_2P310[0x7]
+  - Name: pad0x7_A4AJD[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

@@ -8,7 +8,7 @@ VoiceChatEmitterInterface:
   Super: Interface
 VoiceChatRenderer:
   Attributes:
-  - Name: pad0x10_VJ1DT[0x10]
+  - Name: pad0x10_DPX6B[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -36,7 +36,7 @@ VoiceChatRenderer:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x12c_1J0R7[0x12c]
+  - Name: pad0x12c_725J3[0x12c]
     Offset: '0x5a'
     Size: '0x12c'
     Type: char

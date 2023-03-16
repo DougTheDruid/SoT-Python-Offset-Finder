@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Achievements",
-        "Type": "TArray<Struct AchievementProgressXblRequestModel>",
+        "Type": "TArray<struct Achievements>",
         "Size": "0x10",
         "Offset": "0x0"
       },

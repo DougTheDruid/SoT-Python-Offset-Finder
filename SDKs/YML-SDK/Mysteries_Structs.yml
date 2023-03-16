@@ -27,9 +27,9 @@ SirenPuzzleLockState:
   - Name: UnlockReactions
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct LandmarkReactionKeyFrame>
+    Type: TArray<struct UnlockReactions>
   - Name: UnlockingCrews
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Guid>
+    Type: TArray<struct UnlockingCrews>
   ClassSize: '0x30'

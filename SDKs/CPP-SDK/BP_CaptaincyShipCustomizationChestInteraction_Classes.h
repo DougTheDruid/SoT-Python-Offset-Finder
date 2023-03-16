@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_CaptaincyShipCustomizationChestInteraction_C: public CaptaincyShipCustomizationChestInteraction
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x448(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x448(0x8)
 };
 
 

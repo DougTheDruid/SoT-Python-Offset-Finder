@@ -108,7 +108,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_GR3U5[0x3]",
+        "Name": "pad0x3_RB4TC[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -203,49 +203,49 @@
       },
       {
         "Name": "EventsToPlayOnLobbyStart",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnLobbyStart>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "EventsToPlayOnLobbyEnd",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnLobbyEnd>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "EventsToPlayOnEngageStart",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnEngageStart>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "EventsToPlayOnEngageEnd",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnEngageEnd>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "EventsToPlayOnLoadingStart",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnLoadingStart>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "EventsToPlayOnLoadingEnd",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnLoadingEnd>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingStart",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnFrontEndOrLoadingStart>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "EventsToPlayOnFrontEndOrLoadingEnd",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct EventsToPlayOnFrontEndOrLoadingEnd>",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -273,14 +273,14 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_87IB1[0x4]",
+        "Name": "pad0x4_F9U47[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
       },
       {
         "Name": "Mappings",
-        "Type": "TArray<Struct WwiseBinkTrackMappings>",
+        "Type": "TArray<struct Mappings>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -296,14 +296,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_RBBYK[0x7]",
+        "Name": "pad0x7_ZAFZL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "mChannels",
-        "Type": "TArray<Struct WwiseBinkTrackMapping>",
+        "Type": "TArray<struct mChannels>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -325,7 +325,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x2_0HETQ[0x2]",
+        "Name": "pad0x2_JA93T[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2"
@@ -440,7 +440,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_4S7YN[0x7]",
+        "Name": "pad0x7_GQNJP[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"

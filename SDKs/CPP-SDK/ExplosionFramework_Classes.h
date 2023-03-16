@@ -11,7 +11,7 @@ class CreateActorInstanceOnExplodeComponent: public ActorComponent
 {
 public:
 	class                                                        ActorToInstance;                                   // 0xc8(0x8)
-	char                                                         pad0x68_A1SW9[0x68];                               // 0xce(0x68)
+	char                                                         pad0x68_YZXST[0x68];                               // 0xce(0x68)
 };
 
 
@@ -49,7 +49,7 @@ class StatusResponseExplodeAfterTime: public StatusResponse
 public:
 	float                                                        MinTimeUntilExplosion;                             // 0x30(0x4)
 	float                                                        MaxTimeUntilExplosion;                             // 0x34(0x4)
-	char                                                         pad0x8_6B9F8[0x8];                                 // 0x38(0x8)
+	char                                                         pad0x8_9A4IP[0x8];                                 // 0x38(0x8)
 	Class World*                                                 CachedWorld;                                       // 0x40(0x8)
 };
 

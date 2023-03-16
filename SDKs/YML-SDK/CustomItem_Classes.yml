@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomItemService:
   Attributes:
-  - Name: pad0x8_Y5NLC[0x8]
+  - Name: pad0x8_0WXYH[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ CustomItemService:
     Offset: '0x30'
     Size: '0x8'
     Type: Class World*
-  - Name: pad0x28_6AD72[0x28]
+  - Name: pad0x28_0EF9K[0x28]
     Offset: '0x36'
     Size: '0x28'
     Type: char

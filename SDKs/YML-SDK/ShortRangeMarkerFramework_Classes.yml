@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ShortRangeMarker:
   Attributes:
-  - Name: pad0x10_U6YHM[0x10]
+  - Name: pad0x10_Y8NOL[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -42,7 +42,7 @@ ShortRangeMarkerDataAsset:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_V67XT[0xc]
+  - Name: pad0xc_DC5NB[0xc]
     Offset: '0x32'
     Size: '0xc'
     Type: char

@@ -89,14 +89,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_26GC6[0x4]",
+        "Name": "pad0x4_VHR8D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "PetParams",
-        "Type": "TArray<Struct PetHangoutSpotParams>",
+        "Type": "TArray<struct PetParams>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -164,14 +164,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_Z5X3E[0x4]",
+        "Name": "pad0x4_JIZNO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "Responses",
-        "Type": "TArray<Struct PetDangerHearingThreatResponse>",
+        "Type": "TArray<struct Responses>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -246,7 +246,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_5X3WG[0x3]",
+        "Name": "pad0x3_HUFFR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -269,7 +269,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_E15HL[0x8]",
+        "Name": "pad0x8_R5YZO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -293,7 +293,7 @@
         "Offset": "0x41"
       },
       {
-        "Name": "pad0x6_07PJ5[0x6]",
+        "Name": "pad0x6_CK0L5[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x42"
@@ -305,7 +305,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x10_WVFJV[0x10]",
+        "Name": "pad0x10_3RD4Z[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x50"
@@ -323,7 +323,7 @@
         "Offset": "0x61"
       },
       {
-        "Name": "pad0x2_G6PCL[0x2]",
+        "Name": "pad0x2_DW3ZC[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x62"
@@ -430,7 +430,7 @@
       },
       {
         "Name": "IllegalShipsSizesForSpawn",
-        "Type": "TArray<Class IllegalShipsSizesForSpawn>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -463,7 +463,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_1ZDJY[0x3]",
+        "Name": "pad0x3_HJM9T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -493,14 +493,14 @@
         "Offset": "0xb4"
       },
       {
-        "Name": "pad0x4_8OULQ[0x4]",
+        "Name": "pad0x4_BVP3Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc4"
       },
       {
         "Name": "IgnoringStrategies",
-        "Type": "TArray<Class IgnoringStrategies>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -527,7 +527,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_YSF8W[0x3]",
+        "Name": "pad0x3_XDO1O[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -567,7 +567,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_K9OUG[0x3]",
+        "Name": "pad0x3_67L0K[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -748,7 +748,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_TPOSF[0x3]",
+        "Name": "pad0x3_4BJTG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -871,7 +871,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_1OCCE[0x3]",
+        "Name": "pad0x3_Z40CZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"

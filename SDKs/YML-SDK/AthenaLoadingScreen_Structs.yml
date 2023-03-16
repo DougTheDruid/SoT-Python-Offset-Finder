@@ -70,7 +70,7 @@ SlateLoadingScreenAdvancedTipsParams:
   - Name: TipDescriptions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct SlateLoadingScreenAdvancedTipDescription>
+    Type: TArray<struct TipDescriptions>
   ClassSize: '0x10'
 SlateLoadingScreenImageParams:
   Attributes:
@@ -81,7 +81,7 @@ SlateLoadingScreenImageParams:
   - Name: ImageTips
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FText>
+    Type: TArray<struct FText>
   - Name: AdvancedTips
     Offset: '0x20'
     Size: '0x10'

@@ -9,7 +9,7 @@ PartyReservation:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_NWMVA[0x4]
+  - Name: pad0x4_LF50Z[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -20,7 +20,7 @@ PartyReservation:
   - Name: PartyMembers
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct PlayerReservation>
+    Type: TArray<struct PartyMembers>
   ClassSize: '0x30'
 PlayerReservation:
   Attributes:

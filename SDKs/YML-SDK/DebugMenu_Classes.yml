@@ -8,7 +8,7 @@ DebugMenu:
   Super: Actor
 DebugMenuComponent:
   Attributes:
-  - Name: pad0x28_7KT1I[0x28]
+  - Name: pad0x28_AASMF[0x28]
     Offset: '0xc8'
     Size: '0x28'
     Type: char
@@ -16,7 +16,7 @@ DebugMenuComponent:
     Offset: '0xf0'
     Size: '0x8'
     Type: Class DebugMenu*
-  - Name: pad0x30_JMKWM[0x30]
+  - Name: pad0x30_P8CNY[0x30]
     Offset: '0xf6'
     Size: '0x30'
     Type: char
@@ -39,11 +39,11 @@ DebugMenuDataAsset:
   - Name: MenuEntires
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct DebugMenuDataAssetEntry>
+    Type: TArray<struct MenuEntires>
   - Name: ButtonShortcuts
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct DebugMenuButtonShortcut>
+    Type: TArray<struct ButtonShortcuts>
   - Name: MenuEntryGenerators
     Offset: '0x58'
     Size: '0x10'

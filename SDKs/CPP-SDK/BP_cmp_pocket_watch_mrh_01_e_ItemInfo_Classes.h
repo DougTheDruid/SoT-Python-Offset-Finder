@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_cmp_pocket_watch_mrh_01_e_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
+	Class SceneComponent*                                        None;                                              // 0x510(0x8)
 };
 
 

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct Status
 {
 public:
-	TArray<Class Type>                                           Type;                                              // 0x0(0x10)
+	TArray<class Class*>                                         Type;                                              // 0x0(0x10)
 	Struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
 };
 
@@ -36,9 +36,9 @@ public:
 struct ActiveStatusEffect
 {
 public:
-	TArray<Class SourceStatus>                                   SourceStatus;                                      // 0x0(0x10)
+	TArray<class Class*>                                         SourceStatus;                                      // 0x0(0x10)
 	Struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
-	char                                                         pad0x4_AYT4G[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_5HEOX[0x4];                                 // 0x14(0x4)
 	TArray<class StatusResponse*>                                ResponseTemplates;                                 // 0x18(0x10)
 	TArray<class StatusResponse*>                                InstancedResponses;                                // 0x28(0x10)
 	bool                                                         ResponsesAreActive;                                // 0x38(0x1)
@@ -58,7 +58,7 @@ public:
 struct EventAppliedStatusToTargets
 {
 public:
-	TArray<Class StatusApplied>                                  StatusApplied;                                     // 0x0(0x10)
+	TArray<class Class*>                                         StatusApplied;                                     // 0x0(0x10)
 	TArray<class Actor*>                                         Targets;                                           // 0x10(0x10)
 	Class Actor*                                                 StatusSource;                                      // 0x20(0x8)
 };

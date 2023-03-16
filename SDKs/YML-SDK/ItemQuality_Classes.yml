@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ItemQualityComponent:
   Attributes:
-  - Name: pad0x8_FFU9C[0x8]
+  - Name: pad0x8_2X9Z4[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -10,22 +10,22 @@ ItemQualityComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_OR2W8[0x7]
+  - Name: pad0x7_YVEUA[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char
   - Name: CompanySpecificItemQualityLevels
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct PerComanyItemQualityEntry>
+    Type: TArray<struct CompanySpecificItemQualityLevels>
   - Name: CompanySpecificComplexItemQualityLevels
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<Struct PerComanyComplexItemQualityEntry>
+    Type: TArray<struct CompanySpecificComplexItemQualityLevels>
   - Name: CompanySpecificComplexItemQualityLevelsHandin
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct PerComanyComplexItemQualityEntry>
+    Type: TArray<struct CompanySpecificComplexItemQualityLevelsHandin>
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'

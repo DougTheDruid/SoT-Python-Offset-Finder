@@ -13,7 +13,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x408(0x8)
 	class                                                        Company;                                           // 0x410(0x8)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x418(0x10)
+	TArray<struct Prompts>                                       Prompts;                                           // 0x418(0x10)
 	BlueprintGeneratedClass BP_Prompt_EmissarySoldLoot_C*        PromptCoordinator;                                 // 0x428(0x8)
 };
 

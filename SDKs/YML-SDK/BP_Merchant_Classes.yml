@@ -2,47 +2,47 @@
 # https://github.com/DougTheDruid
 BP_Merchant_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x698'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: CommodityRedemption
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class CommodityRedemptionComponent*
-  - Name: None
+  - Name: EmissaryMaxRankQuestProvider
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class EmissaryMaxRankQuestProvider*
-  - Name: None
+  - Name: CargoRunParticipant
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class CargoRunParticipantComponent*
-  - Name: None
+  - Name: SolidHits
     Offset: '0x6b8'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
+  - Name: NPCDialogSellCrate
     Offset: '0x6c0'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: NPCDialog
     Offset: '0x6c8'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: MerchantCrateProvider
     Offset: '0x6d0'
     Size: '0x8'
     Type: Class MerchantCrateProviderComponent*
-  - Name: None
+  - Name: cmp_pocket_watch_mrh_01_e
     Offset: '0x6d8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x6e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: AnimNotifyWwiseEmitter
     Offset: '0x6e8'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*

@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 BP_Larinna_Permanent_C:
   Attributes:
-  - Name: pad0x6b1_E6LY6[0x6b1]
-    Offset: '-0x1'
-    Size: '0x6b1'
-    Type: char
   - Name: None
     Offset: '0x6b0'
     Size: '0x8'
@@ -14,7 +10,7 @@ BP_Larinna_Permanent_C:
     Offset: '0x6b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x6c1'
+  ClassSize: '0x10'
   FullSize: '0x6c0'
-  InheritedSize: '-0x1'
-  Super: ''
+  InheritedSize: '0x6b0'
+  Super: None

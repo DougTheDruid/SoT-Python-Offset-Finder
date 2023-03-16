@@ -26,7 +26,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x190_GOFO3[0x190]",
+        "Name": "pad0x190_20HZQ[0x190]",
         "Type": "char",
         "Size": "0x190",
         "Offset": "0x66"
@@ -84,7 +84,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x7_HJ51C[0x7]",
+        "Name": "pad0x7_Q6P8C[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb9"
@@ -243,7 +243,7 @@
         "Offset": "0x3e4"
       },
       {
-        "Name": "pad0x8_EWPU2[0x8]",
+        "Name": "pad0x8_TPMV0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3e8"
@@ -284,7 +284,7 @@
     "Attributes": [
       {
         "Name": "AggressiveAggressiveLocations",
-        "Type": "TArray<Struct Vector2D>",
+        "Type": "TArray<struct AggressiveAggressiveLocations>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -328,7 +328,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_GV7XD[0x4]",
+        "Name": "pad0x4_S95CW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
@@ -418,7 +418,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x4_0OTH0[0x4]",
+        "Name": "pad0x4_GIY0Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -451,12 +451,12 @@
   },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x648",
+    "FullSize": "0x660",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x280",
+    "ClassSize": "0x298",
     "Attributes": [
       {
-        "Name": "pad0x40_ZFE4W[0x40]",
+        "Name": "pad0x40_36MSP[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x3c8"
@@ -480,52 +480,52 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x160_BM8D7[0x160]",
+        "Name": "pad0x178_6RIBI[0x178]",
         "Type": "char",
-        "Size": "0x160",
+        "Size": "0x178",
         "Offset": "0x420"
       },
       {
         "Name": "MatchmakingCrews",
-        "Type": "TArray<Struct InvasionParticipatingCrewData>",
+        "Type": "TArray<struct MatchmakingCrews>",
         "Size": "0x10",
-        "Offset": "0x580"
+        "Offset": "0x598"
       },
       {
         "Name": "InvadingCrews",
-        "Type": "TArray<Struct InvasionParticipatingCrewData>",
+        "Type": "TArray<struct InvadingCrews>",
         "Size": "0x10",
-        "Offset": "0x590"
+        "Offset": "0x5a8"
       },
       {
         "Name": "ReplicatedInvasionCrewMusicStates",
-        "Type": "TArray<Struct ReplicatedInvasionCrewMusicState>",
+        "Type": "TArray<struct ReplicatedInvasionCrewMusicStates>",
         "Size": "0x10",
-        "Offset": "0x5a0"
+        "Offset": "0x5b8"
       },
       {
         "Name": "MatchmakingCrewsReplicated",
-        "Type": "TArray<Struct InvasionServiceMatchmakingCrewInfo>",
+        "Type": "TArray<struct MatchmakingCrewsReplicated>",
         "Size": "0x10",
-        "Offset": "0x5b0"
+        "Offset": "0x5c8"
       },
       {
         "Name": "InvadingCrewsReplicated",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct InvadingCrewsReplicated>",
         "Size": "0x10",
-        "Offset": "0x5c0"
+        "Offset": "0x5d8"
       },
       {
         "Name": "InvasionBattleBoundsList",
         "Type": "TArray<class InvasionBattleBounds*>",
         "Size": "0x10",
-        "Offset": "0x5d0"
+        "Offset": "0x5e8"
       },
       {
-        "Name": "pad0x88_K3EO7[0x88]",
+        "Name": "pad0x88_HSO1M[0x88]",
         "Type": "char",
         "Size": "0x88",
-        "Offset": "0x5de"
+        "Offset": "0x5f6"
       }
     ]
   },
@@ -563,7 +563,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x9_FHDW9[0x9]",
+        "Name": "pad0x9_TGG1J[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x7f"
@@ -610,7 +610,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x1a0_IC8QN[0x1a0]",
+        "Name": "pad0x1a0_L4GMY[0x1a0]",
         "Type": "char",
         "Size": "0x1a0",
         "Offset": "0x66"
@@ -714,7 +714,7 @@
         "Offset": "0x1a0"
       },
       {
-        "Name": "pad0x4_HFT7W[0x4]",
+        "Name": "pad0x4_9X4EJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1a4"

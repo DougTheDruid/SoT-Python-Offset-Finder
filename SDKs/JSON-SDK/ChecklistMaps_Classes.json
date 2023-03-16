@@ -18,7 +18,7 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x5_NL240[0x5]",
+        "Name": "pad0x5_U1J3D[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x2b"
@@ -33,13 +33,13 @@
     "Attributes": [
       {
         "Name": "TargetBootyTypes",
-        "Type": "TArray<AssetClass TargetBootyTypes>",
+        "Type": "TArray<Assetclass TargetBootyTypes>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "TargetCompanies",
-        "Type": "TArray<Class TargetCompanies>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -53,7 +53,7 @@
     "Attributes": [
       {
         "Name": "TargetAIClasses",
-        "Type": "TArray<Class TargetAIClasses>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -81,7 +81,7 @@
     "Attributes": [
       {
         "Name": "TargetNPCIds",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct TargetNPCIds>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -95,7 +95,7 @@
     "Attributes": [
       {
         "Name": "ChecklistItems",
-        "Type": "TArray<Struct ChecklistItem>",
+        "Type": "TArray<struct ChecklistItems>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -138,7 +138,7 @@
         "Offset": "0x7fc"
       },
       {
-        "Name": "pad0x8_8NVH2[0x8]",
+        "Name": "pad0x8_6AHEI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x800"
@@ -156,7 +156,7 @@
         "Offset": "0x810"
       },
       {
-        "Name": "pad0x218_7AAKK[0x218]",
+        "Name": "pad0x218_YAFEI[0x218]",
         "Type": "char",
         "Size": "0x218",
         "Offset": "0x8f6"
@@ -183,7 +183,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x80_PVQHP[0x80]",
+        "Name": "pad0x80_OWQVW[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xce"
@@ -204,7 +204,7 @@
       },
       {
         "Name": "ChecklistEvents",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x48"
       }

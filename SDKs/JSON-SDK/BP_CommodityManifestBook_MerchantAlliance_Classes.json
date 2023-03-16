@@ -6,13 +6,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "NPCDialog",
+        "Name": "None",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x518"

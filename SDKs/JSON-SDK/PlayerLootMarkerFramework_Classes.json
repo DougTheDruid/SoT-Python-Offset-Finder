@@ -13,7 +13,7 @@
     "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x8_VW0VI[0x8]",
+        "Name": "pad0x8_J669S[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -25,7 +25,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x20_WRGX1[0x20]",
+        "Name": "pad0x20_3W72U[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3d8"
@@ -37,19 +37,19 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0xf8_H7D7O[0xf8]",
+        "Name": "pad0xf8_OTROX[0xf8]",
         "Type": "char",
         "Size": "0xf8",
         "Offset": "0x408"
       },
       {
         "Name": "BatchData",
-        "Type": "TArray<Struct PlayerLootMarkerWorldEdgeBatchData>",
+        "Type": "TArray<struct BatchData>",
         "Size": "0x10",
         "Offset": "0x500"
       },
       {
-        "Name": "pad0x30_LQVFY[0x30]",
+        "Name": "pad0x30_ZVGGV[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x50e"
@@ -75,7 +75,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0xc_2PL3R[0xc]",
+        "Name": "pad0xc_7WW54[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x32"

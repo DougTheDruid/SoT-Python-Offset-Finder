@@ -6,18 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40 (Full Size[0x448] - InheritedSize[0x408]
-class wld_shp_rocks_cluster_03_C: public BP_Placement_HeightDrop_C
+// Size 0x7cccd115 (Full Size[0x448] - InheritedSize[-0x7ccccccd]
+class wld_shp_rocks_cluster_03_C
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   wld_rock_xlarge_02_c;                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   wld_rock_xlarge_05_a;                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x438(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x440(0x8)
+	char                                                         pad0x7cccd0d5_X19P2[0x7cccd0d5];                   // -0x7ccccccd(0x7cccd0d5)
+	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
+	Class SceneComponent*                                        None;                                              // 0x440(0x8)
 };
 
 

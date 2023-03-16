@@ -34,7 +34,7 @@ BP_Lantern_C:
     Offset: '0x978'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BE4HP[0x4]
+  - Name: pad0x4_V63CX[0x4]
     Offset: '0x97c'
     Size: '0x4'
     Type: char
@@ -66,7 +66,7 @@ BP_Lantern_C:
     Offset: '0x9b4'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: pad0x4_DAA9F[0x4]
+  - Name: pad0x4_S8KEH[0x4]
     Offset: '0x9c4'
     Size: '0x4'
     Type: char

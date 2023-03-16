@@ -6,7 +6,7 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x60_79Y9P[0x60]",
+        "Name": "pad0x60_V9PY8[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x28"
@@ -18,7 +18,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x18_T3RCC[0x18]",
+        "Name": "pad0x18_OWZGD[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x8e"
@@ -52,16 +52,55 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_I4Q3W[0x7]",
+        "Name": "pad0x7_FC6A8[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x5e_YF63S[0x5e]",
+        "Name": "pad0x5e_BILMG[0x5e]",
         "Type": "char",
         "Size": "0x5e",
         "Offset": "0x2e"
+      }
+    ]
+  },
+  "TaleQuestRunnableStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x68",
+    "Attributes": []
+  },
+  "TaleQuestFunctionStepLibrary": {
+    "Super": "TaleQuestRunnableStepDesc",
+    "FullSize": "0x180",
+    "InheritedSize": "0xe8",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "pad0x8_6JBCF[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "Function",
+        "Type": "Class Function*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "FunctionStepFlags",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x178"
+      },
+      {
+        "Name": "pad0x9_9VDTK[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0x177"
       }
     ]
   },
@@ -79,7 +118,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_FXWCX[0x8]",
+        "Name": "pad0x8_R5DOJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
@@ -112,9 +151,9 @@
   },
   "TaleQuestFramedStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xd0",
+    "FullSize": "0xb8",
     "InheritedSize": "0x80",
-    "ClassSize": "0x50",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "Services",
@@ -131,7 +170,7 @@
       {
         "Name": "GeneratedVariables",
         "Type": "Struct InlineUserDefinedStructDetails",
-        "Size": "0x20",
+        "Size": "0x8",
         "Offset": "0xb0"
       }
     ]
@@ -158,7 +197,7 @@
     "Attributes": [
       {
         "Name": "IslandTypeWeightsForDifficultyRanks",
-        "Type": "TArray<Struct IslandTypeWeights>",
+        "Type": "TArray<struct IslandTypeWeightsForDifficultyRanks>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -191,7 +230,7 @@
         "Offset": "0x638"
       },
       {
-        "Name": "pad0x4_TX6LG[0x4]",
+        "Name": "pad0x4_CO515[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x63c"
@@ -209,7 +248,7 @@
         "Offset": "0x648"
       },
       {
-        "Name": "pad0x3_T8IGC[0x3]",
+        "Name": "pad0x3_BH1LL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x649"
@@ -227,7 +266,7 @@
         "Offset": "0x650"
       },
       {
-        "Name": "pad0x1c_XQ8UQ[0x1c]",
+        "Name": "pad0x1c_5BIE5[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x65a"
@@ -261,7 +300,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0xc_ZRE1M[0xc]",
+        "Name": "pad0xc_PXJYM[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x2a"
@@ -289,19 +328,19 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x40_J9HVO[0x40]",
+        "Name": "pad0x40_UTWDP[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x28"
       },
       {
         "Name": "ItemsToCollect",
-        "Type": "TArray<Struct TaleQuestCargoRunContractItem>",
+        "Type": "TArray<struct ItemsToCollect>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x10_7TY41[0x10]",
+        "Name": "pad0x10_26E2P[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
@@ -319,7 +358,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x28_RGAMO[0x28]",
+        "Name": "pad0x28_MGQGE[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x96"
@@ -339,7 +378,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x58_ICS9W[0x58]",
+        "Name": "pad0x58_AI9BH[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x6e"
@@ -360,7 +399,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_FW3FX[0x8]",
+        "Name": "pad0x8_RHBAC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -378,7 +417,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x54_GR7ST[0x54]",
+        "Name": "pad0x54_8XU3I[0x54]",
         "Type": "char",
         "Size": "0x54",
         "Offset": "0x3a"
@@ -421,7 +460,7 @@
     "Attributes": [
       {
         "Name": "AllDataToCheck",
-        "Type": "TArray<Class AllDataToCheck>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -432,7 +471,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x9_5VYOH[0x9]",
+        "Name": "pad0x9_I9AMU[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x3f"
@@ -447,7 +486,7 @@
     "Attributes": [
       {
         "Name": "AllDataToCheck",
-        "Type": "TArray<Class AllDataToCheck>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -458,7 +497,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x9_V9XFR[0x9]",
+        "Name": "pad0x9_44Y7Q[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x3f"
@@ -473,7 +512,7 @@
     "Attributes": [
       {
         "Name": "AllDataToCheck",
-        "Type": "TArray<Class AllDataToCheck>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -484,7 +523,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x9_2VUXH[0x9]",
+        "Name": "pad0x9_EBOUB[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x3f"
@@ -499,7 +538,7 @@
     "Attributes": [
       {
         "Name": "AllDataToCheck",
-        "Type": "TArray<Class AllDataToCheck>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -510,7 +549,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x9_37SL6[0x9]",
+        "Name": "pad0x9_BAUW5[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x3f"
@@ -542,7 +581,7 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x5_KP1ID[0x5]",
+        "Name": "pad0x5_J0F0K[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x3b"
@@ -570,14 +609,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x10_LG96M[0x10]",
+        "Name": "pad0x10_XPZ3H[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "TalesData",
-        "Type": "TArray<Struct TaleQuestQueryableStateDataInfo>",
+        "Type": "TArray<struct TalesData>",
         "Size": "0x10",
         "Offset": "0xd8"
       }
@@ -662,7 +701,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x28_5X5JI[0x28]",
+        "Name": "pad0x28_CTR6S[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x86"
@@ -676,7 +715,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x50_7RZD6[0x50]",
+        "Name": "pad0x50_YYR80[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x60"
@@ -688,7 +727,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x40_OLQ3M[0x40]",
+        "Name": "pad0x40_U2I2C[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xb6"
@@ -703,19 +742,19 @@
     "Attributes": [
       {
         "Name": "TrackedActors",
-        "Type": "TArray<Struct TrackedActorData>",
+        "Type": "TArray<struct TrackedActors>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "CriticalActors",
-        "Type": "TArray<Struct CriticalActorDelegateData>",
+        "Type": "TArray<struct CriticalActors>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "SnapshottedActors",
-        "Type": "TArray<Struct SnapshottedActorData>",
+        "Type": "TArray<struct SnapshottedActors>",
         "Size": "0x10",
         "Offset": "0x80"
       },
@@ -733,13 +772,13 @@
       },
       {
         "Name": "PhasedActors",
-        "Type": "TArray<Struct PhasedActor>",
+        "Type": "TArray<struct PhasedActors>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
       {
         "Name": "PhasedItems",
-        "Type": "TArray<Struct PhasedItem>",
+        "Type": "TArray<struct PhasedItems>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
@@ -750,7 +789,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x2e8_JML8I[0x2e8]",
+        "Name": "pad0x2e8_3BJHO[0x2e8]",
         "Type": "char",
         "Size": "0x2e8",
         "Offset": "0xf6"
@@ -770,7 +809,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x50_JF940[0x50]",
+        "Name": "pad0x50_NKJQW[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x66"
@@ -826,12 +865,12 @@
     "Attributes": [
       {
         "Name": "AllData",
-        "Type": "TArray<Struct TaleQuestQueryableStateDataInfo>",
+        "Type": "TArray<struct AllData>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x50_E56DD[0x50]",
+        "Name": "pad0x50_WYCIH[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x6e"
@@ -851,7 +890,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x30_74YYL[0x30]",
+        "Name": "pad0x30_ZM7L1[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x66"
@@ -871,7 +910,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x58_X8OX6[0x58]",
+        "Name": "pad0x58_PTAGS[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x66"
@@ -885,7 +924,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x50_3WM7W[0x50]",
+        "Name": "pad0x50_EMCKX[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x60"
@@ -905,19 +944,19 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x20_EPW77[0x20]",
+        "Name": "pad0x20_JKDFY[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
       },
       {
         "Name": "MigrationActions",
-        "Type": "TArray<Struct MigrationActionPair>",
+        "Type": "TArray<struct MigrationActions>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x38_X8JBO[0x38]",
+        "Name": "pad0x38_EL9ZU[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x8e"
@@ -967,7 +1006,7 @@
     "Attributes": [
       {
         "Name": "AllNeededActorsOfInterest",
-        "Type": "TArray<Class AllNeededActorsOfInterest>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -1093,7 +1132,7 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x8_ULRLT[0x8]",
+        "Name": "pad0x8_M6WQF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -1119,7 +1158,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x38_UBDQ2[0x38]",
+        "Name": "pad0x38_6LN0G[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xa6"
@@ -1147,7 +1186,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x8_4ZENG[0x8]",
+        "Name": "pad0x8_YCZ4U[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
@@ -1165,7 +1204,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x40_H8MJ0[0x40]",
+        "Name": "pad0x40_KXMXM[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xb6"
@@ -1185,7 +1224,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x78_DGYSE[0x78]",
+        "Name": "pad0x78_KTX57[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0xb6"
@@ -1349,7 +1388,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x28_9ZDJ8[0x28]",
+        "Name": "pad0x28_821JK[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x9e"
@@ -1376,12 +1415,12 @@
       },
       {
         "Name": "PossessableSequences",
-        "Type": "TArray<Struct PossessableSequence>",
+        "Type": "TArray<struct PossessableSequences>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x30_6YPPM[0x30]",
+        "Name": "pad0x30_DT6VA[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xb6"
@@ -1407,7 +1446,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x38_MPU6H[0x38]",
+        "Name": "pad0x38_WK7VP[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xa6"
@@ -1575,7 +1614,7 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x90_L0X5X[0x90]",
+        "Name": "pad0x90_LFU9F[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x98"
@@ -1645,7 +1684,7 @@
     "Attributes": [
       {
         "Name": "Bodies",
-        "Type": "TArray<Struct BodyFramePair>",
+        "Type": "TArray<struct Bodies>",
         "Size": "0x10",
         "Offset": "0x98"
       }
@@ -1671,7 +1710,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x48_E6K8Y[0x48]",
+        "Name": "pad0x48_H58VR[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xae"
@@ -1713,6 +1752,13 @@
     "ClassSize": "0x40",
     "Attributes": []
   },
+  "TaleQuestObstacleCourseSetupAndWaitForCompletionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": []
+  },
   "TaleQuestPermanentPromptStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
@@ -1733,7 +1779,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x60_S4GSG[0x60]",
+        "Name": "pad0x60_6D0WC[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x9e"
@@ -1871,7 +1917,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x18_BVV6X[0x18]",
+        "Name": "pad0x18_6SY0J[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x9e"
@@ -1912,7 +1958,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x80_Y70UJ[0x80]",
+        "Name": "pad0x80_VH3AO[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x9e"
@@ -1932,7 +1978,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x18_2DWVA[0x18]",
+        "Name": "pad0x18_D7A0Q[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x9e"
@@ -1973,7 +2019,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x20_C5KFP[0x20]",
+        "Name": "pad0x20_RB79L[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x9e"
@@ -1999,7 +2045,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_XJ4RE[0x4]",
+        "Name": "pad0x4_YF0GA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
@@ -2017,7 +2063,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_8YV5I[0x4]",
+        "Name": "pad0x4_GD8DS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xec"
@@ -2049,7 +2095,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_04G8P[0x3]",
+        "Name": "pad0x3_D9AK3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -2087,7 +2133,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x70_H171V[0x70]",
+        "Name": "pad0x70_0WHVD[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x96"
@@ -2175,7 +2221,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x20_SO5NU[0x20]",
+        "Name": "pad0x20_RJRKF[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x80"
@@ -2211,7 +2257,7 @@
         "Offset": "0x109"
       },
       {
-        "Name": "pad0x8_LLGIE[0x8]",
+        "Name": "pad0x8_HX4CA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x108"
@@ -2305,7 +2351,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x4_6QPMU[0x4]",
+        "Name": "pad0x4_SSVE7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xe4"
@@ -2369,7 +2415,7 @@
         "Offset": "0xbc"
       },
       {
-        "Name": "pad0x5_1SUXS[0x5]",
+        "Name": "pad0x5_TZHG7[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0xbb"
@@ -2433,7 +2479,7 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x3_EWV6H[0x3]",
+        "Name": "pad0x3_O8KJG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x121"
@@ -2451,7 +2497,7 @@
         "Offset": "0x12c"
       },
       {
-        "Name": "pad0x5_9SM0S[0x5]",
+        "Name": "pad0x5_K9JG4[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x12b"
@@ -2483,7 +2529,7 @@
         "Offset": "0xb1"
       },
       {
-        "Name": "pad0x6_HA00T[0x6]",
+        "Name": "pad0x6_E0W62[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xb2"
@@ -2509,7 +2555,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_50HQJ[0x4]",
+        "Name": "pad0x4_Y9MTQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -2568,7 +2614,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_RHWDY[0x4]",
+        "Name": "pad0x4_RS3A0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -2617,7 +2663,7 @@
       },
       {
         "Name": "LocalisableNames",
-        "Type": "TArray<Struct FText>",
+        "Type": "TArray<struct FText>",
         "Size": "0x10",
         "Offset": "0x198"
       },
@@ -2634,7 +2680,7 @@
         "Offset": "0x1a9"
       },
       {
-        "Name": "pad0x2_PPDD9[0x2]",
+        "Name": "pad0x2_2QXXI[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x1aa"
@@ -2702,7 +2748,7 @@
         "Offset": "0x149"
       },
       {
-        "Name": "pad0x6_16DDF[0x6]",
+        "Name": "pad0x6_05NS7[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x14a"
@@ -2715,7 +2761,7 @@
       },
       {
         "Name": "LocalisableNames",
-        "Type": "TArray<Struct FText>",
+        "Type": "TArray<struct FText>",
         "Size": "0x10",
         "Offset": "0x158"
       },
@@ -2726,7 +2772,7 @@
         "Offset": "0x168"
       },
       {
-        "Name": "pad0x3_57LBC[0x3]",
+        "Name": "pad0x3_T8GX3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x169"
@@ -2790,7 +2836,7 @@
         "Offset": "0xbc"
       },
       {
-        "Name": "pad0x5_U3R65[0x5]",
+        "Name": "pad0x5_H47WR[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0xbb"
@@ -2823,7 +2869,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_VRJUD[0x3]",
+        "Name": "pad0x3_DX9RR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -2856,7 +2902,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x20_XD91J[0x20]",
+        "Name": "pad0x20_4WE5I[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x80"
@@ -2880,7 +2926,7 @@
         "Offset": "0xac"
       },
       {
-        "Name": "pad0x3_N3FDW[0x3]",
+        "Name": "pad0x3_Z9O6V[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xad"
@@ -2932,7 +2978,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_ZFVL3[0x7]",
+        "Name": "pad0x7_37O5J[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -2945,7 +2991,7 @@
       },
       {
         "Name": "SpawnedActors",
-        "Type": "TArray<Struct QuestVariableActor>",
+        "Type": "TArray<struct SpawnedActors>",
         "Size": "0x10",
         "Offset": "0xc0"
       }
@@ -2958,7 +3004,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x20_PCOK7[0x20]",
+        "Name": "pad0x20_OO5DG[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x80"
@@ -2970,7 +3016,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x7_ENN67[0x7]",
+        "Name": "pad0x7_H7U5H[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa1"
@@ -3022,7 +3068,7 @@
         "Offset": "0x81"
       },
       {
-        "Name": "pad0x6_BPVG2[0x6]",
+        "Name": "pad0x6_FLFZW[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x82"
@@ -3087,7 +3133,7 @@
     "Attributes": [
       {
         "Name": "ToolsToGive",
-        "Type": "TArray<Class ToolsToGive>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -3281,7 +3327,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x9_8NRPG[0x9]",
+        "Name": "pad0x9_NC40H[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x7f"
@@ -3321,7 +3367,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x60_IVVGM[0x60]",
+        "Name": "pad0x60_VGJ2O[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x8e"
@@ -3356,7 +3402,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_7ZEE9[0x8]",
+        "Name": "pad0x8_Z2CCO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3453,7 +3499,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0xc_LDEDE[0xc]",
+        "Name": "pad0xc_VT1TL[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0xe2"
@@ -3505,7 +3551,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x7_SPD4P[0x7]",
+        "Name": "pad0x7_6BO0H[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa1"
@@ -3521,6 +3567,20 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xd8"
+      }
+    ]
+  },
+  "TaleQuestObstacleCourseSetupAndWaitForCompletionStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ObstacleCourseActor",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
       }
     ]
   },
@@ -3543,7 +3603,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x9_06N8Q[0x9]",
+        "Name": "pad0x9_2DLEN[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0xaf"
@@ -3558,7 +3618,7 @@
     "Attributes": [
       {
         "Name": "ToolsToRemove",
-        "Type": "TArray<Class ToolsToRemove>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x80"
       }
@@ -3570,45 +3630,6 @@
     "InheritedSize": "0x80",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "TaleQuestRunnableStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x68",
-    "Attributes": []
-  },
-  "TaleQuestFunctionStepLibrary": {
-    "Super": "TaleQuestRunnableStepDesc",
-    "FullSize": "0x180",
-    "InheritedSize": "0xe8",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "pad0x8_3Y30S[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "Function",
-        "Type": "Class Function*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "FunctionStepFlags",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x178"
-      },
-      {
-        "Name": "pad0x9_UH8CW[0x9]",
-        "Type": "char",
-        "Size": "0x9",
-        "Offset": "0x177"
-      }
-    ]
   },
   "ActorOfInterestTaleFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
@@ -3631,6 +3652,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestConversionFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestCoreFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
@@ -3639,6 +3667,13 @@
     "Attributes": []
   },
   "TaleQuestCutscenesFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestFloatMathsFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
     "InheritedSize": "0x180",
@@ -3736,7 +3771,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_L2SAY[0x8]",
+        "Name": "pad0x8_CDOBM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x180"
@@ -3754,7 +3789,7 @@
         "Offset": "0x190"
       },
       {
-        "Name": "pad0x40_PUSP4[0x40]",
+        "Name": "pad0x40_AFY1L[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x196"
@@ -3849,7 +3884,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0xc_FUGSB[0xc]",
+        "Name": "pad0xc_T3GOF[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x82"
@@ -3941,7 +3976,7 @@
         "Offset": "0x9d"
       },
       {
-        "Name": "pad0x4_X5MUT[0x4]",
+        "Name": "pad0x4_F1FZ6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
@@ -3975,7 +4010,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x60_66DXN[0x60]",
+        "Name": "pad0x60_LRQ6X[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x86"
@@ -4051,7 +4086,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x9_VH1TW[0x9]",
+        "Name": "pad0x9_7WI67[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x7f"
@@ -4197,7 +4232,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0xc_BPJ30[0xc]",
+        "Name": "pad0xc_PTY57[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x8a"
@@ -4251,7 +4286,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x9_2IUDV[0x9]",
+        "Name": "pad0x9_PW4DM[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x87"
@@ -4271,7 +4306,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0xc_M6P8R[0xc]",
+        "Name": "pad0xc_3VY8W[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x8a"
@@ -4299,7 +4334,7 @@
     "ClassSize": "0x198",
     "Attributes": [
       {
-        "Name": "pad0x78_009VP[0x78]",
+        "Name": "pad0x78_WVM8E[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x98"
@@ -4311,7 +4346,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x128_V0GQ6[0x128]",
+        "Name": "pad0x128_YCIGR[0x128]",
         "Type": "char",
         "Size": "0x128",
         "Offset": "0x116"
@@ -4363,7 +4398,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_F9FKB[0x7]",
+        "Name": "pad0x7_J2TJW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -4389,7 +4424,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x68_R63GM[0x68]",
+        "Name": "pad0x68_O8NCY[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0x66"
@@ -4421,7 +4456,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x8_YEQTE[0x8]",
+        "Name": "pad0x8_CPM38[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x30"
@@ -4641,7 +4676,7 @@
         "Offset": "0x198"
       },
       {
-        "Name": "pad0x9_LVNPV[0x9]",
+        "Name": "pad0x9_PQJY4[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x197"
@@ -4685,7 +4720,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x5_2VVB1[0x5]",
+        "Name": "pad0x5_QTGHU[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0xeb"
@@ -4764,7 +4799,7 @@
     "Attributes": [
       {
         "Name": "Text",
-        "Type": "TArray<Struct FText>",
+        "Type": "TArray<struct FText>",
         "Size": "0x10",
         "Offset": "0xb8"
       }

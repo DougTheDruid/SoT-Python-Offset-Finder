@@ -12,7 +12,7 @@ TaleQuestGetProjectionPointOnTradeRouteStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_L6HXQ[0x4]
+  - Name: pad0x4_5DFWU[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -38,7 +38,7 @@ TaleQuestSelectTradeRouteStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class TaleQuestSelectTradeRouteStepDesc*
-  - Name: pad0x28_YGZOC[0x28]
+  - Name: pad0x28_A2Q1K[0x28]
     Offset: '0x9e'
     Size: '0x28'
     Type: char
@@ -52,7 +52,7 @@ TaleQuestSelectTradeRouteStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_2YKX0[0x4]
+  - Name: pad0x4_5PTP5[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -94,7 +94,7 @@ TradeRouteData:
     Offset: '0x3c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_HK5XV[0x3]
+  - Name: pad0x3_3LDWI[0x3]
     Offset: '0x3d'
     Size: '0x3'
     Type: char
@@ -112,7 +112,7 @@ TradeRouteDifficultyBand:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_5327A[0xc]
+  - Name: pad0xc_TUNVE[0xc]
     Offset: '0x2a'
     Size: '0xc'
     Type: char
@@ -125,7 +125,7 @@ TradeRoutesDataAsset:
   - Name: TradeRouteMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct TradeRouteMapping>
+    Type: TArray<struct TradeRouteMappings>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct UpdateAchievementsXblRequestModel
 {
 public:
-	TArray<Struct AchievementProgressXblRequestModel>            Achievements;                                      // 0x0(0x10)
+	TArray<struct Achievements>                                  Achievements;                                      // 0x0(0x10)
 	Struct FString                                               Action;                                            // 0x10(0x10)
 	Struct FString                                               ServiceConfigId;                                   // 0x20(0x10)
 	Struct FString                                               UserId;                                            // 0x38(0x10)

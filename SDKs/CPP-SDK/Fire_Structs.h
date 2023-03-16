@@ -6,6 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x18
+struct HullCharringPersistenceModel
+{
+public:
+	TArray<Float TimeSpentCharring>                              TimeSpentCharring;                                 // 0x0(0x10)
+	int                                                          TotalCellsOnFire;                                  // 0x10(0x4)
+};
+
+
 // Size 0x8
 struct PlayerNearBurningFireGridUpdatedEvent
 {
@@ -70,7 +79,7 @@ public:
 	float                                                        ChanceToAffectCellsBelow;                          // 0xc(0x4)
 	bool                                                         TreatDiagonalsAsAdjacent;                          // 0x10(0x1)
 	bool                                                         OverrideFirePropagationTimesForAffectedCells;      // 0x11(0x1)
-	char                                                         pad0x2_9S8X0[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_IUHIV[0x2];                                 // 0x12(0x2)
 	Struct FloatRange                                            SidewaysPropagationTimeOverride;                   // 0x14(0x10)
 	Struct FloatRange                                            UpwardPropagationTimeOverride;                     // 0x24(0x10)
 	Struct FloatRange                                            DownwardPropagationTimeOverride;                   // 0x34(0x10)
@@ -134,14 +143,14 @@ struct FireCellStateParticleTemplate
 public:
 	Class ParticleSystem*                                        Template;                                          // 0x0(0x8)
 	int                                                          TranslucencySortPriority;                          // 0x8(0x4)
-	char                                                         pad0x4_9D1XG[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_PSUU8[0x4];                                 // 0xc(0x4)
 	Class StaticMesh*                                            Mesh;                                              // 0x10(0x8)
 	float                                                        MeshSpawnTime;                                     // 0x18(0x4)
 	float                                                        MeshDespawnTime;                                   // 0x1c(0x4)
 	Struct Vector                                                MeshScale;                                         // 0x20(0xc)
 	byte                                                         State;                                             // 0x2c(0x1)
 	bool                                                         OverrideMaxLODToSpawnFor;                          // 0x2d(0x1)
-	char                                                         pad0x2_RT0AP[0x2];                                 // 0x2e(0x2)
+	char                                                         pad0x2_L85KB[0x2];                                 // 0x2e(0x2)
 	int                                                          MaxLODToSpawnFor;                                  // 0x30(0x4)
 	bool                                                         SpawnWithLowFrequencySettings;                     // 0x34(0x1)
 	bool                                                         VisibleInLowDetailMode;                            // 0x35(0x1)
@@ -158,18 +167,18 @@ public:
 	bool                                                         CanBurn;                                           // 0x34(0x1)
 	bool                                                         IsExposedToWeather;                                // 0x35(0x1)
 	byte                                                         Deck;                                              // 0x36(0x1)
-	char                                                         pad0x1_IH5Y2[0x1];                                 // 0x37(0x1)
+	char                                                         pad0x1_Y0H0R[0x1];                                 // 0x37(0x1)
 	int                                                          CellIndex;                                         // 0x38(0x4)
 	int                                                          MasterCellFlatIndex;                               // 0x3c(0x4)
 	bool                                                         ShouldSpawnDefaultParticleEffect;                  // 0x40(0x1)
-	char                                                         pad0xf_MRTQJ[0xf];                                 // 0x41(0xf)
+	char                                                         pad0xf_TKQI2[0xf];                                 // 0x41(0xf)
 	Struct Transform                                             DefaultParticleEffectSpawnTransform;               // 0x50(0x30)
 	Struct Plane                                                 DefaultParticleEffectPlane;                        // 0x80(0x10)
-	TArray<Struct FireCellStateParticleTemplate>                 CustomParticleEffectTemplates;                     // 0x90(0x10)
+	TArray<struct CustomParticleEffectTemplates>                 CustomParticleEffectTemplates;                     // 0x90(0x10)
 	Struct Transform                                             CustomParticleEffectSpawnTransform;                // 0xa0(0x30)
 	TArray<Int NeighbourCellIndices>                             NeighbourCellIndices;                              // 0xd0(0x10)
-	TArray<Struct IntVector>                                     CustomAddedDiagonalNeighbourOffsets;               // 0xe0(0x10)
-	TArray<Struct IntVector>                                     CustomRemovedDefaultNeighbourOffsets;              // 0xf0(0x10)
+	TArray<struct CustomAddedDiagonalNeighbourOffsets>           CustomAddedDiagonalNeighbourOffsets;               // 0xe0(0x10)
+	TArray<struct CustomRemovedDefaultNeighbourOffsets>          CustomRemovedDefaultNeighbourOffsets;              // 0xf0(0x10)
 };
 
 
@@ -177,7 +186,7 @@ public:
 struct FireGridVFXParams
 {
 public:
-	TArray<Struct FireCellStateParticleTemplate>                 DefaultParticleTemplates;                          // 0x0(0x10)
+	TArray<struct DefaultParticleTemplates>                      DefaultParticleTemplates;                          // 0x0(0x10)
 	Class ParticleSystem*                                        ExteriorLowDetailParticleSystem;                   // 0x10(0x8)
 	Class ParticleSystem*                                        ExteriorSmokeParticleSystem;                       // 0x18(0x8)
 	Class ParticleSystem*                                        InteriorSmokeParticleSystem;                       // 0x20(0x8)
@@ -223,7 +232,7 @@ public:
 struct FireParticleSpawnList
 {
 public:
-	TArray<Struct FireParticleSpawnData>                         ParticleSpawnLODs;                                 // 0x0(0x10)
+	TArray<struct ParticleSpawnLODs>                             ParticleSpawnLODs;                                 // 0x0(0x10)
 };
 
 
@@ -232,7 +241,7 @@ struct FireDefaultVFXSpawnData
 {
 public:
 	Struct FireCellStateParticleTemplate                         Template;                                          // 0x0(0x38)
-	char                                                         pad0x8_B6JYB[0x8];                                 // 0x38(0x8)
+	char                                                         pad0x8_S540R[0x8];                                 // 0x38(0x8)
 	Struct FireCellDesc                                          CellDesc;                                          // 0x40(0x100)
 };
 
@@ -241,11 +250,11 @@ public:
 struct FireGridVfxSpawnSettings
 {
 public:
-	TArray<Struct FireGridRelativeSpawnDesc>                     InteriorSmokeSpawnDescs;                           // 0x0(0x10)
-	TArray<Struct FireGridLowDetailRelativeSpawnDesc>            LowDetailVFXSpawnDescs;                            // 0x10(0x10)
-	TArray<Struct FireParticleSpawnData>                         ParticleSpawnLODSettings;                          // 0x20(0x10)
+	TArray<struct InteriorSmokeSpawnDescs>                       InteriorSmokeSpawnDescs;                           // 0x0(0x10)
+	TArray<struct LowDetailVFXSpawnDescs>                        LowDetailVFXSpawnDescs;                            // 0x10(0x10)
+	TArray<struct ParticleSpawnLODSettings>                      ParticleSpawnLODSettings;                          // 0x20(0x10)
 	Struct FireParticleSpawnData                                 LowFrequencyParticleSpawnSettings;                 // 0x30(0x10)
-	TArray<Struct FireGridLowDetailRelativeSpawnDesc>            ExteriorSmokeVFXSpawnDescs;                        // 0x40(0x10)
+	TArray<struct ExteriorSmokeVFXSpawnDescs>                    ExteriorSmokeVFXSpawnDescs;                        // 0x40(0x10)
 	Class FireGridVFXParamsDataAsset*                            VFXParams;                                         // 0x50(0x8)
 };
 
@@ -255,7 +264,7 @@ struct FireParticleSystem
 {
 public:
 	Class ParticleSystemComponent*                               SpawnedParticleSystem;                             // 0x0(0x8)
-	char                                                         pad0x8_3LHEN[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_F0CI4[0x8];                                 // 0x8(0x8)
 	Struct FireCellStateParticleTemplate                         ParticleTemplate;                                  // 0x10(0x38)
 };
 
@@ -273,7 +282,7 @@ struct ShipFireDamageParams
 {
 public:
 	class                                                        DamagerType;                                       // 0x0(0x8)
-	TArray<Struct ActorFireDamageParams>                         ShipFireDamageParams;                              // 0x8(0x10)
+	TArray<struct ShipFireDamageParams>                          ShipFireDamageParams;                              // 0x8(0x10)
 };
 
 
@@ -302,7 +311,7 @@ struct ReplicatedFireCellCharringData
 {
 public:
 	float                                                        MaxCharringTime;                                   // 0x0(0x4)
-	char                                                         pad0x4_25VPL[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_H8WX1[0x4];                                 // 0x4(0x4)
 	TArray<Float TimeSpentCharring>                              TimeSpentCharring;                                 // 0x8(0x10)
 };
 
@@ -321,7 +330,7 @@ struct FireGridCharringManager
 public:
 	TArray<class MaterialInterface*>                             OwnerMaterials;                                    // 0x0(0x10)
 	Struct Vector                                                AdditionalGridOffsetForCharring;                   // 0x10(0xc)
-	char                                                         pad0x4_7RPHE[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_RR6WI[0x4];                                 // 0x1c(0x4)
 	Class Texture2DDynamic*                                      FireGridTexture;                                   // 0x20(0x8)
 };
 
@@ -331,7 +340,7 @@ struct ShipFireLightRelativeSpawnDesc
 {
 public:
 	Struct Vector                                                LightPositionOffset;                               // 0x30(0xc)
-	char                                                         pad0x4_2VIF0[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_AQKJP[0x4];                                 // 0x3c(0x4)
 	TArray<Byte DormantShipRegions>                              DormantShipRegions;                                // 0x40(0x10)
 	float                                                        DormantFadeDistance;                               // 0x50(0x4)
 	float                                                        AreaLightScaleWhenNotOnShip;                       // 0x54(0x4)
@@ -353,9 +362,9 @@ public:
 struct ShipFireLightManager
 {
 public:
-	TArray<Struct ShipFireLightRelativeSpawnDesc>                LightSpawnDescs;                                   // 0x0(0x10)
+	TArray<struct LightSpawnDescs>                               LightSpawnDescs;                                   // 0x0(0x10)
 	Struct GenericLightTemplate                                  LightTemplate;                                     // 0x10(0xd0)
-	TArray<Struct ShipFireLight>                                 Lights;                                            // 0xe0(0x10)
+	TArray<struct Lights>                                        Lights;                                            // 0xe0(0x10)
 	Class FirePropagator*                                        Propagator;                                        // 0xf0(0x8)
 	Class StaticMesh*                                            AreaLightMesh;                                     // 0xf8(0x8)
 	float                                                        AreaLightZScale;                                   // 0x100(0x4)
@@ -363,18 +372,9 @@ public:
 	float                                                        MaxLightRadius;                                    // 0x108(0x4)
 	float                                                        MinFlickerScale;                                   // 0x10c(0x4)
 	float                                                        LightMovementSpeedCmPerSecond;                     // 0x110(0x4)
-	char                                                         pad0x4_CGR7S[0x4];                                 // 0x114(0x4)
+	char                                                         pad0x4_2I8EZ[0x4];                                 // 0x114(0x4)
 	Class ShipFireLightParamsDataAsset*                          LightParams;                                       // 0x118(0x8)
 	Class PostProcessComponent*                                  ShipPostProcessComponent;                          // 0x120(0x8)
-};
-
-
-// Size 0x18
-struct HullCharringPersistenceModel
-{
-public:
-	TArray<Float TimeSpentCharring>                              TimeSpentCharring;                                 // 0x0(0x10)
-	int                                                          TotalCellsOnFire;                                  // 0x10(0x4)
 };
 
 

@@ -11,10 +11,10 @@ struct MemoryVisualiserCategory
 {
 public:
 	Struct FString                                               CategoryName;                                      // 0x0(0x10)
-	TArray<Struct MemoryVisualiserStat>                          CategoryStats;                                     // 0x10(0x10)
-	TArray<Struct MemoryVisualiserClass>                         CategoryClasses;                                   // 0x20(0x10)
+	TArray<struct CategoryStats>                                 CategoryStats;                                     // 0x10(0x10)
+	TArray<struct CategoryClasses>                               CategoryClasses;                                   // 0x20(0x10)
 	bool                                                         CollectOnServer;                                   // 0x30(0x1)
-	char                                                         pad0x3_93CXZ[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_457GQ[0x3];                                 // 0x31(0x3)
 	float                                                        XboxOneBudgetMB;                                   // 0x34(0x4)
 	float                                                        XboxOneSBudgetMB;                                  // 0x38(0x4)
 	float                                                        XboxOneXBudgetMB;                                  // 0x3c(0x4)
@@ -32,7 +32,7 @@ struct MemoryVisualiserClass
 public:
 	class                                                        ClassType;                                         // 0x0(0x8)
 	byte                                                         MemoryGatheringMode;                               // 0x8(0x1)
-	char                                                         pad0x7_XJ9XJ[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_Z3UIB[0x7];                                 // 0x9(0x7)
 	Struct FString                                               DisplayName;                                       // 0x10(0x10)
 	float                                                        MemoryUsageMB;                                     // 0x20(0x4)
 };

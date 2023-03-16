@@ -103,35 +103,35 @@ WwiseAudioGameStateSettings:
   - Name: EventsToPlayOnLobbyStart
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnLobbyStart>
   - Name: EventsToPlayOnLobbyEnd
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnLobbyEnd>
   - Name: EventsToPlayOnEngageStart
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnEngageStart>
   - Name: EventsToPlayOnEngageEnd
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnEngageEnd>
   - Name: EventsToPlayOnLoadingStart
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnLoadingStart>
   - Name: EventsToPlayOnLoadingEnd
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnLoadingEnd>
   - Name: EventsToPlayOnFrontEndOrLoadingStart
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnFrontEndOrLoadingStart>
   - Name: EventsToPlayOnFrontEndOrLoadingEnd
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct EventsToPlayOnFrontEndOrLoadingEnd>
   ClassSize: '0xa0'
 WwiseAudioReverbPresets:
   Attributes:
@@ -163,7 +163,7 @@ WwiseAudioReverbPresets:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_GR3U5[0x3]
+  - Name: pad0x3_RB4TC[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -194,14 +194,14 @@ WwiseBinkSettings:
     Offset: '0x20'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_87IB1[0x4]
+  - Name: pad0x4_F9U47[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
   - Name: Mappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct WwiseBinkTrackMappings>
+    Type: TArray<struct Mappings>
   ClassSize: '0x38'
 WwiseBinkTrackMapping:
   Attributes:
@@ -213,7 +213,7 @@ WwiseBinkTrackMapping:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_0HETQ[0x2]
+  - Name: pad0x2_JA93T[0x2]
     Offset: '0x2'
     Size: '0x2'
     Type: char
@@ -228,14 +228,14 @@ WwiseBinkTrackMappings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_RBBYK[0x7]
+  - Name: pad0x7_ZAFZL[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: mChannels
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct WwiseBinkTrackMapping>
+    Type: TArray<struct mChannels>
   ClassSize: '0x18'
 WwiseEmitterParams:
   Attributes:
@@ -306,7 +306,7 @@ WwiseNativeEmitterPoolDensityParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4S7YN[0x7]
+  - Name: pad0x7_GQNJP[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

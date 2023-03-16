@@ -20,7 +20,7 @@ class StatusResponseApplyPersistentStatus: public StatusResponse
 public:
 	Struct Status                                                StatusToApply;                                     // 0x30(0x18)
 	float                                                        DurationMultiplier;                                // 0x48(0x4)
-	char                                                         pad0xc_4M3FM[0xc];                                 // 0x4a(0xc)
+	char                                                         pad0xc_P6GCX[0xc];                                 // 0x4a(0xc)
 };
 
 
@@ -28,7 +28,7 @@ public:
 class StatusResponseCancelStatus: public StatusResponse
 {
 public:
-	TArray<Class Status>                                         Status;                                            // 0x30(0x10)
+	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
 };
 
 
@@ -44,7 +44,7 @@ class StatusResponseHealthRegenerationPoolChange: public StatusResponse
 {
 public:
 	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
-	char                                                         pad0xc_BB4OW[0xc];                                 // 0x32(0xc)
+	char                                                         pad0xc_7FALV[0xc];                                 // 0x32(0xc)
 };
 
 
@@ -57,9 +57,9 @@ public:
 	float                                                        NoiseRange;                                        // 0x40(0x4)
 	float                                                        NoiseLoudness;                                     // 0x44(0x4)
 	bool                                                         NoiseMultipleTicks;                                // 0x48(0x1)
-	char                                                         pad0x3_ZSMJJ[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_FLM0K[0x3];                                 // 0x49(0x3)
 	float                                                        NoiseTimerTick;                                    // 0x4c(0x4)
-	char                                                         pad0x28_506MG[0x28];                               // 0x4e(0x28)
+	char                                                         pad0x28_H6Y2B[0x28];                               // 0x4e(0x28)
 };
 
 
@@ -67,7 +67,7 @@ public:
 class StatusResponseSetScalarParamOnCharacter: public StatusResponse
 {
 public:
-	TArray<Struct ScalarParamInfo>                               ParamsToChange;                                    // 0x30(0x10)
+	TArray<struct ParamsToChange>                                ParamsToChange;                                    // 0x30(0x10)
 };
 
 
@@ -75,7 +75,7 @@ public:
 class StatusResponseSuspendStatus: public StatusResponse
 {
 public:
-	TArray<Class Status>                                         Status;                                            // 0x30(0x10)
+	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
 };
 
 

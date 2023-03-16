@@ -17,7 +17,7 @@ ClueConnectionConfig:
   - Name: CluesThatCanDescribeSites
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ClueSiteTypeSupportedDescribedByEntry>
+    Type: TArray<struct CluesThatCanDescribeSites>
   - Name: ClueGenerators
     Offset: '0x38'
     Size: '0x10'
@@ -38,7 +38,7 @@ ClueDescriptor:
   Super: Object
 ClueDescriptorContainerComponent:
   Attributes:
-  - Name: pad0x8_F5AAU[0x8]
+  - Name: pad0x8_R12NW[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -50,7 +50,7 @@ ClueDescriptorContainerComponent:
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_FX86U[0x9]
+  - Name: pad0x9_TORJS[0x9]
     Offset: '0xd7'
     Size: '0x9'
     Type: char
@@ -73,7 +73,7 @@ ClueDescriptorGenerator:
   - Name: SupportedDestinationTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class SupportedDestinationTypes>
+    Type: TArray<class Class*>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -93,8 +93,8 @@ ClueDestinationGenerator:
   - Name: WeightedSupportedDescriptorTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct WeightedClueDestinationDescriptor>
-  - Name: pad0x70_ZHWUX[0x70]
+    Type: TArray<struct WeightedSupportedDescriptorTypes>
+  - Name: pad0x70_YETES[0x70]
     Offset: '0x3e'
     Size: '0x70'
     Type: char
@@ -129,7 +129,7 @@ ClueFactoryConfig:
   - Name: RestrictedClueTypes
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct RestrictedClueType>
+    Type: TArray<struct RestrictedClueTypes>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -146,7 +146,7 @@ ClueSiteData:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x11_L70BN[0x11]
+  - Name: pad0x11_YHLVL[0x11]
     Offset: '0x27'
     Size: '0x11'
     Type: char
@@ -159,7 +159,7 @@ ClueSiteLootRestrictionsDataAsset:
   - Name: ClueSiteLootRestrictions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ClueSiteLootRestriction>
+    Type: TArray<struct ClueSiteLootRestrictions>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -175,7 +175,7 @@ DebrisForVoyageRankDescAsset:
   - Name: RankBasedDebrisDistribution
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct DebrisToRangeDist>
+    Type: TArray<struct RankBasedDebrisDistribution>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -206,7 +206,7 @@ EnvQueryTest_SeaClueSpawnLocation:
     Offset: '0x188'
     Size: '0x8'
     Type: class
-  - Name: pad0x18_EM6N5[0x18]
+  - Name: pad0x18_X7AS1[0x18]
     Offset: '0x18e'
     Size: '0x18'
     Type: char
@@ -220,7 +220,7 @@ FixedClueChoiceSelectionStrategy:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_A9S25[0xc]
+  - Name: pad0xc_N5QAI[0xc]
     Offset: '0x2a'
     Size: '0xc'
     Type: char
@@ -239,21 +239,21 @@ LootForVoyageRankDescAsset:
   - Name: RankBasedLootDistribution
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct LootToRangeDist>
+    Type: TArray<struct RankBasedLootDistribution>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 NPCLootSpawnComponent:
   Attributes:
-  - Name: pad0x8_HQBZT[0x8]
+  - Name: pad0x8_12ES0[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: LootItemSpawnRelativeLocations
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<Struct Vector>
+    Type: TArray<struct LootItemSpawnRelativeLocations>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -281,14 +281,14 @@ SeaClueSiteTypesDataAsset:
   - Name: ClueSiteTypes
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class ClueSiteTypes>
+    Type: TArray<class Class*>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 TaleQuestChooseLandOrSeaStep:
   Attributes:
-  - Name: pad0x18_95NJD[0x18]
+  - Name: pad0x18_9ONZW[0x18]
     Offset: '0x98'
     Size: '0x18'
     Type: char
@@ -296,7 +296,7 @@ TaleQuestChooseLandOrSeaStep:
     Offset: '0xb0'
     Size: '0x8'
     Type: Class SeaClueSiteTypesDataAsset*
-  - Name: pad0xf0_B7ELA[0xf0]
+  - Name: pad0xf0_USVFI[0xf0]
     Offset: '0xb6'
     Size: '0xf0'
     Type: char
@@ -330,7 +330,7 @@ TaleQuestChooseLandOrSeaStepDesc:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KOE3X[0x4]
+  - Name: pad0x4_G1I4M[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -363,11 +363,11 @@ TaleQuestClueSiteService:
   - Name: ClueSites
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct ClueSite>
+    Type: TArray<struct ClueSites>
   - Name: DebugClueSiteIds
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct Guid>
+    Type: TArray<struct DebugClueSiteIds>
   ClassSize: '0x78'
   FullSize: '0xd8'
   InheritedSize: '0x60'
@@ -405,7 +405,7 @@ TaleQuestGenerateCluePointingToSiteStepDesc:
   - Name: AllowedClueTypes
     Offset: '0x140'
     Size: '0x10'
-    Type: TArray<Class AllowedClueTypes>
+    Type: TArray<class Class*>
   - Name: ConnectionConfiguration
     Offset: '0x150'
     Size: '0x8'
@@ -540,7 +540,7 @@ TaleQuestSelectClueSiteForLootStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class TaleQuestSelectClueSiteForLootStepDesc*
-  - Name: pad0x70_AUA6X[0x70]
+  - Name: pad0x70_6N368[0x70]
     Offset: '0x9e'
     Size: '0x70'
     Type: char
@@ -562,7 +562,7 @@ TaleQuestSelectClueSiteForLootStepDesc:
     Offset: '0x90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_V9ERU[0x7]
+  - Name: pad0x7_ALHNY[0x7]
     Offset: '0x91'
     Size: '0x7'
     Type: char
@@ -626,7 +626,7 @@ TaleQuestSpawnLootItemInClueSiteStepDesc:
     Offset: '0x110'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_QEBD9[0x9]
+  - Name: pad0x9_G316S[0x9]
     Offset: '0x10f'
     Size: '0x9'
     Type: char
@@ -674,7 +674,7 @@ TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc:
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_K3BUZ[0x9]
+  - Name: pad0x9_9OF1B[0x9]
     Offset: '0xaf'
     Size: '0x9'
     Type: char
@@ -687,7 +687,7 @@ WeightedDebrisDataAsset:
   - Name: Debris
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct WeightedDebris>
+    Type: TArray<struct Debris>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

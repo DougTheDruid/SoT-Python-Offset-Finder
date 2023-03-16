@@ -1,33 +1,87 @@
 {
   "bsp_bottle_hanging_light_a_C": {
-    "Super": "StaticMeshActor",
-    "FullSize": "0x3f8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x20",
+    "Super": "FixedIntent",
+    "FullSize": "-0x1",
+    "InheritedSize": "0x0",
+    "ClassSize": "-0x1",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
+        "Name": "pad0x540_USW46[0x540]",
+        "Type": "char",
+        "Size": "0x540",
+        "Offset": "0x0"
       },
       {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
+        "Name": "CurseIntentComponent",
+        "Type": "Class FixedIntentComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x540"
       },
       {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
+        "Name": "ManipulatorAudioPool",
+        "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x548"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "MastSocketId",
+        "Type": "Struct SocketId",
+        "Size": "0x20",
+        "Offset": "0x550"
+      },
+      {
+        "Name": "AudioParams",
+        "Type": "Class SailManipulatorAudioParams*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x570"
+      },
+      {
+        "Name": "MastSocketSceneComponent",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "AudioEmitter",
+        "Type": "Struct WwiseEmitter",
+        "Size": "0x20",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "pad0x200_6W0Z6[0x200]",
+        "Type": "char",
+        "Size": "0x200",
+        "Offset": "0x5a0"
+      },
+      {
+        "Name": "BoundMast",
+        "Type": "Class Mast*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "PendingBoundMast",
+        "Type": "Class Mast*",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "Locked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7b0"
+      },
+      {
+        "Name": "pad0x7_1337V[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x7b1"
+      },
+      {
+        "Name": "TopMeshInstanceComponent",
+        "Type": "Class MobileInstancedStaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b8"
       }
     ]
   },

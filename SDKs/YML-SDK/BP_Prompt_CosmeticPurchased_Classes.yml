@@ -6,9 +6,9 @@ BP_Prompt_CosmeticPurchased_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_QLK9K[0x93]
+  - Name: pad0x132_13LP4[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: Handle_OfferPurchasedEvent
     Offset: '0x120'
@@ -37,7 +37,7 @@ BP_Prompt_CosmeticPurchased_C:
   - Name: CategoryTypes
     Offset: '0x2d0'
     Size: '0x10'
-    Type: TArray<Class CategoryTypes>
+    Type: TArray<class Class*>
   - Name: PurchasedEntitlementIds
     Offset: '0x2e0'
     Size: '0x10'

@@ -50,7 +50,7 @@
     "Attributes": [
       {
         "Name": "OwnerList",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct OwnerList>",
         "Size": "0x10",
         "Offset": "0x0"
       }

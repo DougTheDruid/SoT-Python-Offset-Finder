@@ -95,7 +95,7 @@ FireCellDesc:
     Offset: '0x36'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_IH5Y2[0x1]
+  - Name: pad0x1_Y0H0R[0x1]
     Offset: '0x37'
     Size: '0x1'
     Type: char
@@ -111,7 +111,7 @@ FireCellDesc:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xf_MRTQJ[0xf]
+  - Name: pad0xf_TKQI2[0xf]
     Offset: '0x41'
     Size: '0xf'
     Type: char
@@ -126,7 +126,7 @@ FireCellDesc:
   - Name: CustomParticleEffectTemplates
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct FireCellStateParticleTemplate>
+    Type: TArray<struct CustomParticleEffectTemplates>
   - Name: CustomParticleEffectSpawnTransform
     Offset: '0xa0'
     Size: '0x30'
@@ -138,11 +138,11 @@ FireCellDesc:
   - Name: CustomAddedDiagonalNeighbourOffsets
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct IntVector>
+    Type: TArray<struct CustomAddedDiagonalNeighbourOffsets>
   - Name: CustomRemovedDefaultNeighbourOffsets
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Struct IntVector>
+    Type: TArray<struct CustomRemovedDefaultNeighbourOffsets>
   ClassSize: '0x100'
 FireCellStateData:
   Attributes: []
@@ -157,7 +157,7 @@ FireCellStateParticleTemplate:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9D1XG[0x4]
+  - Name: pad0x4_PSUU8[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -185,7 +185,7 @@ FireCellStateParticleTemplate:
     Offset: '0x2d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_RT0AP[0x2]
+  - Name: pad0x2_L85KB[0x2]
     Offset: '0x2e'
     Size: '0x2'
     Type: char
@@ -251,7 +251,7 @@ FireDefaultVFXSpawnData:
     Offset: '0x0'
     Size: '0x38'
     Type: Struct FireCellStateParticleTemplate
-  - Name: pad0x8_B6JYB[0x8]
+  - Name: pad0x8_S540R[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
@@ -293,7 +293,7 @@ FireGridCellSelection:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_9S8X0[0x2]
+  - Name: pad0x2_IUHIV[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -335,7 +335,7 @@ FireGridCharringManager:
     Offset: '0x10'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_7RPHE[0x4]
+  - Name: pad0x4_RR6WI[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -379,7 +379,7 @@ FireGridVFXParams:
   - Name: DefaultParticleTemplates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FireCellStateParticleTemplate>
+    Type: TArray<struct DefaultParticleTemplates>
   - Name: ExteriorLowDetailParticleSystem
     Offset: '0x10'
     Size: '0x8'
@@ -422,15 +422,15 @@ FireGridVfxSpawnSettings:
   - Name: InteriorSmokeSpawnDescs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FireGridRelativeSpawnDesc>
+    Type: TArray<struct InteriorSmokeSpawnDescs>
   - Name: LowDetailVFXSpawnDescs
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FireGridLowDetailRelativeSpawnDesc>
+    Type: TArray<struct LowDetailVFXSpawnDescs>
   - Name: ParticleSpawnLODSettings
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct FireParticleSpawnData>
+    Type: TArray<struct ParticleSpawnLODSettings>
   - Name: LowFrequencyParticleSpawnSettings
     Offset: '0x30'
     Size: '0x10'
@@ -438,7 +438,7 @@ FireGridVfxSpawnSettings:
   - Name: ExteriorSmokeVFXSpawnDescs
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct FireGridLowDetailRelativeSpawnDesc>
+    Type: TArray<struct ExteriorSmokeVFXSpawnDescs>
   - Name: VFXParams
     Offset: '0x50'
     Size: '0x8'
@@ -467,7 +467,7 @@ FireParticleSpawnList:
   - Name: ParticleSpawnLODs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FireParticleSpawnData>
+    Type: TArray<struct ParticleSpawnLODs>
   ClassSize: '0x20'
 FireParticleSystem:
   Attributes:
@@ -475,7 +475,7 @@ FireParticleSystem:
     Offset: '0x0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: pad0x8_3LHEN[0x8]
+  - Name: pad0x8_F0CI4[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -525,7 +525,7 @@ ReplicatedFireCellCharringData:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_25VPL[0x4]
+  - Name: pad0x4_H8WX1[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -550,7 +550,7 @@ ShipFireDamageParams:
   - Name: ShipFireDamageParams
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ActorFireDamageParams>
+    Type: TArray<struct ShipFireDamageParams>
   ClassSize: '0x18'
 ShipFireLight:
   Attributes:
@@ -576,7 +576,7 @@ ShipFireLightManager:
   - Name: LightSpawnDescs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ShipFireLightRelativeSpawnDesc>
+    Type: TArray<struct LightSpawnDescs>
   - Name: LightTemplate
     Offset: '0x10'
     Size: '0xd0'
@@ -584,7 +584,7 @@ ShipFireLightManager:
   - Name: Lights
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<Struct ShipFireLight>
+    Type: TArray<struct Lights>
   - Name: Propagator
     Offset: '0xf0'
     Size: '0x8'
@@ -613,7 +613,7 @@ ShipFireLightManager:
     Offset: '0x110'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CGR7S[0x4]
+  - Name: pad0x4_2I8EZ[0x4]
     Offset: '0x114'
     Size: '0x4'
     Type: char
@@ -651,7 +651,7 @@ ShipFireLightRelativeSpawnDesc:
     Offset: '0x30'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_2VIF0[0x4]
+  - Name: pad0x4_AQKJP[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char

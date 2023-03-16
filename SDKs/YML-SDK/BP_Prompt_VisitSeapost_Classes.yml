@@ -6,9 +6,9 @@ BP_Prompt_VisitSeapost_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_HRPJV[0x93]
+  - Name: pad0x132_I4IEI[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: Handle_EventObjectWielded
     Offset: '0x120'
@@ -26,7 +26,7 @@ BP_Prompt_VisitSeapost_C:
     Offset: '0x238'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_AC011[0x3]
+  - Name: pad0x3_L1TSB[0x3]
     Offset: '0x239'
     Size: '0x3'
     Type: char
@@ -38,14 +38,14 @@ BP_Prompt_VisitSeapost_C:
     Offset: '0x240'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1HHD1[0x4]
+  - Name: pad0x4_79INI[0x4]
     Offset: '0x244'
     Size: '0x4'
     Type: char
   - Name: IgnoredFood
     Offset: '0x248'
     Size: '0x10'
-    Type: TArray<Class IgnoredFood>
+    Type: TArray<class Class*>
   ClassSize: '0x140'
   FullSize: '0x258'
   InheritedSize: '0x118'

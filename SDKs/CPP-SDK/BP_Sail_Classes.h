@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Sail_C: public Sail
 {
 public:
-	TArray<Struct None>                                          Sail Positions Top;                                // 0x570(0x10)
-	TArray<Struct Vector>                                        Sail Positions Bottom;                             // 0x580(0x10)
+	TArray<struct None>                                          None;                                              // 0x570(0x10)
+	TArray<struct None>                                          None;                                              // 0x580(0x10)
 };
 
 

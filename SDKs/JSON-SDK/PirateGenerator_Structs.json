@@ -33,7 +33,7 @@
       },
       {
         "Name": "VFXSockets",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_HYJD7[0x3]",
+        "Name": "pad0x3_1VU4B[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -73,7 +73,7 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_OA294[0x2]",
+        "Name": "pad0x2_6QQIN[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
@@ -85,20 +85,20 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x4_T5IE8[0x4]",
+        "Name": "pad0x4_WF5M7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "BlendShapes",
-        "Type": "TArray<Struct IPGBlendShape>",
+        "Type": "TArray<struct BlendShapes>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "DynamicSliders",
-        "Type": "TArray<Struct IPGDynamicSlider>",
+        "Type": "TArray<struct DynamicSliders>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -109,32 +109,32 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_9TAQP[0x4]",
+        "Name": "pad0x4_06RRN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
       },
       {
         "Name": "Items",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "TextureReferences",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "MaterialReferences",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<Struct IPGScalarParameter>",
+        "Type": "TArray<struct ScalarParameters>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -219,13 +219,13 @@
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<Struct IPGScalarParameter>",
+        "Type": "TArray<struct ScalarParameters>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "MaterialReferences",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -237,7 +237,7 @@
       },
       {
         "Name": "VFXSockets",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -248,7 +248,7 @@
     "Attributes": [
       {
         "Name": "Items",
-        "Type": "TArray<Struct ClothingCreatorSlotItem>",
+        "Type": "TArray<struct Items>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -317,7 +317,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_K7CZC[0x3]",
+        "Name": "pad0x3_M6V53[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -335,20 +335,20 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_70LM9[0x4]",
+        "Name": "pad0x4_2ZJVL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "VectorTest",
-        "Type": "TArray<Struct IPGTestSimpleType>",
+        "Type": "TArray<struct VectorTest>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "StrVectorTest",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -411,13 +411,13 @@
     "Attributes": [
       {
         "Name": "Male",
-        "Type": "TArray<Struct IPGBodyShape>",
+        "Type": "TArray<struct Male>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Female",
-        "Type": "TArray<Struct IPGBodyShape>",
+        "Type": "TArray<struct Female>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -445,19 +445,19 @@
     "Attributes": [
       {
         "Name": "DynamicSliderNames",
-        "Type": "TArray<Struct IPGDynamicSliderName>",
+        "Type": "TArray<struct DynamicSliderNames>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "BlendingMethods",
-        "Type": "TArray<Struct IPGBlendingMethod>",
+        "Type": "TArray<struct BlendingMethods>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Groups",
-        "Type": "TArray<Struct IPGSetGroup>",
+        "Type": "TArray<struct Groups>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -468,14 +468,14 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_H3YTB[0x4]",
+        "Name": "pad0x4_XJRUS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "Versions",
-        "Type": "TArray<Struct IPGSetsData>",
+        "Type": "TArray<struct Versions>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -491,14 +491,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_VYPPU[0x4]",
+        "Name": "pad0x4_BPIRS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Sets",
-        "Type": "TArray<Struct IPGSetData>",
+        "Type": "TArray<struct Sets>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -526,7 +526,7 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_SV8RH[0x2]",
+        "Name": "pad0x2_ZVK60[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
@@ -539,7 +539,7 @@
       },
       {
         "Name": "Nodes",
-        "Type": "TArray<Struct IPGBlendNode>",
+        "Type": "TArray<struct Nodes>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -556,7 +556,7 @@
       },
       {
         "Name": "Ranges",
-        "Type": "TArray<Struct IPGBlendRange>",
+        "Type": "TArray<struct Ranges>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -590,14 +590,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_PO7L5[0x4]",
+        "Name": "pad0x4_5P471[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "Compatibility",
-        "Type": "TArray<Struct IPGCompatibleSet>",
+        "Type": "TArray<struct Compatibility>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -676,13 +676,13 @@
     "Attributes": [
       {
         "Name": "Slots",
-        "Type": "TArray<Struct ClothingSlot>",
+        "Type": "TArray<struct Slots>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Priority",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -699,7 +699,7 @@
       },
       {
         "Name": "Tags",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -716,31 +716,31 @@
     "Attributes": [
       {
         "Name": "PartNames",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FreeSlots",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<Struct IPGScalarParameter>",
+        "Type": "TArray<struct ScalarParameters>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "MaterialReferences",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "VFXs",
-        "Type": "TArray<Struct ClothingVFX>",
+        "Type": "TArray<struct VFXs>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -757,13 +757,13 @@
       },
       {
         "Name": "Sockets",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Slots",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -792,13 +792,13 @@
       },
       {
         "Name": "Variants",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "NewSlots",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -810,25 +810,25 @@
       },
       {
         "Name": "Parts",
-        "Type": "TArray<Struct ClothingPart>",
+        "Type": "TArray<struct Parts>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "VFXs",
-        "Type": "TArray<Struct ClothingVFX>",
+        "Type": "TArray<struct VFXs>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<Struct IPGScalarParameter>",
+        "Type": "TArray<struct ScalarParameters>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "MaterialReferences",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x78"
       }
@@ -845,7 +845,7 @@
       },
       {
         "Name": "Slots",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -896,7 +896,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_1G0Y9[0x4]",
+        "Name": "pad0x4_RS1IE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -926,7 +926,7 @@
       },
       {
         "Name": "References",
-        "Type": "TArray<Struct MaterialReferenceEntry>",
+        "Type": "TArray<struct References>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -948,7 +948,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_RQFEI[0x6]",
+        "Name": "pad0x6_29EAU[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
@@ -978,7 +978,7 @@
       },
       {
         "Name": "References",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1062,7 +1062,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_KFX4U[0x7]",
+        "Name": "pad0x7_9M5UA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -1085,7 +1085,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_KKOED[0x7]",
+        "Name": "pad0x7_1BULC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -1131,7 +1131,7 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_FNVNY[0x2]",
+        "Name": "pad0x2_ZK6MQ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
@@ -1155,7 +1155,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_VVD1Q[0x2]",
+        "Name": "pad0x2_ED42Q[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -1167,20 +1167,20 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x4_OTHI8[0x4]",
+        "Name": "pad0x4_YTYJM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "SelectedItems",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "SelectedReferences",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
       }

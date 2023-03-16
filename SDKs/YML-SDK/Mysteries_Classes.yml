@@ -5,14 +5,14 @@ AbandonedNoteWeightedTextDataAsset:
   - Name: Entries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AbandonedNoteWeightedTextEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 AbandonedNoteWeightedTextSourceComponent:
   Attributes:
-  - Name: pad0x40_W5OZH[0x40]
+  - Name: pad0x40_BVWIA[0x40]
     Offset: '0xc8'
     Size: '0x40'
     Type: char
@@ -24,7 +24,7 @@ AbandonedNoteWeightedTextSourceComponent:
     Offset: '0x140'
     Size: '0x38'
     Type: Struct FText
-  - Name: pad0xa0_OJ17L[0xa0]
+  - Name: pad0xa0_MQV8W[0xa0]
     Offset: '0x176'
     Size: '0xa0'
     Type: char
@@ -62,7 +62,7 @@ OneShotRewardableObjectBase:
     Offset: '0x490'
     Size: '0x38'
     Type: Struct FText
-  - Name: pad0x90_YDPCN[0x90]
+  - Name: pad0x90_HH1N4[0x90]
     Offset: '0x4c6'
     Size: '0x90'
     Type: char
@@ -76,7 +76,7 @@ PopUpNotificationOnItemWieldedComponent:
     Offset: '0x138'
     Size: '0x8'
     Type: Class PopUpMessageDesc*
-  - Name: pad0x28_GCHFG[0x28]
+  - Name: pad0x28_2G076[0x28]
     Offset: '0x13e'
     Size: '0x28'
     Type: char
@@ -86,7 +86,7 @@ PopUpNotificationOnItemWieldedComponent:
   Super: OnItemWieldedComponent
 SirenPuzzleContext:
   Attributes:
-  - Name: pad0x8_P0ND1[0x8]
+  - Name: pad0x8_ZW00T[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -97,20 +97,20 @@ SirenPuzzleContext:
   - Name: PuzzleLocks
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<Struct SirenPuzzleLockState>
+    Type: TArray<struct PuzzleLocks>
   - Name: UnlockCompleteReactions
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<Struct LandmarkReactionKeyFrame>
+    Type: TArray<struct UnlockCompleteReactions>
   - Name: ResetLocksReactions
     Offset: '0x3f8'
     Size: '0x10'
-    Type: TArray<Struct LandmarkReactionKeyFrame>
+    Type: TArray<struct ResetLocksReactions>
   - Name: LockStates
     Offset: '0x408'
     Size: '0x10'
     Type: TArray<Byte LockStates>
-  - Name: pad0xc0_IGWOV[0xc0]
+  - Name: pad0xc0_DW5F0[0xc0]
     Offset: '0x416'
     Size: '0xc0'
     Type: char

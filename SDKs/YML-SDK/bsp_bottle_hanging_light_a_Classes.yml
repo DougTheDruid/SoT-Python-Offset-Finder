@@ -2,23 +2,59 @@
 # https://github.com/DougTheDruid
 bsp_bottle_hanging_light_a_C:
   Attributes:
-  - Name: None
-    Offset: '0x3d8'
+  - Name: pad0x540_USW46[0x540]
+    Offset: '0x0'
+    Size: '0x540'
+    Type: char
+  - Name: CurseIntentComponent
+    Offset: '0x540'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x3e0'
+    Type: Class FixedIntentComponent*
+  - Name: ManipulatorAudioPool
+    Offset: '0x548'
     Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: None
-    Offset: '0x3e8'
+    Type: Class WwiseObjectPoolWrapper*
+  - Name: MastSocketId
+    Offset: '0x550'
+    Size: '0x20'
+    Type: Struct SocketId
+  - Name: AudioParams
+    Offset: '0x570'
     Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: None
-    Offset: '0x3f0'
+    Type: Class SailManipulatorAudioParams*
+  - Name: MastSocketSceneComponent
+    Offset: '0x578'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  ClassSize: '0x20'
-  FullSize: '0x3f8'
-  InheritedSize: '0x3d8'
-  Super: StaticMeshActor
+    Type: Class SceneComponent*
+  - Name: AudioEmitter
+    Offset: '0x580'
+    Size: '0x20'
+    Type: Struct WwiseEmitter
+  - Name: pad0x200_6W0Z6[0x200]
+    Offset: '0x5a0'
+    Size: '0x200'
+    Type: char
+  - Name: BoundMast
+    Offset: '0x7a0'
+    Size: '0x8'
+    Type: Class Mast*
+  - Name: PendingBoundMast
+    Offset: '0x7a8'
+    Size: '0x8'
+    Type: Class Mast*
+  - Name: Locked
+    Offset: '0x7b0'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_1337V[0x7]
+    Offset: '0x7b1'
+    Size: '0x7'
+    Type: char
+  - Name: TopMeshInstanceComponent
+    Offset: '0x7b8'
+    Size: '0x8'
+    Type: Class MobileInstancedStaticMeshComponent*
+  ClassSize: '-0x1'
+  FullSize: '-0x1'
+  InheritedSize: '0x0'
+  Super: FixedIntent

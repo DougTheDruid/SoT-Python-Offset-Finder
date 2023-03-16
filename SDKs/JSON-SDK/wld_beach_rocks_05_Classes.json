@@ -1,78 +1,84 @@
 {
   "wld_beach_rocks_05_C": {
-    "Super": "BP_Placement_HeightDrop_C",
+    "Super": "",
     "FullSize": "0x468",
-    "InheritedSize": "0x408",
-    "ClassSize": "0x60",
+    "InheritedSize": "-0x7ccccccd",
+    "ClassSize": "0x7cccd135",
     "Attributes": [
       {
-        "Name": "wld_rock_small_01__b",
+        "Name": "pad0x7cccd0d5_NJROR[0x7cccd0d5]",
+        "Type": "char",
+        "Size": "0x7cccd0d5",
+        "Offset": "-0x7ccccccd"
+      },
+      {
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "wld_rock_small_01__c",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "wld_rock_medium_01__e",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "wld_rock_medium_01__d",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "wld_rock_medium_01__c",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "wld_rock_xlarge_05_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "wld_rock_large_01__e",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "wld_rock_large_01__c1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "wld_rock_large_01__c",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "wld_rock_xlarge_03_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
-        "Name": "wld_rock_large_01__d",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
-        "Name": "Scene",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x460"

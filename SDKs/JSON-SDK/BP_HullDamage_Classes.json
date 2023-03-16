@@ -1,99 +1,99 @@
 {
   "BP_HullDamage_C": {
     "Super": "HullDamage",
-    "FullSize": "0x608",
-    "InheritedSize": "0x580",
+    "FullSize": "0x638",
+    "InheritedSize": "0x5b0",
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x580"
-      },
-      {
-        "Name": "HitReaction",
-        "Type": "Class HitReactionComponent*",
-        "Size": "0x8",
-        "Offset": "0x588"
-      },
-      {
-        "Name": "ImpactDecalComponent",
-        "Type": "Class BakedDecalComponent*",
-        "Size": "0x8",
-        "Offset": "0x590"
-      },
-      {
-        "Name": "Persistent Damage Decals",
-        "Type": "TArray<class Texture2D*>",
-        "Size": "0x10",
-        "Offset": "0x598"
-      },
-      {
-        "Name": "Damage VFX",
-        "Type": "Class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x5a8"
-      },
-      {
-        "Name": "Deferred Damage Decals",
-        "Type": "TArray<class MaterialInstance*>",
-        "Size": "0x10",
         "Offset": "0x5b0"
       },
       {
-        "Name": "Deferred Min Size",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "None",
+        "Type": "Class HitReactionComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class BakedDecalComponent*",
+        "Size": "0x8",
         "Offset": "0x5c0"
       },
       {
-        "Name": "Deferred Max Size",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5c4"
-      },
-      {
-        "Name": "Persistent Min Size",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "None",
+        "Type": "TArray<class Texture2D*>",
+        "Size": "0x10",
         "Offset": "0x5c8"
       },
       {
-        "Name": "Persistent Max Size",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5cc"
-      },
-      {
-        "Name": "RandomDecalStream",
-        "Type": "Struct RandomStream",
+        "Name": "None",
+        "Type": "Class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "TEST_HitStrength",
-        "Type": "float",
-        "Size": "0x4",
         "Offset": "0x5d8"
       },
       {
-        "Name": "TEST_PenetrationThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5dc"
-      },
-      {
-        "Name": "ParentShip",
-        "Type": "Class Ship*",
-        "Size": "0x8",
+        "Name": "None",
+        "Type": "TArray<class MaterialInstance*>",
+        "Size": "0x10",
         "Offset": "0x5e0"
       },
       {
-        "Name": "CannonballHitEmitter",
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5f4"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5fc"
+      },
+      {
+        "Name": "None",
+        "Type": "Struct RandomStream",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60c"
+      },
+      {
+        "Name": "None",
+        "Type": "Class Ship*",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "None",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
-        "Offset": "0x5e8"
+        "Offset": "0x618"
       }
     ]
   },

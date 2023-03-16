@@ -2,22 +2,14 @@
 # https://github.com/DougTheDruid
 BP_DistantLightProxy_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: InstancedStaticMesh
-    Offset: '0x3d0'
-    Size: '0x8'
-    Type: Class InstancedStaticMeshComponent*
-  - Name: DefaultSceneRoot
-    Offset: '0x3d8'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: LightList
-    Offset: '0x3e0'
-    Size: '0x10'
-    Type: TArray<Struct None>
+  - Name: pad0x30_DD3KQ[0x30]
+    Offset: '0x3ce'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'

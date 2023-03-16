@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_NPC_ReapersBones_Skeleton_InCage_C:
   Attributes:
-  - Name: NPCDialog
+  - Name: None
     Offset: '0x698'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: AnimNotifyWwiseEmitter
+  - Name: None
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: SolidHits
+  - Name: None
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class CapsuleComponent*

@@ -34,7 +34,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x30_H3TVD[0x30]",
+        "Name": "pad0x30_O85MB[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x28"
@@ -68,7 +68,7 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x10_VB0JC[0x10]",
+        "Name": "pad0x10_IJYTT[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -80,7 +80,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x10_0OHZ5[0x10]",
+        "Name": "pad0x10_6O9D7[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3e0"
@@ -98,7 +98,7 @@
         "Offset": "0x3f4"
       },
       {
-        "Name": "pad0xe8_AS3HF[0xe8]",
+        "Name": "pad0xe8_KIWGE[0xe8]",
         "Type": "char",
         "Size": "0xe8",
         "Offset": "0x3f8"
@@ -111,7 +111,7 @@
       },
       {
         "Name": "ExtraWind",
-        "Type": "TArray<Struct ExtraWind>",
+        "Type": "TArray<struct ExtraWind>",
         "Size": "0x10",
         "Offset": "0x4f0"
       }
@@ -138,7 +138,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x8_Y2BE6[0x8]",
+        "Name": "pad0x8_BDK6J[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
@@ -156,7 +156,7 @@
         "Offset": "0x358"
       },
       {
-        "Name": "pad0x28_4ROXR[0x28]",
+        "Name": "pad0x28_SJY5J[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x366"

@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 wsp_sea_rock_cluster_f_C:
   Attributes:
-  - Name: wsp_sea_rocks_a
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_sea_rocks_b
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent03
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent02
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent01
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent0
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: SharedRoot
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class SceneComponent*

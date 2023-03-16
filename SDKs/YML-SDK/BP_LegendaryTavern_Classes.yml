@@ -7,10 +7,6 @@ BP_LegendaryTavern_C:
     Size: '0x8'
     Type: Class EmissaryMaxRankQuestProvider*
   - Name: None
-    Offset: '0x750'
-    Size: '0x8'
-    Type: Class CapsuleComponent*
-  - Name: None
     Offset: '0x758'
     Size: '0x8'
     Type: Class StaticMeshComponent*
@@ -18,10 +14,10 @@ BP_LegendaryTavern_C:
     Offset: '0x760'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
-    Offset: '0x768'
-    Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
+  - Name: pad0x18_V85S3[0x18]
+    Offset: '0x766'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x770'
   InheritedSize: '0x748'

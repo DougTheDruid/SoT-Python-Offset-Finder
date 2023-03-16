@@ -36,14 +36,14 @@
         "Offset": "0x420"
       },
       {
-        "Name": "pad0x4_TIKGQ[0x4]",
+        "Name": "pad0x4_9OIJL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x424"
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
+        "Type": "TArray<struct Prompts>",
         "Size": "0x10",
         "Offset": "0x428"
       },

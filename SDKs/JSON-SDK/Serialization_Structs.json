@@ -56,7 +56,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x8_ZGBPO[0x8]",
+        "Name": "pad0x8_XSKPX[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
@@ -68,14 +68,14 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_95CJ3[0xc]",
+        "Name": "pad0xc_J2C7C[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
       },
       {
         "Name": "VectorArray",
-        "Type": "TArray<Struct Vector>",
+        "Type": "TArray<struct VectorArray>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -149,7 +149,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x2_I8U3M[0x2]",
+        "Name": "pad0x2_LTHJ4[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2"
@@ -172,7 +172,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x1_WRLWP[0x1]",
+        "Name": "pad0x1_BF0NW[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x11"
@@ -184,7 +184,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_STYNG[0x4]",
+        "Name": "pad0x4_NPZI0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"

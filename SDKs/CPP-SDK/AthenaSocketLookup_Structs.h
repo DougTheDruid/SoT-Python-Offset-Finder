@@ -18,7 +18,7 @@ public:
 struct SocketPath
 {
 public:
-	TArray<Struct SocketPathNode>                                Nodes;                                             // 0x0(0x10)
+	TArray<struct Nodes>                                         Nodes;                                             // 0x0(0x10)
 };
 
 

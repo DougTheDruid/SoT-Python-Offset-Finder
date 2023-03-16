@@ -19,7 +19,7 @@ class CompanyTutorialVoyageProgress: public Object
 public:
 	class                                                        AssignedVoyageProposalDescClass;                   // 0x28(0x8)
 	class                                                        AssignedTaleRankDescClass;                         // 0x30(0x8)
-	char                                                         pad0xb8_IFI1B[0xb8];                               // 0x36(0xb8)
+	char                                                         pad0xb8_1FMUR[0xb8];                               // 0x36(0xb8)
 };
 
 
@@ -27,9 +27,9 @@ public:
 class ContextualTutorialComponent: public ActorComponent
 {
 public:
-	TArray<Struct ContextualTutorialPromptDesc>                  ContextualTutorialClasses;                         // 0xc8(0x10)
+	TArray<struct ContextualTutorialClasses>                     ContextualTutorialClasses;                         // 0xc8(0x10)
 	TArray<class Actor*>                                         SpawnedPromptActors;                               // 0xd8(0x10)
-	char                                                         pad0x58_FFZ2A[0x58];                               // 0xe6(0x58)
+	char                                                         pad0x58_WJJ8K[0x58];                               // 0xe6(0x58)
 };
 
 
@@ -38,7 +38,7 @@ class HasTutorialStarterBegunNPCDialogConditional: public NPCDialogConditional
 {
 public:
 	byte                                                         TutorialStarterType;                               // 0x30(0x1)
-	char                                                         pad0x9_7GLR9[0x9];                                 // 0x2f(0x9)
+	char                                                         pad0x9_E674G[0x9];                                 // 0x2f(0x9)
 };
 
 
@@ -55,7 +55,7 @@ class Tutorial2019Component: public ActorComponent
 public:
 	bool                                                         IsEnabledByServer;                                 // 0xc8(0x1)
 	bool                                                         IsInTutorialTale;                                  // 0xc9(0x1)
-	char                                                         pad0x8_L185Q[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_EGKBS[0x8];                                 // 0xc8(0x8)
 };
 
 
@@ -92,7 +92,7 @@ public:
 class TutorialManager: public ActorComponent
 {
 public:
-	char                                                         pad0x8_Y1I9Z[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_1PVF3[0x8];                                 // 0xc8(0x8)
 	class                                                        CompanyOnboardingStarterClass;                     // 0xd0(0x8)
 	class                                                        MaidenVoyageStarterClass;                          // 0xd8(0x8)
 	class                                                        BeachNPCSpawnFlowStarterClass;                     // 0xe0(0x8)
@@ -109,7 +109,7 @@ public:
 	bool                                                         HasPlayerFinshedSpawning;                          // 0x115(0x1)
 	bool                                                         IsPlayerWaitingForCaptaincySessionResponse;        // 0x116(0x1)
 	bool                                                         HasPlayerPromptsServiceSetup;                      // 0x117(0x1)
-	char                                                         pad0x22_SFZS4[0x22];                               // 0x116(0x22)
+	char                                                         pad0x22_B8IUO[0x22];                               // 0x116(0x22)
 };
 
 
@@ -120,7 +120,7 @@ public:
 	Class AthenaPlayerController*                                AthenaPlayerController;                            // 0x28(0x8)
 	bool                                                         ShouldPlayIntroAnimatic;                           // 0x30(0x1)
 	bool                                                         ShouldDisableAllIntroBehaviour;                    // 0x31(0x1)
-	char                                                         pad0x2_LVQ9B[0x2];                                 // 0x32(0x2)
+	char                                                         pad0x2_C38AQ[0x2];                                 // 0x32(0x2)
 	Struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x34(0x2c)
 };
 
@@ -140,16 +140,16 @@ public:
 	bool                                                         CheckIfShipNeverSetSail;                           // 0x68(0x1)
 	bool                                                         CheckIfPlayerInOutpost;                            // 0x69(0x1)
 	bool                                                         CheckIfPlayerIsInCaptain;                          // 0x6a(0x1)
-	char                                                         pad0x5_UE03H[0x5];                                 // 0x6b(0x5)
+	char                                                         pad0x5_MS44B[0x5];                                 // 0x6b(0x5)
 	class                                                        CheckIfEntitlementIsOwned;                         // 0x70(0x8)
 	bool                                                         CheckIfCaptainingANewShip;                         // 0x78(0x1)
-	char                                                         pad0x3_U1CFS[0x3];                                 // 0x79(0x3)
+	char                                                         pad0x3_C5L90[0x3];                                 // 0x79(0x3)
 	struct FName                                                 FeatureToggle;                                     // 0x7c(0x8)
 	bool                                                         CheckIfPlayerHasMadeAttempts;                      // 0x84(0x1)
-	char                                                         pad0x3_QS1ZW[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_52WDS[0x3];                                 // 0x85(0x3)
 	class                                                        PromptCounterKey;                                  // 0x88(0x8)
 	int                                                          MaxAttemptCount;                                   // 0x90(0x4)
-	char                                                         pad0x6c_ASQV7[0x6c];                               // 0x92(0x6c)
+	char                                                         pad0x6c_UVHMJ[0x6c];                               // 0x92(0x6c)
 };
 
 

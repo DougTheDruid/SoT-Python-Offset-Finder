@@ -1,21 +1,45 @@
 {
   "wld_palm_cluster_05_a_C": {
-    "Super": "BP_Placement_HeightDrop_C",
-    "FullSize": "0x418",
-    "InheritedSize": "0x408",
-    "ClassSize": "0x10",
+    "Super": "",
+    "FullSize": "0x430",
+    "InheritedSize": "-0x7ccccccd",
+    "ClassSize": "0x7cccd0fd",
     "Attributes": [
       {
-        "Name": "NonVagueNonUniqueLandmark",
-        "Type": "Class NonVagueNonUniqueLandmarkComponent*",
+        "Name": "pad0x7cccd0d5_EGFS3[0x7cccd0d5]",
+        "Type": "char",
+        "Size": "0x7cccd0d5",
+        "Offset": "-0x7ccccccd"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "StaticMesh2",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
+      },
+      {
+        "Name": "None",
+        "Type": "Class NonVagueNonUniqueLandmarkComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
       }
     ]
   },

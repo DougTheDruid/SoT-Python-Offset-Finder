@@ -74,7 +74,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x3_TIF5H[0x3]",
+        "Name": "pad0x3_GS3IB[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xed"
@@ -86,7 +86,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x4_X2RY0[0x4]",
+        "Name": "pad0x4_A6WX3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xf4"
@@ -110,7 +110,7 @@
         "Offset": "0x104"
       },
       {
-        "Name": "pad0x58_DHEN7[0x58]",
+        "Name": "pad0x58_5COT3[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x106"
@@ -152,7 +152,7 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x8_KPZR3[0x8]",
+        "Name": "pad0x8_O478Y[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -165,18 +165,18 @@
       },
       {
         "Name": "ServerOnlySpireInfo",
-        "Type": "TArray<Struct ServerSpireInfo>",
+        "Type": "TArray<struct ServerOnlySpireInfo>",
         "Size": "0x10",
         "Offset": "0x3d8"
       },
       {
         "Name": "SpireLevels",
-        "Type": "TArray<Struct SpireInfo>",
+        "Type": "TArray<struct SpireLevels>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x88_96UNL[0x88]",
+        "Name": "pad0x88_9X062[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x3f6"
@@ -197,7 +197,7 @@
       },
       {
         "Name": "Entries",
-        "Type": "TArray<Struct SpireEntry>",
+        "Type": "TArray<struct Entries>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -285,7 +285,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x18_YKGPA[0x18]",
+        "Name": "pad0x18_4AUHO[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x9e"

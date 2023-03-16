@@ -12,16 +12,10 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
+        "Name": "pad0x20_7RC4P[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3de"
       }
     ]
   },

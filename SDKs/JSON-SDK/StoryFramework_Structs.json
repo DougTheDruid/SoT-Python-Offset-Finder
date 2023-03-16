@@ -15,7 +15,7 @@
     "Attributes": [
       {
         "Name": "StoryResourceStateChanges",
-        "Type": "TArray<Struct StoryResourceStateChanged>",
+        "Type": "TArray<struct StoryResourceStateChanges>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -66,7 +66,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_4XJ0R[0x7]",
+        "Name": "pad0x7_5LY3B[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -124,7 +124,7 @@
       },
       {
         "Name": "GroupLocations",
-        "Type": "TArray<Struct NamedPointsGroupActorLocation>",
+        "Type": "TArray<struct GroupLocations>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -147,19 +147,19 @@
       },
       {
         "Name": "ActorLocations",
-        "Type": "TArray<Struct ActorLocationPair>",
+        "Type": "TArray<struct ActorLocations>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "NamedPointsActorLocations",
-        "Type": "TArray<Struct NamedPointsActorLocation>",
+        "Type": "TArray<struct NamedPointsActorLocations>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "InstancedLayerLocations",
-        "Type": "TArray<Struct InstancedLayerLocation>",
+        "Type": "TArray<struct InstancedLayerLocations>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -193,7 +193,7 @@
       },
       {
         "Name": "GroupLocations",
-        "Type": "TArray<Struct NamedPointsGroupActorLocation>",
+        "Type": "TArray<struct GroupLocations>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -215,13 +215,13 @@
     "Attributes": [
       {
         "Name": "StorySpawnedActors",
-        "Type": "TArray<Struct StorySpawnedActorsIndividualStoryInfo>",
+        "Type": "TArray<struct StorySpawnedActors>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "StoryDespawnedActors",
-        "Type": "TArray<Struct StorySpawnedActorsIndividualStoryInfo>",
+        "Type": "TArray<struct StoryDespawnedActors>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -255,7 +255,7 @@
     "Attributes": [
       {
         "Name": "StoryFlags",
-        "Type": "TArray<Struct StoryFlag>",
+        "Type": "TArray<struct StoryFlags>",
         "Size": "0x10",
         "Offset": "0x28"
       }

@@ -297,7 +297,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_U1JDU[0x4]",
+        "Name": "pad0x4_DQG3Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -350,7 +350,7 @@
       },
       {
         "Name": "Pulleys",
-        "Type": "TArray<Struct RiggingSystemPulleyParams>",
+        "Type": "TArray<struct Pulleys>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -385,7 +385,7 @@
       },
       {
         "Name": "Lines",
-        "Type": "TArray<Struct RiggingSystemLineParams>",
+        "Type": "TArray<struct Lines>",
         "Size": "0x10",
         "Offset": "0x8"
       }

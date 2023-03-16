@@ -10,31 +10,8 @@ namespace DougsSDKDumper
 class BP_CoralFortress_WeatherZone_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
-	Class ExplosionComponent*                                    Explosion;                                         // 0x3d0(0x8)
-	Class LightningManagerComponent*                             LightningManager;                                  // 0x3d8(0x8)
-	Class LightningComponent*                                    Lightning;                                         // 0x3e0(0x8)
-	Class CapsuleComponent*                                      ExclusionTriggerVolume;                            // 0x3e8(0x8)
-	Class AtmosphericPressureZoneComponent*                      AtmosphericPressureZone;                           // 0x3f0(0x8)
-	Class BlendedPostProcessingRainZoneComponent*                BlendedPostProcessingRainZone;                     // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   TopCloudMeshComponent;                             // 0x400(0x8)
-	Class StaticMeshComponent*                                   RingCloudMeshComponent;                            // 0x408(0x8)
-	Class StaticMeshComponent*                                   Lightning4;                                        // 0x410(0x8)
-	Class StaticMeshComponent*                                   Lightning3;                                        // 0x418(0x8)
-	Class StaticMeshComponent*                                   Lightning2;                                        // 0x420(0x8)
-	Class StaticMeshComponent*                                   Lightning1;                                        // 0x428(0x8)
-	Class StaticMeshComponent*                                   OuterRainSheet;                                    // 0x430(0x8)
-	Class SceneComponent*                                        RainRoot;                                          // 0x438(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x440(0x8)
-	float                                                        RainBlend_Blend_1B3587E7420F9A76FB06A6A63DE0B159;  // 0x448(0x4)
-	byte                                                         RainBlend__Direction_1B3587E7420F9A76FB06A6A63DE0B159; // 0x44c(0x1)
-	char                                                         pad0x3_D1HND[0x3];                                 // 0x44d(0x3)
-	Class TimelineComponent*                                     RainBlend;                                         // 0x450(0x8)
-	TArray<class MaterialInstanceDynamic*>                       RainDynMaterials;                                  // 0x458(0x10)
-	float                                                        Opacity;                                           // 0x468(0x4)
-	char                                                         pad0x4_J7593[0x4];                                 // 0x46c(0x4)
-	Struct WwiseEmitterCreationParams                            CreationParams;                                    // 0x470(0x28)
-	Struct WwiseEmitter                                          WwiseEmitter;                                      // 0x498(0x20)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
+	char                                                         pad0xf8_E2EEA[0xf8];                               // 0x3ce(0xf8)
 };
 
 

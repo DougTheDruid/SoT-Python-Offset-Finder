@@ -10,16 +10,16 @@ namespace DougsSDKDumper
 class BP_LargeShip_QuestTable_C: public VoyageTable
 {
 public:
-	Class ChildActorComponent*                                   WarMap;                                            // 0x878(0x8)
-	Class ChildActorComponent*                                   FactionHourglass;                                  // 0x880(0x8)
-	Class ChildActorComponent*                                   CancelAdventure;                                   // 0x888(0x8)
-	Class ChildActorComponent*                                   PlayerBuiredItemsMapBundleInteractionPoint;        // 0x890(0x8)
-	Class ChildActorComponent*                                   CancelTale;                                        // 0x898(0x8)
-	Class ChildActorComponent*                                   CancelVoyage;                                      // 0x8a0(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot4;                              // 0x8a8(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot3;                              // 0x8b0(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot2;                              // 0x8b8(0x8)
-	Class ChildActorComponent*                                   VoyageSelectionSlot1;                              // 0x8c0(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x878(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x880(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x888(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x890(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x898(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x8a0(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x8a8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x8b0(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x8b8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x8c0(0x8)
 };
 
 

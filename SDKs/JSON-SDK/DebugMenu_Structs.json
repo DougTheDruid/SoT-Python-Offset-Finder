@@ -16,7 +16,7 @@
       },
       {
         "Name": "Buttons",
-        "Type": "TArray<Struct Key>",
+        "Type": "TArray<struct Buttons>",
         "Size": "0x10",
         "Offset": "0x20"
       },

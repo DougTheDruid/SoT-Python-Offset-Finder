@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_IslandStorageBarrel_Double_02_a_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3e0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3e8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3f0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3f8(0x8)
+	Class StaticMeshComponent*                                   cmn_broken_shovel_01_b;                            // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   cmn_broken_shovel_01_a;                            // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   shp_rope_coil_03_a;                                // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   cmn_looted_box_01_a;                               // 0x3e0(0x8)
+	Class ChildActorComponent*                                   BP_IslandStorageBarrel_02;                         // 0x3e8(0x8)
+	Class ChildActorComponent*                                   BP_IslandStorageBarrel_01;                         // 0x3f0(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x3f8(0x8)
 };
 
 

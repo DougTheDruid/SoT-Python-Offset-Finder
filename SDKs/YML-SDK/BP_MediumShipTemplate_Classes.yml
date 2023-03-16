@@ -133,7 +133,7 @@ BP_MediumShipTemplate_C:
   - Name: None
     Offset: '0x1810'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1818'
     Size: '0x8'
@@ -141,51 +141,51 @@ BP_MediumShipTemplate_C:
   - Name: None
     Offset: '0x1820'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1828'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1830'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1838'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1840'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1848'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1850'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1858'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1860'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1868'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1870'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1878'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None None*
   - Name: None
     Offset: '0x1880'
     Size: '0x8'
@@ -494,7 +494,7 @@ BP_MediumShipTemplate_C:
     Offset: '0x1ae0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_MH29H[0x7]
+  - Name: pad0x7_S7I9A[0x7]
     Offset: '0x1ae1'
     Size: '0x7'
     Type: char
@@ -506,7 +506,7 @@ BP_MediumShipTemplate_C:
     Offset: '0x1af0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_6DBA1[0x7]
+  - Name: pad0x7_XRX65[0x7]
     Offset: '0x1af1'
     Size: '0x7'
     Type: char

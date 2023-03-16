@@ -7,11 +7,11 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10 (Full Size[0x5f0] - InheritedSize[0x5e0]
-class BP_ShipCookingPot_C: public BP_CookingPotBase_C
+class BP_ShipCookingPot_C: public None
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5e0(0x8)
-	Class CookerIgnitionComponent*                               CookerIgnition;                                    // 0x5e8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x5e0(0x8)
+	Class CookerIgnitionComponent*                               None;                                              // 0x5e8(0x8)
 };
 
 

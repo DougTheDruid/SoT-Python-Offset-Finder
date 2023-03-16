@@ -11,14 +11,14 @@ class BP_Prompt_EmissaryEncounteredKraken_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x93_E8FUF[0x93];                               // 0x120(0x93)
+	char                                                         pad0x132_3GM0P[0x132];                             // 0x120(0x132)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryEncounteredKraken;                  // 0x120(0x48)
 	struct FName                                                 CompanyName;                                       // 0x168(0x8)
 	bool                                                         SurfacedThisSession;                               // 0x170(0x1)
-	char                                                         pad0x3_7DE94[0x3];                                 // 0x171(0x3)
+	char                                                         pad0x3_KVN17[0x3];                                 // 0x171(0x3)
 	struct FName                                                 ExpectedCompanyName;                               // 0x174(0x8)
-	char                                                         pad0x4_8AP40[0x4];                                 // 0x17c(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x180(0x10)
+	char                                                         pad0x4_3Y0AS[0x4];                                 // 0x17c(0x4)
+	TArray<struct Prompts>                                       Prompts;                                           // 0x180(0x10)
 	class                                                        PromptAccessKey;                                   // 0x190(0x8)
 	int                                                          PromptIndex;                                       // 0x198(0x4)
 	int                                                          NumberOfPrompts;                                   // 0x19c(0x4)

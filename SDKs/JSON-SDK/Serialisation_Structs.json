@@ -28,7 +28,7 @@
       },
       {
         "Name": "StructArray",
-        "Type": "TArray<Struct SerialisedNestedStruct>",
+        "Type": "TArray<struct StructArray>",
         "Size": "0x10",
         "Offset": "0x28"
       },

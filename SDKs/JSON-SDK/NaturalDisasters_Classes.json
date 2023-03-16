@@ -18,7 +18,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_BZAQU[0x4]",
+        "Name": "pad0x4_IE62V[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
@@ -86,7 +86,7 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x4_BLU8Z[0x4]",
+        "Name": "pad0x4_M33VJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3ec"
@@ -116,7 +116,7 @@
         "Offset": "0x3fc"
       },
       {
-        "Name": "pad0x37_W4IS5[0x37]",
+        "Name": "pad0x37_0KGGJ[0x37]",
         "Type": "char",
         "Size": "0x37",
         "Offset": "0x3fd"
@@ -128,7 +128,7 @@
         "Offset": "0x434"
       },
       {
-        "Name": "pad0x20_ALHID[0x20]",
+        "Name": "pad0x20_O3XSX[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x436"
@@ -148,7 +148,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x78_9QUGS[0x78]",
+        "Name": "pad0x78_ZIZSS[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x3ce"
@@ -168,7 +168,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_YDE5V[0x7]",
+        "Name": "pad0x7_KCNK4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -198,7 +198,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x4_IFMAZ[0x4]",
+        "Name": "pad0x4_7YV1F[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc4"
@@ -240,7 +240,7 @@
         "Offset": "0x160"
       },
       {
-        "Name": "pad0x4_UC8QD[0x4]",
+        "Name": "pad0x4_ZF6XB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x164"
@@ -295,13 +295,13 @@
       },
       {
         "Name": "Projectiles",
-        "Type": "TArray<Struct WeightedVolcanoProjectile>",
+        "Type": "TArray<struct Projectiles>",
         "Size": "0x10",
         "Offset": "0x2b0"
       },
       {
         "Name": "ForceFeedbackIgnitionEffect",
-        "Type": "TArray<Struct LandmarkReactionEventPlayForceFeedbackEntry>",
+        "Type": "TArray<struct ForceFeedbackIgnitionEffect>",
         "Size": "0x10",
         "Offset": "0x2c0"
       },
@@ -348,7 +348,7 @@
         "Offset": "0x3b8"
       },
       {
-        "Name": "pad0x4_BUAR0[0x4]",
+        "Name": "pad0x4_DQV7Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3bc"
@@ -384,14 +384,14 @@
         "Offset": "0x428"
       },
       {
-        "Name": "pad0x4_PGBNE[0x4]",
+        "Name": "pad0x4_J0DDZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x42c"
       },
       {
         "Name": "LocalEmbers",
-        "Type": "TArray<Struct VolcanoSetupDataEmbersEntry>",
+        "Type": "TArray<struct LocalEmbers>",
         "Size": "0x10",
         "Offset": "0x430"
       },
@@ -453,7 +453,7 @@
       },
       {
         "Name": "Projectiles",
-        "Type": "TArray<Struct WeightedAshenLordVolcanoProjectile>",
+        "Type": "TArray<struct Projectiles>",
         "Size": "0x10",
         "Offset": "0x138"
       },
@@ -502,7 +502,7 @@
         "Offset": "0x3cc"
       },
       {
-        "Name": "pad0x3_UB4LE[0x3]",
+        "Name": "pad0x3_O58WN[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3cd"
@@ -514,7 +514,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x18_U77I0[0x18]",
+        "Name": "pad0x18_YVALK[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3d6"
@@ -528,7 +528,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x10_8D488[0x10]",
+        "Name": "pad0x10_FRVUV[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -553,12 +553,12 @@
       },
       {
         "Name": "StoryCustomisationData",
-        "Type": "TArray<Struct GeyserStoryCustomisationData>",
+        "Type": "TArray<struct StoryCustomisationData>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x18_D0UCI[0x18]",
+        "Name": "pad0x18_WQ5MO[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x400"
@@ -570,7 +570,7 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x7_0BBQB[0x7]",
+        "Name": "pad0x7_5CYU4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x419"
@@ -630,7 +630,7 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x7_86UFC[0x7]",
+        "Name": "pad0x7_BQMMQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x461"
@@ -648,7 +648,7 @@
         "Offset": "0x470"
       },
       {
-        "Name": "pad0x50_9V7QT[0x50]",
+        "Name": "pad0x50_4P600[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x476"
@@ -688,7 +688,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_X4BKA[0x7]",
+        "Name": "pad0x7_4SW3M[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -730,7 +730,7 @@
         "Offset": "0xf4"
       },
       {
-        "Name": "pad0x4_PFKGB[0x4]",
+        "Name": "pad0x4_K1UCZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x104"
@@ -772,7 +772,7 @@
         "Offset": "0x24c"
       },
       {
-        "Name": "pad0x4_QSK67[0x4]",
+        "Name": "pad0x4_9IBOO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x25c"
@@ -858,7 +858,7 @@
     "ClassSize": "0x1f0",
     "Attributes": [
       {
-        "Name": "pad0x10_UHCCP[0x10]",
+        "Name": "pad0x10_RSESZ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -883,7 +883,7 @@
       },
       {
         "Name": "StoryCustomisationData",
-        "Type": "TArray<Struct EarthquakeStoryCustomisationData>",
+        "Type": "TArray<struct StoryCustomisationData>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
@@ -906,7 +906,7 @@
         "Offset": "0x410"
       },
       {
-        "Name": "pad0x4_2W3F4[0x4]",
+        "Name": "pad0x4_W65AM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x414"
@@ -966,7 +966,7 @@
         "Offset": "0x450"
       },
       {
-        "Name": "pad0x4_1WVAY[0x4]",
+        "Name": "pad0x4_NH7HH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x454"
@@ -990,7 +990,7 @@
         "Offset": "0x468"
       },
       {
-        "Name": "pad0x151_IURFU[0x151]",
+        "Name": "pad0x151_0P775[0x151]",
         "Type": "char",
         "Size": "0x151",
         "Offset": "0x467"
@@ -1010,7 +1010,7 @@
         "Offset": "0x4b8"
       },
       {
-        "Name": "pad0x7_JLIDY[0x7]",
+        "Name": "pad0x7_5C2EG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x4b9"
@@ -1036,7 +1036,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_OUIGA[0x7]",
+        "Name": "pad0x7_5OJYH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -1078,7 +1078,7 @@
         "Offset": "0xc2"
       },
       {
-        "Name": "pad0x1_EQSRY[0x1]",
+        "Name": "pad0x1_CSL7M[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0xc3"
@@ -1096,7 +1096,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_E0NR1[0x4]",
+        "Name": "pad0x4_RKRCG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -1133,7 +1133,7 @@
       },
       {
         "Name": "SpawnAngleRelativeToPlayerDirection",
-        "Type": "TArray<Struct GeyserSpawnAngleOption>",
+        "Type": "TArray<struct SpawnAngleRelativeToPlayerDirection>",
         "Size": "0x10",
         "Offset": "0x178"
       },
@@ -1190,7 +1190,7 @@
       },
       {
         "Name": "StoryCustomisationData",
-        "Type": "TArray<Struct GeyserManagerStoryCustomisationData>",
+        "Type": "TArray<struct StoryCustomisationData>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
@@ -1207,7 +1207,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x51_VVSF8[0x51]",
+        "Name": "pad0x51_Y3O6Q[0x51]",
         "Type": "char",
         "Size": "0x51",
         "Offset": "0x3f7"
@@ -1234,7 +1234,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_UX8O9[0x7]",
+        "Name": "pad0x7_YDCE6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -1270,7 +1270,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x3_QV0C1[0x3]",
+        "Name": "pad0x3_VF8UA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xe1"
@@ -1345,13 +1345,13 @@
         "Offset": "0x44a"
       },
       {
-        "Name": "pad0x5_MIBGG[0x5]",
+        "Name": "pad0x5_MYEF1[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x44b"
       },
       {
-        "Name": "pad0x2a_48P60[0x2a]",
+        "Name": "pad0x2a_GTGAG[0x2a]",
         "Type": "char",
         "Size": "0x2a",
         "Offset": "0x44e"
@@ -1385,7 +1385,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x70_BDVC8[0x70]",
+        "Name": "pad0x70_J7XY1[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x4e"
@@ -1423,7 +1423,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_ZM9L7[0x4]",
+        "Name": "pad0x4_A1RUD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -1485,7 +1485,7 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "pad0x10_WP1ZM[0x10]",
+        "Name": "pad0x10_PHNE4[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x468"
@@ -1521,7 +1521,7 @@
         "Offset": "0x490"
       },
       {
-        "Name": "pad0xf0_JQAWV[0xf0]",
+        "Name": "pad0xf0_2ZHOI[0xf0]",
         "Type": "char",
         "Size": "0xf0",
         "Offset": "0x49e"
@@ -1535,7 +1535,7 @@
     "ClassSize": "0x228",
     "Attributes": [
       {
-        "Name": "pad0x18_DKEPS[0x18]",
+        "Name": "pad0x18_Q6PZ6[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3c8"
@@ -1554,7 +1554,7 @@
       },
       {
         "Name": "StoryCustomisationData",
-        "Type": "TArray<Struct VolcanoStoryCustomisationData>",
+        "Type": "TArray<struct StoryCustomisationData>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
@@ -1571,7 +1571,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x7_HBEWN[0x7]",
+        "Name": "pad0x7_N3K1T[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x409"
@@ -1655,7 +1655,7 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x4_LAIEB[0x4]",
+        "Name": "pad0x4_9J8GA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x46c"
@@ -1715,7 +1715,7 @@
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x148_YD4RY[0x148]",
+        "Name": "pad0x148_E0EJF[0x148]",
         "Type": "char",
         "Size": "0x148",
         "Offset": "0x4b6"

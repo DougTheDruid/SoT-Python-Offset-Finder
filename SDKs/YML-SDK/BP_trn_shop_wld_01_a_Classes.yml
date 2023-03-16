@@ -2,371 +2,371 @@
 # https://github.com/DougTheDruid
 BP_trn_shop_wld_01_a_C:
   Attributes:
-  - Name: WorldLocationPopUp
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class WorldLocationPopUpComponent*
-  - Name: PetHangoutSpot
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class PetHangoutSpotComponent*
-  - Name: wld_trn_shop_dressing_01_b
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_trn_shop_dressing_01_a
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh29
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh24
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_trn_shop_hanging_sign_01_a
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: SpotLight3
+  - Name: None
     Offset: '0x400'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: SpotLight2
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: BP_MusicBox
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: BP_IslandEquipmentChest
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: StaticMesh28
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh27
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh26
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh25
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: PointLight1
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ChildActor2
+  - Name: None
     Offset: '0x448'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ChildActor1
+  - Name: None
     Offset: '0x450'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: SpotLight1
+  - Name: None
     Offset: '0x458'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: SpotLight
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: PointLight9
+  - Name: None
     Offset: '0x468'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight8
+  - Name: None
     Offset: '0x470'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight7
+  - Name: None
     Offset: '0x478'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight6
+  - Name: None
     Offset: '0x480'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight5
+  - Name: None
     Offset: '0x488'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight4
+  - Name: None
     Offset: '0x490'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ParticleSystem20
+  - Name: None
     Offset: '0x498'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem19
+  - Name: None
     Offset: '0x4a0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem18
+  - Name: None
     Offset: '0x4a8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem17
+  - Name: None
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem16
+  - Name: None
     Offset: '0x4b8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem15
+  - Name: None
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem14
+  - Name: None
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem13
+  - Name: None
     Offset: '0x4d0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem12
+  - Name: None
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem11
+  - Name: None
     Offset: '0x4e0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem10
+  - Name: None
     Offset: '0x4e8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem9
+  - Name: None
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem8
+  - Name: None
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem7
+  - Name: None
     Offset: '0x500'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: PointLight3
+  - Name: None
     Offset: '0x508'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ParticleSystem6
+  - Name: None
     Offset: '0x510'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem5
+  - Name: None
     Offset: '0x518'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem4
+  - Name: None
     Offset: '0x520'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem3
+  - Name: None
     Offset: '0x528'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem2
+  - Name: None
     Offset: '0x530'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: PointLight2
+  - Name: None
     Offset: '0x538'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ParticleSystem1
+  - Name: None
     Offset: '0x540'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem
+  - Name: None
     Offset: '0x548'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: PointLight
+  - Name: None
     Offset: '0x550'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ChildActor
+  - Name: None
     Offset: '0x558'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: StaticMesh23
+  - Name: None
     Offset: '0x560'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh22
+  - Name: None
     Offset: '0x568'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh31
+  - Name: None
     Offset: '0x570'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: AudioSpace
+  - Name: None
     Offset: '0x578'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: bld_shop_drapes_03_a
+  - Name: None
     Offset: '0x580'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_oar_01_a
+  - Name: None
     Offset: '0x588'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh19
+  - Name: None
     Offset: '0x590'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh18
+  - Name: None
     Offset: '0x598'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh14
+  - Name: None
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh13
+  - Name: None
     Offset: '0x5a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh12
+  - Name: None
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh11
+  - Name: None
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh10
+  - Name: None
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh9
+  - Name: None
     Offset: '0x5c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh8
+  - Name: None
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh7
+  - Name: None
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh6
+  - Name: None
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh5
+  - Name: None
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh4
+  - Name: None
     Offset: '0x5f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_c
+  - Name: None
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_a
+  - Name: None
     Offset: '0x600'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh3
+  - Name: None
     Offset: '0x608'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_skull_candle_01_a
+  - Name: None
     Offset: '0x610'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_d
+  - Name: None
     Offset: '0x618'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_candle_01_e
+  - Name: None
     Offset: '0x620'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_kra_skin_rug_01_a
+  - Name: None
     Offset: '0x628'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_kra_wheel_01_a
+  - Name: None
     Offset: '0x630'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_kitchen_shelf_02_a
+  - Name: None
     Offset: '0x638'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh1
+  - Name: None
     Offset: '0x640'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: gmp_bar_hide_01_a1
+  - Name: None
     Offset: '0x648'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_shop_table_01_a
+  - Name: None
     Offset: '0x650'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_shop_drapes_01_a
+  - Name: None
     Offset: '0x658'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x660'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cmn_skeleton_head_boar_01_a
+  - Name: None
     Offset: '0x668'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_trn_shop_wilds_details_01_a
+  - Name: None
     Offset: '0x670'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_trn_roof_beam_01_a
+  - Name: None
     Offset: '0x678'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_trn_shop_window_01_b1
+  - Name: None
     Offset: '0x680'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_trn_shop_window_01_b
+  - Name: None
     Offset: '0x688'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_trn_shop_door_01_a
+  - Name: None
     Offset: '0x690'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_trn_shop_01_a
+  - Name: None
     Offset: '0x698'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class SceneComponent*

@@ -7,36 +7,10 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
-struct ShipDamageParams
-{
-public:
-	TArray<Struct ShipPartLevelsOfDamage>                        DamageParams;                                      // 0x0(0x10)
-};
-
-
-// Size 0x40
-struct ShipPartLevelsOfDamage
-{
-public:
-	TArray<Struct DistanceAndLevelOfDamage>                      DamagePerDistance;                                 // 0x20(0x10)
-	Struct FeatureFlag                                           FeatureName;                                       // 0x30(0xc)
-};
-
-
-// Size 0x8
-struct DistanceAndLevelOfDamage
-{
-public:
-	float                                                        DistanceLimit;                                     // 0x0(0x4)
-	int                                                          LevelOfDamage;                                     // 0x4(0x4)
-};
-
-
-// Size 0x10
 struct HullDamagePersistenceModel
 {
 public:
-	TArray<Struct HullDamageZoneInfo>                            DamageZones;                                       // 0x0(0x10)
+	TArray<struct DamageZones>                                   DamageZones;                                       // 0x0(0x10)
 };
 
 
@@ -48,8 +22,8 @@ public:
 	int                                                          DamageLevel;                                       // 0x10(0x4)
 	int                                                          RepairedDamageLevel;                               // 0x14(0x4)
 	byte                                                         RepairableState;                                   // 0x18(0x1)
-	char                                                         pad0x7_QCLX6[0x7];                                 // 0x19(0x7)
-	TArray<Struct HullDamageHit>                                 ExternalHitList;                                   // 0x20(0x10)
+	char                                                         pad0x7_A6IPM[0x7];                                 // 0x19(0x7)
+	TArray<struct ExternalHitList>                               ExternalHitList;                                   // 0x20(0x10)
 };
 
 
@@ -63,6 +37,32 @@ public:
 };
 
 
+// Size 0x10
+struct ShipDamageParams
+{
+public:
+	TArray<struct DamageParams>                                  DamageParams;                                      // 0x0(0x10)
+};
+
+
+// Size 0x40
+struct ShipPartLevelsOfDamage
+{
+public:
+	TArray<struct DamagePerDistance>                             DamagePerDistance;                                 // 0x20(0x10)
+	Struct FeatureFlag                                           FeatureName;                                       // 0x30(0xc)
+};
+
+
+// Size 0x8
+struct DistanceAndLevelOfDamage
+{
+public:
+	float                                                        DistanceLimit;                                     // 0x0(0x4)
+	int                                                          LevelOfDamage;                                     // 0x4(0x4)
+};
+
+
 // Size 0x70
 struct EventShipDamageApplied
 {
@@ -70,7 +70,7 @@ public:
 	Class Actor*                                                 Ship;                                              // 0x0(0x8)
 	struct FName                                                 DamagedShipPartIdentifier;                         // 0x8(0x8)
 	int                                                          NewDamageLevel;                                    // 0x10(0x4)
-	char                                                         pad0x4_JOXKS[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_91QAX[0x4];                                 // 0x14(0x4)
 	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x18(0x58)
 };
 

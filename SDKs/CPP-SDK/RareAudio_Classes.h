@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class WwiseEmitterComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_12NRQ[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_K2TBS[0x8];                                 // 0x2e0(0x8)
 	Struct WwiseEmitter                                          Emitter;                                           // 0x2e8(0x20)
 	Class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x308(0x8)
 };
@@ -29,12 +29,12 @@ class AnimNotify_WwiseSound: public AnimNotify
 public:
 	Class WwiseEvent*                                            WwiseEvent;                                        // 0x38(0x8)
 	bool                                                         OwnedByWorld;                                      // 0x40(0x1)
-	char                                                         pad0x3_BJTZF[0x3];                                 // 0x41(0x3)
+	char                                                         pad0x3_W2MM5[0x3];                                 // 0x41(0x3)
 	Struct Vector                                                OwnedByWorldEmitterOffset;                         // 0x44(0xc)
 	byte                                                         PerspectiveRestriction;                            // 0x50(0x1)
-	char                                                         pad0x7_DQ9JO[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_7E4JN[0x7];                                 // 0x51(0x7)
 	Class WwiseObjectPoolWrapper*                                OwnedByWorldWisePoolToUse;                         // 0x58(0x8)
-	char                                                         pad0x30_AC6WW[0x30];                               // 0x5e(0x30)
+	char                                                         pad0x30_BP8V8[0x30];                               // 0x5e(0x30)
 };
 
 
@@ -43,7 +43,7 @@ class AnimNotify_WwiseSoundMeshSwitch: public AnimNotify_WwiseSound
 {
 public:
 	struct FName                                                 SkeletalMeshSwitchGroup;                           // 0x80(0x8)
-	TArray<Struct AnimNotify_SoundSwitch>                        MeshOverrides;                                     // 0x88(0x10)
+	TArray<struct MeshOverrides>                                 MeshOverrides;                                     // 0x88(0x10)
 };
 
 
@@ -53,7 +53,7 @@ class AnimNotifyState_WwiseSound: public AnimNotifyState
 public:
 	Class WwiseEvent*                                            WwiseEvent;                                        // 0x28(0x8)
 	Class WwiseEvent*                                            WwiseEventEnd;                                     // 0x30(0x8)
-	char                                                         pad0x60_F8PLH[0x60];                               // 0x36(0x60)
+	char                                                         pad0x60_EOOB4[0x60];                               // 0x36(0x60)
 };
 
 
@@ -69,7 +69,7 @@ public:
 class AudioEventToComponentMapComponent: public ActorComponent
 {
 public:
-	TArray<Struct EventToComponentMapping>                       LocalComponentMappings;                            // 0xc8(0x10)
+	TArray<struct LocalComponentMappings>                        LocalComponentMappings;                            // 0xc8(0x10)
 };
 
 
@@ -95,9 +95,9 @@ public:
 	int                                                          MaxResources;                                      // 0x30(0x4)
 	bool                                                         DisableOcclusion;                                  // 0x34(0x1)
 	bool                                                         DisableReverb;                                     // 0x35(0x1)
-	char                                                         pad0x2_YDLNJ[0x2];                                 // 0x36(0x2)
+	char                                                         pad0x2_FD1HR[0x2];                                 // 0x36(0x2)
 	Struct WwiseNativeEmitterPoolDensityParams                   PoolDensityParams;                                 // 0x38(0x28)
-	char                                                         pad0x68_1NO4A[0x68];                               // 0x5e(0x68)
+	char                                                         pad0x68_XKICI[0x68];                               // 0x5e(0x68)
 };
 
 
@@ -129,7 +129,7 @@ public:
 class StaticMeshAudioDataAsset: public DataAsset
 {
 public:
-	TArray<Struct StaticMeshAudioAssociation>                    MeshToAudioAssociations;                           // 0x28(0x10)
+	TArray<struct MeshToAudioAssociations>                       MeshToAudioAssociations;                           // 0x28(0x10)
 };
 
 
@@ -137,7 +137,7 @@ public:
 class StaticMeshAudioEmittersComponent: public SceneComponent
 {
 public:
-	TArray<Struct StaticMeshComponentAudioAssociation>           InstanceAssociations;                              // 0x2e0(0x10)
+	TArray<struct InstanceAssociations>                          InstanceAssociations;                              // 0x2e0(0x10)
 };
 
 
@@ -147,7 +147,7 @@ class TritonAcousticMap: public Object
 public:
 	Struct FString                                               TritonMapFilename;                                 // 0x28(0x10)
 	float                                                        CustomCacheRatio;                                  // 0x38(0x4)
-	char                                                         pad0x34_GB8ZH[0x34];                               // 0x3a(0x34)
+	char                                                         pad0x34_H6PM9[0x34];                               // 0x3a(0x34)
 };
 
 
@@ -157,7 +157,7 @@ class TritonComponent: public SceneComponent
 public:
 	Class TritonAcousticMap*                                     TritonMapAsset;                                    // 0x2e0(0x8)
 	float                                                        TritonEffectRadius;                                // 0x2e8(0x4)
-	char                                                         pad0xc_77SDV[0xc];                                 // 0x2ea(0xc)
+	char                                                         pad0xc_XP2WN[0xc];                                 // 0x2ea(0xc)
 };
 
 
@@ -165,11 +165,11 @@ public:
 class TritonService: public Object
 {
 public:
-	char                                                         pad0x10_ETJV5[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_1KBRW[0x10];                               // 0x28(0x10)
 	TArray<class TritonComponent*>                               RegisteredTritonComponents;                        // 0x38(0x10)
-	char                                                         pad0xa8_7QEMB[0xa8];                               // 0x48(0xa8)
+	char                                                         pad0xa8_MSFQW[0xa8];                               // 0x48(0xa8)
 	Class TritonComponent*                                       CachedListenerInfo;                                // 0xf0(0x8)
-	char                                                         pad0x68_4X3WE[0x68];                               // 0xf6(0x68)
+	char                                                         pad0x68_G27HF[0x68];                               // 0xf6(0x68)
 };
 
 

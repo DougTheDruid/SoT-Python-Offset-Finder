@@ -1,55 +1,10 @@
 {
-  "ShipDamageParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DamageParams",
-        "Type": "TArray<Struct ShipPartLevelsOfDamage>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ShipPartLevelsOfDamage": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "DamagePerDistance",
-        "Type": "TArray<Struct DistanceAndLevelOfDamage>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "FeatureName",
-        "Type": "Struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "DistanceAndLevelOfDamage": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DistanceLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LevelOfDamage",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "HullDamagePersistenceModel": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "DamageZones",
-        "Type": "TArray<Struct HullDamageZoneInfo>",
+        "Type": "TArray<struct DamageZones>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -83,14 +38,14 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_QCLX6[0x7]",
+        "Name": "pad0x7_A6IPM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
       },
       {
         "Name": "ExternalHitList",
-        "Type": "TArray<Struct HullDamageHit>",
+        "Type": "TArray<struct ExternalHitList>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -119,6 +74,51 @@
       }
     ]
   },
+  "ShipDamageParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageParams",
+        "Type": "TArray<struct DamageParams>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipPartLevelsOfDamage": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "DamagePerDistance",
+        "Type": "TArray<struct DamagePerDistance>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "FeatureName",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "DistanceAndLevelOfDamage": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DistanceLimit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LevelOfDamage",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "EventShipDamageApplied": {
     "ClassSize": "0x70",
     "Attributes": [
@@ -141,7 +141,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_JOXKS[0x4]",
+        "Name": "pad0x4_91QAX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

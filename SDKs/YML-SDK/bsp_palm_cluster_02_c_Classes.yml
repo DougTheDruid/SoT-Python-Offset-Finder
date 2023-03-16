@@ -2,47 +2,47 @@
 # https://github.com/DougTheDruid
 bsp_palm_cluster_02_c_C:
   Attributes:
-  - Name: wsp_rock_xtra_small__b
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_xtra_small__e
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_xtra_small__d
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_tree_palm_01_b
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: NonVagueNonUniqueLandmark
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class NonVagueNonUniqueLandmarkComponent*
-  - Name: wsp_tree_palm_01_a
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh1
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_bush_03_a
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_bush_06_a
+  - Name: None
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Scene
+  - Name: None
     Offset: '0x450'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x50'
   FullSize: '0x458'
   InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+  Super: None

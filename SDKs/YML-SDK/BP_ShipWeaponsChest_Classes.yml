@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_ShipWeaponsChest_C:
   Attributes:
-  - Name: CrewLockableComponent
+  - Name: None
     Offset: '0x590'
     Size: '0x8'
     Type: Class CrewLockableComponent*
-  - Name: LockMesh
+  - Name: None
     Offset: '0x598'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+  - Name: None
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*

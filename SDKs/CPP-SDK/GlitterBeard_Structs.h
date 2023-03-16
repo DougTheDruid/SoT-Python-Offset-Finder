@@ -11,7 +11,7 @@ struct FinaleReplicationState
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x7_DJX1P[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_20ZK3[0x7];                                 // 0x1(0x7)
 	Class Object*                                                TargetEnsemble;                                    // 0x8(0x8)
 };
 

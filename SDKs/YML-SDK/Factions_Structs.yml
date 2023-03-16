@@ -81,7 +81,7 @@ FactionShipSunkNetworkEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1G3XA[0x3]
+  - Name: pad0x3_SIGVC[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -116,7 +116,7 @@ FactionShipSunkUIEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5L1F1[0x7]
+  - Name: pad0x7_SBMPY[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -171,7 +171,7 @@ LootLevelReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_7GOR0[0x3]
+  - Name: pad0x3_LDX4O[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -179,14 +179,14 @@ LootLevelReward:
     Offset: '0x4'
     Size: '0x8'
     Type: Struct RewardId
-  - Name: pad0x4_RMTCO[0x4]
+  - Name: pad0x4_IZ07Z[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: LootLevelPopUpMessageDesc
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct FactionServicePopUpData>
+    Type: TArray<struct LootLevelPopUpMessageDesc>
   - Name: PopUpIndex
     Offset: '0x20'
     Size: '0x4'
@@ -201,7 +201,7 @@ StreakCompanyMaterials:
   - Name: Materials
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct StreakMaterial>
+    Type: TArray<struct Materials>
   ClassSize: '0x18'
 StreakDynamicMaterials:
   Attributes:

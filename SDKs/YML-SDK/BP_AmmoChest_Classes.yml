@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_AmmoChest_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x470'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: Hits
+  - Name: None
     Offset: '0x478'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: Interactable
+  - Name: None
     Offset: '0x480'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: Emitter
+  - Name: None
     Offset: '0x488'
     Size: '0x20'
     Type: Struct WwiseEmitter
-  - Name: DynamicMaterial
+  - Name: None
     Offset: '0x4a8'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*

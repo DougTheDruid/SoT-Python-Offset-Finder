@@ -8,7 +8,7 @@
     "Attributes": [
       {
         "Name": "ChecklistActions",
-        "Type": "TArray<Struct ChecklistActionProgressTracker>",
+        "Type": "TArray<struct ChecklistActions>",
         "Size": "0x10",
         "Offset": "0x0"
       }

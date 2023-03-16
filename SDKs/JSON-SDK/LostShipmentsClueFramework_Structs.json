@@ -90,7 +90,7 @@
       },
       {
         "Name": "SupportedDescriptors",
-        "Type": "TArray<Struct WeightedClueDescriptor>",
+        "Type": "TArray<struct SupportedDescriptors>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -194,7 +194,7 @@
     "Attributes": [
       {
         "Name": "History",
-        "Type": "TArray<Struct LootSpawnedAtClueSite>",
+        "Type": "TArray<struct History>",
         "Size": "0x10",
         "Offset": "0x0"
       }

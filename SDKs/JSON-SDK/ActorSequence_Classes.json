@@ -50,7 +50,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x9_CYBO1[0x9]",
+        "Name": "pad0x9_UJVPB[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0xff"

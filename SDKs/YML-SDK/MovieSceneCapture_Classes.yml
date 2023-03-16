@@ -22,7 +22,7 @@ CompositionGraphCaptureSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LEZAP[0x3]
+  - Name: pad0x3_88XX9[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -34,7 +34,7 @@ CompositionGraphCaptureSettings:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_W6L0F[0x7]
+  - Name: pad0x7_ZTIXC[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -58,7 +58,7 @@ ImageCaptureSettings:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_OG91F[0xc]
+  - Name: pad0xc_E9OV9[0xc]
     Offset: '0x32'
     Size: '0xc'
     Type: char
@@ -72,7 +72,7 @@ LevelCapture:
     Offset: '0x1e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_ON5VT[0xb]
+  - Name: pad0xb_PTJSG[0xb]
     Offset: '0x1e1'
     Size: '0xb'
     Type: char
@@ -80,7 +80,7 @@ LevelCapture:
     Offset: '0x1ec'
     Size: '0x10'
     Type: Struct Guid
-  - Name: pad0x24_U7H7G[0x24]
+  - Name: pad0x24_J9T95[0x24]
     Offset: '0x1fa'
     Size: '0x24'
     Type: char
@@ -90,7 +90,7 @@ LevelCapture:
   Super: MovieSceneCapture
 MovieSceneCapture:
   Attributes:
-  - Name: pad0x10_9S8B9[0x10]
+  - Name: pad0x10_N9CHV[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -114,7 +114,7 @@ MovieSceneCapture:
     Offset: '0x99'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_50I0G[0x6]
+  - Name: pad0x6_QLQMZ[0x6]
     Offset: '0x9a'
     Size: '0x6'
     Type: char
@@ -126,7 +126,7 @@ MovieSceneCapture:
     Offset: '0xb0'
     Size: '0x10'
     Type: Struct FString
-  - Name: pad0x140_MOTT1[0x140]
+  - Name: pad0x140_54RQQ[0x140]
     Offset: '0xbe'
     Size: '0x140'
     Type: char
@@ -158,7 +158,7 @@ VideoCaptureSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_3HBX5[0x3]
+  - Name: pad0x3_EYT92[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char

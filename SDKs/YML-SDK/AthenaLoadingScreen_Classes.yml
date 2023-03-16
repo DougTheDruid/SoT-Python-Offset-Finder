@@ -64,7 +64,7 @@ SlateLoadingScreenParams:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_9JPLV[0x7]
+  - Name: pad0x7_8MZ90[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -83,12 +83,12 @@ SlateLoadingScreenParams:
   - Name: CyclingImages
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct SlateLoadingScreenImageParams>
+    Type: TArray<struct CyclingImages>
   - Name: MaxNumImagesPerLoad
     Offset: '0xa0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_17PEA[0x4]
+  - Name: pad0x4_UTRLD[0x4]
     Offset: '0xa4'
     Size: '0x4'
     Type: char
@@ -148,14 +148,14 @@ SlateLoadingScreenParams:
     Offset: '0x1d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FEV3I[0x4]
+  - Name: pad0x4_D1G1R[0x4]
     Offset: '0x1dc'
     Size: '0x4'
     Type: char
   - Name: LoadingScreenTips
     Offset: '0x1e0'
     Size: '0x10'
-    Type: TArray<Struct FText>
+    Type: TArray<struct FText>
   - Name: LoadingScreenTipColour
     Offset: '0x1f0'
     Size: '0x30'
@@ -164,7 +164,7 @@ SlateLoadingScreenParams:
     Offset: '0x220'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_BIPW0[0x9]
+  - Name: pad0x9_71S5W[0x9]
     Offset: '0x21f'
     Size: '0x9'
     Type: char

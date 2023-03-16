@@ -21,7 +21,7 @@
       },
       {
         "Name": "NPCDemands",
-        "Type": "TArray<Struct ActiveCommodityDemands>",
+        "Type": "TArray<struct NPCDemands>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -72,7 +72,7 @@
       },
       {
         "Name": "RedeemItems",
-        "Type": "TArray<Struct CommodityDescWithRedeemId>",
+        "Type": "TArray<struct RedeemItems>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -126,7 +126,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x5_U0ACG[0x5]",
+        "Name": "pad0x5_9KM4X[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x3"
@@ -149,7 +149,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_0T3LA[0x7]",
+        "Name": "pad0x7_HRBUY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"

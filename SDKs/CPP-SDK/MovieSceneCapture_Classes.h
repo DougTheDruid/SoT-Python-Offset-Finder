@@ -24,16 +24,16 @@ public:
 class MovieSceneCapture: public Object
 {
 public:
-	char                                                         pad0x10_9S8B9[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_N9CHV[0x10];                               // 0x28(0x10)
 	Struct CaptureProtocolID                                     CaptureType;                                       // 0x38(0x8)
 	Class MovieSceneCaptureProtocolSettings*                     ProtocolSettings;                                  // 0x40(0x8)
 	Struct MovieSceneCaptureSettings                             Settings;                                          // 0x48(0x50)
 	bool                                                         bUseSeparateProcess;                               // 0x98(0x1)
 	bool                                                         bCloseEditorWhenCaptureStarts;                     // 0x99(0x1)
-	char                                                         pad0x6_50I0G[0x6];                                 // 0x9a(0x6)
+	char                                                         pad0x6_QLQMZ[0x6];                                 // 0x9a(0x6)
 	Struct FString                                               AdditionalCommandLineArguments;                    // 0xa0(0x10)
 	Struct FString                                               InheritedCommandLineArguments;                     // 0xb0(0x10)
-	char                                                         pad0x140_MOTT1[0x140];                             // 0xbe(0x140)
+	char                                                         pad0x140_54RQQ[0x140];                             // 0xbe(0x140)
 };
 
 
@@ -49,9 +49,9 @@ class LevelCapture: public MovieSceneCapture
 {
 public:
 	bool                                                         bAutoStartCapture;                                 // 0x1e0(0x1)
-	char                                                         pad0xb_ON5VT[0xb];                                 // 0x1e1(0xb)
+	char                                                         pad0xb_PTJSG[0xb];                                 // 0x1e1(0xb)
 	Struct Guid                                                  PrerequisiteActorId;                               // 0x1ec(0x10)
-	char                                                         pad0x24_U7H7G[0x24];                               // 0x1fa(0x24)
+	char                                                         pad0x24_J9T95[0x24];                               // 0x1fa(0x24)
 };
 
 
@@ -81,7 +81,7 @@ class ImageCaptureSettings: public FrameGrabberProtocolSettings
 {
 public:
 	int                                                          CompressionQuality;                                // 0x30(0x4)
-	char                                                         pad0xc_OG91F[0xc];                                 // 0x32(0xc)
+	char                                                         pad0xc_E9OV9[0xc];                                 // 0x32(0xc)
 };
 
 
@@ -91,10 +91,10 @@ class CompositionGraphCaptureSettings: public MovieSceneCaptureProtocolSettings
 public:
 	Struct CompositionGraphCapturePasses                         IncludeRenderPasses;                               // 0x28(0x10)
 	bool                                                         bCaptureFramesInHDR;                               // 0x38(0x1)
-	char                                                         pad0x3_LEZAP[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_88XX9[0x3];                                 // 0x39(0x3)
 	int                                                          HDRCompressionQuality;                             // 0x3c(0x4)
 	byte                                                         CaptureGamut;                                      // 0x40(0x1)
-	char                                                         pad0x7_W6L0F[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_ZTIXC[0x7];                                 // 0x41(0x7)
 	Struct StringAssetReference                                  PostProcessingMaterial;                            // 0x48(0x10)
 };
 
@@ -104,7 +104,7 @@ class VideoCaptureSettings: public FrameGrabberProtocolSettings
 {
 public:
 	bool                                                         bUseCompression;                                   // 0x30(0x1)
-	char                                                         pad0x3_3HBX5[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_EYT92[0x3];                                 // 0x31(0x3)
 	float                                                        CompressionQuality;                                // 0x34(0x4)
 	Struct FString                                               VideoCodec;                                        // 0x38(0x10)
 };

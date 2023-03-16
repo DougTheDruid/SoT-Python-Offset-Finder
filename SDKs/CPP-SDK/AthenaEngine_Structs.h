@@ -62,7 +62,7 @@ struct StringAssetClassPair
 {
 public:
 	Struct FString                                               String;                                            // 0x0(0x10)
-	TArray<Struct StringAssetClassPairFeatureOverride>           FeatureOverrides;                                  // 0x30(0x10)
+	TArray<struct FeatureOverrides>                              FeatureOverrides;                                  // 0x30(0x10)
 };
 
 
@@ -107,7 +107,7 @@ struct EventTriggerForceFeedback
 public:
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
 	bool                                                         Looping;                                           // 0x8(0x1)
-	char                                                         pad0x3_L785N[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_YDEBL[0x3];                                 // 0x9(0x3)
 	struct FName                                                 Tag;                                               // 0xc(0x8)
 };
 
@@ -126,11 +126,11 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x8
 struct InlineUserDefinedStructDetails
 {
 public:
-	Struct UserDefinedStructWithSerialisableValue                StructWithDefaults;                                // 0x0(0x20)
+	Class ScriptStruct*                                          Struct;                                            // 0x0(0x8)
 };
 
 

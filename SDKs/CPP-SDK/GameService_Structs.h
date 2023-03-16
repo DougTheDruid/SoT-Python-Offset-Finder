@@ -17,7 +17,7 @@ public:
 struct GameServiceCoordinator
 {
 public:
-	TArray<Struct GameServiceCoordinatorUnit>                    Services;                                          // 0x0(0x10)
+	TArray<struct Services>                                      Services;                                          // 0x0(0x10)
 };
 
 

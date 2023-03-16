@@ -20,19 +20,19 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x8_011K9[0x8]",
+        "Name": "pad0x8_9MH7S[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Contracts",
-        "Type": "TArray<Struct MerchantContract>",
+        "Type": "TArray<struct Contracts>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
-        "Name": "pad0xa8_BXSPN[0xa8]",
+        "Name": "pad0xa8_O86PX[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x3e"
@@ -53,14 +53,14 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_B9730[0x8]",
+        "Name": "pad0x8_LE5IU[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "Contracts",
-        "Type": "TArray<Struct PlayerMerchantContract>",
+        "Type": "TArray<struct Contracts>",
         "Size": "0x10",
         "Offset": "0xd0"
       }

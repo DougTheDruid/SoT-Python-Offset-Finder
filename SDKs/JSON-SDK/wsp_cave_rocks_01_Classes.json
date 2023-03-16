@@ -1,54 +1,60 @@
 {
   "wsp_cave_rocks_01_C": {
-    "Super": "BP_Placement_HeightDrop_C",
+    "Super": "",
     "FullSize": "0x448",
-    "InheritedSize": "0x408",
-    "ClassSize": "0x40",
+    "InheritedSize": "-0x7ccccccd",
+    "ClassSize": "0x7cccd115",
     "Attributes": [
       {
-        "Name": "StaticMeshComponent06",
+        "Name": "pad0x7cccd0d5_F425D[0x7cccd0d5]",
+        "Type": "char",
+        "Size": "0x7cccd0d5",
+        "Offset": "-0x7ccccccd"
+      },
+      {
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "StaticMeshComponent05",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "StaticMeshComponent04",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "StaticMeshComponent03",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "StaticMeshComponent02",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "StaticMeshComponent01",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "StaticMeshComponent0",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "SharedRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x440"

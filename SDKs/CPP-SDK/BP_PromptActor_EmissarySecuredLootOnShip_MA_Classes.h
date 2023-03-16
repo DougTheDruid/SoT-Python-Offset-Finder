@@ -14,7 +14,7 @@ public:
 	BlueprintGeneratedClass BP_Prompt_EmissarySecuredLootOnShip_C* PromptCoordinator;                                 // 0x408(0x8)
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x420(0x10)
+	TArray<struct Prompts>                                       Prompts;                                           // 0x420(0x10)
 };
 
 

@@ -11,10 +11,10 @@ class ShantyPuzzleCompletionComponent: public ActorComponent
 {
 public:
 	float                                                        CompletionTime;                                    // 0xc8(0x4)
-	char                                                         pad0x4_ZBCGM[0x4];                                 // 0xcc(0x4)
-	TArray<Struct LandmarkReactionKeyFrame>                      StartCompletionReaction;                           // 0xd0(0x10)
-	TArray<Struct LandmarkReactionKeyFrame>                      AbortCompletionReaction;                           // 0xe0(0x10)
-	TArray<Struct LandmarkReactionKeyFrame>                      PuzzleCompletedReaction;                           // 0xf0(0x10)
+	char                                                         pad0x4_ZG0QJ[0x4];                                 // 0xcc(0x4)
+	TArray<struct StartCompletionReaction>                       StartCompletionReaction;                           // 0xd0(0x10)
+	TArray<struct AbortCompletionReaction>                       AbortCompletionReaction;                           // 0xe0(0x10)
+	TArray<struct PuzzleCompletedReaction>                       PuzzleCompletedReaction;                           // 0xf0(0x10)
 	Class LandmarkReactionPlayer*                                ReactionPlayer;                                    // 0x100(0x8)
 };
 
@@ -30,16 +30,16 @@ public:
 class ShantyPuzzleComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_L1KI7[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_UVUOF[0x8];                                 // 0x2e0(0x8)
 	class                                                        RequiredShantyItemDesc;                            // 0x2e8(0x8)
-	TArray<Struct ShantyPuzzleInteractionZoneDefinition>         ShantyPuzzleInteractionZoneDefinitions;            // 0x2f0(0x10)
+	TArray<struct ShantyPuzzleInteractionZoneDefinitions>        ShantyPuzzleInteractionZoneDefinitions;            // 0x2f0(0x10)
 	bool                                                         TimeLimited;                                       // 0x300(0x1)
 	bool                                                         ShouldMoveEnsembleToActorPosition;                 // 0x301(0x1)
-	char                                                         pad0x6_VW26J[0x6];                                 // 0x302(0x6)
+	char                                                         pad0x6_WZT09[0x6];                                 // 0x302(0x6)
 	Struct GameTimeRange                                         ActiveTimeRange;                                   // 0x308(0x10)
 	TArray<class ShantyPuzzleInteractionZoneComponent*>          ShantyPuzzleInteractionZones;                      // 0x318(0x10)
 	Class Ensemble*                                              CurrentlyPlayingShantyPuzzleEnsemble;              // 0x328(0x8)
-	char                                                         pad0xd0_PEL15[0xd0];                               // 0x32e(0xd0)
+	char                                                         pad0xd0_4QF8A[0xd0];                               // 0x32e(0xd0)
 };
 
 

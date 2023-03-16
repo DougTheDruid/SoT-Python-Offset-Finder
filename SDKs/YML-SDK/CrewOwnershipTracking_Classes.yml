@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CrewOwnershipTrackingComponent:
   Attributes:
-  - Name: pad0x18_VFXNS[0x18]
+  - Name: pad0x18_EYC5I[0x18]
     Offset: '0xc8'
     Size: '0x18'
     Type: char
@@ -18,7 +18,7 @@ CrewOwnershipTrackingComponent:
     Offset: '0x100'
     Size: '0x10'
     Type: Struct OwnerListEntry
-  - Name: pad0x80_6W7MM[0x80]
+  - Name: pad0x80_412E6[0x80]
     Offset: '0x10e'
     Size: '0x80'
     Type: char

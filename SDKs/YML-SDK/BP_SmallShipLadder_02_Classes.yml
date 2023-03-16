@@ -6,10 +6,14 @@ BP_SmallShipLadder_02_C:
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: pad0x30_AD5D1[0x30]
-    Offset: '0x5c6'
-    Size: '0x30'
-    Type: char
+  - Name: None
+    Offset: '0x5c8'
+    Size: '0x10'
+    Type: TArray<struct None>
+  - Name: None
+    Offset: '0x5d8'
+    Size: '0x10'
+    Type: TArray<struct None>
   ClassSize: '0x28'
   FullSize: '0x5e8'
   InheritedSize: '0x5c0'

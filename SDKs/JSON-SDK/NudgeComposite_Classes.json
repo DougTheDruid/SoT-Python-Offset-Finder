@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "AcceptedDamagerTypes",
-        "Type": "TArray<Struct NudgeChancePerDamagerType>",
+        "Type": "TArray<struct AcceptedDamagerTypes>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -46,7 +46,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_O6JKN[0x4]",
+        "Name": "pad0x4_WF5O8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -58,7 +58,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0xb8_9U2L4[0xb8]",
+        "Name": "pad0xb8_JYKBZ[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0xfe"
@@ -78,7 +78,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x14_CL9JW[0x14]",
+        "Name": "pad0x14_097LG[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0xcc"
@@ -96,7 +96,7 @@
         "Offset": "0xe4"
       },
       {
-        "Name": "pad0x10_C11UY[0x10]",
+        "Name": "pad0x10_6PSZ9[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe6"

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_CapstanRelease_C: public CapstanRelease
 {
 public:
-	Class InteractableComponent*                                 Interactable;                                      // 0x4c8(0x8)
+	Class InteractableComponent*                                 None;                                              // 0x4c8(0x8)
 };
 
 

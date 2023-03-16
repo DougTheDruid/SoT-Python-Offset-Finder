@@ -1,72 +1,72 @@
 {
   "BP_large_mast_main_C": {
-    "Super": "BP_Mast_C",
+    "Super": "None",
     "FullSize": "0xa90",
     "InheritedSize": "0xa38",
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0xa38"
       },
       {
-        "Name": "BP_MastEmissaryFlag",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa40"
       },
       {
-        "Name": "shp_flag_pennant_alliance_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa48"
       },
       {
-        "Name": "BP_ShipFlagCustomizationChest",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa50"
       },
       {
-        "Name": "BP_Bell",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa58"
       },
       {
-        "Name": "shp_flag_jolly_roger_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa60"
       },
       {
-        "Name": "Ladder",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa68"
       },
       {
-        "Name": "WeldedCrowsNestPhysics",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa70"
       },
       {
-        "Name": "WeldedMastPhysics",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa78"
       },
       {
-        "Name": "shp_mast_ladder_step_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa80"
       },
       {
-        "Name": "CrowsNest",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa88"

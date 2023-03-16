@@ -13,7 +13,7 @@ public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
 	BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*       PromptCoordinator;                                 // 0x408(0x8)
 	class                                                        AccessKey;                                         // 0x410(0x8)
-	TArray<Class CategoryTypes>                                  CategoryTypes;                                     // 0x418(0x10)
+	TArray<class Class*>                                         CategoryTypes;                                     // 0x418(0x10)
 	Struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x428(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x490(0x68)
 };

@@ -5,11 +5,11 @@ AIShipBattlesDataAsset:
   - Name: Battles
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AIShipBattleParams>
+    Type: TArray<struct Battles>
   - Name: SkellyCrewNames
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct FText>
+    Type: TArray<struct FText>
   - Name: EncounterCompleteText
     Offset: '0x48'
     Size: '0x38'
@@ -28,7 +28,7 @@ AIShipContextDescDataAsset:
     Offset: '0x29'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_E4W6L[0x6]
+  - Name: pad0x6_4TE35[0x6]
     Offset: '0x2a'
     Size: '0x6'
     Type: char
@@ -43,7 +43,7 @@ AIShipContextDescDataAsset:
   - Name: Spawners
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct AIShipEncounterParamsSpawnerData>
+    Type: TArray<struct Spawners>
   - Name: DamageParams
     Offset: '0x50'
     Size: '0x14'
@@ -86,7 +86,7 @@ AIShipContextParamsDataAsset:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_XFM5O[0x3]
+  - Name: pad0x3_5RGJZ[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -178,7 +178,7 @@ AIShipContextParamsDataAsset:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_0696X[0x9]
+  - Name: pad0x9_6C35Q[0x9]
     Offset: '0x87'
     Size: '0x9'
     Type: char
@@ -226,7 +226,7 @@ AIShipEncounterDesc:
     Offset: '0x39'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_FKPSB[0x2]
+  - Name: pad0x2_O2ZJC[0x2]
     Offset: '0x3a'
     Size: '0x2'
     Type: char
@@ -238,7 +238,7 @@ AIShipEncounterDesc:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WIIMH[0x3]
+  - Name: pad0x3_21WV4[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -250,14 +250,14 @@ AIShipEncounterDesc:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_YVZ9I[0x7]
+  - Name: pad0x7_DL8N5[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
   - Name: Waves
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct AIShipEncounterWave>
+    Type: TArray<struct Waves>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -267,7 +267,7 @@ AIShipEncounterDynamicDesc:
   - Name: ShipPool
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct AIShipSizeDynamicContexts>
+    Type: TArray<struct ShipPool>
   - Name: FinalShip
     Offset: '0x38'
     Size: '0x8'
@@ -310,7 +310,7 @@ AIShipEncounterParamsDataAsset:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BJAX8[0x4]
+  - Name: pad0x4_7A5J6[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
@@ -338,7 +338,7 @@ AIShipEncounterParamsDataAsset:
     Offset: '0xa8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N5ELE[0x3]
+  - Name: pad0x3_NPI1U[0x3]
     Offset: '0xa9'
     Size: '0x3'
     Type: char
@@ -350,7 +350,7 @@ AIShipEncounterParamsDataAsset:
     Offset: '0xb0'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_IY1KR[0xc]
+  - Name: pad0xc_NWG2C[0xc]
     Offset: '0xb2'
     Size: '0xc'
     Type: char
@@ -390,7 +390,7 @@ AIShipObstacleComponent:
     Offset: '0xc8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8NGRF[0x3]
+  - Name: pad0x3_LSYV1[0x3]
     Offset: '0xc9'
     Size: '0x3'
     Type: char
@@ -398,7 +398,7 @@ AIShipObstacleComponent:
     Offset: '0xcc'
     Size: '0x4'
     Type: float
-  - Name: pad0x28_FDEC1[0x28]
+  - Name: pad0x28_7Y63U[0x28]
     Offset: '0xce'
     Size: '0x28'
     Type: char
@@ -420,7 +420,7 @@ AIShipObstacleServiceInterface:
   Super: Interface
 AIShipService:
   Attributes:
-  - Name: pad0x20_EEI8A[0x20]
+  - Name: pad0x20_WR92K[0x20]
     Offset: '0x3c8'
     Size: '0x20'
     Type: char
@@ -428,7 +428,7 @@ AIShipService:
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class AIShipServiceDataAsset*
-  - Name: pad0x318_56I9A[0x318]
+  - Name: pad0x318_9T10V[0x318]
     Offset: '0x3ee'
     Size: '0x318'
     Type: char
@@ -458,7 +458,7 @@ AIShipServiceDataAsset:
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VI4PQ[0x4]
+  - Name: pad0x4_I4AWM[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -490,7 +490,7 @@ AIShipServiceDataAsset:
     Offset: '0x1f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_PH9PJ[0x4]
+  - Name: pad0x4_RNV1F[0x4]
     Offset: '0x1f4'
     Size: '0x4'
     Type: char
@@ -502,7 +502,7 @@ AIShipServiceDataAsset:
     Offset: '0x228'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TQ6QK[0x4]
+  - Name: pad0x4_17IPX[0x4]
     Offset: '0x22c'
     Size: '0x4'
     Type: char
@@ -513,12 +513,12 @@ AIShipServiceDataAsset:
   - Name: IslandsToAvoid
     Offset: '0x238'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: AvoidanceRange
     Offset: '0x248'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_5M887[0xc]
+  - Name: pad0xc_6IKVL[0xc]
     Offset: '0x24a'
     Size: '0xc'
     Type: char
@@ -544,7 +544,7 @@ AthenaAIShipController:
     Offset: '0x610'
     Size: '0x8'
     Type: Class BehaviorTree*
-  - Name: pad0x18_JP8EC[0x18]
+  - Name: pad0x18_SZ5M8[0x18]
     Offset: '0x618'
     Size: '0x18'
     Type: char
@@ -560,7 +560,7 @@ AthenaAIShipController:
     Offset: '0x640'
     Size: '0x28'
     Type: Struct StandardAnchorDynamicsParameters
-  - Name: pad0x148_71PZ2[0x148]
+  - Name: pad0x148_Y1ABE[0x148]
     Offset: '0x666'
     Size: '0x148'
     Type: char
@@ -571,188 +571,188 @@ AthenaAIShipController:
 AthenaAIShipControllerParamsDataAsset:
   Attributes:
   - Name: TrackingMovementParams
-    Offset: '0x130'
+    Offset: '0x138'
     Size: '0x34'
     Type: Struct ShipMovementParams
-  - Name: pad0x4_I42A2[0x4]
-    Offset: '0x164'
+  - Name: pad0x4_HYRZ4[0x4]
+    Offset: '0x16c'
     Size: '0x4'
     Type: char
   - Name: TimesToSailBesideTarget
-    Offset: '0x168'
+    Offset: '0x170'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: PerpendicularDistanceOffsets
-    Offset: '0x198'
+    Offset: '0x1a0'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: TimesBeforeDistanceChange
-    Offset: '0x1c8'
+    Offset: '0x1d0'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: MaxParallelDistanceOffset
-    Offset: '0x1f8'
-    Size: '0x4'
-    Type: float
-  - Name: AlignDistanceThreshold
-    Offset: '0x1fc'
-    Size: '0x4'
-    Type: float
-  - Name: TimeToProjectIntoFutureForTracking
     Offset: '0x200'
     Size: '0x4'
     Type: float
-  - Name: TargetSpeedThresholdToTrackShip
+  - Name: AlignDistanceThreshold
     Offset: '0x204'
     Size: '0x4'
     Type: float
-  - Name: TrackingNoiseGenerator
+  - Name: TimeToProjectIntoFutureForTracking
     Offset: '0x208'
+    Size: '0x4'
+    Type: float
+  - Name: TargetSpeedThresholdToTrackShip
+    Offset: '0x20c'
+    Size: '0x4'
+    Type: float
+  - Name: TrackingNoiseGenerator
+    Offset: '0x210'
     Size: '0x18'
     Type: Struct TrackingNoiseGenerator
   - Name: WheelAngleMonitorDuration
-    Offset: '0x220'
-    Size: '0x4'
-    Type: float
-  - Name: WheelAngleChangeThresholdToBreakTracking
-    Offset: '0x224'
-    Size: '0x4'
-    Type: float
-  - Name: SpeedMonitorDuration
     Offset: '0x228'
     Size: '0x4'
     Type: float
-  - Name: SpeedChangeThresholdToBreakTrackingInMPS
+  - Name: WheelAngleChangeThresholdToBreakTracking
     Offset: '0x22c'
     Size: '0x4'
     Type: float
-  - Name: TargetSpeedToConsiderAnchorLoweredInMPS
+  - Name: SpeedMonitorDuration
     Offset: '0x230'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9M0W2[0x4]
+  - Name: SpeedChangeThresholdToBreakTrackingInMPS
     Offset: '0x234'
+    Size: '0x4'
+    Type: float
+  - Name: TargetSpeedToConsiderAnchorLoweredInMPS
+    Offset: '0x238'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_BYGXH[0x4]
+    Offset: '0x23c'
     Size: '0x4'
     Type: char
   - Name: TrackingLatencyTimes
-    Offset: '0x238'
+    Offset: '0x240'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: TrackingLatencyTimesWhenAnchorLowered
-    Offset: '0x268'
+    Offset: '0x270'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: DistToTargetShipVSTrackingLatencyCurve
-    Offset: '0x298'
+    Offset: '0x2a0'
     Size: '0x8'
     Type: Class CurveFloat*
   - Name: CirclingMovementParams
-    Offset: '0x2a0'
+    Offset: '0x2a8'
     Size: '0x34'
     Type: Struct ShipMovementParams
   - Name: TargetSpeedThresholdInKnots
-    Offset: '0x2d4'
+    Offset: '0x2dc'
     Size: '0x4'
     Type: float
   - Name: SecondsInFutureToProjectTargetLocation
-    Offset: '0x2d8'
+    Offset: '0x2e0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZM6H2[0x4]
-    Offset: '0x2dc'
+  - Name: pad0x4_R8EHO[0x4]
+    Offset: '0x2e4'
     Size: '0x4'
     Type: char
   - Name: CircleRadiuses
-    Offset: '0x2e0'
+    Offset: '0x2e8'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: CirclingSpeedsInDegreesPerSecond
-    Offset: '0x310'
+    Offset: '0x318'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: TimesToCircleBeforeChangingRadius
-    Offset: '0x340'
+    Offset: '0x348'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: MinDistanceFromTargetToStartRam
-    Offset: '0x370'
-    Size: '0x4'
-    Type: float
-  - Name: MaxDistanceFromTargetToStartRam
-    Offset: '0x374'
-    Size: '0x4'
-    Type: float
-  - Name: MaxSpeedToRamTarget
     Offset: '0x378'
     Size: '0x4'
     Type: float
-  - Name: RammingMaxTurnSpeed
+  - Name: MaxDistanceFromTargetToStartRam
     Offset: '0x37c'
     Size: '0x4'
     Type: float
-  - Name: RammingTimeDampingScalar
+  - Name: MaxSpeedToRamTarget
     Offset: '0x380'
     Size: '0x4'
     Type: float
-  - Name: MinAngleToTargetToAttemptRam
+  - Name: RammingMaxTurnSpeed
     Offset: '0x384'
     Size: '0x4'
     Type: float
-  - Name: RammingLocationOffsets
+  - Name: RammingTimeDampingScalar
     Offset: '0x388'
+    Size: '0x4'
+    Type: float
+  - Name: MinAngleToTargetToAttemptRam
+    Offset: '0x38c'
+    Size: '0x4'
+    Type: float
+  - Name: RammingLocationOffsets
+    Offset: '0x390'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: SailingForwardMovementParams
-    Offset: '0x3b8'
+    Offset: '0x3c0'
     Size: '0x34'
     Type: Struct ShipMovementParams
   - Name: MinAllowedDistanceToObstacle
-    Offset: '0x3ec'
+    Offset: '0x3f4'
     Size: '0x4'
     Type: float
   - Name: MaxPathAvoidanceDistance
-    Offset: '0x3f0'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: float
   - Name: PassiveSailingMovementParams
-    Offset: '0x3f4'
+    Offset: '0x3fc'
     Size: '0x34'
     Type: Struct ShipMovementParams
   - Name: ChanceToAnchor
-    Offset: '0x428'
+    Offset: '0x430'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_A4FBQ[0x4]
-    Offset: '0x42c'
+  - Name: pad0x4_RCAGM[0x4]
+    Offset: '0x434'
     Size: '0x4'
     Type: char
   - Name: TimesToStayAnchored
-    Offset: '0x430'
+    Offset: '0x438'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
   - Name: NumIslandsToVisitBeforeReturning
-    Offset: '0x460'
+    Offset: '0x468'
     Size: '0x4'
     Type: int
   - Name: DistanceFromIslandsToSailTo
-    Offset: '0x464'
+    Offset: '0x46c'
     Size: '0x4'
     Type: float
   - Name: DistanceToTargetToDropAnchor
-    Offset: '0x468'
+    Offset: '0x470'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_87HSS[0x4]
-    Offset: '0x46c'
+  - Name: pad0x4_65OSE[0x4]
+    Offset: '0x474'
     Size: '0x4'
     Type: char
   - Name: AggressionOverrideImpactIDs
-    Offset: '0x470'
+    Offset: '0x478'
     Size: '0x10'
-    Type: TArray<Class AggressionOverrideImpactIDs>
+    Type: TArray<class Class*>
   ClassSize: '0x350'
-  FullSize: '0x480'
-  InheritedSize: '0x130'
+  FullSize: '0x488'
+  InheritedSize: '0x138'
   Super: AthenaAIControllerParamsDataAsset
 BTService_UpdateIfShipShouldBreakTracking:
   Attributes:
@@ -776,7 +776,7 @@ BTService_UpdateIfShipShouldBreakTracking:
     Offset: '0x110'
     Size: '0x28'
     Type: Struct BlackboardKeySelector
-  - Name: pad0x68_OXVS8[0x68]
+  - Name: pad0x68_6S42L[0x68]
     Offset: '0x136'
     Size: '0x68'
     Type: char
@@ -804,7 +804,7 @@ BTService_UpdateTargetLocationForPassiveShip:
     Offset: '0x70'
     Size: '0x28'
     Type: Struct BlackboardKeySelector
-  - Name: pad0x80_5WN98[0x80]
+  - Name: pad0x80_Z2DJ6[0x80]
     Offset: '0x96'
     Size: '0x80'
     Type: char
@@ -822,7 +822,7 @@ BTTask_AIShipSurface:
     Offset: '0x8c'
     Size: '0x4'
     Type: float
-  - Name: pad0x10_BHGJX[0x10]
+  - Name: pad0x10_53D2T[0x10]
     Offset: '0x8e'
     Size: '0x10'
     Type: char
@@ -838,7 +838,7 @@ BTTask_RamTargetShip:
   Super: BTTask_BlackboardBase
 BTTask_SailShipBesideTarget:
   Attributes:
-  - Name: pad0x20_KPBAQ[0x20]
+  - Name: pad0x20_L1ZOC[0x20]
     Offset: '0x88'
     Size: '0x20'
     Type: char
@@ -846,7 +846,7 @@ BTTask_SailShipBesideTarget:
     Offset: '0xa8'
     Size: '0x18'
     Type: Struct TrackingNoiseGenerator
-  - Name: pad0x48_1UEBY[0x48]
+  - Name: pad0x48_QU901[0x48]
     Offset: '0xbe'
     Size: '0x48'
     Type: char
@@ -874,7 +874,7 @@ BTTask_SailShipForward:
     Offset: '0xd8'
     Size: '0x28'
     Type: Struct BlackboardKeySelector
-  - Name: pad0x80_DD7PU[0x80]
+  - Name: pad0x80_IK52T[0x80]
     Offset: '0xfe'
     Size: '0x80'
     Type: char
@@ -892,7 +892,7 @@ BTTask_SailShipToLocation:
     Offset: '0xb0'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_1NCBO[0x24]
+  - Name: pad0x24_A2R36[0x24]
     Offset: '0xb2'
     Size: '0x24'
     Type: char
@@ -911,7 +911,7 @@ CursedSailsCampaignDataAsset:
   - Name: Battles
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct CursedSailsBattleParams>
+    Type: TArray<struct Battles>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -928,7 +928,7 @@ IsAIShipEncounterTypeStatCondition:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_R69JH[0x9]
+  - Name: pad0x9_2H77V[0x9]
     Offset: '0x27'
     Size: '0x9'
     Type: char
@@ -946,7 +946,7 @@ ShipProxyPawn:
     Offset: '0x448'
     Size: '0x8'
     Type: Class Ship*
-  - Name: pad0x38_I4ONE[0x38]
+  - Name: pad0x38_AGMZQ[0x38]
     Offset: '0x44e'
     Size: '0x38'
     Type: char

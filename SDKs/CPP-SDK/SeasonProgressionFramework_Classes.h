@@ -17,9 +17,9 @@ public:
 class SeasonProgressionExclusionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_9ELWC[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_GUXZW[0x8];                                 // 0xc8(0x8)
 	bool                                                         ShouldBeExcludedFromSeasonProgessionValue;         // 0xd0(0x1)
-	char                                                         pad0x9_PZINN[0x9];                                 // 0xcf(0x9)
+	char                                                         pad0x9_BMUE5[0x9];                                 // 0xcf(0x9)
 };
 
 

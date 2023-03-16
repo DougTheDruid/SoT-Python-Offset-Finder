@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_TunnelOfTheDamnedPortal_Ship_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x650'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: SynchedMusicZone
+  - Name: None
     Offset: '0x658'
     Size: '0x8'
     Type: Class SynchedMusicZoneComponent*

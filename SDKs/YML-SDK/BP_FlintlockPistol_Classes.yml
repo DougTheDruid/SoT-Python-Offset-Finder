@@ -3,38 +3,38 @@
 BP_FlintlockPistol_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0xa70'
+    Offset: '0xa80'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PostProcess
-    Offset: '0xa78'
+    Offset: '0xa88'
     Size: '0x8'
     Type: Class PostProcessComponent*
   - Name: sfx relationship
-    Offset: '0xa80'
+    Offset: '0xa90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_Y4P8H[0x7]
-    Offset: '0xa81'
+  - Name: pad0x7_5KXNJ[0x7]
+    Offset: '0xa91'
     Size: '0x7'
     Type: char
   - Name: DynamicMaterial
-    Offset: '0xa88'
+    Offset: '0xa98'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: ThirdPerson_VFX_AI
-    Offset: '0xa90'
+    Offset: '0xaa0'
     Size: '0x8'
     Type: Class Object*
   - Name: Flintlock3rdPersonSFX
-    Offset: '0xa98'
+    Offset: '0xaa8'
     Size: '0x8'
     Type: Class WwiseEvent*
   - Name: FlintLockFirstPersonSFX
-    Offset: '0xaa0'
+    Offset: '0xab0'
     Size: '0x8'
     Type: Class WwiseEvent*
   ClassSize: '0x38'
-  FullSize: '0xaa8'
-  InheritedSize: '0xa70'
+  FullSize: '0xab8'
+  InheritedSize: '0xa80'
   Super: ProjectileWeapon

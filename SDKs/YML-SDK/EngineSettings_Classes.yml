@@ -6,14 +6,14 @@ ConsoleSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_48BTQ[0x4]
+  - Name: pad0x4_RUVD2[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
   - Name: ManualAutoCompleteList
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct AutoCompleteCommand>
+    Type: TArray<struct ManualAutoCompleteList>
   - Name: AutoCompleteMapPaths
     Offset: '0x40'
     Size: '0x10'
@@ -48,7 +48,7 @@ GameMapsSettings:
     Offset: '0x5a'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_ER4AU[0x5]
+  - Name: pad0x5_CIUSK[0x5]
     Offset: '0x5b'
     Size: '0x5'
     Type: char
@@ -98,7 +98,7 @@ GameNetworkManagerSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_T12RK[0x3]
+  - Name: pad0x3_DIYXW[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -126,7 +126,7 @@ GameNetworkManagerSettings:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_T68NH[0xc]
+  - Name: pad0xc_KPY4V[0xc]
     Offset: '0x52'
     Size: '0xc'
     Type: char
@@ -148,7 +148,7 @@ GameSessionSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_RWJRO[0x9]
+  - Name: pad0x9_OOEUG[0x9]
     Offset: '0x2f'
     Size: '0x9'
     Type: char
@@ -222,14 +222,14 @@ HudSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_LNUOT[0x7]
+  - Name: pad0x7_B0W44[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
   - Name: DebugDisplay
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'

@@ -34,7 +34,7 @@ ActionStatePriorityList:
   - Name: Entries
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ActionStatePriorityRelationship>
+    Type: TArray<struct Entries>
   ClassSize: '0x18'
 ActionStatePriorityRelationship:
   Attributes:
@@ -79,7 +79,7 @@ InnerTestStruct:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_HOORP[0x7]
+  - Name: pad0x7_4NHE0[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -104,7 +104,7 @@ ResetStateMachineRpc:
     Offset: '0x0'
     Size: '0x1'
     Type: Struct ActionStateChangeRequestId
-  - Name: pad0x4_RJBW6[0x4]
+  - Name: pad0x4_ZTOAF[0x4]
     Offset: '0x1'
     Size: '0x4'
     Type: char
@@ -112,7 +112,7 @@ ResetStateMachineRpc:
     Offset: '0x5'
     Size: '0x1'
     Type: Struct ActionStateChangeRequestId
-  - Name: pad0xa_LCXM3[0xa]
+  - Name: pad0xa_0UYGF[0xa]
     Offset: '0x6'
     Size: '0xa'
     Type: char
@@ -147,7 +147,7 @@ TestActionStateConstructionInfoWithInner:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0R7QS[0x4]
+  - Name: pad0x4_F51UE[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

@@ -5,12 +5,12 @@ ActiveStorySpawnRequirement:
   - Name: StoryNames
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: AllStoriesRequired
     Offset: '0x60'
     Size: '0x1'
     Type: bool
-  - Name: pad0x21_QKCHI[0x21]
+  - Name: pad0x21_21P7G[0x21]
     Offset: '0x5f'
     Size: '0x21'
     Type: char
@@ -20,14 +20,14 @@ ActiveStorySpawnRequirement:
   Super: SpawnRequirement
 DebugStoryServiceCheat:
   Attributes:
-  - Name: pad0x8_A5WCO[0x8]
+  - Name: pad0x8_8JKTK[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
   - Name: AllStories
     Offset: '0x3d0'
     Size: '0x10'
-    Type: TArray<Struct StoryInfo>
+    Type: TArray<struct AllStories>
   - Name: AllIncludeFilters
     Offset: '0x3e0'
     Size: '0x10'
@@ -36,7 +36,7 @@ DebugStoryServiceCheat:
     Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<Str AllExcludeFilters>
-  - Name: pad0x40_UOIZ4[0x40]
+  - Name: pad0x40_J6OUL[0x40]
     Offset: '0x3fe'
     Size: '0x40'
     Type: char
@@ -56,7 +56,7 @@ IsStoryActiveNPCDialogConditional:
     Offset: '0x30'
     Size: '0x8'
     Type: Struct StoryFlag
-  - Name: pad0x20_8SV21[0x20]
+  - Name: pad0x20_JBOA5[0x20]
     Offset: '0x36'
     Size: '0x20'
     Type: char
@@ -70,7 +70,7 @@ StoryClaimableResourceComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Struct StoryFlag
-  - Name: pad0x30_AMILH[0x30]
+  - Name: pad0x30_09F4Y[0x30]
     Offset: '0xce'
     Size: '0x30'
     Type: char
@@ -80,7 +80,7 @@ StoryClaimableResourceComponent:
   Super: ActorComponent
 StoryClaimedResourcesService:
   Attributes:
-  - Name: pad0x60_3037O[0x60]
+  - Name: pad0x60_WEX3I[0x60]
     Offset: '0x3c8'
     Size: '0x60'
     Type: char
@@ -88,7 +88,7 @@ StoryClaimedResourcesService:
     Offset: '0x428'
     Size: '0x10'
     Type: TArray<Weakclass PendingClaims>
-  - Name: pad0x70_GC98N[0x70]
+  - Name: pad0x70_UV6MI[0x70]
     Offset: '0x436'
     Size: '0x70'
     Type: char
@@ -112,7 +112,7 @@ StoryDrivenBlendedLightingZoneComponent:
     Offset: '0x330'
     Size: '0x10'
     Type: Struct LightingZoneStoryRelatedSettings
-  - Name: pad0x40_RH851[0x40]
+  - Name: pad0x40_H1GW8[0x40]
     Offset: '0x33e'
     Size: '0x40'
     Type: char
@@ -126,14 +126,14 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
-  - Name: pad0x4_J7BBQ[0x4]
+  - Name: pad0x4_VUCDJ[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct LightingZoneStoryRelatedSettings>
+    Type: TArray<struct StoryResponses>
   - Name: AssetsList
     Offset: '0x48'
     Size: '0x10'
@@ -148,7 +148,7 @@ StoryDrivenSalvageItemSpawnComponent:
     Offset: '0x560'
     Size: '0x8'
     Type: Struct StoryFlag
-  - Name: pad0x38_Y43MP[0x38]
+  - Name: pad0x38_DU6MW[0x38]
     Offset: '0x566'
     Size: '0x38'
     Type: char
@@ -161,7 +161,7 @@ StoryNamesCollectionDataAsset:
   - Name: Stories
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct StoryNameInfo>
+    Type: TArray<struct Stories>
   - Name: StoriesAssets
     Offset: '0x38'
     Size: '0x10'
@@ -172,19 +172,19 @@ StoryNamesCollectionDataAsset:
   Super: DataAsset
 StoryService:
   Attributes:
-  - Name: pad0x28_VFUD8[0x28]
+  - Name: pad0x28_R9TUK[0x28]
     Offset: '0x3c8'
     Size: '0x28'
     Type: char
   - Name: Stories
     Offset: '0x3f0'
     Size: '0x10'
-    Type: TArray<Struct StoryInfo>
+    Type: TArray<struct Stories>
   - Name: ActiveStories
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<Struct StoryInfo>
-  - Name: pad0xb0_S1NHH[0xb0]
+    Type: TArray<struct ActiveStories>
+  - Name: pad0xb0_N6XWM[0xb0]
     Offset: '0x40e'
     Size: '0xb0'
     Type: char
@@ -214,7 +214,7 @@ StorySpawnedActorsComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class StorySpawnedActorsComponentDataAsset*
-  - Name: pad0x48_P9XAY[0x48]
+  - Name: pad0x48_63PX1[0x48]
     Offset: '0xce'
     Size: '0x48'
     Type: char
@@ -228,14 +228,14 @@ StorySpawnedActorsComponentDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
-  - Name: pad0x4_V84NT[0x4]
+  - Name: pad0x4_MBIUQ[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct StorySpawnedActorsComponentList>
+    Type: TArray<struct StoryResponses>
   - Name: AssetsList
     Offset: '0x48'
     Size: '0x10'
@@ -250,14 +250,14 @@ StorySpawnedActorsDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
-  - Name: pad0x4_Q7PBN[0x4]
+  - Name: pad0x4_LJ5S4[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct StorySpawnedActorsList>
+    Type: TArray<struct StoryResponses>
   - Name: AssetsList
     Offset: '0x48'
     Size: '0x10'
@@ -268,7 +268,7 @@ StorySpawnedActorsDataAsset:
   Super: DataAsset
 StorySpawnedActorsService:
   Attributes:
-  - Name: pad0x18_UP7QB[0x18]
+  - Name: pad0x18_4DOBZ[0x18]
     Offset: '0x3c8'
     Size: '0x18'
     Type: char
@@ -280,7 +280,7 @@ StorySpawnedActorsService:
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StorySpawnedActorsDataAsset*
-  - Name: pad0x108_EFYGI[0x108]
+  - Name: pad0x108_T14Y6[0x108]
     Offset: '0x3f6'
     Size: '0x108'
     Type: char

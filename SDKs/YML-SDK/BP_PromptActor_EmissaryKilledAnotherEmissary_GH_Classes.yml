@@ -21,15 +21,15 @@ BP_PromptActor_EmissaryKilledAnotherEmissary_GH_C:
   - Name: Prompts
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Struct PrioritisedPromptWithHandle>
+    Type: TArray<struct Prompts>
   - Name: ExpectedVictimCompanyName
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: ExpectedVictimCompanies
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<Class ExpectedVictimCompanies>
+    Type: TArray<class Class*>
   ClassSize: '0x50'
   FullSize: '0x450'
   InheritedSize: '0x400'

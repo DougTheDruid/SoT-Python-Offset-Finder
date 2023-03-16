@@ -22,14 +22,14 @@ BP_PromptActor_EmissaryRank2_AF_C:
     Offset: '0x420'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9EP82[0x4]
+  - Name: pad0x4_VRNMI[0x4]
     Offset: '0x424'
     Size: '0x4'
     Type: char
   - Name: Prompts
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Struct PrioritisedPromptWithHandle>
+    Type: TArray<struct Prompts>
   ClassSize: '0x38'
   FullSize: '0x438'
   InheritedSize: '0x400'

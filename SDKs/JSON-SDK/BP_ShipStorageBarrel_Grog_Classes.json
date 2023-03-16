@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Name": "None",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "TankardRefiller",
+        "Name": "None",
         "Type": "Class TankardRefillerComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "Interactable",
+        "Name": "None",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"

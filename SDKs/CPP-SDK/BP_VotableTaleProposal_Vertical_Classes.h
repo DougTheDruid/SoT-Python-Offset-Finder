@@ -11,15 +11,7 @@ class BP_VotableTaleProposal_Vertical_C: public VotableObjectView
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0x4f0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x4f8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x500(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x508(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x510(0x8)
-	TArray<class StaticMeshComponent*>                           None;                                              // 0x518(0x10)
-	Class StaticMesh*                                            None;                                              // 0x528(0x8)
-	int                                                          None;                                              // 0x530(0x4)
-	float                                                        None;                                              // 0x534(0x4)
-	Class MaterialInterface*                                     None;                                              // 0x538(0x8)
+	char                                                         pad0x58_ZIX06[0x58];                               // 0x4f6(0x58)
 };
 
 

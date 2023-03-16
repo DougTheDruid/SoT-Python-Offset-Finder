@@ -6,44 +6,44 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "Tokens",
+        "Name": "None",
         "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x4f8"
       },
       {
-        "Name": "Token Asset",
+        "Name": "None",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
-        "Name": "Show Token Animation Time",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x510"
       },
       {
-        "Name": "pad0x4_Q4CC9[0x4]",
+        "Name": "pad0x4_F58VH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x514"
       },
       {
-        "Name": "Token Material",
+        "Name": "None",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x518"
       },
       {
-        "Name": "DaggerPositions",
-        "Type": "TArray<Struct StaticMeshComponent>",
+        "Name": "None",
+        "Type": "TArray<struct None>",
         "Size": "0x10",
         "Offset": "0x520"
       }

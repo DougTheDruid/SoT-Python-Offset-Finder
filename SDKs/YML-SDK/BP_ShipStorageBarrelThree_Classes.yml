@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_ShipStorageBarrelThree_C:
   Attributes:
-  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

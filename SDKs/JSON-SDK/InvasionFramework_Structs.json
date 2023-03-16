@@ -15,7 +15,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_44ZSU[0x7]",
+        "Name": "pad0x7_QVTYA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -44,7 +44,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_BAQ6G[0x3]",
+        "Name": "pad0x3_GAWPV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -102,7 +102,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x3_25VJE[0x3]",
+        "Name": "pad0x3_7QRL9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x59"
@@ -181,7 +181,7 @@
     "Attributes": [
       {
         "Name": "CrewIds",
-        "Type": "TArray<Struct InvasionCrewData>",
+        "Type": "TArray<struct CrewIds>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -198,7 +198,7 @@
     "Attributes": [
       {
         "Name": "Participants",
-        "Type": "TArray<Struct InvasionCrewData>",
+        "Type": "TArray<struct Participants>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -215,14 +215,14 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_SBXE0[0x4]",
+        "Name": "pad0x4_HOZ0I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "ParticipantFactionData",
-        "Type": "TArray<Struct CrewFactionTelemetryData>",
+        "Type": "TArray<struct ParticipantFactionData>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -231,6 +231,17 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "CrewJoinedInvasionBattleTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ItemsBroughtToBattle",
+        "Type": "TArray<Str ItemsBroughtToBattle>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

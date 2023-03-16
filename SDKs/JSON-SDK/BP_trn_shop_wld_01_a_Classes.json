@@ -6,553 +6,553 @@
     "ClassSize": "0x2e0",
     "Attributes": [
       {
-        "Name": "WorldLocationPopUp",
+        "Name": "None",
         "Type": "Class WorldLocationPopUpComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "PetHangoutSpot",
+        "Name": "None",
         "Type": "Class PetHangoutSpotComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "wld_trn_shop_dressing_01_b",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "wld_trn_shop_dressing_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "StaticMesh29",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "StaticMesh24",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "bld_trn_shop_hanging_sign_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "SpotLight3",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "SpotLight2",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "BP_MusicBox",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "BP_IslandEquipmentChest",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "StaticMesh28",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "StaticMesh27",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "StaticMesh26",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "StaticMesh25",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "PointLight1",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "ChildActor2",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "ChildActor1",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
-        "Name": "SpotLight1",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
-        "Name": "SpotLight",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
-        "Name": "PointLight9",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
-        "Name": "PointLight8",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
-        "Name": "PointLight7",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
-        "Name": "PointLight6",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
-        "Name": "PointLight5",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x488"
       },
       {
-        "Name": "PointLight4",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x490"
       },
       {
-        "Name": "ParticleSystem20",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x498"
       },
       {
-        "Name": "ParticleSystem19",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
       {
-        "Name": "ParticleSystem18",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4a8"
       },
       {
-        "Name": "ParticleSystem17",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
-        "Name": "ParticleSystem16",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4b8"
       },
       {
-        "Name": "ParticleSystem15",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4c0"
       },
       {
-        "Name": "ParticleSystem14",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
-        "Name": "ParticleSystem13",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
-        "Name": "ParticleSystem12",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
       {
-        "Name": "ParticleSystem11",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4e0"
       },
       {
-        "Name": "ParticleSystem10",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4e8"
       },
       {
-        "Name": "ParticleSystem9",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "ParticleSystem8",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
-        "Name": "ParticleSystem7",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
-        "Name": "PointLight3",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
-        "Name": "ParticleSystem6",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
-        "Name": "ParticleSystem5",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x518"
       },
       {
-        "Name": "ParticleSystem4",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x520"
       },
       {
-        "Name": "ParticleSystem3",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
-        "Name": "ParticleSystem2",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x530"
       },
       {
-        "Name": "PointLight2",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x538"
       },
       {
-        "Name": "ParticleSystem1",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x540"
       },
       {
-        "Name": "ParticleSystem",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x548"
       },
       {
-        "Name": "PointLight",
+        "Name": "None",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x550"
       },
       {
-        "Name": "ChildActor",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x558"
       },
       {
-        "Name": "StaticMesh23",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x560"
       },
       {
-        "Name": "StaticMesh22",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x568"
       },
       {
-        "Name": "StaticMesh31",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x570"
       },
       {
-        "Name": "AudioSpace",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x578"
       },
       {
-        "Name": "bld_shop_drapes_03_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x580"
       },
       {
-        "Name": "cmn_oar_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x588"
       },
       {
-        "Name": "StaticMesh19",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x590"
       },
       {
-        "Name": "StaticMesh18",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x598"
       },
       {
-        "Name": "StaticMesh14",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5a0"
       },
       {
-        "Name": "StaticMesh13",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5a8"
       },
       {
-        "Name": "StaticMesh12",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5b0"
       },
       {
-        "Name": "StaticMesh11",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5b8"
       },
       {
-        "Name": "StaticMesh10",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5c0"
       },
       {
-        "Name": "StaticMesh9",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5c8"
       },
       {
-        "Name": "StaticMesh8",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5d0"
       },
       {
-        "Name": "StaticMesh7",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5d8"
       },
       {
-        "Name": "StaticMesh6",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
-        "Name": "StaticMesh5",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5e8"
       },
       {
-        "Name": "StaticMesh4",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5f0"
       },
       {
-        "Name": "cmn_candle_01_c",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
-        "Name": "cmn_candle_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
-        "Name": "StaticMesh3",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x608"
       },
       {
-        "Name": "cap_skull_candle_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x610"
       },
       {
-        "Name": "cmn_candle_01_d",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x618"
       },
       {
-        "Name": "cmn_candle_01_e",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
-        "Name": "shp_kra_skin_rug_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
-        "Name": "shp_kra_wheel_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
-        "Name": "shp_kitchen_shelf_02_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
-        "Name": "StaticMesh1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
-        "Name": "gmp_bar_hide_01_a1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
-        "Name": "bld_shop_table_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "bld_shop_drapes_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "cmn_skeleton_head_boar_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "bld_trn_shop_wilds_details_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "bld_trn_roof_beam_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x678"
       },
       {
-        "Name": "bld_trn_shop_window_01_b1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x680"
       },
       {
-        "Name": "bld_trn_shop_window_01_b",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x688"
       },
       {
-        "Name": "bld_trn_shop_door_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
-        "Name": "bld_trn_shop_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"

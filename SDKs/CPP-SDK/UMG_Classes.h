@@ -21,10 +21,10 @@ public:
 	Class Object*                                                payload;                                           // 0x38(0x8)
 	Class Widget*                                                DefaultDragVisual;                                 // 0x40(0x8)
 	byte                                                         Pivot;                                             // 0x48(0x1)
-	char                                                         pad0x3_QFJUM[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_Y1A24[0x3];                                 // 0x49(0x3)
 	Struct Vector2D                                              Offset;                                            // 0x4c(0x8)
-	char                                                         pad0x4_UC5T2[0x4];                                 // 0x54(0x4)
-	char                                                         pad0x38_UU9F4[0x38];                               // 0x56(0x38)
+	char                                                         pad0x4_KZPX4[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x38_7XYDN[0x38];                               // 0x56(0x38)
 };
 
 
@@ -32,14 +32,14 @@ public:
 class MovieScene2DTransformSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_5448H[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_70U6I[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             Translation;                                       // 0xa0(0x78)
-	char                                                         pad0x78_S7RIH[0x78];                               // 0x118(0x78)
+	char                                                         pad0x78_3GDIU[0x78];                               // 0x118(0x78)
 	Struct RichCurve                                             Rotation;                                          // 0x190(0x78)
 	Struct RichCurve                                             Scale;                                             // 0x208(0x78)
-	char                                                         pad0x78_ZGY2C[0x78];                               // 0x280(0x78)
+	char                                                         pad0x78_KNWHN[0x78];                               // 0x280(0x78)
 	Struct RichCurve                                             Shear;                                             // 0x2f8(0x78)
-	char                                                         pad0x168_OFBGL[0x168];                             // 0x36e(0x168)
+	char                                                         pad0x168_KKSRQ[0x168];                             // 0x36e(0x168)
 };
 
 
@@ -54,7 +54,7 @@ public:
 class MovieSceneMarginSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_V8ESB[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_Y3XDD[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             TopCurve;                                          // 0xa0(0x78)
 	Struct RichCurve                                             LeftCurve;                                         // 0x118(0x78)
 	Struct RichCurve                                             RightCurve;                                        // 0x190(0x78)
@@ -73,7 +73,7 @@ public:
 class MovieSceneWidgetMaterialTrack: public MovieSceneMaterialTrack
 {
 public:
-	TArray<Struct FName>                                         BrushPropertyNamePath;                             // 0x98(0x10)
+	TArray<struct FName>                                         BrushPropertyNamePath;                             // 0x98(0x10)
 	struct FName                                                 TrackName;                                         // 0xa8(0x8)
 };
 
@@ -89,7 +89,7 @@ public:
 class PropertyBinding: public Object
 {
 public:
-	char                                                         pad0x8_KNRSW[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_P3QJ1[0x8];                                 // 0x28(0x8)
 	Struct DynamicPropertyPath                                   SourcePath;                                        // 0x30(0x10)
 	struct FName                                                 DestinationProperty;                               // 0x40(0x8)
 };
@@ -170,7 +170,7 @@ class RichTextBlockDecorator: public Object
 {
 public:
 	bool                                                         bReveal;                                           // 0x28(0x1)
-	char                                                         pad0x3_BGCHG[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_MRA7Q[0x3];                                 // 0x29(0x3)
 	int                                                          RevealedIndex;                                     // 0x2c(0x4)
 };
 
@@ -195,24 +195,24 @@ class Widget: public Visual
 public:
 	bool                                                         bIsVariable;                                       // 0x28(0x1)
 	bool                                                         bCreatedByConstructionScript;                      // 0x29(0x1)
-	char                                                         pad0x6_26N9S[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_KWSCZ[0x6];                                 // 0x2a(0x6)
 	Class PanelSlot*                                             Slot;                                              // 0x30(0x8)
 	bool                                                         bIsEnabled;                                        // 0x38(0x1)
-	char                                                         pad0x3_V4BEB[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_U3YTD[0x3];                                 // 0x39(0x3)
 	Struct FText                                                 ToolTipText;                                       // 0x50(0x38)
 	Class Widget*                                                ToolTipWidget;                                     // 0x98(0x8)
 	byte                                                         Visiblity;                                         // 0xb0(0x1)
 	byte                                                         Visibility;                                        // 0xb1(0x1)
-	char                                                         pad0x2_3Z38V[0x2];                                 // 0xb2(0x2)
+	char                                                         pad0x2_WF6JC[0x2];                                 // 0xb2(0x2)
 	bool                                                         bOverride_Cursor;                                  // 0xc4(0x1)
-	char                                                         pad0x3_C69M5[0x3];                                 // 0xc5(0x3)
+	char                                                         pad0x3_YDHVC[0x3];                                 // 0xc5(0x3)
 	byte                                                         Cursor;                                            // 0xc8(0x1)
 	bool                                                         bIsVolatile;                                       // 0xc9(0x1)
-	char                                                         pad0x2_Y55C2[0x2];                                 // 0xca(0x2)
+	char                                                         pad0x2_D479E[0x2];                                 // 0xca(0x2)
 	Struct WidgetTransform                                       RenderTransform;                                   // 0xcc(0x1c)
 	Struct Vector2D                                              RenderTransformPivot;                              // 0xe8(0x8)
 	Class WidgetNavigation*                                      Navigation;                                        // 0xf0(0x8)
-	char                                                         pad0x30_XKNNR[0x30];                               // 0xf8(0x30)
+	char                                                         pad0x30_FTPOZ[0x30];                               // 0xf8(0x30)
 	TArray<class PropertyBinding*>                               NativeBindings;                                    // 0x128(0x10)
 };
 
@@ -221,16 +221,16 @@ public:
 class UserWidget: public Widget
 {
 public:
-	char                                                         pad0x8_RU66H[0x8];                                 // 0x138(0x8)
+	char                                                         pad0x8_2R82N[0x8];                                 // 0x138(0x8)
 	Struct LinearColor                                           ColorAndOpacity;                                   // 0x140(0x10)
 	Struct SlateColor                                            ForegroundColor;                                   // 0x160(0x30)
 	bool                                                         bSupportsKeyboardFocus;                            // 0x1a0(0x1)
-	char                                                         pad0x7_J0ZX8[0x7];                                 // 0x1a1(0x7)
+	char                                                         pad0x7_D1EX1[0x7];                                 // 0x1a1(0x7)
 	Class WidgetTree*                                            WidgetTree;                                        // 0x1a8(0x8)
 	TArray<class UMGSequencePlayer*>                             ActiveSequencePlayers;                             // 0x1b0(0x10)
 	TArray<class UMGSequencePlayer*>                             StoppedSequencePlayers;                            // 0x1c0(0x10)
-	TArray<Struct NamedSlotBinding>                              NamedSlotBindings;                                 // 0x1d0(0x10)
-	char                                                         pad0x70_0DS9H[0x70];                               // 0x1de(0x70)
+	TArray<struct NamedSlotBindings>                             NamedSlotBindings;                                 // 0x1d0(0x10)
+	char                                                         pad0x70_0K0BR[0x70];                               // 0x1de(0x70)
 };
 
 
@@ -238,9 +238,9 @@ public:
 class UMGSequencePlayer: public Object
 {
 public:
-	char                                                         pad0x368_N5PRU[0x368];                             // 0x28(0x368)
+	char                                                         pad0x368_6BA77[0x368];                             // 0x28(0x368)
 	Class WidgetAnimation*                                       Animation;                                         // 0x390(0x8)
-	char                                                         pad0x240_K7EV9[0x240];                             // 0x396(0x240)
+	char                                                         pad0x240_20YH9[0x240];                             // 0x396(0x240)
 };
 
 
@@ -260,7 +260,7 @@ public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x48(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x20_7FGFJ[0x20];                               // 0x48(0x20)
+	char                                                         pad0x20_713FR[0x20];                               // 0x48(0x20)
 };
 
 
@@ -271,7 +271,7 @@ public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x48(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x20_50DOY[0x20];                               // 0x48(0x20)
+	char                                                         pad0x20_6DBI9[0x20];                               // 0x48(0x20)
 };
 
 
@@ -281,9 +281,9 @@ class CanvasPanelSlot: public PanelSlot
 public:
 	Struct AnchorData                                            LayoutData;                                        // 0x38(0x28)
 	bool                                                         bAutoSize;                                         // 0x60(0x1)
-	char                                                         pad0x3_3ZRMY[0x3];                                 // 0x61(0x3)
+	char                                                         pad0x3_Q4Y0W[0x3];                                 // 0x61(0x3)
 	int                                                          ZOrder;                                            // 0x64(0x4)
-	char                                                         pad0x10_YCUQL[0x10];                               // 0x66(0x10)
+	char                                                         pad0x10_28JOA[0x10];                               // 0x66(0x10)
 };
 
 
@@ -293,14 +293,14 @@ class GridSlot: public PanelSlot
 public:
 	byte                                                         HorizontalAlignment;                               // 0x38(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x39(0x1)
-	char                                                         pad0x2_TZKVV[0x2];                                 // 0x3a(0x2)
+	char                                                         pad0x2_E96ZG[0x2];                                 // 0x3a(0x2)
 	int                                                          Row;                                               // 0x3c(0x4)
 	int                                                          RowSpan;                                           // 0x40(0x4)
 	int                                                          Column;                                            // 0x44(0x4)
 	int                                                          ColumnSpan;                                        // 0x48(0x4)
 	int                                                          Layer;                                             // 0x4c(0x4)
 	Struct Vector2D                                              Nudge;                                             // 0x50(0x8)
-	char                                                         pad0x18_HRRHQ[0x18];                               // 0x56(0x18)
+	char                                                         pad0x18_GUC0D[0x18];                               // 0x56(0x18)
 };
 
 
@@ -312,7 +312,7 @@ public:
 	Struct SlateChildSize                                        Size;                                              // 0x48(0x8)
 	byte                                                         HorizontalAlignment;                               // 0x50(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x51(0x1)
-	char                                                         pad0x10_RYBUL[0x10];                               // 0x50(0x10)
+	char                                                         pad0x10_GHAT9[0x10];                               // 0x50(0x10)
 };
 
 
@@ -323,7 +323,7 @@ public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x48(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x10_7T6QZ[0x10];                               // 0x48(0x10)
+	char                                                         pad0x10_4VX5S[0x10];                               // 0x48(0x10)
 };
 
 
@@ -334,9 +334,9 @@ public:
 	bool                                                         bIsTitleSafe;                                      // 0x38(0x1)
 	byte                                                         HAlign;                                            // 0x39(0x1)
 	byte                                                         VAlign;                                            // 0x3a(0x1)
-	char                                                         pad0x1_GG481[0x1];                                 // 0x3b(0x1)
+	char                                                         pad0x1_26OLR[0x1];                                 // 0x3b(0x1)
 	Struct Margin                                                Padding;                                           // 0x3c(0x10)
-	char                                                         pad0x24_KHF71[0x24];                               // 0x4a(0x24)
+	char                                                         pad0x24_UCTC0[0x24];                               // 0x4a(0x24)
 };
 
 
@@ -347,7 +347,7 @@ public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x48(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x20_X2CSF[0x20];                               // 0x48(0x20)
+	char                                                         pad0x20_0AHEZ[0x20];                               // 0x48(0x20)
 };
 
 
@@ -357,7 +357,7 @@ class ScrollBoxSlot: public PanelSlot
 public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         pad0x11_6C9OU[0x11];                               // 0x47(0x11)
+	char                                                         pad0x11_KBAZ8[0x11];                               // 0x47(0x11)
 };
 
 
@@ -368,7 +368,7 @@ public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x48(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x20_SUJHA[0x20];                               // 0x48(0x20)
+	char                                                         pad0x20_MA0R5[0x20];                               // 0x48(0x20)
 };
 
 
@@ -378,10 +378,10 @@ class UniformGridSlot: public PanelSlot
 public:
 	byte                                                         HorizontalAlignment;                               // 0x38(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x39(0x1)
-	char                                                         pad0x2_XZYDT[0x2];                                 // 0x3a(0x2)
+	char                                                         pad0x2_U8E3G[0x2];                                 // 0x3a(0x2)
 	int                                                          Row;                                               // 0x3c(0x4)
 	int                                                          Column;                                            // 0x40(0x4)
-	char                                                         pad0x14_ZUMJO[0x14];                               // 0x42(0x14)
+	char                                                         pad0x14_6G40N[0x14];                               // 0x42(0x14)
 };
 
 
@@ -393,7 +393,7 @@ public:
 	Struct SlateChildSize                                        Size;                                              // 0x48(0x8)
 	byte                                                         HorizontalAlignment;                               // 0x50(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x51(0x1)
-	char                                                         pad0x10_0JZ71[0x10];                               // 0x50(0x10)
+	char                                                         pad0x10_2SPEG[0x10];                               // 0x50(0x10)
 };
 
 
@@ -404,7 +404,7 @@ public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x48(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x10_NQO8V[0x10];                               // 0x48(0x10)
+	char                                                         pad0x10_WB69G[0x10];                               // 0x48(0x10)
 };
 
 
@@ -414,11 +414,11 @@ class WrapBoxSlot: public PanelSlot
 public:
 	Struct Margin                                                Padding;                                           // 0x38(0x10)
 	bool                                                         bFillEmptySpace;                                   // 0x48(0x1)
-	char                                                         pad0x3_HGMVD[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_2DPU4[0x3];                                 // 0x49(0x3)
 	float                                                        FillSpanWhenLessThan;                              // 0x4c(0x4)
 	byte                                                         HorizontalAlignment;                               // 0x50(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x51(0x1)
-	char                                                         pad0x10_48YCS[0x10];                               // 0x50(0x10)
+	char                                                         pad0x10_7LV4Q[0x10];                               // 0x50(0x10)
 };
 
 
@@ -429,10 +429,10 @@ public:
 	int                                                          NumberOfPieces;                                    // 0x138(0x4)
 	float                                                        Period;                                            // 0x13c(0x4)
 	float                                                        Radius;                                            // 0x140(0x4)
-	char                                                         pad0x4_GT6SB[0x4];                                 // 0x144(0x4)
+	char                                                         pad0x4_FFUDM[0x4];                                 // 0x144(0x4)
 	Class SlateBrushAsset*                                       PieceImage;                                        // 0x148(0x8)
 	Struct SlateBrush                                            Image;                                             // 0x150(0x90)
-	char                                                         pad0x138_6Y4MC[0x138];                             // 0x1de(0x138)
+	char                                                         pad0x138_LAD75[0x138];                             // 0x1de(0x138)
 };
 
 
@@ -441,7 +441,7 @@ class ComboBox: public Widget
 {
 public:
 	TArray<class Object*>                                        Items;                                             // 0x138(0x10)
-	char                                                         pad0x48_5EPP8[0x48];                               // 0x146(0x48)
+	char                                                         pad0x48_KEQIU[0x48];                               // 0x146(0x48)
 };
 
 
@@ -455,8 +455,8 @@ public:
 	Struct Margin                                                ContentPadding;                                    // 0x580(0x10)
 	float                                                        MaxListHeight;                                     // 0x590(0x4)
 	bool                                                         HasDownArrow;                                      // 0x594(0x1)
-	char                                                         pad0x3_7JXXO[0x3];                                 // 0x595(0x3)
-	char                                                         pad0x8e_M47XR[0x8e];                               // 0x596(0x8e)
+	char                                                         pad0x3_N9FDO[0x3];                                 // 0x595(0x3)
+	char                                                         pad0x8e_KZPE9[0x8e];                               // 0x596(0x8e)
 };
 
 
@@ -475,15 +475,15 @@ public:
 	Struct SlateColor                                            ColorAndOpacity;                                   // 0x450(0x30)
 	bool                                                         IsReadOnly;                                        // 0x480(0x1)
 	bool                                                         IsPassword;                                        // 0x481(0x1)
-	char                                                         pad0x2_G7V1M[0x2];                                 // 0x482(0x2)
+	char                                                         pad0x2_D5PFK[0x2];                                 // 0x482(0x2)
 	float                                                        MinimumDesiredWidth;                               // 0x484(0x4)
 	bool                                                         IsCaretMovedWhenGainFocus;                         // 0x488(0x1)
 	bool                                                         SelectAllTextWhenFocused;                          // 0x489(0x1)
 	bool                                                         RevertTextOnEscape;                                // 0x48a(0x1)
 	bool                                                         ClearKeyboardFocusOnCommit;                        // 0x48b(0x1)
 	bool                                                         SelectAllTextOnCommit;                             // 0x48c(0x1)
-	char                                                         pad0x3_MP278[0x3];                                 // 0x48d(0x3)
-	char                                                         pad0x3e_14D5J[0x3e];                               // 0x48e(0x3e)
+	char                                                         pad0x3_XL0IG[0x3];                                 // 0x48d(0x3)
+	char                                                         pad0x3e_U6I8F[0x3e];                               // 0x48e(0x3e)
 };
 
 
@@ -501,7 +501,7 @@ public:
 	Struct LinearColor                                           ReadOnlyForegroundColor;                           // 0xa90(0x10)
 	bool                                                         IsReadOnly;                                        // 0xaa0(0x1)
 	bool                                                         IsPassword;                                        // 0xaa1(0x1)
-	char                                                         pad0x2_ET162[0x2];                                 // 0xaa2(0x2)
+	char                                                         pad0x2_XAFRC[0x2];                                 // 0xaa2(0x2)
 	float                                                        MinimumDesiredWidth;                               // 0xaa4(0x4)
 	Struct Margin                                                Padding;                                           // 0xaa8(0x10)
 	bool                                                         IsCaretMovedWhenGainFocus;                         // 0xab8(0x1)
@@ -509,8 +509,8 @@ public:
 	bool                                                         RevertTextOnEscape;                                // 0xaba(0x1)
 	bool                                                         ClearKeyboardFocusOnCommit;                        // 0xabb(0x1)
 	bool                                                         SelectAllTextOnCommit;                             // 0xabc(0x1)
-	char                                                         pad0x3_DBFZK[0x3];                                 // 0xabd(0x3)
-	char                                                         pad0x3e_9MP1W[0x3e];                               // 0xabe(0x3e)
+	char                                                         pad0x3_VQ26A[0x3];                                 // 0xabd(0x3)
+	char                                                         pad0x3e_SL697[0x3e];                               // 0xabe(0x3e)
 };
 
 
@@ -518,14 +518,14 @@ public:
 class ExpandableArea: public Widget
 {
 public:
-	char                                                         pad0x8_05UDY[0x8];                                 // 0x138(0x8)
+	char                                                         pad0x8_SVOQB[0x8];                                 // 0x138(0x8)
 	bool                                                         bIsExpanded;                                       // 0x140(0x1)
-	char                                                         pad0x3_JXG42[0x3];                                 // 0x141(0x3)
+	char                                                         pad0x3_PAG6E[0x3];                                 // 0x141(0x3)
 	float                                                        MaxHeight;                                         // 0x144(0x4)
 	Struct Margin                                                AreaPadding;                                       // 0x148(0x10)
 	Class Widget*                                                HeaderContent;                                     // 0x168(0x8)
 	Class Widget*                                                BodyContent;                                       // 0x170(0x8)
-	char                                                         pad0x28_WAPUD[0x28];                               // 0x176(0x28)
+	char                                                         pad0x28_2T2X7[0x28];                               // 0x176(0x28)
 };
 
 
@@ -536,7 +536,7 @@ public:
 	Class SlateBrushAsset*                                       Image;                                             // 0x138(0x8)
 	Struct SlateBrush                                            Brush;                                             // 0x140(0x90)
 	Struct LinearColor                                           ColorAndOpacity;                                   // 0x1e0(0x10)
-	char                                                         pad0x58_YDCQW[0x58];                               // 0x1ee(0x58)
+	char                                                         pad0x58_ZTP3Z[0x58];                               // 0x1ee(0x58)
 };
 
 
@@ -548,10 +548,10 @@ public:
 	Struct TextBlockStyle                                        WidgetStyle;                                       // 0x170(0x160)
 	byte                                                         Justification;                                     // 0x2d0(0x1)
 	bool                                                         bAutoWrapText;                                     // 0x2d1(0x1)
-	char                                                         pad0x2_J2T43[0x2];                                 // 0x2d2(0x2)
+	char                                                         pad0x2_XD3HE[0x2];                                 // 0x2d2(0x2)
 	float                                                        WrapTextAt;                                        // 0x2d4(0x4)
 	Struct SlateFontInfo                                         Font;                                              // 0x2d8(0x40)
-	char                                                         pad0xb8_EWLRF[0xb8];                               // 0x316(0xb8)
+	char                                                         pad0xb8_3GTRN[0xb8];                               // 0x316(0xb8)
 };
 
 
@@ -565,13 +565,13 @@ public:
 	Class SlateWidgetStyleAsset*                                 Style;                                             // 0xb30(0x8)
 	byte                                                         Justification;                                     // 0xb38(0x1)
 	bool                                                         bAutoWrapText;                                     // 0xb39(0x1)
-	char                                                         pad0x2_VBORY[0x2];                                 // 0xb3a(0x2)
+	char                                                         pad0x2_GC7QT[0x2];                                 // 0xb3a(0x2)
 	float                                                        WrapTextAt;                                        // 0xb3c(0x4)
 	Struct SlateFontInfo                                         Font;                                              // 0xb40(0x40)
 	Struct LinearColor                                           ForegroundColor;                                   // 0xb80(0x10)
 	Struct LinearColor                                           BackgroundColor;                                   // 0xb90(0x10)
 	Struct LinearColor                                           ReadOnlyForegroundColor;                           // 0xba0(0x10)
-	char                                                         pad0x58_LVIFQ[0x58];                               // 0xbae(0x58)
+	char                                                         pad0x58_HA10J[0x58];                               // 0xbae(0x58)
 };
 
 
@@ -587,7 +587,7 @@ class PanelWidget: public Widget
 {
 public:
 	TArray<class PanelSlot*>                                     Slots;                                             // 0x138(0x10)
-	char                                                         pad0x28_N6X4G[0x28];                               // 0x146(0x28)
+	char                                                         pad0x28_GCVXL[0x28];                               // 0x146(0x28)
 };
 
 
@@ -613,11 +613,11 @@ public:
 	Struct Margin                                                Padding;                                           // 0x170(0x10)
 	byte                                                         HorizontalAlignment;                               // 0x180(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x181(0x1)
-	char                                                         pad0x6_ZK0E3[0x6];                                 // 0x182(0x6)
+	char                                                         pad0x6_RHCWA[0x6];                                 // 0x182(0x6)
 	Struct SlateBrush                                            Background;                                        // 0x188(0x90)
 	Struct LinearColor                                           BrushColor;                                        // 0x228(0x10)
 	bool                                                         bShowEffectWhenDisabled;                           // 0x248(0x1)
-	char                                                         pad0x3_JOEO1[0x3];                                 // 0x249(0x3)
+	char                                                         pad0x3_E2GTG[0x3];                                 // 0x249(0x3)
 	Class SlateBrushAsset*                                       Brush;                                             // 0x2a8(0x8)
 };
 
@@ -633,8 +633,8 @@ public:
 	byte                                                         ClickMethod;                                       // 0x420(0x1)
 	byte                                                         TouchMethod;                                       // 0x421(0x1)
 	bool                                                         IsFocusable;                                       // 0x422(0x1)
-	char                                                         pad0x5_YLXLV[0x5];                                 // 0x423(0x5)
-	char                                                         pad0x52_1WZO3[0x52];                               // 0x426(0x52)
+	char                                                         pad0x5_0ENX7[0x5];                                 // 0x423(0x5)
+	char                                                         pad0x52_27CW0[0x52];                               // 0x426(0x52)
 };
 
 
@@ -643,7 +643,7 @@ class CheckBox: public ContentWidget
 {
 public:
 	byte                                                         CheckedState;                                      // 0x150(0x1)
-	char                                                         pad0x3_Q1LCG[0x3];                                 // 0x151(0x3)
+	char                                                         pad0x3_LBHFN[0x3];                                 // 0x151(0x3)
 	Struct CheckBoxStyle                                         WidgetStyle;                                       // 0x168(0x5f0)
 	Class SlateWidgetStyleAsset*                                 Style;                                             // 0x758(0x8)
 	Class SlateBrushAsset*                                       UncheckedImage;                                    // 0x760(0x8)
@@ -656,11 +656,11 @@ public:
 	Class SlateBrushAsset*                                       UndeterminedHoveredImage;                          // 0x798(0x8)
 	Class SlateBrushAsset*                                       UndeterminedPressedImage;                          // 0x7a0(0x8)
 	byte                                                         HorizontalAlignment;                               // 0x7a8(0x1)
-	char                                                         pad0x3_3MVZF[0x3];                                 // 0x7a9(0x3)
+	char                                                         pad0x3_EVN6N[0x3];                                 // 0x7a9(0x3)
 	Struct Margin                                                Padding;                                           // 0x7ac(0x10)
-	char                                                         pad0x4_LYLKG[0x4];                                 // 0x7bc(0x4)
+	char                                                         pad0x4_YIJ33[0x4];                                 // 0x7bc(0x4)
 	Struct SlateColor                                            BorderBackgroundColor;                             // 0x7c0(0x30)
-	char                                                         pad0x88_16M79[0x88];                               // 0x7ee(0x88)
+	char                                                         pad0x88_PQJTS[0x88];                               // 0x7ee(0x88)
 };
 
 
@@ -669,7 +669,7 @@ class InvalidationBox: public ContentWidget
 {
 public:
 	bool                                                         CacheRelativeTransforms;                           // 0x150(0x1)
-	char                                                         pad0x21_PPFR9[0x21];                               // 0x14f(0x21)
+	char                                                         pad0x21_EY72P[0x21];                               // 0x14f(0x21)
 };
 
 
@@ -679,8 +679,8 @@ class MenuAnchor: public ContentWidget
 public:
 	class                                                        MenuClass;                                         // 0x150(0x8)
 	byte                                                         Placement;                                         // 0x168(0x1)
-	char                                                         pad0x7_DDVMK[0x7];                                 // 0x169(0x7)
-	char                                                         pad0x36_J30ZH[0x36];                               // 0x16e(0x36)
+	char                                                         pad0x7_FP5IG[0x7];                                 // 0x169(0x7)
+	char                                                         pad0x36_FSI6T[0x36];                               // 0x16e(0x36)
 };
 
 
@@ -704,9 +704,9 @@ class ScaleBox: public ContentWidget
 public:
 	byte                                                         StretchDirection;                                  // 0x150(0x1)
 	byte                                                         Stretch;                                           // 0x151(0x1)
-	char                                                         pad0x2_K2MCI[0x2];                                 // 0x152(0x2)
+	char                                                         pad0x2_CHFB1[0x2];                                 // 0x152(0x2)
 	float                                                        UserSpecifiedScale;                                // 0x154(0x4)
-	char                                                         pad0x20_6FYO7[0x20];                               // 0x156(0x20)
+	char                                                         pad0x20_49CTF[0x20];                               // 0x156(0x20)
 };
 
 
@@ -720,14 +720,14 @@ public:
 	bool                                                         bOverride_MinDesiredHeight;                        // 0x150(0x1)
 	bool                                                         bOverride_MaxDesiredWidth;                         // 0x150(0x1)
 	bool                                                         bOverride_MaxDesiredHeight;                        // 0x150(0x1)
-	char                                                         pad0x3_MQS9K[0x3];                                 // 0x151(0x3)
+	char                                                         pad0x3_MVXXC[0x3];                                 // 0x151(0x3)
 	float                                                        WidthOverride;                                     // 0x154(0x4)
 	float                                                        HeightOverride;                                    // 0x158(0x4)
 	float                                                        MinDesiredWidth;                                   // 0x15c(0x4)
 	float                                                        MinDesiredHeight;                                  // 0x160(0x4)
 	float                                                        MaxDesiredWidth;                                   // 0x164(0x4)
 	float                                                        MaxDesiredHeight;                                  // 0x168(0x4)
-	char                                                         pad0x24_C71GM[0x24];                               // 0x16a(0x24)
+	char                                                         pad0x24_GM2SH[0x24];                               // 0x16a(0x24)
 };
 
 
@@ -736,7 +736,7 @@ class Viewport: public ContentWidget
 {
 public:
 	Struct LinearColor                                           BackgroundColor;                                   // 0x150(0x10)
-	char                                                         pad0x50_AI8IO[0x50];                               // 0x15e(0x50)
+	char                                                         pad0x50_6B0GQ[0x50];                               // 0x15e(0x50)
 };
 
 
@@ -746,7 +746,7 @@ class GridPanel: public PanelWidget
 public:
 	TArray<Float ColumnFill>                                     ColumnFill;                                        // 0x150(0x10)
 	TArray<Float RowFill>                                        RowFill;                                           // 0x160(0x10)
-	char                                                         pad0x38_XAE52[0x38];                               // 0x16e(0x38)
+	char                                                         pad0x38_PELUK[0x38];                               // 0x16e(0x38)
 };
 
 
@@ -775,10 +775,10 @@ public:
 	byte                                                         Orientation;                                       // 0x8c0(0x1)
 	byte                                                         ScrollBarVisibility;                               // 0x8c1(0x1)
 	byte                                                         ConsumeMouseWheel;                                 // 0x8c2(0x1)
-	char                                                         pad0x1_1330K[0x1];                                 // 0x8c3(0x1)
+	char                                                         pad0x1_PX50Z[0x1];                                 // 0x8c3(0x1)
 	Struct Vector2D                                              ScrollbarThickness;                                // 0x8c4(0x8)
 	bool                                                         AlwaysShowScrollbar;                               // 0x8cc(0x1)
-	char                                                         pad0x25_84Z01[0x25];                               // 0x8cb(0x25)
+	char                                                         pad0x25_KDP2B[0x25];                               // 0x8cb(0x25)
 };
 
 
@@ -789,7 +789,7 @@ public:
 	Struct Margin                                                SlotPadding;                                       // 0x150(0x10)
 	float                                                        MinDesiredSlotWidth;                               // 0x160(0x4)
 	float                                                        MinDesiredSlotHeight;                              // 0x164(0x4)
-	char                                                         pad0x20_WH3A0[0x20];                               // 0x166(0x20)
+	char                                                         pad0x20_W9ENN[0x20];                               // 0x166(0x20)
 };
 
 
@@ -805,7 +805,7 @@ class WidgetSwitcher: public PanelWidget
 {
 public:
 	int                                                          ActiveWidgetIndex;                                 // 0x150(0x4)
-	char                                                         pad0x24_5VXQK[0x24];                               // 0x152(0x24)
+	char                                                         pad0x24_SAIBN[0x24];                               // 0x152(0x24)
 };
 
 
@@ -814,7 +814,7 @@ class WrapBox: public PanelWidget
 {
 public:
 	Struct Vector2D                                              InnerSlotPadding;                                  // 0x150(0x8)
-	char                                                         pad0x28_9S1R5[0x28];                               // 0x156(0x28)
+	char                                                         pad0x28_P0GPH[0x28];                               // 0x156(0x28)
 };
 
 
@@ -830,9 +830,9 @@ public:
 	float                                                        Percent;                                           // 0x310(0x4)
 	byte                                                         BarFillType;                                       // 0x314(0x1)
 	bool                                                         bIsMarquee;                                        // 0x315(0x1)
-	char                                                         pad0x2_C2A4E[0x2];                                 // 0x316(0x2)
+	char                                                         pad0x2_HIU9C[0x2];                                 // 0x316(0x2)
 	Struct LinearColor                                           FillColorAndOpacity;                               // 0x328(0x10)
-	char                                                         pad0x48_WUVJ8[0x48];                               // 0x336(0x48)
+	char                                                         pad0x48_DC7SR[0x48];                               // 0x336(0x48)
 };
 
 
@@ -845,13 +845,13 @@ public:
 	Struct LinearColor                                           Color;                                             // 0x1c0(0x10)
 	byte                                                         Justification;                                     // 0x1d0(0x1)
 	bool                                                         AutoWrapText;                                      // 0x1d1(0x1)
-	char                                                         pad0x2_HWPMY[0x2];                                 // 0x1d2(0x2)
+	char                                                         pad0x2_MMPVJ[0x2];                                 // 0x1d2(0x2)
 	float                                                        WrapTextAt;                                        // 0x1d4(0x4)
 	Struct Margin                                                Margin;                                            // 0x1d8(0x10)
 	float                                                        LineHeightPercentage;                              // 0x1e8(0x4)
-	char                                                         pad0x4_G4L08[0x4];                                 // 0x1ec(0x4)
+	char                                                         pad0x4_HGYG3[0x4];                                 // 0x1ec(0x4)
 	TArray<class RichTextBlockDecorator*>                        Decorators;                                        // 0x1f0(0x10)
-	char                                                         pad0x198_L22IW[0x198];                             // 0x1fe(0x198)
+	char                                                         pad0x198_TXB32[0x198];                             // 0x1fe(0x198)
 };
 
 
@@ -863,9 +863,9 @@ public:
 	Class SlateWidgetStyleAsset*                                 Style;                                             // 0x650(0x8)
 	bool                                                         bAlwaysShowScrollbar;                              // 0x658(0x1)
 	byte                                                         Orientation;                                       // 0x659(0x1)
-	char                                                         pad0x2_3RPSS[0x2];                                 // 0x65a(0x2)
+	char                                                         pad0x2_2E3E2[0x2];                                 // 0x65a(0x2)
 	Struct Vector2D                                              Thickness;                                         // 0x65c(0x8)
-	char                                                         pad0x2c_HXEPV[0x2c];                               // 0x662(0x2c)
+	char                                                         pad0x2c_NWZXI[0x2c];                               // 0x662(0x2c)
 };
 
 
@@ -876,13 +876,13 @@ public:
 	float                                                        Value;                                             // 0x138(0x4)
 	Struct SliderStyle                                           WidgetStyle;                                       // 0x150(0x248)
 	byte                                                         Orientation;                                       // 0x398(0x1)
-	char                                                         pad0x3_691SF[0x3];                                 // 0x399(0x3)
+	char                                                         pad0x3_8J4D6[0x3];                                 // 0x399(0x3)
 	Struct LinearColor                                           SliderBarColor;                                    // 0x39c(0x10)
 	Struct LinearColor                                           SliderHandleColor;                                 // 0x3ac(0x10)
 	bool                                                         IndentHandle;                                      // 0x3bc(0x1)
 	bool                                                         Locked;                                            // 0x3bd(0x1)
-	char                                                         pad0x2_DQRMO[0x2];                                 // 0x3be(0x2)
-	char                                                         pad0x4c_TAXVK[0x4c];                               // 0x3be(0x4c)
+	char                                                         pad0x2_XAQCB[0x2];                                 // 0x3be(0x2)
+	char                                                         pad0x4c_S1UO2[0x4c];                               // 0x3be(0x4c)
 };
 
 
@@ -891,7 +891,7 @@ class Spacer: public Widget
 {
 public:
 	Struct Vector2D                                              Size;                                              // 0x138(0x8)
-	char                                                         pad0x28_K55K4[0x28];                               // 0x13e(0x28)
+	char                                                         pad0x28_3NE4C[0x28];                               // 0x13e(0x28)
 };
 
 
@@ -908,18 +908,18 @@ public:
 	float                                                        MinDesiredWidth;                                   // 0x4b8(0x4)
 	bool                                                         ClearKeyboardFocusOnCommit;                        // 0x4bc(0x1)
 	bool                                                         SelectAllTextOnCommit;                             // 0x4bd(0x1)
-	char                                                         pad0x2_8UK95[0x2];                                 // 0x4be(0x2)
+	char                                                         pad0x2_L7KPE[0x2];                                 // 0x4be(0x2)
 	Struct SlateColor                                            ForegroundColor;                                   // 0x4c0(0x30)
 	bool                                                         bOverride_MinValue;                                // 0x530(0x1)
 	bool                                                         bOverride_MaxValue;                                // 0x530(0x1)
 	bool                                                         bOverride_MinSliderValue;                          // 0x530(0x1)
 	bool                                                         bOverride_MaxSliderValue;                          // 0x530(0x1)
-	char                                                         pad0x3_XMURI[0x3];                                 // 0x531(0x3)
+	char                                                         pad0x3_9T4MM[0x3];                                 // 0x531(0x3)
 	float                                                        MinValue;                                          // 0x534(0x4)
 	float                                                        MaxValue;                                          // 0x538(0x4)
 	float                                                        MinSliderValue;                                    // 0x53c(0x4)
 	float                                                        MaxSliderValue;                                    // 0x540(0x4)
-	char                                                         pad0x24_0MFW7[0x24];                               // 0x542(0x24)
+	char                                                         pad0x24_TIACB[0x24];                               // 0x542(0x24)
 };
 
 
@@ -935,11 +935,11 @@ class ListView: public TableViewBase
 {
 public:
 	float                                                        ItemHeight;                                        // 0x138(0x4)
-	char                                                         pad0x4_G4ZQC[0x4];                                 // 0x13c(0x4)
+	char                                                         pad0x4_A8RPL[0x4];                                 // 0x13c(0x4)
 	TArray<class Object*>                                        Items;                                             // 0x140(0x10)
 	byte                                                         SelectionMode;                                     // 0x150(0x1)
-	char                                                         pad0x3_O591A[0x3];                                 // 0x151(0x3)
-	char                                                         pad0x32_FW8SI[0x32];                               // 0x152(0x32)
+	char                                                         pad0x3_V8CDK[0x3];                                 // 0x151(0x3)
+	char                                                         pad0x32_2UKIF[0x32];                               // 0x152(0x32)
 };
 
 
@@ -951,8 +951,8 @@ public:
 	float                                                        ItemHeight;                                        // 0x13c(0x4)
 	TArray<class Object*>                                        Items;                                             // 0x140(0x10)
 	byte                                                         SelectionMode;                                     // 0x150(0x1)
-	char                                                         pad0x3_KAPWO[0x3];                                 // 0x151(0x3)
-	char                                                         pad0x32_D62EA[0x32];                               // 0x152(0x32)
+	char                                                         pad0x3_O2XK2[0x3];                                 // 0x151(0x3)
+	char                                                         pad0x32_KM9K2[0x32];                               // 0x152(0x32)
 };
 
 
@@ -968,12 +968,12 @@ public:
 	Struct LinearColor                                           ShadowColorAndOpacity;                             // 0x210(0x10)
 	byte                                                         Justification;                                     // 0x230(0x1)
 	bool                                                         AutoWrapText;                                      // 0x231(0x1)
-	char                                                         pad0x2_MUHDD[0x2];                                 // 0x232(0x2)
+	char                                                         pad0x2_MJY1E[0x2];                                 // 0x232(0x2)
 	float                                                        WrapTextAt;                                        // 0x234(0x4)
 	float                                                        MinDesiredWidth;                                   // 0x238(0x4)
 	Struct Margin                                                Margin;                                            // 0x23c(0x10)
 	float                                                        LineHeightPercentage;                              // 0x24c(0x4)
-	char                                                         pad0x20_3TNI8[0x20];                               // 0x24e(0x20)
+	char                                                         pad0x20_15CX5[0x20];                               // 0x24e(0x20)
 };
 
 
@@ -985,10 +985,10 @@ public:
 	bool                                                         bAnimateHorizontally;                              // 0x13c(0x1)
 	bool                                                         bAnimateVertically;                                // 0x13d(0x1)
 	bool                                                         bAnimateOpacity;                                   // 0x13e(0x1)
-	char                                                         pad0x1_1H0SJ[0x1];                                 // 0x13f(0x1)
+	char                                                         pad0x1_652DR[0x1];                                 // 0x13f(0x1)
 	Class SlateBrushAsset*                                       PieceImage;                                        // 0x140(0x8)
 	Struct SlateBrush                                            Image;                                             // 0x148(0x90)
-	char                                                         pad0x138_7Y632[0x138];                             // 0x1d6(0x138)
+	char                                                         pad0x138_N1JMV[0x138];                             // 0x1d6(0x138)
 };
 
 
@@ -996,9 +996,9 @@ public:
 class WidgetAnimation: public MovieSceneSequence
 {
 public:
-	char                                                         pad0x20_V8R0Q[0x20];                               // 0x2a8(0x20)
+	char                                                         pad0x20_HV3G8[0x20];                               // 0x2a8(0x20)
 	Class MovieScene*                                            MovieScene;                                        // 0x2c8(0x8)
-	TArray<Struct WidgetAnimationBinding>                        AnimationBindings;                                 // 0x2d0(0x10)
+	TArray<struct AnimationBindings>                             AnimationBindings;                                 // 0x2d0(0x10)
 };
 
 
@@ -1007,9 +1007,9 @@ class WidgetBlueprintGeneratedClass: public BlueprintGeneratedClass
 {
 public:
 	Class WidgetTree*                                            WidgetTree;                                        // 0x228(0x8)
-	TArray<Struct DelegateRuntimeBinding>                        Bindings;                                          // 0x230(0x10)
+	TArray<struct Bindings>                                      Bindings;                                          // 0x230(0x10)
 	TArray<class WidgetAnimation*>                               Animations;                                        // 0x240(0x10)
-	TArray<Struct FName>                                         NamedSlots;                                        // 0x250(0x10)
+	TArray<struct FName>                                         NamedSlots;                                        // 0x250(0x10)
 };
 
 
@@ -1025,21 +1025,21 @@ class WidgetComponent: public PrimitiveComponent
 {
 public:
 	byte                                                         Space;                                             // 0x5b8(0x1)
-	char                                                         pad0x7_FBY0G[0x7];                                 // 0x5b9(0x7)
+	char                                                         pad0x7_IAWAA[0x7];                                 // 0x5b9(0x7)
 	class                                                        WidgetClass;                                       // 0x5c0(0x8)
 	Struct IntPoint                                              DrawSize;                                          // 0x5c8(0x8)
 	Struct Vector2D                                              Pivot;                                             // 0x5d0(0x8)
 	float                                                        MaxInteractionDistance;                            // 0x5d8(0x4)
-	char                                                         pad0x4_IKUYW[0x4];                                 // 0x5dc(0x4)
+	char                                                         pad0x4_VP5QG[0x4];                                 // 0x5dc(0x4)
 	Class LocalPlayer*                                           OwnerPlayer;                                       // 0x5e0(0x8)
 	Struct LinearColor                                           BackgroundColor;                                   // 0x5e8(0x10)
 	byte                                                         BlendMode;                                         // 0x5f8(0x1)
 	bool                                                         bIsOpaque;                                         // 0x5f9(0x1)
 	bool                                                         bIsTwoSided;                                       // 0x5fa(0x1)
-	char                                                         pad0x1_N0AA1[0x1];                                 // 0x5fb(0x1)
+	char                                                         pad0x1_533MN[0x1];                                 // 0x5fb(0x1)
 	float                                                        ParabolaDistortion;                                // 0x5fc(0x4)
 	bool                                                         TickWhenOffscreen;                                 // 0x600(0x1)
-	char                                                         pad0x7_PMR0O[0x7];                                 // 0x601(0x7)
+	char                                                         pad0x7_7ADD8[0x7];                                 // 0x601(0x7)
 	Class UserWidget*                                            Widget;                                            // 0x608(0x8)
 	Class BodySetup*                                             BodySetup;                                         // 0x610(0x8)
 	Class MaterialInterface*                                     TranslucentMaterial;                               // 0x618(0x8)
@@ -1052,7 +1052,7 @@ public:
 	Class MaterialInstanceDynamic*                               MaterialInstance;                                  // 0x650(0x8)
 	bool                                                         bUseLegacyRotation;                                // 0x658(0x1)
 	bool                                                         bAddedToScreen;                                    // 0x659(0x1)
-	char                                                         pad0x58_YW217[0x58];                               // 0x658(0x58)
+	char                                                         pad0x58_BG88A[0x58];                               // 0x658(0x58)
 };
 
 

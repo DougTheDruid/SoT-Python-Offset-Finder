@@ -17,9 +17,9 @@ public:
 class InstancedLayerComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_154EJ[0x8];                                 // 0x2e0(0x8)
-	TArray<Struct InstancedLayer>                                InstancedLayers;                                   // 0x2e8(0x10)
-	char                                                         pad0x38_ESM3U[0x38];                               // 0x2f6(0x38)
+	char                                                         pad0x8_4V7AC[0x8];                                 // 0x2e0(0x8)
+	TArray<struct InstancedLayers>                               InstancedLayers;                                   // 0x2e8(0x10)
+	char                                                         pad0x38_DNQM2[0x38];                               // 0x2f6(0x38)
 };
 
 
@@ -27,8 +27,8 @@ public:
 class LayerActorsDataAsset: public DataAsset
 {
 public:
-	TArray<AssetClass Actors>                                    Actors;                                            // 0x28(0x10)
-	TArray<AssetClass Items>                                     Items;                                             // 0x38(0x10)
+	TArray<Assetclass Actors>                                    Actors;                                            // 0x28(0x10)
+	TArray<Assetclass Items>                                     Items;                                             // 0x38(0x10)
 };
 
 

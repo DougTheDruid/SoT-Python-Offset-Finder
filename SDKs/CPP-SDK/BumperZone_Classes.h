@@ -11,18 +11,18 @@ class ShipBumperZone: public Actor
 {
 public:
 	bool                                                         UseInverseRightVector;                             // 0x3c8(0x1)
-	char                                                         pad0x2f_0J8TY[0x2f];                               // 0x3c9(0x2f)
+	char                                                         pad0x2f_QPPE5[0x2f];                               // 0x3c9(0x2f)
 	Class BoxComponent*                                          BumperZoneComponent;                               // 0x3f8(0x8)
 	Class SphereComponent*                                       DistanceRadiusComponent;                           // 0x400(0x8)
 	bool                                                         ApplyAngularImpulse;                               // 0x408(0x1)
-	char                                                         pad0x3_5C9JA[0x3];                                 // 0x409(0x3)
+	char                                                         pad0x3_6O0QQ[0x3];                                 // 0x409(0x3)
 	float                                                        AngularImpulse;                                    // 0x40c(0x4)
 	bool                                                         OverrideWheelControl;                              // 0x410(0x1)
 	bool                                                         ApplyWheelTurbulence;                              // 0x411(0x1)
-	char                                                         pad0x2_U2XL8[0x2];                                 // 0x412(0x2)
+	char                                                         pad0x2_9780O[0x2];                                 // 0x412(0x2)
 	float                                                        MinWheelTurbulence;                                // 0x414(0x4)
 	float                                                        MaxWheelTurbulence;                                // 0x418(0x4)
-	char                                                         pad0xc_KWIZQ[0xc];                                 // 0x41a(0xc)
+	char                                                         pad0xc_CI39U[0xc];                                 // 0x41a(0xc)
 };
 
 

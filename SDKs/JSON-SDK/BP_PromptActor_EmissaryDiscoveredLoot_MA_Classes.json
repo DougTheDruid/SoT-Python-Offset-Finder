@@ -31,7 +31,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
+        "Type": "TArray<struct Prompts>",
         "Size": "0x10",
         "Offset": "0x420"
       }

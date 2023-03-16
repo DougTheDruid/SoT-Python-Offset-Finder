@@ -46,7 +46,7 @@ public:
 	struct FName                                                 MaterialThicknessRTPCName;                         // 0x20(0x8)
 	struct FName                                                 MaterialReflectivityRTPCName;                      // 0x28(0x8)
 	byte                                                         EnvironmentTraceChannel;                           // 0x30(0x1)
-	char                                                         pad0x3_GR3U5[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_RB4TC[0x3];                                 // 0x31(0x3)
 	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
 	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
 	Struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)
@@ -74,14 +74,14 @@ public:
 	struct FName                                                 AudioGameStateFrontend;                            // 0x8(0x8)
 	struct FName                                                 AudioGameStateLoading;                             // 0x10(0x8)
 	struct FName                                                 AudioGameStateIngame;                              // 0x18(0x8)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnLobbyStart;                          // 0x20(0x10)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnLobbyEnd;                            // 0x30(0x10)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnEngageStart;                         // 0x40(0x10)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnEngageEnd;                           // 0x50(0x10)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnLoadingStart;                        // 0x60(0x10)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnLoadingEnd;                          // 0x70(0x10)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnFrontEndOrLoadingStart;              // 0x80(0x10)
-	TArray<Struct StringAssetReference>                          EventsToPlayOnFrontEndOrLoadingEnd;                // 0x90(0x10)
+	TArray<struct EventsToPlayOnLobbyStart>                      EventsToPlayOnLobbyStart;                          // 0x20(0x10)
+	TArray<struct EventsToPlayOnLobbyEnd>                        EventsToPlayOnLobbyEnd;                            // 0x30(0x10)
+	TArray<struct EventsToPlayOnEngageStart>                     EventsToPlayOnEngageStart;                         // 0x40(0x10)
+	TArray<struct EventsToPlayOnEngageEnd>                       EventsToPlayOnEngageEnd;                           // 0x50(0x10)
+	TArray<struct EventsToPlayOnLoadingStart>                    EventsToPlayOnLoadingStart;                        // 0x60(0x10)
+	TArray<struct EventsToPlayOnLoadingEnd>                      EventsToPlayOnLoadingEnd;                          // 0x70(0x10)
+	TArray<struct EventsToPlayOnFrontEndOrLoadingStart>          EventsToPlayOnFrontEndOrLoadingStart;              // 0x80(0x10)
+	TArray<struct EventsToPlayOnFrontEndOrLoadingEnd>            EventsToPlayOnFrontEndOrLoadingEnd;                // 0x90(0x10)
 };
 
 
@@ -92,8 +92,8 @@ public:
 	Struct StringAssetReference                                  PlayEvent;                                         // 0x0(0x10)
 	Struct StringAssetReference                                  StopEvent;                                         // 0x10(0x10)
 	int                                                          PreBufferCount;                                    // 0x20(0x4)
-	char                                                         pad0x4_87IB1[0x4];                                 // 0x24(0x4)
-	TArray<Struct WwiseBinkTrackMappings>                        Mappings;                                          // 0x28(0x10)
+	char                                                         pad0x4_F9U47[0x4];                                 // 0x24(0x4)
+	TArray<struct Mappings>                                      Mappings;                                          // 0x28(0x10)
 };
 
 
@@ -102,8 +102,8 @@ struct WwiseBinkTrackMappings
 {
 public:
 	byte                                                         mLanguage;                                         // 0x0(0x1)
-	char                                                         pad0x7_RBBYK[0x7];                                 // 0x1(0x7)
-	TArray<Struct WwiseBinkTrackMapping>                         mChannels;                                         // 0x8(0x10)
+	char                                                         pad0x7_ZAFZL[0x7];                                 // 0x1(0x7)
+	TArray<struct mChannels>                                     mChannels;                                         // 0x8(0x10)
 };
 
 
@@ -113,7 +113,7 @@ struct WwiseBinkTrackMapping
 public:
 	byte                                                         mChannelMapping;                                   // 0x0(0x1)
 	bool                                                         mRequired;                                         // 0x1(0x1)
-	char                                                         pad0x2_0HETQ[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_JA93T[0x2];                                 // 0x2(0x2)
 	float                                                        mVolumeDb;                                         // 0x4(0x4)
 };
 
@@ -163,7 +163,7 @@ struct WwiseNativeEmitterPoolDensityParams
 {
 public:
 	bool                                                         PlayPoolDensityAudio;                              // 0x0(0x1)
-	char                                                         pad0x7_4S7YN[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_GQNJP[0x7];                                 // 0x1(0x7)
 	Class WwiseEvent*                                            PoolDensityAudioPlayEvent;                         // 0x8(0x8)
 	Class WwiseEvent*                                            PoolDensityAudioStopEvent;                         // 0x10(0x8)
 	struct FName                                                 DensityRtpcName;                                   // 0x18(0x8)

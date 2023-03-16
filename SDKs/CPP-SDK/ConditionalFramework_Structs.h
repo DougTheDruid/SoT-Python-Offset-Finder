@@ -56,7 +56,7 @@ public:
 struct AndCondition
 {
 public:
-	TArray<Struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+	TArray<struct Conditions>                                    Conditions;                                        // 0x8(0x10)
 };
 
 
@@ -96,7 +96,7 @@ public:
 struct IsObjectOfTypeCondition
 {
 public:
-	TArray<AssetClass TargetObjectClasses>                       TargetObjectClasses;                               // 0x28(0x10)
+	TArray<Assetclass TargetObjectClasses>                       TargetObjectClasses;                               // 0x28(0x10)
 };
 
 
@@ -112,7 +112,7 @@ public:
 struct OrCondition
 {
 public:
-	TArray<Struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+	TArray<struct Conditions>                                    Conditions;                                        // 0x8(0x10)
 };
 
 

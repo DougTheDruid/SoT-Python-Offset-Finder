@@ -11,15 +11,15 @@ class BP_Prompt_MapBundle_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x93_QHCWR[0x93];                               // 0x120(0x93)
+	char                                                         pad0x132_1V6XK[0x132];                             // 0x120(0x132)
 	class                                                        MapBundlePromptAccessKey;                          // 0x120(0x8)
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x128(0x68)
 	bool                                                         MapBundleBecameVisible;                            // 0x190(0x1)
-	char                                                         pad0x7_FC32Y[0x7];                                 // 0x191(0x7)
+	char                                                         pad0x7_3AD3V[0x7];                                 // 0x191(0x7)
 	Struct ObjectMessagingHandle                                 MapBundleAppearedHandle;                           // 0x198(0x48)
 	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x1e0(0x8)
 	bool                                                         HasShown;                                          // 0x1e8(0x1)
-	char                                                         pad0x7_T48LX[0x7];                                 // 0x1e9(0x7)
+	char                                                         pad0x7_LHN27[0x7];                                 // 0x1e9(0x7)
 	Struct PrioritisedPromptWithHandle                           StealPrompt;                                       // 0x1f0(0x68)
 };
 

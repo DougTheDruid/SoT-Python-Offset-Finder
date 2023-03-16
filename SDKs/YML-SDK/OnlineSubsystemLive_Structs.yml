@@ -12,7 +12,7 @@ UpdateAchievementsXblRequestModel:
   - Name: Achievements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct AchievementProgressXblRequestModel>
+    Type: TArray<struct Achievements>
   - Name: Action
     Offset: '0x10'
     Size: '0x10'

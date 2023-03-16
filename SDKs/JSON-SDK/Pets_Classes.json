@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "SuccessIds",
-        "Type": "TArray<Struct HangoutSpotId>",
+        "Type": "TArray<struct SuccessIds>",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -75,7 +75,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0xc_L3UGJ[0xc]",
+        "Name": "pad0xc_8CUPP[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x8a"
@@ -102,7 +102,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0xc_3EAPC[0xc]",
+        "Name": "pad0xc_PH5NF[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x8a"
@@ -183,7 +183,7 @@
         "Offset": "0x61"
       },
       {
-        "Name": "pad0x2_KJAU6[0x2]",
+        "Name": "pad0x2_Q4IL7[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x62"
@@ -201,7 +201,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x9_C9SVI[0x9]",
+        "Name": "pad0x9_9S6I7[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x67"
@@ -248,7 +248,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x3_COYWT[0x3]",
+        "Name": "pad0x3_H326M[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x89"
@@ -260,7 +260,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x14_SZC2Y[0x14]",
+        "Name": "pad0x14_2UDAP[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x92"
@@ -367,7 +367,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x9_21MZ4[0x9]",
+        "Name": "pad0x9_K0XPX[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x5f"
@@ -401,7 +401,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0xe0_JWVWX[0xe0]",
+        "Name": "pad0xe0_XIAYC[0xe0]",
         "Type": "char",
         "Size": "0xe0",
         "Offset": "0xce"
@@ -471,7 +471,7 @@
     "Attributes": [
       {
         "Name": "HangoutSpotParams",
-        "Type": "TArray<Struct HangoutSpotParams>",
+        "Type": "TArray<struct HangoutSpotParams>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -496,7 +496,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x70_OBX3S[0x70]",
+        "Name": "pad0x70_MS0G3[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0xd8"
@@ -508,7 +508,7 @@
         "Offset": "0x148"
       },
       {
-        "Name": "pad0x158_UHEQO[0x158]",
+        "Name": "pad0x158_98VO5[0x158]",
         "Type": "char",
         "Size": "0x158",
         "Offset": "0x14e"
@@ -536,14 +536,14 @@
     "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "pad0x20_ZNT2S[0x20]",
+        "Name": "pad0x20_BCNUV[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x900"
       },
       {
         "Name": "StrategyControllerMovementMods",
-        "Type": "TArray<Struct AIStategyControllerMovementMod>",
+        "Type": "TArray<struct StrategyControllerMovementMods>",
         "Size": "0x10",
         "Offset": "0x920"
       },
@@ -554,7 +554,7 @@
         "Offset": "0x930"
       },
       {
-        "Name": "pad0x4_TUZWG[0x4]",
+        "Name": "pad0x4_TDUZA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x934"
@@ -572,7 +572,7 @@
         "Offset": "0x940"
       },
       {
-        "Name": "pad0x8_U25LH[0x8]",
+        "Name": "pad0x8_WEFVN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x948"
@@ -620,7 +620,7 @@
         "Offset": "0x980"
       },
       {
-        "Name": "pad0x4_XLD8V[0x4]",
+        "Name": "pad0x4_0TCYB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x984"
@@ -638,7 +638,7 @@
         "Offset": "0x990"
       },
       {
-        "Name": "pad0x5c_7L280[0x5c]",
+        "Name": "pad0x5c_R9VSN[0x5c]",
         "Type": "char",
         "Size": "0x5c",
         "Offset": "0x992"
@@ -679,7 +679,7 @@
     "Attributes": [
       {
         "Name": "MappingEntries",
-        "Type": "TArray<Struct PetCustomiationOverrideMappingEntry>",
+        "Type": "TArray<struct MappingEntries>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -693,7 +693,7 @@
     "Attributes": [
       {
         "Name": "KnownHearingDangers",
-        "Type": "TArray<Struct PetDangerHearingThreat>",
+        "Type": "TArray<struct KnownHearingDangers>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -739,7 +739,7 @@
     "Attributes": [
       {
         "Name": "HangoutSpots",
-        "Type": "TArray<Struct HangoutSpotPosition>",
+        "Type": "TArray<struct HangoutSpots>",
         "Size": "0x10",
         "Offset": "0x2e0"
       },
@@ -750,7 +750,7 @@
         "Offset": "0x2f0"
       },
       {
-        "Name": "pad0x3_MZWFP[0x3]",
+        "Name": "pad0x3_WIWEI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2f1"
@@ -768,7 +768,7 @@
         "Offset": "0x2f8"
       },
       {
-        "Name": "pad0x3_TTSEB[0x3]",
+        "Name": "pad0x3_CX4RJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2f9"
@@ -792,7 +792,7 @@
         "Offset": "0x304"
       },
       {
-        "Name": "pad0x23_BK571[0x23]",
+        "Name": "pad0x23_HKB9S[0x23]",
         "Type": "char",
         "Size": "0x23",
         "Offset": "0x305"
@@ -804,7 +804,7 @@
         "Offset": "0x328"
       },
       {
-        "Name": "pad0x10_8ZV25[0x10]",
+        "Name": "pad0x10_W07CP[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x338"
@@ -822,7 +822,7 @@
         "Offset": "0x349"
       },
       {
-        "Name": "pad0x1e_DKAZ3[0x1e]",
+        "Name": "pad0x1e_H3K5N[0x1e]",
         "Type": "char",
         "Size": "0x1e",
         "Offset": "0x34a"
@@ -834,7 +834,7 @@
         "Offset": "0x368"
       },
       {
-        "Name": "pad0x20_0EATW[0x20]",
+        "Name": "pad0x20_Q1EV7[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x36e"
@@ -848,7 +848,7 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x20_CU8Z2[0x20]",
+        "Name": "pad0x20_TXFJD[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x510"
@@ -878,7 +878,7 @@
         "Offset": "0x540"
       },
       {
-        "Name": "pad0x7_EFW3X[0x7]",
+        "Name": "pad0x7_96ZVT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x541"
@@ -902,7 +902,7 @@
         "Offset": "0x578"
       },
       {
-        "Name": "pad0x20_27EGA[0x20]",
+        "Name": "pad0x20_Z8C9F[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x57e"
@@ -917,7 +917,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<Struct PetListingTypeEntry>",
+        "Type": "TArray<struct Entries>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -944,7 +944,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x18_3E4I9[0x18]",
+        "Name": "pad0x18_O13CM[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc8"
@@ -971,14 +971,14 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x18_8X6RO[0x18]",
+        "Name": "pad0x18_JOBD0[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x128"
       },
       {
         "Name": "AllowedPetTypes",
-        "Type": "TArray<Class AllowedPetTypes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x140"
       },
@@ -1019,7 +1019,7 @@
         "Offset": "0x16a"
       },
       {
-        "Name": "pad0x7_Y7CL0[0x7]",
+        "Name": "pad0x7_BPH2V[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x169"
@@ -1086,7 +1086,7 @@
     "ClassSize": "0x308",
     "Attributes": [
       {
-        "Name": "pad0x60_MTX2X[0x60]",
+        "Name": "pad0x60_FOF9D[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x28"
@@ -1098,7 +1098,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x18_ZW723[0x18]",
+        "Name": "pad0x18_ZYZC9[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x90"
@@ -1140,7 +1140,7 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x1a8_3N8EO[0x1a8]",
+        "Name": "pad0x1a8_0KGK6[0x1a8]",
         "Type": "char",
         "Size": "0x1a8",
         "Offset": "0x130"
@@ -1152,7 +1152,7 @@
         "Offset": "0x2d8"
       },
       {
-        "Name": "pad0x60_OA2BR[0x60]",
+        "Name": "pad0x60_2D3NR[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x2de"
@@ -1204,7 +1204,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x18_N3C4K[0x18]",
+        "Name": "pad0x18_HV2TG[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc8"
@@ -1222,7 +1222,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x28_N5BOQ[0x28]",
+        "Name": "pad0x28_BMP6Z[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xfe"
@@ -1244,7 +1244,7 @@
     "Attributes": [
       {
         "Name": "ReactMappings",
-        "Type": "TArray<Struct ReactStateMapping>",
+        "Type": "TArray<struct ReactMappings>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1257,7 +1257,7 @@
     "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "pad0x38_A640S[0x38]",
+        "Name": "pad0x38_E82O0[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x7a0"
@@ -1269,7 +1269,7 @@
         "Offset": "0x7d8"
       },
       {
-        "Name": "pad0x4_LT905[0x4]",
+        "Name": "pad0x4_M3MA3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x7dc"
@@ -1389,7 +1389,7 @@
         "Offset": "0x870"
       },
       {
-        "Name": "pad0x6f_932CV[0x6f]",
+        "Name": "pad0x6f_BYC94[0x6f]",
         "Type": "char",
         "Size": "0x6f",
         "Offset": "0x871"
@@ -1407,7 +1407,7 @@
         "Offset": "0x8e1"
       },
       {
-        "Name": "pad0x10_6T2J1[0x10]",
+        "Name": "pad0x10_G2IKH[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8e0"
@@ -1434,7 +1434,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x90_0BDFW[0x90]",
+        "Name": "pad0x90_ENL3E[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0xce"
@@ -1472,14 +1472,14 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_7MX0H[0x4]",
+        "Name": "pad0x4_B6YTE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
       },
       {
         "Name": "DropTimeouts",
-        "Type": "TArray<Struct WieldablePetDropTimeout>",
+        "Type": "TArray<struct DropTimeouts>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -1498,31 +1498,31 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x28_H4JO5[0x28]",
+        "Name": "pad0x28_J6VB4[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xd0"
       },
       {
         "Name": "CachedOverlappingActors",
-        "Type": "TArray<Struct OverlapResult>",
+        "Type": "TArray<struct CachedOverlappingActors>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "ActiveFoodSources",
-        "Type": "TArray<Struct WieldablePetFoodSourceEntry>",
+        "Type": "TArray<struct ActiveFoodSources>",
         "Size": "0x10",
         "Offset": "0x108"
       },
       {
         "Name": "FoodSourcesToRemove",
-        "Type": "TArray<Struct WieldablePetFoodSourceEntry>",
+        "Type": "TArray<struct FoodSourcesToRemove>",
         "Size": "0x10",
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x70_3A4NF[0x70]",
+        "Name": "pad0x70_NHIIG[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x126"
@@ -1578,7 +1578,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x9_MYZXU[0x9]",
+        "Name": "pad0x9_KYEDX[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x4f"

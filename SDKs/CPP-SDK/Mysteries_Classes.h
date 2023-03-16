@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AbandonedNoteWeightedTextDataAsset: public DataAsset
 {
 public:
-	TArray<Struct AbandonedNoteWeightedTextEntry>                Entries;                                           // 0x28(0x10)
+	TArray<struct Entries>                                       Entries;                                           // 0x28(0x10)
 };
 
 
@@ -18,10 +18,10 @@ public:
 class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x40_W5OZH[0x40];                               // 0xc8(0x40)
+	char                                                         pad0x40_BVWIA[0x40];                               // 0xc8(0x40)
 	Struct FText                                                 ClueText;                                          // 0x108(0x38)
 	Struct FText                                                 TitleText;                                         // 0x140(0x38)
-	char                                                         pad0xa0_OJ17L[0xa0];                               // 0x176(0xa0)
+	char                                                         pad0xa0_MQV8W[0xa0];                               // 0x176(0xa0)
 };
 
 
@@ -36,7 +36,7 @@ public:
 	float                                                        InteractionHoldTime;                               // 0x488(0x4)
 	float                                                        InteractionRadius;                                 // 0x48c(0x4)
 	Struct FText                                                 DisplayName;                                       // 0x490(0x38)
-	char                                                         pad0x90_YDPCN[0x90];                               // 0x4c6(0x90)
+	char                                                         pad0x90_HH1N4[0x90];                               // 0x4c6(0x90)
 };
 
 
@@ -45,7 +45,7 @@ class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
 {
 public:
 	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x138(0x8)
-	char                                                         pad0x28_GCHFG[0x28];                               // 0x13e(0x28)
+	char                                                         pad0x28_2G076[0x28];                               // 0x13e(0x28)
 };
 
 
@@ -53,13 +53,13 @@ public:
 class SirenPuzzleContext: public Actor
 {
 public:
-	char                                                         pad0x8_P0ND1[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_ZW00T[0x8];                                 // 0x3c8(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
-	TArray<Struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
-	TArray<Struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
-	TArray<Struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
+	TArray<struct PuzzleLocks>                                   PuzzleLocks;                                       // 0x3d8(0x10)
+	TArray<struct UnlockCompleteReactions>                       UnlockCompleteReactions;                           // 0x3e8(0x10)
+	TArray<struct ResetLocksReactions>                           ResetLocksReactions;                               // 0x3f8(0x10)
 	TArray<Byte LockStates>                                      LockStates;                                        // 0x408(0x10)
-	char                                                         pad0xc0_IGWOV[0xc0];                               // 0x416(0xc0)
+	char                                                         pad0xc0_DW5F0[0xc0];                               // 0x416(0xc0)
 };
 
 

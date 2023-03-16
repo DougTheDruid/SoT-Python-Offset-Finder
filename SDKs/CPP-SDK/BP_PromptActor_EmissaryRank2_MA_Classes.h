@@ -15,8 +15,8 @@ public:
 	class                                                        PromptCounterAccessKey;                            // 0x410(0x8)
 	class                                                        Company;                                           // 0x418(0x8)
 	int                                                          ExpectedLevel;                                     // 0x420(0x4)
-	char                                                         pad0x4_BVIS4[0x4];                                 // 0x424(0x4)
-	TArray<Struct PrioritisedPromptWithHandle>                   Prompts;                                           // 0x428(0x10)
+	char                                                         pad0x4_TAJ30[0x4];                                 // 0x424(0x4)
+	TArray<struct Prompts>                                       Prompts;                                           // 0x428(0x10)
 };
 
 

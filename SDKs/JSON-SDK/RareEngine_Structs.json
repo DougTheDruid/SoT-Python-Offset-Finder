@@ -10,13 +10,13 @@
       },
       {
         "Name": "CategoryStats",
-        "Type": "TArray<Struct MemoryVisualiserStat>",
+        "Type": "TArray<struct CategoryStats>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "CategoryClasses",
-        "Type": "TArray<Struct MemoryVisualiserClass>",
+        "Type": "TArray<struct CategoryClasses>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -27,7 +27,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_93CXZ[0x3]",
+        "Name": "pad0x3_457GQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -98,7 +98,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_XJ9XJ[0x7]",
+        "Name": "pad0x7_Z3UIB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_tls_bucket_bdg_01_a_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
+	Class SceneComponent*                                        None;                                              // 0x510(0x8)
 };
 
 

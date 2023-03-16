@@ -12,10 +12,16 @@
         "Offset": "0x5c0"
       },
       {
-        "Name": "pad0x30_2FDXU[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x5c6"
+        "Name": "None",
+        "Type": "TArray<struct None>",
+        "Size": "0x10",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<struct None>",
+        "Size": "0x10",
+        "Offset": "0x5d8"
       }
     ]
   },

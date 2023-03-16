@@ -35,11 +35,11 @@ ActionStatePriorityTableData:
   - Name: StateDefaultValue
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ActionStatePriorityRelationship>
+    Type: TArray<struct StateDefaultValue>
   - Name: PriorityTableEntry
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct ActionStatePriorityList>
+    Type: TArray<struct PriorityTableEntry>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -68,7 +68,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_EG93M[0x9]
+  - Name: pad0x9_ROVLC[0x9]
     Offset: '0x27'
     Size: '0x9'
     Type: char

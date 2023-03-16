@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 UtilityVoyageService:
   Attributes:
-  - Name: pad0x78_Y5L6D[0x78]
+  - Name: pad0x78_G1UDQ[0x78]
     Offset: '0x28'
     Size: '0x78'
     Type: char
@@ -13,7 +13,7 @@ UtilityVoyageService:
   - Name: Voyages
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct UtilityVoyageData>
+    Type: TArray<struct Voyages>
   ClassSize: '0x98'
   FullSize: '0xc0'
   InheritedSize: '0x28'

@@ -59,7 +59,7 @@ public:
 	Struct NavigationDesc                                        NavigationDesc;                                    // 0x20(0x14)
 	int                                                          ProgressValue;                                     // 0x34(0x4)
 	int                                                          Threshold;                                         // 0x38(0x4)
-	char                                                         pad0x4_OH96U[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_RU7U7[0x4];                                 // 0x3c(0x4)
 	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x40(0x40)
 };
 
@@ -69,7 +69,7 @@ struct NavigationDesc
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x3_D17X3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_XG0GK[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
@@ -96,7 +96,7 @@ struct OpenSeasonsMenuEvent
 {
 public:
 	byte                                                         NavigationAction;                                  // 0x0(0x1)
-	char                                                         pad0x3_ECPP6[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_GLHC7[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
@@ -114,7 +114,7 @@ struct EnableMoreButtonEvent
 {
 public:
 	byte                                                         MoreButtonSource;                                  // 0x0(0x1)
-	char                                                         pad0x3_9B70L[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_65F76[0x3];                                 // 0x1(0x3)
 	Struct NavigationDesc                                        Navigation;                                        // 0x4(0x14)
 };
 
@@ -146,7 +146,7 @@ public:
 struct SeasonProgressionUITelemetryFragment
 {
 public:
-	TArray<Struct SeasonProgressionUIEventTypeTelemetryFragment> ReceivedEventsData;                                // 0x0(0x10)
+	TArray<struct ReceivedEventsData>                            ReceivedEventsData;                                // 0x0(0x10)
 	int                                                          TotalNumReceivedEvents;                            // 0x10(0x4)
 };
 
@@ -164,7 +164,7 @@ public:
 struct SeasonsPopupEvent
 {
 public:
-	TArray<Struct FText>                                         Text;                                              // 0x0(0x10)
+	TArray<struct FText>                                         Text;                                              // 0x0(0x10)
 	TArray<Str Images>                                           Images;                                            // 0x10(0x10)
 	Struct FString                                               Background;                                        // 0x20(0x10)
 	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x30(0x40)

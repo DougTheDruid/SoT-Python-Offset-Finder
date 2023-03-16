@@ -6,7 +6,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x8_FRTKK[0x8]",
+        "Name": "pad0x8_EBCAX[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -48,14 +48,14 @@
         "Offset": "0x3dd"
       },
       {
-        "Name": "pad0x2_ZZWDC[0x2]",
+        "Name": "pad0x2_4B520[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3de"
       },
       {
         "Name": "AdditionalMetadata",
-        "Type": "TArray<Struct TestLevelMetadataEntry>",
+        "Type": "TArray<struct AdditionalMetadata>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
@@ -72,7 +72,7 @@
         "Offset": "0x3f1"
       },
       {
-        "Name": "pad0x2_SMFHG[0x2]",
+        "Name": "pad0x2_SM9PG[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3f2"
@@ -90,7 +90,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x4_WSC0P[0x4]",
+        "Name": "pad0x4_S7EFL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3fc"
@@ -115,7 +115,7 @@
       },
       {
         "Name": "ClientPawns",
-        "Type": "TArray<Struct ClientPawnDetails>",
+        "Type": "TArray<struct ClientPawns>",
         "Size": "0x10",
         "Offset": "0x430"
       },
@@ -132,7 +132,7 @@
         "Offset": "0x450"
       },
       {
-        "Name": "pad0x44_Z266O[0x44]",
+        "Name": "pad0x44_V7G2X[0x44]",
         "Type": "char",
         "Size": "0x44",
         "Offset": "0x452"
@@ -167,7 +167,7 @@
       },
       {
         "Name": "TypesToIgnoreInFeatureToggleAudits",
-        "Type": "TArray<AssetClass TypesToIgnoreInFeatureToggleAudits>",
+        "Type": "TArray<Assetclass TypesToIgnoreInFeatureToggleAudits>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -292,13 +292,13 @@
     "Attributes": [
       {
         "Name": "SpecificTexturesToNotAudit",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct SpecificTexturesToNotAudit>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "TextureDirectoriesToNotAudit",
-        "Type": "TArray<Struct DirectoryPath>",
+        "Type": "TArray<struct TextureDirectoriesToNotAudit>",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -310,7 +310,7 @@
       },
       {
         "Name": "PerTextureGroupPropertiesOverrides",
-        "Type": "TArray<Struct TextureAuditorGroupProperties>",
+        "Type": "TArray<struct PerTextureGroupPropertiesOverrides>",
         "Size": "0x10",
         "Offset": "0x78"
       }

@@ -24,7 +24,7 @@ RegisterServerMigrationPointOfInterestComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_CH8YN[0x24]
+  - Name: pad0x24_XDAQS[0x24]
     Offset: '0xca'
     Size: '0x24'
     Type: char

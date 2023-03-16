@@ -18,8 +18,8 @@ struct WwiseEmitterCreationParams
 {
 public:
 	Class WwiseEvent*                                            Event;                                             // 0x0(0x8)
-	TArray<Struct WWiseEmitterCreationRTPCSetting>               RTPCs;                                             // 0x8(0x10)
-	TArray<Struct WWiseEmitterCreationSwitchSetting>             Switches;                                          // 0x18(0x10)
+	TArray<struct RTPCs>                                         RTPCs;                                             // 0x8(0x10)
+	TArray<struct Switches>                                      Switches;                                          // 0x18(0x10)
 };
 
 
@@ -55,7 +55,7 @@ public:
 struct StaticMeshAudioAssociation
 {
 public:
-	TArray<Struct StaticMeshWwiseEmitterData>                    PlaybackDataArray;                                 // 0x0(0x10)
+	TArray<struct PlaybackDataArray>                             PlaybackDataArray;                                 // 0x0(0x10)
 	TArray<class StaticMesh*>                                    Meshes;                                            // 0x10(0x10)
 };
 
@@ -66,7 +66,7 @@ struct StaticMeshWwiseEmitterData
 public:
 	Class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
 	Struct Vector                                                LocalOriginOffset;                                 // 0x8(0xc)
-	char                                                         pad0x4_5Y5YW[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_HCJ4K[0x4];                                 // 0x14(0x4)
 	TArray<class WwiseEvent*>                                    StartEvents;                                       // 0x18(0x10)
 	TArray<class WwiseEvent*>                                    StopEvents;                                        // 0x28(0x10)
 };

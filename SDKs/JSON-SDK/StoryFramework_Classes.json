@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "StoryNames",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -18,7 +18,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x21_QKCHI[0x21]",
+        "Name": "pad0x21_21P7G[0x21]",
         "Type": "char",
         "Size": "0x21",
         "Offset": "0x5f"
@@ -38,7 +38,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x20_8SV21[0x20]",
+        "Name": "pad0x20_JBOA5[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x36"
@@ -58,7 +58,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x30_AMILH[0x30]",
+        "Name": "pad0x30_09F4Y[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xce"
@@ -79,7 +79,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x60_3037O[0x60]",
+        "Name": "pad0x60_WEX3I[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x3c8"
@@ -91,7 +91,7 @@
         "Offset": "0x428"
       },
       {
-        "Name": "pad0x70_GC98N[0x70]",
+        "Name": "pad0x70_UV6MI[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x436"
@@ -117,7 +117,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x40_RH851[0x40]",
+        "Name": "pad0x40_H1GW8[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x33e"
@@ -137,14 +137,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_J7BBQ[0x4]",
+        "Name": "pad0x4_VUCDJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<Struct LightingZoneStoryRelatedSettings>",
+        "Type": "TArray<struct StoryResponses>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -169,7 +169,7 @@
         "Offset": "0x560"
       },
       {
-        "Name": "pad0x38_Y43MP[0x38]",
+        "Name": "pad0x38_DU6MW[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x566"
@@ -189,7 +189,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x48_P9XAY[0x48]",
+        "Name": "pad0x48_63PX1[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xce"
@@ -209,14 +209,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_V84NT[0x4]",
+        "Name": "pad0x4_MBIUQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<Struct StorySpawnedActorsComponentList>",
+        "Type": "TArray<struct StoryResponses>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -241,14 +241,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_Q7PBN[0x4]",
+        "Name": "pad0x4_LJ5S4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<Struct StorySpawnedActorsList>",
+        "Type": "TArray<struct StoryResponses>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -274,7 +274,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x18_UP7QB[0x18]",
+        "Name": "pad0x18_4DOBZ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3c8"
@@ -292,7 +292,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x108_EFYGI[0x108]",
+        "Name": "pad0x108_T14Y6[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x3f6"
@@ -327,14 +327,14 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x8_A5WCO[0x8]",
+        "Name": "pad0x8_8JKTK[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "AllStories",
-        "Type": "TArray<Struct StoryInfo>",
+        "Type": "TArray<struct AllStories>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
@@ -351,7 +351,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x40_UOIZ4[0x40]",
+        "Name": "pad0x40_J6OUL[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x3fe"
@@ -380,7 +380,7 @@
     "Attributes": [
       {
         "Name": "Stories",
-        "Type": "TArray<Struct StoryNameInfo>",
+        "Type": "TArray<struct Stories>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -406,25 +406,25 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0x28_VFUD8[0x28]",
+        "Name": "pad0x28_R9TUK[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3c8"
       },
       {
         "Name": "Stories",
-        "Type": "TArray<Struct StoryInfo>",
+        "Type": "TArray<struct Stories>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
       {
         "Name": "ActiveStories",
-        "Type": "TArray<Struct StoryInfo>",
+        "Type": "TArray<struct ActiveStories>",
         "Size": "0x10",
         "Offset": "0x400"
       },
       {
-        "Name": "pad0xb0_S1NHH[0xb0]",
+        "Name": "pad0xb0_N6XWM[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x40e"

@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x1630] - InheritedSize[0x1628]
+// Size 0x8 (Full Size[0x1658] - InheritedSize[0x1650]
 class BP_OnlineAthenaPlayerController_C: public OnlineAthenaPlayerController
 {
 public:
-	BlueprintGeneratedClass BP_Component_Tutorial2019_C*         VisitShopkeepersTutorialComponent;                 // 0x1628(0x8)
+	BlueprintGeneratedClass BP_Component_Tutorial2019_C*         VisitShopkeepersTutorialComponent;                 // 0x1650(0x8)
 };
 
 

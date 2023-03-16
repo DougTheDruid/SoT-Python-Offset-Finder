@@ -11,8 +11,7 @@ class bsp_torch_a_C: public StaticMeshActor
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0x3d8(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x3e0(0x8)
-	Class PointLightComponent*                                   None;                                              // 0x3e8(0x8)
+	char                                                         pad0x20_B1CWL[0x20];                               // 0x3de(0x20)
 };
 
 

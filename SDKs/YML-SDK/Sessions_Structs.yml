@@ -19,7 +19,7 @@ CrewSessionCreatedTelemetryEvent:
   - Name: QoSTelemetry
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct CrewSessionQoSMeasurementTelemetry>
+    Type: TArray<struct QoSTelemetry>
   ClassSize: '0x60'
 CrewSessionJoinedTelemetryEvent:
   Attributes:
@@ -30,7 +30,7 @@ CrewSessionJoinedTelemetryEvent:
   - Name: QoSTelemetry
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct CrewSessionQoSMeasurementTelemetry>
+    Type: TArray<struct QoSTelemetry>
   ClassSize: '0x70'
 CrewSessionKeepAliveFailedTelemetryEvent:
   Attributes:
@@ -107,7 +107,7 @@ CrewSessionMatchmakingFollowedTelemetryEvent:
     Offset: '0x60'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ZY5M2[0x4]
+  - Name: pad0x4_UTVBA[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -209,7 +209,7 @@ CrewSessionTelemetry:
   - Name: SessionMembers
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct CrewSessionMemberTelemetry>
+    Type: TArray<struct SessionMembers>
   - Name: SessionTemplate
     Offset: '0x10'
     Size: '0x10'
@@ -264,7 +264,7 @@ SessionTemplate:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_4LXF2[0x3]
+  - Name: pad0x3_N6ZNP[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char

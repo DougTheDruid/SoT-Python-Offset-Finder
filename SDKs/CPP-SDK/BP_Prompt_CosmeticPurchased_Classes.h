@@ -11,14 +11,14 @@ class BP_Prompt_CosmeticPurchased_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x93_QLK9K[0x93];                               // 0x120(0x93)
+	char                                                         pad0x132_13LP4[0x132];                             // 0x120(0x132)
 	Struct ObjectMessagingHandle                                 Handle_OfferPurchasedEvent;                        // 0x120(0x48)
 	Struct ObjectMessagingHandle                                 Handle_ShopClosedEvent;                            // 0x168(0x48)
 	Struct ObjectMessagingHandle                                 Handle_PlayerEntitlementUpdatedEvent;              // 0x1b0(0x48)
 	Struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x1f8(0x68)
 	Struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x260(0x68)
 	class                                                        AccessKey;                                         // 0x2c8(0x8)
-	TArray<Class CategoryTypes>                                  CategoryTypes;                                     // 0x2d0(0x10)
+	TArray<class Class*>                                         CategoryTypes;                                     // 0x2d0(0x10)
 	TArray<Str PurchasedEntitlementIds>                          PurchasedEntitlementIds;                           // 0x2e0(0x10)
 	float                                                        DelayUntilPromptDisplays;                          // 0x2f0(0x4)
 	float                                                        DelayBetweenPrompts;                               // 0x2f4(0x4)

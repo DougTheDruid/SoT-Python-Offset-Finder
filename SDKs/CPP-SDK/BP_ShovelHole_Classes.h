@@ -10,12 +10,8 @@ namespace DougsSDKDumper
 class BP_ShovelHole_C: public ShovelHole
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x438(0x8)
-	Class DecalComponent*                                        DirtDecal;                                         // 0x440(0x8)
-	Class StaticMeshComponent*                                   DirtPile;                                          // 0x448(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x450(0x8)
-	Class MaterialInstanceDynamic*                               MeshDynamicMaterial;                               // 0x458(0x8)
-	Class MaterialInstanceDynamic*                               DecalDynamicMaterial;                              // 0x460(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x438(0x8)
+	char                                                         pad0x38_66Y6E[0x38];                               // 0x43e(0x38)
 };
 
 

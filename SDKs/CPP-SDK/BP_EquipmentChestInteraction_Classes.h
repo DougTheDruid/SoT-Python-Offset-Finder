@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_EquipmentChestInteraction_C: public EquipmentChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x490(0x8)
+	Class SceneComponent*                                        None;                                              // 0x490(0x8)
 };
 
 

@@ -79,7 +79,7 @@ SeasonGoalCompletionEvent:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JU9F4[0x3]
+  - Name: pad0x3_KRY1B[0x3]
     Offset: '0x21'
     Size: '0x3'
     Type: char
@@ -114,7 +114,7 @@ SeasonGoalProgressionEvent:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_90O87[0x3]
+  - Name: pad0x3_I7OLP[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -140,14 +140,14 @@ SeasonRewardEarnedEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_7KO3C[0x7]
+  - Name: pad0x7_L4YSO[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   - Name: Rewards
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct SeasonReward>
+    Type: TArray<struct Rewards>
   ClassSize: '0x28'
 SeasonServiceDataUpdatedEvent:
   Attributes: []
@@ -174,7 +174,7 @@ TrackedObjectiveCompletionMessage:
     Offset: '0xd1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_LFKMS[0x6]
+  - Name: pad0x6_3BV3W[0x6]
     Offset: '0xd2'
     Size: '0x6'
     Type: char
@@ -208,7 +208,7 @@ TrackedObjectiveProgressUpdateMessage:
     Offset: '0xd1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_FQQ7Y[0x2]
+  - Name: pad0x2_D58LE[0x2]
     Offset: '0xd2'
     Size: '0x2'
     Type: char

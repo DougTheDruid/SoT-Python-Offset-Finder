@@ -162,9 +162,9 @@ public:
 struct ActiveNoteData
 {
 public:
-	TArray<Struct NotesRemoteServiceNoteModel>                   NotesRemoteServiceNoteModels;                      // 0x0(0x10)
-	TArray<Struct NoteCompletionEntry>                           PendingCompletionEntries;                          // 0x10(0x10)
-	TArray<Struct Guid>                                          PendingDetailRequestIDs;                           // 0x20(0x10)
+	TArray<struct NotesRemoteServiceNoteModels>                  NotesRemoteServiceNoteModels;                      // 0x0(0x10)
+	TArray<struct PendingCompletionEntries>                      PendingCompletionEntries;                          // 0x10(0x10)
+	TArray<struct PendingDetailRequestIDs>                       PendingDetailRequestIDs;                           // 0x20(0x10)
 };
 
 
@@ -202,8 +202,8 @@ struct ClientNoteData
 {
 public:
 	bool                                                         NotifyArrival;                                     // 0x0(0x1)
-	char                                                         pad0x7_7X4XX[0x7];                                 // 0x1(0x7)
-	TArray<Struct MysteriousNoteInfo>                            PendingNotes;                                      // 0x8(0x10)
+	char                                                         pad0x7_5E558[0x7];                                 // 0x1(0x7)
+	TArray<struct PendingNotes>                                  PendingNotes;                                      // 0x8(0x10)
 };
 
 

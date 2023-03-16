@@ -75,7 +75,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x9_EG93M[0x9]",
+        "Name": "pad0x9_ROVLC[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x27"
@@ -104,13 +104,13 @@
     "Attributes": [
       {
         "Name": "StateDefaultValue",
-        "Type": "TArray<Struct ActionStatePriorityRelationship>",
+        "Type": "TArray<struct StateDefaultValue>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "PriorityTableEntry",
-        "Type": "TArray<Struct ActionStatePriorityList>",
+        "Type": "TArray<struct PriorityTableEntry>",
         "Size": "0x10",
         "Offset": "0x38"
       }

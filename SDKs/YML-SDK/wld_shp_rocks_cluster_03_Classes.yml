@@ -2,39 +2,43 @@
 # https://github.com/DougTheDruid
 wld_shp_rocks_cluster_03_C:
   Attributes:
-  - Name: StaticMeshComponent0
+  - Name: pad0x7cccd0d5_X19P2[0x7cccd0d5]
+    Offset: '-0x7ccccccd'
+    Size: '0x7cccd0d5'
+    Type: char
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_xlarge_02_c
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_xlarge_05_a
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent06
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent05
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent04
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMeshComponent01
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: SharedRoot
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x40'
+  ClassSize: '0x7cccd115'
   FullSize: '0x448'
-  InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+  InheritedSize: '-0x7ccccccd'
+  Super: ''

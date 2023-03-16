@@ -33,13 +33,13 @@
     "Attributes": [
       {
         "Name": "TrinketEntries",
-        "Type": "TArray<Struct TrinketLoadoutEntry>",
+        "Type": "TArray<struct TrinketEntries>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "TrinketOwnerXUIDs",
-        "Type": "TArray<Struct UniqueNetIdRepl>",
+        "Type": "TArray<struct TrinketOwnerXUIDs>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -99,7 +99,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_H5QZF[0x4]",
+        "Name": "pad0x4_YE9NB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -117,7 +117,7 @@
     "Attributes": [
       {
         "Name": "Trinkets",
-        "Type": "TArray<Struct TrinketLoadoutModelEntry>",
+        "Type": "TArray<struct Trinkets>",
         "Size": "0x10",
         "Offset": "0x0"
       }

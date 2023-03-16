@@ -13,12 +13,12 @@ public:
 };
 
 
-// Size 0x170 (Full Size[0x238] - InheritedSize[0xc8]
+// Size 0x178 (Full Size[0x240] - InheritedSize[0xc8]
 class AudioReportingComponent: public ActorComponent
 {
 public:
 	Class PlayerController*                                      CachedOwningController;                            // 0xc8(0x8)
-	char                                                         pad0x178_WAVJ4[0x178];                             // 0xce(0x178)
+	char                                                         pad0x180_FBDQ4[0x180];                             // 0xce(0x180)
 };
 
 
@@ -30,11 +30,18 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AudioReportingDebugMenuGenerator: public DebugMenuEntryGenerator
+{
+public:
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class EventReactionsDataAsset: public DataAsset
 {
 public:
-	TArray<Struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
+	TArray<struct Reactions>                                     Reactions;                                         // 0x28(0x10)
 };
 
 
@@ -43,7 +50,7 @@ class AudioReportingSettings: public DataAsset
 {
 public:
 	int                                                          MaxReactionCount;                                  // 0x28(0x4)
-	char                                                         pad0x4_OR03J[0x4];                                 // 0x2c(0x4)
+	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
 	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x30(0x10)
 };
 

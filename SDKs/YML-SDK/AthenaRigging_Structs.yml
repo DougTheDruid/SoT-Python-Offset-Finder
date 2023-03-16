@@ -70,7 +70,7 @@ RiggingSystemLineGroup:
   - Name: Lines
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct RiggingSystemLineParams>
+    Type: TArray<struct Lines>
   ClassSize: '0x18'
 RiggingSystemLineParams:
   Attributes:
@@ -81,7 +81,7 @@ RiggingSystemLineParams:
   - Name: Pulleys
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct RiggingSystemPulleyParams>
+    Type: TArray<struct Pulleys>
   - Name: End
     Offset: '0x30'
     Size: '0x20'
@@ -147,7 +147,7 @@ RiggingSystemPulleyParams:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_U1JDU[0x4]
+  - Name: pad0x4_DQG3Z[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

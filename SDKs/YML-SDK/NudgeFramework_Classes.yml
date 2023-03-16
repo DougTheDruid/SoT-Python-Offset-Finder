@@ -16,7 +16,7 @@ NudgeInterpolationParamsDataAsset:
   Super: DataAsset
 NudgePolicy:
   Attributes:
-  - Name: pad0x90_1MLGZ[0x90]
+  - Name: pad0x90_VOZHB[0x90]
     Offset: '0x28'
     Size: '0x90'
     Type: char

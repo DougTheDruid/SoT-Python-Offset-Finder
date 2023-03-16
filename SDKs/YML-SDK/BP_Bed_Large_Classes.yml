@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Bed_Large_C:
   Attributes:
-  - Name: DrapesMeshComponent
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x8'
   FullSize: '0x3e0'
   InheritedSize: '0x3d8'
-  Super: BP_Bed_C
+  Super: None

@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_NPS1S[0x7]",
+        "Name": "pad0x7_EGGGM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -67,7 +67,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_IDE2M[0x3]",
+        "Name": "pad0x3_SUD6T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -232,7 +232,7 @@
         "Offset": "0xa4"
       },
       {
-        "Name": "pad0x4_7993A[0x4]",
+        "Name": "pad0x4_MNB8C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xac"
@@ -261,7 +261,7 @@
     "Attributes": [
       {
         "Name": "AISpawnerCreationDesc",
-        "Type": "TArray<Struct AIEncounterWave>",
+        "Type": "TArray<struct AISpawnerCreationDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -363,7 +363,7 @@
       },
       {
         "Name": "AICombatDialogue",
-        "Type": "TArray<Class AICombatDialogue>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0xb8"
       }
@@ -374,7 +374,7 @@
     "Attributes": [
       {
         "Name": "Specifications",
-        "Type": "TArray<Struct AIEncounterSpecification>",
+        "Type": "TArray<struct Specifications>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -438,7 +438,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x4_D2JBE[0x4]",
+        "Name": "pad0x4_IOKD5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x7c"
@@ -485,7 +485,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_W56RL[0x7]",
+        "Name": "pad0x7_HJKAB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -531,7 +531,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_SFGIS[0x7]",
+        "Name": "pad0x7_8H30B[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -565,7 +565,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_2T7TQ[0x7]",
+        "Name": "pad0x7_MBGXF[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -577,6 +577,10 @@
         "Offset": "0x8"
       }
     ]
+  },
+  "StartCreatureSplineMovementEvent": {
+    "ClassSize": "0x1",
+    "Attributes": []
   },
   "BountySpawnerTargetDesc": {
     "ClassSize": "0x20",
@@ -594,7 +598,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_YGRW5[0x6]",
+        "Name": "pad0x6_QTZH8[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
@@ -608,61 +612,73 @@
     ]
   },
   "AIBountySpawnerWaveGroup": {
-    "ClassSize": "0x58",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "Waves",
-        "Type": "TArray<Struct AIBountySpawnerWave>",
+        "Type": "TArray<struct Waves>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "AdditionalCaptainWaves",
+        "Type": "TArray<struct AdditionalCaptainWaves>",
+        "Size": "0x10",
+        "Offset": "0x10"
       },
       {
         "Name": "NumNonTargetAIToKillToMoveToNextWaveGroup",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x10"
+        "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_7W7NI[0x4]",
+        "Name": "pad0x4_JUWWL[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x14"
+        "Offset": "0x24"
       },
       {
         "Name": "CombatDialogueForWaveGroup",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x18"
+        "Offset": "0x28"
       },
       {
         "Name": "DynamicDelayBeforeStart",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x20"
+        "Offset": "0x30"
       },
       {
         "Name": "WantsAdditionalWaveAI",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x24"
+        "Offset": "0x34"
       },
       {
-        "Name": "pad0x3_5NJFG[0x3]",
+        "Name": "pad0x3_A701F[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x25"
+        "Offset": "0x35"
       },
       {
         "Name": "AdditionalWaveAIPerPlayer",
         "Type": "TArray<Int AdditionalWaveAIPerPlayer>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x38"
       },
       {
         "Name": "AdditionalWaveCaptainAIPerPlayer",
         "Type": "TArray<Int AdditionalWaveCaptainAIPerPlayer>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x48"
+      },
+      {
+        "Name": "WaveMusicIntensity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
       }
     ]
   },
@@ -682,7 +698,7 @@
         "Offset": "0x129"
       },
       {
-        "Name": "pad0x2_88GL1[0x2]",
+        "Name": "pad0x2_HJMD7[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12a"
@@ -706,7 +722,7 @@
         "Offset": "0x131"
       },
       {
-        "Name": "pad0x6_N4ER6[0x6]",
+        "Name": "pad0x6_8RGXM[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x132"
@@ -718,7 +734,7 @@
         "Offset": "0x138"
       },
       {
-        "Name": "pad0x38_QNUIF[0x38]",
+        "Name": "pad0x38_GOXYZ[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x140"
@@ -741,7 +757,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_ZXLUQ[0x7]",
+        "Name": "pad0x7_RWEL8[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
@@ -764,7 +780,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_RRT58[0x4]",
+        "Name": "pad0x4_MHV1H[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -806,7 +822,7 @@
     "Attributes": [
       {
         "Name": "SpawnParams",
-        "Type": "TArray<Struct WeightedAISpawnTypeParams>",
+        "Type": "TArray<struct SpawnParams>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -845,14 +861,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_RG13V[0x4]",
+        "Name": "pad0x4_PWBH4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "WaveGroupEntries",
-        "Type": "TArray<Struct AIBountySpawnerArchiveWaveGroupEntry>",
+        "Type": "TArray<struct WaveGroupEntries>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -885,7 +901,7 @@
       },
       {
         "Name": "WaveEntries",
-        "Type": "TArray<Struct AIBountySpawnerArchiveWaveEntry>",
+        "Type": "TArray<struct WaveEntries>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -902,14 +918,79 @@
       }
     ]
   },
+  "BountySpawnerIntensityUpdateNetworkEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "IsFinalWave",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_PES5S[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Intensity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
   "BountySpawnerNewWaveGroupSpawnedEvent": {
-    "ClassSize": "0x1",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "IsFinalWave",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_FW8OW[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x4_CQKH0[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ParticipatingCrewIds",
+        "Type": "TArray<struct ParticipatingCrewIds>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "WaveIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "TotalWaves",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -923,7 +1004,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_VNSJ2[0x3]",
+        "Name": "pad0x3_XQVMV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -941,7 +1022,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_SL257[0x3]",
+        "Name": "pad0x3_5AAVO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -988,7 +1069,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x3_JK4IY[0x3]",
+        "Name": "pad0x3_J7F8E[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51"
@@ -1017,8 +1098,8 @@
         "Offset": "0x0"
       },
       {
-        "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Name": "ParticipatingCrewIds",
+        "Type": "TArray<struct ParticipatingCrewIds>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -1056,7 +1137,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_I8MKV[0x4]",
+        "Name": "pad0x4_WIPAR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -1148,20 +1229,20 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_L1SS7[0x4]",
+        "Name": "pad0x4_3FICS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "SpecificRegionsToSpawnOn",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "WhatToSpawn",
-        "Type": "TArray<Struct AIDebugSpawnAmount>",
+        "Type": "TArray<struct WhatToSpawn>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -1312,7 +1393,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_A1CEJ[0x3]",
+        "Name": "pad0x3_TWFIT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1358,7 +1439,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_G35MR[0x3]",
+        "Name": "pad0x3_07GQ0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1415,7 +1496,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_GEP3O[0x3]",
+        "Name": "pad0x3_517DP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1467,7 +1548,7 @@
       },
       {
         "Name": "TrackedShipDistanceThresholdByFeatureInPriorityOrder",
-        "Type": "TArray<Struct TinySharkTrackedShipDistanceThresholdByFeature>",
+        "Type": "TArray<struct TrackedShipDistanceThresholdByFeatureInPriorityOrder>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
@@ -1537,7 +1618,7 @@
       },
       {
         "Name": "SpawnForShipData",
-        "Type": "TArray<Struct TinySharkShipSpawnData>",
+        "Type": "TArray<struct SpawnForShipData>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -1756,7 +1837,7 @@
     "Attributes": [
       {
         "Name": "AbilityRanges",
-        "Type": "TArray<Struct AthenaAIAbilityPlayerBasedRange>",
+        "Type": "TArray<struct AbilityRanges>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -1772,7 +1853,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_PMX7C[0x4]",
+        "Name": "pad0x4_EVDZJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1824,7 +1905,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_4KJFP[0x1]",
+        "Name": "pad0x1_18247[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -1906,7 +1987,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x2_WE7BY[0x2]",
+        "Name": "pad0x2_CHSGC[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2"
@@ -1975,14 +2056,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_0KK4K[0x4]",
+        "Name": "pad0x4_BU6QE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "Params",
-        "Type": "TArray<Struct AthenaAIControllerParamValue>",
+        "Type": "TArray<struct Params>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -2141,7 +2222,7 @@
     "Attributes": [
       {
         "Name": "Params",
-        "Type": "TArray<Struct AthenaAICharacterCannonTarget>",
+        "Type": "TArray<struct Params>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -2192,7 +2273,7 @@
       },
       {
         "Name": "NamedControllerParams",
-        "Type": "TArray<Struct AthenaAIControllerParamValue>",
+        "Type": "TArray<struct NamedControllerParams>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2342,7 +2423,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x8_YNYK7[0x8]",
+        "Name": "pad0x8_E36T5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
@@ -2436,7 +2517,7 @@
       },
       {
         "Name": "Individuals",
-        "Type": "TArray<Struct AIIndividualVarietyEntry>",
+        "Type": "TArray<struct Individuals>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -2447,7 +2528,7 @@
     "Attributes": [
       {
         "Name": "Loadouts",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct Loadouts>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -2504,7 +2585,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_AKVLK[0x7]",
+        "Name": "pad0x7_SG2II[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -2580,7 +2661,7 @@
       },
       {
         "Name": "CategoryMappings",
-        "Type": "TArray<Struct AIPartsCategoryMapping>",
+        "Type": "TArray<struct CategoryMappings>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -2625,7 +2706,7 @@
     "Attributes": [
       {
         "Name": "ToggledSkillsets",
-        "Type": "TArray<Struct FeatureToggledAIEncounterSpecificSkillSet>",
+        "Type": "TArray<struct ToggledSkillsets>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -2727,7 +2808,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_9VWJC[0x3]",
+        "Name": "pad0x3_1YBCA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -2871,7 +2952,7 @@
     "Attributes": [
       {
         "Name": "SpawnContexts",
-        "Type": "TArray<Class SpawnContexts>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -2882,7 +2963,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_GTUMC[0x7]",
+        "Name": "pad0x7_TE0F8[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -2901,7 +2982,7 @@
       },
       {
         "Name": "EncounterAndWaveSettingsOverride",
-        "Type": "TArray<Struct AIEncounterAndWaveSettingsOverride>",
+        "Type": "TArray<struct EncounterAndWaveSettingsOverride>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -3060,13 +3141,13 @@
     "Attributes": [
       {
         "Name": "AllowedSpawnTypes",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SpawnLocations",
-        "Type": "TArray<Struct Vector>",
+        "Type": "TArray<struct SpawnLocations>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -3132,7 +3213,7 @@
     "Attributes": [
       {
         "Name": "SelectedWaves",
-        "Type": "TArray<Struct AISpawnerWave>",
+        "Type": "TArray<struct SelectedWaves>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -3151,13 +3232,13 @@
     "Attributes": [
       {
         "Name": "ClassIds",
-        "Type": "TArray<Class ClassIds>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Names",
-        "Type": "TArray<Struct FText>",
+        "Type": "TArray<struct FText>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -3201,7 +3282,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_JGOMK[0x4]",
+        "Name": "pad0x4_P2CU6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -3378,14 +3459,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_MQANP[0x4]",
+        "Name": "pad0x4_NT4WQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "AmmoTypeProbabilities",
-        "Type": "TArray<Struct WeightedAmmoType>",
+        "Type": "TArray<struct AmmoTypeProbabilities>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -3401,7 +3482,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_N7415[0x4]",
+        "Name": "pad0x4_9CA8A[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -3436,7 +3517,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_P8LEX[0x2]",
+        "Name": "pad0x2_JQBIE[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -3554,6 +3635,46 @@
       }
     ]
   },
+  "AIControllerDynamicBalancingNamedParamMapping": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MaxCrewStrength",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_6Z9SF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CrewStrengthDynamicNamedParamOverrides",
+        "Type": "TArray<struct CrewStrengthDynamicNamedParamOverrides>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIControllerDynamicBalancingPlayerShipValueDesc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "DamageModifierCrewProximityVulnerabilityPairs": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -3571,7 +3692,7 @@
       },
       {
         "Name": "DamageMultipliers",
-        "Type": "TArray<Struct DamageableVulnerabilityPair>",
+        "Type": "TArray<struct DamageMultipliers>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -3593,7 +3714,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_ITXHZ[0x3]",
+        "Name": "pad0x3_YLSO5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -3645,7 +3766,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_NXKPC[0x7]",
+        "Name": "pad0x7_A24UX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -3891,7 +4012,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_2AG8F[0x4]",
+        "Name": "pad0x4_NB7X8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -3909,7 +4030,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_5NSBI[0x4]",
+        "Name": "pad0x4_3ZCSQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -4064,7 +4185,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_CM6T0[0x3]",
+        "Name": "pad0x3_ONXYU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -4318,10 +4439,6 @@
         "Offset": "0x8"
       }
     ]
-  },
-  "StartCreatureSplineMovementEvent": {
-    "ClassSize": "0x1",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by DougTheDruid#2784 on Discord",

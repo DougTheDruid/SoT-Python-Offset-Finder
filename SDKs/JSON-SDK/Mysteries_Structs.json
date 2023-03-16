@@ -33,13 +33,13 @@
       },
       {
         "Name": "UnlockReactions",
-        "Type": "TArray<Struct LandmarkReactionKeyFrame>",
+        "Type": "TArray<struct UnlockReactions>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "UnlockingCrews",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct UnlockingCrews>",
         "Size": "0x10",
         "Offset": "0x20"
       }

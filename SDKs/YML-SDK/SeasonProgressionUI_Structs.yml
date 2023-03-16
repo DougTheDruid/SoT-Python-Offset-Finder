@@ -22,7 +22,7 @@ DeedProgressDesc:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OH96U[0x4]
+  - Name: pad0x4_RU7U7[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -44,7 +44,7 @@ EnableMoreButtonEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9B70L[0x3]
+  - Name: pad0x3_65F76[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -59,7 +59,7 @@ NavigationDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_D17X3[0x3]
+  - Name: pad0x3_XG0GK[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ OpenSeasonsMenuEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ECPP6[0x3]
+  - Name: pad0x3_GLHC7[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -200,7 +200,7 @@ SeasonProgressionUITelemetryFragment:
   - Name: ReceivedEventsData
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct SeasonProgressionUIEventTypeTelemetryFragment>
+    Type: TArray<struct ReceivedEventsData>
   - Name: TotalNumReceivedEvents
     Offset: '0x10'
     Size: '0x4'
@@ -239,7 +239,7 @@ SeasonsPopupEvent:
   - Name: Text
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FText>
+    Type: TArray<struct FText>
   - Name: Images
     Offset: '0x10'
     Size: '0x10'

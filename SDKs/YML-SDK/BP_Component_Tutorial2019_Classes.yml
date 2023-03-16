@@ -6,9 +6,9 @@ BP_Component_Tutorial2019_C:
     Offset: '0xd8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xd3_OITPU[0xd3]
+  - Name: pad0x172_LM89Y[0x172]
     Offset: '0xe0'
-    Size: '0xd3'
+    Size: '0x172'
     Type: char
   - Name: GoldHoarders
     Offset: '0xe0'
@@ -17,7 +17,7 @@ BP_Component_Tutorial2019_C:
   - Name: GoldHoarderLocations
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<Struct Vector>
+    Type: TArray<struct GoldHoarderLocations>
   - Name: GoToVendorPromptObject
     Offset: '0x100'
     Size: '0x8'
@@ -29,12 +29,12 @@ BP_Component_Tutorial2019_C:
   - Name: OutpostNames
     Offset: '0x118'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: GoldHoarderOnRepPrerequiste
     Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2HDLH[0x7]
+  - Name: pad0x7_6UJU1[0x7]
     Offset: '0x129'
     Size: '0x7'
     Type: char

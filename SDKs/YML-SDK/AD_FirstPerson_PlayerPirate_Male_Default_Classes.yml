@@ -2,59 +2,59 @@
 # https://github.com/DougTheDruid
 AD_FirstPerson_PlayerPirate_Male_Default_C:
   Attributes:
-  - Name: Idles
+  - Name: None
     Offset: '0x70'
     Size: '0x10'
     Type: Struct ADS_IdlesNative
-  - Name: Locomotion
+  - Name: None
     Offset: '0x80'
     Size: '0x50'
     Type: Struct ADS_LocomotionNative
-  - Name: Jumping
+  - Name: None
     Offset: '0xd0'
     Size: '0x78'
     Type: Struct ADS_JumpingNative
-  - Name: Swimming
+  - Name: None
     Offset: '0x148'
     Size: '0x68'
     Type: Struct ADS_SwimmingNative
-  - Name: Wheel
+  - Name: None
     Offset: '0x1b0'
     Size: '0x88'
     Type: Struct ADS_WheelNative
-  - Name: Capstan
+  - Name: None
     Offset: '0x238'
     Size: '0x68'
     Type: Struct ADS_CapstanNative
-  - Name: CameraAdditive
+  - Name: None
     Offset: '0x2a0'
     Size: '0x50'
     Type: Struct ADS_CameraAdditiveNative
-  - Name: Items
+  - Name: None
     Offset: '0x2f0'
     Size: '0x10'
     Type: Struct ADS_ObjectsNative
-  - Name: Sockets
+  - Name: None
     Offset: '0x300'
     Size: '0x2'
     Type: Struct ADS_Sockets
-  - Name: pad0x6_BK9A8[0x6]
+  - Name: pad0x6_E2I4J[0x6]
     Offset: '0x302'
     Size: '0x6'
     Type: char
-  - Name: Cannon
+  - Name: None
     Offset: '0x308'
     Size: '0x38'
     Type: Struct ADS_CannonNative
-  - Name: Rowboat
+  - Name: None
     Offset: '0x340'
     Size: '0x98'
     Type: Struct ADS_RowingBoatNative
-  - Name: WaterPump
+  - Name: None
     Offset: '0x3d8'
     Size: '0x28'
     Type: Struct ADS_WaterPumpNative
-  - Name: Facial
+  - Name: None
     Offset: '0x400'
     Size: '0x90'
     Type: Struct ADS_FacialNative

@@ -16,7 +16,7 @@ FixedStepInterpCurveVector2D:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FixedStepInterpCurvePointVector2D>
+    Type: TArray<struct Points>
   - Name: StepTime
     Offset: '0x10'
     Size: '0x4'
@@ -101,7 +101,7 @@ WeightedProbabilityRangeOfRanges:
   - Name: SubRanges
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct WeightedProbabilityRangeOfRangesFloatPair>
+    Type: TArray<struct SubRanges>
   ClassSize: '0x30'
 WeightedProbabilityRangeOfRangesFloatPair:
   Attributes:

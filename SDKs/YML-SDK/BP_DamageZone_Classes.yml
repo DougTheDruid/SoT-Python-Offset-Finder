@@ -2,39 +2,39 @@
 # https://github.com/DougTheDruid
 BP_DamageZone_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x7f0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: Repair Tag
+  - Name: None
     Offset: '0x7f8'
     Size: '0x8'
     Type: struct FName
-  - Name: RepairGroup
+  - Name: None
     Offset: '0x800'
     Size: '0x10'
-    Type: Struct BP_InternalDamageGroup
-  - Name: ExternalHitBufferIndex
+    Type: Struct None
+  - Name: None
     Offset: '0x810'
     Size: '0x4'
     Type: int
-  - Name: MaxStoredHits
+  - Name: None
     Offset: '0x814'
     Size: '0x4'
     Type: int
-  - Name: Deferred Decals
+  - Name: None
     Offset: '0x818'
     Size: '0x10'
     Type: TArray<class DecalComponent*>
-  - Name: ClientUpdateEventCount
+  - Name: None
     Offset: '0x828'
     Size: '0x4'
     Type: int
-  - Name: ExternalDecalBufferIndex
+  - Name: None
     Offset: '0x82c'
     Size: '0x4'
     Type: int
-  - Name: HasBeenInitialized
+  - Name: None
     Offset: '0x830'
     Size: '0x1'
     Type: bool

@@ -25,7 +25,7 @@ OceanCrawlerAnimationDataStructure:
   - Name: AttackInterruptMontages
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<Struct CustomAnimationMontageId>
+    Type: TArray<struct AttackInterruptMontages>
   - Name: DeathMontageId
     Offset: '0x70'
     Size: '0x8'

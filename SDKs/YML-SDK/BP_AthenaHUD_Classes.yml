@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_AthenaHUD_C:
   Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x7e8'
+  - Name: None
+    Offset: '0x7f0'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x7f0'
-  InheritedSize: '0x7e8'
+  FullSize: '0x7f8'
+  InheritedSize: '0x7f0'
   Super: AthenaHUD

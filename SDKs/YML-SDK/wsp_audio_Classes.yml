@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 wsp_audio_C:
   Attributes:
-  - Name: PreviousFrameTime
+  - Name: None
     Offset: '0x3d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_06M73[0x4]
+  - Name: pad0x4_E78BR[0x4]
     Offset: '0x3d4'
     Size: '0x4'
     Type: char
-  - Name: WSP_Audio_2D_Emitter
+  - Name: None
     Offset: '0x3d8'
     Size: '0x20'
     Type: Struct WwiseEmitter
-  - Name: TimeInterface
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class Object*

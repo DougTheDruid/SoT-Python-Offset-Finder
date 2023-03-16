@@ -6,17 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x3efa3710 (Full Size[-0x3efa3710] - InheritedSize[0x0]
-class BP_SoveriegnHarpoonLauncher_2_C
+// Size 0x20 (Full Size[0xc50] - InheritedSize[0xc30]
+class BP_SoveriegnHarpoonLauncher_2_C: public HarpoonLauncher
 {
 public:
+	Class HarpoonItemLocationComponent*                          None;                                              // 0xc30(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xc38(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xc40(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xc48(0x8)
 };
 
 
-// Size 0x1 (Full Size[0x1] - InheritedSize[0x0]
-class BP_SoveriegnHarpoonLauncher_C: public None
+// Size 0x20 (Full Size[0xc50] - InheritedSize[0xc30]
+class BP_SoveriegnHarpoonLauncher_C: public HarpoonLauncher
 {
 public:
+	Class HarpoonItemLocationComponent*                          None;                                              // 0xc30(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xc38(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xc40(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xc48(0x8)
 };
 
 

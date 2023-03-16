@@ -61,7 +61,7 @@ public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
 	float                                                        Radius;                                            // 0xc(0x4)
 	byte                                                         RequiredMusicalInstrumentType;                     // 0x10(0x1)
-	char                                                         pad0x3_6PKKJ[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_JN372[0x3];                                 // 0x11(0x3)
 	int                                                          RequiredNumInteractors;                            // 0x14(0x4)
 };
 
@@ -70,7 +70,7 @@ public:
 struct ShantyPuzzleCompleteEvent
 {
 public:
-	TArray<Struct Guid>                                          ParticipatingCrews;                                // 0x0(0x10)
+	TArray<struct ParticipatingCrews>                            ParticipatingCrews;                                // 0x0(0x10)
 };
 
 

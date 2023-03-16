@@ -6,37 +6,37 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x570"
       },
       {
-        "Name": "None",
+        "Name": "Rope Anchor Point",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x578"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x580"
       },
       {
-        "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Name": "BP_RopeRendererComponent",
+        "Type": "BlueprintGeneratedClass BP_RopeRendererComponent_C*",
         "Size": "0x8",
         "Offset": "0x588"
       },
       {
-        "Name": "None",
+        "Name": "Rope Source",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x590"
       },
       {
-        "Name": "None",
+        "Name": "IntentCombiner",
         "Type": "Class IntentCombinerComponent*",
         "Size": "0x8",
         "Offset": "0x598"

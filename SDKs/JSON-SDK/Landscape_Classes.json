@@ -13,7 +13,7 @@
     "ClassSize": "0x1e8",
     "Attributes": [
       {
-        "Name": "pad0x1c_ZFD5G[0x1c]",
+        "Name": "pad0x1c_9E03P[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x28"
@@ -49,7 +49,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x1bc_NA262[0x1bc]",
+        "Name": "pad0x1bc_H0M05[0x1bc]",
         "Type": "char",
         "Size": "0x1bc",
         "Offset": "0x6a"
@@ -93,7 +93,7 @@
         "Offset": "0x5c8"
       },
       {
-        "Name": "pad0x4_Q63BT[0x4]",
+        "Name": "pad0x4_B62AS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5cc"
@@ -118,7 +118,7 @@
       },
       {
         "Name": "WeightmapLayerAllocations",
-        "Type": "TArray<Struct WeightmapLayerAllocationInfo>",
+        "Type": "TArray<struct WeightmapLayerAllocations>",
         "Size": "0x10",
         "Offset": "0x5e8"
       },
@@ -147,7 +147,7 @@
         "Offset": "0x620"
       },
       {
-        "Name": "pad0xc_PTHVC[0xc]",
+        "Name": "pad0xc_89RSL[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x624"
@@ -172,12 +172,12 @@
       },
       {
         "Name": "IrrelevantLights",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct IrrelevantLights>",
         "Size": "0x10",
         "Offset": "0x680"
       },
       {
-        "Name": "pad0x10_USCUC[0x10]",
+        "Name": "pad0x10_TRG7W[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x690"
@@ -231,7 +231,7 @@
         "Offset": "0x6d8"
       },
       {
-        "Name": "pad0x7_QOK2G[0x7]",
+        "Name": "pad0x7_PH8R9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x6d9"
@@ -249,7 +249,7 @@
         "Offset": "0x6e8"
       },
       {
-        "Name": "pad0x40_4S4L0[0x40]",
+        "Name": "pad0x40_Y9SYZ[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x6ee"
@@ -285,7 +285,7 @@
     "Attributes": [
       {
         "Name": "GrassVarieties",
-        "Type": "TArray<Struct GrassVariety>",
+        "Type": "TArray<struct GrassVarieties>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -332,7 +332,7 @@
         "Offset": "0x51"
       },
       {
-        "Name": "pad0x8_I5K0Q[0x8]",
+        "Name": "pad0x8_U15QC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x50"
@@ -400,7 +400,7 @@
         "Offset": "0x640"
       },
       {
-        "Name": "pad0x60_TWYDM[0x60]",
+        "Name": "pad0x60_TDZWJ[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x64e"
@@ -420,7 +420,7 @@
         "Offset": "0x690"
       },
       {
-        "Name": "pad0x30_HFHDG[0x30]",
+        "Name": "pad0x30_SRLCN[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x69e"
@@ -459,7 +459,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xc_FMAGH[0xc]",
+        "Name": "pad0xc_BAT7N[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x3a"
@@ -479,7 +479,7 @@
         "Offset": "0x1b8"
       },
       {
-        "Name": "pad0x3_B3BP2[0x3]",
+        "Name": "pad0x3_49QZ8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1b9"
@@ -497,7 +497,7 @@
         "Offset": "0x1c0"
       },
       {
-        "Name": "pad0xc_L2LLN[0xc]",
+        "Name": "pad0xc_ZJKI3[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x1c2"
@@ -525,7 +525,7 @@
     "ClassSize": "0x388",
     "Attributes": [
       {
-        "Name": "pad0x8_WCBZR[0x8]",
+        "Name": "pad0x8_FAFLC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -573,7 +573,7 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x4_H8I8S[0x4]",
+        "Name": "pad0x4_B2NBE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x404"
@@ -597,7 +597,7 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x4_5OSNT[0x4]",
+        "Name": "pad0x4_O93EP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x41c"
@@ -621,7 +621,7 @@
         "Offset": "0x440"
       },
       {
-        "Name": "pad0x70_0G4SF[0x70]",
+        "Name": "pad0x70_UUX0U[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x450"
@@ -669,7 +669,7 @@
         "Offset": "0x4e0"
       },
       {
-        "Name": "pad0x3_055WL[0x3]",
+        "Name": "pad0x3_NXGVK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4e1"
@@ -747,7 +747,7 @@
         "Offset": "0x69c"
       },
       {
-        "Name": "pad0x3_RNJKL[0x3]",
+        "Name": "pad0x3_63OCF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x69d"
@@ -765,7 +765,7 @@
         "Offset": "0x6a1"
       },
       {
-        "Name": "pad0xb0_GBMAP[0xb0]",
+        "Name": "pad0xb0_JKIQO[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x6a0"
@@ -786,12 +786,12 @@
       },
       {
         "Name": "ProxyComponentBases",
-        "Type": "TArray<Struct IntPoint>",
+        "Type": "TArray<struct ProxyComponentBases>",
         "Size": "0x10",
         "Offset": "0x630"
       },
       {
-        "Name": "pad0x30_TJL3X[0x30]",
+        "Name": "pad0x30_1ZGSM[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x63e"
@@ -830,7 +830,7 @@
         "Offset": "0x5d8"
       },
       {
-        "Name": "pad0x28_IIMWF[0x28]",
+        "Name": "pad0x28_XWQGN[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x5e6"
@@ -850,7 +850,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x18_GFKN6[0x18]",
+        "Name": "pad0x18_ABHSS[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x40"
@@ -863,7 +863,7 @@
       },
       {
         "Name": "Points",
-        "Type": "TArray<Struct LandscapeSplineInterpPoint>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -874,7 +874,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_LWB87[0x4]",
+        "Name": "pad0x4_N3PRJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
@@ -924,20 +924,20 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_Z0NPX[0x4]",
+        "Name": "pad0x4_9DDCY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "ConnectedSegments",
-        "Type": "TArray<Struct LandscapeSplineConnection>",
+        "Type": "TArray<struct ConnectedSegments>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "Points",
-        "Type": "TArray<Struct LandscapeSplineInterpPoint>",
+        "Type": "TArray<struct Points>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -948,7 +948,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x4_UA3ZG[0x4]",
+        "Name": "pad0x4_JOH04[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -969,7 +969,7 @@
     "Attributes": [
       {
         "Name": "GrassTypes",
-        "Type": "TArray<Struct GrassInput>",
+        "Type": "TArray<struct GrassTypes>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -983,7 +983,7 @@
     "Attributes": [
       {
         "Name": "Layers",
-        "Type": "TArray<Struct LayerBlendInput>",
+        "Type": "TArray<struct Layers>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -1014,7 +1014,7 @@
         "Offset": "0x71"
       },
       {
-        "Name": "pad0x2_2IET4[0x2]",
+        "Name": "pad0x2_BIMF8[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x72"
@@ -1044,7 +1044,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0xc_UGNNN[0xc]",
+        "Name": "pad0xc_55CP9[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x82"
@@ -1076,7 +1076,7 @@
         "Offset": "0x7c"
       },
       {
-        "Name": "pad0x24_6FO23[0x24]",
+        "Name": "pad0x24_D1NIE[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0x8a"
@@ -1114,7 +1114,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x3_2W3LY[0x3]",
+        "Name": "pad0x3_FY8IK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xe9"
@@ -1126,7 +1126,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x24_XP12Q[0x24]",
+        "Name": "pad0x24_OGE70[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0xfa"

@@ -12,9 +12,9 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x93_6SUEZ[0x93]",
+        "Name": "pad0x132_L3MY4[0x132]",
         "Type": "char",
-        "Size": "0x93",
+        "Size": "0x132",
         "Offset": "0x120"
       },
       {
@@ -37,7 +37,7 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
+        "Type": "TArray<struct Prompts>",
         "Size": "0x10",
         "Offset": "0x178"
       },
@@ -48,7 +48,7 @@
         "Offset": "0x188"
       },
       {
-        "Name": "pad0x7_PIEEL[0x7]",
+        "Name": "pad0x7_KKRCP[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x189"

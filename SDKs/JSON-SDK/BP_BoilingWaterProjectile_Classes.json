@@ -6,13 +6,13 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Sphere",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x728"
       },
       {
-        "Name": "Collision",
+        "Name": "None",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x730"

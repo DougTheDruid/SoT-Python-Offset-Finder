@@ -10,14 +10,14 @@ SwitchesActivatedInCorrectOrderPuzzleManagerPolicy:
     Offset: '0xf0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_I3VCC[0x7]
+  - Name: pad0x7_QP4V0[0x7]
     Offset: '0xf1'
     Size: '0x7'
     Type: char
   - Name: Presets
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Struct SwitchesActivatedInCorrectOrderPresetParams>
+    Type: TArray<struct Presets>
   ClassSize: '0x28'
   FullSize: '0x108'
   InheritedSize: '0xe0'

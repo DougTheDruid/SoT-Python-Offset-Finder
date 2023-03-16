@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct PoolableCollectionMapConfiguration
 {
 public:
-	TArray<Struct PoolableCollectionMapConfigurationEntry>       Pools;                                             // 0x0(0x10)
+	TArray<struct Pools>                                         Pools;                                             // 0x0(0x10)
 	bool                                                         PopulateJustInTime;                                // 0x10(0x1)
 };
 

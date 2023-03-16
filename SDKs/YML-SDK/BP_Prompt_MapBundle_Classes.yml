@@ -6,9 +6,9 @@ BP_Prompt_MapBundle_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_QHCWR[0x93]
+  - Name: pad0x132_1V6XK[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: MapBundlePromptAccessKey
     Offset: '0x120'
@@ -22,7 +22,7 @@ BP_Prompt_MapBundle_C:
     Offset: '0x190'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FC32Y[0x7]
+  - Name: pad0x7_3AD3V[0x7]
     Offset: '0x191'
     Size: '0x7'
     Type: char
@@ -38,7 +38,7 @@ BP_Prompt_MapBundle_C:
     Offset: '0x1e8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_T48LX[0x7]
+  - Name: pad0x7_LHN27[0x7]
     Offset: '0x1e9'
     Size: '0x7'
     Type: char

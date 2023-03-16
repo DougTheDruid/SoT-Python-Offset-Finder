@@ -36,7 +36,7 @@ IsStoryActiveConditionBase:
   - Name: StoryFlags
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct StoryFlag>
+    Type: TArray<struct StoryFlags>
   ClassSize: '0x48'
 LightingZoneStoryRelatedSettings:
   Attributes:
@@ -62,7 +62,7 @@ NamedPointsActorLocation:
   - Name: GroupLocations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct NamedPointsGroupActorLocation>
+    Type: TArray<struct GroupLocations>
   ClassSize: '0x20'
 NamedPointsGroupActorLocation:
   Attributes:
@@ -107,7 +107,7 @@ StoryClaimableResourcesList:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4XJ0R[0x7]
+  - Name: pad0x7_5LY3B[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -121,7 +121,7 @@ StoryClaimedResourcesChangedTelemetryEvent:
   - Name: StoryResourceStateChanges
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct StoryResourceStateChanged>
+    Type: TArray<struct StoryResourceStateChanges>
   ClassSize: '0x10'
 StoryFlag:
   Attributes:
@@ -172,11 +172,11 @@ StorySpawnedActorsChangeTelemetryEvent:
   - Name: StorySpawnedActors
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct StorySpawnedActorsIndividualStoryInfo>
+    Type: TArray<struct StorySpawnedActors>
   - Name: StoryDespawnedActors
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct StorySpawnedActorsIndividualStoryInfo>
+    Type: TArray<struct StoryDespawnedActors>
   ClassSize: '0x20'
 StorySpawnedActorsComponentList:
   Attributes:
@@ -187,7 +187,7 @@ StorySpawnedActorsComponentList:
   - Name: GroupLocations
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct NamedPointsGroupActorLocation>
+    Type: TArray<struct GroupLocations>
   - Name: LayerToSpawn
     Offset: '0x18'
     Size: '0x8'
@@ -217,13 +217,13 @@ StorySpawnedActorsList:
   - Name: ActorLocations
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct ActorLocationPair>
+    Type: TArray<struct ActorLocations>
   - Name: NamedPointsActorLocations
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct NamedPointsActorLocation>
+    Type: TArray<struct NamedPointsActorLocations>
   - Name: InstancedLayerLocations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct InstancedLayerLocation>
+    Type: TArray<struct InstancedLayerLocations>
   ClassSize: '0x38'

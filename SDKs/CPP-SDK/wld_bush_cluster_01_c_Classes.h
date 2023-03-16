@@ -6,14 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20 (Full Size[0x428] - InheritedSize[0x408]
-class wld_bush_cluster_01_c_C: public BP_Placement_HeightDrop_C
+// Size 0x7cccd0f5 (Full Size[0x428] - InheritedSize[-0x7ccccccd]
+class wld_bush_cluster_01_c_C
 {
 public:
-	Class StaticMeshComponent*                                   wld_bush_01_a_01;                                  // 0x408(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_08_c_01;                                  // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_bush_06_b_01;                                  // 0x418(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x420(0x8)
+	char                                                         pad0x7cccd0d5_LUKCI[0x7cccd0d5];                   // -0x7ccccccd(0x7cccd0d5)
+	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
+	Class SceneComponent*                                        None;                                              // 0x420(0x8)
 };
 
 

@@ -28,7 +28,7 @@ public:
 class TreasuryRoom: public Actor
 {
 public:
-	char                                                         pad0x8_MJQY6[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_9ZEVO[0x8];                                 // 0x3c8(0x8)
 	Class BoxComponent*                                          RoomAreaComponent;                                 // 0x3d0(0x8)
 	float                                                        TreasuryInactiveDurationMinSeconds;                // 0x3d8(0x4)
 	float                                                        TreasuryInactiveDurationMaxSeconds;                // 0x3dc(0x4)
@@ -40,7 +40,7 @@ public:
 	int                                                          MinWavesInEncounter;                               // 0x3f4(0x4)
 	int                                                          MaxWavesInEncounter;                               // 0x3f8(0x4)
 	int                                                          MaxEncounters;                                     // 0x3fc(0x4)
-	TArray<Struct TreasuryWaveEncounter>                         WaveEncounters;                                    // 0x400(0x10)
+	TArray<struct WaveEncounters>                                WaveEncounters;                                    // 0x400(0x10)
 	Class Actor*                                                 FloodMechanismActor;                               // 0x410(0x8)
 	Class Actor*                                                 FloodTriggerActor;                                 // 0x418(0x8)
 	Class Actor*                                                 DrainMechanismActor;                               // 0x420(0x8)
@@ -53,11 +53,11 @@ public:
 	TArray<Weakclass CachedParticipantControllers>               CachedParticipantControllers;                      // 0x480(0x10)
 	Class Actor*                                                 VaultLootSpawnerActor;                             // 0x490(0x8)
 	Struct PlayerStat                                            VaultOpenStat;                                     // 0x498(0x4)
-	char                                                         pad0x4_KPT40[0x4];                                 // 0x49c(0x4)
+	char                                                         pad0x4_K0CGD[0x4];                                 // 0x49c(0x4)
 	Class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x4a0(0x8)
 	Class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x4a8(0x8)
 	Class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x4b0(0x8)
-	char                                                         pad0x50_DC535[0x50];                               // 0x4b6(0x50)
+	char                                                         pad0x50_UX8XS[0x50];                               // 0x4b6(0x50)
 };
 
 

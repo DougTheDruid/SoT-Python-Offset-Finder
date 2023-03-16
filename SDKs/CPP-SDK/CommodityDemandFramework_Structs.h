@@ -19,7 +19,7 @@ struct ActiveNPCDemands
 {
 public:
 	TArray<UInt32 NPCIdHashes>                                   NPCIdHashes;                                       // 0x0(0x10)
-	TArray<Struct ActiveCommodityDemands>                        NPCDemands;                                        // 0x10(0x10)
+	TArray<struct NPCDemands>                                    NPCDemands;                                        // 0x10(0x10)
 };
 
 
@@ -46,7 +46,7 @@ struct EntitlementToRedeemItems
 {
 public:
 	class                                                        RequiredEntitlement;                               // 0x0(0x8)
-	TArray<Struct CommodityDescWithRedeemId>                     RedeemItems;                                       // 0x8(0x10)
+	TArray<struct RedeemItems>                                   RedeemItems;                                       // 0x8(0x10)
 };
 
 
@@ -80,7 +80,7 @@ struct CommodityRedemptionTrackingModel
 {
 public:
 	byte                                                         NPCName;                                           // 0x2(0x1)
-	char                                                         pad0x5_U0ACG[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_9KM4X[0x5];                                 // 0x3(0x5)
 };
 
 
@@ -90,7 +90,7 @@ struct CommodityTrackingModel
 public:
 	Struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
 	byte                                                         NPCName;                                           // 0x10(0x1)
-	char                                                         pad0x7_0T3LA[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_HRBUY[0x7];                                 // 0x11(0x7)
 };
 
 

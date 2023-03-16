@@ -2,70 +2,14 @@
 # https://github.com/DougTheDruid
 BP_TotD_PortalController_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: AnimNotifyWwiseEmitter
-    Offset: '0x3d0'
-    Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: DefaultSceneRoot
-    Offset: '0x3d8'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: Timeline_0_CloudVisibility_E720F06846CDD3DCC686A1B40E94C68C
-    Offset: '0x3e0'
-    Size: '0x4'
-    Type: float
-  - Name: Timeline_0_PortalSwirlVisibility_E720F06846CDD3DCC686A1B40E94C68C
-    Offset: '0x3e4'
-    Size: '0x4'
-    Type: float
-  - Name: Timeline_0_CrackVisibility_E720F06846CDD3DCC686A1B40E94C68C
-    Offset: '0x3e8'
-    Size: '0x4'
-    Type: float
-  - Name: Timeline_0_LightScale_E720F06846CDD3DCC686A1B40E94C68C
-    Offset: '0x3ec'
-    Size: '0x4'
-    Type: float
-  - Name: Timeline_0_PortalOpen_E720F06846CDD3DCC686A1B40E94C68C
-    Offset: '0x3f0'
-    Size: '0x4'
-    Type: float
-  - Name: Timeline_0__Direction_E720F06846CDD3DCC686A1B40E94C68C
-    Offset: '0x3f4'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x3_43ASP[0x3]
-    Offset: '0x3f5'
-    Size: '0x3'
+  - Name: pad0x70_Y6913[0x70]
+    Offset: '0x3ce'
+    Size: '0x70'
     Type: char
-  - Name: Timeline
-    Offset: '0x3f8'
-    Size: '0x8'
-    Type: Class TimelineComponent*
-  - Name: DynamicMaterials
-    Offset: '0x400'
-    Size: '0x10'
-    Type: TArray<class MaterialInstanceDynamic*>
-  - Name: Lights
-    Offset: '0x410'
-    Size: '0x10'
-    Type: TArray<class PointLightComponent*>
-  - Name: LightMaxScale
-    Offset: '0x420'
-    Size: '0x4'
-    Type: float
-  - Name: GlowMaxScale
-    Offset: '0x424'
-    Size: '0x4'
-    Type: float
-  - Name: PortalMask
-    Offset: '0x428'
-    Size: '0x8'
-    Type: Class Texture2D*
   ClassSize: '0x68'
   FullSize: '0x430'
   InheritedSize: '0x3c8'

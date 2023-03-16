@@ -2,59 +2,59 @@
 # https://github.com/DougTheDruid
 MapTable_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x7a0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
+  - Name: None
     Offset: '0x7a8'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: NavBlocker
+  - Name: None
     Offset: '0x7b0'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: ControlPoint
+  - Name: None
     Offset: '0x7b8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ControlPoint
+  - Name: None
     Offset: '0x7c0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ControlPoint
+  - Name: None
     Offset: '0x7c8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ControlPoint
+  - Name: None
     Offset: '0x7d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ControlPoint
+  - Name: None
     Offset: '0x7d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: ControlPoint
+  - Name: None
     Offset: '0x7e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TextureFeedback
+  - Name: None
     Offset: '0x7e8'
     Size: '0x8'
     Type: Class TextureFeedbackComponent*
-  - Name: Cube
+  - Name: None
     Offset: '0x7f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Map
+  - Name: None
     Offset: '0x7f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: ActiveRange
+  - Name: None
     Offset: '0x800'
     Size: '0x4'
     Type: float
-  - Name: IsActive
+  - Name: None
     Offset: '0x804'
     Size: '0x1'
     Type: bool

@@ -12,7 +12,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x11_L70BN[0x11]",
+        "Name": "pad0x11_YHLVL[0x11]",
         "Type": "char",
         "Size": "0x11",
         "Offset": "0x27"
@@ -60,7 +60,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0xc_A9S25[0xc]",
+        "Name": "pad0xc_N5QAI[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x2a"
@@ -109,7 +109,7 @@
       },
       {
         "Name": "SupportedDestinationTypes",
-        "Type": "TArray<Class SupportedDestinationTypes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -129,12 +129,12 @@
       },
       {
         "Name": "WeightedSupportedDescriptorTypes",
-        "Type": "TArray<Struct WeightedClueDestinationDescriptor>",
+        "Type": "TArray<struct WeightedSupportedDescriptorTypes>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x70_ZHWUX[0x70]",
+        "Name": "pad0x70_YETES[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x3e"
@@ -149,7 +149,7 @@
     "Attributes": [
       {
         "Name": "CluesThatCanDescribeSites",
-        "Type": "TArray<Struct ClueSiteTypeSupportedDescribedByEntry>",
+        "Type": "TArray<struct CluesThatCanDescribeSites>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -181,7 +181,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_F5AAU[0x8]",
+        "Name": "pad0x8_R12NW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -199,7 +199,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x9_FX86U[0x9]",
+        "Name": "pad0x9_TORJS[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0xd7"
@@ -232,7 +232,7 @@
       },
       {
         "Name": "RestrictedClueTypes",
-        "Type": "TArray<Struct RestrictedClueType>",
+        "Type": "TArray<struct RestrictedClueTypes>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -267,7 +267,7 @@
     "Attributes": [
       {
         "Name": "ClueSiteLootRestrictions",
-        "Type": "TArray<Struct ClueSiteLootRestriction>",
+        "Type": "TArray<struct ClueSiteLootRestrictions>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -281,7 +281,7 @@
     "Attributes": [
       {
         "Name": "RankBasedDebrisDistribution",
-        "Type": "TArray<Struct DebrisToRangeDist>",
+        "Type": "TArray<struct RankBasedDebrisDistribution>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -330,7 +330,7 @@
         "Offset": "0x188"
       },
       {
-        "Name": "pad0x18_EM6N5[0x18]",
+        "Name": "pad0x18_X7AS1[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x18e"
@@ -345,7 +345,7 @@
     "Attributes": [
       {
         "Name": "RankBasedLootDistribution",
-        "Type": "TArray<Struct LootToRangeDist>",
+        "Type": "TArray<struct RankBasedLootDistribution>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -365,14 +365,14 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_HQBZT[0x8]",
+        "Name": "pad0x8_12ES0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "LootItemSpawnRelativeLocations",
-        "Type": "TArray<Struct Vector>",
+        "Type": "TArray<struct LootItemSpawnRelativeLocations>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
@@ -386,7 +386,7 @@
     "Attributes": [
       {
         "Name": "ClueSiteTypes",
-        "Type": "TArray<Class ClueSiteTypes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -399,7 +399,7 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "pad0x18_95NJD[0x18]",
+        "Name": "pad0x18_9ONZW[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x98"
@@ -411,7 +411,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0xf0_B7ELA[0xf0]",
+        "Name": "pad0xf0_USVFI[0xf0]",
         "Type": "char",
         "Size": "0xf0",
         "Offset": "0xb6"
@@ -432,13 +432,13 @@
       },
       {
         "Name": "ClueSites",
-        "Type": "TArray<Struct ClueSite>",
+        "Type": "TArray<struct ClueSites>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "DebugClueSiteIds",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct DebugClueSiteIds>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -494,7 +494,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x4_KOE3X[0x4]",
+        "Name": "pad0x4_G1I4M[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
@@ -564,7 +564,7 @@
       },
       {
         "Name": "AllowedClueTypes",
-        "Type": "TArray<Class AllowedClueTypes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x140"
       },
@@ -754,7 +754,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x70_AUA6X[0x70]",
+        "Name": "pad0x70_6N368[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x9e"
@@ -786,7 +786,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x7_V9ERU[0x7]",
+        "Name": "pad0x7_ALHNY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x91"
@@ -876,7 +876,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x9_QEBD9[0x9]",
+        "Name": "pad0x9_G316S[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x10f"
@@ -942,7 +942,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x9_K3BUZ[0x9]",
+        "Name": "pad0x9_9OF1B[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0xaf"
@@ -957,7 +957,7 @@
     "Attributes": [
       {
         "Name": "Debris",
-        "Type": "TArray<Struct WeightedDebris>",
+        "Type": "TArray<struct Debris>",
         "Size": "0x10",
         "Offset": "0x28"
       }

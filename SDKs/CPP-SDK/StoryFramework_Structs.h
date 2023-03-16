@@ -18,7 +18,7 @@ public:
 struct StoryClaimedResourcesChangedTelemetryEvent
 {
 public:
-	TArray<Struct StoryResourceStateChanged>                     StoryResourceStateChanges;                         // 0x0(0x10)
+	TArray<struct StoryResourceStateChanges>                     StoryResourceStateChanges;                         // 0x0(0x10)
 };
 
 
@@ -39,7 +39,7 @@ struct StoryClaimableResourcesList
 public:
 	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
-	char                                                         pad0x7_4XJ0R[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_5LY3B[0x7];                                 // 0x9(0x7)
 	TArray<Weakclass ClaimableResources>                         ClaimableResources;                                // 0x10(0x10)
 };
 
@@ -67,7 +67,7 @@ struct StorySpawnedActorsComponentList
 {
 public:
 	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
+	TArray<struct GroupLocations>                                GroupLocations;                                    // 0x8(0x10)
 	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x18(0x8)
 };
 
@@ -77,9 +77,9 @@ struct StorySpawnedActorsList
 {
 public:
 	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	TArray<Struct ActorLocationPair>                             ActorLocations;                                    // 0x8(0x10)
-	TArray<Struct NamedPointsActorLocation>                      NamedPointsActorLocations;                         // 0x18(0x10)
-	TArray<Struct InstancedLayerLocation>                        InstancedLayerLocations;                           // 0x28(0x10)
+	TArray<struct ActorLocations>                                ActorLocations;                                    // 0x8(0x10)
+	TArray<struct NamedPointsActorLocations>                     NamedPointsActorLocations;                         // 0x18(0x10)
+	TArray<struct InstancedLayerLocations>                       InstancedLayerLocations;                           // 0x28(0x10)
 };
 
 
@@ -97,7 +97,7 @@ struct NamedPointsActorLocation
 {
 public:
 	Struct StringAssetReference                                  ActorWithNamedPointsComponent;                     // 0x0(0x10)
-	TArray<Struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x10(0x10)
+	TArray<struct GroupLocations>                                GroupLocations;                                    // 0x10(0x10)
 };
 
 
@@ -113,8 +113,8 @@ public:
 struct StorySpawnedActorsChangeTelemetryEvent
 {
 public:
-	TArray<Struct StorySpawnedActorsIndividualStoryInfo>         StorySpawnedActors;                                // 0x0(0x10)
-	TArray<Struct StorySpawnedActorsIndividualStoryInfo>         StoryDespawnedActors;                              // 0x10(0x10)
+	TArray<struct StorySpawnedActors>                            StorySpawnedActors;                                // 0x0(0x10)
+	TArray<struct StoryDespawnedActors>                          StoryDespawnedActors;                              // 0x10(0x10)
 };
 
 
@@ -132,7 +132,7 @@ public:
 struct IsStoryActiveConditionBase
 {
 public:
-	TArray<Struct StoryFlag>                                     StoryFlags;                                        // 0x28(0x10)
+	TArray<struct StoryFlags>                                    StoryFlags;                                        // 0x28(0x10)
 };
 
 

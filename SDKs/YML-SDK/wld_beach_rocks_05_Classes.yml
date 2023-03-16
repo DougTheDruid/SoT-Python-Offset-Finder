@@ -2,55 +2,59 @@
 # https://github.com/DougTheDruid
 wld_beach_rocks_05_C:
   Attributes:
-  - Name: wld_rock_small_01__b
+  - Name: pad0x7cccd0d5_NJROR[0x7cccd0d5]
+    Offset: '-0x7ccccccd'
+    Size: '0x7cccd0d5'
+    Type: char
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_small_01__c
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_medium_01__e
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_medium_01__d
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_medium_01__c
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_xlarge_05_a
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_large_01__e
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_large_01__c1
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_large_01__c
+  - Name: None
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_xlarge_03_a
+  - Name: None
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wld_rock_large_01__d
+  - Name: None
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Scene
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x60'
+  ClassSize: '0x7cccd135'
   FullSize: '0x468'
-  InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+  InheritedSize: '-0x7ccccccd'
+  Super: ''

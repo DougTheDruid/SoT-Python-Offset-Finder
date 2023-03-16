@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0xc38] - InheritedSize[0xc20]
+// Size 0x18 (Full Size[0xc48] - InheritedSize[0xc30]
 class BP_HarpoonLauncher_C: public HarpoonLauncher
 {
 public:
-	Class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xc20(0x8)
-	Class CapsuleComponent*                                      MountCollision;                                    // 0xc28(0x8)
-	Class CapsuleComponent*                                      BarrelCollision;                                   // 0xc30(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xc30(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xc38(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xc40(0x8)
 };
 
 

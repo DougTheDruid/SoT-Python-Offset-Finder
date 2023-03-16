@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "QueueWaitTimes",
-        "Type": "TArray<Struct ServerQueueWaitTimeModel>",
+        "Type": "TArray<struct QueueWaitTimes>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -132,7 +132,7 @@
       },
       {
         "Name": "Crews",
-        "Type": "TArray<Struct ServerCrewModel>",
+        "Type": "TArray<struct Crews>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -143,7 +143,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x3_0GBQZ[0x3]",
+        "Name": "pad0x3_RJHBX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x89"
@@ -190,14 +190,14 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_R8IFR[0x4]",
+        "Name": "pad0x4_I07AV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "Positions",
-        "Type": "TArray<Struct Vector2D>",
+        "Type": "TArray<struct Positions>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -214,7 +214,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x3_FQ9F9[0x3]",
+        "Name": "pad0x3_ILYFM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x71"
@@ -244,7 +244,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_NH79C[0x3]",
+        "Name": "pad0x3_4RO4I[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
@@ -273,14 +273,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_JYWSQ[0x7]",
+        "Name": "pad0x7_PGGWV[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "Crews",
-        "Type": "TArray<Struct ServerCrewModel>",
+        "Type": "TArray<struct Crews>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -385,7 +385,7 @@
       },
       {
         "Name": "Crews",
-        "Type": "TArray<Struct ExistingServerCrewModel>",
+        "Type": "TArray<struct Crews>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -408,13 +408,13 @@
     "Attributes": [
       {
         "Name": "Positions",
-        "Type": "TArray<Struct Vector2D>",
+        "Type": "TArray<struct Positions>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Regions",
-        "Type": "TArray<Struct ServerRegionModel>",
+        "Type": "TArray<struct Regions>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -465,7 +465,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_K68Q4[0x3]",
+        "Name": "pad0x3_I33X5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -477,7 +477,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_J6PNF[0x4]",
+        "Name": "pad0x4_02XOI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"

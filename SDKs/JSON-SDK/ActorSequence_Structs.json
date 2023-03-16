@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "BindingIds",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct BindingIds>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "References",
-        "Type": "TArray<Struct ActorSequenceObjectReferences>",
+        "Type": "TArray<struct References>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "Array",
-        "Type": "TArray<Struct ActorSequenceObjectReference>",
+        "Type": "TArray<struct Array>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -37,7 +37,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_HSIRX[0x3]",
+        "Name": "pad0x3_QJZN9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -49,7 +49,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_JHELM[0x4]",
+        "Name": "pad0x4_94F7T[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

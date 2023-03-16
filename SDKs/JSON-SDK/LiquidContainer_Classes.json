@@ -26,7 +26,7 @@
       },
       {
         "Name": "LiquidTypeParams",
-        "Type": "TArray<Struct LiquidTypeParams>",
+        "Type": "TArray<struct LiquidTypeParams>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
@@ -37,7 +37,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_JC36A[0x4]",
+        "Name": "pad0x4_PALWK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xec"
@@ -67,7 +67,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x38_11VQ5[0x38]",
+        "Name": "pad0x38_1RN3O[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x10e"

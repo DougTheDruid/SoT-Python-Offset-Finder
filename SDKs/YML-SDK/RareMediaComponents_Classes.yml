@@ -8,7 +8,7 @@ MediaSubtitleComponent:
   Super: ActorComponent
 WwiseMediaSoundComponent:
   Attributes:
-  - Name: pad0x88_PUA27[0x88]
+  - Name: pad0x88_EDS7L[0x88]
     Offset: '0x2e0'
     Size: '0x88'
     Type: char
@@ -16,7 +16,7 @@ WwiseMediaSoundComponent:
     Offset: '0x368'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: pad0x40_6VW1D[0x40]
+  - Name: pad0x40_GXP35[0x40]
     Offset: '0x370'
     Size: '0x40'
     Type: char
@@ -24,7 +24,7 @@ WwiseMediaSoundComponent:
     Offset: '0x3b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_C6JCB[0x14]
+  - Name: pad0x14_K8K8Q[0x14]
     Offset: '0x3b2'
     Size: '0x14'
     Type: char

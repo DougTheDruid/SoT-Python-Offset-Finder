@@ -12,11 +12,11 @@ GameplayTagContainer:
   - Name: GameplayTags
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GameplayTag>
+    Type: TArray<struct GameplayTags>
   - Name: Tags
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x28'
 GameplayTagNode:
   Attributes: []
@@ -27,14 +27,14 @@ GameplayTagQuery:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_VPJMV[0x4]
+  - Name: pad0x4_MC27I[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
   - Name: TagDictionary
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct GameplayTag>
+    Type: TArray<struct TagDictionary>
   - Name: QueryTokenStream
     Offset: '0x18'
     Size: '0x10'

@@ -13,7 +13,7 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "pad0x8_HRMFQ[0x8]",
+        "Name": "pad0x8_78JZR[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -43,7 +43,7 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x130_UBWT2[0x130]",
+        "Name": "pad0x130_DTK1P[0x130]",
         "Type": "char",
         "Size": "0x130",
         "Offset": "0x3f6"
@@ -72,7 +72,7 @@
     "Attributes": [
       {
         "Name": "EmoteDataList",
-        "Type": "TArray<Struct EmoteData>",
+        "Type": "TArray<struct EmoteDataList>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -91,7 +91,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x9_YYOMU[0x9]",
+        "Name": "pad0x9_89U53[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x27"
@@ -113,7 +113,7 @@
     "Attributes": [
       {
         "Name": "EmoteIds",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -127,7 +127,7 @@
     "Attributes": [
       {
         "Name": "PossibleObjects",
-        "Type": "TArray<Struct EmotePropRandomObjectInfo>",
+        "Type": "TArray<struct PossibleObjects>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -140,7 +140,7 @@
     "ClassSize": "0x130",
     "Attributes": [
       {
-        "Name": "pad0x8_E2H49[0x8]",
+        "Name": "pad0x8_VOQ6W[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -158,7 +158,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x128_RP2XI[0x128]",
+        "Name": "pad0x128_EF0T8[0x128]",
         "Type": "char",
         "Size": "0x128",
         "Offset": "0x3de"
@@ -178,7 +178,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xc_MHO1B[0xc]",
+        "Name": "pad0xc_54DGE[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x3a"

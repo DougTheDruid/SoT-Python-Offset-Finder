@@ -6,12 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xc1 (Full Size[0x961] - InheritedSize[0x8a0]
-class BP_audio_trn_shop_C: public CollectorsChestItemProxyStatic
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
+class BP_audio_trn_shop_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x8a0(0x8)
-	char                                                         pad0xc9_VTWMB[0xc9];                               // 0x8a6(0xc9)
+	Class TritonComponent*                                       None;                                              // 0x3c8(0x8)
+	Class AudioPortalComponent*                                  None;                                              // 0x3d0(0x8)
+	Class AudioSpaceComponent*                                   None;                                              // 0x3d8(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
 };
 
 

@@ -11,7 +11,7 @@ struct GiveEmergentVoyageData
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	char                                                         pad0x4_GW276[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_2AR1V[0x4];                                 // 0x4(0x4)
 	Struct FString                                               VoyageAssetPath;                                   // 0x8(0x10)
 };
 

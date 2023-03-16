@@ -12,7 +12,7 @@ struct DebugMenuButtonShortcut
 public:
 	Struct FString                                               DisplayName;                                       // 0x0(0x10)
 	Struct FString                                               ConsoleCommand;                                    // 0x10(0x10)
-	TArray<Struct Key>                                           Buttons;                                           // 0x20(0x10)
+	TArray<struct Buttons>                                       Buttons;                                           // 0x20(0x10)
 	float                                                        RequiredHoldTime;                                  // 0x30(0x4)
 	bool                                                         AvailableInShippingBuilds;                         // 0x34(0x1)
 };

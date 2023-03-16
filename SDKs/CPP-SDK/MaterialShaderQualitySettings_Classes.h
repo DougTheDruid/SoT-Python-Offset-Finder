@@ -18,7 +18,7 @@ class ShaderPlatformQualitySettings: public Object
 {
 public:
 	Struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
-	char                                                         pad0x14_EZ15J[0x14];                               // 0x2a(0x14)
+	char                                                         pad0x14_PNBE3[0x14];                               // 0x2a(0x14)
 };
 
 

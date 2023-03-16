@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 bp_light_volume_sphere_orange_a_C:
   Attributes:
-  - Name: Billboard
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class BillboardComponent*
-  - Name: StaticMeshComponent0
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

@@ -6,9 +6,9 @@ BP_Prompt_MaidenVoyage_FishingRodTutorial_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_ZVGGL[0x93]
+  - Name: pad0x132_HV9XM[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: State_RodWielded
     Offset: '0x120'
@@ -106,7 +106,7 @@ BP_Prompt_MaidenVoyage_FishingRodTutorial_C:
     Offset: '0x540'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1P103[0x7]
+  - Name: pad0x7_VEMSW[0x7]
     Offset: '0x541'
     Size: '0x7'
     Type: char
@@ -118,7 +118,7 @@ BP_Prompt_MaidenVoyage_FishingRodTutorial_C:
     Offset: '0x590'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_DN31Y[0x7]
+  - Name: pad0x7_YOAW6[0x7]
     Offset: '0x591'
     Size: '0x7'
     Type: char

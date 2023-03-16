@@ -6,49 +6,49 @@
     "ClassSize": "0x111",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0xa30"
       },
       {
-        "Name": "ProjectileCollision",
+        "Name": "None",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0xa38"
       },
       {
-        "Name": "Interactable",
+        "Name": "None",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0xa40"
       },
       {
-        "Name": "Wheel Centered",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0xa48"
       },
       {
-        "Name": "Wheel Movement Started",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0xa90"
       },
       {
-        "Name": "Wheel Movement Stopped",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0xad8"
       },
       {
-        "Name": "AudioEmitter",
+        "Name": "None",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0xb20"
       },
       {
-        "Name": "ShipWheelTurning",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xb40"

@@ -69,7 +69,7 @@ struct ServerMigrationRefusedEvent
 {
 public:
 	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)
-	TArray<Struct Guid>                                          CrewIds;                                           // 0x10(0x10)
+	TArray<struct CrewIds>                                       CrewIds;                                           // 0x10(0x10)
 };
 
 
@@ -109,7 +109,7 @@ struct ServerMigrationRequestEvent
 public:
 	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)
 	Struct FString                                               DestinationAddress;                                // 0x10(0x10)
-	TArray<Struct Guid>                                          CrewIds;                                           // 0x20(0x10)
+	TArray<struct CrewIds>                                       CrewIds;                                           // 0x20(0x10)
 	Struct FString                                               SubMode;                                           // 0x30(0x10)
 	TArray<Byte MatchmakingReasons>                              MatchmakingReasons;                                // 0x40(0x10)
 };

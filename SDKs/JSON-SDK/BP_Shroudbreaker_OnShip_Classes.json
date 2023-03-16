@@ -6,223 +6,223 @@
     "ClassSize": "0x2c8",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
-        "Name": "vfx_ShroudBreaker_OnShip_stage4",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
-        "Name": "ShieldPulseMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
-        "Name": "vfx_ShroudBreaker_OnShip_stage3",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
-        "Name": "vfx_shroudbreaker_ember",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
-        "Name": "vfx_shroudbreaker_shipTip",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
-        "Name": "ShieldMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x488"
       },
       {
-        "Name": "WwiseEmitter",
+        "Name": "None",
         "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x490"
       },
       {
-        "Name": "vfx_ShroudBreaker_disappear_smoke_cloud",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x498"
       },
       {
-        "Name": "vfx_ShroudBreaker_OnShip_stage1",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
       {
-        "Name": "MusicZone",
+        "Name": "None",
         "Type": "Class MusicZoneComponent*",
         "Size": "0x8",
         "Offset": "0x4a8"
       },
       {
-        "Name": "StaticMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
-        "Name": "ActivateShroudbreakerHandle",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0x4b8"
       },
       {
-        "Name": "DeactivateShroudbreakerHandle",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0x500"
       },
       {
-        "Name": "ActivateEffectsHandle",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0x548"
       },
       {
-        "Name": "DeactivateEffectsHandle",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0x590"
       },
       {
-        "Name": "ShipDestroyedHandle",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0x5d8"
       },
       {
-        "Name": "ParentShipActor",
+        "Name": "None",
         "Type": "Class Actor*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
-        "Name": "MusicZoneActive",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x628"
       },
       {
-        "Name": "pad0x3_N9RB3[0x3]",
+        "Name": "pad0x3_SRK0S[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x629"
       },
       {
-        "Name": "GemEmissiveOn",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x62c"
       },
       {
-        "Name": "Shroudbreaker Material",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
-        "Name": "GemEmissiveOff",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x638"
       },
       {
-        "Name": "ShroudBreakerEffectsActive",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x63c"
       },
       {
-        "Name": "ShroudBreakerDeactivate",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x63d"
       },
       {
-        "Name": "pad0x2_SP458[0x2]",
+        "Name": "pad0x2_MY0Q6[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x63e"
       },
       {
-        "Name": "PlayerEnteredIslandVincityEventHandle",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0x640"
       },
       {
-        "Name": "PlayerLeftIslandVincityEventHandle",
+        "Name": "None",
         "Type": "Struct ObjectMessagingHandle",
         "Size": "0x48",
         "Offset": "0x688"
       },
       {
-        "Name": "ShipProgressSpawnLoactionsAssetID",
-        "Type": "TArray<Assetclass ShipProgressSpawnLoactionsAssetID>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x6d0"
       },
       {
-        "Name": "ShipProgressSpawnLocationsReference",
+        "Name": "None",
         "Type": "TArray<class ProgressShipSpawnLocation*>",
         "Size": "0x10",
         "Offset": "0x6e0"
       },
       {
-        "Name": "ShieldMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
-        "Name": "ShieldPulseMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "DEBUG_Stage",
+        "Name": "None",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x700"
       },
       {
-        "Name": "FinalStageActivationDelay",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x704"
       },
       {
-        "Name": "NewVar",
+        "Name": "None",
         "Type": "Class SoundBase*",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
-        "Name": "ShipHullAudio",
+        "Name": "None",
         "Type": "Class ShipHullAudio*",
         "Size": "0x8",
         "Offset": "0x710"
       },
       {
-        "Name": "ShroudBreakerAmbientLoopingWwiseEvent",
+        "Name": "None",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x718"

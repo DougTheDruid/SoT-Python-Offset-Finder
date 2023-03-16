@@ -28,7 +28,7 @@
     "Attributes": [
       {
         "Name": "Status",
-        "Type": "TArray<Class Status>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -39,7 +39,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x9_ALQIV[0x9]",
+        "Name": "pad0x9_2GQ3Z[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x3f"
@@ -60,7 +60,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_GZ7SZ[0x8]",
+        "Name": "pad0x8_RZPQ1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -72,7 +72,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x9_KHCQO[0x9]",
+        "Name": "pad0x9_E8CJN[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0xcf"
@@ -87,7 +87,7 @@
     "Attributes": [
       {
         "Name": "StatusDefinitions",
-        "Type": "TArray<Struct DebugMenuStatusDefinition>",
+        "Type": "TArray<struct StatusDefinitions>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -155,7 +155,7 @@
       },
       {
         "Name": "TriggerStatus",
-        "Type": "TArray<Class TriggerStatus>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -181,7 +181,7 @@
       },
       {
         "Name": "FeatureToggledResponseLists",
-        "Type": "TArray<Struct FeatureToggledStatusResponseList>",
+        "Type": "TArray<struct FeatureToggledResponseLists>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -200,7 +200,7 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x20_CSMSB[0x20]",
+        "Name": "pad0x20_W3SW5[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc8"
@@ -213,7 +213,7 @@
       },
       {
         "Name": "ActiveEffects",
-        "Type": "TArray<Struct ActiveStatusEffect>",
+        "Type": "TArray<struct ActiveEffects>",
         "Size": "0x10",
         "Offset": "0xf0"
       }
@@ -240,7 +240,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_2Q3FY[0x8]",
+        "Name": "pad0x8_QYYR8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -252,7 +252,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x30_OP7X5[0x30]",
+        "Name": "pad0x30_81CT7[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xd6"
@@ -266,7 +266,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x8_3OY3V[0x8]",
+        "Name": "pad0x8_5GQZM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -290,7 +290,7 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0xb0_ZD2L2[0xb0]",
+        "Name": "pad0xb0_TBX4B[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x3e6"
@@ -346,7 +346,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x28_P10CI[0x28]",
+        "Name": "pad0x28_FUIJW[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xc8"
@@ -359,7 +359,7 @@
       },
       {
         "Name": "ActiveEffects",
-        "Type": "TArray<Struct ActiveStatusEffect>",
+        "Type": "TArray<struct ActiveEffects>",
         "Size": "0x10",
         "Offset": "0xf8"
       }
@@ -373,12 +373,12 @@
     "Attributes": [
       {
         "Name": "StatusesToApplyOnOverlap",
-        "Type": "TArray<Struct DelayedStatusEffect>",
+        "Type": "TArray<struct StatusesToApplyOnOverlap>",
         "Size": "0x10",
         "Offset": "0x4a0"
       },
       {
-        "Name": "pad0x30_Z7ZRS[0x30]",
+        "Name": "pad0x30_SXCZI[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x4ae"
@@ -426,19 +426,19 @@
         "Offset": "0x2e0"
       },
       {
-        "Name": "pad0x7_F6AGV[0x7]",
+        "Name": "pad0x7_PP1ZE[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x2e1"
       },
       {
         "Name": "StatusEffectsToMaintain",
-        "Type": "TArray<Struct Status>",
+        "Type": "TArray<struct StatusEffectsToMaintain>",
         "Size": "0x10",
         "Offset": "0x2e8"
       },
       {
-        "Name": "pad0x28_JFAO0[0x28]",
+        "Name": "pad0x28_BYMDI[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x2f6"
@@ -464,7 +464,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x8_I5LYN[0x8]",
+        "Name": "pad0x8_DU2VR[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x30"

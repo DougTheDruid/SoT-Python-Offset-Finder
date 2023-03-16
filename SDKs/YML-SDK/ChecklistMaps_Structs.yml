@@ -28,7 +28,7 @@ ChecklistItem:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ITUGK[0x4]
+  - Name: pad0x4_H88W1[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -47,7 +47,7 @@ ChecklistItemCompletedTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_0U9YE[0x7]
+  - Name: pad0x7_DO0JT[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -69,7 +69,7 @@ ChecklistMapContents:
   - Name: ChecklistItems
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<Struct ChecklistMapItemData>
+    Type: TArray<struct ChecklistItems>
   - Name: Afternote
     Offset: '0xa0'
     Size: '0x48'

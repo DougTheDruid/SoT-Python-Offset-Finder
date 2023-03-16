@@ -3,14 +3,22 @@
 BP_audio_trn_shop_C:
   Attributes:
   - Name: None
-    Offset: '0x8a0'
+    Offset: '0x3c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: pad0xc9_VTWMB[0xc9]
-    Offset: '0x8a6'
-    Size: '0xc9'
-    Type: char
-  ClassSize: '0xc1'
-  FullSize: '0x961'
-  InheritedSize: '0x8a0'
-  Super: CollectorsChestItemProxyStatic
+    Type: Class TritonComponent*
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class AudioPortalComponent*
+  - Name: None
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class AudioSpaceComponent*
+  - Name: None
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  ClassSize: '0x20'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
+  Super: Actor

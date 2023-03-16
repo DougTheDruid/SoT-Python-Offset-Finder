@@ -43,7 +43,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_7IOTZ[0x3]",
+        "Name": "pad0x3_J0CLP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -101,32 +101,32 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x3_MNPZY[0x3]",
+        "Name": "pad0x3_1R7RJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd"
       },
       {
         "Name": "SpecialEvents",
-        "Type": "TArray<Struct CoordinatedKrakenSpecialEvent>",
+        "Type": "TArray<struct SpecialEvents>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "TentacleActions",
-        "Type": "TArray<Struct CoordinatedKrakenTentacleAction>",
+        "Type": "TArray<struct TentacleActions>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "HeadActions",
-        "Type": "TArray<Struct CoordinatedKrakenHeadAction>",
+        "Type": "TArray<struct HeadActions>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ExplosionEvents",
-        "Type": "TArray<Struct CoordinatedKrakenExplosionEvent>",
+        "Type": "TArray<struct ExplosionEvents>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -195,14 +195,14 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_1PGSJ[0x4]",
+        "Name": "pad0x4_H5DI5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "Configurations",
-        "Type": "TArray<Struct KrakenShipHittingBehaviourImpactParams>",
+        "Type": "TArray<struct Configurations>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -218,7 +218,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0xc_FGKL1[0xc]",
+        "Name": "pad0xc_K5KMZ[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x4"
@@ -248,7 +248,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_KC4I0[0x4]",
+        "Name": "pad0x4_TIZ97[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -313,7 +313,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x4_XJ040[0x4]",
+        "Name": "pad0x4_YH56L[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
@@ -424,7 +424,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_8P0GD[0x3]",
+        "Name": "pad0x3_WOXXV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -459,7 +459,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_MBTOF[0x3]",
+        "Name": "pad0x3_FKFBQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
@@ -516,7 +516,7 @@
     "Attributes": [
       {
         "Name": "FragmentParams",
-        "Type": "TArray<Struct KrakenDynamicsStateFragmentParams>",
+        "Type": "TArray<struct FragmentParams>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -538,14 +538,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_T9EDT[0x4]",
+        "Name": "pad0x4_C5W40[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "Events",
-        "Type": "TArray<Struct KrakenDynamicsStateEvent>",
+        "Type": "TArray<struct Events>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -561,7 +561,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_PEXP7[0x3]",
+        "Name": "pad0x3_PHSOQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -601,7 +601,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_657OZ[0x8]",
+        "Name": "pad0x8_8OARX[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -683,7 +683,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_OE80M[0x4]",
+        "Name": "pad0x4_ZE8XB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -811,7 +811,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_B4MQI[0x4]",
+        "Name": "pad0x4_CSBIA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -824,7 +824,7 @@
       },
       {
         "Name": "WrapLocations",
-        "Type": "TArray<Struct KrakenShipWrappingBehaviourWrapLocationWeightedParams>",
+        "Type": "TArray<struct WrapLocations>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -835,7 +835,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0xc_7FUPR[0xc]",
+        "Name": "pad0xc_95AYC[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x54"
@@ -864,7 +864,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0xc_F1D0L[0xc]",
+        "Name": "pad0xc_I17II[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x14"
@@ -900,13 +900,13 @@
     "Attributes": [
       {
         "Name": "Near",
-        "Type": "TArray<Struct KrakenShipWrappingBehaviourNamedTransform>",
+        "Type": "TArray<struct Near>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Far",
-        "Type": "TArray<Struct KrakenShipWrappingBehaviourNamedTransform>",
+        "Type": "TArray<struct Far>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -922,7 +922,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_AQW8M[0x8]",
+        "Name": "pad0x8_IM8LX[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -945,7 +945,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0xc_6EUZ7[0xc]",
+        "Name": "pad0xc_7L9IC[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x4"
@@ -980,7 +980,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x4_VNL63[0x4]",
+        "Name": "pad0x4_EQAQN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -993,7 +993,7 @@
       },
       {
         "Name": "TentacleLocations",
-        "Type": "TArray<Struct KrakenShipWrappingBehaviourNamedTransform>",
+        "Type": "TArray<struct TentacleLocations>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -1010,7 +1010,7 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x8_5K86Z[0x8]",
+        "Name": "pad0x8_ELC04[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x68"
@@ -1033,7 +1033,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_8QKUI[0x3]",
+        "Name": "pad0x3_8H3M7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1093,7 +1093,7 @@
       },
       {
         "Name": "TentaclesRequiredToDismissKraken",
-        "Type": "TArray<Struct KrakenTentaclesChanceParams>",
+        "Type": "TArray<struct TentaclesRequiredToDismissKraken>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -1123,7 +1123,7 @@
       },
       {
         "Name": "NumTentacleInstancesToAssignToShip",
-        "Type": "TArray<Struct KrakenTentaclesChanceParams>",
+        "Type": "TArray<struct NumTentacleInstancesToAssignToShip>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -1146,7 +1146,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x4_BZT5Y[0x4]",
+        "Name": "pad0x4_0LHJD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -1171,13 +1171,13 @@
       },
       {
         "Name": "ShipInteractingBehaviourWeights",
-        "Type": "TArray<Struct KrakenWeightedBehaviour>",
+        "Type": "TArray<struct ShipInteractingBehaviourWeights>",
         "Size": "0x10",
         "Offset": "0x138"
       },
       {
         "Name": "Behaviours",
-        "Type": "TArray<Struct KrakenBehaviourParams>",
+        "Type": "TArray<struct Behaviours>",
         "Size": "0x10",
         "Offset": "0x148"
       },
@@ -1251,7 +1251,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_1LO7R[0x4]",
+        "Name": "pad0x4_QAG6N[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1269,7 +1269,7 @@
     "Attributes": [
       {
         "Name": "Frames",
-        "Type": "TArray<Struct KrakenAnimatedTentacleAnimationBoneFrame>",
+        "Type": "TArray<struct Frames>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -1336,14 +1336,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_WJVCH[0x7]",
+        "Name": "pad0x7_CYTGB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       },
       {
         "Name": "Transitions",
-        "Type": "TArray<Struct KrakenAnimatedTentacleTransitionAnimation>",
+        "Type": "TArray<struct Transitions>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -1365,7 +1365,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_UZNBW[0x4]",
+        "Name": "pad0x4_MUQHD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -1417,14 +1417,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_U0CAD[0x7]",
+        "Name": "pad0x7_I0P48[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       },
       {
         "Name": "Transitions",
-        "Type": "TArray<Struct KrakenHeadTransitionAnimation>",
+        "Type": "TArray<struct Transitions>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -1474,7 +1474,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_Q7AQ9[0x4]",
+        "Name": "pad0x4_YWCWA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1503,7 +1503,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_V7RC6[0x4]",
+        "Name": "pad0x4_2IM9Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -1581,14 +1581,14 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_TGS8H[0x4]",
+        "Name": "pad0x4_S1EXD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "OnDamageActionChances",
-        "Type": "TArray<Struct KrakenTentacleBehaviourActionChances>",
+        "Type": "TArray<struct OnDamageActionChances>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -1616,7 +1616,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_TWFCU[0x3]",
+        "Name": "pad0x3_941W3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -1650,7 +1650,7 @@
       },
       {
         "Name": "HoldingTransitionChances",
-        "Type": "TArray<Struct KrakenPlayerGrabbingHoldingStateTransitionChance>",
+        "Type": "TArray<struct HoldingTransitionChances>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -1684,7 +1684,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_XIAF8[0x4]",
+        "Name": "pad0x4_RXEPS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1720,7 +1720,7 @@
       },
       {
         "Name": "KrakenParams",
-        "Type": "TArray<Struct KrakenServiceShipParams>",
+        "Type": "TArray<struct KrakenParams>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1737,7 +1737,7 @@
       },
       {
         "Name": "ValidShipTypes",
-        "Type": "TArray<Class ValidShipTypes>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -1771,7 +1771,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_0NRID[0x4]",
+        "Name": "pad0x4_TEJ1C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"

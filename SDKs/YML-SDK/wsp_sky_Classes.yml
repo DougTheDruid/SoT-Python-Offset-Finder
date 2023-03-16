@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 wsp_sky_C:
   Attributes:
-  - Name: Atmospheric Cloud Pressure
+  - Name: None
     Offset: '0x3d0'
     Size: '0x4'
     Type: float
-  - Name: ElapsedTime
+  - Name: None
     Offset: '0x3d4'
     Size: '0x4'
     Type: float
-  - Name: Interval
+  - Name: None
     Offset: '0x3d8'
     Size: '0x4'
     Type: float

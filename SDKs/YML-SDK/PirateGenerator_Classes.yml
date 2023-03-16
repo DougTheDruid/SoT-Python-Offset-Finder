@@ -6,14 +6,14 @@ AnimationSwitchDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_B4I2Q[0x4]
+  - Name: pad0x4_5K1AI[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
   - Name: Entries
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct AnimationSwitchEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -30,7 +30,7 @@ CharacterMeshBakeSpecification:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_NLXUF[0x7]
+  - Name: pad0x7_LZIO2[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -49,7 +49,7 @@ CharacterMeshBakeSpecification:
   - Name: SourceSkeletonNames
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: SourceSkeletonWeights
     Offset: '0x58'
     Size: '0x10'
@@ -57,7 +57,7 @@ CharacterMeshBakeSpecification:
   - Name: BlendedSubMeshes
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Struct BlendedSubMeshSpecification>
+    Type: TArray<struct BlendedSubMeshes>
   - Name: UnblendedSubMeshes
     Offset: '0x78'
     Size: '0x10'
@@ -65,7 +65,7 @@ CharacterMeshBakeSpecification:
   - Name: BlendShapes
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<Struct IPGBlendShape>
+    Type: TArray<struct BlendShapes>
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
@@ -95,7 +95,7 @@ ColorTextureSwitchBySeed:
   - Name: Entries
     Offset: '0x228'
     Size: '0x10'
-    Type: TArray<Struct ColorTextureSwitchSeedEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x18'
   FullSize: '0x238'
   InheritedSize: '0x220'
@@ -111,7 +111,7 @@ MaterialReferencesDataAsset:
   - Name: MaterialReferences
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct MaterialReferencesEntry>
+    Type: TArray<struct MaterialReferences>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -163,7 +163,7 @@ PirateGeneratorSettings:
   - Name: DefaultWardrobeItems
     Offset: '0x80'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: MaterialReferencesDataAsset
     Offset: '0x90'
     Size: '0x10'
@@ -175,11 +175,11 @@ PirateGeneratorSettings:
   - Name: BaseSkeletonMeshes
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct BaseSkeletonMeshes>
   - Name: Characterization
     Offset: '0xc0'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct Characterization>
   - Name: SkeletonMeshFormats
     Offset: '0xd0'
     Size: '0x10'
@@ -203,12 +203,12 @@ PirateGeneratorSettings:
   - Name: ExcludeDataAssets
     Offset: '0x120'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct ExcludeDataAssets>
   - Name: DefaultPirateGenerationSeed
     Offset: '0x130'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_SX7NA[0xc]
+  - Name: pad0xc_1ADJ4[0xc]
     Offset: '0x132'
     Size: '0xc'
     Type: char
@@ -230,7 +230,7 @@ SkeletonsDataAsset:
   Super: DataAsset
 TextureSwitch:
   Attributes:
-  - Name: pad0x80_EH8B6[0x80]
+  - Name: pad0x80_MA1JU[0x80]
     Offset: '0x140'
     Size: '0x80'
     Type: char
@@ -238,7 +238,7 @@ TextureSwitch:
     Offset: '0x1c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FITEL[0x7]
+  - Name: pad0x7_GFSHA[0x7]
     Offset: '0x1c1'
     Size: '0x7'
     Type: char
@@ -255,7 +255,7 @@ TextureSwitchByBodyShape:
   - Name: Entries
     Offset: '0x220'
     Size: '0x10'
-    Type: TArray<Struct TextureSwitchBodyShapeEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x10'
   FullSize: '0x230'
   InheritedSize: '0x220'
@@ -265,7 +265,7 @@ TextureSwitchByEthnicity:
   - Name: Entries
     Offset: '0x220'
     Size: '0x10'
-    Type: TArray<Struct TextureSwitchEthnicityEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x10'
   FullSize: '0x230'
   InheritedSize: '0x220'
@@ -275,7 +275,7 @@ TextureSwitchByGender:
   - Name: Entries
     Offset: '0x220'
     Size: '0x10'
-    Type: TArray<Struct TextureSwitchGenderEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x10'
   FullSize: '0x230'
   InheritedSize: '0x220'
@@ -289,7 +289,7 @@ TextureSwitchByItem:
   - Name: Entries
     Offset: '0x230'
     Size: '0x10'
-    Type: TArray<Struct TextureSwitchItemEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x20'
   FullSize: '0x240'
   InheritedSize: '0x220'
@@ -308,7 +308,7 @@ TextureSwitchBySeed:
     Offset: '0x22c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_GYFNR[0x4]
+  - Name: pad0x4_1Q25Q[0x4]
     Offset: '0x234'
     Size: '0x4'
     Type: char
@@ -319,21 +319,21 @@ TextureSwitchBySeed:
   - Name: Entries
     Offset: '0x248'
     Size: '0x10'
-    Type: TArray<Struct TextureSwitchSeedEntry>
+    Type: TArray<struct Entries>
   ClassSize: '0x38'
   FullSize: '0x258'
   InheritedSize: '0x220'
   Super: TextureSwitch
 WardrobeDataAsset:
   Attributes:
-  - Name: pad0xa0_438AI[0xa0]
+  - Name: pad0xa0_J68E3[0xa0]
     Offset: '0x28'
     Size: '0xa0'
     Type: char
   - Name: AssetMap
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct MeshPatchEntry>
+    Type: TArray<struct AssetMap>
   ClassSize: '0xb0'
   FullSize: '0xd8'
   InheritedSize: '0x28'
@@ -355,15 +355,15 @@ WardrobeOutfitDataAsset:
   - Name: FemaleWardrobeItems
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: MaleWardrobeItems
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   - Name: BiasPerCategory
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct WardrobeOutfitCategoryBias>
+    Type: TArray<struct BiasPerCategory>
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'

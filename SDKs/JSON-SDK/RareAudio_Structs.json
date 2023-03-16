@@ -14,13 +14,13 @@
       },
       {
         "Name": "RTPCs",
-        "Type": "TArray<Struct WWiseEmitterCreationRTPCSetting>",
+        "Type": "TArray<struct RTPCs>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Switches",
-        "Type": "TArray<Struct WWiseEmitterCreationSwitchSetting>",
+        "Type": "TArray<struct Switches>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -88,7 +88,7 @@
     "Attributes": [
       {
         "Name": "PlaybackDataArray",
-        "Type": "TArray<Struct StaticMeshWwiseEmitterData>",
+        "Type": "TArray<struct PlaybackDataArray>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -116,7 +116,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_5Y5YW[0x4]",
+        "Name": "pad0x4_HCJ4K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

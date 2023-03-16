@@ -61,15 +61,15 @@ MovieSceneEvaluationField:
   - Name: Ranges
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct FloatRange>
+    Type: TArray<struct Ranges>
   - Name: Groups
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneEvaluationGroup>
+    Type: TArray<struct Groups>
   - Name: MetaData
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneEvaluationMetaData>
+    Type: TArray<struct MetaData>
   ClassSize: '0x30'
 MovieSceneEvaluationFieldSegmentPtr:
   Attributes:
@@ -94,11 +94,11 @@ MovieSceneEvaluationGroup:
   - Name: LUTIndices
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneEvaluationGroupLUTIndex>
+    Type: TArray<struct LUTIndices>
   - Name: SegmentPtrLUT
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneEvaluationFieldSegmentPtr>
+    Type: TArray<struct SegmentPtrLUT>
   ClassSize: '0x20'
 MovieSceneEvaluationGroupLUTIndex:
   Attributes:
@@ -106,7 +106,7 @@ MovieSceneEvaluationGroupLUTIndex:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_R3KRN[0x3]
+  - Name: pad0x3_5M6UK[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -128,7 +128,7 @@ MovieSceneEvaluationMetaData:
   - Name: ActiveSequences
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneSequenceID>
+    Type: TArray<struct ActiveSequences>
   ClassSize: '0x10'
 MovieSceneEvaluationTemplate:
   Attributes:
@@ -163,18 +163,18 @@ MovieSceneEvaluationTrack:
     Offset: '0x12'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_3PQSH[0x5]
+  - Name: pad0x5_U2QPF[0x5]
     Offset: '0x13'
     Size: '0x5'
     Type: char
   - Name: Segments
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneSegment>
+    Type: TArray<struct Segments>
   - Name: ChildTemplates
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneEvalTemplatePtr>
+    Type: TArray<struct ChildTemplates>
   - Name: TrackTemplate
     Offset: '0x38'
     Size: '0x38'
@@ -302,14 +302,14 @@ MovieSceneSequenceHierarchyNode:
     Offset: '0x0'
     Size: '0x4'
     Type: Struct MovieSceneSequenceID
-  - Name: pad0x4_VGA1T[0x4]
+  - Name: pad0x4_2RZR7[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
   - Name: Children
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct MovieSceneSequenceID>
+    Type: TArray<struct Children>
   ClassSize: '0x18'
 MovieSceneSequenceID:
   Attributes: []
@@ -328,7 +328,7 @@ MovieSceneSequencePlaybackSettings:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IV309[0x3]
+  - Name: pad0x3_W4J4M[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -340,7 +340,7 @@ MovieSceneSequencePlaybackSettings:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_J1B0L[0x7]
+  - Name: pad0x7_47XZD[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -362,7 +362,7 @@ MovieSceneSpawnable:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_O4XWZ[0x3]
+  - Name: pad0x3_Y8VMQ[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -370,7 +370,7 @@ MovieSceneSpawnable:
     Offset: '0x4'
     Size: '0x10'
     Type: Struct Guid
-  - Name: pad0x4_F3NCJ[0x4]
+  - Name: pad0x4_NTTJA[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -385,7 +385,7 @@ MovieSceneSpawnable:
   - Name: ChildPossessables
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Guid>
+    Type: TArray<struct ChildPossessables>
   - Name: Ownership
     Offset: '0x40'
     Size: '0x1'

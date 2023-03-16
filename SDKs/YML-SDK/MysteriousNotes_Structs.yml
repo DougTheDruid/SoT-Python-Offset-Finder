@@ -5,15 +5,15 @@ ActiveNoteData:
   - Name: NotesRemoteServiceNoteModels
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct NotesRemoteServiceNoteModel>
+    Type: TArray<struct NotesRemoteServiceNoteModels>
   - Name: PendingCompletionEntries
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct NoteCompletionEntry>
+    Type: TArray<struct PendingCompletionEntries>
   - Name: PendingDetailRequestIDs
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct Guid>
+    Type: TArray<struct PendingDetailRequestIDs>
   ClassSize: '0x30'
 ClientNoteData:
   Attributes:
@@ -21,14 +21,14 @@ ClientNoteData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_7X4XX[0x7]
+  - Name: pad0x7_5E558[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: PendingNotes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct MysteriousNoteInfo>
+    Type: TArray<struct PendingNotes>
   ClassSize: '0x18'
 EventListenForCinematicEndEvent:
   Attributes: []

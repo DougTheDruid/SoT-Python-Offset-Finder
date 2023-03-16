@@ -10,7 +10,7 @@
       },
       {
         "Name": "ImageTips",
-        "Type": "TArray<Struct FText>",
+        "Type": "TArray<struct FText>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -27,7 +27,7 @@
     "Attributes": [
       {
         "Name": "TipDescriptions",
-        "Type": "TArray<Struct SlateLoadingScreenAdvancedTipDescription>",
+        "Type": "TArray<struct TipDescriptions>",
         "Size": "0x10",
         "Offset": "0x0"
       }

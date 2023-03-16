@@ -20,7 +20,7 @@ ClueSiteLootHistory:
   - Name: History
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct LootSpawnedAtClueSite>
+    Type: TArray<struct History>
   ClassSize: '0x10'
 ClueSiteLootRestriction:
   Attributes:
@@ -42,7 +42,7 @@ ClueSiteTypeSupportedDescribedByEntry:
   - Name: SupportedDescriptors
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Struct WeightedClueDescriptor>
+    Type: TArray<struct SupportedDescriptors>
   ClassSize: '0x18'
 DebrisToRangeDist:
   Attributes:

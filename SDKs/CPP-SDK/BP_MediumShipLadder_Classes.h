@@ -11,7 +11,8 @@ class BP_MediumShipLadder_C: public Ladder
 {
 public:
 	Class InteractableComponent*                                 None;                                              // 0x5c0(0x8)
-	char                                                         pad0x30_37MDX[0x30];                               // 0x5c6(0x30)
+	TArray<struct None>                                          None;                                              // 0x5c8(0x10)
+	TArray<struct None>                                          None;                                              // 0x5d8(0x10)
 };
 
 

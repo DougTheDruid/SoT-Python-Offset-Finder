@@ -2,55 +2,55 @@
 # https://github.com/DougTheDruid
 bsp_beach_rocks_08_C:
   Attributes:
-  - Name: bsp_rock_small_01_e
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bsp_rock_medium_01_c
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_pebbles_a_02
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_pebbles_c_02
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_xtra_small_e_01
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_xtra_small_a_01
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_pebbles_d_02
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_pebbles_e_02
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_pebbles_b_02
+  - Name: None
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_pebbles_e_01
+  - Name: None
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_xtra_small_d_01
+  - Name: None
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: wsp_rock_pebbles_f_02
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x60'
   FullSize: '0x468'
   InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+  Super: None

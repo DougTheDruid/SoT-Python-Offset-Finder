@@ -74,7 +74,7 @@ class CustomClientValidityCheckCallback: public Object
 {
 public:
 	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
-	char                                                         pad0x9_EG93M[0x9];                                 // 0x27(0x9)
+	char                                                         pad0x9_ROVLC[0x9];                                 // 0x27(0x9)
 };
 
 
@@ -96,8 +96,8 @@ public:
 class ActionStatePriorityTableData: public DataAsset
 {
 public:
-	TArray<Struct ActionStatePriorityRelationship>               StateDefaultValue;                                 // 0x28(0x10)
-	TArray<Struct ActionStatePriorityList>                       PriorityTableEntry;                                // 0x38(0x10)
+	TArray<struct StateDefaultValue>                             StateDefaultValue;                                 // 0x28(0x10)
+	TArray<struct PriorityTableEntry>                            PriorityTableEntry;                                // 0x38(0x10)
 };
 
 

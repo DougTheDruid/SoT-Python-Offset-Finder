@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 WorldEdgeItemService:
   Attributes:
-  - Name: pad0x8_JYDV1[0x8]
+  - Name: pad0x8_ADFQP[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -14,7 +14,7 @@ WorldEdgeItemService:
     Offset: '0x3d8'
     Size: '0x170'
     Type: Struct EnvQueryRequest
-  - Name: pad0x3a8_1VQFT[0x3a8]
+  - Name: pad0x3a8_0SIAZ[0x3a8]
     Offset: '0x546'
     Size: '0x3a8'
     Type: char

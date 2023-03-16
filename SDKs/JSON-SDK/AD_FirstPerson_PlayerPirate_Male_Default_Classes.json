@@ -6,85 +6,85 @@
     "ClassSize": "0x420",
     "Attributes": [
       {
-        "Name": "Idles",
+        "Name": "None",
         "Type": "Struct ADS_IdlesNative",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
-        "Name": "Locomotion",
+        "Name": "None",
         "Type": "Struct ADS_LocomotionNative",
         "Size": "0x50",
         "Offset": "0x80"
       },
       {
-        "Name": "Jumping",
+        "Name": "None",
         "Type": "Struct ADS_JumpingNative",
         "Size": "0x78",
         "Offset": "0xd0"
       },
       {
-        "Name": "Swimming",
+        "Name": "None",
         "Type": "Struct ADS_SwimmingNative",
         "Size": "0x68",
         "Offset": "0x148"
       },
       {
-        "Name": "Wheel",
+        "Name": "None",
         "Type": "Struct ADS_WheelNative",
         "Size": "0x88",
         "Offset": "0x1b0"
       },
       {
-        "Name": "Capstan",
+        "Name": "None",
         "Type": "Struct ADS_CapstanNative",
         "Size": "0x68",
         "Offset": "0x238"
       },
       {
-        "Name": "CameraAdditive",
+        "Name": "None",
         "Type": "Struct ADS_CameraAdditiveNative",
         "Size": "0x50",
         "Offset": "0x2a0"
       },
       {
-        "Name": "Items",
+        "Name": "None",
         "Type": "Struct ADS_ObjectsNative",
         "Size": "0x10",
         "Offset": "0x2f0"
       },
       {
-        "Name": "Sockets",
+        "Name": "None",
         "Type": "Struct ADS_Sockets",
         "Size": "0x2",
         "Offset": "0x300"
       },
       {
-        "Name": "pad0x6_BK9A8[0x6]",
+        "Name": "pad0x6_E2I4J[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x302"
       },
       {
-        "Name": "Cannon",
+        "Name": "None",
         "Type": "Struct ADS_CannonNative",
         "Size": "0x38",
         "Offset": "0x308"
       },
       {
-        "Name": "Rowboat",
+        "Name": "None",
         "Type": "Struct ADS_RowingBoatNative",
         "Size": "0x98",
         "Offset": "0x340"
       },
       {
-        "Name": "WaterPump",
+        "Name": "None",
         "Type": "Struct ADS_WaterPumpNative",
         "Size": "0x28",
         "Offset": "0x3d8"
       },
       {
-        "Name": "Facial",
+        "Name": "None",
         "Type": "Struct ADS_FacialNative",
         "Size": "0x90",
         "Offset": "0x400"

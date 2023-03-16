@@ -48,7 +48,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x30_DMRD1[0x30]",
+        "Name": "pad0x30_TFB0K[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x3fe"

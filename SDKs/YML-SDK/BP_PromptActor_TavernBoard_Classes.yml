@@ -13,7 +13,7 @@ BP_PromptActor_TavernBoard_C:
   - Name: TavernBoardLocations
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<Struct Vector>
+    Type: TArray<struct TavernBoardLocations>
   - Name: TavernBoardPromptCoordinators
     Offset: '0x420'
     Size: '0x10'

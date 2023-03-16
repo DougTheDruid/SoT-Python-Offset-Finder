@@ -6,7 +6,7 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x20_7YVWX[0x20]",
+        "Name": "pad0x20_9MS7M[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
@@ -36,7 +36,7 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x104_9AZCR[0x104]",
+        "Name": "pad0x104_2DJ0R[0x104]",
         "Type": "char",
         "Size": "0x104",
         "Offset": "0x402"
@@ -80,7 +80,7 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x4_H7FVC[0x4]",
+        "Name": "pad0x4_SYZIM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3ec"
@@ -98,7 +98,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x78_OHYJW[0x78]",
+        "Name": "pad0x78_27HAP[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x3fe"
@@ -131,14 +131,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_0PWXK[0x7]",
+        "Name": "pad0x7_7HFTS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       },
       {
         "Name": "Actions",
-        "Type": "TArray<Struct CoordinatedKrakenAction>",
+        "Type": "TArray<struct Actions>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -296,7 +296,7 @@
         "Offset": "0x670"
       },
       {
-        "Name": "pad0x90_TO59Y[0x90]",
+        "Name": "pad0x90_M8XD5[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x67e"
@@ -317,7 +317,7 @@
     "ClassSize": "0x578",
     "Attributes": [
       {
-        "Name": "pad0x18_CLLEJ[0x18]",
+        "Name": "pad0x18_DWD4Q[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3c8"
@@ -329,7 +329,7 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x14_PM5J0[0x14]",
+        "Name": "pad0x14_VIIKB[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x3e4"
@@ -365,7 +365,7 @@
         "Offset": "0x405"
       },
       {
-        "Name": "pad0x1b2_WL5YP[0x1b2]",
+        "Name": "pad0x1b2_10G2S[0x1b2]",
         "Type": "char",
         "Size": "0x1b2",
         "Offset": "0x406"
@@ -377,7 +377,7 @@
         "Offset": "0x5b8"
       },
       {
-        "Name": "pad0xb8_H2UV8[0xb8]",
+        "Name": "pad0xb8_U5F9H[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x5c0"
@@ -407,7 +407,7 @@
         "Offset": "0x694"
       },
       {
-        "Name": "pad0x10_8NHFD[0x10]",
+        "Name": "pad0x10_MZ45U[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x6a0"
@@ -425,7 +425,7 @@
         "Offset": "0x810"
       },
       {
-        "Name": "pad0x134_EQDVX[0x134]",
+        "Name": "pad0x134_4BQE3[0x134]",
         "Type": "char",
         "Size": "0x134",
         "Offset": "0x812"
@@ -475,7 +475,7 @@
         "Offset": "0x3d"
       },
       {
-        "Name": "pad0x2_2VKEE[0x2]",
+        "Name": "pad0x2_I8PV7[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3e"
@@ -487,14 +487,14 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_0FP7X[0x4]",
+        "Name": "pad0x4_AFYYX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
       },
       {
         "Name": "Bones",
-        "Type": "TArray<Struct KrakenAnimatedTentacleAnimationBoneTrack>",
+        "Type": "TArray<struct Bones>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -508,7 +508,7 @@
     "Attributes": [
       {
         "Name": "Animations",
-        "Type": "TArray<Struct KrakenAnimatedTentacleMappedAnimation>",
+        "Type": "TArray<struct Animations>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -522,7 +522,7 @@
     "Attributes": [
       {
         "Name": "Bones",
-        "Type": "TArray<Struct KrakenAnimatedTentacleAnimationSpecBone>",
+        "Type": "TArray<struct Bones>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -535,14 +535,14 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x20_I9KSK[0x20]",
+        "Name": "pad0x20_L65I1[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x28"
       },
       {
         "Name": "States",
-        "Type": "TArray<Struct KrakenAnimatedTentacleStateAnimationMapping>",
+        "Type": "TArray<struct States>",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -556,7 +556,7 @@
     "Attributes": [
       {
         "Name": "States",
-        "Type": "TArray<Struct KrakenHeadStateAnimationMapping>",
+        "Type": "TArray<struct States>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -569,7 +569,7 @@
     "ClassSize": "0x208",
     "Attributes": [
       {
-        "Name": "pad0x10_EZQAR[0x10]",
+        "Name": "pad0x10_82OSZ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -618,7 +618,7 @@
       },
       {
         "Name": "BreathingInContinuousStatusesToApply",
-        "Type": "TArray<Struct Status>",
+        "Type": "TArray<struct BreathingInContinuousStatusesToApply>",
         "Size": "0x10",
         "Offset": "0x410"
       },
@@ -629,14 +629,14 @@
         "Offset": "0x420"
       },
       {
-        "Name": "pad0x4_A2BEQ[0x4]",
+        "Name": "pad0x4_RARTR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x424"
       },
       {
         "Name": "RoarContinuousStatusesToApply",
-        "Type": "TArray<Struct Status>",
+        "Type": "TArray<struct RoarContinuousStatusesToApply>",
         "Size": "0x10",
         "Offset": "0x428"
       },
@@ -647,7 +647,7 @@
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x4_4TF9S[0x4]",
+        "Name": "pad0x4_2IH0J[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x43c"
@@ -683,7 +683,7 @@
         "Offset": "0x4a8"
       },
       {
-        "Name": "pad0x4_1IH2F[0x4]",
+        "Name": "pad0x4_UKH6K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4b4"
@@ -707,7 +707,7 @@
         "Offset": "0x4d8"
       },
       {
-        "Name": "pad0x7_Z6Q6E[0x7]",
+        "Name": "pad0x7_UQ9Z4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x4d9"
@@ -719,7 +719,7 @@
         "Offset": "0x4e0"
       },
       {
-        "Name": "pad0xc0_PFKON[0xc0]",
+        "Name": "pad0xc0_3QCUI[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x4e8"
@@ -731,7 +731,7 @@
         "Offset": "0x5a8"
       },
       {
-        "Name": "pad0x30_38RUC[0x30]",
+        "Name": "pad0x30_R8QWH[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x5ae"
@@ -781,7 +781,7 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x7_X81YN[0x7]",
+        "Name": "pad0x7_FSGVI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x461"
@@ -793,7 +793,7 @@
         "Offset": "0x468"
       },
       {
-        "Name": "pad0x10_FN7FI[0x10]",
+        "Name": "pad0x10_5ABT7[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x470"
@@ -805,7 +805,7 @@
         "Offset": "0x480"
       },
       {
-        "Name": "pad0x28_WW4NN[0x28]",
+        "Name": "pad0x28_7SAOR[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x486"
@@ -827,7 +827,7 @@
     "Attributes": [
       {
         "Name": "KrakenHeadHealthPairs",
-        "Type": "TArray<Struct KrakenHeadHealthPair>",
+        "Type": "TArray<struct KrakenHeadHealthPairs>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -841,7 +841,7 @@
     "Attributes": [
       {
         "Name": "HitReactionAnimations",
-        "Type": "TArray<Struct KrakenHeadHitReactAnimations>",
+        "Type": "TArray<struct HitReactionAnimations>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -903,7 +903,7 @@
     "ClassSize": "0x1c8",
     "Attributes": [
       {
-        "Name": "pad0x8_J1Z8G[0x8]",
+        "Name": "pad0x8_ZS0MS[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -915,7 +915,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0xa0_H7NA7[0xa0]",
+        "Name": "pad0xa0_7FDI3[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x408"
@@ -927,7 +927,7 @@
         "Offset": "0x4a8"
       },
       {
-        "Name": "pad0xf0_088QX[0xf0]",
+        "Name": "pad0xf0_JFFHT[0xf0]",
         "Type": "char",
         "Size": "0xf0",
         "Offset": "0x4ae"
@@ -969,7 +969,7 @@
     "ClassSize": "0x428",
     "Attributes": [
       {
-        "Name": "pad0x8_19791[0x8]",
+        "Name": "pad0x8_DWYF1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -1013,7 +1013,7 @@
         "Offset": "0x2f8"
       },
       {
-        "Name": "pad0xd8_AQPR1[0xd8]",
+        "Name": "pad0xd8_XBTRU[0xd8]",
         "Type": "char",
         "Size": "0xd8",
         "Offset": "0x346"

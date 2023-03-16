@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_WaterReflection_C: public Actor
 {
 public:
-	Class PlanarReflectionPlaneComponent*                        PlanarReflectionPlane;                             // 0x3c8(0x8)
+	Class PlanarReflectionPlaneComponent*                        None;                                              // 0x3c8(0x8)
 };
 
 

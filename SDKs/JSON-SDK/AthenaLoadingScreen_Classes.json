@@ -61,7 +61,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_9JPLV[0x7]",
+        "Name": "pad0x7_8MZ90[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -86,7 +86,7 @@
       },
       {
         "Name": "CyclingImages",
-        "Type": "TArray<Struct SlateLoadingScreenImageParams>",
+        "Type": "TArray<struct CyclingImages>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -97,7 +97,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x4_17PEA[0x4]",
+        "Name": "pad0x4_UTRLD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xa4"
@@ -187,14 +187,14 @@
         "Offset": "0x1d8"
       },
       {
-        "Name": "pad0x4_FEV3I[0x4]",
+        "Name": "pad0x4_D1G1R[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1dc"
       },
       {
         "Name": "LoadingScreenTips",
-        "Type": "TArray<Struct FText>",
+        "Type": "TArray<struct FText>",
         "Size": "0x10",
         "Offset": "0x1e0"
       },
@@ -211,7 +211,7 @@
         "Offset": "0x220"
       },
       {
-        "Name": "pad0x9_BIPW0[0x9]",
+        "Name": "pad0x9_71S5W[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x21f"

@@ -18,7 +18,7 @@ struct CustomServerLocalisationData
 {
 public:
 	Struct FString                                               Key;                                               // 0x0(0x10)
-	TArray<Struct LocPairData>                                   LocaleEntries;                                     // 0x10(0x10)
+	TArray<struct LocaleEntries>                                 LocaleEntries;                                     // 0x10(0x10)
 };
 
 

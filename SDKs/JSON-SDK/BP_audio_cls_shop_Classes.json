@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Triton",
+        "Name": "None",
         "Type": "Class TritonComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "AudioPortal",
+        "Name": "None",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "AudioSpace",
+        "Name": "None",
         "Type": "Class AudioSpaceComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "Scene",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"

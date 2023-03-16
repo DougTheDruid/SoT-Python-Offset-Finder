@@ -52,7 +52,7 @@ EventTriggerForceFeedback:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_L785N[0x3]
+  - Name: pad0x3_YDEBL[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -63,11 +63,11 @@ EventTriggerForceFeedback:
   ClassSize: '0x18'
 InlineUserDefinedStructDetails:
   Attributes:
-  - Name: StructWithDefaults
+  - Name: Struct
     Offset: '0x0'
-    Size: '0x20'
-    Type: Struct UserDefinedStructWithSerialisableValue
-  ClassSize: '0x20'
+    Size: '0x8'
+    Type: Class ScriptStruct*
+  ClassSize: '0x8'
 NativeAndUserDefinedStructSelector:
   Attributes:
   - Name: Struct
@@ -128,7 +128,7 @@ StringAssetClassPair:
   - Name: FeatureOverrides
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct StringAssetClassPairFeatureOverride>
+    Type: TArray<struct FeatureOverrides>
   ClassSize: '0x40'
 StringAssetClassPairFeatureOverride:
   Attributes:

@@ -24,9 +24,9 @@ public:
 class LevelAssetCachingService: public Object
 {
 public:
-	char                                                         pad0x18_HXIXC[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_JJHLL[0x18];                               // 0x28(0x18)
 	struct FName                                                 CurrentRegion;                                     // 0x40(0x8)
-	char                                                         pad0x38_2PLNT[0x38];                               // 0x46(0x38)
+	char                                                         pad0x38_HJS6J[0x38];                               // 0x46(0x38)
 };
 
 
@@ -34,7 +34,7 @@ public:
 class RegionalAssetListDataAsset: public DataAsset
 {
 public:
-	TArray<Struct StringAssetReference>                          RegionAssets;                                      // 0x28(0x10)
+	TArray<struct RegionAssets>                                  RegionAssets;                                      // 0x28(0x10)
 };
 
 
@@ -42,9 +42,9 @@ public:
 class RegionalAssetCache: public Object
 {
 public:
-	char                                                         pad0x10_G47UN[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_B2CKC[0x10];                               // 0x28(0x10)
 	Class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
-	char                                                         pad0xa8_46DPS[0xa8];                               // 0x3e(0xa8)
+	char                                                         pad0xa8_K4HUO[0xa8];                               // 0x3e(0xa8)
 };
 
 
@@ -66,9 +66,9 @@ public:
 class RegionLookupGeneratedGrid: public Object
 {
 public:
-	char                                                         pad0x8_1AAZH[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_GFBZT[0x8];                                 // 0x28(0x8)
 	Struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
-	char                                                         pad0xa8_PLNPU[0xa8];                               // 0x56(0xa8)
+	char                                                         pad0xa8_HPKRM[0xa8];                               // 0x56(0xa8)
 };
 
 

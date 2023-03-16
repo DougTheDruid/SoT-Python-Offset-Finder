@@ -31,19 +31,19 @@
       },
       {
         "Name": "Prompts",
-        "Type": "TArray<Struct PrioritisedPromptWithHandle>",
+        "Type": "TArray<struct Prompts>",
         "Size": "0x10",
         "Offset": "0x420"
       },
       {
         "Name": "ExpectedVictimCompanyName",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x430"
       },
       {
         "Name": "ExpectedVictimCompanies",
-        "Type": "TArray<Class ExpectedVictimCompanies>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x440"
       }

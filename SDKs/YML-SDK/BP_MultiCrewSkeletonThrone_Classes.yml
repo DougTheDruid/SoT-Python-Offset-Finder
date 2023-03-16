@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_MultiCrewSkeletonThrone_C:
   Attributes:
-  - Name: VFX Skull 4
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: VFX Skull 3
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: VFX Skull 2
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: VFX Skull 1
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: VFX Under Chair
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class ParticleSystemComponent*

@@ -1,9 +1,9 @@
 {
   "ServiceHttpSettings": {
     "Super": "Object",
-    "FullSize": "0x60",
+    "FullSize": "0x70",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "DiscoveryServiceUrl",
@@ -24,7 +24,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x6_K9B5R[0x6]",
+        "Name": "pad0x6_R8M4D[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x3a"
@@ -40,6 +40,12 @@
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x50"
+      },
+      {
+        "Name": "CustomBuildVersionTag",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x60"
       }
     ]
   },

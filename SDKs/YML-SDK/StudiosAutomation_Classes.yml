@@ -21,7 +21,7 @@ AssetAuditSettings:
   - Name: TypesToIgnoreInFeatureToggleAudits
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<AssetClass TypesToIgnoreInFeatureToggleAudits>
+    Type: TArray<Assetclass TypesToIgnoreInFeatureToggleAudits>
   - Name: AssetAuditorsLoadExceptionList
     Offset: '0x58'
     Size: '0x10'
@@ -90,7 +90,7 @@ TestAbstractActor:
   Super: Actor
 TestLevelScriptActor:
   Attributes:
-  - Name: pad0x8_FRTKK[0x8]
+  - Name: pad0x8_EBCAX[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -118,14 +118,14 @@ TestLevelScriptActor:
     Offset: '0x3dd'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_ZZWDC[0x2]
+  - Name: pad0x2_4B520[0x2]
     Offset: '0x3de'
     Size: '0x2'
     Type: char
   - Name: AdditionalMetadata
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<Struct TestLevelMetadataEntry>
+    Type: TArray<struct AdditionalMetadata>
   - Name: CaptureType
     Offset: '0x3f0'
     Size: '0x1'
@@ -134,7 +134,7 @@ TestLevelScriptActor:
     Offset: '0x3f1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_SMFHG[0x2]
+  - Name: pad0x2_SM9PG[0x2]
     Offset: '0x3f2'
     Size: '0x2'
     Type: char
@@ -146,7 +146,7 @@ TestLevelScriptActor:
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WSC0P[0x4]
+  - Name: pad0x4_S7EFL[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char
@@ -165,7 +165,7 @@ TestLevelScriptActor:
   - Name: ClientPawns
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<Struct ClientPawnDetails>
+    Type: TArray<struct ClientPawns>
   - Name: SpawnedActors
     Offset: '0x440'
     Size: '0x10'
@@ -174,7 +174,7 @@ TestLevelScriptActor:
     Offset: '0x450'
     Size: '0x4'
     Type: int
-  - Name: pad0x44_Z266O[0x44]
+  - Name: pad0x44_V7G2X[0x44]
     Offset: '0x452'
     Size: '0x44'
     Type: char
@@ -217,11 +217,11 @@ TextureAuditorSettings:
   - Name: SpecificTexturesToNotAudit
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Struct StringAssetReference>
+    Type: TArray<struct SpecificTexturesToNotAudit>
   - Name: TextureDirectoriesToNotAudit
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct DirectoryPath>
+    Type: TArray<struct TextureDirectoriesToNotAudit>
   - Name: DefaultTextureProperties
     Offset: '0x58'
     Size: '0x20'
@@ -229,7 +229,7 @@ TextureAuditorSettings:
   - Name: PerTextureGroupPropertiesOverrides
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<Struct TextureAuditorGroupProperties>
+    Type: TArray<struct PerTextureGroupPropertiesOverrides>
   ClassSize: '0x50'
   FullSize: '0x88'
   InheritedSize: '0x38'

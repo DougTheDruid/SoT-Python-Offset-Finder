@@ -6,11 +6,10 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x6c1 (Full Size[0x6c0] - InheritedSize[-0x1]
-class BP_Larinna_Permanent_C
+// Size 0x10 (Full Size[0x6c0] - InheritedSize[0x6b0]
+class BP_Larinna_Permanent_C: public None
 {
 public:
-	char                                                         pad0x6b1_E6LY6[0x6b1];                             // -0x1(0x6b1)
 	Class StaticMeshComponent*                                   None;                                              // 0x6b0(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x6b8(0x8)
 };

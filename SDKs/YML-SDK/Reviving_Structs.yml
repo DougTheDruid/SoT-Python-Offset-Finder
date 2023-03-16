@@ -41,7 +41,7 @@ ModeSpecificReviveSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_DIOQV[0x3]
+  - Name: pad0x3_A5EN7[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -85,7 +85,7 @@ ModeSpecificReviveSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JDHIG[0x4]
+  - Name: pad0x4_O4U2P[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -188,7 +188,7 @@ RevivingWindowStart:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_18PNT[0x7]
+  - Name: pad0x7_YA9DA[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char

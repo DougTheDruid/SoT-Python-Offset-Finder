@@ -55,7 +55,7 @@ CheckBoxStyle:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_27H6J[0x7]
+  - Name: pad0x7_4CKZL[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -183,7 +183,7 @@ CompositeFont:
   - Name: SubTypefaces
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CompositeSubFont>
+    Type: TArray<struct SubTypefaces>
   ClassSize: '0x28'
 CompositeSubFont:
   Attributes:
@@ -194,7 +194,7 @@ CompositeSubFont:
   - Name: CharacterRanges
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct Int32Range>
+    Type: TArray<struct CharacterRanges>
   - Name: Languages
     Offset: '0x20'
     Size: '0x10'
@@ -249,7 +249,7 @@ DockTabStyle:
     Offset: '0x6b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_G9VG2[0x4]
+  - Name: pad0x4_GQLFB[0x4]
     Offset: '0x6b4'
     Size: '0x4'
     Type: char
@@ -360,7 +360,7 @@ FontData:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_COEJN[0x7]
+  - Name: pad0x7_77J8U[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -591,7 +591,7 @@ SlateBrush:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_5S7AD[0x3]
+  - Name: pad0x3_SYZ28[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -603,7 +603,7 @@ SlateBrush:
     Offset: '0x1c'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: pad0x4_77GHM[0x4]
+  - Name: pad0x4_LSNFD[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -623,7 +623,7 @@ SlateBrush:
     Offset: '0x62'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_O8AHO[0x5]
+  - Name: pad0x5_JYL7D[0x5]
     Offset: '0x63'
     Size: '0x5'
     Type: char
@@ -643,7 +643,7 @@ SlateBrush:
     Offset: '0x79'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_MT8K1[0x2]
+  - Name: pad0x2_UI5TV[0x2]
     Offset: '0x7a'
     Size: '0x2'
     Type: char
@@ -673,7 +673,7 @@ SlateFontInfo:
     Offset: '0x8'
     Size: '0x8'
     Type: Class Object*
-  - Name: pad0x18_8RG9Q[0x18]
+  - Name: pad0x18_VARIO[0x18]
     Offset: '0x10'
     Size: '0x18'
     Type: char
@@ -899,7 +899,7 @@ Typeface:
   - Name: Fonts
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct TypefaceEntry>
+    Type: TArray<struct Fonts>
   ClassSize: '0x10'
 TypefaceEntry:
   Attributes:

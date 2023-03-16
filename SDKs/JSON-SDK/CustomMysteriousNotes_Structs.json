@@ -26,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_WAX9R[0x3]",
+        "Name": "pad0x3_N5UO9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_ZZISY[0x4]",
+        "Name": "pad0x4_UBAHJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -79,7 +79,7 @@
     "Attributes": [
       {
         "Name": "Notes",
-        "Type": "TArray<Struct NotesRemoteServiceNoteDetailModel>",
+        "Type": "TArray<struct Notes>",
         "Size": "0x10",
         "Offset": "0x0"
       }

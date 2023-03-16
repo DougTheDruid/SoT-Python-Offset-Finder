@@ -24,7 +24,7 @@
         "Offset": "0x3e4"
       },
       {
-        "Name": "pad0x3_1MXOC[0x3]",
+        "Name": "pad0x3_H8XCX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3e5"
@@ -84,14 +84,14 @@
         "Offset": "0x420"
       },
       {
-        "Name": "pad0x7_OFJB0[0x7]",
+        "Name": "pad0x7_B291J[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x421"
       },
       {
         "Name": "StateParams",
-        "Type": "TArray<Struct Texture2D>",
+        "Type": "TArray<struct StateParams>",
         "Size": "0x10",
         "Offset": "0x428"
       }

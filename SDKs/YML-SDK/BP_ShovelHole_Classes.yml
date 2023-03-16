@@ -2,30 +2,14 @@
 # https://github.com/DougTheDruid
 BP_ShovelHole_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: DirtDecal
-    Offset: '0x440'
-    Size: '0x8'
-    Type: Class DecalComponent*
-  - Name: DirtPile
-    Offset: '0x448'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: DefaultSceneRoot
-    Offset: '0x450'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: MeshDynamicMaterial
-    Offset: '0x458'
-    Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
-  - Name: DecalDynamicMaterial
-    Offset: '0x460'
-    Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+  - Name: pad0x38_66Y6E[0x38]
+    Offset: '0x43e'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x468'
   InheritedSize: '0x438'

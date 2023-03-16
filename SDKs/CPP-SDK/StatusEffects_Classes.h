@@ -31,9 +31,9 @@ public:
 class AppliedStatusToSelfStatCondition: public TargetedStatCondition
 {
 public:
-	TArray<Class Status>                                         Status;                                            // 0x30(0x10)
+	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
 	byte                                                         ComparisonMode;                                    // 0x40(0x1)
-	char                                                         pad0x9_ALQIV[0x9];                                 // 0x3f(0x9)
+	char                                                         pad0x9_2GQ3Z[0x9];                                 // 0x3f(0x9)
 };
 
 
@@ -48,9 +48,9 @@ public:
 class BuffReceiverComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_GZ7SZ[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_RZPQ1[0x8];                                 // 0xc8(0x8)
 	bool                                                         CanReceiveBuff;                                    // 0xd0(0x1)
-	char                                                         pad0x9_KHCQO[0x9];                                 // 0xcf(0x9)
+	char                                                         pad0x9_E8CJN[0x9];                                 // 0xcf(0x9)
 };
 
 
@@ -58,7 +58,7 @@ public:
 class DebugMenuStatusDataAsset: public DataAsset
 {
 public:
-	TArray<Struct DebugMenuStatusDefinition>                     StatusDefinitions;                                 // 0x28(0x10)
+	TArray<struct StatusDefinitions>                             StatusDefinitions;                                 // 0x28(0x10)
 	TArray<Float Durations>                                      Durations;                                         // 0x38(0x10)
 };
 
@@ -104,7 +104,7 @@ class StatusResponseAsset: public DataAsset
 {
 public:
 	Struct FText                                                 HighFrequencyTriggerStatusHelper;                  // 0x28(0x38)
-	TArray<Class TriggerStatus>                                  TriggerStatus;                                     // 0x60(0x10)
+	TArray<class Class*>                                         TriggerStatus;                                     // 0x60(0x10)
 	TArray<class StatusResponse*>                                Responses;                                         // 0x70(0x10)
 };
 
@@ -114,7 +114,7 @@ class StatusRecipientResponseList: public DataAsset
 {
 public:
 	TArray<class StatusResponseAsset*>                           ResponseAssets;                                    // 0x28(0x10)
-	TArray<Struct FeatureToggledStatusResponseList>              FeatureToggledResponseLists;                       // 0x38(0x10)
+	TArray<struct FeatureToggledResponseLists>                   FeatureToggledResponseLists;                       // 0x38(0x10)
 	TArray<class StatusResponseAsset*>                           FinalResponseAssets;                               // 0x48(0x10)
 };
 
@@ -123,9 +123,9 @@ public:
 class LightWeightStatusEffectManagerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_CSMSB[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_W3SW5[0x20];                               // 0xc8(0x20)
 	Class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xe8(0x8)
-	TArray<Struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf0(0x10)
+	TArray<struct ActiveEffects>                                 ActiveEffects;                                     // 0xf0(0x10)
 };
 
 
@@ -147,9 +147,9 @@ public:
 class MaterialStatusSusceptibilityComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_2Q3FY[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_QYYR8[0x8];                                 // 0xc8(0x8)
 	Class PhysicalMaterial*                                      CurrentSurfaceMaterial;                            // 0xd0(0x8)
-	char                                                         pad0x30_OP7X5[0x30];                               // 0xd6(0x30)
+	char                                                         pad0x30_81CT7[0x30];                               // 0xd6(0x30)
 };
 
 
@@ -157,11 +157,11 @@ public:
 class SphericalStatusEffectZone: public Actor
 {
 public:
-	char                                                         pad0x8_3OY3V[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_5GQZM[0x8];                                 // 0x3c8(0x8)
 	Class ActorActivationComponent*                              ActorActivationComponent;                          // 0x3d0(0x8)
 	Class SphereComponent*                                       SphereComponent;                                   // 0x3d8(0x8)
 	Class StatusEffectVolumeComponent*                           StatusEffectVolumeComponent;                       // 0x3e0(0x8)
-	char                                                         pad0xb0_ZD2L2[0xb0];                               // 0x3e6(0xb0)
+	char                                                         pad0xb0_TBX4B[0xb0];                               // 0x3e6(0xb0)
 };
 
 
@@ -199,9 +199,9 @@ public:
 class StatusEffectManagerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_P10CI[0x28];                               // 0xc8(0x28)
+	char                                                         pad0x28_FUIJW[0x28];                               // 0xc8(0x28)
 	Class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xf0(0x8)
-	TArray<Struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf8(0x10)
+	TArray<struct ActiveEffects>                                 ActiveEffects;                                     // 0xf8(0x10)
 };
 
 
@@ -209,8 +209,8 @@ public:
 class StatusEffectOverlapZone: public SimpleOverlapZone
 {
 public:
-	TArray<Struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x4a0(0x10)
-	char                                                         pad0x30_Z7ZRS[0x30];                               // 0x4ae(0x30)
+	TArray<struct StatusesToApplyOnOverlap>                      StatusesToApplyOnOverlap;                          // 0x4a0(0x10)
+	char                                                         pad0x30_SXCZI[0x30];                               // 0x4ae(0x30)
 };
 
 
@@ -241,9 +241,9 @@ class StatusEffectVolumeComponent: public SceneComponent
 {
 public:
 	bool                                                         UseOverlapEventsFromParentComponent;               // 0x2e0(0x1)
-	char                                                         pad0x7_F6AGV[0x7];                                 // 0x2e1(0x7)
-	TArray<Struct Status>                                        StatusEffectsToMaintain;                           // 0x2e8(0x10)
-	char                                                         pad0x28_JFAO0[0x28];                               // 0x2f6(0x28)
+	char                                                         pad0x7_PP1ZE[0x7];                                 // 0x2e1(0x7)
+	TArray<struct StatusEffectsToMaintain>                       StatusEffectsToMaintain;                           // 0x2e8(0x10)
+	char                                                         pad0x28_BYMDI[0x28];                               // 0x2f6(0x28)
 };
 
 
@@ -253,7 +253,7 @@ class SetCanReceiveBuffStatusResponse: public StatusResponse
 public:
 	bool                                                         LockBuffReceiver;                                  // 0x30(0x1)
 	bool                                                         RevertOnDeactivate;                                // 0x31(0x1)
-	char                                                         pad0x8_I5LYN[0x8];                                 // 0x30(0x8)
+	char                                                         pad0x8_DU2VR[0x8];                                 // 0x30(0x8)
 };
 
 

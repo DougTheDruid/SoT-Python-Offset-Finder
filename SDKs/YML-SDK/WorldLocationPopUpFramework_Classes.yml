@@ -18,7 +18,7 @@ WorldLocationPopUpComponent:
     Offset: '0x2f4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6d_YY6PY[0x6d]
+  - Name: pad0x6d_JYFH3[0x6d]
     Offset: '0x2f3'
     Size: '0x6d'
     Type: char
@@ -50,7 +50,7 @@ WorldLocationPopUpDataAsset:
   Super: DataAsset
 WorldLocationVisitorComponent:
   Attributes:
-  - Name: pad0x8_ZRMTZ[0x8]
+  - Name: pad0x8_IR0DL[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -58,7 +58,7 @@ WorldLocationVisitorComponent:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0x3c_XL200[0x3c]
+  - Name: pad0x3c_EAIPR[0x3c]
     Offset: '0xd2'
     Size: '0x3c'
     Type: char

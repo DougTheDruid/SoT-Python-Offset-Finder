@@ -2,55 +2,55 @@
 # https://github.com/DougTheDruid
 BP_ItemPreview_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x588'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: Camera_Dog
+  - Name: None
     Offset: '0x590'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Far
+  - Name: None
     Offset: '0x598'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Mid
+  - Name: None
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Near
+  - Name: None
     Offset: '0x5a8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: IconBillboard
+  - Name: None
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class BillboardComponent*
-  - Name: Camera_Default
+  - Name: None
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: ChildActor
+  - Name: None
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: HiddenDftMesh
+  - Name: None
     Offset: '0x5c8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: ItemMesh
+  - Name: None
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: Camera
+  - Name: None
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class CameraComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: pad0x40_Z3BC0[0x40]
+  - Name: pad0x40_MUT5X[0x40]
     Offset: '0x5e6'
     Size: '0x40'
     Type: char

@@ -5,7 +5,7 @@ BarrelsOfPlentyDebugSpawnLocation:
   - Name: Objects
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<Struct BarrelsOfPlentyDebugLocationEntry>
+    Type: TArray<struct Objects>
   - Name: SpawnCentre
     Offset: '0x3d8'
     Size: '0xc'
@@ -24,7 +24,7 @@ BarrelsOfPlentySpawnProxy:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class Ship*
-  - Name: pad0x18_GXXL8[0x18]
+  - Name: pad0x18_LP0O7[0x18]
     Offset: '0x3d0'
     Size: '0x18'
     Type: char

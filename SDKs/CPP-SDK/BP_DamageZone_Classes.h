@@ -10,15 +10,15 @@ namespace DougsSDKDumper
 class BP_DamageZone_C: public DamageZone
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x7f0(0x8)
-	struct FName                                                 Repair Tag;                                        // 0x7f8(0x8)
-	Struct BP_InternalDamageGroup                                RepairGroup;                                       // 0x800(0x10)
-	int                                                          ExternalHitBufferIndex;                            // 0x810(0x4)
-	int                                                          MaxStoredHits;                                     // 0x814(0x4)
-	TArray<class DecalComponent*>                                Deferred Decals;                                   // 0x818(0x10)
-	int                                                          ClientUpdateEventCount;                            // 0x828(0x4)
-	int                                                          ExternalDecalBufferIndex;                          // 0x82c(0x4)
-	bool                                                         HasBeenInitialized;                                // 0x830(0x1)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x7f0(0x8)
+	struct FName                                                 None;                                              // 0x7f8(0x8)
+	Struct None                                                  None;                                              // 0x800(0x10)
+	int                                                          None;                                              // 0x810(0x4)
+	int                                                          None;                                              // 0x814(0x4)
+	TArray<class DecalComponent*>                                None;                                              // 0x818(0x10)
+	int                                                          None;                                              // 0x828(0x4)
+	int                                                          None;                                              // 0x82c(0x4)
+	bool                                                         None;                                              // 0x830(0x1)
 };
 
 

@@ -2,55 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Castaway_Staff_C:
   Attributes:
-  - Name: None
-    Offset: '0xa30'
-    Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0xa38'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0xa40'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0xa48'
+  - Name: StaticMesh
+    Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xa50'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0xa58'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xa60'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xa68'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xa70'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: None
-    Offset: '0xa78'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: None
-    Offset: '0xa80'
-    Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
-    Offset: '0xa88'
-    Size: '0x8'
-    Type: Class IntentCombinerComponent*
-  ClassSize: '0x60'
-  FullSize: '0xa90'
-  InheritedSize: '0xa30'
-  Super: IntentBasedContinuousAnimatedMechanismAction
+  ClassSize: '0x8'
+  FullSize: '0x3d0'
+  InheritedSize: '0x3c8'
+  Super: Actor

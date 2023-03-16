@@ -6,25 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x88 (Full Size[0x608] - InheritedSize[0x580]
+// Size 0x88 (Full Size[0x638] - InheritedSize[0x5b0]
 class BP_HullDamage_C: public HullDamage
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x580(0x8)
-	Class HitReactionComponent*                                  HitReaction;                                       // 0x588(0x8)
-	Class BakedDecalComponent*                                   ImpactDecalComponent;                              // 0x590(0x8)
-	TArray<class Texture2D*>                                     Persistent Damage Decals;                          // 0x598(0x10)
-	Class ParticleSystem*                                        Damage VFX;                                        // 0x5a8(0x8)
-	TArray<class MaterialInstance*>                              Deferred Damage Decals;                            // 0x5b0(0x10)
-	float                                                        Deferred Min Size;                                 // 0x5c0(0x4)
-	float                                                        Deferred Max Size;                                 // 0x5c4(0x4)
-	float                                                        Persistent Min Size;                               // 0x5c8(0x4)
-	float                                                        Persistent Max Size;                               // 0x5cc(0x4)
-	Struct RandomStream                                          RandomDecalStream;                                 // 0x5d0(0x8)
-	float                                                        TEST_HitStrength;                                  // 0x5d8(0x4)
-	float                                                        TEST_PenetrationThreshold;                         // 0x5dc(0x4)
-	Class Ship*                                                  ParentShip;                                        // 0x5e0(0x8)
-	Struct WwiseEmitter                                          CannonballHitEmitter;                              // 0x5e8(0x20)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x5b0(0x8)
+	Class HitReactionComponent*                                  None;                                              // 0x5b8(0x8)
+	Class BakedDecalComponent*                                   None;                                              // 0x5c0(0x8)
+	TArray<class Texture2D*>                                     None;                                              // 0x5c8(0x10)
+	Class ParticleSystem*                                        None;                                              // 0x5d8(0x8)
+	TArray<class MaterialInstance*>                              None;                                              // 0x5e0(0x10)
+	float                                                        None;                                              // 0x5f0(0x4)
+	float                                                        None;                                              // 0x5f4(0x4)
+	float                                                        None;                                              // 0x5f8(0x4)
+	float                                                        None;                                              // 0x5fc(0x4)
+	Struct RandomStream                                          None;                                              // 0x600(0x8)
+	float                                                        None;                                              // 0x608(0x4)
+	float                                                        None;                                              // 0x60c(0x4)
+	Class Ship*                                                  None;                                              // 0x610(0x8)
+	Struct WwiseEmitter                                          None;                                              // 0x618(0x20)
 };
 
 

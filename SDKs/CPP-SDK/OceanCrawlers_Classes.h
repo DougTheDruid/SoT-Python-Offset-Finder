@@ -11,7 +11,7 @@ class BTTask_BroadcastOceanCrawlerAbilityAudioEvent: public BTTaskNode
 {
 public:
 	byte                                                         OceanCrawlerAudioKeyToBroadcast;                   // 0x60(0x1)
-	char                                                         pad0x9_436MA[0x9];                                 // 0x5f(0x9)
+	char                                                         pad0x9_PPWCW[0x9];                                 // 0x5f(0x9)
 };
 
 
@@ -20,7 +20,7 @@ class OceanCrawlerAudioParamsDataAsset: public DataAsset
 {
 public:
 	Class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x28(0x8)
-	TArray<Struct OceanCrawlerAudioKeyPair>                      AudioKeyPairs;                                     // 0x30(0x10)
+	TArray<struct AudioKeyPairs>                                 AudioKeyPairs;                                     // 0x30(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      BuffThankDelay;                                    // 0x40(0x30)
 	Struct OceanCrawlerBuffAudioSettings                         CrabBuffAudioSettings;                             // 0x70(0x10)
 	Struct OceanCrawlerBuffAudioSettings                         EelBuffAudioSettings;                              // 0x80(0x10)
@@ -34,7 +34,7 @@ class OceanCrawlerAudioBroadcaster: public ActorComponent
 public:
 	Class OceanCrawlerAudioParamsDataAsset*                      AudioDataAsset;                                    // 0xc8(0x8)
 	Class Actor*                                                 CachedOwner;                                       // 0xd0(0x8)
-	char                                                         pad0xd8_TNS5K[0xd8];                               // 0xd6(0xd8)
+	char                                                         pad0xd8_UGGGO[0xd8];                               // 0xd6(0xd8)
 };
 
 

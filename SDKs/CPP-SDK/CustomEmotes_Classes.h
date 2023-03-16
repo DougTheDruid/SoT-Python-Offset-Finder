@@ -17,7 +17,7 @@ public:
 class CustomEmoteService: public Object
 {
 public:
-	char                                                         pad0x8_WA5JD[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_NDARS[0x8];                                 // 0x28(0x8)
 	Class World*                                                 World;                                             // 0x30(0x8)
 };
 

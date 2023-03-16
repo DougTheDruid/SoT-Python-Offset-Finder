@@ -30,7 +30,7 @@ public:
 struct OwnerListEntry
 {
 public:
-	TArray<Struct Guid>                                          OwnerList;                                         // 0x0(0x10)
+	TArray<struct OwnerList>                                     OwnerList;                                         // 0x0(0x10)
 };
 
 

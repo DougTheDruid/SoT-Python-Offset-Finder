@@ -20,7 +20,7 @@ StatusResponseApplyPersistentStatus:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_4M3FM[0xc]
+  - Name: pad0xc_P6GCX[0xc]
     Offset: '0x4a'
     Size: '0xc'
     Type: char
@@ -33,7 +33,7 @@ StatusResponseCancelStatus:
   - Name: Status
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class Status>
+    Type: TArray<class Class*>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -50,7 +50,7 @@ StatusResponseHealthRegenerationPoolChange:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_BB4OW[0xc]
+  - Name: pad0xc_7FALV[0xc]
     Offset: '0x32'
     Size: '0xc'
     Type: char
@@ -80,7 +80,7 @@ StatusResponseReportNoiseEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZSMJJ[0x3]
+  - Name: pad0x3_FLM0K[0x3]
     Offset: '0x49'
     Size: '0x3'
     Type: char
@@ -88,7 +88,7 @@ StatusResponseReportNoiseEvent:
     Offset: '0x4c'
     Size: '0x4'
     Type: float
-  - Name: pad0x28_506MG[0x28]
+  - Name: pad0x28_H6Y2B[0x28]
     Offset: '0x4e'
     Size: '0x28'
     Type: char
@@ -101,7 +101,7 @@ StatusResponseSetScalarParamOnCharacter:
   - Name: ParamsToChange
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct ScalarParamInfo>
+    Type: TArray<struct ParamsToChange>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -111,7 +111,7 @@ StatusResponseSuspendStatus:
   - Name: Status
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class Status>
+    Type: TArray<class Class*>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'

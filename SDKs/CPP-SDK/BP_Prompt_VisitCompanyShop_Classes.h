@@ -11,7 +11,7 @@ class BP_Prompt_VisitCompanyShop_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x93_ZAICD[0x93];                               // 0x120(0x93)
+	char                                                         pad0x132_5PTND[0x132];                             // 0x120(0x132)
 	Struct ObjectMessagingHandle                                 Handle_TreasureChestSoldPredictedEvent;            // 0x120(0x48)
 	Struct PrioritisedPromptWithHandle                           Prompt_VisitCompanyShop;                           // 0x168(0x68)
 	class                                                        Company;                                           // 0x1d0(0x8)

@@ -6,9 +6,9 @@ BP_Prompt_EmissarySunk_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_X8KER[0x93]
+  - Name: pad0x132_O9SFG[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: Handle_EmissarySunk
     Offset: '0x120'
@@ -22,7 +22,7 @@ BP_Prompt_EmissarySunk_C:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_B5U2S[0x3]
+  - Name: pad0x3_L2NN9[0x3]
     Offset: '0x171'
     Size: '0x3'
     Type: char
@@ -30,14 +30,14 @@ BP_Prompt_EmissarySunk_C:
     Offset: '0x174'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_O42YD[0x4]
+  - Name: pad0x4_B7IRH[0x4]
     Offset: '0x17c'
     Size: '0x4'
     Type: char
   - Name: Prompts
     Offset: '0x180'
     Size: '0x10'
-    Type: TArray<Struct PrioritisedPromptWithHandle>
+    Type: TArray<struct Prompts>
   - Name: PromptAccessKey
     Offset: '0x190'
     Size: '0x8'

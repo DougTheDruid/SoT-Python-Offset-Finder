@@ -39,7 +39,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_0NV52[0x3]",
+        "Name": "pad0x3_RQ9W3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -75,7 +75,7 @@
         "Offset": "0x45"
       },
       {
-        "Name": "pad0xc_35J4U[0xc]",
+        "Name": "pad0xc_81PGT[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x44"
@@ -103,7 +103,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x8_SMSWQ[0x8]",
+        "Name": "pad0x8_6RKIU[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
@@ -141,7 +141,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x9_6S6KQ[0x9]",
+        "Name": "pad0x9_O413P[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0x97"
@@ -170,13 +170,13 @@
     "Attributes": [
       {
         "Name": "MultiEmitterDataArray",
-        "Type": "TArray<Struct MultiEmitterData>",
+        "Type": "TArray<struct MultiEmitterDataArray>",
         "Size": "0x10",
         "Offset": "0x2e0"
       },
       {
         "Name": "PlayingEmitters",
-        "Type": "TArray<Struct WwiseEmitter>",
+        "Type": "TArray<struct PlayingEmitters>",
         "Size": "0x10",
         "Offset": "0x2f0"
       }
@@ -229,7 +229,7 @@
     "ClassSize": "0x410",
     "Attributes": [
       {
-        "Name": "pad0xc0_UZKPH[0xc0]",
+        "Name": "pad0xc0_L8OCO[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x28"
@@ -241,7 +241,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_K3QTG[0x4]",
+        "Name": "pad0x4_FUAS4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14c"
@@ -254,7 +254,7 @@
       },
       {
         "Name": "PersistentSoundBanks",
-        "Type": "TArray<Struct StringAssetReference>",
+        "Type": "TArray<struct PersistentSoundBanks>",
         "Size": "0x10",
         "Offset": "0x188"
       },
@@ -290,7 +290,7 @@
       },
       {
         "Name": "AsyncIOPriorityMappings",
-        "Type": "TArray<Struct WwiseIOPriorityMappingConfig>",
+        "Type": "TArray<struct AsyncIOPriorityMappings>",
         "Size": "0x10",
         "Offset": "0x1e8"
       },
@@ -385,7 +385,7 @@
         "Offset": "0x358"
       },
       {
-        "Name": "pad0x50_Y281N[0x50]",
+        "Name": "pad0x50_UWHE5[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x360"
@@ -459,7 +459,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x50_53GXL[0x50]",
+        "Name": "pad0x50_TUFJX[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x36"
@@ -535,7 +535,7 @@
       },
       {
         "Name": "StateGroupNames",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -547,7 +547,7 @@
       },
       {
         "Name": "StateValueNames",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -559,7 +559,7 @@
       },
       {
         "Name": "SwitchGroupNames",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -571,7 +571,7 @@
       },
       {
         "Name": "SwitchStateNames",
-        "Type": "TArray<Struct FName>",
+        "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x98"
       }

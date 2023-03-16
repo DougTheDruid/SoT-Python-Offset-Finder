@@ -16,7 +16,6 @@ public:
 	Class NPCDialogComponent*                                    None;                                              // 0x6a8(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x6b0(0x8)
 	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x6b8(0x8)
-	Class WwiseEvent*                                            None;                                              // 0x6c0(0x8)
 	Class WwiseEvent*                                            None;                                              // 0x6c8(0x8)
 	Struct WwiseEmitter                                          None;                                              // 0x6d0(0x20)
 };

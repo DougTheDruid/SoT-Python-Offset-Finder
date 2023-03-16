@@ -6,9 +6,9 @@ BP_PromptCoordinator_BootyStorage_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x93_IQD0X[0x93]
+  - Name: pad0x132_BBARC[0x132]
     Offset: '0x120'
-    Size: '0x93'
+    Size: '0x132'
     Type: char
   - Name: ShowLootPrompt
     Offset: '0x120'
@@ -26,7 +26,7 @@ BP_PromptCoordinator_BootyStorage_C:
     Offset: '0x123'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4_F2D6K[0x4]
+  - Name: pad0x4_XB88M[0x4]
     Offset: '0x124'
     Size: '0x4'
     Type: char

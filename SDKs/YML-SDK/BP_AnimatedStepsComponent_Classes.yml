@@ -2,35 +2,31 @@
 # https://github.com/DougTheDruid
 BP_AnimatedStepsComponent_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0xf0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xbb_KMZ2D[0xbb]
-    Offset: '0xf8'
-    Size: '0xbb'
-    Type: char
-  - Name: BoxDelays
+  - Name: None
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Float BoxDelays>
-  - Name: BoxTargetZs
+    Type: TArray<Float None>
+  - Name: None
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Float BoxTargetZs>
-  - Name: AnimCurve
+    Type: TArray<Float None>
+  - Name: None
     Offset: '0x118'
     Size: '0x8'
     Type: Class CurveFloat*
-  - Name: MovementTimer
+  - Name: None
     Offset: '0x120'
     Size: '0x4'
     Type: float
-  - Name: AnimationDuration
+  - Name: None
     Offset: '0x124'
     Size: '0x4'
     Type: float
-  - Name: AnimationStartDelay
+  - Name: None
     Offset: '0x128'
     Size: '0x4'
     Type: float

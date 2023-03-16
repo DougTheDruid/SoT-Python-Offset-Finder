@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_AmmoChest_C: public AmmoChest
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x470(0x8)
-	Class BoxComponent*                                          Hits;                                              // 0x478(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x480(0x8)
-	Struct WwiseEmitter                                          Emitter;                                           // 0x488(0x20)
-	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x4a8(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x470(0x8)
+	Class BoxComponent*                                          None;                                              // 0x478(0x8)
+	Class InteractableComponent*                                 None;                                              // 0x480(0x8)
+	Struct WwiseEmitter                                          None;                                              // 0x488(0x20)
+	Class MaterialInstanceDynamic*                               None;                                              // 0x4a8(0x8)
 };
 
 

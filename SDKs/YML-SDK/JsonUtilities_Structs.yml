@@ -60,7 +60,7 @@ TestSerializationObject:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JCXMB[0x3]
+  - Name: pad0x3_D74KZ[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

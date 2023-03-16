@@ -22,7 +22,7 @@ ReviveGhostAnimationDataAsset:
   Super: DataAsset
 ReviveGhostAnimationInstance:
   Attributes:
-  - Name: pad0x8_WE5MO[0x8]
+  - Name: pad0x8_9J7F8[0x8]
     Offset: '0x440'
     Size: '0x8'
     Type: char
@@ -42,7 +42,7 @@ ReviveGhostAnimationInstance:
     Offset: '0x472'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1f_DJX7W[0x1f]
+  - Name: pad0x1f_53FQS[0x1f]
     Offset: '0x471'
     Size: '0x1f'
     Type: char

@@ -27,10 +27,6 @@ BP_Innkeeper_C:
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
   - Name: None
-    Offset: '0x6c0'
-    Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: None
     Offset: '0x6c8'
     Size: '0x8'
     Type: Class WwiseEvent*

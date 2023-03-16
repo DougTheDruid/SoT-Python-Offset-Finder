@@ -20,7 +20,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x10_W3O1B[0x10]",
+        "Name": "pad0x10_CRHU2[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
@@ -32,7 +32,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x20_U6RB9[0x20]",
+        "Name": "pad0x20_ITPBT[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x8e"
@@ -123,7 +123,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x4_KU481[0x4]",
+        "Name": "pad0x4_1MZIZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xdc"
@@ -141,7 +141,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x31_RBXBY[0x31]",
+        "Name": "pad0x31_DS2CJ[0x31]",
         "Type": "char",
         "Size": "0x31",
         "Offset": "0xe7"
@@ -218,7 +218,7 @@
     "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "pad0x8_H7C1R[0x8]",
+        "Name": "pad0x8_JVNZV[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -260,7 +260,7 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0xb9_RANQ1[0xb9]",
+        "Name": "pad0xb9_LYCIK[0xb9]",
         "Type": "char",
         "Size": "0xb9",
         "Offset": "0xf7"
@@ -303,7 +303,7 @@
     "Attributes": [
       {
         "Name": "MeleeAttacks",
-        "Type": "TArray<Struct MeleeAttackIdWeights>",
+        "Type": "TArray<struct MeleeAttacks>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -357,7 +357,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x4_44FG0[0x4]",
+        "Name": "pad0x4_DCKBN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xe4"
@@ -375,7 +375,7 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0xc_HLANA[0xc]",
+        "Name": "pad0xc_08CRE[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0xfa"
@@ -395,7 +395,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x28_G56HQ[0x28]",
+        "Name": "pad0x28_K5TOC[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x9e"
@@ -450,7 +450,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0xc_0V7QV[0xc]",
+        "Name": "pad0xc_WLWOK[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x32"

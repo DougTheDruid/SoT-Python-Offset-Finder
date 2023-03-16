@@ -5,7 +5,7 @@ GameServiceCoordinator:
   - Name: Services
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct GameServiceCoordinatorUnit>
+    Type: TArray<struct Services>
   ClassSize: '0x20'
 GameServiceCoordinatorUnit:
   Attributes:

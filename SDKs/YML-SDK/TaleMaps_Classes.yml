@@ -22,7 +22,7 @@ AddMarkToTornMapAtLocationStepDesc:
   Super: AddMarkToTornMapStepDescBase
 AddMarkToTornMapStep:
   Attributes:
-  - Name: pad0x20_6MEPI[0x20]
+  - Name: pad0x20_HHWQG[0x20]
     Offset: '0x98'
     Size: '0x20'
     Type: char
@@ -78,7 +78,7 @@ RegionIslandFilteredSelectionStrategy:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_R2OZR[0x3]
+  - Name: pad0x3_QJQMA[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -112,7 +112,7 @@ SelectIslandsFromRegionStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class RegionIslandSelectionStrategyBase*
-  - Name: pad0x60_DAOBQ[0x60]
+  - Name: pad0x60_VVIKE[0x60]
     Offset: '0xa6'
     Size: '0x60'
     Type: char

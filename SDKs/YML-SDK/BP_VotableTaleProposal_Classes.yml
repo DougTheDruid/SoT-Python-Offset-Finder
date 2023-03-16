@@ -30,10 +30,18 @@ BP_VotableTaleProposal_C:
     Offset: '0x528'
     Size: '0x8'
     Type: Class StaticMesh*
-  - Name: pad0x20_J8IV8[0x20]
-    Offset: '0x52e'
-    Size: '0x20'
-    Type: char
+  - Name: None
+    Offset: '0x530'
+    Size: '0x4'
+    Type: int
+  - Name: None
+    Offset: '0x534'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x538'
+    Size: '0x8'
+    Type: Class MaterialInterface*
   ClassSize: '0x50'
   FullSize: '0x540'
   InheritedSize: '0x4f0'

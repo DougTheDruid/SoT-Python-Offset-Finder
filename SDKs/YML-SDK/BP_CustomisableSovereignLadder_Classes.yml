@@ -3,42 +3,58 @@
 BP_CustomisableSovereignLadder_C:
   Attributes:
   - Name: None
-    Offset: '0x408'
+    Offset: '0x5c0'
+    Size: '0x8'
+    Type: Struct PointerToUberGraphFrame
+  - Name: None
+    Offset: '0x5c8'
+    Size: '0x8'
+    Type: Class InteractableComponent*
+  - Name: None
+    Offset: '0x5d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: None
-    Offset: '0x410'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Offset: '0x5d8'
+    Size: '0x20'
+    Type: Struct None
   - Name: None
-    Offset: '0x418'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Offset: '0x5f8'
+    Size: '0x10'
+    Type: TArray<struct None>
   - Name: None
-    Offset: '0x420'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Offset: '0x608'
+    Size: '0x10'
+    Type: TArray<struct None>
   - Name: None
-    Offset: '0x428'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Offset: '0x618'
+    Size: '0x4'
+    Type: int
+  - Name: pad0x4_K8AOC[0x4]
+    Offset: '0x61c'
+    Size: '0x4'
+    Type: char
   - Name: None
-    Offset: '0x430'
+    Offset: '0x620'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: Class MaterialInterface*
   - Name: None
-    Offset: '0x438'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Offset: '0x628'
+    Size: '0x4'
+    Type: float
   - Name: None
-    Offset: '0x440'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Offset: '0x62c'
+    Size: '0xc'
+    Type: Struct Vector
   - Name: None
-    Offset: '0x448'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x48'
-  FullSize: '0x450'
-  InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+    Offset: '0x638'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: None
+    Offset: '0x644'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x88'
+  FullSize: '0x648'
+  InheritedSize: '0x5c0'
+  Super: Ladder

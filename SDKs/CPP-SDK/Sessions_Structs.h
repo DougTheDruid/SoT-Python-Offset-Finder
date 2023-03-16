@@ -6,6 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x18
+struct SessionTemplate
+{
+public:
+	Struct FString                                               TemplateName;                                      // 0x0(0x10)
+	byte                                                         SessionType;                                       // 0x10(0x1)
+	char                                                         pad0x3_N6ZNP[0x3];                                 // 0x11(0x3)
+	int                                                          MaxPlayers;                                        // 0x14(0x4)
+};
+
+
 // Size 0x38
 struct CrewSessionTemplate
 {
@@ -13,17 +24,6 @@ public:
 	Struct FString                                               MatchmakingHopper;                                 // 0x18(0x10)
 	class                                                        ShipSize;                                          // 0x28(0x8)
 	int                                                          MaxMatchmakingPlayers;                             // 0x30(0x4)
-};
-
-
-// Size 0x18
-struct SessionTemplate
-{
-public:
-	Struct FString                                               TemplateName;                                      // 0x0(0x10)
-	byte                                                         SessionType;                                       // 0x10(0x1)
-	char                                                         pad0x3_4LXF2[0x3];                                 // 0x11(0x3)
-	int                                                          MaxPlayers;                                        // 0x14(0x4)
 };
 
 
@@ -83,7 +83,7 @@ struct CrewSessionMatchmakingFollowedTelemetryEvent
 public:
 	Struct Guid                                                  NewCrewId;                                         // 0x50(0x10)
 	int                                                          ResultCode;                                        // 0x60(0x4)
-	char                                                         pad0x4_ZY5M2[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_UTVBA[0x4];                                 // 0x64(0x4)
 	Struct FString                                               Message;                                           // 0x68(0x10)
 };
 
@@ -108,7 +108,7 @@ public:
 struct CrewSessionTelemetry
 {
 public:
-	TArray<Struct CrewSessionMemberTelemetry>                    SessionMembers;                                    // 0x0(0x10)
+	TArray<struct SessionMembers>                                SessionMembers;                                    // 0x0(0x10)
 	Struct FString                                               SessionTemplate;                                   // 0x10(0x10)
 	Struct FString                                               SessionVisibility;                                 // 0x20(0x10)
 	Struct FString                                               PlayMode;                                          // 0x30(0x10)
@@ -169,7 +169,7 @@ struct CrewSessionJoinedTelemetryEvent
 {
 public:
 	Struct FString                                               JoinMethod;                                        // 0x50(0x10)
-	TArray<Struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x60(0x10)
+	TArray<struct QoSTelemetry>                                  QoSTelemetry;                                      // 0x60(0x10)
 };
 
 
@@ -189,7 +189,7 @@ public:
 struct CrewSessionCreatedTelemetryEvent
 {
 public:
-	TArray<Struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x50(0x10)
+	TArray<struct QoSTelemetry>                                  QoSTelemetry;                                      // 0x50(0x10)
 };
 
 

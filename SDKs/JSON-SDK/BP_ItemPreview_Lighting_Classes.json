@@ -6,49 +6,49 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "ExponentialHeightFog",
+        "Name": "None",
         "Type": "Class ExponentialHeightFogComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "SkyLight",
+        "Name": "None",
         "Type": "Class SkyLightComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "SpotLight2",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "SpotLight1",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "SpotLight",
+        "Name": "None",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "PostProcess",
+        "Name": "None",
         "Type": "Class PostProcessComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x30_TDG4N[0x30]",
+        "Name": "pad0x30_67DNE[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x3fe"

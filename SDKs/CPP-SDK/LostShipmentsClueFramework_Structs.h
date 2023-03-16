@@ -49,7 +49,7 @@ struct ClueSiteTypeSupportedDescribedByEntry
 {
 public:
 	class                                                        SiteType;                                          // 0x0(0x8)
-	TArray<Struct WeightedClueDescriptor>                        SupportedDescriptors;                              // 0x8(0x10)
+	TArray<struct SupportedDescriptors>                          SupportedDescriptors;                              // 0x8(0x10)
 };
 
 
@@ -116,7 +116,7 @@ public:
 struct ClueSiteLootHistory
 {
 public:
-	TArray<Struct LootSpawnedAtClueSite>                         History;                                           // 0x0(0x10)
+	TArray<struct History>                                       History;                                           // 0x0(0x10)
 };
 
 

@@ -17,7 +17,7 @@ BP_PromptActor_EmissarySoldLoot_AF_C:
   - Name: Prompts
     Offset: '0x418'
     Size: '0x10'
-    Type: TArray<Struct PrioritisedPromptWithHandle>
+    Type: TArray<struct Prompts>
   - Name: PromptCoordinator
     Offset: '0x428'
     Size: '0x8'

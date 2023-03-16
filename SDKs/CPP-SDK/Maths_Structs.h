@@ -18,7 +18,7 @@ public:
 struct WeightedProbabilityRangeOfRanges
 {
 public:
-	TArray<Struct WeightedProbabilityRangeOfRangesFloatPair>     SubRanges;                                         // 0x20(0x10)
+	TArray<struct SubRanges>                                     SubRanges;                                         // 0x20(0x10)
 };
 
 
@@ -62,7 +62,7 @@ public:
 struct FixedStepInterpCurveVector2D
 {
 public:
-	TArray<Struct FixedStepInterpCurvePointVector2D>             Points;                                            // 0x0(0x10)
+	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
 	float                                                        StepTime;                                          // 0x10(0x4)
 	bool                                                         IsLooped;                                          // 0x14(0x1)
 };

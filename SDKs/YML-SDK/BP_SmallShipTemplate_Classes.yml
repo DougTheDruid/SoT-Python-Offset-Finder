@@ -470,7 +470,7 @@ BP_SmallShipTemplate_C:
     Offset: '0x1ab0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_UC1IW[0x7]
+  - Name: pad0x7_315C5[0x7]
     Offset: '0x1ab1'
     Size: '0x7'
     Type: char
@@ -482,7 +482,7 @@ BP_SmallShipTemplate_C:
     Offset: '0x1ac0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_6ZNKF[0x7]
+  - Name: pad0x7_EYNLZ[0x7]
     Offset: '0x1ac1'
     Size: '0x7'
     Type: char

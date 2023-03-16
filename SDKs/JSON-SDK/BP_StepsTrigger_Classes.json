@@ -6,115 +6,115 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
-        "Name": "bld_tavern_entrance_steps_lightshafts_01_a",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4b8"
       },
       {
-        "Name": "vfx_tavern_stairs_symbol_glow",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4c0"
       },
       {
-        "Name": "Decal",
+        "Name": "None",
         "Type": "Class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
-        "Name": "vfx_tavern_stairs_glow",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
-        "Name": "vfx_tavern_stairs_falling_dust_under_ground",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
       {
-        "Name": "vfx_tavern_stairs_falling_dust2",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4e0"
       },
       {
-        "Name": "vfx_tavern_stairs_falling_dust1",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4e8"
       },
       {
-        "Name": "vfx_tavern_stairs_impact3",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "vfx_tavern_stairs_impact2",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
-        "Name": "vfx_tavern_stairs_impact1",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
-        "Name": "vfx_tavern_stairs_impact",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
-        "Name": "vfx_tavern_stairs_falling_dust",
+        "Name": "None",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
-        "Name": "AnimatedStepsComponent",
-        "Type": "BlueprintGeneratedClass BP_AnimatedStepsComponent_C*",
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
         "Size": "0x8",
         "Offset": "0x518"
       },
       {
-        "Name": "Box1",
+        "Name": "None",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x520"
       },
       {
-        "Name": "Box3",
+        "Name": "None",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
-        "Name": "Box2",
+        "Name": "None",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x530"
       },
       {
-        "Name": "Box0",
+        "Name": "None",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x538"
       },
       {
-        "Name": "StepsMesh",
+        "Name": "None",
         "Type": "Class PoseableSkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x540"

@@ -12,7 +12,7 @@ class LevelSequence: public MovieSceneSequence
 public:
 	Class MovieScene*                                            MovieScene;                                        // 0x2a8(0x8)
 	Struct LevelSequenceObjectReferenceMap                       ObjectReferences;                                  // 0x2b0(0xa0)
-	char                                                         pad0x190_V3WBC[0x190];                             // 0x34e(0x190)
+	char                                                         pad0x190_64XI2[0x190];                             // 0x34e(0x190)
 };
 
 
@@ -28,7 +28,7 @@ class LevelSequencePlayer: public MovieSceneSequencePlayer
 {
 public:
 	Class Actor*                                                 SpawnablesParent;                                  // 0x608(0x8)
-	char                                                         pad0x48_LUHL2[0x48];                               // 0x60e(0x48)
+	char                                                         pad0x48_F6ES6[0x48];                               // 0x60e(0x48)
 };
 
 
@@ -44,7 +44,7 @@ class LevelSequenceBurnInOptions: public Object
 {
 public:
 	bool                                                         bUseBurnIn;                                        // 0x28(0x1)
-	char                                                         pad0x7_YA4X5[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_6X4H0[0x7];                                 // 0x29(0x7)
 	Struct StringClassReference                                  BurnInClass;                                       // 0x30(0x10)
 	Class LevelSequenceBurnInInitSettings*                       Settings;                                          // 0x40(0x8)
 };
@@ -54,9 +54,9 @@ public:
 class LevelSequenceActor: public Actor
 {
 public:
-	char                                                         pad0x8_Y3Z2U[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_IO8KL[0x8];                                 // 0x3c8(0x8)
 	bool                                                         bAutoPlay;                                         // 0x3d0(0x1)
-	char                                                         pad0x7_PKPPJ[0x7];                                 // 0x3d1(0x7)
+	char                                                         pad0x7_5IOLV[0x7];                                 // 0x3d1(0x7)
 	Struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3d8(0x28)
 	Class LevelSequencePlayer*                                   SequencePlayer;                                    // 0x400(0x8)
 	Struct StringAssetReference                                  LevelSequence;                                     // 0x408(0x10)

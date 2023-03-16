@@ -61,7 +61,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_O4XWZ[0x3]",
+        "Name": "pad0x3_Y8VMQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -73,7 +73,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_F3NCJ[0x4]",
+        "Name": "pad0x4_NTTJA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -92,7 +92,7 @@
       },
       {
         "Name": "ChildPossessables",
-        "Type": "TArray<Struct Guid>",
+        "Type": "TArray<struct ChildPossessables>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -193,7 +193,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_IV309[0x3]",
+        "Name": "pad0x3_W4J4M[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -211,7 +211,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_J1B0L[0x7]",
+        "Name": "pad0x7_47XZD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -248,19 +248,19 @@
     "Attributes": [
       {
         "Name": "Ranges",
-        "Type": "TArray<Struct FloatRange>",
+        "Type": "TArray<struct Ranges>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Groups",
-        "Type": "TArray<Struct MovieSceneEvaluationGroup>",
+        "Type": "TArray<struct Groups>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "MetaData",
-        "Type": "TArray<Struct MovieSceneEvaluationMetaData>",
+        "Type": "TArray<struct MetaData>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -271,7 +271,7 @@
     "Attributes": [
       {
         "Name": "ActiveSequences",
-        "Type": "TArray<Struct MovieSceneSequenceID>",
+        "Type": "TArray<struct ActiveSequences>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -282,13 +282,13 @@
     "Attributes": [
       {
         "Name": "LUTIndices",
-        "Type": "TArray<Struct MovieSceneEvaluationGroupLUTIndex>",
+        "Type": "TArray<struct LUTIndices>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SegmentPtrLUT",
-        "Type": "TArray<Struct MovieSceneEvaluationFieldSegmentPtr>",
+        "Type": "TArray<struct SegmentPtrLUT>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -332,7 +332,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_R3KRN[0x3]",
+        "Name": "pad0x3_5M6UK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -425,20 +425,20 @@
         "Offset": "0x12"
       },
       {
-        "Name": "pad0x5_3PQSH[0x5]",
+        "Name": "pad0x5_U2QPF[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x13"
       },
       {
         "Name": "Segments",
-        "Type": "TArray<Struct MovieSceneSegment>",
+        "Type": "TArray<struct Segments>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "ChildTemplates",
-        "Type": "TArray<Struct MovieSceneEvalTemplatePtr>",
+        "Type": "TArray<struct ChildTemplates>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -528,14 +528,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_VGA1T[0x4]",
+        "Name": "pad0x4_2RZR7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Children",
-        "Type": "TArray<Struct MovieSceneSequenceID>",
+        "Type": "TArray<struct Children>",
         "Size": "0x10",
         "Offset": "0x8"
       }

@@ -14,26 +14,26 @@ CoordinatedKrakenAction:
     Offset: '0xc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_MNPZY[0x3]
+  - Name: pad0x3_1R7RJ[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
   - Name: SpecialEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct CoordinatedKrakenSpecialEvent>
+    Type: TArray<struct SpecialEvents>
   - Name: TentacleActions
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Struct CoordinatedKrakenTentacleAction>
+    Type: TArray<struct TentacleActions>
   - Name: HeadActions
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct CoordinatedKrakenHeadAction>
+    Type: TArray<struct HeadActions>
   - Name: ExplosionEvents
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct CoordinatedKrakenExplosionEvent>
+    Type: TArray<struct ExplosionEvents>
   - Name: TargetActorLocationAnimation
     Offset: '0x50'
     Size: '0x170'
@@ -82,7 +82,7 @@ CoordinatedKrakenSpecialEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_7IOTZ[0x3]
+  - Name: pad0x3_J0CLP[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -265,7 +265,7 @@ KrakenAnimatedTentacleAnimationBoneTrack:
   - Name: Frames
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct KrakenAnimatedTentacleAnimationBoneFrame>
+    Type: TArray<struct Frames>
   ClassSize: '0x10'
 KrakenAnimatedTentacleAnimationSpecBone:
   Attributes:
@@ -299,14 +299,14 @@ KrakenAnimatedTentacleStateAnimationMapping:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WJVCH[0x7]
+  - Name: pad0x7_CYTGB[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   - Name: Transitions
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct KrakenAnimatedTentacleTransitionAnimation>
+    Type: TArray<struct Transitions>
   ClassSize: '0x28'
 KrakenAnimatedTentacleTransitionAnimation:
   Attributes:
@@ -318,7 +318,7 @@ KrakenAnimatedTentacleTransitionAnimation:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UZNBW[0x4]
+  - Name: pad0x4_MUQHD[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -333,7 +333,7 @@ KrakenBehaviourParams:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8QKUI[0x3]
+  - Name: pad0x3_8H3M7[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -398,7 +398,7 @@ KrakenDynamicsStateEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_PEXP7[0x3]
+  - Name: pad0x3_PHSOQ[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -421,21 +421,21 @@ KrakenDynamicsStateFragmentParams:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T9EDT[0x4]
+  - Name: pad0x4_C5W40[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: Events
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct KrakenDynamicsStateEvent>
+    Type: TArray<struct Events>
   ClassSize: '0x20'
 KrakenDynamicsStateParams:
   Attributes:
   - Name: FragmentParams
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct KrakenDynamicsStateFragmentParams>
+    Type: TArray<struct FragmentParams>
   ClassSize: '0x10'
 KrakenHeadHealthPair:
   Attributes:
@@ -454,7 +454,7 @@ KrakenHeadHitReactAnimations:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Q7AQ9[0x4]
+  - Name: pad0x4_YWCWA[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -477,14 +477,14 @@ KrakenHeadStateAnimationMapping:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_U0CAD[0x7]
+  - Name: pad0x7_I0P48[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   - Name: Transitions
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Struct KrakenHeadTransitionAnimation>
+    Type: TArray<struct Transitions>
   ClassSize: '0x28'
 KrakenHeadTransitionAnimation:
   Attributes:
@@ -517,7 +517,7 @@ KrakenParams:
   - Name: TentaclesRequiredToDismissKraken
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct KrakenTentaclesChanceParams>
+    Type: TArray<struct TentaclesRequiredToDismissKraken>
   - Name: TickFrequencyToLookForNewBehaviours
     Offset: '0x40'
     Size: '0x4'
@@ -537,7 +537,7 @@ KrakenParams:
   - Name: NumTentacleInstancesToAssignToShip
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct KrakenTentaclesChanceParams>
+    Type: TArray<struct NumTentacleInstancesToAssignToShip>
   - Name: GlobalPlayRateScale
     Offset: '0x60'
     Size: '0x4'
@@ -550,7 +550,7 @@ KrakenParams:
     Offset: '0x74'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: pad0x4_BZT5Y[0x4]
+  - Name: pad0x4_0LHJD[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -569,11 +569,11 @@ KrakenParams:
   - Name: ShipInteractingBehaviourWeights
     Offset: '0x138'
     Size: '0x10'
-    Type: TArray<Struct KrakenWeightedBehaviour>
+    Type: TArray<struct ShipInteractingBehaviourWeights>
   - Name: Behaviours
     Offset: '0x148'
     Size: '0x10'
-    Type: TArray<Struct KrakenBehaviourParams>
+    Type: TArray<struct Behaviours>
   - Name: DamageAmountToTriggerAudioComponentNotification
     Offset: '0x158'
     Size: '0x4'
@@ -592,7 +592,7 @@ KrakenPlayerGrabbingBehaviourParams:
   - Name: HoldingTransitionChances
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<Struct KrakenPlayerGrabbingHoldingStateTransitionChance>
+    Type: TArray<struct HoldingTransitionChances>
   - Name: MinTargetHoldingTime
     Offset: '0xd8'
     Size: '0x4'
@@ -612,7 +612,7 @@ KrakenPlayerGrabbingHoldingStateTransitionChance:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XIAF8[0x4]
+  - Name: pad0x4_RXEPS[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -638,7 +638,7 @@ KrakenServiceParams:
   - Name: KrakenParams
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct KrakenServiceShipParams>
+    Type: TArray<struct KrakenParams>
   ClassSize: '0x38'
 KrakenServiceShipParams:
   Attributes:
@@ -649,7 +649,7 @@ KrakenServiceShipParams:
   - Name: ValidShipTypes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Class ValidShipTypes>
+    Type: TArray<class Class*>
   - Name: KrakenParams
     Offset: '0x18'
     Size: '0x8'
@@ -669,7 +669,7 @@ KrakenServiceSpawnParams:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0NRID[0x4]
+  - Name: pad0x4_TEJ1C[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -684,7 +684,7 @@ KrakenShipHittingBehaviourImpactParams:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_FGKL1[0xc]
+  - Name: pad0xc_K5KMZ[0xc]
     Offset: '0x4'
     Size: '0xc'
     Type: char
@@ -704,7 +704,7 @@ KrakenShipHittingBehaviourImpactParams:
     Offset: '0x58'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_KC4I0[0x4]
+  - Name: pad0x4_TIZ97[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -739,14 +739,14 @@ KrakenShipHittingBehaviourParams:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1PGSJ[0x4]
+  - Name: pad0x4_H5DI5[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
   - Name: Configurations
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct KrakenShipHittingBehaviourImpactParams>
+    Type: TArray<struct Configurations>
   ClassSize: '0x60'
 KrakenShipHittingBehaviourParamsCollection:
   Attributes:
@@ -769,7 +769,7 @@ KrakenShipWrappingBehaviourDamageParams:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OE80M[0x4]
+  - Name: pad0x4_ZE8XB[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -814,7 +814,7 @@ KrakenShipWrappingBehaviourNamedTransform:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x8_AQW8M[0x8]
+  - Name: pad0x8_IM8LX[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -829,7 +829,7 @@ KrakenShipWrappingBehaviourParams:
     Offset: '0x0'
     Size: '0x8'
     Type: class
-  - Name: pad0x8_657OZ[0x8]
+  - Name: pad0x8_8OARX[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -889,11 +889,11 @@ KrakenShipWrappingBehaviourTentacleHeadLocations:
   - Name: Near
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct KrakenShipWrappingBehaviourNamedTransform>
+    Type: TArray<struct Near>
   - Name: Far
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Struct KrakenShipWrappingBehaviourNamedTransform>
+    Type: TArray<struct Far>
   ClassSize: '0x20'
 KrakenShipWrappingBehaviourTentacleHeadParams:
   Attributes:
@@ -936,7 +936,7 @@ KrakenShipWrappingBehaviourWarningParams:
     Offset: '0xc'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: pad0x4_VNL63[0x4]
+  - Name: pad0x4_EQAQN[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -947,7 +947,7 @@ KrakenShipWrappingBehaviourWarningParams:
   - Name: TentacleLocations
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct KrakenShipWrappingBehaviourNamedTransform>
+    Type: TArray<struct TentacleLocations>
   - Name: TentacleTimeout
     Offset: '0x60'
     Size: '0x4'
@@ -956,7 +956,7 @@ KrakenShipWrappingBehaviourWarningParams:
     Offset: '0x64'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_5K86Z[0x8]
+  - Name: pad0x8_ELC04[0x8]
     Offset: '0x68'
     Size: '0x8'
     Type: char
@@ -975,7 +975,7 @@ KrakenShipWrappingBehaviourWrapLocationParams:
     Offset: '0x8'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0xc_F1D0L[0xc]
+  - Name: pad0xc_I17II[0xc]
     Offset: '0x14'
     Size: '0xc'
     Type: char
@@ -1002,7 +1002,7 @@ KrakenShipWrappingBehaviourWrapLocationWeightedParams:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_6EUZ7[0xc]
+  - Name: pad0xc_7L9IC[0xc]
     Offset: '0x4'
     Size: '0xc'
     Type: char
@@ -1021,7 +1021,7 @@ KrakenShipWrappingBehaviourWrapParams:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_B4MQI[0x4]
+  - Name: pad0x4_CSBIA[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -1032,12 +1032,12 @@ KrakenShipWrappingBehaviourWrapParams:
   - Name: WrapLocations
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Struct KrakenShipWrappingBehaviourWrapLocationWeightedParams>
+    Type: TArray<struct WrapLocations>
   - Name: WrapTimeBeforeGivingUp
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_7FUPR[0xc]
+  - Name: pad0xc_95AYC[0xc]
     Offset: '0x54'
     Size: '0xc'
     Type: char
@@ -1087,7 +1087,7 @@ KrakenShipWrappingTentacleAnimationState:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_MBTOF[0x3]
+  - Name: pad0x3_FKFBQ[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -1102,7 +1102,7 @@ KrakenShipWrappingTentacleAnimationStateParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_8P0GD[0x3]
+  - Name: pad0x3_WOXXV[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -1153,7 +1153,7 @@ KrakenShipWrappingTentacleParams:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XJ040[0x4]
+  - Name: pad0x4_YH56L[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -1206,7 +1206,7 @@ KrakenTentacleBehaviourActionChances:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_TWFCU[0x3]
+  - Name: pad0x3_941W3[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -1225,7 +1225,7 @@ KrakenTentacleBehaviourParams:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_V7RC6[0x4]
+  - Name: pad0x4_2IM9Y[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -1277,14 +1277,14 @@ KrakenTentacleBehaviourParams:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TGS8H[0x4]
+  - Name: pad0x4_S1EXD[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
   - Name: OnDamageActionChances
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Struct KrakenTentacleBehaviourActionChances>
+    Type: TArray<struct OnDamageActionChances>
   - Name: TimeToSpendInInactiveState
     Offset: '0x60'
     Size: '0x30'
@@ -1330,7 +1330,7 @@ KrakenTentaclesChanceParams:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1LO7R[0x4]
+  - Name: pad0x4_QAG6N[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

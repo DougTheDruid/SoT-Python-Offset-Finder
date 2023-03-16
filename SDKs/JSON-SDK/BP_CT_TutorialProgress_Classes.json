@@ -12,9 +12,9 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x183_NEAHJ[0x183]",
+        "Name": "pad0x222_5VKMS[0x222]",
         "Type": "char",
-        "Size": "0x183",
+        "Size": "0x222",
         "Offset": "0x30"
       },
       {

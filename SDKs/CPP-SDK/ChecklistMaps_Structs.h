@@ -12,7 +12,7 @@ struct ChecklistItem
 public:
 	Struct FText                                                 Description;                                       // 0x0(0x38)
 	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
-	char                                                         pad0x4_ITUGK[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_H88W1[0x4];                                 // 0x3c(0x4)
 	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
 };
 
@@ -32,7 +32,7 @@ struct ChecklistMapContents
 public:
 	Struct TreasureMapTextDesc                                   Title;                                             // 0x0(0x48)
 	Struct TreasureMapTextDesc                                   Description;                                       // 0x48(0x48)
-	TArray<Struct ChecklistMapItemData>                          ChecklistItems;                                    // 0x90(0x10)
+	TArray<struct ChecklistItems>                                ChecklistItems;                                    // 0x90(0x10)
 	Struct TreasureMapTextDesc                                   Afternote;                                         // 0xa0(0x48)
 };
 
@@ -67,7 +67,7 @@ struct ChecklistItemCompletedTelemetryEvent
 public:
 	Struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
 	byte                                                         ReceivedActionType;                                // 0x10(0x1)
-	char                                                         pad0x7_0U9YE[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_DO0JT[0x7];                                 // 0x11(0x7)
 	Struct FString                                               ActionDescryption;                                 // 0x18(0x10)
 };
 

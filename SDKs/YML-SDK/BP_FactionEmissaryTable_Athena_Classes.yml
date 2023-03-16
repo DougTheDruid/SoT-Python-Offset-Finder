@@ -6,102 +6,10 @@ BP_FactionEmissaryTable_Athena_C:
     Offset: '0x638'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: pad0x6bfa29_8VK8G[0x6bfa29]
     Offset: '0x640'
-    Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: None
-    Offset: '0x648'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x650'
-    Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: None
-    Offset: '0x658'
-    Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: None
-    Offset: '0x660'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x668'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
-    Offset: '0x670'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
-    Offset: '0x678'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x680'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x688'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
-    Offset: '0x690'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
-    Offset: '0x698'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
-    Offset: '0x6a0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6a8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6b0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6b8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6c0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6c8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6d0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x6d8'
-    Size: '0x8'
-    Type: Class EmissaryShipAffiliationTrackerComponent*
-  - Name: None
-    Offset: '0x6e0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6e8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6f0'
-    Size: '0x8'
-    Type: Class StaticMesh*
-  - Name: None
-    Offset: '0x6f8'
-    Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Size: '0x6bfa29'
+    Type: char
   ClassSize: '0xc8'
   FullSize: '0x700'
   InheritedSize: '0x638'

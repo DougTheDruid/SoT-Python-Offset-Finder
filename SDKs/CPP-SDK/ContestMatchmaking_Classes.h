@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class ContestMatchmakingFactionMapping: public Object
 {
 public:
-	TArray<Struct ContestMatchmakingFactionMapEntry>             Factions;                                          // 0x28(0x10)
+	TArray<struct Factions>                                      Factions;                                          // 0x28(0x10)
 };
 
 

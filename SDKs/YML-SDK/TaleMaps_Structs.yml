@@ -12,7 +12,7 @@ TaleQuestChecklistItem:
   - Name: ChecklistActions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct ChecklistActionProgressTracker>
+    Type: TArray<struct ChecklistActions>
   ClassSize: '0x50'
 TaleQuestVariableMapMarkType:
   Attributes: []

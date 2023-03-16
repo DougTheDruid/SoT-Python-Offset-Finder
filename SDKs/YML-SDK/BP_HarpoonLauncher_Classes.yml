@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_HarpoonLauncher_C:
   Attributes:
-  - Name: CubeNotWalkable
-    Offset: '0xc20'
+  - Name: None
+    Offset: '0xc30'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: MountCollision
-    Offset: '0xc28'
+  - Name: None
+    Offset: '0xc38'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: BarrelCollision
-    Offset: '0xc30'
+  - Name: None
+    Offset: '0xc40'
     Size: '0x8'
     Type: Class CapsuleComponent*
   ClassSize: '0x18'
-  FullSize: '0xc38'
-  InheritedSize: '0xc20'
+  FullSize: '0xc48'
+  InheritedSize: '0xc30'
   Super: HarpoonLauncher

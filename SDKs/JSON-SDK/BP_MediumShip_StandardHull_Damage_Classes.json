@@ -1,49 +1,13 @@
 {
   "BP_MediumShip_StandardHull_Damage_C": {
     "Super": "None",
-    "FullSize": "0x6a8",
-    "InheritedSize": "0x608",
+    "FullSize": "0x6d8",
+    "InheritedSize": "0x638",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "None",
         "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x610"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x618"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x620"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x628"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x630"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
@@ -121,9 +85,45 @@
       },
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d0"
       }
     ]
   },

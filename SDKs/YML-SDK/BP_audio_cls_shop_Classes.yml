@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_audio_cls_shop_C:
   Attributes:
-  - Name: Triton
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class TritonComponent*
-  - Name: AudioPortal
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: AudioSpace
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class AudioSpaceComponent*
-  - Name: Scene
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*

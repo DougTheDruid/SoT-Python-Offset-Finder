@@ -19,7 +19,7 @@ SocketPath:
   - Name: Nodes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Struct SocketPathNode>
+    Type: TArray<struct Nodes>
   ClassSize: '0x18'
 SocketPathNode:
   Attributes:

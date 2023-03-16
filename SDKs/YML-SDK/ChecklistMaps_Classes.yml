@@ -10,7 +10,7 @@ ChecklistActionData:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_NL240[0x5]
+  - Name: pad0x5_U1J3D[0x5]
     Offset: '0x2b'
     Size: '0x5'
     Type: char
@@ -23,7 +23,7 @@ ChecklistItemsDataAsset:
   - Name: ChecklistItems
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Struct ChecklistItem>
+    Type: TArray<struct ChecklistItems>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -50,7 +50,7 @@ ChecklistMap:
     Offset: '0x7fc'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_8NVH2[0x8]
+  - Name: pad0x8_6AHEI[0x8]
     Offset: '0x800'
     Size: '0x8'
     Type: char
@@ -62,7 +62,7 @@ ChecklistMap:
     Offset: '0x810'
     Size: '0xe8'
     Type: Struct ChecklistMapContents
-  - Name: pad0x218_7AAKK[0x218]
+  - Name: pad0x218_YAFEI[0x218]
     Offset: '0x8f6'
     Size: '0x218'
     Type: char
@@ -82,7 +82,7 @@ ChecklistMapCompletionComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class ChecklistActionData*
-  - Name: pad0x80_PVQHP[0x80]
+  - Name: pad0x80_OWQVW[0x80]
     Offset: '0xce'
     Size: '0x80'
     Type: char
@@ -99,7 +99,7 @@ ChecklistMapSettings:
   - Name: ChecklistEvents
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Struct FName>
+    Type: TArray<struct FName>
   ClassSize: '0x20'
   FullSize: '0x58'
   InheritedSize: '0x38'
@@ -109,11 +109,11 @@ DeliverBootyChecklistActionData:
   - Name: TargetBootyTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<AssetClass TargetBootyTypes>
+    Type: TArray<Assetclass TargetBootyTypes>
   - Name: TargetCompanies
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Class TargetCompanies>
+    Type: TArray<class Class*>
   ClassSize: '0x20'
   FullSize: '0x50'
   InheritedSize: '0x30'
@@ -123,7 +123,7 @@ KillActorChecklistActionData:
   - Name: TargetAIClasses
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Class TargetAIClasses>
+    Type: TArray<class Class*>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'
@@ -133,7 +133,7 @@ NPCInteractionChecklistActionData:
   - Name: TargetNPCIds
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Struct Guid>
+    Type: TArray<struct TargetNPCIds>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'

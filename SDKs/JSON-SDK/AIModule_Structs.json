@@ -43,7 +43,7 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0xc_XIHBJ[0xc]",
+        "Name": "pad0xc_GSKOP[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x2c"
@@ -117,7 +117,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_01DZN[0x3]",
+        "Name": "pad0x3_9TT15[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
@@ -274,7 +274,7 @@
       },
       {
         "Name": "LastSensedStimuli",
-        "Type": "TArray<Struct AIStimulus>",
+        "Type": "TArray<struct LastSensedStimuli>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -308,7 +308,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_Y4A7J[0x4]",
+        "Name": "pad0x4_ERIBC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -453,7 +453,7 @@
       },
       {
         "Name": "DecoratorOps",
-        "Type": "TArray<Struct BTDecoratorLogic>",
+        "Type": "TArray<struct DecoratorOps>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -469,7 +469,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x1_JJAVX[0x1]",
+        "Name": "pad0x1_FPK6A[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x1"
@@ -530,7 +530,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_DVOEA[0x3]",
+        "Name": "pad0x3_HAONU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -595,7 +595,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x14_SNAIO[0x14]",
+        "Name": "pad0x14_4CTIF[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x18"
@@ -624,7 +624,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_C6A9H[0x4]",
+        "Name": "pad0x4_JZANR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -738,7 +738,7 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0x3_JS4HT[0x3]",
+        "Name": "pad0x3_5I9ZQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x35"
@@ -802,7 +802,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_IJQ2H[0x3]",
+        "Name": "pad0x3_4XGT5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"

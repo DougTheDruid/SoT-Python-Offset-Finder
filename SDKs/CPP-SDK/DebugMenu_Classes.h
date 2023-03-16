@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class DebugMenuComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_7KT1I[0x28];                               // 0xc8(0x28)
+	char                                                         pad0x28_AASMF[0x28];                               // 0xc8(0x28)
 	Class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
-	char                                                         pad0x30_JMKWM[0x30];                               // 0xf6(0x30)
+	char                                                         pad0x30_P8CNY[0x30];                               // 0xf6(0x30)
 };
 
 
@@ -28,8 +28,8 @@ class DebugMenuDataAsset: public DataAsset
 {
 public:
 	TArray<class DebugMenuDataAsset*>                            DataAssets;                                        // 0x28(0x10)
-	TArray<Struct DebugMenuDataAssetEntry>                       MenuEntires;                                       // 0x38(0x10)
-	TArray<Struct DebugMenuButtonShortcut>                       ButtonShortcuts;                                   // 0x48(0x10)
+	TArray<struct MenuEntires>                                   MenuEntires;                                       // 0x38(0x10)
+	TArray<struct ButtonShortcuts>                               ButtonShortcuts;                                   // 0x48(0x10)
 	TArray<class DebugMenuEntryGenerator*>                       MenuEntryGenerators;                               // 0x58(0x10)
 };
 

@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class wsp_light_large_pot_C: public StaticMeshActor
 {
 public:
-	Class SpotLightComponent*                                    SpotLight;                                         // 0x3d8(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x3e0(0x8)
+	Class SpotLightComponent*                                    None;                                              // 0x3d8(0x8)
+	Class ParticleSystemComponent*                               None;                                              // 0x3e0(0x8)
 };
 
 

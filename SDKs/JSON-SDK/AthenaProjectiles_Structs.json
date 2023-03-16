@@ -9,14 +9,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_A71XF[0x4]",
+        "Name": "pad0x4_I6IH7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Projectiles",
-        "Type": "TArray<Class Projectiles>",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -32,7 +32,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_J1F7Z[0x3]",
+        "Name": "pad0x3_SG0DE[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"

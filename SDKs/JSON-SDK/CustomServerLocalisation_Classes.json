@@ -13,19 +13,19 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x8_NF6OP[0x8]",
+        "Name": "pad0x8_V17KC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "LocalisationData",
-        "Type": "TArray<Struct CustomServerLocalisationData>",
+        "Type": "TArray<struct LocalisationData>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0xa0_NWY5Q[0xa0]",
+        "Name": "pad0xa0_QPMIH[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x3de"

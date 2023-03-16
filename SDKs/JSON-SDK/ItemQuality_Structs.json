@@ -27,7 +27,7 @@
       },
       {
         "Name": "QualityData",
-        "Type": "TArray<Struct ComplexItemQualityEntry>",
+        "Type": "TArray<struct QualityData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -73,7 +73,7 @@
         "Offset": "0x5"
       },
       {
-        "Name": "pad0x2_4EJ3W[0x2]",
+        "Name": "pad0x2_C8P3D[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x6"

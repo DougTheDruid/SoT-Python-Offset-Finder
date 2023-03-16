@@ -13,12 +13,12 @@ LiquidContainerComponent:
   - Name: LiquidTypeParams
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<Struct LiquidTypeParams>
+    Type: TArray<struct LiquidTypeParams>
   - Name: StartingLiquidLevelNormalised
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JC36A[0x4]
+  - Name: pad0x4_PALWK[0x4]
     Offset: '0xec'
     Size: '0x4'
     Type: char
@@ -38,7 +38,7 @@ LiquidContainerComponent:
     Offset: '0x100'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: pad0x38_11VQ5[0x38]
+  - Name: pad0x38_1RN3O[0x38]
     Offset: '0x10e'
     Size: '0x38'
     Type: char

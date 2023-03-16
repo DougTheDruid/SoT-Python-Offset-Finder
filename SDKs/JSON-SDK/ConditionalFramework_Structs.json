@@ -55,7 +55,7 @@
     "Attributes": [
       {
         "Name": "Conditions",
-        "Type": "TArray<Struct ConditionInstance>",
+        "Type": "TArray<struct Conditions>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -110,7 +110,7 @@
     "Attributes": [
       {
         "Name": "TargetObjectClasses",
-        "Type": "TArray<AssetClass TargetObjectClasses>",
+        "Type": "TArray<Assetclass TargetObjectClasses>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -132,7 +132,7 @@
     "Attributes": [
       {
         "Name": "Conditions",
-        "Type": "TArray<Struct ConditionInstance>",
+        "Type": "TArray<struct Conditions>",
         "Size": "0x10",
         "Offset": "0x8"
       }

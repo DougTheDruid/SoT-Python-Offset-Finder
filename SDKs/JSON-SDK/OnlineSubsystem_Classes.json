@@ -33,18 +33,18 @@
     "Attributes": [
       {
         "Name": "NamedInterfaces",
-        "Type": "TArray<Struct NamedInterface>",
+        "Type": "TArray<struct NamedInterfaces>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "NamedInterfaceDefs",
-        "Type": "TArray<Struct NamedInterfaceDef>",
+        "Type": "TArray<struct NamedInterfaceDefs>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x38_K04JF[0x38]",
+        "Name": "pad0x38_VO1PE[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x46"
