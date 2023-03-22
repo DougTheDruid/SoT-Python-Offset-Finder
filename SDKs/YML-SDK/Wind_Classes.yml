@@ -20,7 +20,7 @@ MockWindService:
   Super: Object
 TestWindInterface:
   Attributes:
-  - Name: pad0x30_O85MB[0x30]
+  - Name: pad0x30_7F349[0x30]
     Offset: '0x28'
     Size: '0x30'
     Type: char
@@ -58,7 +58,7 @@ WindInterface:
   Super: Interface
 WindService:
   Attributes:
-  - Name: pad0x10_IJYTT[0x10]
+  - Name: pad0x10_4CQZS[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -66,7 +66,7 @@ WindService:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class WindDirectionalSource*
-  - Name: pad0x10_6O9D7[0x10]
+  - Name: pad0x10_0KRN0[0x10]
     Offset: '0x3e0'
     Size: '0x10'
     Type: char
@@ -78,7 +78,7 @@ WindService:
     Offset: '0x3f4'
     Size: '0x4'
     Type: float
-  - Name: pad0xe8_KIWGE[0xe8]
+  - Name: pad0xe8_82QHN[0xe8]
     Offset: '0x3f8'
     Size: '0xe8'
     Type: char
@@ -102,7 +102,7 @@ WindServiceParamsFunctionLibrary:
   Super: BlueprintFunctionLibrary
 WindZoneComponent:
   Attributes:
-  - Name: pad0x8_BDK6J[0x8]
+  - Name: pad0x8_H9WEE[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -114,9 +114,9 @@ WindZoneComponent:
     Offset: '0x358'
     Size: '0x10'
     Type: Struct WindZoneParams
-  - Name: pad0x28_SJY5J[0x28]
-    Offset: '0x366'
-    Size: '0x28'
+  - Name: pad0x8_6K1AJ[0x8]
+    Offset: '0x368'
+    Size: '0x8'
     Type: char
   ClassSize: '0x90'
   FullSize: '0x370'

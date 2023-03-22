@@ -28,9 +28,9 @@ NamedInterfaces:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<struct NamedInterfaceDefs>
-  - Name: pad0x38_VO1PE[0x38]
-    Offset: '0x46'
-    Size: '0x38'
+  - Name: pad0x18_YJIBF[0x18]
+    Offset: '0x48'
+    Size: '0x18'
     Type: char
   ClassSize: '0x38'
   FullSize: '0x60'

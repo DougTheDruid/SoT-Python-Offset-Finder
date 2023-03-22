@@ -11,7 +11,7 @@ struct CleanlinessInfo
 {
 public:
 	byte                                                         DirtinessType;                                     // 0x0(0x1)
-	char                                                         pad0x3_NN97G[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_YH62F[0x3];                                 // 0x1(0x3)
 	float                                                        Strength;                                          // 0x4(0x4)
 	bool                                                         QuickClean;                                        // 0x8(0x1)
 };

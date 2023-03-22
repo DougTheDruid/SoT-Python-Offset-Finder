@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 wld_shp_rocks_cluster_03_C:
   Attributes:
-  - Name: pad0x7cccd0d5_X19P2[0x7cccd0d5]
-    Offset: '-0x7ccccccd'
-    Size: '0x7cccd0d5'
-    Type: char
   - Name: None
     Offset: '0x408'
     Size: '0x8'
@@ -38,7 +34,7 @@ wld_shp_rocks_cluster_03_C:
     Offset: '0x440'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x7cccd115'
+  ClassSize: '0x40'
   FullSize: '0x448'
-  InheritedSize: '-0x7ccccccd'
-  Super: ''
+  InheritedSize: '0x408'
+  Super: None

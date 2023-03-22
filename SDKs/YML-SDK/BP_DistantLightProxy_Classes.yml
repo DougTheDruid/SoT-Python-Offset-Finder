@@ -6,10 +6,18 @@ BP_DistantLightProxy_C:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x30_DD3KQ[0x30]
-    Offset: '0x3ce'
-    Size: '0x30'
-    Type: char
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class InstancedStaticMeshComponent*
+  - Name: None
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: None
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<struct None>
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'

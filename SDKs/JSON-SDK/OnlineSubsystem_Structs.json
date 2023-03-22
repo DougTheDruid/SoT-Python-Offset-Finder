@@ -97,7 +97,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_II6IH[0x3]",
+        "Name": "pad0x3_1FGLO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -190,7 +190,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_EFR81[0x7]",
+        "Name": "pad0x7_8IOA2[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x51"

@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 cmn_candle_group_03_C:
   Attributes:
-  - Name: None
+  - Name: ParticleSystemComponent0
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: StaticMeshComponent0
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*

@@ -18,12 +18,7 @@ public:
 	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x448(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x450(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x458(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x460(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x468(0x8)
-	Class SceneComponent*                                        None;                                              // 0x470(0x8)
+	char                                                         pad0x30_K8UD1[0x30];                               // 0x448(0x30)
 };
 
 

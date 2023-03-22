@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_VFXStoryResponseManager_GoldenSands_C: public VfxStoryResponseManager
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x400(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x400(0x8)
 };
 
 

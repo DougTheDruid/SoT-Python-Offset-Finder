@@ -2,55 +2,55 @@
 # https://github.com/DougTheDruid
 BP_CylinderLightingZone_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: InnerCapsule
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: OuterCapsule
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: LightingZone
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class LightingZoneComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: Outer Radius
+  - Name: None
     Offset: '0x3f0'
     Size: '0x4'
     Type: float
-  - Name: Outer Half Height
+  - Name: None
     Offset: '0x3f4'
     Size: '0x4'
     Type: float
-  - Name: Inner Radius
+  - Name: None
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: Inner Half Height
+  - Name: None
     Offset: '0x3fc'
     Size: '0x4'
     Type: float
-  - Name: Weight
+  - Name: None
     Offset: '0x400'
     Size: '0x4'
     Type: float
-  - Name: Priority Layer
+  - Name: None
     Offset: '0x404'
     Size: '0x4'
     Type: int
-  - Name: Lighting Set
+  - Name: None
     Offset: '0x408'
     Size: '0x4'
     Type: int
-  - Name: IsUnderwaterZone
+  - Name: None
     Offset: '0x40c'
     Size: '0x1'
     Type: bool

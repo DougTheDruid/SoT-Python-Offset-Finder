@@ -2,167 +2,167 @@
 # https://github.com/DougTheDruid
 BP_FishCreature_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: CreatureType
+  - Name: None
     Offset: '0x3d0'
     Size: '0x1'
     Type: byte
-  - Name: NumOfCreatures
+  - Name: None
     Offset: '0x3d1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_3U276[0x2]
+  - Name: pad0x2_SICHV[0x2]
     Offset: '0x3d2'
     Size: '0x2'
     Type: char
-  - Name: BoundsBias
+  - Name: None
     Offset: '0x3d4'
     Size: '0x4'
     Type: float
-  - Name: StaticMeshComponent
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: currMaterial
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: MaterialInstance
+  - Name: None
     Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: Seed
+  - Name: None
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: SwimSpeed
+  - Name: None
     Offset: '0x3fc'
     Size: '0x4'
     Type: float
-  - Name: circlingSpeed
+  - Name: None
     Offset: '0x400'
     Size: '0x4'
     Type: float
-  - Name: CirclingDirection
+  - Name: None
     Offset: '0x404'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_PPWFR[0x3]
+  - Name: pad0x3_328NB[0x3]
     Offset: '0x405'
     Size: '0x3'
     Type: char
-  - Name: CirclingRadius
+  - Name: None
     Offset: '0x408'
     Size: '0x4'
     Type: float
-  - Name: SwimDeformation
+  - Name: None
     Offset: '0x40c'
     Size: '0x4'
     Type: float
-  - Name: mud
+  - Name: None
     Offset: '0x410'
     Size: '0x4'
     Type: float
-  - Name: ShoalSpeed
+  - Name: None
     Offset: '0x414'
     Size: '0x4'
     Type: float
-  - Name: ShoalingSpread
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: ShoalingHeight
+  - Name: None
     Offset: '0x420'
     Size: '0x4'
     Type: float
-  - Name: FishSpeed
+  - Name: None
     Offset: '0x424'
     Size: '0x4'
     Type: float
-  - Name: FishSpread
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: FishHeight
+  - Name: None
     Offset: '0x430'
     Size: '0x4'
     Type: float
-  - Name: RandomSpread
+  - Name: None
     Offset: '0x434'
     Size: '0x4'
     Type: float
-  - Name: HueVariance
+  - Name: None
     Offset: '0x438'
     Size: '0x4'
     Type: float
-  - Name: smoothness
+  - Name: None
     Offset: '0x43c'
     Size: '0x4'
     Type: float
-  - Name: SelectedCreatureType
+  - Name: None
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<Assetclass SelectedCreatureType>
-  - Name: Fish_04
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x450'
     Size: '0x10'
-    Type: TArray<Assetclass Fish_04>
-  - Name: Fish_05
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x460'
     Size: '0x10'
-    Type: TArray<Assetclass Fish_05>
-  - Name: Size
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x470'
     Size: '0x4'
     Type: float
-  - Name: SizeVariance
+  - Name: None
     Offset: '0x474'
     Size: '0x4'
     Type: float
-  - Name: SimSpeed
+  - Name: None
     Offset: '0x478'
     Size: '0x4'
     Type: float
-  - Name: BBox
+  - Name: None
     Offset: '0x47c'
     Size: '0xc'
     Type: Struct Vector
-  - Name: Fish_07
+  - Name: None
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<Assetclass Fish_07>
-  - Name: DrawDistance
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_EMKYL[0x4]
+  - Name: pad0x4_D2RRP[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
-  - Name: Clown_01
+  - Name: None
     Offset: '0x4a0'
     Size: '0x10'
-    Type: TArray<Assetclass Clown_01>
-  - Name: SizeCompensation
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x4b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0121D[0x4]
+  - Name: pad0x4_ZL97I[0x4]
     Offset: '0x4b4'
     Size: '0x4'
     Type: char
-  - Name: Splashtail
+  - Name: None
     Offset: '0x4b8'
     Size: '0x10'
-    Type: TArray<Assetclass Splashtail>
-  - Name: Pondie
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x4c8'
     Size: '0x10'
-    Type: TArray<Assetclass Pondie>
-  - Name: FishDistribution
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x4d8'
     Size: '0x10'
     Type: Struct LinearColor

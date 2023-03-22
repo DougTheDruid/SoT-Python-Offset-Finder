@@ -2,67 +2,67 @@
 # https://github.com/DougTheDruid
 BP_EmissaryTable_MerchantAlliance_01_C:
   Attributes:
-  - Name: PointLight1
+  - Name: None
     Offset: '0x638'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight
+  - Name: None
     Offset: '0x640'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ParticleSystem3
+  - Name: None
     Offset: '0x648'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: StaticMesh3
+  - Name: None
     Offset: '0x650'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: ParticleSystem2
+  - Name: None
     Offset: '0x658'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem1
+  - Name: None
     Offset: '0x660'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem
+  - Name: None
     Offset: '0x668'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: StaticMesh2
+  - Name: None
     Offset: '0x670'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh1
+  - Name: None
     Offset: '0x678'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x680'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: EmissaryShipAffiliationTracker
+  - Name: None
     Offset: '0x688'
     Size: '0x8'
     Type: Class EmissaryShipAffiliationTrackerComponent*
-  - Name: bld_shop_wood_box_03_a
+  - Name: None
     Offset: '0x690'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_shop_wood_box_01_a
+  - Name: None
     Offset: '0x698'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bld_emissary_table_dressing_mrh_01_a
+  - Name: None
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: con_cover_page_mrh_01_a
+  - Name: None
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x78'
   FullSize: '0x6b0'
   InheritedSize: '0x638'
-  Super: BP_EmissaryTable_01_C
+  Super: None

@@ -11,13 +11,13 @@ class BP_Prompt_EmissaryEntitlementPurchased_C: public BP_PromptCoordinator_Base
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x132_RAFAK[0x132];                             // 0x120(0x132)
+	char                                                         pad0x12b_UF66I[0x12b];                             // 0x120(0x12b)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryEntitlementPurchased;               // 0x120(0x48)
 	Struct Guid                                                  OfferId;                                           // 0x168(0x10)
 	Struct Guid                                                  ExpectedOfferId;                                   // 0x178(0x10)
 	TArray<struct Prompts>                                       Prompts;                                           // 0x188(0x10)
 	bool                                                         PromptSurfacedThisSession;                         // 0x198(0x1)
-	char                                                         pad0x7_QTU54[0x7];                                 // 0x199(0x7)
+	char                                                         pad0x7_34JX8[0x7];                                 // 0x199(0x7)
 	class                                                        PromptAccessKey;                                   // 0x1a0(0x8)
 	int                                                          PromptIndex;                                       // 0x1a8(0x4)
 	int                                                          NumberOfPrompts;                                   // 0x1ac(0x4)

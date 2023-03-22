@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_Skull_OoS_C:
   Attributes:
-  - Name: None
+  - Name: gmp_bounty_skull_01_b
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

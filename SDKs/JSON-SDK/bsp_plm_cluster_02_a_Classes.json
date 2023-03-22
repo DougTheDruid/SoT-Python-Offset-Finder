@@ -1,24 +1,24 @@
 {
   "bsp_plm_cluster_02_a_C": {
-    "Super": "None",
+    "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x420",
     "InheritedSize": "0x408",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "NonVagueNonUniqueLandmark",
         "Type": "Class NonVagueNonUniqueLandmarkComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "Scene",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x418"

@@ -12,7 +12,7 @@ class ChecklistActionData: public Object
 public:
 	int                                                          NumRequiredActions;                                // 0x28(0x4)
 	byte                                                         ActionType;                                        // 0x2c(0x1)
-	char                                                         pad0x5_U1J3D[0x5];                                 // 0x2b(0x5)
+	char                                                         pad0x3_GJA0Z[0x3];                                 // 0x2d(0x3)
 };
 
 
@@ -66,10 +66,10 @@ public:
 	Class Font*                                                  Font;                                              // 0x7f0(0x8)
 	float                                                        FontScale;                                         // 0x7f8(0x4)
 	float                                                        FontLineSpacingScale;                              // 0x7fc(0x4)
-	char                                                         pad0x8_6AHEI[0x8];                                 // 0x800(0x8)
+	char                                                         pad0x8_GZJ8W[0x8];                                 // 0x800(0x8)
 	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x808(0x8)
 	Struct ChecklistMapContents                                  Contents;                                          // 0x810(0xe8)
-	char                                                         pad0x218_YAFEI[0x218];                             // 0x8f6(0x218)
+	char                                                         pad0x48_NNDWF[0x48];                               // 0x8f8(0x48)
 };
 
 
@@ -85,7 +85,7 @@ class ChecklistMapCompletionComponent: public ActorComponent
 {
 public:
 	Class ChecklistActionData*                                   ActionData;                                        // 0xc8(0x8)
-	char                                                         pad0x80_OWQVW[0x80];                               // 0xce(0x80)
+	char                                                         pad0x70_1ZLBH[0x70];                               // 0xd0(0x70)
 };
 
 

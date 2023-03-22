@@ -15,7 +15,7 @@ public:
 	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
 	TArray<class MaterialInstanceDynamic*>                       None;                                              // 0x3e8(0x10)
 	float                                                        None;                                              // 0x3f8(0x4)
-	char                                                         pad0x4_854PM[0x4];                                 // 0x3fc(0x4)
+	char                                                         pad0x4_8ODG4[0x4];                                 // 0x3fc(0x4)
 	BlueprintGeneratedClass None*                                None;                                              // 0x400(0x8)
 	float                                                        None;                                              // 0x408(0x4)
 	bool                                                         None;                                              // 0x40c(0x1)

@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_FogVolume_Undersea_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: WorldFadeDistanceStart
+  - Name: None
     Offset: '0x3e0'
     Size: '0x4'
     Type: float
-  - Name: WorldFadeDistanceRange
+  - Name: None
     Offset: '0x3e4'
     Size: '0x4'
     Type: float
-  - Name: FogMaxDensity
+  - Name: None
     Offset: '0x3e8'
     Size: '0x4'
     Type: float

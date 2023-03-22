@@ -11,7 +11,7 @@ class ConsoleSettings: public Object
 {
 public:
 	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
-	char                                                         pad0x4_RUVD2[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_ERE0O[0x4];                                 // 0x2c(0x4)
 	TArray<struct ManualAutoCompleteList>                        ManualAutoCompleteList;                            // 0x30(0x10)
 	TArray<Str AutoCompleteMapPaths>                             AutoCompleteMapPaths;                              // 0x40(0x10)
 };
@@ -27,7 +27,7 @@ public:
 	bool                                                         bUseSplitscreen;                                   // 0x58(0x1)
 	byte                                                         TwoPlayerSplitscreenLayout;                        // 0x59(0x1)
 	byte                                                         ThreePlayerSplitscreenLayout;                      // 0x5a(0x1)
-	char                                                         pad0x5_CIUSK[0x5];                                 // 0x5b(0x5)
+	char                                                         pad0x5_PHWT0[0x5];                                 // 0x5b(0x5)
 	Struct StringClassReference                                  GameInstanceClass;                                 // 0x60(0x10)
 	Struct FString                                               GameDefaultMap;                                    // 0x70(0x10)
 	Struct FString                                               ServerDefaultMap;                                  // 0x80(0x10)
@@ -45,14 +45,14 @@ public:
 	int                                                          TotalNetBandwidth;                                 // 0x30(0x4)
 	int                                                          BadPingThreshold;                                  // 0x34(0x4)
 	bool                                                         bIsStandbyCheckingEnabled;                         // 0x38(0x1)
-	char                                                         pad0x3_DIYXW[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_01VUE[0x3];                                 // 0x39(0x3)
 	float                                                        StandbyRxCheatTime;                                // 0x3c(0x4)
 	float                                                        StandbyTxCheatTime;                                // 0x40(0x4)
 	float                                                        PercentMissingForRxStandby;                        // 0x44(0x4)
 	float                                                        PercentMissingForTxStandby;                        // 0x48(0x4)
 	float                                                        PercentForBadPing;                                 // 0x4c(0x4)
 	float                                                        JoinInProgressStandbyWaitTime;                     // 0x50(0x4)
-	char                                                         pad0xc_KPY4V[0xc];                                 // 0x52(0xc)
+	char                                                         pad0x4_XM65B[0x4];                                 // 0x54(0x4)
 };
 
 
@@ -63,7 +63,7 @@ public:
 	int                                                          MaxSpectators;                                     // 0x28(0x4)
 	int                                                          MaxPlayers;                                        // 0x2c(0x4)
 	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
-	char                                                         pad0x9_OOEUG[0x9];                                 // 0x2f(0x9)
+	char                                                         pad0x7_8MY68[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -98,7 +98,7 @@ class HudSettings: public Object
 {
 public:
 	bool                                                         bShowHUD;                                          // 0x28(0x1)
-	char                                                         pad0x7_B0W44[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_8J89F[0x7];                                 // 0x29(0x7)
 	TArray<struct FName>                                         DebugDisplay;                                      // 0x30(0x10)
 };
 

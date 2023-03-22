@@ -6,50 +6,10 @@ BP_SmallMapTable_C:
     Offset: '0x7a0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: pad0x4d_PWZ9R[0x4d]
     Offset: '0x7a8'
-    Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: None
-    Offset: '0x7b0'
-    Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
-    Offset: '0x7b8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7c0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7c8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7d0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7d8'
-    Size: '0x8'
-    Type: Class TextureFeedbackComponent*
-  - Name: None
-    Offset: '0x7e0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x7e8'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x7f0'
-    Size: '0x4'
-    Type: float
-  - Name: None
-    Offset: '0x7f4'
-    Size: '0x1'
-    Type: bool
+    Size: '0x4d'
+    Type: char
   ClassSize: '0x55'
   FullSize: '0x7f5'
   InheritedSize: '0x7a0'

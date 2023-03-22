@@ -1,210 +1,210 @@
 {
   "BP_LargeShip_StandardHull_Damage_C": {
-    "Super": "None",
+    "Super": "BP_HullDamage_C",
     "FullSize": "0x748",
     "InheritedSize": "0x638",
     "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "projectile_collision",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_09",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_08",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x678"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_07",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x680"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_06",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x688"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_05",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_04",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_03",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_02",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6a8"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Middle_01",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
       },
       {
-        "Name": "None",
+        "Name": "largeship_standardhull_upper_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6b8"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_09",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6c0"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_08",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6c8"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_07",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6d0"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_06",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x700"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x710"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_05",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x718"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_04",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x720"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_03",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x728"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_02",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x730"
       },
       {
-        "Name": "None",
+        "Name": "Damage_Zone_Lower_01",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x738"
       },
       {
-        "Name": "None",
+        "Name": "largeship_standardhull_lower_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x740"

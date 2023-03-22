@@ -40,10 +40,10 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x24_XDAQS[0x24]",
+        "Name": "pad0x1c_KCJR6[0x1c]",
         "Type": "char",
-        "Size": "0x24",
-        "Offset": "0xca"
+        "Size": "0x1c",
+        "Offset": "0xcc"
       }
     ]
   },

@@ -6,15 +6,15 @@ BP_Prompt_RepairShipCapstan_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x131_BKJYE[0x131]
+  - Name: pad0x12a_19Z9H[0x12a]
     Offset: '0x120'
-    Size: '0x131'
+    Size: '0x12a'
     Type: char
   - Name: State_CapstanDamaged
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_D9U0P[0x7]
+  - Name: pad0x7_1VMFR[0x7]
     Offset: '0x121'
     Size: '0x7'
     Type: char
@@ -26,7 +26,7 @@ BP_Prompt_RepairShipCapstan_C:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_N35IV[0x7]
+  - Name: pad0x7_CAR7H[0x7]
     Offset: '0x171'
     Size: '0x7'
     Type: char

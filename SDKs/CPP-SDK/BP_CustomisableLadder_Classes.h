@@ -17,7 +17,7 @@ public:
 	TArray<struct None>                                          None;                                              // 0x5f8(0x10)
 	TArray<struct None>                                          None;                                              // 0x608(0x10)
 	int                                                          None;                                              // 0x618(0x4)
-	char                                                         pad0x4_MXA8F[0x4];                                 // 0x61c(0x4)
+	char                                                         pad0x4_JGKYX[0x4];                                 // 0x61c(0x4)
 	Class MaterialInterface*                                     None;                                              // 0x620(0x8)
 	float                                                        None;                                              // 0x628(0x4)
 	Struct Vector                                                None;                                              // 0x62c(0xc)

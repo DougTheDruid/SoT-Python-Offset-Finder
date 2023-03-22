@@ -7,20 +7,20 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x58 (Full Size[0x460] - InheritedSize[0x408]
-class bsp_flower_cluster_01_b_C: public None
+class bsp_flower_cluster_01_b_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x448(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x450(0x8)
-	Class SceneComponent*                                        None;                                              // 0x458(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__b;                            // 0x408(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__e;                               // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__b;                               // 0x418(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__d;                               // 0x420(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_pebbles__c;                               // 0x428(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__d;                            // 0x430(0x8)
+	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c;                            // 0x438(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x440(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x448(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x450(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x458(0x8)
 };
 
 

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_tavern_WLD_01_b_C: public Actor
 {
 public:
-	None None*                                                   None;                                              // 0x3c8(0x8)
+	None *                                                       None;                                              // 0x3c8(0x8)
 	Class ChildActorComponent*                                   None;                                              // 0x3d0(0x8)
 	Class SpotLightComponent*                                    None;                                              // 0x3d8(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x3e0(0x8)

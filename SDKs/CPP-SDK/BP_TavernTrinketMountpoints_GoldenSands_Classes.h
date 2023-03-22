@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_TavernTrinketMountpoints_GoldenSands_C: public Actor
 {
 public:
-	Class TrinketLoadoutComponent*                               None;                                              // 0x3c8(0x8)
-	Class TrinketMountpointManagerComponent*                     None;                                              // 0x3d0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
+	Class TrinketLoadoutComponent*                               TrinketLoadout;                                    // 0x3c8(0x8)
+	Class TrinketMountpointManagerComponent*                     BasicTrinketMountpointManager;                     // 0x3d0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
 };
 
 

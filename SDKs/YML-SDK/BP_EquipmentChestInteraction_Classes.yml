@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_EquipmentChestInteraction_C:
   Attributes:
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x490'
     Size: '0x8'
     Type: Class SceneComponent*

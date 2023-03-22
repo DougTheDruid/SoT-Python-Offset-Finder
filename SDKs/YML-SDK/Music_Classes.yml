@@ -18,9 +18,9 @@ AISpawnerMusicZoneComponent:
     Offset: '0x3c0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x11_V4AFH[0x11]
-    Offset: '0x3bf'
-    Size: '0x11'
+  - Name: pad0xf_CWQD8[0xf]
+    Offset: '0x3c1'
+    Size: '0xf'
     Type: char
   ClassSize: '0x30'
   FullSize: '0x3d0'
@@ -28,7 +28,7 @@ AISpawnerMusicZoneComponent:
   Super: MusicZoneComponent
 MusicZoneComponent:
   Attributes:
-  - Name: pad0x8_XILK5[0x8]
+  - Name: pad0x8_SY16Q[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -48,7 +48,7 @@ MusicZoneComponent:
     Offset: '0x2f8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_IC8R6[0x7]
+  - Name: pad0x7_JFL8W[0x7]
     Offset: '0x2f9'
     Size: '0x7'
     Type: char
@@ -76,13 +76,13 @@ MusicZoneComponent:
     Offset: '0x329'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_2OOT6[0x6]
+  - Name: pad0x6_F1FS6[0x6]
     Offset: '0x32a'
     Size: '0x6'
     Type: char
-  - Name: pad0x7c_RG5KA[0x7c]
-    Offset: '0x32e'
-    Size: '0x7c'
+  - Name: pad0x70_OCZ3P[0x70]
+    Offset: '0x330'
+    Size: '0x70'
     Type: char
   ClassSize: '0xc0'
   FullSize: '0x3a0'
@@ -116,9 +116,9 @@ SynchedMusicZoneComponent:
     Offset: '0x3a4'
     Size: '0x4'
     Type: int
-  - Name: pad0x30_9D8WC[0x30]
-    Offset: '0x3a6'
-    Size: '0x30'
+  - Name: pad0x28_K9V0U[0x28]
+    Offset: '0x3a8'
+    Size: '0x28'
     Type: char
   ClassSize: '0x30'
   FullSize: '0x3d0'

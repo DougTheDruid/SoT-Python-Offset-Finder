@@ -95,7 +95,7 @@ FireCellDesc:
     Offset: '0x36'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_Y0H0R[0x1]
+  - Name: pad0x1_LWXTN[0x1]
     Offset: '0x37'
     Size: '0x1'
     Type: char
@@ -111,7 +111,7 @@ FireCellDesc:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xf_TKQI2[0xf]
+  - Name: pad0xf_M60TX[0xf]
     Offset: '0x41'
     Size: '0xf'
     Type: char
@@ -157,7 +157,7 @@ FireCellStateParticleTemplate:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_PSUU8[0x4]
+  - Name: pad0x4_O0U2U[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -185,7 +185,7 @@ FireCellStateParticleTemplate:
     Offset: '0x2d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_L85KB[0x2]
+  - Name: pad0x2_O1F9G[0x2]
     Offset: '0x2e'
     Size: '0x2'
     Type: char
@@ -251,7 +251,7 @@ FireDefaultVFXSpawnData:
     Offset: '0x0'
     Size: '0x38'
     Type: Struct FireCellStateParticleTemplate
-  - Name: pad0x8_S540R[0x8]
+  - Name: pad0x8_ET919[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
@@ -293,7 +293,7 @@ FireGridCellSelection:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_IUHIV[0x2]
+  - Name: pad0x2_VC9GR[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -335,7 +335,7 @@ FireGridCharringManager:
     Offset: '0x10'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_RR6WI[0x4]
+  - Name: pad0x4_91Y2Y[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -475,7 +475,7 @@ FireParticleSystem:
     Offset: '0x0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: pad0x8_F0CI4[0x8]
+  - Name: pad0x8_RIR07[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -525,7 +525,7 @@ ReplicatedFireCellCharringData:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_H8WX1[0x4]
+  - Name: pad0x4_NGF8T[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -613,7 +613,7 @@ ShipFireLightManager:
     Offset: '0x110'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2I8EZ[0x4]
+  - Name: pad0x4_ZYRZW[0x4]
     Offset: '0x114'
     Size: '0x4'
     Type: char
@@ -651,7 +651,7 @@ ShipFireLightRelativeSpawnDesc:
     Offset: '0x30'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_AQKJP[0x4]
+  - Name: pad0x4_CVFGM[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char

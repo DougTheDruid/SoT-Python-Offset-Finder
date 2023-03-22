@@ -1,12 +1,12 @@
 {
   "BP_TunnelOfTheDamnedPortal_WSP_C": {
-    "Super": "None",
+    "Super": "BP_TunnelOfTheDamnedPortal_Ship_C",
     "FullSize": "0x668",
     "InheritedSize": "0x660",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "PortalEffects",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x660"

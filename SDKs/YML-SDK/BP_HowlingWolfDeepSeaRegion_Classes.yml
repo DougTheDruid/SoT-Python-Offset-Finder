@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_HowlingWolfDeepSeaRegion_C:
   Attributes:
-  - Name: PreviewCapsuleTwo
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: PreviewCapsuleOne
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class CapsuleComponent*

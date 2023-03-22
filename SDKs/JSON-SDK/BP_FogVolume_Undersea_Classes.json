@@ -6,25 +6,25 @@
     "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "WorldFadeDistanceStart",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e0"
       },
       {
-        "Name": "WorldFadeDistanceRange",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e4"
       },
       {
-        "Name": "FogMaxDensity",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e8"

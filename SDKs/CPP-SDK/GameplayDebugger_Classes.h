@@ -12,7 +12,7 @@ class GameplayDebuggingComponent: public PrimitiveComponent
 public:
 	Struct FString                                               DebugComponentClassName;                           // 0x5c0(0x10)
 	int                                                          ShowExtendedInformatiomCounter;                    // 0x5d0(0x4)
-	char                                                         pad0x4_JVOT2[0x4];                                 // 0x5d4(0x4)
+	char                                                         pad0x4_MD85C[0x4];                                 // 0x5d4(0x4)
 	TArray<Int ReplicateViewDataCounters>                        ReplicateViewDataCounters;                         // 0x5d8(0x10)
 	Struct FString                                               ControllerName;                                    // 0x5e8(0x10)
 	Struct FString                                               PawnName;                                          // 0x5f8(0x10)
@@ -31,10 +31,10 @@ public:
 	Struct FString                                               BrainComponentName;                                // 0x6c8(0x10)
 	Struct FString                                               BrainComponentString;                              // 0x6d8(0x10)
 	TArray<Byte BlackboardRepData>                               BlackboardRepData;                                 // 0x6e8(0x10)
-	char                                                         pad0x10_UIRZJ[0x10];                               // 0x6f8(0x10)
+	char                                                         pad0x10_5J2K9[0x10];                               // 0x6f8(0x10)
 	TArray<struct PathPoints>                                    PathPoints;                                        // 0x708(0x10)
 	TArray<Byte PathCorridorData>                                PathCorridorData;                                  // 0x718(0x10)
-	char                                                         pad0x10_UIAEU[0x10];                               // 0x728(0x10)
+	char                                                         pad0x10_YNHPT[0x10];                               // 0x728(0x10)
 	TArray<Byte NavmeshRepData>                                  NavmeshRepData;                                    // 0x738(0x10)
 	TArray<Byte EQSRepData>                                      EQSRepData;                                        // 0x748(0x10)
 	Struct Vector                                                SensingComponentLocation;                          // 0x758(0xc)
@@ -43,9 +43,9 @@ public:
 	bool                                                         bIsUsingCharacter;                                 // 0x768(0x1)
 	bool                                                         bIsUsingBehaviorTree;                              // 0x768(0x1)
 	bool                                                         bIsUsingAbilities;                                 // 0x768(0x1)
-	char                                                         pad0x7_MI9F7[0x7];                                 // 0x769(0x7)
+	char                                                         pad0x7_SXRM1[0x7];                                 // 0x769(0x7)
 	Class Actor*                                                 TargetActor;                                       // 0x770(0x8)
-	char                                                         pad0x88_9W57K[0x88];                               // 0x776(0x88)
+	char                                                         pad0x78_I3ZQX[0x78];                               // 0x778(0x78)
 };
 
 
@@ -59,7 +59,7 @@ public:
 	float                                                        DebugInfoStartY;                                   // 0x3d4(0x4)
 	Class Canvas*                                                Canvas;                                            // 0x3d8(0x8)
 	Class PlayerController*                                      PlayerOwner;                                       // 0x3e0(0x8)
-	char                                                         pad0xe0_G1D1N[0xe0];                               // 0x3e6(0xe0)
+	char                                                         pad0xd0_NBIA1[0xd0];                               // 0x3e8(0xd0)
 };
 
 
@@ -73,7 +73,7 @@ public:
 	bool                                                         BehaviorTree;                                      // 0x7a(0x1)
 	bool                                                         EQS;                                               // 0x7b(0x1)
 	bool                                                         EnableEQSOnHUD;                                    // 0x7c(0x1)
-	char                                                         pad0x3_BE2H9[0x3];                                 // 0x7d(0x3)
+	char                                                         pad0x3_NE022[0x3];                                 // 0x7d(0x3)
 	int                                                          ActiveEQSIndex;                                    // 0x80(0x4)
 	bool                                                         Perception;                                        // 0x84(0x1)
 	bool                                                         GameView1;                                         // 0x85(0x1)
@@ -81,7 +81,7 @@ public:
 	bool                                                         GameView3;                                         // 0x87(0x1)
 	bool                                                         GameView4;                                         // 0x88(0x1)
 	bool                                                         GameView5;                                         // 0x89(0x1)
-	char                                                         pad0x20_W7ETK[0x20];                               // 0x88(0x20)
+	char                                                         pad0x1e_BVY2Q[0x1e];                               // 0x8a(0x1e)
 };
 
 
@@ -93,7 +93,7 @@ public:
 	Class Actor*                                                 DebugAITargetActor;                                // 0xd0(0x8)
 	Class InputComponent*                                        AIDebugViewInputComponent;                         // 0xd8(0x8)
 	Class InputComponent*                                        DebugCameraInputComponent;                         // 0xe0(0x8)
-	char                                                         pad0x28_6X042[0x28];                               // 0xe8(0x28)
+	char                                                         pad0x28_X7JCQ[0x28];                               // 0xe8(0x28)
 	Struct InputChord                                            ActivationKey;                                     // 0x110(0x28)
 	Struct InputChord                                            CategoryZeroBind;                                  // 0x138(0x28)
 	Struct InputChord                                            CategoryOneBind;                                   // 0x160(0x28)
@@ -127,7 +127,7 @@ public:
 	Struct FString                                               DebugComponentHUDClassName;                        // 0x3d8(0x10)
 	Struct FString                                               DebugComponentControllerClassName;                 // 0x3e8(0x10)
 	int                                                          MaxEQSQueries;                                     // 0x3f8(0x4)
-	char                                                         pad0x4_3QDZ9[0x4];                                 // 0x3fc(0x4)
+	char                                                         pad0x4_NSGJJ[0x4];                                 // 0x3fc(0x4)
 	Class GameplayDebuggingComponent*                            DebugComponent;                                    // 0x400(0x8)
 	Class PlayerController*                                      LocalPlayerOwner;                                  // 0x408(0x8)
 	Class Actor*                                                 LastSelectedActorToDebug;                          // 0x410(0x8)
@@ -138,7 +138,7 @@ public:
 	bool                                                         BehaviorTree;                                      // 0x41c(0x1)
 	bool                                                         EQS;                                               // 0x41d(0x1)
 	bool                                                         EnableEQSOnHUD;                                    // 0x41e(0x1)
-	char                                                         pad0x1_17V9Q[0x1];                                 // 0x41f(0x1)
+	char                                                         pad0x1_6LS4K[0x1];                                 // 0x41f(0x1)
 	int                                                          ActiveEQSIndex;                                    // 0x420(0x4)
 	bool                                                         Perception;                                        // 0x424(0x1)
 	bool                                                         GameView1;                                         // 0x425(0x1)
@@ -146,7 +146,7 @@ public:
 	bool                                                         GameView3;                                         // 0x427(0x1)
 	bool                                                         GameView4;                                         // 0x428(0x1)
 	bool                                                         GameView5;                                         // 0x429(0x1)
-	char                                                         pad0x50_RHAB9[0x50];                               // 0x428(0x50)
+	char                                                         pad0x4e_DFG5F[0x4e];                               // 0x42a(0x4e)
 };
 
 

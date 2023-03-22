@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 wsp_cave_rocks_01_C:
   Attributes:
-  - Name: pad0x7cccd0d5_F425D[0x7cccd0d5]
-    Offset: '-0x7ccccccd'
-    Size: '0x7cccd0d5'
-    Type: char
   - Name: None
     Offset: '0x408'
     Size: '0x8'
@@ -38,7 +34,7 @@ wsp_cave_rocks_01_C:
     Offset: '0x440'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x7cccd115'
+  ClassSize: '0x40'
   FullSize: '0x448'
-  InheritedSize: '-0x7ccccccd'
-  Super: ''
+  InheritedSize: '0x408'
+  Super: None

@@ -84,13 +84,13 @@ public:
 class AbandonedNoteClueDestinationContainerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_DM810[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_QML8M[0x20];                               // 0xc8(0x20)
 	Class AbandonedNoteClueTextIndexAssetMap*                    ClueTextIndexAssetMap;                             // 0xe8(0x8)
 	Struct FString                                               CompositeFormatString;                             // 0xf0(0x10)
 	Struct ClueDestinationChoice                                 CurrentClueDestination;                            // 0x100(0x10)
 	Struct FText                                                 CurrentTitleText;                                  // 0x110(0x38)
 	Class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x148(0x8)
-	char                                                         pad0x90_HE9J6[0x90];                               // 0x14e(0x90)
+	char                                                         pad0x80_XNPTZ[0x80];                               // 0x150(0x80)
 };
 
 
@@ -140,7 +140,7 @@ public:
 	Struct TreasureMapWidgetText                                 BodyTextLayout;                                    // 0xe8(0x38)
 	Struct TreasureMapWidgetText                                 TitleTextLayout;                                   // 0x120(0x38)
 	TArray<struct ExtraTextFields>                               ExtraTextFields;                                   // 0x158(0x10)
-	char                                                         pad0x70_AEJ2I[0x70];                               // 0x166(0x70)
+	char                                                         pad0x50_WNRSJ[0x50];                               // 0x168(0x50)
 };
 
 
@@ -148,13 +148,13 @@ public:
 class AbandonedNoteWieldable: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_AFAF0[0x10];                               // 0x7a0(0x10)
+	char                                                         pad0x10_F1CSY[0x10];                               // 0x7a0(0x10)
 	Class WieldableItemCanvasRenderingComponent*                 WieldableItemCanvasRenderingComponent;             // 0x7b0(0x8)
 	Class AbandonedNoteWieldableRenderingComponent*              AbandonedNoteRenderingComponent;                   // 0x7b8(0x8)
 	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x7c0(0x8)
 	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x7c8(0x8)
 	byte                                                         QuestMapIcon;                                      // 0x7d0(0x1)
-	char                                                         pad0x11_SJZWD[0x11];                               // 0x7cf(0x11)
+	char                                                         pad0xf_MM4Y8[0xf];                                 // 0x7d1(0xf)
 };
 
 
@@ -170,7 +170,7 @@ class BarrelsOfPlentyClueSiteData: public ClueSiteData
 {
 public:
 	Struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
-	char                                                         pad0x44_L3SSX[0x44];                               // 0x42(0x44)
+	char                                                         pad0x2c_LRHT2[0x2c];                               // 0x44(0x2c)
 };
 
 
@@ -216,19 +216,19 @@ public:
 class CircleMapClueDestinationContainerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_61ILY[0x10];                               // 0xc8(0x10)
+	char                                                         pad0x10_FWLZ8[0x10];                               // 0xc8(0x10)
 	class                                                        MapMarkId;                                         // 0xd8(0x8)
 	float                                                        MapMarkArea;                                       // 0xe0(0x4)
 	float                                                        MapMarkScaleMin;                                   // 0xe4(0x4)
 	float                                                        MapMarkScaleMax;                                   // 0xe8(0x4)
 	float                                                        MapMarkNoiseModifier;                              // 0xec(0x4)
 	byte                                                         MapMarkBlendMode;                                  // 0xf0(0x1)
-	char                                                         pad0x7_X5J26[0x7];                                 // 0xf1(0x7)
+	char                                                         pad0x7_5AD0R[0x7];                                 // 0xf1(0x7)
 	class                                                        DebugCrossId;                                      // 0xf8(0x8)
 	bool                                                         ShowCluePositionOnMap;                             // 0x100(0x1)
-	char                                                         pad0x7_DXECF[0x7];                                 // 0x101(0x7)
+	char                                                         pad0x7_C1EXK[0x7];                                 // 0x101(0x7)
 	TArray<struct ClueRenderData>                                ClueRenderData;                                    // 0x108(0x10)
-	char                                                         pad0x68_TVNHN[0x68];                               // 0x116(0x68)
+	char                                                         pad0x48_JQCED[0x48];                               // 0x118(0x48)
 };
 
 
@@ -236,9 +236,9 @@ public:
 class ClueSiteCircleMapWieldable: public RenderToTextureMapBase
 {
 public:
-	char                                                         pad0x20_N9NSZ[0x20];                               // 0x850(0x20)
+	char                                                         pad0x20_NWO1G[0x20];                               // 0x850(0x20)
 	Struct MapRadialIconData                                     MapRadialIconData;                                 // 0x870(0x18)
-	char                                                         pad0x38_7OS1G[0x38];                               // 0x886(0x38)
+	char                                                         pad0x8_L2B4W[0x8];                                 // 0x888(0x8)
 };
 
 
@@ -285,7 +285,7 @@ class FloatingMessageInABottleClueSiteData: public ClueSiteData
 {
 public:
 	Struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
-	char                                                         pad0x44_10EYN[0x44];                               // 0x42(0x44)
+	char                                                         pad0x2c_QKRYG[0x2c];                               // 0x44(0x2c)
 };
 
 
@@ -317,7 +317,7 @@ class IslandByCompassBearingClueDestinationDescriptor: public ClueDestinationDes
 {
 public:
 	byte                                                         CompassDirection;                                  // 0x40(0x1)
-	char                                                         pad0x9_H96XV[0x9];                                 // 0x3f(0x9)
+	char                                                         pad0x7_MBU7M[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -343,7 +343,7 @@ class LocationOnIslandClueDestinationDescriptor: public ClueDestinationDescripto
 public:
 	struct FName                                                 IslandIdentifier;                                  // 0x40(0x8)
 	Struct Vector                                                WorldPosition;                                     // 0x48(0xc)
-	char                                                         pad0x1c_Z4AFH[0x1c];                               // 0x52(0x1c)
+	char                                                         pad0x4_RR7ZJ[0x4];                                 // 0x54(0x4)
 };
 
 
@@ -376,7 +376,7 @@ public:
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x38(0x4)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x3c(0x4)
 	int                                                          LootItemSpawnZOffset;                              // 0x40(0x4)
-	char                                                         pad0xc_96KID[0xc];                                 // 0x42(0xc)
+	char                                                         pad0x4_V0MZ1[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -392,7 +392,7 @@ class NPCHintDialogueClueSiteData: public ClueSiteData
 {
 public:
 	Struct NPCData                                               NPCData;                                           // 0x38(0xb8)
-	char                                                         pad0x1a0_0NCT1[0x1a0];                             // 0xee(0x1a0)
+	char                                                         pad0x30_WYXNB[0x30];                               // 0xf0(0x30)
 };
 
 
@@ -407,7 +407,7 @@ public:
 class ObtainClueOnWieldComponent: public OnItemWieldedComponent
 {
 public:
-	char                                                         pad0x8_8YQ1O[0x8];                                 // 0x138(0x8)
+	char                                                         pad0x8_MMXIM[0x8];                                 // 0x138(0x8)
 	Class ClueDescriptor*                                        ClueToObtain;                                      // 0x140(0x8)
 	class                                                        ClueSiteType;                                      // 0x148(0x8)
 };
@@ -425,7 +425,7 @@ class SeaLocationByGridSquareClueDestinationDescriptor: public ClueDestinationDe
 {
 public:
 	Struct Vector                                                SeaLocationIdentifier;                             // 0x40(0xc)
-	char                                                         pad0x1c_8NHFX[0x1c];                               // 0x4a(0x1c)
+	char                                                         pad0x4_SVMC5[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -461,9 +461,9 @@ public:
 class TaleQuestClueInventoryService: public TaleQuestService
 {
 public:
-	char                                                         pad0x18_I83FI[0x18];                               // 0x60(0x18)
+	char                                                         pad0x18_X7J7R[0x18];                               // 0x60(0x18)
 	TArray<class ClueDescriptor*>                                ObtainedClues;                                     // 0x78(0x10)
-	char                                                         pad0x50_1LS96[0x50];                               // 0x88(0x50)
+	char                                                         pad0x50_H9YZ6[0x50];                               // 0x88(0x50)
 	Struct FText                                                 TitleText;                                         // 0x248(0x38)
 	Class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x280(0x8)
 };
@@ -569,7 +569,7 @@ class WaitForClueCollectedStep: public TaleQuestStep
 public:
 	Class ClueDescriptor*                                        ClueDesc;                                          // 0x98(0x8)
 	Class Actor*                                                 ClueActor;                                         // 0xa0(0x8)
-	char                                                         pad0xa8_X5MAE[0xa8];                               // 0xa6(0xa8)
+	char                                                         pad0x98_27V7V[0x98];                               // 0xa8(0x98)
 };
 
 
@@ -587,7 +587,7 @@ public:
 class WashedUpMessageInABottleClueCreator: public LandClueCreator
 {
 public:
-	char                                                         pad0x20_UDTDP[0x20];                               // 0x30(0x20)
+	char                                                         pad0x20_KMZ9A[0x20];                               // 0x30(0x20)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x50(0x4)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x54(0x4)
 	int                                                          LootItemSpawnZOffset;                              // 0x58(0x4)
@@ -595,7 +595,7 @@ public:
 	float                                                        LootItemSinkIntoSandZDistanceMax;                  // 0x60(0x4)
 	float                                                        LootItemSinkIntoSandRotationMin;                   // 0x64(0x4)
 	float                                                        LootItemSinkIntoSandRotationMax;                   // 0x68(0x4)
-	char                                                         pad0x4_LY4W0[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_AO3SG[0x4];                                 // 0x6c(0x4)
 	TArray<Assetclass SinkIntoSandItems>                         SinkIntoSandItems;                                 // 0x70(0x10)
 };
 
@@ -614,10 +614,10 @@ public:
 	class                                                        BottleItemType;                                    // 0x38(0x8)
 	struct FName                                                 IslandNameToSpawnOn;                               // 0x40(0x8)
 	Struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x48(0x10)
-	char                                                         pad0x8_6D38S[0x8];                                 // 0x58(0x8)
+	char                                                         pad0x8_O62NN[0x8];                                 // 0x58(0x8)
 	Struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
 	TArray<class Class*>                                         SinkIntoSandItems;                                 // 0x90(0x10)
-	char                                                         pad0x60_X7J3F[0x60];                               // 0x9e(0x60)
+	char                                                         pad0x40_ISSGB[0x40];                               // 0xa0(0x40)
 };
 
 
@@ -644,7 +644,7 @@ public:
 	struct FName                                                 IslandNameToSpawnOn;                               // 0x48(0x8)
 	Struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x50(0x10)
 	Struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
-	char                                                         pad0x90_WO78B[0x90];                               // 0x8e(0x90)
+	char                                                         pad0x30_GEHAS[0x30];                               // 0x90(0x30)
 };
 
 
@@ -663,7 +663,7 @@ public:
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x60(0x4)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x64(0x4)
 	int                                                          LootItemSpawnZOffset;                              // 0x68(0x4)
-	char                                                         pad0xc_BHXOX[0xc];                                 // 0x6a(0xc)
+	char                                                         pad0x4_VCCN2[0x4];                                 // 0x6c(0x4)
 };
 
 
@@ -671,9 +671,9 @@ public:
 class InteractableGrammaticalGenderComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_2WSJ0[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_543A3[0x8];                                 // 0xc8(0x8)
 	byte                                                         GrammaticalGender;                                 // 0xd0(0x1)
-	char                                                         pad0x9_QNI59[0x9];                                 // 0xcf(0x9)
+	char                                                         pad0x7_SJHP0[0x7];                                 // 0xd1(0x7)
 };
 
 

@@ -50,7 +50,7 @@ TimeInterface:
   Super: Interface
 TimeService:
   Attributes:
-  - Name: pad0x38_GBCI6[0x38]
+  - Name: pad0x38_DO411[0x38]
     Offset: '0x3c8'
     Size: '0x38'
     Type: char
@@ -58,7 +58,7 @@ TimeService:
     Offset: '0x400'
     Size: '0x8'
     Type: Struct Timespan
-  - Name: pad0x4_PXJYU[0x4]
+  - Name: pad0x4_K7BH9[0x4]
     Offset: '0x408'
     Size: '0x4'
     Type: char
@@ -110,9 +110,9 @@ TimeService:
     Offset: '0x498'
     Size: '0x10'
     Type: Struct ReplicatedAuthoritativeTime
-  - Name: pad0x68_2P6BE[0x68]
-    Offset: '0x4a6'
-    Size: '0x68'
+  - Name: pad0x48_TNDST[0x48]
+    Offset: '0x4a8'
+    Size: '0x48'
     Type: char
   ClassSize: '0x128'
   FullSize: '0x4f0'

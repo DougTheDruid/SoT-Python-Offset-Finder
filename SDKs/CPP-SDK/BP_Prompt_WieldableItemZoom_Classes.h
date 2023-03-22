@@ -11,15 +11,15 @@ class BP_Prompt_WieldableItemZoom_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x132_5ROE3[0x132];                             // 0x120(0x132)
+	char                                                         pad0x12b_T584C[0x12b];                             // 0x120(0x12b)
 	class                                                        PromptAccessKey;                                   // 0x120(0x8)
 	Struct ObjectMessagingHandle                                 WieldableItemEquipEvent;                           // 0x128(0x48)
 	bool                                                         WieldingZoomableWieldable;                         // 0x170(0x1)
 	bool                                                         StatCompleted;                                     // 0x171(0x1)
-	char                                                         pad0x6_EZU4N[0x6];                                 // 0x172(0x6)
+	char                                                         pad0x6_SM99J[0x6];                                 // 0x172(0x6)
 	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x178(0x8)
 	bool                                                         HasShown;                                          // 0x180(0x1)
-	char                                                         pad0x7_5M47B[0x7];                                 // 0x181(0x7)
+	char                                                         pad0x7_3PLTQ[0x7];                                 // 0x181(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x188(0x68)
 	class                                                        ShowForItemCategory;                               // 0x1f0(0x8)
 };

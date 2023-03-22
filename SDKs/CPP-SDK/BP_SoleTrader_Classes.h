@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_SoleTrader_C: public CompanyShopkeeper
 {
 public:
-	Class CapsuleComponent*                                      None;                                              // 0x698(0x8)
-	Class NPCDialogComponent*                                    None;                                              // 0x6a0(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x6a8(0x8)
+	Class CapsuleComponent*                                      SolidHits;                                         // 0x698(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x6a0(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6a8(0x8)
 };
 
 

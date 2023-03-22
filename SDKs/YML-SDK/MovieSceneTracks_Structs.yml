@@ -10,7 +10,7 @@ ColorParameterNameAndCurves:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_5F6Z9[0x4]
+  - Name: pad0x4_RUK7Y[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -41,7 +41,7 @@ EventPayload:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_65D0V[0x3]
+  - Name: pad0x3_P9JO0[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -53,7 +53,7 @@ EventPayload:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_BCNKG[0x4]
+  - Name: pad0x4_OGING[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -102,7 +102,7 @@ MovieScene3DPathSectionTemplate:
     Offset: '0xa1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_9EP0S[0x2]
+  - Name: pad0x2_XANUX[0x2]
     Offset: '0xa2'
     Size: '0x2'
     Type: char
@@ -154,7 +154,7 @@ MovieScene3DTransformSectionTemplate:
     Offset: '0x18'
     Size: '0x78'
     Type: Struct RichCurve
-  - Name: pad0xf0_HA3T7[0xf0]
+  - Name: pad0xf0_ZXH19[0xf0]
     Offset: '0x90'
     Size: '0xf0'
     Type: char
@@ -162,7 +162,7 @@ MovieScene3DTransformSectionTemplate:
     Offset: '0x180'
     Size: '0x78'
     Type: Struct RichCurve
-  - Name: pad0xf0_YQD93[0xf0]
+  - Name: pad0xf0_G73Q1[0xf0]
     Offset: '0x1f8'
     Size: '0xf0'
     Type: char
@@ -213,7 +213,7 @@ MovieSceneAudioSectionTemplateData:
     Offset: '0xc'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: pad0x4_XT7CW[0x4]
+  - Name: pad0x4_GVKA1[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -311,7 +311,7 @@ MovieSceneCameraShakeSectionData:
     Offset: '0xc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1FC43[0x3]
+  - Name: pad0x3_K2KQW[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
@@ -443,7 +443,7 @@ MovieSceneLevelVisibilitySectionTemplate:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_NDNLF[0x7]
+  - Name: pad0x7_MIMVT[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -502,7 +502,7 @@ MovieSceneSkeletalAnimationParams:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WHG04[0x3]
+  - Name: pad0x3_KQQFP[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -599,7 +599,7 @@ MovieSceneVectorPropertySectionTemplate:
     Offset: '0x38'
     Size: '0x78'
     Type: Struct RichCurve
-  - Name: pad0x168_XGDR0[0x168]
+  - Name: pad0x168_9YN1R[0x168]
     Offset: '0xb0'
     Size: '0x168'
     Type: char
@@ -625,7 +625,7 @@ ScalarParameterNameAndCurve:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1649N[0x4]
+  - Name: pad0x4_S9H4Y[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -644,7 +644,7 @@ VectorParameterNameAndCurves:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_2X6PX[0x4]
+  - Name: pad0x4_JND95[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

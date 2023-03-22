@@ -9,7 +9,7 @@ CustomPlayerStartConfigData:
     Offset: '0x0'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_9ROTZ[0x4]
+  - Name: pad0x4_THTZ1[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -28,7 +28,7 @@ CustomPlayerStartConfigResponseData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_TT4S8[0x3]
+  - Name: pad0x3_K33QD[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -43,7 +43,7 @@ DestroyCustomPlayerStartData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DUK9B[0x4]
+  - Name: pad0x4_DRL20[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

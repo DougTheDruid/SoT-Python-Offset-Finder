@@ -11,12 +11,12 @@ class BP_PromptCoordinator_BootyStorage_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x132_BBARC[0x132];                             // 0x120(0x132)
+	char                                                         pad0x12b_4OE0T[0x12b];                             // 0x120(0x12b)
 	bool                                                         ShowLootPrompt;                                    // 0x120(0x1)
 	bool                                                         ShowMermaidPrompt;                                 // 0x121(0x1)
 	bool                                                         HasUsedStatue;                                     // 0x122(0x1)
 	bool                                                         HasRetrievedLoot;                                  // 0x123(0x1)
-	char                                                         pad0x4_XB88M[0x4];                                 // 0x124(0x4)
+	char                                                         pad0x4_5Q6NW[0x4];                                 // 0x124(0x4)
 	Struct PrioritisedPromptWithHandle                           MermaidPrompt;                                     // 0x128(0x68)
 	Struct PrioritisedPromptWithHandle                           LootPrompt;                                        // 0x190(0x68)
 	Struct ObjectMessagingHandle                                 CrewStorageChangedHandle;                          // 0x1f8(0x48)

@@ -6,9 +6,9 @@ BP_Prompt_EmissarySoldLoot_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x132_NBWB0[0x132]
+  - Name: pad0x12b_533SH[0x12b]
     Offset: '0x120'
-    Size: '0x132'
+    Size: '0x12b'
     Type: char
   - Name: Handle_EmissarySoldLoot
     Offset: '0x120'
@@ -22,7 +22,7 @@ BP_Prompt_EmissarySoldLoot_C:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_BZQWV[0x3]
+  - Name: pad0x3_ILY96[0x3]
     Offset: '0x171'
     Size: '0x3'
     Type: char
@@ -30,7 +30,7 @@ BP_Prompt_EmissarySoldLoot_C:
     Offset: '0x174'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_ITACI[0x4]
+  - Name: pad0x4_X19O9[0x4]
     Offset: '0x17c'
     Size: '0x4'
     Type: char

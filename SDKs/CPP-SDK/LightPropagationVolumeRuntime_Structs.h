@@ -23,7 +23,7 @@ public:
 	bool                                                         bOverride_LPVGeometryVolumeBias;                   // 0x1(0x1)
 	bool                                                         bOverride_LPVVplInjectionBias;                     // 0x1(0x1)
 	bool                                                         bOverride_LPVEmissiveInjectionIntensity;           // 0x1(0x1)
-	char                                                         pad0x2_7NU3R[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_W0U81[0x2];                                 // 0x2(0x2)
 	float                                                        LPVIntensity;                                      // 0x4(0x4)
 	float                                                        LPVVplInjectionBias;                               // 0x8(0x4)
 	float                                                        LPVSize;                                           // 0xc(0x4)
@@ -37,7 +37,7 @@ public:
 	float                                                        LPVSpecularOcclusionExponent;                      // 0x2c(0x4)
 	float                                                        LPVDiffuseOcclusionIntensity;                      // 0x30(0x4)
 	float                                                        LPVSpecularOcclusionIntensity;                     // 0x34(0x4)
-	char                                                         pad0x8_2XSXY[0x8];                                 // 0x38(0x8)
+	char                                                         pad0x8_A977V[0x8];                                 // 0x38(0x8)
 	Struct Transform                                             LPVWorldRef;                                       // 0x40(0x30)
 };
 

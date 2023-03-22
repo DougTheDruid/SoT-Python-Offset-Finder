@@ -11,7 +11,7 @@ class BP_Prompt_MaidenVoyage_FishingRodTutorial_C: public BP_PromptCoordinator_B
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x132_HV9XM[0x132];                             // 0x120(0x132)
+	char                                                         pad0x12a_F5V92[0x12a];                             // 0x120(0x12a)
 	bool                                                         State_RodWielded;                                  // 0x120(0x1)
 	bool                                                         State_FishBattling;                                // 0x121(0x1)
 	bool                                                         State_CastRod;                                     // 0x122(0x1)
@@ -36,10 +36,10 @@ public:
 	Struct ObjectMessagingHandle                                 Handle_ReelingWhileBattling;                       // 0x4b0(0x48)
 	Struct ObjectMessagingHandle                                 Handle_StowRod;                                    // 0x4f8(0x48)
 	bool                                                         FishStartedBattling;                               // 0x540(0x1)
-	char                                                         pad0x7_VEMSW[0x7];                                 // 0x541(0x7)
+	char                                                         pad0x7_YPN1M[0x7];                                 // 0x541(0x7)
 	Struct ObjectMessagingHandle                                 Handle_FishEscaped;                                // 0x548(0x48)
 	bool                                                         State_Completed;                                   // 0x590(0x1)
-	char                                                         pad0x7_YOAW6[0x7];                                 // 0x591(0x7)
+	char                                                         pad0x7_QQDDB[0x7];                                 // 0x591(0x7)
 	Struct ObjectMessagingHandle                                 Handle_PlayerDeath;                                // 0x598(0x48)
 	Struct ObjectMessagingHandle                                 Handle_DockToObject;                               // 0x5e0(0x48)
 };

@@ -2,39 +2,15 @@
 # https://github.com/DougTheDruid
 wld_palm_cluster_05_b_C:
   Attributes:
-  - Name: pad0x7cccd0d5_15PFW[0x7cccd0d5]
-    Offset: '-0x7ccccccd'
-    Size: '0x7cccd0d5'
-    Type: char
   - Name: None
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: Class NonVagueNonUniqueLandmarkComponent*
   - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x418'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x420'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x428'
-    Size: '0x8'
-    Type: Class NonVagueNonUniqueLandmarkComponent*
-  - Name: None
-    Offset: '0x430'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x438'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x7cccd10d'
-  FullSize: '0x440'
-  InheritedSize: '-0x7ccccccd'
-  Super: ''
+  ClassSize: '0x10'
+  FullSize: '0x418'
+  InheritedSize: '0x408'
+  Super: None

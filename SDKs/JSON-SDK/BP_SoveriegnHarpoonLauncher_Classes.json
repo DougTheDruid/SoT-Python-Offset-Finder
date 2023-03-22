@@ -1,5 +1,5 @@
 {
-  "BP_SoveriegnHarpoonLauncher_2_C": {
+  "BP_SoveriegnHarpoonLauncher_C": {
     "Super": "HarpoonLauncher",
     "FullSize": "0xc50",
     "InheritedSize": "0xc30",
@@ -31,7 +31,7 @@
       }
     ]
   },
-  "BP_SoveriegnHarpoonLauncher_C": {
+  "BP_SoveriegnHarpoonLauncher_2_C": {
     "Super": "HarpoonLauncher",
     "FullSize": "0xc50",
     "InheritedSize": "0xc30",

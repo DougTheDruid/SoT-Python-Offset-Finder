@@ -14,7 +14,7 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_7OV4I[0x4]
+  - Name: pad0x4_M834B[0x4]
     Offset: '0xdc'
     Size: '0x4'
     Type: char
@@ -22,9 +22,9 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd1_R7EHX[0xd1]
-    Offset: '0x11f'
-    Size: '0xd1'
+  - Name: pad0xcf_OBJYV[0xcf]
+    Offset: '0x121'
+    Size: '0xcf'
     Type: char
   ClassSize: '0x128'
   FullSize: '0x1f0'
@@ -48,9 +48,9 @@ MultiTargetEnchantedCompass:
     Offset: '0x8a0'
     Size: '0x8'
     Type: Class EnchantedCompassProximityAnnouncementComponent*
-  - Name: pad0x18_DKRE2[0x18]
-    Offset: '0x8a6'
-    Size: '0x18'
+  - Name: pad0x8_DVR79[0x8]
+    Offset: '0x8a8'
+    Size: '0x8'
     Type: char
   ClassSize: '0x30'
   FullSize: '0x8b0'
@@ -124,9 +124,9 @@ TaleQuestSetCompassTargetBaseStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_CO28T[0x9]
-    Offset: '0x7f'
-    Size: '0x9'
+  - Name: pad0x7_4G27L[0x7]
+    Offset: '0x81'
+    Size: '0x7'
     Type: char
   ClassSize: '0x8'
   FullSize: '0x88'

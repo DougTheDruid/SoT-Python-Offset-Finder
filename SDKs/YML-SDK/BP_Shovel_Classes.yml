@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_Shovel_C:
   Attributes:
-  - Name: UsableWieldable
+  - Name: None
     Offset: '0x860'
     Size: '0x8'
     Type: Class UsableWieldableComponent*

@@ -10,9 +10,9 @@ ChecklistActionData:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_U1J3D[0x5]
-    Offset: '0x2b'
-    Size: '0x5'
+  - Name: pad0x3_GJA0Z[0x3]
+    Offset: '0x2d'
+    Size: '0x3'
     Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
@@ -50,7 +50,7 @@ ChecklistMap:
     Offset: '0x7fc'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_6AHEI[0x8]
+  - Name: pad0x8_GZJ8W[0x8]
     Offset: '0x800'
     Size: '0x8'
     Type: char
@@ -62,9 +62,9 @@ ChecklistMap:
     Offset: '0x810'
     Size: '0xe8'
     Type: Struct ChecklistMapContents
-  - Name: pad0x218_YAFEI[0x218]
-    Offset: '0x8f6'
-    Size: '0x218'
+  - Name: pad0x48_NNDWF[0x48]
+    Offset: '0x8f8'
+    Size: '0x48'
     Type: char
   ClassSize: '0x150'
   FullSize: '0x940'
@@ -82,9 +82,9 @@ ChecklistMapCompletionComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class ChecklistActionData*
-  - Name: pad0x80_OWQVW[0x80]
-    Offset: '0xce'
-    Size: '0x80'
+  - Name: pad0x70_1ZLBH[0x70]
+    Offset: '0xd0'
+    Size: '0x70'
     Type: char
   ClassSize: '0x78'
   FullSize: '0x140'

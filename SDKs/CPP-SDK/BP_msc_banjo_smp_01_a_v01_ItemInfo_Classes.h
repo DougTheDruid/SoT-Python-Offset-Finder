@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_msc_banjo_smp_01_a_v01_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
+	Class SceneComponent*                                        None;                                              // 0x510(0x8)
 };
 
 

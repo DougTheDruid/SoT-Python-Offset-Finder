@@ -18,7 +18,7 @@ class AudioReportingComponent: public ActorComponent
 {
 public:
 	Class PlayerController*                                      CachedOwningController;                            // 0xc8(0x8)
-	char                                                         pad0x180_FBDQ4[0x180];                             // 0xce(0x180)
+	char                                                         pad0x170_21PDL[0x170];                             // 0xd0(0x170)
 };
 
 

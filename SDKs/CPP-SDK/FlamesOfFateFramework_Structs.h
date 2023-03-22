@@ -48,7 +48,7 @@ struct SetShipFlameOfFateEvent
 {
 public:
 	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_G9MTL[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_14GN2[0x7];                                 // 0x1(0x7)
 	Class Object*                                                Source;                                            // 0x8(0x8)
 	Class Object*                                                Ship;                                              // 0x10(0x8)
 };
@@ -59,7 +59,7 @@ struct SetFlameOfFateEvent
 {
 public:
 	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_LETDD[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_RO80M[0x7];                                 // 0x1(0x7)
 	Class Object*                                                Source;                                            // 0x8(0x8)
 };
 

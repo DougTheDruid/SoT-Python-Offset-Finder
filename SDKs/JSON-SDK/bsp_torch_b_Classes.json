@@ -6,16 +6,22 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x20_WGXS2[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x3de"
+        "Name": "vfx_fire_torch",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "PointLight",
+        "Type": "Class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
       }
     ]
   },

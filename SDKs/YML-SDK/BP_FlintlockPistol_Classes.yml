@@ -14,7 +14,7 @@ BP_FlintlockPistol_C:
     Offset: '0xa90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5KXNJ[0x7]
+  - Name: pad0x7_4WKNL[0x7]
     Offset: '0xa91'
     Size: '0x7'
     Type: char

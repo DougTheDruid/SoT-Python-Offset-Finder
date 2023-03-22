@@ -11,12 +11,12 @@ class BP_Prompt_ProposeVoyage_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x132_QB0PI[0x132];                             // 0x120(0x132)
+	char                                                         pad0x12a_D0JMK[0x12a];                             // 0x120(0x12a)
 	bool                                                         State_OfferPurchased;                              // 0x120(0x1)
-	char                                                         pad0x7_1AIWQ[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x7_91PR6[0x7];                                 // 0x121(0x7)
 	Struct ObjectMessagingHandle                                 Handle_OnOfferPurchased;                           // 0x128(0x48)
 	bool                                                         State_Complete;                                    // 0x170(0x1)
-	char                                                         pad0x7_UHJ3O[0x7];                                 // 0x171(0x7)
+	char                                                         pad0x7_QE1P8[0x7];                                 // 0x171(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt_ProposeVoyage;                              // 0x178(0x68)
 };
 

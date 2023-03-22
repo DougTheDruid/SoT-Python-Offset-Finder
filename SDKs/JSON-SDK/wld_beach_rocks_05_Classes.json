@@ -1,16 +1,10 @@
 {
   "wld_beach_rocks_05_C": {
-    "Super": "",
+    "Super": "None",
     "FullSize": "0x468",
-    "InheritedSize": "-0x7ccccccd",
-    "ClassSize": "0x7cccd135",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x60",
     "Attributes": [
-      {
-        "Name": "pad0x7cccd0d5_NJROR[0x7cccd0d5]",
-        "Type": "char",
-        "Size": "0x7cccd0d5",
-        "Offset": "-0x7ccccccd"
-      },
       {
         "Name": "None",
         "Type": "Class StaticMeshComponent*",

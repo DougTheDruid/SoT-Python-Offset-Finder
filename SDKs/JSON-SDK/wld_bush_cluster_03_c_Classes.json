@@ -1,16 +1,10 @@
 {
   "wld_bush_cluster_03_c_C": {
-    "Super": "",
+    "Super": "None",
     "FullSize": "0x428",
-    "InheritedSize": "-0x7ccccccd",
-    "ClassSize": "0x7cccd0f5",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x20",
     "Attributes": [
-      {
-        "Name": "pad0x7cccd0d5_UJH88[0x7cccd0d5]",
-        "Type": "char",
-        "Size": "0x7cccd0d5",
-        "Offset": "-0x7ccccccd"
-      },
       {
         "Name": "None",
         "Type": "Class StaticMeshComponent*",

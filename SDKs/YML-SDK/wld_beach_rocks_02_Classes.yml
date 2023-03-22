@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 wld_beach_rocks_02_C:
   Attributes:
-  - Name: pad0x7cccd0d5_BBI2B[0x7cccd0d5]
-    Offset: '-0x7ccccccd'
-    Size: '0x7cccd0d5'
-    Type: char
   - Name: None
     Offset: '0x408'
     Size: '0x8'
@@ -50,7 +46,7 @@ wld_beach_rocks_02_C:
     Offset: '0x458'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x7cccd12d'
+  ClassSize: '0x58'
   FullSize: '0x460'
-  InheritedSize: '-0x7ccccccd'
-  Super: ''
+  InheritedSize: '0x408'
+  Super: None

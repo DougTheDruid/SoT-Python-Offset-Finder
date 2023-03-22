@@ -27,9 +27,9 @@ public:
 class BTTask_SailShipBesideTarget: public BTTask_BlackboardBase
 {
 public:
-	char                                                         pad0x20_L1ZOC[0x20];                               // 0x88(0x20)
+	char                                                         pad0x20_RJ7GO[0x20];                               // 0x88(0x20)
 	Struct TrackingNoiseGenerator                                TrackingNoiseGenerator;                            // 0xa8(0x18)
-	char                                                         pad0x48_QU901[0x48];                               // 0xbe(0x48)
+	char                                                         pad0x18_6YHJ4[0x18];                               // 0xc0(0x18)
 };
 
 
@@ -38,7 +38,7 @@ class AthenaAIShipControllerParamsDataAsset: public AthenaAIControllerParamsData
 {
 public:
 	Struct ShipMovementParams                                    TrackingMovementParams;                            // 0x138(0x34)
-	char                                                         pad0x4_HYRZ4[0x4];                                 // 0x16c(0x4)
+	char                                                         pad0x4_KNUZP[0x4];                                 // 0x16c(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TimesToSailBesideTarget;                           // 0x170(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      PerpendicularDistanceOffsets;                      // 0x1a0(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TimesBeforeDistanceChange;                         // 0x1d0(0x30)
@@ -52,14 +52,14 @@ public:
 	float                                                        SpeedMonitorDuration;                              // 0x230(0x4)
 	float                                                        SpeedChangeThresholdToBreakTrackingInMPS;          // 0x234(0x4)
 	float                                                        TargetSpeedToConsiderAnchorLoweredInMPS;           // 0x238(0x4)
-	char                                                         pad0x4_BYGXH[0x4];                                 // 0x23c(0x4)
+	char                                                         pad0x4_Q0LCC[0x4];                                 // 0x23c(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TrackingLatencyTimes;                              // 0x240(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TrackingLatencyTimesWhenAnchorLowered;             // 0x270(0x30)
 	Class CurveFloat*                                            DistToTargetShipVSTrackingLatencyCurve;            // 0x2a0(0x8)
 	Struct ShipMovementParams                                    CirclingMovementParams;                            // 0x2a8(0x34)
 	float                                                        TargetSpeedThresholdInKnots;                       // 0x2dc(0x4)
 	float                                                        SecondsInFutureToProjectTargetLocation;            // 0x2e0(0x4)
-	char                                                         pad0x4_R8EHO[0x4];                                 // 0x2e4(0x4)
+	char                                                         pad0x4_C0494[0x4];                                 // 0x2e4(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      CircleRadiuses;                                    // 0x2e8(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      CirclingSpeedsInDegreesPerSecond;                  // 0x318(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TimesToCircleBeforeChangingRadius;                 // 0x348(0x30)
@@ -75,12 +75,12 @@ public:
 	float                                                        MaxPathAvoidanceDistance;                          // 0x3f8(0x4)
 	Struct ShipMovementParams                                    PassiveSailingMovementParams;                      // 0x3fc(0x34)
 	float                                                        ChanceToAnchor;                                    // 0x430(0x4)
-	char                                                         pad0x4_RCAGM[0x4];                                 // 0x434(0x4)
+	char                                                         pad0x4_HZ2DJ[0x4];                                 // 0x434(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TimesToStayAnchored;                               // 0x438(0x30)
 	int                                                          NumIslandsToVisitBeforeReturning;                  // 0x468(0x4)
 	float                                                        DistanceFromIslandsToSailTo;                       // 0x46c(0x4)
 	float                                                        DistanceToTargetToDropAnchor;                      // 0x470(0x4)
-	char                                                         pad0x4_65OSE[0x4];                                 // 0x474(0x4)
+	char                                                         pad0x4_W5HPN[0x4];                                 // 0x474(0x4)
 	TArray<class Class*>                                         AggressionOverrideImpactIDs;                       // 0x478(0x10)
 };
 
@@ -91,7 +91,7 @@ class AIShipContextDescDataAsset: public DataAsset
 public:
 	byte                                                         ShipType;                                          // 0x28(0x1)
 	byte                                                         EncounterType;                                     // 0x29(0x1)
-	char                                                         pad0x6_4TE35[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_N342K[0x6];                                 // 0x2a(0x6)
 	Class ShipDescAsset*                                         ShipDesc;                                          // 0x30(0x8)
 	Class AthenaAIShipControllerParamsDataAsset*                 ControllerParams;                                  // 0x38(0x8)
 	TArray<struct Spawners>                                      Spawners;                                          // 0x40(0x10)
@@ -111,7 +111,7 @@ public:
 	float                                                        TopDeckPlayerTrackerRadius;                        // 0x28(0x4)
 	float                                                        TimeSpentEmotingOnInitialSpawn;                    // 0x2c(0x4)
 	bool                                                         ForceAIToAlwaysSpawn;                              // 0x30(0x1)
-	char                                                         pad0x3_5RGJZ[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_I19LM[0x3];                                 // 0x31(0x3)
 	float                                                        IntervalBetweenRepairDamageAssignments;            // 0x34(0x4)
 	float                                                        IntervalBetweenUseCannonAssignments;               // 0x38(0x4)
 	float                                                        DistForMinXYAIInteractableUtility;                 // 0x3c(0x4)
@@ -134,7 +134,7 @@ public:
 	float                                                        SecondsUntilKillAIAfterShipDefeated;               // 0x80(0x4)
 	float                                                        SecondsDelayForAIShipDefeatedNotification;         // 0x84(0x4)
 	bool                                                         EnableShipSurfacingMusic;                          // 0x88(0x1)
-	char                                                         pad0x9_6C35Q[0x9];                                 // 0x87(0x9)
+	char                                                         pad0x7_RKK3V[0x7];                                 // 0x89(0x7)
 };
 
 
@@ -166,7 +166,7 @@ class ShipProxyPawn: public Pawn
 public:
 	Class Ship*                                                  Ship;                                              // 0x440(0x8)
 	Class Ship*                                                  SpawnTargetShip;                                   // 0x448(0x8)
-	char                                                         pad0x38_AGMZQ[0x38];                               // 0x44e(0x38)
+	char                                                         pad0x28_70LDX[0x28];                               // 0x450(0x28)
 };
 
 
@@ -181,17 +181,17 @@ public:
 	Class BuoyantObjectSpawnProfileDataAsset*                    BuoyantObjectSpawnProfileAsset;                    // 0x48(0x8)
 	class                                                        EventSignalAssetClass;                             // 0x50(0x8)
 	float                                                        EventSignalHeight;                                 // 0x58(0x4)
-	char                                                         pad0x4_7A5J6[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_7L47D[0x4];                                 // 0x5c(0x4)
 	Struct FText                                                 EncounterCompleteText;                             // 0x60(0x38)
 	float                                                        OuterRadiusMultiplier;                             // 0x98(0x4)
 	float                                                        MigrationRadiusMultiplier;                         // 0x9c(0x4)
 	float                                                        InitialEncounterEntryDelay;                        // 0xa0(0x4)
 	float                                                        MinEngagedDistanceFromPlayers;                     // 0xa4(0x4)
 	bool                                                         EnableMusicWhenShipsHaveNoTarget;                  // 0xa8(0x1)
-	char                                                         pad0x3_NPI1U[0x3];                                 // 0xa9(0x3)
+	char                                                         pad0x3_2K01N[0x3];                                 // 0xa9(0x3)
 	int                                                          SecondsUntilEncounterEndsAfterLastCrewLeft;        // 0xac(0x4)
 	int                                                          MaximumEncounterDuration;                          // 0xb0(0x4)
-	char                                                         pad0xc_NWG2C[0xc];                                 // 0xb2(0xc)
+	char                                                         pad0x4_RLN3P[0x4];                                 // 0xb4(0x4)
 };
 
 
@@ -204,7 +204,7 @@ public:
 	Struct AIShipEncounterParams                                 PassiveEncounterParams;                            // 0x48(0x18)
 	Struct IntPoint                                              ObstacleBucketDimensions;                          // 0x60(0x8)
 	float                                                        ShipwreckObstacleRadius;                           // 0x68(0x4)
-	char                                                         pad0x4_I4AWM[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_7INJH[0x4];                                 // 0x6c(0x4)
 	Struct AIShipContextDescGenerationParams                     ContextDescGenerationParams;                       // 0x70(0x80)
 	Struct AIShipBattleEncounterDescGenerationParams             EncounterGenerationParams;                         // 0xf0(0x80)
 	Struct AIShipSingleWaveEncounterDescGenerationParams         AggressiveEncounterGenerationParams;               // 0x170(0x10)
@@ -212,14 +212,14 @@ public:
 	Struct WeightedProbabilityRangeOfRanges                      TimerBattleFirstRegenInterval;                     // 0x190(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TimerBattleRegenInterval;                          // 0x1c0(0x30)
 	float                                                        TimerBattleFinderThrottle;                         // 0x1f0(0x4)
-	char                                                         pad0x4_RNV1F[0x4];                                 // 0x1f4(0x4)
+	char                                                         pad0x4_WUWRC[0x4];                                 // 0x1f4(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TimerBattleRetryRegenInterval;                     // 0x1f8(0x30)
 	float                                                        TimerBattleMinActivationDistanceFromPlayers;       // 0x228(0x4)
-	char                                                         pad0x4_17IPX[0x4];                                 // 0x22c(0x4)
+	char                                                         pad0x4_KYC3H[0x4];                                 // 0x22c(0x4)
 	Class ShortRangeMarkerDataAsset*                             RewardMarkerParams;                                // 0x230(0x8)
 	TArray<struct FName>                                         IslandsToAvoid;                                    // 0x238(0x10)
 	float                                                        AvoidanceRange;                                    // 0x248(0x4)
-	char                                                         pad0xc_6IKVL[0xc];                                 // 0x24a(0xc)
+	char                                                         pad0x4_8BQ4B[0x4];                                 // 0x24c(0x4)
 };
 
 
@@ -242,13 +242,13 @@ public:
 	bool                                                         ShouldSpawnShipCloud;                              // 0x37(0x1)
 	bool                                                         RequirePlayerShipInZoneToSpawnShips;               // 0x38(0x1)
 	bool                                                         EnableSecondsUntilEncounterEndsAfterLastCrewLeft;  // 0x39(0x1)
-	char                                                         pad0x2_O2ZJC[0x2];                                 // 0x3a(0x2)
+	char                                                         pad0x2_2AY45[0x2];                                 // 0x3a(0x2)
 	int                                                          SecondsUntilEncounterEndsAfterLastCrewLeft;        // 0x3c(0x4)
 	bool                                                         EnableMaximumEncounterDuration;                    // 0x40(0x1)
-	char                                                         pad0x3_21WV4[0x3];                                 // 0x41(0x3)
+	char                                                         pad0x3_GCNXQ[0x3];                                 // 0x41(0x3)
 	int                                                          MaximumEncounterDuration;                          // 0x44(0x4)
 	byte                                                         EncounterType;                                     // 0x48(0x1)
-	char                                                         pad0x7_DL8N5[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_X0DFZ[0x7];                                 // 0x49(0x7)
 	TArray<struct Waves>                                         Waves;                                             // 0x50(0x10)
 };
 
@@ -258,9 +258,9 @@ class AIShipObstacleComponent: public ActorComponent
 {
 public:
 	byte                                                         ObstacleType;                                      // 0xc8(0x1)
-	char                                                         pad0x3_LSYV1[0x3];                                 // 0xc9(0x3)
+	char                                                         pad0x3_MS0SL[0x3];                                 // 0xc9(0x3)
 	float                                                        Radius;                                            // 0xcc(0x4)
-	char                                                         pad0x28_7Y63U[0x28];                               // 0xce(0x28)
+	char                                                         pad0x20_9PMG8[0x20];                               // 0xd0(0x20)
 };
 
 
@@ -282,9 +282,9 @@ public:
 class AIShipService: public Actor
 {
 public:
-	char                                                         pad0x20_WR92K[0x20];                               // 0x3c8(0x20)
+	char                                                         pad0x20_1FMO6[0x20];                               // 0x3c8(0x20)
 	Class AIShipServiceDataAsset*                                Params;                                            // 0x3e8(0x8)
-	char                                                         pad0x318_9T10V[0x318];                             // 0x3ee(0x318)
+	char                                                         pad0x308_96RHC[0x308];                             // 0x3f0(0x308)
 };
 
 
@@ -300,11 +300,11 @@ class AthenaAIShipController: public AthenaAIControllerBase
 {
 public:
 	Class BehaviorTree*                                          BTAsset;                                           // 0x610(0x8)
-	char                                                         pad0x18_SZ5M8[0x18];                               // 0x618(0x18)
+	char                                                         pad0x18_ID5HN[0x18];                               // 0x618(0x18)
 	Class AthenaAIShipControllerParamsDataAsset*                 ShipParamsDataAsset;                               // 0x630(0x8)
 	Class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x638(0x8)
 	Struct StandardAnchorDynamicsParameters                      AnchorDynamicsParams;                              // 0x640(0x28)
-	char                                                         pad0x148_Y1ABE[0x148];                             // 0x666(0x148)
+	char                                                         pad0xf8_0O99Y[0xf8];                               // 0x668(0xf8)
 };
 
 
@@ -317,7 +317,7 @@ public:
 	Struct BlackboardKeySelector                                 ShouldSailForwardKey;                              // 0xc0(0x28)
 	Struct BlackboardKeySelector                                 TimeToSailForwardKey;                              // 0xe8(0x28)
 	Struct BlackboardKeySelector                                 CaptainIsPresentKey;                               // 0x110(0x28)
-	char                                                         pad0x68_6S42L[0x68];                               // 0x136(0x68)
+	char                                                         pad0x18_5Q4MA[0x18];                               // 0x138(0x18)
 };
 
 
@@ -335,7 +335,7 @@ class BTService_UpdateTargetLocationForPassiveShip: public BTService
 {
 public:
 	Struct BlackboardKeySelector                                 TargetLocationKey;                                 // 0x70(0x28)
-	char                                                         pad0x80_Z2DJ6[0x80];                               // 0x96(0x80)
+	char                                                         pad0x30_3U6CG[0x30];                               // 0x98(0x30)
 };
 
 
@@ -345,7 +345,7 @@ class BTTask_AIShipSurface: public BTTask_BlackboardBase
 public:
 	float                                                        MaxSpeed;                                          // 0x88(0x4)
 	float                                                        PreSurfaceDelay;                                   // 0x8c(0x4)
-	char                                                         pad0x10_53D2T[0x10];                               // 0x8e(0x10)
+	char                                                         pad0x8_4RVEA[0x8];                                 // 0x90(0x8)
 };
 
 
@@ -370,7 +370,7 @@ public:
 	Struct BlackboardKeySelector                                 ShouldSailForwardKey;                              // 0x88(0x28)
 	Struct BlackboardKeySelector                                 TimeToSailForwardKey;                              // 0xb0(0x28)
 	Struct BlackboardKeySelector                                 IsCaptainPresentKey;                               // 0xd8(0x28)
-	char                                                         pad0x80_IK52T[0x80];                               // 0xfe(0x80)
+	char                                                         pad0x30_4D20V[0x30];                               // 0x100(0x30)
 };
 
 
@@ -380,7 +380,7 @@ class BTTask_SailShipToLocation: public BTTask_BlackboardBase
 public:
 	Struct BlackboardKeySelector                                 TargetLocationKey;                                 // 0x88(0x28)
 	float                                                        DistanceThresholdToConsiderTargetReached;          // 0xb0(0x4)
-	char                                                         pad0x24_A2R36[0x24];                               // 0xb2(0x24)
+	char                                                         pad0x1c_30B71[0x1c];                               // 0xb4(0x1c)
 };
 
 
@@ -411,7 +411,7 @@ class IsAIShipEncounterTypeStatCondition: public StatCondition
 {
 public:
 	byte                                                         EncounterType;                                     // 0x28(0x1)
-	char                                                         pad0x9_2H77V[0x9];                                 // 0x27(0x9)
+	char                                                         pad0x7_YGFE7[0x7];                                 // 0x29(0x7)
 };
 
 

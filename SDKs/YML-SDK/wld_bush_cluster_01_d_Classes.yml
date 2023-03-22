@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 wld_bush_cluster_01_d_C:
   Attributes:
-  - Name: pad0x7cccd0d5_2T168[0x7cccd0d5]
-    Offset: '-0x7ccccccd'
-    Size: '0x7cccd0d5'
-    Type: char
   - Name: None
     Offset: '0x408'
     Size: '0x8'
@@ -18,7 +14,7 @@ wld_bush_cluster_01_d_C:
     Offset: '0x418'
     Size: '0x8'
     Type: Class SceneComponent*
-  ClassSize: '0x7cccd0ed'
+  ClassSize: '0x18'
   FullSize: '0x420'
-  InheritedSize: '-0x7ccccccd'
-  Super: ''
+  InheritedSize: '0x408'
+  Super: None

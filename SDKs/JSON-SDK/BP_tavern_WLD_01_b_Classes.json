@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "None",
-        "Type": "None None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x3c8"
       },

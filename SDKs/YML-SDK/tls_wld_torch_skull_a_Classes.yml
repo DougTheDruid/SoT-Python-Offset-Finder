@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 tls_wld_torch_skull_a_C:
   Attributes:
-  - Name: None
+  - Name: PointLight
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: None
+  - Name: Fire
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*

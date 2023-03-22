@@ -11,12 +11,7 @@ class BP_AnimatedStepsComponent_C: public AnimatedStepsComponent
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0xf0(0x8)
-	TArray<Float None>                                           None;                                              // 0xf8(0x10)
-	TArray<Float None>                                           None;                                              // 0x108(0x10)
-	Class CurveFloat*                                            None;                                              // 0x118(0x8)
-	float                                                        None;                                              // 0x120(0x4)
-	float                                                        None;                                              // 0x124(0x4)
-	float                                                        None;                                              // 0x128(0x4)
+	char                                                         pad0x34_DX9AS[0x34];                               // 0xf8(0x34)
 };
 
 

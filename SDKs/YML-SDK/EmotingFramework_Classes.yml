@@ -8,7 +8,7 @@ EmoteCameraInterface:
   Super: Interface
 EmoteCard:
   Attributes:
-  - Name: pad0x8_78JZR[0x8]
+  - Name: pad0x8_7REQF[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -28,9 +28,9 @@ EmoteCard:
     Offset: '0x3e8'
     Size: '0x10'
     Type: Struct Int32Range
-  - Name: pad0x130_DTK1P[0x130]
-    Offset: '0x3f6'
-    Size: '0x130'
+  - Name: pad0x110_DM360[0x110]
+    Offset: '0x3f8'
+    Size: '0x110'
     Type: char
   ClassSize: '0x140'
   FullSize: '0x508'
@@ -70,9 +70,9 @@ EmotePropDiceData:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_89U53[0x9]
-    Offset: '0x27'
-    Size: '0x9'
+  - Name: pad0x7_NSXWR[0x7]
+    Offset: '0x29'
+    Size: '0x7'
     Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
@@ -100,7 +100,7 @@ EmoteRandomFromListAsset:
   Super: DataAsset
 EmoteRandomObject:
   Attributes:
-  - Name: pad0x8_VOQ6W[0x8]
+  - Name: pad0x8_LVBIG[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -112,9 +112,9 @@ EmoteRandomObject:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: pad0x128_EF0T8[0x128]
-    Offset: '0x3de'
-    Size: '0x128'
+  - Name: pad0x118_C26FL[0x118]
+    Offset: '0x3e0'
+    Size: '0x118'
     Type: char
   ClassSize: '0x130'
   FullSize: '0x4f8'
@@ -126,9 +126,9 @@ EmoteSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_54DGE[0xc]
-    Offset: '0x3a'
-    Size: '0xc'
+  - Name: pad0x4_30KFU[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
     Type: char
   ClassSize: '0x8'
   FullSize: '0x40'

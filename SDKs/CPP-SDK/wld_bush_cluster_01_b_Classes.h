@@ -6,11 +6,10 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x7cccd105 (Full Size[0x438] - InheritedSize[-0x7ccccccd]
-class wld_bush_cluster_01_b_C
+// Size 0x30 (Full Size[0x438] - InheritedSize[0x408]
+class wld_bush_cluster_01_b_C: public None
 {
 public:
-	char                                                         pad0x7cccd0d5_UXJA7[0x7cccd0d5];                   // -0x7ccccccd(0x7cccd0d5)
 	Class NonVagueNonUniqueLandmarkComponent*                    None;                                              // 0x408(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)

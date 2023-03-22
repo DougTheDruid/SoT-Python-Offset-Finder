@@ -6,9 +6,9 @@ BP_Prompt_ScuttleShip_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x132_ZRMKE[0x132]
+  - Name: pad0x12a_Y5CC8[0x12a]
     Offset: '0x120'
-    Size: '0x132'
+    Size: '0x12a'
     Type: char
   - Name: Handle_CharacterDeadEvent
     Offset: '0x120'

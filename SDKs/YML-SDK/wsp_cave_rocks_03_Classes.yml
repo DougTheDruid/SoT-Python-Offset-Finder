@@ -2,47 +2,47 @@
 # https://github.com/DougTheDruid
 wsp_cave_rocks_03_C:
   Attributes:
-  - Name: None
+  - Name: StaticMesh1
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent06
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent05
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent04
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent03
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent02
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent01
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent0
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x450'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x50'
   FullSize: '0x458'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

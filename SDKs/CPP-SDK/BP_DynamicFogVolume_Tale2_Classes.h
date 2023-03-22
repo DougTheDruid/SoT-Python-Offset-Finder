@@ -7,13 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x14 (Full Size[0x44c] - InheritedSize[0x438]
-class BP_DynamicFogVolume_Tale2_C: public BP_DynamicDensityFogVolume_C
+class BP_DynamicFogVolume_Tale2_C: public None
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x438(0x8)
-	float                                                        WorldFadeDistanceStart;                            // 0x440(0x4)
-	float                                                        WorldFadeDistanceRange;                            // 0x444(0x4)
-	float                                                        FogMaxDensity;                                     // 0x448(0x4)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x438(0x8)
+	float                                                        None;                                              // 0x440(0x4)
+	float                                                        None;                                              // 0x444(0x4)
+	float                                                        None;                                              // 0x448(0x4)
 };
 
 

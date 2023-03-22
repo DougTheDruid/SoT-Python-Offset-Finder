@@ -25,7 +25,7 @@ EventReactionDesc:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0SLG2[0x4]
+  - Name: pad0x4_DAB5W[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

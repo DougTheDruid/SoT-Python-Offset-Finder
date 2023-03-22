@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_PetPreview_Base_C:
   Attributes:
-  - Name: None
+  - Name: CosmeticItemAnimation
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class CosmeticItemAnimationComponent*

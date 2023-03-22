@@ -6,15 +6,15 @@ BP_Prompt_ProposeVoyage_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x132_QB0PI[0x132]
+  - Name: pad0x12a_D0JMK[0x12a]
     Offset: '0x120'
-    Size: '0x132'
+    Size: '0x12a'
     Type: char
   - Name: State_OfferPurchased
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1AIWQ[0x7]
+  - Name: pad0x7_91PR6[0x7]
     Offset: '0x121'
     Size: '0x7'
     Type: char
@@ -26,7 +26,7 @@ BP_Prompt_ProposeVoyage_C:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_UHJ3O[0x7]
+  - Name: pad0x7_QE1P8[0x7]
     Offset: '0x171'
     Size: '0x7'
     Type: char

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AddMarkToTornMapStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x20_HHWQG[0x20];                               // 0x98(0x20)
+	char                                                         pad0x20_MBPH5[0x20];                               // 0x98(0x20)
 	class                                                        MapMark;                                           // 0xb8(0x8)
 };
 
@@ -69,7 +69,7 @@ class RegionIslandFilteredSelectionStrategy: public RegionIslandSelectionStrateg
 public:
 	TArray<Byte IslandTypes>                                     IslandTypes;                                       // 0x28(0x10)
 	bool                                                         UseMaxDistance;                                    // 0x38(0x1)
-	char                                                         pad0x3_QJQMA[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_BIQ9Z[0x3];                                 // 0x39(0x3)
 	float                                                        MaxDistanceFromStartingIsland;                     // 0x3c(0x4)
 };
 
@@ -87,7 +87,7 @@ class SelectIslandsFromRegionStep: public TaleQuestStep
 public:
 	Class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
 	Class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0xa0(0x8)
-	char                                                         pad0x60_VVIKE[0x60];                               // 0xa6(0x60)
+	char                                                         pad0x50_F2PXQ[0x50];                               // 0xa8(0x50)
 };
 
 

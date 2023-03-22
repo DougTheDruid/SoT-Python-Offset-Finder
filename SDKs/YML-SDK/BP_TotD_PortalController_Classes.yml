@@ -6,10 +6,66 @@ BP_TotD_PortalController_C:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x70_Y6913[0x70]
-    Offset: '0x3ce'
-    Size: '0x70'
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class AnimNotifyWwiseEmitterComponent*
+  - Name: None
+    Offset: '0x3d8'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: None
+    Offset: '0x3e0'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x3e4'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x3e8'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x3ec'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x3f0'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x3f4'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_65D5J[0x3]
+    Offset: '0x3f5'
+    Size: '0x3'
     Type: char
+  - Name: None
+    Offset: '0x3f8'
+    Size: '0x8'
+    Type: Class TimelineComponent*
+  - Name: None
+    Offset: '0x400'
+    Size: '0x10'
+    Type: TArray<class MaterialInstanceDynamic*>
+  - Name: None
+    Offset: '0x410'
+    Size: '0x10'
+    Type: TArray<class PointLightComponent*>
+  - Name: None
+    Offset: '0x420'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x424'
+    Size: '0x4'
+    Type: float
+  - Name: None
+    Offset: '0x428'
+    Size: '0x8'
+    Type: Class Texture2D*
   ClassSize: '0x68'
   FullSize: '0x430'
   InheritedSize: '0x3c8'

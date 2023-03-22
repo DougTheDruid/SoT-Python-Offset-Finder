@@ -7,12 +7,12 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18 (Full Size[0x420] - InheritedSize[0x408]
-class bsp_plm_cluster_02_a_C: public None
+class bsp_plm_cluster_02_a_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    None;                                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
-	Class SceneComponent*                                        None;                                              // 0x418(0x8)
+	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x410(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x418(0x8)
 };
 
 

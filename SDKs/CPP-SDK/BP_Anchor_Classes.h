@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Anchor_C: public Anchor
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x400(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x400(0x8)
 };
 
 

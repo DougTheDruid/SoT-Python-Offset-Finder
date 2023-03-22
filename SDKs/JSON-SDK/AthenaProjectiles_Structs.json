@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_I6IH7[0x4]",
+        "Name": "pad0x4_VEMSD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -32,7 +32,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_SG0DE[0x3]",
+        "Name": "pad0x3_ZXZPC[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"

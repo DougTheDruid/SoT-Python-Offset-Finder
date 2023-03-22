@@ -10,17 +10,17 @@ namespace DougsSDKDumper
 class BP_Merchant_C: public CompanyShopkeeper
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x698(0x8)
-	Class CommodityRedemptionComponent*                          CommodityRedemption;                               // 0x6a0(0x8)
-	Class EmissaryMaxRankQuestProvider*                          EmissaryMaxRankQuestProvider;                      // 0x6a8(0x8)
-	Class CargoRunParticipantComponent*                          CargoRunParticipant;                               // 0x6b0(0x8)
-	Class CapsuleComponent*                                      SolidHits;                                         // 0x6b8(0x8)
-	Class NPCDialogComponent*                                    NPCDialogSellCrate;                                // 0x6c0(0x8)
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x6c8(0x8)
-	Class MerchantCrateProviderComponent*                        MerchantCrateProvider;                             // 0x6d0(0x8)
-	Class SkeletalMeshComponent*                                 cmp_pocket_watch_mrh_01_e;                         // 0x6d8(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6e0(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6e8(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x698(0x8)
+	Class CommodityRedemptionComponent*                          None;                                              // 0x6a0(0x8)
+	Class EmissaryMaxRankQuestProvider*                          None;                                              // 0x6a8(0x8)
+	Class CargoRunParticipantComponent*                          None;                                              // 0x6b0(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0x6b8(0x8)
+	Class NPCDialogComponent*                                    None;                                              // 0x6c0(0x8)
+	Class NPCDialogComponent*                                    None;                                              // 0x6c8(0x8)
+	Class MerchantCrateProviderComponent*                        None;                                              // 0x6d0(0x8)
+	Class SkeletalMeshComponent*                                 None;                                              // 0x6d8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x6e0(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x6e8(0x8)
 };
 
 

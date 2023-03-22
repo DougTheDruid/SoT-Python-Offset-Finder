@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_Wheel_C: public Wheel
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0xa30(0x8)
-	Class SphereComponent*                                       None;                                              // 0xa38(0x8)
-	Class InteractableComponent*                                 None;                                              // 0xa40(0x8)
-	Struct ObjectMessagingHandle                                 None;                                              // 0xa48(0x48)
-	Struct ObjectMessagingHandle                                 None;                                              // 0xa90(0x48)
-	Struct ObjectMessagingHandle                                 None;                                              // 0xad8(0x48)
-	Struct WwiseEmitter                                          None;                                              // 0xb20(0x20)
-	bool                                                         None;                                              // 0xb40(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa30(0x8)
+	Class SphereComponent*                                       ProjectileCollision;                               // 0xa38(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0xa40(0x8)
+	Struct ObjectMessagingHandle                                 Wheel Centered;                                    // 0xa48(0x48)
+	Struct ObjectMessagingHandle                                 Wheel Movement Started;                            // 0xa90(0x48)
+	Struct ObjectMessagingHandle                                 Wheel Movement Stopped;                            // 0xad8(0x48)
+	Struct WwiseEmitter                                          AudioEmitter;                                      // 0xb20(0x20)
+	bool                                                         ShipWheelTurning;                                  // 0xb40(0x1)
 };
 
 

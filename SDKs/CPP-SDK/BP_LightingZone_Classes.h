@@ -11,7 +11,16 @@ class BP_LightingZone_C: public Actor
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	char                                                         pad0x45_HHLB3[0x45];                               // 0x3ce(0x45)
+	Class SphereComponent*                                       None;                                              // 0x3d0(0x8)
+	Class SphereComponent*                                       None;                                              // 0x3d8(0x8)
+	Class LightingZoneComponent*                                 None;                                              // 0x3e0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3e8(0x8)
+	float                                                        None;                                              // 0x3f0(0x4)
+	float                                                        None;                                              // 0x3f4(0x4)
+	float                                                        None;                                              // 0x3f8(0x4)
+	int                                                          None;                                              // 0x3fc(0x4)
+	int                                                          None;                                              // 0x400(0x4)
+	bool                                                         None;                                              // 0x404(0x1)
 };
 
 

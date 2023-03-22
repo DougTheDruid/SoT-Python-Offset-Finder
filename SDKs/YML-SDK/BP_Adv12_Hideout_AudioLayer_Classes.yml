@@ -2,27 +2,27 @@
 # https://github.com/DougTheDruid
 BP_Adv12_Hideout_AudioLayer_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: AudioSpace
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class AudioSpaceComponent*
-  - Name: None
+  - Name: AudioPortal
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: Scene
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: TavernFire_Play
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: None
+  - Name: TavernFire_Stop
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class WwiseEvent*

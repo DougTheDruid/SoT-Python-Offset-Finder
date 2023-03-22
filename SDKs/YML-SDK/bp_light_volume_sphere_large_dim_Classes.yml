@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 bp_light_volume_sphere_large_dim_C:
   Attributes:
-  - Name: None
+  - Name: StaticMeshComponent0
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

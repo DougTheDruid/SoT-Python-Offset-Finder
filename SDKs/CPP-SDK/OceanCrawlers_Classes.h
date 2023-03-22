@@ -11,7 +11,7 @@ class BTTask_BroadcastOceanCrawlerAbilityAudioEvent: public BTTaskNode
 {
 public:
 	byte                                                         OceanCrawlerAudioKeyToBroadcast;                   // 0x60(0x1)
-	char                                                         pad0x9_PPWCW[0x9];                                 // 0x5f(0x9)
+	char                                                         pad0x7_24VFF[0x7];                                 // 0x61(0x7)
 };
 
 
@@ -34,7 +34,7 @@ class OceanCrawlerAudioBroadcaster: public ActorComponent
 public:
 	Class OceanCrawlerAudioParamsDataAsset*                      AudioDataAsset;                                    // 0xc8(0x8)
 	Class Actor*                                                 CachedOwner;                                       // 0xd0(0x8)
-	char                                                         pad0xd8_UGGGO[0xd8];                               // 0xd6(0xd8)
+	char                                                         pad0xc8_FVFP9[0xc8];                               // 0xd8(0xc8)
 };
 
 

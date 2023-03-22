@@ -90,7 +90,7 @@ TestAbstractActor:
   Super: Actor
 TestLevelScriptActor:
   Attributes:
-  - Name: pad0x8_EBCAX[0x8]
+  - Name: pad0x8_C1RPS[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -118,7 +118,7 @@ TestLevelScriptActor:
     Offset: '0x3dd'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_4B520[0x2]
+  - Name: pad0x2_PUBF2[0x2]
     Offset: '0x3de'
     Size: '0x2'
     Type: char
@@ -134,7 +134,7 @@ TestLevelScriptActor:
     Offset: '0x3f1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_SM9PG[0x2]
+  - Name: pad0x2_FKGI4[0x2]
     Offset: '0x3f2'
     Size: '0x2'
     Type: char
@@ -146,7 +146,7 @@ TestLevelScriptActor:
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_S7EFL[0x4]
+  - Name: pad0x4_7H824[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char
@@ -174,9 +174,9 @@ TestLevelScriptActor:
     Offset: '0x450'
     Size: '0x4'
     Type: int
-  - Name: pad0x44_V7G2X[0x44]
-    Offset: '0x452'
-    Size: '0x44'
+  - Name: pad0x3c_J4JVW[0x3c]
+    Offset: '0x454'
+    Size: '0x3c'
     Type: char
   ClassSize: '0xc0'
   FullSize: '0x490'

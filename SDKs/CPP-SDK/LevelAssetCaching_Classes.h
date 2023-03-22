@@ -24,9 +24,9 @@ public:
 class LevelAssetCachingService: public Object
 {
 public:
-	char                                                         pad0x18_JJHLL[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_USHQE[0x18];                               // 0x28(0x18)
 	struct FName                                                 CurrentRegion;                                     // 0x40(0x8)
-	char                                                         pad0x38_HJS6J[0x38];                               // 0x46(0x38)
+	char                                                         pad0x28_XWD3U[0x28];                               // 0x48(0x28)
 };
 
 
@@ -42,9 +42,9 @@ public:
 class RegionalAssetCache: public Object
 {
 public:
-	char                                                         pad0x10_B2CKC[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_PQKP8[0x10];                               // 0x28(0x10)
 	Class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
-	char                                                         pad0xa8_K4HUO[0xa8];                               // 0x3e(0xa8)
+	char                                                         pad0x98_GG5H8[0x98];                               // 0x40(0x98)
 };
 
 
@@ -66,9 +66,9 @@ public:
 class RegionLookupGeneratedGrid: public Object
 {
 public:
-	char                                                         pad0x8_GFBZT[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_2TG7S[0x8];                                 // 0x28(0x8)
 	Struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
-	char                                                         pad0xa8_HPKRM[0xa8];                               // 0x56(0xa8)
+	char                                                         pad0x58_HI8CF[0x58];                               // 0x58(0x58)
 };
 
 

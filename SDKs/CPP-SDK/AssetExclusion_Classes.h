@@ -12,7 +12,7 @@ class AssetExclusionCanaryAsset: public DataAsset
 public:
 	Struct FText                                                 TextMustNotBeEmpty;                                // 0x28(0x38)
 	int                                                          ValueMustBeSetTo10;                                // 0x60(0x4)
-	char                                                         pad0xc_V29R0[0xc];                                 // 0x62(0xc)
+	char                                                         pad0x4_6YYYB[0x4];                                 // 0x64(0x4)
 };
 
 

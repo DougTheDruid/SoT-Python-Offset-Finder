@@ -38,7 +38,7 @@ struct ActiveStatusEffect
 public:
 	TArray<class Class*>                                         SourceStatus;                                      // 0x0(0x10)
 	Struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
-	char                                                         pad0x4_5HEOX[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_97JWW[0x4];                                 // 0x14(0x4)
 	TArray<class StatusResponse*>                                ResponseTemplates;                                 // 0x18(0x10)
 	TArray<class StatusResponse*>                                InstancedResponses;                                // 0x28(0x10)
 	bool                                                         ResponsesAreActive;                                // 0x38(0x1)

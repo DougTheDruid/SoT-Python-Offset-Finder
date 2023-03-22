@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class CoherentUIGTBaseComponent: public ActorComponent
 {
 public:
-	char                                                         pad0xa8_VYUZO[0xa8];                               // 0xc8(0xa8)
+	char                                                         pad0xa8_B933L[0xa8];                               // 0xc8(0xa8)
 	Class TextureRenderTarget2D*                                 Texture;                                           // 0x170(0x8)
 	byte                                                         Filter;                                            // 0x178(0x1)
 	bool                                                         bReceiveInput;                                     // 0x179(0x1)
@@ -25,7 +25,7 @@ public:
 	int                                                          LayerHeightThreshold;                              // 0x194(0x4)
 	bool                                                         bEnableAdditionalDefaultStyles;                    // 0x198(0x1)
 	bool                                                         bDelayedUpdate;                                    // 0x199(0x1)
-	char                                                         pad0x178_SQ08P[0x178];                             // 0x198(0x178)
+	char                                                         pad0x176_VW4LE[0x176];                             // 0x19a(0x176)
 };
 
 
@@ -37,10 +37,10 @@ public:
 	int                                                          Width;                                             // 0x320(0x4)
 	int                                                          Height;                                            // 0x324(0x4)
 	bool                                                         ManualTexture;                                     // 0x328(0x1)
-	char                                                         pad0x3_LI288[0x3];                                 // 0x329(0x3)
+	char                                                         pad0x3_5J5OD[0x3];                                 // 0x329(0x3)
 	float                                                        ClickThroughAlphaThreshold;                        // 0x32c(0x4)
 	bool                                                         Transparent;                                       // 0x330(0x1)
-	char                                                         pad0x19_CDGAV[0x19];                               // 0x32f(0x19)
+	char                                                         pad0x17_ZT2SC[0x17];                               // 0x331(0x17)
 };
 
 
@@ -50,7 +50,7 @@ class CoherentUIGTLiveView: public ActorComponent
 public:
 	Struct FString                                               LinkName;                                          // 0xc8(0x10)
 	Class TextureRenderTarget2D*                                 Texture;                                           // 0xd8(0x8)
-	char                                                         pad0x28_S2EES[0x28];                               // 0xde(0x28)
+	char                                                         pad0x18_WG57P[0x18];                               // 0xe0(0x18)
 };
 
 
@@ -79,7 +79,7 @@ public:
 class CoherentUIGTJSEvent: public Object
 {
 public:
-	char                                                         pad0x80_4US84[0x80];                               // 0x28(0x80)
+	char                                                         pad0x80_OYSIA[0x80];                               // 0x28(0x80)
 	TArray<class Struct*>                                        StructTypes;                                       // 0xa8(0x10)
 };
 
@@ -89,7 +89,7 @@ class CoherentUIGTJSPayload: public Object
 {
 public:
 	Struct FString                                               EventName;                                         // 0x28(0x10)
-	char                                                         pad0x28_B8P5W[0x28];                               // 0x36(0x28)
+	char                                                         pad0x8_POPOW[0x8];                                 // 0x38(0x8)
 };
 
 
@@ -107,7 +107,7 @@ public:
 	Struct StringAssetReference                                  HUDMaterialName;                                   // 0x310(0x10)
 	Class Material*                                              HUDMaterial;                                       // 0x320(0x8)
 	Class MaterialInstanceDynamic*                               HUDMaterialInstance;                               // 0x328(0x8)
-	char                                                         pad0x18_DJVDC[0x18];                               // 0x32e(0x18)
+	char                                                         pad0x8_TCVJV[0x8];                                 // 0x330(0x8)
 };
 
 
@@ -123,7 +123,7 @@ class CoherentUIGTGameHUD: public HUD
 {
 public:
 	Class CoherentUIGTHUD*                                       CoherentUIGTHUD;                                   // 0x4c0(0x8)
-	char                                                         pad0xa0_8CQMP[0xa0];                               // 0x4c6(0xa0)
+	char                                                         pad0x90_1BNZ8[0x90];                               // 0x4c8(0x90)
 };
 
 
@@ -139,7 +139,7 @@ class CoherentUIGTSettings: public Object
 {
 public:
 	bool                                                         EnableLiveReload;                                  // 0x28(0x1)
-	char                                                         pad0x3_UQMJP[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_70YD5[0x3];                                 // 0x29(0x3)
 	int                                                          InspectorPort;                                     // 0x2c(0x4)
 	int                                                          WebdriverPort;                                     // 0x30(0x4)
 	bool                                                         EnableWebSecurity;                                 // 0x34(0x1)
@@ -153,12 +153,12 @@ public:
 	bool                                                         bPaintToBackBuffer;                                // 0x3c(0x1)
 	bool                                                         bRespectTitleSafeZone;                             // 0x3d(0x1)
 	bool                                                         bRespectLetterboxing;                              // 0x3e(0x1)
-	char                                                         pad0x1_YTCKS[0x1];                                 // 0x3f(0x1)
+	char                                                         pad0x1_9KFMM[0x1];                                 // 0x3f(0x1)
 	Struct FString                                               HUDMaterialName;                                   // 0x40(0x10)
 	Struct FString                                               CoUIResourcesRoot;                                 // 0x50(0x10)
 	bool                                                         TickWhileGameIsPaused;                             // 0x60(0x1)
 	byte                                                         MSAA;                                              // 0x61(0x1)
-	char                                                         pad0x8_QWDI1[0x8];                                 // 0x60(0x8)
+	char                                                         pad0x6_J9TDZ[0x6];                                 // 0x62(0x6)
 };
 
 
@@ -166,14 +166,14 @@ public:
 class CoherentUIGTWidget: public Widget
 {
 public:
-	char                                                         pad0x20_SWSJW[0x20];                               // 0x138(0x20)
+	char                                                         pad0x20_Y7RCU[0x20];                               // 0x138(0x20)
 	Class Actor*                                                 Owner;                                             // 0x158(0x8)
 	byte                                                         Filter;                                            // 0x1f8(0x1)
 	bool                                                         bReceiveInput;                                     // 0x1f9(0x1)
 	bool                                                         bReceiveInputWhenTransparent;                      // 0x1fa(0x1)
 	bool                                                         bGammaCorrectedMaterial;                           // 0x1fb(0x1)
 	bool                                                         AllowPerformanceWarnings;                          // 0x1fc(0x1)
-	char                                                         pad0x3_ESYKW[0x3];                                 // 0x1fd(0x3)
+	char                                                         pad0x3_SK9GA[0x3];                                 // 0x1fd(0x3)
 	float                                                        ExecuteJSTimersThresholdMs;                        // 0x200(0x4)
 	float                                                        UpdateStylesAndLayoutThresholdMs;                  // 0x204(0x4)
 	float                                                        RecordRenderingCommandsThresholdMs;                // 0x208(0x4)
@@ -182,11 +182,11 @@ public:
 	int                                                          LayerWidthThreshold;                               // 0x214(0x4)
 	int                                                          LayerHeightThreshold;                              // 0x218(0x4)
 	bool                                                         bEnableAdditionalDefaultStyles;                    // 0x21c(0x1)
-	char                                                         pad0x1a3_2KNCH[0x1a3];                             // 0x21d(0x1a3)
+	char                                                         pad0x1a3_FFFXX[0x1a3];                             // 0x21d(0x1a3)
 	Struct FString                                               URL;                                               // 0x3c0(0x10)
 	float                                                        ClickThroughAlphaThreshold;                        // 0x3d0(0x4)
 	bool                                                         Transparent;                                       // 0x3d4(0x1)
-	char                                                         pad0x5_QPKHH[0x5];                                 // 0x3d3(0x5)
+	char                                                         pad0x3_50E7F[0x3];                                 // 0x3d5(0x3)
 };
 
 

@@ -2,699 +2,699 @@
 # https://github.com/DougTheDruid
 BP_LargeShipTemplate_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x1710'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: HarpoonItemLocation1
     Offset: '0x1718'
     Size: '0x8'
     Type: Class HarpoonItemLocationComponent*
-  - Name: None
+  - Name: HarpoonItemLocation
     Offset: '0x1720'
     Size: '0x8'
     Type: Class HarpoonItemLocationComponent*
-  - Name: None
+  - Name: FactionGBowParticles
     Offset: '0x1728'
     Size: '0x8'
     Type: Class FactionParticleComponent*
-  - Name: None
+  - Name: FactionBBowParticles
     Offset: '0x1730'
     Size: '0x8'
     Type: Class FactionParticleComponent*
-  - Name: None
+  - Name: VFX_SplashProbe_Both_Splashes_Details
     Offset: '0x1738'
     Size: '0x8'
     Type: Class SplashProbeVFXComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_rectangle_surface_Huge_Bottom
     Offset: '0x1740'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_rectangle_surface_Huge_Top
     Offset: '0x1748'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: VFX_SplashProbe_Both_Splashes_Second
     Offset: '0x1750'
     Size: '0x8'
     Type: Class SplashProbeVFXComponent*
-  - Name: None
+  - Name: VFX_SplashProbe_OnShip_Splashes
     Offset: '0x1758'
     Size: '0x8'
     Type: Class SplashProbeVFXComponent*
-  - Name: None
+  - Name: VFX_SplashProbe_Offship_Splashes
     Offset: '0x1760'
     Size: '0x8'
     Type: Class SplashProbeVFXComponent*
-  - Name: None
+  - Name: VFX_SplashProbe_Underwater
     Offset: '0x1768'
     Size: '0x8'
     Type: Class SplashProbeVFXComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_rectangle_S_Local
     Offset: '0x1770'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_rectangle_S_Local3
     Offset: '0x1778'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_rectangle_S_Local2
     Offset: '0x1780'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local8
     Offset: '0x1788'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local6
     Offset: '0x1790'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local7
     Offset: '0x1798'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local5
     Offset: '0x17a0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local2
     Offset: '0x17a8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local4
     Offset: '0x17b0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local3
     Offset: '0x17b8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_captain_Local
     Offset: '0x17c0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_playerships_bubbles_cannon_Local1
     Offset: '0x17c8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: VFX_Scene
     Offset: '0x17d0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: ShipFactionCustomisation
     Offset: '0x17d8'
     Size: '0x8'
     Type: Class ShipFactionCustomisation*
-  - Name: None
+  - Name: ShipTrinketMountpointManagerComponent_Large
     Offset: '0x17e0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_ShipTrinketMountpointManagerComponent_Large_C*
+  - Name: CaptainsLog
     Offset: '0x17e8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipsCrest
     Offset: '0x17f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Rugs
     Offset: '0x17f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Drapes
     Offset: '0x1800'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Bed
     Offset: '0x1808'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Chandelier
     Offset: '0x1810'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Curtains
     Offset: '0x1818'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Chair
     Offset: '0x1820'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageTable
     Offset: '0x1828'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageJettison
     Offset: '0x1830'
     Size: '0x8'
     Type: Class ShipStorageJettisonComponent*
-  - Name: None
+  - Name: Seagull3
     Offset: '0x1838'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: Seagull2
     Offset: '0x1840'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: SeagullManager
     Offset: '0x1848'
     Size: '0x8'
     Type: Class SeagullManagerComponent*
-  - Name: None
+  - Name: Seagull1
     Offset: '0x1850'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: Rat3
     Offset: '0x1858'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Rat2
     Offset: '0x1860'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Rat1
     Offset: '0x1868'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: BP_BedComponent
     Offset: '0x1870'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_BedComponent_C*
+  - Name: RatManager
     Offset: '0x1878'
     Size: '0x8'
     Type: Class RatManagerComponent*
-  - Name: None
+  - Name: Seat_BottomDeckBarrel
     Offset: '0x1880'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_BottomDeckBarrel
     Offset: '0x1888'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_BottomDeckBarrel
     Offset: '0x1890'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Cabin_Chest
     Offset: '0x1898'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Platform_Starboard
     Offset: '0x18a0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Platform_Port
     Offset: '0x18a8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Bannister_Bow
     Offset: '0x18b0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Bannister_Bow
     Offset: '0x18b8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_BottomDeckBarrel
     Offset: '0x18c0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_MapTable_Cooking
     Offset: '0x18c8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_MapTable
     Offset: '0x18d0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Balcony_Rear_Starboard
     Offset: '0x18d8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Balcony_Rear_Port
     Offset: '0x18e0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Plank_Port
     Offset: '0x18e8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Hatch
     Offset: '0x18f0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_Plank_Starboard
     Offset: '0x18f8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: Seat_CaptainsChair
     Offset: '0x1900'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_SeatComponent_C*
+  - Name: AIRegion
     Offset: '0x1908'
     Size: '0x8'
     Type: Class AIRegionComponent*
-  - Name: None
+  - Name: NamedPoints
     Offset: '0x1910'
     Size: '0x8'
     Type: Class NamedPointsComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelTwo6
     Offset: '0x1918'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelThree4
     Offset: '0x1920'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelThree3
     Offset: '0x1928'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelTwo5
     Offset: '0x1930'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelTwo4
     Offset: '0x1938'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelTwo3
     Offset: '0x1940'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelTwo2
     Offset: '0x1948'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelTwo1
     Offset: '0x1950'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelTwo
     Offset: '0x1958'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelThree2
     Offset: '0x1960'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelThree1
     Offset: '0x1968'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipStorageBarrelThree
     Offset: '0x1970'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: shp_galleon_ladder_gap_hits_01_a
     Offset: '0x1978'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_flag_hole_01_a
     Offset: '0x1980'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: BP_EmissaryFlag
     Offset: '0x1988'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: EmissaryFlotsamItemSpawner
     Offset: '0x1990'
     Size: '0x8'
     Type: Class EmissaryFlotsamItemSpawnComponent*
-  - Name: None
+  - Name: BP_LargeShip_CageLatch_03_a
     Offset: '0x1998'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_LargeShip_CageLatch_03_b
     Offset: '0x19a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_WaterBarrel
     Offset: '0x19a8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_Shroudbreaker
     Offset: '0x19b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ShipPetChest
     Offset: '0x19b8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: PetHangoutSpot
     Offset: '0x19c0'
     Size: '0x8'
     Type: Class PetHangoutSpotComponent*
-  - Name: None
+  - Name: ShipStorageBarrelFood2
     Offset: '0x19c8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_HarpoonLauncher1
     Offset: '0x19d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_HarpoonLauncher
     Offset: '0x19d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: RowboatMountpoint
     Offset: '0x19e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipTelemetry
     Offset: '0x19e8'
     Size: '0x8'
     Type: Class ShipTelemetryComponent*
-  - Name: None
+  - Name: BP_ShipVanityChest
     Offset: '0x19f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_Bell
     Offset: '0x19f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_LowestDeck17
     Offset: '0x1a00'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_LowestDeck16
     Offset: '0x1a08'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_LowestDeck15
     Offset: '0x1a10'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_WeaponsChest
     Offset: '0x1a18'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_EquipmentChest
     Offset: '0x1a20'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_ClothingChest
     Offset: '0x1a28'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VFX_Drips
     Offset: '0x1a30'
     Size: '0x8'
     Type: Class ShipPointParticleComponent*
-  - Name: None
+  - Name: RammingSpurZone
     Offset: '0x1a38'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: shp_shark_hits_01_a
     Offset: '0x1a40'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_Cannonball3
     Offset: '0x1a48'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BP_AmmoChest
     Offset: '0x1a50'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_Grog
     Offset: '0x1a58'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_Food
     Offset: '0x1a60'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Lanterns
     Offset: '0x1a68'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TeleportLocation11_TopDeck_NearWheel
     Offset: '0x1a70'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_09_BottomDeck_OutsideBrig
     Offset: '0x1a78'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_08_BottomDeck_FacingStairs
     Offset: '0x1a80'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_07_MiddleDeck_BackOfShip
     Offset: '0x1a88'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_06_MiddleDeck_FrontOfShip
     Offset: '0x1a90'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_05_TopDeck_NearCannons
     Offset: '0x1a98'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_04_TopDeck_FrontOfShip
     Offset: '0x1aa0'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_03_TopDeck_BackOfShip
     Offset: '0x1aa8'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_02_TopDeck_NearLadder
     Offset: '0x1ab0'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: TeleportLocation_01_CaptainsCabin
     Offset: '0x1ab8'
     Size: '0x8'
     Type: Class TeleportLocationComponent*
-  - Name: None
+  - Name: MainRigging
     Offset: '0x1ac0'
     Size: '0x8'
     Type: Class RiggingSystemComponent*
-  - Name: None
+  - Name: ControlsRigging
     Offset: '0x1ac8'
     Size: '0x8'
     Type: Class RiggingSystemComponent*
-  - Name: None
+  - Name: MapTable
     Offset: '0x1ad0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipsCompass
     Offset: '0x1ad8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Figurehead
     Offset: '0x1ae0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_LowestDeck13
     Offset: '0x1ae8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_BottomOfLowestStairs2
     Offset: '0x1af0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_BottomOfLowestStairs1
     Offset: '0x1af8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: LowerDeckBarrels
     Offset: '0x1b00'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_NearLowerStairs5
     Offset: '0x1b08'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_Cannonball2
     Offset: '0x1b10'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_Cannonball1
     Offset: '0x1b18'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_NearLowerStairs6
     Offset: '0x1b20'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_NearLowerStairs4
     Offset: '0x1b28'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_NearLowerStairs3
     Offset: '0x1b30'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_NearLowerStairs2
     Offset: '0x1b38'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_NearLowerStairs1
     Offset: '0x1b40'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ShipStorageBarrel_BehindStairs5
     Offset: '0x1b48'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonRight4
     Offset: '0x1b50'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonRight3
     Offset: '0x1b58'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonRight2
     Offset: '0x1b60'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonRight1
     Offset: '0x1b68'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonLeft4
     Offset: '0x1b70'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonLeft3
     Offset: '0x1b78'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonLeft2
     Offset: '0x1b80'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CannonLeft1
     Offset: '0x1b88'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: LadderStbd
     Offset: '0x1b90'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: LadderPort
     Offset: '0x1b98'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Hull
     Offset: '0x1ba0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastForeSailAngleRight
     Offset: '0x1ba8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastForeSailAngleLeft
     Offset: '0x1bb0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MiddleDeckBarrels
     Offset: '0x1bb8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: MastMainSailAngleRight
     Offset: '0x1bc0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMizzenSailAngleRight
     Offset: '0x1bc8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMizzenSailAngleLeft
     Offset: '0x1bd0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastForeSailHoistRight
     Offset: '0x1bd8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastForeSailHoistLeft
     Offset: '0x1be0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMizzenSailHoistRight
     Offset: '0x1be8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMizzenSailHoistLeft
     Offset: '0x1bf0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMainSailHoistRight
     Offset: '0x1bf8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMainSailHoistLeft
     Offset: '0x1c00'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Capstan
     Offset: '0x1c08'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastFore
     Offset: '0x1c10'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMain
     Offset: '0x1c18'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMizzen
     Offset: '0x1c20'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Anchor
     Offset: '0x1c28'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Rudder
     Offset: '0x1c30'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Wheel
     Offset: '0x1c38'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: AudioBoat
     Offset: '0x1c40'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MastMainSailAngleLeft
     Offset: '0x1c48'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Timeline_Disable_Secondary__Direction_FB2965C04D191887E0A8AE9EBF5C5978
     Offset: '0x1c50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_SNQG9[0x7]
+  - Name: pad0x7_1JY1F[0x7]
     Offset: '0x1c51'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: Timeline_Disable_Secondary
     Offset: '0x1c58'
     Size: '0x8'
     Type: Class TimelineComponent*
-  - Name: None
+  - Name: Timeline_DisableSplash1__Direction_6B41A1B3430D6C615C4EFEB03700C527
     Offset: '0x1c60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_VJ4UW[0x7]
+  - Name: pad0x7_KP52F[0x7]
     Offset: '0x1c61'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: Timeline_DisableSplash1
     Offset: '0x1c68'
     Size: '0x8'
     Type: Class TimelineComponent*

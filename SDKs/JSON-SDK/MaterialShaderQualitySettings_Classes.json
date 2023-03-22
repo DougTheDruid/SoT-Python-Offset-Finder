@@ -19,10 +19,10 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x14_PNBE3[0x14]",
+        "Name": "pad0xc_W6WQA[0xc]",
         "Type": "char",
-        "Size": "0x14",
-        "Offset": "0x2a"
+        "Size": "0xc",
+        "Offset": "0x2c"
       }
     ]
   },

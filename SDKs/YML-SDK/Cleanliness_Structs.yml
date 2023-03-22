@@ -6,7 +6,7 @@ CleanlinessInfo:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NN97G[0x3]
+  - Name: pad0x3_YH62F[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

@@ -12,10 +12,22 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x30_DD3KQ[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x3ce"
+        "Name": "None",
+        "Type": "Class InstancedStaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<struct None>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
       }
     ]
   },

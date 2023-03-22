@@ -15,7 +15,7 @@ public:
 	Class AIFixedWavesSpawner*                                   SpawnerCrewSize3;                                  // 0x38(0x8)
 	Class AIFixedWavesSpawner*                                   SpawnerCrewSize4;                                  // 0x40(0x8)
 	float                                                        MigrationPreventionRadius;                         // 0x48(0x4)
-	char                                                         pad0xc_0CPCE[0xc];                                 // 0x4a(0xc)
+	char                                                         pad0x4_4OQPS[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -30,10 +30,10 @@ public:
 class EnemyAIOnShipService: public Actor
 {
 public:
-	char                                                         pad0x20_1CY7Z[0x20];                               // 0x3c8(0x20)
+	char                                                         pad0x20_LAISU[0x20];                               // 0x3c8(0x20)
 	Class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3e8(0x8)
 	TArray<struct ReplicatedEncounters>                          ReplicatedEncounters;                              // 0x3f0(0x10)
-	char                                                         pad0x90_O5NVU[0x90];                               // 0x3fe(0x90)
+	char                                                         pad0x70_J8OJL[0x70];                               // 0x400(0x70)
 };
 
 

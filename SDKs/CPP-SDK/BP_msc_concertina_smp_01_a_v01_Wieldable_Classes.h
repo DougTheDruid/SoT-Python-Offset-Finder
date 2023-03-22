@@ -7,12 +7,12 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18 (Full Size[0x8e8] - InheritedSize[0x8d0]
-class BP_msc_concertina_smp_01_a_v01_Wieldable_C: public BP_Concertina_C
+class BP_msc_concertina_smp_01_a_v01_Wieldable_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   shroudmask_tp;                                     // 0x8d0(0x8)
-	Class StaticMeshComponent*                                   shroud_tp;                                         // 0x8d8(0x8)
-	Class StaticMeshComponent*                                   shroud_fp;                                         // 0x8e0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x8d0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x8d8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x8e0(0x8)
 };
 
 

@@ -59,7 +59,7 @@ public:
 	Struct NavigationDesc                                        NavigationDesc;                                    // 0x20(0x14)
 	int                                                          ProgressValue;                                     // 0x34(0x4)
 	int                                                          Threshold;                                         // 0x38(0x4)
-	char                                                         pad0x4_RU7U7[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_MT1VL[0x4];                                 // 0x3c(0x4)
 	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x40(0x40)
 };
 
@@ -69,7 +69,7 @@ struct NavigationDesc
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x3_XG0GK[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_4MI9E[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
@@ -96,7 +96,7 @@ struct OpenSeasonsMenuEvent
 {
 public:
 	byte                                                         NavigationAction;                                  // 0x0(0x1)
-	char                                                         pad0x3_GLHC7[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_M6MNI[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
@@ -114,7 +114,7 @@ struct EnableMoreButtonEvent
 {
 public:
 	byte                                                         MoreButtonSource;                                  // 0x0(0x1)
-	char                                                         pad0x3_65F76[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_CGM4E[0x3];                                 // 0x1(0x3)
 	Struct NavigationDesc                                        Navigation;                                        // 0x4(0x14)
 };
 

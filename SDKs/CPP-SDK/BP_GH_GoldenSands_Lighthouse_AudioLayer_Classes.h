@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_GH_GoldenSands_Lighthouse_AudioLayer_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3d0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3d8(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3e0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3e8(0x8)
-	Class AudioSpaceComponent*                                   None;                                              // 0x3f0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3f8(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	Class AudioPortalComponent*                                  AudioPortal_Window_02;                             // 0x3d0(0x8)
+	Class AudioPortalComponent*                                  AudioPortal_Window_01;                             // 0x3d8(0x8)
+	Class AudioPortalComponent*                                  AudioPortal_Top;                                   // 0x3e0(0x8)
+	Class AudioPortalComponent*                                  AudioPortal_Bottom;                                // 0x3e8(0x8)
+	Class AudioSpaceComponent*                                   AudioSpace;                                        // 0x3f0(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x3f8(0x8)
 };
 
 

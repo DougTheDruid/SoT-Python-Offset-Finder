@@ -17,11 +17,11 @@ public:
 class WwiseMediaSoundComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x88_EDS7L[0x88];                               // 0x2e0(0x88)
+	char                                                         pad0x88_OO4IH[0x88];                               // 0x2e0(0x88)
 	Class WwiseEvent*                                            MediaSoundEvent;                                   // 0x368(0x8)
-	char                                                         pad0x40_GXP35[0x40];                               // 0x370(0x40)
+	char                                                         pad0x40_ZA1T4[0x40];                               // 0x370(0x40)
 	float                                                        RelativeBufferSize;                                // 0x3b0(0x4)
-	char                                                         pad0x14_K8K8Q[0x14];                               // 0x3b2(0x14)
+	char                                                         pad0xc_KFFKG[0xc];                                 // 0x3b4(0xc)
 };
 
 

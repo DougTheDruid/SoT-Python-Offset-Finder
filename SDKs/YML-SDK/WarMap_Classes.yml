@@ -72,9 +72,9 @@ StopWarMapVoyageVoteValidator:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_IGDGI[0x9]
-    Offset: '0x117'
-    Size: '0x9'
+  - Name: pad0x7_F2P0X[0x7]
+    Offset: '0x119'
+    Size: '0x7'
     Type: char
   ClassSize: '0x8'
   FullSize: '0x120'
@@ -82,7 +82,7 @@ StopWarMapVoyageVoteValidator:
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
-  - Name: pad0x8_FS55Q[0x8]
+  - Name: pad0x8_Y17YH[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -98,9 +98,9 @@ WarMapInteractionComponent:
     Offset: '0x1a0'
     Size: '0x8'
     Type: class
-  - Name: pad0x30_WOS5J[0x30]
-    Offset: '0x1a6'
-    Size: '0x30'
+  - Name: pad0x20_ACAT5[0x20]
+    Offset: '0x1a8'
+    Size: '0x20'
     Type: char
   ClassSize: '0xa0'
   FullSize: '0x1c8'
@@ -132,7 +132,7 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x67_48XBO[0x67]
+  - Name: pad0x67_KUKK2[0x67]
     Offset: '0x41'
     Size: '0x67'
     Type: char
@@ -144,9 +144,9 @@ WarMapVoteConsumerBase:
     Offset: '0xb8'
     Size: '0x8'
     Type: Class BoxedRpcDispatcherComponent*
-  - Name: pad0x68_CWPS4[0x68]
-    Offset: '0xbe'
-    Size: '0x68'
+  - Name: pad0x58_NZMK3[0x58]
+    Offset: '0xc0'
+    Size: '0x58'
     Type: char
   ClassSize: '0xe8'
   FullSize: '0x118'
@@ -154,7 +154,7 @@ WarMapVoteConsumerBase:
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_5ECRU[0x10]
+  - Name: pad0x10_3TWB5[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -166,7 +166,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3dc'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: pad0x4_QRRYL[0x4]
+  - Name: pad0x4_8R1S7[0x4]
     Offset: '0x3e4'
     Size: '0x4'
     Type: char
@@ -182,9 +182,9 @@ WarMapVoteInteractionActor:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<struct FactionInfoPtrs>
-  - Name: pad0x220_1YDFA[0x220]
-    Offset: '0x40e'
-    Size: '0x220'
+  - Name: pad0x200_HCAOT[0x200]
+    Offset: '0x410'
+    Size: '0x200'
     Type: char
   ClassSize: '0x248'
   FullSize: '0x610'
@@ -212,9 +212,9 @@ WarMapVoteValidatorBase:
     Offset: '0x45'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd4_MAC82[0xd4]
-    Offset: '0x44'
-    Size: '0xd4'
+  - Name: pad0xd2_KEBX2[0xd2]
+    Offset: '0x46'
+    Size: '0xd2'
     Type: char
   ClassSize: '0xe8'
   FullSize: '0x118'

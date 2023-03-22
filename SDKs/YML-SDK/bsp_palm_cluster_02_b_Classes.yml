@@ -2,59 +2,59 @@
 # https://github.com/DougTheDruid
 bsp_palm_cluster_02_b_C:
   Attributes:
-  - Name: None
+  - Name: NonVagueNonUniqueLandmark
     Offset: '0x408'
     Size: '0x8'
     Type: Class NonVagueNonUniqueLandmarkComponent*
-  - Name: None
+  - Name: wsp_tree_palm_01_d
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__e
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__d
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__g
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__h
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__b
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__a
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMesh1
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_bush_03_a
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_bush_06_a
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Scene
     Offset: '0x468'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x68'
   FullSize: '0x470'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

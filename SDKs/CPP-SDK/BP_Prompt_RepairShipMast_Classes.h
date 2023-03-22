@@ -11,12 +11,12 @@ class BP_Prompt_RepairShipMast_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x131_LY6WK[0x131];                             // 0x120(0x131)
+	char                                                         pad0x12a_GR3EJ[0x12a];                             // 0x120(0x12a)
 	bool                                                         State_ShipMastDamaged;                             // 0x120(0x1)
-	char                                                         pad0x7_3ANGA[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x7_RSGHU[0x7];                                 // 0x121(0x7)
 	Struct ObjectMessagingHandle                                 Handle_OnMastDamaged1;                             // 0x128(0x48)
 	bool                                                         State_Complete;                                    // 0x170(0x1)
-	char                                                         pad0x7_DXXWO[0x7];                                 // 0x171(0x7)
+	char                                                         pad0x7_KTARF[0x7];                                 // 0x171(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt_RepairShip;                                 // 0x178(0x68)
 	Struct ObjectMessagingHandle                                 Handle_CurrentShipChanged;                         // 0x1e0(0x48)
 	Class Ship*                                                  CurrentShip;                                       // 0x228(0x8)

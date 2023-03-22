@@ -10,9 +10,9 @@ AnimNotifyState_WwiseSound:
     Offset: '0x30'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: pad0x60_EOOB4[0x60]
-    Offset: '0x36'
-    Size: '0x60'
+  - Name: pad0x50_2ETCC[0x50]
+    Offset: '0x38'
+    Size: '0x50'
     Type: char
   ClassSize: '0x60'
   FullSize: '0x88'
@@ -34,7 +34,7 @@ AnimNotify_WwiseSound:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_W2MM5[0x3]
+  - Name: pad0x3_GHNIL[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -46,7 +46,7 @@ AnimNotify_WwiseSound:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_7E4JN[0x7]
+  - Name: pad0x7_QSYZB[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char
@@ -54,9 +54,9 @@ AnimNotify_WwiseSound:
     Offset: '0x58'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
-  - Name: pad0x30_BP8V8[0x30]
-    Offset: '0x5e'
-    Size: '0x30'
+  - Name: pad0x20_VLJ5C[0x20]
+    Offset: '0x60'
+    Size: '0x20'
     Type: char
   ClassSize: '0x48'
   FullSize: '0x80'
@@ -156,9 +156,9 @@ TritonAcousticMap:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x34_H6PM9[0x34]
-    Offset: '0x3a'
-    Size: '0x34'
+  - Name: pad0x2c_UK3VD[0x2c]
+    Offset: '0x3c'
+    Size: '0x2c'
     Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
@@ -174,9 +174,9 @@ TritonComponent:
     Offset: '0x2e8'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_XP2WN[0xc]
-    Offset: '0x2ea'
-    Size: '0xc'
+  - Name: pad0x4_HHFLK[0x4]
+    Offset: '0x2ec'
+    Size: '0x4'
     Type: char
   ClassSize: '0x10'
   FullSize: '0x2f0'
@@ -184,7 +184,7 @@ TritonComponent:
   Super: SceneComponent
 TritonService:
   Attributes:
-  - Name: pad0x10_1KBRW[0x10]
+  - Name: pad0x10_NLVOP[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -192,7 +192,7 @@ TritonService:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class TritonComponent*>
-  - Name: pad0xa8_MSFQW[0xa8]
+  - Name: pad0xa8_IF6EW[0xa8]
     Offset: '0x48'
     Size: '0xa8'
     Type: char
@@ -200,9 +200,9 @@ TritonService:
     Offset: '0xf0'
     Size: '0x8'
     Type: Class TritonComponent*
-  - Name: pad0x68_G27HF[0x68]
-    Offset: '0xf6'
-    Size: '0x68'
+  - Name: pad0x58_2QH2L[0x58]
+    Offset: '0xf8'
+    Size: '0x58'
     Type: char
   ClassSize: '0x128'
   FullSize: '0x150'
@@ -216,7 +216,7 @@ WwiseEmitterBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 WwiseEmitterComponent:
   Attributes:
-  - Name: pad0x8_K2TBS[0x8]
+  - Name: pad0x8_AJMRU[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -256,7 +256,7 @@ WwiseObjectPoolWrapper:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_FD1HR[0x2]
+  - Name: pad0x2_VLX6L[0x2]
     Offset: '0x36'
     Size: '0x2'
     Type: char
@@ -264,9 +264,9 @@ WwiseObjectPoolWrapper:
     Offset: '0x38'
     Size: '0x28'
     Type: Struct WwiseNativeEmitterPoolDensityParams
-  - Name: pad0x68_XKICI[0x68]
-    Offset: '0x5e'
-    Size: '0x68'
+  - Name: pad0x18_9C64Y[0x18]
+    Offset: '0x60'
+    Size: '0x18'
     Type: char
   ClassSize: '0x50'
   FullSize: '0x78'

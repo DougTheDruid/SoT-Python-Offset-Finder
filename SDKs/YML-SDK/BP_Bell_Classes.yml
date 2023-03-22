@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_Bell_C:
   Attributes:
-  - Name: None
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x570'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*

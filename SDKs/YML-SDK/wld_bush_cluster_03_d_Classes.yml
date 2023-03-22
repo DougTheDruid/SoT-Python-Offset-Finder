@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 wld_bush_cluster_03_d_C:
   Attributes:
-  - Name: pad0x7cccd0d5_4S6IR[0x7cccd0d5]
-    Offset: '-0x7ccccccd'
-    Size: '0x7cccd0d5'
-    Type: char
   - Name: None
     Offset: '0x408'
     Size: '0x8'
@@ -18,11 +14,11 @@ wld_bush_cluster_03_d_C:
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: pad0x8_E48EP[0x8]
     Offset: '0x420'
     Size: '0x8'
-    Type: Class SceneComponent*
-  ClassSize: '0x7cccd0f5'
+    Type: char
+  ClassSize: '0x20'
   FullSize: '0x428'
-  InheritedSize: '-0x7ccccccd'
-  Super: ''
+  InheritedSize: '0x408'
+  Super: None

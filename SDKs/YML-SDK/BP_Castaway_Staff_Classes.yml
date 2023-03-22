@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_Castaway_Staff_C:
   Attributes:
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

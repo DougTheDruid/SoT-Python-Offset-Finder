@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_msc_drum_smp_01_a_v01_Wieldable_C:
   Attributes:
-  - Name: shroudmask_tp
+  - Name: None
     Offset: '0x8d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shroud_tp
+  - Name: None
     Offset: '0x8d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shroud_fp
+  - Name: None
     Offset: '0x8e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x18'
   FullSize: '0x8e8'
   InheritedSize: '0x8d0'
-  Super: BP_Drum_C
+  Super: None

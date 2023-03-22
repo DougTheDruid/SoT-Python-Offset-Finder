@@ -18,7 +18,7 @@ class ActorOfInterestComponent: public ActorComponent
 {
 public:
 	class                                                        ActorOfInterestId;                                 // 0xc8(0x8)
-	char                                                         pad0x28_7JBI9[0x28];                               // 0xce(0x28)
+	char                                                         pad0x18_R9KXA[0x18];                               // 0xd0(0x18)
 };
 
 
@@ -40,7 +40,7 @@ public:
 class ActorOfInterestService: public Actor
 {
 public:
-	char                                                         pad0x60_JN0N1[0x60];                               // 0x3c8(0x60)
+	char                                                         pad0x60_S683L[0x60];                               // 0x3c8(0x60)
 	Struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x428(0xa0)
 };
 

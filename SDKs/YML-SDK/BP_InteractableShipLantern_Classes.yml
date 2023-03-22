@@ -2,75 +2,75 @@
 # https://github.com/DougTheDruid
 BP_InteractableShipLantern_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x6d8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Interactable
     Offset: '0x6e0'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
+  - Name: LanternGlow
     Offset: '0x6e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Lantern
     Offset: '0x6f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Hook
     Offset: '0x6f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DynamicMaterial
     Offset: '0x700'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: DynamicGlowMaterial
     Offset: '0x708'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: FlameParameterName
     Offset: '0x710'
     Size: '0x8'
     Type: struct FName
-  - Name: None
+  - Name: GlowBrightnessParameterName
     Offset: '0x718'
     Size: '0x8'
     Type: struct FName
-  - Name: None
+  - Name: GlowRandomSeedParameterName
     Offset: '0x720'
     Size: '0x8'
     Type: struct FName
-  - Name: None
+  - Name: FlameIntensityOn
     Offset: '0x728'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: FlameIntensityOff
     Offset: '0x72c'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: GlowIntensityOn
     Offset: '0x730'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: GlowIntensityOff
     Offset: '0x734'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Uses Glow
     Offset: '0x738'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DITQ5[0x3]
+  - Name: pad0x3_579LX[0x3]
     Offset: '0x739'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: DefaultGlowColour
     Offset: '0x73c'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: None
+  - Name: CurrentFlameOFateType
     Offset: '0x74c'
     Size: '0x1'
     Type: byte

@@ -6,133 +6,133 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "None",
+        "Name": "VFX_Back",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
-        "Name": "None",
+        "Name": "VFX_Front",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
-        "Name": "None",
+        "Name": "TextCanvasRenderTarget",
         "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
-        "Name": "None",
+        "Name": "BlurCanvasRenderTarget",
         "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
-        "Name": "None",
+        "Name": "BevelCanvasRenderTarget",
         "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
-        "Name": "None",
+        "Name": "BlurCanvasMaterial",
         "Type": "Class Material*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
-        "Name": "None",
+        "Name": "BevelCanvasMaterial",
         "Type": "Class Material*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
-        "Name": "None",
+        "Name": "DynamicBlurCanvasMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x488"
       },
       {
-        "Name": "None",
+        "Name": "DynamicBevelCanvasMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x490"
       },
       {
-        "Name": "None",
+        "Name": "CrestDynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x498"
       },
       {
-        "Name": "None",
+        "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4a0"
       },
       {
-        "Name": "None",
+        "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4a4"
       },
       {
-        "Name": "None",
+        "Name": "Font",
         "Type": "Class Font*",
         "Size": "0x8",
         "Offset": "0x4a8"
       },
       {
-        "Name": "None",
+        "Name": "NameplatePool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
-        "Name": "None",
+        "Name": "EmitterCreationParams",
         "Type": "Struct WwiseEmitterCreationParams",
         "Size": "0x28",
         "Offset": "0x4b8"
       },
       {
-        "Name": "None",
+        "Name": "Cooldown",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4e0"
       },
       {
-        "Name": "pad0x4_0AY6C[0x4]",
+        "Name": "pad0x4_VPUKW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4e4"
       },
       {
-        "Name": "None",
+        "Name": "FontInfo",
         "Type": "Struct SlateFontInfo",
         "Size": "0x40",
         "Offset": "0x4e8"
       },
       {
-        "Name": "None",
+        "Name": "VFXSizeVariants",
         "Type": "TArray<class ParticleSystem*>",
         "Size": "0x10",
         "Offset": "0x528"
       },
       {
-        "Name": "None",
+        "Name": "NameSizeIndex",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x538"
       },
       {
-        "Name": "None",
+        "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x53c"

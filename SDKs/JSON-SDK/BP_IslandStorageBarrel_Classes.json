@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Replenishable",
+        "Name": "None",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
-        "Name": "IslandTelemetrySubject",
+        "Name": "None",
         "Type": "Class IslandTelemetrySubjectComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
-        "Name": "StorageContainer",
+        "Name": "None",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"

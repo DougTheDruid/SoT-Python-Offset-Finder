@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x850"
       },
       {
-        "Name": "None",
+        "Name": "ProjectileCollision",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x858"
       },
       {
-        "Name": "None",
+        "Name": "NewVar",
         "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x860"

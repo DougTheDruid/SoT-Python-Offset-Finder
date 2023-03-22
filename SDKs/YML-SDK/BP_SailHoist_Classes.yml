@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_SailHoist_C:
   Attributes:
-  - Name: None
+  - Name: Interactable
     Offset: '0x7f0'
     Size: '0x8'
     Type: Class InteractableComponent*

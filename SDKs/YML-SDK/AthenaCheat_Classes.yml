@@ -10,7 +10,7 @@ AthenaCheatManager:
     Offset: '0x80'
     Size: '0x8'
     Type: class
-  - Name: pad0x28_IJYQZ[0x28]
+  - Name: pad0x28_R7APK[0x28]
     Offset: '0x88'
     Size: '0x28'
     Type: char
@@ -30,9 +30,9 @@ AthenaCheatManager:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0x6c_4NP9G[0x6c]
-    Offset: '0xd2'
-    Size: '0x6c'
+  - Name: pad0x64_VCJMK[0x64]
+    Offset: '0xd4'
+    Size: '0x64'
     Type: char
   ClassSize: '0xc0'
   FullSize: '0x138'

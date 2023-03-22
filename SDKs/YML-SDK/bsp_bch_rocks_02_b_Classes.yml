@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 bsp_bch_rocks_02_b_C:
   Attributes:
-  - Name: None
+  - Name: bsp_rock_cliff_01_j
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: bsp_rock_medium_01_d
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: bsp_rock_medium_01_b
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c10
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__e4
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__e2
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c6
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c5
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c9
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c8
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__e3
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x58'
   FullSize: '0x460'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

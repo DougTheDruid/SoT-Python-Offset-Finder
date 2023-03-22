@@ -27,7 +27,7 @@
     "ClassSize": "0xb8",
     "Attributes": [
       {
-        "Name": "pad0x10_NPG5X[0x10]",
+        "Name": "pad0x10_F3VUR[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -39,10 +39,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xb0_BR5WB[0xb0]",
+        "Name": "pad0xa0_GQDPI[0xa0]",
         "Type": "char",
-        "Size": "0xb0",
-        "Offset": "0x3e"
+        "Size": "0xa0",
+        "Offset": "0x40"
       }
     ]
   },

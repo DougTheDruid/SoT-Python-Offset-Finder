@@ -13,9 +13,9 @@ public:
 	Class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xc8(0x8)
 	Class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xd0(0x8)
 	float                                                        MaxFrequencyDistanceSquared;                       // 0xd8(0x4)
-	char                                                         pad0x4_7OV4I[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_M834B[0x4];                                 // 0xdc(0x4)
 	bool                                                         IsSettingEnabled;                                  // 0x120(0x1)
-	char                                                         pad0xd1_R7EHX[0xd1];                               // 0x11f(0xd1)
+	char                                                         pad0xcf_OBJYV[0xcf];                               // 0x121(0xcf)
 };
 
 
@@ -27,7 +27,7 @@ public:
 	TArray<struct LocationIds>                                   LocationIds;                                       // 0x888(0x10)
 	Class InventoryItemComponent*                                InventoryItem;                                     // 0x898(0x8)
 	Class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x8a0(0x8)
-	char                                                         pad0x18_DKRE2[0x18];                               // 0x8a6(0x18)
+	char                                                         pad0x8_DVR79[0x8];                                 // 0x8a8(0x8)
 };
 
 
@@ -97,7 +97,7 @@ class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         TargetUpdateReason;                                // 0x80(0x1)
-	char                                                         pad0x9_CO28T[0x9];                                 // 0x7f(0x9)
+	char                                                         pad0x7_4G27L[0x7];                                 // 0x81(0x7)
 };
 
 

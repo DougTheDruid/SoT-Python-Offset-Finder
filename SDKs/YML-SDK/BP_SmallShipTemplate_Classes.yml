@@ -177,47 +177,47 @@ BP_SmallShipTemplate_C:
   - Name: None
     Offset: '0x1868'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x1870'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x1878'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x1880'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x1888'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x1890'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x1898'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x18a0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x18a8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x18b0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x18b8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x18c0'
     Size: '0x8'
@@ -225,7 +225,7 @@ BP_SmallShipTemplate_C:
   - Name: None
     Offset: '0x18c8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: None *
   - Name: None
     Offset: '0x18d0'
     Size: '0x8'
@@ -470,7 +470,7 @@ BP_SmallShipTemplate_C:
     Offset: '0x1ab0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_315C5[0x7]
+  - Name: pad0x7_5GPM6[0x7]
     Offset: '0x1ab1'
     Size: '0x7'
     Type: char
@@ -482,7 +482,7 @@ BP_SmallShipTemplate_C:
     Offset: '0x1ac0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_EYNLZ[0x7]
+  - Name: pad0x7_SM7OG[0x7]
     Offset: '0x1ac1'
     Size: '0x7'
     Type: char

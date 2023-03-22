@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_AudioSplineEmitter_C: public Actor
 {
 public:
-	Class SplineWithEmitterComponent*                            None;                                              // 0x3c8(0x8)
+	Class SplineWithEmitterComponent*                            SplineWithEmitter;                                 // 0x3c8(0x8)
 };
 
 

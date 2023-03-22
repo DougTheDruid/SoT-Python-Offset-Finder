@@ -11,12 +11,12 @@ class BP_Prompt_HuntersCallAtTheSovereign_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x132_DQ9BE[0x132];                             // 0x120(0x132)
+	char                                                         pad0x12b_MK5IO[0x12b];                             // 0x120(0x12b)
 	bool                                                         State_ItemWielded;                                 // 0x120(0x1)
-	char                                                         pad0x7_EFCA1[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x7_IEHH9[0x7];                                 // 0x121(0x7)
 	Struct ObjectMessagingHandle                                 Handle_OnWield;                                    // 0x128(0x48)
 	bool                                                         CaptainedSession;                                  // 0x170(0x1)
-	char                                                         pad0x7_RVIJM[0x7];                                 // 0x171(0x7)
+	char                                                         pad0x7_DTIEP[0x7];                                 // 0x171(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x178(0x68)
 };
 

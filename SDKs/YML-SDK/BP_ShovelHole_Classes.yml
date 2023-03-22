@@ -6,10 +6,26 @@ BP_ShovelHole_C:
     Offset: '0x438'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x38_66Y6E[0x38]
-    Offset: '0x43e'
-    Size: '0x38'
-    Type: char
+  - Name: None
+    Offset: '0x440'
+    Size: '0x8'
+    Type: Class DecalComponent*
+  - Name: None
+    Offset: '0x448'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0x450'
+    Size: '0x8'
+    Type: Class SceneComponent*
+  - Name: None
+    Offset: '0x458'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: None
+    Offset: '0x460'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
   ClassSize: '0x30'
   FullSize: '0x468'
   InheritedSize: '0x438'

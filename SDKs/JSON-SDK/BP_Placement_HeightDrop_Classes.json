@@ -6,79 +6,79 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "Drop Components to Floor",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x3_2K75M[0x3]",
+        "Name": "pad0x3_POW8N[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d1"
       },
       {
-        "Name": "Vertical Displacement",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3d4"
       },
       {
-        "Name": "Match Surface Orientation",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x3_A029L[0x3]",
+        "Name": "pad0x3_BBSCW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d9"
       },
       {
-        "Name": "Maximum Deviation Angle",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3dc"
       },
       {
-        "Name": "ComponentsToDrop",
+        "Name": "None",
         "Type": "TArray<class SceneComponent*>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
       {
-        "Name": "Check For Movable Components",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3f0"
       },
       {
-        "Name": "CreateParentBoundsVolume",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3f1"
       },
       {
-        "Name": "pad0x2_B0I3P[0x2]",
+        "Name": "pad0x2_PDZUD[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3f2"
       },
       {
-        "Name": "ParentBoundsPadding",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f4"
       },
       {
-        "Name": "Physical Materials To Ignore",
+        "Name": "None",
         "Type": "TArray<class PhysicalMaterial*>",
         "Size": "0x10",
         "Offset": "0x3f8"

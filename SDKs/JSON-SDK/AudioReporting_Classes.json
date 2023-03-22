@@ -19,10 +19,10 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x180_FBDQ4[0x180]",
+        "Name": "pad0x170_21PDL[0x170]",
         "Type": "char",
-        "Size": "0x180",
-        "Offset": "0xce"
+        "Size": "0x170",
+        "Offset": "0xd0"
       }
     ]
   },

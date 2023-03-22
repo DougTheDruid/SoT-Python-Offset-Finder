@@ -2,14 +2,18 @@
 # https://github.com/DougTheDruid
 act_lantern_a_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3d8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x20_BDUTS[0x20]
-    Offset: '0x3de'
-    Size: '0x20'
-    Type: char
+  - Name: vfx_fire_torch
+    Offset: '0x3e0'
+    Size: '0x8'
+    Type: Class ParticleSystemComponent*
+  - Name: PointLight
+    Offset: '0x3e8'
+    Size: '0x8'
+    Type: Class PointLightComponent*
   ClassSize: '0x18'
   FullSize: '0x3f0'
   InheritedSize: '0x3d8'

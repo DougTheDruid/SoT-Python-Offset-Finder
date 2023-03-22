@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_Sewer_GoldenSands_AudioLayer_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: AudioPortal_03
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: AudioPortal_04
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: AudioSpace_Sewer_SmallSection
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class AudioSpaceComponent*
-  - Name: None
+  - Name: AudioPortal_02
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: AudioSpace_Sewer_LargeSection
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class AudioSpaceComponent*
-  - Name: None
+  - Name: AudioPortal_01
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class AudioPortalComponent*
-  - Name: None
+  - Name: Scene
     Offset: '0x400'
     Size: '0x8'
     Type: Class SceneComponent*

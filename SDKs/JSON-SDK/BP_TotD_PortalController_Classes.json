@@ -12,10 +12,94 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x70_Y6913[0x70]",
+        "Name": "None",
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e4"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3ec"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "None",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3f4"
+      },
+      {
+        "Name": "pad0x3_65D5J[0x3]",
         "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x3ce"
+        "Size": "0x3",
+        "Offset": "0x3f5"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TimelineComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "None",
+        "Type": "TArray<class PointLightComponent*>",
+        "Size": "0x10",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x424"
+      },
+      {
+        "Name": "None",
+        "Type": "Class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x428"
       }
     ]
   },

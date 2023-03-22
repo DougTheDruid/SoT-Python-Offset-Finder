@@ -7,29 +7,29 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0xa0 (Full Size[0x6d8] - InheritedSize[0x638]
-class BP_MediumShip_StandardHull_Damage_C: public None
+class BP_MediumShip_StandardHull_Damage_C: public BP_HullDamage_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x638(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x640(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x648(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x650(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x658(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x660(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x668(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x670(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x678(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x680(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x688(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x690(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x698(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x6a0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x6a8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x6b0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x6b8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x6c0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x6c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x6d0(0x8)
+	Class StaticMeshComponent*                                   projectile_collision;                              // 0x638(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x640(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x648(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x650(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x658(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x660(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x668(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x670(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x678(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle;                                // 0x680(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_09;                             // 0x688(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_08;                             // 0x690(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_07;                             // 0x698(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_06;                             // 0x6a0(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_05;                             // 0x6a8(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_04;                             // 0x6b0(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_03;                             // 0x6b8(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_02;                             // 0x6c0(0x8)
+	Class ChildActorComponent*                                   Damage_Zone_Middle_01;                             // 0x6c8(0x8)
+	Class StaticMeshComponent*                                   shp_mid_hull_damage_01_a;                          // 0x6d0(0x8)
 };
 
 

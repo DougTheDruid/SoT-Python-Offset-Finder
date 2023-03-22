@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_BaseInternalDamageZone_C: public None
 {
 public:
-	char                                                         pad0x7_6BWBR[0x7];                                 // 0x831(0x7)
+	char                                                         pad0x7_N32YQ[0x7];                                 // 0x831(0x7)
 	Struct PointerToUberGraphFrame                               None;                                              // 0x838(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x840(0x8)
 	Class WwiseEvent*                                            None;                                              // 0x848(0x8)

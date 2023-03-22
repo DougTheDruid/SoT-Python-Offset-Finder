@@ -5,7 +5,7 @@ BP_tavern_WLD_01_b_C:
   - Name: None
     Offset: '0x3c8'
     Size: '0x8'
-    Type: None None*
+    Type: None *
   - Name: None
     Offset: '0x3d0'
     Size: '0x8'

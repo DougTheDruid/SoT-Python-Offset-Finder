@@ -27,13 +27,13 @@ public:
 	Struct ActorComponentSelector                                EmitterOwner;                                      // 0xd0(0x10)
 	Struct Vector                                                EmitterOffset;                                     // 0xe0(0xc)
 	bool                                                         UseParentEmitter;                                  // 0xec(0x1)
-	char                                                         pad0x3_GS3IB[0x3];                                 // 0xed(0x3)
+	char                                                         pad0x3_QCSDE[0x3];                                 // 0xed(0x3)
 	float                                                        RisingAudioTriggerValue;                           // 0xf0(0x4)
-	char                                                         pad0x4_A6WX3[0x4];                                 // 0xf4(0x4)
+	char                                                         pad0x4_7NAEQ[0x4];                                 // 0xf4(0x4)
 	class                                                        CameraShake;                                       // 0xf8(0x8)
 	float                                                        ShakeInnerRadius;                                  // 0x100(0x4)
 	float                                                        ShakeOuterRadius;                                  // 0x104(0x4)
-	char                                                         pad0x58_5COT3[0x58];                               // 0x106(0x58)
+	char                                                         pad0x50_38BR7[0x50];                               // 0x108(0x50)
 };
 
 
@@ -63,11 +63,11 @@ public:
 class SpireService: public Actor
 {
 public:
-	char                                                         pad0x8_O478Y[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_7U8WB[0x8];                                 // 0x3c8(0x8)
 	Class SpireServiceParams*                                    Params;                                            // 0x3d0(0x8)
 	TArray<struct ServerOnlySpireInfo>                           ServerOnlySpireInfo;                               // 0x3d8(0x10)
 	TArray<struct SpireLevels>                                   SpireLevels;                                       // 0x3e8(0x10)
-	char                                                         pad0x88_9X062[0x88];                               // 0x3f6(0x88)
+	char                                                         pad0x68_BZMPW[0x68];                               // 0x3f8(0x68)
 };
 
 
@@ -143,7 +143,7 @@ class TaleRegisterSpireStep: public TaleQuestStep
 {
 public:
 	Class TaleRegisterSpireStepDesc*                             StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x18_4AUHO[0x18];                               // 0x9e(0x18)
+	char                                                         pad0x8_BX2ZB[0x8];                                 // 0xa0(0x8)
 };
 
 

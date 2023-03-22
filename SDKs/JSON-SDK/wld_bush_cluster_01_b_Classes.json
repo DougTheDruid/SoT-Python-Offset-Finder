@@ -1,16 +1,10 @@
 {
   "wld_bush_cluster_01_b_C": {
-    "Super": "",
+    "Super": "None",
     "FullSize": "0x438",
-    "InheritedSize": "-0x7ccccccd",
-    "ClassSize": "0x7cccd105",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "pad0x7cccd0d5_UXJA7[0x7cccd0d5]",
-        "Type": "char",
-        "Size": "0x7cccd0d5",
-        "Offset": "-0x7ccccccd"
-      },
       {
         "Name": "None",
         "Type": "Class NonVagueNonUniqueLandmarkComponent*",

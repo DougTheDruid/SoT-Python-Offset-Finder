@@ -10,21 +10,21 @@ namespace DougsSDKDumper
 class BP_DynamicDensityFogVolume_C: public FogVolume
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d8(0x8)
-	float                                                        StateBlend_BlendAmount_F79089CA4C773743F03F4C978EB7C986; // 0x3e0(0x4)
-	byte                                                         StateBlend__Direction_F79089CA4C773743F03F4C978EB7C986; // 0x3e4(0x1)
-	char                                                         pad0x3_H8XCX[0x3];                                 // 0x3e5(0x3)
-	Class TimelineComponent*                                     StateBlend;                                        // 0x3e8(0x8)
-	Class MaterialInstanceDynamic*                               UpdateMaterial;                                    // 0x3f0(0x8)
-	Class CanvasRenderTarget2D*                                  Canvas;                                            // 0x3f8(0x8)
-	int                                                          CurrentState;                                      // 0x400(0x4)
-	int                                                          NextState;                                         // 0x404(0x4)
-	TArray<class Texture2D*>                                     StateTextures;                                     // 0x408(0x10)
-	int                                                          Width;                                             // 0x418(0x4)
-	int                                                          Height;                                            // 0x41c(0x4)
-	bool                                                         UseStateParameters;                                // 0x420(0x1)
-	char                                                         pad0x7_B291J[0x7];                                 // 0x421(0x7)
-	TArray<struct StateParams>                                   StateParams;                                       // 0x428(0x10)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x3d8(0x8)
+	float                                                        None;                                              // 0x3e0(0x4)
+	byte                                                         None;                                              // 0x3e4(0x1)
+	char                                                         pad0x3_25UEX[0x3];                                 // 0x3e5(0x3)
+	Class TimelineComponent*                                     None;                                              // 0x3e8(0x8)
+	Class MaterialInstanceDynamic*                               None;                                              // 0x3f0(0x8)
+	Class CanvasRenderTarget2D*                                  None;                                              // 0x3f8(0x8)
+	int                                                          None;                                              // 0x400(0x4)
+	int                                                          None;                                              // 0x404(0x4)
+	TArray<class Texture2D*>                                     None;                                              // 0x408(0x10)
+	int                                                          None;                                              // 0x418(0x4)
+	int                                                          None;                                              // 0x41c(0x4)
+	bool                                                         None;                                              // 0x420(0x1)
+	char                                                         pad0x7_XXWWP[0x7];                                 // 0x421(0x7)
+	TArray<struct None>                                          None;                                              // 0x428(0x10)
 };
 
 

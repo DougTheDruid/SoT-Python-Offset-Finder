@@ -12,7 +12,7 @@ struct TimeStampedInvasionMusicState
 public:
 	Class Company*                                               Faction;                                           // 0x0(0x8)
 	byte                                                         InvasionMusicState;                                // 0x8(0x1)
-	char                                                         pad0x7_QVTYA[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_LOF83[0x7];                                 // 0x9(0x7)
 	double                                                       EnteredStateServerTimeStamp;                       // 0x10(0x8)
 };
 
@@ -23,7 +23,7 @@ struct InvasionCrewData
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	byte                                                         InvasionStatus;                                    // 0x10(0x1)
-	char                                                         pad0x3_GAWPV[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_GY7HS[0x3];                                 // 0x11(0x3)
 	struct FName                                                 FactionIdentifier;                                 // 0x14(0x8)
 	bool                                                         ReadyForInvasion;                                  // 0x1c(0x1)
 };
@@ -45,7 +45,7 @@ public:
 	Struct FText                                                 Message;                                           // 0x10(0x38)
 	Struct Guid                                                  CrewId;                                            // 0x48(0x10)
 	byte                                                         Faction;                                           // 0x58(0x1)
-	char                                                         pad0x3_7QRL9[0x3];                                 // 0x59(0x3)
+	char                                                         pad0x3_HZVUR[0x3];                                 // 0x59(0x3)
 	struct FName                                                 Tag;                                               // 0x5c(0x8)
 	bool                                                         DisableMusic;                                      // 0x64(0x1)
 };
@@ -107,7 +107,7 @@ public:
 	TArray<struct Participants>                                  Participants;                                      // 0x0(0x10)
 	Struct InvasionCrewData                                      Winner;                                            // 0x10(0x20)
 	float                                                        InvasionDurationInSeconds;                         // 0x30(0x4)
-	char                                                         pad0x4_HOZ0I[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_1YSWV[0x4];                                 // 0x34(0x4)
 	TArray<struct ParticipantFactionData>                        ParticipantFactionData;                            // 0x38(0x10)
 	byte                                                         InvasionEndedReason;                               // 0x48(0x1)
 };

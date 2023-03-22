@@ -29,7 +29,7 @@ LevelSequencePlayerSnapshot:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZZ5R1[0x4]
+  - Name: pad0x4_0EERC[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -41,7 +41,7 @@ LevelSequencePlayerSnapshot:
     Offset: '0x78'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NJHCE[0x4]
+  - Name: pad0x4_BP5L4[0x4]
     Offset: '0x7c'
     Size: '0x4'
     Type: char
@@ -60,7 +60,7 @@ LevelSequenceSnapshotSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_CM1W7[0x3]
+  - Name: pad0x3_BIE69[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

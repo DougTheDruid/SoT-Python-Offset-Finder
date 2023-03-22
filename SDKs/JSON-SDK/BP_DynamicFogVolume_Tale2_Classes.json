@@ -1,30 +1,30 @@
 {
   "BP_DynamicFogVolume_Tale2_C": {
-    "Super": "BP_DynamicDensityFogVolume_C",
+    "Super": "None",
     "FullSize": "0x44c",
     "InheritedSize": "0x438",
     "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "WorldFadeDistanceStart",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x440"
       },
       {
-        "Name": "WorldFadeDistanceRange",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x444"
       },
       {
-        "Name": "FogMaxDensity",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x448"

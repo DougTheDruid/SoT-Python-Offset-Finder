@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_Wheel_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0xa30'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: ProjectileCollision
     Offset: '0xa38'
     Size: '0x8'
     Type: Class SphereComponent*
-  - Name: None
+  - Name: Interactable
     Offset: '0xa40'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
+  - Name: Wheel Centered
     Offset: '0xa48'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: None
+  - Name: Wheel Movement Started
     Offset: '0xa90'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: None
+  - Name: Wheel Movement Stopped
     Offset: '0xad8'
     Size: '0x48'
     Type: Struct ObjectMessagingHandle
-  - Name: None
+  - Name: AudioEmitter
     Offset: '0xb20'
     Size: '0x20'
     Type: Struct WwiseEmitter
-  - Name: None
+  - Name: ShipWheelTurning
     Offset: '0xb40'
     Size: '0x1'
     Type: bool

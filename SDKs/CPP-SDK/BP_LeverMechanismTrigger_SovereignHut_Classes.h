@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_LeverMechanismTrigger_SovereignHut_C: public SwitchMechanismTrigger
 {
 public:
-	Class InteractableComponent*                                 Interactable;                                      // 0x568(0x8)
-	Class StaticMeshComponent*                                   LeverMesh;                                         // 0x570(0x8)
-	Class StaticMeshComponent*                                   BaseMesh;                                          // 0x578(0x8)
+	Class InteractableComponent*                                 None;                                              // 0x568(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x570(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x578(0x8)
 };
 
 

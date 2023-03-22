@@ -6,23 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x1 (Full Size[-0x1] - InheritedSize[0x0]
-class bsp_bottle_hanging_light_a_C: public FixedIntent
+// Size 0x20 (Full Size[0x3f8] - InheritedSize[0x3d8]
+class bsp_bottle_hanging_light_a_C: public StaticMeshActor
 {
 public:
-	char                                                         pad0x540_USW46[0x540];                             // 0x0(0x540)
-	Class FixedIntentComponent*                                  CurseIntentComponent;                              // 0x540(0x8)
-	Class WwiseObjectPoolWrapper*                                ManipulatorAudioPool;                              // 0x548(0x8)
-	Struct SocketId                                              MastSocketId;                                      // 0x550(0x20)
-	Class SailManipulatorAudioParams*                            AudioParams;                                       // 0x570(0x8)
-	Class SceneComponent*                                        MastSocketSceneComponent;                          // 0x578(0x8)
-	Struct WwiseEmitter                                          AudioEmitter;                                      // 0x580(0x20)
-	char                                                         pad0x200_6W0Z6[0x200];                             // 0x5a0(0x200)
-	Class Mast*                                                  BoundMast;                                         // 0x7a0(0x8)
-	Class Mast*                                                  PendingBoundMast;                                  // 0x7a8(0x8)
-	bool                                                         Locked;                                            // 0x7b0(0x1)
-	char                                                         pad0x7_1337V[0x7];                                 // 0x7b1(0x7)
-	Class MobileInstancedStaticMeshComponent*                    TopMeshInstanceComponent;                          // 0x7b8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
+	Class PointLightComponent*                                   None;                                              // 0x3e0(0x8)
+	Class PointLightComponent*                                   None;                                              // 0x3e8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3f0(0x8)
 };
 
 

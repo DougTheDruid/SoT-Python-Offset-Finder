@@ -6,11 +6,10 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x7cccd13d (Full Size[0x470] - InheritedSize[-0x7ccccccd]
-class wld_beach_rocks_08_C
+// Size 0x68 (Full Size[0x470] - InheritedSize[0x408]
+class wld_beach_rocks_08_C: public None
 {
 public:
-	char                                                         pad0x7cccd0d5_65ALS[0x7cccd0d5];                   // -0x7ccccccd(0x7cccd0d5)
 	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)

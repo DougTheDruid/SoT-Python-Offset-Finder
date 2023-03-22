@@ -20,7 +20,7 @@
     "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x10_DPX6B[0x10]",
+        "Name": "pad0x10_ZTJ85[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -62,10 +62,10 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x12c_725J3[0x12c]",
+        "Name": "pad0x124_H131O[0x124]",
         "Type": "char",
-        "Size": "0x12c",
-        "Offset": "0x5a"
+        "Size": "0x124",
+        "Offset": "0x5c"
       }
     ]
   },

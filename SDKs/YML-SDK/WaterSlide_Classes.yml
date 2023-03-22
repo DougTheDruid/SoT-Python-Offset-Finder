@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 WaterSlide:
   Attributes:
-  - Name: pad0x8_DO5TP[0x8]
+  - Name: pad0x8_PYK1D[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -38,7 +38,7 @@ WaterSlide:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CXI2S[0x3]
+  - Name: pad0x3_DEWGR[0x3]
     Offset: '0x409'
     Size: '0x3'
     Type: char
@@ -50,9 +50,9 @@ WaterSlide:
     Offset: '0x418'
     Size: '0x8'
     Type: Class WaterSlideAudioParams*
-  - Name: pad0x30_IPYFZ[0x30]
-    Offset: '0x41e'
-    Size: '0x30'
+  - Name: pad0x20_2RRHA[0x20]
+    Offset: '0x420'
+    Size: '0x20'
     Type: char
   ClassSize: '0x78'
   FullSize: '0x440'
@@ -116,7 +116,7 @@ WaterSlideParamsDataAsset:
   Super: DataAsset
 WaterSlidePlayerComponent:
   Attributes:
-  - Name: pad0x8_JPHNX[0x8]
+  - Name: pad0x8_XE9E4[0x8]
     Offset: '0xe0'
     Size: '0x8'
     Type: char
@@ -132,7 +132,7 @@ WaterSlidePlayerComponent:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_RI51F[0x14]
+  - Name: pad0x14_Z1W2G[0x14]
     Offset: '0xfc'
     Size: '0x14'
     Type: char

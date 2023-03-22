@@ -6,55 +6,55 @@
     "ClassSize": "0x44",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x1e10"
       },
       {
-        "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Name": "BP_GhostCharacterAudioComponent",
+        "Type": "BlueprintGeneratedClass BP_GhostCharacterAudioComponent_C*",
         "Size": "0x8",
         "Offset": "0x1e18"
       },
       {
-        "Name": "None",
+        "Name": "WaterInteraction",
         "Type": "Class WaterInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x1e20"
       },
       {
-        "Name": "None",
+        "Name": "PlayerNameplate",
         "Type": "Class PlayerNameplateComponent*",
         "Size": "0x8",
         "Offset": "0x1e28"
       },
       {
-        "Name": "None",
+        "Name": "BodyLightController",
         "Type": "Class BodyLightControllerComponent*",
         "Size": "0x8",
         "Offset": "0x1e30"
       },
       {
-        "Name": "None",
+        "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x1e38"
       },
       {
-        "Name": "None",
+        "Name": "BodyLight",
         "Type": "Class AmbientLightSourceComponent*",
         "Size": "0x8",
         "Offset": "0x1e40"
       },
       {
-        "Name": "None",
+        "Name": "CharacterFootImpact",
         "Type": "Class CharacterFootImpactComponent*",
         "Size": "0x8",
         "Offset": "0x1e48"
       },
       {
-        "Name": "None",
+        "Name": "Default Ghost Parameter",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x1e50"

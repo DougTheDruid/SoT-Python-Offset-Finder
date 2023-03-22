@@ -6,19 +6,19 @@
     "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Atmospheric Cloud Pressure",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "ElapsedTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3d4"
       },
       {
-        "Name": "None",
+        "Name": "Interval",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3d8"

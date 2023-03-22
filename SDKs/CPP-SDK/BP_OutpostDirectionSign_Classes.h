@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_OutpostDirectionSign_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    None;                                              // 0x510(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x518(0x8)
-	Class SceneComponent*                                        None;                                              // 0x520(0x8)
+	Class NPCDialogComponent*                                    InspectDialog;                                     // 0x510(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x518(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x520(0x8)
 };
 
 

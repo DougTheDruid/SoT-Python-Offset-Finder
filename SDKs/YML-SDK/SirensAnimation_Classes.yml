@@ -12,7 +12,7 @@ SirenAnimationData:
   Super: AnimationData
 SirenAnimationInstance:
   Attributes:
-  - Name: pad0x18_S2UZI[0x18]
+  - Name: pad0x18_2RU2G[0x18]
     Offset: '0x440'
     Size: '0x18'
     Type: char
@@ -32,7 +32,7 @@ SirenAnimationInstance:
     Offset: '0x578'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_WYVR0[0xc]
+  - Name: pad0xc_RVRRG[0xc]
     Offset: '0x57c'
     Size: '0xc'
     Type: char
@@ -68,7 +68,7 @@ SirenAnimationInstance:
     Offset: '0x59b'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4_PNYXG[0x4]
+  - Name: pad0x4_VLG1R[0x4]
     Offset: '0x59c'
     Size: '0x4'
     Type: char
@@ -80,7 +80,7 @@ SirenAnimationInstance:
     Offset: '0x5b0'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: pad0x8_50W7G[0x8]
+  - Name: pad0x8_5F3RD[0x8]
     Offset: '0x5c0'
     Size: '0x8'
     Type: char
@@ -88,7 +88,7 @@ SirenAnimationInstance:
     Offset: '0x5c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_45K7J[0x3]
+  - Name: pad0x3_OLEL9[0x3]
     Offset: '0x5c9'
     Size: '0x3'
     Type: char
@@ -100,7 +100,7 @@ SirenAnimationInstance:
     Offset: '0x5d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_YJJMT[0x4]
+  - Name: pad0x4_1WF1M[0x4]
     Offset: '0x5d4'
     Size: '0x4'
     Type: char
@@ -112,9 +112,9 @@ SirenAnimationInstance:
     Offset: '0x6b0'
     Size: '0x28'
     Type: Struct HitReactionAnimationState
-  - Name: pad0x88_L5FB1[0x88]
-    Offset: '0x6d6'
-    Size: '0x88'
+  - Name: pad0x38_2V4CN[0x38]
+    Offset: '0x6d8'
+    Size: '0x38'
     Type: char
   ClassSize: '0x2d0'
   FullSize: '0x710'

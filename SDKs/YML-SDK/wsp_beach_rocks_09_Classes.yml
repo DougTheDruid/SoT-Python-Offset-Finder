@@ -34,30 +34,10 @@ wsp_beach_rocks_09_C:
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: pad0x30_K8UD1[0x30]
     Offset: '0x448'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x450'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x458'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x460'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x468'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x470'
-    Size: '0x8'
-    Type: Class SceneComponent*
+    Size: '0x30'
+    Type: char
   ClassSize: '0x70'
   FullSize: '0x478'
   InheritedSize: '0x408'

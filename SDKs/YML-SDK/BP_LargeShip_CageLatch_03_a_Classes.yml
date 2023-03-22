@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_LargeShip_CageLatch_03_a_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x588'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: cap_cage_door_03_a
     Offset: '0x590'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Interactable
     Offset: '0x598'
     Size: '0x8'
     Type: Class InteractableComponent*

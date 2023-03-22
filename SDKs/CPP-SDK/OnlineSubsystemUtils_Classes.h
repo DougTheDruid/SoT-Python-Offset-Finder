@@ -47,8 +47,8 @@ class IpNetDriver: public NetDriver
 public:
 	bool                                                         LogPortUnreach;                                    // 0x478(0x1)
 	bool                                                         AllowPlayerPortUnreach;                            // 0x478(0x1)
-	char                                                         pad0x3_NSX2G[0x3];                                 // 0x479(0x3)
-	char                                                         pad0x52_LSO55[0x52];                               // 0x47a(0x52)
+	char                                                         pad0x3_4WL7F[0x3];                                 // 0x479(0x3)
+	char                                                         pad0x4c_MY8HB[0x4c];                               // 0x47c(0x4c)
 };
 
 
@@ -84,11 +84,11 @@ public:
 class OnlineBeacon: public Actor
 {
 public:
-	char                                                         pad0x8_DQBV7[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_DANHC[0x8];                                 // 0x3c8(0x8)
 	float                                                        BeaconConnectionInitialTimeout;                    // 0x3d0(0x4)
 	float                                                        BeaconConnectionTimeout;                           // 0x3d4(0x4)
 	Class NetDriver*                                             NetDriver;                                         // 0x3d8(0x8)
-	char                                                         pad0x20_QG76D[0x20];                               // 0x3de(0x20)
+	char                                                         pad0x10_4ALT7[0x10];                               // 0x3e0(0x10)
 };
 
 
@@ -99,7 +99,7 @@ public:
 	Class OnlineBeaconHostObject*                                BeaconOwner;                                       // 0x3f0(0x8)
 	Class NetConnection*                                         BeaconConnection;                                  // 0x3f8(0x8)
 	byte                                                         ConnectionState;                                   // 0x400(0x1)
-	char                                                         pad0x19_KROSN[0x19];                               // 0x3ff(0x19)
+	char                                                         pad0x17_JAJXB[0x17];                               // 0x401(0x17)
 };
 
 
@@ -115,7 +115,7 @@ public:
 	int                                                          ReservedHostTeamNum;                               // 0x40(0x4)
 	int                                                          ForceTeamNum;                                      // 0x44(0x4)
 	TArray<struct Reservations>                                  Reservations;                                      // 0x48(0x10)
-	char                                                         pad0x30_TLIPH[0x30];                               // 0x56(0x30)
+	char                                                         pad0x10_QGEIR[0x10];                               // 0x58(0x10)
 };
 
 
@@ -123,13 +123,13 @@ public:
 class PartyBeaconClient: public OnlineBeaconClient
 {
 public:
-	char                                                         pad0x10_GHULY[0x10];                               // 0x418(0x10)
+	char                                                         pad0x10_ZMB12[0x10];                               // 0x418(0x10)
 	Struct FString                                               DestSessionId;                                     // 0x428(0x10)
 	Struct PartyReservation                                      PendingReservation;                                // 0x438(0x30)
 	byte                                                         RequestType;                                       // 0x468(0x1)
 	bool                                                         bPendingReservationSent;                           // 0x469(0x1)
 	bool                                                         bCancelReservation;                                // 0x46a(0x1)
-	char                                                         pad0x7_T7ZAV[0x7];                                 // 0x469(0x7)
+	char                                                         pad0x5_7K0E7[0x5];                                 // 0x46b(0x5)
 };
 
 
@@ -145,9 +145,9 @@ class OnlineBeaconHost: public OnlineBeacon
 {
 public:
 	int                                                          ListenPort;                                        // 0x3f0(0x4)
-	char                                                         pad0x4_CB5DV[0x4];                                 // 0x3f4(0x4)
+	char                                                         pad0x4_NKK3O[0x4];                                 // 0x3f4(0x4)
 	TArray<class OnlineBeaconClient*>                            ClientActors;                                      // 0x3f8(0x10)
-	char                                                         pad0xc0_GFHZJ[0xc0];                               // 0x406(0xc0)
+	char                                                         pad0xa0_21H44[0xa0];                               // 0x408(0xa0)
 };
 
 
@@ -166,7 +166,7 @@ class PartyBeaconHost: public OnlineBeaconHostObject
 {
 public:
 	Class PartyBeaconState*                                      State;                                             // 0x3f0(0x8)
-	char                                                         pad0x28_SLN0E[0x28];                               // 0x3f8(0x28)
+	char                                                         pad0x28_YJ71W[0x28];                               // 0x3f8(0x28)
 	float                                                        SessionTimeoutSecs;                                // 0x420(0x4)
 	float                                                        TravelSessionTimeoutSecs;                          // 0x424(0x4)
 };
@@ -267,10 +267,10 @@ public:
 class OnlineSessionClient: public OnlineSession
 {
 public:
-	char                                                         pad0x138_NYEUV[0x138];                             // 0x28(0x138)
+	char                                                         pad0x138_LDDRH[0x138];                             // 0x28(0x138)
 	bool                                                         bIsFromInvite;                                     // 0x160(0x1)
 	bool                                                         bHandlingDisconnect;                               // 0x161(0x1)
-	char                                                         pad0x8_0EVKJ[0x8];                                 // 0x160(0x8)
+	char                                                         pad0x6_TFU9Q[0x6];                                 // 0x162(0x6)
 };
 
 

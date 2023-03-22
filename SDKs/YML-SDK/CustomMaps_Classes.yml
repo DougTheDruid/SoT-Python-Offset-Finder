@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomMap:
   Attributes:
-  - Name: pad0x8_O5T5Q[0x8]
+  - Name: pad0x8_8N4F2[0x8]
     Offset: '0x850'
     Size: '0x8'
     Type: char
@@ -14,9 +14,9 @@ CustomMap:
     Offset: '0x860'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
-  - Name: pad0x30_SUELN[0x30]
-    Offset: '0x86e'
-    Size: '0x30'
+  - Name: pad0x10_WRJMD[0x10]
+    Offset: '0x870'
+    Size: '0x10'
     Type: char
   ClassSize: '0x30'
   FullSize: '0x880'
@@ -66,9 +66,9 @@ CustomMapDataTypePositional:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_ZUCRL[0xc]
-    Offset: '0x42'
-    Size: '0xc'
+  - Name: pad0x4_JMAU8[0x4]
+    Offset: '0x44'
+    Size: '0x4'
     Type: char
   ClassSize: '0x10'
   FullSize: '0x48'
@@ -88,7 +88,7 @@ CustomMapDataTypeText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2QYIB[0x3]
+  - Name: pad0x3_SQTZY[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -96,9 +96,9 @@ CustomMapDataTypeText:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_JWH9V[0xc]
-    Offset: '0x8a'
-    Size: '0xc'
+  - Name: pad0x4_Z8433[0x4]
+    Offset: '0x8c'
+    Size: '0x4'
     Type: char
   ClassSize: '0x48'
   FullSize: '0x90'
@@ -124,9 +124,9 @@ CustomMapDisplayObjectPositional:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_FNW4B[0xc]
-    Offset: '0x42'
-    Size: '0xc'
+  - Name: pad0x4_GXDF7[0x4]
+    Offset: '0x44'
+    Size: '0x4'
     Type: char
   ClassSize: '0x10'
   FullSize: '0x48'
@@ -146,7 +146,7 @@ CustomMapDisplayObjectText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_0AVAY[0x3]
+  - Name: pad0x3_6ZU4M[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -154,9 +154,9 @@ CustomMapDisplayObjectText:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x54_G7YVM[0x54]
-    Offset: '0x8a'
-    Size: '0x54'
+  - Name: pad0x4c_1S4XP[0x4c]
+    Offset: '0x8c'
+    Size: '0x4c'
     Type: char
   ClassSize: '0x90'
   FullSize: '0xd8'

@@ -57,7 +57,7 @@ struct TrinketLoadoutModelEntry
 public:
 	struct FName                                                 EntitlementId;                                     // 0x0(0x8)
 	int                                                          LocationIndex;                                     // 0x8(0x4)
-	char                                                         pad0x4_YE9NB[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_XKIA4[0x4];                                 // 0xc(0x4)
 	Struct FString                                               UserId;                                            // 0x10(0x10)
 };
 

@@ -24,7 +24,7 @@ BarrelsOfPlentySpawnProxy:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class Ship*
-  - Name: pad0x18_LP0O7[0x18]
+  - Name: pad0x18_82E26[0x18]
     Offset: '0x3d0'
     Size: '0x18'
     Type: char

@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20 (Full Size[0xc50] - InheritedSize[0xc30]
-class BP_SoveriegnHarpoonLauncher_2_C: public HarpoonLauncher
+class BP_SoveriegnHarpoonLauncher_C: public HarpoonLauncher
 {
 public:
 	Class HarpoonItemLocationComponent*                          None;                                              // 0xc30(0x8)
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x20 (Full Size[0xc50] - InheritedSize[0xc30]
-class BP_SoveriegnHarpoonLauncher_C: public HarpoonLauncher
+class BP_SoveriegnHarpoonLauncher_2_C: public HarpoonLauncher
 {
 public:
 	Class HarpoonItemLocationComponent*                          None;                                              // 0xc30(0x8)

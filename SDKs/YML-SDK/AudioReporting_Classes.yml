@@ -12,9 +12,9 @@ AudioReportingComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class PlayerController*
-  - Name: pad0x180_FBDQ4[0x180]
-    Offset: '0xce'
-    Size: '0x180'
+  - Name: pad0x170_21PDL[0x170]
+    Offset: '0xd0'
+    Size: '0x170'
     Type: char
   ClassSize: '0x178'
   FullSize: '0x240'

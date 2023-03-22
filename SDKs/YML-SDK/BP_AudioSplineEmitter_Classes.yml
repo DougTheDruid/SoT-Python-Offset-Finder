@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_AudioSplineEmitter_C:
   Attributes:
-  - Name: None
+  - Name: SplineWithEmitter
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class SplineWithEmitterComponent*

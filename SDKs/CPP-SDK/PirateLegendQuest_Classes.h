@@ -11,7 +11,7 @@ class VeilOfTheAncients: public InteractableBase
 {
 public:
 	float                                                        NumberOfGems;                                      // 0x400(0x4)
-	char                                                         pad0x4_FLPYJ[0x4];                                 // 0x404(0x4)
+	char                                                         pad0x4_O77YU[0x4];                                 // 0x404(0x4)
 	Class LockComponent*                                         LockComponent;                                     // 0x408(0x8)
 	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x410(0x8)
 };
@@ -21,13 +21,13 @@ public:
 class VeilService: public TaleQuestService
 {
 public:
-	char                                                         pad0x20_UOZ84[0x20];                               // 0x60(0x20)
+	char                                                         pad0x20_X46E4[0x20];                               // 0x60(0x20)
 	Class World*                                                 World;                                             // 0x80(0x8)
 	Class GameState*                                             GameState;                                         // 0x88(0x8)
-	char                                                         pad0x8_XYVNV[0x8];                                 // 0x90(0x8)
+	char                                                         pad0x8_D7IKK[0x8];                                 // 0x90(0x8)
 	Class VeilOfTheAncients*                                     TrackedVeil;                                       // 0x98(0x8)
 	Class Ship*                                                  Ship;                                              // 0xa0(0x8)
-	char                                                         pad0xc8_VYUW1[0xc8];                               // 0xa6(0xc8)
+	char                                                         pad0xb8_405MY[0xb8];                               // 0xa8(0xb8)
 };
 
 

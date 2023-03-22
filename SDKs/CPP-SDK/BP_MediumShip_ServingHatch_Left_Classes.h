@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_MediumShip_ServingHatch_Left_C: public SwitchMechanismTrigger
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x568(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x570(0x8)
-	Class InteractableComponent*                                 None;                                              // 0x578(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x568(0x8)
+	Class StaticMeshComponent*                                   shp_mid_serving_hatch_L_01_a;                      // 0x570(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x578(0x8)
 };
 
 

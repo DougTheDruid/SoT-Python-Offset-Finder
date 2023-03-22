@@ -21,12 +21,12 @@ public:
 	struct FName                                                 LiquidMaterialParameterName;                       // 0xd0(0x8)
 	TArray<struct LiquidTypeParams>                              LiquidTypeParams;                                  // 0xd8(0x10)
 	float                                                        StartingLiquidLevelNormalised;                     // 0xe8(0x4)
-	char                                                         pad0x4_PALWK[0x4];                                 // 0xec(0x4)
+	char                                                         pad0x4_XD9EK[0x4];                                 // 0xec(0x4)
 	Class CurveFloat*                                            TransitionCurve;                                   // 0xf0(0x8)
 	float                                                        TransitionSpeedDecrease;                           // 0xf8(0x4)
 	float                                                        TransitionSpeedIncrease;                           // 0xfc(0x4)
 	TArray<class MaterialInstanceDynamic*>                       LiquidMaterials;                                   // 0x100(0x10)
-	char                                                         pad0x38_1RN3O[0x38];                               // 0x10e(0x38)
+	char                                                         pad0x18_KAZYI[0x18];                               // 0x110(0x18)
 };
 
 

@@ -37,10 +37,10 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x60_V9FLB[0x60]",
+        "Name": "pad0x50_FOPO6[0x50]",
         "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x56"
+        "Size": "0x50",
+        "Offset": "0x58"
       }
     ]
   },

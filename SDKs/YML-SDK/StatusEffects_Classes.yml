@@ -16,9 +16,9 @@ AppliedStatusToSelfStatCondition:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_2GQ3Z[0x9]
-    Offset: '0x3f'
-    Size: '0x9'
+  - Name: pad0x7_W5JSR[0x7]
+    Offset: '0x41'
+    Size: '0x7'
     Type: char
   ClassSize: '0x18'
   FullSize: '0x48'
@@ -26,7 +26,7 @@ AppliedStatusToSelfStatCondition:
   Super: TargetedStatCondition
 BuffReceiverComponent:
   Attributes:
-  - Name: pad0x8_RZPQ1[0x8]
+  - Name: pad0x8_GWEPP[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -34,9 +34,9 @@ BuffReceiverComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_E8CJN[0x9]
-    Offset: '0xcf'
-    Size: '0x9'
+  - Name: pad0x7_HTDC9[0x7]
+    Offset: '0xd1'
+    Size: '0x7'
     Type: char
   ClassSize: '0x10'
   FullSize: '0xd8'
@@ -74,7 +74,7 @@ DebugStatusTicketHolder:
   Super: Actor
 LightWeightStatusEffectManagerComponent:
   Attributes:
-  - Name: pad0x20_W3SW5[0x20]
+  - Name: pad0x20_G0AXU[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char
@@ -92,7 +92,7 @@ LightWeightStatusEffectManagerComponent:
   Super: ActorComponent
 MaterialStatusSusceptibilityComponent:
   Attributes:
-  - Name: pad0x8_QYYR8[0x8]
+  - Name: pad0x8_AX6ZH[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -100,9 +100,9 @@ MaterialStatusSusceptibilityComponent:
     Offset: '0xd0'
     Size: '0x8'
     Type: Class PhysicalMaterial*
-  - Name: pad0x30_81CT7[0x30]
-    Offset: '0xd6'
-    Size: '0x30'
+  - Name: pad0x20_2P9LF[0x20]
+    Offset: '0xd8'
+    Size: '0x20'
     Type: char
   ClassSize: '0x30'
   FullSize: '0xf8'
@@ -124,9 +124,9 @@ SetCanReceiveBuffStatusResponse:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x8_DU2VR[0x8]
-    Offset: '0x30'
-    Size: '0x8'
+  - Name: pad0x6_VPT4Q[0x6]
+    Offset: '0x32'
+    Size: '0x6'
     Type: char
   ClassSize: '0x8'
   FullSize: '0x38'
@@ -134,7 +134,7 @@ SetCanReceiveBuffStatusResponse:
   Super: StatusResponse
 SphericalStatusEffectZone:
   Attributes:
-  - Name: pad0x8_5GQZM[0x8]
+  - Name: pad0x8_PTMS0[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -150,9 +150,9 @@ SphericalStatusEffectZone:
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StatusEffectVolumeComponent*
-  - Name: pad0xb0_TBX4B[0xb0]
-    Offset: '0x3e6'
-    Size: '0xb0'
+  - Name: pad0xa0_HELY4[0xa0]
+    Offset: '0x3e8'
+    Size: '0xa0'
     Type: char
   ClassSize: '0xc0'
   FullSize: '0x488'
@@ -198,7 +198,7 @@ StatusEffectHelperFunctionLibrary:
   Super: BlueprintFunctionLibrary
 StatusEffectManagerComponent:
   Attributes:
-  - Name: pad0x28_FUIJW[0x28]
+  - Name: pad0x28_W6FYZ[0x28]
     Offset: '0xc8'
     Size: '0x28'
     Type: char
@@ -220,9 +220,9 @@ StatusEffectOverlapZone:
     Offset: '0x4a0'
     Size: '0x10'
     Type: TArray<struct StatusesToApplyOnOverlap>
-  - Name: pad0x30_SXCZI[0x30]
-    Offset: '0x4ae'
-    Size: '0x30'
+  - Name: pad0x10_O85PJ[0x10]
+    Offset: '0x4b0'
+    Size: '0x10'
     Type: char
   ClassSize: '0x20'
   FullSize: '0x4c0'
@@ -270,7 +270,7 @@ StatusEffectVolumeComponent:
     Offset: '0x2e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PP1ZE[0x7]
+  - Name: pad0x7_R9SFF[0x7]
     Offset: '0x2e1'
     Size: '0x7'
     Type: char
@@ -278,9 +278,9 @@ StatusEffectVolumeComponent:
     Offset: '0x2e8'
     Size: '0x10'
     Type: TArray<struct StatusEffectsToMaintain>
-  - Name: pad0x28_BYMDI[0x28]
-    Offset: '0x2f6'
-    Size: '0x28'
+  - Name: pad0x8_U3GPJ[0x8]
+    Offset: '0x2f8'
+    Size: '0x8'
     Type: char
   ClassSize: '0x20'
   FullSize: '0x300'

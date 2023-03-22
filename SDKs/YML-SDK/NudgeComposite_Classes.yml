@@ -30,7 +30,7 @@ NudgeFromStormPolicy:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WF5O8[0x4]
+  - Name: pad0x4_QH5P6[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -38,9 +38,9 @@ NudgeFromStormPolicy:
     Offset: '0xd0'
     Size: '0x30'
     Type: Struct WeightedProbabilityRangeOfRanges
-  - Name: pad0xb8_JYKBZ[0xb8]
-    Offset: '0xfe'
-    Size: '0xb8'
+  - Name: pad0x58_Y8HUU[0x58]
+    Offset: '0x100'
+    Size: '0x58'
     Type: char
   ClassSize: '0x90'
   FullSize: '0x158'
@@ -52,7 +52,7 @@ NudgeFromWaterLevelPolicy:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_097LG[0x14]
+  - Name: pad0x14_ZDZ2T[0x14]
     Offset: '0xcc'
     Size: '0x14'
     Type: char
@@ -64,9 +64,9 @@ NudgeFromWaterLevelPolicy:
     Offset: '0xe4'
     Size: '0x4'
     Type: float
-  - Name: pad0x10_6PSZ9[0x10]
-    Offset: '0xe6'
-    Size: '0x10'
+  - Name: pad0x8_ISTC3[0x8]
+    Offset: '0xe8'
+    Size: '0x8'
     Type: char
   ClassSize: '0x28'
   FullSize: '0xf0'

@@ -11,7 +11,21 @@ class BP_TotD_PortalController_C: public Actor
 {
 public:
 	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	char                                                         pad0x70_Y6913[0x70];                               // 0x3ce(0x70)
+	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x3d0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
+	float                                                        None;                                              // 0x3e0(0x4)
+	float                                                        None;                                              // 0x3e4(0x4)
+	float                                                        None;                                              // 0x3e8(0x4)
+	float                                                        None;                                              // 0x3ec(0x4)
+	float                                                        None;                                              // 0x3f0(0x4)
+	byte                                                         None;                                              // 0x3f4(0x1)
+	char                                                         pad0x3_65D5J[0x3];                                 // 0x3f5(0x3)
+	Class TimelineComponent*                                     None;                                              // 0x3f8(0x8)
+	TArray<class MaterialInstanceDynamic*>                       None;                                              // 0x400(0x10)
+	TArray<class PointLightComponent*>                           None;                                              // 0x410(0x10)
+	float                                                        None;                                              // 0x420(0x4)
+	float                                                        None;                                              // 0x424(0x4)
+	Class Texture2D*                                             None;                                              // 0x428(0x8)
 };
 
 

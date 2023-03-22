@@ -45,9 +45,9 @@ public:
 class AdventureOnDemandService: public Actor
 {
 public:
-	char                                                         pad0x10_HVD5B[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_E3A11[0x10];                               // 0x3c8(0x10)
 	Class AdventureOnDemandServiceParams*                        Params;                                            // 0x3d8(0x8)
-	char                                                         pad0x48_BEHF7[0x48];                               // 0x3e0(0x48)
+	char                                                         pad0x48_J07QK[0x48];                               // 0x3e0(0x48)
 	TArray<struct DiveToTunnelEntries>                           DiveToTunnelEntries;                               // 0x428(0x10)
 	TArray<struct LeaveTunnelEntries>                            LeaveTunnelEntries;                                // 0x438(0x10)
 };
@@ -61,7 +61,7 @@ public:
 	Class TunnelDesc*                                            VoyageTunnelDesc;                                  // 0x30(0x8)
 	Class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x38(0x8)
 	float                                                        EQSRadiusRange;                                    // 0x40(0x4)
-	char                                                         pad0x4_E256G[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_WUSWQ[0x4];                                 // 0x44(0x4)
 	TArray<struct ExtraSpawnDistanceFromIsland>                  ExtraSpawnDistanceFromIsland;                      // 0x48(0x10)
 	TArray<struct VoyageHintPopupDescs>                          VoyageHintPopupDescs;                              // 0x58(0x10)
 };

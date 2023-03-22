@@ -16,7 +16,7 @@ public:
 	Class FlatWaterMeshComponent*                                None;                                              // 0x460(0x8)
 	Class SceneComponent*                                        None;                                              // 0x468(0x8)
 	bool                                                         None;                                              // 0x470(0x1)
-	char                                                         pad0x3_CQP44[0x3];                                 // 0x471(0x3)
+	char                                                         pad0x3_GZCFF[0x3];                                 // 0x471(0x3)
 	struct FName                                                 None;                                              // 0x474(0x8)
 };
 

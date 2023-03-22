@@ -46,7 +46,7 @@ public:
 	struct FName                                                 MaterialThicknessRTPCName;                         // 0x20(0x8)
 	struct FName                                                 MaterialReflectivityRTPCName;                      // 0x28(0x8)
 	byte                                                         EnvironmentTraceChannel;                           // 0x30(0x1)
-	char                                                         pad0x3_RB4TC[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_XDA7A[0x3];                                 // 0x31(0x3)
 	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
 	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
 	Struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)
@@ -92,7 +92,7 @@ public:
 	Struct StringAssetReference                                  PlayEvent;                                         // 0x0(0x10)
 	Struct StringAssetReference                                  StopEvent;                                         // 0x10(0x10)
 	int                                                          PreBufferCount;                                    // 0x20(0x4)
-	char                                                         pad0x4_F9U47[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_1R4NY[0x4];                                 // 0x24(0x4)
 	TArray<struct Mappings>                                      Mappings;                                          // 0x28(0x10)
 };
 
@@ -102,7 +102,7 @@ struct WwiseBinkTrackMappings
 {
 public:
 	byte                                                         mLanguage;                                         // 0x0(0x1)
-	char                                                         pad0x7_ZAFZL[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_NVX48[0x7];                                 // 0x1(0x7)
 	TArray<struct mChannels>                                     mChannels;                                         // 0x8(0x10)
 };
 
@@ -113,7 +113,7 @@ struct WwiseBinkTrackMapping
 public:
 	byte                                                         mChannelMapping;                                   // 0x0(0x1)
 	bool                                                         mRequired;                                         // 0x1(0x1)
-	char                                                         pad0x2_JA93T[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_KZGGY[0x2];                                 // 0x2(0x2)
 	float                                                        mVolumeDb;                                         // 0x4(0x4)
 };
 
@@ -163,7 +163,7 @@ struct WwiseNativeEmitterPoolDensityParams
 {
 public:
 	bool                                                         PlayPoolDensityAudio;                              // 0x0(0x1)
-	char                                                         pad0x7_GQNJP[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_5BCMC[0x7];                                 // 0x1(0x7)
 	Class WwiseEvent*                                            PoolDensityAudioPlayEvent;                         // 0x8(0x8)
 	Class WwiseEvent*                                            PoolDensityAudioStopEvent;                         // 0x10(0x8)
 	struct FName                                                 DensityRtpcName;                                   // 0x18(0x8)

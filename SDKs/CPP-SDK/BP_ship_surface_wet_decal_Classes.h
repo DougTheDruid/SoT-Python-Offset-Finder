@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_ship_surface_wet_decal_C: public ShipResurfaceWetnessActor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
-	Class DecalComponent*                                        WetDecalStarboard;                                 // 0x3d0(0x8)
-	Class DecalComponent*                                        WetDecalPort;                                      // 0x3d8(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
-	float                                                        WetEffectDuration;                                 // 0x3e8(0x4)
-	char                                                         pad0x4_107N0[0x4];                                 // 0x3ec(0x4)
-	Class MaterialInstanceDynamic*                               WetDynamicMaterial;                                // 0x3f0(0x8)
-	Struct TimerHandle                                           WetTimerHandle;                                    // 0x3f8(0x4)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
+	Class DecalComponent*                                        None;                                              // 0x3d0(0x8)
+	Class DecalComponent*                                        None;                                              // 0x3d8(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
+	float                                                        None;                                              // 0x3e8(0x4)
+	char                                                         pad0x4_HMUD3[0x4];                                 // 0x3ec(0x4)
+	Class MaterialInstanceDynamic*                               None;                                              // 0x3f0(0x8)
+	Struct TimerHandle                                           None;                                              // 0x3f8(0x4)
 };
 
 

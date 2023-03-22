@@ -30,7 +30,7 @@ BP_CustomisableSovereignLadder_C:
     Offset: '0x618'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_K8AOC[0x4]
+  - Name: pad0x4_5UYO0[0x4]
     Offset: '0x61c'
     Size: '0x4'
     Type: char

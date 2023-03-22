@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_LotS_reward027_C:
   Attributes:
-  - Name: None
+  - Name: InspectDialog
     Offset: '0x510'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x518'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x520'
     Size: '0x8'
     Type: Class SceneComponent*

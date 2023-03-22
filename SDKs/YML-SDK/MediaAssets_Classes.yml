@@ -20,9 +20,9 @@ FileMediaSource:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x19_N0R1D[0x19]
-    Offset: '0x97'
-    Size: '0x19'
+  - Name: pad0x17_8OGLG[0x17]
+    Offset: '0x99'
+    Size: '0x17'
     Type: char
   ClassSize: '0x28'
   FullSize: '0xb0'
@@ -50,7 +50,7 @@ MediaComponent:
   Super: ActorComponent
 MediaPlayer:
   Attributes:
-  - Name: pad0x80_2ZHHV[0x80]
+  - Name: pad0x80_YRVYR[0x80]
     Offset: '0x28'
     Size: '0x80'
     Type: char
@@ -74,7 +74,7 @@ MediaPlayer:
     Offset: '0xc1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_QR25V[0x2]
+  - Name: pad0x2_RBR2W[0x2]
     Offset: '0xc2'
     Size: '0x2'
     Type: char
@@ -86,7 +86,7 @@ MediaPlayer:
     Offset: '0xc4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6DN5Q[0x3]
+  - Name: pad0x3_P10KX[0x3]
     Offset: '0xc5'
     Size: '0x3'
     Type: char
@@ -98,7 +98,7 @@ MediaPlayer:
     Offset: '0xd0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FQ019[0x4]
+  - Name: pad0x4_UVWEQ[0x4]
     Offset: '0xd4'
     Size: '0x4'
     Type: char
@@ -118,7 +118,7 @@ MediaPlayer:
     Offset: '0xe8'
     Size: '0xc'
     Type: Struct Rotator
-  - Name: pad0x64_IV9FJ[0x64]
+  - Name: pad0x64_XQ1QK[0x64]
     Offset: '0xf4'
     Size: '0x64'
     Type: char
@@ -126,9 +126,9 @@ MediaPlayer:
     Offset: '0x158'
     Size: '0x10'
     Type: Struct Guid
-  - Name: pad0x28_ST9I0[0x28]
-    Offset: '0x166'
-    Size: '0x28'
+  - Name: pad0x8_JFWE5[0x8]
+    Offset: '0x168'
+    Size: '0x8'
     Type: char
   ClassSize: '0x148'
   FullSize: '0x170'
@@ -164,7 +164,7 @@ MediaTexture:
     Offset: '0x13a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_SIKCZ[0x1]
+  - Name: pad0x1_R2QJM[0x1]
     Offset: '0x13b'
     Size: '0x1'
     Type: char
@@ -196,7 +196,7 @@ MediaTexture:
     Offset: '0x154'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NBWDK[0x3]
+  - Name: pad0x3_8DFO1[0x3]
     Offset: '0x155'
     Size: '0x3'
     Type: char
@@ -204,9 +204,9 @@ MediaTexture:
     Offset: '0x158'
     Size: '0x8'
     Type: Class MediaPlayer*
-  - Name: pad0xd8_P68ZH[0xd8]
-    Offset: '0x15e'
-    Size: '0xd8'
+  - Name: pad0xc8_HAGUH[0xc8]
+    Offset: '0x160'
+    Size: '0xc8'
     Type: char
   ClassSize: '0xf0'
   FullSize: '0x228'
@@ -218,9 +218,9 @@ MediaTimeStampInfo:
     Offset: '0x28'
     Size: '0x8'
     Type: Struct Timespan
-  - Name: pad0x18_D7AMG[0x18]
-    Offset: '0x2e'
-    Size: '0x18'
+  - Name: pad0x8_XM270[0x8]
+    Offset: '0x30'
+    Size: '0x8'
     Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
@@ -266,7 +266,7 @@ TimeSynchronizableMediaSource:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZKR33[0x3]
+  - Name: pad0x3_AI2EY[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char

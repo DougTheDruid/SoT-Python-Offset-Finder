@@ -7,10 +7,10 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8 (Full Size[0x668] - InheritedSize[0x660]
-class BP_TunnelOfTheDamnedPortal_WSP_C: public None
+class BP_TunnelOfTheDamnedPortal_WSP_C: public BP_TunnelOfTheDamnedPortal_Ship_C
 {
 public:
-	Class ChildActorComponent*                                   None;                                              // 0x660(0x8)
+	Class ChildActorComponent*                                   PortalEffects;                                     // 0x660(0x8)
 };
 
 

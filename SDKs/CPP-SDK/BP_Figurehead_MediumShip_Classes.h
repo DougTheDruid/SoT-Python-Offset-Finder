@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Figurehead_MediumShip_C: public GenericPartWithVFX
 {
 public:
-	Class ParticleSystemComponent*                               None;                                              // 0x3e8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3f0(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x3e8(0x8)
+	Class StaticMeshComponent*                                   Figurehead;                                        // 0x3f0(0x8)
 };
 
 

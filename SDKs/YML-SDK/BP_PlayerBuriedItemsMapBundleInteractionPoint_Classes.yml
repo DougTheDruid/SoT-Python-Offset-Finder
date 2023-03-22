@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 BP_PlayerBuriedItemsMapBundleInteractionPoint_C:
   Attributes:
-  - Name: None
+  - Name: PlayerBuriedItemsMapBundleInteraction
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class PlayerBuriedItemsMapBundleInteractionComponent*
-  - Name: None
+  - Name: ActionRules
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class ActionRulesComponent*
-  - Name: None
+  - Name: Mesh
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Token Asset
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMesh*
-  - Name: None
+  - Name: Show Token Animation Time
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VF8ED[0x4]
+  - Name: pad0x4_Y65LM[0x4]
     Offset: '0x3ec'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: Token Material
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class MaterialInterface*

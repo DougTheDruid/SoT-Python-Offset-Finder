@@ -17,13 +17,13 @@ public:
 class PlayerLootMarkerService: public Actor
 {
 public:
-	char                                                         pad0x8_J669S[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_3BC0S[0x8];                                 // 0x3c8(0x8)
 	Class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3d0(0x8)
-	char                                                         pad0x20_3W72U[0x20];                               // 0x3d8(0x20)
+	char                                                         pad0x20_GOZCF[0x20];                               // 0x3d8(0x20)
 	TArray<Weakclass ShortRangeMarkers>                          ShortRangeMarkers;                                 // 0x3f8(0x10)
-	char                                                         pad0xf8_OTROX[0xf8];                               // 0x408(0xf8)
+	char                                                         pad0xf8_XT6WC[0xf8];                               // 0x408(0xf8)
 	TArray<struct BatchData>                                     BatchData;                                         // 0x500(0x10)
-	char                                                         pad0x30_ZVGGV[0x30];                               // 0x50e(0x30)
+	char                                                         pad0x10_8UURW[0x10];                               // 0x510(0x10)
 };
 
 
@@ -33,7 +33,7 @@ class PlayerLootMarkerServiceParams: public DataAsset
 public:
 	Class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
 	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
-	char                                                         pad0xc_7WW54[0xc];                                 // 0x32(0xc)
+	char                                                         pad0x4_7L3Z5[0x4];                                 // 0x34(0x4)
 };
 
 

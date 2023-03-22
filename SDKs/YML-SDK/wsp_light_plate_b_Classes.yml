@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 wsp_light_plate_b_C:
   Attributes:
-  - Name: None
+  - Name: ParticleSystem
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class ParticleSystemComponent*

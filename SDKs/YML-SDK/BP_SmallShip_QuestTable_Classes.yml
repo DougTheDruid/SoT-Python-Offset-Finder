@@ -2,43 +2,43 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_QuestTable_C:
   Attributes:
-  - Name: None
+  - Name: WarMap
     Offset: '0x878'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: FactionHourglass
     Offset: '0x880'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CancelAdventure
     Offset: '0x888'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: PlayerBuiredItemsMapBundleInteractionPoint
     Offset: '0x890'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CancelTale
     Offset: '0x898'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CancelVoyage
     Offset: '0x8a0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageSelectionSlot4
     Offset: '0x8a8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageSelectionSlot3
     Offset: '0x8b0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageSelectionSlot2
     Offset: '0x8b8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageSelectionSlot1
     Offset: '0x8c0'
     Size: '0x8'
     Type: Class ChildActorComponent*

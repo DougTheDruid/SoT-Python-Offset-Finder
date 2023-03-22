@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Ritual2_L_Effigy_C: public Actor
 {
 public:
-	Class SkeletalMeshComponent*                                 None;                                              // 0x3c8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d0(0x8)
+	Class SkeletalMeshComponent*                                 Effigy_L;                                          // 0x3c8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 

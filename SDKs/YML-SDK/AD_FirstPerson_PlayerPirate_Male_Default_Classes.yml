@@ -38,7 +38,7 @@ AD_FirstPerson_PlayerPirate_Male_Default_C:
     Offset: '0x300'
     Size: '0x2'
     Type: Struct ADS_Sockets
-  - Name: pad0x6_E2I4J[0x6]
+  - Name: pad0x6_S7Z9V[0x6]
     Offset: '0x302'
     Size: '0x6'
     Type: char

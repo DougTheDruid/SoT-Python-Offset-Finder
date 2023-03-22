@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_CapstanArm_C:
   Attributes:
-  - Name: None
+  - Name: Interactable
     Offset: '0x560'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
+  - Name: LookAtPos
     Offset: '0x568'
     Size: '0x8'
     Type: Class SceneComponent*

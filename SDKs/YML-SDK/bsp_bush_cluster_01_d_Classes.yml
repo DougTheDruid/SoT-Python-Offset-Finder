@@ -2,27 +2,27 @@
 # https://github.com/DougTheDruid
 bsp_bush_cluster_01_d_C:
   Attributes:
-  - Name: None
+  - Name: wsp_bush_03_a_02
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_bush_08_c_01
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_bush_05_b_01
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_bush_03_a_01
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x428'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x28'
   FullSize: '0x430'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

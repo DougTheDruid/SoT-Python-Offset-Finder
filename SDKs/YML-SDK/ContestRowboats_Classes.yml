@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ContestRowboatsService:
   Attributes:
-  - Name: pad0x8_TV06E[0x8]
+  - Name: pad0x8_0A8U6[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -10,9 +10,9 @@ ContestRowboatsService:
     Offset: '0x3d0'
     Size: '0x8'
     Type: class
-  - Name: pad0x60_CTYJH[0x60]
-    Offset: '0x3d6'
-    Size: '0x60'
+  - Name: pad0x50_TXXGE[0x50]
+    Offset: '0x3d8'
+    Size: '0x50'
     Type: char
   ClassSize: '0x60'
   FullSize: '0x428'

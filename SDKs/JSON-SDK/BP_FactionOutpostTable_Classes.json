@@ -6,55 +6,55 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "VoteAudio",
         "Type": "Class VoteAudioComponent*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
-        "Name": "None",
+        "Name": "StaticMeshVoteVisualiser",
         "Type": "Class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
-        "Name": "None",
+        "Name": "InlineVotingInteraction",
         "Type": "Class InlineVotingInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x608"
       },
       {
-        "Name": "None",
+        "Name": "ActionRules",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
         "Offset": "0x610"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x618"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x638"

@@ -2,75 +2,75 @@
 # https://github.com/DougTheDruid
 BP_Lantern_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x940'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: LanternTriggerGlow
+  - Name: None
     Offset: '0x948'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: LanternGlow
+  - Name: None
     Offset: '0x950'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: AmbientLightSource
+  - Name: None
     Offset: '0x958'
     Size: '0x8'
     Type: Class AmbientLightSourceComponent*
-  - Name: SpotLight
+  - Name: None
     Offset: '0x960'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: UsableWieldable
+  - Name: None
     Offset: '0x968'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
-  - Name: LanternGlowDynamicMaterial
+  - Name: None
     Offset: '0x970'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: EmissiveInt_threshold
+  - Name: None
     Offset: '0x978'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_V63CX[0x4]
+  - Name: pad0x4_3TNNN[0x4]
     Offset: '0x97c'
     Size: '0x4'
     Type: char
-  - Name: LanternTriggerGlowDynamicMaterial
+  - Name: None
     Offset: '0x980'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: TriggerGlowDuration
+  - Name: None
     Offset: '0x988'
     Size: '0x4'
     Type: float
-  - Name: TriggerGlowRampInDuration
+  - Name: None
     Offset: '0x98c'
     Size: '0x4'
     Type: float
-  - Name: TriggerGlowRampOutDuration
+  - Name: None
     Offset: '0x990'
     Size: '0x4'
     Type: float
-  - Name: DefaultSpotlightColour
+  - Name: None
     Offset: '0x994'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: DefaultAmbientLightColour
+  - Name: None
     Offset: '0x9a4'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: DefaultGlowColour
+  - Name: None
     Offset: '0x9b4'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: pad0x4_S8KEH[0x4]
+  - Name: pad0x4_IG9G9[0x4]
     Offset: '0x9c4'
     Size: '0x4'
     Type: char
-  - Name: DynamicMaterials
+  - Name: None
     Offset: '0x9c8'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>

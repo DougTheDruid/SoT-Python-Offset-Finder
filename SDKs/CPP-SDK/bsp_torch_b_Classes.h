@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 class bsp_torch_b_C: public StaticMeshActor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3d8(0x8)
-	char                                                         pad0x20_WGXS2[0x20];                               // 0x3de(0x20)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d8(0x8)
+	Class ParticleSystemComponent*                               vfx_fire_torch;                                    // 0x3e0(0x8)
+	Class PointLightComponent*                                   PointLight;                                        // 0x3e8(0x8)
 };
 
 

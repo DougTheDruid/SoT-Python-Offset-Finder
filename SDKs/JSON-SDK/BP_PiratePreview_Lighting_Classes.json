@@ -48,10 +48,10 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x30_TFB0K[0x30]",
+        "Name": "pad0x20_PL66T[0x20]",
         "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x3fe"
+        "Size": "0x20",
+        "Offset": "0x400"
       }
     ]
   },

@@ -6,9 +6,9 @@ BP_PromptCoordinator_Hourglass_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x132_CMOI3[0x132]
+  - Name: pad0x12a_FCCKE[0x12a]
     Offset: '0x120'
-    Size: '0x132'
+    Size: '0x12a'
     Type: char
   - Name: HandlePlayerApproachesHourglass
     Offset: '0x120'
@@ -22,7 +22,7 @@ BP_PromptCoordinator_Hourglass_C:
     Offset: '0x169'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_YXC1K[0x2]
+  - Name: pad0x2_11TTW[0x2]
     Offset: '0x16a'
     Size: '0x2'
     Type: char
@@ -38,7 +38,7 @@ BP_PromptCoordinator_Hourglass_C:
     Offset: '0x1d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_N7O00[0x4]
+  - Name: pad0x4_3TH9H[0x4]
     Offset: '0x1dc'
     Size: '0x4'
     Type: char

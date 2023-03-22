@@ -11,15 +11,15 @@ class BP_Prompt_EmissaryLevelRankChange_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x131_IKIEG[0x131];                             // 0x120(0x131)
+	char                                                         pad0x12b_1ZV34[0x12b];                             // 0x120(0x12b)
 	Struct ObjectMessagingHandle                                 Handle_EmissaryRankChange;                         // 0x120(0x48)
 	struct FName                                                 CompanyName;                                       // 0x168(0x8)
 	int                                                          NewLevel;                                          // 0x170(0x4)
 	bool                                                         SurfacedThisSession;                               // 0x174(0x1)
-	char                                                         pad0x3_40YHZ[0x3];                                 // 0x175(0x3)
+	char                                                         pad0x3_JG47T[0x3];                                 // 0x175(0x3)
 	struct FName                                                 ExpectedCompanyName;                               // 0x178(0x8)
 	int                                                          ExpectedLevel;                                     // 0x180(0x4)
-	char                                                         pad0x4_XGROJ[0x4];                                 // 0x184(0x4)
+	char                                                         pad0x4_R95R4[0x4];                                 // 0x184(0x4)
 	TArray<struct Prompts>                                       Prompts;                                           // 0x188(0x10)
 	class                                                        PromptAccessKey;                                   // 0x198(0x8)
 	int                                                          PromptIndex;                                       // 0x1a0(0x4)

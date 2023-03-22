@@ -26,7 +26,7 @@ public:
 	bool                                                         bConstrainRx;                                      // 0xb8(0x1)
 	bool                                                         bConstrainRy;                                      // 0xb8(0x1)
 	bool                                                         bConstrainRz;                                      // 0xb8(0x1)
-	char                                                         pad0x9_6UQ90[0x9];                                 // 0xb7(0x9)
+	char                                                         pad0x7_UGMNL[0x7];                                 // 0xb9(0x7)
 };
 
 
@@ -37,11 +37,11 @@ public:
 	Struct RichCurve                                             TimingCurve;                                       // 0xa8(0x78)
 	byte                                                         FrontAxisEnum;                                     // 0x120(0x1)
 	byte                                                         UpAxisEnum;                                        // 0x121(0x1)
-	char                                                         pad0x2_4MWLP[0x2];                                 // 0x122(0x2)
+	char                                                         pad0x2_NRB7U[0x2];                                 // 0x122(0x2)
 	bool                                                         bFollow;                                           // 0x124(0x1)
 	bool                                                         bReverse;                                          // 0x124(0x1)
 	bool                                                         bForceUpright;                                     // 0x124(0x1)
-	char                                                         pad0x5_1W9RV[0x5];                                 // 0x123(0x5)
+	char                                                         pad0x3_A419V[0x3];                                 // 0x125(0x3)
 };
 
 
@@ -71,13 +71,13 @@ public:
 class MovieScene3DTransformSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_IJHHM[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_0G065[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             Translation;                                       // 0xa0(0x78)
-	char                                                         pad0xf0_8ELCB[0xf0];                               // 0x118(0xf0)
+	char                                                         pad0xf0_VL7WT[0xf0];                               // 0x118(0xf0)
 	Struct RichCurve                                             Rotation;                                          // 0x208(0x78)
-	char                                                         pad0xf0_1AA53[0xf0];                               // 0x280(0xf0)
+	char                                                         pad0xf0_T019S[0xf0];                               // 0x280(0xf0)
 	Struct RichCurve                                             Scale;                                             // 0x370(0x78)
-	char                                                         pad0x1e0_MQM9N[0x1e0];                             // 0x3e6(0x1e0)
+	char                                                         pad0xf0_OEMWL[0xf0];                               // 0x3e8(0xf0)
 };
 
 
@@ -85,9 +85,9 @@ public:
 class MovieSceneActorReferenceSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_7JZAZ[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_HH3LT[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         ActorGuidIndexCurve;                               // 0xa0(0x70)
-	char                                                         pad0x10_L4RW8[0x10];                               // 0x110(0x10)
+	char                                                         pad0x10_RFGE4[0x10];                               // 0x110(0x10)
 	TArray<Str ActorGuidStrings>                                 ActorGuidStrings;                                  // 0x120(0x10)
 };
 
@@ -104,7 +104,7 @@ public:
 	Struct RichCurve                                             SoundVolume;                                       // 0xb0(0x78)
 	Struct RichCurve                                             PitchMultiplier;                                   // 0x128(0x78)
 	bool                                                         bSuppressSubtitles;                                // 0x1a0(0x1)
-	char                                                         pad0x9_CAUCT[0x9];                                 // 0x19f(0x9)
+	char                                                         pad0x7_1WUZQ[0x7];                                 // 0x1a1(0x7)
 };
 
 
@@ -120,9 +120,9 @@ public:
 class MovieSceneBoolSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_NH73M[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_1AC27[0x8];                                 // 0x98(0x8)
 	bool                                                         DefaultValue;                                      // 0xa0(0x1)
-	char                                                         pad0x7_N6SAR[0x7];                                 // 0xa1(0x7)
+	char                                                         pad0x7_U171V[0x7];                                 // 0xa1(0x7)
 	Struct IntegralCurve                                         BoolCurve;                                         // 0xa8(0x70)
 };
 
@@ -138,7 +138,7 @@ public:
 class MovieSceneByteSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_85A9B[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_V900A[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         ByteCurve;                                         // 0xa0(0x70)
 };
 
@@ -154,7 +154,7 @@ public:
 	float                                                        BlendInTime;                                       // 0xc8(0x4)
 	float                                                        BlendOutTime;                                      // 0xcc(0x4)
 	bool                                                         bLooping;                                          // 0xd0(0x1)
-	char                                                         pad0x9_9PHVT[0x9];                                 // 0xcf(0x9)
+	char                                                         pad0x7_OKJ6B[0x7];                                 // 0xd1(0x7)
 };
 
 
@@ -190,9 +190,9 @@ public:
 	class                                                        ShakeClass;                                        // 0xb8(0x8)
 	float                                                        PlayScale;                                         // 0xc0(0x4)
 	byte                                                         PlaySpace;                                         // 0xc4(0x1)
-	char                                                         pad0x3_DK1DS[0x3];                                 // 0xc5(0x3)
+	char                                                         pad0x3_EWQRO[0x3];                                 // 0xc5(0x3)
 	Struct Rotator                                               UserDefinedPlaySpace;                              // 0xc8(0xc)
-	char                                                         pad0x1c_KP4J7[0x1c];                               // 0xd2(0x1c)
+	char                                                         pad0x4_M8OO2[0x4];                                 // 0xd4(0x4)
 };
 
 
@@ -208,7 +208,7 @@ public:
 class MovieSceneColorSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_3Y1W5[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_726F3[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             RedCurve;                                          // 0xa0(0x78)
 	Struct RichCurve                                             GreenCurve;                                        // 0x118(0x78)
 	Struct RichCurve                                             BlueCurve;                                         // 0x190(0x78)
@@ -220,7 +220,7 @@ public:
 class MovieSceneEnumSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_N3WS4[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_PTDAE[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         EnumCurve;                                         // 0xa0(0x70)
 };
 
@@ -231,7 +231,7 @@ class MovieSceneEventSection: public MovieSceneSection
 public:
 	Struct NameCurve                                             Events;                                            // 0x98(0x68)
 	Struct MovieSceneEventSectionData                            EventData;                                         // 0x100(0x20)
-	char                                                         pad0xc8_3UT0M[0xc8];                               // 0x11e(0xc8)
+	char                                                         pad0x88_QCTC1[0x88];                               // 0x120(0x88)
 };
 
 
@@ -250,7 +250,7 @@ class MovieSceneEventTrack: public MovieSceneNameableTrack
 public:
 	bool                                                         bFireEventsWhenForwards;                           // 0x88(0x1)
 	bool                                                         bFireEventsWhenBackwards;                          // 0x88(0x1)
-	char                                                         pad0x7_0Y37F[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_LKNDL[0x7];                                 // 0x89(0x7)
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x90(0x10)
 };
 
@@ -259,7 +259,7 @@ public:
 class MovieSceneFloatSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_6QTIL[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_C0LG1[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             FloatCurve;                                        // 0xa0(0x78)
 };
 
@@ -270,7 +270,7 @@ class MovieSceneFadeSection: public MovieSceneFloatSection
 public:
 	Struct LinearColor                                           FadeColor;                                         // 0x118(0x10)
 	bool                                                         bFadeAudio;                                        // 0x128(0x1)
-	char                                                         pad0x9_YIQTP[0x9];                                 // 0x127(0x9)
+	char                                                         pad0x7_07GMS[0x7];                                 // 0x129(0x7)
 };
 
 
@@ -285,7 +285,7 @@ public:
 class MovieSceneIntegerSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_9JKW2[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_KA6KA[0x8];                                 // 0x98(0x8)
 	Struct IntegralCurve                                         IntegerCurve;                                      // 0xa0(0x70)
 };
 
@@ -295,7 +295,7 @@ class MovieSceneLevelVisibilitySection: public MovieSceneSection
 {
 public:
 	byte                                                         Visibility;                                        // 0x98(0x1)
-	char                                                         pad0x7_TYL39[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_ZUSUE[0x7];                                 // 0x99(0x7)
 	TArray<struct FName>                                         LevelNames;                                        // 0xa0(0x10)
 };
 
@@ -341,7 +341,7 @@ class MovieSceneComponentMaterialTrack: public MovieSceneMaterialTrack
 {
 public:
 	int                                                          MaterialIndex;                                     // 0x98(0x4)
-	char                                                         pad0xc_9NHQW[0xc];                                 // 0x9a(0xc)
+	char                                                         pad0x4_CRY6H[0x4];                                 // 0x9c(0x4)
 };
 
 
@@ -410,7 +410,7 @@ class MovieSceneColorTrack: public MovieScenePropertyTrack
 {
 public:
 	bool                                                         bIsSlateColor;                                     // 0xb0(0x1)
-	char                                                         pad0x9_23SLH[0x9];                                 // 0xaf(0x9)
+	char                                                         pad0x7_INB1B[0x7];                                 // 0xb1(0x7)
 };
 
 
@@ -462,7 +462,7 @@ class MovieSceneVectorTrack: public MovieScenePropertyTrack
 {
 public:
 	int                                                          NumChannelsUsed;                                   // 0xb0(0x4)
-	char                                                         pad0xc_10JM2[0xc];                                 // 0xb2(0xc)
+	char                                                         pad0x4_57DHV[0x4];                                 // 0xb4(0x4)
 };
 
 
@@ -477,7 +477,7 @@ public:
 	float                                                        EndOffset;                                         // 0x144(0x4)
 	float                                                        PlayRate;                                          // 0x148(0x4)
 	bool                                                         bReverse;                                          // 0x14c(0x1)
-	char                                                         pad0x3_27WGP[0x3];                                 // 0x14d(0x3)
+	char                                                         pad0x3_9UACA[0x3];                                 // 0x14d(0x3)
 	struct FName                                                 SlotName;                                          // 0x150(0x8)
 };
 
@@ -487,7 +487,7 @@ class MovieSceneSkeletalAnimationTrack: public MovieSceneNameableTrack
 {
 public:
 	byte                                                         TrackSubtype;                                      // 0x88(0x1)
-	char                                                         pad0x7_3C888[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_AJW4K[0x7];                                 // 0x89(0x7)
 	TArray<class MovieSceneSection*>                             AnimationSections;                                 // 0x90(0x10)
 };
 
@@ -496,7 +496,7 @@ public:
 class MovieSceneStringSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_Y6B6O[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_LZOKP[0x8];                                 // 0x98(0x8)
 	Struct StringCurve                                           StringCurve;                                       // 0xa0(0x78)
 };
 
@@ -509,7 +509,7 @@ public:
 	float                                                        StartOffset;                                       // 0xa8(0x4)
 	float                                                        TimeScale;                                         // 0xac(0x4)
 	float                                                        PrerollTime;                                       // 0xb0(0x4)
-	char                                                         pad0x4_HRB7M[0x4];                                 // 0xb4(0x4)
+	char                                                         pad0x4_3VO2M[0x4];                                 // 0xb4(0x4)
 	Class MovieSceneSequence*                                    SubSequence;                                       // 0xb8(0x8)
 	Struct FString                                               TargetSequenceName;                                // 0xe0(0x10)
 	Struct DirectoryPath                                         TargetPathToRecordTo;                              // 0xf0(0x10)
@@ -543,11 +543,11 @@ public:
 class MovieSceneVectorSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_3FI4Y[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_D628G[0x8];                                 // 0x98(0x8)
 	Struct RichCurve                                             Curves;                                            // 0xa0(0x78)
-	char                                                         pad0x168_V387Z[0x168];                             // 0x118(0x168)
+	char                                                         pad0x168_JZT45[0x168];                             // 0x118(0x168)
 	int                                                          ChannelsUsed;                                      // 0x280(0x4)
-	char                                                         pad0xc_GBIRY[0xc];                                 // 0x282(0xc)
+	char                                                         pad0x4_4A9UO[0x4];                                 // 0x284(0x4)
 };
 
 

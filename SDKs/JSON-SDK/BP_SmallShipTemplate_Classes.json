@@ -265,67 +265,67 @@
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x1868"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x1870"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x1878"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x1880"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x1888"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x1890"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x1898"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x18a0"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x18a8"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x18b0"
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x18b8"
       },
@@ -337,7 +337,7 @@
       },
       {
         "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Type": "None *",
         "Size": "0x8",
         "Offset": "0x18c8"
       },
@@ -708,7 +708,7 @@
         "Offset": "0x1ab0"
       },
       {
-        "Name": "pad0x7_315C5[0x7]",
+        "Name": "pad0x7_5GPM6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1ab1"
@@ -726,7 +726,7 @@
         "Offset": "0x1ac0"
       },
       {
-        "Name": "pad0x7_EYNLZ[0x7]",
+        "Name": "pad0x7_SM7OG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1ac1"

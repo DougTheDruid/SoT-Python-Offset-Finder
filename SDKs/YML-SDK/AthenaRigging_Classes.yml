@@ -14,9 +14,9 @@ InstancedRopeComponent:
     Offset: '0x5d0'
     Size: '0x4'
     Type: int
-  - Name: pad0xb4_OBWY1[0xb4]
-    Offset: '0x5d2'
-    Size: '0xb4'
+  - Name: pad0xac_DZ7OO[0xac]
+    Offset: '0x5d4'
+    Size: '0xac'
     Type: char
   ClassSize: '0xc0'
   FullSize: '0x680'
@@ -28,9 +28,9 @@ MaterialExpressionRopeParameter:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x9_YAVM6[0x9]
-    Offset: '0x6f'
-    Size: '0x9'
+  - Name: pad0x7_V74ZA[0x7]
+    Offset: '0x71'
+    Size: '0x7'
     Type: char
   ClassSize: '0x8'
   FullSize: '0x78'
@@ -38,7 +38,7 @@ MaterialExpressionRopeParameter:
   Super: MaterialExpression
 RiggingSystem:
   Attributes:
-  - Name: pad0x8_UAZDN[0x8]
+  - Name: pad0x8_973P8[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -74,9 +74,9 @@ RiggingSystem:
     Offset: '0x480'
     Size: '0x10'
     Type: TArray<Float InitialMainRopeLengths>
-  - Name: pad0xa8_4AOY2[0xa8]
-    Offset: '0x48e'
-    Size: '0xa8'
+  - Name: pad0x88_2718U[0x88]
+    Offset: '0x490'
+    Size: '0x88'
     Type: char
   ClassSize: '0x150'
   FullSize: '0x518'
@@ -96,9 +96,9 @@ RiggingSystemComponent:
     Offset: '0x310'
     Size: '0x8'
     Type: Class RiggingSystem*
-  - Name: pad0x18_W4KIS[0x18]
-    Offset: '0x316'
-    Size: '0x18'
+  - Name: pad0x8_9N2R5[0x8]
+    Offset: '0x318'
+    Size: '0x8'
     Type: char
   ClassSize: '0x40'
   FullSize: '0x320'

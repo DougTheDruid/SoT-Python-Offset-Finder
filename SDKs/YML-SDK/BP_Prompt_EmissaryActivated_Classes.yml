@@ -6,9 +6,9 @@ BP_Prompt_EmissaryActivated_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x132_L3MY4[0x132]
+  - Name: pad0x12b_7KQIO[0x12b]
     Offset: '0x120'
-    Size: '0x132'
+    Size: '0x12b'
     Type: char
   - Name: Handle_EmissaryCompanyChangedEvent
     Offset: '0x120'
@@ -30,7 +30,7 @@ BP_Prompt_EmissaryActivated_C:
     Offset: '0x188'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KKRCP[0x7]
+  - Name: pad0x7_IMSA1[0x7]
     Offset: '0x189'
     Size: '0x7'
     Type: char

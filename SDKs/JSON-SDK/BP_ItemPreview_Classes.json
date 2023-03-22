@@ -6,82 +6,82 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x588"
       },
       {
-        "Name": "None",
+        "Name": "Camera_Dog",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x590"
       },
       {
-        "Name": "None",
+        "Name": "Camera_Far",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x598"
       },
       {
-        "Name": "None",
+        "Name": "Camera_Mid",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5a0"
       },
       {
-        "Name": "None",
+        "Name": "Camera_Near",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5a8"
       },
       {
-        "Name": "None",
+        "Name": "IconBillboard",
         "Type": "Class BillboardComponent*",
         "Size": "0x8",
         "Offset": "0x5b0"
       },
       {
-        "Name": "None",
+        "Name": "Camera_Default",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5b8"
       },
       {
-        "Name": "None",
+        "Name": "ChildActor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x5c0"
       },
       {
-        "Name": "None",
+        "Name": "HiddenDftMesh",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5c8"
       },
       {
-        "Name": "None",
+        "Name": "ItemMesh",
         "Type": "Class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5d0"
       },
       {
-        "Name": "None",
+        "Name": "Camera",
         "Type": "Class CameraComponent*",
         "Size": "0x8",
         "Offset": "0x5d8"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
-        "Name": "pad0x40_MUT5X[0x40]",
+        "Name": "pad0x30_Z13HP[0x30]",
         "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x5e6"
+        "Size": "0x30",
+        "Offset": "0x5e8"
       }
     ]
   },

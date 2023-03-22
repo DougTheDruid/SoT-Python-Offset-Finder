@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class BP_Adv12_Hideout_AudioLayer_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	Class AudioSpaceComponent*                                   None;                                              // 0x3d0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3d8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
-	Class WwiseEvent*                                            None;                                              // 0x3e8(0x8)
-	Class WwiseEvent*                                            None;                                              // 0x3f0(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	Class AudioSpaceComponent*                                   AudioSpace;                                        // 0x3d0(0x8)
+	Class AudioPortalComponent*                                  AudioPortal;                                       // 0x3d8(0x8)
+	Class SceneComponent*                                        Scene;                                             // 0x3e0(0x8)
+	Class WwiseEvent*                                            TavernFire_Play;                                   // 0x3e8(0x8)
+	Class WwiseEvent*                                            TavernFire_Stop;                                   // 0x3f0(0x8)
 };
 
 

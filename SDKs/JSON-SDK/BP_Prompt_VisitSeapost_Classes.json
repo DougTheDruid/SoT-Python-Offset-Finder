@@ -12,9 +12,9 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x132_I4IEI[0x132]",
+        "Name": "pad0x12b_VSFCP[0x12b]",
         "Type": "char",
-        "Size": "0x132",
+        "Size": "0x12b",
         "Offset": "0x120"
       },
       {
@@ -42,7 +42,7 @@
         "Offset": "0x238"
       },
       {
-        "Name": "pad0x3_L1TSB[0x3]",
+        "Name": "pad0x3_PS2WR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x239"
@@ -60,7 +60,7 @@
         "Offset": "0x240"
       },
       {
-        "Name": "pad0x4_79INI[0x4]",
+        "Name": "pad0x4_SHEMI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x244"

@@ -2,34 +2,34 @@
 # https://github.com/DougTheDruid
 BP_VotableCancelAdventure_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x4f0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Tokens
     Offset: '0x4f8'
     Size: '0x10'
     Type: TArray<class StaticMeshComponent*>
-  - Name: None
+  - Name: Token Asset
     Offset: '0x508'
     Size: '0x8'
     Type: Class StaticMesh*
-  - Name: None
+  - Name: Show Token Animation Time
     Offset: '0x510'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OJ7FC[0x4]
+  - Name: pad0x4_52HAH[0x4]
     Offset: '0x514'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: Token Material
     Offset: '0x518'
     Size: '0x8'
     Type: Class MaterialInterface*
-  - Name: None
+  - Name: DaggerPositions
     Offset: '0x520'
     Size: '0x10'
-    Type: TArray<struct None>
+    Type: TArray<struct DaggerPositions>
   ClassSize: '0x40'
   FullSize: '0x530'
   InheritedSize: '0x4f0'

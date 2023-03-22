@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class bp_light_volume_sphere_large_a_C: public Actor
 {
 public:
-	Class BillboardComponent*                                    None;                                              // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
+	Class BillboardComponent*                                    Billboard;                                         // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d0(0x8)
 };
 
 

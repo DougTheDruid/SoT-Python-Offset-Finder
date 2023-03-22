@@ -2,39 +2,39 @@
 # https://github.com/DougTheDruid
 BP_PlayerPirate_Ghost_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x1e10'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: BP_GhostCharacterAudioComponent
     Offset: '0x1e18'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_GhostCharacterAudioComponent_C*
+  - Name: WaterInteraction
     Offset: '0x1e20'
     Size: '0x8'
     Type: Class WaterInteractionComponent*
-  - Name: None
+  - Name: PlayerNameplate
     Offset: '0x1e28'
     Size: '0x8'
     Type: Class PlayerNameplateComponent*
-  - Name: None
+  - Name: BodyLightController
     Offset: '0x1e30'
     Size: '0x8'
     Type: Class BodyLightControllerComponent*
-  - Name: None
+  - Name: AnimNotifyWwiseEmitter
     Offset: '0x1e38'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: None
+  - Name: BodyLight
     Offset: '0x1e40'
     Size: '0x8'
     Type: Class AmbientLightSourceComponent*
-  - Name: None
+  - Name: CharacterFootImpact
     Offset: '0x1e48'
     Size: '0x8'
     Type: Class CharacterFootImpactComponent*
-  - Name: None
+  - Name: Default Ghost Parameter
     Offset: '0x1e50'
     Size: '0x4'
     Type: float

@@ -15,7 +15,7 @@ public:
 	TArray<class WwiseEvent*>                                    None;                                              // 0x3d8(0x10)
 	struct FName                                                 None;                                              // 0x3e8(0x8)
 	float                                                        None;                                              // 0x3f0(0x4)
-	char                                                         pad0x4_NLS0J[0x4];                                 // 0x3f4(0x4)
+	char                                                         pad0x4_YWMU8[0x4];                                 // 0x3f4(0x4)
 	Class WwiseObjectPoolWrapper*                                None;                                              // 0x3f8(0x8)
 };
 

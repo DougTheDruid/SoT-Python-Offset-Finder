@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_msc_concertina_smp_01_a_v01_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x510'
     Size: '0x8'
     Type: Class SceneComponent*

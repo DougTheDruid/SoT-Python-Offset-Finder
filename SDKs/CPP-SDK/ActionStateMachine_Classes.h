@@ -74,7 +74,7 @@ class CustomClientValidityCheckCallback: public Object
 {
 public:
 	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
-	char                                                         pad0x9_ROVLC[0x9];                                 // 0x27(0x9)
+	char                                                         pad0x7_9XBZ8[0x7];                                 // 0x29(0x7)
 };
 
 

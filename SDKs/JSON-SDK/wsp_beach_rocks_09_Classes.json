@@ -54,40 +54,10 @@
         "Offset": "0x440"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
+        "Name": "pad0x30_K8UD1[0x30]",
+        "Type": "char",
+        "Size": "0x30",
         "Offset": "0x448"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
       }
     ]
   },

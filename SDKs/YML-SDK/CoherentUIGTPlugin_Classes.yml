@@ -8,7 +8,7 @@ CoherentUIGTAssetReferencer:
   Super: Object
 CoherentUIGTBaseComponent:
   Attributes:
-  - Name: pad0xa8_VYUZO[0xa8]
+  - Name: pad0xa8_B933L[0xa8]
     Offset: '0xc8'
     Size: '0xa8'
     Type: char
@@ -68,9 +68,9 @@ CoherentUIGTBaseComponent:
     Offset: '0x199'
     Size: '0x1'
     Type: bool
-  - Name: pad0x178_SQ08P[0x178]
-    Offset: '0x198'
-    Size: '0x178'
+  - Name: pad0x176_VW4LE[0x176]
+    Offset: '0x19a'
+    Size: '0x176'
     Type: char
   ClassSize: '0x248'
   FullSize: '0x310'
@@ -100,7 +100,7 @@ CoherentUIGTComponent:
     Offset: '0x328'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LI288[0x3]
+  - Name: pad0x3_5J5OD[0x3]
     Offset: '0x329'
     Size: '0x3'
     Type: char
@@ -112,9 +112,9 @@ CoherentUIGTComponent:
     Offset: '0x330'
     Size: '0x1'
     Type: bool
-  - Name: pad0x19_CDGAV[0x19]
-    Offset: '0x32f'
-    Size: '0x19'
+  - Name: pad0x17_ZT2SC[0x17]
+    Offset: '0x331'
+    Size: '0x17'
     Type: char
   ClassSize: '0x38'
   FullSize: '0x348'
@@ -132,9 +132,9 @@ CoherentUIGTGameHUD:
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class CoherentUIGTHUD*
-  - Name: pad0xa0_8CQMP[0xa0]
-    Offset: '0x4c6'
-    Size: '0xa0'
+  - Name: pad0x90_1BNZ8[0x90]
+    Offset: '0x4c8'
+    Size: '0x90'
     Type: char
   ClassSize: '0x98'
   FullSize: '0x558'
@@ -154,9 +154,9 @@ CoherentUIGTHUD:
     Offset: '0x328'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: pad0x18_DJVDC[0x18]
-    Offset: '0x32e'
-    Size: '0x18'
+  - Name: pad0x8_TCVJV[0x8]
+    Offset: '0x330'
+    Size: '0x8'
     Type: char
   ClassSize: '0x28'
   FullSize: '0x338'
@@ -170,7 +170,7 @@ CoherentUIGTInputActor:
   Super: Actor
 CoherentUIGTJSEvent:
   Attributes:
-  - Name: pad0x80_4US84[0x80]
+  - Name: pad0x80_OYSIA[0x80]
     Offset: '0x28'
     Size: '0x80'
     Type: char
@@ -188,9 +188,9 @@ CoherentUIGTJSPayload:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct FString
-  - Name: pad0x28_B8P5W[0x28]
-    Offset: '0x36'
-    Size: '0x28'
+  - Name: pad0x8_POPOW[0x8]
+    Offset: '0x38'
+    Size: '0x8'
     Type: char
   ClassSize: '0x18'
   FullSize: '0x40'
@@ -206,9 +206,9 @@ CoherentUIGTLiveView:
     Offset: '0xd8'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
-  - Name: pad0x28_S2EES[0x28]
-    Offset: '0xde'
-    Size: '0x28'
+  - Name: pad0x18_WG57P[0x18]
+    Offset: '0xe0'
+    Size: '0x18'
     Type: char
   ClassSize: '0x30'
   FullSize: '0xf8'
@@ -226,7 +226,7 @@ CoherentUIGTSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UQMJP[0x3]
+  - Name: pad0x3_70YD5[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -282,7 +282,7 @@ CoherentUIGTSettings:
     Offset: '0x3e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_YTCKS[0x1]
+  - Name: pad0x1_9KFMM[0x1]
     Offset: '0x3f'
     Size: '0x1'
     Type: char
@@ -302,9 +302,9 @@ CoherentUIGTSettings:
     Offset: '0x61'
     Size: '0x1'
     Type: byte
-  - Name: pad0x8_QWDI1[0x8]
-    Offset: '0x60'
-    Size: '0x8'
+  - Name: pad0x6_J9TDZ[0x6]
+    Offset: '0x62'
+    Size: '0x6'
     Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
@@ -318,7 +318,7 @@ CoherentUIGTSystem:
   Super: Actor
 CoherentUIGTWidget:
   Attributes:
-  - Name: pad0x20_SWSJW[0x20]
+  - Name: pad0x20_Y7RCU[0x20]
     Offset: '0x138'
     Size: '0x20'
     Type: char
@@ -346,7 +346,7 @@ CoherentUIGTWidget:
     Offset: '0x1fc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ESYKW[0x3]
+  - Name: pad0x3_SK9GA[0x3]
     Offset: '0x1fd'
     Size: '0x3'
     Type: char
@@ -382,7 +382,7 @@ CoherentUIGTWidget:
     Offset: '0x21c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1a3_2KNCH[0x1a3]
+  - Name: pad0x1a3_FFFXX[0x1a3]
     Offset: '0x21d'
     Size: '0x1a3'
     Type: char
@@ -398,9 +398,9 @@ CoherentUIGTWidget:
     Offset: '0x3d4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_QPKHH[0x5]
-    Offset: '0x3d3'
-    Size: '0x5'
+  - Name: pad0x3_50E7F[0x3]
+    Offset: '0x3d5'
+    Size: '0x3'
     Type: char
   ClassSize: '0x2a0'
   FullSize: '0x3d8'
