@@ -1,93 +1,93 @@
 {
   "BP_Prompt_EmissaryDiscoveredCargoRunCrate_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x1a8",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x90",
+    "FullSize": "0x1d8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_63Y30[0x12b]",
+        "Name": "pad0x4c_575Q4[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_EmissaryDiscoveredCargoRunCrate",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x168"
+        "Offset": "0x198"
       },
       {
         "Name": "SurfacedThisSession",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
-        "Name": "pad0x3_R9L27[0x3]",
+        "Name": "pad0x3_01L3X[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x171"
+        "Offset": "0x1a1"
       },
       {
         "Name": "ExpectedCompanyName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x174"
+        "Offset": "0x1a4"
       },
       {
-        "Name": "pad0x4_29WSW[0x4]",
+        "Name": "pad0x4_Y4QOR[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x17c"
+        "Offset": "0x1ac"
       },
       {
         "Name": "Prompts",
         "Type": "TArray<struct Prompts>",
         "Size": "0x10",
-        "Offset": "0x180"
+        "Offset": "0x1b0"
       },
       {
         "Name": "PromptAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x190"
+        "Offset": "0x1c0"
       },
       {
         "Name": "PromptIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x198"
+        "Offset": "0x1c8"
       },
       {
         "Name": "NumberOfPrompts",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x19c"
+        "Offset": "0x1cc"
       },
       {
         "Name": "InitialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1a0"
+        "Offset": "0x1d0"
       },
       {
         "Name": "ShowPromptDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1a4"
+        "Offset": "0x1d4"
       }
     ]
   },

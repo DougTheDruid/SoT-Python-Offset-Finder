@@ -7,10 +7,10 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8 (Full Size[0x5f8] - InheritedSize[0x5f0]
-class BP_Volcano_SeaBased_C: public None
+class BP_Volcano_SeaBased_C: public BP_Volcano_C
 {
 public:
-	Class NamedPointsComponent*                                  None;                                              // 0x5f0(0x8)
+	Class NamedPointsComponent*                                  NamedPoints;                                       // 0x5f0(0x8)
 };
 
 

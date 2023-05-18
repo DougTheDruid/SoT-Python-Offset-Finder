@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_069V0[0x4]",
+        "Name": "pad0x4_79JVC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -27,7 +27,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_1XWTG[0x7]",
+        "Name": "pad0x7_W57SA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -50,7 +50,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_CPJWQ[0x4]",
+        "Name": "pad0x4_83JVG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -69,6 +69,17 @@
       }
     ]
   },
+  "SpawnActorCustomOnCompleteWaveTaskData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Body",
+        "Type": "Class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SpawnActorCustomOnTriggerWaveTaskData": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -79,7 +90,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_SH0V0[0x4]",
+        "Name": "pad0x4_QVFMR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -152,7 +163,7 @@
     ]
   },
   "SpawnAICustomSetupTaskData": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "MaxAI",
@@ -161,16 +172,22 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_TGA2M[0x4]",
+        "Name": "pad0x4_WFIJ5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
+        "Name": "Region",
+        "Type": "Class TaleAIRegionBase*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
         "Name": "Body",
         "Type": "Class TaleQuestStepDesc*",
         "Size": "0x8",
-        "Offset": "0x8"
+        "Offset": "0x10"
       }
     ]
   },

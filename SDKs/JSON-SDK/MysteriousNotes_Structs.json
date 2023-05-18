@@ -187,7 +187,7 @@
     ]
   },
   "WieldableMysteriousNoteLayoutItem": {
-    "ClassSize": "0xd0",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "Theme",
@@ -204,38 +204,38 @@
       {
         "Name": "Image",
         "Type": "Struct TreasureMapWidgetStreamedTexture",
-        "Size": "0x30",
+        "Size": "0x38",
         "Offset": "0x18"
       },
       {
         "Name": "RadialIcon",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x48"
+        "Offset": "0x50"
       },
       {
         "Name": "NoteTitleWidgetText",
         "Type": "Struct TreasureMapWidgetText",
-        "Size": "0x38",
-        "Offset": "0x58"
+        "Size": "0x3c",
+        "Offset": "0x60"
       },
       {
         "Name": "NoteBodyWidgetText",
         "Type": "Struct TreasureMapWidgetText",
-        "Size": "0x38",
-        "Offset": "0x90"
+        "Size": "0x3c",
+        "Offset": "0x9c"
       },
       {
         "Name": "NoteWidth",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc8"
+        "Offset": "0xd8"
       },
       {
         "Name": "NoteLineSpacingMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xcc"
+        "Offset": "0xdc"
       }
     ]
   },
@@ -335,7 +335,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_TGK7Z[0x7]",
+        "Name": "pad0x7_PK7AD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"

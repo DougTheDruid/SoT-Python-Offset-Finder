@@ -2,45 +2,45 @@
 # https://github.com/DougTheDruid
 BP_SoveriegnHarpoonLauncher_2_C:
   Attributes:
-  - Name: None
-    Offset: '0xc30'
+  - Name: HarpoonItemLocation
+    Offset: '0xcb0'
     Size: '0x8'
     Type: Class HarpoonItemLocationComponent*
-  - Name: None
-    Offset: '0xc38'
+  - Name: CubeNotWalkable
+    Offset: '0xcb8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xc40'
+  - Name: MountCollision
+    Offset: '0xcc0'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
-    Offset: '0xc48'
+  - Name: BarrelCollision
+    Offset: '0xcc8'
     Size: '0x8'
     Type: Class CapsuleComponent*
   ClassSize: '0x20'
-  FullSize: '0xc50'
-  InheritedSize: '0xc30'
+  FullSize: '0xcd0'
+  InheritedSize: '0xcb0'
   Super: HarpoonLauncher
 BP_SoveriegnHarpoonLauncher_C:
   Attributes:
-  - Name: None
-    Offset: '0xc30'
+  - Name: HarpoonItemLocation
+    Offset: '0xcb0'
     Size: '0x8'
     Type: Class HarpoonItemLocationComponent*
-  - Name: None
-    Offset: '0xc38'
+  - Name: CubeNotWalkable
+    Offset: '0xcb8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xc40'
+  - Name: MountCollision
+    Offset: '0xcc0'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
-    Offset: '0xc48'
+  - Name: BarrelCollision
+    Offset: '0xcc8'
     Size: '0x8'
     Type: Class CapsuleComponent*
   ClassSize: '0x20'
-  FullSize: '0xc50'
-  InheritedSize: '0xc30'
+  FullSize: '0xcd0'
+  InheritedSize: '0xcb0'
   Super: HarpoonLauncher

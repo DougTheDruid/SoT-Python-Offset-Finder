@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_DeepSeaRegion_C:
   Attributes:
-  - Name: None
+  - Name: PreviewCapsuleTwo
     Offset: '0x438'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
+  - Name: PreviewCapsuleOne
     Offset: '0x440'
     Size: '0x8'
     Type: Class CapsuleComponent*

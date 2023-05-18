@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_WorldMarkerManager_C:
   Attributes:
-  - Name: None
+  - Name: WorldMarkerManager
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class WorldMarkerManagerComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*

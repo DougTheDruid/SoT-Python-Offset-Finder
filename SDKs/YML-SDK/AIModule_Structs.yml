@@ -14,7 +14,7 @@ AIDamageEvent:
     Offset: '0x10'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_DRHDU[0x4]
+  - Name: pad0x4_0M943[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -169,7 +169,7 @@ AIStimulus:
     Offset: '0x24'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0xc_CJ3DC[0xc]
+  - Name: pad0xc_U1D79[0xc]
     Offset: '0x2c'
     Size: '0xc'
     Type: char
@@ -240,7 +240,7 @@ BTDecoratorLogic:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_18JLF[0x1]
+  - Name: pad0x1_4CQ8Z[0x1]
     Offset: '0x1'
     Size: '0x1'
     Type: char
@@ -289,7 +289,7 @@ BlackboardKeySelector:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_YALKI[0x3]
+  - Name: pad0x3_2D2MG[0x3]
     Offset: '0x21'
     Size: '0x3'
     Type: char
@@ -372,7 +372,7 @@ EnvBoolParam_DEPRECATED:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_U0LPH[0x3]
+  - Name: pad0x3_U4W4E[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -438,7 +438,7 @@ EnvNamedValue:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_PG4W1[0x3]
+  - Name: pad0x3_I037Q[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -475,7 +475,7 @@ EnvQueryResult:
     Offset: '0x10'
     Size: '0x8'
     Type: class
-  - Name: pad0x14_AO21D[0x14]
+  - Name: pad0x14_XZHUC[0x14]
     Offset: '0x18'
     Size: '0x14'
     Type: char
@@ -494,7 +494,7 @@ EnvTraceData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OIEDI[0x4]
+  - Name: pad0x4_T84BH[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -570,7 +570,7 @@ EnvTraceData:
     Offset: '0x34'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1Z4VQ[0x3]
+  - Name: pad0x3_A6YYP[0x3]
     Offset: '0x35'
     Size: '0x3'
     Type: char

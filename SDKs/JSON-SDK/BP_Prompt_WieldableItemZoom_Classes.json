@@ -1,81 +1,81 @@
 {
   "BP_Prompt_WieldableItemZoom_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x1f8",
-    "InheritedSize": "0x118",
-    "ClassSize": "0xe0",
+    "FullSize": "0x228",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_T584C[0x12b]",
+        "Name": "pad0x4c_DDWRN[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "PromptAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
         "Name": "WieldableItemEquipEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x128"
+        "Size": "0x58",
+        "Offset": "0x148"
       },
       {
         "Name": "WieldingZoomableWieldable",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
         "Name": "StatCompleted",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x171"
+        "Offset": "0x1a1"
       },
       {
-        "Name": "pad0x6_SM99J[0x6]",
+        "Name": "pad0x6_RJK89[0x6]",
         "Type": "char",
         "Size": "0x6",
-        "Offset": "0x172"
+        "Offset": "0x1a2"
       },
       {
         "Name": "CharacterDispatcher",
         "Type": "Struct ObjectMessagingDispatcherHandle",
         "Size": "0x8",
-        "Offset": "0x178"
+        "Offset": "0x1a8"
       },
       {
         "Name": "HasShown",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x180"
+        "Offset": "0x1b0"
       },
       {
-        "Name": "pad0x7_3PLTQ[0x7]",
+        "Name": "pad0x7_1SANR[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x181"
+        "Offset": "0x1b1"
       },
       {
         "Name": "Prompt",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x188"
+        "Offset": "0x1b8"
       },
       {
         "Name": "ShowForItemCategory",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x1f0"
+        "Offset": "0x220"
       }
     ]
   },

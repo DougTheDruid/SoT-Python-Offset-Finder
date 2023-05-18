@@ -2,79 +2,87 @@
 # https://github.com/DougTheDruid
 TaleNote:
   Attributes:
-  - Name: pad0x10_T19SS[0x10]
-    Offset: '0x7a0'
+  - Name: pad0x10_YMMMC[0x10]
+    Offset: '0x7e0'
     Size: '0x10'
     Type: char
   - Name: CanvasWidth
-    Offset: '0x7b0'
+    Offset: '0x7f0'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x7b4'
+    Offset: '0x7f4'
     Size: '0x4'
     Type: int
   - Name: FontScale
-    Offset: '0x7b8'
+    Offset: '0x7f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VUG1J[0x4]
-    Offset: '0x7bc'
+  - Name: pad0x4_3X0LO[0x4]
+    Offset: '0x7fc'
     Size: '0x4'
     Type: char
   - Name: Font
-    Offset: '0x7c0'
+    Offset: '0x800'
     Size: '0x8'
     Type: Class Font*
   - Name: Image
-    Offset: '0x7c8'
-    Size: '0x30'
+    Offset: '0x808'
+    Size: '0x38'
     Type: Struct TreasureMapWidgetStreamedTexture
   - Name: TitleWidgetText
-    Offset: '0x7f8'
-    Size: '0x38'
+    Offset: '0x840'
+    Size: '0x3c'
     Type: Struct TreasureMapWidgetText
   - Name: BodyWidgetText
-    Offset: '0x830'
-    Size: '0x38'
+    Offset: '0x87c'
+    Size: '0x3c'
     Type: Struct TreasureMapWidgetText
+  - Name: AdditionalBodyWidgetText
+    Offset: '0x8b8'
+    Size: '0x10'
+    Type: TArray<struct AdditionalBodyWidgetText>
   - Name: NoteWidth
-    Offset: '0x868'
+    Offset: '0x8c8'
     Size: '0x4'
     Type: float
   - Name: NoteLineSpacingMultiplier
-    Offset: '0x86c'
+    Offset: '0x8cc'
     Size: '0x4'
     Type: float
   - Name: Title
-    Offset: '0x870'
+    Offset: '0x8d0'
     Size: '0x38'
     Type: Struct FText
   - Name: Body
-    Offset: '0x8a8'
+    Offset: '0x908'
     Size: '0x38'
     Type: Struct FText
+  - Name: AdditionalBody
+    Offset: '0x940'
+    Size: '0x10'
+    Type: TArray<struct FText>
   - Name: RenderTarget
-    Offset: '0x8e0'
+    Offset: '0x950'
     Size: '0x8'
     Type: Class MaybeCompressedCanvasRenderTarget2D*
   - Name: UsableWieldableComponent
-    Offset: '0x8e8'
+    Offset: '0x958'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   - Name: InventoryItemComponent
-    Offset: '0x8f0'
+    Offset: '0x960'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   - Name: ZoomInOnWieldableComponent
-    Offset: '0x8f8'
+    Offset: '0x968'
     Size: '0x8'
     Type: Class ZoomInOnWieldableItemComponent*
-  - Name: pad0xd0_0MUW9[0xd0]
-    Offset: '0x900'
-    Size: '0xd0'
+  - Name: pad0xe0_MGSPA[0xe0]
+    Offset: '0x970'
+    Size: '0xe0'
     Type: char
-  ClassSize: '0x230'
-  FullSize: '0x9d0'
-  InheritedSize: '0x7a0'
+  ClassSize: '0x270'
+  FullSize: '0xa50'
+  InheritedSize: '0x7e0'
   Super: SkeletalMeshWieldableItem

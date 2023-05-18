@@ -3,78 +3,78 @@
 BP_PromptCoordinator_BootyStorage_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_4OE0T[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_0YZFT[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: ShowLootPrompt
-    Offset: '0x120'
+    Offset: '0x140'
     Size: '0x1'
     Type: bool
   - Name: ShowMermaidPrompt
-    Offset: '0x121'
+    Offset: '0x141'
     Size: '0x1'
     Type: bool
   - Name: HasUsedStatue
-    Offset: '0x122'
+    Offset: '0x142'
     Size: '0x1'
     Type: bool
   - Name: HasRetrievedLoot
-    Offset: '0x123'
+    Offset: '0x143'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4_5Q6NW[0x4]
-    Offset: '0x124'
+  - Name: pad0x4_K2Z6E[0x4]
+    Offset: '0x144'
     Size: '0x4'
     Type: char
   - Name: MermaidPrompt
-    Offset: '0x128'
+    Offset: '0x148'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: LootPrompt
-    Offset: '0x190'
+    Offset: '0x1b0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: CrewStorageChangedHandle
-    Offset: '0x1f8'
-    Size: '0x48'
+    Offset: '0x218'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: CrewStorageFullHandle
-    Offset: '0x240'
-    Size: '0x48'
+    Offset: '0x270'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: ItemsRetrievedHandle
-    Offset: '0x288'
-    Size: '0x48'
+    Offset: '0x2c8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: RetrieveActorHandle
-    Offset: '0x2d0'
-    Size: '0x48'
+    Offset: '0x320'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: WieldedEventHandle
-    Offset: '0x318'
-    Size: '0x48'
+    Offset: '0x378'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: PromptKey
-    Offset: '0x360'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: class
   - Name: CurrentlyWieldedItem
-    Offset: '0x368'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: Class WieldableItem*
   - Name: StowedEventHandle
-    Offset: '0x370'
-    Size: '0x48'
+    Offset: '0x3e0'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: RetrieveActorDespawnHandle
-    Offset: '0x3b8'
-    Size: '0x48'
+    Offset: '0x438'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
-  ClassSize: '0x2e8'
-  FullSize: '0x400'
-  InheritedSize: '0x118'
+  ClassSize: '0x358'
+  FullSize: '0x490'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

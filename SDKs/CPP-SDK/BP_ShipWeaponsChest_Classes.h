@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x5a8] - InheritedSize[0x590]
+// Size 0x18 (Full Size[0x5b8] - InheritedSize[0x5a0]
 class BP_ShipWeaponsChest_C: public PossessionsChest
 {
 public:
-	Class CrewLockableComponent*                                 CrewLockableComponent;                             // 0x590(0x8)
-	Class StaticMeshComponent*                                   LockMesh;                                          // 0x598(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5a0(0x8)
+	Class CrewLockableComponent*                                 CrewLockableComponent;                             // 0x5a0(0x8)
+	Class StaticMeshComponent*                                   LockMesh;                                          // 0x5a8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5b0(0x8)
 };
 
 

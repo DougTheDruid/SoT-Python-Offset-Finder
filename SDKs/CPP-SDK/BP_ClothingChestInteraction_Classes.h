@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x6a0] - InheritedSize[0x698]
+// Size 0x8 (Full Size[0x700] - InheritedSize[0x6f8]
 class BP_ClothingChestInteraction_C: public ClothingChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x698(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x6f8(0x8)
 };
 
 

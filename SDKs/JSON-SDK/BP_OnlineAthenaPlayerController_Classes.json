@@ -1,15 +1,15 @@
 {
   "BP_OnlineAthenaPlayerController_C": {
     "Super": "OnlineAthenaPlayerController",
-    "FullSize": "0x1658",
-    "InheritedSize": "0x1650",
+    "FullSize": "0x1810",
+    "InheritedSize": "0x1808",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "VisitShopkeepersTutorialComponent",
         "Type": "BlueprintGeneratedClass BP_Component_Tutorial2019_C*",
         "Size": "0x8",
-        "Offset": "0x1650"
+        "Offset": "0x1808"
       }
     ]
   },

@@ -6,12 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x55 (Full Size[0x7f5] - InheritedSize[0x7a0]
+// Size 0x55 (Full Size[0x805] - InheritedSize[0x7b0]
 class BP_SmallMapTable_C: public MapTable
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x7a0(0x8)
-	char                                                         pad0x4d_PWZ9R[0x4d];                               // 0x7a8(0x4d)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x7b0(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x7b8(0x8)
+	Class BoxComponent*                                          None;                                              // 0x7c0(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x7c8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x7d0(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x7d8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x7e0(0x8)
+	Class TextureFeedbackComponent*                              None;                                              // 0x7e8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x7f0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x7f8(0x8)
+	float                                                        None;                                              // 0x800(0x4)
+	bool                                                         None;                                              // 0x804(0x1)
 };
 
 

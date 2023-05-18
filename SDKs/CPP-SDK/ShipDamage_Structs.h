@@ -22,7 +22,7 @@ public:
 	int                                                          DamageLevel;                                       // 0x10(0x4)
 	int                                                          RepairedDamageLevel;                               // 0x14(0x4)
 	byte                                                         RepairableState;                                   // 0x18(0x1)
-	char                                                         pad0x7_0PHIG[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_5TY77[0x7];                                 // 0x19(0x7)
 	TArray<struct ExternalHitList>                               ExternalHitList;                                   // 0x20(0x10)
 };
 
@@ -70,7 +70,7 @@ public:
 	Class Actor*                                                 Ship;                                              // 0x0(0x8)
 	struct FName                                                 DamagedShipPartIdentifier;                         // 0x8(0x8)
 	int                                                          NewDamageLevel;                                    // 0x10(0x4)
-	char                                                         pad0x4_SK2IN[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_KRKIR[0x4];                                 // 0x14(0x4)
 	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x18(0x58)
 };
 

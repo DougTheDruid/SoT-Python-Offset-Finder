@@ -6,18 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38 (Full Size[0xab8] - InheritedSize[0xa80]
+// Size 0x38 (Full Size[0xb28] - InheritedSize[0xaf0]
 class BP_FlintlockPistol_C: public ProjectileWeapon
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa80(0x8)
-	Class PostProcessComponent*                                  PostProcess;                                       // 0xa88(0x8)
-	byte                                                         sfx relationship;                                  // 0xa90(0x1)
-	char                                                         pad0x7_4WKNL[0x7];                                 // 0xa91(0x7)
-	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xa98(0x8)
-	Class Object*                                                ThirdPerson_VFX_AI;                                // 0xaa0(0x8)
-	Class WwiseEvent*                                            Flintlock3rdPersonSFX;                             // 0xaa8(0x8)
-	Class WwiseEvent*                                            FlintLockFirstPersonSFX;                           // 0xab0(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xaf0(0x8)
+	Class PostProcessComponent*                                  PostProcess;                                       // 0xaf8(0x8)
+	byte                                                         sfx relationship;                                  // 0xb00(0x1)
+	char                                                         pad0x7_GDZBO[0x7];                                 // 0xb01(0x7)
+	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xb08(0x8)
+	Class Object*                                                ThirdPerson_VFX_AI;                                // 0xb10(0x8)
+	Class WwiseEvent*                                            Flintlock3rdPersonSFX;                             // 0xb18(0x8)
+	Class WwiseEvent*                                            FlintLockFirstPersonSFX;                           // 0xb20(0x8)
 };
 
 

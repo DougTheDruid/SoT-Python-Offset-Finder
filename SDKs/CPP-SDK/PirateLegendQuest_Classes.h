@@ -11,23 +11,23 @@ class VeilOfTheAncients: public InteractableBase
 {
 public:
 	float                                                        NumberOfGems;                                      // 0x400(0x4)
-	char                                                         pad0x4_O77YU[0x4];                                 // 0x404(0x4)
+	char                                                         pad0x4_995C1[0x4];                                 // 0x404(0x4)
 	Class LockComponent*                                         LockComponent;                                     // 0x408(0x8)
 	Class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x410(0x8)
 };
 
 
-// Size 0x100 (Full Size[0x160] - InheritedSize[0x60]
+// Size 0x120 (Full Size[0x180] - InheritedSize[0x60]
 class VeilService: public TaleQuestService
 {
 public:
-	char                                                         pad0x20_X46E4[0x20];                               // 0x60(0x20)
+	char                                                         pad0x20_0UJ66[0x20];                               // 0x60(0x20)
 	Class World*                                                 World;                                             // 0x80(0x8)
 	Class GameState*                                             GameState;                                         // 0x88(0x8)
-	char                                                         pad0x8_D7IKK[0x8];                                 // 0x90(0x8)
+	char                                                         pad0x8_BZBQF[0x8];                                 // 0x90(0x8)
 	Class VeilOfTheAncients*                                     TrackedVeil;                                       // 0x98(0x8)
 	Class Ship*                                                  Ship;                                              // 0xa0(0x8)
-	char                                                         pad0xb8_405MY[0xb8];                               // 0xa8(0xb8)
+	char                                                         pad0xd8_SSFUW[0xd8];                               // 0xa8(0xd8)
 };
 
 

@@ -58,7 +58,7 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x38'
     Size: '0x78'
     Type: Struct RichCurve
-  - Name: pad0x78_UBQGW[0x78]
+  - Name: pad0x78_968J3[0x78]
     Offset: '0xb0'
     Size: '0x78'
     Type: char
@@ -70,7 +70,7 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x1a0'
     Size: '0x78'
     Type: Struct RichCurve
-  - Name: pad0x78_SM4SR[0x78]
+  - Name: pad0x78_6VA6L[0x78]
     Offset: '0x218'
     Size: '0x78'
     Type: char
@@ -133,7 +133,7 @@ PropertyPathSegment:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_NA7P3[0x4]
+  - Name: pad0x4_DOS69[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ WidgetNavigationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ASHWP[0x3]
+  - Name: pad0x3_Q3YBW[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

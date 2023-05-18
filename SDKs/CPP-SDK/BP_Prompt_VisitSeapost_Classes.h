@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x140 (Full Size[0x258] - InheritedSize[0x118]
+// Size 0x150 (Full Size[0x288] - InheritedSize[0x138]
 class BP_Prompt_VisitSeapost_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12b_VSFCP[0x12b];                             // 0x120(0x12b)
-	Struct ObjectMessagingHandle                                 Handle_EventObjectWielded;                         // 0x120(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt_WieledFishOrMeat;                           // 0x168(0x68)
-	Struct PrioritisedPromptWithHandle                           Prompt_VisitSeapost;                               // 0x1d0(0x68)
-	bool                                                         IsWieldingMeatOrFish;                              // 0x238(0x1)
-	char                                                         pad0x3_PS2WR[0x3];                                 // 0x239(0x3)
-	float                                                        DisplayDuration;                                   // 0x23c(0x4)
-	float                                                        DelayUntilNextPrompt;                              // 0x240(0x4)
-	char                                                         pad0x4_SHEMI[0x4];                                 // 0x244(0x4)
-	TArray<class Class*>                                         IgnoredFood;                                       // 0x248(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4d_AY1LM[0x4d];                               // 0x140(0x4d)
+	Struct ObjectMessagingHandle                                 Handle_EventObjectWielded;                         // 0x140(0x58)
+	Struct PrioritisedPromptWithHandle                           Prompt_WieledFishOrMeat;                           // 0x198(0x68)
+	Struct PrioritisedPromptWithHandle                           Prompt_VisitSeapost;                               // 0x200(0x68)
+	bool                                                         IsWieldingMeatOrFish;                              // 0x268(0x1)
+	char                                                         pad0x3_UY1MD[0x3];                                 // 0x269(0x3)
+	float                                                        DisplayDuration;                                   // 0x26c(0x4)
+	float                                                        DelayUntilNextPrompt;                              // 0x270(0x4)
+	char                                                         pad0x4_1Y8E9[0x4];                                 // 0x274(0x4)
+	TArray<Assetclass IgnoredFood>                               IgnoredFood;                                       // 0x278(0x10)
 };
 
 

@@ -6,7 +6,7 @@ BreakableActorAudioComponent:
     Offset: '0xc8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_SLSUJ[0x7]
+  - Name: pad0x7_YIBIT[0x7]
     Offset: '0xc9'
     Size: '0x7'
     Type: char
@@ -30,17 +30,17 @@ BreakableActorAudioComponent:
     Offset: '0xf0'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: pad0xb0_D2HR5[0xb0]
+  - Name: pad0xd0_2IT71[0xd0]
     Offset: '0xf8'
-    Size: '0xb0'
+    Size: '0xd0'
     Type: char
-  ClassSize: '0xe0'
-  FullSize: '0x1a8'
+  ClassSize: '0x100'
+  FullSize: '0x1c8'
   InheritedSize: '0xc8'
   Super: ActorComponent
 BreakableActorBase:
   Attributes:
-  - Name: pad0x20_879UJ[0x20]
+  - Name: pad0x20_YKF5N[0x20]
     Offset: '0x3c8'
     Size: '0x20'
     Type: char
@@ -48,7 +48,7 @@ BreakableActorBase:
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DF4K2[0x4]
+  - Name: pad0x4_4EG1Y[0x4]
     Offset: '0x3ec'
     Size: '0x4'
     Type: char
@@ -76,17 +76,17 @@ BreakableActorBase:
     Offset: '0x438'
     Size: '0x8'
     Type: Class ActorDamageableComponent*
-  - Name: pad0x108_1OWJM[0x108]
+  - Name: pad0x118_0EXEQ[0x118]
     Offset: '0x440'
-    Size: '0x108'
+    Size: '0x118'
     Type: char
-  ClassSize: '0x180'
-  FullSize: '0x548'
+  ClassSize: '0x190'
+  FullSize: '0x558'
   InheritedSize: '0x3c8'
   Super: Actor
 BreakableActorDynamicMaterialComponent:
   Attributes:
-  - Name: pad0x4_L1P4B[0x4]
+  - Name: pad0x4_LVDWB[0x4]
     Offset: '0xc8'
     Size: '0x4'
     Type: char
@@ -110,7 +110,7 @@ BreakableActorDynamicMaterialComponent:
     Offset: '0xec'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_60IPC[0x4]
+  - Name: pad0x4_CO4XU[0x4]
     Offset: '0xf4'
     Size: '0x4'
     Type: char
@@ -126,18 +126,18 @@ BreakableActorDynamicMaterialComponent:
     Offset: '0x110'
     Size: '0x8'
     Type: Class BreakableActorBase*
-  - Name: pad0xd8_A7P3U[0xd8]
+  - Name: pad0x108_12L6U[0x108]
     Offset: '0x118'
-    Size: '0xd8'
+    Size: '0x108'
     Type: char
-  ClassSize: '0x128'
-  FullSize: '0x1f0'
+  ClassSize: '0x158'
+  FullSize: '0x220'
   InheritedSize: '0xc8'
   Super: ActorComponent
 BreakableActorItemSpawnComponent:
   Attributes: []
-  ClassSize: '0x70'
-  FullSize: '0x4b0'
+  ClassSize: '0x80'
+  FullSize: '0x4c0'
   InheritedSize: '0x440'
   Super: ItemSpawnComponent
 BreakableActorVfxComponent:
@@ -146,7 +146,7 @@ BreakableActorVfxComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: Struct Color
-  - Name: pad0x4_U5TF9[0x4]
+  - Name: pad0x4_TBJZC[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -186,17 +186,17 @@ BreakableActorVfxComponent:
     Offset: '0x100'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: pad0x98_0W3EM[0x98]
+  - Name: pad0xb8_FWUXX[0xb8]
     Offset: '0x108'
-    Size: '0x98'
+    Size: '0xb8'
     Type: char
-  ClassSize: '0xd8'
-  FullSize: '0x1a0'
+  ClassSize: '0xf8'
+  FullSize: '0x1c0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 BreakableSarcophagus:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x548'
-  InheritedSize: '0x548'
+  FullSize: '0x558'
+  InheritedSize: '0x558'
   Super: BreakableActorBase

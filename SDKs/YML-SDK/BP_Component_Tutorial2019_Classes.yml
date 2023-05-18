@@ -6,9 +6,9 @@ BP_Component_Tutorial2019_C:
     Offset: '0xd8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x16b_IG913[0x16b]
+  - Name: pad0xac_2LLHI[0xac]
     Offset: '0xe0'
-    Size: '0x16b'
+    Size: '0xac'
     Type: char
   - Name: GoldHoarders
     Offset: '0xe0'
@@ -34,15 +34,15 @@ BP_Component_Tutorial2019_C:
     Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KZZGW[0x7]
+  - Name: pad0x7_RHQ84[0x7]
     Offset: '0x129'
     Size: '0x7'
     Type: char
   - Name: Handle_PlayerFinishedSpawning
     Offset: '0x130'
-    Size: '0x48'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
-  ClassSize: '0xa0'
-  FullSize: '0x178'
+  ClassSize: '0xb0'
+  FullSize: '0x188'
   InheritedSize: '0xd8'
   Super: Tutorial2019ContextualDelegatingComponent

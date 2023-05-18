@@ -18,7 +18,7 @@ RadialDamagerComponent:
     Offset: '0xd4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_WST1J[0x8]
+  - Name: pad0x8_B10EU[0x8]
     Offset: '0xd8'
     Size: '0x8'
     Type: char
@@ -30,7 +30,7 @@ RadialDamagerComponent:
     Offset: '0xe8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BYAMW[0x3]
+  - Name: pad0x3_7DRIB[0x3]
     Offset: '0xe9'
     Size: '0x3'
     Type: char
@@ -38,7 +38,7 @@ RadialDamagerComponent:
     Offset: '0xec'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x28_KC0LC[0x28]
+  - Name: pad0x28_XHIW5[0x28]
     Offset: '0xf8'
     Size: '0x28'
     Type: char
@@ -48,7 +48,7 @@ RadialDamagerComponent:
   Super: ActorComponent
 ShipDamagerComponent:
   Attributes:
-  - Name: pad0x8_V9VAH[0x8]
+  - Name: pad0x8_O1SW6[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -80,7 +80,7 @@ ShipDamagerComponent:
     Offset: '0x154'
     Size: '0x1'
     Type: bool
-  - Name: pad0xcb_MX3H7[0xcb]
+  - Name: pad0xcb_KHNJQ[0xcb]
     Offset: '0x155'
     Size: '0xcb'
     Type: char
@@ -90,7 +90,7 @@ ShipDamagerComponent:
   Super: ActorComponent
 ShockwaveDamagerComponent:
   Attributes:
-  - Name: pad0x8_V59VY[0x8]
+  - Name: pad0x8_CD8YF[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -106,7 +106,7 @@ ShockwaveDamagerComponent:
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PWIEM[0x7]
+  - Name: pad0x7_KOXK5[0x7]
     Offset: '0xd9'
     Size: '0x7'
     Type: char
@@ -118,7 +118,7 @@ ShockwaveDamagerComponent:
     Offset: '0x110'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_G4BWY[0x7]
+  - Name: pad0x7_QK1IN[0x7]
     Offset: '0x111'
     Size: '0x7'
     Type: char
@@ -134,7 +134,7 @@ ShockwaveDamagerComponent:
     Offset: '0x130'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_BLV7H[0x3]
+  - Name: pad0x3_2U3MO[0x3]
     Offset: '0x131'
     Size: '0x3'
     Type: char
@@ -150,7 +150,7 @@ ShockwaveDamagerComponent:
     Offset: '0x13c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_OUMC7[0x3]
+  - Name: pad0x3_LLLRN[0x3]
     Offset: '0x13d'
     Size: '0x3'
     Type: char
@@ -158,7 +158,7 @@ ShockwaveDamagerComponent:
     Offset: '0x140'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NUMI1[0x4]
+  - Name: pad0x4_CBA4L[0x4]
     Offset: '0x144'
     Size: '0x4'
     Type: char
@@ -170,7 +170,7 @@ ShockwaveDamagerComponent:
     Offset: '0x178'
     Size: '0x10'
     Type: TArray<Weakclass ProcessedGhostShips>
-  - Name: pad0x48_J4CJN[0x48]
+  - Name: pad0x48_1W569[0x48]
     Offset: '0x188'
     Size: '0x48'
     Type: char

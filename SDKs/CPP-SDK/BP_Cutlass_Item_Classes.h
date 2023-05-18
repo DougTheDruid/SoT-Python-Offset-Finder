@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0xa88] - InheritedSize[0xa80]
+// Size 0x8 (Full Size[0xb48] - InheritedSize[0xb40]
 class BP_Cutlass_Item_C: public PlayerMeleeWeapon
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa80(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xb40(0x8)
 };
 
 

@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x5a0] - InheritedSize[0x588]
+// Size 0x18 (Full Size[0x630] - InheritedSize[0x618]
 class BP_LargeShip_CageLatch_03_a_C: public PetCageSwitchMechanismTrigger
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x588(0x8)
-	Class StaticMeshComponent*                                   cap_cage_door_03_a;                                // 0x590(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x598(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x618(0x8)
+	Class StaticMeshComponent*                                   cap_cage_door_03_a;                                // 0x620(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x628(0x8)
 };
 
 

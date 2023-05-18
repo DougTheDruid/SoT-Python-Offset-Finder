@@ -20,13 +20,13 @@ public:
 };
 
 
-// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class MerchantContractsService: public Object
 {
 public:
-	char                                                         pad0x8_EUQHO[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_J6CCZ[0x8];                                 // 0x28(0x8)
 	TArray<struct Contracts>                                     Contracts;                                         // 0x30(0x10)
-	char                                                         pad0x88_OBJVU[0x88];                               // 0x40(0x88)
+	char                                                         pad0x98_R6090[0x98];                               // 0x40(0x98)
 };
 
 
@@ -41,7 +41,7 @@ public:
 class PlayerMerchantContractsComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_QG4LE[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_EPS0U[0x8];                                 // 0xc8(0x8)
 	TArray<struct Contracts>                                     Contracts;                                         // 0xd0(0x10)
 };
 

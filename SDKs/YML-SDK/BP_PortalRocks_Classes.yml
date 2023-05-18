@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_PortalRocks_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: WwiseEmitter1
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*
-  - Name: None
+  - Name: WwiseEmitter
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*

@@ -6,139 +6,139 @@
     "ClassSize": "0xa5",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "Billboard",
         "Type": "Class BillboardComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "Spherical Volume",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "Scene",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "None",
-        "Type": "TArray<struct None>",
+        "Name": "Meshes",
+        "Type": "TArray<struct Meshes>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
       {
-        "Name": "None",
+        "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f8"
       },
       {
-        "Name": "None",
+        "Name": "Radius Visible",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3fc"
       },
       {
-        "Name": "pad0x3_HWUP3[0x3]",
+        "Name": "pad0x3_EO6MV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3fd"
       },
       {
-        "Name": "None",
+        "Name": "Spawn Density",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x400"
       },
       {
-        "Name": "None",
+        "Name": "Spawn Clustering",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x404"
       },
       {
-        "Name": "None",
+        "Name": "Seed",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x4_WV8S6[0x4]",
+        "Name": "pad0x4_MTQVF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x40c"
       },
       {
-        "Name": "None",
+        "Name": "Physical Materials",
         "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "Update On Drag",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x420"
       },
       {
-        "Name": "pad0x7_0GPNW[0x7]",
+        "Name": "pad0x7_R554Z[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x421"
       },
       {
-        "Name": "None",
-        "Type": "TArray<Float None>",
+        "Name": "Mesh Probabilities",
+        "Type": "TArray<Float Mesh Probabilities>",
         "Size": "0x10",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "Instanced Meshes",
         "Type": "TArray<class InstancedStaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x438"
       },
       {
-        "Name": "None",
+        "Name": "Random",
         "Type": "Struct RandomStream",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "None",
+        "Name": "Instance Count",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x450"
       },
       {
-        "Name": "pad0x4_SJJ8F[0x4]",
+        "Name": "pad0x4_BO48W[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x454"
       },
       {
-        "Name": "None",
-        "Type": "TArray<struct None>",
+        "Name": "Mesh Radii",
+        "Type": "TArray<struct Mesh Radii>",
         "Size": "0x10",
         "Offset": "0x458"
       },
       {
-        "Name": "None",
+        "Name": "Max Draw Distance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x468"
       },
       {
-        "Name": "None",
+        "Name": "Cast Shadows",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x46c"

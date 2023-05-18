@@ -3,70 +3,70 @@
 BP_Prompt_BuryingItem_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_QD8SA[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_R5BPY[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: WieldableItemUseEvent
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: NotificationInputId
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x8'
     Type: class
   - Name: BuryingItemPromptAccessKey
-    Offset: '0x170'
+    Offset: '0x1a0'
     Size: '0x8'
     Type: class
   - Name: WieldableItemEquipEvent
-    Offset: '0x178'
-    Size: '0x48'
+    Offset: '0x1a8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Prompt
-    Offset: '0x1c0'
+    Offset: '0x200'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: WieldingShovel
-    Offset: '0x228'
+    Offset: '0x268'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5Z1J3[0x7]
-    Offset: '0x229'
+  - Name: pad0x7_KTLRU[0x7]
+    Offset: '0x269'
     Size: '0x7'
     Type: char
   - Name: WieldableItemStow
-    Offset: '0x230'
-    Size: '0x48'
+    Offset: '0x270'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: In
-    Offset: '0x278'
+    Offset: '0x2c8'
     Size: '0x8'
     Type: class
   - Name: UsingSecondaryInput
-    Offset: '0x280'
+    Offset: '0x2d0'
     Size: '0x1'
     Type: bool
   - Name: StatCompleted
-    Offset: '0x281'
+    Offset: '0x2d1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_Q0XW8[0x6]
-    Offset: '0x282'
+  - Name: pad0x6_FFEJB[0x6]
+    Offset: '0x2d2'
     Size: '0x6'
     Type: char
   - Name: CharacterDispatcher
-    Offset: '0x288'
+    Offset: '0x2d8'
     Size: '0x8'
     Type: Struct ObjectMessagingDispatcherHandle
   - Name: HasShown
-    Offset: '0x290'
+    Offset: '0x2e0'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x179'
-  FullSize: '0x291'
-  InheritedSize: '0x118'
+  ClassSize: '0x1a9'
+  FullSize: '0x2e1'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

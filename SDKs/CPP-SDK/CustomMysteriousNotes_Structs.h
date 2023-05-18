@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x14
-struct DestroyMysteriousNoteData
+struct DestroyMysteriousNoteGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -16,21 +16,21 @@ public:
 
 
 // Size 0x14
-struct CreateMysteriousNoteResponseData
+struct CreateMysteriousNoteGameServerResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_J20GD[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_1G74Z[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  NoteId;                                            // 0x4(0x10)
 };
 
 
 // Size 0x38
-struct CreateMysteriousNoteData
+struct CreateMysteriousNoteGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	char                                                         pad0x4_U7L52[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_6E3HE[0x4];                                 // 0x4(0x4)
 	Struct FString                                               NoteType;                                          // 0x8(0x10)
 	Struct FString                                               NoteTitle;                                         // 0x18(0x10)
 	Struct FString                                               NoteBody;                                          // 0x28(0x10)

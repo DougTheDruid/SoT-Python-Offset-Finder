@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x8
-struct SetCustomPlayerStartData
+struct SetCustomPlayerStartGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -23,38 +23,38 @@ public:
 
 
 // Size 0x18
-struct DestroyCustomPlayerStartData
+struct DestroyCustomPlayerStartGameServerRequestModel
 {
 public:
 	int                                                          PlayerStartActorNetID;                             // 0x0(0x4)
-	char                                                         pad0x4_DRL20[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_Z1IQW[0x4];                                 // 0x4(0x4)
 	Struct FString                                               Tag;                                               // 0x8(0x10)
 };
 
 
 // Size 0x8
-struct CustomPlayerStartConfigResponseData
+struct CustomPlayerStartConfigResponseGameServerRequestModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_K33QD[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_ECZ0I[0x3];                                 // 0x1(0x3)
 	int                                                          PlayerStartId;                                     // 0x4(0x4)
 };
 
 
 // Size 0x30
-struct CustomPlayerStartConfigData
+struct CustomPlayerStartConfigGameServerRequestModel
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_THTZ1[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_P3P1Z[0x4];                                 // 0xc(0x4)
 	Struct Quat                                                  Rotation;                                          // 0x10(0x10)
 	TArray<Str Tags>                                             Tags;                                              // 0x20(0x10)
 };
 
 
 // Size 0x4
-struct ResetCustomConfigForPlayerData
+struct ResetCustomConfigForPlayerGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -62,7 +62,7 @@ public:
 
 
 // Size 0x8
-struct SetShouldSkipFerryOfTheDamnedData
+struct SetShouldSkipFerryOfTheDamnedGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -71,7 +71,7 @@ public:
 
 
 // Size 0x8
-struct SetShouldUseRevivalFlowData
+struct SetShouldUseRevivalFlowGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -80,7 +80,7 @@ public:
 
 
 // Size 0x4
-struct GameModeDeathPenaltyRespawnTimerData
+struct GameModeDeathPenaltyRespawnTimerGameServerRequestModel
 {
 public:
 	float                                                        SpawnTimer;                                        // 0x0(0x4)
@@ -88,7 +88,7 @@ public:
 
 
 // Size 0x8
-struct ForcePlayerRespawnData
+struct ForcePlayerRespawnGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
@@ -97,7 +97,7 @@ public:
 
 
 // Size 0x10
-struct KillCrewData
+struct KillCrewGameServerRequestModel
 {
 public:
 	Struct Guid                                                  CrewNetGUID;                                       // 0x0(0x10)
@@ -105,7 +105,7 @@ public:
 
 
 // Size 0x4
-struct KillPlayerData
+struct KillPlayerGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)

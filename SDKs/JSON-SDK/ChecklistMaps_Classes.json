@@ -18,7 +18,7 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_GJA0Z[0x3]",
+        "Name": "pad0x3_D1N5W[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
@@ -103,63 +103,63 @@
   },
   "ChecklistMap": {
     "Super": "TreasureMap",
-    "FullSize": "0x940",
-    "InheritedSize": "0x7f0",
+    "FullSize": "0x980",
+    "InheritedSize": "0x830",
     "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7e8"
+        "Offset": "0x828"
       },
       {
         "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7ec"
+        "Offset": "0x82c"
       },
       {
         "Name": "Font",
         "Type": "Class Font*",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x830"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7f8"
+        "Offset": "0x838"
       },
       {
         "Name": "FontLineSpacingScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x7fc"
+        "Offset": "0x83c"
       },
       {
-        "Name": "pad0x8_GZJ8W[0x8]",
+        "Name": "pad0x8_LDJYP[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x800"
+        "Offset": "0x840"
       },
       {
         "Name": "ChecklistMapLayout",
         "Type": "Class ChecklistMapLayout*",
         "Size": "0x8",
-        "Offset": "0x808"
+        "Offset": "0x848"
       },
       {
         "Name": "Contents",
         "Type": "Struct ChecklistMapContents",
         "Size": "0xe8",
-        "Offset": "0x810"
+        "Offset": "0x850"
       },
       {
-        "Name": "pad0x48_NNDWF[0x48]",
+        "Name": "pad0x48_RWNR6[0x48]",
         "Type": "char",
         "Size": "0x48",
-        "Offset": "0x8f8"
+        "Offset": "0x938"
       }
     ]
   },
@@ -172,9 +172,9 @@
   },
   "ChecklistMapCompletionComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x140",
+    "FullSize": "0x150",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x78",
+    "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "ActionData",
@@ -183,9 +183,9 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x70_1ZLBH[0x70]",
+        "Name": "pad0x80_5XHRA[0x80]",
         "Type": "char",
-        "Size": "0x70",
+        "Size": "0x80",
         "Offset": "0xd0"
       }
     ]

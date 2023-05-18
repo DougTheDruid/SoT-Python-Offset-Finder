@@ -21,7 +21,7 @@ ShantyPuzzleInteractionZoneDefinition:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_G1B03[0x3]
+  - Name: pad0x3_2KJEL[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char

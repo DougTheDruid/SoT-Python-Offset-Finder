@@ -1,69 +1,69 @@
 {
   "BP_Prompt_QuickStorageTransfer_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x248",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x130",
+    "FullSize": "0x278",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x140",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_NFHFV[0x12b]",
+        "Name": "pad0x4c_71KKO[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "State_Complete",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
         "Name": "State_ShowPrompt",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x121"
+        "Offset": "0x141"
       },
       {
-        "Name": "pad0x6_7ZO98[0x6]",
+        "Name": "pad0x6_4R2Z3[0x6]",
         "Type": "char",
         "Size": "0x6",
-        "Offset": "0x122"
+        "Offset": "0x142"
       },
       {
         "Name": "Prompt_QuickStorageTransfer_Take",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x128"
+        "Offset": "0x148"
       },
       {
         "Name": "Prompt_QuickStorageTransfer_Add",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x190"
+        "Offset": "0x1b0"
       },
       {
         "Name": "State_ShowAdd",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1f8"
+        "Offset": "0x218"
       },
       {
-        "Name": "pad0x7_FC5BT[0x7]",
+        "Name": "pad0x7_VGFA0[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x1f9"
+        "Offset": "0x219"
       },
       {
         "Name": "Handle_ObjectWielded",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x200"
+        "Size": "0x58",
+        "Offset": "0x220"
       }
     ]
   },

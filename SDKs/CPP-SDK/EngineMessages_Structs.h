@@ -57,7 +57,7 @@ public:
 	Struct FString                                               CurrentLevel;                                      // 0x0(0x10)
 	int                                                          EngineVersion;                                     // 0x10(0x4)
 	bool                                                         HasBegunPlay;                                      // 0x14(0x1)
-	char                                                         pad0x3_8GCT8[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_SKEHI[0x3];                                 // 0x15(0x3)
 	Struct Guid                                                  InstanceId;                                        // 0x18(0x10)
 	Struct FString                                               InstanceType;                                      // 0x28(0x10)
 	Struct Guid                                                  SessionId;                                         // 0x38(0x10)

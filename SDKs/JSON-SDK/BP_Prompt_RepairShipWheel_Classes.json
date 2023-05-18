@@ -1,69 +1,69 @@
 {
   "BP_Prompt_RepairShipWheel_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x230",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x118",
+    "FullSize": "0x270",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x138",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12a_KPQW5[0x12a]",
+        "Name": "pad0x4c_X37Q9[0x4c]",
         "Type": "char",
-        "Size": "0x12a",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "State_ShipWheelDamaged",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
-        "Name": "pad0x7_O6CFA[0x7]",
+        "Name": "pad0x7_DTPE6[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x121"
+        "Offset": "0x141"
       },
       {
         "Name": "Handle_OnWheelDamaged",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x128"
+        "Size": "0x58",
+        "Offset": "0x148"
       },
       {
         "Name": "State_Complete",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
-        "Name": "pad0x7_RH65O[0x7]",
+        "Name": "pad0x7_5ZPWN[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x171"
+        "Offset": "0x1a1"
       },
       {
         "Name": "Prompt_RepairShip",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x178"
+        "Offset": "0x1a8"
       },
       {
         "Name": "Handle_CurrentShipChanged",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x1e0"
+        "Size": "0x58",
+        "Offset": "0x210"
       },
       {
         "Name": "CurrentShip",
         "Type": "Class Ship*",
         "Size": "0x8",
-        "Offset": "0x228"
+        "Offset": "0x268"
       }
     ]
   },

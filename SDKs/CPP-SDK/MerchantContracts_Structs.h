@@ -31,7 +31,7 @@ struct MerchantContractDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_SAHOP[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_9TOBN[0x4];                                 // 0x4(0x4)
 	Struct MerchantContractItemDesc                              ItemDesc;                                          // 0x8(0x28)
 	int                                                          NumToAllocate;                                     // 0x30(0x4)
 	int                                                          NumToCollect;                                      // 0x34(0x4)

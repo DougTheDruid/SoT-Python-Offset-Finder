@@ -22,7 +22,7 @@ AddMarkToTornMapAtLocationStepDesc:
   Super: AddMarkToTornMapStepDescBase
 AddMarkToTornMapStep:
   Attributes:
-  - Name: pad0x20_MBPH5[0x20]
+  - Name: pad0x20_QKQFW[0x20]
     Offset: '0x98'
     Size: '0x20'
     Type: char
@@ -78,7 +78,7 @@ RegionIslandFilteredSelectionStrategy:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_BIQ9Z[0x3]
+  - Name: pad0x3_48CIM[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -112,7 +112,7 @@ SelectIslandsFromRegionStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class RegionIslandSelectionStrategyBase*
-  - Name: pad0x50_F2PXQ[0x50]
+  - Name: pad0x50_U0XZT[0x50]
     Offset: '0xa8'
     Size: '0x50'
     Type: char
@@ -188,8 +188,8 @@ TaleQuestAddLocationMapStepDesc:
   Super: TaleQuestMapStepDescBase
 TaleQuestAddTornMapStep:
   Attributes: []
-  ClassSize: '0xc0'
-  FullSize: '0x158'
+  ClassSize: '0xd8'
+  FullSize: '0x170'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 TaleQuestAddTornMapStepDesc:
@@ -270,6 +270,12 @@ TaleQuestMapStepDescBase:
   FullSize: '0x80'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestTornMapFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestTriggerNamedChecklistEventStep:
   Attributes: []
   ClassSize: '0x0'

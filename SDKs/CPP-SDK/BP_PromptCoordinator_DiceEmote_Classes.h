@@ -6,19 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xd1 (Full Size[0x1e9] - InheritedSize[0x118]
+// Size 0xe1 (Full Size[0x219] - InheritedSize[0x138]
 class BP_PromptCoordinator_DiceEmote_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12b_PQ93B[0x12b];                             // 0x120(0x12b)
-	class                                                        DiceEmotePromptAccessKey;                          // 0x120(0x8)
-	Struct ObjectMessagingHandle                                 EmoteStartedEvent;                                 // 0x128(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x170(0x68)
-	bool                                                         StartedDiceEmote;                                  // 0x1d8(0x1)
-	char                                                         pad0x7_8E1CS[0x7];                                 // 0x1d9(0x7)
-	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x1e0(0x8)
-	bool                                                         HasShown;                                          // 0x1e8(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_CEB1P[0x4c];                               // 0x140(0x4c)
+	class                                                        DiceEmotePromptAccessKey;                          // 0x140(0x8)
+	Struct ObjectMessagingHandle                                 EmoteStartedEvent;                                 // 0x148(0x58)
+	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x1a0(0x68)
+	bool                                                         StartedDiceEmote;                                  // 0x208(0x1)
+	char                                                         pad0x7_0JR7Z[0x7];                                 // 0x209(0x7)
+	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x210(0x8)
+	bool                                                         HasShown;                                          // 0x218(0x1)
 };
 
 

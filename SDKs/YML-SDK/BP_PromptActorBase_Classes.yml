@@ -14,7 +14,7 @@ BP_PromptActorBase_C:
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2NO11[0x7]
+  - Name: pad0x7_R5T1I[0x7]
     Offset: '0x3d9'
     Size: '0x7'
     Type: char
@@ -22,7 +22,7 @@ BP_PromptActorBase_C:
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class BP_PromptCoordinator_Base_C*>
-  - Name: pad0x10_R9M99[0x10]
+  - Name: pad0x10_RNCM3[0x10]
     Offset: '0x3f0'
     Size: '0x10'
     Type: char

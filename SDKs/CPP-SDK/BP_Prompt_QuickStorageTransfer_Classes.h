@@ -6,20 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x130 (Full Size[0x248] - InheritedSize[0x118]
+// Size 0x140 (Full Size[0x278] - InheritedSize[0x138]
 class BP_Prompt_QuickStorageTransfer_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12b_NFHFV[0x12b];                             // 0x120(0x12b)
-	bool                                                         State_Complete;                                    // 0x120(0x1)
-	bool                                                         State_ShowPrompt;                                  // 0x121(0x1)
-	char                                                         pad0x6_7ZO98[0x6];                                 // 0x122(0x6)
-	Struct PrioritisedPromptWithHandle                           Prompt_QuickStorageTransfer_Take;                  // 0x128(0x68)
-	Struct PrioritisedPromptWithHandle                           Prompt_QuickStorageTransfer_Add;                   // 0x190(0x68)
-	bool                                                         State_ShowAdd;                                     // 0x1f8(0x1)
-	char                                                         pad0x7_FC5BT[0x7];                                 // 0x1f9(0x7)
-	Struct ObjectMessagingHandle                                 Handle_ObjectWielded;                              // 0x200(0x48)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_71KKO[0x4c];                               // 0x140(0x4c)
+	bool                                                         State_Complete;                                    // 0x140(0x1)
+	bool                                                         State_ShowPrompt;                                  // 0x141(0x1)
+	char                                                         pad0x6_4R2Z3[0x6];                                 // 0x142(0x6)
+	Struct PrioritisedPromptWithHandle                           Prompt_QuickStorageTransfer_Take;                  // 0x148(0x68)
+	Struct PrioritisedPromptWithHandle                           Prompt_QuickStorageTransfer_Add;                   // 0x1b0(0x68)
+	bool                                                         State_ShowAdd;                                     // 0x218(0x1)
+	char                                                         pad0x7_VGFA0[0x7];                                 // 0x219(0x7)
+	Struct ObjectMessagingHandle                                 Handle_ObjectWielded;                              // 0x220(0x58)
 };
 
 

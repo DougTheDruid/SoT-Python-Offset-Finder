@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_Projectile_VolcanoRockMedium_C: public VolcanicRock
 {
 public:
-	Class RotatingAudioSourceComponent*                          None;                                              // 0x658(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x660(0x8)
-	Class SphereComponent*                                       None;                                              // 0x668(0x8)
+	Class RotatingAudioSourceComponent*                          RotatingAudioSource;                               // 0x658(0x8)
+	Class StaticMeshComponent*                                   RockMesh;                                          // 0x660(0x8)
+	Class SphereComponent*                                       Collision;                                         // 0x668(0x8)
 };
 
 

@@ -2,79 +2,79 @@
 # https://github.com/DougTheDruid
 BP_Lantern_C:
   Attributes:
-  - Name: None
-    Offset: '0x940'
+  - Name: UberGraphFrame
+    Offset: '0x9a0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0x948'
+  - Name: LanternTriggerGlow
+    Offset: '0x9a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x950'
+  - Name: LanternGlow
+    Offset: '0x9b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x958'
+  - Name: AmbientLightSource
+    Offset: '0x9b8'
     Size: '0x8'
     Type: Class AmbientLightSourceComponent*
-  - Name: None
-    Offset: '0x960'
+  - Name: SpotLight
+    Offset: '0x9c0'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: None
-    Offset: '0x968'
+  - Name: UsableWieldable
+    Offset: '0x9c8'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
-  - Name: None
-    Offset: '0x970'
+  - Name: LanternGlowDynamicMaterial
+    Offset: '0x9d0'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
-    Offset: '0x978'
+  - Name: EmissiveInt_threshold
+    Offset: '0x9d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_3TNNN[0x4]
-    Offset: '0x97c'
+  - Name: pad0x4_VXZL0[0x4]
+    Offset: '0x9dc'
     Size: '0x4'
     Type: char
-  - Name: None
-    Offset: '0x980'
+  - Name: LanternTriggerGlowDynamicMaterial
+    Offset: '0x9e0'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
-    Offset: '0x988'
+  - Name: TriggerGlowDuration
+    Offset: '0x9e8'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x98c'
+  - Name: TriggerGlowRampInDuration
+    Offset: '0x9ec'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x990'
+  - Name: TriggerGlowRampOutDuration
+    Offset: '0x9f0'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x994'
+  - Name: DefaultSpotlightColour
+    Offset: '0x9f4'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: None
-    Offset: '0x9a4'
+  - Name: DefaultAmbientLightColour
+    Offset: '0xa04'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: None
-    Offset: '0x9b4'
+  - Name: DefaultGlowColour
+    Offset: '0xa14'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: pad0x4_IG9G9[0x4]
-    Offset: '0x9c4'
+  - Name: pad0x4_MN7IL[0x4]
+    Offset: '0xa24'
     Size: '0x4'
     Type: char
-  - Name: None
-    Offset: '0x9c8'
+  - Name: DynamicMaterials
+    Offset: '0xa28'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x98'
-  FullSize: '0x9d8'
-  InheritedSize: '0x940'
+  FullSize: '0xa38'
+  InheritedSize: '0x9a0'
   Super: Lantern

@@ -6,28 +6,30 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x230 (Full Size[0x9d0] - InheritedSize[0x7a0]
+// Size 0x270 (Full Size[0xa50] - InheritedSize[0x7e0]
 class TaleNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_T19SS[0x10];                               // 0x7a0(0x10)
-	int                                                          CanvasWidth;                                       // 0x7b0(0x4)
-	int                                                          CanvasHeight;                                      // 0x7b4(0x4)
-	float                                                        FontScale;                                         // 0x7b8(0x4)
-	char                                                         pad0x4_VUG1J[0x4];                                 // 0x7bc(0x4)
-	Class Font*                                                  Font;                                              // 0x7c0(0x8)
-	Struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x7c8(0x30)
-	Struct TreasureMapWidgetText                                 TitleWidgetText;                                   // 0x7f8(0x38)
-	Struct TreasureMapWidgetText                                 BodyWidgetText;                                    // 0x830(0x38)
-	float                                                        NoteWidth;                                         // 0x868(0x4)
-	float                                                        NoteLineSpacingMultiplier;                         // 0x86c(0x4)
-	Struct FText                                                 Title;                                             // 0x870(0x38)
-	Struct FText                                                 Body;                                              // 0x8a8(0x38)
-	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x8e0(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x8e8(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x8f0(0x8)
-	Class ZoomInOnWieldableItemComponent*                        ZoomInOnWieldableComponent;                        // 0x8f8(0x8)
-	char                                                         pad0xd0_0MUW9[0xd0];                               // 0x900(0xd0)
+	char                                                         pad0x10_YMMMC[0x10];                               // 0x7e0(0x10)
+	int                                                          CanvasWidth;                                       // 0x7f0(0x4)
+	int                                                          CanvasHeight;                                      // 0x7f4(0x4)
+	float                                                        FontScale;                                         // 0x7f8(0x4)
+	char                                                         pad0x4_3X0LO[0x4];                                 // 0x7fc(0x4)
+	Class Font*                                                  Font;                                              // 0x800(0x8)
+	Struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x808(0x38)
+	Struct TreasureMapWidgetText                                 TitleWidgetText;                                   // 0x840(0x3c)
+	Struct TreasureMapWidgetText                                 BodyWidgetText;                                    // 0x87c(0x3c)
+	TArray<struct AdditionalBodyWidgetText>                      AdditionalBodyWidgetText;                          // 0x8b8(0x10)
+	float                                                        NoteWidth;                                         // 0x8c8(0x4)
+	float                                                        NoteLineSpacingMultiplier;                         // 0x8cc(0x4)
+	Struct FText                                                 Title;                                             // 0x8d0(0x38)
+	Struct FText                                                 Body;                                              // 0x908(0x38)
+	TArray<struct FText>                                         AdditionalBody;                                    // 0x940(0x10)
+	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x950(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x958(0x8)
+	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x960(0x8)
+	Class ZoomInOnWieldableItemComponent*                        ZoomInOnWieldableComponent;                        // 0x968(0x8)
+	char                                                         pad0xe0_MGSPA[0xe0];                               // 0x970(0xe0)
 };
 
 

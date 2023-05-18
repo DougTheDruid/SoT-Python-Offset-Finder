@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_Larinna_Permanent_C:
   Attributes:
-  - Name: None
-    Offset: '0x6b0'
+  - Name: StaticMesh1
+    Offset: '0x6c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x6b8'
+  - Name: StaticMesh
+    Offset: '0x6d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x10'
-  FullSize: '0x6c0'
-  InheritedSize: '0x6b0'
-  Super: None
+  FullSize: '0x6d8'
+  InheritedSize: '0x6c8'
+  Super: BP_SoleTrader_C

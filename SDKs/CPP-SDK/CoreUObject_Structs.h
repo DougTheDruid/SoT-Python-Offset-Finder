@@ -217,7 +217,7 @@ struct InterpCurveFloat
 public:
 	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_9SKQ5[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_69FQ8[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -240,7 +240,7 @@ struct InterpCurveVector2D
 public:
 	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_TSD1F[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_YMT1B[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -263,7 +263,7 @@ struct InterpCurveVector
 public:
 	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_RQ4B2[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_57IKI[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -273,7 +273,7 @@ struct InterpCurvePointQuat
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
-	char                                                         pad0xc_4Y8KA[0xc];                                 // 0x4(0xc)
+	char                                                         pad0xc_WG3DY[0xc];                                 // 0x4(0xc)
 	Struct Quat                                                  OutVal;                                            // 0x10(0x10)
 	Struct Quat                                                  ArriveTangent;                                     // 0x20(0x10)
 	Struct Quat                                                  LeaveTangent;                                      // 0x30(0x10)
@@ -287,7 +287,7 @@ struct InterpCurveQuat
 public:
 	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_KF478[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_D2HEF[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -310,7 +310,7 @@ struct InterpCurveTwoVectors
 public:
 	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_0VWT9[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_S2R3F[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -333,7 +333,7 @@ struct InterpCurveLinearColor
 public:
 	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_R2RDO[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_M8N3P[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -344,7 +344,7 @@ struct Transform
 public:
 	Struct Quat                                                  Rotation;                                          // 0x0(0x10)
 	Struct Vector                                                Translation;                                       // 0x10(0xc)
-	char                                                         pad0x4_CKXK6[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_XB7H0[0x4];                                 // 0x1c(0x4)
 	Struct Vector                                                Scale3D;                                           // 0x20(0xc)
 };
 
@@ -399,7 +399,7 @@ struct FloatRangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_161JY[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_4UWIW[0x3];                                 // 0x1(0x3)
 	float                                                        Value;                                             // 0x4(0x4)
 };
 
@@ -418,7 +418,7 @@ struct Int32RangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_AN15B[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_CDHOJ[0x3];                                 // 0x1(0x3)
 	int                                                          Value;                                             // 0x4(0x4)
 };
 

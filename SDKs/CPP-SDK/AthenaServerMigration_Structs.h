@@ -36,7 +36,7 @@ public:
 };
 
 
-// Size 0x34
+// Size 0x48
 struct AddedPendingIncomingInvaderCrewEvent
 {
 public:

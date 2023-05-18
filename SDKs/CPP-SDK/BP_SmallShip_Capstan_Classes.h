@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x878] - InheritedSize[0x868]
-class BP_SmallShip_Capstan_C: public None
+// Size 0x10 (Full Size[0x8d8] - InheritedSize[0x8c8]
+class BP_SmallShip_Capstan_C: public BP_Base_Capstan_C
 {
 public:
-	Class ChildActorComponent*                                   None;                                              // 0x868(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x870(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x8c8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x8d0(0x8)
 };
 
 

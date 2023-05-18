@@ -3,22 +3,22 @@
 BP_FishedItem_Wieldable_Base_C:
   Attributes:
   - Name: TrackedOwner
-    Offset: '0x7a0'
+    Offset: '0x7e0'
     Size: '0x8'
     Type: Class TrackedOwnerComponent*
   - Name: WieldableInteractable
-    Offset: '0x7a8'
+    Offset: '0x7e8'
     Size: '0x8'
     Type: Class WieldableInteractableComponent*
   - Name: Pickupable
-    Offset: '0x7b0'
+    Offset: '0x7f0'
     Size: '0x8'
     Type: Class PickupableComponent*
   - Name: UsableWieldable
-    Offset: '0x7b8'
+    Offset: '0x7f8'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
   ClassSize: '0x20'
-  FullSize: '0x7c0'
-  InheritedSize: '0x7a0'
+  FullSize: '0x800'
+  InheritedSize: '0x7e0'
   Super: StaticSimpleBootyWieldableItem

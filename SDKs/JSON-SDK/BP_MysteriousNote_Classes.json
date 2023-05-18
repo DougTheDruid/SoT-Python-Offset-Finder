@@ -1,15 +1,15 @@
 {
   "BP_MysteriousNote_C": {
     "Super": "WieldableMysteriousNote",
-    "FullSize": "0x948",
-    "InheritedSize": "0x940",
+    "FullSize": "0x988",
+    "InheritedSize": "0x980",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "ZoomInOnWieldableItem",
         "Type": "Class ZoomInOnWieldableItemComponent*",
         "Size": "0x8",
-        "Offset": "0x940"
+        "Offset": "0x980"
       }
     ]
   },

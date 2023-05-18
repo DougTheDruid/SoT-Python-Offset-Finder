@@ -1,27 +1,27 @@
 {
   "BP_NPC_ReapersBones_Skeleton_InCage_C": {
     "Super": "CompanyShopkeeper",
-    "FullSize": "0x6b0",
-    "InheritedSize": "0x698",
+    "FullSize": "0x6c8",
+    "InheritedSize": "0x6b0",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x698"
+        "Offset": "0x6b0"
       },
       {
-        "Name": "None",
+        "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6a0"
+        "Offset": "0x6b8"
       },
       {
-        "Name": "None",
+        "Name": "SolidHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x6a8"
+        "Offset": "0x6c0"
       }
     ]
   },

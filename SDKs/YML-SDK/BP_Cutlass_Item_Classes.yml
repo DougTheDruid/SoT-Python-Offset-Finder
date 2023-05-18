@@ -3,10 +3,10 @@
 BP_Cutlass_Item_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0xa80'
+    Offset: '0xb40'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   ClassSize: '0x8'
-  FullSize: '0xa88'
-  InheritedSize: '0xa80'
+  FullSize: '0xb48'
+  InheritedSize: '0xb40'
   Super: PlayerMeleeWeapon

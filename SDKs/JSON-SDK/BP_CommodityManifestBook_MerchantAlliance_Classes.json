@@ -1,21 +1,21 @@
 {
   "BP_CommodityManifestBook_MerchantAlliance_C": {
     "Super": "ModalInteractionProxy",
-    "FullSize": "0x520",
-    "InheritedSize": "0x510",
+    "FullSize": "0x530",
+    "InheritedSize": "0x520",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x510"
+        "Offset": "0x520"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x528"
       }
     ]
   },

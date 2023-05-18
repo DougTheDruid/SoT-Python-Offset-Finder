@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AthenaMediaPlayer:
   Attributes:
-  - Name: pad0x8_57TNO[0x8]
+  - Name: pad0x8_5N1AN[0x8]
     Offset: '0x170'
     Size: '0x8'
     Type: char
@@ -14,7 +14,7 @@ AthenaMediaPlayer:
     Offset: '0x180'
     Size: '0x8'
     Type: Class MediaSubtitleComponent*
-  - Name: pad0x8_QNXMA[0x8]
+  - Name: pad0x8_PE1NO[0x8]
     Offset: '0x188'
     Size: '0x8'
     Type: char

@@ -3,46 +3,46 @@
 BP_Prompt_TavernBoard_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12a_AHPAA[0x12a]
-    Offset: '0x120'
-    Size: '0x12a'
+  - Name: pad0x4c_7UHJS[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: WieldableItemUseEvent
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: TavernBoardPromptAccessKey
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x8'
     Type: class
   - Name: Prompt
-    Offset: '0x170'
+    Offset: '0x1a0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: InRangeOfTavernBoard
-    Offset: '0x1d8'
+    Offset: '0x208'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0Q1OV[0x7]
-    Offset: '0x1d9'
+  - Name: pad0x7_FA25G[0x7]
+    Offset: '0x209'
     Size: '0x7'
     Type: char
   - Name: ApproachedTavernBoardHandle
-    Offset: '0x1e0'
-    Size: '0x48'
+    Offset: '0x210'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: CharacterDispatcher
-    Offset: '0x228'
+    Offset: '0x268'
     Size: '0x8'
     Type: Struct ObjectMessagingDispatcherHandle
   - Name: HasShown
-    Offset: '0x230'
+    Offset: '0x270'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x119'
-  FullSize: '0x231'
-  InheritedSize: '0x118'
+  ClassSize: '0x139'
+  FullSize: '0x271'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

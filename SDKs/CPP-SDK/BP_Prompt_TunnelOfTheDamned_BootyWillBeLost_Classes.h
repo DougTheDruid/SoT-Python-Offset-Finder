@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xd0 (Full Size[0x1e8] - InheritedSize[0x118]
+// Size 0xe0 (Full Size[0x218] - InheritedSize[0x138]
 class BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12b_7JLZS[0x12b];                             // 0x120(0x12b)
-	Struct ObjectMessagingHandle                                 Handle_CrewEnteredTunnelOfTheDamnedPortalProximity; // 0x120(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt_BootyWillBeLost;                            // 0x168(0x68)
-	float                                                        PromptDisplayDuration;                             // 0x1d0(0x4)
-	bool                                                         CrewInRadius;                                      // 0x1d4(0x1)
-	bool                                                         PromptOnCooldown;                                  // 0x1d5(0x1)
-	char                                                         pad0x2_8KTOD[0x2];                                 // 0x1d6(0x2)
-	float                                                        PromptDisplayCooldown;                             // 0x1d8(0x4)
-	char                                                         pad0x4_A5OJ5[0x4];                                 // 0x1dc(0x4)
-	Class TunnelsOfTheDamnedLootFilterDataAsset*                 LootFilterDataAsset;                               // 0x1e0(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_U4U78[0x4c];                               // 0x140(0x4c)
+	Struct ObjectMessagingHandle                                 Handle_CrewEnteredTunnelOfTheDamnedPortalProximity; // 0x140(0x58)
+	Struct PrioritisedPromptWithHandle                           Prompt_BootyWillBeLost;                            // 0x198(0x68)
+	float                                                        PromptDisplayDuration;                             // 0x200(0x4)
+	bool                                                         CrewInRadius;                                      // 0x204(0x1)
+	bool                                                         PromptOnCooldown;                                  // 0x205(0x1)
+	char                                                         pad0x2_PGIFA[0x2];                                 // 0x206(0x2)
+	float                                                        PromptDisplayCooldown;                             // 0x208(0x4)
+	char                                                         pad0x4_Q1JC1[0x4];                                 // 0x20c(0x4)
+	Class TunnelsOfTheDamnedLootFilterDataAsset*                 LootFilterDataAsset;                               // 0x210(0x8)
 };
 
 

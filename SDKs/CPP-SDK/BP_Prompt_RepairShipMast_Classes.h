@@ -6,24 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x1b0 (Full Size[0x2c8] - InheritedSize[0x118]
+// Size 0x1f0 (Full Size[0x328] - InheritedSize[0x138]
 class BP_Prompt_RepairShipMast_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_GR3EJ[0x12a];                             // 0x120(0x12a)
-	bool                                                         State_ShipMastDamaged;                             // 0x120(0x1)
-	char                                                         pad0x7_RSGHU[0x7];                                 // 0x121(0x7)
-	Struct ObjectMessagingHandle                                 Handle_OnMastDamaged1;                             // 0x128(0x48)
-	bool                                                         State_Complete;                                    // 0x170(0x1)
-	char                                                         pad0x7_KTARF[0x7];                                 // 0x171(0x7)
-	Struct PrioritisedPromptWithHandle                           Prompt_RepairShip;                                 // 0x178(0x68)
-	Struct ObjectMessagingHandle                                 Handle_CurrentShipChanged;                         // 0x1e0(0x48)
-	Class Ship*                                                  CurrentShip;                                       // 0x228(0x8)
-	Struct ObjectMessagingHandle                                 Handle_OnMastDamaged2;                             // 0x230(0x48)
-	Struct ObjectMessagingHandle                                 Handle_OnMastDamaged3;                             // 0x278(0x48)
-	int                                                          NumMastsRegistered;                                // 0x2c0(0x4)
-	int                                                          MastIndex;                                         // 0x2c4(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_WF0FS[0x4c];                               // 0x140(0x4c)
+	bool                                                         State_ShipMastDamaged;                             // 0x140(0x1)
+	char                                                         pad0x7_XX4E7[0x7];                                 // 0x141(0x7)
+	Struct ObjectMessagingHandle                                 Handle_OnMastDamaged1;                             // 0x148(0x58)
+	bool                                                         State_Complete;                                    // 0x1a0(0x1)
+	char                                                         pad0x7_7LA8G[0x7];                                 // 0x1a1(0x7)
+	Struct PrioritisedPromptWithHandle                           Prompt_RepairShip;                                 // 0x1a8(0x68)
+	Struct ObjectMessagingHandle                                 Handle_CurrentShipChanged;                         // 0x210(0x58)
+	Class Ship*                                                  CurrentShip;                                       // 0x268(0x8)
+	Struct ObjectMessagingHandle                                 Handle_OnMastDamaged2;                             // 0x270(0x58)
+	Struct ObjectMessagingHandle                                 Handle_OnMastDamaged3;                             // 0x2c8(0x58)
+	int                                                          NumMastsRegistered;                                // 0x320(0x4)
+	int                                                          MastIndex;                                         // 0x324(0x4)
 };
 
 

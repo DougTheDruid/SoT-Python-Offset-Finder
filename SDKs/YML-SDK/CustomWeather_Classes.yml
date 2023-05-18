@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomWeatherService:
   Attributes:
-  - Name: pad0x8_TD43D[0x8]
+  - Name: pad0x8_JT79V[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

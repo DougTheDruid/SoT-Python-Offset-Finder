@@ -3,38 +3,38 @@
 BP_Prompt_ProposeVoyage_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12a_D0JMK[0x12a]
-    Offset: '0x120'
-    Size: '0x12a'
+  - Name: pad0x4c_5M3LZ[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: State_OfferPurchased
-    Offset: '0x120'
+    Offset: '0x140'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_91PR6[0x7]
-    Offset: '0x121'
+  - Name: pad0x7_SYS6S[0x7]
+    Offset: '0x141'
     Size: '0x7'
     Type: char
   - Name: Handle_OnOfferPurchased
-    Offset: '0x128'
-    Size: '0x48'
+    Offset: '0x148'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: State_Complete
-    Offset: '0x170'
+    Offset: '0x1a0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_QE1P8[0x7]
-    Offset: '0x171'
+  - Name: pad0x7_K60UX[0x7]
+    Offset: '0x1a1'
     Size: '0x7'
     Type: char
   - Name: Prompt_ProposeVoyage
-    Offset: '0x178'
+    Offset: '0x1a8'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
-  ClassSize: '0xc8'
-  FullSize: '0x1e0'
-  InheritedSize: '0x118'
+  ClassSize: '0xd8'
+  FullSize: '0x210'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

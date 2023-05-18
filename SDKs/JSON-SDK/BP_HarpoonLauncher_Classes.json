@@ -1,27 +1,27 @@
 {
   "BP_HarpoonLauncher_C": {
     "Super": "HarpoonLauncher",
-    "FullSize": "0xc48",
-    "InheritedSize": "0xc30",
+    "FullSize": "0xcc8",
+    "InheritedSize": "0xcb0",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "CubeNotWalkable",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xc30"
+        "Offset": "0xcb0"
       },
       {
         "Name": "MountCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0xc38"
+        "Offset": "0xcb8"
       },
       {
         "Name": "BarrelCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0xc40"
+        "Offset": "0xcc0"
       }
     ]
   },

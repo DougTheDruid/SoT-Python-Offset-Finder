@@ -8,39 +8,27 @@
   },
   "WwiseMediaSoundComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x3c0",
+    "FullSize": "0x390",
     "InheritedSize": "0x2e0",
-    "ClassSize": "0xe0",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x88_OO4IH[0x88]",
+        "Name": "pad0x60_4C6U5[0x60]",
         "Type": "char",
-        "Size": "0x88",
+        "Size": "0x60",
         "Offset": "0x2e0"
       },
       {
         "Name": "MediaSoundEvent",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x368"
+        "Offset": "0x340"
       },
       {
-        "Name": "pad0x40_ZA1T4[0x40]",
+        "Name": "pad0x48_49QOY[0x48]",
         "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x370"
-      },
-      {
-        "Name": "RelativeBufferSize",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "pad0xc_KFFKG[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x3b4"
+        "Size": "0x48",
+        "Offset": "0x348"
       }
     ]
   },

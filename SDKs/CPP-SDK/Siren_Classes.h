@@ -62,7 +62,7 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x9e8] - InheritedSize[0x9e0]
+// Size 0x8 (Full Size[0xa68] - InheritedSize[0xa60]
 class SirenController: public AthenaSwimmingAIController
 {
 public:

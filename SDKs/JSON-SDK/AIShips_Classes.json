@@ -39,7 +39,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x20_RJ7GO[0x20]",
+        "Name": "pad0x20_G3OX7[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x88"
@@ -51,7 +51,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x18_6YHJ4[0x18]",
+        "Name": "pad0x18_Y18N2[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc0"
@@ -60,21 +60,15 @@
   },
   "AthenaAIShipControllerParamsDataAsset": {
     "Super": "AthenaAIControllerParamsDataAsset",
-    "FullSize": "0x488",
+    "FullSize": "0x490",
     "InheritedSize": "0x138",
-    "ClassSize": "0x350",
+    "ClassSize": "0x358",
     "Attributes": [
       {
         "Name": "TrackingMovementParams",
         "Type": "Struct ShipMovementParams",
-        "Size": "0x34",
+        "Size": "0x38",
         "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x4_KNUZP[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x16c"
       },
       {
         "Name": "TimesToSailBesideTarget",
@@ -155,7 +149,7 @@
         "Offset": "0x238"
       },
       {
-        "Name": "pad0x4_Q0LCC[0x4]",
+        "Name": "pad0x4_H4R5Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x23c"
@@ -181,24 +175,18 @@
       {
         "Name": "CirclingMovementParams",
         "Type": "Struct ShipMovementParams",
-        "Size": "0x34",
+        "Size": "0x38",
         "Offset": "0x2a8"
       },
       {
         "Name": "TargetSpeedThresholdInKnots",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2dc"
+        "Offset": "0x2e0"
       },
       {
         "Name": "SecondsInFutureToProjectTargetLocation",
         "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "pad0x4_C0494[0x4]",
-        "Type": "char",
         "Size": "0x4",
         "Offset": "0x2e4"
       },
@@ -265,74 +253,74 @@
       {
         "Name": "SailingForwardMovementParams",
         "Type": "Struct ShipMovementParams",
-        "Size": "0x34",
+        "Size": "0x38",
         "Offset": "0x3c0"
       },
       {
         "Name": "MinAllowedDistanceToObstacle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f4"
+        "Offset": "0x3f8"
       },
       {
         "Name": "MaxPathAvoidanceDistance",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3f8"
+        "Offset": "0x3fc"
       },
       {
         "Name": "PassiveSailingMovementParams",
         "Type": "Struct ShipMovementParams",
-        "Size": "0x34",
-        "Offset": "0x3fc"
+        "Size": "0x38",
+        "Offset": "0x400"
       },
       {
         "Name": "ChanceToAnchor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x438"
       },
       {
-        "Name": "pad0x4_HZ2DJ[0x4]",
+        "Name": "pad0x4_37XJY[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x434"
+        "Offset": "0x43c"
       },
       {
         "Name": "TimesToStayAnchored",
         "Type": "Struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x438"
+        "Offset": "0x440"
       },
       {
         "Name": "NumIslandsToVisitBeforeReturning",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x468"
+        "Offset": "0x470"
       },
       {
         "Name": "DistanceFromIslandsToSailTo",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x46c"
+        "Offset": "0x474"
       },
       {
         "Name": "DistanceToTargetToDropAnchor",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x470"
+        "Offset": "0x478"
       },
       {
-        "Name": "pad0x4_W5HPN[0x4]",
+        "Name": "pad0x4_N2BZA[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x474"
+        "Offset": "0x47c"
       },
       {
         "Name": "AggressionOverrideImpactIDs",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
-        "Offset": "0x478"
+        "Offset": "0x480"
       }
     ]
   },
@@ -355,7 +343,7 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_N342K[0x6]",
+        "Name": "pad0x6_G8AK0[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2a"
@@ -441,7 +429,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_I19LM[0x3]",
+        "Name": "pad0x3_4ITCE[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -579,7 +567,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_RKK3V[0x7]",
+        "Name": "pad0x7_0F5BJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -669,7 +657,7 @@
         "Offset": "0x448"
       },
       {
-        "Name": "pad0x28_70LDX[0x28]",
+        "Name": "pad0x28_TW5JB[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x450"
@@ -725,7 +713,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_7L47D[0x4]",
+        "Name": "pad0x4_4E047[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
@@ -767,7 +755,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x3_2K01N[0x3]",
+        "Name": "pad0x3_78REY[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa9"
@@ -785,7 +773,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_RLN3P[0x4]",
+        "Name": "pad0x4_BAICD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
@@ -829,7 +817,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_7INJH[0x4]",
+        "Name": "pad0x4_960YL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
@@ -877,7 +865,7 @@
         "Offset": "0x1f0"
       },
       {
-        "Name": "pad0x4_WUWRC[0x4]",
+        "Name": "pad0x4_WHGJ7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1f4"
@@ -895,7 +883,7 @@
         "Offset": "0x228"
       },
       {
-        "Name": "pad0x4_KYC3H[0x4]",
+        "Name": "pad0x4_BO1KQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x22c"
@@ -919,7 +907,7 @@
         "Offset": "0x248"
       },
       {
-        "Name": "pad0x4_8BQ4B[0x4]",
+        "Name": "pad0x4_56Q85[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24c"
@@ -988,7 +976,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x2_2AY45[0x2]",
+        "Name": "pad0x2_F2M2X[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3a"
@@ -1006,7 +994,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_GCNXQ[0x3]",
+        "Name": "pad0x3_L6Q4Q[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -1024,7 +1012,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_X0DFZ[0x7]",
+        "Name": "pad0x7_W0CTG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
@@ -1050,7 +1038,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x3_MS0SL[0x3]",
+        "Name": "pad0x3_7CX97[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc9"
@@ -1062,7 +1050,7 @@
         "Offset": "0xcc"
       },
       {
-        "Name": "pad0x20_9PMG8[0x20]",
+        "Name": "pad0x20_368ER[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xd0"
@@ -1085,12 +1073,12 @@
   },
   "AIShipService": {
     "Super": "Actor",
-    "FullSize": "0x6f8",
+    "FullSize": "0x718",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x330",
+    "ClassSize": "0x350",
     "Attributes": [
       {
-        "Name": "pad0x20_1FMO6[0x20]",
+        "Name": "pad0x20_IBRC3[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
@@ -1102,9 +1090,9 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x308_96RHC[0x308]",
+        "Name": "pad0x328_K3HT9[0x328]",
         "Type": "char",
-        "Size": "0x308",
+        "Size": "0x328",
         "Offset": "0x3f0"
       }
     ]
@@ -1118,9 +1106,9 @@
   },
   "AthenaAIShipController": {
     "Super": "AthenaAIControllerBase",
-    "FullSize": "0x760",
+    "FullSize": "0x780",
     "InheritedSize": "0x610",
-    "ClassSize": "0x150",
+    "ClassSize": "0x170",
     "Attributes": [
       {
         "Name": "BTAsset",
@@ -1129,7 +1117,7 @@
         "Offset": "0x610"
       },
       {
-        "Name": "pad0x18_ID5HN[0x18]",
+        "Name": "pad0x18_7K7TJ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x618"
@@ -1153,9 +1141,9 @@
         "Offset": "0x640"
       },
       {
-        "Name": "pad0xf8_0O99Y[0xf8]",
+        "Name": "pad0x118_EP04V[0x118]",
         "Type": "char",
-        "Size": "0xf8",
+        "Size": "0x118",
         "Offset": "0x668"
       }
     ]
@@ -1197,7 +1185,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x18_5Q4MA[0x18]",
+        "Name": "pad0x18_XWBA7[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x138"
@@ -1237,7 +1225,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x30_3U6CG[0x30]",
+        "Name": "pad0x30_B8TCK[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x98"
@@ -1263,7 +1251,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x8_4RVEA[0x8]",
+        "Name": "pad0x8_O4LCK[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
@@ -1272,9 +1260,9 @@
   },
   "BTTask_RamTargetShip": {
     "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x148",
+    "FullSize": "0x168",
     "InheritedSize": "0x88",
-    "ClassSize": "0xc0",
+    "ClassSize": "0xe0",
     "Attributes": []
   },
   "BTTask_SailShipCircleTarget": {
@@ -1309,7 +1297,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x30_4D20V[0x30]",
+        "Name": "pad0x30_6IT1Z[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x100"
@@ -1335,7 +1323,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x1c_30B71[0x1c]",
+        "Name": "pad0x1c_QRC75[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0xb4"
@@ -1383,7 +1371,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_YGFE7[0x7]",
+        "Name": "pad0x7_LVVRB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"

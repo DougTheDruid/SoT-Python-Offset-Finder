@@ -18,7 +18,7 @@ LiquidContainerComponent:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XD9EK[0x4]
+  - Name: pad0x4_S9G2V[0x4]
     Offset: '0xec'
     Size: '0x4'
     Type: char
@@ -38,7 +38,7 @@ LiquidContainerComponent:
     Offset: '0x100'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: pad0x18_KAZYI[0x18]
+  - Name: pad0x18_7EFRC[0x18]
     Offset: '0x110'
     Size: '0x18'
     Type: char

@@ -1,42 +1,42 @@
 {
   "wld_beach_rocks_12_C": {
-    "Super": "None",
+    "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x438",
     "InheritedSize": "0x408",
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "wld_rock_medium_01__e",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "wld_rock_large_01__c",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "wld_rock_small_01__d",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
+        "Name": "wld_rock_small_01__b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
+        "Name": "wld_rock_small_01__a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "SharedRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x430"

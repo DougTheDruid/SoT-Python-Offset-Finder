@@ -163,7 +163,7 @@ WwiseAudioReverbPresets:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XDA7A[0x3]
+  - Name: pad0x3_W2M2T[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -194,7 +194,7 @@ WwiseBinkSettings:
     Offset: '0x20'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1R4NY[0x4]
+  - Name: pad0x4_I4OZE[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -213,7 +213,7 @@ WwiseBinkTrackMapping:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_KZGGY[0x2]
+  - Name: pad0x2_FKEVH[0x2]
     Offset: '0x2'
     Size: '0x2'
     Type: char
@@ -228,7 +228,7 @@ WwiseBinkTrackMappings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_NVX48[0x7]
+  - Name: pad0x7_NS2E7[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -306,7 +306,7 @@ WwiseNativeEmitterPoolDensityParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5BCMC[0x7]
+  - Name: pad0x7_C0APO[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -346,6 +346,28 @@ WwiseNetworkRelationship:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x18'
+WwisePlatformMapping:
+  Attributes:
+  - Name: UnrealPlatform
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: WwisePlatform
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x20'
+WwisePlatformMappings:
+  Attributes:
+  - Name: DefaultWwisePlatform
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: Mappings
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<struct Mappings>
+  ClassSize: '0x20'
 WwiseSubtitle:
   Attributes:
   - Name: Subtitle

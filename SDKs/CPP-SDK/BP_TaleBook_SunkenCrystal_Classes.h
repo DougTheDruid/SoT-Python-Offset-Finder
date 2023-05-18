@@ -6,17 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38 (Full Size[0x7c8] - InheritedSize[0x790]
+// Size 0x38 (Full Size[0x7f8] - InheritedSize[0x7c0]
 class BP_TaleBook_SunkenCrystal_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        None;                                              // 0x790(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x798(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7a0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7a8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7b0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7b8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7c0(0x8)
+	Class ArrowComponent*                                        Arrow;                                             // 0x7c0(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7c8(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7d0(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7d8(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7e0(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7e8(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f0(0x8)
 };
 
 

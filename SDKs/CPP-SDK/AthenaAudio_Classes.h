@@ -31,13 +31,13 @@ public:
 	float                                                        InsideRtpcUpdateDistance;                          // 0x2e4(0x4)
 	float                                                        OutsideRtpcUpdateDistance;                         // 0x2e8(0x4)
 	bool                                                         TrackAttachmentToActor;                            // 0x2ec(0x1)
-	char                                                         pad0x3_1TTY7[0x3];                                 // 0x2ed(0x3)
+	char                                                         pad0x3_ZDBI6[0x3];                                 // 0x2ed(0x3)
 	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2f0(0x8)
 	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2f8(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x300(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x308(0x8)
 	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x310(0x8)
-	char                                                         pad0x28_BQN2E[0x28];                               // 0x318(0x28)
+	char                                                         pad0x28_HTARX[0x28];                               // 0x318(0x28)
 };
 
 
@@ -62,7 +62,7 @@ public:
 	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
 	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x630(0x8)
-	char                                                         pad0x18_5H6NZ[0x18];                               // 0x638(0x18)
+	char                                                         pad0x18_JCEDU[0x18];                               // 0x638(0x18)
 };
 
 
@@ -79,7 +79,7 @@ class MultiEmitter: public Actor
 {
 public:
 	Class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
-	char                                                         pad0x8_9ZG3Y[0x8];                                 // 0x3d0(0x8)
+	char                                                         pad0x8_6CW6G[0x8];                                 // 0x3d0(0x8)
 };
 
 
@@ -88,7 +88,7 @@ class StoryDrivenAudioPortalDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_158FT[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_0AA3X[0x4];                                 // 0x34(0x4)
 	TArray<struct StoryResponses>                                StoryResponses;                                    // 0x38(0x10)
 	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
 };
@@ -104,9 +104,9 @@ public:
 	float                                                        TriggerEnterRadiusInCms;                           // 0x308(0x4)
 	float                                                        TriggerExitRadiusInCms;                            // 0x30c(0x4)
 	Struct Vector                                                EmitterOffset;                                     // 0x310(0xc)
-	char                                                         pad0x14_77CI6[0x14];                               // 0x31c(0x14)
+	char                                                         pad0x14_6S65F[0x14];                               // 0x31c(0x14)
 	Class Character*                                             LocalPlayer;                                       // 0x330(0x8)
-	char                                                         pad0x38_KZMME[0x38];                               // 0x338(0x38)
+	char                                                         pad0x38_PS3TN[0x38];                               // 0x338(0x38)
 };
 
 

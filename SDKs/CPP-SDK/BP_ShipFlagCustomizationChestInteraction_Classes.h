@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x528] - InheritedSize[0x520]
+// Size 0x8 (Full Size[0x558] - InheritedSize[0x550]
 class BP_ShipFlagCustomizationChestInteraction_C: public ShipFlagCustomizationChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x520(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x550(0x8)
 };
 
 

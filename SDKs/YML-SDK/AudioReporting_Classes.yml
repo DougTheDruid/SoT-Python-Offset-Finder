@@ -12,7 +12,7 @@ AudioReportingComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class PlayerController*
-  - Name: pad0x170_21PDL[0x170]
+  - Name: pad0x170_FOX9M[0x170]
     Offset: '0xd0'
     Size: '0x170'
     Type: char
@@ -46,12 +46,20 @@ AudioReportingSettings:
     Offset: '0x2c'
     Size: '0x4'
     Type: float
-  - Name: EventReactionDataAssets
+  - Name: AttenuationFilterScaler
     Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_4LM4X[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
+  - Name: EventReactionDataAssets
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<class EventReactionsDataAsset*>
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 EventReactionsDataAsset:

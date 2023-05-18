@@ -1,63 +1,63 @@
 {
   "BP_PromptCoordinator_DiceEmote_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x1e9",
-    "InheritedSize": "0x118",
-    "ClassSize": "0xd1",
+    "FullSize": "0x219",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xe1",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_PQ93B[0x12b]",
+        "Name": "pad0x4c_CEB1P[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "DiceEmotePromptAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
         "Name": "EmoteStartedEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x128"
+        "Size": "0x58",
+        "Offset": "0x148"
       },
       {
         "Name": "Prompt",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
         "Name": "StartedDiceEmote",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d8"
+        "Offset": "0x208"
       },
       {
-        "Name": "pad0x7_8E1CS[0x7]",
+        "Name": "pad0x7_0JR7Z[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x1d9"
+        "Offset": "0x209"
       },
       {
         "Name": "CharacterDispatcher",
         "Type": "Struct ObjectMessagingDispatcherHandle",
         "Size": "0x8",
-        "Offset": "0x1e0"
+        "Offset": "0x210"
       },
       {
         "Name": "HasShown",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1e8"
+        "Offset": "0x218"
       }
     ]
   },

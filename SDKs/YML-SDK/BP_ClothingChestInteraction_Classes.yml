@@ -3,10 +3,10 @@
 BP_ClothingChestInteraction_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x698'
+    Offset: '0x6f8'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x6a0'
-  InheritedSize: '0x698'
+  FullSize: '0x700'
+  InheritedSize: '0x6f8'
   Super: ClothingChestInteraction

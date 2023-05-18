@@ -6,391 +6,395 @@ BP_LargeShip_StandardHull_Art_Interior_Map_Deck_C:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: BP_LargeShip_MapDeck_Dressing_01_a
+  - Name: BP_CookingPot2
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: BP_CookingPot
+  - Name: BP_LargeShip_MapDeck_Dressing_01_a
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: shp_cooker_02_a
+  - Name: BP_CookingPot
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shp_kitchen_worktop_01_a
+    Type: Class ChildActorComponent*
+  - Name: shp_cooker_02_a
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_inv_zone_01_a
+  - Name: shp_kitchen_worktop_01_a
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: cap_cabin_rug_02_a
+  - Name: shp_inv_zone_01_a
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_hatch_02_a
+  - Name: cap_cabin_rug_02_a
     Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_hull_01_a_01
+  - Name: shp_hatch_02_a
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_hull_01_a
+  - Name: shp_mast_hull_01_a_01
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_hull_01_a_02
+  - Name: shp_mast_hull_01_a
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_01_a
+  - Name: shp_mast_hull_01_a_02
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_01_a_03
+  - Name: shp_int_map_pillar_01_a
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_01_a_01
+  - Name: shp_int_map_pillar_01_a_03
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_01_a_02
+  - Name: shp_int_map_pillar_01_a_01
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_01_a_04
+  - Name: shp_int_map_pillar_01_a_02
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_01_a_05
+  - Name: shp_int_map_pillar_01_a_04
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: MergedStaticMesh_col
+  - Name: shp_int_map_pillar_01_a_05
     Offset: '0x450'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: MergedStaticMesh_col
+    Offset: '0x458'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
   - Name: shp_int_map_pillar_02_a19
-    Offset: '0x458'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shp_int_map_swing_rope_04_a
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_swing_rope_02_a
+  - Name: shp_int_map_swing_rope_04_a
     Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_swing_rope_03_a
+  - Name: shp_int_map_swing_rope_02_a
     Offset: '0x470'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_swing_rope_01_a
+  - Name: shp_int_map_swing_rope_03_a
     Offset: '0x478'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_kitchen_shelf_01_a_01
+  - Name: shp_int_map_swing_rope_01_a
     Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_kitchen_extractor_01_a
+  - Name: shp_kitchen_shelf_01_a_01
     Offset: '0x488'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_b
+  - Name: shp_kitchen_extractor_01_a
     Offset: '0x490'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_b_01
+  - Name: shp_int_map_beam_01_b
     Offset: '0x498'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_kitchen_shelf_01_a
+  - Name: shp_int_map_beam_01_b_01
     Offset: '0x4a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_kitchen_shelf_02_a
+  - Name: shp_kitchen_shelf_01_a
     Offset: '0x4a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a
+  - Name: shp_kitchen_shelf_02_a
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_01
+  - Name: shp_int_map_beam_01_a
     Offset: '0x4b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_02
+  - Name: shp_int_map_beam_01_a_01
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_03
+  - Name: shp_int_map_beam_01_a_02
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_04
+  - Name: shp_int_map_beam_01_a_03
     Offset: '0x4d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_05
+  - Name: shp_int_map_beam_01_a_04
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_02
+  - Name: shp_int_map_beam_01_a_05
     Offset: '0x4e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_07
+  - Name: shp_int_map_block_arm_01_a_02
     Offset: '0x4e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_08
+  - Name: shp_int_map_beam_01_a_07
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_09
+  - Name: shp_int_map_beam_01_a_08
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a
+  - Name: shp_int_map_beam_01_a_09
     Offset: '0x500'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_01
+  - Name: shp_int_map_block_arm_01_a
     Offset: '0x508'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a_06
+  - Name: shp_int_map_block_arm_01_a_01
     Offset: '0x510'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_03
+  - Name: shp_int_map_beam_01_a_06
     Offset: '0x518'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_04
+  - Name: shp_int_map_block_arm_01_a_03
     Offset: '0x520'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_05
+  - Name: shp_int_map_block_arm_01_a_04
     Offset: '0x528'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_06
+  - Name: shp_int_map_block_arm_01_a_05
     Offset: '0x530'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_07
+  - Name: shp_int_map_block_arm_01_a_06
     Offset: '0x538'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_08
+  - Name: shp_int_map_block_arm_01_a_07
     Offset: '0x540'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a_09
+  - Name: shp_int_map_block_arm_01_a_08
     Offset: '0x548'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_block_arm_01_a
+  - Name: shp_int_map_block_arm_01_a_09
     Offset: '0x550'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_floor_beam_01_a
+  - Name: shp_int_map_block_arm_01_a
     Offset: '0x558'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a_05
+  - Name: shp_int_map_floor_beam_01_a
     Offset: '0x560'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_floor_beam_01_a_02
+  - Name: shp_int_map_ceiling_beam_01_a_05
     Offset: '0x568'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_floor_beam_01_a_03
+  - Name: shp_int_map_floor_beam_01_a_02
     Offset: '0x570'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_floor_beam_01_a_04
+  - Name: shp_int_map_floor_beam_01_a_03
     Offset: '0x578'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a
+  - Name: shp_int_map_floor_beam_01_a_04
     Offset: '0x580'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a_01
+  - Name: shp_int_map_ceiling_beam_01_a
     Offset: '0x588'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a_02
+  - Name: shp_int_map_ceiling_beam_01_a_01
     Offset: '0x590'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a_03
+  - Name: shp_int_map_ceiling_beam_01_a_02
     Offset: '0x598'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a_04
+  - Name: shp_int_map_ceiling_beam_01_a_03
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_floor_beam_01_a_01
+  - Name: shp_int_map_ceiling_beam_01_a_04
     Offset: '0x5a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a
+  - Name: shp_int_map_floor_beam_01_a_01
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a_01
+  - Name: shp_int_map_pillar_02_a
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a_02
+  - Name: shp_int_map_pillar_02_a_01
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a_03
+  - Name: shp_int_map_pillar_02_a_02
     Offset: '0x5c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a1
+  - Name: shp_int_map_pillar_02_a_03
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a2
+  - Name: shp_int_map_pillar_02_a1
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a1
+  - Name: shp_int_map_pillar_02_a2
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a4
+  - Name: shp_int_map_beam_01_a1
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a5
+  - Name: shp_int_map_pillar_02_a4
     Offset: '0x5f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a6
+  - Name: shp_int_map_pillar_02_a5
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a7
+  - Name: shp_int_map_pillar_02_a6
     Offset: '0x600'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a8
+  - Name: shp_int_map_pillar_02_a7
     Offset: '0x608'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a1
+  - Name: shp_int_map_pillar_02_a8
     Offset: '0x610'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a3
+  - Name: shp_int_map_ceiling_beam_01_a1
     Offset: '0x618'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_floor_beam_01_a1
+  - Name: shp_int_map_pillar_02_a3
     Offset: '0x620'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_hatch_pull_01_a
+  - Name: shp_int_map_floor_beam_01_a1
     Offset: '0x628'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_hatch_pull_01_a1
+  - Name: shp_int_map_hatch_pull_01_a
     Offset: '0x630'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_hatch_pull_01_a2
+  - Name: shp_int_map_hatch_pull_01_a1
     Offset: '0x638'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_hatch_pull_01_a3
+  - Name: shp_int_map_hatch_pull_01_a2
     Offset: '0x640'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a9
+  - Name: shp_int_map_hatch_pull_01_a3
     Offset: '0x648'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a10
+  - Name: shp_int_map_pillar_02_a9
     Offset: '0x650'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a18
+  - Name: shp_int_map_pillar_02_a10
     Offset: '0x658'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a12
+  - Name: shp_int_map_pillar_02_a18
     Offset: '0x660'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a13
+  - Name: shp_int_map_pillar_02_a12
     Offset: '0x668'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a14
+  - Name: shp_int_map_pillar_02_a13
     Offset: '0x670'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a15
+  - Name: shp_int_map_pillar_02_a14
     Offset: '0x678'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a16
+  - Name: shp_int_map_pillar_02_a15
     Offset: '0x680'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a17
+  - Name: shp_int_map_pillar_02_a16
     Offset: '0x688'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_pillar_02_a11
+  - Name: shp_int_map_pillar_02_a17
     Offset: '0x690'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a3
+  - Name: shp_int_map_pillar_02_a11
     Offset: '0x698'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_beam_01_a4
+  - Name: shp_int_map_beam_01_a3
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_ceiling_beam_01_a2
+  - Name: shp_int_map_beam_01_a4
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_int_map_floor_beam_01_c
+  - Name: shp_int_map_ceiling_beam_01_a2
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: MergedStaticMesh
+  - Name: shp_int_map_floor_beam_01_c
     Offset: '0x6b8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: MergedStaticMesh
+    Offset: '0x6c0'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
   - Name: shp_int_map_stairs_01_a
-    Offset: '0x6c0'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shp_interior_map_deck_01_a
     Offset: '0x6c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x308'
-  FullSize: '0x6d0'
+  - Name: shp_interior_map_deck_01_a
+    Offset: '0x6d0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  ClassSize: '0x310'
+  FullSize: '0x6d8'
   InheritedSize: '0x3c8'
   Super: Actor

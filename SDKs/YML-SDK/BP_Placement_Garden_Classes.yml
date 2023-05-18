@@ -2,95 +2,95 @@
 # https://github.com/DougTheDruid
 BP_Placement_Garden_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Billboard
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class BillboardComponent*
-  - Name: None
+  - Name: Spherical Volume
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SphereComponent*
-  - Name: None
+  - Name: Scene
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: Meshes
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
+    Type: TArray<struct Meshes>
+  - Name: Radius
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Radius Visible
     Offset: '0x3fc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HWUP3[0x3]
+  - Name: pad0x3_EO6MV[0x3]
     Offset: '0x3fd'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: Spawn Density
     Offset: '0x400'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Spawn Clustering
     Offset: '0x404'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Seed
     Offset: '0x408'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WV8S6[0x4]
+  - Name: pad0x4_MTQVF[0x4]
     Offset: '0x40c'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: Physical Materials
     Offset: '0x410'
     Size: '0x10'
     Type: TArray<class Object*>
-  - Name: None
+  - Name: Update On Drag
     Offset: '0x420'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0GPNW[0x7]
+  - Name: pad0x7_R554Z[0x7]
     Offset: '0x421'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: Mesh Probabilities
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Float None>
-  - Name: None
+    Type: TArray<Float Mesh Probabilities>
+  - Name: Instanced Meshes
     Offset: '0x438'
     Size: '0x10'
     Type: TArray<class InstancedStaticMeshComponent*>
-  - Name: None
+  - Name: Random
     Offset: '0x448'
     Size: '0x8'
     Type: Struct RandomStream
-  - Name: None
+  - Name: Instance Count
     Offset: '0x450'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SJJ8F[0x4]
+  - Name: pad0x4_BO48W[0x4]
     Offset: '0x454'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: Mesh Radii
     Offset: '0x458'
     Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
+    Type: TArray<struct Mesh Radii>
+  - Name: Max Draw Distance
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Cast Shadows
     Offset: '0x46c'
     Size: '0x1'
     Type: bool

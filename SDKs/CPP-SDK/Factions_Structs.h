@@ -11,9 +11,9 @@ struct LootLevelReward
 {
 public:
 	byte                                                         LootLevel;                                         // 0x0(0x1)
-	char                                                         pad0x3_D9STC[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_AJRQT[0x3];                                 // 0x1(0x3)
 	Struct RewardId                                              RewardId;                                          // 0x4(0x8)
-	char                                                         pad0x4_FR7A4[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_HFRGR[0x4];                                 // 0xc(0x4)
 	TArray<struct LootLevelPopUpMessageDesc>                     LootLevelPopUpMessageDesc;                         // 0x10(0x10)
 	int                                                          PopUpIndex;                                        // 0x20(0x4)
 };
@@ -107,7 +107,7 @@ struct FactionShipSunkUIEvent
 {
 public:
 	byte                                                         OpponentFaction;                                   // 0x0(0x1)
-	char                                                         pad0x7_2HNVM[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_5KV08[0x7];                                 // 0x1(0x7)
 	Struct FString                                               ShipName;                                          // 0x8(0x10)
 	int                                                          MyKillStreak;                                      // 0x18(0x4)
 	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
@@ -119,7 +119,7 @@ struct FactionShipSunkNetworkEvent
 {
 public:
 	byte                                                         OpponentFaction;                                   // 0x10(0x1)
-	char                                                         pad0x3_LL5ZA[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_8PAHS[0x3];                                 // 0x11(0x3)
 	Struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
 	int                                                          MyKillStreak;                                      // 0x24(0x4)
 	int                                                          TheirKillStreak;                                   // 0x28(0x4)
@@ -197,6 +197,32 @@ struct StreakMaterialValue
 public:
 	int                                                          Streak;                                            // 0x0(0x4)
 	float                                                        Length;                                            // 0x4(0x4)
+};
+
+
+// Size 0x10
+struct FactionBlockedTaleVoteConsensusReached
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x8
+struct FactionBlockedTaleVoteAdded
+{
+public:
+	Class Actor*                                                 Voter;                                             // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct FactionVoteAdded
+{
+public:
+	Class Actor*                                                 Voter;                                             // 0x0(0x8)
+	Struct Guid                                                  CrewId;                                            // 0x8(0x10)
+	bool                                                         VotePassed;                                        // 0x18(0x1)
 };
 
 

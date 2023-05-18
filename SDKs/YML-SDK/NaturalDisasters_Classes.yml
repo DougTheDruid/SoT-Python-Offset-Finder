@@ -26,7 +26,7 @@ AshenLordAshCloud:
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_G0JYI[0x4]
+  - Name: pad0x4_370OE[0x4]
     Offset: '0x3ec'
     Size: '0x4'
     Type: char
@@ -46,7 +46,7 @@ AshenLordAshCloud:
     Offset: '0x3fc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x37_DNB2P[0x37]
+  - Name: pad0x37_7K7RG[0x37]
     Offset: '0x3fd'
     Size: '0x37'
     Type: char
@@ -54,7 +54,7 @@ AshenLordAshCloud:
     Offset: '0x434'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_15RNR[0x18]
+  - Name: pad0x18_YX5QO[0x18]
     Offset: '0x438'
     Size: '0x18'
     Type: char
@@ -72,7 +72,7 @@ AshenLordAshCloudSetupDataAsset:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TAI74[0x4]
+  - Name: pad0x4_AU9MF[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
@@ -98,7 +98,7 @@ AshenLordVolcano:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class AshenLordVolcanoSetupDataAsset*
-  - Name: pad0x68_MLGHV[0x68]
+  - Name: pad0x68_FYT86[0x68]
     Offset: '0x3d0'
     Size: '0x68'
     Type: char
@@ -166,7 +166,7 @@ AshenLordWorldEndCloud:
     Offset: '0x3cc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RKISC[0x3]
+  - Name: pad0x3_8HPYK[0x3]
     Offset: '0x3cd'
     Size: '0x3'
     Type: char
@@ -174,7 +174,7 @@ AshenLordWorldEndCloud:
     Offset: '0x3d0'
     Size: '0x8'
     Type: Struct AshenLordWorldEndCloudAnimation
-  - Name: pad0x8_KERC1[0x8]
+  - Name: pad0x8_JCEW8[0x8]
     Offset: '0x3d8'
     Size: '0x8'
     Type: char
@@ -198,7 +198,7 @@ DisableGeyserMechanismAction:
   Super: Actor
 Earthquake:
   Attributes:
-  - Name: pad0x10_K5V0P[0x10]
+  - Name: pad0x10_1XYRD[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -230,7 +230,7 @@ Earthquake:
     Offset: '0x410'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZCKTD[0x4]
+  - Name: pad0x4_YYYZ7[0x4]
     Offset: '0x414'
     Size: '0x4'
     Type: char
@@ -270,7 +270,7 @@ Earthquake:
     Offset: '0x450'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TY547[0x4]
+  - Name: pad0x4_TN0IK[0x4]
     Offset: '0x454'
     Size: '0x4'
     Type: char
@@ -286,7 +286,7 @@ Earthquake:
     Offset: '0x468'
     Size: '0x1'
     Type: byte
-  - Name: pad0x14f_P5CEK[0x14f]
+  - Name: pad0x14f_FHTUP[0x14f]
     Offset: '0x469'
     Size: '0x14f'
     Type: char
@@ -300,7 +300,7 @@ EarthquakeSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_OENRG[0x7]
+  - Name: pad0x7_ZDZXO[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -328,7 +328,7 @@ EarthquakeSetupDataAsset:
     Offset: '0xf4'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: pad0x4_AM1ZY[0x4]
+  - Name: pad0x4_8H9RQ[0x4]
     Offset: '0x104'
     Size: '0x4'
     Type: char
@@ -356,7 +356,7 @@ EarthquakeSetupDataAsset:
     Offset: '0x24c'
     Size: '0x10'
     Type: Struct FloatRange
-  - Name: pad0x4_B6TL9[0x4]
+  - Name: pad0x4_F1Q18[0x4]
     Offset: '0x25c'
     Size: '0x4'
     Type: char
@@ -414,7 +414,7 @@ EarthquakeSetupDataAsset:
   Super: DataAsset
 Geyser:
   Attributes:
-  - Name: pad0x10_XKUWH[0x10]
+  - Name: pad0x10_MT50J[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -434,7 +434,7 @@ Geyser:
     Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<struct StoryCustomisationData>
-  - Name: pad0x18_2FVWA[0x18]
+  - Name: pad0x18_MT6XA[0x18]
     Offset: '0x400'
     Size: '0x18'
     Type: char
@@ -442,7 +442,7 @@ Geyser:
     Offset: '0x418'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_8DAYP[0x7]
+  - Name: pad0x7_5OYAI[0x7]
     Offset: '0x419'
     Size: '0x7'
     Type: char
@@ -482,7 +482,7 @@ Geyser:
     Offset: '0x460'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_2GXDA[0x7]
+  - Name: pad0x7_EAIN4[0x7]
     Offset: '0x461'
     Size: '0x7'
     Type: char
@@ -494,7 +494,7 @@ Geyser:
     Offset: '0x470'
     Size: '0x8'
     Type: Class Hole*
-  - Name: pad0x40_G61ND[0x40]
+  - Name: pad0x40_VYYTG[0x40]
     Offset: '0x478'
     Size: '0x40'
     Type: char
@@ -534,7 +534,7 @@ GeyserManager:
     Offset: '0x3f8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x4f_6E9XI[0x4f]
+  - Name: pad0x4f_OV0KI[0x4f]
     Offset: '0x3f9'
     Size: '0x4f'
     Type: char
@@ -548,7 +548,7 @@ GeyserManagerSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_50P34[0x7]
+  - Name: pad0x7_NYKZO[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -576,7 +576,7 @@ GeyserManagerSetupDataAsset:
     Offset: '0xc2'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_WE8DN[0x1]
+  - Name: pad0x1_DERB0[0x1]
     Offset: '0xc3'
     Size: '0x1'
     Type: char
@@ -588,7 +588,7 @@ GeyserManagerSetupDataAsset:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XW053[0x4]
+  - Name: pad0x4_XMHGR[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -638,7 +638,7 @@ GeyserSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0Y9NJ[0x7]
+  - Name: pad0x7_GLEKP[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -662,7 +662,7 @@ GeyserSetupDataAsset:
     Offset: '0xe0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SICZU[0x3]
+  - Name: pad0x3_2ZVVX[0x3]
     Offset: '0xe1'
     Size: '0x3'
     Type: char
@@ -714,11 +714,11 @@ LavaZone:
     Offset: '0x44a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_QIGHK[0x5]
+  - Name: pad0x5_C25PM[0x5]
     Offset: '0x44b'
     Size: '0x5'
     Type: char
-  - Name: pad0x20_IIBQW[0x20]
+  - Name: pad0x20_KJKRC[0x20]
     Offset: '0x450'
     Size: '0x20'
     Type: char
@@ -732,7 +732,7 @@ MechanismGeyser:
     Offset: '0x4b8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_NOHNI[0x7]
+  - Name: pad0x7_PECH7[0x7]
     Offset: '0x4b9'
     Size: '0x7'
     Type: char
@@ -756,17 +756,17 @@ SeatStat_IslandVolcanoActive:
     Offset: '0x48'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x60_VTMAK[0x60]
+  - Name: pad0x70_REFC9[0x70]
     Offset: '0x50'
-    Size: '0x60'
+    Size: '0x70'
     Type: char
-  ClassSize: '0x68'
-  FullSize: '0xb0'
+  ClassSize: '0x78'
+  FullSize: '0xc0'
   InheritedSize: '0x48'
   Super: SeatStat
 SuperheatedWater:
   Attributes:
-  - Name: pad0x10_HTWXH[0x10]
+  - Name: pad0x10_YC052[0x10]
     Offset: '0x468'
     Size: '0x10'
     Type: char
@@ -790,7 +790,7 @@ SuperheatedWater:
     Offset: '0x490'
     Size: '0x10'
     Type: TArray<Weakclass PlayersInZone>
-  - Name: pad0xd0_LXBYD[0xd0]
+  - Name: pad0xd0_EDJ5Z[0xd0]
     Offset: '0x4a0'
     Size: '0xd0'
     Type: char
@@ -816,7 +816,7 @@ SuperheatedWaterSetupDataAsset:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UFZFZ[0x4]
+  - Name: pad0x4_7D0M2[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -858,7 +858,7 @@ SuperheatedWaterSetupDataAsset:
   Super: DataAsset
 Volcano:
   Attributes:
-  - Name: pad0x18_QLTED[0x18]
+  - Name: pad0x18_1IT4W[0x18]
     Offset: '0x3c8'
     Size: '0x18'
     Type: char
@@ -882,7 +882,7 @@ Volcano:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MPK86[0x7]
+  - Name: pad0x7_ZY62B[0x7]
     Offset: '0x409'
     Size: '0x7'
     Type: char
@@ -938,7 +938,7 @@ Volcano:
     Offset: '0x460'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_6JVOK[0x4]
+  - Name: pad0x4_P3247[0x4]
     Offset: '0x46c'
     Size: '0x4'
     Type: char
@@ -978,7 +978,7 @@ Volcano:
     Offset: '0x4b0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x138_AJPDO[0x138]
+  - Name: pad0x138_P1DVM[0x138]
     Offset: '0x4b8'
     Size: '0x138'
     Type: char
@@ -1010,7 +1010,7 @@ VolcanoSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ZMHUQ[0x7]
+  - Name: pad0x7_7IITH[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -1030,7 +1030,7 @@ VolcanoSetupDataAsset:
     Offset: '0xc0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WBKI1[0x4]
+  - Name: pad0x4_L8ZDZ[0x4]
     Offset: '0xc4'
     Size: '0x4'
     Type: char
@@ -1058,7 +1058,7 @@ VolcanoSetupDataAsset:
     Offset: '0x160'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DNOHL[0x4]
+  - Name: pad0x4_2FF49[0x4]
     Offset: '0x164'
     Size: '0x4'
     Type: char
@@ -1130,7 +1130,7 @@ VolcanoSetupDataAsset:
     Offset: '0x3b8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_P8SZI[0x4]
+  - Name: pad0x4_R8XFU[0x4]
     Offset: '0x3bc'
     Size: '0x4'
     Type: char
@@ -1154,7 +1154,7 @@ VolcanoSetupDataAsset:
     Offset: '0x428'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RPG9M[0x4]
+  - Name: pad0x4_5E33G[0x4]
     Offset: '0x42c'
     Size: '0x4'
     Type: char

@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_OOS_MagicBox_C:
   Attributes:
-  - Name: None
+  - Name: SkeletalMesh
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*

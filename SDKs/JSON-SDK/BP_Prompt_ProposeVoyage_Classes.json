@@ -1,57 +1,57 @@
 {
   "BP_Prompt_ProposeVoyage_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x1e0",
-    "InheritedSize": "0x118",
-    "ClassSize": "0xc8",
+    "FullSize": "0x210",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12a_D0JMK[0x12a]",
+        "Name": "pad0x4c_5M3LZ[0x4c]",
         "Type": "char",
-        "Size": "0x12a",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "State_OfferPurchased",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
-        "Name": "pad0x7_91PR6[0x7]",
+        "Name": "pad0x7_SYS6S[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x121"
+        "Offset": "0x141"
       },
       {
         "Name": "Handle_OnOfferPurchased",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x128"
+        "Size": "0x58",
+        "Offset": "0x148"
       },
       {
         "Name": "State_Complete",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
-        "Name": "pad0x7_QE1P8[0x7]",
+        "Name": "pad0x7_K60UX[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x171"
+        "Offset": "0x1a1"
       },
       {
         "Name": "Prompt_ProposeVoyage",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x178"
+        "Offset": "0x1a8"
       }
     ]
   },

@@ -34,7 +34,7 @@ BP_Seagull01_8POI_C:
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MXGD6[0x4]
+  - Name: pad0x4_UASZF[0x4]
     Offset: '0x46c'
     Size: '0x4'
     Type: char

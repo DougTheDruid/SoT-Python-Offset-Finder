@@ -1,117 +1,117 @@
 {
   "BP_Lantern_C": {
     "Super": "Lantern",
-    "FullSize": "0x9d8",
-    "InheritedSize": "0x940",
+    "FullSize": "0xa38",
+    "InheritedSize": "0x9a0",
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x940"
+        "Offset": "0x9a0"
       },
       {
-        "Name": "None",
+        "Name": "LanternTriggerGlow",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x948"
+        "Offset": "0x9a8"
       },
       {
-        "Name": "None",
+        "Name": "LanternGlow",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x950"
+        "Offset": "0x9b0"
       },
       {
-        "Name": "None",
+        "Name": "AmbientLightSource",
         "Type": "Class AmbientLightSourceComponent*",
         "Size": "0x8",
-        "Offset": "0x958"
+        "Offset": "0x9b8"
       },
       {
-        "Name": "None",
+        "Name": "SpotLight",
         "Type": "Class SpotLightComponent*",
         "Size": "0x8",
-        "Offset": "0x960"
+        "Offset": "0x9c0"
       },
       {
-        "Name": "None",
+        "Name": "UsableWieldable",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x968"
+        "Offset": "0x9c8"
       },
       {
-        "Name": "None",
+        "Name": "LanternGlowDynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x970"
+        "Offset": "0x9d0"
       },
       {
-        "Name": "None",
+        "Name": "EmissiveInt_threshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x978"
+        "Offset": "0x9d8"
       },
       {
-        "Name": "pad0x4_3TNNN[0x4]",
+        "Name": "pad0x4_VXZL0[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x97c"
+        "Offset": "0x9dc"
       },
       {
-        "Name": "None",
+        "Name": "LanternTriggerGlowDynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x980"
+        "Offset": "0x9e0"
       },
       {
-        "Name": "None",
+        "Name": "TriggerGlowDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x988"
+        "Offset": "0x9e8"
       },
       {
-        "Name": "None",
+        "Name": "TriggerGlowRampInDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x98c"
+        "Offset": "0x9ec"
       },
       {
-        "Name": "None",
+        "Name": "TriggerGlowRampOutDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x990"
+        "Offset": "0x9f0"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSpotlightColour",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x994"
+        "Offset": "0x9f4"
       },
       {
-        "Name": "None",
+        "Name": "DefaultAmbientLightColour",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x9a4"
+        "Offset": "0xa04"
       },
       {
-        "Name": "None",
+        "Name": "DefaultGlowColour",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x9b4"
+        "Offset": "0xa14"
       },
       {
-        "Name": "pad0x4_IG9G9[0x4]",
+        "Name": "pad0x4_MN7IL[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x9c4"
+        "Offset": "0xa24"
       },
       {
-        "Name": "None",
+        "Name": "DynamicMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
-        "Offset": "0x9c8"
+        "Offset": "0xa28"
       }
     ]
   },

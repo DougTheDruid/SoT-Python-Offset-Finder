@@ -1,99 +1,99 @@
 {
   "BP_EyeOfReach_C": {
     "Super": "ProjectileWeapon",
-    "FullSize": "0xae0",
-    "InheritedSize": "0xa80",
+    "FullSize": "0xb50",
+    "InheritedSize": "0xaf0",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0xa80"
+        "Offset": "0xaf0"
       },
       {
         "Name": "Glint",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xa88"
+        "Offset": "0xaf8"
       },
       {
         "Name": "PostProcess",
         "Type": "Class PostProcessComponent*",
         "Size": "0x8",
-        "Offset": "0xa90"
+        "Offset": "0xb00"
       },
       {
         "Name": "sfx relationship",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xa98"
+        "Offset": "0xb08"
       },
       {
-        "Name": "pad0x7_20DJ2[0x7]",
+        "Name": "pad0x7_05Z2B[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0xa99"
+        "Offset": "0xb09"
       },
       {
         "Name": "DynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0xaa0"
+        "Offset": "0xb10"
       },
       {
         "Name": "TurningOn",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xaa8"
+        "Offset": "0xb18"
       },
       {
-        "Name": "pad0x3_CHUYL[0x3]",
+        "Name": "pad0x3_H4RGW[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0xaa9"
+        "Offset": "0xb19"
       },
       {
         "Name": "BlurTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xaac"
+        "Offset": "0xb1c"
       },
       {
         "Name": "BlurInDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xab0"
+        "Offset": "0xb20"
       },
       {
         "Name": "BlurOutDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xab4"
+        "Offset": "0xb24"
       },
       {
         "Name": "BlurCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0xab8"
+        "Offset": "0xb28"
       },
       {
         "Name": "LensNormal",
         "Type": "Class Texture2D*",
         "Size": "0x8",
-        "Offset": "0xac0"
+        "Offset": "0xb30"
       },
       {
         "Name": "LensMask",
         "Type": "Class Texture2D*",
         "Size": "0x8",
-        "Offset": "0xac8"
+        "Offset": "0xb38"
       },
       {
         "Name": "LensTint",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0xad0"
+        "Offset": "0xb40"
       }
     ]
   },

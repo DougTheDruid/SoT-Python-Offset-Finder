@@ -6,7 +6,7 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_069V0[0x4]
+  - Name: pad0x4_79JVC[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -18,7 +18,7 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1XWTG[0x7]
+  - Name: pad0x7_W57SA[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -33,7 +33,7 @@ SpawnAICustomOnSpawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_CPJWQ[0x4]
+  - Name: pad0x4_83JVG[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -91,22 +91,33 @@ SpawnAICustomSetupTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_TGA2M[0x4]
+  - Name: pad0x4_WFIJ5[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
-  - Name: Body
+  - Name: Region
     Offset: '0x8'
     Size: '0x8'
+    Type: Class TaleAIRegionBase*
+  - Name: Body
+    Offset: '0x10'
+    Size: '0x8'
     Type: Class TaleQuestStepDesc*
-  ClassSize: '0x10'
+  ClassSize: '0x18'
+SpawnActorCustomOnCompleteWaveTaskData:
+  Attributes:
+  - Name: Body
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class TaleQuestStepDesc*
+  ClassSize: '0x8'
 SpawnActorCustomOnTriggerWaveTaskData:
   Attributes:
   - Name: NumAIToSpawn
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SH0V0[0x4]
+  - Name: pad0x4_QVFMR[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

@@ -1,9 +1,9 @@
 {
   "BP_Component_Tutorial2019_C": {
     "Super": "Tutorial2019ContextualDelegatingComponent",
-    "FullSize": "0x178",
+    "FullSize": "0x188",
     "InheritedSize": "0xd8",
-    "ClassSize": "0xa0",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -12,9 +12,9 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x16b_IG913[0x16b]",
+        "Name": "pad0xac_2LLHI[0xac]",
         "Type": "char",
-        "Size": "0x16b",
+        "Size": "0xac",
         "Offset": "0xe0"
       },
       {
@@ -54,7 +54,7 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x7_KZZGW[0x7]",
+        "Name": "pad0x7_RHQ84[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x129"
@@ -62,7 +62,7 @@
       {
         "Name": "Handle_PlayerFinishedSpawning",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
+        "Size": "0x58",
         "Offset": "0x130"
       }
     ]

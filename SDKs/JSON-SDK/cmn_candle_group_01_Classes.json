@@ -1,42 +1,42 @@
 {
   "cmn_candle_group_01_C": {
-    "Super": "None",
+    "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x438",
     "InheritedSize": "0x408",
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "StaticMeshComponent02",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "StaticMeshComponent01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "StaticMeshComponent0",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystemComponent01",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystemComponent0",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "SharedRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x430"

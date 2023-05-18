@@ -28,7 +28,7 @@ struct GameplayTagQuery
 {
 public:
 	int                                                          TokenStreamVersion;                                // 0x0(0x4)
-	char                                                         pad0x4_TAWUS[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_LZ1OW[0x4];                                 // 0x4(0x4)
 	TArray<struct TagDictionary>                                 TagDictionary;                                     // 0x8(0x10)
 	TArray<Byte QueryTokenStream>                                QueryTokenStream;                                  // 0x18(0x10)
 	Struct FString                                               UserDescription;                                   // 0x28(0x10)

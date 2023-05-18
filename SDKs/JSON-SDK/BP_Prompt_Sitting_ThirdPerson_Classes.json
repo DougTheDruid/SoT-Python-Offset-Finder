@@ -1,81 +1,81 @@
 {
   "BP_Prompt_Sitting_ThirdPerson_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x26a",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x152",
+    "FullSize": "0x2ba",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x182",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12a_XGX4D[0x12a]",
+        "Name": "pad0x4c_WCSP0[0x4c]",
         "Type": "char",
-        "Size": "0x12a",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_LocalPlayerEnteredSittingState",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "Prompt_ThirdPerson",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x168"
+        "Offset": "0x198"
       },
       {
         "Name": "PromptDisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d0"
+        "Offset": "0x200"
       },
       {
         "Name": "CrewInRadius",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d4"
+        "Offset": "0x204"
       },
       {
         "Name": "PromptOnCooldown",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d5"
+        "Offset": "0x205"
       },
       {
-        "Name": "pad0x2_V25AY[0x2]",
+        "Name": "pad0x2_6U7V9[0x2]",
         "Type": "char",
         "Size": "0x2",
-        "Offset": "0x1d6"
+        "Offset": "0x206"
       },
       {
         "Name": "Handle_LocalPlayerExitedSittingState",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x1d8"
+        "Size": "0x58",
+        "Offset": "0x208"
       },
       {
         "Name": "Handle_LocalPlayerEnteredSittingThirdPersonCameraState",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x220"
+        "Size": "0x58",
+        "Offset": "0x260"
       },
       {
         "Name": "PlayerOnSeat",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x268"
+        "Offset": "0x2b8"
       },
       {
         "Name": "PromptEvaluated",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x269"
+        "Offset": "0x2b9"
       }
     ]
   },

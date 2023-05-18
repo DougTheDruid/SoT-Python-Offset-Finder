@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_EquipmentShopkeeper_C:
   Attributes:
-  - Name: None
-    Offset: '0x478'
+  - Name: DefaultSceneRoot
+    Offset: '0x488'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x480'
-  InheritedSize: '0x478'
+  FullSize: '0x490'
+  InheritedSize: '0x488'
   Super: ShopkeeperInteractionProxy

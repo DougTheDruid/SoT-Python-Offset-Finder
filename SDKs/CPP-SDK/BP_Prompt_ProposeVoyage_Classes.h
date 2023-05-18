@@ -6,18 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xc8 (Full Size[0x1e0] - InheritedSize[0x118]
+// Size 0xd8 (Full Size[0x210] - InheritedSize[0x138]
 class BP_Prompt_ProposeVoyage_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_D0JMK[0x12a];                             // 0x120(0x12a)
-	bool                                                         State_OfferPurchased;                              // 0x120(0x1)
-	char                                                         pad0x7_91PR6[0x7];                                 // 0x121(0x7)
-	Struct ObjectMessagingHandle                                 Handle_OnOfferPurchased;                           // 0x128(0x48)
-	bool                                                         State_Complete;                                    // 0x170(0x1)
-	char                                                         pad0x7_QE1P8[0x7];                                 // 0x171(0x7)
-	Struct PrioritisedPromptWithHandle                           Prompt_ProposeVoyage;                              // 0x178(0x68)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_5M3LZ[0x4c];                               // 0x140(0x4c)
+	bool                                                         State_OfferPurchased;                              // 0x140(0x1)
+	char                                                         pad0x7_SYS6S[0x7];                                 // 0x141(0x7)
+	Struct ObjectMessagingHandle                                 Handle_OnOfferPurchased;                           // 0x148(0x58)
+	bool                                                         State_Complete;                                    // 0x1a0(0x1)
+	char                                                         pad0x7_K60UX[0x7];                                 // 0x1a1(0x7)
+	Struct PrioritisedPromptWithHandle                           Prompt_ProposeVoyage;                              // 0x1a8(0x68)
 };
 
 

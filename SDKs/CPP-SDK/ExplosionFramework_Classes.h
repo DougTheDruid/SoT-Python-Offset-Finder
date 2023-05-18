@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+// Size 0x70 (Full Size[0x138] - InheritedSize[0xc8]
 class CreateActorInstanceOnExplodeComponent: public ActorComponent
 {
 public:
 	class                                                        ActorToInstance;                                   // 0xc8(0x8)
-	char                                                         pad0x58_70CAI[0x58];                               // 0xd0(0x58)
+	char                                                         pad0x68_ULJ3G[0x68];                               // 0xd0(0x68)
 };
 
 
@@ -49,7 +49,7 @@ class StatusResponseExplodeAfterTime: public StatusResponse
 public:
 	float                                                        MinTimeUntilExplosion;                             // 0x30(0x4)
 	float                                                        MaxTimeUntilExplosion;                             // 0x34(0x4)
-	char                                                         pad0x8_KJZW6[0x8];                                 // 0x38(0x8)
+	char                                                         pad0x8_Z5CUA[0x8];                                 // 0x38(0x8)
 	Class World*                                                 CachedWorld;                                       // 0x40(0x8)
 };
 

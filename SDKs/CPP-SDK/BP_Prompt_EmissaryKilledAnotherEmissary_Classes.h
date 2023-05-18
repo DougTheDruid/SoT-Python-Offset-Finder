@@ -6,26 +6,26 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xa8 (Full Size[0x1c0] - InheritedSize[0x118]
+// Size 0xb8 (Full Size[0x1f0] - InheritedSize[0x138]
 class BP_Prompt_EmissaryKilledAnotherEmissary_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12b_WHZME[0x12b];                             // 0x120(0x12b)
-	Struct ObjectMessagingHandle                                 Handle_EmissaryKilledAnotherEmissary;              // 0x120(0x48)
-	struct FName                                                 CompanyName;                                       // 0x168(0x8)
-	struct FName                                                 VictimCompanyName;                                 // 0x170(0x8)
-	bool                                                         SurfacedThisSession;                               // 0x178(0x1)
-	char                                                         pad0x3_3OAFV[0x3];                                 // 0x179(0x3)
-	struct FName                                                 ExpectedCompanyName;                               // 0x17c(0x8)
-	char                                                         pad0x4_URTZP[0x4];                                 // 0x184(0x4)
-	TArray<struct FName>                                         ExpectedVictimCompanyName;                         // 0x188(0x10)
-	TArray<struct Prompts>                                       Prompts;                                           // 0x198(0x10)
-	class                                                        PromptAccessKey;                                   // 0x1a8(0x8)
-	int                                                          PromptIndex;                                       // 0x1b0(0x4)
-	int                                                          NumberOfPrompts;                                   // 0x1b4(0x4)
-	float                                                        InitialDelay;                                      // 0x1b8(0x4)
-	float                                                        ShowPromptDuration;                                // 0x1bc(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_16YUA[0x4c];                               // 0x140(0x4c)
+	Struct ObjectMessagingHandle                                 Handle_EmissaryKilledAnotherEmissary;              // 0x140(0x58)
+	struct FName                                                 CompanyName;                                       // 0x198(0x8)
+	struct FName                                                 VictimCompanyName;                                 // 0x1a0(0x8)
+	bool                                                         SurfacedThisSession;                               // 0x1a8(0x1)
+	char                                                         pad0x3_O9FIC[0x3];                                 // 0x1a9(0x3)
+	struct FName                                                 ExpectedCompanyName;                               // 0x1ac(0x8)
+	char                                                         pad0x4_HJQJD[0x4];                                 // 0x1b4(0x4)
+	TArray<struct FName>                                         ExpectedVictimCompanyName;                         // 0x1b8(0x10)
+	TArray<struct Prompts>                                       Prompts;                                           // 0x1c8(0x10)
+	class                                                        PromptAccessKey;                                   // 0x1d8(0x8)
+	int                                                          PromptIndex;                                       // 0x1e0(0x4)
+	int                                                          NumberOfPrompts;                                   // 0x1e4(0x4)
+	float                                                        InitialDelay;                                      // 0x1e8(0x4)
+	float                                                        ShowPromptDuration;                                // 0x1ec(0x4)
 };
 
 

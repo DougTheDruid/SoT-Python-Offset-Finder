@@ -1,55 +1,19 @@
 {
   "BP_SmallShip_Mast_C": {
-    "Super": "None",
-    "FullSize": "0xaa0",
-    "InheritedSize": "0xa38",
+    "Super": "BP_Mast_C",
+    "FullSize": "0xad0",
+    "InheritedSize": "0xa68",
     "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0xa38"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0xa40"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0xa48"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0xa50"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0xa58"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0xa60"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
         "Offset": "0xa68"
       },
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa70"
       },
@@ -82,6 +46,42 @@
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa98"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xaa0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xaa8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xab0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0xab8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0xac0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xac8"
       }
     ]
   },

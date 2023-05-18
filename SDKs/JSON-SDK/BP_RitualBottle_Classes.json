@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "ptn_pois_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "2\u00009;>IMQ\n\u008c\t\u0000^cUU8\u001d(\u0088\u008c\u0001\u0000\u00002_GEN_VARIABLE\u0000\u00c1\f\u008c\t\u0000^\u00d3\u00c5@X\u00b7c\u00d7\u008c\u0001\u0000\u0000BP_RitualBottle_C\u0000\u0003\u00c1\u000b\u00de%A\u000e\u008c\t\u0000\u001fp\u0003\u00c1(U\u00cf9\u008d\u0001\u0000\u0000Default__BP_RitualBottle_C\u0000\u00c1\u00d1\u00fd$A\u0010\u008c\t\u0000\u0095\u007f\u0004\u00c1\u00b8\u0003T\u0094\u008d\u0001\u0000\u0000ptn_pois_01_a_GEN_VARIABLE\u0000\u00c1\u00d0q$A\u0012\u008c\t\u0000\b\u009b\u0005\u00c1\u0018*\u00cf9\u008d\u0001\u0000\u0000ptn_pois_stop_01_e\u0000A\u0018`\u00ca@\u0014\u008c\t\u0000\u009dZ\"A\u0000\u00ba\u00cf9\u008d\u0001\u0000\u0000BP_RitualBottleTop_C\u0000\u0088\b\u0000",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "1\u0000\u00d9\u0093*F\u001b\u008e\u0006\u008c\t\u00006V]\u0094 `\u00bb\u0098\u008c\u0001\u0000\u00001_GEN_VARIABLE\u0000\u00e9\b\u008c\t\u0000\u0000\b\u0015\u001ep\u00a0]\u0098\u008c\u0001\u0000\u00002\u00009;>IMQ\n\u008c\t\u0000^cUU8\u001d(\u0088\u008c\u0001\u0000\u00002_GEN_VARIABLE\u0000\u00c1\f\u008c\t\u0000^\u00d3\u00c5@X\u00b7c\u00d7\u008c\u0001\u0000\u0000BP_RitualBottle_C\u0000\u0003\u00c1\u000b\u00de%A\u000e\u008c\t\u0000\u001fp\u0003\u00c1(U\u00cf9\u008d\u0001\u0000\u0000Default__BP_RitualBottle_C\u0000\u00c1\u00d1\u00fd$A\u0010\u008c\t\u0000\u0095\u007f\u0004\u00c1\u00b8\u0003T\u0094\u008d\u0001\u0000\u0000ptn_pois_01_a_GEN_VARIABLE\u0000\u00c1\u00d0q$A\u0012\u008c\t\u0000\b\u009b\u0005\u00c1\u0018*\u00cf9\u008d\u0001\u0000\u0000ptn_poi\u0000",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"

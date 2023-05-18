@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 wld_bush_cluster_01_a_C:
   Attributes:
-  - Name: None
+  - Name: wld_bush_03_a
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wld_bush_banana_01_a
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wld_bush_banana_01_b
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x420'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x20'
   FullSize: '0x428'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

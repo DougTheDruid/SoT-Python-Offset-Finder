@@ -6,9 +6,9 @@ BP_CT_TutorialProgress_C:
     Offset: '0x28'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x21a_I3H4O[0x21a]
+  - Name: pad0x15c_X1WQE[0x15c]
     Offset: '0x30'
-    Size: '0x21a'
+    Size: '0x15c'
     Type: char
   - Name: AthenaPlayerController
     Offset: '0x30'

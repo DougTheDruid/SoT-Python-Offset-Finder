@@ -1,27 +1,27 @@
 {
   "BP_medium_mast_fore_C": {
     "Super": "BP_Mast_C",
-    "FullSize": "0xa50",
-    "InheritedSize": "0xa38",
+    "FullSize": "0xa80",
+    "InheritedSize": "0xa68",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0xa38"
+        "Offset": "0xa68"
       },
       {
         "Name": "shp_flag_pennant_pole_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xa40"
+        "Offset": "0xa70"
       },
       {
         "Name": "shp_flag_pennant_alliance_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xa48"
+        "Offset": "0xa78"
       }
     ]
   },

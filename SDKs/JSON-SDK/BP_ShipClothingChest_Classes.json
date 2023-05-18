@@ -1,15 +1,15 @@
 {
   "BP_ShipClothingChest_C": {
     "Super": "PossessionsChest",
-    "FullSize": "0x598",
-    "InheritedSize": "0x590",
+    "FullSize": "0x5a8",
+    "InheritedSize": "0x5a0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
-        "Offset": "0x590"
+        "Offset": "0x5a0"
       }
     ]
   },

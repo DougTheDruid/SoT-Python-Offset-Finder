@@ -52,10 +52,10 @@ public:
 class CookableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_G17H7[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_KL56R[0x20];                               // 0xc8(0x20)
 	class                                                        NextCookState;                                     // 0xe8(0x8)
 	float                                                        TimeToNextCookState;                               // 0xf0(0x4)
-	char                                                         pad0x4_AGNZO[0x4];                                 // 0xf4(0x4)
+	char                                                         pad0x4_8T7P2[0x4];                                 // 0xf4(0x4)
 	TArray<struct SmokeFeedbackLevels>                           SmokeFeedbackLevels;                               // 0xf8(0x10)
 	Class CurveFloat*                                            VisibleCookedExtentOverTime;                       // 0x108(0x8)
 	float                                                        DefaultVisibleCookedExtent;                        // 0x110(0x4)
@@ -80,7 +80,7 @@ public:
 class CookerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_FQPWZ[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_WGTEE[0x8];                                 // 0xc8(0x8)
 	TArray<struct StatusToApplyToContents>                       StatusToApplyToContents;                           // 0xd0(0x10)
 	TArray<struct VFXFeedback>                                   VFXFeedback;                                       // 0xe0(0x10)
 	Class StaticMeshMemoryConstraintComponent*                   CookableStaticMeshComponent;                       // 0xf0(0x8)
@@ -89,17 +89,17 @@ public:
 	struct FName                                                 BurnDownDirectionParameterName;                    // 0x108(0x8)
 	float                                                        PlacementVarianceAngleBound;                       // 0x110(0x4)
 	bool                                                         OnByDefault;                                       // 0x114(0x1)
-	char                                                         pad0x3_N88PO[0x3];                                 // 0x115(0x3)
+	char                                                         pad0x3_E3HBQ[0x3];                                 // 0x115(0x3)
 	Class CookingComponentAudioParams*                           AudioParams;                                       // 0x118(0x8)
 	byte                                                         VfxLocation;                                       // 0x120(0x1)
-	char                                                         pad0x7_86M1F[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x7_I225C[0x7];                                 // 0x121(0x7)
 	Class ItemInfo*                                              CurrentlyCookingItem;                              // 0x128(0x8)
 	Struct CookingClientRepresentation                           CookingState;                                      // 0x130(0x68)
 	Class ParticleSystemComponent*                               SmokeParticleComponent;                            // 0x198(0x8)
 	Class MaterialInstanceDynamic*                               VisibleCookableMaterial;                           // 0x1a0(0x8)
 	bool                                                         TurnedOn;                                          // 0x1a8(0x1)
 	bool                                                         OnIsland;                                          // 0x1a9(0x1)
-	char                                                         pad0x9e_0GZXX[0x9e];                               // 0x1aa(0x9e)
+	char                                                         pad0x9e_3TFA4[0x9e];                               // 0x1aa(0x9e)
 };
 
 
@@ -109,7 +109,7 @@ class CookingComponentAudioParams: public DataAsset
 public:
 	Class WwiseObjectPoolWrapper*                                CookingPool;                                       // 0x28(0x8)
 	Struct Vector                                                EmitterOffsetVector;                               // 0x30(0xc)
-	char                                                         pad0x4_68NFC[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_4D7MC[0x4];                                 // 0x3c(0x4)
 	Class WwiseEvent*                                            FoodPlaceInPot;                                    // 0x40(0x8)
 	Class WwiseEvent*                                            CookingStart;                                      // 0x48(0x8)
 	Class WwiseEvent*                                            CookingStop;                                       // 0x50(0x8)
@@ -122,7 +122,7 @@ public:
 	struct FName                                                 FoodTypeRareMeat;                                  // 0x88(0x8)
 	struct FName                                                 FoodCookedAmount;                                  // 0x90(0x8)
 	float                                                        MaxCookingRtpcAmount;                              // 0x98(0x4)
-	char                                                         pad0x4_E2ERF[0x4];                                 // 0x9c(0x4)
+	char                                                         pad0x4_7MCDN[0x4];                                 // 0x9c(0x4)
 };
 
 
@@ -130,18 +130,18 @@ public:
 class CookingPot: public InteractableBase
 {
 public:
-	char                                                         pad0x8_GEW3X[0x8];                                 // 0x400(0x8)
+	char                                                         pad0x8_C8AHS[0x8];                                 // 0x400(0x8)
 	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x408(0x8)
 	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x410(0x8)
 	Class CookerComponent*                                       CookerComponent;                                   // 0x418(0x8)
 	float                                                        HoldToInteractTime;                                // 0x420(0x4)
-	char                                                         pad0x4_CKGWJ[0x4];                                 // 0x424(0x4)
+	char                                                         pad0x4_CSXHI[0x4];                                 // 0x424(0x4)
 	Struct FText                                                 NotWieldingCookableItemTooltip;                    // 0x428(0x38)
 	Struct FText                                                 WieldingCookableItemTooltip;                       // 0x460(0x38)
 	Struct FText                                                 TakeItemTooltip;                                   // 0x498(0x38)
 	Struct FText                                                 CannotTakeItemTooltip;                             // 0x4d0(0x38)
 	Struct FText                                                 MixInItemTooltip;                                  // 0x508(0x38)
-	char                                                         pad0xa0_XQY83[0xa0];                               // 0x540(0xa0)
+	char                                                         pad0xa0_LZQOT[0xa0];                               // 0x540(0xa0)
 };
 
 
@@ -157,7 +157,7 @@ class HasRequiredCookingStateStatCondition: public TargetedStatCondition
 {
 public:
 	byte                                                         RequiredState;                                     // 0x30(0x1)
-	char                                                         pad0x7_2U9FU[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_QJI5E[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -179,9 +179,9 @@ public:
 class PottableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_LJKTG[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_51VM9[0x8];                                 // 0xc8(0x8)
 	bool                                                         CanBePutInPot;                                     // 0xd0(0x1)
-	char                                                         pad0x7_UWGWL[0x7];                                 // 0xd1(0x7)
+	char                                                         pad0x7_AC1E8[0x7];                                 // 0xd1(0x7)
 };
 
 

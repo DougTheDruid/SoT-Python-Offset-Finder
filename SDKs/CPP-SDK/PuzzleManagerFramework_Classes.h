@@ -25,9 +25,9 @@ public:
 class PuzzleManagerPolicy: public Object
 {
 public:
-	char                                                         pad0x10_F3VUR[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_1F09I[0x10];                               // 0x28(0x10)
 	Class Actor*                                                 PuzzleManager;                                     // 0x38(0x8)
-	char                                                         pad0xa0_GQDPI[0xa0];                               // 0x40(0xa0)
+	char                                                         pad0xa0_5IFUB[0xa0];                               // 0x40(0xa0)
 };
 
 

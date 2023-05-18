@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20 (Full Size[0x7c0] - InheritedSize[0x7a0]
+// Size 0x20 (Full Size[0x800] - InheritedSize[0x7e0]
 class BP_FishedItem_Wieldable_Base_C: public StaticSimpleBootyWieldableItem
 {
 public:
-	Class TrackedOwnerComponent*                                 TrackedOwner;                                      // 0x7a0(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x7a8(0x8)
-	Class PickupableComponent*                                   Pickupable;                                        // 0x7b0(0x8)
-	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x7b8(0x8)
+	Class TrackedOwnerComponent*                                 TrackedOwner;                                      // 0x7e0(0x8)
+	Class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x7e8(0x8)
+	Class PickupableComponent*                                   Pickupable;                                        // 0x7f0(0x8)
+	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x7f8(0x8)
 };
 
 

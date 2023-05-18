@@ -143,18 +143,18 @@ public:
 };
 
 
-// Size 0xd0
+// Size 0xe0
 struct WieldableMysteriousNoteLayoutItem
 {
 public:
 	Struct FString                                               Theme;                                             // 0x0(0x10)
 	Class Font*                                                  Font;                                              // 0x10(0x8)
-	Struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x18(0x30)
-	Struct StringAssetReference                                  RadialIcon;                                        // 0x48(0x10)
-	Struct TreasureMapWidgetText                                 NoteTitleWidgetText;                               // 0x58(0x38)
-	Struct TreasureMapWidgetText                                 NoteBodyWidgetText;                                // 0x90(0x38)
-	float                                                        NoteWidth;                                         // 0xc8(0x4)
-	float                                                        NoteLineSpacingMultiplier;                         // 0xcc(0x4)
+	Struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x18(0x38)
+	Struct StringAssetReference                                  RadialIcon;                                        // 0x50(0x10)
+	Struct TreasureMapWidgetText                                 NoteTitleWidgetText;                               // 0x60(0x3c)
+	Struct TreasureMapWidgetText                                 NoteBodyWidgetText;                                // 0x9c(0x3c)
+	float                                                        NoteWidth;                                         // 0xd8(0x4)
+	float                                                        NoteLineSpacingMultiplier;                         // 0xdc(0x4)
 };
 
 
@@ -202,7 +202,7 @@ struct ClientNoteData
 {
 public:
 	bool                                                         NotifyArrival;                                     // 0x0(0x1)
-	char                                                         pad0x7_TGK7Z[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_PK7AD[0x7];                                 // 0x1(0x7)
 	TArray<struct PendingNotes>                                  PendingNotes;                                      // 0x8(0x10)
 };
 

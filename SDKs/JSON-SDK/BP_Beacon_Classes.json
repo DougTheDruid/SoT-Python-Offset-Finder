@@ -1,81 +1,81 @@
 {
   "BP_Beacon_C": {
     "Super": "Beacon",
-    "FullSize": "0x838",
-    "InheritedSize": "0x7d8",
+    "FullSize": "0x858",
+    "InheritedSize": "0x7f8",
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "PointLight3",
         "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x7d8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x7f8"
       },
       {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
+        "Name": "PointLight2",
+        "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x800"
       },
       {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
+        "Name": "PointLight1",
+        "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x808"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem6",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x810"
       },
       {
-        "Name": "None",
+        "Name": "vfx_candle_01_smoke_tavern",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x818"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem5",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x820"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem4",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x828"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem3",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x830"
+      },
+      {
+        "Name": "ParticleSystem2",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x838"
+      },
+      {
+        "Name": "ParticleSystem1",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x840"
+      },
+      {
+        "Name": "ParticleSystem",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x848"
+      },
+      {
+        "Name": "vfx_candle_01_tavern",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x850"
       }
     ]
   },

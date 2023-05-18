@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class tls_wld_Orb_light_D_C: public StaticMeshActor
 {
 public:
-	Class PointLightComponent*                                   None;                                              // 0x3d8(0x8)
+	Class PointLightComponent*                                   PointLight;                                        // 0x3d8(0x8)
 };
 
 

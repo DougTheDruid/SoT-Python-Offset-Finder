@@ -1,15 +1,15 @@
 {
   "BP_SailHoist_C": {
     "Super": "SailHoist",
-    "FullSize": "0x7f8",
-    "InheritedSize": "0x7f0",
+    "FullSize": "0x868",
+    "InheritedSize": "0x860",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x860"
       }
     ]
   },

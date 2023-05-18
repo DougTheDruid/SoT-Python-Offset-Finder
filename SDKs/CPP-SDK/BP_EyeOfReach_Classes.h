@@ -6,25 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60 (Full Size[0xae0] - InheritedSize[0xa80]
+// Size 0x60 (Full Size[0xb50] - InheritedSize[0xaf0]
 class BP_EyeOfReach_C: public ProjectileWeapon
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa80(0x8)
-	Class StaticMeshComponent*                                   Glint;                                             // 0xa88(0x8)
-	Class PostProcessComponent*                                  PostProcess;                                       // 0xa90(0x8)
-	byte                                                         sfx relationship;                                  // 0xa98(0x1)
-	char                                                         pad0x7_20DJ2[0x7];                                 // 0xa99(0x7)
-	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xaa0(0x8)
-	bool                                                         TurningOn;                                         // 0xaa8(0x1)
-	char                                                         pad0x3_CHUYL[0x3];                                 // 0xaa9(0x3)
-	float                                                        BlurTime;                                          // 0xaac(0x4)
-	float                                                        BlurInDuration;                                    // 0xab0(0x4)
-	float                                                        BlurOutDuration;                                   // 0xab4(0x4)
-	Class CurveFloat*                                            BlurCurve;                                         // 0xab8(0x8)
-	Class Texture2D*                                             LensNormal;                                        // 0xac0(0x8)
-	Class Texture2D*                                             LensMask;                                          // 0xac8(0x8)
-	Struct LinearColor                                           LensTint;                                          // 0xad0(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xaf0(0x8)
+	Class StaticMeshComponent*                                   Glint;                                             // 0xaf8(0x8)
+	Class PostProcessComponent*                                  PostProcess;                                       // 0xb00(0x8)
+	byte                                                         sfx relationship;                                  // 0xb08(0x1)
+	char                                                         pad0x7_05Z2B[0x7];                                 // 0xb09(0x7)
+	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xb10(0x8)
+	bool                                                         TurningOn;                                         // 0xb18(0x1)
+	char                                                         pad0x3_H4RGW[0x3];                                 // 0xb19(0x3)
+	float                                                        BlurTime;                                          // 0xb1c(0x4)
+	float                                                        BlurInDuration;                                    // 0xb20(0x4)
+	float                                                        BlurOutDuration;                                   // 0xb24(0x4)
+	Class CurveFloat*                                            BlurCurve;                                         // 0xb28(0x8)
+	Class Texture2D*                                             LensNormal;                                        // 0xb30(0x8)
+	Class Texture2D*                                             LensMask;                                          // 0xb38(0x8)
+	Struct LinearColor                                           LensTint;                                          // 0xb40(0x10)
 };
 
 

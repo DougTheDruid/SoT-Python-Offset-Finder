@@ -12,6 +12,12 @@ ActionStateId:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
+ActionStateInitialStateCreatorDefinition:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
 ActionStateMachineComponent:
   Attributes: []
   ClassSize: '0x790'
@@ -68,7 +74,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_9XBZ8[0x7]
+  - Name: pad0x7_2FC37[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -82,6 +88,32 @@ NullActionStateId:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: ActionStateId
+SelfInitialisingActionStateMachineComponent:
+  Attributes:
+  - Name: pad0x8_M47DP[0x8]
+    Offset: '0x858'
+    Size: '0x8'
+    Type: char
+  - Name: ActionStatePriorityTableData
+    Offset: '0x860'
+    Size: '0x8'
+    Type: Class ActionStatePriorityTableData*
+  - Name: ActionStateCreatorDefinition
+    Offset: '0x868'
+    Size: '0x8'
+    Type: class
+  - Name: ActionStateInitialStateCreatorDefinition
+    Offset: '0x870'
+    Size: '0x8'
+    Type: class
+  - Name: pad0x28_9WO37[0x28]
+    Offset: '0x878'
+    Size: '0x28'
+    Type: char
+  ClassSize: '0x48'
+  FullSize: '0x8a0'
+  InheritedSize: '0x858'
+  Super: ActionStateMachineComponent
 SerialisedActionStateConstructionInfoTestFunctions:
   Attributes: []
   ClassSize: '0x0'

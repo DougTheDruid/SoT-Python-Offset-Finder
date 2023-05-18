@@ -54,7 +54,7 @@ SessionServicePong:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_R08BM[0x7]
+  - Name: pad0x7_GCKUO[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char

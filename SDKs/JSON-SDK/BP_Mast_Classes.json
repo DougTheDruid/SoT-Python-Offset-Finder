@@ -1,105 +1,105 @@
 {
   "BP_Mast_C": {
     "Super": "Mast",
-    "FullSize": "0xa38",
-    "InheritedSize": "0x998",
+    "FullSize": "0xa68",
+    "InheritedSize": "0x9c8",
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x998"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x9a0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x9a8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x9b0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x9b8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x9c0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x9c8"
       },
       {
-        "Name": "None",
+        "Name": "MastTopComponent",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x9d0"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "TopgallantActor",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x9d8"
       },
       {
-        "Name": "None",
-        "Type": "TArray<struct None>",
-        "Size": "0x10",
+        "Name": "MainsailActor",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
         "Offset": "0x9e0"
       },
       {
-        "Name": "None",
-        "Type": "TArray<class StaticMeshComponent*>",
-        "Size": "0x10",
+        "Name": "TopsailActor",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x9e8"
+      },
+      {
+        "Name": "Main Yard",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
         "Offset": "0x9f0"
       },
       {
-        "Name": "None",
-        "Type": "TArray<class ChildActorComponent*>",
-        "Size": "0x10",
+        "Name": "Topgallant Yard",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x9f8"
+      },
+      {
+        "Name": "Top Yard",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
         "Offset": "0xa00"
       },
       {
-        "Name": "None",
-        "Type": "Class MaterialInstance*",
+        "Name": "MastBaseComponent",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
+        "Offset": "0xa08"
+      },
+      {
+        "Name": "Sail Parameters",
+        "Type": "TArray<struct Sail Parameters>",
+        "Size": "0x10",
         "Offset": "0xa10"
       },
       {
-        "Name": "None",
-        "Type": "TArray<class None*>",
+        "Name": "Yards",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
-        "Offset": "0xa18"
+        "Offset": "0xa20"
       },
       {
-        "Name": "None",
-        "Type": "Class DecalComponent*",
-        "Size": "0x8",
-        "Offset": "0xa28"
-      },
-      {
-        "Name": "None",
-        "Type": "Class DecalComponent*",
-        "Size": "0x8",
+        "Name": "Sails",
+        "Type": "TArray<class ChildActorComponent*>",
+        "Size": "0x10",
         "Offset": "0xa30"
+      },
+      {
+        "Name": "Sail Material",
+        "Type": "Class MaterialInstance*",
+        "Size": "0x8",
+        "Offset": "0xa40"
+      },
+      {
+        "Name": "SailActors",
+        "Type": "TArray<class BP_Sail_C*>",
+        "Size": "0x10",
+        "Offset": "0xa48"
+      },
+      {
+        "Name": "DamageDecalRight",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xa58"
+      },
+      {
+        "Name": "DamageDecalLeft",
+        "Type": "Class DecalComponent*",
+        "Size": "0x8",
+        "Offset": "0xa60"
       }
     ]
   },

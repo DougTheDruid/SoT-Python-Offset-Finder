@@ -14,7 +14,7 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_M834B[0x4]
+  - Name: pad0x4_JCPU0[0x4]
     Offset: '0xdc'
     Size: '0x4'
     Type: char
@@ -22,46 +22,92 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0xcf_OBJYV[0xcf]
+  - Name: pad0xef_FNZV5[0xef]
     Offset: '0x121'
-    Size: '0xcf'
+    Size: '0xef'
     Type: char
-  ClassSize: '0x128'
-  FullSize: '0x1f0'
+  ClassSize: '0x148'
+  FullSize: '0x210'
   InheritedSize: '0xc8'
   Super: ActorComponent
 MultiTargetEnchantedCompass:
   Attributes:
   - Name: Locations
-    Offset: '0x878'
+    Offset: '0x8d8'
     Size: '0x10'
     Type: TArray<struct Locations>
   - Name: LocationIds
-    Offset: '0x888'
+    Offset: '0x8e8'
     Size: '0x10'
     Type: TArray<struct LocationIds>
   - Name: InventoryItem
-    Offset: '0x898'
+    Offset: '0x8f8'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   - Name: ProximityAnnouncementComponent
-    Offset: '0x8a0'
+    Offset: '0x900'
     Size: '0x8'
     Type: Class EnchantedCompassProximityAnnouncementComponent*
-  - Name: pad0x8_DVR79[0x8]
-    Offset: '0x8a8'
+  - Name: pad0x8_2X0BG[0x8]
+    Offset: '0x908'
     Size: '0x8'
     Type: char
   ClassSize: '0x30'
-  FullSize: '0x8b0'
-  InheritedSize: '0x880'
+  FullSize: '0x910'
+  InheritedSize: '0x8e0'
   Super: Compass
 PrototypeMultiTargetEnchantedCompass:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x8b0'
-  InheritedSize: '0x8b0'
+  FullSize: '0x910'
+  InheritedSize: '0x910'
   Super: MultiTargetEnchantedCompass
+RotatingCompass:
+  Attributes:
+  - Name: PickupableComponent
+    Offset: '0x9c8'
+    Size: '0x8'
+    Type: Class PickupableComponent*
+  - Name: PoseableStashedMeshComponent
+    Offset: '0x9d0'
+    Size: '0x8'
+    Type: Class PoseableMeshMemoryConstraintComponent*
+  - Name: WieldableInteractableComponent
+    Offset: '0x9d8'
+    Size: '0x8'
+    Type: Class WieldableInteractableComponent*
+  - Name: SplinePathActor
+    Offset: '0x9e0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: SplineOffset
+    Offset: '0x9e8'
+    Size: '0x4'
+    Type: float
+  - Name: RotatingCompassMagnetForce
+    Offset: '0x9ec'
+    Size: '0x4'
+    Type: float
+  - Name: TargetYawAngle
+    Offset: '0x9f0'
+    Size: '0x4'
+    Type: float
+  - Name: pad0xc_PE2MH[0xc]
+    Offset: '0x9f4'
+    Size: '0xc'
+    Type: char
+  - Name: IsUsingLocalSpaceTarget
+    Offset: '0xa00'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0xf_YBPK3[0xf]
+    Offset: '0xa01'
+    Size: '0xf'
+    Type: char
+  ClassSize: '0x40'
+  FullSize: '0xa10'
+  InheritedSize: '0x9d0'
+  Super: EnchantedCompass
 TaleQuestMultiTargetCompassAddTrackedLocationStep:
   Attributes:
   - Name: Desc
@@ -118,13 +164,71 @@ TaleQuestMultiTargetCompassServiceDesc:
   FullSize: '0x38'
   InheritedSize: '0x30'
   Super: TaleQuestToolServiceDesc
+TaleQuestRotatingCompassFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestRotatingCompassService:
+  Attributes:
+  - Name: SplinePathActor
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: RotatingCompass
+    Offset: '0x68'
+    Size: '0x8'
+    Type: Class RotatingCompass*
+  - Name: pad0x18_PNNDM[0x18]
+    Offset: '0x70'
+    Size: '0x18'
+    Type: char
+  - Name: RotatingCompassTargetLocation
+    Offset: '0x88'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: RotatingCompassMagnetForce
+    Offset: '0x94'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x98_3A5KI[0x98]
+    Offset: '0x98'
+    Size: '0x98'
+    Type: char
+  ClassSize: '0xd0'
+  FullSize: '0x130'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+TaleQuestRotatingCompassServiceDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
+TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0xa0'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStepDesc:
+  Attributes:
+  - Name: SplinePathActor
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x30'
+  FullSize: '0xb0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 TaleQuestSetCompassTargetBaseStepDesc:
   Attributes:
   - Name: TargetUpdateReason
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_4G27L[0x7]
+  - Name: pad0x7_Y3S6B[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -158,3 +262,43 @@ TaleQuestSetCompassTargetToTargetStep:
   FullSize: '0xf8'
   InheritedSize: '0x98'
   Super: TaleQuestStep
+TaleQuestSetRotatingCompassMagnetForceStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestSetRotatingCompassMagnetForceStepDesc:
+  Attributes:
+  - Name: MagnetForce
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_6PRAK[0x4]
+    Offset: '0x84'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestSetRotatingCompassTargetAngleStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestSetRotatingCompassTargetAngleStepDesc:
+  Attributes:
+  - Name: TargetAngle
+    Offset: '0x80'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_KJ41A[0x4]
+    Offset: '0x84'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc

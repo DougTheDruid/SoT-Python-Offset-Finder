@@ -18,7 +18,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x28_R7APK[0x28]",
+        "Name": "pad0x28_UI6XW[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x88"
@@ -48,7 +48,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x64_VCJMK[0x64]",
+        "Name": "pad0x64_7XMFT[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0xd4"

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_NonRotatableSignalCloud_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x4a8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame

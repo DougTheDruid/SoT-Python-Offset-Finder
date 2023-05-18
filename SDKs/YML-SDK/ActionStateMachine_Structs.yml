@@ -79,7 +79,7 @@ InnerTestStruct:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_D8AH0[0x7]
+  - Name: pad0x7_NG2MX[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -104,7 +104,7 @@ ResetStateMachineRpc:
     Offset: '0x0'
     Size: '0x1'
     Type: Struct ActionStateChangeRequestId
-  - Name: pad0x4_ZXXNQ[0x4]
+  - Name: pad0x4_3GTNK[0x4]
     Offset: '0x1'
     Size: '0x4'
     Type: char
@@ -112,7 +112,7 @@ ResetStateMachineRpc:
     Offset: '0x5'
     Size: '0x1'
     Type: Struct ActionStateChangeRequestId
-  - Name: pad0xa_QATM2[0xa]
+  - Name: pad0xa_XC5PF[0xa]
     Offset: '0x6'
     Size: '0xa'
     Type: char
@@ -147,7 +147,7 @@ TestActionStateConstructionInfoWithInner:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UFF6W[0x4]
+  - Name: pad0x4_SMWSR[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

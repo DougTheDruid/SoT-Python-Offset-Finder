@@ -108,7 +108,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_XDA7A[0x3]",
+        "Name": "pad0x3_W2M2T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -273,7 +273,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_1R4NY[0x4]",
+        "Name": "pad0x4_I4OZE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -296,7 +296,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_NVX48[0x7]",
+        "Name": "pad0x7_NS2E7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -325,7 +325,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x2_KZGGY[0x2]",
+        "Name": "pad0x2_FKEVH[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2"
@@ -374,6 +374,40 @@
         "Name": "LocalPlayerSwitchValue",
         "Type": "struct FName",
         "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwisePlatformMappings": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DefaultWwisePlatform",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Mappings",
+        "Type": "TArray<struct Mappings>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwisePlatformMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UnrealPlatform",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwisePlatform",
+        "Type": "Struct FString",
+        "Size": "0x10",
         "Offset": "0x10"
       }
     ]
@@ -440,7 +474,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_5BCMC[0x7]",
+        "Name": "pad0x7_C0APO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"

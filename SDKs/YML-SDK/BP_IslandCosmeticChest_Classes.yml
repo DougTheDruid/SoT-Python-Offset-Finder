@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_IslandCosmeticChest_C:
   Attributes:
-  - Name: None
-    Offset: '0x5f8'
+  - Name: Harbour
+    Offset: '0x608'
     Size: '0x8'
     Type: Class HarbourComponent*
   ClassSize: '0x8'
-  FullSize: '0x600'
-  InheritedSize: '0x5f8'
+  FullSize: '0x610'
+  InheritedSize: '0x608'
   Super: ShipCustomizationChest

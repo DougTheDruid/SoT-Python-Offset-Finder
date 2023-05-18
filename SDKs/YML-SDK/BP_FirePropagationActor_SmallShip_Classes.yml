@@ -6,10 +6,10 @@ BP_FirePropagationActor_SmallShip_C:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class ShipFirePropagationComponent*
-  - Name: None
+  - Name: pad0x8_08XKV[0x8]
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'

@@ -3,25 +3,17 @@
 MapTable_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x7a0'
+    Offset: '0x7b0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
-    Offset: '0x7a8'
+    Offset: '0x7b8'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   - Name: NavBlocker
-    Offset: '0x7b0'
-    Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: ControlPoint
-    Offset: '0x7b8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: ControlPoint
     Offset: '0x7c0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class BoxComponent*
   - Name: ControlPoint
     Offset: '0x7c8'
     Size: '0x8'
@@ -38,27 +30,35 @@ MapTable_C:
     Offset: '0x7e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: TextureFeedback
+  - Name: ControlPoint
     Offset: '0x7e8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: ControlPoint
+    Offset: '0x7f0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: TextureFeedback
+    Offset: '0x7f8'
     Size: '0x8'
     Type: Class TextureFeedbackComponent*
   - Name: Cube
-    Offset: '0x7f0'
+    Offset: '0x800'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Map
-    Offset: '0x7f8'
+    Offset: '0x808'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: ActiveRange
-    Offset: '0x800'
+    Offset: '0x810'
     Size: '0x4'
     Type: float
   - Name: IsActive
-    Offset: '0x804'
+    Offset: '0x814'
     Size: '0x1'
     Type: bool
   ClassSize: '0x65'
-  FullSize: '0x805'
-  InheritedSize: '0x7a0'
+  FullSize: '0x815'
+  InheritedSize: '0x7b0'
   Super: MapTable

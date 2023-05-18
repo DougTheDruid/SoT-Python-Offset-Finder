@@ -8,7 +8,7 @@ CustomServerLocalisationInterface:
   Super: Interface
 CustomServerLocalisationService:
   Attributes:
-  - Name: pad0x8_064FF[0x8]
+  - Name: pad0x8_EGSLC[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -16,7 +16,7 @@ CustomServerLocalisationService:
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<struct LocalisationData>
-  - Name: pad0x80_ROK8L[0x80]
+  - Name: pad0x80_8SPQI[0x80]
     Offset: '0x3e0'
     Size: '0x80'
     Type: char

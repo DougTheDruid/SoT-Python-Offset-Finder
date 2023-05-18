@@ -8,12 +8,12 @@
   },
   "FakeShip": {
     "Super": "Actor",
-    "FullSize": "0x4c8",
+    "FullSize": "0x4d8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x100",
+    "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "pad0x8_UXT2G[0x8]",
+        "Name": "pad0x8_IMZRH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -25,9 +25,9 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0xe8_5VGM1[0xe8]",
+        "Name": "pad0xf8_QMKPK[0xf8]",
         "Type": "char",
-        "Size": "0xe8",
+        "Size": "0xf8",
         "Offset": "0x3e0"
       }
     ]
@@ -41,12 +41,12 @@
   },
   "ItemProxyWatercraftTrackerComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x150",
+    "FullSize": "0x160",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x88",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x8_NB63N[0x8]",
+        "Name": "pad0x8_9MD7G[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -64,9 +64,9 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x70_T221E[0x70]",
+        "Name": "pad0x80_EA3DE[0x80]",
         "Type": "char",
-        "Size": "0x70",
+        "Size": "0x80",
         "Offset": "0xe0"
       }
     ]
@@ -87,9 +87,9 @@
   },
   "RowboatAudioComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x490",
+    "FullSize": "0x4c0",
     "InheritedSize": "0x2e0",
-    "ClassSize": "0x1b0",
+    "ClassSize": "0x1e0",
     "Attributes": [
       {
         "Name": "Params",
@@ -104,9 +104,9 @@
         "Offset": "0x2e8"
       },
       {
-        "Name": "pad0x1a0_VV8OM[0x1a0]",
+        "Name": "pad0x1d0_WADBT[0x1d0]",
         "Type": "char",
-        "Size": "0x1a0",
+        "Size": "0x1d0",
         "Offset": "0x2f0"
       }
     ]
@@ -148,7 +148,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_WI0MX[0x4]",
+        "Name": "pad0x4_KFTGB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -196,7 +196,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_FW2OW[0x4]",
+        "Name": "pad0x4_7W82E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -214,7 +214,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x4_61CNZ[0x4]",
+        "Name": "pad0x4_X56C9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -281,6 +281,39 @@
       }
     ]
   },
+  "RowboatCustomizationLoadoutInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatCustomizationLoadoutComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x110",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x28_0HLFZ[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "EquippedCustomization",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x18_68DQ9[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xf8"
+      }
+    ]
+  },
   "RowboatDescDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -294,6 +327,103 @@
         "Offset": "0x28"
       }
     ]
+  },
+  "RowboatDockedToShipConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatTypeCategory": {
+    "Super": "CategoryBase",
+    "FullSize": "0x78",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatEntitlementDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Rowboat",
+        "Type": "Struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "RowboatLiveryCategory": {
+    "Super": "CategoryBase",
+    "FullSize": "0x78",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatLiveryDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RowboatDescDataAsset",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "RowboatLiveryPicker": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatLiveryPickerDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "LiveriesInThisGroup",
+        "Type": "TArray<struct LiveriesInThisGroup>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SubgroupsInPriorityOrder",
+        "Type": "TArray<struct SubgroupsInPriorityOrder>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "DataAssetRowboatLiveryPicker": {
+    "Super": "RowboatLiveryPicker",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DataAsset",
+        "Type": "Class RowboatLiveryPickerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FixedRowboatLiveryPicker": {
+    "Super": "RowboatLiveryPicker",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": []
   },
   "RowboatOarsLeftForwardNotificationInputId": {
     "Super": "NotificationInputId",
@@ -379,7 +509,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_WMZ0B[0x8]",
+        "Name": "pad0x8_85VHA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -391,7 +521,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x4_AS882[0x4]",
+        "Name": "pad0x4_QKQ0B[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
@@ -429,7 +559,7 @@
     "ClassSize": "0x348",
     "Attributes": [
       {
-        "Name": "pad0x28_ZCZ35[0x28]",
+        "Name": "pad0x28_SXUWE[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3c8"
@@ -447,7 +577,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x4_TGODN[0x4]",
+        "Name": "pad0x4_5Y6C8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x404"
@@ -513,7 +643,7 @@
         "Offset": "0x4b8"
       },
       {
-        "Name": "pad0x34_4ID0L[0x34]",
+        "Name": "pad0x34_X0Z80[0x34]",
         "Type": "char",
         "Size": "0x34",
         "Offset": "0x4d4"
@@ -567,13 +697,13 @@
         "Offset": "0x583"
       },
       {
-        "Name": "pad0x4_QHNZ0[0x4]",
+        "Name": "pad0x4_AP7LR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x584"
       },
       {
-        "Name": "pad0x188_HQ1IW[0x188]",
+        "Name": "pad0x188_I1EB9[0x188]",
         "Type": "char",
         "Size": "0x188",
         "Offset": "0x588"
@@ -582,12 +712,12 @@
   },
   "Rowboat": {
     "Super": "Watercraft",
-    "FullSize": "0xa00",
+    "FullSize": "0xa50",
     "InheritedSize": "0x710",
-    "ClassSize": "0x2f0",
+    "ClassSize": "0x340",
     "Attributes": [
       {
-        "Name": "pad0x40_8RQKF[0x40]",
+        "Name": "pad0x40_CQ1D8[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x710"
@@ -629,202 +759,208 @@
         "Offset": "0x778"
       },
       {
+        "Name": "CustomizationLoadoutComponent",
+        "Type": "Class RowboatCustomizationLoadoutComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
         "Name": "LiveryComponent",
         "Type": "Class ShipLiveryComponent*",
         "Size": "0x8",
-        "Offset": "0x780"
+        "Offset": "0x788"
       },
       {
         "Name": "CustomizationComponent",
         "Type": "Class ReplicatedShipPartCustomizationComponent*",
         "Size": "0x8",
-        "Offset": "0x788"
+        "Offset": "0x790"
       },
       {
         "Name": "WaterExclusionOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x790"
+        "Offset": "0x798"
       },
       {
-        "Name": "pad0x4_NN6VG[0x4]",
+        "Name": "pad0x4_YUS3F[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x79c"
+        "Offset": "0x7a4"
       },
       {
         "Name": "TetherCustomisationComponent",
         "Type": "Class TetherCustomisationComponent*",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x7a8"
       },
       {
         "Name": "HealthComponent",
         "Type": "Class HealthComponent*",
         "Size": "0x8",
-        "Offset": "0x7a8"
+        "Offset": "0x7b0"
       },
       {
         "Name": "ActorDamageableComponent",
         "Type": "Class ActorDamageableComponent*",
         "Size": "0x8",
-        "Offset": "0x7b0"
+        "Offset": "0x7b8"
       },
       {
         "Name": "RammableComponent",
         "Type": "Class RammableComponent*",
         "Size": "0x8",
-        "Offset": "0x7b8"
+        "Offset": "0x7c0"
       },
       {
         "Name": "ScrapeableComponent",
         "Type": "Class ScrapeableComponent*",
         "Size": "0x8",
-        "Offset": "0x7c0"
+        "Offset": "0x7c8"
       },
       {
         "Name": "RowboatAudio",
         "Type": "Class RowboatAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x7c8"
+        "Offset": "0x7d0"
       },
       {
         "Name": "HullDragDynamicsDesc",
         "Type": "Class BaseHullDragDynamicsDesc*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7d8"
       },
       {
         "Name": "OarSplashContainer",
         "Type": "Class BowSplashContainer*",
         "Size": "0x8",
-        "Offset": "0x7d8"
+        "Offset": "0x7e0"
       },
       {
         "Name": "MountableComponent",
         "Type": "Class MountableComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7e8"
       },
       {
         "Name": "LinearDampingOverTimeWhileBeachedScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x7f0"
       },
       {
         "Name": "AngularDampingOverTimeWhileBeachedScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x7f8"
       },
       {
         "Name": "DamageEffectData",
         "Type": "Struct RowboatDamageEffectData",
         "Size": "0x18",
-        "Offset": "0x7f8"
+        "Offset": "0x800"
       },
       {
         "Name": "StrainDamageData",
         "Type": "Struct RowboatStrainDamageData",
         "Size": "0x20",
-        "Offset": "0x810"
+        "Offset": "0x818"
       },
       {
         "Name": "AlwaysEnabledInteractables",
         "Type": "TArray<class ChildActorComponent*>",
         "Size": "0x10",
-        "Offset": "0x830"
+        "Offset": "0x838"
       },
       {
         "Name": "ShroudBreakerTrackerComponent",
         "Type": "Class ShroudBreakerTrackerComponent*",
         "Size": "0x8",
-        "Offset": "0x840"
+        "Offset": "0x848"
       },
       {
         "Name": "IsBeingLaunched",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x848"
+        "Offset": "0x850"
       },
       {
         "Name": "IsSinking",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x849"
+        "Offset": "0x851"
       },
       {
-        "Name": "pad0x2_S049C[0x2]",
+        "Name": "pad0x2_U1U1V[0x2]",
         "Type": "char",
         "Size": "0x2",
-        "Offset": "0x84a"
+        "Offset": "0x852"
       },
       {
         "Name": "MaxPushingAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x84c"
+        "Offset": "0x854"
       },
       {
         "Name": "CurrentStrainAmount",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x850"
+        "Offset": "0x858"
       },
       {
         "Name": "IsDocked",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x854"
+        "Offset": "0x85c"
       },
       {
-        "Name": "pad0x1_180GX[0x1]",
+        "Name": "pad0x1_A9H91[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x855"
+        "Offset": "0x85d"
       },
       {
         "Name": "CoverCollisionChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x856"
+        "Offset": "0x85e"
       },
       {
-        "Name": "pad0x1_HVEB6[0x1]",
+        "Name": "pad0x1_OA3EK[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x857"
+        "Offset": "0x85f"
       },
       {
         "Name": "UnderCoverCheckInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x858"
+        "Offset": "0x860"
       },
       {
         "Name": "UnderCoverHeight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x85c"
+        "Offset": "0x864"
       },
       {
         "Name": "RelativeUnderCoverProbeRoots",
         "Type": "TArray<struct RelativeUnderCoverProbeRoots>",
         "Size": "0x10",
-        "Offset": "0x860"
+        "Offset": "0x868"
       },
       {
         "Name": "TrackedActorType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x870"
+        "Offset": "0x878"
       },
       {
-        "Name": "pad0x18f_173WF[0x18f]",
+        "Name": "pad0x1d7_BBJKN[0x1d7]",
         "Type": "char",
-        "Size": "0x18f",
-        "Offset": "0x871"
+        "Size": "0x1d7",
+        "Offset": "0x879"
       }
     ]
   },
@@ -889,7 +1025,7 @@
         "Offset": "0x688"
       },
       {
-        "Name": "pad0x20_TGFJX[0x20]",
+        "Name": "pad0x20_4Y5AW[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x690"
@@ -940,9 +1076,9 @@
   },
   "TaleQuestSpawnWatercraftStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x118",
+    "FullSize": "0x128",
     "InheritedSize": "0x80",
-    "ClassSize": "0x98",
+    "ClassSize": "0xa8",
     "Attributes": [
       {
         "Name": "SpawnLocation",
@@ -951,16 +1087,10 @@
         "Offset": "0x80"
       },
       {
-        "Name": "LiveryAsset",
-        "Type": "Struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0xd8"
-      },
-      {
         "Name": "Watercraft",
         "Type": "Struct QuestVariableWatercraft",
         "Size": "0x30",
-        "Offset": "0xe8"
+        "Offset": "0xf8"
       }
     ]
   },
@@ -994,27 +1124,53 @@
   },
   "WatercraftSpawnData": {
     "Super": "ItemSpawnData",
-    "FullSize": "0x80",
+    "FullSize": "0x88",
     "InheritedSize": "0x58",
-    "ClassSize": "0x28",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x20_V6W1E[0x20]",
+        "Name": "pad0x20_ZVCHM[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x58"
       },
       {
-        "Name": "MinDistanceToNearestWatercraftInMetres",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "LiveryPicker",
+        "Type": "Class RowboatLiveryPicker*",
+        "Size": "0x8",
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x4_UGE03[0x4]",
+        "Name": "MinDistanceToNearestWatercraftInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_X7HCA[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x7c"
+        "Offset": "0x84"
+      }
+    ]
+  },
+  "WatercraftsSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "RowboatTypesEntitlementsMapDataAsset",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "RowboatLiveryEntitlementsMapDataAsset",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },
@@ -1025,7 +1181,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_5S7VG[0x8]",
+        "Name": "pad0x8_QG3Z0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"

@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class AthenaMediaPlayer: public MediaPlayer
 {
 public:
-	char                                                         pad0x8_57TNO[0x8];                                 // 0x170(0x8)
+	char                                                         pad0x8_5N1AN[0x8];                                 // 0x170(0x8)
 	Class WwiseMediaSoundComponent*                              SoundComponent;                                    // 0x178(0x8)
 	Class MediaSubtitleComponent*                                SubtitleComponent;                                 // 0x180(0x8)
-	char                                                         pad0x8_QNXMA[0x8];                                 // 0x188(0x8)
+	char                                                         pad0x8_PE1NO[0x8];                                 // 0x188(0x8)
 };
 
 

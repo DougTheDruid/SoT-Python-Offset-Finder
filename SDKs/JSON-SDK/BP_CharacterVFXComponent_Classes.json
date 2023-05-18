@@ -1,9 +1,9 @@
 {
   "BP_CharacterVFXComponent_C": {
     "Super": "CharacterVfxComponent",
-    "FullSize": "0x33c",
+    "FullSize": "0x3ac",
     "InheritedSize": "0xe0",
-    "ClassSize": "0x25c",
+    "ClassSize": "0x2cc",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -12,136 +12,136 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x162_V5RDG[0x162]",
+        "Name": "pad0xa4_Z2YKH[0xa4]",
         "Type": "char",
-        "Size": "0x162",
+        "Size": "0xa4",
         "Offset": "0xe8"
       },
       {
         "Name": "EnterWaterEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
+        "Size": "0x58",
         "Offset": "0xe8"
       },
       {
         "Name": "UnderwaterStateChanged",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x130"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "Splash Emitter",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x178"
+        "Offset": "0x198"
       },
       {
         "Name": "Large Foot Splash",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x180"
+        "Offset": "0x1a0"
       },
       {
         "Name": "Small Foot Splash",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x188"
+        "Offset": "0x1a8"
       },
       {
         "Name": "Threshold for run",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x190"
+        "Offset": "0x1b0"
       },
       {
         "Name": "Threshold for large foot impact",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x194"
+        "Offset": "0x1b4"
       },
       {
         "Name": "FallingIntoWaterHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x198"
+        "Size": "0x58",
+        "Offset": "0x1b8"
       },
       {
         "Name": "Large Falling Splash",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x1e0"
+        "Offset": "0x210"
       },
       {
         "Name": "PlayerViewUnderWaterHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x1e8"
+        "Size": "0x58",
+        "Offset": "0x218"
       },
       {
         "Name": "EnterShipEventHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x230"
+        "Size": "0x58",
+        "Offset": "0x270"
       },
       {
         "Name": "ExitShipEventHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x278"
+        "Size": "0x58",
+        "Offset": "0x2c8"
       },
       {
         "Name": "WindOffsetFromShip",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x2c0"
+        "Offset": "0x320"
       },
       {
         "Name": "DEBUG_WindActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2cc"
+        "Offset": "0x32c"
       },
       {
-        "Name": "pad0x3_BUXDE[0x3]",
+        "Name": "pad0x3_E230O[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x2cd"
+        "Offset": "0x32d"
       },
       {
         "Name": "DEBUG_WindToggleTimer",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2d0"
+        "Offset": "0x330"
       },
       {
-        "Name": "pad0x4_C8DYO[0x4]",
+        "Name": "pad0x4_S794K[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x2d4"
+        "Offset": "0x334"
       },
       {
         "Name": "WindDirectionChangedHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x2d8"
+        "Size": "0x58",
+        "Offset": "0x338"
       },
       {
         "Name": "vfx_particle_underwater_ambient",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x320"
+        "Offset": "0x390"
       },
       {
         "Name": "vfx_player_underwater_ambient",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x328"
+        "Offset": "0x398"
       },
       {
         "Name": "FeatureName",
         "Type": "Struct FeatureFlag",
         "Size": "0xc",
-        "Offset": "0x330"
+        "Offset": "0x3a0"
       }
     ]
   },

@@ -56,6 +56,57 @@ OrientedPoint:
     Size: '0xc'
     Type: Struct Rotator
   ClassSize: '0x18'
+Pendulum:
+  Attributes:
+  - Name: Increment
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: IncrementDirectionMultiplier
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: IsSwinging
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_HUX14[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
+  - Name: RPM
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: MinAngleDegrees
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: MaxAngleDegrees
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: Length
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentSwingProgress
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentRotationAngleDegrees
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: pad0xc_WR2S1[0xc]
+    Offset: '0x24'
+    Size: '0xc'
+    Type: char
+  - Name: InterpolationAsTransform
+    Offset: '0x30'
+    Size: '0x30'
+    Type: Struct Transform
+  ClassSize: '0x60'
 RotationUpdateResult:
   Attributes:
   - Name: UpdatedRotation

@@ -17,9 +17,9 @@ public:
 class ContestRowboatsService: public Actor
 {
 public:
-	char                                                         pad0x8_0A8U6[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_EI7S4[0x8];                                 // 0x3c8(0x8)
 	class                                                        RowboatClass;                                      // 0x3d0(0x8)
-	char                                                         pad0x50_TXXGE[0x50];                               // 0x3d8(0x50)
+	char                                                         pad0x50_15YW5[0x50];                               // 0x3d8(0x50)
 };
 
 

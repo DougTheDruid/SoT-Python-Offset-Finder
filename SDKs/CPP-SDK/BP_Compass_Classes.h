@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x888] - InheritedSize[0x880]
+// Size 0x8 (Full Size[0x8e8] - InheritedSize[0x8e0]
 class BP_Compass_C: public Compass
 {
 public:
-	Class InventoryItemComponent*                                None;                                              // 0x880(0x8)
+	Class InventoryItemComponent*                                InventoryItem;                                     // 0x8e0(0x8)
 };
 
 

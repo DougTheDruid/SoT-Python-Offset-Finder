@@ -7,6 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10
+struct ActorsOfInterestList
+{
+public:
+	TArray<class Actor*>                                         Actors;                                            // 0x0(0x10)
+};
+
+
+// Size 0x10
 struct ActorOfInterestUnregisteredEvent
 {
 public:

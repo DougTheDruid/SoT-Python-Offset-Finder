@@ -60,7 +60,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_YEUOZ[0x3]
+  - Name: pad0x3_8NOKH[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
@@ -83,7 +83,7 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_X8OC3[0x3]
+  - Name: pad0x3_HHYEF[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -91,7 +91,7 @@ ExistingServerCrewModel:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_AB0ZA[0x4]
+  - Name: pad0x4_AGPII[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -104,6 +104,47 @@ ExistingServerCrewModel:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x38'
+GameEventAvailabilityModel:
+  Attributes:
+  - Name: MainEvents
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<struct MainEvents>
+  - Name: SubEvents
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<struct SubEvents>
+  ClassSize: '0x20'
+GameMainEventTypeModel:
+  Attributes:
+  - Name: EventName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ExcludedEvents
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<Str ExcludedEvents>
+  - Name: Status
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  - Name: ShipSizeLimit
+    Offset: '0x21'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
+GameSubEventTypeModel:
+  Attributes:
+  - Name: EventName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: MaxCount
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
 OptionalPlayModeModel:
   Attributes: []
   ClassSize: '0x50'
@@ -144,7 +185,7 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WSYG4[0x4]
+  - Name: pad0x4_X8VGQ[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -160,7 +201,7 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_TIQ61[0x3]
+  - Name: pad0x3_6UB9T[0x3]
     Offset: '0x71'
     Size: '0x3'
     Type: char
@@ -180,19 +221,23 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BR4JQ[0x3]
+  - Name: pad0x3_3CN19[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
-  - Name: TimeWaitingForMatch
+  - Name: RequestedGameEvent
     Offset: '0x90'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: TimeWaitingForMatch
+    Offset: '0xa0'
     Size: '0x8'
     Type: Struct Timespan
   - Name: ForcedStamp
-    Offset: '0x98'
+    Offset: '0xa8'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0xa8'
+  ClassSize: '0xb8'
 ServerCrewRequestModel:
   Attributes:
   - Name: ServerId
@@ -255,14 +300,18 @@ ServerCrewRequestModel:
     Offset: '0xb0'
     Size: '0x30'
     Type: Struct ServerContendedModel
-  ClassSize: '0xe0'
+  - Name: GameEvents
+    Offset: '0xe0'
+    Size: '0x20'
+    Type: Struct GameEventAvailabilityModel
+  ClassSize: '0x100'
 ServerCrewResponseModel:
   Attributes:
   - Name: ResultCode
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_GCNUN[0x7]
+  - Name: pad0x7_LQC0R[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

@@ -14,14 +14,14 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x880] - InheritedSize[0x850]
+// Size 0x30 (Full Size[0x8c0] - InheritedSize[0x890]
 class CustomMap: public RenderToTextureMapBase
 {
 public:
-	char                                                         pad0x8_8N4F2[0x8];                                 // 0x850(0x8)
-	Class Font*                                                  Font;                                              // 0x858(0x8)
-	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x860(0x10)
-	char                                                         pad0x10_WRJMD[0x10];                               // 0x870(0x10)
+	char                                                         pad0x8_ONP07[0x8];                                 // 0x890(0x8)
+	Class Font*                                                  Font;                                              // 0x898(0x8)
+	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x8a0(0x10)
+	char                                                         pad0x10_FB4WK[0x10];                               // 0x8b0(0x10)
 };
 
 
@@ -56,7 +56,7 @@ class CustomMapDataTypePositional: public CustomMapDataTypeBase
 public:
 	Struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
-	char                                                         pad0x4_JMAU8[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_PNUEV[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -66,7 +66,7 @@ class CustomMapDisplayObjectPositional: public CustomMapDisplayObjectBase
 public:
 	Struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
-	char                                                         pad0x4_GXDF7[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_F59Y0[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -77,9 +77,9 @@ public:
 	Struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
-	char                                                         pad0x3_6ZU4M[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_VBCK5[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
-	char                                                         pad0x4c_1S4XP[0x4c];                               // 0x8c(0x4c)
+	char                                                         pad0x4c_7SAXJ[0x4c];                               // 0x8c(0x4c)
 };
 
 
@@ -90,9 +90,9 @@ public:
 	Struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
-	char                                                         pad0x3_SQTZY[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_O5BCU[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
-	char                                                         pad0x4_Z8433[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_70RGS[0x4];                                 // 0x8c(0x4)
 };
 
 

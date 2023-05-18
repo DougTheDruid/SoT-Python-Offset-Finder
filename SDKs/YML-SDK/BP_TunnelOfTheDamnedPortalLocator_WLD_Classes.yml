@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_TunnelOfTheDamnedPortalLocator_WLD_C:
   Attributes:
-  - Name: None
+  - Name: SeaRockBounds
     Offset: '0x400'
     Size: '0x8'
     Type: Class SphereComponent*
-  - Name: None
+  - Name: SignalAnchor
     Offset: '0x408'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CalmWater
     Offset: '0x410'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Visuals
     Offset: '0x418'
     Size: '0x8'
     Type: Class ChildActorComponent*

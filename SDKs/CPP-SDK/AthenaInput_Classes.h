@@ -34,4 +34,11 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
+class NPCReceivesInputIndicatorComponent: public ActorComponent
+{
+public:
+};
+
+
 }

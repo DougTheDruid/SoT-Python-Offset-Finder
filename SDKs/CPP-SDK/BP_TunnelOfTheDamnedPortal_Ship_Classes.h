@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x660] - InheritedSize[0x650]
+// Size 0x10 (Full Size[0x670] - InheritedSize[0x660]
 class BP_TunnelOfTheDamnedPortal_Ship_C: public TunnelOfTheDamnedPortal
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x650(0x8)
-	Class SynchedMusicZoneComponent*                             None;                                              // 0x658(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x660(0x8)
+	Class SynchedMusicZoneComponent*                             SynchedMusicZone;                                  // 0x668(0x8)
 };
 
 

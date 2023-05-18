@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x868] - InheritedSize[0x860]
+// Size 0x8 (Full Size[0x8a8] - InheritedSize[0x8a0]
 class BP_Shovel_C: public Shovel
 {
 public:
-	Class UsableWieldableComponent*                              None;                                              // 0x860(0x8)
+	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x8a0(0x8)
 };
 
 

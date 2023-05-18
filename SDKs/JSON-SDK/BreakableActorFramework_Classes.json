@@ -1,9 +1,9 @@
 {
   "BreakableActorAudioComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x1a8",
+    "FullSize": "0x1c8",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xe0",
+    "ClassSize": "0x100",
     "Attributes": [
       {
         "Name": "UseParentEmitter",
@@ -12,7 +12,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x7_SLSUJ[0x7]",
+        "Name": "pad0x7_YIBIT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc9"
@@ -48,21 +48,21 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0xb0_D2HR5[0xb0]",
+        "Name": "pad0xd0_2IT71[0xd0]",
         "Type": "char",
-        "Size": "0xb0",
+        "Size": "0xd0",
         "Offset": "0xf8"
       }
     ]
   },
   "BreakableActorBase": {
     "Super": "Actor",
-    "FullSize": "0x548",
+    "FullSize": "0x558",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x180",
+    "ClassSize": "0x190",
     "Attributes": [
       {
-        "Name": "pad0x20_879UJ[0x20]",
+        "Name": "pad0x20_YKF5N[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
@@ -74,7 +74,7 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x4_DF4K2[0x4]",
+        "Name": "pad0x4_4EG1Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3ec"
@@ -116,28 +116,28 @@
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x108_1OWJM[0x108]",
+        "Name": "pad0x118_0EXEQ[0x118]",
         "Type": "char",
-        "Size": "0x108",
+        "Size": "0x118",
         "Offset": "0x440"
       }
     ]
   },
   "BreakableSarcophagus": {
     "Super": "BreakableActorBase",
-    "FullSize": "0x548",
-    "InheritedSize": "0x548",
+    "FullSize": "0x558",
+    "InheritedSize": "0x558",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "BreakableActorDynamicMaterialComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x1f0",
+    "FullSize": "0x220",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x128",
+    "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x4_L1P4B[0x4]",
+        "Name": "pad0x4_LVDWB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc8"
@@ -173,7 +173,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x4_60IPC[0x4]",
+        "Name": "pad0x4_CO4XU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xf4"
@@ -197,25 +197,25 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0xd8_A7P3U[0xd8]",
+        "Name": "pad0x108_12L6U[0x108]",
         "Type": "char",
-        "Size": "0xd8",
+        "Size": "0x108",
         "Offset": "0x118"
       }
     ]
   },
   "BreakableActorItemSpawnComponent": {
     "Super": "ItemSpawnComponent",
-    "FullSize": "0x4b0",
+    "FullSize": "0x4c0",
     "InheritedSize": "0x440",
-    "ClassSize": "0x70",
+    "ClassSize": "0x80",
     "Attributes": []
   },
   "BreakableActorVfxComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x1a0",
+    "FullSize": "0x1c0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xd8",
+    "ClassSize": "0xf8",
     "Attributes": [
       {
         "Name": "VFXTintColour",
@@ -224,7 +224,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_U5TF9[0x4]",
+        "Name": "pad0x4_TBJZC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -284,9 +284,9 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x98_0W3EM[0x98]",
+        "Name": "pad0xb8_FWUXX[0xb8]",
         "Type": "char",
-        "Size": "0x98",
+        "Size": "0xb8",
         "Offset": "0x108"
       }
     ]

@@ -25,14 +25,14 @@ public:
 };
 
 
-// Size 0x248 (Full Size[0x610] - InheritedSize[0x3c8]
+// Size 0x258 (Full Size[0x620] - InheritedSize[0x3c8]
 class WorldEdgeItemService: public Actor
 {
 public:
-	char                                                         pad0x8_BYRMK[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_MZN56[0x8];                                 // 0x3c8(0x8)
 	Class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3d0(0x8)
 	Struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
-	char                                                         pad0xc8_ETX8J[0xc8];                               // 0x548(0xc8)
+	char                                                         pad0xd8_CE9F5[0xd8];                               // 0x548(0xd8)
 };
 
 

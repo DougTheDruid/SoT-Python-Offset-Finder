@@ -18,7 +18,7 @@ class AudioReportingComponent: public ActorComponent
 {
 public:
 	Class PlayerController*                                      CachedOwningController;                            // 0xc8(0x8)
-	char                                                         pad0x170_21PDL[0x170];                             // 0xd0(0x170)
+	char                                                         pad0x170_FOX9M[0x170];                             // 0xd0(0x170)
 };
 
 
@@ -45,13 +45,15 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class AudioReportingSettings: public DataAsset
 {
 public:
 	int                                                          MaxReactionCount;                                  // 0x28(0x4)
 	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
-	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x30(0x10)
+	float                                                        AttenuationFilterScaler;                           // 0x30(0x4)
+	char                                                         pad0x4_4LM4X[0x4];                                 // 0x34(0x4)
+	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x38(0x10)
 };
 
 

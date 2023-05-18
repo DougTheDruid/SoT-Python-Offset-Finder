@@ -1,69 +1,69 @@
 {
   "BP_Prompt_TavernBoard_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x231",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x119",
+    "FullSize": "0x271",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x139",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12a_AHPAA[0x12a]",
+        "Name": "pad0x4c_7UHJS[0x4c]",
         "Type": "char",
-        "Size": "0x12a",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "WieldableItemUseEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "TavernBoardPromptAccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x168"
+        "Offset": "0x198"
       },
       {
         "Name": "Prompt",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
         "Name": "InRangeOfTavernBoard",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d8"
+        "Offset": "0x208"
       },
       {
-        "Name": "pad0x7_0Q1OV[0x7]",
+        "Name": "pad0x7_FA25G[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x1d9"
+        "Offset": "0x209"
       },
       {
         "Name": "ApproachedTavernBoardHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x1e0"
+        "Size": "0x58",
+        "Offset": "0x210"
       },
       {
         "Name": "CharacterDispatcher",
         "Type": "Struct ObjectMessagingDispatcherHandle",
         "Size": "0x8",
-        "Offset": "0x228"
+        "Offset": "0x268"
       },
       {
         "Name": "HasShown",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x230"
+        "Offset": "0x270"
       }
     ]
   },

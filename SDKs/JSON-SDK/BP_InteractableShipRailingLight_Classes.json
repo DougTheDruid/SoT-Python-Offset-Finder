@@ -1,111 +1,111 @@
 {
   "BP_InteractableShipRailingLight_C": {
     "Super": "ShipInteractableLight",
-    "FullSize": "0x749",
-    "InheritedSize": "0x6d8",
+    "FullSize": "0x779",
+    "InheritedSize": "0x708",
     "ClassSize": "0x71",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x6d8"
+        "Offset": "0x708"
       },
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x6e0"
+        "Offset": "0x710"
       },
       {
         "Name": "LanternGlow",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6e8"
+        "Offset": "0x718"
       },
       {
         "Name": "Light",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x720"
       },
       {
         "Name": "DynamicGlowMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x728"
       },
       {
         "Name": "GlowBrightnessParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x730"
       },
       {
         "Name": "GlowRandomSeedParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x738"
       },
       {
         "Name": "GlowIntensityOn",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x710"
+        "Offset": "0x740"
       },
       {
         "Name": "GlowIntensityOff",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x714"
+        "Offset": "0x744"
       },
       {
         "Name": "UsesGlow",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x718"
+        "Offset": "0x748"
       },
       {
-        "Name": "pad0x7_PFQB9[0x7]",
+        "Name": "pad0x7_P69HP[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x719"
+        "Offset": "0x749"
       },
       {
         "Name": "DynamicMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x720"
+        "Offset": "0x750"
       },
       {
         "Name": "FlameParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x728"
+        "Offset": "0x758"
       },
       {
         "Name": "FlameIntensityOn",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x730"
+        "Offset": "0x760"
       },
       {
         "Name": "FlameIntensityOff",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x734"
+        "Offset": "0x764"
       },
       {
         "Name": "DefaultGlowColour",
         "Type": "Struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x738"
+        "Offset": "0x768"
       },
       {
         "Name": "CurrentFlameOfFateType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x748"
+        "Offset": "0x778"
       }
     ]
   },

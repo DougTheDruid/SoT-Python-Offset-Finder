@@ -6,15 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20 (Full Size[0x118] - InheritedSize[0xf8]
+// Size 0x20 (Full Size[0x138] - InheritedSize[0x118]
 class BP_PromptCoordinator_Base_C: public BasePromptCoordinator
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xf8(0x8)
-	char                                                         pad0x14b_OBBA5[0x14b];                             // 0x100(0x14b)
-	bool                                                         IsCompleted;                                       // 0x100(0x1)
-	char                                                         pad0x7_26LIO[0x7];                                 // 0x101(0x7)
-	char                                                         pad0x10_IEYAY[0x10];                               // 0x108(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0x6c_DLW7R[0x6c];                               // 0x120(0x6c)
+	bool                                                         IsCompleted;                                       // 0x120(0x1)
+	char                                                         pad0x7_3GFZI[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x10_UWMY4[0x10];                               // 0x128(0x10)
 };
 
 

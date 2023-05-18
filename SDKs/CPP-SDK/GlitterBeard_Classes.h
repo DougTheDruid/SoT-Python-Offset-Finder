@@ -13,13 +13,13 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0x160] - InheritedSize[0xc8]
+// Size 0xa8 (Full Size[0x170] - InheritedSize[0xc8]
 class GlitterBeardFinaleCoordinatorComponent: public ActorComponent
 {
 public:
 	Class WwiseEvent*                                            AudioEventToSynchronise;                           // 0xc8(0x8)
 	Struct FinaleReplicationState                                ReplicationState;                                  // 0xd0(0x10)
-	char                                                         pad0x80_5Y2C5[0x80];                               // 0xe0(0x80)
+	char                                                         pad0x90_02HJQ[0x90];                               // 0xe0(0x90)
 };
 
 
@@ -35,11 +35,11 @@ class GlitterBeardLanternSoundEffect: public EffectBlendObjectBase
 {
 public:
 	float                                                        TriggerThreshold;                                  // 0x38(0x4)
-	char                                                         pad0x4_1ENHY[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_EVXR1[0x4];                                 // 0x3c(0x4)
 	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x40(0x8)
 	Class WwiseEvent*                                            WwiseEvent;                                        // 0x48(0x8)
 	Struct WwiseEmitter                                          Emitter;                                           // 0x50(0x20)
-	char                                                         pad0x10_1KE75[0x10];                               // 0x70(0x10)
+	char                                                         pad0x10_6O75H[0x10];                               // 0x70(0x10)
 };
 
 
@@ -65,15 +65,15 @@ public:
 };
 
 
-// Size 0x308 (Full Size[0x6d0] - InheritedSize[0x3c8]
+// Size 0x328 (Full Size[0x6f0] - InheritedSize[0x3c8]
 class GlitterBeardTree: public Actor
 {
 public:
-	char                                                         pad0x28_PLMSV[0x28];                               // 0x3c8(0x28)
+	char                                                         pad0x28_RXYYL[0x28];                               // 0x3c8(0x28)
 	Class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x3f0(0x8)
 	Class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x3f8(0x8)
 	float                                                        LanternLightDelay;                                 // 0x400(0x4)
-	char                                                         pad0x4_5UOC6[0x4];                                 // 0x404(0x4)
+	char                                                         pad0x4_227HA[0x4];                                 // 0x404(0x4)
 	Class GlitterBeardUnlockVFXCoordinatorComponent*             UnlockVFXCoordinatorComponent;                     // 0x408(0x8)
 	Class GlitterBeardTelemetryComponent*                        TelemetryComponent;                                // 0x410(0x8)
 	class                                                        VocalShanty;                                       // 0x418(0x8)
@@ -83,10 +83,10 @@ public:
 	Class GlitterBeardFinaleCoordinatorComponent*                FinaleCoordinator;                                 // 0x430(0x8)
 	Class LandmarkReactionTriggerComponent*                      LandmarkReactionTrigger;                           // 0x438(0x8)
 	float                                                        DistanceFromTreeToPauseAISpawn;                    // 0x440(0x4)
-	char                                                         pad0x234_8OVVW[0x234];                             // 0x444(0x234)
-	Class SlidingDoor*                                           HideoutDoor;                                       // 0x678(0x8)
-	Struct WwiseEmitter                                          SoundEmitter;                                      // 0x680(0x20)
-	char                                                         pad0x30_W8P3B[0x30];                               // 0x6a0(0x30)
+	char                                                         pad0x254_VN00L[0x254];                             // 0x444(0x254)
+	Class SlidingDoor*                                           HideoutDoor;                                       // 0x698(0x8)
+	Struct WwiseEmitter                                          SoundEmitter;                                      // 0x6a0(0x20)
+	char                                                         pad0x30_LR055[0x30];                               // 0x6c0(0x30)
 };
 
 
@@ -95,9 +95,9 @@ class GlitterBeardTreeVisualFeedbackComponent: public ActorComponent
 {
 public:
 	TArray<struct FeedbackActions>                               FeedbackActions;                                   // 0xc8(0x10)
-	char                                                         pad0x10_OSD1G[0x10];                               // 0xd8(0x10)
+	char                                                         pad0x10_0G13K[0x10];                               // 0xd8(0x10)
 	TArray<Byte CurrentStates>                                   CurrentStates;                                     // 0xe8(0x10)
-	char                                                         pad0x20_0I8T2[0x20];                               // 0xf8(0x20)
+	char                                                         pad0x20_RBLZE[0x20];                               // 0xf8(0x20)
 };
 
 
@@ -108,7 +108,7 @@ public:
 	Struct ActorComponentSelector                                TreeActor;                                         // 0xc8(0x10)
 	Class MaterialInstanceDynamic*                               TreeMaterialInstanceDynamic;                       // 0xd8(0x8)
 	float                                                        TreeBlendTime;                                     // 0xe0(0x4)
-	char                                                         pad0xc_NQAG3[0xc];                                 // 0xe4(0xc)
+	char                                                         pad0xc_8IQ56[0xc];                                 // 0xe4(0xc)
 };
 
 

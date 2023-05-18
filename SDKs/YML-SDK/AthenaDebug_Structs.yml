@@ -10,7 +10,7 @@ DrawDebugItemBox:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_X6XN7[0x3]
+  - Name: pad0x3_UWQGO[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -22,7 +22,7 @@ DrawDebugItemBox:
     Offset: '0x18'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0xc_LYUUV[0xc]
+  - Name: pad0xc_J1PV1[0xc]
     Offset: '0x24'
     Size: '0xc'
     Type: char
@@ -45,7 +45,7 @@ DrawDebugItemCapsule:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LXS7K[0x3]
+  - Name: pad0x3_SR9K5[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -80,7 +80,7 @@ DrawDebugItemLine:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_RJYY3[0x3]
+  - Name: pad0x3_OVNJN[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -111,7 +111,7 @@ DrawDebugItemMessage:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_QN3XX[0x7]
+  - Name: pad0x7_SI5FY[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -134,7 +134,7 @@ DrawDebugItemSector:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IPC9N[0x3]
+  - Name: pad0x3_PM5W9[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -185,7 +185,7 @@ DrawDebugItemSphere:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6VBSM[0x3]
+  - Name: pad0x3_BZGEN[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -212,7 +212,7 @@ DrawDebugItemString:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VIT8Q[0x7]
+  - Name: pad0x7_00KSH[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

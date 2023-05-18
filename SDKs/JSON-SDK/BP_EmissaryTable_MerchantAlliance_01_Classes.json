@@ -1,96 +1,96 @@
 {
   "BP_EmissaryTable_MerchantAlliance_01_C": {
-    "Super": "None",
+    "Super": "BP_EmissaryTable_01_C",
     "FullSize": "0x6b0",
     "InheritedSize": "0x638",
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "PointLight1",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
-        "Name": "None",
+        "Name": "PointLight",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem3",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem2",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem1",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x678"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x680"
       },
       {
-        "Name": "None",
+        "Name": "EmissaryShipAffiliationTracker",
         "Type": "Class EmissaryShipAffiliationTrackerComponent*",
         "Size": "0x8",
         "Offset": "0x688"
       },
       {
-        "Name": "None",
+        "Name": "bld_shop_wood_box_03_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
-        "Name": "None",
+        "Name": "bld_shop_wood_box_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "None",
+        "Name": "bld_emissary_table_dressing_mrh_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
       {
-        "Name": "None",
+        "Name": "con_cover_page_mrh_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6a8"

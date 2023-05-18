@@ -7,11 +7,11 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
-struct GiveEmergentVoyageData
+struct GiveEmergentVoyageGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	char                                                         pad0x4_W8F4N[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_1035V[0x4];                                 // 0x4(0x4)
 	Struct FString                                               VoyageAssetPath;                                   // 0x8(0x10)
 };
 

@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_TunnelOfTheDamnedPortalLocator_WLD_C: public PortalLocatorActor
 {
 public:
-	Class SphereComponent*                                       None;                                              // 0x400(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x408(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x410(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x418(0x8)
+	Class SphereComponent*                                       SeaRockBounds;                                     // 0x400(0x8)
+	Class ChildActorComponent*                                   SignalAnchor;                                      // 0x408(0x8)
+	Class ChildActorComponent*                                   CalmWater;                                         // 0x410(0x8)
+	Class ChildActorComponent*                                   Visuals;                                           // 0x418(0x8)
 };
 
 

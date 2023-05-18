@@ -31,12 +31,12 @@ public:
 };
 
 
-// Size 0x70
+// Size 0x78
 struct TextEntryWithLayout
 {
 public:
 	Struct FText                                                 TextEntry;                                         // 0x0(0x38)
-	Struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x38)
+	Struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
 };
 
 

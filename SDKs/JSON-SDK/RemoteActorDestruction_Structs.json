@@ -1,5 +1,5 @@
 {
-  "DestroyActorData": {
+  "DestroyActorGameServerRequestModel": {
     "ClassSize": "0x4",
     "Attributes": [
       {
@@ -10,7 +10,7 @@
       }
     ]
   },
-  "DestroyAllExistingActorsByClassData": {
+  "DestroyAllExistingActorsByClassGameServerRequestModel": {
     "ClassSize": "0x10",
     "Attributes": [
       {

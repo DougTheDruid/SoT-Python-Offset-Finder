@@ -2,27 +2,27 @@
 # https://github.com/DougTheDruid
 BP_Soveriegn_LiftMechanism_Toggle_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x570'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Rope Anchor Point
     Offset: '0x578'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: StaticMesh4
     Offset: '0x580'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: BP_RopeRendererComponent
     Offset: '0x588'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_RopeRendererComponent_C*
+  - Name: Rope Source
     Offset: '0x590'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: IntentCombiner
     Offset: '0x598'
     Size: '0x8'
     Type: Class IntentCombinerComponent*

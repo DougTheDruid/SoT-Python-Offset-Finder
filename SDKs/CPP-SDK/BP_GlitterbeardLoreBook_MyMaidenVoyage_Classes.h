@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x528] - InheritedSize[0x510]
+// Size 0x18 (Full Size[0x538] - InheritedSize[0x520]
 class BP_GlitterbeardLoreBook_MyMaidenVoyage_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    None;                                              // 0x510(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x518(0x8)
-	Class SceneComponent*                                        None;                                              // 0x520(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x520(0x8)
+	Class StaticMeshComponent*                                   Books;                                             // 0x528(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x530(0x8)
 };
 
 

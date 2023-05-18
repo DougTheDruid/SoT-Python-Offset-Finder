@@ -1,75 +1,75 @@
 {
   "BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x1e8",
-    "InheritedSize": "0x118",
-    "ClassSize": "0xd0",
+    "FullSize": "0x218",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_7JLZS[0x12b]",
+        "Name": "pad0x4c_U4U78[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_CrewEnteredTunnelOfTheDamnedPortalProximity",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "Prompt_BootyWillBeLost",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x168"
+        "Offset": "0x198"
       },
       {
         "Name": "PromptDisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d0"
+        "Offset": "0x200"
       },
       {
         "Name": "CrewInRadius",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d4"
+        "Offset": "0x204"
       },
       {
         "Name": "PromptOnCooldown",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1d5"
+        "Offset": "0x205"
       },
       {
-        "Name": "pad0x2_8KTOD[0x2]",
+        "Name": "pad0x2_PGIFA[0x2]",
         "Type": "char",
         "Size": "0x2",
-        "Offset": "0x1d6"
+        "Offset": "0x206"
       },
       {
         "Name": "PromptDisplayCooldown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d8"
+        "Offset": "0x208"
       },
       {
-        "Name": "pad0x4_A5OJ5[0x4]",
+        "Name": "pad0x4_Q1JC1[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x1dc"
+        "Offset": "0x20c"
       },
       {
         "Name": "LootFilterDataAsset",
         "Type": "Class TunnelsOfTheDamnedLootFilterDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1e0"
+        "Offset": "0x210"
       }
     ]
   },

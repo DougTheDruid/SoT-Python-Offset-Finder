@@ -6,23 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x68 (Full Size[0xaa0] - InheritedSize[0xa38]
-class BP_SmallShip_Mast_C: public None
+// Size 0x68 (Full Size[0xad0] - InheritedSize[0xa68]
+class BP_SmallShip_Mast_C: public BP_Mast_C
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0xa38(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0xa40(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa48(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa50(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0xa58(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0xa60(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa68(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xa70(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0xa68(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0xa70(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0xa78(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0xa80(0x8)
 	Class ChildActorComponent*                                   None;                                              // 0xa88(0x8)
 	Class ChildActorComponent*                                   None;                                              // 0xa90(0x8)
 	Class StaticMeshComponent*                                   None;                                              // 0xa98(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xaa0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xaa8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xab0(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0xab8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0xac0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xac8(0x8)
 };
 
 

@@ -1,57 +1,57 @@
 {
   "BP_Prompt_HuntersCallAtTheSovereign_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x1e0",
-    "InheritedSize": "0x118",
-    "ClassSize": "0xc8",
+    "FullSize": "0x210",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_MK5IO[0x12b]",
+        "Name": "pad0x4c_1FDD4[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "State_ItemWielded",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
-        "Name": "pad0x7_IEHH9[0x7]",
+        "Name": "pad0x7_ZHU4R[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x121"
+        "Offset": "0x141"
       },
       {
         "Name": "Handle_OnWield",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x128"
+        "Size": "0x58",
+        "Offset": "0x148"
       },
       {
         "Name": "CaptainedSession",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
-        "Name": "pad0x7_DTIEP[0x7]",
+        "Name": "pad0x7_CTTDT[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x171"
+        "Offset": "0x1a1"
       },
       {
         "Name": "Prompt",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x178"
+        "Offset": "0x1a8"
       }
     ]
   },

@@ -1,204 +1,204 @@
 {
   "BP_FactionEmissaryTable_Reapers_C": {
-    "Super": "None",
+    "Super": "BP_EmissaryTable_01_C",
     "FullSize": "0x740",
     "InheritedSize": "0x638",
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
-        "Name": "None",
+        "Name": "cap_desk_model_fac_shield_reaper_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
-        "Name": "None",
+        "Name": "PointLight2",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
-        "Name": "None",
+        "Name": "PointLight1",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "None",
+        "Name": "PointLight",
         "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem6",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem5",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem4",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem3",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x678"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem2",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x680"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem1",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x688"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh12",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh11",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh10",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6a8"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh9",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh8",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6b8"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh7",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6c0"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh6",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6c8"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh5",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6d0"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "None",
+        "Name": "Hourglass",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
-        "Name": "None",
+        "Name": "HourglassStand",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
-        "Name": "None",
+        "Name": "FactionVote",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x700"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x710"
       },
       {
-        "Name": "None",
+        "Name": "cmp_papers_reaper_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x718"
       },
       {
-        "Name": "None",
+        "Name": "cmp_papers_reaper_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x720"
       },
       {
-        "Name": "None",
+        "Name": "EmissaryShipAffiliationTracker",
         "Type": "Class EmissaryShipAffiliationTrackerComponent*",
         "Size": "0x8",
         "Offset": "0x728"
       },
       {
-        "Name": "None",
+        "Name": "NewTableMesh",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x730"
       },
       {
-        "Name": "None",
+        "Name": "HourglassGlassMaterial",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x738"

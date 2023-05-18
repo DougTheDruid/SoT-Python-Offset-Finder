@@ -1,117 +1,117 @@
 {
   "BP_PromptCoordinator_BootyStorage_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x400",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x2e8",
+    "FullSize": "0x490",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x358",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_4OE0T[0x12b]",
+        "Name": "pad0x4c_0YZFT[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "ShowLootPrompt",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
         "Name": "ShowMermaidPrompt",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x121"
+        "Offset": "0x141"
       },
       {
         "Name": "HasUsedStatue",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x122"
+        "Offset": "0x142"
       },
       {
         "Name": "HasRetrievedLoot",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x123"
+        "Offset": "0x143"
       },
       {
-        "Name": "pad0x4_5Q6NW[0x4]",
+        "Name": "pad0x4_K2Z6E[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x124"
+        "Offset": "0x144"
       },
       {
         "Name": "MermaidPrompt",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x128"
+        "Offset": "0x148"
       },
       {
         "Name": "LootPrompt",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x190"
+        "Offset": "0x1b0"
       },
       {
         "Name": "CrewStorageChangedHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x1f8"
+        "Size": "0x58",
+        "Offset": "0x218"
       },
       {
         "Name": "CrewStorageFullHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x240"
+        "Size": "0x58",
+        "Offset": "0x270"
       },
       {
         "Name": "ItemsRetrievedHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x288"
+        "Size": "0x58",
+        "Offset": "0x2c8"
       },
       {
         "Name": "RetrieveActorHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x2d0"
+        "Size": "0x58",
+        "Offset": "0x320"
       },
       {
         "Name": "WieldedEventHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x318"
+        "Size": "0x58",
+        "Offset": "0x378"
       },
       {
         "Name": "PromptKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x360"
+        "Offset": "0x3d0"
       },
       {
         "Name": "CurrentlyWieldedItem",
         "Type": "Class WieldableItem*",
         "Size": "0x8",
-        "Offset": "0x368"
+        "Offset": "0x3d8"
       },
       {
         "Name": "StowedEventHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x370"
+        "Size": "0x58",
+        "Offset": "0x3e0"
       },
       {
         "Name": "RetrieveActorDespawnHandle",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x3b8"
+        "Size": "0x58",
+        "Offset": "0x438"
       }
     ]
   },

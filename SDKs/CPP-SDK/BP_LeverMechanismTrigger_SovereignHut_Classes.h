@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x580] - InheritedSize[0x568]
+// Size 0x18 (Full Size[0x610] - InheritedSize[0x5f8]
 class BP_LeverMechanismTrigger_SovereignHut_C: public SwitchMechanismTrigger
 {
 public:
-	Class InteractableComponent*                                 None;                                              // 0x568(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x570(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x578(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x5f8(0x8)
+	Class StaticMeshComponent*                                   LeverMesh;                                         // 0x600(0x8)
+	Class StaticMeshComponent*                                   BaseMesh;                                          // 0x608(0x8)
 };
 
 

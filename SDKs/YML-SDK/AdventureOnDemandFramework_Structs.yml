@@ -3,17 +3,50 @@
 AdventureOnDemandServiceCrewEntry:
   Attributes:
   - Name: Participants
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
-  ClassSize: '0x70'
+  - Name: TunnelDesc
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class TunnelDesc*
+  ClassSize: '0x88'
+AdventureOnDemandVoyageSelectionVoyageProposal:
+  Attributes:
+  - Name: Prerequisites
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class InteractionPrerequisiteBase*>
+  - Name: Proposal
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x18'
+AdventureOnDemandVoyageSelectionVoyageProposalGroup:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Prerequisites
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<class InteractionPrerequisiteBase*>
+  - Name: Proposals
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<struct Proposals>
+  ClassSize: '0x28'
+AdventureOnDemandVoyageSurfaceTaleFinished:
+  Attributes: []
+  ClassSize: '0x1'
 ExtraSpawnDistanceByIslandType:
   Attributes:
   - Name: IslandType
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_A1ESV[0x3]
+  - Name: pad0x3_T7EIH[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -33,13 +66,24 @@ ExtraSpawnDistanceFromIsland:
     Size: '0x10'
     Type: TArray<struct DistanceByIslandType>
   ClassSize: '0x18'
+VoyageHintForQuestTypeEntry:
+  Attributes:
+  - Name: QuestType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: HintType
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x2'
 VoyageHintPopupDescEntry:
   Attributes:
   - Name: QuestType
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_IROYW[0x7]
+  - Name: pad0x7_IB09F[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

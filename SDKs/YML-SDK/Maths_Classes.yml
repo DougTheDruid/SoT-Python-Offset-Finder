@@ -60,6 +60,12 @@ OrientedPointBlueprintFunctionLibrary:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
+PendulumBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 PoissonDiscSampling:
   Attributes: []
   ClassSize: '0x0'

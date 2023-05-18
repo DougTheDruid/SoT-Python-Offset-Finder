@@ -3,74 +3,74 @@
 BP_InteractableShipRailingLight_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x6d8'
+    Offset: '0x708'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: Interactable
-    Offset: '0x6e0'
+    Offset: '0x710'
     Size: '0x8'
     Type: Class InteractableComponent*
   - Name: LanternGlow
-    Offset: '0x6e8'
+    Offset: '0x718'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Light
-    Offset: '0x6f0'
+    Offset: '0x720'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: DynamicGlowMaterial
-    Offset: '0x6f8'
+    Offset: '0x728'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: GlowBrightnessParameterName
-    Offset: '0x700'
+    Offset: '0x730'
     Size: '0x8'
     Type: struct FName
   - Name: GlowRandomSeedParameterName
-    Offset: '0x708'
+    Offset: '0x738'
     Size: '0x8'
     Type: struct FName
   - Name: GlowIntensityOn
-    Offset: '0x710'
+    Offset: '0x740'
     Size: '0x4'
     Type: float
   - Name: GlowIntensityOff
-    Offset: '0x714'
+    Offset: '0x744'
     Size: '0x4'
     Type: float
   - Name: UsesGlow
-    Offset: '0x718'
+    Offset: '0x748'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PFQB9[0x7]
-    Offset: '0x719'
+  - Name: pad0x7_P69HP[0x7]
+    Offset: '0x749'
     Size: '0x7'
     Type: char
   - Name: DynamicMaterial
-    Offset: '0x720'
+    Offset: '0x750'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: FlameParameterName
-    Offset: '0x728'
+    Offset: '0x758'
     Size: '0x8'
     Type: struct FName
   - Name: FlameIntensityOn
-    Offset: '0x730'
+    Offset: '0x760'
     Size: '0x4'
     Type: float
   - Name: FlameIntensityOff
-    Offset: '0x734'
+    Offset: '0x764'
     Size: '0x4'
     Type: float
   - Name: DefaultGlowColour
-    Offset: '0x738'
+    Offset: '0x768'
     Size: '0x10'
     Type: Struct LinearColor
   - Name: CurrentFlameOfFateType
-    Offset: '0x748'
+    Offset: '0x778'
     Size: '0x1'
     Type: byte
   ClassSize: '0x71'
-  FullSize: '0x749'
-  InheritedSize: '0x6d8'
+  FullSize: '0x779'
+  InheritedSize: '0x708'
   Super: ShipInteractableLight

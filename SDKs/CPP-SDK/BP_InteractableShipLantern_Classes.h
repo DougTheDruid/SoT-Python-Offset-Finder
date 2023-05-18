@@ -6,28 +6,28 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x75 (Full Size[0x74d] - InheritedSize[0x6d8]
+// Size 0x75 (Full Size[0x77d] - InheritedSize[0x708]
 class BP_InteractableShipLantern_C: public ShipInteractableLight
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x6d8(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x6e0(0x8)
-	Class StaticMeshComponent*                                   LanternGlow;                                       // 0x6e8(0x8)
-	Class StaticMeshComponent*                                   Lantern;                                           // 0x6f0(0x8)
-	Class StaticMeshComponent*                                   Hook;                                              // 0x6f8(0x8)
-	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x700(0x8)
-	Class MaterialInstanceDynamic*                               DynamicGlowMaterial;                               // 0x708(0x8)
-	struct FName                                                 FlameParameterName;                                // 0x710(0x8)
-	struct FName                                                 GlowBrightnessParameterName;                       // 0x718(0x8)
-	struct FName                                                 GlowRandomSeedParameterName;                       // 0x720(0x8)
-	float                                                        FlameIntensityOn;                                  // 0x728(0x4)
-	float                                                        FlameIntensityOff;                                 // 0x72c(0x4)
-	float                                                        GlowIntensityOn;                                   // 0x730(0x4)
-	float                                                        GlowIntensityOff;                                  // 0x734(0x4)
-	bool                                                         Uses Glow;                                         // 0x738(0x1)
-	char                                                         pad0x3_579LX[0x3];                                 // 0x739(0x3)
-	Struct LinearColor                                           DefaultGlowColour;                                 // 0x73c(0x10)
-	byte                                                         CurrentFlameOFateType;                             // 0x74c(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x708(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x710(0x8)
+	Class StaticMeshComponent*                                   LanternGlow;                                       // 0x718(0x8)
+	Class StaticMeshComponent*                                   Lantern;                                           // 0x720(0x8)
+	Class StaticMeshComponent*                                   Hook;                                              // 0x728(0x8)
+	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x730(0x8)
+	Class MaterialInstanceDynamic*                               DynamicGlowMaterial;                               // 0x738(0x8)
+	struct FName                                                 FlameParameterName;                                // 0x740(0x8)
+	struct FName                                                 GlowBrightnessParameterName;                       // 0x748(0x8)
+	struct FName                                                 GlowRandomSeedParameterName;                       // 0x750(0x8)
+	float                                                        FlameIntensityOn;                                  // 0x758(0x4)
+	float                                                        FlameIntensityOff;                                 // 0x75c(0x4)
+	float                                                        GlowIntensityOn;                                   // 0x760(0x4)
+	float                                                        GlowIntensityOff;                                  // 0x764(0x4)
+	bool                                                         Uses Glow;                                         // 0x768(0x1)
+	char                                                         pad0x3_3XCNB[0x3];                                 // 0x769(0x3)
+	Struct LinearColor                                           DefaultGlowColour;                                 // 0x76c(0x10)
+	byte                                                         CurrentFlameOFateType;                             // 0x77c(0x1)
 };
 
 

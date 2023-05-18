@@ -6,97 +6,97 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "Timeline_0_CloudVisibility_E720F06846CDD3DCC686A1B40E94C68C",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e0"
       },
       {
-        "Name": "None",
+        "Name": "Timeline_0_PortalSwirlVisibility_E720F06846CDD3DCC686A1B40E94C68C",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e4"
       },
       {
-        "Name": "None",
+        "Name": "Timeline_0_CrackVisibility_E720F06846CDD3DCC686A1B40E94C68C",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e8"
       },
       {
-        "Name": "None",
+        "Name": "Timeline_0_LightScale_E720F06846CDD3DCC686A1B40E94C68C",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3ec"
       },
       {
-        "Name": "None",
+        "Name": "Timeline_0_PortalOpen_E720F06846CDD3DCC686A1B40E94C68C",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f0"
       },
       {
-        "Name": "None",
+        "Name": "Timeline_0__Direction_E720F06846CDD3DCC686A1B40E94C68C",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3f4"
       },
       {
-        "Name": "pad0x3_65D5J[0x3]",
+        "Name": "pad0x3_771T4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3f5"
       },
       {
-        "Name": "None",
+        "Name": "Timeline",
         "Type": "Class TimelineComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "None",
+        "Name": "DynamicMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x400"
       },
       {
-        "Name": "None",
+        "Name": "Lights",
         "Type": "TArray<class PointLightComponent*>",
         "Size": "0x10",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "LightMaxScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
+        "Name": "GlowMaxScale",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x424"
       },
       {
-        "Name": "None",
+        "Name": "PortalMask",
         "Type": "Class Texture2D*",
         "Size": "0x8",
         "Offset": "0x428"

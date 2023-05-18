@@ -25,7 +25,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x10_8EW4I[0x10]",
+        "Name": "pad0x10_Q92U3[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe0"
@@ -37,7 +37,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x10_1GXIQ[0x10]",
+        "Name": "pad0x10_KN363[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x100"
@@ -49,10 +49,56 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x38_Q0BM2[0x38]",
+        "Name": "pad0x38_JH953[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x120"
+      }
+    ]
+  },
+  "EmissaryColourSwatchSettingsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ColourSwatchInformation",
+        "Type": "TArray<struct ColourSwatchInformation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EmissaryLevelSettingsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "EmissaryLevelData",
+        "Type": "TArray<struct EmissaryLevelData>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "BoostMultiplers",
+        "Type": "Struct EmissaryPointBoostMultipliers",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DefaultEmissaryFlagAssetReferences",
+        "Type": "Struct EmissaryFlagMeshReferences",
+        "Size": "0x20",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x8_K9557[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x60"
       }
     ]
   },
@@ -84,7 +130,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_3ZENI[0x8]",
+        "Name": "pad0x8_76JHM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x728"
@@ -114,7 +160,7 @@
         "Offset": "0x768"
       },
       {
-        "Name": "pad0x7_SN86C[0x7]",
+        "Name": "pad0x7_VYLJT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x769"
@@ -123,10 +169,29 @@
   },
   "EmissaryFlotsamItemSpawnComponent": {
     "Super": "ItemSpawnComponent",
-    "FullSize": "0x4d0",
+    "FullSize": "0x530",
     "InheritedSize": "0x440",
-    "ClassSize": "0x90",
-    "Attributes": []
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "pad0xa8_83PVO[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "GuildSessionEndedFlotsamOffset",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "pad0x3c_BO9RP[0x3c]",
+        "Type": "char",
+        "Size": "0x3c",
+        "Offset": "0x4f4"
+      }
+    ]
   },
   "EmissaryFlotsamTooltipCustomizerComponent": {
     "Super": "ActorComponent",
@@ -135,7 +200,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x10_8UBXR[0x10]",
+        "Name": "pad0x10_5D1DO[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
@@ -159,42 +224,10 @@
         "Offset": "0xda"
       },
       {
-        "Name": "pad0x15_OO4EX[0x15]",
+        "Name": "pad0x15_O8ZK5[0x15]",
         "Type": "char",
         "Size": "0x15",
         "Offset": "0xdb"
-      }
-    ]
-  },
-  "EmissaryLevelSettingsAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "EmissaryLevelData",
-        "Type": "TArray<struct EmissaryLevelData>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "BoostMultiplers",
-        "Type": "Struct EmissaryPointBoostMultipliers",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DefaultEmissaryFlagAssetReferences",
-        "Type": "Struct EmissaryFlagMeshReferences",
-        "Size": "0x20",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x8_IES06[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x60"
       }
     ]
   },
@@ -205,7 +238,7 @@
     "ClassSize": "0x350",
     "Attributes": [
       {
-        "Name": "pad0xb8_C01F9[0xb8]",
+        "Name": "pad0xb8_WG68M[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x3c8"
@@ -223,7 +256,7 @@
         "Offset": "0x488"
       },
       {
-        "Name": "pad0x288_PQD3B[0x288]",
+        "Name": "pad0x288_8F45E[0x288]",
         "Type": "char",
         "Size": "0x288",
         "Offset": "0x490"
@@ -249,7 +282,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_AXUAR[0x7]",
+        "Name": "pad0x7_N07YO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -287,7 +320,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_VJ05Y[0x8]",
+        "Name": "pad0x8_G2BEN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -299,7 +332,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_K3QQC[0x7]",
+        "Name": "pad0x7_300RJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -311,7 +344,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x10_XLKQR[0x10]",
+        "Name": "pad0x10_1X7A5[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe8"
@@ -341,7 +374,7 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x3_NI6R7[0x3]",
+        "Name": "pad0x3_H7ECA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x109"
@@ -353,7 +386,7 @@
         "Offset": "0x10c"
       },
       {
-        "Name": "pad0x4_SGSFL[0x4]",
+        "Name": "pad0x4_LCCTC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x114"
@@ -400,7 +433,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_EDATI[0x4]",
+        "Name": "pad0x4_T9YD9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -450,7 +483,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x1c_O9QPQ[0x1c]",
+        "Name": "pad0x1c_6OM6A[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x334"
@@ -470,7 +503,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x48_4GOA5[0x48]",
+        "Name": "pad0x48_1RFEW[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x38"
@@ -488,7 +521,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x20_RF4R3[0x20]",
+        "Name": "pad0x20_APXLV[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc0"
@@ -506,7 +539,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x20_AWDCY[0x20]",
+        "Name": "pad0x20_ISPBO[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xf8"
@@ -518,7 +551,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x8_GBJSR[0x8]",
+        "Name": "pad0x8_9CTPX[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x120"
@@ -580,7 +613,7 @@
         "Offset": "0x2b0"
       },
       {
-        "Name": "pad0x18_GNDHO[0x18]",
+        "Name": "pad0x18_SKVBK[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x2e8"
@@ -606,7 +639,7 @@
         "Offset": "0x338"
       },
       {
-        "Name": "pad0x18_KA491[0x18]",
+        "Name": "pad0x18_6DA0Z[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x370"
@@ -656,7 +689,7 @@
         "Offset": "0x240"
       },
       {
-        "Name": "pad0x18_2B9EP[0x18]",
+        "Name": "pad0x18_HNXOJ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x278"
@@ -683,7 +716,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_ICFVP[0x7]",
+        "Name": "pad0x7_EVEGH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -701,7 +734,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x97_5640A[0x97]",
+        "Name": "pad0x97_NGP04[0x97]",
         "Type": "char",
         "Size": "0x97",
         "Offset": "0x41"
@@ -740,6 +773,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "IncreasingAGradeWithAnEmissaryConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "IsAnEmissaryStatCondition": {
     "Super": "TargetedStatCondition",
     "FullSize": "0x30",
@@ -766,7 +806,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_3Z2KQ[0x7]",
+        "Name": "pad0x7_E4NMM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"

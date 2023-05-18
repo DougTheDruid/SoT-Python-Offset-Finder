@@ -2,43 +2,43 @@
 # https://github.com/DougTheDruid
 BP_DamageZone_C:
   Attributes:
-  - Name: None
-    Offset: '0x7f0'
+  - Name: UberGraphFrame
+    Offset: '0x820'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0x7f8'
+  - Name: Repair Tag
+    Offset: '0x828'
     Size: '0x8'
     Type: struct FName
-  - Name: None
-    Offset: '0x800'
+  - Name: RepairGroup
+    Offset: '0x830'
     Size: '0x10'
-    Type: Struct None
-  - Name: None
-    Offset: '0x810'
+    Type: Struct BP_InternalDamageGroup
+  - Name: ExternalHitBufferIndex
+    Offset: '0x840'
     Size: '0x4'
     Type: int
-  - Name: None
-    Offset: '0x814'
+  - Name: MaxStoredHits
+    Offset: '0x844'
     Size: '0x4'
     Type: int
-  - Name: None
-    Offset: '0x818'
+  - Name: Deferred Decals
+    Offset: '0x848'
     Size: '0x10'
     Type: TArray<class DecalComponent*>
-  - Name: None
-    Offset: '0x828'
+  - Name: ClientUpdateEventCount
+    Offset: '0x858'
     Size: '0x4'
     Type: int
-  - Name: None
-    Offset: '0x82c'
+  - Name: ExternalDecalBufferIndex
+    Offset: '0x85c'
     Size: '0x4'
     Type: int
-  - Name: None
-    Offset: '0x830'
+  - Name: HasBeenInitialized
+    Offset: '0x860'
     Size: '0x1'
     Type: bool
   ClassSize: '0x41'
-  FullSize: '0x831'
-  InheritedSize: '0x7f0'
+  FullSize: '0x861'
+  InheritedSize: '0x820'
   Super: DamageZone

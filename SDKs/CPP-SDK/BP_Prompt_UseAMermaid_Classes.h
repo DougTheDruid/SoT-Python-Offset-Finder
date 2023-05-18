@@ -6,24 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x164 (Full Size[0x27c] - InheritedSize[0x118]
+// Size 0x194 (Full Size[0x2cc] - InheritedSize[0x138]
 class BP_Prompt_UseAMermaid_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_OTXR6[0x12a];                             // 0x120(0x12a)
-	bool                                                         State_IsThereAMermaid;                             // 0x120(0x1)
-	char                                                         pad0x7_Y5HC2[0x7];                                 // 0x121(0x7)
-	Struct ObjectMessagingHandle                                 Handle_OnMermaidActivatedLocally;                  // 0x128(0x48)
-	Struct ObjectMessagingHandle                                 Handle_OnMermaidDeactivatedLocally;                // 0x170(0x48)
-	Struct ObjectMessagingHandle                                 Handle_OnMermaidUsed;                              // 0x1b8(0x48)
-	bool                                                         State_MermaidUsed;                                 // 0x200(0x1)
-	char                                                         pad0x7_S08C3[0x7];                                 // 0x201(0x7)
-	Struct PrioritisedPromptWithHandle                           Prompt_UseMermaid;                                 // 0x208(0x68)
-	bool                                                         State_ShowPrompt;                                  // 0x270(0x1)
-	char                                                         pad0x3_7OSL2[0x3];                                 // 0x271(0x3)
-	float                                                        PromptDisplayDuration;                             // 0x274(0x4)
-	float                                                        PromptHideDuration;                                // 0x278(0x4)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_A2NZC[0x4c];                               // 0x140(0x4c)
+	bool                                                         State_IsThereAMermaid;                             // 0x140(0x1)
+	char                                                         pad0x7_2NMV9[0x7];                                 // 0x141(0x7)
+	Struct ObjectMessagingHandle                                 Handle_OnMermaidActivatedLocally;                  // 0x148(0x58)
+	Struct ObjectMessagingHandle                                 Handle_OnMermaidDeactivatedLocally;                // 0x1a0(0x58)
+	Struct ObjectMessagingHandle                                 Handle_OnMermaidUsed;                              // 0x1f8(0x58)
+	bool                                                         State_MermaidUsed;                                 // 0x250(0x1)
+	char                                                         pad0x7_YUB6C[0x7];                                 // 0x251(0x7)
+	Struct PrioritisedPromptWithHandle                           Prompt_UseMermaid;                                 // 0x258(0x68)
+	bool                                                         State_ShowPrompt;                                  // 0x2c0(0x1)
+	char                                                         pad0x3_3UL6N[0x3];                                 // 0x2c1(0x3)
+	float                                                        PromptDisplayDuration;                             // 0x2c4(0x4)
+	float                                                        PromptHideDuration;                                // 0x2c8(0x4)
 };
 
 

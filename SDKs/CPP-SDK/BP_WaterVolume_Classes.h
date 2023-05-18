@@ -10,15 +10,15 @@ namespace DougsSDKDumper
 class BP_WaterVolume_C: public WaterVolume
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x448(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x450(0x8)
-	Class DynamicFlowComponent*                                  None;                                              // 0x458(0x8)
-	Class FlatWaterPlaneComponent*                               None;                                              // 0x460(0x8)
-	Class FlatWaterMeshComponent*                                None;                                              // 0x468(0x8)
-	Class SceneComponent*                                        None;                                              // 0x470(0x8)
-	bool                                                         None;                                              // 0x478(0x1)
-	char                                                         pad0x3_4RO21[0x3];                                 // 0x479(0x3)
-	struct FName                                                 None;                                              // 0x47c(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x448(0x8)
+	Class StaticMeshComponent*                                   WaterPlaneActivatationVolume;                      // 0x450(0x8)
+	Class DynamicFlowComponent*                                  DynamicFlow;                                       // 0x458(0x8)
+	Class FlatWaterPlaneComponent*                               FlatWaterPlane;                                    // 0x460(0x8)
+	Class FlatWaterMeshComponent*                                FlatWaterMesh;                                     // 0x468(0x8)
+	Class SceneComponent*                                        Root;                                              // 0x470(0x8)
+	bool                                                         SunLit;                                            // 0x478(0x1)
+	char                                                         pad0x3_J5ZBL[0x3];                                 // 0x479(0x3)
+	struct FName                                                 RippleGeneratorTag;                                // 0x47c(0x8)
 };
 
 

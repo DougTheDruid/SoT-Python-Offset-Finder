@@ -52,105 +52,105 @@ BP_Shroudbreaker_OnShip_C:
     Type: Class StaticMeshComponent*
   - Name: ActivateShroudbreakerHandle
     Offset: '0x4b8'
-    Size: '0x48'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: DeactivateShroudbreakerHandle
-    Offset: '0x500'
-    Size: '0x48'
+    Offset: '0x510'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: ActivateEffectsHandle
-    Offset: '0x548'
-    Size: '0x48'
+    Offset: '0x568'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: DeactivateEffectsHandle
-    Offset: '0x590'
-    Size: '0x48'
+    Offset: '0x5c0'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: ShipDestroyedHandle
-    Offset: '0x5d8'
-    Size: '0x48'
+    Offset: '0x618'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: ParentShipActor
-    Offset: '0x620'
+    Offset: '0x670'
     Size: '0x8'
     Type: Class Actor*
   - Name: MusicZoneActive
-    Offset: '0x628'
+    Offset: '0x678'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_3LHN1[0x3]
-    Offset: '0x629'
+  - Name: pad0x3_DNAHU[0x3]
+    Offset: '0x679'
     Size: '0x3'
     Type: char
   - Name: GemEmissiveOn
-    Offset: '0x62c'
+    Offset: '0x67c'
     Size: '0x4'
     Type: float
   - Name: Shroudbreaker Material
-    Offset: '0x630'
+    Offset: '0x680'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: GemEmissiveOff
-    Offset: '0x638'
+    Offset: '0x688'
     Size: '0x4'
     Type: float
   - Name: ShroudBreakerEffectsActive
-    Offset: '0x63c'
+    Offset: '0x68c'
     Size: '0x1'
     Type: bool
   - Name: ShroudBreakerDeactivate
-    Offset: '0x63d'
+    Offset: '0x68d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_G9OE7[0x2]
-    Offset: '0x63e'
+  - Name: pad0x2_HU07O[0x2]
+    Offset: '0x68e'
     Size: '0x2'
     Type: char
   - Name: PlayerEnteredIslandVincityEventHandle
-    Offset: '0x640'
-    Size: '0x48'
+    Offset: '0x690'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: PlayerLeftIslandVincityEventHandle
-    Offset: '0x688'
-    Size: '0x48'
+    Offset: '0x6e8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: ShipProgressSpawnLoactionsAssetID
-    Offset: '0x6d0'
+    Offset: '0x740'
     Size: '0x10'
     Type: TArray<Assetclass ShipProgressSpawnLoactionsAssetID>
   - Name: ShipProgressSpawnLocationsReference
-    Offset: '0x6e0'
+    Offset: '0x750'
     Size: '0x10'
     Type: TArray<class ProgressShipSpawnLocation*>
   - Name: ShieldMaterial
-    Offset: '0x6f0'
+    Offset: '0x760'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: ShieldPulseMaterial
-    Offset: '0x6f8'
+    Offset: '0x768'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: DEBUG_Stage
-    Offset: '0x700'
+    Offset: '0x770'
     Size: '0x4'
     Type: int
   - Name: FinalStageActivationDelay
-    Offset: '0x704'
+    Offset: '0x774'
     Size: '0x4'
     Type: float
   - Name: NewVar
-    Offset: '0x708'
+    Offset: '0x778'
     Size: '0x8'
     Type: Class SoundBase*
   - Name: ShipHullAudio
-    Offset: '0x710'
+    Offset: '0x780'
     Size: '0x8'
     Type: Class ShipHullAudio*
   - Name: ShroudBreakerAmbientLoopingWwiseEvent
-    Offset: '0x718'
+    Offset: '0x788'
     Size: '0x8'
     Type: Class WwiseEvent*
-  ClassSize: '0x2c8'
-  FullSize: '0x720'
+  ClassSize: '0x338'
+  FullSize: '0x790'
   InheritedSize: '0x458'
   Super: ShroudBreakerOnShip

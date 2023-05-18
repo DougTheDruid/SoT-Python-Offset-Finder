@@ -8,7 +8,7 @@
     "Attributes": []
   },
   "ObjectMessagingHandle": {
-    "ClassSize": "0x48",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "EventType",
@@ -20,6 +20,10 @@
   },
   "ObjectMessagingObjectScoper": {
     "ClassSize": "0x50",
+    "Attributes": []
+  },
+  "EventObjectMessagingDispatcherBeingDestroyed": {
+    "ClassSize": "0x8",
     "Attributes": []
   },
   "DougTheDruid": {

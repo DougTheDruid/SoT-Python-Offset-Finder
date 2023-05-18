@@ -44,6 +44,23 @@
       }
     ]
   },
+  "MerchantSovereignHandInNameInformation": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MerchantNPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SovereignNPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "CommodityDescWithRedeemId": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -126,7 +143,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x5_QSHCS[0x5]",
+        "Name": "pad0x5_3JDPP[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x3"
@@ -149,7 +166,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_F9S9W[0x7]",
+        "Name": "pad0x7_0Z4RZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"

@@ -16,7 +16,7 @@ DisplayInvasionBannersStepDesc:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_P6GZF[0x7]
+  - Name: pad0x7_NJ0WM[0x7]
     Offset: '0xb9'
     Size: '0x7'
     Type: char
@@ -128,7 +128,7 @@ InvasionBattleBounds:
     Offset: '0x3e4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_YPATH[0x8]
+  - Name: pad0x8_T2A5L[0x8]
     Offset: '0x3e8'
     Size: '0x8'
     Type: char
@@ -174,7 +174,7 @@ InvasionLocationsDataAssetGetterInterface:
   Super: Interface
 InvasionService:
   Attributes:
-  - Name: pad0x40_NJ18E[0x40]
+  - Name: pad0x40_SG543[0x40]
     Offset: '0x3c8'
     Size: '0x40'
     Type: char
@@ -190,7 +190,7 @@ InvasionService:
     Offset: '0x418'
     Size: '0x8'
     Type: Class InvasionLocationsDataAsset*
-  - Name: pad0x178_KBIPH[0x178]
+  - Name: pad0x178_O2QP6[0x178]
     Offset: '0x420'
     Size: '0x178'
     Type: char
@@ -218,7 +218,7 @@ InvasionService:
     Offset: '0x5e8'
     Size: '0x10'
     Type: TArray<class InvasionBattleBounds*>
-  - Name: pad0x68_SY6MB[0x68]
+  - Name: pad0x68_NOAMO[0x68]
     Offset: '0x5f8'
     Size: '0x68'
     Type: char
@@ -244,7 +244,7 @@ InvasionServiceDataAsset:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DXF11[0x4]
+  - Name: pad0x4_YR9KA[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -288,26 +288,26 @@ InvasionServiceDataAsset:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Min
+  - Name: AggressiveAggressive_EQSQueryParamData_InvasionLocationStormExclusionRadius
     Offset: '0x84'
     Size: '0x4'
     Type: float
-  - Name: AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Max
+  - Name: AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Min
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Min
+  - Name: AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Max
     Offset: '0x8c'
     Size: '0x4'
     Type: float
-  - Name: AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Max
+  - Name: AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Min
     Offset: '0x90'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DK6W0[0x4]
+  - Name: AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Max
     Offset: '0x94'
     Size: '0x4'
-    Type: char
+    Type: float
   - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
     Offset: '0x98'
     Size: '0x8'
@@ -356,7 +356,7 @@ SetInvasionMusicStateForCrewStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FBJ2F[0x7]
+  - Name: pad0x7_45FE6[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -390,12 +390,12 @@ TaleQuestInvasionMatchmakingService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestInvasionMatchmakingServiceDesc*
-  - Name: pad0x190_YF2QI[0x190]
+  - Name: pad0x1c0_AJH92[0x1c0]
     Offset: '0x68'
-    Size: '0x190'
+    Size: '0x1c0'
     Type: char
-  ClassSize: '0x198'
-  FullSize: '0x1f8'
+  ClassSize: '0x1c8'
+  FullSize: '0x228'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestInvasionMatchmakingServiceDesc:
@@ -434,12 +434,12 @@ TaleQuestInvasionService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestInvasionServiceDesc*
-  - Name: pad0x180_BW87Y[0x180]
+  - Name: pad0x1a0_2Q7JO[0x1a0]
     Offset: '0x68'
-    Size: '0x180'
+    Size: '0x1a0'
     Type: char
-  ClassSize: '0x188'
-  FullSize: '0x1e8'
+  ClassSize: '0x1a8'
+  FullSize: '0x208'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestInvasionServiceDesc:
@@ -500,7 +500,7 @@ WaitForShipToBeDefeatedStepDesc:
     Offset: '0x1a0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AKXQJ[0x4]
+  - Name: pad0x4_5XX4U[0x4]
     Offset: '0x1a4'
     Size: '0x4'
     Type: char

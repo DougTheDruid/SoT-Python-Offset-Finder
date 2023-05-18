@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xda (Full Size[0x1f2] - InheritedSize[0x118]
+// Size 0xea (Full Size[0x222] - InheritedSize[0x138]
 class BP_Prompt_VisitCompanyShop_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_QTL9T[0x12a];                             // 0x120(0x12a)
-	Struct ObjectMessagingHandle                                 Handle_TreasureChestSoldPredictedEvent;            // 0x120(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt_VisitCompanyShop;                           // 0x168(0x68)
-	class                                                        Company;                                           // 0x1d0(0x8)
-	class                                                        AccessKey;                                         // 0x1d8(0x8)
-	class                                                        CompanyRankDesc;                                   // 0x1e0(0x8)
-	float                                                        PromptDelayUntilDisplay;                           // 0x1e8(0x4)
-	float                                                        PromptDisplayDuration;                             // 0x1ec(0x4)
-	bool                                                         IsCorrectCompany;                                  // 0x1f0(0x1)
-	bool                                                         PromptInfoSet;                                     // 0x1f1(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_0262F[0x4c];                               // 0x140(0x4c)
+	Struct ObjectMessagingHandle                                 Handle_TreasureChestSoldPredictedEvent;            // 0x140(0x58)
+	Struct PrioritisedPromptWithHandle                           Prompt_VisitCompanyShop;                           // 0x198(0x68)
+	class                                                        Company;                                           // 0x200(0x8)
+	class                                                        AccessKey;                                         // 0x208(0x8)
+	class                                                        CompanyRankDesc;                                   // 0x210(0x8)
+	float                                                        PromptDelayUntilDisplay;                           // 0x218(0x4)
+	float                                                        PromptDisplayDuration;                             // 0x21c(0x4)
+	bool                                                         IsCorrectCompany;                                  // 0x220(0x1)
+	bool                                                         PromptInfoSet;                                     // 0x221(0x1)
 };
 
 

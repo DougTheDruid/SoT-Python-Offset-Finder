@@ -13,7 +13,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x8_Y17YH[0x8]",
+        "Name": "pad0x8_IC0CD[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x128"
@@ -37,7 +37,7 @@
         "Offset": "0x1a0"
       },
       {
-        "Name": "pad0x20_ACAT5[0x20]",
+        "Name": "pad0x20_971Z9[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x1a8"
@@ -76,7 +76,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x67_KUKK2[0x67]",
+        "Name": "pad0x67_FBXKY[0x67]",
         "Type": "char",
         "Size": "0x67",
         "Offset": "0x41"
@@ -94,7 +94,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x58_NZMK3[0x58]",
+        "Name": "pad0x58_TV76W[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xc0"
@@ -191,12 +191,12 @@
   },
   "WarMapVoteInteractionActor": {
     "Super": "Actor",
-    "FullSize": "0x610",
+    "FullSize": "0x640",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x248",
+    "ClassSize": "0x278",
     "Attributes": [
       {
-        "Name": "pad0x10_3TWB5[0x10]",
+        "Name": "pad0x10_FKQF1[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -214,7 +214,7 @@
         "Offset": "0x3dc"
       },
       {
-        "Name": "pad0x4_8R1S7[0x4]",
+        "Name": "pad0x4_2HHJ3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3e4"
@@ -238,9 +238,9 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x200_HCAOT[0x200]",
+        "Name": "pad0x230_YXGI2[0x230]",
         "Type": "char",
-        "Size": "0x200",
+        "Size": "0x230",
         "Offset": "0x410"
       }
     ]
@@ -282,7 +282,7 @@
         "Offset": "0x45"
       },
       {
-        "Name": "pad0xd2_KEBX2[0xd2]",
+        "Name": "pad0xd2_G3SJA[0xd2]",
         "Type": "char",
         "Size": "0xd2",
         "Offset": "0x46"
@@ -309,7 +309,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x7_F2P0X[0x7]",
+        "Name": "pad0x7_KA3VR[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x119"

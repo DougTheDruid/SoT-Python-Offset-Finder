@@ -12,7 +12,7 @@ TaleQuestGetProjectionPointOnTradeRouteStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QQOF7[0x4]
+  - Name: pad0x4_VRSZX[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -38,7 +38,7 @@ TaleQuestSelectTradeRouteStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class TaleQuestSelectTradeRouteStepDesc*
-  - Name: pad0x18_U0ZUB[0x18]
+  - Name: pad0x18_H2GNE[0x18]
     Offset: '0xa0'
     Size: '0x18'
     Type: char
@@ -52,7 +52,7 @@ TaleQuestSelectTradeRouteStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_AVIBI[0x4]
+  - Name: pad0x4_33Q3J[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -94,7 +94,7 @@ TradeRouteData:
     Offset: '0x3c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_KNA7W[0x3]
+  - Name: pad0x3_FEIOL[0x3]
     Offset: '0x3d'
     Size: '0x3'
     Type: char
@@ -112,7 +112,7 @@ TradeRouteDifficultyBand:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_MYZK5[0x4]
+  - Name: pad0x4_O6NU8[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

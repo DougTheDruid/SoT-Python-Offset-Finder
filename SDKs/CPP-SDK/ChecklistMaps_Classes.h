@@ -12,7 +12,7 @@ class ChecklistActionData: public Object
 public:
 	int                                                          NumRequiredActions;                                // 0x28(0x4)
 	byte                                                         ActionType;                                        // 0x2c(0x1)
-	char                                                         pad0x3_GJA0Z[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_D1N5W[0x3];                                 // 0x2d(0x3)
 };
 
 
@@ -57,19 +57,19 @@ public:
 };
 
 
-// Size 0x150 (Full Size[0x940] - InheritedSize[0x7f0]
+// Size 0x150 (Full Size[0x980] - InheritedSize[0x830]
 class ChecklistMap: public TreasureMap
 {
 public:
-	int                                                          CanvasWidth;                                       // 0x7e8(0x4)
-	int                                                          CanvasHeight;                                      // 0x7ec(0x4)
-	Class Font*                                                  Font;                                              // 0x7f0(0x8)
-	float                                                        FontScale;                                         // 0x7f8(0x4)
-	float                                                        FontLineSpacingScale;                              // 0x7fc(0x4)
-	char                                                         pad0x8_GZJ8W[0x8];                                 // 0x800(0x8)
-	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x808(0x8)
-	Struct ChecklistMapContents                                  Contents;                                          // 0x810(0xe8)
-	char                                                         pad0x48_NNDWF[0x48];                               // 0x8f8(0x48)
+	int                                                          CanvasWidth;                                       // 0x828(0x4)
+	int                                                          CanvasHeight;                                      // 0x82c(0x4)
+	Class Font*                                                  Font;                                              // 0x830(0x8)
+	float                                                        FontScale;                                         // 0x838(0x4)
+	float                                                        FontLineSpacingScale;                              // 0x83c(0x4)
+	char                                                         pad0x8_LDJYP[0x8];                                 // 0x840(0x8)
+	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x848(0x8)
+	Struct ChecklistMapContents                                  Contents;                                          // 0x850(0xe8)
+	char                                                         pad0x48_RWNR6[0x48];                               // 0x938(0x48)
 };
 
 
@@ -80,12 +80,12 @@ public:
 };
 
 
-// Size 0x78 (Full Size[0x140] - InheritedSize[0xc8]
+// Size 0x88 (Full Size[0x150] - InheritedSize[0xc8]
 class ChecklistMapCompletionComponent: public ActorComponent
 {
 public:
 	Class ChecklistActionData*                                   ActionData;                                        // 0xc8(0x8)
-	char                                                         pad0x70_1ZLBH[0x70];                               // 0xd0(0x70)
+	char                                                         pad0x80_5XHRA[0x80];                               // 0xd0(0x80)
 };
 
 

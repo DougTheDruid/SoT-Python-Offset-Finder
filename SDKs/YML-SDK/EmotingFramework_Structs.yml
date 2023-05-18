@@ -26,7 +26,7 @@ EmoteData:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_NME09[0x7]
+  - Name: pad0x7_KXQHU[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -42,7 +42,7 @@ EmoteData:
     Offset: '0x91'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_U7E46[0x6]
+  - Name: pad0x6_5BI0A[0x6]
     Offset: '0x92'
     Size: '0x6'
     Type: char
@@ -102,7 +102,7 @@ EmotePropRandomObjectResult:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FAVQO[0x7]
+  - Name: pad0x7_UVELY[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

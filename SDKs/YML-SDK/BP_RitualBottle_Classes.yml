@@ -2,19 +2,30 @@
 # https://github.com/DougTheDruid
 BP_RitualBottle_C:
   Attributes:
-  - Name: None
+  - Name: ptn_pois_01_a
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: "2\09;>IMQ\n\x8C\t\0^cUU8\x1D(\x88\x8C\x01\0\02_GEN_VARIABLE\0\xC1\f\x8C\
+      \t\0^\xD3\xC5@X\xB7c\xD7\x8C\x01\0\0BP_RitualBottle_C\0\x03\xC1\v\xDE%A\x0E\x8C\
+      \t\0\x1Fp\x03\xC1(U\xCF9\x8D\x01\0\0Default__BP_RitualBottle_C\0\xC1\xD1\xFD\
+      $A\x10\x8C\t\0\x95\x7F\x04\xC1\xB8\x03T\x94\x8D\x01\0\0ptn_pois_01_a_GEN_VARIABLE\0\
+      \xC1\xD0q$A\x12\x8C\t\0\b\x9B\x05\xC1\x18*\xCF9\x8D\x01\0\0ptn_pois_stop_01_e\0\
+      A\x18`\xCA@\x14\x8C\t\0\x9DZ\"A\0\xBA\xCF9\x8D\x01\0\0BP_RitualBottleTop_C\0\
+      \x88\b\0"
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: "1\0\xD9\x93*F\e\x8E\x06\x8C\t\06V]\x94 `\xBB\x98\x8C\x01\0\01_GEN_VARIABLE\0\
+      \xE9\b\x8C\t\0\0\b\x15\x1Ep\_]\x98\x8C\x01\0\02\09;>IMQ\n\x8C\t\0^cUU8\x1D(\x88\
+      \x8C\x01\0\02_GEN_VARIABLE\0\xC1\f\x8C\t\0^\xD3\xC5@X\xB7c\xD7\x8C\x01\0\0BP_RitualBottle_C\0\
+      \x03\xC1\v\xDE%A\x0E\x8C\t\0\x1Fp\x03\xC1(U\xCF9\x8D\x01\0\0Default__BP_RitualBottle_C\0\
+      \xC1\xD1\xFD$A\x10\x8C\t\0\x95\x7F\x04\xC1\xB8\x03T\x94\x8D\x01\0\0ptn_pois_01_a_GEN_VARIABLE\0\
+      \xC1\xD0q$A\x12\x8C\t\0\b\x9B\x05\xC1\x18*\xCF9\x8D\x01\0\0ptn_poi\0"
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*

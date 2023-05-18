@@ -3,70 +3,70 @@
 BP_Prompt_EmissaryLevelRankChange_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_1ZV34[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_0QSCA[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: Handle_EmissaryRankChange
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: CompanyName
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x8'
     Type: struct FName
   - Name: NewLevel
-    Offset: '0x170'
-    Size: '0x4'
-    Type: int
-  - Name: SurfacedThisSession
-    Offset: '0x174'
-    Size: '0x1'
-    Type: bool
-  - Name: pad0x3_JG47T[0x3]
-    Offset: '0x175'
-    Size: '0x3'
-    Type: char
-  - Name: ExpectedCompanyName
-    Offset: '0x178'
-    Size: '0x8'
-    Type: struct FName
-  - Name: ExpectedLevel
-    Offset: '0x180'
-    Size: '0x4'
-    Type: int
-  - Name: pad0x4_R95R4[0x4]
-    Offset: '0x184'
-    Size: '0x4'
-    Type: char
-  - Name: Prompts
-    Offset: '0x188'
-    Size: '0x10'
-    Type: TArray<struct Prompts>
-  - Name: PromptAccessKey
-    Offset: '0x198'
-    Size: '0x8'
-    Type: class
-  - Name: PromptIndex
     Offset: '0x1a0'
     Size: '0x4'
     Type: int
-  - Name: NumberOfPrompts
+  - Name: SurfacedThisSession
     Offset: '0x1a4'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_0TYXQ[0x3]
+    Offset: '0x1a5'
+    Size: '0x3'
+    Type: char
+  - Name: ExpectedCompanyName
+    Offset: '0x1a8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ExpectedLevel
+    Offset: '0x1b0'
+    Size: '0x4'
+    Type: int
+  - Name: pad0x4_119ZK[0x4]
+    Offset: '0x1b4'
+    Size: '0x4'
+    Type: char
+  - Name: Prompts
+    Offset: '0x1b8'
+    Size: '0x10'
+    Type: TArray<struct Prompts>
+  - Name: PromptAccessKey
+    Offset: '0x1c8'
+    Size: '0x8'
+    Type: class
+  - Name: PromptIndex
+    Offset: '0x1d0'
+    Size: '0x4'
+    Type: int
+  - Name: NumberOfPrompts
+    Offset: '0x1d4'
     Size: '0x4'
     Type: int
   - Name: InitialDelay
-    Offset: '0x1a8'
+    Offset: '0x1d8'
     Size: '0x4'
     Type: float
   - Name: ShowPromptDuration
-    Offset: '0x1ac'
+    Offset: '0x1dc'
     Size: '0x4'
     Type: float
-  ClassSize: '0x98'
-  FullSize: '0x1b0'
-  InheritedSize: '0x118'
+  ClassSize: '0xa8'
+  FullSize: '0x1e0'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

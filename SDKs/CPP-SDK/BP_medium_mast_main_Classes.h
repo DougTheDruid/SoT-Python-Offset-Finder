@@ -6,23 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x68 (Full Size[0xaa0] - InheritedSize[0xa38]
+// Size 0x68 (Full Size[0xad0] - InheritedSize[0xa68]
 class BP_medium_mast_main_C: public BP_Mast_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa38(0x8)
-	Class ChildActorComponent*                                   BP_MastEmissaryFlag;                               // 0xa40(0x8)
-	Class StaticMeshComponent*                                   shp_flag_pennant_alliance_01_a;                    // 0xa48(0x8)
-	Class StaticMeshComponent*                                   shp_flag_jolly_roger_01_a;                         // 0xa50(0x8)
-	Class ChildActorComponent*                                   BP_Bell;                                           // 0xa58(0x8)
-	Class ChildActorComponent*                                   Ladder;                                            // 0xa60(0x8)
-	Class StaticMeshComponent*                                   WeldedCrowsNestPhysics;                            // 0xa68(0x8)
-	Class StaticMeshComponent*                                   WeldedMastPhysics;                                 // 0xa70(0x8)
-	Class StaticMeshComponent*                                   shp_mast_ladder_step_01_a;                         // 0xa78(0x8)
-	Class ChildActorComponent*                                   BP_ShipFlagCustomizationChest;                     // 0xa80(0x8)
-	Class StaticMeshComponent*                                   CrowsNest;                                         // 0xa88(0x8)
-	Class ChildActorComponent*                                   BP_BellLower;                                      // 0xa90(0x8)
-	Class StaticMeshComponent*                                   BellSupportLower;                                  // 0xa98(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa68(0x8)
+	Class ChildActorComponent*                                   BP_MastEmissaryFlag;                               // 0xa70(0x8)
+	Class StaticMeshComponent*                                   shp_flag_pennant_alliance_01_a;                    // 0xa78(0x8)
+	Class StaticMeshComponent*                                   shp_flag_jolly_roger_01_a;                         // 0xa80(0x8)
+	Class ChildActorComponent*                                   BP_Bell;                                           // 0xa88(0x8)
+	Class ChildActorComponent*                                   Ladder;                                            // 0xa90(0x8)
+	Class StaticMeshComponent*                                   WeldedCrowsNestPhysics;                            // 0xa98(0x8)
+	Class StaticMeshComponent*                                   WeldedMastPhysics;                                 // 0xaa0(0x8)
+	Class StaticMeshComponent*                                   shp_mast_ladder_step_01_a;                         // 0xaa8(0x8)
+	Class ChildActorComponent*                                   BP_ShipFlagCustomizationChest;                     // 0xab0(0x8)
+	Class StaticMeshComponent*                                   CrowsNest;                                         // 0xab8(0x8)
+	Class ChildActorComponent*                                   BP_BellLower;                                      // 0xac0(0x8)
+	Class StaticMeshComponent*                                   BellSupportLower;                                  // 0xac8(0x8)
 };
 
 

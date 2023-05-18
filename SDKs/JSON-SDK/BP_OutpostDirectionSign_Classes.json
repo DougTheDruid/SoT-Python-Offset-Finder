@@ -1,27 +1,27 @@
 {
   "BP_OutpostDirectionSign_C": {
     "Super": "ModalInteractionProxy",
-    "FullSize": "0x528",
-    "InheritedSize": "0x510",
+    "FullSize": "0x538",
+    "InheritedSize": "0x520",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "InspectDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x510"
+        "Offset": "0x520"
       },
       {
         "Name": "StaticMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x528"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x520"
+        "Offset": "0x530"
       }
     ]
   },

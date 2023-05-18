@@ -8,27 +8,19 @@ MediaSubtitleComponent:
   Super: ActorComponent
 WwiseMediaSoundComponent:
   Attributes:
-  - Name: pad0x88_OO4IH[0x88]
+  - Name: pad0x60_4C6U5[0x60]
     Offset: '0x2e0'
-    Size: '0x88'
+    Size: '0x60'
     Type: char
   - Name: MediaSoundEvent
-    Offset: '0x368'
+    Offset: '0x340'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: pad0x40_ZA1T4[0x40]
-    Offset: '0x370'
-    Size: '0x40'
+  - Name: pad0x48_49QOY[0x48]
+    Offset: '0x348'
+    Size: '0x48'
     Type: char
-  - Name: RelativeBufferSize
-    Offset: '0x3b0'
-    Size: '0x4'
-    Type: float
-  - Name: pad0xc_KFFKG[0xc]
-    Offset: '0x3b4'
-    Size: '0xc'
-    Type: char
-  ClassSize: '0xe0'
-  FullSize: '0x3c0'
+  ClassSize: '0xb0'
+  FullSize: '0x390'
   InheritedSize: '0x2e0'
   Super: SceneComponent

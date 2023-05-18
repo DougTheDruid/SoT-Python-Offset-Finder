@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ActorFlammableComponent:
   Attributes:
-  - Name: pad0x18_DIPX8[0x18]
+  - Name: pad0x18_5JZYL[0x18]
     Offset: '0xe0'
     Size: '0x18'
     Type: char
@@ -18,7 +18,7 @@ ActorFlammableComponent:
     Offset: '0x108'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_LGKJI[0x4]
+  - Name: pad0x4_BSR3B[0x4]
     Offset: '0x10c'
     Size: '0x4'
     Type: char
@@ -54,7 +54,7 @@ FireCellStateTimingParamsDataAsset:
     Offset: '0x28'
     Size: '0x94'
     Type: Struct FireCellStateTimingParams
-  - Name: pad0x4_RLEAB[0x4]
+  - Name: pad0x4_U11YH[0x4]
     Offset: '0xbc'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ FireGridAudioManager:
     Offset: '0x70'
     Size: '0x8'
     Type: Class FirePropagator*
-  - Name: pad0x58_GCJJQ[0x58]
+  - Name: pad0x58_649AW[0x58]
     Offset: '0x78'
     Size: '0x58'
     Type: char
@@ -160,7 +160,7 @@ FireGridVFXManager:
     Offset: '0x190'
     Size: '0x10'
     Type: TArray<struct VFXToSpawn>
-  - Name: pad0x8_D931G[0x8]
+  - Name: pad0x8_ZBBK0[0x8]
     Offset: '0x1a0'
     Size: '0x8'
     Type: char
@@ -172,7 +172,7 @@ FireGridVFXManager:
     Offset: '0x1b8'
     Size: '0x8'
     Type: Class FirePropagator*
-  - Name: pad0x50_F11PH[0x50]
+  - Name: pad0x50_KG1IS[0x50]
     Offset: '0x1c0'
     Size: '0x50'
     Type: char
@@ -198,7 +198,7 @@ FirePropagationInterface:
   Super: Interface
 FirePropagator:
   Attributes:
-  - Name: pad0x90_O5UFG[0x90]
+  - Name: pad0x90_YDMK3[0x90]
     Offset: '0x28'
     Size: '0x90'
     Type: char
@@ -206,7 +206,7 @@ FirePropagator:
     Offset: '0xb8'
     Size: '0x8'
     Type: Class FireCellStateTimingParamsDataAsset*
-  - Name: pad0x4_NDF2K[0x4]
+  - Name: pad0x4_SUT3F[0x4]
     Offset: '0xc0'
     Size: '0x4'
     Type: char
@@ -214,7 +214,7 @@ FirePropagator:
     Offset: '0xc4'
     Size: '0x4'
     Type: float
-  - Name: pad0x58_ZYCPV[0x58]
+  - Name: pad0x58_Q0SMT[0x58]
     Offset: '0xc8'
     Size: '0x58'
     Type: char
@@ -230,7 +230,7 @@ FireStatus:
   Super: StatusBase
 FlammableComponent:
   Attributes:
-  - Name: pad0x10_7TLTW[0x10]
+  - Name: pad0x10_US5LY[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -238,7 +238,7 @@ FlammableComponent:
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_LRHIR[0x7]
+  - Name: pad0x7_2RF26[0x7]
     Offset: '0xd9'
     Size: '0x7'
     Type: char
@@ -270,7 +270,7 @@ IgniteStatus:
   Super: StatusBase
 MastFlammableComponent:
   Attributes:
-  - Name: pad0x8_S9MMV[0x8]
+  - Name: pad0x8_BKKDP[0x8]
     Offset: '0x110'
     Size: '0x8'
     Type: char
@@ -278,7 +278,7 @@ MastFlammableComponent:
     Offset: '0x118'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x14_QB3WL[0x14]
+  - Name: pad0x14_MEEHM[0x14]
     Offset: '0x124'
     Size: '0x14'
     Type: char
@@ -302,7 +302,7 @@ ShipFireLightParamsDataAsset:
     Offset: '0x28'
     Size: '0x14'
     Type: Struct ShipFireLightParams
-  - Name: pad0x4_HBM42[0x4]
+  - Name: pad0x4_GPZHA[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -312,7 +312,7 @@ ShipFireLightParamsDataAsset:
   Super: DataAsset
 ShipFirePropagationComponent:
   Attributes:
-  - Name: pad0x10_PXB5O[0x10]
+  - Name: pad0x10_X9RVP[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -336,7 +336,7 @@ ShipFirePropagationComponent:
     Offset: '0xf8'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_6Z59D[0x4]
+  - Name: pad0x4_XKQO9[0x4]
     Offset: '0x104'
     Size: '0x4'
     Type: char
@@ -352,7 +352,7 @@ ShipFirePropagationComponent:
     Offset: '0x118'
     Size: '0x10'
     Type: TArray<struct FireCellDescs>
-  - Name: pad0x10_0OAXS[0x10]
+  - Name: pad0x10_PN2HS[0x10]
     Offset: '0x128'
     Size: '0x10'
     Type: char
@@ -374,30 +374,30 @@ ShipFirePropagationComponent:
     Type: Struct ShipFireLightManager
   - Name: FireCharringManager
     Offset: '0x300'
-    Size: '0xc8'
+    Size: '0xd8'
     Type: Struct FireGridCharringManager
   - Name: ReplicatedCellData
-    Offset: '0x3c8'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<struct ReplicatedCellData>
   - Name: ReplicatedCellCharringData
-    Offset: '0x3d8'
+    Offset: '0x3e8'
     Size: '0x18'
     Type: Struct ReplicatedFireCellCharringData
   - Name: FireAudioManager
-    Offset: '0x3f0'
+    Offset: '0x400'
     Size: '0x8'
     Type: Class FireGridAudioManager*
   - Name: FireAudioParams
-    Offset: '0x3f8'
+    Offset: '0x408'
     Size: '0x40'
     Type: Struct FireCellAudioParams
-  - Name: pad0x58_CIG9W[0x58]
-    Offset: '0x438'
+  - Name: pad0x58_0ICRW[0x58]
+    Offset: '0x448'
     Size: '0x58'
     Type: char
-  ClassSize: '0x3c8'
-  FullSize: '0x490'
+  ClassSize: '0x3d8'
+  FullSize: '0x4a0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 StatusResponseExtinguish:
@@ -422,7 +422,7 @@ TimedFlammableComponent:
     Offset: '0xe1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_KV2EJ[0x2]
+  - Name: pad0x2_JXL3Z[0x2]
     Offset: '0xe2'
     Size: '0x2'
     Type: char

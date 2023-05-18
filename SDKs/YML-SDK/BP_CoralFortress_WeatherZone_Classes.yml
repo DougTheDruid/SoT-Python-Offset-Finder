@@ -2,103 +2,103 @@
 # https://github.com/DougTheDruid
 BP_CoralFortress_WeatherZone_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Explosion
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class ExplosionComponent*
-  - Name: None
+  - Name: LightningManager
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class LightningManagerComponent*
-  - Name: None
+  - Name: Lightning
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class LightningComponent*
-  - Name: None
+  - Name: ExclusionTriggerVolume
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
+  - Name: AtmosphericPressureZone
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class AtmosphericPressureZoneComponent*
-  - Name: None
+  - Name: BlendedPostProcessingRainZone
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class BlendedPostProcessingRainZoneComponent*
-  - Name: None
+  - Name: TopCloudMeshComponent
     Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: RingCloudMeshComponent
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Lightning4
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Lightning3
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Lightning2
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Lightning1
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: OuterRainSheet
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: RainRoot
     Offset: '0x438'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x440'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: RainBlend_Blend_1B3587E7420F9A76FB06A6A63DE0B159
     Offset: '0x448'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: RainBlend__Direction_1B3587E7420F9A76FB06A6A63DE0B159
     Offset: '0x44c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XT5GF[0x3]
+  - Name: pad0x3_C66BQ[0x3]
     Offset: '0x44d'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: RainBlend
     Offset: '0x450'
     Size: '0x8'
     Type: Class TimelineComponent*
-  - Name: None
+  - Name: RainDynMaterials
     Offset: '0x458'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: None
+  - Name: Opacity
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9HI8I[0x4]
+  - Name: pad0x4_XR3AK[0x4]
     Offset: '0x46c'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: CreationParams
     Offset: '0x470'
     Size: '0x28'
     Type: Struct WwiseEmitterCreationParams
-  - Name: None
+  - Name: WwiseEmitter
     Offset: '0x498'
     Size: '0x20'
     Type: Struct WwiseEmitter

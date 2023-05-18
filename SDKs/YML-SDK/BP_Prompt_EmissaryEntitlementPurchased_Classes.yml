@@ -3,58 +3,58 @@
 BP_Prompt_EmissaryEntitlementPurchased_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_UF66I[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_YP8II[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: Handle_EmissaryEntitlementPurchased
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: OfferId
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x10'
     Type: Struct Guid
   - Name: ExpectedOfferId
-    Offset: '0x178'
+    Offset: '0x1a8'
     Size: '0x10'
     Type: Struct Guid
   - Name: Prompts
-    Offset: '0x188'
+    Offset: '0x1b8'
     Size: '0x10'
     Type: TArray<struct Prompts>
   - Name: PromptSurfacedThisSession
-    Offset: '0x198'
+    Offset: '0x1c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_34JX8[0x7]
-    Offset: '0x199'
+  - Name: pad0x7_1KFWQ[0x7]
+    Offset: '0x1c9'
     Size: '0x7'
     Type: char
   - Name: PromptAccessKey
-    Offset: '0x1a0'
+    Offset: '0x1d0'
     Size: '0x8'
     Type: class
   - Name: PromptIndex
-    Offset: '0x1a8'
+    Offset: '0x1d8'
     Size: '0x4'
     Type: int
   - Name: NumberOfPrompts
-    Offset: '0x1ac'
+    Offset: '0x1dc'
     Size: '0x4'
     Type: int
   - Name: InitialDelay
-    Offset: '0x1b0'
+    Offset: '0x1e0'
     Size: '0x4'
     Type: float
   - Name: ShowPromptDuration
-    Offset: '0x1b4'
+    Offset: '0x1e4'
     Size: '0x4'
     Type: float
-  ClassSize: '0xa0'
-  FullSize: '0x1b8'
-  InheritedSize: '0x118'
+  ClassSize: '0xb0'
+  FullSize: '0x1e8'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

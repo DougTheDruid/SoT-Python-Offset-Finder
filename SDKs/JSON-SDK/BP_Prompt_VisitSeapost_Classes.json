@@ -1,75 +1,75 @@
 {
   "BP_Prompt_VisitSeapost_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x258",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x140",
+    "FullSize": "0x288",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_VSFCP[0x12b]",
+        "Name": "pad0x4d_AY1LM[0x4d]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4d",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_EventObjectWielded",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "Prompt_WieledFishOrMeat",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x168"
+        "Offset": "0x198"
       },
       {
         "Name": "Prompt_VisitSeapost",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x1d0"
+        "Offset": "0x200"
       },
       {
         "Name": "IsWieldingMeatOrFish",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x238"
+        "Offset": "0x268"
       },
       {
-        "Name": "pad0x3_PS2WR[0x3]",
+        "Name": "pad0x3_UY1MD[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x239"
+        "Offset": "0x269"
       },
       {
         "Name": "DisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x23c"
+        "Offset": "0x26c"
       },
       {
         "Name": "DelayUntilNextPrompt",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x240"
+        "Offset": "0x270"
       },
       {
-        "Name": "pad0x4_SHEMI[0x4]",
+        "Name": "pad0x4_1Y8E9[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x244"
+        "Offset": "0x274"
       },
       {
         "Name": "IgnoredFood",
-        "Type": "TArray<class Class*>",
+        "Type": "TArray<Assetclass IgnoredFood>",
         "Size": "0x10",
-        "Offset": "0x248"
+        "Offset": "0x278"
       }
     ]
   },

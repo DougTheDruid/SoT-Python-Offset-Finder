@@ -12,7 +12,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x7_24VFF[0x7]",
+        "Name": "pad0x7_DW0HC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x61"
@@ -65,9 +65,9 @@
   },
   "OceanCrawlerAudioBroadcaster": {
     "Super": "ActorComponent",
-    "FullSize": "0x1a0",
+    "FullSize": "0x1c0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xd8",
+    "ClassSize": "0xf8",
     "Attributes": [
       {
         "Name": "AudioDataAsset",
@@ -82,9 +82,9 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0xc8_FVFP9[0xc8]",
+        "Name": "pad0xe8_FS2CA[0xe8]",
         "Type": "char",
-        "Size": "0xc8",
+        "Size": "0xe8",
         "Offset": "0xd8"
       }
     ]

@@ -6,22 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60 (Full Size[0x838] - InheritedSize[0x7d8]
+// Size 0x60 (Full Size[0x858] - InheritedSize[0x7f8]
 class BP_Beacon_C: public Beacon
 {
 public:
-	Class PointLightComponent*                                   None;                                              // 0x7d8(0x8)
-	Class PointLightComponent*                                   None;                                              // 0x7e0(0x8)
-	Class PointLightComponent*                                   None;                                              // 0x7e8(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x7f0(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x7f8(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x800(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x808(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x810(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x818(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x820(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x828(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x830(0x8)
+	Class PointLightComponent*                                   PointLight3;                                       // 0x7f8(0x8)
+	Class PointLightComponent*                                   PointLight2;                                       // 0x800(0x8)
+	Class PointLightComponent*                                   PointLight1;                                       // 0x808(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem6;                                   // 0x810(0x8)
+	Class ParticleSystemComponent*                               vfx_candle_01_smoke_tavern;                        // 0x818(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem5;                                   // 0x820(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem4;                                   // 0x828(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem3;                                   // 0x830(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem2;                                   // 0x838(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem1;                                   // 0x840(0x8)
+	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x848(0x8)
+	Class ParticleSystemComponent*                               vfx_candle_01_tavern;                              // 0x850(0x8)
 };
 
 

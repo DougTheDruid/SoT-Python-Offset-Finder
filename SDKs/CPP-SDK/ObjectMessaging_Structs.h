@@ -20,7 +20,7 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x58
 struct ObjectMessagingHandle
 {
 public:
@@ -30,6 +30,13 @@ public:
 
 // Size 0x50
 struct ObjectMessagingObjectScoper
+{
+public:
+};
+
+
+// Size 0x8
+struct EventObjectMessagingDispatcherBeingDestroyed
 {
 public:
 };

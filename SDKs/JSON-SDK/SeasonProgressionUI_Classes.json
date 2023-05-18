@@ -145,12 +145,12 @@
   },
   "SeasonProgressionUIComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x1b0",
+    "FullSize": "0x1c0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xe8",
+    "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "pad0x20_9GNY4[0x20]",
+        "Name": "pad0x20_L3C1Y[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc8"
@@ -168,9 +168,9 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0xa0_BA3MM[0xa0]",
+        "Name": "pad0xb0_4R83T[0xb0]",
         "Type": "char",
-        "Size": "0xa0",
+        "Size": "0xb0",
         "Offset": "0x110"
       }
     ]
@@ -184,12 +184,12 @@
   },
   "SeasonProgressionUIService": {
     "Super": "Actor",
-    "FullSize": "0x588",
+    "FullSize": "0x5a8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x1c0",
+    "ClassSize": "0x1e0",
     "Attributes": [
       {
-        "Name": "pad0x30_JML6V[0x30]",
+        "Name": "pad0x30_VCM76[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x3c8"
@@ -201,9 +201,9 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x188_I4IWV[0x188]",
+        "Name": "pad0x1a8_0T0YP[0x1a8]",
         "Type": "char",
-        "Size": "0x188",
+        "Size": "0x1a8",
         "Offset": "0x400"
       }
     ]

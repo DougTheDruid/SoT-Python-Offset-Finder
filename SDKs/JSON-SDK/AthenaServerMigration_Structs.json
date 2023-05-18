@@ -29,7 +29,7 @@
     "Attributes": []
   },
   "AddedPendingIncomingInvaderCrewEvent": {
-    "ClassSize": "0x34",
+    "ClassSize": "0x48",
     "Attributes": []
   },
   "ServerMigrationAboutToStartEvent": {

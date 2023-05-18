@@ -3,10 +3,10 @@
 BP_PetChestInteraction_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x660'
+    Offset: '0x6c0'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x668'
-  InheritedSize: '0x660'
+  FullSize: '0x6c8'
+  InheritedSize: '0x6c0'
   Super: PetChestInteraction

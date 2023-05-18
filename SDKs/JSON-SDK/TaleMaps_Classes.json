@@ -6,7 +6,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x20_MBPH5[0x20]",
+        "Name": "pad0x20_QKQFW[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x98"
@@ -120,7 +120,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_BIQ9Z[0x3]",
+        "Name": "pad0x3_48CIM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -159,7 +159,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x50_F2PXQ[0x50]",
+        "Name": "pad0x50_U0XZT[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0xa8"
@@ -225,9 +225,9 @@
   },
   "TaleQuestAddTornMapStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0x158",
+    "FullSize": "0x170",
     "InheritedSize": "0x98",
-    "ClassSize": "0xc0",
+    "ClassSize": "0xd8",
     "Attributes": []
   },
   "TaleQuestAddTradeRouteMapStep": {
@@ -379,6 +379,13 @@
     "FullSize": "0xa0",
     "InheritedSize": "0x98",
     "ClassSize": "0x8",
+    "Attributes": []
+  },
+  "TaleQuestTornMapFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
     "Attributes": []
   },
   "TaleQuestTriggerNamedChecklistEventStep": {

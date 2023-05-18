@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x2c8 (Full Size[0x720] - InheritedSize[0x458]
+// Size 0x338 (Full Size[0x790] - InheritedSize[0x458]
 class BP_Shroudbreaker_OnShip_C: public ShroudBreakerOnShip
 {
 public:
@@ -22,31 +22,31 @@ public:
 	Class ParticleSystemComponent*                               vfx_ShroudBreaker_OnShip_stage1;                   // 0x4a0(0x8)
 	Class MusicZoneComponent*                                    MusicZone;                                         // 0x4a8(0x8)
 	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x4b0(0x8)
-	Struct ObjectMessagingHandle                                 ActivateShroudbreakerHandle;                       // 0x4b8(0x48)
-	Struct ObjectMessagingHandle                                 DeactivateShroudbreakerHandle;                     // 0x500(0x48)
-	Struct ObjectMessagingHandle                                 ActivateEffectsHandle;                             // 0x548(0x48)
-	Struct ObjectMessagingHandle                                 DeactivateEffectsHandle;                           // 0x590(0x48)
-	Struct ObjectMessagingHandle                                 ShipDestroyedHandle;                               // 0x5d8(0x48)
-	Class Actor*                                                 ParentShipActor;                                   // 0x620(0x8)
-	bool                                                         MusicZoneActive;                                   // 0x628(0x1)
-	char                                                         pad0x3_3LHN1[0x3];                                 // 0x629(0x3)
-	float                                                        GemEmissiveOn;                                     // 0x62c(0x4)
-	Class MaterialInstanceDynamic*                               Shroudbreaker Material;                            // 0x630(0x8)
-	float                                                        GemEmissiveOff;                                    // 0x638(0x4)
-	bool                                                         ShroudBreakerEffectsActive;                        // 0x63c(0x1)
-	bool                                                         ShroudBreakerDeactivate;                           // 0x63d(0x1)
-	char                                                         pad0x2_G9OE7[0x2];                                 // 0x63e(0x2)
-	Struct ObjectMessagingHandle                                 PlayerEnteredIslandVincityEventHandle;             // 0x640(0x48)
-	Struct ObjectMessagingHandle                                 PlayerLeftIslandVincityEventHandle;                // 0x688(0x48)
-	TArray<Assetclass ShipProgressSpawnLoactionsAssetID>         ShipProgressSpawnLoactionsAssetID;                 // 0x6d0(0x10)
-	TArray<class ProgressShipSpawnLocation*>                     ShipProgressSpawnLocationsReference;               // 0x6e0(0x10)
-	Class MaterialInstanceDynamic*                               ShieldMaterial;                                    // 0x6f0(0x8)
-	Class MaterialInstanceDynamic*                               ShieldPulseMaterial;                               // 0x6f8(0x8)
-	int                                                          DEBUG_Stage;                                       // 0x700(0x4)
-	float                                                        FinalStageActivationDelay;                         // 0x704(0x4)
-	Class SoundBase*                                             NewVar;                                            // 0x708(0x8)
-	Class ShipHullAudio*                                         ShipHullAudio;                                     // 0x710(0x8)
-	Class WwiseEvent*                                            ShroudBreakerAmbientLoopingWwiseEvent;             // 0x718(0x8)
+	Struct ObjectMessagingHandle                                 ActivateShroudbreakerHandle;                       // 0x4b8(0x58)
+	Struct ObjectMessagingHandle                                 DeactivateShroudbreakerHandle;                     // 0x510(0x58)
+	Struct ObjectMessagingHandle                                 ActivateEffectsHandle;                             // 0x568(0x58)
+	Struct ObjectMessagingHandle                                 DeactivateEffectsHandle;                           // 0x5c0(0x58)
+	Struct ObjectMessagingHandle                                 ShipDestroyedHandle;                               // 0x618(0x58)
+	Class Actor*                                                 ParentShipActor;                                   // 0x670(0x8)
+	bool                                                         MusicZoneActive;                                   // 0x678(0x1)
+	char                                                         pad0x3_DNAHU[0x3];                                 // 0x679(0x3)
+	float                                                        GemEmissiveOn;                                     // 0x67c(0x4)
+	Class MaterialInstanceDynamic*                               Shroudbreaker Material;                            // 0x680(0x8)
+	float                                                        GemEmissiveOff;                                    // 0x688(0x4)
+	bool                                                         ShroudBreakerEffectsActive;                        // 0x68c(0x1)
+	bool                                                         ShroudBreakerDeactivate;                           // 0x68d(0x1)
+	char                                                         pad0x2_HU07O[0x2];                                 // 0x68e(0x2)
+	Struct ObjectMessagingHandle                                 PlayerEnteredIslandVincityEventHandle;             // 0x690(0x58)
+	Struct ObjectMessagingHandle                                 PlayerLeftIslandVincityEventHandle;                // 0x6e8(0x58)
+	TArray<Assetclass ShipProgressSpawnLoactionsAssetID>         ShipProgressSpawnLoactionsAssetID;                 // 0x740(0x10)
+	TArray<class ProgressShipSpawnLocation*>                     ShipProgressSpawnLocationsReference;               // 0x750(0x10)
+	Class MaterialInstanceDynamic*                               ShieldMaterial;                                    // 0x760(0x8)
+	Class MaterialInstanceDynamic*                               ShieldPulseMaterial;                               // 0x768(0x8)
+	int                                                          DEBUG_Stage;                                       // 0x770(0x4)
+	float                                                        FinalStageActivationDelay;                         // 0x774(0x4)
+	Class SoundBase*                                             NewVar;                                            // 0x778(0x8)
+	Class ShipHullAudio*                                         ShipHullAudio;                                     // 0x780(0x8)
+	Class WwiseEvent*                                            ShroudBreakerAmbientLoopingWwiseEvent;             // 0x788(0x8)
 };
 
 

@@ -1,111 +1,111 @@
 {
   "BP_Prompt_CosmeticPurchased_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x300",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x1e8",
+    "FullSize": "0x350",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x218",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12b_BGKJO[0x12b]",
+        "Name": "pad0x4c_MI3JH[0x4c]",
         "Type": "char",
-        "Size": "0x12b",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_OfferPurchasedEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_ShopClosedEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x168"
+        "Size": "0x58",
+        "Offset": "0x198"
       },
       {
         "Name": "Handle_PlayerEntitlementUpdatedEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x1b0"
+        "Size": "0x58",
+        "Offset": "0x1f0"
       },
       {
         "Name": "Prompt_CosmeticPurchased",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x1f8"
+        "Offset": "0x248"
       },
       {
         "Name": "Prompt_VisitCustomizationChest",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x260"
+        "Offset": "0x2b0"
       },
       {
         "Name": "AccessKey",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x2c8"
+        "Offset": "0x318"
       },
       {
         "Name": "CategoryTypes",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
-        "Offset": "0x2d0"
+        "Offset": "0x320"
       },
       {
         "Name": "PurchasedEntitlementIds",
         "Type": "TArray<Str PurchasedEntitlementIds>",
         "Size": "0x10",
-        "Offset": "0x2e0"
+        "Offset": "0x330"
       },
       {
         "Name": "DelayUntilPromptDisplays",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2f0"
+        "Offset": "0x340"
       },
       {
         "Name": "DelayBetweenPrompts",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2f4"
+        "Offset": "0x344"
       },
       {
         "Name": "PromptDisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2f8"
+        "Offset": "0x348"
       },
       {
         "Name": "CosmeticPurchased",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2fc"
+        "Offset": "0x34c"
       },
       {
         "Name": "PromptInfoSet",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2fd"
+        "Offset": "0x34d"
       },
       {
         "Name": "DisplayingPrompts",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2fe"
+        "Offset": "0x34e"
       },
       {
         "Name": "ProcessingPurchase",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2ff"
+        "Offset": "0x34f"
       }
     ]
   },

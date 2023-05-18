@@ -1,21 +1,51 @@
 {
   "BP_Tutorial_Tavern_Stranger_NPC_C": {
     "Super": "TutorialTavernStrangerNPC",
-    "FullSize": "0x858",
-    "InheritedSize": "0x7f0",
+    "FullSize": "0x8a0",
+    "InheritedSize": "0x838",
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x838"
       },
       {
-        "Name": "pad0x60_07KBG[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x7f8"
+        "Name": "SolidHits",
+        "Type": "Class CapsuleComponent*",
+        "Size": "0x8",
+        "Offset": "0x840"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x848"
+      },
+      {
+        "Name": "NPCDialog",
+        "Type": "Class NPCDialogComponent*",
+        "Size": "0x8",
+        "Offset": "0x850"
+      },
+      {
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
+        "Offset": "0x858"
+      },
+      {
+        "Name": "MysteriousStranger",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x860"
+      },
+      {
+        "Name": "CutSceneActor",
+        "Type": "Class CutSceneActor*",
+        "Size": "0x8",
+        "Offset": "0x898"
       }
     ]
   },

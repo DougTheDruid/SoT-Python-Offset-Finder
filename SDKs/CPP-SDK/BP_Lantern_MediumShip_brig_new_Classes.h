@@ -6,22 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0 (Full Size[0x74d] - InheritedSize[0x74d]
-class BP_Lantern_MediumShip_brig_new_3_C: public None
+// Size 0x0 (Full Size[0x77d] - InheritedSize[0x77d]
+class BP_Lantern_MediumShip_brig_new_C: public BP_InteractableShipLantern_C
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x74d] - InheritedSize[0x74d]
-class BP_Lantern_MediumShip_brig_new_2_C: public None
+// Size 0x0 (Full Size[0x77d] - InheritedSize[0x77d]
+class BP_Lantern_MediumShip_brig_new_2_C: public BP_InteractableShipLantern_C
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x74d] - InheritedSize[0x74d]
-class BP_Lantern_MediumShip_brig_new_C: public None
+// Size 0x0 (Full Size[0x77d] - InheritedSize[0x77d]
+class BP_Lantern_MediumShip_brig_new_3_C: public BP_InteractableShipLantern_C
 {
 public:
 };

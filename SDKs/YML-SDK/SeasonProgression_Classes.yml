@@ -8,7 +8,7 @@ IsExcludedFromSeasonProgressionStatCondition:
   Super: TargetedStatCondition
 PlayerSeasonProgressionComponent:
   Attributes: []
-  ClassSize: '0xc0'
-  FullSize: '0x188'
+  ClassSize: '0xd0'
+  FullSize: '0x198'
   InheritedSize: '0xc8'
   Super: ActorComponent

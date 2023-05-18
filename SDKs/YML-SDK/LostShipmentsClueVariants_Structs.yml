@@ -47,6 +47,6 @@ TextEntryWithLayout:
     Type: Struct FText
   - Name: TextLayout
     Offset: '0x38'
-    Size: '0x38'
+    Size: '0x3c'
     Type: Struct TreasureMapWidgetText
-  ClassSize: '0x70'
+  ClassSize: '0x78'

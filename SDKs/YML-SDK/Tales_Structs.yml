@@ -208,7 +208,7 @@ SnapshottedActorData:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_46Q3P[0x6]
+  - Name: pad0x6_L990X[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -292,7 +292,7 @@ TaleQuestDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OJ5ZE[0x4]
+  - Name: pad0x4_5SN7O[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -386,7 +386,7 @@ TaleQuestQueryableStateDataInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_TDXCK[0x3]
+  - Name: pad0x3_3F1BF[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char

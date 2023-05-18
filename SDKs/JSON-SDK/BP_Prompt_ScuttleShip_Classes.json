@@ -1,75 +1,75 @@
 {
   "BP_Prompt_ScuttleShip_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x295",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x17d",
+    "FullSize": "0x2d5",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x19d",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12a_Y5CC8[0x12a]",
+        "Name": "pad0x4c_T6YNS[0x4c]",
         "Type": "char",
-        "Size": "0x12a",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_CharacterDeadEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "Handle_WaitingToSpawnEndedEvent",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x168"
+        "Size": "0x58",
+        "Offset": "0x198"
       },
       {
         "Name": "Prompt_ArrivedOnFerry",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x1b0"
+        "Offset": "0x1f0"
       },
       {
         "Name": "Prompt_SuggestScuttling",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x218"
+        "Offset": "0x258"
       },
       {
         "Name": "SpawnKillTimeThreshold",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x280"
+        "Offset": "0x2c0"
       },
       {
         "Name": "RepeatDeathThreshold",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x284"
+        "Offset": "0x2c4"
       },
       {
         "Name": "TimeOfLastPvPDeath",
         "Type": "Struct GameTime",
         "Size": "0x8",
-        "Offset": "0x288"
+        "Offset": "0x2c8"
       },
       {
         "Name": "NumRecentDeaths",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x290"
+        "Offset": "0x2d0"
       },
       {
         "Name": "DiedEnough",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x294"
+        "Offset": "0x2d4"
       }
     ]
   },

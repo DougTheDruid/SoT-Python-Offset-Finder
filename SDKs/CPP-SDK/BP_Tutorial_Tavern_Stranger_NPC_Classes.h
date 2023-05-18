@@ -6,12 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x68 (Full Size[0x858] - InheritedSize[0x7f0]
+// Size 0x68 (Full Size[0x8a0] - InheritedSize[0x838]
 class BP_Tutorial_Tavern_Stranger_NPC_C: public TutorialTavernStrangerNPC
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x7f0(0x8)
-	char                                                         pad0x60_07KBG[0x60];                               // 0x7f8(0x60)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x838(0x8)
+	Class CapsuleComponent*                                      SolidHits;                                         // 0x840(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x848(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x850(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x858(0x8)
+	Struct FText                                                 MysteriousStranger;                                // 0x860(0x38)
+	Class CutSceneActor*                                         CutSceneActor;                                     // 0x898(0x8)
 };
 
 

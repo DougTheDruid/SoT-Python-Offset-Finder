@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x600] - InheritedSize[0x5f8]
+// Size 0x8 (Full Size[0x610] - InheritedSize[0x608]
 class BP_IslandCosmeticChest_C: public ShipCustomizationChest
 {
 public:
-	Class HarbourComponent*                                      None;                                              // 0x5f8(0x8)
+	Class HarbourComponent*                                      Harbour;                                           // 0x608(0x8)
 };
 
 

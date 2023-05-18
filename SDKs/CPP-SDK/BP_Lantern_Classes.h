@@ -6,28 +6,28 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x98 (Full Size[0x9d8] - InheritedSize[0x940]
+// Size 0x98 (Full Size[0xa38] - InheritedSize[0x9a0]
 class BP_Lantern_C: public Lantern
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x940(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x948(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x950(0x8)
-	Class AmbientLightSourceComponent*                           None;                                              // 0x958(0x8)
-	Class SpotLightComponent*                                    None;                                              // 0x960(0x8)
-	Class UsableWieldableComponent*                              None;                                              // 0x968(0x8)
-	Class MaterialInstanceDynamic*                               None;                                              // 0x970(0x8)
-	float                                                        None;                                              // 0x978(0x4)
-	char                                                         pad0x4_3TNNN[0x4];                                 // 0x97c(0x4)
-	Class MaterialInstanceDynamic*                               None;                                              // 0x980(0x8)
-	float                                                        None;                                              // 0x988(0x4)
-	float                                                        None;                                              // 0x98c(0x4)
-	float                                                        None;                                              // 0x990(0x4)
-	Struct LinearColor                                           None;                                              // 0x994(0x10)
-	Struct LinearColor                                           None;                                              // 0x9a4(0x10)
-	Struct LinearColor                                           None;                                              // 0x9b4(0x10)
-	char                                                         pad0x4_IG9G9[0x4];                                 // 0x9c4(0x4)
-	TArray<class MaterialInstanceDynamic*>                       None;                                              // 0x9c8(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x9a0(0x8)
+	Class StaticMeshComponent*                                   LanternTriggerGlow;                                // 0x9a8(0x8)
+	Class StaticMeshComponent*                                   LanternGlow;                                       // 0x9b0(0x8)
+	Class AmbientLightSourceComponent*                           AmbientLightSource;                                // 0x9b8(0x8)
+	Class SpotLightComponent*                                    SpotLight;                                         // 0x9c0(0x8)
+	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x9c8(0x8)
+	Class MaterialInstanceDynamic*                               LanternGlowDynamicMaterial;                        // 0x9d0(0x8)
+	float                                                        EmissiveInt_threshold;                             // 0x9d8(0x4)
+	char                                                         pad0x4_VXZL0[0x4];                                 // 0x9dc(0x4)
+	Class MaterialInstanceDynamic*                               LanternTriggerGlowDynamicMaterial;                 // 0x9e0(0x8)
+	float                                                        TriggerGlowDuration;                               // 0x9e8(0x4)
+	float                                                        TriggerGlowRampInDuration;                         // 0x9ec(0x4)
+	float                                                        TriggerGlowRampOutDuration;                        // 0x9f0(0x4)
+	Struct LinearColor                                           DefaultSpotlightColour;                            // 0x9f4(0x10)
+	Struct LinearColor                                           DefaultAmbientLightColour;                         // 0xa04(0x10)
+	Struct LinearColor                                           DefaultGlowColour;                                 // 0xa14(0x10)
+	char                                                         pad0x4_MN7IL[0x4];                                 // 0xa24(0x4)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0xa28(0x10)
 };
 
 

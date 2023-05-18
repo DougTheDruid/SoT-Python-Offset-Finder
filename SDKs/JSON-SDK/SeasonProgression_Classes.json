@@ -8,9 +8,9 @@
   },
   "PlayerSeasonProgressionComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x188",
+    "FullSize": "0x198",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xc0",
+    "ClassSize": "0xd0",
     "Attributes": []
   },
   "DougTheDruid": {

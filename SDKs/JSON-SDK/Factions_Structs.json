@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_D9STC[0x3]",
+        "Name": "pad0x3_AJRQT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -21,7 +21,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_FR7A4[0x4]",
+        "Name": "pad0x4_HFRGR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -174,7 +174,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_2HNVM[0x7]",
+        "Name": "pad0x7_5KV08[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -209,7 +209,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_LL5ZA[0x3]",
+        "Name": "pad0x3_8PAHS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -379,6 +379,51 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "FactionBlockedTaleVoteConsensusReached": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FactionBlockedTaleVoteAdded": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Voter",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FactionVoteAdded": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Voter",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "VotePassed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
       }
     ]
   },

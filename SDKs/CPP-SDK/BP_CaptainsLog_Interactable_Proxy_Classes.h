@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x750] - InheritedSize[0x748]
+// Size 0x8 (Full Size[0x780] - InheritedSize[0x778]
 class BP_CaptainsLog_Interactable_Proxy_C: public CaptainsLogbookInteractableProxy
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x748(0x8)
+	Class SceneComponent*                                        PlayerPosition;                                    // 0x778(0x8)
 };
 
 

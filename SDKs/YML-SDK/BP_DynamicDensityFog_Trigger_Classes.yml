@@ -2,22 +2,22 @@
 # https://github.com/DougTheDruid
 BP_DynamicDensityFog_Trigger_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: DynamicTrigger
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: FogVolume
     Offset: '0x3e0'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: BlueprintGeneratedClass BP_DynamicDensityFogVolume_C*
   ClassSize: '0x20'
   FullSize: '0x3e8'
   InheritedSize: '0x3c8'

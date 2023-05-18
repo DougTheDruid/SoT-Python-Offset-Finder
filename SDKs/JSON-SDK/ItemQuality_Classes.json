@@ -8,12 +8,12 @@
   },
   "ItemQualityComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x108",
+    "FullSize": "0x110",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x40",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_4PM43[0x8]",
+        "Name": "pad0x8_TC5E0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -25,7 +25,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_9GNT6[0x7]",
+        "Name": "pad0x7_WNB55[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -47,6 +47,12 @@
         "Type": "TArray<struct CompanySpecificComplexItemQualityLevelsHandin>",
         "Size": "0x10",
         "Offset": "0xf8"
+      },
+      {
+        "Name": "GuildSettings",
+        "Type": "Class GuildSettings*",
+        "Size": "0x8",
+        "Offset": "0x108"
       }
     ]
   },

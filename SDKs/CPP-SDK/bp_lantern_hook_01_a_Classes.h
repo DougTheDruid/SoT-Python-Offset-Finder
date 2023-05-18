@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class bp_lantern_hook_01_a_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   tls_lantern_01_d;                                  // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3d0(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x3d8(0x8)
 };
 
 

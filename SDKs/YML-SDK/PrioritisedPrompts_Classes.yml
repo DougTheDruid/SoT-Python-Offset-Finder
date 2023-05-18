@@ -6,7 +6,7 @@ BasePromptCoordinator:
     Offset: '0x28'
     Size: '0x8'
     Type: Class AthenaPlayerController*
-  - Name: pad0x10_AWG7Z[0x10]
+  - Name: pad0x10_HK81X[0x10]
     Offset: '0x30'
     Size: '0x10'
     Type: char
@@ -18,17 +18,23 @@ BasePromptCoordinator:
     Offset: '0x48'
     Size: '0x8'
     Type: Class Character*
-  - Name: pad0xa8_JT9A2[0xa8]
+  - Name: pad0xc8_GMC98[0xc8]
     Offset: '0x50'
-    Size: '0xa8'
+    Size: '0xc8'
     Type: char
-  ClassSize: '0xd0'
-  FullSize: '0xf8'
+  ClassSize: '0xf0'
+  FullSize: '0x118'
   InheritedSize: '0x28'
   Super: Object
+GenericVoyagePrioritisedPrompt_PromptAccessKey:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
 GetPromptsLocalService:
   Attributes:
-  - Name: pad0x10_DMDD5[0x10]
+  - Name: pad0x10_7JHCX[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -42,7 +48,7 @@ GetPromptsLocalService:
   Super: BlueprintAsyncActionBase
 PrioritisedPromptsManager:
   Attributes:
-  - Name: pad0x8_GQ9D9[0x8]
+  - Name: pad0x8_ZG25D[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -54,7 +60,7 @@ PrioritisedPromptsManager:
     Offset: '0x40'
     Size: '0x8'
     Type: Class PlayerController*
-  - Name: pad0x30_TDWDJ[0x30]
+  - Name: pad0x30_XW90B[0x30]
     Offset: '0x48'
     Size: '0x30'
     Type: char

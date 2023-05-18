@@ -2,67 +2,67 @@
 # https://github.com/DougTheDruid
 BP_HullDamage_C:
   Attributes:
-  - Name: None
-    Offset: '0x5b0'
+  - Name: UberGraphFrame
+    Offset: '0x5d0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0x5b8'
-    Size: '0x8'
-    Type: Class HitReactionComponent*
-  - Name: None
-    Offset: '0x5c0'
-    Size: '0x8'
-    Type: Class BakedDecalComponent*
-  - Name: None
-    Offset: '0x5c8'
-    Size: '0x10'
-    Type: TArray<class Texture2D*>
-  - Name: None
+  - Name: HitReaction
     Offset: '0x5d8'
     Size: '0x8'
-    Type: Class ParticleSystem*
-  - Name: None
+    Type: Class HitReactionComponent*
+  - Name: ImpactDecalComponent
     Offset: '0x5e0'
+    Size: '0x8'
+    Type: Class BakedDecalComponent*
+  - Name: Persistent Damage Decals
+    Offset: '0x5e8'
+    Size: '0x10'
+    Type: TArray<class Texture2D*>
+  - Name: Damage VFX
+    Offset: '0x5f8'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  - Name: Deferred Damage Decals
+    Offset: '0x600'
     Size: '0x10'
     Type: TArray<class MaterialInstance*>
-  - Name: None
-    Offset: '0x5f0'
+  - Name: Deferred Min Size
+    Offset: '0x610'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x5f4'
+  - Name: Deferred Max Size
+    Offset: '0x614'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x5f8'
+  - Name: Persistent Min Size
+    Offset: '0x618'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x5fc'
+  - Name: Persistent Max Size
+    Offset: '0x61c'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x600'
+  - Name: RandomDecalStream
+    Offset: '0x620'
     Size: '0x8'
     Type: Struct RandomStream
-  - Name: None
-    Offset: '0x608'
+  - Name: TEST_HitStrength
+    Offset: '0x628'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x60c'
+  - Name: TEST_PenetrationThreshold
+    Offset: '0x62c'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x610'
+  - Name: ParentShip
+    Offset: '0x630'
     Size: '0x8'
     Type: Class Ship*
-  - Name: None
-    Offset: '0x618'
+  - Name: CannonballHitEmitter
+    Offset: '0x638'
     Size: '0x20'
     Type: Struct WwiseEmitter
   ClassSize: '0x88'
-  FullSize: '0x638'
-  InheritedSize: '0x5b0'
+  FullSize: '0x658'
+  InheritedSize: '0x5d0'
   Super: HullDamage

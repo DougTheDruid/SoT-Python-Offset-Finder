@@ -44,7 +44,7 @@ GeneratedFireworkData:
     Offset: '0xc'
     Size: '0x14'
     Type: Struct FireworkAmbientLightData
-  - Name: pad0x8_IRQ26[0x8]
+  - Name: pad0x8_7SYAL[0x8]
     Offset: '0x20'
     Size: '0x8'
     Type: char
@@ -60,7 +60,7 @@ GeneratedFireworkData:
     Offset: '0x40'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: pad0x8_PK02K[0x8]
+  - Name: pad0x8_ZJ2E8[0x8]
     Offset: '0x48'
     Size: '0x8'
     Type: char

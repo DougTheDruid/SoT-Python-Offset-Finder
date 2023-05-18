@@ -1,4 +1,38 @@
 {
+  "RowboatLiveryPickerDataAssetConditions": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RowboatLiveryPickerDataAsset",
+        "Type": "Class RowboatLiveryPickerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Feature",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "RowboatLiveryByWeight": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "RowboatDamageEffectData": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -181,6 +215,10 @@
   },
   "QuestVariableWatercraft": {
     "ClassSize": "0x30",
+    "Attributes": []
+  },
+  "EventRowboatLoaded": {
+    "ClassSize": "0x1",
     "Attributes": []
   },
   "EventOarStrokeEnded": {

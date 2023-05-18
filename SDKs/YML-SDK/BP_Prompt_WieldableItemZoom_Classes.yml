@@ -3,54 +3,54 @@
 BP_Prompt_WieldableItemZoom_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_T584C[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_DDWRN[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: PromptAccessKey
-    Offset: '0x120'
+    Offset: '0x140'
     Size: '0x8'
     Type: class
   - Name: WieldableItemEquipEvent
-    Offset: '0x128'
-    Size: '0x48'
+    Offset: '0x148'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: WieldingZoomableWieldable
-    Offset: '0x170'
+    Offset: '0x1a0'
     Size: '0x1'
     Type: bool
   - Name: StatCompleted
-    Offset: '0x171'
+    Offset: '0x1a1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_SM99J[0x6]
-    Offset: '0x172'
+  - Name: pad0x6_RJK89[0x6]
+    Offset: '0x1a2'
     Size: '0x6'
     Type: char
   - Name: CharacterDispatcher
-    Offset: '0x178'
+    Offset: '0x1a8'
     Size: '0x8'
     Type: Struct ObjectMessagingDispatcherHandle
   - Name: HasShown
-    Offset: '0x180'
+    Offset: '0x1b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3PLTQ[0x7]
-    Offset: '0x181'
+  - Name: pad0x7_1SANR[0x7]
+    Offset: '0x1b1'
     Size: '0x7'
     Type: char
   - Name: Prompt
-    Offset: '0x188'
+    Offset: '0x1b8'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: ShowForItemCategory
-    Offset: '0x1f0'
+    Offset: '0x220'
     Size: '0x8'
     Type: class
-  ClassSize: '0xe0'
-  FullSize: '0x1f8'
-  InheritedSize: '0x118'
+  ClassSize: '0xf0'
+  FullSize: '0x228'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

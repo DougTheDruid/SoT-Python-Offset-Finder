@@ -3,54 +3,54 @@
 BP_PromptCoordinator_Hourglass_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12a_FCCKE[0x12a]
-    Offset: '0x120'
-    Size: '0x12a'
+  - Name: pad0x4c_CVHXA[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: HandlePlayerApproachesHourglass
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: PlayerInRange
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x1'
     Type: bool
   - Name: PromptEvaluated
-    Offset: '0x169'
+    Offset: '0x199'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_11TTW[0x2]
-    Offset: '0x16a'
+  - Name: pad0x2_BMCHS[0x2]
+    Offset: '0x19a'
     Size: '0x2'
     Type: char
   - Name: Prompt Delay
-    Offset: '0x16c'
+    Offset: '0x19c'
     Size: '0x4'
     Type: float
   - Name: PromptHourglassTutorial1
-    Offset: '0x170'
+    Offset: '0x1a0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: PromptDisplayDuration
-    Offset: '0x1d8'
+    Offset: '0x208'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_3TH9H[0x4]
-    Offset: '0x1dc'
+  - Name: pad0x4_V4LM9[0x4]
+    Offset: '0x20c'
     Size: '0x4'
     Type: char
   - Name: HandleChoseFaction
-    Offset: '0x1e0'
-    Size: '0x48'
+    Offset: '0x210'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: FactionChosen
-    Offset: '0x228'
+    Offset: '0x268'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x111'
-  FullSize: '0x229'
-  InheritedSize: '0x118'
+  ClassSize: '0x131'
+  FullSize: '0x269'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

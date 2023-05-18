@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AddedPendingIncomingInvaderCrewEvent:
   Attributes: []
-  ClassSize: '0x34'
+  ClassSize: '0x48'
 AthenaServerMigrationClientContext:
   Attributes:
   - Name: StampId

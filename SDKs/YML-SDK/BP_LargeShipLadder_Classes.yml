@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_LargeShipLadder_C:
   Attributes:
-  - Name: None
-    Offset: '0x5c0'
+  - Name: Interactable
+    Offset: '0x5e0'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
-    Offset: '0x5c8'
+  - Name: OffTopSplineComponentPositions
+    Offset: '0x5e8'
     Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
-    Offset: '0x5d8'
+    Type: TArray<struct OffTopSplineComponentPositions>
+  - Name: OnTopSplineComponentPositions
+    Offset: '0x5f8'
     Size: '0x10'
-    Type: TArray<struct None>
+    Type: TArray<struct OnTopSplineComponentPositions>
   ClassSize: '0x28'
-  FullSize: '0x5e8'
-  InheritedSize: '0x5c0'
+  FullSize: '0x608'
+  InheritedSize: '0x5e0'
   Super: Ladder

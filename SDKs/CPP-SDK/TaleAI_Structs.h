@@ -11,10 +11,10 @@ struct SpawnAICustomOnDespawnTaskData
 {
 public:
 	int                                                          Despawn_Index;                                     // 0x0(0x4)
-	char                                                         pad0x4_069V0[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_79JVC[0x4];                                 // 0x4(0x4)
 	Class Pawn*                                                  Despawn_Pawn;                                      // 0x8(0x8)
 	byte                                                         Despawn_Reason;                                    // 0x10(0x1)
-	char                                                         pad0x7_1XWTG[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_W57SA[0x7];                                 // 0x11(0x7)
 	Class TaleQuestStepDesc*                                     Body;                                              // 0x18(0x8)
 };
 
@@ -24,9 +24,17 @@ struct SpawnAICustomOnSpawnTaskData
 {
 public:
 	int                                                          Spawn_Index;                                       // 0x0(0x4)
-	char                                                         pad0x4_CPJWQ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_83JVG[0x4];                                 // 0x4(0x4)
 	Class Pawn*                                                  Spawn_Pawn;                                        // 0x8(0x8)
 	Class TaleQuestStepDesc*                                     Body;                                              // 0x10(0x8)
+};
+
+
+// Size 0x8
+struct SpawnActorCustomOnCompleteWaveTaskData
+{
+public:
+	Class TaleQuestStepDesc*                                     Body;                                              // 0x0(0x8)
 };
 
 
@@ -35,7 +43,7 @@ struct SpawnActorCustomOnTriggerWaveTaskData
 {
 public:
 	int                                                          NumAIToSpawn;                                      // 0x0(0x4)
-	char                                                         pad0x4_SH0V0[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_QVFMR[0x4];                                 // 0x4(0x4)
 	Class TaleQuestStepDesc*                                     Body;                                              // 0x8(0x8)
 };
 
@@ -56,13 +64,14 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 struct SpawnAICustomSetupTaskData
 {
 public:
 	int                                                          MaxAI;                                             // 0x0(0x4)
-	char                                                         pad0x4_TGA2M[0x4];                                 // 0x4(0x4)
-	Class TaleQuestStepDesc*                                     Body;                                              // 0x8(0x8)
+	char                                                         pad0x4_WFIJ5[0x4];                                 // 0x4(0x4)
+	Class TaleAIRegionBase*                                      Region;                                            // 0x8(0x8)
+	Class TaleQuestStepDesc*                                     Body;                                              // 0x10(0x8)
 };
 
 

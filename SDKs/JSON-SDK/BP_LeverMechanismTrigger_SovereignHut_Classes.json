@@ -1,27 +1,27 @@
 {
   "BP_LeverMechanismTrigger_SovereignHut_C": {
     "Super": "SwitchMechanismTrigger",
-    "FullSize": "0x580",
-    "InheritedSize": "0x568",
+    "FullSize": "0x610",
+    "InheritedSize": "0x5f8",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x5f8"
       },
       {
-        "Name": "None",
+        "Name": "LeverMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x600"
       },
       {
-        "Name": "None",
+        "Name": "BaseMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x608"
       }
     ]
   },

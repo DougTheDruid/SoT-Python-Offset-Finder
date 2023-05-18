@@ -7,13 +7,13 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x20 (Full Size[0x428] - InheritedSize[0x408]
-class wsp_mushroom_glow_01_b_C: public None
+class wsp_mushroom_glow_01_b_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
-	Class SceneComponent*                                        None;                                              // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x408(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x418(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x420(0x8)
 };
 
 

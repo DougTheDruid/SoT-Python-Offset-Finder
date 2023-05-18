@@ -22,7 +22,7 @@ class NamedInterfaces: public Object
 public:
 	TArray<struct NamedInterfaces>                               NamedInterfaces;                                   // 0x28(0x10)
 	TArray<struct NamedInterfaceDefs>                            NamedInterfaceDefs;                                // 0x38(0x10)
-	char                                                         pad0x18_YJIBF[0x18];                               // 0x48(0x18)
+	char                                                         pad0x18_Q3ZCH[0x18];                               // 0x48(0x18)
 };
 
 

@@ -58,12 +58,12 @@ public:
 	TArray<Str PlayModeStates>                                   PlayModeStates;                                    // 0x68(0x10)
 	TArray<struct Crews>                                         Crews;                                             // 0x78(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
-	char                                                         pad0x3_YEUOZ[0x3];                                 // 0x89(0x3)
+	char                                                         pad0x3_8NOKH[0x3];                                 // 0x89(0x3)
 	Struct Guid                                                  RequestCorrelationId;                              // 0x8c(0x10)
 };
 
 
-// Size 0xa8
+// Size 0xb8
 struct ServerCrewModel
 {
 public:
@@ -72,18 +72,19 @@ public:
 	Struct Guid                                                  ServerId;                                          // 0x28(0x10)
 	Struct FString                                               ServerAddress;                                     // 0x38(0x10)
 	int                                                          SessionType;                                       // 0x48(0x4)
-	char                                                         pad0x4_WSYG4[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_X8VGQ[0x4];                                 // 0x4c(0x4)
 	TArray<struct Positions>                                     Positions;                                         // 0x50(0x10)
 	TArray<UInt32 Resources>                                     Resources;                                         // 0x60(0x10)
 	byte                                                         PvPFaction;                                        // 0x70(0x1)
-	char                                                         pad0x3_TIQ61[0x3];                                 // 0x71(0x3)
+	char                                                         pad0x3_6UB9T[0x3];                                 // 0x71(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x74(0x4)
 	int                                                          PvPRivalSessionType;                               // 0x78(0x4)
 	Struct Guid                                                  RivalCrewId;                                       // 0x7c(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x8c(0x1)
-	char                                                         pad0x3_BR4JQ[0x3];                                 // 0x8d(0x3)
-	Struct Timespan                                              TimeWaitingForMatch;                               // 0x90(0x8)
-	Struct FString                                               ForcedStamp;                                       // 0x98(0x10)
+	char                                                         pad0x3_3CN19[0x3];                                 // 0x8d(0x3)
+	Struct FString                                               RequestedGameEvent;                                // 0x90(0x10)
+	Struct Timespan                                              TimeWaitingForMatch;                               // 0xa0(0x8)
+	Struct FString                                               ForcedStamp;                                       // 0xa8(0x10)
 };
 
 
@@ -92,7 +93,7 @@ struct ServerCrewResponseModel
 {
 public:
 	byte                                                         ResultCode;                                        // 0x0(0x1)
-	char                                                         pad0x7_GCNUN[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_LQC0R[0x7];                                 // 0x1(0x7)
 	TArray<struct Crews>                                         Crews;                                             // 0x8(0x10)
 	Struct Timespan                                              RetryAfter;                                        // 0x68(0x8)
 	Struct Timespan                                              MigrationThreshold;                                // 0x70(0x8)
@@ -107,7 +108,7 @@ public:
 };
 
 
-// Size 0xe0
+// Size 0x100
 struct ServerCrewRequestModel
 {
 public:
@@ -126,6 +127,36 @@ public:
 	TArray<struct Crews>                                         Crews;                                             // 0x98(0x10)
 	Struct Timespan                                              Uptime;                                            // 0xa8(0x8)
 	Struct ServerContendedModel                                  Contended;                                         // 0xb0(0x30)
+	Struct GameEventAvailabilityModel                            GameEvents;                                        // 0xe0(0x20)
+};
+
+
+// Size 0x20
+struct GameEventAvailabilityModel
+{
+public:
+	TArray<struct MainEvents>                                    MainEvents;                                        // 0x0(0x10)
+	TArray<struct SubEvents>                                     SubEvents;                                         // 0x10(0x10)
+};
+
+
+// Size 0x18
+struct GameSubEventTypeModel
+{
+public:
+	Struct FString                                               EventName;                                         // 0x0(0x10)
+	int                                                          MaxCount;                                          // 0x10(0x4)
+};
+
+
+// Size 0x28
+struct GameMainEventTypeModel
+{
+public:
+	Struct FString                                               EventName;                                         // 0x0(0x10)
+	TArray<Str ExcludedEvents>                                   ExcludedEvents;                                    // 0x10(0x10)
+	byte                                                         Status;                                            // 0x20(0x1)
+	byte                                                         ShipSizeLimit;                                     // 0x21(0x1)
 };
 
 
@@ -155,9 +186,9 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	int                                                          SessionType;                                       // 0x10(0x4)
 	byte                                                         AlignedFaction;                                    // 0x14(0x1)
-	char                                                         pad0x3_X8OC3[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_HHYEF[0x3];                                 // 0x15(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x18(0x4)
-	char                                                         pad0x4_AB0ZA[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_AGPII[0x4];                                 // 0x1c(0x4)
 	Struct Timespan                                              TimeInMatchmaking;                                 // 0x20(0x8)
 	Struct FString                                               ForcedStamp;                                       // 0x28(0x10)
 };

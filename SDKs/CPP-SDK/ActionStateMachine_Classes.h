@@ -20,6 +20,13 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActionStateInitialStateCreatorDefinition: public Object
+{
+public:
+};
+
+
 // Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
 class TestActionStateCreatorDefinition: public ActionStateCreatorDefinition
 {
@@ -69,24 +76,36 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActionStateMachineInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x48 (Full Size[0x8a0] - InheritedSize[0x858]
+class SelfInitialisingActionStateMachineComponent: public ActionStateMachineComponent
+{
+public:
+	char                                                         pad0x8_M47DP[0x8];                                 // 0x858(0x8)
+	Class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x860(0x8)
+	class                                                        ActionStateCreatorDefinition;                      // 0x868(0x8)
+	class                                                        ActionStateInitialStateCreatorDefinition;          // 0x870(0x8)
+	char                                                         pad0x28_9WO37[0x28];                               // 0x878(0x28)
+};
+
+
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class CustomClientValidityCheckCallback: public Object
 {
 public:
 	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
-	char                                                         pad0x7_9XBZ8[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_2FC37[0x7];                                 // 0x29(0x7)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ActionStateMachineComponentTestFunctions: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActionStateMachineInterface: public Interface
 {
 public:
 };

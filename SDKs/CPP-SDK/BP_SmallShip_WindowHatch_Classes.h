@@ -6,14 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20 (Full Size[0x588] - InheritedSize[0x568]
+// Size 0x20 (Full Size[0x618] - InheritedSize[0x5f8]
 class BP_SmallShip_WindowHatch_C: public SwitchMechanismTrigger
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x568(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x570(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x578(0x8)
-	Class InteractableComponent*                                 None;                                              // 0x580(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x5f8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x600(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x608(0x8)
+	Class InteractableComponent*                                 None;                                              // 0x610(0x8)
 };
 
 

@@ -1,201 +1,201 @@
 {
   "BP_Prompt_MaidenVoyage_FishingRodTutorial_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x628",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x510",
+    "FullSize": "0x6e8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x5b0",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12a_F5V92[0x12a]",
+        "Name": "pad0x4c_YDFLP[0x4c]",
         "Type": "char",
-        "Size": "0x12a",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "State_RodWielded",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x140"
       },
       {
         "Name": "State_FishBattling",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x121"
+        "Offset": "0x141"
       },
       {
         "Name": "State_CastRod",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x122"
+        "Offset": "0x142"
       },
       {
         "Name": "State_CaughtFish",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x123"
+        "Offset": "0x143"
       },
       {
         "Name": "State_DockWithCannon",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x124"
+        "Offset": "0x144"
       },
       {
         "Name": "State_BattleFish",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x125"
+        "Offset": "0x145"
       },
       {
         "Name": "State_FishTired",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x126"
+        "Offset": "0x146"
       },
       {
         "Name": "State_ReelingWhileBattling",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x127"
+        "Offset": "0x147"
       },
       {
         "Name": "Prompt_CastRod",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x128"
+        "Offset": "0x148"
       },
       {
         "Name": "Prompt_WaitForBite",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x190"
+        "Offset": "0x1b0"
       },
       {
         "Name": "Prompt_BattleFish",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x1f8"
+        "Offset": "0x218"
       },
       {
         "Name": "Prompt_ReelFish",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x260"
+        "Offset": "0x280"
       },
       {
         "Name": "Handle_WieldRod",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x2c8"
+        "Size": "0x58",
+        "Offset": "0x2e8"
       },
       {
         "Name": "Handle_CastRod",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x310"
+        "Size": "0x58",
+        "Offset": "0x340"
       },
       {
         "Name": "Handle_FishBite",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x358"
+        "Size": "0x58",
+        "Offset": "0x398"
       },
       {
         "Name": "Handle_FishCaught",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x3a0"
+        "Size": "0x58",
+        "Offset": "0x3f0"
       },
       {
         "Name": "Handle_BattleFish",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x3e8"
+        "Size": "0x58",
+        "Offset": "0x448"
       },
       {
         "Name": "RequiredInput",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x4a0"
       },
       {
         "Name": "WieldedItemType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x4a8"
       },
       {
         "Name": "Sword_WieldedItemType",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x4b0"
       },
       {
         "Name": "Prompt_SnapLine",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x448"
+        "Offset": "0x4b8"
       },
       {
         "Name": "Handle_ReelingWhileBattling",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x4b0"
+        "Size": "0x58",
+        "Offset": "0x520"
       },
       {
         "Name": "Handle_StowRod",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x4f8"
+        "Size": "0x58",
+        "Offset": "0x578"
       },
       {
         "Name": "FishStartedBattling",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x540"
+        "Offset": "0x5d0"
       },
       {
-        "Name": "pad0x7_YPN1M[0x7]",
+        "Name": "pad0x7_2IJ33[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x541"
+        "Offset": "0x5d1"
       },
       {
         "Name": "Handle_FishEscaped",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x548"
+        "Size": "0x58",
+        "Offset": "0x5d8"
       },
       {
         "Name": "State_Completed",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x590"
+        "Offset": "0x630"
       },
       {
-        "Name": "pad0x7_QQDDB[0x7]",
+        "Name": "pad0x7_TQB8Z[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x591"
+        "Offset": "0x631"
       },
       {
         "Name": "Handle_PlayerDeath",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x598"
+        "Size": "0x58",
+        "Offset": "0x638"
       },
       {
         "Name": "Handle_DockToObject",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x5e0"
+        "Size": "0x58",
+        "Offset": "0x690"
       }
     ]
   },

@@ -6,15 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xd0 (Full Size[0xf8] - InheritedSize[0x28]
+// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
 class BasePromptCoordinator: public Object
 {
 public:
 	Class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
-	char                                                         pad0x10_AWG7Z[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_HK81X[0x10];                               // 0x30(0x10)
 	Class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
 	Class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
-	char                                                         pad0xa8_JT9A2[0xa8];                               // 0x50(0xa8)
+	char                                                         pad0xc8_GMC98[0xc8];                               // 0x50(0xc8)
 };
 
 
@@ -22,7 +22,7 @@ public:
 class GetPromptsLocalService: public BlueprintAsyncActionBase
 {
 public:
-	char                                                         pad0x10_DMDD5[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_7JHCX[0x10];                               // 0x28(0x10)
 	Class Object*                                                WorldContextObject;                                // 0x38(0x8)
 };
 
@@ -38,10 +38,10 @@ public:
 class PrioritisedPromptsManager: public Object
 {
 public:
-	char                                                         pad0x8_GQ9D9[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_ZG25D[0x8];                                 // 0x28(0x8)
 	TArray<struct AllPrompts>                                    AllPrompts;                                        // 0x30(0x10)
 	Class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
-	char                                                         pad0x30_TDWDJ[0x30];                               // 0x48(0x30)
+	char                                                         pad0x30_XW90B[0x30];                               // 0x48(0x30)
 };
 
 
@@ -50,6 +50,13 @@ class PromptCounterAccessKey: public Object
 {
 public:
 	Struct FString                                               Key;                                               // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class GenericVoyagePrioritisedPrompt_PromptAccessKey: public PromptCounterAccessKey
+{
+public:
 };
 
 

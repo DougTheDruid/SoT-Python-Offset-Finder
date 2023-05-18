@@ -81,7 +81,7 @@ class ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr: public Actor
 {
 public:
 	Struct NetActorPtr                                           ActorPtr;                                          // 0x3c8(0x14)
-	char                                                         pad0x4_LMGGK[0x4];                                 // 0x3dc(0x4)
+	char                                                         pad0x4_3L7Q8[0x4];                                 // 0x3dc(0x4)
 };
 
 
@@ -145,7 +145,7 @@ class ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor: pub
 {
 public:
 	Struct ServerMigrationCustomMigrationSerialisationStruct     TestStruct;                                        // 0x3c8(0x4)
-	char                                                         pad0x4_RU9AX[0x4];                                 // 0x3cc(0x4)
+	char                                                         pad0x4_Z5AGX[0x4];                                 // 0x3cc(0x4)
 };
 
 
@@ -169,7 +169,7 @@ class ServerMigrationSerialisationDetailsTestsMigrationReferenceActor: public Ac
 {
 public:
 	Class Actor*                                                 ActorReferenceWithMigrationMarkup;                 // 0x3c8(0x8)
-	char                                                         pad0x8_69EGY[0x8];                                 // 0x3d0(0x8)
+	char                                                         pad0x8_DGZSC[0x8];                                 // 0x3d0(0x8)
 };
 
 
@@ -179,10 +179,10 @@ class ServerMigrationSerialisationDetailsTestsPropertyMarkup: public Object
 public:
 	int                                                          Int32NoMarkup;                                     // 0x28(0x4)
 	bool                                                         BoolWithMigrationMarkup;                           // 0x2c(0x1)
-	char                                                         pad0x3_RDV3V[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_EIVRU[0x3];                                 // 0x2d(0x3)
 	Struct FString                                               StringWithSaveGameMarkup;                          // 0x30(0x10)
 	float                                                        FloatWithMigrationAndReplicationMarkup;            // 0x40(0x4)
-	char                                                         pad0x4_HXVE2[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_8UOS7[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -199,7 +199,7 @@ class ServerMigrationSerialisationDetailsTestsUStructProperty: public Object
 {
 public:
 	Struct ServerMigrationSerialisationDetailsTestsUStruct       SubStructWithMigrationMarkup;                      // 0x28(0xc)
-	char                                                         pad0x4_R0EG6[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_LLJAK[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -208,12 +208,12 @@ class ServerMigrationSettings: public Object
 {
 public:
 	int                                                          MaxSimultaneousMigrations;                         // 0x28(0x4)
-	char                                                         pad0x4_9OSBY[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_7EK1C[0x4];                                 // 0x2c(0x4)
 	Struct FString                                               TransportImplementation;                           // 0x30(0x10)
 	int                                                          ServerDefaultListenPort;                           // 0x40(0x4)
 	int                                                          ServerListenPortRangeSize;                         // 0x44(0x4)
 	int                                                          AutomationServerDefaultListenPort;                 // 0x48(0x4)
-	char                                                         pad0x4_RRAIG[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_APR9L[0x4];                                 // 0x4c(0x4)
 	Struct FString                                               InstanceImplementation;                            // 0x50(0x10)
 	float                                                        MigrationConnectionTimeoutSeconds;                 // 0x60(0x4)
 	float                                                        WaitForClientActorRemappingTimeoutLength;          // 0x64(0x4)

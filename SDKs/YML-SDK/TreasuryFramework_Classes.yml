@@ -8,7 +8,7 @@ ShimmerActor:
   Super: Actor
 TreasuryRoom:
   Attributes:
-  - Name: pad0x8_5K1RB[0x8]
+  - Name: pad0x8_JVHOB[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -108,7 +108,7 @@ TreasuryRoom:
     Offset: '0x498'
     Size: '0x4'
     Type: Struct PlayerStat
-  - Name: pad0x4_ED3BO[0x4]
+  - Name: pad0x4_0B81T[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
@@ -124,7 +124,7 @@ TreasuryRoom:
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class MechanismActionComponent*
-  - Name: pad0x40_XPXAS[0x40]
+  - Name: pad0x40_SWZCM[0x40]
     Offset: '0x4b8'
     Size: '0x40'
     Type: char

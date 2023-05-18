@@ -3,158 +3,158 @@
 BP_Prompt_CTPurchaseVoyageSequence_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_T8HDZ[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_F5LWI[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: TriggerVolumeRadius
-    Offset: '0x120'
+    Offset: '0x140'
     Size: '0x4'
     Type: float
   - Name: InsideGoldHoardersRadius
-    Offset: '0x124'
+    Offset: '0x144'
     Size: '0x4'
     Type: int
   - Name: GoldHoarderOverlapActors
-    Offset: '0x128'
+    Offset: '0x148'
     Size: '0x10'
     Type: TArray<class OverlapTriggerActor*>
   - Name: OutpostOverlapActors
-    Offset: '0x138'
+    Offset: '0x158'
     Size: '0x10'
     Type: TArray<class OverlapTriggerActor*>
   - Name: OutpostRadiusReduction
-    Offset: '0x148'
+    Offset: '0x168'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_188HC[0x4]
-    Offset: '0x14c'
+  - Name: pad0x4_X5EGK[0x4]
+    Offset: '0x16c'
     Size: '0x4'
     Type: char
   - Name: Prompt_GoToVendors
-    Offset: '0x150'
+    Offset: '0x170'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_GoToGoldhoarders
-    Offset: '0x1b8'
+    Offset: '0x1d8'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_GoToOrderOfSouls
-    Offset: '0x220'
+    Offset: '0x240'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_GoToMerchantAlliance
-    Offset: '0x288'
+    Offset: '0x2a8'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_ProposeVoyage
-    Offset: '0x2f0'
+    Offset: '0x310'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VoteOnVoyage
-    Offset: '0x358'
+    Offset: '0x378'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_BoardShip
-    Offset: '0x3c0'
+    Offset: '0x3e0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitSignpost_GH
-    Offset: '0x428'
+    Offset: '0x448'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitSignpost_MA
-    Offset: '0x490'
+    Offset: '0x4b0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitSignpost_OOS
-    Offset: '0x4f8'
+    Offset: '0x518'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Handle_OfferPurchased
-    Offset: '0x560'
-    Size: '0x48'
+    Offset: '0x580'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_VoyageProposalDiscarded
-    Offset: '0x5a8'
-    Size: '0x48'
+    Offset: '0x5d8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_VoyageProposed
-    Offset: '0x5f0'
-    Size: '0x48'
+    Offset: '0x630'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_VoyageBegun
-    Offset: '0x638'
-    Size: '0x48'
+    Offset: '0x688'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_VoyageComplete
-    Offset: '0x680'
-    Size: '0x48'
+    Offset: '0x6e0'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_PlayerEnteredShip
-    Offset: '0x6c8'
-    Size: '0x48'
+    Offset: '0x738'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_PlayerExitedShip
-    Offset: '0x710'
-    Size: '0x48'
+    Offset: '0x790'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_PlayerWithdrewVoyage
-    Offset: '0x758'
-    Size: '0x48'
+    Offset: '0x7e8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_VoyageCancelled
-    Offset: '0x7a0'
-    Size: '0x48'
+    Offset: '0x840'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: State_InsideOutpostRadius
-    Offset: '0x7e8'
+    Offset: '0x898'
     Size: '0x1'
     Type: bool
   - Name: State_InsideGoldhoardersRadius
-    Offset: '0x7e9'
+    Offset: '0x899'
     Size: '0x1'
     Type: bool
   - Name: State_InsideOrderOfSouls
-    Offset: '0x7ea'
+    Offset: '0x89a'
     Size: '0x1'
     Type: bool
   - Name: State_InsideMerchantAllianceRadius
-    Offset: '0x7eb'
+    Offset: '0x89b'
     Size: '0x1'
     Type: bool
   - Name: State_OnShip
-    Offset: '0x7ec'
+    Offset: '0x89c'
     Size: '0x1'
     Type: bool
   - Name: State_IsHidden
-    Offset: '0x7ed'
+    Offset: '0x89d'
     Size: '0x1'
     Type: bool
   - Name: State_IsTutorialForceDisabled
-    Offset: '0x7ee'
+    Offset: '0x89e'
     Size: '0x1'
     Type: bool
   - Name: State_SeenSignpostPrompt
-    Offset: '0x7ef'
+    Offset: '0x89f'
     Size: '0x1'
     Type: bool
   - Name: CompanyTutorialProgress
-    Offset: '0x7f0'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: BlueprintGeneratedClass BP_CT_TutorialProgress_C*
   - Name: Handle_CompanyRankPurchased
-    Offset: '0x7f8'
-    Size: '0x48'
+    Offset: '0x8a8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: FeatureName
-    Offset: '0x840'
+    Offset: '0x900'
     Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x734'
-  FullSize: '0x84c'
-  InheritedSize: '0x118'
+  ClassSize: '0x7d4'
+  FullSize: '0x90c'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

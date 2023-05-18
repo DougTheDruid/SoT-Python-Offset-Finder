@@ -2,63 +2,63 @@
 # https://github.com/DougTheDruid
 BP_wsp_totd_portal_effects_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x430'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: vfx_PortalAmbience_02
     Offset: '0x438'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: vfx_PortalAmbience_01
     Offset: '0x440'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: TipLight
     Offset: '0x448'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: None
+  - Name: vfx_cloud
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Portal
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: vfx_cloud_depth
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: vfx_big_cloud
     Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: roundedcube_invertednormals
     Offset: '0x470'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: crack_decal2
     Offset: '0x478'
     Size: '0x8'
     Type: Class DecalComponent*
-  - Name: None
+  - Name: crack_decal
     Offset: '0x480'
     Size: '0x8'
     Type: Class DecalComponent*
-  - Name: None
+  - Name: volume_glow
     Offset: '0x488'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: LightComponent0
     Offset: '0x490'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x498'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x70'
   FullSize: '0x4a0'
   InheritedSize: '0x430'
-  Super: None
+  Super: BP_TotD_PortalController_C

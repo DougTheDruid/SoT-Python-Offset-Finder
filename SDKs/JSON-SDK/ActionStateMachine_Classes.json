@@ -13,6 +13,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ActionStateInitialStateCreatorDefinition": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TestActionStateCreatorDefinition": {
     "Super": "ActionStateCreatorDefinition",
     "FullSize": "0x3e0",
@@ -62,6 +69,51 @@
     "ClassSize": "0x790",
     "Attributes": []
   },
+  "ActionStateMachineInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SelfInitialisingActionStateMachineComponent": {
+    "Super": "ActionStateMachineComponent",
+    "FullSize": "0x8a0",
+    "InheritedSize": "0x858",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x8_M47DP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x858"
+      },
+      {
+        "Name": "ActionStatePriorityTableData",
+        "Type": "Class ActionStatePriorityTableData*",
+        "Size": "0x8",
+        "Offset": "0x860"
+      },
+      {
+        "Name": "ActionStateCreatorDefinition",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x868"
+      },
+      {
+        "Name": "ActionStateInitialStateCreatorDefinition",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
+      {
+        "Name": "pad0x28_9WO37[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x878"
+      }
+    ]
+  },
   "CustomClientValidityCheckCallback": {
     "Super": "Object",
     "FullSize": "0x30",
@@ -75,7 +127,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_9XBZ8[0x7]",
+        "Name": "pad0x7_2FC37[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -84,13 +136,6 @@
   },
   "ActionStateMachineComponentTestFunctions": {
     "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ActionStateMachineInterface": {
-    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BTNode: public Object
 {
 public:
-	char                                                         pad0x8_0X502[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_T9599[0x8];                                 // 0x28(0x8)
 	Struct FString                                               NodeName;                                          // 0x30(0x10)
 	Class BehaviorTree*                                          TreeAsset;                                         // 0x40(0x8)
 	Class BTCompositeNode*                                       ParentNode;                                        // 0x48(0x8)
-	char                                                         pad0x8_FAP2O[0x8];                                 // 0x50(0x8)
+	char                                                         pad0x8_B6ACJ[0x8];                                 // 0x50(0x8)
 };
 
 
@@ -30,9 +30,9 @@ class BTDecorator: public BTAuxiliaryNode
 {
 public:
 	bool                                                         bInverseCondition;                                 // 0x60(0x1)
-	char                                                         pad0x3_0Y2HF[0x3];                                 // 0x61(0x3)
+	char                                                         pad0x3_Z3QN1[0x3];                                 // 0x61(0x3)
 	byte                                                         FlowAbortMode;                                     // 0x64(0x1)
-	char                                                         pad0x3_80MGH[0x3];                                 // 0x65(0x3)
+	char                                                         pad0x3_SWMAH[0x3];                                 // 0x65(0x3)
 };
 
 
@@ -52,7 +52,7 @@ public:
 	float                                                        RandomDeviation;                                   // 0x64(0x4)
 	bool                                                         bCallTickOnSearchStart;                            // 0x68(0x1)
 	bool                                                         bRestartTimerOnEachActivation;                     // 0x68(0x1)
-	char                                                         pad0x7_8Y51F[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_2WRU0[0x7];                                 // 0x69(0x7)
 };
 
 
@@ -78,7 +78,7 @@ public:
 	Class EnvQuery*                                              QueryTemplate;                                     // 0x88(0x8)
 	TArray<struct QueryParams>                                   QueryParams;                                       // 0x90(0x10)
 	byte                                                         RunMode;                                           // 0xa0(0x1)
-	char                                                         pad0x7_LY8ZN[0x7];                                 // 0xa1(0x7)
+	char                                                         pad0x7_N1U6M[0x7];                                 // 0xa1(0x7)
 };
 
 
@@ -87,7 +87,7 @@ class BTTask_RotateToFaceBBEntry: public BTTask_BlackboardBase
 {
 public:
 	float                                                        Precision;                                         // 0x88(0x4)
-	char                                                         pad0x4_94WRR[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_IJ63W[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -103,7 +103,7 @@ class EnvQueryNode: public Object
 {
 public:
 	int                                                          VerNum;                                            // 0x28(0x4)
-	char                                                         pad0x4_VWQW5[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_3Y126[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -113,7 +113,7 @@ class EnvQueryGenerator: public EnvQueryNode
 public:
 	Struct FString                                               OptionName;                                        // 0x30(0x10)
 	bool                                                         NonShippingOnly;                                   // 0x40(0x1)
-	char                                                         pad0x3_7FC37[0x3];                                 // 0x41(0x3)
+	char                                                         pad0x3_6EVUA[0x3];                                 // 0x41(0x3)
 	Struct FeatureFlag                                           Feature;                                           // 0x44(0xc)
 	class                                                        ItemType;                                          // 0x50(0x8)
 };
@@ -131,17 +131,17 @@ public:
 	Struct AIDataProviderBoolValue                               BoolValue;                                         // 0x38(0x30)
 	Struct AIDataProviderFloatValue                              FloatValueMin;                                     // 0x68(0x30)
 	Struct AIDataProviderFloatValue                              FloatValueMax;                                     // 0x98(0x30)
-	char                                                         pad0x1_NUV3S[0x1];                                 // 0xc8(0x1)
+	char                                                         pad0x1_M5TK6[0x1];                                 // 0xc8(0x1)
 	byte                                                         ScoringEquation;                                   // 0xc9(0x1)
 	byte                                                         ClampMinType;                                      // 0xca(0x1)
 	byte                                                         ClampMaxType;                                      // 0xcb(0x1)
-	char                                                         pad0x4_BU56F[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_UQE1R[0x4];                                 // 0xcc(0x4)
 	Struct AIDataProviderFloatValue                              ScoreClampMin;                                     // 0xd0(0x30)
 	Struct AIDataProviderFloatValue                              ScoreClampMax;                                     // 0x100(0x30)
 	Struct AIDataProviderFloatValue                              ScoringFactor;                                     // 0x130(0x30)
-	char                                                         pad0x8_EBBUS[0x8];                                 // 0x160(0x8)
+	char                                                         pad0x8_20ZVA[0x8];                                 // 0x160(0x8)
 	bool                                                         bWorkOnFloatValues;                                // 0x168(0x1)
-	char                                                         pad0x7_HNCA2[0x7];                                 // 0x169(0x7)
+	char                                                         pad0x7_EIO6Q[0x7];                                 // 0x169(0x7)
 };
 
 
@@ -156,13 +156,13 @@ public:
 class PathFollowingComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x58_T8H4V[0x58];                               // 0xc8(0x58)
+	char                                                         pad0x58_ZAOV2[0x58];                               // 0xc8(0x58)
 	Class NavMovementComponent*                                  MovementComp;                                      // 0x120(0x8)
-	char                                                         pad0x8_PG1R2[0x8];                                 // 0x128(0x8)
+	char                                                         pad0x8_8QIZ3[0x8];                                 // 0x128(0x8)
 	Class NavigationData*                                        MyNavData;                                         // 0x130(0x8)
-	char                                                         pad0xbc_TAL5S[0xbc];                               // 0x138(0xbc)
+	char                                                         pad0xbc_ZHHXC[0xbc];                               // 0x138(0xbc)
 	bool                                                         bUseVisibilityTestsSimplification;                 // 0x1f4(0x1)
-	char                                                         pad0xc3_NVAS9[0xc3];                               // 0x1f5(0xc3)
+	char                                                         pad0xc3_2K53B[0xc3];                               // 0x1f5(0xc3)
 };
 
 
@@ -188,7 +188,7 @@ public:
 	TArray<struct ActionStacks>                                  ActionStacks;                                      // 0xd0(0x10)
 	TArray<struct ActionEvents>                                  ActionEvents;                                      // 0xe0(0x10)
 	Class PawnAction*                                            CurrentAction;                                     // 0xf0(0x8)
-	char                                                         pad0x8_WW5ZD[0x8];                                 // 0xf8(0x8)
+	char                                                         pad0x8_E9ZHH[0x8];                                 // 0xf8(0x8)
 };
 
 
@@ -224,21 +224,21 @@ public:
 class AIController: public Controller
 {
 public:
-	char                                                         pad0x28_K2BPK[0x28];                               // 0x428(0x28)
+	char                                                         pad0x28_8F6SH[0x28];                               // 0x428(0x28)
 	bool                                                         bLOSflag;                                          // 0x450(0x1)
 	bool                                                         bSkipExtraLOSChecks;                               // 0x450(0x1)
 	bool                                                         bAllowStrafe;                                      // 0x450(0x1)
 	bool                                                         bWantsPlayerState;                                 // 0x450(0x1)
 	bool                                                         bDisableControlRotation;                           // 0x450(0x1)
-	char                                                         pad0x7_VGR9E[0x7];                                 // 0x451(0x7)
+	char                                                         pad0x7_RCZ3G[0x7];                                 // 0x451(0x7)
 	Class PathFollowingComponent*                                PathFollowingComponent;                            // 0x458(0x8)
 	Class BrainComponent*                                        BrainComponent;                                    // 0x460(0x8)
 	Class AIPerceptionComponent*                                 PerceptionComponent;                               // 0x468(0x8)
 	Class PawnActionsComponent*                                  ActionsComp;                                       // 0x470(0x8)
 	Class BlackboardComponent*                                   Blackboard;                                        // 0x478(0x8)
 	Class GameplayTasksComponent*                                CachedGameplayTasksComponent;                      // 0x480(0x8)
-	char                                                         pad0x10_3V32G[0x10];                               // 0x488(0x10)
-	char                                                         pad0x20_S7GOE[0x20];                               // 0x498(0x20)
+	char                                                         pad0x10_BYX6F[0x10];                               // 0x488(0x10)
+	char                                                         pad0x20_HOF5H[0x20];                               // 0x498(0x20)
 };
 
 
@@ -271,7 +271,7 @@ public:
 	float                                                        FloatValue;                                        // 0x38(0x4)
 	int                                                          IntValue;                                          // 0x3c(0x4)
 	bool                                                         BoolValue;                                         // 0x40(0x1)
-	char                                                         pad0x7_Y2P6M[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_U1QJQ[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -283,7 +283,7 @@ public:
 	float                                                        FloatValue;                                        // 0x30(0x4)
 	int                                                          IntValue;                                          // 0x34(0x4)
 	bool                                                         BoolValue;                                         // 0x38(0x1)
-	char                                                         pad0x7_MNPB2[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_2OZ57[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -310,7 +310,7 @@ public:
 	Class AIPerceptionSystem*                                    PerceptionSystem;                                  // 0x78(0x8)
 	TArray<class AIAsyncTaskBlueprintProxy*>                     AllProxyObjects;                                   // 0x80(0x10)
 	Class AIHotSpotManager*                                      HotSpotManager;                                    // 0x90(0x8)
-	char                                                         pad0x58_P2BMM[0x58];                               // 0x98(0x58)
+	char                                                         pad0x58_N2VF9[0x58];                               // 0x98(0x58)
 };
 
 
@@ -319,16 +319,16 @@ class AISense: public Object
 {
 public:
 	Struct Color                                                 DebugDrawColor;                                    // 0x28(0x4)
-	char                                                         pad0x4_Z7PMZ[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_04KML[0x4];                                 // 0x2c(0x4)
 	Struct FString                                               DebugName;                                         // 0x30(0x10)
 	float                                                        DefaultExpirationAge;                              // 0x40(0x4)
 	byte                                                         NotifyType;                                        // 0x44(0x1)
-	char                                                         pad0x3_5MNNX[0x3];                                 // 0x45(0x3)
+	char                                                         pad0x3_XLZEG[0x3];                                 // 0x45(0x3)
 	bool                                                         bWantsNewPawnNotification;                         // 0x48(0x1)
 	bool                                                         bAutoRegisterAllPawnsAsSources;                    // 0x48(0x1)
-	char                                                         pad0x7_DULJI[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_KS2ZM[0x7];                                 // 0x49(0x7)
 	Class AIPerceptionSystem*                                    PerceptionSystemInstance;                          // 0x50(0x8)
-	char                                                         pad0x30_V1G5B[0x30];                               // 0x58(0x30)
+	char                                                         pad0x30_J87JV[0x30];                               // 0x58(0x30)
 };
 
 
@@ -336,10 +336,10 @@ public:
 class AIPerceptionSystem: public Object
 {
 public:
-	char                                                         pad0x58_E6JTY[0x58];                               // 0x28(0x58)
+	char                                                         pad0x58_35KZZ[0x58];                               // 0x28(0x58)
 	TArray<class AISense*>                                       Senses;                                            // 0x80(0x10)
 	float                                                        PerceptionAgingRate;                               // 0x90(0x4)
-	char                                                         pad0x94_QNAYH[0x94];                               // 0x94(0x94)
+	char                                                         pad0x94_48Z3V[0x94];                               // 0x94(0x94)
 };
 
 
@@ -352,13 +352,13 @@ public:
 	float                                                        SightRadius;                                       // 0xd0(0x4)
 	float                                                        LoseSightRadius;                                   // 0xd4(0x4)
 	float                                                        PeripheralVisionAngle;                             // 0xd8(0x4)
-	char                                                         pad0x4_BB8IP[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_4HX9G[0x4];                                 // 0xdc(0x4)
 	TArray<class AISenseConfig*>                                 SensesConfig;                                      // 0xe0(0x10)
 	class                                                        DominantSense;                                     // 0xf0(0x8)
-	char                                                         pad0x10_HPZWF[0x10];                               // 0xf8(0x10)
+	char                                                         pad0x10_BK966[0x10];                               // 0xf8(0x10)
 	Class AIController*                                          AIOwner;                                           // 0x108(0x8)
-	char                                                         pad0x80_7S10R[0x80];                               // 0x110(0x80)
-	char                                                         pad0x38_32OU7[0x38];                               // 0x190(0x38)
+	char                                                         pad0x80_VQWPU[0x80];                               // 0x110(0x80)
+	char                                                         pad0x38_K37NM[0x38];                               // 0x190(0x38)
 };
 
 
@@ -367,7 +367,7 @@ class AIPerceptionStimuliSourceComponent: public ActorComponent
 {
 public:
 	bool                                                         bAutoRegisterAsSource;                             // 0xc8(0x1)
-	char                                                         pad0x7_2AM0L[0x7];                                 // 0xc9(0x7)
+	char                                                         pad0x7_XQB1J[0x7];                                 // 0xc9(0x7)
 	TArray<class Class*>                                         RegisterAsSourceForSenses;                         // 0xd0(0x10)
 };
 
@@ -410,12 +410,12 @@ class AISense_Hearing: public AISense
 public:
 	int                                                          MaxNoisesPerTick;                                  // 0x88(0x4)
 	int                                                          MaxNoisesStored;                                   // 0x8c(0x4)
-	char                                                         pad0x8_HGCUD[0x8];                                 // 0x90(0x8)
+	char                                                         pad0x8_CFSWY[0x8];                                 // 0x90(0x8)
 	TArray<struct NoiseEventsArrayA>                             NoiseEventsArrayA;                                 // 0x98(0x10)
 	TArray<struct NoiseEventsArrayB>                             NoiseEventsArrayB;                                 // 0xa8(0x10)
-	char                                                         pad0x10_MC3HW[0x10];                               // 0xb8(0x10)
+	char                                                         pad0x10_CKS3E[0x10];                               // 0xb8(0x10)
 	float                                                        SpeedOfSoundSq;                                    // 0xc8(0x4)
-	char                                                         pad0x54_D7G6R[0x54];                               // 0xcc(0x54)
+	char                                                         pad0x54_HW7HT[0x54];                               // 0xcc(0x54)
 };
 
 
@@ -431,13 +431,13 @@ public:
 class AISense_Sight: public AISense
 {
 public:
-	char                                                         pad0xb0_YMLAL[0xb0];                               // 0x88(0xb0)
+	char                                                         pad0xb0_DAOR2[0xb0];                               // 0x88(0xb0)
 	int                                                          MaxTracesPerTick;                                  // 0x138(0x4)
 	float                                                        HighImportanceQueryDistanceThreshold;              // 0x13c(0x4)
-	char                                                         pad0x4_RG6B6[0x4];                                 // 0x140(0x4)
+	char                                                         pad0x4_JTKAV[0x4];                                 // 0x140(0x4)
 	float                                                        MaxQueryImportance;                                // 0x144(0x4)
 	float                                                        SightLimitQueryImportance;                         // 0x148(0x4)
-	char                                                         pad0x4_I6I21[0x4];                                 // 0x14c(0x4)
+	char                                                         pad0x4_KMOXS[0x4];                                 // 0x14c(0x4)
 };
 
 
@@ -470,7 +470,7 @@ class AISenseConfig: public Object
 public:
 	float                                                        MaxAge;                                            // 0x28(0x4)
 	bool                                                         bStartsEnabled;                                    // 0x2c(0x1)
-	char                                                         pad0x3_P057H[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_PFGWT[0x3];                                 // 0x2d(0x3)
 };
 
 
@@ -498,7 +498,7 @@ public:
 	float                                                        HearingRange;                                      // 0x38(0x4)
 	float                                                        LoSHearingRange;                                   // 0x3c(0x4)
 	bool                                                         bUseLoSHearing;                                    // 0x40(0x1)
-	char                                                         pad0x3_RKKXF[0x3];                                 // 0x41(0x3)
+	char                                                         pad0x3_2S51V[0x3];                                 // 0x41(0x3)
 	Struct AISenseAffiliationFilter                              DetectionByAffiliation;                            // 0x44(0x4)
 };
 
@@ -520,7 +520,7 @@ public:
 	float                                                        PeripheralVisionAngleDegrees;                      // 0x40(0x4)
 	Struct AISenseAffiliationFilter                              DetectionByAffiliation;                            // 0x44(0x4)
 	float                                                        AutoSuccessRangeFromLastSeenLocation;              // 0x48(0x4)
-	char                                                         pad0x4_JACFW[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_9MV58[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -580,15 +580,15 @@ public:
 class AITask_MoveTo: public AITask
 {
 public:
-	char                                                         pad0x20_BXP50[0x20];                               // 0x60(0x20)
+	char                                                         pad0x20_UJ99Y[0x20];                               // 0x60(0x20)
 	Struct Vector                                                MoveGoalLocation;                                  // 0x80(0xc)
-	char                                                         pad0xc_MSHW5[0xc];                                 // 0x8c(0xc)
+	char                                                         pad0xc_NRWYJ[0xc];                                 // 0x8c(0xc)
 	Class Actor*                                                 MoveGoalActor;                                     // 0x98(0x8)
 	float                                                        MoveAcceptanceRadius;                              // 0xa0(0x4)
 	bool                                                         bShouldStopOnOverlap;                              // 0xa4(0x1)
 	bool                                                         bShouldAcceptPartialPath;                          // 0xa5(0x1)
 	bool                                                         bShouldUsePathfinding;                             // 0xa6(0x1)
-	char                                                         pad0x9_V7ZT2[0x9];                                 // 0xa7(0x9)
+	char                                                         pad0x9_LOC6T[0x9];                                 // 0xa7(0x9)
 };
 
 
@@ -596,10 +596,10 @@ public:
 class BrainComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_BC07R[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_8P6EK[0x8];                                 // 0xc8(0x8)
 	Class BlackboardComponent*                                   BlackboardComp;                                    // 0xd0(0x8)
 	Class AIController*                                          AIOwner;                                           // 0xd8(0x8)
-	char                                                         pad0x48_8J286[0x48];                               // 0xe0(0x48)
+	char                                                         pad0x48_RLTTM[0x48];                               // 0xe0(0x48)
 };
 
 
@@ -607,9 +607,9 @@ public:
 class BehaviorTreeComponent: public BrainComponent
 {
 public:
-	char                                                         pad0x20_3VEEH[0x20];                               // 0x128(0x20)
+	char                                                         pad0x20_SFKCT[0x20];                               // 0x128(0x20)
 	TArray<class BTNode*>                                        NodeInstances;                                     // 0x148(0x10)
-	char                                                         pad0x130_MQRPN[0x130];                             // 0x158(0x130)
+	char                                                         pad0x130_DPYQO[0x130];                             // 0x158(0x130)
 };
 
 
@@ -619,7 +619,7 @@ class BTCompositeNode: public BTNode
 public:
 	TArray<struct Children>                                      Children;                                          // 0x58(0x10)
 	TArray<class BTService*>                                     Services;                                          // 0x68(0x10)
-	char                                                         pad0x10_WXD1N[0x10];                               // 0x78(0x10)
+	char                                                         pad0x10_LGOSR[0x10];                               // 0x78(0x10)
 };
 
 
@@ -631,7 +631,7 @@ public:
 	Class BlackboardData*                                        BlackboardAsset;                                   // 0x30(0x8)
 	TArray<class BTDecorator*>                                   RootDecorators;                                    // 0x38(0x10)
 	TArray<struct RootDecoratorOps>                              RootDecoratorOps;                                  // 0x48(0x10)
-	char                                                         pad0x8_L95D3[0x8];                                 // 0x58(0x8)
+	char                                                         pad0x8_CJ84E[0x8];                                 // 0x58(0x8)
 };
 
 
@@ -640,7 +640,7 @@ class BehaviorTreeManager: public Object
 {
 public:
 	int                                                          MaxDebuggerSteps;                                  // 0x28(0x4)
-	char                                                         pad0x4_R7FJ9[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_GCZJS[0x4];                                 // 0x2c(0x4)
 	TArray<struct LoadedTemplates>                               LoadedTemplates;                                   // 0x30(0x10)
 	TArray<class BehaviorTreeComponent*>                         ActiveComponents;                                  // 0x40(0x10)
 };
@@ -653,7 +653,7 @@ public:
 	Class Enum*                                                  EnumType;                                          // 0x30(0x8)
 	Struct FString                                               EnumName;                                          // 0x38(0x10)
 	bool                                                         bIsEnumNameValid;                                  // 0x48(0x1)
-	char                                                         pad0x7_AURGP[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_1VQHU[0x7];                                 // 0x49(0x7)
 };
 
 
@@ -673,7 +673,7 @@ public:
 	Class BlackboardData*                                        Parent;                                            // 0x28(0x8)
 	TArray<struct Keys>                                          Keys;                                              // 0x30(0x10)
 	bool                                                         bHasSynchronizedKeys;                              // 0x40(0x1)
-	char                                                         pad0x7_N1VOE[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_UUHM2[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -683,9 +683,9 @@ class BlackboardComponent: public ActorComponent
 public:
 	Class BrainComponent*                                        BrainComp;                                         // 0xc8(0x8)
 	Class BlackboardData*                                        BlackboardAsset;                                   // 0xd0(0x8)
-	char                                                         pad0x20_2Y4LX[0x20];                               // 0xd8(0x20)
+	char                                                         pad0x20_BSQHJ[0x20];                               // 0xd8(0x20)
 	TArray<class BlackboardKeyType*>                             KeyInstances;                                      // 0xf8(0x10)
-	char                                                         pad0x108_IT2IC[0x108];                             // 0x108(0x108)
+	char                                                         pad0x108_G8MOR[0x108];                             // 0x108(0x108)
 };
 
 
@@ -772,7 +772,7 @@ public:
 	Struct FString                                               CachedDescription;                                 // 0xa8(0x10)
 	byte                                                         OperationType;                                     // 0xb8(0x1)
 	byte                                                         NotifyObserver;                                    // 0xb9(0x1)
-	char                                                         pad0x6_FSCGU[0x6];                                 // 0xba(0x6)
+	char                                                         pad0x6_HMV6X[0x6];                                 // 0xba(0x6)
 };
 
 
@@ -789,7 +789,7 @@ class BTDecorator_IsAtLocation: public BTDecorator_BlackboardBase
 public:
 	float                                                        AcceptableRadius;                                  // 0x90(0x4)
 	bool                                                         bUseNavAgentGoalLocation;                          // 0x94(0x1)
-	char                                                         pad0x3_H3Q65[0x3];                                 // 0x95(0x3)
+	char                                                         pad0x3_1VUCD[0x3];                                 // 0x95(0x3)
 };
 
 
@@ -808,11 +808,11 @@ public:
 	Class AIController*                                          AIOwner;                                           // 0x68(0x8)
 	Class Actor*                                                 ActorOwner;                                        // 0x70(0x8)
 	TArray<struct FName>                                         ObservedKeyNames;                                  // 0x78(0x10)
-	char                                                         pad0x10_ZNWPK[0x10];                               // 0x88(0x10)
+	char                                                         pad0x10_JRLJI[0x10];                               // 0x88(0x10)
 	bool                                                         bShowPropertyDetails;                              // 0x98(0x1)
 	bool                                                         bCheckConditionOnlyBlackBoardChanges;              // 0x98(0x1)
 	bool                                                         bIsObservingBB;                                    // 0x98(0x1)
-	char                                                         pad0x7_J0B11[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_IUH7C[0x7];                                 // 0x99(0x7)
 };
 
 
@@ -822,7 +822,7 @@ class BTDecorator_CheckGameplayTagsOnActor: public BTDecorator
 public:
 	Struct BlackboardKeySelector                                 ActorToCheck;                                      // 0x68(0x28)
 	byte                                                         TagsToMatch;                                       // 0x90(0x1)
-	char                                                         pad0x7_5WUGL[0x7];                                 // 0x91(0x7)
+	char                                                         pad0x7_F1FJH[0x7];                                 // 0x91(0x7)
 	Struct GameplayTagContainer                                  GameplayTags;                                      // 0x98(0x28)
 	Struct FString                                               CachedDescription;                                 // 0xc0(0x10)
 };
@@ -833,7 +833,7 @@ class BTDecorator_CompareBBEntries: public BTDecorator
 {
 public:
 	byte                                                         Operator;                                          // 0x68(0x1)
-	char                                                         pad0x7_I625E[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_JLZ54[0x7];                                 // 0x69(0x7)
 	Struct BlackboardKeySelector                                 BlackboardKeyA;                                    // 0x70(0x28)
 	Struct BlackboardKeySelector                                 BlackboardKeyB;                                    // 0x98(0x28)
 };
@@ -844,11 +844,11 @@ class BTDecorator_ConeCheck: public BTDecorator
 {
 public:
 	float                                                        ConeHalfAngle;                                     // 0x68(0x4)
-	char                                                         pad0x4_ADVH7[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_TRB57[0x4];                                 // 0x6c(0x4)
 	Struct BlackboardKeySelector                                 ConeOrigin;                                        // 0x70(0x28)
 	Struct BlackboardKeySelector                                 ConeDirection;                                     // 0x98(0x28)
 	Struct BlackboardKeySelector                                 Observed;                                          // 0xc0(0x28)
-	char                                                         pad0x8_P9HA6[0x8];                                 // 0xe8(0x8)
+	char                                                         pad0x8_IC5OE[0x8];                                 // 0xe8(0x8)
 };
 
 
@@ -857,7 +857,7 @@ class BTDecorator_Cooldown: public BTDecorator
 {
 public:
 	float                                                        CoolDownTime;                                      // 0x68(0x4)
-	char                                                         pad0x4_3Y3IS[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_XGIZM[0x4];                                 // 0x6c(0x4)
 };
 
 
@@ -868,9 +868,9 @@ public:
 	Struct BlackboardKeySelector                                 BlackboardKeyA;                                    // 0x68(0x28)
 	Struct BlackboardKeySelector                                 BlackboardKeyB;                                    // 0x90(0x28)
 	bool                                                         bUseSelf;                                          // 0xb8(0x1)
-	char                                                         pad0x3_1OIY9[0x3];                                 // 0xb9(0x3)
+	char                                                         pad0x3_90FKW[0x3];                                 // 0xb9(0x3)
 	byte                                                         PathQueryType;                                     // 0xbc(0x1)
-	char                                                         pad0x3_UGUF2[0x3];                                 // 0xbd(0x3)
+	char                                                         pad0x3_C2XMF[0x3];                                 // 0xbd(0x3)
 	class                                                        FilterClass;                                       // 0xc0(0x8)
 };
 
@@ -887,12 +887,12 @@ class BTDecorator_KeepInCone: public BTDecorator
 {
 public:
 	float                                                        ConeHalfAngle;                                     // 0x68(0x4)
-	char                                                         pad0x4_7OZ8M[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_GPHWU[0x4];                                 // 0x6c(0x4)
 	Struct BlackboardKeySelector                                 ConeOrigin;                                        // 0x70(0x28)
 	Struct BlackboardKeySelector                                 Observed;                                          // 0x98(0x28)
 	bool                                                         bUseSelfAsOrigin;                                  // 0xc0(0x1)
 	bool                                                         bUseSelfAsObserved;                                // 0xc0(0x1)
-	char                                                         pad0x7_Y96KF[0x7];                                 // 0xc1(0x7)
+	char                                                         pad0x7_U6USK[0x7];                                 // 0xc1(0x7)
 };
 
 
@@ -902,7 +902,7 @@ class BTDecorator_Loop: public BTDecorator
 public:
 	int                                                          NumLoops;                                          // 0x68(0x4)
 	bool                                                         bInfiniteLoop;                                     // 0x6c(0x1)
-	char                                                         pad0x3_ECCS0[0x3];                                 // 0x6d(0x3)
+	char                                                         pad0x3_TL1TQ[0x3];                                 // 0x6d(0x3)
 };
 
 
@@ -920,7 +920,7 @@ public:
 	Struct GameplayTag                                           CooldownTag;                                       // 0x68(0x8)
 	float                                                        CoolDownDuration;                                  // 0x70(0x4)
 	bool                                                         bAddToExistingDuration;                            // 0x74(0x1)
-	char                                                         pad0x3_F46LT[0x3];                                 // 0x75(0x3)
+	char                                                         pad0x3_YJLMW[0x3];                                 // 0x75(0x3)
 };
 
 
@@ -932,7 +932,7 @@ public:
 	float                                                        CoolDownDuration;                                  // 0x70(0x4)
 	bool                                                         bAddToExistingDuration;                            // 0x74(0x1)
 	bool                                                         bActivatesCooldown;                                // 0x75(0x1)
-	char                                                         pad0x2_MO5XE[0x2];                                 // 0x76(0x2)
+	char                                                         pad0x2_A6I6J[0x2];                                 // 0x76(0x2)
 };
 
 
@@ -941,7 +941,7 @@ class BTDecorator_TimeLimit: public BTDecorator
 {
 public:
 	float                                                        TimeLimit;                                         // 0x68(0x4)
-	char                                                         pad0x4_Z8LHE[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_TJDZA[0x4];                                 // 0x6c(0x4)
 };
 
 
@@ -958,7 +958,7 @@ class BTService_DefaultFocus: public BTService_BlackboardBase
 {
 public:
 	byte                                                         FocusPriority;                                     // 0x98(0x1)
-	char                                                         pad0x7_JUG96[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_FSP2P[0x7];                                 // 0x99(0x7)
 };
 
 
@@ -968,10 +968,10 @@ class BTService_BlueprintBase: public BTService
 public:
 	Class AIController*                                          AIOwner;                                           // 0x70(0x8)
 	Class Actor*                                                 ActorOwner;                                        // 0x78(0x8)
-	char                                                         pad0x10_5YVX2[0x10];                               // 0x80(0x10)
+	char                                                         pad0x10_D50XF[0x10];                               // 0x80(0x10)
 	bool                                                         bShowPropertyDetails;                              // 0x90(0x1)
 	bool                                                         bShowEventDetails;                                 // 0x90(0x1)
-	char                                                         pad0x7_QI39T[0x7];                                 // 0x91(0x7)
+	char                                                         pad0x7_WA208[0x7];                                 // 0x91(0x7)
 };
 
 
@@ -994,7 +994,7 @@ class BTComposite_SimpleParallel: public BTCompositeNode
 {
 public:
 	byte                                                         FinishMode;                                        // 0x88(0x1)
-	char                                                         pad0x7_LMXFW[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_HJIKA[0x7];                                 // 0x89(0x7)
 };
 
 
@@ -1007,7 +1007,7 @@ public:
 	bool                                                         bProjectVectorGoalToNavigation;                    // 0x8c(0x1)
 	bool                                                         bAllowStrafe;                                      // 0x8c(0x1)
 	bool                                                         bStopOnOverlap;                                    // 0x8c(0x1)
-	char                                                         pad0x3_9D156[0x3];                                 // 0x8d(0x3)
+	char                                                         pad0x3_DGGR8[0x3];                                 // 0x8d(0x3)
 };
 
 
@@ -1016,12 +1016,12 @@ class BTTask_MoveTo: public BTTask_BlackboardBase
 {
 public:
 	float                                                        AcceptableRadius;                                  // 0x88(0x4)
-	char                                                         pad0x4_USM87[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_BG071[0x4];                                 // 0x8c(0x4)
 	class                                                        FilterClass;                                       // 0x90(0x8)
 	bool                                                         bAllowStrafe;                                      // 0x98(0x1)
 	bool                                                         bAllowPartialPath;                                 // 0x98(0x1)
 	bool                                                         bStopOnOverlap;                                    // 0x98(0x1)
-	char                                                         pad0x7_I6766[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_BVF8I[0x7];                                 // 0x99(0x7)
 };
 
 
@@ -1045,9 +1045,9 @@ class BTTask_BlueprintBase: public BTTaskNode
 public:
 	Class AIController*                                          AIOwner;                                           // 0x60(0x8)
 	Class Actor*                                                 ActorOwner;                                        // 0x68(0x8)
-	char                                                         pad0x18_SWE9X[0x18];                               // 0x70(0x18)
+	char                                                         pad0x18_UN80U[0x18];                               // 0x70(0x18)
 	bool                                                         bShowPropertyDetails;                              // 0x88(0x1)
-	char                                                         pad0x7_HLTP9[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_R5MZY[0x7];                                 // 0x89(0x7)
 };
 
 
@@ -1056,7 +1056,7 @@ class BTTask_MakeNoise: public BTTaskNode
 {
 public:
 	float                                                        Loudnes;                                           // 0x60(0x4)
-	char                                                         pad0x4_Y5PYA[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_DUKZK[0x4];                                 // 0x64(0x4)
 };
 
 
@@ -1069,11 +1069,11 @@ public:
 	Class PawnActionsComponent*                                  OwnerComponent;                                    // 0x38(0x8)
 	Class Object*                                                Instigator;                                        // 0x40(0x8)
 	Class BrainComponent*                                        BrainComp;                                         // 0x48(0x8)
-	char                                                         pad0x28_6DSPB[0x28];                               // 0x50(0x28)
+	char                                                         pad0x28_8HKZF[0x28];                               // 0x50(0x28)
 	bool                                                         bAllowNewSameClassInstance;                        // 0x78(0x1)
 	bool                                                         bReplaceActiveSameClassInstance;                   // 0x78(0x1)
 	bool                                                         bShouldPauseMovement;                              // 0x78(0x1)
-	char                                                         pad0x17_MW1J2[0x17];                               // 0x79(0x17)
+	char                                                         pad0x17_2JZR0[0x17];                               // 0x79(0x17)
 };
 
 
@@ -1099,10 +1099,10 @@ public:
 	Class AnimationAsset*                                        AnimationToPlay;                                   // 0x60(0x8)
 	bool                                                         bLooping;                                          // 0x68(0x1)
 	bool                                                         bNonBlocking;                                      // 0x68(0x1)
-	char                                                         pad0x7_HZQTY[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_65C8P[0x7];                                 // 0x69(0x7)
 	Class BehaviorTreeComponent*                                 MyOwnerComp;                                       // 0x70(0x8)
 	Class SkeletalMeshComponent*                                 CachedSkelMesh;                                    // 0x78(0x8)
-	char                                                         pad0x18_YAIO3[0x18];                               // 0x80(0x18)
+	char                                                         pad0x18_9VBBV[0x18];                               // 0x80(0x18)
 };
 
 
@@ -1138,7 +1138,7 @@ class BTTask_SetTagCooldown: public BTTaskNode
 public:
 	Struct GameplayTag                                           CooldownTag;                                       // 0x60(0x8)
 	bool                                                         bAddToExistingDuration;                            // 0x68(0x1)
-	char                                                         pad0x3_C3LI0[0x3];                                 // 0x69(0x3)
+	char                                                         pad0x3_LPVNO[0x3];                                 // 0x69(0x3)
 	float                                                        CoolDownDuration;                                  // 0x6c(0x4)
 };
 
@@ -1181,7 +1181,7 @@ public:
 	float                                                        NavmeshCheckInterval;                              // 0x60(0x4)
 	float                                                        PathOptimizationInterval;                          // 0x64(0x4)
 	bool                                                         bResolveCollisions;                                // 0x68(0x1)
-	char                                                         pad0x77_XBRJ4[0x77];                               // 0x69(0x77)
+	char                                                         pad0x77_VJEEU[0x77];                               // 0x69(0x77)
 };
 
 
@@ -1239,13 +1239,13 @@ public:
 class EnvQueryInstanceBlueprintWrapper: public Object
 {
 public:
-	char                                                         pad0x8_C3A9X[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_L8U1I[0x8];                                 // 0x28(0x8)
 	int                                                          QueryID;                                           // 0x30(0x4)
-	char                                                         pad0x1c_YOY1Z[0x1c];                               // 0x34(0x1c)
+	char                                                         pad0x1c_XGZ8A[0x1c];                               // 0x34(0x1c)
 	class                                                        ItemType;                                          // 0x50(0x8)
 	int                                                          OptionIndex;                                       // 0x58(0x4)
-	char                                                         pad0x4_QRH9R[0x4];                                 // 0x5c(0x4)
-	char                                                         pad0x10_EKK3C[0x10];                               // 0x60(0x10)
+	char                                                         pad0x4_OH9LX[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x10_HQ3TD[0x10];                               // 0x60(0x10)
 };
 
 
@@ -1288,10 +1288,10 @@ public:
 class EnvQueryManager: public Object
 {
 public:
-	char                                                         pad0x70_5I0WR[0x70];                               // 0x28(0x70)
+	char                                                         pad0x70_EXHZT[0x70];                               // 0x28(0x70)
 	TArray<struct InstanceCache>                                 InstanceCache;                                     // 0x98(0x10)
 	TArray<class EnvQueryContext*>                               LocalContexts;                                     // 0xa8(0x10)
-	char                                                         pad0x58_KMRMV[0x58];                               // 0xb8(0x58)
+	char                                                         pad0x58_GFKLF[0x58];                               // 0xb8(0x58)
 };
 
 
@@ -1312,7 +1312,7 @@ public:
 	Struct FText                                                 GeneratorsActionDescription;                       // 0x58(0x38)
 	class                                                        Context;                                           // 0x90(0x8)
 	class                                                        GeneratedItemType;                                 // 0x98(0x8)
-	char                                                         pad0x8_9M8KP[0x8];                                 // 0xa0(0x8)
+	char                                                         pad0x8_W9AYE[0x8];                                 // 0xa0(0x8)
 };
 
 
@@ -1322,7 +1322,7 @@ class EnvQueryGenerator_Composite: public EnvQueryGenerator
 public:
 	TArray<class EnvQueryGenerator*>                             Generators;                                        // 0x58(0x10)
 	bool                                                         bHasMatchingItemType;                              // 0x68(0x1)
-	char                                                         pad0x7_X0OFL[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_UBC7A[0x7];                                 // 0x69(0x7)
 };
 
 
@@ -1345,10 +1345,10 @@ public:
 	Struct EnvDirection                                          ArcDirection;                                      // 0x158(0x20)
 	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x178(0x30)
 	bool                                                         RandomiseRadius;                                   // 0x1a8(0x1)
-	char                                                         pad0x7_X8BHJ[0x7];                                 // 0x1a9(0x7)
+	char                                                         pad0x7_L3M3G[0x7];                                 // 0x1a9(0x7)
 	class                                                        Center;                                            // 0x1b0(0x8)
 	bool                                                         bDefineArc;                                        // 0x1b8(0x1)
-	char                                                         pad0x7_PP6UE[0x7];                                 // 0x1b9(0x7)
+	char                                                         pad0x7_Q61B7[0x7];                                 // 0x1b9(0x7)
 };
 
 
@@ -1361,11 +1361,11 @@ public:
 	Struct EnvDirection                                          ArcDirection;                                      // 0xf8(0x20)
 	Struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x118(0x30)
 	float                                                        AngleRadians;                                      // 0x148(0x4)
-	char                                                         pad0x4_F7BNV[0x4];                                 // 0x14c(0x4)
+	char                                                         pad0x4_6EHX5[0x4];                                 // 0x14c(0x4)
 	class                                                        CircleCenter;                                      // 0x150(0x8)
 	Struct EnvTraceData                                          TraceData;                                         // 0x158(0x40)
 	bool                                                         bDefineArc;                                        // 0x198(0x1)
-	char                                                         pad0x7_4PBH4[0x7];                                 // 0x199(0x7)
+	char                                                         pad0x7_Y3DO3[0x7];                                 // 0x199(0x7)
 };
 
 
@@ -1394,7 +1394,7 @@ class EnvQueryTest_Distance: public EnvQueryTest
 {
 public:
 	byte                                                         TestMode;                                          // 0x170(0x1)
-	char                                                         pad0x7_2NZ2B[0x7];                                 // 0x171(0x7)
+	char                                                         pad0x7_P21P5[0x7];                                 // 0x171(0x7)
 	class                                                        DistanceTo;                                        // 0x178(0x8)
 };
 
@@ -1407,7 +1407,7 @@ public:
 	Struct EnvDirection                                          LineB;                                             // 0x190(0x20)
 	byte                                                         TestMode;                                          // 0x1b0(0x1)
 	bool                                                         bAbsoluteValue;                                    // 0x1b1(0x1)
-	char                                                         pad0x6_9K8UD[0x6];                                 // 0x1b2(0x6)
+	char                                                         pad0x6_GMETZ[0x6];                                 // 0x1b2(0x6)
 };
 
 
@@ -1416,7 +1416,7 @@ class EnvQueryTest_GameplayTags: public EnvQueryTest
 {
 public:
 	byte                                                         TagsToMatch;                                       // 0x170(0x1)
-	char                                                         pad0x7_TX87R[0x7];                                 // 0x171(0x7)
+	char                                                         pad0x7_VEPTY[0x7];                                 // 0x171(0x7)
 	Struct GameplayTagContainer                                  GameplayTags;                                      // 0x178(0x28)
 };
 
@@ -1426,7 +1426,7 @@ class EnvQueryTest_Pathfinding: public EnvQueryTest
 {
 public:
 	byte                                                         TestMode;                                          // 0x170(0x1)
-	char                                                         pad0x7_SM1QV[0x7];                                 // 0x171(0x7)
+	char                                                         pad0x7_8OLW3[0x7];                                 // 0x171(0x7)
 	class                                                        Context;                                           // 0x178(0x8)
 	Struct AIDataProviderBoolValue                               PathFromContext;                                   // 0x180(0x30)
 	Struct AIDataProviderBoolValue                               SkipUnreachable;                                   // 0x1b0(0x30)
@@ -1489,14 +1489,14 @@ public:
 	float                                                        TimeLimitPerStep;                                  // 0x600(0x4)
 	int                                                          StepToDebugDraw;                                   // 0x604(0x4)
 	byte                                                         HighlightMode;                                     // 0x608(0x1)
-	char                                                         pad0x3_CA1JY[0x3];                                 // 0x609(0x3)
+	char                                                         pad0x3_68V5P[0x3];                                 // 0x609(0x3)
 	bool                                                         bDrawLabels;                                       // 0x60c(0x1)
 	bool                                                         bDrawFailedItems;                                  // 0x60c(0x1)
 	bool                                                         bReRunQueryOnlyOnFinishedMove;                     // 0x60c(0x1)
 	bool                                                         bShouldBeVisibleInGame;                            // 0x60c(0x1)
-	char                                                         pad0x3_OKFYW[0x3];                                 // 0x60d(0x3)
+	char                                                         pad0x3_U74DI[0x3];                                 // 0x60d(0x3)
 	byte                                                         QueryingMode;                                      // 0x610(0x1)
-	char                                                         pad0x2f_2FJAQ[0x2f];                               // 0x611(0x2f)
+	char                                                         pad0x2f_C61IJ[0x2f];                               // 0x611(0x2f)
 };
 
 
@@ -1504,14 +1504,14 @@ public:
 class CrowdFollowingComponent: public PathFollowingComponent
 {
 public:
-	char                                                         pad0x8_EN27P[0x8];                                 // 0x2b8(0x8)
+	char                                                         pad0x8_KG7OK[0x8];                                 // 0x2b8(0x8)
 	Struct Vector                                                CrowdAgentMoveDirection;                           // 0x2c0(0xc)
-	char                                                         pad0x4_0ID0W[0x4];                                 // 0x2cc(0x4)
+	char                                                         pad0x4_807M0[0x4];                                 // 0x2cc(0x4)
 	Class CharacterMovementComponent*                            CharacterMovement;                                 // 0x2d0(0x8)
 	Struct NavAvoidanceMask                                      AvoidanceGroup;                                    // 0x2d8(0x4)
 	Struct NavAvoidanceMask                                      GroupsToAvoid;                                     // 0x2dc(0x4)
 	Struct NavAvoidanceMask                                      GroupsToIgnore;                                    // 0x2e0(0x4)
-	char                                                         pad0x24_GUVOM[0x24];                               // 0x2e4(0x24)
+	char                                                         pad0x24_XQ8DY[0x24];                               // 0x2e4(0x24)
 };
 
 
@@ -1537,7 +1537,7 @@ public:
 	bool                                                         bProjectGoalToNavigation;                          // 0xb0(0x1)
 	bool                                                         bUpdatePathToGoal;                                 // 0xb0(0x1)
 	bool                                                         bAbortChildActionOnPathChange;                     // 0xb0(0x1)
-	char                                                         pad0x2f_AHC0A[0x2f];                               // 0xb1(0x2f)
+	char                                                         pad0x2f_V7N4S[0x2f];                               // 0xb1(0x2f)
 };
 
 
@@ -1548,7 +1548,7 @@ public:
 	Class PawnAction*                                            ActionToRepeat;                                    // 0x90(0x8)
 	Class PawnAction*                                            RecentActionCopy;                                  // 0x98(0x8)
 	byte                                                         ChildFailureHandlingMode;                          // 0xa0(0x1)
-	char                                                         pad0xf_8Y22R[0xf];                                 // 0xa1(0xf)
+	char                                                         pad0xf_BITRK[0xf];                                 // 0xa1(0xf)
 };
 
 
@@ -1558,9 +1558,9 @@ class PawnAction_Sequence: public PawnAction
 public:
 	TArray<class PawnAction*>                                    ActionSequence;                                    // 0x90(0x10)
 	byte                                                         ChildFailureHandlingMode;                          // 0xa0(0x1)
-	char                                                         pad0x7_NTWBQ[0x7];                                 // 0xa1(0x7)
+	char                                                         pad0x7_8IUHU[0x7];                                 // 0xa1(0x7)
 	Class PawnAction*                                            RecentActionCopy;                                  // 0xa8(0x8)
-	char                                                         pad0x8_H898C[0x8];                                 // 0xb0(0x8)
+	char                                                         pad0x8_IXZPS[0x8];                                 // 0xb0(0x8)
 };
 
 
@@ -1569,7 +1569,7 @@ class PawnAction_Wait: public PawnAction
 {
 public:
 	float                                                        TimeToWait;                                        // 0x90(0x4)
-	char                                                         pad0xc_AJ9RN[0xc];                                 // 0x94(0xc)
+	char                                                         pad0xc_XDVV7[0xc];                                 // 0x94(0xc)
 };
 
 
@@ -1586,7 +1586,7 @@ public:
 	bool                                                         bOnlySensePlayers;                                 // 0xdc(0x1)
 	bool                                                         bSeePawns;                                         // 0xdc(0x1)
 	bool                                                         bHearNoises;                                       // 0xdc(0x1)
-	char                                                         pad0xb_10FHV[0xb];                                 // 0xdd(0xb)
+	char                                                         pad0xb_UUDUX[0xb];                                 // 0xdd(0xb)
 	float                                                        PeripheralVisionAngle;                             // 0x108(0x4)
 	float                                                        PeripheralVisionCosine;                            // 0x10c(0x4)
 };

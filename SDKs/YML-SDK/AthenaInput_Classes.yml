@@ -6,6 +6,12 @@ AnalogInputId:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
+NPCReceivesInputIndicatorComponent:
+  Attributes: []
+  ClassSize: '0x8'
+  FullSize: '0xd0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 NotificationInputId:
   Attributes: []
   ClassSize: '0x10'

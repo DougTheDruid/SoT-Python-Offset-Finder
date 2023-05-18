@@ -31,6 +31,9 @@ EventRowboatEnteredWater:
 EventRowboatExitedWater:
   Attributes: []
   ClassSize: '0x1'
+EventRowboatLoaded:
+  Attributes: []
+  ClassSize: '0x1'
 Oar:
   Attributes:
   - Name: OarParams
@@ -90,6 +93,28 @@ RowboatDamageEffectData:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  ClassSize: '0x18'
+RowboatLiveryByWeight:
+  Attributes:
+  - Name: Weight
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x28'
+RowboatLiveryPickerDataAssetConditions:
+  Attributes:
+  - Name: RowboatLiveryPickerDataAsset
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class RowboatLiveryPickerDataAsset*
+  - Name: Weight
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: Feature
+    Offset: '0xc'
+    Size: '0xc'
+    Type: Struct FeatureFlag
   ClassSize: '0x18'
 RowboatMountStateTelemetryEvent:
   Attributes:

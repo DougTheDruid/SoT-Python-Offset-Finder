@@ -6,6 +6,16 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
+class Ride: public Actor
+{
+public:
+	char                                                         pad0x8_7TSTF[0x8];                                 // 0x3c8(0x8)
+	Class SplineComponent*                                       SplineComponent;                                   // 0x3d0(0x8)
+	Class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
+};
+
+
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class WaterSlideParamsDataAsset: public DataAsset
 {
@@ -14,23 +24,69 @@ public:
 };
 
 
-// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
-class WaterSlide: public Actor
+// Size 0x60 (Full Size[0x440] - InheritedSize[0x3e0]
+class WaterSlide: public Ride
 {
 public:
-	char                                                         pad0x8_PYK1D[0x8];                                 // 0x3c8(0x8)
-	Class SplineComponent*                                       SlideSpline;                                       // 0x3d0(0x8)
-	Class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
 	Class WaterSlideParamsDataAsset*                             WaterSlideParamsDataAsset;                         // 0x3e0(0x8)
 	Class PrimitiveComponent*                                    EntranceCollisionComponent;                        // 0x3e8(0x8)
 	Class WaterSlide*                                            ContinuedWaterSlideRoute;                          // 0x3f0(0x8)
 	Class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
 	Class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
 	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
-	char                                                         pad0x3_DEWGR[0x3];                                 // 0x409(0x3)
+	char                                                         pad0x3_2BX3W[0x3];                                 // 0x409(0x3)
 	Struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
 	Class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
-	char                                                         pad0x20_2RRHA[0x20];                               // 0x420(0x20)
+	char                                                         pad0x20_R52WP[0x20];                               // 0x420(0x20)
+};
+
+
+// Size 0x358 (Full Size[0x738] - InheritedSize[0x3e0]
+class Zipline: public Ride
+{
+public:
+	byte                                                         ZiplineStartPointConfig;                           // 0x3e0(0x1)
+	bool                                                         ShouldLaunchPlayer;                                // 0x3e1(0x1)
+	char                                                         pad0x2_4CVVM[0x2];                                 // 0x3e2(0x2)
+	float                                                        LaunchForceMultiplier;                             // 0x3e4(0x4)
+	Struct ZiplineFeelParameters                                 ZiplineFeelParameters;                             // 0x3e8(0x310)
+	char                                                         pad0x38_Q0V41[0x38];                               // 0x6f8(0x38)
+	Class StaticMesh*                                            ZiplineGeometry;                                   // 0x730(0x8)
+};
+
+
+// Size 0x38 (Full Size[0x770] - InheritedSize[0x738]
+class InteractableZipline: public Zipline
+{
+public:
+	Class InteractableComponentWithActionRules*                  ZiplineStartInteractionPoint;                      // 0x738(0x8)
+	Class InteractableComponentWithActionRules*                  ZiplineEndInteractionPoint;                        // 0x740(0x8)
+	class                                                        PressedNotificationInputId;                        // 0x748(0x8)
+	class                                                        ReleasedNotificationInputId;                       // 0x750(0x8)
+	Struct Vector2D                                              AttachPointLocationOffset;                         // 0x758(0x8)
+	float                                                        AttachPointSize;                                   // 0x760(0x4)
+	float                                                        HoldTime;                                          // 0x764(0x4)
+	class                                                        OptionalItem;                                      // 0x768(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RidePlayerInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0x118] - InheritedSize[0xe0]
+class RidePlayerComponent: public DoubleIntentComponent
+{
+public:
+	char                                                         pad0x8_MCWXD[0x8];                                 // 0xe0(0x8)
+	Class ParticleSystemComponent*                               PlayerWaterSlideVFXComponent;                      // 0xe8(0x8)
+	Class ParticleSystem*                                        PlayerWaterSlideVFX;                               // 0xf0(0x8)
+	float                                                        PlayerWaterSlideVFXSpawnLocationZOffset;           // 0xf8(0x4)
+	char                                                         pad0x14_5V8FX[0x14];                               // 0xfc(0x14)
+	Class Ride*                                                  CurrentRide;                                       // 0x110(0x8)
 };
 
 
@@ -62,28 +118,29 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterSlidePlayerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0x118] - InheritedSize[0xe0]
-class WaterSlidePlayerComponent: public DoubleIntentComponent
-{
-public:
-	char                                                         pad0x8_XE9E4[0x8];                                 // 0xe0(0x8)
-	Class ParticleSystemComponent*                               PlayerWaterSlideSplashingVFXComponent;             // 0xe8(0x8)
-	Class ParticleSystem*                                        PlayerWaterSlideSplashingVFX;                      // 0xf0(0x8)
-	float                                                        SpawnLocationZOffset;                              // 0xf8(0x4)
-	char                                                         pad0x14_Z1W2G[0x14];                               // 0xfc(0x14)
-	Class WaterSlide*                                            CurrentWaterSlide;                                 // 0x110(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
 class WaterSlideVeeringAnalogInputId: public AnalogInputId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ZiplineActionStateId: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x850] - InheritedSize[0x850]
+class ZiplineEditorComponent: public CameraComponent
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x2a8] - InheritedSize[0x2a0]
+class ZiplineInputComponent: public LookAtOffsetInputComponent
 {
 public:
 };

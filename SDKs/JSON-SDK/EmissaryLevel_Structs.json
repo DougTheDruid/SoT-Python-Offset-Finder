@@ -79,7 +79,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_82D5A[0x4]",
+        "Name": "pad0x4_VU7BX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -185,7 +185,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_ALMB4[0x4]",
+        "Name": "pad0x4_BOYLJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -228,7 +228,7 @@
     ]
   },
   "EmissaryLevelData": {
-    "ClassSize": "0xb0",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "LevelTarget",
@@ -237,7 +237,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_0WNS0[0x4]",
+        "Name": "pad0x4_5UDU4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -249,34 +249,75 @@
         "Offset": "0x8"
       },
       {
+        "Name": "CustomisedFlagSettings",
+        "Type": "Class EmissaryColourSwatchSettingsAsset*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
         "Name": "EmissaryDeactivationReward",
         "Type": "Struct RewardId",
         "Size": "0x8",
-        "Offset": "0x68"
+        "Offset": "0x70"
       },
       {
         "Name": "StatsToFireOnEmissaryLevelReached",
         "Type": "TArray<struct StatsToFireOnEmissaryLevelReached>",
         "Size": "0x10",
-        "Offset": "0x70"
+        "Offset": "0x78"
+      },
+      {
+        "Name": "StatsToFireOnEmissaryLevelReachedGuildOnly",
+        "Type": "TArray<struct StatsToFireOnEmissaryLevelReachedGuildOnly>",
+        "Size": "0x10",
+        "Offset": "0x88"
       },
       {
         "Name": "StatsToFireOnEmissaryDeactivated",
         "Type": "TArray<struct StatsToFireOnEmissaryDeactivated>",
         "Size": "0x10",
-        "Offset": "0x80"
+        "Offset": "0x98"
+      },
+      {
+        "Name": "StatsToFireOnEmissaryDeactivatedGuildOnly",
+        "Type": "TArray<struct StatsToFireOnEmissaryDeactivatedGuildOnly>",
+        "Size": "0x10",
+        "Offset": "0xa8"
       },
       {
         "Name": "TreasureSoldNotificationFlag",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x90"
+        "Offset": "0xb8"
       },
       {
         "Name": "EmissaryFlagTextureReference",
         "Type": "Struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0xa0"
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "EmissaryColourSwatchInformation": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "ColourSwatchIdentifier",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EmissaryFlagMeshAssetReferences",
+        "Type": "Struct EmissaryFlagMeshReferences",
+        "Size": "0x20",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EmissaryFlagTextureReference",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x50"
       }
     ]
   },
@@ -483,7 +524,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_ZJVFQ[0x3]",
+        "Name": "pad0x3_MKNC4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -506,7 +547,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_F5HPK[0x3]",
+        "Name": "pad0x3_4PN13[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -541,7 +582,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_43MCJ[0x1]",
+        "Name": "pad0x1_TSMX4[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -581,7 +622,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_1DBHE[0x4]",
+        "Name": "pad0x4_1FOAI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -971,7 +1012,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_GB56L[0x3]",
+        "Name": "pad0x3_RBZ12[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -1041,7 +1082,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_IYI86[0x3]",
+        "Name": "pad0x3_UBG5Z[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -1159,7 +1200,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_ZQST9[0x3]",
+        "Name": "pad0x3_U2D1K[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"

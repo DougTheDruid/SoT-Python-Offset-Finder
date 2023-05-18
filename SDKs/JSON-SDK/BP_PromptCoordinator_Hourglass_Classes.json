@@ -1,81 +1,81 @@
 {
   "BP_PromptCoordinator_Hourglass_C": {
     "Super": "BP_PromptCoordinator_Base_C",
-    "FullSize": "0x229",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x111",
+    "FullSize": "0x269",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x131",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x138"
       },
       {
-        "Name": "pad0x12a_FCCKE[0x12a]",
+        "Name": "pad0x4c_CVHXA[0x4c]",
         "Type": "char",
-        "Size": "0x12a",
-        "Offset": "0x120"
+        "Size": "0x4c",
+        "Offset": "0x140"
       },
       {
         "Name": "HandlePlayerApproachesHourglass",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x120"
+        "Size": "0x58",
+        "Offset": "0x140"
       },
       {
         "Name": "PlayerInRange",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x168"
+        "Offset": "0x198"
       },
       {
         "Name": "PromptEvaluated",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x169"
+        "Offset": "0x199"
       },
       {
-        "Name": "pad0x2_11TTW[0x2]",
+        "Name": "pad0x2_BMCHS[0x2]",
         "Type": "char",
         "Size": "0x2",
-        "Offset": "0x16a"
+        "Offset": "0x19a"
       },
       {
         "Name": "Prompt Delay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x16c"
+        "Offset": "0x19c"
       },
       {
         "Name": "PromptHourglassTutorial1",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x68",
-        "Offset": "0x170"
+        "Offset": "0x1a0"
       },
       {
         "Name": "PromptDisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d8"
+        "Offset": "0x208"
       },
       {
-        "Name": "pad0x4_3TH9H[0x4]",
+        "Name": "pad0x4_V4LM9[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x1dc"
+        "Offset": "0x20c"
       },
       {
         "Name": "HandleChoseFaction",
         "Type": "Struct ObjectMessagingHandle",
-        "Size": "0x48",
-        "Offset": "0x1e0"
+        "Size": "0x58",
+        "Offset": "0x210"
       },
       {
         "Name": "FactionChosen",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x228"
+        "Offset": "0x268"
       }
     ]
   },

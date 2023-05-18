@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 tls_wld_firestand_light_a_C:
   Attributes:
-  - Name: None
+  - Name: PointLight
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: None
+  - Name: vfx_fire_bin
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class ParticleSystemComponent*

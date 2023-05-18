@@ -33,6 +33,15 @@ public:
 
 
 // Size 0x10
+struct MerchantSovereignHandInNameInformation
+{
+public:
+	struct FName                                                 MerchantNPCName;                                   // 0x0(0x8)
+	struct FName                                                 SovereignNPCName;                                  // 0x8(0x8)
+};
+
+
+// Size 0x10
 struct CommodityDescWithRedeemId
 {
 public:
@@ -80,7 +89,7 @@ struct CommodityRedemptionTrackingModel
 {
 public:
 	byte                                                         NPCName;                                           // 0x2(0x1)
-	char                                                         pad0x5_QSHCS[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_3JDPP[0x5];                                 // 0x3(0x5)
 };
 
 
@@ -90,7 +99,7 @@ struct CommodityTrackingModel
 public:
 	Struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
 	byte                                                         NPCName;                                           // 0x10(0x1)
-	char                                                         pad0x7_F9S9W[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_0Z4RZ[0x7];                                 // 0x11(0x7)
 };
 
 

@@ -3,62 +3,62 @@
 BP_Prompt_EmissaryEncounteredSkellyFort_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_C452X[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_X0FZ6[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: Handle_EmissaryEncounteredSkellyFort
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: CompanyName
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x8'
     Type: struct FName
   - Name: SurfacedThisSession
-    Offset: '0x170'
+    Offset: '0x1a0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_TWIMQ[0x3]
-    Offset: '0x171'
+  - Name: pad0x3_NMC7A[0x3]
+    Offset: '0x1a1'
     Size: '0x3'
     Type: char
   - Name: ExpectedCompanyName
-    Offset: '0x174'
+    Offset: '0x1a4'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_BSE4E[0x4]
-    Offset: '0x17c'
+  - Name: pad0x4_146LC[0x4]
+    Offset: '0x1ac'
     Size: '0x4'
     Type: char
   - Name: Prompts
-    Offset: '0x180'
+    Offset: '0x1b0'
     Size: '0x10'
     Type: TArray<struct Prompts>
   - Name: PromptAccessKey
-    Offset: '0x190'
+    Offset: '0x1c0'
     Size: '0x8'
     Type: class
   - Name: PromptIndex
-    Offset: '0x198'
+    Offset: '0x1c8'
     Size: '0x4'
     Type: int
   - Name: NumberOfPrompts
-    Offset: '0x19c'
+    Offset: '0x1cc'
     Size: '0x4'
     Type: int
   - Name: InitialDelay
-    Offset: '0x1a0'
+    Offset: '0x1d0'
     Size: '0x4'
     Type: float
   - Name: ShowPromptDuration
-    Offset: '0x1a4'
+    Offset: '0x1d4'
     Size: '0x4'
     Type: float
-  ClassSize: '0x90'
-  FullSize: '0x1a8'
-  InheritedSize: '0x118'
+  ClassSize: '0xa0'
+  FullSize: '0x1d8'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

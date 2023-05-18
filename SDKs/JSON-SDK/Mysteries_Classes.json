@@ -20,7 +20,7 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "pad0x40_LSC5K[0x40]",
+        "Name": "pad0x40_HBF58[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xc8"
@@ -38,7 +38,7 @@
         "Offset": "0x140"
       },
       {
-        "Name": "pad0x30_L7NSG[0x30]",
+        "Name": "pad0x30_5CTNP[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x178"
@@ -94,7 +94,7 @@
         "Offset": "0x490"
       },
       {
-        "Name": "pad0x20_Q3B3G[0x20]",
+        "Name": "pad0x20_7F27N[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x4c8"
@@ -103,21 +103,21 @@
   },
   "PopUpNotificationOnItemWieldedComponent": {
     "Super": "OnItemWieldedComponent",
-    "FullSize": "0x158",
-    "InheritedSize": "0x138",
+    "FullSize": "0x168",
+    "InheritedSize": "0x148",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "PopUpDesc",
         "Type": "Class PopUpMessageDesc*",
         "Size": "0x8",
-        "Offset": "0x138"
+        "Offset": "0x148"
       },
       {
-        "Name": "pad0x18_23VV9[0x18]",
+        "Name": "pad0x18_ERID8[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x140"
+        "Offset": "0x150"
       }
     ]
   },
@@ -128,7 +128,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_TEMV9[0x8]",
+        "Name": "pad0x8_5W7ST[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -164,7 +164,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0xa0_DJET5[0xa0]",
+        "Name": "pad0xa0_KVMUP[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x418"

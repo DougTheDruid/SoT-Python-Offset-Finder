@@ -3,25 +3,9 @@
 BP_SmallShip_StandardHull_Damage_C:
   Attributes:
   - Name: None
-    Offset: '0x638'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x640'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x648'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x650'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
     Offset: '0x658'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: Class StaticMeshComponent*
   - Name: None
     Offset: '0x660'
     Size: '0x8'
@@ -81,8 +65,24 @@ BP_SmallShip_StandardHull_Damage_C:
   - Name: None
     Offset: '0x6d0'
     Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x6d8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x6e0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x6e8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x6f0'
+    Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0xa0'
-  FullSize: '0x6d8'
-  InheritedSize: '0x638'
-  Super: None
+  FullSize: '0x6f8'
+  InheritedSize: '0x658'
+  Super: BP_HullDamage_C

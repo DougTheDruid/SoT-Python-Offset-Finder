@@ -143,7 +143,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x3_YEUOZ[0x3]",
+        "Name": "pad0x3_8NOKH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x89"
@@ -157,7 +157,7 @@
     ]
   },
   "ServerCrewModel": {
-    "ClassSize": "0xa8",
+    "ClassSize": "0xb8",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -190,7 +190,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_WSYG4[0x4]",
+        "Name": "pad0x4_X8VGQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -214,7 +214,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x3_TIQ61[0x3]",
+        "Name": "pad0x3_6UB9T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x71"
@@ -244,22 +244,28 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_BR4JQ[0x3]",
+        "Name": "pad0x3_3CN19[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
       },
       {
+        "Name": "RequestedGameEvent",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x90"
+      },
+      {
         "Name": "TimeWaitingForMatch",
         "Type": "Struct Timespan",
         "Size": "0x8",
-        "Offset": "0x90"
+        "Offset": "0xa0"
       },
       {
         "Name": "ForcedStamp",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x98"
+        "Offset": "0xa8"
       }
     ]
   },
@@ -273,7 +279,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_GCNUN[0x7]",
+        "Name": "pad0x7_LQC0R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -309,7 +315,7 @@
     "Attributes": []
   },
   "ServerCrewRequestModel": {
-    "ClassSize": "0xe0",
+    "ClassSize": "0x100",
     "Attributes": [
       {
         "Name": "ServerId",
@@ -400,6 +406,75 @@
         "Type": "Struct ServerContendedModel",
         "Size": "0x30",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "GameEvents",
+        "Type": "Struct GameEventAvailabilityModel",
+        "Size": "0x20",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "GameEventAvailabilityModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MainEvents",
+        "Type": "TArray<struct MainEvents>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubEvents",
+        "Type": "TArray<struct SubEvents>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "GameSubEventTypeModel": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "EventName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "GameMainEventTypeModel": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "EventName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ExcludedEvents",
+        "Type": "TArray<Str ExcludedEvents>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Status",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ShipSizeLimit",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x21"
       }
     ]
   },
@@ -465,7 +540,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_X8OC3[0x3]",
+        "Name": "pad0x3_HHYEF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -477,7 +552,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_AB0ZA[0x4]",
+        "Name": "pad0x4_AGPII[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"

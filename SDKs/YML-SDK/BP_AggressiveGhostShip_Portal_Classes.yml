@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 BP_AggressiveGhostShip_Portal_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x410'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Portal VFX
     Offset: '0x418'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: WwiseEmitter
     Offset: '0x420'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*
-  - Name: None
+  - Name: Portal
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shroud
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x438'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: DynamicMaterials
     Offset: '0x440'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>

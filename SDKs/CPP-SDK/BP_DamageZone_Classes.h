@@ -6,19 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x41 (Full Size[0x831] - InheritedSize[0x7f0]
+// Size 0x41 (Full Size[0x861] - InheritedSize[0x820]
 class BP_DamageZone_C: public DamageZone
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x7f0(0x8)
-	struct FName                                                 None;                                              // 0x7f8(0x8)
-	Struct None                                                  None;                                              // 0x800(0x10)
-	int                                                          None;                                              // 0x810(0x4)
-	int                                                          None;                                              // 0x814(0x4)
-	TArray<class DecalComponent*>                                None;                                              // 0x818(0x10)
-	int                                                          None;                                              // 0x828(0x4)
-	int                                                          None;                                              // 0x82c(0x4)
-	bool                                                         None;                                              // 0x830(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x820(0x8)
+	struct FName                                                 Repair Tag;                                        // 0x828(0x8)
+	Struct BP_InternalDamageGroup                                RepairGroup;                                       // 0x830(0x10)
+	int                                                          ExternalHitBufferIndex;                            // 0x840(0x4)
+	int                                                          MaxStoredHits;                                     // 0x844(0x4)
+	TArray<class DecalComponent*>                                Deferred Decals;                                   // 0x848(0x10)
+	int                                                          ClientUpdateEventCount;                            // 0x858(0x4)
+	int                                                          ExternalDecalBufferIndex;                          // 0x85c(0x4)
+	bool                                                         HasBeenInitialized;                                // 0x860(0x1)
 };
 
 

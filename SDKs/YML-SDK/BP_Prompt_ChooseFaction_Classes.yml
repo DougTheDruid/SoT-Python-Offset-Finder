@@ -3,66 +3,66 @@
 BP_Prompt_ChooseFaction_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_5SPMA[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_MRSMN[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: HandleChoseFaction
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: PromptPirateLord1
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: PromptFlameheart1
-    Offset: '0x1d0'
+    Offset: '0x200'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: PromptFlameheart2
-    Offset: '0x238'
+    Offset: '0x268'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: PromptPirateLord2
-    Offset: '0x2a0'
+    Offset: '0x2d0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: PromptDelay
-    Offset: '0x308'
+    Offset: '0x338'
     Size: '0x4'
     Type: float
   - Name: PromptDisplayDuration
-    Offset: '0x30c'
+    Offset: '0x33c'
     Size: '0x4'
     Type: float
   - Name: FactionPromptFinished
-    Offset: '0x310'
+    Offset: '0x340'
     Size: '0x1'
     Type: bool
   - Name: FactionChosen
-    Offset: '0x311'
+    Offset: '0x341'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_RZSP8[0x6]
-    Offset: '0x312'
+  - Name: pad0x6_D60XU[0x6]
+    Offset: '0x342'
     Size: '0x6'
     Type: char
   - Name: CurrentFaction
-    Offset: '0x318'
+    Offset: '0x348'
     Size: '0x8'
     Type: class
   - Name: WarmapOpen
-    Offset: '0x320'
+    Offset: '0x350'
     Size: '0x1'
     Type: bool
   - Name: WarMapPromptFinished
-    Offset: '0x321'
+    Offset: '0x351'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x20a'
-  FullSize: '0x322'
-  InheritedSize: '0x118'
+  ClassSize: '0x21a'
+  FullSize: '0x352'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

@@ -11,7 +11,7 @@ struct TaleQuestDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_OJ5ZE[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_5SN7O[0x4];                                 // 0x4(0x4)
 	Struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
 	int                                                          NumToDeliver;                                      // 0x30(0x4)
 	int                                                          NumToAllocate;                                     // 0x34(0x4)
@@ -100,7 +100,7 @@ public:
 	Struct Guid                                                  TaleId;                                            // 0x0(0x10)
 	class                                                        DataID;                                            // 0x10(0x8)
 	bool                                                         DataBool;                                          // 0x18(0x1)
-	char                                                         pad0x3_TDXCK[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_3F1BF[0x3];                                 // 0x19(0x3)
 	int                                                          DataInt;                                           // 0x1c(0x4)
 };
 
@@ -120,7 +120,7 @@ public:
 	Struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
 	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
 	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
-	char                                                         pad0x6_46Q3P[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_L990X[0x6];                                 // 0x22(0x6)
 	Struct FText                                                 FailureMessage;                                    // 0x28(0x38)
 };
 

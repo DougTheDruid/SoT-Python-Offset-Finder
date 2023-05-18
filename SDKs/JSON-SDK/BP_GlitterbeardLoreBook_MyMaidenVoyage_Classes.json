@@ -1,27 +1,27 @@
 {
   "BP_GlitterbeardLoreBook_MyMaidenVoyage_C": {
     "Super": "ModalInteractionProxy",
-    "FullSize": "0x528",
-    "InheritedSize": "0x510",
+    "FullSize": "0x538",
+    "InheritedSize": "0x520",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x510"
+        "Offset": "0x520"
       },
       {
-        "Name": "None",
+        "Name": "Books",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x528"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x520"
+        "Offset": "0x530"
       }
     ]
   },

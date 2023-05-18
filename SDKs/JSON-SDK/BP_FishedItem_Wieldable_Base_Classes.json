@@ -1,33 +1,33 @@
 {
   "BP_FishedItem_Wieldable_Base_C": {
     "Super": "StaticSimpleBootyWieldableItem",
-    "FullSize": "0x7c0",
-    "InheritedSize": "0x7a0",
+    "FullSize": "0x800",
+    "InheritedSize": "0x7e0",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "TrackedOwner",
         "Type": "Class TrackedOwnerComponent*",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x7e0"
       },
       {
         "Name": "WieldableInteractable",
         "Type": "Class WieldableInteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x7a8"
+        "Offset": "0x7e8"
       },
       {
         "Name": "Pickupable",
         "Type": "Class PickupableComponent*",
         "Size": "0x8",
-        "Offset": "0x7b0"
+        "Offset": "0x7f0"
       },
       {
         "Name": "UsableWieldable",
         "Type": "Class UsableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x7b8"
+        "Offset": "0x7f8"
       }
     ]
   },

@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_MysteriousNote_C:
   Attributes:
-  - Name: None
-    Offset: '0x940'
+  - Name: ZoomInOnWieldableItem
+    Offset: '0x980'
     Size: '0x8'
     Type: Class ZoomInOnWieldableItemComponent*
   ClassSize: '0x8'
-  FullSize: '0x948'
-  InheritedSize: '0x940'
+  FullSize: '0x988'
+  InheritedSize: '0x980'
   Super: WieldableMysteriousNote

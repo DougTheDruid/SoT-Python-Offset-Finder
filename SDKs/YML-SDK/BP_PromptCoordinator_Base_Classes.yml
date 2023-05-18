@@ -3,26 +3,26 @@
 BP_PromptCoordinator_Base_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0xf8'
+    Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x14b_OBBA5[0x14b]
-    Offset: '0x100'
-    Size: '0x14b'
+  - Name: pad0x6c_DLW7R[0x6c]
+    Offset: '0x120'
+    Size: '0x6c'
     Type: char
   - Name: IsCompleted
-    Offset: '0x100'
+    Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_26LIO[0x7]
-    Offset: '0x101'
+  - Name: pad0x7_3GFZI[0x7]
+    Offset: '0x121'
     Size: '0x7'
     Type: char
-  - Name: pad0x10_IEYAY[0x10]
-    Offset: '0x108'
+  - Name: pad0x10_UWMY4[0x10]
+    Offset: '0x128'
     Size: '0x10'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0x118'
-  InheritedSize: '0xf8'
+  FullSize: '0x138'
+  InheritedSize: '0x118'
   Super: BasePromptCoordinator

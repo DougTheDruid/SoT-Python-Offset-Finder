@@ -35,7 +35,7 @@ struct SeasonRewardEarnedEvent
 public:
 	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
 	bool                                                         MultipleRewards;                                   // 0x10(0x1)
-	char                                                         pad0x7_AIBRK[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_NOAOV[0x7];                                 // 0x11(0x7)
 	TArray<struct Rewards>                                       Rewards;                                           // 0x18(0x10)
 };
 
@@ -74,7 +74,7 @@ public:
 	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
 	Struct Guid                                                  GoalId;                                            // 0x10(0x10)
 	byte                                                         GoalType;                                          // 0x20(0x1)
-	char                                                         pad0x3_INSDI[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_9NXEC[0x3];                                 // 0x21(0x3)
 	Struct Guid                                                  GoalGroupId;                                       // 0x24(0x10)
 };
 
@@ -89,7 +89,7 @@ public:
 	Struct Guid                                                  SeasonId;                                          // 0xc(0x10)
 	Struct Guid                                                  GoalId;                                            // 0x1c(0x10)
 	byte                                                         GoalType;                                          // 0x2c(0x1)
-	char                                                         pad0x3_ZI4HI[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_LH8SA[0x3];                                 // 0x2d(0x3)
 	Struct Guid                                                  GoalGroupId;                                       // 0x30(0x10)
 };
 
@@ -103,7 +103,7 @@ public:
 	Struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
 	byte                                                         PlayMode;                                          // 0xd0(0x1)
 	byte                                                         PlayModeVariant;                                   // 0xd1(0x1)
-	char                                                         pad0x6_3M4G9[0x6];                                 // 0xd2(0x6)
+	char                                                         pad0x6_CHLAM[0x6];                                 // 0xd2(0x6)
 	double                                                       CreatedAt;                                         // 0xd8(0x8)
 };
 
@@ -117,7 +117,7 @@ public:
 	Struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
 	byte                                                         PlayMode;                                          // 0xd0(0x1)
 	byte                                                         PlayModeVariant;                                   // 0xd1(0x1)
-	char                                                         pad0x2_44ULV[0x2];                                 // 0xd2(0x2)
+	char                                                         pad0x2_1NU0T[0x2];                                 // 0xd2(0x2)
 	int                                                          Value;                                             // 0xd4(0x4)
 	double                                                       CreatedAt;                                         // 0xd8(0x8)
 };

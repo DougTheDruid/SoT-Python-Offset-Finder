@@ -3,18 +3,18 @@
 BP_LargeShip_CageLatch_03_a_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x588'
+    Offset: '0x618'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: cap_cage_door_03_a
-    Offset: '0x590'
+    Offset: '0x620'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: Interactable
-    Offset: '0x598'
+    Offset: '0x628'
     Size: '0x8'
     Type: Class InteractableComponent*
   ClassSize: '0x18'
-  FullSize: '0x5a0'
-  InheritedSize: '0x588'
+  FullSize: '0x630'
+  InheritedSize: '0x618'
   Super: PetCageSwitchMechanismTrigger

@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x668] - InheritedSize[0x660]
+// Size 0x8 (Full Size[0x6c8] - InheritedSize[0x6c0]
 class BP_PetChestInteraction_C: public PetChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x660(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x6c0(0x8)
 };
 
 

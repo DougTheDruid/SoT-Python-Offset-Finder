@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_WaterProjectile_C:
   Attributes:
-  - Name: None
-    Offset: '0x728'
+  - Name: Sphere
+    Offset: '0x748'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x730'
+  - Name: Collision
+    Offset: '0x750'
     Size: '0x8'
     Type: Class SphereComponent*
   ClassSize: '0x10'
-  FullSize: '0x738'
-  InheritedSize: '0x728'
+  FullSize: '0x758'
+  InheritedSize: '0x748'
   Super: LiquidProjectile

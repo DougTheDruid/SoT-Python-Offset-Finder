@@ -3,10 +3,10 @@
 BP_ShipFlagCustomizationChestInteraction_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x520'
+    Offset: '0x550'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x528'
-  InheritedSize: '0x520'
+  FullSize: '0x558'
+  InheritedSize: '0x550'
   Super: ShipFlagCustomizationChestInteraction

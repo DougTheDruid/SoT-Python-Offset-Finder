@@ -55,14 +55,14 @@ public:
 };
 
 
-// Size 0x150 (Full Size[0x178] - InheritedSize[0x28]
+// Size 0x160 (Full Size[0x188] - InheritedSize[0x28]
 class WieldableMysteriousNoteLayout: public DataAsset
 {
 public:
 	Struct FText                                                 DefaultTitle;                                      // 0x28(0x38)
 	Struct FText                                                 DefaultBody;                                       // 0x60(0x38)
-	Struct WieldableMysteriousNoteLayoutItem                     DefaultNoteLayoutItem;                             // 0x98(0xd0)
-	TArray<struct NoteLayoutItems>                               NoteLayoutItems;                                   // 0x168(0x10)
+	Struct WieldableMysteriousNoteLayoutItem                     DefaultNoteLayoutItem;                             // 0x98(0xe0)
+	TArray<struct NoteLayoutItems>                               NoteLayoutItems;                                   // 0x178(0x10)
 };
 
 
@@ -79,11 +79,11 @@ public:
 class MysteriousNotesService: public Actor
 {
 public:
-	char                                                         pad0x28_IW7BB[0x28];                               // 0x3c8(0x28)
+	char                                                         pad0x28_QJB5G[0x28];                               // 0x3c8(0x28)
 	Class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
 	Class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
 	Class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
-	char                                                         pad0x88_7RYTJ[0x88];                               // 0x408(0x88)
+	char                                                         pad0x88_IGUTZ[0x88];                               // 0x408(0x88)
 };
 
 
@@ -94,33 +94,33 @@ public:
 };
 
 
-// Size 0x190 (Full Size[0x258] - InheritedSize[0xc8]
+// Size 0x1a0 (Full Size[0x268] - InheritedSize[0xc8]
 class PlayerMysteriousNoteComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_O53OC[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_B5SAW[0x8];                                 // 0xc8(0x8)
 	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
-	char                                                         pad0xef_256BF[0xef];                               // 0xd1(0xef)
+	char                                                         pad0xef_WO5F2[0xef];                               // 0xd1(0xef)
 	Struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
 	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
-	char                                                         pad0x7f_FFAEU[0x7f];                               // 0x1d9(0x7f)
+	char                                                         pad0x8f_IBZHU[0x8f];                               // 0x1d9(0x8f)
 };
 
 
-// Size 0x1a0 (Full Size[0x940] - InheritedSize[0x7a0]
+// Size 0x1a0 (Full Size[0x980] - InheritedSize[0x7e0]
 class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_9CDNJ[0x10];                               // 0x7a0(0x10)
-	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7b0(0x8)
-	int                                                          CanvasWidth;                                       // 0x7b8(0x4)
-	int                                                          CanvasHeight;                                      // 0x7bc(0x4)
-	float                                                        FontScale;                                         // 0x7c0(0x4)
-	char                                                         pad0x5c_537T0[0x5c];                               // 0x7c4(0x5c)
-	Class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x820(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x828(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x830(0x8)
-	char                                                         pad0x108_KGYL7[0x108];                             // 0x838(0x108)
+	char                                                         pad0x10_SFOQB[0x10];                               // 0x7e0(0x10)
+	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7f0(0x8)
+	int                                                          CanvasWidth;                                       // 0x7f8(0x4)
+	int                                                          CanvasHeight;                                      // 0x7fc(0x4)
+	float                                                        FontScale;                                         // 0x800(0x4)
+	char                                                         pad0x5c_FAFSF[0x5c];                               // 0x804(0x5c)
+	Class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x860(0x8)
+	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x868(0x8)
+	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x870(0x8)
+	char                                                         pad0x108_379ZA[0x108];                             // 0x878(0x108)
 };
 
 

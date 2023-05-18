@@ -1,37 +1,25 @@
 {
   "MapTable_C": {
     "Super": "MapTable",
-    "FullSize": "0x805",
-    "InheritedSize": "0x7a0",
+    "FullSize": "0x815",
+    "InheritedSize": "0x7b0",
     "ClassSize": "0x65",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x7b0"
       },
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
-        "Offset": "0x7a8"
+        "Offset": "0x7b8"
       },
       {
         "Name": "NavBlocker",
         "Type": "Class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x7b0"
-      },
-      {
-        "Name": "ControlPoint",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7b8"
-      },
-      {
-        "Name": "ControlPoint",
-        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7c0"
       },
@@ -60,34 +48,46 @@
         "Offset": "0x7e0"
       },
       {
+        "Name": "ControlPoint",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Name": "ControlPoint",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
         "Name": "TextureFeedback",
         "Type": "Class TextureFeedbackComponent*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x7f8"
       },
       {
         "Name": "Cube",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x800"
       },
       {
         "Name": "Map",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x808"
       },
       {
         "Name": "ActiveRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x800"
+        "Offset": "0x810"
       },
       {
         "Name": "IsActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x804"
+        "Offset": "0x814"
       }
     ]
   },

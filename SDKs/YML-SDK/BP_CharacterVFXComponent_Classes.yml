@@ -6,95 +6,95 @@ BP_CharacterVFXComponent_C:
     Offset: '0xe0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x162_V5RDG[0x162]
+  - Name: pad0xa4_Z2YKH[0xa4]
     Offset: '0xe8'
-    Size: '0x162'
+    Size: '0xa4'
     Type: char
   - Name: EnterWaterEvent
     Offset: '0xe8'
-    Size: '0x48'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: UnderwaterStateChanged
-    Offset: '0x130'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Splash Emitter
-    Offset: '0x178'
+    Offset: '0x198'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: Large Foot Splash
-    Offset: '0x180'
+    Offset: '0x1a0'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: Small Foot Splash
-    Offset: '0x188'
+    Offset: '0x1a8'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: Threshold for run
-    Offset: '0x190'
+    Offset: '0x1b0'
     Size: '0x4'
     Type: float
   - Name: Threshold for large foot impact
-    Offset: '0x194'
+    Offset: '0x1b4'
     Size: '0x4'
     Type: float
   - Name: FallingIntoWaterHandle
-    Offset: '0x198'
-    Size: '0x48'
+    Offset: '0x1b8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Large Falling Splash
-    Offset: '0x1e0'
+    Offset: '0x210'
     Size: '0x8'
     Type: Class ParticleSystem*
   - Name: PlayerViewUnderWaterHandle
-    Offset: '0x1e8'
-    Size: '0x48'
+    Offset: '0x218'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: EnterShipEventHandle
-    Offset: '0x230'
-    Size: '0x48'
+    Offset: '0x270'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: ExitShipEventHandle
-    Offset: '0x278'
-    Size: '0x48'
+    Offset: '0x2c8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: WindOffsetFromShip
-    Offset: '0x2c0'
+    Offset: '0x320'
     Size: '0xc'
     Type: Struct Vector
   - Name: DEBUG_WindActive
-    Offset: '0x2cc'
+    Offset: '0x32c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_BUXDE[0x3]
-    Offset: '0x2cd'
+  - Name: pad0x3_E230O[0x3]
+    Offset: '0x32d'
     Size: '0x3'
     Type: char
   - Name: DEBUG_WindToggleTimer
-    Offset: '0x2d0'
+    Offset: '0x330'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_C8DYO[0x4]
-    Offset: '0x2d4'
+  - Name: pad0x4_S794K[0x4]
+    Offset: '0x334'
     Size: '0x4'
     Type: char
   - Name: WindDirectionChangedHandle
-    Offset: '0x2d8'
-    Size: '0x48'
+    Offset: '0x338'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: vfx_particle_underwater_ambient
-    Offset: '0x320'
+    Offset: '0x390'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: vfx_player_underwater_ambient
-    Offset: '0x328'
+    Offset: '0x398'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   - Name: FeatureName
-    Offset: '0x330'
+    Offset: '0x3a0'
     Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0x25c'
-  FullSize: '0x33c'
+  ClassSize: '0x2cc'
+  FullSize: '0x3ac'
   InheritedSize: '0xe0'
   Super: CharacterVfxComponent

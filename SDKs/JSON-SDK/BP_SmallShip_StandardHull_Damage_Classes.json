@@ -1,37 +1,13 @@
 {
   "BP_SmallShip_StandardHull_Damage_C": {
-    "Super": "None",
-    "FullSize": "0x6d8",
-    "InheritedSize": "0x638",
+    "Super": "BP_HullDamage_C",
+    "FullSize": "0x6f8",
+    "InheritedSize": "0x658",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "None",
         "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x638"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x648"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x650"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
@@ -121,9 +97,33 @@
       },
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x6d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f0"
       }
     ]
   },

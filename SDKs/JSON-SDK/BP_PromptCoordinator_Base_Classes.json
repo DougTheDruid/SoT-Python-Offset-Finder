@@ -1,39 +1,39 @@
 {
   "BP_PromptCoordinator_Base_C": {
     "Super": "BasePromptCoordinator",
-    "FullSize": "0x118",
-    "InheritedSize": "0xf8",
+    "FullSize": "0x138",
+    "InheritedSize": "0x118",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0xf8"
+        "Offset": "0x118"
       },
       {
-        "Name": "pad0x14b_OBBA5[0x14b]",
+        "Name": "pad0x6c_DLW7R[0x6c]",
         "Type": "char",
-        "Size": "0x14b",
-        "Offset": "0x100"
+        "Size": "0x6c",
+        "Offset": "0x120"
       },
       {
         "Name": "IsCompleted",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x100"
+        "Offset": "0x120"
       },
       {
-        "Name": "pad0x7_26LIO[0x7]",
+        "Name": "pad0x7_3GFZI[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x101"
+        "Offset": "0x121"
       },
       {
-        "Name": "pad0x10_IEYAY[0x10]",
+        "Name": "pad0x10_UWMY4[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x108"
+        "Offset": "0x128"
       }
     ]
   },

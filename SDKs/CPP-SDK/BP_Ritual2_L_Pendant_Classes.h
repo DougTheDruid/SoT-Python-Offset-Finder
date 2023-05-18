@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Ritual2_L_Pendant_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	char                                                         pad0x8_9Z3AW[0x8];                                 // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3c8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 

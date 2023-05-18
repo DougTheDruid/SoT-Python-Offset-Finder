@@ -1,57 +1,57 @@
 {
   "BP_WarMapVoteSingle_C": {
     "Super": "WarMapVoteInteractionActor",
-    "FullSize": "0x650",
-    "InheritedSize": "0x610",
+    "FullSize": "0x680",
+    "InheritedSize": "0x640",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "VoteIndicator4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x610"
+        "Offset": "0x640"
       },
       {
         "Name": "VoteIndicator3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x618"
+        "Offset": "0x648"
       },
       {
         "Name": "VoteIndicator2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x620"
+        "Offset": "0x650"
       },
       {
         "Name": "VoteIndicator1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x628"
+        "Offset": "0x658"
       },
       {
         "Name": "VoteAudio",
         "Type": "Class VoteAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x630"
+        "Offset": "0x660"
       },
       {
         "Name": "WarMapInteractionVote",
         "Type": "Class WarMapInteractionVoteComponent*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x668"
       },
       {
         "Name": "StaticMeshVoteVisualiser",
         "Type": "Class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x670"
       },
       {
         "Name": "ActionRules",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
-        "Offset": "0x648"
+        "Offset": "0x678"
       }
     ]
   },

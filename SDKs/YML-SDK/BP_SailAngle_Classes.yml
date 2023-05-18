@@ -3,10 +3,10 @@
 BP_SailAngle_C:
   Attributes:
   - Name: Interactable
-    Offset: '0x7f8'
+    Offset: '0x868'
     Size: '0x8'
     Type: Class InteractableComponent*
   ClassSize: '0x8'
-  FullSize: '0x800'
-  InheritedSize: '0x7f8'
+  FullSize: '0x870'
+  InheritedSize: '0x868'
   Super: SailAngle

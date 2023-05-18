@@ -7,6 +7,24 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18
+struct RowboatLiveryPickerDataAssetConditions
+{
+public:
+	Class RowboatLiveryPickerDataAsset*                          RowboatLiveryPickerDataAsset;                      // 0x0(0x8)
+	float                                                        Weight;                                            // 0x8(0x4)
+	Struct FeatureFlag                                           Feature;                                           // 0xc(0xc)
+};
+
+
+// Size 0x28
+struct RowboatLiveryByWeight
+{
+public:
+	float                                                        Weight;                                            // 0x20(0x4)
+};
+
+
+// Size 0x18
 struct RowboatDamageEffectData
 {
 public:
@@ -75,6 +93,13 @@ public:
 
 // Size 0x30
 struct QuestVariableWatercraft
+{
+public:
+};
+
+
+// Size 0x1
+struct EventRowboatLoaded
 {
 public:
 };

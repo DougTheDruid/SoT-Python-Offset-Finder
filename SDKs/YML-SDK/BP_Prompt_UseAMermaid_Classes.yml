@@ -3,62 +3,62 @@
 BP_Prompt_UseAMermaid_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12a_OTXR6[0x12a]
-    Offset: '0x120'
-    Size: '0x12a'
+  - Name: pad0x4c_A2NZC[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: State_IsThereAMermaid
-    Offset: '0x120'
+    Offset: '0x140'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Y5HC2[0x7]
-    Offset: '0x121'
+  - Name: pad0x7_2NMV9[0x7]
+    Offset: '0x141'
     Size: '0x7'
     Type: char
   - Name: Handle_OnMermaidActivatedLocally
-    Offset: '0x128'
-    Size: '0x48'
+    Offset: '0x148'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_OnMermaidDeactivatedLocally
-    Offset: '0x170'
-    Size: '0x48'
+    Offset: '0x1a0'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_OnMermaidUsed
-    Offset: '0x1b8'
-    Size: '0x48'
+    Offset: '0x1f8'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: State_MermaidUsed
-    Offset: '0x200'
+    Offset: '0x250'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_S08C3[0x7]
-    Offset: '0x201'
+  - Name: pad0x7_YUB6C[0x7]
+    Offset: '0x251'
     Size: '0x7'
     Type: char
   - Name: Prompt_UseMermaid
-    Offset: '0x208'
+    Offset: '0x258'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: State_ShowPrompt
-    Offset: '0x270'
+    Offset: '0x2c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7OSL2[0x3]
-    Offset: '0x271'
+  - Name: pad0x3_3UL6N[0x3]
+    Offset: '0x2c1'
     Size: '0x3'
     Type: char
   - Name: PromptDisplayDuration
-    Offset: '0x274'
+    Offset: '0x2c4'
     Size: '0x4'
     Type: float
   - Name: PromptHideDuration
-    Offset: '0x278'
+    Offset: '0x2c8'
     Size: '0x4'
     Type: float
-  ClassSize: '0x164'
-  FullSize: '0x27c'
-  InheritedSize: '0x118'
+  ClassSize: '0x194'
+  FullSize: '0x2cc'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

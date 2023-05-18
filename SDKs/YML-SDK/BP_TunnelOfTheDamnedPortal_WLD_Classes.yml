@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_TunnelOfTheDamnedPortal_WLD_C:
   Attributes:
-  - Name: None
-    Offset: '0x660'
+  - Name: PortalEffects
+    Offset: '0x670'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x8'
-  FullSize: '0x668'
-  InheritedSize: '0x660'
-  Super: None
+  FullSize: '0x678'
+  InheritedSize: '0x670'
+  Super: BP_TunnelOfTheDamnedPortal_Ship_C

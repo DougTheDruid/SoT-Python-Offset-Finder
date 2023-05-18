@@ -7,7 +7,7 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x4
-struct DestroyActorData
+struct DestroyActorGameServerRequestModel
 {
 public:
 	int                                                          ActorNetID;                                        // 0x0(0x4)
@@ -15,7 +15,7 @@ public:
 
 
 // Size 0x10
-struct DestroyAllExistingActorsByClassData
+struct DestroyAllExistingActorsByClassGameServerRequestModel
 {
 public:
 	TArray<Str ActorClassNames>                                  ActorClassNames;                                   // 0x0(0x10)

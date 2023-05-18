@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class DescribableComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x8_GMUII[0x8];                                 // 0x128(0x8)
+	char                                                         pad0x8_8R10R[0x8];                                 // 0x128(0x8)
 	bool                                                         TooltipActiveOnBeginPlay;                          // 0x130(0x1)
-	char                                                         pad0x7_7MYF7[0x7];                                 // 0x131(0x7)
+	char                                                         pad0x7_PUS07[0x7];                                 // 0x131(0x7)
 	Struct FText                                                 DescribableTooltipText;                            // 0x138(0x38)
 	bool                                                         TooltipActive;                                     // 0x170(0x1)
-	char                                                         pad0x17_5G30R[0x17];                               // 0x171(0x17)
+	char                                                         pad0x17_RY8JM[0x17];                               // 0x171(0x17)
 };
 
 

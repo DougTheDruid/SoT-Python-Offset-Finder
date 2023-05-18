@@ -27,7 +27,7 @@ public:
 	Class WwiseObjectPoolWrapper*                                NameplatePool;                                     // 0x4b0(0x8)
 	Struct WwiseEmitterCreationParams                            EmitterCreationParams;                             // 0x4b8(0x28)
 	float                                                        Cooldown;                                          // 0x4e0(0x4)
-	char                                                         pad0x4_VPUKW[0x4];                                 // 0x4e4(0x4)
+	char                                                         pad0x4_BGWU9[0x4];                                 // 0x4e4(0x4)
 	Struct SlateFontInfo                                         FontInfo;                                          // 0x4e8(0x40)
 	TArray<class ParticleSystem*>                                VFXSizeVariants;                                   // 0x528(0x10)
 	int                                                          NameSizeIndex;                                     // 0x538(0x4)

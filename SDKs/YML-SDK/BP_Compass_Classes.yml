@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Compass_C:
   Attributes:
-  - Name: None
-    Offset: '0x880'
+  - Name: InventoryItem
+    Offset: '0x8e0'
     Size: '0x8'
     Type: Class InventoryItemComponent*
   ClassSize: '0x8'
-  FullSize: '0x888'
-  InheritedSize: '0x880'
+  FullSize: '0x8e8'
+  InheritedSize: '0x8e0'
   Super: Compass

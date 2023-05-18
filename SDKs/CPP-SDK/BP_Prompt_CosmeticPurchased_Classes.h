@@ -6,27 +6,27 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x1e8 (Full Size[0x300] - InheritedSize[0x118]
+// Size 0x218 (Full Size[0x350] - InheritedSize[0x138]
 class BP_Prompt_CosmeticPurchased_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12b_BGKJO[0x12b];                             // 0x120(0x12b)
-	Struct ObjectMessagingHandle                                 Handle_OfferPurchasedEvent;                        // 0x120(0x48)
-	Struct ObjectMessagingHandle                                 Handle_ShopClosedEvent;                            // 0x168(0x48)
-	Struct ObjectMessagingHandle                                 Handle_PlayerEntitlementUpdatedEvent;              // 0x1b0(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x1f8(0x68)
-	Struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x260(0x68)
-	class                                                        AccessKey;                                         // 0x2c8(0x8)
-	TArray<class Class*>                                         CategoryTypes;                                     // 0x2d0(0x10)
-	TArray<Str PurchasedEntitlementIds>                          PurchasedEntitlementIds;                           // 0x2e0(0x10)
-	float                                                        DelayUntilPromptDisplays;                          // 0x2f0(0x4)
-	float                                                        DelayBetweenPrompts;                               // 0x2f4(0x4)
-	float                                                        PromptDisplayDuration;                             // 0x2f8(0x4)
-	bool                                                         CosmeticPurchased;                                 // 0x2fc(0x1)
-	bool                                                         PromptInfoSet;                                     // 0x2fd(0x1)
-	bool                                                         DisplayingPrompts;                                 // 0x2fe(0x1)
-	bool                                                         ProcessingPurchase;                                // 0x2ff(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_MI3JH[0x4c];                               // 0x140(0x4c)
+	Struct ObjectMessagingHandle                                 Handle_OfferPurchasedEvent;                        // 0x140(0x58)
+	Struct ObjectMessagingHandle                                 Handle_ShopClosedEvent;                            // 0x198(0x58)
+	Struct ObjectMessagingHandle                                 Handle_PlayerEntitlementUpdatedEvent;              // 0x1f0(0x58)
+	Struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x248(0x68)
+	Struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x2b0(0x68)
+	class                                                        AccessKey;                                         // 0x318(0x8)
+	TArray<class Class*>                                         CategoryTypes;                                     // 0x320(0x10)
+	TArray<Str PurchasedEntitlementIds>                          PurchasedEntitlementIds;                           // 0x330(0x10)
+	float                                                        DelayUntilPromptDisplays;                          // 0x340(0x4)
+	float                                                        DelayBetweenPrompts;                               // 0x344(0x4)
+	float                                                        PromptDisplayDuration;                             // 0x348(0x4)
+	bool                                                         CosmeticPurchased;                                 // 0x34c(0x1)
+	bool                                                         PromptInfoSet;                                     // 0x34d(0x1)
+	bool                                                         DisplayingPrompts;                                 // 0x34e(0x1)
+	bool                                                         ProcessingPurchase;                                // 0x34f(0x1)
 };
 
 

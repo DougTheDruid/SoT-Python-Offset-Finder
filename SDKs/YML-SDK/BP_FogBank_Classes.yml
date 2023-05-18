@@ -3,10 +3,10 @@
 BP_FogBank_C:
   Attributes:
   - Name: AthenaPlayerZonePenetrationTracker
-    Offset: '0x580'
+    Offset: '0x590'
     Size: '0x8'
     Type: Class AthenaPlayerZonePenetrationTrackerComponent*
   ClassSize: '0x8'
-  FullSize: '0x588'
-  InheritedSize: '0x580'
+  FullSize: '0x598'
+  InheritedSize: '0x590'
   Super: FogBank

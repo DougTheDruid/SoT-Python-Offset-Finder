@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Projectile_VolcanoRockMini_C:
   Attributes:
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x658'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Collision
     Offset: '0x660'
     Size: '0x8'
     Type: Class SphereComponent*

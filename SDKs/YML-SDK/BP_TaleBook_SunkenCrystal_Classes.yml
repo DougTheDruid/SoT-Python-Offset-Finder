@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_TaleBook_SunkenCrystal_C:
   Attributes:
-  - Name: None
-    Offset: '0x790'
+  - Name: Arrow
+    Offset: '0x7c0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: None
-    Offset: '0x798'
+  - Name: TaleSelectionSlot
+    Offset: '0x7c8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7a0'
+  - Name: TaleSelectionSlot
+    Offset: '0x7d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7a8'
+  - Name: TaleSelectionSlot
+    Offset: '0x7d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7b0'
+  - Name: TaleSelectionSlot
+    Offset: '0x7e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7b8'
+  - Name: TaleSelectionSlot
+    Offset: '0x7e8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0x7c0'
+  - Name: TaleSelectionSlot
+    Offset: '0x7f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x38'
-  FullSize: '0x7c8'
-  InheritedSize: '0x790'
+  FullSize: '0x7f8'
+  InheritedSize: '0x7c0'
   Super: VoyageProposalContainer

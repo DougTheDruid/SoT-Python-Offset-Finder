@@ -2,30 +2,30 @@
 # https://github.com/DougTheDruid
 BP_ActorGlow_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3d0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: DecalMaterials
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: None
+  - Name: Reveal Duration
     Offset: '0x3f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FEKR8[0x4]
+  - Name: pad0x4_JZ97V[0x4]
     Offset: '0x3f4'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: StepsTriggerActor
     Offset: '0x3f8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: BlueprintGeneratedClass BP_StepsTrigger_C*
   ClassSize: '0x30'
   FullSize: '0x400'
   InheritedSize: '0x3d0'

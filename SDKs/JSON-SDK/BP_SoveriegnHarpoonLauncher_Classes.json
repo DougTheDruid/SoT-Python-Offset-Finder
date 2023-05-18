@@ -1,65 +1,65 @@
 {
-  "BP_SoveriegnHarpoonLauncher_C": {
+  "BP_SoveriegnHarpoonLauncher_2_C": {
     "Super": "HarpoonLauncher",
-    "FullSize": "0xc50",
-    "InheritedSize": "0xc30",
+    "FullSize": "0xcd0",
+    "InheritedSize": "0xcb0",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "HarpoonItemLocation",
         "Type": "Class HarpoonItemLocationComponent*",
         "Size": "0x8",
-        "Offset": "0xc30"
+        "Offset": "0xcb0"
       },
       {
-        "Name": "None",
+        "Name": "CubeNotWalkable",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xc38"
+        "Offset": "0xcb8"
       },
       {
-        "Name": "None",
+        "Name": "MountCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0xc40"
+        "Offset": "0xcc0"
       },
       {
-        "Name": "None",
+        "Name": "BarrelCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0xc48"
+        "Offset": "0xcc8"
       }
     ]
   },
-  "BP_SoveriegnHarpoonLauncher_2_C": {
+  "BP_SoveriegnHarpoonLauncher_C": {
     "Super": "HarpoonLauncher",
-    "FullSize": "0xc50",
-    "InheritedSize": "0xc30",
+    "FullSize": "0xcd0",
+    "InheritedSize": "0xcb0",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "HarpoonItemLocation",
         "Type": "Class HarpoonItemLocationComponent*",
         "Size": "0x8",
-        "Offset": "0xc30"
+        "Offset": "0xcb0"
       },
       {
-        "Name": "None",
+        "Name": "CubeNotWalkable",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xc38"
+        "Offset": "0xcb8"
       },
       {
-        "Name": "None",
+        "Name": "MountCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0xc40"
+        "Offset": "0xcc0"
       },
       {
-        "Name": "None",
+        "Name": "BarrelCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0xc48"
+        "Offset": "0xcc8"
       }
     ]
   },

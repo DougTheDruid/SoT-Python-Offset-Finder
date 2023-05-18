@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_ReaperChestBeacon_C:
   Attributes:
-  - Name: None
-    Offset: '0x410'
+  - Name: VFX_DarkRelicsChest_Beacon_01
+    Offset: '0x418'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
   ClassSize: '0x8'
-  FullSize: '0x418'
-  InheritedSize: '0x410'
+  FullSize: '0x420'
+  InheritedSize: '0x418'
   Super: MovingWorldMarkerBeaconActor

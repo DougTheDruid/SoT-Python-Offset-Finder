@@ -6,7 +6,7 @@ wsp_audio_C:
     Offset: '0x3d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CIRGL[0x4]
+  - Name: pad0x4_T5D5H[0x4]
     Offset: '0x3d4'
     Size: '0x4'
     Type: char

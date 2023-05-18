@@ -17,8 +17,34 @@ public:
 	float                                                        LeftVeeringDistance;                               // 0x10(0x4)
 	float                                                        RightVeeringDistance;                              // 0x14(0x4)
 	Struct PlayerStat                                            StatToFireForRouteChange;                          // 0x18(0x4)
-	char                                                         pad0x4_B1TEJ[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_1TN1V[0x4];                                 // 0x1c(0x4)
 	Class ParticleSystem*                                        PlayerSplashingVFXOverride;                        // 0x20(0x8)
+};
+
+
+// Size 0x310
+struct ZiplineFeelParameters
+{
+public:
+	float                                                        MaxSpeed;                                          // 0x0(0x4)
+	float                                                        StartingSpeed;                                     // 0x4(0x4)
+	float                                                        MinSpeed;                                          // 0x8(0x4)
+	float                                                        AccelerationMultiplier;                            // 0xc(0x4)
+	float                                                        DecelerationMultiplier;                            // 0x10(0x4)
+	char                                                         pad0x4_6XA5S[0x4];                                 // 0x14(0x4)
+	Struct RuntimeVectorCurve                                    SwingAngleControlDegrees;                          // 0x18(0x170)
+	Struct RuntimeVectorCurve                                    SwingSpeedControlRPM;                              // 0x188(0x170)
+	float                                                        PendulumLength;                                    // 0x2f8(0x4)
+	float                                                        PlayerVerticalOffset;                              // 0x2fc(0x4)
+	Struct Vector2D                                              FOVMinMaxSpeed;                                    // 0x300(0x8)
+	Struct Vector2D                                              FOVMinMaxAngleDegrees;                             // 0x308(0x8)
+};
+
+
+// Size 0x1
+struct OnExitedRideEvent
+{
+public:
 };
 
 
@@ -36,7 +62,7 @@ struct WaterSlideActionStateParams
 public:
 	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
 	bool                                                         ForceStash;                                        // 0x4(0x1)
-	char                                                         pad0x3_6SXTU[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_NO21L[0x3];                                 // 0x5(0x3)
 	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x8(0x1c)
 };
 
@@ -74,10 +100,20 @@ public:
 };
 
 
-// Size 0x1
-struct OnExitedWaterSlideEvent
+// Size 0x40
+struct ZiplineActionStateConstructionInfo
 {
 public:
+	Class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
+	byte                                                         MovementDirection;                                 // 0x38(0x1)
+};
+
+
+// Size 0x1c
+struct ZipLineActionStateParams
+{
+public:
+	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x0(0x1c)
 };
 
 

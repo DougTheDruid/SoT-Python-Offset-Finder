@@ -3,50 +3,50 @@
 BP_Prompt_ScuttleShip_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12a_Y5CC8[0x12a]
-    Offset: '0x120'
-    Size: '0x12a'
+  - Name: pad0x4c_T6YNS[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: Handle_CharacterDeadEvent
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Handle_WaitingToSpawnEndedEvent
-    Offset: '0x168'
-    Size: '0x48'
+    Offset: '0x198'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Prompt_ArrivedOnFerry
-    Offset: '0x1b0'
+    Offset: '0x1f0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_SuggestScuttling
-    Offset: '0x218'
+    Offset: '0x258'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: SpawnKillTimeThreshold
-    Offset: '0x280'
+    Offset: '0x2c0'
     Size: '0x4'
     Type: float
   - Name: RepeatDeathThreshold
-    Offset: '0x284'
+    Offset: '0x2c4'
     Size: '0x4'
     Type: int
   - Name: TimeOfLastPvPDeath
-    Offset: '0x288'
+    Offset: '0x2c8'
     Size: '0x8'
     Type: Struct GameTime
   - Name: NumRecentDeaths
-    Offset: '0x290'
+    Offset: '0x2d0'
     Size: '0x4'
     Type: int
   - Name: DiedEnough
-    Offset: '0x294'
+    Offset: '0x2d4'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x17d'
-  FullSize: '0x295'
-  InheritedSize: '0x118'
+  ClassSize: '0x19d'
+  FullSize: '0x2d5'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

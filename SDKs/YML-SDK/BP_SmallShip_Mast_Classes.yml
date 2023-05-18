@@ -3,37 +3,13 @@
 BP_SmallShip_Mast_C:
   Attributes:
   - Name: None
-    Offset: '0xa38'
+    Offset: '0xa68'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: None
-    Offset: '0xa40'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0xa48'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xa50'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xa58'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0xa60'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
-    Offset: '0xa68'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
     Offset: '0xa70'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: Class ChildActorComponent*
   - Name: None
     Offset: '0xa78'
     Size: '0x8'
@@ -54,7 +30,31 @@ BP_SmallShip_Mast_C:
     Offset: '0xa98'
     Size: '0x8'
     Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0xaa0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0xaa8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0xab0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: None
+    Offset: '0xab8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0xac0'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0xac8'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
   ClassSize: '0x68'
-  FullSize: '0xaa0'
-  InheritedSize: '0xa38'
-  Super: None
+  FullSize: '0xad0'
+  InheritedSize: '0xa68'
+  Super: BP_Mast_C

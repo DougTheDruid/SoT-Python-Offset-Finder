@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x520] - InheritedSize[0x510]
+// Size 0x10 (Full Size[0x530] - InheritedSize[0x520]
 class BP_CommodityManifestBook_MerchantAlliance_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    None;                                              // 0x510(0x8)
-	Class SceneComponent*                                        None;                                              // 0x518(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x520(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
 };
 
 

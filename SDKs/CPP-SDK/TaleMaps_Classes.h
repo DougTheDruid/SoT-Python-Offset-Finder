@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AddMarkToTornMapStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x20_MBPH5[0x20];                               // 0x98(0x20)
+	char                                                         pad0x20_QKQFW[0x20];                               // 0x98(0x20)
 	class                                                        MapMark;                                           // 0xb8(0x8)
 };
 
@@ -69,7 +69,7 @@ class RegionIslandFilteredSelectionStrategy: public RegionIslandSelectionStrateg
 public:
 	TArray<Byte IslandTypes>                                     IslandTypes;                                       // 0x28(0x10)
 	bool                                                         UseMaxDistance;                                    // 0x38(0x1)
-	char                                                         pad0x3_BIQ9Z[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_48CIM[0x3];                                 // 0x39(0x3)
 	float                                                        MaxDistanceFromStartingIsland;                     // 0x3c(0x4)
 };
 
@@ -87,7 +87,7 @@ class SelectIslandsFromRegionStep: public TaleQuestStep
 public:
 	Class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
 	Class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0xa0(0x8)
-	char                                                         pad0x50_F2PXQ[0x50];                               // 0xa8(0x50)
+	char                                                         pad0x50_U0XZT[0x50];                               // 0xa8(0x50)
 };
 
 
@@ -112,7 +112,7 @@ public:
 };
 
 
-// Size 0xc0 (Full Size[0x158] - InheritedSize[0x98]
+// Size 0xd8 (Full Size[0x170] - InheritedSize[0x98]
 class TaleQuestAddTornMapStep: public TaleQuestStep
 {
 public:
@@ -191,6 +191,13 @@ public:
 
 // Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
 class TaleQuestWaitForChecklistMapCompletionStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestTornMapFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };

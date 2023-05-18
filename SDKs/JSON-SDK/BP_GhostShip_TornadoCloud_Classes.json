@@ -1,213 +1,225 @@
 {
   "BP_GhostShip_TornadoCloud_C": {
-    "Super": "None",
-    "FullSize": "0x5c0",
+    "Super": "BP_NonRotatableSignalCloud_C",
+    "FullSize": "0x5d0",
     "InheritedSize": "0x4b0",
-    "ClassSize": "0x110",
+    "ClassSize": "0x120",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
-        "Name": "None",
+        "Name": "TopSwirl",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4b8"
       },
       {
-        "Name": "None",
+        "Name": "Tendril08",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4c0"
       },
       {
-        "Name": "None",
+        "Name": "Tendril07",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
-        "Name": "None",
+        "Name": "Tendril06",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
-        "Name": "None",
+        "Name": "Tendril05",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
       {
-        "Name": "None",
+        "Name": "Tendril04",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4e0"
       },
       {
-        "Name": "None",
+        "Name": "Tendril03",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4e8"
       },
       {
-        "Name": "None",
+        "Name": "Tendril02",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "None",
+        "Name": "Tendril01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
-        "Name": "None",
+        "Name": "OuterSwirls",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
-        "Name": "None",
+        "Name": "TornadoMain",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
-        "Name": "None",
+        "Name": "vfx_tornado_top_cloud",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
-        "Name": "None",
+        "Name": "Cloud",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x518"
       },
       {
-        "Name": "None",
+        "Name": "lightning_bolt_03_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x520"
       },
       {
-        "Name": "None",
+        "Name": "lightning_bolt_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
-        "Name": "None",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
+        "Name": "lightning_bolt_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
         "Offset": "0x530"
       },
       {
-        "Name": "None",
-        "Type": "Class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0x540"
+        "Name": "DynamicMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x538"
       },
       {
-        "Name": "None",
+        "Name": "MainTornadoMat",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x548"
       },
       {
-        "Name": "None",
+        "Name": "OuterSwirlsMat",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x550"
       },
       {
-        "Name": "None",
+        "Name": "TopSwirlMat",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x558"
       },
       {
-        "Name": "None",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "CloudMat",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
         "Offset": "0x560"
       },
       {
-        "Name": "pad0x7_6IFT9[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x561"
-      },
-      {
-        "Name": "None",
-        "Type": "Class CurveFloat*",
-        "Size": "0x8",
+        "Name": "CachedShowLightning",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x568"
       },
       {
-        "Name": "None",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Name": "pad0x7_OD4FI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x569"
+      },
+      {
+        "Name": "CloudCurve",
+        "Type": "Class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x570"
       },
       {
-        "Name": "None",
+        "Name": "CloseGhostMat",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x578"
       },
       {
-        "Name": "None",
+        "Name": "GhostMat",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x580"
       },
       {
-        "Name": "None",
+        "Name": "Tendril_01",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x588"
       },
       {
-        "Name": "None",
+        "Name": "Tendril_02",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x590"
       },
       {
-        "Name": "None",
+        "Name": "Tendril_03",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x598"
       },
       {
-        "Name": "None",
+        "Name": "Tendril_04",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x5a0"
       },
       {
-        "Name": "None",
+        "Name": "Tendril_05",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x5a8"
       },
       {
-        "Name": "None",
+        "Name": "Tendril_06",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x5b0"
       },
       {
-        "Name": "None",
+        "Name": "Tendril_07",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x5b8"
+      },
+      {
+        "Name": "Tendril_08",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "CloudMat_Upper",
+        "Type": "Class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
       }
     ]
   },

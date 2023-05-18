@@ -6,11 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x70
+// Size 0x88
 struct AdventureOnDemandServiceCrewEntry
 {
 public:
-	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0x30(0x10)
+	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0x40(0x10)
+	Class TunnelDesc*                                            TunnelDesc;                                        // 0x50(0x8)
+};
+
+
+// Size 0x2
+struct VoyageHintForQuestTypeEntry
+{
+public:
+	byte                                                         QuestType;                                         // 0x0(0x1)
+	byte                                                         HintType;                                          // 0x1(0x1)
 };
 
 
@@ -19,7 +29,7 @@ struct VoyageHintPopupDescEntry
 {
 public:
 	byte                                                         QuestType;                                         // 0x0(0x1)
-	char                                                         pad0x7_IROYW[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_IB09F[0x7];                                 // 0x1(0x7)
 	Class PopUpMessageDesc*                                      HintPopUpMessageDesc;                              // 0x8(0x8)
 };
 
@@ -38,8 +48,34 @@ struct ExtraSpawnDistanceByIslandType
 {
 public:
 	byte                                                         IslandType;                                        // 0x0(0x1)
-	char                                                         pad0x3_A1ESV[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_T7EIH[0x3];                                 // 0x1(0x3)
 	float                                                        ExtraSpawnDistance;                                // 0x4(0x4)
+};
+
+
+// Size 0x28
+struct AdventureOnDemandVoyageSelectionVoyageProposalGroup
+{
+public:
+	struct FName                                                 GroupName;                                         // 0x0(0x8)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x8(0x10)
+	TArray<struct Proposals>                                     Proposals;                                         // 0x18(0x10)
+};
+
+
+// Size 0x18
+struct AdventureOnDemandVoyageSelectionVoyageProposal
+{
+public:
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x0(0x10)
+	class                                                        Proposal;                                          // 0x10(0x8)
+};
+
+
+// Size 0x1
+struct AdventureOnDemandVoyageSurfaceTaleFinished
+{
+public:
 };
 
 

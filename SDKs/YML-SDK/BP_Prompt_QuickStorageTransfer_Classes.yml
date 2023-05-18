@@ -3,46 +3,46 @@
 BP_Prompt_QuickStorageTransfer_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_NFHFV[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4c_71KKO[0x4c]
+    Offset: '0x140'
+    Size: '0x4c'
     Type: char
   - Name: State_Complete
-    Offset: '0x120'
+    Offset: '0x140'
     Size: '0x1'
     Type: bool
   - Name: State_ShowPrompt
-    Offset: '0x121'
+    Offset: '0x141'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_7ZO98[0x6]
-    Offset: '0x122'
+  - Name: pad0x6_4R2Z3[0x6]
+    Offset: '0x142'
     Size: '0x6'
     Type: char
   - Name: Prompt_QuickStorageTransfer_Take
-    Offset: '0x128'
+    Offset: '0x148'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_QuickStorageTransfer_Add
-    Offset: '0x190'
+    Offset: '0x1b0'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: State_ShowAdd
-    Offset: '0x1f8'
+    Offset: '0x218'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FC5BT[0x7]
-    Offset: '0x1f9'
+  - Name: pad0x7_VGFA0[0x7]
+    Offset: '0x219'
     Size: '0x7'
     Type: char
   - Name: Handle_ObjectWielded
-    Offset: '0x200'
-    Size: '0x48'
+    Offset: '0x220'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
-  ClassSize: '0x130'
-  FullSize: '0x248'
-  InheritedSize: '0x118'
+  ClassSize: '0x140'
+  FullSize: '0x278'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

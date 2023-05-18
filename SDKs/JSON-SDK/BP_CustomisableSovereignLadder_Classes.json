@@ -1,87 +1,87 @@
 {
   "BP_CustomisableSovereignLadder_C": {
     "Super": "Ladder",
-    "FullSize": "0x648",
-    "InheritedSize": "0x5c0",
+    "FullSize": "0x668",
+    "InheritedSize": "0x5e0",
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x5c0"
+        "Offset": "0x5e0"
       },
       {
-        "Name": "None",
+        "Name": "InteractableComponent",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x5c8"
+        "Offset": "0x5e8"
       },
       {
-        "Name": "None",
+        "Name": "Ladder Cap",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x5d0"
+        "Offset": "0x5f0"
       },
       {
-        "Name": "None",
-        "Type": "Struct None",
+        "Name": "LadderCustomisationDefinition",
+        "Type": "Struct CustomisableLadderDefinitionStruct",
         "Size": "0x20",
-        "Offset": "0x5d8"
-      },
-      {
-        "Name": "None",
-        "Type": "TArray<struct None>",
-        "Size": "0x10",
         "Offset": "0x5f8"
       },
       {
-        "Name": "None",
-        "Type": "TArray<struct None>",
+        "Name": "OffTopSplineComponentPositions",
+        "Type": "TArray<struct OffTopSplineComponentPositions>",
         "Size": "0x10",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "None",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x618"
       },
       {
-        "Name": "pad0x4_5UYO0[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x61c"
-      },
-      {
-        "Name": "None",
-        "Type": "Class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x620"
-      },
-      {
-        "Name": "None",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "OnTopSplineComponentPositions",
+        "Type": "TArray<struct OnTopSplineComponentPositions>",
+        "Size": "0x10",
         "Offset": "0x628"
       },
       {
-        "Name": "None",
-        "Type": "Struct Vector",
-        "Size": "0xc",
-        "Offset": "0x62c"
-      },
-      {
-        "Name": "None",
-        "Type": "Struct Vector",
-        "Size": "0xc",
+        "Name": "Steps",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x638"
       },
       {
-        "Name": "None",
+        "Name": "pad0x4_1CL9T[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x63c"
+      },
+      {
+        "Name": "Material Override",
+        "Type": "Class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Name": "StepHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x648"
+      },
+      {
+        "Name": "Interactable Position",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x64c"
+      },
+      {
+        "Name": "Interactable Scale",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x658"
+      },
+      {
+        "Name": "Minimum Steps",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x644"
+        "Offset": "0x664"
       }
     ]
   },

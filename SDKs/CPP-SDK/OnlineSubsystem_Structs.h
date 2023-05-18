@@ -38,7 +38,7 @@ struct AchievementUpdatedEvent
 public:
 	Struct FString                                               AchievementId;                                     // 0x0(0x10)
 	bool                                                         Successful;                                        // 0x14(0x1)
-	char                                                         pad0x3_1FGLO[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_ODS0L[0x3];                                 // 0x15(0x3)
 	Struct FString                                               Reason;                                            // 0x18(0x10)
 	Struct FString                                               Platform;                                          // 0x28(0x10)
 };
@@ -72,7 +72,7 @@ public:
 	Struct FString                                               FormattedPrice;                                    // 0x30(0x10)
 	Struct FString                                               FormattedBasePrice;                                // 0x40(0x10)
 	bool                                                         IsOnSale;                                          // 0x50(0x1)
-	char                                                         pad0x7_8IOA2[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_ARQ9V[0x7];                                 // 0x51(0x7)
 	Struct DateTime                                              SaleEndDate;                                       // 0x58(0x8)
 	Struct FString                                               ImageUri;                                          // 0x60(0x10)
 	Struct FString                                               CurrencyCode;                                      // 0x70(0x10)

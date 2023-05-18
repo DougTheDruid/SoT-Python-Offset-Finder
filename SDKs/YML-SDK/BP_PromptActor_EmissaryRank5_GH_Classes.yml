@@ -22,7 +22,7 @@ BP_PromptActor_EmissaryRank5_GH_C:
     Offset: '0x420'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_4N8AY[0x4]
+  - Name: pad0x4_OZ1D7[0x4]
     Offset: '0x424'
     Size: '0x4'
     Type: char

@@ -46,12 +46,12 @@
   },
   "WorldEdgeItemService": {
     "Super": "Actor",
-    "FullSize": "0x610",
+    "FullSize": "0x620",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x248",
+    "ClassSize": "0x258",
     "Attributes": [
       {
-        "Name": "pad0x8_BYRMK[0x8]",
+        "Name": "pad0x8_MZN56[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -69,9 +69,9 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0xc8_ETX8J[0xc8]",
+        "Name": "pad0xd8_CE9F5[0xd8]",
         "Type": "char",
-        "Size": "0xc8",
+        "Size": "0xd8",
         "Offset": "0x548"
       }
     ]

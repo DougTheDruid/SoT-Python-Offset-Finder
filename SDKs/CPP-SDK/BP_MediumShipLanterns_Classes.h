@@ -10,15 +10,15 @@ namespace DougsSDKDumper
 class BP_MediumShipLanterns_C: public Actor
 {
 public:
-	Class ChildActorComponent*                                   None;                                              // 0x3c8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3d0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3d8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3e0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3e8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3f0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x3f8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x400(0x8)
-	Class SceneComponent*                                        None;                                              // 0x408(0x8)
+	Class ChildActorComponent*                                   brig_new;                                          // 0x3c8(0x8)
+	Class ChildActorComponent*                                   brig_new;                                          // 0x3d0(0x8)
+	Class ChildActorComponent*                                   brig_new;                                          // 0x3d8(0x8)
+	Class ChildActorComponent*                                   Railing_Wheel;                                     // 0x3e0(0x8)
+	Class ChildActorComponent*                                   Cabin_QuestTable;                                  // 0x3e8(0x8)
+	Class ChildActorComponent*                                   Railing_BowRightFront;                             // 0x3f0(0x8)
+	Class ChildActorComponent*                                   Railing_BowLeftFront;                              // 0x3f8(0x8)
+	Class ChildActorComponent*                                   CabinQuestTable;                                   // 0x400(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x408(0x8)
 };
 
 

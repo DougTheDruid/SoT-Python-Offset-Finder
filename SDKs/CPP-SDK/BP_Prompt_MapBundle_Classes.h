@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x140 (Full Size[0x258] - InheritedSize[0x118]
+// Size 0x150 (Full Size[0x288] - InheritedSize[0x138]
 class BP_Prompt_MapBundle_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_KSA5T[0x12a];                             // 0x120(0x12a)
-	class                                                        MapBundlePromptAccessKey;                          // 0x120(0x8)
-	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x128(0x68)
-	bool                                                         MapBundleBecameVisible;                            // 0x190(0x1)
-	char                                                         pad0x7_XSYKE[0x7];                                 // 0x191(0x7)
-	Struct ObjectMessagingHandle                                 MapBundleAppearedHandle;                           // 0x198(0x48)
-	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x1e0(0x8)
-	bool                                                         HasShown;                                          // 0x1e8(0x1)
-	char                                                         pad0x7_DY1VZ[0x7];                                 // 0x1e9(0x7)
-	Struct PrioritisedPromptWithHandle                           StealPrompt;                                       // 0x1f0(0x68)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_ENG76[0x4c];                               // 0x140(0x4c)
+	class                                                        MapBundlePromptAccessKey;                          // 0x140(0x8)
+	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x148(0x68)
+	bool                                                         MapBundleBecameVisible;                            // 0x1b0(0x1)
+	char                                                         pad0x7_U201L[0x7];                                 // 0x1b1(0x7)
+	Struct ObjectMessagingHandle                                 MapBundleAppearedHandle;                           // 0x1b8(0x58)
+	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x210(0x8)
+	bool                                                         HasShown;                                          // 0x218(0x1)
+	char                                                         pad0x7_K3PWS[0x7];                                 // 0x219(0x7)
+	Struct PrioritisedPromptWithHandle                           StealPrompt;                                       // 0x220(0x68)
 };
 
 

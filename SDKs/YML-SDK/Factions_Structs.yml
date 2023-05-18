@@ -34,6 +34,20 @@ DeactivateKillStreakNetworkEvent:
 EventLocalPlayerApproachedHourglass:
   Attributes: []
   ClassSize: '0x1'
+FactionBlockedTaleVoteAdded:
+  Attributes:
+  - Name: Voter
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x8'
+FactionBlockedTaleVoteConsensusReached:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
 FactionDisplayInfo:
   Attributes:
   - Name: Faction
@@ -81,7 +95,7 @@ FactionShipSunkNetworkEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_LL5ZA[0x3]
+  - Name: pad0x3_8PAHS[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -116,7 +130,7 @@ FactionShipSunkUIEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_2HNVM[0x7]
+  - Name: pad0x7_5KV08[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -144,6 +158,21 @@ FactionStreakData:
     Size: '0x4'
     Type: int
   ClassSize: '0x10'
+FactionVoteAdded:
+  Attributes:
+  - Name: Voter
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: CrewId
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: VotePassed
+    Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x20'
 KillStreakHideEvent:
   Attributes: []
   ClassSize: '0x1'
@@ -171,7 +200,7 @@ LootLevelReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_D9STC[0x3]
+  - Name: pad0x3_AJRQT[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -179,7 +208,7 @@ LootLevelReward:
     Offset: '0x4'
     Size: '0x8'
     Type: Struct RewardId
-  - Name: pad0x4_FR7A4[0x4]
+  - Name: pad0x4_HFRGR[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

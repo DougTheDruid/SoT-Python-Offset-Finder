@@ -1,33 +1,39 @@
 {
   "BP_DynamicFogVolume_Tale2_C": {
-    "Super": "None",
-    "FullSize": "0x44c",
-    "InheritedSize": "0x438",
-    "ClassSize": "0x14",
+    "Super": "BP_DynamicDensityFogVolume_C",
+    "FullSize": "0x454",
+    "InheritedSize": "0x439",
+    "ClassSize": "0x1b",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x438"
+        "Name": "pad0x7_XMP2J[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x439"
       },
       {
-        "Name": "None",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "UberGraphFrame",
+        "Type": "Struct PointerToUberGraphFrame",
+        "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "None",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x444"
-      },
-      {
-        "Name": "None",
+        "Name": "WorldFadeDistanceStart",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x448"
+      },
+      {
+        "Name": "WorldFadeDistanceRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44c"
+      },
+      {
+        "Name": "FogMaxDensity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x450"
       }
     ]
   },

@@ -6,18 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40 (Full Size[0x9c0] - InheritedSize[0x980]
+// Size 0x40 (Full Size[0xa30] - InheritedSize[0x9f0]
 class BP_SirenTrident_Wieldable_C: public DoubleActionItemWithAmmo
 {
 public:
-	Class AimSensitivityComponent*                               AimSensitivity;                                    // 0x980(0x8)
-	Class AmmoEffectsComponent*                                  AmmoEffects;                                       // 0x988(0x8)
-	Class StaticStashedMeshMemoryConstraintComponent*            StaticStashedMeshMemoryConstraint;                 // 0x990(0x8)
-	Class AmmoTransferComponent*                                 AmmoTransfer;                                      // 0x998(0x8)
-	Class ItemActionComponent*                                   AimDownSightAction;                                // 0x9a0(0x8)
-	Class SirenTridentShotActionComponent*                       SirenTridentShotAction;                            // 0x9a8(0x8)
-	Class LaunchableAttachPointComponent*                        LaunchableAttachPoint;                             // 0x9b0(0x8)
-	Class PostProcessComponent*                                  PostProcess;                                       // 0x9b8(0x8)
+	Class AimSensitivityComponent*                               AimSensitivity;                                    // 0x9f0(0x8)
+	Class AmmoEffectsComponent*                                  AmmoEffects;                                       // 0x9f8(0x8)
+	Class StaticStashedMeshMemoryConstraintComponent*            StaticStashedMeshMemoryConstraint;                 // 0xa00(0x8)
+	Class AmmoTransferComponent*                                 AmmoTransfer;                                      // 0xa08(0x8)
+	Class ItemActionComponent*                                   AimDownSightAction;                                // 0xa10(0x8)
+	Class SirenTridentShotActionComponent*                       SirenTridentShotAction;                            // 0xa18(0x8)
+	Class LaunchableAttachPointComponent*                        LaunchableAttachPoint;                             // 0xa20(0x8)
+	Class PostProcessComponent*                                  PostProcess;                                       // 0xa28(0x8)
 };
 
 

@@ -1,15 +1,15 @@
 {
   "BP_Chair_C": {
     "Super": "GenericPartWithMMC",
-    "FullSize": "0x468",
-    "InheritedSize": "0x460",
+    "FullSize": "0x478",
+    "InheritedSize": "0x470",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "ChairMesh",
         "Type": "Class StaticMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x470"
       }
     ]
   },

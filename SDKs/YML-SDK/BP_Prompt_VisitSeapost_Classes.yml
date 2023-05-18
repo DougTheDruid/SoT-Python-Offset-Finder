@@ -3,50 +3,50 @@
 BP_Prompt_VisitSeapost_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x118'
+    Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x12b_VSFCP[0x12b]
-    Offset: '0x120'
-    Size: '0x12b'
+  - Name: pad0x4d_AY1LM[0x4d]
+    Offset: '0x140'
+    Size: '0x4d'
     Type: char
   - Name: Handle_EventObjectWielded
-    Offset: '0x120'
-    Size: '0x48'
+    Offset: '0x140'
+    Size: '0x58'
     Type: Struct ObjectMessagingHandle
   - Name: Prompt_WieledFishOrMeat
-    Offset: '0x168'
+    Offset: '0x198'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: Prompt_VisitSeapost
-    Offset: '0x1d0'
+    Offset: '0x200'
     Size: '0x68'
     Type: Struct PrioritisedPromptWithHandle
   - Name: IsWieldingMeatOrFish
-    Offset: '0x238'
+    Offset: '0x268'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_PS2WR[0x3]
-    Offset: '0x239'
+  - Name: pad0x3_UY1MD[0x3]
+    Offset: '0x269'
     Size: '0x3'
     Type: char
   - Name: DisplayDuration
-    Offset: '0x23c'
+    Offset: '0x26c'
     Size: '0x4'
     Type: float
   - Name: DelayUntilNextPrompt
-    Offset: '0x240'
+    Offset: '0x270'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SHEMI[0x4]
-    Offset: '0x244'
+  - Name: pad0x4_1Y8E9[0x4]
+    Offset: '0x274'
     Size: '0x4'
     Type: char
   - Name: IgnoredFood
-    Offset: '0x248'
+    Offset: '0x278'
     Size: '0x10'
-    Type: TArray<class Class*>
-  ClassSize: '0x140'
-  FullSize: '0x258'
-  InheritedSize: '0x118'
+    Type: TArray<Assetclass IgnoredFood>
+  ClassSize: '0x150'
+  FullSize: '0x288'
+  InheritedSize: '0x138'
   Super: BP_PromptCoordinator_Base_C

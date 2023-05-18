@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_DecalGlow_Reverse_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3d0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: DecalMaterials
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: None
+  - Name: Reveal Duration
     Offset: '0x3f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GO9NN[0x4]
+  - Name: pad0x4_Z9O88[0x4]
     Offset: '0x3f4'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: StepsTriggerActor
     Offset: '0x3f8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_StepsTrigger_C*
+  - Name: StarterActor
     Offset: '0x400'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_DecalGlow_Longer_C*
+  - Name: CollectedDecalMaterials
     Offset: '0x408'
     Size: '0x1'
     Type: bool

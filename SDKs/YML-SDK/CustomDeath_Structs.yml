@@ -3,13 +3,13 @@
 CustomDeathConfiguration:
   Attributes: []
   ClassSize: '0x18'
-CustomPlayerStartConfigData:
+CustomPlayerStartConfigGameServerRequestModel:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_THTZ1[0x4]
+  - Name: pad0x4_P3P1Z[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -22,13 +22,13 @@ CustomPlayerStartConfigData:
     Size: '0x10'
     Type: TArray<Str Tags>
   ClassSize: '0x30'
-CustomPlayerStartConfigResponseData:
+CustomPlayerStartConfigResponseGameServerRequestModel:
   Attributes:
   - Name: Success
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_K33QD[0x3]
+  - Name: pad0x3_ECZ0I[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -37,13 +37,13 @@ CustomPlayerStartConfigResponseData:
     Size: '0x4'
     Type: int
   ClassSize: '0x8'
-DestroyCustomPlayerStartData:
+DestroyCustomPlayerStartGameServerRequestModel:
   Attributes:
   - Name: PlayerStartActorNetID
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DRL20[0x4]
+  - Name: pad0x4_Z1IQW[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -52,7 +52,7 @@ DestroyCustomPlayerStartData:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x18'
-ForcePlayerRespawnData:
+ForcePlayerRespawnGameServerRequestModel:
   Attributes:
   - Name: PlayerNetGUID
     Offset: '0x0'
@@ -63,35 +63,35 @@ ForcePlayerRespawnData:
     Size: '0x1'
     Type: bool
   ClassSize: '0x8'
-GameModeDeathPenaltyRespawnTimerData:
+GameModeDeathPenaltyRespawnTimerGameServerRequestModel:
   Attributes:
   - Name: SpawnTimer
     Offset: '0x0'
     Size: '0x4'
     Type: float
   ClassSize: '0x4'
-KillCrewData:
+KillCrewGameServerRequestModel:
   Attributes:
   - Name: CrewNetGUID
     Offset: '0x0'
     Size: '0x10'
     Type: Struct Guid
   ClassSize: '0x10'
-KillPlayerData:
+KillPlayerGameServerRequestModel:
   Attributes:
   - Name: PlayerNetGUID
     Offset: '0x0'
     Size: '0x4'
     Type: int
   ClassSize: '0x4'
-ResetCustomConfigForPlayerData:
+ResetCustomConfigForPlayerGameServerRequestModel:
   Attributes:
   - Name: PlayerNetGUID
     Offset: '0x0'
     Size: '0x4'
     Type: int
   ClassSize: '0x4'
-SetCustomPlayerStartData:
+SetCustomPlayerStartGameServerRequestModel:
   Attributes:
   - Name: PlayerNetGUID
     Offset: '0x0'
@@ -102,7 +102,7 @@ SetCustomPlayerStartData:
     Size: '0x4'
     Type: int
   ClassSize: '0x8'
-SetShouldSkipFerryOfTheDamnedData:
+SetShouldSkipFerryOfTheDamnedGameServerRequestModel:
   Attributes:
   - Name: PlayerNetGUID
     Offset: '0x0'
@@ -113,7 +113,7 @@ SetShouldSkipFerryOfTheDamnedData:
     Size: '0x1'
     Type: bool
   ClassSize: '0x8'
-SetShouldUseRevivalFlowData:
+SetShouldUseRevivalFlowGameServerRequestModel:
   Attributes:
   - Name: PlayerNetGUID
     Offset: '0x0'

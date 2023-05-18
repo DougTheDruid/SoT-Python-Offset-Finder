@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 wld_sea_rock_cluster_b_C:
   Attributes:
-  - Name: None
+  - Name: wld_rock_xlarge_04_a
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wld_rock_xlarge_02_a
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent08
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent07
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent0
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent05
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent04
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent03
     Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent01
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent06
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent02
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x420'
     Size: '0x8'
     Type: Class SceneComponent*

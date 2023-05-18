@@ -6,20 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x118 (Full Size[0x230] - InheritedSize[0x118]
+// Size 0x138 (Full Size[0x270] - InheritedSize[0x138]
 class BP_Prompt_RepairShipCapstan_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_19Z9H[0x12a];                             // 0x120(0x12a)
-	bool                                                         State_CapstanDamaged;                              // 0x120(0x1)
-	char                                                         pad0x7_1VMFR[0x7];                                 // 0x121(0x7)
-	Struct ObjectMessagingHandle                                 Handle_OnCapstanDamaged;                           // 0x128(0x48)
-	bool                                                         State_Complete;                                    // 0x170(0x1)
-	char                                                         pad0x7_CAR7H[0x7];                                 // 0x171(0x7)
-	Struct PrioritisedPromptWithHandle                           Prompt_RepairShip;                                 // 0x178(0x68)
-	Struct ObjectMessagingHandle                                 Handle_CurrentShipChanged;                         // 0x1e0(0x48)
-	Class Ship*                                                  CurrentShip;                                       // 0x228(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_LS6SW[0x4c];                               // 0x140(0x4c)
+	bool                                                         State_CapstanDamaged;                              // 0x140(0x1)
+	char                                                         pad0x7_39Q0J[0x7];                                 // 0x141(0x7)
+	Struct ObjectMessagingHandle                                 Handle_OnCapstanDamaged;                           // 0x148(0x58)
+	bool                                                         State_Complete;                                    // 0x1a0(0x1)
+	char                                                         pad0x7_GHYOY[0x7];                                 // 0x1a1(0x7)
+	Struct PrioritisedPromptWithHandle                           Prompt_RepairShip;                                 // 0x1a8(0x68)
+	Struct ObjectMessagingHandle                                 Handle_CurrentShipChanged;                         // 0x210(0x58)
+	Class Ship*                                                  CurrentShip;                                       // 0x268(0x8)
 };
 
 

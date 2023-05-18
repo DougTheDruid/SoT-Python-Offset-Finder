@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_wil_parrot_big_04_C:
   Attributes:
-  - Name: None
+  - Name: AnimNotifyWwiseEmitter
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: None
+  - Name: SkeletalMesh
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*

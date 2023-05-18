@@ -3,18 +3,18 @@
 BP_WarMap_C:
   Attributes:
   - Name: VoteInteractionHardMode
-    Offset: '0x950'
+    Offset: '0x9d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoteInteractionNormalMode
-    Offset: '0x958'
+    Offset: '0x9d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: VoteInteractionSingle
-    Offset: '0x960'
+    Offset: '0x9e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
   ClassSize: '0x18'
-  FullSize: '0x968'
-  InheritedSize: '0x950'
+  FullSize: '0x9e8'
+  InheritedSize: '0x9d0'
   Super: WarMapProposalContainer

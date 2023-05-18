@@ -50,10 +50,10 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	class                                                        Faction;                                           // 0x10(0x8)
 	byte                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
-	char                                                         pad0x3_EBK21[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_0N58P[0x3];                                 // 0x19(0x3)
 	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
 	int                                                          SandsOfFate;                                       // 0x20(0x4)
-	char                                                         pad0x4_0OBZF[0x4];                                 // 0x24(0x4)
+	int                                                          Streak;                                            // 0x24(0x4)
 	double                                                       LeaveFactionCooldownTimeStamp;                     // 0x28(0x8)
 };
 
@@ -66,13 +66,13 @@ public:
 	Struct Guid                                                  SessionId;                                         // 0x10(0x10)
 	class                                                        Faction;                                           // 0x20(0x8)
 	int                                                          Streak;                                            // 0x28(0x4)
-	char                                                         pad0x4_YKIYU[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_BIM67[0x4];                                 // 0x2c(0x4)
 	double                                                       CooldownTimeStamp;                                 // 0x30(0x8)
 	bool                                                         IsInInvasion;                                      // 0x38(0x1)
-	char                                                         pad0x7_CGRHF[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_5TZV4[0x7];                                 // 0x39(0x7)
 	TArray<struct EligibleLootBootyIds>                          EligibleLootBootyIds;                              // 0x40(0x10)
 	int                                                          CurrentLootValue;                                  // 0x50(0x4)
-	char                                                         pad0x4_0RA6Q[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_J7E4I[0x4];                                 // 0x54(0x4)
 	TArray<Bool HasDisplayedPromptForLootLevel>                  HasDisplayedPromptForLootLevel;                    // 0x58(0x10)
 };
 
@@ -215,7 +215,7 @@ struct FactionWaitTimesData
 public:
 	byte                                                         Faction;                                           // 0x0(0x1)
 	byte                                                         SessionType;                                       // 0x1(0x1)
-	char                                                         pad0x6_LSDVF[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_A31NH[0x6];                                 // 0x2(0x6)
 };
 
 

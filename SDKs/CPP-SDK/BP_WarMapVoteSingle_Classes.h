@@ -6,18 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40 (Full Size[0x650] - InheritedSize[0x610]
+// Size 0x40 (Full Size[0x680] - InheritedSize[0x640]
 class BP_WarMapVoteSingle_C: public WarMapVoteInteractionActor
 {
 public:
-	Class StaticMeshComponent*                                   VoteIndicator4;                                    // 0x610(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator3;                                    // 0x618(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator2;                                    // 0x620(0x8)
-	Class StaticMeshComponent*                                   VoteIndicator1;                                    // 0x628(0x8)
-	Class VoteAudioComponent*                                    VoteAudio;                                         // 0x630(0x8)
-	Class WarMapInteractionVoteComponent*                        WarMapInteractionVote;                             // 0x638(0x8)
-	Class StaticMeshVoteVisualiserComponent*                     StaticMeshVoteVisualiser;                          // 0x640(0x8)
-	Class ActionRulesComponent*                                  ActionRules;                                       // 0x648(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator4;                                    // 0x640(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator3;                                    // 0x648(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator2;                                    // 0x650(0x8)
+	Class StaticMeshComponent*                                   VoteIndicator1;                                    // 0x658(0x8)
+	Class VoteAudioComponent*                                    VoteAudio;                                         // 0x660(0x8)
+	Class WarMapInteractionVoteComponent*                        WarMapInteractionVote;                             // 0x668(0x8)
+	Class StaticMeshVoteVisualiserComponent*                     StaticMeshVoteVisualiser;                          // 0x670(0x8)
+	Class ActionRulesComponent*                                  ActionRules;                                       // 0x678(0x8)
 };
 
 

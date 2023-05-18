@@ -6,26 +6,26 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "DynamicTrigger",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Name": "FogVolume",
+        "Type": "BlueprintGeneratedClass BP_DynamicDensityFogVolume_C*",
         "Size": "0x8",
         "Offset": "0x3e0"
       }

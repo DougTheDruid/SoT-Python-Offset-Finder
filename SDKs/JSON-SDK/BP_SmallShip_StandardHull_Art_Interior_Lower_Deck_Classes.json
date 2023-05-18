@@ -1,9 +1,9 @@
 {
   "BP_SmallShip_StandardHull_Art_Interior_Lower_Deck_C": {
     "Super": "Actor",
-    "FullSize": "0x400",
+    "FullSize": "0x408",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x38",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "None",
@@ -19,7 +19,7 @@
       },
       {
         "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
@@ -43,9 +43,15 @@
       },
       {
         "Name": "None",
-        "Type": "Class SceneComponent*",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
       }
     ]
   },

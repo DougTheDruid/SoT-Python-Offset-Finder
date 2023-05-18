@@ -2,59 +2,59 @@
 # https://github.com/DougTheDruid
 BP_CustomisableLadder_C:
   Attributes:
-  - Name: None
-    Offset: '0x5c0'
+  - Name: UberGraphFrame
+    Offset: '0x5e0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0x5c8'
+  - Name: InteractableComponent
+    Offset: '0x5e8'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
-    Offset: '0x5d0'
+  - Name: Ladder Cap
+    Offset: '0x5f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x5d8'
-    Size: '0x20'
-    Type: Struct None
-  - Name: None
+  - Name: LadderCustomisationDefinition
     Offset: '0x5f8'
-    Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
-    Offset: '0x608'
-    Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
+    Size: '0x20'
+    Type: Struct CustomisableLadderDefinitionStruct
+  - Name: OffTopSplineComponentPositions
     Offset: '0x618'
+    Size: '0x10'
+    Type: TArray<struct OffTopSplineComponentPositions>
+  - Name: OnTopSplineComponentPositions
+    Offset: '0x628'
+    Size: '0x10'
+    Type: TArray<struct OnTopSplineComponentPositions>
+  - Name: Steps
+    Offset: '0x638'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JGKYX[0x4]
-    Offset: '0x61c'
+  - Name: pad0x4_900ID[0x4]
+    Offset: '0x63c'
     Size: '0x4'
     Type: char
-  - Name: None
-    Offset: '0x620'
+  - Name: Material Override
+    Offset: '0x640'
     Size: '0x8'
     Type: Class MaterialInterface*
-  - Name: None
-    Offset: '0x628'
+  - Name: StepHeight
+    Offset: '0x648'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x62c'
+  - Name: Interactable Position
+    Offset: '0x64c'
     Size: '0xc'
     Type: Struct Vector
-  - Name: None
-    Offset: '0x638'
+  - Name: Interactable Scale
+    Offset: '0x658'
     Size: '0xc'
     Type: Struct Vector
-  - Name: None
-    Offset: '0x644'
+  - Name: Minimum Steps
+    Offset: '0x664'
     Size: '0x4'
     Type: int
   ClassSize: '0x88'
-  FullSize: '0x648'
-  InheritedSize: '0x5c0'
+  FullSize: '0x668'
+  InheritedSize: '0x5e0'
   Super: Ladder

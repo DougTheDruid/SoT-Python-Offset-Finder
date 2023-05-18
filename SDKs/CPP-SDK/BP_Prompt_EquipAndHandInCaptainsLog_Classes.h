@@ -6,20 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x160 (Full Size[0x278] - InheritedSize[0x118]
+// Size 0x190 (Full Size[0x2c8] - InheritedSize[0x138]
 class BP_Prompt_EquipAndHandInCaptainsLog_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12b_XWOU0[0x12b];                             // 0x120(0x12b)
-	Struct ObjectMessagingHandle                                 EventObjectWieldedHandler;                         // 0x120(0x48)
-	class                                                        ExpectedWieldedItem;                               // 0x168(0x8)
-	Struct PrioritisedPromptWithHandle                           Prompt_EquipCaptainsLog;                           // 0x170(0x68)
-	float                                                        PromptPopupTime;                                   // 0x1d8(0x4)
-	char                                                         pad0x4_AKTSQ[0x4];                                 // 0x1dc(0x4)
-	Struct ObjectMessagingHandle                                 EventStartStowHandler;                             // 0x1e0(0x48)
-	Struct ObjectMessagingHandle                                 TreasureChestSoldClientPredictionEventHandler;     // 0x228(0x48)
-	class                                                        AccessKey;                                         // 0x270(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_BTXHI[0x4c];                               // 0x140(0x4c)
+	Struct ObjectMessagingHandle                                 EventObjectWieldedHandler;                         // 0x140(0x58)
+	class                                                        ExpectedWieldedItem;                               // 0x198(0x8)
+	Struct PrioritisedPromptWithHandle                           Prompt_EquipCaptainsLog;                           // 0x1a0(0x68)
+	float                                                        PromptPopupTime;                                   // 0x208(0x4)
+	char                                                         pad0x4_L3S1Z[0x4];                                 // 0x20c(0x4)
+	Struct ObjectMessagingHandle                                 EventStartStowHandler;                             // 0x210(0x58)
+	Struct ObjectMessagingHandle                                 TreasureChestSoldClientPredictionEventHandler;     // 0x268(0x58)
+	class                                                        AccessKey;                                         // 0x2c0(0x8)
 };
 
 

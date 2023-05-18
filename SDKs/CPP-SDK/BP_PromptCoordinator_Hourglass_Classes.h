@@ -6,22 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x111 (Full Size[0x229] - InheritedSize[0x118]
+// Size 0x131 (Full Size[0x269] - InheritedSize[0x138]
 class BP_PromptCoordinator_Hourglass_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_FCCKE[0x12a];                             // 0x120(0x12a)
-	Struct ObjectMessagingHandle                                 HandlePlayerApproachesHourglass;                   // 0x120(0x48)
-	bool                                                         PlayerInRange;                                     // 0x168(0x1)
-	bool                                                         PromptEvaluated;                                   // 0x169(0x1)
-	char                                                         pad0x2_11TTW[0x2];                                 // 0x16a(0x2)
-	float                                                        Prompt Delay;                                      // 0x16c(0x4)
-	Struct PrioritisedPromptWithHandle                           PromptHourglassTutorial1;                          // 0x170(0x68)
-	float                                                        PromptDisplayDuration;                             // 0x1d8(0x4)
-	char                                                         pad0x4_3TH9H[0x4];                                 // 0x1dc(0x4)
-	Struct ObjectMessagingHandle                                 HandleChoseFaction;                                // 0x1e0(0x48)
-	bool                                                         FactionChosen;                                     // 0x228(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_CVHXA[0x4c];                               // 0x140(0x4c)
+	Struct ObjectMessagingHandle                                 HandlePlayerApproachesHourglass;                   // 0x140(0x58)
+	bool                                                         PlayerInRange;                                     // 0x198(0x1)
+	bool                                                         PromptEvaluated;                                   // 0x199(0x1)
+	char                                                         pad0x2_BMCHS[0x2];                                 // 0x19a(0x2)
+	float                                                        Prompt Delay;                                      // 0x19c(0x4)
+	Struct PrioritisedPromptWithHandle                           PromptHourglassTutorial1;                          // 0x1a0(0x68)
+	float                                                        PromptDisplayDuration;                             // 0x208(0x4)
+	char                                                         pad0x4_V4LM9[0x4];                                 // 0x20c(0x4)
+	Struct ObjectMessagingHandle                                 HandleChoseFaction;                                // 0x210(0x58)
+	bool                                                         FactionChosen;                                     // 0x268(0x1)
 };
 
 

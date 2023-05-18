@@ -6,12 +6,12 @@ CreateActorInstanceOnExplodeComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: class
-  - Name: pad0x58_70CAI[0x58]
+  - Name: pad0x68_ULJ3G[0x68]
     Offset: '0xd0'
-    Size: '0x58'
+    Size: '0x68'
     Type: char
-  ClassSize: '0x60'
-  FullSize: '0x128'
+  ClassSize: '0x70'
+  FullSize: '0x138'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ExplosionInterface:
@@ -48,7 +48,7 @@ StatusResponseExplodeAfterTime:
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_KJZW6[0x8]
+  - Name: pad0x8_Z5CUA[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char

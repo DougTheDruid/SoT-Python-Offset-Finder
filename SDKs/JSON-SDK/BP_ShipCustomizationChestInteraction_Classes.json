@@ -1,15 +1,15 @@
 {
   "BP_ShipCustomizationChestInteraction_C": {
     "Super": "ShipCustomizationChestInteraction",
-    "FullSize": "0x4f0",
-    "InheritedSize": "0x4e8",
+    "FullSize": "0x520",
+    "InheritedSize": "0x518",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x4e8"
+        "Offset": "0x518"
       }
     ]
   },

@@ -14,7 +14,7 @@ BP_FlyingCreature_C:
     Offset: '0x429'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_PGE7C[0x2]
+  - Name: pad0x2_K93OA[0x2]
     Offset: '0x42a'
     Size: '0x2'
     Type: char
@@ -50,7 +50,7 @@ BP_FlyingCreature_C:
     Offset: '0x45c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_69H06[0x3]
+  - Name: pad0x3_91F66[0x3]
     Offset: '0x45d'
     Size: '0x3'
     Type: char
@@ -106,7 +106,7 @@ BP_FlyingCreature_C:
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5OHWV[0x4]
+  - Name: pad0x4_ISB1R[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
@@ -150,7 +150,7 @@ BP_FlyingCreature_C:
     Offset: '0x508'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Q5C02[0x3]
+  - Name: pad0x3_ZIXSA[0x3]
     Offset: '0x509'
     Size: '0x3'
     Type: char
@@ -174,7 +174,7 @@ BP_FlyingCreature_C:
     Offset: '0x51c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9TNBR[0x3]
+  - Name: pad0x3_BK6FV[0x3]
     Offset: '0x51d'
     Size: '0x3'
     Type: char

@@ -21,7 +21,7 @@ ClientNoteData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_TGK7Z[0x7]
+  - Name: pad0x7_PK7AD[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -224,26 +224,26 @@ WieldableMysteriousNoteLayoutItem:
     Type: Class Font*
   - Name: Image
     Offset: '0x18'
-    Size: '0x30'
+    Size: '0x38'
     Type: Struct TreasureMapWidgetStreamedTexture
   - Name: RadialIcon
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x10'
     Type: Struct StringAssetReference
   - Name: NoteTitleWidgetText
-    Offset: '0x58'
-    Size: '0x38'
+    Offset: '0x60'
+    Size: '0x3c'
     Type: Struct TreasureMapWidgetText
   - Name: NoteBodyWidgetText
-    Offset: '0x90'
-    Size: '0x38'
+    Offset: '0x9c'
+    Size: '0x3c'
     Type: Struct TreasureMapWidgetText
   - Name: NoteWidth
-    Offset: '0xc8'
+    Offset: '0xd8'
     Size: '0x4'
     Type: float
   - Name: NoteLineSpacingMultiplier
-    Offset: '0xcc'
+    Offset: '0xdc'
     Size: '0x4'
     Type: float
-  ClassSize: '0xd0'
+  ClassSize: '0xe0'

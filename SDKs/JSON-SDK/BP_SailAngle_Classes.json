@@ -1,15 +1,15 @@
 {
   "BP_SailAngle_C": {
     "Super": "SailAngle",
-    "FullSize": "0x800",
-    "InheritedSize": "0x7f8",
+    "FullSize": "0x870",
+    "InheritedSize": "0x868",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x868"
       }
     ]
   },

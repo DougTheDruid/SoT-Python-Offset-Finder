@@ -8,7 +8,7 @@ EmoteCameraInterface:
   Super: Interface
 EmoteCard:
   Attributes:
-  - Name: pad0x8_7REQF[0x8]
+  - Name: pad0x8_QPOW3[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -28,24 +28,24 @@ EmoteCard:
     Offset: '0x3e8'
     Size: '0x10'
     Type: Struct Int32Range
-  - Name: pad0x110_DM360[0x110]
+  - Name: pad0x120_UJ64D[0x120]
     Offset: '0x3f8'
-    Size: '0x110'
+    Size: '0x120'
     Type: char
-  ClassSize: '0x140'
-  FullSize: '0x508'
+  ClassSize: '0x150'
+  FullSize: '0x518'
   InheritedSize: '0x3c8'
   Super: Actor
 EmoteCoin:
   Attributes: []
-  ClassSize: '0x118'
-  FullSize: '0x4e0'
+  ClassSize: '0x128'
+  FullSize: '0x4f0'
   InheritedSize: '0x3c8'
   Super: Actor
 EmoteDice:
   Attributes: []
-  ClassSize: '0x120'
-  FullSize: '0x4e8'
+  ClassSize: '0x130'
+  FullSize: '0x4f8'
   InheritedSize: '0x3c8'
   Super: Actor
 EmoteIdListingAsset:
@@ -58,6 +58,12 @@ EmoteIdListingAsset:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+EmoteInteractionObjectsProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 EmotePropData:
   Attributes: []
   ClassSize: '0x0'
@@ -70,7 +76,7 @@ EmotePropDiceData:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_NSXWR[0x7]
+  - Name: pad0x7_OY8PT[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -100,7 +106,7 @@ EmoteRandomFromListAsset:
   Super: DataAsset
 EmoteRandomObject:
   Attributes:
-  - Name: pad0x8_LVBIG[0x8]
+  - Name: pad0x8_16AQA[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -112,12 +118,12 @@ EmoteRandomObject:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: pad0x118_C26FL[0x118]
+  - Name: pad0x128_D20LK[0x128]
     Offset: '0x3e0'
-    Size: '0x118'
+    Size: '0x128'
     Type: char
-  ClassSize: '0x130'
-  FullSize: '0x4f8'
+  ClassSize: '0x140'
+  FullSize: '0x508'
   InheritedSize: '0x3c8'
   Super: Actor
 EmoteSettings:
@@ -126,7 +132,7 @@ EmoteSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_30KFU[0x4]
+  - Name: pad0x4_WVU25[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char

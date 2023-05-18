@@ -1,15 +1,4 @@
 {
-  "WeightedProbabilityRange": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Weights",
-        "Type": "TArray<Float Weights>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "WeightedProbabilityRangeOfRanges": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -18,6 +7,17 @@
         "Type": "TArray<struct SubRanges>",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "WeightedProbabilityRange": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Weights",
+        "Type": "TArray<Float Weights>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -52,6 +52,83 @@
         "Type": "Struct Rotator",
         "Size": "0xc",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "Pendulum": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Increment",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IncrementDirectionMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "IsSwinging",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_HUX14[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "RPM",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "MinAngleDegrees",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxAngleDegrees",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "Length",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "CurrentSwingProgress",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "CurrentRotationAngleDegrees",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0xc_WR2S1[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "InterpolationAsTransform",
+        "Type": "Struct Transform",
+        "Size": "0x30",
+        "Offset": "0x30"
       }
     ]
   },

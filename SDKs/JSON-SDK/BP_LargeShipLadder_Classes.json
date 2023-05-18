@@ -1,27 +1,27 @@
 {
   "BP_LargeShipLadder_C": {
     "Super": "Ladder",
-    "FullSize": "0x5e8",
-    "InheritedSize": "0x5c0",
+    "FullSize": "0x608",
+    "InheritedSize": "0x5e0",
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x5c0"
+        "Offset": "0x5e0"
       },
       {
-        "Name": "None",
-        "Type": "TArray<struct None>",
+        "Name": "OffTopSplineComponentPositions",
+        "Type": "TArray<struct OffTopSplineComponentPositions>",
         "Size": "0x10",
-        "Offset": "0x5c8"
+        "Offset": "0x5e8"
       },
       {
-        "Name": "None",
-        "Type": "TArray<struct None>",
+        "Name": "OnTopSplineComponentPositions",
+        "Type": "TArray<struct OnTopSplineComponentPositions>",
         "Size": "0x10",
-        "Offset": "0x5d8"
+        "Offset": "0x5f8"
       }
     ]
   },

@@ -22,7 +22,7 @@ VeilOfTheAncients:
     Offset: '0x400'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_O77YU[0x4]
+  - Name: pad0x4_995C1[0x4]
     Offset: '0x404'
     Size: '0x4'
     Type: char
@@ -46,7 +46,7 @@ VeilOfTheAncientsServiceDesc:
   Super: TaleQuestServiceDesc
 VeilService:
   Attributes:
-  - Name: pad0x20_X46E4[0x20]
+  - Name: pad0x20_0UJ66[0x20]
     Offset: '0x60'
     Size: '0x20'
     Type: char
@@ -58,7 +58,7 @@ VeilService:
     Offset: '0x88'
     Size: '0x8'
     Type: Class GameState*
-  - Name: pad0x8_D7IKK[0x8]
+  - Name: pad0x8_BZBQF[0x8]
     Offset: '0x90'
     Size: '0x8'
     Type: char
@@ -70,11 +70,11 @@ VeilService:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class Ship*
-  - Name: pad0xb8_405MY[0xb8]
+  - Name: pad0xd8_SSFUW[0xd8]
     Offset: '0xa8'
-    Size: '0xb8'
+    Size: '0xd8'
     Type: char
-  ClassSize: '0x100'
-  FullSize: '0x160'
+  ClassSize: '0x120'
+  FullSize: '0x180'
   InheritedSize: '0x60'
   Super: TaleQuestService

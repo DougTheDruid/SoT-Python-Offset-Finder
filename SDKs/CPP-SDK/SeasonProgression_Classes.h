@@ -13,7 +13,7 @@ public:
 };
 
 
-// Size 0xc0 (Full Size[0x188] - InheritedSize[0xc8]
+// Size 0xd0 (Full Size[0x198] - InheritedSize[0xc8]
 class PlayerSeasonProgressionComponent: public ActorComponent
 {
 public:

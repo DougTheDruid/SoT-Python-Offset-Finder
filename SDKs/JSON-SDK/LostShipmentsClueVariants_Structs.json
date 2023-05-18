@@ -39,7 +39,7 @@
     ]
   },
   "TextEntryWithLayout": {
-    "ClassSize": "0x70",
+    "ClassSize": "0x78",
     "Attributes": [
       {
         "Name": "TextEntry",
@@ -50,7 +50,7 @@
       {
         "Name": "TextLayout",
         "Type": "Struct TreasureMapWidgetText",
-        "Size": "0x38",
+        "Size": "0x3c",
         "Offset": "0x38"
       }
     ]

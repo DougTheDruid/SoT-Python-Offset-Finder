@@ -53,14 +53,14 @@ public:
 };
 
 
-// Size 0xe8 (Full Size[0x1b0] - InheritedSize[0xc8]
+// Size 0xf8 (Full Size[0x1c0] - InheritedSize[0xc8]
 class SeasonProgressionUIComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_9GNY4[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_L3C1Y[0x20];                               // 0xc8(0x20)
 	TArray<struct DetailsNavigationDesc>                         DetailsNavigationDesc;                             // 0xe8(0x10)
 	Struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xf8(0x18)
-	char                                                         pad0xa0_BA3MM[0xa0];                               // 0x110(0xa0)
+	char                                                         pad0xb0_4R83T[0xb0];                               // 0x110(0xb0)
 };
 
 
@@ -71,13 +71,13 @@ public:
 };
 
 
-// Size 0x1c0 (Full Size[0x588] - InheritedSize[0x3c8]
+// Size 0x1e0 (Full Size[0x5a8] - InheritedSize[0x3c8]
 class SeasonProgressionUIService: public Actor
 {
 public:
-	char                                                         pad0x30_JML6V[0x30];                               // 0x3c8(0x30)
+	char                                                         pad0x30_VCM76[0x30];                               // 0x3c8(0x30)
 	Class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
-	char                                                         pad0x188_I4IWV[0x188];                             // 0x400(0x188)
+	char                                                         pad0x1a8_0T0YP[0x1a8];                             // 0x400(0x1a8)
 };
 
 

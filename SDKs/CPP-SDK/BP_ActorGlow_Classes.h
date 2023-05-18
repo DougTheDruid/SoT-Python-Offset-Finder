@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class BP_ActorGlow_C: public LandmarkReactionActor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3d0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
-	TArray<class MaterialInstanceDynamic*>                       None;                                              // 0x3e0(0x10)
-	float                                                        None;                                              // 0x3f0(0x4)
-	char                                                         pad0x4_FEKR8[0x4];                                 // 0x3f4(0x4)
-	BlueprintGeneratedClass None*                                None;                                              // 0x3f8(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3d0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
+	TArray<class MaterialInstanceDynamic*>                       DecalMaterials;                                    // 0x3e0(0x10)
+	float                                                        Reveal Duration;                                   // 0x3f0(0x4)
+	char                                                         pad0x4_JZ97V[0x4];                                 // 0x3f4(0x4)
+	BlueprintGeneratedClass BP_StepsTrigger_C*                   StepsTriggerActor;                                 // 0x3f8(0x8)
 };
 
 

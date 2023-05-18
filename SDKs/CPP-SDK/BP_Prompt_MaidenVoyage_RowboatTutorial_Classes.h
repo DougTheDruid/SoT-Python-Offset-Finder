@@ -6,25 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x292 (Full Size[0x3aa] - InheritedSize[0x118]
+// Size 0x2c2 (Full Size[0x3fa] - InheritedSize[0x138]
 class BP_Prompt_MaidenVoyage_RowboatTutorial_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_Y9QL7[0x12a];                             // 0x120(0x12a)
-	bool                                                         State_SatInRowboat;                                // 0x120(0x1)
-	char                                                         pad0x7_11BAE[0x7];                                 // 0x121(0x7)
-	Struct PrioritisedPromptWithHandle                           Prompt_RowTheBoat;                                 // 0x128(0x68)
-	Struct ObjectMessagingHandle                                 Handle_UseRowboat;                                 // 0x190(0x48)
-	bool                                                         State_LeaveRowboat;                                // 0x1d8(0x1)
-	char                                                         pad0x7_DNBUT[0x7];                                 // 0x1d9(0x7)
-	Struct ObjectMessagingHandle                                 Handle_LeaveRowboat;                               // 0x1e0(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt_ReleaseOars;                                // 0x228(0x68)
-	Struct PrioritisedPromptWithHandle                           Prompt_Brake;                                      // 0x290(0x68)
-	Struct PrioritisedPromptWithHandle                           Prompt_OneAtATime;                                 // 0x2f8(0x68)
-	Struct ObjectMessagingHandle                                 Handle_StrokeEnded;                                // 0x360(0x48)
-	bool                                                         State_StrokeCompleted;                             // 0x3a8(0x1)
-	bool                                                         State_Completed;                                   // 0x3a9(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_DNJL2[0x4c];                               // 0x140(0x4c)
+	bool                                                         State_SatInRowboat;                                // 0x140(0x1)
+	char                                                         pad0x7_1K75Z[0x7];                                 // 0x141(0x7)
+	Struct PrioritisedPromptWithHandle                           Prompt_RowTheBoat;                                 // 0x148(0x68)
+	Struct ObjectMessagingHandle                                 Handle_UseRowboat;                                 // 0x1b0(0x58)
+	bool                                                         State_LeaveRowboat;                                // 0x208(0x1)
+	char                                                         pad0x7_X3WGK[0x7];                                 // 0x209(0x7)
+	Struct ObjectMessagingHandle                                 Handle_LeaveRowboat;                               // 0x210(0x58)
+	Struct PrioritisedPromptWithHandle                           Prompt_ReleaseOars;                                // 0x268(0x68)
+	Struct PrioritisedPromptWithHandle                           Prompt_Brake;                                      // 0x2d0(0x68)
+	Struct PrioritisedPromptWithHandle                           Prompt_OneAtATime;                                 // 0x338(0x68)
+	Struct ObjectMessagingHandle                                 Handle_StrokeEnded;                                // 0x3a0(0x58)
+	bool                                                         State_StrokeCompleted;                             // 0x3f8(0x1)
+	bool                                                         State_Completed;                                   // 0x3f9(0x1)
 };
 
 

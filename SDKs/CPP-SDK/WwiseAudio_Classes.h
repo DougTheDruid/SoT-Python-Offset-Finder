@@ -33,13 +33,13 @@ class WwiseEvent: public Object
 public:
 	Class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
 	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
-	char                                                         pad0x3_U2SVA[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_LPAAL[0x3];                                 // 0x31(0x3)
 	float                                                        DurationMin;                                       // 0x38(0x4)
 	float                                                        DurationMax;                                       // 0x3c(0x4)
 	float                                                        MaxAttenuation;                                    // 0x40(0x4)
 	byte                                                         DurationType;                                      // 0x44(0x1)
 	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
-	char                                                         pad0xa_7FY26[0xa];                                 // 0x46(0xa)
+	char                                                         pad0xa_37TYT[0xa];                                 // 0x46(0xa)
 };
 
 
@@ -55,7 +55,7 @@ public:
 class MovieSceneAkAudioRTPCSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_XZI9Q[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_FSJ96[0x8];                                 // 0x98(0x8)
 	Struct FString                                               Name;                                              // 0xa0(0x10)
 	Struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
 };
@@ -67,7 +67,7 @@ class MovieSceneAkTrack: public MovieSceneTrack
 public:
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
-	char                                                         pad0x7_UN10O[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_8NU7D[0x7];                                 // 0x99(0x7)
 };
 
 
@@ -112,46 +112,47 @@ public:
 };
 
 
-// Size 0x410 (Full Size[0x438] - InheritedSize[0x28]
+// Size 0x430 (Full Size[0x458] - InheritedSize[0x28]
 class WwiseAudioSettings: public Object
 {
 public:
-	char                                                         pad0xc0_OG5BQ[0xc0];                               // 0x28(0xc0)
-	Struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0xe8(0x64)
-	char                                                         pad0x4_5JX5K[0x4];                                 // 0x14c(0x4)
-	Struct WwiseBinkSettings                                     BinkSettings;                                      // 0x150(0x38)
-	TArray<struct PersistentSoundBanks>                          PersistentSoundBanks;                              // 0x188(0x10)
-	Struct StringAssetReference                                  InitBank;                                          // 0x198(0x10)
-	Struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x1a8(0x10)
-	Struct StringAssetReference                                  WwiseIDsDatabase;                                  // 0x1b8(0x10)
-	Struct StringAssetReference                                  WwiseFileHashDatabase;                             // 0x1c8(0x10)
-	Struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x1d8(0x10)
-	TArray<struct AsyncIOPriorityMappings>                       AsyncIOPriorityMappings;                           // 0x1e8(0x10)
-	Struct DirectoryPath                                         TritonAcousticMapsDirectory;                       // 0x1f8(0x10)
-	Struct FString                                               DefaultLanguage;                                   // 0x208(0x10)
-	Struct FString                                               SinkSharesetName;                                  // 0x218(0x10)
-	Struct StringAssetReference                                  PauseEventStart;                                   // 0x228(0x10)
-	Struct StringAssetReference                                  PauseEventRelease;                                 // 0x238(0x10)
-	Struct StringAssetReference                                  StopAllEvent;                                      // 0x248(0x10)
-	Struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x258(0x18)
-	Struct WwiseAudioGameStateSettings                           AudioStateSettings;                                // 0x270(0xa0)
-	Struct StringAssetReference                                  WwiseMediaSoundComponentEventName;                 // 0x318(0x10)
-	Struct StringAssetReference                                  NonShippingAudioRootAssetPath;                     // 0x328(0x10)
-	Class WwiseEvent*                                            PauseEventStartInstance;                           // 0x338(0x8)
-	Class WwiseEvent*                                            PauseEventReleaseInstance;                         // 0x340(0x8)
-	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x348(0x8)
-	Class WwiseEvent*                                            WwiseMediaSoundComponentEventNameInstance;         // 0x350(0x8)
-	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x358(0x8)
-	char                                                         pad0x50_IH8AO[0x50];                               // 0x360(0x50)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendStartInstance;               // 0x3b0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendEndInstance;                 // 0x3c0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnStartEngagementInstance;             // 0x3d0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnEndEngagementInstance;               // 0x3e0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingStartInstance;                // 0x3f0(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingEndInstance;                  // 0x400(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x410(0x10)
-	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x420(0x10)
-	Class WwiseNonShippingAudioRootAsset*                        NonShippingAudioRootAsset;                         // 0x430(0x8)
+	char                                                         pad0xc0_XHV7T[0xc0];                               // 0x28(0xc0)
+	Struct WwisePlatformMappings                                 PlatformMappings;                                  // 0xe8(0x20)
+	Struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0x108(0x64)
+	char                                                         pad0x4_OPM7I[0x4];                                 // 0x16c(0x4)
+	Struct WwiseBinkSettings                                     BinkSettings;                                      // 0x170(0x38)
+	TArray<struct PersistentSoundBanks>                          PersistentSoundBanks;                              // 0x1a8(0x10)
+	Struct StringAssetReference                                  InitBank;                                          // 0x1b8(0x10)
+	Struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x1c8(0x10)
+	Struct StringAssetReference                                  WwiseIDsDatabase;                                  // 0x1d8(0x10)
+	Struct StringAssetReference                                  WwiseFileHashDatabase;                             // 0x1e8(0x10)
+	Struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x1f8(0x10)
+	TArray<struct AsyncIOPriorityMappings>                       AsyncIOPriorityMappings;                           // 0x208(0x10)
+	Struct DirectoryPath                                         TritonAcousticMapsDirectory;                       // 0x218(0x10)
+	Struct FString                                               DefaultLanguage;                                   // 0x228(0x10)
+	Struct FString                                               SinkSharesetName;                                  // 0x238(0x10)
+	Struct StringAssetReference                                  PauseEventStart;                                   // 0x248(0x10)
+	Struct StringAssetReference                                  PauseEventRelease;                                 // 0x258(0x10)
+	Struct StringAssetReference                                  StopAllEvent;                                      // 0x268(0x10)
+	Struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x278(0x18)
+	Struct WwiseAudioGameStateSettings                           AudioStateSettings;                                // 0x290(0xa0)
+	Struct StringAssetReference                                  WwiseMediaSoundComponentEventName;                 // 0x338(0x10)
+	Struct StringAssetReference                                  NonShippingAudioRootAssetPath;                     // 0x348(0x10)
+	Class WwiseEvent*                                            PauseEventStartInstance;                           // 0x358(0x8)
+	Class WwiseEvent*                                            PauseEventReleaseInstance;                         // 0x360(0x8)
+	Class WwiseEvent*                                            StopAllEventInstance;                              // 0x368(0x8)
+	Class WwiseEvent*                                            WwiseMediaSoundComponentEventNameInstance;         // 0x370(0x8)
+	Class WwiseObjectPoolWrapper*                                AnimNotifyPoolInstance;                            // 0x378(0x8)
+	char                                                         pad0x50_30ZIZ[0x50];                               // 0x380(0x50)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendStartInstance;               // 0x3d0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontendEndInstance;                 // 0x3e0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnStartEngagementInstance;             // 0x3f0(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnEndEngagementInstance;               // 0x400(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingStartInstance;                // 0x410(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingEndInstance;                  // 0x420(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingStartInstance;      // 0x430(0x10)
+	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingEndInstance;        // 0x440(0x10)
+	Class WwiseNonShippingAudioRootAsset*                        NonShippingAudioRootAsset;                         // 0x450(0x8)
 };
 
 
@@ -160,7 +161,7 @@ class WwiseBank: public Object
 {
 public:
 	Struct FString                                               path;                                              // 0x28(0x10)
-	char                                                         pad0x30_W7NCI[0x30];                               // 0x38(0x30)
+	char                                                         pad0x30_FNY11[0x30];                               // 0x38(0x30)
 };
 
 

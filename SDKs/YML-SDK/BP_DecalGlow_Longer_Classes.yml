@@ -2,39 +2,39 @@
 # https://github.com/DougTheDruid
 BP_DecalGlow_Longer_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3d0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: WwiseEmitter
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: DecalMaterials
     Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: None
+  - Name: Reveal Duration
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8ODG4[0x4]
+  - Name: pad0x4_7NLN9[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: StepsTriggerActor
     Offset: '0x400'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_StepsTrigger_C*
+  - Name: StartTime
     Offset: '0x408'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: CollectedDecals
     Offset: '0x40c'
     Size: '0x1'
     Type: bool

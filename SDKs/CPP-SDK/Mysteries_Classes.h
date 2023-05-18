@@ -18,10 +18,10 @@ public:
 class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x40_LSC5K[0x40];                               // 0xc8(0x40)
+	char                                                         pad0x40_HBF58[0x40];                               // 0xc8(0x40)
 	Struct FText                                                 ClueText;                                          // 0x108(0x38)
 	Struct FText                                                 TitleText;                                         // 0x140(0x38)
-	char                                                         pad0x30_L7NSG[0x30];                               // 0x178(0x30)
+	char                                                         pad0x30_5CTNP[0x30];                               // 0x178(0x30)
 };
 
 
@@ -36,16 +36,16 @@ public:
 	float                                                        InteractionHoldTime;                               // 0x488(0x4)
 	float                                                        InteractionRadius;                                 // 0x48c(0x4)
 	Struct FText                                                 DisplayName;                                       // 0x490(0x38)
-	char                                                         pad0x20_Q3B3G[0x20];                               // 0x4c8(0x20)
+	char                                                         pad0x20_7F27N[0x20];                               // 0x4c8(0x20)
 };
 
 
-// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
+// Size 0x20 (Full Size[0x168] - InheritedSize[0x148]
 class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
 {
 public:
-	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x138(0x8)
-	char                                                         pad0x18_23VV9[0x18];                               // 0x140(0x18)
+	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x148(0x8)
+	char                                                         pad0x18_ERID8[0x18];                               // 0x150(0x18)
 };
 
 
@@ -53,13 +53,13 @@ public:
 class SirenPuzzleContext: public Actor
 {
 public:
-	char                                                         pad0x8_TEMV9[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_5W7ST[0x8];                                 // 0x3c8(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
 	TArray<struct PuzzleLocks>                                   PuzzleLocks;                                       // 0x3d8(0x10)
 	TArray<struct UnlockCompleteReactions>                       UnlockCompleteReactions;                           // 0x3e8(0x10)
 	TArray<struct ResetLocksReactions>                           ResetLocksReactions;                               // 0x3f8(0x10)
 	TArray<Byte LockStates>                                      LockStates;                                        // 0x408(0x10)
-	char                                                         pad0xa0_DJET5[0xa0];                               // 0x418(0xa0)
+	char                                                         pad0xa0_KVMUP[0xa0];                               // 0x418(0xa0)
 };
 
 

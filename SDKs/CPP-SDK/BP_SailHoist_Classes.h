@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x7f8] - InheritedSize[0x7f0]
+// Size 0x8 (Full Size[0x868] - InheritedSize[0x860]
 class BP_SailHoist_C: public SailHoist
 {
 public:
-	Class InteractableComponent*                                 Interactable;                                      // 0x7f0(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x860(0x8)
 };
 
 

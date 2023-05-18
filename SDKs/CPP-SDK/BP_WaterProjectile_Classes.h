@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x738] - InheritedSize[0x728]
+// Size 0x10 (Full Size[0x758] - InheritedSize[0x748]
 class BP_WaterProjectile_C: public LiquidProjectile
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x728(0x8)
-	Class SphereComponent*                                       None;                                              // 0x730(0x8)
+	Class StaticMeshComponent*                                   Sphere;                                            // 0x748(0x8)
+	Class SphereComponent*                                       Collision;                                         // 0x750(0x8)
 };
 
 

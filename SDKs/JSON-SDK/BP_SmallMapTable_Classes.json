@@ -1,21 +1,81 @@
 {
   "BP_SmallMapTable_C": {
     "Super": "MapTable",
-    "FullSize": "0x7f5",
-    "InheritedSize": "0x7a0",
+    "FullSize": "0x805",
+    "InheritedSize": "0x7b0",
     "ClassSize": "0x55",
     "Attributes": [
       {
         "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x7b0"
       },
       {
-        "Name": "pad0x4d_PWZ9R[0x4d]",
-        "Type": "char",
-        "Size": "0x4d",
-        "Offset": "0x7a8"
+        "Name": "None",
+        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TextureFeedbackComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "None",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "None",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x804"
       }
     ]
   },

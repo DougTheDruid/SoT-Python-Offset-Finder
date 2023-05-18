@@ -45,8 +45,8 @@ SirenCalmHealStrategyId:
 SirenController:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x9e8'
-  InheritedSize: '0x9e0'
+  FullSize: '0xa68'
+  InheritedSize: '0xa60'
   Super: AthenaSwimmingAIController
 SirenEmeraldHealStatus:
   Attributes: []

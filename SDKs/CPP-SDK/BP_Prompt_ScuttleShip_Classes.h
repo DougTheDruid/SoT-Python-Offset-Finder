@@ -6,21 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x17d (Full Size[0x295] - InheritedSize[0x118]
+// Size 0x19d (Full Size[0x2d5] - InheritedSize[0x138]
 class BP_Prompt_ScuttleShip_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x12a_Y5CC8[0x12a];                             // 0x120(0x12a)
-	Struct ObjectMessagingHandle                                 Handle_CharacterDeadEvent;                         // 0x120(0x48)
-	Struct ObjectMessagingHandle                                 Handle_WaitingToSpawnEndedEvent;                   // 0x168(0x48)
-	Struct PrioritisedPromptWithHandle                           Prompt_ArrivedOnFerry;                             // 0x1b0(0x68)
-	Struct PrioritisedPromptWithHandle                           Prompt_SuggestScuttling;                           // 0x218(0x68)
-	float                                                        SpawnKillTimeThreshold;                            // 0x280(0x4)
-	int                                                          RepeatDeathThreshold;                              // 0x284(0x4)
-	Struct GameTime                                              TimeOfLastPvPDeath;                                // 0x288(0x8)
-	int                                                          NumRecentDeaths;                                   // 0x290(0x4)
-	bool                                                         DiedEnough;                                        // 0x294(0x1)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x4c_T6YNS[0x4c];                               // 0x140(0x4c)
+	Struct ObjectMessagingHandle                                 Handle_CharacterDeadEvent;                         // 0x140(0x58)
+	Struct ObjectMessagingHandle                                 Handle_WaitingToSpawnEndedEvent;                   // 0x198(0x58)
+	Struct PrioritisedPromptWithHandle                           Prompt_ArrivedOnFerry;                             // 0x1f0(0x68)
+	Struct PrioritisedPromptWithHandle                           Prompt_SuggestScuttling;                           // 0x258(0x68)
+	float                                                        SpawnKillTimeThreshold;                            // 0x2c0(0x4)
+	int                                                          RepeatDeathThreshold;                              // 0x2c4(0x4)
+	Struct GameTime                                              TimeOfLastPvPDeath;                                // 0x2c8(0x8)
+	int                                                          NumRecentDeaths;                                   // 0x2d0(0x4)
+	bool                                                         DiedEnough;                                        // 0x2d4(0x1)
 };
 
 

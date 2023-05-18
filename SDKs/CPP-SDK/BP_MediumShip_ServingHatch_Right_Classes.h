@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x580] - InheritedSize[0x568]
+// Size 0x18 (Full Size[0x610] - InheritedSize[0x5f8]
 class BP_MediumShip_ServingHatch_Right_C: public SwitchMechanismTrigger
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x568(0x8)
-	Class StaticMeshComponent*                                   shp_mid_serving_hatch_R_01_a;                      // 0x570(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x578(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x5f8(0x8)
+	Class StaticMeshComponent*                                   shp_mid_serving_hatch_R_01_a;                      // 0x600(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x608(0x8)
 };
 
 

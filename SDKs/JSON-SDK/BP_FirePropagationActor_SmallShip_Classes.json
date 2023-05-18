@@ -12,8 +12,8 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
+        "Name": "pad0x8_08XKV[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x3d0"
       }

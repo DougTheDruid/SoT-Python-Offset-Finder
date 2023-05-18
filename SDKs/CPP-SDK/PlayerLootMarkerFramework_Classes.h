@@ -13,17 +13,17 @@ public:
 };
 
 
-// Size 0x158 (Full Size[0x520] - InheritedSize[0x3c8]
+// Size 0x178 (Full Size[0x540] - InheritedSize[0x3c8]
 class PlayerLootMarkerService: public Actor
 {
 public:
-	char                                                         pad0x8_3BC0S[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_1G20M[0x8];                                 // 0x3c8(0x8)
 	Class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3d0(0x8)
-	char                                                         pad0x20_GOZCF[0x20];                               // 0x3d8(0x20)
+	char                                                         pad0x20_Y4MLG[0x20];                               // 0x3d8(0x20)
 	TArray<Weakclass ShortRangeMarkers>                          ShortRangeMarkers;                                 // 0x3f8(0x10)
-	char                                                         pad0xf8_XT6WC[0xf8];                               // 0x408(0xf8)
-	TArray<struct BatchData>                                     BatchData;                                         // 0x500(0x10)
-	char                                                         pad0x10_8UURW[0x10];                               // 0x510(0x10)
+	char                                                         pad0x118_TFKKI[0x118];                             // 0x408(0x118)
+	TArray<struct BatchData>                                     BatchData;                                         // 0x520(0x10)
+	char                                                         pad0x10_V89AN[0x10];                               // 0x530(0x10)
 };
 
 
@@ -33,7 +33,7 @@ class PlayerLootMarkerServiceParams: public DataAsset
 public:
 	Class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
 	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
-	char                                                         pad0x4_7L3Z5[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_N0IGB[0x4];                                 // 0x34(0x4)
 };
 
 

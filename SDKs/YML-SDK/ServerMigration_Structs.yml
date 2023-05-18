@@ -35,7 +35,7 @@ ServerSettings:
     Offset: '0x2'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_ANBDZ[0x1]
+  - Name: pad0x1_5U0EJ[0x1]
     Offset: '0x3'
     Size: '0x1'
     Type: char
