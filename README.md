@@ -1,5 +1,5 @@
 # CURRENT VERSION
-The SDK's provided are currently built for the following version of the game: 2.7.3
+The SDK's provided are currently built for the following version of the game: 2.8.2
 
 # SoT-Python-Offset-Finder
 https://github.com/DougTheDruid/SoT-ESP-Framework relies on an "offset.json" file to determine the 
