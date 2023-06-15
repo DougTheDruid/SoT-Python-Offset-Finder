@@ -52,9 +52,9 @@ public:
 class TimeService: public Actor
 {
 public:
-	char                                                         pad0x38_INE40[0x38];                               // 0x3c8(0x38)
+	char                                                         pad0x38_TBQ6C[0x38];                               // 0x3c8(0x38)
 	Struct Timespan                                              GameWorldTimeOffset;                               // 0x400(0x8)
-	char                                                         pad0x4_KE3Y5[0x4];                                 // 0x408(0x4)
+	char                                                         pad0x4_YLU9U[0x4];                                 // 0x408(0x4)
 	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x418(0x8)
 	float                                                        ServiceTimeQueryRapidFrequencyInSeconds;           // 0x420(0x4)
 	float                                                        ServiceTimeQueryFrequencyInSeconds;                // 0x424(0x4)
@@ -67,7 +67,7 @@ public:
 	float                                                        MinLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x440(0x4)
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x444(0x4)
 	Struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x498(0x10)
-	char                                                         pad0x48_AN1YN[0x48];                               // 0x4a8(0x48)
+	char                                                         pad0x48_F1KP0[0x48];                               // 0x4a8(0x48)
 };
 
 

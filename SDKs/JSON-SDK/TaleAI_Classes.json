@@ -6,7 +6,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_EVU3N[0x8]",
+        "Name": "pad0x8_8A1NG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -18,7 +18,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x38_ZXH74[0x38]",
+        "Name": "pad0x38_66X3Q[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x38"
@@ -87,6 +87,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestAISpawnFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestSpawnAICustomOnDespawnFrame": {
     "Super": "Object",
     "FullSize": "0x50",
@@ -94,7 +101,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_NPFBF[0x8]",
+        "Name": "pad0x8_623HZ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -114,7 +121,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_80Y6M[0x8]",
+        "Name": "pad0x8_E0XY7[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -134,7 +141,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x10_UGTMV[0x10]",
+        "Name": "pad0x10_Q3H7Q[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x98"
@@ -152,7 +159,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x10_HGTI5[0x10]",
+        "Name": "pad0x10_RBT21[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
@@ -164,7 +171,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0xa8_N0CT7[0xa8]",
+        "Name": "pad0xa8_OZWMP[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xe0"
@@ -178,7 +185,7 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0x8_6R02Z[0x8]",
+        "Name": "pad0x8_BP6O5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x80"
@@ -235,7 +242,7 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x8_7ZWZH[0x8]",
+        "Name": "pad0x8_7IK13[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x80"
@@ -273,7 +280,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_J71F7[0x8]",
+        "Name": "pad0x8_C7DB1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -285,7 +292,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x40_40UIJ[0x40]",
+        "Name": "pad0x40_RLL9D[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x38"
@@ -299,7 +306,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x10_QDM6P[0x10]",
+        "Name": "pad0x10_U31LL[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
@@ -319,7 +326,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x10_X9QTP[0x10]",
+        "Name": "pad0x10_BDSU7[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
@@ -331,7 +338,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x80_XMRDI[0x80]",
+        "Name": "pad0x80_SQ5KV[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xa0"
@@ -345,7 +352,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x18_XWNCD[0x18]",
+        "Name": "pad0x18_FPUM0[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x78"
@@ -357,7 +364,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x8_D1X83[0x8]",
+        "Name": "pad0x8_PCMNI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xf8"
@@ -377,7 +384,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_YMG4M[0x10]",
+        "Name": "pad0x10_BGGMU[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x90"
@@ -397,7 +404,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_ROKPZ[0x10]",
+        "Name": "pad0x10_EC891[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x80"
@@ -417,7 +424,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_TQ0W3[0x10]",
+        "Name": "pad0x10_JEX8J[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x88"

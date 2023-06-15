@@ -1,9 +1,108 @@
 {
+  "TaleAllowWorldLocationPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleWorldLocationPopUpService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x90",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SuppressedWorldLocationPopUpNearbyLocations",
+        "Type": "TArray<struct SuppressedWorldLocationPopUpNearbyLocations>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x20_9E1CB[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "TaleWorldLocationPopUpServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleAllowWorldLocationPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "MaxDistanceFromWorldLocationPopUp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_BU8X6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "NearbyActor",
+        "Type": "Struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "TalePreventWorldLocationPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TalePreventWorldLocationPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "DisableEntireIsland",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x3_XJK4T[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x81"
+      },
+      {
+        "Name": "MaxDistanceFromWorldLocationPopUp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "NearbyLocation",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x88"
+      }
+    ]
+  },
   "WorldLocationPopUpComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x360",
+    "FullSize": "0x370",
     "InheritedSize": "0x2e0",
-    "ClassSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "PopUpData",
@@ -30,10 +129,22 @@
         "Offset": "0x2f4"
       },
       {
-        "Name": "pad0x6b_DE3TT[0x6b]",
+        "Name": "pad0x63_NJEAX[0x63]",
         "Type": "char",
-        "Size": "0x6b",
+        "Size": "0x63",
         "Offset": "0x2f5"
+      },
+      {
+        "Name": "SuppressedCrews",
+        "Type": "TArray<struct SuppressedCrews>",
+        "Size": "0x10",
+        "Offset": "0x358"
+      },
+      {
+        "Name": "pad0x8_JT53V[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x368"
       }
     ]
   },
@@ -83,7 +194,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x8_DPBPH[0x8]",
+        "Name": "pad0x8_1M1M9[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -95,7 +206,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x34_10V2D[0x34]",
+        "Name": "pad0x34_SPXSZ[0x34]",
         "Type": "char",
         "Size": "0x34",
         "Offset": "0xd4"

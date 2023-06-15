@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 bsp_bch_rocks_05_b_C:
   Attributes:
-  - Name: bsp_rock_cliff_01_j
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bsp_rock_medium_01_d1
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: bsp_rock_medium_01_d
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh16
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh14
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh6
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh11
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh10
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh8
+  - Name: None
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh7
+  - Name: None
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh12
+  - Name: None
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x58'
   FullSize: '0x460'
   InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+  Super: None

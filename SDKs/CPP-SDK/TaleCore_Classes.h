@@ -6,12 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
+class ClientCommandHandler: public Actor
+{
+public:
+	Struct ClientCommandQueue                                    CommandQueue;                                      // 0x3c8(0x18)
+};
+
+
 // Size 0x18 (Full Size[0xa0] - InheritedSize[0x88]
 class TaleStruct: public Struct
 {
 public:
 	Struct Guid                                                  StructId;                                          // 0x88(0x10)
-	char                                                         pad0x8_ABK9J[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_SCU62[0x8];                                 // 0x98(0x8)
 };
 
 

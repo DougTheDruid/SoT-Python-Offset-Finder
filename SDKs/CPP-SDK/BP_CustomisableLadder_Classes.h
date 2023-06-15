@@ -17,7 +17,7 @@ public:
 	TArray<struct OffTopSplineComponentPositions>                OffTopSplineComponentPositions;                    // 0x618(0x10)
 	TArray<struct OnTopSplineComponentPositions>                 OnTopSplineComponentPositions;                     // 0x628(0x10)
 	int                                                          Steps;                                             // 0x638(0x4)
-	char                                                         pad0x4_900ID[0x4];                                 // 0x63c(0x4)
+	char                                                         pad0x4_AZF0N[0x4];                                 // 0x63c(0x4)
 	Class MaterialInterface*                                     Material Override;                                 // 0x640(0x8)
 	float                                                        StepHeight;                                        // 0x648(0x4)
 	Struct Vector                                                Interactable Position;                             // 0x64c(0xc)

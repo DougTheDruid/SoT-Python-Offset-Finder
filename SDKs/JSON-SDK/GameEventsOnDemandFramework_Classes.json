@@ -1,4 +1,48 @@
 {
+  "GameEventAvailabilityParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "MatchmakingCooldownRanges",
+        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CrewsJoinedOnDemandLimitRange",
+        "Type": "Struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "InitialCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ProgressStateLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "ShouldApplyShipTypeLimit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_EMDWP[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      }
+    ]
+  },
   "GameEventOnDemandAvailabilityStateTracker": {
     "Super": "Object",
     "FullSize": "0xd8",
@@ -6,7 +50,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x78_K04WE[0x78]",
+        "Name": "pad0x78_3508A[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x28"
@@ -18,7 +62,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x30_9W18W[0x30]",
+        "Name": "pad0x30_D5LRM[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xa8"

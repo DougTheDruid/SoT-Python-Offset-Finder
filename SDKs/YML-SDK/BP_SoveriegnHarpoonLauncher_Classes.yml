@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_SoveriegnHarpoonLauncher_2_C:
   Attributes:
-  - Name: HarpoonItemLocation
+  - Name: None
     Offset: '0xcb0'
     Size: '0x8'
     Type: Class HarpoonItemLocationComponent*
-  - Name: CubeNotWalkable
+  - Name: None
     Offset: '0xcb8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: MountCollision
+  - Name: None
     Offset: '0xcc0'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: BarrelCollision
+  - Name: None
     Offset: '0xcc8'
     Size: '0x8'
     Type: Class CapsuleComponent*
@@ -24,19 +24,19 @@ BP_SoveriegnHarpoonLauncher_2_C:
   Super: HarpoonLauncher
 BP_SoveriegnHarpoonLauncher_C:
   Attributes:
-  - Name: HarpoonItemLocation
+  - Name: None
     Offset: '0xcb0'
     Size: '0x8'
     Type: Class HarpoonItemLocationComponent*
-  - Name: CubeNotWalkable
+  - Name: None
     Offset: '0xcb8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: MountCollision
+  - Name: None
     Offset: '0xcc0'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: BarrelCollision
+  - Name: None
     Offset: '0xcc8'
     Size: '0x8'
     Type: Class CapsuleComponent*

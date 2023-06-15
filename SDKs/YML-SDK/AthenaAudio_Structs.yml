@@ -11,6 +11,60 @@ AnimNotify_SoundSwitch:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x18'
+AthenaAudioBootflowEvents:
+  Attributes:
+  - Name: EventsToPlayOnLobbyStart
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: EventsToPlayOnLobbyEnd
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: EventsToPlayOnEngageStart
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: EventsToPlayOnEngageEnd
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: EventsToPlayOnLoadingStart
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: EventsToPlayOnLoadingEnd
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: EventsToPlayOnFrontEndOrLoadingStart
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  - Name: EventsToPlayOnFrontEndOrLoadingEnd
+    Offset: '0x70'
+    Size: '0x10'
+    Type: TArray<class WwiseEvent*>
+  ClassSize: '0x80'
+AthenaAudioGameStateSettings:
+  Attributes:
+  - Name: AudioGameStateGroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AudioGameStateFrontend
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AudioGameStateLoading
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: AudioGameStateIngame
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
 StoryDrivenAudioPortalSetting:
   Attributes:
   - Name: Story

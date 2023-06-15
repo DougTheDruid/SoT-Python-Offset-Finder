@@ -28,7 +28,7 @@ public:
 class TreasuryRoom: public Actor
 {
 public:
-	char                                                         pad0x8_JVHOB[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_OSGES[0x8];                                 // 0x3c8(0x8)
 	Class BoxComponent*                                          RoomAreaComponent;                                 // 0x3d0(0x8)
 	float                                                        TreasuryInactiveDurationMinSeconds;                // 0x3d8(0x4)
 	float                                                        TreasuryInactiveDurationMaxSeconds;                // 0x3dc(0x4)
@@ -53,11 +53,11 @@ public:
 	TArray<Weakclass CachedParticipantControllers>               CachedParticipantControllers;                      // 0x480(0x10)
 	Class Actor*                                                 VaultLootSpawnerActor;                             // 0x490(0x8)
 	Struct PlayerStat                                            VaultOpenStat;                                     // 0x498(0x4)
-	char                                                         pad0x4_0B81T[0x4];                                 // 0x49c(0x4)
+	char                                                         pad0x4_UVR04[0x4];                                 // 0x49c(0x4)
 	Class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x4a0(0x8)
 	Class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x4a8(0x8)
 	Class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x4b0(0x8)
-	char                                                         pad0x40_SWZCM[0x40];                               // 0x4b8(0x40)
+	char                                                         pad0x40_DOHZJ[0x40];                               // 0x4b8(0x40)
 };
 
 

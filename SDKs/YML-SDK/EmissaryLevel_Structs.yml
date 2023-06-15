@@ -58,7 +58,7 @@ DeactivateEmissaryForCrew:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UBG5Z[0x3]
+  - Name: pad0x3_8C2PN[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -126,7 +126,7 @@ EmissaryCompanyActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_4PN13[0x3]
+  - Name: pad0x3_GH54H[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -260,7 +260,7 @@ EmissaryEventAward:
     Offset: '0x2'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_TSMX4[0x1]
+  - Name: pad0x1_461MK[0x1]
     Offset: '0x3'
     Size: '0x1'
     Type: char
@@ -275,7 +275,7 @@ EmissaryFactionActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_MKNC4[0x3]
+  - Name: pad0x3_2O9YY[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -312,14 +312,18 @@ EmissaryJoinedNetworkEvent:
     Offset: '0x10'
     Size: '0x8'
     Type: Class DataAsset*
-  ClassSize: '0x18'
+  - Name: GuildId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x28'
 EmissaryKillPlayerReward:
   Attributes:
   - Name: EmissaryLevelIncrease
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1FOAI[0x4]
+  - Name: pad0x4_RCLDW[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -375,7 +379,7 @@ EmissaryLevelData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_5UDU4[0x4]
+  - Name: pad0x4_WVBX1[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -446,7 +450,7 @@ EmissaryLevelEntry:
     Offset: '0x50'
     Size: '0x4'
     Type: Struct PlayerStat
-  - Name: pad0x4_BOYLJ[0x4]
+  - Name: pad0x4_F60JV[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -560,7 +564,7 @@ EmissaryRoleplayActionTelemetryEvent:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_U2D1K[0x3]
+  - Name: pad0x3_ISE4W[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -682,7 +686,7 @@ LightVisualisation:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VU7BX[0x4]
+  - Name: pad0x4_KUJ4R[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -822,7 +826,7 @@ UpdateEmissaryValueForCompany:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RBZ12[0x3]
+  - Name: pad0x3_BQJOQ[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char

@@ -22,7 +22,7 @@ DeedProgressDesc:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_X6IR0[0x4]
+  - Name: pad0x4_WW4PR[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -44,7 +44,7 @@ EnableMoreButtonEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_7V1NK[0x3]
+  - Name: pad0x3_PI5ZY[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -59,7 +59,7 @@ NavigationDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_CCXXI[0x3]
+  - Name: pad0x3_IRBG7[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ OpenSeasonsMenuEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9ZOXV[0x3]
+  - Name: pad0x3_9YUKM[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

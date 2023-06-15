@@ -6,301 +6,301 @@
     "ClassSize": "0x11d",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "CreatureType",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x428"
       },
       {
-        "Name": "NumOfCreatures",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x429"
       },
       {
-        "Name": "pad0x2_K93OA[0x2]",
+        "Name": "pad0x2_S9JQD[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x42a"
       },
       {
-        "Name": "BoundsBias",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x42c"
       },
       {
-        "Name": "StaticMeshComponent",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "currMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "MaterialInstance",
+        "Name": "None",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x440"
       },
       {
-        "Name": "Seed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x450"
       },
       {
-        "Name": "FlapSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x454"
       },
       {
-        "Name": "circlingSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x458"
       },
       {
-        "Name": "CirclingDirection",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x45c"
       },
       {
-        "Name": "pad0x3_91F66[0x3]",
+        "Name": "pad0x3_C0NJ6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x45d"
       },
       {
-        "Name": "CirclingRadius",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x460"
       },
       {
-        "Name": "FlapDeformation",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x464"
       },
       {
-        "Name": "mud",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x468"
       },
       {
-        "Name": "flockSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x46c"
       },
       {
-        "Name": "FlockingSpread",
+        "Name": "None",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
-        "Name": "FlockingHeight",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x478"
       },
       {
-        "Name": "birdSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x47c"
       },
       {
-        "Name": "BirdSpread",
+        "Name": "None",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
-        "Name": "BirdHeight",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x488"
       },
       {
-        "Name": "RandomHorizontalSpread",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48c"
       },
       {
-        "Name": "HueVariance",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x490"
       },
       {
-        "Name": "RandomVerticalSpread",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x494"
       },
       {
-        "Name": "smoothness",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_ISB1R[0x4]",
+        "Name": "pad0x4_5E4WK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
       },
       {
-        "Name": "SelectedCreatureType",
-        "Type": "TArray<Assetclass SelectedCreatureType>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4a0"
       },
       {
-        "Name": "Seagull",
-        "Type": "TArray<Assetclass Seagull>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4b0"
       },
       {
-        "Name": "Size",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c0"
       },
       {
-        "Name": "SizeVariance",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c4"
       },
       {
-        "Name": "SimSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c8"
       },
       {
-        "Name": "BBox",
+        "Name": "None",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x4cc"
       },
       {
-        "Name": "Skellygull_01",
-        "Type": "TArray<Assetclass Skellygull_01>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4d8"
       },
       {
-        "Name": "Bats_01",
-        "Type": "TArray<Assetclass Bats_01>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4e8"
       },
       {
-        "Name": "Parrot_01",
-        "Type": "TArray<Assetclass Parrot_01>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4f8"
       },
       {
-        "Name": "ScaleInDistance",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x508"
       },
       {
-        "Name": "pad0x3_ZIXSA[0x3]",
+        "Name": "pad0x3_T4A4T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x509"
       },
       {
-        "Name": "DistanceScale",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50c"
       },
       {
-        "Name": "DrawDistanceWithoutScale",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x510"
       },
       {
-        "Name": "DrawDistanceWithScale",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x514"
       },
       {
-        "Name": "ForceHibernation",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x518"
       },
       {
-        "Name": "HibernateAtNight",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x51c"
       },
       {
-        "Name": "pad0x3_BK6FV[0x3]",
+        "Name": "pad0x3_1JWKF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51d"
       },
       {
-        "Name": "HibernateBoundsExtension",
+        "Name": "None",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x520"
       },
       {
-        "Name": "hibernationStartTime",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x52c"
       },
       {
-        "Name": "hibernationEndTime",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x530"
       },
       {
-        "Name": "HibernationTransitionTime",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x534"
       },
       {
-        "Name": "HibernationIndependance",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x538"
       },
       {
-        "Name": "Glide",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x53c"

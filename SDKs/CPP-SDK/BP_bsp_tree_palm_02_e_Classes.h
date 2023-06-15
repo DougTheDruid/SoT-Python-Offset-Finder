@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_bsp_tree_palm_02_e_C: public Actor
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
+	Class NonVagueNonUniqueLandmarkComponent*                    None;                                              // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
 };
 
 

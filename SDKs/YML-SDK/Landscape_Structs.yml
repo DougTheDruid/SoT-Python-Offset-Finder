@@ -41,7 +41,7 @@ GrassVariety:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FMHKN[0x3]
+  - Name: pad0x3_OV06C[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
@@ -65,7 +65,7 @@ GrassVariety:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KXYQ5[0x3]
+  - Name: pad0x3_ORA45[0x3]
     Offset: '0x21'
     Size: '0x3'
     Type: char
@@ -158,7 +158,7 @@ LandscapeSplineMeshEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZEE9H[0x3]
+  - Name: pad0x3_RQ2AL[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -170,7 +170,7 @@ LandscapeSplineMeshEntry:
     Offset: '0x24'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_QAMG8[0x3]
+  - Name: pad0x3_WLRM6[0x3]
     Offset: '0x25'
     Size: '0x3'
     Type: char
@@ -223,7 +223,7 @@ LayerBlendInput:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_JM0PO[0x7]
+  - Name: pad0x7_1BECM[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

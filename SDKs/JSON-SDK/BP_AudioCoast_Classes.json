@@ -6,31 +6,31 @@
     "ClassSize": "0x24",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "SplineInner",
+        "Name": "None",
         "Type": "Class SplineComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "SplineCoast",
+        "Name": "None",
         "Type": "Class SplineComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "Scene",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "Handle",
+        "Name": "None",
         "Type": "Struct BlueprintableIntegerHandle",
         "Size": "0x4",
         "Offset": "0x3e8"

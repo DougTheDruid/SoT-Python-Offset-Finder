@@ -12,9 +12,9 @@
         "Offset": "0x138"
       },
       {
-        "Name": "pad0x4c_CEB1P[0x4c]",
+        "Name": "pad0xed_EF09E[0xed]",
         "Type": "char",
-        "Size": "0x4c",
+        "Size": "0xed",
         "Offset": "0x140"
       },
       {
@@ -42,7 +42,7 @@
         "Offset": "0x208"
       },
       {
-        "Name": "pad0x7_0JR7Z[0x7]",
+        "Name": "pad0x7_IPQ4C[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x209"

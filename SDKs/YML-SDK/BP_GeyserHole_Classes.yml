@@ -2,30 +2,14 @@
 # https://github.com/DougTheDruid
 BP_GeyserHole_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: CrackMesh
+  - Name: pad0x28_NKNTT[0x28]
     Offset: '0x440'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: CrackDecal
-    Offset: '0x448'
-    Size: '0x8'
-    Type: Class DecalComponent*
-  - Name: SharedRoot
-    Offset: '0x450'
-    Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: MeshDynamicMaterial
-    Offset: '0x458'
-    Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
-  - Name: DecalDynamicMaterial
-    Offset: '0x460'
-    Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Size: '0x28'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x468'
   InheritedSize: '0x438'

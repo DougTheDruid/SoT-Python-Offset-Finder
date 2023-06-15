@@ -97,7 +97,7 @@ MemoryVisualiserCategory:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZNZLH[0x3]
+  - Name: pad0x3_FWKFI[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -144,7 +144,7 @@ MemoryVisualiserClass:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_S8KOK[0x7]
+  - Name: pad0x7_IQLUD[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

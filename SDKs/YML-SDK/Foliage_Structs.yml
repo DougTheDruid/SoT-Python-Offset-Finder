@@ -17,7 +17,7 @@ FoliageTypeObject:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_42CMP[0x7]
+  - Name: pad0x7_L4S66[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -32,7 +32,7 @@ ProceduralFoliageInstance:
     Offset: '0x0'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_H63QD[0x4]
+  - Name: pad0x4_5YIXA[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -52,7 +52,7 @@ ProceduralFoliageInstance:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UF81B[0x4]
+  - Name: pad0x4_57Q46[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char

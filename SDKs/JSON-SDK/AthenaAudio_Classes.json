@@ -1,21 +1,33 @@
 {
   "AthenaAudioConfig": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "Super": "WwiseCoreAssets",
+    "FullSize": "0x108",
+    "InheritedSize": "0x58",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
         "Name": "ItemProxyPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x58"
       },
       {
         "Name": "AnimNotifyPool",
         "Type": "Class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x30"
+        "Offset": "0x60"
+      },
+      {
+        "Name": "GameStateSettings",
+        "Type": "Struct AthenaAudioGameStateSettings",
+        "Size": "0x20",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "BootflowEvents",
+        "Type": "Struct AthenaAudioBootflowEvents",
+        "Size": "0x80",
+        "Offset": "0x88"
       }
     ]
   },
@@ -64,7 +76,7 @@
         "Offset": "0x2ec"
       },
       {
-        "Name": "pad0x3_ZDBI6[0x3]",
+        "Name": "pad0x3_KR7H8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2ed"
@@ -100,7 +112,7 @@
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x28_HTARX[0x28]",
+        "Name": "pad0x28_1SYDJ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x318"
@@ -146,7 +158,7 @@
         "Offset": "0x630"
       },
       {
-        "Name": "pad0x18_JCEDU[0x18]",
+        "Name": "pad0x18_JG1JE[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x638"
@@ -180,7 +192,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x8_6CW6G[0x8]",
+        "Name": "pad0x8_B7063[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -200,7 +212,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_0AA3X[0x4]",
+        "Name": "pad0x4_9BMKU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -262,7 +274,7 @@
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x14_6S65F[0x14]",
+        "Name": "pad0x14_SZRL8[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x31c"
@@ -274,7 +286,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x38_PS3TN[0x38]",
+        "Name": "pad0x38_030JN[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x338"

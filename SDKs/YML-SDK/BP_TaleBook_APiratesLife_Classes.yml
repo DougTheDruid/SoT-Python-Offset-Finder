@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_TaleBook_APiratesLife_C:
   Attributes:
-  - Name: Arrow
-    Offset: '0x7c0'
-    Size: '0x8'
-    Type: Class ArrowComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x7c8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x7d0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x7d8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x7e0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+  - Name: None
     Offset: '0x7e8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: TaleSelectionSlot
+    Type: Class ArrowComponent*
+  - Name: None
     Offset: '0x7f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x7f8'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x800'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x808'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x810'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: None
+    Offset: '0x818'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x38'
-  FullSize: '0x7f8'
-  InheritedSize: '0x7c0'
+  FullSize: '0x820'
+  InheritedSize: '0x7e8'
   Super: VoyageProposalContainer

@@ -8,8 +8,8 @@ KrakenLocationType:
   Super: LocationType
 LocationProviderService:
   Attributes: []
-  ClassSize: '0x18'
-  FullSize: '0x40'
+  ClassSize: '0x80'
+  FullSize: '0xa8'
   InheritedSize: '0x28'
   Super: Object
 LocationProviderServiceInterface:

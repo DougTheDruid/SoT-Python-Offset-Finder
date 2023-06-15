@@ -6,6 +6,64 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BTService_SetBestActionSpotNearTarget": {
+    "Super": "BTService",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "TargetKey",
+        "Type": "Struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "BestActionSpotKey",
+        "Type": "Struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x18_S1EH1[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "WhileActionSpotAvailableForPatrolAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x78",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "MinTimeToChangePatrolSpot",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaxTimeToChangePatrolSpot",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "PatrolActivityType",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x30_VUY9D[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x48"
+      }
+    ]
+  },
   "WhileBlackboardKeySetAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0x40",
@@ -17,6 +75,76 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x38"
+      }
+    ]
+  },
+  "WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "InnerRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "OuterRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "IgnoredMovementModes",
+        "Type": "TArray<Byte IgnoredMovementModes>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "TargetPlayerPawn",
+        "Type": "Class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "WhilePlayerWithinAreaAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "EnterAreaTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ExitAreaTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "IgnoredMovementModes",
+        "Type": "TArray<Byte IgnoredMovementModes>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "WhileActiveActivityType",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "TargetPlayerPawn",
+        "Type": "Class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x58"
       }
     ]
   },

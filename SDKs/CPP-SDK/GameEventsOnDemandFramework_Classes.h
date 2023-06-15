@@ -6,13 +6,26 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class GameEventAvailabilityParamsDataAsset: public DataAsset
+{
+public:
+	Struct WeightedProbabilityRangeOfRanges                      MatchmakingCooldownRanges;                         // 0x28(0x30)
+	Struct WeightedProbabilityRange                              CrewsJoinedOnDemandLimitRange;                     // 0x58(0x20)
+	float                                                        InitialCooldown;                                   // 0x78(0x4)
+	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
+	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
+	char                                                         pad0x7_EMDWP[0x7];                                 // 0x81(0x7)
+};
+
+
 // Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class GameEventOnDemandAvailabilityStateTracker: public Object
 {
 public:
-	char                                                         pad0x78_K04WE[0x78];                               // 0x28(0x78)
+	char                                                         pad0x78_3508A[0x78];                               // 0x28(0x78)
 	class                                                        ShipTypeLimit;                                     // 0xa0(0x8)
-	char                                                         pad0x30_9W18W[0x30];                               // 0xa8(0x30)
+	char                                                         pad0x30_D5LRM[0x30];                               // 0xa8(0x30)
 };
 
 

@@ -7,22 +7,22 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x68 (Full Size[0x470] - InheritedSize[0x408]
-class wsp_beach_rocks_02_C: public BP_Placement_HeightDrop_C
+class wsp_beach_rocks_02_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c10;                          // 0x408(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__e4;                           // 0x410(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__e3;                           // 0x418(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c6;                           // 0x420(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c5;                           // 0x428(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c9;                           // 0x430(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c8;                           // 0x438(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c7;                           // 0x440(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__c4;                           // 0x448(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_xtra_small__e2;                           // 0x450(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_cliff_o8;                                 // 0x458(0x8)
-	Class StaticMeshComponent*                                   wsp_rock_cliff_o9;                                 // 0x460(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x468(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x448(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x450(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x458(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x460(0x8)
+	Class SceneComponent*                                        None;                                              // 0x468(0x8)
 };
 
 

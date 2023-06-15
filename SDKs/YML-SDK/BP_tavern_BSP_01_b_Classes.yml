@@ -574,7 +574,7 @@ BP_tavern_BSP_01_b_C:
     Offset: '0x838'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x840'
     Size: '0x8'
     Type: Class PointLightComponent*
@@ -590,7 +590,7 @@ BP_tavern_BSP_01_b_C:
     Offset: '0x858'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x860'
     Size: '0x8'
     Type: Class PointLightComponent*
@@ -598,15 +598,15 @@ BP_tavern_BSP_01_b_C:
     Offset: '0x868'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x870'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x878'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: Light_candle
+  - Name: light_candle
     Offset: '0x880'
     Size: '0x8'
     Type: Class PointLightComponent*

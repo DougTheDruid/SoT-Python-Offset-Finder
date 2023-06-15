@@ -11,10 +11,10 @@ class BP_PromptCoordinator_Base_C: public BasePromptCoordinator
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x6c_DLW7R[0x6c];                               // 0x120(0x6c)
+	char                                                         pad0x10d_83CQR[0x10d];                             // 0x120(0x10d)
 	bool                                                         IsCompleted;                                       // 0x120(0x1)
-	char                                                         pad0x7_3GFZI[0x7];                                 // 0x121(0x7)
-	char                                                         pad0x10_UWMY4[0x10];                               // 0x128(0x10)
+	char                                                         pad0x7_A9G5A[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x10_P9NXC[0x10];                               // 0x128(0x10)
 };
 
 

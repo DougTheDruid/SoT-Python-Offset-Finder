@@ -6,15 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18
+// Size 0x20
 struct GameEventAvailabilityData
 {
 public:
-	struct FName                                                 EventName;                                         // 0x0(0x8)
-	byte                                                         EventCategory;                                     // 0x8(0x1)
-	byte                                                         AvailabilityState;                                 // 0x9(0x1)
-	char                                                         pad0x6_4OWAB[0x6];                                 // 0xa(0x6)
-	class                                                        ShipSizeLimit;                                     // 0x10(0x8)
+	Struct FString                                               EventName;                                         // 0x0(0x10)
+	byte                                                         EventCategory;                                     // 0x10(0x1)
+	byte                                                         AvailabilityState;                                 // 0x11(0x1)
+	char                                                         pad0x6_EW8E7[0x6];                                 // 0x12(0x6)
+	class                                                        ShipSizeLimit;                                     // 0x18(0x8)
 };
 
 

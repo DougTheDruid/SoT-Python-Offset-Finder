@@ -60,7 +60,7 @@ public:
 	class                                                        ShakeClass;                                        // 0x0(0x8)
 	float                                                        PlayScale;                                         // 0x8(0x4)
 	byte                                                         PlaySpace;                                         // 0xc(0x1)
-	char                                                         pad0x3_PPNB0[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_BPD4P[0x3];                                 // 0xd(0x3)
 	Struct Rotator                                               UserDefinedPlaySpace;                              // 0x10(0xc)
 };
 
@@ -88,10 +88,10 @@ struct EventPayload
 public:
 	struct FName                                                 EventName;                                         // 0x0(0x8)
 	bool                                                         IsSubtitleEvent;                                   // 0x8(0x1)
-	char                                                         pad0x3_34UF3[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_BCTN3[0x3];                                 // 0x9(0x3)
 	int                                                          ActorNumber;                                       // 0xc(0x4)
 	int                                                          SubtitleIndex;                                     // 0x10(0x4)
-	char                                                         pad0x4_E8DVK[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_XQP3L[0x4];                                 // 0x14(0x4)
 	Struct MovieSceneEventParameters                             Parameters;                                        // 0x18(0x18)
 };
 
@@ -109,7 +109,7 @@ struct ColorParameterNameAndCurves
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
 	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_0N0ID[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_YR3WZ[0x4];                                 // 0xc(0x4)
 	Struct RichCurve                                             RedCurve;                                          // 0x10(0x78)
 	Struct RichCurve                                             GreenCurve;                                        // 0x88(0x78)
 	Struct RichCurve                                             BlueCurve;                                         // 0x100(0x78)
@@ -123,7 +123,7 @@ struct VectorParameterNameAndCurves
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
 	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_KRMT5[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_W2SLN[0x4];                                 // 0xc(0x4)
 	Struct RichCurve                                             XCurve;                                            // 0x10(0x78)
 	Struct RichCurve                                             YCurve;                                            // 0x88(0x78)
 	Struct RichCurve                                             ZCurve;                                            // 0x100(0x78)
@@ -136,7 +136,7 @@ struct ScalarParameterNameAndCurve
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
 	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_XLQPP[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_JBTBN[0x4];                                 // 0xc(0x4)
 	Struct RichCurve                                             ParameterCurve;                                    // 0x10(0x78)
 };
 
@@ -150,7 +150,7 @@ public:
 	float                                                        EndOffset;                                         // 0xc(0x4)
 	float                                                        PlayRate;                                          // 0x10(0x4)
 	bool                                                         bReverse;                                          // 0x14(0x1)
-	char                                                         pad0x3_2YTB6[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_19VLK[0x3];                                 // 0x15(0x3)
 	struct FName                                                 SlotName;                                          // 0x18(0x8)
 	Struct RichCurve                                             Weight;                                            // 0x20(0x78)
 };
@@ -231,7 +231,7 @@ public:
 	Struct RichCurve                                             TimingCurve;                                       // 0x28(0x78)
 	byte                                                         FrontAxisEnum;                                     // 0xa0(0x1)
 	byte                                                         UpAxisEnum;                                        // 0xa1(0x1)
-	char                                                         pad0x2_DQYPG[0x2];                                 // 0xa2(0x2)
+	char                                                         pad0x2_IT2J0[0x2];                                 // 0xa2(0x2)
 	bool                                                         bFollow;                                           // 0xa4(0x1)
 	bool                                                         bReverse;                                          // 0xa4(0x1)
 	bool                                                         bForceUpright;                                     // 0xa4(0x1)
@@ -243,9 +243,9 @@ struct MovieScene3DTransformSectionTemplate
 {
 public:
 	Struct RichCurve                                             TranslationCurve;                                  // 0x18(0x78)
-	char                                                         pad0xf0_1K3AI[0xf0];                               // 0x90(0xf0)
+	char                                                         pad0xf0_HBVPK[0xf0];                               // 0x90(0xf0)
 	Struct RichCurve                                             RotationCurve;                                     // 0x180(0x78)
-	char                                                         pad0xf0_VMPFQ[0xf0];                               // 0x1f8(0xf0)
+	char                                                         pad0xf0_GEGZI[0xf0];                               // 0x1f8(0xf0)
 	Struct RichCurve                                             ScaleCurve;                                        // 0x2e8(0x78)
 };
 
@@ -275,7 +275,7 @@ public:
 	Class SoundBase*                                             Sound;                                             // 0x0(0x8)
 	float                                                        AudioStartOffset;                                  // 0x8(0x4)
 	Struct FloatRange                                            AudioRange;                                        // 0xc(0x10)
-	char                                                         pad0x4_2PVOM[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_L6YAD[0x4];                                 // 0x1c(0x4)
 	Struct RichCurve                                             AudioPitchMultiplierCurve;                         // 0x20(0x78)
 	Struct RichCurve                                             AudioVolumeCurve;                                  // 0x98(0x78)
 	int                                                          RowIndex;                                          // 0x110(0x4)
@@ -364,7 +364,7 @@ struct MovieSceneLevelVisibilitySectionTemplate
 {
 public:
 	byte                                                         Visibility;                                        // 0x18(0x1)
-	char                                                         pad0x7_BJMPP[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_PYV1Y[0x7];                                 // 0x19(0x7)
 	TArray<struct FName>                                         LevelNames;                                        // 0x20(0x10)
 };
 
@@ -390,7 +390,7 @@ struct MovieSceneVectorPropertySectionTemplate
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	Struct RichCurve                                             ComponentCurves;                                   // 0x38(0x78)
-	char                                                         pad0x168_63S9K[0x168];                             // 0xb0(0x168)
+	char                                                         pad0x168_8TBZP[0x168];                             // 0xb0(0x168)
 	int                                                          NumChannelsUsed;                                   // 0x218(0x4)
 };
 

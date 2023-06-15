@@ -30,7 +30,7 @@
         "Offset": "0x898"
       },
       {
-        "Name": "ShroudMask",
+        "Name": "shroudmask",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x8a0"

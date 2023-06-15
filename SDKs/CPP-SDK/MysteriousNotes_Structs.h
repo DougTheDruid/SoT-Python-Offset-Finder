@@ -202,7 +202,7 @@ struct ClientNoteData
 {
 public:
 	bool                                                         NotifyArrival;                                     // 0x0(0x1)
-	char                                                         pad0x7_PK7AD[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_VL35Y[0x7];                                 // 0x1(0x7)
 	TArray<struct PendingNotes>                                  PendingNotes;                                      // 0x8(0x10)
 };
 

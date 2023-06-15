@@ -41,6 +41,17 @@ public:
 };
 
 
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class AIActionInstigatorComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_5621U[0x8];                                 // 0xc8(0x8)
+	TArray<class Class*>                                         CurrentRoles;                                      // 0xd0(0x10)
+	class                                                        InitialActivity;                                   // 0xe0(0x8)
+	class                                                        CurrentActivity;                                   // 0xe8(0x8)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIActionRole: public Object
 {
@@ -59,12 +70,12 @@ public:
 class AIActionSpotComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_HIRKQ[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_TSO21[0x8];                                 // 0xc8(0x8)
 	TArray<class Class*>                                         SupportedRoles;                                    // 0xd0(0x10)
 	TArray<class Class*>                                         SupportedActivities;                               // 0xe0(0x10)
 	TArray<class Class*>                                         ContextTags;                                       // 0xf0(0x10)
 	class                                                        CustomAnimInstance;                                // 0x100(0x8)
-	char                                                         pad0x18_Q6M6R[0x18];                               // 0x108(0x18)
+	char                                                         pad0x18_OFC6I[0x18];                               // 0x108(0x18)
 };
 
 

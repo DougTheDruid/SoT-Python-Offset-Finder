@@ -17,9 +17,9 @@ public:
 class CustomDeathService: public Actor
 {
 public:
-	char                                                         pad0x38_3Q61K[0x38];                               // 0x3c8(0x38)
+	char                                                         pad0x38_NKJKR[0x38];                               // 0x3c8(0x38)
 	TArray<class PlayerStart*>                                   CustomPlayerStarts;                                // 0x400(0x10)
-	char                                                         pad0x50_YHXZ6[0x50];                               // 0x410(0x50)
+	char                                                         pad0x50_2ZV0A[0x50];                               // 0x410(0x50)
 };
 
 

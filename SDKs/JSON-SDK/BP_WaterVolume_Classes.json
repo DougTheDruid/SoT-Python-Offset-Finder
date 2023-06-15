@@ -6,55 +6,55 @@
     "ClassSize": "0x3c",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "WaterPlaneActivatationVolume",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
-        "Name": "DynamicFlow",
+        "Name": "None",
         "Type": "Class DynamicFlowComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
-        "Name": "FlatWaterPlane",
+        "Name": "None",
         "Type": "Class FlatWaterPlaneComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
-        "Name": "FlatWaterMesh",
+        "Name": "None",
         "Type": "Class FlatWaterMeshComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
-        "Name": "Root",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
-        "Name": "SunLit",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x478"
       },
       {
-        "Name": "pad0x3_J5ZBL[0x3]",
+        "Name": "pad0x3_ZSIUJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x479"
       },
       {
-        "Name": "RippleGeneratorTag",
+        "Name": "None",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x47c"

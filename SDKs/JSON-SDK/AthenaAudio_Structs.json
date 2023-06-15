@@ -16,6 +16,88 @@
       }
     ]
   },
+  "AthenaAudioBootflowEvents": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "EventsToPlayOnLobbyStart",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EventsToPlayOnLobbyEnd",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EventsToPlayOnEngageStart",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EventsToPlayOnEngageEnd",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "EventsToPlayOnLoadingStart",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "EventsToPlayOnLoadingEnd",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "EventsToPlayOnFrontEndOrLoadingStart",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "EventsToPlayOnFrontEndOrLoadingEnd",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "AthenaAudioGameStateSettings": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "AudioGameStateGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AudioGameStateFrontend",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AudioGameStateLoading",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AudioGameStateIngame",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "StoryDrivenAudioPortalSetting": {
     "ClassSize": "0x18",
     "Attributes": [

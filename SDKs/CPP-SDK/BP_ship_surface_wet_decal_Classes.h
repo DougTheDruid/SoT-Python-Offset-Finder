@@ -15,7 +15,7 @@ public:
 	Class DecalComponent*                                        WetDecalPort;                                      // 0x3d8(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
 	float                                                        WetEffectDuration;                                 // 0x3e8(0x4)
-	char                                                         pad0x4_D1QMW[0x4];                                 // 0x3ec(0x4)
+	char                                                         pad0x4_S3YUM[0x4];                                 // 0x3ec(0x4)
 	Class MaterialInstanceDynamic*                               WetDynamicMaterial;                                // 0x3f0(0x8)
 	Struct TimerHandle                                           WetTimerHandle;                                    // 0x3f8(0x4)
 };

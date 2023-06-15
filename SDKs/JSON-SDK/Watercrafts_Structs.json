@@ -274,7 +274,7 @@
     ]
   },
   "WatercraftSpawnTelemetryEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "WatercraftId",
@@ -289,16 +289,22 @@
         "Offset": "0x10"
       },
       {
+        "Name": "OriginDescription",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
         "Name": "Location",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x20"
+        "Offset": "0x30"
       },
       {
         "Name": "Forward",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x2c"
+        "Offset": "0x3c"
       }
     ]
   },

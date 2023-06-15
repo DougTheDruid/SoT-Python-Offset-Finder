@@ -6,55 +6,59 @@ BP_medium_mast_main_C:
     Offset: '0xa68'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: BP_MastEmissaryFlag
+  - Name: GuildPlaque
     Offset: '0xa70'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: shp_flag_pennant_alliance_01_a
+  - Name: BP_MastEmissaryFlag
     Offset: '0xa78'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: shp_flag_jolly_roger_01_a
+    Type: Class ChildActorComponent*
+  - Name: shp_flag_pennant_alliance_01_a
     Offset: '0xa80'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: BP_Bell
+  - Name: shp_flag_jolly_roger_01_a
     Offset: '0xa88'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: Ladder
+    Type: Class StaticMeshComponent*
+  - Name: BP_Bell
     Offset: '0xa90'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: WeldedCrowsNestPhysics
+  - Name: Ladder
     Offset: '0xa98'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: WeldedMastPhysics
+    Type: Class ChildActorComponent*
+  - Name: WeldedCrowsNestPhysics
     Offset: '0xaa0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: shp_mast_ladder_step_01_a
+  - Name: WeldedMastPhysics
     Offset: '0xaa8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: BP_ShipFlagCustomizationChest
+  - Name: shp_mast_ladder_step_01_a
     Offset: '0xab0'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: BP_ShipFlagCustomizationChest
+    Offset: '0xab8'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: CrowsNest
-    Offset: '0xab8'
+    Offset: '0xac0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: BP_BellLower
-    Offset: '0xac0'
+    Offset: '0xac8'
     Size: '0x8'
     Type: Class ChildActorComponent*
   - Name: BellSupportLower
-    Offset: '0xac8'
+    Offset: '0xad0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  ClassSize: '0x68'
-  FullSize: '0xad0'
+  ClassSize: '0x70'
+  FullSize: '0xad8'
   InheritedSize: '0xa68'
   Super: BP_Mast_C

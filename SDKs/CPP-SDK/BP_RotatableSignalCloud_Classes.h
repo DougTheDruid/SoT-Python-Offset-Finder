@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x4b8] - InheritedSize[0x4a8]
+// Size 0x10 (Full Size[0x538] - InheritedSize[0x528]
 class BP_RotatableSignalCloud_C: public GameplayEventSignal_StaticMesh
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4a8(0x8)
-	Class RotateMeshToLocalPlayerComponent*                      RotateMeshToLocalPlayer;                           // 0x4b0(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x528(0x8)
+	Class RotateMeshToLocalPlayerComponent*                      RotateMeshToLocalPlayer;                           // 0x530(0x8)
 };
 
 

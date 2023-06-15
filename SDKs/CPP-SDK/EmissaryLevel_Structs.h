@@ -35,7 +35,7 @@ public:
 	float                                                        TransitionTime;                                    // 0x10(0x4)
 	float                                                        ActiveValue;                                       // 0x14(0x4)
 	float                                                        InactiveValue;                                     // 0x18(0x4)
-	char                                                         pad0x4_VU7BX[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_KUJ4R[0x4];                                 // 0x1c(0x4)
 	Class LightComponent*                                        Light;                                             // 0x20(0x8)
 };
 
@@ -65,7 +65,7 @@ public:
 	Class DataAsset*                                             EmissarySunkPopUpToastData;                        // 0x28(0x8)
 	Struct EmissaryCompanyCosmetics                              CompanyCosmetics;                                  // 0x30(0x20)
 	Struct PlayerStat                                            TimeSpentAtMaxRankStat;                            // 0x50(0x4)
-	char                                                         pad0x4_BOYLJ[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_F60JV[0x4];                                 // 0x54(0x4)
 	TArray<struct StatsToFireOnFullEmissaryClothing>             StatsToFireOnFullEmissaryClothing;                 // 0x58(0x10)
 	TArray<struct StatsToFireOnFullEmissaryShipCustomizations>   StatsToFireOnFullEmissaryShipCustomizations;       // 0x68(0x10)
 	TArray<struct StatsToFireOnFullShipCustomizationsAndClothing> StatsToFireOnFullShipCustomizationsAndClothing;    // 0x78(0x10)
@@ -86,7 +86,7 @@ struct EmissaryLevelData
 {
 public:
 	int                                                          LevelTarget;                                       // 0x0(0x4)
-	char                                                         pad0x4_5UDU4[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_WVBX1[0x4];                                 // 0x4(0x4)
 	Struct EmissaryFlagMeshReferences                            EmissaryFlagMeshAssetReferences;                   // 0x8(0x20)
 	Class EmissaryColourSwatchSettingsAsset*                     CustomisedFlagSettings;                            // 0x68(0x8)
 	Struct RewardId                                              EmissaryDeactivationReward;                        // 0x70(0x8)
@@ -208,7 +208,7 @@ struct EmissaryFactionActionReward
 {
 public:
 	byte                                                         FactionActionType;                                 // 0x0(0x1)
-	char                                                         pad0x3_MKNC4[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_2O9YY[0x3];                                 // 0x1(0x3)
 	float                                                        Amount;                                            // 0x4(0x4)
 };
 
@@ -218,7 +218,7 @@ struct EmissaryCompanyActionReward
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x0(0x1)
-	char                                                         pad0x3_4PN13[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_GH54H[0x3];                                 // 0x1(0x3)
 	float                                                        Amount;                                            // 0x4(0x4)
 };
 
@@ -230,7 +230,7 @@ public:
 	bool                                                         FirstTimeOnly;                                     // 0x0(0x1)
 	bool                                                         NotOriginalOwner;                                  // 0x1(0x1)
 	byte                                                         ItemQualityRequirement;                            // 0x2(0x1)
-	char                                                         pad0x1_TSMX4[0x1];                                 // 0x3(0x1)
+	char                                                         pad0x1_461MK[0x1];                                 // 0x3(0x1)
 	int                                                          EmissaryLevelIncrease;                             // 0x4(0x4)
 };
 
@@ -249,7 +249,7 @@ struct EmissaryKillPlayerReward
 {
 public:
 	int                                                          EmissaryLevelIncrease;                             // 0x0(0x4)
-	char                                                         pad0x4_1FOAI[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_RCLDW[0x4];                                 // 0x4(0x4)
 	TArray<struct EmissaryLevelKillCountScaleFactors>            EmissaryLevelKillCountScaleFactors;                // 0x8(0x10)
 	TArray<class Class*>                                         ValidEmissariesToKill;                             // 0x18(0x10)
 };
@@ -412,11 +412,12 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x28
 struct EmissaryJoinedNetworkEvent
 {
 public:
 	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
+	Struct Guid                                                  GuildId;                                           // 0x18(0x10)
 };
 
 
@@ -487,7 +488,7 @@ public:
 	struct FName                                                 Company;                                           // 0x10(0x8)
 	Struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
 	byte                                                         RewardType;                                        // 0x28(0x1)
-	char                                                         pad0x3_RBZ12[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_BQJOQ[0x3];                                 // 0x29(0x3)
 	int                                                          UpdateAmount;                                      // 0x2c(0x4)
 };
 
@@ -511,7 +512,7 @@ public:
 	struct FName                                                 Company;                                           // 0x20(0x8)
 	Struct Guid                                                  AssociatedCrew;                                    // 0x28(0x10)
 	byte                                                         EmissaryDeactivateReason;                          // 0x38(0x1)
-	char                                                         pad0x3_UBG5Z[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_8C2PN[0x3];                                 // 0x39(0x3)
 	int                                                          EmissaryTotal;                                     // 0x3c(0x4)
 };
 
@@ -568,7 +569,7 @@ public:
 	struct FName                                                 EmissaryCompany;                                   // 0x10(0x8)
 	int                                                          EmissaryRank;                                      // 0x18(0x4)
 	byte                                                         ActionName;                                        // 0x1c(0x1)
-	char                                                         pad0x3_U2D1K[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_ISE4W[0x3];                                 // 0x1d(0x3)
 	int                                                          PointsRewarded;                                    // 0x20(0x4)
 	int                                                          PointsAccumulated;                                 // 0x24(0x4)
 	int                                                          PointsRequiredToNextRank;                          // 0x28(0x4)

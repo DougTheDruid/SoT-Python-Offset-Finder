@@ -79,11 +79,11 @@ public:
 class MysteriousNotesService: public Actor
 {
 public:
-	char                                                         pad0x28_QJB5G[0x28];                               // 0x3c8(0x28)
+	char                                                         pad0x28_JIAR0[0x28];                               // 0x3c8(0x28)
 	Class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
 	Class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
 	Class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
-	char                                                         pad0x88_IGUTZ[0x88];                               // 0x408(0x88)
+	char                                                         pad0x88_ZMMUG[0x88];                               // 0x408(0x88)
 };
 
 
@@ -98,12 +98,12 @@ public:
 class PlayerMysteriousNoteComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_B5SAW[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_T8AES[0x8];                                 // 0xc8(0x8)
 	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
-	char                                                         pad0xef_WO5F2[0xef];                               // 0xd1(0xef)
+	char                                                         pad0xef_RCVB9[0xef];                               // 0xd1(0xef)
 	Struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
 	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
-	char                                                         pad0x8f_IBZHU[0x8f];                               // 0x1d9(0x8f)
+	char                                                         pad0x8f_1P40J[0x8f];                               // 0x1d9(0x8f)
 };
 
 
@@ -111,16 +111,16 @@ public:
 class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_SFOQB[0x10];                               // 0x7e0(0x10)
+	char                                                         pad0x10_B4TEC[0x10];                               // 0x7e0(0x10)
 	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7f0(0x8)
 	int                                                          CanvasWidth;                                       // 0x7f8(0x4)
 	int                                                          CanvasHeight;                                      // 0x7fc(0x4)
 	float                                                        FontScale;                                         // 0x800(0x4)
-	char                                                         pad0x5c_FAFSF[0x5c];                               // 0x804(0x5c)
+	char                                                         pad0x5c_BFQZM[0x5c];                               // 0x804(0x5c)
 	Class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x860(0x8)
 	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x868(0x8)
 	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x870(0x8)
-	char                                                         pad0x108_379ZA[0x108];                             // 0x878(0x108)
+	char                                                         pad0x108_LPMJ2[0x108];                             // 0x878(0x108)
 };
 
 

@@ -89,7 +89,7 @@ struct CommodityRedemptionTrackingModel
 {
 public:
 	byte                                                         NPCName;                                           // 0x2(0x1)
-	char                                                         pad0x5_3JDPP[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_3E5GL[0x5];                                 // 0x3(0x5)
 };
 
 
@@ -99,7 +99,7 @@ struct CommodityTrackingModel
 public:
 	Struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
 	byte                                                         NPCName;                                           // 0x10(0x1)
-	char                                                         pad0x7_0Z4RZ[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_711DK[0x7];                                 // 0x11(0x7)
 };
 
 

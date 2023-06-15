@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_SkullRitual_Pipe_C:
   Attributes:
-  - Name: gmp_sm_pipe_oos_01_a
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

@@ -1,66 +1,66 @@
 {
   "wsp_beach_rocks_05_b_C": {
-    "Super": "BP_Placement_HeightDrop_C",
+    "Super": "None",
     "FullSize": "0x458",
     "InheritedSize": "0x408",
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "StaticMesh1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "StaticMesh16",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "StaticMesh13",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "StaticMesh11",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "StaticMesh10",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "StaticMesh9",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "StaticMesh8",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "StaticMesh7",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "StaticMesh6",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "Scene",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x450"

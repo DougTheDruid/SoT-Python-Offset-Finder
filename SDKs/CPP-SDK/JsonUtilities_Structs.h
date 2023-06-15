@@ -68,7 +68,7 @@ struct TestSerializationObject
 {
 public:
 	bool                                                         TestBool;                                          // 0x0(0x1)
-	char                                                         pad0x3_T99K7[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_PT3S2[0x3];                                 // 0x1(0x3)
 	int                                                          TestInt;                                           // 0x4(0x4)
 	Struct FString                                               TestString;                                        // 0x8(0x10)
 	Struct Guid                                                  TestGuid;                                          // 0x18(0x10)

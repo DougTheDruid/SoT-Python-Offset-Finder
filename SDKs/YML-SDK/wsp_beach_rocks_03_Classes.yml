@@ -2,75 +2,75 @@
 # https://github.com/DougTheDruid
 wsp_beach_rocks_03_C:
   Attributes:
-  - Name: StaticMesh16
+  - Name: None
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh15
+  - Name: None
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh14
+  - Name: None
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh13
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh12
+  - Name: None
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh11
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh10
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh9
+  - Name: None
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh8
+  - Name: None
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh7
+  - Name: None
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh6
+  - Name: None
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh5
+  - Name: None
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh4
+  - Name: None
     Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh3
+  - Name: None
     Offset: '0x470'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh2
+  - Name: None
     Offset: '0x478'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: StaticMesh1
+  - Name: None
     Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Scene
+  - Name: None
     Offset: '0x488'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x88'
   FullSize: '0x490'
   InheritedSize: '0x408'
-  Super: BP_Placement_HeightDrop_C
+  Super: None

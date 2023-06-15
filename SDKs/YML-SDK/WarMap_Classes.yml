@@ -72,7 +72,7 @@ StopWarMapVoyageVoteValidator:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KA3VR[0x7]
+  - Name: pad0x7_F3K0S[0x7]
     Offset: '0x119'
     Size: '0x7'
     Type: char
@@ -82,7 +82,7 @@ StopWarMapVoyageVoteValidator:
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
-  - Name: pad0x8_IC0CD[0x8]
+  - Name: pad0x8_RZFE8[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -98,7 +98,7 @@ WarMapInteractionComponent:
     Offset: '0x1a0'
     Size: '0x8'
     Type: class
-  - Name: pad0x20_971Z9[0x20]
+  - Name: pad0x20_6231B[0x20]
     Offset: '0x1a8'
     Size: '0x20'
     Type: char
@@ -132,7 +132,7 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x67_FBXKY[0x67]
+  - Name: pad0x67_9B371[0x67]
     Offset: '0x41'
     Size: '0x67'
     Type: char
@@ -144,7 +144,7 @@ WarMapVoteConsumerBase:
     Offset: '0xb8'
     Size: '0x8'
     Type: Class BoxedRpcDispatcherComponent*
-  - Name: pad0x58_TV76W[0x58]
+  - Name: pad0x58_TESZ6[0x58]
     Offset: '0xc0'
     Size: '0x58'
     Type: char
@@ -154,7 +154,7 @@ WarMapVoteConsumerBase:
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_FKQF1[0x10]
+  - Name: pad0x10_HO5ZK[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -166,7 +166,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3dc'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: pad0x4_2HHJ3[0x4]
+  - Name: pad0x4_JM07P[0x4]
     Offset: '0x3e4'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ WarMapVoteInteractionActor:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<struct FactionInfoPtrs>
-  - Name: pad0x230_YXGI2[0x230]
+  - Name: pad0x230_8RXIP[0x230]
     Offset: '0x410'
     Size: '0x230'
     Type: char
@@ -200,21 +200,13 @@ WarMapVoteValidatorBase:
     Offset: '0x38'
     Size: '0x8'
     Type: Class Actor*
-  - Name: UpdateIsCrewInPVEEncounterInterval
-    Offset: '0x40'
-    Size: '0x4'
-    Type: float
-  - Name: IsCrewInPVEEncounterCached
-    Offset: '0x44'
-    Size: '0x1'
-    Type: bool
   - Name: ShowWithHardMode
-    Offset: '0x45'
+    Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd2_G3SJA[0xd2]
-    Offset: '0x46'
-    Size: '0xd2'
+  - Name: pad0xd7_D2GJ1[0xd7]
+    Offset: '0x41'
+    Size: '0xd7'
     Type: char
   ClassSize: '0xe8'
   FullSize: '0x118'

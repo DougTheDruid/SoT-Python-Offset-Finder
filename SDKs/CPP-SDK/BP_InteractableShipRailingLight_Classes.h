@@ -20,7 +20,7 @@ public:
 	float                                                        GlowIntensityOn;                                   // 0x740(0x4)
 	float                                                        GlowIntensityOff;                                  // 0x744(0x4)
 	bool                                                         UsesGlow;                                          // 0x748(0x1)
-	char                                                         pad0x7_P69HP[0x7];                                 // 0x749(0x7)
+	char                                                         pad0x7_1LE74[0x7];                                 // 0x749(0x7)
 	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x750(0x8)
 	struct FName                                                 FlameParameterName;                                // 0x758(0x8)
 	float                                                        FlameIntensityOn;                                  // 0x760(0x4)

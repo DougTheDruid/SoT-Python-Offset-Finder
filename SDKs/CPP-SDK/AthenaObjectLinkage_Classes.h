@@ -31,7 +31,7 @@ public:
 class LinkerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0xc8_WQH8J[0xc8];                               // 0xc8(0xc8)
+	char                                                         pad0xc8_B2NPY[0xc8];                               // 0xc8(0xc8)
 	TArray<class EndPlayHandler*>                                EndPlayHandlers;                                   // 0x190(0x10)
 };
 

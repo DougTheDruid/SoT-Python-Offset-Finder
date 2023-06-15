@@ -46,7 +46,7 @@ CollectionLimits:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_U3UUU[0x2]
+  - Name: pad0x2_VKXLQ[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -124,7 +124,7 @@ FolderTotals:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GOPS8[0x7]
+  - Name: pad0x7_TXH8T[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -180,7 +180,7 @@ TextureAuditorGroupProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_M7ZIC[0x7]
+  - Name: pad0x7_UCW3V[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -195,7 +195,7 @@ TextureAuditorProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_22U5M[0x7]
+  - Name: pad0x7_TA7XP[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

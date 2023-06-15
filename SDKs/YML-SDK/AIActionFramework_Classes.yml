@@ -24,6 +24,28 @@ AIActionContextTag:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
+AIActionInstigatorComponent:
+  Attributes:
+  - Name: pad0x8_5621U[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
+  - Name: CurrentRoles
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  - Name: InitialActivity
+    Offset: '0xe0'
+    Size: '0x8'
+    Type: class
+  - Name: CurrentActivity
+    Offset: '0xe8'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x28'
+  FullSize: '0xf0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 AIActionInstigatorInterface:
   Attributes: []
   ClassSize: '0x0'
@@ -38,7 +60,7 @@ AIActionRole:
   Super: Object
 AIActionSpotComponent:
   Attributes:
-  - Name: pad0x8_HIRKQ[0x8]
+  - Name: pad0x8_TSO21[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -58,7 +80,7 @@ AIActionSpotComponent:
     Offset: '0x100'
     Size: '0x8'
     Type: class
-  - Name: pad0x18_Q6M6R[0x18]
+  - Name: pad0x18_OFC6I[0x18]
     Offset: '0x108'
     Size: '0x18'
     Type: char

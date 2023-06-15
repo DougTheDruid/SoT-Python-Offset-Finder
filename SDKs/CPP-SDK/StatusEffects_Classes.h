@@ -33,7 +33,7 @@ class AppliedStatusToSelfStatCondition: public TargetedStatCondition
 public:
 	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
 	byte                                                         ComparisonMode;                                    // 0x40(0x1)
-	char                                                         pad0x7_DINS3[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_UJW0T[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -48,9 +48,9 @@ public:
 class BuffReceiverComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_7803O[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_PX88R[0x8];                                 // 0xc8(0x8)
 	bool                                                         CanReceiveBuff;                                    // 0xd0(0x1)
-	char                                                         pad0x7_9O6C6[0x7];                                 // 0xd1(0x7)
+	char                                                         pad0x7_U5860[0x7];                                 // 0xd1(0x7)
 };
 
 
@@ -123,7 +123,7 @@ public:
 class LightWeightStatusEffectManagerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_6UYQW[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_7WP6A[0x20];                               // 0xc8(0x20)
 	Class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xe8(0x8)
 	TArray<struct ActiveEffects>                                 ActiveEffects;                                     // 0xf0(0x10)
 };
@@ -147,9 +147,9 @@ public:
 class MaterialStatusSusceptibilityComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_ODELQ[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_VWCRY[0x8];                                 // 0xc8(0x8)
 	Class PhysicalMaterial*                                      CurrentSurfaceMaterial;                            // 0xd0(0x8)
-	char                                                         pad0x20_TYYV3[0x20];                               // 0xd8(0x20)
+	char                                                         pad0x20_ET2U2[0x20];                               // 0xd8(0x20)
 };
 
 
@@ -157,11 +157,11 @@ public:
 class SphericalStatusEffectZone: public Actor
 {
 public:
-	char                                                         pad0x8_9MWYR[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_GC727[0x8];                                 // 0x3c8(0x8)
 	Class ActorActivationComponent*                              ActorActivationComponent;                          // 0x3d0(0x8)
 	Class SphereComponent*                                       SphereComponent;                                   // 0x3d8(0x8)
 	Class StatusEffectVolumeComponent*                           StatusEffectVolumeComponent;                       // 0x3e0(0x8)
-	char                                                         pad0xa0_XG7QB[0xa0];                               // 0x3e8(0xa0)
+	char                                                         pad0xa0_ISXXP[0xa0];                               // 0x3e8(0xa0)
 };
 
 
@@ -199,7 +199,7 @@ public:
 class StatusEffectManagerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_Z66QZ[0x28];                               // 0xc8(0x28)
+	char                                                         pad0x28_VX3Y7[0x28];                               // 0xc8(0x28)
 	Class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xf0(0x8)
 	TArray<struct ActiveEffects>                                 ActiveEffects;                                     // 0xf8(0x10)
 };
@@ -210,7 +210,7 @@ class StatusEffectOverlapZone: public SimpleOverlapZone
 {
 public:
 	TArray<struct StatusesToApplyOnOverlap>                      StatusesToApplyOnOverlap;                          // 0x4a0(0x10)
-	char                                                         pad0x10_EE600[0x10];                               // 0x4b0(0x10)
+	char                                                         pad0x10_F14KD[0x10];                               // 0x4b0(0x10)
 };
 
 
@@ -241,9 +241,9 @@ class StatusEffectVolumeComponent: public SceneComponent
 {
 public:
 	bool                                                         UseOverlapEventsFromParentComponent;               // 0x2e0(0x1)
-	char                                                         pad0x7_PWAFU[0x7];                                 // 0x2e1(0x7)
+	char                                                         pad0x7_M21OT[0x7];                                 // 0x2e1(0x7)
 	TArray<struct StatusEffectsToMaintain>                       StatusEffectsToMaintain;                           // 0x2e8(0x10)
-	char                                                         pad0x8_VSLRS[0x8];                                 // 0x2f8(0x8)
+	char                                                         pad0x8_N35S4[0x8];                                 // 0x2f8(0x8)
 };
 
 
@@ -253,7 +253,7 @@ class SetCanReceiveBuffStatusResponse: public StatusResponse
 public:
 	bool                                                         LockBuffReceiver;                                  // 0x30(0x1)
 	bool                                                         RevertOnDeactivate;                                // 0x31(0x1)
-	char                                                         pad0x6_6JSN4[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_KK4PO[0x6];                                 // 0x32(0x6)
 };
 
 

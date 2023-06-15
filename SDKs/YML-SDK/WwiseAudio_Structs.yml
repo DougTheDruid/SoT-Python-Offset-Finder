@@ -44,33 +44,6 @@ MultiEmitterData:
     Size: '0xc'
     Type: Struct Vector
   ClassSize: '0x28'
-ReverbPresetControllerSettings:
-  Attributes:
-  - Name: HorizontalConeSegmentElevationAngle
-    Offset: '0xc'
-    Size: '0x4'
-    Type: float
-  - Name: UpwardsConeAngle
-    Offset: '0x10'
-    Size: '0x4'
-    Type: float
-  - Name: TraceVectorLength
-    Offset: '0x14'
-    Size: '0x4'
-    Type: float
-  - Name: TimeToDiscardSample
-    Offset: '0x18'
-    Size: '0x4'
-    Type: float
-  - Name: DistanceToDiscardSample
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: float
-  - Name: BiasTowardsVerticalSegment
-    Offset: '0x20'
-    Size: '0x4'
-    Type: float
-  ClassSize: '0x28'
 WwiseAudioAcousticSurfaceParams:
   Attributes:
   - Name: Thickness
@@ -82,161 +55,6 @@ WwiseAudioAcousticSurfaceParams:
     Size: '0x4'
     Type: float
   ClassSize: '0x8'
-WwiseAudioGameStateSettings:
-  Attributes:
-  - Name: AudioGameStateGroupName
-    Offset: '0x0'
-    Size: '0x8'
-    Type: struct FName
-  - Name: AudioGameStateFrontend
-    Offset: '0x8'
-    Size: '0x8'
-    Type: struct FName
-  - Name: AudioGameStateLoading
-    Offset: '0x10'
-    Size: '0x8'
-    Type: struct FName
-  - Name: AudioGameStateIngame
-    Offset: '0x18'
-    Size: '0x8'
-    Type: struct FName
-  - Name: EventsToPlayOnLobbyStart
-    Offset: '0x20'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnLobbyStart>
-  - Name: EventsToPlayOnLobbyEnd
-    Offset: '0x30'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnLobbyEnd>
-  - Name: EventsToPlayOnEngageStart
-    Offset: '0x40'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnEngageStart>
-  - Name: EventsToPlayOnEngageEnd
-    Offset: '0x50'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnEngageEnd>
-  - Name: EventsToPlayOnLoadingStart
-    Offset: '0x60'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnLoadingStart>
-  - Name: EventsToPlayOnLoadingEnd
-    Offset: '0x70'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnLoadingEnd>
-  - Name: EventsToPlayOnFrontEndOrLoadingStart
-    Offset: '0x80'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnFrontEndOrLoadingStart>
-  - Name: EventsToPlayOnFrontEndOrLoadingEnd
-    Offset: '0x90'
-    Size: '0x10'
-    Type: TArray<struct EventsToPlayOnFrontEndOrLoadingEnd>
-  ClassSize: '0xa0'
-WwiseAudioReverbPresets:
-  Attributes:
-  - Name: ShortEarlyReflectionPresetName
-    Offset: '0x0'
-    Size: '0x8'
-    Type: struct FName
-  - Name: LongEarlyReflectionPresetName
-    Offset: '0x8'
-    Size: '0x8'
-    Type: struct FName
-  - Name: SpaceSizeRTPCName
-    Offset: '0x10'
-    Size: '0x8'
-    Type: struct FName
-  - Name: EnclosedRatioRTPCName
-    Offset: '0x18'
-    Size: '0x8'
-    Type: struct FName
-  - Name: MaterialThicknessRTPCName
-    Offset: '0x20'
-    Size: '0x8'
-    Type: struct FName
-  - Name: MaterialReflectivityRTPCName
-    Offset: '0x28'
-    Size: '0x8'
-    Type: struct FName
-  - Name: EnvironmentTraceChannel
-    Offset: '0x30'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x3_W2M2T[0x3]
-    Offset: '0x31'
-    Size: '0x3'
-    Type: char
-  - Name: MinSpaceSizeWindowForEarlyReflections
-    Offset: '0x34'
-    Size: '0x4'
-    Type: float
-  - Name: MaxSpaceSizeWindowforEarlyReflections
-    Offset: '0x38'
-    Size: '0x4'
-    Type: float
-  - Name: SamplingSettings
-    Offset: '0x3c'
-    Size: '0x28'
-    Type: Struct ReverbPresetControllerSettings
-  ClassSize: '0x64'
-WwiseBinkSettings:
-  Attributes:
-  - Name: PlayEvent
-    Offset: '0x0'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: StopEvent
-    Offset: '0x10'
-    Size: '0x10'
-    Type: Struct StringAssetReference
-  - Name: PreBufferCount
-    Offset: '0x20'
-    Size: '0x4'
-    Type: int
-  - Name: pad0x4_I4OZE[0x4]
-    Offset: '0x24'
-    Size: '0x4'
-    Type: char
-  - Name: Mappings
-    Offset: '0x28'
-    Size: '0x10'
-    Type: TArray<struct Mappings>
-  ClassSize: '0x38'
-WwiseBinkTrackMapping:
-  Attributes:
-  - Name: mChannelMapping
-    Offset: '0x0'
-    Size: '0x1'
-    Type: byte
-  - Name: mRequired
-    Offset: '0x1'
-    Size: '0x1'
-    Type: bool
-  - Name: pad0x2_FKEVH[0x2]
-    Offset: '0x2'
-    Size: '0x2'
-    Type: char
-  - Name: mVolumeDb
-    Offset: '0x4'
-    Size: '0x4'
-    Type: float
-  ClassSize: '0x8'
-WwiseBinkTrackMappings:
-  Attributes:
-  - Name: mLanguage
-    Offset: '0x0'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x7_NS2E7[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
-  - Name: mChannels
-    Offset: '0x8'
-    Size: '0x10'
-    Type: TArray<struct mChannels>
-  ClassSize: '0x18'
 WwiseEmitterParams:
   Attributes:
   - Name: bEnableObstructionAndOcclusion
@@ -248,17 +66,6 @@ WwiseEmitterParams:
     Size: '0x1'
     Type: bool
   ClassSize: '0x2'
-WwiseEventParam:
-  Attributes:
-  - Name: SourcePath
-    Offset: '0x8'
-    Size: '0x8'
-    Type: struct FName
-  - Name: SourceObj
-    Offset: '0x10'
-    Size: '0x8'
-    Type: struct FName
-  ClassSize: '0x18'
 WwiseExternalSource:
   Attributes:
   - Name: path
@@ -266,17 +73,6 @@ WwiseExternalSource:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x10'
-WwiseIOPriorityMappingConfig:
-  Attributes:
-  - Name: WwisePriority
-    Offset: '0x0'
-    Size: '0x4'
-    Type: int
-  - Name: AsyncIOPriority
-    Offset: '0x4'
-    Size: '0x1'
-    Type: byte
-  ClassSize: '0x8'
 WwiseListenerInfo:
   Attributes:
   - Name: Position
@@ -306,7 +102,7 @@ WwiseNativeEmitterPoolDensityParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_C0APO[0x7]
+  - Name: pad0x7_H0IHM[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -331,43 +127,6 @@ WwiseNativeEmitterPoolDensityParams:
     Size: '0x4'
     Type: float
   ClassSize: '0x28'
-WwiseNetworkRelationship:
-  Attributes:
-  - Name: SwitchGroupName
-    Offset: '0x0'
-    Size: '0x8'
-    Type: struct FName
-  - Name: RemotePlayerSwitchValue
-    Offset: '0x8'
-    Size: '0x8'
-    Type: struct FName
-  - Name: LocalPlayerSwitchValue
-    Offset: '0x10'
-    Size: '0x8'
-    Type: struct FName
-  ClassSize: '0x18'
-WwisePlatformMapping:
-  Attributes:
-  - Name: UnrealPlatform
-    Offset: '0x0'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: WwisePlatform
-    Offset: '0x10'
-    Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x20'
-WwisePlatformMappings:
-  Attributes:
-  - Name: DefaultWwisePlatform
-    Offset: '0x0'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: Mappings
-    Offset: '0x10'
-    Size: '0x10'
-    Type: TArray<struct Mappings>
-  ClassSize: '0x20'
 WwiseSubtitle:
   Attributes:
   - Name: Subtitle

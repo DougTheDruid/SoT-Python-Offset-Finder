@@ -6,9 +6,9 @@ BP_PromptCoordinator_DiceEmote_C:
     Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x4c_CEB1P[0x4c]
+  - Name: pad0xed_EF09E[0xed]
     Offset: '0x140'
-    Size: '0x4c'
+    Size: '0xed'
     Type: char
   - Name: DiceEmotePromptAccessKey
     Offset: '0x140'
@@ -26,7 +26,7 @@ BP_PromptCoordinator_DiceEmote_C:
     Offset: '0x208'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0JR7Z[0x7]
+  - Name: pad0x7_IPQ4C[0x7]
     Offset: '0x209'
     Size: '0x7'
     Type: char

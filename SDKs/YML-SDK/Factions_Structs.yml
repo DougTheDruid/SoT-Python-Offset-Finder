@@ -95,7 +95,7 @@ FactionShipSunkNetworkEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8PAHS[0x3]
+  - Name: pad0x3_5GCRL[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -130,7 +130,7 @@ FactionShipSunkUIEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5KV08[0x7]
+  - Name: pad0x7_BI5ZO[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -200,7 +200,7 @@ LootLevelReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_AJRQT[0x3]
+  - Name: pad0x3_CVK2V[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -208,7 +208,7 @@ LootLevelReward:
     Offset: '0x4'
     Size: '0x8'
     Type: Struct RewardId
-  - Name: pad0x4_HFRGR[0x4]
+  - Name: pad0x4_QCH0M[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

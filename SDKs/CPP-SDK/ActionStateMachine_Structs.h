@@ -74,9 +74,9 @@ struct ResetStateMachineRpc
 {
 public:
 	Struct ActionStateChangeRequestId                            LatestEpochIds;                                    // 0x0(0x1)
-	char                                                         pad0x4_3GTNK[0x4];                                 // 0x1(0x4)
+	char                                                         pad0x4_Q9FM6[0x4];                                 // 0x1(0x4)
 	Struct ActionStateChangeRequestId                            LatestRequestIds;                                  // 0x5(0x1)
-	char                                                         pad0xa_XC5PF[0xa];                                 // 0x6(0xa)
+	char                                                         pad0xa_Q6TUP[0xa];                                 // 0x6(0xa)
 	Struct SerialisedConstructionInfoStore                       PerTrackConstructionInfoStore;                     // 0x10(0x140)
 };
 
@@ -137,7 +137,7 @@ struct TestActionStateConstructionInfoWithInner
 {
 public:
 	float                                                        FloatProp;                                         // 0x28(0x4)
-	char                                                         pad0x4_SMWSR[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_HRORF[0x4];                                 // 0x2c(0x4)
 	Struct InnerTestStruct                                       InnerStruct;                                       // 0x30(0x18)
 };
 
@@ -147,7 +147,7 @@ struct InnerTestStruct
 {
 public:
 	bool                                                         BoolProp;                                          // 0x0(0x1)
-	char                                                         pad0x7_NG2MX[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_YNL4A[0x7];                                 // 0x1(0x7)
 	Struct FString                                               StringProp;                                        // 0x8(0x10)
 };
 

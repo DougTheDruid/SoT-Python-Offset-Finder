@@ -26,7 +26,7 @@ ComplexItemQualityEntry:
     Offset: '0x5'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_ZNBAA[0x2]
+  - Name: pad0x2_3E00E[0x2]
     Offset: '0x6'
     Size: '0x2'
     Type: char

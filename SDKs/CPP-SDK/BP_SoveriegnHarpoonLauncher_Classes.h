@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_SoveriegnHarpoonLauncher_2_C: public HarpoonLauncher
 {
 public:
-	Class HarpoonItemLocationComponent*                          HarpoonItemLocation;                               // 0xcb0(0x8)
-	Class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcb8(0x8)
-	Class CapsuleComponent*                                      MountCollision;                                    // 0xcc0(0x8)
-	Class CapsuleComponent*                                      BarrelCollision;                                   // 0xcc8(0x8)
+	Class HarpoonItemLocationComponent*                          None;                                              // 0xcb0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xcb8(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xcc0(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xcc8(0x8)
 };
 
 
@@ -21,10 +21,10 @@ public:
 class BP_SoveriegnHarpoonLauncher_C: public HarpoonLauncher
 {
 public:
-	Class HarpoonItemLocationComponent*                          HarpoonItemLocation;                               // 0xcb0(0x8)
-	Class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcb8(0x8)
-	Class CapsuleComponent*                                      MountCollision;                                    // 0xcc0(0x8)
-	Class CapsuleComponent*                                      BarrelCollision;                                   // 0xcc8(0x8)
+	Class HarpoonItemLocationComponent*                          None;                                              // 0xcb0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0xcb8(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xcc0(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0xcc8(0x8)
 };
 
 

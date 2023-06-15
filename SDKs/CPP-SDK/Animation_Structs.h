@@ -11,15 +11,15 @@ struct TransformBlendCurve
 {
 public:
 	bool                                                         UseLocationCurve;                                  // 0x0(0x1)
-	char                                                         pad0x7_UNLNU[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_P58M0[0x7];                                 // 0x1(0x7)
 	Struct RuntimeVectorCurve                                    LocationCurve;                                     // 0x8(0x170)
 	bool                                                         UseRotationCurve;                                  // 0x178(0x1)
-	char                                                         pad0x7_2FWYZ[0x7];                                 // 0x179(0x7)
+	char                                                         pad0x7_G7P8V[0x7];                                 // 0x179(0x7)
 	Struct RuntimeVectorCurve                                    RotationCurve;                                     // 0x180(0x170)
 	bool                                                         UseScaleCurve;                                     // 0x2f0(0x1)
-	char                                                         pad0x7_KFVNX[0x7];                                 // 0x2f1(0x7)
+	char                                                         pad0x7_6S1GM[0x7];                                 // 0x2f1(0x7)
 	Struct RuntimeVectorCurve                                    ScaleCurve;                                        // 0x2f8(0x170)
-	char                                                         pad0x8_V12O2[0x8];                                 // 0x468(0x8)
+	char                                                         pad0x8_WLUNT[0x8];                                 // 0x468(0x8)
 	Struct Transform                                             SourceTransform;                                   // 0x470(0x30)
 	Struct Transform                                             TargetTransform;                                   // 0x4a0(0x30)
 };
@@ -101,10 +101,10 @@ public:
 	float                                                        TranslationStrength;                               // 0x4(0x4)
 	float                                                        RotationStrength;                                  // 0x8(0x4)
 	Struct Vector                                                Location;                                          // 0xc(0xc)
-	char                                                         pad0x8_OTOGI[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_XJI22[0x8];                                 // 0x18(0x8)
 	Struct Quat                                                  Orientation;                                       // 0x20(0x10)
 	byte                                                         EffectorSpace;                                     // 0x30(0x1)
-	char                                                         pad0x3_H223F[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_Y0WM0[0x3];                                 // 0x31(0x3)
 	struct FName                                                 ParentBone;                                        // 0x34(0x8)
 };
 
@@ -170,7 +170,7 @@ public:
 	Struct Vector                                                ActorsVelocityVector;                              // 0x0(0xc)
 	float                                                        ActorSpeed;                                        // 0xc(0x4)
 	bool                                                         IsCharacterMoving;                                 // 0x10(0x1)
-	char                                                         pad0x3_W96H9[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_9AGA8[0x3];                                 // 0x11(0x3)
 	float                                                        WantedMovementSpeed;                               // 0x14(0x4)
 };
 
@@ -293,11 +293,11 @@ struct AnimNode_WeightedLoadOnDemandSquencePlayer
 {
 public:
 	float                                                        PlayRate;                                          // 0x40(0x4)
-	char                                                         pad0x4_CPQNQ[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_YUXGZ[0x4];                                 // 0x44(0x4)
 	Class WeightedAnimSequenceLoadOnDemand*                      WeightedAnimSequenceLoadOnDemand;                  // 0x48(0x8)
 	int                                                          GroupIndex;                                        // 0x50(0x4)
 	byte                                                         GroupRole;                                         // 0x54(0x1)
-	char                                                         pad0x3_NZWRO[0x3];                                 // 0x55(0x3)
+	char                                                         pad0x3_3UDNK[0x3];                                 // 0x55(0x3)
 	Class AnimSequence*                                          CurrentSequence;                                   // 0x58(0x8)
 	Class AnimSequence*                                          NextSequence;                                      // 0x60(0x8)
 };

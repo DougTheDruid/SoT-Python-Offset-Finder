@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DescribableComponent:
   Attributes:
-  - Name: pad0x8_8R10R[0x8]
+  - Name: pad0x8_4B0QQ[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ DescribableComponent:
     Offset: '0x130'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PUS07[0x7]
+  - Name: pad0x7_WGGZN[0x7]
     Offset: '0x131'
     Size: '0x7'
     Type: char
@@ -22,7 +22,7 @@ DescribableComponent:
     Offset: '0x170'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_RY8JM[0x17]
+  - Name: pad0x17_Q39BO[0x17]
     Offset: '0x171'
     Size: '0x17'
     Type: char

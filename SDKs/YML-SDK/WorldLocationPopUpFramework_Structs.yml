@@ -15,3 +15,14 @@ PlayerEnteredWorldLocationNotificationEvent:
     Size: '0x10'
     Type: Struct FString
   ClassSize: '0x28'
+TaleWorldLocationPopUpServiceEntry:
+  Attributes:
+  - Name: Location
+    Offset: '0x0'
+    Size: '0xc'
+    Type: Struct Vector
+  - Name: MaxDistance
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'

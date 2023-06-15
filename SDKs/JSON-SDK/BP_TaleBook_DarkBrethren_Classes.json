@@ -1,51 +1,51 @@
 {
   "BP_TaleBook_DarkBrethren_C": {
     "Super": "VoyageProposalContainer",
-    "FullSize": "0x7f8",
-    "InheritedSize": "0x7c0",
+    "FullSize": "0x820",
+    "InheritedSize": "0x7e8",
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "Arrow",
+        "Name": "None",
         "Type": "Class ArrowComponent*",
-        "Size": "0x8",
-        "Offset": "0x7c0"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7c8"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7d0"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7d8"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
       },
       {
-        "Name": "TaleSelectionSlot",
+        "Name": "None",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x818"
       }
     ]
   },

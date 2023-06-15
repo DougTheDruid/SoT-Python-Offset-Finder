@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_Storm_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: None
     Offset: '0x628'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: Lightning4
+  - Name: None
     Offset: '0x630'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Lightning3
+  - Name: None
     Offset: '0x638'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Lightning2
+  - Name: None
     Offset: '0x640'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Lightning1
+  - Name: None
     Offset: '0x648'
     Size: '0x8'
     Type: Class StaticMeshComponent*

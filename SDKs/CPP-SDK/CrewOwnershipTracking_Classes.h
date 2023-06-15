@@ -31,11 +31,11 @@ public:
 class CrewOwnershipTrackingComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x18_XDRDP[0x18];                               // 0xc8(0x18)
+	char                                                         pad0x18_H80AM[0x18];                               // 0xc8(0x18)
 	Struct Guid                                                  SpawningCrewId;                                    // 0xe0(0x10)
 	Struct Guid                                                  CurrentOwnedByCrewId;                              // 0xf0(0x10)
 	Struct OwnerListEntry                                        PreviousOwnedByCrewIdList;                         // 0x100(0x10)
-	char                                                         pad0x60_TI9WU[0x60];                               // 0x110(0x60)
+	char                                                         pad0x60_IR7BG[0x60];                               // 0x110(0x60)
 };
 
 

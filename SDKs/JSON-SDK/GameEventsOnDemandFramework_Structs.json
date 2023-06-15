@@ -1,36 +1,36 @@
 {
   "GameEventAvailabilityData": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "EventName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Type": "Struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "EventCategory",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8"
+        "Offset": "0x10"
       },
       {
         "Name": "AvailabilityState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x9"
+        "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_4OWAB[0x6]",
+        "Name": "pad0x6_EW8E7[0x6]",
         "Type": "char",
         "Size": "0x6",
-        "Offset": "0xa"
+        "Offset": "0x12"
       },
       {
         "Name": "ShipSizeLimit",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x18"
       }
     ]
   },

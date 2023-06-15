@@ -6,6 +6,20 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x8
+struct ClientCommandBase
+{
+public:
+};
+
+
+// Size 0x18
+struct ClientCommandQueue
+{
+public:
+};
+
+
 // Size 0x10
 struct TaleStructInstance
 {

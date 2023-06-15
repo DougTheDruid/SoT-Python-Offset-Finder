@@ -1,4 +1,18 @@
 {
+  "ClientCommandHandler": {
+    "Super": "Actor",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "CommandQueue",
+        "Type": "Struct ClientCommandQueue",
+        "Size": "0x18",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
   "TaleStruct": {
     "Super": "Struct",
     "FullSize": "0xa0",
@@ -12,7 +26,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x8_ABK9J[0x8]",
+        "Name": "pad0x8_SCU62[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"

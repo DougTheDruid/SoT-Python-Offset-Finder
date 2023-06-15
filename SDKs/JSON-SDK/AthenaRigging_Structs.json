@@ -297,7 +297,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_F2EC8[0x4]",
+        "Name": "pad0x4_X820C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"

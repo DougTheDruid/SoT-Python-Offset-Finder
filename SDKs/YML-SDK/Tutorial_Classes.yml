@@ -24,7 +24,7 @@ CaptaincyStarter:
     Offset: '0x6a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_TM1CW[0x5]
+  - Name: pad0x5_DWUDX[0x5]
     Offset: '0x6b'
     Size: '0x5'
     Type: char
@@ -36,7 +36,7 @@ CaptaincyStarter:
     Offset: '0x78'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_OFCEG[0x3]
+  - Name: pad0x3_04F2O[0x3]
     Offset: '0x79'
     Size: '0x3'
     Type: char
@@ -48,7 +48,7 @@ CaptaincyStarter:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_I9UMK[0x3]
+  - Name: pad0x3_3KS0H[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -60,7 +60,7 @@ CaptaincyStarter:
     Offset: '0x90'
     Size: '0x4'
     Type: int
-  - Name: pad0x64_06AK0[0x64]
+  - Name: pad0x64_2I455[0x64]
     Offset: '0x94'
     Size: '0x64'
     Type: char
@@ -90,7 +90,7 @@ CompanyTutorialVoyageProgress:
     Offset: '0x30'
     Size: '0x8'
     Type: class
-  - Name: pad0xa8_BIIW4[0xa8]
+  - Name: pad0xa8_VD2BF[0xa8]
     Offset: '0x38'
     Size: '0xa8'
     Type: char
@@ -108,12 +108,12 @@ ContextualTutorialComponent:
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: pad0x38_R2FD3[0x38]
+  - Name: pad0x58_YGSCS[0x58]
     Offset: '0xe8'
-    Size: '0x38'
+    Size: '0x58'
     Type: char
-  ClassSize: '0x58'
-  FullSize: '0x120'
+  ClassSize: '0x78'
+  FullSize: '0x140'
   InheritedSize: '0xc8'
   Super: ActorComponent
 HasTutorialStarterBegunNPCDialogConditional:
@@ -122,7 +122,7 @@ HasTutorialStarterBegunNPCDialogConditional:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_NCXV9[0x7]
+  - Name: pad0x7_473JH[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -152,7 +152,7 @@ Tutorial2019Component:
     Offset: '0xc9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_XL34B[0x6]
+  - Name: pad0x6_N21XE[0x6]
     Offset: '0xca'
     Size: '0x6'
     Type: char
@@ -184,7 +184,7 @@ TutorialHelpersBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 TutorialManager:
   Attributes:
-  - Name: pad0x8_W7VT2[0x8]
+  - Name: pad0x8_2ABW1[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -252,7 +252,7 @@ TutorialManager:
     Offset: '0x117'
     Size: '0x1'
     Type: bool
-  - Name: pad0x20_E53TK[0x20]
+  - Name: pad0x20_RD4RP[0x20]
     Offset: '0x118'
     Size: '0x20'
     Type: char
@@ -280,7 +280,7 @@ TutorialStarter:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_IY88U[0x2]
+  - Name: pad0x2_AZ6YK[0x2]
     Offset: '0x32'
     Size: '0x2'
     Type: char

@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "RotatingAudioSource",
+        "Name": "None",
         "Type": "Class RotatingAudioSourceComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "RockMesh",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "Collision",
+        "Name": "None",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x668"

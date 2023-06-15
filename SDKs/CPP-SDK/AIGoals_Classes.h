@@ -13,11 +13,55 @@ public:
 };
 
 
+// Size 0x68 (Full Size[0xd8] - InheritedSize[0x70]
+class BTService_SetBestActionSpotNearTarget: public BTService
+{
+public:
+	Struct BlackboardKeySelector                                 TargetKey;                                         // 0x70(0x28)
+	Struct BlackboardKeySelector                                 BestActionSpotKey;                                 // 0x98(0x28)
+	char                                                         pad0x18_S1EH1[0x18];                               // 0xc0(0x18)
+};
+
+
+// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
+class WhileActionSpotAvailableForPatrolAIGoal: public AIGoal
+{
+public:
+	float                                                        MinTimeToChangePatrolSpot;                         // 0x38(0x4)
+	float                                                        MaxTimeToChangePatrolSpot;                         // 0x3c(0x4)
+	class                                                        PatrolActivityType;                                // 0x40(0x8)
+	char                                                         pad0x30_VUY9D[0x30];                               // 0x48(0x30)
+};
+
+
 // Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
 class WhileBlackboardKeySetAIGoal: public AIGoal
 {
 public:
 	struct FName                                                 BlackboardKey;                                     // 0x38(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal: public AIGoal
+{
+public:
+	float                                                        InnerRadius;                                       // 0x38(0x4)
+	float                                                        OuterRadius;                                       // 0x3c(0x4)
+	TArray<Byte IgnoredMovementModes>                            IgnoredMovementModes;                              // 0x40(0x10)
+	Class Pawn*                                                  TargetPlayerPawn;                                  // 0x50(0x8)
+};
+
+
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class WhilePlayerWithinAreaAIGoal: public AIGoal
+{
+public:
+	float                                                        EnterAreaTriggerDistance;                          // 0x38(0x4)
+	float                                                        ExitAreaTriggerDistance;                           // 0x3c(0x4)
+	TArray<Byte IgnoredMovementModes>                            IgnoredMovementModes;                              // 0x40(0x10)
+	class                                                        WhileActiveActivityType;                           // 0x50(0x8)
+	Class Pawn*                                                  TargetPlayerPawn;                                  // 0x58(0x8)
 };
 
 

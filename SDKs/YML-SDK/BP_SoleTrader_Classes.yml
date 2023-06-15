@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_SoleTrader_C:
   Attributes:
-  - Name: SolidHits
+  - Name: None
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: NPCDialog
+  - Name: None
     Offset: '0x6b8'
     Size: '0x8'
     Type: Class NPCDialogComponent*
-  - Name: AnimNotifyWwiseEmitter
+  - Name: None
     Offset: '0x6c0'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*

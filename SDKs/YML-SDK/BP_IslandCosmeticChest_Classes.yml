@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_IslandCosmeticChest_C:
   Attributes:
-  - Name: Harbour
+  - Name: None
     Offset: '0x608'
     Size: '0x8'
     Type: Class HarbourComponent*

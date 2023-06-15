@@ -70,7 +70,7 @@ Pendulum:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HUX14[0x3]
+  - Name: pad0x3_FJSWV[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -98,7 +98,7 @@ Pendulum:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_WR2S1[0xc]
+  - Name: pad0xc_VLC4E[0xc]
     Offset: '0x24'
     Size: '0xc'
     Type: char

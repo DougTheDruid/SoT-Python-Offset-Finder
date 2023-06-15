@@ -10,19 +10,19 @@ namespace DougsSDKDumper
 class BP_CylinderLightingZone_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
-	Class CapsuleComponent*                                      InnerCapsule;                                      // 0x3d0(0x8)
-	Class CapsuleComponent*                                      OuterCapsule;                                      // 0x3d8(0x8)
-	Class LightingZoneComponent*                                 LightingZone;                                      // 0x3e0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
-	float                                                        Outer Radius;                                      // 0x3f0(0x4)
-	float                                                        Outer Half Height;                                 // 0x3f4(0x4)
-	float                                                        Inner Radius;                                      // 0x3f8(0x4)
-	float                                                        Inner Half Height;                                 // 0x3fc(0x4)
-	float                                                        Weight;                                            // 0x400(0x4)
-	int                                                          Priority Layer;                                    // 0x404(0x4)
-	int                                                          Lighting Set;                                      // 0x408(0x4)
-	bool                                                         IsUnderwaterZone;                                  // 0x40c(0x1)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0x3d0(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0x3d8(0x8)
+	Class LightingZoneComponent*                                 None;                                              // 0x3e0(0x8)
+	Class SceneComponent*                                        None;                                              // 0x3e8(0x8)
+	float                                                        None;                                              // 0x3f0(0x4)
+	float                                                        None;                                              // 0x3f4(0x4)
+	float                                                        None;                                              // 0x3f8(0x4)
+	float                                                        None;                                              // 0x3fc(0x4)
+	float                                                        None;                                              // 0x400(0x4)
+	int                                                          None;                                              // 0x404(0x4)
+	int                                                          None;                                              // 0x408(0x4)
+	bool                                                         None;                                              // 0x40c(0x1)
 };
 
 

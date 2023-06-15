@@ -6,247 +6,247 @@
     "ClassSize": "0x120",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "CreatureType",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3d0"
       },
       {
-        "Name": "NumOfCreatures",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3d1"
       },
       {
-        "Name": "pad0x2_RANOV[0x2]",
+        "Name": "pad0x2_ZUNA7[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3d2"
       },
       {
-        "Name": "BoundsBias",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3d4"
       },
       {
-        "Name": "StaticMeshComponent",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "currMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "MaterialInstance",
+        "Name": "None",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
       {
-        "Name": "Seed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3f8"
       },
       {
-        "Name": "SwimSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3fc"
       },
       {
-        "Name": "circlingSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x400"
       },
       {
-        "Name": "CirclingDirection",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x404"
       },
       {
-        "Name": "pad0x3_68HIY[0x3]",
+        "Name": "pad0x3_BUAVI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x405"
       },
       {
-        "Name": "CirclingRadius",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x408"
       },
       {
-        "Name": "SwimDeformation",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40c"
       },
       {
-        "Name": "mud",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x410"
       },
       {
-        "Name": "shoalSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x414"
       },
       {
-        "Name": "ShoalingSpread",
+        "Name": "None",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "ShoalingHeight",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x420"
       },
       {
-        "Name": "fishSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x424"
       },
       {
-        "Name": "FishSpread",
+        "Name": "None",
         "Type": "Struct Vector2D",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "FishHeight",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x430"
       },
       {
-        "Name": "RandomSpread",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x434"
       },
       {
-        "Name": "HueVariance",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x438"
       },
       {
-        "Name": "smoothness",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x43c"
       },
       {
-        "Name": "SelectedCreatureType",
-        "Type": "TArray<Assetclass SelectedCreatureType>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x440"
       },
       {
-        "Name": "Fish_04",
-        "Type": "TArray<Assetclass Fish_04>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x450"
       },
       {
-        "Name": "Fish_05",
-        "Type": "TArray<Assetclass Fish_05>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x460"
       },
       {
-        "Name": "Size",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x470"
       },
       {
-        "Name": "SizeVariance",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x474"
       },
       {
-        "Name": "SimSpeed",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x478"
       },
       {
-        "Name": "BBox",
+        "Name": "None",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x47c"
       },
       {
-        "Name": "Fish_07",
-        "Type": "TArray<Assetclass Fish_07>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x488"
       },
       {
-        "Name": "DrawDistance",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_16BNG[0x4]",
+        "Name": "pad0x4_EQRFI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
       },
       {
-        "Name": "Clown_01",
-        "Type": "TArray<Assetclass Clown_01>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4a0"
       },
       {
-        "Name": "SizeCompensation",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x4_3EPGV[0x4]",
+        "Name": "pad0x4_NP9BU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4b4"
       },
       {
-        "Name": "Splashtail",
-        "Type": "TArray<Assetclass Splashtail>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
       {
-        "Name": "Pondie",
-        "Type": "TArray<Assetclass Pondie>",
+        "Name": "None",
+        "Type": "TArray<Assetclass None>",
         "Size": "0x10",
         "Offset": "0x4c8"
       },
       {
-        "Name": "FishDistribution",
+        "Name": "None",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x4d8"

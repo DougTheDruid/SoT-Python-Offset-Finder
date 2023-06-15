@@ -94,11 +94,11 @@ IpNetDriver:
     Offset: '0x478'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FBLG1[0x3]
+  - Name: pad0x3_FF3TB[0x3]
     Offset: '0x479'
     Size: '0x3'
     Type: char
-  - Name: pad0x4c_NOZ3S[0x4c]
+  - Name: pad0x4c_7HXCS[0x4c]
     Offset: '0x47c'
     Size: '0x4c'
     Type: char
@@ -138,7 +138,7 @@ LogoutCallbackProxy:
   Super: BlueprintAsyncActionBase
 OnlineBeacon:
   Attributes:
-  - Name: pad0x8_EGD70[0x8]
+  - Name: pad0x8_1S251[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -154,7 +154,7 @@ OnlineBeacon:
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class NetDriver*
-  - Name: pad0x10_L8QW2[0x10]
+  - Name: pad0x10_ZQNIZ[0x10]
     Offset: '0x3e0'
     Size: '0x10'
     Type: char
@@ -176,7 +176,7 @@ OnlineBeaconClient:
     Offset: '0x400'
     Size: '0x1'
     Type: byte
-  - Name: pad0x17_V4FYB[0x17]
+  - Name: pad0x17_WUIGS[0x17]
     Offset: '0x401'
     Size: '0x17'
     Type: char
@@ -190,7 +190,7 @@ OnlineBeaconHost:
     Offset: '0x3f0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_IVXI0[0x4]
+  - Name: pad0x4_QA8V5[0x4]
     Offset: '0x3f4'
     Size: '0x4'
     Type: char
@@ -198,7 +198,7 @@ OnlineBeaconHost:
     Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class OnlineBeaconClient*>
-  - Name: pad0xa0_45NBD[0xa0]
+  - Name: pad0xa0_HLPZA[0xa0]
     Offset: '0x408'
     Size: '0xa0'
     Type: char
@@ -232,7 +232,7 @@ OnlineBlueprintCallProxyBase:
   Super: Object
 OnlineSessionClient:
   Attributes:
-  - Name: pad0x138_PCB5K[0x138]
+  - Name: pad0x138_B79ZB[0x138]
     Offset: '0x28'
     Size: '0x138'
     Type: char
@@ -244,7 +244,7 @@ OnlineSessionClient:
     Offset: '0x161'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_UGQEN[0x6]
+  - Name: pad0x6_ZXZAV[0x6]
     Offset: '0x162'
     Size: '0x6'
     Type: char
@@ -254,7 +254,7 @@ OnlineSessionClient:
   Super: OnlineSession
 PartyBeaconClient:
   Attributes:
-  - Name: pad0x10_72QZH[0x10]
+  - Name: pad0x10_20YKZ[0x10]
     Offset: '0x418'
     Size: '0x10'
     Type: char
@@ -278,7 +278,7 @@ PartyBeaconClient:
     Offset: '0x46a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_C8KKE[0x5]
+  - Name: pad0x5_5LZBJ[0x5]
     Offset: '0x46b'
     Size: '0x5'
     Type: char
@@ -292,7 +292,7 @@ PartyBeaconHost:
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class PartyBeaconState*
-  - Name: pad0x28_OHVQI[0x28]
+  - Name: pad0x28_MIVVI[0x28]
     Offset: '0x3f8'
     Size: '0x28'
     Type: char
@@ -342,7 +342,7 @@ PartyBeaconState:
     Offset: '0x48'
     Size: '0x10'
     Type: TArray<struct Reservations>
-  - Name: pad0x10_3PF4S[0x10]
+  - Name: pad0x10_5SPPS[0x10]
     Offset: '0x58'
     Size: '0x10'
     Type: char

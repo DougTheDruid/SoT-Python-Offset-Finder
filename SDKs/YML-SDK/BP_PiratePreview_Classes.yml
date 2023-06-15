@@ -94,7 +94,7 @@ BP_PiratePreview_C:
     Offset: '0x8c0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: pad0x30_9D77Z[0x30]
+  - Name: pad0x30_M4CQB[0x30]
     Offset: '0x8c8'
     Size: '0x30'
     Type: char

@@ -20,7 +20,7 @@ class StatusResponseApplyPersistentStatus: public StatusResponse
 public:
 	Struct Status                                                StatusToApply;                                     // 0x30(0x18)
 	float                                                        DurationMultiplier;                                // 0x48(0x4)
-	char                                                         pad0x4_GTG7E[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_YW6F7[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -44,7 +44,7 @@ class StatusResponseHealthRegenerationPoolChange: public StatusResponse
 {
 public:
 	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
-	char                                                         pad0x4_0PGB7[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_MWJAW[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -57,9 +57,9 @@ public:
 	float                                                        NoiseRange;                                        // 0x40(0x4)
 	float                                                        NoiseLoudness;                                     // 0x44(0x4)
 	bool                                                         NoiseMultipleTicks;                                // 0x48(0x1)
-	char                                                         pad0x3_TATMJ[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_FO9L0[0x3];                                 // 0x49(0x3)
 	float                                                        NoiseTimerTick;                                    // 0x4c(0x4)
-	char                                                         pad0x20_GBXE4[0x20];                               // 0x50(0x20)
+	char                                                         pad0x20_VT8GX[0x20];                               // 0x50(0x20)
 };
 
 

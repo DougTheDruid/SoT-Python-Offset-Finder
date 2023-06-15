@@ -10,7 +10,7 @@ AchievementUpdatedEvent:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ODS0L[0x3]
+  - Name: pad0x3_6Z9HI[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -136,7 +136,7 @@ OnlineStoreCatalogItem:
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ARQ9V[0x7]
+  - Name: pad0x7_HAZWP[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char

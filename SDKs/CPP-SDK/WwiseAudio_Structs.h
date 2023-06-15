@@ -15,15 +15,6 @@ public:
 };
 
 
-// Size 0x18
-struct WwiseEventParam
-{
-public:
-	struct FName                                                 SourcePath;                                        // 0x8(0x8)
-	struct FName                                                 SourceObj;                                         // 0x10(0x8)
-};
-
-
 // Size 0x28
 struct MultiEmitterData
 {
@@ -32,126 +23,6 @@ public:
 	Class WwiseEvent*                                            PlayEvent;                                         // 0x8(0x8)
 	struct FName                                                 Name;                                              // 0x10(0x8)
 	Struct Vector                                                Offset;                                            // 0x18(0xc)
-};
-
-
-// Size 0x64
-struct WwiseAudioReverbPresets
-{
-public:
-	struct FName                                                 ShortEarlyReflectionPresetName;                    // 0x0(0x8)
-	struct FName                                                 LongEarlyReflectionPresetName;                     // 0x8(0x8)
-	struct FName                                                 SpaceSizeRTPCName;                                 // 0x10(0x8)
-	struct FName                                                 EnclosedRatioRTPCName;                             // 0x18(0x8)
-	struct FName                                                 MaterialThicknessRTPCName;                         // 0x20(0x8)
-	struct FName                                                 MaterialReflectivityRTPCName;                      // 0x28(0x8)
-	byte                                                         EnvironmentTraceChannel;                           // 0x30(0x1)
-	char                                                         pad0x3_W2M2T[0x3];                                 // 0x31(0x3)
-	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
-	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
-	Struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)
-};
-
-
-// Size 0x28
-struct ReverbPresetControllerSettings
-{
-public:
-	float                                                        HorizontalConeSegmentElevationAngle;               // 0xc(0x4)
-	float                                                        UpwardsConeAngle;                                  // 0x10(0x4)
-	float                                                        TraceVectorLength;                                 // 0x14(0x4)
-	float                                                        TimeToDiscardSample;                               // 0x18(0x4)
-	float                                                        DistanceToDiscardSample;                           // 0x1c(0x4)
-	float                                                        BiasTowardsVerticalSegment;                        // 0x20(0x4)
-};
-
-
-// Size 0xa0
-struct WwiseAudioGameStateSettings
-{
-public:
-	struct FName                                                 AudioGameStateGroupName;                           // 0x0(0x8)
-	struct FName                                                 AudioGameStateFrontend;                            // 0x8(0x8)
-	struct FName                                                 AudioGameStateLoading;                             // 0x10(0x8)
-	struct FName                                                 AudioGameStateIngame;                              // 0x18(0x8)
-	TArray<struct EventsToPlayOnLobbyStart>                      EventsToPlayOnLobbyStart;                          // 0x20(0x10)
-	TArray<struct EventsToPlayOnLobbyEnd>                        EventsToPlayOnLobbyEnd;                            // 0x30(0x10)
-	TArray<struct EventsToPlayOnEngageStart>                     EventsToPlayOnEngageStart;                         // 0x40(0x10)
-	TArray<struct EventsToPlayOnEngageEnd>                       EventsToPlayOnEngageEnd;                           // 0x50(0x10)
-	TArray<struct EventsToPlayOnLoadingStart>                    EventsToPlayOnLoadingStart;                        // 0x60(0x10)
-	TArray<struct EventsToPlayOnLoadingEnd>                      EventsToPlayOnLoadingEnd;                          // 0x70(0x10)
-	TArray<struct EventsToPlayOnFrontEndOrLoadingStart>          EventsToPlayOnFrontEndOrLoadingStart;              // 0x80(0x10)
-	TArray<struct EventsToPlayOnFrontEndOrLoadingEnd>            EventsToPlayOnFrontEndOrLoadingEnd;                // 0x90(0x10)
-};
-
-
-// Size 0x38
-struct WwiseBinkSettings
-{
-public:
-	Struct StringAssetReference                                  PlayEvent;                                         // 0x0(0x10)
-	Struct StringAssetReference                                  StopEvent;                                         // 0x10(0x10)
-	int                                                          PreBufferCount;                                    // 0x20(0x4)
-	char                                                         pad0x4_I4OZE[0x4];                                 // 0x24(0x4)
-	TArray<struct Mappings>                                      Mappings;                                          // 0x28(0x10)
-};
-
-
-// Size 0x18
-struct WwiseBinkTrackMappings
-{
-public:
-	byte                                                         mLanguage;                                         // 0x0(0x1)
-	char                                                         pad0x7_NS2E7[0x7];                                 // 0x1(0x7)
-	TArray<struct mChannels>                                     mChannels;                                         // 0x8(0x10)
-};
-
-
-// Size 0x8
-struct WwiseBinkTrackMapping
-{
-public:
-	byte                                                         mChannelMapping;                                   // 0x0(0x1)
-	bool                                                         mRequired;                                         // 0x1(0x1)
-	char                                                         pad0x2_FKEVH[0x2];                                 // 0x2(0x2)
-	float                                                        mVolumeDb;                                         // 0x4(0x4)
-};
-
-
-// Size 0x8
-struct WwiseIOPriorityMappingConfig
-{
-public:
-	int                                                          WwisePriority;                                     // 0x0(0x4)
-	byte                                                         AsyncIOPriority;                                   // 0x4(0x1)
-};
-
-
-// Size 0x18
-struct WwiseNetworkRelationship
-{
-public:
-	struct FName                                                 SwitchGroupName;                                   // 0x0(0x8)
-	struct FName                                                 RemotePlayerSwitchValue;                           // 0x8(0x8)
-	struct FName                                                 LocalPlayerSwitchValue;                            // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct WwisePlatformMappings
-{
-public:
-	Struct FString                                               DefaultWwisePlatform;                              // 0x0(0x10)
-	TArray<struct Mappings>                                      Mappings;                                          // 0x10(0x10)
-};
-
-
-// Size 0x20
-struct WwisePlatformMapping
-{
-public:
-	Struct FString                                               UnrealPlatform;                                    // 0x0(0x10)
-	Struct FString                                               WwisePlatform;                                     // 0x10(0x10)
 };
 
 
@@ -181,7 +52,7 @@ struct WwiseNativeEmitterPoolDensityParams
 {
 public:
 	bool                                                         PlayPoolDensityAudio;                              // 0x0(0x1)
-	char                                                         pad0x7_C0APO[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_H0IHM[0x7];                                 // 0x1(0x7)
 	Class WwiseEvent*                                            PoolDensityAudioPlayEvent;                         // 0x8(0x8)
 	Class WwiseEvent*                                            PoolDensityAudioStopEvent;                         // 0x10(0x8)
 	struct FName                                                 DensityRtpcName;                                   // 0x18(0x8)

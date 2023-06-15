@@ -17,7 +17,7 @@ public:
 	float                                                        LeftVeeringDistance;                               // 0x10(0x4)
 	float                                                        RightVeeringDistance;                              // 0x14(0x4)
 	Struct PlayerStat                                            StatToFireForRouteChange;                          // 0x18(0x4)
-	char                                                         pad0x4_1TN1V[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_E8PZV[0x4];                                 // 0x1c(0x4)
 	Class ParticleSystem*                                        PlayerSplashingVFXOverride;                        // 0x20(0x8)
 };
 
@@ -31,13 +31,40 @@ public:
 	float                                                        MinSpeed;                                          // 0x8(0x4)
 	float                                                        AccelerationMultiplier;                            // 0xc(0x4)
 	float                                                        DecelerationMultiplier;                            // 0x10(0x4)
-	char                                                         pad0x4_6XA5S[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_JKWJF[0x4];                                 // 0x14(0x4)
 	Struct RuntimeVectorCurve                                    SwingAngleControlDegrees;                          // 0x18(0x170)
 	Struct RuntimeVectorCurve                                    SwingSpeedControlRPM;                              // 0x188(0x170)
-	float                                                        PendulumLength;                                    // 0x2f8(0x4)
-	float                                                        PlayerVerticalOffset;                              // 0x2fc(0x4)
+	Struct Vector2D                                              WindResistanceMinMaxAngleDegrees;                  // 0x2f8(0x8)
 	Struct Vector2D                                              FOVMinMaxSpeed;                                    // 0x300(0x8)
 	Struct Vector2D                                              FOVMinMaxAngleDegrees;                             // 0x308(0x8)
+};
+
+
+// Size 0x1c
+struct OnUpdateZiplineActionStateEvent
+{
+public:
+};
+
+
+// Size 0x10
+struct OnEndZiplineActionStateEvent
+{
+public:
+	Class WwiseEvent*                                            ZiplineEnd;                                        // 0x0(0x8)
+	Class WwiseEvent*                                            ZiplineEndLoop;                                    // 0x8(0x8)
+};
+
+
+// Size 0x28
+struct OnStartZiplineActionStateEvent
+{
+public:
+	Class WwiseEvent*                                            ZiplineStart;                                      // 0x0(0x8)
+	Class WwiseEvent*                                            ZiplineAdditiveOneShot;                            // 0x8(0x8)
+	Class WwiseEvent*                                            ZiplineLoopStart;                                  // 0x10(0x8)
+	Class ParticleSystem*                                        ZiplineWindVFX;                                    // 0x18(0x8)
+	Class ParticleSystem*                                        ZiplineTrailVFX;                                   // 0x20(0x8)
 };
 
 
@@ -45,6 +72,25 @@ public:
 struct OnExitedRideEvent
 {
 public:
+};
+
+
+// Size 0x58
+struct RideTransitionActionStateConstructionInfo
+{
+public:
+	Class Ride*                                                  Ride;                                              // 0x30(0x8)
+	byte                                                         Direction;                                         // 0x38(0x1)
+	char                                                         pad0x3_S12BV[0x3];                                 // 0x39(0x3)
+	float                                                        Offset;                                            // 0x3c(0x4)
+};
+
+
+// Size 0x14
+struct RideTransitionActionStateParams
+{
+public:
+	float                                                        Duration;                                          // 0x10(0x4)
 };
 
 
@@ -62,7 +108,7 @@ struct WaterSlideActionStateParams
 public:
 	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
 	bool                                                         ForceStash;                                        // 0x4(0x1)
-	char                                                         pad0x3_NO21L[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_D3DDM[0x3];                                 // 0x5(0x3)
 	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x8(0x1c)
 };
 

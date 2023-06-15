@@ -2,59 +2,63 @@
 # https://github.com/DougTheDruid
 BP_ItemPreview_C:
   Attributes:
-  - Name: UberGraphFrame
+  - Name: pad0x5a8_2IK7Q[0x5a8]
+    Offset: '0x0'
+    Size: '0x5a8'
+    Type: char
+  - Name: None
     Offset: '0x5a8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: Camera_Dog
+  - Name: None
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Far
+  - Name: None
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Mid
+  - Name: None
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: Camera_Near
+  - Name: None
     Offset: '0x5c8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: IconBillboard
+  - Name: None
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class BillboardComponent*
-  - Name: Camera_Default
+  - Name: None
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: ChildActor
+  - Name: None
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: HiddenDftMesh
+  - Name: None
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: ItemMesh
+  - Name: None
     Offset: '0x5f0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: Camera
+  - Name: None
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class CameraComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x600'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: pad0x30_YYWDJ[0x30]
+  - Name: pad0x3f50e061_75CC6[0x3f50e061]
     Offset: '0x608'
-    Size: '0x30'
+    Size: '0x3f50e061'
     Type: char
-  ClassSize: '0x90'
-  FullSize: '0x638'
-  InheritedSize: '0x5a8'
-  Super: ItemPreviewActor
+  ClassSize: '0x3f50e669'
+  FullSize: '0x3f50e669'
+  InheritedSize: '0x0'
+  Super: None

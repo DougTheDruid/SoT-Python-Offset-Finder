@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_5SN7O[0x4]",
+        "Name": "pad0x4_YHMOR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -208,7 +208,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_3F1BF[0x3]",
+        "Name": "pad0x3_LP4O2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -254,7 +254,7 @@
         "Offset": "0x21"
       },
       {
-        "Name": "pad0x6_L990X[0x6]",
+        "Name": "pad0x6_AT4Z0[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x22"
@@ -526,6 +526,29 @@
       }
     ]
   },
+  "InteractionOptionSelectedWithQueryableStateNonUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DataID",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InstigatorCrewID",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "InteractingPlayer",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "QuestVariableTaleResourceHandle": {
     "ClassSize": "0x30",
     "Attributes": []
@@ -563,6 +586,113 @@
   "PlaySequencerAutomationEvent": {
     "ClassSize": "0x18",
     "Attributes": []
+  },
+  "MontageAnimationCommandBase": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MyTarget",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MyMontage",
+        "Type": "Class AnimMontage*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "JumpToMontageSectionCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "SectionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "PlayMontageAnimationCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PlayRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Position",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "SetNextMontageSectionCommand": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "FromSectionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ToSectionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "StopMontageAnimationCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "BlendOutTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "SetDialogueInteractionEnabledClientCommand": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DialogueComponentObject",
+        "Type": "Class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ShouldBeEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SetDialogueInteractionPromptClientCommand": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "DialogueComponent",
+        "Type": "Class NPCDialogComponent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Prompt",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      }
+    ]
   },
   "EventModalInteractionStateChanged": {
     "ClassSize": "0x1",

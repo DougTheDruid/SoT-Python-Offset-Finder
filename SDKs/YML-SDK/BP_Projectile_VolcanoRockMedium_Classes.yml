@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_Projectile_VolcanoRockMedium_C:
   Attributes:
-  - Name: RotatingAudioSource
+  - Name: None
     Offset: '0x658'
     Size: '0x8'
     Type: Class RotatingAudioSourceComponent*
-  - Name: RockMesh
+  - Name: None
     Offset: '0x660'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: Collision
+  - Name: None
     Offset: '0x668'
     Size: '0x8'
     Type: Class SphereComponent*

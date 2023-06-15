@@ -6,7 +6,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_1MXXG[0x8]",
+        "Name": "pad0x8_3LJMW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -66,7 +66,7 @@
         "Offset": "0xfc"
       },
       {
-        "Name": "pad0x3_I598J[0x3]",
+        "Name": "pad0x3_QMMYI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xfd"
@@ -78,7 +78,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x4_ZBJKH[0x4]",
+        "Name": "pad0x4_KZQ0I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x104"
@@ -102,7 +102,7 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x7_7ENGQ[0x7]",
+        "Name": "pad0x7_OI9AC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x121"
@@ -129,7 +129,7 @@
         "Offset": "0x5f0"
       },
       {
-        "Name": "pad0xc8_TGK33[0xc8]",
+        "Name": "pad0xc8_URKPK[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x5f8"
@@ -162,7 +162,7 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x4_8I83U[0x4]",
+        "Name": "pad0x4_28BMA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -216,7 +216,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x10_DTHHU[0x10]",
+        "Name": "pad0x10_9Y3ZK[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -228,7 +228,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x28_5RZ3B[0x28]",
+        "Name": "pad0x28_9BMOB[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x48"
@@ -249,7 +249,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_XY5H7[0x8]",
+        "Name": "pad0x8_BTH6A[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -290,7 +290,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_KGFFO[0x8]",
+        "Name": "pad0x8_E6MTT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x5e0"
@@ -302,7 +302,7 @@
         "Offset": "0x5e8"
       },
       {
-        "Name": "pad0xa0_G0XAZ[0xa0]",
+        "Name": "pad0xa0_GF972[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x5f0"
@@ -323,7 +323,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_R0XQT[0x8]",
+        "Name": "pad0x8_UNHMF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -351,6 +351,39 @@
         "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x3e8"
+      }
+    ]
+  },
+  "PlayerInteractionTrackerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PlayerInteractionTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x8_5Q89E[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "InteractedPlayers",
+        "Type": "TArray<struct InteractedPlayers>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x10_3MYV0[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xe0"
       }
     ]
   },

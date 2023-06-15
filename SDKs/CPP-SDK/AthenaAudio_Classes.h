@@ -6,12 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AthenaAudioConfig: public DataAsset
+// Size 0xb0 (Full Size[0x108] - InheritedSize[0x58]
+class AthenaAudioConfig: public WwiseCoreAssets
 {
 public:
-	Class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x28(0x8)
-	Class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x30(0x8)
+	Class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x58(0x8)
+	Class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x60(0x8)
+	Struct AthenaAudioGameStateSettings                          GameStateSettings;                                 // 0x68(0x20)
+	Struct AthenaAudioBootflowEvents                             BootflowEvents;                                    // 0x88(0x80)
 };
 
 
@@ -31,13 +33,13 @@ public:
 	float                                                        InsideRtpcUpdateDistance;                          // 0x2e4(0x4)
 	float                                                        OutsideRtpcUpdateDistance;                         // 0x2e8(0x4)
 	bool                                                         TrackAttachmentToActor;                            // 0x2ec(0x1)
-	char                                                         pad0x3_ZDBI6[0x3];                                 // 0x2ed(0x3)
+	char                                                         pad0x3_KR7H8[0x3];                                 // 0x2ed(0x3)
 	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2f0(0x8)
 	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2f8(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x300(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x308(0x8)
 	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x310(0x8)
-	char                                                         pad0x28_HTARX[0x28];                               // 0x318(0x28)
+	char                                                         pad0x28_1SYDJ[0x28];                               // 0x318(0x28)
 };
 
 
@@ -62,7 +64,7 @@ public:
 	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
 	Class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
 	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x630(0x8)
-	char                                                         pad0x18_JCEDU[0x18];                               // 0x638(0x18)
+	char                                                         pad0x18_JG1JE[0x18];                               // 0x638(0x18)
 };
 
 
@@ -79,7 +81,7 @@ class MultiEmitter: public Actor
 {
 public:
 	Class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
-	char                                                         pad0x8_6CW6G[0x8];                                 // 0x3d0(0x8)
+	char                                                         pad0x8_B7063[0x8];                                 // 0x3d0(0x8)
 };
 
 
@@ -88,7 +90,7 @@ class StoryDrivenAudioPortalDataAsset: public DataAsset
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_0AA3X[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_9BMKU[0x4];                                 // 0x34(0x4)
 	TArray<struct StoryResponses>                                StoryResponses;                                    // 0x38(0x10)
 	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
 };
@@ -104,9 +106,9 @@ public:
 	float                                                        TriggerEnterRadiusInCms;                           // 0x308(0x4)
 	float                                                        TriggerExitRadiusInCms;                            // 0x30c(0x4)
 	Struct Vector                                                EmitterOffset;                                     // 0x310(0xc)
-	char                                                         pad0x14_6S65F[0x14];                               // 0x31c(0x14)
+	char                                                         pad0x14_SZRL8[0x14];                               // 0x31c(0x14)
 	Class Character*                                             LocalPlayer;                                       // 0x330(0x8)
-	char                                                         pad0x38_PS3TN[0x38];                               // 0x338(0x38)
+	char                                                         pad0x38_030JN[0x38];                               // 0x338(0x38)
 };
 
 

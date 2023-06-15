@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Ritual2_R_Pendant_C:
   Attributes:
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*

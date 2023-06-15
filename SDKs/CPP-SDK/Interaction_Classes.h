@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class InteractableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_1MXXG[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_3LJMW[0x8];                                 // 0xc8(0x8)
 	struct FName                                                 FeatureFlag;                                       // 0xd0(0x8)
 	Struct Vector                                                BoxExtent;                                         // 0xd8(0xc)
 	Struct Vector                                                BoxOrigin;                                         // 0xe4(0xc)
@@ -20,13 +20,13 @@ public:
 	bool                                                         RequiresFacingFront;                               // 0xfc(0x1)
 	bool                                                         RequiresNotAirborne;                               // 0xfc(0x1)
 	bool                                                         RequiresNotSwimming;                               // 0xfc(0x1)
-	char                                                         pad0x3_I598J[0x3];                                 // 0xfd(0x3)
+	char                                                         pad0x3_QMMYI[0x3];                                 // 0xfd(0x3)
 	float                                                        InteractionRadius;                                 // 0x100(0x4)
-	char                                                         pad0x4_ZBJKH[0x4];                                 // 0x104(0x4)
+	char                                                         pad0x4_KZQ0I[0x4];                                 // 0x104(0x4)
 	TArray<class InteractionPrerequisiteBase*>                   InteractionPrerequisites;                          // 0x108(0x10)
 	Class InteractableArea*                                      InteractableArea;                                  // 0x118(0x8)
 	byte                                                         CurrentInteractionState;                           // 0x120(0x1)
-	char                                                         pad0x7_7ENGQ[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x7_OI9AC[0x7];                                 // 0x121(0x7)
 };
 
 
@@ -42,7 +42,7 @@ class CharacterInteractionComponent: public BoxComponent
 {
 public:
 	Class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x5f0(0x8)
-	char                                                         pad0xc8_TGK33[0xc8];                               // 0x5f8(0xc8)
+	char                                                         pad0xc8_URKPK[0xc8];                               // 0x5f8(0xc8)
 };
 
 
@@ -59,7 +59,7 @@ class InteractableArea: public Object
 public:
 	Struct BoxSphereBounds                                       Bounds;                                            // 0x28(0x1c)
 	struct FName                                                 Name;                                              // 0x44(0x8)
-	char                                                         pad0x4_8I83U[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_28BMA[0x4];                                 // 0x4c(0x4)
 	Class Object*                                                Interactable;                                      // 0x50(0x8)
 	Class Actor*                                                 Parent;                                            // 0x58(0x8)
 };
@@ -97,9 +97,9 @@ public:
 class InteractableService: public Object
 {
 public:
-	char                                                         pad0x10_DTHHU[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_9Y3ZK[0x10];                               // 0x28(0x10)
 	TArray<class InteractableArea*>                              InteractableAreas;                                 // 0x38(0x10)
-	char                                                         pad0x28_5RZ3B[0x28];                               // 0x48(0x28)
+	char                                                         pad0x28_9BMOB[0x28];                               // 0x48(0x28)
 };
 
 
@@ -114,7 +114,7 @@ public:
 class InteractionPreventionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_XY5H7[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_BTH6A[0x8];                                 // 0xc8(0x8)
 	TArray<class Actor*>                                         ActorsToPreventInteractingWith;                    // 0xd0(0x10)
 };
 
@@ -144,9 +144,9 @@ public:
 class MockActorWithCharacterInteractionComponent: public Character
 {
 public:
-	char                                                         pad0x8_KGFFO[0x8];                                 // 0x5e0(0x8)
+	char                                                         pad0x8_E6MTT[0x8];                                 // 0x5e0(0x8)
 	Class CharacterInteractionComponent*                         CharacterInteractionComponent;                     // 0x5e8(0x8)
-	char                                                         pad0xa0_G0XAZ[0xa0];                               // 0x5f0(0xa0)
+	char                                                         pad0xa0_GF972[0xa0];                               // 0x5f0(0xa0)
 };
 
 
@@ -161,11 +161,28 @@ public:
 class MockInteractorActor: public Actor
 {
 public:
-	char                                                         pad0x8_R0XQT[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_UNHMF[0x8];                                 // 0x3c8(0x8)
 	Class Object*                                                FocusedInteractable;                               // 0x3d0(0x8)
 	Class Object*                                                InteractedObject;                                  // 0x3d8(0x8)
 	class                                                        InteractNotificationType;                          // 0x3e0(0x8)
 	TArray<class Class*>                                         ValidInteractNotificationIds;                      // 0x3e8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PlayerInteractionTrackerInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class PlayerInteractionTrackerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_5Q89E[0x8];                                 // 0xc8(0x8)
+	TArray<struct InteractedPlayers>                             InteractedPlayers;                                 // 0xd0(0x10)
+	char                                                         pad0x10_3MYV0[0x10];                               // 0xe0(0x10)
 };
 
 

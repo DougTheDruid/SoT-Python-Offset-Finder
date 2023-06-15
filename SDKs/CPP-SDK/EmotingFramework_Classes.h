@@ -17,12 +17,12 @@ public:
 class EmoteCard: public Actor
 {
 public:
-	char                                                         pad0x8_QPOW3[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_1K1ZW[0x8];                                 // 0x3c8(0x8)
 	Class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3d0(0x8)
 	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d8(0x8)
 	struct FName                                                 RandomCardParameterName;                           // 0x3e0(0x8)
 	Struct Int32Range                                            RandomCardParameterRange;                          // 0x3e8(0x10)
-	char                                                         pad0x120_UJ64D[0x120];                             // 0x3f8(0x120)
+	char                                                         pad0x120_4PZK6[0x120];                             // 0x3f8(0x120)
 };
 
 
@@ -53,7 +53,7 @@ class EmotePropDiceData: public EmotePropData
 {
 public:
 	byte                                                         DiceType;                                          // 0x28(0x1)
-	char                                                         pad0x7_OY8PT[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_TCU0I[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -91,10 +91,10 @@ public:
 class EmoteRandomObject: public Actor
 {
 public:
-	char                                                         pad0x8_16AQA[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_X88FQ[0x8];                                 // 0x3c8(0x8)
 	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d0(0x8)
 	Class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3d8(0x8)
-	char                                                         pad0x128_D20LK[0x128];                             // 0x3e0(0x128)
+	char                                                         pad0x128_FDNZ2[0x128];                             // 0x3e0(0x128)
 };
 
 
@@ -103,7 +103,7 @@ class EmoteSettings: public DeveloperSettings
 {
 public:
 	int                                                          NumPages;                                          // 0x38(0x4)
-	char                                                         pad0x4_WVU25[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_I52SK[0x4];                                 // 0x3c(0x4)
 };
 
 

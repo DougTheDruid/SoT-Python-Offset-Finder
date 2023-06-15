@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class LightPropagationVolumeBlendable: public Object
 {
 public:
-	char                                                         pad0x8_A44CM[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_23J39[0x8];                                 // 0x28(0x8)
 	Struct LightPropagationVolumeSettings                        Settings;                                          // 0x30(0x70)
 	float                                                        BlendWeight;                                       // 0xa0(0x4)
-	char                                                         pad0xc_HGDYZ[0xc];                                 // 0xa4(0xc)
+	char                                                         pad0xc_L77ER[0xc];                                 // 0xa4(0xc)
 };
 
 

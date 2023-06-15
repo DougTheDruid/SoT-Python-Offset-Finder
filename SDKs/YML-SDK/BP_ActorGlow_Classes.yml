@@ -18,7 +18,7 @@ BP_ActorGlow_C:
     Offset: '0x3f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JZ97V[0x4]
+  - Name: pad0x4_6BMPU[0x4]
     Offset: '0x3f4'
     Size: '0x4'
     Type: char

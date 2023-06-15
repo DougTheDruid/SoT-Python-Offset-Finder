@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "GroupedInteractableArea",
+        "Name": "None",
         "Type": "Class GroupedInteractableAreaComponent*",
         "Size": "0x8",
         "Offset": "0xda8"
       },
       {
-        "Name": "Interactable",
+        "Name": "None",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0xdb0"
       },
       {
-        "Name": "Collision",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xdb8"

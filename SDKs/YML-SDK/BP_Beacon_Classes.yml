@@ -2,54 +2,46 @@
 # https://github.com/DougTheDruid
 BP_Beacon_C:
   Attributes:
-  - Name: PointLight3
+  - Name: None
     Offset: '0x7f8'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight2
+  - Name: None
     Offset: '0x800'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: PointLight1
+  - Name: None
     Offset: '0x808'
     Size: '0x8'
     Type: Class PointLightComponent*
-  - Name: ParticleSystem6
+  - Name: None
     Offset: '0x810'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: vfx_candle_01_smoke_tavern
+  - Name: None
     Offset: '0x818'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem5
+  - Name: None
     Offset: '0x820'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem4
+  - Name: None
     Offset: '0x828'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem3
+  - Name: None
     Offset: '0x830'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem2
+  - Name: None
     Offset: '0x838'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem1
+  - Name: pad0x18_505BS[0x18]
     Offset: '0x840'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: ParticleSystem
-    Offset: '0x848'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: vfx_candle_01_tavern
-    Offset: '0x850'
-    Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Size: '0x18'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x858'
   InheritedSize: '0x7f8'

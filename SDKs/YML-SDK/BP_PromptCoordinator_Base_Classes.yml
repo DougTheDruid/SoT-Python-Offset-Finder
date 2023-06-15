@@ -6,19 +6,19 @@ BP_PromptCoordinator_Base_C:
     Offset: '0x118'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x6c_DLW7R[0x6c]
+  - Name: pad0x10d_83CQR[0x10d]
     Offset: '0x120'
-    Size: '0x6c'
+    Size: '0x10d'
     Type: char
   - Name: IsCompleted
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3GFZI[0x7]
+  - Name: pad0x7_A9G5A[0x7]
     Offset: '0x121'
     Size: '0x7'
     Type: char
-  - Name: pad0x10_UWMY4[0x10]
+  - Name: pad0x10_P9NXC[0x10]
     Offset: '0x128'
     Size: '0x10'
     Type: char

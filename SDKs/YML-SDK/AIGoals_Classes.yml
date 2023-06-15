@@ -6,6 +6,46 @@ AlwaysEvaluatesTrueAIGoal:
   FullSize: '0x38'
   InheritedSize: '0x38'
   Super: AIGoal
+BTService_SetBestActionSpotNearTarget:
+  Attributes:
+  - Name: TargetKey
+    Offset: '0x70'
+    Size: '0x28'
+    Type: Struct BlackboardKeySelector
+  - Name: BestActionSpotKey
+    Offset: '0x98'
+    Size: '0x28'
+    Type: Struct BlackboardKeySelector
+  - Name: pad0x18_S1EH1[0x18]
+    Offset: '0xc0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x68'
+  FullSize: '0xd8'
+  InheritedSize: '0x70'
+  Super: BTService
+WhileActionSpotAvailableForPatrolAIGoal:
+  Attributes:
+  - Name: MinTimeToChangePatrolSpot
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: MaxTimeToChangePatrolSpot
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: PatrolActivityType
+    Offset: '0x40'
+    Size: '0x8'
+    Type: class
+  - Name: pad0x30_VUY9D[0x30]
+    Offset: '0x48'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x40'
+  FullSize: '0x78'
+  InheritedSize: '0x38'
+  Super: AIGoal
 WhileBlackboardKeySetAIGoal:
   Attributes:
   - Name: BlackboardKey
@@ -14,5 +54,53 @@ WhileBlackboardKeySetAIGoal:
     Type: struct FName
   ClassSize: '0x8'
   FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AIGoal
+WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal:
+  Attributes:
+  - Name: InnerRadius
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: OuterRadius
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: IgnoredMovementModes
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Byte IgnoredMovementModes>
+  - Name: TargetPlayerPawn
+    Offset: '0x50'
+    Size: '0x8'
+    Type: Class Pawn*
+  ClassSize: '0x20'
+  FullSize: '0x58'
+  InheritedSize: '0x38'
+  Super: AIGoal
+WhilePlayerWithinAreaAIGoal:
+  Attributes:
+  - Name: EnterAreaTriggerDistance
+    Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: ExitAreaTriggerDistance
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: IgnoredMovementModes
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<Byte IgnoredMovementModes>
+  - Name: WhileActiveActivityType
+    Offset: '0x50'
+    Size: '0x8'
+    Type: class
+  - Name: TargetPlayerPawn
+    Offset: '0x58'
+    Size: '0x8'
+    Type: Class Pawn*
+  ClassSize: '0x28'
+  FullSize: '0x60'
   InheritedSize: '0x38'
   Super: AIGoal

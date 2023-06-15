@@ -11,7 +11,7 @@ struct TaleQuestDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_5SN7O[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_YHMOR[0x4];                                 // 0x4(0x4)
 	Struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
 	int                                                          NumToDeliver;                                      // 0x30(0x4)
 	int                                                          NumToAllocate;                                     // 0x34(0x4)
@@ -100,7 +100,7 @@ public:
 	Struct Guid                                                  TaleId;                                            // 0x0(0x10)
 	class                                                        DataID;                                            // 0x10(0x8)
 	bool                                                         DataBool;                                          // 0x18(0x1)
-	char                                                         pad0x3_3F1BF[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_LP4O2[0x3];                                 // 0x19(0x3)
 	int                                                          DataInt;                                           // 0x1c(0x4)
 };
 
@@ -120,7 +120,7 @@ public:
 	Struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
 	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
 	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
-	char                                                         pad0x6_L990X[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_AT4Z0[0x6];                                 // 0x22(0x6)
 	Struct FText                                                 FailureMessage;                                    // 0x28(0x38)
 };
 
@@ -350,6 +350,16 @@ public:
 };
 
 
+// Size 0x20
+struct InteractionOptionSelectedWithQueryableStateNonUI
+{
+public:
+	class                                                        DataID;                                            // 0x0(0x8)
+	Struct Guid                                                  InstigatorCrewID;                                  // 0x8(0x10)
+	Class Actor*                                                 InteractingPlayer;                                 // 0x18(0x8)
+};
+
+
 // Size 0x30
 struct QuestVariableTaleResourceHandle
 {
@@ -391,6 +401,67 @@ public:
 struct PlaySequencerAutomationEvent
 {
 public:
+};
+
+
+// Size 0x18
+struct MontageAnimationCommandBase
+{
+public:
+	Class Actor*                                                 MyTarget;                                          // 0x8(0x8)
+	Class AnimMontage*                                           MyMontage;                                         // 0x10(0x8)
+};
+
+
+// Size 0x20
+struct JumpToMontageSectionCommand
+{
+public:
+	struct FName                                                 SectionName;                                       // 0x18(0x8)
+};
+
+
+// Size 0x20
+struct PlayMontageAnimationCommand
+{
+public:
+	float                                                        PlayRate;                                          // 0x18(0x4)
+	float                                                        Position;                                          // 0x1c(0x4)
+};
+
+
+// Size 0x28
+struct SetNextMontageSectionCommand
+{
+public:
+	struct FName                                                 FromSectionName;                                   // 0x18(0x8)
+	struct FName                                                 ToSectionName;                                     // 0x20(0x8)
+};
+
+
+// Size 0x20
+struct StopMontageAnimationCommand
+{
+public:
+	float                                                        BlendOutTime;                                      // 0x18(0x4)
+};
+
+
+// Size 0x18
+struct SetDialogueInteractionEnabledClientCommand
+{
+public:
+	Class Object*                                                DialogueComponentObject;                           // 0x8(0x8)
+	bool                                                         ShouldBeEnabled;                                   // 0x10(0x1)
+};
+
+
+// Size 0x48
+struct SetDialogueInteractionPromptClientCommand
+{
+public:
+	Class NPCDialogComponent*                                    DialogueComponent;                                 // 0x8(0x8)
+	Struct FText                                                 Prompt;                                            // 0x10(0x38)
 };
 
 

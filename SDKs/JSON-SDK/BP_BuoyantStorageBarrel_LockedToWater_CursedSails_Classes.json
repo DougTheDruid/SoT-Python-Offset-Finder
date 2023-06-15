@@ -1,33 +1,33 @@
 {
   "BP_BuoyantStorageBarrel_LockedToWater_CursedSails_C": {
     "Super": "BuoyantStorageContainer",
-    "FullSize": "0x748",
-    "InheritedSize": "0x728",
+    "FullSize": "0x750",
+    "InheritedSize": "0x730",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Sphere",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x728"
+        "Offset": "0x730"
       },
       {
         "Name": "Replenishable",
         "Type": "Class ReplenishableComponent*",
         "Size": "0x8",
-        "Offset": "0x730"
+        "Offset": "0x738"
       },
       {
         "Name": "TelemetrySubject",
         "Type": "Class TelemetrySubjectComponent*",
         "Size": "0x8",
-        "Offset": "0x738"
+        "Offset": "0x740"
       },
       {
         "Name": "StorageContainer",
         "Type": "Class StorageContainerComponent*",
         "Size": "0x8",
-        "Offset": "0x740"
+        "Offset": "0x748"
       }
     ]
   },

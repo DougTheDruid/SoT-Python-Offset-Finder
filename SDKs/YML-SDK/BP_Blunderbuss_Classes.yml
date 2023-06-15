@@ -3,34 +3,34 @@
 BP_Blunderbuss_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0xaf0'
+    Offset: '0xb20'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   - Name: PostProcess
-    Offset: '0xaf8'
+    Offset: '0xb28'
     Size: '0x8'
     Type: Class PostProcessComponent*
   - Name: sfx relationship
-    Offset: '0xb00'
+    Offset: '0xb30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FAK9F[0x7]
-    Offset: '0xb01'
+  - Name: pad0x7_6LXZZ[0x7]
+    Offset: '0xb31'
     Size: '0x7'
     Type: char
   - Name: DynamicMaterial
-    Offset: '0xb08'
+    Offset: '0xb38'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
   - Name: FiringVFX3rdPerson
-    Offset: '0xb10'
+    Offset: '0xb40'
     Size: '0x8'
     Type: Class Object*
   - Name: Blunderbuss Firing sfx 3rd person
-    Offset: '0xb18'
+    Offset: '0xb48'
     Size: '0x8'
     Type: Class WwiseEvent*
   ClassSize: '0x30'
-  FullSize: '0xb20'
-  InheritedSize: '0xaf0'
+  FullSize: '0xb50'
+  InheritedSize: '0xb20'
   Super: ProjectileWeapon

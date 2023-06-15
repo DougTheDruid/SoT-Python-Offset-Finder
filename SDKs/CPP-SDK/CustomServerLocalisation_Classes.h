@@ -17,9 +17,9 @@ public:
 class CustomServerLocalisationService: public Actor
 {
 public:
-	char                                                         pad0x8_EGSLC[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_9PPQA[0x8];                                 // 0x3c8(0x8)
 	TArray<struct LocalisationData>                              LocalisationData;                                  // 0x3d0(0x10)
-	char                                                         pad0x80_8SPQI[0x80];                               // 0x3e0(0x80)
+	char                                                         pad0x80_0M0WE[0x80];                               // 0x3e0(0x80)
 };
 
 

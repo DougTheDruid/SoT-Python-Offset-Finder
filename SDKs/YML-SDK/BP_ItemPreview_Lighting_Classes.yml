@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_ItemPreview_Lighting_C:
   Attributes:
-  - Name: ExponentialHeightFog
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class ExponentialHeightFogComponent*
-  - Name: SkyLight
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SkyLightComponent*
-  - Name: SpotLight2
+  - Name: None
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: SpotLight1
+  - Name: None
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: SpotLight
+  - Name: None
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class SpotLightComponent*
-  - Name: PostProcess
+  - Name: None
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: pad0x20_4M35C[0x20]
+  - Name: pad0x20_YPAE3[0x20]
     Offset: '0x400'
     Size: '0x20'
     Type: char

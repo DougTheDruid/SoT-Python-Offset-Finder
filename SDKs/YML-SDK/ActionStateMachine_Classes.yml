@@ -74,7 +74,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2FC37[0x7]
+  - Name: pad0x7_3DDPV[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -90,7 +90,7 @@ NullActionStateId:
   Super: ActionStateId
 SelfInitialisingActionStateMachineComponent:
   Attributes:
-  - Name: pad0x8_M47DP[0x8]
+  - Name: pad0x8_P9XW0[0x8]
     Offset: '0x858'
     Size: '0x8'
     Type: char
@@ -106,7 +106,7 @@ SelfInitialisingActionStateMachineComponent:
     Offset: '0x870'
     Size: '0x8'
     Type: class
-  - Name: pad0x28_9WO37[0x28]
+  - Name: pad0x28_DBTNE[0x28]
     Offset: '0x878'
     Size: '0x28'
     Type: char

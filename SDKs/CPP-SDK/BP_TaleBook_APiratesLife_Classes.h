@@ -6,17 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x38 (Full Size[0x7f8] - InheritedSize[0x7c0]
+// Size 0x38 (Full Size[0x820] - InheritedSize[0x7e8]
 class BP_TaleBook_APiratesLife_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x7c0(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7c8(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7d0(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7d8(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7e0(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7e8(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f0(0x8)
+	Class ArrowComponent*                                        None;                                              // 0x7e8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x7f0(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x7f8(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x800(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x808(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x810(0x8)
+	Class ChildActorComponent*                                   None;                                              // 0x818(0x8)
 };
 
 

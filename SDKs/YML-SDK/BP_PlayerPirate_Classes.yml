@@ -78,7 +78,7 @@ BP_PlayerPirate_C:
     Offset: '0x1fb0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_EB54Q[0x4]
+  - Name: pad0x4_ZXK4D[0x4]
     Offset: '0x1fb4'
     Size: '0x4'
     Type: char
@@ -102,7 +102,7 @@ BP_PlayerPirate_C:
     Offset: '0x1fe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_F3HMU[0x3]
+  - Name: pad0x3_Q4B63[0x3]
     Offset: '0x1fe9'
     Size: '0x3'
     Type: char

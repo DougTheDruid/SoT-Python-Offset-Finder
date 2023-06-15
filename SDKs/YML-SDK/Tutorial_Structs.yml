@@ -9,23 +9,19 @@ BeachNPCSpawnFlowNetworkEvent:
   ClassSize: '0x18'
 ContextualTutorialPromptDesc:
   Attributes:
-  - Name: PromptActorClass
-    Offset: '0x0'
-    Size: '0x8'
-    Type: class
   - Name: AccessKey
-    Offset: '0x8'
+    Offset: '0x20'
     Size: '0x8'
     Type: class
   - Name: FeatureName
-    Offset: '0x10'
+    Offset: '0x28'
     Size: '0x8'
     Type: struct FName
   - Name: MustBeUnderCount
-    Offset: '0x18'
+    Offset: '0x30'
     Size: '0x4'
     Type: int
-  ClassSize: '0x20'
+  ClassSize: '0x38'
 EventTutorialTypeDecided:
   Attributes:
   - Name: TutorialType

@@ -1,69 +1,69 @@
 {
   "BP_LargeShip_QuestTable_C": {
     "Super": "VoyageTable",
-    "FullSize": "0x918",
-    "InheritedSize": "0x8c8",
+    "FullSize": "0x940",
+    "InheritedSize": "0x8f0",
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "WarMap",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x8c8"
+        "Offset": "0x8f0"
       },
       {
         "Name": "FactionHourglass",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x8d0"
+        "Offset": "0x8f8"
       },
       {
         "Name": "CancelAdventure",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x8d8"
+        "Offset": "0x900"
       },
       {
         "Name": "PlayerBuiredItemsMapBundleInteractionPoint",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x8e0"
+        "Offset": "0x908"
       },
       {
         "Name": "CancelTale",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x8e8"
+        "Offset": "0x910"
       },
       {
         "Name": "CancelVoyage",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x8f0"
+        "Offset": "0x918"
       },
       {
         "Name": "VoyageSelectionSlot4",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x8f8"
+        "Offset": "0x920"
       },
       {
         "Name": "VoyageSelectionSlot3",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x900"
+        "Offset": "0x928"
       },
       {
         "Name": "VoyageSelectionSlot2",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x908"
+        "Offset": "0x930"
       },
       {
         "Name": "VoyageSelectionSlot1",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x910"
+        "Offset": "0x938"
       }
     ]
   },

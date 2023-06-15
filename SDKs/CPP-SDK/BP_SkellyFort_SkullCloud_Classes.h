@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x4c0] - InheritedSize[0x4b8]
+// Size 0x8 (Full Size[0x540] - InheritedSize[0x538]
 class BP_SkellyFort_SkullCloud_C: public BP_RotatableSignalCloud_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4b8(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x538(0x8)
 };
 
 

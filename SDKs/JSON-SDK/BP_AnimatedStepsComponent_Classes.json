@@ -12,9 +12,9 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x94_6SVYN[0x94]",
+        "Name": "pad0x135_44RDF[0x135]",
         "Type": "char",
-        "Size": "0x94",
+        "Size": "0x135",
         "Offset": "0xf8"
       },
       {

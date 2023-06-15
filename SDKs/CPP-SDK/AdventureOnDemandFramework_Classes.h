@@ -6,6 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandAreCrewNearQuestTargetStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class AdventureOnDemandAreCrewNearQuestTargetStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableBool                                     AreCrewNearQuestTarget;                            // 0x80(0x30)
+};
+
+
 // Size 0x20 (Full Size[0xf8] - InheritedSize[0xd8]
 class AdventureOnDemandArrivalTunnelDependencies: public ArrivalTunnelDependencies
 {
@@ -26,11 +41,11 @@ class AdventureOnDemandArrivalTunnelDesc: public ClientDestinationPreLoadingArri
 {
 public:
 	Struct Vector                                                ResurfaceLocationOffset;                           // 0xa0(0xc)
-	char                                                         pad0x4_1NPP0[0x4];                                 // 0xac(0x4)
+	char                                                         pad0x4_4GXDG[0x4];                                 // 0xac(0x4)
 	Class AdventureOnDemandArrivalTunnelWorkerBase*              DefaultArrivalLocationWorkerClass;                 // 0xb0(0x8)
 	Class EnvQuery*                                              ResurfaceLocationEQ;                               // 0xb8(0x8)
 	bool                                                         ShouldExcludeCrewFromBeingTargetedForGameEvents;   // 0xc0(0x1)
-	char                                                         pad0x3_ZDBH3[0x3];                                 // 0xc1(0x3)
+	char                                                         pad0x3_K78MD[0x3];                                 // 0xc1(0x3)
 	float                                                        ExclusionTimerFromBeingTargetedForGameEvents;      // 0xc4(0x4)
 };
 
@@ -39,51 +54,44 @@ public:
 class AdventureOnDemandArrivalTunnelOfTheDamned: public ClientDestinationPreLoadingArrivalTunnelOfTheDamned
 {
 public:
-	char                                                         pad0x28_52MLM[0x28];                               // 0x6a0(0x28)
+	char                                                         pad0x28_CZ4RO[0x28];                               // 0x6a0(0x28)
 	Class AdventureOnDemandArrivalTunnelDesc*                    AdventureOnDemandArrivalTunnelDesc;                // 0x6c8(0x8)
 	Class AdventureOnDemandArrivalTunnelWorkerBase*              ArrivalLocationWorker;                             // 0x6d0(0x8)
-	char                                                         pad0x28_ODD0H[0x28];                               // 0x6d8(0x28)
+	char                                                         pad0x28_GTV8P[0x28];                               // 0x6d8(0x28)
 };
 
 
-// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
+// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
 class GameEventOnDemandArrivalTunnelWorkerBase: public AdventureOnDemandArrivalTunnelWorkerBase
 {
 public:
 	float                                                        MinRangeFromTarget;                                // 0x30(0x4)
 	float                                                        MaxRangeFromTarget;                                // 0x34(0x4)
-	Class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x38(0x8)
-	char                                                         pad0x10_1EESO[0x10];                               // 0x40(0x10)
+	char                                                         pad0x20_WL9Q1[0x20];                               // 0x38(0x20)
+	Class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x58(0x8)
+	char                                                         pad0x10_V72PN[0x10];                               // 0x60(0x10)
 };
 
 
-// Size 0x98 (Full Size[0xe8] - InheritedSize[0x50]
-class KrakenGameEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
+// Size 0x68 (Full Size[0xd8] - InheritedSize[0x70]
+class SeaBasedGameEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
 {
 public:
-	Class EnvQuery*                                              SpawnLocationEQS;                                  // 0x50(0x8)
-	char                                                         pad0x90_LWJ6E[0x90];                               // 0x58(0x90)
+	char                                                         pad0x20_05D91[0x20];                               // 0x70(0x20)
+	float                                                        VacateOccupiedLocationTimer;                       // 0x90(0x4)
+	char                                                         pad0x44_CX827[0x44];                               // 0x94(0x44)
 };
 
 
-// Size 0x60 (Full Size[0xb0] - InheritedSize[0x50]
+// Size 0x60 (Full Size[0xd0] - InheritedSize[0x70]
 class SkellyFortEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
 {
 public:
-	class                                                        SkellyFortType;                                    // 0x50(0x8)
-	bool                                                         UseSpawnDistanceFromIslandForResurfaceRadius;      // 0x58(0x1)
-	char                                                         pad0x3_835TV[0x3];                                 // 0x59(0x3)
-	float                                                        ResurfaceMaxRadiusModifier;                        // 0x5c(0x4)
-	char                                                         pad0x50_GYAGS[0x50];                               // 0x60(0x50)
-};
-
-
-// Size 0x98 (Full Size[0xe8] - InheritedSize[0x50]
-class TinySharkGameEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
-{
-public:
-	Class EnvQuery*                                              SpawnLocationEQS;                                  // 0x50(0x8)
-	char                                                         pad0x90_IDRZ0[0x90];                               // 0x58(0x90)
+	class                                                        SkellyFortType;                                    // 0x70(0x8)
+	bool                                                         UseSpawnDistanceFromIslandForResurfaceRadius;      // 0x78(0x1)
+	char                                                         pad0x3_YIU4T[0x3];                                 // 0x79(0x3)
+	float                                                        ResurfaceMaxRadiusModifier;                        // 0x7c(0x4)
+	char                                                         pad0x50_QO9KK[0x50];                               // 0x80(0x50)
 };
 
 
@@ -136,28 +144,28 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x890] - InheritedSize[0x870]
+// Size 0x20 (Full Size[0x8c0] - InheritedSize[0x8a0]
 class AdventureOnDemandDepartureTunnelOfTheDamned: public DepartureTunnelOfTheDamned
 {
 public:
-	Class AdventureOnDemandDepartureTunnelDesc*                  AdventureOnDemandDepartureTunnelDesc;              // 0x870(0x8)
-	char                                                         pad0x18_D2I2U[0x18];                               // 0x878(0x18)
+	Class AdventureOnDemandDepartureTunnelDesc*                  AdventureOnDemandDepartureTunnelDesc;              // 0x8a0(0x8)
+	char                                                         pad0x18_AKUR1[0x18];                               // 0x8a8(0x18)
 };
 
 
-// Size 0x0 (Full Size[0x890] - InheritedSize[0x890]
+// Size 0x0 (Full Size[0x8c0] - InheritedSize[0x8c0]
 class GameEventOnDemandDepartureTunnelOfTheDamned: public AdventureOnDemandDepartureTunnelOfTheDamned
 {
 public:
-	Class GameEventOnDemandDepartureTunnelDesc*                  GameEventOnDemandDepartureTunnelDesc;              // 0x888(0x8)
+	Class GameEventOnDemandDepartureTunnelDesc*                  GameEventOnDemandDepartureTunnelDesc;              // 0x8b8(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x890] - InheritedSize[0x890]
+// Size 0x0 (Full Size[0x8c0] - InheritedSize[0x8c0]
 class VoyageOnDemandDepartureTunnelOfTheDamned: public AdventureOnDemandDepartureTunnelOfTheDamned
 {
 public:
-	Class VoyageOnDemandDepartureTunnelDesc*                     VoyageOnDemandDepartureTunnelDesc;                 // 0x888(0x8)
+	Class VoyageOnDemandDepartureTunnelDesc*                     VoyageOnDemandDepartureTunnelDesc;                 // 0x8b8(0x8)
 };
 
 
@@ -219,6 +227,15 @@ public:
 };
 
 
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AdventureOnDemandLocationRequestDataAsset: public DataAsset
+{
+public:
+	TArray<struct SeaBasedGameEventLocations>                    SeaBasedGameEventLocations;                        // 0x28(0x10)
+	Class EnvQuery*                                              SeaBasedGameEventQuery;                            // 0x38(0x8)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AdventureOnDemandServiceInterface: public Interface
 {
@@ -226,21 +243,23 @@ public:
 };
 
 
-// Size 0xc0 (Full Size[0x488] - InheritedSize[0x3c8]
+// Size 0x290 (Full Size[0x658] - InheritedSize[0x3c8]
 class AdventureOnDemandService: public Actor
 {
 public:
-	char                                                         pad0x10_K1JCJ[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_HXSQF[0x10];                               // 0x3c8(0x10)
 	Class AdventureOnDemandServiceParams*                        Params;                                            // 0x3d8(0x8)
 	Class AdventureOnDemandVoyageSelectionDataAsset*             VoyageSelectionDataAsset;                          // 0x3e0(0x8)
-	char                                                         pad0x70_EQKRR[0x70];                               // 0x3e8(0x70)
-	TArray<struct DiveToTunnelEntries>                           DiveToTunnelEntries;                               // 0x458(0x10)
-	TArray<struct LeaveTunnelEntries>                            LeaveTunnelEntries;                                // 0x468(0x10)
-	TArray<struct CrewsDivingToTunnel>                           CrewsDivingToTunnel;                               // 0x478(0x10)
+	char                                                         pad0xb0_JGT4E[0xb0];                               // 0x3e8(0xb0)
+	TArray<struct DiveToTunnelEntries>                           DiveToTunnelEntries;                               // 0x498(0x10)
+	TArray<struct LeaveTunnelEntries>                            LeaveTunnelEntries;                                // 0x4a8(0x10)
+	TArray<struct CrewsDivingToTunnel>                           CrewsDivingToTunnel;                               // 0x4b8(0x10)
+	TArray<struct CrewsOnCooldown>                               CrewsOnCooldown;                                   // 0x4c8(0x10)
+	char                                                         pad0x180_TUI8H[0x180];                             // 0x4d8(0x180)
 };
 
 
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class AdventureOnDemandServiceParams: public DataAsset
 {
 public:
@@ -250,7 +269,8 @@ public:
 	TArray<struct ExtraSpawnDistanceFromIsland>                  ExtraSpawnDistanceFromIsland;                      // 0x40(0x10)
 	TArray<struct VoyageHintTypeForQuestType>                    VoyageHintTypeForQuestType;                        // 0x50(0x10)
 	float                                                        WorldEventsCooldown;                               // 0x60(0x4)
-	char                                                         pad0x4_HG78V[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_6DBTX[0x4];                                 // 0x64(0x4)
+	Class AdventureOnDemandLocationRequestDataAsset*             LocationRequestDataAsset;                          // 0x68(0x8)
 };
 
 
@@ -283,7 +303,7 @@ class AdventureOnDemandSetHintPopUpStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         HintType;                                          // 0x80(0x1)
-	char                                                         pad0x7_EMFEJ[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_I92YY[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -320,6 +340,34 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandSuppressIslandBannerStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class AdventureOnDemandSuppressIslandBannerStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class AdventureOnDemandYieldQuestResumeOnConditionsTaleStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class AdventureOnDemandTaleFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
 // Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class AdventureOnDemandVoyageSelectionCompanyDataAsset: public DataAsset
 {
@@ -336,6 +384,14 @@ class AdventureOnDemandVoyageSelectionDataAsset: public DataAsset
 {
 public:
 	TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*> CompanyEntries;                                    // 0x28(0x10)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class AdventureOnDemandYieldQuestResumeOnConditionsStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct OnDemandQuestResumeConditionMetReasonQuestVariable    OutConditionsMetReason;                            // 0x80(0x30)
 };
 
 

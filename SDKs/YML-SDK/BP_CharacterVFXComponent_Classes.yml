@@ -6,9 +6,9 @@ BP_CharacterVFXComponent_C:
     Offset: '0xe0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xa4_Z2YKH[0xa4]
+  - Name: pad0x145_D8KLP[0x145]
     Offset: '0xe8'
-    Size: '0xa4'
+    Size: '0x145'
     Type: char
   - Name: EnterWaterEvent
     Offset: '0xe8'
@@ -66,7 +66,7 @@ BP_CharacterVFXComponent_C:
     Offset: '0x32c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_E230O[0x3]
+  - Name: pad0x3_1B2IX[0x3]
     Offset: '0x32d'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ BP_CharacterVFXComponent_C:
     Offset: '0x330'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_S794K[0x4]
+  - Name: pad0x4_07XAN[0x4]
     Offset: '0x334'
     Size: '0x4'
     Type: char

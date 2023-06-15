@@ -41,7 +41,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_NOAOV[0x7]",
+        "Name": "pad0x7_RE9I2[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -164,7 +164,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_9NXEC[0x3]",
+        "Name": "pad0x3_B9JLW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
@@ -217,7 +217,7 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_LH8SA[0x3]",
+        "Name": "pad0x3_4X0W3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
@@ -264,7 +264,7 @@
         "Offset": "0xd1"
       },
       {
-        "Name": "pad0x6_CHLAM[0x6]",
+        "Name": "pad0x6_QHZS1[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xd2"
@@ -278,7 +278,7 @@
     ]
   },
   "TrackedObjectiveProgressUpdateMessage": {
-    "ClassSize": "0xe0",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "ObjectiveId",
@@ -311,7 +311,7 @@
         "Offset": "0xd1"
       },
       {
-        "Name": "pad0x2_1NU0T[0x2]",
+        "Name": "pad0x2_W1P2K[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xd2"
@@ -327,6 +327,12 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0xd8"
+      },
+      {
+        "Name": "ShouldNotifyPlayer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe0"
       }
     ]
   },

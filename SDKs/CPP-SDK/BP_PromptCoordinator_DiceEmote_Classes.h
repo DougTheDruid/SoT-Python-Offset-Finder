@@ -11,12 +11,12 @@ class BP_PromptCoordinator_DiceEmote_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
-	char                                                         pad0x4c_CEB1P[0x4c];                               // 0x140(0x4c)
+	char                                                         pad0xed_EF09E[0xed];                               // 0x140(0xed)
 	class                                                        DiceEmotePromptAccessKey;                          // 0x140(0x8)
 	Struct ObjectMessagingHandle                                 EmoteStartedEvent;                                 // 0x148(0x58)
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x1a0(0x68)
 	bool                                                         StartedDiceEmote;                                  // 0x208(0x1)
-	char                                                         pad0x7_0JR7Z[0x7];                                 // 0x209(0x7)
+	char                                                         pad0x7_IPQ4C[0x7];                                 // 0x209(0x7)
 	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x210(0x8)
 	bool                                                         HasShown;                                          // 0x218(0x1)
 };

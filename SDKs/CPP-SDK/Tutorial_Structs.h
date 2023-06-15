@@ -6,14 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20
+// Size 0x38
 struct ContextualTutorialPromptDesc
 {
 public:
-	class                                                        PromptActorClass;                                  // 0x0(0x8)
-	class                                                        AccessKey;                                         // 0x8(0x8)
-	struct FName                                                 FeatureName;                                       // 0x10(0x8)
-	int                                                          MustBeUnderCount;                                  // 0x18(0x4)
+	class                                                        AccessKey;                                         // 0x20(0x8)
+	struct FName                                                 FeatureName;                                       // 0x28(0x8)
+	int                                                          MustBeUnderCount;                                  // 0x30(0x4)
 };
 
 

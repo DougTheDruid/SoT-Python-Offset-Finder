@@ -18,7 +18,7 @@ BP_AggressiveGhostShip_C:
     Offset: '0x898'
     Size: '0x8'
     Type: Class ActorDamageableComponent*
-  - Name: ShroudMask
+  - Name: shroudmask
     Offset: '0x8a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

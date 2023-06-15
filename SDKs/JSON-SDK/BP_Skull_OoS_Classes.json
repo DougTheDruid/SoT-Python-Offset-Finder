@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "gmp_bounty_skull_01_b",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"

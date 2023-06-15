@@ -11,6 +11,17 @@ OnEndWaterSlideActionStateEvent:
     Size: '0x8'
     Type: Class WwiseEvent*
   ClassSize: '0x18'
+OnEndZiplineActionStateEvent:
+  Attributes:
+  - Name: ZiplineEnd
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: ZiplineEndLoop
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x10'
 OnExitedRideEvent:
   Attributes: []
   ClassSize: '0x1'
@@ -35,6 +46,58 @@ OnStartWaterSlideActionStateEvent:
     Size: '0x8'
     Type: Class ParticleSystem*
   ClassSize: '0x10'
+OnStartZiplineActionStateEvent:
+  Attributes:
+  - Name: ZiplineStart
+    Offset: '0x0'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: ZiplineAdditiveOneShot
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: ZiplineLoopStart
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: ZiplineWindVFX
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  - Name: ZiplineTrailVFX
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  ClassSize: '0x28'
+OnUpdateZiplineActionStateEvent:
+  Attributes: []
+  ClassSize: '0x1c'
+RideTransitionActionStateConstructionInfo:
+  Attributes:
+  - Name: Ride
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class Ride*
+  - Name: Direction
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_S12BV[0x3]
+    Offset: '0x39'
+    Size: '0x3'
+    Type: char
+  - Name: Offset
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x58'
+RideTransitionActionStateParams:
+  Attributes:
+  - Name: Duration
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
 WaterSlideActionStateConstructionInfo:
   Attributes:
   - Name: SceneComponent
@@ -52,7 +115,7 @@ WaterSlideActionStateParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_NO21L[0x3]
+  - Name: pad0x3_D3DDM[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -91,7 +154,7 @@ WaterSlideParams:
     Offset: '0x18'
     Size: '0x4'
     Type: Struct PlayerStat
-  - Name: pad0x4_1TN1V[0x4]
+  - Name: pad0x4_E8PZV[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -140,7 +203,7 @@ ZiplineFeelParameters:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_6XA5S[0x4]
+  - Name: pad0x4_JKWJF[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -152,14 +215,10 @@ ZiplineFeelParameters:
     Offset: '0x188'
     Size: '0x170'
     Type: Struct RuntimeVectorCurve
-  - Name: PendulumLength
+  - Name: WindResistanceMinMaxAngleDegrees
     Offset: '0x2f8'
-    Size: '0x4'
-    Type: float
-  - Name: PlayerVerticalOffset
-    Offset: '0x2fc'
-    Size: '0x4'
-    Type: float
+    Size: '0x8'
+    Type: Struct Vector2D
   - Name: FOVMinMaxSpeed
     Offset: '0x300'
     Size: '0x8'

@@ -7,12 +7,12 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x18 (Full Size[0x4c8] - InheritedSize[0x4b0]
-class BP_ShipAmmoChest_C: public BP_AmmoChest_C
+class BP_ShipAmmoChest_C: public None
 {
 public:
-	Class StaticMeshComponent*                                   LockMesh;                                          // 0x4b0(0x8)
-	Class CrewLockableComponent*                                 CrewLockableComponent;                             // 0x4b8(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x4c0(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x4b0(0x8)
+	Class CrewLockableComponent*                                 None;                                              // 0x4b8(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x4c0(0x8)
 };
 
 

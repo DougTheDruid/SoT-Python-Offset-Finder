@@ -90,13 +90,31 @@
     ]
   },
   "MediaPlayedTelemetryEvent": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "MediaName",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "LowestResolution",
+        "Type": "Struct IntPoint",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MedianResolution",
+        "Type": "Struct IntPoint",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "HighestResolution",
+        "Type": "Struct IntPoint",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },

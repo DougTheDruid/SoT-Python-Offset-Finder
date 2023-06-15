@@ -6,12 +6,30 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIAreaOfOperationInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class AIAreaOfOperationComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_SI5N8[0x8];                                 // 0xc8(0x8)
+	bool                                                         UseAreaOfOperationOnSpawn;                         // 0xd0(0x1)
+	char                                                         pad0x3_0VIJX[0x3];                                 // 0xd1(0x3)
+	float                                                        InitialRadius;                                     // 0xd4(0x4)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AIGoal: public Object
 {
 public:
 	Class BehaviorTree*                                          BehaviorTree;                                      // 0x28(0x8)
-	char                                                         pad0x8_100OE[0x8];                                 // 0x30(0x8)
+	char                                                         pad0x8_X6DYP[0x8];                                 // 0x30(0x8)
 };
 
 
@@ -34,12 +52,12 @@ public:
 class AIGoalProcessorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_8YRP8[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_1R398[0x8];                                 // 0xc8(0x8)
 	TArray<class AIGoal*>                                        Goals;                                             // 0xd0(0x10)
 	Class AIGoalAssetList*                                       AIGoalAssetList;                                   // 0xe0(0x8)
 	Class AIGoal*                                                ActiveGoal;                                        // 0xe8(0x8)
 	TArray<class AIGoalAssetList*>                               AdditionalGoalLists;                               // 0xf0(0x10)
-	char                                                         pad0x28_VPRMX[0x28];                               // 0x100(0x28)
+	char                                                         pad0x28_LFL3V[0x28];                               // 0x100(0x28)
 };
 
 

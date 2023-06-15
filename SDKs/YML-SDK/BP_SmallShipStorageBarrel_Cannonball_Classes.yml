@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_SmallShipStorageBarrel_Cannonball_C:
   Attributes:
-  - Name: None
+  - Name: Replenishable
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class ReplenishableComponent*
-  - Name: None
+  - Name: ShipTelemetrySubject
     Offset: '0x4d0'
     Size: '0x8'
     Type: Class ShipTelemetrySubjectComponent*
-  - Name: None
+  - Name: StorageContainer
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class StorageContainerComponent*

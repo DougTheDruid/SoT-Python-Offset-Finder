@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 RetractableComponent:
   Attributes:
-  - Name: pad0x38_FEKTL[0x38]
+  - Name: pad0x38_F2RI4[0x38]
     Offset: '0xc8'
     Size: '0x38'
     Type: char
@@ -30,7 +30,7 @@ RetractableComponent:
     Offset: '0x10e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_PGM8Y[0x1]
+  - Name: pad0x1_QGA8J[0x1]
     Offset: '0x10f'
     Size: '0x1'
     Type: char
@@ -58,7 +58,7 @@ RetractableProviderInterface:
   Super: Interface
 RetractorComponent:
   Attributes:
-  - Name: pad0x48_O2VJA[0x48]
+  - Name: pad0x48_NYJBF[0x48]
     Offset: '0xc8'
     Size: '0x48'
     Type: char
@@ -70,7 +70,7 @@ RetractorComponent:
     Offset: '0x118'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: pad0x8_YMYK3[0x8]
+  - Name: pad0x8_4PI4H[0x8]
     Offset: '0x120'
     Size: '0x8'
     Type: char

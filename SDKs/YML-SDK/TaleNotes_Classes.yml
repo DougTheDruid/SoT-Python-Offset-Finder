@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TaleNote:
   Attributes:
-  - Name: pad0x10_YMMMC[0x10]
+  - Name: pad0x10_Q255Y[0x10]
     Offset: '0x7e0'
     Size: '0x10'
     Type: char
@@ -18,7 +18,7 @@ TaleNote:
     Offset: '0x7f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_3X0LO[0x4]
+  - Name: pad0x4_4TYN1[0x4]
     Offset: '0x7fc'
     Size: '0x4'
     Type: char
@@ -78,7 +78,7 @@ TaleNote:
     Offset: '0x968'
     Size: '0x8'
     Type: Class ZoomInOnWieldableItemComponent*
-  - Name: pad0xe0_MGSPA[0xe0]
+  - Name: pad0xe0_PKETT[0xe0]
     Offset: '0x970'
     Size: '0xe0'
     Type: char

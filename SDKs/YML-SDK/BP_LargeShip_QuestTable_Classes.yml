@@ -3,46 +3,46 @@
 BP_LargeShip_QuestTable_C:
   Attributes:
   - Name: WarMap
-    Offset: '0x8c8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: FactionHourglass
-    Offset: '0x8d0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: CancelAdventure
-    Offset: '0x8d8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: PlayerBuiredItemsMapBundleInteractionPoint
-    Offset: '0x8e0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: CancelTale
-    Offset: '0x8e8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: CancelVoyage
     Offset: '0x8f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot4
+  - Name: FactionHourglass
     Offset: '0x8f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot3
+  - Name: CancelAdventure
     Offset: '0x900'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot2
+  - Name: PlayerBuiredItemsMapBundleInteractionPoint
     Offset: '0x908'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot1
+  - Name: CancelTale
     Offset: '0x910'
     Size: '0x8'
     Type: Class ChildActorComponent*
+  - Name: CancelVoyage
+    Offset: '0x918'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: VoyageSelectionSlot4
+    Offset: '0x920'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: VoyageSelectionSlot3
+    Offset: '0x928'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: VoyageSelectionSlot2
+    Offset: '0x930'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  - Name: VoyageSelectionSlot1
+    Offset: '0x938'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
   ClassSize: '0x50'
-  FullSize: '0x918'
-  InheritedSize: '0x8c8'
+  FullSize: '0x940'
+  InheritedSize: '0x8f0'
   Super: VoyageTable

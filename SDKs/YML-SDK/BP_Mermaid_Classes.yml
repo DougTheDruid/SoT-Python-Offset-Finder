@@ -2,27 +2,27 @@
 # https://github.com/DougTheDruid
 BP_Mermaid_C:
   Attributes:
-  - Name: Interactable
-    Offset: '0x9a0'
-    Size: '0x8'
-    Type: Class InteractableComponent*
-  - Name: PlayerHits
-    Offset: '0x9a8'
-    Size: '0x8'
-    Type: Class CapsuleComponent*
-  - Name: AnimNotifyWwiseEmitter
+  - Name: None
     Offset: '0x9b0'
     Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: SkeletalMeshMemoryConstraint
+    Type: Class InteractableComponent*
+  - Name: None
     Offset: '0x9b8'
     Size: '0x8'
-    Type: Class SkeletalMeshMemoryConstraintComponent*
-  - Name: WorldHits
+    Type: Class CapsuleComponent*
+  - Name: None
     Offset: '0x9c0'
+    Size: '0x8'
+    Type: Class AnimNotifyWwiseEmitterComponent*
+  - Name: None
+    Offset: '0x9c8'
+    Size: '0x8'
+    Type: Class SkeletalMeshMemoryConstraintComponent*
+  - Name: None
+    Offset: '0x9d0'
     Size: '0x8'
     Type: Class CapsuleComponent*
   ClassSize: '0x28'
-  FullSize: '0x9c8'
-  InheritedSize: '0x9a0'
+  FullSize: '0x9d8'
+  InheritedSize: '0x9b0'
   Super: Mermaid

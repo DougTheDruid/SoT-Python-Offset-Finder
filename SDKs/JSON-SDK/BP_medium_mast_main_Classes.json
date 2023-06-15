@@ -1,9 +1,9 @@
 {
   "BP_medium_mast_main_C": {
     "Super": "BP_Mast_C",
-    "FullSize": "0xad0",
+    "FullSize": "0xad8",
     "InheritedSize": "0xa68",
-    "ClassSize": "0x68",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -12,76 +12,82 @@
         "Offset": "0xa68"
       },
       {
-        "Name": "BP_MastEmissaryFlag",
+        "Name": "GuildPlaque",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa70"
       },
       {
-        "Name": "shp_flag_pennant_alliance_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "BP_MastEmissaryFlag",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa78"
       },
       {
-        "Name": "shp_flag_jolly_roger_01_a",
+        "Name": "shp_flag_pennant_alliance_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa80"
       },
       {
-        "Name": "BP_Bell",
-        "Type": "Class ChildActorComponent*",
+        "Name": "shp_flag_jolly_roger_01_a",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa88"
       },
       {
-        "Name": "Ladder",
+        "Name": "BP_Bell",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa90"
       },
       {
-        "Name": "WeldedCrowsNestPhysics",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Ladder",
+        "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa98"
       },
       {
-        "Name": "WeldedMastPhysics",
+        "Name": "WeldedCrowsNestPhysics",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xaa0"
       },
       {
-        "Name": "shp_mast_ladder_step_01_a",
+        "Name": "WeldedMastPhysics",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xaa8"
       },
       {
+        "Name": "shp_mast_ladder_step_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xab0"
+      },
+      {
         "Name": "BP_ShipFlagCustomizationChest",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0xab0"
+        "Offset": "0xab8"
       },
       {
         "Name": "CrowsNest",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xab8"
+        "Offset": "0xac0"
       },
       {
         "Name": "BP_BellLower",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0xac0"
+        "Offset": "0xac8"
       },
       {
         "Name": "BellSupportLower",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xac8"
+        "Offset": "0xad0"
       }
     ]
   },

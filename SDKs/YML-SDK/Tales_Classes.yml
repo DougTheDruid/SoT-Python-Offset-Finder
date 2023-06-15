@@ -16,7 +16,7 @@ ActorRadiusTrackerStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class Actor*
-  - Name: pad0x28_BO679[0x28]
+  - Name: pad0x28_P2LZT[0x28]
     Offset: '0xa8'
     Size: '0x28'
     Type: char
@@ -34,7 +34,7 @@ ActorRadiusTrackerStepDesc:
     Offset: '0xb0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GQPFI[0x4]
+  - Name: pad0x4_VTBV1[0x4]
     Offset: '0xb4'
     Size: '0x4'
     Type: char
@@ -46,7 +46,7 @@ ActorRadiusTrackerStepDesc:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DEE67[0x4]
+  - Name: pad0x4_XGGJ4[0x4]
     Offset: '0xec'
     Size: '0x4'
     Type: char
@@ -74,7 +74,7 @@ AddGameEventExclusionZoneStepDesc:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HGUFZ[0x3]
+  - Name: pad0x3_IXIH8[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -106,7 +106,7 @@ CallObjectFunctionStepDesc:
     Offset: '0x88'
     Size: '0x10'
     Type: Struct ClassFunctionSelectionType
-  - Name: pad0x50_85LGN[0x50]
+  - Name: pad0x50_LJSRK[0x50]
     Offset: '0x98'
     Size: '0x50'
     Type: char
@@ -146,7 +146,7 @@ CutsceneResponsesTaleServiceDesc:
   Super: TaleQuestServiceDesc
 DebugTaleAddInstancedLevelStep:
   Attributes:
-  - Name: pad0x8_XH7VH[0x8]
+  - Name: pad0x8_5ROBO[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -158,7 +158,7 @@ DebugTaleAddInstancedLevelStep:
     Offset: '0xa8'
     Size: '0x10'
     Type: Struct FString
-  - Name: pad0x20_MXXXS[0x20]
+  - Name: pad0x20_CD1II[0x20]
     Offset: '0xb8'
     Size: '0x20'
     Type: char
@@ -172,7 +172,7 @@ DebugTaleAddInstancedLevelStepDesc:
     Offset: '0x80'
     Size: '0x38'
     Type: Struct FText
-  - Name: pad0x8_1TBOU[0x8]
+  - Name: pad0x8_KKNCC[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -320,7 +320,7 @@ FindNamedPointStepDesc:
   Super: FindNamedPointStepDescBase
 FindNamedPointStepDescBase:
   Attributes:
-  - Name: pad0x20_9IGFE[0x20]
+  - Name: pad0x20_9DW6V[0x20]
     Offset: '0x80'
     Size: '0x20'
     Type: char
@@ -344,7 +344,7 @@ FindNamedPointStepDescBase:
     Offset: '0x109'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_5XYCR[0x6]
+  - Name: pad0x6_4VTPC[0x6]
     Offset: '0x10a'
     Size: '0x6'
     Type: char
@@ -358,7 +358,7 @@ FixedArrayEntrySelectionStrategy:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FNT40[0x4]
+  - Name: pad0x4_00XP7[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -430,7 +430,7 @@ GenerateDigLocationInRadiusStepDesc:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_48T09[0x4]
+  - Name: pad0x4_H8CJZ[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -486,7 +486,7 @@ InvokeDamageDesc:
     Offset: '0xbc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_KYM6G[0x3]
+  - Name: pad0x3_5NR3Y[0x3]
     Offset: '0xbd'
     Size: '0x3'
     Type: char
@@ -574,7 +574,7 @@ LoadSequencerAnimationStepDesc:
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7IWOP[0x3]
+  - Name: pad0x3_SE06E[0x3]
     Offset: '0x121'
     Size: '0x3'
     Type: char
@@ -586,7 +586,7 @@ LoadSequencerAnimationStepDesc:
     Offset: '0x12c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_59VRA[0x3]
+  - Name: pad0x3_7AZCO[0x3]
     Offset: '0x12d'
     Size: '0x3'
     Type: char
@@ -614,7 +614,7 @@ OverrideManagedActorStateStepDesc:
     Offset: '0xb1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_0ZPFY[0x6]
+  - Name: pad0x6_FKVPG[0x6]
     Offset: '0xb2'
     Size: '0x6'
     Type: char
@@ -632,7 +632,7 @@ ParticipantRadiusArrayTrackerStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class ParticipantRadiusArrayTrackerStepDesc*
-  - Name: pad0x18_48P0H[0x18]
+  - Name: pad0x18_GQ8KY[0x18]
     Offset: '0xa0'
     Size: '0x18'
     Type: char
@@ -646,7 +646,7 @@ ParticipantRadiusArrayTrackerStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RAXL2[0x4]
+  - Name: pad0x4_O92KC[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -654,16 +654,20 @@ ParticipantRadiusArrayTrackerStepDesc:
     Offset: '0x88'
     Size: '0x30'
     Type: Struct QuestVariableActorArray
-  - Name: Radius
+  - Name: Locations
     Offset: '0xb8'
+    Size: '0x30'
+    Type: Struct QuestVariableVectorArray
+  - Name: Radius
+    Offset: '0xe8'
     Size: '0x30'
     Type: Struct QuestVariableFloat
   - Name: OutLocation
-    Offset: '0xe8'
+    Offset: '0x118'
     Size: '0x30'
     Type: Struct QuestVariableVector
-  ClassSize: '0x98'
-  FullSize: '0x118'
+  ClassSize: '0xc8'
+  FullSize: '0x148'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 ParticipantRadiusTrackerStep:
@@ -672,7 +676,7 @@ ParticipantRadiusTrackerStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class ParticipantRadiusTrackerStepDesc*
-  - Name: pad0x18_R69RP[0x18]
+  - Name: pad0x18_UO77D[0x18]
     Offset: '0xa0'
     Size: '0x18'
     Type: char
@@ -686,7 +690,7 @@ ParticipantRadiusTrackerStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XPX1S[0x4]
+  - Name: pad0x4_Q5IBV[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -716,7 +720,7 @@ PlaySequencerAnimationOnCutsceneActorStep:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<struct PossessableSequences>
-  - Name: pad0x10_4AHFD[0x10]
+  - Name: pad0x10_59MAQ[0x10]
     Offset: '0xb8'
     Size: '0x10'
     Type: char
@@ -734,7 +738,7 @@ PlaySequencerAnimationOnCutsceneActorStepDesc:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_X1KED[0x4]
+  - Name: pad0x4_XGDNO[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -778,7 +782,7 @@ PlaySequencerAnimationOnCutsceneActorStepDesc:
     Offset: '0x1a9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_NGVGE[0x2]
+  - Name: pad0x2_Y9NFM[0x2]
     Offset: '0x1aa'
     Size: '0x2'
     Type: char
@@ -804,7 +808,7 @@ PlaySequencerAnimationStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: Class SequencerCutSceneActor*
-  - Name: pad0x28_UFN9F[0x28]
+  - Name: pad0x28_SHVLF[0x28]
     Offset: '0xa8'
     Size: '0x28'
     Type: char
@@ -842,7 +846,7 @@ PlaySequencerAnimationStepDesc:
     Offset: '0x149'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_E29FC[0x6]
+  - Name: pad0x6_A8HD5[0x6]
     Offset: '0x14a'
     Size: '0x6'
     Type: char
@@ -858,7 +862,7 @@ PlaySequencerAnimationStepDesc:
     Offset: '0x168'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VBABY[0x3]
+  - Name: pad0x3_ZSGOF[0x3]
     Offset: '0x169'
     Size: '0x3'
     Type: char
@@ -908,7 +912,7 @@ ProvokeHitReactionDesc:
     Offset: '0xbc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_WSCXV[0x3]
+  - Name: pad0x3_FJGMM[0x3]
     Offset: '0xbd'
     Size: '0x3'
     Type: char
@@ -946,7 +950,7 @@ RemoveFlameOfFateTypeStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_7U3X9[0x7]
+  - Name: pad0x7_QB7FS[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -974,7 +978,7 @@ RemoveGameEventExclusionZoneStepDesc:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CY2FP[0x3]
+  - Name: pad0x3_P13MI[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -1016,7 +1020,7 @@ RewardGenTaleQuestService:
     Offset: '0x78'
     Size: '0x10'
     Type: TArray<class ItemSpawnData*>
-  - Name: pad0x8_O8M37[0x8]
+  - Name: pad0x8_YU77J[0x8]
     Offset: '0x88'
     Size: '0x8'
     Type: char
@@ -1042,7 +1046,7 @@ SelectNamedPointStep:
   Super: TaleQuestStep
 SelectNamedPointStepDesc:
   Attributes:
-  - Name: pad0x20_OETLQ[0x20]
+  - Name: pad0x20_L5VL4[0x20]
     Offset: '0x80'
     Size: '0x20'
     Type: char
@@ -1058,7 +1062,7 @@ SelectNamedPointStepDesc:
     Offset: '0xac'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_I8WTL[0x3]
+  - Name: pad0x3_LU2BY[0x3]
     Offset: '0xad'
     Size: '0x3'
     Type: char
@@ -1116,7 +1120,7 @@ SpawnLayerStepDesc:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2OCIR[0x7]
+  - Name: pad0x7_H5LBZ[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char
@@ -1150,7 +1154,7 @@ SpawnPhasedActorWithTransformStep:
   Super: TaleQuestStep
 SpawnPhasedActorWithTransformStepBaseDesc:
   Attributes:
-  - Name: pad0x20_YMQY1[0x20]
+  - Name: pad0x20_WHA24[0x20]
     Offset: '0x80'
     Size: '0x20'
     Type: char
@@ -1158,7 +1162,7 @@ SpawnPhasedActorWithTransformStepBaseDesc:
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_553Y9[0x7]
+  - Name: pad0x7_X2EG9[0x7]
     Offset: '0xa1'
     Size: '0x7'
     Type: char
@@ -1190,7 +1194,7 @@ SpawnPhasedItemStepDesc:
     Offset: '0x81'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_NM9UJ[0x6]
+  - Name: pad0x6_NVN11[0x6]
     Offset: '0x82'
     Size: '0x6'
     Type: char
@@ -1228,7 +1232,7 @@ SplineFootprintPathComponent:
     Offset: '0x638'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GW5Z6[0x4]
+  - Name: pad0x4_78XKK[0x4]
     Offset: '0x63c'
     Size: '0x4'
     Type: char
@@ -1240,7 +1244,7 @@ SplineFootprintPathComponent:
     Offset: '0x648'
     Size: '0x1'
     Type: Struct SplineFootprintPathTool
-  - Name: pad0x3_N96XU[0x3]
+  - Name: pad0x3_JGMWE[0x3]
     Offset: '0x649'
     Size: '0x3'
     Type: char
@@ -1252,7 +1256,7 @@ SplineFootprintPathComponent:
     Offset: '0x650'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_L1DP5[0x4]
+  - Name: pad0x4_N6ADH[0x4]
     Offset: '0x65c'
     Size: '0x4'
     Type: char
@@ -1260,6 +1264,46 @@ SplineFootprintPathComponent:
   FullSize: '0x660'
   InheritedSize: '0x640'
   Super: SplineComponent
+SplinePathingActorActivationStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+SplinePathingActorActivationStepDesc:
+  Attributes:
+  - Name: SplinePathingActor
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  - Name: IsActivated
+    Offset: '0xb0'
+    Size: '0x30'
+    Type: Struct QuestVariableBool
+  ClassSize: '0x60'
+  FullSize: '0xe0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+SplinePathingActorAddPrimitiveStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+SplinePathingActorAddPrimitiveStepDesc:
+  Attributes:
+  - Name: SplinePathingActor
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  - Name: ActorToManipulate
+    Offset: '0xb0'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x60'
+  FullSize: '0xe0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 StartSuppressingCutsceneResponsesStep:
   Attributes: []
   ClassSize: '0x0'
@@ -1320,7 +1364,7 @@ TaleQuestActorOfInterestService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestActorOfInterestServiceDesc*
-  - Name: pad0x30_N2DIK[0x30]
+  - Name: pad0x30_13ZXT[0x30]
     Offset: '0x68'
     Size: '0x30'
     Type: char
@@ -1376,7 +1420,7 @@ TaleQuestActorService:
     Offset: '0xc0'
     Size: '0x38'
     Type: Struct FText
-  - Name: pad0x2c8_C6JWL[0x2c8]
+  - Name: pad0x2c8_W14NB[0x2c8]
     Offset: '0xf8'
     Size: '0x2c8'
     Type: char
@@ -1506,7 +1550,7 @@ TaleQuestAddChecklistMapStepDesc:
     Offset: '0x198'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_775D2[0x7]
+  - Name: pad0x7_F471G[0x7]
     Offset: '0x199'
     Size: '0x7'
     Type: char
@@ -1542,7 +1586,7 @@ TaleQuestAddCircleMapStepDesc:
     Offset: '0xec'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_GYVIG[0x3]
+  - Name: pad0x3_6GOH6[0x3]
     Offset: '0xed'
     Size: '0x3'
     Type: char
@@ -1726,6 +1770,12 @@ TaleQuestAdvanceRiddleMapStepDesc:
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
+TaleQuestAnimationMontageFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestAnimationStepFunctionLibrary:
   Attributes: []
   ClassSize: '0x0'
@@ -1852,7 +1902,7 @@ TaleQuestBreakStructStepDesc:
   Super: TaleQuestStructStepDescBase
 TaleQuestCargoRunContract:
   Attributes:
-  - Name: pad0x40_NENQ5[0x40]
+  - Name: pad0x40_V1DPO[0x40]
     Offset: '0x28'
     Size: '0x40'
     Type: char
@@ -1860,7 +1910,7 @@ TaleQuestCargoRunContract:
     Offset: '0x68'
     Size: '0x10'
     Type: TArray<struct ItemsToCollect>
-  - Name: pad0x10_DJOUI[0x10]
+  - Name: pad0x10_ZACHT[0x10]
     Offset: '0x78'
     Size: '0x10'
     Type: char
@@ -1872,12 +1922,12 @@ TaleQuestCargoRunContract:
     Offset: '0x90'
     Size: '0x8'
     Type: Class Actor*
-  - Name: pad0x18_32RJC[0x18]
+  - Name: pad0x50_3PNUN[0x50]
     Offset: '0x98'
-    Size: '0x18'
+    Size: '0x50'
     Type: char
-  ClassSize: '0x88'
-  FullSize: '0xb0'
+  ClassSize: '0xc0'
+  FullSize: '0xe8'
   InheritedSize: '0x28'
   Super: Object
 TaleQuestCargoRunContractsService:
@@ -1886,7 +1936,7 @@ TaleQuestCargoRunContractsService:
     Offset: '0x60'
     Size: '0x10'
     Type: TArray<class TaleQuestCargoRunContract*>
-  - Name: pad0x38_94RE8[0x38]
+  - Name: pad0x38_C8PI2[0x38]
     Offset: '0x70'
     Size: '0x38'
     Type: char
@@ -1902,7 +1952,7 @@ TaleQuestCargoRunContractsServiceDesc:
   Super: TaleQuestServiceDesc
 TaleQuestChooseIslandFromWeightsStep:
   Attributes:
-  - Name: pad0x90_QHQJ7[0x90]
+  - Name: pad0x90_9N5X9[0x90]
     Offset: '0x98'
     Size: '0x90'
     Type: char
@@ -1936,6 +1986,12 @@ TaleQuestChooseIslandFromWeightsStepDesc:
   FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestClassFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestClearTaleProposalsStepDesc:
   Attributes:
   - Name: CampaignId
@@ -1946,6 +2002,12 @@ TaleQuestClearTaleProposalsStepDesc:
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestClientCommandFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestCompoundStepInterface:
   Attributes: []
   ClassSize: '0x0'
@@ -2006,6 +2068,12 @@ TaleQuestCutscenesFunctionLibrary:
   FullSize: '0x180'
   InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
+TaleQuestDialogueFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestDisableInteractionStep:
   Attributes: []
   ClassSize: '0x0'
@@ -2050,7 +2118,7 @@ TaleQuestEmissaryCompanyActionRewardBoostStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_H936T[0x7]
+  - Name: pad0x7_YZZD8[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -2084,7 +2152,7 @@ TaleQuestEventStepDescBase:
     Offset: '0x88'
     Size: '0x8'
     Type: Struct NativeAndUserDefinedStructSelector
-  - Name: pad0x50_SVFNJ[0x50]
+  - Name: pad0x50_RYAM6[0x50]
     Offset: '0x90'
     Size: '0x50'
     Type: char
@@ -2116,7 +2184,7 @@ TaleQuestFlameOfFateService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestFlameOfFateServiceDesc*
-  - Name: pad0x58_Y3CRO[0x58]
+  - Name: pad0x58_ZCYTY[0x58]
     Offset: '0x68'
     Size: '0x58'
     Type: char
@@ -2138,7 +2206,7 @@ TaleQuestFlameOfFateServiceDesc:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_CJMIB[0x6]
+  - Name: pad0x6_HL39G[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -2170,7 +2238,7 @@ TaleQuestForEachSequential:
     Offset: '0xa8'
     Size: '0x8'
     Type: Class TaleQuestIndexedFrame*
-  - Name: pad0x38_YJGCA[0x38]
+  - Name: pad0x38_EB7ZR[0x38]
     Offset: '0xb0'
     Size: '0x38'
     Type: char
@@ -2196,7 +2264,7 @@ TaleQuestForEachStepBase:
   Super: TaleQuestStep
 TaleQuestForEachStepDescBase:
   Attributes:
-  - Name: pad0x8_1DY86[0x8]
+  - Name: pad0x8_B3PVV[0x8]
     Offset: '0x80'
     Size: '0x8'
     Type: char
@@ -2234,7 +2302,7 @@ TaleQuestForEachUnionStepDesc:
   Super: TaleQuestForEachStepDescBase
 TaleQuestFramedStep:
   Attributes:
-  - Name: pad0x8_YE2WU[0x8]
+  - Name: pad0x8_SL0B8[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -2278,7 +2346,7 @@ TaleQuestFramedStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestFunctionStepLibrary:
   Attributes:
-  - Name: pad0x8_2U3R1[0x8]
+  - Name: pad0x8_74DVX[0x8]
     Offset: '0xe8'
     Size: '0x8'
     Type: char
@@ -2290,7 +2358,7 @@ TaleQuestFunctionStepLibrary:
     Offset: '0x178'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KZZY8[0x7]
+  - Name: pad0x7_6UYTW[0x7]
     Offset: '0x179'
     Size: '0x7'
     Type: char
@@ -2314,7 +2382,7 @@ TaleQuestGetArrayElementStepDesc:
     Offset: '0xb0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JHW6N[0x4]
+  - Name: pad0x4_QD5RC[0x4]
     Offset: '0xb4'
     Size: '0x4'
     Type: char
@@ -2366,7 +2434,7 @@ TaleQuestGetParticipatingCrewsInRadiusStepDesc:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_441T2[0x4]
+  - Name: pad0x4_Q2WXI[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -2414,7 +2482,7 @@ TaleQuestGrantRewardStepDesc:
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_T0OFV[0x7]
+  - Name: pad0x7_WVHIK[0x7]
     Offset: '0xa1'
     Size: '0x7'
     Type: char
@@ -2430,6 +2498,12 @@ TaleQuestGrantRewardStepDesc:
   FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestHealthFunctionStepLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestImportFrame:
   Attributes: []
   ClassSize: '0x88'
@@ -2438,7 +2512,7 @@ TaleQuestImportFrame:
   Super: TaleQuestRootFrame
 TaleQuestIndexedFrame:
   Attributes:
-  - Name: pad0x8_I9MYX[0x8]
+  - Name: pad0x8_5YEP5[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -2450,7 +2524,7 @@ TaleQuestIndexedFrame:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4c_TLZQO[0x4c]
+  - Name: pad0x4c_ATX71[0x4c]
     Offset: '0x3c'
     Size: '0x4c'
     Type: char
@@ -2604,6 +2678,12 @@ TaleQuestOfferingNPCFunctionLibrary:
   FullSize: '0x180'
   InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
+TaleQuestParticipantFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
 TaleQuestPermanentPromptStep:
   Attributes: []
   ClassSize: '0x0'
@@ -2620,7 +2700,7 @@ TaleQuestPermanentPromptStepDesc:
     Offset: '0xb0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_F0MI4[0x7]
+  - Name: pad0x7_DVVLT[0x7]
     Offset: '0xb1'
     Size: '0x7'
     Type: char
@@ -2634,7 +2714,7 @@ TaleQuestPersistentForEachCrewTaskStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class TaleQuestPersistentForEachCrewTaskStepDesc*
-  - Name: pad0x50_GU0A7[0x50]
+  - Name: pad0x50_3O9WT[0x50]
     Offset: '0xa0'
     Size: '0x50'
     Type: char
@@ -2664,7 +2744,7 @@ TaleQuestQueryableStateCanAllDataBeReadNPCDialogConditional:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RZOEO[0x7]
+  - Name: pad0x7_KWUJB[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -2682,7 +2762,7 @@ TaleQuestQueryableStateCanAnyDataBeReadNPCDialogConditional:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Z47NP[0x7]
+  - Name: pad0x7_HDYPN[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -2706,7 +2786,7 @@ TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4GBN2[0x7]
+  - Name: pad0x7_PQW65[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -2724,7 +2804,7 @@ TaleQuestQueryableStateReadAnyValueBoolNPCDialogConditional:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VSYC1[0x7]
+  - Name: pad0x7_MMZ4K[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -2758,7 +2838,7 @@ TaleQuestQueryableStateReadValueIntNPCDialogConditional:
     Offset: '0x3c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_AV8NQ[0x3]
+  - Name: pad0x3_THLW4[0x3]
     Offset: '0x3d'
     Size: '0x3'
     Type: char
@@ -2780,7 +2860,7 @@ TaleQuestQueryableStateWriteIntFunctionLibrary:
   Super: TaleQuestFunctionStepLibrary
 TaleQuestQueryableStatesAccessComponent:
   Attributes:
-  - Name: pad0x10_NLWDZ[0x10]
+  - Name: pad0x10_2DZKP[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -2794,7 +2874,7 @@ TaleQuestQueryableStatesAccessComponent:
   Super: ActorComponent
 TaleQuestQueryableStatesQuantityContainerComponent:
   Attributes:
-  - Name: pad0x8_8Q8JY[0x8]
+  - Name: pad0x8_YE8R7[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -2810,7 +2890,7 @@ TaleQuestQueryableStatesQuantityContainerComponent:
     Offset: '0xe0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_2UTCL[0x4]
+  - Name: pad0x4_2QQV4[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -2836,7 +2916,7 @@ TaleQuestQueryableStatesService:
     Offset: '0x60'
     Size: '0x10'
     Type: TArray<struct AllData>
-  - Name: pad0x30_Z3ZH3[0x30]
+  - Name: pad0x30_KQSSS[0x30]
     Offset: '0x70'
     Size: '0x30'
     Type: char
@@ -2948,7 +3028,7 @@ TaleQuestSelectEntryFromArrayStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestSelectShipwreckLocationFromValidCandidatesStep:
   Attributes:
-  - Name: pad0x78_4SE2F[0x78]
+  - Name: pad0x78_1RJRZ[0x78]
     Offset: '0x98'
     Size: '0x78'
     Type: char
@@ -2956,7 +3036,7 @@ TaleQuestSelectShipwreckLocationFromValidCandidatesStep:
     Offset: '0x110'
     Size: '0x8'
     Type: Class TaleQuestSelectorService*
-  - Name: pad0x118_VXB9R[0x118]
+  - Name: pad0x118_EESAW[0x118]
     Offset: '0x118'
     Size: '0x118'
     Type: char
@@ -2992,7 +3072,7 @@ TaleQuestSelectorService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestSelectorServiceDesc*
-  - Name: pad0x20_GSGR3[0x20]
+  - Name: pad0x20_YBAA9[0x20]
     Offset: '0x68'
     Size: '0x20'
     Type: char
@@ -3042,7 +3122,7 @@ TaleQuestShipSetSinkingParamsService:
     Offset: '0x60'
     Size: '0x8'
     Type: Class TaleQuestShipSetSinkingParamsServiceDesc*
-  - Name: pad0x48_NR1HP[0x48]
+  - Name: pad0x48_D6J4N[0x48]
     Offset: '0x68'
     Size: '0x48'
     Type: char
@@ -3084,7 +3164,7 @@ TaleQuestShipSurfaceStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NDQZH[0x4]
+  - Name: pad0x4_7POW8[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -3178,7 +3258,7 @@ TaleQuestStartCameraFadeStepDesc:
     Offset: '0x9d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_RH0WO[0x2]
+  - Name: pad0x2_HFSQA[0x2]
     Offset: '0x9e'
     Size: '0x2'
     Type: char
@@ -3204,7 +3284,7 @@ TaleQuestStartPermanentPromptAndWaitForEndEventStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestStep:
   Attributes:
-  - Name: pad0x60_4PMRD[0x60]
+  - Name: pad0x60_XKHTQ[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -3212,7 +3292,7 @@ TaleQuestStep:
     Offset: '0x88'
     Size: '0x8'
     Type: Class TaleQuestStepDesc*
-  - Name: pad0x8_KQMYN[0x8]
+  - Name: pad0x8_2SQ3O[0x8]
     Offset: '0x90'
     Size: '0x8'
     Type: char
@@ -3226,11 +3306,11 @@ TaleQuestStepDesc:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_01GJL[0x7]
+  - Name: pad0x7_IBZSK[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
-  - Name: pad0x50_EZ9VP[0x50]
+  - Name: pad0x50_7VSQU[0x50]
     Offset: '0x30'
     Size: '0x50'
     Type: char
@@ -3246,7 +3326,7 @@ TaleQuestStepInterface:
   Super: Interface
 TaleQuestStoryBranchFunctionLibrary:
   Attributes:
-  - Name: pad0x8_7FZLP[0x8]
+  - Name: pad0x8_VB7ZA[0x8]
     Offset: '0x180'
     Size: '0x8'
     Type: char
@@ -3258,7 +3338,7 @@ TaleQuestStoryBranchFunctionLibrary:
     Offset: '0x190'
     Size: '0x8'
     Type: Class TaleQuestStepDesc*
-  - Name: pad0x30_Q8R4Z[0x30]
+  - Name: pad0x30_149O2[0x30]
     Offset: '0x198'
     Size: '0x30'
     Type: char
@@ -3284,7 +3364,7 @@ TaleQuestStructStepDescBase:
     Offset: '0x80'
     Size: '0x8'
     Type: Class ScriptStruct*
-  - Name: pad0x50_UBP52[0x50]
+  - Name: pad0x50_0R58T[0x50]
     Offset: '0x88'
     Size: '0x50'
     Type: char
@@ -3314,7 +3394,7 @@ TaleQuestToggleAmbientMigrationForServerStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_S52HH[0x7]
+  - Name: pad0x7_M63DX[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -3324,7 +3404,7 @@ TaleQuestToggleAmbientMigrationForServerStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestToggleInteractionDescriptionService:
   Attributes:
-  - Name: pad0x50_TNX13[0x50]
+  - Name: pad0x50_MSS4R[0x50]
     Offset: '0x60'
     Size: '0x50'
     Type: char
@@ -3346,7 +3426,7 @@ TaleQuestToggleInteractionDescriptionServiceDesc:
     Offset: '0x29'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_MAO30[0x6]
+  - Name: pad0x6_DDXHV[0x6]
     Offset: '0x2a'
     Size: '0x6'
     Type: char
@@ -3446,7 +3526,7 @@ TaleQuestWaitForHandInStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class TaleQuestWaitForHandInStepDesc*
-  - Name: pad0x8_Q2HTM[0x8]
+  - Name: pad0x8_BC73K[0x8]
     Offset: '0xa0'
     Size: '0x8'
     Type: char
@@ -3480,7 +3560,7 @@ TaleQuestWaterVolumeFunctionLibrary:
   Super: TaleQuestFunctionStepLibrary
 TaleResourceBrokerService:
   Attributes:
-  - Name: pad0x20_ZGJDY[0x20]
+  - Name: pad0x20_MXZK3[0x20]
     Offset: '0x60'
     Size: '0x20'
     Type: char
@@ -3488,7 +3568,7 @@ TaleResourceBrokerService:
     Offset: '0x80'
     Size: '0x10'
     Type: TArray<struct MigrationActions>
-  - Name: pad0x18_YKCL8[0x18]
+  - Name: pad0x18_W5IUP[0x18]
     Offset: '0x90'
     Size: '0x18'
     Type: char
@@ -3548,7 +3628,7 @@ WaitForActorOfInterestToUnregisterStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class WaitForActorOfInterestToUnregisterStepDesc*
-  - Name: pad0x80_BGPPK[0x80]
+  - Name: pad0x80_NMEL2[0x80]
     Offset: '0xa0'
     Size: '0x80'
     Type: char
@@ -3596,7 +3676,7 @@ WaitForGameEventToCompleteStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class GameEvent*
-  - Name: pad0x8_SZLBZ[0x8]
+  - Name: pad0x8_AVML5[0x8]
     Offset: '0xa0'
     Size: '0x8'
     Type: char
@@ -3630,7 +3710,7 @@ WaitForHealthToReachFractionStepDesc:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2E4LZ[0x4]
+  - Name: pad0x4_TY60N[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -3664,7 +3744,7 @@ WaitForQueryableStateValueBoolStepDesc:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_910DX[0x7]
+  - Name: pad0x7_B2L2H[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char
@@ -3682,7 +3762,7 @@ WaitForQueryableStateValueIntStepDesc:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RPLIG[0x3]
+  - Name: pad0x3_YGUV2[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -3712,7 +3792,7 @@ WaitForSpawnedPawnBaseStep:
     Offset: '0x98'
     Size: '0x8'
     Type: Class AISpawner*
-  - Name: pad0x10_CU4ZB[0x10]
+  - Name: pad0x10_25L95[0x10]
     Offset: '0xa0'
     Size: '0x10'
     Type: char
@@ -3745,8 +3825,8 @@ WaitUntilAllParticipantsLeaveRadiusStep:
 WaitUntilAnyParticipantEntersAnyRadiusStep:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x118'
-  InheritedSize: '0x118'
+  FullSize: '0x148'
+  InheritedSize: '0x148'
   Super: ParticipantRadiusArrayTrackerStepDesc
 WaitUntilAnyParticipantEntersRadiusStep:
   Attributes: []

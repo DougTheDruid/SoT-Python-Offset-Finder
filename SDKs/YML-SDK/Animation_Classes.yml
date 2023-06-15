@@ -16,7 +16,7 @@ AnimNotifyCondition_FeatureConfigValidation:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XDDNZ[0x7]
+  - Name: pad0x7_MAO82[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -27,108 +27,108 @@ AnimNotifyCondition_FeatureConfigValidation:
 AnimNotifyState_HideMeshByBoneForDuration:
   Attributes:
   - Name: BoneName
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x8'
-  FullSize: '0x30'
-  InheritedSize: '0x28'
+  FullSize: '0x38'
+  InheritedSize: '0x30'
   Super: AnimNotifyState
 AnimNotifyState_PropagateCurveValuesToMaterials:
   Attributes:
   - Name: CurveValues
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x10'
     Type: TArray<struct CurveValues>
   - Name: DoNotPropagteCurveValues
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_8JL5R[0x17]
-    Offset: '0x39'
+  - Name: pad0x17_KY8ZA[0x17]
+    Offset: '0x41'
     Size: '0x17'
     Type: char
   ClassSize: '0x28'
-  FullSize: '0x50'
-  InheritedSize: '0x28'
+  FullSize: '0x58'
+  InheritedSize: '0x30'
   Super: AnimNotifyState
 AnimNotifyState_SetLookAtDisabledForDuration:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
   Super: AnimNotifyState
 AnimNotifyState_SetLookAtEnabledForDuration:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
   Super: AnimNotifyState
 AnimNotifyState_SetMeshInvisibleForDuration:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
   Super: AnimNotifyState
 AnimNotifyState_SpawnCosmeticItem:
   Attributes:
   - Name: CosmeticItemToSpawn
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x8'
     Type: class
   - Name: SpawnLocation
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_C0ND9[0x7]
-    Offset: '0x31'
+  - Name: pad0x7_N3493[0x7]
+    Offset: '0x39'
     Size: '0x7'
     Type: char
   - Name: CosmeticItemAnimationDataSet
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x8'
     Type: Class CosmeticItemAnimationSetDataAsset*
   - Name: SpawnHidden
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x1'
     Type: bool
   - Name: DestroyOnEnd
-    Offset: '0x41'
+    Offset: '0x49'
     Size: '0x1'
     Type: bool
   - Name: OverrideDestroyLocation
-    Offset: '0x42'
+    Offset: '0x4a'
     Size: '0x1'
     Type: bool
   - Name: DestroyLocation
-    Offset: '0x43'
+    Offset: '0x4b'
     Size: '0x1'
     Type: byte
-  - Name: pad0x4_9FU2T[0x4]
-    Offset: '0x44'
+  - Name: pad0x4_KT0KW[0x4]
+    Offset: '0x4c'
     Size: '0x4'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0x48'
-  InheritedSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x30'
   Super: AnimNotifyState
 AnimNotifyState_ToggleIK:
   Attributes:
   - Name: IKLimbsToAdjust
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x10'
     Type: TArray<Byte IKLimbsToAdjust>
   - Name: Enabled
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x57_9VU3Z[0x57]
-    Offset: '0x39'
+  - Name: pad0x57_XH88Y[0x57]
+    Offset: '0x41'
     Size: '0x57'
     Type: char
   ClassSize: '0x68'
-  FullSize: '0x90'
-  InheritedSize: '0x28'
+  FullSize: '0x98'
+  InheritedSize: '0x30'
   Super: AnimNotifyState
 AnimNotify_DestroyAllCosmeticItems:
   Attributes: []
@@ -142,7 +142,7 @@ AnimNotify_DestroyCosmeticItem:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_9Z9V3[0x7]
+  - Name: pad0x7_SAVES[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -156,7 +156,7 @@ AnimNotify_DetachAndMaintainWorldPosition:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_LRJOV[0x3]
+  - Name: pad0x3_V9S9M[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -168,7 +168,7 @@ AnimNotify_DetachAndMaintainWorldPosition:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KKT42[0x4]
+  - Name: pad0x4_LFZ9Y[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ AnimNotify_PlayAnimationForCosmetic:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_HDPDO[0x7]
+  - Name: pad0x7_174B3[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -194,7 +194,7 @@ AnimNotify_PlayAnimationForCosmetic:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3BOMT[0x7]
+  - Name: pad0x7_L25SQ[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -208,6 +208,24 @@ AnimNotify_PlayMontage:
     Offset: '0x38'
     Size: '0x8'
     Type: Class AnimMontage*
+  ClassSize: '0x8'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
+  Super: AnimNotify
+AnimNotify_ReattachCosmeticItem:
+  Attributes:
+  - Name: CurrentLocation
+    Offset: '0x38'
+    Size: '0x1'
+    Type: byte
+  - Name: NewLocation
+    Offset: '0x39'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x6_9K757[0x6]
+    Offset: '0x3a'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x40'
   InheritedSize: '0x38'
@@ -238,7 +256,7 @@ AnimNotify_SetCosmeticItemVisibility:
     Offset: '0x3d'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_80URQ[0x2]
+  - Name: pad0x2_13NFO[0x2]
     Offset: '0x3e'
     Size: '0x2'
     Type: char
@@ -252,7 +270,7 @@ AnimNotify_SetLookAtEnabled:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RAF44[0x7]
+  - Name: pad0x7_NIJ82[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -270,7 +288,7 @@ AnimNotify_SpawnCosmeticItem:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_DNHQK[0x7]
+  - Name: pad0x7_37UN1[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -290,7 +308,7 @@ AnimNotify_SpawnCosmeticItem:
     Offset: '0x52'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_S7RKX[0x5]
+  - Name: pad0x5_CB0FR[0x5]
     Offset: '0x53'
     Size: '0x5'
     Type: char
@@ -318,7 +336,7 @@ AnimNotify_SwitchCosmeticItemAttachment:
     Offset: '0x39'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_KFAX8[0x6]
+  - Name: pad0x6_IOD9G[0x6]
     Offset: '0x3a'
     Size: '0x6'
     Type: char
@@ -336,7 +354,7 @@ AnimNotify_ToggleIK:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_TW0QZ[0x7]
+  - Name: pad0x7_NMQF8[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -370,7 +388,7 @@ AnimationDataOverriderInterface:
   Super: Interface
 AnimationDataStore:
   Attributes:
-  - Name: pad0x18_UDEJS[0x18]
+  - Name: pad0x18_JGSO0[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -398,7 +416,7 @@ AnimationDataStoreAsset:
   Super: DataAsset
 AnimationDataStoreComponent:
   Attributes:
-  - Name: pad0x8_L6R3R[0x8]
+  - Name: pad0x8_5BU9P[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -406,7 +424,7 @@ AnimationDataStoreComponent:
     Offset: '0xd0'
     Size: '0x8'
     Type: Class AnimationDataStoreWeakReferenceAsset*
-  - Name: pad0xb8_SFV2R[0xb8]
+  - Name: pad0xb8_C6NRO[0xb8]
     Offset: '0xd8'
     Size: '0xb8'
     Type: char
@@ -484,7 +502,7 @@ AthenaAnimationControllableSocketsInterface:
   Super: Interface
 CharacterAnimationInstance:
   Attributes:
-  - Name: pad0x10_S56FP[0x10]
+  - Name: pad0x10_7JOC1[0x10]
     Offset: '0x440'
     Size: '0x10'
     Type: char
@@ -538,7 +556,7 @@ ClientSkeletalMeshComponent:
   Super: SkeletalMeshComponent
 CosmeticItemActor:
   Attributes:
-  - Name: pad0x8_BB31K[0x8]
+  - Name: pad0x8_V1LBI[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -546,7 +564,7 @@ CosmeticItemActor:
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SkeletalMeshComponent*
-  - Name: pad0xa0_9JNR8[0xa0]
+  - Name: pad0xa0_LYQBE[0xa0]
     Offset: '0x3d8'
     Size: '0xa0'
     Type: char
@@ -556,7 +574,7 @@ CosmeticItemActor:
   Super: Actor
 CosmeticItemAnimationComponent:
   Attributes:
-  - Name: pad0x58_JY442[0x58]
+  - Name: pad0x58_VP75B[0x58]
     Offset: '0xc8'
     Size: '0x58'
     Type: char
@@ -564,7 +582,7 @@ CosmeticItemAnimationComponent:
     Offset: '0x120'
     Size: '0x8'
     Type: Class CosmeticItemAnimationDataAsset*
-  - Name: pad0x8_SXTBQ[0x8]
+  - Name: pad0x8_KTIAD[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -578,7 +596,7 @@ CosmeticItemAnimationDataAsset:
     Offset: '0x28'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x30_29RUT[0x30]
+  - Name: pad0x30_IPYFO[0x30]
     Offset: '0x30'
     Size: '0x30'
     Type: char
@@ -594,7 +612,7 @@ CosmeticItemAnimationDataConsumerInterface:
   Super: Interface
 CosmeticItemAnimationInstance:
   Attributes:
-  - Name: pad0x8_ON5MM[0x8]
+  - Name: pad0x8_FZUYZ[0x8]
     Offset: '0x440'
     Size: '0x8'
     Type: char
@@ -606,7 +624,7 @@ CosmeticItemAnimationInstance:
     Offset: '0x450'
     Size: '0x8'
     Type: Class AnimMontage*
-  - Name: pad0xa8_FUFD4[0xa8]
+  - Name: pad0xa8_PPSHN[0xa8]
     Offset: '0x458'
     Size: '0xa8'
     Type: char
@@ -654,7 +672,7 @@ CustomAnimationInstanceProviderInterface:
   Super: Interface
 CustomAnimationMontageComponent:
   Attributes:
-  - Name: pad0x8_IWL1D[0x8]
+  - Name: pad0x8_0ZUSH[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -662,7 +680,7 @@ CustomAnimationMontageComponent:
     Offset: '0xd0'
     Size: '0xc'
     Type: Struct CustomAnimationMontageComponentReplicatedData
-  - Name: pad0x6c_DS2IR[0x6c]
+  - Name: pad0x6c_B0ZGZ[0x6c]
     Offset: '0xdc'
     Size: '0x6c'
     Type: char
@@ -680,7 +698,7 @@ CustomAnimationMontageDefinitionDataAsset:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_OINN4[0x7]
+  - Name: pad0x7_NZ20E[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -696,7 +714,7 @@ CustomAnimationMontageDefinitionDataAsset:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1PSXI[0x7]
+  - Name: pad0x7_S8K4X[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -798,7 +816,7 @@ NetworkSyncedAnimationComponent:
     Offset: '0xdc'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_1HNIJ[0x8]
+  - Name: pad0x8_IS23P[0x8]
     Offset: '0xe0'
     Size: '0x8'
     Type: char
@@ -806,7 +824,7 @@ NetworkSyncedAnimationComponent:
     Offset: '0xe8'
     Size: '0x8'
     Type: Class AnimInstance*
-  - Name: pad0x20_TGZ4H[0x20]
+  - Name: pad0x20_2DVCK[0x20]
     Offset: '0xf0'
     Size: '0x20'
     Type: char
@@ -826,7 +844,7 @@ PreviewCharacterAnimationInstance:
     Offset: '0x660'
     Size: '0x8'
     Type: Class AnimMontage*
-  - Name: pad0x88_KVV28[0x88]
+  - Name: pad0x88_NO8T8[0x88]
     Offset: '0x668'
     Size: '0x88'
     Type: char
@@ -858,7 +876,7 @@ SyncGroupAnimMetaData:
   Super: AnimMetaData
 TransformBlendCurveComponent:
   Attributes:
-  - Name: pad0x8_JIFAK[0x8]
+  - Name: pad0x8_G5JTW[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -898,7 +916,7 @@ WeightedAnimSequenceLoadOnDemand:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<struct WeightedAnimationList>
-  - Name: pad0xe0_6ZSG8[0xe0]
+  - Name: pad0xe0_UW27X[0xe0]
     Offset: '0x40'
     Size: '0xe0'
     Type: char

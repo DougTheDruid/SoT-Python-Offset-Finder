@@ -74,7 +74,7 @@ BP_CoralFortress_WeatherZone_C:
     Offset: '0x44c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_C66BQ[0x3]
+  - Name: pad0x3_TGSBJ[0x3]
     Offset: '0x44d'
     Size: '0x3'
     Type: char
@@ -90,7 +90,7 @@ BP_CoralFortress_WeatherZone_C:
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XR3AK[0x4]
+  - Name: pad0x4_WX41Q[0x4]
     Offset: '0x46c'
     Size: '0x4'
     Type: char

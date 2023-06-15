@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_NonRotatableSignalCloud_C:
   Attributes:
-  - Name: UberGraphFrame
-    Offset: '0x4a8'
+  - Name: None
+    Offset: '0x528'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   ClassSize: '0x8'
-  FullSize: '0x4b0'
-  InheritedSize: '0x4a8'
+  FullSize: '0x530'
+  InheritedSize: '0x528'
   Super: GameplayEventSignal_StaticMesh

@@ -45,7 +45,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_1TN1V[0x4]",
+        "Name": "pad0x4_E8PZV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -92,7 +92,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_6XA5S[0x4]",
+        "Name": "pad0x4_JKWJF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -110,16 +110,10 @@
         "Offset": "0x188"
       },
       {
-        "Name": "PendulumLength",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "WindResistanceMinMaxAngleDegrees",
+        "Type": "Struct Vector2D",
+        "Size": "0x8",
         "Offset": "0x2f8"
-      },
-      {
-        "Name": "PlayerVerticalOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2fc"
       },
       {
         "Name": "FOVMinMaxSpeed",
@@ -135,9 +129,105 @@
       }
     ]
   },
+  "OnUpdateZiplineActionStateEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": []
+  },
+  "OnEndZiplineActionStateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ZiplineEnd",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ZiplineEndLoop",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnStartZiplineActionStateEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ZiplineStart",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ZiplineAdditiveOneShot",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ZiplineLoopStart",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ZiplineWindVFX",
+        "Type": "Class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ZiplineTrailVFX",
+        "Type": "Class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "OnExitedRideEvent": {
     "ClassSize": "0x1",
     "Attributes": []
+  },
+  "RideTransitionActionStateConstructionInfo": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "Ride",
+        "Type": "Class Ride*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Direction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_S12BV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "Offset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "RideTransitionActionStateParams": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Duration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
   },
   "WaterSlideActionStateConstructionInfo": {
     "ClassSize": "0x38",
@@ -166,7 +256,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_NO21L[0x3]",
+        "Name": "pad0x3_D3DDM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"

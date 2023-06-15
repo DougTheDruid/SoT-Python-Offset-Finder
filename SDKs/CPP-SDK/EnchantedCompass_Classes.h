@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40 (Full Size[0xa10] - InheritedSize[0x9d0]
+// Size 0x50 (Full Size[0xa20] - InheritedSize[0x9d0]
 class RotatingCompass: public EnchantedCompass
 {
 public:
@@ -14,12 +14,17 @@ public:
 	Class PoseableMeshMemoryConstraintComponent*                 PoseableStashedMeshComponent;                      // 0x9d0(0x8)
 	Class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x9d8(0x8)
 	Class Actor*                                                 SplinePathActor;                                   // 0x9e0(0x8)
-	float                                                        SplineOffset;                                      // 0x9e8(0x4)
-	float                                                        RotatingCompassMagnetForce;                        // 0x9ec(0x4)
-	float                                                        TargetYawAngle;                                    // 0x9f0(0x4)
-	char                                                         pad0xc_PE2MH[0xc];                                 // 0x9f4(0xc)
-	bool                                                         IsUsingLocalSpaceTarget;                           // 0xa00(0x1)
-	char                                                         pad0xf_YBPK3[0xf];                                 // 0xa01(0xf)
+	Class CurveFloat*                                            RotationSequenceCurve;                             // 0x9e8(0x8)
+	Class RotatingCompassSpinComponent*                          RotatingCompassSpinComponent;                      // 0x9f0(0x8)
+	byte                                                         RotationState;                                     // 0x9f8(0x1)
+	char                                                         pad0x3_HL7MH[0x3];                                 // 0x9f9(0x3)
+	float                                                        SplineDistanceOffset;                              // 0x9fc(0x4)
+	float                                                        TargetYawAngleBeforeRotationSequence;              // 0xa00(0x4)
+	float                                                        RotatingCompassMagnetForce;                        // 0xa04(0x4)
+	float                                                        TargetYawAngle;                                    // 0xa08(0x4)
+	char                                                         pad0x8_W1IUA[0x8];                                 // 0xa0c(0x8)
+	bool                                                         IsUsingLocalSpaceTarget;                           // 0xa14(0x1)
+	char                                                         pad0xb_RXN1N[0xb];                                 // 0xa15(0xb)
 };
 
 
@@ -30,9 +35,9 @@ public:
 	Class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xc8(0x8)
 	Class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xd0(0x8)
 	float                                                        MaxFrequencyDistanceSquared;                       // 0xd8(0x4)
-	char                                                         pad0x4_JCPU0[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_3JSSQ[0x4];                                 // 0xdc(0x4)
 	bool                                                         IsSettingEnabled;                                  // 0x120(0x1)
-	char                                                         pad0xef_FNZV5[0xef];                               // 0x121(0xef)
+	char                                                         pad0xef_1IJXZ[0xef];                               // 0x121(0xef)
 };
 
 
@@ -44,12 +49,19 @@ public:
 	TArray<struct LocationIds>                                   LocationIds;                                       // 0x8e8(0x10)
 	Class InventoryItemComponent*                                InventoryItem;                                     // 0x8f8(0x8)
 	Class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x900(0x8)
-	char                                                         pad0x8_2X0BG[0x8];                                 // 0x908(0x8)
+	char                                                         pad0x8_LWLLK[0x8];                                 // 0x908(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x910] - InheritedSize[0x910]
 class PrototypeMultiTargetEnchantedCompass: public MultiTargetEnchantedCompass
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x1f0] - InheritedSize[0x1e8]
+class RotatingCompassSpinComponent: public CompassSpinComponent
 {
 public:
 };
@@ -108,10 +120,10 @@ class TaleQuestRotatingCompassService: public TaleQuestService
 public:
 	Class Actor*                                                 SplinePathActor;                                   // 0x60(0x8)
 	Class RotatingCompass*                                       RotatingCompass;                                   // 0x68(0x8)
-	char                                                         pad0x18_PNNDM[0x18];                               // 0x70(0x18)
+	char                                                         pad0x18_PCGBU[0x18];                               // 0x70(0x18)
 	Struct Vector                                                RotatingCompassTargetLocation;                     // 0x88(0xc)
 	float                                                        RotatingCompassMagnetForce;                        // 0x94(0x4)
-	char                                                         pad0x98_3A5KI[0x98];                               // 0x98(0x98)
+	char                                                         pad0x98_C69B8[0x98];                               // 0x98(0x98)
 };
 
 
@@ -156,7 +168,7 @@ class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         TargetUpdateReason;                                // 0x80(0x1)
-	char                                                         pad0x7_Y3S6B[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_UJOQC[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -188,7 +200,7 @@ class TaleQuestSetRotatingCompassMagnetForceStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        MagnetForce;                                       // 0x80(0x4)
-	char                                                         pad0x4_6PRAK[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_A7PAQ[0x4];                                 // 0x84(0x4)
 };
 
 
@@ -204,7 +216,22 @@ class TaleQuestSetRotatingCompassTargetAngleStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        TargetAngle;                                       // 0x80(0x4)
-	char                                                         pad0x4_KJ41A[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_90FK0[0x4];                                 // 0x84(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestSetRotationCurveForRotatingCompassStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestSetRotationCurveForRotatingCompassStepDesc: public TaleQuestStepDesc
+{
+public:
+	Class CurveFloat*                                            RotationSequenceCurve;                             // 0x80(0x8)
 };
 
 

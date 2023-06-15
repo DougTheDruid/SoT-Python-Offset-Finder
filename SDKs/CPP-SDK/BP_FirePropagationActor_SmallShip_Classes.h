@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_FirePropagationActor_SmallShip_C: public Actor
 {
 public:
-	Class ShipFirePropagationComponent*                          None;                                              // 0x3c8(0x8)
-	char                                                         pad0x8_08XKV[0x8];                                 // 0x3d0(0x8)
+	Class ShipFirePropagationComponent*                          ShipFirePropagation;                               // 0x3c8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 

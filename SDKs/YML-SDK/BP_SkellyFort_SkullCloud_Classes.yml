@@ -3,10 +3,10 @@
 BP_SkellyFort_SkullCloud_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x4b8'
+    Offset: '0x538'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   ClassSize: '0x8'
-  FullSize: '0x4c0'
-  InheritedSize: '0x4b8'
+  FullSize: '0x540'
+  InheritedSize: '0x538'
   Super: BP_RotatableSignalCloud_C

@@ -1,15 +1,4 @@
 {
-  "WeightedProbabilityRangeOfRanges": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "SubRanges",
-        "Type": "TArray<struct SubRanges>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "WeightedProbabilityRange": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -18,6 +7,17 @@
         "Type": "TArray<Float Weights>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "WeightedProbabilityRangeOfRanges": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SubRanges",
+        "Type": "TArray<struct SubRanges>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
@@ -77,7 +77,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_HUX14[0x3]",
+        "Name": "pad0x3_FJSWV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -119,7 +119,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_WR2S1[0xc]",
+        "Name": "pad0xc_VLC4E[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"

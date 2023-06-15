@@ -4,22 +4,22 @@ GameEventAvailabilityData:
   Attributes:
   - Name: EventName
     Offset: '0x0'
-    Size: '0x8'
-    Type: struct FName
+    Size: '0x10'
+    Type: Struct FString
   - Name: EventCategory
-    Offset: '0x8'
+    Offset: '0x10'
     Size: '0x1'
     Type: byte
   - Name: AvailabilityState
-    Offset: '0x9'
+    Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_4OWAB[0x6]
-    Offset: '0xa'
+  - Name: pad0x6_EW8E7[0x6]
+    Offset: '0x12'
     Size: '0x6'
     Type: char
   - Name: ShipSizeLimit
-    Offset: '0x10'
+    Offset: '0x18'
     Size: '0x8'
     Type: class
-  ClassSize: '0x18'
+  ClassSize: '0x20'

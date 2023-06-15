@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_MermaidService_C: public MermaidService
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x558(0x8)
+	Class SceneComponent*                                        None;                                              // 0x558(0x8)
 };
 
 

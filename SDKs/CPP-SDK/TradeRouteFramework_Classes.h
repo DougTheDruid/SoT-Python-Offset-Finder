@@ -11,7 +11,7 @@ class TradeRouteDifficultyBand: public Object
 {
 public:
 	int                                                          MinimumRank;                                       // 0x28(0x4)
-	char                                                         pad0x4_O6NU8[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_4IXV7[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -23,7 +23,7 @@ public:
 	Struct IslandSelectionType                                   EndIsland;                                         // 0x30(0x8)
 	Struct PlayerStat                                            RouteCompletionStat;                               // 0x38(0x4)
 	byte                                                         MapOrientation;                                    // 0x3c(0x1)
-	char                                                         pad0x3_FEIOL[0x3];                                 // 0x3d(0x3)
+	char                                                         pad0x3_NF5RC[0x3];                                 // 0x3d(0x3)
 	Struct TradeRouteMapData                                     TradeRouteMapData;                                 // 0x40(0x80)
 };
 
@@ -40,7 +40,7 @@ class TaleQuestGetProjectionPointOnTradeRouteStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        ProjectionProportion;                              // 0x80(0x4)
-	char                                                         pad0x4_VRSZX[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_EIVR0[0x4];                                 // 0x84(0x4)
 	Struct QuestVariableVector                                   SourcePoint;                                       // 0x88(0x30)
 	Struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xb8(0x30)
 	Struct QuestVariableVector                                   ProjectedPoint;                                    // 0xe8(0x30)
@@ -52,7 +52,7 @@ class TaleQuestSelectTradeRouteStep: public TaleQuestStep
 {
 public:
 	Class TaleQuestSelectTradeRouteStepDesc*                     Desc;                                              // 0x98(0x8)
-	char                                                         pad0x18_H2GNE[0x18];                               // 0xa0(0x18)
+	char                                                         pad0x18_694ZF[0x18];                               // 0xa0(0x18)
 };
 
 
@@ -61,7 +61,7 @@ class TaleQuestSelectTradeRouteStepDesc: public TaleQuestStepDesc
 {
 public:
 	int                                                          NumSelectFromClosestIslands;                       // 0x80(0x4)
-	char                                                         pad0x4_33Q3J[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_TGCPZ[0x4];                                 // 0x84(0x4)
 	Struct QuestVariableVector                                   SelectionOriginPointVar;                           // 0x88(0x30)
 	Struct QuestVariableInt                                      TradeRouteDifficulty;                              // 0xb8(0x30)
 	Struct QuestVariableTradeRouteData                           TradeRoute;                                        // 0xe8(0x30)

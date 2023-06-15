@@ -49,7 +49,7 @@ struct HangoutSpotParams
 public:
 	struct FName                                                 HangoutSpotName;                                   // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
-	char                                                         pad0x4_93R3Y[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_ZLCQR[0x4];                                 // 0xc(0x4)
 	TArray<struct PetParams>                                     PetParams;                                         // 0x10(0x10)
 	struct FName                                                 FeatureName;                                       // 0x20(0x8)
 };
@@ -80,7 +80,7 @@ struct PetDangerHearingThreat
 public:
 	struct FName                                                 SoundTag;                                          // 0x0(0x8)
 	float                                                        TimeBeforeForgotten;                               // 0x8(0x4)
-	char                                                         pad0x4_EU93E[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_CIACD[0x4];                                 // 0xc(0x4)
 	TArray<struct Responses>                                     Responses;                                         // 0x10(0x10)
 };
 
@@ -106,7 +106,7 @@ struct PetFeedingAnimationData
 {
 public:
 	byte                                                         AnimationState;                                    // 0x0(0x1)
-	char                                                         pad0x3_M7N9F[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_TXGUY[0x3];                                 // 0x1(0x3)
 	float                                                        AnimationTimeout;                                  // 0x4(0x4)
 };
 
@@ -116,16 +116,16 @@ struct HangoutSpotPosition
 {
 public:
 	Struct HangoutSpotId                                         Id;                                                // 0x0(0x8)
-	char                                                         pad0x8_AI5OX[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_BI5B1[0x8];                                 // 0x8(0x8)
 	Struct Transform                                             Transform;                                         // 0x10(0x30)
 	byte                                                         RotationMode;                                      // 0x40(0x1)
 	byte                                                         ShipDeck;                                          // 0x41(0x1)
-	char                                                         pad0x6_LW7JS[0x6];                                 // 0x42(0x6)
+	char                                                         pad0x6_BV8LA[0x6];                                 // 0x42(0x6)
 	Class Pawn*                                                  Occupier;                                          // 0x48(0x8)
-	char                                                         pad0x10_PZXA6[0x10];                               // 0x50(0x10)
+	char                                                         pad0x10_AL5PI[0x10];                               // 0x50(0x10)
 	bool                                                         IsPerch;                                           // 0x60(0x1)
 	bool                                                         NeedOverrideInteractionPoint;                      // 0x61(0x1)
-	char                                                         pad0x2_CPOIB[0x2];                                 // 0x62(0x2)
+	char                                                         pad0x2_JYAL5[0x2];                                 // 0x62(0x2)
 	Struct Vector                                                OverrideInteractionPointPosition;                  // 0x64(0xc)
 	bool                                                         BlockPetEmoteReactions;                            // 0x70(0x1)
 	bool                                                         IgnorePickupFromHangoutTooltipDisplayOffset;       // 0x71(0x1)
@@ -173,12 +173,12 @@ struct ReactStateMapping
 public:
 	struct FName                                                 AnimationID;                                       // 0x0(0x8)
 	bool                                                         CanTimeout;                                        // 0x8(0x1)
-	char                                                         pad0x3_I94DB[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_7D1VC[0x3];                                 // 0x9(0x3)
 	float                                                        AnimationTimeout;                                  // 0xc(0x4)
 	Struct WeightedPetAnimationSelector                          PetStateSelector;                                  // 0x10(0xa0)
 	float                                                        AnimationChance;                                   // 0xb0(0x4)
 	Struct FloatRange                                            AnimationDelay;                                    // 0xb4(0x10)
-	char                                                         pad0x4_S4N43[0x4];                                 // 0xc4(0x4)
+	char                                                         pad0x4_Y7TVH[0x4];                                 // 0xc4(0x4)
 	TArray<class Class*>                                         IgnoringStrategies;                                // 0xc8(0x10)
 };
 
@@ -196,7 +196,7 @@ struct WieldablePetDropTimeout
 {
 public:
 	byte                                                         RequestReason;                                     // 0x0(0x1)
-	char                                                         pad0x3_DPIG9[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_2WUUM[0x3];                                 // 0x1(0x3)
 	float                                                        DropDelay;                                         // 0x4(0x4)
 };
 
@@ -215,7 +215,7 @@ struct WieldablePetHungerAnimationData
 {
 public:
 	byte                                                         AnimState;                                         // 0x0(0x1)
-	char                                                         pad0x3_JF89T[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_JLGEL[0x3];                                 // 0x1(0x3)
 	float                                                        AnimTimeout;                                       // 0x4(0x4)
 };
 
@@ -370,7 +370,7 @@ struct EventPetPickedUp
 {
 public:
 	bool                                                         IsOnPerch;                                         // 0x0(0x1)
-	char                                                         pad0x3_DW0G4[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_8KO91[0x3];                                 // 0x1(0x3)
 };
 
 
@@ -440,7 +440,7 @@ public:
 	Struct FString                                               OwnerId;                                           // 0x0(0x10)
 	Struct FString                                               PetPartId;                                         // 0x10(0x10)
 	byte                                                         CurrentPetRepresentation;                          // 0x20(0x1)
-	char                                                         pad0x3_3ZUFB[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_F8WUD[0x3];                                 // 0x21(0x3)
 	Struct Vector                                                PetLocation;                                       // 0x24(0xc)
 };
 

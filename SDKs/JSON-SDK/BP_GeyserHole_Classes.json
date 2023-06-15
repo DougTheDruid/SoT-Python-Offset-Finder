@@ -6,40 +6,16 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "CrackMesh",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
+        "Name": "pad0x28_NKNTT[0x28]",
+        "Type": "char",
+        "Size": "0x28",
         "Offset": "0x440"
-      },
-      {
-        "Name": "CrackDecal",
-        "Type": "Class DecalComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "MeshDynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "DecalDynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0x460"
       }
     ]
   },

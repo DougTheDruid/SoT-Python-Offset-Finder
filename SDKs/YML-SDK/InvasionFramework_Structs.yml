@@ -42,7 +42,7 @@ InvasionBannerNetworkEvent:
     Offset: '0x58'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_4W0Z2[0x3]
+  - Name: pad0x3_Z83F4[0x3]
     Offset: '0x59'
     Size: '0x3'
     Type: char
@@ -65,7 +65,7 @@ InvasionCrewData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_TTICB[0x3]
+  - Name: pad0x3_HW44T[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -99,7 +99,7 @@ InvasionEndedTelemetryEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VNXUP[0x4]
+  - Name: pad0x4_NIZ1Y[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -162,7 +162,7 @@ TimeStampedInvasionMusicState:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_NJTY4[0x7]
+  - Name: pad0x7_0RD9J[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

@@ -49,6 +49,21 @@ EventModalInteractionStateChanged:
 EventSpawnedTallTaleQuestItem:
   Attributes: []
   ClassSize: '0x1'
+InteractionOptionSelectedWithQueryableStateNonUI:
+  Attributes:
+  - Name: DataID
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class
+  - Name: InstigatorCrewID
+    Offset: '0x8'
+    Size: '0x10'
+    Type: Struct Guid
+  - Name: InteractingPlayer
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Class Actor*
+  ClassSize: '0x20'
 IslandTypeWeights:
   Attributes:
   - Name: FeatureIslandWeight
@@ -72,6 +87,13 @@ IslandTypeWeights:
     Size: '0x4'
     Type: float
   ClassSize: '0x14'
+JumpToMontageSectionCommand:
+  Attributes:
+  - Name: SectionName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x20'
 MigrationActionPair:
   Attributes:
   - Name: AllocatedResourceHandle
@@ -83,6 +105,17 @@ MigrationActionPair:
     Size: '0x8'
     Type: Class TaleMigrationAction*
   ClassSize: '0x10'
+MontageAnimationCommandBase:
+  Attributes:
+  - Name: MyTarget
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Actor*
+  - Name: MyMontage
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class AnimMontage*
+  ClassSize: '0x18'
 ParticpantToolGroup:
   Attributes: []
   ClassSize: '0x20'
@@ -112,6 +145,17 @@ PhasedItem:
     Size: '0x1'
     Type: bool
   ClassSize: '0x28'
+PlayMontageAnimationCommand:
+  Attributes:
+  - Name: PlayRate
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: Position
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
 PlaySequencerAutomationEvent:
   Attributes: []
   ClassSize: '0x18'
@@ -194,6 +238,39 @@ QuestVariableTaleResourceHandle:
 QuestVariableTexture:
   Attributes: []
   ClassSize: '0x30'
+SetDialogueInteractionEnabledClientCommand:
+  Attributes:
+  - Name: DialogueComponentObject
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class Object*
+  - Name: ShouldBeEnabled
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x18'
+SetDialogueInteractionPromptClientCommand:
+  Attributes:
+  - Name: DialogueComponent
+    Offset: '0x8'
+    Size: '0x8'
+    Type: Class NPCDialogComponent*
+  - Name: Prompt
+    Offset: '0x10'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x48'
+SetNextMontageSectionCommand:
+  Attributes:
+  - Name: FromSectionName
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ToSectionName
+    Offset: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x28'
 SnapshottedActorData:
   Attributes:
   - Name: SnapshotID
@@ -208,7 +285,7 @@ SnapshottedActorData:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_L990X[0x6]
+  - Name: pad0x6_AT4Z0[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -242,6 +319,13 @@ StepMerchantItemDesc:
     Size: '0x8'
     Type: Class Texture*
   ClassSize: '0x40'
+StopMontageAnimationCommand:
+  Attributes:
+  - Name: BlendOutTime
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
 TaleActorSpawnParameters:
   Attributes:
   - Name: Tracked
@@ -292,7 +376,7 @@ TaleQuestDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_5SN7O[0x4]
+  - Name: pad0x4_YHMOR[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -386,7 +470,7 @@ TaleQuestQueryableStateDataInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_3F1BF[0x3]
+  - Name: pad0x3_LP4O2[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char

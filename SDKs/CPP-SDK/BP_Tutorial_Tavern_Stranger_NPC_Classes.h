@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_Tutorial_Tavern_Stranger_NPC_C: public TutorialTavernStrangerNPC
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x838(0x8)
-	Class CapsuleComponent*                                      SolidHits;                                         // 0x840(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x848(0x8)
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x850(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x858(0x8)
-	Struct FText                                                 MysteriousStranger;                                // 0x860(0x38)
-	Class CutSceneActor*                                         CutSceneActor;                                     // 0x898(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x838(0x8)
+	Class CapsuleComponent*                                      None;                                              // 0x840(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x848(0x8)
+	Class NPCDialogComponent*                                    None;                                              // 0x850(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x858(0x8)
+	Struct FText                                                 None;                                              // 0x860(0x38)
+	Class CutSceneActor*                                         None;                                              // 0x898(0x8)
 };
 
 

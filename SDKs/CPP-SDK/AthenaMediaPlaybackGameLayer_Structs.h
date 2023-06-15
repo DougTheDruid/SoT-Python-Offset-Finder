@@ -58,11 +58,14 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x40
 struct MediaPlayedTelemetryEvent
 {
 public:
 	Struct FString                                               MediaName;                                         // 0x0(0x10)
+	Struct IntPoint                                              LowestResolution;                                  // 0x10(0x8)
+	Struct IntPoint                                              MedianResolution;                                  // 0x18(0x8)
+	Struct IntPoint                                              HighestResolution;                                 // 0x20(0x8)
 };
 
 

@@ -24,4 +24,13 @@ public:
 };
 
 
+// Size 0x48
+struct IsNewInteractingPlayerCondition
+{
+public:
+	Struct ConditionContextPayloadSelectorInstance               PlayerPayloadSelector;                             // 0x8(0x20)
+	Struct ConditionContextPayloadSelectorInstance               InteractablePayloadSelector;                       // 0x28(0x20)
+};
+
+
 }

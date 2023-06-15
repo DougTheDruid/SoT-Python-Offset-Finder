@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x448"

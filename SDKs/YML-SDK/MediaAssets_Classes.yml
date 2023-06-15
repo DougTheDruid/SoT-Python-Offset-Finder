@@ -20,7 +20,7 @@ FileMediaSource:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_XJBSC[0x17]
+  - Name: pad0x17_F64IH[0x17]
     Offset: '0x99'
     Size: '0x17'
     Type: char
@@ -50,7 +50,7 @@ MediaComponent:
   Super: ActorComponent
 MediaPlayer:
   Attributes:
-  - Name: pad0x80_6BIKR[0x80]
+  - Name: pad0x80_A1LA6[0x80]
     Offset: '0x28'
     Size: '0x80'
     Type: char
@@ -74,7 +74,7 @@ MediaPlayer:
     Offset: '0xc1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_TDVGV[0x2]
+  - Name: pad0x2_EP2B5[0x2]
     Offset: '0xc2'
     Size: '0x2'
     Type: char
@@ -86,7 +86,7 @@ MediaPlayer:
     Offset: '0xc4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SGWSJ[0x3]
+  - Name: pad0x3_0NOB4[0x3]
     Offset: '0xc5'
     Size: '0x3'
     Type: char
@@ -98,7 +98,7 @@ MediaPlayer:
     Offset: '0xd0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JCICI[0x4]
+  - Name: pad0x4_K2KJC[0x4]
     Offset: '0xd4'
     Size: '0x4'
     Type: char
@@ -118,7 +118,7 @@ MediaPlayer:
     Offset: '0xe8'
     Size: '0xc'
     Type: Struct Rotator
-  - Name: pad0x64_GNXBA[0x64]
+  - Name: pad0x64_494UU[0x64]
     Offset: '0xf4'
     Size: '0x64'
     Type: char
@@ -126,7 +126,7 @@ MediaPlayer:
     Offset: '0x158'
     Size: '0x10'
     Type: Struct Guid
-  - Name: pad0x8_FZRFE[0x8]
+  - Name: pad0x8_HJ15N[0x8]
     Offset: '0x168'
     Size: '0x8'
     Type: char
@@ -164,7 +164,7 @@ MediaTexture:
     Offset: '0x13a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_A9T2Z[0x1]
+  - Name: pad0x1_00W6Z[0x1]
     Offset: '0x13b'
     Size: '0x1'
     Type: char
@@ -196,7 +196,7 @@ MediaTexture:
     Offset: '0x154'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_MXB5O[0x3]
+  - Name: pad0x3_BJI6C[0x3]
     Offset: '0x155'
     Size: '0x3'
     Type: char
@@ -204,7 +204,7 @@ MediaTexture:
     Offset: '0x158'
     Size: '0x8'
     Type: Class MediaPlayer*
-  - Name: pad0xc8_M0NQY[0xc8]
+  - Name: pad0xc8_T8P92[0xc8]
     Offset: '0x160'
     Size: '0xc8'
     Type: char
@@ -218,7 +218,7 @@ MediaTimeStampInfo:
     Offset: '0x28'
     Size: '0x8'
     Type: Struct Timespan
-  - Name: pad0x8_XSJKV[0x8]
+  - Name: pad0x8_9RLW2[0x8]
     Offset: '0x30'
     Size: '0x8'
     Type: char
@@ -266,7 +266,7 @@ TimeSynchronizableMediaSource:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6H6LS[0x3]
+  - Name: pad0x3_6PWRG[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char

@@ -14,7 +14,7 @@ public:
 	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x888(0x8)
 	Class TetherCustomisationComponent*                          TetherCustomisation;                               // 0x890(0x8)
 	Class ActorDamageableComponent*                              ActorDamageable;                                   // 0x898(0x8)
-	Class StaticMeshComponent*                                   ShroudMask;                                        // 0x8a0(0x8)
+	Class StaticMeshComponent*                                   shroudmask;                                        // 0x8a0(0x8)
 	Class StaticMeshComponent*                                   IntersectionEffectMesh;                            // 0x8a8(0x8)
 	Class StaticMeshComponent*                                   shroud;                                            // 0x8b0(0x8)
 	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x8b8(0x8)

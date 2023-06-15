@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x4b0] - InheritedSize[0x4a8]
+// Size 0x8 (Full Size[0x530] - InheritedSize[0x528]
 class BP_NonRotatableSignalCloud_C: public GameplayEventSignal_StaticMesh
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4a8(0x8)
+	Struct PointerToUberGraphFrame                               None;                                              // 0x528(0x8)
 };
 
 

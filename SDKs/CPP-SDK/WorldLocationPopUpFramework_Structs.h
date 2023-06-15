@@ -6,6 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x10
+struct TaleWorldLocationPopUpServiceEntry
+{
+public:
+	Struct Vector                                                Location;                                          // 0x0(0xc)
+	float                                                        MaxDistance;                                       // 0xc(0x4)
+};
+
+
 // Size 0x28
 struct PlayerEnteredWorldLocationNotificationEvent
 {

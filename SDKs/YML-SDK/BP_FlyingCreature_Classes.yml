@@ -2,203 +2,203 @@
 # https://github.com/DougTheDruid
 BP_FlyingCreature_C:
   Attributes:
-  - Name: DefaultSceneRoot
+  - Name: None
     Offset: '0x420'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: CreatureType
+  - Name: None
     Offset: '0x428'
     Size: '0x1'
     Type: byte
-  - Name: NumOfCreatures
+  - Name: None
     Offset: '0x429'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_K93OA[0x2]
+  - Name: pad0x2_S9JQD[0x2]
     Offset: '0x42a'
     Size: '0x2'
     Type: char
-  - Name: BoundsBias
+  - Name: None
     Offset: '0x42c'
     Size: '0x4'
     Type: float
-  - Name: StaticMeshComponent
+  - Name: None
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: currMaterial
+  - Name: None
     Offset: '0x438'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: MaterialInstance
+  - Name: None
     Offset: '0x440'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: Seed
+  - Name: None
     Offset: '0x450'
     Size: '0x4'
     Type: float
-  - Name: FlapSpeed
+  - Name: None
     Offset: '0x454'
     Size: '0x4'
     Type: float
-  - Name: circlingSpeed
+  - Name: None
     Offset: '0x458'
     Size: '0x4'
     Type: float
-  - Name: CirclingDirection
+  - Name: None
     Offset: '0x45c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_91F66[0x3]
+  - Name: pad0x3_C0NJ6[0x3]
     Offset: '0x45d'
     Size: '0x3'
     Type: char
-  - Name: CirclingRadius
+  - Name: None
     Offset: '0x460'
     Size: '0x4'
     Type: float
-  - Name: FlapDeformation
+  - Name: None
     Offset: '0x464'
     Size: '0x4'
     Type: float
-  - Name: mud
+  - Name: None
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: flockSpeed
+  - Name: None
     Offset: '0x46c'
     Size: '0x4'
     Type: float
-  - Name: FlockingSpread
+  - Name: None
     Offset: '0x470'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: FlockingHeight
+  - Name: None
     Offset: '0x478'
     Size: '0x4'
     Type: float
-  - Name: birdSpeed
+  - Name: None
     Offset: '0x47c'
     Size: '0x4'
     Type: float
-  - Name: BirdSpread
+  - Name: None
     Offset: '0x480'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: BirdHeight
+  - Name: None
     Offset: '0x488'
     Size: '0x4'
     Type: float
-  - Name: RandomHorizontalSpread
+  - Name: None
     Offset: '0x48c'
     Size: '0x4'
     Type: float
-  - Name: HueVariance
+  - Name: None
     Offset: '0x490'
     Size: '0x4'
     Type: float
-  - Name: RandomVerticalSpread
+  - Name: None
     Offset: '0x494'
     Size: '0x4'
     Type: float
-  - Name: smoothness
+  - Name: None
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ISB1R[0x4]
+  - Name: pad0x4_5E4WK[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
-  - Name: SelectedCreatureType
+  - Name: None
     Offset: '0x4a0'
     Size: '0x10'
-    Type: TArray<Assetclass SelectedCreatureType>
-  - Name: Seagull
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x4b0'
     Size: '0x10'
-    Type: TArray<Assetclass Seagull>
-  - Name: Size
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x4c0'
     Size: '0x4'
     Type: float
-  - Name: SizeVariance
+  - Name: None
     Offset: '0x4c4'
     Size: '0x4'
     Type: float
-  - Name: SimSpeed
+  - Name: None
     Offset: '0x4c8'
     Size: '0x4'
     Type: float
-  - Name: BBox
+  - Name: None
     Offset: '0x4cc'
     Size: '0xc'
     Type: Struct Vector
-  - Name: Skellygull_01
+  - Name: None
     Offset: '0x4d8'
     Size: '0x10'
-    Type: TArray<Assetclass Skellygull_01>
-  - Name: Bats_01
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x4e8'
     Size: '0x10'
-    Type: TArray<Assetclass Bats_01>
-  - Name: Parrot_01
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x4f8'
     Size: '0x10'
-    Type: TArray<Assetclass Parrot_01>
-  - Name: ScaleInDistance
+    Type: TArray<Assetclass None>
+  - Name: None
     Offset: '0x508'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZIXSA[0x3]
+  - Name: pad0x3_T4A4T[0x3]
     Offset: '0x509'
     Size: '0x3'
     Type: char
-  - Name: DistanceScale
+  - Name: None
     Offset: '0x50c'
     Size: '0x4'
     Type: float
-  - Name: DrawDistanceWithoutScale
+  - Name: None
     Offset: '0x510'
     Size: '0x4'
     Type: float
-  - Name: DrawDistanceWithScale
+  - Name: None
     Offset: '0x514'
     Size: '0x4'
     Type: float
-  - Name: ForceHibernation
+  - Name: None
     Offset: '0x518'
     Size: '0x4'
     Type: float
-  - Name: HibernateAtNight
+  - Name: None
     Offset: '0x51c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_BK6FV[0x3]
+  - Name: pad0x3_1JWKF[0x3]
     Offset: '0x51d'
     Size: '0x3'
     Type: char
-  - Name: HibernateBoundsExtension
+  - Name: None
     Offset: '0x520'
     Size: '0xc'
     Type: Struct Vector
-  - Name: hibernationStartTime
+  - Name: None
     Offset: '0x52c'
     Size: '0x4'
     Type: float
-  - Name: hibernationEndTime
+  - Name: None
     Offset: '0x530'
     Size: '0x4'
     Type: float
-  - Name: HibernationTransitionTime
+  - Name: None
     Offset: '0x534'
     Size: '0x4'
     Type: float
-  - Name: HibernationIndependance
+  - Name: None
     Offset: '0x538'
     Size: '0x4'
     Type: float
-  - Name: Glide
+  - Name: None
     Offset: '0x53c'
     Size: '0x1'
     Type: bool

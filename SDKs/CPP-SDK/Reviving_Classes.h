@@ -14,7 +14,7 @@ public:
 	float                                                        MaximumReviveDistance;                             // 0x3c(0x4)
 	Struct LinearColor                                           FadeColour;                                        // 0x40(0x10)
 	bool                                                         ShouldFadeAudio;                                   // 0x50(0x1)
-	char                                                         pad0x3_SAJZA[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_V7YT9[0x3];                                 // 0x51(0x3)
 	float                                                        ServerWaitTimeBeforeFullyReviving;                 // 0x54(0x4)
 	float                                                        ReviveTime;                                        // 0x58(0x4)
 	float                                                        MaxRevertEvaporateDuration;                        // 0x5c(0x4)
@@ -23,7 +23,7 @@ public:
 	float                                                        GiveUpHoldTime;                                    // 0x80(0x4)
 	float                                                        GiveUpFadeDuration;                                // 0x84(0x4)
 	float                                                        GiveUpEvaporateDuration;                           // 0x88(0x4)
-	char                                                         pad0x4_H3FC7[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_48EV4[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -31,9 +31,9 @@ public:
 class DeathSelfInteractionComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x8_SY9DD[0x8];                                 // 0x128(0x8)
+	char                                                         pad0x8_Q8US0[0x8];                                 // 0x128(0x8)
 	bool                                                         HasGivenUp;                                        // 0x130(0x1)
-	char                                                         pad0x47_ROHML[0x47];                               // 0x131(0x47)
+	char                                                         pad0x47_26UFB[0x47];                               // 0x131(0x47)
 };
 
 
@@ -77,7 +77,7 @@ class ReviveAudioComponent: public WwiseEmitterComponent
 {
 public:
 	Class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x310(0x8)
-	char                                                         pad0x18_3T5M0[0x18];                               // 0x318(0x18)
+	char                                                         pad0x18_M6Q4Q[0x18];                               // 0x318(0x18)
 };
 
 
@@ -92,18 +92,18 @@ public:
 class ReviveComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x10_2BWPP[0x10];                               // 0x128(0x10)
+	char                                                         pad0x10_0CIG8[0x10];                               // 0x128(0x10)
 	Class Character*                                             OwningCharacter;                                   // 0x138(0x8)
 	Class Actor*                                                 ReviveableRepresentationActor;                     // 0x140(0x8)
 	byte                                                         ReviveState;                                       // 0x148(0x1)
 	byte                                                         InteractionState;                                  // 0x149(0x1)
-	char                                                         pad0x6_X5X31[0x6];                                 // 0x14a(0x6)
+	char                                                         pad0x6_7BGL2[0x6];                                 // 0x14a(0x6)
 	class                                                        ReviveableRepresentationClass;                     // 0x150(0x8)
-	char                                                         pad0xc_TF6YF[0xc];                                 // 0x158(0xc)
+	char                                                         pad0xc_TOTEY[0xc];                                 // 0x158(0xc)
 	bool                                                         ReviveWindowIsOpen;                                // 0x164(0x1)
-	char                                                         pad0xd3_C0GRF[0xd3];                               // 0x165(0xd3)
+	char                                                         pad0xd3_1E2XT[0xd3];                               // 0x165(0xd3)
 	Struct Status                                                RevivableStatus;                                   // 0x238(0x18)
-	char                                                         pad0x18_3JVQE[0x18];                               // 0x250(0x18)
+	char                                                         pad0x18_KM4UO[0x18];                               // 0x250(0x18)
 };
 
 
@@ -164,7 +164,7 @@ public:
 class ReviveGhost: public Actor
 {
 public:
-	char                                                         pad0x10_HHENX[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_1ZQMU[0x10];                               // 0x3c8(0x10)
 	TArray<class MaterialInstanceDynamic*>                       CorpseMaterials;                                   // 0x3d8(0x10)
 	Class SceneComponent*                                        Root;                                              // 0x3e8(0x8)
 	Class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3f0(0x8)
@@ -173,17 +173,17 @@ public:
 	Class PostProcessComponent*                                  PostProcessComponent;                              // 0x408(0x8)
 	Class DitherComponent*                                       DitherComponent;                                   // 0x410(0x8)
 	Class ReviveAudioComponent*                                  AudioComponent;                                    // 0x418(0x8)
-	char                                                         pad0x10_HTUQX[0x10];                               // 0x420(0x10)
+	char                                                         pad0x10_W93SB[0x10];                               // 0x420(0x10)
 	byte                                                         RevivableOwnerNetRole;                             // 0x430(0x1)
-	char                                                         pad0x7_IRQXA[0x7];                                 // 0x431(0x7)
+	char                                                         pad0x7_X134J[0x7];                                 // 0x431(0x7)
 	Class GhostDataAsset*                                        ReviveGhostDataAsset;                              // 0x438(0x8)
 	Class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x440(0x8)
 	Struct ReviveEffectsValues                                   ReviveEffectsValues;                               // 0x448(0x20)
 	Struct ModeSpecificReviveSettings                            ReviveSettings;                                    // 0x468(0x38)
-	char                                                         pad0x13c_AI0WP[0x13c];                             // 0x4a0(0x13c)
+	char                                                         pad0x13c_GELKW[0x13c];                             // 0x4a0(0x13c)
 	TArray<class MaterialInstanceDynamic*>                       AstralCordDynamicMaterials;                        // 0x608(0x10)
 	Struct GhostPlayModeParameters                               GhostPlayModeSpecificParameters;                   // 0x618(0xc)
-	char                                                         pad0x4_YP0D4[0x4];                                 // 0x624(0x4)
+	char                                                         pad0x4_B2BGZ[0x4];                                 // 0x624(0x4)
 };
 
 

@@ -11,7 +11,7 @@ class BP_CharacterVFXComponent_C: public CharacterVfxComponent
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xe0(0x8)
-	char                                                         pad0xa4_Z2YKH[0xa4];                               // 0xe8(0xa4)
+	char                                                         pad0x145_D8KLP[0x145];                             // 0xe8(0x145)
 	Struct ObjectMessagingHandle                                 EnterWaterEvent;                                   // 0xe8(0x58)
 	Struct ObjectMessagingHandle                                 UnderwaterStateChanged;                            // 0x140(0x58)
 	Class ParticleSystemComponent*                               Splash Emitter;                                    // 0x198(0x8)
@@ -26,9 +26,9 @@ public:
 	Struct ObjectMessagingHandle                                 ExitShipEventHandle;                               // 0x2c8(0x58)
 	Struct Vector                                                WindOffsetFromShip;                                // 0x320(0xc)
 	bool                                                         DEBUG_WindActive;                                  // 0x32c(0x1)
-	char                                                         pad0x3_E230O[0x3];                                 // 0x32d(0x3)
+	char                                                         pad0x3_1B2IX[0x3];                                 // 0x32d(0x3)
 	float                                                        DEBUG_WindToggleTimer;                             // 0x330(0x4)
-	char                                                         pad0x4_S794K[0x4];                                 // 0x334(0x4)
+	char                                                         pad0x4_07XAN[0x4];                                 // 0x334(0x4)
 	Struct ObjectMessagingHandle                                 WindDirectionChangedHandle;                        // 0x338(0x58)
 	Class ParticleSystemComponent*                               vfx_particle_underwater_ambient;                   // 0x390(0x8)
 	Class ParticleSystemComponent*                               vfx_player_underwater_ambient;                     // 0x398(0x8)

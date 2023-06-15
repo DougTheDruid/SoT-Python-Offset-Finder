@@ -6,9 +6,9 @@ BP_Component_Tutorial2019_C:
     Offset: '0xd8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0xac_2LLHI[0xac]
+  - Name: pad0x14d_CSBGC[0x14d]
     Offset: '0xe0'
-    Size: '0xac'
+    Size: '0x14d'
     Type: char
   - Name: GoldHoarders
     Offset: '0xe0'
@@ -34,7 +34,7 @@ BP_Component_Tutorial2019_C:
     Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RHQ84[0x7]
+  - Name: pad0x7_45991[0x7]
     Offset: '0x129'
     Size: '0x7'
     Type: char

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_SkullRitual_Skull_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   trs_briggsys_skull_01_c;                           // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
 };
 
 

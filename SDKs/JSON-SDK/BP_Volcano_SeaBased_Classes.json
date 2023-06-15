@@ -1,12 +1,12 @@
 {
   "BP_Volcano_SeaBased_C": {
-    "Super": "BP_Volcano_C",
+    "Super": "None",
     "FullSize": "0x5f8",
     "InheritedSize": "0x5f0",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "NamedPoints",
+        "Name": "None",
         "Type": "Class NamedPointsComponent*",
         "Size": "0x8",
         "Offset": "0x5f0"

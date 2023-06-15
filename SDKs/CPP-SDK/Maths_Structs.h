@@ -6,19 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30
-struct WeightedProbabilityRangeOfRanges
-{
-public:
-	TArray<struct SubRanges>                                     SubRanges;                                         // 0x20(0x10)
-};
-
-
 // Size 0x20
 struct WeightedProbabilityRange
 {
 public:
 	TArray<Float Weights>                                        Weights;                                           // 0x10(0x10)
+};
+
+
+// Size 0x30
+struct WeightedProbabilityRangeOfRanges
+{
+public:
+	TArray<struct SubRanges>                                     SubRanges;                                         // 0x20(0x10)
 };
 
 
@@ -47,14 +47,14 @@ public:
 	float                                                        Increment;                                         // 0x0(0x4)
 	float                                                        IncrementDirectionMultiplier;                      // 0x4(0x4)
 	bool                                                         IsSwinging;                                        // 0x8(0x1)
-	char                                                         pad0x3_HUX14[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_FJSWV[0x3];                                 // 0x9(0x3)
 	float                                                        RPM;                                               // 0xc(0x4)
 	float                                                        MinAngleDegrees;                                   // 0x10(0x4)
 	float                                                        MaxAngleDegrees;                                   // 0x14(0x4)
 	float                                                        Length;                                            // 0x18(0x4)
 	float                                                        CurrentSwingProgress;                              // 0x1c(0x4)
 	float                                                        CurrentRotationAngleDegrees;                       // 0x20(0x4)
-	char                                                         pad0xc_WR2S1[0xc];                                 // 0x24(0xc)
+	char                                                         pad0xc_VLC4E[0xc];                                 // 0x24(0xc)
 	Struct Transform                                             InterpolationAsTransform;                          // 0x30(0x30)
 };
 

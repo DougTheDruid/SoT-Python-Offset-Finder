@@ -25,9 +25,9 @@ public:
 	TArray<Int Int32Array>                                       Int32Array;                                        // 0x0(0x10)
 	int                                                          StaticSingleElement;                               // 0x10(0x4)
 	int                                                          StaticInt32Array;                                  // 0x14(0x4)
-	char                                                         pad0x8_HE2D1[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_4ZQXK[0x8];                                 // 0x18(0x8)
 	float                                                        StaticFloatArray;                                  // 0x20(0x4)
-	char                                                         pad0xc_FPCJU[0xc];                                 // 0x24(0xc)
+	char                                                         pad0xc_O43Y9[0xc];                                 // 0x24(0xc)
 	TArray<struct VectorArray>                                   VectorArray;                                       // 0x30(0x10)
 };
 
@@ -59,7 +59,7 @@ struct StructSerializerBooleanTestStruct
 public:
 	bool                                                         BoolFalse;                                         // 0x0(0x1)
 	bool                                                         BoolTrue;                                          // 0x1(0x1)
-	char                                                         pad0x2_JOGBW[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_8VLJX[0x2];                                 // 0x2(0x2)
 };
 
 
@@ -69,9 +69,9 @@ struct StructSerializerNumericTestStruct
 public:
 	int                                                          Int32;                                             // 0x4(0x4)
 	byte                                                         UInt8;                                             // 0x10(0x1)
-	char                                                         pad0x1_1PY4B[0x1];                                 // 0x11(0x1)
+	char                                                         pad0x1_TM7BR[0x1];                                 // 0x11(0x1)
 	float                                                        Float;                                             // 0x20(0x4)
-	char                                                         pad0x4_K2UG4[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_U0O7F[0x4];                                 // 0x24(0x4)
 	double                                                       Double;                                            // 0x28(0x8)
 };
 

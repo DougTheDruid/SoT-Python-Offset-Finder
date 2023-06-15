@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_bsp_tree_palm_01_d_C:
   Attributes:
-  - Name: NonVagueNonUniqueLandmark
+  - Name: None
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class NonVagueNonUniqueLandmarkComponent*
-  - Name: StaticMesh
+  - Name: None
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*

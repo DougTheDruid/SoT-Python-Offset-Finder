@@ -13,7 +13,7 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
 class LocationProviderService: public Object
 {
 public:

@@ -145,14 +145,15 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x48
 struct WatercraftSpawnTelemetryEvent
 {
 public:
 	Struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
 	Struct FString                                               WatercraftType;                                    // 0x10(0x10)
-	Struct Vector                                                Location;                                          // 0x20(0xc)
-	Struct Vector                                                Forward;                                           // 0x2c(0xc)
+	Struct FString                                               OriginDescription;                                 // 0x20(0x10)
+	Struct Vector                                                Location;                                          // 0x30(0xc)
+	Struct Vector                                                Forward;                                           // 0x3c(0xc)
 };
 
 

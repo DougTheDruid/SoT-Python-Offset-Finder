@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_TT_RitualBone_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   BoneMesh;                                          // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
 };
 
 

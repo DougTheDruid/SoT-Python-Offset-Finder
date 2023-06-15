@@ -29,7 +29,7 @@ struct VoyageHintPopupDescEntry
 {
 public:
 	byte                                                         QuestType;                                         // 0x0(0x1)
-	char                                                         pad0x7_IB09F[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_TE639[0x7];                                 // 0x1(0x7)
 	Class PopUpMessageDesc*                                      HintPopUpMessageDesc;                              // 0x8(0x8)
 };
 
@@ -48,7 +48,7 @@ struct ExtraSpawnDistanceByIslandType
 {
 public:
 	byte                                                         IslandType;                                        // 0x0(0x1)
-	char                                                         pad0x3_T7EIH[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_P50B4[0x3];                                 // 0x1(0x3)
 	float                                                        ExtraSpawnDistance;                                // 0x4(0x4)
 };
 
@@ -72,10 +72,42 @@ public:
 };
 
 
+// Size 0x30
+struct OnDemandQuestResumeConditionMetReasonQuestVariable
+{
+public:
+};
+
+
+// Size 0x10
+struct AdventureOnDemandDiveCrewAlreadyAtDestinationEvent
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
 // Size 0x1
 struct AdventureOnDemandVoyageSurfaceTaleFinished
 {
 public:
+};
+
+
+// Size 0x10
+struct SeaBasedGameEventOnDemandLocationRequestFailedTelemetryEvent
+{
+public:
+	Struct FString                                               GameEventType;                                     // 0x0(0x10)
+};
+
+
+// Size 0x18
+struct SeaBasedGameEventOnDemandLocationRequestCompletedTelemetryEvent
+{
+public:
+	Struct FString                                               GameEventType;                                     // 0x0(0x10)
+	Struct Vector2D                                              Result;                                            // 0x10(0x8)
 };
 
 

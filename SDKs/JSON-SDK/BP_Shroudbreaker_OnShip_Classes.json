@@ -120,7 +120,7 @@
         "Offset": "0x678"
       },
       {
-        "Name": "pad0x3_DNAHU[0x3]",
+        "Name": "pad0x3_NL8F3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x679"
@@ -156,7 +156,7 @@
         "Offset": "0x68d"
       },
       {
-        "Name": "pad0x2_HU07O[0x2]",
+        "Name": "pad0x2_ABQIB[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x68e"

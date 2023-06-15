@@ -36,7 +36,7 @@ ShipPartsDamageTrackerComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9AU2N[0x4]
+  - Name: pad0x4_TLE3M[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -50,11 +50,11 @@ ShipRestorationSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QRIVQ[0x4]
+  - Name: pad0x4_WM40H[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
-  - Name: pad0x8_G3BI4[0x8]
+  - Name: pad0x8_W9DGY[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char

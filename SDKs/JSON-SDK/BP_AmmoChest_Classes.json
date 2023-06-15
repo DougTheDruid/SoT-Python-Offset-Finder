@@ -6,31 +6,31 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
-        "Name": "Hits",
+        "Name": "None",
         "Type": "Class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
-        "Name": "Interactable",
+        "Name": "None",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
-        "Name": "Emitter",
+        "Name": "None",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x488"
       },
       {
-        "Name": "DynamicMaterial",
+        "Name": "None",
         "Type": "Class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x4a8"

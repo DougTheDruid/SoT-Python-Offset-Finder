@@ -6,7 +6,7 @@ ActorSequenceObjectReference:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_EB7I6[0x3]
+  - Name: pad0x3_NFMF4[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -14,7 +14,7 @@ ActorSequenceObjectReference:
     Offset: '0x4'
     Size: '0x10'
     Type: Struct Guid
-  - Name: pad0x4_QTNOG[0x4]
+  - Name: pad0x4_BCFHR[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

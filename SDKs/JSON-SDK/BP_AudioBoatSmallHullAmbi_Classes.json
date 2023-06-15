@@ -6,151 +6,151 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Triton",
         "Type": "Class TritonComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
-        "Name": "None",
+        "Name": "audio_wake_stern",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
-        "Name": "None",
+        "Name": "audio_wake_bow",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
-        "Name": "None",
+        "Name": "audio_wake_side_L",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "None",
+        "Name": "audio_wake_side_R",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_nest",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_mast",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_FL",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_FR",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x678"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_rope_front",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x680"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_brig_03",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x688"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_brig_02",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_rope_back",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_brig_01",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_cabin_04",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6a8"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_cabin_03",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_cabin_02",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6b8"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_cabin_01",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6c0"
       },
       {
-        "Name": "None",
+        "Name": "audio_creak_smallship_global",
         "Type": "Class ShipAudioEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x6c8"
       },
       {
-        "Name": "None",
+        "Name": "DeckGrille",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
         "Offset": "0x6d0"
       },
       {
-        "Name": "None",
+        "Name": "BrigDeck",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
-        "Name": "None",
+        "Name": "CaptainsCabin_Left",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "None",
+        "Name": "CaptainsCabin_Right",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
-        "Name": "None",
+        "Name": "CaptainsCabin_Back",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
-        "Name": "None",
+        "Name": "TopToCaptainsCabin",
         "Type": "Class AudioPortalComponent*",
         "Size": "0x8",
         "Offset": "0x6f8"

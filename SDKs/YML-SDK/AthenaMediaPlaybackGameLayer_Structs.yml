@@ -6,7 +6,19 @@ MediaPlayedTelemetryEvent:
     Offset: '0x0'
     Size: '0x10'
     Type: Struct FString
-  ClassSize: '0x18'
+  - Name: LowestResolution
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Struct IntPoint
+  - Name: MedianResolution
+    Offset: '0x18'
+    Size: '0x8'
+    Type: Struct IntPoint
+  - Name: HighestResolution
+    Offset: '0x20'
+    Size: '0x8'
+    Type: Struct IntPoint
+  ClassSize: '0x40'
 VideoPlaybackLoadEvent:
   Attributes:
   - Name: MediaTextureName

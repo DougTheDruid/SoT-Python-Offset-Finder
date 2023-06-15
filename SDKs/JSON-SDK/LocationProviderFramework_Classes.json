@@ -8,9 +8,9 @@
   },
   "LocationProviderService": {
     "Super": "Object",
-    "FullSize": "0x40",
+    "FullSize": "0xa8",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x80",
     "Attributes": []
   },
   "LocationType": {

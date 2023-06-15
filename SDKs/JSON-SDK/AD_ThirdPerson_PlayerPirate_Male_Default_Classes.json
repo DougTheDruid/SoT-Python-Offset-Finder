@@ -1,177 +1,177 @@
 {
   "AD_ThirdPerson_PlayerPirate_Male_Default_C": {
     "Super": "AthenaAnimationThirdPersonAnimationData",
-    "FullSize": "0x788",
-    "InheritedSize": "0x88",
+    "FullSize": "0x790",
+    "InheritedSize": "0x90",
     "ClassSize": "0x700",
     "Attributes": [
       {
         "Name": "Idles",
         "Type": "Struct ADS_IdlesNative",
         "Size": "0x10",
-        "Offset": "0x88"
+        "Offset": "0x90"
       },
       {
         "Name": "Locomotion",
         "Type": "Struct ADS_LocomotionNative",
         "Size": "0x50",
-        "Offset": "0x98"
+        "Offset": "0xa0"
       },
       {
         "Name": "LocomotionAlternate",
         "Type": "Struct ADS_LocomotionAlternateNative",
         "Size": "0x140",
-        "Offset": "0xe8"
+        "Offset": "0xf0"
       },
       {
         "Name": "Jumping",
         "Type": "Struct ADS_JumpingNative",
         "Size": "0x78",
-        "Offset": "0x228"
+        "Offset": "0x230"
       },
       {
         "Name": "Swimming",
         "Type": "Struct ADS_SwimmingNative",
         "Size": "0x68",
-        "Offset": "0x2a0"
+        "Offset": "0x2a8"
       },
       {
         "Name": "Wheel",
         "Type": "Struct ADS_WheelNative",
         "Size": "0x88",
-        "Offset": "0x308"
+        "Offset": "0x310"
       },
       {
         "Name": "Capstan",
         "Type": "Struct ADS_CapstanNative",
         "Size": "0x68",
-        "Offset": "0x390"
+        "Offset": "0x398"
       },
       {
         "Name": "Ladder",
         "Type": "Struct ADS_LadderNative",
         "Size": "0x68",
-        "Offset": "0x3f8"
+        "Offset": "0x400"
       },
       {
         "Name": "Items",
         "Type": "Struct ADS_ObjectsNative",
         "Size": "0x10",
-        "Offset": "0x460"
+        "Offset": "0x468"
       },
       {
         "Name": "Cannon",
         "Type": "Struct ADS_CannonNative",
         "Size": "0x38",
-        "Offset": "0x470"
+        "Offset": "0x478"
       },
       {
         "Name": "HarpoonLauncher",
         "Type": "Struct ADS_HarpoonLauncherNative",
         "Size": "0x28",
-        "Offset": "0x4a8"
+        "Offset": "0x4b0"
       },
       {
         "Name": "Sockets",
         "Type": "Struct ADS_Sockets",
         "Size": "0x2",
-        "Offset": "0x4d0"
+        "Offset": "0x4d8"
       },
       {
-        "Name": "pad0x6_PUHXH[0x6]",
+        "Name": "pad0x6_Q7XLH[0x6]",
         "Type": "char",
         "Size": "0x6",
-        "Offset": "0x4d2"
+        "Offset": "0x4da"
       },
       {
         "Name": "Facial",
         "Type": "Struct ADS_FacialNative",
         "Size": "0x90",
-        "Offset": "0x4d8"
+        "Offset": "0x4e0"
       },
       {
         "Name": "IkFootPlanting",
         "Type": "Struct ADS_IKFootPlantingNative",
         "Size": "0x1c",
-        "Offset": "0x568"
+        "Offset": "0x570"
       },
       {
-        "Name": "pad0x4_39V9S[0x4]",
+        "Name": "pad0x4_ER7CH[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x584"
+        "Offset": "0x58c"
       },
       {
         "Name": "HitReacts",
         "Type": "Struct ADS_HitReactsNative",
         "Size": "0x40",
-        "Offset": "0x588"
+        "Offset": "0x590"
       },
       {
         "Name": "MapTable",
         "Type": "Struct ADS_MapTableNative",
         "Size": "0x30",
-        "Offset": "0x5c8"
+        "Offset": "0x5d0"
       },
       {
         "Name": "Spawning",
         "Type": "Struct ADS_SpawnNative2",
         "Size": "0x10",
-        "Offset": "0x5f8"
+        "Offset": "0x600"
       },
       {
         "Name": "CharacterSelect",
         "Type": "Struct ADS_CharacterSelectNative",
         "Size": "0x10",
-        "Offset": "0x608"
+        "Offset": "0x610"
       },
       {
         "Name": "SkeletonFlee",
         "Type": "Struct ADS_SkeletonFleeNative",
         "Size": "0x10",
-        "Offset": "0x618"
+        "Offset": "0x620"
       },
       {
         "Name": "ShopInteraction",
         "Type": "Struct ADS_InteractionNative",
         "Size": "0x10",
-        "Offset": "0x628"
+        "Offset": "0x630"
       },
       {
         "Name": "SkeletonSensing",
         "Type": "Struct ADS_SkeletonSensing",
         "Size": "0x10",
-        "Offset": "0x638"
+        "Offset": "0x640"
       },
       {
         "Name": "SkeletonActionEmotes",
         "Type": "Struct ADS_SkeletonEmoteActions",
         "Size": "0x10",
-        "Offset": "0x648"
+        "Offset": "0x650"
       },
       {
         "Name": "Rowboat",
         "Type": "Struct ADS_RowingBoatNative",
         "Size": "0x98",
-        "Offset": "0x658"
+        "Offset": "0x660"
       },
       {
         "Name": "SkeletonShipCaptain",
         "Type": "Struct ADS_SkeletonCaptainNative",
         "Size": "0x48",
-        "Offset": "0x6f0"
+        "Offset": "0x6f8"
       },
       {
         "Name": "SkeletonCurse",
         "Type": "Struct ADS_SkeletonCurseNative",
         "Size": "0x28",
-        "Offset": "0x738"
+        "Offset": "0x740"
       },
       {
         "Name": "WaterPump",
         "Type": "Struct ADS_WaterPumpNative",
         "Size": "0x28",
-        "Offset": "0x760"
+        "Offset": "0x768"
       }
     ]
   },
