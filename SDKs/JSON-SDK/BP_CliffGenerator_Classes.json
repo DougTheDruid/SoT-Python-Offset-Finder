@@ -6,397 +6,397 @@
     "ClassSize": "0x1db",
     "Attributes": [
       {
-        "Name": "Base_Spline",
+        "Name": "None",
         "Type": "Class SplineComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "Use Specific Start Actor",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x7_LBUFA[0x7]",
+        "Name": "pad0x7_4AARO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3d9"
       },
       {
-        "Name": "Source Start Actor",
+        "Name": "None",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "Use Specific End Actor",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x7_NF77L[0x7]",
+        "Name": "pad0x7_1AAZV[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3e9"
       },
       {
-        "Name": "Source End Actor",
+        "Name": "None",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "Source Actors",
+        "Name": "None",
         "Type": "TArray<class StaticMesh*>",
         "Size": "0x10",
         "Offset": "0x3f8"
       },
       {
-        "Name": "MaxTopSplineHeight",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x408"
       },
       {
-        "Name": "SpecifyNumberOfElements",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40c"
       },
       {
-        "Name": "pad0x3_KKS62[0x3]",
+        "Name": "pad0x3_19WP3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x40d"
       },
       {
-        "Name": "NumberOfElements",
+        "Name": "None",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x410"
       },
       {
-        "Name": "ObjectSpacer",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x414"
       },
       {
-        "Name": "TangetWeights",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x418"
       },
       {
-        "Name": "Random_Seed",
+        "Name": "None",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x41c"
       },
       {
-        "Name": "DataArray",
-        "Type": "TArray<struct DataArray>",
+        "Name": "None",
+        "Type": "TArray<struct None>",
         "Size": "0x10",
         "Offset": "0x420"
       },
       {
-        "Name": "Use_Deformable(SplineMesh)",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x430"
       },
       {
-        "Name": "Instance_Meshes",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x431"
       },
       {
-        "Name": "Flip_Meshes",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x432"
       },
       {
-        "Name": "pad0x1_BXOOO[0x1]",
+        "Name": "pad0x1_1FKEF[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x433"
       },
       {
-        "Name": "ArrayStore",
+        "Name": "None",
         "Type": "Struct RandomStream",
         "Size": "0x8",
         "Offset": "0x434"
       },
       {
-        "Name": "SplineRemaninderScale",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x43c"
       },
       {
-        "Name": "NumElementsNeeded",
+        "Name": "None",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x440"
       },
       {
-        "Name": "Default_Mesh",
-        "Type": "Struct BP_CliffGenerator_Struct",
+        "Name": "None",
+        "Type": "Struct None",
         "Size": "0x10",
         "Offset": "0x444"
       },
       {
-        "Name": "BlueprintPosition",
+        "Name": "None",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x454"
       },
       {
-        "Name": "InverseBlueprintRotation",
+        "Name": "None",
         "Type": "Struct Rotator",
         "Size": "0xc",
         "Offset": "0x460"
       },
       {
-        "Name": "UseSpecifiedMeshAtIndex",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x46c"
       },
       {
-        "Name": "LoopDataArraySize",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x46d"
       },
       {
-        "Name": "Collisions",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x46e"
       },
       {
-        "Name": "[DEBUG ] SplineNumbers",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x46f"
       },
       {
-        "Name": "[DEBUG ] Flip Text",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x470"
       },
       {
-        "Name": "IsStartIndex",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x471"
       },
       {
-        "Name": "IsEndIndex",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x472"
       },
       {
-        "Name": "pad0x5_36EYG[0x5]",
+        "Name": "pad0x5_DDO6A[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x473"
       },
       {
-        "Name": "GeneratedTopSpline",
+        "Name": "None",
         "Type": "Class SplineComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
-        "Name": "MinTopSplineHeight",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x480"
       },
       {
-        "Name": "AllowTerrainToDrop",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x484"
       },
       {
-        "Name": "AllowTerrainToRaise",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x485"
       },
       {
-        "Name": "IgnoreTerrainForTopSpline",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x486"
       },
       {
-        "Name": "pad0x1_6RXDL[0x1]",
+        "Name": "pad0x1_AGFH8[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x487"
       },
       {
-        "Name": "TerrainBlendWidth",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x488"
       },
       {
-        "Name": "TerrainBlendFallOff",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48c"
       },
       {
-        "Name": "TopSplineRollAmount",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x490"
       },
       {
-        "Name": "IntersectionAmount",
+        "Name": "None",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x494"
       },
       {
-        "Name": "[[-----REBUILD SPLINE ----]]",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x7_QH4BY[0x7]",
+        "Name": "pad0x7_ZQJWM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x499"
       },
       {
-        "Name": "terrain_component",
+        "Name": "None",
         "Type": "Class Landscape*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
       {
-        "Name": "UseDetailedTopSpline",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4a8"
       },
       {
-        "Name": "pad0x3_V4DEF[0x3]",
+        "Name": "pad0x3_TVMJM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4a9"
       },
       {
-        "Name": "NumberOfDetailedSplinePoints",
+        "Name": "None",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4ac"
       },
       {
-        "Name": "[DEBUG ] Display Intersection Names",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x7_2LV4L[0x7]",
+        "Name": "pad0x7_Z2GCS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x4b1"
       },
       {
-        "Name": "TagToIgnore",
+        "Name": "None",
         "Type": "Struct FString",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
       {
-        "Name": "ActorsToIgnore",
+        "Name": "None",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x4c8"
       },
       {
-        "Name": "[[------DEFORM TERRAIN ------]]",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4d8"
       },
       {
-        "Name": "pad0x3_Q99O1[0x3]",
+        "Name": "pad0x3_RR57K[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4d9"
       },
       {
-        "Name": "HirResult",
+        "Name": "None",
         "Type": "Struct HitResult",
         "Size": "0x80",
         "Offset": "0x4dc"
       },
       {
-        "Name": "pad0x4_IA7FO[0x4]",
+        "Name": "pad0x4_DWFLY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x55c"
       },
       {
-        "Name": "TopSplineIntersectionPoints",
-        "Type": "TArray<struct TopSplineIntersectionPoints>",
+        "Name": "None",
+        "Type": "TArray<struct None>",
         "Size": "0x10",
         "Offset": "0x560"
       },
       {
-        "Name": "Local_InternalActorsToIgnore",
+        "Name": "None",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x570"
       },
       {
-        "Name": "TopSplineColour",
+        "Name": "None",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x580"
       },
       {
-        "Name": "BottomSplineColour",
+        "Name": "None",
         "Type": "Struct LinearColor",
         "Size": "0x10",
         "Offset": "0x590"
       },
       {
-        "Name": "Is Reflected",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x5a0"
       },
       {
-        "Name": "DrawDebugLines",
+        "Name": "None",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x5a1"
       },
       {
-        "Name": "Affect Rain",
+        "Name": "None",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x5a2"
@@ -404,7 +404,7 @@
     ]
   },
   "DougTheDruid": {
-    "Notes": "Generated by DougTheDruid#2784 on Discord",
+    "Notes": "Generated by dougthedruid on Discord",
     "Reference": "https://github.com/DougTheDruid"
   }
 }
