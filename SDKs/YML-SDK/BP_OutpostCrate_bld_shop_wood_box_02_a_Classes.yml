@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_OutpostCrate_bld_shop_wood_box_02_a_C:
   Attributes:
-  - Name: None
+  - Name: Replenishable
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class ReplenishableComponent*
-  - Name: None
+  - Name: IslandTelemetrySubject
     Offset: '0x4d0'
     Size: '0x8'
     Type: Class IslandTelemetrySubjectComponent*
-  - Name: None
+  - Name: StorageContainer
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class StorageContainerComponent*

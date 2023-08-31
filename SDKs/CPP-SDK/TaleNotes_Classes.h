@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class TaleNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_MU5HH[0x10];                               // 0x7e0(0x10)
+	char                                                         pad0x10_QO98O[0x10];                               // 0x7e0(0x10)
 	int                                                          CanvasWidth;                                       // 0x7f0(0x4)
 	int                                                          CanvasHeight;                                      // 0x7f4(0x4)
 	float                                                        FontScale;                                         // 0x7f8(0x4)
-	char                                                         pad0x4_3U54M[0x4];                                 // 0x7fc(0x4)
+	char                                                         pad0x4_WZ034[0x4];                                 // 0x7fc(0x4)
 	Class Font*                                                  Font;                                              // 0x800(0x8)
 	Struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x808(0x38)
 	Struct TreasureMapWidgetText                                 TitleWidgetText;                                   // 0x840(0x3c)
@@ -29,7 +29,7 @@ public:
 	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x958(0x8)
 	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x960(0x8)
 	Class ZoomInOnWieldableItemComponent*                        ZoomInOnWieldableComponent;                        // 0x968(0x8)
-	char                                                         pad0xe0_GNC9M[0xe0];                               // 0x970(0xe0)
+	char                                                         pad0xe0_C3WB1[0xe0];                               // 0x970(0xe0)
 };
 
 

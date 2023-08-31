@@ -22,7 +22,7 @@ DeedProgressDesc:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_LUO94[0x4]
+  - Name: pad0x4_Z94TG[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -44,7 +44,7 @@ EnableMoreButtonEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BHVNX[0x3]
+  - Name: pad0x3_GA77W[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -59,7 +59,7 @@ NavigationDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_AWQYD[0x3]
+  - Name: pad0x3_AIPIK[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ OpenSeasonsMenuEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_WHZDC[0x3]
+  - Name: pad0x3_9FLO5[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -209,6 +209,41 @@ SeasonProgressionUITelemetryFragment:
 SeasonProgressionUITelemetryFragmentInput:
   Attributes: []
   ClassSize: '0x8'
+SeasonTextPopupAsset:
+  Attributes:
+  - Name: GlowIcon
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Icon
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Message
+    Offset: '0x20'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: ToastSfxEventName
+    Offset: '0x58'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastEventName
+    Offset: '0x68'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastSwitchName
+    Offset: '0x78'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastSwitchValue
+    Offset: '0x88'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ToastHoldDuration
+    Offset: '0x98'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xa0'
 SeasonsChatNotification:
   Attributes:
   - Name: IconUrl
@@ -231,6 +266,13 @@ SeasonsChatNotificationEvent:
     Size: '0x60'
     Type: Struct SeasonsChatNotification
   ClassSize: '0x60'
+SeasonsChatNotificationNetworkEvent:
+  Attributes:
+  - Name: SeasonsChatNotificationEvent
+    Offset: '0x10'
+    Size: '0x60'
+    Type: Struct SeasonsChatNotificationEvent
+  ClassSize: '0x70'
 SeasonsDataRefreshEvent:
   Attributes: []
   ClassSize: '0x1'
@@ -269,6 +311,28 @@ SeasonsPopupEvent:
     Size: '0x4'
     Type: float
   ClassSize: '0xa0'
+SeasonsTextNotification:
+  Attributes:
+  - Name: IconUrl
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct StringAssetReference
+  - Name: Message
+    Offset: '0x10'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: Audio
+    Offset: '0x48'
+    Size: '0x40'
+    Type: Struct GenericPopupAudioDescriptor
+  ClassSize: '0x88'
+SeasonsTextNotificationNetworkEvent:
+  Attributes:
+  - Name: SeasonsTextNotification
+    Offset: '0x10'
+    Size: '0x88'
+    Type: Struct SeasonsTextNotification
+  ClassSize: '0x98'
 ShowDeedProgressEvent:
   Attributes:
   - Name: DeedProgressDesc

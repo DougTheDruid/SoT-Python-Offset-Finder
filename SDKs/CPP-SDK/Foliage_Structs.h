@@ -13,7 +13,7 @@ public:
 	Class Object*                                                FoliageTypeObject;                                 // 0x0(0x8)
 	Class FoliageType_InstancedStaticMesh*                       TypeInstance;                                      // 0x8(0x8)
 	bool                                                         bIsAsset;                                          // 0x10(0x1)
-	char                                                         pad0x7_P95PN[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_5RUHX[0x7];                                 // 0x11(0x7)
 	class                                                        Type;                                              // 0x18(0x8)
 };
 
@@ -23,12 +23,12 @@ struct ProceduralFoliageInstance
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_43E8J[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_9UHQH[0x4];                                 // 0xc(0x4)
 	Struct Quat                                                  Rotation;                                          // 0x10(0x10)
 	Struct Vector                                                Normal;                                            // 0x20(0xc)
 	float                                                        Age;                                               // 0x2c(0x4)
 	float                                                        Scale;                                             // 0x30(0x4)
-	char                                                         pad0x4_DBUZR[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_BLB4M[0x4];                                 // 0x34(0x4)
 	Class FoliageType_InstancedStaticMesh*                       Type;                                              // 0x38(0x8)
 };
 

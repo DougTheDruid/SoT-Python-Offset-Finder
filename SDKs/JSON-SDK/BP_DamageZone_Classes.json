@@ -6,55 +6,55 @@
     "ClassSize": "0x41",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x820"
       },
       {
-        "Name": "None",
+        "Name": "Repair Tag",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x828"
       },
       {
-        "Name": "None",
-        "Type": "Struct None",
+        "Name": "RepairGroup",
+        "Type": "Struct BP_InternalDamageGroup",
         "Size": "0x10",
         "Offset": "0x830"
       },
       {
-        "Name": "None",
+        "Name": "ExternalHitBufferIndex",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x840"
       },
       {
-        "Name": "None",
+        "Name": "MaxStoredHits",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x844"
       },
       {
-        "Name": "None",
+        "Name": "Deferred Decals",
         "Type": "TArray<class DecalComponent*>",
         "Size": "0x10",
         "Offset": "0x848"
       },
       {
-        "Name": "None",
+        "Name": "ClientUpdateEventCount",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x858"
       },
       {
-        "Name": "None",
+        "Name": "ExternalDecalBufferIndex",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x85c"
       },
       {
-        "Name": "None",
+        "Name": "HasBeenInitialized",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x860"

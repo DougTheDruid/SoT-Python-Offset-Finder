@@ -2,67 +2,67 @@
 # https://github.com/DougTheDruid
 BP_Mast_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x9c8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: MastTopComponent
     Offset: '0x9d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: TopgallantActor
     Offset: '0x9d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MainsailActor
     Offset: '0x9e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TopsailActor
     Offset: '0x9e8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Main Yard
     Offset: '0x9f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Topgallant Yard
     Offset: '0x9f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Top Yard
     Offset: '0xa00'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: MastBaseComponent
     Offset: '0xa08'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Sail Parameters
     Offset: '0xa10'
     Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
+    Type: TArray<struct Sail Parameters>
+  - Name: Yards
     Offset: '0xa20'
     Size: '0x10'
     Type: TArray<class StaticMeshComponent*>
-  - Name: None
+  - Name: Sails
     Offset: '0xa30'
     Size: '0x10'
     Type: TArray<class ChildActorComponent*>
-  - Name: None
+  - Name: Sail Material
     Offset: '0xa40'
     Size: '0x8'
     Type: Class MaterialInstance*
-  - Name: None
+  - Name: SailActors
     Offset: '0xa48'
     Size: '0x10'
-    Type: TArray<class None*>
-  - Name: None
+    Type: TArray<class BP_Sail_C*>
+  - Name: DamageDecalRight
     Offset: '0xa58'
     Size: '0x8'
     Type: Class DecalComponent*
-  - Name: None
+  - Name: DamageDecalLeft
     Offset: '0xa60'
     Size: '0x8'
     Type: Class DecalComponent*

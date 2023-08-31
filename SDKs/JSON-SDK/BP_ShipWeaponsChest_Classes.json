@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "CrewLockableComponent",
         "Type": "Class CrewLockableComponent*",
         "Size": "0x8",
         "Offset": "0x5a0"
       },
       {
-        "Name": "None",
+        "Name": "LockMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5a8"
       },
       {
-        "Name": "None",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x5b0"

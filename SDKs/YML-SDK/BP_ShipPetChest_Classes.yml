@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_ShipPetChest_C:
   Attributes:
-  - Name: None
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*

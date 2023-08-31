@@ -20,7 +20,7 @@ struct PrioritisedPrompt
 {
 public:
 	bool                                                         UsePopupMessageDescForText;                        // 0x0(0x1)
-	char                                                         pad0x7_V7PAE[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_N81NT[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 Message;                                           // 0x8(0x38)
 	Struct FString                                               Key;                                               // 0x40(0x10)
 	Class PopUpMessageDesc*                                      PopUpMessageDesc;                                  // 0x50(0x8)
@@ -42,7 +42,7 @@ struct PromptEvaluation
 {
 public:
 	byte                                                         PromptType;                                        // 0x0(0x1)
-	char                                                         pad0x7_WD91X[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_XPQCH[0x7];                                 // 0x1(0x7)
 	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x8(0x70)
 };
 

@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_wpn_cutlass_smp_01_a_v03_Wieldable_C:
   Attributes:
-  - Name: None
-    Offset: '0xb48'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0xb50'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shroud_fp
     Offset: '0xb58'
     Size: '0x8'
     Type: Class StaticMeshComponent*
+  - Name: shroudmask_tp
+    Offset: '0xb60'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: shroud_tp
+    Offset: '0xb68'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
   ClassSize: '0x18'
-  FullSize: '0xb60'
-  InheritedSize: '0xb48'
-  Super: None
+  FullSize: '0xb70'
+  InheritedSize: '0xb58'
+  Super: BP_Cutlass_Item_C

@@ -6,7 +6,7 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_472C8[0x4]
+  - Name: pad0x4_MWEFA[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -18,7 +18,7 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_G0MJ7[0x7]
+  - Name: pad0x7_VKNYO[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -33,7 +33,7 @@ SpawnAICustomOnSpawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_G2377[0x4]
+  - Name: pad0x4_JHQ4C[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -56,42 +56,54 @@ SpawnAICustomPreSpawnTaskData:
     Offset: '0x4'
     Size: '0xc'
     Type: Struct Vector
+  - Name: SpawnRotation
+    Offset: '0x10'
+    Size: '0xc'
+    Type: Struct Rotator
+  - Name: PerceiveActor
+    Offset: '0x1c'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_16T83[0x3]
+    Offset: '0x1d'
+    Size: '0x3'
+    Type: char
   - Name: Skillset
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: Class AthenaAIControllerParamsDataAsset*
   - Name: Loadout
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x8'
     Type: Class LoadoutAsset*
   - Name: Form
-    Offset: '0x40'
+    Offset: '0x50'
     Size: '0x8'
     Type: Class AthenaAIFormDataAsset*
   - Name: Ammo
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x8'
     Type: Class AthenaAIAmmoDataAsset*
   - Name: AIClass
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x8'
     Type: class
   - Name: PartsCategory
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x8'
     Type: Class AIPartsCategory*
   - Name: Body
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x8'
     Type: Class TaleQuestStepDesc*
-  ClassSize: '0x68'
+  ClassSize: '0x78'
 SpawnAICustomSetupTaskData:
   Attributes:
   - Name: MaxAI
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DVNPW[0x4]
+  - Name: pad0x4_D4TMZ[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -117,7 +129,7 @@ SpawnActorCustomOnTriggerWaveTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_XFRV3[0x4]
+  - Name: pad0x4_IEOWK[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

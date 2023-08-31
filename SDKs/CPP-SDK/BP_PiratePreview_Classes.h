@@ -33,7 +33,7 @@ public:
 	Class SkeletalMeshComponent*                                 PirateMesh;                                        // 0x8b0(0x8)
 	Class CameraComponent*                                       Camera;                                            // 0x8b8(0x8)
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x8c0(0x8)
-	char                                                         pad0x30_FHCBK[0x30];                               // 0x8c8(0x30)
+	char                                                         pad0x30_PEFI1[0x30];                               // 0x8c8(0x30)
 };
 
 

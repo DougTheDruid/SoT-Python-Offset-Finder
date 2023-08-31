@@ -2,39 +2,39 @@
 # https://github.com/DougTheDruid
 BP_WaterVolume_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x448'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: WaterPlaneActivatationVolume
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DynamicFlow
     Offset: '0x458'
     Size: '0x8'
     Type: Class DynamicFlowComponent*
-  - Name: None
+  - Name: FlatWaterPlane
     Offset: '0x460'
     Size: '0x8'
     Type: Class FlatWaterPlaneComponent*
-  - Name: None
+  - Name: FlatWaterMesh
     Offset: '0x468'
     Size: '0x8'
     Type: Class FlatWaterMeshComponent*
-  - Name: None
+  - Name: Root
     Offset: '0x470'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: SunLit
     Offset: '0x478'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_QI26N[0x3]
+  - Name: pad0x3_2ACZ0[0x3]
     Offset: '0x479'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: RippleGeneratorTag
     Offset: '0x47c'
     Size: '0x8'
     Type: struct FName

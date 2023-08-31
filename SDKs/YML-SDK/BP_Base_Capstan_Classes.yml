@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_Base_Capstan_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x8b0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: ProjectileCollision
     Offset: '0x8b8'
     Size: '0x8'
     Type: Class SphereComponent*
-  - Name: None
+  - Name: NewVar
     Offset: '0x8c0'
     Size: '0x8'
     Type: Class WwiseEmitterComponent*

@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_HarpoonLauncher_C: public HarpoonLauncher
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0xcb0(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0xcb8(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0xcc0(0x8)
+	Class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcb0(0x8)
+	Class CapsuleComponent*                                      MountCollision;                                    // 0xcb8(0x8)
+	Class CapsuleComponent*                                      BarrelCollision;                                   // 0xcc0(0x8)
 };
 
 

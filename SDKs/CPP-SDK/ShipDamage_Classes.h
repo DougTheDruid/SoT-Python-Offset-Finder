@@ -13,6 +13,16 @@ public:
 };
 
 
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
+class GenericShipDamageablePart: public Actor
+{
+public:
+	char                                                         pad0x8_PWNKB[0x8];                                 // 0x3c8(0x8)
+	Class ShipDamageableComponent*                               ShipDamageableComponent;                           // 0x3d0(0x8)
+	char                                                         pad0x10_SXPL1[0x10];                               // 0x3d8(0x10)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HullDamageInterface: public Interface
 {
@@ -46,7 +56,7 @@ class ShipPartsDamageTrackerComponent: public ActorComponent
 {
 public:
 	int                                                          IsAnyShipPartDamaged;                              // 0xc8(0x4)
-	char                                                         pad0x4_ZPFMF[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_Q8T3P[0x4];                                 // 0xcc(0x4)
 };
 
 
@@ -55,8 +65,8 @@ class ShipRestorationSettings: public DeveloperSettings
 {
 public:
 	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
-	char                                                         pad0x4_TJJ7V[0x4];                                 // 0x3c(0x4)
-	char                                                         pad0x8_5L0SL[0x8];                                 // 0x40(0x8)
+	char                                                         pad0x4_95RYX[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x8_FYP2D[0x8];                                 // 0x40(0x8)
 };
 
 

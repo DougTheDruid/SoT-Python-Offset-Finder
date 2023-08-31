@@ -6,25 +6,115 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x78
-struct GameEventOnDemandAnnouncementBannerData
-{
-public:
-	Struct FText                                                 Header;                                            // 0x0(0x38)
-	Struct FText                                                 Message;                                           // 0x38(0x38)
-	struct FName                                                 Tag;                                               // 0x70(0x8)
-};
-
-
-// Size 0x20
+// Size 0x30
 struct GameEventAvailabilityData
 {
 public:
 	Struct FString                                               EventName;                                         // 0x0(0x10)
 	byte                                                         EventCategory;                                     // 0x10(0x1)
 	byte                                                         AvailabilityState;                                 // 0x11(0x1)
-	char                                                         pad0x6_CT85D[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_Q7LDB[0x6];                                 // 0x12(0x6)
 	class                                                        ShipSizeLimit;                                     // 0x18(0x8)
+	TArray<struct ParticipatingCrewIds>                          ParticipatingCrewIds;                              // 0x20(0x10)
+};
+
+
+// Size 0x10
+struct GameEventOnDemandCrewSentToSinkingTunnel
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct GameEventOnDemandDeactivated
+{
+public:
+	TArray<struct OnDemandCrewIds>                               OnDemandCrewIds;                                   // 0x0(0x10)
+};
+
+
+// Size 0x30
+struct GameEventOnDemandDeactivatedTelemetryEvent
+{
+public:
+	Struct FString                                               ShipSizeLimit;                                     // 0x0(0x10)
+	TArray<struct ParticipatingOnDemandCrews>                    ParticipatingOnDemandCrews;                        // 0x10(0x10)
+	TArray<struct ParticipatingCrews>                            ParticipatingCrews;                                // 0x20(0x10)
+};
+
+
+// Size 0x4
+struct GameEventOnDemandActivatedTelemetryEvent
+{
+public:
+	int                                                          NumCrewsOnDemandLimit;                             // 0x0(0x4)
+};
+
+
+// Size 0x1
+struct GameEventOnDemandCrewCancelledVoyageTelemetryEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct GameEventOnDemandCrewSinkingTelemetryEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct GameEventOnDemandCrewScuttledTelemetryEvent
+{
+public:
+};
+
+
+// Size 0x10
+struct GameEventOnDemandCrewJoinedTelemetryEvent
+{
+public:
+	Struct FString                                               ShipType;                                          // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct GameEventOnDemandBaseTelemetryFragmentInput
+{
+public:
+	Struct FString                                               GameEventType;                                     // 0x0(0x10)
+	Struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct GameEventOnDemandBaseTelemetryFragment
+{
+public:
+	Struct FString                                               GameEventType;                                     // 0x0(0x10)
+	Struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
+};
+
+
+// Size 0x48
+struct SkellyFortGameEventOnDemandDeactivatedTelemetryEvent
+{
+public:
+	struct FName                                                 FortName;                                          // 0x30(0x8)
+	Struct Guid                                                  FortId;                                            // 0x38(0x10)
+};
+
+
+// Size 0x1c
+struct SkellyFortGameEventOnDemandActivatedTelemetryEvent
+{
+public:
+	struct FName                                                 FortName;                                          // 0x4(0x8)
+	Struct Guid                                                  FortId;                                            // 0xc(0x10)
 };
 
 

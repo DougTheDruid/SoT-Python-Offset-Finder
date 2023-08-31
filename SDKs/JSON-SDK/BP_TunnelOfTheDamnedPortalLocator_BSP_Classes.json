@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "SeaRockBounds",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "None",
+        "Name": "SignalAnchor",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "CalmWater",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "Visuals",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x418"

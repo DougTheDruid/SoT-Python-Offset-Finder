@@ -23,7 +23,7 @@ public:
 	Struct Vector                                                StimulusLocation;                                  // 0xc(0xc)
 	Struct Vector                                                ReceiverLocation;                                  // 0x18(0xc)
 	struct FName                                                 Tag;                                               // 0x24(0x8)
-	char                                                         pad0xc_O5H3F[0xc];                                 // 0x2c(0xc)
+	char                                                         pad0xc_3GQTV[0xc];                                 // 0x2c(0xc)
 	bool                                                         bSuccessfullySensed;                               // 0x38(0x1)
 };
 
@@ -60,7 +60,7 @@ public:
 	struct FName                                                 SelectedKeyName;                                   // 0x10(0x8)
 	class                                                        SelectedKeyType;                                   // 0x18(0x8)
 	byte                                                         SelectedKeyID;                                     // 0x20(0x1)
-	char                                                         pad0x3_QIBQI[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_S50KK[0x3];                                 // 0x21(0x3)
 	bool                                                         bNoneIsAllowedValue;                               // 0x24(0x1)
 };
 
@@ -166,7 +166,7 @@ public:
 	float                                                        Amount;                                            // 0x0(0x4)
 	Struct Vector                                                Location;                                          // 0x4(0xc)
 	Struct Vector                                                HitLocation;                                       // 0x10(0xc)
-	char                                                         pad0x4_53QLX[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_0QEYI[0x4];                                 // 0x1c(0x4)
 	Class Actor*                                                 DamagedActor;                                      // 0x20(0x8)
 	Class Actor*                                                 Instigator;                                        // 0x28(0x8)
 };
@@ -236,7 +236,7 @@ struct BTDecoratorLogic
 {
 public:
 	byte                                                         Operation;                                         // 0x0(0x1)
-	char                                                         pad0x1_5KVTX[0x1];                                 // 0x1(0x1)
+	char                                                         pad0x1_88AXQ[0x1];                                 // 0x1(0x1)
 };
 
 
@@ -271,7 +271,7 @@ struct EnvBoolParam_DEPRECATED
 {
 public:
 	bool                                                         Value;                                             // 0x0(0x1)
-	char                                                         pad0x3_PCAN4[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_QTK4S[0x3];                                 // 0x1(0x3)
 	struct FName                                                 ParamName;                                         // 0x4(0x8)
 };
 
@@ -313,7 +313,7 @@ struct EnvQueryResult
 {
 public:
 	class                                                        ItemType;                                          // 0x10(0x8)
-	char                                                         pad0x14_223IR[0x14];                               // 0x18(0x14)
+	char                                                         pad0x14_668O0[0x14];                               // 0x18(0x14)
 	int                                                          OptionIndex;                                       // 0x2c(0x4)
 	int                                                          QueryID;                                           // 0x30(0x4)
 };
@@ -324,7 +324,7 @@ struct EnvTraceData
 {
 public:
 	int                                                          VersionNum;                                        // 0x0(0x4)
-	char                                                         pad0x4_Y2RMJ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_YBU1W[0x4];                                 // 0x4(0x4)
 	class                                                        NavigationFilter;                                  // 0x8(0x8)
 	struct FName                                                 OverrideNavMesh;                                   // 0x10(0x8)
 	float                                                        ProjectDown;                                       // 0x18(0x4)
@@ -343,7 +343,7 @@ public:
 	bool                                                         bCanTraceOnGeometry;                               // 0x34(0x1)
 	bool                                                         bCanDisableTrace;                                  // 0x34(0x1)
 	bool                                                         bCanProjectDown;                                   // 0x34(0x1)
-	char                                                         pad0x3_5NLWE[0x3];                                 // 0x35(0x3)
+	char                                                         pad0x3_J3NUC[0x3];                                 // 0x35(0x3)
 	bool                                                         bUseUpDownAsAbsoluteZStartAndEnd;                  // 0x38(0x1)
 	bool                                                         bUseSourceZAsEnd;                                  // 0x39(0x1)
 };
@@ -366,7 +366,7 @@ struct EnvNamedValue
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
 	byte                                                         ParamType;                                         // 0x8(0x1)
-	char                                                         pad0x3_XE74H[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_UVD3H[0x3];                                 // 0x9(0x3)
 	float                                                        Value;                                             // 0xc(0x4)
 };
 

@@ -8,7 +8,7 @@ AbilitySystemBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 AbilitySystemComponent:
   Attributes:
-  - Name: pad0x8_HMJQU[0x8]
+  - Name: pad0x8_8ZH8D[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -24,7 +24,7 @@ AbilitySystemComponent:
     Offset: '0x150'
     Size: '0x18'
     Type: Struct PredictionKey
-  - Name: pad0x78_YU28D[0x78]
+  - Name: pad0x78_FB4PV[0x78]
     Offset: '0x168'
     Size: '0x78'
     Type: char
@@ -40,7 +40,7 @@ AbilitySystemComponent:
     Offset: '0x1e8'
     Size: '0xc0'
     Type: Struct GameplayAbilitySpecContainer
-  - Name: pad0x50_H39WK[0x50]
+  - Name: pad0x50_753FZ[0x50]
     Offset: '0x2a8'
     Size: '0x50'
     Type: char
@@ -48,7 +48,7 @@ AbilitySystemComponent:
     Offset: '0x2f8'
     Size: '0x10'
     Type: TArray<class GameplayAbility*>
-  - Name: pad0x1b0_VRGCZ[0x1b0]
+  - Name: pad0x1b0_A15IF[0x1b0]
     Offset: '0x308'
     Size: '0x1b0'
     Type: char
@@ -64,7 +64,7 @@ AbilitySystemComponent:
     Offset: '0x4f8'
     Size: '0x30'
     Type: Struct GameplayAbilityLocalAnimMontage
-  - Name: pad0xa0_77SN6[0xa0]
+  - Name: pad0xa0_LRHL0[0xa0]
     Offset: '0x528'
     Size: '0xa0'
     Type: char
@@ -76,7 +76,7 @@ AbilitySystemComponent:
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class Actor*
-  - Name: pad0x18_8DJYH[0x18]
+  - Name: pad0x18_0GRTT[0x18]
     Offset: '0x5d8'
     Size: '0x18'
     Type: char
@@ -88,7 +88,7 @@ AbilitySystemComponent:
     Offset: '0x958'
     Size: '0xc0'
     Type: Struct ActiveGameplayCueContainer
-  - Name: pad0x130_HQ4T0[0x130]
+  - Name: pad0x130_PFHPZ[0x130]
     Offset: '0xa18'
     Size: '0x130'
     Type: char
@@ -96,7 +96,7 @@ AbilitySystemComponent:
     Offset: '0xb48'
     Size: '0x10'
     Type: TArray<Byte BlockedAbilityBindings>
-  - Name: pad0x140_Z64H7[0x140]
+  - Name: pad0x140_D0W32[0x140]
     Offset: '0xb58'
     Size: '0x140'
     Type: char
@@ -188,7 +188,7 @@ AbilitySystemGlobals:
     Offset: '0xf0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0ZFIX[0x7]
+  - Name: pad0x7_ZDKWG[0x7]
     Offset: '0xf1'
     Size: '0x7'
     Type: char
@@ -208,7 +208,7 @@ AbilitySystemGlobals:
     Offset: '0x110'
     Size: '0x8'
     Type: Class GameplayCueManager*
-  - Name: pad0x18_ZTP82[0x18]
+  - Name: pad0x18_H0O4I[0x18]
     Offset: '0x118'
     Size: '0x18'
     Type: char
@@ -294,7 +294,7 @@ AbilitySystemTestAttributeSet:
   Super: AttributeSet
 AbilitySystemTestPawn:
   Attributes:
-  - Name: pad0x18_5S8L9[0x18]
+  - Name: pad0x18_RYYBD[0x18]
     Offset: '0x468'
     Size: '0x18'
     Type: char
@@ -314,7 +314,7 @@ AbilityTask:
   Super: GameplayTask
 AbilityTask_MoveToLocation:
   Attributes:
-  - Name: pad0x14_APZQ0[0x14]
+  - Name: pad0x14_OSN9T[0x14]
     Offset: '0x68'
     Size: '0x14'
     Type: char
@@ -330,7 +330,7 @@ AbilityTask_MoveToLocation:
     Offset: '0x94'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_XOGE2[0x8]
+  - Name: pad0x8_ILF01[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -498,7 +498,7 @@ AbilityTask_WaitTargetData:
   Super: AbilityTask
 AbilityTask_WaitVelocityChange:
   Attributes:
-  - Name: pad0x10_01EU0[0x10]
+  - Name: pad0x10_E369I[0x10]
     Offset: '0x68'
     Size: '0x10'
     Type: char
@@ -506,7 +506,7 @@ AbilityTask_WaitVelocityChange:
     Offset: '0x78'
     Size: '0x8'
     Type: Class MovementComponent*
-  - Name: pad0x10_AVPSA[0x10]
+  - Name: pad0x10_KKLY9[0x10]
     Offset: '0x80'
     Size: '0x10'
     Type: char
@@ -522,7 +522,7 @@ AttributeSet:
   Super: Object
 GameplayAbility:
   Attributes:
-  - Name: pad0x40_NJXNE[0x40]
+  - Name: pad0x40_PA2BU[0x40]
     Offset: '0x28'
     Size: '0x40'
     Type: char
@@ -530,7 +530,7 @@ GameplayAbility:
     Offset: '0x68'
     Size: '0x28'
     Type: Struct GameplayTagContainer
-  - Name: pad0x18_5PUQJ[0x18]
+  - Name: pad0x18_NG77E[0x18]
     Offset: '0x90'
     Size: '0x18'
     Type: char
@@ -538,7 +538,7 @@ GameplayAbility:
     Offset: '0xa8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x27_TNN2Y[0x27]
+  - Name: pad0x27_03WCZ[0x27]
     Offset: '0xa9'
     Size: '0x27'
     Type: char
@@ -558,7 +558,7 @@ GameplayAbility:
     Offset: '0xd3'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4_343JT[0x4]
+  - Name: pad0x4_4VPKN[0x4]
     Offset: '0xd4'
     Size: '0x4'
     Type: char
@@ -574,7 +574,7 @@ GameplayAbility:
     Offset: '0x198'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_QE6LV[0x7]
+  - Name: pad0x7_1O677[0x7]
     Offset: '0x199'
     Size: '0x7'
     Type: char
@@ -642,7 +642,7 @@ GameplayAbility:
     Offset: '0x3a0'
     Size: '0x28'
     Type: Struct GameplayTagContainer
-  - Name: pad0x70_GR23W[0x70]
+  - Name: pad0x70_9E043[0x70]
     Offset: '0x3c8'
     Size: '0x70'
     Type: char
@@ -662,7 +662,7 @@ GameplayAbility:
     Offset: '0x442'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_DHD41[0x5]
+  - Name: pad0x5_SM837[0x5]
     Offset: '0x443'
     Size: '0x5'
     Type: char
@@ -698,7 +698,7 @@ GameplayAbilityTargetActor:
     Offset: '0x3c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XUTQ5[0x7]
+  - Name: pad0x7_WF7EL[0x7]
     Offset: '0x3c9'
     Size: '0x7'
     Type: char
@@ -706,7 +706,7 @@ GameplayAbilityTargetActor:
     Offset: '0x3d0'
     Size: '0x70'
     Type: Struct GameplayAbilityTargetingLocationInfo
-  - Name: pad0x30_0T6B2[0x30]
+  - Name: pad0x30_FRJMU[0x30]
     Offset: '0x440'
     Size: '0x30'
     Type: char
@@ -722,7 +722,7 @@ GameplayAbilityTargetActor:
     Offset: '0x480'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_CLMZ1[0x7]
+  - Name: pad0x7_IF2WH[0x7]
     Offset: '0x481'
     Size: '0x7'
     Type: char
@@ -734,7 +734,7 @@ GameplayAbilityTargetActor:
     Offset: '0x490'
     Size: '0xc'
     Type: Struct WorldReticleParameters
-  - Name: pad0x4_NQOCU[0x4]
+  - Name: pad0x4_SOD4K[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
@@ -750,7 +750,7 @@ GameplayAbilityTargetActor:
     Offset: '0x4c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1f_FKR6T[0x1f]
+  - Name: pad0x1f_882E1[0x1f]
     Offset: '0x4c1'
     Size: '0x1f'
     Type: char
@@ -768,7 +768,7 @@ GameplayAbilityTargetActor_ActorPlacement:
     Offset: '0x518'
     Size: '0x8'
     Type: Class MaterialInterface*
-  - Name: pad0x10_DUFNW[0x10]
+  - Name: pad0x10_3P56P[0x10]
     Offset: '0x520'
     Size: '0x10'
     Type: char
@@ -786,7 +786,7 @@ GameplayAbilityTargetActor_GroundTrace:
     Offset: '0x4f4'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_XCLPV[0x18]
+  - Name: pad0x18_CWDGP[0x18]
     Offset: '0x4f8'
     Size: '0x18'
     Type: char
@@ -800,7 +800,7 @@ GameplayAbilityTargetActor_Radius:
     Offset: '0x4d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WD7TT[0x4]
+  - Name: pad0x4_VNW9T[0x4]
     Offset: '0x4dc'
     Size: '0x4'
     Type: char
@@ -828,7 +828,7 @@ GameplayAbilityTargetActor_Trace:
     Offset: '0x4e4'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_1KLM1[0xb]
+  - Name: pad0xb_AQ7ZZ[0xb]
     Offset: '0x4e5'
     Size: '0xb'
     Type: char
@@ -904,7 +904,7 @@ GameplayAbility_Montage:
     Offset: '0x454'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_QDN4W[0x4]
+  - Name: pad0x4_O6P7J[0x4]
     Offset: '0x45c'
     Size: '0x4'
     Type: char
@@ -944,7 +944,7 @@ GameplayCueManager:
     Offset: '0x40'
     Size: '0xc0'
     Type: Struct StreamableManager
-  - Name: pad0x60_000W2[0x60]
+  - Name: pad0x60_2Q1US[0x60]
     Offset: '0x100'
     Size: '0x60'
     Type: char
@@ -956,7 +956,7 @@ GameplayCueManager:
     Offset: '0x170'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_4DISJ[0xc]
+  - Name: pad0xc_IJ2CT[0xc]
     Offset: '0x174'
     Size: '0xc'
     Type: char
@@ -978,7 +978,7 @@ GameplayCueNotify_Actor:
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6ZJOC[0x3]
+  - Name: pad0x3_1MZSV[0x3]
     Offset: '0x3d9'
     Size: '0x3'
     Type: char
@@ -998,7 +998,7 @@ GameplayCueNotify_Actor:
     Offset: '0x3e2'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_FBDLQ[0x5]
+  - Name: pad0x5_8B6RM[0x5]
     Offset: '0x3e3'
     Size: '0x5'
     Type: char
@@ -1034,7 +1034,7 @@ GameplayCueNotify_Static:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_S6RND[0x7]
+  - Name: pad0x7_UF6S1[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -1048,7 +1048,7 @@ GameplayCueSet:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<struct GameplayCueData>
-  - Name: pad0x50_AJUI3[0x50]
+  - Name: pad0x50_X2900[0x50]
     Offset: '0x38'
     Size: '0x50'
     Type: char
@@ -1058,7 +1058,7 @@ GameplayCueSet:
   Super: DataAsset
 GameplayEffect:
   Attributes:
-  - Name: pad0x8_GEDBU[0x8]
+  - Name: pad0x8_UACGT[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -1066,7 +1066,7 @@ GameplayEffect:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_E5J26[0x7]
+  - Name: pad0x7_N6DRZ[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -1082,7 +1082,7 @@ GameplayEffect:
     Offset: '0x1c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GXLI6[0x7]
+  - Name: pad0x7_AL61J[0x7]
     Offset: '0x1c9'
     Size: '0x7'
     Type: char
@@ -1118,7 +1118,7 @@ GameplayEffect:
     Offset: '0x241'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_4CUUU[0x6]
+  - Name: pad0x6_UQ551[0x6]
     Offset: '0x242'
     Size: '0x6'
     Type: char
@@ -1134,7 +1134,7 @@ GameplayEffect:
     Offset: '0x268'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4EP0Y[0x7]
+  - Name: pad0x7_IX5XU[0x7]
     Offset: '0x269'
     Size: '0x7'
     Type: char
@@ -1186,7 +1186,7 @@ GameplayEffect:
     Offset: '0x558'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_HS8WF[0x3]
+  - Name: pad0x3_VGO1X[0x3]
     Offset: '0x559'
     Size: '0x3'
     Type: char
@@ -1202,7 +1202,7 @@ GameplayEffect:
     Offset: '0x561'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_4081Z[0x6]
+  - Name: pad0x6_LVZHN[0x6]
     Offset: '0x562'
     Size: '0x6'
     Type: char
@@ -1230,7 +1230,7 @@ GameplayEffectExecutionCalculation:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MPOOB[0x7]
+  - Name: pad0x7_HRV54[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -1306,7 +1306,7 @@ GameplayTagReponseTable:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<struct Entries>
-  - Name: pad0x50_K539E[0x50]
+  - Name: pad0x50_1PA6E[0x50]
     Offset: '0x38'
     Size: '0x50'
     Type: char

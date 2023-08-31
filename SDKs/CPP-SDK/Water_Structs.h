@@ -23,7 +23,7 @@ public:
 	float                                                        OverallBuyoancyScalar;                             // 0x8(0x4)
 	float                                                        DampingPerSample;                                  // 0xc(0x4)
 	float                                                        AdditionalAngularDampingWhenSubmerged;             // 0x10(0x4)
-	char                                                         pad0x4_HY50A[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_SKX3N[0x4];                                 // 0x14(0x4)
 	TArray<struct VolumeSamples>                                 VolumeSamples;                                     // 0x18(0x10)
 	TArray<struct DragSamples>                                   DragSamples;                                       // 0x28(0x10)
 	Class CurveFloat*                                            BuyoancySampleZSpeedVSDampeningScalar;             // 0x38(0x8)
@@ -52,10 +52,10 @@ public:
 	float                                                        Radius;                                            // 0xc(0x4)
 	byte                                                         Type;                                              // 0x10(0x1)
 	bool                                                         bRelevantForSubmersionVolumeCalculation;           // 0x11(0x1)
-	char                                                         pad0x2_JV7SL[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_Q1BV3[0x2];                                 // 0x12(0x2)
 	float                                                        Scalar;                                            // 0x14(0x4)
 	float                                                        DampingScalar;                                     // 0x18(0x4)
-	char                                                         pad0x4_SVR4L[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_1VMY1[0x4];                                 // 0x1c(0x4)
 	Class CurveFloat*                                            DistUnderwaterVSBuoyancyForce;                     // 0x20(0x8)
 	Class CurveFloat*                                            DistUnderwaterVSBuoyancyForceSecondary;            // 0x28(0x8)
 	Class CurveFloat*                                            DistUnderwaterVSBuoyancyForceTertiary;             // 0x30(0x8)
@@ -70,7 +70,7 @@ struct BuoyancySampleMovement
 {
 public:
 	TArray<struct Configurations>                                Configurations;                                    // 0x0(0x10)
-	char                                                         pad0x40_Y3LR5[0x40];                               // 0x10(0x40)
+	char                                                         pad0x40_GEEYP[0x40];                               // 0x10(0x40)
 	Class CurveFloat*                                            BuoyancyScalarCurve;                               // 0x50(0x8)
 	Class CurveFloat*                                            ProbeMovementCurve;                                // 0x58(0x8)
 };
@@ -83,7 +83,7 @@ public:
 	Class CurveVector*                                           CenterOfMassOffsetCurve;                           // 0x0(0x8)
 	TArray<struct SampleMoveData>                                SampleMoveData;                                    // 0x8(0x10)
 	float                                                        OverallBuoyancyScalar;                             // 0x18(0x4)
-	char                                                         pad0x4_BHD0W[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_5LFT0[0x4];                                 // 0x1c(0x4)
 	Class CurveFloat*                                            OverallBuoyancyScalarBlendCurve;                   // 0x20(0x8)
 	Class CurveFloat*                                            ProbeMovementBlendCurve;                           // 0x28(0x8)
 	float                                                        Duration;                                          // 0x30(0x4)
@@ -95,7 +95,7 @@ struct BuoyancySampleMovementConfigurationEntry
 {
 public:
 	Struct Vector                                                SampleOffset;                                      // 0x0(0xc)
-	char                                                         pad0x4_LNZPV[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_5F3YS[0x4];                                 // 0xc(0x4)
 	Class CurveFloat*                                            BuoyancyScaleCurve;                                // 0x10(0x8)
 };
 
@@ -158,7 +158,7 @@ public:
 	float                                                        LocalOffsetAdjustmentDuration;                     // 0x44(0x4)
 	byte                                                         Type;                                              // 0x48(0x1)
 	byte                                                         WaterHeightType;                                   // 0x49(0x1)
-	char                                                         pad0x2_8VKIN[0x2];                                 // 0x4a(0x2)
+	char                                                         pad0x2_L68OI[0x2];                                 // 0x4a(0x2)
 	float                                                        StaticWaterHeightValue;                            // 0x4c(0x4)
 };
 
@@ -177,7 +177,7 @@ public:
 	byte                                                         SplashAttachType;                                  // 0xf3(0x1)
 	Struct Vector                                                VfxSpawnOffset;                                    // 0xf4(0xc)
 	bool                                                         Enabled;                                           // 0x100(0x1)
-	char                                                         pad0x7_IC9QB[0x7];                                 // 0x101(0x7)
+	char                                                         pad0x7_3DPWH[0x7];                                 // 0x101(0x7)
 	Class ParticleSystemComponent*                               CurrentlyPlayingVFX;                               // 0x108(0x8)
 };
 

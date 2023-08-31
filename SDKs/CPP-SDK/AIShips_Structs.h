@@ -52,7 +52,7 @@ struct WeightedAIShipCrewAmmoType
 {
 public:
 	int                                                          Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_SQXQJ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_92JTT[0x4];                                 // 0x4(0x4)
 	Struct AIShipCrewAmmoType                                    Params;                                            // 0x8(0x18)
 };
 
@@ -71,7 +71,7 @@ struct WeightedAIShipCrewFormType
 {
 public:
 	int                                                          Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_66QSY[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_KHWSL[0x4];                                 // 0x4(0x4)
 	Struct AIShipCrewFormType                                    Params;                                            // 0x8(0x20)
 };
 
@@ -81,7 +81,7 @@ struct AIShipCrewFormType
 {
 public:
 	byte                                                         IconType;                                          // 0x0(0x1)
-	char                                                         pad0x3_DLVHF[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_T6ZTD[0x3];                                 // 0x1(0x3)
 	Struct Color                                                 IconColour;                                        // 0x4(0x4)
 	Struct StringAssetReference                                  Form;                                              // 0x10(0x10)
 };
@@ -93,10 +93,10 @@ struct AIShipContextDescDamageParams
 public:
 	float                                                        OverrideRainFillRate;                              // 0x0(0x4)
 	bool                                                         OverrideRepairTime;                                // 0x4(0x1)
-	char                                                         pad0x3_SLKM0[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_2LINV[0x3];                                 // 0x5(0x3)
 	float                                                        RepairTimeMultiplier;                              // 0x8(0x4)
 	bool                                                         OverrideLeakAmounts;                               // 0xc(0x1)
-	char                                                         pad0x3_T6UDI[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_UVBGE[0x3];                                 // 0xd(0x3)
 	float                                                        LeakAmountMultiplier;                              // 0x10(0x4)
 };
 
@@ -119,7 +119,7 @@ public:
 	Class AISpawner*                                             Spawner;                                           // 0x0(0x8)
 	struct FName                                                 SpawnLocationType;                                 // 0x8(0x8)
 	byte                                                         ShipPlayerTrackerType;                             // 0x10(0x1)
-	char                                                         pad0x3_Q6M6G[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_J599D[0x3];                                 // 0x11(0x3)
 	struct FName                                                 CaptainName;                                       // 0x14(0x8)
 	bool                                                         CanRepairDamage;                                   // 0x1c(0x1)
 	bool                                                         CanUseCannons;                                     // 0x1d(0x1)
@@ -155,7 +155,7 @@ struct AIShipGenerationParams
 public:
 	byte                                                         EncounterType;                                     // 0x0(0x1)
 	byte                                                         ShipType;                                          // 0x1(0x1)
-	char                                                         pad0x6_KAKSA[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_ZF24B[0x6];                                 // 0x2(0x6)
 	Class AthenaAIShipControllerParamsDataAsset*                 ShipControllerParams;                              // 0x8(0x8)
 	TArray<struct SkillsetOverrides>                             SkillsetOverrides;                                 // 0x10(0x10)
 	TArray<struct SkeletonAmmoTypeOverrides>                     SkeletonAmmoTypeOverrides;                         // 0x20(0x10)
@@ -226,7 +226,7 @@ struct AIShipWeightedSize
 public:
 	struct FName                                                 Feature;                                           // 0x0(0x8)
 	int                                                          Weight;                                            // 0x8(0x4)
-	char                                                         pad0x4_S88US[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_A3FJB[0x4];                                 // 0xc(0x4)
 	class                                                        ShipSize;                                          // 0x10(0x8)
 };
 
@@ -236,7 +236,7 @@ struct AIShipBattleEncounterDescGenerationParams
 {
 public:
 	bool                                                         EnableHardShip;                                    // 0x0(0x1)
-	char                                                         pad0x7_UEKF2[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_6G3BD[0x7];                                 // 0x1(0x7)
 	TArray<struct BattleGenerationParams>                        BattleGenerationParams;                            // 0x8(0x10)
 	TArray<struct BattleDescs>                                   BattleDescs;                                       // 0x18(0x10)
 	Struct AIShipEncounterDynamicBalancingDesc                   DynamicBalancingDesc;                              // 0x28(0x58)
@@ -248,12 +248,12 @@ struct AIShipEncounterDynamicBalancingDesc
 {
 public:
 	bool                                                         UseDynamicBalancing;                               // 0x0(0x1)
-	char                                                         pad0x3_IJ3T9[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_C6GL7[0x3];                                 // 0x1(0x3)
 	float                                                        InitialWaveGenEncounterRadiusMultiplier;           // 0x4(0x4)
 	class                                                        HardShipType;                                      // 0x8(0x8)
 	TArray<struct PlayerShipSizeValues>                          PlayerShipSizeValues;                              // 0x10(0x10)
 	int                                                          PlayerValue;                                       // 0x20(0x4)
-	char                                                         pad0x4_DLCHJ[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_12JU3[0x4];                                 // 0x24(0x4)
 	TArray<struct DynamicWaveCostConfigurations>                 DynamicWaveCostConfigurations;                     // 0x28(0x10)
 	TArray<struct PlayerCrewStrengthTargetWaveMapping>           PlayerCrewStrengthTargetWaveMapping;               // 0x38(0x10)
 	TArray<struct DynamicShipSizePools>                          DynamicShipSizePools;                              // 0x48(0x10)
@@ -331,7 +331,7 @@ public:
 	Struct WeightedProbabilityRange                              NumberOfWaves;                                     // 0x8(0x20)
 	Struct Int32Range                                            MinMaxNumberOfShips;                               // 0x28(0x10)
 	int                                                          MinNumberOfShipsInFinalWave;                       // 0x38(0x4)
-	char                                                         pad0x4_GDXJM[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_H452A[0x4];                                 // 0x3c(0x4)
 	TArray<struct ShipSizeLimits>                                ShipSizeLimits;                                    // 0x40(0x10)
 	TArray<struct WaveConfigurations>                            WaveConfigurations;                                // 0x50(0x10)
 };
@@ -361,7 +361,7 @@ public:
 	float                                                        DirectionAngle;                                    // 0x0(0x4)
 	float                                                        DirectionWidth;                                    // 0x4(0x4)
 	float                                                        Weight;                                            // 0x8(0x4)
-	char                                                         pad0x4_QKX6F[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_NJKTL[0x4];                                 // 0xc(0x4)
 	TArray<struct SpawnOffsets>                                  SpawnOffsets;                                      // 0x10(0x10)
 };
 
@@ -373,7 +373,7 @@ public:
 	float                                                        MinSpawnDistance;                                  // 0x0(0x4)
 	float                                                        MaxSpawnDistance;                                  // 0x4(0x4)
 	float                                                        Weight;                                            // 0x8(0x4)
-	char                                                         pad0x4_R9E1A[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_MAAO3[0x4];                                 // 0xc(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      SpawnRotations;                                    // 0x10(0x30)
 };
 
@@ -383,7 +383,7 @@ struct AIShipEncounterParams
 {
 public:
 	float                                                        MinEngagedDistanceFromPlayers;                     // 0x0(0x4)
-	char                                                         pad0x4_5FXGB[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_CUCTG[0x4];                                 // 0x4(0x4)
 	TArray<struct ShipTypeParams>                                ShipTypeParams;                                    // 0x8(0x10)
 };
 
@@ -413,7 +413,7 @@ public:
 	Struct FText                                                 SkellyCrewName;                                    // 0x38(0x38)
 	byte                                                         CannonBallType;                                    // 0x70(0x1)
 	byte                                                         SkellyType;                                        // 0x71(0x1)
-	char                                                         pad0x6_1RD4C[0x6];                                 // 0x72(0x6)
+	char                                                         pad0x6_NBWUP[0x6];                                 // 0x72(0x6)
 	Class AIShipEncounterDesc*                                   EncounterDescription;                              // 0x78(0x8)
 };
 
@@ -525,7 +525,7 @@ struct FeatureLockedAIShipBattles
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
-	char                                                         pad0x4_THAEZ[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_JKGXY[0x4];                                 // 0xc(0x4)
 	Class AIShipBattlesDataAsset*                                BattlesData;                                       // 0x10(0x8)
 };
 
@@ -557,7 +557,7 @@ struct AIShipDamagedTelemetryEvent
 public:
 	Struct FString                                               DamageType;                                        // 0x0(0x10)
 	Struct Vector                                                DamageLocation;                                    // 0x10(0xc)
-	char                                                         pad0x4_9U743[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_ZX5UJ[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               DamagedShipPart;                                   // 0x20(0x10)
 	int                                                          DamageLevel;                                       // 0x30(0x4)
 	Struct Guid                                                  AttackId;                                          // 0x34(0x10)

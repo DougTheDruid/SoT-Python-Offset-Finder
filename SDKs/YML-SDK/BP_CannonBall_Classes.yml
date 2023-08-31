@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_CannonBall_C:
   Attributes:
-  - Name: UsableWieldable
+  - Name: None
     Offset: '0x7f0'
     Size: '0x8'
     Type: Class UsableWieldableComponent*
-  - Name: WieldableInteractable
+  - Name: None
     Offset: '0x7f8'
     Size: '0x8'
     Type: Class WieldableInteractableComponent*
-  - Name: Pickupable
+  - Name: None
     Offset: '0x800'
     Size: '0x8'
     Type: Class PickupableComponent*

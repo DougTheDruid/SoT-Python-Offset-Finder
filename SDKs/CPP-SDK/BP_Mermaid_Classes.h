@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_Mermaid_C: public Mermaid
 {
 public:
-	Class InteractableComponent*                                 None;                                              // 0x9b0(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0x9b8(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x9c0(0x8)
-	Class SkeletalMeshMemoryConstraintComponent*                 None;                                              // 0x9c8(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0x9d0(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x9b0(0x8)
+	Class CapsuleComponent*                                      PlayerHits;                                        // 0x9b8(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x9c0(0x8)
+	Class SkeletalMeshMemoryConstraintComponent*                 SkeletalMeshMemoryConstraint;                      // 0x9c8(0x8)
+	Class CapsuleComponent*                                      WorldHits;                                         // 0x9d0(0x8)
 };
 
 

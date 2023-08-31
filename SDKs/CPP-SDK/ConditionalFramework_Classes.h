@@ -6,6 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActorSpecifierInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class ActorSpecifierComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_IW3CV[0x8];                                 // 0xc8(0x8)
+	Class Actor*                                                 SpecifiedActor;                                    // 0xd0(0x8)
+};
+
+
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class ConditionRootAsset: public DataAsset
 {

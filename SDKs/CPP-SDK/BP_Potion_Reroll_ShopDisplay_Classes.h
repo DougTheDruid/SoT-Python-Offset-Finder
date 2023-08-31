@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_Potion_Reroll_ShopDisplay_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    None;                                              // 0x520(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x528(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x530(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x538(0x8)
-	Class SceneComponent*                                        None;                                              // 0x540(0x8)
+	Class NPCDialogComponent*                                    InspectDialog;                                     // 0x520(0x8)
+	Class StaticMeshComponent*                                   vfx_Tendrils;                                      // 0x528(0x8)
+	Class ParticleSystemComponent*                               vfx_rerollBottle;                                  // 0x530(0x8)
+	Class StaticMeshComponent*                                   Potion_Reroll;                                     // 0x538(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x540(0x8)
 };
 
 

@@ -60,7 +60,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RVJMG[0x3]
+  - Name: pad0x3_09PRW[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
@@ -83,7 +83,7 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_IHZHW[0x3]
+  - Name: pad0x3_9LBQU[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -91,7 +91,7 @@ ExistingServerCrewModel:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_EKPB8[0x4]
+  - Name: pad0x4_XOORF[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -125,15 +125,19 @@ GameMainEventTypeModel:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<Str ExcludedEvents>
-  - Name: Status
+  - Name: ExcludedCrewIds
     Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<struct ExcludedCrewIds>
+  - Name: Status
+    Offset: '0x30'
     Size: '0x1'
     Type: byte
   - Name: ShipSizeLimit
-    Offset: '0x21'
+    Offset: '0x31'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x28'
+  ClassSize: '0x38'
 GameSubEventTypeModel:
   Attributes:
   - Name: EventName
@@ -185,7 +189,7 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_G3CBT[0x4]
+  - Name: pad0x4_MRARZ[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -201,7 +205,7 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_O85NJ[0x3]
+  - Name: pad0x3_BBZ1B[0x3]
     Offset: '0x71'
     Size: '0x3'
     Type: char
@@ -221,7 +225,7 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_PF7BM[0x3]
+  - Name: pad0x3_485JP[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -311,7 +315,7 @@ ServerCrewResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1O6S4[0x7]
+  - Name: pad0x7_6GU3D[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

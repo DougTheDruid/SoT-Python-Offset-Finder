@@ -18,7 +18,7 @@ struct PartyReservation
 {
 public:
 	int                                                          TeamNum;                                           // 0x0(0x4)
-	char                                                         pad0x4_E5MNI[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_Z82GV[0x4];                                 // 0x4(0x4)
 	Struct UniqueNetIdRepl                                       PartyLeader;                                       // 0x8(0x18)
 	TArray<struct PartyMembers>                                  PartyMembers;                                      // 0x20(0x10)
 };

@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_LargeShip_StandardHull_InternalShipWater_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x620'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: DynamicFlow
     Offset: '0x628'
     Size: '0x8'
     Type: Class DynamicFlowComponent*
-  - Name: None
+  - Name: Foaminess
     Offset: '0x630'
     Size: '0x8'
     Type: Class CurveFloat*

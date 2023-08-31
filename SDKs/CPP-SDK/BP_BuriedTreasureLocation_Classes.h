@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_BuriedTreasureLocation_C: public BuriedTreasureLocation
 {
 public:
-	Class ArrowComponent*                                        None;                                              // 0x3f0(0x8)
+	Class ArrowComponent*                                        Arrow;                                             // 0x3f0(0x8)
 };
 
 

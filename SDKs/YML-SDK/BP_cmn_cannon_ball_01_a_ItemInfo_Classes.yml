@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_cmn_cannon_ball_01_a_ItemInfo_C:
   Attributes:
-  - Name: DefaultSceneRoot
-    Offset: '0x518'
+  - Name: None
+    Offset: '0x530'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x520'
-  InheritedSize: '0x518'
+  FullSize: '0x538'
+  InheritedSize: '0x530'
   Super: ProjectileItemInfo

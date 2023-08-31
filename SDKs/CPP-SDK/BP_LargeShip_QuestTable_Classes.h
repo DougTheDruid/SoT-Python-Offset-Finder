@@ -6,20 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x50 (Full Size[0x940] - InheritedSize[0x8f0]
+// Size 0x58 (Full Size[0x948] - InheritedSize[0x8f0]
 class BP_LargeShip_QuestTable_C: public VoyageTable
 {
 public:
-	Class ChildActorComponent*                                   None;                                              // 0x8f0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x8f8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x900(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x908(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x910(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x918(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x920(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x928(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x930(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x938(0x8)
+	Class ChildActorComponent*                                   CancelVoyageSeaOfThievesOnDemand;                  // 0x8f0(0x8)
+	Class ChildActorComponent*                                   WarMap;                                            // 0x8f8(0x8)
+	Class ChildActorComponent*                                   FactionHourglass;                                  // 0x900(0x8)
+	Class ChildActorComponent*                                   CancelAdventure;                                   // 0x908(0x8)
+	Class ChildActorComponent*                                   PlayerBuiredItemsMapBundleInteractionPoint;        // 0x910(0x8)
+	Class ChildActorComponent*                                   CancelTale;                                        // 0x918(0x8)
+	Class ChildActorComponent*                                   CancelVoyage;                                      // 0x920(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot4;                              // 0x928(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot3;                              // 0x930(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot2;                              // 0x938(0x8)
+	Class ChildActorComponent*                                   VoyageSelectionSlot1;                              // 0x940(0x8)
 };
 
 

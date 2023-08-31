@@ -6,7 +6,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_UNRGC[0x8]",
+        "Name": "pad0x8_ZCJ9T[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
@@ -51,7 +51,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_N4TUV[0x3]",
+        "Name": "pad0x3_0UZYB[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -69,7 +69,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_FWYW7[0x7]",
+        "Name": "pad0x7_ZA8C4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x51"
@@ -81,7 +81,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x20_SI6WO[0x20]",
+        "Name": "pad0x20_W7TUD[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
@@ -127,38 +127,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x50_798YM[0x50]",
+        "Name": "pad0x50_NLOQK[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "AudioEventToComponentMap": {
-    "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "AudioEventToComponentMapComponent",
-        "Type": "Class AudioEventToComponentMapComponent*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      }
-    ]
-  },
-  "AudioEventToComponentMapComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LocalComponentMappings",
-        "Type": "TArray<struct LocalComponentMappings>",
-        "Size": "0x10",
-        "Offset": "0xc8"
       }
     ]
   },
@@ -207,7 +179,7 @@
         "Offset": "0x35"
       },
       {
-        "Name": "pad0x2_LFUBX[0x2]",
+        "Name": "pad0x2_DIQUR[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x36"
@@ -219,7 +191,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x18_YQWHE[0x18]",
+        "Name": "pad0x18_XIW68[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x60"
@@ -313,7 +285,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x2c_EZN3C[0x2c]",
+        "Name": "pad0x2c_6GW9C[0x2c]",
         "Type": "char",
         "Size": "0x2c",
         "Offset": "0x3c"
@@ -339,7 +311,7 @@
         "Offset": "0x2e8"
       },
       {
-        "Name": "pad0x4_1R50E[0x4]",
+        "Name": "pad0x4_Q238U[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2ec"
@@ -353,7 +325,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x10_S51XE[0x10]",
+        "Name": "pad0x10_5S22Z[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -365,7 +337,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xa8_4VNH1[0xa8]",
+        "Name": "pad0xa8_T6HMQ[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x48"
@@ -377,7 +349,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x58_8D747[0x58]",
+        "Name": "pad0x58_RUCTJ[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xf8"

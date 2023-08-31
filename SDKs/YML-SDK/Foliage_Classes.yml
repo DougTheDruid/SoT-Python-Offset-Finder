@@ -34,7 +34,7 @@ FoliageType:
     Offset: '0x44'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_323ZG[0x3]
+  - Name: pad0x3_RGIH6[0x3]
     Offset: '0x45'
     Size: '0x3'
     Type: char
@@ -54,7 +54,7 @@ FoliageType:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_WT5LG[0x3]
+  - Name: pad0x3_HNDV4[0x3]
     Offset: '0x61'
     Size: '0x3'
     Type: char
@@ -66,7 +66,7 @@ FoliageType:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZR3BK[0x3]
+  - Name: pad0x3_3LKUX[0x3]
     Offset: '0x69'
     Size: '0x3'
     Type: char
@@ -78,7 +78,7 @@ FoliageType:
     Offset: '0x74'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CEGV7[0x3]
+  - Name: pad0x3_K793G[0x3]
     Offset: '0x75'
     Size: '0x3'
     Type: char
@@ -90,7 +90,7 @@ FoliageType:
     Offset: '0x7c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_52X2X[0x3]
+  - Name: pad0x3_EH4C2[0x3]
     Offset: '0x7d'
     Size: '0x3'
     Type: char
@@ -106,7 +106,7 @@ FoliageType:
     Offset: '0x8c'
     Size: '0x8'
     Type: Struct FloatInterval
-  - Name: pad0x4_5ZDZL[0x4]
+  - Name: pad0x4_P0CZM[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -122,7 +122,7 @@ FoliageType:
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZWFNH[0x3]
+  - Name: pad0x3_C0VI3[0x3]
     Offset: '0xb1'
     Size: '0x3'
     Type: char
@@ -146,7 +146,7 @@ FoliageType:
     Offset: '0xec'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1WN7O[0x3]
+  - Name: pad0x3_4OWAY[0x3]
     Offset: '0xed'
     Size: '0x3'
     Type: char
@@ -190,7 +190,7 @@ FoliageType:
     Offset: '0xf9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_WA9B5[0x2]
+  - Name: pad0x2_OLO0V[0x2]
     Offset: '0xfa'
     Size: '0x2'
     Type: char
@@ -202,7 +202,7 @@ FoliageType:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1KMX9[0x7]
+  - Name: pad0x7_FMPZ0[0x7]
     Offset: '0x101'
     Size: '0x7'
     Type: char
@@ -214,7 +214,7 @@ FoliageType:
     Offset: '0x288'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_67ZGX[0x7]
+  - Name: pad0x7_GYPR5[0x7]
     Offset: '0x289'
     Size: '0x7'
     Type: char
@@ -222,7 +222,7 @@ FoliageType:
     Offset: '0x298'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_W14YI[0x3]
+  - Name: pad0x3_H0GWD[0x3]
     Offset: '0x299'
     Size: '0x3'
     Type: char
@@ -270,7 +270,7 @@ FoliageType:
     Offset: '0x2c1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_NNWHL[0x2]
+  - Name: pad0x2_DBW2Q[0x2]
     Offset: '0x2c2'
     Size: '0x2'
     Type: char
@@ -358,7 +358,7 @@ FoliageType:
     Offset: '0x35d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_75J5Q[0x2]
+  - Name: pad0x2_2AZJB[0x2]
     Offset: '0x35e'
     Size: '0x2'
     Type: char
@@ -448,7 +448,7 @@ InteractiveFoliageActor:
     Offset: '0x430'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KJLXY[0x4]
+  - Name: pad0x4_E5IQ3[0x4]
     Offset: '0x434'
     Size: '0x4'
     Type: char
@@ -482,7 +482,7 @@ ProceduralFoliageComponent:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5K4ZM[0x4]
+  - Name: pad0x4_XXDVG[0x4]
     Offset: '0xd4'
     Size: '0x4'
     Type: char
@@ -512,7 +512,7 @@ ProceduralFoliageSpawner:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_K1BF6[0x4]
+  - Name: pad0x4_72PUL[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -524,7 +524,7 @@ ProceduralFoliageSpawner:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1f_ECWN9[0x1f]
+  - Name: pad0x1f_QF3DN[0x1f]
     Offset: '0x49'
     Size: '0x1f'
     Type: char
@@ -538,7 +538,7 @@ ProceduralFoliageTile:
     Offset: '0x28'
     Size: '0x8'
     Type: Class ProceduralFoliageSpawner*
-  - Name: pad0xa0_0R5O0[0xa0]
+  - Name: pad0xa0_MWNKH[0xa0]
     Offset: '0x30'
     Size: '0xa0'
     Type: char
@@ -546,7 +546,7 @@ ProceduralFoliageTile:
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct InstancesArray>
-  - Name: pad0x70_0Q3KR[0x70]
+  - Name: pad0x70_R4DYF[0x70]
     Offset: '0xe0'
     Size: '0x70'
     Type: char

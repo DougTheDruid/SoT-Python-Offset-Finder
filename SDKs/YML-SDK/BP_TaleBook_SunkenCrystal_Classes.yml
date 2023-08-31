@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 BP_TaleBook_SunkenCrystal_C:
   Attributes:
-  - Name: None
+  - Name: Arrow
     Offset: '0x7e8'
     Size: '0x8'
     Type: Class ArrowComponent*
-  - Name: None
+  - Name: TaleSelectionSlot
     Offset: '0x7f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TaleSelectionSlot
     Offset: '0x7f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TaleSelectionSlot
     Offset: '0x800'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TaleSelectionSlot
     Offset: '0x808'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TaleSelectionSlot
     Offset: '0x810'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: TaleSelectionSlot
     Offset: '0x818'
     Size: '0x8'
     Type: Class ChildActorComponent*

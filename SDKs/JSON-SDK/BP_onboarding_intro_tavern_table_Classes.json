@@ -6,67 +6,67 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Candle VFX",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "OnboardingIntroLocation",
         "Type": "Class OnboardingIntroLocationComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "Table",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "Tankard 2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "None",
+        "Name": "Plate 2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "None",
+        "Name": "Candle 3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "None",
+        "Name": "Candle 2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "None",
+        "Name": "Tankard 1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "None",
+        "Name": "Plate 1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "Candle 1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x418"

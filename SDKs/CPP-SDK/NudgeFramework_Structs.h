@@ -23,7 +23,7 @@ struct TrinketNudgeProgress
 {
 public:
 	Class SceneComponent*                                        TrinketRoot;                                       // 0x8(0x8)
-	char                                                         pad0x10_R662B[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_UOV3Y[0x10];                               // 0x10(0x10)
 	Class CurveFloat*                                            Curve;                                             // 0x20(0x8)
 };
 

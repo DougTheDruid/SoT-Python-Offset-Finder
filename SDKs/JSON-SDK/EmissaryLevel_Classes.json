@@ -25,7 +25,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x10_QU6S1[0x10]",
+        "Name": "pad0x10_IM3XC[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe0"
@@ -37,7 +37,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x10_QTEXP[0x10]",
+        "Name": "pad0x10_OVPT2[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x100"
@@ -49,7 +49,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x38_XBNDK[0x38]",
+        "Name": "pad0x38_FEJI3[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x120"
@@ -95,7 +95,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x8_R6SFL[0x8]",
+        "Name": "pad0x8_BYGRA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x60"
@@ -125,71 +125,71 @@
   },
   "EmissaryFlotsamItemInfo": {
     "Super": "BootyItemInfo",
-    "FullSize": "0x770",
-    "InheritedSize": "0x728",
+    "FullSize": "0x788",
+    "InheritedSize": "0x740",
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_1XNX0[0x8]",
+        "Name": "pad0x8_O56KN[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x728"
+        "Offset": "0x740"
       },
       {
         "Name": "HandInOwnFlotsamReward",
         "Type": "Struct CompanySpecificBootyReward",
         "Size": "0x18",
-        "Offset": "0x730"
+        "Offset": "0x748"
       },
       {
         "Name": "AlternateHandInOwnFlotsamReward",
         "Type": "Struct CompanySpecificBootyReward",
         "Size": "0x18",
-        "Offset": "0x748"
+        "Offset": "0x760"
       },
       {
         "Name": "PermittedFlotsamPurchaseCompany",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x760"
+        "Offset": "0x778"
       },
       {
         "Name": "FlotsamCanBeDuplicated",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x768"
+        "Offset": "0x780"
       },
       {
-        "Name": "pad0x7_7HBKC[0x7]",
+        "Name": "pad0x7_A1498[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x769"
+        "Offset": "0x781"
       }
     ]
   },
   "EmissaryFlotsamItemSpawnComponent": {
     "Super": "ItemSpawnComponent",
-    "FullSize": "0x530",
-    "InheritedSize": "0x440",
+    "FullSize": "0x560",
+    "InheritedSize": "0x470",
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0xa8_ZY9AQ[0xa8]",
+        "Name": "pad0xa8_CQYNC[0xa8]",
         "Type": "char",
         "Size": "0xa8",
-        "Offset": "0x440"
+        "Offset": "0x470"
       },
       {
         "Name": "GuildSessionEndedFlotsamOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0x4e8"
+        "Offset": "0x518"
       },
       {
-        "Name": "pad0x3c_2UP2R[0x3c]",
+        "Name": "pad0x3c_BUU2Z[0x3c]",
         "Type": "char",
         "Size": "0x3c",
-        "Offset": "0x4f4"
+        "Offset": "0x524"
       }
     ]
   },
@@ -200,7 +200,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x10_K18KB[0x10]",
+        "Name": "pad0x10_FAFZX[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
@@ -218,13 +218,13 @@
         "Offset": "0xd9"
       },
       {
-        "Name": "HonorBattleFlag",
+        "Name": "WonInBattleFlag",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xda"
       },
       {
-        "Name": "pad0x15_FB8QJ[0x15]",
+        "Name": "pad0x15_F23BG[0x15]",
         "Type": "char",
         "Size": "0x15",
         "Offset": "0xdb"
@@ -238,7 +238,7 @@
     "ClassSize": "0x358",
     "Attributes": [
       {
-        "Name": "pad0xb8_FP3G1[0xb8]",
+        "Name": "pad0xb8_JY18K[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x3c8"
@@ -262,7 +262,7 @@
         "Offset": "0x490"
       },
       {
-        "Name": "pad0x288_XAWWB[0x288]",
+        "Name": "pad0x288_77Y9G[0x288]",
         "Type": "char",
         "Size": "0x288",
         "Offset": "0x498"
@@ -271,9 +271,9 @@
   },
   "EmissaryMaxRankQuestProvider": {
     "Super": "ActorComponent",
-    "FullSize": "0x160",
+    "FullSize": "0x170",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x98",
+    "ClassSize": "0xa8",
     "Attributes": [
       {
         "Name": "MaxRankQuestNotificationID",
@@ -288,7 +288,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_LK953[0x7]",
+        "Name": "pad0x7_R4VJ3[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -312,10 +312,16 @@
         "Offset": "0x148"
       },
       {
+        "Name": "QuestDescOverrides",
+        "Type": "TArray<struct QuestDescOverrides>",
+        "Size": "0x10",
+        "Offset": "0x158"
+      },
+      {
         "Name": "Company",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x158"
+        "Offset": "0x168"
       }
     ]
   },
@@ -326,7 +332,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_TXO9B[0x8]",
+        "Name": "pad0x8_QK4CM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -338,7 +344,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_CY4DY[0x7]",
+        "Name": "pad0x7_J0MO6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -350,7 +356,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x10_6TGL7[0x10]",
+        "Name": "pad0x10_P4NCO[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe8"
@@ -380,7 +386,7 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x3_8DJWU[0x3]",
+        "Name": "pad0x3_EIUH4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x109"
@@ -392,7 +398,7 @@
         "Offset": "0x10c"
       },
       {
-        "Name": "pad0x4_D8SPT[0x4]",
+        "Name": "pad0x4_CSK0R[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x114"
@@ -439,7 +445,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_KN4LF[0x4]",
+        "Name": "pad0x4_T3LEQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -489,7 +495,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x1c_5AJ6S[0x1c]",
+        "Name": "pad0x1c_N1F9Y[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x334"
@@ -509,7 +515,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x48_KIL9N[0x48]",
+        "Name": "pad0x48_M735P[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x38"
@@ -527,7 +533,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x20_C8VQ9[0x20]",
+        "Name": "pad0x20_HSIOE[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc0"
@@ -545,7 +551,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x20_A7DFA[0x20]",
+        "Name": "pad0x20_ILS7R[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xf8"
@@ -557,7 +563,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x8_8W3IA[0x8]",
+        "Name": "pad0x8_9WY50[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x120"
@@ -566,9 +572,9 @@
   },
   "StartEmissaryVoyageInlineVoteConsumer": {
     "Super": "EmissaryVoyageInlineVoteConsumerBase",
-    "FullSize": "0x300",
+    "FullSize": "0x338",
     "InheritedSize": "0x128",
-    "ClassSize": "0x1d8",
+    "ClassSize": "0x210",
     "Attributes": [
       {
         "Name": "EmissaryVotingCastVote",
@@ -607,48 +613,54 @@
         "Offset": "0x240"
       },
       {
-        "Name": "EmissaryVotingRemoveVote",
+        "Name": "EmissaryVotingCantVoteReasonSaferSeas",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x278"
       },
       {
-        "Name": "EmissaryVotingCantRemoveVote",
+        "Name": "EmissaryVotingRemoveVote",
         "Type": "Struct FText",
         "Size": "0x38",
         "Offset": "0x2b0"
       },
       {
-        "Name": "pad0x18_0ZMQQ[0x18]",
+        "Name": "EmissaryVotingCantRemoveVote",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x2e8"
+      },
+      {
+        "Name": "pad0x18_I99J0[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x2e8"
+        "Offset": "0x320"
       }
     ]
   },
   "StartGuildEmissaryVoyageInlineVoteConsumer": {
     "Super": "StartEmissaryVoyageInlineVoteConsumer",
-    "FullSize": "0x388",
-    "InheritedSize": "0x300",
+    "FullSize": "0x3c0",
+    "InheritedSize": "0x338",
     "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "GuildEmissaryVotingCantVoteReasonGuildEmissaryNotUnlocked",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x300"
+        "Offset": "0x338"
       },
       {
         "Name": "GuildEmissaryVotingCantVoteReasonNoGuildShip",
         "Type": "Struct FText",
         "Size": "0x38",
-        "Offset": "0x338"
+        "Offset": "0x370"
       },
       {
-        "Name": "pad0x18_C7BUP[0x18]",
+        "Name": "pad0x18_O2ZKU[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x370"
+        "Offset": "0x3a8"
       }
     ]
   },
@@ -695,7 +707,7 @@
         "Offset": "0x240"
       },
       {
-        "Name": "pad0x18_7W25E[0x18]",
+        "Name": "pad0x18_NRAKV[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x278"
@@ -722,7 +734,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_Q1CN4[0x7]",
+        "Name": "pad0x7_TYO9A[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -734,16 +746,28 @@
         "Offset": "0x38"
       },
       {
-        "Name": "IsValidatorTypeEntitlement",
+        "Name": "BlockDuringSaferSeas",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x97_ROLI3[0x97]",
+        "Name": "pad0x3_ME3LI[0x3]",
         "Type": "char",
-        "Size": "0x97",
+        "Size": "0x3",
         "Offset": "0x41"
+      },
+      {
+        "Name": "IsValidatorTypeEntitlement",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "pad0x93_HBEFR[0x93]",
+        "Type": "char",
+        "Size": "0x93",
+        "Offset": "0x45"
       },
       {
         "Name": "TargetCompany",
@@ -812,7 +836,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_21JLL[0x7]",
+        "Name": "pad0x7_9726Z[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"

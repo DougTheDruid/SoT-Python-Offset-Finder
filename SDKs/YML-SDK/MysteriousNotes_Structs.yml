@@ -21,7 +21,7 @@ ClientNoteData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_51IX9[0x7]
+  - Name: pad0x7_3IZQQ[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

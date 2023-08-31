@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
 class GameEventAvailabilityParamsDataAsset: public DataAsset
 {
 public:
@@ -15,35 +15,38 @@ public:
 	float                                                        InitialCooldown;                                   // 0x78(0x4)
 	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
 	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
-	char                                                         pad0x7_85CMN[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x3_LLQK4[0x3];                                 // 0x81(0x3)
+	Struct FeatureFlag                                           SendCrewToLoserTunnelFeature;                      // 0x84(0xc)
 };
 
 
-// Size 0x180 (Full Size[0x248] - InheritedSize[0xc8]
+// Size 0xb8 (Full Size[0x180] - InheritedSize[0xc8]
 class GameEventOnDemandAnnouncementComponent: public ActorComponent
 {
 public:
 	Struct FeatureFlag                                           FeatureFlag;                                       // 0xc8(0xc)
 	bool                                                         ShouldFireBannerForAnyCrewEnteringIslandVicinity;  // 0xd4(0x1)
-	char                                                         pad0x3_AUJUI[0x3];                                 // 0xd5(0x3)
+	char                                                         pad0x3_1LK98[0x3];                                 // 0xd5(0x3)
 	struct FName                                                 IslandName;                                        // 0xd8(0x8)
 	TArray<Weakclass CurrentTrackedPawns>                        CurrentTrackedPawns;                               // 0xe0(0x10)
 	TArray<struct OnDemandParticipatingCrewIds>                  OnDemandParticipatingCrewIds;                      // 0xf0(0x10)
 	TArray<struct TrackedShipCrewIds>                            TrackedShipCrewIds;                                // 0x100(0x10)
-	char                                                         pad0x48_7KZ6U[0x48];                               // 0x110(0x48)
-	Struct GameEventOnDemandAnnouncementBannerData               OnCrewJoinedGameEventBannerData;                   // 0x158(0x78)
-	Struct GameEventOnDemandAnnouncementBannerData               OnGameEventCompletedBannerData;                    // 0x1d0(0x78)
+	class                                                        GameEventType;                                     // 0x110(0x8)
+	char                                                         pad0x5c_MBEAT[0x5c];                               // 0x118(0x5c)
+	struct FName                                                 TemporaryBannerTag;                                // 0x174(0x8)
+	char                                                         pad0x4_32UQN[0x4];                                 // 0x17c(0x4)
 };
 
 
-// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
+// Size 0x128 (Full Size[0x150] - InheritedSize[0x28]
 class GameEventOnDemandAvailabilityStateTracker: public Object
 {
 public:
-	char                                                         pad0x78_JLEWV[0x78];                               // 0x28(0x78)
-	class                                                        ShipTypeLimit;                                     // 0xa0(0x8)
-	TArray<struct ParticipatingCrewIds>                          ParticipatingCrewIds;                              // 0xa8(0x10)
-	char                                                         pad0x48_8QM3Q[0x48];                               // 0xb8(0x48)
+	char                                                         pad0x88_VSWRQ[0x88];                               // 0x28(0x88)
+	class                                                        ShipTypeLimit;                                     // 0xb0(0x8)
+	TArray<struct ParticipatingCrewIds>                          ParticipatingCrewIds;                              // 0xb8(0x10)
+	TArray<struct PreparingToJoinCrewIds>                        PreparingToJoinCrewIds;                            // 0xc8(0x10)
+	char                                                         pad0x78_FQQ8H[0x78];                               // 0xd8(0x78)
 };
 
 

@@ -37,7 +37,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x50_DN37G[0x50]",
+        "Name": "pad0x50_OC301[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x58"

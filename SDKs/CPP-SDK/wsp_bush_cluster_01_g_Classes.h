@@ -7,17 +7,17 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x40 (Full Size[0x448] - InheritedSize[0x408]
-class wsp_bush_cluster_01_g_C: public None
+class wsp_bush_cluster_01_g_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_fern_01_a;                                // 0x408(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a25;                                   // 0x410(0x8)
+	Class StaticMeshComponent*                                   StaticMesh2;                                       // 0x418(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x420(0x8)
+	Class StaticMeshComponent*                                   StaticMesh5;                                       // 0x428(0x8)
+	Class StaticMeshComponent*                                   StaticMesh4;                                       // 0x430(0x8)
+	Class StaticMeshComponent*                                   StaticMesh3;                                       // 0x438(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_01_a20;                                   // 0x440(0x8)
 };
 
 

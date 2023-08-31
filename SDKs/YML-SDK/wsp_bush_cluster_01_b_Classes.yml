@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 wsp_bush_cluster_01_b_C:
   Attributes:
-  - Name: None
+  - Name: wsp_bush_06_b2
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_cliff_l_01
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_bush_01_a2
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_bush_03_a2
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x20'
   FullSize: '0x428'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

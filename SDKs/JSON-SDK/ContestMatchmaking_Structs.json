@@ -143,7 +143,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x3_RVJMG[0x3]",
+        "Name": "pad0x3_09PRW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x89"
@@ -190,7 +190,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_G3CBT[0x4]",
+        "Name": "pad0x4_MRARZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -214,7 +214,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x3_O85NJ[0x3]",
+        "Name": "pad0x3_BBZ1B[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x71"
@@ -244,7 +244,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_PF7BM[0x3]",
+        "Name": "pad0x3_485JP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
@@ -279,7 +279,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_1O6S4[0x7]",
+        "Name": "pad0x7_6GU3D[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -450,7 +450,7 @@
     ]
   },
   "GameMainEventTypeModel": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "EventName",
@@ -465,16 +465,22 @@
         "Offset": "0x10"
       },
       {
+        "Name": "ExcludedCrewIds",
+        "Type": "TArray<struct ExcludedCrewIds>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
         "Name": "Status",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x20"
+        "Offset": "0x30"
       },
       {
         "Name": "ShipSizeLimit",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x21"
+        "Offset": "0x31"
       }
     ]
   },
@@ -540,7 +546,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_IHZHW[0x3]",
+        "Name": "pad0x3_9LBQU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -552,7 +558,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_EKPB8[0x4]",
+        "Name": "pad0x4_XOORF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"

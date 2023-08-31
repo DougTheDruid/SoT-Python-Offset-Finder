@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Bell_C: public Bell
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x570(0x8)
+	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x570(0x8)
 };
 
 

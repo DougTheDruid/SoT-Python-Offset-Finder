@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x518] - InheritedSize[0x510]
+// Size 0x8 (Full Size[0x530] - InheritedSize[0x528]
 class BP_cmp_pocket_watch_mrh_01_e_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x510(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
 };
 
 

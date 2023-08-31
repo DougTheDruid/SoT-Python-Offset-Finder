@@ -6,19 +6,29 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x1
-struct RareGameServiceContext
-{
-public:
-};
-
-
-// Size 0x28
+// Size 0x18
 struct RareGameServiceSpecification
 {
 public:
-	byte                                                         ServiceRole;                                       // 0x20(0x1)
-	bool                                                         Replicates;                                        // 0x21(0x1)
+	struct FName                                                 ServiceName;                                       // 0x0(0x8)
+	class                                                        ServiceClassToInstantiate;                         // 0x8(0x8)
+	byte                                                         ServiceRole;                                       // 0x10(0x1)
+	bool                                                         Replicates;                                        // 0x11(0x1)
+};
+
+
+// Size 0x8
+struct RareGameServiceManagerServiceInitialisedEvent
+{
+public:
+	Class Object*                                                ServiceObject;                                     // 0x0(0x8)
+};
+
+
+// Size 0x2
+struct RareGameServiceManagerStateChangedEvent
+{
+public:
 };
 
 

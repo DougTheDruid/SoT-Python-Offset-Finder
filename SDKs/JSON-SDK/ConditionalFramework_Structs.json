@@ -116,6 +116,23 @@
       }
     ]
   },
+  "IsSpecifiedActorCondition": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "SpecifyingActorPayloadSelector",
+        "Type": "Struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "TargetActorPayloadSelector",
+        "Type": "Struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "NotCondition": {
     "ClassSize": "0x28",
     "Attributes": [

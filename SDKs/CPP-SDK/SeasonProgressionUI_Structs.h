@@ -20,6 +20,21 @@ public:
 };
 
 
+// Size 0xa0
+struct SeasonTextPopupAsset
+{
+public:
+	Struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
+	Struct StringAssetReference                                  Icon;                                              // 0x10(0x10)
+	Struct FText                                                 Message;                                           // 0x20(0x38)
+	Struct FString                                               ToastSfxEventName;                                 // 0x58(0x10)
+	Struct FString                                               ToastEventName;                                    // 0x68(0x10)
+	Struct FString                                               ToastSwitchName;                                   // 0x78(0x10)
+	Struct FString                                               ToastSwitchValue;                                  // 0x88(0x10)
+	float                                                        ToastHoldDuration;                                 // 0x98(0x4)
+};
+
+
 // Size 0x80
 struct SeasonGoalPopupAsset
 {
@@ -59,7 +74,7 @@ public:
 	Struct NavigationDesc                                        NavigationDesc;                                    // 0x20(0x14)
 	int                                                          ProgressValue;                                     // 0x34(0x4)
 	int                                                          Threshold;                                         // 0x38(0x4)
-	char                                                         pad0x4_LUO94[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_Z94TG[0x4];                                 // 0x3c(0x4)
 	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x40(0x40)
 };
 
@@ -69,8 +84,18 @@ struct NavigationDesc
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x3_AWQYD[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_AIPIK[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  Id;                                                // 0x4(0x10)
+};
+
+
+// Size 0x88
+struct SeasonsTextNotification
+{
+public:
+	Struct StringAssetReference                                  IconUrl;                                           // 0x0(0x10)
+	Struct FText                                                 Message;                                           // 0x10(0x38)
+	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x48(0x40)
 };
 
 
@@ -96,7 +121,7 @@ struct OpenSeasonsMenuEvent
 {
 public:
 	byte                                                         NavigationAction;                                  // 0x0(0x1)
-	char                                                         pad0x3_WHZDC[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_9FLO5[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
@@ -114,7 +139,7 @@ struct EnableMoreButtonEvent
 {
 public:
 	byte                                                         MoreButtonSource;                                  // 0x0(0x1)
-	char                                                         pad0x3_BHVNX[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_GA77W[0x3];                                 // 0x1(0x3)
 	Struct NavigationDesc                                        Navigation;                                        // 0x4(0x14)
 };
 
@@ -124,6 +149,22 @@ struct ShowDeedProgressEvent
 {
 public:
 	Struct DeedProgressDesc                                      DeedProgressDesc;                                  // 0x0(0x80)
+};
+
+
+// Size 0x98
+struct SeasonsTextNotificationNetworkEvent
+{
+public:
+	Struct SeasonsTextNotification                               SeasonsTextNotification;                           // 0x10(0x88)
+};
+
+
+// Size 0x70
+struct SeasonsChatNotificationNetworkEvent
+{
+public:
+	Struct SeasonsChatNotificationEvent                          SeasonsChatNotificationEvent;                      // 0x10(0x60)
 };
 
 

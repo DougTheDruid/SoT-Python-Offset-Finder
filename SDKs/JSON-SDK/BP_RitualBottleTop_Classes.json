@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "ptn_pois_stop_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"

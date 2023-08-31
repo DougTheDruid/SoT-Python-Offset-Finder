@@ -6,17 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x68 (Full Size[0x8a8] - InheritedSize[0x840]
+// Size 0x68 (Full Size[0x8c8] - InheritedSize[0x860]
 class BP_Tutorial_Tavern_Stranger_NPC_C: public TutorialTavernStrangerNPC
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x840(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0x848(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x850(0x8)
-	Class NPCDialogComponent*                                    None;                                              // 0x858(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x860(0x8)
-	Struct FText                                                 None;                                              // 0x868(0x38)
-	Class CutSceneActor*                                         None;                                              // 0x8a0(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x860(0x8)
+	Class CapsuleComponent*                                      SolidHits;                                         // 0x868(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x870(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x878(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x880(0x8)
+	Struct FText                                                 MysteriousStranger;                                // 0x888(0x38)
+	Class CutSceneActor*                                         CutSceneActor;                                     // 0x8c0(0x8)
 };
 
 

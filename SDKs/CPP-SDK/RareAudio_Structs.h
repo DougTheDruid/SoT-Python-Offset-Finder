@@ -42,16 +42,6 @@ public:
 
 
 // Size 0x20
-struct EventToComponentMapping
-{
-public:
-	Class WwiseEvent*                                            PlayEvent;                                         // 0x0(0x8)
-	Class WwiseEvent*                                            StopEvent;                                         // 0x8(0x8)
-	TArray<class WwiseEmitterComponent*>                         WwiseEmitterComponents;                            // 0x10(0x10)
-};
-
-
-// Size 0x20
 struct StaticMeshAudioAssociation
 {
 public:
@@ -66,7 +56,7 @@ struct StaticMeshWwiseEmitterData
 public:
 	Class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
 	Struct Vector                                                LocalOriginOffset;                                 // 0x8(0xc)
-	char                                                         pad0x4_W0WMD[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_S5ICT[0x4];                                 // 0x14(0x4)
 	TArray<class WwiseEvent*>                                    StartEvents;                                       // 0x18(0x10)
 	TArray<class WwiseEvent*>                                    StopEvents;                                        // 0x28(0x10)
 };

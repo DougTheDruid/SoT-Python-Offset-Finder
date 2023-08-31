@@ -41,7 +41,7 @@ public:
 	Struct Guid                                                  InstanceId;                                        // 0x20(0x10)
 	Struct FString                                               InstanceName;                                      // 0x30(0x10)
 	bool                                                         IsConsoleBuild;                                    // 0x40(0x1)
-	char                                                         pad0x7_BKFPV[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_K13W3[0x7];                                 // 0x41(0x7)
 	Struct FString                                               PlatformName;                                      // 0x48(0x10)
 	Struct Guid                                                  SessionId;                                         // 0x58(0x10)
 	Struct FString                                               SessionName;                                       // 0x68(0x10)

@@ -6,6 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x20
+struct GameEventsOnDemandLoserTunnelCrewData
+{
+public:
+	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	class                                                        GameEventType;                                     // 0x10(0x8)
+};
+
+
 // Size 0x18
 struct GameEventAvailabilityTelemetryData
 {

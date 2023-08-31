@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x520] - InheritedSize[0x518]
+// Size 0x8 (Full Size[0x538] - InheritedSize[0x530]
 class BP_cmn_cannon_ball_01_a_ItemInfo_C: public ProjectileItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x518(0x8)
+	Class SceneComponent*                                        None;                                              // 0x530(0x8)
 };
 
 

@@ -11,7 +11,7 @@ class WidgetReflectorNodeBase: public Object
 {
 public:
 	Struct Geometry                                              Geometry;                                          // 0x28(0x34)
-	char                                                         pad0x4_J954S[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_TIK2K[0x4];                                 // 0x5c(0x4)
 	TArray<class WidgetReflectorNodeBase*>                       ChildNodes;                                        // 0x60(0x10)
 	Struct LinearColor                                           Tint;                                              // 0x70(0x10)
 };
@@ -35,11 +35,11 @@ public:
 	int                                                          CachedWidgetLineNumber;                            // 0x138(0x4)
 	struct FName                                                 CachedWidgetAssetName;                             // 0x13c(0x8)
 	Struct Vector2D                                              CachedWidgetDesiredSize;                           // 0x144(0x8)
-	char                                                         pad0x4_RJV4F[0x4];                                 // 0x14c(0x4)
+	char                                                         pad0x4_FIIBA[0x4];                                 // 0x14c(0x4)
 	Struct SlateColor                                            CachedWidgetForegroundColor;                       // 0x150(0x30)
 	Struct FString                                               CachedWidgetAddress;                               // 0x180(0x10)
 	bool                                                         CachedWidgetEnabled;                               // 0x190(0x1)
-	char                                                         pad0x7_JQTJX[0x7];                                 // 0x191(0x7)
+	char                                                         pad0x7_O9EXN[0x7];                                 // 0x191(0x7)
 };
 
 

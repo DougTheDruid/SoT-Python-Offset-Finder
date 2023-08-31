@@ -3,44 +3,40 @@
 InteractableZipline:
   Attributes:
   - Name: ZiplineStartInteractionPoint
-    Offset: '0x730'
+    Offset: '0x768'
     Size: '0x8'
     Type: Class InteractableComponentWithActionRules*
   - Name: ZiplineEndInteractionPoint
-    Offset: '0x738'
+    Offset: '0x770'
     Size: '0x8'
     Type: Class InteractableComponentWithActionRules*
   - Name: PressedNotificationInputId
-    Offset: '0x740'
+    Offset: '0x778'
     Size: '0x8'
     Type: class
   - Name: ReleasedNotificationInputId
-    Offset: '0x748'
+    Offset: '0x780'
     Size: '0x8'
     Type: class
   - Name: AttachPointLocationOffset
-    Offset: '0x750'
+    Offset: '0x788'
     Size: '0x8'
     Type: Struct Vector2D
   - Name: AttachPointSize
-    Offset: '0x758'
+    Offset: '0x790'
     Size: '0x4'
     Type: float
   - Name: HoldTime
-    Offset: '0x75c'
+    Offset: '0x794'
     Size: '0x4'
     Type: float
-  - Name: OptionalItem
-    Offset: '0x760'
-    Size: '0x8'
-    Type: class
-  ClassSize: '0x38'
-  FullSize: '0x768'
-  InheritedSize: '0x730'
+  ClassSize: '0x30'
+  FullSize: '0x798'
+  InheritedSize: '0x768'
   Super: Zipline
 Ride:
   Attributes:
-  - Name: pad0x8_LAOH4[0x8]
+  - Name: pad0x8_3SSVP[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -58,7 +54,7 @@ Ride:
   Super: Actor
 RidePlayerComponent:
   Attributes:
-  - Name: pad0x8_J0ROO[0x8]
+  - Name: pad0x8_GK8RV[0x8]
     Offset: '0xe0'
     Size: '0x8'
     Type: char
@@ -74,7 +70,7 @@ RidePlayerComponent:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TJZTR[0x4]
+  - Name: pad0x4_WS6GO[0x4]
     Offset: '0xfc'
     Size: '0x4'
     Type: char
@@ -98,7 +94,7 @@ RidePlayerComponent:
     Offset: '0x120'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x14_645CP[0x14]
+  - Name: pad0x14_5PRMF[0x14]
     Offset: '0x12c'
     Size: '0x14'
     Type: char
@@ -148,7 +144,7 @@ WaterSlide:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IOQ7V[0x3]
+  - Name: pad0x3_ZJUSQ[0x3]
     Offset: '0x409'
     Size: '0x3'
     Type: char
@@ -236,7 +232,7 @@ Zipline:
     Offset: '0x3e1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_OZ6ZD[0x2]
+  - Name: pad0x2_DMDMN[0x2]
     Offset: '0x3e2'
     Size: '0x2'
     Type: char
@@ -252,32 +248,40 @@ Zipline:
     Offset: '0x6f8'
     Size: '0x8'
     Type: Class ZiplineFXParams*
-  - Name: pad0x8_PEJFC[0x8]
+  - Name: ForwardsAttachDetachOffsets
     Offset: '0x700'
     Size: '0x8'
+    Type: Struct Vector2D
+  - Name: BackwardsAttachDetachOffsets
+    Offset: '0x708'
+    Size: '0x8'
+    Type: Struct Vector2D
+  - Name: pad0x30_40KME[0x30]
+    Offset: '0x710'
+    Size: '0x30'
     Type: char
   - Name: ZiplineGeometry
-    Offset: '0x708'
+    Offset: '0x740'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: ZiplineTrolleyGeometry
-    Offset: '0x710'
+    Offset: '0x748'
     Size: '0x8'
     Type: Class StaticMesh*
   - Name: ZiplineGeometryMaterialOverride
-    Offset: '0x718'
+    Offset: '0x750'
     Size: '0x8'
     Type: Class MaterialInterface*
   - Name: ZiplineGeometryMaterialScalerParameterName
-    Offset: '0x720'
+    Offset: '0x758'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x8_XHHLK[0x8]
-    Offset: '0x728'
+  - Name: pad0x8_36RQV[0x8]
+    Offset: '0x760'
     Size: '0x8'
     Type: char
-  ClassSize: '0x350'
-  FullSize: '0x730'
+  ClassSize: '0x388'
+  FullSize: '0x768'
   InheritedSize: '0x3e0'
   Super: Ride
 ZiplineActionStateId:
@@ -298,40 +302,44 @@ ZiplineFXParams:
     Offset: '0x28'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: ZiplineAdditiveOneShotSFX
+  - Name: AttachToZiplineAdditiveOneShotSFX
     Offset: '0x30'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: ZiplineLoopStartSFX
+  - Name: DetachFromZiplineAdditiveOneShotSFX
     Offset: '0x38'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: ZiplineEndSFX
+  - Name: ZiplineLoopStartSFX
     Offset: '0x40'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: ZiplineLoopEndSFX
+  - Name: ZiplineEndSFX
     Offset: '0x48'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: PlayerSpeedOnZiplineRTPC
+  - Name: ZiplineLoopEndSFX
     Offset: '0x50'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  - Name: PlayerSpeedOnZiplineRTPC
+    Offset: '0x58'
     Size: '0x8'
     Type: struct FName
   - Name: PlayerZiplineWindVFX
-    Offset: '0x58'
-    Size: '0x8'
-    Type: Class ParticleSystem*
-  - Name: PlayerZiplineTrailVFX
     Offset: '0x60'
     Size: '0x8'
     Type: Class ParticleSystem*
-  - Name: SpawnParticleSpeedThreshold
+  - Name: PlayerZiplineTrailVFX
     Offset: '0x68'
     Size: '0x8'
+    Type: Class ParticleSystem*
+  - Name: SpawnParticleSpeedThreshold
+    Offset: '0x70'
+    Size: '0x8'
     Type: Struct Vector2D
-  ClassSize: '0x48'
-  FullSize: '0x70'
+  ClassSize: '0x50'
+  FullSize: '0x78'
   InheritedSize: '0x28'
   Super: DataAsset
 ZiplineInputComponent:

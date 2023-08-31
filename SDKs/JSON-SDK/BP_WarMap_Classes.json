@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "VoteInteractionHardMode",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x9d0"
       },
       {
-        "Name": "None",
+        "Name": "VoteInteractionNormalMode",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x9d8"
       },
       {
-        "Name": "None",
+        "Name": "VoteInteractionSingle",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x9e0"

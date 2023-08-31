@@ -1,4 +1,31 @@
 {
+  "ActorSpecifierInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActorSpecifierComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_IW3CV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "SpecifiedActor",
+        "Type": "Class Actor*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
   "ConditionRootAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",

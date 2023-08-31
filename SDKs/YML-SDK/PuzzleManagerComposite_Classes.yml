@@ -10,7 +10,7 @@ SwitchesActivatedInCorrectOrderPuzzleManagerPolicy:
     Offset: '0xf0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_G9940[0x7]
+  - Name: pad0x7_TIZ3G[0x7]
     Offset: '0xf1'
     Size: '0x7'
     Type: char

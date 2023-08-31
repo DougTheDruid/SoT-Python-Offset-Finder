@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "SphereCollisionExtentAdjustOverTime",
         "Type": "Class SphereCollisionExtentAdjustOverTimeComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "None",
+        "Name": "CannonBall",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "None",
+        "Name": "Collision",
         "Type": "Class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x660"

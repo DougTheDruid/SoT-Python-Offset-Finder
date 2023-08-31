@@ -1,18 +1,18 @@
 {
   "wsp_palm_cluster_02_b_C": {
-    "Super": "None",
+    "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x418",
     "InheritedSize": "0x408",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "NonVagueNonUniqueLandmark",
         "Type": "Class NonVagueNonUniqueLandmarkComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"

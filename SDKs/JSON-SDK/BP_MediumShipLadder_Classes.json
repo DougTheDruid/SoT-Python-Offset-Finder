@@ -6,16 +6,22 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
-        "Name": "pad0x20_WF7O7[0x20]",
-        "Type": "char",
-        "Size": "0x20",
+        "Name": "OffTopSplineComponentPositions",
+        "Type": "TArray<struct OffTopSplineComponentPositions>",
+        "Size": "0x10",
         "Offset": "0x5e8"
+      },
+      {
+        "Name": "OnTopSplineComponentPositions",
+        "Type": "TArray<struct OnTopSplineComponentPositions>",
+        "Size": "0x10",
+        "Offset": "0x5f8"
       }
     ]
   },

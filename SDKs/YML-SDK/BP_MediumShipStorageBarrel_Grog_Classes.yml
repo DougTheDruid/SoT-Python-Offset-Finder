@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_MediumShipStorageBarrel_Grog_C:
   Attributes:
-  - Name: None
+  - Name: TankardRefiller
     Offset: '0x400'
     Size: '0x8'
     Type: Class TankardRefillerComponent*
-  - Name: None
+  - Name: Interactable
     Offset: '0x408'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
+  - Name: StaticMesh
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*

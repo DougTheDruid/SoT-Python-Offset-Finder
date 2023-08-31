@@ -23,6 +23,9 @@ EventSetDateTime:
     Size: '0x4'
     Type: int
   ClassSize: '0x14'
+EventTimeServiceMigrated:
+  Attributes: []
+  ClassSize: '0x1'
 GameTime:
   Attributes:
   - Name: DateTimeRepresentation

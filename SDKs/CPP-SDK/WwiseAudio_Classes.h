@@ -45,7 +45,7 @@ public:
 class MovieSceneAkAudioRTPCSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_FOXFV[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_SXNJO[0x8];                                 // 0x98(0x8)
 	Struct FString                                               Name;                                              // 0xa0(0x10)
 	Struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
 };
@@ -57,7 +57,7 @@ class MovieSceneAkTrack: public MovieSceneTrack
 public:
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
-	char                                                         pad0x7_4BGY5[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_B3JAK[0x7];                                 // 0x99(0x7)
 };
 
 
@@ -155,13 +155,13 @@ class WwiseEvent: public Object
 public:
 	Class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
 	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
-	char                                                         pad0x3_0C0PB[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_18XPG[0x3];                                 // 0x31(0x3)
 	float                                                        DurationMin;                                       // 0x38(0x4)
 	float                                                        DurationMax;                                       // 0x3c(0x4)
 	float                                                        MaxAttenuation;                                    // 0x40(0x4)
 	byte                                                         DurationType;                                      // 0x44(0x1)
 	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
-	char                                                         pad0xa_7YA1M[0xa];                                 // 0x46(0xa)
+	char                                                         pad0xa_RW13F[0xa];                                 // 0x46(0xa)
 };
 
 
@@ -195,7 +195,7 @@ class WwiseNonShippingAudioRootAsset: public DataAsset
 {
 public:
 	TArray<class WwiseNonShippingAudioAsset*>                    NonShippingAudioAssets;                            // 0x28(0x10)
-	char                                                         pad0x10_4YA5F[0x10];                               // 0x38(0x10)
+	char                                                         pad0x10_M5467[0x10];                               // 0x38(0x10)
 };
 
 
@@ -205,7 +205,7 @@ class WwiseBank: public Object
 public:
 	Struct FString                                               path;                                              // 0x28(0x10)
 	Class WwiseBank*                                             InitBank;                                          // 0x40(0x8)
-	char                                                         pad0x28_JXIHU[0x28];                               // 0x48(0x28)
+	char                                                         pad0x28_WD5OT[0x28];                               // 0x48(0x28)
 };
 
 

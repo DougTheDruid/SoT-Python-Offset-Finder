@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 wsp_bp_tall_bush_01_a_C:
   Attributes:
-  - Name: None
+  - Name: wsp_bush_palm_01_a
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x8'
   FullSize: '0x410'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

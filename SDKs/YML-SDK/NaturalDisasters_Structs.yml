@@ -120,7 +120,7 @@ VolcanoSetupDataEmbersEntry:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_S4JMR[0x4]
+  - Name: pad0x4_CTP9F[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -135,7 +135,7 @@ VolcanoStateData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8WY9H[0x3]
+  - Name: pad0x3_N4A6R[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -169,7 +169,7 @@ VolcanoTarget:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_FJXAW[0x6]
+  - Name: pad0x6_YQ6BX[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -196,7 +196,7 @@ VolcanoTargetChances:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NORNF[0x4]
+  - Name: pad0x4_82FJI[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -257,7 +257,7 @@ WeightedVolcanoProjectile:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_7KTB1[0x4]
+  - Name: pad0x4_2N0C6[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -285,7 +285,7 @@ WeightedVolcanoProjectile:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HTVBN[0x4]
+  - Name: pad0x4_L7EVG[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

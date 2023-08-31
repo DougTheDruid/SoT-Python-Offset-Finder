@@ -6,19 +6,19 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
-        "Name": "None",
+        "Name": "shp_mid_serving_hatch_L_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
-        "Name": "None",
+        "Name": "Interactable",
         "Type": "Class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x608"

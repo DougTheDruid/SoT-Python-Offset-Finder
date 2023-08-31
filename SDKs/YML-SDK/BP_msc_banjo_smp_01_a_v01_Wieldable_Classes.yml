@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_msc_banjo_smp_01_a_v01_Wieldable_C:
   Attributes:
-  - Name: None
+  - Name: shroudmask_tp
     Offset: '0x930'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shroud_tp
     Offset: '0x938'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shroud_fp
     Offset: '0x940'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x18'
   FullSize: '0x948'
   InheritedSize: '0x930'
-  Super: None
+  Super: BP_Banjo_C

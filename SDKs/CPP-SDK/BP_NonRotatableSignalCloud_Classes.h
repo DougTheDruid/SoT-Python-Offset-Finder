@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_NonRotatableSignalCloud_C: public GameplayEventSignal_StaticMesh
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x528(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x528(0x8)
 };
 
 

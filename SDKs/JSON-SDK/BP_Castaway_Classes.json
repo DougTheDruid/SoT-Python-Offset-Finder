@@ -1,33 +1,39 @@
 {
   "BP_Castaway_C": {
-    "Super": "None",
-    "FullSize": "0x6f8",
-    "InheritedSize": "0x6d0",
-    "ClassSize": "0x28",
+    "Super": "BP_Orderofsouls_TallTales_C",
+    "FullSize": "0x720",
+    "InheritedSize": "0x6f0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x6d0"
+        "Offset": "0x6f0"
       },
       {
-        "Name": "None",
+        "Name": "NPCDialogCamera",
+        "Type": "Class CameraComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f8"
+      },
+      {
+        "Name": "ActorPhasing",
         "Type": "Class ActorPhasingComponent*",
         "Size": "0x8",
-        "Offset": "0x6d8"
+        "Offset": "0x700"
       },
       {
-        "Name": "None",
+        "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6e0"
+        "Offset": "0x708"
       },
       {
-        "Name": "None",
+        "Name": "AudioEvents",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x6e8"
+        "Offset": "0x710"
       }
     ]
   },

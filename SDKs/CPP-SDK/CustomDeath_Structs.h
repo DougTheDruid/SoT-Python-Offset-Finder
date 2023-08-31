@@ -27,7 +27,7 @@ struct DestroyCustomPlayerStartGameServerRequestModel
 {
 public:
 	int                                                          PlayerStartActorNetID;                             // 0x0(0x4)
-	char                                                         pad0x4_FREXH[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_1ARYZ[0x4];                                 // 0x4(0x4)
 	Struct FString                                               Tag;                                               // 0x8(0x10)
 };
 
@@ -37,7 +37,7 @@ struct CustomPlayerStartConfigResponseGameServerRequestModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_2MA9P[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_ZNY54[0x3];                                 // 0x1(0x3)
 	int                                                          PlayerStartId;                                     // 0x4(0x4)
 };
 
@@ -47,7 +47,7 @@ struct CustomPlayerStartConfigGameServerRequestModel
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_IDDPA[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_9EOR8[0x4];                                 // 0xc(0x4)
 	Struct Quat                                                  Rotation;                                          // 0x10(0x10)
 	TArray<Str Tags>                                             Tags;                                              // 0x20(0x10)
 };

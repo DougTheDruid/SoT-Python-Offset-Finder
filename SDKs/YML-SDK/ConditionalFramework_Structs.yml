@@ -85,6 +85,17 @@ IsObjectOfTypeCondition:
     Size: '0x10'
     Type: TArray<Assetclass TargetObjectClasses>
   ClassSize: '0x38'
+IsSpecifiedActorCondition:
+  Attributes:
+  - Name: SpecifyingActorPayloadSelector
+    Offset: '0x8'
+    Size: '0x20'
+    Type: Struct ConditionContextPayloadSelectorInstance
+  - Name: TargetActorPayloadSelector
+    Offset: '0x28'
+    Size: '0x20'
+    Type: Struct ConditionContextPayloadSelectorInstance
+  ClassSize: '0x48'
 NotCondition:
   Attributes:
   - Name: Condition

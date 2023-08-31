@@ -107,7 +107,7 @@ AttributeBasedFloat:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_I870B[0x7]
+  - Name: pad0x7_O57TH[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -145,7 +145,7 @@ AttributeMetaData:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Y73TD[0x4]
+  - Name: pad0x4_OSZQY[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -187,7 +187,7 @@ GameplayAbilityActivationInfo:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_P6UH4[0x6]
+  - Name: pad0x6_TU360[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -205,7 +205,7 @@ GameplayAbilityBindInfo:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_EQIB0[0x7]
+  - Name: pad0x7_FEDQ8[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -224,7 +224,7 @@ GameplayAbilityLocalAnimMontage:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KC2EN[0x7]
+  - Name: pad0x7_0W5LT[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -267,7 +267,7 @@ GameplayAbilityRepAnimMontage:
     Offset: '0x15'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_LA501[0x2]
+  - Name: pad0x2_VSP3W[0x2]
     Offset: '0x16'
     Size: '0x2'
     Type: char
@@ -282,7 +282,7 @@ GameplayAbilitySpec:
     Offset: '0x8'
     Size: '0x4'
     Type: Struct GameplayAbilitySpecHandle
-  - Name: pad0x4_PE4R7[0x4]
+  - Name: pad0x4_AT23S[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -314,7 +314,7 @@ GameplayAbilitySpec:
     Offset: '0x2a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_LLO9X[0x5]
+  - Name: pad0x5_8V70G[0x5]
     Offset: '0x2b'
     Size: '0x5'
     Type: char
@@ -364,7 +364,7 @@ GameplayAbilitySpecDef:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_RTXI0[0x7]
+  - Name: pad0x7_GULGB[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -436,7 +436,7 @@ GameplayAbilityTargetingLocationInfo:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0xf_FDW8M[0xf]
+  - Name: pad0xf_2CW5G[0xf]
     Offset: '0x11'
     Size: '0xf'
     Type: char
@@ -528,7 +528,7 @@ GameplayCuePendingExecute:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_L4RVE[0x7]
+  - Name: pad0x7_FLJEI[0x7]
     Offset: '0x21'
     Size: '0x7'
     Type: char
@@ -588,7 +588,7 @@ GameplayEffectContext:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<Weakclass Actors>
-  - Name: pad0x18_NVAI5[0x18]
+  - Name: pad0x18_LAXIS[0x18]
     Offset: '0x38'
     Size: '0x18'
     Type: char
@@ -674,7 +674,7 @@ GameplayEffectExecutionScopedModifierInfo:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1EWOD[0x7]
+  - Name: pad0x7_92HFK[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -708,7 +708,7 @@ GameplayEffectModifierMagnitude:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_VP3CG[0x7]
+  - Name: pad0x7_FPOB7[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -766,7 +766,7 @@ GameplayEffectSpec:
     Offset: '0x18'
     Size: '0x28'
     Type: Struct GameplayEffectAttributeCaptureSpecContainer
-  - Name: pad0x10_L6U39[0x10]
+  - Name: pad0x10_TVI75[0x10]
     Offset: '0x40'
     Size: '0x10'
     Type: char
@@ -782,7 +782,7 @@ GameplayEffectSpec:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FYL05[0x4]
+  - Name: pad0x4_71DS2[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
@@ -822,7 +822,7 @@ GameplayEffectSpec:
     Offset: '0x214'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FQQG7[0x3]
+  - Name: pad0x3_I08AB[0x3]
     Offset: '0x215'
     Size: '0x3'
     Type: char
@@ -830,7 +830,7 @@ GameplayEffectSpec:
     Offset: '0x218'
     Size: '0x10'
     Type: TArray<struct GrantedAbilitySpecs>
-  - Name: pad0x50_1T13S[0x50]
+  - Name: pad0x50_13MDG[0x50]
     Offset: '0x228'
     Size: '0x50'
     Type: char
@@ -922,7 +922,7 @@ GameplayModifierEvaluatedData:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_R44JW[0x3]
+  - Name: pad0x3_PKU1L[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -949,7 +949,7 @@ GameplayModifierInfo:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_LW04Q[0x7]
+  - Name: pad0x7_YQUOK[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -1013,7 +1013,7 @@ GameplayTargetDataFilter:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_I74N1[0x7]
+  - Name: pad0x7_IQ81O[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -1075,7 +1075,7 @@ ScalableFloat:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8V202[0x4]
+  - Name: pad0x4_MSQ8D[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

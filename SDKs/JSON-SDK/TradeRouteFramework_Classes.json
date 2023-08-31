@@ -12,7 +12,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_OI5U2[0x4]",
+        "Name": "pad0x4_0AJ1Q[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -50,7 +50,7 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x3_E3L9Z[0x3]",
+        "Name": "pad0x3_DVN5M[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d"
@@ -83,7 +83,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_413XT[0x4]",
+        "Name": "pad0x4_RRFY8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -121,54 +121,10 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x18_SGAJC[0x18]",
+        "Name": "pad0x18_X43U0[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xa0"
-      }
-    ]
-  },
-  "TaleQuestSelectTradeRouteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x148",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "NumSelectFromClosestIslands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x4_GNQW2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "SelectionOriginPointVar",
-        "Type": "Struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "TradeRouteDifficulty",
-        "Type": "Struct QuestVariableInt",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "TradeRoute",
-        "Type": "Struct QuestVariableTradeRouteData",
-        "Size": "0x30",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "AllocatedTradeRouteHandleVar",
-        "Type": "Struct QuestVariableTaleResourceHandle",
-        "Size": "0x30",
-        "Offset": "0x118"
       }
     ]
   },
@@ -183,6 +139,56 @@
         "Type": "TArray<struct TradeRouteMappings>",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "TaleQuestSelectTradeRouteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x178",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xf8",
+    "Attributes": [
+      {
+        "Name": "TradeRouteMappingFilter",
+        "Type": "Struct TradeRouteMappingFilterQuestVariable",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumSelectFromClosestIslands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x4_SWAE5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xb4"
+      },
+      {
+        "Name": "SelectionOriginPointVar",
+        "Type": "Struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "TradeRouteDifficulty",
+        "Type": "Struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "TradeRoute",
+        "Type": "Struct QuestVariableTradeRouteData",
+        "Size": "0x30",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "AllocatedTradeRouteHandleVar",
+        "Type": "Struct QuestVariableTaleResourceHandle",
+        "Size": "0x30",
+        "Offset": "0x148"
       }
     ]
   },

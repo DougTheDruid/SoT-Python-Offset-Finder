@@ -10,7 +10,7 @@ AnimNotifyState_WwiseSound:
     Offset: '0x38'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: pad0x50_798YM[0x50]
+  - Name: pad0x50_NLOQK[0x50]
     Offset: '0x40'
     Size: '0x50'
     Type: char
@@ -34,7 +34,7 @@ AnimNotify_WwiseSound:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N4TUV[0x3]
+  - Name: pad0x3_0UZYB[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -46,7 +46,7 @@ AnimNotify_WwiseSound:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FWYW7[0x7]
+  - Name: pad0x7_ZA8C4[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char
@@ -54,7 +54,7 @@ AnimNotify_WwiseSound:
     Offset: '0x58'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
-  - Name: pad0x20_SI6WO[0x20]
+  - Name: pad0x20_W7TUD[0x20]
     Offset: '0x60'
     Size: '0x20'
     Type: char
@@ -76,26 +76,6 @@ AnimNotify_WwiseSoundMeshSwitch:
   FullSize: '0x98'
   InheritedSize: '0x80'
   Super: AnimNotify_WwiseSound
-AudioEventToComponentMap:
-  Attributes:
-  - Name: AudioEventToComponentMapComponent
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: Class AudioEventToComponentMapComponent*
-  ClassSize: '0x8'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3c8'
-  Super: Actor
-AudioEventToComponentMapComponent:
-  Attributes:
-  - Name: LocalComponentMappings
-    Offset: '0xc8'
-    Size: '0x10'
-    Type: TArray<struct LocalComponentMappings>
-  ClassSize: '0x10'
-  FullSize: '0xd8'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
 AudioIslandStaticMeshAssociatorBase:
   Attributes: []
   ClassSize: '0x0'
@@ -156,7 +136,7 @@ TritonAcousticMap:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x2c_EZN3C[0x2c]
+  - Name: pad0x2c_6GW9C[0x2c]
     Offset: '0x3c'
     Size: '0x2c'
     Type: char
@@ -174,7 +154,7 @@ TritonComponent:
     Offset: '0x2e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1R50E[0x4]
+  - Name: pad0x4_Q238U[0x4]
     Offset: '0x2ec'
     Size: '0x4'
     Type: char
@@ -184,7 +164,7 @@ TritonComponent:
   Super: SceneComponent
 TritonService:
   Attributes:
-  - Name: pad0x10_S51XE[0x10]
+  - Name: pad0x10_5S22Z[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -192,7 +172,7 @@ TritonService:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class TritonComponent*>
-  - Name: pad0xa8_4VNH1[0xa8]
+  - Name: pad0xa8_T6HMQ[0xa8]
     Offset: '0x48'
     Size: '0xa8'
     Type: char
@@ -200,7 +180,7 @@ TritonService:
     Offset: '0xf0'
     Size: '0x8'
     Type: Class TritonComponent*
-  - Name: pad0x58_8D747[0x58]
+  - Name: pad0x58_RUCTJ[0x58]
     Offset: '0xf8'
     Size: '0x58'
     Type: char
@@ -216,7 +196,7 @@ WwiseEmitterBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 WwiseEmitterComponent:
   Attributes:
-  - Name: pad0x8_UNRGC[0x8]
+  - Name: pad0x8_ZCJ9T[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -256,7 +236,7 @@ WwiseObjectPoolWrapper:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_LFUBX[0x2]
+  - Name: pad0x2_DIQUR[0x2]
     Offset: '0x36'
     Size: '0x2'
     Type: char
@@ -264,7 +244,7 @@ WwiseObjectPoolWrapper:
     Offset: '0x38'
     Size: '0x28'
     Type: Struct WwiseNativeEmitterPoolDensityParams
-  - Name: pad0x18_YQWHE[0x18]
+  - Name: pad0x18_XIW68[0x18]
     Offset: '0x60'
     Size: '0x18'
     Type: char

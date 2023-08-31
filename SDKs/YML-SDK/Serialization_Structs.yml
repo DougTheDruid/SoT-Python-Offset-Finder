@@ -14,7 +14,7 @@ StructSerializerArrayTestStruct:
     Offset: '0x14'
     Size: '0x4'
     Type: int
-  - Name: pad0x8_FET9O[0x8]
+  - Name: pad0x8_7SS8B[0x8]
     Offset: '0x18'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ StructSerializerArrayTestStruct:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_OPR5F[0xc]
+  - Name: pad0xc_MEH8W[0xc]
     Offset: '0x24'
     Size: '0xc'
     Type: char
@@ -41,7 +41,7 @@ StructSerializerBooleanTestStruct:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_PYUIP[0x2]
+  - Name: pad0x2_8BM17[0x2]
     Offset: '0x2'
     Size: '0x2'
     Type: char
@@ -79,7 +79,7 @@ StructSerializerNumericTestStruct:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_XIXO0[0x1]
+  - Name: pad0x1_T0FD4[0x1]
     Offset: '0x11'
     Size: '0x1'
     Type: char
@@ -87,7 +87,7 @@ StructSerializerNumericTestStruct:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KXHN5[0x4]
+  - Name: pad0x4_C9HRC[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

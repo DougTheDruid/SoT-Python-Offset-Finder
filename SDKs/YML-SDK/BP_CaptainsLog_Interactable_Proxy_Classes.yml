@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_CaptainsLog_Interactable_Proxy_C:
   Attributes:
-  - Name: None
+  - Name: PlayerPosition
     Offset: '0x778'
     Size: '0x8'
     Type: Class SceneComponent*

@@ -1,0 +1,1076 @@
+{
+  "BP_sod_bld_oos_ext_dressing_01_a_C": {
+    "Super": "Actor",
+    "FullSize": "0x950",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x588",
+    "Attributes": [
+      {
+        "Name": "None",
+        "Type": "Class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x550"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x558"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x560"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x568"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x570"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x588"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x590"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x618"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x650"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x658"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x660"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x668"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x670"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x678"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x680"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x688"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x690"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x700"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x708"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x710"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x728"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x730"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x740"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x748"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x818"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x820"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x828"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x830"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x838"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x840"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x848"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x850"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x858"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x860"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x868"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x878"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x880"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x888"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x890"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x898"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x8f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x900"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x908"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x910"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x918"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x920"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x928"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x930"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x938"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x940"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x948"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

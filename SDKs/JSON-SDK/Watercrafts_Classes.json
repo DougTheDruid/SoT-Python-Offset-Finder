@@ -27,7 +27,7 @@
     "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "pad0x8_TUL24[0x8]",
+        "Name": "pad0x8_V3CQL[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -39,7 +39,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0xf8_Z3Z8Q[0xf8]",
+        "Name": "pad0xf8_L63SG[0xf8]",
         "Type": "char",
         "Size": "0xf8",
         "Offset": "0x3e0"
@@ -60,7 +60,7 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x8_7RKEE[0x8]",
+        "Name": "pad0x8_6RFT8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -78,7 +78,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x80_ZOUL6[0x80]",
+        "Name": "pad0x80_QPEU1[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xe0"
@@ -118,7 +118,7 @@
         "Offset": "0x2e8"
       },
       {
-        "Name": "pad0x1d0_X6WYJ[0x1d0]",
+        "Name": "pad0x1d0_TR5QM[0x1d0]",
         "Type": "char",
         "Size": "0x1d0",
         "Offset": "0x2f0"
@@ -162,7 +162,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_6H44X[0x4]",
+        "Name": "pad0x4_M0WCK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -210,7 +210,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_YN5S6[0x4]",
+        "Name": "pad0x4_8EK5D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -228,7 +228,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x4_JKI3N[0x4]",
+        "Name": "pad0x4_Y45M0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -309,7 +309,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x28_29P3N[0x28]",
+        "Name": "pad0x28_81YX5[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xc8"
@@ -321,7 +321,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x18_NOXP8[0x18]",
+        "Name": "pad0x18_VUGG8[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xf8"
@@ -530,7 +530,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_8ZPI8[0x8]",
+        "Name": "pad0x8_X88Z8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -542,7 +542,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x4_0461C[0x4]",
+        "Name": "pad0x4_RK7NE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
@@ -580,7 +580,7 @@
     "ClassSize": "0x368",
     "Attributes": [
       {
-        "Name": "pad0x38_AWKQ7[0x38]",
+        "Name": "pad0x38_YWHAO[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x3c8"
@@ -598,7 +598,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x4_PWJS9[0x4]",
+        "Name": "pad0x4_XUG4T[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x414"
@@ -664,7 +664,7 @@
         "Offset": "0x4c8"
       },
       {
-        "Name": "pad0x3c_NHFXU[0x3c]",
+        "Name": "pad0x3c_WDJ8D[0x3c]",
         "Type": "char",
         "Size": "0x3c",
         "Offset": "0x4e4"
@@ -718,13 +718,13 @@
         "Offset": "0x59b"
       },
       {
-        "Name": "pad0x4_MBFCO[0x4]",
+        "Name": "pad0x4_J7FOR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x59c"
       },
       {
-        "Name": "pad0x190_VVRRO[0x190]",
+        "Name": "pad0x190_Z4U6G[0x190]",
         "Type": "char",
         "Size": "0x190",
         "Offset": "0x5a0"
@@ -733,12 +733,12 @@
   },
   "Rowboat": {
     "Super": "Watercraft",
-    "FullSize": "0xa80",
+    "FullSize": "0xaa8",
     "InheritedSize": "0x730",
-    "ClassSize": "0x350",
+    "ClassSize": "0x378",
     "Attributes": [
       {
-        "Name": "pad0x48_HWBX1[0x48]",
+        "Name": "pad0x48_OYAZV[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x730"
@@ -798,196 +798,244 @@
         "Offset": "0x7b8"
       },
       {
-        "Name": "WaterExclusionOffset",
-        "Type": "Struct Vector",
-        "Size": "0xc",
+        "Name": "RepairableComponent",
+        "Type": "Class RepairableComponent*",
+        "Size": "0x8",
         "Offset": "0x7c0"
       },
       {
-        "Name": "pad0x4_76CQ4[0x4]",
+        "Name": "WaterExclusionOffset",
+        "Type": "Struct Vector",
+        "Size": "0xc",
+        "Offset": "0x7c8"
+      },
+      {
+        "Name": "pad0x4_WDIOH[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x7cc"
+        "Offset": "0x7d4"
       },
       {
         "Name": "TetherCustomisationComponent",
         "Type": "Class TetherCustomisationComponent*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x7d8"
       },
       {
         "Name": "HealthComponent",
         "Type": "Class HealthComponent*",
         "Size": "0x8",
-        "Offset": "0x7d8"
+        "Offset": "0x7e0"
       },
       {
         "Name": "ActorDamageableComponent",
         "Type": "Class ActorDamageableComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x7e8"
       },
       {
         "Name": "RammableComponent",
         "Type": "Class RammableComponent*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x7f0"
       },
       {
         "Name": "ScrapeableComponent",
         "Type": "Class ScrapeableComponent*",
         "Size": "0x8",
-        "Offset": "0x7f0"
+        "Offset": "0x7f8"
       },
       {
         "Name": "RowboatAudio",
         "Type": "Class RowboatAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x800"
       },
       {
         "Name": "HullDragDynamicsDesc",
         "Type": "Class BaseHullDragDynamicsDesc*",
         "Size": "0x8",
-        "Offset": "0x800"
+        "Offset": "0x808"
       },
       {
         "Name": "OarSplashContainer",
         "Type": "Class BowSplashContainer*",
         "Size": "0x8",
-        "Offset": "0x808"
+        "Offset": "0x810"
       },
       {
         "Name": "MountableComponent",
         "Type": "Class MountableComponent*",
         "Size": "0x8",
-        "Offset": "0x810"
+        "Offset": "0x818"
       },
       {
         "Name": "ActorActivationComponent",
         "Type": "Class ActorActivationComponent*",
         "Size": "0x8",
-        "Offset": "0x818"
+        "Offset": "0x820"
       },
       {
         "Name": "LinearDampingOverTimeWhileBeachedScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x820"
+        "Offset": "0x828"
       },
       {
         "Name": "AngularDampingOverTimeWhileBeachedScalarCurve",
         "Type": "Class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0x828"
+        "Offset": "0x830"
       },
       {
         "Name": "DamageEffectData",
         "Type": "Struct RowboatDamageEffectData",
         "Size": "0x18",
-        "Offset": "0x830"
+        "Offset": "0x838"
       },
       {
         "Name": "StrainDamageData",
         "Type": "Struct RowboatStrainDamageData",
         "Size": "0x20",
-        "Offset": "0x848"
+        "Offset": "0x850"
       },
       {
         "Name": "AlwaysEnabledInteractables",
         "Type": "TArray<class ChildActorComponent*>",
         "Size": "0x10",
-        "Offset": "0x868"
+        "Offset": "0x870"
       },
       {
         "Name": "ShroudBreakerTrackerComponent",
         "Type": "Class ShroudBreakerTrackerComponent*",
         "Size": "0x8",
-        "Offset": "0x878"
+        "Offset": "0x880"
       },
       {
         "Name": "IsBeingLaunched",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x880"
+        "Offset": "0x888"
       },
       {
         "Name": "IsSinking",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x881"
+        "Offset": "0x889"
       },
       {
-        "Name": "pad0x2_953PI[0x2]",
+        "Name": "pad0x2_Y596T[0x2]",
         "Type": "char",
         "Size": "0x2",
-        "Offset": "0x882"
+        "Offset": "0x88a"
       },
       {
         "Name": "MaxPushingAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x884"
+        "Offset": "0x88c"
       },
       {
         "Name": "CurrentStrainAmount",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x888"
+        "Offset": "0x890"
       },
       {
         "Name": "IsDocked",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x88c"
+        "Offset": "0x894"
       },
       {
-        "Name": "pad0x1_073Q4[0x1]",
+        "Name": "pad0x1_61F06[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x88d"
+        "Offset": "0x895"
       },
       {
         "Name": "CoverCollisionChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x88e"
+        "Offset": "0x896"
       },
       {
-        "Name": "pad0x1_02KS8[0x1]",
+        "Name": "pad0x1_627QZ[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x88f"
+        "Offset": "0x897"
       },
       {
         "Name": "UnderCoverCheckInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x890"
+        "Offset": "0x898"
       },
       {
         "Name": "UnderCoverHeight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x894"
+        "Offset": "0x89c"
       },
       {
         "Name": "RelativeUnderCoverProbeRoots",
         "Type": "TArray<struct RelativeUnderCoverProbeRoots>",
         "Size": "0x10",
-        "Offset": "0x898"
+        "Offset": "0x8a0"
       },
       {
         "Name": "TrackedActorType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8a8"
+        "Offset": "0x8b0"
       },
       {
-        "Name": "pad0x1d7_X5URT[0x1d7]",
+        "Name": "pad0x3_TUVWU[0x3]",
         "Type": "char",
-        "Size": "0x1d7",
-        "Offset": "0x8a9"
+        "Size": "0x3",
+        "Offset": "0x8b1"
+      },
+      {
+        "Name": "LightDamagedRepairTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8b4"
+      },
+      {
+        "Name": "ModerateDamagedRepairTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8b8"
+      },
+      {
+        "Name": "HeavyDamagedRepairTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8bc"
+      },
+      {
+        "Name": "LightDamagedHealthThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c0"
+      },
+      {
+        "Name": "ModerateDamagedHealthThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c4"
+      },
+      {
+        "Name": "HeavyDamagedHealthThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c8"
+      },
+      {
+        "Name": "pad0x1dc_ZCTJQ[0x1dc]",
+        "Type": "char",
+        "Size": "0x1dc",
+        "Offset": "0x8cc"
       }
     ]
   },
@@ -1052,7 +1100,7 @@
         "Offset": "0x688"
       },
       {
-        "Name": "pad0x20_UJFI0[0x20]",
+        "Name": "pad0x20_IEI8Y[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x690"
@@ -1156,7 +1204,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x20_SEQ3L[0x20]",
+        "Name": "pad0x20_HPTAX[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x58"
@@ -1174,7 +1222,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_JBQPB[0x4]",
+        "Name": "pad0x4_OCDLW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -1208,7 +1256,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_K2OK1[0x8]",
+        "Name": "pad0x8_LEFIK[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"

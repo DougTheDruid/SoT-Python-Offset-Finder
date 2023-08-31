@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 class BP_MediumShipLadder_C: public Ladder
 {
 public:
-	Class InteractableComponent*                                 None;                                              // 0x5e0(0x8)
-	char                                                         pad0x20_WF7O7[0x20];                               // 0x5e8(0x20)
+	Class InteractableComponent*                                 Interactable;                                      // 0x5e0(0x8)
+	TArray<struct OffTopSplineComponentPositions>                OffTopSplineComponentPositions;                    // 0x5e8(0x10)
+	TArray<struct OnTopSplineComponentPositions>                 OnTopSplineComponentPositions;                     // 0x5f8(0x10)
 };
 
 

@@ -17,7 +17,7 @@ public:
 class EntityEnumerationService: public Object
 {
 public:
-	char                                                         pad0x20_8UV2J[0x20];                               // 0x28(0x20)
+	char                                                         pad0x20_R2UMO[0x20];                               // 0x28(0x20)
 	Class World*                                                 World;                                             // 0x48(0x8)
 };
 

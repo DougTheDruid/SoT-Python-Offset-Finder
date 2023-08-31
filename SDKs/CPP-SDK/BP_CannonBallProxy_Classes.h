@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x758] - InheritedSize[0x748]
+// Size 0x10 (Full Size[0x720] - InheritedSize[0x710]
 class BP_CannonBallProxy_C: public StaticMeshItemProxy
 {
 public:
-	Class TrackedOwnerComponent*                                 TrackedOwner;                                      // 0x748(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x750(0x8)
+	Class TrackedOwnerComponent*                                 None;                                              // 0x710(0x8)
+	Class InteractableComponent*                                 None;                                              // 0x718(0x8)
 };
 
 

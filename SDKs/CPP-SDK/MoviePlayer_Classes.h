@@ -12,7 +12,7 @@ class MoviePlayerSettings: public Object
 public:
 	bool                                                         bWaitForMoviesToComplete;                          // 0x28(0x1)
 	bool                                                         bMoviesAreSkippable;                               // 0x29(0x1)
-	char                                                         pad0x6_K6BXP[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_Y8TCP[0x6];                                 // 0x2a(0x6)
 	TArray<Str StartupMovies>                                    StartupMovies;                                     // 0x30(0x10)
 };
 

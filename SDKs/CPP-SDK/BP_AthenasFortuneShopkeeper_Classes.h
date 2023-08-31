@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_AthenasFortuneShopkeeper_C: public ShopkeeperInteractionProxy
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x488(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x488(0x8)
 };
 
 

@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 BP_LargeShip_CapCabin_Dressing_01_a_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x3d8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: cap_wooden_plaque_01_a
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: cap_model_01_a
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: cap_shark_jaws_01_a
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: MergedStaticMesh
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*

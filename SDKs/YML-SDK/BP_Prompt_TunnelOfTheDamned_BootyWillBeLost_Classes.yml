@@ -2,43 +2,47 @@
 # https://github.com/DougTheDruid
 BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: pad0x117_UDK2Y[0x117]
+    Offset: '0x140'
+    Size: '0x117'
+    Type: char
+  - Name: Handle_CrewEnteredTunnelOfTheDamnedPortalProximity
     Offset: '0x140'
     Size: '0x58'
     Type: Struct ObjectMessagingHandle
-  - Name: None
+  - Name: Prompt_BootyWillBeLost
     Offset: '0x198'
     Size: '0x70'
     Type: Struct PrioritisedPromptWithHandle
-  - Name: None
+  - Name: PromptDisplayDuration
     Offset: '0x208'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: CrewInRadius
     Offset: '0x20c'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: PromptOnCooldown
     Offset: '0x20d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_ASIDK[0x2]
+  - Name: pad0x2_PJK99[0x2]
     Offset: '0x20e'
     Size: '0x2'
     Type: char
-  - Name: None
+  - Name: PromptDisplayCooldown
     Offset: '0x210'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_O4GO8[0x4]
+  - Name: pad0x4_MA3B7[0x4]
     Offset: '0x214'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: LootFilterDataAsset
     Offset: '0x218'
     Size: '0x8'
     Type: Class TunnelsOfTheDamnedLootFilterDataAsset*

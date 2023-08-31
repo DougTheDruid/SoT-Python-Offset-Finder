@@ -13,33 +13,59 @@ public:
 };
 
 
-// Size 0x80 (Full Size[0x448] - InheritedSize[0x3c8]
+// Size 0xa8 (Full Size[0x470] - InheritedSize[0x3c8]
 class CompetitiveVoyagesService: public Actor
 {
 public:
-	char                                                         pad0x38_BLQ2F[0x38];                               // 0x3c8(0x38)
+	char                                                         pad0x38_HUVWX[0x38];                               // 0x3c8(0x38)
 	Class CompetitiveVoyagesServiceParams*                       ServiceParams;                                     // 0x400(0x8)
-	char                                                         pad0x40_5N72Z[0x40];                               // 0x408(0x40)
+	char                                                         pad0x68_509AC[0x68];                               // 0x408(0x68)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class CompetitiveVoyagesServiceParams: public DataAsset
 {
 public:
-	Class VoyageDescDataAsset*                                   VoyageDesc;                                        // 0x28(0x8)
+	Class VoyageDescDataAsset*                                   OptInVoyageDesc;                                   // 0x28(0x8)
+	Class VoyageDescDataAsset*                                   MainVoyageDesc;                                    // 0x30(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SetCrewOptInNPCDataStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x40 (Full Size[0xa0] - InheritedSize[0x60]
 class TaleQuestCompetitiveVoyagesService: public TaleQuestService
 {
 public:
+	char                                                         pad0x20_FZRIX[0x20];                               // 0x60(0x20)
+	TArray<struct PhasedMarkerItems>                             PhasedMarkerItems;                                 // 0x80(0x10)
+	char                                                         pad0x10_QL1Y9[0x10];                               // 0x90(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TaleQuestCompetitiveVoyagesServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class SetCrewOptInNPCDataStepDesc: public TaleQuestStepDesc
+{
+public:
+	Struct QuestVariableActor                                    Actor;                                             // 0x80(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestCompetitiveVoyagesFunctionStepLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };

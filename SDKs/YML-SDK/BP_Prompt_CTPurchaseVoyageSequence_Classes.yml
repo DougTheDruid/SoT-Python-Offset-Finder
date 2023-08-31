@@ -6,9 +6,9 @@ BP_Prompt_CTPurchaseVoyageSequence_C:
     Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: pad0x86_P2XM4[0x86]
+  - Name: pad0x117_K9JB2[0x117]
     Offset: '0x140'
-    Size: '0x86'
+    Size: '0x117'
     Type: char
   - Name: TriggerVolumeRadius
     Offset: '0x140'
@@ -30,7 +30,7 @@ BP_Prompt_CTPurchaseVoyageSequence_C:
     Offset: '0x168'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_A94PT[0x4]
+  - Name: pad0x4_P686I[0x4]
     Offset: '0x16c'
     Size: '0x4'
     Type: char

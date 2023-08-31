@@ -6,7 +6,7 @@ AnimationSwitchDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TGXTS[0x4]
+  - Name: pad0x4_123VI[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -30,7 +30,7 @@ CharacterMeshBakeSpecification:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XAHVI[0x7]
+  - Name: pad0x7_Z97NJ[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -208,7 +208,7 @@ PirateGeneratorSettings:
     Offset: '0x130'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_4DSWL[0x4]
+  - Name: pad0x4_JQZ1M[0x4]
     Offset: '0x134'
     Size: '0x4'
     Type: char
@@ -230,7 +230,7 @@ SkeletonsDataAsset:
   Super: DataAsset
 TextureSwitch:
   Attributes:
-  - Name: pad0x80_ZXIY9[0x80]
+  - Name: pad0x80_ZLL3O[0x80]
     Offset: '0x140'
     Size: '0x80'
     Type: char
@@ -238,7 +238,7 @@ TextureSwitch:
     Offset: '0x1c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_OOI0Q[0x7]
+  - Name: pad0x7_QJC8V[0x7]
     Offset: '0x1c1'
     Size: '0x7'
     Type: char
@@ -308,7 +308,7 @@ TextureSwitchBySeed:
     Offset: '0x22c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_HOTRG[0x4]
+  - Name: pad0x4_MQUJ7[0x4]
     Offset: '0x234'
     Size: '0x4'
     Type: char
@@ -326,7 +326,7 @@ TextureSwitchBySeed:
   Super: TextureSwitch
 WardrobeDataAsset:
   Attributes:
-  - Name: pad0xa0_PBZCJ[0xa0]
+  - Name: pad0xa0_4PDZ5[0xa0]
     Offset: '0x28'
     Size: '0xa0'
     Type: char

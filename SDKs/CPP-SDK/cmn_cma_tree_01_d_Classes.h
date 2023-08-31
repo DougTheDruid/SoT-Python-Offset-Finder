@@ -6,13 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x3f8] - InheritedSize[0x3e0]
+// Size 0x10 (Full Size[0x3f0] - InheritedSize[0x3e0]
 class cmn_cma_tree_01_d_C: public CoveredMeshActor
 {
 public:
-	Class AudioEventToComponentMapComponent*                     None;                                              // 0x3e0(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    None;                                              // 0x3e8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3f0(0x8)
+	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x3e0(0x8)
+	Class StaticMeshComponent*                                   wsp_trunk_01_a;                                    // 0x3e8(0x8)
 };
 
 

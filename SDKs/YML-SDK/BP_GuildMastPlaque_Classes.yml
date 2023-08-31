@@ -2,67 +2,155 @@
 # https://github.com/DougTheDruid
 BP_GuildMastPlaque_C:
   Attributes:
-  - Name: None
-    Offset: '0x400'
+  - Name: UberGraphFrame
+    Offset: '0x418'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0x408'
-    Size: '0x8'
-    Type: Class MaybeCompressedCanvasRenderTarget2D*
-  - Name: None
-    Offset: '0x410'
+  - Name: Font
+    Offset: '0x420'
     Size: '0x40'
     Type: Struct SlateFontInfo
-  - Name: None
-    Offset: '0x450'
-    Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
-  - Name: None
-    Offset: '0x458'
-    Size: '0x8'
-    Type: Class Material*
-  - Name: None
+  - Name: GuildPlaque_MID
     Offset: '0x460'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: Bevel_Material
     Offset: '0x468'
     Size: '0x8'
-    Type: Class MaybeCompressedCanvasRenderTarget2D*
-  - Name: None
+    Type: Class Material*
+  - Name: bevelMat_MID
     Offset: '0x470'
-    Size: '0x4'
-    Type: int
-  - Name: None
-    Offset: '0x474'
-    Size: '0x4'
-    Type: int
-  - Name: None
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: TextCanvasWidth
     Offset: '0x478'
+    Size: '0x4'
+    Type: int
+  - Name: TextCanvasHeight
+    Offset: '0x47c'
+    Size: '0x4'
+    Type: int
+  - Name: Canvas
+    Offset: '0x480'
     Size: '0x8'
     Type: Class CanvasWorldMapComponent*
-  - Name: None
-    Offset: '0x480'
+  - Name: guildRank
+    Offset: '0x488'
     Size: '0x10'
-    Type: TArray<Str None>
-  - Name: None
-    Offset: '0x490'
+    Type: TArray<Str guildRank>
+  - Name: bevelIntensity
+    Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x494'
-    Size: '0x4'
-    Type: int
-  - Name: None
-    Offset: '0x498'
-    Size: '0x8'
-    Type: Class Texture*
-  - Name: None
-    Offset: '0x4a0'
+  - Name: FeatureToggle
+    Offset: '0x49c'
     Size: '0xc'
     Type: Struct FeatureFlag
-  ClassSize: '0xac'
-  FullSize: '0x4ac'
-  InheritedSize: '0x400'
+  - Name: BronzeMRMap
+    Offset: '0x4a8'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: SilverMRMap
+    Offset: '0x4b0'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: GoldMRMap
+    Offset: '0x4b8'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: BronzeNormalMap
+    Offset: '0x4c0'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: SilverNormalMap
+    Offset: '0x4c8'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: GoldNormalMap
+    Offset: '0x4d0'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: TextBevel_MID
+    Offset: '0x4d8'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: IconBevel_MID
+    Offset: '0x4e0'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: RankBevel_MID
+    Offset: '0x4e8'
+    Size: '0x8'
+    Type: Class MaterialInstanceDynamic*
+  - Name: RankRenderTarget
+    Offset: '0x4f0'
+    Size: '0x8'
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: TextRenderTarget
+    Offset: '0x4f8'
+    Size: '0x8'
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: RankTextWidth
+    Offset: '0x500'
+    Size: '0x4'
+    Type: int
+  - Name: RankTextHeight
+    Offset: '0x504'
+    Size: '0x4'
+    Type: int
+  - Name: BevelTextRenderTarget
+    Offset: '0x508'
+    Size: '0x8'
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: IconRenderTarget
+    Offset: '0x510'
+    Size: '0x8'
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: BevelRankRenderTarget
+    Offset: '0x518'
+    Size: '0x8'
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: BevelIconRenderTarget
+    Offset: '0x520'
+    Size: '0x8'
+    Type: Class MaybeCompressedCanvasRenderTarget2D*
+  - Name: Gold Colour
+    Offset: '0x528'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: Silver Colour
+    Offset: '0x538'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: Bronze Colour
+    Offset: '0x548'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: TextColour
+    Offset: '0x558'
+    Size: '0x10'
+    Type: Struct LinearColor
+  - Name: IconColourFollowsMedallion
+    Offset: '0x568'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_LDJAV[0x7]
+    Offset: '0x569'
+    Size: '0x7'
+    Type: char
+  - Name: DefaultDiffuseMap
+    Offset: '0x570'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: DefaultNormalMap
+    Offset: '0x578'
+    Size: '0x8'
+    Type: Class Texture2D*
+  - Name: DefaultMRMap
+    Offset: '0x580'
+    Size: '0x8'
+    Type: Class Texture2D*
+  ClassSize: '0x170'
+  FullSize: '0x588'
+  InheritedSize: '0x418'
   Super: GuildPlaque

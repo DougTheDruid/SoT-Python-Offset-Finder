@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 BP_CaptainsBookcase_01_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x6a8'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: OrderOfSouls_ScrollStack
     Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: MerchantsAliance_ScrollStack
     Offset: '0x6b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Mercenary_ScrollStack
     Offset: '0x6c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Legendary_ScrollStack
     Offset: '0x6c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: GoldHoarder_ScrollStack
     Offset: '0x6d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: MergedBookcaseAndDressing
     Offset: '0x6d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Company_GH
     Offset: '0x6e0'
     Size: '0x8'
     Type: class
-  - Name: None
+  - Name: Company_MA
     Offset: '0x6e8'
     Size: '0x8'
     Type: class
-  - Name: None
+  - Name: Company_OoS
     Offset: '0x6f0'
     Size: '0x8'
     Type: class
-  - Name: None
+  - Name: Company_Leg
     Offset: '0x6f8'
     Size: '0x8'
     Type: class
-  - Name: None
+  - Name: Company_Merc
     Offset: '0x700'
     Size: '0x8'
     Type: class

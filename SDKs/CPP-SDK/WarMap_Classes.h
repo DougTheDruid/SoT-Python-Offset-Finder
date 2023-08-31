@@ -17,11 +17,11 @@ public:
 class WarMapInteractionComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x8_XHEOD[0x8];                                 // 0x128(0x8)
+	char                                                         pad0x8_J1MT3[0x8];                                 // 0x128(0x8)
 	Struct FText                                                 OpenMapInteractionText;                            // 0x130(0x38)
 	Struct FText                                                 CannotOpenMapInteractionText;                      // 0x168(0x38)
 	class                                                        OpenMapInputId;                                    // 0x1a0(0x8)
-	char                                                         pad0x20_WBXHE[0x20];                               // 0x1a8(0x20)
+	char                                                         pad0x20_LGJ8A[0x20];                               // 0x1a8(0x20)
 };
 
 
@@ -39,10 +39,10 @@ public:
 	Class WarMapVoteValidatorBase*                               Validator;                                         // 0x30(0x8)
 	Class Actor*                                                 OwningActor;                                       // 0x38(0x8)
 	bool                                                         IsHardMode;                                        // 0x40(0x1)
-	char                                                         pad0x67_SGON2[0x67];                               // 0x41(0x67)
+	char                                                         pad0x67_U49HW[0x67];                               // 0x41(0x67)
 	TArray<class PlayerState*>                                   Votes;                                             // 0xa8(0x10)
 	Class BoxedRpcDispatcherComponent*                           RpcDispatcher;                                     // 0xb8(0x8)
-	char                                                         pad0x58_TM5S0[0x58];                               // 0xc0(0x58)
+	char                                                         pad0x58_BZGBC[0x58];                               // 0xc0(0x58)
 };
 
 
@@ -76,14 +76,14 @@ public:
 class WarMapVoteInteractionActor: public Actor
 {
 public:
-	char                                                         pad0x10_GLBR8[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_2RSTQ[0x10];                               // 0x3c8(0x10)
 	float                                                        TooltipUIFadeDuration;                             // 0x3d8(0x4)
 	Struct Vector2D                                              TooltipUIScreenSpaceOffsetRatio;                   // 0x3dc(0x8)
-	char                                                         pad0x4_3V2SE[0x4];                                 // 0x3e4(0x4)
+	char                                                         pad0x4_9P57A[0x4];                                 // 0x3e4(0x4)
 	Class StaticMeshComponent*                                   InvasionActiveMesh;                                // 0x3e8(0x8)
 	TArray<struct FactionInfos>                                  FactionInfos;                                      // 0x3f0(0x10)
 	TArray<struct FactionInfoPtrs>                               FactionInfoPtrs;                                   // 0x400(0x10)
-	char                                                         pad0x230_NAAKK[0x230];                             // 0x410(0x230)
+	char                                                         pad0x230_JYGF7[0x230];                             // 0x410(0x230)
 };
 
 
@@ -94,7 +94,7 @@ public:
 	Class WarMapVoteConsumerBase*                                Consumer;                                          // 0x30(0x8)
 	Class Actor*                                                 OwningActor;                                       // 0x38(0x8)
 	bool                                                         ShowWithHardMode;                                  // 0x40(0x1)
-	char                                                         pad0xd7_I89GK[0xd7];                               // 0x41(0xd7)
+	char                                                         pad0xd7_AT3CB[0xd7];                               // 0x41(0xd7)
 };
 
 
@@ -110,7 +110,7 @@ class StopWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
 {
 public:
 	bool                                                         ShowWhenInHardModeMatchmaking;                     // 0x118(0x1)
-	char                                                         pad0x7_U52VR[0x7];                                 // 0x119(0x7)
+	char                                                         pad0x7_KCNI4[0x7];                                 // 0x119(0x7)
 };
 
 

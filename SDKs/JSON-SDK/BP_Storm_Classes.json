@@ -6,31 +6,31 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
-        "Name": "None",
+        "Name": "Lightning4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
-        "Name": "None",
+        "Name": "Lightning3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
-        "Name": "None",
+        "Name": "Lightning2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
-        "Name": "None",
+        "Name": "Lightning1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x648"

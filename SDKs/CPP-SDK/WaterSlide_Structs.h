@@ -17,7 +17,7 @@ public:
 	float                                                        LeftVeeringDistance;                               // 0x10(0x4)
 	float                                                        RightVeeringDistance;                              // 0x14(0x4)
 	Struct PlayerStat                                            StatToFireForRouteChange;                          // 0x18(0x4)
-	char                                                         pad0x4_27XAE[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_YUVSU[0x4];                                 // 0x1c(0x4)
 	Class ParticleSystem*                                        PlayerSplashingVFXOverride;                        // 0x20(0x8)
 };
 
@@ -31,7 +31,7 @@ public:
 	float                                                        MinSpeed;                                          // 0x8(0x4)
 	float                                                        AccelerationMultiplier;                            // 0xc(0x4)
 	float                                                        DecelerationMultiplier;                            // 0x10(0x4)
-	char                                                         pad0x4_V6CY0[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_1KDQ7[0x4];                                 // 0x14(0x4)
 	Struct RuntimeVectorCurve                                    SwingAngleControlDegrees;                          // 0x18(0x170)
 	Struct RuntimeVectorCurve                                    SwingSpeedControlRPM;                              // 0x188(0x170)
 	Struct Vector2D                                              WindResistanceMinMaxAngleDegrees;                  // 0x2f8(0x8)
@@ -47,12 +47,13 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x18
 struct OnEndZiplineActionStateEvent
 {
 public:
 	Class WwiseEvent*                                            ZiplineEnd;                                        // 0x0(0x8)
 	Class WwiseEvent*                                            ZiplineEndLoop;                                    // 0x8(0x8)
+	Class WwiseEvent*                                            DetachFromZiplineAdditiveOneShot;                  // 0x10(0x8)
 };
 
 
@@ -61,7 +62,7 @@ struct OnStartZiplineActionStateEvent
 {
 public:
 	Class WwiseEvent*                                            ZiplineStart;                                      // 0x0(0x8)
-	Class WwiseEvent*                                            ZiplineAdditiveOneShot;                            // 0x8(0x8)
+	Class WwiseEvent*                                            AttachToZiplineAdditiveOneShot;                    // 0x8(0x8)
 	Class WwiseEvent*                                            ZiplineLoopStart;                                  // 0x10(0x8)
 	Class ParticleSystem*                                        ZiplineWindVFX;                                    // 0x18(0x8)
 	Class ParticleSystem*                                        ZiplineTrailVFX;                                   // 0x20(0x8)
@@ -81,7 +82,7 @@ struct RideTransitionActionStateConstructionInfo
 public:
 	Class Ride*                                                  Ride;                                              // 0x30(0x8)
 	byte                                                         Direction;                                         // 0x38(0x1)
-	char                                                         pad0x3_ZD8Y5[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_WNPZM[0x3];                                 // 0x39(0x3)
 	float                                                        Offset;                                            // 0x3c(0x4)
 };
 
@@ -108,7 +109,7 @@ struct WaterSlideActionStateParams
 public:
 	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
 	bool                                                         ForceStash;                                        // 0x4(0x1)
-	char                                                         pad0x3_UDY8M[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_POGMF[0x3];                                 // 0x5(0x3)
 	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x8(0x1c)
 };
 
@@ -146,12 +147,15 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x48
 struct ZiplineActionStateConstructionInfo
 {
 public:
 	Class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
 	byte                                                         MovementDirection;                                 // 0x38(0x1)
+	byte                                                         InitialSwingDirection;                             // 0x39(0x1)
+	char                                                         pad0x6_CKNUV[0x6];                                 // 0x3a(0x6)
+	double                                                       ZiplineStartSmoothedTime;                          // 0x40(0x8)
 };
 
 

@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 class BP_MediumShipNetProxy_C: public ShipNetProxy
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x4b0(0x8)
-	char                                                         pad0x18_UJ1O9[0x18];                               // 0x4b8(0x18)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x4b0(0x8)
+	Class StaticMeshComponent*                                   EmissaryFlags;                                     // 0x4b8(0x8)
+	TArray<class MaterialInstanceDynamic*>                       Dynamic Materials;                                 // 0x4c0(0x10)
 };
 
 

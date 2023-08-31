@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_MediumShip_StandardHull_Art_C:
   Attributes:
-  - Name: None
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: None
+  - Name: BattleBoundsPostProcess
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: None
+  - Name: BattleBounds_PP_Volume
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: FirePostProcess
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: None
+  - Name: Fire_PP_Volume
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: SurfaceWater
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class SurfaceWaterComponent*
-  - Name: None
+  - Name: shp_small_rain_occlusion
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_galleon_main_deck_01_a
     Offset: '0x400'
     Size: '0x8'
     Type: Class StaticMeshComponent*

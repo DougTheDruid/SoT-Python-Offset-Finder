@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_CannonBallProxy_C:
   Attributes:
-  - Name: TrackedOwner
-    Offset: '0x748'
+  - Name: None
+    Offset: '0x710'
     Size: '0x8'
     Type: Class TrackedOwnerComponent*
-  - Name: Interactable
-    Offset: '0x750'
+  - Name: None
+    Offset: '0x718'
     Size: '0x8'
     Type: Class InteractableComponent*
   ClassSize: '0x10'
-  FullSize: '0x758'
-  InheritedSize: '0x748'
+  FullSize: '0x720'
+  InheritedSize: '0x710'
   Super: StaticMeshItemProxy

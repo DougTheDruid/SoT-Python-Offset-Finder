@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_LBEMS[0x7]",
+        "Name": "pad0x7_HIFNL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_WKYRN[0x3]",
+        "Name": "pad0x3_77OG2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -105,6 +105,35 @@
   "OnDemandQuestResumeConditionMetReasonQuestVariable": {
     "ClassSize": "0x30",
     "Attributes": []
+  },
+  "GameEventOnDemandBannerTextData": {
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "GameEventTypes",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OnShipSunkBannerText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OnVoyageCancelledBannerText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "OnGameEventCompletedBannerHeaderText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x80"
+      }
+    ]
   },
   "AdventureOnDemandCrewReadyToResurfaceEvent": {
     "ClassSize": "0x10",

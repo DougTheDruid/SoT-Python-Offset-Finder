@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 LevelAssetCachingService:
   Attributes:
-  - Name: pad0x18_ZR6QW[0x18]
+  - Name: pad0x18_EEQ8C[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -10,7 +10,7 @@ LevelAssetCachingService:
     Offset: '0x40'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x28_8QY63[0x28]
+  - Name: pad0x28_HIDFQ[0x28]
     Offset: '0x48'
     Size: '0x28'
     Type: char
@@ -20,7 +20,7 @@ LevelAssetCachingService:
   Super: Object
 RegionLookupGeneratedGrid:
   Attributes:
-  - Name: pad0x8_Y5DWF[0x8]
+  - Name: pad0x8_90GAU[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -28,7 +28,7 @@ RegionLookupGeneratedGrid:
     Offset: '0x30'
     Size: '0x28'
     Type: Struct WorldRegionSetup
-  - Name: pad0x58_ZYL1P[0x58]
+  - Name: pad0x58_5TQD4[0x58]
     Offset: '0x58'
     Size: '0x58'
     Type: char
@@ -50,7 +50,7 @@ RegionLookupSeaId:
   Super: Object
 RegionalAssetCache:
   Attributes:
-  - Name: pad0x10_MBHO3[0x10]
+  - Name: pad0x10_VRTIC[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -58,7 +58,7 @@ RegionalAssetCache:
     Offset: '0x38'
     Size: '0x8'
     Type: Class RegionalAssetListDataAsset*
-  - Name: pad0x98_2F0FL[0x98]
+  - Name: pad0x98_MASYU[0x98]
     Offset: '0x40'
     Size: '0x98'
     Type: char

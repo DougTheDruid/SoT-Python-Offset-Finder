@@ -2,63 +2,63 @@
 # https://github.com/DougTheDruid
 BP_HullDamage_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x5d0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: HitReaction
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class HitReactionComponent*
-  - Name: None
+  - Name: ImpactDecalComponent
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class BakedDecalComponent*
-  - Name: None
+  - Name: Persistent Damage Decals
     Offset: '0x5e8'
     Size: '0x10'
     Type: TArray<class Texture2D*>
-  - Name: None
+  - Name: Damage VFX
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class ParticleSystem*
-  - Name: None
+  - Name: Deferred Damage Decals
     Offset: '0x600'
     Size: '0x10'
     Type: TArray<class MaterialInstance*>
-  - Name: None
+  - Name: Deferred Min Size
     Offset: '0x610'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Deferred Max Size
     Offset: '0x614'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Persistent Min Size
     Offset: '0x618'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Persistent Max Size
     Offset: '0x61c'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: RandomDecalStream
     Offset: '0x620'
     Size: '0x8'
     Type: Struct RandomStream
-  - Name: None
+  - Name: TEST_HitStrength
     Offset: '0x628'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: TEST_PenetrationThreshold
     Offset: '0x62c'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: ParentShip
     Offset: '0x630'
     Size: '0x8'
     Type: Class Ship*
-  - Name: None
+  - Name: CannonballHitEmitter
     Offset: '0x638'
     Size: '0x20'
     Type: Struct WwiseEmitter

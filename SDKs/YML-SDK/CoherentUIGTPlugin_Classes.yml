@@ -8,7 +8,7 @@ CoherentUIGTAssetReferencer:
   Super: Object
 CoherentUIGTBaseComponent:
   Attributes:
-  - Name: pad0xa8_8E14C[0xa8]
+  - Name: pad0xa8_ND9QV[0xa8]
     Offset: '0xc8'
     Size: '0xa8'
     Type: char
@@ -68,7 +68,7 @@ CoherentUIGTBaseComponent:
     Offset: '0x199'
     Size: '0x1'
     Type: bool
-  - Name: pad0x176_875JU[0x176]
+  - Name: pad0x176_RJXBH[0x176]
     Offset: '0x19a'
     Size: '0x176'
     Type: char
@@ -100,7 +100,7 @@ CoherentUIGTComponent:
     Offset: '0x328'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_OL0P1[0x3]
+  - Name: pad0x3_O2J6Z[0x3]
     Offset: '0x329'
     Size: '0x3'
     Type: char
@@ -112,7 +112,7 @@ CoherentUIGTComponent:
     Offset: '0x330'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_XHFQZ[0x17]
+  - Name: pad0x17_C4RLY[0x17]
     Offset: '0x331'
     Size: '0x17'
     Type: char
@@ -132,7 +132,7 @@ CoherentUIGTGameHUD:
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class CoherentUIGTHUD*
-  - Name: pad0x90_5AWLR[0x90]
+  - Name: pad0x90_AUPMA[0x90]
     Offset: '0x4c8'
     Size: '0x90'
     Type: char
@@ -154,7 +154,7 @@ CoherentUIGTHUD:
     Offset: '0x328'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: pad0x8_IPQJV[0x8]
+  - Name: pad0x8_8D54C[0x8]
     Offset: '0x330'
     Size: '0x8'
     Type: char
@@ -170,7 +170,7 @@ CoherentUIGTInputActor:
   Super: Actor
 CoherentUIGTJSEvent:
   Attributes:
-  - Name: pad0x80_LNZD2[0x80]
+  - Name: pad0x80_0PHJO[0x80]
     Offset: '0x28'
     Size: '0x80'
     Type: char
@@ -188,7 +188,7 @@ CoherentUIGTJSPayload:
     Offset: '0x28'
     Size: '0x10'
     Type: Struct FString
-  - Name: pad0x8_LKJXA[0x8]
+  - Name: pad0x8_IUU2K[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
@@ -206,7 +206,7 @@ CoherentUIGTLiveView:
     Offset: '0xd8'
     Size: '0x8'
     Type: Class TextureRenderTarget2D*
-  - Name: pad0x18_DIFAM[0x18]
+  - Name: pad0x18_2BN2T[0x18]
     Offset: '0xe0'
     Size: '0x18'
     Type: char
@@ -226,7 +226,7 @@ CoherentUIGTSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_8Z9IQ[0x3]
+  - Name: pad0x3_8H7QC[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -282,7 +282,7 @@ CoherentUIGTSettings:
     Offset: '0x3e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_TLTXD[0x1]
+  - Name: pad0x1_5YV9O[0x1]
     Offset: '0x3f'
     Size: '0x1'
     Type: char
@@ -302,7 +302,7 @@ CoherentUIGTSettings:
     Offset: '0x61'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_DBZV9[0x6]
+  - Name: pad0x6_MSSXZ[0x6]
     Offset: '0x62'
     Size: '0x6'
     Type: char
@@ -318,7 +318,7 @@ CoherentUIGTSystem:
   Super: Actor
 CoherentUIGTWidget:
   Attributes:
-  - Name: pad0x20_1QIZQ[0x20]
+  - Name: pad0x20_8342U[0x20]
     Offset: '0x138'
     Size: '0x20'
     Type: char
@@ -346,7 +346,7 @@ CoherentUIGTWidget:
     Offset: '0x1fc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_058DP[0x3]
+  - Name: pad0x3_29R0J[0x3]
     Offset: '0x1fd'
     Size: '0x3'
     Type: char
@@ -382,7 +382,7 @@ CoherentUIGTWidget:
     Offset: '0x21c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1a3_EOVVL[0x1a3]
+  - Name: pad0x1a3_N5DZ9[0x1a3]
     Offset: '0x21d'
     Size: '0x1a3'
     Type: char
@@ -398,7 +398,7 @@ CoherentUIGTWidget:
     Offset: '0x3d4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Z5F75[0x3]
+  - Name: pad0x3_TWEWS[0x3]
     Offset: '0x3d5'
     Size: '0x3'
     Type: char

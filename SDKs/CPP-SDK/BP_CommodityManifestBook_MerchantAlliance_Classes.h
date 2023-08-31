@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_CommodityManifestBook_MerchantAlliance_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    None;                                              // 0x520(0x8)
-	Class SceneComponent*                                        None;                                              // 0x528(0x8)
+	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x520(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
 };
 
 

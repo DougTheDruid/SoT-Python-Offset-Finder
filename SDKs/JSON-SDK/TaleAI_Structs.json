@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_472C8[0x4]",
+        "Name": "pad0x4_MWEFA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -27,7 +27,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_G0MJ7[0x7]",
+        "Name": "pad0x7_VKNYO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -50,7 +50,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_G2377[0x4]",
+        "Name": "pad0x4_JHQ4C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -90,7 +90,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_XFRV3[0x4]",
+        "Name": "pad0x4_IEOWK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -104,7 +104,7 @@
     ]
   },
   "SpawnAICustomPreSpawnTaskData": {
-    "ClassSize": "0x68",
+    "ClassSize": "0x78",
     "Attributes": [
       {
         "Name": "Index",
@@ -119,46 +119,64 @@
         "Offset": "0x4"
       },
       {
+        "Name": "SpawnRotation",
+        "Type": "Struct Rotator",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PerceiveActor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x3_16T83[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1d"
+      },
+      {
         "Name": "Skillset",
         "Type": "Class AthenaAIControllerParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x30"
+        "Offset": "0x40"
       },
       {
         "Name": "Loadout",
         "Type": "Class LoadoutAsset*",
         "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0x48"
       },
       {
         "Name": "Form",
         "Type": "Class AthenaAIFormDataAsset*",
         "Size": "0x8",
-        "Offset": "0x40"
+        "Offset": "0x50"
       },
       {
         "Name": "Ammo",
         "Type": "Class AthenaAIAmmoDataAsset*",
         "Size": "0x8",
-        "Offset": "0x48"
+        "Offset": "0x58"
       },
       {
         "Name": "AIClass",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0x50"
+        "Offset": "0x60"
       },
       {
         "Name": "PartsCategory",
         "Type": "Class AIPartsCategory*",
         "Size": "0x8",
-        "Offset": "0x58"
+        "Offset": "0x68"
       },
       {
         "Name": "Body",
         "Type": "Class TaleQuestStepDesc*",
         "Size": "0x8",
-        "Offset": "0x60"
+        "Offset": "0x70"
       }
     ]
   },
@@ -172,7 +190,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_DVNPW[0x4]",
+        "Name": "pad0x4_D4TMZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"

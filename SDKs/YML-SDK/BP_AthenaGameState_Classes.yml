@@ -3,14 +3,14 @@
 BP_AthenaGameState_C:
   Attributes:
   - Name: WorldMarkerRouting
-    Offset: '0xc30'
+    Offset: '0xc38'
     Size: '0x8'
     Type: Class WorldMarkerRoutingComponent*
   - Name: DefaultSceneRoot
-    Offset: '0xc38'
+    Offset: '0xc40'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x10'
-  FullSize: '0xc40'
-  InheritedSize: '0xc30'
+  FullSize: '0xc48'
+  InheritedSize: '0xc38'
   Super: AthenaGameState

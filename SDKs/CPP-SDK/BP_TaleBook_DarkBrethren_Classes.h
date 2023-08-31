@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_TaleBook_DarkBrethren_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        None;                                              // 0x7e8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7f0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7f8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x800(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x808(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x810(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x818(0x8)
+	Class ArrowComponent*                                        Arrow;                                             // 0x7e8(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f0(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f8(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x800(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x808(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x810(0x8)
+	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x818(0x8)
 };
 
 

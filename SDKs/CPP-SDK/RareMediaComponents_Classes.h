@@ -17,9 +17,9 @@ public:
 class WwiseMediaSoundComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x60_GR1PX[0x60];                               // 0x2e0(0x60)
+	char                                                         pad0x60_ILX0T[0x60];                               // 0x2e0(0x60)
 	Class WwiseEvent*                                            MediaSoundEvent;                                   // 0x340(0x8)
-	char                                                         pad0x48_ZD9HI[0x48];                               // 0x348(0x48)
+	char                                                         pad0x48_T45OF[0x48];                               // 0x348(0x48)
 };
 
 

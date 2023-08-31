@@ -100,6 +100,15 @@ public:
 };
 
 
+// Size 0x48
+struct IsSpecifiedActorCondition
+{
+public:
+	Struct ConditionContextPayloadSelectorInstance               SpecifyingActorPayloadSelector;                    // 0x8(0x20)
+	Struct ConditionContextPayloadSelectorInstance               TargetActorPayloadSelector;                        // 0x28(0x20)
+};
+
+
 // Size 0x28
 struct NotCondition
 {

@@ -10,20 +10,20 @@ namespace DougsSDKDumper
 class AD_FirstPerson_PlayerPirate_Male_Default_C: public FirstPersonAnimationData
 {
 public:
-	Struct ADS_IdlesNative                                       None;                                              // 0x78(0x10)
-	Struct ADS_LocomotionNative                                  None;                                              // 0x88(0x50)
-	Struct ADS_JumpingNative                                     None;                                              // 0xd8(0x78)
-	Struct ADS_SwimmingNative                                    None;                                              // 0x150(0x68)
-	Struct ADS_WheelNative                                       None;                                              // 0x1b8(0x88)
-	Struct ADS_CapstanNative                                     None;                                              // 0x240(0x68)
-	Struct ADS_CameraAdditiveNative                              None;                                              // 0x2a8(0x50)
-	Struct ADS_ObjectsNative                                     None;                                              // 0x2f8(0x10)
-	Struct ADS_Sockets                                           None;                                              // 0x308(0x2)
-	char                                                         pad0x6_074SK[0x6];                                 // 0x30a(0x6)
-	Struct ADS_CannonNative                                      None;                                              // 0x310(0x38)
-	Struct ADS_RowingBoatNative                                  None;                                              // 0x348(0x98)
-	Struct ADS_WaterPumpNative                                   None;                                              // 0x3e0(0x28)
-	Struct ADS_FacialNative                                      None;                                              // 0x408(0x90)
+	Struct ADS_IdlesNative                                       Idles;                                             // 0x78(0x10)
+	Struct ADS_LocomotionNative                                  Locomotion;                                        // 0x88(0x50)
+	Struct ADS_JumpingNative                                     Jumping;                                           // 0xd8(0x78)
+	Struct ADS_SwimmingNative                                    Swimming;                                          // 0x150(0x68)
+	Struct ADS_WheelNative                                       Wheel;                                             // 0x1b8(0x88)
+	Struct ADS_CapstanNative                                     Capstan;                                           // 0x240(0x68)
+	Struct ADS_CameraAdditiveNative                              CameraAdditive;                                    // 0x2a8(0x50)
+	Struct ADS_ObjectsNative                                     Items;                                             // 0x2f8(0x10)
+	Struct ADS_Sockets                                           Sockets;                                           // 0x308(0x2)
+	char                                                         pad0x6_NWMTC[0x6];                                 // 0x30a(0x6)
+	Struct ADS_CannonNative                                      Cannon;                                            // 0x310(0x38)
+	Struct ADS_RowingBoatNative                                  Rowboat;                                           // 0x348(0x98)
+	Struct ADS_WaterPumpNative                                   WaterPump;                                         // 0x3e0(0x28)
+	Struct ADS_FacialNative                                      Facial;                                            // 0x408(0x90)
 };
 
 

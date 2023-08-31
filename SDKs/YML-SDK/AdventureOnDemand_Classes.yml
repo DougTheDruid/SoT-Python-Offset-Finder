@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AdventureOnDemandService:
   Attributes:
-  - Name: pad0x10_0ZHT5[0x10]
+  - Name: pad0x10_Q5U69[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -14,7 +14,7 @@ AdventureOnDemandService:
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class AdventureOnDemandVoyageSelectionDataAsset*
-  - Name: pad0xb0_VK54R[0xb0]
+  - Name: pad0xb0_PLY3C[0xb0]
     Offset: '0x3e8'
     Size: '0xb0'
     Type: char
@@ -30,89 +30,127 @@ AdventureOnDemandService:
     Offset: '0x4b8'
     Size: '0x10'
     Type: TArray<struct CrewsDivingToTunnel>
-  - Name: CrewsOnCooldown
+  - Name: CrewsInArrivalTunnel
     Offset: '0x4c8'
     Size: '0x10'
-    Type: TArray<struct CrewsOnCooldown>
-  - Name: pad0x180_E34A1[0x180]
+    Type: TArray<struct CrewsInArrivalTunnel>
+  - Name: CrewsOnCooldown
     Offset: '0x4d8'
+    Size: '0x10'
+    Type: TArray<struct CrewsOnCooldown>
+  - Name: pad0x180_YXIN2[0x180]
+    Offset: '0x4e8'
     Size: '0x180'
     Type: char
-  ClassSize: '0x290'
-  FullSize: '0x658'
+  ClassSize: '0x2a0'
+  FullSize: '0x668'
   InheritedSize: '0x3c8'
   Super: Actor
 GameEventOnDemandArrivalTunnelWorkerBase:
   Attributes:
-  - Name: MinRangeFromTarget
+  - Name: TriggerTunnelFailureTimeout
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: MaxRangeFromTarget
+  - Name: MinRangeFromTarget
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: SubsequentCrewJoinRadiusModifier
+  - Name: MaxRangeFromTarget
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x34_F3FGW[0x34]
+  - Name: SubsequentCrewJoinRadiusModifier
     Offset: '0x3c'
-    Size: '0x34'
-    Type: char
-  - Name: LeaveTunnelVoyageDesc
-    Offset: '0x70'
-    Size: '0x8'
-    Type: Class VoyageDescDataAsset*
-  - Name: pad0x10_ZGKBL[0x10]
-    Offset: '0x78'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x58'
-  FullSize: '0x88'
-  InheritedSize: '0x30'
-  Super: AdventureOnDemandArrivalTunnelWorkerBase
-SeaBasedGameEventOnDemandArrivalTunnelWorker:
-  Attributes:
-  - Name: pad0x20_TVH7Z[0x20]
-    Offset: '0x88'
-    Size: '0x20'
-    Type: char
-  - Name: VacateOccupiedLocationTimer
-    Offset: '0xa8'
     Size: '0x4'
     Type: float
-  - Name: pad0x44_H3UM5[0x44]
-    Offset: '0xac'
-    Size: '0x44'
+  - Name: pad0x48_WV1SI[0x48]
+    Offset: '0x40'
+    Size: '0x48'
     Type: char
-  ClassSize: '0x68'
-  FullSize: '0xf0'
-  InheritedSize: '0x88'
-  Super: GameEventOnDemandArrivalTunnelWorkerBase
-SkellyFortEventOnDemandArrivalTunnelWorker:
+  - Name: LeaveTunnelVoyageDesc
+    Offset: '0x88'
+    Size: '0x8'
+    Type: Class VoyageDescDataAsset*
+  - Name: pad0x18_F5HTY[0x18]
+    Offset: '0x90'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x78'
+  FullSize: '0xa8'
+  InheritedSize: '0x30'
+  Super: AdventureOnDemandArrivalTunnelWorkerBase
+IslandBasedGameEventOnDemandArrivalTunnelWorker:
   Attributes:
   - Name: UseSpawnDistanceFromIslandForResurfaceRadius
-    Offset: '0x88'
+    Offset: '0xa8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VHDS3[0x3]
-    Offset: '0x89'
+  - Name: pad0x3_2KQ2J[0x3]
+    Offset: '0xa9'
     Size: '0x3'
     Type: char
   - Name: ResurfaceMaxRadiusModifier
-    Offset: '0x8c'
+    Offset: '0xac'
     Size: '0x4'
     Type: float
+  - Name: pad0x10_54FMY[0x10]
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x18'
+  FullSize: '0xc0'
+  InheritedSize: '0xa8'
+  Super: GameEventOnDemandArrivalTunnelWorkerBase
+KrakenGameEventOnDemandArrivalTunnelWorker:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x120'
+  InheritedSize: '0x110'
+  Super: SeaBasedGameEventOnDemandArrivalTunnelWorker
+SeaBasedGameEventOnDemandArrivalTunnelWorker:
+  Attributes:
+  - Name: pad0x20_3OV0R[0x20]
+    Offset: '0xa8'
+    Size: '0x20'
+    Type: char
+  - Name: VacateOccupiedLocationTimer
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x44_1J6PQ[0x44]
+    Offset: '0xcc'
+    Size: '0x44'
+    Type: char
+  ClassSize: '0x68'
+  FullSize: '0x110'
+  InheritedSize: '0xa8'
+  Super: GameEventOnDemandArrivalTunnelWorkerBase
+SkellyFortEventOnDemandArrivalTunnelWorker:
+  Attributes:
   - Name: SkellyFortType
-    Offset: '0x90'
+    Offset: '0xc0'
     Size: '0x8'
     Type: class
-  - Name: pad0x50_E4CDL[0x50]
-    Offset: '0x98'
-    Size: '0x50'
+  - Name: pad0x84_QEP29[0x84]
+    Offset: '0xc8'
+    Size: '0x84'
     Type: char
-  ClassSize: '0x60'
-  FullSize: '0xe8'
-  InheritedSize: '0x88'
-  Super: GameEventOnDemandArrivalTunnelWorkerBase
+  - Name: RetryRequestEventFrequency
+    Offset: '0x14c'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x8_HE72V[0x8]
+    Offset: '0x150'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x98'
+  FullSize: '0x158'
+  InheritedSize: '0xc0'
+  Super: IslandBasedGameEventOnDemandArrivalTunnelWorker
+TinySharkGameEventOnDemandArrivalTunnelWorker:
+  Attributes: []
+  ClassSize: '0x10'
+  FullSize: '0x120'
+  InheritedSize: '0x110'
+  Super: SeaBasedGameEventOnDemandArrivalTunnelWorker

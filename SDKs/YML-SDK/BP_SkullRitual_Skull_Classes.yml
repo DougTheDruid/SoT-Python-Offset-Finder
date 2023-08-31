@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_SkullRitual_Skull_C:
   Attributes:
-  - Name: None
+  - Name: trs_briggsys_skull_01_c
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

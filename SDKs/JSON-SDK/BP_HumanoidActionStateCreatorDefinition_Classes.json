@@ -1,15 +1,15 @@
 {
   "BP_HumanoidActionStateCreatorDefinition_C": {
     "Super": "HumanoidActionStateCreatorDefinition",
-    "FullSize": "0xa80",
-    "InheritedSize": "0xa78",
+    "FullSize": "0xaa0",
+    "InheritedSize": "0xa98",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0xa78"
+        "Offset": "0xa98"
       }
     ]
   },

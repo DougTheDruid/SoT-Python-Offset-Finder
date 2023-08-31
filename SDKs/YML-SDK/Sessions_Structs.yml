@@ -107,7 +107,7 @@ CrewSessionMatchmakingFollowedTelemetryEvent:
     Offset: '0x60'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UHEE1[0x4]
+  - Name: pad0x4_X9LZX[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -264,7 +264,7 @@ SessionTemplate:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_C1KNJ[0x3]
+  - Name: pad0x3_BY3RD[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char

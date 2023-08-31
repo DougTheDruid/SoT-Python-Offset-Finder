@@ -1,0 +1,752 @@
+{
+  "BP_SmallShipTemplate_C": {
+    "Super": "Ship",
+    "FullSize": "0x1c58",
+    "InheritedSize": "0x1890",
+    "ClassSize": "0x3c8",
+    "Attributes": [
+      {
+        "Name": "None",
+        "Type": "Struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x1890"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ShipRowboatPersistenceComponent*",
+        "Size": "0x8",
+        "Offset": "0x1898"
+      },
+      {
+        "Name": "None",
+        "Type": "Class HarpoonItemLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x18a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class HarpoonItemLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x18a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class FactionParticleComponent*",
+        "Size": "0x8",
+        "Offset": "0x18b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class FactionParticleComponent*",
+        "Size": "0x8",
+        "Offset": "0x18b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SplashProbeVFXComponent*",
+        "Size": "0x8",
+        "Offset": "0x18c0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SplashProbeVFXComponent*",
+        "Size": "0x8",
+        "Offset": "0x18c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SplashProbeVFXComponent*",
+        "Size": "0x8",
+        "Offset": "0x18d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SplashProbeVFXComponent*",
+        "Size": "0x8",
+        "Offset": "0x18d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SplashProbeVFXComponent*",
+        "Size": "0x8",
+        "Offset": "0x18e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x18e8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x18f0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x18f8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1900"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1908"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1910"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1918"
+      },
+      {
+        "Name": "None",
+        "Type": "Class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x1920"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ShipFactionCustomisation*",
+        "Size": "0x8",
+        "Offset": "0x1928"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1930"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1938"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1940"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1948"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1950"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1958"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1960"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1968"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1970"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1978"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1980"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1988"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1990"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1998"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x19a0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x19a8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x19b0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ShipStorageJettisonComponent*",
+        "Size": "0x8",
+        "Offset": "0x19b8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x19c0"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x19c8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x19d0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x19d8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x19e0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class RatManagerComponent*",
+        "Size": "0x8",
+        "Offset": "0x19e8"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x19f0"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x19f8"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a00"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a08"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a10"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a18"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a20"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a28"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a30"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a38"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a40"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ArrowComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a48"
+      },
+      {
+        "Name": "None",
+        "Type": "BlueprintGeneratedClass None*",
+        "Size": "0x8",
+        "Offset": "0x1a50"
+      },
+      {
+        "Name": "None",
+        "Type": "Class AIRegionComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a58"
+      },
+      {
+        "Name": "None",
+        "Type": "Class NamedPointsComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a60"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a68"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a70"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a78"
+      },
+      {
+        "Name": "None",
+        "Type": "Class EmissaryFlotsamItemSpawnComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a80"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a88"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a90"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1a98"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1aa0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1aa8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ab0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class PetHangoutSpotComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ab8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ac0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ac8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ad0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ad8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ShipTelemetryComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ae0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class RiggingSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ae8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1af0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1af8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b00"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b08"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b10"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b18"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b20"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b28"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b30"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b38"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b40"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b48"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b50"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b58"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b60"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b68"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b70"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b78"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b80"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b88"
+      },
+      {
+        "Name": "None",
+        "Type": "Class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b90"
+      },
+      {
+        "Name": "None",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x1b98"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ba0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1ba8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bb0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TeleportLocationComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bb8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class RiggingSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bc0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bc8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bd0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bd8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1be0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1be8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bf0"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1bf8"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c00"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c08"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c10"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c18"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c20"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c28"
+      },
+      {
+        "Name": "None",
+        "Type": "Class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c30"
+      },
+      {
+        "Name": "None",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1c38"
+      },
+      {
+        "Name": "pad0x7_3BNK5[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1c39"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TimelineComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c40"
+      },
+      {
+        "Name": "None",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1c48"
+      },
+      {
+        "Name": "pad0x7_OBGVS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1c49"
+      },
+      {
+        "Name": "None",
+        "Type": "Class TimelineComponent*",
+        "Size": "0x8",
+        "Offset": "0x1c50"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

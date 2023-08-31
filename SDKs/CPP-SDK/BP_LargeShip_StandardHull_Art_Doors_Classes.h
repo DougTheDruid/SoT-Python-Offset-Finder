@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_LargeShip_StandardHull_Art_Doors_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x3d0(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
 };
 
 

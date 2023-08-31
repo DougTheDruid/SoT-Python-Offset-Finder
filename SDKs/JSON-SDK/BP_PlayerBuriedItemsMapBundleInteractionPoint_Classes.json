@@ -6,43 +6,43 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "PlayerBuriedItemsMapBundleInteraction",
         "Type": "Class PlayerBuriedItemsMapBundleInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "ActionRules",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "Mesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "Token Asset",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "None",
+        "Name": "Show Token Animation Time",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x4_OA3LD[0x4]",
+        "Name": "pad0x4_5N9VI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3ec"
       },
       {
-        "Name": "None",
+        "Name": "Token Material",
         "Type": "Class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x3f0"

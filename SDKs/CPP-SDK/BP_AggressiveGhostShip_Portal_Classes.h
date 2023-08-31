@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_AggressiveGhostShip_Portal_C: public AggressiveGhostShipPortal
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x410(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x418(0x8)
-	Class WwiseEmitterComponent*                                 None;                                              // 0x420(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
-	Class SceneComponent*                                        None;                                              // 0x438(0x8)
-	TArray<class MaterialInstanceDynamic*>                       None;                                              // 0x440(0x10)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x410(0x8)
+	Class ParticleSystemComponent*                               Portal VFX;                                        // 0x418(0x8)
+	Class WwiseEmitterComponent*                                 WwiseEmitter;                                      // 0x420(0x8)
+	Class StaticMeshComponent*                                   Portal;                                            // 0x428(0x8)
+	Class StaticMeshComponent*                                   shroud;                                            // 0x430(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x438(0x8)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x440(0x10)
 };
 
 

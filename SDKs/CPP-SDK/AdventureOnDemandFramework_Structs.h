@@ -11,7 +11,7 @@ struct VoyageHintPopupDescEntry
 {
 public:
 	byte                                                         QuestType;                                         // 0x0(0x1)
-	char                                                         pad0x7_LBEMS[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_HIFNL[0x7];                                 // 0x1(0x7)
 	Class PopUpMessageDesc*                                      HintPopUpMessageDesc;                              // 0x8(0x8)
 };
 
@@ -30,7 +30,7 @@ struct ExtraSpawnDistanceByIslandType
 {
 public:
 	byte                                                         IslandType;                                        // 0x0(0x1)
-	char                                                         pad0x3_WKYRN[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_77OG2[0x3];                                 // 0x1(0x3)
 	float                                                        ExtraSpawnDistance;                                // 0x4(0x4)
 };
 
@@ -58,6 +58,17 @@ public:
 struct OnDemandQuestResumeConditionMetReasonQuestVariable
 {
 public:
+};
+
+
+// Size 0xb8
+struct GameEventOnDemandBannerTextData
+{
+public:
+	TArray<class Class*>                                         GameEventTypes;                                    // 0x0(0x10)
+	Struct FText                                                 OnShipSunkBannerText;                              // 0x10(0x38)
+	Struct FText                                                 OnVoyageCancelledBannerText;                       // 0x48(0x38)
+	Struct FText                                                 OnGameEventCompletedBannerHeaderText;              // 0x80(0x38)
 };
 
 

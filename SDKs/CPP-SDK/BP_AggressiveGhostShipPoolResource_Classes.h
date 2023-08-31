@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_AggressiveGhostShipPoolResource_C: public AggressiveGhostShipPoolResource
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x448(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x448(0x8)
 };
 
 

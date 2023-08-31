@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_ShipAmmoChest_C:
   Attributes:
-  - Name: None
+  - Name: LockMesh
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: CrewLockableComponent
     Offset: '0x4b8'
     Size: '0x8'
     Type: Class CrewLockableComponent*
-  - Name: None
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   ClassSize: '0x18'
   FullSize: '0x4c8'
   InheritedSize: '0x4b0'
-  Super: None
+  Super: BP_AmmoChest_C

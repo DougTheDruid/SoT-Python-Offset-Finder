@@ -18,14 +18,14 @@ BTService_SetBestActionSpotNearTarget:
     Type: Struct BlackboardKeySelector
   - Name: BestActionSpotSelectionCriteria
     Offset: '0xc0'
-    Size: '0x24'
+    Size: '0x2c'
     Type: Struct BestActionSpotSelectionCriteria
-  - Name: pad0x1c_ORQNZ[0x1c]
-    Offset: '0xe4'
+  - Name: pad0x1c_K0KQK[0x1c]
+    Offset: '0xec'
     Size: '0x1c'
     Type: char
-  ClassSize: '0x90'
-  FullSize: '0x100'
+  ClassSize: '0x98'
+  FullSize: '0x108'
   InheritedSize: '0x70'
   Super: BTService
 WhileActionSpotAvailableForPatrolAIGoal:
@@ -42,7 +42,7 @@ WhileActionSpotAvailableForPatrolAIGoal:
     Offset: '0x40'
     Size: '0x8'
     Type: class
-  - Name: pad0x30_PQPSG[0x30]
+  - Name: pad0x30_AM3JR[0x30]
     Offset: '0x48'
     Size: '0x30'
     Type: char
@@ -70,24 +70,24 @@ WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal:
     Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: IgnoredMovementModes
+  - Name: MovementModeFilter
     Offset: '0x40'
-    Size: '0x10'
-    Type: TArray<Byte IgnoredMovementModes>
+    Size: '0x20'
+    Type: Struct AIGoalMovementModeFilter
   - Name: ShouldOnlyActivateWhileDocked
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3L7GH[0x7]
-    Offset: '0x51'
+  - Name: pad0x7_PDPMK[0x7]
+    Offset: '0x61'
     Size: '0x7'
     Type: char
   - Name: TargetPlayerPawn
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x8'
     Type: Class Pawn*
-  ClassSize: '0x28'
-  FullSize: '0x60'
+  ClassSize: '0x38'
+  FullSize: '0x70'
   InheritedSize: '0x38'
   Super: AIGoal
 WhilePlayerWithinAreaAIGoal:
@@ -100,23 +100,23 @@ WhilePlayerWithinAreaAIGoal:
     Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: IgnoredMovementModes
+  - Name: MovementModeFilter
     Offset: '0x40'
-    Size: '0x10'
-    Type: TArray<Byte IgnoredMovementModes>
+    Size: '0x20'
+    Type: Struct AIGoalMovementModeFilter
   - Name: WhileActiveActivityType
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x8'
     Type: class
   - Name: TargetPlayerPawn
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x8'
     Type: Class Pawn*
-  - Name: pad0x80_RHHBZ[0x80]
-    Offset: '0x60'
+  - Name: pad0x80_KM9EB[0x80]
+    Offset: '0x70'
     Size: '0x80'
     Type: char
-  ClassSize: '0xa8'
-  FullSize: '0xe0'
+  ClassSize: '0xb8'
+  FullSize: '0xf0'
   InheritedSize: '0x38'
   Super: AIGoal

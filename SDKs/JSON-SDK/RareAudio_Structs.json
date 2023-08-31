@@ -60,29 +60,6 @@
       }
     ]
   },
-  "EventToComponentMapping": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PlayEvent",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StopEvent",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WwiseEmitterComponents",
-        "Type": "TArray<class WwiseEmitterComponent*>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "StaticMeshAudioAssociation": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -116,7 +93,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_W0WMD[0x4]",
+        "Name": "pad0x4_S5ICT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

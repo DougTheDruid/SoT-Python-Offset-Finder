@@ -11,7 +11,7 @@ struct CharacterSocketCollisionResult
 {
 public:
 	bool                                                         HasHit;                                            // 0x0(0x1)
-	char                                                         pad0x3_SVMF5[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_263EJ[0x3];                                 // 0x1(0x3)
 	Struct HitResult                                             HitResult;                                         // 0x4(0x80)
 	Struct Vector                                                SocketVelocity;                                    // 0x84(0xc)
 	Struct Transform                                             SocketTransform;                                   // 0x90(0x30)
@@ -76,7 +76,7 @@ struct AchievementCriteria
 {
 public:
 	Struct PlayerStat                                            PlayerStat;                                        // 0x0(0x4)
-	char                                                         pad0x4_2Z9S8[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_8DTZ4[0x4];                                 // 0x4(0x4)
 	byte                                                         Operator;                                          // 0x10(0x1)
 };
 
@@ -93,7 +93,7 @@ struct FeatureToggledFogBankManagerAsset
 {
 public:
 	Struct FeatureFlag                                           FeatureToggle;                                     // 0x0(0xc)
-	char                                                         pad0x4_XLU39[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_4Y1AD[0x4];                                 // 0xc(0x4)
 	Class FogBankManagerDataAsset*                               Asset;                                             // 0x10(0x8)
 };
 
@@ -149,10 +149,10 @@ struct WeaponProjectileEffectParams
 {
 public:
 	bool                                                         ApplyStun;                                         // 0x0(0x1)
-	char                                                         pad0x3_Q867V[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_CUO6D[0x3];                                 // 0x1(0x3)
 	float                                                        StunDuration;                                      // 0x4(0x4)
 	bool                                                         ApplyKnockback;                                    // 0x8(0x1)
-	char                                                         pad0x3_ORS1M[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_9OBT6[0x3];                                 // 0x9(0x3)
 	Struct KnockBackInfo                                         KnockbackParams;                                   // 0xc(0x50)
 	int                                                          MinimumHitProjectilesForKnockback;                 // 0x5c(0x4)
 	float                                                        MaximumKnockbackDistance;                          // 0x60(0x4)
@@ -173,7 +173,7 @@ public:
 	float                                                        DockedHorizontalVelocity;                          // 0x1c(0x4)
 	float                                                        DockedVerticalVelocity;                            // 0x20(0x4)
 	bool                                                         UseDockedVelocitiesWhenDocked;                     // 0x24(0x1)
-	char                                                         pad0x3_BPYNB[0x3];                                 // 0x25(0x3)
+	char                                                         pad0x3_KPK6T[0x3];                                 // 0x25(0x3)
 	struct FName                                                 RumbleTag;                                         // 0x28(0x8)
 	float                                                        StunDuration;                                      // 0x30(0x4)
 	float                                                        AIKnockbackDistance;                               // 0x34(0x4)
@@ -181,7 +181,7 @@ public:
 	float                                                        AIKnockbackAcceleration;                           // 0x3c(0x4)
 	byte                                                         AIKnockbackStrengthType;                           // 0x40(0x1)
 	bool                                                         UseOverrideLaunchDirection;                        // 0x41(0x1)
-	char                                                         pad0x2_ONS30[0x2];                                 // 0x42(0x2)
+	char                                                         pad0x2_VB01U[0x2];                                 // 0x42(0x2)
 	Struct Vector                                                OverrideLaunchDirectionInWorldSpace;               // 0x44(0xc)
 };
 
@@ -201,7 +201,7 @@ public:
 	Struct LinearColor                                           Color;                                             // 0x20(0x10)
 	class                                                        ProjectileId;                                      // 0x30(0x8)
 	byte                                                         HealthChangeReason;                                // 0x38(0x1)
-	char                                                         pad0x3_Y41D8[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_99HNQ[0x3];                                 // 0x39(0x3)
 	Struct WeaponProjectileEffectParams                          ProjectileEffects;                                 // 0x3c(0x68)
 	int                                                          SuggestedMaxSimulationIterations;                  // 0xa4(0x4)
 	float                                                        SuggestedMinTickTimeSecs;                          // 0xa8(0x4)
@@ -231,12 +231,12 @@ public:
 	float                                                        ProjectileHitScanMaximumRange;                     // 0x60(0x4)
 	float                                                        ProjectileDamage;                                  // 0x64(0x4)
 	float                                                        ProjectileDamageMultiplierAtMaximumRange;          // 0x68(0x4)
-	char                                                         pad0x4_PNBW8[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_EK7MU[0x4];                                 // 0x6c(0x4)
 	class                                                        DamagerType;                                       // 0x70(0x8)
 	class                                                        ProjectileId;                                      // 0x78(0x8)
 	Struct WeaponProjectileParams                                AmmoParams;                                        // 0x80(0xc0)
 	bool                                                         UsesScope;                                         // 0x140(0x1)
-	char                                                         pad0x3_BCVDL[0x3];                                 // 0x141(0x3)
+	char                                                         pad0x3_Y4075[0x3];                                 // 0x141(0x3)
 	float                                                        ZoomedRecoilDurationIncrease;                      // 0x144(0x4)
 	float                                                        SecondsUntilZoomStarts;                            // 0x148(0x4)
 	float                                                        SecondsUntilPostStarts;                            // 0x14c(0x4)
@@ -246,21 +246,21 @@ public:
 	float                                                        TimeoutTolerance;                                  // 0x15c(0x4)
 	float                                                        AimingMoveSpeedScalar;                             // 0x160(0x4)
 	byte                                                         AimSensitivitySettingCategory;                     // 0x164(0x1)
-	char                                                         pad0x3_GR76O[0x3];                                 // 0x165(0x3)
+	char                                                         pad0x3_GMJX4[0x3];                                 // 0x165(0x3)
 	float                                                        InAimFOV;                                          // 0x168(0x4)
 	float                                                        BlendSpeed;                                        // 0x16c(0x4)
 	Class WwiseEvent*                                            DryFireSfx;                                        // 0x170(0x8)
 	Struct AudioEmitterParameters                                AudioEmitterParameters;                            // 0x178(0x10)
 	struct FName                                                 RumbleTag;                                         // 0x188(0x8)
 	bool                                                         KnockbackEnabled;                                  // 0x190(0x1)
-	char                                                         pad0x3_6G5OG[0x3];                                 // 0x191(0x3)
+	char                                                         pad0x3_S7K0X[0x3];                                 // 0x191(0x3)
 	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x194(0x50)
 	bool                                                         StunEnabled;                                       // 0x1e4(0x1)
-	char                                                         pad0x3_5F8XW[0x3];                                 // 0x1e5(0x3)
+	char                                                         pad0x3_UPDCP[0x3];                                 // 0x1e5(0x3)
 	float                                                        StunDuration;                                      // 0x1e8(0x4)
 	Struct Vector                                                TargetingOffset;                                   // 0x1ec(0xc)
 	bool                                                         OverridePlayerCharacterInterpolationConeAngleAndDistanceWhenAiming; // 0x1f8(0x1)
-	char                                                         pad0x3_TZD5T[0x3];                                 // 0x1f9(0x3)
+	char                                                         pad0x3_6K7PR[0x3];                                 // 0x1f9(0x3)
 	float                                                        OverridePlayerCharacterInterpolationConeAngleAndDistanceDuration; // 0x1fc(0x4)
 	float                                                        PlayerCharacterInterpolationConeAngleOverride;     // 0x200(0x4)
 	float                                                        PlayerCharacterInterpolationDistanceOverride;      // 0x204(0x4)
@@ -309,11 +309,11 @@ struct FireRequest
 {
 public:
 	Class Actor*                                                 Instigator;                                        // 0x0(0x8)
-	char                                                         pad0x8_IOLSO[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_A08AN[0x8];                                 // 0x8(0x8)
 	Struct RemoteProjectileAim                                   RemoteAimData;                                     // 0x10(0x60)
 	TArray<struct HitResults>                                    HitResults;                                        // 0x70(0x10)
 	bool                                                         HitResultsAreFromShadowHitScan;                    // 0x80(0x1)
-	char                                                         pad0x7_XNTM9[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_INV52[0x7];                                 // 0x81(0x7)
 	TArray<struct HitActorWorldTransforms>                       HitActorWorldTransforms;                           // 0x88(0x10)
 	Struct Guid                                                  TelemetryAttackId;                                 // 0x98(0x10)
 	int                                                          InaccuracySeed;                                    // 0xa8(0x4)
@@ -336,7 +336,7 @@ struct RemoteProjectileAim
 public:
 	Struct ProjectileAim                                         AimData;                                           // 0x0(0x50)
 	bool                                                         IsRelativeAim;                                     // 0x50(0x1)
-	char                                                         pad0x7_CVIV1[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_Y4S92[0x7];                                 // 0x51(0x7)
 	Struct ProjectileTimeStamp                                   TimeStamp;                                         // 0x58(0x8)
 };
 
@@ -362,7 +362,7 @@ struct AchievementHaveADrinkWithAnotherCrewAtAnOutpost
 {
 public:
 	Class AthenaPlayerCharacter*                                 Character;                                         // 0x0(0x8)
-	char                                                         pad0x10_SLCQD[0x10];                               // 0x8(0x10)
+	char                                                         pad0x10_6MI4R[0x10];                               // 0x8(0x10)
 	float                                                        RangeOfCheckInMetres;                              // 0x18(0x4)
 	float                                                        DrinkConsumedVolumeThreshold;                      // 0x1c(0x4)
 };
@@ -409,87 +409,6 @@ public:
 };
 
 
-// Size 0x18
-struct CloudTypeNormalizedWeight
-{
-public:
-	Struct LinearColor                                           LodScreenPercentages;                              // 0x0(0x10)
-	float                                                        ProbabilityWeight;                                 // 0x10(0x4)
-	float                                                        MeshRadius;                                        // 0x14(0x4)
-};
-
-
-// Size 0x30
-struct CloudTypeDefinition
-{
-public:
-	Class StaticMesh*                                            CloudMesh;                                         // 0x0(0x8)
-	Class StaticMesh*                                            CloudFluffyMesh;                                   // 0x8(0x8)
-	Struct Vector2D                                              ScaleRange;                                        // 0x10(0x8)
-	Struct Vector2D                                              StorminessRange;                                   // 0x18(0x8)
-	float                                                        ProbabilityWeight;                                 // 0x20(0x4)
-	float                                                        OverlapTolerance;                                  // 0x24(0x4)
-	bool                                                         IsStreetCloud;                                     // 0x28(0x1)
-	bool                                                         CastsShadow;                                       // 0x29(0x1)
-};
-
-
-// Size 0x30
-struct RenderedCloudProperties
-{
-public:
-	Struct Vector                                                WorldPosition;                                     // 0x0(0xc)
-	float                                                        Fade;                                              // 0xc(0x4)
-	float                                                        Storminess;                                        // 0x10(0x4)
-	float                                                        RotationYaw;                                       // 0x14(0x4)
-	float                                                        StreetRotationFront;                               // 0x18(0x4)
-	float                                                        StreetRotationBack;                                // 0x1c(0x4)
-	bool                                                         Visible;                                           // 0x20(0x1)
-	bool                                                         FluffVisible;                                      // 0x21(0x1)
-	bool                                                         IsStreetCloud;                                     // 0x22(0x1)
-	bool                                                         UpdatesThisFrame;                                  // 0x23(0x1)
-};
-
-
-// Size 0x24
-struct TiledCloudProperties
-{
-public:
-	Struct Vector2D                                              TilePosition;                                      // 0x0(0x8)
-	int                                                          CloudTypeIndex;                                    // 0x8(0x4)
-	float                                                        RelativeRadius;                                    // 0xc(0x4)
-	float                                                        Scale;                                             // 0x10(0x4)
-	float                                                        PressureThreshold;                                 // 0x14(0x4)
-	float                                                        RotationYaw;                                       // 0x18(0x4)
-	float                                                        OverlapTolerance;                                  // 0x1c(0x4)
-};
-
-
-// Size 0x70
-struct CloudVisualParameters
-{
-public:
-	bool                                                         RenderInMainPass;                                  // 0x0(0x1)
-	char                                                         pad0x3_ZKI2S[0x3];                                 // 0x1(0x3)
-	Struct Vector                                                ScalingVector;                                     // 0x4(0xc)
-	Struct Vector2D                                              BillboardScale;                                    // 0x10(0x8)
-	Struct Vector2D                                              BillboardRandomScale;                              // 0x18(0x8)
-	Struct Vector2D                                              BillboardRearCutOff;                               // 0x20(0x8)
-	Struct Vector2D                                              BillboardForeCutOff;                               // 0x28(0x8)
-	Struct Vector2D                                              BillboardSink;                                     // 0x30(0x8)
-	float                                                        BillboardScaleAlphaDependence;                     // 0x38(0x4)
-	float                                                        BillboardRotationRate;                             // 0x3c(0x4)
-	float                                                        DistanceFadeExponent;                              // 0x40(0x4)
-	float                                                        TurbulenceScale;                                   // 0x44(0x4)
-	float                                                        TurbulenceStrength;                                // 0x48(0x4)
-	float                                                        FluffCullDistance;                                 // 0x4c(0x4)
-	Class MaterialInterface*                                     MaterialTemplatePointCloudSolid;                   // 0x50(0x8)
-	Class MaterialInterface*                                     MaterialTemplatePointCloudFluffy;                  // 0x58(0x8)
-	Class MaterialInterface*                                     MaterialTemplateStreetCloudSolid;                  // 0x60(0x8)
-	Class MaterialInterface*                                     MaterialTemplateStreetCloudFluffy;                 // 0x68(0x8)
-};
-
-
 // Size 0x8
 struct WalkConditionsParams
 {
@@ -519,7 +438,7 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x78
 struct Alliance
 {
 public:
@@ -545,10 +464,10 @@ struct NPCCustomAnimationBlueprintData
 public:
 	bool                                                         SequenceActive;                                    // 0x0(0x1)
 	bool                                                         LoopActive;                                        // 0x1(0x1)
-	char                                                         pad0x2_E7S0S[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_FHBRP[0x2];                                 // 0x2(0x2)
 	int                                                          ActiveSequenceIndex;                               // 0x4(0x4)
 	bool                                                         IsOneShot;                                         // 0x8(0x1)
-	char                                                         pad0x7_10OZP[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_Q8UHF[0x7];                                 // 0x9(0x7)
 	Struct NPCCustomAnimationBlueprintPlayingAnimations          BlueprintPlayingAnimations;                        // 0x10(0x28)
 	Struct NPCCustomAnimationBlueprintPlayingMontage             BlueprintPlayingFacialMontages;                    // 0x38(0x28)
 	byte                                                         CustomAnimationState;                              // 0x60(0x1)
@@ -642,7 +561,7 @@ struct AnimNotifyWwiseObserver
 public:
 	Class WwiseEvent*                                            OnEventPosted;                                     // 0x0(0x8)
 	bool                                                         PreventPlayingPostedEvent;                         // 0x8(0x1)
-	char                                                         pad0x7_K561D[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_P1YUB[0x7];                                 // 0x9(0x7)
 	TArray<class WwiseEvent*>                                    AdditionalEventsToTrigger;                         // 0x10(0x10)
 };
 
@@ -660,14 +579,14 @@ struct AthenaAnimationCustomSkeletonAnimationBlueprintData
 public:
 	bool                                                         SequenceActive;                                    // 0x0(0x1)
 	bool                                                         LoopActive;                                        // 0x1(0x1)
-	char                                                         pad0x2_XU2SM[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_KDAOK[0x2];                                 // 0x2(0x2)
 	int                                                          ActiveSequenceIndex;                               // 0x4(0x4)
 	bool                                                         IsOneShot;                                         // 0x8(0x1)
-	char                                                         pad0x7_WCQWX[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_2XJML[0x7];                                 // 0x9(0x7)
 	Struct SkeletonCustomAnimationBlueprintPlayingAnimations     BlueprintPlayingAnimations;                        // 0x10(0x38)
 	Class NPCHeldObjectData*                                     WieldableCosmeticItemList;                         // 0x48(0x8)
 	byte                                                         CustomAnimationState;                              // 0x50(0x1)
-	char                                                         pad0x3_KTD5N[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_YBLCD[0x3];                                 // 0x51(0x3)
 	float                                                        BlendTime;                                         // 0x54(0x4)
 };
 
@@ -712,7 +631,7 @@ struct AnimationContinuousCycle
 public:
 	Class AnimSequence*                                          In;                                                // 0x0(0x8)
 	float                                                        InEffectTime;                                      // 0x8(0x4)
-	char                                                         pad0x4_66WHD[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_GK0VU[0x4];                                 // 0xc(0x4)
 	TArray<class AnimSequence*>                                  Loop;                                              // 0x10(0x10)
 	Class BlendSpace1D*                                          LoopHitReact;                                      // 0x20(0x8)
 	Class AnimSequence*                                          Out;                                               // 0x28(0x8)
@@ -741,7 +660,7 @@ public:
 	float                                                        HalfWantedMovementSpeed;                           // 0x10(0x4)
 	bool                                                         CharacterMoving;                                   // 0x14(0x1)
 	bool                                                         RunStopWanted;                                     // 0x15(0x1)
-	char                                                         pad0x2_YOPIE[0x2];                                 // 0x16(0x2)
+	char                                                         pad0x2_XU5HI[0x2];                                 // 0x16(0x2)
 	float                                                        TurnRate;                                          // 0x18(0x4)
 	float                                                        CurrentYaw;                                        // 0x1c(0x4)
 	float                                                        CurrentDirection;                                  // 0x20(0x4)
@@ -756,7 +675,7 @@ public:
 	float                                                        TurningAnimationExplicitTime;                      // 0x38(0x4)
 	float                                                        FixedBlendedTurnRateForAI;                         // 0x3c(0x4)
 	bool                                                         IsInAITurn;                                        // 0x40(0x1)
-	char                                                         pad0x17_NFN6O[0x17];                               // 0x41(0x17)
+	char                                                         pad0x17_WQY2P[0x17];                               // 0x41(0x17)
 	Class AthenaAnimationInstance*                               CachedOwner;                                       // 0x58(0x8)
 };
 
@@ -766,7 +685,7 @@ struct AthenaAnimationFishing
 {
 public:
 	bool                                                         AnimationOverride;                                 // 0x0(0x1)
-	char                                                         pad0x3cf_89VR0[0x3cf];                             // 0x1(0x3cf)
+	char                                                         pad0x3cf_OFB9H[0x3cf];                             // 0x1(0x3cf)
 	Class Actor*                                                 FishingRodActor;                                   // 0x3d0(0x8)
 	Class Actor*                                                 FishingFloat;                                      // 0x3d8(0x8)
 	Class AthenaAnimationInstance*                               OwningAnimationInstance;                           // 0x3e0(0x8)
@@ -779,17 +698,17 @@ struct AthenaAnimationFishingParams
 public:
 	byte                                                         FishingState;                                      // 0x0(0x1)
 	bool                                                         InFishing;                                         // 0x1(0x1)
-	char                                                         pad0x2_WZZF0[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_JMZM3[0x2];                                 // 0x2(0x2)
 	Struct Vector2D                                              RodBend;                                           // 0x4(0x8)
 	float                                                        ReelSpeed;                                         // 0xc(0x4)
 	bool                                                         CastFailed;                                        // 0x10(0x1)
 	bool                                                         IsFishHookedAndVisible;                            // 0x11(0x1)
-	char                                                         pad0x2_MOI2O[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_ZXOZT[0x2];                                 // 0x12(0x2)
 	Struct Vector2D                                              PlayerInputForce;                                  // 0x14(0x8)
 	float                                                        TensionShake;                                      // 0x1c(0x4)
 	float                                                        LineSnapShake;                                     // 0x20(0x4)
 	bool                                                         IKIsActive;                                        // 0x24(0x1)
-	char                                                         pad0x3_LTHHL[0x3];                                 // 0x25(0x3)
+	char                                                         pad0x3_VDVYN[0x3];                                 // 0x25(0x3)
 	float                                                        IKBlendInSpeed;                                    // 0x28(0x4)
 	float                                                        IKBlendIOutSpeed;                                  // 0x2c(0x4)
 	bool                                                         IsComedyItem;                                      // 0x30(0x1)
@@ -823,15 +742,15 @@ public:
 	byte                                                         Braking;                                           // 0x14(0x1)
 	bool                                                         BrakingLeftOrBoth;                                 // 0x15(0x1)
 	bool                                                         BrakingRightOrBoth;                                // 0x16(0x1)
-	char                                                         pad0x1_OBL25[0x1];                                 // 0x17(0x1)
+	char                                                         pad0x1_LPN8R[0x1];                                 // 0x17(0x1)
 	int                                                          Direction;                                         // 0x18(0x4)
 	bool                                                         PlayIdle;                                          // 0x1c(0x1)
 	bool                                                         LeftArmInactive;                                   // 0x1d(0x1)
 	bool                                                         RightArmInactive;                                  // 0x1e(0x1)
-	char                                                         pad0x1_XNI45[0x1];                                 // 0x1f(0x1)
+	char                                                         pad0x1_QXUAZ[0x1];                                 // 0x1f(0x1)
 	Struct Vector                                                CameraAdjustment;                                  // 0x20(0xc)
 	bool                                                         IsSeated;                                          // 0x2c(0x1)
-	char                                                         pad0x3_3I3MC[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_AYQCL[0x3];                                 // 0x2d(0x3)
 	Struct AthenaAnimationRowboatAnimationsFirstPerson           RowBoatAnimationsFirstPerson;                      // 0x30(0x30)
 	Struct AthenaAnimationRowboatAnimationsThirdPerson           RowBoatAnimationsThirdPerson;                      // 0x60(0x50)
 	Struct AthenaAnimationRowboatAnimationsPassenger             RowBoatAnimationsPassenger;                        // 0xb0(0x18)
@@ -895,7 +814,7 @@ public:
 	byte                                                         CurrentState;                                      // 0x0(0x1)
 	byte                                                         PreviousState;                                     // 0x1(0x1)
 	bool                                                         ExpectingTransition;                               // 0x2(0x1)
-	char                                                         pad0x5_PADSY[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_HC8CJ[0x5];                                 // 0x3(0x5)
 	class                                                        ContinuousUseInputId;                              // 0x8(0x8)
 	class                                                        OutOfContinuousUseInputId;                         // 0x10(0x8)
 	class                                                        OneShotUseInputId;                                 // 0x18(0x8)
@@ -906,12 +825,12 @@ public:
 	bool                                                         UsePrimaryContinuousAnimations;                    // 0x24(0x1)
 	bool                                                         UsePrimaryContinuousOutOfAnimations;               // 0x25(0x1)
 	bool                                                         UsePrimaryOneShotAnimations;                       // 0x26(0x1)
-	char                                                         pad0x29_8GJJ2[0x29];                               // 0x27(0x29)
+	char                                                         pad0x29_OZLEV[0x29];                               // 0x27(0x29)
 	Class AnimSequence*                                          LastValidAnimSequence;                             // 0x50(0x8)
 	Class BlendSpace1D*                                          LastValidBlendspace;                               // 0x58(0x8)
 	Class Actor*                                                 PreviousWieldedItem;                               // 0x60(0x8)
 	bool                                                         DuplicateTransition;                               // 0x68(0x1)
-	char                                                         pad0x3_D38HB[0x3];                                 // 0x69(0x3)
+	char                                                         pad0x3_SB8N9[0x3];                                 // 0x69(0x3)
 	struct FName                                                 WieldSockets;                                      // 0x6c(0x8)
 };
 
@@ -967,7 +886,7 @@ struct AthenaAnimationSkeletonEmoteActionParams
 public:
 	TArray<struct AllLoadedAIEmoteActionAnimations>              AllLoadedAIEmoteActionAnimations;                  // 0x0(0x10)
 	byte                                                         CurrentEmoteActionState;                           // 0x10(0x1)
-	char                                                         pad0x7_L3OPF[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_M79BU[0x7];                                 // 0x11(0x7)
 	Class AnimSequence*                                          TauntAnimation;                                    // 0x18(0x8)
 	Class AnimSequence*                                          CheerAnimation;                                    // 0x20(0x8)
 	Class AnimSequence*                                          TauntAnimationB;                                   // 0x28(0x8)
@@ -1017,7 +936,7 @@ struct AthenaAnimationSkeletonSensingParams
 public:
 	TArray<struct AllLoadedAISensingAnimations>                  AllLoadedAISensingAnimations;                      // 0x0(0x10)
 	byte                                                         CurrentSensingState;                               // 0x10(0x1)
-	char                                                         pad0x7_DTM03[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_QGPWJ[0x7];                                 // 0x11(0x7)
 	Class AnimSequence*                                          InitialReactionAnimation;                          // 0x18(0x8)
 	Class BlendSpace1D*                                          SearchingAnimation;                                // 0x20(0x8)
 	Class AnimSequence*                                          AlertingOthersAnimation;                           // 0x28(0x8)
@@ -1043,13 +962,13 @@ struct AthenaAnimationAI
 public:
 	bool                                                         SpawnAnimationActive;                              // 0x0(0x1)
 	bool                                                         SpawnAnimationReadyToBegin;                        // 0x1(0x1)
-	char                                                         pad0x6_ES0E1[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_RLQ8P[0x6];                                 // 0x2(0x6)
 	Class AnimSequence*                                          AISpawn;                                           // 0x8(0x8)
 	Class AnimSequence*                                          AIDespawn;                                         // 0x10(0x8)
 	float                                                        AIAnimationSpawnTime;                              // 0x18(0x4)
 	bool                                                         AISpawnOnLand;                                     // 0x1c(0x1)
 	bool                                                         AIFleeActive;                                      // 0x1d(0x1)
-	char                                                         pad0x2_6UP05[0x2];                                 // 0x1e(0x2)
+	char                                                         pad0x2_9CG41[0x2];                                 // 0x1e(0x2)
 	Struct AthenaAnimationSkeletonSensingParams                  AISensing;                                         // 0x20(0x38)
 	Struct AthenaAnimationSkeletonEmoteActionParams              AIEmoteActions;                                    // 0x58(0x38)
 	Struct AthenaAnimationSkeletonShipCaptainParams              SkeletonShipCaptainParams;                         // 0x90(0x60)
@@ -1062,9 +981,9 @@ struct AthenaAnimationAIKnockback
 public:
 	Struct AthenaAnimationSkeletonKnockbackLocomotionStrength    KnockbackAnimations;                               // 0x0(0x20)
 	byte                                                         AIKnockbackDirection;                              // 0x20(0x1)
-	char                                                         pad0x3_2NTOL[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_M7RFM[0x3];                                 // 0x21(0x3)
 	bool                                                         KnockbackActive;                                   // 0x24(0x1)
-	char                                                         pad0x3_J2V5E[0x3];                                 // 0x25(0x3)
+	char                                                         pad0x3_DF387[0x3];                                 // 0x25(0x3)
 	Class AnimSequence*                                          KnockbackAnimToUse;                                // 0x28(0x8)
 };
 
@@ -1109,7 +1028,7 @@ struct AthenaAnimationStunData
 {
 public:
 	byte                                                         StunAnimType;                                      // 0x0(0x1)
-	char                                                         pad0x3_7ECG0[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_373YB[0x3];                                 // 0x1(0x3)
 	bool                                                         IsCursedVariant;                                   // 0x4(0x1)
 };
 
@@ -1130,10 +1049,10 @@ struct AthenaAnimationMountedWeapon
 {
 public:
 	bool                                                         IsFiring;                                          // 0x0(0x1)
-	char                                                         pad0x3_YEPFE[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_IGT9X[0x3];                                 // 0x1(0x3)
 	float                                                        Pitch;                                             // 0x4(0x4)
 	float                                                        Yaw;                                               // 0x8(0x4)
-	char                                                         pad0x4_4EZU3[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_4N8AC[0x4];                                 // 0xc(0x4)
 	Class Actor*                                                 ControlledObject;                                  // 0x10(0x8)
 };
 
@@ -1148,7 +1067,7 @@ public:
 	bool                                                         LoadForClient;                                     // 0x12(0x1)
 	bool                                                         LoadForServer;                                     // 0x13(0x1)
 	struct FName                                                 Feature;                                           // 0x14(0x8)
-	char                                                         pad0x4_X44LY[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_FICUK[0x4];                                 // 0x1c(0x4)
 	TArray<struct AssetsToLoad>                                  AssetsToLoad;                                      // 0x20(0x10)
 	TArray<Assetclass BlueprintsToLoad>                          BlueprintsToLoad;                                  // 0x30(0x10)
 };
@@ -1182,26 +1101,26 @@ public:
 	int                                                          ChapterCount;                                      // 0x4c(0x4)
 	int                                                          ActiveQuestCount;                                  // 0x50(0x4)
 	byte                                                         History;                                           // 0x54(0x1)
-	char                                                         pad0x3_FSWKK[0x3];                                 // 0x55(0x3)
+	char                                                         pad0x3_W2QQK[0x3];                                 // 0x55(0x3)
 	class                                                        Company;                                           // 0x58(0x8)
 	bool                                                         IsEmergent;                                        // 0x60(0x1)
 	bool                                                         IsTale;                                            // 0x61(0x1)
 	byte                                                         EmergentSource;                                    // 0x62(0x1)
 	Struct ViewVoyageBanners                                     ViewVoyageBanners;                                 // 0x63(0x3)
 	bool                                                         DoNotNotifyParticipantsOnVoyageComplete;           // 0x66(0x1)
-	char                                                         pad0x1_2GZLW[0x1];                                 // 0x67(0x1)
+	char                                                         pad0x1_GH1QI[0x1];                                 // 0x67(0x1)
 	int                                                          Rank;                                              // 0x68(0x4)
 	Struct NetActorPtr                                           PlayerStateOfDiscoverer;                           // 0x6c(0x14)
 	bool                                                         IsDiscovererMe;                                    // 0x80(0x1)
-	char                                                         pad0x3_U6B78[0x3];                                 // 0x81(0x3)
+	char                                                         pad0x3_R4K4V[0x3];                                 // 0x81(0x3)
 	struct FName                                                 ChestRarity;                                       // 0x84(0x8)
 	bool                                                         PlayAudio;                                         // 0x8c(0x1)
-	char                                                         pad0x3_AEYTU[0x3];                                 // 0x8d(0x3)
+	char                                                         pad0x3_FBAVQ[0x3];                                 // 0x8d(0x3)
 	int                                                          ChestDiscoveredId;                                 // 0x90(0x4)
-	char                                                         pad0x4_N9QL5[0x4];                                 // 0x94(0x4)
+	char                                                         pad0x4_LUHZO[0x4];                                 // 0x94(0x4)
 	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x98(0x8)
 	int                                                          CollectCratesPopUpId;                              // 0xa0(0x4)
-	char                                                         pad0x4_JYTYM[0x4];                                 // 0xa4(0x4)
+	char                                                         pad0x4_GUIUD[0x4];                                 // 0xa4(0x4)
 	TArray<struct VoyageCompletionStats>                         VoyageCompletionStats;                             // 0xa8(0x10)
 	TArray<struct ReapersMarkCompletionStats>                    ReapersMarkCompletionStats;                        // 0xb8(0x10)
 	TArray<struct VoyageCompletionRewards>                       VoyageCompletionRewards;                           // 0xc8(0x10)
@@ -1270,7 +1189,7 @@ public:
 	float                                                        MaxSwimDepthDragFactor;                            // 0x70(0x4)
 	float                                                        CharacterCentreOffset;                             // 0x74(0x4)
 	byte                                                         WaterDepthTraceQueryType;                          // 0x78(0x1)
-	char                                                         pad0x3_ENO6A[0x3];                                 // 0x79(0x3)
+	char                                                         pad0x3_RBHWG[0x3];                                 // 0x79(0x3)
 	Struct AthenaCharacterSwimSpeed                              SurfaceSwimSpeeds;                                 // 0x7c(0xc)
 	Struct AthenaCharacterSwimSpeed                              UnderwaterSwimSpeeds;                              // 0x88(0xc)
 	float                                                        SurfaceSwimmingDepthWhenEnteredWater;              // 0x94(0x4)
@@ -1413,7 +1332,7 @@ struct DebugReplicatedAbilityData
 {
 public:
 	Struct AIAbilityDebugReplicatedIntervals                     AbilityIntervals;                                  // 0x0(0xc)
-	char                                                         pad0x4_G0VWP[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_4SCCX[0x4];                                 // 0xc(0x4)
 	class                                                        TypeClass;                                         // 0x10(0x8)
 	bool                                                         AbilityInRange;                                    // 0x18(0x1)
 	bool                                                         AbilityDebugBlocked;                               // 0x19(0x1)
@@ -1458,12 +1377,29 @@ public:
 };
 
 
+// Size 0x10
+struct SeaOfThievesOnDemandTreasurePopupConversionTable
+{
+public:
+	TArray<struct Conversions>                                   Conversions;                                       // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct SeaOfThievesOnDemandTreasurePopupConversionPair
+{
+public:
+	Struct StringAssetReference                                  From;                                              // 0x0(0x10)
+	Struct StringAssetReference                                  To;                                                // 0x10(0x10)
+};
+
+
 // Size 0x38
 struct DigSurfaceTypeParams
 {
 public:
 	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	char                                                         pad0x7_ISS6A[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_5HZXN[0x7];                                 // 0x1(0x7)
 	Struct DigEventFxParams                                      EnterGroundFx;                                     // 0x8(0x18)
 	Struct DigEventFxParams                                      LeaveGroundFx;                                     // 0x20(0x18)
 };
@@ -1475,7 +1411,7 @@ struct DigEventFxParams
 public:
 	Class Object*                                                Particles;                                         // 0x0(0x8)
 	bool                                                         bAttachParticlesToShovel;                          // 0x8(0x1)
-	char                                                         pad0x7_KHUUU[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_J2HMA[0x7];                                 // 0x9(0x7)
 	Class ForceFeedbackEffect*                                   Rumble;                                            // 0x10(0x8)
 };
 
@@ -1485,7 +1421,7 @@ struct SurfaceDigHole
 {
 public:
 	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	char                                                         pad0x7_VSQ3G[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_XD9WV[0x7];                                 // 0x1(0x7)
 	class                                                        DigHoleClass;                                      // 0x8(0x8)
 	float                                                        DigAINoiseRange;                                   // 0x10(0x4)
 };
@@ -1498,21 +1434,21 @@ public:
 	Struct ShovelSurfaceDigType                                  DigSurfaceDigType;                                 // 0x0(0x10)
 	byte                                                         SandSurfaceType;                                   // 0x10(0x1)
 	byte                                                         WetSandSurfaceType;                                // 0x11(0x1)
-	char                                                         pad0x2_TIWAH[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_FJZ4S[0x2];                                 // 0x12(0x2)
 	float                                                        MaxHeightDifferenceToNotBeConsideredWetSand;       // 0x14(0x4)
 	Struct Vector                                                DigPosOffsetFromPlayerPos;                         // 0x18(0xc)
 	float                                                        SurfaceTypeRaycastLength;                          // 0x24(0x4)
 	float                                                        MaxSurfaceAngleForDig;                             // 0x28(0x4)
 	float                                                        InitialSphereCastRadiusForSuccessfulDig;           // 0x2c(0x4)
 	byte                                                         ItemProxyCollisionChannel;                         // 0x30(0x1)
-	char                                                         pad0x3_JYJK8[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_J8ZJQ[0x3];                                 // 0x31(0x3)
 	float                                                        SphereRadiusForItemProxySweep;                     // 0x34(0x4)
 	float                                                        RequiredObstacleFreeRadiusForSuccessfulDig;        // 0x38(0x4)
 	float                                                        ObstacleCheckStartOffsetZFromSphereTestPos;        // 0x3c(0x4)
 	int                                                          NumSamplesForBlockingSurfacesTest;                 // 0x40(0x4)
 	float                                                        MaxWaterDepthToStartSuccessfulDig;                 // 0x44(0x4)
 	byte                                                         HitTestTraceChannel;                               // 0x48(0x1)
-	char                                                         pad0x3_LOZKY[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_Y94U7[0x3];                                 // 0x49(0x3)
 	float                                                        MinPlanarTestRadius;                               // 0x4c(0x4)
 	int                                                          NumSamplesForPlanarityTest;                        // 0x50(0x4)
 	float                                                        MaxBumpinessForPlanarityTestInCm;                  // 0x54(0x4)
@@ -1594,7 +1530,7 @@ public:
 	float                                                        MinSpawnDepth;                                     // 0x18(0x4)
 	float                                                        SpawnHalfConeAngleRestrictIfSpawningForPlayer;     // 0x1c(0x4)
 	byte                                                         HitTestTraceChannel;                               // 0x20(0x1)
-	char                                                         pad0x3_HMCFU[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_FTF4Q[0x3];                                 // 0x21(0x3)
 	float                                                        AssumedMermaidRadius;                              // 0x24(0x4)
 	float                                                        MinDistanceOfFinalSpawnPosToAnyActiveMermaid;      // 0x28(0x4)
 	float                                                        MinDistanceOfFinalSpawnPosToAnyActiveMermaidWhenNearEnemyShip; // 0x2c(0x4)
@@ -1751,7 +1687,7 @@ struct ContestTimerData
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
-	char                                                         pad0x4_0WV6O[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_L38YB[0x4];                                 // 0x4(0x4)
 	Struct FString                                               ServicesConfigRetrievalString;                     // 0x8(0x10)
 };
 
@@ -1761,7 +1697,7 @@ struct EmergentContestVoyageRecipe
 {
 public:
 	bool                                                         IsSharableVoyage;                                  // 0x150(0x1)
-	char                                                         pad0x7_AP8B7[0x7];                                 // 0x151(0x7)
+	char                                                         pad0x7_REKTD[0x7];                                 // 0x151(0x7)
 	Struct ContestZoneDistribution                               WeightedContestZonesToActivate;                    // 0x158(0x10)
 	Struct ContestTimerData                                      ContestVoyageTime;                                 // 0x168(0x18)
 	Struct StringClassReference                                  ScoreSystemToLoad;                                 // 0x180(0x10)
@@ -1778,11 +1714,11 @@ public:
 	TArray<struct QuestPools>                                    QuestPools;                                        // 0xd0(0x10)
 	bool                                                         UseFixedFinalQuestPool;                            // 0xe0(0x1)
 	bool                                                         RandomiseChapters;                                 // 0xe1(0x1)
-	char                                                         pad0x6_QXYE7[0x6];                                 // 0xe2(0x6)
+	char                                                         pad0x6_TEZJY[0x6];                                 // 0xe2(0x6)
 	Struct QuestPoolParams                                       FixedFinalQuestPool;                               // 0xe8(0x30)
 	bool                                                         DoNotNotifyParticipantsOnVoyageComplete;           // 0x118(0x1)
 	bool                                                         DoNotNotifyParticipantsOnQuestsReceived;           // 0x119(0x1)
-	char                                                         pad0x6_KRMGR[0x6];                                 // 0x11a(0x6)
+	char                                                         pad0x6_FV1XJ[0x6];                                 // 0x11a(0x6)
 	TArray<struct CompletionStats>                               CompletionStats;                                   // 0x120(0x10)
 	TArray<struct ReapersMarkCompletionStats>                    ReapersMarkCompletionStats;                        // 0x130(0x10)
 	TArray<struct VoyageCompletionRewards>                       VoyageCompletionRewards;                           // 0x140(0x10)
@@ -1794,13 +1730,13 @@ struct QuestPoolParams
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_F9297[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_SSJ4I[0x4];                                 // 0x4(0x4)
 	TArray<struct Quests>                                        Quests;                                            // 0x8(0x10)
 	TArray<struct Location>                                      Location;                                          // 0x18(0x10)
 	bool                                                         ChainLocations;                                    // 0x28(0x1)
 	bool                                                         AllowRepeatIslandsWithinQuest;                     // 0x29(0x1)
 	bool                                                         LimitTimesCanBeSelected;                           // 0x2a(0x1)
-	char                                                         pad0x1_KNC9N[0x1];                                 // 0x2b(0x1)
+	char                                                         pad0x1_AYQ30[0x1];                                 // 0x2b(0x1)
 	int                                                          MaxTimesCanBeSelected;                             // 0x2c(0x4)
 };
 
@@ -1810,7 +1746,7 @@ struct WeightedVoyageLocationParams
 {
 public:
 	byte                                                         Filter;                                            // 0x0(0x1)
-	char                                                         pad0x3_RXXHF[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_RS71K[0x3];                                 // 0x1(0x3)
 	float                                                        Weight;                                            // 0x4(0x4)
 	TArray<struct Locations>                                     Locations;                                         // 0x8(0x10)
 };
@@ -1821,9 +1757,9 @@ struct VoyageLocationParams
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_8OY8Z[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_WSGN4[0x3];                                 // 0x1(0x3)
 	Struct VoyageLocationFixedParams                             Fixed;                                             // 0x4(0x8)
-	char                                                         pad0x4_V1EBF[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_54Y4F[0x4];                                 // 0xc(0x4)
 	Struct VoyageLocationRandomParams                            Random;                                            // 0x10(0x48)
 };
 
@@ -1839,13 +1775,14 @@ public:
 	bool                                                         Outpost;                                           // 0x4(0x1)
 	bool                                                         Fort;                                              // 0x5(0x1)
 	bool                                                         SeaPost;                                           // 0x6(0x1)
-	bool                                                         HasLandmarks;                                      // 0x7(0x1)
-	bool                                                         OnlyNamedIslands;                                  // 0x8(0x1)
-	char                                                         pad0x7_KHOP3[0x7];                                 // 0x9(0x7)
+	bool                                                         HasWashedUpItemLocations;                          // 0x7(0x1)
+	bool                                                         HasLandmarks;                                      // 0x8(0x1)
+	bool                                                         OnlyNamedIslands;                                  // 0x9(0x1)
+	char                                                         pad0x6_U3ZF2[0x6];                                 // 0xa(0x6)
 	Class VoyageLocationOnlyNamedIslandListDataAsset*            OnlyNamedIslandsListDataAsset;                     // 0x10(0x8)
 	TArray<class Class*>                                         Seas;                                              // 0x18(0x10)
 	bool                                                         WithinDistance;                                    // 0x28(0x1)
-	char                                                         pad0x3_8C6VY[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_MDO8V[0x3];                                 // 0x29(0x3)
 	Struct VoyageLocationDistance                                Distance;                                          // 0x2c(0x8)
 };
 
@@ -1867,33 +1804,33 @@ public:
 };
 
 
-// Size 0x460
+// Size 0x470
 struct WeightedQuestParams
 {
 public:
 	TArray<Byte LocationFilters>                                 LocationFilters;                                   // 0x0(0x10)
 	float                                                        Weight;                                            // 0x10(0x4)
-	char                                                         pad0x4_FXBMD[0x4];                                 // 0x14(0x4)
-	Struct QuestParams                                           Params;                                            // 0x18(0x448)
+	char                                                         pad0x4_1GX2E[0x4];                                 // 0x14(0x4)
+	Struct QuestParams                                           Params;                                            // 0x18(0x458)
 };
 
 
-// Size 0x448
+// Size 0x458
 struct QuestParams
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x7_LO15W[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_6JAMW[0x7];                                 // 0x1(0x7)
 	Struct XMarksTheSpotQuestParams                              XMarksTheSpot;                                     // 0x8(0x88)
 	Struct RiddleQuestParams                                     Riddle;                                            // 0x90(0x40)
-	Struct BountyQuestParams                                     Bounty;                                            // 0xd0(0x180)
-	Struct MerchantQuestParams                                   Merchant;                                          // 0x250(0xd8)
-	Struct CargoRunQuestParams                                   CargoRun;                                          // 0x328(0xc8)
-	Struct TaleQuestParams                                       Tale;                                              // 0x3f0(0x50)
-	Struct MatchmakingQuestParams                                Matchmake;                                         // 0x440(0x1)
-	Struct StagingQuestParams                                    Staging;                                           // 0x441(0x1)
-	Struct EmergantVoyageQuestParams                             EmergantVoyage;                                    // 0x442(0x1)
-	Struct RewardQuestParams                                     Reward;                                            // 0x443(0x1)
+	Struct BountyQuestParams                                     Bounty;                                            // 0xd0(0x190)
+	Struct MerchantQuestParams                                   Merchant;                                          // 0x260(0xd8)
+	Struct CargoRunQuestParams                                   CargoRun;                                          // 0x338(0xc8)
+	Struct TaleQuestParams                                       Tale;                                              // 0x400(0x50)
+	Struct MatchmakingQuestParams                                Matchmake;                                         // 0x450(0x1)
+	Struct StagingQuestParams                                    Staging;                                           // 0x451(0x1)
+	Struct EmergantVoyageQuestParams                             EmergantVoyage;                                    // 0x452(0x1)
+	Struct RewardQuestParams                                     Reward;                                            // 0x453(0x1)
 };
 
 
@@ -1949,7 +1886,7 @@ struct WeightedTreasureChestDesc
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
 	struct FName                                                 Feature;                                           // 0x4(0x8)
-	char                                                         pad0x4_A6E3M[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_0Y8ZR[0x4];                                 // 0xc(0x4)
 	class                                                        Desc;                                              // 0x10(0x8)
 };
 
@@ -1959,7 +1896,7 @@ struct CargoRunQuestParams
 {
 public:
 	bool                                                         IsCargoRunQuestV2;                                 // 0x30(0x1)
-	char                                                         pad0x7_0LSJD[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_EX91H[0x7];                                 // 0x31(0x7)
 	Struct WeightedProbabilityRange                              NumberOfRequiredItems;                             // 0x38(0x20)
 	Struct WeightedProbabilityRangeOfRanges                      TimeLimitInMinutes;                                // 0x58(0x30)
 	Class CargoRunQuestRandomRequiredItemsDataAsset*             RequiredItemsDataAsset;                            // 0x88(0x8)
@@ -1987,7 +1924,7 @@ struct MerchantQuestParams
 {
 public:
 	bool                                                         IsMerchantQuestV2;                                 // 0x30(0x1)
-	char                                                         pad0x7_R57F9[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_942DP[0x7];                                 // 0x31(0x7)
 	TArray<Byte IslandTypes>                                     IslandTypes;                                       // 0x38(0x10)
 	Struct WeightedProbabilityRange                              NumberOfRequiredItems;                             // 0x48(0x20)
 	Struct WeightedProbabilityRangeOfRanges                      TimeLimitInMinutes;                                // 0x68(0x30)
@@ -2011,12 +1948,15 @@ public:
 };
 
 
-// Size 0x180
+// Size 0x190
 struct BountyQuestParams
 {
 public:
-	Class AIBountySpawner*                                       Spawner;                                           // 0x30(0x8)
-	Struct BountyQuestRandomSpawnGeneratorParams                 BountyQuestRandomSpawnGeneratorParams;             // 0x38(0x148)
+	bool                                                         ConvertFinalCaptainToSkeletonLord;                 // 0x30(0x1)
+	char                                                         pad0x7_DTFB1[0x7];                                 // 0x31(0x7)
+	Class BountyQuestSkeletonLordInfoData*                       SkeletonLordInfoData;                              // 0x38(0x8)
+	Class AIBountySpawner*                                       Spawner;                                           // 0x40(0x8)
+	Struct BountyQuestRandomSpawnGeneratorParams                 BountyQuestRandomSpawnGeneratorParams;             // 0x48(0x148)
 };
 
 
@@ -2032,7 +1972,7 @@ public:
 	int                                                          MinFormsPerEncounter;                              // 0x58(0x4)
 	int                                                          MaxFormsPerEncounter;                              // 0x5c(0x4)
 	bool                                                         AllowMultipleFormsPerWave;                         // 0x60(0x1)
-	char                                                         pad0x7_KEXAJ[0x7];                                 // 0x61(0x7)
+	char                                                         pad0x7_H2I5X[0x7];                                 // 0x61(0x7)
 	Struct WeightedProbabilityRange                              FormsPerWave;                                      // 0x68(0x20)
 	int                                                          MinVarietiesPerEncounter;                          // 0x88(0x4)
 	int                                                          MaxVarietiesPerEncounter;                          // 0x8c(0x4)
@@ -2044,7 +1984,7 @@ public:
 	Struct WeightedProbabilityRange                              WaveSplitChance;                                   // 0xc0(0x20)
 	TArray<Float WaveSuicideTime>                                WaveSuicideTime;                                   // 0xe0(0x10)
 	float                                                        WaveSuicideMinDist;                                // 0xf0(0x4)
-	char                                                         pad0x4_I8CEK[0x4];                                 // 0xf4(0x4)
+	char                                                         pad0x4_WGJZZ[0x4];                                 // 0xf4(0x4)
 	Class AIEncounterGenerationRecipeRankOrderList*              Recipes;                                           // 0xf8(0x8)
 	Struct WeightedProbabilityRange                              NumberOfTargetsTotal;                              // 0x100(0x20)
 	Struct WeightedProbabilityRange                              NumberOfTargetsWhichAreCaptains;                   // 0x120(0x20)
@@ -2080,7 +2020,7 @@ public:
 	byte                                                         PoolSelectionMethod;                               // 0x0(0x1)
 	byte                                                         LocationSelectionMethod;                           // 0x1(0x1)
 	bool                                                         UseChapterBasedVoyageHistory;                      // 0x2(0x1)
-	char                                                         pad0x1_NWUES[0x1];                                 // 0x3(0x1)
+	char                                                         pad0x1_CCS8E[0x1];                                 // 0x3(0x1)
 	int                                                          MaxNumberOfPoolRetries;                            // 0x4(0x4)
 };
 
@@ -2090,7 +2030,7 @@ struct QuestDistributionParams
 {
 public:
 	byte                                                         Method;                                            // 0x0(0x1)
-	char                                                         pad0x7_UUWD4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_W6KJA[0x7];                                 // 0x1(0x7)
 	Struct QuestDistributionAllAtOnceParams                      AllAtOnce;                                         // 0x8(0x40)
 	Struct QuestDistributionPerChapterParams                     PerChapter;                                        // 0x48(0x68)
 	Struct QuestDistributionFixedChaptersParams                  FixedChapters;                                     // 0xb0(0x18)
@@ -2102,7 +2042,7 @@ struct QuestDistributionFixedChaptersParams
 {
 public:
 	bool                                                         UseProceduralQuestRewards;                         // 0x0(0x1)
-	char                                                         pad0x3_VGBZW[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_8LL3G[0x3];                                 // 0x1(0x3)
 	int                                                          NumChapters;                                       // 0x4(0x4)
 	TArray<struct Chapters>                                      Chapters;                                          // 0x8(0x10)
 };
@@ -2113,7 +2053,7 @@ struct ChapterDataEntry
 {
 public:
 	int                                                          NumQuests;                                         // 0x0(0x4)
-	char                                                         pad0x4_WYRSZ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_YJW0Z[0x4];                                 // 0x4(0x4)
 	Class VoyageRewardDataAsset*                                 PerChapterRewardAsset;                             // 0x8(0x8)
 };
 
@@ -2123,7 +2063,7 @@ struct QuestDistributionPerChapterParams
 {
 public:
 	int                                                          MinNumChapters;                                    // 0x0(0x4)
-	char                                                         pad0x4_RG818[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_OOGEO[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRange                              NumQuests;                                         // 0x8(0x20)
 	Struct WeightedProbabilityRange                              NumQuestsInFirstChapter;                           // 0x28(0x20)
 	Struct WeightedProbabilityRange                              NumQuestsInOtherChapters;                          // 0x48(0x20)
@@ -2209,7 +2149,7 @@ struct EventPlayerCharacterInPuzzleVaultChanged
 {
 public:
 	bool                                                         IsInPuzzleVault;                                   // 0x0(0x1)
-	char                                                         pad0x3_R56CH[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_T3QVI[0x3];                                 // 0x1(0x3)
 	float                                                        CurrentWaterLevel;                                 // 0x4(0x4)
 };
 
@@ -2229,7 +2169,7 @@ struct EventAnimationShopInteraction
 public:
 	bool                                                         Active;                                            // 0x0(0x1)
 	byte                                                         Type;                                              // 0x1(0x1)
-	char                                                         pad0x6_HXLCN[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_TS0F1[0x6];                                 // 0x2(0x6)
 	Class Actor*                                                 Interactor;                                        // 0x8(0x8)
 };
 
@@ -2434,7 +2374,7 @@ struct RefreshRateTelemetryFragment
 {
 public:
 	bool                                                         Supports120Hz;                                     // 0x0(0x1)
-	char                                                         pad0x3_EZ4LM[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_8SPRQ[0x3];                                 // 0x1(0x3)
 };
 
 
@@ -2525,7 +2465,7 @@ struct MemoryDataTelemetryFragment
 public:
 	TArray<struct TableInfo>                                     TableInfo;                                         // 0xd0(0x10)
 	int                                                          HighMemoryThresholdPercentage;                     // 0x118(0x4)
-	char                                                         pad0x4_CYPNW[0x4];                                 // 0x11c(0x4)
+	char                                                         pad0x4_IVXG5[0x4];                                 // 0x11c(0x4)
 };
 
 
@@ -2568,8 +2508,8 @@ public:
 	struct FName                                                 CrewFactionName;                                   // 0x38(0x8)
 	byte                                                         ReapersMarkLevel;                                  // 0x40(0x1)
 	byte                                                         EmissaryLevel;                                     // 0x41(0x1)
-	bool                                                         IsContestShip;                                     // 0x42(0x1)
-	char                                                         pad0x5_2LENL[0x5];                                 // 0x43(0x5)
+	bool                                                         IsMaxGradedGuildShip;                              // 0x42(0x1)
+	char                                                         pad0x5_KUGZL[0x5];                                 // 0x43(0x5)
 	Class Texture*                                               CrewLiveryOverlayIcon;                             // 0x48(0x8)
 	bool                                                         IsReapersTrackedShip;                              // 0x50(0x1)
 	bool                                                         IsInTunnel;                                        // 0x51(0x1)
@@ -2600,7 +2540,7 @@ struct CanvasWorldMapReaperTrackedBootItemIcon
 {
 public:
 	byte                                                         BootyItemType;                                     // 0x0(0x1)
-	char                                                         pad0x7_2SJ8E[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_FMZ3D[0x7];                                 // 0x1(0x7)
 	Class Texture*                                               Texture;                                           // 0x8(0x8)
 };
 
@@ -2684,7 +2624,7 @@ struct VoyageProposalDescViewModel
 public:
 	Struct FString                                               ProposalDesc;                                      // 0x100(0x10)
 	byte                                                         State;                                             // 0x110(0x1)
-	char                                                         pad0x3_SHNE5[0x3];                                 // 0x111(0x3)
+	char                                                         pad0x3_36HJX[0x3];                                 // 0x111(0x3)
 	int                                                          VoyageIndex;                                       // 0x114(0x4)
 };
 
@@ -2700,7 +2640,7 @@ public:
 	Struct FString                                               IconUrl;                                           // 0xb8(0x10)
 	int                                                          RumouredHaulMin;                                   // 0xc8(0x4)
 	bool                                                         Locked;                                            // 0xcc(0x1)
-	char                                                         pad0x3_ZIST3[0x3];                                 // 0xcd(0x3)
+	char                                                         pad0x3_CITPR[0x3];                                 // 0xcd(0x3)
 	Struct FString                                               Category;                                          // 0xd0(0x10)
 	Struct FString                                               PreviewImageUrl;                                   // 0xe0(0x10)
 	Struct FString                                               ThumbnailImageUrl;                                 // 0xf0(0x10)
@@ -2759,7 +2699,7 @@ public:
 	Struct StringAssetReference                                  VoyageDescAssetString;                             // 0x8(0x10)
 	Struct Vector2D                                              WorldPos;                                          // 0x18(0x8)
 	bool                                                         IsActive;                                          // 0x20(0x1)
-	char                                                         pad0x3_2MINJ[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_VY8HP[0x3];                                 // 0x21(0x3)
 	Struct Guid                                                  EventID;                                           // 0x24(0x10)
 };
 
@@ -2793,7 +2733,7 @@ struct AthenaWorldSettingsGameEventSchedulerSettingsConfiguration
 public:
 	struct FName                                                 FeatureFlag;                                       // 0x0(0x8)
 	byte                                                         RequiredPlayMode;                                  // 0x8(0x1)
-	char                                                         pad0x7_WV9FZ[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_IOFEM[0x7];                                 // 0x9(0x7)
 	Class GameEventSchedulerSettingsAsset*                       EventSchedulerSettings;                            // 0x10(0x8)
 };
 
@@ -2803,7 +2743,7 @@ struct HoopData
 {
 public:
 	float                                                        HoopRadius;                                        // 0x0(0x4)
-	char                                                         pad0x4_QPKHX[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_55GTC[0x4];                                 // 0x4(0x4)
 	TArray<struct EventIcons>                                    EventIcons;                                        // 0x8(0x10)
 };
 
@@ -2912,7 +2852,7 @@ struct BeaconLitWithFlameOfFateStatsToFire
 {
 public:
 	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_K9T3Z[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_9I6UP[0x7];                                 // 0x1(0x7)
 	TArray<struct StatsToFire>                                   StatsToFire;                                       // 0x8(0x10)
 };
 
@@ -3016,7 +2956,7 @@ public:
 	float                                                        Scale;                                             // 0x1c(0x4)
 	bool                                                         CutoutTextStyle;                                   // 0x20(0x1)
 	bool                                                         ShouldStrikethroughOnStart;                        // 0x21(0x1)
-	char                                                         pad0x2_LDB84[0x2];                                 // 0x22(0x2)
+	char                                                         pad0x2_WFAGY[0x2];                                 // 0x22(0x2)
 	float                                                        StrikethroughThickness;                            // 0x24(0x4)
 	float                                                        StrikethroughOffset;                               // 0x28(0x4)
 	Struct LinearColor                                           StrikethroughColor;                                // 0x2c(0x10)
@@ -3030,7 +2970,7 @@ public:
 	Struct Vector2D                                              Position;                                          // 0x0(0x8)
 	byte                                                         HorizontalAlignment;                               // 0x8(0x1)
 	byte                                                         VerticalAlignment;                                 // 0x9(0x1)
-	char                                                         pad0x2_KTKGD[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_QAGRR[0x2];                                 // 0xa(0x2)
 	float                                                        Angle;                                             // 0xc(0x4)
 	float                                                        Width;                                             // 0x10(0x4)
 	float                                                        Opacity;                                           // 0x14(0x4)
@@ -3072,24 +3012,34 @@ public:
 	Class MaybeCompressedCanvasRenderTarget2D*                   RightSpreadLeftPageRenderTarget;                   // 0x30(0x8)
 	Class MaybeCompressedCanvasRenderTarget2D*                   RightSpreadRightPageRenderTarget;                  // 0x38(0x8)
 	Class QuestBookPageLayout*                                   LeftSpreadLeftPageContents;                        // 0x40(0x8)
-	char                                                         pad0x10_4W8TL[0x10];                               // 0x48(0x10)
+	char                                                         pad0x10_HF341[0x10];                               // 0x48(0x10)
 	Class QuestBookPageLayout*                                   LeftSpreadRightPageContents;                       // 0x58(0x8)
-	char                                                         pad0x10_JJ3MO[0x10];                               // 0x60(0x10)
+	char                                                         pad0x10_5YKW9[0x10];                               // 0x60(0x10)
 	Class QuestBookPageLayout*                                   RightSpreadLeftPageContents;                       // 0x70(0x8)
-	char                                                         pad0x10_H434L[0x10];                               // 0x78(0x10)
+	char                                                         pad0x10_J4IB0[0x10];                               // 0x78(0x10)
 	Class QuestBookPageLayout*                                   RightSpreadRightPageContents;                      // 0x88(0x8)
 };
 
 
-// Size 0x18
+// Size 0x28
 struct PageReference
 {
 public:
 	Struct StringAssetReference                                  PageReference;                                     // 0x0(0x10)
 	byte                                                         NumberOfPages;                                     // 0x10(0x1)
 	bool                                                         IsSkippable;                                       // 0x11(0x1)
-	char                                                         pad0x2_GOX2I[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_CHYNC[0x2];                                 // 0x12(0x2)
 	int                                                          Priority;                                          // 0x14(0x4)
+	TArray<struct CultureOverrides>                              CultureOverrides;                                  // 0x18(0x10)
+};
+
+
+// Size 0x20
+struct PageCultureOverride
+{
+public:
+	Struct FString                                               Culture;                                           // 0x0(0x10)
+	Struct StringAssetReference                                  PageReference;                                     // 0x10(0x10)
 };
 
 
@@ -3098,7 +3048,7 @@ struct QuestBookRepInfo
 {
 public:
 	int                                                          LeftPageIndex;                                     // 0x0(0x4)
-	char                                                         pad0x4_EGDG6[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MY3QZ[0x4];                                 // 0x4(0x4)
 	TArray<Int CurrentBookContents>                              CurrentBookContents;                               // 0x8(0x10)
 	TArray<struct ProcPageList>                                  ProcPageList;                                      // 0x18(0x10)
 };
@@ -3275,7 +3225,7 @@ struct ShipCurseFXData
 {
 public:
 	byte                                                         ShipCurseTag;                                      // 0x0(0x1)
-	char                                                         pad0x7_U1LWR[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_GSGGS[0x7];                                 // 0x1(0x7)
 	TArray<struct VFXTemplates>                                  VFXTemplates;                                      // 0x8(0x10)
 	Struct ShipCurseAudioLoop                                    AudioLoop;                                         // 0x18(0x18)
 };
@@ -3328,7 +3278,7 @@ struct EventCurseWheelLock
 {
 public:
 	byte                                                         CurseTag;                                          // 0x0(0x1)
-	char                                                         pad0x3_KRKGV[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_E1A63[0x3];                                 // 0x1(0x3)
 	float                                                        AngleThreshold;                                    // 0x4(0x4)
 };
 
@@ -3387,7 +3337,7 @@ struct EventEnableInteractionPoints
 public:
 	byte                                                         ShipCurseTag;                                      // 0x0(0x1)
 	byte                                                         CurseTag;                                          // 0x1(0x1)
-	char                                                         pad0x6_XY2LQ[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_XIF5G[0x6];                                 // 0x2(0x6)
 	TArray<class Class*>                                         InteractionPointsToEnable;                         // 0x8(0x10)
 };
 
@@ -3398,7 +3348,7 @@ struct EventDisableInteractionPoints
 public:
 	byte                                                         ShipCurseTag;                                      // 0x0(0x1)
 	byte                                                         CurseTag;                                          // 0x1(0x1)
-	char                                                         pad0x6_3PQGS[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_OBPBW[0x6];                                 // 0x2(0x6)
 	TArray<class Class*>                                         InteractionPointsToDisable;                        // 0x8(0x10)
 };
 
@@ -3485,7 +3435,7 @@ struct BucketContentsInfo
 {
 public:
 	byte                                                         ThrowableLiquidType;                               // 0x0(0x1)
-	char                                                         pad0x7_96UZS[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_2SAQH[0x7];                                 // 0x1(0x7)
 	class                                                        ProjectileClassToSpawn;                            // 0x8(0x8)
 	class                                                        ProjectileClassToSpawnAtWielder;                   // 0x10(0x8)
 	Class WwiseEvent*                                            ThrowSfx;                                          // 0x18(0x8)
@@ -3519,7 +3469,7 @@ struct LocationGeneratorSample
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_DPTN3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_KNOYD[0x3];                                 // 0x1(0x3)
 	Struct Vector                                                Location;                                          // 0x4(0xc)
 	Struct Vector                                                Normal;                                            // 0x10(0xc)
 };
@@ -3541,6 +3491,13 @@ public:
 	Class Object*                                                MuzzleFlashVfxFirstPerson;                         // 0x0(0x8)
 	Class Object*                                                MuzzleFlashVfxThirdPerson;                         // 0x8(0x8)
 	Class WwiseEvent*                                            FireSfx;                                           // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct AdditionalMarkerData
+{
+public:
 };
 
 
@@ -3621,7 +3578,7 @@ struct RepairableAuthoritiveRepairState
 {
 public:
 	byte                                                         RepairableState;                                   // 0x0(0x1)
-	char                                                         pad0x7_B7CCJ[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_32WO1[0x7];                                 // 0x1(0x7)
 	TArray<Weakclass RepairingList>                              RepairingList;                                     // 0x8(0x10)
 };
 
@@ -3640,7 +3597,7 @@ struct FeatureToggledCargoRunCrateCustomData
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
-	char                                                         pad0x4_R6H68[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_62QOM[0x4];                                 // 0xc(0x4)
 	Class CargoRunCrateCustomData*                               Data;                                              // 0x10(0x8)
 };
 
@@ -3701,12 +3658,12 @@ public:
 	int                                                          Seed;                                              // 0x0(0x4)
 	byte                                                         Gender;                                            // 0x4(0x1)
 	byte                                                         Ethnicity;                                         // 0x5(0x1)
-	char                                                         pad0x2_C8G8X[0x2];                                 // 0x6(0x2)
+	char                                                         pad0x2_QOZWM[0x2];                                 // 0x6(0x2)
 	float                                                        Age;                                               // 0x8(0x4)
 	Struct RadialCoordinate                                      BodyShape;                                         // 0xc(0x8)
 	float                                                        Dirtiness;                                         // 0x14(0x4)
 	float                                                        Wonkiness;                                         // 0x18(0x4)
-	char                                                         pad0x4_JG69N[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_LCY32[0x4];                                 // 0x1c(0x4)
 	TArray<class Class*>                                         Outfit;                                            // 0x20(0x10)
 };
 
@@ -3719,7 +3676,7 @@ public:
 	int                                                          MinNumOfEachEthnicity;                             // 0x4(0x4)
 	TArray<struct Groups>                                        Groups;                                            // 0x8(0x10)
 	Struct CarouselPirateGroup                                   Default;                                           // 0x18(0x6c)
-	char                                                         pad0x4_EM697[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_6JYDJ[0x4];                                 // 0x84(0x4)
 	Struct CarouselPirateClothing                                MaleClothing;                                      // 0x88(0x20)
 	Struct CarouselPirateClothing                                FemaleClothing;                                    // 0xa8(0x20)
 };
@@ -3853,15 +3810,15 @@ struct PlayerMusicController
 {
 public:
 	Class PlayerMusicControllerParams*                           PlayerMusicParams;                                 // 0x0(0x8)
-	char                                                         pad0x30_7ML4N[0x30];                               // 0x8(0x30)
+	char                                                         pad0x30_U9MZP[0x30];                               // 0x8(0x30)
 	Class Actor*                                                 LocalPlayerActor;                                  // 0x38(0x8)
 	Class PlayerOceanAudioComponent*                             PlayerOceanAudioComponent;                         // 0x40(0x8)
 	Class PlayerAtmosphericsAudioComponent*                      AtmosphericsAudioComponent;                        // 0x48(0x8)
 	Class AthenaPlayerCharacter*                                 AthenaPlayerCharacter;                             // 0x50(0x8)
 	Class AthenaWorldSettings*                                   AthenaWorldSettings;                               // 0x58(0x8)
-	char                                                         pad0x160_LAL8S[0x160];                             // 0x60(0x160)
+	char                                                         pad0x160_GJ0FG[0x160];                             // 0x60(0x160)
 	Struct TimeStampedInvasionMusicState                         TimeStampedInvaderMatchmakingState;                // 0x1c0(0x18)
-	char                                                         pad0x10_GU4C8[0x10];                               // 0x1d8(0x10)
+	char                                                         pad0x10_WHT1L[0x10];                               // 0x1d8(0x10)
 	TArray<struct RelevantAudioStingShips>                       RelevantAudioStingShips;                           // 0x1e8(0x10)
 	TArray<struct AudioStingShipsSpottedRecently>                AudioStingShipsSpottedRecently;                    // 0x1f8(0x10)
 };
@@ -3910,7 +3867,7 @@ struct FogTypeToAudio
 {
 public:
 	byte                                                         FogBankType;                                       // 0x0(0x1)
-	char                                                         pad0x7_KPOVC[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_CW4UP[0x7];                                 // 0x1(0x7)
 	Class WwiseEvent*                                            FogMusicPlayEvent;                                 // 0x8(0x8)
 	Class WwiseEvent*                                            FogMusicStopEvent;                                 // 0x10(0x8)
 };
@@ -3929,7 +3886,7 @@ struct HealthChangeAudio
 {
 public:
 	byte                                                         Reason;                                            // 0x0(0x1)
-	char                                                         pad0x7_2WPXI[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_JEH5B[0x7];                                 // 0x1(0x7)
 	Class WwiseEvent*                                            Sfx;                                               // 0x8(0x8)
 };
 
@@ -3971,7 +3928,7 @@ struct CharacterFootImpactResult
 public:
 	Struct HitResult                                             HitResult;                                         // 0x0(0x80)
 	byte                                                         FootImpactType;                                    // 0x80(0x1)
-	char                                                         pad0xf_SK6U3[0xf];                                 // 0x81(0xf)
+	char                                                         pad0xf_ZXOGQ[0xf];                                 // 0x81(0xf)
 	Struct Transform                                             SocketTransform;                                   // 0x90(0x30)
 	Struct Vector                                                SocketVelocity;                                    // 0xc0(0xc)
 	int                                                          FootIndex;                                         // 0xcc(0x4)
@@ -3985,11 +3942,11 @@ public:
 	struct FName                                                 SocketName;                                        // 0x0(0x8)
 	Class SkeletalMeshComponent*                                 SkeletalMeshComponent;                             // 0x8(0x8)
 	byte                                                         TraceType;                                         // 0x10(0x1)
-	char                                                         pad0x3_3IRN0[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_KVU34[0x3];                                 // 0x11(0x3)
 	float                                                        TraceDistance;                                     // 0x14(0x4)
 	float                                                        TraceOffset;                                       // 0x18(0x4)
 	byte                                                         ResultType;                                        // 0x1c(0x1)
-	char                                                         pad0x3_QNDKL[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_1VTZJ[0x3];                                 // 0x1d(0x3)
 	int                                                          FootIndex;                                         // 0x20(0x4)
 };
 
@@ -4020,7 +3977,7 @@ struct ChestOfRageReplicatedData
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x3_K03KZ[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_PBBHJ[0x3];                                 // 0x1(0x3)
 	float                                                        RageValue;                                         // 0x4(0x4)
 	bool                                                         HasBeenActivated;                                  // 0x8(0x1)
 };
@@ -4039,7 +3996,7 @@ struct ChestOfRageDamageTableEntry
 {
 public:
 	byte                                                         Reason;                                            // 0x0(0x1)
-	char                                                         pad0x3_5HIF3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_SSNJA[0x3];                                 // 0x1(0x3)
 	float                                                        TimeToAdd;                                         // 0x4(0x4)
 };
 
@@ -4067,53 +4024,6 @@ struct ClothingLoadoutContainer
 public:
 	Struct ClothingLoadout                                       Loadout;                                           // 0x0(0x10)
 	bool                                                         HasBeenSet;                                        // 0x10(0x1)
-};
-
-
-// Size 0x28
-struct CloudWeatherParameters
-{
-public:
-	Struct Vector2D                                              DefaultCloudVelocity;                              // 0x0(0x8)
-	Class MaterialParameterCollection*                           AtmosphericMaterialParams;                         // 0x8(0x8)
-	float                                                        GlobalAtmosphericPressure;                         // 0x10(0x4)
-	float                                                        AtmosphericPressureThresholdSize;                  // 0x14(0x4)
-	float                                                        MaxWindDelayLength;                                // 0x18(0x4)
-	float                                                        WindSpeedMultiplier;                               // 0x1c(0x4)
-	bool                                                         UsesGlobalWindService;                             // 0x20(0x1)
-	bool                                                         UsesPressureZones;                                 // 0x20(0x1)
-	bool                                                         CloudsCastShadows;                                 // 0x20(0x1)
-	bool                                                         PressureIsControlledByParameterCollection;         // 0x20(0x1)
-};
-
-
-// Size 0x20
-struct CloudTileParameters
-{
-public:
-	TArray<struct Meshes>                                        Meshes;                                            // 0x0(0x10)
-	int                                                          Samples;                                           // 0x10(0x4)
-	int                                                          Seed;                                              // 0x14(0x4)
-	float                                                        MeshScaleMultiplier;                               // 0x18(0x4)
-	bool                                                         ShouldCloudTileBeGenerated;                        // 0x1c(0x1)
-};
-
-
-// Size 0x28
-struct CloudDomeParameters
-{
-public:
-	float                                                        Width;                                             // 0x0(0x4)
-	float                                                        DomeToTileProportion;                              // 0x4(0x4)
-	float                                                        Height;                                            // 0x8(0x4)
-	float                                                        HighPressureExtraHeight;                           // 0xc(0x4)
-	float                                                        FadeProportion;                                    // 0x10(0x4)
-	float                                                        DistanceCurvatureOvershoot;                        // 0x14(0x4)
-	float                                                        DistantStreetCloudRotation;                        // 0x18(0x4)
-	float                                                        ProportionOfCloudDomeToAlwaysUpdate;               // 0x1c(0x4)
-	int                                                          SplitRemainingCloudsOverThisManyUpdates;           // 0x20(0x4)
-	bool                                                         UpdateClosestProportionEveryOtherFrame;            // 0x24(0x1)
-	bool                                                         EnableDistanceCurvature;                           // 0x25(0x1)
 };
 
 
@@ -4163,7 +4073,7 @@ public:
 	Struct FString                                               Body;                                              // 0x10(0x10)
 	bool                                                         ShouldEncrypt;                                     // 0x20(0x1)
 	bool                                                         ShouldAuthorize;                                   // 0x21(0x1)
-	char                                                         pad0x6_GF99R[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_UUICY[0x6];                                 // 0x22(0x6)
 	Struct FString                                               Method;                                            // 0x28(0x10)
 	Struct FString                                               Id;                                                // 0x88(0x10)
 };
@@ -4174,7 +4084,7 @@ struct HttpClientComponentResponseEvent
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x7_4ROVX[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_Q3RZM[0x7];                                 // 0x1(0x7)
 	Struct FString                                               Body;                                              // 0x8(0x10)
 	Struct FString                                               Id;                                                // 0x18(0x10)
 };
@@ -4364,7 +4274,7 @@ struct HealthUI
 public:
 	float                                                        MinVisibleHealth;                                  // 0x0(0x4)
 	float                                                        ContinuousTimePerUpdate;                           // 0x4(0x4)
-	char                                                         pad0x18_QU6XD[0x18];                               // 0x8(0x18)
+	char                                                         pad0x18_HI8YW[0x18];                               // 0x8(0x18)
 	Class Pawn*                                                  TargetPawn;                                        // 0x20(0x8)
 };
 
@@ -4391,7 +4301,7 @@ struct CompanyShopInfo
 {
 public:
 	bool                                                         ShouldShowCompanyInfo;                             // 0x0(0x1)
-	char                                                         pad0x7_KGY8E[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_LF3R0[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  InfoSkin;                                          // 0x8(0x10)
 	Struct FText                                                 InfoTitle;                                         // 0x18(0x38)
 	TArray<struct FText>                                         InfoTips;                                          // 0x50(0x10)
@@ -4411,20 +4321,20 @@ public:
 struct CompanySkin
 {
 public:
-	Struct StringAssetReference                                  BackgroundImage;                                   // 0x0(0x10)
-	Struct StringAssetReference                                  SeaOfThievesOnDemandBackgroundImage;               // 0x10(0x10)
-	Struct StringAssetReference                                  RibbonImage;                                       // 0x20(0x10)
-	byte                                                         Style;                                             // 0x30(0x1)
-	char                                                         pad0x7_SRMWO[0x7];                                 // 0x31(0x7)
-	Struct FString                                               RankIncreaseAudioCue;                              // 0x38(0x10)
-	Struct FString                                               RankIncreaseStopAudioCue;                          // 0x48(0x10)
-	Struct FString                                               RankLevelUpAudioCue;                               // 0x58(0x10)
-	Struct FString                                               RankTriggerAudioCue;                               // 0x68(0x10)
-	Struct FString                                               EmissaryRankIncreaseAudioCue;                      // 0x78(0x10)
-	Struct FString                                               EmissaryRankIncreaseStopAudioCue;                  // 0x88(0x10)
-	Struct FString                                               EmissaryRankLevelUpAudioCue;                       // 0x98(0x10)
-	Struct FString                                               EmissaryRankTriggerAudioCue;                       // 0xa8(0x10)
-	Struct FString                                               EmissaryRankLevelUpMusicCue;                       // 0xb8(0x10)
+	Struct StringAssetReference                                  RibbonImage;                                       // 0x0(0x10)
+	byte                                                         Style;                                             // 0x10(0x1)
+	char                                                         pad0x7_ZI4GG[0x7];                                 // 0x11(0x7)
+	Struct FString                                               RankIncreaseAudioCue;                              // 0x18(0x10)
+	Struct FString                                               RankIncreaseStopAudioCue;                          // 0x28(0x10)
+	Struct FString                                               RankLevelUpAudioCue;                               // 0x38(0x10)
+	Struct FString                                               RankTriggerAudioCue;                               // 0x48(0x10)
+	Struct FString                                               EmissaryRankIncreaseAudioCue;                      // 0x58(0x10)
+	Struct FString                                               EmissaryRankIncreaseStopAudioCue;                  // 0x68(0x10)
+	Struct FString                                               EmissaryRankLevelUpAudioCue;                       // 0x78(0x10)
+	Struct FString                                               EmissaryRankTriggerAudioCue;                       // 0x88(0x10)
+	Struct FString                                               EmissaryRankLevelUpMusicCue;                       // 0x98(0x10)
+	Struct StringAssetReference                                  BackgroundImage;                                   // 0xa8(0x10)
+	Struct StringAssetReference                                  SeaOfThievesOnDemandBackgroundImage;               // 0xb8(0x10)
 };
 
 
@@ -4458,7 +4368,7 @@ struct CompanyReputationProgressModel
 public:
 	struct FName                                                 CompanyId;                                         // 0x0(0x8)
 	Struct CompanyLevelDefinition                                NextCompanyLevel;                                  // 0x14(0x8)
-	char                                                         pad0x4_PHMP4[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_D64Z4[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               Sig;                                               // 0x20(0x10)
 };
 
@@ -4516,6 +4426,34 @@ struct AssociatedCompanies
 public:
 	class                                                        Company;                                           // 0x0(0x8)
 	struct FName                                                 FeatureToggle;                                     // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct FeatureToggledPremiumCatalog
+{
+public:
+	Struct FeatureFlag                                           FeatureToggle;                                     // 0x0(0xc)
+	char                                                         pad0x4_I6NPC[0x4];                                 // 0xc(0x4)
+	Class PremiumCatalogDataAsset*                               PremiumCatalog;                                    // 0x10(0x8)
+};
+
+
+// Size 0x20
+struct CatalogDescTab
+{
+public:
+	Struct StringAssetReference                                  FilterIcon;                                        // 0x0(0x10)
+	Class CatalogDataAsset*                                      Catalog;                                           // 0x10(0x8)
+	Struct ShopCatalogDesc                                       CatalogData;                                       // 0x18(0x1)
+};
+
+
+// Size 0x1
+struct ShopCatalogDesc
+{
+public:
+	byte                                                         CurrencyType;                                      // 0x0(0x1)
 };
 
 
@@ -4596,9 +4534,9 @@ public:
 	TArray<struct FText>                                         Names;                                             // 0x30(0x10)
 	class                                                        ShipSize;                                          // 0x40(0x8)
 	bool                                                         AvailableToGame;                                   // 0x48(0x1)
-	char                                                         pad0x3_GI4GA[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_V35R3[0x3];                                 // 0x49(0x3)
 	struct FName                                                 FeatureName;                                       // 0x4c(0x8)
-	char                                                         pad0x4_5RYTI[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_6ASNR[0x4];                                 // 0x54(0x4)
 	Struct FText                                                 ShipTeamName;                                      // 0x58(0x38)
 	Struct FText                                                 ArenaCrewWelcomeMessage;                           // 0x90(0x38)
 	Struct FText                                                 ShipUINotificationTeamName;                        // 0xc8(0x38)
@@ -4646,7 +4584,7 @@ public:
 	Struct FText                                                 NPCName;                                           // 0x8(0x38)
 	Struct FText                                                 NPCMessageToAllPlayers;                            // 0x40(0x38)
 	float                                                        Duration;                                          // 0x78(0x4)
-	char                                                         pad0x4_DBYEE[0x4];                                 // 0x7c(0x4)
+	char                                                         pad0x4_BOH96[0x4];                                 // 0x7c(0x4)
 	TArray<Byte SpecialEvents>                                   SpecialEvents;                                     // 0x80(0x10)
 	TArray<class WwiseEvent*>                                    AudioEvents;                                       // 0x90(0x10)
 };
@@ -4694,7 +4632,7 @@ struct ContestCrewRequirementData
 {
 public:
 	int                                                          CrewCount;                                         // 0x0(0x4)
-	char                                                         pad0x4_LLFYS[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_IRIMZ[0x4];                                 // 0x4(0x4)
 	Struct FString                                               CrewCountServicesConfigRetrievalString;            // 0x8(0x10)
 	TArray<struct OpenCrewRequirementData>                       OpenCrewRequirementData;                           // 0x18(0x10)
 };
@@ -4706,7 +4644,7 @@ struct ShipSizeRequirementData
 public:
 	class                                                        ShipSize;                                          // 0x0(0x8)
 	int                                                          OpenCrewMemberCount;                               // 0x8(0x4)
-	char                                                         pad0x4_TUOH2[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_4G3H0[0x4];                                 // 0xc(0x4)
 	Struct FString                                               OpenCrewCountRetrivalString;                       // 0x10(0x10)
 };
 
@@ -4819,7 +4757,7 @@ public:
 	Struct FString                                               XUID;                                              // 0x0(0x10)
 	Struct FString                                               GamerTag;                                          // 0x10(0x10)
 	byte                                                         Muted;                                             // 0x20(0x1)
-	char                                                         pad0x7_6U3S8[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_HOR9A[0x7];                                 // 0x21(0x7)
 	Struct FString                                               CrewIcon;                                          // 0x28(0x10)
 };
 
@@ -4876,7 +4814,7 @@ struct ContestEndEvent
 {
 public:
 	int                                                          Position;                                          // 0x0(0x4)
-	char                                                         pad0x4_FCW55[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_D1QB9[0x4];                                 // 0x4(0x4)
 	Struct FString                                               Message;                                           // 0x8(0x10)
 	TArray<struct Scores>                                        Scores;                                            // 0x18(0x10)
 	float                                                        HoldDuration;                                      // 0x28(0x4)
@@ -4950,7 +4888,7 @@ struct ContestLeaderboardEntry
 public:
 	Struct FString                                               CrewIconPath;                                      // 0x10(0x10)
 	bool                                                         IsMyCrew;                                          // 0x20(0x1)
-	char                                                         pad0x3_PLFWI[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_J7XBB[0x3];                                 // 0x21(0x3)
 	int                                                          Amount;                                            // 0x24(0x4)
 	Struct FString                                               DisplayAmount;                                     // 0x28(0x10)
 };
@@ -4961,10 +4899,10 @@ struct ScoreGrantedNotificationUIEvent
 {
 public:
 	byte                                                         ScoreId;                                           // 0x0(0x1)
-	char                                                         pad0x7_V62H8[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_6TD03[0x7];                                 // 0x1(0x7)
 	Struct FString                                               DisplayAmount;                                     // 0x8(0x10)
 	int                                                          Amount;                                            // 0x18(0x4)
-	char                                                         pad0x4_P1Q56[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_QRAFY[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               ScoringIconPath;                                   // 0x20(0x10)
 };
 
@@ -5051,9 +4989,9 @@ public:
 	bool                                                         ShouldDockToTargetActor;                           // 0x64(0x1)
 	bool                                                         RequiresBoxCollider;                               // 0x65(0x1)
 	bool                                                         RequiresKnockback;                                 // 0x66(0x1)
-	char                                                         pad0x1_F8T79[0x1];                                 // 0x67(0x1)
+	char                                                         pad0x1_T5Z91[0x1];                                 // 0x67(0x1)
 	Struct Vector                                                BoxExtents;                                        // 0x68(0xc)
-	char                                                         pad0xc_PHYWY[0xc];                                 // 0x74(0xc)
+	char                                                         pad0xc_XY84I[0xc];                                 // 0x74(0xc)
 	Struct Transform                                             BoxOffset;                                         // 0x80(0x30)
 };
 
@@ -5086,10 +5024,11 @@ public:
 	Class VoyageProposalDesc*                                    TemplateProposalDesc;                              // 0x8(0x8)
 	Class VoyageRecipeDataAsset*                                 VoyageRecipe;                                      // 0x10(0x8)
 	int                                                          Rank;                                              // 0x18(0x4)
-	char                                                         pad0x4_NASRX[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_U9HY1[0x4];                                 // 0x1c(0x4)
 	Class AthenaPlayerState*                                     ProposingPlayerState;                              // 0x20(0x8)
 	bool                                                         VoyageIsShipEntitlement;                           // 0x28(0x1)
 	bool                                                         WantDiveToTunnel;                                  // 0x29(0x1)
+	bool                                                         PendingDeferredTunnelCancellation;                 // 0x2a(0x1)
 };
 
 
@@ -5135,7 +5074,7 @@ public:
 	bool                                                         DetectingPlayers;                                  // 0xa8(0x1)
 	bool                                                         DetectingShips;                                    // 0xa9(0x1)
 	bool                                                         DetectingEnemies;                                  // 0xaa(0x1)
-	char                                                         pad0x5_S0T82[0x5];                                 // 0xab(0x5)
+	char                                                         pad0x5_ZOMA3[0x5];                                 // 0xab(0x5)
 	Class TriggerCollisionHelper*                                CollisionHelper;                                   // 0xb0(0x8)
 };
 
@@ -5182,12 +5121,12 @@ public:
 	float                                                        UndoRepairTime;                                    // 0x8(0x4)
 	float                                                        NonOwningCrewUndoRepairTime;                       // 0xc(0x4)
 	Class MaterialInterface*                                     HoleDecalMaterial;                                 // 0x10(0x8)
-	char                                                         pad0x8_HCWKA[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_3KM0O[0x8];                                 // 0x18(0x8)
 	Struct Transform                                             HoleDecalComponentTransform;                       // 0x20(0x30)
 	Struct Vector                                                ParticleSystemComponentLocation;                   // 0x50(0xc)
 	float                                                        InternalWaterSamplePositionTopOffset;              // 0x5c(0x4)
 	float                                                        InternalWaterSamplePositionBottomOffset;           // 0x60(0x4)
-	char                                                         pad0x4_PLKPO[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_2HY0N[0x4];                                 // 0x64(0x4)
 	Class ParticleSystem*                                        ParticleSystem_WaterLeakAboveWater;                // 0x68(0x8)
 	Class ParticleSystem*                                        ParticleSystem_WaterLeakBelowWater;                // 0x70(0x8)
 	Class ParticleSystem*                                        ParticleSystem_RepairLeakAboveWater;               // 0x78(0x8)
@@ -5201,7 +5140,7 @@ struct AuthorityRepairableState
 {
 public:
 	byte                                                         RepairableState;                                   // 0x0(0x1)
-	char                                                         pad0x7_MTJIT[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_YNSI7[0x7];                                 // 0x1(0x7)
 	TArray<Weakclass RepairingList>                              RepairingList;                                     // 0x8(0x10)
 };
 
@@ -5302,7 +5241,7 @@ struct DrunkennessSetupData
 {
 public:
 	byte                                                         DrunkennessType;                                   // 0x0(0x1)
-	char                                                         pad0x3_ZL844[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_VPXJK[0x3];                                 // 0x1(0x3)
 	float                                                        MaxDrunkenness;                                    // 0x4(0x4)
 	float                                                        GettingDrunkDrunkennessChangePerSec;               // 0x8(0x4)
 	float                                                        SoberingUpDrunkennessChangePerSec;                 // 0xc(0x4)
@@ -5373,7 +5312,7 @@ struct EntitlementItem
 public:
 	Struct FText                                                 Description;                                       // 0x0(0x38)
 	bool                                                         Owned;                                             // 0x38(0x1)
-	char                                                         pad0x7_FVHP2[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_SMO5E[0x7];                                 // 0x39(0x7)
 	Struct StringAssetReference                                  PreviewImageUrl;                                   // 0x40(0x10)
 	Struct StringAssetReference                                  ThumbnailImageUrl;                                 // 0x50(0x10)
 	Struct FText                                                 DisplayName;                                       // 0x60(0x38)
@@ -5395,7 +5334,7 @@ struct RequiredClothingData
 {
 public:
 	int                                                          RequiredNumberToMatch;                             // 0x0(0x4)
-	char                                                         pad0x4_WUM1M[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_YYEJB[0x4];                                 // 0x4(0x4)
 	TArray<class Class*>                                         RequiredClothing;                                  // 0x8(0x10)
 };
 
@@ -5405,7 +5344,7 @@ struct ItemRequirementData
 {
 public:
 	int                                                          RequiredNumberToMatch;                             // 0x0(0x4)
-	char                                                         pad0x4_HDJM3[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_TBXL0[0x4];                                 // 0x4(0x4)
 	TArray<class Class*>                                         RequiredItemsInLoadout;                            // 0x8(0x10)
 };
 
@@ -5454,7 +5393,7 @@ struct ShipHullDamageTypeEntry
 {
 public:
 	byte                                                         DamageType;                                        // 0x0(0x1)
-	char                                                         pad0x7_TB8T2[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_E0GYL[0x7];                                 // 0x1(0x7)
 	Struct ShipHullLandscapeDamageEntry                          LandscapeDamageParams;                             // 0x8(0x30)
 	Struct ShipHullRammingSpurDamageEntry                        RammingSpurDamageParams;                           // 0x38(0x10)
 };
@@ -5486,7 +5425,7 @@ struct ShipHullLandscapeDamageEntry
 {
 public:
 	byte                                                         PhysicalSurface;                                   // 0x0(0x1)
-	char                                                         pad0x7_E51Z5[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_VMLO4[0x7];                                 // 0x1(0x7)
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x8(0x8)
 	Struct Int32Range                                            NumZonesToDamage;                                  // 0x10(0x10)
 	Struct Int32Range                                            DamageLevel;                                       // 0x20(0x10)
@@ -5546,7 +5485,7 @@ struct FlameOfFateEffectParams
 {
 public:
 	bool                                                         ShouldAffectShadowFormAI;                          // 0x0(0x1)
-	char                                                         pad0x3_SLGM0[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_GBN7N[0x3];                                 // 0x1(0x3)
 	float                                                        FlameOfFateEffectRadiusIdle;                       // 0x4(0x4)
 	float                                                        FlameOfFateEffectRadiusActive;                     // 0x8(0x4)
 };
@@ -5557,13 +5496,13 @@ struct CycleFlameOfFateParams
 {
 public:
 	bool                                                         IncludeCycleFlameOfFateOneShotResponse;            // 0x0(0x1)
-	char                                                         pad0x7_AIX68[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_SQ5UV[0x7];                                 // 0x1(0x7)
 	class                                                        OneShotResponseNotificationInputId;                // 0x8(0x8)
 	bool                                                         IncludeCycleFlameOfFateActionRule;                 // 0x10(0x1)
-	char                                                         pad0x7_RLNLL[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_Z23KW[0x7];                                 // 0x11(0x7)
 	class                                                        ActionRuleNotificationInputId;                     // 0x18(0x8)
 	byte                                                         ActionRulePriority;                                // 0x20(0x1)
-	char                                                         pad0x7_8T7F2[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_E8UDW[0x7];                                 // 0x21(0x7)
 	Struct FText                                                 CycleFlameOfFateActionRuleVerbiage;                // 0x28(0x38)
 	Struct CycleFlameOfFateSequence                              FlameOfFateSequence;                               // 0x60(0x18)
 };
@@ -5574,10 +5513,10 @@ struct TakeFlameOfFateParams
 {
 public:
 	bool                                                         IncludeTakeFlameOfFateActionRule;                  // 0x0(0x1)
-	char                                                         pad0x7_QWYPW[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_6DDBV[0x7];                                 // 0x1(0x7)
 	class                                                        ActionRuleNotificationInputId;                     // 0x8(0x8)
 	byte                                                         ActionRulePriority;                                // 0x10(0x1)
-	char                                                         pad0x7_BI6PG[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_ONUIR[0x7];                                 // 0x11(0x7)
 	Struct FText                                                 TakeFlameOfFateTooltipText;                        // 0x18(0x38)
 	Struct FText                                                 LanternNotRaisedToolTipText;                       // 0x50(0x38)
 	Struct FText                                                 NotWieldingFlameTooltipText;                       // 0x88(0x38)
@@ -5616,12 +5555,12 @@ struct FlamesOfFateFlameInfo
 {
 public:
 	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x3_3ZFHS[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_6SLHK[0x3];                                 // 0x1(0x3)
 	Struct Color                                                 LightColour;                                       // 0x4(0x4)
 	Struct Color                                                 FXColour;                                          // 0x8(0x4)
 	Struct Color                                                 GlowColour;                                        // 0xc(0x4)
 	Struct Color                                                 FlameColour;                                       // 0x10(0x4)
-	char                                                         pad0x4_4YH22[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_E5Z5D[0x4];                                 // 0x14(0x4)
 	Class Texture*                                               FlameTexture;                                      // 0x18(0x8)
 	Struct PlayerStat                                            StatToFireWhenTaken;                               // 0x20(0x4)
 	Struct PlayerStat                                            StatToFireWhenTakenInAlliance;                     // 0x24(0x4)
@@ -5645,7 +5584,7 @@ struct FeatureToggledFogBankAsset
 {
 public:
 	Struct FeatureFlag                                           FeatureToggle;                                     // 0x0(0xc)
-	char                                                         pad0x4_6LBNW[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_OX2CQ[0x4];                                 // 0xc(0x4)
 	Class FogBankDataAsset*                                      Asset;                                             // 0x10(0x8)
 };
 
@@ -5655,7 +5594,7 @@ struct FogBankSettings
 {
 public:
 	byte                                                         FogState;                                          // 0x0(0x1)
-	char                                                         pad0x3_FMDD0[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_2KOZ1[0x3];                                 // 0x1(0x3)
 	float                                                        Density;                                           // 0x4(0x4)
 	Struct Vector                                                Scale;                                             // 0x8(0xc)
 	Struct LinearColor                                           FogColour;                                         // 0x14(0x10)
@@ -5663,7 +5602,7 @@ public:
 	float                                                        ActiveDuration;                                    // 0x28(0x4)
 	float                                                        FadeOutDuration;                                   // 0x2c(0x4)
 	bool                                                         Persistent;                                        // 0x30(0x1)
-	char                                                         pad0x3_0LDX2[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_BJ27T[0x3];                                 // 0x31(0x3)
 	float                                                        PreviousDensity;                                   // 0x34(0x4)
 	Struct LinearColor                                           PreviousFogColour;                                 // 0x38(0x10)
 	float                                                        MaximumAudioFogIntensityRTPC;                      // 0x48(0x4)
@@ -5693,7 +5632,7 @@ struct FogBankManagerIslandTypesToKeepAwayFrom
 {
 public:
 	byte                                                         IslandType;                                        // 0x0(0x1)
-	char                                                         pad0x3_J15FI[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_1Y9C3[0x3];                                 // 0x1(0x3)
 	float                                                        MinimumDistanceFromIslandInKm;                     // 0x4(0x4)
 };
 
@@ -5703,7 +5642,7 @@ struct FogBankManagerFogBankTemplate
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_5YXL0[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_H1ON1[0x4];                                 // 0x4(0x4)
 	TArray<class Class*>                                         FogBanks;                                          // 0x8(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      DistanceFromIslandInKm;                            // 0x18(0x30)
 };
@@ -5714,7 +5653,7 @@ struct FragileComponentHealthScalarEntry
 {
 public:
 	byte                                                         HealthChangedReason;                               // 0x0(0x1)
-	char                                                         pad0x3_EFSTW[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_REVD6[0x3];                                 // 0x1(0x3)
 	float                                                        HealthChangeScalar;                                // 0x4(0x4)
 };
 
@@ -5734,7 +5673,7 @@ struct PlayerCompanyProgressCache
 public:
 	Struct FString                                               CacheId;                                           // 0x0(0x10)
 	byte                                                         CompanyProgressStatus;                             // 0x10(0x1)
-	char                                                         pad0x7_D1SOI[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_07XGM[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -5752,7 +5691,7 @@ struct FuseComponentMetaWrapper
 {
 public:
 	bool                                                         FuseEnabled;                                       // 0x20(0x1)
-	char                                                         pad0x3_G50VD[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_MEHK3[0x3];                                 // 0x21(0x3)
 	float                                                        FuseTimeScale;                                     // 0x24(0x4)
 };
 
@@ -5815,7 +5754,7 @@ struct TQStructGenParams
 public:
 	int                                                          GenerationIterations;                              // 0x0(0x4)
 	bool                                                         FailIfNoLocationData;                              // 0x4(0x1)
-	char                                                         pad0x3_MHO4D[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_3DJK5[0x3];                                 // 0x5(0x3)
 	float                                                        PreferredDistance;                                 // 0x8(0x4)
 	float                                                        EventExclusionZoneRadius;                          // 0xc(0x4)
 	float                                                        TransientActorExclusionZoneRadius;                 // 0x10(0x4)
@@ -5825,7 +5764,7 @@ public:
 	int                                                          MaxCombatOccurrences;                              // 0x4c(0x4)
 	TArray<struct CombatGroups>                                  CombatGroups;                                      // 0x50(0x10)
 	int                                                          MaxNonCombatOccurrences;                           // 0x60(0x4)
-	char                                                         pad0x4_SKXD1[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_IBUQZ[0x4];                                 // 0x64(0x4)
 	TArray<struct NonCombatGroups>                               NonCombatGroups;                                   // 0x68(0x10)
 };
 
@@ -5856,7 +5795,7 @@ public:
 	Class TaleQuestDescAsset*                                    TaleQuestDesc;                                     // 0x10(0x8)
 	Class PLQuestLocationDataBundle*                             LocationBundle;                                    // 0x18(0x8)
 	bool                                                         LocationFiltering;                                 // 0x20(0x1)
-	char                                                         pad0x3_QF3CW[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_NNA9T[0x3];                                 // 0x21(0x3)
 	Struct Vector2D                                              AcceptableAreaLocation;                            // 0x24(0x8)
 	float                                                        AcceptableAreaRadius;                              // 0x2c(0x4)
 };
@@ -5922,8 +5861,17 @@ struct PriorityStruct
 {
 public:
 	byte                                                         Reason;                                            // 0x0(0x1)
-	char                                                         pad0x7_B0F1W[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_0FXFJ[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 LocTag;                                            // 0x8(0x38)
+};
+
+
+// Size 0x28
+struct GuildPlaqueDisplayInfo
+{
+public:
+	Struct FString                                               GuildDisplayName;                                  // 0x0(0x10)
+	Struct FString                                               GuildIconKey;                                      // 0x18(0x10)
 };
 
 
@@ -5950,7 +5898,7 @@ struct HoleItemToSpawn
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_TZW86[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_0BBSB[0x4];                                 // 0x4(0x4)
 	class                                                        ItemDesc;                                          // 0x8(0x8)
 	TArray<Byte RestrictToSurface>                               RestrictToSurface;                                 // 0x10(0x10)
 	struct FName                                                 FeatureFlag;                                       // 0x20(0x8)
@@ -5998,7 +5946,7 @@ struct ShipLeak
 {
 public:
 	Struct ShipLeakParams                                        Params;                                            // 0x0(0x1c)
-	char                                                         pad0x24_A1JA2[0x24];                               // 0x1c(0x24)
+	char                                                         pad0x24_GKGRN[0x24];                               // 0x1c(0x24)
 	Class ParticleSystemComponent*                               SplashParticleSystem;                              // 0x40(0x8)
 };
 
@@ -6022,7 +5970,7 @@ struct HullDamageNamedParamSet
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	char                                                         pad0x8_FJ6QQ[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_RDH1Z[0x8];                                 // 0x8(0x8)
 	Struct HullDamageParamSet                                    Params;                                            // 0x10(0x60)
 };
 
@@ -6062,7 +6010,7 @@ struct ControlObjectActionStateParams
 {
 public:
 	bool                                                         UndockToLastKnownLocation;                         // 0x10(0x1)
-	char                                                         pad0x3_SG1TG[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_U2MUQ[0x3];                                 // 0x11(0x3)
 	float                                                        UndockDuration;                                    // 0x14(0x4)
 };
 
@@ -6084,7 +6032,7 @@ struct LookAtOffsetParams
 public:
 	bool                                                         UseLookAtPosition;                                 // 0x0(0x1)
 	bool                                                         UseSpring;                                         // 0x1(0x1)
-	char                                                         pad0x2_G4Y3P[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_5VSOC[0x2];                                 // 0x2(0x2)
 	float                                                        SpringAccel;                                       // 0x4(0x4)
 	float                                                        MinYaw;                                            // 0x8(0x4)
 	float                                                        MaxYaw;                                            // 0xc(0x4)
@@ -6099,7 +6047,7 @@ struct UseMountedWeaponActionStateParams
 {
 public:
 	float                                                        CameraDockTime;                                    // 0x18(0x4)
-	char                                                         pad0x4_8IC79[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_VLK32[0x4];                                 // 0x1c(0x4)
 	Class ForceFeedbackEffect*                                   FireForceFeedbackEffect;                           // 0x20(0x8)
 	class                                                        FireCameraShake;                                   // 0x28(0x8)
 	class                                                        FireInputId;                                       // 0x30(0x8)
@@ -6143,6 +6091,18 @@ struct ClamberActionStateParams
 public:
 	float                                                        InitialClamberPitch;                               // 0x10(0x4)
 	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x14(0x1c)
+};
+
+
+// Size 0x10
+struct CompanyShopActionStateParams
+{
+public:
+	float                                                        CinematicCameraBlendInTimeSeconds;                 // 0x0(0x4)
+	byte                                                         CinematicCameraBlendInMode;                        // 0x4(0x1)
+	char                                                         pad0x3_ZEIND[0x3];                                 // 0x5(0x3)
+	float                                                        CinematicCameraBlendOutTimeSeconds;                // 0x8(0x4)
+	byte                                                         CinematicCameraBlendOutMode;                       // 0xc(0x1)
 };
 
 
@@ -6274,7 +6234,7 @@ public:
 	float                                                        FadeServerTimeout;                                 // 0x8(0x4)
 	Struct LinearColor                                           FadeColour;                                        // 0xc(0x10)
 	bool                                                         FadeAudio;                                         // 0x1c(0x1)
-	char                                                         pad0x3_P77SU[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_OSGW7[0x3];                                 // 0x1d(0x3)
 	float                                                        EndFadeInDuration;                                 // 0x20(0x4)
 	float                                                        CharacterFadeCompleteTimeout;                      // 0x24(0x4)
 	float                                                        TeleportCompleteTimeout;                           // 0x28(0x4)
@@ -6325,6 +6285,18 @@ public:
 };
 
 
+// Size 0x10
+struct TalkToNPCActionStateParams
+{
+public:
+	float                                                        CinematicCameraBlendInTimeSeconds;                 // 0x0(0x4)
+	byte                                                         CinematicCameraBlendInMode;                        // 0x4(0x1)
+	char                                                         pad0x3_SL0WJ[0x3];                                 // 0x5(0x3)
+	float                                                        CinematicCameraBlendOutTimeSeconds;                // 0x8(0x4)
+	byte                                                         CinematicCameraBlendOutMode;                       // 0xc(0x1)
+};
+
+
 // Size 0x4
 struct UndoRepairActionStateParams
 {
@@ -6357,9 +6329,9 @@ struct InteractableLightParams
 public:
 	bool                                                         DebugDraw;                                         // 0x0(0x1)
 	bool                                                         IsSpotlight;                                       // 0x1(0x1)
-	char                                                         pad0x2_7OKUG[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_Q7MT0[0x2];                                 // 0x2(0x2)
 	struct FName                                                 LightTag;                                          // 0x4(0x8)
-	char                                                         pad0x4_C2IVD[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_W8HSN[0x4];                                 // 0xc(0x4)
 	Struct InteractableLightState                                OnParameters;                                      // 0x10(0x80)
 	Struct InteractableLightState                                OffParameters;                                     // 0x90(0x80)
 };
@@ -6370,7 +6342,7 @@ struct InteractableLightState
 {
 public:
 	bool                                                         Enabled;                                           // 0x0(0x1)
-	char                                                         pad0xf_Y799R[0xf];                                 // 0x1(0xf)
+	char                                                         pad0xf_GFJUQ[0xf];                                 // 0x1(0xf)
 	Struct Transform                                             Transform;                                         // 0x10(0x30)
 	float                                                        Intensity;                                         // 0x40(0x4)
 	float                                                        ConeAngleInner;                                    // 0x44(0x4)
@@ -6378,17 +6350,17 @@ public:
 	float                                                        AttenuationRadius;                                 // 0x4c(0x4)
 	Struct Color                                                 LightColour;                                       // 0x50(0x4)
 	byte                                                         SimpleFunctionType;                                // 0x54(0x1)
-	char                                                         pad0x3_Z5Z0M[0x3];                                 // 0x55(0x3)
+	char                                                         pad0x3_0822B[0x3];                                 // 0x55(0x3)
 	float                                                        ScaleOffset;                                       // 0x58(0x4)
 	float                                                        PulsePhase;                                        // 0x5c(0x4)
 	float                                                        FlickerFrequency;                                  // 0x60(0x4)
 	float                                                        IntensityScaleForWater;                            // 0x64(0x4)
 	float                                                        MinDistanceToLightClamp;                           // 0x68(0x4)
 	bool                                                         ApplyScaleForTranslucency;                         // 0x6c(0x1)
-	char                                                         pad0x3_FMZDD[0x3];                                 // 0x6d(0x3)
+	char                                                         pad0x3_VS9WV[0x3];                                 // 0x6d(0x3)
 	float                                                        ScaleForTranslucency;                              // 0x70(0x4)
 	bool                                                         ApplyCapForTranslucency;                           // 0x74(0x1)
-	char                                                         pad0x3_9S5J6[0x3];                                 // 0x75(0x3)
+	char                                                         pad0x3_8R4NB[0x3];                                 // 0x75(0x3)
 	float                                                        CapForTranslucency;                                // 0x78(0x4)
 };
 
@@ -6437,7 +6409,7 @@ struct FaunaTypeSettings
 public:
 	class                                                        FaunaSpecies;                                      // 0x0(0x8)
 	bool                                                         bGuaranteedSpawn;                                  // 0x8(0x1)
-	char                                                         pad0x3_HD2HT[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_ELNZ8[0x3];                                 // 0x9(0x3)
 	int                                                          FaunaTypeSpawnChance;                              // 0xc(0x4)
 	Struct WeightedProbabilityRange                              NumFaunaGroups;                                    // 0x10(0x20)
 	Struct WeightedProbabilityRange                              NumFaunaPerGroup;                                  // 0x30(0x20)
@@ -6459,7 +6431,7 @@ struct EncounterParams
 {
 public:
 	byte                                                         EncounterType;                                     // 0x0(0x1)
-	char                                                         pad0x3_ZY3YS[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_7HGIR[0x3];                                 // 0x1(0x3)
 	float                                                        EncounterRadius;                                   // 0x4(0x4)
 	byte                                                         EncounterDimensions;                               // 0x8(0x1)
 	byte                                                         EncounterMobility;                                 // 0x9(0x1)
@@ -6471,7 +6443,7 @@ struct IslandLocationVerifierResult
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_UFIUJ[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_92ES8[0x3];                                 // 0x1(0x3)
 	Struct Vector                                                AdjustedLocation;                                  // 0x4(0xc)
 	int                                                          ResultCode;                                        // 0x10(0x4)
 };
@@ -6501,7 +6473,7 @@ struct RequiredShipCustomizationData
 {
 public:
 	int                                                          RequiredNumberToMatch;                             // 0x0(0x4)
-	char                                                         pad0x4_ZNTVT[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_SZADW[0x4];                                 // 0x4(0x4)
 	TArray<class Class*>                                         RequiredShipCustomizations;                        // 0x8(0x10)
 };
 
@@ -6563,7 +6535,7 @@ struct ItemPreviewDataReadyEvent
 public:
 	Struct ItemPreviewView                                       ItemView;                                          // 0x30(0x18)
 	bool                                                         Valid;                                             // 0x48(0x1)
-	char                                                         pad0x3_3451T[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_ZCSRI[0x3];                                 // 0x49(0x3)
 	float                                                        PreviewTickInitialTime;                            // 0x4c(0x4)
 };
 
@@ -6612,7 +6584,7 @@ struct SetMapTypeOnRadialInventorySlot
 public:
 	int                                                          SlotIndex;                                         // 0x0(0x4)
 	byte                                                         QuestMapIcon;                                      // 0x4(0x1)
-	char                                                         pad0x3_LDOJR[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_6K6Z2[0x3];                                 // 0x5(0x3)
 	Struct FString                                               BackgroundImageUrl;                                // 0x8(0x10)
 };
 
@@ -6632,7 +6604,7 @@ struct SetItemOnRadialInventorySlot
 {
 public:
 	int                                                          SlotIndex;                                         // 0x0(0x4)
-	char                                                         pad0x4_F0QMO[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_8Z2NO[0x4];                                 // 0x4(0x4)
 	Struct FString                                               SlotItemUrl;                                       // 0x8(0x10)
 	float                                                        SlotItemRotation;                                  // 0x18(0x4)
 	float                                                        SlotItemScale;                                     // 0x1c(0x4)
@@ -6686,7 +6658,7 @@ struct ProcessableActions
 {
 public:
 	byte                                                         CurrentStatus;                                     // 0x0(0x1)
-	char                                                         pad0x7_7M8JC[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_HRRWH[0x7];                                 // 0x1(0x7)
 	double                                                       StartTime;                                         // 0x8(0x8)
 	int                                                          ActionIndex;                                       // 0x10(0x4)
 };
@@ -6698,7 +6670,7 @@ struct KrakenAnimatedTentacleWaterTriggerableFX
 public:
 	class                                                        State;                                             // 0x0(0x8)
 	float                                                        WaterHeightOffset;                                 // 0x8(0x4)
-	char                                                         pad0x4_8BPR4[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_YQPKV[0x4];                                 // 0xc(0x4)
 	Class Object*                                                FirstPersonTargetVFX;                              // 0x10(0x8)
 	Class Object*                                                ThirdPersonTargetVFX;                              // 0x18(0x8)
 	Class Object*                                                AboveWaterVFX;                                     // 0x20(0x8)
@@ -6711,7 +6683,7 @@ struct KrakenAnimatedTentacleHeldTargetVomittingChance
 {
 public:
 	float                                                        Chance;                                            // 0x0(0x4)
-	char                                                         pad0x4_PXUJI[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_XX461[0x4];                                 // 0x4(0x4)
 	class                                                        CurrentState;                                      // 0x8(0x8)
 };
 
@@ -6721,7 +6693,7 @@ struct KrakenAnimatedTentacleHoldingStateTransitionChance
 {
 public:
 	float                                                        WeightedChance;                                    // 0x0(0x4)
-	char                                                         pad0x4_E747Q[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_N2XHE[0x4];                                 // 0x4(0x4)
 	class                                                        StateToTransitionTo;                               // 0x8(0x8)
 };
 
@@ -6735,7 +6707,7 @@ public:
 	float                                                        BoneLocationAlpha;                                 // 0x8(0x4)
 	float                                                        CapsuleRadius;                                     // 0xc(0x4)
 	float                                                        CapsuleHalfHeight;                                 // 0x10(0x4)
-	char                                                         pad0x4_DSY4F[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_JF6RJ[0x4];                                 // 0x14(0x4)
 	Class CapsuleComponent*                                      Capsule;                                           // 0x18(0x8)
 };
 
@@ -6745,7 +6717,7 @@ struct KrakenAnimatedTentacleHitReactAnimation
 {
 public:
 	int                                                          CollisionBoneIndex;                                // 0x0(0x4)
-	char                                                         pad0x4_4DQDO[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_PTHJ0[0x4];                                 // 0x4(0x4)
 	Class AnimSequence*                                          HitReactAnimation;                                 // 0x8(0x8)
 };
 
@@ -6773,7 +6745,7 @@ struct LandmarkReactionEventPlayForceFeedbackEntry
 {
 public:
 	float                                                        OuterRadius;                                       // 0x0(0x4)
-	char                                                         pad0x4_5XDTW[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_S75KB[0x4];                                 // 0x4(0x4)
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x8(0x8)
 };
 
@@ -7074,7 +7046,6 @@ struct LightningImpact
 {
 public:
 	Struct Vector2D                                              Location;                                          // 0x8(0x8)
-	Class Actor*                                                 AttachActor;                                       // 0x10(0x8)
 	Class AthenaCharacter*                                       TargetCharacter;                                   // 0x18(0x8)
 	bool                                                         TargetedHighPriorityTarget;                        // 0x20(0x1)
 };
@@ -7085,7 +7056,7 @@ struct LightningStrikeFrequency
 {
 public:
 	float                                                        MinStrength;                                       // 0x0(0x4)
-	char                                                         pad0x4_DRV76[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_1H98E[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TimePerStrike;                                     // 0x8(0x30)
 };
 
@@ -7103,7 +7074,7 @@ struct LightningTarget
 {
 public:
 	byte                                                         TargetType;                                        // 0x0(0x1)
-	char                                                         pad0x3_13KCY[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_WLNXT[0x3];                                 // 0x1(0x3)
 	float                                                        Chance;                                            // 0x4(0x4)
 };
 
@@ -7123,7 +7094,7 @@ struct LoadableComponentState
 {
 public:
 	byte                                                         LoadableState;                                     // 0x0(0x1)
-	char                                                         pad0x7_R2KVA[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_G7P95[0x7];                                 // 0x1(0x7)
 	Class Object*                                                LoadedItem;                                        // 0x8(0x8)
 };
 
@@ -7144,7 +7115,7 @@ struct PetLoadout
 public:
 	TArray<struct Items>                                         Items;                                             // 0x0(0x10)
 	bool                                                         PetNamingDisallowed;                               // 0x10(0x1)
-	char                                                         pad0x3_3NUDD[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_YH4Z3[0x3];                                 // 0x11(0x3)
 	int                                                          CurrentPetIndex;                                   // 0x14(0x4)
 };
 
@@ -7213,7 +7184,7 @@ public:
 	float                                                        DefaultAdditionalBlendTime;                        // 0xd8(0x4)
 	byte                                                         DefaultAdaptationType;                             // 0xdc(0x1)
 	byte                                                         AdaptationType;                                    // 0xdd(0x1)
-	char                                                         pad0x2_FDUSQ[0x2];                                 // 0xde(0x2)
+	char                                                         pad0x2_854C2[0x2];                                 // 0xde(0x2)
 	bool                                                         bIsPlayerInLPVRefFrameArea;                        // 0xe0(0x1)
 	bool                                                         bIsLPVAdapting;                                    // 0xe0(0x1)
 	bool                                                         bAdaptRotationOnly;                                // 0xe0(0x1)
@@ -7297,7 +7268,7 @@ public:
 	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x88(0x58)
 	bool                                                         DamageConfirmed;                                   // 0xe0(0x1)
 	bool                                                         Blocked;                                           // 0xe1(0x1)
-	char                                                         pad0x6_81EX1[0x6];                                 // 0xe2(0x6)
+	char                                                         pad0x6_79V4V[0x6];                                 // 0xe2(0x6)
 	Class MeleeAttackDataAsset*                                  AttackData;                                        // 0xe8(0x8)
 	bool                                                         AttackCanDamage;                                   // 0xf0(0x1)
 };
@@ -7365,7 +7336,7 @@ struct EventMeleeWeaponAttackTriggered
 {
 public:
 	byte                                                         AttackType;                                        // 0x0(0x1)
-	char                                                         pad0x3_1XIUH[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_C9ZRH[0x3];                                 // 0x1(0x3)
 	int                                                          AttackIndex;                                       // 0x4(0x4)
 };
 
@@ -7405,7 +7376,7 @@ struct MeleeWeaponMovementSpeedPair
 {
 public:
 	byte                                                         Label;                                             // 0x0(0x1)
-	char                                                         pad0x3_EQ2PM[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_T8YJF[0x3];                                 // 0x1(0x3)
 	float                                                        SpeedScalar;                                       // 0x4(0x4)
 };
 
@@ -7506,6 +7477,16 @@ public:
 };
 
 
+// Size 0x20
+struct MessageInABottlePremadeVoyageEntry
+{
+public:
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	char                                                         pad0x4_GEYFP[0x4];                                 // 0xc(0x4)
+	TArray<class VoyageDescDataAsset*>                           PremadeVoyages;                                    // 0x10(0x10)
+};
+
+
 // Size 0x10
 struct MessageInABottleVoyageEntry
 {
@@ -7546,7 +7527,7 @@ struct WalletTransactionRequest
 {
 public:
 	byte                                                         Currency;                                          // 0x0(0x1)
-	char                                                         pad0x3_T8ECL[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_RYWDV[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  TransactionId;                                     // 0x8(0x10)
 };
 
@@ -7616,7 +7597,7 @@ struct BookcaseCompanyFullnessData
 {
 public:
 	float                                                        CurrentFullness;                                   // 0x0(0x4)
-	char                                                         pad0x4_VAL9Z[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_Y6KSZ[0x4];                                 // 0x4(0x4)
 	class                                                        Company;                                           // 0x8(0x8)
 };
 
@@ -7680,7 +7661,7 @@ struct OverrideDialogOptionUsageCounter
 {
 public:
 	int                                                          OverrideDataIndex;                                 // 0x0(0x4)
-	char                                                         pad0x4_KG5OM[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_Z5UH3[0x4];                                 // 0x4(0x4)
 	TArray<Int OptionUsageCounter>                               OptionUsageCounter;                                // 0x8(0x10)
 };
 
@@ -7807,50 +7788,30 @@ public:
 };
 
 
-// Size 0x18
-struct FeatureToggledPremiumCatalog
-{
-public:
-	Struct FeatureFlag                                           FeatureToggle;                                     // 0x0(0xc)
-	char                                                         pad0x4_A377Z[0x4];                                 // 0xc(0x4)
-	Class PremiumCatalogDataAsset*                               PremiumCatalog;                                    // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct CatalogDescTab
-{
-public:
-	Struct StringAssetReference                                  FilterIcon;                                        // 0x0(0x10)
-	Class CatalogDataAsset*                                      Catalog;                                           // 0x10(0x8)
-	Struct ShopCatalogDesc                                       CatalogData;                                       // 0x18(0x1)
-};
-
-
-// Size 0x1
-struct ShopCatalogDesc
-{
-public:
-	byte                                                         CurrencyType;                                      // 0x0(0x1)
-};
-
-
 // Size 0x10
 struct ShopTypeDataResponse
 {
 public:
 	byte                                                         ShopType;                                          // 0x0(0x1)
-	char                                                         pad0x7_RP4XJ[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_N1Q59[0x7];                                 // 0x1(0x7)
 	Class ShopDesc*                                              ShopDesc;                                          // 0x8(0x8)
 };
 
 
-// Size 0x18
+// Size 0x58
 struct NPCDialogData
 {
 public:
 	Class NPCDialogHeader*                                       Header;                                            // 0x0(0x8)
 	TArray<class NPCDialogOption*>                               Options;                                           // 0x8(0x10)
+	Struct NPCDialogTheme                                        Theme;                                             // 0x18(0x40)
+};
+
+
+// Size 0x40
+struct NPCDialogTheme
+{
+public:
 };
 
 
@@ -7950,7 +7911,7 @@ struct PlayModePhrases
 {
 public:
 	byte                                                         PlayModeKey;                                       // 0x0(0x1)
-	char                                                         pad0x7_48V0I[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_U1EYA[0x7];                                 // 0x1(0x7)
 	Class PhrasesRadialDataAsset*                                PhraseDataAsset;                                   // 0x8(0x8)
 	Class NonVerbalRadialDataAsset*                              QuickAccessDataAsset;                              // 0x10(0x8)
 	Class NonVerbalRadialDataAsset*                              StrategyDataAsset;                                 // 0x18(0x8)
@@ -7989,7 +7950,7 @@ struct PirateGeneratorBakeTelemetryEvent
 public:
 	Struct PirateDescription                                     Desc;                                              // 0x0(0x80)
 	byte                                                         Flags;                                             // 0x80(0x1)
-	char                                                         pad0x7_ROU3J[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_DARQM[0x7];                                 // 0x81(0x7)
 	Struct FString                                               Operation;                                         // 0x88(0x10)
 	Struct Guid                                                  OperationId;                                       // 0x98(0x10)
 };
@@ -8266,7 +8227,7 @@ public:
 	TArray<struct CrewMembers>                                   CrewMembers;                                       // 0x0(0x10)
 	TArray<struct CrewMembersThatAreNotConnectedToTheServerButHaveAReservedSlot> CrewMembersThatAreNotConnectedToTheServerButHaveAReservedSlot; // 0x10(0x10)
 	Struct CrewManagementOtherCrewData                           OtherCrews;                                        // 0x20(0x1)
-	char                                                         pad0x3_OWS1B[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_TP3HY[0x3];                                 // 0x21(0x3)
 	Struct CrewManagementShipData                                Ship;                                              // 0x24(0x14)
 	Struct CrewManagementMatchmakingVisibilityData               MatchmakingVisibility;                             // 0x38(0x10)
 	Struct CrewManagementArenaRivalVotingData                    ArenaRivalVoting;                                  // 0x48(0xc)
@@ -8279,7 +8240,7 @@ struct CrewManagementArenaRivalVotingData
 {
 public:
 	bool                                                         Voted;                                             // 0x0(0x1)
-	char                                                         pad0x3_Z9CTA[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_DSOCG[0x3];                                 // 0x1(0x3)
 	int                                                          VotesCast;                                         // 0x4(0x4)
 	int                                                          VotesRequired;                                     // 0x8(0x4)
 };
@@ -8290,7 +8251,7 @@ struct CrewManagementMatchmakingVisibilityData
 {
 public:
 	bool                                                         Voted;                                             // 0x0(0x1)
-	char                                                         pad0x3_DRJEM[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_2RK8L[0x3];                                 // 0x1(0x3)
 	int                                                          VotesCast;                                         // 0x4(0x4)
 	int                                                          VotesRequired;                                     // 0x8(0x4)
 	byte                                                         State;                                             // 0xc(0x1)
@@ -8303,7 +8264,7 @@ struct CrewManagementShipData
 public:
 	bool                                                         Voted;                                             // 0x0(0x1)
 	bool                                                         ScuttleAndChangeSeasVoted;                         // 0x1(0x1)
-	char                                                         pad0x2_WYTZO[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_N7S0Y[0x2];                                 // 0x2(0x2)
 	int                                                          VotesCast;                                         // 0x4(0x4)
 	int                                                          ScuttleAndChangeSeasVotesCast;                     // 0x8(0x4)
 	int                                                          VotesRequired;                                     // 0xc(0x4)
@@ -8344,7 +8305,7 @@ struct CrewManagementMemberBrigState
 {
 public:
 	bool                                                         Voted;                                             // 0x0(0x1)
-	char                                                         pad0x3_2OFXM[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_6BXMI[0x3];                                 // 0x1(0x3)
 	int                                                          VotesCast;                                         // 0x4(0x4)
 	int                                                          VotesRequired;                                     // 0x8(0x4)
 	byte                                                         State;                                             // 0xc(0x1)
@@ -8441,7 +8402,7 @@ struct PlayerCurseToAudioSwitchValue
 {
 public:
 	byte                                                         CurseTag;                                          // 0x0(0x1)
-	char                                                         pad0x3_F2X2R[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_S2HDZ[0x3];                                 // 0x1(0x3)
 	struct FName                                                 SwitchValue;                                       // 0x4(0x8)
 };
 
@@ -8475,7 +8436,7 @@ struct PlayerEntitlementsCompact
 {
 public:
 	byte                                                         Status;                                            // 0x0(0x1)
-	char                                                         pad0x27_5DME1[0x27];                               // 0x1(0x27)
+	char                                                         pad0x27_FZ99S[0x27];                               // 0x1(0x27)
 	TArray<class Class*>                                         Loose;                                             // 0x28(0x10)
 };
 
@@ -8485,7 +8446,7 @@ struct PlayerHeroStatUpdatedEvent
 {
 public:
 	byte                                                         Result;                                            // 0x0(0x1)
-	char                                                         pad0x3_X2UHK[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_A1075[0x3];                                 // 0x1(0x3)
 	Struct PlayerStat                                            Stat;                                              // 0x4(0x4)
 };
 
@@ -8586,7 +8547,7 @@ struct PlayerRelevancyRequest
 public:
 	Class AthenaPlayerController*                                PlayerController;                                  // 0x0(0x8)
 	byte                                                         RequestState;                                      // 0x8(0x1)
-	char                                                         pad0x3_V1U4C[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_KWEMZ[0x3];                                 // 0x9(0x3)
 	float                                                        TimeRemaining;                                     // 0xc(0x4)
 };
 
@@ -8690,7 +8651,7 @@ struct PremiumShopOfferItem
 {
 public:
 	bool                                                         IsSuperPremium;                                    // 0x0(0x1)
-	char                                                         pad0x7_SC0RZ[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_UMBX8[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 LockedReason;                                      // 0x8(0x38)
 };
 
@@ -8700,7 +8661,7 @@ struct PremiumShopBundleOfferItem
 {
 public:
 	bool                                                         IsPurchasable;                                     // 0x0(0x1)
-	char                                                         pad0x7_98J6I[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_DSZDK[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 LockedReason;                                      // 0x8(0x38)
 };
 
@@ -8728,7 +8689,7 @@ public:
 	Struct CatalogOfferPrerequisites                             Prerequisites;                                     // 0xc8(0x78)
 	Struct CatalogOfferPrerequisites                             ExclusionConditions;                               // 0x140(0x78)
 	byte                                                         Availability;                                      // 0x1b8(0x1)
-	char                                                         pad0x7_7YLTO[0x7];                                 // 0x1b9(0x7)
+	char                                                         pad0x7_C7DJU[0x7];                                 // 0x1b9(0x7)
 	Struct PremiumCatalogOfferData                               Premium;                                           // 0x210(0x128)
 	Struct FString                                               Sig;                                               // 0x338(0x10)
 };
@@ -8739,21 +8700,21 @@ struct PremiumCatalogOfferData
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x7_ST5ML[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_QZS36[0x7];                                 // 0x1(0x7)
 	TArray<Str TileImages>                                       TileImages;                                        // 0x8(0x10)
 	int                                                          TileSize;                                          // 0x18(0x4)
-	char                                                         pad0x4_E58YH[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_Z3SL1[0x4];                                 // 0x1c(0x4)
 	Struct FText                                                 PageTitle;                                         // 0x20(0x38)
 	Struct FString                                               PageIcon;                                          // 0x58(0x10)
 	TArray<struct Groups>                                        Groups;                                            // 0x68(0x10)
 	Struct FText                                                 LockedReason;                                      // 0x78(0x38)
 	bool                                                         TimeLimited;                                       // 0xb0(0x1)
 	bool                                                         TimeLimitedPrice;                                  // 0xb1(0x1)
-	char                                                         pad0x2_NNFP0[0x2];                                 // 0xb2(0x2)
+	char                                                         pad0x2_C5V5H[0x2];                                 // 0xb2(0x2)
 	int                                                          PremiumCurrencyRealMoneyPrice;                     // 0xb4(0x4)
 	bool                                                         Purchasable;                                       // 0xb8(0x1)
 	bool                                                         SuperPremium;                                      // 0xb9(0x1)
-	char                                                         pad0x6_J03ZB[0x6];                                 // 0xba(0x6)
+	char                                                         pad0x6_PKJFD[0x6];                                 // 0xba(0x6)
 	Struct FText                                                 Saving;                                            // 0xc0(0x38)
 	Struct FString                                               Accent;                                            // 0xf8(0x10)
 	Struct FString                                               TopBanner;                                         // 0x108(0x10)
@@ -8775,7 +8736,7 @@ struct StoreOnlinePurchaseResult
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x7_55G94[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_DHJO6[0x7];                                 // 0x1(0x7)
 	Struct FString                                               ProductId;                                         // 0x8(0x10)
 };
 
@@ -8799,7 +8760,7 @@ public:
 	Struct FString                                               FormattedBasePrice;                                // 0x40(0x10)
 	Struct FString                                               CurrencyCode;                                      // 0x50(0x10)
 	bool                                                         IsOnSale;                                          // 0x60(0x1)
-	char                                                         pad0x7_GBLIP[0x7];                                 // 0x61(0x7)
+	char                                                         pad0x7_6ILG7[0x7];                                 // 0x61(0x7)
 	Struct DateTime                                              SaleEndDate;                                       // 0x68(0x8)
 	Struct FString                                               ImageUri;                                          // 0x70(0x10)
 	TArray<Str MetaTags>                                         MetaTags;                                          // 0x80(0x10)
@@ -8900,10 +8861,10 @@ struct PremiumStoreOffer
 {
 public:
 	bool                                                         IsSuperPremium;                                    // 0x1e0(0x1)
-	char                                                         pad0x7_HIZ9Z[0x7];                                 // 0x1e1(0x7)
+	char                                                         pad0x7_7UIY3[0x7];                                 // 0x1e1(0x7)
 	Struct FString                                               LockedReason;                                      // 0x1e8(0x10)
 	Struct PremiumStoreTimeLimited                               TimeLimited;                                       // 0x1f8(0x2)
-	char                                                         pad0x6_Z9VWS[0x6];                                 // 0x1fa(0x6)
+	char                                                         pad0x6_NV2XW[0x6];                                 // 0x1fa(0x6)
 	Struct FString                                               RealMoneyPrice;                                    // 0x200(0x10)
 };
 
@@ -8923,7 +8884,7 @@ public:
 	Struct ShopOfferPrerequisites                                Prerequisites;                                     // 0xb8(0x68)
 	Struct ShopOfferPrerequisites                                ExclusionConditions;                               // 0x120(0x68)
 	byte                                                         Availability;                                      // 0x188(0x1)
-	char                                                         pad0x7_998E3[0x7];                                 // 0x189(0x7)
+	char                                                         pad0x7_XKUNU[0x7];                                 // 0x189(0x7)
 };
 
 
@@ -8940,7 +8901,7 @@ struct ShopOfferPrice
 {
 public:
 	byte                                                         Currency;                                          // 0x0(0x1)
-	char                                                         pad0x7_WP7UO[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_8BJBX[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 DisplayPrice;                                      // 0x8(0x38)
 };
 
@@ -8978,7 +8939,7 @@ public:
 	Struct FString                                               Description;                                       // 0x40(0x10)
 	bool                                                         Owned;                                             // 0x50(0x1)
 	Struct PremiumStoreTimeLimited                               TimeLimited;                                       // 0x51(0x2)
-	char                                                         pad0x5_Y50NO[0x5];                                 // 0x53(0x5)
+	char                                                         pad0x5_KRM47[0x5];                                 // 0x53(0x5)
 	Struct PremiumStoreItemsSetView                              SetView;                                           // 0x58(0x60)
 };
 
@@ -9037,7 +8998,7 @@ struct PremiumStoreBundleItem
 public:
 	bool                                                         EnablePurchase;                                    // 0x1e0(0x1)
 	Struct PremiumStoreTimeLimited                               TimeLimited;                                       // 0x1e1(0x2)
-	char                                                         pad0x5_VFHB4[0x5];                                 // 0x1e3(0x5)
+	char                                                         pad0x5_STAHW[0x5];                                 // 0x1e3(0x5)
 	Struct FString                                               RealMoneyPrice;                                    // 0x1e8(0x10)
 	Struct FString                                               LockedReason;                                      // 0x1f8(0x10)
 };
@@ -9050,7 +9011,7 @@ public:
 	Struct FString                                               Saving;                                            // 0x1e0(0x10)
 	Struct FString                                               AccentUrl;                                         // 0x1f0(0x10)
 	Struct PremiumStoreTimeLimited                               TimeLimited;                                       // 0x200(0x2)
-	char                                                         pad0x6_P288Y[0x6];                                 // 0x202(0x6)
+	char                                                         pad0x6_7YJUH[0x6];                                 // 0x202(0x6)
 	Struct FString                                               RealMoneyPrice;                                    // 0x208(0x10)
 };
 
@@ -9084,7 +9045,7 @@ public:
 	Struct FString                                               CompanyId;                                         // 0xa0(0x10)
 	bool                                                         EnablePiratePreview;                               // 0xb0(0x1)
 	byte                                                         CurrencyType;                                      // 0xb1(0x1)
-	char                                                         pad0x6_8DGMU[0x6];                                 // 0xb2(0x6)
+	char                                                         pad0x6_IIWK7[0x6];                                 // 0xb2(0x6)
 	TArray<struct Categories>                                    Categories;                                        // 0xb8(0x10)
 	Struct StringAssetReference                                  AllTabIcon;                                        // 0xc8(0x10)
 };
@@ -9187,7 +9148,7 @@ public:
 	Struct FString                                               Price;                                             // 0x30(0x10)
 	Struct FString                                               BasePrice;                                         // 0x40(0x10)
 	bool                                                         IsOnSale;                                          // 0x50(0x1)
-	char                                                         pad0x7_37Z48[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_COXI8[0x7];                                 // 0x51(0x7)
 	Struct FString                                               SaleEndDate;                                       // 0x58(0x10)
 	Struct FString                                               Title;                                             // 0x68(0x10)
 	Struct FString                                               Quantity;                                          // 0x78(0x10)
@@ -9317,7 +9278,7 @@ public:
 	Struct FString                                               Description;                                       // 0x20(0x10)
 	bool                                                         HasNewStuff;                                       // 0x30(0x1)
 	bool                                                         HasOwnedOffer;                                     // 0x31(0x1)
-	char                                                         pad0x6_U5KL1[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_BMQF1[0x6];                                 // 0x32(0x6)
 	TArray<struct Breeds>                                        Breeds;                                            // 0x38(0x10)
 };
 
@@ -9331,7 +9292,7 @@ public:
 	Struct FString                                               Description;                                       // 0x20(0x10)
 	bool                                                         HasNewStuff;                                       // 0x30(0x1)
 	bool                                                         IsOwned;                                           // 0x31(0x1)
-	char                                                         pad0x6_0FUII[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_KF96R[0x6];                                 // 0x32(0x6)
 	TArray<struct Offers>                                        Offers;                                            // 0x38(0x10)
 	TArray<struct Categories>                                    Categories;                                        // 0x48(0x10)
 };
@@ -9388,7 +9349,7 @@ public:
 	Struct WeaponProjectileEffectParams                          Effects;                                           // 0xe0(0x68)
 	Struct Vector                                                InitialPosition;                                   // 0x148(0xc)
 	Struct Guid                                                  TelemetryAttackId;                                 // 0x154(0x10)
-	char                                                         pad0x4_6309P[0x4];                                 // 0x164(0x4)
+	char                                                         pad0x4_BHTQQ[0x4];                                 // 0x164(0x4)
 	TArray<struct TrailData>                                     TrailData;                                         // 0x168(0x10)
 };
 
@@ -9416,7 +9377,7 @@ public:
 	class                                                        DamagerType;                                       // 0x160(0x8)
 	Struct Guid                                                  TelemetryAttackId;                                 // 0x168(0x10)
 	int                                                          SubAttackGroupId;                                  // 0x178(0x4)
-	char                                                         pad0x4_XEBQ2[0x4];                                 // 0x17c(0x4)
+	char                                                         pad0x4_L747Q[0x4];                                 // 0x17c(0x4)
 	Struct Transform                                             WeaponMeshTransform;                               // 0x180(0x30)
 	Class Object*                                                WeaponMesh;                                        // 0x1b0(0x8)
 	float                                                        DistanceBeforeGravity;                             // 0x1b8(0x4)
@@ -9436,7 +9397,7 @@ struct ProjectileHitScanVFX
 {
 public:
 	Struct Projectile                                            Projectile;                                        // 0x0(0x1c)
-	char                                                         pad0x4_NCA5B[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_E4FYK[0x4];                                 // 0x1c(0x4)
 	Struct WeaponProjectileParams                                AmmoParams;                                        // 0x20(0xc0)
 	class                                                        DamagerType;                                       // 0xe0(0x8)
 };
@@ -9473,11 +9434,11 @@ public:
 	Struct Vector                                                Direction;                                         // 0x48(0xc)
 	float                                                        DownForce;                                         // 0x54(0x4)
 	float                                                        Speed;                                             // 0x58(0x4)
-	char                                                         pad0x4_WU2FF[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_P6HIR[0x4];                                 // 0x5c(0x4)
 	class                                                        DamagerType;                                       // 0x60(0x8)
 	Class AthenaPlayerCharacter*                                 InstigatingPlayerCharacter;                        // 0x68(0x8)
 	float                                                        InstigatorSpeed;                                   // 0x70(0x4)
-	char                                                         pad0x4_40FOZ[0x4];                                 // 0x74(0x4)
+	char                                                         pad0x4_LRDZ9[0x4];                                 // 0x74(0x4)
 	Class Actor*                                                 HitActor;                                          // 0x78(0x8)
 	Class SceneComponent*                                        HitComponent;                                      // 0x80(0x8)
 	Struct Vector_NetQuantize                                    HitComponentLocation;                              // 0x88(0xc)
@@ -9517,7 +9478,7 @@ struct ReactionSequenceStateInfo
 public:
 	byte                                                         State;                                             // 0x0(0x1)
 	byte                                                         ActivatedMechanismType;                            // 0x1(0x1)
-	char                                                         pad0x6_FK696[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_MACR7[0x6];                                 // 0x2(0x6)
 	double                                                       TimeStateStarted;                                  // 0x8(0x8)
 };
 
@@ -9539,8 +9500,18 @@ public:
 	Struct TransformBlendCurve                                   ButtonActivationAnimation;                         // 0x500(0x500)
 	float                                                        IncorrectSolutionPenaltyInSeconds;                 // 0xa00(0x4)
 	float                                                        ButtonHoldTime;                                    // 0xa04(0x4)
-	char                                                         pad0x78_5DP1U[0x78];                               // 0xa08(0x78)
+	char                                                         pad0x78_5PLXN[0x78];                               // 0xa08(0x78)
 	Class StaticMeshComponent*                                   ButtonMesh;                                        // 0xa80(0x8)
+};
+
+
+// Size 0x18
+struct BrazierExtinguishCrewSizeTimes
+{
+public:
+	int                                                          CrewSize;                                          // 0x0(0x4)
+	char                                                         pad0x4_O3OF0[0x4];                                 // 0x4(0x4)
+	TArray<Float ExtinguishTimes>                                ExtinguishTimes;                                   // 0x8(0x10)
 };
 
 
@@ -9549,7 +9520,7 @@ struct VaultReserved
 {
 public:
 	bool                                                         IsReserved;                                        // 0x0(0x1)
-	char                                                         pad0x3_3YLPI[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_HGNTM[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  CrewId;                                            // 0x4(0x10)
 };
 
@@ -9588,7 +9559,7 @@ struct RatManagerRatInfestationLevel
 {
 public:
 	float                                                        WaterLevel;                                        // 0x0(0x4)
-	char                                                         pad0x4_95SKG[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_F251C[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      RatSpawnFrequency;                                 // 0x8(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      RatSpeed;                                          // 0x38(0x30)
 	TArray<struct FName>                                         Locations;                                         // 0x68(0x10)
@@ -9613,7 +9584,7 @@ struct ReapersMarkLevelEntry
 {
 public:
 	int                                                          VoyageCount;                                       // 0x0(0x4)
-	char                                                         pad0x4_3XDRV[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_SA3V7[0x4];                                 // 0x4(0x4)
 	TArray<struct CompanyMultipliers>                            CompanyMultipliers;                                // 0x8(0x10)
 };
 
@@ -9633,7 +9604,7 @@ struct ReapersMarkCurseStatInfo
 {
 public:
 	byte                                                         Curse;                                             // 0x0(0x1)
-	char                                                         pad0x3_W63BH[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_QRMJQ[0x3];                                 // 0x1(0x3)
 	Struct PlayerStat                                            StatToFire;                                        // 0x4(0x4)
 };
 
@@ -9678,7 +9649,7 @@ struct RelativePercentageRewardDistributionModel
 {
 public:
 	float                                                        DefaultPercentage;                                 // 0x0(0x4)
-	char                                                         pad0x4_4OCOO[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_PAXO1[0x4];                                 // 0x4(0x4)
 	TArray<struct NumCrewsPercentageMap>                         NumCrewsPercentageMap;                             // 0x8(0x10)
 };
 
@@ -9723,7 +9694,7 @@ struct RiddleTextRenderer
 {
 public:
 	float                                                        MaskSizeScale;                                     // 0x0(0x4)
-	char                                                         pad0x4_N4EW8[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_IA1U6[0x4];                                 // 0x4(0x4)
 	Class Font*                                                  Font;                                              // 0x8(0x8)
 	float                                                        FontScale;                                         // 0x10(0x4)
 	float                                                        FontMaxScale;                                      // 0x14(0x4)
@@ -9732,7 +9703,7 @@ public:
 	TArray<Str DroppedTextCharacters>                            DroppedTextCharacters;                             // 0x20(0x10)
 	bool                                                         VerticallyCentredText;                             // 0x30(0x1)
 	bool                                                         HorizontallyCentredText;                           // 0x31(0x1)
-	char                                                         pad0x2_ERF0N[0x2];                                 // 0x32(0x2)
+	char                                                         pad0x2_V1RE1[0x2];                                 // 0x32(0x2)
 	float                                                        MaxTextHeightRatioForRiddleText;                   // 0x34(0x4)
 	float                                                        MarginSize;                                        // 0x38(0x4)
 	Struct Vector2D                                              OriginRatio;                                       // 0x3c(0x8)
@@ -9767,7 +9738,7 @@ public:
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
 	class                                                        CameraShakeEffect;                                 // 0x8(0x8)
 	bool                                                         Looping;                                           // 0x10(0x1)
-	char                                                         pad0x3_A6223[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_SIC3B[0x3];                                 // 0x11(0x3)
 	struct FName                                                 Tag;                                               // 0x14(0x8)
 };
 
@@ -9790,10 +9761,10 @@ struct ScoreRewardValueData
 {
 public:
 	int                                                          ScoreToAward;                                      // 0x0(0x4)
-	char                                                         pad0x4_KGVRP[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MG2ZY[0x4];                                 // 0x4(0x4)
 	Struct FString                                               ServicesConfigRetrievalString;                     // 0x8(0x10)
 	byte                                                         ReasonForScore;                                    // 0x18(0x1)
-	char                                                         pad0x7_BSK5C[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_OGDCM[0x7];                                 // 0x19(0x7)
 	TArray<Int ScoreByPeriod>                                    ScoreByPeriod;                                     // 0x20(0x10)
 };
 
@@ -9822,7 +9793,7 @@ struct ScoreReasonIcons
 {
 public:
 	byte                                                         ReasonForScore;                                    // 0x0(0x1)
-	char                                                         pad0x7_6T1A4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_MNBOX[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  ScoringIconAssetReference;                         // 0x8(0x10)
 	Class Texture*                                               ScoreScrollScoringIcon;                            // 0x18(0x8)
 };
@@ -9866,7 +9837,7 @@ struct SeagullManagerFormation
 {
 public:
 	int                                                          NumInFormation;                                    // 0x0(0x4)
-	char                                                         pad0x4_WU5WF[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_XXQER[0x4];                                 // 0x4(0x4)
 	TArray<struct FormationOffsets>                              FormationOffsets;                                  // 0x8(0x10)
 };
 
@@ -9894,7 +9865,7 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	TArray<struct Locations>                                     Locations;                                         // 0x10(0x10)
 	byte                                                         SessionType;                                       // 0x20(0x1)
-	char                                                         pad0x7_7EY1Q[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_BEQRH[0x7];                                 // 0x21(0x7)
 	TArray<UInt32 ContendedResources>                            ContendedResources;                                // 0x28(0x10)
 };
 
@@ -9912,7 +9883,7 @@ struct FlameSpecificDataEntry
 {
 public:
 	byte                                                         FlameType;                                         // 0x0(0x1)
-	char                                                         pad0x7_BBWF4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_W2NSK[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  TextureAsset;                                      // 0x8(0x10)
 	Struct PlayerStat                                            StatToFireWhenKilled;                              // 0x18(0x4)
 };
@@ -9942,7 +9913,7 @@ struct AISwimmingCreatureDeadActionStateEventMapItem
 {
 public:
 	byte                                                         Event;                                             // 0x0(0x1)
-	char                                                         pad0x3_IDSXX[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_WRUAG[0x3];                                 // 0x1(0x3)
 	float                                                        FireAtTimeLeftInState;                             // 0x4(0x4)
 };
 
@@ -10298,7 +10269,7 @@ struct DigAnimParams
 {
 public:
 	byte                                                         DigType;                                           // 0x0(0x1)
-	char                                                         pad0x3_89CZU[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_QBS87[0x3];                                 // 0x1(0x3)
 	float                                                        Duration;                                          // 0x4(0x4)
 	float                                                        TimeStampOfUnlockingWielderMovement;               // 0x8(0x4)
 	float                                                        TimeStampOfEnterGround;                            // 0xc(0x4)
@@ -10352,7 +10323,7 @@ public:
 	TArray<struct TargetOptions>                                 TargetOptions;                                     // 0x0(0x10)
 	Struct WeightedProbabilityRange                              NumberOfTargets;                                   // 0x10(0x20)
 	bool                                                         RandomSelect;                                      // 0x30(0x1)
-	char                                                         pad0x7_0UIZH[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_YX9HG[0x7];                                 // 0x31(0x7)
 	class                                                        AICombatDialogue;                                  // 0x38(0x8)
 };
 
@@ -10370,7 +10341,7 @@ public:
 	TArray<struct CrewStatsToFireWhenDefeated>                   CrewStatsToFireWhenDefeated;                       // 0xa0(0x10)
 	TArray<struct AllianceStatsToFireWhenDefeated>               AllianceStatsToFireWhenDefeated;                   // 0xb0(0x10)
 	bool                                                         IsUsingDialogue;                                   // 0xc0(0x1)
-	char                                                         pad0x7_C7TAC[0x7];                                 // 0xc1(0x7)
+	char                                                         pad0x7_6DB6M[0x7];                                 // 0xc1(0x7)
 	class                                                        OverrideAICombatDialogue;                          // 0xc8(0x8)
 };
 
@@ -10403,10 +10374,10 @@ struct StaggerModifiersEntry
 {
 public:
 	byte                                                         StaggerToModify;                                   // 0x0(0x1)
-	char                                                         pad0x7_XJK7P[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_W4W28[0x7];                                 // 0x1(0x7)
 	TArray<Byte StaggersThatCancelThisModifier>                  StaggersThatCancelThisModifier;                    // 0x8(0x10)
 	bool                                                         OnlyWhenSprinting;                                 // 0x18(0x1)
-	char                                                         pad0x3_RINLO[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_77ICX[0x3];                                 // 0x19(0x3)
 	Struct StaggerModifiers                                      Modifiers;                                         // 0x1c(0x10)
 };
 
@@ -10434,7 +10405,7 @@ public:
 	bool                                                         InterruptMeleeAttacks;                             // 0x8(0x1)
 	byte                                                         DurationType;                                      // 0x9(0x1)
 	byte                                                         IsItemWieldingAllowed;                             // 0xa(0x1)
-	char                                                         pad0x5_DANTK[0x5];                                 // 0xb(0x5)
+	char                                                         pad0x5_WX371[0x5];                                 // 0xb(0x5)
 	class                                                        DamagerType;                                       // 0x10(0x8)
 };
 
@@ -10501,7 +10472,7 @@ struct EventHandInMegalodonSoul
 {
 public:
 	byte                                                         SoulType;                                          // 0x0(0x1)
-	char                                                         pad0x3_0Y6G8[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_H2IPS[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  CrewId;                                            // 0x4(0x10)
 };
 
@@ -10511,9 +10482,9 @@ struct EventCollectedMegalodonSoul
 {
 public:
 	byte                                                         SoulType;                                          // 0x0(0x1)
-	char                                                         pad0x3_EK3G3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_ZDYFT[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  CrewId;                                            // 0x4(0x10)
-	char                                                         pad0x4_1XIJC[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_QENIL[0x4];                                 // 0x14(0x4)
 	Class Actor*                                                 Collector;                                         // 0x18(0x8)
 };
 
@@ -10524,7 +10495,7 @@ struct PlateData
 public:
 	struct FName                                                 MaterialParameterName;                             // 0x0(0x8)
 	byte                                                         SoulType;                                          // 0x8(0x1)
-	char                                                         pad0x7_IOEHK[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_NKATK[0x7];                                 // 0x9(0x7)
 	Class WwiseEvent*                                            PlayEffigyPlacementAudioEvent;                     // 0x10(0x8)
 };
 
@@ -10588,7 +10559,7 @@ struct ForkedStep
 public:
 	int                                                          Index;                                             // 0x0(0x4)
 	Struct Guid                                                  Id;                                                // 0x4(0x10)
-	char                                                         pad0x4_ZAFOX[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_NQPLM[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -10606,7 +10577,7 @@ struct TankardContentsInfo
 {
 public:
 	byte                                                         LiquidType;                                        // 0x0(0x1)
-	char                                                         pad0x3_R3M1J[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_GATEY[0x3];                                 // 0x1(0x3)
 	float                                                        AlcoholStrengthMultiplier;                         // 0x4(0x4)
 };
 
@@ -10666,7 +10637,7 @@ public:
 	TArray<struct Treasure>                                      Treasure;                                          // 0x28(0x10)
 	float                                                        RotationFromNorth;                                 // 0x78(0x4)
 	Struct Guid                                                  MapGroupGuid;                                      // 0x7c(0x10)
-	char                                                         pad0x4_GVW7C[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_4LXSD[0x4];                                 // 0x8c(0x4)
 	TArray<class AIBoobyTrapSpawner*>                            BoobyTrapSpawners;                                 // 0x90(0x10)
 	class                                                        OverrideTreasureMapItemDesc;                       // 0xa0(0x8)
 };
@@ -10678,7 +10649,7 @@ struct QuestDesc
 public:
 	Struct FString                                               Title;                                             // 0x8(0x10)
 	bool                                                         IsEmergent;                                        // 0x18(0x1)
-	char                                                         pad0x3_ZRK7M[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_TT0AK[0x3];                                 // 0x19(0x3)
 	struct FName                                                 IslandName;                                        // 0x1c(0x8)
 };
 
@@ -10710,7 +10681,7 @@ struct TinVoyageDebugEntry
 public:
 	class                                                        Company;                                           // 0x0(0x8)
 	byte                                                         Difficulty;                                        // 0x8(0x1)
-	char                                                         pad0x7_4Y5VA[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_KLSOT[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -10724,23 +10695,25 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x48
 struct VaultTreasureRarity
 {
 public:
 	class                                                        VaultKeyDesc;                                      // 0x0(0x8)
-	Struct ItemSpawnParams                                       SpawnParams;                                       // 0x8(0x28)
-	Class WeightedItemDescSpawnDataAsset*                        ReferencedSpawnDistributionAsset;                  // 0x30(0x8)
+	Struct ItemSpawnParams                                       SpawnParams;                                       // 0x8(0x38)
+	Class WeightedItemDescSpawnDataAsset*                        ReferencedSpawnDistributionAsset;                  // 0x40(0x8)
 };
 
 
-// Size 0x28
+// Size 0x38
 struct ItemSpawnParams
 {
 public:
-	Struct WeightedProbabilityRange                              Total;                                             // 0x0(0x20)
-	float                                                        AllowedAngleDeviation;                             // 0x20(0x4)
-	float                                                        MaxZ;                                              // 0x24(0x4)
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	char                                                         pad0x4_3HYPQ[0x4];                                 // 0xc(0x4)
+	Struct WeightedProbabilityRange                              Total;                                             // 0x10(0x20)
+	float                                                        AllowedAngleDeviation;                             // 0x30(0x4)
+	float                                                        MaxZ;                                              // 0x34(0x4)
 };
 
 
@@ -10757,7 +10730,7 @@ struct TutorialSequence
 {
 public:
 	int                                                          CurrentStep;                                       // 0x8(0x4)
-	char                                                         pad0x14_N2PPU[0x14];                               // 0xc(0x14)
+	char                                                         pad0x14_734ZZ[0x14];                               // 0xc(0x14)
 	Struct TutorialStepDependencies                              Dependencies;                                      // 0x20(0x58)
 };
 
@@ -10889,6 +10862,50 @@ public:
 
 
 // Size 0x10
+struct UserPresenceFailedEvent
+{
+public:
+	Struct FString                                               Id;                                                // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct UserPresenceResponseEvent
+{
+public:
+	TArray<struct UsersPresence>                                 UsersPresence;                                     // 0x0(0x10)
+	Struct FString                                               Id;                                                // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct UserPresence
+{
+public:
+	Struct FString                                               XUID;                                              // 0x0(0x10)
+	Struct FString                                               Presence;                                          // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct UserPresenceRequestEvent
+{
+public:
+	TArray<Str XUIDs>                                            XUIDs;                                             // 0x0(0x10)
+	Struct FString                                               Id;                                                // 0x10(0x10)
+};
+
+
+// Size 0x40
+struct UserPresenceRequestAndResponse
+{
+public:
+	Struct UserPresenceRequestEvent                              RequestEvent;                                      // 0x0(0x20)
+	Struct UserPresenceResponseEvent                             ResponseEvent;                                     // 0x20(0x20)
+};
+
+
+// Size 0x10
 struct BlockDecalMaterials
 {
 public:
@@ -10946,7 +10963,7 @@ struct VomitVFX
 {
 public:
 	float                                                        Delay;                                             // 0x0(0x4)
-	char                                                         pad0x4_Q05AN[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_37ITS[0x4];                                 // 0x4(0x4)
 	TArray<struct VomitVFXObjects>                               VomitVFXObjects;                                   // 0x8(0x10)
 	struct FName                                                 SocketName1st;                                     // 0x18(0x8)
 	Struct Vector                                                Location1st;                                       // 0x20(0xc)
@@ -10976,7 +10993,7 @@ struct WaterBarrelFeedbackLevel
 {
 public:
 	float                                                        Strength;                                          // 0x0(0x4)
-	char                                                         pad0x4_YQPZZ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_9TJNY[0x4];                                 // 0x4(0x4)
 	Class ForceFeedbackEffect*                                   Effect;                                            // 0x8(0x8)
 };
 
@@ -10986,7 +11003,7 @@ struct WaterSensitiveHealthChange
 {
 public:
 	bool                                                         HealthChangeEnabled;                               // 0x0(0x1)
-	char                                                         pad0x3_I3J9C[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_XONNF[0x3];                                 // 0x1(0x3)
 	float                                                        HealthChangeAmount;                                // 0x4(0x4)
 };
 
@@ -11042,7 +11059,7 @@ public:
 	float                                                        ServerWheelBlend;                                  // 0x48(0x4)
 	float                                                        WheelBlend;                                        // 0x4c(0x4)
 	float                                                        TurbulenceMaxDriftSpeed;                           // 0x50(0x4)
-	char                                                         pad0x4_GY9S7[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_RR13T[0x4];                                 // 0x54(0x4)
 	Class CurveFloat*                                            TurbulenceInputScale;                              // 0x58(0x8)
 	float                                                        TurbulenceMaxDriftPercentageCounter;               // 0x60(0x4)
 	float                                                        TurbulenceMaxDriftBoostPercentage;                 // 0x64(0x4)
@@ -11167,14 +11184,14 @@ public:
 	byte                                                         CurrentHeldState;                                  // 0xf(0x1)
 	byte                                                         CurrentRoamingState;                               // 0x10(0x1)
 	byte                                                         ParentCurrentWieldedState;                         // 0x11(0x1)
-	char                                                         pad0x6_WF89Y[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_ZER80[0x6];                                 // 0x12(0x6)
 	Struct AthenaAnimationLocomotion                             ParentLocomotionData;                              // 0x18(0x68)
 	byte                                                         ParentJumpingState;                                // 0x80(0x1)
-	char                                                         pad0x7_VXRO4[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_E7L21[0x7];                                 // 0x81(0x7)
 	Class PetsAnimationData*                                     PetAnimations;                                     // 0x88(0x8)
 	Struct AthenaAnimationPetSelectedArrayAnimations             PetSelectedArrayAnimations;                        // 0x90(0x10)
 	byte                                                         ReactState;                                        // 0xa0(0x1)
-	char                                                         pad0x3_D79ZP[0x3];                                 // 0xa1(0x3)
+	char                                                         pad0x3_Q7OGR[0x3];                                 // 0xa1(0x3)
 	float                                                        JumpAlphaBlend;                                    // 0xa4(0x4)
 	bool                                                         CurrentlyJumping;                                  // 0xa8(0x1)
 	bool                                                         Submerged;                                         // 0xa9(0x1)
@@ -11250,7 +11267,7 @@ struct EventAIUseAlternateLocomotionSet
 {
 public:
 	bool                                                         UseAlternateLocomotionSet;                         // 0x0(0x1)
-	char                                                         pad0x7_RWG3C[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_11EQI[0x7];                                 // 0x1(0x7)
 	class                                                        WieldedItemAnimationStoreId;                       // 0x8(0x8)
 };
 
@@ -11260,7 +11277,7 @@ struct EventAIEmoteActionAnimationChange
 {
 public:
 	byte                                                         ActiveEmoteActionState;                            // 0x0(0x1)
-	char                                                         pad0x7_QRYOY[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_TZRGM[0x7];                                 // 0x1(0x7)
 	Class AthenaCharacter*                                       Owner;                                             // 0x8(0x8)
 };
 
@@ -11270,7 +11287,7 @@ struct EventAISenseAnimationChange
 {
 public:
 	byte                                                         ActiveSenseState;                                  // 0x0(0x1)
-	char                                                         pad0x7_3VOR1[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_P0Z3I[0x7];                                 // 0x1(0x7)
 	Class AthenaCharacter*                                       Owner;                                             // 0x8(0x8)
 };
 
@@ -11280,7 +11297,7 @@ struct EventAncientAIFormDespawned
 {
 public:
 	bool                                                         WasKilled;                                         // 0x0(0x1)
-	char                                                         pad0x7_F9X4N[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_DPWBC[0x7];                                 // 0x1(0x7)
 	Class Actor*                                                 KilledBy;                                          // 0x8(0x8)
 };
 
@@ -11290,7 +11307,7 @@ struct FogBankLocalPlayerPenetrationEvent
 {
 public:
 	byte                                                         FogBankType;                                       // 0x0(0x1)
-	char                                                         pad0x3_3S9F8[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_KAAYA[0x3];                                 // 0x1(0x3)
 	float                                                        PenetrationT3D;                                    // 0x4(0x4)
 	float                                                        PenetrationTHorizontal;                            // 0x8(0x4)
 	float                                                        PenetrationTVertical;                              // 0xc(0x4)
@@ -11498,7 +11515,7 @@ struct ClientEndEngagementMessageEvent
 {
 public:
 	float                                                        ScreenDuration;                                    // 0x0(0x4)
-	char                                                         pad0x4_MV0EL[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_DJDC2[0x4];                                 // 0x4(0x4)
 	Struct FString                                               EndedScreen;                                       // 0x8(0x10)
 };
 
@@ -11798,7 +11815,7 @@ public:
 	byte                                                         SelectedPlayMode;                                  // 0x2(0x1)
 	byte                                                         SessionGrouping;                                   // 0x3(0x1)
 	byte                                                         SessionStyle;                                      // 0x4(0x1)
-	char                                                         pad0x3_VVD8L[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_5OATY[0x3];                                 // 0x5(0x3)
 	Struct FString                                               ShipId;                                            // 0x8(0x10)
 	Struct FString                                               GuildId;                                           // 0x18(0x10)
 	Struct FString                                               ShipOwnerUserId;                                   // 0x28(0x10)
@@ -11897,7 +11914,7 @@ struct QueryConfirmInviteResponse
 {
 public:
 	bool                                                         IsInviteConfirmationPending;                       // 0x0(0x1)
-	char                                                         pad0x7_DHERC[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_WXKTW[0x7];                                 // 0x1(0x7)
 	Struct FString                                               ErrorMessage;                                      // 0x8(0x10)
 	bool                                                         IsErrorMessage;                                    // 0x18(0x1)
 };
@@ -12348,7 +12365,7 @@ struct LobbyCrewInfo
 {
 public:
 	byte                                                         SessionType;                                       // 0x0(0x1)
-	char                                                         pad0x7_WB047[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_ZR2HC[0x7];                                 // 0x1(0x7)
 	TArray<struct Members>                                       Members;                                           // 0x8(0x10)
 	Struct FString                                               SessionName;                                       // 0x18(0x10)
 };
@@ -12460,11 +12477,11 @@ struct CreativeSession
 public:
 	TArray<struct CrewConfigs>                                   CrewConfigs;                                       // 0x0(0x10)
 	bool                                                         IsHost;                                            // 0x10(0x1)
-	char                                                         pad0x7_A1LAS[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_MH94R[0x7];                                 // 0x11(0x7)
 	TArray<struct Members>                                       Members;                                           // 0x18(0x10)
 	Struct FString                                               SessionCode;                                       // 0x28(0x10)
 	int                                                          State;                                             // 0x38(0x4)
-	char                                                         pad0x4_TV8HZ[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_55IEG[0x4];                                 // 0x3c(0x4)
 	Struct FString                                               XUID;                                              // 0x40(0x10)
 };
 
@@ -12474,7 +12491,7 @@ struct CreativeCrewMember
 {
 public:
 	int                                                          CrewId;                                            // 0x0(0x4)
-	char                                                         pad0x4_B6XR6[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_8R7AO[0x4];                                 // 0x4(0x4)
 	Struct FString                                               GamerTag;                                          // 0x8(0x10)
 	Struct FString                                               XUID;                                              // 0x18(0x10)
 };
@@ -12754,7 +12771,7 @@ struct ToggleCinematicModeRpc
 {
 public:
 	bool                                                         bInCinematicMode;                                  // 0x10(0x1)
-	char                                                         pad0x7_OQ37K[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_MJMMY[0x7];                                 // 0x11(0x7)
 	Class PlayerController*                                      PlayerController;                                  // 0x18(0x8)
 };
 
@@ -12810,7 +12827,7 @@ public:
 	bool                                                         RequireSpecificLiquidType;                         // 0x28(0x1)
 	bool                                                         RequireSpecificMinimumVolume;                      // 0x29(0x1)
 	byte                                                         RequiredLiquidType;                                // 0x2a(0x1)
-	char                                                         pad0x1_YLE7I[0x1];                                 // 0x2b(0x1)
+	char                                                         pad0x1_NCXTG[0x1];                                 // 0x2b(0x1)
 	float                                                        RequiredMinimumVolume;                             // 0x2c(0x4)
 };
 
@@ -12834,10 +12851,10 @@ struct ContestScoreTelemetryGameEvent
 {
 public:
 	byte                                                         ScoreReason;                                       // 0x0(0x1)
-	char                                                         pad0x3_TYUE7[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_G94L2[0x3];                                 // 0x1(0x3)
 	int                                                          CurrentScore;                                      // 0x4(0x4)
 	int                                                          ScoreChangeAmount;                                 // 0x8(0x4)
-	char                                                         pad0x4_VDU7S[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_ONB0G[0x4];                                 // 0xc(0x4)
 	Struct FString                                               ScoreContext;                                      // 0x10(0x10)
 	Struct Guid                                                  InstigatorId;                                      // 0x20(0x10)
 };
@@ -12865,11 +12882,11 @@ struct CrewScoreAppendedEvent
 {
 public:
 	byte                                                         ScoreId;                                           // 0x0(0x1)
-	char                                                         pad0x3_MPTDO[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_1IVT2[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  CrewId;                                            // 0x4(0x10)
 	int                                                          CrewScore;                                         // 0x14(0x4)
 	byte                                                         ScoreReason;                                       // 0x18(0x1)
-	char                                                         pad0x7_KCUJ0[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_COP6I[0x7];                                 // 0x19(0x7)
 	Struct StringAssetReference                                  ScoringIconAssetReference;                         // 0x20(0x10)
 };
 
@@ -12879,7 +12896,7 @@ struct CrewScoredEvent
 {
 public:
 	byte                                                         ScoreId;                                           // 0x0(0x1)
-	char                                                         pad0x3_XDABL[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_21LQ5[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  CrewId;                                            // 0x4(0x10)
 	int                                                          CrewScore;                                         // 0x14(0x4)
 	byte                                                         ReasonForScoring;                                  // 0x18(0x1)
@@ -12891,7 +12908,7 @@ struct CrewWinEvent
 {
 public:
 	byte                                                         ScoreId;                                           // 0x0(0x1)
-	char                                                         pad0x3_FC3D2[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_A8HHC[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  CrewId;                                            // 0x4(0x10)
 	int                                                          CrewScore;                                         // 0x14(0x4)
 	byte                                                         ReasonForScoring;                                  // 0x18(0x1)
@@ -12999,7 +13016,7 @@ struct StreamSnapshotModel
 {
 public:
 	int                                                          ViewerCount;                                       // 0x0(0x4)
-	char                                                         pad0x4_DB06R[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_OYS4U[0x4];                                 // 0x4(0x4)
 	Struct DateTime                                              TimeStamp;                                         // 0x8(0x8)
 };
 
@@ -13416,7 +13433,7 @@ struct ClientMeleeHitRegInfoTelemetryEvent
 public:
 	Struct Guid                                                  AttackId;                                          // 0x0(0x10)
 	int                                                          NumHits;                                           // 0x10(0x4)
-	char                                                         pad0x4_Q8WA0[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_0ED94[0x4];                                 // 0x14(0x4)
 	Struct FString                                               HitObjectId;                                       // 0x18(0x10)
 	Struct FString                                               HitObjectType;                                     // 0x28(0x10)
 	Struct FString                                               HitActorName;                                      // 0x38(0x10)
@@ -13430,7 +13447,7 @@ struct ServerMeleeHitRegInfoTelemetryEvent
 public:
 	Struct Guid                                                  AttackId;                                          // 0x0(0x10)
 	int                                                          NumHits;                                           // 0x10(0x4)
-	char                                                         pad0x4_NJOG3[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_5CPCA[0x4];                                 // 0x14(0x4)
 	Struct FString                                               HitObjectId;                                       // 0x18(0x10)
 	Struct FString                                               HitObjectType;                                     // 0x28(0x10)
 	Struct FString                                               HitActorName;                                      // 0x38(0x10)
@@ -13448,7 +13465,7 @@ public:
 	Struct Guid                                                  AttackId;                                          // 0x0(0x10)
 	Struct FString                                               AttackType;                                        // 0x10(0x10)
 	int                                                          ComboIndex;                                        // 0x20(0x4)
-	char                                                         pad0x4_XV9O9[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_KLZAH[0x4];                                 // 0x24(0x4)
 	Struct FString                                               WeaponName;                                        // 0x28(0x10)
 	float                                                        RequesterLatencyMs;                                // 0x38(0x4)
 	float                                                        RequesterTimeOffset;                               // 0x3c(0x4)
@@ -13460,7 +13477,7 @@ struct MeleeAttackMoveSpeedValidationTelemetryEvent
 {
 public:
 	byte                                                         CorrectionReason;                                  // 0x0(0x1)
-	char                                                         pad0x3_Y3WEZ[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_Z4CRE[0x3];                                 // 0x1(0x3)
 	float                                                        AllowedWindowStartTimeSeconds;                     // 0x4(0x4)
 	float                                                        AllowedWindowFinishTimeSeconds;                    // 0x8(0x4)
 	float                                                        CurrentAttackClientTimeSeconds;                    // 0xc(0x4)
@@ -13518,6 +13535,14 @@ public:
 };
 
 
+// Size 0x58
+struct CompanyShopActionStateConstructionInfo
+{
+public:
+	Struct NetObjectPtr                                          NPC;                                               // 0x30(0x14)
+};
+
+
 // Size 0x10
 struct ClientConditionsCompleteNetworkEvent
 {
@@ -13530,7 +13555,7 @@ struct ControlPulleyActionStateConstructionInfo
 {
 public:
 	byte                                                         ControllableType;                                  // 0x48(0x1)
-	char                                                         pad0x7_G7M85[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_MOV0W[0x7];                                 // 0x49(0x7)
 	class                                                        AnalogInputId;                                     // 0x50(0x8)
 	Struct ControlPulleyActionStateParams                        ActionStateParamsOverride;                         // 0x58(0x34)
 	bool                                                         UseActionStateParamsOverride;                      // 0x8c(0x1)
@@ -13602,7 +13627,7 @@ public:
 	Struct NetActorPtr                                           LoadableObject;                                    // 0x30(0x14)
 	Struct NetActorPtr                                           Interactable;                                      // 0x44(0x14)
 	bool                                                         ControllingLoadable;                               // 0x58(0x1)
-	char                                                         pad0x7_LJCAQ[0x7];                                 // 0x59(0x7)
+	char                                                         pad0x7_P0RFN[0x7];                                 // 0x59(0x7)
 	class                                                        DefaultItemDesc;                                   // 0x60(0x8)
 };
 
@@ -13639,7 +13664,7 @@ public:
 	float                                                        StartingInteractionHeight;                         // 0x48(0x4)
 	byte                                                         ClimbId;                                           // 0x4c(0x1)
 	byte                                                         LadderTransitionMode;                              // 0x4d(0x1)
-	char                                                         pad0x2_EQZ5V[0x2];                                 // 0x4e(0x2)
+	char                                                         pad0x2_0RH5A[0x2];                                 // 0x4e(0x2)
 	Struct LadderDefinition                                      LadderDefinition;                                  // 0x50(0x1c)
 };
 
@@ -13649,7 +13674,7 @@ struct LadderDefinition
 {
 public:
 	byte                                                         LadderType;                                        // 0x0(0x1)
-	char                                                         pad0x3_97E9B[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_0RC2O[0x3];                                 // 0x1(0x3)
 	Struct LadderBlendParams                                     OnTopLadderBlendParams;                            // 0x4(0xc)
 	Struct LadderBlendParams                                     OffTopLadderBlendParams;                           // 0x10(0xc)
 };
@@ -13677,7 +13702,7 @@ struct MeleeBlockingActionStateConstructionInfo
 {
 public:
 	Struct NetActorPtr                                           WieldedItem;                                       // 0x30(0x14)
-	char                                                         pad0x4_9A2GT[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_5VWLY[0x4];                                 // 0x44(0x4)
 	class                                                        InputID;                                           // 0x48(0x8)
 	float                                                        BlockMovementLockTime;                             // 0x50(0x4)
 };
@@ -13815,11 +13840,11 @@ public:
 };
 
 
-// Size 0x48
+// Size 0x50
 struct TalkToNPCActionStateConstructionInfo
 {
 public:
-	Class NPCDialogComponent*                                    NPCDialogComp;                                     // 0x30(0x8)
+	Class NPCDialogComponent*                                    NPCDialogComp;                                     // 0x38(0x8)
 };
 
 
@@ -13865,7 +13890,7 @@ struct UndoRepairActionStateConstructionInfo
 {
 public:
 	Struct NetSubObjectPtr                                       RepairableObject;                                  // 0x30(0x14)
-	char                                                         pad0x4_Z1NHN[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_FGAJC[0x4];                                 // 0x44(0x4)
 	class                                                        InputID;                                           // 0x48(0x8)
 };
 
@@ -13884,7 +13909,7 @@ struct UseLadderActionStateConstructionInfo
 public:
 	float                                                        StartingInteractionHeight;                         // 0x48(0x4)
 	byte                                                         ClimbId;                                           // 0x4c(0x1)
-	char                                                         pad0x3_PBGM4[0x3];                                 // 0x4d(0x3)
+	char                                                         pad0x3_4JJ7G[0x3];                                 // 0x4d(0x3)
 	Struct LadderDefinition                                      LadderDefinition;                                  // 0x50(0x1c)
 };
 
@@ -14078,7 +14103,7 @@ struct OpenReputationMenuEvent
 {
 public:
 	byte                                                         NavigationAction;                                  // 0x0(0x1)
-	char                                                         pad0x7_4FXUM[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_VBSK2[0x7];                                 // 0x1(0x7)
 	Struct FString                                               CompanyId;                                         // 0x8(0x10)
 };
 
@@ -14090,7 +14115,7 @@ public:
 	Struct FString                                               ShopLocation;                                      // 0x0(0x10)
 	Struct FString                                               VisitStartDate;                                    // 0x10(0x10)
 	byte                                                         NavigationAction;                                  // 0x24(0x1)
-	char                                                         pad0x3_2XTNK[0x3];                                 // 0x25(0x3)
+	char                                                         pad0x3_Z9C7X[0x3];                                 // 0x25(0x3)
 	Struct FString                                               CompanyId;                                         // 0x28(0x10)
 };
 
@@ -14368,33 +14393,10 @@ public:
 };
 
 
-// Size 0x8
-struct EventPlayerLoggedOut
-{
-public:
-	Class OnlineAthenaPlayerController*                          OnlineAthenaPlayerController;                      // 0x0(0x8)
-};
-
-
 // Size 0x1
 struct EventInitialPawnPossessed
 {
 public:
-};
-
-
-// Size 0x1
-struct EventPlayerPawnLeavingGame
-{
-public:
-};
-
-
-// Size 0x18
-struct EventPlayerLoggedIn
-{
-public:
-	Class OnlineAthenaPlayerController*                          OnlineAthenaPlayerController;                      // 0x0(0x8)
 };
 
 
@@ -14445,7 +14447,7 @@ struct TeleportStageCompletedTelemetryEvent
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
 	float                                                        Duration;                                          // 0x10(0x4)
-	char                                                         pad0x4_SJZ05[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_TUEQJ[0x4];                                 // 0x14(0x4)
 	Struct FString                                               Reason;                                            // 0x18(0x10)
 	Struct FString                                               CompletedStage;                                    // 0x28(0x10)
 };
@@ -14551,7 +14553,7 @@ public:
 	Struct FString                                               EncounteredObjectId;                               // 0x10(0x10)
 	byte                                                         EncounterType;                                     // 0x20(0x1)
 	byte                                                         ShipRegion;                                        // 0x21(0x1)
-	char                                                         pad0x2_MS93S[0x2];                                 // 0x22(0x2)
+	char                                                         pad0x2_HQMTA[0x2];                                 // 0x22(0x2)
 	float                                                        EncounterDistance;                                 // 0x24(0x4)
 };
 
@@ -14628,7 +14630,7 @@ public:
 	float                                                        PreviousHealth;                                    // 0x14(0x4)
 	float                                                        HealthDelta;                                       // 0x18(0x4)
 	byte                                                         Reason;                                            // 0x1c(0x1)
-	char                                                         pad0x3_MQXI5[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_YMZ4S[0x3];                                 // 0x1d(0x3)
 	double                                                       SecondsSinceSpawned;                               // 0x28(0x8)
 };
 
@@ -14716,10 +14718,10 @@ public:
 	Struct FString                                               SpawnPointName;                                    // 0x0(0x10)
 	Struct FString                                               IslandName;                                        // 0x10(0x10)
 	byte                                                         SpawnType;                                         // 0x24(0x1)
-	char                                                         pad0x3_X040A[0x3];                                 // 0x25(0x3)
+	char                                                         pad0x3_2A8C1[0x3];                                 // 0x25(0x3)
 	double                                                       SpawnDuration;                                     // 0x28(0x8)
 	int                                                          PlayersCrewSize;                                   // 0x30(0x4)
-	char                                                         pad0x4_BJQS8[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_IYMNH[0x4];                                 // 0x34(0x4)
 	double                                                       DistanceToClosestOpponent;                         // 0x38(0x8)
 };
 
@@ -14854,7 +14856,7 @@ struct RewardGrantedNetworkEvent
 public:
 	Struct FString                                               RewardId;                                          // 0x10(0x10)
 	byte                                                         CurrencyId;                                        // 0x20(0x1)
-	char                                                         pad0x3_5E167[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_8QJWU[0x3];                                 // 0x21(0x3)
 	Struct FString                                               CompanyId;                                         // 0x28(0x10)
 	TArray<Str Entitlements>                                     Entitlements;                                      // 0x40(0x10)
 	Struct FString                                               DeferralReason;                                    // 0x50(0x10)
@@ -14876,7 +14878,7 @@ struct CurrencyGrantedNetworkEvent
 {
 public:
 	byte                                                         CurrencyId;                                        // 0x10(0x1)
-	char                                                         pad0x3_G7PP4[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_M7P70[0x3];                                 // 0x11(0x3)
 	struct FName                                                 EmissaryAffiliation;                               // 0x18(0x8)
 	float                                                        EmissaryMultiplier;                                // 0x20(0x4)
 	struct FName                                                 RewardId;                                          // 0x24(0x8)
@@ -14917,7 +14919,7 @@ public:
 	Struct PirateIdentity                                        Captain;                                           // 0x78(0x78)
 	byte                                                         PlayMode;                                          // 0xf0(0x1)
 	byte                                                         PlayModeVariant;                                   // 0xf1(0x1)
-	char                                                         pad0x6_19O4S[0x6];                                 // 0xf2(0x6)
+	char                                                         pad0x6_9I6AU[0x6];                                 // 0xf2(0x6)
 };
 
 
@@ -14927,7 +14929,7 @@ struct StatBatchMessageValues
 public:
 	TArray<UInt64 Values>                                        Values;                                            // 0x0(0x10)
 	bool                                                         ApplyShipProgression;                              // 0x10(0x1)
-	char                                                         pad0x3_YOKMJ[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_J6ISD[0x3];                                 // 0x11(0x3)
 	Struct Guid                                                  ShipId;                                            // 0x14(0x10)
 	bool                                                         ShouldNotifyPlayer;                                // 0x24(0x1)
 };
@@ -14978,7 +14980,7 @@ struct HUDWalletBalance
 {
 public:
 	byte                                                         CurrencyId;                                        // 0x0(0x1)
-	char                                                         pad0x7_L57H4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_48SPY[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 DisplayBalance;                                    // 0x8(0x38)
 };
 
@@ -15022,7 +15024,7 @@ struct RequestOpenPossessionsChestEvent
 {
 public:
 	byte                                                         PossessionsChestType;                              // 0x0(0x1)
-	char                                                         pad0x7_58OFV[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_6OCHL[0x7];                                 // 0x1(0x7)
 	TArray<Str Categories>                                       Categories;                                        // 0x8(0x10)
 };
 
@@ -15269,7 +15271,7 @@ struct ShipSpeedUpdateTelemetryEvent
 {
 public:
 	int                                                          TimeElapsed;                                       // 0x0(0x4)
-	char                                                         pad0x4_2DMA9[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_HHUS5[0x4];                                 // 0x4(0x4)
 	Struct FString                                               ShipSize;                                          // 0x8(0x10)
 	Struct FString                                               ShipDirection;                                     // 0x18(0x10)
 	Struct FString                                               WindDirection;                                     // 0x28(0x10)
@@ -15321,7 +15323,7 @@ struct ShipUndoRepairTelemetryEvent
 public:
 	Struct FString                                               UserId;                                            // 0x0(0x10)
 	Struct Vector                                                UndoRepairLocation;                                // 0x10(0xc)
-	char                                                         pad0x4_ADLEX[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_ZZ94S[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               ShipPart;                                          // 0x20(0x10)
 	int                                                          DamageLevel;                                       // 0x30(0x4)
 	float                                                        UndoRepairPercentage;                              // 0x34(0x4)
@@ -15334,7 +15336,7 @@ struct ShipRepairTelemetryEvent
 public:
 	Struct FString                                               UserId;                                            // 0x0(0x10)
 	Struct Vector                                                DamageLocation;                                    // 0x10(0xc)
-	char                                                         pad0x4_5UADJ[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_IL8N0[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               RepairedShipPart;                                  // 0x20(0x10)
 	int                                                          DamageLevel;                                       // 0x30(0x4)
 	float                                                        RepairPercentage;                                  // 0x34(0x4)
@@ -15347,7 +15349,7 @@ struct ShipDamagedTelemetryEvent
 public:
 	Struct FString                                               DamageType;                                        // 0x0(0x10)
 	Struct Vector                                                DamageLocation;                                    // 0x10(0xc)
-	char                                                         pad0x4_3MC7W[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_5DGH0[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               DamagedShipPart;                                   // 0x20(0x10)
 	int                                                          DamageLevel;                                       // 0x30(0x4)
 	Struct Guid                                                  AttackId;                                          // 0x34(0x10)
@@ -15562,7 +15564,7 @@ public:
 	Struct FireRequest                                           Request;                                           // 0x20(0xb0)
 	Class LaunchableShotActionComponent*                         Action;                                            // 0xd0(0x8)
 	Struct Vector                                                LocalWielderVelocity;                              // 0xd8(0xc)
-	char                                                         pad0x4_1QP5Q[0x4];                                 // 0xe4(0x4)
+	char                                                         pad0x4_WGK0W[0x4];                                 // 0xe4(0x4)
 };
 
 
@@ -15644,7 +15646,7 @@ public:
 	bool                                                         IsShooterOnLand;                                   // 0xcc(0x1)
 	bool                                                         IsServerHitActorOnLand;                            // 0xcd(0x1)
 	bool                                                         IsClientHitActorOnLand;                            // 0xce(0x1)
-	char                                                         pad0x1_R2O39[0x1];                                 // 0xcf(0x1)
+	char                                                         pad0x1_FMIZK[0x1];                                 // 0xcf(0x1)
 	float                                                        ClientHitDistance;                                 // 0xd0(0x4)
 	float                                                        ServerHitDistance;                                 // 0xd4(0x4)
 	float                                                        ClientHitCapsuleCoreOffsetInViewPlane;             // 0xd8(0x4)
@@ -15662,7 +15664,7 @@ public:
 	bool                                                         IsProjectileFixedTimestepFeatureEnabled;           // 0xf0(0x1)
 	bool                                                         IsShipNewTimeServiceEnabled;                       // 0xf1(0x1)
 	bool                                                         IsTickProjectileServiceAfterCharacterMovementOnClientFeatureEnabled; // 0xf2(0x1)
-	char                                                         pad0x5_W3TDT[0x5];                                 // 0xf3(0x5)
+	char                                                         pad0x5_UE4JN[0x5];                                 // 0xf3(0x5)
 	Struct FString                                               DamagerType;                                       // 0xf8(0x10)
 	bool                                                         HasInaccuracySeedMismatch;                         // 0x108(0x1)
 	bool                                                         SceneRewindSucceeded;                              // 0x109(0x1)
@@ -15729,7 +15731,7 @@ public:
 	float                                                        AimPositionCorrection;                             // 0x4(0x4)
 	float                                                        LatencyMs;                                         // 0x8(0x4)
 	Struct Guid                                                  AttackId;                                          // 0xc(0x10)
-	char                                                         pad0x4_42LHV[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_SUMZ4[0x4];                                 // 0x1c(0x4)
 	Struct FString                                               WeaponType;                                        // 0x20(0x10)
 };
 
@@ -15744,7 +15746,7 @@ public:
 	Struct FString                                               WeaponName;                                        // 0x30(0x10)
 	bool                                                         WasLoaded;                                         // 0x40(0x1)
 	bool                                                         WasAiming;                                         // 0x41(0x1)
-	char                                                         pad0x2_0ZDNK[0x2];                                 // 0x42(0x2)
+	char                                                         pad0x2_FVQYX[0x2];                                 // 0x42(0x2)
 	float                                                        RequesterLatencyMs;                                // 0x44(0x4)
 	float                                                        RequesterTimeOffset;                               // 0x48(0x4)
 };
@@ -15776,7 +15778,7 @@ struct ContestMapCrewData
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	bool                                                         IsLocalCrew;                                       // 0x10(0x1)
-	char                                                         pad0x7_69WPP[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_SHOJM[0x7];                                 // 0x11(0x7)
 	Class Texture*                                               CrewIcon;                                          // 0x18(0x8)
 	Class Texture*                                               ScoreIcon;                                         // 0x20(0x8)
 	Class Texture*                                               UnderlineIcon;                                     // 0x28(0x8)
@@ -15816,7 +15818,7 @@ struct VaultStateData
 {
 public:
 	bool                                                         IsActive;                                          // 0x20(0x1)
-	char                                                         pad0x3_8W0XG[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_7NB80[0x3];                                 // 0x21(0x3)
 	Struct Vector                                                RewardPlinthPosition;                              // 0x24(0xc)
 };
 
@@ -15908,7 +15910,7 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	Struct FString                                               ShipSize;                                          // 0x10(0x10)
 	int                                                          ShipId;                                            // 0x20(0x4)
-	char                                                         pad0x4_OLDJZ[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_4PGOA[0x4];                                 // 0x24(0x4)
 	TArray<struct Players>                                       Players;                                           // 0x28(0x10)
 	TArray<struct Booty>                                         Booty;                                             // 0x38(0x10)
 };
@@ -15920,7 +15922,7 @@ struct CollectedBootySnapshot
 public:
 	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	byte                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_EQI4J[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_JZOFB[0x7];                                 // 0x11(0x7)
 	Struct FString                                               Rarity;                                            // 0x18(0x10)
 };
 
@@ -15931,7 +15933,7 @@ struct PlayerStateSnapshot
 public:
 	int                                                          PlayerStateId;                                     // 0x0(0x4)
 	Struct Guid                                                  PlayerGameId;                                      // 0x4(0x10)
-	char                                                         pad0x4_TTXBW[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_L294K[0x4];                                 // 0x14(0x4)
 	Struct FString                                               GamerTag;                                          // 0x18(0x10)
 	Struct PlayerCharacterSnapshot                               Character;                                         // 0x28(0x14)
 };
@@ -15964,7 +15966,7 @@ public:
 	Struct Vector                                                Position;                                          // 0x4(0xc)
 	Struct WheelSnapshot                                         Wheel;                                             // 0x10(0x8)
 	Struct CapstanSnapshot                                       Capstan;                                           // 0x18(0x4)
-	char                                                         pad0x4_AM7PN[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_HIHYR[0x4];                                 // 0x1c(0x4)
 	TArray<struct Masts>                                         Masts;                                             // 0x20(0x10)
 	TArray<struct Cannons>                                       Cannons;                                           // 0x30(0x10)
 	TArray<struct StorageContainers>                             StorageContainers;                                 // 0x40(0x10)
@@ -16054,7 +16056,7 @@ struct SpawnItemGameServerResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_ETNUN[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_ZGMNA[0x3];                                 // 0x1(0x3)
 };
 
 
@@ -16082,7 +16084,7 @@ struct EndEmoteGameServerRequestModel
 {
 public:
 	int                                                          ActorId;                                           // 0x0(0x4)
-	char                                                         pad0x4_KFUTK[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_SRA5V[0x4];                                 // 0x4(0x4)
 	Struct FString                                               EmoteName;                                         // 0x8(0x10)
 };
 
@@ -16092,7 +16094,7 @@ struct StartEmoteGameServerRequestModel
 {
 public:
 	int                                                          ActorId;                                           // 0x0(0x4)
-	char                                                         pad0x4_ZDEML[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_D1XKD[0x4];                                 // 0x4(0x4)
 	Struct FString                                               EmoteName;                                         // 0x8(0x10)
 };
 
@@ -16102,7 +16104,7 @@ struct RemoveStatusesGameServerRequestModel
 {
 public:
 	int                                                          ActorId;                                           // 0x0(0x4)
-	char                                                         pad0x4_JGFLQ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_ATYSI[0x4];                                 // 0x4(0x4)
 	TArray<Str Statuses>                                         Statuses;                                          // 0x8(0x10)
 };
 
@@ -16112,7 +16114,7 @@ struct AddStatusesGameServerRequestModel
 {
 public:
 	int                                                          ActorId;                                           // 0x0(0x4)
-	char                                                         pad0x4_FYZ44[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_LMTTP[0x4];                                 // 0x4(0x4)
 	TArray<Str Statuses>                                         Statuses;                                          // 0x8(0x10)
 };
 
@@ -16293,7 +16295,7 @@ struct CreateFogBankGameServerResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_OQDX8[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_P1MF9[0x3];                                 // 0x1(0x3)
 	int                                                          FogBankId;                                         // 0x4(0x4)
 };
 
@@ -16340,7 +16342,7 @@ struct CreateStormGameServerResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_L3LJ3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_X1G6V[0x3];                                 // 0x1(0x3)
 	int                                                          StormId;                                           // 0x4(0x4)
 };
 
@@ -16410,7 +16412,7 @@ public:
 	bool                                                         CannonSkeletons;                                   // 0x1(0x1)
 	bool                                                         SkeletonCaptains;                                  // 0x2(0x1)
 	bool                                                         AncientSkeletons;                                  // 0x3(0x1)
-	char                                                         pad0x4_NC8GD[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_8I9FX[0x4];                                 // 0x4(0x4)
 	Struct FString                                               IslandName;                                        // 0x8(0x10)
 };
 
@@ -16453,7 +16455,7 @@ struct CreateTriggerGameServerResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_P78A1[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_D2OX6[0x3];                                 // 0x1(0x3)
 	int                                                          TriggerNetId;                                      // 0x4(0x4)
 };
 
@@ -16549,7 +16551,7 @@ struct SetVulnerabilityGameServerRequestModel
 {
 public:
 	int                                                          ActorId;                                           // 0x0(0x4)
-	char                                                         pad0x4_95O6V[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_UHQEF[0x4];                                 // 0x4(0x4)
 	Struct FString                                               DamagerType;                                       // 0x8(0x10)
 	float                                                        DamageMultipler;                                   // 0x18(0x4)
 };
@@ -16729,7 +16731,7 @@ public:
 	bool                                                         IsFirstTimePlaying;                                // 0x3(0x1)
 	bool                                                         IsOnContestServer;                                 // 0x4(0x1)
 	bool                                                         IsInContestTavern;                                 // 0x5(0x1)
-	char                                                         pad0x2_L102U[0x2];                                 // 0x6(0x2)
+	char                                                         pad0x2_51U1B[0x2];                                 // 0x6(0x2)
 	TArray<struct PotentialLocations>                            PotentialLocations;                                // 0x8(0x10)
 };
 
@@ -16739,7 +16741,7 @@ struct FailedToFindPlayerSpawnLocationPotentialLocation
 {
 public:
 	Struct Vector                                                Position;                                          // 0x0(0xc)
-	char                                                         pad0x4_0LMV2[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_8H2IB[0x4];                                 // 0xc(0x4)
 	Struct FString                                               Description;                                       // 0x10(0x10)
 };
 
@@ -16844,7 +16846,7 @@ struct ProjectileHitRegistrationTelemetry
 public:
 	Struct Guid                                                  AttackId;                                          // 0x0(0x10)
 	int                                                          ProjectileIndex;                                   // 0x10(0x4)
-	char                                                         pad0x4_8LRT7[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_GRM2F[0x4];                                 // 0x14(0x4)
 	Struct FString                                               DamagerType;                                       // 0x18(0x10)
 	double                                                       ClientHitTimestamp;                                // 0x28(0x8)
 	double                                                       ServerHitTimestamp;                                // 0x30(0x8)
@@ -16863,29 +16865,29 @@ public:
 	float                                                        ClientProjectileSpeed;                             // 0x98(0x4)
 	float                                                        ServerProjectileSpeed;                             // 0x9c(0x4)
 	int                                                          ClientHitActorNetGuid;                             // 0xa0(0x4)
-	char                                                         pad0x4_QP78Z[0x4];                                 // 0xa4(0x4)
+	char                                                         pad0x4_LHGHQ[0x4];                                 // 0xa4(0x4)
 	Struct FString                                               ClientHitActorTypeName;                            // 0xa8(0x10)
 	Struct FString                                               ClientHitComponentName;                            // 0xb8(0x10)
 	int                                                          ServerHitActorNetGuid;                             // 0xc8(0x4)
-	char                                                         pad0x4_BBB0T[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_S3IU7[0x4];                                 // 0xcc(0x4)
 	Struct FString                                               ServerHitActorTypeName;                            // 0xd0(0x10)
 	Struct FString                                               ServerHitComponentName;                            // 0xe0(0x10)
 	bool                                                         HitAgreement;                                      // 0xf0(0x1)
-	char                                                         pad0x3_NDN6T[0x3];                                 // 0xf1(0x3)
+	char                                                         pad0x3_PXYYR[0x3];                                 // 0xf1(0x3)
 	float                                                        ClientServerComponentPositionDelta;                // 0xf4(0x4)
 	float                                                        ClientServerComponentAngleDelta;                   // 0xf8(0x4)
 	bool                                                         ServerWasRewound;                                  // 0xfc(0x1)
 	bool                                                         ServerRewindWasInBounds;                           // 0xfd(0x1)
-	char                                                         pad0x2_HSJ03[0x2];                                 // 0xfe(0x2)
+	char                                                         pad0x2_44GNW[0x2];                                 // 0xfe(0x2)
 	float                                                        ServerRewindTimestamp;                             // 0x100(0x4)
 	float                                                        InstigatorActorSpeed;                              // 0x104(0x4)
 	bool                                                         InstigatorIsOnLand;                                // 0x108(0x1)
-	char                                                         pad0x7_MJSML[0x7];                                 // 0x109(0x7)
+	char                                                         pad0x7_BGDRL[0x7];                                 // 0x109(0x7)
 	Struct FString                                               InstigatorBaseShipName;                            // 0x110(0x10)
 	float                                                        InstigatorBaseShipSpeed;                           // 0x120(0x4)
 	float                                                        ClientHitActorSpeed;                               // 0x124(0x4)
 	bool                                                         ClientHitActorIsOnLand;                            // 0x128(0x1)
-	char                                                         pad0x7_HDP5T[0x7];                                 // 0x129(0x7)
+	char                                                         pad0x7_PWTL1[0x7];                                 // 0x129(0x7)
 	Struct FString                                               ClientHitActorBaseShipName;                        // 0x130(0x10)
 	float                                                        ClientHitActorBaseShipSpeed;                       // 0x140(0x4)
 	float                                                        ClientHitCapsuleCoreOffsetInViewPlane;             // 0x144(0x4)
@@ -16899,7 +16901,8 @@ public:
 	bool                                                         IsEvaluateAngleWhenDeterminingWhetherToInterpolateFeatureEnabled; // 0x14f(0x1)
 	bool                                                         IsProjectileFixedTimestepFeatureEnabled;           // 0x150(0x1)
 	bool                                                         IsShipNewTimeServiceFeatureEnabled;                // 0x151(0x1)
-	bool                                                         IsTickProjectileServiceAfterCharacterMovementOnClientFeatureEnabled; // 0x152(0x1)
+	bool                                                         IsAlternativeShipPhysicsCorrectionMethodEnabled;   // 0x152(0x1)
+	bool                                                         IsTickProjectileServiceAfterCharacterMovementOnClientFeatureEnabled; // 0x153(0x1)
 };
 
 
@@ -17185,7 +17188,7 @@ public:
 	Struct FString                                               UserId;                                            // 0x0(0x10)
 	Struct FString                                               PirateId;                                          // 0x10(0x10)
 	bool                                                         Success;                                           // 0x20(0x1)
-	char                                                         pad0x3_OQGWY[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_WRJKN[0x3];                                 // 0x21(0x3)
 	int                                                          AchievementsUpdatedCount;                          // 0x24(0x4)
 };
 
@@ -17197,7 +17200,7 @@ public:
 	Struct FString                                               UserId;                                            // 0x0(0x10)
 	Struct FString                                               PirateId;                                          // 0x10(0x10)
 	bool                                                         Success;                                           // 0x20(0x1)
-	char                                                         pad0x3_MU2QD[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_Z8T26[0x3];                                 // 0x21(0x3)
 	int                                                          AchievementsRemovedCount;                          // 0x24(0x4)
 };
 
@@ -17234,7 +17237,7 @@ public:
 	Struct FString                                               StoreId;                                           // 0x0(0x10)
 	Struct Guid                                                  OfferId;                                           // 0x10(0x10)
 	byte                                                         CurrencyId;                                        // 0x20(0x1)
-	char                                                         pad0x7_ZUGIF[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_RN4UB[0x7];                                 // 0x21(0x7)
 	Struct FString                                               TransactionId;                                     // 0x28(0x10)
 	Struct PiratePurchaseClaims                                  PiratePurchaseClaims;                              // 0x38(0xa0)
 	byte                                                         PlayMode;                                          // 0xd8(0x1)
@@ -17254,7 +17257,7 @@ struct EmblemClaim
 {
 public:
 	bool                                                         IsCompleted;                                       // 0x0(0x1)
-	char                                                         pad0x7_E2I4U[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_ZRI1N[0x7];                                 // 0x1(0x7)
 	Struct FString                                               Sig;                                               // 0x8(0x10)
 };
 
@@ -17340,7 +17343,7 @@ struct WalletTransactionFinishedEvent
 {
 public:
 	bool                                                         WasSuccessful;                                     // 0x0(0x1)
-	char                                                         pad0x7_PZ8BB[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_R3LKX[0x7];                                 // 0x1(0x7)
 	Struct PirateIdentity                                        PirateIdentity;                                    // 0x8(0x78)
 };
 
@@ -17366,7 +17369,7 @@ struct WalletBalanceItem
 {
 public:
 	byte                                                         CurrencyId;                                        // 0x0(0x1)
-	char                                                         pad0x3_G98KQ[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_FED8D[0x3];                                 // 0x1(0x3)
 };
 
 
@@ -17393,7 +17396,16 @@ struct RequestCompanyProgressEvent
 public:
 	Struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
 	Struct Guid                                                  RequestID;                                         // 0x78(0x10)
-	TArray<struct GuildIds>                                      GuildIds;                                          // 0x88(0x10)
+	TArray<struct SignedGuilds>                                  SignedGuilds;                                      // 0x88(0x10)
+};
+
+
+// Size 0x20
+struct SignedGuildIdModel
+{
+public:
+	Struct Guid                                                  GuildId;                                           // 0x0(0x10)
+	Struct FString                                               Signature;                                         // 0x10(0x10)
 };
 
 
@@ -17430,7 +17442,7 @@ public:
 struct GuildReputationRequestContent
 {
 public:
-	TArray<struct GuildIds>                                      GuildIds;                                          // 0x0(0x10)
+	TArray<struct SignedGuildIds>                                SignedGuildIds;                                    // 0x0(0x10)
 };
 
 
@@ -17469,7 +17481,7 @@ public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)
 	bool                                                         IsCompleted;                                       // 0x18(0x1)
-	char                                                         pad0x7_EQG8L[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_0WLX7[0x7];                                 // 0x19(0x7)
 	TArray<struct CriteriaProgress>                              CriteriaProgress;                                  // 0x20(0x10)
 	Struct FString                                               Sig;                                               // 0x30(0x10)
 };
@@ -17503,7 +17515,7 @@ public:
 	Struct FString                                               RewardId;                                          // 0x198(0x10)
 	bool                                                         HasActiveDuration;                                 // 0x1a8(0x1)
 	bool                                                         MarkAsNew;                                         // 0x1a9(0x1)
-	char                                                         pad0x6_QGJ5F[0x6];                                 // 0x1aa(0x6)
+	char                                                         pad0x6_A7CUG[0x6];                                 // 0x1aa(0x6)
 	Struct DateTime                                              ActiveFrom;                                        // 0x1b0(0x8)
 	Struct DateTime                                              ActiveUntil;                                       // 0x1b8(0x8)
 	Struct FString                                               Name;                                              // 0x1c8(0x10)
@@ -17520,7 +17532,7 @@ public:
 	Struct FText                                                 Description;                                       // 0x48(0x38)
 	Struct FText                                                 CompletedDescription;                              // 0x80(0x38)
 	float                                                        ValueArgScalar;                                    // 0xb8(0x4)
-	char                                                         pad0x4_4WHR4[0x4];                                 // 0xbc(0x4)
+	char                                                         pad0x4_05CIO[0x4];                                 // 0xbc(0x4)
 	TArray<struct Emblems>                                       Emblems;                                           // 0xc0(0x10)
 	Class PopUpMessageDesc*                                      UnlockPopUp;                                       // 0xd0(0x8)
 	Class PopUpAudioDesc*                                        UnlockPopUpAudioOverrides;                         // 0xd8(0x8)
@@ -17531,7 +17543,7 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x68
 struct EmblemRankDefinition
 {
 public:
@@ -17540,6 +17552,16 @@ public:
 	Struct StringAssetReference                                  LockedImagePath;                                   // 0x20(0x10)
 	TArray<struct UnlockCriteria>                                UnlockCriteria;                                    // 0x30(0x10)
 	Struct RewardId                                              RewardId;                                          // 0x40(0x8)
+	Struct EmblemId                                              PrerequisiteEmblem;                                // 0x4c(0x18)
+};
+
+
+// Size 0x18
+struct EmblemId
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	Struct Guid                                                  Id;                                                // 0x8(0x10)
 };
 
 
@@ -17548,7 +17570,7 @@ struct EmblemCriteria
 {
 public:
 	Struct PlayerStat                                            PlayerStat;                                        // 0x0(0x4)
-	char                                                         pad0x4_BEBFH[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_RGRJX[0x4];                                 // 0x4(0x4)
 	byte                                                         Operator;                                          // 0x10(0x1)
 };
 
@@ -17584,7 +17606,7 @@ public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)
 	bool                                                         IsCompleted;                                       // 0x18(0x1)
-	char                                                         pad0x7_8EZPP[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_UFXWP[0x7];                                 // 0x19(0x7)
 	TArray<struct CriteriaProgress>                              CriteriaProgress;                                  // 0x20(0x10)
 	Struct FString                                               Sig;                                               // 0x30(0x10)
 };
@@ -17760,7 +17782,7 @@ public:
 	Struct FString                                               UserId;                                            // 0x30(0x10)
 	TArray<struct PlayerGameIds>                                 PlayerGameIds;                                     // 0x40(0x10)
 	bool                                                         HasReward;                                         // 0x50(0x1)
-	char                                                         pad0x7_53K8W[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_8PLRK[0x7];                                 // 0x51(0x7)
 	Struct FString                                               RewardId;                                          // 0x58(0x10)
 };
 
@@ -17922,15 +17944,15 @@ public:
 	bool                                                         InvertXAxisMouse;                                  // 0x6a(0x1)
 	bool                                                         UsePlatformForUnattenuatedChat;                    // 0x6b(0x1)
 	bool                                                         UseProximityChatDirection;                         // 0x6c(0x1)
-	char                                                         pad0x3_MOOI9[0x3];                                 // 0x6d(0x3)
+	char                                                         pad0x3_CDTOH[0x3];                                 // 0x6d(0x3)
 	int                                                          NumberOfLogins;                                    // 0x70(0x4)
 	bool                                                         OptedInToMarketing;                                // 0x74(0x1)
-	char                                                         pad0x3_SFUH4[0x3];                                 // 0x75(0x3)
+	char                                                         pad0x3_Q85W1[0x3];                                 // 0x75(0x3)
 	int                                                          KeyboardLayout;                                    // 0x78(0x4)
 	bool                                                         ShowPlayerTalkingIndicator;                        // 0x7c(0x1)
 	bool                                                         MuteCopyrightedAudio;                              // 0x7d(0x1)
 	bool                                                         UseAltMapMarkTexture;                              // 0x7e(0x1)
-	char                                                         pad0x1_9PF9A[0x1];                                 // 0x7f(0x1)
+	char                                                         pad0x1_7IGNW[0x1];                                 // 0x7f(0x1)
 	float                                                        MouseSensitivity_Blunderbuss;                      // 0x80(0x4)
 	float                                                        ControllerSensitivity_Blunderbuss;                 // 0x84(0x4)
 	float                                                        MouseSensitivity_Flintlock;                        // 0x88(0x4)
@@ -17942,7 +17964,7 @@ public:
 	float                                                        MouseSensitivity_TridentOfDarkTides;               // 0xa0(0x4)
 	float                                                        ControllerSensitivity_TridentOfDarkTides;          // 0xa4(0x4)
 	bool                                                         VariableRefreshRate;                               // 0xa8(0x1)
-	char                                                         pad0x3_T468A[0x3];                                 // 0xa9(0x3)
+	char                                                         pad0x3_GUXLN[0x3];                                 // 0xa9(0x3)
 	float                                                        HighDynamicRangeCalib;                             // 0xac(0x4)
 	float                                                        HDRBrightness;                                     // 0xb0(0x4)
 	float                                                        HDRContrast;                                       // 0xb4(0x4)
@@ -17970,12 +17992,12 @@ public:
 	bool                                                         EnableMovementDuringRadial;                        // 0xdf(0x1)
 	bool                                                         EnableLookWhenControllingObject;                   // 0xe0(0x1)
 	bool                                                         EnableAutoCentreLook;                              // 0xe1(0x1)
-	char                                                         pad0x2_FJMU3[0x2];                                 // 0xe2(0x2)
+	char                                                         pad0x2_KJRVT[0x2];                                 // 0xe2(0x2)
 	float                                                        AutoCentreLookTimeDelay;                           // 0xe4(0x4)
 	float                                                        AutoCentreLookSpeed;                               // 0xe8(0x4)
 	bool                                                         HoldActionsDontRequireHold;                        // 0xec(0x1)
 	bool                                                         HoldActionsWithHeldItemsDontRequireHold;           // 0xed(0x1)
-	char                                                         pad0x2_ONCGT[0x2];                                 // 0xee(0x2)
+	char                                                         pad0x2_OM503[0x2];                                 // 0xee(0x2)
 	int                                                          TTSOverride;                                       // 0xf0(0x4)
 	int                                                          TTSRate;                                           // 0xf4(0x4)
 	int                                                          STTOverride;                                       // 0xf8(0x4)
@@ -17983,7 +18005,7 @@ public:
 	bool                                                         TranslateOtherPlayers;                             // 0x100(0x1)
 	bool                                                         ScreenSpaceTooltips;                               // 0x101(0x1)
 	bool                                                         NarrateToasts;                                     // 0x102(0x1)
-	char                                                         pad0x1_YEJMR[0x1];                                 // 0x103(0x1)
+	char                                                         pad0x1_DRKIG[0x1];                                 // 0x103(0x1)
 	float                                                        ToastHoldDurationMultiplier;                       // 0x104(0x4)
 	bool                                                         NarrateOnHover;                                    // 0x108(0x1)
 	bool                                                         NarrateChangeOnly;                                 // 0x109(0x1)
@@ -17991,11 +18013,11 @@ public:
 	bool                                                         EscapeAsBackAccessibilityOption;                   // 0x10b(0x1)
 	bool                                                         CrossInputPreference;                              // 0x10c(0x1)
 	bool                                                         AdventureCrossInputPreference;                     // 0x10d(0x1)
-	char                                                         pad0x2_9DP3T[0x2];                                 // 0x10e(0x2)
+	char                                                         pad0x2_18G6R[0x2];                                 // 0x10e(0x2)
 	int                                                          AdventureIslandBanners;                            // 0x110(0x4)
 	int                                                          ArenaIslandBanners;                                // 0x114(0x4)
 	bool                                                         OutpostLocationBanners;                            // 0x118(0x1)
-	char                                                         pad0x3_Z7Q9K[0x3];                                 // 0x119(0x3)
+	char                                                         pad0x3_69TKX[0x3];                                 // 0x119(0x3)
 	int                                                          UseSingleStick;                                    // 0x11c(0x4)
 	int                                                          UseSingleStickSettingsApplied;                     // 0x120(0x4)
 	int                                                          UseSingleStickCameraToggle;                        // 0x124(0x4)
@@ -18004,7 +18026,7 @@ public:
 	bool                                                         AutoFloatInWater;                                  // 0x12a(0x1)
 	bool                                                         DisablePirateToast;                                // 0x12b(0x1)
 	bool                                                         DisableShipToast;                                  // 0x12c(0x1)
-	char                                                         pad0x3_L7GJN[0x3];                                 // 0x12d(0x3)
+	char                                                         pad0x3_574NB[0x3];                                 // 0x12d(0x3)
 	int                                                          PushToTalkMode;                                    // 0x130(0x4)
 	bool                                                         CircularUINavigation;                              // 0x134(0x1)
 	bool                                                         Enable120Hz;                                       // 0x135(0x1)
@@ -18017,7 +18039,7 @@ public:
 	bool                                                         DisableInviteNotifications;                        // 0x13c(0x1)
 	bool                                                         ControlledTextAlignment;                           // 0x13d(0x1)
 	bool                                                         ControlledLineHeight;                              // 0x13e(0x1)
-	char                                                         pad0x1_COFY1[0x1];                                 // 0x13f(0x1)
+	char                                                         pad0x1_UY1T7[0x1];                                 // 0x13f(0x1)
 	int                                                          OtherCrewsMuteState;                               // 0x140(0x4)
 	int                                                          NauticalNarrationEnabled;                          // 0x144(0x4)
 	bool                                                         NarrateInteractableText;                           // 0x148(0x1)
@@ -18025,7 +18047,7 @@ public:
 	bool                                                         IgnoreDisabledInteractables;                       // 0x14a(0x1)
 	bool                                                         FishNameplateNarrationEnabled;                     // 0x14b(0x1)
 	bool                                                         UseContinuousNarration;                            // 0x14c(0x1)
-	char                                                         pad0x3_WL4J4[0x3];                                 // 0x14d(0x3)
+	char                                                         pad0x3_5RMN4[0x3];                                 // 0x14d(0x3)
 	float                                                        ContinuousNarrationDelay;                          // 0x150(0x4)
 	bool                                                         DisableFlashes;                                    // 0x154(0x1)
 	bool                                                         DisableBlur;                                       // 0x155(0x1)
@@ -18034,10 +18056,10 @@ public:
 	bool                                                         EnchantedCompassProximityAnnouncerEnabled;         // 0x158(0x1)
 	bool                                                         DisableRats;                                       // 0x159(0x1)
 	bool                                                         EnableSqueakyWheel;                                // 0x15a(0x1)
-	char                                                         pad0x1_W2UKM[0x1];                                 // 0x15b(0x1)
+	char                                                         pad0x1_XE5E3[0x1];                                 // 0x15b(0x1)
 	float                                                        SqueakyWheelVolume;                                // 0x15c(0x4)
 	bool                                                         EnableAimAssistAudio;                              // 0x160(0x1)
-	char                                                         pad0x3_RDOQS[0x3];                                 // 0x161(0x3)
+	char                                                         pad0x3_PPAH1[0x3];                                 // 0x161(0x3)
 	int                                                          RemoteGameLanguage;                                // 0x164(0x4)
 	bool                                                         DisableShipSittingInteractions;                    // 0x168(0x1)
 	bool                                                         DisableShipTrinketInteractions;                    // 0x169(0x1)
@@ -18053,8 +18075,7 @@ public:
 	float                                                        HipFireRotationStrengthAimAssist;                  // 0x17c(0x4)
 	bool                                                         ShouldStabliseZiplines;                            // 0x180(0x1)
 	bool                                                         DisableGuildInvites;                               // 0x181(0x1)
-	bool                                                         DisableGuildFeedNotifications;                     // 0x182(0x1)
-	bool                                                         DisableGuildActionNotifications;                   // 0x183(0x1)
+	bool                                                         DisableGuildActionNotifications;                   // 0x182(0x1)
 };
 
 
@@ -18076,10 +18097,10 @@ public:
 	Struct FString                                               Endpoint;                                          // 0x10(0x10)
 	Struct FString                                               Context;                                           // 0x20(0x10)
 	byte                                                         Result;                                            // 0x30(0x1)
-	char                                                         pad0x3_CKJ4P[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_I5GGH[0x3];                                 // 0x31(0x3)
 	int                                                          StatusCode;                                        // 0x34(0x4)
 	int                                                          DurationMS;                                        // 0x38(0x4)
-	char                                                         pad0x4_HTEYY[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_L1EUE[0x4];                                 // 0x3c(0x4)
 	Struct FString                                               ResponseBody;                                      // 0x40(0x10)
 	TArray<Str ResponseHeaders>                                  ResponseHeaders;                                   // 0x50(0x10)
 	int                                                          Attempts;                                          // 0x60(0x4)
@@ -18094,10 +18115,10 @@ public:
 	Struct FString                                               Endpoint;                                          // 0x10(0x10)
 	Struct FString                                               Context;                                           // 0x20(0x10)
 	byte                                                         Result;                                            // 0x30(0x1)
-	char                                                         pad0x3_D2P80[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_ZDSGQ[0x3];                                 // 0x31(0x3)
 	int                                                          StatusCode;                                        // 0x34(0x4)
 	int                                                          DurationMS;                                        // 0x38(0x4)
-	char                                                         pad0x4_Y4VBN[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_ILUGE[0x4];                                 // 0x3c(0x4)
 	Struct FString                                               ResponseBody;                                      // 0x40(0x10)
 	TArray<Str ResponseHeaders>                                  ResponseHeaders;                                   // 0x50(0x10)
 	int                                                          Attempts;                                          // 0x60(0x4)
@@ -18226,7 +18247,7 @@ public:
 	Struct UniqueNetIdRepl                                       UserId;                                            // 0x10(0x18)
 	Struct FString                                               PirateId;                                          // 0x28(0x10)
 	byte                                                         SessionType;                                       // 0x38(0x1)
-	char                                                         pad0x3_KIVO1[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_ZCKAH[0x3];                                 // 0x39(0x3)
 	int                                                          ServerCrewCapacity;                                // 0x3c(0x4)
 };
 
@@ -18240,7 +18261,7 @@ public:
 	Struct FString                                               BuildId;                                           // 0x20(0x10)
 	bool                                                         JoinInProgress;                                    // 0x30(0x1)
 	byte                                                         SessionType;                                       // 0x31(0x1)
-	char                                                         pad0x6_E6HJ6[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_LL2P7[0x6];                                 // 0x32(0x6)
 	TArray<Str ServerLocations>                                  ServerLocations;                                   // 0x38(0x10)
 };
 
@@ -18289,12 +18310,23 @@ public:
 	Struct FString                                               PrivateServerId;                                   // 0x10(0x10)
 	Struct PlayModeDefiniton                                     PlayModeDefinition;                                // 0x20(0x28)
 	int                                                          CrewCountBucket;                                   // 0x48(0x4)
-	char                                                         pad0x4_E2K5C[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_RRJX1[0x4];                                 // 0x4c(0x4)
 	Struct FString                                               TitleVersion;                                      // 0x50(0x10)
 	Struct FString                                               StampId;                                           // 0x68(0x10)
 	bool                                                         ProgressionEnabled;                                // 0x78(0x1)
-	char                                                         pad0x7_CHKX0[0x7];                                 // 0x79(0x7)
+	char                                                         pad0x7_PRGYX[0x7];                                 // 0x79(0x7)
 	Struct FString                                               HostId;                                            // 0x80(0x10)
+};
+
+
+// Size 0x18
+struct ReduceServerCapacityMessage
+{
+public:
+	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	byte                                                         Reason;                                            // 0x10(0x1)
+	char                                                         pad0x3_JB23B[0x3];                                 // 0x11(0x3)
+	int                                                          Value;                                             // 0x14(0x4)
 };
 
 
@@ -18304,7 +18336,7 @@ struct ShutdownServerMessage
 public:
 	Struct FString                                               ShutdownReason;                                    // 0x0(0x10)
 	bool                                                         ShutdownNonActiveServers;                          // 0x10(0x1)
-	char                                                         pad0x7_C3GQH[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_CV3W6[0x7];                                 // 0x11(0x7)
 	Struct ServerShutdownRequestFilter                           ServerShutdownRequestFilter;                       // 0x18(0x58)
 };
 
@@ -18318,7 +18350,7 @@ public:
 	byte                                                         PlayMode;                                          // 0x18(0x1)
 	byte                                                         PlayModeVariant;                                   // 0x19(0x1)
 	byte                                                         ServerEnvironmentStatus;                           // 0x1a(0x1)
-	char                                                         pad0x5_OBA3T[0x5];                                 // 0x1b(0x5)
+	char                                                         pad0x5_KCS1P[0x5];                                 // 0x1b(0x5)
 	Struct FString                                               FeatureHash;                                       // 0x20(0x10)
 	Struct FString                                               BuildId;                                           // 0x30(0x10)
 	Struct Guid                                                  SessionId;                                         // 0x44(0x10)
@@ -18375,6 +18407,30 @@ public:
 };
 
 
+// Size 0x48
+struct ClientBootFlowLocStateLocUpdateTelemetryEvent
+{
+public:
+	Struct FString                                               Culture;                                           // 0x0(0x10)
+	int                                                          NumOfEntries;                                      // 0x10(0x4)
+	char                                                         pad0x4_86TI6[0x4];                                 // 0x14(0x4)
+	TArray<UInt32 HashesOfKeysUpdated>                           HashesOfKeysUpdated;                               // 0x18(0x10)
+	TArray<UInt32 HashesOfKeysNotUpdated>                        HashesOfKeysNotUpdated;                            // 0x28(0x10)
+	TArray<UInt32 HashesOfKeysNotFound>                          HashesOfKeysNotFound;                              // 0x38(0x10)
+};
+
+
+// Size 0x28
+struct ClientBootFlowLocStateLocRetrievalTelemetryEvent
+{
+public:
+	Struct FString                                               Culture;                                           // 0x0(0x10)
+	bool                                                         Success;                                           // 0x10(0x1)
+	char                                                         pad0x7_ELPVY[0x7];                                 // 0x11(0x7)
+	Struct FString                                               Reason;                                            // 0x18(0x10)
+};
+
+
 // Size 0x28
 struct ClientBootFlowStampSwapResultTelemetryEvent
 {
@@ -18390,7 +18446,7 @@ struct ClientBootFlowExistingSessionsRetrievedTelemetryEvent
 {
 public:
 	int                                                          OfferedSessionIndex;                               // 0x0(0x4)
-	char                                                         pad0x4_YABHE[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_2J7OH[0x4];                                 // 0x4(0x4)
 	TArray<struct ExistingSessions>                              ExistingSessions;                                  // 0x8(0x10)
 };
 
@@ -18436,7 +18492,7 @@ struct ClientEndEngagementMessageTelemetryEvent
 {
 public:
 	float                                                        ScreenDuration;                                    // 0x0(0x4)
-	char                                                         pad0x4_DYY1L[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_75BT5[0x4];                                 // 0x4(0x4)
 	Struct FString                                               EndedScreen;                                       // 0x8(0x10)
 };
 
@@ -18593,7 +18649,7 @@ public:
 	int                                                          OpenCrewMemberCountNeeded;                         // 0x4(0x4)
 	bool                                                         TickingCountdown;                                  // 0x8(0x1)
 	bool                                                         HasServerRecruitmentTimeEnded;                     // 0x9(0x1)
-	char                                                         pad0x2_E0BZU[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_3FO7V[0x2];                                 // 0xa(0x2)
 	int                                                          TavernPlayersAwaitingSpawn;                        // 0xc(0x4)
 	bool                                                         AreCrewsReadyToStart;                              // 0x10(0x1)
 };
@@ -18630,7 +18686,7 @@ public:
 	Struct Guid                                                  ContestUniqueId;                                   // 0x0(0x10)
 	Struct FString                                               ContestVoyageName;                                 // 0x10(0x10)
 	byte                                                         ContestScoreIdentifier;                            // 0x20(0x1)
-	char                                                         pad0x3_D8VUP[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_UC6RU[0x3];                                 // 0x21(0x3)
 	float                                                        TimeRemainingInCurrentContestState;                // 0x24(0x4)
 	Struct FString                                               ShipSize;                                          // 0x28(0x10)
 };
@@ -18771,10 +18827,10 @@ struct ServerContestScoreUpdateTelemetryEvent
 {
 public:
 	byte                                                         ReasonForScoreChange;                              // 0x0(0x1)
-	char                                                         pad0x3_F5UQN[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_9CK9X[0x3];                                 // 0x1(0x3)
 	int                                                          CurrentCrewScore;                                  // 0x4(0x4)
 	int                                                          ScoreChangeAmount;                                 // 0x8(0x4)
-	char                                                         pad0x4_0O94X[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_A9IIZ[0x4];                                 // 0xc(0x4)
 	Struct FString                                               ScoreContext;                                      // 0x10(0x10)
 	Struct Guid                                                  InstigatorId;                                      // 0x20(0x10)
 };
@@ -18862,16 +18918,16 @@ struct MeshMemoryConstraintCapstanDelayedHealthReport
 public:
 	bool                                                         DidMakeAttemptToSetBodyMesh;                       // 0x18(0x1)
 	bool                                                         DidMakeAttemptToSetReleaseAndArmMesh;              // 0x19(0x1)
-	char                                                         pad0x6_OF321[0x6];                                 // 0x1a(0x6)
+	char                                                         pad0x6_6S98W[0x6];                                 // 0x1a(0x6)
 	Struct FString                                               BodyDescAssetPathName;                             // 0x20(0x10)
 	Struct FString                                               ReleaseDescAssetPathName;                          // 0x30(0x10)
 	Struct FString                                               ArmDescAssetPathName;                              // 0x40(0x10)
 	bool                                                         BodyMeshIsValid;                                   // 0x50(0x1)
 	bool                                                         ReleaseMeshIsValid;                                // 0x51(0x1)
-	char                                                         pad0x2_TBD38[0x2];                                 // 0x52(0x2)
+	char                                                         pad0x2_HA5O4[0x2];                                 // 0x52(0x2)
 	int                                                          NumberOfArmSubActors;                              // 0x54(0x4)
 	int                                                          NumberOfArmsIsValid;                               // 0x58(0x4)
-	char                                                         pad0x4_AWN20[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_N49YZ[0x4];                                 // 0x5c(0x4)
 	Struct FString                                               BodyMeshAssetPathName;                             // 0x60(0x10)
 	Struct FString                                               ReleaseMeshAssetPathName;                          // 0x70(0x10)
 	TArray<Str ArmMeshAssetsPathName>                            ArmMeshAssetsPathName;                             // 0x80(0x10)
@@ -18884,7 +18940,7 @@ struct MeshMemoryConstraintShipPartMeshSetDelayedHealthReport
 public:
 	bool                                                         DescIsValid;                                       // 0x0(0x1)
 	bool                                                         ShouldDescBeReloaded;                              // 0x1(0x1)
-	char                                                         pad0x6_47XS3[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_9CU3P[0x6];                                 // 0x2(0x6)
 	Struct FString                                               DescAssetPathName;                                 // 0x8(0x10)
 };
 
@@ -18894,10 +18950,10 @@ struct MeshMemoryConstraintWheelDelayedHealthReport
 {
 public:
 	bool                                                         DidMakeAttemptToSetWheelMesh;                      // 0x18(0x1)
-	char                                                         pad0x7_PTIV1[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_K77T2[0x7];                                 // 0x19(0x7)
 	Struct FString                                               WheelDescAssetPathName;                            // 0x20(0x10)
 	bool                                                         WheelMeshIsValid;                                  // 0x30(0x1)
-	char                                                         pad0x7_5TYB6[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_TWNVP[0x7];                                 // 0x31(0x7)
 	Struct FString                                               WheelMeshAssetPathName;                            // 0x38(0x10)
 };
 
@@ -18908,12 +18964,12 @@ struct MeshMemoryConstraintCannonDelayedHealthReport
 public:
 	bool                                                         DidMakeAttemptToSetBoxMesh;                        // 0x18(0x1)
 	bool                                                         DidMakeAttemptToSetBarrelMesh;                     // 0x19(0x1)
-	char                                                         pad0x6_MCJK8[0x6];                                 // 0x1a(0x6)
+	char                                                         pad0x6_GNAA4[0x6];                                 // 0x1a(0x6)
 	Struct FString                                               BoxDescAssetPathName;                              // 0x20(0x10)
 	Struct FString                                               BarrelDescAssetPathName;                           // 0x30(0x10)
 	bool                                                         BoxMeshIsValid;                                    // 0x40(0x1)
 	bool                                                         BarrelMeshIsValid;                                 // 0x41(0x1)
-	char                                                         pad0x6_4P869[0x6];                                 // 0x42(0x6)
+	char                                                         pad0x6_HN5RR[0x6];                                 // 0x42(0x6)
 	Struct FString                                               BoxMeshAssetPathName;                              // 0x48(0x10)
 	Struct FString                                               BarrelMeshAssetPathName;                           // 0x58(0x10)
 };
@@ -18956,7 +19012,7 @@ struct ActorFailedToSpawnTelemetryEvent
 {
 public:
 	int                                                          ChannelIndex;                                      // 0x0(0x4)
-	char                                                         pad0x4_TP3CY[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_PM410[0x4];                                 // 0x4(0x4)
 	Struct SerializeNewActorFailureContext                       FailureContext;                                    // 0x8(0x38)
 };
 
@@ -18966,7 +19022,7 @@ struct UserSettingsTelemetryEvent
 {
 public:
 	int                                                          AutoDetectedMachineSpec;                           // 0x0(0x4)
-	char                                                         pad0x4_JIB62[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_SDGID[0x4];                                 // 0x4(0x4)
 	Struct PersistentUserGameSettings                            UserSettings;                                      // 0x8(0x1d0)
 	bool                                                         RHIThread;                                         // 0x1d8(0x1)
 };
@@ -18995,11 +19051,11 @@ public:
 	float                                                        NonCrewChatVolume;                                 // 0x28(0x4)
 	float                                                        HitNotificationVolume;                             // 0x2c(0x4)
 	bool                                                         ExtendedSeaRockAudioEnabled;                       // 0x30(0x1)
-	char                                                         pad0x3_43Z1C[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_NE4CD[0x3];                                 // 0x31(0x3)
 	int                                                          VSync;                                             // 0x34(0x4)
 	int                                                          MaxFPS;                                            // 0x38(0x4)
 	bool                                                         Fullscreen;                                        // 0x3c(0x1)
-	char                                                         pad0x3_T7RBH[0x3];                                 // 0x3d(0x3)
+	char                                                         pad0x3_JBRA5[0x3];                                 // 0x3d(0x3)
 	int                                                          MaxVerticalResolution;                             // 0x40(0x4)
 	int                                                          DefaultDetail;                                     // 0x44(0x4)
 	int                                                          ShadowDetail;                                      // 0x48(0x4)
@@ -19031,7 +19087,7 @@ public:
 	int                                                          ShowPerformanceCounters;                           // 0xc8(0x4)
 	int                                                          NumberOfLogins;                                    // 0xcc(0x4)
 	bool                                                         OptedInToMarketing;                                // 0xd0(0x1)
-	char                                                         pad0x3_SBQ1C[0x3];                                 // 0xd1(0x3)
+	char                                                         pad0x3_F0XED[0x3];                                 // 0xd1(0x3)
 	int                                                          KeyboardLayout;                                    // 0xd4(0x4)
 	int                                                          GameLanguage;                                      // 0xd8(0x4)
 	bool                                                         ShowPlayerTalkingIndicator;                        // 0xdc(0x1)
@@ -19044,7 +19100,7 @@ public:
 	float                                                        Brightness;                                        // 0xec(0x4)
 	float                                                        Contrast;                                          // 0xf0(0x4)
 	bool                                                         HDR;                                               // 0xf4(0x1)
-	char                                                         pad0x3_R0DDI[0x3];                                 // 0xf5(0x3)
+	char                                                         pad0x3_M9JL6[0x3];                                 // 0xf5(0x3)
 	int                                                          CVDMode;                                           // 0xf8(0x4)
 	float                                                        CVDStrength;                                       // 0xfc(0x4)
 	float                                                        ColorSaturationScale;                              // 0x100(0x4)
@@ -19067,12 +19123,12 @@ public:
 	bool                                                         EnableMovementDuringRadial;                        // 0x117(0x1)
 	bool                                                         EnableLookWhenControllingObject;                   // 0x118(0x1)
 	bool                                                         EnableAutoCentreLook;                              // 0x119(0x1)
-	char                                                         pad0x2_HZGA7[0x2];                                 // 0x11a(0x2)
+	char                                                         pad0x2_2SZNL[0x2];                                 // 0x11a(0x2)
 	float                                                        AutoCentreLookTimeDelay;                           // 0x11c(0x4)
 	float                                                        AutoCentreLookSpeed;                               // 0x120(0x4)
 	bool                                                         HoldActionsDontRequireHold;                        // 0x124(0x1)
 	bool                                                         HoldActionsWithHeldItemsDontRequireHold;           // 0x125(0x1)
-	char                                                         pad0x2_8IV5L[0x2];                                 // 0x126(0x2)
+	char                                                         pad0x2_7D8TN[0x2];                                 // 0x126(0x2)
 	int                                                          TTSOverride;                                       // 0x128(0x4)
 	int                                                          TTSRate;                                           // 0x12c(0x4)
 	int                                                          STTOverride;                                       // 0x130(0x4)
@@ -19080,7 +19136,7 @@ public:
 	bool                                                         TranslateOtherPlayers;                             // 0x138(0x1)
 	bool                                                         ScreenSpaceTooltips;                               // 0x139(0x1)
 	bool                                                         NarrateToasts;                                     // 0x13a(0x1)
-	char                                                         pad0x1_V06M4[0x1];                                 // 0x13b(0x1)
+	char                                                         pad0x1_WULWY[0x1];                                 // 0x13b(0x1)
 	float                                                        ToastHoldDurationMultiplier;                       // 0x13c(0x4)
 	bool                                                         NarrateOnHover;                                    // 0x140(0x1)
 	bool                                                         NarrateChangeOnly;                                 // 0x141(0x1)
@@ -19088,11 +19144,11 @@ public:
 	bool                                                         EscapeAsBackAccessibilityOption;                   // 0x143(0x1)
 	bool                                                         CrossInputPreference;                              // 0x144(0x1)
 	bool                                                         AdventureCrossInputPreference;                     // 0x145(0x1)
-	char                                                         pad0x2_K5O0E[0x2];                                 // 0x146(0x2)
+	char                                                         pad0x2_ZRNCX[0x2];                                 // 0x146(0x2)
 	int                                                          AdventureIslandBanners;                            // 0x148(0x4)
 	int                                                          ArenaIslandBanners;                                // 0x14c(0x4)
 	bool                                                         OutpostLocationBanners;                            // 0x150(0x1)
-	char                                                         pad0x3_OQEFS[0x3];                                 // 0x151(0x3)
+	char                                                         pad0x3_8JBO6[0x3];                                 // 0x151(0x3)
 	int                                                          UseSingleStick;                                    // 0x154(0x4)
 	int                                                          UseSingleStickSettingsApplied;                     // 0x158(0x4)
 	int                                                          UseSingleStickCameraToggle;                        // 0x15c(0x4)
@@ -19102,7 +19158,7 @@ public:
 	bool                                                         AutoFloatInWater;                                  // 0x166(0x1)
 	bool                                                         DisablePirateToast;                                // 0x167(0x1)
 	bool                                                         DisableShipToast;                                  // 0x168(0x1)
-	char                                                         pad0x3_9O60K[0x3];                                 // 0x169(0x3)
+	char                                                         pad0x3_IVGJ8[0x3];                                 // 0x169(0x3)
 	int                                                          PushToTalkMode;                                    // 0x16c(0x4)
 	bool                                                         CircularUINavigation;                              // 0x170(0x1)
 	bool                                                         Enable120Hz;                                       // 0x171(0x1)
@@ -19119,17 +19175,17 @@ public:
 	int                                                          OtherCrewsMuteState;                               // 0x17c(0x4)
 	int                                                          NauticalNarrationEnabled;                          // 0x180(0x4)
 	bool                                                         NarrateInteractableText;                           // 0x184(0x1)
-	char                                                         pad0x3_I91FD[0x3];                                 // 0x185(0x3)
+	char                                                         pad0x3_D80AE[0x3];                                 // 0x185(0x3)
 	int                                                          NarrateInteractableButtons;                        // 0x188(0x4)
 	bool                                                         IgnoreDisabledInteractables;                       // 0x18c(0x1)
-	char                                                         pad0x3_07XGF[0x3];                                 // 0x18d(0x3)
+	char                                                         pad0x3_R03ZR[0x3];                                 // 0x18d(0x3)
 	float                                                        NarrationInitialDelaySeconds;                      // 0x190(0x4)
 	bool                                                         RepeatTooltipNarration;                            // 0x194(0x1)
-	char                                                         pad0x3_MJX5N[0x3];                                 // 0x195(0x3)
+	char                                                         pad0x3_WQ8X3[0x3];                                 // 0x195(0x3)
 	float                                                        NarrationRepeatingDelaySeconds;                    // 0x198(0x4)
 	bool                                                         RenarrateAfterClosingMenus;                        // 0x19c(0x1)
 	bool                                                         FishNameplateNarrationEnabled;                     // 0x19d(0x1)
-	char                                                         pad0x2_PXX1L[0x2];                                 // 0x19e(0x2)
+	char                                                         pad0x2_58WTV[0x2];                                 // 0x19e(0x2)
 	float                                                        ContinuousNarrationDelay;                          // 0x1a0(0x4)
 	bool                                                         DisableFlashes;                                    // 0x1a4(0x1)
 	bool                                                         DisableBlur;                                       // 0x1a5(0x1)
@@ -19138,7 +19194,7 @@ public:
 	bool                                                         EnchantedCompassProximityAnnouncerEnabled;         // 0x1a8(0x1)
 	bool                                                         DisableRats;                                       // 0x1a9(0x1)
 	bool                                                         EnableSqueakyWheel;                                // 0x1aa(0x1)
-	char                                                         pad0x1_SBJTZ[0x1];                                 // 0x1ab(0x1)
+	char                                                         pad0x1_TLXK8[0x1];                                 // 0x1ab(0x1)
 	float                                                        SqueakyWheelVolume;                                // 0x1ac(0x4)
 	bool                                                         EnableAimAssistAudio;                              // 0x1b0(0x1)
 	bool                                                         DisableShipSittingInteractions;                    // 0x1b1(0x1)
@@ -19149,15 +19205,14 @@ public:
 	bool                                                         EnableADSSlowdownAimAssist;                        // 0x1b6(0x1)
 	bool                                                         EnableADSRotationalAimAssist;                      // 0x1b7(0x1)
 	bool                                                         EnableAllianceAimAssist;                           // 0x1b8(0x1)
-	char                                                         pad0x3_X2KFU[0x3];                                 // 0x1b9(0x3)
+	char                                                         pad0x3_U9WVM[0x3];                                 // 0x1b9(0x3)
 	float                                                        ADSSlowdownStrengthAimAssist;                      // 0x1bc(0x4)
 	float                                                        ADSRotationStrengthAimAssist;                      // 0x1c0(0x4)
 	float                                                        HipFireSlowdownStrengthAimAssist;                  // 0x1c4(0x4)
 	float                                                        HipFireRotationStrengthAimAssist;                  // 0x1c8(0x4)
 	bool                                                         ShouldStabliseZiplines;                            // 0x1cc(0x1)
 	bool                                                         DisableGuildInvites;                               // 0x1cd(0x1)
-	bool                                                         DisableGuildFeedNotifications;                     // 0x1ce(0x1)
-	bool                                                         DisableGuildActionNotifications;                   // 0x1cf(0x1)
+	bool                                                         DisableGuildActionNotifications;                   // 0x1ce(0x1)
 };
 
 
@@ -19271,7 +19326,7 @@ struct CinematicEmissaryEvent
 public:
 	int                                                          Level;                                             // 0x0(0x4)
 	struct FName                                                 Tag;                                               // 0x4(0x8)
-	char                                                         pad0x4_Q2WPA[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_P8Z22[0x4];                                 // 0xc(0x4)
 	Struct FString                                               GuildId;                                           // 0x10(0x10)
 };
 
@@ -19561,32 +19616,33 @@ public:
 };
 
 
-// Size 0x108
+// Size 0x118
 struct ProgressUpdatedNotificationUIEvent
 {
 public:
-	Struct ProgressPoint                                         Old;                                               // 0x0(0x18)
-	Struct ProgressPoint                                         New;                                               // 0x18(0x18)
-	Struct FString                                               RibbonImage;                                       // 0x30(0x10)
-	Struct FString                                               BackgroundImage;                                   // 0x40(0x10)
-	Struct FText                                                 Title;                                             // 0x50(0x38)
-	Struct FText                                                 Body;                                              // 0x88(0x38)
-	byte                                                         Style;                                             // 0xc0(0x1)
-	char                                                         pad0x7_JS4NH[0x7];                                 // 0xc1(0x7)
-	Struct FString                                               RankIncreaseAudioCue;                              // 0xc8(0x10)
-	Struct FString                                               RankIncreaseStopAudioCue;                          // 0xd8(0x10)
-	Struct FString                                               RankLevelUpAudioCue;                               // 0xe8(0x10)
-	Struct FString                                               RankTriggerAudioCue;                               // 0xf8(0x10)
+	Struct ProgressPoint                                         Old;                                               // 0x0(0x20)
+	Struct ProgressPoint                                         New;                                               // 0x20(0x20)
+	Struct FString                                               RibbonImage;                                       // 0x40(0x10)
+	Struct FString                                               BackgroundImage;                                   // 0x50(0x10)
+	Struct FText                                                 Title;                                             // 0x60(0x38)
+	Struct FText                                                 Body;                                              // 0x98(0x38)
+	byte                                                         Style;                                             // 0xd0(0x1)
+	char                                                         pad0x7_N9ZS3[0x7];                                 // 0xd1(0x7)
+	Struct FString                                               RankIncreaseAudioCue;                              // 0xd8(0x10)
+	Struct FString                                               RankIncreaseStopAudioCue;                          // 0xe8(0x10)
+	Struct FString                                               RankLevelUpAudioCue;                               // 0xf8(0x10)
+	Struct FString                                               RankTriggerAudioCue;                               // 0x108(0x10)
 };
 
 
-// Size 0x18
+// Size 0x20
 struct ProgressPoint
 {
 public:
-	float                                                        Progress;                                          // 0x0(0x4)
-	char                                                         pad0x4_GWMU7[0x4];                                 // 0x4(0x4)
+	float                                                        Level;                                             // 0x0(0x4)
+	char                                                         pad0x4_OLP5A[0x4];                                 // 0x4(0x4)
 	Struct FString                                               Image;                                             // 0x8(0x10)
+	int                                                          Distinction;                                       // 0x18(0x4)
 };
 
 
@@ -19603,7 +19659,7 @@ struct CurrencyGrantedNotificationUIEvent
 {
 public:
 	byte                                                         CurrencyId;                                        // 0x0(0x1)
-	char                                                         pad0x3_60AD8[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_IU3G0[0x3];                                 // 0x1(0x3)
 	int                                                          Amount;                                            // 0x4(0x4)
 	Struct FString                                               DisplayAmount;                                     // 0x8(0x10)
 	Struct FString                                               EmissaryAddition;                                  // 0x18(0x10)
@@ -19653,7 +19709,7 @@ public:
 	TArray<Byte StyleModifiers>                                  StyleModifiers;                                    // 0x90(0x10)
 	bool                                                         OnlyPlayAudio;                                     // 0xa0(0x1)
 	bool                                                         PlayAudio;                                         // 0xa1(0x1)
-	char                                                         pad0x2_XOGGE[0x2];                                 // 0xa2(0x2)
+	char                                                         pad0x2_KAOQ6[0x2];                                 // 0xa2(0x2)
 	float                                                        HoldDuration;                                      // 0xa4(0x4)
 	int                                                          Multiplier;                                        // 0xa8(0x4)
 	bool                                                         SupportsHotlinkToMenus;                            // 0xac(0x1)
@@ -19717,11 +19773,11 @@ public:
 	Struct FString                                               Title;                                             // 0x10(0x10)
 	byte                                                         Attitude;                                          // 0x20(0x1)
 	byte                                                         ChatState;                                         // 0x21(0x1)
-	char                                                         pad0x2_QTHCA[0x2];                                 // 0x22(0x2)
+	char                                                         pad0x2_7QH3J[0x2];                                 // 0x22(0x2)
 	float                                                        Health;                                            // 0x24(0x4)
 	bool                                                         HealthVisible;                                     // 0x28(0x1)
 	bool                                                         TitleVisible;                                      // 0x29(0x1)
-	char                                                         pad0x6_PA8OL[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_1GE92[0x6];                                 // 0x2a(0x6)
 	Struct FString                                               NameplateIconReference;                            // 0x30(0x10)
 };
 
@@ -19808,7 +19864,7 @@ struct PopUpQueueServicePausedTelemetryEvent
 {
 public:
 	bool                                                         Paused;                                            // 0x0(0x1)
-	char                                                         pad0x3_0RSNR[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_9STEV[0x3];                                 // 0x1(0x3)
 	int                                                          Reason;                                            // 0x4(0x4)
 };
 
@@ -19854,7 +19910,7 @@ struct UIPremiumStoreOpenTelemetryEvent
 {
 public:
 	bool                                                         IsFrontend;                                        // 0x0(0x1)
-	char                                                         pad0x7_YBKTE[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_2TLAE[0x7];                                 // 0x1(0x7)
 	Struct FString                                               SessionId;                                         // 0x8(0x10)
 };
 
@@ -19949,7 +20005,7 @@ public:
 	TArray<struct EquippedEntitlements>                          EquippedEntitlements;                              // 0x30(0x10)
 	TArray<struct SavedToLoadoutEntitlements>                    SavedToLoadoutEntitlements;                        // 0x40(0x10)
 	bool                                                         IsLocked;                                          // 0x50(0x1)
-	char                                                         pad0x7_3HZ73[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_IUPUX[0x7];                                 // 0x51(0x7)
 	TArray<Str LockedDescriptions>                               LockedDescriptions;                                // 0x58(0x10)
 };
 
@@ -19959,22 +20015,22 @@ struct ChestEntitlementViewModel
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x7_JQDTX[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_4HEEU[0x7];                                 // 0x1(0x7)
 	Struct FString                                               ItemDesc;                                          // 0x8(0x10)
 	Struct FString                                               Name;                                              // 0x18(0x10)
 	Struct FString                                               ThumbnailImageUrl;                                 // 0x28(0x10)
 	Struct FString                                               PreviewImageUrl;                                   // 0x38(0x10)
 	Struct FString                                               Description;                                       // 0x48(0x10)
 	int                                                          SlotId;                                            // 0x58(0x4)
-	char                                                         pad0x4_PEV9Q[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_G4A8Y[0x4];                                 // 0x5c(0x4)
 	Struct FString                                               Category;                                          // 0x60(0x10)
 	Struct FString                                               EmoteBackgroundImageUrl;                           // 0x70(0x10)
 	Struct FString                                               EmoteIconImageUrl;                                 // 0x80(0x10)
 	bool                                                         DoesPlayerOwnEntitlement;                          // 0x90(0x1)
-	char                                                         pad0x7_G2ST7[0x7];                                 // 0x91(0x7)
+	char                                                         pad0x7_AT43O[0x7];                                 // 0x91(0x7)
 	Struct FString                                               Cost;                                              // 0x98(0x10)
 	bool                                                         IsLocked;                                          // 0xa8(0x1)
-	char                                                         pad0x7_9IFKC[0x7];                                 // 0xa9(0x7)
+	char                                                         pad0x7_H3VX2[0x7];                                 // 0xa9(0x7)
 	TArray<Str PreviewDescriptions>                              PreviewDescriptions;                               // 0xb0(0x10)
 	Struct FString                                               Identifier;                                        // 0xc0(0x10)
 };
@@ -20034,7 +20090,7 @@ struct RequestEmoteSelectEquipEvent
 {
 public:
 	int                                                          Index;                                             // 0x0(0x4)
-	char                                                         pad0x4_E5AX7[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MR8KY[0x4];                                 // 0x4(0x4)
 	Struct FString                                               ItemDesc;                                          // 0x8(0x10)
 };
 
@@ -20060,7 +20116,7 @@ struct RequestClothingChestPreviewUpdateEvent
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x7_011LC[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_NCSUL[0x7];                                 // 0x1(0x7)
 	Struct FString                                               Subject;                                           // 0x8(0x10)
 };
 
@@ -20070,7 +20126,7 @@ struct RequestClothingChestActionEvent
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x7_7KSAR[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_PMODK[0x7];                                 // 0x1(0x7)
 	Struct FString                                               Subject;                                           // 0x8(0x10)
 };
 
@@ -20131,7 +20187,7 @@ struct UICompanyShopInfo
 {
 public:
 	bool                                                         ShouldShowCompanyInfo;                             // 0x0(0x1)
-	char                                                         pad0x7_U4QVC[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_QLKD5[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 InfoTitle;                                         // 0x8(0x38)
 	TArray<struct FText>                                         InfoTips;                                          // 0x40(0x10)
 };
@@ -20142,11 +20198,11 @@ struct UICompanySkin
 {
 public:
 	byte                                                         Style;                                             // 0x0(0x1)
-	char                                                         pad0x7_6GVOP[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_JP1F5[0x7];                                 // 0x1(0x7)
 	Struct FString                                               BackgroundImageUrl;                                // 0x8(0x10)
 	Struct FString                                               RibbonImageUrl;                                    // 0x18(0x10)
 	int                                                          ProgressStep;                                      // 0x28(0x4)
-	char                                                         pad0x4_ZMNAJ[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_WSQ6I[0x4];                                 // 0x2c(0x4)
 	TArray<Str ProgressIconUrls>                                 ProgressIconUrls;                                  // 0x30(0x10)
 	Struct FString                                               ShopTopBannerUrl;                                  // 0x40(0x10)
 	Struct FString                                               ShopBottomBannerUrl;                               // 0x50(0x10)
@@ -20391,7 +20447,7 @@ struct RequestPetChestPreviewUpdateEvent
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x7_Q4BXG[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_TXMKT[0x7];                                 // 0x1(0x7)
 	Struct FString                                               Subject;                                           // 0x8(0x10)
 };
 
@@ -20401,7 +20457,7 @@ struct RequestPetChestActionEvent
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x7_Y7AC3[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_OO78W[0x7];                                 // 0x1(0x7)
 	Struct FString                                               Subject;                                           // 0x8(0x10)
 };
 
@@ -20424,7 +20480,7 @@ struct EmblemSetInformation
 {
 public:
 	bool                                                         LockedStatus;                                      // 0x0(0x1)
-	char                                                         pad0x7_46AMV[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_OKHXE[0x7];                                 // 0x1(0x7)
 	TArray<struct Emblems>                                       Emblems;                                           // 0x8(0x10)
 };
 
@@ -20458,7 +20514,7 @@ public:
 	Struct FString                                               ImageUrl;                                          // 0x38(0x10)
 	bool                                                         MarkAsNew;                                         // 0x48(0x1)
 	bool                                                         Locked;                                            // 0x49(0x1)
-	char                                                         pad0x6_MRR5N[0x6];                                 // 0x4a(0x6)
+	char                                                         pad0x6_JMW4M[0x6];                                 // 0x4a(0x6)
 	Struct MoreInfoDetails                                       MoreInfo;                                          // 0x50(0x20)
 };
 
@@ -20495,7 +20551,7 @@ public:
 	Struct FString                                               RibbonImageUrl;                                    // 0xb8(0x10)
 	struct FName                                                 CompanyId;                                         // 0xc8(0x8)
 	byte                                                         Style;                                             // 0xd0(0x1)
-	char                                                         pad0x3_YB6X6[0x3];                                 // 0xd1(0x3)
+	char                                                         pad0x3_IRX42[0x3];                                 // 0xd1(0x3)
 	float                                                        CompanyLevel;                                      // 0xd4(0x4)
 	Struct EmissaryState                                         EmissaryState;                                     // 0xdc(0x8)
 	bool                                                         Retired;                                           // 0xe4(0x1)
@@ -20507,7 +20563,7 @@ struct EmissaryState
 {
 public:
 	bool                                                         EmissaryActive;                                    // 0x0(0x1)
-	char                                                         pad0x3_VW3F2[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_4L3HR[0x3];                                 // 0x1(0x3)
 	float                                                        Level;                                             // 0x4(0x4)
 };
 
@@ -20838,7 +20894,7 @@ struct RequestTrinketBoxActionEvent
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x7_MU86W[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_GYOR3[0x7];                                 // 0x1(0x7)
 	Struct FString                                               TrinketDesc;                                       // 0x8(0x10)
 };
 
@@ -20897,7 +20953,7 @@ struct PlayerVoyageProposalVoteTelemetryEvent
 public:
 	Struct Guid                                                  VoyageProposalSessionId;                           // 0x0(0x10)
 	int                                                          VoyageProposalSlot;                                // 0x10(0x4)
-	char                                                         pad0x4_F56Y0[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_093LC[0x4];                                 // 0x14(0x4)
 	Struct FString                                               VoyageProposalEntitlementId;                       // 0x18(0x10)
 };
 
@@ -21023,7 +21079,7 @@ struct ArenaSuspensionState
 {
 public:
 	bool                                                         IsUserSuspended;                                   // 0x0(0x1)
-	char                                                         pad0x3_O7H86[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_CS3HA[0x3];                                 // 0x1(0x3)
 	int                                                          SuspensionTimeRemainingInMinutes;                  // 0x4(0x4)
 };
 
@@ -21056,7 +21112,7 @@ struct RandomParticleSystemPickerEntry
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_GU8N7[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_0R16U[0x4];                                 // 0x4(0x4)
 	Class Object*                                                Effect;                                            // 0x8(0x8)
 };
 
@@ -21074,7 +21130,7 @@ struct DistanceThrottledRandomParticleSystemPickerEntry
 {
 public:
 	float                                                        DistanceInMetres;                                  // 0x0(0x4)
-	char                                                         pad0x4_8R2LE[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_97JW9[0x4];                                 // 0x4(0x4)
 	TArray<struct EffectsBySurfaceType>                          EffectsBySurfaceType;                              // 0x8(0x10)
 	int                                                          MaxNumber;                                         // 0x18(0x4)
 };
@@ -21085,12 +21141,12 @@ struct DistanceThrottledRandomParticleSystemPickerSurfaceTypeEntry
 {
 public:
 	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	char                                                         pad0x7_D2GTH[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_19RRR[0x7];                                 // 0x1(0x7)
 	Struct RandomParticleSystemPicker                            Effect;                                            // 0x8(0x10)
 };
 
 
-// Size 0x1d8
+// Size 0x1e8
 struct BountyQuestDesc
 {
 public:
@@ -21103,12 +21159,15 @@ public:
 	TArray<class ItemSpawnData*>                                 BountyRewardsSpawnData;                            // 0xb0(0x10)
 	Class Landmark*                                              Landmark;                                          // 0xc0(0x8)
 	float                                                        IslandRotation;                                    // 0xc8(0x4)
-	char                                                         pad0x4_6S1Y5[0x4];                                 // 0xcc(0x4)
-	Struct AIBountySpawnerParams                                 SpawnerGeneratedData;                              // 0xf0(0xc8)
-	class                                                        OverrideTreasureMapItemDesc;                       // 0x1b8(0x8)
-	Struct Vector                                                AIExclusionZoneLocation;                           // 0x1c0(0xc)
-	float                                                        AIExclusionZoneRadius;                             // 0x1cc(0x4)
-	float                                                        AIExclusionZoneHeight;                             // 0x1d0(0x4)
+	char                                                         pad0x4_3LPNN[0x4];                                 // 0xcc(0x4)
+	Struct AIBountySpawnerParams                                 SpawnerGeneratedData;                              // 0xf0(0xd0)
+	class                                                        OverrideTreasureMapItemDesc;                       // 0x1c0(0x8)
+	Struct Vector                                                AIExclusionZoneLocation;                           // 0x1c8(0xc)
+	float                                                        AIExclusionZoneRadius;                             // 0x1d4(0x4)
+	float                                                        AIExclusionZoneHeight;                             // 0x1d8(0x4)
+	int                                                          TotaNumCrew;                                       // 0x1dc(0x4)
+	int                                                          TotaNumCaptains;                                   // 0x1e0(0x4)
+	int                                                          TotaNumLords;                                      // 0x1e4(0x4)
 };
 
 
@@ -21148,12 +21207,16 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x30
 struct QuestStartBountyTelemetryEvent
 {
 public:
 	Struct FString                                               IslandName;                                        // 0x0(0x10)
 	Struct FString                                               LandmarkName;                                      // 0x10(0x10)
+	int                                                          NumWaves;                                          // 0x20(0x4)
+	int                                                          NumCrew;                                           // 0x24(0x4)
+	int                                                          NumCaptains;                                       // 0x28(0x4)
+	int                                                          NumLords;                                          // 0x2c(0x4)
 };
 
 
@@ -21175,10 +21238,10 @@ struct CargoDeliveredTelemetryEvent
 {
 public:
 	bool                                                         GoldAwarded;                                       // 0x0(0x1)
-	char                                                         pad0x3_Q1NZ5[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_DLF8D[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  BootyId;                                           // 0x4(0x10)
 	byte                                                         BootyType;                                         // 0x14(0x1)
-	char                                                         pad0x3_T8OW7[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_TP2YJ[0x3];                                 // 0x15(0x3)
 	Struct FString                                               Rarity;                                            // 0x18(0x10)
 	int                                                          MaxQuality;                                        // 0x28(0x4)
 	int                                                          DeliveredQuality;                                  // 0x2c(0x4)
@@ -21263,7 +21326,7 @@ public:
 };
 
 
-// Size 0x240
+// Size 0x250
 struct MerchantQuestDesc
 {
 public:
@@ -21278,17 +21341,18 @@ public:
 	TArray<struct ItemData>                                      ItemData;                                          // 0x1c8(0x10)
 	TArray<struct ItemGroupDescs>                                ItemGroupDescs;                                    // 0x1d8(0x10)
 	int                                                          TimeLimitInMinutes;                                // 0x1e8(0x4)
-	char                                                         pad0x4_07IM1[0x4];                                 // 0x1ec(0x4)
+	char                                                         pad0x4_KUAD2[0x4];                                 // 0x1ec(0x4)
 	Struct GameTime                                              DeliverByTime;                                     // 0x1f0(0x8)
 	class                                                        OverrideTreasureMapItemDesc;                       // 0x1f8(0x8)
 	bool                                                         IsMerchantQuestV2;                                 // 0x200(0x1)
-	char                                                         pad0x3_FZZVV[0x3];                                 // 0x201(0x3)
+	char                                                         pad0x3_NAS3Q[0x3];                                 // 0x201(0x3)
 	Struct Vector                                                AIExclusionZoneLocation;                           // 0x204(0xc)
 	float                                                        AIExclusionZoneRadius;                             // 0x210(0x4)
 	float                                                        AIExclusionZoneHeight;                             // 0x214(0x4)
 	TArray<struct CrateSpawnLocations>                           CrateSpawnLocations;                               // 0x218(0x10)
 	Struct Vector                                                TargetLocation;                                    // 0x228(0xc)
 	Struct Vector                                                DirectionToApproachIsland;                         // 0x234(0xc)
+	Struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x240(0x10)
 };
 
 
@@ -21365,7 +21429,7 @@ public:
 	Struct FString                                               PickupLocationIslandName;                          // 0x0(0x10)
 	Struct FString                                               DeliveryLocationIslandName;                        // 0x10(0x10)
 	int                                                          RealTimeLimitInMins;                               // 0x20(0x4)
-	char                                                         pad0x4_SP03L[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_HESTJ[0x4];                                 // 0x24(0x4)
 	Struct FString                                               DeliverByTimeText;                                 // 0x28(0x10)
 	TArray<struct ContractList>                                  ContractList;                                      // 0x38(0x10)
 };
@@ -21376,7 +21440,7 @@ struct MerchantQuestStartTelemetryEventRequiredItemEntry
 {
 public:
 	int                                                          NumItems;                                          // 0x0(0x4)
-	char                                                         pad0x4_G0RSK[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MBFY5[0x4];                                 // 0x4(0x4)
 	Struct FString                                               Rarity;                                            // 0x8(0x10)
 };
 
@@ -21415,13 +21479,13 @@ struct RiddleQuestDesc
 public:
 	TArray<struct Gates>                                         Gates;                                             // 0x28(0x10)
 	float                                                        IslandRotation;                                    // 0x38(0x4)
-	char                                                         pad0x4_H3MHB[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_SP9IZ[0x4];                                 // 0x3c(0x4)
 	Struct Vector                                                TreasureChestWorldSpaceLocation;                   // 0x60(0xc)
-	char                                                         pad0x4_NID5I[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_W1I75[0x4];                                 // 0x6c(0x4)
 	class                                                        TreasureChestDesc;                                 // 0x70(0x8)
 	Class ItemSpawnData*                                         TreasureSpawnData;                                 // 0x78(0x8)
 	float                                                        DigRadius;                                         // 0x80(0x4)
-	char                                                         pad0x4_9F3TT[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_APPPH[0x4];                                 // 0x84(0x4)
 	Class AIBoobyTrapSpawner*                                    BoobyTrapSpawner;                                  // 0x88(0x8)
 	class                                                        OverrideTreasureMapItemDesc;                       // 0x90(0x8)
 };
@@ -21434,7 +21498,7 @@ public:
 	byte                                                         RiddleLocation;                                    // 0x0(0x1)
 	byte                                                         RiddleActionLocationOffset;                        // 0x1(0x1)
 	byte                                                         RiddleAction;                                      // 0x2(0x1)
-	char                                                         pad0x5_CJ8WW[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_59DE1[0x5];                                 // 0x3(0x5)
 	Struct TreasureMapTextDesc                                   Text;                                              // 0x8(0x48)
 	Class Landmark*                                              Landmark;                                          // 0x50(0x8)
 	Struct Vector                                                TargetPositionIfNotLandmark;                       // 0x58(0xc)
@@ -21449,17 +21513,18 @@ public:
 	byte                                                         RiddleLocation;                                    // 0x0(0x1)
 	byte                                                         RiddleActionLocationOffset;                        // 0x1(0x1)
 	byte                                                         RiddleAction;                                      // 0x2(0x1)
-	char                                                         pad0x5_NF9IH[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_441I8[0x5];                                 // 0x3(0x5)
 	Struct FString                                               LandmarkName;                                      // 0x8(0x10)
 	Struct FString                                               GateDescription;                                   // 0x18(0x10)
 };
 
 
-// Size 0x10
+// Size 0x18
 struct QuestStartRiddleTelemetryEvent
 {
 public:
 	Struct FString                                               IslandName;                                        // 0x0(0x10)
+	int                                                          NumGates;                                          // 0x10(0x4)
 };
 
 
@@ -21502,7 +21567,7 @@ struct SpawnerCreatedAutomationEvent
 {
 public:
 	Class Actor*                                                 SpawnerLocation;                                   // 0x0(0x8)
-	char                                                         pad0x20_5U97R[0x20];                               // 0x8(0x20)
+	char                                                         pad0x20_NC81I[0x20];                               // 0x8(0x20)
 	Class AISpawner*                                             Spawner;                                           // 0x28(0x8)
 };
 
@@ -21547,7 +21612,7 @@ public:
 	Struct FString                                               DiscovererName;                                    // 0x10(0x10)
 	bool                                                         IsDiscovererMe;                                    // 0x20(0x1)
 	bool                                                         PlayAudio;                                         // 0x21(0x1)
-	char                                                         pad0x6_W1TDL[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_3C6H2[0x6];                                 // 0x22(0x6)
 	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x28(0x8)
 	Struct FText                                                 CrewName;                                          // 0x30(0x38)
 	Struct StringAssetReference                                  ToastBackgroundImage;                              // 0x68(0x10)
@@ -21562,10 +21627,10 @@ struct VoyageChestDiscovered
 public:
 	Struct NetActorPtr                                           PlayerStateOfDiscoverer;                           // 0x0(0x14)
 	bool                                                         IsDiscovererMe;                                    // 0x14(0x1)
-	char                                                         pad0x3_V1UOO[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_A9QX8[0x3];                                 // 0x15(0x3)
 	struct FName                                                 ChestRarity;                                       // 0x18(0x8)
 	bool                                                         PlayAudio;                                         // 0x20(0x1)
-	char                                                         pad0x7_195GW[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_HK08D[0x7];                                 // 0x21(0x7)
 	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x28(0x8)
 };
 
@@ -21583,7 +21648,7 @@ struct VoyageComplete
 {
 public:
 	bool                                                         DoNotNotifyParticipantsOnVoyageComplete;           // 0x0(0x1)
-	char                                                         pad0x7_KLSUX[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_OYU0Q[0x7];                                 // 0x1(0x7)
 	Struct FText                                                 Title;                                             // 0x8(0x38)
 };
 
@@ -21645,7 +21710,7 @@ struct VoyageProposalVoteSlotUpdatedEvent
 public:
 	Struct ProposedVoyageEntry                                   Proposal;                                          // 0x0(0x30)
 	int                                                          VoteIndex;                                         // 0x30(0x4)
-	char                                                         pad0x4_TH2G1[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_CW8GH[0x4];                                 // 0x34(0x4)
 	Struct FString                                               ShipName;                                          // 0x38(0x10)
 };
 
@@ -21658,7 +21723,7 @@ public:
 	Class VoyageProposalDesc*                                    TemplateProposalDesc;                              // 0x8(0x8)
 	Class VoyageRecipeDataAsset*                                 VoyageRecipe;                                      // 0x10(0x8)
 	int                                                          Rank;                                              // 0x18(0x4)
-	char                                                         pad0x4_C13CM[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_1ADB0[0x4];                                 // 0x1c(0x4)
 	Class PlayerState*                                           Proposer;                                          // 0x20(0x8)
 	bool                                                         AutoVoteOnVoyage;                                  // 0x28(0x1)
 	bool                                                         VoyageIsShipEntitlement;                           // 0x29(0x1)
@@ -21710,7 +21775,7 @@ struct GameNarrationStateChangeEvent
 {
 public:
 	bool                                                         Enabled;                                           // 0x0(0x1)
-	char                                                         pad0x7_NU0T9[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_XOIUZ[0x7];                                 // 0x1(0x7)
 	Struct FString                                               PreferredVoice;                                    // 0x8(0x10)
 	Struct FString                                               Language;                                          // 0x18(0x10)
 	int                                                          Gender;                                            // 0x28(0x4)
@@ -21767,11 +21832,11 @@ struct SpeechAccessibilityOptions
 public:
 	bool                                                         GameChatSTT;                                       // 0x0(0x1)
 	bool                                                         GameChatTTS;                                       // 0x1(0x1)
-	char                                                         pad0x6_91DMS[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_0YPN6[0x6];                                 // 0x2(0x6)
 	Struct FString                                               PersonaID;                                         // 0x8(0x10)
 	Struct FString                                               PersonaName;                                       // 0x18(0x10)
 	int                                                          PersonaGender;                                     // 0x28(0x4)
-	char                                                         pad0x4_WGSXF[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_YGKEC[0x4];                                 // 0x2c(0x4)
 	Struct FString                                               PersonaLang;                                       // 0x30(0x10)
 	bool                                                         GameTextSS;                                        // 0x40(0x1)
 };
@@ -21817,18 +21882,18 @@ public:
 	struct FName                                                 LocationGroupName;                                 // 0x8(0x8)
 	bool                                                         PeriodicallyChangeLocation;                        // 0x10(0x1)
 	bool                                                         ChangeLocationEvenIfPlayerIsNearby;                // 0x11(0x1)
-	char                                                         pad0x6_O5AL3[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_PKC8T[0x6];                                 // 0x12(0x6)
 	Struct WeightedProbabilityRangeOfRanges                      ChangeLocationTime;                                // 0x18(0x30)
 	bool                                                         HideWhenInDanger;                                  // 0x48(0x1)
-	char                                                         pad0x3_8MMDT[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_3J5IJ[0x3];                                 // 0x49(0x3)
 	float                                                        InternalWaterWarningDepth;                         // 0x4c(0x4)
 	struct FName                                                 InternalWaterWarningVOGroupName;                   // 0x50(0x8)
 	Struct WeightedProbabilityRangeOfRanges                      InternalWaterWarningVOCooldown;                    // 0x58(0x30)
 	bool                                                         UseCannons;                                        // 0x88(0x1)
 	bool                                                         DespawnIfNoCrewOnShip;                             // 0x89(0x1)
-	char                                                         pad0x2_33NIL[0x2];                                 // 0x8a(0x2)
+	char                                                         pad0x2_I5WBI[0x2];                                 // 0x8a(0x2)
 	struct FName                                                 AppearVOGroupName;                                 // 0x8c(0x8)
-	char                                                         pad0x4_12GV0[0x4];                                 // 0x94(0x4)
+	char                                                         pad0x4_D41SB[0x4];                                 // 0x94(0x4)
 	TArray<struct DespawnVOGroupEntries>                         DespawnVOGroupEntries;                             // 0x98(0x10)
 	TArray<struct OnActorDamagedReactions>                       OnActorDamagedReactions;                           // 0xa8(0x10)
 	TArray<struct OnActorKilledReactions>                        OnActorKilledReactions;                            // 0xb8(0x10)
@@ -21878,7 +21943,7 @@ struct NPCOnDespawnVOEntry
 {
 public:
 	byte                                                         DespawnReason;                                     // 0x0(0x1)
-	char                                                         pad0x3_WF2J3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_Z1028[0x3];                                 // 0x1(0x3)
 	struct FName                                                 VOGroupName;                                       // 0x4(0x8)
 };
 
@@ -21888,7 +21953,7 @@ struct NPCOnSurfaceCannonManagerCrewSizeSettings
 {
 public:
 	int                                                          CrewSize;                                          // 0x0(0x4)
-	char                                                         pad0x4_LYBCX[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_VVTG4[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenShots;                                  // 0x8(0x30)
 	float                                                        ChanceOfNearMiss;                                  // 0x38(0x4)
 };
@@ -21899,7 +21964,7 @@ struct NPCOnSurfaceCannonManagerCannon
 {
 public:
 	Class Cannon*                                                Cannon;                                            // 0x0(0x8)
-	char                                                         pad0x8_F8GVK[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_MDG4L[0x8];                                 // 0x8(0x8)
 	Struct Transform                                             NearestLocation;                                   // 0x10(0x30)
 };
 
@@ -21938,14 +22003,14 @@ public:
 	float                                                        Weight;                                            // 0x0(0x4)
 	struct FName                                                 SpawnLocationsName;                                // 0x4(0x8)
 	byte                                                         InvalidWhen;                                       // 0xc(0x1)
-	char                                                         pad0x3_C1OJ5[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_76C58[0x3];                                 // 0xd(0x3)
 	float                                                        FadeOutDelay;                                      // 0x30(0x4)
 	float                                                        AlternateFadeOutDelay;                             // 0x34(0x4)
 	bool                                                         CheckPlayerIsNearby;                               // 0x38(0x1)
 	bool                                                         UsesActiveAnimations;                              // 0x39(0x1)
-	char                                                         pad0x2_BXHHT[0x2];                                 // 0x3a(0x2)
+	char                                                         pad0x2_DC3PT[0x2];                                 // 0x3a(0x2)
 	struct FName                                                 PlayerNearbyVOGroupName;                           // 0x3c(0x8)
-	char                                                         pad0x4_OXSLT[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_FRLD9[0x4];                                 // 0x44(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      PlayerNearbyVOCooldown;                            // 0x48(0x30)
 };
 
@@ -22037,7 +22102,7 @@ public:
 	float                                                        TradeRoutePathSegmentTextureWidth;                 // 0x6c(0x4)
 	float                                                        TradeRoutePathSegmentTextureLength;                // 0x70(0x4)
 	bool                                                         NormalizeSplinePointSpacing;                       // 0x74(0x1)
-	char                                                         pad0x3_FTFPE[0x3];                                 // 0x75(0x3)
+	char                                                         pad0x3_TIC4X[0x3];                                 // 0x75(0x3)
 	float                                                        NormalizeAdjustment;                               // 0x78(0x4)
 	bool                                                         IgnoreFirstPoint;                                  // 0x7c(0x1)
 };
@@ -22055,7 +22120,7 @@ public:
 	float                                                        DistanceScaling;                                   // 0x28(0x4)
 	float                                                        MapRotation;                                       // 0x2c(0x4)
 	float                                                        GlobalTextureScaling;                              // 0x30(0x4)
-	char                                                         pad0x4_LXW85[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_P002M[0x4];                                 // 0x34(0x4)
 	TArray<struct IslandData>                                    IslandData;                                        // 0x38(0x10)
 };
 
@@ -22066,12 +22131,12 @@ struct RegionMapIslandData
 public:
 	Struct IslandSelectionType                                   Island;                                            // 0x0(0x8)
 	bool                                                         RenderToMap;                                       // 0x8(0x1)
-	char                                                         pad0x3_EU5M1[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_L7TO6[0x3];                                 // 0x9(0x3)
 	float                                                        Scale;                                             // 0xc(0x4)
 	float                                                        RotationOffset;                                    // 0x10(0x4)
 	Struct Vector2D                                              LocationOffset;                                    // 0x14(0x8)
 	bool                                                         Selectable;                                        // 0x1c(0x1)
-	char                                                         pad0x3_NUL6A[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_TSB7O[0x3];                                 // 0x1d(0x3)
 	int                                                          MaxNumSelections;                                  // 0x20(0x4)
 };
 
@@ -22107,7 +22172,7 @@ struct TradeRouteMapTextData
 public:
 	Struct FText                                                 Text;                                              // 0x0(0x38)
 	byte                                                         TextId;                                            // 0x38(0x1)
-	char                                                         pad0x3_PRXLX[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_7LUNX[0x3];                                 // 0x39(0x3)
 	Struct TreasureMapWidgetText                                 TextLayout;                                        // 0x3c(0x3c)
 };
 
@@ -22140,7 +22205,7 @@ public:
 	int                                                          MaxNumOfHitsProccessedPerLiquidCollision;          // 0x18(0x4)
 	Struct Vector                                                LiquidOriginOffset;                                // 0x1c(0xc)
 	Struct Rotator                                               LiquidOrientationOffset;                           // 0x28(0xc)
-	char                                                         pad0x4_5SORR[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_HUEEK[0x4];                                 // 0x34(0x4)
 	Class CurveFloat*                                            LiquidPointsTravelCurve;                           // 0x38(0x8)
 	byte                                                         CollisionChannel;                                  // 0x40(0x1)
 	Struct CollisionResponseContainer                            CollisionResponse;                                 // 0x41(0x20)
@@ -22266,7 +22331,7 @@ public:
 	byte                                                         PlatformId;                                        // 0x20(0x1)
 	byte                                                         DeviceSpecScore;                                   // 0x21(0x1)
 	bool                                                         AppInForeground;                                   // 0x22(0x1)
-	char                                                         pad0x5_PK37H[0x5];                                 // 0x23(0x5)
+	char                                                         pad0x5_9MMU4[0x5];                                 // 0x23(0x5)
 	Struct FString                                               DeviceID;                                          // 0x28(0x10)
 	Struct Guid                                                  PlayerGameId;                                      // 0x38(0x10)
 	Struct FString                                               BuildId;                                           // 0x48(0x10)
@@ -22297,7 +22362,7 @@ public:
 	Struct FString                                               UserId;                                            // 0x10(0x10)
 	Struct FString                                               PirateId;                                          // 0x20(0x10)
 	byte                                                         PlatformId;                                        // 0x30(0x1)
-	char                                                         pad0x7_TOWLH[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_UZ1IA[0x7];                                 // 0x31(0x7)
 	Struct FString                                               DeviceID;                                          // 0x38(0x10)
 };
 
@@ -22314,7 +22379,7 @@ struct PlayerPositionTelemetryFragment
 {
 public:
 	Struct Vector                                                Position;                                          // 0x0(0xc)
-	char                                                         pad0x4_608H8[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_021WF[0x4];                                 // 0xc(0x4)
 	Struct FString                                               WorldLocationName;                                 // 0x10(0x10)
 };
 
@@ -22336,7 +22401,7 @@ struct ServerTelemetryFragment
 {
 public:
 	Struct Guid                                                  ServerSessionId;                                   // 0x4(0x10)
-	char                                                         pad0x4_54H56[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_6GD0G[0x4];                                 // 0x14(0x4)
 	Struct FString                                               ServerBuildId;                                     // 0x18(0x10)
 	Struct FString                                               ServerLocation;                                    // 0x28(0x10)
 	Struct FString                                               ServerPlayMode;                                    // 0x38(0x10)
@@ -22411,7 +22476,7 @@ public:
 	Struct FString                                               BuildTypeId;                                       // 0x8(0x10)
 	Struct FString                                               StartedBy;                                         // 0x18(0x10)
 	bool                                                         Personal;                                          // 0x28(0x1)
-	char                                                         pad0x7_7M2BY[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_81AN7[0x7];                                 // 0x29(0x7)
 	Struct FString                                               StreamName;                                        // 0x30(0x10)
 };
 
@@ -22437,7 +22502,7 @@ struct EntitlementBundle
 {
 public:
 	bool                                                         IsCommodity;                                       // 0x0(0x1)
-	char                                                         pad0x7_JY2Q7[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_9BK76[0x7];                                 // 0x1(0x7)
 	class                                                        BundleKey;                                         // 0x8(0x8)
 	Struct Guid                                                  BundleOfferId;                                     // 0x10(0x10)
 	TArray<class Class*>                                         BundleContents;                                    // 0x20(0x10)
@@ -22511,10 +22576,11 @@ public:
 };
 
 
-// Size 0x1
+// Size 0x10
 struct PlayerEntitlementUpdatedEvent
 {
 public:
+	Class Actor*                                                 PlayerController;                                  // 0x0(0x8)
 };
 
 
@@ -22523,7 +22589,7 @@ struct GuildEntitlement
 {
 public:
 	int                                                          UnlockLevel;                                       // 0x0(0x4)
-	char                                                         pad0x4_N00UT[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MJQ5X[0x4];                                 // 0x4(0x4)
 	Struct FText                                                 LockedDescription;                                 // 0x8(0x38)
 	class                                                        Entitlement;                                       // 0x40(0x8)
 };
@@ -22794,12 +22860,12 @@ struct ConditionalStat
 public:
 	Struct PlayerStat                                            Stat;                                              // 0x0(0x4)
 	byte                                                         StatType;                                          // 0x4(0x1)
-	char                                                         pad0x3_U3TIY[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_NJ7T8[0x3];                                 // 0x5(0x3)
 	float                                                        Range;                                             // 0x8(0x4)
 	Struct PlayerTrackedObjective                                TrackedObjective;                                  // 0xc(0x10)
 	byte                                                         TrackedObjectiveType;                              // 0x1c(0x1)
 	byte                                                         TrackedObjectiveTargetType;                        // 0x1d(0x1)
-	char                                                         pad0x2_2W50B[0x2];                                 // 0x1e(0x2)
+	char                                                         pad0x2_R392K[0x2];                                 // 0x1e(0x2)
 	TArray<class StatCondition*>                                 Conditions;                                        // 0x20(0x10)
 	Struct ConditionInstance                                     ConditionInstance;                                 // 0x30(0x20)
 };
@@ -22812,7 +22878,7 @@ public:
 	Class Object*                                                ObjectOfInterest1;                                 // 0x8(0x8)
 	Class Object*                                                ObjectOfInterest2;                                 // 0x10(0x8)
 	bool                                                         ShouldNotifyPlayer;                                // 0x1c(0x1)
-	char                                                         pad0x3_GXMDQ[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_KAVBW[0x3];                                 // 0x1d(0x3)
 	TArray<struct ConditionalStatsFired>                         ConditionalStatsFired;                             // 0x20(0x10)
 };
 
@@ -22909,7 +22975,7 @@ struct ActorActivationRequested
 {
 public:
 	bool                                                         Reset;                                             // 0x0(0x1)
-	char                                                         pad0x3_IP27W[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_81D28[0x3];                                 // 0x1(0x3)
 	float                                                        ActivationDuration;                                // 0x4(0x4)
 };
 
@@ -22919,7 +22985,7 @@ struct Locator
 {
 public:
 	byte                                                         Location;                                          // 0x0(0x1)
-	char                                                         pad0x3_ZE077[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_OOK1I[0x3];                                 // 0x1(0x3)
 	Struct Vector                                                Position;                                          // 0x4(0xc)
 	Struct Quat                                                  Rotation;                                          // 0x10(0x10)
 };
@@ -23046,7 +23112,7 @@ public:
 	float                                                        From;                                              // 0x0(0x4)
 	float                                                        To;                                                // 0x4(0x4)
 	byte                                                         Reason;                                            // 0x8(0x1)
-	char                                                         pad0x7_XWVL0[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_GSA0C[0x7];                                 // 0x9(0x7)
 	Class Actor*                                                 DirectInstigator;                                  // 0x10(0x8)
 	Class Actor*                                                 RootInstigator;                                    // 0x18(0x8)
 	Struct Guid                                                  IncidentId;                                        // 0x20(0x10)
@@ -23060,7 +23126,7 @@ struct CurrentHealthInfo
 public:
 	float                                                        Health;                                            // 0x0(0x4)
 	byte                                                         LastChangedReason;                                 // 0x4(0x1)
-	char                                                         pad0x3_Q3830[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_3EF8B[0x3];                                 // 0x5(0x3)
 	Struct Vector_NetQuantize10                                  LastInstigatorLocation;                            // 0x8(0xc)
 };
 
@@ -23103,7 +23169,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_QL78K[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_QZXIL[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              CompletedAt;                                       // 0xe8(0x8)
 	Struct FString                                               ShipId;                                            // 0xf0(0x10)
 	Struct FString                                               AlignmentKey;                                      // 0x100(0x10)
@@ -23119,7 +23185,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_6JJ9S[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_TM4PU[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              CompletedAt;                                       // 0xe8(0x8)
 	Struct FString                                               AlignmentKey;                                      // 0xf0(0x10)
 };
@@ -23134,7 +23200,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_49RPP[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_4EAE7[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              UpdatedAt;                                         // 0xe0(0x8)
 	Struct FString                                               ShipId;                                            // 0xe8(0x10)
 };
@@ -23149,7 +23215,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_10SBR[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_Z95E4[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              UpdatedAt;                                         // 0xe0(0x8)
 };
 
@@ -23206,7 +23272,7 @@ struct AccoladeInformationModel
 {
 public:
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0x0(0x24)
-	char                                                         pad0x4_XRUDJ[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_Z1J1J[0x4];                                 // 0x24(0x4)
 	Struct FString                                               LocalizedTitle;                                    // 0x28(0x10)
 	TArray<struct Stats>                                         Stats;                                             // 0x38(0x10)
 };
@@ -23218,7 +23284,7 @@ struct AccoladeStatsInformationModel
 public:
 	Struct FString                                               LocalizedTitle;                                    // 0x0(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0x10(0x24)
-	char                                                         pad0x4_PCU2X[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_9TZIC[0x4];                                 // 0x34(0x4)
 	TArray<struct SubStats>                                      SubStats;                                          // 0x38(0x10)
 };
 
@@ -23241,7 +23307,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_IFN14[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_QUN6I[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              CompletedAt;                                       // 0xe8(0x8)
 	Struct FString                                               ShipId;                                            // 0xf0(0x10)
 	Struct FString                                               AlignmentKey;                                      // 0x100(0x10)
@@ -23257,7 +23323,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_7UAVA[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_VBI5E[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              CompletedAt;                                       // 0xe8(0x8)
 	Struct FString                                               AlignmentKey;                                      // 0xf0(0x10)
 };
@@ -23272,7 +23338,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_4QGYY[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_H6959[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              UpdatedAt;                                         // 0xe0(0x8)
 	Struct FString                                               ShipId;                                            // 0xe8(0x10)
 };
@@ -23287,7 +23353,7 @@ public:
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	Struct Guid                                                  ScheduleId;                                        // 0x98(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0xa8(0x24)
-	char                                                         pad0x4_MKBM1[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_Q6OF4[0x4];                                 // 0xcc(0x4)
 	Struct DateTime                                              UpdatedAt;                                         // 0xe0(0x8)
 };
 
@@ -23326,7 +23392,7 @@ struct AccoladePirateBreakDownModel
 public:
 	Struct Guid                                                  PirateId;                                          // 0x0(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0x10(0x24)
-	char                                                         pad0x4_PMSKL[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_2VVND[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -23335,7 +23401,7 @@ struct AccoladeBreakDownTotalModel
 {
 public:
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0x0(0x24)
-	char                                                         pad0x4_YD51E[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_SLRBQ[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -23354,7 +23420,7 @@ struct AccoladeShipBreakDownModel
 public:
 	Struct Guid                                                  ShipId;                                            // 0x0(0x10)
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0x10(0x24)
-	char                                                         pad0x4_31LMD[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_3G9XX[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -23380,7 +23446,7 @@ struct AccoladeModel
 {
 public:
 	Struct AccoladeProgressId                                    ProgressId;                                        // 0x0(0x24)
-	char                                                         pad0x4_EVEOJ[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_STZOR[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -23493,7 +23559,7 @@ public:
 	int                                                          ShipSaveTimeSeconds;                               // 0x14(0x4)
 	bool                                                         ContinuousSaving;                                  // 0x18(0x1)
 	bool                                                         FirstTimeSailingShip;                              // 0x19(0x1)
-	char                                                         pad0x6_KR5XK[0x6];                                 // 0x1a(0x6)
+	char                                                         pad0x6_MNHXQ[0x6];                                 // 0x1a(0x6)
 	Struct FString                                               ShipName;                                          // 0x20(0x10)
 };
 
@@ -23566,6 +23632,26 @@ public:
 
 
 // Size 0x10
+struct QuestTableExperiencesModel
+{
+public:
+	TArray<struct Items>                                         Items;                                             // 0x0(0x10)
+};
+
+
+// Size 0x50
+struct QuestTableExperienceItemModel
+{
+public:
+	Struct FString                                               Title;                                             // 0x0(0x10)
+	Struct FString                                               Description;                                       // 0x10(0x10)
+	Struct FString                                               BackgroundImageUrl;                                // 0x20(0x10)
+	Struct FString                                               ItemType;                                          // 0x30(0x10)
+	Struct FString                                               Size;                                              // 0x40(0x10)
+};
+
+
+// Size 0x10
 struct GameEventScheduleModel
 {
 public:
@@ -23573,14 +23659,35 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x50
 struct GameEventScheduleInfo
 {
 public:
 	TArray<struct Configs>                                       Configs;                                           // 0x0(0x10)
-	byte                                                         PlayMode;                                          // 0x10(0x1)
-	char                                                         pad0x3_14R7E[0x3];                                 // 0x11(0x3)
-	struct FName                                                 Story;                                             // 0x14(0x8)
+	TArray<struct MainConfigs>                                   MainConfigs;                                       // 0x10(0x10)
+	TArray<struct GlobalConfig>                                  GlobalConfig;                                      // 0x20(0x10)
+	TArray<struct EventSettings>                                 EventSettings;                                     // 0x30(0x10)
+	byte                                                         PlayMode;                                          // 0x40(0x1)
+	char                                                         pad0x3_NJB7Y[0x3];                                 // 0x41(0x3)
+	struct FName                                                 Story;                                             // 0x44(0x8)
+};
+
+
+// Size 0x20
+struct GameEventSettingsInfo
+{
+public:
+	Struct FString                                               GameEventTypeRef;                                  // 0x0(0x10)
+	TArray<Str ExcludedGlobalEvents>                             ExcludedGlobalEvents;                              // 0x10(0x10)
+};
+
+
+// Size 0x18
+struct GameEventCountInfo
+{
+public:
+	Struct FString                                               GameEventTypeRef;                                  // 0x0(0x10)
+	int                                                          NumAllowed;                                        // 0x10(0x4)
 };
 
 
@@ -23600,24 +23707,6 @@ struct GameEventWeightedListInfo
 public:
 	TArray<struct Events>                                        Events;                                            // 0x0(0x10)
 	float                                                        Weight;                                            // 0x10(0x4)
-};
-
-
-// Size 0x18
-struct GameEventCountInfo
-{
-public:
-	Struct FString                                               GameEventTypeRef;                                  // 0x0(0x10)
-	int                                                          NumAllowed;                                        // 0x10(0x4)
-};
-
-
-// Size 0x20
-struct GameEventSettingsInfo
-{
-public:
-	Struct FString                                               GameEventTypeRef;                                  // 0x0(0x10)
-	TArray<Str ExcludedGlobalEvents>                             ExcludedGlobalEvents;                              // 0x10(0x10)
 };
 
 
@@ -23680,6 +23769,27 @@ public:
 };
 
 
+// Size 0x40
+struct GuildActivityMessage
+{
+public:
+	Struct FString                                               GuildId;                                           // 0x0(0x10)
+	Struct FString                                               CreatedAtUtc;                                      // 0x10(0x10)
+	Struct FString                                               Type;                                              // 0x20(0x10)
+	Struct FString                                               payload;                                           // 0x30(0x10)
+};
+
+
+// Size 0xa0
+struct GuildMemberLeaderboardScoreUpdateMessage
+{
+public:
+	Struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
+	Struct Guid                                                  GuildId;                                           // 0x78(0x10)
+	struct FName                                                 EmissaryAffiliation;                               // 0x88(0x8)
+};
+
+
 // Size 0x1
 struct GuildValidityResponseModel
 {
@@ -23736,7 +23846,7 @@ struct GuildProgressModel
 public:
 	Struct FString                                               CompanyId;                                         // 0x0(0x10)
 	Struct GuildLevelDefinition                                  NextCompanyLevel;                                  // 0x1c(0x8)
-	char                                                         pad0x4_KGAZ1[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_EO6RS[0x4];                                 // 0x24(0x4)
 	Struct FString                                               Sig;                                               // 0x28(0x10)
 };
 
@@ -23756,12 +23866,11 @@ public:
 };
 
 
-// Size 0x88
+// Size 0x10
 struct GuildLevelBatchRequestModel
 {
 public:
-	Struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
-	TArray<struct GuildIds>                                      GuildIds;                                          // 0x78(0x10)
+	TArray<struct SignedGuildIds>                                SignedGuildIds;                                    // 0x0(0x10)
 };
 
 
@@ -23880,15 +23989,6 @@ public:
 };
 
 
-// Size 0x20
-struct SignedGuildIdModel
-{
-public:
-	Struct Guid                                                  GuildId;                                           // 0x0(0x10)
-	Struct FString                                               Signature;                                         // 0x10(0x10)
-};
-
-
 // Size 0x10
 struct GuildInvitesReceivedResponseModel
 {
@@ -23949,6 +24049,14 @@ public:
 };
 
 
+// Size 0x20
+struct GuildAddMemberRequestModel
+{
+public:
+	Struct GuildUserPirateModel                                  PirateToAdd;                                       // 0x0(0x20)
+};
+
+
 // Size 0x30
 struct GuildRolePermissionsRequestModel
 {
@@ -24001,7 +24109,7 @@ public:
 	Struct GuildBrandingModel                                    GuildBranding;                                     // 0x0(0x50)
 	Struct Guid                                                  ShipId;                                            // 0x50(0x10)
 	Struct GuildShipConfigModel                                  ShipConfig;                                        // 0x60(0x1)
-	char                                                         pad0x7_G3UNV[0x7];                                 // 0x61(0x7)
+	char                                                         pad0x7_YP0P3[0x7];                                 // 0x61(0x7)
 	Struct FString                                               Signature;                                         // 0x68(0x10)
 };
 
@@ -24085,48 +24193,50 @@ public:
 };
 
 
-// Size 0x1
-struct RequestJoinGuildResponseModel
-{
-public:
-	bool                                                         Success;                                           // 0x0(0x1)
-};
-
-
-// Size 0x1
+// Size 0x10
 struct CheckCanPlayerJoinGuildResponseModel
 {
 public:
-	bool                                                         CanJoin;                                           // 0x0(0x1)
+	TArray<Str ReasonsWhyPirateCannotJoinGuild>                  ReasonsWhyPirateCannotJoinGuild;                   // 0x0(0x10)
 };
 
 
-// Size 0x1
+// Size 0x10
 struct CheckCanPlayerInviteToGuildResponseModel
 {
 public:
-	bool                                                         CanInvite;                                         // 0x0(0x1)
+	TArray<Str ReasonsWhyPirateCannotInvite>                     ReasonsWhyPirateCannotInvite;                      // 0x0(0x10)
 };
 
 
-// Size 0x68
+// Size 0x28
+struct GuildChroniclesPirateId
+{
+public:
+	Struct UniqueNetIdRepl                                       UserId;                                            // 0x0(0x18)
+	Struct Guid                                                  PirateId;                                          // 0x18(0x10)
+};
+
+
+// Size 0x70
 struct GuildChroniclesInWorldMessage
 {
 public:
-	Struct UserPirateId                                          OriginatingPlayer;                                 // 0x0(0x20)
-	Struct Guid                                                  GuildId;                                           // 0x20(0x10)
-	Struct Guid                                                  ShipId;                                            // 0x3c(0x10)
-	char                                                         pad0x4_LEL51[0x4];                                 // 0x4c(0x4)
-	TArray<struct ShipAccolades>                                 ShipAccolades;                                     // 0x50(0x10)
+	Struct GuildChroniclesPirateId                               OriginatingPlayer;                                 // 0x0(0x28)
+	Struct Guid                                                  GuildId;                                           // 0x28(0x10)
+	Struct Guid                                                  ShipId;                                            // 0x44(0x10)
+	char                                                         pad0x4_XG624[0x4];                                 // 0x54(0x4)
+	TArray<struct ShipAccolades>                                 ShipAccolades;                                     // 0x58(0x10)
 };
 
 
-// Size 0x30
+// Size 0x48
 struct GuildChronicleShipAccolade
 {
 public:
-	Struct FString                                               ProgressId;                                        // 0x0(0x10)
-	Struct Guid                                                  AlignmentId;                                       // 0x10(0x10)
+	Struct AccoladeProgressId                                    ProgressId;                                        // 0x0(0x24)
+	Struct Guid                                                  AlignmentId;                                       // 0x24(0x10)
+	char                                                         pad0x4_F5O9O[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -24188,7 +24298,7 @@ struct NotesManagementAddNoteScheduleResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_8QZBM[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_9ZS95[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  ScheduleId;                                        // 0x4(0x10)
 };
 
@@ -24210,7 +24320,7 @@ struct NotesManagementAddNoteResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_GFRJO[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_UC9N0[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  NoteId;                                            // 0x4(0x10)
 };
 
@@ -24269,7 +24379,7 @@ public:
 	Struct DateTime                                              ActiveFromUtc;                                     // 0x10(0x8)
 	Struct DateTime                                              ActiveToUtc;                                       // 0x18(0x8)
 	bool                                                         IsRead;                                            // 0x20(0x1)
-	char                                                         pad0x7_DOBEE[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_7597F[0x7];                                 // 0x21(0x7)
 	TArray<Str CompletionEventIds>                               CompletionEventIds;                                // 0x28(0x10)
 };
 
@@ -24297,7 +24407,7 @@ public:
 	Struct PirateIdentity                                        Pirate;                                            // 0x0(0x78)
 	Struct Guid                                                  SeasonId;                                          // 0x78(0x10)
 	bool                                                         MultipleRewards;                                   // 0x88(0x1)
-	char                                                         pad0x7_AV5KR[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_94DNT[0x7];                                 // 0x89(0x7)
 	TArray<struct Rewards>                                       Rewards;                                           // 0x90(0x10)
 };
 
@@ -24325,7 +24435,7 @@ public:
 	Struct Guid                                                  SeasonId;                                          // 0x78(0x10)
 	Struct Guid                                                  GoalId;                                            // 0x88(0x10)
 	byte                                                         GoalType;                                          // 0x98(0x1)
-	char                                                         pad0x3_8NTUX[0x3];                                 // 0x99(0x3)
+	char                                                         pad0x3_M9BL9[0x3];                                 // 0x99(0x3)
 	Struct Guid                                                  GoalGroupId;                                       // 0x9c(0x10)
 };
 
@@ -24341,7 +24451,7 @@ public:
 	Struct Guid                                                  SeasonId;                                          // 0x84(0x10)
 	Struct Guid                                                  GoalId;                                            // 0x94(0x10)
 	byte                                                         GoalType;                                          // 0xa4(0x1)
-	char                                                         pad0x3_V0S65[0x3];                                 // 0xa5(0x3)
+	char                                                         pad0x3_GNJT8[0x3];                                 // 0xa5(0x3)
 	Struct Guid                                                  GoalGroupId;                                       // 0xa8(0x10)
 };
 
@@ -24408,7 +24518,7 @@ struct SeasonTierInfo
 {
 public:
 	int                                                          Number;                                            // 0x0(0x4)
-	char                                                         pad0x4_DCQ3S[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_DCI1I[0x4];                                 // 0x4(0x4)
 	Struct FString                                               LocalizedTitle;                                    // 0x8(0x10)
 };
 
@@ -24500,7 +24610,7 @@ struct AimSensitivitySettingsEntry
 {
 public:
 	byte                                                         SettingCategory;                                   // 0x0(0x1)
-	char                                                         pad0x3_DPRAS[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_44FDW[0x3];                                 // 0x1(0x3)
 	Struct AimSensitivitySettingParams                           SettingParams_Mouse;                               // 0x4(0xc)
 	Struct AimSensitivitySettingParams                           SettingParams_Controller;                          // 0x10(0xc)
 };
@@ -24596,7 +24706,7 @@ struct EventUserGameSettingsSetKeyBindingToInvalid
 {
 public:
 	byte                                                         BindingSet;                                        // 0x0(0x1)
-	char                                                         pad0x7_QT9O4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_2169Q[0x7];                                 // 0x1(0x7)
 	Struct FString                                               BindingName;                                       // 0x8(0x10)
 	byte                                                         ControllerType;                                    // 0x18(0x1)
 	byte                                                         Instigator;                                        // 0x19(0x1)
@@ -24608,7 +24718,7 @@ struct EventUserGameSettingsSetKeyBinding
 {
 public:
 	byte                                                         BindingSet;                                        // 0x0(0x1)
-	char                                                         pad0x7_VXKGG[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_QI28K[0x7];                                 // 0x1(0x7)
 	Struct FString                                               BindingName;                                       // 0x8(0x10)
 	Struct FString                                               KeyName;                                           // 0x18(0x10)
 	byte                                                         Instigator;                                        // 0x28(0x1)
@@ -24788,6 +24898,14 @@ public:
 
 
 // Size 0x1
+struct ScrambleGuildNameSettingChanged
+{
+public:
+	bool                                                         ShouldScrambleGuildName;                           // 0x0(0x1)
+};
+
+
+// Size 0x1
 struct ScrambleShipNameSettingChanged
 {
 public:
@@ -24844,7 +24962,7 @@ struct MeshRegistration
 {
 public:
 	TArray<struct RegisteredComponents>                          RegisteredComponents;                              // 0x0(0x10)
-	char                                                         pad0x8_N2VEW[0x8];                                 // 0x10(0x8)
+	char                                                         pad0x8_53UKH[0x8];                                 // 0x10(0x8)
 	class                                                        MeshFallbackCategory;                              // 0x18(0x8)
 	Class Object*                                                FallbackMeshToAssign;                              // 0x20(0x8)
 };
@@ -24885,7 +25003,7 @@ public:
 	int                                                          NumUniqueNoFallbackMeshes;                         // 0x28(0x4)
 	int                                                          NumTotalNoFallbackMeshes;                          // 0x2c(0x4)
 	int                                                          ThresholdScale;                                    // 0x30(0x4)
-	char                                                         pad0x4_G6L9Q[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_ALRIW[0x4];                                 // 0x34(0x4)
 	Struct JsonObjectWrapper                                     RegisteredMeshes;                                  // 0x38(0x18)
 };
 
@@ -24911,7 +25029,7 @@ struct MeshMemoryConstraintRegistrationBaseTelemetryEvent
 public:
 	bool                                                         HasWorldContext;                                   // 0x0(0x1)
 	bool                                                         HasGameState;                                      // 0x1(0x1)
-	char                                                         pad0x6_NN467[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_DBS8E[0x6];                                 // 0x2(0x6)
 	Struct FString                                               Category;                                          // 0x8(0x10)
 	Struct FString                                               BudgetNoFallback;                                  // 0x18(0x10)
 	Struct FString                                               MeshReference;                                     // 0x28(0x10)
@@ -24937,9 +25055,9 @@ struct TeleportLocation
 {
 public:
 	bool                                                         Valid;                                             // 0x0(0x1)
-	char                                                         pad0x3_Y3B31[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_80PQ0[0x3];                                 // 0x1(0x3)
 	struct FName                                                 Description;                                       // 0x4(0x8)
-	char                                                         pad0x4_GO2L2[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_8ARRE[0x4];                                 // 0xc(0x4)
 	Class SceneComponent*                                        TeleportBase;                                      // 0x10(0x8)
 	Struct Vector                                                TeleportLocation;                                  // 0x18(0xc)
 	Struct Rotator                                               TeleportRotation;                                  // 0x24(0xc)
@@ -24952,17 +25070,18 @@ struct TeleportActionStateConstructionInfo
 public:
 	Struct TeleportLocation                                      TeleportLocationOverride;                          // 0x30(0x30)
 	byte                                                         TeleportFadeType;                                  // 0x60(0x1)
-	char                                                         pad0x3_LPQH7[0x3];                                 // 0x61(0x3)
+	char                                                         pad0x3_8F9C5[0x3];                                 // 0x61(0x3)
 	int                                                          StreamInLevelId;                                   // 0x64(0x4)
 	int                                                          StreamOutLevelId;                                  // 0x68(0x4)
 	byte                                                         TeleportConditions;                                // 0x6c(0x1)
 	byte                                                         TeleportAudioMode;                                 // 0x6d(0x1)
-	char                                                         pad0x1_U6XS2[0x1];                                 // 0x6e(0x1)
+	char                                                         pad0x1_36UOT[0x1];                                 // 0x6e(0x1)
 	bool                                                         ShouldWaitForLoadout;                              // 0x6f(0x1)
 	bool                                                         ShouldWaitForEntitlements;                         // 0x70(0x1)
 	bool                                                         CallFinishSpawningOnEnd;                           // 0x71(0x1)
 	byte                                                         Reason;                                            // 0x72(0x1)
 	byte                                                         TeleportSpace;                                     // 0x73(0x1)
+	byte                                                         TeleportActionStateLargeItemMode;                  // 0x74(0x1)
 };
 
 
@@ -25097,6 +25216,15 @@ public:
 	byte                                                         NewMovementMode;                                   // 0x1(0x1)
 	byte                                                         PreviousCustomMovementMode;                        // 0x2(0x1)
 	byte                                                         NewCustomMovementMode;                             // 0x3(0x1)
+};
+
+
+// Size 0x10
+struct EventCharactersCollided
+{
+public:
+	Class Character*                                             OtherCharacter;                                    // 0x0(0x8)
+	Class PrimitiveComponent*                                    OtherComponent;                                    // 0x8(0x8)
 };
 
 
@@ -25344,6 +25472,22 @@ public:
 };
 
 
+// Size 0x8
+struct EventPlayerLoggedOut
+{
+public:
+	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct EventPlayerLoggedIn
+{
+public:
+	Class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
+};
+
+
 // Size 0x1
 struct ClientMigrationEndedEvent
 {
@@ -25495,7 +25639,7 @@ struct CameraSpringArmPlayModeParameters
 {
 public:
 	byte                                                         PlayMode;                                          // 0x0(0x1)
-	char                                                         pad0x3_7JKRK[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_81TE8[0x3];                                 // 0x1(0x3)
 	float                                                        CameraPullbackSpeed;                               // 0x4(0x4)
 };
 
@@ -25605,7 +25749,7 @@ struct EventPopUpQueueServicePaused
 {
 public:
 	bool                                                         Paused;                                            // 0x0(0x1)
-	char                                                         pad0x3_2ZVK5[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_6IZSQ[0x3];                                 // 0x1(0x3)
 	int                                                          Reason;                                            // 0x4(0x4)
 };
 
@@ -26024,7 +26168,7 @@ struct UIPremiumStoreOpenEvent
 {
 public:
 	bool                                                         IsFrontend;                                        // 0x0(0x1)
-	char                                                         pad0x7_3L5W3[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_NQDZ3[0x7];                                 // 0x1(0x7)
 	Struct FString                                               SessionId;                                         // 0x8(0x10)
 };
 
@@ -26146,7 +26290,7 @@ public:
 	Struct RuntimeVectorCurve                                    Position;                                          // 0x0(0x170)
 	Struct RuntimeVectorCurve                                    Rotation;                                          // 0x170(0x170)
 	bool                                                         ModifyScale;                                       // 0x2e0(0x1)
-	char                                                         pad0x7_WKJQO[0x7];                                 // 0x2e1(0x7)
+	char                                                         pad0x7_BQ2JN[0x7];                                 // 0x2e1(0x7)
 	Struct RuntimeVectorCurve                                    Scale;                                             // 0x2e8(0x170)
 };
 
@@ -26209,13 +26353,13 @@ public:
 	bool                                                         bAffectTranslucentLighting;                        // 0x8(0x1)
 	bool                                                         bPrecomputedLightingIsValid;                       // 0x8(0x1)
 	bool                                                         RainOcclusion;                                     // 0x8(0x1)
-	char                                                         pad0x3_O5DBV[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_HLWY1[0x3];                                 // 0x9(0x3)
 	float                                                        IndirectLightingIntensity;                         // 0xc(0x4)
 	float                                                        ScaleForTranslucency;                              // 0x10(0x4)
 	float                                                        CapForTranslucency;                                // 0x14(0x4)
 	float                                                        Temperature;                                       // 0x18(0x4)
 	bool                                                         bUseTemperature;                                   // 0x1c(0x1)
-	char                                                         pad0x3_SJODM[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_2QEMZ[0x3];                                 // 0x1d(0x3)
 	float                                                        MinRoughness;                                      // 0x20(0x4)
 	float                                                        ShadowBias;                                        // 0x24(0x4)
 	float                                                        ShadowSharpen;                                     // 0x28(0x4)
@@ -26223,23 +26367,23 @@ public:
 	bool                                                         CastTranslucentShadows;                            // 0x30(0x1)
 	bool                                                         bCastShadowsFromCinematicObjectsOnly;              // 0x30(0x1)
 	bool                                                         bAffectDynamicIndirectLighting;                    // 0x30(0x1)
-	char                                                         pad0x7_PEFU4[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_7XXB5[0x7];                                 // 0x31(0x7)
 	Class MaterialInterface*                                     LightFunctionMaterial;                             // 0x38(0x8)
 	Struct Vector                                                LightFunctionScale;                                // 0x40(0xc)
-	char                                                         pad0x4_46RAQ[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_F6XIB[0x4];                                 // 0x4c(0x4)
 	Class TextureLightProfile*                                   IESTexture;                                        // 0x50(0x8)
 	bool                                                         bUseIESBrightness;                                 // 0x58(0x1)
-	char                                                         pad0x3_01U8C[0x3];                                 // 0x59(0x3)
+	char                                                         pad0x3_DGQRK[0x3];                                 // 0x59(0x3)
 	float                                                        IESBrightnessScale;                                // 0x5c(0x4)
 	float                                                        LightFunctionFadeDistance;                         // 0x60(0x4)
 	float                                                        DisabledBrightness;                                // 0x64(0x4)
 	bool                                                         bEnableLightShaftBloom;                            // 0x68(0x1)
-	char                                                         pad0x3_D37HL[0x3];                                 // 0x69(0x3)
+	char                                                         pad0x3_G15I7[0x3];                                 // 0x69(0x3)
 	float                                                        BloomScale;                                        // 0x6c(0x4)
 	float                                                        BloomThreshold;                                    // 0x70(0x4)
 	Struct Color                                                 BloomTint;                                         // 0x74(0x4)
 	bool                                                         bUseRayTracedDistanceFieldShadows;                 // 0x78(0x1)
-	char                                                         pad0x3_E6C3P[0x3];                                 // 0x79(0x3)
+	char                                                         pad0x3_0AXSG[0x3];                                 // 0x79(0x3)
 	float                                                        RayStartOffsetDepthScale;                          // 0x7c(0x4)
 };
 
@@ -26258,14 +26402,14 @@ struct PointLightData
 public:
 	float                                                        AttenuationRadius;                                 // 0x0(0x4)
 	bool                                                         bUseInverseSquaredFalloff;                         // 0x4(0x1)
-	char                                                         pad0x3_ZSTB4[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_LOFI9[0x3];                                 // 0x5(0x3)
 	float                                                        LightFalloffExponent;                              // 0x8(0x4)
 	float                                                        IntensityScaleForWater;                            // 0xc(0x4)
 	float                                                        MinDistanceToLightAssumed;                         // 0x10(0x4)
 	float                                                        SourceRadius;                                      // 0x14(0x4)
 	float                                                        SourceLength;                                      // 0x18(0x4)
 	byte                                                         SimpleFunctionType;                                // 0x1c(0x1)
-	char                                                         pad0x3_2SWDU[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_RFMN7[0x3];                                 // 0x1d(0x3)
 	float                                                        ScaleOffset;                                       // 0x20(0x4)
 	float                                                        PulsePhase;                                        // 0x24(0x4)
 	float                                                        FlickerFrequency;                                  // 0x28(0x4)
@@ -26297,7 +26441,7 @@ struct GenericLightTemplate
 {
 public:
 	byte                                                         LightType;                                         // 0x0(0x1)
-	char                                                         pad0x7_6UG3I[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_ZUX2J[0x7];                                 // 0x1(0x7)
 	Struct BaseLightData                                         BaseLightData;                                     // 0x8(0x80)
 	Struct PointLightData                                        PointLightData;                                    // 0x88(0x3c)
 	Struct SpotLightData                                         SpotLightData;                                     // 0xc4(0xc)
@@ -26504,7 +26648,7 @@ public:
 	Struct StringAssetReference                                  Icon;                                              // 0x0(0x10)
 	Struct StringAssetReference                                  Alignment;                                         // 0x10(0x10)
 	byte                                                         AlignmentId;                                       // 0x20(0x1)
-	char                                                         pad0x7_2MNKA[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_M2ACM[0x7];                                 // 0x21(0x7)
 	Struct FString                                               AudioCueKey;                                       // 0x28(0x10)
 };
 
@@ -26581,7 +26725,7 @@ struct ShipDynamics
 {
 public:
 	bool                                                         bProcessSailBasedFakeRoll;                         // 0x0(0x1)
-	char                                                         pad0x3_MNLE2[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_VVC65[0x3];                                 // 0x1(0x3)
 	float                                                        SidewaysForceFromSailsForMaxFakeRoll;              // 0x4(0x4)
 	float                                                        BuoyancyProbeZOffsetAtMaxFakeRoll;                 // 0x8(0x4)
 	float                                                        MinHullSubmersionToApplyNoHullDragOrRudder;        // 0xc(0x4)
@@ -26988,7 +27132,7 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x1c(0x10)
 	Struct Guid                                                  CrewSessionId;                                     // 0x2c(0x10)
 	Struct Guid                                                  ShipId;                                            // 0x3c(0x10)
-	char                                                         pad0x4_CFPI4[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_697RC[0x4];                                 // 0x4c(0x4)
 	Struct FString                                               ShipSize;                                          // 0x50(0x10)
 	Struct Guid                                                  CaptainedShipId;                                   // 0x60(0x10)
 	Struct FString                                               CaptainUserId;                                     // 0x70(0x10)
@@ -27021,7 +27165,7 @@ struct AllianceNotificationData
 {
 public:
 	byte                                                         NotificationType;                                  // 0x0(0x1)
-	char                                                         pad0x7_HY19F[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_ZXUHT[0x7];                                 // 0x1(0x7)
 	Class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x8(0x8)
 };
 
@@ -27176,7 +27320,7 @@ public:
 	bool                                                         Vote;                                              // 0x0(0x1)
 	byte                                                         NumVotes;                                          // 0x1(0x1)
 	byte                                                         BrigState;                                         // 0x2(0x1)
-	char                                                         pad0x5_LRXY4[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_Z2A9U[0x5];                                 // 0x3(0x5)
 	Class PlayerState*                                           PlayerState;                                       // 0x8(0x8)
 };
 
@@ -27202,10 +27346,10 @@ public:
 	TArray<class PlayerState*>                                   Players;                                           // 0x20(0x10)
 	Struct CrewSessionTemplate                                   CrewSessionTemplate;                               // 0x30(0x38)
 	Struct Guid                                                  LiveryID;                                          // 0x68(0x10)
-	char                                                         pad0x8_6YESA[0x8];                                 // 0x78(0x8)
+	char                                                         pad0x8_TITKL[0x8];                                 // 0x78(0x8)
 	TArray<class Actor*>                                         AssociatedActors;                                  // 0x80(0x10)
 	bool                                                         HasEverSetSail;                                    // 0x90(0x1)
-	char                                                         pad0x3_B79A2[0x3];                                 // 0x91(0x3)
+	char                                                         pad0x3_J0CAX[0x3];                                 // 0x91(0x3)
 	int                                                          ScrambleNameIndex;                                 // 0x94(0x4)
 };
 
@@ -27247,17 +27391,19 @@ public:
 };
 
 
-// Size 0x50
+// Size 0x58
 struct CrewShipSessionData
 {
 public:
 	bool                                                         IsCaptainedSession;                                // 0x0(0x1)
-	char                                                         pad0x3_K5Z82[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_YBIUD[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  ShipId;                                            // 0x4(0x10)
-	char                                                         pad0x4_JUUSU[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_IDCH0[0x4];                                 // 0x14(0x4)
 	Struct FString                                               CaptainPirateId;                                   // 0x18(0x10)
 	Struct UniqueNetIdRepl                                       CaptainUserId;                                     // 0x28(0x18)
-	Struct Guid                                                  GuildId;                                           // 0x40(0x10)
+	bool                                                         CaptainIsPresent;                                  // 0x40(0x1)
+	char                                                         pad0x3_2IA3E[0x3];                                 // 0x41(0x3)
+	Struct Guid                                                  GuildId;                                           // 0x44(0x10)
 };
 
 
@@ -27311,13 +27457,16 @@ public:
 };
 
 
-// Size 0x88
+// Size 0x98
 struct PlayerJoinedCrew
 {
 public:
 	Struct FText                                                 PlayerName;                                        // 0x10(0x38)
 	Struct FText                                                 PlayerNameOverride;                                // 0x48(0x38)
 	bool                                                         IsJoining;                                         // 0x80(0x1)
+	bool                                                         IsCaptain;                                         // 0x81(0x1)
+	char                                                         pad0x2_PXU42[0x2];                                 // 0x82(0x2)
+	Struct Guid                                                  GuildId;                                           // 0x84(0x10)
 };
 
 
@@ -27400,7 +27549,7 @@ struct ServerMigrationCrewMigrationStatus
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	bool                                                         Migratable;                                        // 0x10(0x1)
-	char                                                         pad0x7_1JVCE[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_3GD5F[0x7];                                 // 0x11(0x7)
 	TArray<struct Locations>                                     Locations;                                         // 0x18(0x10)
 };
 
@@ -27438,7 +27587,7 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x70
 struct CrewBaseTelemetryFragment
 {
 public:
@@ -27446,10 +27595,12 @@ public:
 	Struct Guid                                                  CrewSessionId;                                     // 0x10(0x10)
 	Struct Guid                                                  AllianceId;                                        // 0x20(0x10)
 	int                                                          CurrentCrewCount;                                  // 0x30(0x4)
-	char                                                         pad0x4_VFTJS[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_N8XLG[0x4];                                 // 0x34(0x4)
 	Struct FString                                               SessionType;                                       // 0x38(0x10)
 	Struct FString                                               CrewType;                                          // 0x48(0x10)
 	bool                                                         IsCaptainedCrew;                                   // 0x58(0x1)
+	char                                                         pad0x3_RKQ7S[0x3];                                 // 0x59(0x3)
+	Struct Guid                                                  GuildId;                                           // 0x5c(0x10)
 };
 
 
@@ -27476,7 +27627,7 @@ struct ShipScuttledTelemetryEvent
 {
 public:
 	bool                                                         ScuttleAndChangeSeas;                              // 0x0(0x1)
-	char                                                         pad0x3_N9SX1[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_LCX5X[0x3];                                 // 0x1(0x3)
 	int                                                          ScuttleRequestsCount;                              // 0x4(0x4)
 	float                                                        CooldownTimer;                                     // 0x8(0x4)
 };
@@ -27657,7 +27808,7 @@ struct BuoyancyComponentLockToSurfaceParams
 {
 public:
 	bool                                                         Enabled;                                           // 0x0(0x1)
-	char                                                         pad0x3_6G6DP[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_81RDL[0x3];                                 // 0x1(0x3)
 	float                                                        SpringAcceleration;                                // 0x4(0x4)
 	float                                                        EnterLockStateBlendTime;                           // 0x8(0x4)
 	float                                                        ExitLockStateBlendTime;                            // 0xc(0x4)
@@ -27673,16 +27824,27 @@ struct BuoyancyComponentSinkingParams
 public:
 	float                                                        BuoyancyBlendTimeWhenSinking;                      // 0x0(0x4)
 	byte                                                         FloatingToSinkingBuoyancyCurveTransition;          // 0x4(0x1)
-	char                                                         pad0x3_CZDCT[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_2W72Q[0x3];                                 // 0x5(0x3)
 	float                                                        FloatingToSinkingBuoyancyCurveBlendTime;           // 0x8(0x4)
 	float                                                        FinalSinkingBuoyancy;                              // 0xc(0x4)
 	float                                                        SinkingTimeUntilDestroy;                           // 0x10(0x4)
 	float                                                        DisappearingTime;                                  // 0x14(0x4)
 	bool                                                         AutomaticSinkingEnabled;                           // 0x18(0x1)
-	char                                                         pad0x3_MU85I[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_3W0HC[0x3];                                 // 0x19(0x3)
 	Struct FloatRange                                            TimeInFloatingStateBeforeSinking;                  // 0x1c(0x10)
 	float                                                        WaterDepthToAllowItemToSink;                       // 0x2c(0x4)
 	byte                                                         WorldHitsTraceChannel;                             // 0x30(0x1)
+};
+
+
+// Size 0x10
+struct FakedBuoyancyParams
+{
+public:
+	float                                                        PitchSpeed;                                        // 0x0(0x4)
+	float                                                        MaxPitch;                                          // 0x4(0x4)
+	float                                                        RollSpeed;                                         // 0x8(0x4)
+	float                                                        MaxRoll;                                           // 0xc(0x4)
 };
 
 
@@ -27792,7 +27954,7 @@ struct GhostPlayModeParameters
 {
 public:
 	byte                                                         PlayMode;                                          // 0x0(0x1)
-	char                                                         pad0x3_YNBPP[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_F4VE9[0x3];                                 // 0x1(0x3)
 	float                                                        RotationPerSecond;                                 // 0x4(0x4)
 	float                                                        DisplacementPerSecond;                             // 0x8(0x4)
 };
@@ -27863,7 +28025,7 @@ public:
 	float                                                        FadeServerTimeout;                                 // 0xc(0x4)
 	Struct LinearColor                                           FadeColour;                                        // 0x10(0x10)
 	bool                                                         FadeAudio;                                         // 0x20(0x1)
-	char                                                         pad0x3_N5XMJ[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_TOLGH[0x3];                                 // 0x21(0x3)
 	float                                                        DeathCameraBlackFadeDelay;                         // 0x24(0x4)
 	float                                                        DeathCameraBlackFadeDuration;                      // 0x28(0x4)
 	float                                                        DeathCameraBlackFadeEventTimeout;                  // 0x2c(0x4)
@@ -27871,7 +28033,7 @@ public:
 	Struct LinearColor                                           DeathCameraBlackFadeColour;                        // 0x34(0x10)
 	float                                                        DeathCameraDelayBeforeEvaporate;                   // 0x44(0x4)
 	bool                                                         DeathCameraFadeAudio;                              // 0x48(0x1)
-	char                                                         pad0x3_2FJMW[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_IBDXR[0x3];                                 // 0x49(0x3)
 	float                                                        DeathCameraDelay;                                  // 0x4c(0x4)
 	Class GhostDataAsset*                                        PlayerGhostDataAsset;                              // 0x50(0x8)
 };
@@ -27925,7 +28087,10 @@ public:
 struct ItemBlockingParameters
 {
 public:
-	float                                                        BlockingHalfAngle;                                 // 0x0(0x4)
+	byte                                                         BlockingHalfAngle;                                 // 0x0(0x1)
+	byte                                                         BlockingDetectionOffset;                           // 0x1(0x1)
+	byte                                                         BlockingDetectionTruncatedConeRadius;              // 0x2(0x1)
+	byte                                                         BlockingDetectionCharacterOverlapRadius;           // 0x3(0x1)
 };
 
 
@@ -27941,7 +28106,7 @@ struct PlayerActivityIconInfo
 {
 public:
 	byte                                                         ActivityType;                                      // 0x0(0x1)
-	char                                                         pad0x7_NCV8H[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_0GABS[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  ActivityIcon;                                      // 0x8(0x10)
 };
 
@@ -27951,7 +28116,7 @@ struct PlayerActivityLifetimeRule
 {
 public:
 	byte                                                         ActivityType;                                      // 0x0(0x1)
-	char                                                         pad0x3_DPZT3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_0KLS7[0x3];                                 // 0x1(0x3)
 	float                                                        ActivityDuration;                                  // 0x4(0x4)
 	byte                                                         ActivityToEnd;                                     // 0x8(0x1)
 };
@@ -28192,7 +28357,7 @@ struct CanShowQuaternaryActionButton
 {
 public:
 	bool                                                         CanShow;                                           // 0x4(0x1)
-	char                                                         pad0x3_EWU96[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_S7I0N[0x3];                                 // 0x5(0x3)
 	Struct FText                                                 Text;                                              // 0x8(0x38)
 };
 
@@ -28202,7 +28367,7 @@ struct CanShowTertiaryActionButton
 {
 public:
 	bool                                                         CanShow;                                           // 0x4(0x1)
-	char                                                         pad0x3_PDUYS[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_C0KB1[0x3];                                 // 0x5(0x3)
 	Struct FText                                                 Text;                                              // 0x8(0x38)
 };
 
@@ -28212,7 +28377,7 @@ struct CanShowSecondaryActionButton
 {
 public:
 	bool                                                         CanShow;                                           // 0x4(0x1)
-	char                                                         pad0x3_RCF07[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_2XPVI[0x3];                                 // 0x5(0x3)
 	Struct FText                                                 Text;                                              // 0x8(0x38)
 };
 
@@ -28260,7 +28425,7 @@ struct ShowRadialInventory
 {
 public:
 	Struct RadialActionBindings                                  ActionBindings;                                    // 0x4(0x20)
-	char                                                         pad0x4_VGOJK[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_0G7TG[0x4];                                 // 0x24(0x4)
 	Struct FText                                                 ActionText;                                        // 0x28(0x38)
 	bool                                                         AsLinkedRadial;                                    // 0x60(0x1)
 };
@@ -28382,7 +28547,7 @@ struct ActionSequenceInteractableInteractionStateData
 public:
 	int                                                          InteractCount;                                     // 0x0(0x4)
 	byte                                                         InteractionState;                                  // 0x4(0x1)
-	char                                                         pad0x3_VWINA[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_4EVPG[0x3];                                 // 0x5(0x3)
 	double                                                       LastInteractionTimestamp;                          // 0x8(0x8)
 };
 
@@ -28406,7 +28571,7 @@ public:
 	Struct Vector                                                TooltipOffset;                                     // 0x38(0xc)
 	float                                                        HoldTime;                                          // 0x44(0x4)
 	float                                                        TimeBeforeNextInteraction;                         // 0x48(0x4)
-	char                                                         pad0x4_89WRQ[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_42YCE[0x4];                                 // 0x4c(0x4)
 	TArray<struct Conditions>                                    Conditions;                                        // 0x50(0x10)
 };
 
@@ -28416,13 +28581,13 @@ struct ActionSequenceSingleInteractionConditionParam
 {
 public:
 	bool                                                         AlwaysFail;                                        // 0x0(0x1)
-	char                                                         pad0x7_KG8XN[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_6U8NO[0x7];                                 // 0x1(0x7)
 	Struct ConditionInstance                                     Condition;                                         // 0x8(0x20)
 	bool                                                         StillAllowInteraction;                             // 0x28(0x1)
-	char                                                         pad0x7_JTI66[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_F4OXU[0x7];                                 // 0x29(0x7)
 	Struct FText                                                 FailedConditionDescriptorVerb;                     // 0x30(0x38)
 	bool                                                         ResetInteractionsOnFail;                           // 0x68(0x1)
-	char                                                         pad0x3_QJSH0[0x3];                                 // 0x69(0x3)
+	char                                                         pad0x3_N9UK5[0x3];                                 // 0x69(0x3)
 	float                                                        TimeBeforeInteractionReenabled;                    // 0x6c(0x4)
 };
 
@@ -28471,10 +28636,10 @@ public:
 	bool                                                         NarrateInteractableText;                           // 0x0(0x1)
 	byte                                                         NarrateInteractableButtons;                        // 0x1(0x1)
 	bool                                                         IgnoreDisabledInteractables;                       // 0x2(0x1)
-	char                                                         pad0x1_5I3IW[0x1];                                 // 0x3(0x1)
+	char                                                         pad0x1_08T2U[0x1];                                 // 0x3(0x1)
 	float                                                        NarrationInitialDelaySeconds;                      // 0x4(0x4)
 	bool                                                         RepeatTooltipNarration;                            // 0x8(0x1)
-	char                                                         pad0x3_6XRH6[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_2P95L[0x3];                                 // 0x9(0x3)
 	float                                                        NarrationRepeatingDelaySeconds;                    // 0xc(0x4)
 	bool                                                         RenarrateAfterClosingMenus;                        // 0x10(0x1)
 };
@@ -28493,7 +28658,7 @@ struct InteractOnServerRpc
 {
 public:
 	Struct NetSubObjectPtr                                       Interactable;                                      // 0x10(0x14)
-	char                                                         pad0x4_NLAHV[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_48NJW[0x4];                                 // 0x24(0x4)
 	class                                                        NotificationInputId;                               // 0x28(0x8)
 };
 
@@ -28527,6 +28692,14 @@ public:
 struct PlayerStartedInteractingWithNPCDialog
 {
 public:
+};
+
+
+// Size 0x10
+struct EventActiveDialogueInteractorsOnServerChanged
+{
+public:
+	TArray<class Actor*>                                         ActiveDialogueInteractors;                         // 0x0(0x10)
 };
 
 
@@ -28571,20 +28744,21 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x40
 struct UpdateInteractionEvent
 {
 public:
-	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x20)
+	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x40)
 };
 
 
-// Size 0x20
+// Size 0x40
 struct InteractionDefinition
 {
 public:
 	Struct FString                                               Header;                                            // 0x0(0x10)
-	TArray<struct Options>                                       Options;                                           // 0x10(0x10)
+	Struct InteractionTheme                                      Theme;                                             // 0x10(0x20)
+	TArray<struct Options>                                       Options;                                           // 0x30(0x10)
 };
 
 
@@ -28594,7 +28768,7 @@ struct InteractionOption
 public:
 	Struct FString                                               Text;                                              // 0x0(0x10)
 	int                                                          Index;                                             // 0x10(0x4)
-	char                                                         pad0x4_BB5DA[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_G2THF[0x4];                                 // 0x14(0x4)
 	Struct FString                                               Icon;                                              // 0x18(0x10)
 	Struct FString                                               IconNarrationText;                                 // 0x28(0x10)
 	bool                                                         IsEnabled;                                         // 0x38(0x1)
@@ -28602,10 +28776,19 @@ public:
 
 
 // Size 0x20
+struct InteractionTheme
+{
+public:
+	Struct FString                                               BackgroundImage;                                   // 0x0(0x10)
+	Struct FString                                               HeaderIcon;                                        // 0x10(0x10)
+};
+
+
+// Size 0x40
 struct StartInteractionEvent
 {
 public:
-	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x20)
+	Struct InteractionDefinition                                 Definition;                                        // 0x0(0x40)
 };
 
 
@@ -28786,7 +28969,7 @@ public:
 	Class Actor*                                                 Item;                                              // 0x0(0x8)
 	class                                                        InputID;                                           // 0x8(0x8)
 	bool                                                         PlayOneShotAnimation;                              // 0x10(0x1)
-	char                                                         pad0x7_61JNK[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_15LRF[0x7];                                 // 0x11(0x7)
 	Struct WieldableItemActionVisuals                            Visuals;                                           // 0x18(0x18)
 };
 
@@ -28808,7 +28991,7 @@ public:
 	Struct Vector                                                DropItemOffset;                                    // 0x10(0xc)
 	float                                                        MaxShallowWaterHeightToAllowItemDrop;              // 0x1c(0x4)
 	byte                                                         DropItemPosTestTraceChannel;                       // 0x20(0x1)
-	char                                                         pad0x3_2QQP6[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_KY1WC[0x3];                                 // 0x21(0x3)
 	float                                                        WaterVolumeOverlapRadius;                          // 0x24(0x4)
 	float                                                        MaxDroppedItemPitchRoll;                           // 0x28(0x4)
 	float                                                        ItemWorldProxyCapsuleCastRadius;                   // 0x2c(0x4)
@@ -28832,6 +29015,13 @@ public:
 
 
 // Size 0x10
+struct ItemReplenisherItem
+{
+public:
+};
+
+
+// Size 0x10
 struct StartPickupObjectActionRuleParams
 {
 public:
@@ -28844,7 +29034,7 @@ struct ItemProxyImpactVfxParams
 {
 public:
 	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	char                                                         pad0x7_SYTG0[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_DGH12[0x7];                                 // 0x1(0x7)
 	Class Object*                                                Particles;                                         // 0x8(0x8)
 };
 
@@ -28877,7 +29067,7 @@ struct OneShotInput
 public:
 	class                                                        InputID;                                           // 0x0(0x8)
 	bool                                                         PlayOneShotAnimation;                              // 0x8(0x1)
-	char                                                         pad0x7_O8X31[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_FFURX[0x7];                                 // 0x9(0x7)
 	Struct WieldableItemActionVisuals                            ActionVisuals;                                     // 0x10(0x18)
 };
 
@@ -28907,7 +29097,7 @@ struct WieldAnimationParams
 {
 public:
 	byte                                                         WieldLocation;                                     // 0x0(0x1)
-	char                                                         pad0xf_7PLVG[0xf];                                 // 0x1(0xf)
+	char                                                         pad0xf_R8K0Z[0xf];                                 // 0x1(0xf)
 	Struct Transform                                             PropOffset;                                        // 0x10(0x30)
 };
 
@@ -28933,7 +29123,7 @@ struct UseItemActionStateConstructionInfo
 {
 public:
 	Struct NetActorPtr                                           UsableObject;                                      // 0x30(0x14)
-	char                                                         pad0x4_ZF6BD[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_FU4XT[0x4];                                 // 0x44(0x4)
 	class                                                        InputID;                                           // 0x48(0x8)
 };
 
@@ -28942,6 +29132,15 @@ public:
 struct UseItemActionStateParams
 {
 public:
+};
+
+
+// Size 0x40
+struct IsWieldingItemCategoryCondition
+{
+public:
+	TArray<Assetclass TargetItemCategories>                      TargetItemCategories;                              // 0x28(0x10)
+	bool                                                         InvalidIfStashed;                                  // 0x38(0x1)
 };
 
 
@@ -29016,7 +29215,7 @@ public:
 	bool                                                         IsFull;                                            // 0x14(0x1)
 	bool                                                         IsBlocked;                                         // 0x15(0x1)
 	byte                                                         State;                                             // 0x16(0x1)
-	char                                                         pad0x1_YXVEI[0x1];                                 // 0x17(0x1)
+	char                                                         pad0x1_RUU0P[0x1];                                 // 0x17(0x1)
 	class                                                        DescKey;                                           // 0x18(0x8)
 };
 
@@ -29033,7 +29232,7 @@ struct InventoryCountsResponseEvent
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_0K4UY[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_IRGRX[0x3];                                 // 0x1(0x3)
 	Struct CappedCount                                           Cannonballs;                                       // 0x4(0x8)
 	Struct CappedCount                                           CursedCannonballs;                                 // 0xc(0x8)
 	Struct CappedCount                                           Food;                                              // 0x14(0x8)
@@ -29562,7 +29761,7 @@ public:
 	float                                                        GulpingStartTime;                                  // 0x10(0x4)
 	float                                                        GulpingPeakTime;                                   // 0x14(0x4)
 	float                                                        ClientErrorOxygenDifference;                       // 0x18(0x4)
-	char                                                         pad0x4_WZUE4[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_7ODUO[0x4];                                 // 0x1c(0x4)
 	Class Object*                                                ExtraBubblesFirstPerson;                           // 0x20(0x8)
 };
 
@@ -29603,15 +29802,15 @@ public:
 	float                                                        InnerRadius;                                       // 0x4(0x4)
 	float                                                        Strength;                                          // 0x8(0x4)
 	bool                                                         UseDragScalar;                                     // 0xc(0x1)
-	char                                                         pad0x3_HY1ZK[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_15BB9[0x3];                                 // 0xd(0x3)
 	float                                                        DragScalar;                                        // 0x10(0x4)
-	char                                                         pad0x4_TGTHK[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_IGIG7[0x4];                                 // 0x14(0x4)
 	Struct BlendableDrowningParams                               DrowningParameters;                                // 0x18(0x28)
 	Struct BlendableDrowningParams                               ShipInternalWaterDrowningParameters;               // 0x40(0x28)
 	bool                                                         IsSuperHeatedWater;                                // 0x68(0x1)
 	bool                                                         ResetOxygenLevel;                                  // 0x69(0x1)
 	bool                                                         Is3DWaterModifierZone;                             // 0x6a(0x1)
-	char                                                         pad0x1_QM3TK[0x1];                                 // 0x6b(0x1)
+	char                                                         pad0x1_PWKHI[0x1];                                 // 0x6b(0x1)
 	float                                                        OuterCylinderHalfHeight;                           // 0x6c(0x4)
 	float                                                        InnerCylinderHalfHeight;                           // 0x70(0x4)
 };
@@ -29693,7 +29892,7 @@ struct ClamberActionStateConstructionInfo
 public:
 	float                                                        NormalisedInteractionWidth;                        // 0x48(0x4)
 	byte                                                         ClimbId;                                           // 0x4c(0x1)
-	char                                                         pad0x3_4X64Q[0x3];                                 // 0x4d(0x3)
+	char                                                         pad0x3_3BZN0[0x3];                                 // 0x4d(0x3)
 	Struct LadderBlendParams                                     ClamberBlendParams;                                // 0x50(0xc)
 };
 
@@ -29758,6 +29957,18 @@ public:
 	class                                                        CanInteractNotificationInputId;                    // 0x0(0x8)
 	Struct FText                                                 CanInteractDescriptorText;                         // 0x8(0x38)
 	Struct FText                                                 DisplayName;                                       // 0x40(0x38)
+};
+
+
+// Size 0x40
+struct StandingSpyglassAudioParams
+{
+public:
+	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x0(0x8)
+	struct FName                                                 WwiseEmitterName;                                  // 0x8(0x8)
+	char                                                         pad0x20_Q9EW1[0x20];                               // 0x10(0x20)
+	Class WwiseEvent*                                            OnDockedEvent;                                     // 0x30(0x8)
+	Class WwiseEvent*                                            UnDockedEvent;                                     // 0x38(0x8)
 };
 
 
@@ -29834,12 +30045,12 @@ struct MountpointParams
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
-	char                                                         pad0x4_9GGX8[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_PJVMS[0x4];                                 // 0xc(0x4)
 	class                                                        PreviewTrinketDesc;                                // 0x10(0x8)
-	char                                                         pad0x8_OCMEL[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_SSYJ5[0x8];                                 // 0x18(0x8)
 	Struct Transform                                             MountpointRelativePosition;                        // 0x20(0x30)
 	Struct Vector                                                InteractionBoxExtent;                              // 0x50(0xc)
-	char                                                         pad0x4_IGZ79[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_A2Q9Y[0x4];                                 // 0x5c(0x4)
 	TArray<class Class*>                                         AcceptedMountableTypes;                            // 0x60(0x10)
 	float                                                        MaxNudgeAngle;                                     // 0x70(0x4)
 };
@@ -29867,7 +30078,7 @@ struct ReplicatedMountpointData
 public:
 	Class InteractableComponentWithActionRules*                  InteractableComponentWithActionRules;              // 0x0(0x8)
 	int                                                          CurrentTrinketClassIndex;                          // 0x8(0x4)
-	char                                                         pad0x4_ITVFF[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_F43YG[0x4];                                 // 0xc(0x4)
 	Class Actor*                                                 InteractingPlayerReplicated;                       // 0x10(0x8)
 };
 
@@ -29900,17 +30111,8 @@ public:
 	class                                                        PressedNotificationInputId;                        // 0x0(0x8)
 	class                                                        ReleasedNotificationInputId;                       // 0x8(0x8)
 	float                                                        InteractionInputHoldTime;                          // 0x10(0x4)
-	char                                                         pad0x4_462IP[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_ZUIT2[0x4];                                 // 0x14(0x4)
 	Struct OpenTrinketBoxActionRuleVerbiage                      ActionRuleVerbiage;                                // 0x18(0x70)
-};
-
-
-// Size 0x10
-struct MountpointParamsDataAssetByFeature
-{
-public:
-	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	Class MountpointParamsDataAsset*                             MountpointParamsDataAsset;                         // 0x8(0x8)
 };
 
 
@@ -29928,7 +30130,7 @@ struct EquipTrinketOnServerLoadoutRpc
 {
 public:
 	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
-	char                                                         pad0x4_KZQ62[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_F5UB6[0x4];                                 // 0x24(0x4)
 	class                                                        TrinketToEquip;                                    // 0x28(0x8)
 	int                                                          LocationIndex;                                     // 0x30(0x4)
 	bool                                                         ShouldVerifyCaptainsPermissions;                   // 0x34(0x1)
@@ -29980,7 +30182,7 @@ struct UnequipAllTrinketsOfClassOnServerLoadoutRpc
 {
 public:
 	Struct NetSubObjectPtr                                       TrinketLoadoutComponent;                           // 0x10(0x14)
-	char                                                         pad0x4_PL35R[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_S5K6G[0x4];                                 // 0x24(0x4)
 	class                                                        TrinketToUnequip;                                  // 0x28(0x8)
 	bool                                                         ShouldVerifyCaptainsPermissions;                   // 0x30(0x1)
 };
@@ -29999,7 +30201,7 @@ struct TransitionLadderBeginEvent
 {
 public:
 	byte                                                         LadderTransitionMode;                              // 0x0(0x1)
-	char                                                         pad0x3_K0KLO[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_8MBIN[0x3];                                 // 0x1(0x3)
 	Struct LadderDefinition                                      LadderDefinition;                                  // 0x4(0x1c)
 };
 
@@ -30030,7 +30232,7 @@ struct UseLadderBeginEvent
 {
 public:
 	Struct LadderDefinition                                      LadderDefinition;                                  // 0x0(0x1c)
-	char                                                         pad0x4_2SQBN[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_H72IB[0x4];                                 // 0x1c(0x4)
 	Class Object*                                                LadderObject;                                      // 0x20(0x8)
 };
 
@@ -30119,7 +30321,7 @@ public:
 	float                                                        Weight;                                            // 0x10(0x4)
 	bool                                                         IsUnderwaterZone;                                  // 0x14(0x1)
 	bool                                                         Is3DLightingZone;                                  // 0x15(0x1)
-	char                                                         pad0x2_QLZQO[0x2];                                 // 0x16(0x2)
+	char                                                         pad0x2_7YAVR[0x2];                                 // 0x16(0x2)
 	float                                                        OuterCylinderHalfHeight;                           // 0x18(0x4)
 	float                                                        InnerCylinderHalfHeight;                           // 0x1c(0x4)
 };
@@ -30165,7 +30367,7 @@ struct EncounterServiceParams
 public:
 	TArray<struct EncounterList>                                 EncounterList;                                     // 0x0(0x10)
 	int                                                          MinEventsToTriggerPerCycle;                        // 0x10(0x4)
-	char                                                         pad0x4_Y7AOE[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_AZTMK[0x4];                                 // 0x14(0x4)
 	double                                                       SecondsToSpendTriggeringEventsPerCycle;            // 0x18(0x8)
 };
 
@@ -30175,7 +30377,7 @@ struct EncounterServiceEntry
 {
 public:
 	byte                                                         EncounterListenerType;                             // 0x0(0x1)
-	char                                                         pad0x7_6B9P4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_T05KB[0x7];                                 // 0x1(0x7)
 	TArray<Byte ValidEncounterTypes>                             ValidEncounterTypes;                               // 0x8(0x10)
 };
 
@@ -30204,7 +30406,7 @@ public:
 	Struct Guid                                                  EncounterId;                                       // 0x0(0x10)
 	Class Actor*                                                 EncounterActor;                                    // 0x10(0x8)
 	byte                                                         EncounterType;                                     // 0x18(0x1)
-	char                                                         pad0x3_X7QIG[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_WOZEL[0x3];                                 // 0x19(0x3)
 	float                                                        EncounterRadiusSquared;                            // 0x1c(0x4)
 };
 
@@ -30236,7 +30438,7 @@ struct WeightedItemDescSpawnDataWithRandomQuantityResult
 {
 public:
 	Class ItemSpawnData*                                         ItemSpawnData;                                     // 0x0(0x8)
-	char                                                         pad0x4_EBU0F[0x4];                                 // 0x8(0x4)
+	char                                                         pad0x4_MYNRT[0x4];                                 // 0x8(0x4)
 	bool                                                         CustomLifetimeManagement;                          // 0xc(0x1)
 };
 
@@ -30256,7 +30458,7 @@ public:
 	Class WeightedItemDescSpawnDataAsset*                        WeightedItemSpawnDataAsset;                        // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
 	bool                                                         LimitMaxSpawnedItems;                              // 0xc(0x1)
-	char                                                         pad0x3_PO8T6[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_CVULW[0x3];                                 // 0xd(0x3)
 	int                                                          MaxTimesCanBeSelected;                             // 0x10(0x4)
 };
 
@@ -30277,9 +30479,19 @@ public:
 	float                                                        Weight;                                            // 0x8(0x4)
 	struct FName                                                 Feature;                                           // 0xc(0x8)
 	bool                                                         InvertFeatureCheck;                                // 0x14(0x1)
-	char                                                         pad0x3_BDD2I[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_H6P9T[0x3];                                 // 0x15(0x3)
 	TArray<class SpawnRequirement*>                              Requirements;                                      // 0x18(0x10)
 	bool                                                         CustomLifetimeManagement;                          // 0x28(0x1)
+};
+
+
+// Size 0x18
+struct ItemSpawnDistributionAssets
+{
+public:
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	char                                                         pad0x4_V8PQ9[0x4];                                 // 0xc(0x4)
+	Class WeightedItemDescSpawnDataAsset*                        ReferencedSpawnDistributionAsset;                  // 0x10(0x8)
 };
 
 
@@ -30293,13 +30505,24 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x50
 struct ItemSpawnTransform
 {
 public:
 	Struct Transform                                             Transform;                                         // 0x0(0x30)
 	Class WeightedItemDescSpawnDataAsset*                        ReferencedSpawnDistributionAsset;                  // 0x30(0x8)
-	int                                                          Weight;                                            // 0x38(0x4)
+	TArray<struct ReferencedSpawnDistributionAssetOverrides>     ReferencedSpawnDistributionAssetOverrides;         // 0x38(0x10)
+	int                                                          Weight;                                            // 0x48(0x4)
+};
+
+
+// Size 0x18
+struct ItemSpawnTransformOverrideEntry
+{
+public:
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	char                                                         pad0x4_OSJ0Y[0x4];                                 // 0xc(0x4)
+	Class WeightedItemDescSpawnDataAsset*                        ReferencedSpawnDistributionAsset;                  // 0x10(0x8)
 };
 
 
@@ -30327,7 +30550,7 @@ public:
 	class                                                        Type;                                              // 0x0(0x8)
 	struct FName                                                 Feature;                                           // 0x8(0x8)
 	bool                                                         InvertFeatureCheck;                                // 0x10(0x1)
-	char                                                         pad0x3_ZI0GC[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_9AMVG[0x3];                                 // 0x11(0x3)
 	int                                                          Weight;                                            // 0x14(0x4)
 	TArray<class SpawnRequirement*>                              Requirements;                                      // 0x18(0x10)
 };
@@ -30338,7 +30561,7 @@ struct SpawnedItem
 {
 public:
 	Class ItemSpawnData*                                         ItemSpawnData;                                     // 0x8(0x8)
-	char                                                         pad0x30_LMM5U[0x30];                               // 0x10(0x30)
+	char                                                         pad0x30_UPZZV[0x30];                               // 0x10(0x30)
 	bool                                                         CustomLifetimeManagement;                          // 0x40(0x1)
 };
 
@@ -30359,7 +30582,7 @@ public:
 	Class ItemSpawnData*                                         ItemSpawnData;                                     // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
 	bool                                                         LimitMaxSpawnedItems;                              // 0xc(0x1)
-	char                                                         pad0x3_IVZMS[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_GFNQQ[0x3];                                 // 0xd(0x3)
 	int                                                          MaxTimesCanBeSelected;                             // 0x10(0x4)
 };
 
@@ -30377,7 +30600,7 @@ struct WeightedItemDescSpawner
 {
 public:
 	byte                                                         SpawnSource;                                       // 0x0(0x1)
-	char                                                         pad0x7_MIE9I[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_O3L7K[0x7];                                 // 0x1(0x7)
 	TArray<struct SpawnList>                                     SpawnList;                                         // 0x8(0x10)
 	TArray<Weakclass SpawnedItems>                               SpawnedItems;                                      // 0x18(0x10)
 };
@@ -30428,18 +30651,19 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x40
 struct GuildBrandingTextureCollection
 {
 public:
 	Struct FString                                               ColourSwatchIdentifier;                            // 0x0(0x10)
 	Struct StringAssetReference                                  GuildFlagIcon;                                     // 0x10(0x10)
-	Struct StringAssetReference                                  GuildToastBackground;                              // 0x20(0x10)
+	Struct StringAssetReference                                  GuildPennantIcon;                                  // 0x20(0x10)
+	Struct StringAssetReference                                  GuildToastBackground;                              // 0x30(0x10)
 };
 
 
 // Size 0x18
-struct GuildLogbookIconKeyValue
+struct GuildIconTextureKeyValue
 {
 public:
 	Struct FString                                               ImageKey;                                          // 0x0(0x10)
@@ -30498,6 +30722,31 @@ public:
 };
 
 
+// Size 0x18
+struct PlayersGuildRewardUnlocked
+{
+public:
+	Struct FString                                               EntitlementId;                                     // 0x0(0x10)
+};
+
+
+// Size 0x40
+struct PlayerLeftGuild
+{
+public:
+	Struct UserPirateId                                          LeavingPlayer;                                     // 0x0(0x20)
+	Struct UserPirateId                                          Initiator;                                         // 0x20(0x20)
+};
+
+
+// Size 0x20
+struct PlayerJoinedGuild
+{
+public:
+	Struct UserPirateId                                          JoiningPlayer;                                     // 0x0(0x20)
+};
+
+
 // Size 0x10
 struct GuildSessionChangedEvent
 {
@@ -30515,11 +30764,33 @@ public:
 };
 
 
+// Size 0x20
+struct PlayerEnrolledGuildsUpdatedNetworkEvent
+{
+public:
+	TArray<struct SignedGuildIds>                                SignedGuildIds;                                    // 0x10(0x10)
+};
+
+
 // Size 0x10
 struct PlayerEnrolledGuildsUpdatedEvent
 {
 public:
-	TArray<struct GuildIds>                                      GuildIds;                                          // 0x0(0x10)
+	TArray<struct SignedGuildIds>                                SignedGuildIds;                                    // 0x0(0x10)
+};
+
+
+// Size 0x1
+struct GuildSessionRequestEvent
+{
+public:
+};
+
+
+// Size 0x1
+struct ActiveGuildBrandingRequest
+{
+public:
 };
 
 
@@ -30633,13 +30904,14 @@ public:
 };
 
 
-// Size 0x98
+// Size 0xa8
 struct GuildInviteData
 {
 public:
 	Struct GuildData                                             GuildData;                                         // 0x0(0x78)
 	Struct FString                                               InviteExpiry;                                      // 0x78(0x10)
 	TArray<Str InvitedByXUIDs>                                   InvitedByXUIDs;                                    // 0x88(0x10)
+	Struct FString                                               GuildSignature;                                    // 0x98(0x10)
 };
 
 
@@ -30682,30 +30954,11 @@ public:
 };
 
 
-// Size 0x50
-struct DistributedGuildActivityNetworkEvent
-{
-public:
-	Struct GuildActivityUpdateEvent                              Event;                                             // 0x10(0x40)
-};
-
-
 // Size 0x40
-struct GuildActivityUpdateEvent
+struct GuildActivityMessageUI
 {
 public:
-	Struct GuildActivityUpdate                                   Activity;                                          // 0x0(0x40)
-};
-
-
-// Size 0x40
-struct GuildActivityUpdate
-{
-public:
-	Struct FString                                               GuildId;                                           // 0x0(0x10)
-	Struct FString                                               CreatedAtUtc;                                      // 0x10(0x10)
-	Struct FString                                               Type;                                              // 0x20(0x10)
-	Struct FString                                               payload;                                           // 0x30(0x10)
+	Struct GuildActivityMessage                                  Activity;                                          // 0x0(0x40)
 };
 
 
@@ -30716,10 +30969,11 @@ public:
 };
 
 
-// Size 0x10
+// Size 0x20
 struct GuildSessionEndedNetworkEvent
 {
 public:
+	Struct Guid                                                  GuildId;                                           // 0x10(0x10)
 };
 
 
@@ -30737,7 +30991,6 @@ struct UpdatedGuildDataEvent
 public:
 	Struct Guid                                                  GuildId;                                           // 0x0(0x10)
 	Struct GuildBranding                                         GuildBranding;                                     // 0x10(0x50)
-	int                                                          GuildLevel;                                        // 0x60(0x4)
 };
 
 
@@ -30842,7 +31095,7 @@ struct ShipIdentity
 public:
 	Struct FString                                               UnscrambledShipName;                               // 0x0(0x10)
 	int                                                          ScrambledShipNameIndex;                            // 0x10(0x4)
-	char                                                         pad0x4_05DWP[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_XX99S[0x4];                                 // 0x14(0x4)
 	Struct FString                                               ClientShipName;                                    // 0x18(0x10)
 };
 
@@ -30958,7 +31211,7 @@ struct DefenderLootLevelThreshold
 {
 public:
 	byte                                                         LootLevel;                                         // 0x0(0x1)
-	char                                                         pad0x3_NGN4B[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_GOXFI[0x3];                                 // 0x1(0x3)
 	int                                                          Threshold;                                         // 0x4(0x4)
 };
 
@@ -30970,7 +31223,7 @@ public:
 	struct FName                                                 RewardIdentifier;                                  // 0x0(0x8)
 	Class PopUpMessageDesc*                                      PopUp;                                             // 0x8(0x8)
 	bool                                                         IgnorePopUp;                                       // 0x10(0x1)
-	char                                                         pad0x7_LPP9H[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_76LLO[0x7];                                 // 0x11(0x7)
 	TArray<class Reward*>                                        Rewards;                                           // 0x18(0x10)
 	TArray<class Class*>                                         PrerequisiteEntitlements;                          // 0x28(0x10)
 	bool                                                         AllowedFromInsecureSources;                        // 0x38(0x1)
@@ -30989,7 +31242,7 @@ public:
 	struct FName                                                 EmissaryAffiliation;                               // 0x30(0x8)
 	struct FName                                                 FactionAffiliation;                                // 0x3c(0x8)
 	byte                                                         FactionDefenderLootLevel;                          // 0x4c(0x1)
-	char                                                         pad0x3_1T6T3[0x3];                                 // 0x4d(0x3)
+	char                                                         pad0x3_8CO1K[0x3];                                 // 0x4d(0x3)
 	Struct PirateIdentity                                        Captain;                                           // 0x50(0x78)
 };
 
@@ -31001,7 +31254,7 @@ public:
 	Struct Guid                                                  RequestID;                                         // 0x0(0x10)
 	Struct FString                                               RewardId;                                          // 0x10(0x10)
 	byte                                                         CurrencyId;                                        // 0x20(0x1)
-	char                                                         pad0x3_CC19S[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_30I2E[0x3];                                 // 0x21(0x3)
 	Struct FString                                               CompanyId;                                         // 0x28(0x10)
 	TArray<Str Entitlements>                                     Entitlements;                                      // 0x40(0x10)
 	Struct FString                                               DeferralReason;                                    // 0x50(0x10)
@@ -31026,7 +31279,7 @@ struct CurrencyGrantedEvent
 {
 public:
 	byte                                                         Currency;                                          // 0x4(0x1)
-	char                                                         pad0x3_CA4N3[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_Q7ZUS[0x3];                                 // 0x5(0x3)
 	Struct Guid                                                  TransactionId;                                     // 0x8(0x10)
 	struct FName                                                 EmissaryAffiliation;                               // 0x18(0x8)
 	double                                                       EmissaryMultiplier;                                // 0x28(0x8)
@@ -31093,7 +31346,7 @@ public:
 	byte                                                         RewardGold;                                        // 0x42(0x1)
 	byte                                                         RewardXP;                                          // 0x43(0x1)
 	byte                                                         RewardSeasonRenown;                                // 0x44(0x1)
-	char                                                         pad0x3_A0N1I[0x3];                                 // 0x45(0x3)
+	char                                                         pad0x3_I3F2Q[0x3];                                 // 0x45(0x3)
 	Struct FString                                               DeferralReason;                                    // 0x48(0x10)
 	double                                                       RewardMultiplier;                                  // 0x58(0x8)
 };
@@ -31192,7 +31445,7 @@ struct RewardGrantedMessage
 public:
 	Struct FString                                               RewardId;                                          // 0x0(0x10)
 	byte                                                         CurrencyId;                                        // 0x10(0x1)
-	char                                                         pad0x3_Y5V4K[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_CZPII[0x3];                                 // 0x11(0x3)
 	Struct FString                                               CompanyId;                                         // 0x18(0x10)
 	TArray<Str Entitlements>                                     Entitlements;                                      // 0x30(0x10)
 	Struct Guid                                                  RequestID;                                         // 0x40(0x10)
@@ -31219,7 +31472,7 @@ struct CurrencyGrantedMessage
 {
 public:
 	byte                                                         Currency;                                          // 0x4(0x1)
-	char                                                         pad0x3_ZDOMB[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_SD6R1[0x3];                                 // 0x5(0x3)
 	Struct Guid                                                  TransactionId;                                     // 0x8(0x10)
 	struct FName                                                 EmissaryAffiliation;                               // 0x18(0x8)
 	double                                                       EmissaryMultiplier;                                // 0x28(0x8)
@@ -31285,7 +31538,7 @@ public:
 	bool                                                         DontRewardCurrency;                                // 0x42(0x1)
 	bool                                                         DontRewardXp;                                      // 0x43(0x1)
 	bool                                                         DontRewardSeasonXp;                                // 0x44(0x1)
-	char                                                         pad0x3_KR4WG[0x3];                                 // 0x45(0x3)
+	char                                                         pad0x3_DFZVU[0x3];                                 // 0x45(0x3)
 	Struct FString                                               DeferralReason;                                    // 0x48(0x10)
 	double                                                       RewardMultiplier;                                  // 0x58(0x8)
 };
@@ -31314,7 +31567,7 @@ public:
 	struct FName                                                 EmissaryAffiliation;                               // 0x30(0x8)
 	struct FName                                                 FactionAffiliation;                                // 0x3c(0x8)
 	byte                                                         FactionDefenderLootLevel;                          // 0x4c(0x1)
-	char                                                         pad0x3_H6RW7[0x3];                                 // 0x4d(0x3)
+	char                                                         pad0x3_OO67R[0x3];                                 // 0x4d(0x3)
 	Struct PirateIdentity                                        Captain;                                           // 0x50(0x78)
 };
 
@@ -31385,7 +31638,7 @@ struct RewardRuntimeDefinition
 {
 public:
 	Class PopUpMessageDesc*                                      PopUp;                                             // 0x8(0x8)
-	char                                                         pad0x10_A62R0[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_TEU8T[0x10];                               // 0x10(0x10)
 	TArray<class Class*>                                         PrerequisiteEntitlements;                          // 0x20(0x10)
 };
 
@@ -31449,7 +31702,7 @@ struct RewardGroupList
 {
 public:
 	int                                                          NumRewards;                                        // 0x0(0x4)
-	char                                                         pad0x4_KD4AJ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_LXAPV[0x4];                                 // 0x4(0x4)
 	TArray<struct RewardGroups>                                  RewardGroups;                                      // 0x8(0x10)
 };
 
@@ -31468,7 +31721,7 @@ struct VoyageTypePrioritisedPromptEntry
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
 	bool                                                         HasDVRVariant;                                     // 0x1(0x1)
-	char                                                         pad0x2_20P6L[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_B8738[0x2];                                 // 0x2(0x2)
 	float                                                        HoldDuration;                                      // 0x4(0x4)
 	Struct PrioritisedPromptWithHandle                           NormalPromptClass;                                 // 0x8(0x70)
 	Struct PrioritisedPromptWithHandle                           DVRPromptClass;                                    // 0x78(0x70)
@@ -31541,7 +31794,7 @@ struct DiscoveryNotificationEvent
 {
 public:
 	int                                                          Count;                                             // 0x0(0x4)
-	char                                                         pad0x4_F7J2G[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_879AQ[0x4];                                 // 0x4(0x4)
 	TArray<Str Images>                                           Images;                                            // 0x8(0x10)
 	Struct FString                                               Background;                                        // 0x18(0x10)
 	Struct FText                                                 Text;                                              // 0x28(0x38)
@@ -31574,7 +31827,7 @@ public:
 	Struct ViewVoyageBanners                                     ViewVoyageBanners;                                 // 0x64(0x3)
 	bool                                                         DoNotNotifyParticipantsOnVoyageComplete;           // 0x67(0x1)
 	int                                                          Rank;                                              // 0x68(0x4)
-	char                                                         pad0x4_XZFJW[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_2DPL7[0x4];                                 // 0x6c(0x4)
 	TArray<struct VoyageCompletionStats>                         VoyageCompletionStats;                             // 0x70(0x10)
 	TArray<struct ReapersMarkCompletionStats>                    ReapersMarkCompletionStats;                        // 0x80(0x10)
 	TArray<struct VoyageCompletionRewards>                       VoyageCompletionRewards;                           // 0x90(0x10)
@@ -31686,7 +31939,7 @@ struct VoyageStartTelemetryEvent
 {
 public:
 	bool                                                         IsEmergent;                                        // 0x0(0x1)
-	char                                                         pad0x7_A9CXV[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_YK4L4[0x7];                                 // 0x1(0x7)
 	TArray<struct Quests>                                        Quests;                                            // 0x8(0x10)
 };
 
@@ -31756,9 +32009,9 @@ public:
 	bool                                                         IsOnDemand;                                        // 0x52(0x1)
 	byte                                                         EmergentSource;                                    // 0x53(0x1)
 	Struct ViewVoyageBanners                                     ViewVoyageBanners;                                 // 0x54(0x3)
-	char                                                         pad0x1_OEZPH[0x1];                                 // 0x57(0x1)
+	char                                                         pad0x1_MCUJS[0x1];                                 // 0x57(0x1)
 	int                                                          Rank;                                              // 0x58(0x4)
-	char                                                         pad0x4_MBBBK[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_UQU21[0x4];                                 // 0x5c(0x4)
 	TArray<struct VoyageCompletionStats>                         VoyageCompletionStats;                             // 0x60(0x10)
 	TArray<struct ReapersMarkCompletionStats>                    ReapersMarkCompletionStats;                        // 0x70(0x10)
 	TArray<struct VoyageCompletionRewards>                       VoyageCompletionRewards;                           // 0x80(0x10)
@@ -31777,7 +32030,7 @@ struct LandmarkReaction
 {
 public:
 	bool                                                         Enabled;                                           // 0x0(0x1)
-	char                                                         pad0x3_10NXC[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_PXIAH[0x3];                                 // 0x1(0x3)
 	float                                                        RelevantRadiusInMetres;                            // 0x4(0x4)
 	TArray<Byte ActionsThatTriggerThisReaction>                  ActionsThatTriggerThisReaction;                    // 0x8(0x10)
 	Class WwiseEvent*                                            GateCompletedAudioCue;                             // 0x18(0x8)
@@ -31809,7 +32062,7 @@ struct LandmarkSoundPlayedEvent
 {
 public:
 	int                                                          PlayingId;                                         // 0x0(0x4)
-	char                                                         pad0x4_P1H8X[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_L75RK[0x4];                                 // 0x4(0x4)
 	Class WwiseEvent*                                            AudioEvent;                                        // 0x8(0x8)
 	Struct WwiseEmitter                                          Emitter;                                           // 0x10(0x20)
 };
@@ -31879,7 +32132,7 @@ public:
 	TArray<struct PetLoadout>                                    PetLoadout;                                        // 0x20(0x10)
 	bool                                                         PetNamingDisallowed;                               // 0x30(0x1)
 	bool                                                         InitialLoadout;                                    // 0x31(0x1)
-	char                                                         pad0x6_DSNEF[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_7WSOM[0x6];                                 // 0x32(0x6)
 	Struct FString                                               Hash;                                              // 0x38(0x10)
 };
 
@@ -31918,10 +32171,10 @@ public:
 	int                                                          MaxCapacityPerNode;                                // 0x10(0x4)
 	int                                                          MaxNumNodes;                                       // 0x14(0x4)
 	int                                                          MaxCapacityTotal;                                  // 0x18(0x4)
-	char                                                         pad0x4_BE21A[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_NOLLO[0x4];                                 // 0x1c(0x4)
 	TArray<struct ContainerNodes>                                ContainerNodes;                                    // 0x20(0x10)
 	bool                                                         AllowedItemsAreCached;                             // 0x30(0x1)
-	char                                                         pad0x7_T5ON2[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_FTR69[0x7];                                 // 0x31(0x7)
 	Class ContainerAllowedItemsDataAsset*                        CachedAllowedItems;                                // 0x38(0x8)
 };
 
@@ -32009,7 +32262,7 @@ struct StorageContainerWeightedItemListEntry
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_MUS5E[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_2TWR8[0x4];                                 // 0x4(0x4)
 	class                                                        ItemDesc;                                          // 0x8(0x8)
 };
 
@@ -32019,7 +32272,7 @@ struct StorageContainerWeightedItemListEntryList
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_UE5MS[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_847V7[0x4];                                 // 0x4(0x4)
 	TArray<struct Entries>                                       Entries;                                           // 0x8(0x10)
 };
 
@@ -32041,27 +32294,27 @@ public:
 };
 
 
-// Size 0x18
+// Size 0x20
 struct TypedStorageContainerContentTypeSelectorEntry
 {
 public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	int                                                          MinimumUses;                                       // 0x4(0x4)
-	int                                                          MaximumUses;                                       // 0x8(0x4)
-	char                                                         pad0x4_DZ4H0[0x4];                                 // 0xc(0x4)
-	class                                                        ContentSpawnerType;                                // 0x10(0x8)
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	float                                                        Weight;                                            // 0xc(0x4)
+	int                                                          MinimumUses;                                       // 0x10(0x4)
+	int                                                          MaximumUses;                                       // 0x14(0x4)
+	class                                                        ContentSpawnerType;                                // 0x18(0x8)
 };
 
 
-// Size 0x18
+// Size 0x20
 struct StorageContainerContentTypeSelectorEntry
 {
 public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	int                                                          MinimumUses;                                       // 0x4(0x4)
-	int                                                          MaximumUses;                                       // 0x8(0x4)
-	char                                                         pad0x4_FSI2A[0x4];                                 // 0xc(0x4)
-	Class StorageContainerContentSpawner*                        ContentSpawner;                                    // 0x10(0x8)
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	float                                                        Weight;                                            // 0xc(0x4)
+	int                                                          MinimumUses;                                       // 0x10(0x4)
+	int                                                          MaximumUses;                                       // 0x14(0x4)
+	Class StorageContainerContentSpawner*                        ContentSpawner;                                    // 0x18(0x8)
 };
 
 
@@ -32094,7 +32347,7 @@ struct StowAllItemsToContainerRPC
 {
 public:
 	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
-	char                                                         pad0x4_CCR3G[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_T6MTD[0x4];                                 // 0x24(0x4)
 	class                                                        ItemDescToStow;                                    // 0x28(0x8)
 };
 
@@ -32104,7 +32357,7 @@ struct StowItemToContainerRPC
 {
 public:
 	Struct NetSubObjectPtr                                       Container;                                         // 0x10(0x14)
-	char                                                         pad0x4_MXTLT[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_Q2LBC[0x4];                                 // 0x24(0x4)
 	class                                                        ItemDescToStow;                                    // 0x28(0x8)
 };
 
@@ -32211,7 +32464,7 @@ struct AirGivingVolumeData
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0xc_Z5R95[0xc];                                 // 0xc(0xc)
+	char                                                         pad0xc_SG8I7[0xc];                                 // 0xc(0xc)
 	float                                                        Radius;                                            // 0x18(0x4)
 	bool                                                         UseLineOfSight;                                    // 0x1c(0x1)
 	bool                                                         CanBeUsedOutsideIslandBounds;                      // 0x1d(0x1)
@@ -32232,7 +32485,7 @@ struct Island
 public:
 	struct FName                                                 IslandName;                                        // 0x0(0x8)
 	byte                                                         IslandType;                                        // 0x8(0x1)
-	char                                                         pad0x7_FHBTY[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_AJA0R[0x7];                                 // 0x9(0x7)
 	class                                                        Sea;                                               // 0x10(0x8)
 	Struct Vector                                                IslandBoundsCentre;                                // 0x18(0xc)
 	float                                                        IslandBoundsRadius;                                // 0x24(0x4)
@@ -32241,9 +32494,9 @@ public:
 	float                                                        ShipDiveAndResurfaceExclusionZoneRadius;           // 0x30(0x4)
 	float                                                        Rotation;                                          // 0x34(0x4)
 	Struct Vector                                                CompassDirectionIslandCentre;                      // 0x38(0xc)
-	char                                                         pad0x4_HR3QI[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_M063Q[0x4];                                 // 0x44(0x4)
 	Class AICreatureMovementModifierParamsDataAsset*             PetMovementParamsData;                             // 0x48(0x8)
-	char                                                         pad0x10_273YX[0x10];                               // 0x50(0x10)
+	char                                                         pad0x10_NC4LV[0x10];                               // 0x50(0x10)
 	TArray<struct FName>                                         IslandFeatureNames;                                // 0x60(0x10)
 };
 
@@ -32274,7 +32527,7 @@ struct IslandMaterialZoneStatusMapping
 public:
 	Class PhysicalMaterial*                                      SurfaceMaterial;                                   // 0x0(0x8)
 	bool                                                         ActivateOnStart;                                   // 0x8(0x1)
-	char                                                         pad0x7_UNEQT[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_ETBW7[0x7];                                 // 0x9(0x7)
 	TArray<struct Status>                                        Status;                                            // 0x10(0x10)
 };
 
@@ -32340,7 +32593,7 @@ struct EventIslandDiscoveredNotification
 public:
 	Struct FText                                                 IslandName;                                        // 0x0(0x38)
 	byte                                                         IslandType;                                        // 0x38(0x1)
-	char                                                         pad0x3_XSDUZ[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_K8SMF[0x3];                                 // 0x39(0x3)
 	struct FName                                                 SeaName;                                           // 0x3c(0x8)
 	byte                                                         IslandActiveEventType;                             // 0x44(0x1)
 };
@@ -32359,7 +32612,7 @@ struct EventPlayerLeftIslandVicinity
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
-	char                                                         pad0x8_W67RO[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_XCIA3[0x8];                                 // 0x8(0x8)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
 };
 
@@ -32369,8 +32622,17 @@ struct EventPlayerEnteredIslandVicinity
 {
 public:
 	Class Actor*                                                 Player;                                            // 0x0(0x8)
-	char                                                         pad0x8_W4VMA[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_164GS[0x8];                                 // 0x8(0x8)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct GlobalIslandChanceToSpawnOverride
+{
+public:
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	float                                                        GlobalIslandChanceToSpawn;                         // 0xc(0x4)
 };
 
 
@@ -32488,6 +32750,134 @@ public:
 };
 
 
+// Size 0x18
+struct CloudTypeNormalizedWeight
+{
+public:
+	Struct LinearColor                                           LodScreenPercentages;                              // 0x0(0x10)
+	float                                                        ProbabilityWeight;                                 // 0x10(0x4)
+	float                                                        MeshRadius;                                        // 0x14(0x4)
+};
+
+
+// Size 0x30
+struct CloudTypeDefinition
+{
+public:
+	Class StaticMesh*                                            CloudMesh;                                         // 0x0(0x8)
+	Class StaticMesh*                                            CloudFluffyMesh;                                   // 0x8(0x8)
+	Struct Vector2D                                              ScaleRange;                                        // 0x10(0x8)
+	Struct Vector2D                                              StorminessRange;                                   // 0x18(0x8)
+	float                                                        ProbabilityWeight;                                 // 0x20(0x4)
+	float                                                        OverlapTolerance;                                  // 0x24(0x4)
+	bool                                                         IsStreetCloud;                                     // 0x28(0x1)
+	bool                                                         CastsShadow;                                       // 0x29(0x1)
+};
+
+
+// Size 0x30
+struct RenderedCloudProperties
+{
+public:
+	Struct Vector                                                WorldPosition;                                     // 0x0(0xc)
+	float                                                        Fade;                                              // 0xc(0x4)
+	float                                                        Storminess;                                        // 0x10(0x4)
+	float                                                        RotationYaw;                                       // 0x14(0x4)
+	float                                                        StreetRotationFront;                               // 0x18(0x4)
+	float                                                        StreetRotationBack;                                // 0x1c(0x4)
+	bool                                                         Visible;                                           // 0x20(0x1)
+	bool                                                         FluffVisible;                                      // 0x21(0x1)
+	bool                                                         IsStreetCloud;                                     // 0x22(0x1)
+	bool                                                         UpdatesThisFrame;                                  // 0x23(0x1)
+};
+
+
+// Size 0x24
+struct TiledCloudProperties
+{
+public:
+	Struct Vector2D                                              TilePosition;                                      // 0x0(0x8)
+	int                                                          CloudTypeIndex;                                    // 0x8(0x4)
+	float                                                        RelativeRadius;                                    // 0xc(0x4)
+	float                                                        Scale;                                             // 0x10(0x4)
+	float                                                        PressureThreshold;                                 // 0x14(0x4)
+	float                                                        RotationYaw;                                       // 0x18(0x4)
+	float                                                        OverlapTolerance;                                  // 0x1c(0x4)
+};
+
+
+// Size 0x70
+struct CloudVisualParameters
+{
+public:
+	bool                                                         RenderInMainPass;                                  // 0x0(0x1)
+	char                                                         pad0x3_M4KMK[0x3];                                 // 0x1(0x3)
+	Struct Vector                                                ScalingVector;                                     // 0x4(0xc)
+	Struct Vector2D                                              BillboardScale;                                    // 0x10(0x8)
+	Struct Vector2D                                              BillboardRandomScale;                              // 0x18(0x8)
+	Struct Vector2D                                              BillboardRearCutOff;                               // 0x20(0x8)
+	Struct Vector2D                                              BillboardForeCutOff;                               // 0x28(0x8)
+	Struct Vector2D                                              BillboardSink;                                     // 0x30(0x8)
+	float                                                        BillboardScaleAlphaDependence;                     // 0x38(0x4)
+	float                                                        BillboardRotationRate;                             // 0x3c(0x4)
+	float                                                        DistanceFadeExponent;                              // 0x40(0x4)
+	float                                                        TurbulenceScale;                                   // 0x44(0x4)
+	float                                                        TurbulenceStrength;                                // 0x48(0x4)
+	float                                                        FluffCullDistance;                                 // 0x4c(0x4)
+	Class MaterialInterface*                                     MaterialTemplatePointCloudSolid;                   // 0x50(0x8)
+	Class MaterialInterface*                                     MaterialTemplatePointCloudFluffy;                  // 0x58(0x8)
+	Class MaterialInterface*                                     MaterialTemplateStreetCloudSolid;                  // 0x60(0x8)
+	Class MaterialInterface*                                     MaterialTemplateStreetCloudFluffy;                 // 0x68(0x8)
+};
+
+
+// Size 0x28
+struct CloudWeatherParameters
+{
+public:
+	Struct Vector2D                                              DefaultCloudVelocity;                              // 0x0(0x8)
+	Class MaterialParameterCollection*                           AtmosphericMaterialParams;                         // 0x8(0x8)
+	float                                                        GlobalAtmosphericPressure;                         // 0x10(0x4)
+	float                                                        AtmosphericPressureThresholdSize;                  // 0x14(0x4)
+	float                                                        MaxWindDelayLength;                                // 0x18(0x4)
+	float                                                        WindSpeedMultiplier;                               // 0x1c(0x4)
+	bool                                                         UsesGlobalWindService;                             // 0x20(0x1)
+	bool                                                         UsesPressureZones;                                 // 0x20(0x1)
+	bool                                                         CloudsCastShadows;                                 // 0x20(0x1)
+	bool                                                         PressureIsControlledByParameterCollection;         // 0x20(0x1)
+};
+
+
+// Size 0x20
+struct CloudTileParameters
+{
+public:
+	TArray<struct Meshes>                                        Meshes;                                            // 0x0(0x10)
+	int                                                          Samples;                                           // 0x10(0x4)
+	int                                                          Seed;                                              // 0x14(0x4)
+	float                                                        MeshScaleMultiplier;                               // 0x18(0x4)
+	bool                                                         ShouldCloudTileBeGenerated;                        // 0x1c(0x1)
+};
+
+
+// Size 0x28
+struct CloudDomeParameters
+{
+public:
+	float                                                        Width;                                             // 0x0(0x4)
+	float                                                        DomeToTileProportion;                              // 0x4(0x4)
+	float                                                        Height;                                            // 0x8(0x4)
+	float                                                        HighPressureExtraHeight;                           // 0xc(0x4)
+	float                                                        FadeProportion;                                    // 0x10(0x4)
+	float                                                        DistanceCurvatureOvershoot;                        // 0x14(0x4)
+	float                                                        DistantStreetCloudRotation;                        // 0x18(0x4)
+	float                                                        ProportionOfCloudDomeToAlwaysUpdate;               // 0x1c(0x4)
+	int                                                          SplitRemainingCloudsOverThisManyUpdates;           // 0x20(0x4)
+	bool                                                         UpdateClosestProportionEveryOtherFrame;            // 0x24(0x1)
+	bool                                                         EnableDistanceCurvature;                           // 0x25(0x1)
+};
+
+
 // Size 0x30
 struct GameEventSchedulerConfiguration
 {
@@ -32544,12 +32934,12 @@ struct GameEventSettings
 {
 public:
 	Struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
-	char                                                         pad0x4_SXWOO[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_ORNXW[0x4];                                 // 0xc(0x4)
 	class                                                        GameEventType;                                     // 0x10(0x8)
 	float                                                        RepeatQueryTime;                                   // 0x18(0x4)
 	float                                                        InertQueryTime;                                    // 0x1c(0x4)
 	float                                                        InertCancelTime;                                   // 0x20(0x4)
-	char                                                         pad0x4_U3GVS[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_NATCD[0x4];                                 // 0x24(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      FirstRegenInterval;                                // 0x28(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      RegenInterval;                                     // 0x58(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      SpawnTime;                                         // 0x88(0x30)
@@ -32583,15 +32973,15 @@ public:
 };
 
 
-// Size 0x38
+// Size 0x68
 struct SchedulesChangedTelemetryEvent
 {
 public:
 	Struct GameEventScheduleModel                                Model;                                             // 0x0(0x10)
-	Struct GameEventScheduleInfo                                 ChosenSchedule;                                    // 0x10(0x20)
-	bool                                                         DidSchedulesChange;                                // 0x30(0x1)
-	bool                                                         DidSchedulesContainErrors;                         // 0x31(0x1)
-	bool                                                         WereSchedulesRefreshed;                            // 0x32(0x1)
+	Struct GameEventScheduleInfo                                 ChosenSchedule;                                    // 0x10(0x50)
+	bool                                                         DidSchedulesChange;                                // 0x60(0x1)
+	bool                                                         DidSchedulesContainErrors;                         // 0x61(0x1)
+	bool                                                         WereSchedulesRefreshed;                            // 0x62(0x1)
 };
 
 
@@ -32611,10 +33001,10 @@ public:
 	Struct Guid                                                  EventHandleId;                                     // 0x10(0x10)
 	byte                                                         EventType;                                         // 0x20(0x1)
 	byte                                                         GameEventStatus;                                   // 0x21(0x1)
-	char                                                         pad0x6_WXAUO[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_2V661[0x6];                                 // 0x22(0x6)
 	Struct FString                                               StatusInfo;                                        // 0x28(0x10)
 	byte                                                         HandleState;                                       // 0x38(0x1)
-	char                                                         pad0x3_ISLHZ[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_VSUBF[0x3];                                 // 0x39(0x3)
 	float                                                        TimeTillChange;                                    // 0x3c(0x4)
 };
 
@@ -32634,7 +33024,7 @@ struct GameEventSchedulerConfigInfo
 {
 public:
 	byte                                                         TrackedActorType;                                  // 0x0(0x1)
-	char                                                         pad0x3_1RIN0[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_UVC9V[0x3];                                 // 0x1(0x3)
 	int                                                          NumAllowed;                                        // 0x4(0x4)
 	bool                                                         IsMainEvent;                                       // 0x8(0x1)
 };
@@ -32782,7 +33172,7 @@ struct EventDiggingStarted
 {
 public:
 	byte                                                         DigDirection;                                      // 0x0(0x1)
-	char                                                         pad0x7_4A4AP[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_3F6NA[0x7];                                 // 0x1(0x7)
 	Class Actor*                                                 ActorBeingDugUp;                                   // 0x8(0x8)
 };
 
@@ -32845,7 +33235,7 @@ public:
 	float                                                        OutputRangeMax;                                    // 0xc(0x4)
 	float                                                        OutputRangeThreshold;                              // 0x10(0x4)
 	bool                                                         UseThresholdValueAsNewOutputRangeMax;              // 0x14(0x1)
-	char                                                         pad0x3_PY8D9[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_YZSY1[0x3];                                 // 0x15(0x3)
 	Class CurveFloat*                                            LerpSpeedCurve;                                    // 0x18(0x8)
 	Struct ScalarParameterValue                                  ScalarParameterValue;                              // 0x20(0x1c)
 };
@@ -32858,10 +33248,10 @@ public:
 	float                                                        DestroyDelayDuration;                              // 0x0(0x4)
 	float                                                        DestroyDuration;                                   // 0x4(0x4)
 	float                                                        InterpTarget;                                      // 0x8(0x4)
-	char                                                         pad0x4_YMV8K[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_CNK5M[0x4];                                 // 0xc(0x4)
 	Class CurveFloat*                                            DestroyLerpCurve;                                  // 0x10(0x8)
 	Struct ScalarParameterValue                                  ScalarParameterValue;                              // 0x18(0x1c)
-	char                                                         pad0x4_DQFB1[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_HSL2Q[0x4];                                 // 0x34(0x4)
 	Class Object*                                                DestroyVfx;                                        // 0x38(0x8)
 	struct FName                                                 VfxSocketName;                                     // 0x40(0x8)
 	Class WwiseEvent*                                            DestroyAudioEvent;                                 // 0x48(0x8)
@@ -32907,7 +33297,7 @@ struct CanvasLOD
 {
 public:
 	bool                                                         IsCanvasCountLimited;                              // 0x0(0x1)
-	char                                                         pad0x3_XYOZW[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_KOHJ3[0x3];                                 // 0x1(0x3)
 	int                                                          MaxNumCanvasesAtThisLOD;                           // 0x4(0x4)
 	float                                                        ResolutionScaler;                                  // 0x8(0x4)
 };
@@ -32966,19 +33356,19 @@ struct LockData
 {
 public:
 	bool                                                         UnlockBySpecificKey;                               // 0x0(0x1)
-	char                                                         pad0x7_W8LB5[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_SGJ17[0x7];                                 // 0x1(0x7)
 	TArray<class Class*>                                         AcceptableKeys;                                    // 0x8(0x10)
-	char                                                         pad0x8_PPE3S[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_JMUUY[0x8];                                 // 0x18(0x8)
 	Struct Transform                                             KeyMeshTargetTransform;                            // 0x20(0x30)
 	bool                                                         StartLocked;                                       // 0x50(0x1)
-	char                                                         pad0x3_Y8BVK[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_ZS348[0x3];                                 // 0x51(0x3)
 	float                                                        HandToLockLerpDuration;                            // 0x54(0x4)
 	float                                                        LocalPredictionTimeout;                            // 0x58(0x4)
 	float                                                        UnlockAudioCueTriggerTime;                         // 0x5c(0x4)
 	Class WwiseEvent*                                            UnlockAudioCue;                                    // 0x60(0x8)
 	Class WwiseEvent*                                            CrewOnlyUnlockMusic;                               // 0x68(0x8)
 	Class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x70(0x8)
-	char                                                         pad0x8_5KZKK[0x8];                                 // 0x78(0x8)
+	char                                                         pad0x8_M56H9[0x8];                                 // 0x78(0x8)
 	Struct TransformBlendCurve                                   UnlockAnimationLerp;                               // 0x80(0x500)
 };
 
@@ -32989,18 +33379,18 @@ struct LockState
 public:
 	Struct LockData                                              LockData;                                          // 0x0(0x580)
 	bool                                                         Locked;                                            // 0x580(0x1)
-	char                                                         pad0x7_ORO1Q[0x7];                                 // 0x581(0x7)
+	char                                                         pad0x7_FVBY7[0x7];                                 // 0x581(0x7)
 	TArray<class Class*>                                         AcceptableKeys;                                    // 0x588(0x10)
 	Class ItemInfo*                                              KeyItem;                                           // 0x598(0x8)
 	Class StaticMeshMemoryConstraintComponent*                   TargetKeyMesh;                                     // 0x5a0(0x8)
 	bool                                                         UnlockBySpecificKey;                               // 0x5a8(0x1)
-	char                                                         pad0x7_MY5FT[0x7];                                 // 0x5a9(0x7)
+	char                                                         pad0x7_YA30K[0x7];                                 // 0x5a9(0x7)
 	Class ItemInfo*                                              RequiredSpecificKey;                               // 0x5b0(0x8)
 	Class LockComponent*                                         OwnerLockComponent;                                // 0x5b8(0x8)
 	float                                                        CurrentAnimationSequenceTime;                      // 0x5c0(0x4)
 	bool                                                         IsInUnlockingSequence;                             // 0x5c4(0x1)
 	byte                                                         AnimationSequenceState;                            // 0x5c5(0x1)
-	char                                                         pad0x2_9UZ2R[0x2];                                 // 0x5c6(0x2)
+	char                                                         pad0x2_5LST0[0x2];                                 // 0x5c6(0x2)
 	Class InterpolatingItem*                                     InterpolatingItem;                                 // 0x5c8(0x8)
 	Class Actor*                                                 UnlockingInteractor;                               // 0x5d0(0x8)
 };
@@ -33011,7 +33401,7 @@ struct VaultLock
 {
 public:
 	int                                                          Tier;                                              // 0x0(0x4)
-	char                                                         pad0xc_9LIBF[0xc];                                 // 0x4(0xc)
+	char                                                         pad0xc_5R6K4[0xc];                                 // 0x4(0xc)
 	Struct LockData                                              VaultLock;                                         // 0x10(0x580)
 	Class StaticMeshMemoryConstraintComponent*                   MeshComponent;                                     // 0x590(0x8)
 };
@@ -33030,7 +33420,7 @@ struct StorableLockState
 {
 public:
 	bool                                                         Locked;                                            // 0x0(0x1)
-	char                                                         pad0x7_7ZXYN[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_C3JJ3[0x7];                                 // 0x1(0x7)
 	TArray<struct AcceptableKeys>                                AcceptableKeys;                                    // 0x8(0x10)
 	bool                                                         IsInUnlockingSequence;                             // 0x18(0x1)
 };
@@ -33161,7 +33551,7 @@ struct ItemConsumptionStatusChanceEntry
 {
 public:
 	float                                                        Chance;                                            // 0x0(0x4)
-	char                                                         pad0x4_H91BZ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_NXOXY[0x4];                                 // 0x4(0x4)
 	Struct Status                                                Status;                                            // 0x8(0x18)
 };
 
@@ -33205,7 +33595,7 @@ struct ItemReactionItemProxyActionRuleParams
 {
 public:
 	float                                                        ItemReactionHoldTime;                              // 0x0(0x4)
-	char                                                         pad0x4_WF9DT[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_GJ4VX[0x4];                                 // 0x4(0x4)
 	class                                                        PressedNotificationInputId;                        // 0x8(0x8)
 	class                                                        ReleasedNotificationInputId;                       // 0x10(0x8)
 	Struct FText                                                 ItemReactionItemProxyText;                         // 0x18(0x38)
@@ -33268,9 +33658,9 @@ public:
 	Struct Guid                                                  PreviousCrewId;                                    // 0x10(0x10)
 	Struct Guid                                                  BootyId;                                           // 0x20(0x10)
 	byte                                                         BootyType;                                         // 0x30(0x1)
-	char                                                         pad0x3_UNKNJ[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_5EYTD[0x3];                                 // 0x31(0x3)
 	struct FName                                                 Rarity;                                            // 0x34(0x8)
-	char                                                         pad0x4_L7KLW[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_OOGNG[0x4];                                 // 0x3c(0x4)
 	Class ItemInfo*                                              BootyItemInfo;                                     // 0x40(0x8)
 };
 
@@ -33323,7 +33713,7 @@ public:
 	Struct Guid                                                  PouchId;                                           // 0x0(0x10)
 	struct FName                                                 RewardId;                                          // 0x10(0x8)
 	byte                                                         BootyType;                                         // 0x18(0x1)
-	char                                                         pad0x3_80H36[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_BMWPC[0x3];                                 // 0x19(0x3)
 	struct FName                                                 Rarity;                                            // 0x1c(0x8)
 	byte                                                         TrackedActorType;                                  // 0x24(0x1)
 };
@@ -33335,7 +33725,7 @@ struct ConsumedIngestibleTelemetryEvent
 public:
 	Struct FString                                               ItemName;                                          // 0x0(0x10)
 	byte                                                         CookState;                                         // 0x10(0x1)
-	char                                                         pad0x7_6ARA7[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_1F4EY[0x7];                                 // 0x11(0x7)
 	TArray<Str StatusesApplied>                                  StatusesApplied;                                   // 0x18(0x10)
 };
 
@@ -33347,7 +33737,7 @@ public:
 	Struct Guid                                                  ItemId;                                            // 0x0(0x10)
 	struct FName                                                 SpawnedClass;                                      // 0x10(0x8)
 	byte                                                         Source;                                            // 0x18(0x1)
-	char                                                         pad0x7_7W47B[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_BQ3MM[0x7];                                 // 0x19(0x7)
 	Struct FString                                               SourceId;                                          // 0x20(0x10)
 	Struct Vector                                                SpawnLocation;                                     // 0x30(0xc)
 };
@@ -33368,7 +33758,7 @@ struct TreasureBuriedTelemetryEvent
 public:
 	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	byte                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_E7B47[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_LK3VO[0x7];                                 // 0x11(0x7)
 	Struct FString                                               Rarity;                                            // 0x18(0x10)
 	Struct Vector                                                TreasureLocation;                                  // 0x28(0xc)
 	Struct Guid                                                  MapId;                                             // 0x34(0x10)
@@ -33382,10 +33772,10 @@ struct TreasureSpawnedTelemetryEvent
 public:
 	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	byte                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_36OUV[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_5Y5V4[0x7];                                 // 0x11(0x7)
 	Struct FString                                               Rarity;                                            // 0x18(0x10)
 	byte                                                         Source;                                            // 0x28(0x1)
-	char                                                         pad0x7_JQL8S[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_8B3BO[0x7];                                 // 0x29(0x7)
 	Struct FString                                               SourceId;                                          // 0x30(0x10)
 	Struct Vector                                                TreasureLocation;                                  // 0x40(0xc)
 };
@@ -33397,11 +33787,11 @@ struct TreasureSoldTelemetryEvent
 public:
 	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	byte                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_5GFQ9[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_NZEFU[0x7];                                 // 0x11(0x7)
 	Struct FString                                               Rarity;                                            // 0x18(0x10)
 	bool                                                         GoldAwarded;                                       // 0x28(0x1)
 	byte                                                         Source;                                            // 0x29(0x1)
-	char                                                         pad0x6_X7X06[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_VDVZT[0x6];                                 // 0x2a(0x6)
 	Struct FString                                               TreasurePurchaser;                                 // 0x30(0x10)
 };
 
@@ -33412,7 +33802,7 @@ struct TreasureDroppedTelemetryEvent
 public:
 	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	byte                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_FWJUN[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_FCL6B[0x7];                                 // 0x11(0x7)
 	Struct FString                                               Rarity;                                            // 0x18(0x10)
 	Struct FString                                               LocationOnShip;                                    // 0x28(0x10)
 };
@@ -33424,7 +33814,7 @@ struct TreasurePickedUpTelemetryEvent
 public:
 	Struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	byte                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_NQSX5[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_IO4XJ[0x7];                                 // 0x11(0x7)
 	Struct FString                                               Rarity;                                            // 0x18(0x10)
 };
 
@@ -33454,7 +33844,7 @@ struct BuriedTreasureChestParams
 {
 public:
 	int                                                          MaxSmallCrewSizeForNumDigsSelection;               // 0x0(0x4)
-	char                                                         pad0x4_85JO2[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_Q67PT[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRange                              NumDigsRequiredForSmallCrewSize;                   // 0x8(0x20)
 	Struct WeightedProbabilityRange                              NumDigsRequiredForBiggerCrewSize;                  // 0x28(0x20)
 };
@@ -33544,7 +33934,7 @@ public:
 	float                                                        MaxDistanceBetweenChainsSquared;                   // 0xc(0x4)
 	int                                                          MaxNumberOfLinks;                                  // 0x10(0x4)
 	bool                                                         OverrideMaxFramesBeforeReplication;                // 0x14(0x1)
-	char                                                         pad0x3_QW7RE[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_23KR7[0x3];                                 // 0x15(0x3)
 	int                                                          MaxFramesBeforeReplicationOverride;                // 0x18(0x4)
 	float                                                        ChainVisualActorLifetime;                          // 0x1c(0x4)
 };
@@ -33597,7 +33987,7 @@ struct ManagedVulnerabilityLayer
 {
 public:
 	struct FName                                                 LayerName;                                         // 0x0(0x8)
-	char                                                         pad0x8_1MVDD[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_DAYJH[0x8];                                 // 0x8(0x8)
 	Class DamageableVulnerabilityLayer*                          VulnerabilityLayerToApply;                         // 0x10(0x8)
 };
 
@@ -33663,7 +34053,7 @@ struct AISpawnActionStateParams
 public:
 	float                                                        SpawnTimeMax;                                      // 0x0(0x4)
 	bool                                                         BeginInvis;                                        // 0x4(0x1)
-	char                                                         pad0x3_3IPEL[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_673HB[0x3];                                 // 0x5(0x3)
 	float                                                        InvisTime;                                         // 0x8(0x4)
 	bool                                                         SkipAnimTimeCheck;                                 // 0xc(0x1)
 };
@@ -33683,7 +34073,7 @@ struct ImpactSurfaceData
 {
 public:
 	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	char                                                         pad0x7_Z8GD9[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_4F1PB[0x7];                                 // 0x1(0x7)
 	Class ImpactDataAsset*                                       ImpactData;                                        // 0x8(0x8)
 };
 
@@ -33702,7 +34092,7 @@ public:
 	float                                                        DeepSeaRegionRadius;                               // 0x8(0x4)
 	float                                                        MaxSwimDepth;                                      // 0xc(0x4)
 	bool                                                         ShouldUseDeepSeaSwimmingBounds;                    // 0x10(0x1)
-	char                                                         pad0x3_77XBH[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_GOHQV[0x3];                                 // 0x11(0x3)
 	float                                                        SwimmingBoundsRadius;                              // 0x14(0x4)
 	float                                                        SlowDownZoneWidth;                                 // 0x18(0x4)
 };
@@ -33723,7 +34113,7 @@ struct DeepSeaRegionScreenEffects
 {
 public:
 	bool                                                         ShouldUseScreenEffects;                            // 0x0(0x1)
-	char                                                         pad0x3_3UYCF[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_7U4ER[0x3];                                 // 0x1(0x3)
 	float                                                        DepthFadeEnd;                                      // 0x4(0x4)
 	float                                                        RadialFadeStart;                                   // 0x8(0x4)
 	float                                                        RadialFadeEnd;                                     // 0xc(0x4)
@@ -33752,7 +34142,7 @@ public:
 	Class BuoyantObjectSpawnProfileDataAsset*                    FloatingItemsWithBarrelsOfPlentySpawnProfile;      // 0x8(0x8)
 	Class BuoyantObjectSpawnProfileDataAsset*                    MerchantAllianceBarrelsOfPlentySpawnProfile;       // 0x10(0x8)
 	byte                                                         HitTestTraceChannel;                               // 0x18(0x1)
-	char                                                         pad0x7_83RH0[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_A6XCK[0x7];                                 // 0x19(0x7)
 	TArray<class Class*>                                         ExcludedShipSizes;                                 // 0x20(0x10)
 	Struct BuoyantObjectSpawnDistributionParams                  SpawnDistributionParams;                           // 0x30(0x14)
 };
@@ -33773,7 +34163,7 @@ struct BuoyantObjectSpawnProfile
 public:
 	Struct WeightedProbabilityRangeOfRanges                      TravelDistanceToSpawnObjects;                      // 0x0(0x30)
 	float                                                        MaximumDistanceThresholdToIncrementCurrentDistanceTravelled; // 0x30(0x4)
-	char                                                         pad0x4_BOFMF[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_YZCFL[0x4];                                 // 0x34(0x4)
 	Struct WeightedProbabilityRange                              NumberOfBarrelsToSpawn;                            // 0x38(0x20)
 	Struct WeightedProbabilityRange                              NumberOfSpecialItemTypesToSpawn;                   // 0x58(0x20)
 	Struct FloatRange                                            SpawnCentreDistanceInFrontOfShip;                  // 0x78(0x10)
@@ -33785,7 +34175,7 @@ public:
 	float                                                        MinShipSpeedInKnotsToSpawnObjects;                 // 0xc0(0x4)
 	float                                                        WildlifeSpawnHeight;                               // 0xc4(0x4)
 	float                                                        ChanceOfSpawningSpecialItems;                      // 0xc8(0x4)
-	char                                                         pad0x4_FBVJR[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_0NFL1[0x4];                                 // 0xcc(0x4)
 	class                                                        WildlifeType;                                      // 0xd0(0x8)
 	class                                                        BarrelType;                                        // 0xd8(0x8)
 	TArray<struct SpecialItemTypes>                              SpecialItemTypes;                                  // 0xe0(0x10)
@@ -33797,7 +34187,7 @@ struct BuoyantObjectWeightedGroup
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_QDD0W[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_EV81D[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRange                              NumberOfItems;                                     // 0x8(0x20)
 	Class ItemSpawnDistributionAsset*                            Items;                                             // 0x28(0x8)
 };
@@ -33837,7 +34227,7 @@ struct AthenaStreamedLevelData
 public:
 	int                                                          LevelIdCrc;                                        // 0x0(0x4)
 	struct FName                                                 PackagePath;                                       // 0x4(0x8)
-	char                                                         pad0x4_3MPIC[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_L2Z25[0x4];                                 // 0xc(0x4)
 	TArray<class LevelStreaming*>                                Levels;                                            // 0x10(0x10)
 };
 
@@ -33847,10 +34237,10 @@ struct AthenaStreamedLevelItem
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_ZHUPZ[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_ZV2LO[0x4];                                 // 0xc(0x4)
 	Class AthenaStreamedLevelDataAsset*                          DataAsset;                                         // 0x10(0x8)
 	Struct FeatureFlag                                           FeatureFlag;                                       // 0x18(0xc)
-	char                                                         pad0x4_GVQY4[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_Z791F[0x4];                                 // 0x24(0x4)
 	Struct FString                                               UniqueId;                                          // 0x28(0x10)
 	bool                                                         ShouldBeVisibleOnLoad;                             // 0x38(0x1)
 	bool                                                         ClientOnlyVisible;                                 // 0x39(0x1)
@@ -33970,7 +34360,7 @@ struct LevelLoadCompletedTelemetryEvent
 public:
 	bool                                                         WasCancelRequested;                                // 0x30(0x1)
 	bool                                                         WasCancelActioned;                                 // 0x31(0x1)
-	char                                                         pad0x2_RM2O5[0x2];                                 // 0x32(0x2)
+	char                                                         pad0x2_K3FG5[0x2];                                 // 0x32(0x2)
 	float                                                        DistancePlayerTravelledSinceLoadRequest;           // 0x34(0x4)
 	float                                                        TimeSinceLoadRequested;                            // 0x38(0x4)
 };
@@ -33989,11 +34379,11 @@ struct NPCData
 public:
 	Struct NetActorPtr                                           NPC;                                               // 0x0(0x14)
 	Struct Guid                                                  Id;                                                // 0x14(0x10)
-	char                                                         pad0x4_39I2P[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_1AU0S[0x4];                                 // 0x24(0x4)
 	Struct FText                                                 Name;                                              // 0x28(0x38)
 	Struct Vector                                                Location;                                          // 0x60(0xc)
 	struct FName                                                 IslandName;                                        // 0x6c(0x8)
-	char                                                         pad0x4_H070P[0x4];                                 // 0x74(0x4)
+	char                                                         pad0x4_1A4H1[0x4];                                 // 0x74(0x4)
 	Struct FText                                                 IslandNameLocalised;                               // 0x78(0x38)
 	byte                                                         GrammaticalGender;                                 // 0xb0(0x1)
 };
@@ -34099,7 +34489,7 @@ struct MermaidAnimMapping
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x3_KZY4V[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_K3XFA[0x3];                                 // 0x1(0x3)
 	struct FName                                                 MontageLabel;                                      // 0x4(0x8)
 };
 
@@ -34121,7 +34511,7 @@ public:
 	class                                                        Variant;                                           // 0x0(0x8)
 	class                                                        MarkerType;                                        // 0x8(0x8)
 	bool                                                         UseActorMarker;                                    // 0x10(0x1)
-	char                                                         pad0x7_G2UPS[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_DQIKD[0x7];                                 // 0x11(0x7)
 	Struct StringAssetReference                                  MarkerVfx;                                         // 0x18(0x10)
 	Struct StringClassReference                                  MarkerClass;                                       // 0x28(0x10)
 };
@@ -34141,7 +34531,7 @@ struct WorldMarkerDesc
 {
 public:
 	Class BaseWorldMarker*                                       Marker;                                            // 0x0(0x8)
-	char                                                         pad0x10_7UQ19[0x10];                               // 0x8(0x10)
+	char                                                         pad0x10_OSPWD[0x10];                               // 0x8(0x10)
 	class                                                        Variant;                                           // 0x18(0x8)
 };
 
@@ -34158,7 +34548,7 @@ struct LocationBootyStorage
 {
 public:
 	byte                                                         IslandHash;                                        // 0x0(0x1)
-	char                                                         pad0x3_Y0QZ0[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_IYQOQ[0x3];                                 // 0x1(0x3)
 	struct FName                                                 IslandName;                                        // 0x4(0x8)
 	Struct Vector                                                IslandLocation;                                    // 0xc(0xc)
 	TArray<struct StoredTreasure>                                StoredTreasure;                                    // 0x18(0x10)
@@ -34234,7 +34624,7 @@ public:
 	Struct FText                                                 LocalisableName;                                   // 0x0(0x38)
 	Struct FText                                                 Text;                                              // 0x38(0x38)
 	byte                                                         ChatType;                                          // 0x70(0x1)
-	char                                                         pad0x3_VO5WY[0x3];                                 // 0x71(0x3)
+	char                                                         pad0x3_DCRK9[0x3];                                 // 0x71(0x3)
 	float                                                        DelayAfter;                                        // 0x74(0x4)
 };
 
@@ -34403,7 +34793,7 @@ public:
 	Struct Vector2D                                              Pivot;                                             // 0x0(0x8)
 	Struct Vector2D                                              Position;                                          // 0x8(0x8)
 	byte                                                         BlendMode;                                         // 0x10(0x1)
-	char                                                         pad0x3_65E4K[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_TPC2A[0x3];                                 // 0x11(0x3)
 	Struct Vector2D                                              Size;                                              // 0x14(0x8)
 	float                                                        RotationToNorth;                                   // 0x1c(0x4)
 	float                                                        RotationOffset;                                    // 0x20(0x4)
@@ -34420,7 +34810,7 @@ public:
 	float                                                        Rotation;                                          // 0x20(0x4)
 	byte                                                         ReplicatedRotation;                                // 0x24(0x1)
 	byte                                                         Flags;                                             // 0x25(0x1)
-	char                                                         pad0x2_JUBL3[0x2];                                 // 0x26(0x2)
+	char                                                         pad0x2_F5B4N[0x2];                                 // 0x26(0x2)
 	Class Texture*                                               CrewLiveryOverlayIcon;                             // 0x28(0x8)
 	byte                                                         ReapersMarkLevel;                                  // 0x30(0x1)
 	byte                                                         EmissaryLevel;                                     // 0x31(0x1)
@@ -34443,7 +34833,7 @@ struct EventGameNarrationClientNotificationMessage
 {
 public:
 	byte                                                         NotificationType;                                  // 0x0(0x1)
-	char                                                         pad0x7_2A5JB[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_PR9RC[0x7];                                 // 0x1(0x7)
 	Struct FString                                               Sender;                                            // 0x8(0x10)
 	Struct FString                                               Text;                                              // 0x18(0x10)
 };
@@ -34489,7 +34879,7 @@ public:
 	Struct FString                                               GamerTag;                                          // 0x18(0x10)
 	Struct FString                                               Text;                                              // 0x28(0x10)
 	byte                                                         NotificationType;                                  // 0x38(0x1)
-	char                                                         pad0x3_WV79L[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_U1S4Z[0x3];                                 // 0x39(0x3)
 	Struct NotificationStickiness                                Stickiness;                                        // 0x3c(0x8)
 };
 
@@ -34499,7 +34889,7 @@ struct NotificationStickiness
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_CJ9G4[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_V13HM[0x3];                                 // 0x1(0x3)
 };
 
 
@@ -34518,7 +34908,7 @@ public:
 	Struct FString                                               SenderName;                                        // 0x0(0x10)
 	Struct FString                                               Text;                                              // 0x10(0x10)
 	byte                                                         Type;                                              // 0x20(0x1)
-	char                                                         pad0x7_TBOL1[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_UNO63[0x7];                                 // 0x21(0x7)
 	Struct FString                                               Image;                                             // 0x28(0x10)
 	int                                                          Timeout;                                           // 0x38(0x4)
 };
@@ -34568,7 +34958,7 @@ struct CutsceneGroup
 {
 public:
 	float                                                        GroupCooldown;                                     // 0x0(0x4)
-	char                                                         pad0x4_5Z2WE[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_6JC7C[0x4];                                 // 0x4(0x4)
 	TArray<struct Pools>                                         Pools;                                             // 0x8(0x10)
 };
 
@@ -34581,7 +34971,7 @@ public:
 	int                                                          Priority;                                          // 0x8(0x4)
 	int                                                          ActivationChance;                                  // 0xc(0x4)
 	bool                                                         ShouldQueue;                                       // 0x10(0x1)
-	char                                                         pad0x3_2DW3J[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_BBJL9[0x3];                                 // 0x11(0x3)
 	float                                                        AdditionalPoolCooldown;                            // 0x14(0x4)
 	Class CutscenePoolType*                                      PoolType;                                          // 0x18(0x8)
 	TArray<class SceneDialogueData*>                             DialogueData;                                      // 0x20(0x10)
@@ -34650,7 +35040,7 @@ struct CutScenePlayData
 {
 public:
 	int                                                          PlayIndex;                                         // 0x0(0x4)
-	char                                                         pad0x4_LS3NI[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_1ZF6X[0x4];                                 // 0x4(0x4)
 	double                                                       StartTimeInSeconds;                                // 0x8(0x8)
 	Class SceneDialogueData*                                     DialogueData;                                      // 0x10(0x8)
 	TArray<struct FText>                                         LocalisableNames;                                  // 0x18(0x10)
@@ -34753,7 +35143,7 @@ public:
 	TArray<struct GhostPawns>                                    GhostPawns;                                        // 0x0(0x10)
 	TArray<struct IndefiniteDoorLocks>                           IndefiniteDoorLocks;                               // 0x10(0x10)
 	Class Object*                                                Parent;                                            // 0x20(0x8)
-	char                                                         pad0x18_FXUCM[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_3BQOS[0x18];                               // 0x28(0x18)
 	Class GhostShipPlayerSpawnLocation*                          SpawnLocation;                                     // 0x40(0x8)
 	Class GhostShipDoor*                                         GhostShipDoor;                                     // 0x48(0x8)
 };
@@ -34773,11 +35163,11 @@ struct GhostPawnEntry
 {
 public:
 	float                                                        TimeRemaining;                                     // 0x0(0x4)
-	char                                                         pad0x4_PRVPD[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_US999[0x4];                                 // 0x4(0x4)
 	Class Pawn*                                                  Pawn;                                              // 0x8(0x8)
 	bool                                                         RespawnCompleted;                                  // 0x10(0x1)
 	bool                                                         IsDoorOpen;                                        // 0x11(0x1)
-	char                                                         pad0x6_T0VPY[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_WJZ4D[0x6];                                 // 0x12(0x6)
 	Struct ObjectMessagingHandle                                 FinishedSpawningHandle;                            // 0x18(0x58)
 };
 
@@ -35072,7 +35462,7 @@ struct MerchantMapLayoutItem
 {
 public:
 	Struct TreasureMapWidgetText                                 Name;                                              // 0x0(0x3c)
-	char                                                         pad0x4_ZQV5N[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_GK526[0x4];                                 // 0x3c(0x4)
 	Struct TreasureMapWidgetTexture                              IconImage;                                         // 0x40(0x30)
 };
 
@@ -35119,7 +35509,7 @@ struct StaticMeshVoteIndicator
 {
 public:
 	int                                                          VoteId;                                            // 0x0(0x4)
-	char                                                         pad0x4_A3MB4[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_Y3FE1[0x4];                                 // 0x4(0x4)
 	TArray<struct CompanyMeshes>                                 CompanyMeshes;                                     // 0x8(0x10)
 };
 
@@ -35138,7 +35528,7 @@ struct InlineVotingParameterSet
 {
 public:
 	float                                                        HoldTime;                                          // 0x0(0x4)
-	char                                                         pad0x4_29DYH[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_10QZL[0x4];                                 // 0x4(0x4)
 	Class VoteConsumerInlineBase*                                Consumer;                                          // 0x8(0x8)
 	Class VoteValidatorInlineBase*                               Validator;                                         // 0x10(0x8)
 };
@@ -35149,7 +35539,7 @@ struct VotersByOption
 {
 public:
 	int                                                          VoteOption;                                        // 0x0(0x4)
-	char                                                         pad0x4_X4DXY[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_BR7Z4[0x4];                                 // 0x4(0x4)
 	TArray<class Object*>                                        Voters;                                            // 0x8(0x10)
 };
 
@@ -35188,7 +35578,7 @@ public:
 	struct FName                                                 ShantyName;                                        // 0x0(0x8)
 	TArray<struct InstrumentData>                                InstrumentData;                                    // 0x8(0x10)
 	int                                                          LengthOfShantyInMs;                                // 0x18(0x4)
-	char                                                         pad0x4_PH5F3[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_HJANA[0x4];                                 // 0x1c(0x4)
 	class                                                        UnlockEntitlement;                                 // 0x20(0x8)
 	Struct PlayerStat                                            OnShantyPlayedStat;                                // 0x28(0x4)
 	bool                                                         CanRandomPlay;                                     // 0x2c(0x1)
@@ -35202,7 +35592,7 @@ struct ShantyInstrumentData
 {
 public:
 	byte                                                         InstrumentType;                                    // 0x0(0x1)
-	char                                                         pad0x7_4QFQ0[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_JH8WY[0x7];                                 // 0x1(0x7)
 	Class WwiseEvent*                                            PlayLead;                                          // 0x8(0x8)
 	Class WwiseEvent*                                            PlayAccompaniment;                                 // 0x10(0x8)
 	Class WwiseEvent*                                            StopLead;                                          // 0x18(0x8)
@@ -35319,7 +35709,7 @@ struct StarFieldPuzzleAudioParams
 public:
 	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x0(0x8)
 	struct FName                                                 WwiseEmitterName;                                  // 0x8(0x8)
-	char                                                         pad0x20_OJSHM[0x20];                               // 0x10(0x20)
+	char                                                         pad0x20_P3EQ0[0x20];                               // 0x10(0x20)
 	Class WwiseEvent*                                            ConstellationStartEvent;                           // 0x30(0x8)
 	Class WwiseEvent*                                            ConstellationFinishedEvent;                        // 0x38(0x8)
 	Class WwiseEvent*                                            StarsGlowingStartLoopEvent;                        // 0x40(0x8)
@@ -35335,7 +35725,7 @@ struct StarFieldRevealerMaskAudioParams
 public:
 	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x0(0x8)
 	struct FName                                                 WwiseEmitterName;                                  // 0x8(0x8)
-	char                                                         pad0x20_XZKKX[0x20];                               // 0x10(0x20)
+	char                                                         pad0x20_0R64K[0x20];                               // 0x10(0x20)
 	Class WwiseEvent*                                            WearMaskEvent;                                     // 0x30(0x8)
 	Class WwiseEvent*                                            RemoveMaskEvent;                                   // 0x38(0x8)
 	Class WwiseEvent*                                            MaskSkySpinSFXEvent;                               // 0x40(0x8)
@@ -35354,7 +35744,7 @@ public:
 	float                                                        BlurInDuration;                                    // 0x28(0x4)
 	float                                                        BlurOutDuration;                                   // 0x2c(0x4)
 	float                                                        SecondsUntilPostStarts;                            // 0x30(0x4)
-	char                                                         pad0xc_5M7MJ[0xc];                                 // 0x34(0xc)
+	char                                                         pad0xc_4TJ35[0xc];                                 // 0x34(0xc)
 	Class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x40(0x8)
 };
 
@@ -35612,7 +36002,7 @@ struct MastDamageStateChangedEvent
 {
 public:
 	byte                                                         NewMastDamageState;                                // 0x0(0x1)
-	char                                                         pad0x7_6P368[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_O02MY[0x7];                                 // 0x1(0x7)
 	Class Actor*                                                 Mast;                                              // 0x8(0x8)
 };
 
@@ -35669,7 +36059,7 @@ struct EventMastSailsBillowed
 {
 public:
 	byte                                                         MastType;                                          // 0x0(0x1)
-	char                                                         pad0x7_7ABDA[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_R2LC7[0x7];                                 // 0x1(0x7)
 	Class Actor*                                                 ParentShip;                                        // 0x8(0x8)
 };
 
@@ -35783,40 +36173,40 @@ public:
 	class                                                        DamagerType;                                       // 0x0(0x8)
 	byte                                                         HealthChangedReason;                               // 0x8(0x1)
 	byte                                                         CollisionChannel;                                  // 0x9(0x1)
-	char                                                         pad0x2_ZLW58[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_4YUMR[0x2];                                 // 0xa(0x2)
 	float                                                        MaxExplosionRadius;                                // 0xc(0x4)
 	float                                                        BaseDamageAmount;                                  // 0x10(0x4)
-	char                                                         pad0x4_KONYN[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_CQI7B[0x4];                                 // 0x14(0x4)
 	Class CurveFloat*                                            PlayerDamageCurve;                                 // 0x18(0x8)
 	Class CurveFloat*                                            OtherPawnDamageCurve;                              // 0x20(0x8)
 	float                                                        PlayerInsideShipDamageMultiplier;                  // 0x28(0x4)
 	bool                                                         DealFriendlyFireDamage;                            // 0x2c(0x1)
-	char                                                         pad0x3_82LH0[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_E8I61[0x3];                                 // 0x2d(0x3)
 	Struct ShipDamageParams                                      ShipDamageParams;                                  // 0x30(0x10)
 	int                                                          MaxNumDamageHolesPerShip;                          // 0x40(0x4)
-	char                                                         pad0x4_QHW9U[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_C2O65[0x4];                                 // 0x44(0x4)
 	Class CurveFloat*                                            ShipDamageCurveInMetres;                           // 0x48(0x8)
 	bool                                                         ShouldIgnoreZForShipHullDamage;                    // 0x50(0x1)
-	char                                                         pad0x7_TK6XH[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_TJ4J3[0x7];                                 // 0x51(0x7)
 	Struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0x58(0x30)
 	TArray<struct ShipSizeForceToApplyToShipOverride>            ShipSizeForceToApplyToShipOverride;                // 0x88(0x10)
 	float                                                        ForceModifierToApplyToKrakenWrappedShip;           // 0x98(0x4)
 	struct FName                                                 IgnitionFeatureName;                               // 0x9c(0x8)
-	char                                                         pad0x4_OMVSE[0x4];                                 // 0xa4(0x4)
+	char                                                         pad0x4_U3I6Q[0x4];                                 // 0xa4(0x4)
 	Class FireGridCellSelectionParamsDataAsset*                  IgnitionParameters;                                // 0xa8(0x8)
 	TArray<struct StatusesToApply>                               StatusesToApply;                                   // 0xb0(0x10)
 	bool                                                         ApplyStatusEffectsWhenUnderwater;                  // 0xc0(0x1)
-	char                                                         pad0x3_NLK8J[0x3];                                 // 0xc1(0x3)
+	char                                                         pad0x3_WJZTW[0x3];                                 // 0xc1(0x3)
 	float                                                        StatusEffectInnerRadiusMultiplier;                 // 0xc4(0x4)
 	Struct KnockBackInfo                                         KnockbackParams;                                   // 0xc8(0x50)
 	TArray<struct ShipSizeKnockbackModifiers>                    ShipSizeKnockbackModifiers;                        // 0x118(0x10)
 	float                                                        KnockbackInnerRadiusMultiplier;                    // 0x128(0x4)
-	char                                                         pad0x4_HSURX[0x4];                                 // 0x12c(0x4)
+	char                                                         pad0x4_OAHNW[0x4];                                 // 0x12c(0x4)
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x130(0x8)
 	Class ForceFeedbackEffect*                                   ForceFeedbackEffectLower;                          // 0x138(0x8)
 	float                                                        ForceFeedbackEffectInnerRadiusMultiplier;          // 0x140(0x4)
 	struct FName                                                 ForceFeedbackTag;                                  // 0x144(0x8)
-	char                                                         pad0x4_J6EOJ[0x4];                                 // 0x14c(0x4)
+	char                                                         pad0x4_FA6K6[0x4];                                 // 0x14c(0x4)
 	class                                                        CameraShake;                                       // 0x150(0x8)
 	float                                                        CameraShakeInnerRadiusMultiplier;                  // 0x158(0x4)
 };
@@ -35945,7 +36335,7 @@ struct WreckMatch
 {
 public:
 	Struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_8PB9D[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_URCTP[0x4];                                 // 0xc(0x4)
 	float                                                        DistanceData;                                      // 0x30(0x4)
 	Struct Guid                                                  OwningCrewID;                                      // 0x34(0x10)
 };
@@ -36043,7 +36433,7 @@ public:
 	int                                                          NumLocations;                                      // 0x10(0x4)
 	int                                                          LocationIndex;                                     // 0x14(0x4)
 	int                                                          KeyIndex;                                          // 0x18(0x4)
-	char                                                         pad0x4_NKG9Z[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_NFDDG[0x4];                                 // 0x1c(0x4)
 	TArray<Int FlagResponses>                                    FlagResponses;                                     // 0x20(0x10)
 };
 
@@ -36273,10 +36663,10 @@ struct TunnelCreatureDiorama
 public:
 	Struct Transform                                             DioramaTransform;                                  // 0x0(0x30)
 	float                                                        ChanceToSpawnCreatures;                            // 0x30(0x4)
-	char                                                         pad0x4_VSA31[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_Y2XAZ[0x4];                                 // 0x34(0x4)
 	Class InvasionTunnelSceneryCreatureDioramaGroup*             CreaturePool;                                      // 0x38(0x8)
 	bool                                                         OverrideCreatureDioramaTypes;                      // 0x40(0x1)
-	char                                                         pad0x7_VQP7D[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_50XP3[0x7];                                 // 0x41(0x7)
 	Struct WeightedTunnelCreatureDioramaCollection               OverrideCreaturePool;                              // 0x48(0x18)
 };
 
@@ -36427,7 +36817,7 @@ struct CrewInTunnel
 {
 public:
 	bool                                                         FullCrewInTunnel;                                  // 0x0(0x1)
-	char                                                         pad0x3_DFYXN[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_I80ZX[0x3];                                 // 0x1(0x3)
 	struct FName                                                 Faction;                                           // 0x4(0x8)
 };
 
@@ -36480,7 +36870,7 @@ struct InvasionDepartureTunnelOfTheDamnedInitializedTelemetryEvent
 {
 public:
 	byte                                                         RequestedSessionType;                              // 0x0(0x1)
-	char                                                         pad0x3_EYFZS[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_BVAPD[0x3];                                 // 0x1(0x3)
 	int                                                          CrewSkillScore;                                    // 0x4(0x4)
 };
 
@@ -36576,6 +36966,20 @@ public:
 	Struct Guid                                                  TunnelInstanceId;                                  // 0x0(0x10)
 	Struct FString                                               TunnelType;                                        // 0x10(0x10)
 	double                                                       TunnelLifetimeSeconds;                             // 0x20(0x8)
+};
+
+
+// Size 0x10
+struct FulfillTunnelDeferredPrimaryVoyageCancellationRequest
+{
+public:
+};
+
+
+// Size 0x10
+struct RequestTunnelDeferredPrimaryVoyageCancellation
+{
+public:
 };
 
 
@@ -36729,7 +37133,7 @@ public:
 	Struct Guid                                                  CrewId;                                            // 0x40(0x10)
 	int                                                          DepartureTunnelStreamingLevelId;                   // 0x50(0x4)
 	byte                                                         TeleportAudioMode;                                 // 0x54(0x1)
-	char                                                         pad0x3_7FUSK[0x3];                                 // 0x55(0x3)
+	char                                                         pad0x3_KMJ20[0x3];                                 // 0x55(0x3)
 	Struct TeleportLocation                                      PlayerLocationRelativeToShip;                      // 0x58(0x30)
 };
 
@@ -36851,7 +37255,7 @@ struct ExitTunnelOfTheDamnedActionStateConstructionInfo
 {
 public:
 	Struct Vector                                                TunnelLocation;                                    // 0x30(0xc)
-	char                                                         pad0x4_P45RM[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_BFMOJ[0x4];                                 // 0x3c(0x4)
 	Class CameraAnim*                                            CameraAnim;                                        // 0x40(0x8)
 	Class CurveFloat*                                            CameraBlendCurve;                                  // 0x48(0x8)
 	bool                                                         CheckForMigrationConditions;                       // 0x50(0x1)
@@ -36949,7 +37353,7 @@ struct SwimmingCreatureAIStrategyMovementProperties
 public:
 	class                                                        AIStrategy;                                        // 0x0(0x8)
 	byte                                                         SwimRotationMode;                                  // 0x8(0x1)
-	char                                                         pad0x3_VR7X4[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_03HP4[0x3];                                 // 0x9(0x3)
 	float                                                        RotationRate;                                      // 0xc(0x4)
 	float                                                        CorrectingMaxSpeed;                                // 0x10(0x4)
 	float                                                        CorrectingYawTurnRate;                             // 0x14(0x4)
@@ -37027,6 +37431,20 @@ struct WeightedAIBoobyTrapSpawner
 public:
 	Class AIBoobyTrapSpawner*                                    Spawner;                                           // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
+	int                                                          CrewSize;                                          // 0xc(0x4)
+};
+
+
+// Size 0x80
+struct SkeletonLordInfo
+{
+public:
+	Struct FText                                                 DisplayName;                                       // 0x0(0x38)
+	class                                                        ClassId;                                           // 0x38(0x8)
+	Class AthenaAIFormDataAsset*                                 Form;                                              // 0x40(0x8)
+	Class AthenaAIControllerParamsDataAsset*                     Skillset;                                          // 0x48(0x8)
+	Class LoadoutAsset*                                          Loadout;                                           // 0x70(0x8)
+	Class Texture*                                               MugShot;                                           // 0x78(0x8)
 };
 
 
@@ -37037,7 +37455,7 @@ public:
 	class                                                        Company;                                           // 0x0(0x8)
 	Struct TargetSkillsetProgressionPair                         TargetSkillsets;                                   // 0x8(0x20)
 	Struct FeatureFlag                                           TargetSkillsetsOverrideFeatureToggle;              // 0x28(0xc)
-	char                                                         pad0x4_ZE46P[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_KQDGK[0x4];                                 // 0x34(0x4)
 	Struct TargetSkillsetProgressionPair                         FeatureToggledTargetSkillsetsOverride;             // 0x38(0x20)
 };
 
@@ -37097,7 +37515,7 @@ struct CargoRunQuestCategoryGroup
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
 	struct FName                                                 GroupName;                                         // 0x4(0x8)
-	char                                                         pad0x4_F7I0X[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_M3ZXL[0x4];                                 // 0xc(0x4)
 	TArray<struct RequiredItemEntries>                           RequiredItemEntries;                               // 0x10(0x10)
 };
 
@@ -37146,7 +37564,7 @@ struct MerchantQuestRequiredItemsGroupList
 {
 public:
 	int                                                          NumRequiredItems;                                  // 0x0(0x4)
-	char                                                         pad0x4_48S8C[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_DLNHN[0x4];                                 // 0x4(0x4)
 	TArray<struct RequiredItemsGroups>                           RequiredItemsGroups;                               // 0x8(0x10)
 };
 
@@ -37183,7 +37601,7 @@ struct RiddleActionInfo
 {
 public:
 	byte                                                         RiddleAction;                                      // 0x0(0x1)
-	char                                                         pad0x3_B4RF5[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_AV9E8[0x3];                                 // 0x1(0x3)
 	struct FName                                                 GotoLocationPhraseId;                              // 0x4(0x8)
 	struct FName                                                 GotoLocationWithOffsetPhraseId;                    // 0xc(0x8)
 	struct FName                                                 GotoOffsetPhraseId;                                // 0x14(0x8)
@@ -37496,7 +37914,7 @@ struct AggressiveGhostShipState
 public:
 	bool                                                         IsShipVisible;                                     // 0x0(0x1)
 	bool                                                         IsShipDead;                                        // 0x1(0x1)
-	char                                                         pad0x2_D4DM3[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_V4M9Z[0x2];                                 // 0x2(0x2)
 	float                                                        ShipSpeed;                                         // 0x4(0x4)
 };
 
@@ -37524,10 +37942,10 @@ struct AggressiveGhostShipEncounterWaveDesc
 {
 public:
 	bool                                                         BackfillActive;                                    // 0x0(0x1)
-	char                                                         pad0x3_0JGH0[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_VGTFW[0x3];                                 // 0x1(0x3)
 	int                                                          NumGrunts;                                         // 0x4(0x4)
 	int                                                          NumGruntsToKill;                                   // 0x8(0x4)
-	char                                                         pad0x4_2M4UY[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_Y2DB4[0x4];                                 // 0xc(0x4)
 	TArray<struct Formations>                                    Formations;                                        // 0x10(0x10)
 	Struct WeightedProbabilityRangeOfRanges                      SpawnDelay;                                        // 0x20(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      TimeBetweenBackfillSpawns;                         // 0x50(0x30)
@@ -37543,7 +37961,7 @@ struct AggressiveGhostShipEncounterShipDesc
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_FU3JI[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_6LQEF[0x4];                                 // 0x4(0x4)
 	Class AggressiveGhostShipDifficultyDataAsset*                Difficulty;                                        // 0x8(0x8)
 	Class AggressiveGhostShipShotSelectionDataAsset*             ShotSelection;                                     // 0x10(0x8)
 	class                                                        Ship;                                              // 0x18(0x8)
@@ -37568,7 +37986,7 @@ struct AggressiveGhostShipEncounterWaveFormationDesc
 {
 public:
 	int                                                          NumShipsInFormation;                               // 0x0(0x4)
-	char                                                         pad0x4_PIMA3[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_IYK4O[0x4];                                 // 0x4(0x4)
 	Struct AggressiveGhostShipEncounterShipDesc                  FormationShipDesc;                                 // 0x8(0x48)
 	Struct AggressiveGhostShipEncounterShipDesc                  FormationLeaderShipDesc;                           // 0x50(0x48)
 	TArray<class AggressiveGhostShipVisualsDataAsset*>           FormationGruntVisuals;                             // 0x98(0x10)
@@ -37581,7 +37999,7 @@ public:
 	byte                                                         SpawnDirection;                                    // 0xae(0x1)
 	bool                                                         SpawnShipOnTopOfPlayer;                            // 0xaf(0x1)
 	float                                                        SpawnShipOnTopOfPlayerSpawnAheadDistanceInMetres;  // 0xb0(0x4)
-	char                                                         pad0x4_54HXL[0x4];                                 // 0xb4(0x4)
+	char                                                         pad0x4_WUSB3[0x4];                                 // 0xb4(0x4)
 	Class AggressiveGhostShipFixedSplinesDataAsset*              FixedSpline;                                       // 0xb8(0x8)
 	int                                                          DoNotDamageFormationLeaderShipBelowThisNumShots;   // 0xc0(0x4)
 	bool                                                         ImmuneToLightning;                                 // 0xc4(0x1)
@@ -37594,7 +38012,7 @@ struct AggressiveGhostShipEncounterFormationDescGroup
 {
 public:
 	int                                                          NumShipsInFormation;                               // 0x0(0x4)
-	char                                                         pad0x4_P34NZ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_079HS[0x4];                                 // 0x4(0x4)
 	TArray<struct FormationDescs>                                FormationDescs;                                    // 0x8(0x10)
 };
 
@@ -37612,10 +38030,10 @@ struct AggressiveGhostShipEncounterFormationLocationDesc
 {
 public:
 	float                                                        ForwardOffsetInMetres;                             // 0x0(0x4)
-	char                                                         pad0x4_L4EE6[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_QLK3R[0x4];                                 // 0x4(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      ForwardOffsetVarianceInMetres;                     // 0x8(0x30)
 	float                                                        SidewaysOffsetInMetres;                            // 0x38(0x4)
-	char                                                         pad0x4_FSJDK[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_KM4ZB[0x4];                                 // 0x3c(0x4)
 	Struct WeightedProbabilityRangeOfRanges                      SidewaysOffsetVarianceInMetres;                    // 0x40(0x30)
 };
 
@@ -37625,7 +38043,7 @@ struct AggressiveGhostShipFixedSpline
 {
 public:
 	float                                                        StartAngleOffset;                                  // 0x0(0x4)
-	char                                                         pad0x4_E1WUP[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_F81QR[0x4];                                 // 0x4(0x4)
 	TArray<Float Offsets>                                        Offsets;                                           // 0x8(0x10)
 };
 
@@ -37635,7 +38053,7 @@ struct AggressiveGhostShipMineFormationOptions
 {
 public:
 	int                                                          NumMinesInFormation;                               // 0x0(0x4)
-	char                                                         pad0x4_2SARA[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_ZXFN4[0x4];                                 // 0x4(0x4)
 	TArray<struct Formations>                                    Formations;                                        // 0x8(0x10)
 };
 
@@ -37669,7 +38087,7 @@ struct AggressiveGhostShipShotSelection
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_0O7YS[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_92E6S[0x4];                                 // 0x4(0x4)
 	class                                                        ProjectileClass;                                   // 0x8(0x8)
 	TArray<struct ShipSizeTargetSelection>                       ShipSizeTargetSelection;                           // 0x10(0x10)
 	TArray<struct LongRangeTargetSelection>                      LongRangeTargetSelection;                          // 0x20(0x10)
@@ -37682,6 +38100,7 @@ struct AggressiveGhostShipDifficultyTargetSelection
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
 	byte                                                         Target;                                            // 0x4(0x1)
+	bool                                                         FireTowardsSeaLevel;                               // 0x5(0x1)
 };
 
 
@@ -37700,7 +38119,7 @@ struct AggressiveGhostShipVisualsExtraMesh
 public:
 	Struct StringAssetReference                                  Mesh;                                              // 0x0(0x10)
 	Struct Vector                                                Offset;                                            // 0x10(0xc)
-	char                                                         pad0x4_01UCX[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_X9CG3[0x4];                                 // 0x1c(0x4)
 	TArray<struct MaterialOverrides>                             MaterialOverrides;                                 // 0x20(0x10)
 };
 
@@ -37710,7 +38129,7 @@ struct AggressiveGhostShipVisualsMaterialOverride
 {
 public:
 	int                                                          MaterialIndexToReplace;                            // 0x0(0x4)
-	char                                                         pad0x4_FFAAM[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_HNO08[0x4];                                 // 0x4(0x4)
 	Struct StringAssetReference                                  OriginalMaterial;                                  // 0x8(0x10)
 	Struct StringAssetReference                                  ReplacementMaterial;                               // 0x18(0x10)
 };
@@ -37775,7 +38194,7 @@ struct AggressiveGhostShipDespawnTelemetryEvent
 public:
 	Struct Guid                                                  ShipId;                                            // 0x0(0x10)
 	byte                                                         ShipType;                                          // 0x10(0x1)
-	char                                                         pad0x3_03F0W[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_UNM29[0x3];                                 // 0x11(0x3)
 	Struct Guid                                                  EncounterId;                                       // 0x14(0x10)
 	byte                                                         Reason;                                            // 0x24(0x1)
 };
@@ -37787,7 +38206,7 @@ struct AggressiveGhostShipSpawnTelemetryEvent
 public:
 	Struct Guid                                                  ShipId;                                            // 0x0(0x10)
 	byte                                                         ShipType;                                          // 0x10(0x1)
-	char                                                         pad0x3_305Z1[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_52JVX[0x3];                                 // 0x11(0x3)
 	Struct Guid                                                  EncounterId;                                       // 0x14(0x10)
 	int                                                          WaveIndex;                                         // 0x24(0x4)
 };
@@ -37824,7 +38243,7 @@ struct AIRowboatEncounterSpec
 {
 public:
 	Struct Vector                                                EncounterLocation;                                 // 0x0(0xc)
-	char                                                         pad0x4_EBCXA[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_SOS8W[0x4];                                 // 0xc(0x4)
 	Class AIRowboatEncounterDefinition*                          EncounterDefinition;                               // 0x10(0x8)
 };
 
@@ -37834,12 +38253,12 @@ struct HitRegCapsuleTargetData
 {
 public:
 	int                                                          CapsuleOwnerId;                                    // 0x0(0x4)
-	char                                                         pad0x4_39TTL[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_PY087[0x4];                                 // 0x4(0x4)
 	Struct FString                                               OwnerName;                                         // 0x8(0x10)
 	Struct Vector                                                Center;                                            // 0x18(0xc)
 	float                                                        HalfHeight;                                        // 0x24(0x4)
 	float                                                        Radius;                                            // 0x28(0x4)
-	char                                                         pad0x4_XKGUP[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_Q2ZIJ[0x4];                                 // 0x2c(0x4)
 	Struct Quat                                                  Rotation;                                          // 0x30(0x10)
 };
 
@@ -37849,12 +38268,12 @@ struct HitRegRewindSnapshot
 {
 public:
 	int                                                          CapsuleOwnerId;                                    // 0x0(0x4)
-	char                                                         pad0x4_N6IQ8[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_D9UWY[0x4];                                 // 0x4(0x4)
 	Struct FString                                               OwnerName;                                         // 0x8(0x10)
 	float                                                        HalfHeight;                                        // 0x18(0x4)
 	float                                                        Radius;                                            // 0x1c(0x4)
 	float                                                        TimeStampModifier;                                 // 0x20(0x4)
-	char                                                         pad0x4_4GL2V[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_4YT9I[0x4];                                 // 0x24(0x4)
 	Struct ReplicatedRewindBuffer                                RewindBuffer;                                      // 0x28(0x10)
 };
 
@@ -37891,14 +38310,14 @@ struct HitRegProjectileAttackData
 {
 public:
 	bool                                                         HasValidData;                                      // 0x0(0x1)
-	char                                                         pad0x7_TOZW0[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_BAJLE[0x7];                                 // 0x1(0x7)
 	Class Actor*                                                 AttackingCharacterActor;                           // 0x8(0x8)
 	byte                                                         ShotType;                                          // 0x10(0x1)
-	char                                                         pad0x7_CZUOL[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_SQZTN[0x7];                                 // 0x11(0x7)
 	double                                                       FireTime;                                          // 0x18(0x8)
 	Struct Vector                                                AimDirection;                                      // 0x20(0xc)
 	Struct Vector                                                AimPosition;                                       // 0x2c(0xc)
-	char                                                         pad0x8_BAYEL[0x8];                                 // 0x38(0x8)
+	char                                                         pad0x8_FJOVT[0x8];                                 // 0x38(0x8)
 	Struct Transform                                             WeaponMeshTransform;                               // 0x40(0x30)
 	Class Object*                                                WeaponMesh;                                        // 0x70(0x8)
 	TArray<struct ProjectileTrails>                              ProjectileTrails;                                  // 0x78(0x10)
@@ -37917,7 +38336,7 @@ public:
 	float                                                        DistanceBeforeGravity;                             // 0x10(0x4)
 	bool                                                         GravityActivated;                                  // 0x14(0x1)
 	bool                                                         HitSomething;                                      // 0x15(0x1)
-	char                                                         pad0x2_79M1B[0x2];                                 // 0x16(0x2)
+	char                                                         pad0x2_O0SRS[0x2];                                 // 0x16(0x2)
 	Struct Vector                                                GravityStartPoint;                                 // 0x18(0xc)
 	Struct Vector                                                ImpactPoint;                                       // 0x24(0xc)
 	Class PrimitiveComponent*                                    ImpactedComponent;                                 // 0x30(0x8)
@@ -37952,12 +38371,12 @@ struct HitRegSnapshotProjectileRecord
 public:
 	Class Actor*                                                 AttackingActor;                                    // 0x0(0x8)
 	byte                                                         ShotType;                                          // 0x8(0x1)
-	char                                                         pad0x7_RC8B9[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_9HKW8[0x7];                                 // 0x9(0x7)
 	double                                                       FireTime;                                          // 0x10(0x8)
 	Struct Vector                                                AimDirection;                                      // 0x18(0xc)
 	Struct Vector                                                AimPosition;                                       // 0x24(0xc)
 	float                                                        BulletLifetime;                                    // 0x30(0x4)
-	char                                                         pad0xc_N56IC[0xc];                                 // 0x34(0xc)
+	char                                                         pad0xc_R3X2V[0xc];                                 // 0x34(0xc)
 	Struct Transform                                             WeaponMeshTransform;                               // 0x40(0x30)
 	Class Object*                                                WeaponMesh;                                        // 0x70(0x8)
 	int                                                          AttackGroupSize;                                   // 0x78(0x4)
@@ -37976,7 +38395,7 @@ struct HitRegSnapshotStaleDataTelemetryEvent
 public:
 	Struct Guid                                                  TelemetryAttackId;                                 // 0x0(0x10)
 	byte                                                         ShotType;                                          // 0x10(0x1)
-	char                                                         pad0x7_XX8LU[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_ZQ4M0[0x7];                                 // 0x11(0x7)
 	TArray<struct Disagreements>                                 Disagreements;                                     // 0x18(0x10)
 };
 
@@ -37986,7 +38405,7 @@ struct HitRegSnapshotDisagreementTelemetryEntry
 {
 public:
 	int                                                          SubAttackGroupId;                                  // 0x0(0x4)
-	char                                                         pad0x4_SI72U[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_FCB35[0x4];                                 // 0x4(0x4)
 	Struct FString                                               ServerHitActor;                                    // 0x8(0x10)
 	Struct FString                                               AttackingClientHitActor;                           // 0x18(0x10)
 };
@@ -37998,7 +38417,7 @@ struct HitRegSnapshotDisagreementTelemetryEvent
 public:
 	Struct Guid                                                  TelemetryAttackId;                                 // 0x0(0x10)
 	byte                                                         ShotType;                                          // 0x10(0x1)
-	char                                                         pad0x7_7ZQDL[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_XXIG3[0x7];                                 // 0x11(0x7)
 	TArray<struct Disagreements>                                 Disagreements;                                     // 0x18(0x10)
 };
 
@@ -38140,18 +38559,9 @@ struct EmblemDefinitionActiveDuration
 {
 public:
 	bool                                                         HasActiveDuration;                                 // 0x0(0x1)
-	char                                                         pad0x7_TPALK[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_H0GZ9[0x7];                                 // 0x1(0x7)
 	Struct DateTime                                              ActiveFrom;                                        // 0x8(0x8)
 	Struct DateTime                                              ActiveUntil;                                       // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct EmblemId
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	Struct Guid                                                  Id;                                                // 0x8(0x10)
 };
 
 
@@ -38162,12 +38572,13 @@ public:
 };
 
 
-// Size 0x150
+// Size 0x168
 struct EmblemRuntimeDefinition
 {
 public:
 	Class PopUpMessageDesc*                                      UnlockPopUp;                                       // 0x140(0x8)
 	Class PopUpAudioDesc*                                        UnlockPopUpAudioOverrides;                         // 0x148(0x8)
+	Struct EmblemId                                              PrerequisiteEmblem;                                // 0x150(0x18)
 };
 
 
@@ -38200,7 +38611,7 @@ struct AnimatedMechanismActionState
 {
 public:
 	int                                                          AnimationID;                                       // 0x0(0x4)
-	char                                                         pad0x4_8RZ6W[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_NIZ97[0x4];                                 // 0x4(0x4)
 	double                                                       StartTime;                                         // 0x8(0x8)
 	double                                                       EndTime;                                           // 0x10(0x8)
 };
@@ -38212,7 +38623,7 @@ struct AnimatedMaterialData
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
 	float                                                        BlendDuration;                                     // 0x8(0x4)
-	char                                                         pad0x4_P0W44[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_1BW6G[0x4];                                 // 0xc(0x4)
 	Class CurveFloat*                                            InCurve;                                           // 0x10(0x8)
 	Class CurveFloat*                                            OutCurve;                                          // 0x18(0x8)
 	TArray<class MaterialInstanceDynamic*>                       FoundMaterials;                                    // 0x20(0x10)
@@ -38239,12 +38650,21 @@ public:
 };
 
 
+// Size 0x10
+struct CurrentKeyDescInfo
+{
+public:
+	class                                                        VaultKeyDesc;                                      // 0x0(0x8)
+	int                                                          CrewSize;                                          // 0x8(0x4)
+};
+
+
 // Size 0xc
 struct TimedDoorState
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x3_D899I[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_0THNZ[0x3];                                 // 0x1(0x3)
 	int                                                          JammedLandmarkReactionIndex;                       // 0x4(0x4)
 	int                                                          LoweringLandmarkReactionIndex;                     // 0x8(0x4)
 };
@@ -38334,7 +38754,7 @@ struct MechanismBindingSettings
 {
 public:
 	byte                                                         ActionActivationMode;                              // 0x0(0x1)
-	char                                                         pad0x7_5VAP4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_1PNQU[0x7];                                 // 0x1(0x7)
 	Struct WeightedProbabilityRangeOfRanges                      NumActionsToSelect;                                // 0x8(0x30)
 	Struct WeightedProbabilityRangeOfRanges                      NumTriggersToSelect;                               // 0x38(0x30)
 };
@@ -38363,7 +38783,7 @@ struct SwitchMechanismTriggerPosition
 {
 public:
 	byte                                                         MechanismState;                                    // 0x0(0x1)
-	char                                                         pad0xf_FQH5Y[0xf];                                 // 0x1(0xf)
+	char                                                         pad0xf_1MSIH[0xf];                                 // 0x1(0xf)
 	Struct Transform                                             PivotTransform;                                    // 0x10(0x30)
 	Class WwiseEvent*                                            SwitchStartTransitionAudioEvent;                   // 0x40(0x8)
 	Class WwiseEvent*                                            SwitchStopTransitionAudioEvent;                    // 0x48(0x8)
@@ -38376,11 +38796,11 @@ struct MechanismAnimationEvent_VFXParams
 public:
 	Class ParticleSystem*                                        ParticleSystem;                                    // 0x0(0x8)
 	byte                                                         Mode;                                              // 0x8(0x1)
-	char                                                         pad0x3_EEEC5[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_7KOP8[0x3];                                 // 0x9(0x3)
 	struct FName                                                 MechanismVFXComponentTag;                          // 0xc(0x8)
 	struct FName                                                 AttachParentComponentTag;                          // 0x14(0x8)
 	byte                                                         AttachType;                                        // 0x1c(0x1)
-	char                                                         pad0x3_CRH5U[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_SB7VR[0x3];                                 // 0x1d(0x3)
 	Struct Vector                                                LocationOffset;                                    // 0x20(0xc)
 	Struct Rotator                                               RotationOffset;                                    // 0x2c(0xc)
 	Struct Vector                                                Scale;                                             // 0x38(0xc)
@@ -38521,9 +38941,9 @@ struct BattleElevatorEventRoomPhase
 public:
 	struct FName                                                 PhaseName;                                         // 0x0(0x8)
 	bool                                                         IsFinalPhase;                                      // 0x8(0x1)
-	char                                                         pad0x3_LZOEW[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_PQ59Y[0x3];                                 // 0x9(0x3)
 	struct FName                                                 NextPhaseName;                                     // 0xc(0x8)
-	char                                                         pad0x4_VWJM3[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_NLH12[0x4];                                 // 0x14(0x4)
 	TArray<class BattleElevatorEventRoomBasePolicy*>             Policies;                                          // 0x18(0x10)
 	TArray<class ElevatorActionBase*>                            Actions;                                           // 0x28(0x10)
 };
@@ -38557,7 +38977,7 @@ struct FishSizeAndType
 {
 public:
 	byte                                                         Size;                                              // 0x0(0x1)
-	char                                                         pad0x7_SG98X[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_7BFT0[0x7];                                 // 0x1(0x7)
 };
 
 
@@ -38566,7 +38986,7 @@ struct FishSizeAndWeight
 {
 public:
 	byte                                                         Size;                                              // 0x0(0x1)
-	char                                                         pad0x3_OCD26[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_CMDJH[0x3];                                 // 0x1(0x3)
 	float                                                        Weight;                                            // 0x4(0x4)
 };
 
@@ -38610,7 +39030,7 @@ struct FishAnimationParams
 {
 public:
 	byte                                                         FishAnimationState;                                // 0x0(0x1)
-	char                                                         pad0x3_34YMG[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_HN6GH[0x3];                                 // 0x1(0x3)
 	int                                                          FishLoopEndingDirection;                           // 0x4(0x4)
 };
 
@@ -38661,7 +39081,7 @@ struct FishingFishSelector
 {
 public:
 	Class AvailableFishForSpawning*                              AvailableFish;                                     // 0x0(0x8)
-	char                                                         pad0xa8_BZO6M[0xa8];                               // 0x8(0xa8)
+	char                                                         pad0xa8_FCXYZ[0xa8];                               // 0x8(0xa8)
 	TArray<class FishSpawnParamsDataAsset*>                      SelectedFishCache;                                 // 0xb0(0x10)
 	Class Object*                                                Root;                                              // 0xc0(0x8)
 	Class FishSpawnParamsDataAsset*                              GatheredConditions;                                // 0xc8(0x8)
@@ -38679,11 +39099,11 @@ public:
 	bool                                                         CloseToActiveFortOrSkellyShip;                     // 0x6(0x1)
 	bool                                                         InStorm;                                           // 0x7(0x1)
 	bool                                                         CloseToShipwreck;                                  // 0x8(0x1)
-	char                                                         pad0x7_GF8PA[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_E5DA2[0x7];                                 // 0x9(0x7)
 	Struct FString                                               Sea;                                               // 0x10(0x10)
 	Struct FString                                               IslandInRange;                                     // 0x20(0x10)
 	byte                                                         BaitType;                                          // 0x30(0x1)
-	char                                                         pad0x7_W0FDK[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_NPR86[0x7];                                 // 0x31(0x7)
 	Struct FString                                               RewardId;                                          // 0x38(0x10)
 	byte                                                         ServerState;                                       // 0x48(0x1)
 };
@@ -38704,7 +39124,7 @@ struct FishingRodForceFeedbackLevel
 {
 public:
 	float                                                        MinimumTensionFactor;                              // 0x0(0x4)
-	char                                                         pad0x4_KR5J6[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_0AQRJ[0x4];                                 // 0x4(0x4)
 	Class ForceFeedbackEffect*                                   ForceFeedback;                                     // 0x8(0x8)
 };
 
@@ -38714,7 +39134,7 @@ struct FishingComedyItemInfo
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_MKHAA[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_CSGJE[0x4];                                 // 0x4(0x4)
 	class                                                        ItemDesc;                                          // 0x8(0x8)
 	Struct Transform                                             SpawnOffset;                                       // 0x10(0x30)
 };
@@ -38725,7 +39145,7 @@ struct FishBaitInfo
 {
 public:
 	byte                                                         BaitType;                                          // 0x0(0x1)
-	char                                                         pad0x7_UE9NX[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_M5J5J[0x7];                                 // 0x1(0x7)
 	class                                                        BaitItemDesc;                                      // 0x8(0x8)
 };
 
@@ -38744,7 +39164,7 @@ struct DebugFishSelectionColour
 {
 public:
 	int                                                          ColourIndex;                                       // 0x0(0x4)
-	char                                                         pad0x4_I4TGS[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_J2C8J[0x4];                                 // 0x4(0x4)
 	TArray<struct FishSizes>                                     FishSizes;                                         // 0x8(0x10)
 };
 
@@ -38754,7 +39174,7 @@ struct DebugFishSelectionSize
 {
 public:
 	int                                                          SizeIndex;                                         // 0x0(0x4)
-	char                                                         pad0x4_PLG46[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_B7T0V[0x4];                                 // 0x4(0x4)
 };
 
 
@@ -38954,7 +39374,7 @@ public:
 	Struct StringAssetReference                                  LoadableDefinition;                                // 0x0(0x10)
 	TArray<struct LoadableWeightedDefinitions>                   LoadableWeightedDefinitions;                       // 0x10(0x10)
 	byte                                                         AnimationState;                                    // 0x20(0x1)
-	char                                                         pad0x7_40EJX[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_ET9DH[0x7];                                 // 0x21(0x7)
 	Class PetRoamingAnimationStateDefinitionDataAsset*           DefinitionAsset;                                   // 0x28(0x8)
 	TArray<struct WeightedDefinitionAssets>                      WeightedDefinitionAssets;                          // 0x30(0x10)
 	bool                                                         LoadOnDemand;                                      // 0x40(0x1)
@@ -38985,12 +39405,12 @@ struct PetRoamingAnimationStateDefinition
 {
 public:
 	byte                                                         AnimationType;                                     // 0x0(0x1)
-	char                                                         pad0x7_X8VRU[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_6VURU[0x7];                                 // 0x1(0x7)
 	Class AnimMontage*                                           MontageData;                                       // 0x8(0x8)
 	Struct PetAnimationCycleMontage                              CycleData;                                         // 0x10(0x18)
 	byte                                                         CurrentWieldableLocation;                          // 0x28(0x1)
 	byte                                                         ResetWieldableLocation;                            // 0x29(0x1)
-	char                                                         pad0x2_ZE44V[0x2];                                 // 0x2a(0x2)
+	char                                                         pad0x2_8EQ0J[0x2];                                 // 0x2a(0x2)
 	float                                                        BlendInTime;                                       // 0x2c(0x4)
 	float                                                        BlendOutTime;                                      // 0x30(0x4)
 	bool                                                         Uninterruptable;                                   // 0x34(0x1)
@@ -39119,7 +39539,7 @@ struct HeldStateSpecificBlendWeight
 {
 public:
 	byte                                                         HeldState;                                         // 0x0(0x1)
-	char                                                         pad0x3_DZKJ8[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_GXHL2[0x3];                                 // 0x1(0x3)
 	float                                                        BlendWeight;                                       // 0x4(0x4)
 };
 
@@ -39158,12 +39578,12 @@ struct PetRoamingAnimationState
 {
 public:
 	byte                                                         AnimationType;                                     // 0x0(0x1)
-	char                                                         pad0x7_1I1VU[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_M99XT[0x7];                                 // 0x1(0x7)
 	Class AnimMontage*                                           MontageData;                                       // 0x8(0x8)
 	Struct PetAnimationCycleMontage                              CycleData;                                         // 0x10(0x18)
 	byte                                                         CurrentWieldableLocation;                          // 0x28(0x1)
 	byte                                                         ResetWieldableLocation;                            // 0x29(0x1)
-	char                                                         pad0x2_Q5DK2[0x2];                                 // 0x2a(0x2)
+	char                                                         pad0x2_J8U8B[0x2];                                 // 0x2a(0x2)
 	float                                                        BlendInTime;                                       // 0x2c(0x4)
 	float                                                        BlendOutTime;                                      // 0x30(0x4)
 	bool                                                         Uninterruptable;                                   // 0x34(0x1)
@@ -39199,7 +39619,7 @@ struct PetAnimationWeighting
 {
 public:
 	byte                                                         AnimationState;                                    // 0x0(0x1)
-	char                                                         pad0x3_7FXGR[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_3MXTV[0x3];                                 // 0x1(0x3)
 	float                                                        Weighting;                                         // 0x4(0x4)
 };
 
@@ -39218,7 +39638,7 @@ struct LocationMapBannerParams
 {
 public:
 	int                                                          NumChests;                                         // 0x0(0x4)
-	char                                                         pad0x4_Y0ULX[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_OENI3[0x4];                                 // 0x4(0x4)
 	Struct StringAssetReference                                  BannerTexture;                                     // 0x8(0x10)
 	Struct Vector2D                                              BannerSize;                                        // 0x18(0x8)
 	Struct Vector2D                                              BannerLocation;                                    // 0x20(0x8)
@@ -39238,7 +39658,7 @@ struct TornMapTearingParams
 {
 public:
 	int                                                          NumPieces;                                         // 0x0(0x4)
-	char                                                         pad0x4_SU6YD[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_YCY56[0x4];                                 // 0x4(0x4)
 	Struct StringAssetReference                                  VisibilityMask1;                                   // 0x8(0x10)
 	Struct StringAssetReference                                  VisibilityMask2;                                   // 0x18(0x10)
 };
@@ -39272,7 +39692,7 @@ struct PlayerBuriedItemServiceItemDigUpRadiusSurfaceOverride
 {
 public:
 	byte                                                         SurfaceType;                                       // 0x0(0x1)
-	char                                                         pad0x3_5FZ0Y[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_6T19X[0x3];                                 // 0x1(0x3)
 	float                                                        ItemDigUpRadius;                                   // 0x4(0x4)
 };
 
@@ -39295,16 +39715,28 @@ public:
 };
 
 
-// Size 0x40
+// Size 0x50
 struct PlayerBuriedItemServiceDataAssetMapStorePopulationHaul
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
 	struct FName                                                 MapName;                                           // 0x4(0x8)
-	char                                                         pad0x4_BB85A[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_9PDHD[0x4];                                 // 0xc(0x4)
 	Class VoyageLocationOnlyNamedIslandListDataAsset*            NamedIslands;                                      // 0x10(0x8)
 	Struct WeightedProbabilityRange                              NumXs;                                             // 0x18(0x20)
 	Class WeightedItemDescSpawnDataAsset*                        WeightedItemDescSpawnDataAsset;                    // 0x38(0x8)
+	TArray<struct WeightedItemDescSpawnDataAssetOverrides>       WeightedItemDescSpawnDataAssetOverrides;           // 0x40(0x10)
+};
+
+
+// Size 0x38
+struct PlayerBuriedItemServiceDataAssetMapStorePopulationHaulOverride
+{
+public:
+	Struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	char                                                         pad0x4_MOISB[0x4];                                 // 0xc(0x4)
+	Struct WeightedProbabilityRange                              NumXs;                                             // 0x10(0x20)
+	Class WeightedItemDescSpawnDataAsset*                        WeightedItemDescSpawnDataAsset;                    // 0x30(0x8)
 };
 
 
@@ -39348,7 +39780,7 @@ public:
 	float                                                        IconRotation;                                      // 0x20(0x4)
 	Struct Guid                                                  Id;                                                // 0x24(0x10)
 	bool                                                         IsAvailable;                                       // 0x34(0x1)
-	char                                                         pad0x3_13L0X[0x3];                                 // 0x35(0x3)
+	char                                                         pad0x3_POLAS[0x3];                                 // 0x35(0x3)
 	Struct FString                                               Name;                                              // 0x38(0x10)
 	byte                                                         WorldRegion;                                       // 0x48(0x1)
 };
@@ -39447,7 +39879,7 @@ public:
 	int                                                          NumXs;                                             // 0x14(0x4)
 	int                                                          MapCreatedByPlayerNameOverrideIndex;               // 0x18(0x4)
 	Struct Guid                                                  MapId;                                             // 0x1c(0x10)
-	char                                                         pad0x4_GV1ZN[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_2O37P[0x4];                                 // 0x2c(0x4)
 	Struct FString                                               MapCreatedByPlayerName;                            // 0x30(0x10)
 };
 
@@ -39524,7 +39956,7 @@ public:
 	bool                                                         DontRewardCurrency;                                // 0x40(0x1)
 	bool                                                         DontRewardXp;                                      // 0x41(0x1)
 	bool                                                         DontRewardSeasonXp;                                // 0x42(0x1)
-	char                                                         pad0x5_GOOXV[0x5];                                 // 0x43(0x5)
+	char                                                         pad0x5_14UQN[0x5];                                 // 0x43(0x5)
 	Struct FString                                               DeferralReason;                                    // 0x48(0x10)
 	double                                                       RewardMultiplier;                                  // 0x58(0x8)
 };
@@ -39558,9 +39990,9 @@ struct PlayerBuriedItemServicePlayerTreasureDiscoveredTelemetryEvent
 {
 public:
 	byte                                                         BootyType;                                         // 0x0(0x1)
-	char                                                         pad0x3_93V7K[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_CCGB5[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  BootyId;                                           // 0x4(0x10)
-	char                                                         pad0x4_V6T81[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_5PBD0[0x4];                                 // 0x14(0x4)
 	Struct FString                                               ItemName;                                          // 0x18(0x10)
 	Struct Guid                                                  BuriedByCrewId;                                    // 0x28(0x10)
 	Struct Guid                                                  DiscoveredByCrewId;                                // 0x38(0x10)
@@ -39668,7 +40100,7 @@ struct FortDespawnTelemetryEvent
 public:
 	Struct Guid                                                  FortId;                                            // 0x0(0x10)
 	byte                                                         DestructionReason;                                 // 0x10(0x1)
-	char                                                         pad0x3_S1K0E[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_OQ6QQ[0x3];                                 // 0x11(0x3)
 	struct FName                                                 FortType;                                          // 0x14(0x8)
 };
 
@@ -39763,7 +40195,7 @@ struct SeaFortAlignmentFlagPoleAudioParams
 public:
 	Class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x0(0x8)
 	struct FName                                                 WwiseEmitterName;                                  // 0x8(0x8)
-	char                                                         pad0x40_BCO2S[0x40];                               // 0x10(0x40)
+	char                                                         pad0x40_KC0GY[0x40];                               // 0x10(0x40)
 	Class WwiseEvent*                                            RaiseFlagStartEvent;                               // 0x50(0x8)
 	Class WwiseEvent*                                            RaiseFlagCompletedEvent;                           // 0x58(0x8)
 	Class WwiseEvent*                                            LowerFlagStartEvent;                               // 0x60(0x8)
@@ -39835,7 +40267,7 @@ struct FlagAlignmentCosmetic
 public:
 	struct FName                                                 ScalarParameterName;                               // 0x0(0x8)
 	Class MaterialInstanceDynamic*                               FlagMaterialDynamic;                               // 0x8(0x8)
-	char                                                         pad0x10_INAH5[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_CH3DV[0x10];                               // 0x10(0x10)
 	Class CurveFloat*                                            Curve;                                             // 0x20(0x8)
 };
 
@@ -39916,7 +40348,7 @@ struct SeaFortAlignmentChangedTelemetryEvent
 public:
 	byte                                                         PreviousAlignment;                                 // 0x0(0x1)
 	byte                                                         NewAlignment;                                      // 0x1(0x1)
-	char                                                         pad0x2_43N7A[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_5UURT[0x2];                                 // 0x2(0x2)
 	struct FName                                                 IslandName;                                        // 0x4(0x8)
 };
 
@@ -39927,7 +40359,7 @@ struct SeaFortAlignmentDollHandinEvent
 public:
 	byte                                                         HandInAlignemnt;                                   // 0x0(0x1)
 	bool                                                         IsDollEnchanted;                                   // 0x1(0x1)
-	char                                                         pad0x2_I0I4N[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_ZNKNS[0x2];                                 // 0x2(0x2)
 	int                                                          FortsAlignedToHandInType;                          // 0x4(0x4)
 };
 
@@ -39949,6 +40381,13 @@ public:
 	struct FName                                                 FortIslandName;                                    // 0x10(0x8)
 	byte                                                         OldState;                                          // 0x18(0x1)
 	byte                                                         NewState;                                          // 0x19(0x1)
+};
+
+
+// Size 0x10
+struct EventCrewEntitlementUpdatedAndVerified
+{
+public:
 };
 
 
@@ -40017,7 +40456,7 @@ struct GetShipPersistenceResponseModel
 public:
 	Struct Guid                                                  Id;                                                // 0x0(0x10)
 	byte                                                         ShipType;                                          // 0x10(0x1)
-	char                                                         pad0x7_B7161[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_J2PX8[0x7];                                 // 0x11(0x7)
 	Struct FString                                               Name;                                              // 0x18(0x10)
 	Struct ShipPersistenceModel                                  State;                                             // 0x28(0x50)
 };
@@ -40086,7 +40525,7 @@ struct WieldableBookNamedWidgetText
 public:
 	struct FName                                                 TextKey;                                           // 0x80(0x8)
 	byte                                                         WidgetVisibilityGroup;                             // 0x88(0x1)
-	char                                                         pad0x3_8QMWC[0x3];                                 // 0x89(0x3)
+	char                                                         pad0x3_LPFUJ[0x3];                                 // 0x89(0x3)
 	Struct LinearColor                                           TextColour;                                        // 0x8c(0x10)
 	byte                                                         BlendType;                                         // 0x9c(0x1)
 };
@@ -40129,11 +40568,11 @@ public:
 	Class MaybeCompressedCanvasRenderTarget2D*                   RightSpreadLeftPageRenderTarget;                   // 0x18(0x8)
 	Class MaybeCompressedCanvasRenderTarget2D*                   RightSpreadRightPageRenderTarget;                  // 0x20(0x8)
 	Class WieldableBookPageLayout*                               LeftSpreadLeftPageContents;                        // 0x28(0x8)
-	char                                                         pad0x10_RHJL1[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_J0O9C[0x10];                               // 0x30(0x10)
 	Class WieldableBookPageLayout*                               LeftSpreadRightPageContents;                       // 0x40(0x8)
-	char                                                         pad0x10_E9I2X[0x10];                               // 0x48(0x10)
+	char                                                         pad0x10_WMZQW[0x10];                               // 0x48(0x10)
 	Class WieldableBookPageLayout*                               RightSpreadLeftPageContents;                       // 0x58(0x8)
-	char                                                         pad0x10_W7S9B[0x10];                               // 0x60(0x10)
+	char                                                         pad0x10_2ZXHO[0x10];                               // 0x60(0x10)
 	Class WieldableBookPageLayout*                               RightSpreadRightPageContents;                      // 0x70(0x8)
 };
 
@@ -40152,7 +40591,7 @@ struct WieldableBookRepInfo
 {
 public:
 	int                                                          LeftPageIndex;                                     // 0x0(0x4)
-	char                                                         pad0x4_YA6XC[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_OMI23[0x4];                                 // 0x4(0x4)
 	TArray<Int CurrentBookContents>                              CurrentBookContents;                               // 0x8(0x10)
 	TArray<struct ProcPageList>                                  ProcPageList;                                      // 0x18(0x10)
 };
@@ -40172,11 +40611,11 @@ struct CrewEventLogEntry
 {
 public:
 	byte                                                         EntryType;                                         // 0x0(0x1)
-	char                                                         pad0x7_ZKGVP[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_SK0NW[0x7];                                 // 0x1(0x7)
 	Struct ReplicatedDateTime                                    EntryTime;                                         // 0x8(0x8)
 	Struct EventLogParams                                        Params;                                            // 0x10(0x40)
 	byte                                                         Day;                                               // 0x58(0x1)
-	char                                                         pad0x7_PBHNZ[0x7];                                 // 0x59(0x7)
+	char                                                         pad0x7_CM434[0x7];                                 // 0x59(0x7)
 	TArray<struct SourceIdsToOverwrite>                          SourceIdsToOverwrite;                              // 0x60(0x10)
 };
 
@@ -40215,7 +40654,7 @@ public:
 	struct FName                                                 ImageKey;                                          // 0x0(0x8)
 	Struct PlayerStat                                            StatId;                                            // 0x8(0x4)
 	byte                                                         LogEntryType;                                      // 0xc(0x1)
-	char                                                         pad0x3_3YQY9[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_OJK9E[0x3];                                 // 0xd(0x3)
 	Class Texture*                                               Image;                                             // 0x10(0x8)
 	int                                                          IconPriority;                                      // 0x18(0x4)
 };
@@ -40256,7 +40695,7 @@ public:
 	int                                                          PirateTitleIndex;                                  // 0x1c(0x4)
 	Struct FString                                               PetName;                                           // 0x20(0x10)
 	bool                                                         IsCaptain;                                         // 0x30(0x1)
-	char                                                         pad0x7_7Z25S[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_DF6LQ[0x7];                                 // 0x31(0x7)
 	TArray<struct CrewAccolades>                                 CrewAccolades;                                     // 0x38(0x10)
 	bool                                                         IsInCurrentSessionGuild;                           // 0x48(0x1)
 };
@@ -40273,10 +40712,10 @@ public:
 	Struct FString                                               GuildMotto;                                        // 0x28(0x10)
 	Struct FString                                               GuildIcon;                                         // 0x38(0x10)
 	Struct CaptainsLogCrewSessionStatsEntry                      StatsEntry;                                        // 0x48(0x24)
-	char                                                         pad0x4_0P2NO[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_FELDV[0x4];                                 // 0x6c(0x4)
 	TArray<struct CrewMembers>                                   CrewMembers;                                       // 0x70(0x10)
 	byte                                                         ShipType;                                          // 0x80(0x1)
-	char                                                         pad0x7_RUC9E[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_AQ45B[0x7];                                 // 0x81(0x7)
 	TArray<struct ShipAccolades>                                 ShipAccolades;                                     // 0x88(0x10)
 	TArray<struct CrewEventLog>                                  CrewEventLog;                                      // 0x98(0x10)
 	bool                                                         IsValid;                                           // 0xa8(0x1)
@@ -40307,7 +40746,7 @@ struct CaptainsLogPlayerStatEvent
 public:
 	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	Struct PlayerStat                                            PlayerStat;                                        // 0x10(0x4)
-	char                                                         pad0x4_Z779M[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_L49PG[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -40317,7 +40756,7 @@ struct StatEventDefinition
 public:
 	Struct PlayerStat                                            StatId;                                            // 0x0(0x4)
 	byte                                                         EventType;                                         // 0x4(0x1)
-	char                                                         pad0x3_PC9KZ[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_H67TR[0x3];                                 // 0x5(0x3)
 	Struct FText                                                 LogEntryText;                                      // 0x8(0x38)
 	TArray<struct SourceStatsToOverwrite>                        SourceStatsToOverwrite;                            // 0x40(0x10)
 };
@@ -40329,7 +40768,7 @@ struct CaptainsLogCrewAccolades
 public:
 	Struct FText                                                 CrewNickname;                                      // 0x0(0x38)
 	int                                                          PirateTitleIndex;                                  // 0x38(0x4)
-	char                                                         pad0x4_A40KB[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_3QUEJ[0x4];                                 // 0x3c(0x4)
 	Struct FText                                                 AccoladeOne;                                       // 0x40(0x38)
 	Struct FText                                                 AccoladeTwo;                                       // 0x78(0x38)
 	Struct FText                                                 AccoladeThree;                                     // 0xb0(0x38)
@@ -40378,7 +40817,7 @@ struct CaptainsLogItemInfoRarityEntry
 public:
 	int                                                          DaysAtSea;                                         // 0x0(0x4)
 	struct FName                                                 Rarity;                                            // 0x4(0x8)
-	char                                                         pad0x4_G5DVA[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_QLV7H[0x4];                                 // 0xc(0x4)
 	Struct BootyItemStats                                        HandInStats;                                       // 0x10(0x90)
 	Struct CompanyBootyStatList                                  CompanySpecificStats;                              // 0xa0(0x10)
 	TArray<struct CompanySpecificHandInRewardIds>                CompanySpecificHandInRewardIds;                    // 0xb0(0x10)
@@ -40446,7 +40885,7 @@ struct AimAssistStyleData
 {
 public:
 	float                                                        TargetMaxDistance;                                 // 0x0(0x4)
-	char                                                         pad0x4_AI3X0[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_X3WA1[0x4];                                 // 0x4(0x4)
 	Class CurveFloat*                                            TargetDistanceFromPlayerToInfluenceRadius;         // 0x8(0x8)
 };
 
@@ -40492,7 +40931,7 @@ public:
 	int                                                          MaxNumOfHitsProccessedPerFlameCollision;           // 0x18(0x4)
 	Struct Vector                                                FlameOriginOffset;                                 // 0x1c(0xc)
 	Struct Rotator                                               FlameOrientationOffset;                            // 0x28(0xc)
-	char                                                         pad0x4_GZTI1[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_B6NI6[0x4];                                 // 0x34(0x4)
 	Class CurveFloat*                                            FlamePointsTravelCurve;                            // 0x38(0x8)
 	byte                                                         CollisionChannel;                                  // 0x40(0x1)
 	Struct CollisionResponseContainer                            CollisionResponse;                                 // 0x41(0x20)
@@ -40515,7 +40954,7 @@ public:
 	float                                                        ChargeThreshold;                                   // 0x0(0x4)
 	Struct FloatRange                                            SecondsBetweenMissfires;                           // 0x4(0x10)
 	Struct FloatRange                                            MissfireDurationInSeconds;                         // 0x14(0x10)
-	char                                                         pad0x4_D98WF[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_E29I8[0x4];                                 // 0x24(0x4)
 	Class WwiseEvent*                                            MissfireStartedSFX;                                // 0x28(0x8)
 	Class WwiseEvent*                                            MissfireStoppedSFX;                                // 0x30(0x8)
 };
@@ -40527,7 +40966,7 @@ struct AshenWindsSkullRewardLevel
 public:
 	float                                                        MaximumChargePercentage;                           // 0x0(0x4)
 	Struct RewardId                                              DefaultRewardId;                                   // 0x4(0x8)
-	char                                                         pad0x4_M4E7A[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_96T47[0x4];                                 // 0xc(0x4)
 	TArray<struct CompanyRewardIds>                              CompanyRewardIds;                                  // 0x10(0x10)
 };
 
@@ -40537,7 +40976,7 @@ struct AshenLordCustomEncounterSettings
 {
 public:
 	bool                                                         ShouldEncounterGiveRewardsWhenCompleted;           // 0x0(0x1)
-	char                                                         pad0x7_TE6KY[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_88L4I[0x7];                                 // 0x1(0x7)
 	class                                                        CustomDioramaCategory;                             // 0x8(0x8)
 	class                                                        CustomAshenLordClassID;                            // 0x10(0x8)
 	Struct StringAssetReference                                  CustomAshenLordSkillsetClass;                      // 0x38(0x10)
@@ -40577,24 +41016,26 @@ public:
 };
 
 
-// Size 0x30
+// Size 0x48
 struct MilestoneData
 {
 public:
-	Struct FString                                               ProgressId;                                        // 0x0(0x10)
-	Struct Guid                                                  AlignmentId;                                       // 0x10(0x10)
+	Struct AccoladeProgressId                                    ProgressId;                                        // 0x0(0x24)
+	Struct Guid                                                  AlignmentId;                                       // 0x24(0x10)
+	char                                                         pad0x4_WKVSP[0x4];                                 // 0x34(0x4)
 };
 
 
-// Size 0xd0
+// Size 0x80
 struct GuildChroniclesData
 {
 public:
-	Struct PirateIdentity                                        CaptainIdentity;                                   // 0x0(0x78)
-	Struct Guid                                                  CrewId;                                            // 0x78(0x10)
-	Struct Guid                                                  GuildId;                                           // 0x88(0x10)
-	Struct Guid                                                  ShipId;                                            // 0xac(0x10)
-	TArray<struct Milestones>                                    Milestones;                                        // 0xc0(0x10)
+	Struct UniqueNetIdRepl                                       UserId;                                            // 0x0(0x18)
+	Struct Guid                                                  PirateId;                                          // 0x18(0x10)
+	Struct Guid                                                  CrewId;                                            // 0x28(0x10)
+	Struct Guid                                                  GuildId;                                           // 0x38(0x10)
+	Struct Guid                                                  ShipId;                                            // 0x5c(0x10)
+	TArray<struct Milestones>                                    Milestones;                                        // 0x70(0x10)
 };
 
 
@@ -40648,7 +41089,7 @@ struct SequenceResponseContainer
 {
 public:
 	int                                                          SequenceIndexToTrigger;                            // 0x0(0x4)
-	char                                                         pad0x4_M0ZD3[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_VWXFH[0x4];                                 // 0x4(0x4)
 	Class Actor*                                                 ResponseActor;                                     // 0x8(0x8)
 };
 
@@ -40778,7 +41219,7 @@ struct AthenaAnimationSinkingTunnel
 public:
 	Struct AthenaAnimationSinkingTunnelAnimData                  SinkingAnimData;                                   // 0x0(0x8)
 	bool                                                         Activated;                                         // 0x8(0x1)
-	char                                                         pad0x7_5OSZJ[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_4OU7M[0x7];                                 // 0x9(0x7)
 	Class AthenaAnimationSinkingTunnelDataAsset*                 DrowningAnimationsDataAsset;                       // 0x10(0x8)
 };
 
@@ -40863,7 +41304,7 @@ public:
 	Struct FString                                               ProjectileId;                                      // 0x10(0x10)
 	Struct FString                                               DamagerTypeId;                                     // 0x20(0x10)
 	Struct Vector                                                HitLocation;                                       // 0x30(0xc)
-	char                                                         pad0x4_3DJ5D[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_BJX6T[0x4];                                 // 0x3c(0x4)
 	Struct FString                                               InstigatorObjectId;                                // 0x40(0x10)
 	Struct FString                                               InstigatorObjectType;                              // 0x50(0x10)
 	Struct FString                                               InstigatorActorName;                               // 0x60(0x10)
@@ -40878,7 +41319,7 @@ public:
 	Struct FString                                               ProjectileId;                                      // 0x10(0x10)
 	Struct FString                                               DamagerTypeId;                                     // 0x20(0x10)
 	Struct Vector                                                HitLocation;                                       // 0x30(0xc)
-	char                                                         pad0x4_8N49Y[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_VZ3QI[0x4];                                 // 0x3c(0x4)
 	Struct FString                                               InstigatorObjectId;                                // 0x40(0x10)
 	Struct FString                                               InstigatorObjectType;                              // 0x50(0x10)
 	Struct FString                                               InstigatorActorName;                               // 0x60(0x10)
@@ -40968,22 +41409,22 @@ struct SittingActionStateParams
 {
 public:
 	byte                                                         ControllableObjectType;                            // 0x18(0x1)
-	char                                                         pad0x7_PWOPP[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_WCITG[0x7];                                 // 0x19(0x7)
 	class                                                        SeatAnimationId;                                   // 0x20(0x8)
 	Struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x28(0x1c)
 	bool                                                         ShouldHideFirstPersonMesh;                         // 0x44(0x1)
-	char                                                         pad0x3_S9I7Y[0x3];                                 // 0x45(0x3)
+	char                                                         pad0x3_SKX3T[0x3];                                 // 0x45(0x3)
 	Class WwiseEvent*                                            OnSitSfx;                                          // 0x48(0x8)
 	Class WwiseEvent*                                            OnStandSfx;                                        // 0x50(0x8)
 	Class WwiseObjectPoolWrapper*                                SeatPool;                                          // 0x58(0x8)
 	bool                                                         AllowInteractWithOtherObjectsWhileSitting;         // 0x60(0x1)
-	char                                                         pad0x7_5DGQS[0x7];                                 // 0x61(0x7)
+	char                                                         pad0x7_1BE1B[0x7];                                 // 0x61(0x7)
 	TArray<class Class*>                                         AllowedInteractableTypes;                          // 0x68(0x10)
 	TArray<class Class*>                                         AllowedInteractionNotificationInputIds;            // 0x78(0x10)
 	byte                                                         DockingMode;                                       // 0x88(0x1)
 	bool                                                         DisableDisengageInput;                             // 0x89(0x1)
 	bool                                                         ThirdPersonCameraEnabled;                          // 0x8a(0x1)
-	char                                                         pad0x5_FYXJY[0x5];                                 // 0x8b(0x5)
+	char                                                         pad0x5_36FO3[0x5];                                 // 0x8b(0x5)
 	Class AthenaSpringArmComponentParams*                        ThirdPersonCameraParams;                           // 0x90(0x8)
 	bool                                                         CameraRollEnabled;                                 // 0x98(0x1)
 	bool                                                         OffsetCameraUsingSeatRotation;                     // 0x99(0x1)
@@ -40995,7 +41436,7 @@ struct SleepingActionStateParams
 {
 public:
 	byte                                                         ControllableObjectType;                            // 0x18(0x1)
-	char                                                         pad0x7_0YQWR[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_WDHLO[0x7];                                 // 0x19(0x7)
 	class                                                        BedAnimationId;                                    // 0x20(0x8)
 	float                                                        CameraFadeDuration;                                // 0x28(0x4)
 	float                                                        TooltipDelay;                                      // 0x2c(0x4)
@@ -41004,11 +41445,11 @@ public:
 	float                                                        HealthRegenTickAmount;                             // 0x38(0x4)
 	bool                                                         ShouldHideFirstPersonMesh;                         // 0x3c(0x1)
 	byte                                                         DockingMode;                                       // 0x3d(0x1)
-	char                                                         pad0x2_PXK8U[0x2];                                 // 0x3e(0x2)
+	char                                                         pad0x2_SPPDL[0x2];                                 // 0x3e(0x2)
 	float                                                        SleepingSfxDelay;                                  // 0x40(0x4)
 	float                                                        SleepingAudioStateDelay;                           // 0x44(0x4)
 	bool                                                         NeverFartWhileSleeping;                            // 0x48(0x1)
-	char                                                         pad0x3_ZOC2F[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_24VG2[0x3];                                 // 0x49(0x3)
 	float                                                        UnderwaterDepthThreshold;                          // 0x4c(0x4)
 };
 
@@ -41123,7 +41564,7 @@ struct AthenaAnimationSitting
 public:
 	Struct AthenaAnimationSittingAnimData                        SittingAnimData;                                   // 0x0(0x10)
 	bool                                                         AnimationLoaded;                                   // 0x10(0x1)
-	char                                                         pad0x7_DPNH4[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_YEXJV[0x7];                                 // 0x11(0x7)
 	Class AthenaAnimationSittingDataAsset*                       SittingDataAsset;                                  // 0x18(0x8)
 };
 
@@ -41160,7 +41601,7 @@ public:
 	float                                                        BlendOutSpeed;                                     // 0xa4(0x4)
 	bool                                                         AnimationOverride;                                 // 0xa8(0x1)
 	byte                                                         CapstanState;                                      // 0xa9(0x1)
-	char                                                         pad0x2_P79BQ[0x2];                                 // 0xaa(0x2)
+	char                                                         pad0x2_J59O9[0x2];                                 // 0xaa(0x2)
 	float                                                        AngularVelocityWanted;                             // 0xac(0x4)
 	Class Actor*                                                 ControlledObject;                                  // 0xb0(0x8)
 };
@@ -41171,7 +41612,7 @@ struct AthenaAnimationServerAnimAISpawnData
 {
 public:
 	float                                                        MaxSpawnAnimDurations;                             // 0x20(0x4)
-	char                                                         pad0xc_TYRKT[0xc];                                 // 0x24(0xc)
+	char                                                         pad0xc_59UFL[0xc];                                 // 0x24(0xc)
 	Struct AthenaAnimationServerAnimSpawnTimings                 SpawnAnimDurations;                                // 0x30(0x10)
 };
 
@@ -41355,7 +41796,7 @@ struct AthenaAnimationEmoteAnimations
 public:
 	struct FName                                                 EmoteName;                                         // 0x0(0x8)
 	byte                                                         EmoteSequenceType;                                 // 0x8(0x1)
-	char                                                         pad0x7_2LVHU[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_59BC8[0x7];                                 // 0x9(0x7)
 	TArray<Assetclass ContinuousCycle>                           ContinuousCycle;                                   // 0x50(0x10)
 	class                                                        UseWithObject;                                     // 0x80(0x8)
 };
@@ -41384,7 +41825,7 @@ struct AthenaAnimationJumping
 {
 public:
 	byte                                                         JumpingState;                                      // 0x0(0x1)
-	char                                                         pad0x3_GV7R5[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_FK501[0x3];                                 // 0x1(0x3)
 	float                                                        PreImpactTime;                                     // 0x4(0x4)
 	int                                                          JumpSequence;                                      // 0x8(0x4)
 	int                                                          LandingSequence;                                   // 0xc(0x4)
@@ -41402,7 +41843,7 @@ public:
 	float                                                        BlendInSpeed;                                      // 0x8(0x4)
 	float                                                        BlendOutSpeed;                                     // 0xc(0x4)
 	bool                                                         AnimationOverride;                                 // 0x10(0x1)
-	char                                                         pad0x3_8BNOJ[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_CCK87[0x3];                                 // 0x11(0x3)
 	float                                                        AnimationLoopMod;                                  // 0x14(0x4)
 	float                                                        HeightPerStep;                                     // 0x18(0x4)
 	struct FName                                                 LeftHandSocketName;                                // 0x1c(0x8)
@@ -41411,7 +41852,7 @@ public:
 	struct FName                                                 RightFootSocketName;                               // 0x34(0x8)
 	byte                                                         LadderState;                                       // 0x3c(0x1)
 	byte                                                         LadderTransitionState;                             // 0x3d(0x1)
-	char                                                         pad0x2_ADXC7[0x2];                                 // 0x3e(0x2)
+	char                                                         pad0x2_CPAKQ[0x2];                                 // 0x3e(0x2)
 	Struct LadderDefinition                                      LadderDefinition;                                  // 0x40(0x1c)
 	float                                                        ClimbDistance;                                     // 0x5c(0x4)
 	float                                                        AnimationDistance;                                 // 0x60(0x4)
@@ -41550,7 +41991,7 @@ public:
 	Struct HandOnWheelAnimationRanges                            HandOnWheelAnimationRanges;                        // 0x90(0x40)
 	Struct WheelIKActivationRanges                               WheelArmIKDownWithinRange;                         // 0xd0(0x40)
 	byte                                                         WheelAnimationType;                                // 0x110(0x1)
-	char                                                         pad0x3_TCG44[0x3];                                 // 0x111(0x3)
+	char                                                         pad0x3_E29BG[0x3];                                 // 0x111(0x3)
 	float                                                        WheelTime;                                         // 0x114(0x4)
 	float                                                        WheelDirection;                                    // 0x118(0x4)
 	float                                                        RightFingerAlpha;                                  // 0x11c(0x4)
@@ -41559,7 +42000,7 @@ public:
 	float                                                        WheelDockingHandClaspAlpha;                        // 0x128(0x4)
 	bool                                                         LeftWheelArmDown;                                  // 0x12c(0x1)
 	bool                                                         RightWheelArmDown;                                 // 0x12d(0x1)
-	char                                                         pad0x2_0RH0B[0x2];                                 // 0x12e(0x2)
+	char                                                         pad0x2_DXWN1[0x2];                                 // 0x12e(0x2)
 	Class Actor*                                                 ControlledObject;                                  // 0x130(0x8)
 };
 
@@ -41623,7 +42064,7 @@ public:
 	Struct FString                                               AnimationsStructName;                              // 0x0(0x10)
 	Struct FString                                               FallbackForCharacterName;                          // 0x10(0x10)
 	float                                                        DurationOfUsage;                                   // 0x20(0x4)
-	char                                                         pad0x4_G32EG[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_5U5M5[0x4];                                 // 0x24(0x4)
 	Struct FString                                               ItemName;                                          // 0x28(0x10)
 };
 
@@ -41633,7 +42074,7 @@ struct LoadRequestAssetInfo
 {
 public:
 	float                                                        LoadDuration;                                      // 0x0(0x4)
-	char                                                         pad0x4_O0OKO[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_QKJJ2[0x4];                                 // 0x4(0x4)
 	Struct FString                                               AnimationsStructName;                              // 0x8(0x10)
 	Struct FString                                               LoadingForCharacterName;                           // 0x18(0x10)
 	Struct FString                                               ItemName;                                          // 0x28(0x10)
@@ -41687,7 +42128,7 @@ struct AthenaAnimationDeathData
 public:
 	Struct DamageInstance                                        KillingDamage;                                     // 0x0(0x30)
 	byte                                                         DeathType;                                         // 0x30(0x1)
-	char                                                         pad0x3_11TA7[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_CLUZG[0x3];                                 // 0x31(0x3)
 	bool                                                         IsDead;                                            // 0x34(0x1)
 	bool                                                         Reviving;                                          // 0x34(0x1)
 };
@@ -41710,7 +42151,7 @@ public:
 	int                                                          StandardIndex0;                                    // 0x0(0x4)
 	int                                                          StandardIndex1;                                    // 0x4(0x4)
 	bool                                                         HitReactTransition;                                // 0x8(0x1)
-	char                                                         pad0x3_FJOYM[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_AQKX9[0x3];                                 // 0x9(0x3)
 	float                                                        DirectionYaw;                                      // 0xc(0x4)
 	int                                                          ItemIndex0;                                        // 0x10(0x4)
 	int                                                          ItemIndex1;                                        // 0x14(0x4)
@@ -41833,7 +42274,7 @@ struct AthenaAnimationFirstPersonAnimatic
 public:
 	bool                                                         IsFirstPersonAnimaticActive;                       // 0x0(0x1)
 	bool                                                         IsFirstPersonCustomAnimatic;                       // 0x0(0x1)
-	char                                                         pad0x7_QF6CS[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_U0WSL[0x7];                                 // 0x1(0x7)
 	Class AnimSequence*                                          FirstPersonAnimationToPlay;                        // 0x8(0x8)
 	Class FirstPersonAnimaticList*                               FirstPersonAnimaticList;                           // 0x10(0x8)
 };
@@ -41875,7 +42316,7 @@ struct AthenaAnimationIKFootplantingAnimData
 {
 public:
 	bool                                                         Active;                                            // 0x0(0x1)
-	char                                                         pad0x3_LBVXU[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_EDN66[0x3];                                 // 0x1(0x3)
 	float                                                        HipHeight;                                         // 0x4(0x4)
 	float                                                        HipPullStrength;                                   // 0x8(0x4)
 	float                                                        DownDistance;                                      // 0xc(0x4)
@@ -42058,7 +42499,7 @@ struct AthenaAnimationObjectTargetingOptions
 {
 public:
 	byte                                                         ArmSelection;                                      // 0x0(0x1)
-	char                                                         pad0x3_D0ZJD[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_WVH79[0x3];                                 // 0x1(0x3)
 	float                                                        UpperClampTargetingAngle;                          // 0x4(0x4)
 	float                                                        LowerClampTargetingAngle;                          // 0x8(0x4)
 	float                                                        ShoulderInfluenceUpper;                            // 0xc(0x4)
@@ -42066,7 +42507,7 @@ public:
 	Struct Vector                                                VirtualPivotOffsetUpper;                           // 0x14(0xc)
 	Struct Vector                                                VirtualPivotOffsetLower;                           // 0x20(0xc)
 	bool                                                         LockHandOrientation;                               // 0x2c(0x1)
-	char                                                         pad0x3_100X5[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_I0UJA[0x3];                                 // 0x2d(0x3)
 	Struct Vector                                                VirtualPivotOffsetLerped;                          // 0x30(0xc)
 };
 
@@ -42097,7 +42538,7 @@ struct AthenaAnimationUndoRepair
 public:
 	Struct AthenaAnimationUndoRepairAnimData                     UndoRepairAnimData;                                // 0x0(0x10)
 	bool                                                         UndoingRepair;                                     // 0x10(0x1)
-	char                                                         pad0x7_RSXN5[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_SOT0B[0x7];                                 // 0x11(0x7)
 	Class AthenaAnimationUndoRepairDataAsset*                    UndoRepairDataAsset;                               // 0x18(0x8)
 };
 
@@ -42151,7 +42592,7 @@ public:
 	Class BlendSpace1D*                                          PushToPull;                                        // 0x48(0x8)
 	Class BlendSpace1D*                                          PullToPush;                                        // 0x50(0x8)
 	float                                                        RemapSpeed;                                        // 0x58(0x4)
-	char                                                         pad0x4_SUVFQ[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_N2LWK[0x4];                                 // 0x5c(0x4)
 	Class BlendSpace1D*                                          UpperIntent;                                       // 0x60(0x8)
 };
 
@@ -42166,7 +42607,7 @@ public:
 	Class AnimSequence*                                          Recover;                                           // 0x18(0x8)
 	Class AnimSequence*                                          HeavyAttackStunRecover;                            // 0x20(0x8)
 	byte                                                         AnimType;                                          // 0x28(0x1)
-	char                                                         pad0x3_OASG4[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_BCI92[0x3];                                 // 0x29(0x3)
 	float                                                        WarmUpPlaySpeed;                                   // 0x2c(0x4)
 	bool                                                         IsHeavyAttackActive;                               // 0x30(0x1)
 };
@@ -42248,7 +42689,7 @@ public:
 	TArray<class BlendSpace1D*>                                  VariantCycleIdle;                                  // 0x18(0x10)
 	bool                                                         UseMainCycleJump;                                  // 0x28(0x1)
 	bool                                                         IgnoreFullBody;                                    // 0x29(0x1)
-	char                                                         pad0x6_2631Q[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_L8V7V[0x6];                                 // 0x2a(0x6)
 	Struct AthenaAnimationObjectJumpingAnimationsPitchOverride   MainCycleJump;                                     // 0x30(0x20)
 	Class BlendSpace1D*                                          MainOutOf;                                         // 0x50(0x8)
 	Struct AthenaAnimationObjectActionContinuousSwimming         MainSwimming;                                      // 0x58(0x20)
@@ -42285,7 +42726,7 @@ public:
 	Class AnimSequence*                                          MainCycleIdle;                                     // 0x18(0x8)
 	Class BlendSpace*                                            MainCycleLocomotion;                               // 0x20(0x8)
 	bool                                                         UseMainCycleJump;                                  // 0x28(0x1)
-	char                                                         pad0x7_SUSZ1[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_5H1WQ[0x7];                                 // 0x29(0x7)
 	Struct AthenaAnimationObjectJumpingAnimations                MainCycleJump;                                     // 0x30(0x20)
 	Class AnimSequence*                                          MainOutOf;                                         // 0x50(0x8)
 	Class BlendSpace*                                            MainOutOfLocomotion;                               // 0x58(0x8)
@@ -42294,7 +42735,7 @@ public:
 	Struct AthenaAnimationLocomotionTurningAnimData              TurningRightAlt;                                   // 0x88(0x8)
 	Class AnimSequence*                                          TurnOutAlt;                                        // 0x90(0x8)
 	bool                                                         IgnoreOverlayHandAdditiveForAction;                // 0x98(0x1)
-	char                                                         pad0x7_MPZ95[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_O22KZ[0x7];                                 // 0x99(0x7)
 	Class AnimSequence*                                          CustomAdditiveForAction;                           // 0xa0(0x8)
 };
 
@@ -42313,26 +42754,26 @@ public:
 	Struct AthenaAnimationObjectActionOneShot                    ActionPrimarySingle;                               // 0x130(0x40)
 	Struct AthenaAnimationObjectActionContinuous                 ActionPrimaryContinuous;                           // 0x170(0x150)
 	bool                                                         PrimaryActionPitchOverride;                        // 0x2c0(0x1)
-	char                                                         pad0x7_GPAYV[0x7];                                 // 0x2c1(0x7)
+	char                                                         pad0x7_NDA3U[0x7];                                 // 0x2c1(0x7)
 	Struct AthenaAnimationObjectActionOneShotPitchOverride       ActionPrimarySinglePitchOverride;                  // 0x2c8(0x20)
 	Struct AthenaAnimationObjectActionContinuousPitchOverride    ActionPrimaryContinuousPitchOverride;              // 0x2e8(0xf0)
 	Struct AthenaAnimationObjectActionOneShot                    ActionSecondarySingle;                             // 0x3d8(0x40)
 	Struct AthenaAnimationObjectActionContinuous                 ActionSecondaryContinuous;                         // 0x418(0x150)
 	bool                                                         SecondaryActionPitchOverride;                      // 0x568(0x1)
-	char                                                         pad0x7_2KL8I[0x7];                                 // 0x569(0x7)
+	char                                                         pad0x7_V7R97[0x7];                                 // 0x569(0x7)
 	Struct AthenaAnimationObjectActionOneShotPitchOverride       ActionSecondarySinglePitchOverride;                // 0x570(0x20)
 	Struct AthenaAnimationObjectActionContinuousPitchOverride    ActionSecondaryContinuousPitchOverride;            // 0x590(0xf0)
 	Struct AthenaAnimationObjectMeleeV2                          MeleeV2;                                           // 0x680(0x140)
 	Class AnimSequence*                                          HandAdditive;                                      // 0x7c0(0x8)
 	float                                                        HandAdditiveDeactivationBlendTime;                 // 0x7c8(0x4)
-	char                                                         pad0x4_XEI79[0x4];                                 // 0x7cc(0x4)
+	char                                                         pad0x4_3V7BZ[0x4];                                 // 0x7cc(0x4)
 	Struct Transform                                             OffsetLeftHand;                                    // 0x7d0(0x30)
 	Struct Transform                                             OffsetRightHand;                                   // 0x800(0x30)
 	Struct WieldAnimationParams                                  Params;                                            // 0x830(0x40)
 	Struct AthenaAnimationObjectFacial                           Facial;                                            // 0x870(0x70)
 	bool                                                         RangedWeapon;                                      // 0x8e0(0x1)
 	bool                                                         UseAlternateAsTransition;                          // 0x8e1(0x1)
-	char                                                         pad0x6_ERFIV[0x6];                                 // 0x8e2(0x6)
+	char                                                         pad0x6_JCYDR[0x6];                                 // 0x8e2(0x6)
 	Struct AthenaAnimationSkeletonKnockbackLocomotionStrength    KnockBack;                                         // 0x8e8(0x20)
 	Class AnimSequence*                                          ScreamStun;                                        // 0x908(0x8)
 };
@@ -42396,10 +42837,10 @@ struct AthenaAnimationLoadObjectByID
 public:
 	int                                                          LoadedObjectID;                                    // 0x0(0x4)
 	bool                                                         ObjectFound;                                       // 0x4(0x1)
-	char                                                         pad0x3_RL51O[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_CC90G[0x3];                                 // 0x5(0x3)
 	class                                                        CharacterType;                                     // 0x8(0x8)
 	Class ScriptStruct*                                          DestinationStruct;                                 // 0x10(0x8)
-	char                                                         pad0x8_9T22O[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_PWYY8[0x8];                                 // 0x18(0x8)
 	Struct AthenaAnimationCoreObjectAnimations                   LoadedObjectAnimations;                            // 0x20(0x910)
 };
 
@@ -42516,7 +42957,7 @@ public:
 	Struct AthenaAnimationActiveItemComplexAnimData              AnimData;                                          // 0x18(0x38)
 	bool                                                         Attacking;                                         // 0x50(0x1)
 	bool                                                         NewAttack;                                         // 0x51(0x1)
-	char                                                         pad0x6_OBQBI[0x6];                                 // 0x52(0x6)
+	char                                                         pad0x6_BQFAQ[0x6];                                 // 0x52(0x6)
 	Struct AthenaAnimationWeaponData                             WeaponData;                                        // 0x58(0x48)
 };
 
@@ -42566,12 +43007,14 @@ public:
 };
 
 
-// Size 0x60
+// Size 0x68
 struct AthenaAnimationZiplineControlAnimData
 {
 public:
-	Class AnimSequenceBase*                                      Action;                                            // 0x0(0x8)
-	bool                                                         IsRidingZiplineAndAnimationsAreLoaded;             // 0x40(0x1)
+	Class AnimSequenceBase*                                      ActionToUse;                                       // 0x0(0x8)
+	Class AnimSequenceBase*                                      ActionFallback;                                    // 0x28(0x8)
+	char                                                         pad0x18_J23JQ[0x18];                               // 0x30(0x18)
+	bool                                                         IsRidingZipline;                                   // 0x48(0x1)
 };
 
 
@@ -42592,7 +43035,7 @@ struct AthenaAnimationShopInteractionAnimations
 {
 public:
 	byte                                                         ObjectType;                                        // 0x0(0x1)
-	char                                                         pad0x7_2ZKJ3[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_GL0MZ[0x7];                                 // 0x1(0x7)
 	Class AnimSequence*                                          Into;                                              // 0x8(0x8)
 	TArray<class AnimSequence*>                                  Loop;                                              // 0x10(0x10)
 	Class AnimSequence*                                          Out;                                               // 0x20(0x8)
@@ -42646,7 +43089,7 @@ struct AthenaAnimationTalking
 {
 public:
 	bool                                                         Talking;                                           // 0x0(0x1)
-	char                                                         pad0x3_LD77S[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_4IT4W[0x3];                                 // 0x1(0x3)
 };
 
 

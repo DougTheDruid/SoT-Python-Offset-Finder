@@ -14,7 +14,7 @@ GameEventAvailabilityData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_CT85D[0x6]
+  - Name: pad0x6_Q7LDB[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char
@@ -22,19 +22,104 @@ GameEventAvailabilityData:
     Offset: '0x18'
     Size: '0x8'
     Type: class
-  ClassSize: '0x20'
-GameEventOnDemandAnnouncementBannerData:
+  - Name: ParticipatingCrewIds
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<struct ParticipatingCrewIds>
+  ClassSize: '0x30'
+GameEventOnDemandActivatedTelemetryEvent:
   Attributes:
-  - Name: Header
+  - Name: NumCrewsOnDemandLimit
     Offset: '0x0'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: Message
-    Offset: '0x38'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: Tag
-    Offset: '0x70'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x4'
+GameEventOnDemandBaseTelemetryFragment:
+  Attributes:
+  - Name: GameEventType
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GameEventOnDemandId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x20'
+GameEventOnDemandBaseTelemetryFragmentInput:
+  Attributes:
+  - Name: GameEventType
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: GameEventOnDemandId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x20'
+GameEventOnDemandCrewCancelledVoyageTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x1'
+GameEventOnDemandCrewJoinedTelemetryEvent:
+  Attributes:
+  - Name: ShipType
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  ClassSize: '0x10'
+GameEventOnDemandCrewScuttledTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x1'
+GameEventOnDemandCrewSentToSinkingTunnel:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x10'
+GameEventOnDemandCrewSinkingTelemetryEvent:
+  Attributes: []
+  ClassSize: '0x1'
+GameEventOnDemandDeactivated:
+  Attributes:
+  - Name: OnDemandCrewIds
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<struct OnDemandCrewIds>
+  ClassSize: '0x10'
+GameEventOnDemandDeactivatedTelemetryEvent:
+  Attributes:
+  - Name: ShipSizeLimit
+    Offset: '0x0'
+    Size: '0x10'
+    Type: Struct FString
+  - Name: ParticipatingOnDemandCrews
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<struct ParticipatingOnDemandCrews>
+  - Name: ParticipatingCrews
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<struct ParticipatingCrews>
+  ClassSize: '0x30'
+SkellyFortGameEventOnDemandActivatedTelemetryEvent:
+  Attributes:
+  - Name: FortName
+    Offset: '0x4'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x78'
+  - Name: FortId
+    Offset: '0xc'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x1c'
+SkellyFortGameEventOnDemandDeactivatedTelemetryEvent:
+  Attributes:
+  - Name: FortName
+    Offset: '0x30'
+    Size: '0x8'
+    Type: struct FName
+  - Name: FortId
+    Offset: '0x38'
+    Size: '0x10'
+    Type: Struct Guid
+  ClassSize: '0x48'

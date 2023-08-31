@@ -1,24 +1,24 @@
 {
   "BP_ShipAmmoChest_C": {
-    "Super": "None",
+    "Super": "BP_AmmoChest_C",
     "FullSize": "0x4c8",
     "InheritedSize": "0x4b0",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "LockMesh",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
-        "Name": "None",
+        "Name": "CrewLockableComponent",
         "Type": "Class CrewLockableComponent*",
         "Size": "0x8",
         "Offset": "0x4b8"
       },
       {
-        "Name": "None",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x4c0"

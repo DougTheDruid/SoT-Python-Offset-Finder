@@ -2,63 +2,63 @@
 # https://github.com/DougTheDruid
 MapTable_C:
   Attributes:
-  - Name: None
-    Offset: '0x7a8'
-    Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x7b0'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: None
+    Type: Struct PointerToUberGraphFrame
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x7b8'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
+  - Name: NavBlocker
     Offset: '0x7c0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
+    Type: Class BoxComponent*
+  - Name: ControlPoint
     Offset: '0x7c8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x7d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x7d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x7e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x7e8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: ControlPoint
     Offset: '0x7f0'
     Size: '0x8'
-    Type: Class TextureFeedbackComponent*
-  - Name: None
+    Type: Class ChildActorComponent*
+  - Name: TextureFeedback
     Offset: '0x7f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: Class TextureFeedbackComponent*
+  - Name: Cube
     Offset: '0x800'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Map
     Offset: '0x808'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: ActiveRange
+    Offset: '0x810'
     Size: '0x4'
     Type: float
-  - Name: None
-    Offset: '0x80c'
+  - Name: IsActive
+    Offset: '0x814'
     Size: '0x1'
     Type: bool
   ClassSize: '0x65'
-  FullSize: '0x80d'
-  InheritedSize: '0x7a8'
+  FullSize: '0x815'
+  InheritedSize: '0x7b0'
   Super: MapTable

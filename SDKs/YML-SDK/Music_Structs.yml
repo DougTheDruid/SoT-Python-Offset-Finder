@@ -3,6 +3,39 @@
 MusicZoneDestroyedEvent:
   Attributes: []
   ClassSize: '0x10'
+MusicZoneEmitterRTPC:
+  Attributes:
+  - Name: RTPC
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Value
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xc'
+MusicZoneEmitterSwitch:
+  Attributes:
+  - Name: SwitchGroup
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Value
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+MusicZoneRemoteValues:
+  Attributes:
+  - Name: Switches
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<struct Switches>
+  - Name: RTPCs
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<struct RTPCs>
+  ClassSize: '0x20'
 MusicZoneSpawnedEvent:
   Attributes: []
   ClassSize: '0x10'

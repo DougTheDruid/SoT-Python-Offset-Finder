@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 BP_EmissaryTable_01_C:
   Attributes:
-  - Name: None
-    Offset: '0x5e0'
+  - Name: EmissaryActiveTableVisualiser
+    Offset: '0x688'
     Size: '0x8'
     Type: Class EmissaryActiveTableVisualiserComponent*
-  - Name: None
-    Offset: '0x5e8'
+  - Name: VoteAudio
+    Offset: '0x690'
     Size: '0x8'
     Type: Class VoteAudioComponent*
-  - Name: None
-    Offset: '0x5f0'
+  - Name: StaticMeshVoteVisualiser
+    Offset: '0x698'
     Size: '0x8'
     Type: Class StaticMeshVoteVisualiserComponent*
-  - Name: None
-    Offset: '0x5f8'
+  - Name: InlineVotingInteraction
+    Offset: '0x6a0'
     Size: '0x8'
     Type: Class InlineVotingInteractionComponent*
-  - Name: None
-    Offset: '0x600'
+  - Name: ActionRules
+    Offset: '0x6a8'
     Size: '0x8'
     Type: Class ActionRulesComponent*
-  - Name: None
-    Offset: '0x608'
+  - Name: VoteIndicator4
+    Offset: '0x6b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x610'
+  - Name: VoteIndicator3
+    Offset: '0x6b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x618'
+  - Name: VoteIndicator2
+    Offset: '0x6c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x620'
+  - Name: VoteIndicator1
+    Offset: '0x6c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x628'
+  - Name: bld_emissary_table_01_a
+    Offset: '0x6d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x630'
+  - Name: DefaultSceneRoot
+    Offset: '0x6d8'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x58'
-  FullSize: '0x638'
-  InheritedSize: '0x5e0'
+  FullSize: '0x6e0'
+  InheritedSize: '0x688'
   Super: EmissaryVoteInteractionActor

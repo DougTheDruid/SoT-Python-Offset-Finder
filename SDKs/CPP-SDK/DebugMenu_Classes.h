@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class DebugMenuComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_P2QI2[0x28];                               // 0xc8(0x28)
+	char                                                         pad0x28_N79MA[0x28];                               // 0xc8(0x28)
 	Class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
-	char                                                         pad0x20_5JQ7Y[0x20];                               // 0xf8(0x20)
+	char                                                         pad0x20_PFDQX[0x20];                               // 0xf8(0x20)
 };
 
 

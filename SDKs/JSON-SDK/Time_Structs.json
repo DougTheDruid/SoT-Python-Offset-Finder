@@ -52,6 +52,10 @@
     "ClassSize": "0x8",
     "Attributes": []
   },
+  "EventTimeServiceMigrated": {
+    "ClassSize": "0x1",
+    "Attributes": []
+  },
   "EventSetDateTime": {
     "ClassSize": "0x14",
     "Attributes": [

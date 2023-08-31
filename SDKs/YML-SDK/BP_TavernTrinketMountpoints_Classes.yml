@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_TavernTrinketMountpoints_C:
   Attributes:
-  - Name: None
+  - Name: TrinketLoadout
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class TrinketLoadoutComponent*
-  - Name: None
+  - Name: BasicTrinketMountpointManager
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class TrinketMountpointManagerComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class SceneComponent*

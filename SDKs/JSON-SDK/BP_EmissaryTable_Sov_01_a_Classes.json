@@ -1,195 +1,195 @@
 {
   "BP_EmissaryTable_Sov_01_a_C": {
-    "Super": "None",
-    "FullSize": "0x730",
-    "InheritedSize": "0x638",
+    "Super": "BP_EmissaryTable_01_C",
+    "FullSize": "0x7d8",
+    "InheritedSize": "0x6e0",
     "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "PointLight3",
         "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x638"
-      },
-      {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x648"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x650"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x658"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x660"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x668"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x670"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x678"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x680"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x688"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x690"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x698"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6a0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6a8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6b0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6b8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6c0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6c8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x6d0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x6d8"
-      },
-      {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "PointLight2",
+        "Type": "Class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
-        "Name": "None",
+        "Name": "ParticleSystem7",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "ParticleSystem6",
+        "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "None",
+        "Name": "cap_desk_model_pol_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x700"
       },
       {
-        "Name": "None",
+        "Name": "bld_sovereign_sigil_02_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh6",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x710"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh12",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x718"
       },
       {
-        "Name": "None",
-        "Type": "Class EmissaryShipAffiliationTrackerComponent*",
+        "Name": "StaticMesh11",
+        "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x720"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh10",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x728"
+      },
+      {
+        "Name": "StaticMesh9",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x730"
+      },
+      {
+        "Name": "StaticMesh8",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "StaticMesh7",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x740"
+      },
+      {
+        "Name": "trs_coin_02_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x748"
+      },
+      {
+        "Name": "cap_plinth_01_c",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "gmp_tal_wildrose_scroll_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "cap_cabin_books_aged_01_a_proxy",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "cap_inkwell_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "gmp_parchment_scroll_01_c",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "ParticleSystem5",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "ParticleSystem4",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "StaticMesh4",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "ParticleSystem3",
+        "Type": "Class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Name": "StaticMesh1",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "StaticMesh3",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "trs_gold_ingot_01_a5",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      },
+      {
+        "Name": "StaticMesh2",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Name": "Candlestick",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "EmissaryShipAffiliationTracker",
+        "Type": "Class EmissaryShipAffiliationTrackerComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Name": "con_cover_page_gld_01_a",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
       }
     ]
   },

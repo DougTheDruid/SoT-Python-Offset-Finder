@@ -1,9 +1,9 @@
 {
   "GameEventAvailabilityParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x88",
+    "FullSize": "0x90",
     "InheritedSize": "0x28",
-    "ClassSize": "0x60",
+    "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "MatchmakingCooldownRanges",
@@ -36,18 +36,24 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_85CMN[0x7]",
+        "Name": "pad0x3_LLQK4[0x3]",
         "Type": "char",
-        "Size": "0x7",
+        "Size": "0x3",
         "Offset": "0x81"
+      },
+      {
+        "Name": "SendCrewToLoserTunnelFeature",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x84"
       }
     ]
   },
   "GameEventOnDemandAnnouncementComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x248",
+    "FullSize": "0x180",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x180",
+    "ClassSize": "0xb8",
     "Attributes": [
       {
         "Name": "FeatureFlag",
@@ -62,7 +68,7 @@
         "Offset": "0xd4"
       },
       {
-        "Name": "pad0x3_AUJUI[0x3]",
+        "Name": "pad0x3_1LK98[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd5"
@@ -92,54 +98,66 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x48_7KZ6U[0x48]",
-        "Type": "char",
-        "Size": "0x48",
+        "Name": "GameEventType",
+        "Type": "class",
+        "Size": "0x8",
         "Offset": "0x110"
       },
       {
-        "Name": "OnCrewJoinedGameEventBannerData",
-        "Type": "Struct GameEventOnDemandAnnouncementBannerData",
-        "Size": "0x78",
-        "Offset": "0x158"
+        "Name": "pad0x5c_MBEAT[0x5c]",
+        "Type": "char",
+        "Size": "0x5c",
+        "Offset": "0x118"
       },
       {
-        "Name": "OnGameEventCompletedBannerData",
-        "Type": "Struct GameEventOnDemandAnnouncementBannerData",
-        "Size": "0x78",
-        "Offset": "0x1d0"
+        "Name": "TemporaryBannerTag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x174"
+      },
+      {
+        "Name": "pad0x4_32UQN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x17c"
       }
     ]
   },
   "GameEventOnDemandAvailabilityStateTracker": {
     "Super": "Object",
-    "FullSize": "0x100",
+    "FullSize": "0x150",
     "InheritedSize": "0x28",
-    "ClassSize": "0xd8",
+    "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x78_JLEWV[0x78]",
+        "Name": "pad0x88_VSWRQ[0x88]",
         "Type": "char",
-        "Size": "0x78",
+        "Size": "0x88",
         "Offset": "0x28"
       },
       {
         "Name": "ShipTypeLimit",
         "Type": "class",
         "Size": "0x8",
-        "Offset": "0xa0"
+        "Offset": "0xb0"
       },
       {
         "Name": "ParticipatingCrewIds",
         "Type": "TArray<struct ParticipatingCrewIds>",
         "Size": "0x10",
-        "Offset": "0xa8"
+        "Offset": "0xb8"
       },
       {
-        "Name": "pad0x48_8QM3Q[0x48]",
+        "Name": "PreparingToJoinCrewIds",
+        "Type": "TArray<struct PreparingToJoinCrewIds>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x78_FQQ8H[0x78]",
         "Type": "char",
-        "Size": "0x48",
-        "Offset": "0xb8"
+        "Size": "0x78",
+        "Offset": "0xd8"
       }
     ]
   },

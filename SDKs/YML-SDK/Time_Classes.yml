@@ -9,8 +9,8 @@ CustomizableTimeInterface:
 CustomizableTimeService:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x500'
-  InheritedSize: '0x4f8'
+  FullSize: '0x508'
+  InheritedSize: '0x500'
   Super: DebugTimeService
 DebugTimeInterface:
   Attributes: []
@@ -21,8 +21,8 @@ DebugTimeInterface:
 DebugTimeService:
   Attributes: []
   ClassSize: '0x8'
-  FullSize: '0x4f8'
-  InheritedSize: '0x4f0'
+  FullSize: '0x500'
+  InheritedSize: '0x4f8'
   Super: TimeService
 LocationProviderInterface:
   Attributes: []
@@ -50,7 +50,7 @@ TimeInterface:
   Super: Interface
 TimeService:
   Attributes:
-  - Name: pad0x38_BVIG5[0x38]
+  - Name: pad0x38_GVR01[0x38]
     Offset: '0x3c8'
     Size: '0x38'
     Type: char
@@ -58,7 +58,7 @@ TimeService:
     Offset: '0x400'
     Size: '0x8'
     Type: Struct Timespan
-  - Name: pad0x4_50SSU[0x4]
+  - Name: pad0x4_0A2C6[0x4]
     Offset: '0x408'
     Size: '0x4'
     Type: char
@@ -110,11 +110,11 @@ TimeService:
     Offset: '0x498'
     Size: '0x10'
     Type: Struct ReplicatedAuthoritativeTime
-  - Name: pad0x48_8CRYA[0x48]
+  - Name: pad0x50_9NS9V[0x50]
     Offset: '0x4a8'
-    Size: '0x48'
+    Size: '0x50'
     Type: char
-  ClassSize: '0x128'
-  FullSize: '0x4f0'
+  ClassSize: '0x130'
+  FullSize: '0x4f8'
   InheritedSize: '0x3c8'
   Super: Actor

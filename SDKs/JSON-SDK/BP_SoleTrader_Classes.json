@@ -1,27 +1,27 @@
 {
   "BP_SoleTrader_C": {
     "Super": "CompanyShopkeeper",
-    "FullSize": "0x6d0",
-    "InheritedSize": "0x6b8",
+    "FullSize": "0x6f0",
+    "InheritedSize": "0x6d8",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "SolidHits",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x6b8"
+        "Offset": "0x6d8"
       },
       {
-        "Name": "None",
+        "Name": "NPCDialog",
         "Type": "Class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x6c0"
+        "Offset": "0x6e0"
       },
       {
-        "Name": "None",
+        "Name": "AnimNotifyWwiseEmitter",
         "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6c8"
+        "Offset": "0x6e8"
       }
     ]
   },

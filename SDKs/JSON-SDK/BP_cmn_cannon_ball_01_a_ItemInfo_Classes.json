@@ -1,15 +1,15 @@
 {
   "BP_cmn_cannon_ball_01_a_ItemInfo_C": {
     "Super": "ProjectileItemInfo",
-    "FullSize": "0x520",
-    "InheritedSize": "0x518",
+    "FullSize": "0x538",
+    "InheritedSize": "0x530",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DefaultSceneRoot",
+        "Name": "None",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x518"
+        "Offset": "0x530"
       }
     ]
   },

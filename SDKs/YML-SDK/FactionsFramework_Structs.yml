@@ -25,7 +25,7 @@ CrewFactionEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NF767[0x3]
+  - Name: pad0x3_NXMEU[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -64,7 +64,7 @@ CrewFactionEntryData:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_5EZIQ[0x4]
+  - Name: pad0x4_XPUS6[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ CrewFactionEntryData:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AV1IS[0x7]
+  - Name: pad0x7_8792Q[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -88,7 +88,7 @@ CrewFactionEntryData:
     Offset: '0x50'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_T1VM8[0x4]
+  - Name: pad0x4_L2R3S[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -300,7 +300,7 @@ FactionWaitTimesData:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_498NN[0x6]
+  - Name: pad0x6_WTLKV[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char

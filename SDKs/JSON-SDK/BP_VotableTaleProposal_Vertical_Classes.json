@@ -6,64 +6,52 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "UberGraphFrame",
+        "Name": "None",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "Token 1",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
-        "Name": "Token 4",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
-        "Name": "Token 3",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
-        "Name": "Token 2",
+        "Name": "None",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
-        "Name": "Tokens",
+        "Name": "None",
         "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x518"
       },
       {
-        "Name": "Token Asset",
+        "Name": "None",
         "Type": "Class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
-        "Name": "VoteCount",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "pad0x10_XIZFK[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x530"
-      },
-      {
-        "Name": "Show Token Animation Time",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x534"
-      },
-      {
-        "Name": "Token Material",
-        "Type": "Class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x538"
       }
     ]
   },

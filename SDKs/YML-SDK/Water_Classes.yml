@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 AthenaFFTWater:
   Attributes: []
-  ClassSize: '0x28'
-  FullSize: '0x438'
+  ClassSize: '0x48'
+  FullSize: '0x458'
   InheritedSize: '0x410'
   Super: FFTWater
 AthenaWaterEmissionVolume:
@@ -20,7 +20,7 @@ FFTWaterInterface:
   Super: Interface
 FFTWaterService:
   Attributes:
-  - Name: pad0x78_1HTLD[0x78]
+  - Name: pad0x78_ZNBU1[0x78]
     Offset: '0x3c8'
     Size: '0x78'
     Type: char
@@ -84,7 +84,7 @@ SplashProbeDataAsset:
   Super: DataAsset
 SplashProbeVFXComponent:
   Attributes:
-  - Name: pad0x28_JR6HK[0x28]
+  - Name: pad0x28_WESTC[0x28]
     Offset: '0xc8'
     Size: '0x28'
     Type: char
@@ -108,7 +108,7 @@ SplashProbeVFXComponent:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2EEGB[0x7]
+  - Name: pad0x7_WK7L5[0x7]
     Offset: '0x119'
     Size: '0x7'
     Type: char
@@ -212,7 +212,7 @@ WaterSpoutVFXComponent:
     Offset: '0xd8'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_824QL[0x4]
+  - Name: pad0x4_L9KI0[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -244,7 +244,7 @@ WaterSpoutVFXComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_9QQ1V[0x7]
+  - Name: pad0x7_3HSWO[0x7]
     Offset: '0x109'
     Size: '0x7'
     Type: char
@@ -256,7 +256,7 @@ WaterSpoutVFXComponent:
     Offset: '0x118'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_TJQ02[0x4]
+  - Name: pad0x4_42QDK[0x4]
     Offset: '0x124'
     Size: '0x4'
     Type: char
@@ -268,7 +268,7 @@ WaterSpoutVFXComponent:
     Offset: '0x130'
     Size: '0x10'
     Type: TArray<struct ActiveWaterSpouts>
-  - Name: pad0x18_AL8Q0[0x18]
+  - Name: pad0x18_MKM5I[0x18]
     Offset: '0x140'
     Size: '0x18'
     Type: char

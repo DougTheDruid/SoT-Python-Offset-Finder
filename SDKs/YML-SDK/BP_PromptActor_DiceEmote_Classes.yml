@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_PromptActor_DiceEmote_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: PromptCoordinator
     Offset: '0x408'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
+    Type: BlueprintGeneratedClass BP_PromptCoordinator_DiceEmote_C*
   ClassSize: '0x10'
   FullSize: '0x410'
   InheritedSize: '0x400'
-  Super: None
+  Super: BP_PromptActorBase_C

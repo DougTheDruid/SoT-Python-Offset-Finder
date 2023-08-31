@@ -6,7 +6,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_H07MJ[0x8]",
+        "Name": "pad0x8_2X7H6[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -18,7 +18,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x38_Z0I9U[0x38]",
+        "Name": "pad0x38_CZJPZ[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x38"
@@ -101,7 +101,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_TZXB5[0x8]",
+        "Name": "pad0x8_2N2JS[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -121,7 +121,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_ITHXU[0x8]",
+        "Name": "pad0x8_0M5C0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -141,7 +141,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x10_OFABY[0x10]",
+        "Name": "pad0x10_PB7KY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x98"
@@ -159,7 +159,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x10_AYK2M[0x10]",
+        "Name": "pad0x10_IL7T9[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
@@ -171,7 +171,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0xa8_HOPQD[0xa8]",
+        "Name": "pad0xa8_T5X0F[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xe0"
@@ -180,12 +180,12 @@
   },
   "TaleQuestSpawnAICustomRootStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x158",
+    "FullSize": "0x168",
     "InheritedSize": "0x80",
-    "ClassSize": "0xd8",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "pad0x8_68Z0A[0x8]",
+        "Name": "pad0x8_8B8C2[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x80"
@@ -211,20 +211,20 @@
       {
         "Name": "PreSpawnTaskData",
         "Type": "Struct SpawnAICustomPreSpawnTaskData",
-        "Size": "0x68",
+        "Size": "0x78",
         "Offset": "0xb8"
       },
       {
         "Name": "OnSpawnTaskData",
         "Type": "Struct SpawnAICustomOnSpawnTaskData",
         "Size": "0x18",
-        "Offset": "0x120"
+        "Offset": "0x130"
       },
       {
         "Name": "OnDespawnTaskData",
         "Type": "Struct SpawnAICustomOnDespawnTaskData",
         "Size": "0x20",
-        "Offset": "0x138"
+        "Offset": "0x148"
       }
     ]
   },
@@ -242,7 +242,7 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x8_7LIR0[0x8]",
+        "Name": "pad0x8_6M6W7[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x80"
@@ -280,7 +280,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_O52LG[0x8]",
+        "Name": "pad0x8_GCK1W[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -292,7 +292,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x40_6KLC0[0x40]",
+        "Name": "pad0x40_1859Z[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x38"
@@ -306,7 +306,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x10_P6N2Q[0x10]",
+        "Name": "pad0x10_X3G30[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
@@ -326,7 +326,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x10_MAVML[0x10]",
+        "Name": "pad0x10_ZST7H[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
@@ -338,7 +338,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x80_6VWW4[0x80]",
+        "Name": "pad0x80_EEPJI[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xa0"
@@ -347,12 +347,12 @@
   },
   "TaleQuestSpawnAICustomPreSpawnTask": {
     "Super": "TaleQuestSpawnAICustomTaskBase",
-    "FullSize": "0x100",
+    "FullSize": "0x110",
     "InheritedSize": "0x78",
-    "ClassSize": "0x88",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x18_L1HN3[0x18]",
+        "Name": "pad0x18_ZT29R[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x78"
@@ -360,14 +360,14 @@
       {
         "Name": "TaskData",
         "Type": "Struct SpawnAICustomPreSpawnTaskData",
-        "Size": "0x68",
+        "Size": "0x78",
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x8_4L2PB[0x8]",
+        "Name": "pad0x8_984HL[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0xf8"
+        "Offset": "0x108"
       }
     ]
   },
@@ -384,7 +384,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_FM6AA[0x10]",
+        "Name": "pad0x10_N6SHY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x90"
@@ -404,7 +404,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_08OUK[0x10]",
+        "Name": "pad0x10_TBZIM[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x80"
@@ -424,7 +424,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_Q3XC1[0x10]",
+        "Name": "pad0x10_1EQOD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x88"

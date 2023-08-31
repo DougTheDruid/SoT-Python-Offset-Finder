@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_MysteriousNote_C:
   Attributes:
-  - Name: None
+  - Name: ZoomInOnWieldableItem
     Offset: '0x980'
     Size: '0x8'
     Type: Class ZoomInOnWieldableItemComponent*

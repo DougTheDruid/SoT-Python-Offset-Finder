@@ -14,7 +14,7 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RS2PZ[0x4]
+  - Name: pad0x4_UEZCT[0x4]
     Offset: '0xdc'
     Size: '0x4'
     Type: char
@@ -22,7 +22,7 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_5O2IF[0xef]
+  - Name: pad0xef_USU48[0xef]
     Offset: '0x121'
     Size: '0xef'
     Type: char
@@ -48,7 +48,7 @@ MultiTargetEnchantedCompass:
     Offset: '0x900'
     Size: '0x8'
     Type: Class EnchantedCompassProximityAnnouncementComponent*
-  - Name: pad0x8_ZO6DT[0x8]
+  - Name: pad0x8_NCKXK[0x8]
     Offset: '0x908'
     Size: '0x8'
     Type: char
@@ -92,7 +92,7 @@ RotatingCompass:
     Offset: '0x9f8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_N6IF3[0x3]
+  - Name: pad0x3_GKI3F[0x3]
     Offset: '0x9f9'
     Size: '0x3'
     Type: char
@@ -104,7 +104,7 @@ RotatingCompass:
     Offset: '0xa00'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_BYXIV[0xc]
+  - Name: pad0xc_JTIG3[0xc]
     Offset: '0xa04'
     Size: '0xc'
     Type: char
@@ -190,7 +190,7 @@ TaleQuestRotatingCompassService:
     Offset: '0x68'
     Size: '0x8'
     Type: Class RotatingCompass*
-  - Name: pad0x98_881N0[0x98]
+  - Name: pad0x98_GTW2R[0x98]
     Offset: '0x70'
     Size: '0x98'
     Type: char
@@ -226,7 +226,7 @@ TaleQuestSetCompassTargetBaseStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_J7FD1[0x7]
+  - Name: pad0x7_NMYY8[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char

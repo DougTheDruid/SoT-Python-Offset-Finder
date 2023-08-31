@@ -21,7 +21,11 @@ OnEndZiplineActionStateEvent:
     Offset: '0x8'
     Size: '0x8'
     Type: Class WwiseEvent*
-  ClassSize: '0x10'
+  - Name: DetachFromZiplineAdditiveOneShot
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class WwiseEvent*
+  ClassSize: '0x18'
 OnExitedRideEvent:
   Attributes: []
   ClassSize: '0x1'
@@ -52,7 +56,7 @@ OnStartZiplineActionStateEvent:
     Offset: '0x0'
     Size: '0x8'
     Type: Class WwiseEvent*
-  - Name: ZiplineAdditiveOneShot
+  - Name: AttachToZiplineAdditiveOneShot
     Offset: '0x8'
     Size: '0x8'
     Type: Class WwiseEvent*
@@ -82,7 +86,7 @@ RideTransitionActionStateConstructionInfo:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ZD8Y5[0x3]
+  - Name: pad0x3_WNPZM[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -115,7 +119,7 @@ WaterSlideActionStateParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UDY8M[0x3]
+  - Name: pad0x3_POGMF[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -154,7 +158,7 @@ WaterSlideParams:
     Offset: '0x18'
     Size: '0x4'
     Type: Struct PlayerStat
-  - Name: pad0x4_27XAE[0x4]
+  - Name: pad0x4_YUVSU[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -180,7 +184,19 @@ ZiplineActionStateConstructionInfo:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x40'
+  - Name: InitialSwingDirection
+    Offset: '0x39'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x6_CKNUV[0x6]
+    Offset: '0x3a'
+    Size: '0x6'
+    Type: char
+  - Name: ZiplineStartSmoothedTime
+    Offset: '0x40'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x48'
 ZiplineFeelParameters:
   Attributes:
   - Name: MaxSpeed
@@ -203,7 +219,7 @@ ZiplineFeelParameters:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_V6CY0[0x4]
+  - Name: pad0x4_1KDQ7[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

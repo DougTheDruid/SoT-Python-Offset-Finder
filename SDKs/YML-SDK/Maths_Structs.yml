@@ -26,6 +26,9 @@ FixedStepInterpCurveVector2D:
     Size: '0x1'
     Type: bool
   ClassSize: '0x18'
+GrabBag:
+  Attributes: []
+  ClassSize: '0x20'
 InertialSmoothedFloat:
   Attributes:
   - Name: AccelerationMagnitude
@@ -70,7 +73,7 @@ Pendulum:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N9R6I[0x3]
+  - Name: pad0x3_XMJHG[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -98,7 +101,7 @@ Pendulum:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_QX7KS[0xc]
+  - Name: pad0xc_8VZLL[0xc]
     Offset: '0x24'
     Size: '0xc'
     Type: char

@@ -50,7 +50,7 @@ AudioPortalComponent:
     Offset: '0x2ec'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FE0ZP[0x3]
+  - Name: pad0x3_I84OJ[0x3]
     Offset: '0x2ed'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ AudioPortalComponent:
     Offset: '0x310'
     Size: '0x8'
     Type: Class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x28_1KNXW[0x28]
+  - Name: pad0x28_78BYQ[0x28]
     Offset: '0x318'
     Size: '0x28'
     Type: char
@@ -108,7 +108,7 @@ AudioSpaceComponent:
     Offset: '0x630'
     Size: '0x8'
     Type: Class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x18_DCEBL[0x18]
+  - Name: pad0x18_OWSJL[0x18]
     Offset: '0x638'
     Size: '0x18'
     Type: char
@@ -132,7 +132,7 @@ MultiEmitter:
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class MultiEmitterRootComponent*
-  - Name: pad0x8_MB9JB[0x8]
+  - Name: pad0x8_GVALE[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -146,7 +146,7 @@ StoryDrivenAudioPortalDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: Struct FeatureFlag
-  - Name: pad0x4_03JFY[0x4]
+  - Name: pad0x4_5MOQO[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -188,7 +188,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x310'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x14_K2IE6[0x14]
+  - Name: pad0x14_R9F8I[0x14]
     Offset: '0x31c'
     Size: '0x14'
     Type: char
@@ -196,7 +196,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x330'
     Size: '0x8'
     Type: Class Character*
-  - Name: pad0x38_J7I4B[0x38]
+  - Name: pad0x38_WRLTA[0x38]
     Offset: '0x338'
     Size: '0x38'
     Type: char

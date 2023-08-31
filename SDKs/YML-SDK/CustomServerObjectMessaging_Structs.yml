@@ -129,7 +129,7 @@ ItemSpawnCustomServerEvent:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1YJDA[0x4]
+  - Name: pad0x4_ZIQN1[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -273,7 +273,7 @@ OnQuestStartedCustomServerEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ZP3Y4[0x3]
+  - Name: pad0x3_EYCK7[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -303,7 +303,7 @@ OnVoyageAcceptedCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ZVKW3[0x4]
+  - Name: pad0x4_EPQ6Z[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -329,7 +329,7 @@ OnVoyageStartedCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OWQUD[0x4]
+  - Name: pad0x4_9GFAW[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

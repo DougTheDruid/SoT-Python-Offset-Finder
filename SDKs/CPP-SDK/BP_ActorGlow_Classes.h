@@ -14,7 +14,7 @@ public:
 	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
 	TArray<class MaterialInstanceDynamic*>                       DecalMaterials;                                    // 0x3e0(0x10)
 	float                                                        Reveal Duration;                                   // 0x3f0(0x4)
-	char                                                         pad0x4_OXT42[0x4];                                 // 0x3f4(0x4)
+	char                                                         pad0x4_780YG[0x4];                                 // 0x3f4(0x4)
 	BlueprintGeneratedClass BP_StepsTrigger_C*                   StepsTriggerActor;                                 // 0x3f8(0x8)
 };
 

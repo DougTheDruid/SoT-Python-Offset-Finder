@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_Projectile_CannonBall_C: public CannonProjectile
 {
 public:
-	Class SphereCollisionExtentAdjustOverTimeComponent*          None;                                              // 0x650(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x658(0x8)
-	Class SphereComponent*                                       None;                                              // 0x660(0x8)
+	Class SphereCollisionExtentAdjustOverTimeComponent*          SphereCollisionExtentAdjustOverTime;               // 0x650(0x8)
+	Class StaticMeshComponent*                                   CannonBall;                                        // 0x658(0x8)
+	Class SphereComponent*                                       Collision;                                         // 0x660(0x8)
 };
 
 

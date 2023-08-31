@@ -17,9 +17,9 @@ public:
 class CustomItemService: public Object
 {
 public:
-	char                                                         pad0x8_4O9LI[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_R50MB[0x8];                                 // 0x28(0x8)
 	Class World*                                                 World;                                             // 0x30(0x8)
-	char                                                         pad0x18_8D2FG[0x18];                               // 0x38(0x18)
+	char                                                         pad0x18_LPTLU[0x18];                               // 0x38(0x18)
 };
 
 

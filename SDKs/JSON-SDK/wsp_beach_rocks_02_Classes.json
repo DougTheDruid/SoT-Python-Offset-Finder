@@ -1,84 +1,84 @@
 {
   "wsp_beach_rocks_02_C": {
-    "Super": "None",
+    "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x470",
     "InheritedSize": "0x408",
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__c10",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__e4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__e3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__c6",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__c5",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__c9",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__c8",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__c7",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__c4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_xtra_small__e2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_cliff_o8",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
-        "Name": "None",
+        "Name": "wsp_rock_cliff_o9",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
-        "Name": "None",
+        "Name": "Scene",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x468"

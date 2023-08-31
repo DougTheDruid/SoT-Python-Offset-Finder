@@ -13,13 +13,23 @@ public:
 };
 
 
-// Size 0x20
+// Size 0x28
 struct TradeRouteMapping
 {
 public:
-	Struct IslandSelectionType                                   StartIsland;                                       // 0x0(0x8)
-	class                                                        DifficultyBand;                                    // 0x8(0x8)
-	Struct StringAssetReference                                  TradeRouteReference;                               // 0x10(0x10)
+	byte                                                         Filter;                                            // 0x0(0x1)
+	char                                                         pad0x3_R8MQQ[0x3];                                 // 0x1(0x3)
+	Struct IslandSelectionType                                   StartIsland;                                       // 0x4(0x8)
+	char                                                         pad0x4_90QUC[0x4];                                 // 0xc(0x4)
+	class                                                        DifficultyBand;                                    // 0x10(0x8)
+	Struct StringAssetReference                                  TradeRouteReference;                               // 0x18(0x10)
+};
+
+
+// Size 0x30
+struct TradeRouteMappingFilterQuestVariable
+{
+public:
 };
 
 

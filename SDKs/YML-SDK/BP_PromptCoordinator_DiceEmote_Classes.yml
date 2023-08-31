@@ -2,35 +2,39 @@
 # https://github.com/DougTheDruid
 BP_PromptCoordinator_DiceEmote_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x138'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: pad0x117_BJJRU[0x117]
+    Offset: '0x140'
+    Size: '0x117'
+    Type: char
+  - Name: DiceEmotePromptAccessKey
     Offset: '0x140'
     Size: '0x8'
     Type: class
-  - Name: None
+  - Name: EmoteStartedEvent
     Offset: '0x148'
     Size: '0x58'
     Type: Struct ObjectMessagingHandle
-  - Name: None
+  - Name: Prompt
     Offset: '0x1a0'
     Size: '0x70'
     Type: Struct PrioritisedPromptWithHandle
-  - Name: None
+  - Name: StartedDiceEmote
     Offset: '0x210'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ZLS2Q[0x7]
+  - Name: pad0x7_MH93Z[0x7]
     Offset: '0x211'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: CharacterDispatcher
     Offset: '0x218'
     Size: '0x8'
     Type: Struct ObjectMessagingDispatcherHandle
-  - Name: None
+  - Name: HasShown
     Offset: '0x220'
     Size: '0x1'
     Type: bool

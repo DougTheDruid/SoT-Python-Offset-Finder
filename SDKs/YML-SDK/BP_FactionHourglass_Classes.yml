@@ -2,83 +2,83 @@
 # https://github.com/DougTheDruid
 BP_FactionHourglass_C:
   Attributes:
-  - Name: None
+  - Name: MaterialManipulation
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class MaterialManipulationComponent*
-  - Name: None
+  - Name: Explosion
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class ExplosionComponent*
-  - Name: None
+  - Name: FactionVoteAudio
     Offset: '0x4d0'
     Size: '0x8'
     Type: Class FactionVoteAudioComponent*
-  - Name: None
+  - Name: FactionInteractionVote
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class FactionInteractionVoteComponent*
-  - Name: None
+  - Name: HourglassStand
     Offset: '0x4e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: ParticlesFactionG
     Offset: '0x4e8'
     Size: '0x8'
     Type: Class FactionParticleComponent*
-  - Name: None
+  - Name: ParticlesFactionB
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class FactionParticleComponent*
-  - Name: None
+  - Name: FactionFlipMesh
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class FactionFlipMeshComponent*
-  - Name: None
+  - Name: FH_VoteIndicator4
     Offset: '0x500'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: PL_VoteIndicator4
     Offset: '0x508'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: FH_VoteIndicator3
     Offset: '0x510'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: PL_VoteIndicator3
     Offset: '0x518'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: FH_VoteIndicator2
     Offset: '0x520'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: PL_VoteIndicator2
     Offset: '0x528'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: FH_VoteIndicator1
     Offset: '0x530'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: PL_VoteIndicator1
     Offset: '0x538'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x540'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: EmissaryActiveTableVisualiser
     Offset: '0x548'
     Size: '0x8'
     Type: Class EmissaryActiveTableVisualiserComponent*
-  - Name: None
+  - Name: StaticMeshVoteVisualiser
     Offset: '0x550'
     Size: '0x8'
     Type: Class StaticMeshVoteVisualiserComponent*
-  - Name: None
+  - Name: ActionRules
     Offset: '0x558'
     Size: '0x8'
     Type: Class ActionRulesComponent*

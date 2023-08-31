@@ -39,6 +39,13 @@ CriticalActorWrapper:
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x40'
+EndOnScreenParticlesRpc:
+  Attributes:
+  - Name: Particles
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  ClassSize: '0x18'
 EventModalInteractionStateChanged:
   Attributes:
   - Name: IsInteractionBlocked
@@ -285,7 +292,7 @@ SnapshottedActorData:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_2ESP1[0x6]
+  - Name: pad0x6_1NE9P[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -376,7 +383,7 @@ TaleQuestDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_CFIEO[0x4]
+  - Name: pad0x4_MXQKA[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -470,7 +477,7 @@ TaleQuestQueryableStateDataInfo:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_GNHWV[0x3]
+  - Name: pad0x3_1PMGR[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -566,3 +573,10 @@ TrackedActorData:
     Size: '0x8'
     Type: Class Actor*
   ClassSize: '0x10'
+TriggerOnScreenParticlesRpc:
+  Attributes:
+  - Name: Particles
+    Offset: '0x10'
+    Size: '0x8'
+    Type: Class ParticleSystem*
+  ClassSize: '0x18'

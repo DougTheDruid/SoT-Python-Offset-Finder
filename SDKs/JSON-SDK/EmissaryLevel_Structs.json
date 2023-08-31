@@ -79,7 +79,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_61B9U[0x4]",
+        "Name": "pad0x4_W3TC0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -185,7 +185,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_2C7YY[0x4]",
+        "Name": "pad0x4_8V46J[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -237,7 +237,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_4TT70[0x4]",
+        "Name": "pad0x4_3X9MH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -373,6 +373,29 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
+      }
+    ]
+  },
+  "EmissaryMaxRankQuestProviderQuestOverrides": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "FeatureFlag",
+        "Type": "Struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_4LIII[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "QuestDesc",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -524,7 +547,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_UCBM5[0x3]",
+        "Name": "pad0x3_QLVP1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -547,7 +570,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_Z327R[0x3]",
+        "Name": "pad0x3_0G9AL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -582,7 +605,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_UTTEU[0x1]",
+        "Name": "pad0x1_L4N3Y[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -622,7 +645,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_GA25R[0x4]",
+        "Name": "pad0x4_FKIM0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -898,7 +921,7 @@
     ]
   },
   "EmissarySunkNetworkEvent": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "PopUpDesc",
@@ -911,17 +934,29 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
+      },
+      {
+        "Name": "GuildId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
   "EmissaryMaxLevelReachedNetworkEvent": {
-    "ClassSize": "0x18",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "PopUpDesc",
         "Type": "Class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "GuildId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -1018,7 +1053,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_90YUZ[0x3]",
+        "Name": "pad0x3_7RNPT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -1088,7 +1123,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_11CO7[0x3]",
+        "Name": "pad0x3_8VI6G[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -1206,7 +1241,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_D6Y3C[0x3]",
+        "Name": "pad0x3_LB03V[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
@@ -1255,7 +1290,7 @@
     ]
   },
   "EmissarySessionStartTelemetryEvent": {
-    "ClassSize": "0x1c",
+    "ClassSize": "0x2c",
     "Attributes": [
       {
         "Name": "EmissarySessionId",
@@ -1274,6 +1309,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
+      },
+      {
+        "Name": "GuildId",
+        "Type": "Struct Guid",
+        "Size": "0x10",
+        "Offset": "0x1c"
       }
     ]
   },

@@ -1,15 +1,15 @@
 {
   "BP_MermaidService_C": {
     "Super": "MermaidService",
-    "FullSize": "0x560",
-    "InheritedSize": "0x558",
+    "FullSize": "0x5f8",
+    "InheritedSize": "0x5f0",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x5f0"
       }
     ]
   },

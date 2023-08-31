@@ -1,27 +1,27 @@
 {
   "BP_wpn_cutlass_smp_01_a_v03_Wieldable_C": {
-    "Super": "None",
-    "FullSize": "0xb60",
-    "InheritedSize": "0xb48",
+    "Super": "BP_Cutlass_Item_C",
+    "FullSize": "0xb70",
+    "InheritedSize": "0xb58",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0xb48"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0xb50"
-      },
-      {
-        "Name": "None",
+        "Name": "shroud_fp",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xb58"
+      },
+      {
+        "Name": "shroudmask_tp",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb60"
+      },
+      {
+        "Name": "shroud_tp",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xb68"
       }
     ]
   },

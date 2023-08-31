@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AsymmetricClientObject:
   Attributes:
-  - Name: pad0x18_EQL1Y[0x18]
+  - Name: pad0x18_SX9NK[0x18]
     Offset: '0x3c8'
     Size: '0x18'
     Type: char
@@ -40,7 +40,7 @@ AsymmetricClientObject:
   Super: Actor
 AsymmetricObjectServerManager:
   Attributes:
-  - Name: pad0x18_EEYM3[0x18]
+  - Name: pad0x18_PPS2H[0x18]
     Offset: '0x3c8'
     Size: '0x18'
     Type: char
@@ -56,7 +56,7 @@ AsymmetricObjectServerManager:
     Offset: '0x3f0'
     Size: '0x10'
     Type: Struct StringAssetReference
-  - Name: pad0x20_CNBJU[0x20]
+  - Name: pad0x20_1HI4S[0x20]
     Offset: '0x400'
     Size: '0x20'
     Type: char

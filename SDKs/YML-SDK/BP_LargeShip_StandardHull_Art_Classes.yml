@@ -2,375 +2,375 @@
 # https://github.com/DougTheDruid
 BP_LargeShip_StandardHull_Art_C:
   Attributes:
-  - Name: None
+  - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
-  - Name: None
+  - Name: BattleBoundsPostProcess
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: None
+  - Name: BattleBounds_PP_Volume
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: shp_hatch_01_a
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: FirePostProcess
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: None
+  - Name: Fire_PP_Volume
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: StaticDoors
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: PostProcess2
     Offset: '0x400'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: None
+  - Name: captains_PP_Volume_window
     Offset: '0x408'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: shp_hull_rain_occlusion
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SurfaceWater
     Offset: '0x418'
     Size: '0x8'
     Type: Class SurfaceWaterComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_glass_ext_01_a_02
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_glass_ext_01_a_05
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_glass_ext_01_a_04
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_glass_ext_01_a_03
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_glass_ext_01_a_06
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captains_cabin_window_feature_glass_ext_01_a
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Merged_ExteriorGlass
     Offset: '0x450'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
-  - Name: None
+  - Name: PostProcess1
     Offset: '0x458'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: None
+  - Name: Ship_PP_Volume_A
     Offset: '0x460'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: PostProcess
     Offset: '0x468'
     Size: '0x8'
     Type: Class PostProcessComponent*
-  - Name: None
+  - Name: Captain_PP_volume
     Offset: '0x470'
     Size: '0x8'
     Type: Class BoxComponent*
-  - Name: None
+  - Name: shp_deck_forecastle_steps_01_a
     Offset: '0x478'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_forecastle_02_a
     Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_forecastle_02_a1
     Offset: '0x488'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hatch_02_a
     Offset: '0x490'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_01_a_02
     Offset: '0x498'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_01_a_06
     Offset: '0x4a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_01_a_03
     Offset: '0x4a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_01_a_04
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_window_01_a_05
     Offset: '0x4b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_01
     Offset: '0x4c0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_03
     Offset: '0x4c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_02
     Offset: '0x4d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_04
     Offset: '0x4d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_05
     Offset: '0x4e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_06
     Offset: '0x4e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_07
     Offset: '0x4f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_08
     Offset: '0x4f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a_09
     Offset: '0x500'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a
     Offset: '0x508'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a
     Offset: '0x510'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_hatch_01_a
     Offset: '0x518'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_shelf_01_a_06
     Offset: '0x520'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_shelf_01_a_01
     Offset: '0x528'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_shelf_01_a_02
     Offset: '0x530'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_shelf_01_a_03
     Offset: '0x538'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_shelf_01_a_04
     Offset: '0x540'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_shelf_01_a_05
     Offset: '0x548'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captains_cabin_window_feature_01_a
     Offset: '0x550'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_sterncastle_wheel_balustrade_01_a
     Offset: '0x558'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_long_01_a_01
     Offset: '0x560'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_long_01_a_02
     Offset: '0x568'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_long_01_a_03
     Offset: '0x570'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_long_01_a_04
     Offset: '0x578'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_deck_sterncastle_flagpole_01_a
     Offset: '0x580'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_forecastle_curve_01_a_02
     Offset: '0x588'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captains_cabin_balcony_bannister_01_a
     Offset: '0x590'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_forecastle_curve_01_a_01
     Offset: '0x598'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: cmn_driftwood_01_a
     Offset: '0x5a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_rear_window_01_a
     Offset: '0x5a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_captain_cabin_side_door_porch_01_a
     Offset: '0x5b0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: cmn_driftwood_01_a2
     Offset: '0x5b8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: MergedStaticMesh_col
     Offset: '0x5c0'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
-  - Name: None
+  - Name: shp_galleon_harpoon_placement_01_a
     Offset: '0x5c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a_01
     Offset: '0x5d0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a_02
     Offset: '0x5d8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a_03
     Offset: '0x5e0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a_04
     Offset: '0x5e8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a
     Offset: '0x5f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a
     Offset: '0x5f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a
     Offset: '0x600'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_balustrade_cap_01_a
     Offset: '0x608'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_hull_rudder_hinge_01_a
     Offset: '0x610'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_rope_rigging_rear_01_a
     Offset: '0x618'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_rope_coil_01_a
     Offset: '0x620'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_rope_coil_02_a
     Offset: '0x628'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_rope_coil_04_a_03
     Offset: '0x630'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_rope_coil_04_a_04
     Offset: '0x638'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_rope_coil_04_a_05
     Offset: '0x640'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_mast_trim_01_a
     Offset: '0x648'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_mast_trim_01_a1
     Offset: '0x650'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_mast_trim_01_a2
     Offset: '0x658'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_capstan_trim_01_a
     Offset: '0x660'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: MergedStaticMesh
     Offset: '0x668'
     Size: '0x8'
     Type: Class MergedStaticMeshComponent*
-  - Name: None
+  - Name: cmn_walk_plank_01_a1
     Offset: '0x670'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: cmn_walk_plank_01_a
     Offset: '0x678'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Interior_Captains_Cabin
     Offset: '0x680'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Interior_Brig_Deck
     Offset: '0x688'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Interior_Map_Deck
     Offset: '0x690'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: shp_stern_staircase_01_a_02
     Offset: '0x698'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_stern_staircase_01_a_01
     Offset: '0x6a0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shp_galleon_main_deck_01_a
     Offset: '0x6a8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

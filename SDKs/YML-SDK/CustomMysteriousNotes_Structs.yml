@@ -6,7 +6,7 @@ CreateMysteriousNoteGameServerRequestModel:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_8ZLEA[0x4]
+  - Name: pad0x4_PH297[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -29,7 +29,7 @@ CreateMysteriousNoteGameServerResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_X7NWM[0x3]
+  - Name: pad0x3_VY2AI[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

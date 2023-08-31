@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_TT_RitualBone_C:
   Attributes:
-  - Name: None
+  - Name: BoneMesh
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class StaticMeshComponent*

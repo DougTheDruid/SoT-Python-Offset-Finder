@@ -7,52 +7,61 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MusicZoneInterface: public Interface
+class EmitterManipulatorInterface: public Interface
 {
 public:
 };
 
 
-// Size 0xc0 (Full Size[0x3a0] - InheritedSize[0x2e0]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MusicZoneInterface: public EmitterManipulatorInterface
+{
+public:
+};
+
+
+// Size 0xf0 (Full Size[0x3d0] - InheritedSize[0x2e0]
 class MusicZoneComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_P5I99[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_X79LB[0x8];                                 // 0x2e0(0x8)
 	float                                                        InnerRadius;                                       // 0x2e8(0x4)
 	float                                                        OuterRadius;                                       // 0x2ec(0x4)
 	struct FName                                                 LocationRTPC;                                      // 0x2f0(0x8)
-	bool                                                         LocalRTPC;                                         // 0x2f8(0x1)
-	char                                                         pad0x7_6W34L[0x7];                                 // 0x2f9(0x7)
-	Class WwiseEvent*                                            PlayEvent;                                         // 0x300(0x8)
-	Class WwiseEvent*                                            StopEvent;                                         // 0x308(0x8)
-	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x310(0x10)
-	Class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x320(0x8)
-	bool                                                         DisableAfterPlayThrough;                           // 0x328(0x1)
-	bool                                                         ActivateOnBeginPlay;                               // 0x329(0x1)
-	char                                                         pad0x6_12L6U[0x6];                                 // 0x32a(0x6)
-	char                                                         pad0x70_P5UZU[0x70];                               // 0x330(0x70)
+	struct FName                                                 PlaybackPositionRTPC;                              // 0x2f8(0x8)
+	bool                                                         LocalRTPC;                                         // 0x300(0x1)
+	char                                                         pad0x7_MHCXH[0x7];                                 // 0x301(0x7)
+	Class WwiseEvent*                                            PlayEvent;                                         // 0x308(0x8)
+	Class WwiseEvent*                                            StopEvent;                                         // 0x310(0x8)
+	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x318(0x10)
+	Class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x328(0x8)
+	bool                                                         DisableAfterPlayThrough;                           // 0x330(0x1)
+	bool                                                         ActivateOnBeginPlay;                               // 0x331(0x1)
+	char                                                         pad0x6_OMSKU[0x6];                                 // 0x332(0x6)
+	Struct MusicZoneRemoteValues                                 EmitterRemoteValues;                               // 0x370(0x20)
+	char                                                         pad0x40_WUVV5[0x40];                               // 0x390(0x40)
 };
 
 
-// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
+// Size 0x20 (Full Size[0x3f0] - InheritedSize[0x3d0]
 class AISpawnerMusicZoneComponent: public MusicZoneComponent
 {
 public:
-	Class WwiseEvent*                                            BattleWonEvent;                                    // 0x3a0(0x8)
-	Class AISpawner*                                             AISpawner;                                         // 0x3a8(0x8)
-	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3b0(0x10)
-	byte                                                         SpawnerState;                                      // 0x3c0(0x1)
-	char                                                         pad0xf_9AV7O[0xf];                                 // 0x3c1(0xf)
+	Class WwiseEvent*                                            BattleWonEvent;                                    // 0x3c8(0x8)
+	Class AISpawner*                                             AISpawner;                                         // 0x3d0(0x8)
+	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3d8(0x10)
+	byte                                                         SpawnerState;                                      // 0x3e8(0x1)
+	char                                                         pad0x7_V3UG4[0x7];                                 // 0x3e9(0x7)
 };
 
 
-// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
+// Size 0x30 (Full Size[0x400] - InheritedSize[0x3d0]
 class SynchedMusicZoneComponent: public MusicZoneComponent
 {
 public:
-	float                                                        StartDelayTime;                                    // 0x3a0(0x4)
-	int                                                          PlayFromStartTimeMS;                               // 0x3a4(0x4)
-	char                                                         pad0x28_CA1GU[0x28];                               // 0x3a8(0x28)
+	float                                                        StartDelayTime;                                    // 0x3c8(0x4)
+	int                                                          PlayFromStartTimeMS;                               // 0x3cc(0x4)
+	char                                                         pad0x30_E8R3D[0x30];                               // 0x3d0(0x30)
 };
 
 

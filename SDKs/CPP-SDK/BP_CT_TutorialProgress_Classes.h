@@ -11,7 +11,7 @@ class BP_CT_TutorialProgress_C: public Object
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x28(0x8)
-	char                                                         pad0x196_L406A[0x196];                             // 0x30(0x196)
+	char                                                         pad0x226_UNG2X[0x226];                             // 0x30(0x226)
 	Class AthenaPlayerController*                                AthenaPlayerController;                            // 0x30(0x8)
 	TArray<class BP_CT_VoyageProgress_C*>                        TutorialVoyageProgressTrackers;                    // 0x38(0x10)
 	BlueprintGeneratedClass BP_CT_VoyageProgress_C*              XMarksTutorialProgress;                            // 0x48(0x8)

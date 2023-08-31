@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_Cutlass_Item_C:
   Attributes:
-  - Name: None
-    Offset: '0xb40'
+  - Name: UberGraphFrame
+    Offset: '0xb50'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
   ClassSize: '0x8'
-  FullSize: '0xb48'
-  InheritedSize: '0xb40'
+  FullSize: '0xb58'
+  InheritedSize: '0xb50'
   Super: PlayerMeleeWeapon

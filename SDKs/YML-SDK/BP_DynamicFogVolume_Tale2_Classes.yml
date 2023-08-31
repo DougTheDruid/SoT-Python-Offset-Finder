@@ -2,27 +2,27 @@
 # https://github.com/DougTheDruid
 BP_DynamicFogVolume_Tale2_C:
   Attributes:
-  - Name: pad0x7_AL26B[0x7]
+  - Name: pad0x7_T5VVG[0x7]
     Offset: '0x439'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x440'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: WorldFadeDistanceStart
     Offset: '0x448'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: WorldFadeDistanceRange
     Offset: '0x44c'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: FogMaxDensity
     Offset: '0x450'
     Size: '0x4'
     Type: float
   ClassSize: '0x1b'
   FullSize: '0x454'
   InheritedSize: '0x439'
-  Super: None
+  Super: BP_DynamicDensityFogVolume_C

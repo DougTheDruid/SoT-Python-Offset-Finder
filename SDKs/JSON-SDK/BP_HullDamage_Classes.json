@@ -6,91 +6,91 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x5d0"
       },
       {
-        "Name": "None",
+        "Name": "HitReaction",
         "Type": "Class HitReactionComponent*",
         "Size": "0x8",
         "Offset": "0x5d8"
       },
       {
-        "Name": "None",
+        "Name": "ImpactDecalComponent",
         "Type": "Class BakedDecalComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
-        "Name": "None",
+        "Name": "Persistent Damage Decals",
         "Type": "TArray<class Texture2D*>",
         "Size": "0x10",
         "Offset": "0x5e8"
       },
       {
-        "Name": "None",
+        "Name": "Damage VFX",
         "Type": "Class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
-        "Name": "None",
+        "Name": "Deferred Damage Decals",
         "Type": "TArray<class MaterialInstance*>",
         "Size": "0x10",
         "Offset": "0x600"
       },
       {
-        "Name": "None",
+        "Name": "Deferred Min Size",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x610"
       },
       {
-        "Name": "None",
+        "Name": "Deferred Max Size",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x614"
       },
       {
-        "Name": "None",
+        "Name": "Persistent Min Size",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x618"
       },
       {
-        "Name": "None",
+        "Name": "Persistent Max Size",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x61c"
       },
       {
-        "Name": "None",
+        "Name": "RandomDecalStream",
         "Type": "Struct RandomStream",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
-        "Name": "None",
+        "Name": "TEST_HitStrength",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x628"
       },
       {
-        "Name": "None",
+        "Name": "TEST_PenetrationThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x62c"
       },
       {
-        "Name": "None",
+        "Name": "ParentShip",
         "Type": "Class Ship*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
-        "Name": "None",
+        "Name": "CannonballHitEmitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x638"

@@ -144,7 +144,7 @@
         "Offset": "0x8c0"
       },
       {
-        "Name": "pad0x30_FHCBK[0x30]",
+        "Name": "pad0x30_PEFI1[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x8c8"

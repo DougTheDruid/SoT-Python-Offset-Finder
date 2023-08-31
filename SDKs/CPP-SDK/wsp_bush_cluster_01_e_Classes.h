@@ -7,11 +7,11 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10 (Full Size[0x418] - InheritedSize[0x408]
-class wsp_bush_cluster_01_e_C: public None
+class wsp_bush_cluster_01_e_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
-	Class SceneComponent*                                        None;                                              // 0x410(0x8)
+	Class StaticMeshComponent*                                   wsp_bush_03_a6;                                    // 0x408(0x8)
+	Class SceneComponent*                                        Scene1;                                            // 0x410(0x8)
 };
 
 

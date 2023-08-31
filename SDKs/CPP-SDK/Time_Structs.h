@@ -46,6 +46,13 @@ public:
 };
 
 
+// Size 0x1
+struct EventTimeServiceMigrated
+{
+public:
+};
+
+
 // Size 0x14
 struct EventSetDateTime
 {

@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 BP_Mojo_CaptainScott_C:
   Attributes:
-  - Name: InteractionPromptOverride
-    Offset: '0x6d0'
+  - Name: None
+    Offset: '0x6f0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: DialogueLookAtOverride
-    Offset: '0x6d8'
+  - Name: None
+    Offset: '0x6f8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: ActorOfInterest
-    Offset: '0x6e0'
+  - Name: None
+    Offset: '0x700'
     Size: '0x8'
     Type: Class ActorOfInterestComponent*
   ClassSize: '0x18'
-  FullSize: '0x6e8'
-  InheritedSize: '0x6d0'
-  Super: BP_SoleTrader_C
+  FullSize: '0x708'
+  InheritedSize: '0x6f0'
+  Super: None

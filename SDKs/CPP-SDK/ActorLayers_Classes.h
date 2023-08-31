@@ -17,9 +17,9 @@ public:
 class InstancedLayerComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_IHFJ6[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_630JC[0x8];                                 // 0x2e0(0x8)
 	TArray<struct InstancedLayers>                               InstancedLayers;                                   // 0x2e8(0x10)
-	char                                                         pad0x18_INBLE[0x18];                               // 0x2f8(0x18)
+	char                                                         pad0x18_XLHO5[0x18];                               // 0x2f8(0x18)
 };
 
 

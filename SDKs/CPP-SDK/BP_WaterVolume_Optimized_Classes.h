@@ -16,7 +16,7 @@ public:
 	Class FlatWaterMeshComponent*                                FlatWaterMesh;                                     // 0x460(0x8)
 	Class SceneComponent*                                        Root;                                              // 0x468(0x8)
 	bool                                                         SunLit;                                            // 0x470(0x1)
-	char                                                         pad0x3_BKW5C[0x3];                                 // 0x471(0x3)
+	char                                                         pad0x3_V874H[0x3];                                 // 0x471(0x3)
 	struct FName                                                 RippleGeneratorTag;                                // 0x474(0x8)
 };
 

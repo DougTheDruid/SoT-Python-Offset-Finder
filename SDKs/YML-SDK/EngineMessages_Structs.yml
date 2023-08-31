@@ -61,7 +61,7 @@ EngineServicePong:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_NCO65[0x3]
+  - Name: pad0x3_H7R61[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char

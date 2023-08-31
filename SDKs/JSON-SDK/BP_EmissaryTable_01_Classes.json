@@ -1,75 +1,75 @@
 {
   "BP_EmissaryTable_01_C": {
     "Super": "EmissaryVoteInteractionActor",
-    "FullSize": "0x638",
-    "InheritedSize": "0x5e0",
+    "FullSize": "0x6e0",
+    "InheritedSize": "0x688",
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "EmissaryActiveTableVisualiser",
         "Type": "Class EmissaryActiveTableVisualiserComponent*",
         "Size": "0x8",
-        "Offset": "0x5e0"
+        "Offset": "0x688"
       },
       {
-        "Name": "None",
+        "Name": "VoteAudio",
         "Type": "Class VoteAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x5e8"
+        "Offset": "0x690"
       },
       {
-        "Name": "None",
+        "Name": "StaticMeshVoteVisualiser",
         "Type": "Class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
-        "Offset": "0x5f0"
+        "Offset": "0x698"
       },
       {
-        "Name": "None",
+        "Name": "InlineVotingInteraction",
         "Type": "Class InlineVotingInteractionComponent*",
         "Size": "0x8",
-        "Offset": "0x5f8"
+        "Offset": "0x6a0"
       },
       {
-        "Name": "None",
+        "Name": "ActionRules",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
-        "Offset": "0x600"
+        "Offset": "0x6a8"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x608"
+        "Offset": "0x6b0"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x610"
+        "Offset": "0x6b8"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x618"
+        "Offset": "0x6c0"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x620"
+        "Offset": "0x6c8"
       },
       {
-        "Name": "None",
+        "Name": "bld_emissary_table_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x628"
+        "Offset": "0x6d0"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x630"
+        "Offset": "0x6d8"
       }
     ]
   },

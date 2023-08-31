@@ -17,7 +17,7 @@ public:
 	struct FName                                                 MaterialThicknessRTPCName;                         // 0x20(0x8)
 	struct FName                                                 MaterialReflectivityRTPCName;                      // 0x28(0x8)
 	byte                                                         EnvironmentTraceChannel;                           // 0x30(0x1)
-	char                                                         pad0x3_GEJ0L[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_3L1I8[0x3];                                 // 0x31(0x3)
 	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
 	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
 	Struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)

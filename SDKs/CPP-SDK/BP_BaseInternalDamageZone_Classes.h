@@ -7,14 +7,14 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x3f (Full Size[0x8a0] - InheritedSize[0x861]
-class BP_BaseInternalDamageZone_C: public None
+class BP_BaseInternalDamageZone_C: public BP_DamageZone_C
 {
 public:
-	char                                                         pad0x7_66YI4[0x7];                                 // 0x861(0x7)
-	Struct PointerToUberGraphFrame                               None;                                              // 0x868(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x870(0x8)
-	Class WwiseEvent*                                            None;                                              // 0x878(0x8)
-	Struct WwiseEmitter                                          None;                                              // 0x880(0x20)
+	char                                                         pad0x7_T5JED[0x7];                                 // 0x861(0x7)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x868(0x8)
+	Class StaticMeshComponent*                                   RepairWood;                                        // 0x870(0x8)
+	Class WwiseEvent*                                            Start Repair Cue;                                  // 0x878(0x8)
+	Struct WwiseEmitter                                          RepairEmitter;                                     // 0x880(0x20)
 };
 
 

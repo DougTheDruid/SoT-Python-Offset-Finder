@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_HarpoonLauncher_C:
   Attributes:
-  - Name: None
+  - Name: CubeNotWalkable
     Offset: '0xcb0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: MountCollision
     Offset: '0xcb8'
     Size: '0x8'
     Type: Class CapsuleComponent*
-  - Name: None
+  - Name: BarrelCollision
     Offset: '0xcc0'
     Size: '0x8'
     Type: Class CapsuleComponent*

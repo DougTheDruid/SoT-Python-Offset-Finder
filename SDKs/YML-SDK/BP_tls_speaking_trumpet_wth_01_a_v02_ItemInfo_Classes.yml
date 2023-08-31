@@ -3,10 +3,10 @@
 BP_tls_speaking_trumpet_wth_01_a_v02_ItemInfo_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x510'
+    Offset: '0x528'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x518'
-  InheritedSize: '0x510'
+  FullSize: '0x530'
+  InheritedSize: '0x528'
   Super: ItemInfo

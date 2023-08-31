@@ -2,23 +2,27 @@
 # https://github.com/DougTheDruid
 BP_Castaway_C:
   Attributes:
-  - Name: None
-    Offset: '0x6d0'
+  - Name: UberGraphFrame
+    Offset: '0x6f0'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0x6d8'
+  - Name: NPCDialogCamera
+    Offset: '0x6f8'
+    Size: '0x8'
+    Type: Class CameraComponent*
+  - Name: ActorPhasing
+    Offset: '0x700'
     Size: '0x8'
     Type: Class ActorPhasingComponent*
-  - Name: None
-    Offset: '0x6e0'
+  - Name: AnimNotifyWwiseEmitter
+    Offset: '0x708'
     Size: '0x8'
     Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: None
-    Offset: '0x6e8'
+  - Name: AudioEvents
+    Offset: '0x710'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
-  ClassSize: '0x28'
-  FullSize: '0x6f8'
-  InheritedSize: '0x6d0'
-  Super: None
+  ClassSize: '0x30'
+  FullSize: '0x720'
+  InheritedSize: '0x6f0'
+  Super: BP_Orderofsouls_TallTales_C

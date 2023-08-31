@@ -54,7 +54,7 @@ SetFlameOfFateEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_TKAU2[0x7]
+  - Name: pad0x7_KAC1M[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -69,7 +69,7 @@ SetShipFlameOfFateEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_TP3F7[0x7]
+  - Name: pad0x7_VQEIX[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

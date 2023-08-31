@@ -17,9 +17,9 @@ public:
 class HarbourComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_X575G[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_59NHS[0x8];                                 // 0x2e0(0x8)
 	float                                                        HarbourRadiusInCentimetres;                        // 0x2e8(0x4)
-	char                                                         pad0x24_MG0BR[0x24];                               // 0x2ec(0x24)
+	char                                                         pad0x24_WVFSX[0x24];                               // 0x2ec(0x24)
 };
 
 

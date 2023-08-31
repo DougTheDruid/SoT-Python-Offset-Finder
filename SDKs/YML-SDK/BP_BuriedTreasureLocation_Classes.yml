@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_BuriedTreasureLocation_C:
   Attributes:
-  - Name: None
+  - Name: Arrow
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class ArrowComponent*

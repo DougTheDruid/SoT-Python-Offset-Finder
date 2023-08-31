@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_RitualBottle_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
+	Class StaticMeshComponent*                                   ptn_pois_01_a;                                     // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   2;                                                 // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   1;                                                 // 0x3d8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
 };
 
 

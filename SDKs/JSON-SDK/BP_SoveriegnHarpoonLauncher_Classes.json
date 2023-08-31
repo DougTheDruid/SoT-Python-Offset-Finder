@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "HarpoonItemLocation",
         "Type": "Class HarpoonItemLocationComponent*",
         "Size": "0x8",
         "Offset": "0xcb0"
       },
       {
-        "Name": "None",
+        "Name": "CubeNotWalkable",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xcb8"
       },
       {
-        "Name": "None",
+        "Name": "MountCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcc0"
       },
       {
-        "Name": "None",
+        "Name": "BarrelCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcc8"
@@ -38,25 +38,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "HarpoonItemLocation",
         "Type": "Class HarpoonItemLocationComponent*",
         "Size": "0x8",
         "Offset": "0xcb0"
       },
       {
-        "Name": "None",
+        "Name": "CubeNotWalkable",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xcb8"
       },
       {
-        "Name": "None",
+        "Name": "MountCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcc0"
       },
       {
-        "Name": "None",
+        "Name": "BarrelCollision",
         "Type": "Class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcc8"

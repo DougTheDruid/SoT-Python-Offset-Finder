@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_CannonBall_C: public CannonBall
 {
 public:
-	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x7f0(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x7f8(0x8)
-	Class PickupableComponent*                                   Pickupable;                                        // 0x800(0x8)
+	Class UsableWieldableComponent*                              None;                                              // 0x7f0(0x8)
+	Class WieldableInteractableComponent*                        None;                                              // 0x7f8(0x8)
+	Class PickupableComponent*                                   None;                                              // 0x800(0x8)
 };
 
 

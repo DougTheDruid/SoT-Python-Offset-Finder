@@ -22,63 +22,63 @@
   },
   "RareFileOpenLogSettings": {
     "Super": "DeveloperSettings",
-    "FullSize": "0x80",
+    "FullSize": "0x90",
     "InheritedSize": "0x38",
-    "ClassSize": "0x48",
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "InitialOpenOrderArraySize",
+        "Name": "DataSizeSaveIncrement",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
       },
       {
-        "Name": "DataSizeSaveIncrement",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
         "Name": "TimeSaveIncrement",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x40"
+        "Offset": "0x3c"
       },
       {
         "Name": "DataSource",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x44"
+        "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_21ZJS[0x3]",
+        "Name": "pad0x7_44YVB[0x7]",
         "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x45"
+        "Size": "0x7",
+        "Offset": "0x41"
+      },
+      {
+        "Name": "SandboxesToEnableByDefault",
+        "Type": "TArray<Str SandboxesToEnableByDefault>",
+        "Size": "0x10",
+        "Offset": "0x48"
       },
       {
         "Name": "OpenOrderLogDirectory",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x48"
+        "Offset": "0x58"
       },
       {
         "Name": "OutputOrderLogDirectory",
         "Type": "Struct FString",
         "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x68"
       },
       {
         "Name": "NumberOfLogsToAggregate",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x68"
+        "Offset": "0x78"
       },
       {
-        "Name": "pad0x14_X4XVK[0x14]",
+        "Name": "pad0x14_DUQSJ[0x14]",
         "Type": "char",
         "Size": "0x14",
-        "Offset": "0x6c"
+        "Offset": "0x7c"
       }
     ]
   },

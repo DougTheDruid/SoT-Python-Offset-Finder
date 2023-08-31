@@ -72,7 +72,7 @@ StopWarMapVoyageVoteValidator:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_U52VR[0x7]
+  - Name: pad0x7_KCNI4[0x7]
     Offset: '0x119'
     Size: '0x7'
     Type: char
@@ -82,7 +82,7 @@ StopWarMapVoyageVoteValidator:
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
-  - Name: pad0x8_XHEOD[0x8]
+  - Name: pad0x8_J1MT3[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -98,7 +98,7 @@ WarMapInteractionComponent:
     Offset: '0x1a0'
     Size: '0x8'
     Type: class
-  - Name: pad0x20_WBXHE[0x20]
+  - Name: pad0x20_LGJ8A[0x20]
     Offset: '0x1a8'
     Size: '0x20'
     Type: char
@@ -132,7 +132,7 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x67_SGON2[0x67]
+  - Name: pad0x67_U49HW[0x67]
     Offset: '0x41'
     Size: '0x67'
     Type: char
@@ -144,7 +144,7 @@ WarMapVoteConsumerBase:
     Offset: '0xb8'
     Size: '0x8'
     Type: Class BoxedRpcDispatcherComponent*
-  - Name: pad0x58_TM5S0[0x58]
+  - Name: pad0x58_BZGBC[0x58]
     Offset: '0xc0'
     Size: '0x58'
     Type: char
@@ -154,7 +154,7 @@ WarMapVoteConsumerBase:
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_GLBR8[0x10]
+  - Name: pad0x10_2RSTQ[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -166,7 +166,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3dc'
     Size: '0x8'
     Type: Struct Vector2D
-  - Name: pad0x4_3V2SE[0x4]
+  - Name: pad0x4_9P57A[0x4]
     Offset: '0x3e4'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ WarMapVoteInteractionActor:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<struct FactionInfoPtrs>
-  - Name: pad0x230_NAAKK[0x230]
+  - Name: pad0x230_JYGF7[0x230]
     Offset: '0x410'
     Size: '0x230'
     Type: char
@@ -204,7 +204,7 @@ WarMapVoteValidatorBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd7_I89GK[0xd7]
+  - Name: pad0xd7_AT3CB[0xd7]
     Offset: '0x41'
     Size: '0xd7'
     Type: char

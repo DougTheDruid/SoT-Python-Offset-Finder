@@ -28,7 +28,7 @@ PrioritisedPrompt:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_V7PAE[0x7]
+  - Name: pad0x7_N81NT[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -77,7 +77,7 @@ PromptEvaluation:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WD91X[0x7]
+  - Name: pad0x7_XPQCH[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

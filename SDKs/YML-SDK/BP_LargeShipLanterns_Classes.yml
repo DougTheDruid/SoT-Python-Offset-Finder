@@ -2,67 +2,67 @@
 # https://github.com/DougTheDruid
 BP_LargeShipLanterns_C:
   Attributes:
-  - Name: None
+  - Name: Railing_BowRightBack
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Railing_BowLeftBack
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Railing_Stern
     Offset: '0x3d8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Cabin_Lantern
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BrigDeck_StairsRight
     Offset: '0x3e8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BrigDeck_StairsLeft
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BrigDeck_OutsideBrig
     Offset: '0x3f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: BrigDeck_InsideBrig
     Offset: '0x400'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MapDeck_RearStairs
     Offset: '0x408'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MapDeck_BowRight
     Offset: '0x410'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MapDeck_BowLeft
     Offset: '0x418'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MapDeck_Galley
     Offset: '0x420'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MapDeck_MapTable
     Offset: '0x428'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: MapDeck_MainStairs
     Offset: '0x430'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: Cabin_Entrance
     Offset: '0x438'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x440'
     Size: '0x8'
     Type: Class SceneComponent*

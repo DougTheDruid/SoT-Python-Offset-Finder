@@ -6,49 +6,49 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "VoteIndicator4",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator3",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator2",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "None",
+        "Name": "VoteIndicator1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "None",
+        "Name": "VoteAudio",
         "Type": "Class VoteAudioComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "None",
+        "Name": "WarMapInteractionVote",
         "Type": "Class WarMapInteractionVoteComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "None",
+        "Name": "StaticMeshVoteVisualiser",
         "Type": "Class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "None",
+        "Name": "ActionRules",
         "Type": "Class ActionRulesComponent*",
         "Size": "0x8",
         "Offset": "0x678"

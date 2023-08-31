@@ -6,6 +6,24 @@ DamageablePartsInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+GenericShipDamageablePart:
+  Attributes:
+  - Name: pad0x8_PWNKB[0x8]
+    Offset: '0x3c8'
+    Size: '0x8'
+    Type: char
+  - Name: ShipDamageableComponent
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: Class ShipDamageableComponent*
+  - Name: pad0x10_SXPL1[0x10]
+    Offset: '0x3d8'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0x3e8'
+  InheritedSize: '0x3c8'
+  Super: Actor
 HullDamageInterface:
   Attributes: []
   ClassSize: '0x0'
@@ -36,7 +54,7 @@ ShipPartsDamageTrackerComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ZPFMF[0x4]
+  - Name: pad0x4_Q8T3P[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -50,11 +68,11 @@ ShipRestorationSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TJJ7V[0x4]
+  - Name: pad0x4_95RYX[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
-  - Name: pad0x8_5L0SL[0x8]
+  - Name: pad0x8_FYP2D[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char

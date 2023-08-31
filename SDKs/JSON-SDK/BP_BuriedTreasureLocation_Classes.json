@@ -6,7 +6,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Arrow",
         "Type": "Class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"

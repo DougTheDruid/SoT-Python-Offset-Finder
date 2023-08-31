@@ -1,24 +1,24 @@
 {
   "BP_msc_concertina_smp_01_a_v01_Wieldable_C": {
-    "Super": "None",
+    "Super": "BP_Concertina_C",
     "FullSize": "0x948",
     "InheritedSize": "0x930",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "shroudmask_tp",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x930"
       },
       {
-        "Name": "None",
+        "Name": "shroud_tp",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x938"
       },
       {
-        "Name": "None",
+        "Name": "shroud_fp",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x940"

@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_tls_tankard_yr1_leg_01_a_ItemInfo_C:
   Attributes:
-  - Name: None
-    Offset: '0x510'
+  - Name: DefaultSceneRoot
+    Offset: '0x528'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x518'
-  InheritedSize: '0x510'
+  FullSize: '0x530'
+  InheritedSize: '0x528'
   Super: ItemInfo

@@ -1,6 +1,6 @@
 {
   "BestActionSpotSelectionCriteria": {
-    "ClassSize": "0x24",
+    "ClassSize": "0x2c",
     "Attributes": [
       {
         "Name": "PreferActionSpotsRelativeToTargetForwardFacingDirection",
@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_9PW63[0x3]",
+        "Name": "pad0x3_N8T7H[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -45,7 +45,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_NRUAD[0x3]",
+        "Name": "pad0x3_WQNCB[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -57,28 +57,46 @@
         "Offset": "0x18"
       },
       {
-        "Name": "ShouldAlwaysRefreshWhileMoving",
+        "Name": "ShouldAlwaysRefreshWhileOwnerMoving",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1c"
       },
       {
-        "Name": "ShouldRefreshAfterStayingForTooLong",
+        "Name": "ShouldRefreshAfterTargetMovesBeyondThreshold",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1d"
       },
       {
-        "Name": "pad0x2_4ZDT8[0x2]",
+        "Name": "pad0x2_TSXW6[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x1e"
       },
       {
-        "Name": "RefreshTimeInSeconds",
+        "Name": "TargetMovementRefreshThresholdDistance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "ShouldRefreshAfterStayingForTooLong",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_NADPN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
+      },
+      {
+        "Name": "RefreshTimeInSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
       }
     ]
   },

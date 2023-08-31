@@ -45,7 +45,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_27XAE[0x4]",
+        "Name": "pad0x4_YUVSU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -92,7 +92,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_V6CY0[0x4]",
+        "Name": "pad0x4_1KDQ7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -134,7 +134,7 @@
     "Attributes": []
   },
   "OnEndZiplineActionStateEvent": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "ZiplineEnd",
@@ -147,6 +147,12 @@
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "DetachFromZiplineAdditiveOneShot",
+        "Type": "Class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -160,7 +166,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "ZiplineAdditiveOneShot",
+        "Name": "AttachToZiplineAdditiveOneShot",
         "Type": "Class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
@@ -205,7 +211,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_ZD8Y5[0x3]",
+        "Name": "pad0x3_WNPZM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -256,7 +262,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_UDY8M[0x3]",
+        "Name": "pad0x3_POGMF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
@@ -319,7 +325,7 @@
     ]
   },
   "ZiplineActionStateConstructionInfo": {
-    "ClassSize": "0x40",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "SceneComponent",
@@ -332,6 +338,24 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "InitialSwingDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "pad0x6_CKNUV[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "ZiplineStartSmoothedTime",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x40"
       }
     ]
   },

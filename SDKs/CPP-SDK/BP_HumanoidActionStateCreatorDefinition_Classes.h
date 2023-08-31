@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0xa80] - InheritedSize[0xa78]
+// Size 0x8 (Full Size[0xaa0] - InheritedSize[0xa98]
 class BP_HumanoidActionStateCreatorDefinition_C: public HumanoidActionStateCreatorDefinition
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0xa78(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0xa98(0x8)
 };
 
 

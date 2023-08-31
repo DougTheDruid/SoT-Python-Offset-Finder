@@ -6,20 +6,21 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40 (Full Size[0x408] - InheritedSize[0x3c8]
+// Size 0x41 (Full Size[0x409] - InheritedSize[0x3c8]
 class BP_Sea_Fort_WindowGlows_C: public SeaFortDistantLights
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
-	float                                                        None;                                              // 0x3e8(0x4)
-	byte                                                         None;                                              // 0x3ec(0x1)
-	char                                                         pad0x3_VHSLU[0x3];                                 // 0x3ed(0x3)
-	Class TimelineComponent*                                     None;                                              // 0x3f0(0x8)
-	Class MaterialInstanceDynamic*                               None;                                              // 0x3f8(0x8)
-	Class MaterialInstanceDynamic*                               None;                                              // 0x400(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   glows;                                             // 0x3d0(0x8)
+	Class StaticMeshComponent*                                   window_planes;                                     // 0x3d8(0x8)
+	Class SceneComponent*                                        SharedRoot;                                        // 0x3e0(0x8)
+	float                                                        FadeCurve_Fade_F995538E47EE9A6B32A4C3A8CF00537A;   // 0x3e8(0x4)
+	byte                                                         FadeCurve__Direction_F995538E47EE9A6B32A4C3A8CF00537A; // 0x3ec(0x1)
+	char                                                         pad0x3_HGE5I[0x3];                                 // 0x3ed(0x3)
+	Class TimelineComponent*                                     FadeCurve;                                         // 0x3f0(0x8)
+	Class MaterialInstanceDynamic*                               WindowDynamicMaterial;                             // 0x3f8(0x8)
+	Class MaterialInstanceDynamic*                               GlowDynamicMaterial;                               // 0x400(0x8)
+	bool                                                         MaterialsCreated;                                  // 0x408(0x1)
 };
 
 

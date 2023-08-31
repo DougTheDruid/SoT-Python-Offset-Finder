@@ -6,54 +6,80 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x290 (Full Size[0x658] - InheritedSize[0x3c8]
+// Size 0x2a0 (Full Size[0x668] - InheritedSize[0x3c8]
 class AdventureOnDemandService: public Actor
 {
 public:
-	char                                                         pad0x10_0ZHT5[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_Q5U69[0x10];                               // 0x3c8(0x10)
 	Class AdventureOnDemandServiceParams*                        Params;                                            // 0x3d8(0x8)
 	Class AdventureOnDemandVoyageSelectionDataAsset*             VoyageSelectionDataAsset;                          // 0x3e0(0x8)
-	char                                                         pad0xb0_VK54R[0xb0];                               // 0x3e8(0xb0)
+	char                                                         pad0xb0_PLY3C[0xb0];                               // 0x3e8(0xb0)
 	TArray<struct DiveToTunnelEntries>                           DiveToTunnelEntries;                               // 0x498(0x10)
 	TArray<struct LeaveTunnelEntries>                            LeaveTunnelEntries;                                // 0x4a8(0x10)
 	TArray<struct CrewsDivingToTunnel>                           CrewsDivingToTunnel;                               // 0x4b8(0x10)
-	TArray<struct CrewsOnCooldown>                               CrewsOnCooldown;                                   // 0x4c8(0x10)
-	char                                                         pad0x180_E34A1[0x180];                             // 0x4d8(0x180)
+	TArray<struct CrewsInArrivalTunnel>                          CrewsInArrivalTunnel;                              // 0x4c8(0x10)
+	TArray<struct CrewsOnCooldown>                               CrewsOnCooldown;                                   // 0x4d8(0x10)
+	char                                                         pad0x180_YXIN2[0x180];                             // 0x4e8(0x180)
 };
 
 
-// Size 0x58 (Full Size[0x88] - InheritedSize[0x30]
+// Size 0x78 (Full Size[0xa8] - InheritedSize[0x30]
 class GameEventOnDemandArrivalTunnelWorkerBase: public AdventureOnDemandArrivalTunnelWorkerBase
 {
 public:
-	float                                                        MinRangeFromTarget;                                // 0x30(0x4)
-	float                                                        MaxRangeFromTarget;                                // 0x34(0x4)
-	float                                                        SubsequentCrewJoinRadiusModifier;                  // 0x38(0x4)
-	char                                                         pad0x34_F3FGW[0x34];                               // 0x3c(0x34)
-	Class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x70(0x8)
-	char                                                         pad0x10_ZGKBL[0x10];                               // 0x78(0x10)
+	float                                                        TriggerTunnelFailureTimeout;                       // 0x30(0x4)
+	float                                                        MinRangeFromTarget;                                // 0x34(0x4)
+	float                                                        MaxRangeFromTarget;                                // 0x38(0x4)
+	float                                                        SubsequentCrewJoinRadiusModifier;                  // 0x3c(0x4)
+	char                                                         pad0x48_WV1SI[0x48];                               // 0x40(0x48)
+	Class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x88(0x8)
+	char                                                         pad0x18_F5HTY[0x18];                               // 0x90(0x18)
 };
 
 
-// Size 0x68 (Full Size[0xf0] - InheritedSize[0x88]
+// Size 0x18 (Full Size[0xc0] - InheritedSize[0xa8]
+class IslandBasedGameEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
+{
+public:
+	bool                                                         UseSpawnDistanceFromIslandForResurfaceRadius;      // 0xa8(0x1)
+	char                                                         pad0x3_2KQ2J[0x3];                                 // 0xa9(0x3)
+	float                                                        ResurfaceMaxRadiusModifier;                        // 0xac(0x4)
+	char                                                         pad0x10_54FMY[0x10];                               // 0xb0(0x10)
+};
+
+
+// Size 0x98 (Full Size[0x158] - InheritedSize[0xc0]
+class SkellyFortEventOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
+{
+public:
+	class                                                        SkellyFortType;                                    // 0xc0(0x8)
+	char                                                         pad0x84_QEP29[0x84];                               // 0xc8(0x84)
+	float                                                        RetryRequestEventFrequency;                        // 0x14c(0x4)
+	char                                                         pad0x8_HE72V[0x8];                                 // 0x150(0x8)
+};
+
+
+// Size 0x68 (Full Size[0x110] - InheritedSize[0xa8]
 class SeaBasedGameEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
 {
 public:
-	char                                                         pad0x20_TVH7Z[0x20];                               // 0x88(0x20)
-	float                                                        VacateOccupiedLocationTimer;                       // 0xa8(0x4)
-	char                                                         pad0x44_H3UM5[0x44];                               // 0xac(0x44)
+	char                                                         pad0x20_3OV0R[0x20];                               // 0xa8(0x20)
+	float                                                        VacateOccupiedLocationTimer;                       // 0xc8(0x4)
+	char                                                         pad0x44_1J6PQ[0x44];                               // 0xcc(0x44)
 };
 
 
-// Size 0x60 (Full Size[0xe8] - InheritedSize[0x88]
-class SkellyFortEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
+// Size 0x10 (Full Size[0x120] - InheritedSize[0x110]
+class KrakenGameEventOnDemandArrivalTunnelWorker: public SeaBasedGameEventOnDemandArrivalTunnelWorker
 {
 public:
-	bool                                                         UseSpawnDistanceFromIslandForResurfaceRadius;      // 0x88(0x1)
-	char                                                         pad0x3_VHDS3[0x3];                                 // 0x89(0x3)
-	float                                                        ResurfaceMaxRadiusModifier;                        // 0x8c(0x4)
-	class                                                        SkellyFortType;                                    // 0x90(0x8)
-	char                                                         pad0x50_E4CDL[0x50];                               // 0x98(0x50)
+};
+
+
+// Size 0x10 (Full Size[0x120] - InheritedSize[0x110]
+class TinySharkGameEventOnDemandArrivalTunnelWorker: public SeaBasedGameEventOnDemandArrivalTunnelWorker
+{
+public:
 };
 
 

@@ -6,43 +6,43 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "Portal VFX",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
+        "Name": "WwiseEmitter",
         "Type": "Class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
+        "Name": "Portal",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "shroud",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "None",
+        "Name": "SharedRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "None",
+        "Name": "DynamicMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0x440"

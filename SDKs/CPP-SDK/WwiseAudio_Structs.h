@@ -52,7 +52,7 @@ struct WwiseNativeEmitterPoolDensityParams
 {
 public:
 	bool                                                         PlayPoolDensityAudio;                              // 0x0(0x1)
-	char                                                         pad0x7_TME8E[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_2TNV0[0x7];                                 // 0x1(0x7)
 	Class WwiseEvent*                                            PoolDensityAudioPlayEvent;                         // 0x8(0x8)
 	Class WwiseEvent*                                            PoolDensityAudioStopEvent;                         // 0x10(0x8)
 	struct FName                                                 DensityRtpcName;                                   // 0x18(0x8)

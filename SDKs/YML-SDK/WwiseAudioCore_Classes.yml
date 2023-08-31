@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 WwiseAudioSettings:
   Attributes:
-  - Name: pad0xc0_V22DF[0xc0]
+  - Name: pad0xc0_ATWJB[0xc0]
     Offset: '0x28'
     Size: '0xc0'
     Type: char
@@ -14,7 +14,7 @@ WwiseAudioSettings:
     Offset: '0x108'
     Size: '0x64'
     Type: Struct WwiseAudioReverbPresets
-  - Name: pad0x4_7QQ1D[0x4]
+  - Name: pad0x4_DMLW8[0x4]
     Offset: '0x16c'
     Size: '0x4'
     Type: char
@@ -54,7 +54,7 @@ WwiseAudioSettings:
     Offset: '0x200'
     Size: '0x8'
     Type: Class WwiseCoreAssets*
-  - Name: pad0x58_NWWIR[0x58]
+  - Name: pad0x58_W551V[0x58]
     Offset: '0x208'
     Size: '0x58'
     Type: char

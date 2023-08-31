@@ -23,11 +23,11 @@ struct GeneratedFireworkData
 {
 public:
 	Struct FireworkAmbientLightData                              FireworkAmbientLightData;                          // 0xc(0x14)
-	char                                                         pad0x8_DZUW7[0x8];                                 // 0x20(0x8)
+	char                                                         pad0x8_0THLK[0x8];                                 // 0x20(0x8)
 	TArray<struct ExplosionData>                                 ExplosionData;                                     // 0x28(0x10)
 	Class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x38(0x8)
 	Class WwiseEvent*                                            LaunchSfx;                                         // 0x40(0x8)
-	char                                                         pad0x8_ZB46V[0x8];                                 // 0x48(0x8)
+	char                                                         pad0x8_FLDG9[0x8];                                 // 0x48(0x8)
 	Class FireworkFeedbackDataAsset*                             FireworkFeedbackData;                              // 0x50(0x8)
 };
 

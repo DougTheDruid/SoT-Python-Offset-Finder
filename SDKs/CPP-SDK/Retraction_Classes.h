@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class RetractableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x38_BI9N3[0x38];                               // 0xc8(0x38)
+	char                                                         pad0x38_WV2JH[0x38];                               // 0xc8(0x38)
 	struct FName                                                 FeatureToggle;                                     // 0x100(0x8)
 	Struct RetractorOrientationAdjustmentFlags                   OrientationAdjustmentOnRetractFlags;               // 0x108(0x3)
 	byte                                                         RetractorBoxAxis;                                  // 0x10b(0x1)
 	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0x10c(0x1)
 	bool                                                         MigrateAttachedWithRetractor;                      // 0x10d(0x1)
 	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0x10e(0x1)
-	char                                                         pad0x1_GBEJ6[0x1];                                 // 0x10f(0x1)
+	char                                                         pad0x1_879GO[0x1];                                 // 0x10f(0x1)
 };
 
 
@@ -53,10 +53,10 @@ public:
 class RetractorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x48_B4D2D[0x48];                               // 0xc8(0x48)
+	char                                                         pad0x48_QZSK3[0x48];                               // 0xc8(0x48)
 	Class SceneComponent*                                        RetractDestinationComponent;                       // 0x110(0x8)
 	Class SceneComponent*                                        RetractingComponent;                               // 0x118(0x8)
-	char                                                         pad0x8_Z4X4T[0x8];                                 // 0x120(0x8)
+	char                                                         pad0x8_Y8JRV[0x8];                                 // 0x120(0x8)
 };
 
 

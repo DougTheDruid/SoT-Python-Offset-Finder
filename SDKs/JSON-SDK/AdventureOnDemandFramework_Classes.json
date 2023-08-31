@@ -43,51 +43,51 @@
   },
   "AdventureOnDemandArrivalTunnelDesc": {
     "Super": "ClientDestinationPreLoadingArrivalTunnelDesc",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xa8",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb0",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "ResurfaceLocationOffset",
         "Type": "Struct Vector",
         "Size": "0xc",
-        "Offset": "0xa8"
+        "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_8N8NY[0x4]",
+        "Name": "pad0x4_GMK0P[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0xb4"
+        "Offset": "0xbc"
       },
       {
         "Name": "DefaultArrivalLocationWorkerClass",
         "Type": "Class AdventureOnDemandArrivalTunnelWorkerBase*",
         "Size": "0x8",
-        "Offset": "0xb8"
+        "Offset": "0xc0"
       },
       {
         "Name": "ResurfaceLocationEQ",
         "Type": "Class EnvQuery*",
         "Size": "0x8",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
         "Name": "ShouldExcludeCrewFromBeingTargetedForGameEvents",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xc8"
+        "Offset": "0xd0"
       },
       {
-        "Name": "pad0x3_9MB24[0x3]",
+        "Name": "pad0x3_MQ599[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0xc9"
+        "Offset": "0xd1"
       },
       {
         "Name": "ExclusionTimerFromBeingTargetedForGameEvents",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xcc"
+        "Offset": "0xd4"
       }
     ]
   },
@@ -98,7 +98,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x28_CT97L[0x28]",
+        "Name": "pad0x28_ZE9PD[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x6a0"
@@ -116,7 +116,7 @@
         "Offset": "0x6d0"
       },
       {
-        "Name": "pad0x28_CIU32[0x28]",
+        "Name": "pad0x28_H21UC[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x6d8"
@@ -153,70 +153,89 @@
   },
   "AdventureOnDemandDepartureTunnelDesc": {
     "Super": "DepartureTunnelDesc",
-    "FullSize": "0x100",
-    "InheritedSize": "0x100",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "FullSize": "0x128",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SecondsAfterCrewArriveInTunnelBeforeAllowingTunnelCancellation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "SecondsBetweenTunnelCancellationPopupReminder",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x11c"
+      },
+      {
+        "Name": "DefaultTunnelCancellationAvailableReminderPopup",
+        "Type": "Class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x120"
+      }
+    ]
   },
   "GameEventOnDemandDepartureTunnelDesc": {
     "Super": "AdventureOnDemandDepartureTunnelDesc",
-    "FullSize": "0x120",
-    "InheritedSize": "0x100",
+    "FullSize": "0x148",
+    "InheritedSize": "0x128",
     "ClassSize": "0x20",
     "Attributes": []
   },
   "VoyageOnDemandDepartureTunnelDesc": {
     "Super": "AdventureOnDemandDepartureTunnelDesc",
-    "FullSize": "0x100",
-    "InheritedSize": "0x100",
+    "FullSize": "0x128",
+    "InheritedSize": "0x128",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "AdventureOnDemandDepartureTunnelOfTheDamned": {
     "Super": "DepartureTunnelOfTheDamned",
-    "FullSize": "0x8c0",
-    "InheritedSize": "0x8a0",
+    "FullSize": "0x8e0",
+    "InheritedSize": "0x8c0",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "AdventureOnDemandDepartureTunnelDesc",
         "Type": "Class AdventureOnDemandDepartureTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x8a0"
+        "Offset": "0x8b8"
       },
       {
-        "Name": "pad0x18_CTAP1[0x18]",
+        "Name": "pad0x20_6NJI4[0x20]",
         "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x8a8"
+        "Size": "0x20",
+        "Offset": "0x8c0"
       }
     ]
   },
   "GameEventOnDemandDepartureTunnelOfTheDamned": {
     "Super": "AdventureOnDemandDepartureTunnelOfTheDamned",
-    "FullSize": "0x8c0",
-    "InheritedSize": "0x8c0",
+    "FullSize": "0x8e0",
+    "InheritedSize": "0x8e0",
     "ClassSize": "0x0",
     "Attributes": [
       {
         "Name": "GameEventOnDemandDepartureTunnelDesc",
         "Type": "Class GameEventOnDemandDepartureTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x8b8"
+        "Offset": "0x8d8"
       }
     ]
   },
   "VoyageOnDemandDepartureTunnelOfTheDamned": {
     "Super": "AdventureOnDemandDepartureTunnelOfTheDamned",
-    "FullSize": "0x8c0",
-    "InheritedSize": "0x8c0",
+    "FullSize": "0x8e0",
+    "InheritedSize": "0x8e0",
     "ClassSize": "0x0",
     "Attributes": [
       {
         "Name": "VoyageOnDemandDepartureTunnelDesc",
         "Type": "Class VoyageOnDemandDepartureTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x8b8"
+        "Offset": "0x8d8"
       }
     ]
   },
@@ -319,9 +338,9 @@
   },
   "AdventureOnDemandServiceParams": {
     "Super": "DataAsset",
-    "FullSize": "0x60",
+    "FullSize": "0x70",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "DiveToTunnelVoyageDesc",
@@ -354,7 +373,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_7BIMS[0x4]",
+        "Name": "pad0x4_0GD4K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -364,6 +383,18 @@
         "Type": "Class AdventureOnDemandLocationRequestDataAsset*",
         "Size": "0x8",
         "Offset": "0x58"
+      },
+      {
+        "Name": "GameEventsOnDemandBannerTextDataAsset",
+        "Type": "Class GameEventsOnDemandBannerTextDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "HuntersCallCompany",
+        "Type": "class",
+        "Size": "0x8",
+        "Offset": "0x68"
       }
     ]
   },
@@ -420,7 +451,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_8TYRR[0x7]",
+        "Name": "pad0x7_1HY14[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -503,9 +534,9 @@
   },
   "AdventureOnDemandYieldQuestResumeOnConditionsTaleStep": {
     "Super": "TaleQuestStep",
-    "FullSize": "0xa8",
+    "FullSize": "0xb0",
     "InheritedSize": "0x98",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": []
   },
   "AdventureOnDemandTaleFunctionLibrary": {
@@ -578,6 +609,50 @@
         "Type": "Struct OnDemandQuestResumeConditionMetReasonQuestVariable",
         "Size": "0x30",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "GameEventsOnDemandBannerTextDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x150",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "GameEventSpecificBannerTextData",
+        "Type": "TArray<struct GameEventSpecificBannerTextData>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnShipSunkBannerText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "OnVoyageCancelledBannerText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "OnCrewJoinedGameEventBannerHeaderText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "OnCrewJoinedGameEventBannerMessageText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "OnGameEventCompletedBannerMessageText",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x118"
       }
     ]
   },

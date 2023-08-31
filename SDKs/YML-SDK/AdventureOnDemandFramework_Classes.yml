@@ -25,40 +25,40 @@ AdventureOnDemandArrivalTunnelDependencies:
 AdventureOnDemandArrivalTunnelDesc:
   Attributes:
   - Name: ResurfaceLocationOffset
-    Offset: '0xa8'
+    Offset: '0xb0'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_8N8NY[0x4]
-    Offset: '0xb4'
+  - Name: pad0x4_GMK0P[0x4]
+    Offset: '0xbc'
     Size: '0x4'
     Type: char
   - Name: DefaultArrivalLocationWorkerClass
-    Offset: '0xb8'
+    Offset: '0xc0'
     Size: '0x8'
     Type: Class AdventureOnDemandArrivalTunnelWorkerBase*
   - Name: ResurfaceLocationEQ
-    Offset: '0xc0'
+    Offset: '0xc8'
     Size: '0x8'
     Type: Class EnvQuery*
   - Name: ShouldExcludeCrewFromBeingTargetedForGameEvents
-    Offset: '0xc8'
+    Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9MB24[0x3]
-    Offset: '0xc9'
+  - Name: pad0x3_MQ599[0x3]
+    Offset: '0xd1'
     Size: '0x3'
     Type: char
   - Name: ExclusionTimerFromBeingTargetedForGameEvents
-    Offset: '0xcc'
+    Offset: '0xd4'
     Size: '0x4'
     Type: float
   ClassSize: '0x28'
-  FullSize: '0xd0'
-  InheritedSize: '0xa8'
+  FullSize: '0xd8'
+  InheritedSize: '0xb0'
   Super: ClientDestinationPreLoadingArrivalTunnelDesc
 AdventureOnDemandArrivalTunnelOfTheDamned:
   Attributes:
-  - Name: pad0x28_CT97L[0x28]
+  - Name: pad0x28_ZE9PD[0x28]
     Offset: '0x6a0'
     Size: '0x28'
     Type: char
@@ -70,7 +70,7 @@ AdventureOnDemandArrivalTunnelOfTheDamned:
     Offset: '0x6d0'
     Size: '0x8'
     Type: Class AdventureOnDemandArrivalTunnelWorkerBase*
-  - Name: pad0x28_CIU32[0x28]
+  - Name: pad0x28_H21UC[0x28]
     Offset: '0x6d8'
     Size: '0x28'
     Type: char
@@ -95,24 +95,36 @@ AdventureOnDemandDepartureTunnelDependencies:
   InheritedSize: '0x138'
   Super: DepartureTunnelDependencies
 AdventureOnDemandDepartureTunnelDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x100'
-  InheritedSize: '0x100'
+  Attributes:
+  - Name: SecondsAfterCrewArriveInTunnelBeforeAllowingTunnelCancellation
+    Offset: '0x118'
+    Size: '0x4'
+    Type: float
+  - Name: SecondsBetweenTunnelCancellationPopupReminder
+    Offset: '0x11c'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultTunnelCancellationAvailableReminderPopup
+    Offset: '0x120'
+    Size: '0x8'
+    Type: Class PopUpMessageDesc*
+  ClassSize: '0x10'
+  FullSize: '0x128'
+  InheritedSize: '0x118'
   Super: DepartureTunnelDesc
 AdventureOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: AdventureOnDemandDepartureTunnelDesc
-    Offset: '0x8a0'
+    Offset: '0x8b8'
     Size: '0x8'
     Type: Class AdventureOnDemandDepartureTunnelDesc*
-  - Name: pad0x18_CTAP1[0x18]
-    Offset: '0x8a8'
-    Size: '0x18'
+  - Name: pad0x20_6NJI4[0x20]
+    Offset: '0x8c0'
+    Size: '0x20'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0x8c0'
-  InheritedSize: '0x8a0'
+  FullSize: '0x8e0'
+  InheritedSize: '0x8c0'
   Super: DepartureTunnelOfTheDamned
 AdventureOnDemandDisplayHintPopUpStep:
   Attributes: []
@@ -212,7 +224,7 @@ AdventureOnDemandServiceParams:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_7BIMS[0x4]
+  - Name: pad0x4_0GD4K[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -220,8 +232,16 @@ AdventureOnDemandServiceParams:
     Offset: '0x58'
     Size: '0x8'
     Type: Class AdventureOnDemandLocationRequestDataAsset*
-  ClassSize: '0x38'
-  FullSize: '0x60'
+  - Name: GameEventsOnDemandBannerTextDataAsset
+    Offset: '0x60'
+    Size: '0x8'
+    Type: Class GameEventsOnDemandBannerTextDataAsset*
+  - Name: HuntersCallCompany
+    Offset: '0x68'
+    Size: '0x8'
+    Type: class
+  ClassSize: '0x48'
+  FullSize: '0x70'
   InheritedSize: '0x28'
   Super: DataAsset
 AdventureOnDemandSetDirectionToApproachTargetFromStep:
@@ -260,7 +280,7 @@ AdventureOnDemandSetHintPopUpStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_8TYRR[0x7]
+  - Name: pad0x7_1HY14[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -378,8 +398,8 @@ AdventureOnDemandYieldQuestResumeOnConditionsStepDesc:
   Super: TaleQuestStepDesc
 AdventureOnDemandYieldQuestResumeOnConditionsTaleStep:
   Attributes: []
-  ClassSize: '0x10'
-  FullSize: '0xa8'
+  ClassSize: '0x18'
+  FullSize: '0xb0'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 GameEventOnDemandDepartureTunnelDependencies:
@@ -391,19 +411,49 @@ GameEventOnDemandDepartureTunnelDependencies:
 GameEventOnDemandDepartureTunnelDesc:
   Attributes: []
   ClassSize: '0x20'
-  FullSize: '0x120'
-  InheritedSize: '0x100'
+  FullSize: '0x148'
+  InheritedSize: '0x128'
   Super: AdventureOnDemandDepartureTunnelDesc
 GameEventOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: GameEventOnDemandDepartureTunnelDesc
-    Offset: '0x8b8'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: Class GameEventOnDemandDepartureTunnelDesc*
   ClassSize: '0x0'
-  FullSize: '0x8c0'
-  InheritedSize: '0x8c0'
+  FullSize: '0x8e0'
+  InheritedSize: '0x8e0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned
+GameEventsOnDemandBannerTextDataAsset:
+  Attributes:
+  - Name: GameEventSpecificBannerTextData
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<struct GameEventSpecificBannerTextData>
+  - Name: OnShipSunkBannerText
+    Offset: '0x38'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnVoyageCancelledBannerText
+    Offset: '0x70'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnCrewJoinedGameEventBannerHeaderText
+    Offset: '0xa8'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnCrewJoinedGameEventBannerMessageText
+    Offset: '0xe0'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnGameEventCompletedBannerMessageText
+    Offset: '0x118'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0x128'
+  FullSize: '0x150'
+  InheritedSize: '0x28'
+  Super: DataAsset
 VoyageOnDemandArrivalTunnelWorker:
   Attributes: []
   ClassSize: '0x0'
@@ -419,16 +469,16 @@ VoyageOnDemandDepartureTunnelDependencies:
 VoyageOnDemandDepartureTunnelDesc:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x100'
-  InheritedSize: '0x100'
+  FullSize: '0x128'
+  InheritedSize: '0x128'
   Super: AdventureOnDemandDepartureTunnelDesc
 VoyageOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: VoyageOnDemandDepartureTunnelDesc
-    Offset: '0x8b8'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: Class VoyageOnDemandDepartureTunnelDesc*
   ClassSize: '0x0'
-  FullSize: '0x8c0'
-  InheritedSize: '0x8c0'
+  FullSize: '0x8e0'
+  InheritedSize: '0x8e0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned

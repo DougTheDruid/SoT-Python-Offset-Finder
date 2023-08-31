@@ -6,25 +6,47 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0xac (Full Size[0x4ac] - InheritedSize[0x400]
+// Size 0x170 (Full Size[0x588] - InheritedSize[0x418]
 class BP_GuildMastPlaque_C: public GuildPlaque
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x400(0x8)
-	Class MaybeCompressedCanvasRenderTarget2D*                   None;                                              // 0x408(0x8)
-	Struct SlateFontInfo                                         None;                                              // 0x410(0x40)
-	Class MaterialInstanceDynamic*                               None;                                              // 0x450(0x8)
-	Class Material*                                              None;                                              // 0x458(0x8)
-	Class MaterialInstanceDynamic*                               None;                                              // 0x460(0x8)
-	Class MaybeCompressedCanvasRenderTarget2D*                   None;                                              // 0x468(0x8)
-	int                                                          None;                                              // 0x470(0x4)
-	int                                                          None;                                              // 0x474(0x4)
-	Class CanvasWorldMapComponent*                               None;                                              // 0x478(0x8)
-	TArray<Str None>                                             None;                                              // 0x480(0x10)
-	float                                                        None;                                              // 0x490(0x4)
-	int                                                          None;                                              // 0x494(0x4)
-	Class Texture*                                               None;                                              // 0x498(0x8)
-	Struct FeatureFlag                                           None;                                              // 0x4a0(0xc)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x418(0x8)
+	Struct SlateFontInfo                                         Font;                                              // 0x420(0x40)
+	Class MaterialInstanceDynamic*                               GuildPlaque_MID;                                   // 0x460(0x8)
+	Class Material*                                              Bevel_Material;                                    // 0x468(0x8)
+	Class MaterialInstanceDynamic*                               bevelMat_MID;                                      // 0x470(0x8)
+	int                                                          TextCanvasWidth;                                   // 0x478(0x4)
+	int                                                          TextCanvasHeight;                                  // 0x47c(0x4)
+	Class CanvasWorldMapComponent*                               Canvas;                                            // 0x480(0x8)
+	TArray<Str guildRank>                                        guildRank;                                         // 0x488(0x10)
+	float                                                        bevelIntensity;                                    // 0x498(0x4)
+	Struct FeatureFlag                                           FeatureToggle;                                     // 0x49c(0xc)
+	Class Texture2D*                                             BronzeMRMap;                                       // 0x4a8(0x8)
+	Class Texture2D*                                             SilverMRMap;                                       // 0x4b0(0x8)
+	Class Texture2D*                                             GoldMRMap;                                         // 0x4b8(0x8)
+	Class Texture2D*                                             BronzeNormalMap;                                   // 0x4c0(0x8)
+	Class Texture2D*                                             SilverNormalMap;                                   // 0x4c8(0x8)
+	Class Texture2D*                                             GoldNormalMap;                                     // 0x4d0(0x8)
+	Class MaterialInstanceDynamic*                               TextBevel_MID;                                     // 0x4d8(0x8)
+	Class MaterialInstanceDynamic*                               IconBevel_MID;                                     // 0x4e0(0x8)
+	Class MaterialInstanceDynamic*                               RankBevel_MID;                                     // 0x4e8(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   RankRenderTarget;                                  // 0x4f0(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   TextRenderTarget;                                  // 0x4f8(0x8)
+	int                                                          RankTextWidth;                                     // 0x500(0x4)
+	int                                                          RankTextHeight;                                    // 0x504(0x4)
+	Class MaybeCompressedCanvasRenderTarget2D*                   BevelTextRenderTarget;                             // 0x508(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   IconRenderTarget;                                  // 0x510(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   BevelRankRenderTarget;                             // 0x518(0x8)
+	Class MaybeCompressedCanvasRenderTarget2D*                   BevelIconRenderTarget;                             // 0x520(0x8)
+	Struct LinearColor                                           Gold Colour;                                       // 0x528(0x10)
+	Struct LinearColor                                           Silver Colour;                                     // 0x538(0x10)
+	Struct LinearColor                                           Bronze Colour;                                     // 0x548(0x10)
+	Struct LinearColor                                           TextColour;                                        // 0x558(0x10)
+	bool                                                         IconColourFollowsMedallion;                        // 0x568(0x1)
+	char                                                         pad0x7_LDJAV[0x7];                                 // 0x569(0x7)
+	Class Texture2D*                                             DefaultDiffuseMap;                                 // 0x570(0x8)
+	Class Texture2D*                                             DefaultNormalMap;                                  // 0x578(0x8)
+	Class Texture2D*                                             DefaultMRMap;                                      // 0x580(0x8)
 };
 
 

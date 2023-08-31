@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_Cannon_C: public Cannon
 {
 public:
-	Class GroupedInteractableAreaComponent*                      None;                                              // 0xda8(0x8)
-	Class InteractableComponent*                                 None;                                              // 0xdb0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xdb8(0x8)
+	Class GroupedInteractableAreaComponent*                      GroupedInteractableArea;                           // 0xda8(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0xdb0(0x8)
+	Class StaticMeshComponent*                                   Collision;                                         // 0xdb8(0x8)
 };
 
 

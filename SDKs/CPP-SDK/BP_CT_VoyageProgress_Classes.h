@@ -11,10 +11,10 @@ class BP_CT_VoyageProgress_C: public CompanyTutorialVoyageProgress
 {
 public:
 	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xe0(0x8)
-	char                                                         pad0xde_S2ZEM[0xde];                               // 0xe8(0xde)
+	char                                                         pad0x16f_YKKUV[0x16f];                             // 0xe8(0x16f)
 	Class AthenaPlayerController*                                AthenaPlayerController;                            // 0xe8(0x8)
 	byte                                                         VoyageState;                                       // 0xf0(0x1)
-	char                                                         pad0x7_O56U1[0x7];                                 // 0xf1(0x7)
+	char                                                         pad0x7_R9ZB3[0x7];                                 // 0xf1(0x7)
 	class                                                        MaximumRank;                                       // 0xf8(0x8)
 	bool                                                         NoLongerPurchaseable;                              // 0x100(0x1)
 };

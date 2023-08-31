@@ -10,19 +10,19 @@ namespace DougsSDKDumper
 class BP_ItemPreview_C: public ItemPreviewActor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x5a8(0x8)
-	Class ArrowComponent*                                        None;                                              // 0x5b0(0x8)
-	Class ArrowComponent*                                        None;                                              // 0x5b8(0x8)
-	Class ArrowComponent*                                        None;                                              // 0x5c0(0x8)
-	Class ArrowComponent*                                        None;                                              // 0x5c8(0x8)
-	Class BillboardComponent*                                    None;                                              // 0x5d0(0x8)
-	Class ArrowComponent*                                        None;                                              // 0x5d8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x5e0(0x8)
-	Class SkeletalMeshComponent*                                 None;                                              // 0x5e8(0x8)
-	Class SkeletalMeshComponent*                                 None;                                              // 0x5f0(0x8)
-	Class CameraComponent*                                       None;                                              // 0x5f8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x600(0x8)
-	char                                                         pad0x30_2GX1N[0x30];                               // 0x608(0x30)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x5a8(0x8)
+	Class ArrowComponent*                                        Camera_Dog;                                        // 0x5b0(0x8)
+	Class ArrowComponent*                                        Camera_Far;                                        // 0x5b8(0x8)
+	Class ArrowComponent*                                        Camera_Mid;                                        // 0x5c0(0x8)
+	Class ArrowComponent*                                        Camera_Near;                                       // 0x5c8(0x8)
+	Class BillboardComponent*                                    IconBillboard;                                     // 0x5d0(0x8)
+	Class ArrowComponent*                                        Camera_Default;                                    // 0x5d8(0x8)
+	Class ChildActorComponent*                                   ChildActor;                                        // 0x5e0(0x8)
+	Class SkeletalMeshComponent*                                 HiddenDftMesh;                                     // 0x5e8(0x8)
+	Class SkeletalMeshComponent*                                 ItemMesh;                                          // 0x5f0(0x8)
+	Class CameraComponent*                                       Camera;                                            // 0x5f8(0x8)
+	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x600(0x8)
+	char                                                         pad0x30_7JM8Y[0x30];                               // 0x608(0x30)
 };
 
 

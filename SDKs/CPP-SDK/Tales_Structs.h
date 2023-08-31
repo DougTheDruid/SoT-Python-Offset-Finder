@@ -11,7 +11,7 @@ struct TaleQuestDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_CFIEO[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MXQKA[0x4];                                 // 0x4(0x4)
 	Struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
 	int                                                          NumToDeliver;                                      // 0x30(0x4)
 	int                                                          NumToAllocate;                                     // 0x34(0x4)
@@ -109,7 +109,7 @@ public:
 	Struct TaleQuestQueryableStateDataInfoId                     InfoId;                                            // 0x0(0x20)
 	class                                                        DataID;                                            // 0x20(0x8)
 	bool                                                         DataBool;                                          // 0x28(0x1)
-	char                                                         pad0x3_GNHWV[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_1PMGR[0x3];                                 // 0x29(0x3)
 	int                                                          DataInt;                                           // 0x2c(0x4)
 };
 
@@ -129,7 +129,7 @@ public:
 	Struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
 	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
 	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
-	char                                                         pad0x6_2ESP1[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_1NE9P[0x6];                                 // 0x22(0x6)
 	Struct FText                                                 FailureMessage;                                    // 0x28(0x38)
 };
 
@@ -532,6 +532,22 @@ public:
 struct QuestVariablePageLayout
 {
 public:
+};
+
+
+// Size 0x18
+struct EndOnScreenParticlesRpc
+{
+public:
+	Class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct TriggerOnScreenParticlesRpc
+{
+public:
+	Class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
 };
 
 

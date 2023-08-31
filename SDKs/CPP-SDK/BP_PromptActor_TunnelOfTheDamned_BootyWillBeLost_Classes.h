@@ -7,11 +7,11 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
-class BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C: public None
+class BP_PromptActor_TunnelOfTheDamned_BootyWillBeLost_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x400(0x8)
-	BlueprintGeneratedClass None*                                None;                                              // 0x408(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C* PromptCoordinator;                                 // 0x408(0x8)
 };
 
 

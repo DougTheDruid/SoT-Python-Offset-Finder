@@ -2,75 +2,75 @@
 # https://github.com/DougTheDruid
 wsp_palm_cluster_03_d_C:
   Attributes:
-  - Name: None
+  - Name: wsp_flower_01_a
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__e
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__f
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__h
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__g
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__b
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_pebbles__a
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent011
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent09
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent06
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent05
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent04
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent02
     Offset: '0x468'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: NonVagueNonUniqueLandmark
     Offset: '0x470'
     Size: '0x8'
     Type: Class NonVagueNonUniqueLandmarkComponent*
-  - Name: None
+  - Name: StaticMeshComponent01
     Offset: '0x478'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: StaticMeshComponent0
     Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x488'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x88'
   FullSize: '0x490'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

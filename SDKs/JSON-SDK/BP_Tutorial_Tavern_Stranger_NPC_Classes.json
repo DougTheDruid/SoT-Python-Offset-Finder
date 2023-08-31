@@ -1,51 +1,51 @@
 {
   "BP_Tutorial_Tavern_Stranger_NPC_C": {
     "Super": "TutorialTavernStrangerNPC",
-    "FullSize": "0x8a8",
-    "InheritedSize": "0x840",
+    "FullSize": "0x8c8",
+    "InheritedSize": "0x860",
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x840"
-      },
-      {
-        "Name": "None",
-        "Type": "Class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x848"
-      },
-      {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x850"
-      },
-      {
-        "Name": "None",
-        "Type": "Class NPCDialogComponent*",
-        "Size": "0x8",
-        "Offset": "0x858"
-      },
-      {
-        "Name": "None",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x860"
       },
       {
-        "Name": "None",
-        "Type": "Struct FText",
-        "Size": "0x38",
+        "Name": "SolidHits",
+        "Type": "Class CapsuleComponent*",
+        "Size": "0x8",
         "Offset": "0x868"
       },
       {
-        "Name": "None",
+        "Name": "StaticMesh",
+        "Type": "Class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
+      {
+        "Name": "NPCDialog",
+        "Type": "Class NPCDialogComponent*",
+        "Size": "0x8",
+        "Offset": "0x878"
+      },
+      {
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
+        "Offset": "0x880"
+      },
+      {
+        "Name": "MysteriousStranger",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x888"
+      },
+      {
+        "Name": "CutSceneActor",
         "Type": "Class CutSceneActor*",
         "Size": "0x8",
-        "Offset": "0x8a0"
+        "Offset": "0x8c0"
       }
     ]
   },

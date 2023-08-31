@@ -1,30 +1,30 @@
 {
   "BP_CustomisableLadder_PointToPoint_C": {
-    "Super": "None",
+    "Super": "BP_CustomisableLadder_C",
     "FullSize": "0x68c",
     "InheritedSize": "0x668",
     "ClassSize": "0x24",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "None",
+        "Name": "Ladder Roll",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x670"
       },
       {
-        "Name": "None",
+        "Name": "Ladder Top Target",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x674"
       },
       {
-        "Name": "None",
+        "Name": "Ladder Bottom Target",
         "Type": "Struct Vector",
         "Size": "0xc",
         "Offset": "0x680"

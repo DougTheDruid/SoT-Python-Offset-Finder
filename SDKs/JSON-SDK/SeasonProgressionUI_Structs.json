@@ -46,6 +46,59 @@
       }
     ]
   },
+  "SeasonTextPopupAsset": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "GlowIcon",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Icon",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Message",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ToastSfxEventName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ToastEventName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "ToastSwitchName",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ToastSwitchValue",
+        "Type": "Struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "ToastHoldDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x98"
+      }
+    ]
+  },
   "SeasonGoalPopupAsset": {
     "ClassSize": "0x80",
     "Attributes": [
@@ -186,7 +239,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_LUO94[0x4]",
+        "Name": "pad0x4_Z94TG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -209,7 +262,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_AWQYD[0x3]",
+        "Name": "pad0x3_AIPIK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -219,6 +272,29 @@
         "Type": "Struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "SeasonsTextNotification": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "IconUrl",
+        "Type": "Struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Message",
+        "Type": "Struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Audio",
+        "Type": "Struct GenericPopupAudioDescriptor",
+        "Size": "0x40",
+        "Offset": "0x48"
       }
     ]
   },
@@ -259,7 +335,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_WHZDC[0x3]",
+        "Name": "pad0x3_9FLO5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -293,7 +369,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_BHVNX[0x3]",
+        "Name": "pad0x3_GA77W[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -314,6 +390,28 @@
         "Type": "Struct DeedProgressDesc",
         "Size": "0x80",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "SeasonsTextNotificationNetworkEvent": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "SeasonsTextNotification",
+        "Type": "Struct SeasonsTextNotification",
+        "Size": "0x88",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SeasonsChatNotificationNetworkEvent": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "SeasonsChatNotificationEvent",
+        "Type": "Struct SeasonsChatNotificationEvent",
+        "Size": "0x60",
+        "Offset": "0x10"
       }
     ]
   },

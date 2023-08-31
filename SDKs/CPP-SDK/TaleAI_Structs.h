@@ -11,10 +11,10 @@ struct SpawnAICustomOnDespawnTaskData
 {
 public:
 	int                                                          Despawn_Index;                                     // 0x0(0x4)
-	char                                                         pad0x4_472C8[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MWEFA[0x4];                                 // 0x4(0x4)
 	Class Pawn*                                                  Despawn_Pawn;                                      // 0x8(0x8)
 	byte                                                         Despawn_Reason;                                    // 0x10(0x1)
-	char                                                         pad0x7_G0MJ7[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_VKNYO[0x7];                                 // 0x11(0x7)
 	Class TaleQuestStepDesc*                                     Body;                                              // 0x18(0x8)
 };
 
@@ -24,7 +24,7 @@ struct SpawnAICustomOnSpawnTaskData
 {
 public:
 	int                                                          Spawn_Index;                                       // 0x0(0x4)
-	char                                                         pad0x4_G2377[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_JHQ4C[0x4];                                 // 0x4(0x4)
 	Class Pawn*                                                  Spawn_Pawn;                                        // 0x8(0x8)
 	Class TaleQuestStepDesc*                                     Body;                                              // 0x10(0x8)
 };
@@ -43,24 +43,27 @@ struct SpawnActorCustomOnTriggerWaveTaskData
 {
 public:
 	int                                                          NumAIToSpawn;                                      // 0x0(0x4)
-	char                                                         pad0x4_XFRV3[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_IEOWK[0x4];                                 // 0x4(0x4)
 	Class TaleQuestStepDesc*                                     Body;                                              // 0x8(0x8)
 };
 
 
-// Size 0x68
+// Size 0x78
 struct SpawnAICustomPreSpawnTaskData
 {
 public:
 	int                                                          Index;                                             // 0x0(0x4)
 	Struct Vector                                                SpawnLocation;                                     // 0x4(0xc)
-	Class AthenaAIControllerParamsDataAsset*                     Skillset;                                          // 0x30(0x8)
-	Class LoadoutAsset*                                          Loadout;                                           // 0x38(0x8)
-	Class AthenaAIFormDataAsset*                                 Form;                                              // 0x40(0x8)
-	Class AthenaAIAmmoDataAsset*                                 Ammo;                                              // 0x48(0x8)
-	class                                                        AIClass;                                           // 0x50(0x8)
-	Class AIPartsCategory*                                       PartsCategory;                                     // 0x58(0x8)
-	Class TaleQuestStepDesc*                                     Body;                                              // 0x60(0x8)
+	Struct Rotator                                               SpawnRotation;                                     // 0x10(0xc)
+	bool                                                         PerceiveActor;                                     // 0x1c(0x1)
+	char                                                         pad0x3_16T83[0x3];                                 // 0x1d(0x3)
+	Class AthenaAIControllerParamsDataAsset*                     Skillset;                                          // 0x40(0x8)
+	Class LoadoutAsset*                                          Loadout;                                           // 0x48(0x8)
+	Class AthenaAIFormDataAsset*                                 Form;                                              // 0x50(0x8)
+	Class AthenaAIAmmoDataAsset*                                 Ammo;                                              // 0x58(0x8)
+	class                                                        AIClass;                                           // 0x60(0x8)
+	Class AIPartsCategory*                                       PartsCategory;                                     // 0x68(0x8)
+	Class TaleQuestStepDesc*                                     Body;                                              // 0x70(0x8)
 };
 
 
@@ -69,7 +72,7 @@ struct SpawnAICustomSetupTaskData
 {
 public:
 	int                                                          MaxAI;                                             // 0x0(0x4)
-	char                                                         pad0x4_DVNPW[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_D4TMZ[0x4];                                 // 0x4(0x4)
 	Class TaleAIRegionBase*                                      Region;                                            // 0x8(0x8)
 	Class TaleQuestStepDesc*                                     Body;                                              // 0x10(0x8)
 };

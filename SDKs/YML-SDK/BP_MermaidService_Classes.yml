@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_MermaidService_C:
   Attributes:
-  - Name: None
-    Offset: '0x558'
+  - Name: DefaultSceneRoot
+    Offset: '0x5f0'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x560'
-  InheritedSize: '0x558'
+  FullSize: '0x5f8'
+  InheritedSize: '0x5f0'
   Super: MermaidService

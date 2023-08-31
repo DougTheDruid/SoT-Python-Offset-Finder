@@ -17,22 +17,24 @@ public:
 class GameEventsOnDemandAvailabilityService: public Object
 {
 public:
-	char                                                         pad0x40_3454C[0x40];                               // 0x28(0x40)
+	char                                                         pad0x40_JLXLD[0x40];                               // 0x28(0x40)
 	Class World*                                                 World;                                             // 0x68(0x8)
-	char                                                         pad0x18_HJ41F[0x18];                               // 0x70(0x18)
+	char                                                         pad0x18_O7WBT[0x18];                               // 0x70(0x18)
 };
 
 
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class GameEventsOnDemandLoserTunnelService: public Object
+// Size 0x140 (Full Size[0x508] - InheritedSize[0x3c8]
+class GameEventsOnDemandLoserTunnelService: public Actor
 {
 public:
-	char                                                         pad0x8_UGT5A[0x8];                                 // 0x28(0x8)
-	Class World*                                                 World;                                             // 0x30(0x8)
-	Class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x38(0x8)
-	char                                                         pad0x20_85NXC[0x20];                               // 0x40(0x20)
-	TArray<struct TrackedCrews>                                  TrackedCrews;                                      // 0x60(0x10)
-	char                                                         pad0x18_XJ706[0x18];                               // 0x70(0x18)
+	char                                                         pad0x8_Z1UCV[0x8];                                 // 0x3c8(0x8)
+	Class World*                                                 World;                                             // 0x3d0(0x8)
+	char                                                         pad0x58_OAVIB[0x58];                               // 0x3d8(0x58)
+	Class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x430(0x8)
+	char                                                         pad0x50_GUUU2[0x50];                               // 0x438(0x50)
+	TArray<struct TrackedCrews>                                  TrackedCrews;                                      // 0x488(0x10)
+	struct FName                                                 TemporaryBannerTag;                                // 0x498(0x8)
+	char                                                         pad0x68_KWF9T[0x68];                               // 0x4a0(0x68)
 };
 
 

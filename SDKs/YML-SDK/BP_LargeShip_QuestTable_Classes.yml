@@ -2,47 +2,51 @@
 # https://github.com/DougTheDruid
 BP_LargeShip_QuestTable_C:
   Attributes:
-  - Name: None
+  - Name: CancelVoyageSeaOfThievesOnDemand
     Offset: '0x8f0'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: WarMap
     Offset: '0x8f8'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: FactionHourglass
     Offset: '0x900'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CancelAdventure
     Offset: '0x908'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: PlayerBuiredItemsMapBundleInteractionPoint
     Offset: '0x910'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CancelTale
     Offset: '0x918'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: CancelVoyage
     Offset: '0x920'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageSelectionSlot4
     Offset: '0x928'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageSelectionSlot3
     Offset: '0x930'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  - Name: None
+  - Name: VoyageSelectionSlot2
     Offset: '0x938'
     Size: '0x8'
     Type: Class ChildActorComponent*
-  ClassSize: '0x50'
-  FullSize: '0x940'
+  - Name: VoyageSelectionSlot1
+    Offset: '0x940'
+    Size: '0x8'
+    Type: Class ChildActorComponent*
+  ClassSize: '0x58'
+  FullSize: '0x948'
   InheritedSize: '0x8f0'
   Super: VoyageTable

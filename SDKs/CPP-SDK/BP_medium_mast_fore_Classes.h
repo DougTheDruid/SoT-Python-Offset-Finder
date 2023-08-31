@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 class BP_medium_mast_fore_C: public BP_Mast_C
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0xa68(0x8)
-	char                                                         pad0x100f691_LSTL5[0x100f691];                     // 0xa70(0x100f691)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa68(0x8)
+	Class StaticMeshComponent*                                   shp_flag_pennant_pole_01_a;                        // 0xa70(0x8)
+	Class StaticMeshComponent*                                   shp_flag_pennant_alliance_01_a;                    // 0xa78(0x8)
 };
 
 

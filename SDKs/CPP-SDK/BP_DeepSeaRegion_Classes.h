@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_DeepSeaRegion_C: public DeepSeaRegion
 {
 public:
-	Class CapsuleComponent*                                      None;                                              // 0x438(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0x440(0x8)
+	Class CapsuleComponent*                                      PreviewCapsuleTwo;                                 // 0x438(0x8)
+	Class CapsuleComponent*                                      PreviewCapsuleOne;                                 // 0x440(0x8)
 };
 
 

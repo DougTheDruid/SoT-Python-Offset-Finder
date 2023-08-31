@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 BP_SKD_ShrineShimmer_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x470'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: surface_bio_lum
     Offset: '0x478'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: volume_glow
     Offset: '0x480'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shimmer_water_00
     Offset: '0x488'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shimmer_air_01
     Offset: '0x490'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: shimmer_air_00
     Offset: '0x498'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: SharedRoot
     Offset: '0x4a0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: FadeCurve_Opacity_D7ECDDBE4184BCE83B3BD58190CD98C7
     Offset: '0x4a8'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: FadeCurve__Direction_D7ECDDBE4184BCE83B3BD58190CD98C7
     Offset: '0x4ac'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BUVUM[0x3]
+  - Name: pad0x3_TXANS[0x3]
     Offset: '0x4ad'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: FadeCurve
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class TimelineComponent*
-  - Name: None
+  - Name: ShimmerIsVisible
     Offset: '0x4b8'
     Size: '0x1'
     Type: bool

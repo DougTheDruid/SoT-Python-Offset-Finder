@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_SkullRitual_Pipe_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
+	Class StaticMeshComponent*                                   gmp_sm_pipe_oos_01_a;                              // 0x3c8(0x8)
 };
 
 

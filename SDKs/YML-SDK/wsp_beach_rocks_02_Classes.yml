@@ -2,59 +2,59 @@
 # https://github.com/DougTheDruid
 wsp_beach_rocks_02_C:
   Attributes:
-  - Name: None
+  - Name: wsp_rock_xtra_small__c10
     Offset: '0x408'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__e4
     Offset: '0x410'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__e3
     Offset: '0x418'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c6
     Offset: '0x420'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c5
     Offset: '0x428'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c9
     Offset: '0x430'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c8
     Offset: '0x438'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c7
     Offset: '0x440'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__c4
     Offset: '0x448'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_xtra_small__e2
     Offset: '0x450'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_cliff_o8
     Offset: '0x458'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: wsp_rock_cliff_o9
     Offset: '0x460'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Scene
     Offset: '0x468'
     Size: '0x8'
     Type: Class SceneComponent*
   ClassSize: '0x68'
   FullSize: '0x470'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

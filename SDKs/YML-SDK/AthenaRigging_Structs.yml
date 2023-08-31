@@ -147,7 +147,7 @@ RiggingSystemPulleyParams:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_32SMP[0x4]
+  - Name: pad0x4_MXFEI[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

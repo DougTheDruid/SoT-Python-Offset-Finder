@@ -98,11 +98,11 @@ public:
 class SelfInitialisingActionStateMachineComponent: public ActionStateMachineComponent
 {
 public:
-	char                                                         pad0x8_FCY3W[0x8];                                 // 0x858(0x8)
+	char                                                         pad0x8_PWKL0[0x8];                                 // 0x858(0x8)
 	Class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x860(0x8)
 	class                                                        ActionStateCreatorDefinition;                      // 0x868(0x8)
 	class                                                        ActionStateInitialStateCreatorDefinition;          // 0x870(0x8)
-	char                                                         pad0x28_CE6Y0[0x28];                               // 0x878(0x28)
+	char                                                         pad0x28_0KU56[0x28];                               // 0x878(0x28)
 };
 
 
@@ -111,7 +111,7 @@ class CustomClientValidityCheckCallback: public Object
 {
 public:
 	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
-	char                                                         pad0x7_E4R85[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_6V1JA[0x7];                                 // 0x29(0x7)
 };
 
 

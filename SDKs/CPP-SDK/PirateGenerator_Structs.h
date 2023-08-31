@@ -30,17 +30,17 @@ struct PirateDescription
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_4I92D[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_I6MVK[0x3];                                 // 0x1(0x3)
 	int                                                          Version;                                           // 0x4(0x4)
 	byte                                                         Gender;                                            // 0x8(0x1)
 	byte                                                         Ethnicity;                                         // 0x9(0x1)
-	char                                                         pad0x2_QVB9N[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_4TO01[0x2];                                 // 0xa(0x2)
 	Struct RadialCoordinate                                      BodyShapeCoordinate;                               // 0xc(0x8)
-	char                                                         pad0x4_JAFTG[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_ZG0GK[0x4];                                 // 0x14(0x4)
 	TArray<struct BlendShapes>                                   BlendShapes;                                       // 0x18(0x10)
 	TArray<struct DynamicSliders>                                DynamicSliders;                                    // 0x28(0x10)
 	int                                                          Seed;                                              // 0x38(0x4)
-	char                                                         pad0x4_92LCX[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_UHVUE[0x4];                                 // 0x3c(0x4)
 	TArray<struct FName>                                         Items;                                             // 0x40(0x10)
 	TArray<struct FName>                                         TextureReferences;                                 // 0x50(0x10)
 	TArray<struct FName>                                         MaterialReferences;                                // 0x60(0x10)
@@ -124,10 +124,10 @@ public:
 	float                                                        FloatTest;                                         // 0x8(0x4)
 	int                                                          IntTest;                                           // 0xc(0x4)
 	byte                                                         EnumTest;                                          // 0x10(0x1)
-	char                                                         pad0x3_SBP5F[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_CGQC1[0x3];                                 // 0x11(0x3)
 	Struct IPGTestSimpleType                                     ObjectTest;                                        // 0x14(0xc)
 	Struct IPGTestSimpleType                                     ObjectNoneTest;                                    // 0x20(0xc)
-	char                                                         pad0x4_PQTKH[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_QKVF2[0x4];                                 // 0x2c(0x4)
 	TArray<struct VectorTest>                                    VectorTest;                                        // 0x30(0x10)
 	TArray<struct FName>                                         StrVectorTest;                                     // 0x40(0x10)
 	TArray<Byte EnumVectorTest>                                  EnumVectorTest;                                    // 0x50(0x10)
@@ -180,7 +180,7 @@ public:
 	TArray<struct BlendingMethods>                               BlendingMethods;                                   // 0x10(0x10)
 	TArray<struct Groups>                                        Groups;                                            // 0x20(0x10)
 	int                                                          CurrentVersion;                                    // 0x30(0x4)
-	char                                                         pad0x4_B7UYU[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_FT6PP[0x4];                                 // 0x34(0x4)
 	TArray<struct Versions>                                      Versions;                                          // 0x38(0x10)
 };
 
@@ -190,7 +190,7 @@ struct IPGSetsData
 {
 public:
 	int                                                          Version;                                           // 0x0(0x4)
-	char                                                         pad0x4_EHWMQ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_S8PAO[0x4];                                 // 0x4(0x4)
 	TArray<struct Sets>                                          Sets;                                              // 0x8(0x10)
 };
 
@@ -202,7 +202,7 @@ public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	byte                                                         Gender;                                            // 0x8(0x1)
 	byte                                                         Ethnicity;                                         // 0x9(0x1)
-	char                                                         pad0x2_9HCNY[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_NZR2X[0x2];                                 // 0xa(0x2)
 	int                                                          Priority;                                          // 0xc(0x4)
 	TArray<struct Nodes>                                         Nodes;                                             // 0x10(0x10)
 };
@@ -225,7 +225,7 @@ public:
 	float                                                        Min;                                               // 0x8(0x4)
 	float                                                        Max;                                               // 0xc(0x4)
 	float                                                        Env;                                               // 0x10(0x4)
-	char                                                         pad0x4_JJ2XJ[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_0T50M[0x4];                                 // 0x14(0x4)
 	TArray<struct Compatibility>                                 Compatibility;                                     // 0x18(0x10)
 };
 
@@ -350,7 +350,7 @@ struct BlendedSubMeshSpecification
 public:
 	Class SkeletalMesh*                                          Mesh;                                              // 0x0(0x8)
 	float                                                        BaseMeshWeight;                                    // 0x8(0x4)
-	char                                                         pad0x4_Z8TCS[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_L5CQV[0x4];                                 // 0xc(0x4)
 	TArray<class MeshPatchAsset*>                                MeshPatchAssets;                                   // 0x10(0x10)
 	TArray<Float MeshPatchAssetWeights>                          MeshPatchAssetWeights;                             // 0x20(0x10)
 };
@@ -371,7 +371,7 @@ struct MaterialReferenceEntry
 public:
 	bool                                                         bCopyParametersAcross;                             // 0x0(0x1)
 	bool                                                         bReplaceAll;                                       // 0x1(0x1)
-	char                                                         pad0x6_NLPVP[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_7YDVE[0x6];                                 // 0x2(0x6)
 	Class MaterialInterface*                                     FromMaterial;                                      // 0x8(0x8)
 	Class MaterialInstanceConstant*                              ToMaterial;                                        // 0x10(0x8)
 };
@@ -427,7 +427,7 @@ struct TextureSwitchEthnicityEntry
 {
 public:
 	byte                                                         Ethnicity;                                         // 0x0(0x1)
-	char                                                         pad0x7_WII1N[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_G7FY9[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  Texture;                                           // 0x8(0x10)
 };
 
@@ -437,7 +437,7 @@ struct TextureSwitchGenderEntry
 {
 public:
 	byte                                                         Gender;                                            // 0x0(0x1)
-	char                                                         pad0x7_81D0P[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_EW1UJ[0x7];                                 // 0x1(0x7)
 	Struct StringAssetReference                                  Texture;                                           // 0x8(0x10)
 };
 
@@ -457,13 +457,13 @@ struct TextureSwitchParameters
 public:
 	bool                                                         bAsync;                                            // 0x8(0x1)
 	bool                                                         bHighPriority;                                     // 0x9(0x1)
-	char                                                         pad0x2_RQDOY[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_D1CV0[0x2];                                 // 0xa(0x2)
 	int                                                          Seed;                                              // 0xc(0x4)
 	byte                                                         SelectedGender;                                    // 0x10(0x1)
 	byte                                                         SelectedEthnicity;                                 // 0x11(0x1)
-	char                                                         pad0x2_3HLLJ[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_RGXWM[0x2];                                 // 0x12(0x2)
 	struct FName                                                 SelectedBodyShape;                                 // 0x14(0x8)
-	char                                                         pad0x4_AMUWX[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_4LT9R[0x4];                                 // 0x1c(0x4)
 	TArray<struct FName>                                         SelectedItems;                                     // 0x20(0x10)
 	TArray<struct FName>                                         SelectedReferences;                                // 0x30(0x10)
 };

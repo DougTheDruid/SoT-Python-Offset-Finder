@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Constellation_C: public Constellation
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x460(0x8)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x460(0x8)
 };
 
 

@@ -14,7 +14,7 @@ BP_Blunderbuss_C:
     Offset: '0xb30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_8Y1XJ[0x7]
+  - Name: pad0x7_WLO89[0x7]
     Offset: '0xb31'
     Size: '0x7'
     Type: char

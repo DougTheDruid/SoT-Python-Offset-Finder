@@ -49,7 +49,7 @@ ExtraSpawnDistanceByIslandType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_WKYRN[0x3]
+  - Name: pad0x3_77OG2[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -69,6 +69,25 @@ ExtraSpawnDistanceFromIsland:
     Size: '0x10'
     Type: TArray<struct DistanceByIslandType>
   ClassSize: '0x18'
+GameEventOnDemandBannerTextData:
+  Attributes:
+  - Name: GameEventTypes
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  - Name: OnShipSunkBannerText
+    Offset: '0x10'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnVoyageCancelledBannerText
+    Offset: '0x48'
+    Size: '0x38'
+    Type: Struct FText
+  - Name: OnGameEventCompletedBannerHeaderText
+    Offset: '0x80'
+    Size: '0x38'
+    Type: Struct FText
+  ClassSize: '0xb8'
 OnDemandQuestResumeConditionMetReasonQuestVariable:
   Attributes: []
   ClassSize: '0x30'
@@ -96,7 +115,7 @@ VoyageHintPopupDescEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_LBEMS[0x7]
+  - Name: pad0x7_HIFNL[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

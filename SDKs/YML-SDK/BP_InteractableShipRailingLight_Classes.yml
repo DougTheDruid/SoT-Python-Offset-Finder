@@ -2,71 +2,71 @@
 # https://github.com/DougTheDruid
 BP_InteractableShipRailingLight_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x708'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: Interactable
     Offset: '0x710'
     Size: '0x8'
     Type: Class InteractableComponent*
-  - Name: None
+  - Name: LanternGlow
     Offset: '0x718'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: Light
     Offset: '0x720'
     Size: '0x8'
     Type: Class StaticMeshComponent*
-  - Name: None
+  - Name: DynamicGlowMaterial
     Offset: '0x728'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: GlowBrightnessParameterName
     Offset: '0x730'
     Size: '0x8'
     Type: struct FName
-  - Name: None
+  - Name: GlowRandomSeedParameterName
     Offset: '0x738'
     Size: '0x8'
     Type: struct FName
-  - Name: None
+  - Name: GlowIntensityOn
     Offset: '0x740'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: GlowIntensityOff
     Offset: '0x744'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: UsesGlow
     Offset: '0x748'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_M8X5T[0x7]
+  - Name: pad0x7_WGOI4[0x7]
     Offset: '0x749'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: DynamicMaterial
     Offset: '0x750'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: FlameParameterName
     Offset: '0x758'
     Size: '0x8'
     Type: struct FName
-  - Name: None
+  - Name: FlameIntensityOn
     Offset: '0x760'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: FlameIntensityOff
     Offset: '0x764'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: DefaultGlowColour
     Offset: '0x768'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: None
+  - Name: CurrentFlameOfFateType
     Offset: '0x778'
     Size: '0x1'
     Type: byte

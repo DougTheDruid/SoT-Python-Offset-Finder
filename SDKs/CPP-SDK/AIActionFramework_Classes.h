@@ -52,7 +52,7 @@ public:
 class AIActionInstigatorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_8A2XX[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_A0GN2[0x8];                                 // 0xc8(0x8)
 	TArray<class Class*>                                         CurrentRoles;                                      // 0xd0(0x10)
 	class                                                        InitialActivity;                                   // 0xe0(0x8)
 	class                                                        CurrentActivity;                                   // 0xe8(0x8)
@@ -77,12 +77,12 @@ public:
 class AIActionSpotComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_2V1FU[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_Q52JE[0x8];                                 // 0xc8(0x8)
 	TArray<class Class*>                                         SupportedRoles;                                    // 0xd0(0x10)
 	TArray<class Class*>                                         SupportedActivities;                               // 0xe0(0x10)
 	TArray<class Class*>                                         ContextTags;                                       // 0xf0(0x10)
 	class                                                        CustomAnimInstance;                                // 0x100(0x8)
-	char                                                         pad0x18_0R6CK[0x18];                               // 0x108(0x18)
+	char                                                         pad0x18_2R190[0x18];                               // 0x108(0x18)
 };
 
 

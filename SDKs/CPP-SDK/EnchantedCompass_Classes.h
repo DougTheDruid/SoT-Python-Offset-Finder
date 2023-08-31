@@ -17,10 +17,10 @@ public:
 	Class CurveFloat*                                            RotationSequenceCurve;                             // 0x9e8(0x8)
 	Class RotatingCompassSpinComponent*                          RotatingCompassSpinComponent;                      // 0x9f0(0x8)
 	byte                                                         RotationState;                                     // 0x9f8(0x1)
-	char                                                         pad0x3_N6IF3[0x3];                                 // 0x9f9(0x3)
+	char                                                         pad0x3_GKI3F[0x3];                                 // 0x9f9(0x3)
 	float                                                        SplineDistanceOffset;                              // 0x9fc(0x4)
 	float                                                        TargetYawAngleBeforeRotationSequence;              // 0xa00(0x4)
-	char                                                         pad0xc_BYXIV[0xc];                                 // 0xa04(0xc)
+	char                                                         pad0xc_JTIG3[0xc];                                 // 0xa04(0xc)
 };
 
 
@@ -31,9 +31,9 @@ public:
 	Class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xc8(0x8)
 	Class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xd0(0x8)
 	float                                                        MaxFrequencyDistanceSquared;                       // 0xd8(0x4)
-	char                                                         pad0x4_RS2PZ[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_UEZCT[0x4];                                 // 0xdc(0x4)
 	bool                                                         IsSettingEnabled;                                  // 0x120(0x1)
-	char                                                         pad0xef_5O2IF[0xef];                               // 0x121(0xef)
+	char                                                         pad0xef_USU48[0xef];                               // 0x121(0xef)
 };
 
 
@@ -45,7 +45,7 @@ public:
 	TArray<struct LocationIds>                                   LocationIds;                                       // 0x8e8(0x10)
 	Class InventoryItemComponent*                                InventoryItem;                                     // 0x8f8(0x8)
 	Class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x900(0x8)
-	char                                                         pad0x8_ZO6DT[0x8];                                 // 0x908(0x8)
+	char                                                         pad0x8_NCKXK[0x8];                                 // 0x908(0x8)
 };
 
 
@@ -116,7 +116,7 @@ class TaleQuestRotatingCompassService: public TaleQuestService
 public:
 	Class Actor*                                                 SplinePathActor;                                   // 0x60(0x8)
 	Class RotatingCompass*                                       RotatingCompass;                                   // 0x68(0x8)
-	char                                                         pad0x98_881N0[0x98];                               // 0x70(0x98)
+	char                                                         pad0x98_GTW2R[0x98];                               // 0x70(0x98)
 };
 
 
@@ -161,7 +161,7 @@ class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         TargetUpdateReason;                                // 0x80(0x1)
-	char                                                         pad0x7_J7FD1[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_NMYY8[0x7];                                 // 0x81(0x7)
 };
 
 

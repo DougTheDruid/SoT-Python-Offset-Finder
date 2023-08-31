@@ -28,7 +28,7 @@ CommodityDemandFrameworkSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_AZBCG[0x4]
+  - Name: pad0x4_UQ1WI[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -50,7 +50,7 @@ CommodityDemandFrameworkSettings:
   Super: DeveloperSettings
 CommodityDemandService:
   Attributes:
-  - Name: pad0x20_1PQJH[0x20]
+  - Name: pad0x20_KYXE3[0x20]
     Offset: '0x3c8'
     Size: '0x20'
     Type: char
@@ -62,7 +62,7 @@ CommodityDemandService:
     Offset: '0x408'
     Size: '0x8'
     Type: Class MerchantSovereignHandInNameInformationDataAsset*
-  - Name: pad0x30_PAJC1[0x30]
+  - Name: pad0x30_5RJNU[0x30]
     Offset: '0x410'
     Size: '0x30'
     Type: char
@@ -108,7 +108,7 @@ CommodityItemDesc:
     Offset: '0x128'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_NC96D[0x7]
+  - Name: pad0x7_W1L5D[0x7]
     Offset: '0x129'
     Size: '0x7'
     Type: char
@@ -124,7 +124,7 @@ CommodityPurchaseTrackingComponent:
   Super: ActorComponent
 CommodityRedemptionComponent:
   Attributes:
-  - Name: pad0x8_H7838[0x8]
+  - Name: pad0x8_KHWLX[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -132,7 +132,7 @@ CommodityRedemptionComponent:
     Offset: '0xd0'
     Size: '0x38'
     Type: Struct FText
-  - Name: pad0x78_TYHW7[0x78]
+  - Name: pad0x78_VQM13[0x78]
     Offset: '0x108'
     Size: '0x78'
     Type: char
@@ -152,7 +152,7 @@ CommodityRedemptionInterface:
   Super: Interface
 CommoditySourceComponent:
   Attributes:
-  - Name: pad0x8_F5K1B[0x8]
+  - Name: pad0x8_EYI3P[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -226,7 +226,7 @@ IsWieldedCommodityItemInDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1f_FOUWE[0x1f]
+  - Name: pad0x1f_F0SUS[0x1f]
     Offset: '0x31'
     Size: '0x1f'
     Type: char
@@ -246,7 +246,7 @@ MerchantSovereignHandInNameInformationDataAsset:
   Super: DataAsset
 SpecificItemsCrateFillerComponent:
   Attributes:
-  - Name: pad0x8_7PZJ3[0x8]
+  - Name: pad0x8_YA53B[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -264,7 +264,7 @@ WasWieldedCommodityItemBoughtAtDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_61JGC[0x7]
+  - Name: pad0x7_XM0JZ[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char

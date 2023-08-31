@@ -6,24 +6,24 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x70 (Full Size[0x6a8] - InheritedSize[0x638]
-class BP_EmissaryTable_OrderOfSouls_01_C: public None
+// Size 0x70 (Full Size[0x750] - InheritedSize[0x6e0]
+class BP_EmissaryTable_OrderOfSouls_01_C: public BP_EmissaryTable_01_C
 {
 public:
-	Class PointLightComponent*                                   None;                                              // 0x638(0x8)
-	Class EmissaryShipAffiliationTrackerComponent*               None;                                              // 0x640(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x648(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x650(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x658(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x660(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x668(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x670(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x678(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x680(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x688(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x690(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x698(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x6a0(0x8)
+	Class PointLightComponent*                                   PointLight;                                        // 0x6e0(0x8)
+	Class EmissaryShipAffiliationTrackerComponent*               EmissaryShipAffiliationTracker;                    // 0x6e8(0x8)
+	Class ParticleSystemComponent*                               vfx_enchanting_open_chest_ambient;                 // 0x6f0(0x8)
+	Class StaticMeshComponent*                                   con_cover_page_oos_01_a;                           // 0x6f8(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_07_a;                            // 0x700(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_08_a;                            // 0x708(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_05_a;                            // 0x710(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_03_a;                            // 0x718(0x8)
+	Class StaticMeshComponent*                                   bld_shop_bone_oos_02_a;                            // 0x720(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_03_a1;                             // 0x728(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_02_a;                              // 0x730(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_03_a;                              // 0x738(0x8)
+	Class StaticMeshComponent*                                   cap_cabin_books_aged_02_a;                         // 0x740(0x8)
+	Class StaticMeshComponent*                                   cap_desk_model_oos_01_a;                           // 0x748(0x8)
 };
 
 

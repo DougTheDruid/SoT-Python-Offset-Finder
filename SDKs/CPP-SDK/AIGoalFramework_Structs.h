@@ -6,6 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x20
+struct AIGoalMovementModeFilter
+{
+public:
+	TArray<Byte DisallowedMovementModes>                         DisallowedMovementModes;                           // 0x0(0x10)
+	TArray<Byte DisallowedCustomMovementModes>                   DisallowedCustomMovementModes;                     // 0x10(0x10)
+};
+
+
 // Size 0x8
 struct EventAIGoalHighPriorityTargetSuggestion
 {

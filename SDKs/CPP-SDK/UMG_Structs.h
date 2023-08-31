@@ -38,7 +38,7 @@ struct PropertyPathSegment
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	int                                                          ArrayIndex;                                        // 0x8(0x4)
-	char                                                         pad0x4_HQ9K6[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_E3WBA[0x4];                                 // 0xc(0x4)
 	Class Struct*                                                Struct;                                            // 0x10(0x8)
 	Class Field*                                                 Field;                                             // 0x18(0x8)
 };
@@ -107,7 +107,7 @@ struct WidgetNavigationData
 {
 public:
 	byte                                                         Rule;                                              // 0x0(0x1)
-	char                                                         pad0x3_9O925[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_VG8ZN[0x3];                                 // 0x1(0x3)
 	struct FName                                                 WidgetToFocus;                                     // 0x4(0x8)
 };
 
@@ -118,10 +118,10 @@ struct MovieScene2DTransformSectionTemplate
 public:
 	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	Struct RichCurve                                             Translation;                                       // 0x38(0x78)
-	char                                                         pad0x78_81NHU[0x78];                               // 0xb0(0x78)
+	char                                                         pad0x78_9DION[0x78];                               // 0xb0(0x78)
 	Struct RichCurve                                             Rotation;                                          // 0x128(0x78)
 	Struct RichCurve                                             Scale;                                             // 0x1a0(0x78)
-	char                                                         pad0x78_BMLJJ[0x78];                               // 0x218(0x78)
+	char                                                         pad0x78_I7LRQ[0x78];                               // 0x218(0x78)
 	Struct RichCurve                                             Shear;                                             // 0x290(0x78)
 };
 

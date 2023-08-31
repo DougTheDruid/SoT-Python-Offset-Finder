@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_SailAngle_C: public SailAngle
 {
 public:
-	Class InteractableComponent*                                 None;                                              // 0x868(0x8)
+	Class InteractableComponent*                                 Interactable;                                      // 0x868(0x8)
 };
 
 

@@ -32,9 +32,9 @@ struct MovieSceneSpawnable
 {
 public:
 	bool                                                         IsCameraDockable;                                  // 0x0(0x1)
-	char                                                         pad0x3_JEMM3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_KAME4[0x3];                                 // 0x1(0x3)
 	Struct Guid                                                  Guid;                                              // 0x4(0x10)
-	char                                                         pad0x4_226K5[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_XVMZC[0x4];                                 // 0x14(0x4)
 	Struct FString                                               Name;                                              // 0x18(0x10)
 	Class Object*                                                ObjectTemplate;                                    // 0x28(0x8)
 	TArray<struct ChildPossessables>                             ChildPossessables;                                 // 0x30(0x10)
@@ -91,10 +91,10 @@ public:
 	int                                                          LoopCount;                                         // 0x0(0x4)
 	float                                                        PlayRate;                                          // 0x4(0x4)
 	bool                                                         bRandomStartTime;                                  // 0x8(0x1)
-	char                                                         pad0x3_S4J9R[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_D8DIH[0x3];                                 // 0x9(0x3)
 	float                                                        StartTime;                                         // 0xc(0x4)
 	bool                                                         bRestoreState;                                     // 0x10(0x1)
-	char                                                         pad0x7_MJSHI[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_GD8LL[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -170,7 +170,7 @@ struct MovieSceneEvaluationGroupLUTIndex
 {
 public:
 	bool                                                         bRequiresImmediateFlush;                           // 0x0(0x1)
-	char                                                         pad0x3_NYWMC[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_MN9KR[0x3];                                 // 0x1(0x3)
 	int                                                          LUTOffset;                                         // 0x4(0x4)
 	int                                                          NumInitPtrs;                                       // 0x8(0x4)
 	int                                                          NumEvalPtrs;                                       // 0xc(0x4)
@@ -242,7 +242,7 @@ struct MovieSceneEvaluationTrack
 public:
 	Struct Guid                                                  ObjectBindingId;                                   // 0x0(0x10)
 	byte                                                         EvaluationMethod;                                  // 0x12(0x1)
-	char                                                         pad0x5_DMWN0[0x5];                                 // 0x13(0x5)
+	char                                                         pad0x5_OXCGR[0x5];                                 // 0x13(0x5)
 	TArray<struct Segments>                                      Segments;                                          // 0x18(0x10)
 	TArray<struct ChildTemplates>                                ChildTemplates;                                    // 0x28(0x10)
 	Struct MovieSceneTrackImplementationPtr                      TrackTemplate;                                     // 0x38(0x38)
@@ -284,7 +284,7 @@ struct MovieSceneSequenceHierarchyNode
 {
 public:
 	Struct MovieSceneSequenceID                                  ParentID;                                          // 0x0(0x4)
-	char                                                         pad0x4_GSURJ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_WNMRK[0x4];                                 // 0x4(0x4)
 	TArray<struct Children>                                      Children;                                          // 0x8(0x10)
 };
 

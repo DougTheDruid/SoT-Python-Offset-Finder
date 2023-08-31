@@ -25,7 +25,7 @@ class TaleQuestInvasionService: public TaleQuestService
 {
 public:
 	Class TaleQuestInvasionServiceDesc*                          ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x1a0_KHNVC[0x1a0];                             // 0x68(0x1a0)
+	char                                                         pad0x1a0_8OFLZ[0x1a0];                             // 0x68(0x1a0)
 };
 
 
@@ -46,7 +46,7 @@ class DisplayInvasionBannersStepDesc: public TaleQuestStepDesc
 public:
 	Struct FText                                                 Message;                                           // 0x80(0x38)
 	bool                                                         DisableMusic;                                      // 0xb8(0x1)
-	char                                                         pad0x7_B2USJ[0x7];                                 // 0xb9(0x7)
+	char                                                         pad0x7_40PR5[0x7];                                 // 0xb9(0x7)
 	Struct QuestVariableGuid                                     DisplayShipsNameForCrewId;                         // 0xc0(0x30)
 	Struct QuestVariableName                                     DisplayBannersForFaction;                          // 0xf0(0x30)
 };
@@ -107,7 +107,7 @@ public:
 	Class Actor*                                                 ShipToTrack2;                                      // 0x3d8(0x8)
 	float                                                        InnerRadius;                                       // 0x3e0(0x4)
 	float                                                        OuterRadius;                                       // 0x3e4(0x4)
-	char                                                         pad0x8_F5DAP[0x8];                                 // 0x3e8(0x8)
+	char                                                         pad0x8_W68DN[0x8];                                 // 0x3e8(0x8)
 	Class Actor*                                                 ShipThatWasDestroyed;                              // 0x3f0(0x8)
 	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x3f8(0x10)
 };
@@ -150,7 +150,7 @@ public:
 	Class VoyageDescDataAsset*                                   Invasion_AggressivePassive_VoyageDescDataAsset;    // 0x30(0x8)
 	Class VoyageDescDataAsset*                                   Invasion_AggressiveAggressive_VoyageDescDataAsset; // 0x38(0x8)
 	float                                                        VoteValidationRivalShipDetectionRadius;            // 0x40(0x4)
-	char                                                         pad0x4_MJOFJ[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_YQ8EU[0x4];                                 // 0x44(0x4)
 	Class VoyageDescDataAsset*                                   Invasion_LosingCrew_VoyageDescDataAsset;           // 0x48(0x8)
 	Class EnvQuery*                                              AggressivePassive_EnvQueryTemplate;                // 0x50(0x8)
 	Class EnvQuery*                                              AggressiveAggressive_InvasionLocation_EnvQueryTemplate; // 0x58(0x8)
@@ -177,18 +177,18 @@ public:
 class InvasionService: public Actor
 {
 public:
-	char                                                         pad0x40_POMWX[0x40];                               // 0x3c8(0x40)
+	char                                                         pad0x40_WDZZJ[0x40];                               // 0x3c8(0x40)
 	Class InvasionSettings*                                      InvasionSettings;                                  // 0x408(0x8)
 	Class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x410(0x8)
 	Class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x418(0x8)
-	char                                                         pad0x178_TB8LX[0x178];                             // 0x420(0x178)
+	char                                                         pad0x178_3C71N[0x178];                             // 0x420(0x178)
 	TArray<struct MatchmakingCrews>                              MatchmakingCrews;                                  // 0x598(0x10)
 	TArray<struct InvadingCrews>                                 InvadingCrews;                                     // 0x5a8(0x10)
 	TArray<struct ReplicatedInvasionCrewMusicStates>             ReplicatedInvasionCrewMusicStates;                 // 0x5b8(0x10)
 	TArray<struct MatchmakingCrewsReplicated>                    MatchmakingCrewsReplicated;                        // 0x5c8(0x10)
 	TArray<struct InvadingCrewsReplicated>                       InvadingCrewsReplicated;                           // 0x5d8(0x10)
 	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x5e8(0x10)
-	char                                                         pad0x68_O4WTZ[0x68];                               // 0x5f8(0x68)
+	char                                                         pad0x68_HVOAL[0x68];                               // 0x5f8(0x68)
 };
 
 
@@ -212,7 +212,7 @@ class SetInvasionMusicStateForCrewStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         MusicState;                                        // 0x80(0x1)
-	char                                                         pad0x7_3UQLH[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_LTQ1H[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -237,7 +237,7 @@ class TaleQuestInvasionMatchmakingService: public TaleQuestService
 {
 public:
 	Class TaleQuestInvasionMatchmakingServiceDesc*               ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x1c0_Q3CPI[0x1c0];                             // 0x68(0x1c0)
+	char                                                         pad0x1c0_SGB03[0x1c0];                             // 0x68(0x1c0)
 };
 
 
@@ -283,7 +283,7 @@ public:
 	Struct QuestVariableName                                     WinningFaction;                                    // 0x140(0x30)
 	Struct QuestVariableName                                     DefeatedFaction;                                   // 0x170(0x30)
 	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x1a0(0x4)
-	char                                                         pad0x4_0NV4E[0x4];                                 // 0x1a4(0x4)
+	char                                                         pad0x4_TR03M[0x4];                                 // 0x1a4(0x4)
 	Struct FText                                                 FailMessage;                                       // 0x1a8(0x38)
 };
 

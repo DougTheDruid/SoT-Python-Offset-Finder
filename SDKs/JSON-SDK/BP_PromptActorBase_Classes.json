@@ -6,37 +6,37 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "IsCompleted",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x7_AAYN4[0x7]",
+        "Name": "pad0x7_V9C0K[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3d9"
       },
       {
-        "Name": "None",
+        "Name": "PromptCoordinators",
         "Type": "TArray<class BP_PromptCoordinator_Base_C*>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x10_J560T[0x10]",
+        "Name": "pad0x10_80ZRD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3f0"

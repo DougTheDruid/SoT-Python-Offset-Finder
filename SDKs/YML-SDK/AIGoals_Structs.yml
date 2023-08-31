@@ -6,7 +6,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9PW63[0x3]
+  - Name: pad0x3_N8T7H[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -30,7 +30,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_NRUAD[0x3]
+  - Name: pad0x3_WQNCB[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -38,23 +38,35 @@ BestActionSpotSelectionCriteria:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: ShouldAlwaysRefreshWhileMoving
+  - Name: ShouldAlwaysRefreshWhileOwnerMoving
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: ShouldRefreshAfterStayingForTooLong
+  - Name: ShouldRefreshAfterTargetMovesBeyondThreshold
     Offset: '0x1d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_4ZDT8[0x2]
+  - Name: pad0x2_TSXW6[0x2]
     Offset: '0x1e'
     Size: '0x2'
     Type: char
-  - Name: RefreshTimeInSeconds
+  - Name: TargetMovementRefreshThresholdDistance
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  ClassSize: '0x24'
+  - Name: ShouldRefreshAfterStayingForTooLong
+    Offset: '0x24'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_NADPN[0x3]
+    Offset: '0x25'
+    Size: '0x3'
+    Type: char
+  - Name: RefreshTimeInSeconds
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x2c'
 HasAllActionContextTagsCondition:
   Attributes:
   - Name: RequiredContextTags

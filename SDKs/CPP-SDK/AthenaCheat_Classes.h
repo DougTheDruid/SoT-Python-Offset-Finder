@@ -12,12 +12,12 @@ class AthenaCheatManager: public CheatManager
 public:
 	Class CinematicCameraController*                             CinematicCameraController;                         // 0x78(0x8)
 	class                                                        CinematicCameraControllerClass;                    // 0x80(0x8)
-	char                                                         pad0x28_F8L2E[0x28];                               // 0x88(0x28)
+	char                                                         pad0x28_LMT2W[0x28];                               // 0x88(0x28)
 	TArray<struct CreatedWorldMarkers>                           CreatedWorldMarkers;                               // 0xb0(0x10)
 	Class GameEventSchedulerSettingsAsset*                       DebugSchedulerSettings;                            // 0xc0(0x8)
 	Class ServerPerformanceReplicator*                           ServerPerformanceReplicator;                       // 0xc8(0x8)
 	float                                                        TeleportToDigsiteHeightOffset;                     // 0xd0(0x4)
-	char                                                         pad0x64_ZGT69[0x64];                               // 0xd4(0x64)
+	char                                                         pad0x64_6KKWV[0x64];                               // 0xd4(0x64)
 };
 
 

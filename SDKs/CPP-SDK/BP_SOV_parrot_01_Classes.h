@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_SOV_parrot_01_C: public Actor
 {
 public:
-	Class AnimNotifyWwiseEmitterComponent*                       None;                                              // 0x3c8(0x8)
-	Class SkeletalMeshComponent*                                 None;                                              // 0x3d0(0x8)
+	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x3c8(0x8)
+	Class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x3d0(0x8)
 };
 
 

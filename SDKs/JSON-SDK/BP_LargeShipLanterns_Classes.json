@@ -6,97 +6,97 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "Railing_BowRightBack",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "Railing_BowLeftBack",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "Railing_Stern",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "Cabin_Lantern",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "None",
+        "Name": "BrigDeck_StairsRight",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "None",
+        "Name": "BrigDeck_StairsLeft",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "None",
+        "Name": "BrigDeck_OutsideBrig",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "None",
+        "Name": "BrigDeck_InsideBrig",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "None",
+        "Name": "MapDeck_RearStairs",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "MapDeck_BowRight",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "MapDeck_BowLeft",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
+        "Name": "MapDeck_Galley",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
+        "Name": "MapDeck_MapTable",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "MapDeck_MainStairs",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "None",
+        "Name": "Cabin_Entrance",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "None",
+        "Name": "DefaultSceneRoot",
         "Type": "Class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x440"

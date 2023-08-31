@@ -7,15 +7,15 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x108 (Full Size[0x508] - InheritedSize[0x400]
-class BP_PromptActor_CosmeticPurchased_Equipment_C: public None
+class BP_PromptActor_CosmeticPurchased_Equipment_C: public BP_PromptActorBase_C
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x400(0x8)
-	BlueprintGeneratedClass None*                                None;                                              // 0x408(0x8)
-	class                                                        None;                                              // 0x410(0x8)
-	TArray<class Class*>                                         None;                                              // 0x418(0x10)
-	Struct PrioritisedPromptWithHandle                           None;                                              // 0x428(0x70)
-	Struct PrioritisedPromptWithHandle                           None;                                              // 0x498(0x70)
+	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x400(0x8)
+	BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*       PromptCoordinator;                                 // 0x408(0x8)
+	class                                                        AccessKey;                                         // 0x410(0x8)
+	TArray<class Class*>                                         CategoryTypes;                                     // 0x418(0x10)
+	Struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x428(0x70)
+	Struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x498(0x70)
 };
 
 

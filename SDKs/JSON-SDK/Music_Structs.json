@@ -1,4 +1,55 @@
 {
+  "MusicZoneRemoteValues": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Switches",
+        "Type": "TArray<struct Switches>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RTPCs",
+        "Type": "TArray<struct RTPCs>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MusicZoneEmitterRTPC": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "RTPC",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MusicZoneEmitterSwitch": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SwitchGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "MusicZoneDestroyedEvent": {
     "ClassSize": "0x10",
     "Attributes": []

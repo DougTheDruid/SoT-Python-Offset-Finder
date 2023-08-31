@@ -16,7 +16,7 @@ TaleStruct:
     Offset: '0x88'
     Size: '0x10'
     Type: Struct Guid
-  - Name: pad0x20_HGRS1[0x20]
+  - Name: pad0x20_NF5RM[0x20]
     Offset: '0x98'
     Size: '0x20'
     Type: char

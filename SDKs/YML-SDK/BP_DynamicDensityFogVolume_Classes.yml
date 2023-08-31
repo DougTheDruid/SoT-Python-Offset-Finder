@@ -14,7 +14,7 @@ BP_DynamicDensityFogVolume_C:
     Offset: '0x3e4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_KV24P[0x3]
+  - Name: pad0x3_9DGJL[0x3]
     Offset: '0x3e5'
     Size: '0x3'
     Type: char
@@ -54,7 +54,7 @@ BP_DynamicDensityFogVolume_C:
     Offset: '0x420'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5VAQK[0x7]
+  - Name: pad0x7_8HXV9[0x7]
     Offset: '0x421'
     Size: '0x7'
     Type: char

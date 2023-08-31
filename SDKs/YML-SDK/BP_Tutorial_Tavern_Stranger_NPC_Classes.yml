@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 BP_Tutorial_Tavern_Stranger_NPC_C:
   Attributes:
-  - Name: None
-    Offset: '0x840'
-    Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: None
-    Offset: '0x848'
-    Size: '0x8'
-    Type: Class CapsuleComponent*
-  - Name: None
-    Offset: '0x850'
-    Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
-    Offset: '0x858'
-    Size: '0x8'
-    Type: Class NPCDialogComponent*
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x860'
     Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: None
+    Type: Struct PointerToUberGraphFrame
+  - Name: SolidHits
     Offset: '0x868'
+    Size: '0x8'
+    Type: Class CapsuleComponent*
+  - Name: StaticMesh
+    Offset: '0x870'
+    Size: '0x8'
+    Type: Class StaticMeshComponent*
+  - Name: NPCDialog
+    Offset: '0x878'
+    Size: '0x8'
+    Type: Class NPCDialogComponent*
+  - Name: AnimNotifyWwiseEmitter
+    Offset: '0x880'
+    Size: '0x8'
+    Type: Class AnimNotifyWwiseEmitterComponent*
+  - Name: MysteriousStranger
+    Offset: '0x888'
     Size: '0x38'
     Type: Struct FText
-  - Name: None
-    Offset: '0x8a0'
+  - Name: CutSceneActor
+    Offset: '0x8c0'
     Size: '0x8'
     Type: Class CutSceneActor*
   ClassSize: '0x68'
-  FullSize: '0x8a8'
-  InheritedSize: '0x840'
+  FullSize: '0x8c8'
+  InheritedSize: '0x860'
   Super: TutorialTavernStrangerNPC

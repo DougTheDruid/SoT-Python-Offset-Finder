@@ -12,7 +12,7 @@ AudioReportingComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: Class PlayerController*
-  - Name: pad0x170_MAJWQ[0x170]
+  - Name: pad0x170_TZZ1X[0x170]
     Offset: '0xd0'
     Size: '0x170'
     Type: char
@@ -50,7 +50,7 @@ AudioReportingSettings:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_R806X[0x4]
+  - Name: pad0x4_YOINW[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char

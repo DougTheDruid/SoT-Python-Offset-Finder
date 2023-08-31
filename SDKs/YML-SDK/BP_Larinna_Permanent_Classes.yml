@@ -3,14 +3,14 @@
 BP_Larinna_Permanent_C:
   Attributes:
   - Name: StaticMesh1
-    Offset: '0x6d0'
+    Offset: '0x6f0'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   - Name: StaticMesh
-    Offset: '0x6d8'
+    Offset: '0x6f8'
     Size: '0x8'
     Type: Class StaticMeshComponent*
   ClassSize: '0x10'
-  FullSize: '0x6e0'
-  InheritedSize: '0x6d0'
+  FullSize: '0x700'
+  InheritedSize: '0x6f0'
   Super: BP_SoleTrader_C

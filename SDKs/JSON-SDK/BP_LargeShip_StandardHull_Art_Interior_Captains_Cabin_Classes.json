@@ -6,127 +6,127 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
         "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
+        "Name": "trs_candlestick_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
+        "Name": "cmn_candle_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "cap_inkwell_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "None",
+        "Name": "CaptainsBookcase",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "None",
+        "Name": "BP_LargeShip_CapCabin_Dressing_01_a",
         "Type": "Class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "None",
+        "Name": "cap_cabinet_02_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "None",
+        "Name": "cap_cage_01_b",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "None",
+        "Name": "cap_cage_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "vfx_tavern_candle_looping_01_a8",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "vfx_tavern_candle_looping_01_a1",
         "Type": "Class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
+        "Name": "gmp_pl_cabin_cabinet_a_01",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
+        "Name": "shp_item_shelf_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "cap_cabin_drawer_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "None",
+        "Name": "cap_cabin_trunk_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "None",
+        "Name": "cap_cabin_trunk_01_a1",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "None",
+        "Name": "MergedStaticMesh_col",
         "Type": "Class MergedStaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "None",
+        "Name": "cap_skull_candle_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
-        "Name": "None",
+        "Name": "cap_cabin_map_rolls_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
-        "Name": "None",
+        "Name": "MergedStaticMesh",
         "Type": "Class MergedStaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
-        "Name": "None",
+        "Name": "shp_interior_captains_cabin_01_a",
         "Type": "Class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x468"

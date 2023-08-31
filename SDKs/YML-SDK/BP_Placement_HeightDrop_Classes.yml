@@ -2,55 +2,55 @@
 # https://github.com/DougTheDruid
 BP_Placement_HeightDrop_C:
   Attributes:
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: Drop Components to Floor
     Offset: '0x3d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Z9VBL[0x3]
+  - Name: pad0x3_53G5G[0x3]
     Offset: '0x3d1'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: Vertical Displacement
     Offset: '0x3d4'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Match Surface Orientation
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_A5U4J[0x3]
+  - Name: pad0x3_AELKV[0x3]
     Offset: '0x3d9'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: Maximum Deviation Angle
     Offset: '0x3dc'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: ComponentsToDrop
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class SceneComponent*>
-  - Name: None
+  - Name: Check For Movable Components
     Offset: '0x3f0'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: CreateParentBoundsVolume
     Offset: '0x3f1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_J126Z[0x2]
+  - Name: pad0x2_TOU3M[0x2]
     Offset: '0x3f2'
     Size: '0x2'
     Type: char
-  - Name: None
+  - Name: ParentBoundsPadding
     Offset: '0x3f4'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Physical Materials To Ignore
     Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class PhysicalMaterial*>

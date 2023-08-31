@@ -2,267 +2,267 @@
 # https://github.com/DougTheDruid
 BP_CliffGenerator_C:
   Attributes:
-  - Name: None
+  - Name: Base_Spline
     Offset: '0x3c8'
     Size: '0x8'
     Type: Class SplineComponent*
-  - Name: None
+  - Name: DefaultSceneRoot
     Offset: '0x3d0'
     Size: '0x8'
     Type: Class SceneComponent*
-  - Name: None
+  - Name: Use Specific Start Actor
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4AARO[0x7]
+  - Name: pad0x7_QE3W7[0x7]
     Offset: '0x3d9'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: Source Start Actor
     Offset: '0x3e0'
     Size: '0x8'
     Type: Class StaticMesh*
-  - Name: None
+  - Name: Use Specific End Actor
     Offset: '0x3e8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1AAZV[0x7]
+  - Name: pad0x7_MTKUS[0x7]
     Offset: '0x3e9'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: Source End Actor
     Offset: '0x3f0'
     Size: '0x8'
     Type: Class StaticMesh*
-  - Name: None
+  - Name: Source Actors
     Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class StaticMesh*>
-  - Name: None
+  - Name: MaxTopSplineHeight
     Offset: '0x408'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: SpecifyNumberOfElements
     Offset: '0x40c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_19WP3[0x3]
+  - Name: pad0x3_B3Z7A[0x3]
     Offset: '0x40d'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: NumberOfElements
     Offset: '0x410'
     Size: '0x4'
     Type: int
-  - Name: None
+  - Name: ObjectSpacer
     Offset: '0x414'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: TangetWeights
     Offset: '0x418'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: Random_Seed
     Offset: '0x41c'
     Size: '0x4'
     Type: int
-  - Name: None
+  - Name: DataArray
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
+    Type: TArray<struct DataArray>
+  - Name: Use_Deformable(SplineMesh)
     Offset: '0x430'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: Instance_Meshes
     Offset: '0x431'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: Flip_Meshes
     Offset: '0x432'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_1FKEF[0x1]
+  - Name: pad0x1_WWD4C[0x1]
     Offset: '0x433'
     Size: '0x1'
     Type: char
-  - Name: None
+  - Name: ArrayStore
     Offset: '0x434'
     Size: '0x8'
     Type: Struct RandomStream
-  - Name: None
+  - Name: SplineRemaninderScale
     Offset: '0x43c'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: NumElementsNeeded
     Offset: '0x440'
     Size: '0x4'
     Type: int
-  - Name: None
+  - Name: Default_Mesh
     Offset: '0x444'
     Size: '0x10'
-    Type: Struct None
-  - Name: None
+    Type: Struct BP_CliffGenerator_Struct
+  - Name: BlueprintPosition
     Offset: '0x454'
     Size: '0xc'
     Type: Struct Vector
-  - Name: None
+  - Name: InverseBlueprintRotation
     Offset: '0x460'
     Size: '0xc'
     Type: Struct Rotator
-  - Name: None
+  - Name: UseSpecifiedMeshAtIndex
     Offset: '0x46c'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: LoopDataArraySize
     Offset: '0x46d'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: Collisions
     Offset: '0x46e'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: '[DEBUG ] SplineNumbers'
     Offset: '0x46f'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: '[DEBUG ] Flip Text'
     Offset: '0x470'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: IsStartIndex
     Offset: '0x471'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: IsEndIndex
     Offset: '0x472'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_DDO6A[0x5]
+  - Name: pad0x5_AE63Q[0x5]
     Offset: '0x473'
     Size: '0x5'
     Type: char
-  - Name: None
+  - Name: GeneratedTopSpline
     Offset: '0x478'
     Size: '0x8'
     Type: Class SplineComponent*
-  - Name: None
+  - Name: MinTopSplineHeight
     Offset: '0x480'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: AllowTerrainToDrop
     Offset: '0x484'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: AllowTerrainToRaise
     Offset: '0x485'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: IgnoreTerrainForTopSpline
     Offset: '0x486'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_AGFH8[0x1]
+  - Name: pad0x1_K5CSD[0x1]
     Offset: '0x487'
     Size: '0x1'
     Type: char
-  - Name: None
+  - Name: TerrainBlendWidth
     Offset: '0x488'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: TerrainBlendFallOff
     Offset: '0x48c'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: TopSplineRollAmount
     Offset: '0x490'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: IntersectionAmount
     Offset: '0x494'
     Size: '0x4'
     Type: float
-  - Name: None
+  - Name: '[[-----REBUILD SPLINE ----]]'
     Offset: '0x498'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ZQJWM[0x7]
+  - Name: pad0x7_NCHGY[0x7]
     Offset: '0x499'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: terrain_component
     Offset: '0x4a0'
     Size: '0x8'
     Type: Class Landscape*
-  - Name: None
+  - Name: UseDetailedTopSpline
     Offset: '0x4a8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_TVMJM[0x3]
+  - Name: pad0x3_5EHFJ[0x3]
     Offset: '0x4a9'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: NumberOfDetailedSplinePoints
     Offset: '0x4ac'
     Size: '0x4'
     Type: int
-  - Name: None
+  - Name: '[DEBUG ] Display Intersection Names'
     Offset: '0x4b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Z2GCS[0x7]
+  - Name: pad0x7_FH03J[0x7]
     Offset: '0x4b1'
     Size: '0x7'
     Type: char
-  - Name: None
+  - Name: TagToIgnore
     Offset: '0x4b8'
     Size: '0x10'
     Type: Struct FString
-  - Name: None
+  - Name: ActorsToIgnore
     Offset: '0x4c8'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: None
+  - Name: '[[------DEFORM TERRAIN ------]]'
     Offset: '0x4d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_RR57K[0x3]
+  - Name: pad0x3_4MN17[0x3]
     Offset: '0x4d9'
     Size: '0x3'
     Type: char
-  - Name: None
+  - Name: HirResult
     Offset: '0x4dc'
     Size: '0x80'
     Type: Struct HitResult
-  - Name: pad0x4_DWFLY[0x4]
+  - Name: pad0x4_544Y1[0x4]
     Offset: '0x55c'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: TopSplineIntersectionPoints
     Offset: '0x560'
     Size: '0x10'
-    Type: TArray<struct None>
-  - Name: None
+    Type: TArray<struct TopSplineIntersectionPoints>
+  - Name: Local_InternalActorsToIgnore
     Offset: '0x570'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: None
+  - Name: TopSplineColour
     Offset: '0x580'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: None
+  - Name: BottomSplineColour
     Offset: '0x590'
     Size: '0x10'
     Type: Struct LinearColor
-  - Name: None
+  - Name: Is Reflected
     Offset: '0x5a0'
     Size: '0x1'
     Type: bool
-  - Name: None
+  - Name: DrawDebugLines
     Offset: '0x5a1'
     Size: '0x1'
     Type: byte
-  - Name: None
+  - Name: Affect Rain
     Offset: '0x5a2'
     Size: '0x1'
     Type: bool

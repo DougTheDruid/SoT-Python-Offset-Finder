@@ -12,7 +12,7 @@ struct SessionTemplate
 public:
 	Struct FString                                               TemplateName;                                      // 0x0(0x10)
 	byte                                                         SessionType;                                       // 0x10(0x1)
-	char                                                         pad0x3_C1KNJ[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_BY3RD[0x3];                                 // 0x11(0x3)
 	int                                                          MaxPlayers;                                        // 0x14(0x4)
 };
 
@@ -83,7 +83,7 @@ struct CrewSessionMatchmakingFollowedTelemetryEvent
 public:
 	Struct Guid                                                  NewCrewId;                                         // 0x50(0x10)
 	int                                                          ResultCode;                                        // 0x60(0x4)
-	char                                                         pad0x4_UHEE1[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_X9LZX[0x4];                                 // 0x64(0x4)
 	Struct FString                                               Message;                                           // 0x68(0x10)
 };
 

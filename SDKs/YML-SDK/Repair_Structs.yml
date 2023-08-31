@@ -33,7 +33,7 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x8'
     Size: '0xc'
     Type: Struct Vector
-  - Name: pad0x4_9JL8O[0x4]
+  - Name: pad0x4_NGUBN[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -45,6 +45,10 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: RepairCompleted
+    Offset: '0x24'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x28'
 RepairableComponentRepairableStateChangedEvent:
   Attributes:

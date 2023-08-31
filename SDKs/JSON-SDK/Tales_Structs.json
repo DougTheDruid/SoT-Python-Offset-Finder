@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_CFIEO[0x4]",
+        "Name": "pad0x4_MXQKA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -225,7 +225,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_GNHWV[0x3]",
+        "Name": "pad0x3_1PMGR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -271,7 +271,7 @@
         "Offset": "0x21"
       },
       {
-        "Name": "pad0x6_2ESP1[0x6]",
+        "Name": "pad0x6_1NE9P[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x22"
@@ -775,6 +775,28 @@
   "QuestVariablePageLayout": {
     "ClassSize": "0x30",
     "Attributes": []
+  },
+  "EndOnScreenParticlesRpc": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Particles",
+        "Type": "Class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TriggerOnScreenParticlesRpc": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Particles",
+        "Type": "Class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
   },
   "QuestVariableTexture": {
     "ClassSize": "0x30",

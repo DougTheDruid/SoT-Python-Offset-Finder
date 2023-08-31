@@ -43,12 +43,12 @@
   },
   "TimeService": {
     "Super": "Actor",
-    "FullSize": "0x4f0",
+    "FullSize": "0x4f8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x128",
+    "ClassSize": "0x130",
     "Attributes": [
       {
-        "Name": "pad0x38_BVIG5[0x38]",
+        "Name": "pad0x38_GVR01[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x3c8"
@@ -60,7 +60,7 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x4_50SSU[0x4]",
+        "Name": "pad0x4_0A2C6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x408"
@@ -138,24 +138,24 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x48_8CRYA[0x48]",
+        "Name": "pad0x50_9NS9V[0x50]",
         "Type": "char",
-        "Size": "0x48",
+        "Size": "0x50",
         "Offset": "0x4a8"
       }
     ]
   },
   "DebugTimeService": {
     "Super": "TimeService",
-    "FullSize": "0x4f8",
-    "InheritedSize": "0x4f0",
+    "FullSize": "0x500",
+    "InheritedSize": "0x4f8",
     "ClassSize": "0x8",
     "Attributes": []
   },
   "CustomizableTimeService": {
     "Super": "DebugTimeService",
-    "FullSize": "0x500",
-    "InheritedSize": "0x4f8",
+    "FullSize": "0x508",
+    "InheritedSize": "0x500",
     "ClassSize": "0x8",
     "Attributes": []
   },

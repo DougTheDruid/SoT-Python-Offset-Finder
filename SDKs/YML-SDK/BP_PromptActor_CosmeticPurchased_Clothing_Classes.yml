@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 BP_PromptActor_CosmeticPurchased_Clothing_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x400'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: PromptCoordinator
     Offset: '0x408'
     Size: '0x8'
-    Type: BlueprintGeneratedClass None*
-  - Name: None
+    Type: BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*
+  - Name: AccessKey
     Offset: '0x410'
     Size: '0x8'
     Type: class
-  - Name: None
+  - Name: CategoryTypes
     Offset: '0x418'
     Size: '0x10'
     Type: TArray<class Class*>
-  - Name: None
+  - Name: Prompt_CosmeticPurchased
     Offset: '0x428'
     Size: '0x70'
     Type: Struct PrioritisedPromptWithHandle
-  - Name: None
+  - Name: Prompt_VisitCustomizationChest
     Offset: '0x498'
     Size: '0x70'
     Type: Struct PrioritisedPromptWithHandle
   ClassSize: '0x108'
   FullSize: '0x508'
   InheritedSize: '0x400'
-  Super: None
+  Super: BP_PromptActorBase_C

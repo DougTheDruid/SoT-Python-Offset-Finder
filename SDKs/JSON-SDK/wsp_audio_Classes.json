@@ -6,25 +6,25 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "PreviousFrameTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x4_MW8J8[0x4]",
+        "Name": "pad0x4_T0QD9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3d4"
       },
       {
-        "Name": "None",
+        "Name": "WSP_Audio_2D_Emitter",
         "Type": "Struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
+        "Name": "TimeInterface",
         "Type": "Class Object*",
         "Size": "0x8",
         "Offset": "0x3f8"

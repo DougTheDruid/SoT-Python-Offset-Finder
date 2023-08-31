@@ -1,42 +1,42 @@
 {
   "BP_PromptActor_CosmeticPurchased_Clothing_C": {
-    "Super": "None",
+    "Super": "BP_PromptActorBase_C",
     "FullSize": "0x508",
     "InheritedSize": "0x400",
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "None",
+        "Name": "UberGraphFrame",
         "Type": "Struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "None",
-        "Type": "BlueprintGeneratedClass None*",
+        "Name": "PromptCoordinator",
+        "Type": "BlueprintGeneratedClass BP_Prompt_CosmeticPurchased_C*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
+        "Name": "AccessKey",
         "Type": "class",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
+        "Name": "CategoryTypes",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
+        "Name": "Prompt_CosmeticPurchased",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
+        "Name": "Prompt_VisitCustomizationChest",
         "Type": "Struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x498"

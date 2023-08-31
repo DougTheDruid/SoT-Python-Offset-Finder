@@ -2,91 +2,91 @@
 # https://github.com/DougTheDruid
 BP_Crest_C:
   Attributes:
-  - Name: None
+  - Name: UberGraphFrame
     Offset: '0x448'
     Size: '0x8'
     Type: Struct PointerToUberGraphFrame
-  - Name: None
+  - Name: VFX_Back
     Offset: '0x450'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: VFX_Front
     Offset: '0x458'
     Size: '0x8'
     Type: Class ParticleSystemComponent*
-  - Name: None
+  - Name: TextCanvasRenderTarget
     Offset: '0x460'
     Size: '0x8'
     Type: Class MaybeCompressedCanvasRenderTarget2D*
-  - Name: None
+  - Name: BlurCanvasRenderTarget
     Offset: '0x468'
     Size: '0x8'
     Type: Class MaybeCompressedCanvasRenderTarget2D*
-  - Name: None
+  - Name: BevelCanvasRenderTarget
     Offset: '0x470'
     Size: '0x8'
     Type: Class MaybeCompressedCanvasRenderTarget2D*
-  - Name: None
+  - Name: BlurCanvasMaterial
     Offset: '0x478'
     Size: '0x8'
     Type: Class Material*
-  - Name: None
+  - Name: BevelCanvasMaterial
     Offset: '0x480'
     Size: '0x8'
     Type: Class Material*
-  - Name: None
+  - Name: DynamicBlurCanvasMaterial
     Offset: '0x488'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: DynamicBevelCanvasMaterial
     Offset: '0x490'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: CrestDynamicMaterial
     Offset: '0x498'
     Size: '0x8'
     Type: Class MaterialInstanceDynamic*
-  - Name: None
+  - Name: CanvasWidth
     Offset: '0x4a0'
     Size: '0x4'
     Type: int
-  - Name: None
+  - Name: CanvasHeight
     Offset: '0x4a4'
     Size: '0x4'
     Type: int
-  - Name: None
+  - Name: Font
     Offset: '0x4a8'
     Size: '0x8'
     Type: Class Font*
-  - Name: None
+  - Name: NameplatePool
     Offset: '0x4b0'
     Size: '0x8'
     Type: Class WwiseObjectPoolWrapper*
-  - Name: None
+  - Name: EmitterCreationParams
     Offset: '0x4b8'
     Size: '0x28'
     Type: Struct WwiseEmitterCreationParams
-  - Name: None
+  - Name: Cooldown
     Offset: '0x4e0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RMWOC[0x4]
+  - Name: pad0x4_P42IZ[0x4]
     Offset: '0x4e4'
     Size: '0x4'
     Type: char
-  - Name: None
+  - Name: FontInfo
     Offset: '0x4e8'
     Size: '0x40'
     Type: Struct SlateFontInfo
-  - Name: None
+  - Name: VFXSizeVariants
     Offset: '0x528'
     Size: '0x10'
     Type: TArray<class ParticleSystem*>
-  - Name: None
+  - Name: NameSizeIndex
     Offset: '0x538'
     Size: '0x4'
     Type: int
-  - Name: None
+  - Name: FeatureName
     Offset: '0x53c'
     Size: '0xc'
     Type: Struct FeatureFlag

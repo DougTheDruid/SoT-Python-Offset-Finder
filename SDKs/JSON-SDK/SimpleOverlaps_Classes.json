@@ -20,7 +20,7 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0xc8_RLAT1[0xc8]",
+        "Name": "pad0xc8_FAV10[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x3c8"
@@ -38,7 +38,7 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x7_VCV2D[0x7]",
+        "Name": "pad0x7_BDAS4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x499"

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CompetitiveVoyagesService:
   Attributes:
-  - Name: pad0x38_BLQ2F[0x38]
+  - Name: pad0x38_HUVWX[0x38]
     Offset: '0x3c8'
     Size: '0x38'
     Type: char
@@ -10,12 +10,12 @@ CompetitiveVoyagesService:
     Offset: '0x400'
     Size: '0x8'
     Type: Class CompetitiveVoyagesServiceParams*
-  - Name: pad0x40_5N72Z[0x40]
+  - Name: pad0x68_509AC[0x68]
     Offset: '0x408'
-    Size: '0x40'
+    Size: '0x68'
     Type: char
-  ClassSize: '0x80'
-  FullSize: '0x448'
+  ClassSize: '0xa8'
+  FullSize: '0x470'
   InheritedSize: '0x3c8'
   Super: Actor
 CompetitiveVoyagesServiceInterface:
@@ -26,18 +26,56 @@ CompetitiveVoyagesServiceInterface:
   Super: Interface
 CompetitiveVoyagesServiceParams:
   Attributes:
-  - Name: VoyageDesc
+  - Name: OptInVoyageDesc
     Offset: '0x28'
     Size: '0x8'
     Type: Class VoyageDescDataAsset*
-  ClassSize: '0x8'
-  FullSize: '0x30'
+  - Name: MainVoyageDesc
+    Offset: '0x30'
+    Size: '0x8'
+    Type: Class VoyageDescDataAsset*
+  ClassSize: '0x10'
+  FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
-TaleQuestCompetitiveVoyagesService:
+SetCrewOptInNPCDataStep:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x60'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+SetCrewOptInNPCDataStepDesc:
+  Attributes:
+  - Name: Actor
+    Offset: '0x80'
+    Size: '0x30'
+    Type: Struct QuestVariableActor
+  ClassSize: '0x30'
+  FullSize: '0xb0'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestCompetitiveVoyagesFunctionStepLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestCompetitiveVoyagesService:
+  Attributes:
+  - Name: pad0x20_FZRIX[0x20]
+    Offset: '0x60'
+    Size: '0x20'
+    Type: char
+  - Name: PhasedMarkerItems
+    Offset: '0x80'
+    Size: '0x10'
+    Type: TArray<struct PhasedMarkerItems>
+  - Name: pad0x10_QL1Y9[0x10]
+    Offset: '0x90'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x40'
+  FullSize: '0xa0'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestCompetitiveVoyagesServiceDesc:
